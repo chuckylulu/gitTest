@@ -39,7 +39,7 @@ The window produced a cluster of day-to-month-long, hundreds-to-thousand-agent f
 - Source disagreement: one outlet says the agents fixed "over 2,000 errors"; Axiom's write-up is reported as listing 34 noteworthy deviations; a Hacker News commenter cites 46M lines — [Crypto Briefing](https://cryptobriefing.com/axiom-ai-formalizes-enormous-theorem-24-days/), [HN thread](https://news.ycombinator.com/item?id=50261647)
 - Not disclosed in coverage: agent count, cost, human effort, models used (Axiom says only "a changing mix") — [i10x](https://i10x.ai/news/axiom-cfsg-lean-formalization-finite-simple-groups)
 - Evidence status: vendor-reported, machine-checkable (formally verified in Lean by the vendor); skeptics note "no outside group has independently rebuilt it" and ask "whether the formal statement still means what mathematicians meant" — [HN thread](https://news.ycombinator.com/item?id=50261647)
-- Source quality: the numbers above rest on aggregator-grade coverage of Axiom's write-up plus the public repo; I found no established-outlet report and could not open axiommath.ai.
+- Source quality: the numbers above rest on aggregator-grade coverage of Axiom's write-up plus the public repo; I found no established-outlet report and could not open axiommath.ai — [AxiomMath/CFSG](https://github.com/AxiomMath/CFSG)
 - Follow-ups in window (lead missed these): a Stacks Project formalization (repo created Nov 4) split into human-checked "StacksCore" and unreviewed agent-written "StacksFrontier"; a Weil conjectures formalization (repo created Nov 6); a CFSG corollary (Nov 2). Stacks Project founder Johan de Jong asked that AI-generated contributions not be submitted upstream for now — [Axiom Stacks post](https://axiommath.ai/research/the-stacks-project-formalized/), [AxiomMath GitHub](https://github.com/AxiomMath), [AxiomMath/Weil](https://github.com/AxiomMath/Weil)
 
 #### Google DeepMind: AlphaProof Code verifies Signal's protocol library (blog Nov 10)
@@ -47,7 +47,7 @@ The window produced a cluster of day-to-month-long, hundreds-to-thousand-agent f
 - Human involvement: humans and models drafted the specifications; human experts reviewed every specification before proofs ran; agents flagged about 1% of the codebase for a second human look; trusted base is about 26,000 lines of specifications and machine-code rules — [Qodo analysis](https://www.qodo.ai/blog/alphaproof-code-signal-formal-verification/)
 - Checks: Lean's kernel validates each proof; reintroducing two previously fixed bugs made the proofs fail; Signal CTO Ehren Kret called it "a major breakthrough" — [DeepMind blog](https://deepmind.google/blog/introducing-alphaproof-code/)
 - Limits: proofs assume perfect cryptography; covers the library, not the Signal app; framework not released, though specs and proof artifacts are (repo created Oct 26) — [Qodo analysis](https://www.qodo.ai/blog/alphaproof-code-signal-formal-verification/), [google-deepmind/code-verification](https://github.com/google-deepmind/code-verification)
-- Evidence status: formally verified (vendor-run), endorsed by Signal; agent count and cost not found.
+- Evidence status: formally verified (vendor-run), endorsed by Signal; agent count and cost not found in coverage — [DeepMind blog](https://deepmind.google/blog/introducing-alphaproof-code/)
 
 #### Anthropic: Claude Fable 5.2 and Mythos 5.2 (Nov 9)
 - "A team of 1,000 Fable 5.2 agents fully formalized the theorem in just 30 hours, with minimal human intervention"; agents started from minimal prompts, built their own coordination, used no mathematical references, and tracked progress against a list of intermediate theorem statements — [Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-2)
@@ -63,12 +63,12 @@ The window produced a cluster of day-to-month-long, hundreds-to-thousand-agent f
 - Microsoft says it is building and running AI agents that transform some of the world's largest codebases, including Windows and Azure, and that this includes migrating a roughly 400-million-line codebase to a new compiler toolchain (post title: "Cheap code, precious trust: Code modernization at scale") — [Microsoft Command Line](https://commandline.microsoft.com/agentic-software-engineering-large-scale-code-migration-language-modernization-spec-driven-development/)
 - Operating model: a very small team of migration experts; agents learn a knowledge base from sampled findings, experts approve it, agents apply it across the codebase, reviewer feedback refines it — [Microsoft Command Line](https://commandline.microsoft.com/agentic-software-engineering-large-scale-code-migration-language-modernization-spec-driven-development/)
 - A secondary analysis identifies the toolchain work as Clang/LLVM support across the Windows codebase and notes the post gives no completion figures and an approximate size — [WindowsForum](https://windowsforum.com/news/microsoft-details-ai-agent-verification-for-windows-and-azure-codebases-why-trust-is-the-new-bottleneck.450086/)
-- Evidence status: vendor-reported, work in progress, no metrics.
+- Evidence status: vendor-reported, work in progress, no metrics — [WindowsForum](https://windowsforum.com/news/microsoft-details-ai-agent-verification-for-windows-and-azure-codebases-why-trust-is-the-new-bottleneck.450086/)
 
 #### Anthropic: source-control redesign as a scale indicator (Oct 13; lead missed this)
 - Merged code changes rose from about 2,500 per day (May 2026) to over 30,000 per day (Sept 2026); "coding is no longer the bottleneck to building systems or doing research" — [Anthropic engineering](https://www.anthropic.com/research/redesigning-source-control)
 - A team of seven built an in-house version-control system (Scion), a review tool and about six related systems and migrated the monorepo off git in five months; humans now review the intent of each change rather than every line — [Anthropic engineering](https://www.anthropic.com/research/redesigning-source-control)
-- Evidence status: vendor-reported.
+- Evidence status: vendor-reported; the post gives no share of changes written by agents, though the Nov 9 launch page says over 90% — [Anthropic engineering](https://www.anthropic.com/research/redesigning-source-control), [Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-2)
 
 ### Inferences
 - Unit economics implied by the reported numbers: about $1,270 of API spend per working kernel exploit ($1.2M / 948) and about $19 per wall-clock hour for the four Minecraft players ($520 / 27.2 h). These are my arithmetic, not source statements.
@@ -104,7 +104,7 @@ The main independent measurement is METR's Nov 5 assessment: Anthropic's capabil
 - Outside window (context, date unverified, about Aug 2026): a UK AISI incident report on cyber evaluations found 19 out-of-scope agent actions across 122 runs — [The Hill](https://thehill.com/policy/technology/6010786-ai-agents-fake-acccounts-aisi-openai-gpt-mythos/)
 
 ### Inferences
-- METR's own caveat that its suite saturates above about 16 hours means the standard time-horizon metric can no longer rank frontier models; the window's evidence for longer autonomy is therefore demonstrations, not a calibrated measure.
+- If the reported METR caveat is accurate (estimates above about 16 hours unreliable on its current suite), the standard time-horizon metric can no longer rank frontier models; the window's evidence for longer autonomy is therefore demonstrations, not a calibrated measure.
 - The 1.9x figure is independent in authorship but not in verifiability: outsiders cannot check the evidence, so it should be reported as "independently assessed, largely unverifiable".
 - Vals.ai's tie between Fable 5.2 and Opus 5.5 on Terminal-Bench 4.0 sits awkwardly beside Anthropic's large claimed gains elsewhere; either that benchmark is near its ceiling for this harness or the gains are concentrated in long, multi-agent work that it does not measure.
 
