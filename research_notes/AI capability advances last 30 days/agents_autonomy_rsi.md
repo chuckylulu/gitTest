@@ -1,6 +1,6 @@
 # AI agents, long-horizon autonomy and automation of AI R&D (Oct 12 – Nov 11, 2026)
 
-*Access note for the report writer: in this session only anthropic.com could be fetched directly. openai.com, deepmind.google, xbow.com, commandline.microsoft.com, metr.org, substack and assets.claude.com (the Fable 5.2 system card PDF) were blocked, so those items rest on search-result extracts of the primary pages plus secondary coverage. arXiv papers were read through Hugging Face paper pages; GitHub repo/commit/release data and PyPI release dates were read directly. Evidence-status labels used: vendor-reported / independently measured / peer-reviewed / formally verified / disputed.*
+*Access note for the report writer: in this session only anthropic.com could be fetched directly. Fetches of openai.com, deepmind.google, xbow.com, commandline.microsoft.com, thezvi.substack.com and assets.claude.com (the Fable 5.2 system card PDF) failed under the network policy, and other hosts (including metr.org and axiommath.ai) were then not attempted, so those items rest on search-result extracts of the primary pages plus secondary coverage. arXiv papers were read through Hugging Face paper pages; GitHub repo/commit/release data and PyPI release dates were read directly. Evidence-status labels used: vendor-reported / independently measured / peer-reviewed / formally verified / disputed.*
 
 ## 1. What demonstrations in the window show longer or larger autonomous work?
 
