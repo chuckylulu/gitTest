@@ -127,7 +127,7 @@ The only in-window move by the three named labs was Harmonic's Oct 27 extension 
 
 ### Inferences
 - Both Harmonic (Oct 27) and Axiom (earlier in 2026) are redirecting provers built for mathematics toward code and hardware verification, on the same premise: generation by frontier models is outrunning human review, so machine-checkable proof is the scalable form of trust. This complements rather than contradicts the largest labs' approach — it treats their models as the generators to be checked.
-- The Meta h1 result cuts against the formal-math startups' moat: if a plain agentic loop on a frontier model plus a fast Lean interface matches specialised prover workflows, progress in formal reasoning is being driven by general model capability and test-time compute more than by bespoke architectures.
+- The Meta-affiliated h1 result cuts against the formal-math startups' moat: if a plain agentic loop on a frontier model plus a fast Lean interface matches specialised prover workflows, progress in formal reasoning is being driven by general model capability and test-time compute more than by bespoke architectures.
 - The recurring stated limit is specification fidelity (Lean checks the statement given, not whether it is the intended one), raised independently about Harmonic's code verification and PSI's proof.
 
 ### Gaps
@@ -237,7 +237,7 @@ Four debates were live in the window with primary material behind them: language
 
 **Model versus harness / scaling versus structure**
 - [Researcher, Oct 13–15, 2026] Sakana: "reliable scientific autonomy depends not only on base model capabilities, but also on the cross-agent orchestration layer", yet "With the same LLM base model, we observe no consistent differences across harnesses" and there is "a positive trend toward newer models" — [arXiv 2610.18933](https://arxiv.org/abs/2610.18933)
-- [Researcher — Meta, Oct 25, 2026] h1 paper: a simple agentic loop that scales test-time compute matches specialised theorem-proving workflows; the authors "recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons" — [arXiv 2610.35962 via Hugging Face](https://huggingface.co/papers/2610.35962)
+- [Researcher — Meta-affiliated per Hugging Face listing, Oct 25, 2026] h1 paper: a simple agentic loop that scales test-time compute matches specialised theorem-proving workflows; the authors "recommend that future work evaluate frontier models with efficient execution feedback before prescribing workflows, at the risk of bitter lessons" — [arXiv 2610.35962 via Hugging Face](https://huggingface.co/papers/2610.35962)
 - [Founder/Researcher, Oct 28, 2026] Gu claims the bitter lesson for a new architecture (H-Net learns its own chunking from raw bytes) — [Albert Gu on X](https://x.com/_albertgu/status/2115502110578290900)
 
 **Open versus closed, and who should control frontier development**
