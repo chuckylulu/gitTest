@@ -389,7 +389,7 @@ The AI-native firms are adding remediation. Transition (4) is now the main strat
     - Internet Bug Bounty rewards were cut 76–89% and new submissions paused in May 2026 — [The Register, 21 May 2026](https://theregister.com/security/2026/05/21/hackerone-takes-an-axe-to-its-bug-bounty-rewards/5244458)
   - Said: CEO Kara Sprague, 3 Nov 2026: "AI makes the crowd model stronger", but routine, pattern-based findings "will become harder to monetize". Humans keep the edge on business logic and chaining. — [Help Net Security, 3 Nov 2026](https://www.helpnetsecurity.com/?p=389850)
 - **Bugcrowd:**
-  - Said: automation layered into triage and signal detection (CEO Dave Gerry) (search snippet, [ChannelE2E](https://www.channele2e.com/news/bugcrowd-acquires-mayhem-security-to-advance-ai-augmented-offensive-testing))
+  - Said: automation layered into triage and signal detection (CEO Dave Gerry). This is a search snippet whose summary did not name the outlet; the Mayhem-deal coverage it came from includes [ChannelE2E](https://www.channele2e.com/news/bugcrowd-acquires-mayhem-security-to-advance-ai-augmented-offensive-testing) and [GovConWire](https://www.govconwire.com/articles/bugcrowd-acquires-mayhem-security-ai-cyber), both returning 403. The press release itself does not detail triage automation.
   - Done:
     - Bought Mayhem in November 2025 — [Bugcrowd](https://www.bugcrowd.com/press-release/bugcrowd-acquires-mayhem-security/)
     - In March 2026 added identity verification, rate limiting, CAPTCHAs, a 30-day suspension after 10 consecutive rejections and permanent bans for automated spam — [ForkLog](https://forklog.com/en/the-end-of-bug-bounties/)
