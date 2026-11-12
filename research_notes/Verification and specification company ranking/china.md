@@ -220,7 +220,7 @@ Empyrean and Primarius own real but narrow verdicts: analog, custom and flat-pan
 ## 4. Export controls: what happened, how demand responded, judge or gap
 
 ### Takeaway
-The US cut off EDA licensing to China only briefly (May to July 2025), and the 50% Affiliates Rule has been suspended twice, now until 10 Jan 2027. Synopsys's China revenue fell, while Cadence's China share rose again by Q3 2026, and Chinese vendors kept growing at 19–36% in 2026. The evidence says most of the Chinese vendors' position is a gap created and protected by policy, not a verdict others must pass. The exceptions are Primarius's global device-model niche and Empyrean's flat-panel and analog franchise.
+The US cut off EDA licensing to China only briefly (May to July 2025), and the 50% Affiliates Rule has been suspended twice, now until 10 Jan 2027. Synopsys's China revenue fell 22% (excluding Ansys) in FY2025, while Cadence's China share was 16% in Q3 2026 against 13% for FY2025. Chinese vendors kept growing at 19–36% in 2026. The evidence says most of the Chinese vendors' position is a gap created and protected by policy, not a verdict others must pass. The exceptions are Primarius's global device-model niche and Empyrean's flat-panel and analog franchise.
 
 ### Cited Findings
 - Empyrean was added to the Entity List on 2 Dec 2024, one of 140 Chinese entities. [SECONDARY] Tom's Hardware and TrendForce URLs above. The BIS list file could not be read (a bot-check page was returned).
