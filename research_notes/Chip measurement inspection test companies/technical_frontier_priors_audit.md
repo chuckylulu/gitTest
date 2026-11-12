@@ -315,46 +315,47 @@ Other vendor figures:
 12. **Change of emphasis, not a strict contradiction**: the first volume buried Cu-Cu interfaces in memory are W2W (NAND now, VCT DRAM ~2028 [SS]), not HBM stacks. [s20] [s35]
 
 ## Sources (with dates)
-- [s1] Semiconductor Engineering, L. Peters, "Shrinking Hybrid Bonding Pitches Push Inspection Limits", 10 Nov 2026 — https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/
-- [s2] SE, G. Haley, "Metrology Under Pressure…", 12 Aug 2025 — https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/
-- [s3] SE, G. Haley, "Can Fine-Pitch Hybrid Bonding Go High Volume?", 16 Jul 2026 — https://semiengineering.com/can-fine-pitch-hybrid-bonding-go-high-volume/
-- [s4] SE sponsor blog, Y. Gao (Onto Innovation), 8 Oct 2026 — https://semiengineering.com/finding-critical-defects-before-they-become-costly-failures-process-control-for-hybrid-bonding-and-advanced-packaging/
-- [s5] SE tag pages (accessed 12 Nov 2026; includes "How Long Does A Measurement Remain Valid?", 11 Aug 2026) — https://semiengineering.com/tag/metrology/
-- [s6] EE Times, P. Brans, "Hybrid Bonding Comes of Age Slowly and Collectively", 26 Jan 2026 — https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/
-- [s7] TrendForce (citing ZDNet), 6 Mar 2026 — https://trendforce.com/news/2026/03/06/news-industry-weigh-825-900-%CE%BCm-hbm-thickness-for-20-high-stacks-potentially-slowing-hybrid-bonding
-- [s8] TrendForce (citing Chosun Ilbo, Newsis, The Elec), 1 Apr 2026 — https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/
-- [s9] TrendForce (citing ZDNet), 7 Jul 2026 — https://www.trendforce.com/news/2026/07/07/news-samsung-sk-hynix-reportedly-reconsider-hybrid-bonding-timeline-16-high-hbm4e-may-be-earliest-adoption/
-- [s10] SemiAnalysis, Ahmad, TC, Wong, Patel, ECTC 2026 roundup, 2 Jul 2026 — https://newsletter.semianalysis.com/p/ectc2026
-- [s11] SemiAnalysis post on X (reported Oct 2026; date unverified) — https://x.com/SemiAnalysis_/status/2108256589559865346
-- [s12] Bits&Chips, P. van Gerven, 26 Aug 2026 — https://bits-chips.com/article/besi-faces-longer-wait-as-sk-hynix-pushes-hybrid-bonding-to-hbm5/
-- [s13] Tom's Hardware, L. James, Hot Chips SK hynix, 24 Aug 2026 — https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling
-- [s14] Tom's Hardware, L. James, "The current state of Hybrid Bonding in 2026", 2 Sep 2026 — https://www.tomshardware.com/tech-industry/semiconductors/hybrid-bonding-roadmap-examined
-- [s15] MLQ (AI-written summary), 25 Aug 2026 — https://mlq.ai/news/sk-hynix-pushes-hybrid-bonding-to-hbm5-as-stacked-ai-memory-reaches-its-height-limit/
-- [s16] Herald Business, 20 Sep 2026 — https://biz.heraldcorp.com/article/10878775
-- [s17] Seoul Economic Daily (Counterpoint), 6 Apr 2026 — https://en.sedaily.com/finance/2026/04/06/sk-hynix-eyes-hbm5-launch-by-2029-with-hybrid-bonding
-- [s18] technologies.org (FMS 2026), 5 Aug 2026 — https://technologies.org/samsung-unveils-zhbm-and-400-layer-v10-bv-nand-at-fms-2026-and-wafer-bonding-is-the-common-thread/
-- [s19] IEEE ECTC 2026 technical tipsheet, 20 May 2026 — https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf
-- [s20] IEEE EPS, Gorchichko et al., summary of ECTC 2025 hybrid-bonding special session, Mar 2026 — https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf
-- [s21] IEEE IRDS 2024, Metrology chapter — https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf
-- [s22] Proc. SPIE 13981, Metrology, Inspection, and Process Control XL (conference 22-26 Feb 2026) — https://spie.org/Publications/Proceedings/Volume/13981
-- [s23] Timoney et al. (IBM Research/Nova), SPIE 13981-16 (PDF posted Apr 2026) — https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf
-- [s24] IBM Research blog, L. Meli, 23 Feb 2026 — https://research.ibm.com/blog/spie-2026-below-2-nm
-- [s26] C. Mack, SPIE 2026 diary, Feb 2026 — https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html
-- [s27] Chen et al., Light: Advanced Manufacturing 7:112, online 9 Sep 2026 — https://www.light-am.com/article/doi/10.37188/lam.2026.112
-- [s28] Same paper, PDF — https://www.light-am.com/article/pdf/preview/LAM2026050195.pdf
-- [s29] KLA Q1 FY2027 call, 28 Oct 2026 (transcript 29 Oct) — https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/
-- [s30] Futurum, B. Burke, Applied Materials Q3 FY2026, 17 Aug 2026 — https://futurumgroup.com/insights/applied-materials-q3-fy-2026-advanced-packaging-and-dram-accelerate-growth/
-- [s31] Bits&Chips, P. van Gerven, Invisix, 23 Apr 2026 — https://bits-chips.com/article/invisix-steps-out-from-under-asmls-wings-with-soft-x-ray-metrology-bet/
-- [s32] Design & Reuse (via BigGo), TSMC A16, 24 Aug 2026 — https://www.design-reuse.com/news/202531015-tsmc-completes-development-of-1-6nm-a16-process-mass-production-set-for-q4/
-- [s33] Wikipedia, "2 nm process" (edited 21 Oct 2026) — https://en.wikipedia.org/wiki/2_nm_process
+Each key's URL is in the link definitions directly below this list; keys with several URLs list them inline.
+- [s1] Semiconductor Engineering, L. Peters, "Shrinking Hybrid Bonding Pitches Push Inspection Limits", 10 Nov 2026
+- [s2] SE, G. Haley, "Metrology Under Pressure…", 12 Aug 2025
+- [s3] SE, G. Haley, "Can Fine-Pitch Hybrid Bonding Go High Volume?", 16 Jul 2026
+- [s4] SE sponsor blog, Y. Gao (Onto Innovation), 8 Oct 2026
+- [s5] SE tag pages (accessed 12 Nov 2026; includes "How Long Does A Measurement Remain Valid?", 11 Aug 2026)
+- [s6] EE Times, P. Brans, "Hybrid Bonding Comes of Age Slowly and Collectively", 26 Jan 2026
+- [s7] TrendForce (citing ZDNet), 6 Mar 2026
+- [s8] TrendForce (citing Chosun Ilbo, Newsis, The Elec), 1 Apr 2026
+- [s9] TrendForce (citing ZDNet), 7 Jul 2026
+- [s10] SemiAnalysis, Ahmad, TC, Wong, Patel, ECTC 2026 roundup, 2 Jul 2026
+- [s11] SemiAnalysis post on X (reported Oct 2026; date unverified)
+- [s12] Bits&Chips, P. van Gerven, 26 Aug 2026
+- [s13] Tom's Hardware, L. James, Hot Chips SK hynix, 24 Aug 2026
+- [s14] Tom's Hardware, L. James, "The current state of Hybrid Bonding in 2026", 2 Sep 2026
+- [s15] MLQ (AI-written summary), 25 Aug 2026
+- [s16] Herald Business, 20 Sep 2026
+- [s17] Seoul Economic Daily (Counterpoint), 6 Apr 2026
+- [s18] technologies.org (FMS 2026), 5 Aug 2026
+- [s19] IEEE ECTC 2026 technical tipsheet, 20 May 2026
+- [s20] IEEE EPS, Gorchichko et al., summary of ECTC 2025 hybrid-bonding special session, Mar 2026
+- [s21] IEEE IRDS 2024, Metrology chapter
+- [s22] Proc. SPIE 13981, Metrology, Inspection, and Process Control XL (conference 22-26 Feb 2026)
+- [s23] Timoney et al. (IBM Research/Nova), SPIE 13981-16 (PDF posted Apr 2026)
+- [s24] IBM Research blog, L. Meli, 23 Feb 2026
+- [s26] C. Mack, SPIE 2026 diary, Feb 2026
+- [s27] Chen et al., Light: Advanced Manufacturing 7:112, online 9 Sep 2026
+- [s28] Same paper, PDF
+- [s29] KLA Q1 FY2027 call, 28 Oct 2026 (transcript 29 Oct)
+- [s30] Futurum, B. Burke, Applied Materials Q3 FY2026, 17 Aug 2026
+- [s31] Bits&Chips, P. van Gerven, Invisix, 23 Apr 2026
+- [s32] Design & Reuse (via BigGo), TSMC A16, 24 Aug 2026
+- [s33] Wikipedia, "2 nm process" (edited 21 Oct 2026)
 - [s34] [SS] Tom's Hardware (Intel 14A in 2028) — https://www.tomshardware.com/pc-components/cpus/we-cant-completely-vacate-the-client-market-says-intel-amid-wafer-supply-shortages-nova-lake-still-on-track-for-late-2026-release-14a-in-2028 ; TrendForce, 21 Nov 2025 — https://www.trendforce.com/news/2025/11/21/news-intels-two-front-push-18a-yields-reportedly-rise-7-monthly-14a-enters-definition-stage/
 - [s35] [SS] TrendForce (citing The Elec), 24 Apr 2026 — https://www.trendforce.com/news/2026/04/24/news-samsung-reportedly-produces-sub-10nm-10a-dram-working-die-using-4f-square-and-vct-targets-2028-production/ ; Bits&Chips — https://bits-chips.com/?p=234158
-- [s36] [SS] SemiWiki forum, ISSCC 2026 Samsung 16Gb VCT DRAM — https://semiwiki.com/forum/threads/isscc-2026-samsung-electronics-demonstrated-a-16gb-dram.24808/latest
+- [s36] [SS] SemiWiki forum, ISSCC 2026 Samsung 16Gb VCT DRAM
 - [s37] [SS] TweakTown (Micron roadmap) — https://www.tweaktown.com/news/114236/micron-reveals-ddr6-lpddr6-hbm-and-nand-roadmap-as-ai-memory-demand-keeps-climbing/index.html ; 3dnews — https://3dnews.ru/1115818 ; Futurum — https://futurumgroup.com/?p=97109
 - [s38] [SS] Tom's Hardware (Rapidus 2027) — https://www.tomshardware.com/tech-industry/semiconductors/rapidus-targets-2nm-mass-production-in-2027-with-a-four-times-capacity-ramp ; TrendForce — https://www.trendforce.com/news/?p=53791
 - [s39] [TER] Market research: GMI — https://www.gminsights.com/industry-analysis/semiconductor-process-control-equipment-market ; SNS Insider — https://www.snsinsider.com/reports/semiconductor-defect-inspection-equipment-market-11288 ; Strategic Market Research — https://www.strategicmarketresearch.com/market-report/e-beam-wafer-inspection-system-market
 - [s42] [SS] EUV scatterometry programmes: NIST FCMN, 17 Mar 2026 — https://cdn.fs.pathlms.com/nGbQa5KQcWbGA561QHFN?dl=true ; PSI REGINE (EUV2023 abstract) — https://www.euv2023.ptb.de/fileadmin/documents/euv2023/abstracts/O01_Ekinci.pdf ; imec AttoLab (EPJ Web Conf. 2025) — https://www.epj-conferences.org/10.1051/epjconf/202533501019
-- [s43] [SS] TSMC Q3 2025 call transcript, 17 Oct 2025 — https://www.fool.com/earnings/call-transcripts/2025/10/17/tsmc-tsm-q3-2025-earnings-call-transcript
+- [s43] [SS] TSMC Q3 2025 call transcript, 17 Oct 2025
 
 [s1]: https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/
 [s2]: https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/
