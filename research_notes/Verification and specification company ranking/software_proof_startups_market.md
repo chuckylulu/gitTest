@@ -308,7 +308,7 @@ A market is forming but is still small and fragmented. Documented money comes ma
     - No price for formal verification. Web3 losses in H1 2025: about $3.1B.
   - Cross-reference (europe_israel_specialists.md):
     - Certora AutoProver: free tier ($0, one seat, runs billed); Pro $120 a month; Enterprise from $3,000 a month; runs paid from credits.
-    - An Aave DAO proposal (Oct 2025) paid $2.39M for 12 months of continuous security (formal verification, manual audits, fuzzing).
+    - An Aave DAO proposal (Oct 2025) set $2.39M for 12 months of continuous security (formal verification, manual audits, fuzzing).
     - https://www.certora.com/blog/ai-formal-verification-smart-contracts-costs-use-cases ; https://www.certora.com/pricing
   - A DEV Community post puts the audit market at "~$500M/year", rising to about $5B a year with AI, without sources [UNVERIFIED]. https://dev.to/ohmygod/how-ai-agents-can-audit-smart-contracts-in-2026-a-technical-deep-dive-5gl
   - Security firms: CertiK revenue range $10–50M per Dealroom [UNVERIFIED]; Veridise and RV as above. The Ethereum Foundation funded Nethermind Research's Lean verification of axiom.xyz's OpenVM, an example of crypto infrastructure paying for proofs [PRIMARY].
@@ -370,10 +370,10 @@ Not yet, but the gap is narrowing. In Oct–Nov 2026 two labs verified real soft
   - Math Inc. open-sourced OpenGauss; Axiom made AXLE free [PRIMARY].
 - Lean FRO: "AI-generated proofs are becoming a major source of grind and bv_decide usage". Its Tau Ceti project uses AI reviewers to judge pull requests against open rubrics [PRIMARY]. https://lean-lang.org/fro/roadmap/y4-1
 - Independent ranking: the specialised AlephProver ranked first on MathArena's ArXivLean in Mar and Jun 2026 [INDEPENDENT]. Later rounds exist (LeanLean 10/2026, ArXivLean 09/2026), but the tables load by script and were not read. MathArena runs each model four times per problem and reports average score and cost per run [PRIMARY]. https://matharena.ai/
-- Sep 2025 press: "some experts doubt formal math approaches will be widely needed as labs build better reasoning models" [SECONDARY]. https://www.upstartsmedia.com/p/math-ai-startups-push-new-models
+- Sep 2025 press (paraphrase of the article, not a direct quote): some experts doubt formal-maths approaches will be widely needed as labs build better reasoning models [SECONDARY]. https://www.upstartsmedia.com/p/math-ai-startups-push-new-models
 
 ### Inferences
-- Proof search is becoming a commodity that labs can supply. What labs bought from a start-up in the Anthropic case was trusted semantics.
+- Proof search is becoming a commodity that labs can supply. What Anthropic needed from a start-up was trusted semantics (a collaboration; no payment disclosed).
 - Start-ups that own semantic models, customer workflows or sign-off are less exposed than those selling prover accuracy alone.
 - No lab acquisition was found, so labs currently partner with start-ups or build their own rather than buy them.
 
