@@ -146,7 +146,7 @@ All five listed companies reported Q3 2026 between Oct 28 and Nov 9, 2026.
 ### Takeaway
 Firewall vendors (Fortinet, Check Point, Cisco) own an **inline enforcement point**. That is a fast, final "judge" of traffic, and it can be independently measured (CyberRatings, NSS Labs). Fortinet adds a **cost and throughput constraint**: its custom security processors (ASICs) and its unit scale. That constraint is durable while on-premises line-rate inspection is needed. It is exposed to switch- and DPU-embedded enforcement (Cisco Hypershield) and to cloud delivery, and the ASIC does not shield Fortinet from memory-chip costs.
 
-Exposure-management vendors (Tenable, Qualys, Rapid7) are losing ownership of the **discovery judge**. Gated frontier models are now finding vulnerabilities at scale and cheaply: at least 129,000 verified vulnerabilities by Glasswing partners between April and July 2026. The bottleneck has moved to verification, prioritisation and patching. Only 516 of 6,157 disclosed open-source vulnerabilities had been patched by Oct 2, 2026. That shift favours an **exposure system of record plus remediation and shielding**, which is where Tenable (which integrates Mythos and OpenAI cyber models) and Qualys (TruRisk Eliminate) are heading. Rapid7's exposure management is shrinking.
+Exposure-management vendors (Tenable, Qualys, Rapid7) are losing ownership of the **discovery judge**. Gated frontier models are now finding vulnerabilities at scale and cheaply: at least 129,000 verified vulnerabilities by Glasswing partners between April and July 2026. The bottleneck has moved to verification, prioritisation and patching: maintainers had patched only 516 of the 6,157 vulnerabilities Anthropic disclosed to them, as of Oct 2, 2026. That shift favours an **exposure system of record plus remediation and shielding**. Tenable (which says it integrates Mythos and OpenAI cyber models) and Qualys (TruRisk Eliminate) are heading there. Rapid7's exposure management is shrinking.
 
 Check Point is building an AI-security and AI-evaluation stack through about $390M of disclosed acquisitions. Cisco has the best confirmed access to gated models: it was a Glasswing launch partner.
 
@@ -165,7 +165,7 @@ Check Point is building an AI-security and AI-evaluation stack through about $39
 #### Fortinet
 - ASICs: Ken Xie credits "our differentiated FortiASIC technology" for performance and lower total cost of ownership. No processor generation was named. [company claim, unconfirmed] — [Motley Fool transcript, Oct 29, 2026](https://www.fool.com/earnings/call-transcripts/2026/10/29/fortinet-ftnt-q3-2026-earnings-call-transcript/)
 - Unit scale: Fortinet's Q1 and Q3 2026 earnings decks claim over 50% of global firewall units shipped, citing 650 Group data. This is third-party data relayed by the company; the deck itself returned 403 — [Fortinet Q3 2026 earnings presentation, Oct 28, 2026 (via search snippet)](https://investor.fortinet.com/static-files/0b752936-106e-4177-8a6e-c4ed0f4d4e52)
-- The ASIC does not avoid memory costs. The 10-Q says the AI build-out has caused "a global shortage of memory chips, which are a critical component in certain of our products", and that Fortinet is "implementing price increases" that "may not be sufficient or timely". Product gross margin fell to 64.4% from 67.7% — [Fortinet 10-Q, Oct 30, 2026](https://www.sec.gov/Archives/edgar/data/1262039/000126203926000027/ftnt-20260930.htm)
+- Memory remains a cost exposure despite the ASICs. The 10-Q says the AI build-out has caused "a global shortage of memory chips, which are a critical component in certain of our products", and that Fortinet is "implementing price increases" that "may not be sufficient or timely". Product gross margin fell to 64.4% from 67.7% — [Fortinet 10-Q, Oct 30, 2026](https://www.sec.gov/Archives/edgar/data/1262039/000126203926000027/ftnt-20260930.htm)
 - OT and AI products [company claim, unconfirmed] — [Motley Fool transcript](https://www.fool.com/earnings/call-transcripts/2026/10/29/fortinet-ftnt-q3-2026-earnings-call-transcript/):
   - OT billings grew nearly 40% in Q3 2026, including an 8-figure OT deal with a transportation company.
   - Security subscriptions include IPS, virtual patching and OT services (described only qualitatively).
@@ -234,7 +234,7 @@ Check Point is building an AI-security and AI-evaluation stack through about $39
 ### Inferences
 - **Fortinet, test (a), moderately strong.**
   - Its judge is the inline enforcement and IPS/virtual-patching verdict at line rate. It is fast and final at the edge, and outside testers can check how faithful it is. The ASIC and unit scale are a real cost constraint that AI does not remove.
-  - Two developments could close the gap. Enforcement could move into switches and DPUs (Cisco Hypershield on N9300); and cloud firewalls could improve, although CyberRatings' 2026 results, where hyperscaler-native firewalls scored 0%, suggest that gap is not closing quickly.
+  - Two developments could close the gap. Enforcement could move into switches and DPUs (Cisco Hypershield on N9300); and cloud firewalls could improve. CyberRatings' 2026 results suggest that second gap is not closing quickly: AWS's and Azure's native firewalls scored 0% and Google's 77.45%.
   - Weakest point: no confirmed gated-model access.
 - **Check Point, test (a), moderate and shifting.** It holds the same enforcement-point judge. CloudGuard posted the top measured effectiveness in 2026 (99.95%) but is losing on price.
   - Deepchecks and Lakera move it toward an AI-evaluation "judge" for AI agents. That judge is nascent and unproven at scale.
@@ -338,7 +338,7 @@ Check Point is building an AI-security and AI-evaluation stack through about $39
 
 ### Takeaway
 - **Memory-chip inflation from the AI build-out is the main 2026 hardware shock.** Fortinet's product margin fell 330bp. Check Point lost about 1 point of gross margin in 2026 and expects similar in 2027. Both, along with Palo Alto, raised firewall prices.
-- **Fortinet is past the peak of its refresh cycle.** Product revenue grew 37% in Q3 2026; Jefferies flagged pull-forward that could weigh around mid-2027; class actions over its 2026 refresh-cycle statements are pending.
+- **Fortinet appears to be past the peak of its refresh cycle**, going by Jefferies' pull-forward call and management's "normalized growth" framing. Product revenue grew 37% in Q3 2026; Jefferies said pull-forward could weigh around mid-2027; class actions over its 2026 refresh-cycle statements are pending.
 - **Check Point says Q3 2026 was its revenue trough.** It carries specific risk from Israel: war, reserve duty, boycotts and anti-takeover law.
 - **Exposure management is a mature market** being re-shaped by AI discovery. Tenable and Qualys grow about 10%; Rapid7 is shrinking.
 - **Across the three AI scenarios,** subscription-heavy, net-cash Qualys and Check Point are the most resilient to a 2028 pause. Fortinet is the most cyclical but best funded. Rapid7 is the most fragile.
@@ -463,7 +463,7 @@ Transitions: (1) billable testing hours → automation; (2) human triage → mac
 ### Takeaway
 All prices are Nov 11, 2026 closes.
 - **Fortinet ($128.10; EV $89.9B)** trades at 11.4x trailing and about 10.2x forward EV/Sales, 26x EV/FCF and 34x forward P/E. That is the middle of its five-year range, after a 22% one-day drop on Oct 29, 2026.
-- **Check Point ($146.58; EV $12.8B)** sits below its five-year range on every metric: 4.65x EV/Sales, 11.4x EV/FCF and 13.6x forward P/E.
+- **Check Point ($146.58; EV $12.8B)** sits below its five-year year-end range on EV/Sales (4.65x) and forward P/E (13.6x), and in the lower part of the range on EV/FCF (11.4x).
 - **Tenable ($42.93)** is at 4.5x EV/Sales and 17x EV/FCF, near the low end of its history despite a 53% rise over 52 weeks.
 - **Qualys ($182.69)** is at 7.8x EV/Sales, 17x EV/FCF and 21x forward P/E, at or below its five-year medians.
 - **Rapid7 ($14.78)** is at 1.5x EV/Sales and 8.9x EV/FCF, a distressed-level multiple for a shrinking business.
@@ -539,7 +539,7 @@ All prices are Nov 11, 2026 closes.
   - Cycle: late refresh, with memory inflation.
   - Would improve the entry: a FY2027 outlook on Feb 9, 2027 showing product revenue holding up and services re-accelerating; memory-cost relief; or a lower price nearer its roughly 8.5x EV/Sales five-year median.
 - **Check Point — attractive (low expectations; contingent).**
-  - Price: an FCF yield on EV of about 8.8% (11.4x) implies roughly flat FCF in perpetuity, with buybacks shrinking the share count about 7% a year. Consensus is about 4% revenue and about 1% EPS growth. Multiples are below every five-year year-end value.
+  - Price: an FCF yield on EV of about 8.8% (11.4x) implies roughly flat FCF in perpetuity, with buybacks shrinking the share count about 7% a year. Consensus is about 4% revenue and about 1% EPS growth. EV/Sales and forward P/E are below every five-year year-end value; EV/FCF is second-lowest (only end-2021, 9.8x, was lower).
   - Discount drivers: Israel risk, product share loss and the 2028 convertible put.
   - Would improve the entry: Capital Markets Day (February 2027) targets confirming subscriptions above $1.5B with stable products; evidence of sales-capacity productivity; a lower Israel risk premium.
 - **Tenable — fair.**
@@ -602,7 +602,7 @@ All facts below are cited in sections 1–7; price data are Nov 11, 2026 closes 
 - (d) Financial strength: revenue −1%; non-GAAP operating margin 37%; FCF margin about 41% TTM; SBC 8.2%; net cash about $2.15B after the $2B 0% convertible (2030, put 2028); share count −6.9% YoY; three distributors about 39% of sales; EMEA 46%.
 - (e) Resilience: Israel war, reserve-duty and boycott risk; 43% of staff in Israel; memory headwind of about 1 point of margin; revenue trough per management. Resilient to a pause.
 - Path forward: **partly coherent**.
-- Entry point: $146.58; EV $12.8B; 4.65x EV/Sales; 11.4x EV/FCF; 13.6x forward P/E. Below its five-year range. **Attractive (low expectations; contingent on the February 2027 CMD).**
+- Entry point: $146.58; EV $12.8B; 4.65x EV/Sales; 11.4x EV/FCF; 13.6x forward P/E. Below its five-year range on EV/Sales and forward P/E; lower part of the range on EV/FCF. **Attractive (low expectations; contingent on the February 2027 CMD).**
 
 **Tenable (TENB)**
 - (a) Position: exposure system of record. Discovery is being commoditised by frontier models, hedged through Mythos and OpenAI integrations [company claim].
