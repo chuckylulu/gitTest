@@ -200,7 +200,7 @@ Weathernews and Vaisala pass on position and finances. Verisk owns a regulatory 
 
 ### Inferences: six transitions, said versus done
 1. **Seats to usage or result pricing.** WNI says it is moving to SaaS; done so far is a 96% recurring base, but no usage pricing is disclosed. Xweather has done it: its ARR includes volume-based charges. Verisk sells subscriptions. Spire sells data contracts.
-2. **CPUs to GPUs.** WNI said it would invest in "AI化" (AI conversion); its capex was tiny (¥178m). Vaisala bought deep-learning capability (Atmo). Kweather built NVIDIA infrastructure.
+2. **CPUs to GPUs.** WNI said it would invest in "AI化" (AI conversion); its capex was tiny (¥207m for fixed and intangible assets in FY5/2026). Vaisala bought deep-learning capability (Atmo). Kweather built NVIDIA infrastructure.
 3. **Agent-driven tools.** Xweather states an MCP offering. WNI's WxTech API makes no agent mention. Verisk announced AI-platform integrations including Claude (28 Oct 2026, StockAnalysis news).
 4. **Open models.** Kweather and DTN have adopted NVIDIA's; WNI's global API blends national models. Must go right: owners must add data that open models lack.
 5. **Learned models beside physics.** WNI's AI-Nowcast is in its app, and Xweather offers "AI-driven forecasts". No outside verification exists for either.
@@ -250,7 +250,7 @@ Warnings are legally reserved to national services, and aviation to two designat
 Weather centres are adding GPUs and moving to the cloud. Physics codes are already using lower precision, so the decline of native FP64 in AI chips hurts less than the prior assumes. Data assimilation stays on CPUs.
 
 ### Cited Findings
-- **NOAA** will move its operational system, WCOSS, to Google Cloud (announced 27 Jul 2026). GFS and GEFS move through early 2027, with full completion by Dec 2027 — [NOAA](https://www.noaa.gov/news-release/noaas-use-of-cloud-infrastructure-grows-to-include-weather-prediction-models). Rhea, a $100m GPU research system, was funded in 2024 (older).
+- **NOAA** will move its operational system, WCOSS, to Google Cloud (announced 27 Jul 2026). GFS and GEFS move through early 2027, with full completion by Dec 2027 — [NOAA](https://www.noaa.gov/news-release/noaas-use-of-cloud-infrastructure-grows-to-include-weather-prediction-models). Rhea, a $100m GPU research system, was funded in 2024 (older) — [Next Platform](https://www.nextplatform.com/hpc/2024/09/06/noaa-gets-100-million-windfall-for-rhea-research-supercomputer/1655580).
 - **ECMWF** added a GPU partition in Bologna; JUPITER (EuroHPC's exascale system) is accelerator-only, with GH200 chips — [ECMWF Newsletter 186](https://www.ecmwf.int/sites/default/files/elibrary/012026/81710-gpu-adaptation-of-the-ifs-for-eurohpc-machines.pdf).
 - **Elsewhere.** CWA's 6th-generation system added GPUs ([PTS](https://news.pts.org.tw/article/818850)); KMA obtained 208 GPUs ([Daum](https://v.daum.net/v/20260528142448171)); JMA stresses compute ([JMA](https://www.jma.go.jp/jma/press/2606/26a/nwp_strategic_plan_2030_260626_1summary.pdf)).
 - **Precision.** MeteoSwiss runs a mixed-precision dynamical core and single-precision radiation in production ([GMD](https://gmd.copernicus.org/articles/19/755/2026/)). NVIDIA Rubin's native FP64 is ~33 TFLOPS, below H100; it emulates up to 200 TFLOPS for matrix operations only, and vector-heavy codes cannot use that — [The Register, 18 Jan 2026](https://www.theregister.com/2026/01/18/nvidia_fp64_emulation/).

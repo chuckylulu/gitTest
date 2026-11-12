@@ -65,7 +65,7 @@ Calibre is a genuine sign-off "judge" with outside confirmation. Simcenter/Altai
   - A Samsung VP (Hyung-Ock Kim) is quoted.
   - Source: [Siemens release, 28 May 2026](https://news.siemens.com/en-us/siemens-safe-forum-2026/)
 - NVIDIA's GTC release names Samsung and SK hynix as Calibre users for computational lithography and physical verification. The same release says JLR and Mercedes-Benz use STAR-CCM+ for GPU-accelerated engineering — [NVIDIA, 16 Mar 2026](https://nvidianews.nvidia.com/news/nvidia-and-global-industrial-software-giants-bring-design-engineering-and-manufacturing-into-the-ai-era)
-- (b) Lead, EDA overall: TrendForce gives Synopsys 31%, Cadence 30%, Siemens 13% (2024); a 2025 forecast has Cadence 32%, Synopsys 30%, Siemens 13% — [TrendForce via search summary](https://www.trendforce.com/news/?p=48281)
+- (b) Lead, EDA overall: TrendForce figures, as relayed in a search summary, give Synopsys 31%, Cadence 30%, Siemens 13% (2024); a 2025 forecast has Cadence 32%, Synopsys 30%, Siemens 13%. Which TrendForce page carries which figure was not confirmed: [TrendForce ?p=48281](https://www.trendforce.com/news/?p=48281), [?p=40263](https://www.trendforce.com/news/?p=40263), [?p=50800](https://www.trendforce.com/news/?p=50800)
 - Lead, simulation:
   - CIMdata puts the S&A market at USD 11.67bn in 2025 (+8.5%, below its >USD 12bn forecast); vendor shares are paywalled — [CIMdata](https://www.cimdata.com/en/news/item/30365-cimdata-publishes-simulation-and-analysis-market-report)
   - CIMdata's 2025 report (covering 2024) profiled Altair among "market leaders" — [CIMdata store](https://www.cimdata.com/en/online-store/market-analysis-reports/product/351-2025-simulation-analysis-market-analysis-report)
@@ -88,7 +88,7 @@ Calibre is a genuine sign-off "judge" with outside confirmation. Simcenter/Altai
 - DI NCE rose from EUR 10,476m (Sep 2024) to EUR 22,885m (Sep 2025) on Altair/Dotmatics. Dotmatics cash outflow was EUR 4.2bn — [Earnings Release Q4 FY2025, 13 Nov 2025](https://assets.new.siemens.com/siemens/assets/api/uuid:3948cdd4-35e0-4c1d-8412-9aed4097b3d0/HQCOPR202511117277EN.pdf)
 - Altair price: USD 113/share, EV ~USD 10bn, closed 26 Mar 2025 — [Siemens, 26 Mar 2025](https://news.siemens.com/en-us/siemens-altair-engineering-closing/); [design-reuse copy of 30 Oct 2024 announcement](https://design-reuse.com/news/57011/siemens-saltair-engineering-acquisition.html). A USD 10.5bn bridge loan was arranged — [BNN Bloomberg, 26 Nov 2024](https://bnnbloomberg.ca/investing/2024/11/26/siemens-secures-105-billion-bridge-loan-for-altair-buyout)
 - Concentration: at Altair, no customer exceeded 2% of 2024 software billings. Billings were Americas 32%, EMEA 31%, APAC 37%; US revenue was 49% — [Altair 10-K](https://www.sec.gov/Archives/edgar/data/1701732/000095017025024197/altr-20241231.htm). Siemens does not disclose DI customer concentration.
-- (e) Export controls: the US required licences for EDA exports to China from late May 2025; Siemens said the industry was informed on 23 May — [The Register, 30 May 2025](https://www.theregister.com/2025/05/30/eda_us_china/). The curbs were rescinded in early July 2025, and Siemens, Synopsys and Cadence resumed sales — [Business Standard, 3 Jul 2025](https://www.business-standard.com/world-news/us-rolls-back-chip-software-export-curbs-china-siemens-synopsys-cadence-resume-ops-125070300801_1.html)
+- (e) Export controls: the US required licences for EDA exports to China from late May 2025. Siemens EDA, Synopsys and Cadence confirmed notices, and Siemens reportedly said the industry was informed on 23 May (per a search summary of this coverage) — [The Register, 30 May 2025](https://www.theregister.com/2025/05/30/eda_us_china/); [TechCrunch, 30 May 2025](https://techcrunch.com/2025/05/30/us-imposes-new-rules-to-curb-semiconductor-design-software-sales-to-china). The curbs were rescinded in early July 2025, and Siemens, Synopsys and Cadence resumed sales — [Business Standard, 3 Jul 2025](https://www.business-standard.com/world-news/us-rolls-back-chip-software-export-curbs-china-siemens-synopsys-cadence-resume-ops-125070300801_1.html)
 - No new 2026 EDA-specific BIS rule was found (China-strand digest search, 12 Nov 2026). Synopsys' China share fell from 16% (FY24) to 12% (FY25) as barred customers turned to local EDA — [SemiAnalysis](https://newsletter.semianalysis.com/p/eda-market-primer)
 - Cycle: in China, DI order intake was +8% in Q4 and local-for-local revenue +25% in FY2026 (call). Automation recovered after the FY2025 severance programme, and Q4 DI orders were +15% (release).
 
@@ -96,7 +96,7 @@ Calibre is a genuine sign-off "judge" with outside confirmation. Simcenter/Altai
 - **Provisional assessment, (a) Position:** owns a judge in Calibre (foundry-mandated physical verification) and near-judge positions in Solido SPICE, mPower and 3DThermal. Simcenter/Altair solvers are respected but not shown here to be mandated sign-off tools. HyperMesh-type pre-processing is a gap-filler exposed to agents.
 - **Provisional assessment, (b) Lead:** strong, outside-confirmed lead in physical verification. In EDA overall Siemens is a distant #3 (~13%). In simulation, the lead is plausible but unquantified.
 - **Provisional assessment, (c) Revenue model:** mostly recurring. Named-user seats remain the core metric, while Altair Units and EDA term licences scale more with usage and compute. Services exposure is small, but Siemens group hardware exposure is large outside software.
-- **Provisional assessment, (d) Financial strength:** very strong group (0.3x leverage, EUR 12bn FCF). DI pre-tax return on NCE fell from ~33% (FY2024) to ~16% (FY2026) after the acquisitions (my calc from the releases).
+- **Provisional assessment, (d) Financial strength:** very strong group (0.3x leverage, EUR 12bn FCF). DI pre-tax return on NCE fell from ~33% (FY2024) to ~16% (FY2026) after the acquisitions (my calc: segment profit / year-end NCE from the releases).
 - **Provisional assessment, (e) Resilience:**
   - Steady scenario: favourable. AI chips, 3D-IC thermal sign-off and High-NA OPC compute support EDA, and SI/DI also sell into data centres.
   - Financing-led pause (~2028): EDA renewals and data-centre hardware would both soften. The group balance sheet cushions this.
@@ -118,7 +118,7 @@ GPU and agent work is shipped in parts and well funded. Pricing stays seat-based
   - Contrast: Synopsys prices GPU CFD "on the speedup delivered" — [Schnitger, 16 Sep 2026](https://schnitgercorp.com/2026/09/16/cae-earnings-recap-no-hallucinations-here/)
 - (2) CPU to GPU / low precision:
   - SAID: Siemens will "complete GPU acceleration across its entire simulation portfolio", and EDA targets "2-10x speedups in key workflows" (verification, layout, process optimisation). No dates or money were given — [NVIDIA/Siemens, 6 Jan 2026](https://nvidianews.nvidia.com/news/siemens-and-nvidia-expand-partnership-industrial-ai-operating-system)
-  - DONE (STAR-CCM+ 2602): GPU-native multiphase solvers (VOF, MMP, phase change) and better multi-GPU scaling. A reseller case ran on 2 A100s in ~9 min vs 80 Xeon cores in ~46 min — [Siemens blog, Feb 2026](https://blogs.sw.siemens.com/simcenter/simcenter-star-ccm-2602-released/); [Volupe](https://volupe.com/?p=28840)
+  - DONE (STAR-CCM+ 2602): GPU-native multiphase solvers (VOF, MMP, phase change) and better multi-GPU scaling. A reseller case (workload unspecified) ran on 2 A100s in ~9 min vs "80 CPUs (Intel Xeon Gold 6248)" in ~46 min — [Siemens blog, Feb 2026](https://blogs.sw.siemens.com/simcenter/simcenter-star-ccm-2602-released/); [Volupe](https://volupe.com/?p=28840)
   - DONE (STAR-CCM+ 2606): multi-GPU PhysicsAI training and a GPU Lagrangian/spray solver (same search, Siemens blog).
   - DONE (Altair): Altair CFD/EDEM ran 5-6x faster scaling from 1 to 8 GPUs on Azure — [DE247, 10 Feb 2026](https://www.digitalengineering247.com/article/gpu-acceleration-expands)
   - DONE (Calibre rasterizer): the Calibre GPU rasterizer is up to 290x (Manhattan) and 45x (curvilinear) faster than optimised CPU code on H100, with <1% absolute error, and "Siemens EDA's GPU-powered OPC solution is available now". Company claim, unconfirmed — [Calibre blog, 13 Apr 2026](https://blogs.sw.siemens.com/calibre/2026/04/13/why-a-gpu-rasterizer-matters-for-computational-lithography-in-both-performance-and-precision-at-scale/)
@@ -133,7 +133,7 @@ GPU and agent work is shipped in parts and well funded. Pricing stays seat-based
   - At DAC 2025 Siemens launched Aprisa AI, Calibre Vision AI and Solido AI — [SemiAnalysis](https://newsletter.semianalysis.com/p/eda-market-primer)
   - TSMC collaborations on an AI DRC-fix flow (Calibre + Aprisa AI + Solido Fuse) — TSMC release above.
 - (4) Open source:
-  - Altair open-sourced Radioss as OpenRadioss in 2022.
+  - Altair open-sourced Radioss as OpenRadioss in 2022 (per the brief). The Siemens page refers to "four years of successful community-driven research".
   - The Siemens page now says "The OpenRadioss website is being retired". Future R&D moves to a "managed 'Shared Source' environment", and visitors are pointed to "Simcenter Radioss, our flagship commercial solution" — [Siemens transition page, live 12 Nov 2026](https://www.siemens.com/en-us/products/simcenter/mechanical-simulation/radioss/rd/)
   - On 12 Nov 2026, github.com/OpenRadioss/OpenRadioss returned 404 to WebFetch, and the repository attach tool reported it "not found ... or [no] access".
   - Separately, Siemens bought Precision Innovations (Jul 2026), which Schnitger tentatively links to the open-source OpenROAD framework (her hedge: "not [an] EDA person") — [Schnitger, 20 Jul 2026](https://schnitgercorp.com/2026/07/20/siemens-to-acquire-precision-innovations-for-ai-powered-chip-planning/)
@@ -186,7 +186,7 @@ A high-margin, net-cash, ~83% recurring business. Growth fell to 3-5% in 2025-26
   - Cloud was 28% of Q3 software; 3DEXPERIENCE +25%.
   - Headcount 26,999.
   - Source: [Dassault release via Yahoo Finance, 28 Oct 2026](https://finance.yahoo.com/healthcare/articles/dassault-syst-mes-strong-q3-055900413.html)
-  - Subscription is ~half of ARR (46% a year earlier) — [Investing.com transcript, 28 Oct 2026](https://www.investing.com/news/transcripts/earnings-call-transcript-dassault-systemes-beats-q3-2026-estimates-shares-fall-93CH-4978361) (machine transcript)
+  - Subscription is ~half of ARR (46% a year earlier) — [Investing.com transcript, 28 Oct 2026](https://www.investing.com/news/transcripts/earnings-call-transcript-dassault-systemes-beats-q3-2026-estimates-shares-fall-93CH-4978361) (machine transcript). An AI-generated slides summary instead says subscription was EUR 582m, 50% of Q3 recurring revenue (49% a year earlier) — [Investing.com, 28 Oct 2026](https://uk.investing.com/news/stock-market-news/dassault-systemes-q3-2026-slides-platform-drives-5-growth-guidance-raised-93CH-4938388); the bases differ (ARR vs recurring revenue).
 - Guidance history:
   - Apr 2025: margin outlook cut on tariff volatility, revenue 6-8% kept — [Reuters via AOL](https://www.aol.com/software-firm-dassault-systemes-cuts-050306724.html)
   - Jun 2025: EPS-doubling target (EUR 2.20-2.40) moved from 2028 to 2029, citing autos and tariffs — [Reuters via The Star, 6 Jun 2025](https://www.thestar.com.my/tech/tech-news/2025/06/06/france039s-dassault-systemes-delays-earnings-target-timeline-until-2029)
@@ -297,6 +297,7 @@ These items remain open and should not be stated as fact.
 - Simcenter/Altair revenue since the merger; Siemens EDA revenue (estimates only); SIMULIA and BIOVIA revenue.
 - Dotmatics enterprise value (reported around USD 5.1bn at announcement in Apr 2025, not re-verified; EUR 4.2bn cash outflow confirmed).
 - Intel Foundry certification of Calibre (only SemiAnalysis's assertion).
+- Older DRC share figure: ~72% all-node DRC share for Mentor in 2016, attributed to Gary Smith EDA (Dec 2017). It was seen only in a search summary of a 2019 Mentor presentation; the hosting URL was not confirmed.
 - Third-party OPC/computational-lithography share.
 - Any customer confirmation, GA date, hardware baseline or accuracy data for the Calibre-cuLitho 10-17x claim.
 - PhysicsX-Siemens partnership; Simcenter X licensing terms; STAR-CCM+ GPU licensing.
