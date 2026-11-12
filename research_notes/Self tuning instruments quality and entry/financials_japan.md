@@ -18,7 +18,7 @@ Notes for the "self-tuning instruments: quality and entry" report. Part 1 holds 
   - All other requested periods were read from primary filings.
 - **Tool limits in this session.**
   - The shared WebSearch budget ran out early in the session.
-  - The Firecrawl and Exa tools had no credits.
+  - The Firecrawl and Exa tools had no credits. Two Firecrawl scrape calls and one Exa fetch call were attempted at the start; all three were rejected for lack of credits, and no data from them is used. On the coordinator's later instruction, no Firecrawl or other search service was used after that.
   - Kabutan, irbank and minkabu returned HTTP 403.
   - As a result, I fetched known URLs directly: TDnet PDFs through Yahoo!ファイナンス's disclosure mirror (the same filing files), StockAnalysis pages, and Yahoo!ファイナンス price pages.
   - Some items remain unverified; they are listed in Part 4.
@@ -183,6 +183,7 @@ The 2026 low came on 6 Nov 2026 for Anritsu, Rigaku, Hitachi, Yokogawa, Tokyo Se
 | Medical Equipment | 8.3% | 0.2% |
 
 - Inference: the theme mainly touches the Scientific segment, plus part of the e-beam systems.
+- Once the medical business passes to Sysmex [JE-SYS], JEOL becomes a two-segment company. On FY3/26 figures (my calc), Scientific & Metrology would be about 71% of sales and Industrial Equipment about 29%. This raises theme purity.
 
 **Medium-term plan and governance**
 - **"Evolving Growth 2.0 – A New Horizon"** (announced 15 May 2025; covers FY2025 to FY2029, i.e., FY3/26 to FY3/30) [JE-MTP]:
@@ -194,10 +195,14 @@ The 2026 low came on 6 Nov 2026 for Anritsu, Rigaku, Hitachi, Yokogawa, Tokyo Se
 - **Events.**
   - ¥12.8bn buyback in FY3/26 [JE-FY26].
   - FY3/26 year-end dividend raised from ¥53 to ¥79 (15 May 2026) [JE-FY26].
-  - TDnet, 12 May 2026: statutory disclosures for a company split (会社分割) involving "株式会社医用機器事業分割準備会社", a preparatory company for the medical-equipment business [JE-TDnet]. Purpose and counterparty could not be verified.
-  - I found no activist investor or tender offer, but my search was limited.
+  - **Sale of the medical business to Sysmex.** On 2 Sep 2025 the board resolved to move the medical-equipment business (automated clinical chemistry analysers) into a new wholly owned subsidiary by simplified absorption-type company split, and then to "transfer to SYSMEX CORPORATION… all shares of the New Company" [JE-SYS]. The statutory pre- and post-split disclosures followed on 12 May 2026 [JE-TDnet]. The price, the closing date of the share transfer and the earnings effect could not be verified, because pages 3 onward of the notice were not read.
+  - **Self-tender buying out Nikon (an unwinding cross-shareholding)** [JE-TOB]:
+    - In late October 2025 Nikon, JEOL's second-largest shareholder (2,300,000 shares, 4.49%), said it intended to sell all of its shares "to enhance its own asset efficiency and strengthen its financial position", while keeping the business alliance that dates from 14 Feb 2014. Under that alliance JEOL had issued 8,000,000 new shares to Nikon at ¥368.
+    - JEOL announced a tender offer for its own shares on 2 Feb 2026 and reported the result and completion on 5 Mar 2026 [JE-TDnet].
+    - The tender price was not read. My calc: FY3/26 treasury-share purchases of ¥12,770m over a rise of about 2.44m treasury shares imply an average of about ¥5,240 a share.
+  - I found no activist investor, but my search was limited.
 
-**Gaps.** 1H results (13 Nov); share of service revenue; R&D ratio; details of the medical split; mask-writer orders and backlog; customer concentration.
+**Gaps.** 1H results (13 Nov); share of service revenue; R&D ratio; price and closing date of the medical sale to Sysmex; the Nikon tender price; mask-writer orders and backlog; customer concentration.
 
 ---
 
@@ -363,11 +368,29 @@ The 2026 low came on 6 Nov 2026 for Anritsu, Rigaku, Hitachi, Yokogawa, Tokyo Se
 
 **Theme exposure**
 - A&MI (chromatographs, mass spectrometers, spectrophotometers, testing machines, and now Tescan electron microscopes) was 62.8% of 1H sales (my calc).
-- Tescan's own revenue could not be verified.
+- **Tescan's size** (Czech GAAP) [SH-TES]:
+
+| Fiscal year (December) | Net sales | EBITDA | Adjusted operating profit (before goodwill amortisation) |
+|---|---|---|---|
+| FY12/23 | CZK 3,316m | CZK 285m | CZK 146m |
+| FY12/24 | CZK 4,026m (≈¥30.6bn at the notice's rate of ¥7.6/CZK, my calc) | CZK 627m (≈¥4.8bn) | CZK 475m (≈¥3.6bn) |
+
+- Products: SEM, FIB-SEM, TEM and Micro-CT; "more than 4,000 units sold across 80 countries".
+- On FY12/24 figures, Tescan adds roughly 5% to Shimadzu's sales base (my calc).
 
 **Medium-term plan and governance**
-- The 1H report refers to core businesses "emphasized in the Medium-Term Management Plan" [SH-1H]. The plan's name, period and numeric targets could not be verified in this session.
-- **Tescan.** Glass HoldCo s.r.o., Tescan Group a.s. and 16 other companies were consolidated from 1H FY3/27. Goodwill rose by ¥127.2bn (provisional), and A&MI segment assets rose by ¥164.3bn [SH-1H pp.14-16].
+- **Medium-term plan.**
+  - The 1H report refers to core businesses "emphasized in the Medium-Term Management Plan" [SH-1H].
+  - The Tescan notice of 25 Dec 2025 calls the "FY2023–2025 Medium-Term Management Plan" "ongoing". Its stated aim is to "transform into a total solution provider that delivers the 'data' its customers require", with M&A as an inorganic growth lever [SH-TES].
+  - The name, period and numeric targets of any successor plan from FY3/27 could not be verified.
+- **IFRS.** On 26 Feb 2026 Shimadzu gave notice of "Voluntary Adoption of International Financial Reporting Standards (IFRS)" [SH-TDnet]. The timing was not read.
+- **Tescan deal.**
+  - On 25 Dec 2025 Shimadzu agreed "with Carlyle" to buy all shares of Glass HoldCo s.r.o., which indirectly owns Tescan Group a.s. [SH-TES].
+  - The seller was CETP V Glass 2 S.A.S. (Luxembourg), owned 71.41% by CETP V Glass 1 S.a.r.l., 17.57% by Glass Founders a.s. and 6.70% by Orsay Group.
+  - The two companies had a business alliance since July 2024 and a joint "SUPERSCAN" SEM brand since February 2025.
+  - The headline price is on a page I did not read.
+  - Glass HoldCo, Tescan and 16 other companies were consolidated from 1H FY3/27. The verified figures are a cash outflow of ¥112.3bn net, goodwill up ¥127.2bn (provisional) and A&MI segment assets up ¥164.3bn [SH-1H pp.12,14-16].
+  - My calc: the ¥112.3bn outflow is about 23x Tescan's FY12/24 EBITDA (≈¥4.8bn). This is a rough multiple that ignores Tescan's net debt and FX.
 - I found no activist investor or tender offer, but my search was limited.
 
 ---
@@ -462,7 +485,19 @@ The 2026 low came on 6 Nov 2026 for Anritsu, Rigaku, Hitachi, Yokogawa, Tokyo Se
   - 1 Oct 2026: Onto moved the stake to Onto Innovation Japan (26.99%) [RG-0930].
 - **The relationship.** "Joint development of hybrid metrology solutions in the semiconductor process control domain" [RG-0930]. Development of a CD-SAXS-OCD hybrid engine "commenced with Onto", aiming at memory mass-production lines in 1Q FY12/27 [RG-3Q p.11].
 - **Stale register data.** Yahoo still lists アトム・インベストメント at 27.27% (June 2026 register) [Y-268A]. The notices above supersede this.
-- **Could not verify:** the price Onto paid; Carlyle's link to Atom Investment (not named in the notices); medium-term plan targets.
+- **Alliance terms (notice of 21 Apr 2026)** [RG-0421]:
+  - Atom held 95,140,800 shares before the deal and transferred 61,123,436 of them (27.0%).
+  - Onto agreed:
+    - to "maintain the Company's managerial autonomy and independence as a publicly listed company";
+    - not to sell during a "Transfer Restriction Period" (lock-up);
+    - not to buy more shares or make an acquisition proposal during that period without Rigaku's consent (standstill).
+  - After the restriction period, the two sides will hold good-faith consultations on capital policy if either requests them.
+  - Onto has a pre-emptive right to keep its stake if Rigaku issues new shares.
+  - Onto can nominate one non-executive director, Michael Plisinski (Onto CEO), while it holds at least 50% of the transferred shares.
+  - Aims: joint hybrid metrology for AI, advanced logic, memory and packaging; cross-selling to Onto's customers; possible manufacturing in Asia; "strengthen the ability to build software- and AI-driven solutions"; a new market with an estimated SAM of "at least USD300 million by 2030".
+  - Rigaku describes its process-control business as having "robust revenue growth of approximately 20% on an annual basis".
+  - Inference: the standstill plus "consultations… regarding the Company's capital policy" after the lock-up leave a possible further transaction open. This is speculation, not a disclosed plan.
+- **Could not verify:** the price Onto paid (not stated on pages 1-3 of the notice); the length of the lock-up; whether Atom Investment is a Carlyle vehicle (Carlyle is named as the seller of Tescan to Shimadzu [SH-TES], but Atom's sponsor is not named in Rigaku's notices); medium-term plan targets.
 
 ---
 
@@ -1007,7 +1042,7 @@ Worked example (JEOL at r = 8%): (15.44 × 0.08 − 1) / (15.44 − 1/0.157) = 0
 
 | Company | Provisional read | Reasons | Conditions that would improve the entry |
 |---|---|---|---|
-| JEOL | **Fair** | 15.3x the company FY3/27 forecast is above its five-year median of 12.7x, and EV/EBITDA of 12.9x is above its median of 8.0x, while earnings are near a cyclical low (Q1 loss; forecast weighted to 2H). The exit-multiple check needs about 10% EPS growth a year, roughly the plan path. The stock is at a deep discount to US analytical peers. | 1H results (13 Nov) and 2H evidence that mask-writer shipments recover and the ¥26.5bn operating-profit forecast holds. A price near ¥5,500 (12.7x the forecast, my calc). Clarity on the medical split and on cash use (free cash flow about zero in FY3/26). |
+| JEOL | **Fair** | 15.3x the company FY3/27 forecast is above its five-year median of 12.7x, and EV/EBITDA of 12.9x is above its median of 8.0x, while earnings are near a cyclical low (Q1 loss; forecast weighted to 2H). The exit-multiple check needs about 10% EPS growth a year, roughly the plan path. The stock is at a deep discount to US analytical peers. | 1H results (13 Nov) and 2H evidence that mask-writer shipments recover and the ¥26.5bn operating-profit forecast holds. A price near ¥5,500 (12.7x the forecast, my calc). Closing and proceeds of the medical-business sale to Sysmex (which raises theme purity), and cash use (free cash flow about zero in FY3/26; ¥12.8bn spent buying back Nikon's stake). |
 | Hitachi (as a theme vehicle) | **Fair for the group; low theme purity** | 24.2x the company forecast against a five-year median of 21.8x (the median is lifted by the 2024-26 re-rating). Strong free cash flow and ¥814bn of shareholder returns. Measurement & Analysis Systems is less than about 10% of value. | A pullback toward about 20x the forecast (≈¥4,100), or any structural move or separate disclosure for Hitachi High-Tech (none announced). |
 | Shimadzu | **Fair** | 21.8x the company forecast equals its five-year median, and the stock is near its 2026 high. The price implies about 5.5% perpetual growth at r = 8%. ROIC is trending down, and net cash is about zero after Tescan. | About 19x the forecast or below (≈¥4,000), or evidence that Tescan and recurring revenue lift margins and ROIC. Next data: Q3, early February 2027 (inferred). |
 | Rigaku | **Stretched** | 24.4x the FY12/26 forecast relies on a record Q4 (about ¥15.3bn operating profit); trailing P/E is 33x. Net debt is ¥39.7bn and free cash flow is thin. Order momentum is strong (+39%; semiconductor +117%), and Onto's 27% stake is strategic. | FY12/26 results (about February 2027) confirming Q4 delivery, with FY12/27 guidance consistent with more than 30% semiconductor growth. Or a price at or below about 18x consensus EPS (≈¥1,220, my calc). |
@@ -1047,10 +1082,14 @@ Worked example (JEOL at r = 8%): (15.44 × 0.08 − 1) / (15.44 − 1/0.157) = 0
 **Company-specific items**
 - **Hitachi:** targets of the Inspire 2027 plan; the split of Measurement & Analysis Systems between electron microscopes, CD-SEM and clinical analysers.
 - **Shimadzu:**
-  - the name, period and numeric targets of its current medium-term plan;
-  - Tescan's revenue and the headline purchase price. The verified figures are a cash outflow of ¥112.3bn and goodwill of ¥127.2bn.
-- **JEOL:** the purpose and counterparty of the medical-equipment company split (only the titles of the TDnet disclosures were seen); mask-writer orders and backlog.
-- **Rigaku:** the price Onto paid Atom Investment; whether Atom is a Carlyle vehicle (not named in the notices).
+  - the successor to the FY2023-2025 medium-term plan (name and numeric targets);
+  - the headline Tescan purchase price (page 4 of [SH-TES] not read). The verified figures are a ¥112.3bn net cash outflow, ¥127.2bn goodwill and Tescan's FY12/24 sales of CZK 4,026m;
+  - the year Shimadzu starts reporting under IFRS.
+- **JEOL:**
+  - the price, closing date and earnings effect of the medical-business sale to Sysmex. The buyer is verified [JE-SYS];
+  - the Nikon tender price (later pages of [JE-TOB] not read);
+  - mask-writer orders and backlog.
+- **Rigaku:** the price Onto paid Atom Investment; the length of the lock-up; whether Atom is a Carlyle vehicle (not named in Rigaku's notices).
 - **Anritsu:** the name of the newly consolidated subsidiary (28 Oct 2026).
 - **Lasertec:** FY6/26 orders (¥237.5bn) and backlog (¥322.9bn) come only from a secondary site seen via a search snippet [GD-LT]; Lasertec's presentation PDFs were not reachable from its IR page as fetched.
 
