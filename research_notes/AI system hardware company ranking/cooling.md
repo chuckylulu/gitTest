@@ -1,40 +1,43 @@
 # Cooling for AI data-centre racks and chips (worldwide) — research notes as of 12 November 2026
 
-Status: IN PROGRESS (skeleton created first; sections filled as research proceeds).
+Status: IN PROGRESS — interim raw findings below; final structure to follow.
 
-Conventions: every figure carries the period it covers and its publication date. "Company claim, unconfirmed" marks claims no outside party has confirmed. Trade press and analyst estimates are labelled (secondary). No share prices, valuation multiples, market capitalisation or price targets are collected (separate workstream).
+## RAW FINDINGS LOG (interim, to be organised)
 
-## (1) Segment map
+### Vertiv (NYSE: VRT) — Q3 2026 (quarter ended 30 Sep 2026; reported 28 Oct 2026)
+- Net sales $4,313M, +61% y/y, organic ~+55%, acquisitions ~+6%. Adj. operating profit ~$1,087M, adj. op margin 25.2% (+290 bp). GAAP operating profit $984M (+90%). GAAP diluted EPS $1.95 (+91%); adj. diluted EPS $2.21 (+78%). Adj. FCF $652M (+50%); operating cash flow $794M. Net leverage -0.2x (net cash); liquidity $6.2bn. Organic orders >100% y/y; management "not planning to share orders data going forward" (no reason given). Last disclosed backlog: $15.0bn at Q4 2025 (+109% y/y). Region: Americas ~$3.0bn (+75%, organic +66%, adj. OM 29.4%); APAC $779M (+50%, organic +48%, adj. OM 17.0%); EMEA $545M (+23%, organic +19%, adj. OM 28.0%). FY2026 guidance raised: net sales ~$14.65-14.7bn midpoint (range $14.45-14.85bn), +~43% (organic ~38%), adj. OM ~24%, adj. FCF ~$2.7bn. Q4 2026 guide ~$4.4bn (+53%). Inventory reportedly up >100% y/y (analyst question). Customers order 12-18 months ahead; backlog counts only POs, not capacity agreements. Services and spares +62% y/y (per Yahoo summary of call). Chiller capacity to double by year-end 2026; Johor (Malaysia) factory operational; Slovakia, Ireland expansions. 800 VDC: full native 800 VDC in customer validation, revenue from 2027, broader deployment 2028 (company claim). Sources: [Motley Fool transcript 28 Oct 2026](https://www.fool.com/earnings/call-transcripts/2026/10/28/vertiv-vrt-q3-2026-earnings-call-transcript/); [Vertiv IR press release 28 Oct 2026](https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Third-Quarter-2026-with-Net-Sales-Growth-of-61-Organic-Orders-Growth-over-100-and-Diluted-EPS-Growth-of-91-Adjusted-Diluted-EPS-Growth-of-78-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/)
+- Acquisitions: PurgeRite closed Dec 2025 (fluid management/flushing; confirmed by Vertiv 8-K 24 Sep 2026); King Environmental Services (Ireland, fluid management and load testing) announced 24 Sep 2026, closing Q4 2026; Strategic Thermal Labs (Apr 2026); agreement to acquire ThermoKey (Mar 2026); Utility Innovation Group (closed). [Vertiv 8-K exhibit 24 Sep 2026](https://www.sec.gov/Archives/edgar/data/0001674101/000162828026063311/exhibit991vrt-q320269242026.htm)
 
-### Takeaway
-(pending)
+### Asia Vital Components (AVC, 奇鋐, TWSE: 3017) — Q3 2026 (reported 10 Nov 2026)
+- Q3 revenue NT$59.089bn (+20.29% q/q, +51.76% y/y); GM 33.86% (+1.29pp q/q, +7.74pp y/y); OM 28.53%; net profit NT$11.564bn; EPS NT$29.32. 9M 2026 revenue NT$157.248bn (+71.17%); 9M GM 32.18%; 9M OM 26.93%; 9M net NT$29.047bn; EPS NT$73.86. Cold-plate capacity ~1 million units/month; 2027 cold-plate capacity +>50%, mainly Vietnam (bought ~39 ha land). Capex 2026 ~NT$15bn; 2027 NT$15-20bn (Vietnam + new equipment in China plant). Expects ASIC revenue to exceed GPU revenue in 2027; ASIC customers fully adopted double-sided cold plates; expects ASIC and GPU fully liquid-cooled by end-2027 (company claim). [cnyes 10 Nov 2026](https://news.cnyes.com/news/id/6656704); [CTEE 11 Nov 2026](https://www.ctee.com.tw/news/20261111700245-439901); [udn 10 Nov 2026](https://udn.com/news/story/7240/9869791)
 
-### Cited Findings
-(pending)
+### Auras (雙鴻, TPEx: 3324) — Q3 2026
+- Q3 revenue NT$9.787bn (+12.49% q/q, record); net NT$1.080bn; EPS NT$11.58; 9M EPS NT$34.59. GM 25.65% (-2.77pp q/q); OM 13.92% (-2.06pp q/q) — attributed to multiple new liquid-cooling products in trial production and generation change; analysts had expected >30% GM. Q4 expected better on custom ASIC liquid-cooling mass production. Liquid cooling share: 24% (2023) -> 34% (2025) -> target 55% (2026) (company, Mar 2026 call). Q3 call scheduled 18 Nov 2026. [CTEE 11 Nov 2026](https://www.ctee.com.tw/news/20261111701940-430503); [Yahoo/ 雙鴻Q3雙率降](https://tw.stock.yahoo.com/news/%E9%9B%99%E9%B4%BBq3%E9%9B%99%E7%8E%87%E9%99%8D-%E7%8D%B2%E5%88%A9%E5%AF%AB%E6%AC%A1%E9%AB%98-%E5%89%8D%E4%B8%89%E5%AD%A3%E6%AF%8F%E8%82%A1%E8%B3%BA34-59%E5%85%83-010300945.html); [Fugle note on 12 Mar 2026 call](https://blog.fugle.tw/post/earnings-call-3324-1)
 
-### Inferences
-(pending)
+### Envicool (英维克, SZSE: 002837) — Q3 2026 (reported ~26 Oct 2026)
+- 9M 2026 revenue RMB4.95bn (+22.94%); attributable net RMB369M (-7.62%); recurring net RMB356M (-7.06%); operating cash flow RMB214M. Q3 revenue RMB1.933bn (+33.04%); Q3 net RMB184M (+0.25%); Q3 GM 27.83% (+2.49pp q/q). Contract liabilities RMB665M (+188% vs end-2025). Large receivables and rising inventory flagged. Financial expenses +829% (FX loss, interest). [Sina 26 Oct 2026](https://finance.sina.com.cn/stock/zqgd/2026-10-26/doc-iniwpwiq2476322.shtml); [Sohu 2026 Q3 简析](https://www.sohu.com/a/1094017967_115377); [QQ/建投机械 26 Oct 2026](https://news.qq.com/rain/a/20261026A0BV6X00)
 
-### Gaps
-(pending)
+### nVent (NYSE: NVT) — Q3 2026 (reported 30 Oct 2026)
+- Sales $1.515bn (+44%); organic orders low double digits on top of +65% a year earlier; record backlog ~$2.6bn (vs $2.5bn end-Q2). Accepting orders for modular liquid-cooling platform. Maverick Power acquisition (power distribution). [Motley Fool transcript 30 Oct 2026](https://www.fool.com/earnings/call-transcripts/2026/10/30/nvent-electric-nvt-q3-2026-earnings-call-transcript/)
 
-## (2) Evidence on tests (a)-(e) for key companies
-(pending)
+### M&A (verified)
+- Eaton completed Boyd Thermal acquisition ~12 Mar 2026, $9.5bn, from Goldman Sachs Asset Management; >6,000 employees; reported in Electrical Global segment; accretive in year two (company). [Data Centre Review Mar 2026](https://datacentrereview.com/2026/03/eaton-completes-boyd-thermal-acquisition-as-it-bolsters-liquid-cooling-offering/); [BusinessWire 12 Mar 2026](https://www.businesswire.com/news/home/20260312582488/en)
+- Trane signed definitive agreement to acquire LiquidStack 10 Feb 2026 (terms undisclosed; built on 2023 minority stake; ops in Texas and Hong Kong). Completion reported by Pulse 2 only (single source). [Cabling Install Feb 2026](https://cablinginstall.com/data-center/press-release/55357943/trane-technologies-to-acquire-liquidstack-to-expand-end-to-end-data-center-thermal-management-portfolio)
+- Ecolab agreed (Mar 2026) to acquire CoolIT Systems for ~$4.75bn cash from KKR funds (KKR bought for ~$270M in 2023); closing expected Q3 2026; CoolIT ~$550M sales next 12 months; customers include NVIDIA and AMD (Reuters via The Star). [The Star/Reuters 20 Mar 2026](https://www.thestar.com.my/tech/tech-news/2026/03/20/ecolab-to-buy-coolit-for-475-billion-to-tap-into-ai-data-center-boom); [Financier Worldwide 24 Mar 2026](https://www.financierworldwide.com/fw-news/2026/3/24/ecolab-acquires-coolit-systems-in-475bn-deal)
 
-## (3) Path forward and suggested verdicts
-(pending)
+### NVIDIA platform timing
+- SemiAnalysis (5 Jul 2026) reported Kyber NVL144 rack (Rubin Ultra) slipped >12 months from 2027 to 2028 due to PCB midplane manufacturability; NVL72x2 stopgap dropped after CSP pushback; NVL576 likely delayed or low volume. NVIDIA: "Our roadmap is intact" (disputed report). Rubin (Oberon rack) in full production, shipping autumn 2026 to eight cloud partners. [The Next Web 6 Jul 2026](https://thenextweb.com/news/nvidia-kyber-rack-delay-2028); [TechNews 7 Jul 2026](https://technews.tw/2026/07/07/semianalysis-kyber-postpone-nvdia-reject/)
+- Rack power (secondary): GB300 NVL72 ~140-160 kW; Vera Rubin NVL72 ~190-230 kW; CPX variant ~370-380 kW; Kyber ~600 kW. [DataGravity](https://www.datagravity.dev/p/600-kw-per-rack-the-ai-power-crisis); [The Register 5 Jan 2026](https://www.theregister.com/on-prem/2026/01/05/nvidia-unpacks-vera-rubin-rack-system-at-ces/2484391)
 
-## (4) Suggested ordering by quality alone
-(pending)
+### Micro-channel lid / MCCP
+- Reports (2025-Jan 2026) of NVIDIA asking suppliers to develop MLCP/MCL; Jentech seen as lead; AVC reportedly partnered on MCCP; MCL yield/leak risks; volume more likely Rubin Ultra 2027 (now 2028 if Kyber slips). Secondary/rumour. [TechNews 4 Sep 2025](https://technews.tw/2025/09/04/nvidia-rubin-gpu-use-microchannel-lid/); [TechNews 27 Jan 2026](https://technews.tw/2026/01/27/rubin-mccp-ai-gpu/); [CTEE 30 Sep 2025](https://www.ctee.com.tw/news/20250930700073-439901)
 
-## (5) Background priors check
-(pending)
+### Market data
+- Dell'Oro (Jan 2026): DLC market ~US$7bn manufacturer revenue by 2029; Vertiv leading; CoolIT, nVent, Boyd strong positions. [PR Newswire Jan 2026](https://www.prnewswire.com/news-releases/data-center-liquid-cooling-market-to-approach-7-billion-by-2029-as-ai-deployments-accelerate-according-to-delloro-group-302655848.html)
+- Dell'Oro (30 Sep 2025): ~40 CDU vendors; fewer than 10 to take lion's share by end of decade; DLC +156% y/y in 2Q25. [Dell'Oro blog](https://www.delloro.com/market-at-the-boiling-point-is-the-cdu-space-becoming-saturated/)
 
-## (6) Open question: which successor ships first; who captures value
-(pending)
+### PFAS
+- ECHA RAC final opinion 2 Mar 2026; SEAC draft opinion 10 Mar 2026; consultation 26 Mar-25 May 2026; SEAC final opinion expected end-2026; Commission decides afterward. [Arnold & Porter Mar 2026](https://www.arnoldporter.com/en/perspectives/advisories/2026/03/echa-committees-advance-broad-pfas-restriction-under-reach); [ECHA](https://www.echa.europa.eu/-/echa-s-risk-assessment-committee-adopts-its-opinion-on-pfas-restriction-proposal)
 
-## (7) What could not be verified
-(pending)
-
-## (8) Sources
-(pending)
+### In-chip cooling
+- Microsoft/Corintis announced Sep 2025 (3x heat removal vs cold plates in lab tests; Corintis $24M Series A; target >1M microfluidic cold plates/yr by 2026 — company claim). No 2026 production confirmation found yet. [IEEE Spectrum](https://spectrum.ieee.org/microfluidics-cooling-ai-chips-corintis); [Tech.eu 25 Sep 2025](https://tech.eu/2025/09/25/corintis-lands-24m-and-microsoft-endorsement-for-chip-cooling-tech/)
