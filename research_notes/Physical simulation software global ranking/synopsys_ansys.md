@@ -1,6 +1,6 @@
 # Synopsys, Inc. (incl. Ansys, acquired 17 Jul 2025): business quality and forward path, as of 12 Nov 2026
 
-**Summary for the report writer** (facts dated; assessments provisional; no share prices or multiples except the K3 moves the brief asked about)
+**Summary for the report writer** (facts dated; assessments provisional; no share prices except the requested K3 moves)
 - **Latest numbers.** Q4 FY26 is not out (due 8 Dec 2026). FY26 guide (26 Aug 2026): revenue US$9.69-9.74bn incl. ~US$2.98bn Ansys; non-GAAP margin ~41.5% (GAAP ~10.4%); FCF ~US$2.6bn. FY27 guide (Investor Day, 30 Sep 2026): US$11.10-11.20bn (~15%), ~44% margin, FCF ~US$3.1bn. FY26-30 targets: ~15% CAGR (EDA 13%+, S&A 10%+, IP 17%+), ~50% margin by FY30.
 - **(a) Position: strong.** Owns many sign-off judges. PrimeTime has 90%+ of timing sign-off (SemiAnalysis). SAMR's 2025 decision put Ansys at 55-60% in gate-level power integrity and 45-50% in EM simulation. Listed in TSMC, Intel and Samsung certification tables. SCADE's code generator holds TÜV SÜD certificates; the FDA qualified a tool built on HFSS/Mechanical. Limits: certification is shared with Cadence and Siemens, and Siemens Calibre (85%+) owns physical verification.
 - **(b) Lead: real but uneven.** Big-3 hold >85% of EDA; Synopsys is the largest (~US$8bn CY2025 vs Cadence US$5.3bn). Cadence leads emulation. Synopsys IP fell 8% in FY25 while Cadence IP grew ~23%. Speed-ups are mostly company claims.
@@ -62,7 +62,7 @@ Third parties confirm scale leadership and dominance in specific sign-off niches
 - Provisional assessment (b): confirmed leader in its core sign-off niches and the largest vendor overall. The lead is not uniform, and technical claims rely on company data.
 
 ### Gaps
-- No independent benchmark of Synopsys vs Cadence vs Siemens sign-off accuracy. No vendor-level CAE shares after the Ansys deal. Ansys's organic growth in FY26 is not disclosed (only an implied figure; see (c)).
+- No independent sign-off accuracy benchmark across the Big-3. No vendor-level CAE shares after the Ansys deal. Ansys organic growth is undisclosed (see (c)).
 
 ## (c) Revenue model: labour, seats, hardware vs recurring or usage-scaled
 
@@ -143,7 +143,7 @@ Time-based EDA and the US$10.9bn backlog cushion a downturn; upfront IP, hardwar
 - Provisional assessment (e): resilient core with a cyclical edge (~25% upfront). China and export-control risk is reduced but not removed.
 
 ### Gaps
-- No disclosed sensitivity of revenue to customers' R&D budgets. China ex-Ansys trend for FY26 not disclosed. A claimed "-18% China in Q2 FY26" figure in one search snippet conflicts with the 10-Q (H1 FY26 China +36% including Ansys) and is not used.
+- No disclosed sensitivity of revenue to customers' R&D budgets. China ex-Ansys trend for FY26 not disclosed. A search-snippet claim of China -18% in Q2 FY26 conflicts with the 10-Q (H1 FY26 China +36% incl. Ansys); not used.
 
 ## Path forward: six transitions (said vs done)
 
@@ -216,4 +216,4 @@ Company guidance and most analysts support the prior. The direct counter-evidenc
 - [Q1 FY26 release, 25 Feb 2026](https://news.synopsys.com/2026-02-25-Synopsys-Posts-Financial-Results-for-First-Quarter-Fiscal-Year-2026); [Q2 FY26 release, 27 May 2026](https://news.synopsys.com/2026-05-27-Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2026); [Q4 date notice, 5 Nov 2026](https://news.synopsys.com/2026-11-05-Synopsys-Announces-Earnings-Release-Date-For-Fourth-Quarter-and-Fiscal-Year-2026); [Investor Day, 30 Sep 2026](https://news.synopsys.com/2026-09-30-Synopsys-Details-Growth-Strategy-and-Long-term-Financial-Model-at-2026-Investor-Day).
 - Regulators and standards (URLs inline above): TSMC OIP tables (as of 1 Oct 2026); FDA MDDT list (10 Feb 2026) and CM&S guidance (Nov 2023); SAMR notice via IThome (Jul 2025); BIS Affiliates Rule via Reed Smith (6 Nov 2026); SCADE TÜV certificate (KCG 6.6, older).
 - Analysts and press (URLs inline above): SemiAnalysis (21 May 2026); Futurum (24 Sep and 2 Oct 2026); ESD Alliance (19 Oct 2026); Q3 FY26 call transcript (26 Aug 2026); Reuters via The Star (1 Oct 2026); ts2.tech (17-18 Jul 2026); Sky9 (21 Jul 2026); Tech Fund (27 Jul 2026); 36Kr (29 Sep 2026); Dr. Web (20 Jul 2026).
-- Other company releases and pages are cited inline with their dates (Dec 2025 to Oct 2026).
+- Other company releases are cited inline with dates.

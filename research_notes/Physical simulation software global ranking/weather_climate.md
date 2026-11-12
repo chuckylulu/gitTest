@@ -133,12 +133,12 @@ Leaders own observations (Vaisala, Spire, WindBorne, Tomorrow.io), regulated jud
   - WindBorne raised a $37m Series B on 5 Aug 2026 at $250m post-money (Khosla, Galvanize). It flies ~600 balloons; NWS buys its data, and the Air Force and Navy fund research. Its claim that its data improve accuracy is unverified — [TechCrunch](https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/).
   - Atmo is being bought by Vaisala (§6). Brightband runs NVIDIA's Medium Range model daily ([NVIDIA](https://blogs.nvidia.com/blog/nvidia-earth-2-open-models/)); its $10m Series A (2024) is reported only by an aggregator.
   - Jupiter Intelligence's last round found was a $54m Series C in Oct 2021 (older) — [Coverager](https://www.coverager.com/?p=130668).
-- **Europe.** Vaisala/Xweather (§6). Meteomatics raised a $22m Series C (29 Jan 2025, Armira) — [Meteomatics](https://www.meteomatics.com/en/news/meteomatics-series-c-funding-22-million-dollars/). Rainbow Weather (Poland) raised a $5.5m seed (Jan 2026) — [TNW](https://thenextweb.com/news/rainbow-weather-raises-5-5m-to-refine-real-time-weather-forecasting). Skyfora (Finland) raised €6.5m (Jun 2026) — [IO+](https://ioplus.nl/en/posts/ai-forecasting-startup-skyfora-raises-65-million-).
+- **Europe.** Vaisala/Xweather (§6). Meteomatics raised a $22m Series C (29 Jan 2025, Armira) — [Meteomatics](https://www.meteomatics.com/en/news/meteomatics-series-c-funding-22-million-dollars/). Skyfora (Finland) raised €6.5m (Jun 2026) — [IO+](https://ioplus.nl/en/posts/ai-forecasting-startup-skyfora-raises-65-million-).
 - **Japan.** Weathernews (§6).
 - **South Korea.** Kweather (KOSDAQ 068100) calls itself the "국내 최대 민간 기상사업자" (Korea's largest private weather firm) — [Kharn](https://www.kharn.kr/news/article.html?no=31819). Q1 2026 revenue was KRW 3.9bn (+16.4%) with operating profit of ~KRW 0.2bn, driven by air-measurement products — [Dealsite, 14 May 2026](https://dealsite.co.kr/articles/161828). On 18 Sep 2026 it launched 10 AI products on NVIDIA FourCastNet3, Atlas, CorrDiff and StormScope, using GFS and KIM as inputs — [Dealsite](https://dealsite.co.kr/articles/169288).
 - **China.** Moji (墨迹天气) has pivoted to business customers (energy, rail, aviation) and claims >150m monthly active users (company claim) — [CTDSB, Oct 2026](https://www.ctdsb.net/s522_202610/1638376.html). Some 16,000 firms list meteorology in their scope; ~3,000 operate and <400 have scale (2024 survey) — [Huxiu, Jul 2026](https://m.huxiu.com/article/4875932.html).
 - **India.** Skymet's last disclosed rounds were a 2017 Series C ($8–10m, InsuResilience) and INR 12 crore of debt in 2021 (older) — [Business Standard](https://www.business-standard.com/article/companies/skymet-raises-8-10-mn-to-widen-weather-station-network-117121801352_1.html); [Entrepreneur](https://www.entrepreneur.com/en-in/finance/weather-startup-skymet-weather-raises-inr-12-cr-debt-funding/378618).
-- **Israel and Taiwan.** In Israel, Tomorrow.io's R&D sits in Tel Aviv. I found no Taiwanese private firm.
+- **Israel and Taiwan.** Tomorrow.io's R&D centre is in Tel Aviv — [Globes](https://en.globes.co.il/en/article-1001543247). I found no Taiwanese private weather firm (gap).
 
 ### Inferences
 - Kweather is the clearest "gap filler": its products are NVIDIA models run on public GFS and KIM inputs, which any firm with GPUs can replicate.
@@ -181,10 +181,10 @@ Weathernews and Vaisala pass on position and finances. Verisk owns a regulatory 
 
 ### Inferences: five tests
 - **(a) Position.**
-  - Weathernews: workflow plus own observations and a licensed domestic channel (ship routing, airlines, Japanese infrastructure, the No.1 app).
-  - Vaisala: a hard physical constraint (sensors in official networks and airports); Xweather is small.
+  - Weathernews: workflow, its own observations and a licensed channel.
+  - Vaisala: a physical constraint (sensors in official networks and airports).
   - Verisk: owns a judge.
-  - Spire: hard observations, but sells to a few governments.
+  - Spire: hard observations sold to a few governments.
   - Kweather (§5): a gap filler.
 - **(b) Lead.** No company has outside verification of forecast skill; WNI's and TWC's accuracy claims are surveys or company-made. NOAA's repeated awards are the only outside evidence of a data lead (Spire).
 - **(c) Revenue model.** Recurring revenue at Weathernews (96%), Xweather (ARR, volume-based) and Verisk (subscriptions). Vaisala is mostly product and project sales. Spire runs government data contracts.
