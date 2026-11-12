@@ -350,12 +350,29 @@ Users are pushing for open interfaces through procurement. A reported pharma let
   - Lightfall's economics: "the bottleneck moves from developer-hours-per-beamline to the design quality of the underlying API", and "the per-iteration cost of a scientist-driven change is then fixed in the scientist's own time rather than in developer hours the facility must supply" — [arXiv 2606.06711](https://arxiv.org/pdf/2606.06711).
   - Genentech, Carnegie Mellon, the University of Washington and Janelia on MHS — [Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview).
   - Chip fabs building their own agents: no evidence found (gap).
-- **Customer pushback (procurement).** UniteLabs reports a letter of intent signed by Roche, Bayer, Takeda, BioNTech, Lonza, Novo Nordisk and the Botnar Institute. It calls for open connectivity in all new hardware procurement agreements, with open APIs required by 2027. UniteLabs also writes: "if a vendor sells robots, their 'open' platform is really a sales funnel" — [UniteLabs blog, 21 Jul 2026](https://unitelabs.io/resources/blog/end-times-fragmentation-tax-sila/). [secondary report from an interested party, a SiLA 2 software vendor; the letter's own text could not be verified]
+- **Customer pushback (procurement): now confirmed from the primary document [added in follow-up].**
+  - SiLA's "Letter of Intent on Open Standards for Life Sciences" (6 Jul 2026, v1.0) is signed by lab-automation, operations and digital leads at Roche Diagnostics, Bayer CropScience, Takeda, Novo Nordisk, BioNTech, Syngenta, Lonza and the Botnar Institute.
+  - It commits them to "prioritize and, where feasible, mandate" native SiLA 2 and OPC UA LADS on new instruments.
+  - It sets "a one-time enablement fee" for control and data APIs: "Recurring Fees are not an option".
+  - It requires public, documented APIs and rejects "walled garden" ecosystems.
+  - It expects "initial progress and results to be evident by 2027", with product generations "released after 2027" to be native.
+  - It describes the integration cost it wants to remove as "a $50,000 custom engineering project and a six-month delay".
+  - Sources: [Letter PDF](https://sila-standard.com/wp-content/uploads/2026/07/Letter-of-Intent-on-Open-Standards-for-Life-Sciences_firstSignatures.pdf); [SiLA post](https://sila-standard.com/letter-of-intent-on-open-standards-for-life-sciences/)
+  - UniteLabs' earlier summary ("open APIs ... by 2027") is broadly consistent but omits Syngenta and the "where feasible" qualifier. UniteLabs is an interested party: "if a vendor sells robots, their 'open' platform is really a sales funnel" — [UniteLabs blog, 21 Jul 2026](https://unitelabs.io/resources/blog/end-times-fragmentation-tax-sila/).
 - **Data ownership and vendor intent.**
   - Thermo Fisher's deck cites "differentiated investments in large-scale datasets, AI and advanced analytics" and a "Rich set of customer purchasing and behavior data powering AI models" — [deck slides 26 and 64](https://s25.q4cdn.com/974941731/files/doc_downloads/Downloads/2026-Investor-Day-Presentation-Distribution.pdf).
   - Anthropic says API inputs and outputs are deleted from its backend within 30 days — [IntuitionLabs](https://intuitionlabs.ai/articles/anthropic-hardware-standard-pharma-labs) [secondary report].
   - Lila's thesis: "proprietary experimental data from closed-loop labs becomes a scarce asset" — [Startup Fortune](https://startupfortune.com/lila-sciences-is-testing-how-much-investors-will-pay-for-automated-labs/).
   - The R&S MXO AI Connect user chooses the "data handling policy", and instrument traffic stays "within the local environment" — [Bisinfotech](https://www.bisinfotech.com/rohde-schwarz-introduces-mxo-ai-connect-for-ai-assisted-oscilloscope-workflows/).
+  - **Thermo Fisher, EU Data Act disclosure [added in follow-up; primary].** "Product Data Access and Use Disclosures (Europe)", issued under Regulation (EU) 2023/2854 and dated "Last updated 09 2025".
+    - Scope: "all connected products, digital services and applications" of Thermo Fisher and its affiliates.
+    - Data products generate: operational and usage, diagnostic and technical, user-interaction, environmental and sensor, and derived or inferred data. It may be stored on the device or on remote servers.
+    - Thermo Fisher's stated uses include "Analytics, product development, and service optimization".
+    - Section 10 licence: for "readily available data", the user grants Thermo Fisher an irrevocable, non-exclusive, worldwide, royalty-free, time-unlimited licence, sublicensable to affiliates and third parties. Thermo Fisher and designated third parties may use non-personal product data "without time limitation".
+    - Users may access the data and port it to a third party they designate on FRAND terms, subject to trade-secret limits.
+    - AI or model training is not mentioned either way.
+    - Source: [Thermo Fisher](https://www.thermofisher.com/us/en/home/global/policies-notices/product-data-access-use-disclosures-eu.html)
+  - **Bruker SciY.** The only terms page reachable is website-only ("the Bruker WWW server") and contains no clause on customer data ownership, AI training or anonymisation — [SciY terms of use](https://www.sciy.com/en/legal/terms-of-use.html). SciY describes itself as "Vendor-agnostic" and says "open software platforms and solutions serve science and research best" — [SciY](https://www.sciy.com/) [added in follow-up].
 
 ### Inferences
 - Value capture so far favours the instrument maker.
@@ -364,10 +381,25 @@ Users are pushing for open interfaces through procurement. A reported pharma let
   - The independent orchestration layer captures value only where it is the maker's chosen data partner: TetraScience for Thermo Fisher.
 - The threat to service revenue is real but indirect. MHS lets users "describe their hardware in natural language" to generate reference files, which bypasses the application-specialist labour that sits inside service contracts. Makers' 2026 response has been to take that labour saving themselves, as Thermo Fisher's AI-augmented field service shows, rather than to resist.
 - Users capture value where they control procurement (the pharma letter of intent) or build their own stacks (DOE laboratories). These are the two places where open interfaces are being forced rather than granted.
+- [added in follow-up] Two primary documents mark the battle lines for T2 and T5:
+  - The buyers' letter seeks to remove interface lock-in and connectivity revenue: "Recurring Fees are not an option"; native standards on products "released after 2027".
+  - Thermo Fisher's EU Data Act disclosure asserts a broad, time-unlimited, sublicensable licence over non-personal product data, while conceding user access and porting rights.
+  - So in 2026 the maker is conceding on interfaces (MCP servers; Danaher's "customer choice" language) faster than on data rights.
+- [added in follow-up] Service is the most defensible recurring stream:
+  - KLA services: 20% of revenue, growing 14%, its 17th consecutive year of growth.
+  - Shimadzu analytical recurring: 44%, rising toward a ¥180B plan, with paid remote and data plans.
+  - Waters: more than 70% recurring.
+  - The evidence suggests makers are positioning agent-era service (remote, predictive, paid data plans) as an extension of the service book, not a substitute for it. No primary source shows erosion yet.
 
 ### Gaps
-- Terms on instrument data in vendor clouds could not be verified (search budget exhausted): Thermo Fisher Connect and Ardia, waters_connect, ZEISS arivis Cloud, Bruker SciY, Agilent. No customer pushback on data terms was found beyond the pharma letter of intent.
-- Service-contract share of revenue for Agilent (CrossLab), Waters, Bruker, Mettler-Toledo, Keysight, KLA, Zeiss, JEOL, Shimadzu and Hitachi: not gathered here. The instrument-class researchers should supply these.
+- Terms on instrument data in vendor clouds. Thermo Fisher's EU Data Act disclosure was found in the follow-up (above). Still could not verify:
+  - Thermo Fisher Connect and Ardia product-specific SaaS terms. The terms hub links none, and apps.thermofisher.com shows only "Cloud Dashboard".
+  - waters_connect data terms. The AI Link release does not describe data handling.
+  - ZEISS arivis Cloud. arivis.cloud returned only a title; the ZEISS product page at the address tried returned 404.
+  - Bruker SciY software terms. Only website terms were found.
+  - Agilent cloud and CrossLab digital terms. No known address.
+  - Customer pushback specifically on data terms: none found. The letter of intent addresses interfaces, fees and formats, and says a later initiative may cover "Semantic Interoperability and Data Integrity".
+- Service-contract share of revenue. Found in the follow-up: KLA, Waters (recurring), Agilent (CrossLab), Shimadzu. Not disclosed in the latest releases: Bruker, Keysight, Danaher. Not attempted: Mettler-Toledo, Zeiss, JEOL, Hitachi.
 - No subscription price for any agent feature was found from any maker.
 
 ---
@@ -444,7 +476,8 @@ LLM-agent control:
 | Keysight | MCP Server for Instrument Control | Downloadable (2026) | Yes, partly: built-in "SOLT calibration" and S-parameter sweep procedures, each sequence approved by an engineer | [Keysight](https://helpfiles.keysight.com/kmsic/English/keysight_mcp_for_instrument_control/Content/overview.html) [company documentation] |
 | Rohde & Schwarz | MXO AI Connect | "now available" (30 Oct 2026) | No calibration-specific claim; general oscilloscope control | [Bisinfotech](https://www.bisinfotech.com/rohde-schwarz-introduces-mxo-ai-connect-for-ai-assisted-oscilloscope-workflows/) |
 | Waters | AI Link | Early access October 2026, general availability November 2026 | No: sample lists, acquisition, data | [BioPharma APAC](https://biopharmaapac.com/news/97/8561/waters-partners-with-anthropic-to-advance-ai-driven-autonomous-laboratory-workflows.html) |
-| Thermo Fisher | "the first version of fully autonomous instruments being deployed to our customers in the second half of the year" (Pettiti, 20 May 2026) | Announced; shipment not verified | Unknown | [TIKR](https://www.tikr.com/blog/what-thermo-fisher-ceo-said-at-investor-day-that-the-market-is-still-processing) [secondary report] |
+| Thermo Fisher | "the first version of fully autonomous instruments being deployed to our customers in the second half of the year" (Pettiti, 20 May 2026) | Announced; secondary quote only. No such launch appears in the Q3 2026 results release (21 Oct 2026), the ASMS 2026 launch release (28 May 2026) or the Investor Day release (20 May 2026) | Unknown | [TIKR](https://www.tikr.com/blog/what-thermo-fisher-ceo-said-at-investor-day-that-the-market-is-still-processing) [secondary report]; [Q3 2026 release](https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Third-Quarter-2026-Results/default.aspx); [ASMS 2026 release](https://www.biospace.com/press-releases/thermo-fisher-scientific-unveils-next-generation-innovations-at-asms-2026-to-accelerate-the-path-from-drug-discovery-to-new-therapies); [Investor Day release](https://www.biospace.com/press-releases/thermo-fisher-scientific-highlights-industry-leadership-growth-outlook-and-long-term-value-creation-at-2026-investor-day) (added in follow-up) |
+| Danaher | NVIDIA collaboration for "more intelligent instruments" on "a select group of priority instruments" | Announced 14 Oct 2026 | Not stated | [Danaher IR](https://investors.danaher.com/2026-10-14-Danaher-Collaborates-with-NVIDIA-to-Advance-Autonomous-Science) (added in follow-up) |
 | Danaher | Autonomous lab with Genedata AI co-scientist coordinating a protein-design foundry | Announced 21 Oct 2026 | Workflow, not instrument tuning | [NVIDIA](https://nvidianews.nvidia.com/news/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care) |
 | Bruker (with Atinary) | Agentic closed-loop self-driving lab (Chemspeed plus Fourier 80 NMR) | Demonstrated, 11 Aug 2026 | Workflow | [Bruker IR](https://ir.bruker.com/press-releases/press-release-details/2026/Bruker-Announces-Strategic-Collaboration-with-Atinary-Technologies-to-Advance-Self-Driving-Laboratories/default.aspx) |
 | Tecan, QIAGEN (MHS) | Pilots | Research preview | Not stated | [Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview) |
@@ -462,6 +495,8 @@ Classical automatic or machine-learning routines (not LLM agents):
 | Agilent | xCELLigence eSight AI module (cuts "parameter tuning") | 1 Jul 2026 | Agilent release |
 
 Agilent sources: [Agilent IR](https://www.investor.agilent.com/news-and-events/news/news-details/2026/Agilent-Launches-AI-Driven-Analysis-Module-for-Agilent-xCELLigence-RTCA-eSight/default.aspx); [Finviz](https://finviz.com/news/396436/agilent-introduces-gen5-ai-cell-identification-module-for-biotek-automated-cell-imagers) [search snippets].
+
+**Buyer-side demand bearing on prior (i) [added in follow-up].** The SiLA letter of intent (v1.0, July 2026) envisions a new instrument that, once plugged into the network, is "immediately recognized by the orchestration software, 'announcing' its features and capabilities (e.g., 'measure sample,' 'calibrate,' 'move plate')". Large buyers are asking for calibration to be a standard callable function on all new instruments, with native support on product generations released after 2027 — [Letter PDF](https://sila-standard.com/wp-content/uploads/2026/07/Letter-of-Intent-on-Open-Standards-for-Life-Sciences_firstSignatures.pdf). This is demand for agent-callable calibration, not for vendor-run autonomous calibration. It would favour the "agent invokes the routine" reading of the prior.
 
 **Prior (ii): obstacles that practitioners and vendors actually name**
 
@@ -514,6 +549,8 @@ Agilent sources: [Agilent IR](https://www.investor.agilent.com/news-and-events/n
 ### Gaps
 - Electron-microscopy, X-ray, accelerator, chip-metrology and quantum-control makers' own 2025–2026 auto-alignment launches, classical or agentic, beyond those listed: left to the instrument-class researchers. The search budget ran out before vendor-by-vendor checks.
 - Thermo Fisher's "fully autonomous instruments": no product name, launch release or customer confirmation was found.
+  - Follow-up: the Q3 2026 results release (21 Oct 2026), the ASMS 2026 release (28 May 2026) and the Investor Day press release (20 May 2026) contain no such launch or claim.
+  - The primary transcript or webcast text was not reachable at known addresses. The quote stays a secondary report, and as of 21 Oct 2026 there is no sign of a launch.
 
 ---
 
@@ -543,6 +580,7 @@ Selection: NVIDIA (named by the user), Anthropic (sets the agent-to-hardware pro
 **Test (b), lead (outside evidence).**
 - Five quantum control-system builders and 17 quantum-processor builders support NVQLink, and national laboratories guided it — [NVIDIA](https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing) [company claim listing third parties].
 - Thermo Fisher chose NVIDIA for instrument AI — [Business Wire](https://www.businesswire.com/news/home/20260112999582/en/).
+- Danaher also chose NVIDIA, on 14 Oct 2026: DGX Spark at the edge, RAPIDS and BioNeMo on "priority instruments" — [Danaher IR](https://investors.danaher.com/2026-10-14-Danaher-Collaborates-with-NVIDIA-to-Advance-Autonomous-Science) [added in follow-up]. Two of the largest life-science instrument groups picked NVIDIA in 2026. Both releases are company claims and disclose no financial terms.
 - LBNL's ALS assistant runs on an H100 — [NVIDIA blog](https://blogs.nvidia.com/blog/ai-copilot-berkeley-x-ray-particle-accelerator).
 - CERN's A-GHOST project uses DAQIRI — [NVIDIA ISC release](https://usa-automation.net/news/112167-nvidia-introduces-ai-software-libraries-for-scientific-research).
 - Counter-evidence: ABI Research finds "still little evidence of large-scale, revenue-generating deployments built around GR00T or Cosmos" — [ABI Research](https://www.abiresearch.com/market-research/insight/7787716-platform-progress-commercial-patience-nvid?hsLang=en).
@@ -590,7 +628,7 @@ Selection: NVIDIA (named by the user), Anthropic (sets the agent-to-hardware pro
 - The device knowledge (the reference file with its safety limits) is written by the vendor or the user, not by Anthropic — [The Next Web](https://thenextweb.com/news/anthropic-model-hardware-standard-mhs-eu-machinery-regulation-2027).
 
 **Test (b), lead (outside evidence).**
-- Third parties adopting its protocols: Waters joined MHS and built AI Link on MCP — [BioPharma APAC](https://biopharmaapac.com/news/97/8561/waters-partners-with-anthropic-to-advance-ai-driven-autonomous-laboratory-workflows.html). Tecan, QIAGEN, Danaher, Automata, Universal Robots, Doosan, AWS and Hugging Face are in the MHS programme — [Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview). Keysight and R&S test with Claude clients.
+- Third parties adopting its protocols: Waters joined MHS and built AI Link on MCP, confirmed by Waters' own release of 13 Oct 2026 — [PR Newswire (Waters)](https://www.prnewswire.com/news-releases/waters-launches-ai-link-advancing-ai-enabled-lc-ms-workflows-from-research-to-release-302906439.html) [independently confirmed: by Waters, a third party to Anthropic] [added in follow-up]; [BioPharma APAC](https://biopharmaapac.com/news/97/8561/waters-partners-with-anthropic-to-advance-ai-driven-autonomous-laboratory-workflows.html). Tecan, QIAGEN, Danaher, Automata, Universal Robots, Doosan, AWS and Hugging Face are in the MHS programme — [Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview). Keysight and R&S test with Claude clients.
 - Limits: partner results are self-reported, and no conformance suite or independent security evaluation exists — [elmerdata](https://elmerdata.bearblog.dev/who-gave-the-ai-control-of-the-laboratory/); [IntuitionLabs](https://intuitionlabs.ai/articles/anthropic-hardware-standard-pharma-labs).
 
 **Test (c), revenue model.** Subscriptions and usage-based API spending that grow with use [general model; theme revenue not disclosed]. How MHS will make money is not disclosed — [Fortune](https://fortune.com/2026/08/27/anthropic-makes-first-move-into-physical-ai-with-universal-standard-for-scientists-manufacturing/).
@@ -730,7 +768,10 @@ Five points cut against the thesis:
   - Anthropic itself says its models "still struggle with physical, chemical, and biological constraints" (paraphrased) — [IntuitionLabs](https://intuitionlabs.ai/articles/anthropic-hardware-standard-pharma-labs).
   - Implication: a fast, clean judge exists for calibration standards (SOLT, laser lock: QuEra 695 of 700), less so for complex wet workflows.
 - **Value goes to makers, not users.** Agent access is bundled into vendor ecosystems at undisclosed prices. Makers present AI as a source of new instrument and consumables demand (Thermo Fisher, Waters) and are using AI to make their own field service more productive (Thermo Fisher). Sources in section 3.
-- **Users push back.** A reported letter of intent from large pharma requires open APIs in procurement from 2027 [interested-party report] — [UniteLabs](https://unitelabs.io/resources/blog/end-times-fragmentation-tax-sila/). DOE builds its own MCP tools — [FedScoop](https://fedscoop.com/energy-department-demo-genesis-mission-platform-rfa-awards/).
+- **Users push back.**
+  - The primary letter of intent (SiLA, 6 Jul 2026) commits Roche Diagnostics, Bayer CropScience, Takeda, Novo Nordisk, BioNTech, Syngenta, Lonza and the Botnar Institute to "prioritize and, where feasible, mandate" native open standards and APIs with no recurring fees, for products released after 2027 — [Letter PDF](https://sila-standard.com/wp-content/uploads/2026/07/Letter-of-Intent-on-Open-Standards-for-Life-Sciences_firstSignatures.pdf) [added in follow-up].
+  - DOE builds its own MCP tools — [FedScoop](https://fedscoop.com/energy-department-demo-genesis-mission-platform-rfa-awards/).
+- **Data rights are contested** [added in follow-up]. Thermo Fisher's EU Data Act disclosure takes an irrevocable, time-unlimited, sublicensable licence to non-personal product data for "Analytics, product development, and service optimization", while giving users access and porting rights — [Thermo Fisher](https://www.thermofisher.com/us/en/home/global/policies-notices/product-data-access-use-disclosures-eu.html). The maker keeps a strong claim on the data (T5) even as interfaces open (T2).
 - **Fleet matching of chip-measurement tools.** No evidence of agent-run fleet matching was found in this session's scope. Related signals:
   - Thermo Fisher's Vulcan Automated Lab claims "Integrated workflow and data connectivity between the semiconductor lab and fab" — [deck slide 43](https://s25.q4cdn.com/974941731/files/doc_downloads/Downloads/2026-Investor-Day-Presentation-Distribution.pdf).
   - Periodic Labs has unspecified semiconductor customers.
@@ -767,7 +808,20 @@ None. This section lists gaps only.
 - **Valuations and funding**: Anthropic, OpenAI, TetraScience, Scitara, Ganymede, Sapio, Citrine, Chemify, Kebotix, Strateos, HighRes, Hamilton, Unchained Labs, Telescope Innovations, Preferred Networks/Matlantis, Epistra, DP Technology. A Chinese-language search on DP Technology returned nothing relevant.
 - **Benchling**: the S-1 filing claim (12 May 2026) and the $0.9B secondary-market estimate.
 - **Lila and Periodic**: whether the 2026 rounds closed.
-- **Pharma letter of intent**: the primary text (Roche, Bayer, Takeda and others) was not found; only the UniteLabs account.
+- **Pharma letter of intent**: verified in the follow-up from the SiLA-hosted PDF. Still unverified: whether any signatory has written the requirements into actual tenders, and who signed in the second (vendor) round.
+- **Follow-up pass, still unverified** (direct reads of official pages only; 0 Firecrawl calls; no searches):
+  - Thermo Fisher Connect and Ardia SaaS data terms.
+  - waters_connect data terms.
+  - ZEISS arivis Cloud terms: the site returned only a title; the product page address returned 404.
+  - Bruker SciY software terms: website terms only.
+  - Agilent cloud and CrossLab digital terms.
+  - Waters Q3 2026 results: the address returned 404 and the newsroom is dynamic.
+  - Keysight and Bruker service shares: not in their releases. Danaher recurring share: not in the release or deck text.
+  - CrossLab composition: not described in Agilent's release.
+  - Matlantis news: dynamic page.
+  - Funding: none on the DP Technology, Epistra or RBI websites. DP Technology IPO status unknown.
+  - Shimadzu autonomous-lab work: not on its IR page.
+  - Thermo Fisher Investor Day transcript: not reachable.
 - **Google DeepMind's UK automated lab; OpenAI for Science details; Microsoft Discovery**: searches blocked.
 - **Government programmes**: NSF, NIH, EU RAISE, UK, Taiwan, India and Israel; Korea's autonomous-lab council and KRW 13.5bn line (blog-only).
 - **Genesis**: the consortium figure of more than $800M from 40 organisations, and whether the challenge list expanded from 26 to 33.
@@ -810,6 +864,21 @@ Primary sources dominate for the central claims: NVIDIA newsroom, Anthropic, DOE
 - XtalPi 2025 annual investor presentation (2026) — https://ir.xtalpi.com/media/u0gcv5md/2025-annual-investor-pre-cn-final-1.pdf
 - BICO divestment of MatTek, April 2025 — https://mfn.se/a/bico-group/bico-has-entered-into-an-agreement-to-divest-mattek-to-sartorius-for-usd-80m ; Biosero acquisition, 2021 — https://biosero.com/news-and-media/bico-completes-the-acquisition-of-biosero/
 - UniteLabs blog (interested party), 21 Jul 2026 — https://unitelabs.io/resources/blog/end-times-fragmentation-tax-sila/
+
+**Added in follow-up (primary and company sources, read 12 Nov 2026)**
+- SiLA, "Letter of Intent on Open Standards for Life Sciences", 6 Jul 2026 — https://sila-standard.com/letter-of-intent-on-open-standards-for-life-sciences/ ; first-signatures PDF (v1.0) — https://sila-standard.com/wp-content/uploads/2026/07/Letter-of-Intent-on-Open-Standards-for-Life-Sciences_firstSignatures.pdf
+- Waters, "Waters Launches AI Link...", 13 Oct 2026 (PR Newswire) — https://www.prnewswire.com/news-releases/waters-launches-ai-link-advancing-ai-enabled-lc-ms-workflows-from-research-to-release-302906439.html ; Waters IR homepage (">70% of Revenue Annually Recurring") — https://ir.waters.com/
+- Model Hardware Standard site — https://modelhardwarestandard.com
+- Danaher and NVIDIA, 14 Oct 2026 — https://investors.danaher.com/2026-10-14-Danaher-Collaborates-with-NVIDIA-to-Advance-Autonomous-Science ; Danaher Q3 2026 results, 21 Oct 2026 — https://investors.danaher.com/2026-10-21-Danaher-Reports-Third-Quarter-2026-Results
+- Thermo Fisher Q3 2026 results, 21 Oct 2026 — https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Third-Quarter-2026-Results/default.aspx ; Investor Day release, 20 May 2026 — https://www.biospace.com/press-releases/thermo-fisher-scientific-highlights-industry-leadership-growth-outlook-and-long-term-value-creation-at-2026-investor-day ; ASMS 2026 release, 28 May 2026 — https://www.biospace.com/press-releases/thermo-fisher-scientific-unveils-next-generation-innovations-at-asms-2026-to-accelerate-the-path-from-drug-discovery-to-new-therapies
+- Thermo Fisher, Product Data Access and Use Disclosures (Europe), last updated September 2025 — https://www.thermofisher.com/us/en/home/global/policies-notices/product-data-access-use-disclosures-eu.html ; Terms and Conditions hub — https://www.thermofisher.com/us/en/home/global/terms-and-conditions.html
+- KLA Q1 FY27 shareholder letter (quarter ended 30 Sep 2026; released 28 Oct 2026) — https://d1io3yog0oux5.cloudfront.net/_e2be8b99fd19637d99dedbc7b3bd0329/klatencor/db/1117/10679/letter_to_shareholders/KLA_Earnings_Shareholder_Letter_-_Q1_FY27.pdf
+- Agilent Q3 FY2026 results, 26 Aug 2026 — https://www.investor.agilent.com/news-and-events/news/news-details/2026/Agilent-Reports-Third-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx ; Agilent IR homepage — https://www.investor.agilent.com/
+- Bruker Q3 2026 results, 4 Nov 2026 — https://ir.bruker.com/press-releases/press-release-details/2026/Bruker-Reports-Third-Quarter-2026-Financial-Results/default.aspx
+- Keysight Q3 FY2026 results, 18 Aug 2026 — https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-Third-Quarter-2026-Results/default.aspx
+- Shimadzu FY2026 H1 results slides, 10 Nov 2026 — https://www.shimadzu.com/sites/shimadzu.com/files/ir/r272/7zicbmkg9z2n0leo.pdf
+- SciY homepage and terms of use (website only) — https://www.sciy.com/ ; https://www.sciy.com/en/legal/terms-of-use.html
+- Preferred Networks news (Sep–Nov 2026) — https://www.preferred.jp/en/news/ ; Epistra — https://epistra.jp/ ; Robotic Biology Institute — https://rbi.co.jp/ ; DP Technology — https://www.dp.tech/
 
 **Government**
 - DOE Office of Science SCAC slides, "The Genesis Mission Has Launched", 27 Mar 2026 — https://science.osti.gov/-/media/About/pdf/scac/meetings/2026/DOE-Genesis-Mission-Launched---2026-03-27.pdf

@@ -94,6 +94,9 @@ The 2026 low came on 6 Nov 2026 for Anritsu, Rigaku, Hitachi, Yokogawa, Tokyo Se
 - FY3/26 sales fell 8.8%. Q1 FY3/27 sales fell 39% with an operating loss.
 - FY3/27 guidance still calls for operating profit up 1.9%, with the year weighted to 2H.
 - The balance sheet is solid (equity ratio 62%). However, free cash flow was about zero in FY3/26 because of heavy capex and a ¥12.8bn buyback.
+- Portfolio and ownership are changing:
+  - The medical-equipment business is being sold to Sysmex (resolved 2 Sep 2025) [JE-SYS].
+  - JEOL bought back the 4.49% stake of Nikon, a cross-shareholder, by self-tender in February-March 2026 [JE-TOB].
 - 1H results are due 13 Nov 2026.
 
 **Latest results and guidance**
@@ -1135,8 +1138,14 @@ Worked example (JEOL at r = 8%): (15.44 × 0.08 − 1) / (15.44 − 1/0.157) = 0
 - [HO-MLMAP]: Horiba, HORIBA Updates Mid-Long Term Management Plan (MLMAP2028) [7 Aug 2026]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260807/20260807514627.pdf
 - [HI-1H]: Hitachi, Consolidated Financial Results for Q2 ended 30 Sep 2026 [28 Oct 2026]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261028/20261028557961.pdf
 - [HI-OUT]: Hitachi, Outline of Consolidated Financial Results for Q2 ended 30 Sep 2026 [28 Oct 2026]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261028/20261028557964.pdf
+- [JE-SYS]: JEOL, Notice Concerning the Establishment of a Subsidiary in the Medical Equipment Business Area, Absorption-type Company Split… and Transfer of Shares of the Subsidiary (to Sysmex) [2 Sep 2025]; pp.1-2 read: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20250902/20250902551923.pdf
+- [JE-TOB]: JEOL, Announcement Regarding Share Repurchase and Tender Offer for Own Shares [2 Feb 2026]; pp.1-2 read: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260202/20260202544709.pdf
+- [SH-TES]: Shimadzu, Notice Concerning Making Tescan a Wholly-owned Subsidiary through an Acquisition of Shares of Glass HoldCo s.r.o. [25 Dec 2025]; pp.1-3 read: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20251225/20251225526740.pdf
+- Shimadzu, Notice Regarding Voluntary Adoption of IFRS [26 Feb 2026]; title only, not opened: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260226/20260226570373.pdf
+- [RG-0421]: Rigaku, Notice of Capital and Business Alliance Agreement with Onto Innovation Inc., and Changes in the Largest and Principal Shareholder [21 Apr 2026]; pp.1-3 read: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260421/20260420507008.pdf
 
 **Disclosure lists (Yahoo!ファイナンス)**
+- Rigaku, page 2: https://finance.yahoo.co.jp/quote/268A.T/disclosure?page=2
 - [LT-TDnet]: https://finance.yahoo.co.jp/quote/6920.T/disclosure
 - [AN-TDnet]: https://finance.yahoo.co.jp/quote/6754.T/disclosure
 - [SH-TDnet]: https://finance.yahoo.co.jp/quote/7701.T/disclosure
@@ -1202,6 +1211,10 @@ Worked example (JEOL at r = 8%): (15.44 × 0.08 − 1) / (15.44 − 1/0.157) = 0
 [HO-MLMAP]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260807/20260807514627.pdf
 [HI-1H]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261028/20261028557961.pdf
 [HI-OUT]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261028/20261028557964.pdf
+[JE-SYS]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20250902/20250902551923.pdf
+[JE-TOB]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260202/20260202544709.pdf
+[SH-TES]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20251225/20251225526740.pdf
+[RG-0421]: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260421/20260420507008.pdf
 [LT-TDnet]: https://finance.yahoo.co.jp/quote/6920.T/disclosure
 [AN-TDnet]: https://finance.yahoo.co.jp/quote/6754.T/disclosure
 [SH-TDnet]: https://finance.yahoo.co.jp/quote/7701.T/disclosure

@@ -2,7 +2,7 @@
 
 Status: COMPLETE as of 12 Nov 2026. Price cut-off: US closes of 11 Nov 2026 (USD); Tokyo/Seoul closes and Amsterdam intraday of 12 Nov 2026 (local currency). Every figure carries its period and a URL; all pages were retrieved on 12 Nov 2026 unless stated. "My arithmetic", "my estimate" and "inference" mark my own calculations or judgements. Quality facts (tests c, d, e and theme exposure; Section 1) are kept separate from valuation facts (Section 3). Research limits: the session's shared WebSearch budget and the Firecrawl credits ran out part-way through, so later items were gathered only by fetching known URLs (SEC EDGAR, company materials, stockanalysis.com); see Section 4. Nothing here is a buy or sell recommendation.
 
-Overall takeaway: all five are profitable, cash-generative and conservatively financed (net debt/EBITDA below 0.7x everywhere; Nova and Camtek net cash), and all are on-theme measurement/test businesses. Quality ranks roughly KLA > Nova > Keysight > Camtek ≈ Onto on margins, returns and recurring revenue, with China (KLA 34.5% of latest-quarter revenue, Nova 33%, Camtek 49% of 2025) and customer concentration (KLA top customer 21%; Onto top four ≈57%) the main weaknesses. On entry, the four chip-measurement stocks have fallen 44–50% from their mid-2026 highs (Keysight −22%); on next-year consensus they trade at about 17–28x earnings, around or below their own five-year fiscal-year-end medians, so the de-rating has removed most of the excess but not created deep value except possibly at Onto (conditional on 2027 delivery).
+Overall takeaway: all five are profitable, cash-generative and conservatively financed (net debt/EBITDA below 0.7x everywhere; Nova and Camtek net cash), and all are on-theme measurement/test businesses. Quality ranks roughly (my judgement from the cited figures) KLA > Nova > Keysight > Camtek ≈ Onto on margins, returns and recurring revenue, with China (KLA 34.5% of latest-quarter revenue, Nova 33%, Camtek 49% of 2025) and customer concentration (KLA top customer 21%; Onto top four ≈57%) the main weaknesses. On entry, the four chip-measurement stocks have fallen 44–50% from their mid-2026 highs (Keysight −22%); on next-year consensus they trade at about 17–28x earnings, around or below their own five-year fiscal-year-end medians, so the de-rating has removed most of the excess but not created deep value except possibly at Onto (conditional on 2027 delivery).
 
 ## 1. In-depth companies (quality facts: tests c, d, e and theme exposure)
 
@@ -411,15 +411,175 @@ Sources: [KLA](https://companiesmarketcap.com/kla/stock-price-history/); [Keysig
 Sources: [LRCX](https://stockanalysis.com/stocks/lrcx/statistics/); [Lasertec](https://stockanalysis.com/quote/tyo/6920/statistics/); [Advantest](https://stockanalysis.com/quote/tyo/6857/statistics/); [Tokyo Electron](https://stockanalysis.com/quote/tyo/8035/statistics/); [Anritsu](https://stockanalysis.com/quote/tyo/6754/statistics/); [Park Systems](https://stockanalysis.com/quote/kosdaq/140860/statistics/); [BESI](https://stockanalysis.com/quote/ams/BESI/statistics/). Rohde & Schwarz (Germany) and Hitachi High-Tech (Japan, inside Hitachi) are the other closest peers but are not separately listed. Israel has no listed peers beyond Nova and Camtek themselves.
 - Peer medians (my arithmetic over the 7 peers above): forward P/E 24.5x (range 16.6–26.8); EV/EBITDA 29.6x (range 10.5–44.0). Semi-equipment/test subset (LRCX, Lasertec, Advantest, TEL, BESI): forward P/E 20.9–26.8x, EV/EBITDA 22.5–33.9x. Comms-test peer Anritsu: 16.6x forward, 10.5x EV/EBITDA.
 
-### 3.1 KLAC
-### 3.2 KEYS
-### 3.3 ONTO
-### 3.4 NVMI
-### 3.5 CAMT
-### 3.6 Peer multiples table (US, Europe, Japan, Israel, South Korea)
-### 3.7 Near-term events (next six months)
-### 3.8 Provisional reads (clearly labelled provisional; not recommendations)
+### 3.1 KLAC — valuation (USD; close 11 Nov 2026)
+**Takeaway:** After a ~48% fall from the 52-week high, KLAC is back at its own five-point median forward P/E but still at a premium to large WFE peers; the price needs roughly 9–17% annual EPS growth after FY27, depending on the exit multiple.
+- Snapshot: price $161.01; market cap $209.79bn; EV $211.04bn; trailing P/E 40.4 (TTM EPS $3.99); forward P/E 25.9 (stockanalysis), 28.0x FY27 (June 2027) consensus EPS $5.76 and 22.7x FY28 EPS $7.09 (my arithmetic); EV/EBITDA 32.1x TTM; EV/Sales 14.6x TTM and 11.2x FY27 consensus revenue (my arithmetic); FCF yield 1.92% TTM, ≈2.8% on FY27 consensus FCF of $5.86bn (my arithmetic); dividend yield 0.57%. — [KLAC statistics](https://stockanalysis.com/stocks/klac/statistics/); [KLAC forecast](https://stockanalysis.com/stocks/klac/forecast/)
+- Own history (fiscal-year-end points FY22–FY26): forward P/E 13.4, 25.0, 30.5, 27.4, 63.3 (median 27.4); EV/EBITDA 12.2, 15.8, 28.1, 22.3, 65.3 (median 22.3). The 30 Jun 2026 point (market cap $394.1bn) is consistent with the 52-week high of $307.37 (≈$300 × ~1.31bn shares, my arithmetic). Current forward P/E is at the five-point median; EV/EBITDA is ~44% above its median (my arithmetic). Ten-year history: could not verify. — [KLAC ratios](https://stockanalysis.com/stocks/klac/financials/ratios/); [KLAC overview](https://stockanalysis.com/stocks/klac/)
+- Peers: forward P/E LRCX 23.0, AMAT 22.3, ASML 24.6, Tokyo Electron 20.9, Lasertec 24.6 (median 23.0); EV/EBITDA 28.8, 30.7, 31.7, 22.5, 32.0 (median 30.7) → KLAC ≈13% forward-P/E premium, roughly in line on EV/EBITDA (my arithmetic). — sources in 3.0f and Section 2
+- Consensus: FY27 revenue +39.0%, EPS +53.3%; FY28 revenue +18.3%, EPS +23.1% (my arithmetic for FY28). — [KLAC forecast](https://stockanalysis.com/stocks/klac/forecast/)
+- Performance: YTD ≈+32.5% (split-corrected); 1-yr +32.2%; end-2023→now ≈+189%; end-2021→now ≈+296% (price only); 52-week range $107.20–$307.37 (now −47.6% from the high). — see 3.0d/3.0e
+- Implied expectations (my estimate; method: investor requires 9% a year for five years, dividends ignored, so the price must reach $161.01 × 1.09^5 = $247.7 by Nov 2031): at an exit forward P/E of 20x, FY2032 EPS must be ≈$12.39 (≈16.6% a year from the FY27 consensus of $5.76); at the own five-point median of 27.4x, ≈$9.06 (≈9.5% a year). FY22→FY26 EPS grew 13.7% a year. Gordon cross-check: 9% − 1.92% TTM FCF yield ⇒ ≈7.1% perpetual FCF growth (≈6.2% on FY27 consensus FCF). The FY27 consensus itself assumes a ≈47% operating margin ($8.89bn/$18.88bn).
+- Near-term events: ex-dividend 16 Nov 2026; Affiliates-Rule suspension ends 10 Jan 2027 unless extended; FQ2 FY27 results expected late January 2027 (exact date could not verify); read-across from AMAT (12 Nov) and NVDA (17 Nov).
+- **Provisional read (analysis, not advice): Fair.** Highest quality in the group and already ~48% below the high, but on FY27 consensus the forward P/E (26–28x) sits at its own median and above large WFE peers, while China (34.5% of the latest quarter) is guided down and the Affiliates-Rule decision is pending. Entry would look more attractive at ≤20x FY28 consensus EPS (≈$142) or ≤22x FY27 EPS (≈$127, close to the 5 Nov 2026 close of $129.80), or if the January print shows the China step-down absorbed with 2027 WFE >$200bn intact.
+
+### 3.2 KEYS — valuation (USD; close 11 Nov 2026)
+**Takeaway:** On FY27 consensus Keysight trades near its own median forward P/E after a +67% year; it is priced above comms-test peers and in line with diversified instrument peers.
+- Snapshot: price $305.64; market cap $52.03bn; EV $52.19bn; trailing P/E 42.0 (GAAP TTM EPS $7.28); forward P/E 22.6 (stockanalysis), 26.6x FY26 (Oct-26, just ended) non-GAAP EPS $11.47 and 21.9x FY27 $13.93 (my arithmetic); EV/EBITDA 30.7x TTM (GAAP EBITDA after acquisition costs); EV/Sales 7.9x TTM and 6.4x FY27 consensus revenue; FCF yield 2.82% TTM, ≈3.7% on FY26 consensus FCF of $1.91bn (my arithmetic); no dividend. — [KEYS statistics](https://stockanalysis.com/stocks/keys/statistics/); [KEYS forecast](https://stockanalysis.com/stocks/keys/forecast/)
+- Own history (FY21–FY25 October year-ends): forward P/E 27.8, 22.3, 16.5, 22.7, 24.5 (median 22.7); EV/EBITDA 23.9, 19.5, 13.3, 23.6, 26.0 (median 23.6). Current forward P/E ≈ median; EV/EBITDA ~30% above median. — [KEYS ratios](https://stockanalysis.com/stocks/keys/financials/ratios/)
+- Peers (forward P/E / EV/EBITDA): Anritsu 16.6 / 10.5; Viavi 15.7 / 22.3; Ralliant 20.1 / 19.1; Emerson 22.8 / 16.9; Teradyne 25.1 / 23.2; Advantest 24.5 / 29.6; Rohde & Schwarz unlisted. — sources in 3.0f and Section 2
+- Consensus: FY26 revenue +32.4%, EPS +60.3%; FY27 revenue +15.4%, EPS +21.4%. — [KEYS forecast](https://stockanalysis.com/stocks/keys/forecast/)
+- Performance: YTD +50.4%; 1-yr +66.6%; end-2023→now ≈+96%; end-2021→now ≈+54% (price only, my compounding); 52-week range $167.23–$389.93; all-time high close $388.03 on 6 Oct 2026; now −21.6% from the 52-week high. — [companiesmarketcap Keysight](https://companiesmarketcap.com/keysight/stock-price-history/); [KEYS overview](https://stockanalysis.com/stocks/keys/)
+- Implied expectations (my estimate, same method): required Nov-2031 price $470.3; at 20x exit, FY2032 EPS ≈$23.5 (≈11.0% a year from FY27 consensus $13.93); at own median 22.7x, ≈$20.7 (≈8.3% a year). Gordon: 9% − 2.82% ⇒ ≈6.2% perpetual FCF growth (≈5.3% on FY26 consensus FCF).
+- Near-term events: FQ4 FY26 results and likely FY27 outlook on 19 Nov 2026 after the close; $700m 4.60% notes due 6 Apr 2027 (cash $2.6bn); FQ1 FY27 results ~February 2027 (date could not verify).
+- **Provisional read (analysis, not advice): Fair.** Near its own median forward P/E with orders running well ahead of revenue, but at a premium to comms-test peers after a strong year, and with FY24 showing real earnings cyclicality. Entry would look better at ≤18x FY27 EPS (≈$251) or if the 19 Nov outlook points to FY27 growth well above the +15% consensus with orders sustained above $2bn a quarter.
+
+### 3.3 ONTO — valuation (USD; close 11 Nov 2026)
+**Takeaway:** The cheapest of the five on forward earnings (16.7x FY27 consensus, ~35% below its own median) — the price embeds little or no growth after 2027 or doubts the 2027 consensus itself.
+- Snapshot: price $215.06; market cap $10.56bn; EV $10.78bn; trailing P/E 70.6 (GAAP, depressed by the Rigaku mark and deal costs); forward P/E 17.9 (stockanalysis), 25.4x FY26 $8.48 and 16.7x FY27 $12.86 (my arithmetic); PEG 0.43; EV/EBITDA 27.3x TTM; EV/Sales 8.2x TTM and 5.3x FY27; FCF yield 2.35%; no dividend. — [ONTO statistics](https://stockanalysis.com/stocks/onto/statistics/); [ONTO forecast](https://stockanalysis.com/stocks/onto/forecast/)
+- Own history (FY21–FY25): forward P/E 22.6, 15.5, 34.4, 27.4, 30.1 (median 27.4); EV/EBITDA 20.4, 9.4, 35.6, 27.9, 26.6 (median 26.6). Current forward P/E ≈35% below median; EV/EBITDA ≈ median. — [ONTO ratios](https://stockanalysis.com/stocks/onto/financials/ratios/)
+- Peers (forward P/E): KLAC 25.9, Nova 25.7, Camtek 21.6, Lasertec 24.6, Park Systems 26.7. — sources in 3.0 and 3.0f
+- Consensus: FY26 revenue +47.9%, EPS +71.6%; FY27 revenue +36.0%, EPS +51.7%. — [ONTO forecast](https://stockanalysis.com/stocks/onto/forecast/)
+- Performance: YTD +36.2%; 1-yr +52.5%; end-2023→now ≈+45%; end-2021→now ≈+113%; 52-week range $121.58–$386.46 (now −44.4%; all-time high close $378.45 on 30 Jun 2026). — [companiesmarketcap Onto](https://companiesmarketcap.com/onto-innovation/stock-price-history/); [ONTO overview](https://stockanalysis.com/stocks/onto/)
+- Implied expectations (my estimate): required Nov-2031 price $330.9; at 20x exit, FY2032 EPS ≈$16.5 (≈5.2% a year after FY27 consensus $12.86); at own median 27.4x, ≈$12.1 — i.e., slightly below FY27 consensus (≈−1.2% a year). Gordon: 9% − 2.35% ⇒ ≈6.65%.
+- Near-term events: Q4 2026 results ~February 2027 (date could not verify) against the $430–450m guide; quarterly fair-value marks on the Rigaku stake; no dividend/convert events (2031 converts far out of the money at $381.80).
+- **Provisional read (analysis, not advice): Attractive — provisional and conditional.** Cheapest on forward earnings against its own history and peers, with a >$1.3bn backlog; but the discount reflects real quality issues (top four customers ≈57%, lowest ROIC, a convert-funded Rigaku stake already marked down, highest downturn beta, recurring revenue only ~13%). The view firms if Q4 lands at or above guide and the February print shows 2027 backlog conversion; it weakens if 2027 orders slip or more capital goes to non-core stakes.
+
+### 3.4 NVMI — valuation (USD; close 11 Nov 2026)
+**Takeaway:** Net-cash, high-quality and priced slightly below its own forward-P/E median after a 45% fall; China, Israel and in-the-money convertibles stop it from looking cheap.
+- Snapshot: price $340.62; market cap $10.83bn; EV $9.84bn; trailing P/E 39.0; forward P/E 25.7 (stockanalysis), 31.9x FY26 $10.67 and 24.9x FY27 $13.66 (my arithmetic); EV/EBITDA 30.2x; EV/Sales 9.8x TTM and 7.2x FY27; FCF yield 2.35%; no dividend; buyback yield −8.4% (convert dilution). — [NVMI statistics](https://stockanalysis.com/stocks/nvmi/statistics/); [NVMI forecast](https://stockanalysis.com/stocks/nvmi/forecast/)
+- Own history (FY21–FY25): forward P/E 34.1, 18.7, 27.1, 26.2, 36.4 (median 27.1); EV/EBITDA 31.8, 12.7, 24.1, 25.2, 33.6 (median 25.2). Current forward P/E ~5% below median; EV/EBITDA ~20% above. — [NVMI ratios](https://stockanalysis.com/stocks/nvmi/financials/ratios/)
+- Peers (forward P/E): KLAC 25.9, ONTO 17.9, CAMT 21.6, Lasertec 24.6, Park Systems 26.7. — sources in 3.0 and 3.0f
+- Consensus: FY26 revenue +22.4%, EPS +23.8%; FY27 revenue +26.2%, EPS +28.0%. — [NVMI forecast](https://stockanalysis.com/stocks/nvmi/forecast/)
+- Performance: YTD +3.7%; 1-yr +7.1%; end-2023→now ≈+144%; end-2021→now ≈+124%; 52-week range $266.43–$615.99 (now −44.7%; all-time high close $605.65 on 15 Jun 2026). — [companiesmarketcap Nova](https://companiesmarketcap.com/nova-measuring-instruments/stock-price-history/); [NVMI overview](https://stockanalysis.com/stocks/nvmi/)
+- Implied expectations (my estimate): required Nov-2031 price $524.1; at 20x exit, FY2032 EPS ≈$26.2 (≈13.9% a year after FY27 consensus $13.66); at own median 27.1x, ≈$19.4 (≈7.2% a year). Gordon: 9% − 2.35% ⇒ ≈6.65%. Layer on potential dilution of up to ~2.34m shares (~7%) from the in-the-money 2030 converts, partly offset by capped calls up to $415.03.
+- Near-term events: Affiliates-Rule decision by 10 Jan 2027 (China 33% of 2025 sales); Q4 2026 results ~February 2027 (date could not verify); investor day 9 Mar 2027 in New York (likely new long-term targets).
+- **Provisional read (analysis, not advice): Fair.** High quality and net cash, priced near its own forward-P/E median and in line with KLA; the 45% fall already discounts some cycle risk, but China/Israel exposure and convert dilution argue against calling it cheap. Entry would look more attractive at ≤20x FY27 EPS (≈$273, near the $266.43 52-week low) or if the March 2027 investor day credibly lifts targets.
+
+### 3.5 CAMT — valuation (USD; close 11 Nov 2026)
+**Takeaway:** Below its own forward-P/E median and below BESI, with a backlog-supported 2027 — but 2026 EPS growth is only ~10%, margins are the lowest of the group, and China (49%) and Israel concentration are high.
+- Snapshot: price $107.05; market cap $5.00bn; EV $4.61bn; trailing P/E 40.4; forward P/E 21.6 (stockanalysis), 29.7x FY26 $3.60 and 20.9x FY27 $5.13 (my arithmetic); EV/EBITDA 31.8x; EV/Sales 8.5x TTM and 5.7x FY27; FCF yield 2.55%; no dividend. — [CAMT statistics](https://stockanalysis.com/stocks/camt/statistics/); [CAMT forecast](https://stockanalysis.com/stocks/camt/forecast/)
+- Own history (FY21–FY25): forward P/E 27.3, 13.1, 31.0, 26.2, 33.6 (median 27.3); EV/EBITDA 24.6, 9.1, 40.0, 27.5, 32.1 (median 27.5). Current forward P/E ~21% below median; EV/EBITDA ~16% above. — [CAMT ratios](https://stockanalysis.com/stocks/camt/financials/ratios/)
+- Peers (forward P/E / EV/EBITDA): BESI 26.8 / 33.9; ONTO 17.9 / 27.3; NVMI 25.7 / 30.2; KLAC 25.9 / 32.1. — sources in 3.0 and 3.0f
+- Consensus: FY26 revenue +20.2%, EPS +10.5%; FY27 revenue +34.8%, EPS +42.4% (company outlook ">$800m"). — [CAMT forecast](https://stockanalysis.com/stocks/camt/forecast/)
+- Performance: YTD +0.7%; 1-yr −3.7%; end-2023→now ≈+61%; end-2021→now ≈+127%; 52-week range $89.13–$215.99 (now −50.4%; all-time high close $207.46 on 11 May 2026). — [companiesmarketcap Camtek](https://companiesmarketcap.com/camtek/stock-price-history/); [CAMT overview](https://stockanalysis.com/stocks/camt/)
+- Implied expectations (my estimate): required Nov-2031 price $164.7; at 20x exit, FY2032 EPS ≈$8.24 (≈9.9% a year after FY27 consensus $5.13); at own median 27.3x, ≈$6.04 (≈3.3% a year). Illustrative cross-check against management's model (my assumptions: ~12% tax rate, ~51.9m diluted shares including both convertibles): $1.2bn revenue × 35% operating margin = $420m operating profit ⇒ ≈$7.1 EPS around 2029, so today's price is ≈15x that model-implied EPS if it is delivered. Gordon: 9% − 2.55% ⇒ ≈6.45%.
+- Near-term events: 1 Dec 2026 maturity of the residual 0% 2026 convertibles ($32.9m at end-2025; conversion ≈$58.45, so likely share-settled, ~0.56m shares); Affiliates-Rule decision by 10 Jan 2027 (China 49% of 2025 revenue); Q4 2026 results ~February 2027 (date could not verify).
+- **Provisional read (analysis, not advice): Fair, with high risk.** Below its own median forward P/E and cheaper than BESI, with a credible path to >$800m in 2027; offset by the lowest gross margin of the group (recently dipping), China at half of revenue, Israel-centred production, ~94% hardware revenue and no capital returns. Entry would look more attractive at ≤18x FY27 EPS (≈$92) or on gross-margin recovery toward 52% and a falling China share in 2027 bookings.
+
+### 3.6 Peer multiples summary (US, Europe, Japan, Israel, South Korea; details and sources in 3.0, 3.0f and Section 2)
+| Company (country) | Forward P/E | EV/EBITDA (TTM) | EV/Sales (TTM) | FCF yield |
+|---|---|---|---|---|
+| KLAC (US) | 25.9 | 32.1 | 14.6 | 1.9% |
+| KEYS (US) | 22.6 | 30.7 | 7.9 | 2.8% |
+| ONTO (US) | 17.9 | 27.3 | 8.2 | 2.4% |
+| NVMI (Israel) | 25.7 | 30.2 | 9.8 | 2.4% |
+| CAMT (Israel) | 21.6 | 31.8 | 8.5 | 2.6% |
+| LRCX (US) | 23.0 | 28.8 | 11.1 | 2.2% |
+| AMAT (US) | 22.3 | 30.7 | 10.1 | 1.8% |
+| TER (US) | 25.1 | 23.2 | 8.2 | 2.5% |
+| ASML (Netherlands) | 24.6 | 31.7 | 13.0 | 3.9% |
+| BESI (Netherlands) | 26.8 | 33.9 | 14.3 | 2.2% |
+| Tokyo Electron (Japan) | 20.9 | 22.5 | 7.1 | 2.9% |
+| Lasertec (Japan) | 24.6 | 32.0 | 14.6 | 2.5% |
+| Advantest (Japan) | 24.5 | 29.6 | 15.3 | 2.1% |
+| Anritsu (Japan) | 16.6 | 10.5 | 2.0 | 4.4% |
+| Park Systems (South Korea) | 26.7 | 44.0 | 7.4 | −4.9% |
+| VIAV (US) | 15.7 | 22.3 | 4.9 | 1.9% |
+| RAL (US) | 20.1 | 19.1 | 3.9 | 3.8% |
+| EMR (US) | 22.8 | 16.9 | 5.4 | 3.9% |
+| TDY (US) | 27.7 | 19.0 | 4.8 | 3.8% |
+| NVDA (US) | 14.3 | 20.7 | 13.8 | 3.0% |
+- Israel: no listed metrology/inspection peers other than Nova and Camtek. Rohde & Schwarz (Germany) and Hitachi High-Tech (Japan) are unlisted/embedded.
+- Inference: the five in-depth names cluster at 18–26x forward earnings and 27–32x EV/EBITDA, i.e., in line with the semi-equipment group (21–27x forward) and well above comms-test peers (Anritsu, Viavi ~16x); NVIDIA (the demand driver) is on a lower forward multiple (14.3x) than its equipment suppliers.
+
+### 3.7 Near-term events (12 Nov 2026 to ~May 2027)
+| Date | Event | Why it matters | Source |
+|---|---|---|---|
+| 12 Nov 2026, after close | Applied Materials FQ4 FY26 results | WFE and China read-across | [AMAT statistics](https://stockanalysis.com/stocks/amat/statistics/) |
+| 16 Nov 2026 | KLAC ex-dividend | — | [KLAC overview](https://stockanalysis.com/stocks/klac/) |
+| 17 Nov 2026, after close | NVIDIA Q3 FY27 results | AI-capex sentiment; CEO-related headlines | [NVDA statistics](https://stockanalysis.com/stocks/nvda/statistics/) |
+| 19 Nov 2026, after close | Keysight FQ4 FY26 results and FY27 outlook | order durability; FY27 consensus +15% | [KEYS overview](https://stockanalysis.com/stocks/keys/) |
+| 1 Dec 2026 | Camtek 0% 2026 convertible notes mature ($32.9m outstanding at end-2025; conversion ≈$58.45) | small share dilution | [Camtek 20-F R75](https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/R75.htm) |
+| 8 Dec 2026 | Ralliant ex-dividend | — | [RAL statistics](https://stockanalysis.com/stocks/ral/statistics/) |
+| mid-Dec 2026 (expected, by precedent of 16 Dec 2025) | SEMI year-end equipment forecast | 2027 WFE consensus | inference from [SEMI Dec 2025 release](https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports) |
+| 10 Jan 2027 | End of extended BIS Affiliates-Rule suspension / Busan agreement extension | China exposure: Camtek 49%, KLA 34.5%, Nova 33% | [Clifford Chance](https://www.cliffordchance.com/briefings/2026/11/bis-suspends-affiliates-rule-until-january-10-2027.html); [NatLaw Review](https://natlawreview.com/article/bis-affiliates-rule-suspension-extended-uncertainty-remains) |
+| late Jan 2027 (date could not verify) | KLA FQ2 FY27 results | China step-down, 2027 WFE | — |
+| Feb 2027 (dates could not verify) | Onto, Nova, Camtek Q4 2026 results; Keysight FQ1 FY27 | backlog conversion, 2027 guides | — |
+| 9 Mar 2027 | Nova investor day, New York | new long-term targets | [MarketBeat Nova call](https://www.marketbeat.com/instant-alerts/transcript-nova-q3-earnings-call-highlights-2026-11-06/) |
+| 6 Apr 2027 | Keysight $700m 4.60% senior notes mature | refinancing (cash $2.6bn) | [Keysight FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm) |
+| ongoing | Convertible moneyness: Nova 2030 in the money ($320.16); Camtek 2030 near the money ($109.34 vs $107.05); Onto 2031 out of the money ($381.80) | dilution sensitivity to share price | [Nova R66](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/R66.htm); [Camtek R75](https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/R75.htm); [Onto R59](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R59.htm) |
+- Index changes, and investor days for KLA, Keysight, Onto and Camtek in the window: none found (could not verify).
+
+### 3.8 Provisional reads (clearly provisional; analysis, not recommendations)
+| Company | Provisional entry read | Core reasons | Conditions that would make entry more attractive |
+|---|---|---|---|
+| KLAC | Fair | top quality; forward P/E at own median but above WFE peers; China 34.5% guided down; Affiliates-Rule risk | ≤20x FY28 EPS (≈$142) or ≤22x FY27 (≈$127); January print confirming China absorbed and 2027 WFE >$200bn |
+| KEYS | Fair | near own median forward P/E; strong orders; premium to comms-test peers; FY24 shows cyclicality | ≤18x FY27 EPS (≈$251); 19 Nov FY27 outlook well above +15% with orders >$2bn/quarter |
+| ONTO | Attractive (conditional) | 16.7x FY27, ~35% below own median, PEG 0.43, backlog >$1.3bn; but concentration, low ROIC, Rigaku stake | Q4 at/above guide and visible 2027 backlog conversion; clarity on Rigaku returns |
+| NVMI | Fair | net cash, high quality, near own median; China 33%, Israel, convert dilution | ≤20x FY27 EPS (≈$273); credible new targets at 9 Mar 2027 investor day |
+| CAMT | Fair (high risk) | below own median, backlog to >$800m; lowest margins, China 49%, Israel, ~94% hardware | ≤18x FY27 EPS (≈$92); gross margin back toward 52%; falling China share in 2027 bookings |
 
 ## 4. What could not be verified
+- Credit ratings (S&P, Moody's, Fitch) for KLA and Keysight: not stated in the filings read; KLA's 10-Q says its revolver spread is "determined by the Company's credit ratings" without naming them; rating-agency pages could not be reached without a search tool.
+- True five- and ten-year daily ranges and medians of forward P/E and EV/EBITDA: only five fiscal-year-end points are free on stockanalysis.com; macrotrends.net returned HTTP 403. The "range/median" figures above are five-point fiscal-year-end values.
+- Behaviour in the 2019 downturn for all five (free financials pages start at FY2021/22; Onto took its current form in October 2019).
+- KLA: China outlook (mid-20s % for CY2026, low-20s % for 2027) comes only from secondary call summaries; services contract coverage; the 10-Q MD&A (export-control discussion) could not be read through the fetch tool; exact date of the FQ2 FY27 report; WFE figures taken from a Quartr summary rather than the transcript.
+- Keysight: software share, recurring share and ARR; any customer >10%; renewal of the $750m revolver after 30 Jul 2026; content of the 2 Nov 2026 8-K (officer/director change); FY27 outlook (due 19 Nov 2026).
+- Onto: Semilab purchase price and revenue contribution; capped-call cap price; Rigaku accounting method and strategic rationale; Q4 2026 report date.
+- Nova: Israel-risk disclosure after the late-February 2026 strikes on Iran (Nova's 20-F predates them); Q4 report date.
+- Camtek: 2026 quarterly revenue by country; amount of 2026 convertibles still outstanding in November 2026; Q4 report date.
+- Cause of KLAC's −13.35% fall on 5 Nov 2026 (the session's search budget was exhausted before it could be checked).
+- NVIDIA CEO-related reports are headline-level only; the 0.58% NVDA dividend yield shown by stockanalysis looks inconsistent with NVIDIA's historically token dividend.
+- SEMI primary releases returned HTTP 403; SEMI figures come from secondary reproductions (TelecomLead, Webull/PR Newswire, Tom's Hardware) and search summaries; SEMI's December 2026 forecast is not yet out. TechInsights and Gartner WFE forecasts could not be reached.
+- BIS rules specific to metrology and inspection tools (for example the December 2024 equipment controls) and the status of Section 232 semiconductor tariffs as of November 2026 were not re-verified this session.
+- Segment shares of theme-relevant businesses for AMAT, ASML, TER, TDY, VIAV and NVDA were not retrieved.
+- Consensus figures come from one provider (S&P Global data via stockanalysis.com; page update dates 6–12 Nov 2026); no second consensus source was checked.
+- Three- and five-year returns are compounded calendar-year price changes from end-2023 and end-2021 (proxies, dividends excluded), not exact anniversaries.
+- Tool limits: the shared WebSearch budget ran out, then the Firecrawl credits ran out; per coordinator instruction no search service was used afterwards. Four Firecrawl calls were made in total (three free library-discovery calls and one paid data call that was refused for lack of credits, so nothing ran).
 
-## 5. Sources with dates
+## 5. Sources with dates (all retrieved 12 Nov 2026)
+Primary company documents
+- KLA 8-K Ex.99.1, FQ1 FY27 results, published 28 Oct 2026 — https://www.sec.gov/Archives/edgar/data/0000319201/000031920126000032/exhibit991earningsrelease0.htm
+- KLA 10-Q, quarter to 30 Sep 2026, filed 29 Oct 2026 — https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm ; XBRL R80 (customers) https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/R80.htm ; R84 (regions) https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/R84.htm
+- Keysight 8-K Ex.99.1, Q3 FY26 results, 18 Aug 2026 — https://www.sec.gov/Archives/edgar/data/0001601046/000160104626000029/exhibit991-q326pressrelease.htm
+- Keysight Q3 FY26 results presentation, 18 Aug 2026 — https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf
+- Keysight 10-Q, quarter to 31 Jul 2026, filed 2 Sep 2026 — https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm
+- Keysight FY2025 10-K, filed 17 Dec 2025 — https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm ; R121 (revenue by country) https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/R121.htm
+- Onto 8-K Ex.99.1, Q3 2026 results, 9 Nov 2026 — https://www.sec.gov/Archives/edgar/data/0000704532/000119312526453582/onto-ex99_1.htm
+- Onto 10-Q, quarter to 30 Sep 2026, filed 9 Nov 2026 — https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm ; R39 https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R39.htm ; R59 https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R59.htm ; R76 https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R76.htm ; R77 https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R77.htm ; R78 https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R78.htm
+- Nova 6-K, Q3 2026 results, 5 Nov 2026 — https://www.sec.gov/Archives/edgar/data/0001109345/000117891326005034/zk2636340.htm
+- Nova 20-F FY2025, filed 17 Feb 2026 — https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm ; R66 https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/R66.htm ; R84 https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/R84.htm ; R85 https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/R85.htm
+- Camtek 6-K, Q3 2026 results, 4 Nov 2026 — https://www.sec.gov/Archives/edgar/data/0001109138/000117891326005000/zk2636329.htm
+- Camtek 6-K, investor presentation, 14 Oct 2026 — https://www.sec.gov/Archives/edgar/data/1109138/000117891326004769/zk2636226.htm
+- Camtek 20-F FY2025, filed 19 Mar 2026 — https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/zk2634678.htm ; R75 https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/R75.htm ; R91 https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/R91.htm
+- EDGAR filing indexes (submissions JSON) for KLA, Keysight, Onto, Nova, Camtek — https://data.sec.gov/submissions/CIK0000319201.json ; https://data.sec.gov/submissions/CIK0001601046.json ; https://data.sec.gov/submissions/CIK0000704532.json ; https://data.sec.gov/submissions/CIK0001109345.json ; https://data.sec.gov/submissions/CIK0001109138.json
+
+Call summaries and secondary reporting
+- MarketBeat, Nova Q3 2026 call highlights, 6 Nov 2026 — https://www.marketbeat.com/instant-alerts/transcript-nova-q3-earnings-call-highlights-2026-11-06/
+- MarketBeat, Camtek Q3 2026 call highlights, 4 Nov 2026 — https://www.marketbeat.com/instant-alerts/transcript-camtek-q3-earnings-call-highlights-2026-11-04/
+- MarketBeat, Lam Research FQ1 FY27 call highlights, 21 Oct 2026 — https://www.marketbeat.com/instant-alerts/transcript-lam-research-q1-earnings-call-highlights-2026-10-21/
+- Quartr, KLA FQ1 FY27 summary, dated 29 Oct 2026 — https://quartr.com/events/kla-klac-q1-2027_3YEy3jqs
+- Earnings Whispers, KLAC summary (undated) — https://www.earningswhispers.com/article/KLAC/r679
+- StatementDog, KLAC FQ4 FY26 call summary (Chinese, ~Jul 2026) — https://statementdog.com/analysis/KLAC/earnings_calls/316106
+- Briefing.com, KLA, 29 Jul 2026 — https://www.briefing.com/story-stocks/archive/2026/7/29/kla-corporations-inline-q1-guidance-overshadows-stronger-wfe-and-demand-outlook-(klac)
+- securities.io, KLA FQ1 FY27 (late Oct 2026) — https://www.securities.io/kla-posts-fiscal-q1-revenue-of-4-14-billion-above-guidance-midpoint/
+- StockStory, Nova Q3 2026 (5 Nov 2026) — https://stockstory.org/us/stocks/nasdaq/nvmi/news/earnings/nova-nasdaqnvmi-q3-beats-on-revenue-but-stock-drops
+- FourWeekMBA, Onto backlog (Nov 2026) — https://fourweekmba.com/ai-onto-innovation-backlog-tops-1-3b-3-2x-its-record-quarter/
+- Longbridge weekly recap, 24 Oct 2026 — https://longbridge.com/news/302952316
+- 24/7 Wall St, 13 Oct 2026 — https://247wallst.com/investing/2026/10/13/semiconductor-equipment-stocks-slide-as-investors-take-profits-on-a-huge-year-applied-materials-sinks-7-lam-research-and-kla-drop-4/?.tsrc=rss
+- The Arabian Post (Oct 2026) — https://thearabianpost.com/semiconductor-shares-plunge-as-lam-flags-supply-constraints/
+
+Industry forecasts and regulation
+- SEMI, year-end equipment forecast, 16 Dec 2025 — https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+- SEMI, 300mm fab outlook, 1 Apr 2026 — https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+- SEMI, 300mm memory outlook, Jun 2026 — https://www.semi.org/en/semi-press-release/semi-projects-300mm-memory-equipment-investment-to-surpass-50-billion-dollars-in-2026
+- SEMI mid-year forecast, 14 Jul 2026 (primary page 403; read via) TelecomLead — https://telecomlead.com/semiconductor/semiconductor-equipment-market-to-hit-record-165-9-bn-in-2026-as-ai-fuels-chip-manufacturing-investments-126723 ; Webull/PR Newswire — https://www.webull.com/news/15226022544172032 ; SEMI page — https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports
+- Tom's Hardware, Dec 2025 — https://www.tomshardware.com/tech-industry/semiconductors/sales-of-chip-production-equipment-to-reach-usd156-billion-by-2027-china-taiwan-and-korea-lead-intense-demand
+- Clifford Chance, "BIS Suspends Affiliates Rule Until January 10, 2027", 6 Nov 2026 — https://www.cliffordchance.com/briefings/2026/11/bis-suspends-affiliates-rule-until-january-10-2027.html
+- NatLaw Review / Miller Canfield, 2 Oct 2026 — https://natlawreview.com/article/bis-affiliates-rule-suspension-extended-uncertainty-remains
+- Baker McKenzie, BIS one-year suspension (Nov 2025) — https://sanctionsnews.bakermckenzie.com/bis-issues-one-year-suspension-of-new-affiliates-rule/
+
+Market data (prices as of 11 Nov 2026 US close unless stated)
+- stockanalysis.com statistics pages: https://stockanalysis.com/stocks/klac/statistics/ ; https://stockanalysis.com/stocks/keys/statistics/ ; https://stockanalysis.com/stocks/onto/statistics/ ; https://stockanalysis.com/stocks/nvmi/statistics/ ; https://stockanalysis.com/stocks/camt/statistics/ ; https://stockanalysis.com/stocks/amat/statistics/ ; https://stockanalysis.com/stocks/asml/statistics/ ; https://stockanalysis.com/stocks/emr/statistics/ ; https://stockanalysis.com/stocks/ral/statistics/ ; https://stockanalysis.com/stocks/ter/statistics/ ; https://stockanalysis.com/stocks/tdy/statistics/ ; https://stockanalysis.com/stocks/viav/statistics/ ; https://stockanalysis.com/stocks/nvda/statistics/ ; https://stockanalysis.com/stocks/lrcx/statistics/ ; https://stockanalysis.com/quote/tyo/6920/statistics/ ; https://stockanalysis.com/quote/tyo/6857/statistics/ ; https://stockanalysis.com/quote/tyo/8035/statistics/ ; https://stockanalysis.com/quote/tyo/6754/statistics/ ; https://stockanalysis.com/quote/kosdaq/140860/statistics/ ; https://stockanalysis.com/quote/ams/BESI/statistics/
+- stockanalysis.com forecast, ratios, financials, overview and history pages for KLAC, KEYS, ONTO, NVMI, CAMT (URLs cited inline above); revenue pages https://stockanalysis.com/stocks/emr/revenue/ and https://stockanalysis.com/stocks/ral/revenue/ ; market news https://stockanalysis.com/news/
+- companiesmarketcap.com price histories: https://companiesmarketcap.com/kla/stock-price-history/ ; https://companiesmarketcap.com/keysight/stock-price-history/ ; https://companiesmarketcap.com/onto-innovation/stock-price-history/ ; https://companiesmarketcap.com/nova-measuring-instruments/stock-price-history/ ; https://companiesmarketcap.com/camtek/stock-price-history/
