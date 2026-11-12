@@ -55,7 +55,7 @@ Europe's distinctive strength is software "judges": sound analysers and proof to
 - France, Systerel (Aix-en-Provence): S2OPC (open-source certified OPC UA), Smart Solver (formal verification for SCADE, C and Ada) and OVADO2 data validation [COMPANY CLAIM] https://www.systerel.fr/en/ . Registry: SIREN 440146504, staff band 100-199, owned by Groupe Systerel; FY2024 revenue EUR 11,589,545, net income EUR 508,357 [PRIMARY] https://annuaire-entreprises.data.gouv.fr/entreprise/440146504
 - UK, Diffblue Limited (AI-written unit tests for Java; testing, not proof): Companies House no. 09958102, incorporated 19 Jan 2016 (first pass; registry page URL not recorded).
 - UK/US, Imandra: CodeLogician (Mar 2025); paper arXiv 2601.11840 (Jan 2026) https://arxiv.org/abs/2601.11840 ; US$5M seed in 2019 from Live Oak, IQ Capital and AlbionVC (first pass, URL not recorded) [UNVERIFIED].
-- Australia, Proofcraft (Sydney; seL4 proof engineering) [COMPANY CLAIM] https://proofcraft.systems/ :
+- Australia, Proofcraft (seL4 proof engineering) [COMPANY CLAIM] https://proofcraft.systems/ :
   - quoted in WIRED on AI-generated proofs, 5 Nov 2026;
   - reported a "Significant improvement in the maintainability of seL4 proofs", 21 Sep 2026;
   - gave the FDL keynote, 10 Sep 2026;
@@ -177,7 +177,7 @@ Europe's distinctive strength is software "judges": sound analysers and proof to
 **a. Position**
 - Products: SPARK Pro (formal proof for a subset of Ada), GNAT Pro (Ada, C/C++, Rust), CodeSonar static analysis (from CodeSecure) and the GNAT Dynamic Analysis Suite [PRIMARY] https://www.adacore.com/press/adacore-and-codesecure-merge
 - SPARK acts as a judge where customers adopt it. In NVIDIA's DRIVE OS, critical components are written in Ada/SPARK, and an ISO 26262 process with NVIDIA was announced on 2 Jun 2025 [COMPANY CLAIM] https://www.adacore.com/press/ada-and-spark-enter-the-automotive-iso-26262-market-with-nvidia . NVIDIA published that reference process as open source [INDEPENDENT] https://github.com/NVIDIA/spark-process
-- CodeSonar finds bugs but does not prove their absence, so it is a weaker judge.
+- CodeSonar is sold as defect-finding static analysis rather than proof, so it is a weaker judge than SPARK (inference; not checked against CodeSonar documentation in this pass).
 - Language risk: Rust plus open verifiers could erode the Ada/SPARK niche. AdaCore is hedging with GNAT Pro for Rust and, from 3 Nov 2026, a collaboration with CMU's Verus team (Bryan Parno) on formally proven Rust [COMPANY CLAIM] https://www.adacore.com/press/adacore-and-cmu-researchers-announce-collaboration-around-formal-verification-of-rust-for-high-integrity-systems
 
 **b. Lead**
@@ -482,7 +482,7 @@ None of the six companies assessed in depth can be bought directly. The listed r
 
 ### Cited Findings
 **Private companies: latest funding, valuation and investors**
-- Certora: last priced round US$36M Series B (May 2022), led by Jump Crypto with Tiger Global and Galaxy Digital; valuation not disclosed (sources in 2.1). No listed vehicle gives meaningful exposure; whether Galaxy Digital's holding is significant was not verified. A Galaxy portfolio page lists Certora https://venturecareers.galaxy.com/companies/certora
+- Certora: last priced round US$36M Series B (May 2022), led by Jump Crypto with Tiger Global and Galaxy Digital; valuation not disclosed (sources in 2.1). No listed vehicle gives meaningful exposure; whether Galaxy Digital's holding is significant was not verified. A Galaxy portfolio page lists Certora [SECONDARY] https://venturecareers.galaxy.com/companies/certora
 - AdaCore: Battery Ventures investment (Mar 2024; reportedly a majority stake); value undisclosed; no listed vehicle (2.2).
 - AbsInt: privately held, no outside investors found (2.3).
 - TrustInSoft: last disclosed round EUR 5M (Nov 2019), led by ACE Management (Brienne III), with Idinvest earlier. Whether a listed asset manager still holds Idinvest's stake was not verified (2.4).
