@@ -11,8 +11,8 @@ Research date: 12 Nov 2026. Most sources are dated Apr-Nov 2026. Scope covers ro
 
 **Process limits (read before relying on coverage)**
 - The session's shared web-search budget ran out about halfway through.
-- The Exa and Firecrawl tools ran out of credits.
-- After that, only pages already found could be read.
+- The Exa and Firecrawl tools ran out of credits. At the coordinator's request both were retried at about 12:55 UTC on 12 Nov 2026 and were still out (Firecrawl's daily allowance resets 13 Nov 2026, 08:47 UTC).
+- After that, only pages already found could be read, using WebFetch plus local text extraction of downloaded PDFs.
 - No local-language searching (Korean, Japanese, Chinese, Taiwanese) was possible. Korean and Taiwanese press were seen only through TrendForce, The Elec and Chosun Biz relays.
 - Huawei and other Chinese systems, Dutch, Japanese, Korean, Taiwanese, Israeli and Indian controls, and Chinese hyperscaler capex were **not** researched. See "What could not be verified".
 
@@ -41,7 +41,9 @@ Advanced-packaging back-end capacity, optical engines and lasers, and board-leve
 ### Cited Findings
 
 **Memory (binding now)**
-- NVIDIA's supply commitments rose from $119B to $279B in one quarter (period: quarter ended Jul 2026; reported 26 Aug 2026), "primarily related to the procurement of memory" — [NVIDIA Q2 FY27 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027) [P][SR]
+- NVIDIA's supply commitments reportedly rose from $119B to $279B in one quarter (quarter ended 26 Jul 2026; reported 26 Aug 2026), "primarily related to the procurement of memory".
+  - **Correction:** the figure is not in the press release (checked [F]). It comes from secondary summaries of NVIDIA's disclosures, probably the 10-Q or CFO commentary, which were not opened.
+  - [Yahoo Finance/GuruFocus call highlights](https://finance.yahoo.com/markets/stocks/articles/nvidia-corp-nvda-q2-2027-050152280.html) [S][SR]; press release checked: [NVIDIA](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027) [P][F]
 - Kress said the largest parts of those commitments fall "in the first three years" — [StockAnalysis transcript, 26 Aug 2026](https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/) [P][F]
 - On memory, NVIDIA said "The magnitude of the price increase has exceeded our prior expectations" — [same transcript](https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/) [P][F]
 - Micron expects memory supply-demand conditions "much tighter in calendar 2027 and 2028" than in 2026. It sees industry DRAM bit shipments growing in the low-20s % range in 2027 and 2028, "supply constrained in both years". Micron: "we do not have line of sight to when supply and demand will return to balance" (published 30 Sep 2026) — [Micron FQ4 FY26 prepared remarks](https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf) [P][F]
@@ -251,7 +253,8 @@ Micron's one-generation-a-year roadmap to 2030 is confirmed via secondary covera
 - [TrendForce](https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/) [S relaying company][F]. Company claims, unconfirmed.
 
 **NVIDIA as buyer**
-- Memory drove the $279B supply commitments. Memory price increases "exceeded our prior expectations" (26 Aug 2026) — [NVIDIA transcript](https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/) [P][F]
+- Memory reportedly drove the $279B supply commitments ([Yahoo/GuruFocus](https://finance.yahoo.com/markets/stocks/articles/nvidia-corp-nvda-q2-2027-050152280.html) [S][SR]; not in the press release). On the call, NVIDIA said memory price increases "exceeded our prior expectations" (26 Aug 2026) — [NVIDIA transcript](https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/) [P][F]
+- AMD (Q2 2026 call, early Aug 2026): "There is very good visibility into HBM allocation for what we expect to deliver in 2027". AMD said it could "modify that memory footprint" for customers optimising memory cost — [AMD Q2 2026 transcript](https://d1io3yog0oux5.cloudfront.net/_1dcf6819c1566fb2bab40c24e6158009/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf) [P][F, text extracted]
 - An analyst claims an HBM issue on Rubin was "resolved in October" (12 Nov 2026, unconfirmed) — [Newsquawk](https://newsquawk.com/headlines/citrinis-jukan-says-that-one-thing-ive-been-able-to-confirm-is-that-nvidias-nvda-rubin-has-been-delayed-again-im-told-motherboard-warpage-caused-the-latest-delay-and-that-the-hbm-issue-was-resolved-in-october) [S][F]
 
 **Hybrid bonding**
@@ -301,7 +304,11 @@ Micron's one-generation-a-year roadmap to 2030 is confirmed via secondary covera
 
 **Base Vera Rubin status**
 - NVIDIA "commenced production shipments of Vera Rubin earlier this month" (Aug 2026). It has POs from "every major hyperscaler, AI cloud, and system OEM", and expects Vera Rubin to be about 20% of Q3 FY27 data-centre revenue (quarter ending late Oct 2026; said 26 Aug 2026) — [NVIDIA transcript](https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/) [P][F]
-- The press release says racks are running at CoreWeave, Google Cloud, Microsoft Azure, OCI and Nebius — [NVIDIA press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027) [P][SR]
+- The press release (26 Aug 2026; quarter ended 26 Jul 2026) says Vera Rubin is "ramping into full production", with racks running at CoreWeave, Google Cloud, Microsoft Azure, OCI and Nebius.
+  - Huang quoted: "Vera Rubin, now in full production, was built to power exactly this moment."
+  - Spectrum-6 switch systems support "both pluggable and co-packaged optics".
+  - "NVIDIA is not assuming any Data Center compute revenue from China in its outlook."
+  - [NVIDIA press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027) [P][F]
 - Wikipedia: full production May 2026, deployment Sep 2026 (citing an NVIDIA blog of 30 Sep 2026) — [Wikipedia: Rubin](https://en.wikipedia.org/wiki/Rubin_(microarchitecture)) [S][F]
 - Contrary claim (12 Nov 2026), not company-confirmed:
   - Rubin "delayed again" because of motherboard warpage.
@@ -309,6 +316,28 @@ Micron's one-generation-a-year roadmap to 2030 is confirmed via secondary covera
   - NVIDIA raised Blackwell orders in the meantime.
   - Newsquawk says to treat it as directional until corroborated.
   - [Newsquawk](https://newsquawk.com/headlines/citrinis-jukan-says-that-one-thing-ive-been-able-to-confirm-is-that-nvidias-nvda-rubin-has-been-delayed-again-im-told-motherboard-warpage-caused-the-latest-delay-and-that-the-hbm-issue-was-resolved-in-october) [S][F]
+
+**Cross-check of a finding relayed by the coordinator on 12 Nov 2026 (another researcher's secondary notes)**
+- *"SemiAnalysis reported in July 2026 that the Kyber rack's midplane is slipping to 2028, while NVIDIA says its roadmap is intact."* **Confirmed, with a nuance.**
+  - WinBuzzer and Wccftech (both 7 Jul 2026) cover it [F].
+  - Spheron (20 Oct 2026) adds that the problem is a 78-layer PCB midplane mounting Kyber's 144 GPUs, with reported issues in signal integrity, power delivery, thermal design and achievable layer count. The slip is from 2027 to 2028.
+  - Spheron reports an NVIDIA spokesperson told CNBC "Our roadmap is intact" while confirming base Vera Rubin NVL72 still ships in fall 2026. Spheron says NVIDIA "has not disputed the 2028 date".
+  - Nuance: what slips is the Kyber rack, with the midplane named as the cause. NVIDIA's denial is generic. Calling it a dispute of the 2028 date (Wccftech's paraphrase) overstates what NVIDIA said.
+  - Spheron says CNBC "confirmed" the report the same week. The CNBC article was not retrieved, so that independent corroboration is unverified.
+  - [Spheron, 20 Oct 2026](https://www.spheron.network/blog/nvidia-kyber-rack-delayed-to-2028-what-it-means-for-rubin-ul/) [S][F]
+- *"Vera Rubin entered full production in May 2026."* **Partly supported.**
+  - Wikipedia dates full production to May 2026, citing the NVIDIA Newsroom [F]. The underlying NVIDIA item was not opened. Spheron does not give a start date.
+  - NVIDIA's own later wording: "ramping into full production" and "now in full production" (26 Aug 2026 release [P][F]); "commenced production shipments of Vera Rubin earlier this month", i.e. Aug 2026 (26 Aug 2026 call [P][F]); deployment Sep 2026 (NVIDIA blog 30 Sep 2026, via Wikipedia).
+  - Treat May 2026 as the start of production, Aug 2026 as the start of production shipments, and Q3-Q4 2026 as the volume ramp. Today's unconfirmed slip claim (Newsquawk) concerns volume shipments, not production start.
+- *"AMD's Helios rack is all copper and shipping from late Q3 2026."* **Shipping confirmed by AMD; "all copper" supported only by implication.**
+  - AMD Q2 2026 call (early Aug 2026, before 11 Aug) [P][F]:
+    - "Helios is now in production, with initial shipments on track to begin later this quarter and ramp through the fourth quarter and into 2027".
+    - "The Helios ramp is just starting at the end of Q3, and it will be much more substantial in Q4".
+    - "Q3 is the very beginning of the ramp, Q4 is a step-up, and then Q1 will be a further step-up".
+  - AMD Q3 2026 call (3 Nov 2026) [P][F]: "We started shipping MI455X in volume in the quarter". Lead customers (Anthropic, Meta, Microsoft, OpenAI, Oracle) brought first Helios racks online.
+  - On interconnect, AMD said its **2027** MI500 platform adds "expanded scale up domains and both copper and optical-based interconnects". That implies Helios (2026) scale-up is copper.
+  - No retrieved AMD statement says the whole Helios rack is "all copper". Helios scale-out is 43 TB/s Ethernet via Pensando ([Tech Insider, 23 Jul 2026, updated to Nov 2026](https://tech-insider.org/amd-advancing-ai-2026/) [S][F]), and the media used for scale-out links is not stated. So "copper scale-up" is supported; "all copper" is not established.
+  - [AMD Q2 2026 transcript](https://d1io3yog0oux5.cloudfront.net/_1dcf6819c1566fb2bab40c24e6158009/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf) [P][F, text extracted]; [AMD Q3 2026 transcript](https://www.fool.com/earnings/call-transcripts/2026/11/04/amd-amd-q3-2026-earnings-call-transcript/) [P][F]
 
 **Feynman (2028), as shown at GTC Mar 2026**
 - A new GPU, the LP40 LPU (built with the Groq team), the Rosa CPU (successor to Vera), BlueField 5, and both copper and co-packaged optical scale-up. Kyber scales to NVL1152 (eight times the NVL144 density) — [HPCwire/AIwire, 18 Mar 2026](https://www.hpcwire.com/aiwire/2026/03/18/huang-shares-nvidia-roadmap-showing-more-chips-nvl1152-scale-up-cpo/) [S][SR]; [Atlan](https://atlan.com/know/nvidia-gtc-2026-keynote-recap/) [S][SR]; [Jon Peddie Research](https://www.jonpeddie.com/news/nvidia-gtc-2026-keynote/) [S][SR]
@@ -396,6 +425,7 @@ Micron's one-generation-a-year roadmap to 2030 is confirmed via secondary covera
 **Scale-up optics and copper**
 - SemiAnalysis's reading of GTC 2026: NVL144 Kyber will not use CPO for scale-up. Rubin Ultra gets copper scale-up in both Oberon and Kyber. CPO scale-up debuts with Rubin Ultra NVL576 and Feynman NVL1152 — [SemiAnalysis](https://newsletter.semianalysis.com/p/nvidia-the-inference-kingdom-expands) [S][SR]. Some outlets instead said Kyber uses CPO ([DEV Community](https://dev.to/max_quimby/nvidia-gtc-2026-every-ai-announcement-developers-need-to-know-1njb), [SR]). SemiAnalysis is the more detailed source.
 - Feynman bundles "both copper and co-packaged optical scale-up networking" — [Atlan](https://atlan.com/know/nvidia-gtc-2026-keynote-recap/) [S][SR]; [HPCwire, 18 Mar 2026](https://www.hpcwire.com/aiwire/2026/03/18/huang-shares-nvidia-roadmap-showing-more-chips-nvl1152-scale-up-cpo/) [S][SR]
+- AMD follows the same pattern. Its 2027 platform (MI500, Verano CPU, Pensando) will have "expanded scale up domains and both copper and optical-based interconnects" (Q2 2026 call, early Aug 2026). That implies 2026 Helios scale-up is copper, and AMD's optical scale-up comes no earlier than 2027 — [AMD Q2 2026 transcript](https://d1io3yog0oux5.cloudfront.net/_1dcf6819c1566fb2bab40c24e6158009/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf) [P][F]
 - NVL576 "may also be affected" by the Kyber delay because it depends on CPO readiness (Jul 2026) — [WinBuzzer](https://winbuzzer.com/2026/07/07/reported-nvidia-kyber-delay-pushes-ai-rack-toward-2028-xcxwbn/) [S][F]
 - Laser and component supply: CW lasers, fiber arrays and TSMC COUPE capacity are reportedly sold out into 2027. Taiwanese suppliers report order books full through 2027 and supply tight into 2028 — relayed in search results [S][SR, unattributed]
 - NVIDIA's 2026 supply deals with Corning, Lumentum and Coherent are tied to EML laser concerns — [SDxCentral](https://www.sdxcentral.com/news/nvidia-targets-15x-optics-capacity-expansion-by-2027-to-meet-cpo-demand/) [S][F]
@@ -403,7 +433,7 @@ Micron's one-generation-a-year roadmap to 2030 is confirmed via secondary covera
 ### Inferences
 - CPO in scale-out switches is the first of the six successors in production. The volume inflection comes in 2027 as SPIL capacity scales.
 - Optics between processors at volume is a 2028 event at the earliest. It is more likely 2028-29, given the Kyber and NVL576 exposure and Feynman's copper option.
-- Copper scale-up (cables, backplanes, midplanes) is stretched beyond 2028 rather than ending in 2027-28.
+- Copper scale-up (cables, backplanes, midplanes) is stretched beyond 2028 rather than ending in 2027-28. Both GPU leaders keep copper alongside optics in their next platforms: NVIDIA Feynman in 2028, and AMD MI500 in 2027 with "both copper and optical-based interconnects".
 - The midplane-PCB problem behind the Kyber report shows the copper bridge has its own manufacturing limits. That shifts value toward high-layer-count PCB and connector specialists in 2027-28.
 
 ### Gaps
@@ -429,13 +459,18 @@ Evidence supports most priors. It argues for raising the "memory supply-limited 
   - Base Rubin may itself be slipping (unconfirmed) — [Newsquawk](https://newsquawk.com/headlines/citrinis-jukan-says-that-one-thing-ive-been-able-to-confirm-is-that-nvidias-nvda-rubin-has-been-delayed-again-im-told-motherboard-warpage-caused-the-latest-delay-and-that-the-hbm-issue-was-resolved-in-october)
   - Facility-side 800 VDC: rack-level in 2027, data hall in 2028 (Citi, as relayed) — [Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/) [SR]
 - **(c) 1 MW racks in production use by end-2030; prior 50%.**
-  - The OCP Mt. Diablo v1.0.0 spec (8 Oct 2026) supports ±400 VDC and 800 VDC power racks scalable from 800 kW to 1 MW+ — [OCP spec](https://www.opencompute.org/wp-content/uploads/2026/10/OCP-Specification-Mt.-Diablo-Disaggregated-Power-Rack-Specification-v1.0.0.pdf) [P][SR]
+  - OCP Mt. Diablo Disaggregated Power Rack Specification 1.0.0, effective 8 Oct 2026, authored by Microsoft, Meta and Google:
+    - A sidecar power rack delivers ±400 VDC, or "differential 800Vdc" (wording changed in v1.0.0), to a nearby IT rack.
+    - It supports requirements "from 800kW to 1MW+ (with the option to parallelize power racks together) while keeping the disaggregated IT rack the same".
+    - Rack power is described as rising "from 33kW to 100's of kW". BBU ride-through is 45-90 s.
+    - Earlier versions: 0.5.0 (5 May 2025), 0.7 (Feb 2026), 0.7.0 (Mar 2026).
+    - [OCP spec](https://www.opencompute.org/wp-content/uploads/2026/10/OCP-Specification-Mt.-Diablo-Disaggregated-Power-Rack-Specification-v1.0.0.pdf) [P][F, text extracted]
   - NVIDIA says 800 VDC support for 1 MW racks starts in 2027 (company claim, unconfirmed) — [Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/) [SR]
   - Feynman NVL1152 is a multi-rack system; no per-rack 1 MW NVIDIA product was confirmed — [HPCwire](https://www.hpcwire.com/aiwire/2026/03/18/huang-shares-nvidia-roadmap-showing-more-chips-nvl1152-scale-up-cpo/) [SR]
 - **(d) Memory supply-limited through 2028; prior 70%.**
   - Micron: DRAM supply-constrained in 2027 and 2028, "no line of sight" to balance — [Micron](https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf)
   - SK hynix: sold out through 2029, with LTAs over 50% of 2027-28 capacity — [TrendForce](https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/)
-  - NVIDIA: memory-led commitments of $279B — [NVIDIA](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027)
+  - NVIDIA: memory-led supply commitments of $279B (secondary summary; not in the press release) — [Yahoo/GuruFocus](https://finance.yahoo.com/markets/stocks/articles/nvidia-corp-nvda-q2-2027-050152280.html)
   - Against "first to turn": take-or-pay SCAs with $32B of mostly cash deposits — [Micron](https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf)
 - **(e) Bridging hardware loses share in 2028-30 but lasts longer.**
   - Copper scale-up kept through Rubin Ultra and offered with Feynman — [SemiAnalysis](https://newsletter.semianalysis.com/p/nvidia-the-inference-kingdom-expands); [Atlan](https://atlan.com/know/nvidia-gtc-2026-keynote-recap/)
@@ -548,7 +583,7 @@ Acceleration is capped by supply (NVIDIA through Jan 2028; memory through 2028; 
 | Solder-bump/TC/MR-MUF stacking to hybrid bonding (HBM) | Industry expectation for 16-high HBM4 (about 2026) before JEDEC set 775 µm (JESD270-4, Apr 2025) | 16-high HBM4 built with MR-MUF. Earliest hybrid bonding at 16-high HBM4E (2027-28). SK hynix points to HBM4E or HBM5 (2028). | At least one generation, about 1-2 years | [SK hynix tech note](https://news.skhynix.com/en/tech-note-series-ep2/) [SR]; [VLSI.kr](https://www.vlsi.kr/en/hbm-stack-height-8hi-12hi-16hi-en/) [SR]; [TechTimes, 22 Oct 2026](https://www.techtimes.com/articles/329350/20261022/micron-maps-annual-hbm-advances-2030-rejects-chinese-density-workaround.htm) [F] |
 | Silicon interposers to panel (CoPoS) and glass | CoPoS: pilot line 2026, volume end-2028/2029. Glass: several makers targeting 2026-27. | CoPoS: line built and qualifying (Jun 2026); pilot production mid-2027; full-scale 2028-29 (Feynman first). Glass: SEMCO core 2H27 and substrates 2028 (orders slipped three times; possibly 2028+); SKC/Absolics to 2027; DNP 2028; Intel uncommitted. | CoPoS pilot production about 0.5-1 year (one report). Glass about 0.5-1+ years. | [TrendForce, 15 Jun 2026](https://www.trendforce.com/news/2026/06/15/news-tsmc-cowos-supply-demand-gap-reportedly-seen-narrowing-from-20-to-10-by-end-2026-as-capacity-expands/) [F]; [TrendForce, 13 Apr 2026](https://www.trendforce.com/news/2026/04/13/news-tsmc-advances-panel-level-packaging-copos-pilot-line-reportedly-set-for-june-completion-2028-29-ramp-eyed/) [SR]; [TrendForce, 18 Aug 2026](https://www.trendforce.com/news/2026/08/18/news-glass-substrate-war-heats-up-shinko-electric-advances-22-layer-product-as-samsung-reportedly-faces-ramp-up-uncertainty/) [F] |
 | Cold plates to two-phase cooling | No vendor-dated roadmap found. Two-phase was expected for 2 kW+ class chips. | Single-phase direct-to-chip is the baseline for Rubin Ultra and Kyber; cold plates dominant through at least 2028. EU PFAS: ECHA opinions end-2026, vote early 2027. No non-PFAS two-phase fluid production-qualified as of mid-2026. | Undated or indefinite | [The Cooling Report](https://thecoolingreport.com/intel/pfas-two-phase-immersion-cooling-crisis.html) [SR]; [DCD](https://www.datacenterdynamics.com/en/news/zutacores-two-phase-cooling-will-eliminate-pfas-in-2026/) [SR]; [Tom's Hardware/KAIST](https://www.tomshardware.com/pc-components/cooling/future-ai-processors-said-to-consume-up-to-15-360w-massive-power-draw-will-demand-exotic-immersion-and-embedded-cooling-tech) [SR] |
-| Today's rack power to 600 kW and 1 MW on 800 VDC | Kyber 600 kW in 2H 2027 (GTC 2025). NVIDIA 800 VDC from 2027. | Kyber reportedly 2028 (NVIDIA: "roadmap intact"). OCP Mt. Diablo v1.0.0 (8 Oct 2026): ±400 VDC and 800 VDC, 800 kW-1 MW+. Citi: rack-level 800 VDC 2027, data hall 2028. No 1 MW rack product named. | About 12 months (reported) | [Wikipedia: Rubin](https://en.wikipedia.org/wiki/Rubin_(microarchitecture)) [F]; [Wccftech](https://wccftech.com/nvidia-quashes-rubin-kyber-rack-delay-rumors-says-chip-roadmap-is-intact/) [F]; [OCP spec](https://www.opencompute.org/wp-content/uploads/2026/10/OCP-Specification-Mt.-Diablo-Disaggregated-Power-Rack-Specification-v1.0.0.pdf) [P][SR]; [Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/) [SR] |
+| Today's rack power to 600 kW and 1 MW on 800 VDC | Kyber 600 kW in 2H 2027 (GTC 2025). NVIDIA 800 VDC from 2027. | Kyber reportedly 2028 (NVIDIA: "roadmap intact"). OCP Mt. Diablo 1.0.0 (effective 8 Oct 2026; Microsoft, Meta, Google): ±400 VDC or differential 800 VDC sidecar, 800 kW-1 MW+ per power rack (power racks can be paralleled). Citi: rack-level 800 VDC 2027, data hall 2028. No 1 MW rack product named. | About 12 months (reported; NVIDIA's denial is generic) | [Wikipedia: Rubin](https://en.wikipedia.org/wiki/Rubin_(microarchitecture)) [F]; [Wccftech](https://wccftech.com/nvidia-quashes-rubin-kyber-rack-delay-rumors-says-chip-roadmap-is-intact/) [F]; [Spheron, 20 Oct 2026](https://www.spheron.network/blog/nvidia-kyber-rack-delayed-to-2028-what-it-means-for-rubin-ul/) [F]; [OCP spec](https://www.opencompute.org/wp-content/uploads/2026/10/OCP-Specification-Mt.-Diablo-Disaggregated-Power-Rack-Specification-v1.0.0.pdf) [P][F]; [Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/) [SR] |
 
 ### Cited Findings: who captures the value (integrated firms vs specialists)
 - **TSMC pricing power and control**
@@ -629,7 +664,10 @@ Acceleration is capped by supply (NVIDIA through Jan 2028; memory through 2028; 
 - MOFCOM/GAC Announcement No. 70 of 2025 suspended the Oct 2025 rare-earth and technology package (Announcements 55-58, 61, 62) from 7 Nov 2025 to 10 Nov 2026 — [Carra Globe (published 5 May 2026; checked 14 Oct 2026)](https://carraglobe.com/china-rare-earth-export-controls-2026/) [S][F]; [Global Trade Alert](https://globaltradealert.org/state-act/95168-china-temporary-suspension-of-additional-export-controls-for-rare-earth-related-technologies/) [S][SR]
 - MOFCOM (28 Sep 2026) said the wider US-China arrangement is extended to **10 Jan 2027**, without naming rare earths. As of 14 Oct 2026 no numbered notice had amended Announcement 70 — [Carra Globe](https://carraglobe.com/china-rare-earth-export-controls-2026/) [F]
 - About 4 Nov 2026, MINING.COM noted no formal extension had been announced — [MINING.COM on X](https://x.com/mining/status/2118084012942000158) [S][SR]
-- One secondary item dated 12 Nov 2026 says MOFCOM and GAC confirmed on 9 Nov 2026 that the suspension runs 11 Nov 2026 to 10 Jan 2027 — [relayed in search results; underlying page not identified] [SR, **unverified**]
+- Discovery Alert (12 Nov 2026) reports that on 9 Nov 2026 MOFCOM and GAC confirmed the suspension of the Oct 2025 package runs from **11 Nov 2026 to 10 Jan 2027**.
+  - No announcement number is given, and this was not verified against MOFCOM's or GAC's own notices.
+  - The suspended package covers holmium, erbium, thulium, europium and ytterbium; related equipment and technology; the 0.1% Chinese-content rule for foreign products; and selected battery, anode and semiconductor items.
+  - [Discovery Alert, 12 Nov 2026](https://discoveryalert.com/analysis/rare-earth-export-controls-china-pause-prices-november-2026/) [S][F]. Single secondary source.
 - Apr 2025 licensing of seven heavy rare earths (Sm, Gd, Tb, Dy, Lu, Sc, Y; Announcement No. 18 of 2025) remains in force and was never suspended — [Carra Globe](https://carraglobe.com/china-rare-earth-export-controls-2026/) [F]
 - Domestic substitution: CXMT is pursuing 4F² DRAM with a DDR5 server product by end-2026, without EUV access — [TechTimes, 22 Oct 2026](https://www.techtimes.com/articles/329350/20261022/micron-maps-annual-hbm-advances-2030-rejects-chinese-density-workaround.htm) [F]
 
@@ -670,7 +708,10 @@ Acceleration is capped by supply (NVIDIA through Jan 2028; memory through 2028; 
 - **Base Rubin volume slip to 2027** (Jukan, 12 Nov 2026). Unconfirmed and contradicted by NVIDIA's 26 Aug 2026 statements; NVIDIA's Q3 FY27 report should resolve it.
 - **Rubin Ultra die count and rack form factor** for 2027. NVIDIA has published no new spec.
 - **Microsoft's ~$170B capex period** (FY2027 vs calendar 2026) and the Q1 FY27 figure ($45.2B per one summary). Check against the 10-Q.
-- **China's rare-earth suspension extension past 10 Nov 2026.** One secondary source only.
+- **China's rare-earth suspension extension past 10 Nov 2026.** Reported by one secondary source ([Discovery Alert, 12 Nov 2026](https://discoveryalert.com/analysis/rare-earth-export-controls-china-pause-prices-november-2026/), read in full). No MOFCOM or GAC announcement number found.
+- **Helios "all copper"** (other researcher's claim). AMD confirms Helios shipping from late Q3 2026 and implies copper scale-up, since optics arrive with MI500 in 2027. No AMD statement retrieved says the whole rack, including scale-out, is copper.
+- **CNBC's reported confirmation of the Kyber slip** (claimed by Spheron). The CNBC article was not retrieved.
+- **Source of NVIDIA's $279B supply-commitment figure.** It is not in the 26 Aug 2026 press release and is presumably in the 10-Q or CFO commentary, which were not opened.
 - **Huawei Ascend and SuperPoD roadmap status in 2026, and other Chinese systems.** Not researched. Pre-2026 public plans (Huawei Connect, Sep 2025) are not restated here because they were not re-verified.
 - **Google TPU, Broadcom, Amazon Trainium, Meta MTIA, Microsoft Maia and OpenAI custom-chip roadmaps.** Not researched beyond NVIDIA's statement that Vera Rubin racks are running at Google Cloud and Azure, and AMD's naming of Helios customers.
 - **Neocloud, sovereign and Chinese hyperscaler capex.** Not obtained.
@@ -680,7 +721,12 @@ Acceleration is capped by supply (NVIDIA through Jan 2028; memory through 2028; 
 - **JEDEC ~900 µm height for HBM4E** (reported, unverified), and Samsung hybrid-bonded HBM4 sample yields (low-tier sources).
 - **Export-control items listed in the Gaps above** (Netherlands, Japan, Korea, Taiwan, Israel, India; gallium and germanium; NVIDIA antitrust; domestic-chip mandates).
 - **Regional coverage is thin** for mainland China, Japan and Korea in local languages. Taiwanese and Korean information came only through English-language relays (TrendForce, The Elec, Chosun Biz).
-- **Process note:** the session's web-search budget ran out, and Exa and Firecrawl credits ran out midway. The Hardware Signal Foxconn note (#225) returned 404 on re-check, and Forbes (22 Oct 2026), HPCwire and CRS returned 403.
+- **Process note:**
+  - The session's web-search budget ran out, and Exa and Firecrawl credits ran out midway.
+  - Both were retried at about 12:55 UTC on 12 Nov 2026 and were still out; Firecrawl's allowance resets 13 Nov 2026, 08:47 UTC.
+  - The Hardware Signal Foxconn note (#225) returned 404 on re-check.
+  - Forbes (22 Oct 2026), HPCwire, CRS, technology.org (19 Oct 2026, rare-earth pause) and FourWeekMBA (Microsoft capex) returned 403.
+  - The Microsoft capex period and the status of China's gallium/germanium ban therefore remain unresolved.
 
 ---
 
@@ -689,12 +735,14 @@ Format: title — URL — publication or event date — type. [F] means read in 
 
 **Primary or near-primary**
 - NVIDIA Q2 FY2027 earnings call transcript — https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/ — 26 Aug 2026 — [P, third-party transcript][F]
-- NVIDIA Q2 FY2027 press release — https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027 — 26 Aug 2026 — [P][SR]
+- NVIDIA Q2 FY2027 press release — https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027 — 26 Aug 2026 — [P][F]
+- Yahoo Finance/GuruFocus, NVIDIA Q2 FY2027 call highlights (source of the $279B supply-commitment figure) — https://finance.yahoo.com/markets/stocks/articles/nvidia-corp-nvda-q2-2027-050152280.html — Aug 2026 — [S][SR]
 - TSMC Q3 2026 earnings call transcript (AI-assisted) — https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695 — 15 Oct 2026 — [P, third-party transcript][F]
 - TSMC Q3 2026 presentation (Form 6-K) — https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26presentatione.htm — Oct 2026 — [P][not opened]
 - Micron FQ4 FY2026 prepared remarks — https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf — 30 Sep 2026 — [P][F, text extracted]
 - AMD Q3 2026 earnings call transcript (Motley Fool) — https://www.fool.com/earnings/call-transcripts/2026/11/04/amd-amd-q3-2026-earnings-call-transcript/ — call 3 Nov 2026, published 4 Nov 2026 — [P, third-party transcript][F]
-- OCP Mt. Diablo Disaggregated Power Rack Specification v1.0.0 — https://www.opencompute.org/wp-content/uploads/2026/10/OCP-Specification-Mt.-Diablo-Disaggregated-Power-Rack-Specification-v1.0.0.pdf — 8 Oct 2026 — [P][SR]
+- AMD Q2 2026 earnings call transcript (AMD-hosted PDF) — https://d1io3yog0oux5.cloudfront.net/_1dcf6819c1566fb2bab40c24e6158009/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf — early Aug 2026 (before 11 Aug 2026) — [P][F, text extracted]
+- OCP Mt. Diablo Disaggregated Power Rack Specification 1.0.0 (authors Microsoft, Meta, Google) — https://www.opencompute.org/wp-content/uploads/2026/10/OCP-Specification-Mt.-Diablo-Disaggregated-Power-Rack-Specification-v1.0.0.pdf — effective 8 Oct 2026 — [P][F, text extracted]
 - SK hynix Tech Note on hybrid bonding — https://news.skhynix.com/en/tech-note-series-ep2/ — date not captured — [P][SR]
 - NVIDIA developer blog on CPO — https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/ — date not captured — [P][SR]
 
@@ -719,6 +767,8 @@ Format: title — URL — publication or event date — type. [F] means read in 
 - TechTimes, Micron HBM roadmap to 2030 — https://www.techtimes.com/articles/329350/20261022/micron-maps-annual-hbm-advances-2030-rejects-chinese-density-workaround.htm — 22 Oct 2026 — [F]
 - SDxCentral, NVIDIA 15x optics capacity — https://www.sdxcentral.com/news/nvidia-targets-15x-optics-capacity-expansion-by-2027-to-meet-cpo-demand/ — 21 Oct 2026 — [F]
 - WinBuzzer, Kyber delay report — https://winbuzzer.com/2026/07/07/reported-nvidia-kyber-delay-pushes-ai-rack-toward-2028-xcxwbn/ — 7 Jul 2026 — [F]
+- Spheron, Kyber delayed to 2028 (78-layer midplane; NVIDIA statement to CNBC) — https://www.spheron.network/blog/nvidia-kyber-rack-delayed-to-2028-what-it-means-for-rubin-ul/ — 20 Oct 2026 — [F]
+- Tech Insider, AMD Advancing AI 2026 / Helios — https://tech-insider.org/amd-advancing-ai-2026/ — 23 Jul 2026, updated through Nov 2026 — [F]
 - Wccftech, NVIDIA says roadmap intact — https://wccftech.com/nvidia-quashes-rubin-kyber-rack-delay-rumors-says-chip-roadmap-is-intact/ — 7 Jul 2026 — [F]
 - igor'sLAB, Rubin Ultra four-die design — https://www.igorslab.de/en/nvidia-rubin-ultra-four-die-scrapped-reversal/ — 1 Jul 2026 — [F]
 - Tom's Hardware, quad-die Rubin Ultra cancelled — https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-reportedly-cancels-quad-die-rubin-ultra-gpu-in-favor-of-dual-gpu-design-report-claims-complex-design-purportedly-scrapped-over-manufacturing-execution-concerns — 30 Jun 2026 — [SR]

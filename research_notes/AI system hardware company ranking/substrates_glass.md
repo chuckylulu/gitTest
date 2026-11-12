@@ -1,143 +1,800 @@
-# Package substrates for AI processors (ABF, glass core, glass interposers, upstream materials) — research notes as of 12 Nov 2026
+# Package substrates for AI processors — organic ABF, glass cores, glass interposers and upstream materials (research date 12 Nov 2026)
 
-STATUS: IN PROGRESS — working log of findings; final structured sections below are being filled.
+**Conventions.** PRIMARY = company results deck, regulated filing or official release. SECONDARY = trade press, analysts, aggregators, blogs (reliability noted where weak). "Company claim, unconfirmed" = no outside party confirmed it. Japanese fiscal years: Ibiden, Ajinomoto and Nittobo "FY2026" = Apr 2026–Mar 2027; AT&S "2026/27" = Apr 2026–Mar 2027. No share prices, valuation multiples, market caps or price targets are used. Figures marked "(my arithmetic)" are derived by me from the cited numbers.
 
-## WORKING LOG (raw findings, to be folded into sections)
+**Method limitation.** The shared WebSearch budget for this run was exhausted after about 25 of my searches. I did not route around it through other search engines. The rest of the evidence came from pages already surfaced and from companies' own IR pages and decks (Ibiden, Ajinomoto, NVIDIA, SEMCO). The gaps in section 7 partly reflect this; a follow-up pass could close them.
 
-### Ibiden (4062 TSE) — primary: H1 FY2026 results presentation, dated 30 Oct 2026 (forecasts as of 29 Oct 2026) https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf
-- Ibiden FY2026 = Apr 2026–Mar 2027.
-- H1 FY2026 (Apr–Sep 2026): net sales JPY 262.5bn (+34% YoY); operating profit JPY 60.1bn (+85%), OPM 22.9%; net profit JPY 38.6bn (+75%). Electronics (IC package substrates + PCB) sales JPY 172.5bn (+52%), OP JPY 50.0bn (+97%) → segment OPM ~29%.
-- H2 FY2026 forecast: sales JPY 302.5bn; OP JPY 72.9bn (24.1%); Electronics sales JPY 212.5bn, OP JPY 64.0bn.
-- FY2026 forecast (29 Oct): sales JPY 565.0bn (+36%); OP JPY 133.0bn (+114%), OPM 23.5%; net profit JPY 89.0bn; Electronics sales JPY 385.0bn (+58%), OP JPY 114.0bn (+152%). Raised from 4 Aug forecast (sales 550, OP 127).
-- FY2025 actual (Apr 2025–Mar 2026): sales JPY 416.2bn; OP JPY 62.0bn (14.9%); Electronics sales 243.3, OP 45.2; net profit 63.7 (incl. JPY 34.5bn after-tax gains on sale of policy shareholdings).
-- Mid-term: FY2027 sales JPY 650bn, OP raised by JPY 15bn to JPY 165bn (Electronics 460 / 144). FY2030 target: sales > JPY 1 trillion, OP > JPY 300bn (OPM 30%); Electronics JPY 800bn sales / JPY 280bn OP. (company targets)
-- Capex: FY25 JPY 64.3bn (Electronics 58.1); FY26 plan JPY 210bn (Electronics 200); FY27 JPY 350bn; FY28 higher still (bar only). Depreciation FY25 66.2, FY26 81.0, FY27 90.0. Electronics EBITDA margin FY25 39.9%, FY26F 47.6%, FY27F 48.3%.
-- Projects: Gama plant Cell6 — previously announced JPY 220bn + newly added JPY 150bn; sequential operation from FY2029; for AI ASIC substrates. Ono plant Cell8 — JPY 280bn; sequential operation from FY2027; for AI GPU substrates. Cell7 and Cell9 decisions "within FY2026" after terms are finalised with customers. FY25 commemorative dividend "for the start of mass production at the Ono Plant" (confirms Ono mass production began in FY2025, i.e., Apr 2025–Mar 2026).
-- Company demand view (customer-information based): SAP substrate demand index CY26=100 → CY27 135, CY28 170, CY29 210, CY30 350. AI GPU/ASIC CY26→CY30: market units x1.8, production load x3.0, SAP demand x5.4; server CPU x1.3 / x1.9 / x2.5. "Total SAP demand is expected to significantly exceed the industry's supply capacity."
-- Technology roadmap (company): CY25 3.5 reticle die / 80x80 mm / 9-X-9 layers; CY26 5.0 / 90x90 / 10-X-10; CY28 7.5 / 110x110 / 12-X-12; CY30+ >9 / >130x130 / 14-X-14. Roadmap shows interposer, silicon bridge, power enhancement, optical-electrical conversion — NO glass-core item on the slide.
-- Stock split 1:2 on 1 Oct 2026; interim dividend JPY 10.
-
-### Unimicron (3037 TWSE) — Q3 2026 results published 27–28 Oct 2026 (secondary: China Times, cnyes, Yahoo TW)
-- Q3 2026 revenue NT$52.65bn (record); gross margin 28.85% (+4.05pp QoQ, +15.47pp YoY); operating profit NT$10.53bn; net profit NT$10.05bn; EPS NT$6.15 (one outlet says 6.36 — conflict). https://www.chinatimes.com/realtimenews/20261028001621-260410 ; https://news.cnyes.com/news/id/6638686
-- Q3 revenue mix: substrates ~68%, HDI 22%, PCB 8%, FPC 2%.
-- 9M 2026: revenue NT$132.99bn; GM 24.48% (+11.2pp); net profit NT$28.21bn.
-- AI products >60% of revenue in H1 2026, expected ~70% in H2; board approved ~NT$50.9bn advance orders for long-lead equipment.
-- Q2 2026 baseline: revenue ~NT$42.89bn, GM 24.8%, OP NT$6.65bn; ABF 52% of revenue (49% prior), ABF revenue +22% QoQ; ABF utilisation >90% (BigGo, 29 Jul 2026 call) https://finance.biggo.com/quote/3037.TW/earnings-call/TW_3037.TW_2026-07-29
-
-### Samsung Electro-Mechanics (009150 KRX) — Q3 2026 results/call 28 Oct 2026 (secondary transcript: Investing.com) https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482
-- Q3 2026: revenue KRW 3,763.3bn (+30% YoY, +9% QoQ); OP KRW 691bn (+165% YoY); NP KRW 468.7bn. Package Solution revenue KRW 939bn (+58% YoY, +22% QoQ). Component (MLCC) 1,883bn; Optical 941.3bn.
-- Liabilities/equity 63%; debt/equity 33%.
-- FC-BGA supply tight into Q4; in price talks; server-CPU embedding/multi-core substrates in mass production, Q4 supply to double; LTAs signed with a leading North American big-tech customer (unnamed).
-- September 2026 disclosure: KRW 6.8tn package-substrate investment across Sejong, Busan and Vietnam; mass production phased from 2027, meaningful revenue from 2028. Board approved KRW 2.5tn into Vietnam subsidiary (per other outlets).
-- Glass substrates: "investing, targeting full operation in 2028" (company claim, unconfirmed).
-
-### SKC (011790 KRX) / Absolics
-- SKC Q3 2026 (28 Oct 2026): revenue KRW 638.9bn (+26% YoY); operating loss KRW 49.6bn; net loss KRW 128.5bn; semiconductor materials segment revenue KRW 71.8bn, OP KRW 21.8bn; copper foil op. loss KRW 54.4bn; debt ratio 233% (end-2025) → 122% (Q3 2026). https://www.fnnews.com/news/202610281435277261 ; https://zdnet.co.kr/view/?no=20261028133954
-- SBS Biz 29 May 2026 (citing SKC filing): commercialisation target June 2024 → mass production 2025 → "certification complete 2026" → filing says "difficult to predict a specific mass-production schedule at present". Added a non-embedded glass substrate track ("Plan B") alongside embedded. Cumulative injection into Absolics KRW 417.4bn; KRW 1.1671tn rights offering, of which KRW 589.6bn planned for Absolics. CHIPS: US$75m award, US$40m received, US$35m tied to a second factory SKC has no plan to build. SKC has sold chemicals, film and front-end materials units; "no further business units left to sell". https://v.daum.net/v/20260529115214214
-
-### AT&S (ATS, Vienna) — H1 2026/27 results 5 Nov 2026 (secondary aggregator, needs primary check)
-- H1 revenue EUR 1,230.6m (+45.4%); EBITDA EUR 409.0m; operating cash flow EUR 100.4m (vs 209.4m) on working capital/safety stock; FY2026/27 guidance: FX-adjusted revenue +45–55%, EBITDA margin 32–37%, capex EUR 1.0–1.2bn. Kulim 2 core-production project in build mode through 2027/28, HVM 2028/29. https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565
-
-### AT&S — more detail
-- Ad-hoc (MAR Art.17) 13 Jun 2026: agreements on key terms with AMD and "another leading technology company" to expand high-end IC substrate capacity at existing Kulim plant and the previously unused building of Kulim plant 2; investment EUR 1.5–2.0bn "fully supported and financed by long-term customer commitments, which remain subject to final negotiation and execution"; FY2026/27 outlook raised: FX-adj revenue growth 45–55% (from 30–35%), EBITDA margin 32–37% (from 25–29%), capex EUR 1.0–1.2bn (from EUR 400m); "significantly positive operating free cash flow". https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV
-- H1 2026/27 (Apr–Sep 2026; released 5 Nov 2026; via ad-hoc-news.de 12 Nov 2026): Q2 revenue EUR 681.9m (vs 447.4m; FX-adj +52.4%); Q2 EBITDA EUR 244.0m (35.8% margin vs 23.3%); Q2 EBIT EUR 153.0m (vs 16.3m); Q2 net result EUR 125.4m (vs −7.6m). H1 revenue EUR 1,230.6m (+45.4%); H1 EBITDA EUR 409.0m (~33%); H1 operating cash flow EUR 100.4m (vs 209.4m) on working capital and safety inventories; H1 operating FCF −EUR 11.0m (~EUR 120m at prior-year factoring level). Guidance confirmed; assumes no significant deterioration in geopolitics or "tight supply of certain materials". EUR 350m 2022 hybrid redeemed 22 Oct 2026 after new 2026 hybrid convertible (coupon ~50% lower). Net debt not captured (gap). https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565
-
-### Upstream
-- Ajinomoto (2802 TSE) — PRIMARY: Q2 FY2026 results presentation (with script) and "FY2026 Revised Forecast by Segment", both 9 Nov 2026. https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/03/link/FY26Q2_Presentation_E_with%20Script.pdf ; https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/02/link/FY26Q2_Forecast_E.pdf
-  - Functional Materials (electronic materials and others; ABF is the core) H1 FY2026 (Apr–Sep 2026): sales JPY 73.3bn (vs 44.9bn, +63%); business profit JPY 42.9bn (vs 23.6bn, +81%) → ~58.5% business-profit margin.
-  - FY2026 forecast (9 Nov): sales JPY 133.0bn (Aug forecast 120.6; FY2025 actual 100.7; +32%); business profit JPY 76.5bn (Aug 65.5; FY2025 54.6; +40%) → ~57.5% margin. Implied H2 FY2026: sales 59.6bn, BP 33.5bn (below H1 — conservative or timing; unexplained in deck).
-  - Group FY2026 forecast: sales JPY 1,767.0bn; business profit JPY 210.0bn → Functional Materials ≈7.5% of group sales but ≈36% of segment business profit (before shared costs).
-  - Capacity: new ABF-varnish factory at Gunma Plant, ~JPY 21.5bn, completion FY2029, mass production FY2030; prior plan JPY 25bn for 2023–2030 of which ~JPY 10bn for a new factory that started in 2025; land acquired in Kani City, Gifu for demand "from 2030" (press release 7 May 2026). Company: "Throughout the supply chain, too, including coating companies, we have secured a supply capacity capable of fully meeting current demand" (company claim). Deck cites mix improvement; it does not quantify a price increase.
-- Ajinomoto price increase: up to 30% for ABF film effective Q3 2026 (Taiwan substrate makers notified) — secondary only (AtlasPCB, BigGo, X post); not confirmed in Ajinomoto's deck. https://www.atlaspcb.com/news/news-ajinomoto-abf-substrate-price-increase-2026/ . Secondary reports also say Ajinomoto cut ABF allocations to mainland China ~30% (FT Mercati, BigGo) — unconfirmed. https://www.ftmercati.com/en/ajinomoto-to-cut-abf-film-supply-to-china-by-30-amid-global-shortage-178875.html
-- TrendForce lead-time tracker (via BigGo, 16 Sep 2026): ABF substrates 48–56 weeks vs 12-week equilibrium (~4–4.7x), "severe shortage"; GPUs 20–30 weeks (no shortage); MLCC 30 weeks; DRAM 20 weeks; HDD 50 weeks. https://finance.biggo.com/news/02cf5c8f-c58d-45f8-a7a3-8fe37716bc8f
-- BofA (via thebuildout.ai, 26 Mar 2026): ABF shortage to persist through 2028; Ibiden 70–80% of GPU substrates; Ibiden to start EMIB-T substrate production by FY3/28; Unimicron said T-glass constraints last at least through 2026 (25 Mar 2026 call). https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c
-- Unimicron Q3 2026 (broker report via Wantrich 28 Oct 2026): revenue +22.8% QoQ, +54.9% YoY; GM 28.8% depressed by one-time employee-compensation adjustment; non-operating interest income NT$1.63bn; net profit −23.4% QoQ, +358% YoY; ABF utilisation >90% at Guangfu and Yangmei high-end ABF plants; broker expects 40–50% capacity expansion in each of 2026 and 2027; land bought Sept 2026. https://wantrich.chinatimes.com/news/20261028900159-420101
-- Nittobo (TrendForce 6 Aug 2026): FY3/2027 forecast revenue JPY 141bn, OP JPY 30bn, NP JPY 20bn (raised JPY 3bn); Apr–Jun 2026 revenue JPY 34.0bn (+21%), NP JPY 5.7bn (+84%); electronic materials FY target revenue JPY 77.8bn (+27%), OP JPY 28.0bn (+44%); T-glass price hikes "largely completed", no further hikes planned; capacity to 3x FY3/2026 level by FY3/2029; JPY 80bn committed (Japan+Taiwan); Taiwan capacity to double from 2025 by Mar 2028; NVIDIA, Microsoft, Google, Amazon booked most premium cloth capacity for the year (Nikkei via TrendForce). https://www.trendforce.com/news/2026/08/06/news-nittobo-raises-fy2027-net-profit-forecast-by-jpy-3b-no-further-t-glass-price-hikes-planned/
-
-### Market
-- TrendForce (via secondary): ABF substrate lead times 48–56 weeks; ABF among "severe shortage" components. Secondary estimates of shortfall vary (10% 2H26 → 21% 2027 → >40% 2028; Morgan Stanley 2030 high-end gap 15%→22%). Need primary confirmation.
-
-### NVIDIA capacity agreements — PRIMARY: NVIDIA release, GTC Berlin, 21 Oct 2026 https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx
-- "NVIDIA plans to increase substrate capacity for its products by 2.5x over the next three years"; agreements with IBIDEN, SEMCO, Unimicron "in aggregate" drive this, "with more underway".
-- IBIDEN: "multibillion-dollar capacity reservation advance" for Ono Plant; plant capacity to 3x current; additional capacity ramps from Q1 2028. (Bunshun reported ~JPY 280bn; neither company confirmed — via RCRTech 23 Oct 2026 https://rcrtech.com/semiconductor-news/nvidia-supply-chain-capacity-commitments/). RCRTech also reports Ibiden CEO saying a "substantial portion" of its JPY 500bn three-year capex is funded by customer prepayments (secondary).
-- SEMCO: "joining NVIDIA's substrate supply chain", immediate capacity from Korea; new/upgraded factories Sejong and Busan; by 2028 NVIDIA allocation "a significant portion" of SEMCO's total package substrate capacity. SEMCO release 21 Oct 2026: covers compute chipset and networking-switch substrates; supply starts 2026; double-digit annual volume growth over multi-year term; companies "will jointly invest" in dedicated ABF lines. https://m.samsungsem.com/global/newsroom/news/view.do?id=10614
-- Unimicron: capacity reservation agreement supporting "KF" substrate expansion in Taiwan; adds capacity from Q2 2027, full capacity mid-2028.
-- NVIDIA supply/capacity commitments US$279bn at 26 Jul 2026 vs US$119bn a quarter earlier (NVIDIA 10-Q via RCRTech); some agreements cancellable/reschedulable at cost.
-
-### Taiwan peers — Q3 2026 (secondary, CTEE/China Times)
-- Nan Ya PCB (8046): Q3 2026 GM 29.31%, net profit NT$3.298bn, EPS NT$5.10 (15-quarter high); 9M EPS NT$10.63; driven by high-end ABF and BT demand, utilisation, mix; "US customer" contribution. https://www.ctee.com.tw/news/20261106700224-430502
-- Kinsus (3189): Q3 2026 revenue NT$14.54bn, GM 33.9%, net profit NT$2.388bn, EPS NT$4.60; ABF 46.7% of revenue (44.7% Q2), BT 38.3%. (secondary; via search summary of storm.mg/wantrich) https://www.storm.mg/article/11165649
-
-### Korea peers
-- LG Innotek (011070): Q3 2026 revenue KRW 6.37tn (+18.6%), OP KRW 94.8bn (−53.4%), OPM 1.5%; Package Solution revenue KRW 481.8bn (+10.1%), helped by PC-processor FC-BGA; optics ~85% of revenue. Korea Herald (late Oct 2026) https://www.koreaherald.com/article/10916657 . First large-area FC-BGA for AI accelerators shown at KPCA Show Sep 2026, mass production targeted 2027 (Herald Business) https://biz.heraldcorp.com/article/10867093 . Glass-core pilot line at Gumi, commercialisation 2027–28 (older report; needs refresh).
-
-### China
-- Shennan Circuits (002916 SZSE): 9M 2026 revenue RMB 25.77bn (+53.84%), attributable NP RMB 4.13bn (+77.54%); Q3 revenue RMB 10.48bn, NP RMB 1.88bn; packaging-substrate H1 2026 revenue RMB 3.667bn (+110.76%), GM 31.35%; Oct 2026 investor Q&A: FC-BGA ≤26 layers in volume capability, ≥30 layers in R&D/sampling (broker note says ≤22 layers volume — conflict). https://finance.sina.com.cn/stock/aigc/agcbld/2026-10-23/doc-iniwcnvh5019323.shtml ; http://stock.10jqka.com.cn/20261101/c681325519.shtml
-- Shenzhen Fastprint (002436): Zhuhai FC-BGA base 2m units/month, Guangzhou planned 20m/month; ≤20-layer FC-BGA in volume; "only domestic ABF substrate mass producer" (company-favourable, Apr 2026 Eastmoney post) https://caifuhao.eastmoney.com/news/20260414014428571468720 . Q3 2026 data not found.
-
-### Glass — timelines and players
-- Absolics/SKC: see above. SEMCO: JV "GlaSSEM" — MOU Nov 2025; definitive agreement 2 Jul 2026 with Dongwoo Fine-Chem (wholly owned Sumitomo Chemical subsidiary); KRW 480bn; SEMCO 66.2% (63.82m shares for KRW 319.1bn, purchase 1 Sep 2026); site Dongwoo's Pyeongtaek plant; establishment by end-2026, full-scale operation 2H 2027. https://www.koreaherald.com/article/10796508 ; SEMCO MOU release https://samsungsem.com/global/newsroom/news/view.do?id=9850
-- Intel: Jan 2026 NEPCON Japan — 78x77 mm, 10-2-10 thick glass-core substrate with EMIB (TrendForce 26 Jan 2026) https://www.trendforce.com/news/2026/01/26/news-intel-reportedly-presents-first-thick-core-glass-substrate-with-emib-targeting-ai-data-centers/ ; 24 Jul 2026 Intel–Lens Technology (China) one-year TGV collaboration memorandum, no purchase commitment (XenoSpectrum 29 Jul 2026 citing Intel newsroom and SZSE bulletins) https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/ ; claims that Clearwater Forest ships on glass in HVM appear in low-quality sources only — not accepted.
-- BOE: RMB 390m (2022) wafer-level platform; RMB 993m (2024) panel-level glass-core pilot line; 2025 9-2-9 20-layer samples shipped; H1 2026 fully automated line; pilot design 1,000 panels/month; BOE states yield not at mass-production level and no mass-production revenue; May 2026 three-year MoU with Corning (XenoSpectrum; TrendForce 7 Aug 2026 https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/ ).
-- TrendForce (7 Aug 2026): "TGV glass substrates will likely enter mainstream advanced packaging after 2030", complement not replace. TrendForce (17 Jun 2026, via XenoSpectrum): commercial glass-core production not before 2030; CoPoS on 310x310 mm panels — 2026 equipment/material verification, 2027 trial production, late-2028 mass production.
-- TSMC CEO (1Q26 call, Apr 2026): CoPoS pilot line under construction, production several years away; (2Q26 call, Jul 2026): most supply still CoWoS; maturation of alternatives needs ~another year (XenoSpectrum summary of transcripts).
-- DIGITIMES 1 Oct 2026: Corning, AGC, NEG and Schott all centre next-gen core-substrate and TGV roadmaps on 510x515 mm panel format. https://www.digitimes.com/news/a20261001PD230/ai-chip-tsmc-corning-tgv-agc.html
-- Other China glass/TGV: Crystal-Optech (Corning Glass Bridge domestic supplier; samples 2H26), WG Tech/TGV Circuits (Wuhan line, 100,000 m²/yr planned), TCL CSOT and Tianma (early R&D), Hymson Laser and DR Laser (TGV equipment) (TrendForce 7 Aug 2026).
-- LPKF (LPK, Xetra): Q1 2026 revenue EUR 17.1m (−32.4%), orders EUR 24.1m, backlog EUR 34.1m; H1 2026 revenue EUR 36.5m (−38.3%), Q2 EBIT −EUR 7.2m; Q2 LIDE order from "a leading specialty glass manufacturer" for advanced-packaging qualification; company: "premature to conclude ... breakthrough in glass packaging"; 2026 revenue guidance EUR 105–120m excludes large semiconductor orders. https://www.lpkf.com/fileadmin/mediafiles/Half-yearly_Financial_Report_2026.pdf
-- India: 3D Glass Solutions (US, private) via Heterogenous Integration Packaging Solutions Pvt Ltd — ₹1,943 crore (~US$233m) embedded-glass-substrate/ATMP unit, Info Valley, Bhubaneswar, Odisha; approved under ISM 2025; groundbreaking 19 Apr 2026; production targeted 2030. https://www.business-standard.com/industry/news/india-s-1st-advanced-3d-glass-chip-packaging-unit-to-come-up-in-bhubaneswar-126041900360_1.html ; https://www.pib.gov.in/PressReleasePage.aspx?PRID=2253276&reg=3&lang=2 . Claimed Intel–Odisha–3DGS MoU (May 2026) from a single weak source — unverified.
-
-### Scope-boundary items (value capture)
-- CoWoP (chip-on-wafer-on-PCB): would remove the ABF substrate; JPMorgan framing negative for ABF makers; L/S needs <10/10 µm vs PCB mSAP 20–30 µm; no confirmed 2026 adoption; brokers think Rubin Ultra unlikely to adopt (2025-era coverage; no 2026 confirmation found). https://www.globalsmt.net/advanced-packaging/nvidias-cowop-pcb-architecture-targets-abf-substrates-but-faces-warpage-risk/
-
-### Shinko Electric (private)
-- JIC-led tender offer (JICC-04 SPC) concluded 18 Mar 2025; planned stakes JIC 80%, DNP 15%, Mitsui Chemicals 5%; delisting expected mid-June 2025 (DIGITIMES 21 Mar 2025; DNP release 19 Mar 2025). https://www.global.dnp/en/news/detail/2025/03/0319_20176512/ ; https://apps.digitimes.com/news/a20250321PD206.html?chid=12
-
-### Unimicron — more (vocus.cc analysis of Q3 2026 filing, late Oct 2026) https://vocus.cc/article/6ae2b2b0fd8978000150ef3d
-- Q3 2026 gross profit NT$15.19bn; OP NT$10.53bn (OPM 20.0% vs 15.5% Q2); net profit NT$10.05bn (Q2 NT$13.12bn incl. ~NT$8.93bn non-operating income); FY2025 OP only ~NT$6.67bn.
-- 2026 capex budget raised to ~NT$53.7bn, mostly ABF; long-lead equipment commitments raised by ~NT$50.9bn to cumulative ~NT$82.5bn.
-- ABF capacity: Guangfu (Kuang-Fu, "KF") Plant 1 Phase 3 adding capacity from Q3 2026; Guangfu Plant 2 Phase 1 ramps from Q2 2027 (matches NVIDIA-supported "KF" expansion); Yangmei Plant 2 for 2027–28 demand; Yangmei Plant 3 for later generations; land/buildings bought for post-2030 capacity.
-- Cash ~NT$160.4bn at end-Q3; 9M operating cash inflow ~NT$25.1bn (< 9M net profit ~NT$29.1bn); 9M net financing inflow ~NT$94.9bn (cash build largely financed). Debt not disclosed in source → net cash unknown.
-- Intends to sell 100% of Unimicron Japan to Meiko Electronics (intent stage).
-- Unimicron chairman, TPCA Show 20 Oct 2026: T-glass cloth, CCL and ABF are the main material bottlenecks; some critical materials could be ~20% short in 2027 (via MPBxChange).
-
-### Materials beyond ABF film (MPBxChange, 15 Oct 2026, updated 1 Nov 2026 — compiles TrendForce, Nikkei, Commercial Times, Reuters) https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil
-- TrendForce: Nittobo ~90% of T-glass supply and 60–70% of NER-glass (2026 est.); no new capacity before mid-2027 at earliest. Nittobo Fukushima new building ~JPY 15bn, production start Jan–Mar 2027 (Nikkan Kogyo, 2025).
-- Alternatives: Nan Ya Plastics plans to weave 20% of Nittobo's specialty fabric by 2027 (TrendForce 28 Nov 2025); Kingboard building eight kilns incl. low-CTE and quartz yarn (two in 2H 2026), specialty AI fabric 78m m/yr from 1H 2027; China Jushi new capacity mostly thick 7628 cloth (2027); Fulltech (Thailand) US$99.4m plant Q3 2027. Thin-cloth easing expected 2H 2027–2028 (supply-chain sources).
-- BT/laminates: MGC Thai subsidiary doubled BT materials capacity (completed Nov 2025); Resonac raised all laminate/prepreg prices ~30% from March 2026 (Resonac notice 16 Jan 2026); MGC and Resonac ~30% (TrendForce May 2026). Epoxy resin waits 3→15 weeks (Daeduck executive to Reuters).
-- Copper foil HVLP3/4 tight; Mitsui Kinzoku expanding to 2,600 t/month by FY2033; Counterpoint: substrate makers raising prices 3–5% per quarter in 1H 2026.
-
-### Glass — further status checks
-- IRZ (4 Sep 2026; cites Tom's Hardware 27 Aug 2026, The Elec 27 Jul 2026, TrendForce 24 Jul 2026, NIST): no commercial glass-core product shipped; Intel shifted toward licensing patents and demo vehicles, own deployment pointed ~2030 (Tom's Hardware); Absolics: US$600m plant, US$75m CHIPS manufacturing + US$100m R&D (Georgia Tech partnership), phase-1 12,000 m²/yr; mass-production samples Q1 2026; qualification "reportedly" incl. AMD and AWS (industry press, unconfirmed); schedule 2H2024 → 2025 → early-2026 sign-off → TrendForce (Jul 2026): 2027 with final validation by year-end; The Elec (27 Jul 2026): embedded glass samples sent to Taiwan for package-level reliability evaluation, results possibly by year-end. SEMCO moved glass to a dedicated business unit Feb 2026; a Korean outlet rated SEMCO glass maturity 40/100. TSMC CoPoS line in Chiayi, 310x310 mm, pilot 2027, mass production 2H 2028; glass "under review"; TrendForce puts TSMC commercial glass after 2030. DNP glass pilot line started Dec 2025; Toppan commissioning pilot line; BOE sampling. SEMI: initial glass-substrate production ~2028 then 67% CAGR. https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/
-- MIT Technology Review (13 Mar 2026): Absolics then planned commercial production in 2026 with small customer quantities that year; 12,000 m²/yr ≈ 2–3m H100-size packages (Georgia Tech's Yongwon Lee); CHIPS grants combined US$175m (2024); early runs cracked hundreds of panels every couple of days; JNTC (Korea) 10,000 semi-finished glass panels/month facility (2025), Vietnam line 2027; IDTechEx: semiconductor glass market US$1bn (2025) → up to US$4.4bn (2036). https://www.technologyreview.com/2026/03/13/1134230/future-ai-chips-could-be-built-on-glass/
-- vlsi.kr (20 Oct 2026, updated 1 Nov 2026; "company disclosures and dated public reporting", unverified): SEMCO Sejong pilot, volume 2H 2027, qualification work with Broadcom reported; Absolics volume 2027, prototype projects with US customers; LG Innotek developing with UTI, volume 2027–28; Ibiden/Shinko/Unimicron investing in glass with no dates; TSMC CoPoS pilot at VisEra, trial 2027, volume 2H 2028; "no glass-core volume target has been met yet". https://www.vlsi.kr/en/glass-core-substrate-race-en/
-- SKC Q3 2026 (fnnews 28 Oct 2026): glass — embedded product focused on reliability testing and yield improvement; non-embedded product under development (mobile communications), PoC discussions with customers; NO commercialisation date given. https://www.fnnews.com/news/202610281435277261
-- Ibiden Gama Building 6 (Cell6) newly added JPY 150bn ≈ KRW 1.28tn approved 29 Oct 2026; The Elec says for server CPU substrates, phased operation from FY2029; Ibiden slide labels Cell6 product "High-Performance IC Package Substrate for AI ASIC" — label conflict noted. https://www.thelec.net/news/articleView.html?idxno=15090
-
-### Ibiden — balance sheet/returns history (Integrated Report 2025, FY2024 = Apr 2024–Mar 2025) https://www.ibiden.com/ir/items/IntegratedReport2025_en.pdf
-- FY2024: sales JPY 369.4bn; OP JPY 47.6bn (12.9%); NP 33.7bn; total assets JPY 1,081.7bn; equity ratio 45.35%; ROE 6.84%; interest-bearing debt JPY 343.0bn; FCF −JPY 45.3bn; capex JPY 157.3bn; D&A JPY 54.2bn. FY2023: FCF +68.0bn, capex 146.6bn, ROE 6.89%. FY2022 ROE 13.32%.
-- Targets: equity ratio back to 60%; ROE ≥10%; consolidated EBITDA margin ≥30%, Electronics in the 40% range; keep single-A (R&I).
-- Geography FY2024: overseas ~71% of sales — Asia JPY 174.2bn (47.1%), North & Central America 47.5bn (12.8%), Europe 27.0bn (7.3%), other 12.4bn (3.4%); Japan implied ~29%. Electronics 53.4% of FY2024 sales. Substrate plants: Japan (Ogaki, Ogaki Central, Ono, Aoyanagi, Gama) plus Ibiden Philippines and Ibiden Electronics Malaysia. Customer concentration: not disclosed in the report (gap).
+---
 
 ## (1) Segment map
-(pending)
 
-## (2) Evidence on tests (a)-(e) for key companies
-(pending)
+### Takeaway
+AI-grade organic substrate supply is concentrated in Ibiden (Japan), Unimicron (Taiwan) and Samsung Electro-Mechanics (Korea), with AT&S (Austria; plants in China and Malaysia) as the Western-owned challenger. All of them depend on two Japanese chokepoints: Ajinomoto build-up film (ABF) and Nittobo low-expansion T-glass cloth. Glass-core and glass-interposer programmes are crowded across Korea, the US, Japan, China and India, but none ships glass-core substrates in volume as of Nov 2026. China has credible mid-layer FC-BGA makers (Shennan Circuits, Fastprint), but I found no confirmed qualification on a leading AI accelerator. I found no Israeli player. India's only relevant project is 3D Glass Solutions' Odisha glass-substrate unit, with production targeted for 2030.
 
-## (3) Path forward and suggested verdicts
-(pending)
+### A. Organic ABF / FC-BGA substrate makers
+| Company | Home | Listing / ticker | Role | Why it matters (or why left out) |
+|---|---|---|---|---|
+| Ibiden | Japan | TSE 4062 | Leading AI GPU/ASIC/CPU ABF substrate maker; Ono plant (GPU), Gama plant (ASIC/CPU) | **KEY.** NVIDIA funds a 3x expansion of Ono ([NVIDIA, 21 Oct 2026](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx)); BofA estimates 70–80% share of GPU substrates (secondary) ([thebuildout.ai, 26 Mar 2026](https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c)) |
+| Unimicron | Taiwan | TWSE 3037 | Largest Taiwanese ABF maker; substrates ~68% of Q3 2026 revenue | **KEY.** NVIDIA capacity-reservation agreement for its "KF" expansion ([NVIDIA](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx)) |
+| Samsung Electro-Mechanics (SEMCO) | Korea | KRX 009150 | FC-BGA for server CPUs, AI accelerators and network switches; new NVIDIA supplier; glass-core JV | **KEY.** Only large player on both the organic and the glass sides ([SEMCO, 21 Oct 2026](https://m.samsungsem.com/global/newsroom/news/view.do?id=10614)) |
+| AT&S | Austria | Vienna (ATS) | High-end IC substrates in Chongqing (China), Kulim (Malaysia) and Leoben (Austria) | **KEY.** Kulim expansion anchored by AMD and financed by customer commitments ([ad hoc, 13 Jun 2026](https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV)) |
+| Shinko Electric Industries | Japan | Private (JIC-led SPC JICC-04; tender closed 18 Mar 2025) | Major FC-BGA maker | Brief. Planned stakes: JIC 80%, DNP 15%, Mitsui Chemicals 5%. No current financials are public ([DNP, 19 Mar 2025](https://www.global.dnp/en/news/detail/2025/03/0319_20176512/); [DIGITIMES, 21 Mar 2025](https://apps.digitimes.com/news/a20250321PD206.html?chid=12)) |
+| Nan Ya PCB | Taiwan | TWSE 8046 | ABF/BT; Taiwan (Shulin, Jinxing) and Kunshan (China) | Brief. Conservative expansion of 5–10% a year; wins with US server-CPU and networking customers ([CTEE, 6 Nov 2026](https://www.ctee.com.tw/news/20261106700224-430502)) |
+| Kinsus | Taiwan | TWSE 3189 | ABF (46.7% of Q3 revenue) and BT (38.3%) | Brief ([storm.mg](https://www.storm.mg/article/11165649)) |
+| Zhen Ding Technology | Taiwan | TWSE 4958 | PCB major entering ABF | Brief. Named as one of Taiwan's "four ABF makers" ([Wantrich, 28 Oct 2026](https://wantrich.chinatimes.com/news/20261028900159-420101)); no ABF data retrieved (gap) |
+| LG Innotek | Korea | KRX 011070 | FC-BGA for PC processors; AI-accelerator FC-BGA targeted for 2027; glass pilot | Brief. Package solutions are only 7.6% of sales ([Korea Herald, 27 Oct 2026](https://www.koreaherald.com/article/10916657)) |
+| Daeduck Electronics | Korea | KRX 353200 | FC-BGA and memory substrates | Left out: no 2026 company data retrieved (search budget) |
+| Kyocera | Japan | TSE 6971 | Organic FC-BGA packages | Left out: no 2026 data retrieved (Japanese-language IR not reached) |
+| Toppan Holdings | Japan | TSE 7911 | FC-BGA; glass-core pilot line being commissioned | Brief ([IRZ, 4 Sep 2026](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
+| Dai Nippon Printing (DNP) | Japan | TSE 7912 | Glass-core pilot line started Dec 2025; 15% of the Shinko SPC | Brief ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
+| Shennan Circuits | China | SZSE 002916 | Leading Chinese FC-BGA maker (≤26 layers in volume, company claim) | Brief ([Sina, 23 Oct 2026](https://finance.sina.com.cn/stock/aigc/agcbld/2026-10-23/doc-iniwcnvh5019323.shtml)) |
+| Shenzhen Fastprint | China | SZSE 002436 | FC-BGA (≤20 layers in volume); Zhuhai and Guangzhou | Brief; Q3 2026 data is a gap ([Eastmoney, Apr 2026](https://caifuhao.eastmoney.com/news/20260414014428571468720)) |
+| Other mainland makers (e.g., Zhuhai ACCESS) | China | various / private | Embedded and FC substrates | Coverage thin: Chinese-language sources not searched before the budget ran out |
 
-## (4) Suggested quality ordering
-(pending)
+### B. Glass-core and glass-interposer developers and new entrants
+| Company | Home | Listing / ticker | Role | Why it matters |
+|---|---|---|---|---|
+| Absolics (SKC subsidiary; Applied Materials reported minority holder, not re-verified) | US plant (Covington, GA); Korean parent | Parent SKC: KRX 011790; Absolics private | First dedicated glass-core plant (phase 1: 12,000 m² a year) | **KEY (as SKC).** Closest to volume, with repeated slips ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
+| Intel | US | Nasdaq INTC | Started the glass-core programme (2023); EMIB-on-glass demo Jan 2026; TGV memorandum with Lens Jul 2026 | Brief. Reportedly moving toward licensing, with its own deployment around 2030 (Tom's Hardware via [IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
+| GlaSSEM JV (SEMCO 66.2% / Dongwoo Fine-Chem 33.8%, a unit of Sumitomo Chemical, TSE 4005) | Korea | Private JV | Glass-core supply for SEMCO | Covered under SEMCO ([Korea Herald, 2 Jul 2026](https://www.koreaherald.com/article/10796508)) |
+| BOE | China | SZSE 000725 | Display maker with an RMB 993m panel-level glass-core pilot line | Brief. Display makers are entering ([XenoSpectrum, 29 Jul 2026](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/)) |
+| TCL CSOT (TCL Technology SZSE 000100), Tianma (SZSE 000050) | China | listed | Early TGV R&D | Brief ([TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)) |
+| Samsung Display (part of Samsung Electronics, KRX 005930) | Korea | listed parent | Reported dedicated TGV-interposer R&D team | Brief ([TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)) |
+| Innolux | Taiwan | TWSE 3481 | Glass-based fan-out panel-level packaging with TGV (1H 2025 materials) | Brief ([XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/)) |
+| JNTC | Korea | KOSDAQ 204270 | Semi-finished glass panels (10,000 a month, 2025); Vietnam line planned for 2027 | Brief ([MIT Technology Review, 13 Mar 2026](https://www.technologyreview.com/2026/03/13/1134230/future-ai-chips-could-be-built-on-glass/)) |
+| Lens Technology | China | SZSE 300433 | TGV pilot lines; one-year Intel memorandum | Brief ([XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/)) |
+| Crystal-Optech | China | SZSE 002273 | TGV optical-interconnect substrates for CPO; domestic supplier for Corning's Glass Bridge | Brief ([TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)) |
+| WG Tech (via TGV Circuits) | China | SSE 603773 | Wuhan glass-based TGV multilayer line (100,000 m² a year planned) | Brief (same source) |
+| 3D Glass Solutions (3DGS) | US; Indian unit Heterogenous Integration Packaging Solutions Pvt Ltd | Private | Embedded glass-substrate ATMP in Odisha, ₹1,943 crore (~US$233m) | India's only relevant player; production 2030 ([Business Standard, 19 Apr 2026](https://www.business-standard.com/industry/news/india-s-1st-advanced-3d-glass-chip-packaging-unit-to-come-up-in-bhubaneswar-126041900360_1.html)) |
+| TSMC (CoPoS panel interposer) | Taiwan | TWSE 2330 | Panel-level interposer, 310×310 mm | Scope boundary: keeps interposer value in the foundry; glass "under review" ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
+
+### C. Glass makers
+| Company | Home | Listing / ticker | Role | Why it matters |
+|---|---|---|---|---|
+| Corning | US | NYSE GLW | Glass carriers (515×510 and 600×600 mm); Glass Bridge for CPO; 3-year MoU with BOE (May 2026) | Raw-glass oligopoly member ([XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/); [DIGITIMES, 1 Oct 2026](https://www.digitimes.com/news/a20261001PD230/ai-chip-tsmc-corning-tgv-agc.html)) |
+| AGC | Japan | TSE 5201 | Glass panels for packaging and interposers, 510×515 mm | Same oligopoly ([DIGITIMES](https://www.digitimes.com/news/a20261001PD230/ai-chip-tsmc-corning-tgv-agc.html)) |
+| Nippon Electric Glass | Japan | TSE 5214 | Core-substrate and TGV glass roadmap on 510×515 mm | Same; no 2026 customer or financial data retrieved |
+| Schott | Germany | Private (Carl Zeiss Foundation) | Specialty glass and TGV | Same |
+
+### D. Equipment for glass vias
+| Company | Home | Listing / ticker | Role | Why it matters |
+|---|---|---|---|---|
+| LPKF | Germany | Xetra LPK | LIDE laser-induced deep etching | Brief. No series order by H1 2026 ([LPKF H1 2026](https://www.lpkf.com/fileadmin/mediafiles/Half-yearly_Financial_Report_2026.pdf)) |
+| Philoptics | Korea | KOSDAQ 161580 | TGV equipment | Left out: no 2026 data retrieved |
+| Hymson Laser / DR Laser | China | SSE STAR 688559 / SZSE 300776 | Ultrafast-laser and wet-etch TGV tools; DR Laser panel-level TGV tools shipping in volume with export orders | Brief ([TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)) |
+
+### E. Upstream materials
+| Company | Home | Listing / ticker | Role | Why it matters |
+|---|---|---|---|---|
+| Ajinomoto | Japan | TSE 2802 | ABF build-up film (~95% share, secondary estimate) | **KEY** constraint holder ([AtlasPCB](https://www.atlaspcb.com/news/news-ajinomoto-abf-substrate-price-increase-2026/)) |
+| Nitto Boseki (Nittobo) | Japan | TSE 3110 | T-glass cloth (~90% share), NER-glass (60–70%) (TrendForce estimates) | **KEY** constraint holder ([MPBxChange, 15 Oct 2026](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)) |
+| Resonac | Japan | TSE 4004 | Substrate core laminates and prepreg | Brief. Raised all laminate and prepreg prices ~30% from Mar 2026 (same source) |
+| Mitsubishi Gas Chemical | Japan | TSE 4182 | BT resin and laminates | Brief. Thai BT-materials capacity doubled (Nov 2025) (same source) |
+| Nan Ya Plastics | Taiwan | TWSE 1303 | Specialty glass-fabric weaving | Possible second source: plans to weave 20% of Nittobo's specialty fabric volume by 2027 (same source) |
+| Kingboard Holdings / Kingboard Laminates | Hong Kong | HKEX 0148 / 1888 | Low-CTE and quartz yarn kilns; specialty AI fabric from 1H 2027 | Possible second source (same source) |
+| Mitsui Kinzoku | Japan | TSE 5706 | HVLP/VSP copper foil | Brief (same source) |
+| Taiwan Glass (TWSE 1802), Grace Fabric (TWSE 1815), Asahi Kasei (TSE 3407), Sekisui Chemical (TSE 4204), China Jushi (SSE 600176) | various | listed | Potential low-CTE cloth or build-up-film alternatives | Left out: no 2026 evidence on qualification retrieved (China Jushi expansion is mostly thick cloth) |
+
+### F. Scope boundary (only where it changes who captures substrate value)
+- **CoWoP (chip-on-wafer-on-PCB)** would remove the ABF substrate and shift value to high-end PCB makers. I found no 2026 confirmation of adoption ([GlobalSMT](https://www.globalsmt.net/advanced-packaging/nvidias-cowop-pcb-architecture-targets-abf-substrates-but-faces-warpage-risk/)).
+- **TSMC CoPoS** (panel interposer) still sits on an organic substrate, so it keeps interposer value in the foundry rather than removing the substrate maker.
+
+### Regional coverage notes
+- **Israel:** no relevant ABF or glass-substrate player surfaced in any search. A dedicated MAYA/TASE check was not possible after the search budget ran out.
+- **India:** 3DGS Odisha is the only relevant project found. I identified no Indian ABF maker.
+- **China:** good for Shennan Circuits; thin for Fastprint, Zhuhai ACCESS and Chinese ABF-film substitutes.
+- **Korea:** thin for Daeduck and Philoptics.
+- **Japan:** thin for Kyocera, Toppan, DNP and Shinko, because Japanese-language IR pages were not reached.
+
+---
+
+## (2) Evidence on tests (a)–(e)
+
+### 2.0 Segment-level evidence: supply-demand, qualification, pricing and upstream materials
+
+#### Takeaway
+High-end ABF substrates are in their tightest market since 2021:
+- Lead times are 48–56 weeks against a 12-week norm.
+- Makers are sold out and utilisation is above 90%.
+- NVIDIA is pre-funding suppliers.
+
+The shortage is most credible through 2027. 2028 is the swing year, because most new capacity (Ibiden Ono 3x, Unimicron KF, SEMCO Sejong/Busan/Vietnam, AT&S Kulim) lands in 2028–29. Materials sellers currently have the strongest pricing power: reported ABF film +30%, laminates +30%, T-glass booked out. The tightest single chokepoint for 2026–27 is T-glass cloth, not ABF film.
+
+#### Cited findings: supply and demand
+- **Lead times:** TrendForce tracker: ABF substrates 48–56 weeks vs a 12-week equilibrium (~4–4.7x), classed as "severe shortage"; GPUs 20–30 weeks, no shortage ([BigGo citing TrendForce, 16 Sep 2026](https://finance.biggo.com/news/02cf5c8f-c58d-45f8-a7a3-8fe37716bc8f)).
+- **NVIDIA's plan:** "NVIDIA plans to increase substrate capacity for its products by 2.5x over the next three years." Agreements:
+  - IBIDEN: a "multibillion-dollar capacity reservation advance"; Ono to reach 3x current capacity, ramping from Q1 2028.
+  - Samsung Electro-Mechanics: "joining NVIDIA's substrate supply chain", with new factories in Sejong and Busan.
+  - Unimicron: a capacity reservation agreement for its KF expansion; capacity from Q2 2027, full by mid-2028.
+  - NVIDIA says more agreements are "underway".
+  - Source: PRIMARY ([NVIDIA, 21 Oct 2026](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx)).
+- **NVIDIA purchase commitments:** total supply and capacity commitments were US$279bn at 26 Jul 2026, up from US$119bn a quarter earlier. Some agreements can be cancelled or rescheduled at a cost (NVIDIA 10-Q via [RCRTech, 23 Oct 2026](https://rcrtech.com/semiconductor-news/nvidia-supply-chain-capacity-commitments/)).
+- **Ibiden's demand view** (company claim, unconfirmed), from its results deck ([Ibiden, 30 Oct 2026](https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf)):
+  - SAP substrate demand index (CY26 = 100): CY27 135, CY28 170, CY29 210, CY30 350.
+  - AI GPU/ASIC from CY26 to CY30: unit market ×1.8, production load ×3.0, SAP demand ×5.4.
+  - Quote: "total SAP demand is expected to significantly exceed the industry's supply capacity."
+- **Shortage duration:** BofA expects the ABF shortage to last through 2028 (secondary) ([thebuildout.ai, 26 Mar 2026](https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c)). Unimicron's chairman (TPCA Show, 20 Oct 2026) named T-glass cloth, CCL and ABF as the main material bottlenecks and said some critical materials could be about 20% short in 2027 ([MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
+- **Size of the gap (low reliability):** one blog compilation puts the shortfall at ~10% in 2H 2026, ~21% in 2027 and >40% in 2028 ([gate.com](https://www.gate.com/blog/why-abf-substrates-have-become-a-bottleneck-in-the-ai-gpu-supply-chain-2028-shortage-analysis)). Methodology unknown.
+- **Utilisation:**
+  - Unimicron: ABF utilisation >90%; ABF was 52% of Q2 2026 revenue ([BigGo, Unimicron call 29 Jul 2026](https://finance.biggo.com/quote/3037.TW/earnings-call/TW_3037.TW_2026-07-29)).
+  - Nan Ya PCB: Shulin and Jinxing near full; Kunshan ramping toward full in Q4 2026 ([CTEE, 6 Nov 2026](https://www.ctee.com.tw/news/20261106700224-430502)).
+  - SEMCO: Q4 FC-BGA supply "tight" ([Investing.com transcript, 28 Oct 2026](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+
+#### Cited findings: capacity landing 2027–2029
+- **Ibiden** ([Ibiden deck, 30 Oct 2026](https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf)):
+  - Ono Cell8 (AI GPU): JPY 280bn, operations from FY2027 (Apr 2027–Mar 2028).
+  - Gama Cell6: JPY 220bn already announced plus JPY 150bn added, operations from FY2029.
+  - Cell7 and Cell9 decisions due within FY2026.
+- **Unimicron** ([vocus.cc](https://vocus.cc/article/6ae2b2b0fd8978000150ef3d)):
+  - Guangfu Plant 1 Phase 3 from Q3 2026.
+  - Guangfu Plant 2 Phase 1 from Q2 2027.
+  - Yangmei Plant 2 for 2027–28 demand.
+- **SEMCO:** KRW 6.8tn package-substrate investment (Sejong, Busan, Vietnam), production phased from 2027, meaningful revenue from 2028 ([Investing.com transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+- **AT&S:** Kulim 1 and 2 in capacity build through 2027/28, high-volume manufacturing in 2028/29; Chongqing high-volume manufacturing in 2027/28 ([Investing.com, 4 Aug 2026](https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617)).
+- **Nan Ya PCB:** ABF capacity +5–10% a year over the next two years ([CTEE](https://www.ctee.com.tw/news/20261106700224-430502)).
+
+#### Cited findings: qualification and shares
+- **NVIDIA:** Ibiden, Unimicron and SEMCO are named by NVIDIA itself (PRIMARY, customer-confirmed) ([NVIDIA](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx)).
+- **AMD:** named by AT&S in a regulated ad hoc announcement ([13 Jun 2026](https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV)). I did not find AMD's own confirmation.
+- **Unnamed US customers:**
+  - Nan Ya PCB: a major US chip company adopts its ABF for a next-generation server CPU from Q1 2027; a US networking customer is in mass production at Kunshan ([CTEE](https://www.ctee.com.tw/news/20261106700224-430502)).
+  - SEMCO: long-term agreements with a "leading North American big tech" customer ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+- **Glass:**
+  - SEMCO glass qualification work with Broadcom "reported" ([vlsi.kr, 20 Oct 2026](https://www.vlsi.kr/en/glass-core-substrate-race-en/)).
+  - Absolics qualification with AMD and AWS "reportedly", per industry press ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)). Both unconfirmed.
+- **Shares:**
+  - BofA: Ibiden 70–80% of GPU substrates (secondary).
+  - Low-reliability blogs: Unimicron ~22% of global ABF, >70% of ASIC substrates, ~30% of NVIDIA AI substrate volume ([Encyclopedia of Stocks](https://encyclopediaofstocks.substack.com/p/abf-substrate-market-ai-driven-super)).
+  - I found **no reliable public evidence** of supplier shares at Google, Amazon, Broadcom, Marvell or MediaTek.
+
+#### Cited findings: pricing
+- **Substrates:**
+  - Counterpoint expected substrate makers to raise prices 3–5% a quarter in 1H 2026 ([MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
+  - Unimicron's July call cited price increases behind Q3 margin gains ([BigGo](https://finance.biggo.com/quote/3037.TW/earnings-call/TW_3037.TW_2026-07-29)). Analysts expect further high-end ABF increases in Q4 2026–Q1 2027 ([vocus.cc](https://vocus.cc/article/6ae2b2b0fd8978000150ef3d)).
+  - SEMCO is "in price talks" ([transcript](https://investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+- **Inputs:**
+  - Ajinomoto ABF film: up to +30% from Q3 2026 (secondary; not quantified in Ajinomoto's deck) ([AtlasPCB](https://www.atlaspcb.com/news/news-ajinomoto-abf-substrate-price-increase-2026/)).
+  - Resonac: all laminates and prepreg about +30% from Mar 2026 (Resonac notice, 16 Jan 2026, via [MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
+  - Copper (LME): US$14,114/t average in Q3 2026, +44% YoY (World Bank, via MPBxChange).
+  - Nittobo: T-glass price rises "largely completed"; no further hikes planned ([TrendForce, 6 Aug 2026](https://www.trendforce.com/news/2026/08/06/news-nittobo-raises-fy2027-net-profit-forecast-by-jpy-3b-no-further-t-glass-price-hikes-planned/)).
+
+#### Cited findings: upstream constraints
+- **T-glass cloth:**
+  - Nittobo holds ~90% of T-glass and 60–70% of NER-glass. TrendForce sees no new capacity before mid-2027.
+  - Nittobo's Fukushima building (~JPY 15bn) starts production Jan–Mar 2027.
+  - Thin-cloth easing is expected 2H 2027–2028 ([MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
+  - Nittobo targets 3x FY3/2026 capacity by FY3/2029 and 2x its Taiwan capacity (vs 2025) by Mar 2028 ([TrendForce, 6 Aug 2026](https://www.trendforce.com/news/2026/08/06/news-nittobo-raises-fy2027-net-profit-forecast-by-jpy-3b-no-further-t-glass-price-hikes-planned/)).
+  - NVIDIA, Microsoft, Google and Amazon have booked most of Nittobo's premium cloth for 2026 (Nikkei, via TrendForce).
+- **ABF film:** Ajinomoto says that "throughout the supply chain, too, including coating companies, we have secured a supply capacity capable of fully meeting current demand" (company claim, unconfirmed). Its new varnish plant starts mass production in FY2030 ([Ajinomoto Q2 deck, 9 Nov 2026](https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/03/link/FY26Q2_Presentation_E_with%20Script.pdf)).
+- **Laminates and resin:** MGC doubled Thai BT-materials capacity (Nov 2025). A Daeduck executive said epoxy-resin waits rose from 3 to 15 weeks ([MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
+
+#### Inferences
+- **The shortage holds through 2027.** Lead times, sold-out utilisation and customer pre-funding are all independent signals.
+- **2028–29 is the risk window.** Most incremental capacity starts then: Ibiden Ono ramps Q1 2028, Unimicron KF is full by mid-2028, SEMCO's meaningful revenue starts 2028, AT&S Kulim reaches high-volume manufacturing in 2028/29, and Ibiden Gama follows in FY2029.
+  - In the steady scenario, NVIDIA's 2.5x plan and Ibiden's demand index (+70% CY26→CY28) roughly absorb it.
+  - In the 2028 financing-pause scenario, the industry would repeat 2022–23: capacity arriving into a demand air-pocket.
+- **The binding chokepoint for 2026–27 is upstream:** T-glass cloth (single supplier, booked by hyperscalers) and thin glass cloth. ABF film is less tight: Ajinomoto claims sufficient capacity but is extracting price.
+- **Margins are expanding even though substrate price rises (3–5% a quarter) trail input rises (≈30%).** Mix (more layers, larger bodies) and utilisation are doing most of the work.
+
+#### Gaps
+- Prismark and Yole share tables (paywalled, not retrieved).
+- Google, Amazon, Broadcom, Marvell and MediaTek substrate suppliers.
+- A Morgan Stanley 2030 gap revision (15%→22%) appeared only in search summaries; the original was not traced.
+- Inventory levels at makers.
+
+### 2.1 Ibiden (TSE 4062) — key company
+
+#### (a) Position
+- **Constraint held:** a physical constraint — scarce SAP capacity and process know-how for the largest, highest-layer substrates. Its roadmap runs from CY26 (90×90 mm, 10-X-10) to CY28 (110×110 mm, 12-X-12) and CY30+ (>130×130 mm, 14-X-14) ([Ibiden deck](https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf)). It owns no "judge".
+- **Main product:** ABF FC-BGA for AI GPUs, ASICs and CPUs = **BRIDGE**. Named successors are glass core and panel/CoWoP.
+- **Successor due date:**
+  - Glass core: mainstream "after 2030" per TrendForce ([7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)).
+  - Intel's own glass deployment: around 2030 ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+- **Slips:** recorded for the successors. Absolics went from 2024 to 2027+. Intel went from "second half of this decade" to around 2030.
+- **No glass item on Ibiden's own CY25–CY30+ roadmap slide.** The slide shows interposer, silicon bridge, "power enhancement" and optical-electrical conversion. One source says Ibiden is "investing in glass" with no dates ([vlsi.kr](https://www.vlsi.kr/en/glass-core-substrate-race-en/), unverified).
+- **EMIB-T:** BofA says Ibiden will start EMIB-T substrate production by FY3/28 (secondary) ([thebuildout.ai](https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c)).
+
+#### (b) Lead
+- NVIDIA's public, customer-side confirmation of a multibillion-dollar capacity reservation advance (PRIMARY) ([NVIDIA](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx)).
+- BofA: 70–80% GPU-substrate share (secondary).
+- Electronics operating margin of ~29% in H1 FY2026 (my arithmetic: 50.0/172.5) vs Unimicron's company-level 20.0% in Q3 2026. That is consistent with a yield or pricing lead (inference).
+
+#### (c) Revenue model
+- Hardware components sold per unit. Volume scales with accelerator units × substrate area × layer count.
+- Customer-funded capacity:
+  - NVIDIA advance: amount undisclosed. Bunshun reported ~JPY 280bn; neither company confirmed.
+  - Ibiden's CEO reportedly said a "substantial portion" of a JPY 500bn three-year capex plan is funded by customer prepayments (secondary) ([RCRTech](https://rcrtech.com/semiconductor-news/nvidia-supply-chain-capacity-commitments/)).
+- No service or labour-hour revenue.
+
+#### (d) Financial strength
+Source for results and forecasts: PRIMARY deck dated 30 Oct 2026 ([Ibiden](https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf)).
+
+| Item | Figure |
+|---|---|
+| H1 FY2026 (Apr–Sep 2026) sales | JPY 262.5bn (+34% YoY) |
+| H1 FY2026 operating profit | JPY 60.1bn (+85%), margin 22.9% |
+| H1 FY2026 net profit | JPY 38.6bn (+75%) |
+| H1 Electronics | Sales JPY 172.5bn (+52%); OP JPY 50.0bn (+97%) |
+| H2 FY2026 forecast (my arithmetic, approximates Q3+Q4) | Sales JPY 302.5bn; OP JPY 72.9bn (24.1%) |
+| FY2026 forecast (raised 29 Oct) | Sales JPY 565.0bn (+36%); OP JPY 133.0bn (+114%, 23.5%); NP JPY 89.0bn |
+| FY2026 forecast, Electronics | Sales JPY 385.0bn (+58%); OP JPY 114.0bn (+152%) |
+| FY2025 actual (Apr 2025–Mar 2026) | Sales JPY 416.2bn; OP JPY 62.0bn (14.9%); NP JPY 63.7bn, incl. JPY 34.5bn after-tax gains on policy-share sales |
+| Mid-term targets (company claim) | FY2027 sales JPY 650bn, OP JPY 165bn (raised by JPY 15bn); FY2030 sales >JPY 1tn, OP >JPY 300bn (30% margin) |
+| Capex | FY25 JPY 64.3bn → FY26 JPY 210bn → FY27 JPY 350bn → FY28 higher still |
+| Depreciation | FY25 66.2 → FY26 81.0 → FY27 90.0 (JPY bn) |
+| Electronics EBITDA margin | FY25 39.9% → FY26F 47.6% → FY27F 48.3% |
+
+Points to note:
+- **Capex vs cash generation** (my arithmetic):
+  - FY2026: capex JPY 210bn ≈ forecast EBITDA (133 + 81 = 214), so free cash flow is roughly zero before prepayments.
+  - FY2027: capex JPY 350bn vs EBITDA ≈ 255, so free cash flow is negative unless customers prepay.
+- **Balance sheet and returns** ([Integrated Report 2025](https://www.ibiden.com/ir/items/IntegratedReport2025_en.pdf)), latest full table at FY2024 (Mar 2025):
+  - Interest-bearing debt JPY 343.0bn; equity ratio 45.35%; R&I single-A.
+  - ROE 6.84% in FY2024, against 13.32% in FY2022 and a target of ≥10%.
+  - FCF −JPY 45.3bn in FY2024 (+68.0bn in FY2023).
+  - Latest net debt (Sep 2026) not retrieved.
+- **Customer concentration:** not disclosed. NVIDIA dependence is implied by the GPU share and the NVIDIA-funded plant (inference).
+- **Country exposure:** 71% of FY2024 sales were overseas — Asia 47.1%, North and Central America 12.8%, Europe 7.3%. Substrate output comes from Japan (Ogaki, Ono, Gama, Aoyanagi) plus the Philippines and Malaysia (Integrated Report 2025).
+
+#### (e) Resilience
+- **Steady growth (55%):** forecasts imply about 4x operating profit between FY2025 and FY2027.
+- **Financing-led pause around 2028 (25%):** this is the main risk. Ono Cell8 ramps from Q1 2028 and Gama Cell6 from FY2029, so new depreciation lands in a downturn.
+  - Ibiden has done this before: a 2007 facility and a 2021 Intel-oriented facility ran near-idle (RCRTech, secondary).
+  - FY2024 ROE of 6.8% shows how quickly returns compress.
+  - The NVIDIA advance and prepayments are the mitigant.
+- **Acceleration (20%):** Ibiden is capacity-bound. Cell7 and Cell9 are options awaiting customer terms.
+- **Cycle position:** peak tightness — sold out, 48–56-week lead times, capex tripling.
+- **Cross-border:**
+  - Production is mostly in Japan, with no China fab listed, so low exposure to China export controls.
+  - Demand is exposed to US limits on NVIDIA's China sales.
+  - Tariff impact was not quantified in sources (gap).
+
+### 2.2 Unimicron (TWSE 3037) — key company
+
+#### (a) Position
+- **Constraint held:** a physical constraint (SAP capacity and know-how).
+- **Main product:** ABF = **BRIDGE**. Glass: "investing, no dates" ([vlsi.kr](https://www.vlsi.kr/en/glass-core-substrate-race-en/), unverified).
+
+#### (b) Lead
+- NVIDIA capacity reservation (PRIMARY).
+- ABF utilisation >90%.
+- BofA notes "a high mix of long-term agreements" (secondary) ([thebuildout.ai](https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c)).
+- Share estimates are low-reliability.
+
+#### (c) Revenue model
+- Per-unit hardware: substrates ~68% of Q3 revenue, HDI 22%, PCB 8%, FPC 2%.
+- AI products >60% of 1H 2026 revenue, heading to ~70% in 2H (press) ([China Times, 28 Oct 2026](https://www.chinatimes.com/realtimenews/20261028001621-260410)).
+- Capacity reservation with NVIDIA.
+
+#### (d) Financial strength
+Q3 2026 results were published 27–28 Oct 2026 ([vocus.cc](https://vocus.cc/article/6ae2b2b0fd8978000150ef3d); [cnyes](https://news.cnyes.com/news/id/6638686)).
+
+| Item | Figure |
+|---|---|
+| Q3 2026 revenue | NT$52.65bn (record; +22.8% QoQ, +54.9% YoY) |
+| Q3 gross margin | 28.8% (Q2 24.8%; Q3 2025 ~13.4%), held back by a one-off employee-compensation adjustment |
+| Q3 operating profit | NT$10.53bn (20.0% margin) |
+| Q3 net profit | NT$10.05bn; EPS NT$6.15, 6.32 or 6.36 depending on source (conflict) |
+| 9M 2026 | Revenue NT$132.99bn; GM 24.48%; net profit NT$28.21bn |
+| FY2025 operating profit | Only ~NT$6.67bn — a deep 2024–25 trough |
+| 2026 capex | Raised to ~NT$53.7bn |
+| Long-lead equipment commitments | Cumulative ~NT$82.5bn |
+| Cash (end Q3 2026) | ~NT$160.4bn |
+| 9M operating cash flow | ~NT$25.1bn, below net profit |
+| 9M net financing inflow | ~NT$94.9bn — the expansion is partly financed |
+
+- Debt not captured, so net cash is unknown.
+- Customer concentration not disclosed.
+- Footprint: Taiwan ABF plants (Guangfu, Yangmei); selling Unimicron Japan to Meiko (intent stage).
+
+#### (e) Resilience
+- **Operating leverage is very high:** gross margin moved about +15 points in a year. The reverse in a pause would be severe; FY2025 operating profit was only ~NT$6.7bn.
+- **Pause scenario:** a large committed equipment pipeline that is partly debt- or equity-funded. The NVIDIA reservation covers only the KF expansion.
+- **Cross-border:** Taiwan concentration (geopolitical); tariffs not quantified (gap).
+
+### 2.3 Samsung Electro-Mechanics (KRX 009150) — key company
+
+#### (a) Position
+- **Constraint held:** a physical constraint (capacity) plus embedded-passive integration. Company claim, unconfirmed: it is "the only supplier able to offer passive components and FC-BGA substrates with those components embedded" ([search summary of call coverage](https://finance.yahoo.com/markets/stocks/articles/samsung-electro-mechanics-co-ltd-170335707.html)).
+- **ABF FC-BGA = BRIDGE.** Embedded and multi-core server-CPU substrates are already in mass production, with Q4 2026 supply doubling.
+- **Glass core = SUCCESSOR.**
+  - GlaSSEM JV full-scale operation 2H 2027 ([Korea Herald, 2 Jul 2026](https://www.koreaherald.com/article/10796508)).
+  - Company target "full operation in 2028" (company claim) ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+- **Silicon capacitors:** mass production 2027, backed by a KRW 1.5tn supply contract disclosed in May 2026.
+
+#### (b) Lead
+- **NVIDIA:** onboarding confirmed by NVIDIA (PRIMARY).
+- **NVIDIA agreement:** a multi-year supply agreement covering compute-chipset and network-switch substrates, with deliveries from 2026 and double-digit annual volume growth. By 2028 NVIDIA will be "a significant portion" of SEMCO's package-substrate capacity ([SEMCO release, 21 Oct 2026](https://m.samsungsem.com/global/newsroom/news/view.do?id=10614)).
+- **Glass:** glass moved into a dedicated business unit in Feb 2026. A Korean outlet rated SEMCO's glass maturity 40/100 ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)). Broadcom glass work is "reported" only.
+
+#### (c) Revenue model
+- Per-unit hardware.
+- Long-term agreements: with a North American big-tech customer for FC-BGA, and in MLCCs (>50–60% of 2027 MLCC revenue). Co-investment with NVIDIA for dedicated ABF lines (amount undisclosed) ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+
+#### (d) Financial strength
+Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482); [Herald Business](https://biz.heraldcorp.com/article/10917700)).
+
+| Item | Figure |
+|---|---|
+| Q3 2026 revenue | KRW 3,763.3bn (+30% YoY) |
+| Q3 operating profit | KRW 691bn (18.4% margin, my arithmetic) |
+| Q3 net profit | KRW 468.7bn |
+| Package Solution revenue | KRW 938–939bn (+58% YoY from 593.2bn; ~25% of group); division profit not disclosed |
+| MLCC (components) revenue | KRW 1,883bn (+36%) |
+| Liabilities/equity | 63% |
+| Debt/equity | 33% |
+| 2026 capex | Above plan |
+| Package-substrate investment | KRW 6.8tn (Sept 2026 disclosure) |
+| Vietnam subsidiary investment | KRW 2.5tn approved (reported in call coverage; not opened directly) |
+
+- Customer concentration is not disclosed and will rise toward NVIDIA by 2028 (PRIMARY).
+- Footprint: Korea (Sejong, Busan) and Vietnam for substrates; Philippines for MLCC.
+
+#### (e) Resilience
+- **Diversification is the strongest buffer among the key substrate makers:** MLCC is about 50% of revenue (with >40% share of AI-server MLCC), optics about 25%.
+- **Pause scenario:** the KRW 6.8tn programme lands 2027–28. Group cash flow carries it more easily than single-product peers.
+- **Cross-border:** Vietnam and Korea production; US tariff and export-control exposure not quantified (gap).
+
+### 2.4 AT&S (Vienna: ATS) — key company
+
+#### (a) Position
+- **Constraint held:** a physical constraint — capacity outside Taiwan and Japan (Kulim, Malaysia; Leoben, Austria), plus embedded-core technology ("EMB Core", MTH, MLC).
+- **Main product:** ABF IC substrates = **BRIDGE**.
+- **No glass-core programme** appears in the Q1 2026/27 material. The roadmap covers co-packaged optics and power PCBs ([Investing.com, 4 Aug 2026](https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617)).
+
+#### (b) Lead
+- Regulated ad hoc of 13 Jun 2026: agreements on key terms with "AMD and another leading technology company" ([finanzwire](https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV)).
+- Microelectronics EBITDA margin 42.3% in Q1 2026/27.
+- "All major customers now generate revenue in the three-digit million euro range" ([Investing.com](https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617)).
+
+#### (c) Revenue model
+- Per-unit hardware.
+- The Kulim expansion (EUR 1.5–2.0bn) is "fully supported and financed by long-term customer commitments, which remain subject to final negotiation and execution" (company claim).
+- Uses receivables factoring.
+
+#### (d) Financial strength
+
+| Period | Revenue | EBITDA | Other |
+|---|---|---|---|
+| Q1 2026/27 (Apr–Jun 2026) | EUR 549m (+40% cc) | EUR 165m (30.1%) | Microelectronics EUR 344m (+93% cc) |
+| Q2 2026/27 (Jul–Sep 2026) | EUR 681.9m (+52.4% cc) | EUR 244.0m (35.8%) | EBIT EUR 153.0m; net result EUR 125.4m |
+| H1 2026/27 | EUR 1,230.6m (+45.4%) | EUR 409.0m (33.2%, my arithmetic) | See cash flow below |
+
+- **Cash flow (H1):** operating cash flow EUR 100.4m (vs 209.4m) as working capital and safety inventories rose. Operating FCF was −EUR 11.0m; about EUR 120m at the prior-year factoring level ([ad-hoc-news, 12 Nov 2026](https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565)).
+- **Balance sheet (30 Jun 2026):** net debt EUR 954m (1.9x EBITDA); equity ratio 29.0% (23.9% excluding the hybrid); cash EUR 1,184m.
+- **Refinancing:** the EUR 350m 2022 hybrid was redeemed 22 Oct 2026 and replaced with a hybrid convertible at about half the coupon.
+- **FY2026/27 guidance** (raised 13 Jun, confirmed 5 Nov): cc revenue +45–55%, EBITDA margin 32–37%, capex EUR 1.0–1.2bn.
+- **Customer concentration:** a few large customers (AMD named); percentages not retrieved.
+- **Footprint:** Chongqing (China), Kulim (Malaysia), Leoben (Austria).
+
+#### (e) Resilience
+- The thinnest balance sheet of the key substrate makers.
+- Kulim reaches high-volume manufacturing in 2028/29, exactly when the pause scenario would hit. Customer commitments are not yet fully executed.
+- Guidance assumes "no significant deterioration in geopolitical conditions or in the tight supply of certain materials".
+- China (Chongqing) production for US customers carries export-control and tariff exposure. Kulim diversifies this.
+
+### 2.5 SKC / Absolics (SKC: KRX 011790) — key company (successor-side)
+
+#### (a) Position
+- **Main product:** glass-core substrate = **SUCCESSOR**. Not a judge, and not yet a constraint because it is not qualified.
+- **Dates, history:** commercialisation June 2024 → mass production 2025 → "certification complete 2026" → filing says it is "difficult to predict a specific mass-production schedule at present" (SBS Biz citing SKC filing, [29 May 2026](https://v.daum.net/v/20260529115214214)).
+- **Latest analyst view:** TrendForce (Jul 2026) puts volume in 2027, with final validation by year-end ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+- **Q3 2026 commentary:** embedded product in "reliability testing and yield improvement"; a non-embedded "Plan B" product (added May 2026) under development, with customer proof-of-concept talks. **No date given** ([fnnews, 28 Oct 2026](https://www.fnnews.com/news/202610281435277261)).
+
+#### (b) Lead
+- First dedicated glass-core plant: US$600m; phase 1 of 12,000 m² a year, about 2–3m H100-size packages (Georgia Tech estimate) ([MIT Technology Review](https://www.technologyreview.com/2026/03/13/1134230/future-ai-chips-could-be-built-on-glass/)).
+- Mass-production samples came off the line in Q1 2026. Embedded samples were sent to Taiwan for package-level reliability evaluation (The Elec, 27 Jul 2026, via [IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+- No named customer supply agreement ([Slicast, 9 Sep 2026](https://slicast.com/commentary/intel-2026-09-09) — low-reliability site; consistent with IRZ).
+
+#### (c) Revenue model
+- No material revenue yet; future per-unit sales.
+
+#### (d) Financial strength
+- **SKC Q3 2026:** revenue KRW 638.9bn (+26%); operating loss KRW 49.6bn; net loss KRW 128.5bn ([ZDNet Korea](https://zdnet.co.kr/view/?no=20261028133954); [fnnews](https://www.fnnews.com/news/202610281435277261)).
+- **Segments:**
+  - Semiconductor materials: revenue KRW 71.8bn, OP KRW 21.8bn.
+  - Copper foil: operating loss KRW 54.4bn.
+  - Chemicals: OP KRW 13.4bn.
+- **Leverage:** debt ratio cut from 233% (end-2025) to 122% after a KRW 1.1671tn rights offering in 1H 2026.
+- **Funding for Absolics:**
+  - KRW 589.6bn of the rights offering is planned for Absolics.
+  - Cumulative injections into Absolics were KRW 417.4bn by May 2026.
+- **Subsidies and divestments:**
+  - CHIPS: US$75m manufacturing award, of which US$40m received. The remaining US$35m is tied to a second factory SKC does not plan. A separate US$100m R&D grant went to the Georgia Tech partnership ([SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+  - SKC has sold its chemicals, film and front-end materials units and says there are "no further business units left to sell".
+
+#### (e) Resilience
+- **A 1–2 year slip:** fundable from the earmarked KRW 589.6bn (inference).
+- **A longer slip:** would need new equity, because the parent is loss-making and has no assets left to sell.
+- **Pause scenario:** most damaging. Customers defer new substrate architectures.
+- **Acceleration scenario:** helps only if >110 mm packages force glass early.
+- **Cross-border:** a US plant is positive for US customers. CHIPS conditions have already cost US$35m.
+
+### 2.6 Ajinomoto (TSE 2802) — key upstream constraint holder (ABF film)
+
+#### (a) Position
+- **Constraint held:** a material constraint and de facto standard. Share is ~95% by secondary estimate ([AtlasPCB](https://www.atlaspcb.com/news/news-ajinomoto-abf-substrate-price-increase-2026/)).
+- **Product classification: spans BRIDGE and SUCCESSOR.** Build-up film is still used on glass cores. BOE's glass line integrates "ABF build-up" (search summary of [TechTimes, 23 Sep 2026](https://www.techtimes.com/articles/327959/20260923/boe-completes-glass-core-substrate-qualification-ships-customers-chip-level-testing.htm); not opened).
+- **No announced successor** to ABF itself.
+- **Threats:** CoWoP, which removes the substrate, and alternative dielectrics.
+
+#### (b) Lead
+- Share estimates (secondary).
+- Ajinomoto calls ABF the "de facto standard" (company claim).
+- A ~58% business-profit margin (PRIMARY) is itself evidence of a lead.
+
+#### (c) Revenue model
+- Recurring consumable material. Usage scales with the number of CPUs, GPUs and ASICs × substrate size × layer count (company slide).
+- No prepayment data found.
+
+#### (d) Financial strength
+Source: PRIMARY deck and segment forecast, 9 Nov 2026 ([deck](https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/03/link/FY26Q2_Presentation_E_with%20Script.pdf); [segment forecast](https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/02/link/FY26Q2_Forecast_E.pdf)).
+
+| Item | Figure |
+|---|---|
+| Functional Materials (electronic materials and others), H1 FY2026 | Sales JPY 73.3bn (+63%); business profit JPY 42.9bn (+81%), ~58.5% margin |
+| FY2026 forecast (Nov) | Sales JPY 133.0bn (+32%; Aug forecast 120.6); BP JPY 76.5bn (+40%; Aug 65.5) |
+| FY2025 actual | Sales JPY 100.7bn; BP JPY 54.6bn |
+| Implied H2 FY2026 | Sales JPY 59.6bn; BP JPY 33.5bn — below H1, unexplained (possible pull-forward ahead of the reported price change, or conservatism) |
+| Share of group | ~7.5% of group sales (JPY 1,767bn) but ~36% of segment business profit before shared costs (my arithmetic) |
+| Capex | New ABF-varnish factory at Gunma, ~JPY 21.5bn: completion FY2029, mass production FY2030 |
+| Earlier investment | ~JPY 10bn factory that started in 2025 |
+| Land | Kani City, Gifu, acquired for demand "from 2030" (7 May 2026) |
+
+- Customer concentration not disclosed.
+
+#### (e) Resilience
+- **Pause scenario:** low capital intensity and high margins buffer a downturn.
+- **Acceleration scenario:** the next large capacity step arrives only in FY2030, so film supply could become binding.
+- **Cross-border:** reports say China allocations were cut about 30% (unconfirmed) ([FT Mercati](https://www.ftmercati.com/en/ajinomoto-to-cut-abf-film-supply-to-china-by-30-amid-global-shortage-178875.html)). That raises the incentive for Chinese substitutes.
+- **Other:** the Middle East situation may cost the group about JPY 25bn in FY2026 (company).
+
+### 2.7 Nittobo (TSE 3110) — key upstream constraint holder (T-glass cloth)
+
+#### (a) Position
+- **Constraint held:** a material constraint. TrendForce estimates ~90% of T-glass and 60–70% of NER-glass ([MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
+- **Product classification: BRIDGE.** Glass-cloth-reinforced cores would be displaced by glass cores, but those are a 2030+ event on independent estimates.
+- T-glass also serves BT memory substrates and high-end PCBs.
+
+#### (b) Lead
+- Third-party share estimates (TrendForce).
+- Hyperscaler and NVIDIA bookings (Nikkei, via [TrendForce, 6 Aug 2026](https://www.trendforce.com/news/2026/08/06/news-nittobo-raises-fy2027-net-profit-forecast-by-jpy-3b-no-further-t-glass-price-hikes-planned/)).
+
+#### (c) Revenue model
+- Consumable material. Customers pre-book capacity; no prepayment data.
+
+#### (d) Financial strength
+Source: TrendForce, 6 Aug 2026, reporting the 5 Aug forecast revision.
+
+| Item | Figure |
+|---|---|
+| FY3/2027 forecast | Revenue JPY 141bn; OP JPY 30bn (~21%); NP JPY 20bn (−52% YoY; cause not captured) |
+| Q1 (Apr–Jun 2026) | Revenue JPY 34.0bn (+21%); NP JPY 5.7bn (+84%) |
+| Electronic materials target | Revenue JPY 77.8bn (+27%); OP JPY 28.0bn (+44%; ~36% margin) |
+| Capacity commitment | JPY 80bn for semiconductor materials in Japan and Taiwan |
+
+- H1 results (Nov 2026), balance sheet and customer concentration not retrieved (gap).
+
+#### (e) Resilience
+- Nittobo is showing price restraint: no further hikes.
+- **Pause scenario:** capacity triples by FY3/2029 just as second sources ramp (Nan Ya Plastics 2027, Kingboard 2027), so 2029 oversupply risk.
+- **Longer-term risk:** glass-core substitution.
+- **Cross-border:** Japan and Taiwan production; energy costs (Middle East).
+
+### 2.8 Other makers — brief evidence
+
+**LG Innotek** — Q3 2026 ([Korea Herald, 27 Oct 2026](https://www.koreaherald.com/article/10916657)):
+- Revenue KRW 6.37tn (+18.6%); OP KRW 94.8bn (−53.4%; 1.5% margin, hit by FX).
+- Package Solution KRW 481.8bn (+10.1%; 7.6% of sales). Optics is ~85% of revenue (Apple-dependent).
+- Its first large-area FC-BGA for AI accelerators was shown at the KPCA Show in Sep 2026, with mass production targeted for 2027 ([Herald Business](https://biz.heraldcorp.com/article/10867093)). It plans to enter AI and server substrates "in stages through 2028".
+- KB Securities estimate: FC-BGA revenue KRW 140bn (2026E) → >KRW 2tn (2030E) (analyst estimate, Jun 2026) ([PRESS9](https://www.press9.kr/news/articleView.html?idxno=77447)).
+
+**Nan Ya PCB** — Q3 2026 ([CTEE, 6 Nov 2026](https://www.ctee.com.tw/news/20261106700224-430502)):
+- GM 29.31%; NP NT$3.298bn; EPS NT$5.10 (15-quarter high); 9M EPS NT$10.63.
+- Kunshan (China) ABF plant serves a US networking customer.
+
+**Kinsus** — Q3 2026 ([storm.mg](https://www.storm.mg/article/11165649); date not captured):
+- Revenue NT$14.54bn; GM 33.9%; NP NT$2.388bn; EPS NT$4.60.
+
+**Shennan Circuits** — 9M 2026 ([Sina, 23 Oct 2026](https://finance.sina.com.cn/stock/aigc/agcbld/2026-10-23/doc-iniwcnvh5019323.shtml)):
+- Revenue RMB 25.77bn (+53.8%); attributable NP RMB 4.13bn (+77.5%); Q3 revenue RMB 10.48bn, NP RMB 1.88bn.
+- Packaging substrates, 1H 2026: revenue RMB 3.667bn (+110.8%), GM 31.35%.
+- FC-BGA ≤26 layers in volume, ≥30 layers sampling (company claim, Oct 2026 investor Q&A; a broker note says ≤22 layers — conflict) ([10jqka](http://stock.10jqka.com.cn/20261101/c681325519.shtml)).
+
+**Shenzhen Fastprint:**
+- Zhuhai FC-BGA capacity 2m units a month; Guangzhou planned 20m a month; ≤20 layers in volume.
+- Claims to be the "only domestic ABF mass producer" (company-favourable post, Apr 2026) ([Eastmoney](https://caifuhao.eastmoney.com/news/20260414014428571468720)).
+
+**LPKF** ([LPKF H1 2026 report](https://www.lpkf.com/fileadmin/mediafiles/Half-yearly_Financial_Report_2026.pdf)):
+- H1 2026 revenue EUR 36.5m (−38.3%); Q2 EBIT −EUR 7.2m.
+- Q2 LIDE order from "a leading specialty glass manufacturer" for advanced-packaging qualification.
+- The company says it is "premature" to claim a glass breakthrough. 2026 guidance of EUR 105–120m excludes large semiconductor orders.
+
+---
+
+## (3) Path-forward evidence and suggested verdicts
+
+### Which transitions each key company must get through
+| Company | (1) Copper→optical links | (2) CPO | (3) Hybrid bonding | (4) Si interposer→panel/glass | (5) Two-phase cooling | (6) 800 V DC / MW racks |
+|---|---|---|---|---|---|---|
+| Ibiden | Indirect: optical-electrical conversion on its roadmap | Yes: switch and optical-engine substrates | Indirect: bigger packages | **Core test** | Indirect (warpage) | Yes: "power enhancement", embedded parts |
+| Unimicron | Indirect | Yes | Indirect | **Core test** | Indirect | Yes |
+| SEMCO | Indirect | Yes: NVIDIA switch substrates | Indirect | **Core test (both sides)** | Indirect | Yes: embedded passives, silicon capacitors, 1 kV+ MLCC |
+| AT&S | Indirect | Yes: CPO on its roadmap | Indirect | **Core test** | Indirect | Yes: EMB core, power PCBs |
+| SKC/Absolics | — | Possible (glass optics) | — | **Entire thesis** | Glass helps warpage | — |
+| Ajinomoto | — | — | — | Film survives glass cores; CoWoP is the threat | — | — |
+| Nittobo | — | — | — | Glass cores displace cloth cores (2030+) | — | — |
+
+### Glass-core / panel programme tracker (as of Nov 2026)
+| Programme | Originally stated | Currently stated (date of statement) | Samples | Customers | Capital | Subsidies | Slips |
+|---|---|---|---|---|---|---|---|
+| Absolics (SKC) | Commercialisation June 2024 | 2027 per TrendForce (Jul 2026); "difficult to predict" (SKC filing, May 2026); no date (Oct 2026) | Mass-production samples Q1 2026; embedded samples in Taiwan reliability evaluation (Jul 2026) | AMD and AWS "reportedly"; no named agreement | US$600m plant; KRW 417.4bn injected plus KRW 589.6bn earmarked | CHIPS US$75m manufacturing (US$40m received) plus US$100m R&D | ≥3 (2024 → 2025 → 2026 → 2027+) |
+| Intel | "Second half of this decade" (Sep 2023) | Own deployment ~2030; shift toward licensing (Tom's Hardware, Aug 2026, via IRZ) | 78×77 mm, 10-2-10 EMIB glass core shown Jan 2026 ([TrendForce](https://www.trendforce.com/news/2026/01/26/news-intel-reportedly-presents-first-thick-core-glass-substrate-with-emib-targeting-ai-data-centers/)) | None | Lens TGV memorandum (24 Jul 2026), no purchase commitment | Not verified | Yes |
+| SEMCO / GlaSSEM | Not verified this session | JV full-scale operation 2H 2027 (2 Jul 2026); "full operation 2028" (28 Oct 2026) | Sejong pilot line | Broadcom "reported" | JV KRW 480bn; SEMCO KRW 319.1bn for 66.2% | None found | None documented yet |
+| LG Innotek | 2027–28 | 2027–28 ([vlsi.kr, Oct 2026](https://www.vlsi.kr/en/glass-core-substrate-race-en/)) | Gumi pilot | None | Not disclosed | — | — |
+| BOE | Mass production "after 2026" (TrendForce, Oct 2025) | No mass-production date; yield not at mass-production level (BOE, 2026) | 9-2-9, 20-layer samples (2025); chip-level testing (Sep 2026) | Chinese customers at PoC/trial stage | RMB 390m + RMB 993m | — | Open-ended |
+| DNP / Toppan | — | DNP pilot line started Dec 2025; Toppan commissioning a pilot line | — | — | — | — | — |
+| 3DGS (India) | — | Production 2030 | — | — | ₹1,943 crore | ISM approval (2025) | — |
+| TSMC CoPoS (panel, not glass) | — | Pilot line under construction (Apr 2026); trial 2027; mass production 2H/late 2028; glass "under review" | — | Not named | — | — | — |
+| Independent views | — | SEMI: first glass-substrate production ~2028. TrendForce: mainstream after 2030 (Aug 2026); TSMC glass after 2030 | — | — | — | — | — |
+
+Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/); [XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/); [TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/); [Korea Herald](https://www.koreaherald.com/article/10796508); [Business Standard](https://www.business-standard.com/industry/news/india-s-1st-advanced-3d-glass-chip-packaging-unit-to-come-up-in-bhubaneswar-126041900360_1.html).
+
+- **Is any glass-core product shipping in volume?** No. No commercial glass-core product had shipped as of Sep–Oct 2026 ([IRZ, 4 Sep 2026](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/); [vlsi.kr, 20 Oct 2026](https://www.vlsi.kr/en/glass-core-substrate-race-en/)). SKC gave no date in its Q3 2026 release.
+- **Who is closest?** Absolics, as the only dedicated plant with mass-production samples in package-level reliability evaluation, then SEMCO (pilot line plus funded glass-core JV). This ranking is my inference.
+- **Where glass ships first:** carriers and optics. Corning glass carriers ship today; Crystal-Optech TGV CPO substrates were sampling in 2H 2026; WG Tech is delivering small-batch 1.6T CPO carrier samples ([TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)).
+
+### 3.1 Ibiden — suggested verdict: **COHERENT**
+- **Said:** capacity in step with AI demand. Roadmap to 130 mm, 14-X-14 by CY30+ (organic). Optical-electrical conversion moving to die-to-die by CY30+.
+- **Done:**
+  - Ono mass production started in FY2025. Confirmed by a commemorative dividend "for the start of mass production at the Ono Plant", which verifies the lead.
+  - Ono Cell8 (JPY 280bn) and Gama Cell6 (JPY 370bn total) committed.
+  - FY2026 capex JPY 210bn.
+  - NVIDIA-funded expansion (PRIMARY).
+- **Funded?** Yes: operating cash flow (Electronics EBITDA margin ~48%), the NVIDIA advance and prepayments, and a single-A balance sheet.
+- **Credible successor?** Its "bridge" is what customers are funding through ~2030. It has no disclosed glass-core programme. That is a risk only if glass arrives before 2030, against the weight of evidence.
+- **Timing plausible?** Yes for organic capacity: Cell8 from FY2027, ramp Q1 2028.
+- **What must go right:**
+  - AI accelerator demand holds through FY2029.
+  - Yields on 110 mm+ bodies.
+  - No repeat of underused fabs.
+  - NVIDIA does not shift to CoWoP or panel formats that bypass its substrates.
+
+### 3.2 Unimicron — suggested verdict: **COHERENT** (weaker than Ibiden)
+- **Said:** ABF expansion through 2030; land bought for post-2030 capacity.
+- **Done:**
+  - NVIDIA KF reservation.
+  - 2026 capex ~NT$53.7bn; NT$82.5bn long-lead equipment commitments.
+  - Unimicron Japan divestment started.
+- **Funded?** Yes, but partly by external financing (NT$94.9bn in 9M).
+- **Glass:** no dated plan.
+- **What must go right:** prices keep rising so gross margin reaches 30%+, and AI demand absorbs Guangfu 2 and Yangmei 2 in 2027–28.
+
+### 3.3 Samsung Electro-Mechanics — suggested verdict: **COHERENT** (organic); glass timing optimistic
+- **Said:** glass "full operation 2028"; embedded substrates for AI accelerators and switches in 2027.
+- **Done:**
+  - GlaSSEM JV signed and funded (KRW 319.1bn for 66.2%; share purchase scheduled 1 Sep 2026).
+  - Sejong pilot line.
+  - NVIDIA multi-year agreement.
+  - KRW 6.8tn substrate capex.
+  - KRW 1.5tn silicon-capacitor contract.
+  - Embedded server-CPU substrates in mass production.
+- **Funded through a 1–2-year glass slip?** Yes. Glass is small relative to quarterly operating profit of KRW 691bn.
+- **Timing:** 2H 2027 / 2028 for glass is ahead of independent views (2030+). Expect slips without impairing the group.
+- **What must go right:** NVIDIA qualification at scale on Sejong/Busan lines, and glass reliability to win a first customer.
+
+### 3.4 AT&S — suggested verdict: **PARTLY COHERENT**
+- **Said:** Kulim high-volume manufacturing 2028/29; CPO and power roadmap.
+- **Done:**
+  - AMD plus one other customer agreement (key terms only).
+  - Strong margin turnaround (Q2 EBITDA margin 35.8%).
+  - Refinanced the hybrid.
+- **Funded?** Through customer commitments still "subject to final negotiation" and leverage: equity ratio 29%, net debt EUR 954m. H1 operating FCF was negative.
+- **Gaps:** no glass or panel successor programme found.
+- **Timing risk:** high-volume manufacturing in 2028/29 coincides with the pause scenario.
+- **What must go right:** customer commitments get executed, AMD's roadmap volumes hold, and materials stay available.
+
+### 3.5 SKC / Absolics — suggested verdict: **PARTLY COHERENT** (funded near term; timing not credible)
+- **Said:** successive dates from 2024 to 2027; now "difficult to predict".
+- **Done:**
+  - Plant built.
+  - Samples shipped; Taiwan reliability evaluation.
+  - KRW 1.17tn equity raised.
+  - Other businesses sold.
+  - Non-embedded fallback product added.
+- **Funded?** A 1–2-year slip, probably yes from the KRW 589.6bn earmark. Beyond that, no: no assets left to sell and the parent is loss-making.
+- **What must go right:** pass the package-level reliability tests (results possibly by end-2026), sign a named customer by 2027, and control glass cracking and via metallisation yields.
+- **Downgrade trigger:** no customer contract by mid-2027 would argue for "not coherent".
+
+### 3.6 Ajinomoto — suggested verdict: **COHERENT**
+- **Said:** de facto standard; supply chain can meet current demand.
+- **Done:**
+  - 2025 factory (~JPY 10bn).
+  - Gunma varnish plant (~JPY 21.5bn, FY2030).
+  - Kani land for demand from 2030.
+  - Segment profit +81% in H1.
+- **Robustness:** ABF film is transition-robust to glass cores; the threat is CoWoP or substrate-less schemes, which have no 2026 adoption evidence.
+- **What must go right:** capacity timing (FY2030) must not lag an acceleration scenario, and China substitution must stay slow.
+
+### 3.7 Nittobo — suggested verdict: **COHERENT to FY3/2029; partly coherent beyond**
+- **Said:** 3x capacity by FY3/2029; Taiwan 2x by Mar 2028.
+- **Done:** JPY 80bn committed; Fukushima building (~JPY 15bn) starting Q1 2027; price increases completed.
+- **Funded?** Yes.
+- **Unaddressed:** no identified successor product for a glass-core world; second sources (Nan Ya Plastics, Kingboard) ramp in 2027.
+
+---
+
+## (4) Suggested ordering of key companies by quality alone
+
+| Rank | Company | Why |
+|---|---|---|
+| 1 (tie) | **Ajinomoto (ABF business)** | Material chokepoint; ~58% business-profit margin (H1 FY2026); low capital intensity; survives the glass-core transition. Caveat: ABF is ~7.5% of a food-led group, so group-level exposure is diluted. |
+| 1 (tie) | **Ibiden** | Customer-confirmed lead at NVIDIA; ~29% Electronics operating margin; customer-funded expansion; single-A. Weaknesses: capital intensity (capex ≥ EBITDA FY2026–27), cyclicality (FY2024 ROE 6.8%), likely high customer concentration. **Cannot separate from Ajinomoto**: the two sit on different layers of the same constraint. |
+| 3 (tie) | **Nittobo** | Tightest 2026–27 chokepoint and pricing power. But smaller, with second sources arriving in 2027 and a long-run glass-core substitution risk. |
+| 3 (tie) | **Samsung Electro-Mechanics** | NVIDIA entry; strongest balance sheet and diversification; funded glass option. Division margins not disclosed. **Cannot separate cleanly from Nittobo.** |
+| 5 | **Unimicron** | Scale and NVIDIA reservation; lower margins than Ibiden; partly financed expansion; deep 2024–25 trough (FY2025 OP ~NT$6.7bn). Close to SEMCO on the substrate business alone. |
+| 6 | **AT&S** | Real turnaround and AMD anchor; leveraged (equity ratio 29%), concentrated, negative H1 operating FCF; no glass programme. |
+| 7 | **SKC / Absolics** | Pre-revenue successor bet with ≥3 slips; parent loss-making; depends on the reliability-test outcome. |
+
+Not ranked (not key; brief evidence only): Nan Ya PCB, Kinsus, LG Innotek, Shennan Circuits, Fastprint, LPKF, the glass makers.
+
+---
 
 ## (5) Check of background priors
-(pending)
 
-## (6) Open question: which successor ships first; specialists vs integrated giants
-(pending)
+**Prior 1 — "Glass-core substrates are targeted for 2027–28 by several makers."**
+- **Verdict:** CONFIRMED as stated targets; CONTRADICTED as a volume expectation.
+- **Current company targets:**
+  - SEMCO/GlaSSEM: full-scale operation 2H 2027 ([2 Jul 2026](https://www.koreaherald.com/article/10796508)); "full operation 2028" ([28 Oct 2026](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+  - LG Innotek: 2027–28 ([20 Oct 2026](https://www.vlsi.kr/en/glass-core-substrate-race-en/)).
+  - Absolics: 2027 per TrendForce (Jul 2026), but SKC itself says it cannot predict (May 2026) and gave no date (28 Oct 2026).
+  - SEMI: initial glass-substrate production ~2028.
+- **Independent views (Nov 2026):**
+  - TrendForce: TGV glass enters mainstream packaging "after 2030" ([7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)); commercial glass-core production not before 2030 (17 Jun 2026, via [XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/)).
+  - Intel's own deployment ~2030 (Aug 2026, via [IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+  - Nothing ships in volume as of Nov 2026.
+- **Change to the prior:** use **2030+ for meaningful volume**. Treat 2027–28 as pilot or first-customer dates that are likely to slip.
 
-## (7) What could not be verified
-(pending)
+**Prior 2 — "Panel-sized packaging is in pilot in 2026 with volume expected in 2028–29."**
+- **Verdict:** CONFIRMED.
+- TSMC CoPoS pilot line under construction (1Q26 call, Apr 2026). TrendForce: 2026 equipment/material verification, 2027 trial production, late-2028 mass production on 310×310 mm panels (17 Jun 2026) ([XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/); [IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+- BOE's glass-panel pilot is running but not in mass production.
+- **Nuance:** panel interposers (organic or glass carrier) arrive before glass cores. CoPoS still sits on an ABF substrate, so it does not remove the substrate maker.
 
-## (8) Sources
-(pending)
+**Prior 3 — "Packaging, including substrates, is a binding constraint in 2028–30; successor dates slip; bridge products last longer."**
+- **Verdict:** UPDATED.
+- **Slips:** CONFIRMED (Absolics ≥3 slips; Intel from "late decade" to ~2030).
+- **Bridge longevity:** SUPPORTED. Ibiden's CY30+ roadmap is organic; NVIDIA is funding organic capacity to 2028+.
+- **"Binding in 2028–30":** only partly supported.
+  - 2026–27 is clearly binding: ABF lead times 48–56 weeks (TrendForce, Sep 2026); BofA sees shortage through 2028; Unimicron's chairman sees ~20% material shortages in 2027.
+  - But NVIDIA targets 2.5x substrate capacity within three years (Oct 2026), and Ibiden, Unimicron, SEMCO and AT&S capacity lands 2028–29. By 2029–30, substrates may stop being binding in the steady and pause scenarios. They stay binding mainly in the acceleration scenario.
+- **Where the binding constraint actually sits in 2026–27:** upstream T-glass and thin glass cloth (no new Nittobo capacity before mid-2027; 3x only by FY3/2029) more than ABF film. Ajinomoto claims it can meet current demand (company claim).
+
+---
+
+## (6) Open question: which successor ships in volume first, and who captures the value
+
+### Takeaway
+The likely order of volume arrival is:
+1. Incremental organic successors — embedded and multi-core ABF substrates, already in mass production at SEMCO.
+2. Panel-level interposers — TSMC CoPoS, 2H/late 2028.
+3. Glass in optics and carriers — sampling in 2026.
+4. Glass-core substrates for AI accelerators — company claims 2027–28, independent views 2030+.
+
+Value capture is splitting rather than migrating wholesale. Foundries keep the interposer layer. Substrate specialists keep the substrate layer through ~2030, funded by customers. In glass, raw-panel margin goes to a four-maker glass oligopoly, while via processing is contested by substrate makers, display makers and glass processors.
+
+### Cited findings
+- SEMCO's embedded/multi-core server-CPU substrates are in mass production, with Q4 2026 supply doubling and AI-accelerator and switch versions in 2027 ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
+- CoPoS (foundry-controlled): mass production late/2H 2028; glass "under review"; TrendForce puts TSMC glass after 2030 ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)).
+- Corning, AGC, NEG and Schott have all centred core-substrate and TGV roadmaps on 510×515 mm panels ([DIGITIMES, 1 Oct 2026](https://www.digitimes.com/news/a20261001PD230/ai-chip-tsmc-corning-tgv-agc.html)). Raw low-CTE glass supply is concentrated in these four, and new melting tanks take a long time ([Exponential Industry](https://exponentialindustry.com/blog/2026-08-13-glass-core-substrates-ai-chip-packaging/)).
+- Substrate makers are vertically securing glass: SEMCO formed GlaSSEM with a Sumitomo Chemical unit "to secure a stable supply of glass cores" ([Korea Herald](https://www.koreaherald.com/article/10796508)).
+- Display makers are building complete glass-core lines. BOE integrates TGV drilling, copper filling and build-up in one pilot line, and signed a 3-year MoU with Corning ([XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/)).
+- The integrated giant that started glass (Intel) is reportedly moving toward licensing and demo vehicles, and partnering with a Chinese glass processor (Lens) ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/); [XenoSpectrum](https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/)).
+- Glass reaches optics first: Corning Glass Bridge for CPO; Crystal-Optech and WG Tech CPO samples in 2026 ([TrendForce, 7 Aug 2026](https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/)).
+- CoWoP, the one scheme that would remove the substrate and shift value to PCB makers, faces line/space (<10/10 µm needed vs 20–30 µm in PCB mSAP) and warpage hurdles. No 2026 adoption was found ([GlobalSMT](https://www.globalsmt.net/advanced-packaging/nvidias-cowop-pcb-architecture-targets-abf-substrates-but-faces-warpage-risk/)).
+- Customers are funding the specialists' organic capacity: NVIDIA (Ibiden, Unimicron, SEMCO); AMD and another company (AT&S) ([NVIDIA](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx); [AT&S](https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV)).
+
+### Inferences
+- **Through 2030, substrate specialists capture the value of the bridge.** Customer pre-funding signals that buyers see no near-term substitute.
+- **In a glass world:**
+  - Build-up film (Ajinomoto) keeps its share of value, because glass replaces the core, not the build-up layers.
+  - Glass-cloth makers (Nittobo) lose the core.
+  - The four glass makers gain a materials margin.
+  - The TGV/core processing step is the contested layer. Specialists that integrate it (SEMCO via GlaSSEM; Absolics) keep value. Those that don't (Ibiden, Unimicron, AT&S, with no dated glass plans found) would buy cores from glass or display players and keep build-up and assembly value.
+- **Integrated giants:**
+  - TSMC captures panel-interposer value.
+  - Intel appears to be monetising glass IP rather than capturing manufacturing value.
+  - The Samsung group could integrate (SEMCO substrates plus a reported Samsung Display TGV team), but no customer evidence was found.
+- **Evidence on relative economics (glass-panel margins vs substrate margins) is absent,** so this split is a judgement, not a measurement.
+
+### Gaps
+- No published cost or margin data on glass cores vs organic cores.
+- No customer qualification data for any glass maker's panels in production substrates.
+
+---
+
+## (7) What I could not verify
+- **Customer concentration:** top customer and top-5 share for Ibiden, Unimicron, SEMCO, AT&S, Nan Ya PCB and Kinsus were not disclosed in the retrieved material. AT&S says only that "all major customers" generate three-digit-million-euro revenue.
+- **Shares and qualification:** reliable supplier shares at Google, Amazon, Broadcom, Marvell and MediaTek. Prismark and Yole tables were not retrieved.
+- **Ajinomoto's 30% ABF price increase:** secondary only; not quantified in Ajinomoto's 9 Nov 2026 deck. Same for the reported ~30% cut to China allocations.
+- **NVIDIA's advance to Ibiden:** the ~JPY 280bn figure is Bunshun's report, unconfirmed by either party. The "JPY 500bn three-year capex funded substantially by prepayments" quote is secondary (RCRTech).
+- **Intel's licensing shift and ~2030 deployment:** Tom's Hardware (27 Aug 2026) via IRZ; the original was not opened. Low-quality sites claim Clearwater Forest ships on glass in volume; this was not accepted.
+- **Absolics:** AMD and AWS qualification (industry press only); Applied Materials' current stake; CHIPS disbursement status after May 2026; The Elec's 27 Jul 2026 Taiwan reliability item (via IRZ only).
+- **SEMCO:** the KRW 2.5tn Vietnam approval (call-coverage summary, not opened); the Broadcom glass qualification ("reported"); the "only supplier" embedded claim (company claim).
+- **Nittobo:** H1 FY3/2027 results (Nov 2026), balance sheet and the cause of the −52% net-profit forecast. Nittobo IR pages did not render.
+- **Net debt and returns:** Ibiden net debt at Sep 2026 and FY2025/26 ROE; Unimicron total debt; ROIC for any company.
+- **Missing companies:** Zhen Ding ABF progress; Kyocera, Toppan, DNP, Shinko and Daeduck 2026 substrate financials; Fastprint Q3 2026; Philoptics; Corning, AGC, NEG and Schott glass-core revenue or customers; Sekisui and Chinese build-up-film substitutes. The "Lotus Holdings RMB 103m" ABF-substitute item was seen as a headline only ([BigGo](https://finance.biggo.com/news/72147843-2346-4bf7-ad32-2d8c56ae3ca9)).
+- **Policy exposure:** 2026 tariff and export-control specifics affecting substrate trade flows (e.g., US semiconductor tariffs, Malaysia/Vietnam reciprocal tariffs).
+- **Regions:** Israel — no player surfaced and no dedicated MAYA check was run. India — the claimed Intel–Odisha–3DGS MoU (May 2026) comes from one weak source ([Anantam IAS](https://anantamias.com/current-affairs/india-3d-semiconductor-packaging-odisha-2026/)).
+- **Shortage magnitudes:** the gap estimates (10%/21%/>40%; Morgan Stanley 15→22%) are secondary or untraced.
+- **Data conflicts:**
+  - Unimicron Q3 EPS: NT$6.15, 6.32 or 6.36 depending on source.
+  - Shennan FC-BGA layers: ≤26 vs ≤22.
+  - Ibiden Gama Cell6 product: "AI ASIC" on the slide vs "server CPU" in The Elec.
+- **Search budget:** further searching was blocked when the WebSearch budget ran out; a follow-up session could close most of the gaps above.
+
+---
+
+## (8) Sources (with dates)
+
+### Primary — companies and official releases
+- Ibiden, Financial Results of 1H FY2026 (deck dated 30 Oct 2026; forecasts as of 29 Oct 2026) — https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf
+- Ibiden, Integrated Report 2025 (FY2024 data) — https://www.ibiden.com/ir/items/IntegratedReport2025_en.pdf
+- NVIDIA, "NVIDIA and Supply Chain Partners Expand Capacity…" (GTC Berlin, 21 Oct 2026) — https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx
+- Samsung Electro-Mechanics, NVIDIA ABF supply release (21 Oct 2026) — https://m.samsungsem.com/global/newsroom/news/view.do?id=10614
+- Samsung Electro-Mechanics, MOU with Sumitomo Chemical Group (Nov 2025) — https://samsungsem.com/global/newsroom/news/view.do?id=9850
+- Ajinomoto, FY2026 Q2 presentation with script (9 Nov 2026) — https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/03/link/FY26Q2_Presentation_E_with%20Script.pdf
+- Ajinomoto, FY2026 Revised Forecast by Segment (9 Nov 2026) — https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/02/link/FY26Q2_Forecast_E.pdf
+- AT&S ad hoc (13 Jun 2026), via finanzwire — https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV
+- LPKF Half-yearly Financial Report 2026 — https://www.lpkf.com/fileadmin/mediafiles/Half-yearly_Financial_Report_2026.pdf
+- DNP, completion of investment in the Shinko SPC (19 Mar 2025) — https://www.global.dnp/en/news/detail/2025/03/0319_20176512/
+- Press Information Bureau (India), Odisha 3D glass packaging unit (Apr 2026) — https://www.pib.gov.in/PressReleasePage.aspx?PRID=2253276&reg=3&lang=2
+
+### Secondary — results coverage and transcripts
+- Investing.com, SEMCO Q3 2026 call transcript (28 Oct 2026) — https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482
+- Herald Business, SEMCO Q3 2026 (28 Oct 2026) — https://biz.heraldcorp.com/article/10917700
+- Investing.com, AT&S Q1 2026/27 slides (4 Aug 2026) — https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617
+- ad-hoc-news.de, AT&S H1 2026/27 (12 Nov 2026; results 5 Nov 2026) — https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565
+- China Times, Unimicron Q3 2026 (28 Oct 2026) — https://www.chinatimes.com/realtimenews/20261028001621-260410
+- cnyes, Unimicron Q3 2026 (Oct 2026) — https://news.cnyes.com/news/id/6638686
+- vocus.cc, Unimicron Q3 2026 analysis (late Oct 2026) — https://vocus.cc/article/6ae2b2b0fd8978000150ef3d
+- Wantrich / China Times, Unimicron broker report (28 Oct 2026) — https://wantrich.chinatimes.com/news/20261028900159-420101
+- BigGo, Unimicron 29 Jul 2026 call — https://finance.biggo.com/quote/3037.TW/earnings-call/TW_3037.TW_2026-07-29
+- CTEE, Nan Ya PCB Q3 2026 (6 Nov 2026) — https://www.ctee.com.tw/news/20261106700224-430502
+- storm.mg, Kinsus/ABF (date not captured) — https://www.storm.mg/article/11165649
+- Korea Herald, LG Innotek Q3 2026 (27 Oct 2026) — https://www.koreaherald.com/article/10916657
+- Herald Business, LG Innotek FC-BGA at KPCA Show (Sep 2026) — https://biz.heraldcorp.com/article/10867093
+- PRESS9, KB Securities on LG Innotek (Jun 2026) — https://www.press9.kr/news/articleView.html?idxno=77447
+- fnnews, SKC Q3 2026 (28 Oct 2026) — https://www.fnnews.com/news/202610281435277261
+- ZDNet Korea, SKC Q3 2026 (28 Oct 2026) — https://zdnet.co.kr/view/?no=20261028133954
+- SBS Biz via Daum, SKC glass "Plan B" (29 May 2026) — https://v.daum.net/v/20260529115214214
+- Sina Finance, Shennan Circuits 9M 2026 (23 Oct 2026) — https://finance.sina.com.cn/stock/aigc/agcbld/2026-10-23/doc-iniwcnvh5019323.shtml
+- 10jqka, Shennan FC-BGA layers (1 Nov 2026) — http://stock.10jqka.com.cn/20261101/c681325519.shtml
+- Eastmoney Caifuhao, Fastprint (Apr 2026) — https://caifuhao.eastmoney.com/news/20260414014428571468720
+- The Elec, Ibiden Gama investment (30 Oct 2026) — https://www.thelec.net/news/articleView.html?idxno=15090
+- Korea Herald, GlaSSEM JV (2 Jul 2026) — https://www.koreaherald.com/article/10796508
+- RCRTech, NVIDIA capacity commitments (23 Oct 2026) — https://rcrtech.com/semiconductor-news/nvidia-supply-chain-capacity-commitments/
+
+### Secondary — market, materials and glass
+- TrendForce, Nittobo forecast and T-glass (6 Aug 2026) — https://www.trendforce.com/news/2026/08/06/news-nittobo-raises-fy2027-net-profit-forecast-by-jpy-3b-no-further-t-glass-price-hikes-planned/
+- TrendForce, 18 Chinese glass-core players (7 Aug 2026) — https://www.trendforce.com/news/2026/08/07/news-18-chinese-enterprises-accelerate-positions-in-glass-core-substrate-market/
+- TrendForce, Intel thick-core glass with EMIB (26 Jan 2026) — https://www.trendforce.com/news/2026/01/26/news-intel-reportedly-presents-first-thick-core-glass-substrate-with-emib-targeting-ai-data-centers/
+- BigGo, TrendForce lead times (16 Sep 2026) — https://finance.biggo.com/news/02cf5c8f-c58d-45f8-a7a3-8fe37716bc8f
+- thebuildout.ai, BofA on the ABF shortage (26 Mar 2026) — https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c
+- MPBxChange, PCB material shortage 2026 (15 Oct 2026, updated 1 Nov 2026) — https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil
+- AtlasPCB, Ajinomoto ABF price increase (2026) — https://www.atlaspcb.com/news/news-ajinomoto-abf-substrate-price-increase-2026/
+- FT Mercati, Ajinomoto China allocation (2026; unconfirmed) — https://www.ftmercati.com/en/ajinomoto-to-cut-abf-film-supply-to-china-by-30-amid-global-shortage-178875.html
+- gate.com blog, ABF shortfall compilation (2026; low reliability) — https://www.gate.com/blog/why-abf-substrates-have-become-a-bottleneck-in-the-ai-gpu-supply-chain-2028-shortage-analysis
+- Encyclopedia of Stocks (Substack), ABF shares (2026; low reliability) — https://encyclopediaofstocks.substack.com/p/abf-substrate-market-ai-driven-super
+- DIGITIMES, four glass makers on 510×515 mm (1 Oct 2026) — https://www.digitimes.com/news/a20261001PD230/ai-chip-tsmc-corning-tgv-agc.html
+- XenoSpectrum, Intel–Lens / BOE / CoPoS (29 Jul 2026) — https://xenospectrum.com/en/intel-lens-boe-glass-substrate-copos-tgv/
+- IRZ, "Three years after Intel's promise…" (4 Sep 2026) — https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/
+- MIT Technology Review, "Future AI chips could be built on glass" (13 Mar 2026) — https://www.technologyreview.com/2026/03/13/1134230/future-ai-chips-could-be-built-on-glass/
+- vlsi.kr, glass-core race (20 Oct 2026, updated 1 Nov 2026) — https://www.vlsi.kr/en/glass-core-substrate-race-en/
+- Slicast, Intel glass (9 Sep 2026; low reliability) — https://slicast.com/commentary/intel-2026-09-09
+- TechTimes, BOE glass-core qualification (23 Sep 2026; seen via search summary) — https://www.techtimes.com/articles/327959/20260923/boe-completes-glass-core-substrate-qualification-ships-customers-chip-level-testing.htm
+- Exponential Industry, glass-core guide (13 Aug 2026) — https://exponentialindustry.com/blog/2026-08-13-glass-core-substrates-ai-chip-packaging/
+- GlobalSMT, CoWoP (2025) — https://www.globalsmt.net/advanced-packaging/nvidias-cowop-pcb-architecture-targets-abf-substrates-but-faces-warpage-risk/
+- Business Standard, 3DGS Odisha (19 Apr 2026) — https://www.business-standard.com/industry/news/india-s-1st-advanced-3d-glass-chip-packaging-unit-to-come-up-in-bhubaneswar-126041900360_1.html
+- DIGITIMES, Shinko delisting (21 Mar 2025) — https://apps.digitimes.com/news/a20250321PD206.html?chid=12
+- Anantam IAS, Intel–Odisha MoU claim (2026; weak, unverified) — https://anantamias.com/current-affairs/india-3d-semiconductor-packaging-odisha-2026/

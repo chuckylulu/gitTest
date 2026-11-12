@@ -2,7 +2,12 @@
 
 Status: COMPLETE for this pass (12 Nov 2026).
 
-Research limits (read first): partway through, the shared WebSearch budget ran out and the Firecrawl account had no credits left. After that point, evidence came only from fetching URLs already found and from primary transcripts and filings, which I downloaded and parsed locally (TSMC 4Q25 and 2Q26 call transcripts; Intel's 2025 Annual Report). I did not search Korean-, Japanese- or Chinese-language sources (DART, TDnet/EDINET, cninfo), so coverage of Korean and Chinese mid-tier houses is thin (see §7).
+Research limits (read first): partway through, all three search engines ran out: the shared WebSearch budget was spent, and Firecrawl and Exa had no credits left. After that, evidence came only from direct fetches:
+- URLs already found.
+- Primary documents downloaded and parsed locally: TSMC 4Q25 and 2Q26 call transcripts; TSMC Form 20-F, ASE Form 20-F and Amkor 10-K for FY2025, from SEC EDGAR; Intel's 2025 Annual Report.
+- Mid-tier income statements from stockanalysis.com, a secondary aggregator of reported financials, with no valuation data taken.
+
+I did not search Korean-, Japanese- or Chinese-language sources (DART, TDnet/EDINET, cninfo), so qualitative coverage of Korean and Chinese mid-tier houses is thin (see §7).
 
 Conventions: "primary" means a company filing or transcript; "secondary" means trade press or an analyst. "Company claim, unconfirmed" means I found no outside confirmation. "(calc.)" marks my own arithmetic on cited figures. No share-price or valuation data is used, by instruction.
 
@@ -28,13 +33,13 @@ Tickers are the standard exchange identifiers and were not re-verified this sess
 | Tongfu Microelectronics (TFME) | China | SZSE 002156 | OSAT; AMD's core assembly/test partner (TF-AMD Penang and Suzhou) | Brief. 8% of 2024 top-10 OSAT revenue (TrendForce). AMD reportedly holds 15% of the TF-AMD JVs ([Quartr 3Q25](https://quartr.com/events/tongfu-microelectronics-co-ltd-002156-q3-2025_FgfqXMee)). 3Q26 figures not found |
 | Tianshui Huatian (HT-Tech) | China | SZSE 002185 | OSAT investing in high-end AI/HPC packaging | Brief. 2024 revenue US$2.01bn (+26%, fastest in top 10) (TrendForce). No 2026 data found |
 | WiseRoad / UTAC | China / Singapore | Private | OSAT, mainly mainstream | Left out: 2024 revenue US$1.56bn; parent reportedly considering a sale of UTAC; no AI 2.5D evidence (TrendForce) |
-| Powertech Technology (PTI) | Taiwan | TWSE 6239 | Memory OSAT; panel-level fan-out | Brief. 5.5% of 2024 top-10, "transition phase in advanced packaging" (TrendForce). 2026 AI evidence not verified (search budget exhausted) |
-| KYEC (King Yuan Electronics) | Taiwan | TWSE 2449 | Test house; CoWoS and AI-GPU test | Brief, but a "judge" (a test gate). TrendForce notes "AI server, HPC and CoWoS testing demand growing". 2024 revenue US$0.91bn |
+| Powertech Technology (PTI) | Taiwan | TWSE 6239 | Memory OSAT; panel-level fan-out | Brief. 5.5% of 2024 top-10, "transition phase in advanced packaging" (TrendForce). TTM to Sep 2026: revenue TWD91.2bn (+29%), operating margin 14.8% (aggregator, §2.8). AI 2.5D/panel program evidence not verified |
+| KYEC (King Yuan Electronics) | Taiwan | TWSE 2449 | Test house; CoWoS and AI-GPU test | Brief, but a "judge" (a test gate). TrendForce notes "AI server, HPC and CoWoS testing demand growing". FY2025 revenue TWD34.9bn (+30%); TTM to Sep 2026 operating margin 26.6% (aggregator, §2.8) |
 | ChipMOS | Taiwan | TWSE 8150; NASDAQ IMOS | Display-driver and memory OSAT | Left out: no AI 2.5D/3D role (TrendForce 2024: US$0.71bn) |
 | UMC | Taiwan | TWSE 2303; NYSE UMC | Foundry; interposers and advanced-packaging engagement | Brief. 3Q26: "advanced packaging and silicon photonics" engagement strong, some capacity being converted ([Lapedus](https://marklapedus.substack.com/p/q3-26-foundryosat-earnings-hit-or-ded)). Interposer volumes not verified |
 | GlobalFoundries | USA | NASDAQ GFS | Foundry; first US source of silicon interposers for TSMC CoWoS | Brief. 5-year, ~US$2bn TSMC interposer deal; volume from 1H28 at Malta, NY ([GF 3Q26 6-K, 4 Nov 2026](https://www.sec.gov/Archives/edgar/data/0001709048/000170904826000259/globalfoundries3q2026earni.htm)) |
 | Hana Micron | Korea | KOSDAQ 067310 | Memory-focused OSAT (Korea, Vietnam) | Brief. 2024 revenue US$0.92bn (+23.7%) on memory customers (TrendForce). No AI 2.5D evidence found |
-| Nepes; SFA Semicon | Korea | KOSDAQ 033640; 036540 | Fan-out/panel-level (Nepes); memory OSAT (SFA) | Not verified this session. No 2026 sources retrieved (search budget exhausted; Korean-language press not searched) |
+| Nepes; SFA Semicon | Korea | KOSDAQ 033640; 036540 | Fan-out/panel-level (Nepes); memory OSAT (SFA) | Financials only (aggregator, §2.8): Nepes TTM to Jun 2026 revenue KRW549bn, operating margin 6.8%; SFA Semicon loss-making (TTM operating margin –4.3%). AI-packaging role not verified (Korean-language press not searched) |
 | Rapidus (Rapidus Chiplet Solutions) | Japan | Private, government-backed | 2.5D/3D and 600 mm panel RDL-interposer pilot at Chitose | Brief. RCS opened 11 Apr 2026 ([PR Newswire](https://www.prnewswire.com/news-releases/rapidus-opens-analysis-center-and-rapidus-chiplet-solutions-302739433.html)). Pilot stage |
 | Resonac (JOINT2/JOINT3 consortia) | Japan | TSE 4004 | Materials maker leading a panel-level organic-interposer consortium | Brief. JOINT3 reportedly had 28 members by May 2026 (single blog source, unconfirmed) ([DataM blog](https://www.datamintelligence.com/blogs/top-companies-in-advanced-packaging-japan)). Materials are covered by other researchers |
 | Silicon Box | Singapore (plant in Italy) | Private | Panel-level chiplet integration and panel-level test | Brief. Novara, Italy plant (up to €3.2bn) granted "Open EU Foundry" status 16 Mar 2026; full capacity 2033 ([European Commission](https://digital-strategy.ec.europa.eu/en/news/open-eu-foundry-status-granted-innovative-chiplet-facility)) |
@@ -104,7 +109,11 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
   - Cash and marketable securities NT$4,016.98bn against long-term interest-bearing debt NT$818.38bn, i.e., net cash ≈NT$3.2tn (calc., netting long-term interest-bearing debt only).
   - Annualised ROE 45.5%; inventory days 82 (74 a year earlier).
 - **Guidance:** 4Q26 revenue US$52.3–54.3bn, gross margin 65–67%. FY2026 growth "slightly above 40%" (Jul 2026). 2026 capex US$60–64bn, raised from US$52–56bn; 10–20% of it goes to "advanced packaging, testing, mask making and others".
-- **Concentration:** customer and geography shares were not retrieved (see §7). By analyst estimate NVIDIA alone takes ~60% of CoWoS wafers.
+- **Concentration** (primary: [TSMC Form 20-F for FY2025, filed 16 Apr 2026](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm)):
+  - Ten largest customers 78% of 2025 net revenue (76% in 2024, 70% in 2023).
+  - Largest customer 19% (22% in 2024, 25% in 2023). Second-largest 17% (12% in 2024, 11% in 2023). The 20-F does not name them. Inference, unverified: the fast-rising #2 is consistent with an AI-GPU customer.
+  - Revenue by customer HQ, 2025: North America 75% (NT$2,875bn; North America orders +42% YoY), Asia Pacific 9%, China 9%, Japan 4%, EMEA 3%.
+  - By analyst estimate, NVIDIA alone takes ~60% of CoWoS wafers.
 - **Manufacturing footprint:** advanced packaging is essentially all in Taiwan today; "13 leading-edge and advanced packaging fabs in Taiwan" are under construction (Jul 2026).
 - **Arizona:** first advanced packaging fab in permitting (Jan 2026), plus an extra US$100bn for logic and "advanced packaging fabs" (Jul 2026). First Arizona packaging volume is due in 2028 per CNA (via TrendForce, 13 Apr 2026), but the facility is due in 2029 per [The Register, 8 Oct 2026](https://www.theregister.com/systems/2026/10/08/tsmc-taps-globalfoundries-to-bolster-us-silicon-interposer-production-in-2b-deal/5302061). The two sources conflict.
 
@@ -152,7 +161,13 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
   - Interest-bearing debt NT$406.5bn; net debt/equity 66% (expected to peak).
   - Annualised ROE ≈25% (calc., rough: 4 × NT$27.0bn against NT$419bn equity at Jun 2026).
 - **Capex and cash:** 2026 capex US$11.5bn, raised from US$10.5bn (half facilities, half equipment; 60% of equipment is LEAP). 2027 capex "even larger". Free cash flow negative in 2026 and 2027 (company).
-- **Concentration:** customer and geography shares were not retrieved (20-F not accessed).
+- **Concentration** (primary: [ASE Form 20-F for FY2025, filed 1 Apr 2026](https://www.sec.gov/Archives/edgar/data/1122411/000119312526135585/d50802d20f.htm)):
+  - Five largest customers ~46.5% of 2025 operating revenue (48.4% in 2024, 48.0% in 2023).
+  - One customer, including OEM work done on its behalf, across packaging and EMS: NT$161.28bn (US$5.14bn) in 2025, ≈25% of revenue (calc.); NT$174.49bn in 2024. No other customer reached 10%. Unnamed in the filing.
+  - Revenue by customer HQ, 2025: US 56.7% (60.2% in 2024), Taiwan 18.0% (15.0%), other Asia 15.2%, Europe 10.0%.
+  - Ten largest customers held 50% of trade receivables at end-2025.
+  - Manufacturing: Taiwan (main LEAP base), mainland China (ASE Shanghai, SPIL Suzhou), Korea (ASE Korea, Cheonan), Japan, Malaysia, Singapore (ASE Test).
+  - The 20-F defines "leading-edge advanced packages" as RDL-based: FOWLP, FOPoP, FOCoS, FOCoS-Bridge, FOSiP, TSV 2.5D/3D, and CPO processing.
 
 **(e) Resilience.**
 - **Steady growth:** strong. LEAP doubles in 2027, and pricing is "very pricing-friendly" (CFO).
@@ -191,8 +206,13 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
   - Year to date: operating cash flow US$868m against capex payments US$1,237m, so free cash flow ≈–US$369m (calc.).
   - Cash plus short-term investments US$2.4bn; debt ~US$2.47bn, i.e., net debt ≈US$0.1bn (calc.).
 - **Guidance:** 2026 capex ~US$2.5bn (≈33% of 2026 sales, calc.). 4Q26 revenue US$1.9–2.0bn, gross margin 18–19%. Computing growth >30% in 2026 and "similar to even higher" in 2027 (company).
-- **Concentration:** the largest single customer was not retrieved (10-K not accessed).
-- **Footprint:** Korea (footprint +~40% vs 2025 after the 2028 expansions), Vietnam (SiP), Japan (Kumamoto), Arizona; other sites not verified.
+- **Concentration** (primary: [Amkor 10-K for FY2025, filed 20 Feb 2026](https://www.sec.gov/Archives/edgar/data/1047127/000104712726000014/amkr-20251231.htm)):
+  - Apple 29.8% of 2025 net sales (30.8% in 2024, 27.7% in 2023). Qualcomm 11.1%. Top ten 72%.
+  - Net sales by customer HQ, 2025: US US$4.40bn (65.6%, calc.), EMEA 12.7%, Asia Pacific ex-Japan 10.9%, Japan 10.8%.
+- **Footprint:** net PP&E by location at end-2025 was US$3.87bn in total:
+  - Korea US$2.10bn (54%, calc.), Vietnam US$518m, Taiwan US$353m, China US$256m, Philippines US$187m, Portugal US$163m, Japan US$142m, US US$106m, Malaysia US$47m (10-K).
+  - Korea footprint +~40% vs 2025 after the 2028 expansions (3Q26 call).
+- **Inference:** the computing/AI ramp is diluting Apple-driven communications exposure, which fell from 51% to 37% of sales between 3Q25 and 3Q26.
 
 **(e) Resilience.**
 - **Pause around 2028:** moderate exposure. Arizona spending peaks in 2028–29, when Phase 2 construction overlaps Phase 1 equipment installation (company). Prepayments may mean "no incremental debt" through 2028 (CFO), but margins are thin, with an operating margin of ~11%.
@@ -266,7 +286,9 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
 - XDFOI fan-out chiplet platform: BRIDGE, an alternative to the silicon interposer.
 - Glass-substrate and panel-level work "now moving to pilot lines" (SUCCESSOR, pilot), and XDFOI capabilities for CPO ([Lapedus](https://marklapedus.substack.com/p/q3-26-foundryosat-earnings-hit-or-ded)).
 
-**(d) 3Q26** (22 Oct 2026, secondary): record revenue RMB11.43bn (+13.5% YoY); net profit RMB770m (+60%). Computing was 30.9% of 9M26 revenue, up 54% YoY. 2026 capex raised from RMB9.98bn to RMB17.31bn. FY2025 figures were not retrieved.
+**(d) 3Q26** (22 Oct 2026, secondary): record revenue RMB11.43bn (+13.5% YoY); net profit RMB770m (+60%). Computing was 30.9% of 9M26 revenue, up 54% YoY. 2026 capex raised from RMB9.98bn to RMB17.31bn.
+
+**FY2025** (aggregator, secondary): revenue CNY38.87bn (+8.1%); gross margin 13.9%; operating margin 5.0%; net income CNY1.57bn. TTM to Sep 2026: gross margin 15.6%, operating margin 6.7% (§2.8). A 2026 capex of CNY17.31bn is ≈42% of TTM revenue (calc.), a large step-up for a ~5–7% operating-margin business.
 
 **(e) Cross-border:** demand is domestic and policy-driven under US controls, which keep Chinese designers away from TSMC CoWoS. The degree of US restriction on JCET itself was not verified.
 
@@ -277,7 +299,25 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
 - Listed on the STAR Market 21 Apr 2026 ([Maples](https://maples.com/knowledge/sj-semiconductors-star-market-listing-a-new-milestone-for-cayman-red-chip-companies-in-chinas-a-share-market)).
 - Revenue and profit were not retrieved. The lead on its listing is confirmed.
 
-### 2.8 Which AI designers are qualified where (dated; confirmation level noted)
+### 2.8 Mid-tier houses: reported financials (secondary aggregator, stockanalysis.com, fetched 12 Nov 2026; trailing twelve months, TTM, to the date shown; no valuation data used)
+
+| Company | FY2024 revenue | FY2025 revenue (growth) | FY2025 GM / OM | TTM revenue (growth) | TTM GM / OM | Note |
+|---|---|---|---|---|---|---|
+| JCET (CNY m) | 35,962 | 38,871 (+8.1%) | 13.9% / 5.0% | 41,155 to Sep 2026 (+3.8%) | 15.6% / 6.7% | Net income FY2025 CNY1,565m; TTM CNY2,229m ([page](https://stockanalysis.com/quote/sha/600584/financials/)). TTM growth (+3.8%) conflicts with 3Q26 +13.5% YoY (Lapedus); likely a basis difference, unresolved |
+| Tongfu (CNY m) | 23,882 | 27,921 (+16.9%) | 14.1% / 6.4% | 32,690 to Sep 2026 (+21.5%) | 14.7% / 7.5% | Net income FY2025 CNY1,219m; TTM CNY3,419m ([page](https://stockanalysis.com/quote/she/002156/financials/)) |
+| Huatian (CNY m) | 14,462 | 17,214 (+19.0%) | 13.1% / 2.4% | 21,606 to Sep 2026 | 15.7% / 4.9% | Net income FY2025 CNY711m ([page](https://stockanalysis.com/quote/she/002185/financials/)) |
+| Powertech (TWD m) | 73,315 | 74,929 (+2.2%) | 17.0% / 10.9% | 91,171 to Sep 2026 (+29.1%) | 21.1% / 14.8% | Memory-led upturn ([page](https://stockanalysis.com/quote/tpe/6239/financials/)) |
+| KYEC, test (TWD m) | 26,856 | 34,934 (+30.1%) | 35.9% / 25.8% | 43,441 to Sep 2026 (+34.6%) | 38.6% / 26.6% | Highest margins among OSAT-type firms seen; consistent with test as a "judge" ([page](https://stockanalysis.com/quote/tpe/2449/financials/)) |
+| Hana Micron (KRW m) | 1,250,693 | 1,534,419 (+22.7%) | 13.8% / 8.3% | 2,073,303 to Jun 2026 (+53.8%) | 19.6% / 14.5% | Memory-driven ([page](https://stockanalysis.com/quote/kosdaq/067310/financials/)) |
+| Nepes (KRW m) | 464,332 | 521,439 (+12.3%) | 19.3% / 4.6% | 548,827 to Jun 2026 (+15.6%) | 22.1% / 6.8% | Small ([page](https://stockanalysis.com/quote/kosdaq/033640/financials/)) |
+| SFA Semicon (KRW m) | 400,483 | 367,389 (–8.3%) | –1.5% / –5.3% | 449,633 to Jun 2026 (+37.2%) | –0.9% / –4.3% | Loss-making ([page](https://stockanalysis.com/quote/kosdaq/036540/financials/)) |
+
+Inferences:
+- Chinese OSATs run at roughly 14–16% gross and 5–8% operating margin, near Amkor's 2025 level and far below ASE ATM's 30.6% or TSMC.
+- Korea's independent OSATs are small (Hana Micron ~US$1bn of revenue) and memory-tied. Korea's AI-packaging weight sits inside Samsung, SK hynix (out of scope) and Amkor Korea (Amkor's largest asset base).
+- KYEC's ~26% operating margin is the best evidence in this segment that the test "judge" earns a premium.
+
+### 2.9 Which AI designers are qualified where (dated; confirmation level noted)
 
 | Designer | Packaging supplier(s) | Evidence level |
 |---|---|---|
@@ -362,6 +402,8 @@ Transitions in play for packagers: (3) solder bump to hybrid bonding; (4) silico
 4. **JCET and Samsung (packaging), a tie, low confidence.** Samsung has scale and HBM but weak evidence of a packaging lead. JCET has share and growth but an export-control ceiling.
 5. **SJ Semiconductor.** Insufficient financial data, and extreme concentration (largest customer >70%).
 
+Outside the key set: KYEC (Taiwan, test) has the economics of a "judge". TTM operating margin is ~27% and FY2025 revenue grew 30% (aggregator). Evidence on its customers and AI share is otherwise thin, but it may merit a separate look as a niche quality name. Chinese OSATs (Tongfu, Huatian) and Korean independents (Hana Micron, Nepes, SFA Semicon) show commodity-like margins (§2.8) and rank below the key set on quality.
+
 ---
 
 ## (5) Background priors check
@@ -439,19 +481,20 @@ Value is captured mainly by integrated giants (TSMC above all) in the front-end-
 
 ## (7) What I could not verify
 
-- **TSMC:** 2025 customer concentration (largest customer and top-5 shares) and revenue by geography; 2025 annual report and 20-F not accessed.
-- **ASE:** customer concentration and geography (20-F). The 3Q26 debt and net-debt/equity figures come from a secondary summary, not the 6-K.
-- **Amkor:** largest single customer share (10-K). Its CHIPS award amount was not re-verified.
+- **TSMC and ASE customer names:** both 20-Fs give concentration figures but do not name customers. TSMC's #1 (19%) and #2 (17%) and ASE's >10% customer (~25%) are unnamed; any naming is inference.
+- **ASE:** the 3Q26 debt and net-debt/equity figures come from a secondary summary, not the 6-K.
+- **Amkor:** its CHIPS award amount was not re-verified.
+- **Mid-tier financials:** taken from an aggregator (stockanalysis.com), not from home-market filings (MOPS, DART, cninfo). JCET's aggregator TTM growth (+3.8%) conflicts with its reported 3Q26 growth (+13.5% YoY); unresolved.
 - **Intel:** FY2025 adjusted free cash flow (annual report chart text garbled); Foveros Direct HVM date; any named EMIB-T customer confirmed by the customer.
 - **Samsung:** packaging revenue, I-Cube/X-Cube customers, panel-level status; the 3Q26 primary release (fetch timed out); the Onyang article (403).
-- **Others:** Powertech, Nepes, SFA Semicon, Hana Micron, Huatian and Tongfu 2026 results; JCET FY2025; SJ Semiconductor revenue and profit.
+- **Others:** for Powertech, Nepes, SFA Semicon, Hana Micron, Huatian, Tongfu and KYEC I found only aggregator income statements (§2.8). There is no qualitative 2026 evidence on their AI 2.5D or panel programs (e.g., Powertech or Nepes panel-level lines). SJ Semiconductor revenue and profit were not found.
 - **TrendForce 2025 OSAT ranking:** not found.
 - **Capacity and lead times:** the share of CoWoS outsourced to OSATs; lead times beyond trade estimates; whether TSMC said "sold out" (conflicting sources).
 - **TSMC Arizona packaging volume date:** 2028 (CNA via TrendForce) versus 2029 (The Register).
 - **2027 9.5x/12-HBM CoWoS date:** not re-confirmed in 2026 sources.
 - **Policy:** Taiwan's N-2 overseas-technology rule, Korea's national-core-technology rules and any Section 232 tariff specific to packaging were not verified. Subsidy amounts were not verified for Japan (Rapidus), China (beyond Big Fund backing of SJ Semiconductor) and India (beyond ISM approval facts). US items verified: GF's US$955m CHIPS reallocation including interposers, and the US–Japan Malta initiative (GF 6-K).
 - **Membership and status:** JOINT3 membership (single blog source); Silicon Box Singapore customers and Novara construction status; Micron Sanand.
-- **Europe and Israel:** "no relevant player" is based on limited searching; Amkor Portugal was not checked.
+- **Europe and Israel:** "no relevant player" is based on limited searching. Amkor Portugal exists (US$163m net PP&E at end-2025 per the 10-K), but its AI relevance was not verified.
 - **Local-language searches:** not performed (budget exhausted), so the Korea, Japan and China mid-tier picture is incomplete.
 
 ---
@@ -459,6 +502,9 @@ Value is captured mainly by integrated giants (TSMC above all) in the front-end-
 ## (8) Sources (period covered / publication date)
 
 Primary:
+- TSMC Form 20-F for FY2025 (filed 16 Apr 2026): https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm
+- ASE Technology Holding Form 20-F for FY2025 (filed 1 Apr 2026): https://www.sec.gov/Archives/edgar/data/1122411/000119312526135585/d50802d20f.htm
+- Amkor Form 10-K for FY2025 (filed 20 Feb 2026): https://www.sec.gov/Archives/edgar/data/1047127/000104712726000014/amkr-20251231.htm
 - TSMC 4Q25 earnings call transcript (FY2025; 15 Jan 2026): https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf
 - TSMC 2Q26 earnings call transcript (16 Jul 2026): https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
 - TSMC 3Q26 release, Form 6-K (15 Oct 2026): https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm
@@ -479,6 +525,16 @@ Transcripts and call summaries (secondary transcription of primary events):
 - ASE 3Q26 summary, BigGo (29 Oct 2026): https://finance.biggo.com/news/TW_3711.TW_2026-10-29
 - Amkor 3Q26 call, Motley Fool (26 Oct 2026): https://www.fool.com/earnings/call-transcripts/2026/10/26/amkor-amkr-q3-2026-earnings-call-transcript/
 - Intel 3Q26 call summary, GuruFocus/Yahoo (29 Oct 2026): https://finance.yahoo.com/markets/stocks/articles/intel-corp-intc-q3-2026-051348065.html
+
+Aggregated reported financials (secondary; stockanalysis.com income-statement pages, fetched 12 Nov 2026; TTM periods as stated in §2.8):
+- JCET: https://stockanalysis.com/quote/sha/600584/financials/
+- Tongfu: https://stockanalysis.com/quote/she/002156/financials/
+- Huatian: https://stockanalysis.com/quote/she/002185/financials/
+- Powertech: https://stockanalysis.com/quote/tpe/6239/financials/
+- KYEC: https://stockanalysis.com/quote/tpe/2449/financials/
+- Hana Micron: https://stockanalysis.com/quote/kosdaq/067310/financials/
+- Nepes: https://stockanalysis.com/quote/kosdaq/033640/financials/
+- SFA Semicon: https://stockanalysis.com/quote/kosdaq/036540/financials/
 
 Trade press and analysts (secondary):
 - Lapedus, "Q3 '26 Foundry/OSAT Earnings: Hit or Miss?" (early Nov 2026): https://marklapedus.substack.com/p/q3-26-foundryosat-earnings-hit-or-ded

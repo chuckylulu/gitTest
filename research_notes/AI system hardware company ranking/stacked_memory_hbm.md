@@ -1,8 +1,15 @@
 # Stacked high-bandwidth memory (HBM) for AI processors — makers, supply-demand, roadmaps and business quality (research date 12 Nov 2026)
 
 Scope and method notes (read first):
-- Research date 12 Nov 2026. Primary sources used where possible: Samsung 3Q26 earnings deck (29 Oct 2026), Micron FQ4 FY26 prepared remarks (30 Sep 2026) and FY2026 Form 10-K (fiscal year ended 3 Sep 2026), SK hynix H1 2026 Form 6-K and US IPO prospectus (424B4, July 2026; F-1 filed 24 Jun 2026). SK hynix's own Q3 2026 release was NOT read directly; its Q3 figures come from an AI-assisted Investing.com transcript and VLSI.kr's write-up of the release (both secondary).
-- The session's shared web-search budget ran out part-way through. Per the harness instruction, no further searches were run with any tool; remaining work used pages already found, links followed from those pages, and the filings already downloaded. As a result, mainland China (beyond CXMT financials), Japan, Taiwan's smaller makers, high-bandwidth flash at SanDisk/Kioxia, and US/Korean export-control texts are thin. See section (7).
+- Research date 12 Nov 2026. Primary sources used where possible:
+  - Samsung 3Q26 earnings deck (29 Oct 2026).
+  - Micron FQ4 FY26 prepared remarks (30 Sep 2026) and FY2026 Form 10-K (fiscal year ended 3 Sep 2026).
+  - SK hynix Q3 2026 preliminary-results Form 6-K (28 Oct 2026), H1 2026 6-K, and US IPO prospectus (424B4, July 2026; F-1 filed 24 Jun 2026).
+  - BIS (US Bureau of Industry and Security) release of 2 Dec 2024.
+  - CXMT's own website.
+- SK hynix's Q3 call commentary (HBM, LTAs, capex) comes from an AI-assisted Investing.com transcript and VLSI.kr (secondary).
+- Search tools ran out part-way through. The shared WebSearch budget was exhausted; at the coordinator's direction I tried Exa and Firecrawl, and both returned out-of-credit errors. Later work used pages already found, links followed from them, SEC EDGAR filings and a few constructed primary URLs.
+- As a result, coverage is thin for: mainland China beyond CXMT; Japan; Taiwan's smaller makers; high-bandwidth flash at SanDisk and Kioxia; and Korean export-control texts. See section (7).
 - No share prices, valuation multiples, market capitalisation or price targets are recorded (some sources contained them; they were deliberately dropped).
 - "Company claim, unconfirmed" marks statements no outside party has confirmed. "Secondary" marks trade press/analyst sources.
 
@@ -20,7 +27,7 @@ Volume HBM is a three-company market (SK hynix, Samsung Electronics, Micron), al
 | SK hynix | South Korea | KRX 000660; Nasdaq ADS "SKHY" (US IPO July 2026) | HBM #1 by revenue; HBM3E leader, HBM4 in volume from Q3 2026 | 50% HBM revenue share Q2 2026 (Counterpoint); 56.4% Q1 2026 (IDC); est. 60-70% of Vera Rubin HBM4 |
 | Samsung Electronics | South Korea | KRX 005930 | HBM #2 and rising; first HBM4 mass production (Feb 2026); in-house 4nm base die | 33% HBM share Q2 2026 (Counterpoint); expected by Counterpoint to lead HBM in 2027 |
 | Micron Technology | United States | Nasdaq MU | HBM #3; HBM4 36GB 12-high in volume (Mar 2026); in-house base die | 18-21% HBM share (Counterpoint); only maker with US DRAM fabs planned (Idaho, New York) |
-| CXMT (ChangXin Memory) | Mainland China | Listing status not confirmed (see Gaps) | #4 DRAM maker; HBM lines "in development" in Shanghai | 9% DRAM revenue share Q3 2026; 9M 2026 net profit forecast RMB 131-132.5bn |
+| CXMT (ChangXin Memory) | Mainland China | Shanghai STAR Market, SSE 688825 (ticker on CXMT's site; listing date not verified) | #4 DRAM maker; HBM lines "in development" in Shanghai | 9% DRAM revenue share Q3 2026; TTM to Sep 2026 operating margin ~79%; no confirmed HBM shipments |
 | TSMC | Taiwan | TWSE 2330 / NYSE TSM | Makes HBM4 logic base die for SK hynix (12nm on 16-high HBM4 per VLSI.kr); CoWoS packaging | Adjacent — captures base-die and packaging value |
 | Samsung Foundry | South Korea | Part of Samsung Electronics | Makes Samsung's 4nm HBM4/HBM4E base die ("HBM B-Die") | Foundry recovery in 2026 attributed partly to base dies |
 | Nanya Technology | Taiwan | TWSE 2408 | Conventional DRAM, ~2% revenue share | No HBM activity found; left out of key list |
@@ -36,7 +43,25 @@ Sources for the table:
 - SK hynix Nasdaq ADS "SKHY" and KRX code 000660 — [SK hynix 424B4 prospectus (July 2026)](https://www.sec.gov/Archives/edgar/data/0002120882/000119312526299963/d32785d424b4.htm)
 - NVIDIA qualification of all three (5 Jun 2026) and allocation estimates — [Yahoo/Investing.com](https://finance.yahoo.com/sectors/technology/articles/nvidia-certifies-samsung-sk-hynix-133001560.html); [VLSI.kr](https://www.vlsi.kr/en/hbm4-three-way-race-en/)
 - Samsung first HBM4 mass production 12 Feb 2026; Micron HBM4 mass production 16 Mar 2026 — [Tech-Insider (secondary)](https://tech-insider.org/hbm4-memory-shortage-amd-samsung-sk-hynix-price-spike-2026/); [Silicon Analysts (secondary)](https://siliconanalysts.com/tools/hbm-analysis)
-- CXMT financials and Shanghai HBM lines — [TrendForce news 20 Oct 2026](https://www.trendforce.com/news/2026/10/20/news-cxmts-earnings-boom-faces-test-as-3q-profit-growth-slows-to-1-4-qoq-whats-behind-the-slowdown/)
+- **CXMT forecasts and Shanghai HBM lines (20 Oct 2026, pre-results):**
+  - 9M 2026 revenue RMB 265-270bn (more than 7x YoY).
+  - 9M 2026 net profit RMB 131-132.5bn, against a 9M 2025 net loss of RMB 5.3bn.
+  - Q3 2026 revenue RMB 114.7-119.7bn; net profit RMB 53.4-54.9bn (+1-4% QoQ).
+  - Two 12-inch DRAM fabs in Hefei and one in Beijing, each with capacity of up to 100k wafers/month.
+  - New DRAM and HBM lines in development in Shanghai.
+  - Source: [TrendForce news 20 Oct 2026](https://www.trendforce.com/news/2026/10/20/news-cxmts-earnings-boom-faces-test-as-3q-profit-growth-slows-to-1-4-qoq-whats-behind-the-slowdown/)
+- **CXMT listing and products (primary):** the website header shows ticker "SSE:688825". On 20 Sep 2026 CXMT announced mass production of its 5th-generation (G5) DRAM platform (11.95nm half active-area pitch). It also announced 24Gb LPDDR5X products on G5, with die per wafer more than 50% above G4 (company claim). HBM is not mentioned on the page. Source: [CXMT news page](https://www.cxmt.com/en/news/info_22.html)
+- **CXMT financial history (aggregator of company filings, secondary):**
+
+  | Period | Revenue (CNY) | Net result (CNY) | Margins |
+  |---|---|---|---|
+  | FY2022 | 8.29bn | loss 8.33bn | n/a |
+  | FY2023 | 9.09bn | loss 16.34bn | n/a |
+  | FY2024 | 24.18bn | loss 7.15bn | n/a |
+  | FY2025 | 61.80bn | profit 1.88bn | gross margin 40.2% |
+  | TTM to 30 Sep 2026 | 298.74bn | profit 139.2bn | gross 83.9%, operating 79.5% |
+
+  Source: [stockanalysis.com CXMT financials](https://stockanalysis.com/quote/sha/688825/financials/)
 - TSMC 12nm base die on SK hynix 16-high HBM4 (CES 2026) — [VLSI.kr bonding article (secondary)](https://www.vlsi.kr/en/hbm4-bonding-battle-en/); Samsung 4nm base die — [TrendForce 23 Jun 2026](https://www.trendforce.com/news/2026/06/23/news-memory-giants-split-on-hbm4-strategy-samsung-hbm4-sales-reportedly-tops-1b-sk-hynix-slows-ramp/); "HBM B-Die" sales lifted Foundry — [Samsung 3Q26 deck](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_3Q_conference_eng.pdf); Micron in-house base logic die — [Micron FY2026 10-K](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm)
 - Nanya 2% DRAM share — [Counterpoint](https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share)
 - Tongluo purchase from PSMC (US$1.8bn, Mar 2026), Hiroshima cleanroom (Jul 2026, output late 2028), Gujarat shipments in 2026, Micron naming CXMT and YMTC as state-backed competitors — [Micron FY2026 10-K](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm)
@@ -48,7 +73,8 @@ Sources for the table:
 
 ### Gaps (coverage thin — say so)
 - **Mainland China beyond CXMT:** Huawei's in-house HBM, YMTC's or XMC's HBM efforts, and Tongfu/JCET packaging were not verified (search budget exhausted). One sourced fact: SK hynix stopped selling to Huawei in September 2020 ([424B4](https://www.sec.gov/Archives/edgar/data/0002120882/000119312526299963/d32785d424b4.htm)).
-- **CXMT listing status:** TrendForce reported that IPO counselling began in July 2025 ([TrendForce 8 Jul 2025](https://www.trendforce.com/news/2025/07/08/news-chinas-cxmt-reportedly-begins-ipo-counselling-aims-to-be-first-memory-chip-firm-on-a-share/)). October 2026 reports cite a shareholders' meeting and earnings forecasts carried by Star Market Daily, which fits public-company disclosure, but no source confirming a STAR Market listing, its date or ticker was retrieved. The lead that CXMT filed in late 2025 is not verified.
+- **CXMT listing details:** the listing is confirmed by the "SSE:688825" ticker on CXMT's site; 688-codes are STAR Market. Not verified: the filing date (the brief's late-2025 lead), listing date, amount raised and prospectus figures. TrendForce reported IPO counselling began in July 2025 ([TrendForce 8 Jul 2025](https://www.trendforce.com/news/2025/07/08/news-chinas-cxmt-reportedly-begins-ipo-counselling-aims-to-be-first-memory-chip-firm-on-a-share/)).
+- **CXMT HBM:** no HBM product, customer or shipment was confirmed. The only HBM evidence is "new DRAM and HBM production lines in development in Shanghai" (36Kr via TrendForce, Oct 2026).
 - **Japan:** the SoftBank/Intel "Saimemory" stacked-DRAM venture and Kioxia's high-bandwidth flash were not verified.
 - **Taiwan:** Winbond's CUBE and AP Memory's stacked DRAM were not checked.
 - **Europe and Israel:** no HBM or DRAM maker was found in the sources reviewed. Absence was not confirmed in local-language sources.
@@ -106,6 +132,12 @@ All three key makers are in an unprecedented upcycle: Q3 2026 operating margins 
 - **Customer concentration:** largest customer 23.9% of 2025 revenue (not named); two largest 14.8% and 12.4% of Q1 2026 revenue.
 - **Geography (by sales-subsidiary location):** US 47.0% (2023), 63.4% (2024), 68.8% (2025), 64.7% (Q1 2026). China 30.9%, 23.5%, 19.7%, 24.3% over the same periods. Asia 7.4% (2025).
 - **Manufacturing footprint:** Icheon and Cheongju (Korea), Wuxi (China, DRAM), Dalian (China, NAND, ex-Intel), Chongqing (China, assembly/test).
+- **Primary confirmation of Q3 2026 (preliminary, unaudited, 28 Oct 2026):**
+  - Q3 revenue KRW 104,615.5bn; operating profit KRW 83,333.8bn; pre-tax profit KRW 50,708.5bn; profit for the period KRW 39,775.6bn.
+  - 9M 2026 revenue KRW 236,510.5bn; 9M operating profit KRW 181,486.7bn (about 76.7% margin, my arithmetic).
+  - Q3 2025 comparison: revenue KRW 24,448.9bn, operating profit KRW 11,383.4bn.
+  - Source: [SK hynix 6-K, preliminary results, 28 Oct 2026](https://www.sec.gov/Archives/edgar/data/2120882/000119312526434994/d162547d6k.htm)
+- **Solidigm (NAND subsidiary):** the pre-IPO raise and IPO plans were discontinued ([6-K 23 Oct 2026](https://www.sec.gov/Archives/edgar/data/2120882/000119312526429184/d159239d6k.htm)). SK hynix says Solidigm is "reviewing various measures" to expand capacity, but a reported ~KRW 60tn US NAND fab is "not determined" ([6-K 29 Oct 2026](https://www.sec.gov/Archives/edgar/data/2120882/000119312526436872/d183583d6k.htm)).
 - Sources: [Investing.com transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-sk-hynix-posts-record-q3-2026-results-shares-jump-after-hours-93CH-4977343); [VLSI.kr Q3 facts](https://www.vlsi.kr/en/sk-hynix-q3-2026-earnings-14-facts-en/); [6-K H1 2026](https://www.sec.gov/Archives/edgar/data/0002120882/000119312526354777/d147827d6k.htm); [424B4](https://www.sec.gov/Archives/edgar/data/0002120882/000119312526299963/d32785d424b4.htm)
 
 **(e) Resilience**
@@ -206,6 +238,21 @@ All three key makers are in an unprecedented upcycle: Q3 2026 operating margins 
 - Source for the above: [10-K](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm)
 - Management: "even at floor prices, we expect margins meaningfully above any prior cycle peak margins" (company claim, unconfirmed; [Investing.com Micron transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-micron-tops-q4-2026-estimates-as-demand-stays-hot-93CH-4925992)).
 
+### Cited Findings — cross-company export controls (China)
+- **BIS rule of 2 Dec 2024 (primary):**
+  - New controls on US-origin HBM and on foreign-produced HBM subject to US rules under the advanced-computing foreign direct product rule. This reaches Korean-made HBM.
+  - "Certain HBM will be eligible for authorization under new License Exception HBM."
+  - 140 Entity List additions, including Chinese fabs and tool makers.
+  - Effective 2 Dec 2024; some compliance dates 31 Dec 2024.
+  - The release does not state the technical thresholds.
+  - Source: [BIS press release, 2 Dec 2024](https://www.bis.gov/press-release/commerce-strengthens-export-controls-restrict-chinas-capability-produce-advanced-semiconductors-military)
+- **Korean makers' China fabs:**
+  - VEU status ended 31 Dec 2025; SK hynix holds an annual BIS licence for 2026.
+  - SK hynix halted sales to Huawei from Sept 2020.
+  - BIS guidance (May 2025) warned that using Chinese-made advanced chips risks violating US controls.
+  - Source: [SK hynix 424B4](https://www.sec.gov/Archives/edgar/data/0002120882/000119312526299963/d32785d424b4.htm)
+- **Micron:** the CAC ban (May 2023) still constrains it; "the U.S. government has in the past and continues to restrict U.S. firms, including us, from selling products ... to certain of our customers" ([Micron 10-K](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm)).
+
 ### Inferences
 - **Position:** all three own a physical constraint AI cannot remove — DRAM cleanroom space. HBM needs about 3x the wafer area per bit of DDR5, and about 4x for HBM4 per one secondary estimate ([Luminix (secondary)](https://www.useluminix.com/reports/industry-analysis/dram-cycle-position-analysis-peak-timing-indicators)). New fabs take 2-4 years: Micron's New York fab outputs in 2030; ID1 in mid-2027.
 - **Lead:** the "judge" is the customer's qualification gate, re-run every generation. Counterpoint's analyst says each generation is "resetting leadership". So SK hynix's HBM lead is generational, not structural, as its fall from 64% to 50% in four quarters shows.
@@ -214,7 +261,7 @@ All three key makers are in an unprecedented upcycle: Q3 2026 operating margins 
 - **Profit composition:** all three are now mostly price-driven. Counterpoint's Q3 2026 figures show DRAM bits +4% against revenue +369% YoY.
 
 ### Gaps
-- SK hynix's Q3 2026 primary release and its 2026 capex total were not read. HBM revenue is not disclosed by any of the three.
+- SK hynix's Q3 2026 preliminary figures are confirmed by 6-K. Its earnings presentation (HBM narrative) and 2026 capex total were not read. None of the three discloses HBM revenue.
 - Return on invested capital was not found for any of the three. Samsung's ROE is the deck figure; others would have to be computed.
 - Samsung's customer and geographic revenue split, the size of its China fabs (Xi'an NAND, Suzhou packaging), and its export-licence status were not verified.
 - Micron's FY2023 downturn figures were not in the FY2026 10-K excerpts read.
@@ -387,25 +434,25 @@ For memory makers, the transition that matters is (3), solder-bump/thermo-compre
 
 ### Takeaway
 The biggest gaps:
-- China beyond CXMT's financials: Huawei, YMTC and XMC HBM efforts; CXMT's HBM progress and listing.
-- Primary US BIS and Korean trade-ministry texts on HBM exports to China.
+- China beyond CXMT's financials and listing: Huawei, YMTC and XMC HBM efforts; CXMT's HBM progress.
+- The detailed text of US BIS HBM rules (only the 2 Dec 2024 release was read) and Korean trade-ministry statements.
 - Japan (Saimemory, Kioxia high-bandwidth flash).
 - Absolute HBM market size.
-- SK hynix's own Q3 2026 release.
+- SK hynix's Q3 2026 earnings presentation. The preliminary figures are confirmed by 6-K; the HBM narrative is secondary.
 
-All were affected by the exhausted search budget.
+All were affected by search tools running out: the WebSearch budget, then Exa and Firecrawl credits.
 
 ### Cited Findings
 - **Leads given in the brief:**
   - (1) SK hynix saying in October 2025 that 2026 output was sold out: not read directly. It is superseded by the October 2026 claim of "effectively sold out through 2029" ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-sk-hynix-posts-record-q3-2026-results-shares-jump-after-hours-93CH-4977343)).
   - (2) Samsung HBM4 shipments in early 2026: CONFIRMED — mass production and shipment on 12 Feb 2026 ([TrendForce 29 May 2026](https://www.trendforce.com/news/2026/05/29/news-samsung-starts-shipping-industry-first-hbm4e-samples-three-months-after-hbm4-mass-production-performance-up-over-20/); [Tech-Insider](https://tech-insider.org/hbm4-memory-shortage-amd-samsung-sk-hynix-price-spike-2026/)).
   - (3) Micron raising FY2026 capex to about US$20bn in December 2025: the December statement was not read. It is superseded by FY2026 actual PP&E spending of US$30.71bn gross, or about US$27.4bn after US$3.32bn of incentives (my arithmetic from the [10-K](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm)).
-  - (4) CXMT filing for a STAR Market listing in late 2025: NOT VERIFIED. Only the July 2025 IPO counselling report was found ([TrendForce](https://www.trendforce.com/news/2025/07/08/news-chinas-cxmt-reportedly-begins-ipo-counselling-aims-to-be-first-memory-chip-firm-on-a-share/)).
+  - (4) CXMT filing for a STAR Market listing in late 2025: PARTLY VERIFIED. CXMT is now listed — its website shows "SSE:688825" ([CXMT](https://www.cxmt.com/en/news/info_22.html)). The late-2025 filing date, listing date and amount raised were not verified. The July 2025 IPO-counselling report is the only dated step found ([TrendForce](https://www.trendforce.com/news/2025/07/08/news-chinas-cxmt-reportedly-begins-ipo-counselling-aims-to-be-first-memory-chip-firm-on-a-share/)).
 - A May 2025 rumour that the US was weighing adding CXMT to the Entity List (headline only; [TrendForce](https://www.trendforce.com/news/2025/05/16/news-u-s-rumored-to-mull-adding-dram-giant-cxmt-and-more-chinese-tech-firms-to-entity-list/)). Its 2026 status is unknown.
 
 ### Gaps
 - **Export controls:**
-  - The December 2024 BIS rule restricting HBM sales to China, and any 2025-26 amendments.
+  - The technical thresholds of the December 2024 BIS HBM rule, and any 2025-26 amendments. The release itself is cited in section (2); the Federal Register text was not read.
   - Whether the BIS annual licence for Korean makers' China fabs has been renewed for 2027.
   - Samsung's China-fab licence status.
   - Korean trade-ministry statements.
@@ -427,7 +474,12 @@ All were affected by the exhausted search budget.
 - Samsung Electronics, 3Q 2026 earnings call deck, 29 Oct 2026 — https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_3Q_conference_eng.pdf
 - Micron, FQ4 FY26 prepared remarks, 30 Sep 2026 — https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf
 - Micron, Form 10-K, fiscal year ended 3 Sep 2026 (filed Oct 2026) — https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm
+- SK hynix, Form 6-K preliminary results Q3 2026, 28 Oct 2026 — https://www.sec.gov/Archives/edgar/data/2120882/000119312526434994/d162547d6k.htm
+- SK hynix, Form 6-K Solidigm clarifications, 23 Oct 2026 — https://www.sec.gov/Archives/edgar/data/2120882/000119312526429184/d159239d6k.htm — and 29 Oct 2026 — https://www.sec.gov/Archives/edgar/data/2120882/000119312526436872/d183583d6k.htm
 - SK hynix, Form 6-K semi-annual report, H1 2026 — https://www.sec.gov/Archives/edgar/data/0002120882/000119312526354777/d147827d6k.htm
+- US BIS press release on advanced-semiconductor and HBM controls, 2 Dec 2024 — https://www.bis.gov/press-release/commerce-strengthens-export-controls-restrict-chinas-capability-produce-advanced-semiconductors-military
+- CXMT news page (G5 DRAM announcement, 20 Sep 2026; ticker SSE:688825) — https://www.cxmt.com/en/news/info_22.html
+- stockanalysis.com, CXMT financials, annual to FY2025 and TTM to 30 Sep 2026 (secondary aggregator of filings; fundamentals only) — https://stockanalysis.com/quote/sha/688825/financials/
 - SK hynix, Form F-1 (filed 24 Jun 2026) — https://www.sec.gov/Archives/edgar/data/0002120882/000119312526280172/d32785df1.htm
 - SK hynix, Form 424B4 prospectus (July 2026; data to Q1 2026) — https://www.sec.gov/Archives/edgar/data/0002120882/000119312526299963/d32785d424b4.htm
 
