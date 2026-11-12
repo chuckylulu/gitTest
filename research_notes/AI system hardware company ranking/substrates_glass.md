@@ -158,7 +158,7 @@ The shortage is most credible through 2027. 2028 is the swing year, because most
 - **Shares:**
   - BofA: Ibiden 70–80% of GPU substrates (secondary).
   - Low-reliability blogs: Unimicron ~22% of global ABF, >70% of ASIC substrates, ~30% of NVIDIA AI substrate volume ([Encyclopedia of Stocks](https://encyclopediaofstocks.substack.com/p/abf-substrate-market-ai-driven-super)).
-  - I found **no reliable public evidence** of supplier shares at Google, Amazon, Broadcom, Marvell or MediaTek.
+  - I found **no reliable public evidence** of supplier shares at Google, Amazon, Broadcom, Marvell or MediaTek. The only supplier link found for Broadcom is Toppan's Broadcom-backed Singapore plant (above).
 
 #### Cited findings: pricing
 - **Substrates:**
@@ -867,6 +867,7 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
 - Ajinomoto, FY2026 Revised Forecast by Segment (9 Nov 2026) — https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111116/teaserItems1/01/linkList/02/link/FY26Q2_Forecast_E.pdf
 - AT&S ad hoc (13 Jun 2026), via finanzwire — https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV
 - LPKF Half-yearly Financial Report 2026 — https://www.lpkf.com/fileadmin/mediafiles/Half-yearly_Financial_Report_2026.pdf
+- TOPPAN, "TOPPAN Establishes FC-BGA Substrate Production Site in Singapore" (30 Sep 2026) — https://www.holdings.toppan.com/en/news/2026/09/newsrelease260930_1.html
 - DNP, completion of investment in the Shinko SPC (19 Mar 2025) — https://www.global.dnp/en/news/detail/2025/03/0319_20176512/
 - Press Information Bureau (India), Odisha 3D glass packaging unit (Apr 2026) — https://www.pib.gov.in/PressReleasePage.aspx?PRID=2253276&reg=3&lang=2
 
