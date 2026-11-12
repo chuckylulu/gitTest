@@ -233,7 +233,7 @@ None of the four owns a regulator-recognised "judge". What they own are privileg
 
 ### Takeaway
 - PANW completed its two large deals in early 2026: Chronosphere for $3.0B and CyberArk for $21.1B, mostly paid in stock. It then made four tuck-ins (Koi, Portkey, Embrace, Console), and The Information reported talks to buy Clutch Security for about $500M.
-- CRWD has done about nine AI, identity and data deals since September 2025.
+- CRWD has done seven AI, identity, browser and exposure-management deals since September 2025: four closed, one pending and two only announced.
 - ZS bought Red Canary ($651M) plus three AI, data and browser tuck-ins.
 - S's last acquisitions (Prompt Security, Observo AI) closed in September 2025.
 - No confirmed 2026 takeover approach for S was found. The July-2025 report of Palo Alto–SentinelOne talks was never confirmed.
@@ -265,7 +265,7 @@ None of the four owns a regulator-recognised "judge". What they own are privileg
   - A change of control would accelerate the Israeli tax liability, about $259.7M less payments — [S 10-Q](https://www.sec.gov/Archives/edgar/data/0001583708/000158370826000055/s-20260731.htm)
 
 ### Inferences
-- PANW's plan is now acquisition-heavy. About $26B of deals in roughly eight months makes CyberArk integration the single largest execution risk for its quality score. The deals also shift its ROIC down for years.
+- PANW's plan is now acquisition-heavy. About $25B of deals in roughly eight months makes CyberArk integration the single largest execution risk for its quality score. The deals also shift its ROIC down for years.
 - CRWD's deals are small relative to its EV ($2B or less in total) and fill AI-agent, identity, browser and exposure-management gaps.
 - ZS's Red Canary deal brought a labour-heavy MDR book with churn, so far a drag rather than a lift.
 - S's $1.25B convertible, with proceeds explicitly available for "potential acquisitions and strategic" purposes, makes S more likely to be an acquirer than before. A sale remains possible but is unconfirmed.
@@ -390,11 +390,11 @@ Suggested verdicts: PANW coherent; CRWD coherent; ZS partly coherent; S partly c
 
 ### Inferences
 - **PANW — coherent.**
-  - Transitions: 2, 3, 4, 5 and 6 (adjacent). Said vs done: products shipped (XSIAM, Prisma AIRS, Device Security/OT), gated-model access confirmed, about $26B of acquisitions closed. The plan is funded by FCF and cash.
+  - Transitions: 2, 3, 4, 5 and 6 (adjacent). Said vs done: products shipped (XSIAM, Prisma AIRS, Device Security/OT), gated-model access confirmed, about $25B of acquisitions closed or agreed. The plan is funded by FCF and cash.
   - Must go right: CyberArk and identity cross-sell; XSIAM displacing SIEMs; AI-security monetisation; gross margin holding against memory costs; organic NGS ARR growth staying high as the LLM-migration benefit fades.
   - Timing is plausible, but integration risk is high, given goodwill at about 45% of assets.
 - **CRWD — coherent.**
-  - Transitions: 2, 4, 6 (adjacent) and 1 (services about 5%). Said vs done: a single-agent platform with Flex, AIDR, Next-Gen SIEM and identity, all shipped; Glasswing founding partner; about nine acquisitions. The plan is funded.
+  - Transitions: 2, 4, 6 (adjacent) and 1 (services about 5%). Said vs done: a single-agent platform with Flex, AIDR, Next-Gen SIEM and identity, all shipped; Glasswing founding partner; seven acquisitions since September 2025 (one pending, two only announced). The plan is funded.
   - Must go right: net new ARR acceleration persisting; SBC falling as a share of revenue so that FCF becomes owner earnings; Delta and the DOJ/SEC matters resolving without material loss; model makers not commoditising endpoint detection and response.
 - **ZS — partly coherent.**
   - Transitions: 2 (early), 3 (Zero Trust Branch/OT), 4 (no confirmed gated access) and 1 (the Red Canary MDR churn). The architecture logic is coherent: inline zero trust for agents.

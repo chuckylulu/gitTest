@@ -256,7 +256,7 @@ Confirmed security-vendor participants cluster in a handful of large US platform
 - Chinese substitutes: 360 Security unveiled "Yitian Tulong" at ISC.AI 2026 — Tulongfeng (vulnerability discovery, "China's version of Mythos") and Yitianzhen (automated defence and IR); Tulongfeng reportedly found 3,432 vulnerabilities, 105 confirmed by Chinese authorities; Zhou Hongyi: "domestic models still have a 20%-30% gap in base capability"; Reuters "could not independently verify the claims" — [Insurance Journal (Reuters), 2026-06-26](https://www.insurancejournal.com/news/international/2026/06/26/875418.htm); Qi An Xin's chairman (2 Jun 2026 keynote) favoured a "three-in-one vertical defense upgrade framework" over a domestic Mythos-equivalent; Chinese experts estimated in April 2026 Chinese firms could match Mythos "within months" — [Natto Thoughts, 2026-08-26](https://www.nattothoughts.com/p/from-the-frontier-ai-arms-race-to)
 
 ### Inferences
-- The gated programmes reinforce scale: the three largest US platforms appear in every programme, while mid-cap specialists (Zscaler, SentinelOne, Rapid7, Qualys) do not appear in any published list. This may reflect unpublished membership rather than exclusion.
+- The gated programmes reinforce scale: Palo Alto Networks and CrowdStrike appear in all three programmes and Cisco in two, while mid-cap specialists (Zscaler, SentinelOne, Rapid7, Qualys) do not appear in any published list. This may reflect unpublished membership rather than exclusion.
 - Non-US access is mostly via consultancies (Capgemini, Big Four networks), Japanese conglomerates and Korean chaebols, and is subject to the US government's gate (June directive; Specialized Access vetted with the US government).
 
 ### Gaps
@@ -494,12 +494,6 @@ Three gated programmes matter (Anthropic Glasswing/CVP, OpenAI TAC/Daybreak, Goo
 | AWS | Distributor; model-agnostic; dependent | None | Usage (unpriced) | AWS op. income $17.8B (Q3 2026) | Dependent on others' gates | 1, 2, 4 (dependent) | Partly coherent | Negligible share — cannot assess |
 | Meta / Chinese labs | No security business | — | — | — | Open weights shape attacker gap | — | Not applicable | Cannot assess |
 
-### Inferences
-- The programme tables show the gates are reinforcing incumbency among a few US platforms and global consultancies; the most exposed vendors are those absent from all three lists in sub-segments the labs now serve directly (code scanning, pentest/bounty).
-
-### Gaps
-- Participant lists are partial by design (Anthropic ~200 orgs, Google >650/"thousands", OpenAI "hundreds of teams"); Tables A and B list only names found in public sources as of 12 Nov 2026.
-
 #### Dated source list (publication date; access notes)
 - Anthropic — Claude Code Security (2026-02-20): https://www.anthropic.com/news/claude-code-security
 - Anthropic — Project Glasswing page (2026-04-07; update 2026-10-06): https://www.anthropic.com/glasswing
@@ -587,3 +581,10 @@ Three gated programmes matter (Anthropic Glasswing/CVP, OpenAI TAC/Daybreak, Goo
 - Yahoo Finance — CrowdStrike −9/10% as AI trade unwinds (2026-11-05): https://finance.yahoo.com/markets/stocks/articles/crowdstrike-sinks-9-palo-alto-181856889.html
 - SecurityWeek — Will AI kill bug bounty? (2026-06-09): https://www.securityweek.com/will-ai-kill-the-bug-bounty-industry/
 - Low-quality secondary used once (Barclays quote): https://wilsonkumalo.dev/blog/claude-code-security-triggers-historic-cybersecurity-stock-collapse-when-ai-becomes-the-disruption-1772015112869
+
+### Inferences
+- The programme tables show the gates are reinforcing incumbency among a few US platforms and global consultancies; the most exposed vendors are those absent from all three lists in sub-segments the labs now serve directly (code scanning, pentest/bounty).
+
+### Gaps
+- Participant lists are partial by design (Anthropic ~200 orgs, Google >650/"thousands", OpenAI "hundreds of teams"); Tables A and B list only names found in public sources as of 12 Nov 2026.
+- Not checked in this session because the shared web-search budget ran out: Big Sleep/Sec-Gemini 2026 updates, Mandiant and Google Unified Security figures, AWS automated-reasoning products, OpenAI security acquisitions beyond the Trail of Bits report, Copilot Autofix metrics, and OT vendors' (Claroty, Armis, Nozomi) programme status. A Google DeepMind claim (10 Nov 2026) to have formally verified the production machine code of the Signal protocol is a lead from earlier notes only — [X post](https://x.com/pushmeet/status/2120127611137634376) (returned HTTP 402).

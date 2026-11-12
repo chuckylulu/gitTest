@@ -208,7 +208,7 @@ At most one company from these three countries, Trend Micro, has a defensible ca
   - Source: [TechNode Global/PR Newswire Asia, August 2026](https://technode.global/prnasia/autocrypt-wins-def-con-34-automotive-hacking-competition-ranking-first-among-83-teams/)
 
 #### CyCraft Technology (Taiwan Innovation Board: 7823, "CyCraft-KY")
-- **Listing.** Pre-listing auction 21–23 Jan 2026: 1,580 (thousand) shares; floor NT$70.31; provisional underwriting price NT$90. Source: [CyCraft, January 2026](https://www.cycraft.com/en/news/auction-20260120)
+- **Listing.** Pre-listing auction 21–23 Jan 2026: "1,580 shares" as stated (probably 1,580 lots of 1,000 shares, i.e. 1.58m shares — my inference); floor NT$70.31; provisional underwriting price NT$90. Source: [CyCraft, January 2026](https://www.cycraft.com/en/news/auction-20260120)
   - Listed 2026-02-05. Source: [CyCraft listing release (search-result summary; page now 404)](https://www.cycraft.com/en/news/taiwans-first-ai-cybersecurity-stock-en-20260205); [Dealroom](https://app.dealroom.co/news/feed/taiwanese-ai-cybersecurity-firm-cycraft-lists-on-taiwan-innovation-board-after-22-76-revenue-growth)
 - **Company-reported figures** [company claims, unconfirmed] ([CyCraft, January 2026](https://www.cycraft.com/en/news/auction-20260120)):
   - 2025 revenue +23%; subscriptions 90% of revenue; retention above 90%; deferred revenue +42% YoY at Q3 2025; cash NT$519m; no debt.
@@ -216,7 +216,7 @@ At most one company from these three countries, Trend Micro, has a defensible ca
   - More than 10 IT-service alliances in Japan; domestic partners CHT Security and HONLYNN.
   - "Recognized seven times" by Gartner; "the only Taiwanese vendor to pass" MITRE ATT&CK evaluations three times.
   - New products: XecGuard (an LLM firewall, slated for H1 2026) and XecART (AI red-teaming).
-  - Gross margin 95% per [Dealroom](https://app.dealroom.co/news/feed/taiwanese-ai-cybersecurity-firm-cycraft-lists-on-taiwan-innovation-board-after-22-76-revenue-growth) (company-sourced).
+  - Gross margin 95%: this figure appeared only in a search-result summary of the listing coverage and was not seen on an opened page. It is company-sourced. Source: [Dealroom](https://app.dealroom.co/news/feed/taiwanese-ai-cybersecurity-firm-cycraft-lists-on-taiwan-innovation-board-after-22-76-revenue-growth)
 - **Trailing metrics (2026-11-12).** Revenue (TTM) TWD 383.25m; operating margin −11.31%; net cash TWD 649.68m; FCF (TTM) TWD 2.06m. Source: [StockAnalysis](https://stockanalysis.com/quote/tpe/7823/statistics/)
 
 #### CHT Security (TPE: 7765; Chunghwa Telecom group)
