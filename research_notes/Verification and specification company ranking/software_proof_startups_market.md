@@ -99,7 +99,7 @@ About fifteen organisations matter. Few have shipped a priced product for provin
 ## 2. Background items checked: Harmonic's C and Verilog launch; Harmonic's and Axiom's 2026 funding and traction; what "Axiom" means
 
 ### Takeaway
-(i) Confirmed, with two refinements. Harmonic announced C and Verilog verification on 27 Oct 2026, and its documentation names SystemVerilog, not plain Verilog. What shipped is a usage-priced service (web app, command line, Python SDK, MCP server), not a seat licence. The only customer quoted by name is the chip start-up Tensordyne, plus a General Atomics fusion-lab user reported by Reuters.
+(i) Confirmed, with two refinements. Harmonic announced C and Verilog verification on 27 Oct 2026, and its documentation names SystemVerilog, not plain Verilog. What shipped is a usage-priced service (web app, command line, Python SDK, MCP server), not a seat licence. The only customer quoted by name is the chip company Tensordyne, plus a General Atomics fusion-lab user reported by Reuters.
 (ii) Harmonic raised no new round in 2026: its Series C closed in Nov 2025, and Nvidia's NVentures joined it in Jan 2026. Axiom raised $200M at $1.6B+ in Mar 2026. Neither discloses revenue.
 (iii) In this field "Axiom" means Axiom Math (legal name Axiom Quant Inc., prover AxiomProver). It should not be confused with axiom.xyz, a zero-knowledge proof company that also uses Lean.
 
@@ -270,7 +270,7 @@ Harmonic is the only independent North American company with a shipped, usage-pr
 ## 4. Is a paying market for verified software forming (transition 6), and who is the buyer?
 
 ### Takeaway
-A market is forming but is still small and fragmented. Documented money comes mainly from US defence research (DARPA programmes, OTAs, SBIRs) and from crypto protocols' recurring security budgets, mostly spent on audit labour. Regulators have begun to grant credit for machine-checked evidence in avionics. Cloud providers and AI labs act as sponsors and collaborators, not yet as buyers or acquirers of proof start-ups. I found no evidence on insurers and no credible market-revenue figure for AI-native proof.
+A market is forming but is still small and fragmented. Documented money comes mainly from US defence research (DARPA programmes, OTAs, SBIRs) and from crypto protocols' recurring security budgets, mostly spent on audit labour. In avionics, certification credit has been claimed for a formally verified compiler (no authority named). Cloud providers and AI labs act as sponsors and collaborators, not yet as buyers or acquirers of proof start-ups. I found no evidence on insurers and no credible market-revenue figure for AI-native proof.
 
 ### Cited Findings
 - **Government, defence research:**
@@ -311,7 +311,7 @@ A market is forming but is still small and fragmented. Documented money comes ma
     - An Aave DAO proposal (Oct 2025) paid $2.39M for 12 months of continuous security (formal verification, manual audits, fuzzing).
     - https://www.certora.com/blog/ai-formal-verification-smart-contracts-costs-use-cases ; https://www.certora.com/pricing
   - A DEV Community post puts the audit market at "~$500M/year", rising to about $5B a year with AI, without sources [UNVERIFIED]. https://dev.to/ohmygod/how-ai-agents-can-audit-smart-contracts-in-2026-a-technical-deep-dive-5gl
-  - Security firms: CertiK revenue range $10–50M per Dealroom [UNVERIFIED]; Veridise and RV as above. axiom.xyz is an example of formal verification bought by Ethereum infrastructure (an Ethereum Foundation grant) [PRIMARY].
+  - Security firms: CertiK revenue range $10–50M per Dealroom [UNVERIFIED]; Veridise and RV as above. The Ethereum Foundation funded Nethermind Research's Lean verification of axiom.xyz's OpenVM, an example of crypto infrastructure paying for proofs [PRIMARY].
 - **AI labs as buyers or acquirers:**
   - Anthropic collaborated with Theorem (Oct 2026); no payment was disclosed [PRIMARY].
   - NVentures invested in Harmonic [SECONDARY].
@@ -338,7 +338,7 @@ Pricing models observed:
   1. US defence and government research agencies, the only buyer with documented contract values for proof work.
   2. Crypto protocols, with recurring security budgets but mostly for audit labour, so proof is a premium add-on.
   3. Chip designers, an early but natural fit for property proofs.
-  4. Regulated industries, where the CompCert avionics credit shows regulators can accept machine-checked evidence, though buyers are tool qualifiers rather than start-up customers.
+  4. Regulated industries, where the CompCert avionics case shows certification credit can be claimed for machine-checked evidence (authority not named), though the buyers there qualify tools rather than buy from start-ups.
   5. Cloud providers and AI labs, as sponsors and collaborators.
 - Estimate, clearly labelled: I found no credible figure for AI-native proof revenue in 2025–2026. Code Metal is excluded: its proof component is unverified and its contract values are undisclosed apart from the $80M OTA claim. For the rest, the evidence is consistent with little recurring revenue: Axiom reportedly has none, Harmonic's paid software and hardware product launched on 27 Oct 2026, Theorem is in beta, and &Truth has no customers. The investor figure of "low single-digit billions" refers to traditional formal verification, much of it chip-design tools covered by other researchers. It does not measure this segment.
 
@@ -350,7 +350,7 @@ Pricing models observed:
 ## 5. Transition 7: are general models from AI labs making independent proof start-ups redundant?
 
 ### Takeaway
-Not yet, but the gap is narrowing. In Oct–Nov 2026 two labs verified real software at scale themselves. Anthropic did so with a four-person start-up supplying the semantic models; DeepMind's AlphaProof Code did it unaided. A paper shows a simple agent loop on frontier models matching specialised proving workflows. The start-ups have responded by becoming tools that lab agents call, giving away engines and harnesses, and moving their value towards semantics and specifications.
+Not yet, but the gap is narrowing. In Oct–Nov 2026 two labs verified real software at scale themselves. Anthropic did so with Theorem, a start-up reported as four people in January, supplying the semantic models; DeepMind's AlphaProof Code did it in-house (per another researcher's notes). A paper shows a simple agent loop on frontier models matching specialised proving workflows. The start-ups have responded by becoming tools that lab agents call, giving away engines and harnesses, and moving their value towards semantics and specifications.
 
 ### Cited Findings
 - arXiv 2610.35962 ("h1", 25 Oct 2026): a simple agent loop matches or beats specialised workflows when the same models are used [PRIMARY paper]. https://arxiv.org/abs/2610.35962
