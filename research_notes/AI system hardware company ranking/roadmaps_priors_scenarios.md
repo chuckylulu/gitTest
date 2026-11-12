@@ -24,7 +24,7 @@ Research date: 12 Nov 2026. Most sources are dated Apr-Nov 2026. Scope covers ro
 | 2 | 55/25/20 scenarios | **Updated.** Base case is supported through 2027. Compute growth runs above "doubling". Financing stress appears earlier (Q4 2026) than "around 2028". Acceleration is capped by supply through at least Jan 2028. |
 | 3 | TSMC packaging +80%/yr; 52-78 wk lead times; 12+ HBM package 2027; panel pilot 2026, volume 2028-29; glass 2027-28 | **Mixed.** CAGR confirmed (company claim). Lead times could not be verified. The 2027 large package is at risk because Rubin Ultra was reportedly cut to 8 stacks. Panel timing is roughly confirmed, but pilot *production* is reported for mid-2027. Glass is still targeted 2027-28 but slipping. |
 | 4 | HBM sold out 2026, committed 2027, tight into 2028; Micron annual cadence to 2030; hybrid bonding at 16-high HBM4E earliest | **Confirmed and strengthened.** SK hynix says DRAM+HBM are "effectively sold out" through 2029. Micron says industry DRAM is supply-constrained in 2027 and 2028 with "no line of sight" to balance. Hybrid-bonding timing confirmed, with a risk of further deferral. |
-| 5 | A16 slipped late-2026 to 2027; 600 kW rack reported delayed to 2028, NVIDIA disputes | **Confirmed.** New since: Rubin Ultra reportedly cut from 4 to 2 dies (unconfirmed). A 12 Nov 2026 claim that base Rubin volume slipped to 2027 (unconfirmed) contradicts NVIDIA's August statement. |
+| 5 | A16 slipped late-2026 to 2027; 600 kW rack reported delayed to 2028, NVIDIA disputes | **Confirmed.** NVIDIA's denial ("Our roadmap is intact", to CNBC) is generic and does not address the 2028 date. New since: Rubin Ultra reportedly cut from 4 to 2 dies (unconfirmed). A 12 Nov 2026 claim that base Rubin volume slipped to 2027 (unconfirmed) contradicts NVIDIA's August statement. |
 | 6 | 2.3 kW heading to 4 kW; cold plates 100-150 kW/rack; two-phase held by fluorinated-coolant rules; in-chip channels unproven | **Partly confirmed.** Power figures confirmed from secondary estimates (NVIDIA publishes none). The 100-150 kW cold-plate ceiling looks outdated because NVIDIA plans direct-to-chip liquid cooling for 600 kW Kyber. The PFAS hold-up is confirmed, but fluid qualification also matters. No production evidence of in-chip cooling. |
 | 7 | CPO switches shipping 2026; NVIDIA and partner plan 15x optical-engine capacity by mid-2027; processor-to-processor optics 2028, may slip; copper stretched to 2027-28 | **Confirmed, with updates.** The 15x plan is with SPIL (NVIDIA, 21 Oct 2026). Copper stays as a scale-up option even in Feynman (2028), so copper is stretched *beyond* 2028. |
 | 8 | Probabilities | See Claim 8. 70% "a 2028 technology misses" looks reasonable to low. 65% "600 kW in 2028" is reasonable. 50% "1 MW by 2030" is reasonable. 70% "memory tight through 2028" looks too low (evidence supports about 80-85%). "Memory first to turn" is weakened by take-or-pay contracts. "Bridges last longer" is supported. |
@@ -143,6 +143,13 @@ Measured compute growth (Epoch AI) has run at 2.2-3.3x a year, above "doubling".
 - NVIDIA's "cloud industry backlog now greater than $2 trillion" (26 Aug 2026) — [same](https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/) [P][F]. Company claim, unconfirmed.
 - TSMC previously guided its AI-accelerator revenue CAGR for 2024-2029 at "mid to high 50s" %. Wei now says it "probably will be higher". TSMC expects FY2026 revenue growth of about 44% in USD and sees "no sign of slowdown" (15 Oct 2026) — [TSMC transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695) [P][F]
 - AMD says 2027 data-centre AI revenue "will significantly more than double" (3 Nov 2026) — [AMD transcript](https://www.fool.com/earnings/call-transcripts/2026/11/04/amd-amd-q3-2026-earnings-call-transcript/) [P][F]
+- AMD Q2 2026 call (early Aug 2026) [P][F]:
+  - "multi-generation gigawatt scale deployments with OpenAI and Meta".
+  - Anthropic "will deploy up to 2 gigawatts of MI450 series GPUs in Helios", with the first gigawatt from H1 2027.
+  - Microsoft "will deploy Helios at scale on Azure".
+  - Revenue per gigawatt is "double digit billions".
+  - Customer pull is "tracking ahead of our initial forecasts".
+  - [AMD Q2 2026 transcript](https://d1io3yog0oux5.cloudfront.net/_1dcf6819c1566fb2bab40c24e6158009/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf)
 
 **Does compute double each year?**
 - Epoch AI finds global AI computing capacity doubling about every 7 months (about 3.3x a year) — [Epoch AI data insight](https://epoch.ai/data-insights/ai-chip-production) [S, research org][SR]
@@ -819,6 +826,7 @@ Format: title — URL — publication or event date — type. [F] means read in 
 
 **Secondary: policy**
 - Carra Globe, China rare-earth controls 2026 — https://carraglobe.com/china-rare-earth-export-controls-2026/ — published 5 May 2026, checked 14 Oct 2026 — [F]
+- Discovery Alert, China rare-earth pause extended to 10 Jan 2027 — https://discoveryalert.com/analysis/rare-earth-export-controls-china-pause-prices-november-2026/ — 12 Nov 2026 — [F]
 - Global Trade Alert, China suspension of rare-earth controls — https://globaltradealert.org/state-act/95168-china-temporary-suspension-of-additional-export-controls-for-rare-earth-related-technologies/ — 2025/26 — [SR]
 - MINING.COM on X — https://x.com/mining/status/2118084012942000158 — about 4 Nov 2026 — [SR]
 - CNAS, H200 export policy — https://www.cnas.org/publications/cnas-insights/cnas-insights-unpacking-the-h200-export-policy — 2026 — [SR]
