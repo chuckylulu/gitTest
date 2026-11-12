@@ -1,19 +1,51 @@
 # Software proof start-ups (North America) and whether a paying market for verified software is forming
 
-Research date: 12 November 2026. Status: WORK IN PROGRESS (file is written progressively; later sections are filled in as research proceeds).
+Research date: 12 November 2026. Status: WORK IN PROGRESS (file is written progressively; this is a raw findings log that will be reorganised into the final structure).
 
 Tag key: [PRIMARY] filing, paper or official document; [INDEPENDENT] confirmed by an outside party; [COMPANY CLAIM] stated by the company, not confirmed by an outside party; [SECONDARY] press or analyst report only; [UNVERIFIED] could not verify.
 
-## 1. Verification of background items (Harmonic C/Verilog; Harmonic and Axiom 2026 funding; what "Axiom" refers to)
+## RAW FINDINGS LOG (to be reorganised)
 
-### Takeaway
-(in progress)
+### Harmonic
+- [PRIMARY][COMPANY CLAIM] 27 Oct 2026 announcement "Aristotle Expands Into Formal Verification for Software and Hardware, Starting With C and Verilog". C: verification "against specified requirements, including functional correctness and the absence of certain classes of undefined behavior". Verilog: control-path properties (liveness, safety) and mathematical data-path properties. Workflow: Aristotle proposes properties from code, reports proved / not proved / assumptions; engineers review and commit properties; runs in CI on every commit. Self-serve, consumption-based pricing, no rates published; enterprise plans (volume pricing, dedicated support, on-prem / private cloud). CEO Tudor Achim quote: "mathematically verifying critical systems provides a new way to identify defects and vulnerabilities". https://harmonic.fun/news/aristotle-software-hardware-verification
+- [COMPANY CLAIM] Homepage: "Consumption-based, with no seats or licenses"; languages "Verilog and C today, with more planned"; Heartbleed demo on OpenSSL 1.0.1f/1.0.1g; investors listed: Sequoia, Kleiner Perkins, Index, Paradigm, Ribbit, ERA, Blossom, DST Global. https://harmonic.fun/
+- [COMPANY CLAIM] Docs: Aristotle "proves properties of existing C and SystemVerilog code"; specs "in plain English" in the prompt or a text file; outputs Proved/Refuted with assumptions; "Behaviors not listed as properties are not verified"; interfaces: web app, MCP server, CLI, Python SDK (aristotlelib); credit-based usage, no rates shown. https://aristotle.harmonic.fun/docs/overview
+- [COMPANY CLAIM, customer-quoted] Tensordyne case study (Verilog): block of 12.2M gate equivalents, 1.24M flops, 312 pages of specs; 241 properties (100 written by Aristotle from specs, 141 pre-existing assertions); 185 proved, 56 refuted with counterexamples; bugs 25,000 to 110,000 cycles after reset; 8 bugs found early in design of next chip; quote from Jonathan Ko (ASIC Verification Engineer, Tensordyne): "Even sub-blocks a tenth this size are very difficult to formally verify with traditional tools." Second project: RTL from spec with 37 proved properties, about 26% less power, 19% less cell area. Not stated whether paying. https://harmonic.fun/aristotle/case-studies/tensordyne/
+- [COMPANY CLAIM] LibTomMath case study (C): 3 bugs found and repaired; modular exponentiation 31–38% faster, optimised routines proved against same specs; limits: "Full modular exponentiation is benchmarked, not proved"; page does not say upstream merged. https://harmonic.fun/aristotle/case-studies/libtommath/
+- [COMPANY CLAIM] 3 Nov 2026: Ibex RISC-V MUL/DIV verified against Sail RISC-V model; 9 properties proved; via coding agent (Claude Code or Codex) with Aristotle over MCP; Aristotle compiles SystemVerilog + SVA into Lean 4 against a hand-built model of digital circuits. https://harmonic.fun/news/ibex-mul-div-verification
+- [SECONDARY] Reuters-syndicated/EconoTimes 27 Oct 2026: General Atomics-affiliated authors (DIII-D) say Aristotle examined Verilog in a Thomson-scattering diagnostic and found multiple rare errors; recreated C code and Verilog counterpart from a paper and a 254-word prompt in four hours; IAEA AI for Fusion workshop abstract, C. Mitchell Clark presenting 9 Nov 2026. https://econotimes.com/Harmonic-Adds-Formal-Checks-for-C-Software-and-Verilog-Hardware-1764657
+- [SECONDARY] Funding: Series C $120M at $1.45B post-money announced 25 Nov 2025, led by Ribbit, with Sequoia, Index, Kleiner Perkins, Emerson Collective; NVentures joined (reported Jan 2026); total about $295M. No new 2026 round found. https://siliconangle.com/2026/01/15/nvidias-nventures-backs-harmonic-ai-series-c-mathematical-superintelligence/
+- [PRIMARY] Harmonic donated $300,000 to Lean FRO (11 Feb 2026). https://harmonic.fun/news/lean-fro-donation/
 
-### Cited Findings
-- [PRIMARY][COMPANY CLAIM] Harmonic announced on 27 Oct 2026 "Aristotle Expands Into Formal Verification for Software and Hardware, Starting With C and Verilog". Shipped: for C, verification "against specified requirements, including functional correctness and the absence of certain classes of undefined behavior"; for Verilog, control-path properties (liveness, safety) and mathematical data-path properties. Workflow: Aristotle proposes properties from the code, reports which it proved, which it could not, and the assumptions each proof depends on; engineers review and commit the properties; it runs in CI on every commit. Pricing: self-serve, consumption-based, no rates published; enterprise plans with volume pricing, dedicated support, on-prem or private-cloud deployment. CEO Tudor Achim: "mathematically verifying critical systems provides a new way to identify defects and vulnerabilities". — [Harmonic announcement, 27 Oct 2026](https://harmonic.fun/news/aristotle-software-hardware-verification)
+### Axiom
+- [SECONDARY] $200M Series A at $1.6B+ post-money, announced 12 Mar 2026, led by Menlo Ventures; Madrona, Greycroft, B Capital, Toyota Ventures, Triatomic also. Seed $64M Oct 2025. Legal name Axiom Quant Inc. https://siliconangle.com/2026/03/12/verifiable-ai-startup-axiom-raises-200m-prove-ai-generated-code-safe-use/
+- [PRIMARY investor post] Menlo (Matt Kraning, 12 Mar 2026): operating since July 2025; over 30 employees; round will fund bringing "initial products to market"; market framing: traditional formal verification market "low single-digit billions". https://menlovc.com/perspective/ai-will-write-all-the-code-mathematics-will-prove-it-works/
+- [PRIMARY] AXLE (Axiom Lean Engine) released 5 Mar 2026 as "a free service". https://axiommath.ai/research/releasing-axle
+- [PRIMARY][COMPANY CLAIM] CFSG formalisation post dated 26 Oct 2026: 43.1M lines of Lean, 24 days, "dozens" of agents, "changing mix of models"; 34 noteworthy deviations; Lyons and Solomon consulted. https://axiommath.ai/research/the-enormous-theorem-formalized/
+- [SECONDARY] Fortune 1 Jun 2026: about 40 people; customers in finance, cybersecurity, software and hardware development (company-sourced, unnamed). https://fortune.com/2026/06/01/axiom-math-econlib-antitrust-economic-theory-verified/
 
-### Inferences
-(in progress)
+### Newcomers found so far
+- &Truth: $70M seed, emerged 29 Oct 2026; PBC; Palo Alto + Singapore; Clark Barrett, Ilya Sergey, Chris Hsu. https://dealroom.co/news/168019-truth-emerges-from-stealth-with-70m-seed-to-mathematically-prove-code-is/
+- Pramaana Labs: $27M seed led by Khosla (June 2026). https://siliconangle.com/2026/06/17/pramaana-labs-raises-27m-make-ai-prove-answers/
+- Theorem: $6M seed led by Khosla (27 Jan 2026). https://venturebeat.com/security/theorem-wants-to-stop-ai-written-bugs-before-they-ship-and-just-raised-usd6m
+- Code Metal: $125M Series B at $1.25B (19 Feb 2026), led by Salesforce Ventures.
+- Axiomatic AI $18M seed (Mar 2026); Midas $10M (Feb 2026); VerifAIX $5M (Sep 2026, unverified); Lanyon AI $10.6M.
 
-### Gaps
-(in progress)
+### (log 2) More raw findings, 12 Nov 2026
+- NOTE: WebSearch budget for the session was exhausted after ~33 searches (shared limit). Remaining research done by direct fetch of known primary URLs only.
+- [PRIMARY] Harmonic Series C post 25 Nov 2025: $120M at $1.45B, led by Ribbit; Sequoia, Index, Kleiner, Emerson Collective. https://harmonic.fun/news/series-c
+- [SECONDARY] Reuters via Investing.com 27 Oct 2026: Aristotle "available with usage-based pricing"; DIII-D said Aristotle rebuilt part of its reactor-control software in four hours from one paper and a 254-word prompt; mentions researchers recently used the technology to uncover critical bugs in PHP. https://www.investing.com/news/economy-news/robinhood-ceos-ai-startup-harmonic-expands-into-software-chip-design-verification-4976694
+- [INDEPENDENT] Tao-hosted Erdős problems wiki (frozen 30 Jun 2026): Aristotle in about 20 full-solution entries and over 100 formalisation entries; AxiomProver 5 entries (19 Jun 2026); Gauss 1; Aleph Prover 3. Disclaimers: "This page is not a benchmark". https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems
+- [COMPANY CLAIM] Harmonic VERINA 3 Dec 2025: 160 of 189 proved, 23 disproved = 96.8%; ran on public API; no independent replication stated. https://harmonic.fun/news/verina-benchmark/
+- [SECONDARY] Fortune 1 Jun 2026 (Nick Lichtenberg): Axiom headcount 40; $200M at $1.6B; customers in finance, cybersecurity, software and hardware development (unnamed); revenue not disclosed; EconLib with Scott Kominers (HBS). https://fortune.com/2026/06/01/axiom-math-econlib-antitrust-economic-theory-verified/
+- [COMPANY CLAIM] Axiom IMO 2026 repo: "solved all six problems, achieving a perfect score of 42/42"; times 24 to 869 minutes per problem; no claim of official grading. https://github.com/AxiomMath/IMO2026
+- [PRIMARY investor post] Hack VC 18 Jun 2026 on Math Inc: Jesse Han CEO; "early procurement work through Galois/RAND and DARPA OTA vehicles"; public sector "strongest near-term driver"; Tao "only company he works with" (investor claim). https://blog.hack.vc/why-we-invested-in-math-inc/
+- [COMPANY CLAIM] Math Inc Gauss page: funded by DARPA expMath; partner Morph Labs. https://www.math.inc/gauss
+- [SECONDARY] Scientific American 26 Mar 2026: muted community reaction to Gauss sphere packing; Hariharan quotes. https://www.scientificamerican.com/article/what-happens-when-ai-starts-checking-mathematicians-work
+- [COMPANY CLAIM] Logical Intelligence blog (20 May 2026): Aleph 99.4% PutnamBench; VeriSoftBench 94% vs Aristotle 69%; Verina 100% "confirmed independently by benchmark authors"; enterprise customers use Aleph over proprietary Lean libraries. https://logicalintelligence.com/blog/aleph-prover-tops-leading-benchmarks
+- [INDEPENDENT] MathArena: AlephProver rank 1/10 (03/2026, 34.15%) and 1/14 (06/2026, 86.96%) on ArXivLean; cost per problem $66.84 expected. https://matharena.ai/models/logical_intelligence_aleph_prover
+- [PRIMARY] Anthropic Frontier Red Team with Theorem, 22 Oct 2026: 123 libraries, 239 OSS-Fuzz entry points, about 180M lines of Rocq; spec generated automatically from fuzz tests; Theorem supplied RISC-V and Linux semantics; "'Formally verified' does not mean 'bug-free.'" https://www.anthropic.com/research/formal-verification
+- [PRIMARY] arXiv 2610.35962 h1 (25 Oct 2026): simple agent loop matches or beats specialised workflows at matched models. https://arxiv.org/abs/2610.35962
+- [COMPANY CLAIM] Code Metal site: logos Toshiba, U.S. Air Force, Raytheon, NVIDIA, L3Harris, Collins, Bosch, Boeing; $80M OTA for WarMatrix (14 Aug 2026). https://www.codemetal.ai/
+- [PRIMARY] Galois 2025 Year in Review (13 Jan 2026): COOP $12.6M DARPA; Galwagent; Claude Code experiments. https://www.galois.com/articles/2025-year-in-review
+- [SECONDARY/aggregated federal data] HigherGov: Galois COOP contract HR001125C0300, $12.6M obligated, ceiling $52.8M, period 16 Oct 2024 to 11 Jun 2026. https://www.highergov.com/contract/HR001125C0300/
