@@ -396,7 +396,7 @@ Korean KOSDAQ names are directly accessible; Park Systems has 37.86% foreign hol
 On the evidence collected, probably not on scale or confirmed tool-of-record status. The strongest case is Park Systems as the niche leader in a physical-constraint measurement (nm-scale topography, including hybrid-bond Cu pads) relevant to stacked chips. A secondary case is Taiwan's analysis labs as holders of outsourced reference data. This is evidence for the writer to judge, not a ranking.
 
 ### Cited Findings
-- **Park Systems:** #1 in AFM with ~22-24% share (company-cited) [PDK] [MH1104]. Its 2025 revenue of KRW 205.6bn [PIR] is small next to KLA's ~US$13bn as cited by Park's CEO [FN0601]. No chipmaker confirms it as tool of record.
+- **Park Systems:** #1 in AFM with ~22-24% share (company-cited) [PDK] [MH1104]. Its 2025 revenue of KRW 205.6bn [PIR] is small next to KLA's ~US$13bn as cited by Park's CEO ([FN News, 1 Jun 2026](https://www.fnnews.com/news/202606010841427685)). No chipmaker confirms it as tool of record.
 - **V5 Technologies:** reportedly TSMC-qualified; 2025 revenue NT$2.1bn [V5-SD].
 - **Analysis labs:** MA-tek + iST + MSScorps Jan-Oct 2026 revenue ≈ NT$9.4bn combined (my sum) [TPEX-REV] [TWSE-REV].
 

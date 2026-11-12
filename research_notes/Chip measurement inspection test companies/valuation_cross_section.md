@@ -53,6 +53,35 @@ Notes to the table. All figures come from the SA pages linked in each row unless
 - **Not pure plays:** Hitachi is valued as a whole conglomerate (Hitachi High-Tech is an unlisted subsidiary). TMO and Bruker are diversified instrument makers. None of their multiples is a semiconductor pure-play multiple.
 - **Cross-check, Japan:** [kabutan](https://kabutan.jp/stock/?code=6857) on 12-Nov shows Advantest at PER 29.2x, PBR 18.90x, PSR 11.62x and market cap JPY 21.949trn on 732.0m issued shares. 29,985 / 29.2 implies EPS of about JPY 1,027, consistent with SA's FY3/27 consensus of JPY 1,029 (P/E 29.1x). JPY 21.949trn / 11.62 implies revenue of about JPY 1.89trn, so kabutan's PSR is on forecast FY3/27 revenue, while SA uses TTM (15.49x). The market-cap gap against SA (JPY 21.65trn) comes from share count: SA uses 721.95m shares outstanding, excluding treasury shares.
 - **Cross-check, Taiwan:** the exchange [TWSE](https://www.twse.com.tw/exchangeReport/BWIBBU_d?response=json&date=20261112&selectType=ALL) shows Chroma ATE (12-Nov) at P/E 36.22x, yield 1.37% and P/B 18.23x, on trailing four quarters to 2026-Q2. SA shows P/E 35.07x on TTM to Sep-26. [TPEx](https://www.tpex.org.tw/web/stock/aftertrading/peratio_analysis/pera_result.php?l=en-us&d=115/11/12&o=json) shows MA-tek at P/E 22.82x, yield 2.24% and P/B 2.15x (to 2026-Q3), against SA's 22.49x and 2.39%. The gaps come from different periods and dividend bases. I treat the exchange figures as authoritative for trailing P/E, and SA as better for cross-country consistency.
+- **Cross-check, Japanese company guidance (kabutan).** kabutan's PER is price / the company's own full-year forecast EPS; I verified this for all six names, e.g. Lasertec 36,380 / 1,003 = 36.3x. Where SA's consensus is stale, company guidance is the fresher reference.
+  - Micronics Japan raised its FY12/26 guidance on 12-Nov to EPS JPY 691.2, 12.7% above SA's 8-Oct consensus of JPY 613.40. At guidance its P/E is 14.6x rather than 16.5x.
+  - Lasertec's guidance is 10.5% below consensus.
+
+| Company (12-Nov close) | kabutan PER (12-Nov) | Company-forecast EPS, JPY (FY; guidance date per kabutan) | SA/S&P consensus EPS same FY (P/E) | Consensus vs guidance | kabutan PBR / yield / mkt cap | Source |
+|---|---|---|---|---|---|---|
+| Advantest (JPY 29,985) | 29.2x | ~1,027 implied by PER (FY3/27) | 1,029.09 (29.1x) | ~0% | 18.90x / not shown / JPY 21,949bn | [kabutan](https://kabutan.jp/stock/?code=6857) |
+| Lasertec (JPY 36,380) | 36.3x | 1,003 (FY6/27; 6-Aug-2026) | 1,108.73 (32.8x) | +10.5% | 13.63x / 0.96% / JPY 3,430bn | [kabutan](https://kabutan.jp/stock/?code=6920) |
+| Rigaku (JPY 1,348) | 24.4x | 55.2 (FY12/26; 13-Feb-2026, no revision shown at 12-Nov) | 55.08 (24.5x; SA updated 24-Jun) | -0.2% | 3.51x / 1.41% / JPY 305.5bn | [kabutan](https://kabutan.jp/stock/?code=268A) |
+| JEOL (JPY 6,680) | 15.3x | 437.3 (FY3/27; 15-May-2026) | 428.35 (15.6x; SA updated 17-Aug) | -2.0% | 2.31x / 1.98% / JPY 344.2bn | [kabutan](https://kabutan.jp/stock/?code=6951) |
+| Micronics Japan (JPY 10,100) | 14.6x | 691.2 (FY12/26; revised 12-Nov-2026) | 613.40 (16.5x; SA updated 8-Oct) | -11.3% | 3.95x / 2.06% / JPY 404.3bn | [kabutan](https://kabutan.jp/stock/?code=6871) |
+| Tokyo Seimitsu (JPY 13,290) | 16.9x | 788.4 (FY3/27; revised 4-Nov-2026) | 803.29 (16.5x) | +1.9% | 2.68x / 2.38% / JPY 562.0bn | [kabutan](https://kabutan.jp/stock/?code=7729) |
+
+
+- **Chinese domestic names: broker forecasts from Eastmoney.** S&P coverage on SA is only 1-3 analysts, so I pulled the named local-broker reports filed on Eastmoney in the six months to 12-Nov-2026.
+  - For the two testers I used only post-Q3 reports (October). Huafeng issued bonus shares on 11-Jun-2026 (SA split ratio 1.48), and earlier reports may be on the old share base.
+  - The P/Es are my calc at the 12-Nov close. These are 1-2 broker samples, not a consensus.
+
+| Company (price, 12-Nov) | Broker reports used (date) | Avg EPS 2026E / 2027E / 2028E (CNY) | P/E at 12-Nov price on 2026E / 2027E / 2028E (my calc) | SA/S&P comparison | Source |
+|---|---|---|---|---|---|
+| Skyverse (688361, CNY 266.27) | 东吴证券 2026-11-03 (0.50/2.00/3.07, 增持) | 0.50 / 2.00 / 3.07 | 533x / 133x / 87x | FY26 EPS 1.35 (1 analyst); NTM P/E n/a | [Eastmoney report API](https://reportapi.eastmoney.com/report/list?code=688361&beginTime=2026-05-12&endTime=2026-11-12&pageSize=100&qType=0) |
+| Wuhan Jingce (300567, CNY 121.70) | 国信证券 2026-09-13 (0.87/1.69/2.53, 增持); 东吴证券 2026-08-31 (1.16/2.26/3.72, 增持) | 1.01 / 1.97 / 3.12 | 120x / 62x / 39x | NTM P/E 108.0 (2 analysts); no EPS series | [Eastmoney report API](https://reportapi.eastmoney.com/report/list?code=300567&beginTime=2026-05-12&endTime=2026-11-12&pageSize=100&qType=0) |
+| Hangzhou Changchuan (300604, CNY 195.38) | 东吴证券 2026-10-29 (3.80/5.91/9.22, 买入); 群益证券 2026-10-27 (4.14/5.46/7.14, 增持) | 3.97 / 5.69 / 8.18 | 49x / 34x / 24x | no forecast page; stats fwd P/E 35.7 (source of estimate unknown) | [Eastmoney report API](https://reportapi.eastmoney.com/report/list?code=300604&beginTime=2026-05-12&endTime=2026-11-12&pageSize=100&qType=0) |
+| Huafeng Test & Control (688200, CNY 239.31) | 山西证券 2026-10-30 (4.60/6.29/8.47, 买入); 东吴证券 2026-10-29 (4.14/5.47/6.73, 增持) | 4.37 / 5.88 / 7.60 | 55x / 41x / 31x | FY26 EPS 3.32, FY27 6.87 (3 analysts); NTM P/E 38.1 | [Eastmoney report API](https://reportapi.eastmoney.com/report/list?code=688200&beginTime=2026-05-12&endTime=2026-11-12&pageSize=100&qType=0) |
+
+- **SA and Eastmoney disagree.**
+  - Wuhan Jingce: SA's NTM EPS (121.70 / 108.0 = CNY 1.13) is well below the average of the two local brokers, about CNY 1.7-1.8 on a 12-month blend of their 2026E and 2027E (my calc).
+  - Huafeng: SA's FY26 EPS of CNY 3.32 is below the brokers' post-Q3 average of 4.37, while SA's FY27 of 6.87 is above their 5.88.
+  - The Eastmoney figures trace to named, dated reports, so I consider them more transparent. Neither source is a robust consensus.
 
 ### Inferences
 - NTM P/Es cluster at 22-27x across KLA, ASML, Advantest, Teradyne, Lasertec, Nova, FormFactor, PDFS and Park. Large-cap and small-cap names are priced on similar forward multiples even though their trailing multiples differ widely. Where they differ is in how much earnings growth is built in: FY1 EPS growth runs from 10% (Camtek) to 254% (Technoprobe).
@@ -65,6 +94,13 @@ Notes to the table. All figures come from the SA pages linked in each row unless
 
 ### Takeaway
 On forward P/E, 14 of the 19 priority names with history sit below their own 5-year average. The largest discounts are ASML -28%, Advantest -25%, Teradyne -25%, Lasertec -36%, Onto -35%, FormFactor -34% and PDFS -45%; KLA is only just below (-1%). AMAT (+5%), Hitachi (+5%), Bruker (+6%), TMO (+13%, 85th percentile) and Jingce (+63%) are above their averages. Trailing EV/Sales gives the opposite answer. KLA, AMAT, Advantest, Technoprobe and TMO sit at the 85th-90th percentile of their 5-year EV/Sales range, because sales have not yet caught up with expected earnings. The forward view holds only if the consensus is delivered.
+
+The 10-year comparison uses year-end trailing P/S from companiesmarketcap for 2016-2025:
+- **Above the 10-year maximum:** KLA, AMAT, Advantest, FormFactor and Cohu, plus Technoprobe (only 4 years of data).
+- **At the maximum:** Lam.
+- **Within the range but above average:** ASML, Teradyne, Onto, Nova, Camtek, Hitachi and TMO.
+- **Near average:** Lasertec and PDFS.
+- **Below average:** Bruker.
 
 ### Cited Findings
 | Company | Fwd P/E now | 5-yr avg | 5-yr median | 5-yr min–max | Now vs avg | Pctile of now (n) | EV/Sales now | 5-yr avg | 5-yr min–max | Pctile (n) | Window (quarter-ends) | Src |
@@ -93,14 +129,36 @@ On forward P/E, 14 of the 19 priority names with history sit below their own 5-y
 - **Method:** SA's quarterly "Ratios and Metrics" tables (linked in each row) give market cap, EV, forward P/E and EV/Sales at each of the last 20 fiscal quarter-ends, plus a "Current" column for 11/12-Nov. My calc: the 5-year statistics, the percentile (share of the 20 historical observations below today's value) and "now vs avg".
 - **Windows** are fiscal quarter-ends, for example AMAT Oct-21 to Jul-26, and JEOL and Park Sep-21 to Jun-26. Rigaku (listed Oct-2024) has 8 observations, Technoprobe 9 half-year observations (Jun-22 to Jun-26), and Skyverse 13-14 (from Jun-23).
 - **"Now" values** here are SA statistics-page values (Europe rescaled). They can differ slightly from the "Current" column of the ratio tables.
-- **10-year evidence:** KLA: [companiesmarketcap](https://companiesmarketcap.com/kla/ps-ratio/) year-end trailing P/S for 2016-2025 was 3.77, 4.34, 3.15, 5.29, 6.59, 7.95, 5.10, 8.17, 7.72 and 12.5. The 10-year average is 6.46x (my calc) and the range 3.15-12.5x. SA's current TTM P/S of 14.46x is above every year-end value in that series since 2008, whose low was 1.73x in 2008. The site's own 2026 figure of 18.6x matches the ~30-Sep-2026 price, so it appears stale. Other companies: could not obtain.
+
+**10-year evidence: trailing P/S at year-ends.** Year-end trailing P/S from companiesmarketcap (cmc), compared with SA's TTM P/S today. Both are market cap / TTM revenue, but from different providers. The table is my calc. cmc's own "2026 (as of November 2026)" values are not used: they are consistent with early-October 2026 prices, not the 11-Nov close (e.g., cmc KLA 18.6x vs SA 14.46x; cmc Onto 14.4x vs SA 8.05x), so I treat them as stale. JEOL, Park Systems, Rigaku and the Chinese names had no cmc page: could not obtain.
+
+| Company | SA TTM P/S now | cmc year-end P/S, 10-yr avg 2016-25 (n) | 10-yr min-max | Now vs 10-yr avg | Now vs 10-yr max | 5-yr avg 2021-25 | Source |
+|---|---|---|---|---|---|---|---|
+| KLA | 14.46 | 6.46 (10) | 3.15-12.50 | +124% | above max | 8.29 | [cmc](https://companiesmarketcap.com/kla/ps-ratio/) |
+| Applied Materials | 10.17 | 4.00 (10) | 1.87-6.55 | +154% | above max | 4.91 | [cmc](https://companiesmarketcap.com/applied-materials/ps-ratio/) |
+| Lam Research (ref.) | 11.28 | 5.13 (10) | 1.93-11.40 | +120% | -1% | 6.71 | [cmc](https://companiesmarketcap.com/lam-research/ps-ratio/) |
+| ASML | 13.24 | 9.70 (10) | 5.15-15.10 | +37% | -12% | 11.25 | [cmc](https://companiesmarketcap.com/asml/ps-ratio/) |
+| Advantest | 15.49 | 5.37 (10) | 1.40-13.20 | +189% | above max | 7.67 | [cmc](https://companiesmarketcap.com/advantest/ps-ratio/) |
+| Teradyne | 8.30 | 5.62 (10) | 2.62-10.40 | +48% | -20% | 7.11 | [cmc](https://companiesmarketcap.com/teradyne/ps-ratio/) |
+| Lasertec | 15.40 | 14.30 (10) | 2.80-41.50 | +8% | -63% | 18.57 | [cmc](https://companiesmarketcap.com/lasertec/ps-ratio/) |
+| Onto Innovation | 8.05 | 5.41 (10) | 2.31-9.20 | +49% | -12% | 7.12 | [cmc](https://companiesmarketcap.com/onto-innovation/ps-ratio/) |
+| Nova | 10.82 | 6.21 (10) | 2.18-11.70 | +74% | -8% | 8.41 | [cmc](https://companiesmarketcap.com/nova-measuring-instruments/ps-ratio/) |
+| Camtek | 9.19 | 5.41 (10) | 1.23-10.70 | +70% | -14% | 7.96 | [cmc](https://companiesmarketcap.com/camtek/ps-ratio/) |
+| Hitachi | 1.96 | 0.81 (10) | 0.30-2.06 | +143% | -5% | 1.20 | [cmc](https://companiesmarketcap.com/hitachi/ps-ratio/) |
+| Thermo Fisher | 5.62 | 4.72 (10) | 3.05-6.71 | +19% | -16% | 5.20 | [cmc](https://companiesmarketcap.com/thermo-fisher-scientific/ps-ratio/) |
+| Bruker | 2.71 | 3.30 (10) | 2.11-5.26 | -18% | -48% | 3.48 | [cmc](https://companiesmarketcap.com/bruker/ps-ratio/) |
+| FormFactor | 7.66 | 3.66 (10) | 1.97-5.84 | +109% | above max | 4.47 | [cmc](https://companiesmarketcap.com/formfactor/ps-ratio/) |
+| Technoprobe (2022-25 only) | 20.58 | 9.99 (4) | 6.87-13.10 | +106% | above max | 9.99 | [cmc](https://companiesmarketcap.com/technoprobe/ps-ratio/) |
+| PDF Solutions | 7.00 | 6.68 (10) | 3.18-10.70 | +5% | -35% | 7.33 | [cmc](https://companiesmarketcap.com/pdf-solutions/ps-ratio/) |
+| Cohu (2nd tier) | 3.82 | 2.09 (10) | 1.32-3.11 | +83% | above max | 2.45 | [cmc](https://companiesmarketcap.com/cohu/ps-ratio/) |
+
 
 ### Inferences
 - **Averages overstate cheapness.** The 5-year forward-P/E averages are pushed up by periods of trough earnings, for example PDFS at 142.9x in Dec-21, Cohu at 257x and Lasertec at 88x in Dec-21. The medians mostly tell the same story. The 5-year minima (12-17x for KLA, AMAT, Onto, Camtek and Teradyne) are the relevant reference for a downturn.
 - **KLA and AMAT are the large-cap exceptions:** their forward P/E is at the 5-year average while their EV/Sales is at the 85th-90th percentile. Their prices depend on margins and growth both staying high.
 
 ### Gaps
-- 10-year forward-P/E histories could not be obtained, because SA's free tier shows about 5 years. For 10-year context only year-end trailing P/S from companiesmarketcap is available, which is neither EV/Sales nor forward.
+- 10-year forward-P/E and EV/Sales histories could not be obtained, because SA's free tier shows about 5 years. The 10-year view rests on year-end trailing P/S from a second provider (companiesmarketcap), and that series is unavailable for JEOL, Park, Rigaku, Skyverse and Jingce.
 
 ## 3. What the price assumes (my calculations; inputs shown)
 
@@ -151,7 +209,8 @@ Suppose forward P/Es return to each company's own 5-year average. A 10% annual s
 - **Trough-multiple stress:** if multiples sit at their 5-year minima, a 10% return needs 14-30% a year EPS growth. That is the relevant way to frame downside in a financing-led pause.
 
 ### Gaps
-- **Skyverse:** no forward P/E, so cannot assess. **Wuhan Jingce:** the margin check cannot be assessed (negative EV/EBIT in the window), and its EPS-reversion figure rests on a 2-analyst NTM estimate.
+- **Skyverse:** SA gives no forward P/E today, so the reversion calculation cannot be assessed. A single local broker (Soochow, 3-Nov-2026) puts it at 133x 2027E and 87x 2028E (section 1).
+- **Wuhan Jingce:** the margin check cannot be assessed (negative EV/EBIT in the window). Its EPS-reversion figure rests on SA's 2-analyst NTM estimate, which is well below the local brokers' (section 1).
 - **FormFactor and PDFS:** margin check not meaningful (negative EV/EBIT quarters in the window).
 
 ## 4. Second-tier snapshot
@@ -175,7 +234,10 @@ On NTM P/E the Japanese and Taiwanese test, probe and analysis names are the che
 | Huafeng Test & Control (688200.SS) | CNY 239.31 (12-Nov) | 48.1 / 46.1 | 1.8 (Sep-26) | 38.3% | 60.3 | 38.1 | 45.8 (27.2–142.2; 40%) | 25.3 | 23.7 (75%) | 63.3 | 0.5% / 0.34% | 110.08 - 570.00 | 86.6% / 99.6% | 50.85% / 34.77% (Dec-26) | 8 | [stats](https://stockanalysis.com/quote/sha/688200/statistics/) |
 | MA-tek (3587.TWO) | TWD 188.00 (12-Nov) | 13.5 / 13.2 | 6.0 (Sep-26) | 12.6% | 22.5 | 14.3 | 16.5 (8.7–23.9; 30%) | 2.3 | 2.8 (15%) | 6.5 | 9.9% / 2.39% | 169.00 - 399.00 | 1.3% / -6.0% | 17.69% / 93.77% (Dec-26) | 3 | [stats](https://stockanalysis.com/quote/tpex/3587/statistics/) |
 
-- **Data gaps:** Auros and Hangzhou Changchuan have no SA forecast page (HTTP 404), so their consensus growth and analyst counts could not be obtained. Changchuan's statistics page still shows a forward P/E of 35.7x from an unspecified estimate, which should be treated as low reliability.
+- **Data gaps:** Auros and Hangzhou Changchuan have no SA forecast page (HTTP 404).
+  - Auros: consensus growth and analyst counts could not be obtained.
+  - Changchuan: two post-Q3 local-broker reports (Soochow 29-Oct, Capital Securities 27-Oct; section 1) average 2026E EPS CNY 3.97 and 2027E 5.69. That is 49x and 34x at the 12-Nov close (my calc), roughly consistent with the 35.7x forward P/E on SA's statistics page.
+- **Japanese guidance:** Micronics Japan (14.6x on the guidance raised 12-Nov) and Tokyo Seimitsu (16.9x on guidance revised 4-Nov) are cross-checked against kabutan in section 1.
 - **Distorted averages:** the Cohu and Comet 5-year forward-P/E averages are inflated by trough earnings (Cohu up to 257x).
 - **Rescaled:** Comet and PVA TePla are rescaled to the 11-Nov close (\*).
 
@@ -236,6 +298,10 @@ On forward earnings the broad semiconductor complex is cheaper than the equipmen
   - The Information Technology sector was at 17.3 against a 25-year average of 20.0, its lowest since 23-Mar-2020 (16.1).
   - Since 31-Dec-2025 the S&P 500 price is up 7.4% while forward EPS is up 33.6%, so the fall in the P/E is driven by rising earnings estimates.
   - Semiconductors are the largest contributor to IT sector earnings growth, which FactSet puts at a blended 69.2% for Q3.
+- **[worldperatio](https://worldperatio.com/sp-500-sectors/), last update 11-Nov-2026, trailing basis:**
+  - The Information Technology sector ETF (XLK) is at P/E 33.51, against averages of 33.08 (5-year), 26.56 (10-year) and 19.77 (20-year). The site labels it "Fair", "Overvalued" and "Expensive" against those (+0.13, +1.13 and +2.22 sigma).
+  - Taken with FactSet's forward 17.3x, this means the sector's forward discount rests on steeply rising earnings estimates.
+  - The two sources use different methods: an ETF trailing P/E against an index aggregate forward P/E.
 - **Equipment-group median forward P/E against its own history:** see the large-cap WFE row in section 5. Now 23.7x, against a 5-year average of 25.4x and a range of 12.9-48.4x. EV/Sales is 12.1x, against an average of 8.2x.
 - **Peak-to-trough drawdowns** (my calc from SA daily closes; split-adjusted, price only). Method: the peak is the highest close in the window (2018-19: Oct-2017 to Dec-2018; 2021-22: Jun-2021 to Jun-2022; 2024-25: Jan-2024 to Feb-2025; 2026: from Jan-2026). The trough is the lowest close after the peak, up to Jun-2019, Jun-2023, Jun-2025 or now respectively. "Days to recover" runs from the trough to the first close at or above the prior peak.
 
@@ -268,64 +334,35 @@ On forward earnings the broad semiconductor complex is cheaper than the equipmen
 - The forward P/E of the PHLX SOX index and its history could not be obtained. The ETF figures and the group-median calculation are proxies.
 
 ## 7. What could not be obtained, data-quality flags, "cannot assess"
-- **PHLX Semiconductor Index (SOX) forward P/E and its history: could not obtain.** No primary source was reachable once the session's web-search budget and Firecrawl credits ran out. Proxies used: SOXX/SMH ETF NTM P/E (no history) and the equipment-group medians computed in section 5.
-- **10-year forward P/E and EV/Sales histories: could not obtain** for any company, because SA's free tier shows about 5 years. 10-year year-end trailing P/S comes from companiesmarketcap (see section 2).
-- **Third-year (FY+3) consensus EPS and revenue: could not obtain.** SA shows these values as "Upgrade" (paywalled); only FY1, FY2 and the S&P 3-year CAGR are available.
-- **Skyverse (688361.SS): cannot assess on forward P/E and implied expectations.** There is no forward P/E and only 1-2 S&P analysts. Local-broker consensus (Eastmoney/Wind) could not be obtained; the Eastmoney quote API returned HTTP 502.
-- **Wuhan Jingce (300567.SZ):** no EPS consensus series on SA, so the margin check cannot be assessed. The NTM P/E rests on 2 analysts.
-- **Auros (322310.KQ) and Hangzhou Changchuan (300604.SZ):** no SA forecast page (HTTP 404), so consensus growth and analyst counts could not be obtained. Auros has no forward P/E, so it cannot be assessed on a forward basis.
+- **PHLX Semiconductor Index (SOX) forward P/E and its history: could not obtain.** No primary source was reachable once the session's web-search budget and Firecrawl credits ran out. Proxies used: SOXX/SMH ETF NTM P/E (no history), the group medians in section 5, FactSet's IT sector figure and worldperatio's XLK figure.
+- **10-year forward P/E and EV/Sales histories: could not obtain** for any company, because SA's free tier shows about 5 years. 10-year year-end trailing P/S comes from companiesmarketcap. No such page existed for JEOL or Park Systems (HTTP 404), or for Rigaku, Skyverse and the Chinese names.
+- **Third-year (FY+3) consensus EPS and revenue on SA: could not obtain.** SA shows these values as "Upgrade" (paywalled); only FY1, FY2 and the S&P 3-year CAGR are available. For the four Chinese names, Eastmoney broker reports include a 2028E (section 1).
+- **Skyverse (688361.SS): cannot assess on consensus forward P/E or the reversion calculation.** SA gives no forward P/E, and the S&P panel has 1-2 analysts. The only local forecast in the six months to 12-Nov is a single broker (Soochow, 3-Nov-2026). Treat 133x 2027E as one broker's view.
+- **Wuhan Jingce (300567.SZ):** no EPS consensus series on SA, so the margin check cannot be assessed. SA's NTM EPS disagrees with the local brokers' (section 1).
+- **Auros (322310.KQ): cannot assess on a forward basis.** There is no SA forecast page (HTTP 404) and no forward P/E, so consensus growth and analyst count could not be obtained. **Hangzhou Changchuan (300604.SZ):** no SA forecast page; local-broker estimates are used instead (section 1).
+- **Korean local consensus (FnGuide/Naver): could not obtain.** FnGuide returned an empty page and Naver's fields could not be parsed. Park Systems relies on S&P's 8-9 analysts.
 - **Coverage bias:** analyst counts for the Japanese, Korean and Chinese names reflect S&P's panel only. Local coverage is probably larger, but this is not verified.
-- **Possibly stale consensus (SA forecast-page update dates):** Rigaku 24-Jun-2026, JEOL 17-Aug-2026, Comet 2-Sep-2026, Tokyo Seimitsu 30-Sep-2026, Micronics Japan 8-Oct-2026, ASML ADR page 16-Oct-2026.
+- **Possibly stale SA consensus (forecast-page update dates):** Rigaku 24-Jun-2026, JEOL 17-Aug-2026, Comet 2-Sep-2026, Tokyo Seimitsu 30-Sep-2026, Micronics Japan 8-Oct-2026, ASML ADR page 16-Oct-2026. For the Japanese names, see the company-guidance cross-check in section 1: Micronics guidance is 12.7% above consensus, Lasertec's 10.5% below.
 - **Results due just after the snapshot:** AMAT (12-Nov, after the US close), Park Systems, JEOL and Nextin (13-Nov), MA-tek (16-Nov) and Auros (19-Nov). Their TTM figures and consensus will change.
-- **Source inconsistencies:**
-  - SA's ASML Euronext page: P/S does not match the page's revenue line (section 1).
-  - SA's own "52-week price change" differs from my 1-year calc (KLA +32.2% vs +35.2%; Advantest +50.87% vs +51.2%), probably because of the base date or adjustment. I use my calc consistently for all names.
-  - kabutan PSR (forecast revenue) vs SA (TTM).
-  - TWSE/TPEx trailing P/E vs SA (different periods).
-- **Not computed:** dividend-adjusted (total-return) changes.
-- **Korea:** Naver Finance was fetched for Park Systems, but its valuation fields could not be parsed. FnGuide was not tried.
+- **Source inconsistencies, all recorded rather than resolved:**
+  - SA's ASML Euronext page: P/S does not match the page's revenue line.
+  - SA's "52-week price change" differs from my 1-year calc (KLA +32.2% vs +35.2%; Advantest +50.87% vs +51.2%). I use my calc for all names.
+  - kabutan PSR is on forecast revenue, SA on TTM.
+  - TWSE/TPEx trailing P/E vs SA: different periods.
+  - companiesmarketcap's current P/S is stale.
+  - SA vs Eastmoney EPS for Jingce and Huafeng.
+  - kabutan market caps (issued shares) vs SA (shares outstanding ex-treasury): Advantest JPY 21,949bn vs 21,650bn; Lasertec JPY 3,430bn vs 3,260bn; JEOL JPY 344.2bn vs 325.4bn.
+- **Not computed:** dividend-adjusted (total-return) price changes.
 
 
 ## 8. Sources (all accessed 12-Nov-2026; data dates as stated)
-- **stockanalysis.com (SA)**, data from S&P Global Market Intelligence. Each company has four pages: [statistics](…/statistics/) ("Last updated: Nov 12, 2026"), [forecast](…/forecast/), [quarterly ratios](…/financials/ratios/?p=quarterly) and [price history](…/history/). Daily closes were taken from the chart data behind SA's history pages. The forecast-page "last updated" date is in brackets:
-  - KLAC: [statistics](https://stockanalysis.com/stocks/klac/statistics/), [forecast](https://stockanalysis.com/stocks/klac/forecast/) (Nov 9, 2026), [ratios](https://stockanalysis.com/stocks/klac/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/klac/history/)
-  - AMAT: [statistics](https://stockanalysis.com/stocks/amat/statistics/), [forecast](https://stockanalysis.com/stocks/amat/forecast/) (Nov 12, 2026), [ratios](https://stockanalysis.com/stocks/amat/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/amat/history/)
-  - ASML (NASDAQ): [statistics](https://stockanalysis.com/stocks/asml/statistics/), [forecast](https://stockanalysis.com/stocks/asml/forecast/) (Oct 16, 2026), [ratios](https://stockanalysis.com/stocks/asml/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/asml/history/)
-  - ASML (Euronext): [statistics](https://stockanalysis.com/quote/ams/ASML/statistics/), [forecast](https://stockanalysis.com/quote/ams/ASML/forecast/) (Nov 6, 2026), [ratios](https://stockanalysis.com/quote/ams/ASML/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/ams/ASML/history/)
-  - Advantest: [statistics](https://stockanalysis.com/quote/tyo/6857/statistics/), [forecast](https://stockanalysis.com/quote/tyo/6857/forecast/) (Nov 5, 2026), [ratios](https://stockanalysis.com/quote/tyo/6857/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/6857/history/)
-  - Teradyne: [statistics](https://stockanalysis.com/stocks/ter/statistics/), [forecast](https://stockanalysis.com/stocks/ter/forecast/) (Nov 11, 2026), [ratios](https://stockanalysis.com/stocks/ter/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/ter/history/)
-  - Lasertec: [statistics](https://stockanalysis.com/quote/tyo/6920/statistics/), [forecast](https://stockanalysis.com/quote/tyo/6920/forecast/) (Nov 4, 2026), [ratios](https://stockanalysis.com/quote/tyo/6920/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/6920/history/)
-  - Onto: [statistics](https://stockanalysis.com/stocks/onto/statistics/), [forecast](https://stockanalysis.com/stocks/onto/forecast/) (Nov 11, 2026), [ratios](https://stockanalysis.com/stocks/onto/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/onto/history/)
-  - Nova: [statistics](https://stockanalysis.com/stocks/nvmi/statistics/), [forecast](https://stockanalysis.com/stocks/nvmi/forecast/) (Nov 6, 2026), [ratios](https://stockanalysis.com/stocks/nvmi/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/nvmi/history/)
-  - Camtek: [statistics](https://stockanalysis.com/stocks/camt/statistics/), [forecast](https://stockanalysis.com/stocks/camt/forecast/) (Nov 9, 2026), [ratios](https://stockanalysis.com/stocks/camt/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/camt/history/)
-  - Hitachi: [statistics](https://stockanalysis.com/quote/tyo/6501/statistics/), [forecast](https://stockanalysis.com/quote/tyo/6501/forecast/) (Nov 6, 2026), [ratios](https://stockanalysis.com/quote/tyo/6501/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/6501/history/)
-  - Thermo Fisher: [statistics](https://stockanalysis.com/stocks/tmo/statistics/), [forecast](https://stockanalysis.com/stocks/tmo/forecast/) (Nov 3, 2026), [ratios](https://stockanalysis.com/stocks/tmo/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/tmo/history/)
-  - Bruker: [statistics](https://stockanalysis.com/stocks/brkr/statistics/), [forecast](https://stockanalysis.com/stocks/brkr/forecast/) (Nov 10, 2026), [ratios](https://stockanalysis.com/stocks/brkr/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/brkr/history/)
-  - Rigaku: [statistics](https://stockanalysis.com/quote/tyo/268A/statistics/), [forecast](https://stockanalysis.com/quote/tyo/268A/forecast/) (Jun 24, 2026), [ratios](https://stockanalysis.com/quote/tyo/268A/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/268A/history/)
-  - JEOL: [statistics](https://stockanalysis.com/quote/tyo/6951/statistics/), [forecast](https://stockanalysis.com/quote/tyo/6951/forecast/) (Aug 17, 2026), [ratios](https://stockanalysis.com/quote/tyo/6951/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/6951/history/)
-  - FormFactor: [statistics](https://stockanalysis.com/stocks/form/statistics/), [forecast](https://stockanalysis.com/stocks/form/forecast/) (Nov 11, 2026), [ratios](https://stockanalysis.com/stocks/form/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/form/history/)
-  - Technoprobe: [statistics](https://stockanalysis.com/quote/bit/TPRO/statistics/), [forecast](https://stockanalysis.com/quote/bit/TPRO/forecast/) (Nov 9, 2026), [ratios](https://stockanalysis.com/quote/bit/TPRO/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/bit/TPRO/history/)
-  - PDF Solutions: [statistics](https://stockanalysis.com/stocks/pdfs/statistics/), [forecast](https://stockanalysis.com/stocks/pdfs/forecast/) (Nov 9, 2026), [ratios](https://stockanalysis.com/stocks/pdfs/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/pdfs/history/)
-  - Park Systems: [statistics](https://stockanalysis.com/quote/kosdaq/140860/statistics/), [forecast](https://stockanalysis.com/quote/kosdaq/140860/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/kosdaq/140860/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/kosdaq/140860/history/)
-  - Skyverse: [statistics](https://stockanalysis.com/quote/sha/688361/statistics/), [forecast](https://stockanalysis.com/quote/sha/688361/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/sha/688361/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/sha/688361/history/)
-  - Wuhan Jingce: [statistics](https://stockanalysis.com/quote/she/300567/statistics/), [forecast](https://stockanalysis.com/quote/she/300567/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/she/300567/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/she/300567/history/)
-  - Micronics Japan: [statistics](https://stockanalysis.com/quote/tyo/6871/statistics/), [forecast](https://stockanalysis.com/quote/tyo/6871/forecast/) (Oct 8, 2026), [ratios](https://stockanalysis.com/quote/tyo/6871/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/6871/history/)
-  - Tokyo Seimitsu: [statistics](https://stockanalysis.com/quote/tyo/7729/statistics/), [forecast](https://stockanalysis.com/quote/tyo/7729/forecast/) (Sep 30, 2026), [ratios](https://stockanalysis.com/quote/tyo/7729/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tyo/7729/history/)
-  - Chroma ATE: [statistics](https://stockanalysis.com/quote/tpe/2360/statistics/), [forecast](https://stockanalysis.com/quote/tpe/2360/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/tpe/2360/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tpe/2360/history/)
-  - Cohu: [statistics](https://stockanalysis.com/stocks/cohu/statistics/), [forecast](https://stockanalysis.com/stocks/cohu/forecast/) (Nov 11, 2026), [ratios](https://stockanalysis.com/stocks/cohu/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/cohu/history/)
-  - Nextin: [statistics](https://stockanalysis.com/quote/kosdaq/348210/statistics/), [forecast](https://stockanalysis.com/quote/kosdaq/348210/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/kosdaq/348210/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/kosdaq/348210/history/)
-  - Auros: [statistics](https://stockanalysis.com/quote/kosdaq/322310/statistics/), [forecast](https://stockanalysis.com/quote/kosdaq/322310/forecast/) (n/a (no forecast page)), [ratios](https://stockanalysis.com/quote/kosdaq/322310/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/kosdaq/322310/history/)
-  - Koh Young: [statistics](https://stockanalysis.com/quote/kosdaq/098460/statistics/), [forecast](https://stockanalysis.com/quote/kosdaq/098460/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/kosdaq/098460/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/kosdaq/098460/history/)
-  - Comet: [statistics](https://stockanalysis.com/quote/swx/COTN/statistics/), [forecast](https://stockanalysis.com/quote/swx/COTN/forecast/) (Sep 2, 2026), [ratios](https://stockanalysis.com/quote/swx/COTN/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/swx/COTN/history/)
-  - PVA TePla: [statistics](https://stockanalysis.com/quote/etr/TPE/statistics/), [forecast](https://stockanalysis.com/quote/etr/TPE/forecast/) (Nov 9, 2026), [ratios](https://stockanalysis.com/quote/etr/TPE/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/etr/TPE/history/)
-  - Hangzhou Changchuan: [statistics](https://stockanalysis.com/quote/she/300604/statistics/), [forecast](https://stockanalysis.com/quote/she/300604/forecast/) (n/a (no forecast page)), [ratios](https://stockanalysis.com/quote/she/300604/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/she/300604/history/)
-  - Huafeng: [statistics](https://stockanalysis.com/quote/sha/688200/statistics/), [forecast](https://stockanalysis.com/quote/sha/688200/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/sha/688200/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/sha/688200/history/)
-  - MA-tek: [statistics](https://stockanalysis.com/quote/tpex/3587/statistics/), [forecast](https://stockanalysis.com/quote/tpex/3587/forecast/) (not shown), [ratios](https://stockanalysis.com/quote/tpex/3587/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/quote/tpex/3587/history/)
-  - Lam Research: [statistics](https://stockanalysis.com/stocks/lrcx/statistics/), [forecast](https://stockanalysis.com/stocks/lrcx/forecast/) (Nov 9, 2026), [ratios](https://stockanalysis.com/stocks/lrcx/financials/ratios/?p=quarterly), [history](https://stockanalysis.com/stocks/lrcx/history/)
-- SA ETF pages, 11-Nov close: [SOXX](https://stockanalysis.com/etf/soxx/) and [SMH](https://stockanalysis.com/etf/smh/), plus their price history.
+- **stockanalysis.com (SA)**, data from S&P Global Market Intelligence, accessed 12-Nov-2026 12:01-12:06 UTC. Statistics pages say "Last updated: Nov 12, 2026" and are priced at the 11-Nov close (US) or 12-Nov close (Asia); European pages were intraday 12-Nov. Each company has four pages: `https://stockanalysis.com/<path>/statistics/`, `/forecast/`, `/financials/ratios/?p=quarterly` and `/history/`. Daily closes come from the chart data behind the history pages. Direct links are in every table row. Paths, with the forecast page's "last updated" date in brackets: KLAC `stocks/klac` (Nov 9, 2026); AMAT `stocks/amat` (Nov 12, 2026); ASML (NASDAQ) `stocks/asml` (Oct 16, 2026); ASML (Euronext) `quote/ams/ASML` (Nov 6, 2026); Advantest `quote/tyo/6857` (Nov 5, 2026); Teradyne `stocks/ter` (Nov 11, 2026); Lasertec `quote/tyo/6920` (Nov 4, 2026); Onto `stocks/onto` (Nov 11, 2026); Nova `stocks/nvmi` (Nov 6, 2026); Camtek `stocks/camt` (Nov 9, 2026); Hitachi `quote/tyo/6501` (Nov 6, 2026); Thermo Fisher `stocks/tmo` (Nov 3, 2026); Bruker `stocks/brkr` (Nov 10, 2026); Rigaku `quote/tyo/268A` (Jun 24, 2026); JEOL `quote/tyo/6951` (Aug 17, 2026); FormFactor `stocks/form` (Nov 11, 2026); Technoprobe `quote/bit/TPRO` (Nov 9, 2026); PDF Solutions `stocks/pdfs` (Nov 9, 2026); Park Systems `quote/kosdaq/140860` (n/a); Skyverse `quote/sha/688361` (n/a); Wuhan Jingce `quote/she/300567` (n/a); Micronics Japan `quote/tyo/6871` (Oct 8, 2026); Tokyo Seimitsu `quote/tyo/7729` (Sep 30, 2026); Chroma ATE `quote/tpe/2360` (n/a); Cohu `stocks/cohu` (Nov 11, 2026); Nextin `quote/kosdaq/348210` (n/a); Auros `quote/kosdaq/322310` (no forecast page); Koh Young `quote/kosdaq/098460` (n/a); Comet `quote/swx/COTN` (Sep 2, 2026); PVA TePla `quote/etr/TPE` (Nov 9, 2026); Hangzhou Changchuan `quote/she/300604` (no forecast page); Huafeng `quote/sha/688200` (n/a); MA-tek `quote/tpex/3587` (n/a); Lam Research `stocks/lrcx` (Nov 9, 2026).
+- SA ETF pages, 11-Nov close: [SOXX](https://stockanalysis.com/etf/soxx/) and [SMH](https://stockanalysis.com/etf/smh/).
 - SA industry pages, 12-Nov: [Semiconductor Equipment & Materials](https://stockanalysis.com/stocks/industry/semiconductor-equipment-and-materials/) and [Semiconductors](https://stockanalysis.com/stocks/industry/semiconductors/).
-- [FactSet Earnings Insight, 6-Nov-2026](https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_110626.pdf): S&P 500 and sector forward P/E as of 5-Nov-2026.
-- [kabutan Advantest](https://kabutan.jp/stock/?code=6857), 12-Nov.
-- [TWSE BWIBBU daily P/E](https://www.twse.com.tw/exchangeReport/BWIBBU_d?response=json&date=20261112&selectType=ALL), 12-Nov.
-- [TPEx P/E analysis](https://www.tpex.org.tw/web/stock/aftertrading/peratio_analysis/pera_result.php?l=en-us&d=115/11/12&o=json), 12-Nov.
-- [companiesmarketcap KLA P/S history](https://companiesmarketcap.com/kla/ps-ratio/): year-end values; its 2026 value appears stale.
+- [FactSet Earnings Insight, 6-Nov-2026](https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_110626.pdf): data as of 5-Nov-2026.
+- [worldperatio S&P 500 sectors](https://worldperatio.com/sp-500-sectors/): "Last Update: 11 November 2026"; trailing P/E of sector ETFs.
+- companiesmarketcap P/S history (year-end values; the "2026" values are stale), accessed 12-Nov: `https://companiesmarketcap.com/<slug>/ps-ratio/` for kla, applied-materials, lam-research, asml, advantest, teradyne, lasertec, onto-innovation, nova-measuring-instruments, camtek, hitachi, thermo-fisher-scientific, bruker, formfactor, technoprobe, pdf-solutions and cohu. jeol and park-systems returned 404.
+- kabutan stock pages, 12-Nov: [6857](https://kabutan.jp/stock/?code=6857), [6920](https://kabutan.jp/stock/?code=6920), [268A](https://kabutan.jp/stock/?code=268A), [6951](https://kabutan.jp/stock/?code=6951), [6871](https://kabutan.jp/stock/?code=6871) and [7729](https://kabutan.jp/stock/?code=7729).
+- Eastmoney research-report API (Chinese broker forecasts, reports dated 12-May to 12-Nov-2026): `https://reportapi.eastmoney.com/report/list?code=<code>&beginTime=2026-05-12&endTime=2026-11-12&pageSize=100&qType=0` for 688361, 300567, 300604 and 688200.
+- [TWSE BWIBBU](https://www.twse.com.tw/exchangeReport/BWIBBU_d?response=json&date=20261112&selectType=ALL) and [TPEx P/E](https://www.tpex.org.tw/web/stock/aftertrading/peratio_analysis/pera_result.php?l=en-us&d=115/11/12&o=json), 12-Nov.
+- Tried without usable result: Eastmoney quote API (HTTP 502), FnGuide Park Systems (empty page), Naver Finance Park Systems (fields not parseable), stooq SOX history (connection reset). WebSearch and Firecrawl search were unavailable (budget and credits exhausted).
