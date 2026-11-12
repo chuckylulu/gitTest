@@ -1,262 +1,398 @@
 # Technical frontier and priors audit: measuring and inspecting buried features in 3D and bonded chips
 
-Research date: **12 November 2026**. Status: **first write (interim)**. Parts A and B are mostly complete; Part C (logic-node ramps, TSMC/Intel/Samsung bond-pitch roadmaps, Micron, JEDEC, vertical-channel DRAM) is **incomplete** and is being filled in. Labels: **[CC]** = company claim with no outside confirmation found; **[SEC]** = secondary report (press, analyst, aggregator); **[TER]** = tertiary (Wikipedia, market-research summaries). Coverage caveats: SPIE papers were read only as abstracts on the volume page, except the IBM/Nova paper, which was read in full. The SemiAnalysis ECTC roundup is partly paywalled. Equipment-maker earnings material is limited to KLA's October 2026 call, read through an auto-generated transcript.
+**Research date: 12 November 2026.** This is the final version, rewritten after gap-filling. Scope: technical facts and roadmaps only, with no company assessment.
+
+**Citations and labels.** Citations are keyed links ([s1] … [s43]); the Sources section gives the title, date and URL for each key.
+- **[CC]**: company claim, no outside confirmation found.
+- **[SEC]**: secondary report (press, analyst, aggregator).
+- **[TER]**: tertiary (Wikipedia, market research).
+- **[SS]**: seen only in a search-result summary; the page itself was not read (lowest confidence).
+
+**Coverage limits.**
+- SPIE Proc. 13981 was read as abstracts on the volume page; only the IBM/Nova paper was read in full.
+- The SemiAnalysis ECTC roundup and the Bits&Chips Invisix piece are partly paywalled.
+- KLA's call was read through an auto-generated transcript.
+- No IRDS 2025 edition was found, so the 2024 edition is used.
+- No IEDM 2025, VLSI 2026 or IITC papers were read.
+- Applied Materials was seen only through an analyst summary; no Lam Research or ASML process-control statements were obtained.
 
 ## Summary verdict table
 
-| # | Item | Verdict | Key source | Date |
+| # | Item | Verdict | Source | Date |
 |---|---|---|---|---|
-| A1 | SE: buried post-bond defects are one of the hardest problems as pitch shrinks below the 4-9 µm production range | **Confirmed** (exact wording: "one of the most significant challenges"; "today's production levels of 4 to 9 µm") | Semiconductor Engineering, L. Peters | 10 Nov 2026 |
-| A2 | EE Times: no roadmap for probing bond arrays below ~25 µm | **Confirmed; date corrected** (Jan 2026; the wording is the article's paraphrase of imec's view, "absence of any realistic roadmap") | EE Times, P. Brans | 26 Jan 2026 |
-| A3a | TrendForce: hybrid bonding in HBM slipped to 16-high HBM4E at the earliest | **Confirmed for July 2026; now partly outdated, so corrected**: SK hynix said in Aug 2026 that hybrid bonding will not reach HBM4E (HBM5 at the earliest) | TrendForce [SEC]; Bits&Chips [SEC]; Tom's Hardware [SEC] | 7 Jul 2026; 24-26 Aug 2026 |
-| A3b | SemiAnalysis ECTC 2026: Samsung reported hybrid bonding cuts thermal resistance by only 12-13%, so 20-24-high needs new approaches | **Corrected**: 12.2%/12.9% is the *internal HBM* thermal resistance in a 2-GPU + 8-HBM package model. The stack-level cut is ~19% (22.3%/29.1% at 2x/4x pad density) and the total-HBM cut only 3.5%/7.7%. "16-hi acceptable; 20-hi/24-hi need new approaches" is confirmed | SemiAnalysis (Ahmad, Wong, Patel et al.) [SEC] | 2 Jul 2026 |
-| A4a | SPIE 2026: X-ray scattering and optical data fused with physics-informed ML | **Confirmed** (CD-SAXS + spectroscopic ellipsometry, physics-informed ML, 3D NAND, R² > 0.95 against SEM) | Proc. SPIE 13981 | Feb 2026 |
-| A4b | Same volume names scarce training data as the brake | **Confirmed with nuance**: several abstracts name scarce reference or labelled data, but the keynote (per Chris Mack) called *trust* the biggest roadblock | Proc. SPIE 13981; lithoguru diary | Feb 2026 |
-| A4c | IBM Research maps optical spectra straight to reference values with no optical model | **Corrected**: a joint IBM Research + Nova paper; "modeless" ML with physics-based spectral filtering (VTS); the reference is **AFM** (non-destructive), not EM cross-sections; trained on 15 wafers x 5 dies; blind-test R² ~0.8 at best and 0.35 at worst | Timoney et al., SPIE 13981-16 | Feb 2026 (PDF Apr 2026) |
-| A5 | LAM 2026: table-top computational EUV microscope resolved 43.5 nm half-pitch on a real chip | **Confirmed with nuance**: 17.9 nm HHG grazing-reflection ptychography; 43.5 nm = diffraction limit = one reconstructed pixel; chip grating linewidth 42.7 nm by SEM; surface features only; not yet usable online | Chen et al., Light: Adv. Manuf. 7:112 | Online 9 Sep 2026 |
-| B1 | Measurement steps per leading-edge wafer keep rising through 2028 (75%) | **Supported only by vendor statements; no node-level counts found** | KLA call [CC]; IRDS 2024 | 28 Oct 2026 |
-| B2 | Buried bond-interface defects still a leading yield limiter in 2030 (60%) | **Mixed**: the detection gap is confirmed, but the named root causes are pre-bond (CMP, Cu recess, particles), research-scale W2W yields are 97-98%, and hybrid bonding in HBM slips to ~2028-30 | SE; IRDS 2024; IEEE EPS; ECTC 2026 | 2024-2026 |
-| B3 | Computed methods take share from direct imaging 2029-33 (45%) | **Counter-evidence stronger today**: e-beam is broadening; inline CD-SAXS is limited to memory high-aspect-ratio work; logic needs >=100x brighter X-ray sources | IRDS 2024; SPIE 13981; KLA | 2024-2026 |
-| B4 | Tools per wafer may fall after 2030 (35%) | **No supporting roadmap or vendor statement found**; virtual metrology and sampling optimisation exist, but vendors project growth | SPIE 13981; IRDS 2024; KLA | 2024-2026 |
-| B5 | AI changes software and economics before physics | **Partly contradicted**: in dose- or photon-limited cases, learned or computational reconstruction changes what can be measured at all | SPIE 13981; LAM 2026 | 2026 |
-| B6 | Learned denoising is safe for the expected and risky for the unexpected | **Supported qualitatively; no quantitative test found**; deep-learning enhancement is already applied to defect detection | SPIE 13981; lithoguru | 2026 |
-| C | Roadmap facts | **Partly complete** (HBM done; logic and pitch roadmaps in progress) | see Part C | — |
-| D | Contradictions with the background | 10 points listed | see Part D | — |
+| A1 | SE: buried post-bond defects are among the hardest problems as pitch shrinks below the 4-9 µm production range | **Confirmed**. The wording is "one of the most significant challenges". The **4 µm lower bound is not corroborated**: TSMC SoIC is at 6 µm now and 4.5 µm by 2029; Intel ships 9 µm; Amkor says "about six microns" | [s1] [s14] [s3] | 10 Nov 2026; 2 Sep; 16 Jul 2026 |
+| A2 | EE Times: no roadmap for probing bond arrays below ~25 µm | **Confirmed; date corrected to 26 Jan 2026**. It is the article's paraphrase of imec ("absence of any realistic roadmap") | [s6] | 26 Jan 2026 |
+| A3a | TrendForce: hybrid bonding in HBM slipped to 16-high HBM4E at the earliest | **Confirmed as of Jul 2026; corrected for SK hynix**: in Aug 2026 it said "not HBM4E", so HBM5 at the earliest, and its Vera Rubin HBM is all MR-MUF | [s9] [s13] [s12] | 7 Jul; 24-26 Aug 2026 |
+| A3b | SemiAnalysis ECTC 2026: Samsung's hybrid bonding cuts thermal resistance by only 12-13%; 20-24-high needs new approaches | **Corrected**. 12.2%/12.9% is the *internal-HBM* resistance in a 2-GPU + 8-HBM package model. Stack level is ~19% (22.3%/29.1% at 2x/4x pad density); total HBM is 3.5%/7.7%; Samsung's own figure is >20% [CC]. "16-hi acceptable, 20/24-hi need new approaches" is confirmed | [s10] [s8] | 2 Jul 2026 |
+| A4a | SPIE 2026: X-ray scattering and optical data fused with physics-informed ML | **Confirmed** (CD-SAXS + ellipsometry, 3D NAND, R² > 0.95 against SEM) | [s22] | Feb 2026 |
+| A4b | The same volume names scarce training data as the brake | **Confirmed with nuance**: many abstracts cite scarce reference or labelled data, but the keynote named *trust* the biggest roadblock | [s22] [s26] | Feb 2026 |
+| A4c | IBM maps optical spectra straight to reference values without an optical model | **Corrected**. The paper is IBM Research + Nova; the "modeless" ML keeps physics-based spectral filtering (VTS); the reference is **AFM** (non-destructive) on a near-surface Cu recess; 15 wafers x 5 dies; blind R² ~0.8 at best, 0.35 at worst | [s23] | Feb 2026 |
+| A5 | Light: Adv. Manuf.: table-top computational EUV microscope resolved 43.5 nm half-pitch on a real chip | **Confirmed with nuance**. 17.9 nm HHG reflection ptychography; 43.5 nm is the diffraction limit and equals one reconstructed pixel; chip grating linewidth 42.7 nm by SEM; surface features only, single angle, not yet usable online | [s27] [s28] | Online 9 Sep 2026 |
+| B1 | Steps per leading-edge wafer keep rising through 2028 (75%) | **Supported by vendor statements and spending; no node-level step counts found** | [s29] [s30] [s21] | Aug-Oct 2026 |
+| B2 | Buried bond-interface defects still a leading yield limiter in 2030 (60%) | **Mixed**. The detection gap is confirmed, but the root causes are mostly pre-bond, research W2W yields are 97-98%, hybrid bonding in HBM is ~2028-30, and in DRAM dies ~2028 | [s1] [s20] [s21] [s19] | 2024-2026 |
+| B3 | Computed methods take share from direct imaging 2029-33 (45%) | **Counter-evidence is stronger today**: e-beam spending and adoption are rising; inline CD-SAXS is limited to memory high-aspect-ratio work; logic needs >=100x brighter sources; soft-X-ray scatterometry is at start-up stage | [s21] [s22] [s30] [s31] | 2024-2026 |
+| B4 | Tools per wafer may fall after 2030 (35%) | **No supporting roadmap or vendor statement found**; vendors project growth to 2030 | [s21] [s22] [s29] | 2024-2026 |
+| B5 | AI changes the software and economics of measurement before its physics | **Partly contradicted** in dose- and photon-limited measurements | [s22] [s28] | 2026 |
+| B6 | Learned denoising is safe for the expected, risky for the unexpected | **Supported qualitatively; untested quantitatively**; deep-learning enhancement is already used for defect detection | [s22] [s26] | 2026 |
+| C | Roadmap facts | **Mostly complete** (gaps: Samsung foundry bond pitch, JEDEC primary document, IRDS 2025) | Part C | — |
+| D | Contradictions with the background | **12 points** | Part D | — |
 
 ## A. Verification of background evidence items
 
 ### Takeaway
-All five items trace to real 2026 sources. Two need correcting: the SemiAnalysis "12-13%" picks one of several thermal metrics, and the IBM "no optical model" case uses AFM, not EM cross-sections, and keeps physics-based filtering. One is now outdated: TrendForce's HBM4E timing has been overtaken by SK hynix's August 2026 statement.
+All five items trace to real 2026 sources, but only A1 and A2 survive essentially intact. Three need correcting or updating:
+- The "12-13%" is one of several thermal metrics.
+- The IBM case uses AFM, not EM cross-sections, and keeps physics-based filtering.
+- The TrendForce HBM4E timing has been overtaken by SK hynix's August statement.
+
+The SE "4 µm" production lower bound is also not corroborated.
 
 ### Cited Findings
 **A1, Semiconductor Engineering, November 2026.**
-- "Shrinking Hybrid Bonding Pitches Push Inspection Limits" (Laura Peters, 10 Nov 2026). Exact text: inspection struggles "as hybrid bonding pitches continue to scale down below today's production levels of 4 to 9 µm"; "Detecting buried defects after bonding remains one of the most significant challenges"; "no single technique provides the resolution, sensitivity, wafer coverage, and throughput required to identify every yield-critical defect." Key takeaways frame pitches as approaching "5 µm and below". — [SE, 10 Nov 2026](https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/)
-- Method limits in the same article:
-  - Acoustic micro-imaging (~200 MHz) gives the highest acoustic resolution, but "Ultrasound does not travel through air gaps that have a thickness down to about 0.1 µm". A 165 MHz transducer "gets you down to a resolution of 12 microns", and a 5 µm defect can be detected but not measured accurately (B. Schackmuth, Nordson). Acoustic imaging is currently done after full assembly.
-  - X-ray: "A resolution of 150 nm has been demonstrated". Bruker XRDI does full-wafer inspection "at ~20wph" with zero edge exclusion [CC].
-  - IR checks post-bond pad alignment through silicon.
-  - Defect-size requirements reach "as low as 50 nm"; Cu pads are recessed 2-5 nm, controlled "within 2 nm across the wafer"; roughness must be ~0.5 nm RMS. "Even a single particle can delaminate the top wafer."
-  - Micro-inspection samples "maybe two to five wafers per lot" (E. Akomer, Microtronic).
-  - The article describes no AI/ML use in hybrid-bond inspection. — [SE, 10 Nov 2026](https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/)
-- Earlier SE piece (G. Haley, 12 Aug 2025): "Optical methods are inherently limited by their resolution and can struggle with buried interfaces or subsurface voids"; acoustic, IR and X-ray "typically lack the resolution or contrast needed to detect nanoscale voids"; electrical test structures give "only partial wafer coverage". Onto: customers push "down to 6µm, 5µm, and even smaller pitches". — [SE, 12 Aug 2025](https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/)
+- Laura Peters, 10 Nov 2026 [s1]. Inspection struggles "as hybrid bonding pitches continue to scale down below today's production levels of 4 to 9 µm"; "Detecting buried defects after bonding remains one of the most significant challenges"; "no single technique provides the resolution, sensitivity, wafer coverage, and throughput required to identify every yield-critical defect." Pitches are said to be approaching "5 µm and below."
+- Method limits in the same article [s1]:
+  - Acoustic micro-imaging (~200 MHz) is the best acoustic option, but "Ultrasound does not travel through air gaps that have a thickness down to about 0.1 µm". At 165 MHz it "gets you down to a resolution of 12 microns", and a 5 µm defect can be detected but not measured accurately (Nordson). It is currently run after full assembly.
+  - X-ray: "A resolution of 150 nm has been demonstrated"; Bruker XRDI does full-wafer inspection at "~20wph" [CC].
+  - IR checks pad alignment through silicon.
+  - Defect-size requirements reach "as low as 50 nm"; Cu recess is 2-5 nm, controlled "within 2 nm"; roughness must be ~0.5 nm RMS.
+  - Micro-inspection samples "maybe two to five wafers per lot" (Microtronic).
+  - The article mentions no AI/ML.
+- Pitch cross-checks:
+  - Amkor's Mike Kelly: "The go-to minimum pitch now is about six microns"; "There are roadmaps out there going all the way to one-micron pitch." Macro optical inspection cannot resolve the bond interface; post-bond electrical test is "the most direct evidence that the interface works" (article paraphrase). [s3] (SE, 16 Jul 2026)
+  - TSMC (2026 North American Technology Symposium, as reported): pitch "from 9 microns in 2023 to 6 microns in 2025 and 4.5 microns by 2029"; "TSMC offers 6-micron pitch while its newest disclosed customer ships at 9; Intel ships at 9 with 3 on the roadmap." [s14] [SEC]
+- Earlier SE (12 Aug 2025): optical methods "can struggle with buried interfaces or subsurface voids"; acoustic, IR and X-ray "typically lack the resolution or contrast needed to detect nanoscale voids". [s2]
 
 **A2, EE Times.**
-- "Hybrid Bonding Comes of Age Slowly and Collectively" (Pat Brans, **26 Jan 2026**). "The absence of any realistic roadmap for probing dense hybrid-bond arrays below ~25 µm pitch" forces a rethink of pre-bond test. Erik Jan Marinissen (imec): "From a test perspective, this technology is under development and not mature at all." "Dedicated sacrificial probe pads may offer a workaround, but at the cost of additional area and process complexity." Also: "A single particle can create a stand-off height that leads to many open defects, sometimes across die boundaries" (Marinissen). CMP is "the single largest source of yield variability in high-volume manufacturing" (V. Dubey, Fraunhofer ENAS). W2W bonding is "well established in high-volume production for image sensors and some memory devices", while die-to-wafer is "the central battleground". — [EE Times, 26 Jan 2026](https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/)
-- IRDS 2024 lists "Fine pitch probing methods" and "Best testing and binning methods - known good dies" among the hybrid-bonding metrology requirements (section 5.12.2). — [IRDS 2024 Metrology](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
+- Pat Brans, **26 Jan 2026** [s6]: "The absence of any realistic roadmap for probing dense hybrid-bond arrays below ~25 µm pitch" forces a rethink of pre-bond test.
+- Erik Jan Marinissen (imec): "From a test perspective, this technology is under development and not mature at all." Sacrificial probe pads may work "at the cost of additional area and process complexity". "A single particle can create a stand-off height that leads to many open defects, sometimes across die boundaries."
+- CMP is "the single largest source of yield variability in high-volume manufacturing" (Fraunhofer ENAS).
+- IRDS 2024 lists "Fine pitch probing methods" and "known good dies" among hybrid-bonding metrology needs. [s21]
 
 **A3a, TrendForce on HBM4E timing.**
-- TrendForce, 7 Jul 2026, citing ZDNet Korea [SEC]: industry forecasts point to "16-high HBM4E as the 'earliest likely adoption point'"; "12-high HBM4E products are still expected to remain the mainstream offering"; both makers kept thermo-compression bonding for HBM4; Samsung's Heat Path Block and SK hynix's iHBM are being tested for HBM5; the delay is driven by relaxed thickness limits and "delayed demand from key customers, including NVIDIA, for higher-stack-count HBM". — [TrendForce, 7 Jul 2026](https://www.trendforce.com/news/2026/07/07/news-samsung-sk-hynix-reportedly-reconsider-hybrid-bonding-timeline-16-high-hbm4e-may-be-earliest-adoption/)
-- TrendForce, 6 Mar 2026, citing ZDNet [SEC]: Samsung "is expected to introduce the technology only partially at the earliest in 16-layer HBM4E products"; hybrid bonding "has not yet been deployed in mass production for HBM manufacturing"; "yields can decline when bonding up to 20 stacked chips." — [TrendForce, 6 Mar 2026](https://trendforce.com/news/2026/03/06/news-industry-weigh-825-900-%CE%BCm-hbm-thickness-for-20-high-stacks-potentially-slowing-hybrid-bonding)
-- **Superseding update**: at Hot Chips (23 Aug 2026), SK hynix "pushed the introduction of hybrid bonding in high-bandwidth memory (HBM) back by another generation", extending "the life of microbump technology through HBM4E". VP Jaesik Lee said "producing reliable copper-to-copper bonds across 16 or 20 stacked memory dies remains a major manufacturing challenge". — [Bits&Chips, 26 Aug 2026](https://bits-chips.com/article/besi-faces-longer-wait-as-sk-hynix-pushes-hybrid-bonding-to-hbm5/) [SEC]; [Tom's Hardware, 24 Aug 2026](https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling) [SEC]; summary: "Hybrid bonding remains in research for 20-layer-and-higher stacks and is not expected to reach HBM4E" — [MLQ, 25 Aug 2026](https://mlq.ai/news/sk-hynix-pushes-hybrid-bonding-to-hbm5-as-stacked-ai-memory-reaches-its-height-limit/) [SEC, AI-written summary]
+- 7 Jul 2026, citing ZDNet Korea [SEC] [s9]: "16-high HBM4E as the 'earliest likely adoption point'"; "12-high HBM4E products are still expected to remain the mainstream offering"; HBM4 stayed on thermo-compression bonding; Samsung's Heat Path Block and SK hynix's iHBM are being tested for HBM5.
+- 6 Mar 2026 [s7]: Samsung "is expected to introduce the technology only partially at the earliest in 16-layer HBM4E"; hybrid bonding "has not yet been deployed in mass production for HBM".
+- **Update, Hot Chips, 23 Aug 2026** (Jaesik Lee, SK hynix America) [s13] [SEC]:
+  - "SK hynix doesn't expect hybrid bonding to be ready for HBM4E", which pushes the transition "out to HBM5 at the earliest".
+  - Hybrid bonding "remains at the research stage for stacks of 20 layers and above"; SK hynix "is still deciding which product gets it first".
+  - Lee: "We are talking about 16 layers and 20 layers that we need to make the hybrid bonding, so it's very different from the one-layer stacking."
+  - SK hynix holds "around 70% of Nvidia's HBM orders for the Vera Rubin generation … and all of it will be stacked with MR-MUF."
+  - Corroborated by [s12] (Bits&Chips) and [s15] (MLQ summary).
+- SK hynix (Kim Ji-hoon, SEMI panel, 9 Sep 2026) requires "a yield of 90 to 98 percent" and "a lifespan of three to five years" before adopting hybrid bonding. [s16] [SEC]
 
-**A3b, SemiAnalysis ECTC 2026 roundup (2 Jul 2026; partly paywalled) [SEC].**
-- Samsung compared hybrid copper bonding with thermo-compression bonding in a 2.5D package with 2 GPU dies and 8 HBM stacks. Reported figures:
-  - Internal HBM thermal resistance: "drops by 12.2% with air cooling and 12.9% with liquid cooling."
-  - Total HBM thermal resistance: "drops by 3.5% with air cooling and 7.7% with liquid cooling."
-  - Stack level: "Baseline HCB reduces stack thermal resistance by ~19% versus TCB", rising "to 22.3% at 2× pad density and 29.1% at 4× pad density."
-  - Package effect: hybrid bonding "allows inlet temperatures to rise by 1-2 °C at constant package power or package power to increase by ~4%", with cooling power down ~7%.
-  - Conclusion: "With 16-hi HBM, the thermal resistance is still acceptable" but for "20-hi and 24-hi HBM, new approaches are needed." — [SemiAnalysis, 2 Jul 2026](https://newsletter.semianalysis.com/p/ectc2026)
-- Samsung's own public claim is "over 20% improvement in thermal resistance versus TC bonding" and support for "stacks exceeding 16 layers" (NVIDIA GTC, March 2026) [CC]. — [TrendForce, 1 Apr 2026](https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/)
+**A3b, SemiAnalysis ECTC 2026 roundup (2 Jul 2026; partly paywalled) [SEC] [s10].** Samsung's model compares hybrid copper bonding with thermo-compression bonding in a package with 2 GPU dies and 8 HBM stacks.
+- "The internal HBM thermal resistance drops by 12.2% with air cooling and 12.9% with liquid cooling."
+- "Total HBM thermal resistance drops by 3.5% with air cooling and 7.7% with liquid cooling."
+- "Baseline HCB reduces stack thermal resistance by ~19% versus TCB", rising to "22.3% at 2× pad density and 29.1% at 4× pad density."
+- Inlet temperature can rise 1-2 °C, or package power ~4%; cooling power falls ~7%.
+- "With 16-hi HBM, the thermal resistance is still acceptable … with future generations moving to 20-hi and 24-hi HBM, new approaches are needed."
 
-**A4, SPIE Advanced Lithography + Patterning 2026 (22-26 Feb 2026, San Jose); Proc. SPIE 13981 "Metrology, Inspection, and Process Control XL".**
-- X-ray plus optical fusion: "High-resolution 3D NAND profile measurement using optical metrology and machine learning" (D. Choi, Y. Jang, S. Seo et al.; DOI 10.1117/12.3090491) combines "CDSAXS profile data with spectroscopic ellipsometer (SE) spectra using physics-informed machine learning". All sites reach R² > 0.95 against SEM references (average slope 0.899). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-- "Leveraging AI and ML in multimodal combined and hybrid metrology" (M.-A. Henn, A. Chew, P. Bajcsy et al.) fuses OCD with a second modality using ensemble and physics-informed neural networks: "ensemble learning methods consistently outperform traditional methods with only one model." — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
+Other vendor figures:
+- Samsung at GTC, March 2026: "over 20% improvement in thermal resistance versus TC bonding" [CC]. [s8]
+- SK hynix deck: hybrid bonding at 20-high cuts thermal resistance "roughly 35% versus MR-MUF", allows 24% thicker core dies, and brings bump pitch "below 18 microns … against the 30 microns where MR-MUF is today" [CC]. [s13]
+
+**A4, SPIE Advanced Lithography + Patterning 2026 (22-26 Feb 2026, San Jose); Proc. SPIE 13981 [s22].**
+- X-ray plus optical fusion:
+  - "High-resolution 3D NAND profile measurement using optical metrology and machine learning" (Choi, Jang, Seo et al.) combines "CDSAXS profile data with spectroscopic ellipsometer (SE) spectra using physics-informed machine learning". All sites reach R² > 0.95 against SEM.
+  - Henn, Chew, Bajcsy et al. fuse OCD with another modality using ensemble and physics-informed neural networks.
 - Data scarcity, in the same volume:
-  - X-ray CD ML (A. Baranovskiy, Y. Amasay, P. Gin et al.): "A key challenge is the limited availability of high-quality reference data."
-  - SEM synthesis: "hindered by the scarcity of high-quality training data."
-  - Layout-guided SEM contours: "suffer from scarcity of annotated (labeled) images."
-  - Few-shot SEMformer: "labeled 3D heights are extremely scarce", MAE ≈ 24 nm.
-  - Virtual-metrology tool matching: "physical metrology is sparse and requires a considerable amount of time to reach statistical significance."
-  - Overlay ML trained "using only 3–5 wafers". — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-- Keynote framing: Steve McCandless (Micron), as reported by Chris Mack, named "the biggest roadblock to the widespread use of AI in metrology: trust". Mack on extrapolation: "I have my doubts." Many talks used ML. — [lithoguru SPIE 2026 diary](https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html) [SEC, expert commentary]
-- IBM paper: Timoney, Schoeche, Polomoff, Mittelstaedt, Malley, Sherwood, Omrani, Schmidt (IBM Research Albany), Cepler and Isbester (Nova), Turovets (Nova), "Inline monitoring of hybrid bonding Cu recess with Vertical Traveling Scatterometry machine learning" (SPIE 13981-16).
-  - Keywords include "modeless" and "reference metrology". "Unlike conventional OCD ML that requires detailed underlayer modeling or pre and post delta measurements, this VTS-ML approach applies a single model applicable to both top and bottom wafer categories."
-  - Reference was **AFM**: "Reference data from 5 measurement dies across 15 wafers", ~4 nm training range, tested on 22 blind wafers. Blind-test R² = 0.35 at cutoff A ("insufficiently trained") and ~0.8 at cutoffs B and C.
-  - Requirement: ~0.1 nm sensitivity, with surface smoothness <1 nm.
-  - Conclusion: "leveraging limited reference metrology in an R&D environment". — [IBM/Nova paper PDF](https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf); talk listed 24 Feb 2026 — [IBM Research blog, 23 Feb 2026](https://research.ibm.com/blog/spie-2026-below-2-nm)
+  - X-ray CD ML: "A key challenge is the limited availability of high-quality reference data."
+  - SEM synthesis: "scarcity of high-quality training data".
+  - SEM contours: "scarcity of annotated (labeled) images".
+  - Few-shot SEMformer: "labeled 3D heights are extremely scarce".
+  - Virtual-metrology matching: "physical metrology is sparse and requires a considerable amount of time to reach statistical significance".
+  - Overlay ML trained "using only 3–5 wafers".
+- Keynote (S. McCandless, Micron), per C. Mack: "the biggest roadblock to the widespread use of AI in metrology: trust". [s26] [SEC]
+- IBM paper (Timoney, Schoeche, Polomoff … Schmidt, IBM Research Albany; Cepler, Isbester, Turovets, Nova), SPIE 13981-16 [s23]:
+  - Keywords include "modeless" and "reference metrology". "Unlike conventional OCD ML that requires detailed underlayer modeling … this VTS-ML approach applies a single model applicable to both top and bottom wafer categories."
+  - Reference: **AFM**, "5 measurement dies across 15 wafers", ~4 nm training range, 22 blind wafers.
+  - Results: blind-test R² = 0.35 at cutoff A ("insufficiently trained") and ~0.8 at cutoffs B and C.
+  - Framed as "leveraging limited reference metrology in an R&D environment".
+  - Talk given 24 Feb 2026 [s24].
 
 **A5, Light: Advanced Manufacturing 2026.**
-- Chen Y., Xu H., Wang Q., Li Y. … Shi Y. (corresponding), Fan Z., "Table-top extreme ultraviolet grazing-reflection ptychography with full-pose self-calibration", Light: Adv. Manuf. 7:112, DOI 10.37188/lam.2026.112. Received 2 Jun, accepted 30 Jun, published online 9 Sep 2026. Institutions: UCAS, CAS institutes (AIR, IoP, SIOM), Jihua Lab and others. — [LAM article page](https://www.light-am.com/article/doi/10.37188/lam.2026.112)
-- Setup: 17.9 nm high-harmonic source, 70° grazing incidence, NA 0.19 x 0.095, reconstructed pixel 43.5 x 70.0 nm.
-- On the real chip: grating contrast 0.49 with full-pose calibration versus 0.13 without, and "Fig. S10b shows an actual grating linewidth of 42.7 nm … This confirms that the system resolution (half-pitch) reaches a diffraction limit of 43.5 nm." Grating spacing came out 2.22 µm against 2.26 µm by SEM (1.9% error).
-- On the custom wafer: "features are not fully resolved even in full-pose reconstruction", with the minimum grating at 82.6 nm FWHM.
-- Limits: single illumination angle; "practical deployment in online settings is limited by the computational speed of phase retrieval algorithms"; ~10⁷ photons needed for self-calibration.
-- The paper's Table 3 lists an earlier table-top reflection system at 40 nm half-pitch (without real-chip inspection) — so the paper's "best resolution reported to date" claim needs that qualifier. — [LAM PDF](https://www.light-am.com/article/pdf/preview/LAM2026050195.pdf)
+- Chen Y., Xu H., Wang Q., Li Y. … Shi Y., Fan Z., "Table-top extreme ultraviolet grazing-reflection ptychography with full-pose self-calibration", LAM 7:112, DOI 10.37188/lam.2026.112. Accepted 30 Jun, online 9 Sep 2026. Institutions: UCAS and CAS institutes (AIR, IoP, SIOM), Jihua Lab and others. [s27]
+- Setup: 17.9 nm high-harmonic source, 70° grazing incidence, NA 0.19 x 0.095, pixel 43.5 x 70.0 nm.
+- Chip result: contrast 0.49 with calibration versus 0.13 without; "an actual grating linewidth of 42.7 nm … confirms that the system resolution (half-pitch) reaches a diffraction limit of 43.5 nm". [s28]
+- On the custom wafer, "features are not fully resolved even in full-pose reconstruction" (82.6 nm FWHM).
+- Limits: "practical deployment in online settings is limited by the computational speed of phase retrieval algorithms"; single angle; ~10⁷ photons needed.
+- The paper's own Table 3 lists an earlier table-top reflection system at 40 nm half-pitch (no real chip), so the "best resolution reported to date" claim needs that qualifier. [s28]
 
 ### Inferences
-- A1 and A2 are sound, but A2 is ten months old and its "no roadmap" is a journalist's framing of a single imec interview, not a roadmap-body statement.
-- A3b's "only 12-13%" undersells the stack-level effect (~19-29%) and oversells the package-level effect (3.5-7.7% total). The robust point is SemiAnalysis's: thermal benefit alone does not carry 20-24-high stacks.
-- A4c undercuts part of the background: the showcase "no optical model" case used non-destructive AFM as ground truth, on a near-surface parameter. It is not evidence about buried 3D features calibrated against TEM.
-- A5 shows computation recovering resolution from imperfect hardware, but at 43.5 nm on surface features. That is far from the 10-20 nm leading-edge CDs, and nothing here is buried.
+- A2 rests on one imec interview reported in January; it is not a roadmap-body statement. IRDS only lists fine-pitch probing as a need.
+- A3b: thermal benefit alone does not carry 20-24-high stacks. "Only 12-13%" understates the stack-level effect and overstates the package-level effect.
+- A4c: the showcase "no optical model" case is a near-surface parameter with a non-destructive reference. It is not buried 3D metrology calibrated by TEM.
+- A5: computation recovered resolution from imperfect hardware, but at 43.5 nm on surface features, far from leading-edge 10-20 nm CDs.
 
 ### Gaps
-- Full SPIE papers other than IBM/Nova are paywalled; author affiliations were not visible.
+- Full SPIE papers (other than IBM/Nova) are paywalled; author affiliations were not visible.
 - The rest of the SemiAnalysis article is paywalled.
 - No 2026 update on probing below 25 µm was found (SWTest 2026 not checked).
 
 ## B. Priors tested against current evidence
 
 ### Takeaway
-- B1 (rising steps): vendor-supported but unquantified.
-- B2 (bond defects in 2030): plausible, but the cause sits mostly before bonding, and HBM adoption is delayed.
-- B3 (computed methods take share): weaker than e-beam's momentum.
-- B4 (fewer tools after 2030): unsupported by any roadmap.
-- B5 (AI before physics): partly wrong in dose-limited regimes.
-- B6 (denoising risk): plausible but untested in public.
+- B1 (rising steps) is vendor-supported but unquantified.
+- B2 (bond defects in 2030) is plausible, but the cause sits mostly before bonding, and hybrid bonding arrives later in HBM than assumed.
+- B3 (computed methods take share) is weaker than e-beam's momentum.
+- B4 (fewer tools after 2030) is unsupported.
+- B5 (AI before physics) is partly wrong where dose or photons are the limit.
+- B6 (denoising risk) is plausible but publicly untested.
 
 ### Cited Findings
-**B1, measurement steps rising through 2028 (75%).**
-- For: KLA, Q1 FY2027 call, 28 Oct 2026 [CC; auto-generated transcript]:
-  - R. Wallace: "Intensity is definitely going up."
-  - B. Higgins: "In some products we see intensity levels in DRAM that are similar to leading edge logic"; "an uplift in process control intensity and conventional memory"; HBM dynamics ("less redundancy, IO counts, logic. And base die") lift intensity; legacy intensity is lower than leading edge.
-  - Advanced packaging needs "more sampling steps because of the value of the die" and moves "from micron level sensitivity down to the 100 nanometer type sensitivity".
-  - Advanced-packaging process-control revenue is "on track to hit $1.1 billion or more", up "more than 70%" year on year.
-  - WFE in the "mid-$150 billion range" for 2026 and ">$200 billion" for 2027; 2030 framework "$220 billion plus or minus $20 billion". — [Motley Fool transcript, 29 Oct 2026](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/)
-- KLA did not give 2 nm, GAA or backside-power intensity figures on the call (search summary and transcript extract). — same source
-- IRDS 2024 near-term challenges (2024-2029): nanosheet and CFET "require an increased need for in-line metrology for dimensional, compositional, and doping measurements at the atomistic scale"; the backside power network "requires new concepts of metrology over FEOL, BEOL, and A&P". — [IRDS 2024 MET, Table MET-1](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
-- New GAA-specific steps at SPIE 2026: "High landing energy e-beam inspection as an in-line blocked nanowire release metric for GAA yield ramp" (Patterson et al.); "Gate leakage evaluation of GAA transistors using SEMs" (Shirasaki et al.). DRAM: e-beam inspection for word-line defects, because bright-field and voltage contrast "lack the sensitivity". — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-- Counter-evidence:
-  - Learned speedups cut time per measurement, not the number of steps: an X-ray CD system cut "data-acquisition time by more than 6X" and AOIs "from 13 to just 2"; GAN denoising cut X-ray CD time "by up to 40%".
-  - Virtual metrology already runs in 3D NAND mass production: "MMT is a key virtual metrology (VM) enabler for mass production" (Cho et al.). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-  - Memory de-spec slows the stack-height push: Nvidia is reportedly weighing 8/12-high HBM4 and 8-high HBM4E for Rubin Ultra. — [Herald Business, 20 Sep 2026](https://biz.heraldcorp.com/article/10878775) [SEC]
+**B1, measurement steps per leading-edge wafer rising through 2028 (75%).**
+- For:
+  - KLA, 28 Oct 2026 [CC] [s29]: "Intensity is definitely going up"; "In some products we see intensity levels in DRAM that are similar to leading edge logic"; "an uplift in process control intensity and conventional memory"; HBM (logic and base die) lifts intensity.
+  - KLA on advanced packaging: it needs "more sampling steps because of the value of the die" and moves "from micron level sensitivity down to the 100 nanometer type sensitivity". Advanced-packaging process-control revenue is "on track to hit $1.1 billion or more", up ">70%".
+  - KLA market view: WFE "mid-$150 billion" in 2026, ">$200 billion" in 2027, "$220 billion plus or minus $20 billion" in 2030.
+  - Applied Materials, Q3 FY2026: process diagnostics and control "expected to grow more than 50% in calendar 2026 … supported by demand for eBeam and optical inspection in advanced logic, DRAM, and packaging" (analyst-reported company expectation) [CC] [s30].
+  - IRDS 2024 near-term (2024-29): nanosheet and CFET "require an increased need for in-line metrology … at the atomistic scale"; backside power "requires new concepts of metrology over FEOL, BEOL, and A&P". [s21]
+  - New GAA-specific inspection steps appear at SPIE 2026: high-landing-energy e-beam as an "in-line blocked nanowire release metric for GAA yield ramp"; SEM gate-leakage tests. [s22]
+- Gap: KLA gave no 2 nm, GAA or backside-power intensity figures [s29].
+- Against:
+  - AI cuts time per measurement, not steps: X-ray CD acquisition ">6X" faster and AOIs "from 13 to just 2"; GAN denoising cuts X-ray CD time "up to 40%". [s22]
+  - Virtual metrology already runs in 3D NAND mass production ("MMT is a key virtual metrology (VM) enabler for mass production"). [s22]
+  - Nvidia reportedly weighs 8/12-high HBM4 for Rubin Ultra [s16] [SEC]. SemiAnalysis: "Hybrid bonding's case in HBM was always stack height" [s11] [SS].
 
 **B2, buried bond-interface defects a leading yield limiter in 2030 (60%).**
 - For:
-  - IRDS 2024: anneal "nano-voids" are "currently only detectable by off-line TEM". Acoustic resolution for bonded-wafer voids "approaches 60 microns (using a 110 MHz transducer)", and thinning the wafer to improve it is "not a manufacturable solution". IR review cannot cover 100% of a wafer. — [IRDS 2024 MET §5.6.2](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
-  - IEEE EPS summary of the ECTC 2025 special session (Mar 2026): confocal acoustic microscopy has "a resolution limit of approximately 10 µm, often insufficient for detecting voids in contemporary hybrid-bonded devices". It names the need to "detect sub-micron size voiding at the Cu-Cu interface" and in-situ feedback. — [IEEE EPS, Mar 2026](https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf)
-  - SE (10 Nov 2026): no single technique suffices. — [SE](https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/)
-  - Intel's ECTC 2026 low-temperature fine-grain Cu W2W gave electrical yield "around 60% in two of three samples" (a lower bound), with opens traced to benzotriazole residue at the interface. — [SemiAnalysis, 2 Jul 2026](https://newsletter.semianalysis.com/p/ectc2026)
-  - SK hynix requires "a yield of 90 to 98 percent" and "a lifespan of three to five years" before adopting hybrid bonding (Kim Ji-hoon, SEMI panel, 9 Sep 2026). — [Herald Business, 20 Sep 2026](https://biz.heraldcorp.com/article/10878775) [SEC]
+  - IRDS 2024: anneal "nano-voids … are currently only detectable by off-line TEM"; acoustic void resolution "approaches 60 microns (using a 110 MHz transducer)"; thinning wafers to improve it "is not a manufacturable solution"; IR review cannot cover 100% of a wafer. [s21]
+  - IEEE EPS (Mar 2026, ECTC 2025 special session): confocal acoustic microscopy's "resolution limit of approximately 10 µm, often insufficient for detecting voids in contemporary hybrid-bonded devices"; a need to "detect sub-micron size voiding at the Cu-Cu interface". [s20]
+  - Tolerances: "A single particle smaller than a micron holds the surfaces apart and leaves a gap spanning many pads"; surfaces may vary "no more than around 0.2 nanometers" [s14] [SEC]. Amkor: "It only takes one nanosized particle" [s3].
+  - Intel's ECTC 2026 low-temperature fine-grain Cu W2W gave electrical yield "around 60% in two of three samples" (a lower bound), with opens tied to benzotriazole residue at the interface [s10].
+  - SK hynix's 90-98% yield bar is not yet met [s16].
 - Against:
-  - Applied Materials (ECTC 2026, paper 18.4): "450nm pitch copper hybrid bonding achieving 98% yield across 20 million via links" [CC]. "Parts-per-million level open defects" were found by electron-beam absorbed current, with TEM-EELS showing a carbon-rich interface layer. — [ECTC 2026 tipsheet, 20 May 2026](https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf)
-  - CEA-Leti reported >97% yield after a 100 °C anneal without plasma activation. — [SemiAnalysis](https://newsletter.semianalysis.com/p/ectc2026)
-  - Panel consensus: "Pre-bond surface topography, Cu recess, oxide planarization, and surface defectivity remain primary contributors to bonding failure and yield loss" — the root causes are visible before bonding. — [IEEE EPS](https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf)
-  - IRDS also says "a number of SAM tools" already support in-line *macro*-void metrology for bonded pairs in HVM. — [IRDS 2024](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
-- Emerging methods: picosecond laser acoustics for buried voids in HBM (Mehendale et al., SPIE 2026); e-beam process control for HBM hybrid bonding (Gal et al.); four-direction BSE SEM for Cu-pad recess, calibrated "with TEM-measured recess on 200-nm pads" (Kasai et al.). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
+  - Applied Materials (ECTC 2026, paper 18.4): "450nm pitch copper hybrid bonding achieving 98% yield across 20 million via links" [CC]. Its "parts-per-million level open defects" were found by electron-beam absorbed current, and TEM-EELS showed a carbon-rich interface layer [s19].
+  - CEA-Leti: >97% yield after a 100 °C anneal [s10]. imec/EV Group: 200 nm W2W pitch with <40 nm overlay [s14] [SEC].
+  - Panel consensus: "Pre-bond surface topography, Cu recess, oxide planarization, and surface defectivity remain primary contributors to bonding failure and yield loss" [s20].
+  - IRDS: "a number of SAM tools" already support in-line *macro*-void metrology in HVM [s21].
+- Methods in development: picosecond laser acoustics for buried HBM voids; e-beam process control for HBM hybrid bonding; backscatter-SEM Cu recess calibrated "with TEM-measured recess on 200-nm pads" [s22]. Onto (vendor blog): IR sub-surface inspection "can reveal voids and embedded defects that otherwise remain hidden" [CC] [s4].
 
-**B3, computed methods take share from direct imaging 2029-2033 (45%).**
-- X-ray status (IRDS 2024):
-  - CD-SAXS "has the required throughput for characterization of HAR contact holes and commercially available in-line tools have recently been introduced to the fab" (3D NAND and DRAM).
-  - For logic, in-line use "will require significant improvements in compact X-ray sources to get the required throughput (<1 min) with a small spot size (<100 µm)"; "Current X-ray sources do not have a high enough X-ray brilliance"; future sources need "at least 100[x]" brightness over lab sources (symbol lost in extraction). — [IRDS 2024 MET](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
-- SPIE 2026 X-ray, soft X-ray and EUV work:
-  - X-ray CD measured 3D NAND hole-to-hole distance across "2 full wafers with over 600 measurement sites".
-  - Resonant soft X-ray scattering with FEM Maxwell solvers and ML, for CFET-like structures, with TEM as the baseline.
+**B3, computed methods take share from direct imaging 2029-33 (45%).**
+- X-ray (IRDS 2024) [s21]:
+  - For 3D NAND and DRAM, CD-SAXS "has the required throughput for characterization of HAR contact holes and commercially available in-line tools have recently been introduced to the fab".
+  - Logic in-line use needs "<1 min" with a "<100 µm" spot; "Current X-ray sources do not have a high enough X-ray brilliance"; at least "100[x]" brighter sources are needed (symbol lost in extraction); inverse-Compton sources are proposed.
+- SPIE 2026 X-ray, soft X-ray and EUV work [s22]:
+  - X-ray CD on 3D NAND across "2 full wafers with over 600 measurement sites".
+  - Resonant soft X-ray scattering with FEM Maxwell solvers and ML for CFET-like structures (TEM as baseline).
   - Hard-X-ray reflection CD with "sub-nanometer out-of-plane sensitivity".
-  - A discharge-plasma soft-X-ray source and new tender/soft X-ray sources.
-  - EUV scatterometry posed as Bayesian adaptive experiment design; a UHV EUV Mueller-matrix ellipsometer.
+  - A discharge-plasma soft-X-ray source.
+  - EUV scatterometry framed as Bayesian adaptive design; a UHV EUV Mueller-matrix ellipsometer.
   - EUV mask ptychography at "11.5 nm" and "14 nm (at the wafer)".
-  - A CD-SAXS damage caveat: linewidth changed 5% under the beam on EUV resist (Brookhaven/IBM, per Mack). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981); [lithoguru](https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html)
-- E-beam counter-trend at SPIE 2026:
-  - Brightness and contrast correction for multibeam-SEM defect inspection.
-  - Multicolumn e-beam inspection for EUV reticles.
-  - High-kV cold-field-emission overlay in DRAM; high-voltage SEM see-through backscatter metrology.
-  - An e-beam tool "capable of massive data collection".
-  - ASML's e-beam inspection over areas large enough "to achieve one part per million defect capture rates" (per Mack). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981); [lithoguru](https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html)
-- KLA: "our relevancy with e beam inspection capability and the linkage we have to our optical becomes more pronounced" [CC]. — [KLA transcript](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/)
-- Market-research summaries call e-beam the fastest-growing inspection segment (~9.7-9.9% CAGR; multibeam 12.5% CAGR 2024-30) [TER, low reliability; segment definitions differ]. — [GMI](https://www.gminsights.com/industry-analysis/semiconductor-process-control-equipment-market); [SNS Insider](https://www.snsinsider.com/reports/semiconductor-defect-inspection-equipment-market-11288); [Strategic Market Research](https://www.strategicmarketresearch.com/market-report/e-beam-wafer-inspection-system-market)
-- IRDS 2024: "Existing SEMs and SPMs are considered too slow" for sub-optical defects, and "existing optical techniques lose some sensitivity to defects smaller than 20 nm"; arrayed micro-column SEMs are proposed. — [IRDS 2024](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
+  - Caveat: CD-SAXS changed EUV-resist linewidth by 5% during measurement (per Mack) [s26].
+- Programmes:
+  - Invisix, "spun out of ASML R&D", is "betting that soft X-ray scatterometry can close a growing visibility gap"; ASML kept only scanner-feedback metrology (23 Apr 2026) [s31] [SEC]. A related headline says Invisix raised €20M (unverified).
+  - PSI's REGINE beamline (6-16 nm reflectometry, scatterometry, coherent diffraction); imec AttoLab 92 eV HHG EUV scatterometry (2025); NIST overview at FCMN, 17 Mar 2026 [s42] [SS].
+  - No 2026 lensless-imaging programme was found at ASML, Samsung or KLA.
+- E-beam counter-trend:
+  - SPIE 2026 [s22] [s26]: multibeam-SEM defect inspection; multicolumn e-beam for EUV reticles; high-kV cold-field-emission DRAM overlay; high-voltage SEM see-through metrology; "massive data collection" e-beam; ASML e-beam inspection reaching "one part per million defect capture rates".
+  - Applied Materials: process diagnostics and control +50% in 2026 on e-beam and optical [s30] [CC]; cold-field-emission e-beam revenue said to double to >$1B in 2026 [SS].
+  - KLA: e-beam relevance "becomes more pronounced" [s29] [CC].
+  - Market research names e-beam the fastest-growing segment (~9.7-9.9% CAGR; multibeam 12.5%) [s39] [TER].
+  - IRDS: "Existing SEMs and SPMs are considered too slow"; optical "lose[s] some sensitivity to defects smaller than 20 nm" [s21].
 
 **B4, tools per wafer may fall after 2030 (35%).**
-- For: IRDS 2024 says ML-assisted simulation should ensure "the proper type and number of measurements" and avoid "too many measurements (loss of time and money)", and that "sampling plan optimization is key". — [IRDS 2024](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
-- Also for: virtual metrology in 3D NAND mass production; ASML's "computational guided dynamic sampling e-beam inspection" improved defective-die capture "by up to 4.3x". — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-- Against: KLA projects rising intensity and WFE to 2030 [CC]. Virtual metrology still needs sparse physical metrology to reach statistical significance (Kim et al., SPIE 2026). "ML is very good at interpolation, but not so good at extrapolation" (Kizu, per Mack). SE (11 Aug 2026) argues measurements must be re-verified after each physical change (title and summary only). — [KLA](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/); [lithoguru](https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html); [SE tag page](https://semiengineering.com/tag/metrology/)
-- No roadmap, chipmaker or vendor statement forecasting fewer tools per wafer was found.
+- For:
+  - IRDS 2024: ML should ensure "the proper type and number of measurements … to avoid too many measurements (loss of time and money)"; "Sampling plan optimization is key". [s21]
+  - Virtual metrology in 3D NAND production; ASML "computational guided dynamic sampling e-beam inspection" improved defective-die capture "by up to 4.3x". [s22]
+- Against:
+  - KLA and Applied Materials project growth [s29] [s30].
+  - Virtual metrology still needs sparse physical metrology [s22].
+  - "Machine learning is very good at interpolation, but not so good at extrapolation" (AIST, per Mack) [s26].
+  - SE argues measurements must be re-verified after each physical change (summary only) [s5].
+- No roadmap or vendor statement forecasting fewer tools per wafer was found.
 
 **B5, AI changes software and economics before physics.**
-- Counter-cases where computation changed what can be measured within a dose or photon budget:
-  - Generative-AI denoising for actinic EUV mask inspection reconstructs images "using 30X fewer exposures" (Kim, Long, Dogru et al.).
-  - Deep-learning CD-SEM denoising allows fewer frames, mitigating "e-beam-induced damage", with repeatability improving from 0.095 to 0.073 nm (Liu et al.).
-  - A CNN restores out-of-focus images for W2W overlay (Lin, Ku).
-  - Physics-inspired deep learning extracts LER from noisy SEM images "without any training data with ground-truth edge profiles" (Kizu). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-- In the LAM paper, gradient-based full-pose self-calibration (not ML) raised contrast from 0.13 to 0.49, and "only the full-pose strategy successfully resolved the defects". — [LAM PDF](https://www.light-am.com/article/pdf/preview/LAM2026050195.pdf)
+- Counter-cases where computation changes what can be measured within a dose or photon budget [s22]:
+  - Generative denoising for actinic EUV mask inspection, "using 30X fewer exposures".
+  - Deep-learning CD-SEM denoising allows fewer frames, mitigating "e-beam-induced damage" (repeatability 0.095 to 0.073 nm).
+  - A CNN restores out-of-focus W2W overlay images.
+  - Physics-inspired deep learning extracts LER "without any training data with ground-truth edge profiles".
+- In LAM 2026, gradient-based self-calibration (not ML) meant "only the full-pose strategy successfully resolved the defects" [s28].
 
 **B6, learned denoising safe for the expected, risky for the unexpected.**
-- For:
-  - SPIE 2026 "Detection of inference errors in deep learning denoising models and reliability analysis system for SEM metrology" proposes a "Transform Monitoring method that evaluates an indicator for inference error".
-  - Fast-adaptation denoising "pre-trains the model on general pattern images and applies fine-tuning for new SEM image pattern types", implying domain-shift risk. — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-  - Mack: "Talks on image denoising in particular do not excite me". NIST's Sathe judged synthetic training SEMs "exceptionally simplified and thus not representative". — [lithoguru](https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html)
-- Against or mitigating:
-  - Learned enhancement is already applied to *finding* unexpected defects: "AI-based detection algorithm for optical inspection of critical defects on 2nm and 1.4nm technology nodes" (deep-learning image enhancement); generative denoising in EUV mask defect inspection.
-  - Diffusion models detect SEM defects "without the need for labeled defect data".
-  - Intel reported reduced false defects in optical inspection (per Mack). — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981); [lithoguru](https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html)
+- For [s22] [s26]:
+  - SPIE 2026 "Detection of inference errors in deep learning denoising models … for SEM metrology" proposes a "Transform Monitoring method".
+  - Denoisers need fine-tuning "for new SEM image pattern types".
+  - Mack: "Talks on image denoising in particular do not excite me". NIST judged some synthetic training SEMs "not representative of real SEMs".
+- Against or mitigating [s22] [s26]:
+  - "AI-based detection algorithm for optical inspection of critical defects on 2nm and 1.4nm technology nodes" (deep-learning image enhancement).
+  - Generative denoising used in EUV mask defect inspection.
+  - Diffusion-model defect detection "without the need for labeled defect data".
+  - Intel reported fewer false defects with ML.
 
 ### Inferences
-- B1 at 75% looks reasonable for memory and packaging, but it rests on KLA's statements alone; nothing independent quantifies steps for 2 nm, GAA or backside power.
-- B2 should be reframed. The 2030 yield limiter is more likely pre-bond surface state and particles, with interface voids as the symptom. Inspection value may move upstream (pre-bond surface), not only to buried-interface imaging.
-- B3: the evidence favours "both grow". X-ray and soft-X-ray share gains look confined to memory high-aspect-ratio work until much brighter compact sources exist. E-beam (multibeam, high-voltage, electron-beam absorbed current) is gaining in logic, DRAM and hybrid bonding. I would lower the prior.
-- B4: no evidence for it; the 35% looks high relative to the evidence, though it is a post-2030 claim.
-- B5: needs rewording: "AI changes the information extracted per dose/photon before it changes probe physics." In dose-limited regimes this does change what can be measured.
+- B1: 75% looks fair for memory and packaging but rests on vendor statements; no independent node-level step counts exist publicly.
+- B2: reframe it. The 2030 limiter is more likely pre-bond surface state and particles, with interface voids as the symptom. Electrical test (daisy chains, electron-beam absorbed current) acts as the de facto judge, so value may move upstream to pre-bond inspection and to electrical screening.
+- B3: evidence favours "both grow". X-ray share gains look confined to memory high-aspect-ratio work until much brighter compact sources exist. Soft-X-ray scatterometry is at start-up stage in 2026 (Invisix), which fits a 2029-33 window only for niches. E-beam is gaining now, so the prior looks too high for logic.
+- B4: no evidence for it yet.
+- B5: reword as "AI changes information per dose/photon before it changes probe physics". In dose-limited regimes this does change what can be measured.
 
 ### Gaps
-- No statements were retrieved from Applied Materials, Lam Research or ASML on process-control intensity by node, and no third-party process-control share of WFE by node.
-- ASML, PSI, imec, Samsung and KLA 2026 programme status for EUV/soft-X-ray scatterometry and coherent diffraction imaging was not retrieved.
-- No quantitative study of missed novel defects caused by denoising was found.
-- No IEDM 2025 or IITC 2025/2026 hybrid-bonding yield data was retrieved.
+- No Lam Research or ASML statements on process-control intensity were found, and no third-party process-control share of WFE by node.
+- No quantitative study of denoising missing novel defects was found.
+- IEDM 2025 and IITC 2025/26 hybrid-bonding yield papers were not read.
 
-## C. Roadmap facts (dated) — INCOMPLETE
+## C. Roadmap facts (as of 12 Nov 2026)
 
 ### Takeaway
-Hybrid bonding in HBM has moved from "HBM4" to "HBM4E at the earliest (Samsung, partial)" and then "HBM5 at the earliest (SK hynix)", because JEDEC height relief and MR-MUF/TC-NCF extensions removed the urgency. W2W hybrid bonding is already in volume in 3D NAND. Logic backside power is in volume at Intel.
+- Hybrid bonding in HBM moved from HBM4, to HBM4E at the earliest (Samsung, partial), to HBM5 at the earliest (SK hynix, ~2028-30). JEDEC height relief and MR-MUF/TC-NCF extensions removed the urgency.
+- Logic hybrid bonding is in volume at 6-9 µm.
+- W2W hybrid bonding is in volume in 3D NAND and may enter DRAM dies (VCT) around 2028.
+- Backside power is in volume at Intel 18A; TSMC A16 is reported for Q4 2026.
 
 ### Cited Findings
-- **SK hynix** (Hot Chips, 23 Aug 2026):
-  - 12-high HBM4 is in mass production; 16-high HBM4 is in customer qualification (48 GB). The 16-high design hits the 775 µm cap with ~50 µm core dies.
-  - 12-high HBM4E samples use Advanced MR-MUF; hybrid bonding is "in research" for 20-high and above; HBM5 is the earliest hybrid-bonding generation [CC]. — [MLQ, 25 Aug 2026](https://mlq.ai/news/sk-hynix-pushes-hybrid-bonding-to-hbm5-as-stacked-ai-memory-reaches-its-height-limit/) [SEC]; [Bits&Chips](https://bits-chips.com/article/besi-faces-longer-wait-as-sk-hynix-pushes-hybrid-bonding-to-hbm5/) [SEC]
-  - Counterpoint expects SK hynix HBM5 "around 2029 to 2030". — [Seoul Economic Daily, 6 Apr 2026](https://en.sedaily.com/finance/2026/04/06/sk-hynix-eyes-hbm5-launch-by-2029-with-hybrid-bonding) [SEC]
-  - Lee Kang-wook (SK hynix): hybrid bonding "will be essential for HBM stacks of 20 layers or more" (Mar 2026). — [TrendForce, 1 Apr 2026](https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/) [SEC]
-- **Samsung**:
-  - HBM4 mass production from Feb 2026 (1c DRAM, 4 nm base die); HBM4E samples shipped May 2026; >400-layer V10 NAND uses wafer bonding; zHBM is a concept only [CC]. — [technologies.org, 5 Aug 2026](https://technologies.org/samsung-unveils-zhbm-and-400-layer-v10-bv-nand-at-fms-2026-and-wafer-bonding-is-the-common-thread/) [SEC]
-  - Partial hybrid bonding at 16-high HBM4E at the earliest. — [TrendForce, 6 Mar 2026](https://trendforce.com/news/2026/03/06/news-industry-weigh-825-900-%CE%BCm-hbm-thickness-for-20-high-stacks-potentially-slowing-hybrid-bonding) [SEC]
-  - Began introducing hybrid-bond inspection equipment, with an Onto Innovation joint development programme (The Elec via TrendForce). — [TrendForce, 1 Apr 2026](https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/) [SEC]
-- **Micron**: no hybrid-bonding HBM date found in primary sources — **could not verify**.
-- **JEDEC heights**: 720 µm through HBM3E; 775 µm for HBM4.
-  - Under discussion: ~900 µm "starting with seventh-generation HBM4E" (Newsis); 825-900 µm (ZDNet, Mar 2026); "around 900 micrometers to as much as 1,000 micrometers" including 20-high HBM5 (ZDNet, Jul 2026).
-  - No JEDEC publication confirming a decision was found. — [TrendForce, 1 Apr 2026](https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/); [TrendForce, 7 Jul 2026](https://www.trendforce.com/news/2026/07/07/news-samsung-sk-hynix-reportedly-reconsider-hybrid-bonding-timeline-16-high-hbm4e-may-be-earliest-adoption/) [SEC]
-- **HBM interconnect today**: "HBM is in mass production with 20µm pitch and 5µm stack spacing"; the next generation is expected at ~10 µm I/O pitch. — [ECTC 2026 tipsheet](https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf)
-- **Hybrid bonding in NAND**:
-  - YMTC Xtacking (W2W, 3D NAND) since 2018. — [IEEE EPS](https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf)
-  - Kioxia BiCS 10 (332 layers) bonds CMOS to the array [CC]. — [technologies.org](https://technologies.org/samsung-unveils-zhbm-and-400-layer-v10-bv-nand-at-fms-2026-and-wafer-bonding-is-the-common-thread/) [SEC]
-  - Kioxia ECTC 2026: multi-stacked W2W Cu bonding for CBA with sub-800 nm pads. — [ECTC tipsheet](https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf)
-- **Research pitch records**: 450 nm W2W at 98% yield (Applied Materials, ECTC 2026) [CC]; 400 nm W2W daisy chains (imec, IEDM 2023); IBM D2W/W2W below 2.5 µm (IEDM 2024). — [ECTC tipsheet](https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf); [IEEE EPS](https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf); [IBM/Nova paper refs](https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf)
-- **Logic** [TER; Wikipedia, last edited 21 Oct 2026]:
-  - TSMC N2 entered volume production in Q4 2025; N2P volume Q3 2026; A16 (backside power) planned for "2026 H2" — current status not verified.
-  - Intel 18A (RibbonFET + PowerVia) in HVM since late 2025; Panther Lake shipping Q1 2026; 18A-PT (3D stacking) 2028.
-  - Samsung SF2 in mass production 2025 (Exynos 2600), with yields reportedly 50-60% into early 2026; SF2P ramping in 2026.
-  - Rapidus began 2 nm GAA prototype production at IIM-1 in July 2025. — [Wikipedia "2 nm process"](https://en.wikipedia.org/wiki/2_nm_process)
-- **IRDS 2024 long-term (2030-2037) metrology challenges**: "Nondestructive, production-worthy wafer and mask-level metrology for CD measurement for 3D structures, overlay, defect detection, and analysis"; "Metrology for the characterization of subsurface structures (dimensional and compositional measurements) is needed". — [IRDS 2024 MET](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
+- **SK hynix** (Hot Chips, 23 Aug 2026) [s13] [s15] [SEC]:
+  - 12-high HBM4 is in mass production; 16-high HBM4 is in customer qualification at 48 GB per cube, with ~50 µm core dies.
+  - The 775 µm cap matches logic-wafer thickness: "the logic wafer thickness is also 775 microns."
+  - 12-high HBM4E samples use Advanced MR-MUF; hybrid bonding is at the research stage for 20-high and above.
+  - Industry sources say SK hynix ordered its first hybrid-bonding line in March (Applied Materials + Besi, ~₩20B) [SEC].
+  - Counterpoint expects HBM5 "around 2029 to 2030" [s17] [SEC].
+- **Samsung** [s18] [s7] [s8] [s14] [SEC/CC]:
+  - HBM4 mass production from Feb 2026 (1c DRAM, 4 nm base die); HBM4E samples shipped May 2026.
+  - Hybrid bonding partially at 16-high HBM4E at the earliest.
+  - Hybrid-bond inspection tools being introduced, with an Onto joint development programme (The Elec).
+  - Custom HBM logic dies reportedly on Samsung 2 nm for 2027 samples.
+  - zHBM is a concept only.
+- **Micron** [s37] [SS]: HBM4E has a customisable base die on a TSMC process (2027); roadmap HBM4 to HBM5/5E/6 over ~2028-30; wafer bonding at the 1-epsilon DRAM node. **No hybrid-bonded HBM date — could not verify.**
+- **Nvidia**: Vera Rubin HBM from SK hynix is all MR-MUF [s13]; Rubin Ultra (2H 2027) is reportedly weighing 8/12-high HBM4 [s16] [SEC].
+- **JEDEC heights** [s8] [s9] [s13] [SEC]:
+  - 720 µm through HBM3E; 775 µm for HBM4.
+  - Under discussion: ~900 µm from HBM4E (Newsis); 825-900 µm (ZDNet, Mar 2026); 900 to 1,000 µm including 20-high HBM5 (Jul 2026).
+  - The date of the 775 µm decision conflicts (Tom's Hardware says "January" [s14]).
+  - No JEDEC primary document was found.
+- **HBM bump pitch** (figures conflict): "20µm pitch and 5µm stack spacing" in mass production [s19]; "HBM4 pad pitch at 10 microns" [s14]; MR-MUF "30 microns … today" [s13].
+- **Logic hybrid-bond pitch** [s14] [SEC]:
+  - TSMC SoIC: 9 µm (2023), 6 µm (2025), 4.5 µm by 2029. Stacked nodes go from N3P-on-N4 now to N2P-on-N2P by 2028 and A14-on-A14 by 2029. Face-to-face hybrid bonding gives ~14,000 signals/mm² versus ~1,500 for face-to-back TSV.
+  - Intel Foveros Direct: 9 µm in high volume on Clearwater Forest (Xeon 6+, 18A); second generation targets 3 µm.
+  - Bonder throughput: Applied/Besi Kinex ~1,600 die placements/h; Besi Chameo ~2,000/h [CC].
+  - **Samsung foundry pitch roadmap: not found.**
+- **Research records**:
+  - W2W: 200 nm pitch, <40 nm overlay (imec/EVG, ECTC 2026) [s14]; 450 nm at 98% yield over 20M links (Applied Materials) [s19] [CC].
+  - D2W: 1 µm (CEA-Leti, ECTC 2026) [s14] [s3].
+  - IBM D2W/W2W below 2.5 µm (IEDM 2024) [s23].
+- **NAND** [s20] [s18] [s19]:
+  - YMTC Xtacking (W2W) since 2018.
+  - Kioxia BiCS 10 (332 layers) bonds CMOS to the array [CC]; Samsung V10 (>400 layers) uses wafer bonding [CC].
+  - Kioxia (ECTC 2026): multi-stacked W2W CBA with sub-800 nm pads.
+- **DRAM** [s35] [s36] [SS]:
+  - Samsung presented a 16 Gb 4F² vertical-channel DRAM with W2W hybrid Cu bonding at ISSCC (Feb 2026). The Elec (via TrendForce, 24 Apr 2026): development 2026, qualification 2027, mass production 2028, IGZO channel. Samsung has not committed publicly.
+  - SK hynix plans a vertical-gate variant at the 10b node.
+  - Micron declines 4F² and puts 1-delta in Boise in 2H 2027.
+  - CXMT plans 4F² DDR5 by end-2026.
+- **Logic ramps**:
+  - TSMC N2 in volume from Q4 2025; N2P volume Q3 2026 [s33] [TER].
+  - TSMC A16 (Super Power Rail backside power): "completed development and validation", mass production "in the fourth quarter of this year"; A14 in 2028 [s32] [SEC]. TSMC's Q3 2025 guidance put N2P/A16 in 2H 2026 [s43] [SS].
+  - Intel 18A (RibbonFET + PowerVia) in HVM since late 2025 [s33]. Yields improving "7%-8% per month" (Lip-Bu Tan); 14A risk production late 2027, production 2028; Tesla reported as a 14A customer [s34] [SS].
+  - Samsung SF2 in mass production 2025, with yields reportedly "50–60%" into early 2026; SF2P ramping in 2026 [s33] [TER]. Samsung 1.4 nm reportedly moved to 2029 [s32].
+  - Rapidus: production start 2H FY2027, full scale FY2028, 6,000 rising to ~25,000 wafers/month; no committed volume customer [s38] [SS].
+- **IRDS 2024 long-term (2030-37) challenges**: "Nondestructive, production-worthy wafer and mask-level metrology for CD measurement for 3D structures, overlay, defect detection"; "characterization of subsurface structures (dimensional and compositional measurements) is needed"; "Sampling plan optimization is key". [s21]
 
 ### Inferences
-- The volume need for buried hybrid-bond-interface inspection in HBM likely starts around 2028-2030 (HBM5, 20-high). Until then, HBM inspection demand is driven by microbump, TSV and molded stacks, not Cu-Cu interfaces.
+- Volume buried Cu-Cu interfaces in memory come first from W2W bonding (NAND now; DRAM dies possibly 2028), ahead of D2W HBM stacks (HBM5, ~2028-30).
+- In logic, volume hybrid bonding sits at 6-9 µm D2W. The inspection problem "below 4-9 µm" in volume is therefore mostly a 2027-29 issue, at 4.5 µm and then 3 µm.
 
-### Gaps (to fill)
-TSMC SoIC, Intel Foveros Direct and Samsung pitch roadmaps; TSMC A16 status as of Nov 2026; Intel 14A; Rapidus's 2027 target; vertical-channel DRAM and hybrid bonding in DRAM; the IRDS 2025 edition.
+### Gaps
+- Samsung foundry hybrid-bond pitch roadmap.
+- JEDEC primary documents.
+- IRDS 2025 edition.
+- TSMC's own Q3 2026 statement on A16.
+- Whether Rapidus will use backside power.
+- Production W2W pitch in NAND.
 
 ## D. Points where current evidence contradicts the background
 
-1. **Reference data is not only destructive EM cross-sections.** The IBM/Nova "modeless" case used AFM. CD-SAXS serves as a reference for optical ML in 3D NAND. In-fab PFIB-SEM "ground truth" and automated energy-filtered TEM are emerging. TEM remains the anchor for many cases. — [IBM/Nova](https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf); [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-2. **"Inferred by matching a simulated signal" is incomplete.** The 2026 trend includes empirical, model-free regression to reference data (VTS-ML: "Unlike conventional OCD ML that requires detailed underlayer modeling…"), alongside physics-informed and FEM-based solvers. — [IBM/Nova](https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf)
-3. **16-layer stacks are not hybrid-bonded.** 16-high HBM4 uses MR-MUF or TC-NCF within 775 µm; hybrid bonding targets 20-high and above (HBM5, ~2028-30). — [MLQ/Tom's Hardware](https://mlq.ai/news/sk-hynix-pushes-hybrid-bonding-to-hbm5-as-stacked-ai-memory-reaches-its-height-limit/)
-4. **The TrendForce "16-high HBM4E at the earliest" is outdated for SK hynix** (August 2026: not HBM4E). — [Bits&Chips](https://bits-chips.com/article/besi-faces-longer-wait-as-sk-hynix-pushes-hybrid-bonding-to-hbm5/)
-5. **"Only 12-13%" picks one metric.** Stack-level is ~19-29%, total-HBM 3.5-7.7%, and Samsung's own claim is >20%. — [SemiAnalysis](https://newsletter.semianalysis.com/p/ectc2026)
-6. **EE Times item date:** January 2026, and it is a journalist's paraphrase of imec. — [EE Times](https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/)
-7. **The EUV microscope result is surface-only, at 43.5 nm, single-angle and offline.** It is not evidence of computed imaging on buried or leading-edge features. — [LAM](https://www.light-am.com/article/pdf/preview/LAM2026050195.pdf)
-8. **"AI before physics" is partly wrong.** Learned reconstruction cuts exposures 30x (EUV mask inspection) and SEM dose, changing what can be measured in dose-limited regimes. — [SPIE vol. 13981](https://spie.org/Publications/Proceedings/Volume/13981)
-9. **The main hybrid-bond yield detractors are pre-bond surface conditions**, per the ECTC panel consensus, not buried defects per se. — [IEEE EPS](https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf)
-10. **Measurement as the per-wafer "judge" is only partly true in hybrid bonding.** Micro-inspection samples 2-5 wafers per lot, acoustic imaging runs after full assembly, and IR review cannot cover 100% of a wafer. — [SE](https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/); [IRDS 2024](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf)
+1. **"Production range 4-9 µm"**: the 4 µm lower bound is not corroborated for volume D2W logic. TSMC is at 6 µm (4.5 µm by 2029), Intel at 9 µm, Amkor "about six microns". [s14] [s3]
+2. **Reference data is not only destructive EM cross-sections.** IBM/Nova used AFM; CD-SAXS serves as a reference for optical ML; in-fab PFIB-SEM "ground truth" exists. TEM remains common. [s23] [s22]
+3. **"Matching a simulated signal" is incomplete.** Model-free regression to reference data ("modeless" VTS-ML) is advancing alongside physics-based solvers. [s23]
+4. **16-high stacks are not hybrid-bonded.** 16-high HBM4 uses MR-MUF or TC-NCF within 775 µm; hybrid bonding targets 20-high and above (HBM5, ~2028-30); SK hynix's Vera Rubin HBM is all MR-MUF. [s13]
+5. **TrendForce "16-high HBM4E at the earliest" is outdated for SK hynix.** [s13] [s12]
+6. **"Only 12-13%" picks one metric** (stack 19-29%; total 3.5-7.7%; Samsung >20%). [s10] [s8]
+7. **The EE Times item is January 2026**, and it paraphrases imec. [s6]
+8. **The EUV microscope result is surface-only, 43.5 nm, single-angle and offline.** It is not evidence for buried or leading-edge computed imaging. [s28]
+9. **"AI before physics" is partly wrong**: 30x fewer exposures (EUV masks) and lower SEM dose change what is measurable in dose-limited regimes. [s22]
+10. **The main hybrid-bond yield detractors are pre-bond** (surface, CMP, Cu recess, particles), not buried defects per se. [s20]
+11. **Measurement as the per-wafer "judge" is only partly true in hybrid bonding.** Micro-inspection samples 2-5 wafers per lot; acoustic imaging runs after assembly; post-bond *electrical* test is "the most direct evidence"; ppm opens were found electrically (electron-beam absorbed current), then by TEM. [s1] [s3] [s19]
+12. **Change of emphasis, not a strict contradiction**: the first volume buried Cu-Cu interfaces in memory are W2W (NAND now, VCT DRAM ~2028 [SS]), not HBM stacks. [s20] [s35]
 
 ## Sources (with dates)
-- Semiconductor Engineering, Peters, "Shrinking Hybrid Bonding Pitches Push Inspection Limits", 10 Nov 2026 — https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/
-- Semiconductor Engineering, Haley, "Metrology Under Pressure…", 12 Aug 2025 — https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/
-- EE Times, Brans, "Hybrid Bonding Comes of Age Slowly and Collectively", 26 Jan 2026 — https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/
-- TrendForce [SEC], 6 Mar, 1 Apr, 7 Jul 2026 — URLs above
-- SemiAnalysis ECTC 2026 roundup [SEC], 2 Jul 2026 — https://newsletter.semianalysis.com/p/ectc2026
-- ECTC 2026 technical tipsheet, 20 May 2026 — https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf
-- IEEE EPS, Summary of ECTC 2025 hybrid-bonding special session, Mar 2026 — https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf
-- Proc. SPIE 13981 (Metrology, Inspection, and Process Control XL), Feb 2026 — https://spie.org/Publications/Proceedings/Volume/13981
-- Timoney et al. (IBM Research/Nova), SPIE 13981-16, Feb 2026 — https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf ; IBM blog, 23 Feb 2026 — https://research.ibm.com/blog/spie-2026-below-2-nm
-- C. Mack, SPIE 2026 diary [SEC], Feb 2026 — https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html
-- Chen et al., Light: Adv. Manuf. 7:112, online 9 Sep 2026 — https://www.light-am.com/article/doi/10.37188/lam.2026.112
-- KLA Q1 FY2027 call, 28 Oct 2026 (transcript 29 Oct) — https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/
-- IRDS 2024 Metrology — https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf
-- Bits&Chips [SEC], 26 Aug 2026; Tom's Hardware [SEC], 24 Aug 2026; MLQ [SEC], 25 Aug 2026; Herald Business [SEC], 20 Sep 2026; Seoul Economic Daily [SEC], 6 Apr 2026; technologies.org [SEC], 5 Aug 2026 — URLs above
-- Wikipedia "2 nm process" [TER], edited 21 Oct 2026 — https://en.wikipedia.org/wiki/2_nm_process
+- [s1] Semiconductor Engineering, L. Peters, "Shrinking Hybrid Bonding Pitches Push Inspection Limits", 10 Nov 2026 — https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/
+- [s2] SE, G. Haley, "Metrology Under Pressure…", 12 Aug 2025 — https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/
+- [s3] SE, G. Haley, "Can Fine-Pitch Hybrid Bonding Go High Volume?", 16 Jul 2026 — https://semiengineering.com/can-fine-pitch-hybrid-bonding-go-high-volume/
+- [s4] SE sponsor blog, Y. Gao (Onto Innovation), 8 Oct 2026 — https://semiengineering.com/finding-critical-defects-before-they-become-costly-failures-process-control-for-hybrid-bonding-and-advanced-packaging/
+- [s5] SE tag pages (accessed 12 Nov 2026; includes "How Long Does A Measurement Remain Valid?", 11 Aug 2026) — https://semiengineering.com/tag/metrology/
+- [s6] EE Times, P. Brans, "Hybrid Bonding Comes of Age Slowly and Collectively", 26 Jan 2026 — https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/
+- [s7] TrendForce (citing ZDNet), 6 Mar 2026 — https://trendforce.com/news/2026/03/06/news-industry-weigh-825-900-%CE%BCm-hbm-thickness-for-20-high-stacks-potentially-slowing-hybrid-bonding
+- [s8] TrendForce (citing Chosun Ilbo, Newsis, The Elec), 1 Apr 2026 — https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/
+- [s9] TrendForce (citing ZDNet), 7 Jul 2026 — https://www.trendforce.com/news/2026/07/07/news-samsung-sk-hynix-reportedly-reconsider-hybrid-bonding-timeline-16-high-hbm4e-may-be-earliest-adoption/
+- [s10] SemiAnalysis, Ahmad, TC, Wong, Patel, ECTC 2026 roundup, 2 Jul 2026 — https://newsletter.semianalysis.com/p/ectc2026
+- [s11] SemiAnalysis post on X (reported Oct 2026; date unverified) — https://x.com/SemiAnalysis_/status/2108256589559865346
+- [s12] Bits&Chips, P. van Gerven, 26 Aug 2026 — https://bits-chips.com/article/besi-faces-longer-wait-as-sk-hynix-pushes-hybrid-bonding-to-hbm5/
+- [s13] Tom's Hardware, L. James, Hot Chips SK hynix, 24 Aug 2026 — https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling
+- [s14] Tom's Hardware, L. James, "The current state of Hybrid Bonding in 2026", 2 Sep 2026 — https://www.tomshardware.com/tech-industry/semiconductors/hybrid-bonding-roadmap-examined
+- [s15] MLQ (AI-written summary), 25 Aug 2026 — https://mlq.ai/news/sk-hynix-pushes-hybrid-bonding-to-hbm5-as-stacked-ai-memory-reaches-its-height-limit/
+- [s16] Herald Business, 20 Sep 2026 — https://biz.heraldcorp.com/article/10878775
+- [s17] Seoul Economic Daily (Counterpoint), 6 Apr 2026 — https://en.sedaily.com/finance/2026/04/06/sk-hynix-eyes-hbm5-launch-by-2029-with-hybrid-bonding
+- [s18] technologies.org (FMS 2026), 5 Aug 2026 — https://technologies.org/samsung-unveils-zhbm-and-400-layer-v10-bv-nand-at-fms-2026-and-wafer-bonding-is-the-common-thread/
+- [s19] IEEE ECTC 2026 technical tipsheet, 20 May 2026 — https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf
+- [s20] IEEE EPS, Gorchichko et al., summary of ECTC 2025 hybrid-bonding special session, Mar 2026 — https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf
+- [s21] IEEE IRDS 2024, Metrology chapter — https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf
+- [s22] Proc. SPIE 13981, Metrology, Inspection, and Process Control XL (conference 22-26 Feb 2026) — https://spie.org/Publications/Proceedings/Volume/13981
+- [s23] Timoney et al. (IBM Research/Nova), SPIE 13981-16 (PDF posted Apr 2026) — https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf
+- [s24] IBM Research blog, L. Meli, 23 Feb 2026 — https://research.ibm.com/blog/spie-2026-below-2-nm
+- [s26] C. Mack, SPIE 2026 diary, Feb 2026 — https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html
+- [s27] Chen et al., Light: Advanced Manufacturing 7:112, online 9 Sep 2026 — https://www.light-am.com/article/doi/10.37188/lam.2026.112
+- [s28] Same paper, PDF — https://www.light-am.com/article/pdf/preview/LAM2026050195.pdf
+- [s29] KLA Q1 FY2027 call, 28 Oct 2026 (transcript 29 Oct) — https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/
+- [s30] Futurum, B. Burke, Applied Materials Q3 FY2026, 17 Aug 2026 — https://futurumgroup.com/insights/applied-materials-q3-fy-2026-advanced-packaging-and-dram-accelerate-growth/
+- [s31] Bits&Chips, P. van Gerven, Invisix, 23 Apr 2026 — https://bits-chips.com/article/invisix-steps-out-from-under-asmls-wings-with-soft-x-ray-metrology-bet/
+- [s32] Design & Reuse (via BigGo), TSMC A16, 24 Aug 2026 — https://www.design-reuse.com/news/202531015-tsmc-completes-development-of-1-6nm-a16-process-mass-production-set-for-q4/
+- [s33] Wikipedia, "2 nm process" (edited 21 Oct 2026) — https://en.wikipedia.org/wiki/2_nm_process
+- [s34] [SS] Tom's Hardware (Intel 14A in 2028) — https://www.tomshardware.com/pc-components/cpus/we-cant-completely-vacate-the-client-market-says-intel-amid-wafer-supply-shortages-nova-lake-still-on-track-for-late-2026-release-14a-in-2028 ; TrendForce, 21 Nov 2025 — https://www.trendforce.com/news/2025/11/21/news-intels-two-front-push-18a-yields-reportedly-rise-7-monthly-14a-enters-definition-stage/
+- [s35] [SS] TrendForce (citing The Elec), 24 Apr 2026 — https://www.trendforce.com/news/2026/04/24/news-samsung-reportedly-produces-sub-10nm-10a-dram-working-die-using-4f-square-and-vct-targets-2028-production/ ; Bits&Chips — https://bits-chips.com/?p=234158
+- [s36] [SS] SemiWiki forum, ISSCC 2026 Samsung 16Gb VCT DRAM — https://semiwiki.com/forum/threads/isscc-2026-samsung-electronics-demonstrated-a-16gb-dram.24808/latest
+- [s37] [SS] TweakTown (Micron roadmap) — https://www.tweaktown.com/news/114236/micron-reveals-ddr6-lpddr6-hbm-and-nand-roadmap-as-ai-memory-demand-keeps-climbing/index.html ; 3dnews — https://3dnews.ru/1115818 ; Futurum — https://futurumgroup.com/?p=97109
+- [s38] [SS] Tom's Hardware (Rapidus 2027) — https://www.tomshardware.com/tech-industry/semiconductors/rapidus-targets-2nm-mass-production-in-2027-with-a-four-times-capacity-ramp ; TrendForce — https://www.trendforce.com/news/?p=53791
+- [s39] [TER] Market research: GMI — https://www.gminsights.com/industry-analysis/semiconductor-process-control-equipment-market ; SNS Insider — https://www.snsinsider.com/reports/semiconductor-defect-inspection-equipment-market-11288 ; Strategic Market Research — https://www.strategicmarketresearch.com/market-report/e-beam-wafer-inspection-system-market
+- [s42] [SS] EUV scatterometry programmes: NIST FCMN, 17 Mar 2026 — https://cdn.fs.pathlms.com/nGbQa5KQcWbGA561QHFN?dl=true ; PSI REGINE (EUV2023 abstract) — https://www.euv2023.ptb.de/fileadmin/documents/euv2023/abstracts/O01_Ekinci.pdf ; imec AttoLab (EPJ Web Conf. 2025) — https://www.epj-conferences.org/10.1051/epjconf/202533501019
+- [s43] [SS] TSMC Q3 2025 call transcript, 17 Oct 2025 — https://www.fool.com/earnings/call-transcripts/2025/10/17/tsmc-tsm-q3-2025-earnings-call-transcript
+
+[s1]: https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/
+[s2]: https://semiengineering.com/metrology-under-pressure-detecting-defects-in-fine-pitch-hybrid-bonding/
+[s3]: https://semiengineering.com/can-fine-pitch-hybrid-bonding-go-high-volume/
+[s4]: https://semiengineering.com/finding-critical-defects-before-they-become-costly-failures-process-control-for-hybrid-bonding-and-advanced-packaging/
+[s5]: https://semiengineering.com/tag/metrology/
+[s6]: https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/
+[s7]: https://trendforce.com/news/2026/03/06/news-industry-weigh-825-900-%CE%BCm-hbm-thickness-for-20-high-stacks-potentially-slowing-hybrid-bonding
+[s8]: https://www.trendforce.com/news/2026/04/01/news-jedec-reportedly-plans-to-relax-hbm-height-specs-to-900%C2%B5m-potentially-slowing-hybrid-bonding-adoption/
+[s9]: https://www.trendforce.com/news/2026/07/07/news-samsung-sk-hynix-reportedly-reconsider-hybrid-bonding-timeline-16-high-hbm4e-may-be-earliest-adoption/
+[s10]: https://newsletter.semianalysis.com/p/ectc2026
+[s11]: https://x.com/SemiAnalysis_/status/2108256589559865346
+[s12]: https://bits-chips.com/article/besi-faces-longer-wait-as-sk-hynix-pushes-hybrid-bonding-to-hbm5/
+[s13]: https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-says-hybrid-bonding-wont-be-ready-for-hbm4e-as-ai-memory-runs-into-a-775-micron-ceiling
+[s14]: https://www.tomshardware.com/tech-industry/semiconductors/hybrid-bonding-roadmap-examined
+[s15]: https://mlq.ai/news/sk-hynix-pushes-hybrid-bonding-to-hbm5-as-stacked-ai-memory-reaches-its-height-limit/
+[s16]: https://biz.heraldcorp.com/article/10878775
+[s17]: https://en.sedaily.com/finance/2026/04/06/sk-hynix-eyes-hbm5-launch-by-2029-with-hybrid-bonding
+[s18]: https://technologies.org/samsung-unveils-zhbm-and-400-layer-v10-bv-nand-at-fms-2026-and-wafer-bonding-is-the-common-thread/
+[s19]: https://ectc.net/wp-content/uploads/2023/03/2026-ECTC-REVISED-Technical-Tipsheet-with-images.pdf
+[s20]: https://eps.ieee.org/wp-content/uploads/2026/03/Emerging-Technologies_-TC-Article_Hybrid-Bonding_031126_for_EPS_newsletter_FINAL.pdf
+[s21]: https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MET.pdf
+[s22]: https://spie.org/Publications/Proceedings/Volume/13981
+[s23]: https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf
+[s24]: https://research.ibm.com/blog/spie-2026-below-2-nm
+[s26]: https://www.lithoguru.com/scientist/conferences/spie_diary_2026.html
+[s27]: https://www.light-am.com/article/doi/10.37188/lam.2026.112
+[s28]: https://www.light-am.com/article/pdf/preview/LAM2026050195.pdf
+[s29]: https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/
+[s30]: https://futurumgroup.com/insights/applied-materials-q3-fy-2026-advanced-packaging-and-dram-accelerate-growth/
+[s31]: https://bits-chips.com/article/invisix-steps-out-from-under-asmls-wings-with-soft-x-ray-metrology-bet/
+[s32]: https://www.design-reuse.com/news/202531015-tsmc-completes-development-of-1-6nm-a16-process-mass-production-set-for-q4/
+[s33]: https://en.wikipedia.org/wiki/2_nm_process
+[s34]: https://www.tomshardware.com/pc-components/cpus/we-cant-completely-vacate-the-client-market-says-intel-amid-wafer-supply-shortages-nova-lake-still-on-track-for-late-2026-release-14a-in-2028
+[s35]: https://www.trendforce.com/news/2026/04/24/news-samsung-reportedly-produces-sub-10nm-10a-dram-working-die-using-4f-square-and-vct-targets-2028-production/
+[s36]: https://semiwiki.com/forum/threads/isscc-2026-samsung-electronics-demonstrated-a-16gb-dram.24808/latest
+[s37]: https://www.tweaktown.com/news/114236/micron-reveals-ddr6-lpddr6-hbm-and-nand-roadmap-as-ai-memory-demand-keeps-climbing/index.html
+[s38]: https://www.tomshardware.com/tech-industry/semiconductors/rapidus-targets-2nm-mass-production-in-2027-with-a-four-times-capacity-ramp
+[s39]: https://www.gminsights.com/industry-analysis/semiconductor-process-control-equipment-market
+[s42]: https://cdn.fs.pathlms.com/nGbQa5KQcWbGA561QHFN?dl=true
+[s43]: https://www.fool.com/earnings/call-transcripts/2025/10/17/tsmc-tsm-q3-2025-earnings-call-transcript
