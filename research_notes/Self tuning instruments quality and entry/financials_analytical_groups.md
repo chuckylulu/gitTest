@@ -1,12 +1,14 @@
 # Financials of listed analytical-instrument groups (self-tuning instruments theme) — as of 12 November 2026
 
-Status: IN PROGRESS (outline created 12 Nov 2026; sections filled as research proceeds)
+Status: COMPLETE as of 12 Nov 2026. Note: the shared web-search budget ran out late in the work; after that only direct fetches of known primary pages (SEC EDGAR, RNS, company and data pages) were used. Remaining gaps are listed in Part 4. "My arithmetic" / "my estimate" marks figures I derived; everything else is quoted from the cited source.
 
 Scope: Thermo Fisher (TMO), Bruker (BRKR), Agilent (A), Oxford Instruments (OXIG) in depth; comparison rows for Danaher (DHR), Waters (WAT), AMETEK (AME), Mettler-Toledo (MTD), Spectris. Quality facts (tests c, d, e) are kept separate from valuation facts.
 
 ## Part 1 — Quality facts (tests c, d, e) per in-depth company
 
 ### 1.1 Thermo Fisher Scientific (NYSE: TMO)
+#### Takeaway
+TMO is the most diversified and most recurring of the four (~85% consumables plus services, ~15% instruments), with pharma/biotech strengthening and high-end instrument demand "very strong" in Q3 2026 (electron microscopy +13% y/y). Its weak points are leverage after the $9.1bn Clario deal and $4bn of 2026 buybacks (net debt ~$35bn, gross debt/EBITDA ~3.3x) and a modest ROIC of ~9%. The theme-relevant Analytical Instruments segment is ~17% of revenue; electron microscopy alone is ~6.6%.
 #### Latest results and guidance (Q3 2026, quarter ended 26 Sep 2026, released 21 Oct 2026)
 - Revenue $12,137M (+9% vs $11,122M); organic growth 6%; GAAP operating income $2,263M (18.6% margin vs 17.4%); adjusted operating income $2,968M (24.5% vs 23.3%); GAAP diluted EPS $4.64 (+9%); adjusted EPS $6.68 (+15% vs $5.79) — [TMO Q3 2026 8-K Ex.99.1, retrieved 12 Nov 2026](https://www.sec.gov/Archives/edgar/data/0000097745/000009774526000173/q32026earnings8kex99_1.htm)
 - Segments Q3 2026 (revenue / segment margin, vs Q3 2025): Life Sciences Solutions $2,719M / 37.6% (vs $2,588M / 37.4%); Analytical Instruments $2,002M / 26.9% (vs $1,893M / 22.6%); Specialty Diagnostics $1,098M / 31.0% (vs $1,174M / 27.4%); Laboratory Products & Biopharma Services $6,863M / 15.5% (vs $5,970M / 14.5%) — same 8-K
@@ -36,8 +38,22 @@ Scope: Thermo Fisher (TMO), Bruker (BRKR), Agilent (A), Oxford Instruments (OXIG
 - Analytical Instruments Q3 2026: organic +6%; segment income $538M (+25%); driven by electron microscopy (+$94M reported y/y, contributing 5 pts of segment growth) and chromatography & mass spectrometry (+$18M) — [TMO 10-Q Q3 2026](https://www.sec.gov/Archives/edgar/data/97745/000009774526000179/tmo-20260926.htm)
 - Electron microscopy revenue: FY2023 $2,564M; FY2024 $2,870M; FY2025 $2,957M (6.6% of FY2025 group revenue); Q3 2026 $827M (vs $732M, +13%); nine months 2026 $2,167M (vs $2,043M, +6%) — 10-K FY2025 and 10-Q Q3 2026; percentages my arithmetic
 - Chromatography & mass spectrometry: FY2025 $3,360M (7.5% of group); nine months 2026 $2,478M. Chemical analysis: FY2025 $1,237M; nine months 2026 $919M — same filings
+#### Additional test d figures (market-data basis)
+- TTM margins: gross 41.26%; GAAP operating 19.06%; EBITDA 25.62%; FCF 16.04%; TTM revenue $47.35bn; EBITDA $12.13bn; FCF $7.60bn; ROE 13.38%; ROIC 9.00%; total debt $41.37bn; cash $6.06bn; net debt $35.31bn; debt/EBITDA 3.28 — [StockAnalysis TMO statistics, retrieved 12 Nov 2026](https://stockanalysis.com/stocks/tmo/statistics/). Net debt/EBITDA ≈ 2.9x (my arithmetic: 35.31/12.13).
+- Five-year trend (fiscal year-end values): ROIC FY2021 15.17% → FY2022 10.75% → FY2023 9.49% → FY2024 9.19% → FY2025 9.59%; debt/EBITDA 2.74 → 2.92 → 3.28 → 2.90 → 3.51; revenue $39.21bn → $44.92bn → $42.86bn → $42.88bn → $44.56bn — [StockAnalysis TMO ratios](https://stockanalysis.com/stocks/tmo/financials/ratios/) and [forecast](https://stockanalysis.com/stocks/tmo/forecast/) pages, retrieved 12 Nov 2026
+- FCF conversion: TTM FCF $7.60bn vs TTM GAAP net income ≈ $7.0bn (derived from P/E 37.83 and 370.5M shares) ≈ 108%; FY26 FCF guidance $7.0–7.5bn vs FY26 consensus adjusted EPS $25.28 (≈$9.4bn adjusted net income) ≈ 77% of adjusted earnings — my arithmetic
+- China: Q3 2026 organic revenue in China grew "low double digits, supported by local stimulus measures" — [Stockhub AI-assisted call summary](https://stockhub.kr/en/insights/20261021-tmo-cy26q3-earnings-call) (secondary, not verified against transcript). Same source: ~$60M of net tariff refunds were reinvested (AI implementation, process digitisation).
+#### Inferences
+- Theme weight: Analytical Instruments = 17.0% of FY2025 revenue ($7,554M / $44,556M) and 16.5% of Q3 2026; electron microscopy 6.6% of FY2025. A self-tuning-instrument thesis moves only a small slice of TMO; most value sits in bioproduction, pharma services/CRO (now incl. Clario) and consumables.
+- AI-capex exposure looks low-single-digit % of group revenue (semiconductor share of electron microscopy is not disclosed). Scenario read: steady growth (55%) — neutral to mildly positive via EM; financing-led pause around 2028 (25%) — EM/industrial orders would soften but ~85% recurring revenue cushions group results; faster acceleration (20%) — limited group-level upside.
+- 2026 margins and EPS include non-recurring IEEPA tariff refunds (about $0.15 of EPS per secondary source), which make 2027 comparisons harder.
+- Leverage of ~3.3x gross debt/EBITDA is high against TMO's own history (2.7x at FY2021), so another large deal probably needs deleveraging first.
+#### Gaps
+- China share of revenue, end-market percentage split, credit ratings, and the semiconductor share of electron microscopy were not found in the filings I read (see Part 4).
 
 ### 1.2 Bruker (Nasdaq: BRKR)
+#### Takeaway
+Bruker is the most cyclical and financially weakest of the four. About 80% of revenue is product. It reports GAAP losses from repeated goodwill impairments (spatial biology), its ROIC was ~8% TTM after −2.7% in FY2025, cash conversion is poor (nine-month 2026 FCF $37.5M) and net leverage is 2.4x. Orders are recovering, though: BSI book-to-bill has been above 1 for five quarters, China bookings are up more than 20%, AI-driven semiconductor-metrology bookings are up more than 30% year to date, and non-GAAP margins are rising on a $140M cost-out.
 #### Latest results and guidance (Q3 2026, quarter ended 30 Sep 2026, released 4 Nov 2026)
 - Revenue $874.0M (+1.6% y/y; organic +0.7%; acquisitions +1.7%; FX −0.8%; constant currency +2.4%). Nine months $2,535.9M (+3.1%; organic −0.3%) — [Bruker Q3 2026 8-K Ex.99.1, retrieved 12 Nov 2026](https://www.sec.gov/Archives/edgar/data/0001109354/000119312526446176/brkr-ex99_1.htm)
 - Segments reorganised effective 1 Jul 2026 into BSI Biosystems (BIOS), BSI Microbiology & Infection Diagnostics (BMID), BSI NANO and BEST (previously BioSpin, CALID, NANO, BEST). Q3 2026: BSI $793.9M (+0.8%; organic −0.4%); BIOS $397.2M; BMID $133.6M; NANO $263.1M; BEST $82.1M (+11.2%; organic +11.8%). Nine months: BSI $2,321.0M (organic −1.0%); BEST $223.1M — same 8-K
@@ -69,8 +85,30 @@ Scope: Thermo Fisher (TMO), Bruker (BRKR), Agilent (A), Oxford Instruments (OXIG
 - Q3 2026: BSI BIOS growth from acquisitions (Tofwerk, Mimetas) and "higher demand in the industrial and semiconductor markets", offset by lower hospital/clinical and academic & government revenue; "revenue growth in Europe and North America was partially offset by lower revenue in China" — 10-Q Q3 2026. Nine months: academic & government declines "primarily in the United States and China"; BEST down in semiconductor markets — same
 #### Theme exposure
 - BSI NANO (X-ray instruments, atomic force microscopy, fluorescence microscopy, analytical tools for electron microscopes and X-ray metrology, semiconductor defect detection, handheld XRF, spark OES, spatial proteomics): Q3 2026 $263.1M (30% of group); nine months $770.4M (−0.6%) — 10-Q Q3 2026 and 8-K. BSI BIOS (magnetic resonance/NMR, mass spectrometry, molecular spectroscopy, preclinical imaging, lab automation): Q3 2026 $397.2M (45% of group). Together BIOS + NANO ≈ 76% of Bruker revenue is instrument businesses squarely in the theme (my arithmetic; BMID microbiology diagnostics and BEST superconductors are less relevant).
+#### Management commentary, Q3 2026 call (4 Nov 2026) — secondary summary
+Source for all of the following: [MarketBeat call highlights, 4 Nov 2026](https://www.marketbeat.com/instant-alerts/transcript-bruker-q3-earnings-call-highlights-2026-11-04/). It paraphrases the call; the transcript itself was not retrieved.
+- US academic & government: BSI organic bookings rose by a double-digit percentage, "the first year-over-year growth since the 2025 NIH funding disruption", against a weak comparison; management expects y/y order growth in Q4.
+- China: BSI organic bookings +>20% in Q3 and year to date; BSI China revenue up low double digits in Q3.
+- Semiconductors and AI: semiconductor-metrology bookings +>30% year to date, "driven by AI-related demand (logic foundries, high-bandwidth memory, advanced packaging)". These orders have longer lead times and convert mainly in FY2027, some into 2028. BSI organic instrument revenue fell mid-single digits, mainly because semi-metrology shipments were re-timed. BSI aftermarket revenue rose high-single digits organically.
+- Biopharma and translational research grew in Biosystems and Nano.
+- FY2026 non-GAAP operating margin expansion of 250–300bp was maintained. Q4 is guided to lower-mid-single-digit organic growth. For FY2027 management commits to double-digit EPS growth and better organic growth, without giving figures.
+- Cost-out: "on track to achieve our $140 million annualized run rate cost-out target" (CFO Gerald Herman). Net leverage was 2.4x at 30 Sep 2026, below the stated target; $58M of debt was repaid in Q3. Bruker took a majority stake in MIMETAS and made a minority investment in Atinary Technologies (AI-driven chemistry).
+- Market reaction: shares rose 8.1% to $61.05 right after the results — [Webull/StockStory](https://www.webull.com/news/15865733720480768) (secondary)
+#### Additional test d figures (market-data basis)
+- TTM: gross margin 49.11%; GAAP operating margin 9.17%; EBITDA margin 15.68%; FCF margin 6.97%; revenue $3.51bn; EBITDA $550.7M; FCF $244.7M; ROE −4.79%; ROIC 7.99%; debt $1.74bn; net debt $1.62bn; debt/EBITDA 2.86 — [StockAnalysis BRKR statistics, retrieved 12 Nov 2026](https://stockanalysis.com/stocks/brkr/statistics/). Net debt to TTM EBITDA on this basis ≈ 2.9x (my arithmetic). The company's 2.4x net leverage uses its own adjusted EBITDA.
+- Five-year trend (year-end): ROIC FY2021 23.88% → FY2022 21.43% → FY2023 18.67% → FY2024 7.27% → FY2025 −2.72%; debt/EBITDA 2.61 → 2.22 → 2.17 → 3.49 → 3.67; revenue $2.42bn → $2.53bn → $2.96bn → $3.37bn → $3.44bn (growth was acquisition-led: ELITechGroup, NanoString and others) — [StockAnalysis BRKR ratios](https://stockanalysis.com/stocks/brkr/financials/ratios/) and [forecast](https://stockanalysis.com/stocks/brkr/forecast/), retrieved 12 Nov 2026
+- FCF conversion is weak: nine-month 2026 FCF $37.5M vs non-GAAP net income $338.9M (~11%; my arithmetic) — [8-K](https://www.sec.gov/Archives/edgar/data/0001109354/000119312526446176/brkr-ex99_1.htm)
+#### Inferences
+- Of the four, Bruker is most exposed to US academic funding (BioSpin customers are mainly academic/government), so the FY2027 NIH/NSF outcome matters most here.
+- AI-capex exposure is medium and rising. The semi-metrology backlog converts in FY2027–28, so a financing-led AI pause around 2028 would hit just as it ships; faster acceleration would help NANO. The semiconductor share of revenue is not disclosed.
+- China is ~12–14% of revenue, and part of it depends on government stimulus.
+- IEEPA tariff refunds (mostly approved by 30 Sep 2026) flatter 2026 gross margin, and the 6.375% mandatory convertible preferred ($690M) means future common-share dilution (conversion date not verified).
+#### Gaps
+- Company-stated recurring/aftermarket share, the academic share of revenue, a credit rating and the preferred's conversion terms were not verified.
 
 ### 1.3 Agilent Technologies (NYSE: A) — fiscal year ends 31 October
+#### Takeaway
+Agilent has the highest returns on capital of the three US names (ROIC ~17%, ROE ~21%). About 65% of revenue is recurring (non-instrument) and leverage is modest (gross debt/EBITDA ~1.95x; net debt ~$2.2–2.4bn). The cycle is improving: core growth was 7.3% in Q3 FY2026, pharma revenue grew 12%, and management says customer capital budgets have "largely normalized". China is a material 17.6% of revenue; academia and government are only 7–8%.
 #### Latest results and guidance (Q3 FY2026, quarter ended 31 Jul 2026, released 26 Aug 2026)
 - Revenue $1,878M (+8.1% reported; core +7.3% headline, 7% in reconciliation table); GAAP EPS $1.28 (vs $1.18); non-GAAP EPS $1.62 (vs $1.37, +18%), incl. $0.06 net benefit from tariff refunds — [Agilent Q3 FY26 8-K Ex.99.1](https://www.sec.gov/Archives/edgar/data/0001090872/000109087226000062/exhibit991-q326pressrelease.htm)
 - Margins: GAAP operating 23.6% (vs 20.7%); non-GAAP operating 28.3% (vs 25.1%, +320bp, of which ~110bp tariff refunds = $20M). GAAP gross margin ~55.5% (derived from revenue less cost of products and services; prior year ~51.1%) — same release
@@ -95,8 +133,21 @@ Scope: Thermo Fisher (TMO), Bruker (BRKR), Agilent (A), Oxford Instruments (OXIG
 - Tariffs: IEEPA refunds being claimed after the 20 Feb 2026 Supreme Court ruling; remaining refunds' timing uncertain; tariff and Middle East cost impacts mitigated through supply-chain optimisation and pricing — 10-Q Q3 FY26
 #### Theme exposure
 - Instrumentation revenue (LC, LC-MS, GC, GC-MS, ICP-MS, spectroscopy, cell analysis, remarketed instruments) = 34.9% of FY2025 revenue ($2,427M); the CrossLab services/consumables segment ($786M in Q3 FY26, 42% of revenue, 34.3% margin) monetises the installed base — 10-K FY2025 and Q3 release; a split of LC/MS/spectroscopy line revenue is not disclosed (see Gaps)
+#### Additional test d figures (market-data basis)
+- TTM: gross margin 53.65%; GAAP operating margin 24.54%; EBITDA margin 28.21%; FCF margin 17.19%; revenue $7.37bn; EBITDA $2.08bn; FCF $1.27bn; ROE 20.97%; ROIC 16.89%; debt $4.15bn; cash $1.76bn; net debt $2.39bn; debt/EBITDA 1.95 — [StockAnalysis A statistics, retrieved 12 Nov 2026](https://stockanalysis.com/stocks/a/statistics/). Net debt to TTM EBITDA ≈ 1.15x (my arithmetic).
+- Five-year trend (fiscal year-end, October): ROIC FY2021 19.68% → FY2022 20.12% → FY2023 18.69% → FY2024 17.78% → FY2025 18.21%; debt/EBITDA 1.63 → 1.42 → 1.62 → 1.86 → 1.77; revenue $6.32bn → $6.85bn → $6.83bn → $6.51bn → $6.95bn — [StockAnalysis A ratios](https://stockanalysis.com/stocks/a/financials/ratios/) and [forecast](https://stockanalysis.com/stocks/a/forecast/), retrieved 12 Nov 2026
+- FCF conversion: TTM FCF $1.27bn vs TTM GAAP net income ≈ $1.43bn (derived from P/E 34.89 and 281.9M shares) ≈ 89% — my arithmetic
+- Governance: board chair Koh Boon Hwee retired 4 Sep 2026; Dow R. Wilson became chair; Glenn Boehnlein (ex-Stryker CFO) joined the board — [Agilent 8-K Ex.99.1, 2 Sep 2026](https://www.sec.gov/Archives/edgar/data/1090872/000119312526384426/a-ex99_1.htm)
+#### Inferences
+- AI-capex exposure is low to moderate and runs through chemicals & advanced materials (22.5% of FY2025 revenue, which includes semiconductors and batteries; not split out). With ~65% recurring revenue, Agilent is the second most cushioned of the four in a financing-led 2028 pause (after TMO). Faster AI acceleration helps CAM and GC/ICP-MS but only modestly at group level.
+- China at 17.6% (FY2025) is the main geopolitical exposure; China revenue was flat in FY2025 ($1,224M vs $1,217M) after falling in FY2024.
+- FY2026 EPS growth (+11%) includes tariff refunds; FY2027 consensus EPS growth slows to +8%.
+#### Gaps
+- LC vs MS vs spectroscopy revenue lines, FY2026 China growth, credit rating, and call commentary (the Nasdaq page returned 503) were not verified. FY2027 guidance is due 23 Nov 2026.
 
 ### 1.4 Oxford Instruments (LSE: OXIG) — fiscal year ends 31 March
+#### Takeaway
+Oxford Instruments has the strongest balance sheet of the four (net cash £74.8M, no financial leverage) and high returns (ROCE 28–30% on its own definition). It also has the most hardware-heavy revenue model (~81% product, ~19% service) and the highest direct AI-capex exposure: 56% of H1 FY27 orders were semiconductor, and Advanced Technologies orders rose 124–126% on AI-datacentre optical demand. China is 22–25% of revenue and US academia 10%. The half-year results to 30 Sep 2026 WERE published on 10 Nov 2026.
 #### Latest results and guidance
 - H1 FY27 (six months to 30 Sep 2026) WAS PUBLISHED on 10 Nov 2026 (RNS 07:00): order intake £296.0M (+44.2% reported; +44.3% organic constant currency, OCC); order book c.£317M; revenue £201.1M (+8.4%; +9.0% OCC); adjusted operating profit £30.0M (+21.5%; +28.3% OCC) after £1.7M FX headwind; adjusted operating margin 14.9% (+160bp; H1 FY26 13.3%); statutory operating profit £27.1M (13.5% margin); adjusted PBT £30.9M; diluted adjusted EPS 42.2p (+29.1%); statutory diluted EPS 37.9p; interim dividend 5.8p (5.4p); normalised cash conversion 85% (41%); free cash flow £19.1M; net cash £74.8M (£45.1M a year earlier) — [OXIG Half-Year Results RNS, 10 Nov 2026, via Investegate](https://www.investegate.co.uk/announcement/rns/oxford-instruments--oxig/half-year-results/9866415)
 - Divisions H1 FY27: Imaging & Analysis (I&A) revenue £142.2M (+3.1% OCC; product £113.1M, service £29.1M), segment adjusted operating profit £25.6M (18.0% reported margin, +90bp; 19.3% OCC), orders +12.6% OCC, order book £144M (+7.6%); Advanced Technologies (AT) revenue £58.9M (+26.6–27% OCC; product £49.0M, service £9.9M), adjusted operating profit £4.4M (7.5% margin, +530bp), orders +124–126% — same RNS. (The "£25.6M / 18.0%" figure seen in some press is the I&A divisional profit, not a second group figure.)
@@ -121,8 +172,51 @@ Scope: Thermo Fisher (TMO), Bruker (BRKR), Agilent (A), Oxford Instruments (OXIG
 - AI-capex link: 56% of H1 FY27 orders are semiconductor; AT order surge tied to AI datacentre optical connectivity (InP photonics) — highest direct AI-capex sensitivity of the four (my inference from the order mix)
 #### Theme exposure
 - I&A (electron-microscope analysers/EDS/EBSD detectors, AFM, Raman, scientific cameras, optical microscopy, benchtop NMR, X-ray tubes sit in AT) = 74% of FY26 revenue (£314.7M of £423.2M) and 96% of FY26 adjusted operating profit (£70.9M of £73.7M); 71% of H1 FY27 revenue — my arithmetic from the RNSs. Company is developing customer-facing APIs "to enable customers to integrate our tools and analytical software into AI workflows" — H1 FY27 RNS
+#### Additional test d figures (market-data basis)
+- TTM: gross margin 55.88%; operating margin 17.34%; EBITDA margin 20.17%; FCF margin 16.32%; revenue £438.8M; EBITDA £88.5M; FCF £71.6M; ROE 14.93%; ROIC 20.50%; total debt £37.3M (likely mostly leases); cash £78.7M; net cash £41.4M — [StockAnalysis OXIG statistics, retrieved 12 Nov 2026](https://stockanalysis.com/quote/lon/OXIG/statistics/). The company's net cash (£74.8M) excludes IFRS 16 leases. I rely on the company figure.
+- Five-year trend (year-end, March): ROIC FY2022 18.89% → FY2023 20.63% → FY2024 15.82% → FY2025 14.72% → FY2026 17.22%; revenue £367.3M → £444.7M → £470.4M → £443.4M (restated) → £423.2M — [StockAnalysis OXIG ratios](https://stockanalysis.com/quote/lon/OXIG/financials/ratios/) and [forecast](https://stockanalysis.com/quote/lon/OXIG/forecast/), retrieved 12 Nov 2026
+#### Inferences
+- Scenario exposure is the highest of the four. Steady growth (55%) is positive, since the AT order book covers FY27 and extends into FY28. A financing-led pause around 2028 (25%) is the biggest risk, because the FY28 guide (AT revenue +c.20%, margin into 12–15%) depends on continued datacom capex. Faster acceleration (20%) gives the most upside.
+- With China at ~25% of H1 revenue and a "Made in China" electron-microscope initiative, OXIG is highly exposed to US–China trade and export-control decisions and to Chinese preferences for local suppliers.
+- Profit is concentrated in I&A (96% of FY26 adjusted operating profit); AT's margin was only 7.5% in H1 FY27.
+#### Gaps
+- The NanoScience buyer's name, a credit rating (probably unrated; not verified) and the cause of the October–November 2026 share-price fall (see Part 3.4) were not verified.
+
+### 1.5 Cross-company summary for test e (cycle and AI-scenario exposure) — my inferences from the cited facts above
+| | TMO | BRKR | A | OXIG |
+|---|---|---|---|---|
+| Recurring/usage-linked share | ~85% (consumables + services, 9M26) | ~21% service (+ some consumables in product) | ~65% non-instrument (FY25) | ~19% service (FY26) |
+| Academic & government | flat (Q3 26); share not verified | highest; US bookings just turning up | 7–8% of revenue; −3% in Q3 FY26 | US academia 10% of H1 revenue, declining |
+| China share | not disclosed (APAC 18%) | 13.8% FY25; 12.0% 9M26 | 17.6% FY25 | 22.4% FY26; 25.3% H1 FY27 |
+| Direct AI/semiconductor-capex link | low (EM, high-end instruments) | medium (semi metrology +30% bookings, ships FY27–28) | low–medium (CAM 22.5%) | high (semis 56% of H1 FY27 orders) |
+| Hit in a financing-led 2028 AI pause (25%) | small | medium | small–medium | large |
+| Upside in faster acceleration (20%) | small | medium | small | large |
+| Net leverage | ~2.9x net debt/EBITDA | 2.4x (company) | ~1.15x | net cash |
+| One-off 2026 tariff refunds in earnings | yes (~$0.15 EPS) | yes (majority approved) | yes ($0.06 in Q3) | not reported in sources read |
 
 ## Part 2 — Comparison rows (DHR, WAT, AME, MTD, Spectris)
+
+Results are from each company's Q3 2026 8-K Ex.99.1 on SEC EDGAR. Market data is from StockAnalysis statistics pages, 11 Nov 2026 close, retrieved 12 Nov 2026. Price performance is my arithmetic on Nasdaq.com daily closes (price only, no dividends), retrieved 12 Nov 2026.
+
+| Company | Latest results | FY2026 guidance | Revenue model / structure | Strength | Valuation (11 Nov 2026) | Performance |
+|---|---|---|---|---|---|---|
+| Danaher (DHR) | Q3 26 (21 Oct 2026): revenue $6.6bn (+8.5%); core +3.0% (+5.5% ex respiratory); adj. EPS $2.11 (+11.5%); GAAP EPS $1.71; FCF $1.6bn — [8-K](https://www.sec.gov/Archives/edgar/data/313616/000031361626000201/dhr-20261021xex991.htm) | Adj. EPS raised to $8.57–8.62 (from $8.45–8.60); Q4 core ex respiratory +4–5% | Bioprocessing, life sciences, diagnostics; new CEO Julie Sawyer Montgomery; recurring share not extracted | ROIC 6.60%; debt/EBITDA 3.24; op. margin 21.97% | $235.31; mkt cap $165.55bn; EV $187.65bn; P/E 38.55; fwd P/E 25.88; EV/EBITDA 22.73; EV/sales 7.33; FCF yield 3.46%; div 0.68% — [SA](https://stockanalysis.com/stocks/dhr/statistics/) | YTD +2.8%; 1y +9.0%; 3y +19.4%; 5y −12.5%; 52w $160.93 (15 May 2026)–$242.80 (22 Jan 2026) |
+| Waters (WAT) | Q3 26 (3 Nov 2026): revenue $1.767bn ($871M organic + $896M acquired BD businesses); organic +9% (+10% cc); adj. EPS $4.10 (+21%); GAAP EPS $0.82; product $1,334M, service $433M (24.5%) — [8-K](https://www.sec.gov/Archives/edgar/data/1000697/000119312526444400/d22941dex991.htm) | Organic cc growth raised to 9.1–9.7%; adj. EPS $14.60–14.70; 2027 framework given on call | Combination with BD's Biosciences & Diagnostic Solutions COMPLETED 9 Feb 2026 (Waters holders 60.8%, BD holders 39.2%) — [8-K Ex.99.1](https://www.sec.gov/Archives/edgar/data/1000697/000119312526042819/d23927dex991.htm); four divisions (ASD $703M, WBD $396M, ADx $575M, MSD $93M in Q3) | Debt/EBITDA 3.06–3.65 (deal); TTM ROIC 2.46% (deal-distorted) | $470.90; mkt cap $46.28bn; EV $51.20bn; fwd P/E 29.48; EV/EBITDA 29.13 (TTM distorted); FCF yield 0.63% — [SA](https://stockanalysis.com/stocks/wat/statistics/) | YTD +24.0%; 1y +22.0%; 3y +84.0%; 5y +34.4%; 52w $282.77 (13 Mar 2026)–$483.33 (11 Nov 2026) |
+| AMETEK (AME) | Q3 26 (3 Nov 2026): sales $2.22bn (+17%); adj. EPS $2.21 (+17%); adj. op. margin 26.8%; EIG sales $1.44bn (+16%) — [8-K](https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm) | Sales up mid-teens; adj. EPS $8.53–8.57 (~+15%) | Indicor Instrumentation acquisition COMPLETED 26 Aug 2026, $5.0bn cash, ~$350M of 2026 sales — [8-K](https://www.sec.gov/Archives/edgar/data/1037868/000103786826000191/exhibit-991indicorinstrume.htm) | ROIC 11.54%; debt/EBITDA 2.57 (from 1.05 at FY25) | $239.69; mkt cap $54.97bn; EV $61.27bn; fwd P/E 26.09; EV/EBITDA 23.47; FCF yield 3.52%; div 0.57% — [SA](https://stockanalysis.com/stocks/ame/statistics/) | YTD +16.7%; 1y +21.3%; 3y +58.9%; 5y +72.8%; 52w $188.47 (19 Nov 2025)–$261.16 (13 Aug 2026) |
+| Mettler-Toledo (MTD) | Q3 26 (5 Nov 2026): sales $1.094bn (+6% reported and local currency; Asia/RoW +14% LC); adj. EPS $12.57 (+13%); GAAP EPS $12.29; Q2 one-off $52M IEEPA tariff-refund benefit and $28M refund to customers — [8-K](https://www.sec.gov/Archives/edgar/data/1037646/000103764626000072/ex-991mtd8xkq32026.htm) | LC sales ~+5%; adj. EPS $47.70–47.90 (~+12%; raised from $47.15–47.50); Q4 LC ~+5%, adj. EPS $14.84–15.04 | Lab, industrial, product inspection; service share not extracted | ROIC 46.62%; debt/EBITDA 1.55; op. margin 27.82% | $1,749.01; mkt cap $34.79bn; EV $36.76bn; fwd P/E 33.84; EV/EBITDA 29.40; FCF yield 2.50%; consensus "Hold", target $1,712.50 (below price) — [SA](https://stockanalysis.com/stocks/mtd/statistics/) | YTD +25.4%; 1y +21.0%; 3y +67.5%; 5y +15.0%; 52w $1,023.05 (13 May 2026)–$1,806.58 (6 Nov 2026) |
+| Spectris (formerly LSE: SXS) | NO LONGER LISTED: taken private by KKR (Bidco). Scheme sanctioned 2 Dec 2025, effective 4 Dec 2025, listing cancelled 5 Dec 2025 at £41.75/share (£41.47 cash + 28p interim dividend). Initial agreement 2 Jul 2025, increased offer 5 Aug 2025; CEO Andrew Heath stepped down on completion — [Spectris RNS 4 Dec 2025 via Investegate](https://www.investegate.co.uk/announcement/rns/spectris--sxs/scheme-becomes-effective-and-leadership-changes/9274646) | n/a | n/a (private: Malvern Panalytical X-ray/particle analysis, HBK etc.) | n/a | Private-market benchmark only; deal EV/EBITDA multiple not verified | n/a |
+
+Consensus for comparison names (StockAnalysis forecast pages, retrieved 12 Nov 2026): DHR revenue FY26 $26.26bn → FY27 $28.28bn (+7.7%), EPS $8.59 → $9.32; WAT $6.50bn → $7.16bn (+10.2%), EPS $14.65 → $16.55; AME $8.61bn → $9.91bn (+15.1%), EPS $8.56 → $9.64; MTD $4.26bn → $4.45bn (+4.4%), EPS $47.82 → $53.22.
+
+Closest Japanese and UK/European listed peers (StockAnalysis statistics and ratio pages, delayed prices 12 Nov 2026, retrieved 12 Nov 2026). The 5-yr median is over five fiscal year-end points (my arithmetic).
+| Peer | Market cap | Fwd P/E (5-yr year-end median) | EV/EBITDA (median) | EV/sales | Op. margin | Div. yield | 52w change |
+|---|---|---|---|---|---|---|---|
+| JEOL (TSE 6951; electron microscopes, NMR) — [SA](https://stockanalysis.com/quote/tyo/6951/statistics/) | ¥325.4bn (price ¥6,680) | 13.58 (15.41) | 12.94 (8.04) | 1.92 | 11.16% | 1.98% | +29.89% |
+| Shimadzu (TSE 7701; chromatography, MS, X-ray) — [SA](https://stockanalysis.com/quote/tyo/7701/statistics/) | ¥1.33tn (¥4,594) | 20.71 (22.06) | 13.00 (12.21) | 2.23 | 13.55% | 1.57% | +7.84% |
+| HORIBA (TSE 6856; spectroscopy, semi) — [SA](https://stockanalysis.com/quote/tyo/6856/statistics/) | ¥856.6bn (¥20,385) | 14.76 (13.32) | 9.77 (5.55) | 2.06 | 16.93% | 2.70% | +50.55% |
+| Rigaku (TSE 268A; X-ray; listed Oct 2024) — [SA](https://stockanalysis.com/quote/tyo/268A/statistics/) | ¥305.3bn (¥1,348) | 19.91 (n/a, 2 yrs) | 18.35 | 3.88 | 15.24% | 1.41% | +39.55% |
+| Renishaw (LSE RSW; metrology) — [SA](https://stockanalysis.com/quote/lon/RSW/statistics/) | £3.63bn | 20.22 (21.88) | 17.91 (16.59) | 4.13 | 19.02% | 1.64% | +44.78% |
+| Halma (LSE HLMA; safety/analysis instruments) — [SA](https://stockanalysis.com/quote/lon/HLMA/statistics/) | £13.35bn | 26.50 (28.18) | 21.84 (22.17) | 5.50 | 20.54% | 0.70% | +3.91% |
 
 ## Part 3 — Valuation and entry point (separate from quality)
 
