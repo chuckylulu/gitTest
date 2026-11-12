@@ -1,0 +1,11 @@
+# Materials and atomic-scale simulation worldwide (as of 12 November 2026) — INTERIM DRAFT (research in progress; will be overwritten by the final notes)
+
+Status note: the shared web-search budget for this session ran out part-way through; later evidence comes from direct fetches of known primary URLs only.
+
+## Interim key facts (all to be re-stated with full sourcing in the final version)
+
+- Schrodinger Q3 2026 (quarter ended 30 Sep 2026; 8-K filed 4 Nov 2026): total revenue $64.5M (+19%), software $38.2M (+6%), hosted software $17.2M (+49%, 45% of software revenue), drug discovery $24.2M, contribution $2.2M, ACV $44.7M (+17%; +24% excl. contribution), trailing-four-quarter ACV $214M, software gross margin 75%, opex $64.4M (-13%), net loss $37.7M, adjusted EBITDA -$16.8M, cash+securities $373M; FY2026 guidance ACV $222-232M, drug discovery revenue $75-85M — https://www.sec.gov/Archives/edgar/data/0001490978/000149097826000075/sdgr-20260930x8kxexx991.htm
+- Schrodinger FY2025 (8-K 25 Feb 2026): total revenue $255.9M (+23.3%), software $199.5M (+10.6%), drug discovery $56.4M, software GM 74%, net loss $103.3M, cash $402.3M, ACV $198.5M, top-20 pharma ACV $80.8M, 27 customers >$1M ACV, NDR 100%, GDR 96%, hosted 23% of software revenue — https://www.sec.gov/Archives/edgar/data/1490978/000149097826000009/sdgr-20251231xexx991.htm
+- arXiv 2605.08988 = "Benchmarking Compositional Generalisation for Machine Learning Interatomic Potentials" (Cardiff University; v1 9 May 2026, v2 22 Oct 2026). Small H/C/N/O molecules in vacuum, PBE labels; OOD force errors up to ~8-19x ID for MACE on some tasks; energy errors 100-1000x; not uniform (chain extension ~2x; combination ~1-2.5x) — https://arxiv.org/abs/2605.08988
+- Matbench Discovery leaderboard (fetched 12 Nov 2026): #1 DPA-4.1-Max-OAM-PFT (AI for Science Institute Beijing/IAPCM, CPS 0.913, added 31 Oct 2026); #2 Prophet-OAME-MBD (Kairos Materials); top-15 all trained on MPtrj+OMat24+sAlex — https://matbench-discovery.materialsproject.org/
+- CuspAI $450M Series B at $2.6B (20 Jul 2026); Orbital Industries (ex Orbital Materials) $50M Series B (28 May 2026); Periodic Labs $300M seed (Sep 2025), reported talks at $7.5B (unconfirmed); Lila Sciences $550M raised through Oct 2025, reported talks at $8.5B (unconfirmed); DP Technology Series C >RMB 800M (24 Dec 2025).
