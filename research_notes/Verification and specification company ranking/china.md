@@ -31,7 +31,7 @@ Three listed EDA vendors lead China's field: Empyrean (the largest; analog, cust
 
 **Sub-segment 2: emulation and prototyping hardware**
 - UniVista 合见工软 (website fetched 12 Nov 2026): simulator UVS+, debugger UVD+, VPS verification management; emulation UVHS, UVHS-2 and UVHP; prototyping UV APS and PD-AS; virtual prototyping V-Builder; DFT Tespert (BSCAN, MBIST, SCAN, ATPG, DIAG, YIELD, IJTAG); 3DIC Designer; NodeClosure; AI platform UDA; Archer PCB; interface IP (PCIe Gen5, UCIe, HBM3/E, LPDDR5, DDR5, Ethernet, RDMA, UEC MAC). No formal-verification or verification-IP product is listed. News items: free trial of key EDA tools (3 Jun 2025), "Agent" strategy launch (1 Sep 2026), Quectel deploying Archer (6 Nov 2026). [COMPANY CLAIM] https://www.univista-isg.com/
-- S2C 思尔芯 (website fetched 12 Nov 2026): Prodigy FPGA prototyping (S8 on AMD Versal Premium, S7 on Virtex UltraScale+, Stratix 10); claims "over 700 customers and more than 4,000 systems installed" and 90+ Prototype Ready IP; named cases BOSC (XiangShan RISC-V) and Artosyn. [COMPANY CLAIM] https://www.s2cinc.com/ . S2C's legal name in the SSE database is 上海国微思尔芯技术股份有限公司, linking it to the 国微 group. [PRIMARY]
+- S2C 思尔芯 (website fetched 12 Nov 2026): Prodigy FPGA prototyping (S8 on AMD Versal Premium, S7 on Virtex UltraScale+, Stratix 10); claims "over 700 customers and more than 4,000 systems installed" and 90+ Prototype Ready IP; named cases BOSC (XiangShan RISC-V) and Artosyn. [COMPANY CLAIM] https://www.s2cinc.com/ . S2C's legal name in the SSE database is 上海国微思尔芯技术股份有限公司 [PRIMARY]; the name suggests a link to the 国微 group, but that is my inference from the name and was not checked.
 - X-Epic 芯华章: its website is script-rendered and returned nothing; no STAR application found. Corigine 芯启源 and HyperSilicon 亚科鸿禹: no data retrieved; no STAR application found. [Gap]
 
 **Sub-segment 3: verification components sold as IP**
@@ -73,8 +73,8 @@ Three listed EDA vendors lead China's field: Empyrean (the largest; analog, cust
 China's visible machine-checked proof work comes from AI labs that publish open models for mathematics (DeepSeek, Moonshot with Numina, ByteDance). I found no evidence that anyone sells machine-checked proof for software as a product, and no notable Chinese requirements or specification tool vendor. Coverage is thin because the search budget ran out.
 
 ### Cited Findings
-- DeepSeek-Prover-V2-671B, a Lean 4 prover, is on Hugging Face (updated 30 Apr 2025; 31.3K downloads). [PRIMARY: model card] https://hf.co/deepseek-ai/DeepSeek-Prover-V2-671B
-- Kimina-Prover-72B (Project Numina with Moonshot's Kimi team; fine-tuned from Qwen2.5-72B; MIT licence) was updated 10 Jul 2025. [PRIMARY: model card] https://hf.co/project-numina/Kimina-Prover-72B
+- DeepSeek-Prover-V2-671B, a formal theorem-proving model, is on Hugging Face (updated 30 Apr 2025; 31.3K downloads; DeepSeek-V3 architecture). [PRIMARY: model card overview; proof language not read] https://hf.co/deepseek-ai/DeepSeek-Prover-V2-671B
+- Kimina-Prover-72B is published by Project Numina (fine-tuned from Qwen2.5-72B; MIT licence; updated 10 Jul 2025). The "Kimina" name and a "Moonshot-Math" demo space suggest Moonshot's Kimi team is involved, but the card overview does not confirm it. [PRIMARY: model card; Moonshot link UNVERIFIED] https://hf.co/project-numina/Kimina-Prover-72B
 - Empyrean's HimaFormal Lint supports GJB-9765, a military standard, which suggests defence buyers for formal-style checks. [COMPANY CLAIM] https://static.cninfo.com.cn/finalpage/2026-04-28/1225217315.PDF
 
 ### Inferences
@@ -238,7 +238,7 @@ The US cut off EDA licensing to China only briefly (May to July 2025), and the 5
   - Empyrean's 9M 2026 revenue rose 19.30% (Q3 +29.82%), but its EDA software grew only 4.89% in H1 2026. [PRIMARY]
 
 ### Inferences
-- The six-week cut-off showed that US vendors can be switched off, which is the strongest policy argument for domestic tools. It was reversed quickly, however, and Cadence's China share recovered, so Chinese customers still buy the big three's sign-off tools where they can.
+- The six-week cut-off showed that US vendors can be switched off, which is the strongest policy argument for domestic tools. It was reversed quickly, however, and Cadence's China share reached 16% by Q3 2026, so Chinese customers still buy the big three's sign-off tools where they can.
 - If the 10 Jan 2027 deadline passes without another suspension, entities at least 50% owned by Entity-Listed parties would be caught. Empyrean's majority-owned subsidiaries, and Easy-Logic once Empyrean owns 73.87% of it (Easy-Logic has a Hong Kong R&D centre), would then need US licences for items subject to US export rules. This is my reading of the rule's mechanics, not legal advice and not verified.
 - Easing that let Synopsys and Cadence in fully would hit Empyrean's digital tools hardest, because they are new and uncertified. It would hit Primarius's modelling niche least, because that niche already competes globally.
 
@@ -358,7 +358,7 @@ Provisionally, no Chinese company belongs among the 8 to 15 that matter most glo
   1. In China, labour is gaining share. Services grew 75% (2025) and 54% (H1 2026) at Empyrean and 101% (2025) at Primarius, while licences grew 5–8% in H1 2026.
   2. The fastest-growing money is in design services. VeriSilicon's backlog rose 266% in nine months on AI ASICs, while the tool vendors grew 19–36%.
   3. Chinese tools' "verdicts" rest on policy rather than foundry certification. The 17 Jul 2026 sell-off hit the Chinese tool names as hard as or harder than Synopsys and Cadence (about 8–9.5%), so the market treats them as more open to open-source and AI substitution (correlation only).
-- **Evidence that supports the thesis.** The big three's China revenue persisted through controls (Cadence back to 16% in Q3 2026). The only Chinese niche with outside confirmation (Primarius's device models) is a verdict-style position.
+- **Evidence that supports the thesis.** The big three's China revenue persisted through controls (Cadence at 16% of revenue in Q3 2026 against 13% in FY2025; Synopsys still $814m in FY2025). The only Chinese niche with outside confirmation (Primarius's device models) is a verdict-style position.
 
 ### Gaps (could not verify)
 - Private-company funding, valuations and revenue (X-Epic, UniVista, S2C, Phlexing, Arcas, 国微芯, Giga Design Automation, Corigine, HyperSilicon, EnnoCAD, LEDA).
