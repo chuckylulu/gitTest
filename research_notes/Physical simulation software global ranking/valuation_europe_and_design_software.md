@@ -1,193 +1,298 @@
 # Valuation and entry-point notes: Siemens, Dassault Systemes, Hexagon/Octave, ASML, Autodesk, Bentley, PTC, Nemetschek (checked 12 Nov 2026)
 
-Status: v1 (12 Nov 2026, ~13:30 UTC). Prices are the latest close available: 11 Nov 2026 for every Europe/US line (European markets were still trading on 12 Nov when checked); 12 Nov close for Tokyo/Shanghai/Shenzhen peers. "Own calc" = my arithmetic from the cited inputs. Valuation facts only; no business-quality judgment and no buy/sell advice.
+Status: v2, 12 Nov 2026. Latest close = 11 Nov 2026 for Europe/US lines (Europe still trading when checked); 12 Nov for Asian peers. "Own calc" = my arithmetic from cited inputs. Valuation facts only; no quality judgment; no buy/sell advice. Web search budget ran out, so some move causes stay unverified.
 
 **Summary for the report writer (valuation-only labels, dated 12 Nov 2026)**
-- **Siemens (EUR 277.00; 12 Nov intraday ~EUR 283 after FY26 results):** price at an all-time-high zone (98th percentile of 5-year closes); trailing P/E ~25x on FY26 basic EPS EUR 10.94, ~22x FY27 guidance ex-Healthineers (own calc). Healthineers 67% stake ~EUR 32bn (15% of market cap) plus 4.9% Siemens Energy ~EUR 5.6bn. Market-implied value of DI+SI+Mobility ~EUR 164bn = ~15x FY27e segment profit (own calc). DI software (EUR 7.2bn revenue FY26) plausibly ~EUR 36-65bn = 17-30% of market cap at 5-9x sales (assumption). Label: **fair** (multiples at top of own history; cash-flow-implied growth undemanding).
-- **Dassault (EUR 25.34):** multiples at 5-10-year lows (EV/sales 5.2x vs 5y median 7.8x; FCF yield 5.1%); -55% from 2021 high; one-day falls of -20.8% (11 Feb 2026, 2026 guidance) and -13.0% (23 Oct 2025, outlook cut). Price implies ~2-3%/yr FCF growth. Label: **attractive** (provisional; conditional on 17 Nov 2026 CMD and 3 Feb 2027 guidance holding >=4-5% growth).
-- **Hexagon (SEK 109.25) / Octave (USD 21.23):** history not comparable after D&E sale to Cadence (closed 23 Feb 2026, EUR 2.7bn) and Octave spin (May 2026). Forward adjusted P/E ~28-31x. Labels: Hexagon **fair** (low confidence); Octave **cannot assess** (6 months of trading; FCF yield 7.8%, EV/EBITDA 12.7x).
-- **ASML (EUR 1,403.80 / USD 1,534.42):** -18.5% from 30 Jun 2026 high; EV/sales 13x TTM vs 5y median 9.8x; 2027e P/E ~25x on consensus EUR 56.2. Price implies ~5%/yr FCF growth on inflated TTM FCF, ~11% on net income. Label: **fair** (cycle-dependent). Computational-lithography software is bundled and undisclosed; immaterial to the price.
-- **Autodesk (USD 260.01):** EV/EBITDA 23x vs 5y median 43x; FCF yield 5.2% (3.9% after SBC); price implies ~2-5%/yr FCF growth vs consensus revenue +11-15%. Q3 FY27 results 24 Nov 2026. Label: **attractive** (provisional).
-- **Bentley (USD 44.44):** at 5y-low multiples but still ~30x EV/EBITDA; price implies ~8-11%/yr FCF growth vs ARR +13%. E365 consumption plans = 46% of ARR (2025). Label: **fair**.
-- **PTC (USD 196.14):** pinned by Schneider's USD 205 cash offer (5 Oct 2026; close by Q3 2027); 4.5% gross spread. Label: **fair (deal-pinned)**.
-- **Nemetschek (EUR 64.40):** -53% from Aug 2025 high; P/E 31x vs 5y median 56x; FCF yield 5.5%; price implies ~3%/yr FCF growth vs organic guidance 14-15%. Label: **attractive** (provisional; HCSS integration/AI-seat risk).
-- Seat exposure: only Bentley quantifies (E365 46% of ARR consumption-based); Autodesk, Dassault, PTC and Nemetschek do not disclose a seat/enterprise split.
+- **Siemens (EUR 277.00; ~EUR 283 intraday 12 Nov after FY26 results):** price in an all-time-high zone (98th percentile of 5-year closes); P/E 25x FY26 basic EPS (EUR 10.94), ~22x FY27 guidance ex-Healthineers (own calc), vs 5-FY median 18x. Healthineers 67% stake ~EUR 32bn (15% of market cap) plus Siemens Energy 4.9% ~EUR 5.6bn. Implied EV of DI+SI+Mobility ~EUR 164bn = 15x FY27e segment profit (own calc). DI Software (EUR 7.2bn revenue) plausibly EUR 36-65bn = 17-30% of market cap at 5-9x sales (assumption). Label **fair** (top of own range; cash-flow-implied growth undemanding).
+- **Dassault (EUR 25.34):** multiples at 5- to 10-year lows (EV/sales 5.2x vs 5-FY median 7.8x; FCF yield 5.1%); -55% from 2021 high; -20.8% on 11 Feb 2026 (2026 guidance 3-5%), -13.0% on 23 Oct 2025 (outlook cut). Price implies ~2-3%/yr FCF growth. Label **attractive** (provisional; hinges on 17 Nov 2026 CMD and 3 Feb 2027 guidance).
+- **Hexagon (SEK 109.25) / Octave (USD 21.23):** D&E (MSC Software) sold to Cadence for ~EUR 2.7bn (closed 23 Feb 2026); Octave spun off (ex-date 21 May 2026). Spin-adjusted, Hexagon is +17% YTD and near its 52-week high; forward adjusted P/E ~28-31x vs 5-FY median forward 23x. Labels: Hexagon **fair** (low confidence: no comparable history); Octave **cannot assess** (6 months of trading; EV/EBITDA 12.7x, FCF yield 7.8%).
+- **ASML (EUR 1,403.80 / USD 1,534.42):** -18.5% from 30 Jun 2026 high; EV/sales 13x vs 5-FY median 9.8x; ~25x 2027e EPS. Implied FCF growth ~5%/yr (prepayment-inflated TTM FCF) to ~11%/yr (net income base). Label **fair** (cycle-dependent). Computational-lithography software is bundled and not disclosed; immaterial to the price.
+- **Autodesk (USD 260.01):** EV/EBITDA 23x vs 5-FY median 43x; FCF yield 5.2% (3.9% after SBC); price implies ~2-5%/yr FCF growth vs consensus revenue +11-15%. Q3 FY27 results 24 Nov 2026. Label **attractive** (provisional).
+- **Bentley (USD 44.44):** 5-year-low multiples but ~30x EV/EBITDA; implied FCF growth ~8-11%/yr vs ARR +13%. Label **fair**.
+- **PTC (USD 196.14):** pinned by Schneider's USD 205 cash offer (close expected by Q3 2027); 4.5% gross spread. Label **fair (deal-pinned)**.
+- **Nemetschek (EUR 64.40):** -53% from Aug 2025 high; P/E 31x vs 5-FY median 56x; FCF yield 5.5%; implied FCF growth ~3%/yr vs organic guidance 14-15%. Label **attractive** (provisional; HCSS leverage and seat risk).
+- **Seat exposure:** only Bentley quantifies (E365 consumption plans 46% of ARR, 2025). Autodesk (93.6% subscription, 97% recurring), Dassault (83% recurring software), PTC and Nemetschek do not split seat vs enterprise/token revenue.
 
 ## 1. Snapshot (latest close 11 Nov 2026 unless noted)
 
 ### Takeaway
-Software names (Dassault, Autodesk, Nemetschek, Bentley) trade at or near five-year-low multiples; Siemens and ASML trade near the top of their own ranges. PTC is a takeover situation.
+Dassault, Autodesk, Nemetschek and Bentley trade at or near five-year-low multiples; Siemens and ASML near the top of their own ranges; PTC is a takeover situation.
 
 ### Cited Findings
-| Co. (line) | Price | Mkt cap | Net cash(+)/debt(-) | EV | P/E TTM (basis) | Fwd P/E | EV/Sales TTM / fwd | EV/EBITDA TTM | FCF yld TTM | Div yld |
+| Co. (line) | Price | Mkt cap | Net cash(+)/debt(-) | EV | P/E TTM | Fwd P/E | EV/Sales TTM / fwd | EV/EBITDA | FCF yld | Div yld |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Siemens (Xetra) | EUR 277.00 | EUR 212.7bn (768m sh) | Ind. net debt -4.8bn (30 Sep 26); group incl. SFS -33.3bn | SA: 258.6bn | 25.3x basic / 23.6x pre-PPA FY26 (own); SA 27.0x | 21.5x (SA); ~22x FY27 guide ex-SHL (own) | 3.19x / 2.9x FY27e incl. SHL | 18.6x (SA; recomputes to 20.7x) | 5.7% (FY26 FCF 12.1bn, own) | 1.99% on EUR 5.50 proposed |
-| Dassault (Paris) | EUR 25.34 | EUR 33.5bn | +1.05bn (30 Sep 26) | 32.5bn | 25.6x IFRS | 17.8x (non-IFRS) | 5.16x / 4.7x FY27e | 16.9x (SA) | 5.1% (4.6% ex-SBC) | 1.07% |
-| Hexagon B (Stockholm) | SEK 109.25 | SEK 293.3bn | -5.1bn SEK (Q3 26, before Waygate) | SEK 298.4bn (EUR 27.1bn) | 25.5x (distorted by disposal gain/Octave) | 31.0x FY26e / 28.3x FY27e adj. (own, EUR) | 4.75x TTM (mixed perimeter); 6.4x FY26e / 5.4x FY27e | 16.3x | 5.0% | 1.43% |
-| Octave (Nasdaq; SDR Stockholm) | USD 21.23 / SEK 209.0 | USD 5.70bn | -0.39bn | 6.09bn | n/m (TTM loss -1.81bn, impairments) | 15.4x | 3.74x / 3.5x FY27e | 12.7x | 7.8% | 0 |
-| ASML (Amsterdam / Nasdaq) | EUR 1,403.80 / USD 1,534.42 | USD 595.6bn (383.1m sh) | +11.9bn USD | USD 583.6bn | 38.8x | 34.0x 2026e / 25.0x 2027e (own, EUR) | 12.98x / 11.7x 2026e, 9.1x 2027e | 31.7x | 3.9% (prepayment-inflated) | 0.52% |
-| Autodesk | USD 260.01 | 54.3bn | +0.65bn | 53.7bn | 33.7x GAAP | 20.0x FY27e / 18.3x FY28e non-GAAP | 6.89x / 6.45x FY27e, 5.8x FY28e | 23.5x (SA); finviz 26.2x | 5.2% (3.9% ex-SBC) | 0 |
-| Bentley | USD 44.44 | 13.8bn | -1.06bn | 14.85bn | 43.9x GAAP | 29.9x FY26e / 28.1x FY27e adj. | 9.0x / 8.1x FY27e | 29.9x | 3.55% (2.9% ex-SBC) | 0.63% |
-| PTC | USD 196.14 | 21.3bn | -1.56bn | 22.85bn | 22.0x GAAP (incl. USD 464m divestiture gain) | 21.7x FY27e non-GAAP | 8.36x / 7.9x FY27e | 21.9x | 4.1% (2.9% ex-SBC) | 0 |
-| Nemetschek (Xetra) | EUR 64.40 | EUR 7.4bn | -0.47bn (SA EV implies ~-1.2bn incl. other claims) | 8.6bn | 31.1x | 28.5x FY26e / 23.2x FY27e adj. (own) | 6.46x / 5.0x FY27e | 22.7x | 5.5% | 1.06% |
+| Siemens (Xetra) | EUR 277.00 | 212.7bn (768m sh) | ind. -4.8bn (30 Sep); group incl. SFS -33.3bn | 258.6bn (SA) | 25.3x basic, 23.6x pre-PPA FY26 (own); SA TTM 26.8-28.0x (share-count bases differ) | 21.5x (SA); ~22x FY27 guide ex-SHL (own) | 3.19x / 2.9x FY27e | 18.6x SA (recomputes 20.7x) | 5.7% FY26 (own) | 1.99% (EUR 5.50 proposed) |
+| Dassault (Paris) | EUR 25.34 | 33.5bn | +1.05bn (30 Sep) | 32.5bn | 25.6x IFRS | 17.8x non-IFRS | 5.16x / 4.7x FY27e | 16.9x | 5.1% (4.6% ex-SBC) | 1.07% |
+| Hexagon B (Stockholm) | SEK 109.25 | SEK 293.3bn | SEK -5.1bn (30 Sep, pre-Waygate) | SEK 298.4bn (EUR 27.1bn) | 25.5x (disposal gain, mixed perimeter) | 31.0x FY26e / 28.3x FY27e adj. (own) | 4.75x TTM (mixed); 6.4x FY26e / 5.4x FY27e | 16.3x | 5.0% | 1.43% |
+| Octave (Nasdaq NY; SDR Stockholm) | USD 21.23 / SEK 209.0 | USD 5.70bn | -0.39bn | 6.09bn | n/m (TTM loss -1.81bn) | 15.4x | 3.74x / 3.5x FY27e | 12.7x | 7.8% | 0 |
+| ASML (Amsterdam/Nasdaq) | EUR 1,403.80 / USD 1,534.42 | USD 595.6bn (383.1m sh) | +USD 11.9bn | USD 583.6bn | 38.8x | 34.0x 2026e / 25.0x 2027e (own) | 12.98x / 11.7x 2026e, 9.1x 2027e | 31.7x | 3.9% (prepayment-inflated) | 0.52% |
+| Autodesk | USD 260.01 | 54.3bn | +0.65bn | 53.7bn | 33.7x GAAP | 20.0x FY27e / 18.3x FY28e | 6.89x / 6.45x FY27e | 23.5x SA; 26.2x finviz | 5.2% (3.9% ex-SBC) | 0 |
+| Bentley | USD 44.44 | 13.8bn | -1.06bn | 14.85bn | 43.9x GAAP | 29.9x FY26e / 28.1x FY27e | 9.0x / 8.1x FY27e | 29.9x | 3.55% (2.9% ex-SBC) | 0.63% |
+| PTC | USD 196.14 | 21.3bn | -1.56bn | 22.85bn | 22.0x GAAP (incl. USD 464m gain) | 21.7x FY27e | 8.36x / 7.9x FY27e | 21.9x | 4.1% (2.9% ex-SBC) | 0 |
+| Nemetschek (Xetra) | EUR 64.40 | 7.4bn | -0.47bn (SA EV implies ~-1.2bn incl. other claims) | 8.6bn | 31.1x | 28.5x FY26e / 23.2x FY27e (own) | 6.46x / 5.0x FY27e | 22.7x | 5.5% | 1.06% |
 
-- Sources: stockanalysis.com statistics/forecast pages (S&P Global data) captured 12 Nov 2026 for every row ([SIE](https://stockanalysis.com/quote/etr/SIE/statistics/), [DSY](https://stockanalysis.com/quote/epa/DSY/statistics/), [HEXA.B](https://stockanalysis.com/quote/sto/HEXA.B/statistics/), [OCTV](https://stockanalysis.com/stocks/octv/statistics/), [ASML](https://stockanalysis.com/stocks/asml/statistics/), [ADSK](https://stockanalysis.com/stocks/adsk/statistics/), [BSY](https://stockanalysis.com/stocks/bsy/statistics/), [PTC](https://stockanalysis.com/stocks/ptc/statistics/), [NEM](https://stockanalysis.com/quote/etr/NEM/statistics/)); European intraday multiples re-based by me to the 11 Nov close. Closes cross-checked against Yahoo Finance daily chart data ([chart API](https://query1.finance.yahoo.com/v8/finance/chart/SIE.DE)).
-- Second-source cross-checks (TTM P/E; P/S): companiesmarketcap Nov 2026: SIE 27.4x; 2.63x; DSY 24.5x; 5.17x; ASML 38.1x; 13.0x; ADSK 33.5x; 6.98x; BSY 42.7x; 8.39x; PTC 22.1x; 7.21x; NEM 32.9x; 5.73x; **Hexagon 10.1x P/E and 5.72x P/S - conflicts with stockanalysis 25.5x/4.67x (perimeter changes)** ([companiesmarketcap](https://companiesmarketcap.com/hexagon/pe-ratio/)). Finviz ADSK 12 Nov pre-market: P/E 33.45, fwd P/E 18.23, EV/sales 6.85, EV/EBITDA 26.22 ([finviz](https://finviz.com/quote.ashx?t=ADSK)).
-- Siemens FY26 (published 12 Nov 2026): revenue EUR 83.4bn (+8% comp.), orders EUR 108.2bn (+25%, book-to-bill 1.30), Industrial Business profit EUR 13.3bn (16.3%), net income EUR 9.5bn, basic EPS EUR 10.94, EPS pre-PPA EUR 11.76, FCF EUR 12.1bn, industrial net debt EUR 4.8bn (0.3x EBITDA), dividend proposal EUR 5.50 - [Siemens earnings release Q4 FY2026](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf); group net debt EUR 33.3bn incl. SFS debt EUR 29.3bn - [Q4 FY26 presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf).
-- Dassault 30 Sep 2026: cash EUR 3,814m, borrowings EUR 2,765m, net cash ~EUR 1.05bn - [Q3 2026 release via Yahoo Finance](https://finance.yahoo.com/healthcare/articles/dassault-syst-mes-strong-q3-055900413.html).
-- Bentley 30 Sep 2026: cash USD 150.9m, debt ~USD 1,162m, net leverage 1.7x - [Bentley Q3 2026 8-K exhibit](https://www.sec.gov/Archives/edgar/data/0001031308/000103130826000032/a26q3exhibit991.htm).
-- PTC FY26 (to 30 Sep 2026): revenue USD 2,733m (flat), FCF USD 873m, debt USD 1,610m, buybacks USD 1,625m; no guidance - [PTC FY26 results exhibit](https://www.sec.gov/Archives/edgar/data/857005/000119312526447186/ptc-ex99_1.htm).
-- Trailing SBC (stockanalysis cash-flow pages, TTM to Jul-Sep 2026): ADSK USD 706m, PTC USD 252m, BSY USD 94m, DSY EUR 175m, ASML EUR 218m, Hexagon EUR 23m ([ADSK cash flow](https://stockanalysis.com/stocks/adsk/financials/cash-flow-statement/?p=trailing)).
+- Sources: stockanalysis.com statistics and forecast pages (S&P Global data) captured 12 Nov 2026 ([SIE](https://stockanalysis.com/quote/etr/SIE/statistics/), [DSY](https://stockanalysis.com/quote/epa/DSY/statistics/), [HEXA.B](https://stockanalysis.com/quote/sto/HEXA.B/statistics/), [OCTV](https://stockanalysis.com/stocks/octv/statistics/), [ASML](https://stockanalysis.com/stocks/asml/statistics/), [ADSK](https://stockanalysis.com/stocks/adsk/statistics/), [BSY](https://stockanalysis.com/stocks/bsy/statistics/), [PTC](https://stockanalysis.com/stocks/ptc/statistics/), [NEM](https://stockanalysis.com/quote/etr/NEM/statistics/)); European intraday figures re-based by me to the 11 Nov close; closes cross-checked with Yahoo Finance daily data ([chart API](https://query1.finance.yahoo.com/v8/finance/chart/SIE.DE)). FX 11 Nov: EUR/USD 1.1169, EUR/SEK 11.0188 (Yahoo).
+- Second source (TTM P/E; P/S), companiesmarketcap Nov 2026: SIE 27.4; 2.63 - DSY 24.5; 5.17 - ASML 38.1; 13.0 - ADSK 33.5; 6.98 - BSY 42.7; 8.39 - PTC 22.1; 7.21 - NEM 32.9; 5.73 - **Hexagon 10.1; 5.72, conflicting with stockanalysis 25.5; 4.67 (perimeter changes)** ([companiesmarketcap](https://companiesmarketcap.com/hexagon/pe-ratio/)). Finviz ADSK (12 Nov pre-market): P/E 33.45, fwd P/E 18.23, EV/sales 6.85, EV/EBITDA 26.22 ([finviz](https://finviz.com/quote.ashx?t=ADSK)).
+- Siemens FY26 (released 12 Nov 2026): revenue EUR 83.4bn (+8% comp.), orders 108.2bn (book-to-bill 1.30), Industrial Business profit 13.3bn (16.3%), net income 9.5bn, basic EPS 10.94, EPS pre-PPA 11.76, FCF 12.1bn, industrial net debt 4.8bn (0.3x), dividend proposal 5.50 ([earnings release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf)); group net debt 33.3bn incl. SFS debt 29.3bn ([presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf)). Headlines: "Siemens posts Q4 profit above forecasts, raises mid-term guidance" (Reuters, via [stockanalysis](https://stockanalysis.com/quote/etr/SIE/)).
+- Balance sheets: Dassault cash EUR 3,814m, borrowings 2,765m ([Q3 release via Yahoo](https://finance.yahoo.com/healthcare/articles/dassault-syst-mes-strong-q3-055900413.html)); Bentley cash USD 150.9m, debt ~1,162m, leverage 1.7x ([Q3 8-K](https://www.sec.gov/Archives/edgar/data/0001031308/000103130826000032/a26q3exhibit991.htm)); PTC FY26 revenue USD 2,733m, FCF 873m, debt 1,610m, buybacks 1,625m, no guidance ([FY26 exhibit](https://www.sec.gov/Archives/edgar/data/857005/000119312526447186/ptc-ex99_1.htm)).
+- TTM stock-based compensation: ADSK USD 706m, PTC 252m, BSY 94m, DSY EUR 175m, ASML 218m, Hexagon 23m ([stockanalysis cash flow](https://stockanalysis.com/stocks/adsk/financials/cash-flow-statement/?p=trailing)).
 
 ### Inferences
-- On every cash-flow measure the software names are cheaper than at any fiscal year-end since 2021; Siemens and ASML are the opposite.
-- US-software FCF yields fall 0.6-1.3 points once SBC is deducted; compare like with like across European (low-SBC) and US names.
+- After SBC, US software FCF yields fall 0.6-1.3 points; compare like with like against low-SBC European names.
 
 ### Gaps
-- Forward EV/EBITDA consensus not available free; EV/EBITDA definitions differ between sources (Siemens SA 18.6x vs recomputed 20.7x; ADSK SA 23.5x vs finviz 26.2x).
-- Nemetschek EV gap (~EUR 0.8bn between SA net debt and SA EV) unexplained; possibly HCSS-related minority/other claims.
+- No free forward EV/EBITDA consensus; EV/EBITDA definitions differ by source. Nemetschek's ~EUR 0.8bn gap between net debt and EV unexplained (possibly HCSS-related claims).
 
 ## 2. History: multiples and share prices
 
 ### Takeaway
-Dassault, Autodesk, Nemetschek and Bentley sit 25-50% below their five-year median multiples; Siemens is 16-52% above its own; ASML 11-33% above.
+Dassault, Autodesk, Nemetschek and Bentley sit 25-50% below five-year median multiples; Siemens 16-52% above; ASML 11-33% above.
 
 ### Cited Findings
-- Fiscal-year-end multiples, last 5 FYs (min / median / max) vs current, from stockanalysis ratio pages captured 12 Nov 2026 ([SIE](https://stockanalysis.com/quote/etr/SIE/financials/ratios/), [DSY](https://stockanalysis.com/quote/epa/DSY/financials/ratios/), [HEXA](https://stockanalysis.com/quote/sto/HEXA.B/financials/ratios/), [ASML](https://stockanalysis.com/stocks/asml/financials/ratios/), [ADSK](https://stockanalysis.com/stocks/adsk/financials/ratios/), [BSY](https://stockanalysis.com/stocks/bsy/financials/ratios/), [PTC](https://stockanalysis.com/stocks/ptc/financials/ratios/), [NEM](https://stockanalysis.com/quote/etr/NEM/financials/ratios/)); min/median and % vs median are own calc:
+- Fiscal-year-end multiples, last five FYs (min / median / max) -> current, from stockanalysis ratio pages captured 12 Nov 2026 ([SIE](https://stockanalysis.com/quote/etr/SIE/financials/ratios/), [DSY](https://stockanalysis.com/quote/epa/DSY/financials/ratios/), [HEXA](https://stockanalysis.com/quote/sto/HEXA.B/financials/ratios/), [ASML](https://stockanalysis.com/stocks/asml/financials/ratios/), [ADSK](https://stockanalysis.com/stocks/adsk/financials/ratios/), [BSY](https://stockanalysis.com/stocks/bsy/financials/ratios/), [PTC](https://stockanalysis.com/stocks/ptc/financials/ratios/), [NEM](https://stockanalysis.com/quote/etr/NEM/financials/ratios/)); statistics own calc:
 
-| Co. | P/E (5y) -> now | EV/Sales -> now | EV/EBITDA -> now | FCF yield % -> now |
+| Co. | P/E | EV/Sales | EV/EBITDA | FCF yield % |
 |---|---|---|---|---|
-| Siemens FY21-25 | 13.5/18.4/21.5 -> 28.0 (+52%) | 1.8/2.5/2.9 -> 3.2 | 12.6/16.1/19.6 -> 18.6 | 6.1/7.3/10.2 -> 5.6 |
-| Dassault FY21-25 | 26.2/47.3/88.9 -> 25.6 (-46%) | 4.8/7.8/14.4 -> 5.2 | 18.4/28.7/55.6 -> 16.9 | 2.2/3.2/4.7 -> 5.1 |
-| Hexagon FY21-25 | 24.2/34.0/47.0 -> 25.5 | 5.2/5.8/9.1 -> 4.7 | 17.1/22.5/27.4 -> 16.3 | 3.1/4.4/6.0 -> 5.0 |
+| Siemens FY21-25 | 13.5/18.4/21.5 -> 28.0 | 1.8/2.5/2.9 -> 3.2 | 12.6/16.1/19.6 -> 18.6 | 6.1/7.3/10.2 -> 5.6 |
+| Dassault FY21-25 | 26.2/47.3/88.9 -> 25.6 | 4.8/7.8/14.4 -> 5.2 | 18.4/28.7/55.6 -> 16.9 | 2.2/3.2/4.7 -> 5.1 |
+| Hexagon FY21-25 (pre-spin perimeter) | 24.2/34.0/47.0 -> 25.5 | 5.2/5.8/9.1 -> 4.7 | 17.1/22.5/27.4 -> 16.3 | 3.1/4.4/6.0 -> 5.0 |
 | ASML FY21-25 | 34.3/35.7/48.8 -> 39.6 | 9.4/9.8/15.4 -> 13.0 | 27.0/28.4/41.0 -> 31.6 | 1.2/3.4/3.6 -> 3.9 |
-| Autodesk FY22-26 | 47.6/59.9/110.6 -> 33.7 (-44%) | 7.5/10.0/12.8 -> 6.9 | 28.1/43.3/66.6 -> 23.5 | 2.3/2.7/4.5 -> 5.2 |
+| Autodesk FY22-26 | 47.6/59.9/110.6 -> 33.7 | 7.5/10.0/12.8 -> 6.9 | 28.1/43.3/66.6 -> 23.5 | 2.3/2.7/4.5 -> 5.2 |
 | Bentley FY21-25 | 43.2/62.7/159.7 -> 43.9 | 8.7/12.0/16.7 -> 9.0 | 29.4/46.6/62.8 -> 29.9 | 1.8/2.4/4.3 -> 3.5 |
 | PTC FY22-26 | 14.7/39.2/68.6 -> 22.0 | 6.0/8.8/10.2 -> 8.4 | 15.8/23.2/33.5 -> 21.9 | 3.4/3.5/5.7 -> 4.1 |
-| Nemetschek FY21-25 | 34.0/56.2/96.8 -> 31.1 (-45%) | 6.8/10.5/19.1 -> 6.5 | 25.7/40.7/70.5 -> 22.7 | 1.6/2.7/3.6 -> 5.5 |
+| Nemetschek FY21-25 | 34.0/56.2/96.8 -> 31.1 | 6.8/10.5/19.1 -> 6.5 | 25.7/40.7/70.5 -> 22.7 | 1.6/2.7/3.6 -> 5.5 |
 
-- 10-year year-end P/E (2016-2025, min/median/max) and current TTM, companiesmarketcap: ASML 20.4/36.2/46.9, now 38.1; Dassault 26.2/46.3/87.3, now 24.5 (below 10y min); Nemetschek 33.8/51.9/94.3, now 32.9 (below 10y min); Autodesk (2021-25 only meaningful; earlier years negative or >150x) 46.8-65.3, now 33.5; PTC 2021-25 25.3-87.5, now 22.1; Bentley 2020-25 43.4-154, now 42.7. Year-end P/S 2016-2025: ASML 5.2/9.9/15.1 (now 13.0); Dassault 5.0/7.9/13.8 (now 5.17); Hexagon 3.7/5.2/8.5 (now 5.72); Autodesk 7.8/10.4/16.6 (now 6.98); Nemetschek 7.0/10.7/18.6 (now 5.73); PTC 6.0/7.8/9.6 (now 7.21); Siemens 0.9/1.8/2.4 (now 2.63, above 10y max). Siemens and Hexagon P/E history unusable on that site - [companiesmarketcap P/E](https://companiesmarketcap.com/dassault-systemes/pe-ratio/), [P/S](https://companiesmarketcap.com/siemens/ps-ratio/).
-- Share prices (Yahoo daily closes to 11 Nov 2026; own calc):
+- Forward P/E at FY-ends ([stockanalysis ratio pages](https://stockanalysis.com/quote/epa/DSY/financials/ratios/)), 5-FY median -> now: Siemens 16.7 -> 22.0; Dassault 28.4 -> 17.8; Hexagon 23.1 -> 27.7; Autodesk 32.3 -> 20.0; Bentley 44.4 -> 29.9; PTC 27.3 -> 21.7; Nemetschek 48.0 -> 22.9.
+- 10 year-ends 2016-2025 (min/median/max) vs current TTM, [companiesmarketcap P/E](https://companiesmarketcap.com/dassault-systemes/pe-ratio/) and [P/S](https://companiesmarketcap.com/siemens/ps-ratio/) pages: P/E ASML 20.4/36.2/46.9 (now 38.1); Dassault 26.2/46.3/87.3 (now 24.5, below 10y min); Nemetschek 33.8/51.9/94.3 (now 32.9, below 10y min); Autodesk 2021-25 46.8-65.3 (earlier years negative/extreme; now 33.5); PTC 2021-25 25.3-87.5 (now 22.1); Bentley 2020-25 43.4-154 (now 42.7). P/S: ASML 5.2/9.9/15.1 (13.0); Dassault 5.0/7.9/13.8 (5.17); Hexagon 3.7/5.2/8.5 (5.72); Autodesk 7.8/10.4/16.6 (6.98); Nemetschek 7.0/10.7/18.6 (5.73); PTC 6.0/7.8/9.6 (7.21); Siemens 0.9/1.8/2.4 (2.63, above 10y max). Siemens and Hexagon P/E series unusable on that site.
+- Share prices (Yahoo daily closes to 11 Nov 2026; own calc). **Hexagon: Yahoo data are wrong for 13-20 May 2026 (stockanalysis shows 13 May close SEK 95.28, +1.2%, not 72.66) and pre-spin prices are unadjusted; Hexagon row uses stockanalysis' spin factor 0.8531 (ex-date 21 May: 106.85 -> 82.78)** ([stockanalysis history](https://stockanalysis.com/quote/sto/HEXA.B/history/)):
 
-| Co. | 52w low-high (close) | YTD | From ATH close | 5y percentile |
+| Co. | 52w close low - high | YTD | From ATH close | 5y pct. |
 |---|---|---|---|---|
 | Siemens | 203.75 (20 Mar 26) - 289.85 (28 Aug 26, ATH) | +15.8% | -4.4% | 98th |
-| Dassault | 15.96 (16 Feb 26) - 26.19 (5 Nov 26) | +6.3% (2025: -28.8%) | -54.9% (56.22, Nov 2021) | 20th |
-| Hexagon B | 72.66 (13 May 26) - 116.55 (12 Nov 25) | -0.2% | -27.9% (151.45, Sep 2021; pre-spin prices unadjusted) | 47th |
+| Dassault | 15.96 (16 Feb 26) - 26.19 (5 Nov 26) | +6.3% (2025: -28.8%) | -54.9% (56.22, Nov 21) | 20th |
+| Hexagon B (spin-adj.) | 75.89 (2 Apr 26) - 110.10 (29 Oct 26) | +17.0% | -15.4% (129.2 adj., Sep 21) | 91st |
 | ASML (AMS) | 834.0 (21 Nov 25) - 1,721.4 (30 Jun 26, ATH) | +52.4% | -18.5% | 92nd |
-| Autodesk | 187.72 (22 Jun 26) - 310.25 (2 Dec 25) | -12.2% | -24.0% (342.27, Aug 2021) | 69th |
-| Bentley | 28.42 (23 Jun 26) - 45.40 (9 Nov 26) | +16.4% | -37.6% (71.17, Sep 2021) | 50th |
-| PTC | 112.33 (23 Jun 26) - 196.55 (10 Nov 26) | +12.6% | -9.4% (216.53, Aug 2025) | 92nd |
-| Nemetschek | 52.05 (25 Jun 26) - 96.25 (28 Nov 25) | -30.6% | -53.2% (137.70, Aug 2025) | 30th |
+| Autodesk | 187.72 (22 Jun 26) - 310.25 (2 Dec 25) | -12.2% | -24.0% (342.27, Aug 21) | 69th |
+| Bentley | 28.42 (23 Jun 26) - 45.40 (9 Nov 26) | +16.4% | -37.6% (71.17, Sep 21) | 50th |
+| PTC | 112.33 (23 Jun 26) - 196.55 (10 Nov 26) | +12.6% | -9.4% (216.53, Aug 25) | 92nd |
+| Nemetschek | 52.05 (25 Jun 26) - 96.25 (28 Nov 25) | -30.6% | -53.2% (137.70, Aug 25) | 30th |
 | Octave (NY) | 15.50 (23 Jul 26) - 25.11 (2 Jun 26) | listed 21 May 26 | -15.5% | n/a |
 
-- Largest one-day moves 2025-26 (closes, Yahoo; causes where sourced): Dassault -20.8% 11 Feb 2026 (FY25 results; 2026 guidance of 3-5% growth - [Dassault FY25 release](https://www.3ds.com/newsroom/press-releases/dassault-systemes-q4-revenue-growth-1-solid-operating-margin-and-eps-expansion-initiating-2026-revenue-guidance-3-5-growth)); -13.0% 23 Oct 2025 (cut 2025 revenue outlook - [The Star/Reuters](https://www.thestar.com.my/tech/tech-news/2025/10/23/software-firm-dassault-posts-stable-quarterly-revenue-below-estimates)); -10.4% 16 Feb 2026; +6.3% 29 Oct 2026 (first target raise in ~2 years - [Euronext news](https://live.euronext.com/en/financial-news/dassault-systemes-raises-2026-targets)). PTC +33.5% 5 Oct 2026 (Schneider bid). Autodesk Q2 FY27 (27 Aug 2026): +6.2% in session, ~-5% after hours on trimmed FCF outlook ([SiliconANGLE](https://siliconangle.com/2026/08/27/autodesk-shares-fall-despite-q2-beat-as-cash-flow-guidance-narrows/)). Hexagon -22.8% 13 May 2026; Nemetschek -13.7% 30 Jul 2026 and -10.2% 5 Nov 2026 (Q3: EPS EUR 0.40 ~6c below estimates - [goldesel](https://goldesel.de/aktien/news/nemetschek-aktie-hcss-treibt-umsatz-gewinn-je-aktie-verfehlt-erwartungen)); Siemens -9.3% 13 Nov 2025 (FY25 results day), +10.2% 8 Apr 2026; ASML (AMS) -11.4% 16 Jul 2025, -8.5% 27 Jul 2026, -6.5% 5 Nov 2026; Bentley +14.0% 26 Feb 2026. Sector-wide software days: 3-4 Feb 2026, 1 Jun 2026 (rally), 11 Jun 2026 (ADSK -7.1%, PTC -12.4%, DSY -5.8%, NEM -6.9%) and 4 Sep 2026 (ADSK -8.3%, DSY -6.5%, PTC -6.0%).
+- Notable one-day moves (closes): Dassault -20.8% 11 Feb 2026 (FY25 results, 2026 guidance 3-5%; "nearly 20%" also reported by [Moby/Yahoo](https://finance.yahoo.com/news/dassault-syst-mes-tumbles-ai-172007958.html); [Dassault FY25 release](https://www.3ds.com/newsroom/press-releases/dassault-systemes-q4-revenue-growth-1-solid-operating-margin-and-eps-expansion-initiating-2026-revenue-guidance-3-5-growth)); -13.0% 23 Oct 2025 (2025 revenue outlook cut, [The Star/Reuters](https://www.thestar.com.my/tech/tech-news/2025/10/23/software-firm-dassault-posts-stable-quarterly-revenue-below-estimates)); -10.4% 16 Feb 2026 (cause not found); +6.3% 29 Oct 2026 (first target raise in ~2 years, [Euronext](https://live.euronext.com/en/financial-news/dassault-systemes-raises-2026-targets)). PTC +33.5% 5 Oct 2026 (Schneider bid) and +17.6% 9 Jul 2025. Autodesk Q2 FY27 (27 Aug 2026): +6.2% in session, ~-5% after hours on trimmed FCF outlook ([SiliconANGLE](https://siliconangle.com/2026/08/27/autodesk-shares-fall-despite-q2-beat-as-cash-flow-guidance-narrows/)). Nemetschek -13.7% 30 Jul 2026 (Q2 results day, [MarketBeat Q2 call](https://www.marketbeat.com/instant-alerts/nemetschek-q2-earnings-call-highlights-2026-07-30/)), -10.2% 5 Nov 2026 (Q3 EPS EUR 0.40, ~6c below estimates, [goldesel](https://goldesel.de/aktien/news/nemetschek-aktie-hcss-treibt-umsatz-gewinn-je-aktie-verfehlt-erwartungen)). Hexagon +12.2% 29 Jul 2026 (adj.). Siemens -9.3% 13 Nov 2025 (FY25 results day), +10.2% 8 Apr 2026 (market-wide rally; ASML +8.9%). ASML (AMS) -11.4% 16 Jul 2025, -8.5% 27 Jul 2026, -6.5% 5 Nov 2026 (headline "STOXX 600 slips ... as ASML, Infineon tumble", IBTimes, ~6 Nov, listed on [stockanalysis](https://stockanalysis.com/stocks/asml/)). Bentley +14.0% 26 Feb 2026 (cause not verified; Q4 2025 results timing likely). EDA peers: Cadence/Synopsys ~-9% on 17 Jul 2026 after Moonshot's "Kimi K3" AI chip-design demo ([ts2.tech](https://ts2.tech/en/synopsys-nasdaqsnps-stock-sinks-as-kimi-chip-demo-tests-the-eda-moat/)). Same-day software moves (causes not verified): 3-4 Feb 2026, 1 Jun 2026 (+7-9%), 11 Jun 2026 (ADSK -7.1%, PTC -12.4%, DSY -5.8%, NEM -6.9%), 4 Sep 2026 (ADSK -8.3%, DSY -6.5%, PTC -6.0%).
 
 ### Inferences
-- The design-software de-rating is sector-wide (synchronised falls on the same days), not company-specific.
+- The design-software de-rating is sector-wide (synchronised moves), not company-specific; Dassault's two guidance events added a company-specific leg.
 
 ### Gaps
 - No free 10-year EV/EBITDA history; 10-year P/E unusable for Siemens, Hexagon and pre-2021 Autodesk/PTC.
-- Causes of Hexagon 13 May 2026, the sector days and several other moves not yet verified.
 
-## 3. Peer comparison (same snapshot method; latest close)
+## 3. Peer comparison (same method; latest close)
 
 ### Takeaway
-EDA peers (Cadence, Synopsys) and chip-equipment peers carry far higher multiples than the PLM/AEC design-software group; Siemens sits in line with automation peers.
+EDA (Synopsys, Cadence) and chip-equipment peers carry far higher sales multiples than PLM/AEC software; Siemens trades in line with automation peers on forward P/E.
 
 ### Cited Findings
-| Peer | Close (date) | Mkt cap | P/E TTM | Fwd P/E | EV/Sales | EV/EBITDA | FCF yld | Div yld |
+| Peer | Close (date) | Mkt cap | P/E | Fwd P/E | EV/Sales | EV/EBITDA | FCF yld | Div yld |
 |---|---|---|---|---|---|---|---|---|
-| Synopsys | USD 462.12 (11 Nov) | USD 88.6bn | 82.0 | 26.3 | 10.2 | 46.1 | 3.1% (2.0% ex-SBC) | 0 |
-| Cadence | USD 329.26 (11 Nov) | USD 90.3bn | 65.5 | 34.9 | 14.9 | 41.3 | 2.0% (1.4% ex-SBC) | 0 |
-| Trimble | USD 56.48 (11 Nov) | USD 12.9bn | n/m | 14.0 | 3.7 | 16.1 | 6.2% | 0 |
-| Procore | USD 77.52 (11 Nov) | USD 11.6bn | loss | 34.8 | 8.0 | n/m | 2.7% | 0 |
-| Zwsoft 688083 | CNY 49.45 (12 Nov) | CNY 8.4bn | 152 | 88 | 6.9 | n/m | 1.5% | 0.7% |
-| Glodon 002410 | CNY 8.35 (12 Nov) | CNY 13.7bn | 37.2 | 25.6 | 1.7 | 24.5 | 6.9% | 2.8% |
-| Empyrean 301269 | CNY 89.92 (12 Nov) | CNY 49.3bn | 625 | 104 | 32.7 | n/m | neg. | 0.2% |
-| Primarius 688206 | CNY 32.91 (12 Nov) | CNY 16.6bn | loss | n/a | 25.4 | n/m | neg. | 0.1% |
-| Zuken 6947 | JPY 5,140 (12 Nov) | JPY 108bn | 16.8 | n/a | 1.5 | 8.9 | 7.3% | 2.9% |
-| Schneider Elec. | EUR 242.50 (11 Nov) | EUR 142.6bn | 30.1 | 20.1 | 3.8 | 18.7 | 4.3% | 1.7% |
-| ABB | CHF 70.70 (11 Nov) | CHF 127.7bn | 30.5 | 19.9 | 4.2 | 21.1 | 3.2% | 1.3% |
-| Rockwell | USD 406.19 (11 Nov) | USD 45.1bn | 32.0 | 27.1 | 5.4 | 24.4 | 3.8% | 1.4% |
-| Emerson | USD 167.06 (11 Nov) | USD 91.7bn | 34.1 | 22.8 | 5.4 | 16.9 | 3.9% | 1.4% |
-| Keyence 6861 | JPY 75,030 (12 Nov) | JPY 18.2tn | 33.5 | 30.5 | 12.3 | 22.3 | 2.6% | 0.9% |
-| Fanuc 6954 | JPY 5,521 (12 Nov) | JPY 5.1tn | 25.6 | 23.8 | 4.7 | 16.5 | 4.9% | 2.6% |
-| Applied Materials | USD 395.08 (11 Nov) | USD 313.5bn | 33.8 | 22.3 | 10.1 | 30.7 | 1.8% | 0.5% |
-| Lam Research | USD 235.88 (11 Nov) | USD 294.6bn | 34.9 | 22.9 | 11.1 | 28.8 | 2.2% | 0.6% |
-| KLA | USD 161.01 (11 Nov) | USD 209.8bn | 39.9 | 25.9 | 14.5 | 32.1 | 1.9% | 0.6% |
-| Tokyo Electron 8035 | JPY 9,304 (12 Nov) | JPY 21.1tn | 29.7 | 20.9 | 7.0 | 22.2 | 2.9% | 2.1% |
-| ASM International | EUR 727.60 (11 Nov) | EUR 35.5bn | 35.6 | 22.7 | 9.2 | 26.6 | 2.3% | 0.5% |
-| Siemens Healthineers | EUR 43.52 (11 Nov) | EUR 48.4bn | 21.9 | 18.5 | 2.6 | 13.9 | 5.1% | 2.3% |
-| Siemens Energy | EUR 132.76 (11 Nov) | EUR 113.6bn | 30.0 | 22.1 | 2.4 | 16.3 | 7.0% | 0.5% |
+| Synopsys | USD 462.12 (11 Nov) | 88.6bn | 82.0 | 26.3 | 10.2 | 46.1 | 3.1% (2.0% ex-SBC) | 0 |
+| Cadence | USD 329.26 (11 Nov) | 90.3bn | 65.5 | 34.9 | 14.9 | 41.3 | 2.0% (1.4%) | 0 |
+| Trimble | USD 56.48 (11 Nov) | 12.9bn | n/m | 14.0 | 3.7 | 16.1 | 6.2% | 0 |
+| Procore | USD 77.52 (11 Nov) | 11.6bn | loss | 34.8 | 8.0 | n/m | 2.7% | 0 |
+| Zwsoft 688083 | CNY 49.45 (12 Nov) | 8.4bn | 152 | 88 | 6.9 | n/m | 1.5% | 0.7% |
+| Glodon 002410 | CNY 8.35 (12 Nov) | 13.7bn | 37.2 | 25.6 | 1.7 | 24.5 | 6.9% | 2.8% |
+| Empyrean 301269 | CNY 89.92 (12 Nov) | 49.3bn | 625 | 104 | 32.7 | n/m | neg. | 0.2% |
+| Primarius 688206 | CNY 32.91 (12 Nov) | 16.6bn | loss | n/a | 25.4 | n/m | neg. | 0.1% |
+| Zuken 6947 | JPY 5,140 (12 Nov) | 108bn | 16.8 | n/a | 1.5 | 8.9 | 7.3% | 2.9% |
+| Schneider | EUR 242.50 (11 Nov) | 142.6bn | 30.1 | 20.1 | 3.8 | 18.7 | 4.3% | 1.7% |
+| ABB | CHF 70.70 (11 Nov) | 127.7bn | 30.5 | 19.9 | 4.2 | 21.1 | 3.2% | 1.3% |
+| Rockwell | USD 406.19 (11 Nov) | 45.1bn | 32.0 | 27.1 | 5.4 | 24.4 | 3.8% | 1.4% |
+| Emerson | USD 167.06 (11 Nov) | 91.7bn | 34.1 | 22.8 | 5.4 | 16.9 | 3.9% | 1.4% |
+| Keyence 6861 | JPY 75,030 (12 Nov) | 18.2tn | 33.5 | 30.5 | 12.3 | 22.3 | 2.6% | 0.9% |
+| Fanuc 6954 | JPY 5,521 (12 Nov) | 5.1tn | 25.6 | 23.8 | 4.7 | 16.5 | 4.9% | 2.6% |
+| Applied Materials | USD 395.08 (11 Nov) | 313.5bn | 33.8 | 22.3 | 10.1 | 30.7 | 1.8% | 0.5% |
+| Lam Research | USD 235.88 (11 Nov) | 294.6bn | 34.9 | 22.9 | 11.1 | 28.8 | 2.2% | 0.6% |
+| KLA | USD 161.01 (11 Nov) | 209.8bn | 39.9 | 25.9 | 14.5 | 32.1 | 1.9% | 0.6% |
+| Tokyo Electron 8035 | JPY 9,304 (12 Nov) | 21.1tn | 29.7 | 20.9 | 7.0 | 22.2 | 2.9% | 2.1% |
+| ASM International | EUR 727.60 (11 Nov) | 35.5bn | 35.6 | 22.7 | 9.2 | 26.6 | 2.3% | 0.5% |
+| Siemens Healthineers | EUR 43.52 (11 Nov) | 48.4bn | 21.9 | 18.5 | 2.6 | 13.9 | 5.1% | 2.3% |
+| Siemens Energy | EUR 132.76 (11 Nov) | 113.6bn | 30.0 | 22.1 | 2.4 | 16.3 | 7.0% | 0.5% |
 
-- Source: stockanalysis.com statistics pages captured 12 Nov 2026 (e.g. [SNPS](https://stockanalysis.com/stocks/snps/statistics/), [CDNS](https://stockanalysis.com/stocks/cdns/statistics/), [TRMB](https://stockanalysis.com/stocks/trmb/statistics/), [SU](https://stockanalysis.com/quote/epa/SU/statistics/), [ABBN](https://stockanalysis.com/quote/swx/ABBN/statistics/), [8035](https://stockanalysis.com/quote/tyo/8035/statistics/), [688083](https://stockanalysis.com/quote/sha/688083/statistics/), [SHL](https://stockanalysis.com/quote/etr/SHL/statistics/)); re-based to the latest close by me. Synopsys/Cadence SBC USD 950m/543m TTM ([SNPS cash flow](https://stockanalysis.com/stocks/snps/financials/cash-flow-statement/?p=trailing)).
-- Deal comps: Schneider/PTC at USD 23.7bn EV = 21x 2027E adj. EBITA (13x with synergies) ([PTC 8-K exhibit](https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm)); Cadence bought Hexagon D&E (~EUR 265m 2024 revenue) for EUR 2.7bn, ~10x sales (own calc on reported figures; [Pulse 2.0 via cadence digest](https://pulse2.com/)).
+- Source: stockanalysis statistics pages captured 12 Nov 2026 (e.g. [SNPS](https://stockanalysis.com/stocks/snps/statistics/), [CDNS](https://stockanalysis.com/stocks/cdns/statistics/), [TRMB](https://stockanalysis.com/stocks/trmb/statistics/), [SU](https://stockanalysis.com/quote/epa/SU/statistics/), [ABBN](https://stockanalysis.com/quote/swx/ABBN/statistics/), [8035](https://stockanalysis.com/quote/tyo/8035/statistics/), [688083](https://stockanalysis.com/quote/sha/688083/statistics/), [SHL](https://stockanalysis.com/quote/etr/SHL/statistics/)), re-based to latest close by me; SBC SNPS USD 950m, CDNS 543m TTM.
+- Deal comps: Schneider/PTC USD 23.7bn EV = 21x 2027E adj. EBITA (13x with synergies) ([PTC 8-K exhibit](https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm)); Cadence paid ~EUR 2.7bn for Hexagon D&E (~EUR 265m 2024 revenue), ~10x sales (own calc; per cadence/midsize digests of Hexagon and Cadence releases).
 
 ### Inferences
-- The gap between EDA (Synopsys/Cadence ~10-15x sales) and PLM/AEC software (~5-9x) matters for valuing Siemens' software, which mixes both.
+- The EDA (~10-15x sales) vs PLM/AEC (~5-9x) gap matters for valuing Siemens' mixed software portfolio.
 
 ### Gaps
-- Japanese CAE (Cybernet Systems) page unavailable; Ansys and Altair no longer listed (acquired).
+- Cybernet Systems (Japan CAE) page unavailable; Ansys and Altair delisted after acquisition.
 
 ## 4. What the price assumes: consensus and reverse DCF
 
 ### Takeaway
-At an 8% discount rate and 3% terminal growth the current prices imply ~2-3%/yr FCF growth for Dassault, Autodesk, Nemetschek and Siemens' core - well below consensus revenue growth - versus ~8-11% for Bentley and ~5-11% for ASML.
+At an 8% discount rate and 3% terminal growth, prices imply ~2-3%/yr FCF growth for Dassault, Autodesk, Nemetschek and Siemens' core (below consensus revenue growth), ~8-11% for Bentley, ~5-11% for ASML.
 
 ### Cited Findings
-- Siemens' own analyst consensus (pre-Q4, as of 29 Oct 2026, ~20 brokers): FY27 revenue EUR 90.4bn incl. Healthineers / EUR 65.7bn ex-SHL; Industrial Business margin 17.1% (17.75% ex-SHL); DI revenue EUR 21.3bn, DI profit EUR 4.37bn (20.5%); EPS pre-PPA EUR 13.34 incl. SHL / EUR 10.68 ex-SHL; FCF EUR 11.6bn / EUR 9.06bn ex-SHL - [Siemens consensus workbook](https://assets.new.siemens.com/siemens/assets/api/uuid:5fd64504-5d0c-443d-a6e2-ee0a8bf0ae7b/SiemensAG-PreQ4-FY26-Analyst-Consensus.xlsx). Company FY27 guidance: comp. revenue +9-11%, EPS pre-PPA EUR 10.20-10.80 (ex-SHL; FY26 comparable EUR 9.27); DI +8-12%, margin 20-22%; mid-term targets raised to 7-11% revenue growth and double-digit EPS growth - [earnings release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf).
-- stockanalysis consensus (S&P Global; normalized EPS), this FY / next FY: Dassault revenue EUR 6.45bn (+3.4%) / 6.93bn (+7.5%), EPS 1.35 / 1.45 ([forecast](https://stockanalysis.com/quote/epa/DSY/forecast/), updated 29 Oct 2026); Hexagon EUR 4.25bn / 5.01bn, adj. EPS 0.32 / 0.35 ([forecast](https://stockanalysis.com/quote/sto/HEXA.B/forecast/)); ASML 2026 EUR 44.5bn (+36%) / 2027 57.3bn (+29%), EPS 41.33 / 56.22 ([forecast](https://stockanalysis.com/stocks/asml/forecast/), updated 16 Oct); Autodesk FY27 USD 8.32bn (+15.5%) / FY28 9.24bn (+11.0%), EPS 12.61 / 14.20 ([forecast](https://stockanalysis.com/stocks/adsk/forecast/)); Bentley 2026 USD 1.69bn (+12.3%) / 2027 1.84bn (+9.0%), EPS 1.40 / 1.58; PTC FY27 USD 2.90bn (+6.2%) / FY28 3.14bn (+8.1%), EPS 9.02 / 10.02; Nemetschek 2026 EUR 1.42bn (+19.3%) / 2027 1.73bn (+21.5%), EPS 2.26 / 2.77 (updated 6 Nov); Octave 2026 USD 1.65bn / 2027 1.73bn, EPS 1.44 / 1.50. Third year locked on that site.
-- Nasdaq consensus EPS (GAAP-like basis, retrieved 12 Nov 2026): ASML USD 46.54 (2026) / 62.54 (2027) / 89.18 (2028, 2 est.); Autodesk 9.70 (FY27) / 10.93 (FY28) / 13.29 (FY29, 4 est.); Bentley 1.20 / 1.37 / 1.58 (2028, 1 est.); PTC 7.12 (FY27) / 8.18 (FY28) - [Nasdaq earnings forecast API](https://api.nasdaq.com/api/analyst/ADSK/earnings-forecast).
-- Company guidance: Dassault FY26 revenue EUR 6.399-6.459bn (+4-5% cc), non-IFRS op. margin 32.5-32.7%, EPS EUR 1.35-1.36 ([Q3 release](https://www.3ds.com/newsroom/press-releases/dassault-systemes-strong-q3-performance-improved-fy26-objectives-and-step-change-life-sciences.md)); Autodesk FY27 revenue USD 8.295-8.345bn, billings 8.575-8.65bn incl. MaintainX ([SiliconANGLE](https://siliconangle.com/2026/08/27/autodesk-shares-fall-despite-q2-beat-as-cash-flow-guidance-narrows/)); Bentley 2026 cc ARR growth 12.5-13.5% ex-Cohesive ([8-K](https://www.sec.gov/Archives/edgar/data/0001031308/000103130826000032/a26q3exhibit991.htm)); Nemetschek 2026 organic cc growth 14-15%, organic EBITDA margin 32-33%, HCSS +~600bp growth / -150bp margin ([MarketBeat](https://www.marketbeat.com/instant-alerts/transcript-nemetschek-q3-earnings-call-highlights-2026-11-05/)); Hexagon 2026-30 targets organic 4-6%, EBITAC margin 24-26% ([Hexagon IR](https://investors.hexagon.com/en)); ASML 2026 sales EUR 44-45bn ([Webull](https://www.webull.com/news/15745299311371264)); PTC: Schneider expects PTC revenue/ARR ~+10%/yr to 2029, ~40% adj. EBITA margin ([PTC 8-K](https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm)).
-- Reverse DCF (own calc): solve constant 10-year FCF growth g so that PV = EV; terminal growth 3%; discount 7% / 8% / 9%; FCF base = TTM (FY for PTC):
+- Siemens' own consensus (pre-Q4, 29 Oct 2026, ~20 brokers): FY27 revenue EUR 90.4bn incl. Healthineers / 65.7bn ex-SHL; Industrial Business margin 17.1% (17.75% ex-SHL); DI revenue 21.3bn, profit 4.37bn (20.5%); EPS pre-PPA 13.34 incl. SHL / 10.68 ex-SHL; FCF 11.6bn / 9.06bn ex-SHL ([consensus workbook](https://assets.new.siemens.com/siemens/assets/api/uuid:5fd64504-5d0c-443d-a6e2-ee0a8bf0ae7b/SiemensAG-PreQ4-FY26-Analyst-Consensus.xlsx)). Guidance FY27: comp. revenue +9-11%, EPS pre-PPA EUR 10.20-10.80 ex-SHL (FY26 comparable 9.27); DI +8-12%, margin 20-22%; mid-term raised to 7-11% growth and double-digit EPS growth ([release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf)).
+- stockanalysis consensus (S&P Global; normalized EPS), this FY / next FY: Dassault revenue EUR 6.45bn (+3.4%) / 6.93bn (+7.5%), EPS 1.35 / 1.45 ([forecast](https://stockanalysis.com/quote/epa/DSY/forecast/), 29 Oct); Hexagon 4.25bn / 5.01bn, adj. EPS 0.32 / 0.35 ([forecast](https://stockanalysis.com/quote/sto/HEXA.B/forecast/)); ASML 2026 44.5bn (+36%) / 2027 57.3bn (+29%), EPS 41.33 / 56.22 ([forecast](https://stockanalysis.com/stocks/asml/forecast/), 16 Oct); Autodesk FY27 USD 8.32bn (+15.5%) / FY28 9.24bn (+11.0%), EPS 12.61 / 14.20 ([forecast](https://stockanalysis.com/stocks/adsk/forecast/)); Bentley 1.69bn (+12.3%) / 1.84bn (+9.0%), EPS 1.40 / 1.58; PTC FY27 2.90bn (+6.2%) / FY28 3.14bn (+8.1%), EPS 9.02 / 10.02; Nemetschek 1.42bn (+19.3%) / 1.73bn (+21.5%), EPS 2.26 / 2.77 (6 Nov); Octave 1.65bn / 1.73bn, EPS 1.44 / 1.50. Third year paywalled.
+- Nasdaq consensus EPS (basis not stated; looks GAAP-like by my comparison, e.g. Autodesk FY27 9.70 vs 12.61 normalized; retrieved 12 Nov): ASML USD 46.54 / 62.54 / 89.18 (2026-28; 2028 = 2 estimates); Autodesk 9.70 / 10.93 / 13.29 (FY27-29); Bentley 1.20 / 1.37 / 1.58 (2026-28); PTC 7.12 / 8.18 (FY27-28) ([Nasdaq API](https://api.nasdaq.com/api/analyst/ADSK/earnings-forecast)).
+- Guidance: Dassault FY26 revenue EUR 6.399-6.459bn, non-IFRS op. margin 32.5-32.7%, EPS 1.35-1.36 ([Q3 release](https://www.3ds.com/newsroom/press-releases/dassault-systemes-strong-q3-performance-improved-fy26-objectives-and-step-change-life-sciences.md)); Autodesk FY27 revenue USD 8.295-8.345bn incl. MaintainX ([SiliconANGLE](https://siliconangle.com/2026/08/27/autodesk-shares-fall-despite-q2-beat-as-cash-flow-guidance-narrows/)), FY26 non-GAAP op. margin 38% ([10-K](https://www.sec.gov/Archives/edgar/data/769397/000076939726000015/adsk-20260131.htm)); Bentley 2026 cc ARR +12.5-13.5% ([8-K](https://www.sec.gov/Archives/edgar/data/0001031308/000103130826000032/a26q3exhibit991.htm)); Nemetschek organic cc +14-15%, organic EBITDA margin 32-33%, HCSS +~600bp growth / -150bp margin ([ad hoc 28 Jul 2026](https://www.gettex.de/en/news-overview/newsdetail/eqs-adhoc-nemetschek-se-expands-outlook-for-financial-year-2026-following-the-acquisition-of-hcss-and-fully-confirms-organic-outlook/)); Hexagon 2026-30 organic 4-6%, EBITAC 24-26% ([IR](https://investors.hexagon.com/en)); ASML 2026 EUR 44-45bn, GM ~56% ([eeNews](https://www.eenewseurope.com/en/asml-hits-record-e11-7-billion-sales-as-ai-chip-demand-surges/)); PTC: Schneider expects ~10%/yr revenue/ARR growth to 2029, ~40% adj. EBITA margin ([8-K](https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm)).
+- Reverse DCF (own calc; inputs from Section 1 sources, e.g. [stockanalysis](https://stockanalysis.com/stocks/adsk/statistics/), [Siemens consensus](https://assets.new.siemens.com/siemens/assets/api/uuid:5fd64504-5d0c-443d-a6e2-ee0a8bf0ae7b/SiemensAG-PreQ4-FY26-Analyst-Consensus.xlsx)): constant 10-year FCF growth g solving PV = EV; terminal growth 3%; discount 7/8/9%; base = TTM FCF (PTC FY26; Siemens = FY27e consensus FCF ex-SHL):
 
-| Case | EV (bn) | FCF base | FCF/EV | g @7% | g @8% | g @9% |
+| Case | EV (bn) | FCF base | FCF/EV | g@7% | g@8% | g@9% |
 |---|---|---|---|---|---|---|
-| Siemens core (ex SHL/SE stakes; FY27e FCF ex-SHL) | EUR 163.6 | 9.06 | 5.5% | -1.3% | 1.3% | 3.7% |
-| Dassault (ex-SBC) | EUR 32.5 | 1.72 (1.55) | 5.3% (4.8%) | -0.8% (0.5%) | 1.9% (3.2%) | 4.2% (5.6%) |
+| Siemens core ex stakes | EUR 163.6 | 9.06 | 5.5% | -1.3% | 1.3% | 3.7% |
+| Dassault (ex-SBC) | EUR 32.5 | 1.72 (1.55) | 5.3% | -0.8% (0.5%) | 1.9% (3.2%) | 4.2% (5.6%) |
 | Hexagon | EUR 27.1 | 1.30 | 4.8% | 0.4% | 3.1% | 5.5% |
-| ASML on TTM FCF / on TTM net income | EUR 522.5 | 21.2 / 13.8 | 4.0% / 2.6% | 2.5% / 7.7% | 5.3% / 10.7% | 7.8% / 13.4% |
-| Autodesk (ex-SBC) | USD 53.7 | 2.84 (2.13) | 5.3% (4.0%) | -0.7% (2.7%) | 1.9% (5.5%) | 4.3% (8.0%) |
-| Bentley (ex-SBC) | USD 14.8 | 0.49 (0.40) | 3.3% (2.7%) | 5.0% (7.6%) | 7.9% (10.6%) | 10.4% (13.2%) |
-| PTC at 196.14 (ex-SBC) | USD 22.9 | 0.87 (0.62) | 3.8% (2.7%) | 3.2% (7.4%) | 6.1% (10.4%) | 8.5% (13.0%) |
+| ASML: TTM FCF / net income | EUR 522.5 | 21.2 / 13.8 | 4.0% / 2.6% | 2.5% / 7.7% | 5.3% / 10.7% | 7.8% / 13.4% |
+| Autodesk (ex-SBC) | USD 53.7 | 2.84 (2.13) | 5.3% | -0.7% (2.7%) | 1.9% (5.5%) | 4.3% (8.0%) |
+| Bentley (ex-SBC) | USD 14.8 | 0.49 (0.40) | 3.3% | 5.0% (7.6%) | 7.9% (10.6%) | 10.4% (13.2%) |
+| PTC at 196.14 (ex-SBC) | USD 22.9 | 0.87 (0.62) | 3.8% | 3.2% (7.4%) | 6.1% (10.4%) | 8.5% (13.0%) |
 | Nemetschek | EUR 8.7 | 0.41 | 4.7% | 0.7% | 3.4% | 5.8% |
 | Octave | USD 6.1 | 0.45 | 7.3% | -4.7% | -2.2% | 0.0% |
 
 ### Inferences
-- With margins held flat, implied FCF growth approximates implied revenue growth. For Dassault, Autodesk and Nemetschek the market prices in roughly a third or less of consensus near-term growth (or a sustained margin/terminal-value haircut, e.g. from seat erosion).
-- ASML's TTM FCF is boosted by customer prepayments; on net income the price assumes ~11%/yr for a decade.
+- With margins flat, implied FCF growth approximates implied revenue growth: Dassault, Autodesk and Nemetschek are priced for a third or less of consensus growth, or for a lower terminal value (consistent with a seat-erosion discount). ASML's TTM FCF includes customer prepayments; on net income the price assumes ~11%/yr for a decade.
 
 ### Gaps
-- No free consensus beyond two years for European names; consensus operating margins beyond FY+1 unavailable except Siemens.
+- No free three-year consensus or consensus margins for European names except Siemens.
 
-## 5. Company-specific: Siemens SOTP and Healthineers, ASML software, Hexagon after D&E and Octave
+## 5. Company-specific: Siemens SOTP and Healthineers; ASML software; Hexagon after D&E and Octave
 
 ### Takeaway
-DI Software is plausibly worth EUR 36-65bn (17-30% of Siemens' market cap) under stated peer-multiple assumptions; at the current price the market implicitly values it at the low end unless the other units are valued below peers.
+DI Software is plausibly worth EUR 36-65bn (17-30% of Siemens' market cap) at peer multiples; if the other units are valued at mid peer multiples, today's price leaves only ~EUR 17bn for software.
 
 ### Cited Findings
-- Siemens DI FY26: orders EUR 20.9bn, revenue EUR 19.7bn (+9% comp.), profit EUR 3.75bn (19.1%); Q4 software revenue EUR 2.14bn (+12% comp., led by EDA; PLM and EDA large contracts); FY26 software revenue EUR 7.2bn (+13% comp.), software ARR EUR 6.1bn (+12%); digital business EUR 10.9bn (+16%); Q4 integration costs for Altair and Dotmatics EUR 36m (-0.6pt DI margin); software-only margin not disclosed - [earnings release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf), [presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf). SI FY26 revenue EUR 25.1bn, profit EUR 4.90bn (19.5%); Mobility EUR 13.0bn, EUR 1.11bn (8.5%); Healthineers EUR 23.6bn, EUR 3.53bn (15.0%) (same source).
-- Healthineers: Siemens plans to transfer 34.1% of Healthineers to its shareholders (1 SHL share per 2 Siemens shares) via a direct spin-off in FY27, deconsolidate it (discontinued operations from Q1 FY27) and account for the remaining stake at equity; the presentation cites a "minority shareholding of ~33%" and "repayment of ~EUR 12bn SHL debt" - [earnings release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf), [presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf). Spin-off expected to take effect late spring 2027 (CFO on call, per [Investing.com transcript](https://in.investing.com/news/stock-market-news/earnings-call-transcript-siemens-posts-record-orders-in-q4-2026-as-growth-quickens-93CH-5698664)). Siemens Energy stake 4.9% after selling 0.7% (release).
-- SOTP sketch (own calc; EUR bn; 11 Nov close; inputs: 768m Siemens shares; SHL 1.11bn shares x EUR 43.52 x 67%; SE 855m x EUR 132.76 x 4.9%; SFS equity assumed 4.5; industrial net debt 4.8; pensions 0.6; SHL loan repayment 12.0 treated as Siemens asset): market cap 212.7 - SHL stake 32.4 (EUR 42/share) - SE stake 5.6 - SFS 4.5 + net debt 4.8 + pensions 0.6 - SHL loan 12.0 = **EUR 163.7bn market-implied EV of DI+SI+Mobility net of corporate costs** (EUR 168bn at 12 Nov intraday EUR 283). That is 15.2x FY27e consensus segment profit (EUR 11.22bn) less corporate items (EUR -0.47bn).
-- Assumed multiples: DI software 5x / 7x / 9x FY26 revenue (peer range: DSY 5.2x, ADSK 6.9x, PTC deal ~8x FY27e, SNPS 10.2x, CDNS 14.9x); DI automation (EUR 12.5bn revenue) 2.5x / 3.0x / 3.5x sales; SI 16x / 18x / 20x FY27e profit; Mobility 10x / 12x / 14x; corporate costs -6. Result: EUR 163bn / 197bn / 232bn; **DI software 36 / 50 / 65bn = 17% / 24% / 30% of market cap (EUR 47 / 66 / 84 per share)**. If automation, SI and Mobility sit at the mid multiples, the residual for software is only EUR 17bn (~2.3x sales).
-- Siemens' pricing model: "existing user-based, named user subscription foundation", AI fees on top, a planned "agentic surcharge" ([Investing.com transcript](https://in.investing.com/news/stock-market-news/earnings-call-transcript-siemens-posts-record-orders-in-q4-2026-as-growth-quickens-93CH-5698664)).
-- ASML: software (computational lithography) not reported separately; sales are reported by system technology and installed base; FY26 guidance EUR 44-45bn, Q3 sales EUR 11.7bn, gross margin 57.5% ([Webull](https://www.webull.com/news/15745299311371264)). US BIS (Dec 2024) created ECCN 3D993 covering computational-lithography software for DUV (OPC, inverse lithography) - [Federal Register 2024-28270](https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28270.htm). China share of system sales fell from 41% (2024) to 33% (2025); ~20% expected in 2026 (chip-manufacturing digest summary of [Caixin](https://www.caixinglobal.com/)).
-- Hexagon: sale of Design & Engineering (MSC Software: Nastran, Adams etc.; ~EUR 265m 2024 revenue) to Cadence for ~EUR 2.7bn closed 23 Feb 2026 ([midsize digest summary of Hexagon/Cadence releases](https://hexagon.com/company/newsroom/press-releases/2026/hexagon-completes-sale-of-design--engineering-business)). Remaining simulation-adjacent assets: Rocscience (geotechnical simulation) agreed 9 Oct 2026; Waygate Technologies (inspection/NDT) completed 2 Nov 2026 ([Hexagon IR](https://investors.hexagon.com/en)). Recurring revenue 28%, software and services 44% of revenue ([Hexagon IR targets](https://investors.hexagon.com/en)).
-- Octave: Hexagon distributed 1 Octave share per 10 Hexagon shares (record date 22 May 2026); SDRs on Nasdaq Stockholm (OCTV SDB) from 25 May, class B shares on Nasdaq New York (OCTV) from 28 May; asset-lifecycle software, ~7,200 staff; USD 481.2m trademarks under review ([Inderes/Hexagon release 27 Apr 2026](https://www.inderes.se/en/releases/hexagon-distribution-and-listing-of-octave-intelligence-plc)). Valuation: USD 5.70bn mkt cap, EV/EBITDA 12.7x, FCF yield 7.8%, TTM net loss USD -1.81bn ([stockanalysis](https://stockanalysis.com/stocks/octv/statistics/)).
+- Siemens DI FY26: orders EUR 20.9bn, revenue 19.7bn (+9% comp.), profit 3.75bn (19.1%); Q4 software revenue 2.14bn (+12% comp., led by EDA; large PLM/EDA contracts); FY26 software revenue 7.2bn (+13% comp.), software ARR 6.1bn (+12%); digital business 10.9bn; Altair/Dotmatics integration costs EUR 36m in Q4; software margin not disclosed. SI revenue 25.1bn, profit 4.90bn; Mobility 13.0bn, 1.11bn; Healthineers 23.6bn, 3.53bn ([release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf), [presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf)).
+- Healthineers: transfer of 34.1% of SHL to Siemens shareholders (1 SHL per 2 Siemens shares) by direct spin-off in FY27; deconsolidation; discontinued operations from Q1 FY27; remaining stake at equity (~33% minority referenced); "repayment of ~EUR 12bn SHL debt"; Siemens and SHL AGMs to vote; Siemens Q1 results and AGM 11 Feb 2027 (same sources); effective late spring 2027 per CFO ([Investing.com transcript](https://in.investing.com/news/stock-market-news/earnings-call-transcript-siemens-posts-record-orders-in-q4-2026-as-growth-quickens-93CH-5698664)). Siemens Energy stake 4.9% after a 0.7% sale (release).
+- SOTP sketch (own calc, EUR bn, 11 Nov close; stake prices from [SHL](https://stockanalysis.com/quote/etr/SHL/statistics/) and [ENR](https://stockanalysis.com/quote/etr/ENR/statistics/) pages; inputs: 768m Siemens shares; SHL 1.11bn shares x 43.52 x 67%; SE 855m x 132.76 x 4.9%; SFS equity assumed 4.5; industrial net debt 4.8; pensions 0.6; SHL loan 12.0 treated as Siemens asset): 212.7 - 32.4 (SHL, EUR 42/share) - 5.6 (SE) - 4.5 (SFS) + 4.8 + 0.6 - 12.0 = **163.7 = market-implied EV of DI+SI+Mobility net of corporate costs** (168 at EUR 283 intraday); 15.2x FY27e consensus segment profit (11.22) less corporate items (-0.47).
+- Assumptions (low/mid/high; peer multiples from Section 3, e.g. [CDNS](https://stockanalysis.com/stocks/cdns/statistics/)): DI software 5/7/9x FY26 revenue (peers: DSY 5.2x, ADSK 6.9x, PTC deal ~8x FY27e, SNPS 10.2x, CDNS 14.9x); DI automation (12.5bn revenue) 2.5/3.0/3.5x sales; SI 16/18/20x FY27e profit; Mobility 10/12/14x; corporate -6. Totals 163 / 197 / 232; **software 36 / 50 / 65 = 17% / 24% / 30% of market cap (EUR 47 / 66 / 84 per share)**; residual for software with others at mid multiples: 17 (~2.3x sales).
+- ASML: computational lithography not reported separately; Q3 2026 sales EUR 11.7bn (installed base 3.3bn), GM 57.5%, net income 5.0bn; Q4 guide 14.2-15.2bn, GM ~57%; buybacks ~4.1bn under the 2026-28 programme; CEO: planned supply for 2027 and 2028 "will not fully meet the demand" ([eeNews](https://www.eenewseurope.com/en/asml-hits-record-e11-7-billion-sales-as-ai-chip-demand-surges/)). US BIS ECCN 3D993 (Dec 2024) covers computational-lithography software for DUV ([Federal Register](https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28270.htm)). China share of system sales 41% (2024) -> 33% (2025), ~20% expected 2026 (chip-manufacturing digest, citing [Caixin](https://www.caixinglobal.com/)).
+- Hexagon: D&E (MSC Nastran, Adams etc.; ~EUR 265m 2024 revenue) sold to Cadence for ~EUR 2.7bn, closed 23 Feb 2026 (midsize-vendors digest of [Hexagon release](https://hexagon.com/company/newsroom/press-releases/2026/hexagon-completes-sale-of-design--engineering-business)). Q3 2026: sales EUR 1,049m, organic +13%, EBITAC margin 25.3%, adj. EPS 8.2c, recurring revenue 276.5m (~26% of sales, own calc) ([Q3 report](https://www.inderes.se/en/releases/hexagon-interim-report-1-january-30-september-2026)); Q1 2026 organic +8% ([Q1 report](https://www.inderes.se/en/releases/hexagon-interim-report-1-january-31-march-2026)). Simulation-adjacent additions: Rocscience (geotechnical simulation) agreed 9 Oct 2026; Waygate (inspection) closed 2 Nov 2026 ([IR](https://investors.hexagon.com/en)).
+- Octave: 1 Octave share per 10 Hexagon shares (record 22 May 2026); SDRs on Nasdaq Stockholm (OCTV SDB) from 25 May; class B on Nasdaq New York (OCTV) from 28 May; asset-lifecycle software (design, build, operate, protect), ~7,200 staff; trademarks of USD 481.2m under review ([27 Apr notice](https://www.inderes.se/en/releases/hexagon-distribution-and-listing-of-octave-intelligence-plc); [25 May notice](https://www.inderes.fi/en/releases/hexagon-octave-intelligence-plc-listed-for-trading-on-nasdaq-stockholm)); Q1 2026 Octave sales EUR 327.2m, adj. margin 25.2% (Q1 report).
 
 ### Inferences
-- Healthineers (~15%) plus Siemens Energy (~3%) explain ~18% of Siemens' market cap; the spin-off removes ~half of the SHL value from the share price in spring 2027 (ex-date effect, not a value loss).
-- At ~10x sales Cadence paid a full price for Hexagon's main CAE asset; what Hexagon keeps in simulation (CAM/machine simulation, Rocscience) is small relative to a EUR 27bn EV.
+- Healthineers (~15%) and Siemens Energy (~3%) explain ~18% of Siemens' value; the spin moves ~half of the SHL value out of the share price in spring 2027 (an ex-entitlement drop, not a value loss).
+- Cadence paid ~10x sales for Hexagon's main CAE asset; Hexagon's remaining simulation exposure (machine/CAM simulation, Rocscience) is small against a EUR 27bn EV; Octave is asset-lifecycle software, not physics simulation.
 
 ### Gaps
-- DI software margin, EDA/PLM/simulation split and Altair contribution not disclosed. Rocscience and Waygate prices, and Hexagon post-deal net debt, not verified.
+- DI software margin and EDA/PLM/simulation split undisclosed; Rocscience and Waygate prices and post-deal net debt not verified; Octave Q3 results (12 Nov) not reviewed.
 
-## 6-11: to be completed in v2 (cycle position, events, seat exposure, AI scenarios, entry conditions, access).
+## 6. Cycle position and past downturns
 
-## Could not verify (running list)
-- Causes of several one-day moves (Hexagon 13 May 2026; sector days 3-4 Feb, 1 and 11 Jun, 4 Sep 2026; ASML 5 Nov 2026; Siemens 4 Feb 2026).
-- Forward EV/EBITDA consensus; third-year consensus for European names.
+### Takeaway
+Siemens and ASML are in cyclical upswings at record order levels; the design-software names are in a valuation down-cycle rather than a revenue down-cycle.
 
-## Dated source list
-- See inline links; all accessed 12 Nov 2026.
+### Cited Findings
+- Siemens: record orders (book-to-bill 1.30, backlog EUR 143bn); DI comparable revenue -4% in FY25 (destocking), +9% FY26, +8-12% guided FY27; Q4 automation orders +16%, US +61% ([release](https://assets.new.siemens.com/siemens/assets/api/uuid:11b1a70b-f540-45bb-824f-0b3fbb927e1b/dHQCOPR202611097494EN.pdf), [consensus workbook](https://assets.new.siemens.com/siemens/assets/api/uuid:5fd64504-5d0c-443d-a6e2-ee0a8bf0ae7b/SiemensAG-PreQ4-FY26-Analyst-Consensus.xlsx), [presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf)).
+- ASML: 2026 sales +36% guided; CEO sees 2027-28 supply short of demand ([eeNews](https://www.eenewseurope.com/en/asml-hits-record-e11-7-billion-sales-as-ai-chip-demand-surges/)); China share falling (Section 5).
+- Dassault: growth trough at +4% (2025) and +4-5% (2026); Life Sciences -2% cc YTD 2026, Americas -3% in Q3; Asia +12% ([Q3 release via Yahoo](https://finance.yahoo.com/healthcare/articles/dassault-syst-mes-strong-q3-055900413.html)).
+- Bentley ARR growth accelerated 11.5% -> 12% -> 13% (cc) through 2026 ([Earnings Whispers](https://www.earningswhispers.com/article/BSY/r1958)); Nemetschek organic 12.5-13.7% in Q3 ([MarketBeat](https://www.marketbeat.com/instant-alerts/transcript-nemetschek-q3-earnings-call-highlights-2026-11-05/)); Hexagon organic +8% (Q1) -> +13% (Q3); PTC ARR +8% (+9.7% cc).
+- Past downturns, annual revenue in USD (FX-affected), [companiesmarketcap revenue pages](https://companiesmarketcap.com/asml/revenue/): ASML 2009 -49%, 2001 -14%, 2003 -17%, 2024 +1.5%; Autodesk FY2010 -26%, FY2002 -13%; PTC 2009 -11%, 2002 -21%; Dassault 2009 -11%; Siemens 2009 -10%; Nemetschek 2009-10 roughly flat; Bentley no decline 2020-25.
+
+### Inferences
+- History says ASML (and Siemens automation) carry the deepest cyclical revenue risk; seat-based design software fell 10-26% in 2009 but recurring models (93-97% recurring today) should damp a repeat, shifting the risk to price/seat counts rather than licence timing.
+
+### Gaps
+- Segment-level downturn data (Siemens DI 2009, Dassault product lines) not retrieved.
+
+## 7. Near-term events (next 6-12 months)
+
+### Takeaway
+The densest catalysts: Dassault CMD (17 Nov), Autodesk Q3 (24 Nov), Siemens AGM/Q1 and spin vote (11 Feb 2027), Dassault 2027 guidance (3 Feb 2027), PTC deal approvals.
+
+### Cited Findings
+- Siemens: roadshows 13-26 Nov 2026; Q1 FY27 and AGM 11 Feb 2027; SHL spin effective late spring 2027 "assuming no shareholder proceedings" ([presentation](https://assets.new.siemens.com/siemens/assets/api/uuid:64b5e0a6-c95f-4336-ad18-74aa6a4553ab/2026-q4-presentation-en.pdf)); buyback EUR 1.7bn executed since July 2026.
+- Dassault: Capital Markets Day 17 Nov 2026; Q4/FY26 results 3 Feb 2027 ([Q3 release via Yahoo](https://finance.yahoo.com/healthcare/articles/dassault-syst-mes-strong-q3-055900413.html)); 2027 first year of meaningful 3D UNIV+RSES revenue (management, [Investing.com](https://www.investing.com/news/transcripts/earnings-call-transcript-dassault-systemes-beats-q3-2026-estimates-shares-fall-93CH-4978361)).
+- Autodesk Q3 FY27 results 24 Nov 2026 after close ([stockanalysis](https://stockanalysis.com/stocks/adsk/statistics/)); new transaction model expected to lift FY27 revenue growth, be neutral to operating profit/FCF dollars and lower operating margin ([10-K](https://www.sec.gov/Archives/edgar/data/769397/000076939726000015/adsk-20260131.htm)).
+- PTC: shareholder vote and regulatory approvals pending; close expected by Q3 2027 ([8-K](https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm)).
+- Octave Q3 results 12 Nov 2026 pre-US open ([stockanalysis](https://stockanalysis.com/stocks/octv/statistics/)); free SDR-to-share conversion ends six months after 25 May 2026 ([notice](https://www.inderes.fi/en/releases/hexagon-octave-intelligence-plc-listed-for-trading-on-nasdaq-stockholm)).
+- Nemetschek: 2027 described as "another major transition year" for subscriptions; HCSS EPS-neutral 2027, accretive 2028 ([MarketBeat](https://www.marketbeat.com/instant-alerts/transcript-nemetschek-q3-earnings-call-highlights-2026-11-05/)).
+- Hexagon: Rocscience closing pending ([Hexagon IR](https://investors.hexagon.com/en)); ASML: export-control decisions and 2028 capacity plans ([eeNews](https://www.eenewseurope.com/en/asml-hits-record-e11-7-billion-sales-as-ai-chip-demand-surges/)).
+
+### Gaps
+- Dates for ASML Q4 (expected late Jan 2027), Hexagon Q4, Bentley Q4 and Nemetschek FY26 results not verified (IR calendars not machine-readable).
+
+## 8. Seat-based exposure
+
+### Takeaway
+Seat dependence cannot be quantified for Autodesk, Dassault, PTC or Nemetschek from disclosures; Bentley's is the only disclosed split, and even its consumption model meters human usage.
+
+### Cited Findings
+- Autodesk FY26: subscription USD 6,743m (93.6% of 7,206m), maintenance 33m, other 430m; recurring 97%; Design 83%, Make 11%; AECO 50%, AutoCAD/LT 25%, MFG 19%, M&E 5%; NR3 100-110% ([10-K](https://www.sec.gov/Archives/edgar/data/769397/000076939726000015/adsk-20260131.htm)). Models: named-user plans (transition from multi-user), Flex (pre-purchased tokens, daily rate) and EBAs (token-based access to a product pool); EBA share not disclosed; ~37% of revenue via indirect channel (midsize-vendors digest of the same 10-K).
+- Dassault 9M 2026: software 90% of revenue; subscription and support 83% of software; licences and other 17%; services 10% of total; by line Industrial Innovation 54%, Mainstream (SOLIDWORKS) 27%, Life Sciences 19% of software revenue (own calc from [Q3 release via Yahoo](https://finance.yahoo.com/healthcare/articles/dassault-syst-mes-strong-q3-055900413.html)); subscription ~half of ARR; agentic platform "user-based, covering both humans and agents", with units of work and token consumption also measured ([Investing.com](https://www.investing.com/news/transcripts/earnings-call-transcript-dassault-systemes-beats-q3-2026-estimates-shares-fall-93CH-4978361)).
+- Bentley 2025: recurring 93% of revenue; E365 = 46% of ARR (45% 2024, 41% 2023), charged mainly on daily usage; ARR with consumption periods under one year 51%; Virtuosity = 12-month named-user subscriptions (SMB); revenue: subscriptions USD 1,377m, perpetual 46m, services 79m ([10-K FY2025](https://www.sec.gov/Archives/edgar/data/1031308/000103130826000007/bsy-20251231.htm)).
+- Nemetschek: recurring 95% of revenue (Q1 2026); subscription/SaaS EUR 836.5m in 9M 2026 (~83% of ~EUR 1.0bn revenue, own calc); Design 65% subscription/SaaS; "underlying demand for new seats remained unchanged"; Allplan AI features to use subscriptions plus AI packages and usage credits ([MarketBeat](https://www.marketbeat.com/instant-alerts/transcript-nemetschek-q3-earnings-call-highlights-2026-11-05/); [Quartr Q1 summary](https://quartr.com/events/nemetschek-se-nem-q1-2026_3YAicCfV)).
+- Siemens DI software: "existing user-based, named user subscription foundation", AI fees on top and a planned "agentic surcharge" ([transcript](https://in.investing.com/news/stock-market-news/earnings-call-transcript-siemens-posts-record-orders-in-q4-2026-as-growth-quickens-93CH-5698664)). PTC: ARR USD 2,508m; split not disclosed. Hexagon: recurring ~26% of sales (hardware-heavy). ASML: no seat model.
+
+### Inferences
+- Rough ranking of seat dependence (inference, not disclosed): Nemetschek (Design/Bluebeam/Maxon) and Autodesk highest, Dassault and PTC high but with enterprise PLM/Medidata components, Bentley medium (E365 still tracks user-days), Siemens DI software medium (EDA and token-style licences mixed in), Hexagon and ASML low.
+
+### Gaps
+- No vendor discloses named-user vs enterprise/token revenue except Bentley; Autodesk EBA/Flex share, PTC and Dassault seat shares cannot be determined.
+
+## 9. AI-spending scenarios to 2030 (inferences)
+
+### Takeaway
+ASML and Siemens are the most exposed to the AI-capex path; the design-software names are more exposed to how fast AI agents change seat pricing than to compute supply.
+
+### Inferences
+- Steady growth (~55%): supports ASML's consensus (2027e EPS +36%) and its "supply short of demand" statement; Siemens DI (EDA, automation for fabs/data centres) and SI benefit; Bentley gains from infrastructure/data-centre engineering. Design software keeps its de-rated multiples unless seat revenue proves stable.
+- Financing-led pause around 2028 (~25%): ASML most exposed (2009 revenue -49% precedent; 2028e consensus is 2 estimates); Siemens order growth and backlog conversion slow; EDA multiples (Cadence/Synopsys) compress, a read-across to Siemens EDA. Software cash flows are steadier, but multiples rarely hold in risk-off episodes.
+- Faster acceleration (~20%): biggest upside for ASML earnings; also the fastest substitution risk for seat-based revenue (Autodesk, Dassault, Nemetschek, PTC), possibly before 2029, partly offset by token/usage pricing (Dassault, Nemetschek credits, Autodesk Flex/EBA, Siemens agentic surcharge).
+
+### Gaps
+- No company quantifies revenue sensitivity to AI capex or agent adoption.
+
+## 10. Entry conditions and provisional labels (valuation-only, 12 Nov 2026)
+
+### Takeaway
+Labels: Siemens fair; Dassault attractive (provisional); Hexagon fair (low confidence); Octave cannot assess; ASML fair; Autodesk attractive (provisional); Bentley fair; PTC fair (deal-pinned); Nemetschek attractive (provisional).
+
+### Inferences
+- Siemens: would look attractive nearer ~18x FY27e EPS ex-SHL (5-FY median forward P/E 16.7x), roughly EUR 235-245 including the SHL stake (own calc), or on a DI software margin disclosure supporting peer multiples.
+- Dassault: attractive at ~5x EV/sales and FCF yield above 5% if the CMD/2027 guidance keep growth at or above 4-5% with 3D UNIV+RSES revenue starting in 2027; a further guidance reset would invalidate this.
+- Hexagon: needs two clean post-spin quarters; attractive below ~23x forward adjusted P/E with organic growth at or above the 4-6% target.
+- Octave: assessable after 2-3 reported quarters; screens cheap (FCF yield 7.8%) but growth consensus is +0.6%/+4.8%.
+- ASML: attractive nearer its 5-FY median EV/sales (~10x) or on a cyclical trough signal (flat orders/capex cuts by TSMC/Samsung/Intel); stretched if 2028 estimates move up only by extrapolation.
+- Autodesk: attractive while FCF yield ex-SBC stays at or above ~4% and FY28 guidance (late Feb 2027) shows at least ~10% growth; evidence on EBA/Flex migration offsetting seat compression is the key transition signal.
+- Bentley: attractive below ~25x EV/EBITDA or above a 4% FCF yield with E365 growth intact.
+- PTC: entry is a merger-arbitrage spread (4.5% to USD 205, close by Q3 2027); standalone value if the deal broke was ~USD 144 (pre-bid close).
+- Nemetschek: attractive while P/E stays below ~25x FY27e with the subscription transition ending 2027-28 and HCSS accretive from 2028.
+
+### Gaps
+- Labels use one valuation snapshot; no adjustment for interest-rate moves or post-results consensus changes (e.g., Siemens' consensus is pre-Q4).
+
+## 11. Access for foreign investors
+
+### Takeaway
+All nine have liquid home or US lines except Nemetschek (thin Xetra float, no ADR) and Octave (young dual listing).
+
+### Cited Findings
+| Co. | Home line (20-day avg volume) | Other lines |
+|---|---|---|
+| Siemens | Xetra SIE, EUR (1.07m shares, ~EUR 0.3bn/day) | OTC ADR SIEGY (USD 154.46 = ~0.5 share/ADR, own calc) |
+| Dassault | Euronext Paris DSY (1.94m, ~EUR 49m) | OTC ADR DASTY (~1:1) |
+| Hexagon | Nasdaq Stockholm HEXA B (3.82m, ~SEK 0.42bn) | OTC HXGBY (~1:1), HXGBF (ordinary, illiquid) |
+| Octave | Nasdaq NY OCTV, USD (1.63m, ~USD 35m) | Nasdaq Stockholm OCTV SDB (~1:1) |
+| ASML | Euronext Amsterdam ASML | Nasdaq ASML (1.72m, ~USD 2.6bn/day) |
+| Autodesk / Bentley / PTC | Nasdaq (1.95m / 3.33m / 2.05m) | Bentley float 157m of 310.5m shares |
+| Nemetschek | Xetra NEM (231k, ~EUR 15m; float 63m of 115m) | OTC NEMTF (ordinary; 214 shares traded 10 Nov) |
+
+- Sources: stockanalysis statistics (volumes, floats) and OTC quote pages ([SIEGY](https://stockanalysis.com/quote/otc/SIEGY/), [DASTY](https://stockanalysis.com/quote/otc/DASTY/), [HXGBY](https://stockanalysis.com/quote/otc/HXGBY/), [NEMTF](https://stockanalysis.com/quote/otc/NEMTF/)), captured 12 Nov 2026; Octave lines ([notice](https://www.inderes.se/en/releases/hexagon-distribution-and-listing-of-octave-intelligence-plc)).
+
+### Gaps
+- ADR sponsorship levels and depositary ratios not confirmed from depositary documents (ratios inferred from prices); Xetra volumes exclude other venues.
+
+## Could not verify
+- Causes of: Dassault -10.4% (16 Feb 2026); sector-wide software moves 3-4 Feb, 1 Jun, 11 Jun and 4 Sep 2026; ASML 27 Jul and 5 Nov 2026 beyond headlines; Siemens -9.3% on 13 Nov 2025 and -7.2% on 4 Feb 2026; Bentley +14% (26 Feb 2026) beyond results timing.
+- Hexagon: Yahoo's 13 May 2026 "-22.8%" is a data error (second source shows +1.2%); pre-spin history depends on the 0.8531 adjustment factor.
+- Forward EV/EBITDA consensus; third-year consensus (except Nasdaq GAAP-like EPS); DI software margin; Autodesk EBA/Flex share; PTC/Dassault/Nemetschek seat shares; HCSS price and Nemetschek net debt; Waygate/Rocscience prices; Octave Q3 2026 results; ASML Q3 bookings (not in sources found); next results dates for ASML, Hexagon, Bentley and Nemetschek.
+- Siemens SOTP inputs that are assumptions: SFS equity (4.5bn), all segment multiples, treatment of the ~EUR 12bn SHL loan.
+
+## Dated source list (accessed 12 Nov 2026; data date in brackets; URLs inline above)
+- Siemens: Q4 FY26 earnings release and presentation [12 Nov 2026]; pre-Q4 analyst consensus workbook [29 Oct 2026]; Q4 call transcript, Investing.com [12 Nov 2026]; Q3 FY26 press release [6 Aug 2026].
+- Dassault: Q3 2026 release (3ds.com; Yahoo copy) and call transcript, Investing.com [28 Oct 2026]; FY25 release [11 Feb 2026]; Reuters/The Star [23 Oct 2025]; Euronext news [28 Oct 2026]; Moby/Yahoo [Feb 2026].
+- Hexagon/Octave: Q3 and Q1 2026 interim reports, Inderes [23 Oct, 23 Apr 2026]; Octave distribution notices [27 Apr, 25 May 2026]; investors.hexagon.com [12 Nov 2026].
+- ASML: eeNews Europe on Q3 2026 [15 Oct 2026]; Webull [Oct 2026]; US Federal Register 2024-28270 [5 Dec 2024].
+- Autodesk: 10-K FY2026, SEC [3 Mar 2026]; SiliconANGLE [27 Aug 2026]. Bentley: Q3 8-K [5 Nov 2026]; 10-K FY2025 [Feb 2026]; Earnings Whispers [Nov 2026]. PTC/Schneider: deal 8-K [5 Oct 2026]; FY26 results [4 Nov 2026]. Nemetschek: MarketBeat Q2/Q3 calls [30 Jul, 5 Nov 2026]; ad hoc via gettex [28 Jul 2026]; goldesel [Nov 2026].
+- Market data: stockanalysis.com statistics, forecast, ratios, history, cash-flow and OTC pages [11-12 Nov 2026]; Yahoo Finance chart API (daily closes, FX) [to 11-12 Nov 2026]; companiesmarketcap P/E, P/S, revenue pages [Nov 2026]; Nasdaq earnings-forecast API [12 Nov 2026]; finviz ADSK [12 Nov 2026].
