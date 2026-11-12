@@ -266,6 +266,156 @@ Source for all snapshot multiples below unless stated: StockAnalysis.com statist
 | MTD (Dec) | FY26 $4.26bn (+5.90%) → FY27 $4.45bn (+4.38%) | FY26 $47.82 → FY27 $53.22 (+11.31%) |
 - OXIG caveat: the EPS base of £0.94 on StockAnalysis does not match the company's FY26 adjusted basic EPS of 100.7p or basic EPS of 84.6p (different normalisation); the company's own compiled consensus is FY27 revenue £446.1M and adjusted operating profit £81.2M ([H1 FY27 RNS](https://www.investegate.co.uk/announcement/rns/oxford-instruments--oxig/half-year-results/9866415)). I rely on the company figure for operating profit and use StockAnalysis only for the P/E.
 
-## Part 4 — Could not verify
+### 3.0d Method notes for implied expectations (all MY ESTIMATES, not sourced)
+- (a) Perpetuity: price = FCF0 × (1+g) / (r − g), so g = (r × market cap − FCF0) / (market cap + FCF0). r is an assumed cost of equity: 8.5% base, with 8.0% / 9.0% sensitivity.
+- (b) Five-year reversion: the EPS compound growth needed for a holder to earn r = 8.5% a year (including the current dividend yield) if the forward P/E reverts to its FY2021–25 year-end median by 2031. Formula: (current fwd P/E × (1 + r − div yield)^5 / median P/E)^(1/5) − 1.
+- (c) Rough margin decomposition: consensus EPS growth less revenue growth less buyback yield gives the operating-profit growth needed, and hence the margin change.
+- StockAnalysis "Forward P/E" divides the price by a blended next-12-months consensus EPS. I inferred this from arithmetic: TMO 717.71 / 26.65 = $26.93, which lies between the FY26e $25.28 and FY27e $27.78. Fiscal-year P/Es below are my arithmetic.
 
-## Part 5 — Sources with dates
+### 3.1 Thermo Fisher (TMO)
+- **Price and multiples:** $717.71 (11 Nov 2026 close, USD); market cap $265.92bn; EV $301.23bn; trailing GAAP P/E 37.83; forward P/E 26.65. On consensus that is 28.4x FY26e EPS ($25.28) and 25.8x FY27e ($27.78) (my arithmetic). EV/EBITDA 24.83; EV/sales 6.36; FCF yield 2.86% on TTM FCF $7.60bn, or 2.73% on the FY26 guide midpoint of $7.25bn (my arithmetic); dividend yield 0.26% — [StockAnalysis](https://stockanalysis.com/stocks/tmo/statistics/)
+- **Against its own history:** forward P/E 26.65 vs FY21–25 year-end median 24.65 (+8%); range 22.87 (FY24) to 32.55 (FY21). EV/EBITDA 24.83 vs median 21.04 (+18%), above every year-end of FY21–25 (range 20.39–22.44) — [StockAnalysis ratios](https://stockanalysis.com/stocks/tmo/financials/ratios/)
+- **Against peers (fwd P/E / EV/EBITDA):** DHR 25.88/22.73; A 26.93/25.13; WAT 29.48/29.13; MTD 33.84/29.40; AME 26.09/23.47. UK/Europe: Halma 26.50/21.84; Renishaw 20.22/17.91; OXIG 21.75/14.81. Japan: Shimadzu 20.71/13.00; JEOL 13.58/12.94; HORIBA 14.76/9.77; Rigaku 19.91/18.35 (Part 2). TMO sits mid-pack among US peers and well above Japanese and UK instrument peers.
+- **Consensus:** revenue FY26 $48.01bn (+7.75%), FY27 $50.54bn (+5.27%); adjusted EPS FY26 $25.28 (+10.55%), FY27 $27.78 (+9.89%); 3-yr forecast growth: revenue 6.45%, EPS 10.39% — [StockAnalysis forecast](https://stockanalysis.com/stocks/tmo/forecast/). Company FY26 guide: $25.13–25.43.
+- **Performance** (my arithmetic on [Nasdaq.com daily closes](https://api.nasdaq.com/api/quote/TMO/historical?assetclass=stocks&fromdate=2016-11-01&todate=2026-11-12&limit=9999), price only): YTD +23.9% (from $579.45 on 31 Dec 2025); 1y +22.4% (from $586.49 on 11 Nov 2025; StockAnalysis shows +24.53%); 3y +60.0% (from $448.43 on 10 Nov 2023); 5y +13.7% (from $631.48 on 11 Nov 2021); 10y +374.5%. 52-week range $435.27 (intraday, 18 May 2026) to $727.56 (intraday, 11 Nov 2026). The stock is ~1% below its high and +65% above its May 2026 low.
+- **Implied expectations (my estimates):**
+  - (a) Perpetuity: at r = 8.5% the price implies g ≈ 5.6% a year forever on FY26 FCF of $7.25bn (8.0% → 5.1%; 9.0% → 6.1%).
+  - (b) Five-year reversion: EPS must compound ≈ 9.9% a year (26.65 × 1.0824^5 / 24.65 = 1.61x over five years). That equals consensus (FY27 +9.9%; 3-yr 10.4%), so there is no cushion for a de-rating.
+  - (c) Margins: FY27 consensus of revenue +5.3% and EPS +9.9%, with a ~1.5–1.9% buyback yield, needs adjusted operating margin to expand roughly 0.5–0.7pt a year from 23.1% (9M26). This is without one-off tariff refunds.
+- **Near-term events (to May 2027):**
+  - US FY2027 appropriations: the stopgap runs to 11 Dec 2026 ([AIP FYI](https://www.aip.org/fyi/budget-tracker)).
+  - EVP Michael Shafer retires 31 Dec 2026 ([8-K 27 Oct 2026](https://www.sec.gov/Archives/edgar/data/97745/000009774526000181/tmo-20261027.htm)).
+  - Q4 2026 results and 2027 guidance are expected in late January 2027. This is by precedent only (Q4 2025 was reported 29 Jan 2026 per the [EDGAR filing index](https://data.sec.gov/submissions/CIK0000097745.json)); the date is not confirmed.
+  - IEEPA tariff-refund normalisation.
+  - Integration of Clario (closed 24 Mar 2026).
+- **Provisional read (PROVISIONAL): FAIR, leaning STRETCHED.** The shares are near their 52-week high after a 65% rise from the May 2026 low. Multiples are 8–18% above their own five-year year-end medians, the price roughly equals consensus 10% EPS growth, and leverage of ~3.3x limits upside from capital deployment. Entry would look better if:
+  - the forward P/E fell to ≤24.65x (≈$664 on blended NTM EPS of $26.93) or ~23x (≈$619) (my arithmetic);
+  - EV/EBITDA returned to ~21x;
+  - or 2027 guidance in January showed organic growth ≥5% with margin expansion excluding tariff refunds.
+
+### 3.2 Bruker (BRKR)
+- **Price and multiples:** $62.41 (11 Nov 2026 close, USD); market cap $9.53bn; EV $11.15bn; trailing P/E n/a (GAAP loss); forward P/E 26.52, which is 29.2x FY26e ($2.14) and 25.5x FY27e ($2.45) (my arithmetic). EV/EBITDA 20.24; EV/sales 3.17; FCF yield 2.57% (TTM FCF $244.7M); dividend yield 0.32% — [StockAnalysis](https://stockanalysis.com/stocks/brkr/statistics/)
+- **Against its own history:** forward P/E 26.52 vs median 27.58 (−4%); range 22.88 (FY24) to 39.41 (FY21). EV/EBITDA 20.24 vs median 19.09 (+6%); range 17.95–25.13 — [StockAnalysis ratios](https://stockanalysis.com/stocks/brkr/financials/ratios/). Caveat (my inference): those medians were set when ROIC was 18–24% (FY21–23) versus ~8% now, so "in line with history" overstates cheapness.
+- **Against peers:** EV/sales of 3.17 is half or less of the US peers (6.4–9.1x), reflecting lower margins, and similar to OXIG (3.18x) and Rigaku (3.88x). Forward P/E is in line with the US peers.
+- **Consensus:** revenue FY26 $3.54bn (+3.0%), FY27 $3.69bn (+4.2%); EPS $2.14 (+16.7%) and $2.45 (+14.8%); 3-yr growth: revenue 4.22%, EPS 15.80% — [StockAnalysis forecast](https://stockanalysis.com/stocks/brkr/forecast/)
+- **Performance** (Nasdaq.com daily closes, my arithmetic): YTD +32.5% (from $47.11); 1y +49.6% (from $41.73; StockAnalysis +53.04%); 3y +8.0% (from $57.81); 5y −24.0% (from $82.17); 10y +172.9%. 52-week range $32.37 (16 Mar 2026) to $68.98 (4 Nov 2026). The five-year closing high was $94.27 (21 Mar 2024).
+- **Implied expectations (my estimates):**
+  - (a) Perpetuity on TTM FCF ($244.7M, depressed): r = 8.5% → g ≈ 5.8%; r = 9.0% → 6.3%. If FCF normalised to FY26e non-GAAP net income (~$327M = $2.14 × 153M shares; my assumption of 100% conversion, well above the actual ~11% in 9M26): g ≈ 4.9–5.4%.
+  - (b) Five-year reversion: EPS CAGR ≈ 7.3% is needed at the median exit P/E (27.58), or ≈ 11.4% at the FY24 low (22.88). Both are below consensus (~15%). The price therefore does not fully discount the consensus margin recovery, but delivery risk is high.
+  - (c) Margins: FY27 consensus (revenue +4.2%, EPS +14.8%, no buybacks) implies roughly +1.5pt more non-GAAP operating margin in FY27, on top of the +250–300bp guided for FY26.
+- **Near-term events:**
+  - Preferred dividend payable 1 Dec 2026 ([8-K 29 Oct 2026](https://www.sec.gov/Archives/edgar/data/1109354/000119312526437771/brkr-20261029.htm)).
+  - US NIH/NSF FY27 appropriations (stopgap to 11 Dec 2026).
+  - Preliminary FY26 results and FY27 outlook are likely in mid-January 2027. Precedent: an 8-K with items 2.02/7.01 on 12 Jan 2026 per the [EDGAR index](https://data.sec.gov/submissions/CIK0001109354.json); not confirmed.
+  - Q4 2026 results around February 2027 (precedent 12 Feb 2026).
+  - China stimulus procurement, and conversion of the semiconductor-metrology backlog in FY27.
+- **Provisional read (PROVISIONAL): FAIR, with low confidence on earnings quality.** Multiples are near their own medians and below US peers on EV/sales, but those medians were set at much higher returns. The stock is up ~50% in a year, GAAP results are loss-making and FCF is thin. Entry would improve with:
+  - evidence of FCF conversion above ~70% of non-GAAP net income (Q4 26 / FY27);
+  - FY27 guidance confirming organic acceleration (≥3–4%) and double-digit EPS growth;
+  - or a pullback to roughly $49–56, i.e. 20–23x FY27e EPS of $2.45 (my arithmetic).
+
+### 3.3 Agilent (A)
+- **Price and multiples:** $176.95 (11 Nov 2026 close, USD); market cap $49.89bn; EV $52.28bn; trailing P/E 34.89; forward P/E 26.93, which is 28.5x FY26e (Oct-26, $6.20) and 26.3x FY27e ($6.72) (my arithmetic). EV/EBITDA 25.13; EV/sales 7.09; FCF yield 2.54%; dividend yield 0.58% — [StockAnalysis](https://stockanalysis.com/stocks/a/statistics/)
+- **Against its own history:** forward P/E 26.93 vs median 24.67 (+9%); range 18.73 (FY23) to 33.85 (FY21). EV/EBITDA 25.13 vs median 21.54 (+17%); range 18.57–28.58 — [StockAnalysis ratios](https://stockanalysis.com/stocks/a/financials/ratios/)
+- **Against peers:** in line with TMO, DHR and AME on forward P/E and below WAT and MTD. It is a large premium to the Japanese peers (Shimadzu 20.7x; HORIBA 14.8x) and to Renishaw and OXIG.
+- **Consensus:** revenue FY26 $7.50bn (+7.94%), FY27 $7.98bn (+6.42%); EPS $6.20 (+10.94%) and $6.72 (+8.35%); 3-yr growth: revenue 7.05%, EPS 10.15% — [StockAnalysis forecast](https://stockanalysis.com/stocks/a/forecast/)
+- **Performance** (Nasdaq.com daily closes, my arithmetic): YTD +30.0% (from $136.07); 1y +18.4% (from $149.42; StockAnalysis +20.90%); 3y +63.1% (from $108.47); 5y +11.4% (from $158.79); 10y +281.6%. 52-week range $108.35 (20 May 2026) to $182.99 (28 Oct 2026). The stock is 3% below its high and +63% above its low.
+- **Implied expectations (my estimates):**
+  - (a) Perpetuity: r = 8.5%, TTM FCF $1.27bn → g ≈ 5.8%.
+  - (b) Five-year reversion: EPS CAGR ≈ 9.8% is needed (26.93 × 1.0792^5 / 24.67). That is slightly above FY27 consensus (+8.35%) and near the 3-yr forecast (10.15%).
+  - (c) Margins: FY27 consensus (revenue +6.4%, EPS +8.4%, small buybacks) implies only ~0.3–0.4pt of operating-margin expansion. The ask is modest but the starting multiple is high.
+- **Near-term events:**
+  - Q4 FY26 results with FY27 guidance on 23 Nov 2026 after the close ([Agilent announcement](https://www.ariva.de/news/agilent-to-announce-fourth-quarter-fiscal-year-2026-12187692)).
+  - US appropriations (stopgap to 11 Dec 2026).
+  - Q1 FY27 results around late February 2027 (precedent 25 Feb 2026).
+  - China demand and tariff refunds dropping out.
+- **Provisional read (PROVISIONAL): FAIR, leaning STRETCHED.** Agilent has the best returns and most recurring model of the three US names, but trades 9–17% above its own medians after a 30% year-to-date rise. FY27 consensus EPS growth (+8%) slows from FY26 (+11%, helped by tariff refunds). Entry would improve if:
+  - the price fell back to ≈$151–162, i.e. 23–24.7x blended NTM EPS of $6.57 (my arithmetic);
+  - or the 23 Nov FY27 guide implied core growth ≥6% and EPS ≥ $6.72.
+
+### 3.4 Oxford Instruments (OXIG)
+- **Price and multiples:** 2,626p (delayed, 12 Nov 2026 12:39 GMT; 11 Nov close 2,628p); market cap £1.43bn; EV £1.39bn; trailing P/E 26.85; forward P/E 21.75, which is 23.2x FY27e (Mar-27, 113p) and 20.4x FY28e (129p) (my arithmetic). EV/EBITDA 14.81; EV/sales 3.18; FCF yield 4.99%; dividend yield 0.90% — [StockAnalysis](https://stockanalysis.com/quote/lon/OXIG/statistics/). Company net cash is £74.8M.
+- **Against its own history:** forward P/E 21.75 vs FY22–26 year-end median 22.15 (−2%); range 15.33 (FY25) to 25.09 (FY23). EV/EBITDA 14.81 vs median 16.07 (−8%); range 11.62–18.99 — [StockAnalysis ratios](https://stockanalysis.com/quote/lon/OXIG/financials/ratios/)
+- **Against peers:** it trades at a discount to the US peers (26–34x forward) and to Halma (26.5x). It is similar to Renishaw (20.2x), Rigaku (19.9x) and Shimadzu (20.7x), and at a premium to JEOL (13.6x) and HORIBA (14.8x).
+- **Consensus:** StockAnalysis has revenue FY27 £447.5M (+5.75%) and FY28 £477.7M (+6.74%), EPS 113p and 129p (+13.8%), and 3-yr EPS growth 14.58%. The company-compiled consensus has FY27 revenue £446.1M, adjusted operating profit £81.2M and margin 18.2% ([H1 RNS](https://www.investegate.co.uk/announcement/rns/oxford-instruments--oxig/half-year-results/9866415)). StockAnalysis's EPS base (94p) does not match the company's adjusted EPS (100.7p), so treat its EPS growth rates with caution.
+- **Performance:** 52-week change +28.06% (StockAnalysis). Since the 31 Mar 2026 fiscal-year-end close (£23.84) the stock is up +10.2% (my arithmetic). Recent moves from the [StockAnalysis daily history](https://stockanalysis.com/quote/lon/OXIG/history/), 4 Sep–12 Nov 2026 only:
+  - Closing high 3,112p on 6 Oct 2026; intraday high 3,256p on 7 Oct.
+  - Closing low 2,368p on 5 Nov 2026; intraday 2,300p on 6 Nov. That is −24% peak-to-trough on closes in a month.
+  - Largest daily falls were −7.1% on 15 Oct and −6.7% on 5 Nov. The stock recovered to 2,626p after the 10 Nov results.
+  - The cause of the fall was NOT verified. The 13 Oct trading update was positive on orders.
+  - YTD, 3y, 5y and the full 52-week range could not be verified. Fiscal-year-end closes per StockAnalysis: Mar-22 £20.19; Mar-23 £24.18; Mar-24 £20.69; Mar-25 £16.90; Mar-26 £23.84.
+- **Implied expectations (my estimates):**
+  - (a) Perpetuity: at r = 9% (assumed UK mid-cap cost of equity) and TTM FCF of £71.6M (StockAnalysis definition), the price implies g ≈ 3.8% (8.5% → 3.3%). That is below the company's 5–8% organic growth target. FCF definitions differ (company H1 FY27 FCF was £19.1M).
+  - (b) Five-year reversion: EPS CAGR ≈ 7.2% is needed (7.7% at r = 9%), roughly half the consensus 14–20%.
+  - (c) Margins: FY28 consensus (revenue +6.7%, EPS +13.8%, buyback ~2–4%) implies operating margin rising ~0.5pt a year toward the company's 20%+ goal.
+- **Near-term events:**
+  - Trading update 14 Jan 2027.
+  - Completion of the remaining £16.9M of the buyback in early 2027, followed by an intended £25M extension to summer 2027.
+  - FY27 results around June 2027 (precedent 9 Jun 2026; just beyond six months).
+  - AI-datacom capex signals that drive AT orders; US–China trade and export controls; US academic funding.
+  - A "Holding(s) in Company" notice on 10 Nov 2026 (content not read).
+  - Precedent: UK peer Spectris was taken private by KKR at £41.75/share in December 2025. That shows private-equity appetite for UK instrument groups; this is an inference only, and no OXIG approach was reported in the sources I read.
+- **Provisional read (PROVISIONAL): FAIR, leaning ATTRACTIVE.** OXIG has the lowest multiples of the four in-depth names, sits slightly below its own medians, holds net cash, yields ~5% on FCF and is buying back shares. Against that, it carries the highest AI-capex concentration and cyclicality, ~25% China exposure and an unexplained recent share-price fall. Entry would look better with:
+  - evidence of positive mid-single-digit I&A organic growth in H2 FY27;
+  - AT book-to-bill staying ≥1 into FY28;
+  - or a price near the early-November low (~2,368p, i.e. 21.0x FY27e and 18.4x FY28e EPS; my arithmetic).
+
+## Part 4 — Could not verify
+1. **Credit ratings** (Moody's/S&P/Fitch) for TMO, A, BRKR, and whether OXIG is rated. None are disclosed in the 10-Ks, 10-Qs or RNSs I read, and the web-search budget ran out before rating-agency pages could be located.
+2. **NIH and NSF FY2026 enacted appropriations and FY2027 request or marks.**
+   - NIH budget pages ([officeofbudget.od.nih.gov](https://officeofbudget.od.nih.gov/), [nih.gov budget](https://www.nih.gov/about-nih/what-we-do/budget)) returned HTTP 403.
+   - The [NSF budget page](https://www.nsf.gov/about/budget) (last updated 10 Apr 2026) shows only FY2024 ($9.06bn, −5.0% vs FY2023) and FY2025 ($8.826bn).
+   - The [AIP FYI tracker](https://www.aip.org/fyi/budget-tracker) (latest article 2 Sep 2026) says full-year FY2027 appropriations are not enacted. A stopgap extends level funding to 11 Dec 2026. Headlines cite "a House Republican proposal to cut science budgets by less than the President requested" (8 May 2026) and proposed "deep NSF research cuts" (9 Apr 2026). No figures were retrieved.
+   - Company evidence instead: TMO academic & government "flat" (Q3 26); Agilent academia & government −3% (Q3 FY26); Bruker US academic bookings turned up double digits in Q3 26 off a weak base; OXIG US academia 10% of revenue and declining.
+3. **TMO's China share and end-market percentage split.** Neither appears in the 10-K text extracted. The Q3 2026 China growth comment ("low double digits", stimulus-supported) comes only from an AI-assisted secondary summary.
+4. **TMO Q3 2026 guidance raise** (revenue $47.7–48.2bn, adjusted EPS $25.13–25.43, FCF $7.0–7.5bn). This comes from secondary sources only (ValueTheMarkets, Stockhub); the primary transcript and slides were not retrieved.
+5. **Agilent Q3 call commentary** (China, pharma reshoring). The Nasdaq page returned 503; only a search-engine summary is available.
+6. **True 5- and 10-year daily medians and ranges of forward P/E and EV/EBITDA.** Only fiscal-year-end values for FY2021–25 (StockAnalysis free tier) were available; 10-year data is not in the free tier.
+7. **OXIG YTD, 3-year and 5-year performance and full 52-week range**, and the **cause of OXIG's −24% fall** (6 Oct–5 Nov 2026). The cause of the March–May 2026 sector lows (TMO, A, DHR, MTD bottomed 13–20 May 2026; BRKR and WAT in March 2026) was also not verified, because the search budget was exhausted.
+8. **Bruker:** company-stated recurring/aftermarket share of revenue, academic and government share, and the conversion date and terms of the 6.375% mandatory convertible preferred.
+9. **NanoScience buyer** (OXIG disposal completed 2 Jan 2026, £54.7M consideration). The buyer was not named in the passages extracted.
+10. **Spectris take-private EV and EV/EBITDA multiple.** Only the per-share price (£41.75) was verified.
+11. **Exact dates** of TMO and BRKR Q4 2026 reports (precedent dates only), any investor days, and specific upcoming US tariff, Section 232 or export-control decisions. Filings say only that "Various other tariff programs remain in effect".
+12. **Consensus cross-checks.** Consensus is from StockAnalysis (S&P Global data). It was not cross-checked against LSEG, FactSet or Bloomberg; the exceptions are OXIG's company-compiled consensus and the companies' own guidance.
+
+## Part 5 — Sources with dates (all retrieved 12 Nov 2026 unless stated)
+Primary filings (SEC EDGAR):
+- TMO Q3 2026 8-K Ex.99.1 (21 Oct 2026): https://www.sec.gov/Archives/edgar/data/0000097745/000009774526000173/q32026earnings8kex99_1.htm
+- TMO 10-Q Q3 2026 (filed 30 Oct 2026): https://www.sec.gov/Archives/edgar/data/97745/000009774526000179/tmo-20260926.htm
+- TMO 10-K FY2025 (filed 26 Feb 2026): https://www.sec.gov/Archives/edgar/data/97745/000009774526000018/tmo-20251231.htm
+- TMO 8-K (27 Oct 2026, EVP retirement): https://www.sec.gov/Archives/edgar/data/97745/000009774526000181/tmo-20261027.htm
+- BRKR Q3 2026 8-K Ex.99.1 (4 Nov 2026): https://www.sec.gov/Archives/edgar/data/0001109354/000119312526446176/brkr-ex99_1.htm
+- BRKR 10-Q Q3 2026 (filed 5 Nov 2026): https://www.sec.gov/Archives/edgar/data/1109354/000119312526449731/brkr-20260930.htm
+- BRKR 10-K FY2025 (filed 27 Feb 2026): https://www.sec.gov/Archives/edgar/data/1109354/000119312526082523/brkr-20251231.htm
+- BRKR 8-Ks (29 Oct 2026 preferred dividend; 5 Nov 2026 segment recast): https://www.sec.gov/Archives/edgar/data/1109354/000119312526437771/brkr-20261029.htm ; https://www.sec.gov/Archives/edgar/data/1109354/000119312526449782/brkr-20261105.htm
+- Agilent Q3 FY2026 8-K Ex.99.1 (26 Aug 2026): https://www.sec.gov/Archives/edgar/data/0001090872/000109087226000062/exhibit991-q326pressrelease.htm
+- Agilent 10-Q Q3 FY2026 (filed 1 Sep 2026): https://www.sec.gov/Archives/edgar/data/1090872/000109087226000064/a-20260731.htm
+- Agilent 10-K FY2025 (filed 22 Dec 2025): https://www.sec.gov/Archives/edgar/data/1090872/000109087225000087/a-20251031.htm
+- Agilent 8-K Ex.99.1 (2 Sep 2026, board chair): https://www.sec.gov/Archives/edgar/data/1090872/000119312526384426/a-ex99_1.htm
+- Danaher Q3 2026 8-K Ex.99.1 (21 Oct 2026): https://www.sec.gov/Archives/edgar/data/313616/000031361626000201/dhr-20261021xex991.htm
+- Waters Q3 2026 8-K Ex.99.1 (3 Nov 2026): https://www.sec.gov/Archives/edgar/data/1000697/000119312526444400/d22941dex991.htm ; Waters–BD completion 8-K Ex.99.1 (9 Feb 2026): https://www.sec.gov/Archives/edgar/data/1000697/000119312526042819/d23927dex991.htm
+- AMETEK Q3 2026 8-K Ex.99.1 (3 Nov 2026): https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm ; Indicor completion (26 Aug 2026): https://www.sec.gov/Archives/edgar/data/1037868/000103786826000191/exhibit-991indicorinstrume.htm
+- Mettler-Toledo Q3 2026 8-K Ex.99.1 (5 Nov 2026): https://www.sec.gov/Archives/edgar/data/1037646/000103764626000072/ex-991mtd8xkq32026.htm
+- EDGAR submission indexes (filing dates used for event precedents): https://data.sec.gov/submissions/CIK0000097745.json ; https://data.sec.gov/submissions/CIK0001109354.json ; https://data.sec.gov/submissions/CIK0001090872.json
+
+Primary releases (LSE RNS via Investegate):
+- OXIG Half-Year Results, 10 Nov 2026: https://www.investegate.co.uk/announcement/rns/oxford-instruments--oxig/half-year-results/9866415
+- OXIG Preliminary Results FY26, 9 Jun 2026: https://www.investegate.co.uk/announcement/rns/oxford-instruments--oxig/preliminary-results/9607756
+- OXIG announcement list: https://www.investegate.co.uk/company/OXIG
+- Spectris "Scheme becomes effective and leadership changes", 4 Dec 2025: https://www.investegate.co.uk/announcement/rns/spectris--sxs/scheme-becomes-effective-and-leadership-changes/9274646 ; Cancellation, 5 Dec 2025: https://www.investegate.co.uk/announcement/rns/spectris--sxs/cancellation-spectris-plc/9278198
+
+Market data (dated):
+- StockAnalysis statistics / ratios / forecast / history pages for TMO, BRKR, A, OXIG, DHR, WAT, AME, MTD, JEOL (tyo/6951), Shimadzu (tyo/7701), HORIBA (tyo/6856), Rigaku (tyo/268A), Renishaw (lon/RSW), Halma (lon/HLMA). Prices are the 11 Nov 2026 close for US names and delayed 12 Nov 2026 for London/Tokyo. Example: https://stockanalysis.com/stocks/tmo/statistics/ ; https://stockanalysis.com/quote/lon/OXIG/statistics/
+- Nasdaq.com historical prices API (daily closes 11 Nov 2016–11 Nov 2026) for US tickers: https://api.nasdaq.com/api/quote/TMO/historical?assetclass=stocks&fromdate=2016-11-01&todate=2026-11-12&limit=9999 (same pattern for BRKR, A, DHR, WAT, AME, MTD)
+
+Secondary (used only where flagged):
+- ValueTheMarkets, TMO raises 2026 outlook (Oct 2026): https://www.valuethemarkets.com/news/thermo-fisher-nyse-tmo-raises-2026-outlook-after-q3
+- Stockhub, TMO Q3 2026 call summary (AI-assisted, 21 Oct 2026): https://stockhub.kr/en/insights/20261021-tmo-cy26q3-earnings-call
+- MarketBeat, Bruker Q3 2026 call highlights (4 Nov 2026): https://www.marketbeat.com/instant-alerts/transcript-bruker-q3-earnings-call-highlights-2026-11-04/
+- Finviz, Bruker margin-led beat (Nov 2026): https://finviz.com/news/415645/brukers-margin-led-beat-outruns-a-flat-top-line-as-bookings-recovery-broadens
+- Webull/StockStory, Bruker stock reaction (Nov 2026): https://www.webull.com/news/15865733720480768
+- Nasdaq, Agilent Q3 call highlights (Aug 2026; page returned 503 on fetch, used via search summary only): https://nasdaq.com/articles/agilent-technologies-q3-earnings-call-highlights
+- Ariva.de copy of Agilent's Q4 FY26 date announcement: https://www.ariva.de/news/agilent-to-announce-fourth-quarter-fiscal-year-2026-12187692
+- Investing.com, OXIG H1 orders +44% (10 Nov 2026): https://uk.investing.com/news/earnings/oxford-instruments-h1-orders-jump-44-trading-in-line-with-fy27-expectations-4970549
+- AIP FYI Budget Tracker (latest article 2 Sep 2026): https://www.aip.org/fyi/budget-tracker
+- NSF budget page (last updated 10 Apr 2026): https://www.nsf.gov/about/budget

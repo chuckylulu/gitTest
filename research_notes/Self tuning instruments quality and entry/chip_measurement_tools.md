@@ -1,11 +1,11 @@
 # Chip-measurement tools (semiconductor metrology and inspection) as self-tuning instruments — research notes as of 12 Nov 2026
 
-Status: IN PROGRESS. Labels used: [independently confirmed: by whom], [company claim, not independently confirmed], [secondary report], "could not verify". All figures carry period, publication date, URL.
+Status: COMPLETE as of 12 Nov 2026 (within limits listed in Section 7). Labels used: [independently confirmed: by whom], [company claim, not independently confirmed], [secondary report], "could not verify". All figures carry period, publication date, URL. Method note: the shared web-search budget ran out early; most figures come from SEC EDGAR filings, company PDFs and the Federal Register, downloaded directly from known addresses. Share data by tool class come through one secondary aggregator of TechInsights/CSET data.
 
 ## 1. Segment map (process control: tool classes, makers, shares)
 
 ### Takeaway
-(draft) Process control is a ~$15.7bn tool market in 2025 (TechInsights data via CSET), dominated by KLA (~57%) with a long tail of class specialists: Hitachi High-Tech in CD-SEM, Applied Materials and ASML in e-beam, Nova and Onto in film/shape (OCD) metrology, Lasertec and Zeiss in mask inspection/metrology, Camtek in packaging inspection. Chinese firms hold under 1% of the global total.
+Process control was a ~$15.7bn tool market in 2025 (TechInsights data via CSET; secondary). KLA holds ~57% overall and 86% of defect inspection. Each other class has one or two specialists: Hitachi High-Tech in CD-SEM (~72%); Applied Materials (45%) and ASML (36%) in e-beam; ASML in overlay (48% vs KLA 52%); Nova (25%) and Onto (11%) behind KLA (46%) in film/shape (OCD) metrology; Lasertec (42%) and Zeiss (10%) against KLA (46%) in mask inspection; Camtek and Onto in advanced-packaging inspection, where KLA says it became #1 in 2025. Chinese makers hold 0.7% globally. Skyverse grew 49% in 2025 and launched e-beam and X-ray tools. KLA says its 2024 share was 56.5% (Gartner), "6.5x nearest competitor", and claims ~7x for 2025.
 
 ### Cited Findings
 - Market size 2025 by class (TechInsights data, published through CSET's ETO Supply Chain Explorer; figures as transcribed by the aggregator page chipsupplychain.org, updated 29 Oct 2026): process control tools total $15.7bn; defect inspection $6.7bn; film and shape metrology $2.6bn; mask inspection and repair $2.2bn; e-beam metrology $1.3bn; CD metrology $1.2bn; overlay metrology $991.4m; defect review $729.1m. [secondary report: the aggregator page says it was written "with Claude"; I could not open the underlying CSET/ETO data view (interactive page did not render), so treat each number as secondary until checked against CSET ETO] — [chipsupplychain.org, metrology and inspection page, updated 2026-10-29](https://chipsupplychain.org/metrology-and-inspection/)
@@ -188,6 +188,7 @@ Identity: Santa Clara, California. Process control is inside the Semiconductor S
 - Israel risk: "since February 28, 2026, the war situation between Iran and Israel, the U.S., and other countries in the region" disrupted air travel and shipping (Strait of Hormuz, Red Sea); supply chain managed "to date". — same 20-F.
 - Q3 2026 (release 4 Nov 2026): record revenue $161.3m (+28% y/y); GAAP gross margin 50.0%; Q4 guide ~ $180m; FY2026 ~ $595m; initial 2027 outlook >$800m (~+35%); CEO: "For the first time in our history, we have visibility a year ahead". — [Camtek Q3 2026 release (EDGAR 6-K), 2026-11-04](https://www.sec.gov/Archives/edgar/data/1109138/000117891326005000/zk2636329.htm)
 - Class share 2025: 1.6% of total process control (TechInsights via CSET, secondary). KLA claims it became the largest supplier of advanced wafer-level packaging process control in 2025 [KLA claim], i.e., Camtek's main market is contested by KLA.
+- Services: not separately quantified in the 20-F text extracted; "Service revenues consist mainly of contracts charged under time and material arrangements. Service revenues from maintenance contracts are recognized ratably over the contract period"; one-year warranty, so no service revenue in year one. — [Camtek 20-F FY2025](https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/zk2634678.htm)
 
 ### Export controls and cross-border restrictions (cross-company facts)
 - Netherlands: "Effective January 15, 2025, the Netherlands expanded its export control regulations to include an additional group of semiconductor manufacturing equipment, primarily certain metrology and inspection systems. These items now require an export license when shipped abroad." In Nov 2025 the EU incorporated certain Dutch national controls into the EU Control List. — [ASML 20-F 2025](https://www.sec.gov/Archives/edgar/data/937966/000162828026011378/asml-20251231.htm)
@@ -245,14 +246,164 @@ Identity: Santa Clara, California. Process control is inside the Semiconductor S
 - Taiwan: Chroma ATE is joint controlling shareholder of Camtek with Priortech (Camtek 20-F, Mar 2026). Local inspection firms: not verified.
 - India: KLA lists India among its primary R&D centres (KLA 10-K FY2026); Applied Materials has facilities in India (AMAT 10-K FY2025). No Indian metrology tool maker identified (not searched; budget exhausted).
 
-## 5. Companies considered and left out
+### 4.13 Transitions T1-T5 by company (said / done / funded / timing / what must go right)
+T1 expert set-up to agent-run set-up; T2 closed to open control interfaces; T3 one-off hardware to software/subscription; T4 cheaper hardware plus heavier computation; T5 instruments as data sources for customers' own AI.
+
+**KLA**
+- T1. Said: Investor Day 12 Mar 2026 lists "Accelerated recipe deployment", "Fleet performance optimization", "Autonomous synchronization", "On-demand agentic expertise" [company claim]. Done: claims automated spec harmonisation after service events with falling error counts (no customer named); "entire product portfolio" AI-enabled over five years (letter 29 Apr 2026) [company claim]. Funded: non-GAAP R&D $399m in the June 2026 quarter (letter), not split by programme. Timing: not stated. Must go right: fabs accept OEM-run automated matching inside service contracts, and fab-side data is available for fab- and fleet-to-reference matching.
+- T2. No public evidence found of KLA exposing agent or recipe APIs to third parties; its model integrates its own software suite (Klarity, 5D Analyzer, aiSIGHT, SPOT, I-PAT) [inference: closed-integrated; could not verify interface terms].
+- T3. Done: services 23% of FY2026 revenue; >80% of service revenue from multi-year subscription contracts, 95% renewal, ~3-year average length; software perpetual and term licences; services CAGR target 13-15% [company claims in 10-K and Investor Day].
+- T4. Done: five-layer AI stack, GPU/CPU compute for ~78 trillion pixels per wafer, DL detection using design and e-beam images as ground truth [company claim]. KLA's own framing keeps physical subsystems (light source, optics, sensor) as the base layer, i.e., compute complements rather than replaces premium hardware.
+- T5. KLA software "centralize[s] and analyze[s] the data produced by inspection, metrology and process systems" (10-K). Data-ownership terms: could not verify.
+
+**Applied Materials (process control)**
+- T1/T4/T5: 2025-2026 e-beam/CD-SEM product statements and AIx features could not be verified this session (search budget exhausted).
+- T2: AGS sells "factory automation software"; PDF Solutions names Applied as a competitor in fab software (PDFS 10-K). No open-agent-interface evidence found.
+- T3: AGS 23% of FY2025 revenue, "transactional and subscription service products", long-term service agreements; AGS backlog $7.1bn = 48% of total backlog (26 Oct 2025).
+- Other: Besi stake to ~20% (26 Oct 2026) points capital to packaging/hybrid bonding, not metrology.
+
+**ASML (metrology and inspection)**
+- T1. Done: YieldStar 1390 shipped 2025 with "advanced software to accelerate recipe setup"; YieldStar 550 shipped by Q3 2026 to "improve matching and accuracy" [company claims].
+- T2. VCP "brings together all the data from lithography and metrology systems" (ASML-controlled platform); a third-party SPIE 2026 paper ran ML-guided e-beam sampling on ASML's VCP in HVM automation (1398148).
+- T3. Installed Base Management 28% of Q3 2026 net sales (company-wide, not metrology-specific).
+- T4. Multibeam HMI eScan 1100 (25 beams, "10 times higher throughput than single-beam systems"); EUR 1.3bn Mistral AI stake (~11%) to use AI models across the product portfolio [company claims].
+- T5. Holistic-lithography control loops consume customer metrology data to correct exposures; ownership terms: could not verify.
+- Must go right: multibeam adoption in HVM (CEO letter expects more extensive adoption "in the next year", i.e., 2026).
+
+**Hitachi High-Tech (CD-SEM)**
+- T1. Said: AI platform "by FY2027" for recipe optimisation from SEM and etch data, PoCs with unnamed chipmakers (Nikkan Kogyo, Feb 2026) [secondary]. Done: in-factory CD-SEM adjustment automation (six unmanned hours per 24-h cycle; 70 pits monitored remotely) [secondary]; SU9600 lab FE-SEM automation recipes (Nov 2025) [secondary]; SPIE 2026 LLM CD-SEM recipe assistant (affiliation not verified).
+- T2. Said: platform to add other makers' tool data later [secondary] (openness on data ingestion, not on control).
+- T3. Services share: could not verify.
+- T4. GT2000 (100 V landing energy, high-speed scan; High-NA EUV resist) [company claim]; DL denoising/inference-error papers at SPIE 2026 (1398128; affiliation not verified).
+- T5. Platform aggregates SEM and etch data for customers' recipe optimisation; ownership rules not stated.
+- Must go right: PoCs convert into paid platform deals; CD-SEM tool-of-record position (~70%+ of CD metrology) holds against Applied's VeritySEM line.
+
+**Nova**
+- T1. Done: Nova FIT ("machine learning and modeling solutions"), Nova HPC as "foundation for Nova's Centralized Fleet Management and Control", Nova FM [company claims].
+- T2. No evidence found.
+- T3. Services ~20% (2025), 19.5% (Q3 2026); modelling software sold but revenue not split.
+- T4. "added advanced machine learning algorithms on top of our physical modeling" (20-F); Sentronics acquisition (Jan 2025).
+- T5. No evidence found.
+- Funded: cash net of convertible notes ~ $914m at end-2025. Must go right: Nova itself flags that AI "may change the balance between hardware capabilities and software or algorithms needs" and competitors "may be more successful in integrating AI".
+
+**Onto Innovation**
+- T1. AI Diffract OCD modelling software; process-control software (run-to-run, FDC, tool automation); executives describe hierarchical TTTM and say automated decisions may follow once trust is built (SemiEngineering, Mar 2026).
+- T2. No evidence found.
+- T3. Parts and services ~16% of FY2025 revenue; software licences recognised upfront.
+- T4. Atlas G6 OCD adoption (Q3 2026); Rigaku 27% stake for $719.5m (10 Aug 2026); Semilab USA lines (FAaST, CnCV, MBIR).
+- T5. Yield-management software competes with PDF Solutions (Onto 10-K).
+- Must go right: integration of Semilab, value from the Rigaku stake, and holding advanced-packaging inspection against KLA and Camtek.
+
+**Camtek**
+- T1/T2/T4/T5: no evidence of agent-run set-up, open interfaces or computation-for-hardware substitution found in the 20-F or Q3 2026 release; Hawk (Feb 2025) is hardware-led.
+- T3: service revenue not separately quantified in the text extracted; "Service revenues consist mainly of contracts charged under time and material arrangements" (20-F) [suggests low subscription share; inference].
+- Must go right: durability of AI/HBM packaging capex (~50% of revenue AI-related) and China access (49% of 2025 revenue).
+
+**Lasertec**
+- T3. Done: services JPY 58.6bn = 25.4% of FY2026 sales, +36.5% y/y.
+- T1/T2/T4/T5: no evidence found (AI/automation programmes not disclosed in the pages read).
+- Must go right: EUV mask-inspection position versus KLA (42% vs 45.9% of mask inspection and repair, 2025, secondary) and ACTIS A200HiT adoption.
+
+**Park Systems**: no verified evidence on any transition (could not verify; see 4.9).
+
+### 4.14 Test e: resilience facts (for the three AI-spending scenarios)
+- Visibility: KLA backlog $12.57bn at 30 Jun 2026 (vs $7.86bn); Onto backlog >$1.3bn (Q3 2026); Camtek "visibility a year ahead", 2027 outlook >$800m; ASML says planned 2027-2028 supply "will not fully meet the demand"; KLA expects "significant growth" in CY2027 WFE.
+- AI concentration: Camtek ~50% of revenue AI-related (20-F); Onto Q3 2026 revenue +88% y/y; Nova record memory and advanced-packaging revenue (Q3 2026); KLA advanced-packaging process-control systems ~ $1.1bn CY2026E (+>70%).
+- Recurring cushion (latest): ASML IBM 28% (Q3 2026, company-wide); Lasertec services 25% (FY2026); KLA services 23% (FY2026) / 20% (Sept 2026 qtr); AMAT AGS 23% (FY2025); Nova ~20% (2025); Onto ~16% (FY2025); Camtek not disclosed (mainly T&M).
+- China dependence: Camtek 49% (2025); Nova 33% (2025); KLA 29.8% (FY2026), 34.5% (Sept 2026 qtr); ASML 29.1% (2025); AMAT 28% (9M FY2026); Onto 6.1% (9M 2026).
+- Customer concentration: KLA one customer ~19% (FY2026); Nova Customer A 23% (2025); Onto four customers >10% together 57% (9M 2026); ASML four customers 61.2% (2025); PDF Solutions three customers 53% (2025).
+- Israel: Nova (Rehovot; Israel 43% of long-lived assets); Camtek (Migdal HaEmek; cites the Iran-Israel war since 28 Feb 2026 disrupting air and sea routes); KLA (Migdal HaEmek, Yavne); AMAT (facilities in Israel per 10-K).
+- Enforcement: AMAT $253m BIS settlement (Feb 2026); KLA shipments held by US Customs.
+- Cycle position: Lasertec orders more than doubled in FY2026 after a weak FY2025 while sales fell 8.3% (orders lead sales); KLA WFE view for CY2026 "low $150 billion range".
+
+## 5. Companies considered and left out (with reasons)
+- Tokyo Electron and Canon: process/lithography makers offering AI maintenance and data services (Canon "Lithography Plus"); not chip-measurement tools. — [NewSwitch 2026-02-09](https://newswitch.jp/p/48308)
+- Teradyne, Advantest (as testers), Nordson (acoustic microscopy), Modus Test: quoted on matching; electronic test is covered elsewhere in the report. — [Semiconductor Engineering 2026-03-10](https://semiengineering.com/tool-matching-getting-tougher-across-test-metrology/)
+- Siemens EDA and other EDA agent vendors: design-side agents, not instrument set-up.
+- Ushio, Canon (packaging lithography) and GigaVis (panel inspection): named by Onto as competitors in adjacent markets; not core metrology.
+- Merck: named by Nova as a packaging/chemical-metrology competitor; metrology is not its main business.
+- Not left out by judgment but not verified this session (no section written): A&D HOLON, Tokyo Seimitsu, SCREEN, JEOL, Advantest mask CD-SEM, Lynceus, Tignis (inside Cohu), Nextin, Auros Technology, 精测电子/上海精测, 睿励 RSIC (beyond the CSET share line), 东方晶源, Taiwanese local inspection firms, Indian firms.
 
 ## 6. Where the evidence contradicts the thesis
+1. The background item is not an AI agent: the 2026 table-top EUV microscope's "self-calibration" is model-based joint optimisation (autodiff phase retrieval) of geometric parameters; it resolves 43.5 nm half-pitch in ~15 min per scan on a lab system with no fab partner. It shows the instrument's physics model acting as a judge, not agents tuning instruments, and it is far from fab-tool performance. — [Light: AM 2026](https://www.light-am.com/article/doi/10.37188/lam.2026.112)
+2. Matching and calibration were already automated with classical statistics and ML before LLM agents (standard wafers, offsets, SPC, ML bias models, VM, automatic recipe optimisation). The documented LLM use in 2026 helps humans (a beginner-operator recipe assistant at SPIE 2026; KLA "Digital Mentor"), so the incremental value of agents sits in knowledge transfer and set-up labour rather than in the measurement loop itself. — [SPIE 13981](https://spie.org/Publications/Proceedings/Volume/13981); [KLA Investor Day 2026](https://d1io3yog0oux5.cloudfront.net/_7791115a123b86b3f10b1a5eb5210224/klatencor/db/1166/10653/file/2026+Investor+Day+Master+Final_IR+copy.pdf)
+3. The judge is not only the instrument's reading on a known standard: at advanced nodes the finest matching "requires access to fab-level device data, such as metrology results and functional test outcomes" (Onto), which the fab holds and tool makers often lack. — [Semiconductor Engineering 2026-03-10](https://semiengineering.com/tool-matching-getting-tougher-across-test-metrology/)
+4. Value capture so far points to the incumbent tool maker, not an independent software layer: KLA sells automated matching and agentic expertise inside multi-year service contracts (services $3.13bn in FY2026), while the main independent connectivity/analytics firm, PDF Solutions, had $219m revenue in 2025 with three customers at 53%. — [KLA 10-K FY2026](https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000027/0000319201-26-000027.pdf); [PDFS 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1120914/000143774926005366/pdfs20251231d_10k.htm)
+5. Closed interfaces are only a partial obstacle: data interfaces are standardised (SECS/GEM, GEM300, EDA/Interface A) and widely shipped (Cimetrix on ~8,000 tools shipped in 2025; secureWISE remote access across >100 OEMs). The stated binding constraints are trust before automated decisions (Onto) and access to fab data; recipe/model-level control terms could not be verified.
+6. Lock-in favours incumbents: KLA and Nova both state that once a fab selects a supplier's tool for a production-line application it relies on it "for an extended period", so an agent layer is unlikely to move tool-of-record positions quickly. — KLA 10-K FY2026; Nova 20-F FY2025.
+7. Share data are inconsistent: KLA says its CY2025 share is "approximately 7x greater than the nearest competitor" (letter 29 Apr 2026, unnamed industry reports), but the TechInsights figures via CSET give KLA 56.8% and Applied 11.2% (~5.1x); Gartner 2024 gave 6.5x. Definitions differ (e.g., how e-beam is classed). — [KLA Q3 FY26 letter](https://d1io3yog0oux5.cloudfront.net/_a357bfc9113388e37f3bfcb2ea2f0b64/klatencor/db/1117/10655/letter_to_shareholders/KLA+Shareholder+Letter+-+Q3+FY26.pdf); [chipsupplychain.org](https://chipsupplychain.org/metrology-and-inspection/)
+8. Hardware-damage cost is lower for metrology than for accelerators or microscopes; the larger agent risk in fabs is production risk (mis-dispositioned wafers, excursions) [inference; no source found].
+9. Policy exposure may matter more than the agent transition near term: US controls (3B993.q) target exactly leading-edge inspection and overlay metrology, yet China remained 29-49% of revenue for KLA, Applied, ASML, Nova and Camtek in 2025-2026 on mature-node demand.
 
-## 7. What could not be verified
+## 7. What could not be verified (and what was tried)
+- Status of the US Affiliates Rule after its suspension ended on 10 Nov 2026 (two days before these notes): not mentioned in the KLA, Onto, Bruker or PDF Solutions filings of 29 Oct-9 Nov 2026; web search budget was exhausted.
+- Japan METI 2025-2026 changes to metrology/inspection export controls: not retrieved.
+- Statements by TSMC, Samsung, SK hynix, Micron, Intel, Rapidus or SMIC on LLM-agent recipe creation, tool matching or self-calibration in production: none found in the SPIE 2026 metrology volume. ASMC 2026 and SEMICON 2026 programmes not searched. The SEMI "Agentic AI" event page returned HTTP 403.
+- Affiliations of the SPIE 2026 LLM CD-SEM recipe paper (139814N) and of the VM tool-matching paper (1398107): SPIE pages render dynamically and returned no content.
+- Underlying CSET/ETO TechInsights data: interactive page did not render; all class shares are via an aggregator page and labelled secondary.
+- Applied Materials 2025-2026 e-beam launches, AIx agent features and Israel PDC unit specifics; SPIE 2024 CD-SEM fleet-matching paper affiliation (page empty).
+- Hitachi High-Tech segment financials, services share and China share; Lasertec China share, customer concentration and High-NA status (IR data pages dynamic).
+- Park Systems financials, semiconductor share, China share (IR pages dynamic; DART not tried).
+- ASML Q3 2026 regional split for metrology (only company-wide data used).
+- What a fab can or cannot script on metrology tools (recipe editing, raw signals, model libraries) and tool makers' data-ownership terms.
+- Thermo Fisher Vulcan Automated Lab and TEM metrology; Advantest mask CD-SEM; A&D HOLON; Tokyo Seimitsu; SCREEN; JEOL; Lynceus; Tignis; Nextin; Auros; Chroma's own inspection business; 精测电子; 东方晶源; Indian firms.
+- Which "real chip" was imaged in the EUV ptychography paper (not disclosed by the authors).
+- US patent 12,474,281 (ML in-line tool matching): assignee not verified (USPTO PDF returned HTTP 403).
 
 ## 8. Sources with dates
 - KLA Corporation, Form 10-K FY ended 30 Jun 2026, filed 2026-08-06: https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000027/0000319201-26-000027.pdf
 - Chen, Xu, Wang, Li ... Shi, Fan, "Table-top extreme ultraviolet grazing-reflection ptychography with full-pose self-calibration", Light: Advanced Manufacturing 7:112, published online 2026-09-09: https://www.light-am.com/article/doi/10.37188/lam.2026.112
 - EurekAlert press release, Light Publishing Center, 2026-10-28: https://www.eurekalert.org/news-releases/1149569
 - chipsupplychain.org, "How wafer metrology and inspection work", updated 2026-10-29 (aggregator of CSET/TechInsights data): https://chipsupplychain.org/metrology-and-inspection/
+
+Company filings and investor material (primary)
+- KLA, Letter to Shareholders, June 2026 quarter, reported 2026-07-28: https://d1io3yog0oux5.cloudfront.net/_7791115a123b86b3f10b1a5eb5210224/klatencor/db/1117/10668/letter_to_shareholders/KLA+Earnings+Shareholder+Letter+-+Q4+FY26.pdf
+- KLA, Letter to Shareholders, March 2026 quarter, reported 2026-04-29: https://d1io3yog0oux5.cloudfront.net/_a357bfc9113388e37f3bfcb2ea2f0b64/klatencor/db/1117/10655/letter_to_shareholders/KLA+Shareholder+Letter+-+Q3+FY26.pdf
+- KLA, Investor Day deck, 2026-03-12: https://d1io3yog0oux5.cloudfront.net/_7791115a123b86b3f10b1a5eb5210224/klatencor/db/1166/10653/file/2026+Investor+Day+Master+Final_IR+copy.pdf
+- KLA, Q1 FY2027 earnings release (8-K ex. 99.1), 2026-10-28: https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm
+- KLA, 10-Q for quarter ended 30 Sep 2026, filed 2026-10-29: https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm
+- Applied Materials, 10-K FY2025 (FY ended 26 Oct 2025), filed 2025-12-12: https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/amat-20251026.htm
+- Applied Materials, 10-Q Q3 FY2026 (quarter ended 26 Jul 2026), filed 2026-08-20: https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm
+- Applied Materials, press release on Besi stake (8-K ex. 99.1), 2026-10-26: https://www.sec.gov/Archives/edgar/data/6951/000162828026067303/ex991prforprojectbasil.htm
+- ASML, Annual Report 2025 on Form 20-F, filed 2026-02-25: https://www.sec.gov/Archives/edgar/data/937966/000162828026011378/asml-20251231.htm
+- ASML, Q3 2026 results press release (6-K), 2026-10-14: https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm
+- ASML, Q3 2026 investor presentation (6-K), 2026-10-14: https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/a2026_10x14xpresentation.htm
+- Nova, Form 20-F FY2025, filed 2026-02-17: https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm
+- Nova, Q3 2026 results (6-K), 2026-11-05: https://www.sec.gov/Archives/edgar/data/1109345/000117891326005034/zk2636340.htm
+- Nova, Investor Day notice (6-K), 2026-11-02: https://www.sec.gov/Archives/edgar/data/1109345/000117891326004951/zk2636293.htm
+- Onto Innovation, 10-K FY2025 (FY ended 3 Jan 2026), filed 2026-02-24: https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm
+- Onto Innovation, Q3 2026 release (8-K ex. 99.1), 2026-11-09: https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm
+- Onto Innovation, 10-Q Q3 2026, filed 2026-11-09: https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm
+- Camtek, Form 20-F FY2025, filed 2026-03-19: https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/zk2634678.htm
+- Camtek, Q3 2026 results (6-K), 2026-11-04: https://www.sec.gov/Archives/edgar/data/1109138/000117891326005000/zk2636329.htm
+- PDF Solutions, 10-K FY2025, filed 2026-02-24: https://www.sec.gov/Archives/edgar/data/1120914/000143774926005366/pdfs20251231d_10k.htm
+- PDF Solutions, 10-Q Q3 2026, filed 2026-11-05: https://www.sec.gov/Archives/edgar/data/1120914/000143774926035296/pdfs20260930_10q.htm
+- Cohu, 10-K FY2025, filed 2026-02-17: https://www.sec.gov/Archives/edgar/data/21535/000143774926004339/cohu20251227_10k.htm
+- Bruker, 10-Q Q3 2026, filed 2026-11-05: https://www.sec.gov/Archives/edgar/data/1109354/000119312526449731/brkr-20260930.htm
+- Lasertec, FY2026 Business Report (FY ended 30 Jun 2026), dated Sept 2026: https://www.lasertec.co.jp/en/ir/plan/message.html
+- Lasertec, corporate strategy page (accessed 2026-11-12): https://www.lasertec.co.jp/en/ir/plan/strategy.html
+- Park Systems, website (accessed 2026-11-12; copyright 2024): https://www.parksystems.com/en/
+- Hitachi High-Tech, GT2000 launch release, 2023-12-12: https://www.hitachi-hightech.com/us/en/news/nr20231212.html
+- Hitachi Hyoron, "2026年日立技術の展望 ヘルスケア/計測・分析", 2026-02-24: https://www.hitachi.com/ja-jp/insights/hitachihyoron/hitachi-technology/2026/13/
+- Skyverse (深圳中科飞测), 2025 annual report summary, cninfo, 2026-04-25: https://static.cninfo.com.cn/finalpage/2026-04-25/1225182755.PDF
+- Gauss Labs, Panoptes VM page (accessed 2026-11-12): https://www.gausslabs.ai/vm
+
+Government and standards (primary)
+- US BIS interim final rule, 89 FR 96790, published 2024-12-05 (FR Doc. 2024-28270): https://www.govinfo.gov/content/pkg/FR-2024-12-05/pdf/2024-28270.pdf
+- SEMI SECS/GEM, GEM300 and EDA (Interface A) standard numbers as listed in PDF Solutions 10-K FY2025 (above); SEMI standards pages not opened.
+
+Conference papers and technical presentations
+- SPIE Proc. 13981, Metrology, Inspection, and Process Control XL (SPIE Advanced Lithography + Patterning 2026), published 2026-04-22: https://spie.org/Publications/Proceedings/Volume/13981
+- Synopsys plenary, M. Buehler-Garcia, "Scaling Computational Lithography with GPUs & AI", SPIE Photomask Technology + EUV Lithography 2026 (Monterey): https://www.synopsys.com/content/dam/synopsys/silicon-engineering/documents/presentations/spie-puv-2026-plenary.pdf
+- SPIE Proc. 12955 (2024), "Data-driven CDSEM fleet matching in sub-Å era" (page content not retrievable): https://journals.spiedigitallibrary.org/conference-proceedings-of-spie/12955/1295519/Data-driven-CDSEM-fleet-matching-in-sub-%c3%85-era/10.1117/12.3010756.full
+- Jena group, "Material-specific high-resolution table-top extreme ultraviolet microscopy", Light: Science & Applications (2022): https://www.nature.com/articles/s41377-022-00797-6
+
+Trade press and other secondary
+- Semiconductor Engineering, L. Peters, "Tool Matching Getting Tougher Across Test & Metrology", 2026-03-10: https://semiengineering.com/tool-matching-getting-tougher-across-test-metrology/
+- NewSwitch / Nikkan Kogyo, "半導体装置、AIで効率稼働・メンテ広がる…日立ハイテク・東京エレ・キヤノンも", 2026-02-09 (paper 2026-02-06): https://newswitch.jp/p/48308
+- NewSwitch / Nikkan Kogyo, Hitachi High-Tech SU9600 FE-SEM, 2025-11-19: https://newswitch.jp/p/47586
+- MONOist, Hitachi High-Tech CD-SEM "Mother Site" smart factory, 2025-03-31: https://monoist.itmedia.co.jp/mn/spv/2503/31/news128_2.html
+- EE Times Japan, Applied Materials VeritySEM 10 (High-NA CD-SEM), 2023-03-13: https://eetimes.itmedia.co.jp/ee/spv/2303/13/news037.html
+- IPAuthor prosecution summary of FEI application US 18/747,753 (accessed 2026-11-12): https://insights.ipauthor.com/18747753.html
+- SEMICON West 2027 Smart Manufacturing call for abstracts (topic list): https://www.semiconwest.org/programs/call-for-abstracts/smart-manufacturing-2027
+- GMI market-research page (share estimate not used): https://www.gminsights.com/industry-analysis/semiconductor-process-control-equipment-market
