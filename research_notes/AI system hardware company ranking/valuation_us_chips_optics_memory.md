@@ -15,7 +15,7 @@ Data conventions (apply throughout):
 ## Key Question 1: What do current prices imply about growth and margins over the next two to three years, and how does that compare with guidance and with earlier cycle peaks?
 
 ### Takeaway
-At 11 Nov 2026 closes, the market caps all but one Tier 1 name below what consensus earnings would justify at a 20x exit multiple only where it doubts durability. The clearest case is Micron. At about 4.6x FY2027 and 3.9x FY2028 consensus EPS, the price implies "normalized" EPS of roughly $68–81, against $176.50 FY2027 consensus. In other words the market prices the record 86–87% gross margins as transitory, much as it did at the 2017–18 peak. NVIDIA, at 18.6x FY2027 and 10.9x FY2028 consensus, needs almost no EPS growth after FY2028. Intel and Astera Labs, by contrast, need roughly 28–40% a year of EPS growth after FY2027 (Intel at 15–20x exit, Astera at 15–20x exit). Broadcom, Marvell, Lumentum, Coherent, Credo, Fabrinet and Amkor sit in between, needing roughly 3–27% a year depending on the exit multiple. Consensus for almost every name assumes the "successor" product arrives on schedule: Rubin, custom XPUs, co-packaged-optics lasers, optical DSPs and 14A foundry. The multiples on the optics and connectivity names are already below their own 2025–26 peaks.
+At 11 Nov 2026 closes, prices sit far below what consensus earnings would justify only where the market doubts that today's earnings will last. The clearest case is Micron. At about 4.6x FY2027 and 3.9x FY2028 consensus EPS, the price implies "normalized" EPS of roughly $68–81, against $176.50 FY2027 consensus. In other words the market prices the record 86–87% gross margins as transitory, much as it did at the 2017–18 peak. NVIDIA, at 18.6x FY2027 and 10.9x FY2028 consensus, needs almost no EPS growth after FY2028. Intel and Astera Labs, by contrast, need roughly 28–40% a year of EPS growth after FY2027 (Intel at 15–20x exit, Astera at 15–20x exit). Broadcom, Marvell, Lumentum, Coherent, Credo, Fabrinet and Amkor sit in between, needing roughly 3–27% a year depending on the exit multiple. Consensus for almost every name assumes the "successor" product arrives on schedule: Rubin, custom XPUs, co-packaged-optics lasers, optical DSPs and 14A foundry. The multiples on the optics and connectivity names are already below their own 2025–26 peaks.
 
 ### Cited Findings
 
@@ -193,7 +193,7 @@ At 11 Nov 2026 closes, the market caps all but one Tier 1 name below what consen
    - Size: market cap $148.20B; EV $149.56B — same source
    - 52-week closing range $73.73 (4 Feb 2026) to $316.43 (4 Jun 2026); intraday $70.69–$329.88 — [Nasdaq history MRVL](https://api.nasdaq.com/api/quote/MRVL/historical?assetclass=stocks&fromdate=2022-12-28&limit=9999&todate=2026-11-12)
    - Returns: YTD +98.6%; 12 months +89.0%; since 30 Dec 2022 +356%. Drawdown -46.7%. Same source.
-   - The shares fell 12.72% on 2 Nov, the day the Lumentum deal was announced — [TipRanks, 3 Nov 2026](https://www.tipranks.com/news/nvidia-ceo-backed-marvells-115-billion-lumentum-deal)
+   - The shares fell 12.72% on 2 Nov, the day the Lumentum deal was announced — [TipRanks, 3 Nov 2026](https://www.tipranks.com/news/marvell-stock-mrvl-why-wall-street-is-split-on-the-115b-lumentum-acquisition)
 2. **Multiples**
    - Current — [StockAnalysis MRVL statistics](https://stockanalysis.com/stocks/mrvl/statistics/):
      - Trailing GAAP P/E 56.71
@@ -473,7 +473,7 @@ At 11 Nov 2026 closes, the market caps all but one Tier 1 name below what consen
    - Consensus, 11 analysts: FY2026 revenue $7.53B (+12.2%), FY2027 $8.59B (+14.1%); EPS $2.50 and then $2.78; FY2026 gross margin 17.08% — [StockAnalysis AMKR forecast](https://stockanalysis.com/stocks/amkr/forecast/)
    - Q4 2026 guidance: revenue $1.9–2.0B; gross margin 18.0–19.0%; EPS $0.65–0.75 — [Amkor Q3 2026 8-K, 26 Oct 2026](https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/0001047127-26-000049.txt). Consensus had been $0.78 — [TheFly via TipRanks, 26 Oct 2026](https://www.tipranks.com/news/the-fly/amkor-technology-sees-q4-eps-65c-75c-consensus-78c-thefly-news)
    - Reverse-DCF: +2.6%/yr (20x) to +10.4%/yr (15x) after FY2027. At the ten-year median of 12.9x it is about +15%/yr. Computed.
-   - Bridge and successor: consensus (+14% FY2027) and the multiple assign little value to a large 2.5D or US-plant step-up. The successor is the Arizona campus, expanded to $12B with phase 2 — [Business Wire, 8 Sep 2026](https://www.businesswire.com/news/home/20260908126184/en/Amkor-Technology-Announces-Phase-2-of-Arizona-Advanced-Packaging-and-Test-Campus-Expands-Investment-to-12-Billio). Amkor also announced additional Korea investments under its multi-year NVIDIA agreements — [TheFly via TipRanks, 21 Oct 2026](https://www.tipranks.com/news/the-fly/amkor-technology-nvidia-partner-for-ai-infrastructure-thefly-news)
+   - Bridge and successor: consensus (+14% FY2027) and the multiple assign little value to a large 2.5D or US-plant step-up. The successor is the Arizona campus, expanded to $12B with phase 2 — [Business Wire, 8 Sep 2026](https://www.businesswire.com/news/home/20260908126184/en/Amkor-Technology-Announces-Phase-2-of-Arizona-Advanced-Packaging-and-Test-Campus-Expands-Investment-to-12-Billion/). Amkor also announced additional Korea investments under its multi-year NVIDIA agreements — [TheFly via TipRanks, 21 Oct 2026](https://www.tipranks.com/news/the-fly/amkor-technology-nvidia-partner-for-ai-infrastructure-thefly-news)
 4. **Cycle position**
    - Q3 2026 (ended 30 Sep; reported 26 Oct) — [Amkor Q3 2026 8-K](https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/0001047127-26-000049.txt):
      - Net sales $1.991B (flat y/y, +5% q/q)
@@ -620,7 +620,7 @@ At 11 Nov 2026 closes, the market caps all but one Tier 1 name below what consen
      - Citi $440 from $420 (Buy)
 5. **Near-term events**
    - Earnings: Q2 FY2027 results, expected early February 2027 (not confirmed).
-   - Coherent was the best S&P 500 performer, with AMD, since the 5 Nov sell-off — [Barron's, 10 Nov 2026](https://www.barrons.com/articles/amd-stock-broadcom-nvidia-ai-chips-2b96c1f1)
+   - Coherent was the best S&P 500 performer, with AMD, since the 5 Nov sell-off — [Barron's, 10 Nov 2026](https://www.barrons.com/articles/amd-stock-coherent-ai-selloff-e457aa02)
 6. **Access**
    - Listing: NYSE; Pennsylvania corporation — [SEC submissions, COHR](https://data.sec.gov/submissions/CIK0000820318.json)
    - Liquidity: average daily value traded about $2.26B (computed)
@@ -743,7 +743,7 @@ At 11 Nov 2026 closes, the market caps all but one Tier 1 name below what consen
    - Q3 2026 (reported 3 Nov) — [GlobeNewswire release](https://www.globenewswire.com/news-release/2026/11/03/3394769/0/en/astera-labs-reports-third-quarter-2026-financial-results.html); [TheFly via TipRanks](https://www.tipranks.com/news/the-fly/astera-labs-reports-q3-eps-1-32-consensus-1-19-thefly-news):
      - Revenue $584.9M (+49% q/q, +154% y/y)
      - Non-GAAP gross margin 72.4%; non-GAAP EPS $1.32 against $1.19 consensus
-   - The shares fell despite the beat — [Barron's, 4 Nov 2026](https://www.barrons.com/articles/amd-stock-broadcom-nvidia-ai-chips-2b96c1f1)
+   - The shares fell despite the beat — [Barron's, 4 Nov 2026](https://www.barrons.com/articles/astera-labs-stock-earnings-334d76c4)
    - Broker target changes on 4 Nov (TheFly via TipRanks):
      - RBC $400 from $500
      - TD Cowen $225 from $300 (Hold)
