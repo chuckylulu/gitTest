@@ -124,7 +124,7 @@ Regions with thin coverage: mainland China (switch vendors, YOFC, T&S, domestic 
 
 ## 2. Evidence on tests (a) to (e) for key companies
 
-Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning, Amphenol and Marvell. Cisco, Celestica, Accton, Credo and Ciena get brief financial profiles at the end of this section.
+Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning, Amphenol and Marvell, plus Fujikura, added as a seventh (section 2.7b) once its Japanese filings were retrieved. Cisco, Celestica, Accton, Credo and Ciena get brief financial profiles in section 2.7, and Sumitomo Electric and Furukawa in 2.7b.
 
 ### 2.1 NVIDIA — networking and optics (weight in group: about 18% of revenue)
 
@@ -481,6 +481,17 @@ The transitions are numbered as in the brief: (1) copper to optical between proc
 - **SAID/DONE:** bought CCS ($5.1B FY26 sales expected, ahead of plan); Communications Solutions +51% organic; buying Dexgreen (FTTH fibre).
 - **Funded:** yes (FCF $1.6B/quarter).
 - **Verdict: COHERENT**, with the caveat that its exposure to NVLink copper content was not verified.
+
+### Fujikura
+- **Must pass:** a beneficiary of (1) and (2), like Corning: more fibre and connectivity per GPU as scale-up goes optical.
+- **SAID/DONE:**
+  - Information & Communications sales +91.6% and operating profit +194.8% in H1 FY26.
+  - Won optical-component orders by meeting short lead times (company statement).
+  - Pruning non-core power cable (Nishi Nippon Electric Wire stake sale, 5 Nov 2026).
+  - FY26 sales guide raised to ¥1,768B (10 Nov 2026).
+- **Funded:** yes (net cash ~¥137B; TTM FCF ~¥181B, aggregator).
+- **Not found:** capacity-expansion plans, hyperscaler LTAs, CPO-specific products.
+- **Verdict: COHERENT on the evidence available, but path evidence is thin.**
 
 ### Marvell
 - **Must pass:** (1), (2), (3).
