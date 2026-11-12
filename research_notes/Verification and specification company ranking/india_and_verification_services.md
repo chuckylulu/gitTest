@@ -155,7 +155,7 @@ The segment consolidated quickly in 2024-2026. Outside India, the big engineerin
 
 ### Inferences
 - **Share of verification.** Proxies only: verification is 28% of semiconductor-GCC hiring demand in India (Careernet, KQ2) and 49% of IC/ASIC project time (Wilson 2026, KQ2). On that basis, verification is plausibly a quarter to a half of these firms' semiconductor-services effort. This is my inference, not a reported figure.
-- **Billing.** Where disclosed (LTTS), T&M still dominates (64.4%) but is falling toward fixed price. MosChip's and Cyient's turnkey ASIC work is milestone-based. The billing model is undisclosed elsewhere.
+- **Billing.** Where disclosed (LTTS), T&M still dominates (64.4%) but is falling toward fixed price. MosChip's turnkey ASIC revenue is milestone-based [PRIMARY]. Cyient's custom ASIC work combines design with production supply [PRIMARY]. The billing model is undisclosed elsewhere.
 - **Consolidation.** Strategic and financial buyers were paying for VLSI engineer pools in 2025-2026: Virtusa (SmartSoC), Quest Global (BITSILICA), MosChip (Vayavya), and Tessolve's funding (TPG, Vector Line). That is more consistent with sustained demand than with a collapsing labour market, although scale-seeking under margin pressure is an alternative reading.
 
 ### Gaps
@@ -445,7 +445,7 @@ All four sell engineering labour, the weakest position under test (a). None owns
 - The only outside evidence is validation by investors:
   - TPG Growth led a USD 150 mn round in 2025 (article 2 Sep 2025);
   - Novo Tellus invested USD 40 mn in 2021;
-  - Vector Line Capital invested USD 75 mn in Oct 2026: a US, semiconductor-only investor with more than USD 1.6 bn of assets under management, making its first India investment.
+  - Vector Line Capital invested USD 75 mn in Oct 2026: a US, semiconductor-only investor with more than USD 1.6 bn of assets under management, making its first India investment. Existing investors TPG and Novo Tellus remain.
   - Sources: https://inc42.com/... (URL truncated in the earlier pass's notes); https://finance.yahoo.com/news/tessolve-secures-150m-investment-tpg-093217479.html [SECONDARY]; https://cxotoday.com/media-coverage/tessolve-semiconductor-a-hero-electronix-company-secures-75-million-investment-from-vector-line-capital/ [COMPANY CLAIM, press release, 11 Oct 2026]; https://inc42.com/buzz/hero-electronix-owned-tessolve-secures-75-mn-to-expand-semiconductor-capabilities/ [SECONDARY], 12 Oct 2026; https://dealroom.co/news/161556-tessolve-raises-75m-to-fund-acquisitions-in-chip-services-push/ [SECONDARY].
 - Customers are "18 of the world's top 20 semiconductor companies" and "leading hyperscalers" [COMPANY CLAIM] (AnySilicon, AIM). No independent share or qualification data were found.
 
@@ -670,6 +670,16 @@ All prices and multiples are as of 11-12 Nov 2026 [SECONDARY aggregators: Screen
 | Cyient | Rs 1,089 (Screener); 1,088 | Rs 12,107 crore (Screener) vs INR 113,290 mn (stockanalysis; share-count basis differs) | 29.4 (Screener) / 32.1 [19.4-32.4] | 12.7 [9.3-18.8]; P/B 2.05 | DET (services) is the bulk; split not found | High/low Rs 1,277/750; net debt/equity +0.20 |
 | MosChip | Rs 170 | Rs 3,324 crore (INR 33,096 mn) | Not meaningful (TTM loss); FY26 81.8 [81.8-169.2] | 210.8 TTM [60.9-84.7]; EV/Sales 6.31 [4.92-6.92]; P/B 8.35 | Not disclosed; turnkey ASIC is milestone-based | 52-week Rs 147-256; book value Rs 20.7; promoters 39.17%; FIIs 0.36% |
 | Sasken | Rs 1,715 (Screener); 1,730 at 3:30pm | Rs 2,611 crore (INR 26,258 mn) | 29.5 (Screener) / 31.3 [10.7-46.8] | 18.9 [10.1-139.1] | Not disclosed | High/low Rs 2,785/991 |
+
+Other stockanalysis data (Current, 11 Nov 2026):
+
+| Company | Enterprise value | Other ratios |
+|---|---|---|
+| LTTS | INR 422,353 mn | ROE 20.2% |
+| Tata Elxsi | INR 225,693 mn | ROE 23.9% |
+| Cyient | INR 129,508 mn | ROE 6.9% |
+| MosChip | INR 33,339 mn | Net debt/equity +0.06; ROE -4.1% |
+| Sasken | INR 25,486 mn | ROIC 8.7%; ROE 10.1%; net debt/equity -0.11 (net cash) |
 
 Sources: https://www.screener.in/company/LTTS/consolidated/; https://www.screener.in/company/TATAELXSI/; https://www.screener.in/company/CYIENT/consolidated/; https://www.screener.in/company/MOSCHIP/consolidated/; https://www.screener.in/company/SASKEN/consolidated/; https://stockanalysis.com/quote/nse/LTTS/financials/ratios/; https://stockanalysis.com/quote/nse/TATAELXSI/financials/ratios/; https://stockanalysis.com/quote/nse/CYIENT/financials/ratios/; https://stockanalysis.com/quote/nse/MOSCHIP/financials/ratios/; https://stockanalysis.com/quote/nse/SASKEN/financials/ratios/.
 
