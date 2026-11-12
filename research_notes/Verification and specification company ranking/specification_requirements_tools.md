@@ -1,0 +1,12 @@
+# Specification and requirements tools worldwide: who writes and owns the specifications, and can AI write them well enough to be trusted?
+
+Research date: 12 November 2026 (all web checks performed on this date unless stated). STATUS: WORK IN PROGRESS - partial notes saved progressively.
+
+Tag key: [PRIMARY] filing, paper or official document; [INDEPENDENT] confirmed by an outside party; [COMPANY CLAIM] stated by the company only; [SECONDARY] press or analyst report only; [UNVERIFIED] could not verify.
+
+## Working log of confirmed facts (to be reorganised into the final structure)
+
+- Arteris Q3 2026 (quarter ended 30 Sep 2026, released 5 Nov 2026): revenue $25.8M (+48% y/y); ACV plus royalties $103.8M (+39%); RPO $135.5M (+29%); GAAP gross margin 87%, non-GAAP 89%; GAAP operating loss $11.3M; non-GAAP operating loss $1.2M; FCF -$2.1M; TTM variable royalties $9.4M (+71%); cash and investments about $120.3M; no bank debt (vendor financing $4.3M); goodwill $35.2M (from $4.2M) after Cycuity; net cash paid for business combination $11.2M (9 months); FY2026 guidance revenue $98.5-99.5M, ACV+royalties $103-107M, non-GAAP operating loss $7.2-9.2M, FCF $5-9M. Revenue mix Q3: licensing, support and maintenance $22.4M; variable royalties $2.3M; professional services and other $1.1M. [PRIMARY] https://www.sec.gov/Archives/edgar/data/0001667011/000162828026071063/exhibit991q3fy268-k.htm
+- arXiv 2609.05658 (submitted 4 Sep 2026): "Robustness of LLM-Generated SystemVerilog Assertions to Semantics-Preserving RTL Transformations", sole author FNU Aditi; no Arm affiliation visible on the abstract page; two open models (Qwen2.5-Coder-7B, DeepSeek-Coder-V2-Lite); 9.7% to 27.0% of behaviours correct on original RTL became incorrect after a semantics-preserving transformation. [PRIMARY] https://arxiv.org/abs/2609.05658
+- DeepMind AlphaProof Code (announced 10 Nov 2026): about 6.5M lines of Lean proof; trusted specification about 18,000 lines of statements/definitions plus about 8,000 lines of AArch64 semantics and symbol names (about 26,000 total); human experts reviewed every specification. [PRIMARY] https://google-deepmind.github.io/code-verification/ and https://deepmind.google/blog/introducing-alphaproof-code/
+- Arm Q2 FYE27 (quarter ended 30 Sep 2026, released 4 Nov 2026): revenue $1.44B (+27%); licence and other $773M (+50%); royalty $670M. [PRIMARY] https://newsroom.arm.com/news/arm-q2-fye27-results
