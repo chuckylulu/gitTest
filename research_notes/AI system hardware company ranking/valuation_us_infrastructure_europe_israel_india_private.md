@@ -358,7 +358,7 @@ Several of these "private" names are no longer independent. CoolIT now belongs t
 On forward P/E, the Tier 1 US names (16-35x) are broadly in line with Taiwanese and Hong Kong peers (15-38x). MPWR and GLW sit at the top of their groups, and TEL and ASMPT at the bottom. The Indian names (except Sterlite) trade far above everyone else.
 
 ### Cited Findings
-Forward P/E and EV/EBITDA are from Stock Analysis (11-12 Nov 2026). Returns are from Yahoo Finance for Tier 1 and Tier 2, and the Stock Analysis 52-week change for Asian and global peers. Drawdown is measured from the 52-week closing high.
+Forward P/E and EV/EBITDA are from Stock Analysis (11-12 Nov 2026). The 12-month change is from Yahoo Finance for Tier 1 and Tier 2 (US and European/TASE names on the 11 Nov 2026 close; Indian names on the 12 Nov close), and is the Stock Analysis 52-week change for Asian and global peers. Drawdown is from the 52-week closing high (European names measured at the 12 Nov intraday price). For Munters, the 12-month figure swings from -10.5% to -22.6% depending on whether 11 or 12 Nov 2025 is the base, so it is base-date sensitive.
 
 | Name (venue) | Group | Fwd P/E | EV/EBITDA | EV/Sales | 12m change | From 52w high |
 |---|---|---|---|---|---|---|
@@ -366,7 +366,7 @@ Forward P/E and EV/EBITDA are from Stock Analysis (11-12 Nov 2026). Returns are 
 | TE Connectivity (NYSE) | Interconnect | 16.13 (14.4x FY28E) | 13.30 | 3.39 | -11.2% | -11.4% |
 | Lotes (TPE:3533) | Interconnect peer | 20.22 | 14.47 | 5.19 | +34.4% (52w) | n/a |
 | BizLink (TPE:3665) | Interconnect peer | 15.56 | 17.24 | 3.57 | -2.3% (52w) | n/a |
-| Huber+Suhner (SIX) | Interconnect/fibre | 28.55 | 25.27 | 3.46 | +17.2% | -40.8% |
+| Huber+Suhner (SIX) | Interconnect/fibre | 28.55 | 25.27 | 3.46 | +18.3% | -40.8% |
 | Corning (NYSE) | Fibre/optical | 28.78 (26.5x FY27E) | 24.74 | 6.23 | +37.0% | -52.9% |
 | Fujikura (TYO:5803) | Fibre peer | 13.86 | 12.66 | 3.23 | -6.6% (52w) | n/a |
 | Sterlite Technologies (NSE) | Fibre | 21.81 | 23.85 | 5.00 | +530.8% | -30.0% |
@@ -375,8 +375,8 @@ Forward P/E and EV/EBITDA are from Stock Analysis (11-12 Nov 2026). Returns are 
 | Asia Vital Components (TPE:3017) | Cooling peer | 20.27 | 18.98 | 5.25 | +80.2% (52w) | n/a |
 | nVent (NYSE) | Electrical/cooling | 17.89 | 17.24 | 3.79 | +6.5% | -36.7% |
 | Modine (NYSE) | Cooling | 13.82 | 12.94 | 1.76 | -29.7% | -65.2% |
-| Munters (Stockholm) | Cooling | 15.06 | 16.87 | 2.07 | -22.6% | -35.4% |
-| Alfa Laval (Stockholm) | Heat exchange | 22.79 | 16.48 | 3.35 | +21.0% | -6.4% |
+| Munters (Stockholm) | Cooling | 15.06 | 16.87 | 2.07 | -10.5% | -35.4% |
+| Alfa Laval (Stockholm) | Heat exchange | 22.79 | 16.48 | 3.35 | +19.8% | -6.4% |
 | Flex (Nasdaq) | Manufacturing/power | 12.65 | 14.59 | 1.04 | +28.4% | -51.3% |
 | Eaton (NYSE) | Electrical | 22.58 (21.9x FY27E) | 22.70 | 5.01 | -2.0% | -21.6% |
 | Schneider Electric (Paris) | Electrical | 20.14 (19.3x FY27E) | 17.87 | 3.79 | +3.1% | -21.8% |
