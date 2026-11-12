@@ -15,7 +15,7 @@ Method note: pages accessed 12 Nov 2026; about half the evidence comes from raw 
 ## Q1. Do the nine cited items say what the earlier analysis says?
 
 ### Takeaway
-All nine exist and support the general direction, but four overstate or misstate the specifics: (b) uses the median, (e) understates the result, (g) and (h) are company claims, and (i) is right in substance but needs the precision qualifier "FP8 with sparsity".
+All nine exist and support the general direction; (b) rests on the median, (e) understates the result, (g) and (h) are company claims, and (i) needs the qualifier "FP8 with sparsity".
 
 ### Cited Findings
 
@@ -64,7 +64,7 @@ All nine exist and support the general direction, but four overstate or misstate
 - Conflict: The Next Platform derives "zettascale" from sparse FP4 (1,200 EF, the author's own inference) and lists FP64 as "30 EFLOPS or more", which contradicts RIKEN's ≥2.6 EF. — [Next Platform, 22 Aug 2025](https://www.nextplatform.com/hpc/2025/08/22/nvidia-tapped-to-accelerate-rikens-fugakunext-supercomputer/1638019)
 
 ### Inferences
-- (a) and (c) hold if worded precisely. (b) should say "median" and "per generation". (e) is closer to replacement than the earlier analysis implies. (h) was a company demo, and analysts disagreed rather than uniformly dismissing it. (i) is accurate; strictly, even FP8 with sparsity is 0.6 ZF.
+- (a) and (c) hold if worded precisely; (b) should say "median" and "per generation"; (e) is closer to replacement than implied; (h) was a company demo and analysts disagreed; (i) is accurate (even FP8 with sparsity is 0.6 ZF).
 
 ### Gaps
 - The Kimi K3 EDA technical report was not found. The Seeking Alpha text on BNP returned HTTP 403, so its reasoning is known only second-hand. Siemens's 10-17x has no published baseline.
@@ -72,7 +72,7 @@ All nine exist and support the general direction, but four overstate or misstate
 ## Q2. Prior 1: half of CPU-only open codes have an AI-built GPU version in use by 2028 (60%)
 
 ### Takeaway
-The population is smaller than the prior assumes, because many listed codes already had hand-written GPU paths. For the codes that remain CPU-only, no AI-built GPU port is in production use. AI-assisted porting has, however, become fast and cheap in 2026.
+The population is smaller than assumed, since many listed codes already had hand-written GPU paths. For those still CPU-only, no AI-built GPU port is in production, though AI-assisted porting became fast and cheap in 2026.
 
 ### Cited Findings
 

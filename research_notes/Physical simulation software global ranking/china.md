@@ -56,7 +56,7 @@ Chinese physical simulation splits into a listed chip-design trio (Empyrean, Pri
   - Its IPO project builds 260 "DEMX" underwater-noise testers a year — [2025 annual report, 28 Apr 2026](https://pdf.dfcfw.com/pdf/H2_AN202604271821616055_1.pdf)
   - Bought 60% of 力控科技 (SCADA) for RMB192m, closed 4 Dec 2025; goodwill ~RMB169m; Likong's debt ratio was 94% — [Stockstar, 4 Mar 2026](https://stock.stockstar.com/SS2026030400020711.shtml)
 - **ZWSOFT 中望软件 (688083.SH).** 2025 revenue RMB893m: CAE RMB11.8m (1.3%, +21%), 3D CAD RMB259m. Overseas 30.7% (+35%), domestic −9.7%. 1,779 staff — [2025 annual report, 23 Apr 2026](https://pdf.dfcfw.com/pdf/H2_AN202604221821444496_1.pdf)
-- **Hollywave 霍莱沃 (688682.SH; antenna/EM measurement and simulation).** 2025 revenue RMB303m and net loss RMB23m. Gross margin ~25-31% points to a hardware-heavy mix — [Eastmoney F10 data](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=(SECUCODE=%22688682.SH%22))
+- **Hollywave 霍莱沃 (688682.SH; antenna/EM measurement and simulation).** 2025 revenue RMB303m and net loss RMB23m. EM-field simulation and verification is only RMB28.9m (9.5%, 81.9% gross margin); EM measurement systems are RMB262.8m (16.4% gross margin). Top-5 customers 83.6%; its core market is aerospace and defence — [2025 annual report, 15 Apr 2026](https://pdf.dfcfw.com/pdf/H2_AN202604141821197696_1.pdf)
 - **Physical-AI platforms.** IDC names Suochen's "天工·开物" and 云道 (IBE)'s "Sim-PI" — [IDC, 10 Aug 2026](https://www.idc.com/resource-center/blog/电子散热领跑、物理ai启航-中国cae市场的双重增/)
 - **State codes.** The PHengLEI developer CARDC (China Aerodynamics R&D Center) has been on the Entity List since 1999 (64 FR 28910) — [eCFR](https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744/appendix-Supplement%20No.%204%20to%20Part%20744)
 
@@ -75,7 +75,7 @@ Chinese physical simulation splits into a listed chip-design trio (Empyrean, Pri
 - **TOP500.** LineShine at NSC Shenzhen is #1 on the June 2026 TOP500 (2.198 EF Rmax). It runs 304-core LX2 CPUs with no accelerator, LingQi interconnect and Kylin OS, and is the first China-based #1 since 2017 — [TOP500](https://www.top500.org/lists/top500/2026/06/). NSC Shenzhen has been entity-listed since 86 FR 18438 (9 Apr 2021) — [eCFR](https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744/appendix-Supplement%20No.%204%20to%20Part%20744)
 
 ### Inferences
-- The Chinese listed EDA software pool is roughly RMB2.1bn (Empyrean RMB1.33bn, Primarius RMB0.48bn, Semitronix software RMB0.28bn, 2025). Synopsys plus Cadence China revenue was ~US$1.3-1.4bn, so domestic vendors hold well under a quarter of China EDA (my calculation; Siemens, Keysight and Ansys excluded).
+- The Chinese listed EDA software pool is roughly RMB2.1bn (~US$0.3bn: Empyrean RMB1.33bn, Primarius RMB0.48bn, Semitronix software RMB0.28bn, 2025). Synopsys plus Cadence China revenue was ~US$1.5bn in FY2025 (Cadence US$680m; Synopsys ~12% of US$7.05bn per SemiAnalysis, secondary). So domestic vendors hold under a fifth of China EDA (my calculation; Siemens, Keysight and Ansys excluded).
 - In CAE, Suochen's simulation software is ~3% of IDC's China CAE market. No Chinese general-CAE vendor is near global scale.
 - Primarius is the most "global" Chinese simulation vendor (foundry device-modelling footprint). Empyrean is the broadest domestic flow owner.
 
@@ -185,7 +185,7 @@ Data: Eastmoney F10 main indicators (from filings; notice dates 2026-04 for FY20
   - ZWSOFT 9M 2026 grants RMB86m and 2025 VAT refunds RMB45.4m — [10jqka](https://news.10jqka.com.cn/20261027/c681139313.shtml); [annual report](https://pdf.dfcfw.com/pdf/H2_AN202604221821444496_1.pdf)
   - Semitronix 2025 grants RMB28.9m; Suochen 2025 grants RMB7.8m plus other income RMB14.4m.
 - **Receivables (end-2025).** Empyrean RMB564m; Primarius RMB185m; Semitronix RMB642m; Suochen RMB795m; ZWSOFT RMB99m; Paratera RMB246m (+170%) — annual reports cited in Q1/Q2.
-- **Customer concentration (top-5, 2025).** Empyrean 30.6%; Primarius 35.8%; Semitronix 72.4%; Suochen 19.3%; ZWSOFT 15.6% — same reports.
+- **Customer concentration (top-5, 2025).** Empyrean 30.6%; Primarius 35.8%; Semitronix 72.4%; Suochen 19.3%; ZWSOFT 15.6%; Hollywave 83.6% — same reports.
 - **Paratera.**
   - 9M 2026: compute services RMB1,469m (95%), AI compute ("智算") RMB1,049m (+144%); debt ratio 78.9% — [Caiwen, 29 Oct 2026](https://www.caiwennews.com/article/1675896.shtml)
   - Private placement accepted by the BSE 29 Sep 2026; its reply to the exchange's questions is due by 9 Dec 2026 — [filing](https://pdf.dfcfw.com/pdf/H2_AN202609291830004754_1.pdf); [11 Nov 2026](https://pdf.dfcfw.com/pdf/H2_AN202611111831631671_1.pdf)
@@ -198,7 +198,7 @@ Data: Eastmoney F10 main indicators (from filings; notice dates 2026-04 for FY20
 - Recurring profitability is negative at four of the eight names. Subsidy dependence is structural, not cyclical.
 
 ### Gaps
-- Hollywave's segment split and Sugon's software revenue were not extracted. Q3 2026 receivables are only partly available.
+- Sugon's software revenue was not extracted. Q3 2026 receivables are only partly available.
 
 ## Q4. Sign-off status in China and who certifies
 
