@@ -1,241 +1,415 @@
 # Automatic test equipment (ATE) for chip electrical test: Advantest, Teradyne and the wider tester field
 
-Research date: **12 November 2026**. Every figure carries its date and source. Statements no outside party has confirmed are marked **"company claim, unconfirmed"**. Quality evidence (sections A1-A3, 1-6) is kept apart from entry-point data (A4, section 7).
+**Research date: 12 November 2026.** Every figure carries its date and source.
+- **"company claim, unconfirmed"** marks a statement no outside party has confirmed.
+- **"secondary"** marks figures taken from aggregators or press summaries rather than filings.
+- Quality evidence (A1-A3 and sections 1-6) is kept separate from entry-point data (A4 and section 7).
 
-**Status: v1, written after an interruption.** Sections marked **[INCOMPLETE]** are still being filled.
+**Coverage**
+- **Advantest, read in full:**
+  - English 決算短信 for FY2025 (year to March 2026) and H1 FY2026.
+  - Results notes, slides and Q&A for April, July and October 2026.
+  - April 2026 sell-side meeting Q&A.
+  - Fireside-chat scripts for 17 November 2025 and 12 November 2026.
+  - Integrated Annual Report 2026 and the October 2025 revision of the MTP3 targets.
+  - Sixteen product and partner releases.
+- **Teradyne, read in full:**
+  - Q3 2026 8-K, 10-Q, earnings slides and CEO/CFO prepared remarks.
+  - 2025 10-K and Q4 2025 release.
+  - 11 March 2025 Analyst Day deck.
+  - Ten product and deal releases.
+  - Q&A content is from third-party summaries only.
+- **Where coverage is thin:**
+  - Chroma, Cohu, AEM and the Korean suppliers rest on secondary summaries, with Korean figures from Korean-press summaries not checked against DART.
+  - No Japanese 有価証券報告書, Taiwanese MOPS or SEMI/TechInsights primary data was opened.
+  - Japanese niche testers and Emerson/NI were not researched beyond partner releases.
 
-**Coverage.** I read these primary documents in full:
-- Advantest: the English 決算短信 for FY2025 (year to March 2026) and H1 FY2026; the results notes, slides and Q&A for April, July and October 2026; the April 2026 sell-side meeting Q&A; the fireside-chat scripts of 17 November 2025 and 12 November 2026; Integrated Annual Report 2026; and the revision of the MTP3 targets.
-- Teradyne: the Q3 2026 earnings release (8-K Ex. 99.1), the Q3 2026 10-Q and the 2025 10-K.
-
-I could not open a full Teradyne Q3 2026 call transcript. The call commentary below comes from third-party summaries and is labelled as such. I did not read the Japanese 有価証券報告書.
+**Change from the brief's background:** Advantest **no longer holds an equity stake in PDF Solutions**. It sold all 3,306,924 shares in a PDF Solutions offering that closed in May 2026 (details in section 6).
 
 ---
 
 ## A. Evidence tables
 
-### A1. Advantest (6857.T, Tokyo Prime) — quality tests a-e
+### A1. Advantest (6857.T) — quality tests a-e
 
-| Test | Dated evidence | Source |
+| Test | Dated evidence |
+|---|---|
+| (a) Position | **Test platform:** owns the production test that decides ship or scrap for most AI compute. The V93000 covers GPU, custom ASIC, CPU, networking and silicon photonics. Advantest says V93000 is "increasingly regarded as an industry standard in HPC" (Q&A 28 Oct 2026; company claim, unconfirmed). **Full test cell:** testers, handlers (M5241 memory handler), device interfaces, SLT (7038), and a die-level prober in co-development with Tokyo Seimitsu (16 Dec 2025). **Data:** ACS RTDI is a real-time data infrastructure at the tester. Advantest says NVIDIA "selected ACS RTDI for high-volume production" for Blackwell and later parts (6 Oct 2025; Advantest announcement). |
+| (b) Lead | **Share (company estimates):** SoC 59% (CY23), 56% (CY24), 66% (CY25); memory 56%, 63%, 61%; overall 58%, 58%, 65% (slides 27 Apr 2026). Also "majority share of the global AI accelerator business" and "a path to above 70%" (company claims, unconfirmed). **Outside evidence:** TechInsights 2026 customer-satisfaction survey, global #1 for the 7th year running (14 May 2026); TSMC 2025 Excellent Performance Award (24 Dec 2025); R&I rating raised to AA- (23 Jul 2026). **Filing cross-check:** in Jul-Sep 2026, Advantest SoC sales were ≈$2.19bn (¥353.3bn at ¥161/$) against Teradyne SoC revenue of $676.5m. That is about 76% of the two firms combined; in compute alone it is higher, because Teradyne compute was only about 20% of its Q3 sales (see section 3). No third-party share figure (TechInsights, Gartner, Yole) was found. |
+| (c) Revenue model | **FY2025 Test Systems ¥1,019.4bn (90.3%):** SoC ¥767.4bn, memory ¥171.5bn, other systems ¥80.5bn. **Services & Others ¥109.2bn (9.7%):** support services ¥65.0bn (5.8%) and other ¥44.2bn (interface boards, mask CD-SEM). **FY26 forecast:** Services & Others ¥148.5bn (8.0%), of which support ¥86.0bn (4.6%). **Licensing:** tester software licensing is cited as a margin driver (Apr and Oct 2026) but not disclosed. **No hours or seat billing.** Employees: 7,241, of whom 1,085 are system or application engineers (FY2025, IAR 2026). |
+| (d) Financial strength | **FY2025:** sales ¥1,128.6bn (+44.7%); gross margin ≈64.3%; operating margin 44.2%; ROE 57.6%; ROIC 54.4% (company definition); FCF ≈¥300.6bn. **H1 FY26:** sales ¥845.2bn (+60.5%); gross margin 70.4%; operating margin 54.0% (Q2: 71.1% and 55.9%). **Balance sheet, 30 Sep 2026:** cash ¥401.8bn; ¥89.5bn convertible bonds; net cash ≈¥294.5bn; investment securities ¥432.6bn; equity ratio 66.1%. **Customers:** "a small number of top customers account for a substantial portion of net sales"; no names or percentages (IAR 2026). **Ship-to:** FY2025 Taiwan 50.5%, China 18.9%, Korea 16.0%; H1 FY26 Taiwan 52.0%, China 18.9%, Korea 15.6%. Management puts China at "≈19%… consistent around 20%" (29 Jul 2026). |
+| (e) Resilience | **Cycle:** tester market CY23 $4.4bn, CY24 $6.0bn, CY25 $9.0bn, CY26e ≈$14.25bn (company estimates); management calls this a "megacycle". **Buffers:** EMS-based variable costs; "strategic inventory is gold" (inventory ¥352.4bn, against ¥231.7bn at March 2026); platforms that last 10-15 years (12 Nov 2026). **Overbuild risk:** SoC capacity is above 5,000 a year, the target is 10,000 a year "well ahead" of plan, and 20,000 is under discussion. **Cost risk:** DRAM components. **Sensitivities:** operating profit moves ¥5.8bn per ¥1 move against the dollar; China ≈19% of sales. As a Japanese company it is not under the US military-end-user rule that Teradyne's 10-K cites. |
+
+### A2. Teradyne (TER) — quality tests a-e
+
+| Test | Dated evidence |
+|---|---|
+| (a) Position | **Number two in SoC:** UltraFLEXplus and J750. **Strong in memory and HBM:** Magnum 7H, "the industry de facto standard" (Analyst Day 11 Mar 2025; company claim, unconfirmed). **Also sells:** SLT and burn-in (Titan HP), HDD test, board, optical and interconnect test (Product Test), and robotics. **Probe-layer stakes:** 10% of Technoprobe with a board seat (May 2024); a $300m minority stake in FormFactor agreed 6 Oct 2026. **Strategy:** a "wafer to AI data center" model sold through an open ecosystem of partners. |
+| (b) Lead | **Memory:** a record $300.8m in Q3'26 (+135% YoY), the fourth quarter running above $200m. That roughly equals Advantest's memory-tester sales of ¥53.4bn (≈$332m) in the same quarter. Teradyne claims "higher share" in HBM performance test (28 Oct 2026; company claim, unconfirmed). Advantest itself expects its memory share "may experience a decline this year" (29 Jul 2026). **Compute:** dual-vendor wins. The first hyperscaler is a "mature" dual source, a merchant GPU customer is a "fast follower", a second hyperscaler has passed qualification and a third is in qualification (28 Oct 2026; company claims, unconfirmed). **Outside evidence:** TSMC 2025 OIP Partner of the Year for 3DFabric testing, with a TSMC director quoted (Sep 2025). |
+| (c) Revenue model | **Q3'26 by product:** SoC $676.5m, memory $300.8m, IST $94.7m, Product Test $138.1m, Robotics $95.8m. **Service revenue:** $141.8m (10.9%; Semi Test service $105m), with services gross margin ≈65%. Revenue is 91% point-in-time. No hours or seat billing. TestInsight test-conversion software (bought 16 Apr 2026) is also sold for other vendors' platforms. |
+| (d) Financial strength | **Q3'26:** revenue $1,306.0m (+70%); GAAP gross margin 59.1%; non-GAAP operating margin 31.6%; non-GAAP EPS $2.29. **2025:** revenue $3,190m; non-GAAP gross margin 58.3%; operating margin 22.3%; EPS $3.96; FCF $450m. **9M'26:** FCF $806.1m. **Balance sheet:** cash and investments $625m; no debt; $1.0bn revolver to 2031; trailing ROIC 42.4% (stockanalysis). **Concentration:** the five largest direct customers were 44% of 2025 revenue (36% in 2024, 32% in 2023). One direct customer was 19%; two specifiers drove 12% and 10%. **Country:** Q3'26 Korea 32%, China 21%, Taiwan 14%, Singapore 9%, US 8%; 9M'26 Taiwan 32%, Korea 24%, China 15%. |
+| (e) Resilience | **Cycle:** 2026e revenue ≈$5.2bn (+60%+), close to the target model's ≈$6.0bn already. **Buffers:** >80% of revenue goes through contract manufacturing; 100% of employees have variable pay; 35% work in low-cost regions (Analyst Day 2025). **Diversifiers:** auto and industrial >$600m in 2026 (<$400m in 2025), HDD test, Product Test, and robotics, now back in profit. **Weak spot:** mobile is below historical levels. **Exports:** the US military-end-user rule "has impacted our ability to sell… in China", and trade rules limit competitiveness "where some competitors are not subjected to the same restrictions" (10-K 2025). **Inventory:** $575m, against $403m in Q2'26. |
+
+### A3. Six transitions — what each said versus did (dated)
+
+| Transition | Advantest | Teradyne |
 |---|---|---|
-| (a) Position | Supplies the production test that decides ship or scrap for most AI compute. The V93000 platform covers GPU, custom ASIC, CPU, networking and silicon photonics. Advantest calls V93000 "increasingly regarded as an industry standard in HPC" (company claim, unconfirmed; 28 Oct 2026). It sells the whole test cell: testers, handlers (M5241 for memory), device interfaces, system-level test (7038) and die-level probing in development. **Data access:** ACS RTDI real-time data infrastructure, which NVIDIA "selected for high-volume production" for Blackwell and later parts (announced by Advantest, 6 Oct 2025). | Q&A 28 Oct 2026; news 6 Oct 2025, 10 Dec 2025 |
-| (b) Lead | **Market share (company estimate):** SoC tester share 59% (CY23), 56% (CY24), 66% (CY25); memory 56%, 63%, 61%; overall 58%, 58%, 65%. Advantest also claims a "majority share of the global AI accelerator business" and sees "a path to above 70%" (company claim, unconfirmed). **Outside evidence:** TechInsights 2026 customer-satisfaction survey, global #1 for the 7th year running (14 May 2026); TSMC "Excellent Performance Award", 2025 Supply Chain Management Forum (24 Dec 2025); R&I raised its rating to AA- (23 Jul 2026). Cross-check from filings: in Jul-Sep 2026, Advantest SoC sales of ¥353.3bn (≈$2.19bn at ¥161) were about 3.2x Teradyne's SoC revenue of $676.5m, about 76% of the two firms combined. No Gartner, TechInsights or Yole share figure found yet [INCOMPLETE]. | FY25 slides 27 Apr 2026; Q&A 28 Oct 2026; TER 10-Q Q3'26 |
-| (c) Revenue model | **FY2025:** Test Systems ¥1,019.4bn (90.3%), of which SoC ¥767.4bn, memory ¥171.5bn and other systems (handlers, interfaces, SLT) ¥80.5bn. Services & Others ¥109.2bn (9.7%): support services plus consumables (test interface boards) plus mask CD-SEM. **FY2026 forecast:** Services & Others ¥148.5bn, 8.0% of ¥1,863bn. Licensing revenue on testers exists and was cited as a margin driver (Apr and Oct 2026), but is not disclosed separately. No revenue line depends on labour hours or seats. Of 7,241 employees (FY2025), 1,085 are system or application engineers. | 決算短信 FY2025; slides 28 Oct 2026; IAR 2026 |
-| (d) Financial strength | **FY2025:** sales ¥1,128.6bn (+44.7%); gross margin ≈64.3%; operating margin 44.2%; ROE 57.6%; ROIC 54.4% (company definition); operating cash flow ¥335.2bn; FCF ≈¥300.6bn. **H1 FY2026:** sales ¥845.2bn (+60.5%); gross margin 70.4%; operating margin 54.0% (Q2: 71.1% and 55.9%). Cash ¥401.8bn against ¥89.5bn of convertible bonds; investment securities ¥432.6bn; equity ratio 66.1% (30 Sep 2026). **Customers:** "a small number of top customers account for a substantial portion of net sales"; no names or shares disclosed. **Country (ship-to), FY2025:** Taiwan 50.5%, China 18.9%, Korea 16.0%. **H1 FY2026** (read from chart labels): Taiwan ≈52%, China ≈19%, Korea ≈16%. Management puts China at "approximately 19%… consistent around 20%" (29 Jul 2026). | 決算短信 FY25 & H1 FY26; slides; IAR 2026; Q&A 29 Jul 2026 |
-| (e) Resilience | **Cycle:** tester market CY23 $4.4bn, CY24 $6.0bn, CY25 $9.0bn, CY26e ≈$14.25bn (company estimates); management calls it a "megacycle". **Shock absorbers:** EMS-based "variable-cost model"; strategic inventory (¥352.4bn, up from ¥231.7bn in March 2026); platforms that last 10-15 years. **Exposure:** SoC capacity going from 5,000 to 10,000 a year (possibly 20,000), which risks overbuild if demand pauses; DRAM component costs. **Sensitivities:** operating profit moves ¥5.8bn per ¥1 change against the dollar; China ≈19% of sales. Advantest is not a US company; contrast Teradyne's 10-K statement that rivals are "not subjected to the same restrictions". | slides/Q&A Oct 2026; fireside 12 Nov 2026 |
-
-### A2. Teradyne (TER, Nasdaq) — quality tests a-e
-
-| Test | Dated evidence | Source |
-|---|---|---|
-| (a) Position | Number-two SoC tester (UltraFLEXplus, J750) and HBM/DRAM tester (Magnum 7H), plus system-level test and burn-in (Titan HP), HDD/SSD test, board test (Product Test) and robotics. Teradyne holds a 10% equity-method stake in Technoprobe (probe cards; board seat) and agreed a $300m minority stake in FormFactor (6 Oct 2026), so it is positioning at the wafer and probe interface. | 10-Q Q3'26; 10-K 2025 |
-| (b) Lead | The memory lead is real in the current quarter: Q3'26 memory revenue was a record $300.8m, the fourth quarter running above $200m. That roughly equals Advantest's memory-tester sales of ¥53.4bn (≈$332m) in the same quarter. Advantest itself warned on 29 Jul 2026 that its memory share "may experience a decline this year". In compute, Teradyne says it is gaining share (Q3 call, StockStory summary; company claim, unconfirmed). **Outside evidence:** TSMC 2025 OIP Partner of the Year for 3DFabric testing (2025, as announced by Teradyne). No third-party share figure found [INCOMPLETE]. | 10-Q Q3'26; Advantest Q&A Jul 2026 |
-| (c) Revenue model | **Q3'26 product mix:** SoC $676.5m, memory $300.8m, IST (SLT/storage) $94.7m, Product Test $138.1m, Robotics $95.8m. Services revenue $141.8m (10.9%); 9M'26 $419.0m (10.7%), with services gross margin ≈65%. Of revenue, 91.4% is recognised at a point in time. No seat or hours model. | 10-Q Q3'26 |
-| (d) Financial strength | **Q3'26:** revenue $1,306.0m (+70%); GAAP gross margin 59.1%; operating margin 30.8% GAAP, 31.6% non-GAAP; non-GAAP EPS $2.29. **9M'26:** operating cash flow $1,047.9m, capex $241.8m, FCF $806.1m. Cash plus securities $624.8m; debt $0 (it was $200m at year-end 2025); new $1.0bn revolver. **Concentration:** the five largest direct customers were 44% of 2025 revenue (36% in 2024, 32% in 2023). One direct customer was 19%; two "specifying" customers drove 12% and 10%. **Country, Q3'26:** Korea 32%, China 21%, Taiwan 14%, Singapore 9%, US 8%. **9M'26:** Taiwan 32%, Korea 24%, China 15%. | 8-K 27 Oct 2026; 10-Q; 10-K |
-| (e) Resilience | **Cycle:** 2025 revenue ≈$3.19bn (derived from 10-K growth rates) and 2026 ≈$5.22bn (9M plus Q4 guidance midpoint), about +63%. Management guides 2027 growth (each quarter above the same quarter of 2026, per Quartr summary). **Exports:** the US military-end-user rule has curbed China sales. **Diversifiers:** robotics, now back in profit, at 7% of revenue, and Product Test at 11%. Mobile is "under pressure". Inventory days rose to 98 from 69 on longer component lead times (StockStory). | 10-K 2025; 10-Q; StockStory |
-
-### A3. Six transitions — what each company said versus did (dated)
-
-| Transition | Advantest: said | Advantest: did | Teradyne: said / did |
-|---|---|---|---|
-| (1) Pass/fail to inference from data with stated uncertainty | "ACS RTDI moves testing from validation to prediction" (6 Oct 2025). CTO: the job is "not just go, no go… trim and calibrate every device"; chiplet "power pairing" (17 Nov 2025). | ACS RTDI with NVIDIA ML in high-volume production (Oct 2025). Emerson partnership for edge AI analytics, re-binning and adaptive test (19 Mar 2025). PDF Solutions Exensio-powered cloud and equity stake (Jul 2020). Pin Scale 5000B adds vector memory "for analytics of failure data" (22 Apr 2026). No product found that outputs a stated uncertainty. | [INCOMPLETE]: no analytics or inference product evidence read yet |
-| (2) Hand-written programs to AI-built programs | SmarTest 8 "AI-enabled tools for test program development" (13 Oct 2026). "Automation of Test" is an MTP3 theme. Agentic AI in internal use (Jul 2026). | Acquired AllianceATE in Sep 2025. Its Velocity tool streams design files into V93000 for "first-time-right" patterns, cutting "weeks of developing custom code" (18 May 2026; Arm quoted). SiConic bench ecosystem (Feb 2025), extended to DFT on 16 Jul 2026. | Acquired TestInsight in 2026 (press release #439) [INCOMPLETE: details] |
-| (3) Single die to bonded stacks and packages | Test content rises with 3D packaging: "test times increase by multiples from one generation to the next" (12 Nov 2026; company claim, unconfirmed). "Die level probing will need to come" (CTO, Nov 2025). Plans memory test "beyond HBM4" (Apr 2026). | Die-level prober co-developed with Tokyo Seimitsu (16 Dec 2025). Minority stakes and partnerships with Technoprobe (2.5%), FormFactor and MJC (Jan-Feb 2025). M5241 memory handler shipping Q2 CY2026. T5801 DRAM tester (36 Gbps PAM3). Applied Materials EPIC (21 Apr 2026). | Magnum 7H for HBM (2025). TSMC 3DFabric award (2025). Titan HP with burn-in (2026). Integrated solution with Tokyo Electron (2026). Technoprobe 10% (May 2024). FormFactor $300m (Oct 2026). [INCOMPLETE: details] |
-| (4) Hardware to software and data | Goal is to "evolve from a test equipment company into a comprehensive solutions provider" (29 Jul 2026). | Services & Others is still under 10% of sales (FY2025 9.7%; FY26e 8.0%). Software and analytics revenue is not disclosed. Investment securities rose ¥364.7bn in H1 FY26 as "strategic investments", target undisclosed. | Services ≈11% of revenue (Q3'26). |
-| (5) AI on the chipmaker's premises | Emerson/ACS: "pushing… compute and analysis capabilities to the edge, closer to the equipment" (Mar 2025). ACS RTDI "securely supporting AI/ML-driven test automation" at HVM sites (Oct 2025). | Deployed at "high-volume production sites worldwide" (company claim, unconfirmed). | [INCOMPLETE] |
-| (6) Fewer insertions or testers per device after 2030 | New modules can cut some test items' time, but "we do not believe that these reductions… will impact overall demand" (27 Apr 2026). After 2-3 years of new-system demand an upgrade cycle may follow (27 Apr 2026). "Distribution of test" lets customers move content between insertions (Nov 2025, IAR 2026). | No post-2030 statement found. | No statement found |
+| (1) Pass/fail to inference with stated uncertainty | **Said:** ACS RTDI moves "testing from validation to prediction" (6 Oct 2025). CTO: the job is "not just go, no go… trim and calibrate every device"; chiplet "power pairing" (17 Nov 2025). **Did:** ACS RTDI with NVIDIA ML in high-volume production (Oct 2025). Emerson partnership for edge analytics, re-binning and adaptive test (19 Mar 2025). Pin Scale 5000B adds vector memory "for analytics of failure data" (22 Apr 2026). **Reversed:** sold its PDF Solutions stake (May 2026). No product with a stated-uncertainty output found. | **Did:** Titan HP burn-in keeps "full stress-and-test history" per device "on a single record" (6 Oct 2026). Teradyne slides list an NVIDIA "AI-defined fabs" collaboration (title only). No analytics or inference product found (could not verify). |
+| (2) Hand-written to AI-built test programs | **Said:** SmarTest 8 has "AI-enabled tools for test program development" (13 Oct 2026). "Automation of Test" is an MTP3 theme. **Did:** acquired AllianceATE in Sep 2025. Its Velocity tool streams design files to V93000 for "first-time-right" patterns, replacing "weeks of developing custom code" (18 May 2026, Arm quoted). SiConic bench ecosystem launched Feb 2025 and extended to DFT on 16 Jul 2026. | **Did:** acquired TestInsight, a maker of "test development, validation, and conversion software", for "pre-silicon validation and automated pattern generation". It keeps serving "all ATE platforms" (16 Apr 2026). Atlas SLT software imports and ports programs. No AI-agent claim found. |
+| (3) Single die to bonded stacks | **Said:** "test times increase by multiples from one generation to the next" (12 Nov 2026). "Die level probing will need to come" (Nov 2025). Plans memory test "beyond HBM4" (Apr 2026). **Did:** Tokyo Seimitsu die-level prober (Dec 2025). Minority stakes in Technoprobe (2.5%), FormFactor and MJC (Jan-Feb 2025). M5241 handler shipping from Q2 CY2026. T5801 DRAM tester. Applied Materials EPIC (21 Apr 2026). | **Said:** "today's wafer probes are not suitable" for large CoW modules; access at chip-on-wafer stage is "limited to C4 bump interfaces" (blog 27 Jul 2026). **Did:** Magnum 7H for HBM2E-HBM4E, wafer to KGSD to burn-in (4 Aug 2025). UltraFLEXplus with TEL Prexa singulated-die prober for KGD (8 Jun 2026). UCIe streaming-scan test (TSMC award, Sep 2025). Titan HP burn-in (Oct 2026). Technoprobe and FormFactor stakes. |
+| (4) Hardware to software and data | **Said:** evolving "from a test equipment company into a comprehensive solutions provider" (29 Jul 2026). **Did:** Services & Others under 10% of sales; ¥364.7bn of undisclosed "strategic investment" securities bought in H1 FY26. | Service ≈11% of revenue; TestInsight software revenue undisclosed. |
+| (5) AI on the chipmaker's premises | **Said:** Emerson partnership "pushing… compute and analysis capabilities to the edge" (Mar 2025). **Did:** ACS RTDI at "high-volume production sites worldwide" (company claim, unconfirmed). | No evidence found. |
+| (6) Fewer insertions or testers after 2030 | **Said:** test-time cuts from new modules won't "impact overall demand" (27 Apr 2026). New-system demand "at least next two to three years", then possibly an upgrade cycle (27 Apr 2026). "Distribution of test" lets customers move content between insertions (IAR 2026). No post-2030 view. | **Said:** chiplets are a trend "with growth potential for the next decade" (Jul 2026). Lower HBM stack heights mean more stacks to test (Oct 2026). No post-2030 view. |
 
 ### A4. Entry-point snapshot (separate from quality)
 
 | Item | Advantest (6857.T) | Teradyne (TER) |
 |---|---|---|
-| Price, market cap, date | [INCOMPLETE] | $265.78 (close 11 Nov 2026); market cap $41.49bn; EV $41.01bn (stockanalysis.com, updated 12 Nov 2026) |
-| P/E, EV multiples | [INCOMPLETE] | Trailing P/E 30.5; forward P/E 25.1; EV/sales 8.2; EV/EBITDA 23.2; EV/FCF 40.0 |
-| Guidance | FY2026 (to Mar 2027) sales ¥1,863bn, operating profit ¥967bn (51.9%), net income ¥741.5bn, EPS ¥1,027.08. Raised twice: April ¥1,420bn, July ¥1,714bn, October ¥1,863bn. | Q4'26 revenue $1.25-1.35bn; non-GAAP EPS $1.95-2.25 |
-| Events | 13 Nov 2026 half-year 有報; late Jan 2027 Q3 results with first CY2027 TAM figures; ~May 2027 MTP4 with outlook to CY2028-29; buyback of ¥280bn running to 24 Mar 2027 | 23 Nov 2026 ex-dividend; 30 Nov 2026 UBS conference; FormFactor deal close in Q4'26; Q4 results late Jan 2027 (date not announced) |
+| Price and date | ¥29,985, close 12 Nov 2026 (−4.6% on the day) | $265.78, close 11 Nov 2026 (+8.3% on the day) |
+| Market cap / EV | ¥21.65tn / ¥21.35tn (≈$140bn at ¥155/$) | $41.49bn / $41.01bn |
+| P/E (trailing / forward) | 38.1 / 24.5; 29.2 on company FY26 EPS guidance of ¥1,027 | 30.5 / 25.1; 28.2 on 2026 non-GAAP EPS midpoint of $9.41 |
+| EV/sales; EV/EBITDA; EV/FCF | 15.3; 29.6; 47.5 | 8.2; 23.2; 40.0 |
+| 52-week change; dividend yield | +50.9%; 0.33% | +44.4%; ≈0.2% (my calculation) |
+| Consensus | Buy (21 analysts); mean target ¥46,624 | Buy (18 analysts); mean target $415.88 |
+| Guidance | FY26 (to Mar 2027): sales ¥1,863bn; operating profit ¥967bn (51.9%); 2H operating margin 50.1%. Raised twice (April ¥1,420bn, July ¥1,714bn). | Q4'26 revenue $1.25-1.35bn; gross margin 57.5-58.5%; non-GAAP EPS $1.95-2.25; FY ≈$5.2bn; "2027 another year of healthy growth" |
+| Next events | Half-year 有報 13 Nov; interim dividend 1 Dec; late Jan 2027 Q3 results with the first numeric CY2027 TAM and timing of 10,000 a year; ~May 2027 MTP4 (outlook to CY2028-29); ¥280bn buyback to 24 Mar 2027 | Ex-dividend 23 Nov; UBS conference 30 Nov; quiet period from 18 Dec; FormFactor closing in Q4; Q4 results (early Feb 2027 on last year's timing) with an **updated target earnings model**; dual-vendor ramps mid and 2H 2027 |
+
+Sources for A4: [stockanalysis 6857, 12 Nov 2026](https://stockanalysis.com/quote/tyo/6857/statistics/); [stockanalysis TER, 12 Nov 2026](https://stockanalysis.com/stocks/ter/statistics/); the company documents cited in sections 2, 3 and 7. The yen conversion and the P/E on guidance are my calculations.
 
 ---
 
 ## 1. Market: tester market size, shares, test intensity, bottleneck
 
 ### Takeaway
-On Advantest's own estimates, the SoC-plus-memory tester market went from $6.0bn (CY24) to $9.0bn (CY25) and ≈$14.25bn (CY26e). SoC testers make up about 80% of that. Advantest says CY27 growth will be "in line with that of recent years or potentially higher", which is about 50% a year. The drivers are test time and insertions per device in advanced packaging, more than unit volume. Test capacity and DRAM components are now a stated industry constraint.
+Both leaders put the 2025 ATE market at about **$9.0bn**. Advantest's CY26 estimate is **≈$14.25bn**: SoC about $11.5bn and memory about $2.75bn. Advantest expects CY27 growth near the recent ~50% a year. SEMI billings data show test's share of chip-equipment spending rising from 6.4% (2025) to 8.1% (Jan-Aug 2026). The driver is test content per device in advanced packaging. Test capacity and DRAM components are stated constraints.
 
 ### Cited Findings
-- **Tester market, all company estimates (company claim, unconfirmed):**
-  - CY23: $4.4bn (SoC $3.3bn, memory $1.1bn).
-  - CY24: $6.0bn (+36%; SoC $4.1bn, memory $1.9bn).
-  - CY25: $9.0bn (+50%; SoC $6.9bn, +68%; memory $2.1bn).
-  - Source: [Advantest FY25 slides, 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf).
-- **CY26 forecast path:**
-  - January 2026: SoC $8.5-9.5bn, memory $2.2-2.7bn.
-  - April 2026: SoC $8.7-9.5bn, memory $2.2-2.7bn ([Apr 2026 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)).
-  - July 2026: SoC $10.5-11.5bn, memory $2.5-3.0bn, total $13.0-14.5bn, up about 19% at the midpoint, driven by "inference AI… ASICs, CPUs, and DRAM" ([Jul 2026 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_note.pdf)).
-  - October 2026: unchanged. SoC "approximately 11.5 billion USD, near the upper end"; memory "around the midpoint of 2.5 to 3.0" ([Oct 2026 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf)).
-- **CY27:** a quantitative outlook is due at the Q3 briefing in January 2027. "Tester TAM has grown at an annual average of about 50% or slightly above over the past few years… we do not see that slowing" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
-- **Supply:** "we expect the industry to remain supply constrained in CY2027, including… semiconductor and advanced packaging capacity" ([Oct 2026 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf)).
-- **Co-packaged optics:** the CPO tester market should "double or triple annually over the next couple of years and reach about 1 billion USD". That is small next to an SoC tester market that "exceeds 11 billion USD and is growing at more than 50% annually" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
-- **Test intensity (company claims, unconfirmed):**
-  - "In some cases, we are seeing test times increase by multiples from one generation to the next… No one really predicted the extent of the increase in test content" ([fireside 12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
-  - Accelerators see "longer test times and additional insertions… where 3D packaging is driving greater device complexity". CPU wafer sort is "broadly similar and may be slightly higher" than for accelerators, but accelerators need more at final test ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
-  - The biggest FY26 driver is CPU test for agentic AI, "a third layer of growth on top of GPUs and custom ASICs" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
-  - Packaging cost drives test content: "it's just too expensive to throw away these expensive packages" ([fireside 17 Nov 2025](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20251117.pdf)).
-- **How test menus are set:** they are fixed only after customers' evaluation in early volume production, and extra quality tests can be added, which is upside for tester demand ([sell-side Q&A 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_Sell-Side%20Analyst%20Small%20Group%20Meeting_260427_QA.pdf)).
-- **Visibility:** "we now have conversations with our close customers… based on an 18-month forecast", against six months historically ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)). Some customers now give multi-year forecasts ([fireside 12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
-- **Components:** testers use "a similar component mix to data-center racks… we sometimes find ourselves competing for components with the very customers we serve" ([fireside 12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
-- **Teradyne on HBM (press summaries of the call, not verified against a transcript):**
-  - HBM will be "the largest driver of memory-market growth" in 2027.
-  - Supply constraints are leading some accelerator makers to use lower HBM stack heights, which could raise the number of stacks needing performance test ([Zacks summary, ~28 Oct 2026](https://www.zacks.com/stock/news/3018941/teradyne-q3-earnings-call-highlights-ai-demand-and-2027-growth-plans); [StockStory](https://stockstory.org/us/stocks/nasdaq/ter/news/earnings-call/teradynes-q3-earnings-call-our-top-5-analyst-questions)).
+- **Advantest's tester-market series (company estimates; unconfirmed)** ([slides 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)):
+
+  | Year | Total | SoC | Memory |
+  |---|---|---|---|
+  | CY23 | $4.4bn | $3.3bn | $1.1bn |
+  | CY24 | $6.0bn | $4.1bn | $1.9bn |
+  | CY25 | $9.0bn | $6.9bn | $2.1bn |
+
+- **Teradyne puts the 2025 ATE TAM at "~$9.0B"** and targets $12-14bn ([Q3'26 slides, 28 Oct 2026](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf)). In March 2025 it had forecast only a "9% CAGR" for ATE ([Analyst Day](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/919/9566/pdf/ALL_Analyst_Day_2025_IR_SITE_NEW.pdf)).
+- **Advantest's CY26 forecast through 2026:**
+
+  | Date | SoC | Memory | Total |
+  |---|---|---|---|
+  | Jan 2026 | $8.5-9.5bn | $2.2-2.7bn | — |
+  | Apr 2026 | $8.7-9.5bn | $2.2-2.7bn | — |
+  | Jul 2026 | $10.5-11.5bn | $2.5-3.0bn | $13.0-14.5bn (+19% at midpoint) |
+  | Oct 2026 | ≈$11.5bn ("near the upper end") | midpoint | unchanged |
+
+  Sources: [Jul note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_note.pdf); [Oct note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf).
+- **CY27:** numbers will come in January 2027. "Tester TAM has grown at an annual average of about 50% or slightly above… we anticipate that tester TAM growth will be in line with that of recent years or potentially higher." The industry is expected to "remain supply constrained in CY2027" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
+- **Test's share of capex (third-party SEMI data, quoted by Teradyne):** test is 6.4% of semiconductor capex in 2025 and 8.1% in Jan-Aug 2026. The source is "SEMI, Product Buy Rate Data… SEMS ATE product billings / SEMS total IC equipment" ([remarks 28 Oct 2026](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/webcast_transcript/Teradyne_Q3%2726_Earnings_Prepared_Remarks.pdf); [slides](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf)).
+- **Market structure (Teradyne):** compute was 35% of ATE TAM in 2024, against 15% in 2016; mobile fell from 37% to 14%. Teradyne's own SoC mix was 20% compute in 2024 ([Analyst Day, 11 Mar 2025](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/919/9566/pdf/ALL_Analyst_Day_2025_IR_SITE_NEW.pdf)).
+- **Co-packaged optics:** the CPO tester market should "double or triple annually… reach about 1 billion USD", against an SoC tester market that "exceeds 11 billion USD and is growing at more than 50% annually" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)). Teradyne calls CPO "preseason" ([StockStory, Oct 2026](https://stockstory.org/us/stocks/nasdaq/ter/news/earnings-call/teradynes-q3-earnings-call-our-top-5-analyst-questions); secondary).
+- **Test intensity (company claims; unconfirmed):**
+  - "In some cases… test times increase by multiples from one generation to the next. No one really predicted the extent of the increase in test content" ([fireside 12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
+  - Accelerators get "longer test times and additional insertions… where 3D packaging is driving greater device complexity". CPU wafer sort is "broadly similar and may be slightly higher" than for accelerators; final test needs less ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
+  - FY26 upside came mostly from agentic-AI CPUs, "a third layer of growth" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
+  - On packaging cost: "too expensive to throw away these expensive packages" ([fireside 17 Nov 2025](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20251117.pdf)).
+  - Test menus are fixed after customer evaluation in early volume production, and extra quality tests may be added ([sell-side Q&A 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_Sell-Side%20Analyst%20Small%20Group%20Meeting_260427_QA.pdf)).
+- **HBM (Teradyne):** memory shortages are so severe that "AI accelerators are turning to lower stack heights of HBM… This will tend to increase the TAM for HBM performance test" ([remarks 28 Oct 2026](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/webcast_transcript/Teradyne_Q3%2726_Earnings_Prepared_Remarks.pdf)).
+- **Bottleneck evidence:**
+  - Advantest: "We never want to be the critical path" (Jul 2026). Testers share "a similar component mix to data-center racks… competing for components with the very customers we serve" (12 Nov 2026). Visibility is now 18-month and sometimes multi-year forecasts, against six months before ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
+  - Teradyne: "There is no current ATE solution for the most complex next generation AI and data center devices that are coming to market in 2027", which its new instruments are meant to address ([remarks](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/webcast_transcript/Teradyne_Q3%2726_Earnings_Prepared_Remarks.pdf); company claim, unconfirmed).
 
 ### Inferences
-- If CY26 lands near ≈$14.25bn, the tester market will have more than tripled from CY23 ($4.4bn) in three years. The 2027 call rests on test content per device more than on units. That is the variable a report must stress-test, because inference-based test reduction (transition 6) would act on exactly this.
-- Market reports from Mordor, LP Information and others give much lower numbers (for example $7.5bn for SoC and memory in 2026). They appear to use stale or differently scoped figures and should not be mixed with Advantest's series.
+- **Size of the move:** a ≈$14.25bn CY26 would be more than 3x CY23 ($4.4bn) in three years. Teradyne's target model ($12-14bn), set in February 2026, has already been overtaken on Advantest's numbers.
+- **What growth depends on:** growth rests mainly on test content per device. Transition (6), inference replacing measured insertions, would bite exactly there.
+- **Market-research reports:** reports such as Mordor and LP Information give about $7.5bn for SoC plus memory in 2026. Their scope or data look stale; do not mix them with the company series.
 
 ### Gaps
-- No independent estimate of the tester market for 2024-2027 (SEMI, TechInsights/VLSI, Yole or Gartner) has been retrieved yet [INCOMPLETE].
-- No quantified test time per device for AI accelerators or HBM from a third party.
-- Teradyne's own 2026 and 2027 TAM figures are not yet retrieved [INCOMPLETE].
+- No independent 2024-27 tester market series or vendor-share table from SEMI, TechInsights/VLSI, Yole or Gartner was obtained. One newsletter cites VLSI for Advantest ≈50% and Teradyne ≈30% in 2023 ([Wing VC](https://docs.wing.vc/content/the-chip-testing-bottleneck)); this is weak.
+- No third-party test time per device for accelerators or HBM.
 
 ---
 
-## 2. Advantest (6857.T): results, segments, guidance and plan
+## 2. Advantest (6857.T): results, segments, guidance, plan
 
 ### Takeaway
-Advantest is an unusually profitable, net-cash monopoly-like supplier at the top of its cycle. Quarterly gross margin is above 70% and operating margin 56% (Q2 FY26). Growth comes from AI compute shipped through Taiwan. Recurring services stay below 10% of revenue, and the large new pile of "strategic investment" securities is opaque.
+Advantest is highly profitable and net-cash: Q2 FY26 gross margin was 71% and operating margin 56%. It is at a record point in its cycle. Revenue comes overwhelmingly from AI compute shipped via Taiwan. Recurring support services are about 5% of sales, and the new ¥433bn securities book is opaque.
 
 ### Cited Findings
-- **FY2025 (year to 31 Mar 2026), reported 27 Apr 2026** ([決算短信 FY2025](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf)):
-  - Net sales ¥1,128.6bn (+44.7%); operating income ¥499.1bn (+118.8%, 44.2%); net income ¥375.4bn (+132.9%); basic EPS ¥515.15; ROE 57.6%.
-  - Overseas sales 97.8%.
-  - Test System segment ¥1,019.4bn, segment income ¥518.8bn. Services & Others ¥109.2bn, income ¥8.8bn, which includes a ¥2.5bn divestiture gain. FY2024 had a ¥21.4bn impairment on Essai (SLT).
-  - Operating cash flow ¥335.2bn; investing −¥34.6bn; financing −¥230.6bn, including ¥114.3bn of buybacks and ¥75.4bn of debt repayment. Cash ¥340.0bn.
-  - Dividend ¥59; total return ratio 42% ([FY25 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)).
-- **FY2025 segments and regions** ([FY25 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)):
-  - SoC ¥767.4bn (FY24 ¥440.4bn); memory ¥171.5bn (¥157.7bn); other systems ¥80.5bn (¥84.7bn).
-  - Ship-to region: Taiwan ¥569.5bn, China ¥213.3bn, Korea ¥180.3bn, Others ¥72.8bn, Americas ¥44.5bn, Japan ¥25.1bn, Europe ¥23.1bn.
-  - FY24 for comparison: Taiwan ¥326.5bn, China ¥175.1bn, Korea ¥157.0bn.
-  - I read the region values from chart labels; they reconcile to the totals and to the 決算短信 geography for Japan, Americas and Europe.
-- **Why Taiwan grew:** "strengthened quality assurance requirements for high-end SoC semiconductors from several U.S. fabless companies, resulting in increased sales to the related foundries and OSATs" ([FY25 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_note.pdf)).
-- **Quarterly results (ends Jun-25, Sep-25, Dec-25, Mar-26, Jun-26, Sep-26)** ([Oct 2026 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_slide.pdf)):
-  - Sales ¥263.8bn, ¥262.9bn, ¥273.8bn, ¥328.1bn, ¥367.5bn, ¥477.7bn.
-  - Gross margin 65.1%, 62.2%, 62.0%, 67.4%, 69.5%, 71.1%.
-  - Operating margin 47.0%, 41.3%, 41.5%, 46.7%, 51.7%, 55.9%.
-- **Q2 FY26 (Jul-Sep 2026):**
-  - SoC ¥353.3bn ("GPU… ASIC and CPU applications grew"); memory ¥53.4bn; other systems ≈¥29.9bn; services & others ¥41.1bn.
-  - R&D ¥23.4bn (4.9% of sales); capex ¥12.1bn; operating cash flow ¥169.8bn; FCF ¥61.5bn after strategic security purchases ([Oct 2026 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf)).
-  - Ship-to (chart labels): Taiwan ¥261.3bn (54.7%), China ¥90.1bn (18.9%), Korea ¥64.6bn (13.5%), Others ¥38.1bn, Americas ¥15.7bn, Europe ¥6.1bn, Japan ¥1.8bn.
-  - Q1 FY26 for comparison: Taiwan ¥178.6bn, China ¥69.4bn, Korea ¥67.4bn of ¥367.5bn.
-- **H1 FY26 (Apr-Sep 2026), reported 28 Oct 2026** ([決算短信 H1 FY2026](https://www.advantest.com/en/news/2026/mpd9kn0000000gii-att/E_FR_FY2026_2Q.pdf)):
-  - Sales ¥845.2bn (+60.5%); gross profit ¥595.4bn; operating income ¥456.8bn (+96.5%); financial income ¥57.0bn, of which ¥54.2bn is valuation gains on strategic investments; net income ¥368.1bn.
-  - Test System ¥770.2bn, segment income ¥455.6bn; Services & Others ¥75.0bn, income ¥20.9bn.
-  - Operating cash flow ¥307.0bn. Investing −¥210.9bn, including ¥184.4bn of debt-instrument purchases, ¥26.1bn of equity purchases and ¥21.5bn of capex. Buybacks ¥105.9bn.
-  - In April 2026 Advantest issued ¥100bn of zero-coupon convertible bonds due 2031.
-  - Investment securities went from ¥67.9bn to ¥432.6bn. Inventories went from ¥231.7bn to ¥352.4bn.
-  - Average FX: ¥160/$.
-- **FY2026 guidance (28 Oct 2026)** ([note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf), [slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_slide.pdf)):
-  - Sales ¥1,863bn (+65.1%); operating income ¥967bn (51.9%); gross margin ≈68%.
-  - 2H sales ¥1,017.8bn, about +20% on 1H; 2H operating margin 50.1%. The 1H margin was helped by low-cost DRAM inventory and an inventory write-down reversal.
-  - Segments: SoC ¥1,375.0bn (July: ¥1,243.5bn); memory ¥229.0bn (¥227.0bn); other systems ¥110.5bn; Services & Others ¥148.5bn.
-  - SoC mix: compute and communications 90%, against 95% in FY25. Memory mix: DRAM 85%, non-volatile memory 15%.
-  - R&D ¥114.0bn; capex ¥60.0bn; 2H FX ¥150/$.
-- **Margin defence:** rising DRAM and other component costs will be offset "through pricing enabled by higher-specification tester configurations, licensing, and new instrumentation", keeping 2H operating margin "in the low 50% range" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
-- **Plan targets:** MTP3 (FY24-26 three-year averages) were raised on 28 Oct 2025 to sales ¥835-930bn, operating margin 33-36%, net income ¥207-248bn, ROIC 34-39% and EPS ¥284-341 ([release](https://www.advantest.com/en/news/2025/g2l53r0000000ofm-att/E_Info_20251028_01.pdf)). Actual and forecast sales average ≈¥1,257bn (¥779.7bn, ¥1,128.6bn, ¥1,863bn), well above the range. MTP4 is due "around May 2027" with an outlook through CY2028-29 ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
+- **FY2025 (to 31 Mar 2026; reported 27 Apr 2026)** ([決算短信](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf)):
+  - Sales ¥1,128.6bn (+44.7%); operating profit ¥499.1bn (44.2%); net income ¥375.4bn; EPS ¥515.15; overseas share 97.8%.
+  - Test System ¥1,019.4bn (segment profit ¥518.8bn); Services & Others ¥109.2bn (¥8.8bn, including a ¥2.5bn divestiture gain).
+  - FY2024 included a ¥21.4bn impairment on Essai (SLT).
+  - Cash flow: operating ¥335.2bn; investing −¥34.6bn; buybacks ¥114.3bn. Dividend ¥59 ([FY25 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)).
+- **FY2025 ship-to regions** (chart labels; these reconcile to the 決算短信 geography for Japan, Americas and Europe) ([FY25 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)):
+  - FY2025: Taiwan ¥569.5bn, China ¥213.3bn, Korea ¥180.3bn, Others ¥72.8bn, Americas ¥44.5bn, Japan ¥25.1bn, Europe ¥23.1bn.
+  - FY2024: Taiwan ¥326.5bn, China ¥175.1bn, Korea ¥157.0bn.
+  - Taiwan grew on "strengthened quality assurance requirements for high-end SoC semiconductors from several U.S. fabless companies" ([FY25 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_note.pdf)).
+- **Quarterly results, Jun-25 to Sep-26** ([Oct slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_slide.pdf)):
+
+  | Quarter end | Sales | Gross margin | Operating margin |
+  |---|---|---|---|
+  | Jun-25 | ¥263.8bn | 65.1% | 47.0% |
+  | Sep-25 | ¥262.9bn | 62.2% | 41.3% |
+  | Dec-25 | ¥273.8bn | 62.0% | 41.5% |
+  | Mar-26 | ¥328.1bn | 67.4% | 46.7% |
+  | Jun-26 | ¥367.5bn | 69.5% | 51.7% |
+  | Sep-26 | ¥477.7bn | 71.1% | 55.9% |
+
+- **Q2 FY26 detail** ([Oct note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf)):
+  - Segments: SoC ¥353.3bn; memory ¥53.4bn; other systems ≈¥29.9bn; services ¥41.1bn.
+  - R&D ¥23.4bn (4.9% of sales); FCF ¥61.5bn after securities purchases.
+  - Ship-to: Taiwan ¥261.3bn, China ¥90.1bn, Korea ¥64.6bn.
+- **H1 FY26 (reported 28 Oct 2026)** ([決算短信 H1](https://www.advantest.com/en/news/2026/mpd9kn0000000gii-att/E_FR_FY2026_2Q.pdf)):
+  - Sales ¥845.2bn; operating profit ¥456.8bn; financial income ¥57.0bn, of which ¥54.2bn is gains on strategic investments; net income ¥368.1bn.
+  - Cash flow: operating ¥307.0bn; investing −¥210.9bn, including ¥184.4bn of debt-instrument purchases and ¥21.5bn of capex.
+  - ¥100bn zero-coupon convertible bond due 2031 issued in April 2026.
+  - Investment securities rose from ¥67.9bn to ¥432.6bn; inventories from ¥231.7bn to ¥352.4bn.
+- **FY26 guidance (28 Oct 2026)** ([note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf); [slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_slide.pdf)):
+  - Sales ¥1,863bn; operating profit ¥967bn; net income ¥741.5bn; gross margin ≈68%.
+  - 2H sales ¥1,017.8bn (+20% on 1H); 2H operating margin 50.1%. 1H was helped by cheaper DRAM in inventory and a write-down reversal.
+  - Segments: SoC ¥1,375.0bn; memory ¥229.0bn; other systems ¥110.5bn; services ¥148.5bn.
+  - SoC mix: compute and communications 90% (95% in FY25). Memory mix: DRAM 85%, non-volatile memory 15%.
+  - R&D ¥114bn; capex ¥60bn.
+  - Component costs are to be offset via "higher-specification tester configurations, licensing, and new instrumentation" ([Q&A](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
+- **MTP3 targets (FY24-26 averages, revised 28 Oct 2025)** ([release](https://www.advantest.com/en/news/2025/g2l53r0000000ofm-att/E_Info_20251028_01.pdf)):
+  - Targets: sales ¥835-930bn; operating margin 33-36%; ROIC 34-39%; EPS ¥284-341.
+  - Actual and forecast sales average ≈¥1,257bn.
+  - MTP4 is due around May 2027 with an outlook through CY2028-29 ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
 - **Capacity:**
-  - SoC capacity is already above 5,000 systems a year. The 10,000 target is to come "well ahead of" the original end-FY2028 or CY2029 date, and 20,000 is "under active internal discussion" ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
-  - 10,000 of today's systems equal about 20,000 in 2020 configuration; 2020 output was about 1,000. A second EMS factory in Southeast Asia is ramping ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
-  - Use of convertible-bond proceeds: ≈¥50bn for capacity by March 2029, ¥20bn for inventory and ¥30bn for next-generation test ([決算短信 FY2025](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf)).
-- **Returns:** interim dividend ¥49; buyback of up to ¥280bn or 11m shares between 29 Oct 2026 and 24 Mar 2027; MTP3 total return ratio of 50% or more ([note 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf)).
-- **China:** "approximately 19% of total sales… relatively consistent around 20%". The China mix is about 80-85% SoC and 15% memory. New fabs in China may add business "around the 2028-2029 timeframe"; until then China stays "around the current 20% level or lower" ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
-- **Memory share outlook:** "memory market share may experience a decline this year". Advantest is not the NAND incumbent, and "device speed and bandwidth transitions are also creating insertion opportunities that we have not fully captured". It has new products with customer commitments ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
-- **Competition and dual sourcing:** "customers may consider dual-vendor strategies… we are staying ahead of that" ([Q&A 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_QA.pdf)). Customers "prefer to work with a single supplier because it is more efficient in terms of engineering resources and managing their installed base" ([fireside 12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
-- **Other:** cybersecurity incident in February 2026 ([FY25 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_note.pdf)). Customer concentration disclosed only qualitatively ([IAR 2026](https://www.advantest.com/document/en/investors/ir-library/annual/E_all_IAR2026.pdf)).
+  - SoC tester capacity is above 5,000 systems a year. The 10,000 target, originally end FY2028 or CY2029, is to be reached "well ahead", and 20,000 is under discussion ([Q&A 28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf)).
+  - 10,000 of today's systems equal about 20,000 in 2020 configuration; 2020 output was about 1,000. A second EMS plant is ramping in Southeast Asia ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
+  - Convertible-bond use: ≈¥50bn for capacity by March 2029, ¥20bn for inventory, ¥30bn for next-generation test ([決算短信 FY2025](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf)).
+- **Returns:** interim dividend ¥49; buyback up to ¥280bn (11m shares) between 29 Oct 2026 and 24 Mar 2027; MTP3 total return ratio of 50% or more ([note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf)).
+- **China:** "approximately 19% of total sales". The China mix is 80-85% SoC. New fabs there could add business "around 2028-2029"; until then China stays at "20% level or lower" ([Q&A 29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)).
+- **Memory:** share "may experience a decline this year". Advantest is not the NAND incumbent, and speed and bandwidth transitions create "insertion opportunities that we have not fully captured" (same source).
+- **Dual sourcing:** "we are staying ahead of that" ([Q&A 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_QA.pdf)). Customers "prefer… a single supplier… efficient in terms of engineering resources and managing their installed base" ([fireside 12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
+- **Other:** a cybersecurity incident in February 2026 ([FY25 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_note.pdf)).
 
 ### Inferences
-- **2H operating margin:** ≈50% looks set to normalise downward as DRAM costs flow through, before any volume slowdown.
-- **Revenue mix:** about 90% of SoC revenue is compute and communications, and over half of all revenue ships to Taiwan. Revenue therefore tracks a handful of US fabless AI programmes built at TSMC and its OSATs.
-- **Free cash flow:** H1 FY26 FCF of ¥96.1bn mixes operations with securities purchases. Underlying operating cash flow less capex was ≈¥284bn.
-- **Orders:** none of the FY2025-FY2026 documents read reports orders or backlog.
+- **2H margin:** about 50% points to margin normalising, driven by DRAM costs, before any volume slowdown.
+- **Revenue concentration:** about 90% of SoC revenue is compute and communications, and over half of all revenue ships to Taiwan. Advantest's revenue therefore tracks a handful of US fabless AI programmes built at TSMC and its OSATs.
 
 ### Gaps
-- Orders and backlog are not disclosed in any document read. I could not verify whether disclosure was discontinued, or when.
-- The identity of the ¥364.7bn of new "strategic investment" securities and the "investment fund" contribution is not disclosed.
-- Named customer shares are not disclosed.
-- The split of Services & Others between support services and other is to be confirmed [INCOMPLETE].
+- No orders or backlog figure appears in any FY2025-26 document read. I could not verify when disclosure stopped.
+- The identities of the ¥364.7bn of new "strategic investments" and the "investment fund" are not disclosed.
+- No named customer shares.
+- No Japanese 有報 was read.
 
 ---
 
 ## 3. Teradyne (TER): results, segments, position
 
 ### Takeaway
-Teradyne is a smaller, lower-margin number two in SoC test. It has gained ground in memory and HBM test (Korea was 32% of Q3'26 revenue) and is buying into the probe and interface layer (Technoprobe, FormFactor). Its customer concentration is higher and disclosed. China is 15-21% of revenue under US export rules.
+Teradyne is a smaller, lower-margin number two that has caught up with Advantest in memory and HBM. Its quarterly memory revenue is now about equal to Advantest's, and Korea is 32% of its revenue. It is broadening beyond compute, which was only about 20% of Q3'26 sales. Its compute share gains are company claims that depend on dual-vendor ramps in 2027.
 
 ### Cited Findings
-- **Q3 2026** (quarter to 27 Sep 2026, reported 27 Oct 2026) ([8-K Ex. 99.1](https://www.sec.gov/Archives/edgar/data/0000097210/000119312526434981/ter-ex99_1.htm); [10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)):
-  - Revenue $1,306.0m (+70%; Q2'26 $1,329.0m). Semiconductor Test $1,072.0m (+76.9%): SoC $676.5m, memory $300.8m, IST $94.7m. Product Test $138.1m (+56.4%); Robotics $95.8m (+27.6%).
-  - GAAP gross margin 59.1%; engineering and development $163.1m (12.5%); GAAP operating income $402.0m (30.8%).
-  - GAAP EPS $2.17; non-GAAP $2.29.
-- **Q4 2026 guidance:** revenue $1,250-1,350m; non-GAAP EPS $1.95-2.25 ([8-K](https://www.sec.gov/Archives/edgar/data/0000097210/000119312526434981/ter-ex99_1.htm)). Quartr's summary adds a gross-margin guide of 57.5-58.5% and an FY26 midpoint of about $5.2bn; Quartr is a third-party AI summary ([Quartr](https://quartr.com/events/teradyne-ter-q3-2026_3sxG0RzK)).
-- **CEO quote:** "Demand extended across the AI value chain, from memory and hard disk drive test to high-speed interconnect and robotics" (Greg Smith, [8-K](https://www.sec.gov/Archives/edgar/data/0000097210/000119312526434981/ter-ex99_1.htm)).
-- **Memory:** a record $301m, the fourth consecutive quarter above $200m ([10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)).
-- **Call commentary (not verified against a transcript):**
-  - Compute revenue up "nearly 50%" year on year (CFO Michelle Turner); customers' dual-vendor strategies should add compute opportunities in 2027 ([Zacks](https://www.zacks.com/stock/news/3018941/teradyne-q3-earnings-call-highlights-ai-demand-and-2027-growth-plans)).
-  - "Compute is exceeding expectations and share is rising" (company claim, unconfirmed). Major ASIC ramps in 2027 are "more back-end loaded". CPO is "preseason" ([StockStory](https://stockstory.org/us/stocks/nasdaq/ter/news/earnings-call/teradynes-q3-earnings-call-our-top-5-analyst-questions)).
-  - AI-related revenue was above 60% of sales ([Quartr](https://quartr.com/events/teradyne-ter-q3-2026_3sxG0RzK)).
-- **Revenue by country:**
-  - Q3'26: Korea 32%, China 21%, Taiwan 14%, Singapore 9%, US 8%, Europe 5%. Q3'25: Korea 12%, China 17%, Taiwan 37%.
-  - 9M'26: Taiwan 32%, Korea 24%, China 15%, US 7%, Singapore 6% ([10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)).
-- **Balance sheet and cash flow** ([8-K](https://www.sec.gov/Archives/edgar/data/0000097210/000119312526434981/ter-ex99_1.htm); [10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)):
-  - Cash $460.7m plus marketable securities $164.1m; no borrowings. The $200m drawn at 31 Dec 2025 was repaid, and a $1.0bn revolver signed on 7 Aug 2026 runs to 2031.
-  - 9M'26 operating cash flow $1,047.9m, capex $241.8m, FCF $806.1m.
-  - Buybacks $173.5m, or 0.5m shares at an average $349.62; dividends $61.0m.
-  - 156.12m shares outstanding (26 Oct 2026).
+- **Q3'26 (to 27 Sep 2026; reported 27-28 Oct 2026)** ([8-K](https://www.sec.gov/Archives/edgar/data/0000097210/000119312526434981/ter-ex99_1.htm); [10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm); [slides](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf)):
+  - Revenue $1,306.0m (Q2'26 $1,329.0m; Q3'25 $769.2m).
+  - SoC $676.5m (+54%), memory $300.8m (+135%), IST $94.7m (+152%), Product Test $138.1m (+56%), Robotics $95.8m (+28%).
+  - Non-GAAP: gross margin 59.1%; R&D 12.5%; SG&A 15.0%; operating margin 31.6%; EPS $2.29.
+  - Inventory $575m; Q3 FCF $227m.
+- **Prepared remarks (CFO Turner, CEO Smith, 28 Oct 2026)** ([remarks](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/webcast_transcript/Teradyne_Q3%2726_Earnings_Prepared_Remarks.pdf)):
+  - By segment: compute "grew nearly 50%"; auto and industrial up "nearly 90%" on data-centre power; mobile up 60% "from a low base".
+  - Memory was driven by "HBM and DRAM… and a resurgence in NAND". IST's record came from HDD test at "all three major suppliers".
+  - Product Test book-to-bill was 1.4x.
+  - Mix: AI-driven revenue is ">60% of total revenue". "Outside of compute, the rest of our portfolio delivered close to 80%" of sales.
+  - Investment: R&D plus capex "close to $1B" in 2026.
+  - Q4 guidance: non-GAAP operating margin 28-30%.
+  - Outlook: "2027… another year of healthy growth… strengthening backlog". An "updated target earnings model" comes on the Q4 call.
+- **Dual vendor (company claims, unconfirmed):** the slides put a mature second vendor's "expected share range" at 30-70% ([slides](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf)). The status of each programme ([remarks](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/webcast_transcript/Teradyne_Q3%2726_Earnings_Prepared_Remarks.pdf)):
+
+  | Customer | Stage | Expected next step |
+  |---|---|---|
+  | First hyperscaler | Mature | Next major ramp mid-2027 |
+  | Merchant GPU | Fast follower | More revenue in 2027 |
+  | Second hyperscaler | Fast follower | Capacity buys 2H 2027 |
+  | Third hyperscaler | Initial qualification | — |
+
+- **Target earnings model (updated 3 Feb 2026; originally 2028)** ([slides](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf); [Analyst Day](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/919/9566/pdf/ALL_Analyst_Day_2025_IR_SITE_NEW.pdf)):
+
+  | Metric | 2025 actual | Target |
+  |---|---|---|
+  | ATE TAM | ~$9.0bn | $12-14bn |
+  | Teradyne revenue | $3.2bn | ≈$6.0bn |
+  | Gross margin | 58.3% | 59-61% |
+  | Operating expenses | 36.0% | 27-29% |
+  | Operating margin | 22.3% | 30-34% |
+  | Non-GAAP EPS | $3.96 | $9.50-11.00 |
+
+  The 2026 midpoint is already $5.2bn of revenue and $9.41 of EPS.
+- **2025 (10-K; Q4 release 2 Feb 2026)** ([10-K](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-059002/ter-20251231.htm); [Q4 release](https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results)):
+  - Revenue $3,190m (+13%): SoC $1,890m, memory $505m, IST $129m, Product Test $358m, Robotics $308m.
+  - Semi Test was 79% of revenue. Q4'25 revenue was $1,083m.
+  - FCF $450m; buybacks $709m ([slides](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf)).
+- **Concentration:** five largest direct customers 44% (2025), 36% (2024), 32% (2023). One direct customer was 19%; specifiers drove 12% and 10% ([10-K](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-059002/ter-20251231.htm)).
+- **Country** ([10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)):
+  - Q3'26: Korea 32%, China 21%, Taiwan 14%, Singapore 9%, US 8%.
+  - Q3'25: Korea 12%, China 17%, Taiwan 37%.
+  - 9M'26: Taiwan 32%, Korea 24%, China 15%.
+- **Balance sheet and returns** ([10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)):
+  - Cash $460.7m plus securities $164.1m; the $200m drawn at end-2025 has been repaid; new $1.0bn revolver from 7 Aug 2026.
+  - 9M'26 buybacks $173.5m (average price $349.62); dividends $61.0m; 156.12m shares outstanding.
 - **Deals** ([10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)):
-  - Technoprobe: 10% for €483.1m ($524.1m) on 27 May 2024, with a board seat. Carrying value $518.6m against a fair value of $2,242.4m at 27 Sep 2026.
-  - FormFactor: $300m minority stake plus collaboration ("silicon photonics, high-performance compute, advanced packaging, and high-bandwidth memory"), agreed 6 Oct 2026, closing in Q4'26.
-  - MultiLane Test Products: 75% for $157.8m on 8 Apr 2026.
-  - Quantifi Photonics (New Zealand, photonic IC test): acquired 31 May 2025 for $127.2m; "not material".
-  - Infineon ATE team in Regensburg: 31 Jan 2025, €17.6m.
-- **2025 10-K** ([10-K FY2025](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-059002/ter-20251231.htm)):
-  - Segment mix: Semi Test 79%, Product Test 11%, Robotics 10%.
-  - Semi Test +$399.8m (+18.8%) "driven primarily by higher sales in compute related to artificial intelligence applications and… system level testers".
-  - Concentration: five largest direct customers 44% (2024 36%, 2023 32%). Two specifiers drove 12% and 10%; one direct customer 19%.
-  - Named competitors: Advantest, SPEA, Cohu, "emerging Asian companies and… internal supply at several of our customers". About 6,600 employees.
-  - Exports: "Compliance with the military end user rule has impacted our ability to sell products to certain customers in China". "Current trade restrictions are limiting our ability to be competitive, particularly in certain markets, where some competitors are not subjected to the same restrictions."
+  - Technoprobe: 10% for €483.1m (27 May 2024). Carrying value $518.6m against a fair value of $2,242.4m (27 Sep 2026).
+  - FormFactor: $300m minority stake plus collaboration on "silicon photonics, high-performance compute, advanced packaging, and high-bandwidth memory", agreed 6 Oct 2026 and closing in Q4'26.
+  - MultiLane JV: 75% for $157.8m (8 Apr 2026).
+  - Quantifi Photonics: $127.2m (31 May 2025), "not material".
+  - Infineon ATE team: €17.6m (31 Jan 2025).
+  - TestInsight: 16 Apr 2026, price undisclosed ([release](https://investors.teradyne.com/news-events/press-releases/detail/439/teradyne-acquires-testinsight-accelerating-time-to-market-for-ai-and-data-center-devices)).
+- **Exports:** compliance with the military-end-user rule "has impacted our ability to sell products to certain customers in China" ([10-K](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-059002/ter-20251231.htm)).
+- **Memory share claim (Analyst Day, 11 Mar 2025):** Magnum is the "de facto standard". The memory slide shows "$500M" revenue, "$1.6B" memory ATE TAM and "50%" share, but the period is ambiguous in the extracted text. This **conflicts** with Advantest's own claim of a 63% memory share of a $1.9bn market in CY24. Both are company claims; definitions differ.
 
 ### Inferences
-- In Jul-Sep 2026 Teradyne's memory revenue ($300.8m) and Advantest's memory-tester sales (≈$332m) were close to parity. Korea's jump to 32% of Teradyne revenue fits HBM test wins at Korean memory makers, but the customers are not named.
-- In SoC, Advantest's quarterly sales were about 3.2x Teradyne's. Teradyne's "share rising" claim is plausible only from a low base.
+- **Memory:** Teradyne has reached about parity with Advantest in memory test, and Korea, which means HBM, is the swing factor.
+- **Compute:** Teradyne compute was about $260m in Q3'26 (≈20% of $1,306m; derived), against Advantest SoC of ≈$2.2bn, about 90% of it compute. That suggests Advantest held well above 80% of the two firms' compute test revenue that quarter. Teradyne itself flags weak "second-half program timing in compute", so one quarter overstates the gap.
 
 ### Gaps
-- Teradyne's 2026 and 2027 TAM statements, its long-term target model and its exact 2025 revenue (≈$3.19bn derived) are still to be confirmed from its own documents [INCOMPLETE].
+- No full Q&A transcript was available.
+- Teradyne's own 2026 and 2027 TAM figures, beyond its slide on test's share of capex, were not found.
 
 ---
 
-## 4. Stacked chips: HBM and hybrid-bonded die test [INCOMPLETE]
+## 4. Stacked chips: how HBM and hybrid-bonded dies are tested
 
-- **Advantest products:** T5801 DRAM tester (GDDR7, LPDDR6, DDR6; up to 36 Gbps PAM3 and 18 Gbps NRZ), "already in use by strategic memory customers" ([12 Feb 2025](https://www.advantest.com/en/news/2025/20250212.html)). M5241 memory handler with active thermal control, first shipments Q2 CY2026; "multiple major memory manufacturers are preparing for adoption" (company claim, unconfirmed) ([10 Dec 2025](https://www.advantest.com/en/news/2025/20251210.html)). Memory solutions "beyond HBM4" are planned ([sell-side Q&A 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_Sell-Side%20Analyst%20Small%20Group%20Meeting_260427_QA.pdf)). The die-level prober with Tokyo Seimitsu addresses heat in 2.5D/3D-packaged devices ([16 Dec 2025](https://www.advantest.com/en/news/2025/20251216.html)).
-- **Teradyne:** Magnum 7H for HBM (2025), Magnum E2 (2026), Titan HP with burn-in (2026) and TSMC 3DFabric testing award (2025), per its press-release list ([Teradyne press releases](https://investors.teradyne.com/news-events/press-releases)) [details INCOMPLETE].
-- **Test flow for HBM:** wafer sort, then known-good-stack test, then post-stack and final test. What stays untestable at hybrid-bond pitches below about 25 µm: [INCOMPLETE].
+### Takeaway
+Hybrid bonding in HBM has been **postponed**. JEDEC's 775 µm height limit lets 16-high HBM4 use microbumps, so each DRAM layer can still be tested before stacking. The access problem moves to HBM4E/HBM5 (18-20-high) at about 10 µm pitch, where probing damages bond pads ("testing is a particle source"). For logic chip-on-wafer modules, access is through C4 bumps only, with tens to hundreds of thousands of buried interconnects. Coverage therefore relies on DFT standards such as IEEE 1838 and on extra known-good insertions.
 
-## 5. Other tester suppliers (field scan) [INCOMPLETE]
-Chroma ATE, Cohu, Aehr, Emerson/NI, AEM, the Korean memory-test suppliers (YC, UniTest, Exicon, Neosem, DI) and Japanese niche suppliers are not yet researched. The only context so far: Teradyne's 10-K names SPEA and Cohu as competitors, and Advantest partners with Emerson (formerly NI) on test analytics ([19 Mar 2025](https://www.advantest.com/en/news/2025/20250319.html)).
+### Cited Findings
+- **JEDEC and HBM4:** the HBM height limit rose from 720 to 775 µm. That allows 16-high HBM4 on microbumps; hybrid bonding is "postponed, not canceled", expected for HBM5 at the end of the decade (≥16-high, 4,096-bit, 4 TB/s) or perhaps 18-20-high HBM4E ([Semiconductor Engineering, 13 Jan 2026](https://semiengineering.com/hbm4-sticks-with-microbumps-postponing-hybrid-bonding/)).
+- **Pitch:** microbump pitch moves from about 40 µm toward about 10 µm for HBM4; hybrid bonding works to about 10 µm pad pitch.
+- **Test under hybrid bonding:** UMC says it makes the flow "very difficult" and that "testing is a particle source"; probes can damage the pristine pad (same source).
+- **SK hynix:** has reportedly completed validation of 12-high hybrid-bonded HBM (TrendForce, 29 Apr 2026, via search summary; not opened: [link](https://www.trendforce.com/news/2026/04/29/news-sk-hynix-reportedly-completes-12-high-hybrid-bonding-hbm-validation-works-to-raise-yields-for-mass-production/)).
+- **Teradyne on chiplet modules** ([blog, 27 Jul 2026](https://www.teradyne.com/2026/07/27/ai-chiplet-architectures-redefining-test-insertions/); company view):
+  - Insertions now span "wafer level, singulated die, CoW module on interposer wafer tests, singulated CoW module tests, and final assembly".
+  - At CoW, "electrical access is typically limited to C4 bump interfaces".
+  - Interconnects number "tens or even hundreds of thousands", so "full coverage" is hard. UCIe links are "sensitive to signal integrity and electrostatic effects".
+  - The industry needs IEEE 1838 DFT and new probe architectures.
+- **Teradyne HBM tester:** Magnum 7H covers HBM2E to HBM4E, "from base-die wafer test to memory core test and burn-in". It tests at KGSD or chip-on-wafer level with probe cards, and post-singulation with bare-die handlers. Teradyne says it is "ramping at the largest HBM manufacturers" ([4 Aug 2025](https://investors.teradyne.com/news-events/press-releases/detail/419/teradyne-unveils-magnum-7h---the-next-generation-memory-tester-for-high-bandwidth-memory-devices); company claim, unconfirmed). Magnum E2 for LPDDR6, DDR6, GDDR7 and NAND with PAM3 followed ([29 Sep 2026](https://investors.teradyne.com/news-events/press-releases/detail/451/teradyne-announces-magnum-e2-to-address-next-generation-memory-test-demands-driven-by-ai-and-high-performance-computing)).
+- **Teradyne known-good-die cell:** UltraFLEXplus with TEL's Prexa SDP singulated-device prober for 2.5D/3D packages, because "a single defective die can compromise the entire high-value package" ([8 Jun 2026](https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron)).
+- **Teradyne UCIe test:** UCIe streaming-scan test at wafer sort, behind the TSMC 3DFabric award ([Sep 2025](https://investors.teradyne.com/news-events/press-releases/detail/422/teradyne-awarded-2025-tsmc-open-innovation-platform-oip-partner-of-the-year-for-tsmc-3dfabric-testing)).
+- **Teradyne burn-in:** Titan HP holds each device at its target junction temperature under real workload ([6 Oct 2026](https://investors.teradyne.com/news-events/press-releases/detail/452/teradyne-introduces-titan-hp-platform-with-burn-in-capabilities-for-advanced-ai-data-center-devices)).
+- **Advantest memory hardware:**
+  - T5801 DRAM tester: up to 36 Gbps PAM3 and 18 Gbps NRZ; "in use by strategic memory customers" ([12 Feb 2025](https://www.advantest.com/en/news/2025/20250212.html)).
+  - M5241 handler with active thermal control: shipping from Q2 CY2026; "multiple major memory manufacturers are preparing for adoption" ([10 Dec 2025](https://www.advantest.com/en/news/2025/20251210.html); company claims, unconfirmed).
+  - Solutions "beyond HBM4" are planned ([27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_Sell-Side%20Analyst%20Small%20Group%20Meeting_260427_QA.pdf)).
+- **Advantest die-level probing:** co-developing a die-level prober with Tokyo Seimitsu for heat in 2.5D/3D packages ([16 Dec 2025](https://www.advantest.com/en/news/2025/20251216.html)).
+- **Advantest at ITC 2026:** ran a panel on "Test Flow Optimization End-to-End for 3D Advanced Packaging" ([13 Oct 2026](https://www.advantest.com/en/news/2026/20261013.html)).
 
-## 6. Path-forward detail
-See table A3. Sources: [ACS RTDI/NVIDIA, 6 Oct 2025](https://www.advantest.com/en/news/2025/2025100602.html); [Emerson, 19 Mar 2025](https://www.advantest.com/en/news/2025/20250319.html); [PDF Solutions, 30 Jul 2020](https://www.advantest.com/en/news/2020/20200730.html); [Velocity/AllianceATE, 18 May 2026](https://www.advantest.com/en/news/2026/20260518.html); [SiConic DFT, 16 Jul 2026](https://www.advantest.com/en/news/2026/20260716.html); [ITC 2026 and SmarTest 8, 13 Oct 2026](https://www.advantest.com/en/news/2026/20261013.html); [Technoprobe/FormFactor, 9 Jan 2025](https://www.advantest.com/en/news/2025/20250109.html); [MJC, 27 Feb 2025](https://www.advantest.com/en/news/2025/20250227.html).
+### Inferences
+- **Before HBM5:** until HBM5 or hybrid-bonded HBM4E, HBM test is pre-stack wafer and core test plus a post-stack KGSD performance test, not an untestable buried interface. Teradyne's "more stacks" argument and Korean suppliers' wafer and burn-in wins (section 5) sit in this regime.
+- **At about 10 µm pitch:** the buried-interface problem shifts value toward DFT and BIST IP, metrology and inspection, and known-good-die insertions. That favours suppliers that own the full cell, including probing and handling.
 
-## 7. Entry-point data [INCOMPLETE]
-For Teradyne see table A4 ([stockanalysis.com, 12 Nov 2026](https://stockanalysis.com/stocks/ter/statistics/)): 52-week change +44%; 18 analysts rate it Buy on average, with a mean target of $415.88. On StockStory's figures the stock fell from $324.95 before the results to $303.65 after ([StockStory](https://stockstory.org/us/stocks/nasdaq/ter/news/earnings-call/teradynes-q3-earnings-call-our-top-5-analyst-questions)). Advantest valuation data is still to be collected.
+### Gaps
+- No roadmap statement from either firm specifically on test access below 25 µm hybrid-bond pitch.
+- No quantified escape rate or untested-coverage figure.
 
-## 8. Could not verify (so far)
-- Advantest orders and backlog.
-- Advantest named customers and their shares.
-- Independent (third-party) tester market shares.
-- Teradyne TAM figures and long-term model.
-- The current size of Advantest's PDF Solutions stake.
-- Any ATE product that reports a stated uncertainty.
-- Roadmap statements on test access below 25 µm bond pitch.
-- The Advantest share price and valuation.
-- All suppliers in section 5.
+---
 
-## 9. Sources (dates as published)
-See inline links. Advantest documents are dated 30 Jul 2020 to 12 Nov 2026; Teradyne filings 2025 10-K (FY ended 31 Dec 2025), Q3'26 8-K (27 Oct 2026) and 10-Q (quarter to 27 Sep 2026); stockanalysis.com (12 Nov 2026).
+## 5. Other tester suppliers (field scan; mostly secondary sources)
+
+### Takeaway
+On revenue scale, Chroma, Cohu and AEM plausibly matter at global top-15 level for "measure, inspect and test", though not all of their revenue is semiconductor test. Aehr and the Korean memory-test makers are niche but strategically placed. The Korean makers are capturing SK hynix's and Samsung's HBM4 and DRAM wafer-test and burn-in insertions. This is a comparison of scale, not a ranking.
+
+### Cited Findings
+- **Chroma ATE (2360.TW)** ([Quartr Q3 2026](https://quartr.com/events/chroma-ate-inc-2360-q3-2026_F9Dy1A80); [Quartr Q2 2026](https://quartr.com/events/chroma-ate-inc-2360-q2-2026_F9Dy1LPA); [2Slides](https://2slides.com/et/gallery/chroma-ate-q3-2026-earnings-presentation); secondary):
+  - Q3 2026 (reported 29 Oct): sales NT$17.93bn; gross profit NT$10.31bn (≈57.5%); operating profit NT$7.17bn (≈40%); net income NT$5.78bn; EPS NT$13.34. 9M sales NT$43.3bn (+120%).
+  - Q2: sales NT$13.53bn (+110%). Test Instruments & ATS +136%; Semiconductor +62%.
+  - Legacy tester demand is guided up 10-20% for 2026. SLT and photonics are named growth drivers. Order visibility runs into 2027, and "orders… from Google and Nvidia" were cited, segment unclear.
+  - Growth rates conflict across summaries. Digitimes linked the Q1 record to AI-server power supplies, SLT and photonics ([4 May 2026](https://www.digitimes.com/news/a20260504PD202.html)).
+  - The semiconductor share of revenue could not be verified.
+- **Cohu (COHU)** ([Ariva copy of release](https://www.ariva.de/news/cohu-reports-third-quarter-2026-results-12185729); [Quartr](https://quartr.com/events/cohu-cohu-q3-2026_3sZvAMqA); [Panabee](https://www.panabee.com/news/cohu-earnings-q3-2026); secondary):
+  - Q3 2026: revenue $173.0m (+37%); GAAP EPS $0.22; non-GAAP $0.43; non-GAAP gross margin 45.7%; bookings +126%.
+  - Q4 guidance about $178m ±$7m. FY26 revenue +38%.
+  - Products: handlers, interface and contactors, testers, AI-based HBM inspection, and the first volume licence for prescriptive-maintenance software.
+  - A $330m HBM and advanced-packaging inspection SAM comes from a single summary (unverified). Demo systems go to a US IDM in Q1 2027.
+- **Aehr Test Systems (AEHR)** ([8-K Ex. 99.1, 2 Nov 2026](https://www.sec.gov/Archives/edgar/data/0001040470/000165495426009385/aehr_ex991.htm); [release copy](https://finviz.com/news/413485/aehr-test-systems-reports-record-first-quarter-fiscal-2027-revenue-of-330-million-raises-full-year-revenue-outlook-to-150-million-triple-fiscal-2026-revenue)):
+  - Q1 FY27 (to 25 Sep 2026): revenue $33.0m (+200%); GAAP net income $7.2m; bookings $46.7m.
+  - Effective backlog $109.3m (1 Nov). FY27 guidance raised to $150m, with non-GAAP net income of at least 20%.
+  - Sonoma burn-in shipments run at 12 systems a month for a lead hyperscaler's AI processor. Its second AI processor is qualified, with a ramp in CY2027.
+  - This is a burn-in niche (wafer-level for silicon carbide, package-level for AI).
+- **AEM Holdings (AWX.SI)** ([Quartr H1 2026](https://quartr.com/events/aem-holdings-awx-h1-2026_F1UnzA2V); [Quartr Q1 2026](https://quartr.com/events/aem-holdings-ltd-awx-q1-2026_F1UnzADz); [iTiger FY2025](https://www.itiger.com/news/1160016247); secondary):
+  - 1H26 revenue S$247.2m (+30%); net profit S$30.8m. FY26 guidance raised to S$630-680m (from S$550-600m; S$460-510m in February). FY25: S$399.3m revenue, S$17.1m profit.
+  - Test Cell Solutions (SLT and burn-in) was 75% of Q1 revenue. A second, fabless AI/HPC customer is expected to be the largest in FY26; a memory ramp begins 2H26.
+- **Emerson (NI)** ([19 Mar 2025](https://www.advantest.com/en/news/2025/20250319.html)):
+  - Its Test & Measurement arm partners with Advantest on "semiconductor product analytics, algorithm development, and data management" for edge decisions.
+  - NI's own semiconductor test revenue could not be verified.
+- **Korean memory test** (Korean-press summaries via search: [dealsite 170288](https://dealsite.co.kr/articles/170288), [167256](https://dealsite.co.kr/articles/167256), [166024](https://dealsite.co.kr/articles/166024), [165257](https://dealsite.co.kr/articles/165257), [167793](https://dealsite.co.kr/articles/167793), [SPTA Times 25 Aug 2026](https://www.sptatimeskorea.com/post/%EC%A0%9C20260825-te-01%ED%98%B8-2026%EB%85%84-8%EC%9B%94-25%EC%9D%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9E%A5%EB%B9%84-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%89%B4%EC%8A%A4-%EC%9A%94%EC%95%BD); individual figures not mapped to articles and **not verified against DART**):
+  - **DI and its subsidiary Digital Frontier:** SK hynix HBM4 wafer-tester contracts of ₩99.8bn (Jan 2026) and ₩96.3bn (Mar 2026); Samsung DDR5 and NAND burn-in tester orders.
+  - **UniTest:** passed SK hynix's HBM4 burn-in mass-production qualification (Feb 2026); ₩29.2bn HBM4 wafer burn-in contract (May 2026); Q2 operating profit ₩7.9bn. Reported combined SK hynix HBM4 wafer-test orders for Digital Frontier and UniTest in 2026: ₩283.9bn.
+  - **YC:** Samsung wafer-tester contracts of ₩174.6bn in H1 2026, DRAM-led.
+  - **Exicon:** Samsung CLT and SSD tester contracts of ₩30.2bn (Mar) and ₩49.85bn (Jul); HBM inspection gear in development.
+  - **Neosem:** ₩8.6bn CLT tester contract with Samsung.
+- **Other context:** Teradyne's 10-K names SPEA (Italy) and Cohu as competitors, plus "emerging Asian companies" and in-house supply at customers.
+
+### Inferences
+- **Insertion split:** Korean suppliers cluster in wafer test, burn-in and SSD/CLT insertions at domestic memory makers. Advantest and Teradyne keep high-speed core and final performance test. That fits Advantest's admission that it has not captured some memory insertions.
+
+### Gaps
+- Japanese niche testers (for example TESEC and Shibasoku) were not researched.
+- DART and MOPS primary filings were not opened.
+- No Korean supplier's full-year revenue was verified.
+
+---
+
+## 6. Path-forward detail (supporting A3)
+
+- **PDF Solutions: Advantest has exited.**
+  - Advantest America sold 3,306,924 PDF Solutions shares at $44 in an upsized offering that closed around 15 May 2026. A Schedule 13G/A shows Advantest at 0% (event date 15 May 2026). These details come from search summaries of the [PDF Solutions pricing release](https://www.pdf.com/resources/pdf-solutions-announces-pricing-of-an-upsized-public-offering-of-common-stock/) and the [SEC 13G/A](https://www.sec.gov/Archives/edgar/data/0001120914/000119312526242623/primary_doc.xml).
+  - Before the sale the stake was ≈8.4% ([Simply Wall St](https://simplywall.st/stocks/us/semiconductors/nasdaq-pdfs/pdf-solutions/ownership); undated).
+  - This is consistent with Advantest's ¥22.1bn "proceeds from the sale of held shares", "made in light of our broader strategic priorities" ([Jul 2026 note](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_note.pdf)).
+  - Whether the Exensio-based cloud partnership of July 2020 continues could not be verified ([2020 release](https://www.advantest.com/en/news/2020/20200730.html)).
+- **Advantest software and automation:** [ACS RTDI/NVIDIA, 6 Oct 2025](https://www.advantest.com/en/news/2025/2025100602.html); [Velocity/AllianceATE, 18 May 2026](https://www.advantest.com/en/news/2026/20260518.html); [SiConic DFT, 16 Jul 2026](https://www.advantest.com/en/news/2026/20260716.html); [SmarTest 8 and ITC, 13 Oct 2026](https://www.advantest.com/en/news/2026/20261013.html); [Pin Scale 5000B, 22 Apr 2026](https://www.advantest.com/en/news/2026/20260422.html).
+- **Advantest probe-card partners:** [Technoprobe and FormFactor stakes, 9 Jan 2025](https://www.advantest.com/en/news/2025/20250109.html); [MJC, 27 Feb 2025](https://www.advantest.com/en/news/2025/20250227.html).
+- **Advantest: "Distribution of test"** across engineering, sort, hot and cold package test, burn-in and SLT ([fireside 17 Nov 2025](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20251117.pdf)).
+- **Advantest silicon photonics:** first large high-volume ATE order received ([Apr 2026 slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf)). The market should "more than double" next year ([Q&A 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_QA.pdf)). OpenLight partnership (23 Jun 2026; title only).
+- **Teradyne silicon photonics:** Photon 100 opto-electric platform for wafer, optical engine and CPO module insertions ([17 Mar 2026](https://investors.teradyne.com/news-events/press-releases/detail/436/teradyne-introduces-photon-100)). Quantifi photonic-IC test ([10 Mar 2025](https://investors.teradyne.com/news-events/press-releases/detail/10/teradyne-to-acquire-quantifi-photonics)).
+- **Teradyne compute instruments:** UltraPin5000-EM ("up to 80 times more vector memory than other market offerings" in the [1 Sep 2026 release](https://investors.teradyne.com/news-events/press-releases/detail/447/teradyne-launches-advanced-ultraflexplus-instruments-engineered-for-ai-and-data-center-computing-devices), but "than our current instrument" in the 28 Oct prepared remarks, an internal inconsistency); UltraVS64-HP (up to 15,000 A); UltraPort-PCIe6.
+
+---
+
+## 7. Entry-point data (separate from quality)
+
+- **Snapshot:** see table A4 for prices and multiples.
+- **Implied forward EPS (my calculation from stockanalysis forward P/E; period basis not stated):**
+  - Advantest ≈¥1,226, about +19% on FY26 guidance of ¥1,027.
+  - Teradyne ≈$10.61, about +13% on the 2026 midpoint of $9.41.
+- **Price path:**
+  - Teradyne fell from $324.95 before its results to $303.65 after ([StockStory](https://stockstory.org/us/stocks/nasdaq/ter/news/earnings-call/teradynes-q3-earnings-call-our-top-5-analyst-questions)) and now stands at $265.78. That is about 24% below the $349.62 average price of its own 2026 buybacks ([10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm)).
+  - Advantest fell 4.6% on 12 Nov 2026, the day of its supply-chain fireside chat ([stockanalysis](https://stockanalysis.com/quote/tyo/6857/statistics/)).
+- **Cycle position:**
+  - Both companies are at record revenue.
+  - Advantest's tester market is up about 50% a year for three years. Teradyne has held $1.3bn quarters three times running ("high watermark").
+  - On SEMI data, test's share of capex is 8.1% so far in 2026, against 6.4% in 2025.
+  - Teradyne's 2026 results already approach its target model.
+  - Advantest says "There will be downward cycles, and we know how to manage them" ([12 Nov 2026](https://www.advantest.com/document/en/investors/ir-library/briefing/JE_IR%20Fireside_Chat_Script_20261112.pdf)).
+- **Near-term catalysts:**
+  - Advantest: January 2027 CY27 TAM and capacity update; MTP4 around May 2027.
+  - Teradyne: new target model in early 2027 and dual-vendor capacity buys in 2H 2027.
+  - Either: DRAM-cost pass-through, and any US or Japanese export-control change on China, where Advantest has ≈19% of sales and Teradyne 15-21%. No pending decision was found.
+- **Gaps:** I could not verify each company's 5-10 year valuation range or any consensus revenue growth series.
+
+## 8. Could not verify
+- **Advantest:** orders and backlog; named customers and their shares; what the ¥433bn of "strategic investment" securities are; whether the PDF Solutions partnership continues after the share sale; any 有報 customer disclosure.
+- **Independent market data:** third-party (TechInsights, Gartner, Yole, SEMI) tester market sizes and vendor shares for 2024-27.
+- **Teradyne:** its memory-share claim (period ambiguous; it conflicts with Advantest's claim); TestInsight's price; any analytics or inference product; full call Q&A.
+- **Product and roadmap claims:** any ATE product that reports a stated uncertainty; roadmap statements on test access below 25 µm pitch; post-2030 views on insertions.
+- **Other suppliers:**
+  - Chroma's semiconductor share of revenue and its exact growth rates.
+  - Cohu's $330m SAM.
+  - AEM figures against SGX filings.
+  - All Korean contract amounts against DART.
+  - Japanese niche testers and Emerson/NI test revenue.
+- **Valuation:** 5-10 year valuation history; consensus growth beyond the implied forward EPS.
+
+## 9. Sources (date of publication or data)
+- **Advantest:**
+  - [決算短信 FY2025, 27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf) and [H1 FY2026, 28 Oct 2026](https://www.advantest.com/en/news/2026/mpd9kn0000000gii-att/E_FR_FY2026_2Q.pdf).
+  - Notes, slides and Q&A: [27 Apr 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_note.pdf), [Q&A](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_QA.pdf), [29 Jul 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_note.pdf), [Q&A](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf), [28 Oct 2026](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_note.pdf), [slides](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_slide.pdf), [Q&A](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_261028_QA.pdf).
+  - [Integrated Annual Report 2026](https://www.advantest.com/document/en/investors/ir-library/annual/E_all_IAR2026.pdf).
+  - [TechInsights survey, 14 May 2026](https://www.advantest.com/en/news/2026/20260514.html).
+- **Teradyne:**
+  - [Q3'26 8-K, 27 Oct 2026](https://www.sec.gov/Archives/edgar/data/0000097210/000119312526434981/ter-ex99_1.htm); [Q3'26 10-Q](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-441091/ter-20260927.htm); [10-K FY2025](https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-059002/ter-20251231.htm).
+  - [Prepared remarks](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/webcast_transcript/Teradyne_Q3%2726_Earnings_Prepared_Remarks.pdf) and [slides](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/938/9658/presentation/Teradyne_Q3%2726_Earnings_Presentation.pdf), 28 Oct 2026.
+  - [Analyst Day, 11 Mar 2025](https://d1io3yog0oux5.cloudfront.net/_63807b868d65ded682f4017b286091b2/teradyne/db/919/9566/pdf/ALL_Analyst_Day_2025_IR_SITE_NEW.pdf).
+- **Third-party and secondary:** [Semiconductor Engineering, 13 Jan 2026](https://semiengineering.com/hbm4-sticks-with-microbumps-postponing-hybrid-bonding/); stockanalysis.com (11-12 Nov 2026); Quartr, StockStory and Zacks summaries (Oct-Nov 2026); Korean press (2026); plus the other links inline.
+- **Tooling note:** the Firecrawl scraping tool ran out of credits during this research; the allowance resets 13 Nov 2026.
