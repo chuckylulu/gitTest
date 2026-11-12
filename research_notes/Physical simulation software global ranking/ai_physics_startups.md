@@ -9,14 +9,14 @@
      - Luminary Cloud: its own GPU CFD solver plus SHIFT models; $72M Series B (Sep 2025) with NVentures.
    - Neural Concept ($100M, Dec 2025) is the most widely deployed surrogate and workflow layer in automotive, but it owns no solver.
    - Vinci ($250M at $1.5B, Oct 2026) is too new to rank and has no named customers.
-   - Applied Intuition ($15B; Sacra estimates ARR of $830M in 2025) outweighs them all, but it sells autonomy and vehicle software. Rank it only if the list counts AV simulation.
+   - Applied Intuition ($15B; ARR ~$830M in 2025, Sacra estimate) outweighs them all but sells autonomy software; rank it only if AV simulation counts.
 2. **Judges versus layers.** Only Flexcompute and Luminary own a solver whose results customers could accept for sign-off (a "judge"). PhysicsX and Neural Concept sell learned models, delivery and workflow trained on others' solver data (PhysicsX's LGM-Aero on Siemens STAR-CCM+/Nastran). That layer is the most exposed to Ansys SimAI, Siemens (now owner of Altair PhysicsAI), NVIDIA's PhysicsNeMo and Apollo, and customers' own models.
 3. **Evidence is thin.**
    - No neutral benchmark tests the start-ups' commercial models head to head. Their workshop entries (AutoCFD4/5, HLPW5) and benchmark "records" are self-reported.
    - McGreivy and Hakim (2024) found that 79% of ML-for-fluids papers claiming to beat standard methods used weak baselines.
    - The best customer test is the Dallara/IBM preprint (arXiv 2604.18491). Its thresholds were set in advance; the surrogate met the usability threshold on 20 of 20 parts and the CFD-replacement threshold on 18 of 20. The prior is therefore roughly right but overstated, and the model is IBM's, not a start-up's.
 4. **Sign-off.** I found no public case of a regulator or customer accepting an entrant's learned model for certification. Flow360 results feed eVTOL aero databases and loads work alongside wind tunnels. The FIA plans to use surrogates only for writing rules.
-5. **Resilience.** Capital is concentrated: PhysicsX has raised about $500M and Vinci about $296M. Luminary's 2024 "$115M" was $15M of equity and $100M of debt. Consolidation has begun: CoreWeave bought Monolith (Oct 2025) and Mistral bought Emmi (May 2026; about €300M reported). In a financing pause around 2028, the likeliest to be sold are sub-scale or debt-funded firms and those priced at high revenue multiples (PhysicsX is at about 48x 2026E revenue).
+5. **Resilience.** Capital is concentrated: PhysicsX has raised about $500M and Vinci about $296M. Luminary's 2024 "$115M" was $15M of equity and $100M of debt. Consolidation has begun: CoreWeave bought Monolith (Oct 2025) and Mistral bought Emmi (May 2026; about €300M reported). In a financing pause around 2028, sub-scale, debt-funded and high-multiple firms (PhysicsX is at about 48x 2026E revenue) are the likeliest to be sold.
 6. **Exposure.** No listed pure play and no announced IPO. Routes: thin secondary markets (EquityZen, Hiive, Caplight list PhysicsX; no public prices) and listed strategic holders (Siemens, Applied Materials, NVIDIA, Samsung, AMD, CoreWeave, IBM) whose stakes are immaterial.
 
 ## 1. Profiles, funding, customers, partnerships and acquisitions (2024–2026)
@@ -43,7 +43,7 @@ Four entrants have meaningful scale. Funding rose sharply in 2025–26 at high m
   - The directors' going-concern note says that even with a 20% revenue miss the group "would still be in a cash positive position".
   - Series B-1/B-2 shares were allotted on 18 Jun 2025 for $124.0M, plus $10.0M by share transfer.
   - Source: [filing history](https://find-and-update.company-information.service.gov.uk/company/12134466/filing-history)
-- **Board:** Russel Tham was appointed director on 8 Jun 2026 (Companies House). Temasek's Head of Emerging Technologies is a "Russell Tham" — [PhysicsX](https://www.physicsx.ai/newsroom/physicsx-launches-asia-pacific-hub-in-singapore-to-scale-ai-powered-industrial-engineering-across-the-region). That they are the same person is an inference from the name.
+- **Board:** Russel Tham, director from 8 Jun 2026 (Companies House), is probably Temasek's Head of Emerging Technologies (inferred from the name) — [PhysicsX](https://www.physicsx.ai/newsroom/physicsx-launches-asia-pacific-hub-in-singapore-to-scale-ai-powered-industrial-engineering-across-the-region)
 - **Customers and partners:**
   - Fortescue: a multi-year expansion of a collaboration more than two years old (27 Oct 2026). Value and production status not given — [PhysicsX](https://physicsx.ai/newsroom/physicsx-and-fortescue-expand-partnership-to-accelerate-industrial-innovation-with-ai)
   - Singapore hub (8 Oct 2026): 20 staff now, more than 100 planned within three years; a five-year partnership with A*STAR backed by a joint S$40M commitment; Seatrium as customer (Singapore release above).
@@ -61,7 +61,6 @@ Four entrants have meaningful scale. Funding rose sharply in 2025–26 at high m
 - **Company claims, unconfirmed:**
   - Enterprise revenue up fourfold in 18 months. More than 50 customers, including GM, GE Vernova, Leonardo, Eaton, Safran, Renault and "multiple Formula 1 teams" (Dec 2025 release above).
   - ARR growth "significantly outpaces burn rate"; partners with more than 70% of the largest OEMs and 40% of the top-100 tier-1 suppliers; upsells up 40% — [Sep 2025](https://www.neuralconcept.com/press-release/neural-concept-100-percent-enterprise-growth)
-  - A Jan 2024 release slug cites "60 customers", so the company's customer definitions vary.
 - **Customer evidence (all on vendor pages):**
   - JLR (NVIDIA GTC, Mar 2026): design evaluations rose from about 50 to about 1,500 a day; the platform "does not replace simulation" — [NC](https://www.neuralconcept.com/industry-stories/jlr-nvidia-gtc-aerodynamic-engineering)
   - GM (Aug 2025): a pedestrian-safety head-injury (HIC) co-pilot trained on crash data from 11 vehicle programmes, used by safety specialists "without relying solely on" finite-element analysis. No accuracy figures given — [NC](https://www.neuralconcept.com/industry-stories/general-motors-pedestrian-safety)
@@ -211,15 +210,8 @@ I found no public evidence that a regulator or customer has accepted an entrant'
 Flexcompute and Luminary lead on position, PhysicsX on financial strength and Neural Concept on adoption. None passes the test of independently evidenced lead.
 
 ### Cited Findings
-- **Revenue models:**
-  - Luminary: per GPU-minute (2024; TechCrunch). Flexcompute: usage-based (Flow360 page).
-  - Neural Concept: ARR plus upsells (Sep 2025). PhysicsX: pilots, platform and delivery teams, with bookings tripled. Applied Intuition: seat, workload and module licences (Sacra).
-  - I found no pricing by result.
-- **GPU and cloud dependence:**
-  - PhysicsX runs on CoreWeave, Deutsche Telekom's industrial AI cloud and AWS, and is "optimised for Nvidia chips" (Resilience Media).
-  - Neural Concept used Azure NC H100 virtual machines (benchmark release).
-  - Flexcompute cases ran on B200 GPUs: 8 B200s for BETA; under 20 minutes per case for Dufour.
-  - Luminary uses H100s.
+- **Revenue models** (sources in Section 1): Luminary per GPU-minute; Flexcompute usage-based; Neural Concept ARR plus upsells; PhysicsX pilots, platform and delivery teams; Applied Intuition seat, workload and module licences. I found no pricing by result.
+- **GPU and cloud dependence:** PhysicsX runs on CoreWeave, Deutsche Telekom's industrial AI cloud and AWS, and is "optimised for Nvidia chips". Neural Concept used Azure H100 VMs. Flexcompute's case studies ran on B200 GPUs; Luminary uses H100s.
 - **Agents and programming interfaces:** Neural Concept's MCP Bridge (Oct 2026); Luminary's MCP server (2025); Flexcompute's FlexAgent and Python API; PhysicsX's work with Microsoft Discovery.
 - **Export controls:** the US BIS "affiliates rule" (extending Entity List controls to 50%-owned subsidiaries) is suspended until 10 Jan 2027 — [Reed Smith](https://www.reedsmith.com/our-insights/blogs/trade-compliance-resource-hub/5272/bis-further-suspends-affiliates-rule-until-january-2027/)
   - Flexcompute publishes a case study with Chinese carmaker NIO (Jun 2025; blog).
@@ -318,6 +310,9 @@ Outside the US, UK, Switzerland and Austria I found only small, early entrants. 
 - **Israel:** Limitless Labs raised a $20M Series A (Jun 2026). It makes AI for CAD/CAM in CNC manufacturing, not simulation — [TNW](https://thenextweb.com/news/limitless-labs-20m-series-a-physical-ai-cnc-manufacturing). I found no Israeli physics-simulation start-up of any scale.
 - **Taiwan:** I found nothing.
 
+### Inferences
+- In Asia, Western entrants and local incumbents and resellers are serving demand. Local AI-CAE start-ups are at seed to Series C scale, and none is a ranking candidate.
+
 ### Gaps
 - Not verified: 云道智造 (Simright) and 十沣科技 in China, and start-ups in Korea, Taiwan and Israel beyond those above. The search budget ran out.
 
@@ -363,70 +358,22 @@ Exposure is limited to private rounds, thin secondary markets and listed strateg
 - Zenithon's headquarters.
 - Chinese, Taiwanese and Israeli start-ups beyond those listed.
 
-### Dated source list (all accessed 12 Nov 2026)
-**PhysicsX**
-- 2026-06-08: [PhysicsX Series C](https://physicsx.ai/newsroom/physicsx-announces-300m-series-c-to-accelerate-physics-ai-for-industrial-engineering); [Tech.eu](https://tech.eu/2026/06/08/physicsx-raises-300m-at-24bn-valuation/); [Resilience Media](https://resiliencemedia.co/physicsx-raises-300m-at-a-2-4b-valuation-for-ai-to-create-and-test-defence-and-other-hardware/)
-- 2026-06 (date approximate): [New Market Pitch, citing Bloomberg](https://newmarketpitch.com/blogs/news/digital-twin-physicsx-overvalued)
-- 2025-10-29 (filing date): [PhysicsX FY2024 accounts, Companies House](https://find-and-update.company-information.service.gov.uk/company/12134466/filing-history)
-- 2026-10-27: [PhysicsX–Fortescue](https://physicsx.ai/newsroom/physicsx-and-fortescue-expand-partnership-to-accelerate-industrial-innovation-with-ai)
-- 2026-10-08: [PhysicsX Singapore](https://www.physicsx.ai/newsroom/physicsx-launches-asia-pacific-hub-in-singapore-to-scale-ai-powered-industrial-engineering-across-the-region)
-- 2026-03-11: [PhysicsX–CoreWeave](https://www.physicsx.ai/newsroom/physicsx-and-coreweave-partner-to-deliver-high-performance-physics-ai-for-advanced-industrials)
-- 2026-08-07: [PX-Car-Aero-v1](https://physicsx.ai/newsroom/scaling-physics-ai-for-automotive-aerodynamics-part-ii-meet-px-car-aero-v1)
-- 2026-08-11: [PLAID agent post](https://physicsx.ai/newsroom/how-an-ai-agent-cracked-an-industry-benchmark)
-- 2024-12-04: [Siemens–PhysicsX](https://news.siemens.com/en-us/siemens-physicsx/)
-
-**Neural Concept**
-- 2025-12-18: [Series C](https://www.neuralconcept.com/press-release/neural-concept-closes-100m-funding-round)
-- 2025-09-29: [Growth release](https://www.neuralconcept.com/press-release/neural-concept-100-percent-enterprise-growth)
-- 2026-10-19: [MCP Bridge](https://www.neuralconcept.com/press-release/neural-concept-launches-mcp-bridge)
-- 2026-03-25: [JLR](https://www.neuralconcept.com/industry-stories/jlr-nvidia-gtc-aerodynamic-engineering)
-- 2025-08-05: [GM](https://www.neuralconcept.com/industry-stories/general-motors-pedestrian-safety)
-- 2026-06: [Seoul office](https://www.neuralconcept.com/press-release/neural-concept-opens-seoul-office)
-- 2026-09-10: [India](https://www.neuralconcept.com/press-release/neural-concept-expands-in-india)
-- 2025-09-18: [CEO on benchmarking](https://www.neuralconcept.com/post/finding-the-path-to-value-in-engineering-ai-why-we-need-to-rethink-benchmarking)
-
-**Luminary**
-- 2024-03-13: [TechCrunch](https://techcrunch.com/?p=2677477)
-- 2025-09-15: [Series B](https://luminary.ai/resources/luminary-cloud-secures-dollar72m-series-b-to-lead-the-physics-ai-era)
-- 2025-04-09: [SHIFT models](https://luminary.ai/resources/introducing-luminary-shift-models-a-suite-of-physics-ai-foundation-models-to-transform-engineering-design/)
-- 2026-02-24: [Private Cloud](https://luminary.ai/resources/luminary-introduces-luminary-private-cloud-to-bring-physics-ai-into-secure-air-gapped-defense-and-aerospace-environments)
-- 2026-09-10: [DARPA](https://luminary.ai/resources/how-darpa-is-using-physics-ai-to-cut-flight-tests-by-10x/)
-- 2025-04-03: [AutoCFD4](https://luminary.ai/resources/luminary-cloud-highlighted-as-the-fastest-cfd-solver-at-autocfd4/)
-- 2026-01-14: [Washington Technology](https://washingtontechnology.com/companies/2026/01/luminary-cloud-expands-physics-ai-toolkit-defense-focused-models/410679/)
-
-**Flexcompute**
-- 2026-10-12: [Pulse 2.0](https://pulse2.com/flexcompute-raises-strategic-investment-from-samsung-ventures-and-applied-ventures/)
-- 2021-11 (older): [Series B](https://www.flexcompute.com/blog/2021/11/19/flexcompute-secures-22m)
-- 2026-06-15: [Vertical](https://flexcompute.com/blog/vertical-aerospace-10x-more-designs)
-- 2025-05-27: [BETA](https://flexcompute.com/blog/designing-the-a250-in-the-age-of-instant-aerodynamics)
-- 2024-02-12 (older): [Dufour](https://flexcompute.com/blog/the-dufour-aerospace-aero2-uav-optimal-design-through-high-fidelity-cfd)
-
-**Other entrants**
-- Vinci: 2026-10-06 [Advent](https://www.adventinternational.com/vinci-raises-250m-series-b-at-1-5b-valuation/); 2025-12-03 [SiliconANGLE](https://siliconangle.com/2025/12/03/vinci-nabs-46m-speed-chip-simulations-ai/)
-- Applied Intuition: 2025-06 [Series F](https://appliedintuition.com/news/series-f); [Sacra](https://sacra.com/c/applied-intuition/); 2026-10-13 [Crypto Briefing](https://cryptobriefing.com/applied-intuition-30-billion-valuation-offers/)
-- Monolith: 2025-10-06 [CoreWeave](https://coreweave.com/news/coreweave-to-acquire-monolith-expanding-ai-cloud-platform-into-industrial-innovation); 2025-10-23 [Imperial](https://www.imperial.ac.uk/news/articles/engineering/aeronautics/2025/aeronautics-spinout-monolith-ai-acquired-by-us-cloud-computing-company/)
-- Emmi AI: 2026-05-19 [Emmi](https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai); [Mistral](https://mistral.ai/news/accelerate-ai-native-industry); [French Tech Journal](https://frenchtechjournal.com/mistral-ai-buys-viennas-emmi-ai-in-eur300m-bid-to-own-europes-factory-floor/)
-- 2026-02-25: [CIC/BeyondMath](https://www.cic.vc/beyondmath-completes-18-5-million-seed-round-to-scale-worlds-largest-foundational-physics-ai-model/)
-- 2025-12-16: [Navier](https://pulse2.com/navier-5-6-million-seed/)
-- 2025-08-21: [Pasteur Labs](https://www.prnewswire.com/news-releases/pasteur-labs-acquires-ai-startup-fosai-to-accelerate-adoption-of-ai-driven-physics-simulation-for-space--defense-applications-302535200.html)
-- 2025-02-19: [nTop](https://develop3d.com/cad/ntop-acquires-cloudfluid-gpu-native-cfd-software/)
-- 2026-05-26: [Quanscient](https://tech.eu/2026/05/26/quanscient-lands-eur10m-to-advance-ai-and-quantum-native-hardware-engineering/)
-- [Sacra/Prometheus](https://sacra.com/c/project-prometheus)
-
-**Validation, rules and regulators**
-- 2026-04-27: [arXiv 2604.18491](https://arxiv.org/html/2604.18491v2)
-- 2024-10: [McGreivy and Hakim](https://www.osti.gov/pages/biblio/2475825-weak-baselines-reporting-biases-lead-overoptimism-machine-learning-fluid-related-partial-differential-equations)
-- 2026-10-14: [CarBench](https://arxiv.org/abs/2512.07847)
-- 2026-10: [AutoCFD5](https://autocfd.org/presentations/)
-- 2026-10-28: [The Race on FIA–AWS](https://www.the-race.com/formula-1/ai-will-help-design-future-f1-cars-in-new-fia-aws-deal/)
-- [EASA AI](https://www.easa.europa.eu/en/domains/research-innovation/ai); [NRC ML24290A059](https://www.nrc.gov/docs/ML2429/ML24290A059.pdf)
-
-**Incumbents and NVIDIA**
-- 2026-03-11: [Ansys 2026 R1](https://news.synopsys.com/2026-03-11-Synopsys-Launches-Ansys-2026-R1-to-Re-Engineer-Engineering-with-Joint-Solutions-and-AI-Powered-Products)
-- 2025-11: [NVIDIA Apollo](https://blogs.nvidia.com/blog/apollo-open-models); [PhysicsNeMo](https://developer.nvidia.com/physicsnemo)
-
-**Regional**
-- 2025-08-01: [kepple/RICOS](https://kepple.co.jp/articles/mf2gxo8ef4su)
-- 2022-07-19 (older): [36Kr/Tianfu](https://www.36kr.com/p/1831315772563713)
-- 2026-09-03: [AIM/BQP](https://analyticsindiamag.com/ai-news/ibm-ventures-invests-in-bqp-as-physics-platform-enters-production)
-- [THEVC/Narnia Labs](https://thevc.kr/narnialabs)
+### Dated source list (key primary sources; all accessed 12 Nov 2026; every other source is linked inline above)
+- **PhysicsX:** [Series C](https://physicsx.ai/newsroom/physicsx-announces-300m-series-c-to-accelerate-physics-ai-for-industrial-engineering) (2026-06-08); [Tech.eu](https://tech.eu/2026/06/08/physicsx-raises-300m-at-24bn-valuation/) (2026-06-08); [FY2024 accounts](https://find-and-update.company-information.service.gov.uk/company/12134466/filing-history) (filed 2025-10-29); [Fortescue](https://physicsx.ai/newsroom/physicsx-and-fortescue-expand-partnership-to-accelerate-industrial-innovation-with-ai) (2026-10-27); [Singapore](https://www.physicsx.ai/newsroom/physicsx-launches-asia-pacific-hub-in-singapore-to-scale-ai-powered-industrial-engineering-across-the-region) (2026-10-08); [Siemens](https://news.siemens.com/en-us/siemens-physicsx/) (2024-12-04, older)
+- **Neural Concept:** [Series C](https://www.neuralconcept.com/press-release/neural-concept-closes-100m-funding-round) (2025-12-18); [growth](https://www.neuralconcept.com/press-release/neural-concept-100-percent-enterprise-growth) (2025-09-29); [MCP Bridge](https://www.neuralconcept.com/press-release/neural-concept-launches-mcp-bridge) (2026-10-19)
+- **Luminary:** [TechCrunch](https://techcrunch.com/?p=2677477) (2024-03-13, older); [Series B](https://luminary.ai/resources/luminary-cloud-secures-dollar72m-series-b-to-lead-the-physics-ai-era) (2025-09-15); [Private Cloud](https://luminary.ai/resources/luminary-introduces-luminary-private-cloud-to-bring-physics-ai-into-secure-air-gapped-defense-and-aerospace-environments) (2026-02-24)
+- **Flexcompute:** [Pulse 2.0](https://pulse2.com/flexcompute-raises-strategic-investment-from-samsung-ventures-and-applied-ventures/) (2026-10-12); [Series B](https://www.flexcompute.com/blog/2021/11/19/flexcompute-secures-22m) (2021-11, older); [Vertical](https://flexcompute.com/blog/vertical-aerospace-10x-more-designs) (2026-06-15)
+- **Others:**
+  - Vinci: [Advent](https://www.adventinternational.com/vinci-raises-250m-series-b-at-1-5b-valuation/) (2026-10-06)
+  - Applied Intuition: [Series F](https://appliedintuition.com/news/series-f) (2025-06)
+  - Monolith: [Imperial](https://www.imperial.ac.uk/news/articles/engineering/aeronautics/2025/aeronautics-spinout-monolith-ai-acquired-by-us-cloud-computing-company/) (2025-10-23)
+  - Emmi AI: [Mistral](https://mistral.ai/news/accelerate-ai-native-industry) (2026-05-23)
+  - Prometheus: [Sacra](https://sacra.com/c/project-prometheus) (undated page)
+- **Validation and rules:**
+  - [arXiv 2604.18491](https://arxiv.org/html/2604.18491v2) (2026-04-27)
+  - [McGreivy and Hakim](https://www.osti.gov/pages/biblio/2475825-weak-baselines-reporting-biases-lead-overoptimism-machine-learning-fluid-related-partial-differential-equations) (2024-10, older)
+  - [AutoCFD5](https://autocfd.org/presentations/) (2026-10)
+  - [FIA–AWS](https://www.the-race.com/formula-1/ai-will-help-design-future-f1-cars-in-new-fia-aws-deal/) (2026-10-28)
+  - [NRC gap assessment](https://www.nrc.gov/docs/ML2429/ML24290A059.pdf) (2024)
+- **Incumbents and NVIDIA:** [Ansys 2026 R1](https://news.synopsys.com/2026-03-11-Synopsys-Launches-Ansys-2026-R1-to-Re-Engineer-Engineering-with-Joint-Solutions-and-AI-Powered-Products) (2026-03-11); [NVIDIA Apollo](https://blogs.nvidia.com/blog/apollo-open-models) (2025-11)
+- **Regional:** [RICOS](https://kepple.co.jp/articles/mf2gxo8ef4su) (2025-08-01); [Tianfu](https://www.36kr.com/p/1831315772563713) (2022-07-19, older); [BQP](https://analyticsindiamag.com/ai-news/ibm-ventures-invests-in-bqp-as-physics-platform-enters-production) (2026-09-03)

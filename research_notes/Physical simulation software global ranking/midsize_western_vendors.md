@@ -130,7 +130,7 @@ Owns code-checked infrastructure analysis tools in a diversified, highly retaine
 ### Cited Findings
 - **Size/finance**: FY25 revenue $1,501.8M (subscriptions $1,376.7M, perpetual $46.2M, services $78.9M); ARR $1,462.1M (+11.5% cc); recurring 93%; account retention 99%; NRR 109%; operating income $362.6M; OCF $538.5M; R&D $307.6M; ~5,800 staff; 59% revenue outside US; no account >2% — [FY25 10-K, filed 26 Feb 2026](https://www.sec.gov/Archives/edgar/data/1031308/000103130826000007/bsy-20251231.htm). Q3 2026 (released 5 Nov 2026): revenue $421.5M (+12.2%); ARR $1,582.8M (+13% cc); NRR 110% (record); operating margin 29.1%; LTM FCF $489.3M; net leverage 1.7x; Cohesive divested, Eliis acquired — [8-K Ex.99.1](https://www.sec.gov/Archives/edgar/data/0001031308/000103130826000032/a26q3exhibit991.htm)
 - **Position**: 10-K describes STAAD (structures), RAM (buildings), SACS and MOSES (offshore), PLAXIS and GeoStudio (geotechnical), Leapfrog (geology), OpenFlows (water/flood), AutoPIPE (pipe stress), ADINA (nonlinear) — [10-K](https://www.sec.gov/Archives/edgar/data/1031308/000103130826000007/bsy-20251231.htm); STAAD has built-in automated checks against "international design code standards"; STAAD.Pro from $3,995/yr — [Bentley STAAD page, accessed 12 Nov 2026](https://www.bentley.com/software/staad/)
-- **T1 E365**: consumption plan charged primarily on daily usage, with usage floors/ceilings; E365 46% of ARR (45% 2024, 41% 2023); ARR with consumption measurement periods under one year 51% — [10-K](https://www.sec.gov/Archives/edgar/data/1031308/000103130826000007/bsy-20251231.htm). Q3 call (5 Nov 2026): Cumins: "Application days ... is a proxy for how much time ... engineers are spending with our software"; "If they start to use our application at machine speed, then on top of that, there should be another price"; AI-in-design monetisation to start 2027 but not "a material growth driver in 2027"; "major European consultancies shift more engineering work to their delivery centers in India"; China "<2% of our ARR"; G. Bentley: asset analytics charged "per asset per year, not per user per day"; services to decline through 2027 — [Q3 2026 transcript](https://www.earningswhispers.com/transcript/BSY/Q32026)
+- **T1 E365**: consumption plan charged primarily on daily usage, with usage floors/ceilings; E365 46% of ARR (45% 2024, 41% 2023); ARR with consumption measurement periods under one year 51% — [10-K](https://www.sec.gov/Archives/edgar/data/1031308/000103130826000007/bsy-20251231.htm). Q3 call (5 Nov 2026): Cumins: "Application days ... is a proxy for how much time ... engineers are spending with our software"; "If they start to use our application at machine speed, then on top of that, there should be another price"; AI-in-design monetisation to start 2027 but not "a material growth driver in 2027"; "major European consultancies shift more engineering work to their delivery centers in India"; China "<2% of our ARR"; G. Bentley: "we charge per asset per year, not per user per day at the enterprise level" (exact offering not captured; likely asset-side products); services to decline through 2027 — [Q3 2026 transcript](https://www.earningswhispers.com/transcript/BSY/Q32026)
 - **T3**: Bentley MCP Server lets "Claude and other AI agents" automate STAAD loads, model revisions and analysis — [STAAD page](https://www.bentley.com/software/staad/)
 
 ### Inferences
@@ -141,6 +141,9 @@ Owns code-checked infrastructure analysis tools in a diversified, highly retaine
 - Analysis products' share of ARR; E365 share at Q3 2026; GPU plans.
 
 ## 7. Brief sweep of other vendors
+
+### Takeaway
+The sweep's real "judges" are small and specialised (grid-interconnection tools, nuclear core codes, certifier-owned offshore tools); the larger names (PTC, Nemetschek, AspenTech, AVEVA, AVL) treat simulation as one part of broader software or engineering businesses.
 
 ### Cited Findings
 - **PTC**: FY26 (to 30 Sep 2026) ARR ex-divestitures $2,508M (+8%); revenue $2,733M flat; Kepware/ThingWorx sold — [8-K, 4 Nov 2026](https://www.sec.gov/Archives/edgar/data/857005/000119312526447186/ptc-ex99_1.htm); Schneider Electric agreed to buy PTC for cash (5 Oct 2026), closing expected by Q3 2027 — [8-K Ex.99.1](https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm). Ansys-based Creo simulation not verified (page 403).
@@ -159,7 +162,13 @@ Owns code-checked infrastructure analysis tools in a diversified, highly retaine
 - Strongest specialist judges in the sweep: PSCAD and PSS/E (operator-mandated formats), Studsvik (NRC-reviewed methods), DNV (certifier-owned tools). They are small or embedded in larger groups.
 - Leave out of a global top 8-15: Hexagon, Octave, AVL, DNV, Studsvik, Gamma, Convergent, Flow Science, ESTECO, DIgSILENT, MHI — too small or simulation not the core business; Autodesk only if the ranking rewards platform reach over solver ownership. Other Western names to check: Computers & Structures Inc. (SAP2000/ETABS), Dlubal, Itasca, SimScale (not researched).
 
+### Gaps
+- Honeywell UniSim, Convergent Science, AspenTech stand-alone figures, PSCAD/MHI and DIgSILENT financials, PTC simulation on Ansys solvers.
+
 ## 8. Cross-group evidence: seat pricing power and mid-market displacement
+
+### Takeaway
+No 2025-26 sign of lost pricing power; the mechanism behind the prior (usage tied to engineer hours) is visible, and vendors are already pricing machine use to get ahead of it.
 
 ### Cited Findings
 - **Against loss of pricing power (2025-26)**: Autodesk NRR at/above the top of 100-110% and multi-year discount removal for "price realization" — [Autodesk 8-K](https://www.sec.gov/Archives/edgar/data/0000769397/000076939726000059/q227pressrelease.htm); machine seats plus API meters; AEC Magazine's author expects design software to get "more expensive, not cheaper" — [AEC Magazine](https://aecmag.com/ai/autodesk-beyond-the-seat-the-meter/); Bentley NRR 110%, retention 99%, ARR growth accelerating; "The transition to fixed price ... there's no pushback" (G. Bentley) — [Q3 transcript](https://www.earningswhispers.com/transcript/BSY/Q32026); Nemetschek Design +10.4%; Octave NRR 105%; Emerson software ACV +10% (sources above); Synopsys prices GPU CFD "on the speedup delivered" — [Schnitger, 16 Sep 2026](https://schnitgercorp.com/2026/09/16/cae-earnings-recap-no-hallucinations-here/); Moldflow compute priced per result — [Flex rate sheet](https://www.autodesk.com/buying/flex/flex-rate-sheet)
@@ -167,6 +176,9 @@ Owns code-checked infrastructure analysis tools in a diversified, highly retaine
 
 ### Inferences
 - Through Nov 2026 the evidence contradicts near-term pricing erosion; the prior concerns post-2029. The decisive variable is whether customers accept "machine seats" and per-machine-speed prices (Autodesk, Bentley) once agents cut engineer hours; E365's labour link and Octave's disclosure show the mechanism is real. Mid-market displacement so far is by consolidation (MSC to Cadence, Altair to Siemens) rather than by open source.
+
+### Gaps
+- No seat counts, renewal-price data or third-party discounting evidence was found for any in-depth vendor; no data on open-source codes displacing a named commercial solver.
 
 ## Could not verify
 - Keysight legacy EDA revenue, EM-solver GPU plans, TSMC N3/N2 RF certification, ESI sign-off at carmakers; Keysight Q4 FY26 (unpublished).
@@ -190,13 +202,17 @@ Owns code-checked infrastructure analysis tools in a diversified, highly retaine
 - Autodesk FY26 10-K (3 Mar 2026): https://www.sec.gov/Archives/edgar/data/769397/000076939726000015/adsk-20260131.htm
 - Autodesk Q2 FY27 8-K (27 Aug 2026): https://www.sec.gov/Archives/edgar/data/0000769397/000076939726000059/q227pressrelease.htm
 - Autodesk Q4 FY26 call (26 Feb 2026): https://www.fool.com/earnings/call-transcripts/2026/02/26/autodesk-adsk-q4-2026-earnings-call-transcript
-- Semafor (6 Mar 2026); AEC Magazine (27 Oct 2026); AU 2026 release (16 Sep 2026): https://kyodonewsprwire.jp/release/202609165978
-- Hexagon D&E completion (23 Feb 2026); Rocscience (9 Oct 2026); Q3 2026 (23 Oct 2026): https://www.inderes.se/en/releases/hexagon-interim-report-1-january-30-september-2026
+- Semafor (6 Mar 2026) https://www.semafor.com/article/03/06/2026/autodesks-model-for-building-an-ai-moat ; AEC Magazine (27 Oct 2026) https://aecmag.com/ai/autodesk-beyond-the-seat-the-meter/ ; AU 2026 release (16 Sep 2026) https://kyodonewsprwire.jp/release/202609165978 ; Flex rate sheet (accessed Nov 2026) https://www.autodesk.com/buying/flex/flex-rate-sheet
+- Hexagon D&E completion (23 Feb 2026) https://www.inderes.se/en/releases/hexagon-completes-sale-of-design-and-engineering-business ; Rocscience (9 Oct 2026) https://www.inderes.se/en/releases/hexagon-to-acquire-rocscience-closing-the-loop-between-real-world-monitoring-and-advanced-simulation ; Q3 2026 (23 Oct 2026) https://www.inderes.se/en/releases/hexagon-interim-report-1-january-30-september-2026
+- Cadence Q3 2026 call transcript (late Oct 2026) https://www.webull.com/news/15818016766808064
 - Cadence D&E close (Feb 2026): https://www.hpcwire.com/off-the-wire/cadence-completes-acquisition-of-hexagons-design-and-engineering-business/
-- Octave Form 10 (27 Apr 2026); listing (28 May 2026); Q2 (12 Aug 2026); Q3 (12 Nov 2026): https://www.sec.gov/Archives/edgar/data/2083632/000162828026073094/exhibit991q3fy26.htm
+- Octave Form 10 (27 Apr 2026) https://www.sec.gov/Archives/edgar/data/2083632/000162828026027570/exhibit991-form10x12ba3.htm ; listing (28 May 2026) https://www.inderes.fi/en/releases/octave-intelligence-plc-listed-on-nasdaq-new-york ; Q2 (12 Aug 2026) https://www.inderes.se/en/releases/octave-announces-second-quarter-2026-financial-results ; Q3 (12 Nov 2026) https://www.sec.gov/Archives/edgar/data/2083632/000162828026073094/exhibit991q3fy26.htm ; product list https://octave.com/ (accessed 12 Nov 2026)
 - COMSOL 6.4 (18 Nov 2025); v2027 (16 Sep 2026); licensing, company pages (accessed 12 Nov 2026): https://www.comsol.com/press-release/system-level-modeling-and-agentic-ai-take-the-spotlight-in-comsol-multiphysics-version-2027-14722
-- COMSOL financial aggregators (Syna, largestcompanies.com, Ratsit; accessed 12 Nov 2026)
+- COMSOL 6.4 press release (18 Nov 2025) https://www.comsol.com/press-release/comsol-speeds-simulation-with-expanded-nvidia-gpu-support-for-comsol-multiphysics-to-enable-faster-simulation-in-version-64-14612 ; financial aggregators (accessed 12 Nov 2026) https://upplysningar.syna.se/foretag/5564048675/comsol-ab , https://www.largestcompanies.com/company/Comsol-AB-6187/closing-figures-and-key-ratios
 - NVIDIA semiconductor-fab blog (3 Nov 2026): https://blogs.nvidia.com/blog/ai-semiconductor-fabs/
-- MathWorks factsheets 2025/2026; DO-178 and IEC kit pages; Simulink Copilot notes; GitHub org (accessed 12 Nov 2026); R2026b (25 Sep 2026)
-- Bentley FY25 10-K (26 Feb 2026); Q3 2026 8-K and call (5 Nov 2026); STAAD page (accessed 12 Nov 2026)
-- PTC 8-Ks (5 Oct and 4 Nov 2026); Nemetschek AR 2025 (Mar 2026); Emerson Q4 FY25 call (5 Nov 2025); DNV AR 2025 (26 Mar 2026); AVL factsheet 2026; Studsvik AR 2025 (19 Mar 2026); PJM EMT guidelines Rev.1 (13 Oct 2026)
+- MathWorks 2026 factsheet https://ch.mathworks.com/content/dam/mathworks/fact-sheet/2026-company-factsheet-8-5x11-8282v27.pdf ; DO-178 https://www.mathworks.com/products/do-178.html ; IEC kit https://www.mathworks.com/products/iec-61508.html ; GitHub org (accessed 12 Nov 2026) https://github.com/matlab ; Simulink Copilot notes https://www.mathworks.com/help/simulink-copilot/release-notes-content.html ; R2026b (25 Sep 2026) https://www.engineering.com/mathworks-introduces-matlab-and-simulink-release-2026b/
+- Bentley FY25 10-K (26 Feb 2026) https://www.sec.gov/Archives/edgar/data/1031308/000103130826000007/bsy-20251231.htm ; Q3 2026 8-K (5 Nov 2026) https://www.sec.gov/Archives/edgar/data/0001031308/000103130826000032/a26q3exhibit991.htm ; Q3 call (5 Nov 2026) https://www.earningswhispers.com/transcript/BSY/Q32026 ; STAAD (accessed 12 Nov 2026) https://www.bentley.com/software/staad/
+- PTC 8-Ks (5 Oct 2026) https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191dex991.htm , (4 Nov 2026) https://www.sec.gov/Archives/edgar/data/857005/000119312526447186/ptc-ex99_1.htm
+- Nemetschek AR 2025 (Mar 2026) https://www.nemetschek.com/sites/default/files/documents/NEM_AnnualReport_2025_EN.pdf ; Emerson Q4 FY25 call (5 Nov 2025) https://www.fool.com/earnings/call-transcripts/2025/11/05/emerson-emr-q4-2025-earnings-call-transcript ; AVEVA Process Simulation (accessed 12 Nov 2026) https://www.aveva.com/en/products/process-simulation/
+- DNV AR 2025 (26 Mar 2026) https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2026/03/26/669431_DNV%20Annual%20Report%202025.pdf ; AVL factsheet 2026 https://www.avl.com/sites/default/files/2026-07/avl_factsheet_2026_en.pdf ; Studsvik AR 2025 (19 Mar 2026) https://mb.cision.com/Main/4019/4323534/3991978.pdf
+- PJM EMT guidelines Rev.1 (13 Oct 2026) https://www.pjm.com/-/media/DotCom/planning/services-requests/pjm-emt-model-development-guidelines.pdf ; DIgSILENT PowerFactory (accessed 12 Nov 2026) https://www.digsilent.de/en/powerfactory.html
