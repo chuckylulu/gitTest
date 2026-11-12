@@ -89,7 +89,7 @@ AI-grade organic substrate supply is concentrated in Ibiden (Japan), Unimicron (
 - **India:** 3DGS Odisha is the only relevant project found. I identified no Indian ABF maker.
 - **China:** good for Shennan Circuits; thin for Fastprint, Zhuhai ACCESS and Chinese ABF-film substitutes.
 - **Korea:** thin for Daeduck and Philoptics.
-- **Japan:** thin for Kyocera, Toppan, DNP and Shinko, because Japanese-language IR pages were not reached.
+- **Japan:** thin for Kyocera, DNP and Shinko, because Japanese-language IR pages were not reached. Toppan is partly covered from its English newsroom.
 
 ---
 
@@ -191,7 +191,7 @@ The shortage is most credible through 2027. 2028 is the swing year, because most
 
 #### Gaps
 - Prismark and Yole share tables (paywalled, not retrieved).
-- Google, Amazon, Broadcom, Marvell and MediaTek substrate suppliers.
+- Google, Amazon, Marvell and MediaTek substrate suppliers. For Broadcom, only the Toppan link was found.
 - A Morgan Stanley 2030 gap revision (15%→22%) appeared only in search summaries; the original was not traced.
 - Inventory levels at makers.
 
@@ -661,7 +661,7 @@ Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https:
   - about JPY 258bn net cash (my arithmetic from the tanshin);
   - single-A rating.
 - **Ibiden's stated view:** "no technology that can replace leading-edge IC package substrates" (Q&A, 30 Oct 2026; company claim).
-- **Credible successor?** Its "bridge" is what customers are funding through ~2030. It has no disclosed glass-core programme. That is a risk only if glass arrives before 2030, against the weight of evidence.
+- **Credible successor?** Its "bridge" is what customers are funding through ~2030. It has no dated glass-core programme. In the 30 Oct 2026 Q&A an analyst referred to future "products using glass" in Ibiden's mix; Ibiden did not contradict this but gave no detail. Its concrete successor steps are organic: EMIB-T mass production 2H FY2027, multi-core and embedded-component substrates. The lack of a dated glass plan is a risk only if glass arrives before 2030, against the weight of evidence.
 - **Timing plausible?** Yes for organic capacity: Cell8 from FY2027, ramp Q1 2028.
 - **What must go right:**
   - AI accelerator demand holds through FY2029.
@@ -740,7 +740,7 @@ Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https:
 | 1 (tie) | **Ajinomoto (ABF business)** | Material chokepoint; ~58% business-profit margin (H1 FY2026); low capital intensity; survives the glass-core transition. Caveat: ABF is ~7.5% of a food-led group, so group-level exposure is diluted. |
 | 1 (tie) | **Ibiden** | Customer-confirmed lead at NVIDIA (Ibiden says high-end AI has only three suppliers); ~29% Electronics operating margin. Customer-funded expansion visible on its balance sheet: JPY 199.7bn advances received, ~JPY 258bn net cash at Sep 2026. Single-A. Weaknesses: capital intensity (capex ≥ EBITDA FY2026–27), cyclicality (FY2024 ROE 6.8%), likely high customer concentration (undisclosed). **Cannot separate from Ajinomoto**: the two sit on different layers of the same constraint. |
 | 3 (tie) | **Nittobo** | Tightest 2026–27 chokepoint and pricing power. But smaller, with second sources arriving in 2027 and a long-run glass-core substitution risk. |
-| 3 (tie) | **Samsung Electro-Mechanics** | NVIDIA entry; strongest balance sheet and diversification; funded glass option. Division margins not disclosed. **Cannot separate cleanly from Nittobo.** |
+| 3 (tie) | **Samsung Electro-Mechanics** | NVIDIA entry (customer-confirmed); broad diversification (MLCC ~50% of revenue, >40% share of AI-server MLCC); sound balance sheet (small net cash, debt/equity ~0.3); funded glass option. Division margins not disclosed; group ROIC ~10% TTM. **Cannot separate cleanly from Nittobo.** |
 | 5 | **Unimicron** | Scale and NVIDIA reservation; lower margins than Ibiden; partly financed expansion; deep 2024–25 trough (FY2025 OP ~NT$6.7bn). Close to SEMCO on the substrate business alone. |
 | 6 | **AT&S** | Real turnaround (H1 ROCE 17.7%, Q2 EBITDA margin 35.8%), an AMD anchor and EUR 1.2bn of customer prepayments. But leveraged (net debt EUR 1.33bn, equity ratio 23.9%), highly concentrated (largest customer ~31%, top five 76.5%), H1 FCF slightly negative, and glass only at R&D stage. |
 | 7 | **SKC / Absolics** | Pre-revenue successor bet with ≥3 slips; parent loss-making; depends on the reliability-test outcome. |

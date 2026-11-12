@@ -13,7 +13,7 @@ Conventions:
 ## 1. Segment map
 
 ### Takeaway
-The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Marvell, Arista, Cisco, Corning, Amphenol) and Taiwan (TSMC COUPE, SPIL/ASE, KYEC, Accton, Wiwynn). Israel matters through NVIDIA's ex-Mellanox networking unit and through start-ups that are being bought up (DustPhotonics, which Credo bought; Teramount, which Molex apparently bought). Europe has start-ups but no system-level CPO adopter. Japan supplies fibre, connectors and substrates, and its primary filings show it is a big AI-fibre winner in 2026: Fujikura's Information & Communications profit nearly tripled in H1 FY26, and Sumitomo Electric and Furukawa both cite data-centre optical demand. Korea's role is substrates and packaging only; no Korean CPO switch or optical-I/O company turned up. Mainland China has switch vendors with CPO demos, but none is on NVIDIA's capacity-expansion list, and I could not verify their 2026 status. India has no real player in this segment beyond design centres.
+The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Marvell, Arista, Cisco, Corning, Amphenol) and Taiwan (TSMC COUPE, SPIL/ASE, KYEC, Accton, Wiwynn). Israel matters through NVIDIA's ex-Mellanox networking unit and through start-ups that are being bought up (DustPhotonics, which Credo bought; Teramount, which Molex apparently bought). Europe has start-ups but no system-level CPO adopter. Japan supplies fibre, connectors and substrates, and its primary filings show it is a big AI-fibre winner in 2026: Fujikura's Information & Communications profit nearly tripled in H1 FY26, and Sumitomo Electric and Furukawa both cite data-centre optical demand. Korea's role is substrates and packaging only; no Korean CPO switch or optical-I/O company turned up. Mainland China has its own domestic AI-networking and fibre up-cycle, which its Q3 2026 filings confirm: Ruijie revenue +37% on data-centre switches; YOFC +86% with both volume and price rising; T&S +65%. None of these firms is on NVIDIA's CPO capacity-expansion list. Their CPO product status was not verified. India has no real player in this segment beyond design centres.
 
 ### Map (home country; listing/ticker or private; role; why it matters or why left brief)
 
@@ -32,9 +32,9 @@ The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Ma
 | Micas Networks | Not verified | Private | White-box switches on Broadcom TH6, including a 1RU Davisson CPO box | Davisson CPO switch due Q1 2027; pluggable TH6 versions Q4 2026 (StorageReview). |
 | Xsight Labs | Israel | Private | Ethernet switch silicon / DPU | Left brief: no 2026 evidence retrieved. |
 | Huawei | China | Private (employee-owned) | CloudEngine switches; in-house optics | Left brief: not verified in this run (search budget exhausted); cut off from US supply chains by export controls. |
-| H3C (Unisplendour subsidiary) | China | Parent SZSE: 000938 | Switches; earlier CPO demos | Not verified in this run. |
-| Ruijie Networks | China | SZSE: 301165 | Switches incl. white-box for Chinese hyperscalers; earlier CPO demos | Not verified in this run. |
-| ZTE | China | SZSE: 000063 / HKEX: 0763 | Switches | Not verified in this run. |
+| H3C (Unisplendour subsidiary) | China | Parent SZSE: 000938 | Switches, servers; "computing x connectivity" strategy | Parent 9M 2026 (Q3 report, 30 Oct 2026): revenue RMB102.16B (+32.1%), net profit RMB2.77B (+97.5%), operating cash flow RMB-8.58B; cites intelligent-computing and domestic-substitution opportunities. CPO status not verified. |
+| Ruijie Networks | China | SZSE: 301165 | Switches incl. white-box for Chinese hyperscalers | 9M 2026 (Q3 report, 20 Oct 2026): revenue RMB14.60B (+36.7%; Q3 RMB5.76B, +43.0%), "mainly due to growth in data-centre switch product revenue". Raising funds for "high-speed interconnect network systems for large-scale intelligent-computing clusters". CPO status not verified. |
+| ZTE | China | SZSE: 000063 / HKEX: 0763 | Switches, servers, telecom | 9M 2026 (Q3 report, 27 Oct 2026): revenue RMB116.84B (+16.2%; Q3 +34.0%), net profit RMB4.06B (-23.7%). CPO status not verified. |
 | Nokia (incl. ex-Infinera) | Finland | Nasdaq Helsinki / NYSE: NOK | Pushing into AI data-centre optics with Infinera's lasers | Headline only (Fierce Network, 6 Nov 2026); content blocked. |
 
 **B. Optical-interconnect start-ups and recent acquisitions**
@@ -89,8 +89,8 @@ The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Ma
 | Huber+Suhner | Switzerland | SIX: HUBN | Fibre connectivity; optical circuit switching | No 2026 data retrieved. |
 | Rosenberger | Germany | Private | Connectors | No 2026 data retrieved. |
 | Prysmian (added) | Italy | Borsa Italiana: PRY | Fibre cable | No 2026 data retrieved. |
-| YOFC | China | SSE: 601869 / HKEX: 6869 | Fibre | Founding participant in SRMO (Oct 2026). Hollow-core fibre work not verified. |
-| T&S Communications | China | SZSE: 300570 | MPO / fibre connectivity | No 2026 data retrieved. |
+| YOFC | China | SSE: 601869 / HKEX: 6869 | Fibre and cable | 9M 2026 (Q3 report, 31 Oct 2026): revenue RMB19.12B (+86.1%; Q3 RMB9.32B, +139.4%); net profit +1,205%. Industry "entering an up-cycle" as intelligent-computing centre construction accelerates, with main products' sales volume AND average unit price both up substantially. Founding participant in SRMO (Oct 2026). Hollow-core fibre work not verified. |
+| T&S Communications | China | SZSE: 300570 | High-density passive optical connectivity (MPO etc.) | 9M 2026 (Q3 report, 30 Oct 2026): revenue RMB2.008B (+65.4%; Q3 RMB1.007B, +161%); net profit RMB295M (only +13.3%) because of USD depreciation FX losses, ramp inefficiency on new products and capacity, raw-material price rises and rush-delivery costs. Receivables +111%. |
 | Sterlite Technologies (STL) | India | NSE: STLTECH | Fibre and cable | No 2026 data retrieved. |
 | Credo | US (Cayman) | Nasdaq: CRDO | Active copper cables; ZeroFlap optics; micro-emitter optics (SRMO) | Bought Hyperlume (2025) and DustPhotonics (2026). |
 | Ciena | US | NYSE: CIEN | Nubis-based pluggable CPO engine; interconnects segment from FY27 | FY29 targets: ~30% revenue CAGR 2026-29 (16 Sep 2026). |
@@ -565,7 +565,7 @@ CPO in scale-out switches ships in volume first: capacity in 2027, real volume i
   - Credo-DustPhotonics: closed 28 May 2026; upfront $750M cash + ~0.92M shares (release); total booked consideration $1.251B including $310M contingent (10-Q for quarter to 1 Aug 2026).
 - Customer-published CPO reliability beyond the Meta/Broadcom lab result (no NVIDIA-CPO customer reliability data found). Field-fleet failure rates.
 - Third-party CPO share-of-ports figures for 2026-2030 straight from LightCounting, Dell'Oro, 650 Group or Cignal AI publications. Only secondary chart readings were available.
-- 2026 status of Chinese CPO switches (Huawei, H3C, Ruijie, ZTE) and Chinese export-control specifics for switches and optics beyond NVIDIA's China exclusion. Hollow-core fibre (Microsoft, YOFC). Multicore-fibre adoption beyond Corning's launch. VSFF (MMC, SN-MT) adoption shares.
+- Chinese CPO switches: product status at Huawei, H3C, Ruijie and ZTE is still unverified, and Huawei is unlisted, so no filing exists. Q3 2026 headline financials for Unisplendour/H3C, Ruijie, ZTE, YOFC and T&S are now VERIFIED from cninfo filings. Chinese export-control specifics for switches and optics beyond NVIDIA's China exclusion remain unverified. Hollow-core fibre (Microsoft, YOFC). Multicore-fibre adoption beyond Corning's launch. VSFF (MMC, SN-MT) adoption shares.
 - Japanese fibre makers: H1 FY26 results are now VERIFIED from TDnet 決算短信 (Fujikura 10 Nov, Sumitomo Electric 30 Oct, Furukawa 9 Nov 2026). Still unverified: their customer concentration, named hyperscaler contracts, CPO, multicore and hollow-core product progress, and Senko and other private connector makers.
 - Supplier shares for fibre and connectors. Demand per rack beyond Corning's per-GPU figures.
 - AMD's optical scale-up roadmap and the AMD-Enosemi deal; the Astera Labs-aiXscale deal; Molex-Teramount terms; Ranovus, Oriole, Avicena, OpenLight and Xsight funding and runway; Celestica DS6005 specs.
@@ -616,6 +616,12 @@ Primary — filings and company releases:
   - Furukawa Electric H1 FY26 決算短信 — https://www.release.tdnet.info/inbs/140120261106567992.pdf (9 Nov 2026)
   - Furukawa forecast revision — https://www.release.tdnet.info/inbs/140120261106568021.pdf (9 Nov 2026)
   - Daily listing pages used to locate them: https://www.release.tdnet.info/inbs/I_list_001_20261110.html (etc.)
+- cninfo (China; Chinese-language Q3 2026 reports, 三季度报告; located via cninfo's announcement-query API by stock code):
+  - Ruijie Networks — http://static.cninfo.com.cn/finalpage/2026-10-20/1225610290.PDF (20 Oct 2026)
+  - Unisplendour (H3C parent) — http://static.cninfo.com.cn/finalpage/2026-10-30/1225643427.PDF (30 Oct 2026)
+  - ZTE — http://static.cninfo.com.cn/finalpage/2026-10-27/1225623166.PDF (27 Oct 2026)
+  - YOFC — http://static.cninfo.com.cn/finalpage/2026-10-31/1225649258.PDF (31 Oct 2026)
+  - T&S Communications — http://static.cninfo.com.cn/finalpage/2026-10-30/1225643320.PDF (30 Oct 2026)
 
 Earnings-call transcripts (third-party transcription):
 - NVIDIA Q2 FY27 — https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/ (26 Aug 2026 call)
