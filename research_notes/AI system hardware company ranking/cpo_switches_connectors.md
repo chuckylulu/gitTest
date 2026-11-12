@@ -13,7 +13,7 @@ Conventions:
 ## 1. Segment map
 
 ### Takeaway
-The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Marvell, Arista, Cisco, Corning, Amphenol) and Taiwan (TSMC COUPE, SPIL/ASE, KYEC, Accton, Wiwynn). Israel matters through NVIDIA's ex-Mellanox networking unit and through start-ups that are being bought up (DustPhotonics, which Credo bought; Teramount, which Molex apparently bought). Europe has start-ups but no system-level CPO adopter. Japan supplies fibre, connectors and substrates. Korea's role is substrates and packaging only; no Korean CPO switch or optical-I/O company turned up. Mainland China has switch vendors with CPO demos, but none is on NVIDIA's capacity-expansion list, and I could not verify their 2026 status. India has no real player in this segment beyond design centres.
+The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Marvell, Arista, Cisco, Corning, Amphenol) and Taiwan (TSMC COUPE, SPIL/ASE, KYEC, Accton, Wiwynn). Israel matters through NVIDIA's ex-Mellanox networking unit and through start-ups that are being bought up (DustPhotonics, which Credo bought; Teramount, which Molex apparently bought). Europe has start-ups but no system-level CPO adopter. Japan supplies fibre, connectors and substrates, and its primary filings show it is a big AI-fibre winner in 2026: Fujikura's Information & Communications profit nearly tripled in H1 FY26, and Sumitomo Electric and Furukawa both cite data-centre optical demand. Korea's role is substrates and packaging only; no Korean CPO switch or optical-I/O company turned up. Mainland China has switch vendors with CPO demos, but none is on NVIDIA's capacity-expansion list, and I could not verify their 2026 status. India has no real player in this segment beyond design centres.
 
 ### Map (home country; listing/ticker or private; role; why it matters or why left brief)
 
@@ -27,8 +27,8 @@ The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Ma
 | Arista | US | NYSE: ANET | Ethernet switch systems (mostly Broadcom silicon), EOS software, XPO pluggable MSA, Etherlink SU-144 scale-up racks | KEY. Leading AI-Ethernet systems vendor; openly resists proprietary CPO. |
 | Cisco | US | Nasdaq: CSCO | Silicon One G300 102.4T chip and systems; Acacia optics | Brief. Says it has CPO technology but is "looking for business alignment" (Feb 2026); $9.3B hyperscale AI orders in FY26. |
 | Celestica | Canada | NYSE/TSX: CLS | ODM/JDM switch systems for hyperscalers (HPS); DS6005 CPO switch announced 12 Oct 2026 | Brief. Fast growth, thin margins (adjusted operating margin 8.5%). |
-| Accton | Taiwan | TWSE: 2345 | ODM white-box switches (800G) | Brief. Record Q3 2026 revenue; Q3 2026 margins and EPS not found. |
-| Wiwynn | Taiwan | TWSE: 6669 | Rack integrator | Strategic investor in Ayar Labs; integrates TeraPHY into its racks (2026). |
+| Accton | Taiwan | TWSE: 2345 | ODM white-box switches (800G) | Brief. Record Q3 2026 revenue. Q3 2026 financial statements not yet in TWSE open data as of 12 Nov 2026 (filing deadline mid-November), so margins and EPS are unavailable. |
+| Wiwynn | Taiwan | TWSE: 6669 | Rack integrator | Strategic investor in Ayar Labs; integrates TeraPHY into its racks (2026). Jan-Sep 2026 (TWSE open data; read as year-to-date): revenue NT$989.3B, gross margin ~8.6%, operating margin ~7.1%, basic EPS NT$94.04 (derived ratios). |
 | Micas Networks | Not verified | Private | White-box switches on Broadcom TH6, including a 1RU Davisson CPO box | Davisson CPO switch due Q1 2027; pluggable TH6 versions Q4 2026 (StorageReview). |
 | Xsight Labs | Israel | Private | Ethernet switch silicon / DPU | Left brief: no 2026 evidence retrieved. |
 | Huawei | China | Private (employee-owned) | CloudEngine switches; in-house optics | Left brief: not verified in this run (search budget exhausted); cut off from US supply chains by export controls. |
@@ -46,7 +46,7 @@ The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Ma
 | Celestial AI | US | Acquired by Marvell, closed 2 Feb 2026 | Photonic Fabric optical interposer / scale-up | ~$1.3B cash + ~24.5M shares + revenue-milestone earnout to FY2029 (Marvell 10-K). |
 | Nubis Communications | US | Acquisition by Ciena announced 22 Sep 2025 | 6.4T CPO/NPO engines; active copper cables | First Ciena product built on it: Vesta 200 6.4T CPX pluggable CPO engine (25 Feb 2026). |
 | Hyperlume | North America (country not stated in release) | Acquired by Credo; closing announced 29 Sep 2025 | MicroLED chip-to-chip links | Credo launched the OCP SRMO micro-emitter optics workstream (12 Oct 2026). |
-| DustPhotonics | Israel | Acquired by Credo; agreed 13 Apr 2026, closed 28 May 2026 | Silicon-photonics PICs for 800G/1.6T/3.2T, NPO/CPO | Credo release. |
+| DustPhotonics | Israel | Acquired by Credo; agreed 13 Apr 2026, closed 28 May 2026 | Silicon-photonics PICs for 800G/1.6T/3.2T, NPO/CPO | Upfront $750M cash + ~0.92M Credo shares + up to ~3.21M contingent shares (Credo release, 13 Apr 2026). Booked total consideration $1.251B: $769.6M cash, $169.1M shares, $310M contingent at fair value (Credo 10-Q, quarter to 1 Aug 2026). Lead from another researcher ("~$750M cash plus stock, completed by 1 Aug 2026") CONFIRMED. |
 | Teramount | Israel | Apparently absorbed by Molex (unconfirmed) | Detachable fibre-to-chip connectors (TeraVERSE) | teramount.com 301-redirects to a Molex "TeraVERSE detachable optical chiplet connectors" product page (observed 12 Nov 2026). No deal announcement retrieved. |
 | Enosemi | US | Reported acquired by AMD (2025) | Silicon-photonics design | NOT verified in this run (AMD IR feed failed). |
 | aiXscale Photonics | Germany | Reported acquired by Astera Labs (2025) | Fibre-to-chip coupling | NOT verified in this run (Astera IR feed blocked). |
@@ -65,8 +65,8 @@ The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Ma
 | Company | Home | Listing | Role | Evidence |
 |---|---|---|---|---|
 | TSMC | Taiwan | TWSE: 2330 / NYSE: TSM | COUPE photonic-engine packaging (SoIC-based) | Used by Broadcom Davisson (16 x 6.4T engines) and NVIDIA Spectrum-X CPO (secondary). |
-| SPIL (ASE Technology group) | Taiwan | ASE: TWSE 3711 / NYSE: ASX | NVIDIA's CPO optical-engine packager | NVIDIA, GTC Berlin (21 Oct 2026): 15x optical-engine capacity by mid-2027, doubling again by end-2028. |
-| KYEC | Taiwan | TWSE: 2449 | Test | $1.1B NVIDIA capacity-reservation advance for a US test site (HVM Apr 2027). |
+| SPIL (ASE Technology group) | Taiwan | ASE: TWSE 3711 / NYSE: ASX | NVIDIA's CPO optical-engine packager | NVIDIA, GTC Berlin (21 Oct 2026): 15x optical-engine capacity by mid-2027, doubling again by end-2028. ASE group Jan-Sep 2026 (TWSE open data; read as year-to-date): revenue NT$608.9B, gross margin ~21.2%, operating margin ~11.8%, basic EPS NT$14.17 (derived ratios). |
+| KYEC | Taiwan | TWSE: 2449 | Test | $1.1B NVIDIA capacity-reservation advance for a US test site (HVM Apr 2027). Jan-Sep 2026 (TWSE open data; read as year-to-date): revenue NT$33.5B, gross margin ~38.9%, operating margin ~26.1%, basic EPS NT$5.78 (derived ratios). |
 | Amkor | US / Korea | Nasdaq: AMKR | Interposers / advanced packaging | $1.5B multi-year NVIDIA partnership (Jul 2026). |
 | IBIDEN (Japan, TSE 4062), Unimicron (Taiwan, TWSE 3037), Samsung Electro-Mechanics (Korea, KRX 009150) | | | Substrates | Under NVIDIA capacity reservations (Oct 2026); Korea's only verified role in this chain. |
 | Fabrinet | Thailand (Cayman) | NYSE: FN | Optical contract manufacturing | No 2026 data retrieved (IR feed blocked). |
@@ -83,9 +83,9 @@ The CPO and AI-fibre value chain is concentrated in the US (NVIDIA, Broadcom, Ma
 | Molex (Koch Industries) | US | Private | Optical connectors; TeraVERSE (ex-Teramount) | See Teramount above. |
 | Samtec | US | Private | CPX co-packaged copper connectors | Ciena's CPO engine targets compatibility with Samtec CPX (Feb 2026). |
 | TE Connectivity | Switzerland / Ireland | NYSE: TEL | High-speed copper/optical interconnect | No 2026 data retrieved. |
-| Fujikura (incl. AFL) | Japan | TSE: 5803 | Fibre, high-density cable, connectors | AFL is in the SRMO workstream. Fujikura IR pages are script-rendered; no 2026 numbers retrieved. |
-| Sumitomo Electric | Japan | TSE: 5802 | Fibre incl. multicore; connectors | No 2026 data retrieved. |
-| Furukawa Electric (OFS) | Japan | TSE: 5801 | Fibre and cable | No 2026 data retrieved. |
+| Fujikura (incl. AFL) | Japan | TSE: 5803 | Fibre, high-density cable, connectors, optical components | KEY (added). Information & Communications segment H1 FY26 (Apr-Sep 2026): sales ¥581.5B (+91.6%), operating profit ¥217.7B (+194.8%; ~37% margin), on data-centre demand (TDnet, 10 Nov 2026). AFL is in the SRMO workstream. |
+| Sumitomo Electric | Japan | TSE: 5802 | Fibre incl. multicore; optical wiring; optical devices | Info & Comms segment H1 FY26: sales ¥201.5B (+48.8%), operating profit ¥61.2B, on "data-centre optical wiring products, optical devices" for generative AI (TDnet, 30 Oct 2026). Only ~7% of group sales; autos dominate. |
+| Furukawa Electric (OFS, Lightera brand not verified) | Japan | TSE: 5801 | Fibre and cable; optical semiconductors | Optical Solutions segment H1 FY26: sales ¥130.9B (+43.9%), operating profit ¥23.6B (up ¥22.9B y/y) on data-centre fibre/cable volume, price revisions and mix. FY guide raised on 9 Nov 2026 (TDnet). |
 | Huber+Suhner | Switzerland | SIX: HUBN | Fibre connectivity; optical circuit switching | No 2026 data retrieved. |
 | Rosenberger | Germany | Private | Connectors | No 2026 data retrieved. |
 | Prysmian (added) | Italy | Borsa Italiana: PRY | Fibre cable | No 2026 data retrieved. |
@@ -147,7 +147,9 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
 - I found no NVIDIA-specific CPO reliability data published by a customer.
 
 **(c) Revenue model.**
-- Networking is one-off hardware: switches, NICs, NVLink switch trays. NVIDIA is the payer of prepayments, not the receiver, and has supply and capacity commitments of $279B (up from $119B) — [10-Q, quarter to 26 Jul 2026](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm). No labour-hour or per-seat dependence in networking. The software share of networking was not found.
+- Networking is one-off hardware: switches, NICs, NVLink switch trays. NVIDIA is mainly the payer of prepayments and has supply and capacity commitments of $279B (up from $119B) — [10-Q, quarter to 26 Jul 2026](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm).
+- It also receives customer advances: $2.8B balance at 26 Jul 2026 (vs $160M at 25 Jan 2026). Deferred-revenue additions in 1H FY27 were $17.7B, including $15.6B of customer advances (same 10-Q). Group-level, not networking-specific.
+- No labour-hour or per-seat dependence in networking. The software share of networking was not found.
 
 **(d) Financial strength** (group; networking not broken out in the filings retrieved).
 - Q2 FY27 (quarter to 26 Jul 2026; reported 26 Aug 2026):
@@ -158,15 +160,19 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Inventory $31.6B (from $25.8B) — [CFO commentary](https://www.marketscreener.com/news/nvidia-second-quarter-2027-cfo-commentary-ce7858d9d18df324).
   - Q3 guide $108B ±2%.
 - Free cash flow and capex for the quarter: not retrieved (gap).
-- Concentration:
-  - Accounts receivable: five direct customers held 22/14/13/11/10% of AR ([10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm)).
-  - Revenue: hyperscale about $49B (~55%) of $89B Data Center; "ACIE" including neoclouds about $40B — [transcript](https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/).
-  - The 10%-of-revenue customer list and revenue by geography were not in the 10-Q portions retrieved (gap).
+- Concentration (from the 10-Q text, retrieved directly from EDGAR):
+  - Q2 FY27: one direct customer was 16% of total revenue. 1H FY27: three direct customers were 16%, 15% and 13%, all mainly Compute & Networking. Q2 FY26: two direct customers were 23% and 16%.
+  - "One AI research and deployment company contributed a meaningful amount of our revenue by purchasing cloud services from our customers" (indirect).
+  - Accounts receivable: five direct customers held 22/14/13/11/10% of AR.
+  - Revenue mix: hyperscale about $49B (~55%) of $89B Data Center; "ACIE" including neoclouds about $40B — [transcript](https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/).
+- Geography (by direct-customer headquarters, Q2 FY27): United States $60.07B (62%); Taiwan $26.99B (28%); China incl. Hong Kong $7.88B (8%); other $1.28B. Revenue from customers headquartered outside the US was 38% of the total — [10-Q](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm). NVIDIA notes that end-customer and shipping locations can differ from customer headquarters.
+- Return on capital (TTM, aggregator, secondary): ROIC ~92%, ROE ~117%; FCF ~$127B; net cash ~$23.6B — [stockanalysis.com, retrieved 12 Nov 2026](https://stockanalysis.com/stocks/nvda/statistics/).
 - Return on capital: not computed (gap).
 
 **(e) Resilience.**
 - Cycle position: "we expect supply to remain a bottleneck, at least through the end of fiscal year '28" (Kress). Memory price rises "exceeded our prior expectations" — [transcript](https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/). Huang at GTC Berlin: "Capacity is the constraint" — [SDxCentral](https://www.sdxcentral.com/news/nvidia-targets-15x-optics-capacity-expansion-by-2027-to-meet-cpo-demand/).
 - Pause exposure: $279B of commitments and $2.1B already accrued for excess-inventory purchase obligations ([10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm)). Neocloud buyers are "the most cash-strapped" (SimpleTechTrend commentary on Huang's Berlin remarks; secondary).
+- NVIDIA's own financing-risk disclosure (10-Q, Aug 2026): "AI clouds and AI model makers ... currently lack the ability to secure long-term infrastructure contracts and investment-grade financing capacity", which "could delay customer and partner deployments". NVIDIA is "securing and providing guarantees of land, power, shell, and capacity of select data center infrastructure that customers require". This is direct evidence for the financing-led-pause mechanism in the brief's scenarios.
 - Export controls: the outlook assumes no China Data Center compute revenue; China Hopper shipments were below 1% of Data Center revenue in Q2 — [CFO commentary](https://www.marketscreener.com/news/nvidia-second-quarter-2027-cfo-commentary-ce7858d9d18df324).
 - Scenarios (inference): steady growth — networking compounds with the CPO ramp. Financing-led pause around 2028 — prepayments and commitments become fixed costs and neocloud demand is most at risk, but net cash and a 75% gross margin absorb it. Acceleration — the SPIL, KYEC and Corning capacity locks become the advantage.
 
@@ -198,7 +204,13 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Operating cash flow $14.2B; capex $0.5B; FCF $13.7B (46% of revenue).
   - Cash $24.0B; debt ~$59.4B, so net debt ~$35B (derived).
   - Q4 guide: revenue $34.8B, AI $21.7B (+236%); non-GAAP operating margin ~66% — [8-K](https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm).
-- Networking share of AI revenue, customer concentration and geography: not retrieved (gap).
+- Concentration (10-Q for quarter to 2 Aug 2026 and FY25 10-K, from EDGAR):
+  - Top five end customers through all channels about 50% of net revenue in the nine months to 2 Aug 2026 (about 40% in FY2025 and FY2024). Concentration is rising with the AI ramp.
+  - Distributors 56% of net revenue (48% in FY2025).
+  - About 58% of contract liabilities relate to contracts with termination-for-convenience provisions — [10-Q](https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm); [10-K FY25](https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm).
+- Geography (revenue by region, Q3 FY26): Asia Pacific $20.94B (71%), Americas $5.51B, EMEA $3.13B. Products revenue in APAC $20.2B, reflecting Asian contract manufacturers and ODMs (10-Q).
+- Return on capital (TTM, aggregator, secondary): ROIC ~30.7%, ROE ~44%, ROCE ~26%; net debt ~$35.4B — [stockanalysis.com, retrieved 12 Nov 2026](https://stockanalysis.com/stocks/avgo/statistics/).
+- Networking share of AI revenue: not retrieved (gap).
 
 **(e) Resilience.**
 - Very high FCF conversion and an asset-light model cushion a pause. Leverage and dependence on a handful of XPU customers are the exposures (concentration not quantified here).
@@ -234,7 +246,9 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Operating cash flow about $1.2B; cash and marketable securities about $14.4B; zero debt.
   - Purchase commitments $11.4B (from $9.7B); inventory $3.2B (from $2.5B).
 - Guidance: FY26 about $13.3B (+48%); FY27 +38-40% (~$18.5B); FY27 gross margin 62-64%. AI fabrics target $3.5B in 2026, about $7B in 2027 — [release](https://s21.q4cdn.com/861911615/files/doc_news/Arista-Networks-Inc--Reports-Third-Quarter-2026-Financial-Results-2026.pdf); [call](https://www.fool.com/earnings/call-transcripts/2026/11/04/arista-anet-q3-2026-earnings-call-transcript/).
-- Customer percentages and geography: not retrieved (gap).
+- Concentration (FY2025 10-K): two end customers were 26% and 16% of FY2025 revenue (20%/15% in 2024; 18%/21% in 2023). The call calls them "M&M", i.e. Microsoft and Meta — [10-K](https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm).
+- Geography (Q3 2026, by shipping address): Americas $2.975B (81%; US $2.956B), EMEA $381M, APAC $301M — [10-Q](https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm).
+- Return on capital (TTM, aggregator, secondary): ROE ~33.5%, ROCE ~28.1%. The aggregator's ROIC (~240%) is an artefact of Arista's large net cash and small invested capital; do not use it — [stockanalysis.com](https://stockanalysis.com/stocks/anet/statistics/).
 
 **(e) Resilience.**
 - Visibility is about two quarters. Supply is constrained "industry-wide", and Arista is signing long-term deals for silicon, PCB and memory; product cost inflation partly offset margin (call).
@@ -265,6 +279,7 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Adjusted FCF $661M (9M about $2.3B); 2026 capex about $2B (9M $1.3B).
   - Average debt maturity >20 years; net debt not disclosed on the call — [8-K](https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm); [call](https://www.fool.com/earnings/call-transcripts/2026/10/27/corning-glw-q3-2026-earnings-call-transcript/).
 - Springboard targets: annualised sales run-rate $20B by end-2026, $30B by end-2028, $40B by end-2030.
+- Return on capital (TTM, aggregator, secondary): ROIC ~12.1%, ROE ~17.9%, ROCE ~10.8%; net debt ~$6.6B (fills the "net debt not disclosed" gap) — [stockanalysis.com, retrieved 12 Nov 2026](https://stockanalysis.com/stocks/glw/statistics/). This is the weakest return profile among the key companies after Marvell.
 - Customer percentages: not disclosed. Weeks: "Our customers are primarily the major hyperscalers."
 
 **(e) Resilience.**
@@ -293,6 +308,7 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Communications Solutions $6.583B (+99%, +51% organic), segment operating margin 33.1%.
   - Cash and short-term investments $5.30B; debt $17.87B, so net debt about $12.6B (derived).
   - FY26 guide $36.9-37.1B (about +60%) — [Q3 release](https://s21.q4cdn.com/564806605/files/doc_financials/2026/q3/2026_10_28-PR-3Q-2026-Results_Dividend-Increase-and-Buyback.pdf).
+- Return on capital (TTM, aggregator, secondary): ROIC ~22.7%, ROE ~40%, ROCE ~25.7%; net debt ~$12.6B (matches the derived figure) — [stockanalysis.com](https://stockanalysis.com/stocks/aph/statistics/).
 
 **(e) Resilience.** Diversified end markets and a book-to-bill of 1.19 at the top of the cycle. Exposed to a copper-content decline when scale-up goes optical, partly hedged by CCS fibre (inference).
 
@@ -319,6 +335,7 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Cash $3.93B; long-term debt $4.96B, so net debt about $1.0B (derived) — [8-K](https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000022/q227_8kx812026ex-991.htm).
 - FY26 (to 31 Jan 2026): revenue $8.19B (+42%). Concentration: Distributor A 37%, Customer A 14%. About 77% of revenue shipped to customers with operations in Asia — [10-K](https://www.sec.gov/Archives/edgar/data/1835632/000183563226000011/mrvl-20260131.htm).
 - Targets: FY28 about $20B; FY31 $70-90B (Investor Day, 6 Oct 2026; company targets).
+- Return on capital (TTM, aggregator, secondary): ROIC ~6.9%, ROE ~16.5%, ROCE ~6.3% (GAAP returns depressed by acquisition amortisation); net debt ~$1.35B — [stockanalysis.com](https://stockanalysis.com/stocks/mrvl/statistics/).
 - Lumentum pro forma: annualised revenue about $17.7B, non-GAAP gross margin 57%, operating margin 39%, ">$1B" cost synergies; close expected 1H CY2028 — [8-K/425](https://www.sec.gov/Archives/edgar/data/0001835632/000119312526442723/d81187d425.htm).
 
 **(e) Resilience.**
@@ -330,22 +347,41 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
   - Revenue $17.3B (+18%); product orders +35% (networking +40%); non-GAAP operating margin 35.9%; RPO $46.7B.
   - Hyperscale AI-infrastructure orders $4B in the quarter and $9.3B for FY26; AI-infrastructure revenue about $4B in FY26, expected $7.5B in FY27.
   - FY27 guide $72.2-73.4B — [unite.ai, 12 Aug 2026](https://www.unite.ai/cisco-books-4b-in-quarterly-ai-orders-as-networking-supercycle-lifts-fy2027-outlook/) (secondary).
-  - Q1 FY27 results were not yet published or indexed as of the research date. Gross margin, FCF and net cash: not retrieved.
+  - Q1 FY27 results were not yet published or indexed as of the research date.
+  - FY26 10-K (FY to 25 Jul 2026; filed 2 Sep 2026): revenue $63.3B (+12%); Americas 59.7%, EMEA 26.2%, APJC 14.1%. Operating cash flow $14.2B; capex $1.4B; cash and investments $15.9B; total debt $29.5B ($23.0B notes + $6.7B commercial paper); inventories $5.69B (from $3.16B); RPO $46.7B.
+  - Total gross margin fell 0.4 pp on product mix and "higher memory costs". The 10-K warns that AI-infrastructure sales to hyperscalers "may be concentrated among a limited number of customers" — [10-K](https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm).
+  - TTM (aggregator, secondary): ROIC ~20.4%, ROE ~27.3%, FCF ~$12.8B, net debt ~$15.3B — [stockanalysis.com](https://stockanalysis.com/stocks/csco/statistics/).
   - CPO: G300 systems ship with pluggable 1.6T OSFP and 800G LPO. Chopra: "We certainly have the technology, we're looking for business alignment to sort of productize it" — [The Register, 10 Feb 2026](https://www.theregister.com/2026/02/10/cisco_challenges_broadcom_nvidia_switch_chips/).
 - **Celestica** — Q3 2026 (release 26 Oct 2026):
   - Revenue $5.83B (+83%); CCS $4.87B (+102%; 84% of revenue; segment margin 8.9%); HPS about $2.3B (+70%); adjusted operating margin 8.5%.
   - FCF $127.5M; capex $274M; cash $3.96B against debt $819M.
   - FY26 FCF guide cut to $460M (from $600M) for working capital. 2027 outlook: revenue $40B (+90%), adjusted operating margin 9.0%, capex $1.5-2.0B — [Celestica release](https://finviz.com/news/408117/celestica-announces-third-quarter-2026-financial-results-and-will-hold-2026-investor-and-analyst-day).
-  - An analyst estimates three buyers at 63% of sales (secondary). 1.6T revenue is expected to pass 800G in 2027. DS6005 CPO switch announced 12 Oct 2026.
+  - Concentration (Q3 2026 10-Q, primary): three CCS customers were 35%, 17% and 14% of Q3 2026 revenue (66% combined; YTD 34/16/15). Top-10 customers were 85% of Q3 revenue (80% a year earlier). Its A/R sales programme was raised to $1.0B (from $450M) in Sep 2026, a working-capital financing signal — [10-Q](https://www.sec.gov/Archives/edgar/data/1030894/000103089426000050/cls-20260930.htm). This supersedes the earlier "three buyers = 63%" analyst estimate.
+  - 1.6T revenue is expected to pass 800G in 2027. DS6005 CPO switch announced 12 Oct 2026.
+  - TTM (aggregator, secondary): ROIC ~41.9%, ROE ~30.2%, ROCE ~20.6%; gross margin ~11.5% — [stockanalysis.com](https://stockanalysis.com/stocks/cls/statistics/).
 - **Accton** — Q3 2026 consolidated revenue NT$120.74B (+26.4% q/q, +65.5% y/y, record); 9M NT$286.40B (+62.45%) (Money Weekly, via search summary; secondary).
   - Q2 2026 NT$95.54B (+58% y/y) — [Taiwan News](https://www.taiwannews.com.tw/news/6396424); August 2026 NT$40.873B, a monthly record — [Digitimes tag page](https://www.digitimes.com/tag/accton/001693.html).
   - Q3 2026 gross margin and EPS NOT found. Reference point: Q3 2025 EPS NT$14 and gross margin 17.1% — [StatementDog, 28 Nov 2025](https://statementdog.com/news/15154). Expanding in Vietnam, Malaysia, Mexico and the US (same source).
 - **Credo** — no FY27 Q1 financials retrieved. Strategy is vertical (SerDes + DSP + SiPh via DustPhotonics + microLED via Hyperlume). Expects its optical portfolio to be "a significant growth driver in fiscal 2027" (company claim, unconfirmed) — [Credo IR feed](https://investors.credosemi.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&bodyType=1&pressReleaseDateFilter=3&pageSize=200&pageNumber=0&year=2026).
 - **Ciena** — FY29 targets (16 Sep 2026): ~30% revenue CAGR 2026-29, ~50% gross margin, 32-35% operating margin, ~20% FCF margin. New "Interconnects" reporting segment from FY27 — [Ciena IR feed](https://investor.ciena.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&bodyType=1&pressReleaseDateFilter=3&pageSize=200&pageNumber=0&year=2026).
 
+### 2.8 Return-on-capital summary (TTM to latest reported quarter; stockanalysis.com statistics pages retrieved 12 Nov 2026; aggregator methodology, secondary; valuation fields deliberately ignored)
+
+| Company | ROIC | ROE | ROCE | Net cash (+) / net debt (-) |
+|---|---|---|---|---|
+| NVIDIA | ~92% | ~117% | ~71% | +$23.6B |
+| Broadcom | ~30.7% | ~44% | ~26% | -$35.4B |
+| Arista | n/m (artefact ~240%) | ~33.5% | ~28.1% | +$14.4B |
+| Amphenol | ~22.7% | ~40% | ~25.7% | -$12.6B |
+| Cisco | ~20.4% | ~27.3% | ~18.3% | -$15.3B |
+| Celestica | ~41.9% | ~30.2% | ~20.6% | +$2.9B |
+| Corning | ~12.1% | ~17.9% | ~10.8% | -$6.6B |
+| Marvell | ~6.9% | ~16.5% | ~6.3% | -$1.35B |
+
 ### Gaps (section 2)
-- Return on invested capital for all six key companies. FCF and capex for NVIDIA's quarter.
-- 10%-customer lists and revenue by geography for NVIDIA, Broadcom, Arista and Amphenol. Broadcom's networking share of AI revenue.
+- NVIDIA's FCF and capex for the quarter, from the primary cash-flow statement (the aggregator gives TTM FCF of ~$127B).
+- Amphenol's 10%-customer list (none found; diversified).
+- Broadcom's networking share of AI revenue.
 - Third-party market shares: Dell'Oro and 650 Group 2026 switch shares, and fibre/connector shares.
 
 ---
@@ -443,7 +479,11 @@ The transitions are numbered as in the brief: (1) copper to optical between proc
    - Corning: owns the physical constraint and has customer-funded LTAs, but lower margins (core operating margin 22.7%) and capital intensity.
 6. **Marvell** — successor-side and strategically bold, but GAAP operating margin of 16.8%, a 37% distributor concentration, scale-up optics revenue near zero, and large integration risk to 2028.
 
-Outside the key set, indicative only: Cisco (cash-generative, CPO laggard) would sit around Corning or Amphenol. Celestica and Accton (thin ODM margins and high concentration) would sit below Marvell.
+Return-on-capital cross-check (section 2.8, secondary TTM data): the ordering holds at the top (NVIDIA ROIC ~92% > Broadcom ~31%) and at the bottom (Marvell ~7%). Within the tie cluster, returns favour Arista (ROE ~34%, ROCE ~28%, net cash) and Amphenol (ROIC ~23%) over Corning (ROIC ~12%). If a strict order is needed, use Arista ≥ Amphenol > Corning, while noting that Corning alone owns a physical constraint (fibre capacity and glass know-how) and has customer-funded LTAs.
+
+Concentration cross-check (primary filings): the most concentrated are Celestica (top-3 = 66% of Q3 2026 revenue; top-10 = 85%) and Arista (26% + 16% in FY25). Broadcom's top-5 end customers are ~50% of revenue (9M FY26). NVIDIA's largest direct customer is 16% (Q2 FY27). Marvell's Distributor A is 37% (FY26). Amphenol is diversified.
+
+Outside the key set, indicative only: Cisco (cash-generative, ROIC ~20%, CPO laggard) would sit around Amphenol or Corning. Celestica (ROIC ~42% but an ODM with ~11% gross margin and very high concentration) and Accton (thin ODM margins) would sit below Marvell on quality as defined here, because they own neither a judge nor a constraint.
 
 ---
 
@@ -489,16 +529,19 @@ CPO in scale-out switches ships in volume first: capacity in 2027, real volume i
 
 ## 7. What could not be verified
 
-- NVIDIA's own GTC Berlin press release (Oct 2026). The 15x claim is sourced to trade press that cites it. NVIDIA's 10%-customer list and revenue by geography for Q2 FY27. Networking revenue in NVIDIA's own words (the $17.5B is The Register's figure).
-- Broadcom's networking share of AI revenue and its customer concentration. The Q3 FY26 transcript was blocked or missing.
+- NVIDIA's own GTC Berlin press release (Oct 2026). The 15x claim is sourced to trade press that cites it. Networking revenue in NVIDIA's own words (the $17.5B is The Register's figure; the 10-Q reports only the combined Compute & Networking segment). NVIDIA's concentration and geography are now verified from the 10-Q.
+- Broadcom's networking share of AI revenue. The Q3 FY26 transcript was blocked or missing. Broadcom's concentration and geography are now verified from the 10-Q/10-K.
+- Both leads passed on by the coordinator are now VERIFIED against primary sources:
+  - Marvell-Lumentum: all-stock merger agreement (8-K/425; event 1 Nov 2026, signed 2 Nov 2026; close expected 1H CY2028).
+  - Credo-DustPhotonics: closed 28 May 2026; upfront $750M cash + ~0.92M shares (release); total booked consideration $1.251B including $310M contingent (10-Q for quarter to 1 Aug 2026).
 - Customer-published CPO reliability beyond the Meta/Broadcom lab result (no NVIDIA-CPO customer reliability data found). Field-fleet failure rates.
 - Third-party CPO share-of-ports figures for 2026-2030 straight from LightCounting, Dell'Oro, 650 Group or Cignal AI publications. Only secondary chart readings were available.
 - 2026 status of Chinese CPO switches (Huawei, H3C, Ruijie, ZTE) and Chinese export-control specifics for switches and optics beyond NVIDIA's China exclusion. Hollow-core fibre (Microsoft, YOFC). Multicore-fibre adoption beyond Corning's launch. VSFF (MMC, SN-MT) adoption shares.
 - Japanese fibre and connector makers' 2026 results (Fujikura, Sumitomo, Furukawa): IR pages are script-rendered, and TDnet/EDINET could not be searched.
 - Supplier shares for fibre and connectors. Demand per rack beyond Corning's per-GPU figures.
 - AMD's optical scale-up roadmap and the AMD-Enosemi deal; the Astera Labs-aiXscale deal; Molex-Teramount terms; Ranovus, Oriole, Avicena, OpenLight and Xsight funding and runway; Celestica DS6005 specs.
-- Cisco Q1 FY27 results (not out or not indexed by 12 Nov 2026); Cisco gross margin and net cash. Accton Q3 2026 gross margin and EPS. Arista's customer percentages.
-- Return on capital for all key companies.
+- Cisco Q1 FY27 results (not out or not indexed by 12 Nov 2026); Cisco's FY26 gross-margin level (only the -0.4 pp change was extracted). Accton Q3 2026 gross margin and EPS: its statements were not yet in TWSE open data on 12 Nov 2026.
+- Return on capital comes only from an aggregator (stockanalysis.com, TTM). It was not recomputed from filings, and methodology differences (e.g. Arista's ~240% ROIC) make cross-company comparison approximate.
 - Start-up runway (months of cash). Only funding totals are known: Ayar Labs $870M + $150M in 2026; Lightmatter $850M. Inference: both could fund a 1-2 year slip at current raise levels, but burn rates are not public.
 
 ---
@@ -529,6 +572,13 @@ Primary — filings and company releases:
 - Ciena IR feed (Nubis 22 Sep 2025; Vesta 25 Feb 2026; FY29 targets 16 Sep 2026) — https://investor.ciena.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&bodyType=1&pressReleaseDateFilter=3&pageSize=200&pageNumber=0&year=2025 and ...&year=2026
 - Credo IR feed (Hyperlume 29 Sep 2025; DustPhotonics 13 Apr / 28 May 2026; SRMO 12 Oct 2026) — https://investors.credosemi.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&bodyType=1&pressReleaseDateFilter=3&pageSize=200&pageNumber=0&year=2026
 - Lightmatter company page — https://lightmatter.co/llms.txt (updated 24 Apr 2026)
+- Broadcom 10-Q, quarter to 2 Aug 2026 — https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm (filed 10 Sep 2026); Broadcom 10-K FY25 — https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm (filed 18 Dec 2025)
+- Arista 10-K FY25 — https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm (filed 17 Feb 2026); Arista 10-Q Q3 2026 — https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm (filed 4 Nov 2026)
+- Cisco 10-K FY26 — https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm (filed 2 Sep 2026)
+- Celestica 10-Q Q3 2026 — https://www.sec.gov/Archives/edgar/data/1030894/000103089426000050/cls-20260930.htm (filed 26 Oct 2026)
+- Credo 10-Q, quarter to 1 Aug 2026 (DustPhotonics purchase accounting) — https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm (filed 2 Sep 2026)
+- TWSE open data, listed-company income statements (ASE 3711, KYEC 2449, Wiwynn 6669; 2026 Q3, table dated 12 Nov 2026) — https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci
+- stockanalysis.com statistics pages (TTM return metrics only; aggregator; retrieved 12 Nov 2026) — https://stockanalysis.com/stocks/nvda/statistics/ (likewise /avgo/, /anet/, /glw/, /aph/, /mrvl/, /csco/, /cls/)
 
 Earnings-call transcripts (third-party transcription):
 - NVIDIA Q2 FY27 — https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/ (26 Aug 2026 call)

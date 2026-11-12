@@ -2,7 +2,12 @@
 
 **Conventions.** PRIMARY = company results deck, regulated filing or official release. SECONDARY = trade press, analysts, aggregators, blogs (reliability noted where weak). "Company claim, unconfirmed" = no outside party confirmed it. Japanese fiscal years: Ibiden, Ajinomoto and Nittobo "FY2026" = Apr 2026–Mar 2027; AT&S "2026/27" = Apr 2026–Mar 2027. No share prices, valuation multiples, market caps or price targets are used. Figures marked "(my arithmetic)" are derived by me from the cited numbers.
 
-**Method limitation.** The shared WebSearch budget for this run was exhausted after about 25 of my searches. I did not route around it through other search engines. The rest of the evidence came from pages already surfaced and from companies' own IR pages and decks (Ibiden, Ajinomoto, NVIDIA, SEMCO). The gaps in section 7 partly reflect this; a follow-up pass could close them.
+**Method limitation.** The shared WebSearch budget for this run was exhausted after about 25 of my searches, and the coordinator later confirmed the Exa and Firecrawl budgets were also spent. The rest of the evidence came from direct fetches:
+- pages already surfaced;
+- companies' own IR documents: Ibiden tanshin, Q&A and capex notice; AT&S half-year report 2026/27 and annual financial report 2025/26; Ajinomoto Q2 deck; NVIDIA and SEMCO releases;
+- third-party TTM statistics pages (stockanalysis.com), from which I took only quality metrics (margins, ROE/ROIC, net cash, FCF) and no valuation fields.
+
+The gaps in section 7 partly reflect this; a follow-up pass could close them.
 
 ---
 
@@ -113,6 +118,11 @@ The shortage is most credible through 2027. 2028 is the swing year, because most
   - SAP substrate demand index (CY26 = 100): CY27 135, CY28 170, CY29 210, CY30 350.
   - AI GPU/ASIC from CY26 to CY30: unit market ×1.8, production load ×3.0, SAP demand ×5.4.
   - Quote: "total SAP demand is expected to significantly exceed the industry's supply capacity."
+- **Ibiden's management view** (Q&A, 30 Oct 2026; PRIMARY, company claim) ([Ibiden Q&A](https://www.ibiden.com/ir/items/en_QA_FY2026Q2.pdf)):
+  - "In the high-end-AI-related market, there will be a change in the competitive landscape with the addition of a Korean manufacturer, bringing the total number of suppliers to three. However, even the combined capacity of our competitors will not be sufficient to meet overall demand."
+  - In server CPUs, competitors are expanding, "including through acquisitions of existing plants", but combined capacity is "still insufficient".
+  - Ibiden accepted a questioner's premise that the shortage persists "until around 2030": "there is currently no technology that can replace leading-edge IC package substrates. As a result, we believe demand will ultimately have to be constrained."
+  - New substrate buildings take "at least four years from the investment decision", which bounds how fast supply can respond.
 - **Shortage duration:** BofA expects the ABF shortage to last through 2028 (secondary) ([thebuildout.ai, 26 Mar 2026](https://thebuildout.ai/intel/229c44f2-da57-4f46-b5fa-e5d03702236c)). Unimicron's chairman (TPCA Show, 20 Oct 2026) named T-glass cloth, CCL and ABF as the main material bottlenecks and said some critical materials could be about 20% short in 2027 ([MPBxChange](https://www.mpbxchange.com/research/pcb-material-shortage-2026-glass-cloth-copper-foil)).
 - **Size of the gap (low reliability):** one blog compilation puts the shortfall at ~10% in 2H 2026, ~21% in 2027 and >40% in 2028 ([gate.com](https://www.gate.com/blog/why-abf-substrates-have-become-a-bottleneck-in-the-ai-gpu-supply-chain-2028-shortage-analysis)). Methodology unknown.
 - **Utilisation:**
@@ -123,8 +133,9 @@ The shortage is most credible through 2027. 2028 is the swing year, because most
 #### Cited findings: capacity landing 2027–2029
 - **Ibiden** ([Ibiden deck, 30 Oct 2026](https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf)):
   - Ono Cell8 (AI GPU): JPY 280bn, operations from FY2027 (Apr 2027–Mar 2028).
-  - Gama Cell6: JPY 220bn already announced plus JPY 150bn added, operations from FY2029.
+  - Gama Cell6: JPY 220bn already announced plus ~JPY 151bn added. The capex notice of 29 Oct 2026 says the new money goes to "Gama Plant and other overseas plant", for CPU substrates, mass production from FY2029 ([notice](https://www.ibiden.com/ir/items/koteishisansyutoku2026Q2.pdf)). The Q&A says ramp-up is 2H FY2029, the investment is for EMIB (not EMIB-T), and it is outside the FY2030 targets ([Q&A](https://www.ibiden.com/ir/items/en_QA_FY2026Q2.pdf)).
   - Cell7 and Cell9 decisions due within FY2026.
+  - EMIB-T mass production 2H FY2027 (Oct 2027–Mar 2028), "no significant change" to schedule.
 - **Unimicron** ([vocus.cc](https://vocus.cc/article/6ae2b2b0fd8978000150ef3d)):
   - Guangfu Plant 1 Phase 3 from Q3 2026.
   - Guangfu Plant 2 Phase 1 from Q2 2027.
@@ -202,7 +213,7 @@ The shortage is most credible through 2027. 2028 is the swing year, because most
 #### (c) Revenue model
 - Hardware components sold per unit. Volume scales with accelerator units × substrate area × layer count.
 - Customer-funded capacity:
-  - NVIDIA advance: amount undisclosed. Bunshun reported ~JPY 280bn; neither company confirmed.
+  - NVIDIA advance: amount undisclosed. Bunshun reported ~JPY 280bn; neither company confirmed. Ibiden's balance sheet shows advances received rising JPY 118.8bn in Apr–Sep 2026 to JPY 199.7bn (PRIMARY tanshin), which is the observable footprint of customer prepayments.
   - Ibiden's CEO reportedly said a "substantial portion" of a JPY 500bn three-year capex plan is funded by customer prepayments (secondary) ([RCRTech](https://rcrtech.com/semiconductor-news/nvidia-supply-chain-capacity-commitments/)).
 - No service or labour-hour revenue.
 
@@ -228,11 +239,16 @@ Points to note:
 - **Capex vs cash generation** (my arithmetic):
   - FY2026: capex JPY 210bn ≈ forecast EBITDA (133 + 81 = 214), so free cash flow is roughly zero before prepayments.
   - FY2027: capex JPY 350bn vs EBITDA ≈ 255, so free cash flow is negative unless customers prepay.
-- **Balance sheet and returns** ([Integrated Report 2025](https://www.ibiden.com/ir/items/IntegratedReport2025_en.pdf)), latest full table at FY2024 (Mar 2025):
-  - Interest-bearing debt JPY 343.0bn; equity ratio 45.35%; R&I single-A.
-  - ROE 6.84% in FY2024, against 13.32% in FY2022 and a target of ≥10%.
-  - FCF −JPY 45.3bn in FY2024 (+68.0bn in FY2023).
-  - Latest net debt (Sep 2026) not retrieved.
+- **Balance sheet at 30 Sep 2026** (PRIMARY tanshin, 29 Oct 2026) ([tanshin](https://www.ibiden.com/ir/library/statement/items/tannshinn2026Q2.pdf); [supplementary data](https://www.ibiden.com/ir/items/hosokushiryou2026Q2.pdf)):
+  - Cash and deposits JPY 420.5bn (31 Mar 2026: 295.7bn).
+  - Interest-bearing debt JPY 162.0bn (my sum: bonds 10.0 current + 35.0; convertible bonds 56.0; long-term loans 61.0), down from JPY 192.5bn. That gives **net cash of about JPY 258bn** (my arithmetic; about JPY 103bn at Mar 2026).
+  - **Advances received JPY 199.7bn**, up JPY 118.8bn in six months from JPY 81.0bn. These are customer prepayments, consistent with the NVIDIA capacity-reservation advance.
+  - H1 operating cash flow JPY 193.2bn, including the +JPY 118.8bn of advances; investing −JPY 48.9bn; financing −JPY 18.3bn.
+  - Equity ratio 53.5% (57.3% at Mar 2026). H1 capex was only JPY 43.4bn against the JPY 210bn full-year plan, so spending is heavily back-loaded.
+- **Returns history** ([Integrated Report 2025](https://www.ibiden.com/ir/items/IntegratedReport2025_en.pdf)):
+  - FY2024 (Mar 2025): interest-bearing debt JPY 343.0bn; equity ratio 45.35%; ROE 6.84% (FY2022: 13.32%; target ≥10%); FCF −JPY 45.3bn (FY2023: +68.0bn). R&I single-A.
+  - Third-party TTM to Sep 2026: ROE 14.1%, ROIC 15.7%, operating margin 17.8%, FCF +JPY 168bn (flattered by advances) ([stockanalysis.com, fetched 12 Nov 2026](https://stockanalysis.com/quote/tyo/4062/statistics/)).
+  - Company targets: Electronics operating margin "approximately 35% in FY2030"; Gama additions at ">30%" margin ([Q&A](https://www.ibiden.com/ir/items/en_QA_FY2026Q2.pdf)).
 - **Customer concentration:** not disclosed. NVIDIA dependence is implied by the GPU share and the NVIDIA-funded plant (inference).
 - **Country exposure:** 71% of FY2024 sales were overseas — Asia 47.1%, North and Central America 12.8%, Europe 7.3%. Substrate output comes from Japan (Ogaki, Ono, Gama, Aoyanagi) plus the Philippines and Malaysia (Integrated Report 2025).
 
@@ -283,7 +299,10 @@ Q3 2026 results were published 27–28 Oct 2026 ([vocus.cc](https://vocus.cc/art
 | 9M operating cash flow | ~NT$25.1bn, below net profit |
 | 9M net financing inflow | ~NT$94.9bn — the expansion is partly financed |
 
-- Debt not captured, so net cash is unknown.
+- **Third-party TTM to Sep 2026** ([stockanalysis.com, fetched 12 Nov 2026](https://stockanalysis.com/quote/tpe/3037/statistics/)):
+  - Total debt NT$50.0bn vs cash NT$159.7bn, so net cash ~NT$109.7bn.
+  - Revenue NT$167.7bn; operating margin 13.3%; operating cash flow NT$29.1bn; capex NT$25.4bn; FCF NT$3.8bn.
+  - ROE 23.6%, inflated by Q2 non-operating gains. The site's ROIC of 23.9% sits oddly against its ROCE of 7.3%, so treat site-computed returns with caution.
 - Customer concentration not disclosed.
 - Footprint: Taiwan ABF plants (Guangfu, Yangmei); selling Unimicron Japan to Meiko (intent stage).
 
@@ -327,6 +346,7 @@ Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/tran
 | Package-substrate investment | KRW 6.8tn (Sept 2026 disclosure) |
 | Vietnam subsidiary investment | KRW 2.5tn approved (reported in call coverage; not opened directly) |
 
+- **Third-party TTM** (possibly only to Jun 2026) ([stockanalysis.com](https://stockanalysis.com/quote/krx/009150/statistics/)): revenue KRW 12.46tn; operating margin 9.8%; net cash ~KRW 241bn; operating cash flow KRW 1.88tn; capex KRW 1.59tn; FCF KRW 286bn; ROE 10.6%; ROIC 9.8%. These are group-level returns; the substrate division's returns are not disclosed.
 - Customer concentration is not disclosed and will rise toward NVIDIA by 2028 (PRIMARY).
 - Footprint: Korea (Sejong, Busan) and Vietnam for substrates; Philippines for MLCC.
 
@@ -340,7 +360,8 @@ Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/tran
 #### (a) Position
 - **Constraint held:** a physical constraint — capacity outside Taiwan and Japan (Kulim, Malaysia; Leoben, Austria), plus embedded-core technology ("EMB Core", MTH, MLC).
 - **Main product:** ABF IC substrates = **BRIDGE**.
-- **No glass-core programme** appears in the Q1 2026/27 material. The roadmap covers co-packaged optics and power PCBs ([Investing.com, 4 Aug 2026](https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617)).
+- **Glass core is R&D only.** The Q1 2026/27 material does not mention glass; its roadmap covers co-packaged optics and power PCBs ([Investing.com, 4 Aug 2026](https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617)). The FY2025/26 annual report, however, says "the research focus was on glass-based substrate cores… the international supply chain for glass cores has not yet been established in the required quality, making additional development steps necessary. AT&S is working on closing this gap early" (PRIMARY) ([AT&S Annual Financial Report 2025/26](https://ats.net/en/download/annual-financial-report-2025-26/?wpdmdl=61790)). There is no product date.
+- **Own cores:** Kulim will also get "a new production facility for precursors for IC substrates (cores)" ([AT&S H1 report 2026/27](https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668)).
 
 #### (b) Lead
 - Regulated ad hoc of 13 Jun 2026: agreements on key terms with "AMD and another leading technology company" ([finanzwire](https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV)).
@@ -349,8 +370,12 @@ Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/tran
 
 #### (c) Revenue model
 - Per-unit hardware.
-- The Kulim expansion (EUR 1.5–2.0bn) is "fully supported and financed by long-term customer commitments, which remain subject to final negotiation and execution" (company claim).
-- Uses receivables factoring.
+- The Kulim expansion (EUR 1.5–2.0bn) was "fully supported and financed by long-term customer commitments, which remain subject to final negotiation and execution" (ad hoc, Jun 2026). By the H1 report: "All planned investments are supported and financed by long-term customer commitments."
+- **Prepayments are visible on the balance sheet** (PRIMARY, 30 Sep 2026) ([H1 report](https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668)):
+  - Contract liabilities EUR 1,205.9m in total (non-current 1,038.5m; current 167.4m), up from EUR 885.9m at Mar 2026.
+  - Additions of EUR 421.0m and releases of EUR 106.9m in H1.
+  - Receivables from customer prepayments EUR 211.0m.
+- Receivables factoring is being reduced: EUR 74.6m vs 206.5m.
 
 #### (d) Financial strength
 
@@ -361,15 +386,34 @@ Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/tran
 | H1 2026/27 | EUR 1,230.6m (+45.4%) | EUR 409.0m (33.2%, my arithmetic) | See cash flow below |
 
 - **Cash flow (H1):** operating cash flow EUR 100.4m (vs 209.4m) as working capital and safety inventories rose. Operating FCF was −EUR 11.0m; about EUR 120m at the prior-year factoring level ([ad-hoc-news, 12 Nov 2026](https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565)).
-- **Balance sheet (30 Jun 2026):** net debt EUR 954m (1.9x EBITDA); equity ratio 29.0% (23.9% excluding the hybrid); cash EUR 1,184m.
-- **Refinancing:** the EUR 350m 2022 hybrid was redeemed 22 Oct 2026 and replaced with a hybrid convertible at about half the coupon.
+- **H1 2026/27 per the report itself** (PRIMARY, 5 Nov 2026) ([H1 report](https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668)):
+  - EBIT EUR 226.4m (18.4%); profit EUR 166.2m; ROCE 17.7% (H1 2025/26: 0.3%).
+  - Net capex −EUR 111.0m; FCF from operations −EUR 10.6m (prior year +125.1m).
+  - Inventories rose from EUR 234.9m to 339.5m.
+- **Balance sheet at 30 Sep 2026** (same report):
+  - Net debt EUR 1,333.0m (31 Mar 2026: 1,332.1m). This includes the EUR 350m 2021/22 hybrid, reclassified to current liabilities before its 22 Oct 2026 redemption.
+  - Net debt/EBITDA 2.0 years; net gearing 100.3% (126.7% at Mar 2026).
+  - Equity ratio 23.9% (25.5% pro forma for the redemption).
+  - Liquidity: cash EUR 826.8m, plus financial assets EUR 133.0m and unused credit lines EUR 91.4m.
+  - Other financial commitments EUR 758.0m for Kulim, Chongqing and Leoben (EUR 234.4m at Mar 2026).
+  - A new EUR 400m hybrid convertible was issued in June 2026.
+  - The Q1 figure of EUR 954m net debt reported by Investing.com is not comparable and is superseded.
 - **FY2026/27 guidance** (raised 13 Jun, confirmed 5 Nov): cc revenue +45–55%, EBITDA margin 32–37%, capex EUR 1.0–1.2bn.
-- **Customer concentration:** a few large customers (AMD named); percentages not retrieved.
-- **Footprint:** Chongqing (China), Kulim (Malaysia), Leoben (Austria).
+- **FY2025/26 (Apr 2025–Mar 2026)** (PRIMARY annual financial report) ([AFR 2025/26](https://ats.net/en/download/annual-financial-report-2025-26/?wpdmdl=61790)):
+  - Revenue EUR 1,790.8m (+12.7%; cc +20.5%).
+  - EBITDA EUR 418.0m (prior year EUR 605.7m included a plant-sale gain).
+  - 90.3% of revenue is invoiced in foreign currency, mainly USD.
+- **Customer concentration** (AFR 2025/26): "76.5% of total revenue (previous year: 71.3%) is attributable to the five largest customers… where the range is between 3% and 31%". The largest customer is therefore ~31% of revenue.
+- **Revenue by customer headquarters:**
+  - FY2025/26: Americas EUR 1,453.6m (81%), Germany 158.9m, other Asia 94.3m, China 10.6m.
+  - H1 2026/27: Americas EUR 1,014.9m of 1,230.6m (82.5%), Germany 89.8m, Japan 34.6m, China 33.1m.
+- **Footprint:** PP&E at 30 Sep 2026 — China EUR 1,236.4m, Malaysia EUR 1,232.7m, Austria EUR 724.9m. Plants: Chongqing (China), Kulim (Malaysia), Leoben (Austria).
+- **Third-party TTM to Sep 2026:** ROE 18.5%, ROIC 11.8% ([stockanalysis.com](https://stockanalysis.com/quote/vie/ATS/statistics/)).
 
 #### (e) Resilience
-- The thinnest balance sheet of the key substrate makers.
-- Kulim reaches high-volume manufacturing in 2028/29, exactly when the pause scenario would hit. Customer commitments are not yet fully executed.
+- The thinnest balance sheet of the key substrate makers, with the most concentrated customer base: top five = 76.5% of revenue, largest ~31%, and 81–83% of revenue from Americas-headquartered customers.
+- Kulim reaches high-volume manufacturing in 2028/29, exactly when the pause scenario would hit. Prepayments (EUR 1.2bn contract liabilities) cushion that risk; AT&S itself flags possible "significant impairment charges".
+- Materials: "the global shortage of glass cloth is a critical factor for AT&S… Several supplier qualifications were carried out in the past eighteen months". Some chemicals and composites come from "individual suppliers specified by the customer" (AFR 2025/26).
 - Guidance assumes "no significant deterioration in geopolitical conditions or in the tight supply of certain materials".
 - China (Chongqing) production for US customers carries export-control and tariff exposure. Kulim diversifies this.
 
@@ -404,8 +448,12 @@ Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/tran
   - SKC has sold its chemicals, film and front-end materials units and says there are "no further business units left to sell".
 
 #### (e) Resilience
-- **A 1–2 year slip:** fundable from the earmarked KRW 589.6bn (inference).
-- **A longer slip:** would need new equity, because the parent is loss-making and has no assets left to sell.
+- **Parent's financial capacity** (third-party TTM; Korean data may run only to Jun 2026 because the Q3 quarterly report is filed mid-November) ([stockanalysis.com, fetched 12 Nov 2026](https://stockanalysis.com/quote/krx/011790/statistics/)):
+  - Net debt about KRW 2.23tn (cash 2.07tn vs debt 4.30tn).
+  - TTM free cash flow about −KRW 960bn; TTM net loss about KRW 805bn; ROE −26.7%.
+- **A 1–2 year slip:** fundable from the earmarked KRW 589.6bn (inference). There is little margin beyond that.
+- **A longer slip:** would need new equity or debt, because the parent burns cash, carries net debt and says it has no assets left to sell.
+- **Unresolved inconsistency:** SKC's Q3 2026 release still reports a chemicals segment (revenue KRW 317.3bn). The May 2026 "nothing left to sell" statement may refer to agreed but unclosed sales.
 - **Pause scenario:** most damaging. Customers defer new substrate architectures.
 - **Acceleration scenario:** helps only if >110 mm packages force glass early.
 - **Cross-border:** a US plant is positive for US customers. CHIPS conditions have already cost US$35m.
@@ -442,6 +490,7 @@ Source: PRIMARY deck and segment forecast, 9 Nov 2026 ([deck](https://www.ajinom
 | Land | Kani City, Gifu, acquired for demand "from 2030" (7 May 2026) |
 
 - Customer concentration not disclosed.
+- **Group-level third-party TTM** (food-dominated, so not ABF-specific) ([stockanalysis.com](https://stockanalysis.com/quote/tyo/2802/statistics/)): ROE 20.6%; ROIC 11.7%; net debt ~JPY 342bn; FCF ~JPY 119bn.
 
 #### (e) Resilience
 - **Pause scenario:** low capital intensity and high margins buffer a downturn.
@@ -473,7 +522,11 @@ Source: TrendForce, 6 Aug 2026, reporting the 5 Aug forecast revision.
 | Electronic materials target | Revenue JPY 77.8bn (+27%); OP JPY 28.0bn (+44%; ~36% margin) |
 | Capacity commitment | JPY 80bn for semiconductor materials in Japan and Taiwan |
 
-- H1 results (Nov 2026), balance sheet and customer concentration not retrieved (gap).
+- **Third-party TTM** (period not stated) ([stockanalysis.com](https://stockanalysis.com/quote/tyo/3110/statistics/)):
+  - Revenue JPY 129.3bn; operating margin 21.3%; ROIC 14.3%.
+  - Net income JPY 47.6bn with a 52% pretax margin, so it contains a large one-off gain. That also explains the −52% FY net-profit forecast.
+  - Net debt ~JPY 5.0bn; operating cash flow JPY 9.0bn vs capex JPY 25.9bn, so FCF −JPY 16.9bn: expansion currently exceeds internal cash generation.
+- H1 results (Nov 2026) and customer concentration not retrieved (gap). Nittobo's IR pages load through a script feed that could not be read.
 
 #### (e) Resilience
 - Nittobo is showing price restraint: no further hikes.
@@ -551,7 +604,12 @@ Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https:
   - Ono Cell8 (JPY 280bn) and Gama Cell6 (JPY 370bn total) committed.
   - FY2026 capex JPY 210bn.
   - NVIDIA-funded expansion (PRIMARY).
-- **Funded?** Yes: operating cash flow (Electronics EBITDA margin ~48%), the NVIDIA advance and prepayments, and a single-A balance sheet.
+- **Funded?** Yes:
+  - operating cash flow (Electronics EBITDA margin ~48%);
+  - JPY 199.7bn of customer advances on the balance sheet at Sep 2026;
+  - about JPY 258bn net cash (my arithmetic from the tanshin);
+  - single-A rating.
+- **Ibiden's stated view:** "no technology that can replace leading-edge IC package substrates" (Q&A, 30 Oct 2026; company claim).
 - **Credible successor?** Its "bridge" is what customers are funding through ~2030. It has no disclosed glass-core programme. That is a risk only if glass arrives before 2030, against the weight of evidence.
 - **Timing plausible?** Yes for organic capacity: Cell8 from FY2027, ramp Q1 2028.
 - **What must go right:**
@@ -589,8 +647,8 @@ Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https:
   - AMD plus one other customer agreement (key terms only).
   - Strong margin turnaround (Q2 EBITDA margin 35.8%).
   - Refinanced the hybrid.
-- **Funded?** Through customer commitments still "subject to final negotiation" and leverage: equity ratio 29%, net debt EUR 954m. H1 operating FCF was negative.
-- **Gaps:** no glass or panel successor programme found.
+- **Funded?** Largely by customers: EUR 1.2bn of contract liabilities (prepayments) at Sep 2026, and "all planned investments are supported and financed by long-term customer commitments" (H1 report). Leverage is high: net debt EUR 1.33bn, equity ratio 23.9%, H1 FCF from operations −EUR 10.6m. AT&S itself warns that the "high level of investment… could result in significant impairment charges".
+- **Successor work:** glass-core R&D only. AT&S itself says the glass-core supply chain is not yet at the required quality (AFR 2025/26). No product date. It is building its own core-precursor plant at Kulim.
 - **Timing risk:** high-volume manufacturing in 2028/29 coincides with the pause scenario.
 - **What must go right:** customer commitments get executed, AMD's roadmap volumes hold, and materials stay available.
 
@@ -633,7 +691,7 @@ Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https:
 | 3 (tie) | **Nittobo** | Tightest 2026–27 chokepoint and pricing power. But smaller, with second sources arriving in 2027 and a long-run glass-core substitution risk. |
 | 3 (tie) | **Samsung Electro-Mechanics** | NVIDIA entry; strongest balance sheet and diversification; funded glass option. Division margins not disclosed. **Cannot separate cleanly from Nittobo.** |
 | 5 | **Unimicron** | Scale and NVIDIA reservation; lower margins than Ibiden; partly financed expansion; deep 2024–25 trough (FY2025 OP ~NT$6.7bn). Close to SEMCO on the substrate business alone. |
-| 6 | **AT&S** | Real turnaround and AMD anchor; leveraged (equity ratio 29%), concentrated, negative H1 operating FCF; no glass programme. |
+| 6 | **AT&S** | Real turnaround (H1 ROCE 17.7%, Q2 EBITDA margin 35.8%), an AMD anchor and EUR 1.2bn of customer prepayments. But leveraged (net debt EUR 1.33bn, equity ratio 23.9%), highly concentrated (largest customer ~31%, top five 76.5%), H1 FCF slightly negative, and glass only at R&D stage. |
 | 7 | **SKC / Absolics** | Pre-revenue successor bet with ≥3 slips; parent loss-making; depends on the reliability-test outcome. |
 
 Not ranked (not key; brief evidence only): Nan Ya PCB, Kinsus, LG Innotek, Shennan Circuits, Fastprint, LPKF, the glass makers.
@@ -700,7 +758,7 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
   - Build-up film (Ajinomoto) keeps its share of value, because glass replaces the core, not the build-up layers.
   - Glass-cloth makers (Nittobo) lose the core.
   - The four glass makers gain a materials margin.
-  - The TGV/core processing step is the contested layer. Specialists that integrate it (SEMCO via GlaSSEM; Absolics) keep value. Those that don't (Ibiden, Unimicron, AT&S, with no dated glass plans found) would buy cores from glass or display players and keep build-up and assembly value.
+  - The TGV/core processing step is the contested layer. Specialists that integrate it (SEMCO via GlaSSEM; Absolics) keep value. Those that don't would buy cores from glass or display players and keep build-up and assembly value. Ibiden and Unimicron have no dated glass plans found. AT&S has glass-core R&D and says the glass-core supply chain "has not yet been established in the required quality".
 - **Integrated giants:**
   - TSMC captures panel-interposer value.
   - Intel appears to be monetising glass IP rather than capturing manufacturing value.

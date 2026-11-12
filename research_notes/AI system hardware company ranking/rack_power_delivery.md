@@ -2,7 +2,12 @@
 
 Scope: power shelves and supplies, 800 VDC and +/-400 VDC architectures, sidecar power racks and solid-state transformers (SSTs) where they enter the rack row, busbars, battery-backup units (BBUs) and capacitor/supercapacitor units, conversion down to the chip (including vertical power delivery, VPD), and the power semiconductors and passives behind them. Quality only — no share prices, multiples or market capitalisation are used. Vertiv is covered for its power business only.
 
-Method note: research ran on 12 November 2026. The shared web-search budget for this turn was exhausted part-way through (tool notice). After that point only pages already surfaced by earlier searches were fetched. Coverage of AcBel, Chicony Power, FSP, Advanced Energy, Flex financials, Huawei Digital Power, Kehua, Japanese and Korean passives and power-semiconductor makers, India, and third-party market-share data (Dell'Oro, Omdia) is therefore thin. Section (7) lists these gaps. Labels: "company claim, unconfirmed" = no outside party confirms; "secondary" = trade press or analyst; "search summary" = seen only in a search-result summary, page not opened.
+Method note: research ran on 12 November 2026. The shared web-search budget for this turn was exhausted part-way through (tool notice), and the coordinator then confirmed that the Exa and Firecrawl search tools were also out of credits. After that point only direct page fetches were used:
+- pages already surfaced by earlier searches;
+- SEC EDGAR filings (MPS FY2025 10-K, ADI 10-Q for the quarter to 1 Aug 2026, Eaton 10-Q for Q3 2026);
+- stockanalysis.com financial-statement and statistics pages. These aggregate company filings (S&P Global data). They were used only for revenue, margins, cash flow, returns and net cash, never for valuation, and are labelled "stockanalysis, accessed 12 Nov 2026".
+
+Coverage of FSP, Flex financials, Huawei Digital Power, Kehua, Japanese and Korean passives and power-semiconductor makers, India, and third-party market-share data (Dell'Oro, Omdia) is therefore thin. Section (7) lists these gaps. Labels: "company claim, unconfirmed" = no outside party confirms; "secondary" = trade press or analyst; "search summary" = seen only in a search-result summary, page not opened.
 
 ## (1) Segment map
 
@@ -25,12 +30,12 @@ Tickers below are from general reference and were not re-checked against exchang
 |---|---|---|---|---|
 | Delta Electronics | Taiwan | TWSE 2308; listed subsidiary Delta Electronics (Thailand), SET: DELTA | AI-server PSUs and power shelves, BBUs, 800 VDC in-row power rack, MVAC-to-800 VDC SST, busbars, DC-DC modules | **KEY.** Estimated ~70% share of Blackwell AI-server PSUs ([KGI, 1 Jul 2025](https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/power-supply-industry_01072025.pdf), analyst estimate). At GTC (Mar 2026) it showed a 660 kW 800 VDC in-row power rack with 480 kW of BBUs, plus an SST ([Power Electronics News, 19 Mar 2026](https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/)). AI and data-centre products are ~50% of revenue (Q3 2026 call, [BigGo, 29 Oct 2026](https://finance.biggo.com/news/44f1e3fc-db83-4b4e-85f5-474840dae41b)). |
 | Lite-On Technology | Taiwan | TWSE 2301 | PSUs (8.5 kW ASIC PSU), 110 kW Vera Rubin shelf, AMD Helios 42-inch shelf, BBUs, 800 VDC power rack, DC-DC bricks | **KEY.** Clear number two in PSUs. The 800 VDC rack is in final validation in Q4 2026 with shipments from Q1 2027 (company, [Fugle call memo, 30 Oct 2026](https://blog.fugle.tw/post/earnings-call-2301-2026-10-30)). NVIDIA names LITEON as co-designer of the GB300 power shelf ([NVIDIA blog](https://developer.nvidia.com/blog/how-new-gb300-nvl72-features-provide-steady-power-for-ai/), search summary). |
-| AcBel Polytech | Taiwan | TWSE 6282 | Server PSUs | On the starting list. Not on NVIDIA's 800 VDC list ([NVIDIA](https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/)). No 2026 evidence collected (search budget exhausted). |
-| Chicony Power | Taiwan | TWSE 6412 | PSUs and adapters, server power | Not on NVIDIA's list. No 2026 evidence collected. |
+| AcBel Polytech | Taiwan | TWSE 6282 | Server PSUs | Left out of the key set. Not on NVIDIA's 800 VDC list ([NVIDIA](https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/)). FY2025 revenue NT$31.7bn (+0.1%), gross margin 25.8%, operating margin 2.3%. Twelve months to Sep 2026: revenue NT$38.1bn (+24.2%), operating margin 2.8% ([stockanalysis, accessed 12 Nov 2026](https://stockanalysis.com/quote/tpe/6282/financials/)). Growing again but thin-margin; AI share not verified. |
+| Chicony Power | Taiwan | TWSE 6412 | PSUs and adapters, server power | Left out. Not on NVIDIA's list. FY2025 revenue NT$34.5bn (−7.3%), gross margin 16.9%, operating margin 6.5%. Twelve months to Sep 2026: revenue NT$31.5bn (−13.7%), operating margin 3.2% ([stockanalysis](https://stockanalysis.com/quote/tpe/6412/financials/)). No sign of an AI-power ramp. |
 | FSP Group | Taiwan | TWSE 3015 | PSUs | Named only by low-quality market-report sites; not verified. |
 | Flex | US / Singapore | Nasdaq FLEX | Power shelves (33 kW for Blackwell, Aug 2025), embedded power | On NVIDIA's list. KGI calls it an "emerging supplier with vertical integration" ([KGI, Jul 2025](https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/power-supply-industry_01072025.pdf); [Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/)). No 2026 financials collected. |
-| Advanced Energy | US | Nasdaq AEIS | Data-centre power supplies | On the starting list; not on NVIDIA's list. No evidence collected. |
-| Megmeet | China | SZSE 002851 | PSUs; 33/110 kW shelves; 15 kW supercapacitor shelf; 16.5 kW BBU shelf; 800 V / 570 kW HVDC side rack | The only mainland-Chinese firm on NVIDIA's power-system-components list ([NVIDIA](https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/)). H1 2026 power revenue was RMB1.841bn (+60.9%) ([ifeng, 1 Sep 2026](https://finance.ifeng.com/c/8w4hMGJVOYE)). It showed an 800 VDC "power centre" and SST architecture at OCP 2026 ([Ted Yu, 3 Nov 2026](https://ytyuted.substack.com/p/ep69-ocp-2026-ai)). Its claim to be the first Chinese firm certified for NVIDIA 800 V is a company/press claim, unconfirmed. |
+| Advanced Energy | US | Nasdaq AEIS | Data-centre power supplies (server and rack PSUs) | Not on NVIDIA's list, yet a real AI-power grower. Q3 2026 revenue $696.4m (+50.3% YoY), gross margin 41.8%, operating margin 20.7%. Data Center Computing revenue $256.2m vs $171.6m a year earlier (+49%) ([stockanalysis quarterly, accessed 12 Nov 2026](https://stockanalysis.com/stocks/aeis/financials/?p=quarterly)). Customers and 800 VDC plans not verified. |
+| Megmeet | China | SZSE 002851 | PSUs; 33/110 kW shelves; 15 kW supercapacitor shelf; 16.5 kW BBU shelf; 800 V / 570 kW HVDC side rack | The only mainland-Chinese firm on NVIDIA's power-system-components list ([NVIDIA](https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/)). H1 2026 power revenue was RMB1.841bn (+60.9%) ([ifeng, 1 Sep 2026](https://finance.ifeng.com/c/8w4hMGJVOYE)). It showed an 800 VDC "power centre" and SST architecture at OCP 2026 ([Ted Yu, 3 Nov 2026](https://ytyuted.substack.com/p/ep69-ocp-2026-ai)). Its claim to be the first Chinese firm certified for NVIDIA 800 V is a company/press claim, unconfirmed. Group FY2025 revenue RMB9.40bn (+15.1%), gross margin 21.7%, operating margin 1.5%. Twelve months to Sep 2026: revenue RMB11.65bn (+28.6%), operating margin 1.8% ([stockanalysis](https://stockanalysis.com/quote/she/002851/financials/)). AI volume has not yet lifted group margins. |
 | Kehua Data | China | SZSE 002335 | UPS, HVDC | Brokers name it as a UPS-to-HVDC player ([Sohu, May 2026](https://m.sohu.com/a/1028510124_122014422), search summary). No 2026 numbers or customer evidence collected. |
 | Huawei Digital Power | China | Private (Huawei unit) | DC power, UPS, HVDC | Not on NVIDIA's list. Nothing collected (search budget). |
 | Ourmate (Oulutong) / China Greatwall | China | SZSE 300870 / SZSE 000066 | Server PSUs | Named as Megmeet's domestic rivals; Ourmate has Mexico and Vietnam bases ([ifeng, 1 Sep 2026](https://finance.ifeng.com/c/8w4hMGJVOYE)). |
@@ -70,13 +75,13 @@ Tickers below are from general reference and were not re-checked against exchang
 | Monolithic Power Systems | US | Nasdaq MPWR | GPU/ASIC multiphase controllers, power stages and modules; 800 V GaN and SiC | **KEY.** Enterprise Data revenue $506.7m in Q3 2026, +164.6% ([8-K, 29 Oct 2026](https://www.sec.gov/Archives/edgar/data/0001280452/000162828026068202/mpwr-20260930xexx991.htm)). |
 | Vicor | US | Nasdaq VICR | Factorised power modules; VPD; patents enforced through the ITC | Near-key. 68.3% gross margin and a large royalty stream ([Q3 2026 results](https://www.nasdaq.com/press-release/vicor-corporation-reports-results-third-quarter-ended-september-30-2026-2026-10-20)). |
 | Texas Instruments | US | Nasdaq TXN | 800 V-to-6 V GaN IBC (97.6% peak), 30 kW AC-DC PSU, 800 V hot-swap | On NVIDIA's list; showed this at GTC 2026 ([Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/); [TI PR, 16 Mar 2026](https://www.ti.com/en-us/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia)). |
-| Analog Devices | US | Nasdaq ADI | Power management; buying Empower (VPD) | On NVIDIA's list. Agreed to acquire Empower on 19 May 2026 ([ADI PR](https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html); page returned 503, so price and close not verified). |
+| Analog Devices | US | Nasdaq ADI | Power management; now owns Empower (IVR/VPD) | On NVIDIA's list. Announced the Empower deal on 19 May 2026 ([ADI PR](https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html)) and completed it on 7 Jul 2026 for ~$1.5bn ([ADI 10-Q for the quarter to 1 Aug 2026, filed 19 Aug 2026](https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm), primary). |
 | STMicroelectronics | Switzerland / France / Italy | Euronext Paris and NYSE STM | Reference designs: 800 V-to-6 V (20 kW, 96.5%) and 800 V-to-12 V (6 kW, 97.5%) | On NVIDIA's list ([PEN](https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/)). |
 | onsemi / Power Integrations / AOS / Renesas / ROHM / Richtek (MediaTek unit) | US / US / US / Japan / Japan / Taiwan | ON / POWI / AOSL / TSE 6723 / TSE 6963 / private | SiC, GaN, MOSFETs, power stages, controllers | All on NVIDIA's silicon list; nothing further collected (search budget). |
 | Navitas | US | Nasdaq NVTS | GaN and SiC | On NVIDIA's list. Q3 2026 revenue $14.0m. Has an 800 V reference design with Microchip ([GlobeNewswire, 3 Nov 2026](https://www.globenewswire.com/news-release/2026/11/03/3394777/0/en/navitas-semiconductor-announces-third-quarter-2026-financial-results.html), search summary). |
 | Innoscience | China | HKEX 2577 | GaN | The only mainland-Chinese name on NVIDIA's silicon list. H1 2026 revenue RMB833.6m ([HKEX interim report, 18 Sep 2026](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0918/2026091800446_c.pdf); [Chongdiantou](https://www.chongdiantou.com/archives/1788406187582.html)). |
 | EPC | US | Private | GaN; 800 V-to-12.5 V converter (6 kW, >97%) | On NVIDIA's list ([PEN](https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/)). |
-| Empower Semiconductor | US | Private (being bought by ADI) | Integrated voltage regulators (IVR) and VPD (Crescendo); embedded silicon capacitors | Series D of more than $140m (22 Sep 2025); collaboration with Marvell (Jun 2025). At APEC 2026 it showed 16 regulators delivering ~1,000 A at 0.75 V ([Empower press page](https://www.empowersemi.com/category/press-release/); [APEC PR](https://www.globenewswire.com/news-release/2026/03/10/3252703/0/en/Empower-Semiconductor-Showcases-Vertical-Power-Delivery-Innovations-at-APEC-2026.html)). |
+| Empower Semiconductor | US | Acquired by ADI on 7 Jul 2026 for ~$1.5bn ([ADI 10-Q](https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm)) | Integrated voltage regulators (IVR) and VPD (Crescendo); embedded silicon capacitors | Series D of more than $140m (22 Sep 2025); collaboration with Marvell (Jun 2025). At APEC 2026 it showed 16 regulators delivering ~1,000 A at 0.75 V ([Empower press page](https://www.empowersemi.com/category/press-release/); [APEC PR](https://www.globenewswire.com/news-release/2026/03/10/3252703/0/en/Empower-Semiconductor-Showcases-Vertical-Power-Delivery-Innovations-at-APEC-2026.html)). |
 | Wolfspeed | US | NYSE (post-2025 restructuring; ticker not re-verified) | SiC | Not on NVIDIA's Oct 2025 list. Named as under pressure after the Kyber-delay report ([KuCoin](https://www.kucoin.com/news/flash/nvidia-kyber-delayed-to-2028-supply-chain-winners-and-losers-emerge)). |
 | Microchip | US | Nasdaq MCHP | SiC | Partner on Navitas's 800 V reference design ([Navitas Q3](https://www.globenewswire.com/news-release/2026/11/03/3394777/0/en/navitas-semiconductor-announces-third-quarter-2026-financial-results.html)). |
 
@@ -105,17 +110,29 @@ Tickers below are from general reference and were not re-checked against exchang
 
 ### Inferences
 - NVIDIA's 2025 list is weighted to Taiwan (Delta, Lite-On, BizLink, Richtek), the US and Europe. China has Megmeet and Innoscience; Japan has ROHM, Renesas and Mitsubishi Electric; Korea and India have none. Korean suppliers' exposure comes through components such as MLCCs and cells, not qualified rack systems.
-- Three groups on the starting list are not on NVIDIA's list: AcBel, Chicony Power and Advanced Energy. Their exposure is more likely to run through ASIC and hyperscaler-specific designs or legacy servers (inference; not verified).
+- Three groups on the starting list are not on NVIDIA's list: AcBel, Chicony Power and Advanced Energy.
+  - Being off the list does not mean being out of AI power: Advanced Energy's Data Center Computing revenue grew ~49% YoY in Q3 2026.
+  - AcBel's thin margins (~2–3% operating) and Chicony Power's falling revenue and margins suggest neither is capturing much of the upswing (inference from filings-derived data).
 
 ### Gaps
 - No third-party shares (Dell'Oro, Omdia, TrendForce full reports) for BBUs, vertical power modules, or controllers and power stages. The only PSU share figure is KGI's July 2025 estimate.
 - Home country and role of "Lead Wealth" not verified.
-- AcBel, Chicony Power, FSP, Advanced Energy, Flex, Huawei Digital Power, Kehua, LS Electric, Fuji Electric, LS Materials, Nippon Chemi-Con, Samsung SDI and Yageo: no 2026 evidence collected.
+- FSP, Flex, Huawei Digital Power, Kehua, LS Electric, Fuji Electric, LS Materials, Nippon Chemi-Con, Samsung SDI and Yageo: no 2026 evidence collected.
+- AcBel, Chicony Power, Advanced Energy and Megmeet: filings-derived financials only, with no customer or 800 VDC evidence.
 
 ## (2) Evidence on tests (a)–(e) for the key companies
 
 ### Takeaway
-Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS), Infineon, Eaton, Schneider and Vertiv (power only), with Vicor as near-key. None owns a "judge" outright. The gates are NVIDIA's MGX reference and partner lists, the hyperscalers' OCP specs, and UL certification, and all of them are owned by customers or third parties. Moats rest on physical constraints: manufacturing scale and qualification slots (Delta, Lite-On), fab and process capacity (Infineon), product-development know-how at the chip (MPS), medium-voltage equipment capacity plus UL-certified SSTs (Eaton), and ITC-enforced patents (Vicor). Revenue is overwhelmingly one-off hardware. The exceptions are Vicor's royalties (~34% of Q3 2026 revenue), services at the electrical groups, and capacity-reservation deals at Infineon. Financial strength is best at MPS (55.7% gross margin, net cash) and Eaton (25.3% segment margin, ~$1bn quarterly free cash flow, but ~$19bn net debt after Boyd). Delta and Lite-On grow fastest in absolute AI hardware but at mid-teens operating margins.
+Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS), Infineon, Eaton, Schneider and Vertiv (power only), with Vicor as near-key. None owns a "judge" outright. The gates are NVIDIA's MGX reference and partner lists, the hyperscalers' OCP specs, and UL certification, and all of them are owned by customers or third parties. Moats rest on physical constraints: manufacturing scale and qualification slots (Delta, Lite-On), fab and process capacity (Infineon), product-development know-how at the chip (MPS), medium-voltage equipment capacity plus UL-certified SSTs (Eaton), and ITC-enforced patents (Vicor). Revenue is overwhelmingly one-off hardware. The exceptions are Vicor's royalties (~34% of Q3 2026 revenue), services at the electrical groups, and capacity-reservation deals at Infineon. On financial strength (twelve months to Sep 2026, filings-derived):
+
+| Company | Strengths | Weaknesses |
+|---|---|---|
+| MPS | 55.7% gross margin, ROIC ~33%, net cash | — |
+| Delta | ROIC ~35%, net cash ~NT$98bn, free cash flow NT$66bn | Mid-teens operating margins |
+| Eaton | 25.3% segment margin, $3.8bn free cash flow | ~$20bn net debt; ROIC ~11% after Boyd |
+| Schneider | ROIC ~14%, €6.2bn free cash flow | — |
+| Infineon | — | Weakest on returns (ROIC 7.2%), net debt |
+| Lite-On | High ROIC (~30%) | Negative trailing free cash flow during its inventory and capex build |
 
 ### Cited Findings
 
@@ -142,7 +159,15 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
   - Revenue NT$197.059bn, +31% YoY and +8% QoQ.
   - Net income NT$23.495bn; EPS NT$9.04 ([Delta release via Gulf Oil & Gas](https://www.gulfoilandgas.com/webpro1/main/mainnews.asp?id=1149042)).
   - Gross margin 34.1%, down 1.5 pp QoQ, after a ~NT$3.9bn inventory write-down (1.7% of revenue). Operating margin 16.6% ([BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29)).
-- **First nine months of 2026:** revenue NT$539.7bn (+37%), already above full-year 2025. Gross margin 35.5% (34.1% a year earlier). Net profit NT$69.19bn (+62%) ([BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29)).
+- **First nine months of 2026:** revenue NT$539.7bn (+37%); gross margin 35.5% (34.1% a year earlier); net profit NT$69.19bn (+62%) ([BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29)).
+  - Correction: BigGo says nine-month revenue was "above full-year 2025". FY2025 revenue was NT$554.9bn, so it is nine-month *net profit* that exceeds FY2025 net income of NT$60.1bn ([stockanalysis, accessed 12 Nov 2026](https://stockanalysis.com/quote/tpe/2308/financials/)).
+- **FY2025:** revenue NT$554.9bn (+31.8%; FY2024 NT$421.1bn, +5.0%); gross margin 34.3%; operating margin 15.2% (FY2024 11.3%); net income NT$60.1bn ([stockanalysis](https://stockanalysis.com/quote/tpe/2308/financials/)).
+- **Twelve months to Sep 2026** ([stockanalysis statistics](https://stockanalysis.com/quote/tpe/2308/statistics/), aggregated from filings):
+  - Revenue NT$701.3bn.
+  - Operating cash flow NT$128.3bn; capex NT$61.9bn; free cash flow NT$66.5bn (9.5% of revenue).
+  - ROIC 34.9%; ROE 28.5%.
+  - Cash NT$213.2bn against debt NT$115.1bn: net cash ~NT$98.1bn.
+  - Employees: 85,684.
 - **Segments, Q3 2026:**
   - Power & Components: NT$105.93bn (+40%), profit NT$19.92bn.
   - Infrastructure: NT$65.88bn (+25%), profit NT$12.07bn.
@@ -150,7 +175,7 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
   - Mobility: NT$9.07bn, at a loss ([BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29)).
 - **AI exposure:** AI and data-centre ~50% of revenue; AI power ~25%; liquid cooling ~13% ([BigGo](https://finance.biggo.com/news/44f1e3fc-db83-4b4e-85f5-474840dae41b)).
 - **Thai listed subsidiary, Q3 2026:** sales THB75.8bn (+42.4%), gross margin 27.3% ([Thailand Business News](https://www.thailand-business-news.com/business/336934-delta-thailand-q3-sales-surge-42-4-on-ai-demand-profit-misses-estimates), search summary).
-- **Not collected:** free cash flow, capex, net cash, return on capital, and customer and country concentration.
+- **Not collected:** customer concentration (largest customer, top five) and revenue by country.
 
 **(e) Resilience**
 - Q3 came in "a bit less than our original expectations" because of component mismatches and data-centre build delays (CFO). Raw materials are up ~2% this year; price increases take effect partly in Q4 and partly in Q1 2027 ([BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29)).
@@ -188,7 +213,13 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
 - **Capex:** 2026 raised to NT$19.7bn from NT$18bn (NT$13.1bn spent in the first nine months), and higher again in 2027.
 - **Inventory:** +NT$11bn QoQ, described as strategic.
 - **Financing:** NT$36bn sustainability-linked syndicated loan (Oct 2026).
-- Sources: [Fugle](https://blog.fugle.tw/post/earnings-call-2301-2026-10-30); [cnyes](https://news.cnyes.com/news/id/6641958); [CNA](https://www.cna.com.tw/news/afe/202610300203.aspx). Net cash and customer concentration not collected.
+- Sources: [Fugle](https://blog.fugle.tw/post/earnings-call-2301-2026-10-30); [cnyes](https://news.cnyes.com/news/id/6641958); [CNA](https://www.cna.com.tw/news/afe/202610300203.aspx).
+- **FY2025:** revenue NT$166.1bn (+21.1%, after −14.5% in 2023 and −7.6% in 2024); gross margin 22.9%; operating margin 10.1%; net income NT$15.1bn ([stockanalysis, accessed 12 Nov 2026](https://stockanalysis.com/quote/tpe/2301/financials/)).
+- **Twelve months to Sep 2026** ([stockanalysis statistics](https://stockanalysis.com/quote/tpe/2301/statistics/)):
+  - Operating cash flow NT$7.3bn; capex NT$15.1bn; free cash flow **−NT$7.8bn**, reflecting the inventory build and capex.
+  - ROIC ~30.0%, against the company's 34%.
+  - Net cash ~NT$26.2bn (cash NT$74.4bn, debt NT$48.2bn).
+- **Not collected:** customer concentration.
 
 **(e) Resilience**
 - New capacity: a Vietnam plant (Quang Ninh, opening Nov 2026), Kaohsiung phase 2 (Dec 2026) and McKinney, Texas (Q2 2027). Overseas capacity doubles, which management says covers 3–5 years of demand.
@@ -205,6 +236,7 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
 
 - Customers choose between GaN and SiC. The CEO says a GaN product needs about 50 million units shipped before it is proven.
 - The constraint MPS holds is speed of product development (more than 6,000 products) within a fabless model. Capacity supports more than $6bn of annual revenue, with a path to $8bn by H2 2027 (company).
+- Process know-how: its 10-K says that, unlike most fabless firms that use foundry-standard processes, MPS has "developed our own proprietary process and packaging technologies". Its largest test facilities are in Chengdu, China ([FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1280452/000143774926006113/mpwr20251231_10k.htm)).
 - Sources: [Q3 call, 30 Oct 2026](https://www.fool.com/earnings/call-transcripts/2026/10/30/monolithic-power-systems-mpwr-q3-2026-earnings-call-transcript/); [8-K](https://www.sec.gov/Archives/edgar/data/0001280452/000162828026068202/mpwr-20260930xexx991.htm).
 
 **(b) Lead:** reported Enterprise Data revenue rose 164.6% YoY. The CFO says "most of the industry has already moved to modules" ([call](https://www.fool.com/earnings/call-transcripts/2026/10/30/monolithic-power-systems-mpwr-q3-2026-earnings-call-transcript/)). No third-party share data for GPU controllers or power stages was found.
@@ -229,7 +261,23 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
 - **First nine months of 2026:** revenue $2,987.2m (+46%); non-GAAP operating margin 37.5%.
 - **Q4 2026 guidance:** revenue $1,315–1,385m.
 - **Enterprise Data outlook:** the CFO is "comfortable with a floor of 150%" YoY growth ([call](https://www.fool.com/earnings/call-transcripts/2026/10/30/monolithic-power-systems-mpwr-q3-2026-earnings-call-transcript/)).
-- **Not collected:** customer and country concentration (the 10-K was not reached).
+- **FY2025 10-K** (filed 27 Feb 2026, primary) ([10-K](https://www.sec.gov/Archives/edgar/data/1280452/000143774926006113/mpwr20251231_10k.htm)):
+  - Revenue $2,790.5m (+26.4% from $2,207.1m).
+  - Channel concentration: 85% of sales go through distribution. The top three customers, all distributors, took 54% of revenue: 26%, 18% and 10% (61% in 2024 and 55% in 2023). Distributor A held 35% of receivables. End-customer concentration (for example NVIDIA or a hyperscaler) is not disclosed.
+  - Revenue by region, FY2025, as reported (likely ship-to):
+
+    | Region | Revenue | Share |
+    |---|---|---|
+    | China | $1,544.3m | 55% |
+    | Taiwan | $550.1m | 20% |
+    | South Korea | $252.7m | 9% |
+    | Southeast Asia | $148.1m | 5% |
+    | Europe | $113.5m | 4% |
+    | US | $96.7m | 3.5% |
+    | Japan | $84.4m | 3% |
+
+  - 92% of revenue comes from customers in Asia.
+- **Twelve months to Sep 2026** ([stockanalysis statistics, accessed 12 Nov 2026](https://stockanalysis.com/stocks/mpwr/statistics/)): free cash flow $609m (16.3% of revenue) after $264m of capex; ROIC 33.3%; net cash ~$1.07bn.
 
 **(e) Resilience**
 - End markets are diversified (Automotive 15%, Communications 16%).
@@ -269,7 +317,13 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
   - Capex €3.0–3.5bn; adjusted free cash flow ~€2.2bn.
   - Segment result margin in the mid-20s %.
 - **Manufacturing:** 13 fab sites; outsourcing share heading to 50% by FY27.
-- Sources: [Power Semiconductors Weekly](https://www.powersemiconductorsweekly.com/2026/11/10/infineon-reports-12-revenue-growth-to-e16-35-billion-in-fy2026-forecasts-e20-billion-for-fy2027-on-strong-ai-data-center-demand/); [Investing.com](https://in.investing.com/news/stock-market-news/infineon-fy26-slides-ai-boom-drives-record-results-20bn-fy27-target-93CH-5692954). Net cash and regional split not collected.
+- Sources: [Power Semiconductors Weekly](https://www.powersemiconductorsweekly.com/2026/11/10/infineon-reports-12-revenue-growth-to-e16-35-billion-in-fy2026-forecasts-e20-billion-for-fy2027-on-strong-ai-data-center-demand/); [Investing.com](https://in.investing.com/news/stock-market-news/infineon-fy26-slides-ai-boom-drives-record-results-20bn-fy27-target-93CH-5692954).
+- **FY2026 on stockanalysis's definitions** (IFRS, unadjusted; [stockanalysis statistics, accessed 12 Nov 2026](https://stockanalysis.com/quote/etr/IFX/statistics/)):
+  - Gross margin 40.4% (IFRS reported; Infineon's adjusted gross margin is higher); operating margin 13.5%.
+  - Operating cash flow €4.16bn; capex €2.18bn; free cash flow €1.98bn.
+  - ROIC 7.2%.
+  - Cash €2.14bn against debt €7.33bn: net debt ~€5.2bn. This may exclude Infineon's short-term financial investments, which its own "gross cash" includes; not verified.
+- **Not collected:** regional split.
 
 **(e) Resilience:** automotive is still 48% of revenue, which diversifies away from AI but adds its own cycle. Returns on capital are low after the FY24–25 downturn (ROCE 7.2%). Capex rises to €3.0–3.5bn ([Investing.com](https://in.investing.com/news/stock-market-news/infineon-fy26-slides-ai-boom-drives-record-results-20bn-fy27-target-93CH-5692954)). Exposure to gallium export controls was not verified.
 
@@ -278,7 +332,7 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
 - **BRIDGE:** AC UPS, switchgear, busway and PDUs.
 - **SUCCESSOR:**
   - 800 VDC reference architecture (Oct 2025) ([Converge Digest](https://convergedigest.com/ocp-800-vdc-standard-megawatt-ai-racks/)). No product shipping date was given on the Q3 2026 call.
-  - Medium-voltage SST from Resilient Power (bought Aug 2025). The 15 kV / 2 MW unit passed UL testing; there are 10 SST pilots, and Eaton expects "multiple 15-kilovolt projects to ship during the year" (company) ([Q3 call, 3 Nov 2026](https://finance.yahoo.com/markets/stocks/articles/eaton-q3-earnings-call-highlights-051410047.html)).
+  - Medium-voltage SST from Resilient Power, bought 6 Aug 2025 for $86m: $55m cash plus ~$31m contingent on 2025–28 revenue and technology milestones ([Eaton 10-Q Q3 2026](https://www.sec.gov/Archives/edgar/data/1551182/000155118226000040/etn-20260930.htm), primary). The small price means Eaton bought an early-stage technology, not a revenue stream. The 15 kV / 2 MW unit passed UL testing; there are 10 SST pilots, and Eaton expects "multiple 15-kilovolt projects to ship during the year" (company) ([Q3 call, 3 Nov 2026](https://finance.yahoo.com/markets/stocks/articles/eaton-q3-earnings-call-highlights-051410047.html)).
   - "Beam Rubin DSX" platform co-designed with NVIDIA (GTC 2026) ([PEN](https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/)).
 - **Physical constraint:** medium-voltage equipment capacity. 18 of 25 expansion projects are complete, and a larger three-phase transformer plant is due in H1 2027 ([call](https://finance.yahoo.com/markets/stocks/articles/eaton-q3-earnings-call-highlights-051410047.html)).
 
@@ -304,7 +358,8 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
   - FY2026 guidance: organic growth 13–15%; segment margin 24.1–24.5%.
   - Balance sheet at 30 Sep 2026: total debt $20,106m against cash plus short-term investments of $818m. That is ~$19.3bn of net debt (my calculation, after the $9.55bn Boyd purchase on 12 Mar 2026).
   - Source: [8-K](https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm).
-- **Not collected:** data-centre share of group sales, customer concentration and geography.
+- **Twelve months to Sep 2026** ([stockanalysis statistics, accessed 12 Nov 2026](https://stockanalysis.com/stocks/etn/statistics/)): revenue $31.98bn; operating cash flow $4.91bn; capex $1.11bn; free cash flow $3.80bn; ROIC 11.0% (diluted by Boyd and Fibrebond goodwill); net debt ~$20.1bn.
+- **Not collected:** data-centre share of group sales (the Q3 10-Q gives none), customer concentration and geography.
 
 **(e) Resilience**
 - Electrical book-to-bill is 1.2 on a rolling 12-month basis ([8-K](https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm)).
@@ -324,7 +379,11 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
 - **Q3 2026:** revenue €11.46bn (+16.9% organic). Energy Management €9.6bn (+19% organic); Industrial Automation €1.8bn (+8%) ([Reuters via MarketScreener, 16 Oct 2026](https://www.marketscreener.com/news/schneider-electric-raises-2026-targets-again-on-booming-data-centre-demand-ce785cdad98cf322)).
 - **FY2026 guidance:** organic growth 12–14%; adjusted EBITA margin about 19.7–19.9% ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-schneider-electric-posts-record-q3-2026-revenue-93CH-4953279)).
 - **Data-centre exposure:** data centres and networks were ~30% of exposure at end-2025, with direct data centres ~26% ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-schneider-electric-posts-record-q3-2026-revenue-93CH-4953279)).
-- **Not collected:** FY2025 annual results, free cash flow and net debt.
+- **Twelve months to Sep 2026** ([stockanalysis statistics, accessed 12 Nov 2026](https://stockanalysis.com/quote/epa/SU/statistics/), derived from filings):
+  - Revenue €42.0bn; operating margin 17.9%.
+  - Operating cash flow €7.24bn; capex €1.05bn; free cash flow €6.19bn (14.7% of revenue).
+  - ROIC 14.0%; net debt ~€16.3bn.
+- **Not collected:** FY2025 annual report.
 
 **(e) Resilience**
 - Q3 organic growth by region: North America +20%, China & East Asia +26% (the same call also says 32%, which conflicts), Europe +9%.
@@ -355,7 +414,7 @@ Seven key companies were assessed: Delta, Lite-On, Monolithic Power Systems (MPS
   - Source: [Q3 call](https://www.investing.com/news/transcripts/earnings-call-transcript-vicor-tops-q3-2026-estimates-as-ai-demand-lifts-sales-93CH-4960190).
 - **(b) Lead:** third-party adjudication. The ITC's final determination of 13 Feb 2025 found Vicor's patents valid and infringed ([Vicor](https://www.vicorpower.com/press-room/itc-bars-importation-of-power-modules), search summary). Vicor granted its first pure VPD licence to an unnamed "leading AI OEM" (company). No hyperscaler licence is confirmed.
 - **(c) Revenue model:** Q3 2026 royalties were $66.6m of $197.1m revenue (~34%). The Q4 royalty floor is $43m, and the CFO now describes royalties as recurring. Legal costs run at ~20% of royalties ([call](https://www.investing.com/news/transcripts/earnings-call-transcript-vicor-tops-q3-2026-estimates-as-ai-demand-lifts-sales-93CH-4960190)).
-- **(d) Financial strength (Q3 2026):** revenue $197.1m (+78.5%); gross margin 68.3%; net income $63.3m; cash $513.1m; backlog $406m (+166%) ([results](https://www.nasdaq.com/press-release/vicor-corporation-reports-results-third-quarter-ended-september-30-2026-2026-10-20), search summary).
+- **(d) Financial strength (Q3 2026):** revenue $197.1m (+78.5%); gross margin 68.3%; net income $63.3m; cash $513.1m; backlog $406m (+166%) ([results](https://www.nasdaq.com/press-release/vicor-corporation-reports-results-third-quarter-ended-september-30-2026-2026-10-20), search summary). Twelve months to Sep 2026: revenue $560.7m; gross margin 60.6%; operating margin 26.1%; ROIC 37.1%; free cash flow $50.8m after $45.2m of capex; net cash ~$506m ([stockanalysis, accessed 12 Nov 2026](https://stockanalysis.com/stocks/vicr/statistics/)).
 - **(e) Resilience:**
   - Vicor says many customers are single-source with it. Fab 2 equipment starts in Q2 2027 ([call](https://www.investing.com/news/transcripts/earnings-call-transcript-vicor-tops-q3-2026-estimates-as-ai-demand-lifts-sales-93CH-4960190)).
   - The new ITC case is typically 12–16 months ([Taipei Times](https://www.taipeitimes.com/News/biz/archives/2026/10/12/2003865784)).
@@ -366,9 +425,9 @@ Each company's exposure under the three AI-spending scenarios to 2030 (inference
 
 | Company | Steady growth (~55%) | Financing-led pause around 2028 (~25%) | Faster acceleration (~20%) |
 |---|---|---|---|
-| Delta | Best placed of the rack makers: content per rack rises from ~$35k (GB200) to more than $150k (VR200) (KGI) | Most exposed, with ~50% of revenue AI-linked, hardware-only sales, inventory already building in Q3 2026, and no recurring revenue | Capacity and component supply bind first |
-| Lite-On | Same pattern as Delta | Similar to Delta, with smaller scale and lower gross margin (~26% vs ~34–35%), but AI is only ~30% of revenue | Same capacity limits |
-| MPS | Grows fastest: content per GPU rises and VPD adds content | Net cash and a fabless model (no fab underutilisation) cushion it | Upside capped by foundry capacity (company says capacity supports >$6bn) |
+| Delta | Best placed of the rack makers: content per rack rises from ~$35k (GB200) to more than $150k (VR200) (KGI) | Most exposed, with ~50% of revenue AI-linked, hardware-only sales, inventory already building in Q3 2026, and no recurring revenue; net cash of ~NT$98bn cushions the balance sheet | Capacity and component supply bind first |
+| Lite-On | Same pattern as Delta | Similar to Delta, with smaller scale and lower gross margin (~26% vs ~34–35%), but AI is only ~30% of revenue; negative trailing free cash flow is a weakness going into a pause | Same capacity limits |
+| MPS | Grows fastest: content per GPU rises and VPD adds content | Net cash and a fabless model (no fab underutilisation) cushion it | Extra growth capped by foundry capacity (company says capacity supports >$6bn) |
 | Infineon | Gains from AI power | Automotive (48%) and industrial cycles dominate the outcome | Gains from AI power |
 | Eaton | Well placed | A >$20bn electrical backlog and book-to-bill of 1.2 cushion a pause, but ~$19bn of net debt is higher than before Boyd | Constrained by medium-voltage equipment capacity |
 | Schneider | Same pattern as Eaton | Cushioned by backlog | Same capacity limits as Eaton |
@@ -377,13 +436,13 @@ Each company's exposure under the three AI-spending scenarios to 2030 (inference
 - **Cycle position (all names):** orders are at records (Eaton, Vertiv, Schneider), suppliers are building inventory (Delta, Lite-On, MPS at 130 days), and capex is rising (Lite-On, Infineon, Vicor). That is a mid-to-late upcycle with pricing power (Schneider, Delta raising prices).
 
 ### Gaps
-- Delta: FY2025 annual figures, free cash flow, net cash, return on equity and invested capital, customer concentration (whether NVIDIA or any single CSP exceeds 10%), and revenue by country.
-- MPS: 10-K customer and country concentration and its China manufacturing footprint.
-- Infineon: regional split and net cash. Its "capacity reservation >€10bn" was not verified on a primary page.
-- Schneider: FY2025 annual results, free cash flow and net debt.
+- Delta: customer concentration (whether NVIDIA or any single CSP exceeds 10%) and revenue by country. MOPS filings and Delta's IR page could not be read (the IR URL returned 404).
+- MPS: end-customer concentration. The 10-K discloses distributor concentration only.
+- Infineon: regional split. Its "capacity reservation >€10bn" was not verified on a primary page; the press-release page is script-rendered and unreadable by the fetch tool.
+- Schneider: FY2025 annual report (only trailing aggregates collected).
 - Eaton: data-centre share of group sales.
 - Vertiv: no power-only disclosure exists.
-- None of the collected sources give largest-customer or top-five shares for any key company.
+- Largest-customer and top-five shares are available only for MPS, and only at distributor level (top three = 54%).
 
 ## (3) Path forward: what each company must get through, said vs done, and suggested verdicts
 
@@ -457,7 +516,7 @@ Suggested verdicts (inference):
 - **Delta: coherent.**
   - Must get through transition 6 (and transition 5 for cooling, covered elsewhere).
   - The bridge (54 V shelves, BBUs) is earning record profits that fund the successor. It shows successor hardware across the whole chain: 800 VDC racks, high-voltage BBUs and an SST.
-  - Funding is internal, so it can absorb a 1–2 year slip.
+  - Funding is internal (trailing free cash flow NT$66.5bn, net cash ~NT$98bn, ROIC ~35%; [stockanalysis](https://stockanalysis.com/quote/tpe/2308/statistics/)), so it can absorb a 1–2 year slip.
   - What must go right: native 800 VDC or +/-400 VDC sidecars reach volume in 2027–28; it keeps first-source status as the in-rack PSU moves into a sidecar, where integrated electrical groups also compete; and the VPD-focused ITC case does not touch its power-module business.
 - **Lite-On: coherent.** It has a dated successor (Q1 2027 shipments), internal funding and rising capex. Its risks are being second source and running at lower gross margin.
 - **MPS: coherent.** Funding is strong (net cash, ~38% non-GAAP operating margin). Management sets realistic timing (late-2027 to 2028 for 800 V) and does not depend on 800 V for growth. What must go right: winning VPD sockets against ADI-Empower, Vicor, Infineon and Delta-class module makers, and avoiding Vicor-style IP friction.
@@ -479,32 +538,41 @@ Suggested order, judged on quality only:
 
 | Rank | Company | Note |
 |---|---|---|
-| 1 | MPS | |
-| 2 = | Eaton | Tie: cannot separate |
-| 2 = | Delta | Tie: cannot separate |
-| 4 = | Schneider | Tie: Schneider's evidence is thinner |
-| 4 = | Infineon | Tie |
-| 6 = | Lite-On | Tie |
-| 6 = | Vertiv (power) | Tie |
+| 1 = | MPS | Tie with Delta: cannot separate |
+| 1 = | Delta | Tie with MPS |
+| 3 = | Eaton | Tie with Schneider: cannot separate |
+| 3 = | Schneider | Tie with Eaton |
+| 5 = | Infineon | Tie with Lite-On |
+| 5 = | Lite-On | Tie with Infineon |
+| 7 | Vertiv (power) | |
 | Near-key | Vicor | Would rank on margin and IP but is hard to place given litigation dependence and small scale |
 
 ### Cited Findings
-- **MPS:** non-GAAP gross margin 55.7% and operating margin 38.6% (Q3 2026); net cash $1.09bn; revenue +63% YoY ([8-K](https://www.sec.gov/Archives/edgar/data/0001280452/000162828026068202/mpwr-20260930xexx991.htm)).
-- **Eaton:** segment margin 25.3% (Q3 2026); FY2025 free cash flow $3.6bn; book-to-bill 1.2; net debt ~$19.3bn (my calculation) ([8-K Q3](https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm); [FY2025](https://www.sec.gov/Archives/edgar/data/1551182/000155118226000002/etn12312025exhibit99.htm)).
-- **Delta:** operating margin 16.6% and gross margin 34.1% (Q3 2026); nine-month revenue +37%; ~70% Blackwell PSU share (KGI estimate) ([BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29); [KGI](https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/power-supply-industry_01072025.pdf)).
-- **Infineon:** segment result margin 19.7% (FY26) and ROCE 7.2% ([Investing.com](https://in.investing.com/news/stock-market-news/infineon-fy26-slides-ai-boom-drives-record-results-20bn-fy27-target-93CH-5692954)).
-- **Schneider:** adjusted EBITA margin ~19.7–19.9% (FY26 guidance) ([transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-schneider-electric-posts-record-q3-2026-revenue-93CH-4953279)).
-- **Lite-On:** operating margin 15.1% and gross margin 25.9% (Q3 2026); ROIC 34% (company) ([Fugle](https://blog.fugle.tw/post/earnings-call-2301-2026-10-30)).
-- **Vicor:** gross margin 68.3% and royalties ~34% of revenue (Q3 2026) ([call](https://www.investing.com/news/transcripts/earnings-call-transcript-vicor-tops-q3-2026-estimates-as-ai-demand-lifts-sales-93CH-4960190)).
+Key metrics side by side. "Trailing" = twelve months to Sep 2026 on stockanalysis's filings-derived definitions, accessed 12 Nov 2026.
+
+| Company | Margins (latest quarter) | Trailing ROIC | Trailing free cash flow | Net cash (debt) | Other | Sources |
+|---|---|---|---|---|---|---|
+| MPS | Q3 2026 non-GAAP gross 55.7%, operating 38.6%; revenue +63% YoY | 33.3% | 16.3% of revenue | ~$1.07bn net cash | Top three distributors 54% of FY2025 revenue; 92% of revenue from Asia | [8-K](https://www.sec.gov/Archives/edgar/data/0001280452/000162828026068202/mpwr-20260930xexx991.htm); [stockanalysis](https://stockanalysis.com/stocks/mpwr/statistics/); [10-K](https://www.sec.gov/Archives/edgar/data/1280452/000143774926006113/mpwr20251231_10k.htm) |
+| Delta | Q3 2026 operating 16.6%, gross 34.1%; nine-month revenue +37% | 34.9% (ROE 28.5%) | NT$66.5bn (9.5% of revenue) | ~NT$98bn net cash | ~70% Blackwell PSU share (KGI estimate) | [BigGo](https://finance.biggo.com/news/TW_2308.TW_2026-10-29); [KGI](https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/power-supply-industry_01072025.pdf); [stockanalysis](https://stockanalysis.com/quote/tpe/2308/statistics/) |
+| Eaton | Q3 2026 segment 25.3% | 11.0% | $3.80bn | ~$20.1bn net debt | Book-to-bill 1.2 | [8-K Q3](https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm); [stockanalysis](https://stockanalysis.com/stocks/etn/statistics/) |
+| Schneider | Adjusted EBITA ~19.7–19.9% (FY26 guidance) | 14.0% | €6.19bn (14.7% of revenue) | ~€16.3bn net debt | — | [transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-schneider-electric-posts-record-q3-2026-revenue-93CH-4953279); [stockanalysis](https://stockanalysis.com/quote/epa/SU/statistics/) |
+| Infineon | FY26 segment result 19.7% | 7.2% (ROCE 7.2%) | €1.98bn | ~€5.2bn net debt (stockanalysis definition) | — | [Investing.com](https://in.investing.com/news/stock-market-news/infineon-fy26-slides-ai-boom-drives-record-results-20bn-fy27-target-93CH-5692954); [stockanalysis](https://stockanalysis.com/quote/etr/IFX/statistics/) |
+| Lite-On | Q3 2026 operating 15.1%, gross 25.9% | ~30% (company says 34%) | −NT$7.8bn | ~NT$26bn net cash | — | [Fugle](https://blog.fugle.tw/post/earnings-call-2301-2026-10-30); [stockanalysis](https://stockanalysis.com/quote/tpe/2301/statistics/) |
+| Vicor | Q3 2026 gross 68.3% | 37.1% | — | ~$506m net cash | Royalties ~34% of Q3 revenue | [call](https://www.investing.com/news/transcripts/earnings-call-transcript-vicor-tops-q3-2026-estimates-as-ai-demand-lifts-sales-93CH-4960190); [stockanalysis](https://stockanalysis.com/stocks/vicr/statistics/) |
 
 ### Inferences
-- **MPS is first.** It combines the highest margins, net cash, a fabless model and the clearest successor (VPD) with sensible timing.
-- **Eaton and Delta tie.** Eaton has higher margins, diversification and UL-proven SSTs, but more leverage. Delta has the dominant in-rack share and successor hardware, but lower margins and ~50% AI concentration.
-- **Schneider and Infineon tie.** Schneider is a strong business, but its 800 VDC evidence is thin. Infineon is broad and capacity-backed, but has low returns on capital and auto cyclicality.
-- **Lite-On and Vertiv (power) tie.** Lite-On is a number-two hardware maker with a dated successor. Vertiv has a strong bridge, a slipped successor, and a UPS franchise at risk.
+- **MPS and Delta tie at the top.** Both earn ~33–35% ROIC with net cash.
+  - MPS has far higher margins, its own process know-how and the clearer chip-level successor (vertical power). Against that, it sells 54% through three distributors and bills 92% in Asia.
+  - Delta has the larger, third-party-estimated lead (~70% of Blackwell PSUs), solid free cash flow and the full set of successor hardware. Against that, its margins are mid-teens, sales are hardware-only, ~50% of revenue is AI, and it faces ITC exposure.
+  - The filings-derived data added late in the research moved Delta up from the Eaton tier.
+- **Eaton and Schneider tie.** Eaton has the clearer successor path (UL-tested SST, 800 VDC architecture) and a larger backlog. Schneider has better cash conversion (free cash flow ~15% of revenue) and higher ROIC (~14% vs ~11%), but thin 800 VDC evidence. Both carry sizeable net debt.
+- **Infineon and Lite-On tie.** Infineon has deep fab and process moats across Si, SiC and GaN, but low returns (ROIC 7.2%), net debt and auto cyclicality. Lite-On has high returns but is a number-two hardware maker with negative trailing free cash flow during its build-out.
+- **Vertiv (power) is last.** Its bridge is strong, but its successor slipped and its UPS franchise is at risk. Group-level quality is assessed in the cooling notes.
+- **Vicor** has ROIC ~37%, net cash and a ~61% gross margin. It would rank near the top on financials, but its moat depends on litigation and its scale is small (~$0.56bn of revenue).
 
 ### Gaps
-- The ordering is provisional because customer concentration, return on invested capital and free cash flow are missing for Delta, Lite-On, Schneider and Infineon. Adding these could reorder ranks 2–7.
+- Returns and cash flow come from an aggregator (stockanalysis), not annual reports.
+- Customer concentration is still missing for every company except MPS, and for MPS only at distributor level. A disclosure that one customer takes more than 30% of Delta's or Lite-On's revenue would lower their rank.
 
 ## (5) Check of the background priors
 
@@ -591,7 +659,7 @@ At the chip, VPD is commercially licensed (Vicor) and being consolidated (ADI–
 - **Lateral versus vertical at the chip:**
   - MPS CEO: "you have to do vertical" ([call](https://www.fool.com/earnings/call-transcripts/2026/10/30/monolithic-power-systems-mpwr-q3-2026-earnings-call-transcript/)).
   - Vicor's first pure VPD licence; a lead customer's large 2nd-generation VPD order; the CEO says IVR timing is "still out" ([Vicor call](https://www.investing.com/news/transcripts/earnings-call-transcript-vicor-tops-q3-2026-estimates-as-ai-demand-lifts-sales-93CH-4960190)).
-  - ADI agreed to buy Empower on 19 May 2026 ([ADI](https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html)).
+  - ADI announced the Empower deal on 19 May 2026 and completed it on 7 Jul 2026 for ~$1.5bn ([ADI PR](https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html); [ADI 10-Q](https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm), primary). A large analog incumbent now owns an integrated-voltage-regulator and VPD start-up. MPS declined to comment on the deal ([MPS call](https://www.fool.com/earnings/call-transcripts/2026/10/30/monolithic-power-systems-mpwr-q3-2026-earnings-call-transcript/)).
   - Empower demonstrated ~1,000 A at 0.75 V ([APEC PR](https://www.globenewswire.com/news-release/2026/03/10/3252703/0/en/Empower-Semiconductor-Showcases-Vertical-Power-Delivery-Innovations-at-APEC-2026.html)).
   - A new ITC investigation targets VPD systems ([Taipei Times](https://www.taipeitimes.com/News/biz/archives/2026/10/12/2003865784)).
 - **Silicon versus GaN versus SiC:**
@@ -650,15 +718,14 @@ Gaps come mainly from the web-search budget running out mid-task (tool notice) a
 
 ### Gaps
 - **Not collected:**
-  - FY2025 annual results for Delta, Lite-On and Schneider.
-  - Free cash flow and net cash for Delta, Lite-On and Infineon.
-  - Customer concentration (largest customer and top five) for every key company.
-  - Revenue by country for every key company.
+  - Annual-report detail for Delta, Lite-On and Schneider. Annual and trailing figures came from stockanalysis aggregates, not the reports.
+  - Customer concentration (largest customer and top five) for every key company except MPS, which discloses distributors only.
+  - Revenue by country for every key company except MPS.
 - **Third-party market shares:** none collected for PSUs (beyond KGI's 2025 estimate), BBUs, vertical power modules, or controllers and power stages (Dell'Oro and Omdia not reached).
-- **Companies without evidence:** AcBel, Chicony Power, FSP, Advanced Energy, Flex (financials), Huawei Digital Power, Kehua, Ourmate, Zhongheng, Mitsubishi Electric, Fuji Electric, TDK, Murata, ROHM, Renesas, LS Electric, LS Materials, Samsung Electro-Mechanics' financials, Samsung SDI, Simplo, Dynapack and AES-KY financials, Musashi, Nippon Chemi-Con, Skeleton (beyond company claims), Wolfspeed's status, onsemi, TI, ADI and ST AI-power revenue.
+- **Companies without evidence** (AcBel, Chicony Power, Advanced Energy and Megmeet now have filings-derived financials only): FSP, Flex (financials), Huawei Digital Power, Kehua, Ourmate, Zhongheng, Mitsubishi Electric, Fuji Electric, TDK, Murata, ROHM, Renesas, LS Electric, LS Materials, Samsung Electro-Mechanics' financials, Samsung SDI, Simplo, Dynapack and AES-KY financials, Musashi, Nippon Chemi-Con, Skeleton (beyond company claims), Wolfspeed's status, onsemi, TI, ADI and ST AI-power revenue.
 - **India:** no player identified; NSE and BSE not searched.
 - **Policy:** gallium and germanium export controls, tariffs on power equipment, and production shares in Taiwan, Thailand, Mexico and China were not documented beyond the items above.
-- **Deals:** ADI–Empower price and closing were not verified (ADI page returned 503).
+- **Deals:** ADI–Empower is now verified (closed 7 Jul 2026, ~$1.5bn, ADI 10-Q). Empower's revenue and customers at the time of acquisition were not found.
 - **NVIDIA primary statements:** none after July 2026 on Kyber timing; no TDP datasheets.
 - **Shipments:** Megmeet's reported "GB300 800 V HVDC power delivered H1 2026" is a broker claim. It may be mislabelled, since GB300 racks use 54 V shelves.
 - **Fed Circuit:** the outcome of Vicor's appeal is unknown.
@@ -666,7 +733,7 @@ Gaps come mainly from the web-search budget running out mid-task (tool notice) a
 ## (8) Sources
 
 ### Takeaway
-Primary sources: OCP's Mt. Diablo 1.0 PDF, NVIDIA's technical blog, Microsoft's Azure blog, and SEC 8-Ks for MPS, Eaton and Vertiv. Delta's release and HKEX's Innoscience interim report are also primary. Most other items are secondary (trade press, analyst notes, call summaries) and are labelled as such above.
+Primary sources: OCP's Mt. Diablo 1.0 PDF, NVIDIA's technical blog, Microsoft's Azure blog, SEC 8-Ks for MPS, Eaton and Vertiv, the MPS FY2025 10-K, the ADI 10-Q and the Eaton Q3 2026 10-Q. Delta's release and HKEX's Innoscience interim report are also primary. Most other items are secondary (trade press, analyst notes, call summaries) and are labelled as such above.
 
 ### Cited Findings
 **Primary**
@@ -687,6 +754,24 @@ Primary sources: OCP's Mt. Diablo 1.0 PDF, NVIDIA's technical blog, Microsoft's 
 - TI PR, 16 Mar 2026 (search result) — https://www.ti.com/en-us/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia
 - Vicor ITC PR (search summary) — https://www.vicorpower.com/press-room/itc-bars-importation-of-power-modules ; Vicor Q3 2026 results, 20 Oct 2026 (search summary) — https://www.nasdaq.com/press-release/vicor-corporation-reports-results-third-quarter-ended-september-30-2026-2026-10-20
 - Navitas Q3 2026 results, 3 Nov 2026 (search summary) — https://www.globenewswire.com/news-release/2026/11/03/3394777/0/en/navitas-semiconductor-announces-third-quarter-2026-financial-results.html
+
+**Primary filings added after the search budget ran out (fetched directly from SEC EDGAR)**
+- MPS FY2025 10-K, filed 27 Feb 2026 — https://www.sec.gov/Archives/edgar/data/1280452/000143774926006113/mpwr20251231_10k.htm
+- ADI 10-Q for the quarter to 1 Aug 2026, filed 19 Aug 2026 (Empower closing, ~$1.5bn, 7 Jul 2026) — https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm
+- Eaton 10-Q Q3 2026 (Resilient Power $86m; Boyd $9.55bn; Fibrebond $1.43bn) — https://www.sec.gov/Archives/edgar/data/1551182/000155118226000040/etn-20260930.htm
+
+**Filings-derived aggregates** (stockanalysis.com, S&P Global Market Intelligence data, accessed 12 Nov 2026). Only revenue, margins, cash flow, returns and net cash/debt were used:
+- Delta — https://stockanalysis.com/quote/tpe/2308/financials/ ; https://stockanalysis.com/quote/tpe/2308/statistics/
+- Lite-On — https://stockanalysis.com/quote/tpe/2301/financials/ ; https://stockanalysis.com/quote/tpe/2301/statistics/
+- AcBel — https://stockanalysis.com/quote/tpe/6282/financials/
+- Chicony Power — https://stockanalysis.com/quote/tpe/6412/financials/
+- Megmeet — https://stockanalysis.com/quote/she/002851/financials/
+- Advanced Energy — https://stockanalysis.com/stocks/aeis/financials/?p=quarterly
+- Infineon — https://stockanalysis.com/quote/etr/IFX/statistics/
+- Schneider — https://stockanalysis.com/quote/epa/SU/statistics/
+- MPS — https://stockanalysis.com/stocks/mpwr/statistics/
+- Eaton — https://stockanalysis.com/stocks/etn/statistics/
+- Vicor — https://stockanalysis.com/stocks/vicr/statistics/
 
 **Transcripts and call summaries (secondary transcriptions of primary calls)**
 - MPS Q3 2026 call (Motley Fool), 30 Oct 2026 — https://www.fool.com/earnings/call-transcripts/2026/10/30/monolithic-power-systems-mpwr-q3-2026-earnings-call-transcript/
