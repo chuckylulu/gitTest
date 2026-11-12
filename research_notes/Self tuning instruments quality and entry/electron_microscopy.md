@@ -92,6 +92,15 @@ Both background items are VERIFIED, with qualifications. (i) The January 2026 it
 
 ## 3. Leading companies
 
+### 3.0 Shipped automation by type (answer to "is anyone shipping LLM-agent alignment?")
+| Type | What is shipped (maker, product) | Evidence |
+|---|---|---|
+| Classical automatic routines (long-standing) | Thermo Fisher AutoScript TEM auto-functions: TEM autofocus/astigmatism, STEM autofocus, AutoComa; OptiSTEM/AutoSTEM sold as options; JEOL PyJEM auto-focus/auto-contrast-brightness; TESCAN TENSOR "fast and fully automated" background alignments; CEOS corrector software (Panta Rhei) | [AutoScript TEM](https://www.thermofisher.com/us/en/home/electron-microscopy/products/software-em-3d-vis/autoscript-tem-software.html); [PyJEM](https://github.com/PyJEM/PyJEM); [TENSOR](https://tescan.com/product-portfolio/stem/tensor); [CEOS](https://www.ceos-gmbh.de/en/) [company claims] |
+| Learned/ML functions in shipped products | Thermo Fisher Smart EPU (AI grid-square selection, hole finding, ice-thickness prediction, real-time-CTF focus); Krios 5 "AI-powered experimental set-up"; ZEN core AI toolkit (segmentation/denoising); Oxford Instruments AI in analysis | [EPU](https://www.thermofisher.com/us/en/home/electron-microscopy/products/software-em-3d-vis/epu-software.html); [Krios 5 release](https://www.businesswire.com/news/home/20250402055773/en/Thermo-Fisher-Scientific-Launches-the-Krios-5-Cryo-Transmission-Electron-Microscope-TEM-Boosting-Productivity-and-Performance-With-Enhanced-Automation); [ZEN core](https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-core.html) [company claims] |
+| Learned aberration tuning (research, not shipped) | BEACON (LBNL, 2025); Cornell emittance-BO (2024-25); UTK multi-objective BO (Jan 2026) — all on Thermo Fisher/CEOS hardware where named | section 2 |
+| LLM-agent control | Research/prototype only: LBNL TEM Agent (working, published 2026); Thermo Fisher staff prototypes (EMCoPilot 2025; AI-assisted AutoScript prototyping 2026); ZEISS LLM-agent demo on X-ray microscope (Aug 2026); PNNL/Sandia ACMAS (planned) | section 2 |
+- Answer: no maker was found shipping LLM-agent-run alignment as a standard feature, and none was found announcing a date, as of 12 Nov 2026 (absence of evidence within a search that was cut short; see section 6).
+
 ### 3.1 Thermo Fisher Scientific (EM within Analytical Instruments)
 - Identity: USA; NYSE: TMO. EM business (ex-FEI, acquired 2016) sits in the Analytical Instruments segment, which has "three primary businesses: chromatography and mass spectrometry, chemical analysis, and electron microscopy". "Our electron microscopy business serves customers in the life sciences, materials sciences, and semiconductor markets providing leading research tools; and also, in the semiconductor market provides integrated workflows that power research and development and production solutions" — [Thermo Fisher 10-K for 2025, filed 26 Feb 2026](https://www.sec.gov/Archives/edgar/data/97745/000009774526000018/tmo-20251231.htm).
 - Segment-level facts (disclosed revenue by business):
