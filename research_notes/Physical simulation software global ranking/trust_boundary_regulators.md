@@ -378,7 +378,7 @@ Events that would move the boundary before 2031 (dates as sourced):
 - S29 FDA draft guidance on AI for drug and biological products, Jan 2025: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological
 - S30 FDA drug centre (CDER) AI page, current 1 May 2026: https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/artificial-intelligence-drug-development
 - S31 FDA ICH M15 final guidance, Jun 2026: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m15-general-principles-model-informed-drug-development
-- S32 FDA PBPK format and content guidance, Sep 2018: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/physiologically-based-pharmacokinetic-analyses-format-and-content-guidance-industry
+- S32 FDA PBPK guidance, Sep 2018: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/physiologically-based-pharmacokinetic-analyses-format-and-content-guidance-industry
 - S33 FDA press release on animal testing, 10 Apr 2025: https://www.fda.gov/news-events/press-announcements/fda-announces-plan-phase-out-animal-testing-requirement-monoclonal-antibodies-and-other-drugs
 - S34 Spencer Fane on FDA year-one non-animal-methods report, 2026 (secondary): https://www.spencerfane.com/insight/fda-reports-meeting-year-one-goals-for-reducing-animal-drug-testing/
 - S35 European Commission AI Act page, updated 19 Oct 2026: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai

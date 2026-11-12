@@ -1,16 +1,16 @@
 # Technical evidence on how AI is changing physical simulation software, and tests of six prior views (as of 12 Nov 2026)
 
-Method note: all pages accessed 12 Nov 2026. About half the evidence was gathered earlier the same day by an interrupted first attempt and by sibling strands (salvage digests); I re-read their raw results rather than relying on summaries. Mid-session the WebSearch budget, Firecrawl, Exa and Consensus quotas all ran out, so remaining checks used direct fetches of known pages and GitHub. Labels: [PR] peer-reviewed or accepted at a reviewed venue; [PP] preprint; [CC] company claim, unconfirmed by any outside party; [2024]/[2025] = older than 2026.
+Method note: pages accessed 12 Nov 2026; about half the evidence comes from raw results gathered earlier that day (interrupted first attempt, sibling strands), re-read here. WebSearch, Firecrawl, Exa and Consensus quotas ran out mid-session; later checks used direct page fetches and GitHub. Labels: [PR] peer-reviewed or accepted at a reviewed venue; [PP] preprint; [CC] company claim, unconfirmed by any outside party; [2024]/[2025] = older than 2026.
 
 ## Summary for the report writer
 
-- **Cited items.** All nine exist. Four need correcting. (a) CReSS port: "162 routines" are 162 GPU kernels, taken from the 387 OpenMP regions, that one typhoon scenario exercises. Each was checked element by element against one dumped state, at 1e-5 in single precision. The 5.1x is time per step on one GH200 (its H100 against its own 72-core Grace CPU). The authors call it "scenario-specific", and it is not in production. (b) 2608.04400: the seven orders of magnitude is the *median*; the mean fell only about three orders and stayed above the solver's 1e-8 acceptance level. The 15.5x is per optimisation generation, with an added GPU and at most six Newton updates. (c) 2605.08988: "often an order of magnitude", reaching about 1,000x for energies, on purpose-built compositional test splits. (e) Dallara: the stricter threshold for replacing high-fidelity runs was met for 18 of 20 car parts, so "not met" overstates it. (g) Siemens 10-17x is a company claim with no baseline, hardware or customer named. (h) Kimi K3: the source is Moonshot's own blog (45 nm, simulation only, tools not named). On 17 Jul 2026 Cadence closed −9.47% and Synopsys −7.85%. Analysts were split, and the sign-off argument came mostly from commentators. (i) FugakuNEXT: RIKEN's own page says "zetta-scale" in "AI performance (FP8)". The specification is ≥600 EF FP8 with sparsity (0.6 ZF) against ≥2.6 EF FP64.
-- **Prior 1 (60%) looks too high: about 25-40%.** Most of the 28 listed codes already had hand-written GPU paths. No AI-built GPU port is in production for any code that remains CPU-only. The closest case is CPPWRF (Oct 2026): an unaffiliated C++/CUDA port of WRF 4.8.0, bit-identical in FP64 and 2.6-4.7x faster, with 1 GitHub star and no stated method. AI-assisted ports (CReSS, NICAM, FESOM2, ORB5X) are 2026 preprints.
-- **Prior 2 (65%) is plausible, but every big number is a company claim.** Reported gains: Renesas 34x, Nokia 5x, MediaTek 1.4-2x, "up to 10x". Benchmarks show that a run that finishes is not a correct result: ChatCFD's runs completed in 82.1% of cases, but only 68.12% were physically faithful.
-- **Prior 3 (55%) is reasonable, perhaps 55-65%.** Weather centres already operate learned-plus-physics hybrids (NOAA HGEFS, Dec 2025; Canada's spectral nudging, May 2026). Ansys announced AI initialisation for Fluent (company claim). No commercial solver uses such a method by default yet, and no learned preconditioner was found shipping.
-- **Prior 4 is contradicted twice.** GPU speed so far comes mostly from hand-written vendor and lab code, not AI rewriting. And in weather, learned models already beat physics on many verified scores: ECMWF reports gains of up to 20%, and the Google DeepMind ensemble mean was the best individual track model in the National Hurricane Center's 2025 verification. They still depend on physics-based starting states.
-- **Prior 5 is half supported.** Agents do drive open tools, but vendors are wiring their own tools to agents too (PyAnsys, Keysight and MATLAB connectors, Neural Concept's MCP Bridge, which drives CATIA, NX and Abaqus). 2026 data show no loss of ground. The moat is moving to certified sign-off.
-- **Prior 6 is largely supported, with one exception.** US and Japanese flagships are AI-first, and native FP64 per GPU is flat or falling (Rubin 33 TF). But the June 2026 TOP500 No. 1 is China's CPU-only LineShine, which also leads HPCG.
+- **Cited items: all nine exist; four need correcting.** (a) CReSS: "162 routines" are 162 GPU kernels (OpenMP regions exercised by one typhoon case, of 387), checked element-wise against one dumped state at 1e-5 (single precision); 5.1x is per step on one GH200 (H100 vs its 72-core Grace); "scenario-specific", not in production. (b) 2608.04400: >7 orders is the *median* residual ratio; the mean fell ~3 orders and stayed above the 1e-8 acceptance level; 15.5x is per optimisation generation, with an added GPU and ≤6 Newton updates. (c) 2605.08988: "often an order of magnitude", up to ~1,000x for energies, on purpose-built compositional splits. (e) Dallara: the replacement threshold was met on 18 of 20 parts. (g) Siemens 10-17x: company claim, no baseline or customer. (h) Kimi K3: Moonshot's own blog (45 nm, simulation only); 17 Jul closes Cadence −9.47%, Synopsys −7.85%; analysts split; the sign-off argument came mostly from commentators. (i) RIKEN itself says "zetta-scale" for "AI performance (FP8)": ≥600 EF FP8 with sparsity (0.6 ZF) against ≥2.6 EF FP64.
+- **Prior 1 (60%) looks too high, ~25-40%.** Most listed codes already had hand-written GPU paths; no AI-built port is in production for a CPU-only code. Closest: CPPWRF (Oct 2026), an unaffiliated C++/CUDA port of WRF 4.8.0, bit-identical in FP64, 2.6-4.7x, 1 GitHub star, method unstated. AI-assisted ports (CReSS, NICAM, FESOM2, ORB5X) are 2026 preprints.
+- **Prior 2 (65%) plausible, but all large numbers are company claims** (Renesas 34x, Nokia 5x, MediaTek 1.4-2x). A run that executes is not a correct result (ChatCFD: 82.1% ran, 68.12% physically faithful).
+- **Prior 3 (55%) reasonable, perhaps 55-65%.** Weather centres operate learned-plus-physics hybrids (NOAA HGEFS, Dec 2025; Canada's spectral nudging, May 2026); Ansys announced Fluent AI initialisation (company claim); nothing is a default in commercial solvers; no learned preconditioner found shipping.
+- **Prior 4 contradicted twice.** Deployed GPU speed is mostly hand-written by vendors and labs, not AI rewriting; in weather, learned models already beat physics on verified scores (ECMWF up to 20%; the Google DeepMind ensemble was the best individual track model in NHC's 2025 verification) while still needing physics-based starting states.
+- **Prior 5 half supported.** Agents drive open tools, but vendors are wiring their own tools to agents (PyAnsys, Keysight, MATLAB connectors; Neural Concept's bridge to CATIA, NX, Abaqus); no loss of ground in 2026 data; the moat is moving to certified sign-off.
+- **Prior 6 largely supported** (US and Japanese flagships AI-first; Rubin native FP64 33 TF), but the June 2026 TOP500 No. 1 is China's CPU-only LineShine, also the HPCG leader.
 
 ## Q1. Do the nine cited items say what the earlier analysis says?
 
@@ -23,14 +23,14 @@ All nine exist and support the general direction, but four overstate or misstate
 - "Validation-Centric AI-Assisted GPU Porting of a 250,000+ Line Legacy Weather Simulation Code". Authors: Tetsuya Hoshino, Masaya Kato, Kazuhisa Tsuboki, Daichi Mukunoki, Takahiro Katagiri, Toshihiro Hanawa. v1 13 Aug 2026, cs.DC, "Submitted to AgenticAI4HPC 2026". — [arXiv](https://arxiv.org/abs/2608.13122)
 - The code is CReSS (Cloud Resolving Storm Simulator): Fortran 90 with MPI and OpenMP, 599 files, about 260,000 lines and 387 OpenMP regions, in development since 1998. The agent was "Claude Code Opus 4.5–4.6"; the target was OpenACC with nvfortran (HPC SDK 25.9) and unified memory. — [arXiv HTML](https://arxiv.org/html/2608.13122)
 - Validation used dumps of the program state at each kernel's last call in a 360-step run. The test was element-wise relative error ≤1e-5 (single precision, not bitwise), plus an application-level check on maximum and minimum pressure perturbation (<1e-4; 1.0e-5 and 5.6e-5 achieved). The 162 ported kernels are the OpenMP regions executed in the typhoon scenario. Five kernels showed single-element discrepancies (a one-ulp threshold flip, exp/log/sqrt differences, a zero-valued reference), which the developers accepted. — [arXiv HTML](https://arxiv.org/html/2608.13122)
-- The 5.1x is the median time per step: 9.51 s on the 72-thread Grace CPU against 1.88 s on the H100 of the same GH200 (one Miyabi-G node, JCAHPC). The test case was a September 2022 typhoon on an 899×899×128 grid at about 2 km for 30 minutes. The work took about 100 GPU-node hours over roughly three months. The authors' limitations: the validation "does not certify all control paths", dumps exceeded 400 GB, one scenario and one node; "a scenario-specific validated GPU port, not a complete GPU port of all CReSS executions". No production use is claimed. — [arXiv HTML](https://arxiv.org/html/2608.13122)
+- The 5.1x is the median time per step: 9.51 s on the 72-thread Grace CPU against 1.88 s on the H100 of the same GH200 (one Miyabi-G node, JCAHPC). The work took about 100 GPU-node hours over roughly three months. The authors' limitations: the validation "does not certify all control paths", dumps exceeded 400 GB, one scenario and one node; "a scenario-specific validated GPU port, not a complete GPU port of all CReSS executions". No production use is claimed. — [arXiv HTML](https://arxiv.org/html/2608.13122)
 
 **(b) arXiv 2608.04400 [PP]**
 - "Reliable and efficient steady CFD from surrogate predictions through Newton–Krylov correction". Authors: Mingcheng Lei, Weishao Tang, Yufei Zhang, Haixin Chen (School of Aerospace Engineering, Tsinghua University). v1 5 Aug 2026, physics.flu-dyn. — [arXiv](https://arxiv.org/abs/2608.04400)
 - Set-up: the ADflow solver (steady RANS with the Spalart–Allmaras model); diffusion-transformer surrogates; a state is accepted when the residual ratio is ≤1e-8. The out-of-distribution test set is 20,052 flow states on 3,409 airfoils taken from optimisation runs; 98.1% of them lie beyond the 95th percentile of distance from the training set. — [arXiv PDF](https://arxiv.org/pdf/2608.04400)
 - Table 1 (FSB-DiT model, 15 Newton–Krylov updates): median residual ratio 1.29e-3 → 9.46e-11 (about 7.1 orders); mean 1.73e-3 → 1.64e-6 (about 3 orders, still above 1e-8); 90th percentile 3.26e-3 → 2.12e-9. — [arXiv PDF](https://arxiv.org/pdf/2608.04400)
 - Control test from the same surrogate state: Newton–Krylov converged in 14 updates (5.6 s), approximate Newton–Krylov in 297 (58.1 s), pseudo-time stepping in 12,883 (453.1 s). From uniform or pseudo-time starting states, Newton–Krylov failed to converge within budget. — [arXiv PDF](https://arxiv.org/pdf/2608.04400)
-- The 15.5x (Table 2) is per generation of 32 candidates: 1,080.15 s for CFD on 72 cores against 69.90 s for surrogate plus at most six Newton updates on 1 GPU and 72 cores (29.46 s for the surrogate alone). Against converged CFD, the online drag error fell from 11.8 to 1.7 drag counts (RAE2822) and from 10.0 to 0.4 (OAT15A). In 3D, on 48 flying-wing planforms outside the training data, the median residual fell from 1.32e-2 to 1.36e-9. — [arXiv PDF](https://arxiv.org/pdf/2608.04400)
+- The 15.5x (Table 2) is per generation of 32 candidates: 1,080.15 s for CFD on 72 cores against 69.90 s for surrogate plus at most six Newton updates on 1 GPU and 72 cores. Against converged CFD, the online drag error fell from 11.8 to 1.7 drag counts (RAE2822) and from 10.0 to 0.4 (OAT15A). In 3D, on 48 flying-wing planforms outside the training data, the median residual fell from 1.32e-2 to 1.36e-9. — [arXiv PDF](https://arxiv.org/pdf/2608.04400)
 
 **(c) arXiv 2605.08988 [PR, NeurIPS 2026 Datasets and Benchmarks track]**
 - "Benchmarking Compositional Generalisation for Machine Learning Interatomic Potentials". Authors: Amir Masoud Nourollah, Irtaza Khalid, Stefano Leoni, Steven Schockaert (Cardiff). v1 9 May 2026, v2 22 Oct 2026. — [arXiv](https://arxiv.org/abs/2605.08988)
@@ -49,12 +49,11 @@ All nine exist and support the general direction, but four overstate or misstate
 
 **(g) Siemens/NVIDIA lithography [CC]**
 - Siemens release, 14 Oct 2026 (Plano): "up to 12x acceleration for full-chip optical proximity correction (OPC) workloads"; "at least 10x acceleration for key lithography simulation workloads"; "Verified engineering data supports simulation speed-ups ranging from at least 10x to 17x". No GPU, baseline, workload, customer or availability is named. — [Siemens](https://news.siemens.com/en-us/siemens-calibre-nvidia-culitho/); [Calibre blog, 14 Oct](https://blogs.sw.siemens.com/calibre/2026/10/14/the-virtuous-cycle-of-silicon-how-siemens-is-accelerating-the-era-of-physical-ai-with-nvidia-culitho/)
-- An earlier Siemens result, from SC25 work: a GPU rasteriser on H100 reached up to 290x (Manhattan shapes) and 45x (curvilinear) against CPU, with "less than 1% absolute error". — [Calibre blog, 13 Apr 2026](https://blogs.sw.siemens.com/calibre/?p=3784)
 
 **(h) The July 2026 Kimi K3 episode**
 - What was published: Moonshot's own K3 blog. "As an early proof of concept, Kimi K3 designed a chip to serve a nano model…"; "In a single 48-hour autonomous run, K3 built, optimized, and verified the chip using open-source EDA tools." Details: Nangate 45 nm, within 4 mm², timing closed at 100 MHz, 1.46M cells, >8,700 tokens/s "in simulation". Not stated: the tools used, design-rule or layout-versus-schematic checks, or any tape-out [CC]. — [Kimi blog](https://www.kimi.com/blog/kimi-k3). K3 was released on 16 July 2026. — [Wikipedia](https://en.wikipedia.org/wiki/Moonshot_AI)
-- Share moves on Friday 17 Jul 2026: Synopsys closed at $384.28 (−7.85%) and was −13.74% for the week; Cadence closed −9.47% and was −14.07% for the week; the Nasdaq fell 1.40%. — [ts2.tech](https://ts2.tech/en/synopsys-nasdaqsnps-loses-6-3-billion-following-kimi-k3-chip-design-demonstration/); Cadence closed at $330.11 — [TIKR](https://www.tikr.com/blog/cadence-stock-fell-9-in-a-day-on-a-chinese-ai-chip-demo-heres-where-the-stock-could-go-in-2026). Intraday it was −9.6% at $329.56 — [Investing.com](https://www.investing.com/news/stock-market-news/why-is-cadence-design-systems-stock-plummeting-today-93CH-4798909)
-- Analysts. BNP Paribas called the reaction overdone and a chance to "buy the dip": top firms still use Cadence and Synopsys for complex designs. — [Seeking Alpha headline](https://seekingalpha.com/news/4615018-cadence-synopsys-sink-as-moonshot-brings-eda-disruption-risks-bnp-says-buy-the-dip); [TIKR](https://www.tikr.com/blog/cadence-stock-fell-9-in-a-day-on-a-chinese-ai-chip-demo-heres-where-the-stock-could-go-in-2026). Needham and BNP: overreaction, because 45 nm is far from 2-5 nm. — [Mickevicius, 23 Jul](https://vidasmickevicius.substack.com/p/will-ai-disrupt-chip-design-business). Bloomberg Intelligence (Niraj Patel): "We see no immediate threat to Cadence and Synopsys' revenue bases"; Bernstein's Robin Zhu said market reactions "generally feel sensible". — [Yahoo/Investing, 17 Jul](https://finance.yahoo.com/technology/ai/articles/cadence-synopsys-slide-kimi-k3-162824133.html)
+- Share moves on Friday 17 Jul 2026: Synopsys closed at $384.28 (−7.85%) and was −13.74% for the week; Cadence closed −9.47% and was −14.07% for the week; the Nasdaq fell 1.40%. — [ts2.tech](https://ts2.tech/en/synopsys-nasdaqsnps-loses-6-3-billion-following-kimi-k3-chip-design-demonstration/); Cadence closed at $330.11 — [TIKR](https://www.tikr.com/blog/cadence-stock-fell-9-in-a-day-on-a-chinese-ai-chip-demo-heres-where-the-stock-could-go-in-2026)
+- Analysts. BNP Paribas called the reaction overdone and a chance to "buy the dip": top firms still use Cadence and Synopsys for complex designs. — [Seeking Alpha headline](https://seekingalpha.com/news/4615018-cadence-synopsys-sink-as-moonshot-brings-eda-disruption-risks-bnp-says-buy-the-dip), via TIKR. Needham and BNP: overreaction, because 45 nm is far from 2-5 nm. — [Mickevicius, 23 Jul](https://vidasmickevicius.substack.com/p/will-ai-disrupt-chip-design-business). Bloomberg Intelligence (Niraj Patel): "We see no immediate threat to Cadence and Synopsys' revenue bases"; Bernstein's Robin Zhu said market reactions "generally feel sensible". — [Yahoo/Investing, 17 Jul](https://finance.yahoo.com/technology/ai/articles/cadence-synopsys-slide-kimi-k3-162824133.html)
 - The sign-off argument was made explicitly by commentators: TSMC requires Synopsys PrimeTime timing analysis before tape-out, and open process kits cover only old nodes. — [Tech Fund, 27 Jul](https://www.techinvestments.io/p/the-eda-crash-and-the-massive-ai). Another account: "no fabricated chip, manufacturing yield or advanced-node sign-off". — [ts2.tech](https://ts2.tech/en/synopsys-nasdaqsnps-stock-sinks-as-kimi-chip-demo-tests-the-eda-moat/). Cadence CEO Devgan, later: "Even if they design such a module, they still need EDA tools." — [36Kr, 29 Sep 2026](https://eu.36kr.com/de/p/4003768849258377)
 - By 11 Nov 2026 Synopsys had recovered to $462.12, while Cadence was at $329.26, about its 17 July close. — [stockanalysis SNPS](https://stockanalysis.com/stocks/snps/history/); [CDNS](https://stockanalysis.com/stocks/cdns/history/)
 
@@ -96,15 +95,15 @@ The population is smaller than the prior assumes, because many listed codes alre
 | FDS | No GPU in the release notes (6.11.1, 10 Jul 2026) | none found | [GitHub](https://github.com/firemodels/fds/releases) |
 | GROMACS | 2026.4 is current; the page read did not list GPU backends (GPU support not re-verified) | none | [manual](https://manual.gromacs.org/current/release-notes/index.html) |
 | OpenMC | Release-note index (0.16.0) shows no GPU item; GitHub search found no "openmc gpu offload" repositories | none found | [docs](https://docs.openmc.org/en/latest/releasenotes/index.html) |
-| Not verified this session | Code_Aster, Elmer, FEniCS, OpenRadioss (repository fetch returned 404; GitHub search for "openradioss gpu" found 0 repositories), Quantum ESPRESSO, CP2K (documentation page 404), E3SM, NEMO, OpenFAST, ngspice/Xyce, OpenROAD, openEMS/MEEP, Palabos | — | — |
+| Not verified this session | Code_Aster, Elmer, FEniCS, OpenRadioss (no GPU repository found on GitHub), Quantum ESPRESSO, CP2K, E3SM, NEMO, OpenFAST, ngspice/Xyce, OpenROAD, openEMS/MEEP, Palabos | — | — |
 
 **AI-assisted porting projects (all preprints, none in production)**
-- CReSS: 162 kernels, 5.1x, validated element-wise against dumps (see Q1a). One secondary summary reports the agent "spent an entire session modifying the dump function" over a misdiagnosed bug. — [arXiv](https://arxiv.org/abs/2608.13122); [Signals summary](https://signals.aktagon.com/articles/2026/08/validation-centric-ai-assisted-gpu-porting-of-a-250000-line-legacy-weather-simulation-code/)
+- CReSS: see Q1a. A secondary summary says the agent "spent an entire session modifying the dump function" over a misdiagnosed bug. — [arXiv](https://arxiv.org/abs/2608.13122); [Signals summary](https://signals.aktagon.com/articles/2026/08/validation-centric-ai-assisted-gpu-porting-of-a-250000-line-legacy-weather-simulation-code/)
 - NICAM (Ren, Shimokawabe, Yashiro; 30 Oct 2026): about 140,000 lines of Fortran/OpenACC became about 35,000 lines of C++/Kokkos, with Claude Code "primarily with the Fable 5 model". The record: 797 human instructions and 6,007 assistant messages over 23 active days; 4,024.8M tokens; about US$5,589 at API list prices. Validation: 100-member ensembles, with 95.3% of z-scores within |z|≤2; components to 1e-13 relative error. Speed: 1.71x on GH200 and 1.54x on MI300A, compared with the *existing* Fortran/OpenACC GPU version. The authors "aim to make a production configuration" available. — [arXiv](https://arxiv.org/abs/2610.41313); [HTML](https://arxiv.org/html/2610.41313)
 - FESOM2 ocean model (AWI, 9 Jun 2026): Claude Code with Opus 4.7, about 74,000 lines, Fortran → C → Kokkos. Validation: the Kokkos build on CPU is bit-identical to the C reference; on GPU it is statistically close (SST correlation 1.0, bias +1e-4 °C). One A100 node runs 1.6-3.7x faster than a 128-core CPU node; 32 GH200 nodes on JUPITER reach 3.5 simulated years per day. "Not yet a production replacement." — [arXiv](https://arxiv.org/abs/2606.11356); [HTML](https://arxiv.org/html/2606.11356)
 - ORB5X gyrokinetic plasma code (Sadr et al.; v2 8 Sep 2026): Fortran to C++/Kokkos, "almost machine accuracy" against Fortran on initial test cases, runs on LUMI-G and Daint-Alps; no speed figures. — [arXiv](https://arxiv.org/abs/2607.17363)
 - Agentic Fortran-to-Kokkos workflow (Gupta et al., report LA-UR-25-28882; v5 28 Oct 2026): kernels only; GPT-5 and o4-mini-high were the most reliable, while open-weight models struggled. — [arXiv](https://arxiv.org/abs/2509.12443)
-- Validation approaches range from element-wise tolerance on dumps (CReSS), through ensemble statistics (NICAM) and bitwise checks against an intermediate C reference (FESOM2), to bit-identical FP64 on GPU (CPPWRF, achieved by "the order of every sum… the glibc vector math" and turning fused multiply-add contraction off). — [CPPWRF](https://github.com/Xassemblianist/CPPWRF)
+- Validation ranges from element-wise tolerance on dumps (CReSS) and ensemble statistics (NICAM) to bitwise checks against a C reference (FESOM2) and bit-identical FP64 on GPU (CPPWRF, by replicating summation order and libm and disabling fused multiply-add).
 
 ### Inferences
 - Of the 28 codes, at least 12 already had hand-written GPU paths in their main or official lines; GROMACS probably also does, but that was not re-verified. That leaves perhaps 8-12 CPU-only codes (WRF and FDS confirmed; the rest unverified). For the prior to come true, four to six of those must have an AI-built port *in use* by 2028.
@@ -158,9 +157,9 @@ The pattern already runs in operational weather forecasting and is built into ag
   - NOAA (17 Dec 2025): AIGFS uses 0.3% of GFS compute but degrades tropical-cyclone intensity; AIGEFS uses 9% of GEFS compute. HGEFS, a 62-member physics-plus-AI ensemble, "consistently outperforms" both, which NOAA calls the first operational hybrid. — [NOAA](https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models)
   - Canada (27 May 2026): an operational hybrid in which the AI model GEML "guides" the physics model at large scales by spectral nudging, while small scales evolve under physics; Canada calls it "the first of its kind". — [ECCC](https://www.canada.ca/en/environment-climate-change/news/2026/05/environment-and-climate-change-canada-launches-ai-weather-model-to-strengthen-forecasting-for-severe-weather.html)
   - DWD's AICON (operational 2 Mar 2026) starts from ICON analyses. [PP] — [arXiv 2608.24651](https://arxiv.org/abs/2608.24651)
-- **CFD [CC].** Ansys Fluent "AI initialization" with NVIDIA PhysicsNeMo/DoMINO "multiplies GPU time gains by 10x"; "two weeks… about 40 minutes". — [Synopsys, 28 Oct 2025](https://news.synopsys.com/2025-10-28-Synopsys-Spotlights-Agentic-AI,-Accelerated-Computing,-and-AI-Physics-at-NVIDIA-GTC-Washington,-D-C). At Blue Origin, AI-proposed candidates were "validated by CUDA-X-accelerated solvers". — [NVIDIA blog, 28 Oct 2025](https://blogs.nvidia.com/blog/ai-physics-aerospace-automotive-design-engineering). No evidence was found that Fluent's AI initialisation is generally available or the default.
-- **EDA [CC].** In Cadence's Maestro, "principled algorithms and deterministic solvers" check agent output against "ground truth". — [engineering.com, 27 Oct 2026](https://www.engineering.com/cadence-launches-ai-model-portfolio-for-engineering-workflows/). Siemens describes its Fuse agents as "self-verifying". — [Siemens](https://news.siemens.com/en-us/siemens-tsmc-oip-ecosystem-forum-2026/)
-- **Lithography.** Calibre with cuLitho accelerates physics-based simulation; it is not machine learning. — [Calibre blog](https://blogs.sw.siemens.com/calibre/2026/10/14/the-virtuous-cycle-of-silicon-how-siemens-is-accelerating-the-era-of-physical-ai-with-nvidia-culitho/). TSMC "is using" cuLitho for "20-50% improvement in cost effectiveness or cycle time" [CC]. — [NVIDIA, 1 Jun 2026](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-TSMC-Bring-AI-Into-Fabs-to-Advance-Semiconductor-Design-and-Manufacturing/default.aspx). Synopsys Proteus describes "AI-driven solutions" but "physics-based mask synthesis tools". — [Synopsys](https://www.synopsys.com/silicon/mask-synthesis/proteus.html)
+- **CFD [CC].** Ansys Fluent "AI initialization" with NVIDIA PhysicsNeMo/DoMINO "multiplies GPU time gains by 10x"; "two weeks… about 40 minutes". (Synopsys, 28 Oct 2025, Q3). At Blue Origin, AI-proposed candidates were "validated by CUDA-X-accelerated solvers". — [NVIDIA blog, 28 Oct 2025](https://blogs.nvidia.com/blog/ai-physics-aerospace-automotive-design-engineering). No evidence was found that Fluent's AI initialisation is generally available or the default.
+- **EDA [CC].** In Cadence's Maestro, "principled algorithms and deterministic solvers" check agent output against "ground truth". — [engineering.com, 27 Oct 2026](https://www.engineering.com/cadence-launches-ai-model-portfolio-for-engineering-workflows/). Siemens describes its Fuse agents as "self-verifying" (Siemens forum page, Q3).
+- **Lithography.** Calibre with cuLitho accelerates physics-based simulation; it is not machine learning (Calibre blog, Q1g). TSMC "is using" cuLitho for "20-50% improvement in cost effectiveness or cycle time" [CC]. — [NVIDIA, 1 Jun 2026](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-TSMC-Bring-AI-Into-Fabs-to-Advance-Semiconductor-Design-and-Manufacturing/default.aspx). Synopsys Proteus describes "AI-driven solutions" but "physics-based mask synthesis tools". — [Synopsys](https://www.synopsys.com/silicon/mask-synthesis/proteus.html)
 - **Drug discovery.** Boltz-2 (MIT et al., 18 Jun 2025) [PP, 2025] claims affinity predictions approaching free-energy-perturbation (FEP) accuracy at ≥1000x lower compute. — [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1). OpenFE offers open-source FEP under the MIT licence. — [openfree.energy](https://openfree.energy/)
 
 ### Inferences
@@ -179,7 +178,7 @@ The order depends on the domain. GPU speed has come overwhelmingly from hand-wri
 ### Cited Findings
 - **Speed has come mostly from hand-written code.**
   - Examples: OpenFOAM v2606 (vendors and laboratories), MOOSE, MPAS, ICON, LAMMPS, NekRS (see Q2).
-  - Synopsys reports ">20 GPU-enabled… EDA and multiphysics solutions" [CC]. — [Synopsys](https://news.synopsys.com/2026-10-21-Synopsys-at-NVIDIA-GTC-Berlin-Delivering-Engineering-Precision-with-Speed)
+  - Synopsys reports ">20 GPU-enabled… EDA and multiphysics solutions" [CC] (21 Oct 2026 release, Q3).
   - cuLitho in Calibre and at TSMC [CC] (Q4).
   - AI-rewritten ports report modest gains: NICAM 1.71x over an existing GPU code, FESOM2 1.6-3.7x, CReSS 5.1x.
 - **Accuracy, counter-evidence from weather.**
@@ -188,9 +187,8 @@ The order depends on the domain. GPU speed has come overwhelmingly from hand-wri
 - **Accuracy, supporting evidence (learned models fail outside their data or need physics).**
   - ECMWF stopped running GraphCast, Aurora, Pangu and FourCastNet. Fine-tuned models degraded after the physics analysis changed, because fine-tuning "introduces greater sensitivity to the exact initiating analysis". — [ECMWF blog, 11 May 2026](https://www.ecmwf.int/en/about/media-centre/aifs-blog/2026/farewell-external-ai-models)
   - AICON underestimates winds and smooths small scales. — [arXiv 2608.24651](https://arxiv.org/abs/2608.24651)
-  - The NHC: "None of the models are perfect". — [NWS](https://www.weather.gov/news/261102-AI-Hurricane-Forecasting)
   - Interatomic potentials degrade about 10x out of distribution (Q1c), and raw surrogate residuals (about 1e-3) are far above the solver's 1e-8 acceptance level (Q1b).
-- **Scale.** NHC: "we may soon have thousands of possible forecast outcomes". — [NWS](https://www.weather.gov/news/261102-AI-Hurricane-Forecasting). Agent runs cost about $0.2 per case (ChatCFD).
+- **Scale.** NHC: "we may soon have thousands of possible forecast outcomes", though "None of the models are perfect". — [NWS](https://www.weather.gov/news/261102-AI-Hurricane-Forecasting). Agent runs cost about $0.2 per case (ChatCFD).
 
 ### Inferences
 - "Speed via AI rewriting" is the least supported link: by 2026, AI rewriting has added little of the GPU speed actually deployed.
@@ -216,10 +214,10 @@ The second half is supported. The first half is weakened, because vendors are op
   - Neural Concept MCP Bridge (19 Oct 2026), driving CATIA, NX, ANSA, HyperMesh and Abaqus. — [Neural Concept](https://www.neuralconcept.com/press-release/neural-concept-launches-mcp-bridge)
 - **Vendor stance.**
   - Dassault's CEO Daloz rejected "frontier model + MCP" approaches and called a general model "useless" for advanced design exploration. — [Schnitger, 26 Aug 2026](https://schnitgercorp.com/2026/08/26/plmish-earnings-check-what-have-we-learned/)
-  - Cadence's CFO: agentic AI is "a demand accelerator for EDA". — [TradingKey](https://www.tradingkey.com/news/transcripts/262240586-tradingkey)
+  - Cadence's CFO: agentic AI is "a demand accelerator for EDA" (Q3 2026 call, see Q3).
 - **Sign-off certification.** At TSMC's partner forum (23 Sep 2026), Cadence's digital, sign-off and custom flows were certified for A16 and A14; Siemens Calibre nmDRC, nmLVS, xACT and PERC were certified for A14; Synopsys flows "implementation to signoff" were certified for A14. — [Futurum, 24 Sep 2026](https://futurumgroup.com/insights/tsmcs-oip-forum-turns-agentic-chip-design-demos-into-production-flows/)
 - **No visible loss of ground in 2026.**
-  - Siemens Digital Industries software revenue rose 15% in fiscal Q3 2026, with EDA up more than 30%. Dassault's Q2 revenue was €1.556B (+4%), with 3DEXPERIENCE +14% and cloud +60%. — [Schnitger](https://schnitgercorp.com/2026/08/26/plmish-earnings-check-what-have-we-learned/)
+  - Siemens Digital Industries software revenue rose 15% in fiscal Q3 2026, with EDA up more than 30%. Dassault's Q2 revenue was €1.556B (+4%), with 3DEXPERIENCE +14% and cloud +60% (Schnitger, as above).
   - Cadence reported a record $8.2B backlog. — [TradingKey](https://www.tradingkey.com/news/transcripts/262240586-tradingkey)
   - One market report read the July selloff as pricing "a future moat risk, not a verified revenue loss". — [ts2.tech](https://ts2.tech/en/synopsys-nasdaqsnps-stock-sinks-as-kimi-chip-demo-tests-the-eda-moat/)
 
@@ -240,11 +238,11 @@ New US, Japanese and European flagships are AI-first, and native FP64 per GPU is
 - **Japan.** FugakuNEXT (Q1i). RIKEN's route to 100x relies on software: surrogates and physics-informed networks (10-20x), mixed precision, and FP64 emulation by the Ozaki scheme (2-8x). — [RIKEN PDF](https://www.r-ccs.riken.jp/events/20260306-1/fugakunext-3.pdf)
 - **TOP500 (June 2026).**
   - No. 1 is LineShine (National Supercomputing Centre in Shenzhen): 2.198 EF on HPL, CPU-only (304-core LX2 processors), the leader on HPCG at 22.00 PF, and "the first China-based system to lead the TOP500 since Sunway TaihuLight in 2017". JUPITER Booster (GH200) is No. 5 at 1.000 EF. Eight of the top 10 use accelerators. — [TOP500](https://top500.org/lists/top500/2026/06/)
-  - Korea, Taiwan, India and Israel in the top 100 are mostly AI clouds: NHN Cloud B200 (No. 20), Samsung SSC-24 H100 (25), Yotta Shakti H100 (32), NCHC Nano 4 H200 (33), Israel-1 H100 (59), SDS AI B200 (70-71). — [TOP500 list](https://top500.org/lists/top500/list/2026/06/)
+  - Korea, Taiwan, India and Israel in the top 100 are mostly AI clouds: NHN Cloud B200 (No. 20), Samsung SSC-24 H100 (25), Yotta Shakti H100 (32), NCHC Nano 4 H200 (33), Israel-1 H100 (59), SDS AI B200 (70-71) (same list).
 - **HPL-MxP (June 2026).** El Capitan 16.68 EF (9.2x its HPL), Aurora 11.64, Frontier 11.39, LineShine 7.92 (only 3.6x), JUPITER 7.92, SoftBank CHIE-4 3.30 (24.4x). FP8 entries have been "no longer admissible" since November 2025. — [HPL-MxP](https://hpl-mxp.org/results.md)
 - **FP64 per device.**
   - Rubin has about 33 TF native FP64, below the H100. FP64 matrix rate fell from 67 TF on Hopper to 40-45 TF on Blackwell. Emulation in CUDA libraries gives Rubin "up to 200 TFLOPS" of FP64 matrix performance. — [The Register, 18 Jan 2026](https://www.theregister.com/2026/01/18/nvidia_fp64_emulation/)
-  - NVIDIA's Dan Ernst: "it's still FP64. It's not mixed precision." AMD's Nicholas Malaya: emulation gives little or no benefit for 60-70% of HPC workloads, since "the vast majority of real HPC workloads rely on vector FMA, not DGEMM". He adds that it "starts to break down" for poorly conditioned problems, uses about twice the memory, and does not fully follow IEEE rules. AMD's MI430X keeps FP64 in hardware. — [The Register](https://www.theregister.com/2026/01/18/nvidia_fp64_emulation/)
+  - NVIDIA's Dan Ernst: "it's still FP64. It's not mixed precision." AMD's Nicholas Malaya: emulation gives little or no benefit for 60-70% of HPC workloads, since "the vast majority of real HPC workloads rely on vector FMA, not DGEMM". He adds that it "starts to break down" for poorly conditioned problems, uses about twice the memory, and does not fully follow IEEE rules. AMD's MI430X keeps FP64 in hardware (same article).
 - **Mixed precision in practice.** CalculiX's GPU direct solver defaults to FP32 factorisation with FP64 GMRES refinement, and consumer GPUs run FP64 at 1/64 of their FP32 rate. — [ccx-gpu](https://github.com/Tj-Barrett/ccx-gpu). The CReSS port runs in single precision (Q1a), and CPPWRF offers an FP32 fast mode (Q2).
 
 ### Inferences
@@ -262,80 +260,14 @@ New US, Japanese and European flagships are AI-first, and native FP64 per GPU is
 5. The baseline and hardware behind Siemens/NVIDIA's 10-17x; no foundry confirmation.
 6. Any independent measurement of time saved by agents.
 7. Data on industrial adoption of open-source solvers.
-8. US DOE Lux, Discovery and Doudna; Alice Recoque; KISTI-6; India's systems. The HPCwire Ozaki article.
+8. The systems listed under Q7 Gaps.
 9. Which FP64 figure for FugakuNEXT is right: The Next Platform's 30 EF or RIKEN's ≥2.6 EF. RIKEN's ISC2026 handout and basic-design report (29 May 2026) were not read.
 10. Regional coverage is thin for Korea, India and Israel (TOP500 entries only) and for Chinese simulation-AI work beyond Tsinghua, Moonshot and LineShine.
 
 ## Dated source list
-Papers:
-- [2608.13122](https://arxiv.org/abs/2608.13122), 13 Aug 2026
-- [2608.04400](https://arxiv.org/abs/2608.04400), 5 Aug 2026
-- [2605.08988](https://arxiv.org/abs/2605.08988), 9 May / 22 Oct 2026
-- [2604.18491](https://arxiv.org/abs/2604.18491), 20/27 Apr 2026
-- [2509.18178](https://arxiv.org/abs/2509.18178), Sep 2025
-- [2407.07218](https://arxiv.org/abs/2407.07218), Jul 2024 (Nature Machine Intelligence, Oct 2024)
-- [2610.41313](https://arxiv.org/abs/2610.41313), 30 Oct 2026
-- [2606.11356](https://arxiv.org/abs/2606.11356), 9 Jun 2026
-- [2607.17363](https://arxiv.org/abs/2607.17363), Jul/Sep 2026
-- [2509.12443](https://arxiv.org/abs/2509.12443), v5 28 Oct 2026
-- [2512.22215](https://arxiv.org/abs/2512.22215), Dec 2025
-- [2506.02019](https://arxiv.org/abs/2506.02019), v3 7 Feb 2026
-- [2509.20374](https://arxiv.org/abs/2509.20374), v3 26 Apr 2026
-- [2504.06260](https://arxiv.org/abs/2504.06260), Apr 2025
-- [2608.24651](https://arxiv.org/abs/2608.24651), 25 Aug 2026
-- [Boltz-2](https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1), 18 Jun 2025
-
-Vendors and companies:
-- Siemens: [14 Oct 2026](https://news.siemens.com/en-us/siemens-calibre-nvidia-culitho/); Calibre blogs of [14 Oct 2026](https://blogs.sw.siemens.com/calibre/2026/10/14/the-virtuous-cycle-of-silicon-how-siemens-is-accelerating-the-era-of-physical-ai-with-nvidia-culitho/) and [13 Apr 2026](https://blogs.sw.siemens.com/calibre/?p=3784); [TSMC forum page, Sep 2026](https://news.siemens.com/en-us/siemens-tsmc-oip-ecosystem-forum-2026/)
-- NVIDIA and TSMC: [1 Jun 2026](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-TSMC-Bring-AI-Into-Fabs-to-Advance-Semiconductor-Design-and-Manufacturing/default.aspx)
-- Synopsys: [28 Oct 2025](https://news.synopsys.com/2025-10-28-Synopsys-Spotlights-Agentic-AI,-Accelerated-Computing,-and-AI-Physics-at-NVIDIA-GTC-Washington,-D-C), [11 Mar 2026](https://news.synopsys.com/2026-03-11-Synopsys-Launches-Ansys-2026-R1-to-Re-Engineer-Engineering-with-Joint-Solutions-and-AI-Powered-Products), [28 Sep 2026](https://news.synopsys.com/2026-09-28-Synopsys-Powers-Autonomous-Engineering-with-a-Broad-Portfolio-of-Long-Horizon-Agents-and-Autopilot-Platform), [21 Oct 2026](https://news.synopsys.com/2026-10-21-Synopsys-at-NVIDIA-GTC-Berlin-Delivering-Engineering-Precision-with-Speed)
-- NVIDIA blog: [28 Oct 2025](https://blogs.nvidia.com/blog/ai-physics-aerospace-automotive-design-engineering)
-- Cadence: [ChipStack, 25 Feb 2026](https://eetimes.itmedia.co.jp/ee/articles/2602/25/news040.html); [Maestro, 27 Oct 2026](https://www.engineering.com/cadence-launches-ai-model-portfolio-for-engineering-workflows/); [Q3 call, 26 Oct 2026](https://www.tradingkey.com/news/transcripts/262240586-tradingkey)
-- Dassault: [Q3 call](https://www.investing.com/news/transcripts/earnings-call-transcript-dassault-systemes-beats-q3-2026-estimates-shares-fall-93CH-4978361)
-- Keysight: [6 Oct 2026](https://www.keysight.com/us/en/about/newsroom/catalog/news-release.2026.1006_pr26-095-keysight-advances-its-design-software-with-agentic-ai.html)
-- Neural Concept: [19 Oct 2026](https://www.neuralconcept.com/press-release/neural-concept-launches-mcp-bridge)
-- Moonshot: [Kimi K3 blog, Jul 2026](https://www.kimi.com/blog/kimi-k3)
-
-Market coverage:
-- [Investing.com, 17 Jul 2026](https://www.investing.com/news/stock-market-news/why-is-cadence-design-systems-stock-plummeting-today-93CH-4798909)
-- [Yahoo Finance, 17 Jul](https://finance.yahoo.com/technology/ai/articles/cadence-synopsys-slide-kimi-k3-162824133.html)
-- [TIKR, 18 Jul](https://www.tikr.com/blog/cadence-stock-fell-9-in-a-day-on-a-chinese-ai-chip-demo-heres-where-the-stock-could-go-in-2026)
-- [ts2.tech, Jul 2026](https://ts2.tech/en/synopsys-nasdaqsnps-loses-6-3-billion-following-kimi-k3-chip-design-demonstration/)
-- [Mickevicius, 23 Jul](https://vidasmickevicius.substack.com/p/will-ai-disrupt-chip-design-business)
-- [Tech Fund, 27 Jul](https://www.techinvestments.io/p/the-eda-crash-and-the-massive-ai)
-- [36Kr, 29 Sep](https://eu.36kr.com/de/p/4003768849258377)
-- [Schnitger, 26 Aug](https://schnitgercorp.com/2026/08/26/plmish-earnings-check-what-have-we-learned/)
-- [Futurum, 24 Sep](https://futurumgroup.com/insights/tsmcs-oip-forum-turns-agentic-chip-design-demos-into-production-flows/)
-- [stockanalysis, to 11 Nov 2026](https://stockanalysis.com/stocks/cdns/history/)
-
-Public bodies:
-- RIKEN: [22 Aug 2025](https://www.riken.jp/en/news_pubs/news/2025/20250822_1/index.html); [workshop PDF, 6 Mar 2026](https://www.r-ccs.riken.jp/events/20260306-1/fugakunext-3.pdf); [project page](https://www.r-ccs.riken.jp/fugaku-next/)
-- [US Department of Energy, 28 Oct 2025](https://www.energy.gov/articles/energy-department-announces-new-partnership-nvidia-and-oracle-build-largest-doe-ai)
-- ECMWF: [25 Feb 2025](https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational), [1 Jul 2025](https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ensemble-ai-forecasts-become-operational), [11 May 2026](https://www.ecmwf.int/en/about/media-centre/aifs-blog/2026/farewell-external-ai-models), [12 May 2026](https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live)
-- [NOAA, 17 Dec 2025](https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models)
-- [NHC 2025 verification](https://www.nhc.noaa.gov/verification/pdfs/Verification_2025.pdf)
-- [ECCC, 27 May 2026](https://www.canada.ca/en/environment-climate-change/news/2026/05/environment-and-climate-change-canada-launches-ai-weather-model-to-strengthen-forecasting-for-severe-weather.html)
-- TOP500 and HPL-MxP: [TOP500, Jun 2026](https://top500.org/lists/top500/2026/06/); [HPL-MxP](https://hpl-mxp.org/results.md)
-
-Trade press:
-- [The Register, 18 Jan 2026](https://www.theregister.com/2026/01/18/nvidia_fp64_emulation/)
-- [The Next Platform, 22 Aug 2025](https://www.nextplatform.com/hpc/2025/08/22/nvidia-tapped-to-accelerate-rikens-fugakunext-supercomputer/1638019)
-
-Code repositories and documentation (read 12 Nov 2026):
-- [OpenFOAM v2606](https://www.openfoam.com/node/684)
-- [SU2](https://github.com/su2code/SU2/releases)
-- [Code_Saturne](https://raw.githubusercontent.com/code-saturne/code_saturne/master/NEWS.md)
-- [NekRS](https://github.com/Nek5000/nekRS)
-- [MFEM](https://mfem.org/gpu-support/)
-- [MOOSE](https://github.com/idaholab/moose/blob/master/framework/doc/content/syntax/Kokkos/index.md)
-- [LAMMPS](https://docs.lammps.org/Speed_packages.html)
-- [MPAS](https://github.com/MPAS-Dev/MPAS-Model/releases)
-- [WRF](https://github.com/wrf-model/WRF/releases)
-- [CPPWRF](https://github.com/Xassemblianist/CPPWRF)
-- [FDS](https://github.com/firemodels/fds/releases)
-- [ICON](https://www.icon-model.org/)
-- [OpenLB](https://www.openlb.net/news/)
-- [ccx-gpu](https://github.com/Tj-Barrett/ccx-gpu)
-- [HPC-Skills](https://github.com/SciMate-AI/HPC-Skills)
-- [PyAnsys](https://docs.pyansys.com/)
-- [MATLAB MCP server](https://github.com/matlab/matlab-mcp-core-server)
+All accessed 12 Nov 2026; each URL is given inline above.
+- **Papers and preprints:** arXiv 2608.13122 (13 Aug 2026); 2608.04400 (5 Aug 2026); 2605.08988 (9 May, v2 22 Oct 2026; NeurIPS 2026 D&B); 2604.18491 (20/27 Apr 2026); 2509.18178 (17/30 Sep 2025); 2407.07218, Nature Machine Intelligence 6(10) (Jul/Oct 2024); 2610.41313 NICAM (30 Oct 2026); 2606.11356 FESOM2 (9 Jun 2026); 2607.17363 ORB5X (19 Jul, v2 8 Sep 2026); 2509.12443 (v5 28 Oct 2026); 2512.22215 SPUMA (22 Dec 2025); 2506.02019 ChatCFD (v3 7 Feb 2026); 2509.20374 CFDLLMBench (v3 26 Apr 2026); 2504.06260 FEABench (8 Apr 2025); 2608.24651 AICON (25 Aug 2026); bioRxiv Boltz-2 (18 Jun 2025).
+- **Vendors and companies:** Siemens release (14 Oct 2026), Calibre blog (14 Oct 2026), Siemens TSMC forum page (Sep 2026); NVIDIA–TSMC (1 Jun 2026); NVIDIA blog (28 Oct 2025); Synopsys releases (28 Oct 2025; 11 Mar, 28 Sep, 21 Oct 2026); Synopsys Proteus page (undated); PyAnsys docs (undated); Cadence ChipStack (EE Times Japan, 25 Feb 2026), Maestro (engineering.com, 27 Oct 2026), Q3 2026 call (TradingKey, 26 Oct 2026); Dassault Q3 2026 call (Investing.com, Oct 2026); Keysight (6 Oct 2026); Neural Concept (19 Oct 2026); MATLAB MCP server (GitHub, undated); Moonshot Kimi K3 blog (Jul 2026).
+- **Market coverage and trade press:** Investing.com (17 Jul 2026); Yahoo Finance (17 Jul); TIKR (18 Jul); ts2.tech (17 Jul); Mickevicius Substack (23 Jul); Tech Fund (27 Jul); 36Kr (29 Sep); Schnitger Corp (26 Aug); Futurum (24 Sep); stockanalysis (to 11 Nov 2026); The Register (18 Jan 2026); The Next Platform (22 Aug 2025); ScienceDaily/PPPL (25 Sep 2024); Signals (Aug 2026); extruct (aggregator, undated); Wikipedia, Moonshot AI.
+- **Public bodies:** RIKEN (22 Aug 2025; workshop PDF 6 Mar 2026; project page); US DOE (28 Oct 2025); ECMWF (25 Feb 2025; 1 Jul 2025; 11 May 2026; 12 May 2026); NOAA (17 Dec 2025, updated 17 Feb 2026); NHC 2025 verification report (2026); NWS Q&A with the NHC (undated, after the 2025 season); ECCC (27 May 2026); TOP500 and HPL-MxP lists (June 2026).
+- **Code repositories and documentation:** OpenFOAM v2606 page; SU2 releases (v8.6.0, 30 Oct); Code_Saturne NEWS (9.2.0, 6 Jul 2026); NekRS (v26.0); MFEM GPU page; MOOSE Kokkos doc; LAMMPS manual (30 Sep 2026); MPAS releases (8.4.x); WRF releases (4.8.0, 8 Jun 2026); CPPWRF (created 13 Oct 2026); FDS releases (6.11.1, 10 Jul 2026); ICON (2026.10, 30 Oct 2026; Gordon Bell news, 15 Dec 2025); OpenLB news (1.9, 19 Dec 2025); OpenMC release notes (0.16.0); GROMACS 2026.4 notes; ccx-gpu (created 7 Nov 2026); HPC-Skills (created 16 Mar 2026).
