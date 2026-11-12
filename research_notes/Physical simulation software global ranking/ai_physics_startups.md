@@ -2,22 +2,22 @@
 
 **Summary for the report writer**
 
-1. **Shortlist.** At most two newer entrants plausibly belong among the 8–15 companies that matter most in physical simulation, and only as "emerging" slots.
-   - PhysicsX is the best-funded pure play: $300M Series C at about $2.4B (8 Jun 2026), about 350 staff, about $50M of 2026 revenue (Bloomberg, reported), with Siemens, NVIDIA and Applied Materials as investors.
+1. **Shortlist.** At most two newer entrants plausibly merit "emerging" slots among the 8–15 that matter most.
+   - PhysicsX, the best-funded pure play: $300M at about $2.4B (8 Jun 2026); about 350 staff; about $50M 2026 revenue (Bloomberg, reported); backed by Siemens, NVIDIA and Applied Materials.
    - The second slot would go to one of the two owners of GPU-native solvers:
      - Flexcompute: Flow360 for CFD and Tidy3D for EM; claims 250+ customers; strategic investment from Samsung and Applied Materials (Oct 2026).
      - Luminary Cloud: its own GPU CFD solver plus SHIFT models; $72M Series B (Sep 2025) with NVentures.
    - Neural Concept ($100M, Dec 2025) is the most widely deployed surrogate and workflow layer in automotive, but it owns no solver.
    - Vinci ($250M at $1.5B, Oct 2026) is too new to rank and has no named customers.
    - Applied Intuition ($15B; Sacra estimates ARR of $830M in 2025) outweighs them all, but it sells autonomy and vehicle software. Rank it only if the list counts AV simulation.
-2. **Judges versus layers.** Only Flexcompute and Luminary own a solver whose results customers could accept for sign-off (a "judge"). PhysicsX and Neural Concept sell learned models plus delivery and workflow, trained on data from other companies' solvers; PhysicsX's LGM-Aero was trained on Siemens STAR-CCM+ and Nastran data. That layer is the most exposed to Ansys SimAI, Siemens (now owner of Altair PhysicsAI), NVIDIA's PhysicsNeMo and Apollo, and customers' own models.
+2. **Judges versus layers.** Only Flexcompute and Luminary own a solver whose results customers could accept for sign-off (a "judge"). PhysicsX and Neural Concept sell learned models, delivery and workflow trained on others' solver data (PhysicsX's LGM-Aero on Siemens STAR-CCM+/Nastran). That layer is the most exposed to Ansys SimAI, Siemens (now owner of Altair PhysicsAI), NVIDIA's PhysicsNeMo and Apollo, and customers' own models.
 3. **Evidence is thin.**
    - No neutral benchmark tests the start-ups' commercial models head to head. Their workshop entries (AutoCFD4/5, HLPW5) and benchmark "records" are self-reported.
    - McGreivy and Hakim (2024) found that 79% of ML-for-fluids papers claiming to beat standard methods used weak baselines.
    - The best customer test is the Dallara/IBM preprint (arXiv 2604.18491). Its thresholds were set in advance; the surrogate met the usability threshold on 20 of 20 parts and the CFD-replacement threshold on 18 of 20. The prior is therefore roughly right but overstated, and the model is IBM's, not a start-up's.
 4. **Sign-off.** I found no public case of a regulator or customer accepting an entrant's learned model for certification. Flow360 results feed eVTOL aero databases and loads work alongside wind tunnels. The FIA plans to use surrogates only for writing rules.
 5. **Resilience.** Capital is concentrated: PhysicsX has raised about $500M and Vinci about $296M. Luminary's 2024 "$115M" was $15M of equity and $100M of debt. Consolidation has begun: CoreWeave bought Monolith (Oct 2025) and Mistral bought Emmi (May 2026; about €300M reported). In a financing pause around 2028, the likeliest to be sold are sub-scale or debt-funded firms and those priced at high revenue multiples (PhysicsX is at about 48x 2026E revenue).
-6. **Exposure.** There is no listed pure play and no announced IPO. The routes are thin secondary markets (EquityZen, Hiive and Caplight list PhysicsX; no public prices) and listed strategic holders (Siemens, Applied Materials, NVIDIA, Samsung Electronics, AMD, CoreWeave, IBM) whose stakes are immaterial to them.
+6. **Exposure.** No listed pure play and no announced IPO. Routes: thin secondary markets (EquityZen, Hiive, Caplight list PhysicsX; no public prices) and listed strategic holders (Siemens, Applied Materials, NVIDIA, Samsung, AMD, CoreWeave, IBM) whose stakes are immaterial.
 
 ## 1. Profiles, funding, customers, partnerships and acquisitions (2024–2026)
 
