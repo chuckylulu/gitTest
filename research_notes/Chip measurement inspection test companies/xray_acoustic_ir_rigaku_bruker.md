@@ -232,13 +232,11 @@ Rigaku (primary documents via the company's E-IR/TDnet feed [R20] https://ssl4.e
 - [R2] Consolidated Financial Results, nine months to 30 Sep 2026 (IFRS), 11 Nov 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2911324/00.pdf
 - [R3] FY2026 2Q Earnings Presentation, 7 Aug 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2869071/00.pdf
 - [R4] Speech and Q&A, FY2026 2Q briefing (held 7 Aug, posted 10 Aug 2026): https://ssl4.eir-parts.net/doc/268A/ir_material_for_fiscal_ym6/213556/00.pdf
-- [R5] 1H 2026 results, 7 Aug 2026: https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260807/20260807514006.pdf (TDnet copy: https://ssl4.eir-parts.net/doc/268A/tdnet/2867820/00.pdf)
 - [R6] Consolidated Financial Results FY2025, 13 Feb 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2760729/00.pdf
 - [R7] FY2025 slides with transcript, 13 Feb 2026: https://ssl4.eir-parts.net/doc/268A/ir_material_for_fiscal_ym6/213551/00.pdf
 - [R8] Annual Securities Report (excerpt) FY2025, 24 Mar 2026: https://ssl4.eir-parts.net/doc/268A/ir_material_for_fiscal_ym7/213561/00.pdf
 - [R9] Integrated Report 2026, 18 Sep 2026: https://ssl4.eir-parts.net/doc/268A/ir_material_for_fiscal_ym9/215585/00.pdf
 - [R10] Capital and business alliance with Onto, 21 Apr 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2792714/00.pdf
-- [R11] Secondary offering notice, 22 May 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2820918/00.pdf
 - [R12] Offering price determination, 1 Jun 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2828267/00.pdf
 - [R13] Share transfer to Onto implemented, 12 Aug 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2870769/00.pdf
 - [R14] Change in principal shareholder (Shimura), 27 Aug 2026: https://ssl4.eir-parts.net/doc/268A/tdnet/2878733/00.pdf
@@ -263,7 +261,6 @@ Bruker:
 - [B7] Q3 2026 call transcript (Earnings Whispers), 4 Nov 2026: https://www.earningswhispers.com/transcript/BRKR/Q32026
 - [B8] MarketBeat call highlights, 4 Nov 2026: https://www.marketbeat.com/instant-alerts/transcript-bruker-q3-earnings-call-highlights-2026-11-04/
 - [B9] Finviz / Earnings Whispers analysis, 4 Nov 2026: https://finviz.com/news/415645/brukers-margin-led-beat-outruns-a-flat-top-line-as-bookings-recovery-broadens
-- [B10] StockStory, 5 Nov 2026: https://stockstory.org/us/stocks/nasdaq/brkr/news/earnings-call/brkr-q3-2026-deep-dive-margin-expansion-outpaces-revenue-as-cost-actions-take-hold
 - [B11] Bruker semiconductor product pages (accessed 12 Nov 2026): https://www.bruker.com/en/products-and-solutions/semiconductor-solutions.html ; https://www.bruker.com/en/products-and-solutions/semiconductor-solutions/automated-x-ray-metrology-systems.html ; https://www.bruker.com/en/products-and-solutions/semiconductor-solutions/automated-afm-and-cipt-systems.html
 - [B12] stockanalysis.com BRKR statistics (11 Nov 2026 close): https://stockanalysis.com/stocks/brkr/statistics/
 
