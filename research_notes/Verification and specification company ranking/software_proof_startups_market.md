@@ -189,139 +189,62 @@ Harmonic is the only independent North American company with a shipped, usage-pr
 ### Cited Findings and provisional assessments
 
 #### Harmonic
-- **a. Position.**
-  - The verdict comes from the open-source Lean 4 kernel, which Harmonic does not own. Harmonic does fund its steward ($300,000, Feb 2026) [PRIMARY]. https://harmonic.fun/news/lean-fro-donation/
-  - What Harmonic owns is the translation layer: it compiles SystemVerilog and SVA into Lean against "a hand-built model of digital circuits". It also owns the workflow in which Aristotle proposes properties and engineers commit them [COMPANY CLAIM]. https://harmonic.fun/news/ibex-mul-div-verification
-  - Provisional judgment: Harmonic owns part of the judge, namely the trusted semantic models and the property workflow, but not the checker. Proof search alone is the part most exposed to general models.
-- **b. Lead.**
-  - Tao-hosted Erdős problems wiki, frozen 30 Jun 2026: Aristotle appears in about 20 full-solution entries and more than 100 formalisation entries, against five for AxiomProver, one for Gauss and three for Aleph. The page warns "This page is not a benchmark" [INDEPENDENT]. https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems
-  - VERINA, 3 Dec 2025: 160 of 189 proved and 23 disproved, 96.8%, run on the public API, with no outside replication stated [COMPANY CLAIM]. https://harmonic.fun/news/verina-benchmark/
-  - A competitor reports Aristotle at 69% on VeriSoftBench, against Aleph's 94% [COMPANY CLAIM, competitor].
-  - Users: Tensordyne (quoted customer) and DIII-D (outside authors) [COMPANY CLAIM / SECONDARY]. No revenue disclosed.
-- **c. Revenue model.** Usage credits, "no seats or licenses", plus enterprise volume plans. This is the purest usage model in the group, and revenue scales with use. No figures disclosed [COMPANY CLAIM].
-- **d. Financial strength.** About $295M raised; last valued at $1.45B in Nov 2025; investors Ribbit (lead), Sequoia, Index, Kleiner Perkins, Emerson Collective, NVentures, Paradigm, ERA, Blossom, DST Global [PRIMARY/SECONDARY]. Burn rate, runway and customer concentration are not disclosed.
-- **e. Resilience (provisional).**
-  - Steady growth (about 55%): favourable. More AI-written code raises demand for checks that are paid for by use.
-  - Pause around 2028 (about 25%): the venture-dependent valuation is at risk, cushioned by about $295M raised. Chip-verification budgets may hold up better than budgets for software tools.
-  - Acceleration (about 20%): demand rises, but proving becomes a commodity. Harmonic's edge then rests on its semantic models, its continuous-integration integration and customer trust.
-  - Crypto exposure is low: Paradigm is an investor, but the product is not crypto-specific. Government exposure is small: the DIII-D facility is federally funded.
-- **Path forward.**
-  - (1) Already a tool, with no services arm seen.
-  - (2) Already usage-priced.
-  - (4) The engine is proprietary on top of open Lean. Harmonic open-sources peripheral tools only (python-memtools, pbcc).
-  - (6) Buyers so far: chip designers, C library maintainers, a fusion lab.
-  - (7) Harmonic positions Aristotle as a tool that coding agents call over MCP.
-- **Said versus done.** Said: "mathematical superintelligence". Done: shipped C and SystemVerilog verification with documentation, an SDK and MCP, published case studies, and funded the checker.
-- **What must go right.** Credit revenue must grow faster than the gap to general models narrows, and customers must accept Harmonic's semantic models as trustworthy.
-- **Verdict (provisional): coherent.** The proviso is that there is no evidence yet of paid volume.
+- **a. Position.** The verdict comes from the open-source Lean 4 kernel; Harmonic funds its steward ($300,000, Feb 2026) [PRIMARY]. https://harmonic.fun/news/lean-fro-donation/ . Harmonic owns the translation layer (SystemVerilog and SVA compiled into Lean against "a hand-built model of digital circuits") and the workflow in which Aristotle proposes properties and engineers commit them [COMPANY CLAIM]. https://harmonic.fun/news/ibex-mul-div-verification . Provisional judgment: it owns part of the judge (semantic models, property workflow) but not the checker; proof search alone is the part most exposed to general models.
+- **b. Lead.** Tao-hosted Erdős problems wiki (frozen 30 Jun 2026): Aristotle appears in about 20 full-solution and more than 100 formalisation entries, against five for AxiomProver, one for Gauss and three for Aleph; "This page is not a benchmark" [INDEPENDENT]. https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems . VERINA (3 Dec 2025): 160 of 189 proved and 23 disproved, 96.8%, on the public API, with no outside replication stated [COMPANY CLAIM]. https://harmonic.fun/news/verina-benchmark/ . A competitor puts Aristotle at 69% on VeriSoftBench against Aleph's 94% [COMPANY CLAIM, competitor]. Users: Tensordyne (quoted customer) and DIII-D (outside authors) [COMPANY CLAIM / SECONDARY]. No revenue disclosed.
+- **c. Revenue model.** Usage credits, "no seats or licenses", plus enterprise volume plans: the purest usage model in the group, scaling with use; no figures [COMPANY CLAIM].
+- **d. Financial strength.** About $295M raised; $1.45B post-money (Nov 2025); Ribbit (lead), Sequoia, Index, Kleiner Perkins, Emerson Collective, NVentures, Paradigm, ERA, Blossom, DST Global [PRIMARY/SECONDARY]. Burn, runway and customer concentration not disclosed.
+- **e. Resilience (provisional).** Steady growth (about 55%): favourable, since more AI-written code raises demand for usage-priced checks. Pause around 2028 (about 25%): the valuation is at risk, cushioned by about $295M raised; chip-verification budgets may hold up better than software-tool budgets. Acceleration (about 20%): demand rises but proving becomes a commodity, so the edge rests on semantic models, continuous-integration integration and customer trust. Crypto exposure low (Paradigm is an investor; the product is not crypto-specific); government exposure small (DIII-D is federally funded).
+- **Path forward.** (1) Already a tool, no services arm seen. (2) Already usage-priced. (4) Proprietary engine on open Lean; open-sources peripheral tools only (python-memtools, pbcc). (6) Buyers so far: chip designers, C library maintainers, a fusion lab. (7) Positions Aristotle as a tool that coding agents call over MCP. Said: "mathematical superintelligence". Done: shipped C and SystemVerilog verification with documentation, SDK and MCP, published case studies, funded the checker. Must go right: credit revenue grows faster than the gap to general models narrows, and customers trust Harmonic's semantic models.
+- **Verdict (provisional): coherent**, with the proviso that there is no evidence yet of paid volume.
 
 #### Axiom Math
-- **a. Position.** The verdict comes from the Lean kernel. Axiom's distinctive assets are very large open formalisations (CFSG, Stacks Project, Weil conjectures), which others could come to depend on, and a free Lean engine. Its proof runs used a "changing mix of models" [COMPANY CLAIM]. Provisional judgment: this is mainly a gap-filler that rides on frontier models, plus a corpus that is a public good.
-- **b. Lead.** Formalisation scale is unmatched among companies but rests on company claims checked only by the Lean kernel. I found no independent audit (section 6). The Putnam and IMO 2026 perfect scores are company claims. It has five entries on the Erdős wiki, and no named customers.
+- **a. Position.** Verdict from the Lean kernel. Distinctive assets: very large open formalisations (CFSG, Stacks Project, Weil conjectures) that others may come to depend on, and a free Lean engine; its proof runs used a "changing mix of models" [COMPANY CLAIM]. Provisional judgment: mainly a gap-filler riding on frontier models, plus a corpus that is a public good.
+- **b. Lead.** Formalisation scale is unmatched among companies but rests on company claims checked only by the Lean kernel; I found no independent audit (section 6). The Putnam and IMO 2026 perfect scores are company claims; five Erdős-wiki entries; no named customers.
 - **c. Revenue model.** None disclosed. Sacra reports no revenue and describes a licence-plus-credits model; AXLE is free [SECONDARY/PRIMARY].
-- **d. Financial strength.** About $264M raised ($64M seed plus $200M Series A); $1.6B+ valuation; about 40 staff in June 2026. That implies a long runway, though burn is not disclosed (my inference).
-- **e. Resilience (provisional).**
-  - Steady growth: adequate.
-  - Pause: weakest of the six. It has no revenue and a high valuation, but a large cash cushion.
-  - Acceleration: most exposed, if labs verify code directly (section 5).
-  - No crypto or government dependence seen.
-- **Path forward.**
-  - (1) Not applicable.
-  - (2) Intended licence plus usage, per Sacra only.
-  - (4) Open corpora and a free engine, so in effect an open-core approach.
-  - (6) Buyer not public.
-  - (7) High exposure.
-- **Said versus done.** Said: prove that AI-generated code is safe. Done: record-scale mathematics formalisations and a free engine. No code product appears on its site.
-- **Verdict (provisional): partly coherent.** The capital and capability are clear; the software commercial path is not yet shown.
+- **d. Financial strength.** About $264M raised ($64M seed plus $200M Series A); $1.6B+ valuation; about 40 staff in June 2026. A long runway is implied, though burn is undisclosed (my inference).
+- **e. Resilience (provisional).** Steady growth: adequate. Pause: weakest of the six (no revenue, high valuation, large cash cushion). Acceleration: most exposed, if labs verify code directly (section 5). No crypto or government dependence seen.
+- **Path forward.** (1) Not applicable. (2) Intended licence plus usage, per Sacra only. (4) Open corpora and a free engine, in effect open-core. (6) Buyer not public. (7) High exposure. Said: prove that AI-generated code is safe. Done: record-scale mathematics formalisations and a free engine; no code product on its site.
+- **Verdict (provisional): partly coherent.** Capital and capability are clear; the software commercial path is not yet shown.
 
 #### Galois
-- **a. Position.**
-  - Galois is an integrator that owns widely used open-source verification tools: SAW, Cryptol, Crux, GREASE, C2Rust, CAMET, Swanky [PRIMARY]. https://www.galois.com/articles/2025-year-in-review ; https://www.galois.com/
-  - Its scarce asset is trusted sign-off for the US government. It fills gaps that general models will not close for cleared, sector-specific work (provisional).
+- **a. Position.** An integrator that owns widely used open-source verification tools: SAW, Cryptol, Crux, GREASE, C2Rust, CAMET, Swanky [PRIMARY]. https://www.galois.com/articles/2025-year-in-review ; https://www.galois.com/ . Its scarce asset is trusted sign-off for the US government; it fills gaps that general models will not close for cleared, sector-specific work (provisional).
 - **b. Lead.**
-  - DARPA COOP award [SECONDARY]. https://www.militaryaerospace.com/trusted-computing/article/55238957/trusted-computing-design-and-development-tools
-    - $12.6M, reported 30 Oct 2024: formal methods plus side-channel analysis ("HEIMDALLR"), due to finish by Apr 2026.
-    - The award notice is HR001125C0300: $12.6M obligated against a $52.8M ceiling [SECONDARY/aggregated federal data]. https://www.highergov.com/contract/HR001125C0300/
-    - CORRECTION/CONFLICT on the end date. The first pass recorded a period of 16 Oct 2024 to 11 Jun 2026. A later extract of the same page says it ends 16 Apr 2026, "shortened from 10/16/27 to 04/16/26". Either way the award was cut short of its original Oct 2027 end; the reason is unknown [UNVERIFIED].
-  - SBIR Phase II "MAPACHE": $1,432,311, 29 Oct 2025 to 30 Oct 2026; scope not confirmed [SECONDARY]. https://www.inknowvation.com/sbir/awards/darpa-2026-mapache
-  - Polymorph tools are "actively being transitioned to program offices across the DoD" [COMPANY CLAIM].
-  - Galois built Galwagent ("LLM-based, multi-agent framework") under GAI4RDE. Its staff post on Claude Code, including Mike Dodds' "Claude Can (Sometimes) Prove It" and "Specifications Don't Exist" [PRIMARY].
-  - It is a Signal Shot collaborator [PRIMARY]. Hack VC names Galois as one of the procurement vehicles for Math Inc. [investor claim].
-  - Customer logos: NIST, DARPA, NASA, DoD, Army, Navy, Air Force, AFRL, IARPA, ARPA-H. Amazon Web Services is the only commercial logo; "Metron: AI Benchmarking for Advanced Formal Verification" is listed as a project [COMPANY CLAIM]. https://www.galois.com/
-- **c. Revenue model.** Labour on government research contracts, with tools given away as open source. The AI-plus-formal-methods page lists sectors (aerospace and defence, automotive, fintech, healthcare, semiconductors) but no commercial prices [COMPANY CLAIM]. https://www.galois.com/ai-formal-methods
-- **d. Financial strength.** Private. Revenue and headcount are not disclosed; it has operated "for more than 25 years" from offices in Portland, Arlington, Minneapolis and Dayton. No venture rounds were found. Customer concentration in federal agencies looks high (my inference from the logos).
-- **e. Resilience (provisional).** Little exposure to venture conditions, so it is the most robust of the six in a 2028 financing pause. It is exposed to federal research budgets; note the shortened COOP award. In an acceleration, its labour becomes more productive but also more of a commodity.
-- **Path forward.**
-  - (1) Partial: Galwagent and Metron, but its tools are open source.
-  - (4) Open by design.
-  - (6) The government is its buyer.
-  - (7) It uses lab models as complements.
-- **Verdict (provisional): partly coherent.** It has a durable niche but no sign of turning into a tool business that scales with use.
+  - DARPA COOP: $12.6M, reported 30 Oct 2024; formal methods plus side-channel analysis ("HEIMDALLR"); due to finish by Apr 2026 [SECONDARY]. https://www.militaryaerospace.com/trusted-computing/article/55238957/trusted-computing-design-and-development-tools . Award notice HR001125C0300: $12.6M obligated against a $52.8M ceiling [SECONDARY/aggregated federal data]. https://www.highergov.com/contract/HR001125C0300/ . CORRECTION/CONFLICT on the end date: the first pass recorded 16 Oct 2024 to 11 Jun 2026; a later extract of the same page says 16 Apr 2026, "shortened from 10/16/27 to 04/16/26". Either way the award was cut short of its original Oct 2027 end; the reason is unknown [UNVERIFIED].
+  - SBIR Phase II "MAPACHE": $1,432,311, 29 Oct 2025 to 30 Oct 2026; scope not confirmed [SECONDARY]. https://www.inknowvation.com/sbir/awards/darpa-2026-mapache . Polymorph tools are "actively being transitioned to program offices across the DoD" [COMPANY CLAIM]. Galwagent ("LLM-based, multi-agent framework") was built under GAI4RDE; staff posts include Mike Dodds' "Claude Can (Sometimes) Prove It" and "Specifications Don't Exist" [PRIMARY].
+  - Signal Shot collaborator [PRIMARY]; Hack VC names Galois as a procurement vehicle for Math Inc. [investor claim]. Logos: NIST, DARPA, NASA, DoD, Army, Navy, Air Force, AFRL, IARPA, ARPA-H, and Amazon Web Services (the only commercial logo); project "Metron: AI Benchmarking for Advanced Formal Verification" [COMPANY CLAIM]. https://www.galois.com/
+- **c. Revenue model.** Labour on government research contracts, with tools given away as open source. The AI-plus-formal-methods page lists sectors (aerospace and defence, automotive, fintech, healthcare, semiconductors) but no prices [COMPANY CLAIM]. https://www.galois.com/ai-formal-methods
+- **d. Financial strength.** Private; revenue and headcount undisclosed; operating "for more than 25 years" from Portland, Arlington, Minneapolis and Dayton; no venture rounds found. Federal concentration looks high (my inference from the logos).
+- **e. Resilience (provisional).** Little venture exposure, so the most robust of the six in a 2028 financing pause. Exposed to federal research budgets (note the shortened COOP award). In an acceleration its labour becomes more productive but also more of a commodity.
+- **Path forward.** (1) Partial: Galwagent and Metron, but tools are open source. (4) Open by design. (6) The government is its buyer. (7) Uses lab models as complements.
+- **Verdict (provisional): partly coherent.** A durable niche, but no sign of becoming a tool business that scales with use.
 
 #### Runtime Verification (RV)
-- **a. Position.**
-  - RV owns the K Framework, with executable semantics such as KEVM. Formal language semantics are close to a judge for its niche.
-  - Products: Kontrol, Simbolik, Komet, KMIR, plus "Lean4 Proofs" [COMPANY CLAIM]. https://www.runtimeverification.com/about
-- **b. Lead.** Company claims: "100+ security engagements" and "25+ senior engineers".
-  - 2026 Linux work [COMPANY CLAIM]. https://www.runtimeverification.com/blog
-    - Binder deserialiser proved never to panic, in Lean 4 (5 Aug).
-    - Linux UVC parser: safe-Rust rewrite with Lean proofs tied to CVE-2024-53104, leading to an upstream integer-overflow fix (20 Aug).
-    - io_uring sandbox filter bypass, fixed in mainline "within a day" (21 Oct).
-    - KEQ semantic-equivalence proofs (6 Nov).
-  - Other 2026 work: a Dafny model of Optimism's Supernode built in a 10-week audit extension (20 Oct); AI-assisted fuzzing of WAMR found a real bug "but also flagged valid behavior" (11 Sep).
-  - Partnership with Assurea for medical devices and artificial organs (18 Aug).
-  - The site names no customers.
-- **c. Revenue model.** Labour: audits, formal verification, fuzzing, design review, formal modelling. No pricing.
-- **d. Financial strength.**
-  - Leadership: CEO Everett Hildenbrandt, COO Paul Len, CTO Palina Tolmach; founder Grigore Rosu (UIUC, 2010). Funding not disclosed.
-  - Related company: Pi Squared (zero-knowledge proofs plus formal verification; founded 2023; Champaign, IL; Rosu as CEO) [SECONDARY/aggregator]. https://www.cbinsights.com/compare/pi-squared-vs-runtime-verification
-- **e. Resilience (provisional).**
-  - Crypto exposure has been high. RV posts on the KelpDAO bridge loss of 18 Apr 2026 ($292M drained even though the audited components "worked as specified"; posts of 5 May and 3 Jun) [COMPANY CLAIM].
-  - Its shift to Linux and medical devices reduces that exposure.
-  - A labour model rides out a financing pause if clients keep paying.
-- **Path forward.**
-  - (1) Partial: AI writes proofs (it used Claude Code on Linux namespaces), but RV sells engagements.
-  - (4) K is open source.
-  - (6) Buyers: blockchain foundations, and now medical-device makers.
-  - (7) RV explicitly moves its value to specifications (section 6).
-- **Verdict (provisional): partly coherent.** The thesis is clear, but the business is small and bound to labour.
+- **a. Position.** Owns the K Framework, with executable semantics such as KEVM; formal language semantics are close to a judge in its niche. Products: Kontrol, Simbolik, Komet, KMIR, plus "Lean4 Proofs" [COMPANY CLAIM]. https://www.runtimeverification.com/about
+- **b. Lead.** "100+ security engagements" and "25+ senior engineers" [COMPANY CLAIM]. 2026 work [COMPANY CLAIM]: https://www.runtimeverification.com/blog
+  - Linux: Binder deserialiser proved never to panic, in Lean 4 (5 Aug); UVC parser safe-Rust rewrite with Lean proofs tied to CVE-2024-53104, leading to an upstream integer-overflow fix (20 Aug); io_uring sandbox filter bypass fixed in mainline "within a day" (21 Oct); KEQ semantic-equivalence proofs (6 Nov).
+  - Other: Dafny model of Optimism's Supernode built in a 10-week audit extension (20 Oct); AI-assisted fuzzing of WAMR found a real bug "but also flagged valid behavior" (11 Sep); partnership with Assurea for medical devices and artificial organs (18 Aug). The site names no customers.
+- **c. Revenue model.** Labour: audits, formal verification, fuzzing, design review, formal modelling; no pricing.
+- **d. Financial strength.** CEO Everett Hildenbrandt, COO Paul Len, CTO Palina Tolmach; founder Grigore Rosu (UIUC, 2010); funding undisclosed. Related company: Pi Squared (zero-knowledge proofs plus formal verification; founded 2023; Champaign, IL; Rosu as CEO) [SECONDARY/aggregator]. https://www.cbinsights.com/compare/pi-squared-vs-runtime-verification
+- **e. Resilience (provisional).** Crypto exposure has been high: RV posted on 5 May and 3 Jun about the 18 Apr 2026 KelpDAO bridge loss ($292M drained even though the audited components "worked as specified") [COMPANY CLAIM]. The shift to Linux and medical devices reduces that exposure; a labour model rides out a financing pause if clients keep paying.
+- **Path forward.** (1) Partial: AI writes proofs (Claude Code on Linux namespaces), but RV sells engagements. (4) K is open source. (6) Blockchain foundations, now medical-device makers. (7) Explicitly moves its value to specifications (section 6).
+- **Verdict (provisional): partly coherent.** A clear thesis, but a small business bound to labour.
 
 #### Imandra
-- **a. Position.** It runs ImandraX, a proprietary reasoning engine, and CodeLogician, which turns code into formal models (launched 26 Mar 2025, select partners, then a waitlist) [PRIMARY company release]. https://www.imandra.ai/articles/imandra-releases-codelogician . In trading-venue certification, Imandra's models can serve as a judge-like reference within a niche (provisional).
-- **b. Lead.**
-  - Customers and partners named on the homepage: Goldman Sachs, KPMG, Citi, OneChronos, Euronext, TMX, Broadridge, DARPA, US Navy, SRI [COMPANY CLAIM]. https://www.imandra.ai/
-    - 30 Jun 2026: BLOX Markets selected Imandra for onboarding and certification on its Openpool US equities venue. The aggregator Simplify reported the same; still company-sourced [COMPANY CLAIM]. https://simplify.jobs/c/Imandra
-    - 18 Aug 2026: an automated-reasoning framework for capital markets went on the Microsoft Azure Marketplace.
-  - A Silicon Hills News article named Goldman Sachs as a customer (undated) [SECONDARY].
-  - arXiv 2601.11840 (Jan 2026) reports a 41–47 percentage-point gain in accuracy from formal augmentation; it is self-reported and was not re-read [PRIMARY paper]. https://arxiv.org/abs/2601.11840v2
-- **c. Revenue model.** Seats: Builder $25 a month, Pro $129 a month, Team $799 a month; enterprise unpriced; marketed as "Reasoning as a Service" [COMPANY CLAIM].
+- **a. Position.** ImandraX, a proprietary reasoning engine, and CodeLogician, which turns code into formal models (launched 26 Mar 2025 to select partners, then a waitlist) [PRIMARY company release]. https://www.imandra.ai/articles/imandra-releases-codelogician . In trading-venue certification its models can act as a judge-like reference within a niche (provisional).
+- **b. Lead.** The homepage names Goldman Sachs, KPMG, Citi, OneChronos, Euronext, TMX, Broadridge, DARPA, US Navy and SRI [COMPANY CLAIM]. https://www.imandra.ai/ . On 30 Jun 2026 BLOX Markets selected Imandra for onboarding and certification on its Openpool US equities venue; the aggregator Simplify reported the same, still company-sourced [COMPANY CLAIM]. https://simplify.jobs/c/Imandra . On 18 Aug 2026 a capital-markets reasoning framework went on the Microsoft Azure Marketplace. Silicon Hills News named Goldman Sachs as a customer (undated) [SECONDARY]. arXiv 2601.11840 (Jan 2026) reports a 41–47 percentage-point accuracy gain from formal augmentation; self-reported, not re-read [PRIMARY paper]. https://arxiv.org/abs/2601.11840v2
+- **c. Revenue model.** Seats: Builder $25, Pro $129, Team $799 a month; enterprise unpriced; marketed as "Reasoning as a Service" [COMPANY CLAIM].
 - **d. Financial strength.** $5M seed (AlbionVC, IQ Capital, LiveOak), dated Apr 2019 by c.parsers.vc. Totals conflict: $19.2M per Simplify against $9.0M per VCBacked (last round Apr 2024) [UNVERIFIED]. Small.
-- **e. Resilience (provisional).** Tied to finance-sector IT budgets and only modestly to venture conditions. In an acceleration it gains as a tool that coding agents call; it has published demos with OpenAI Codex, Gemini/Antigravity and Cursor.
-- **Path forward.**
-  - (1) Already a tool.
-  - (2) Seats today.
-  - (4) A proprietary engine facing open Lean tools.
-  - (6) Buyers: trading venues and banks, the clearest certification buyer in the set.
-  - (7) A complement to lab models.
-- **Verdict (provisional): partly coherent.** It has a real niche buyer but no evidence of scale.
+- **e. Resilience (provisional).** Tied to finance-sector IT budgets, only modestly to venture conditions. In an acceleration it gains as a tool that coding agents call; it has published demos with OpenAI Codex, Gemini/Antigravity and Cursor.
+- **Path forward.** (1) Already a tool. (2) Seats today. (4) A proprietary engine facing open Lean tools. (6) Trading venues and banks, the clearest certification buyer in the set. (7) A complement to lab models.
+- **Verdict (provisional): partly coherent.** A real niche buyer, but no evidence of scale.
 
 #### Code Metal
-- **a. Position.** It sells code translation for defence and edge hardware and says it is "mathematically proving code is correct" with a "neuro-symbolic approach". The verification method is not specified in any source found [SECONDARY]. https://pulse2.com/code-metal-125-million-series-b-raised-for-verifiable-code-translation-platform . Provisional judgment: not evidently a seller of machine-checked proof.
-- **b. Lead.**
-  - Site logos: Toshiba, U.S. Air Force, Raytheon, NVIDIA, L3Harris, Collins, Bosch, Boeing. The site claims an $80M OTA (Other Transaction Authority agreement, a flexible contracting route) for WarMatrix, dated 14 Aug 2026 [COMPANY CLAIM]. https://www.codemetal.ai/
-  - Named users: Toshiba, RTX, L3Harris, the US Air Force. The company says it is in "programs of record across the U.S. Air Force, L3Harris" [COMPANY CLAIM]. https://www.eweek.com/news/code-metal-valuation-ai-code-translation/
-  - No independent technical evidence was found.
-- **c. Revenue model.** Defence contracts and enterprise sales; not disclosed.
-- **d. Financial strength.**
-  - Series B: $125M led by Salesforce Ventures, announced about 19 Feb 2026, at a $1.25B valuation (per EVP Growth Laura Shen). Accel, B Capital, Smith Point, J2, Shield Capital, Overmatch and RTX also invested.
-  - Series A: about $36–36.5M, led by Accel.
-  - CEO Peter Morales; HQ Boston; Ryan Aytay (ex-Tableau CEO) is President and COO.
-  - Rob Keith (Salesforce Ventures): "mission-critical industries cannot deploy what they cannot verify" [SECONDARY]. Release: https://www.businesswire.com/news/home/20260219267824/en
+- **a. Position.** Sells code translation for defence and edge hardware and says it is "mathematically proving code is correct" with a "neuro-symbolic approach"; no source found specifies the verification method [SECONDARY]. https://pulse2.com/code-metal-125-million-series-b-raised-for-verifiable-code-translation-platform . Provisional judgment: not evidently a seller of machine-checked proof.
+- **b. Lead.** Site logos: Toshiba, U.S. Air Force, Raytheon, NVIDIA, L3Harris, Collins, Bosch, Boeing; the site claims an $80M OTA (Other Transaction Authority agreement, a flexible contracting route) for WarMatrix, dated 14 Aug 2026 [COMPANY CLAIM]. https://www.codemetal.ai/ . Named users Toshiba, RTX, L3Harris, US Air Force, and "programs of record across the U.S. Air Force, L3Harris" [COMPANY CLAIM]. https://www.eweek.com/news/code-metal-valuation-ai-code-translation/ . No independent technical evidence found.
+- **c. Revenue model.** Defence contracts and enterprise sales; undisclosed.
+- **d. Financial strength.** Series B $125M led by Salesforce Ventures, announced about 19 Feb 2026, at $1.25B (per EVP Growth Laura Shen), with Accel, B Capital, Smith Point, J2, Shield Capital, Overmatch and RTX; Series A about $36–36.5M led by Accel. CEO Peter Morales; HQ Boston; Ryan Aytay (ex-Tableau CEO) is President and COO. Rob Keith (Salesforce Ventures): "mission-critical industries cannot deploy what they cannot verify" [SECONDARY]. Release: https://www.businesswire.com/news/home/20260219267824/en
 - **e. Resilience (provisional).** Defence budgets steady it in a pause, but its valuation depends on venture conditions. AI translation is exactly what labs and DARPA's TRACTOR programme target, so it is exposed in an acceleration unless its verification really differentiates it.
-- **Path forward.**
-  - (4) Proprietary.
-  - (6) The defence buyer is real.
-  - (7) High exposure.
+- **Path forward.** (4) Proprietary. (6) The defence buyer is real. (7) High exposure.
 - **Verdict (provisional): partly coherent as a business; cannot assess as a proof company.**
 
 **Watch list, not assessed in depth:**
