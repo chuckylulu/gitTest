@@ -43,7 +43,7 @@ At $79.31, APH trades on 21.9x FY2027 consensus adjusted EPS, with EV/EBITDA of 
 ### 2. Vertiv (VRT, NYSE)
 
 #### Takeaway
-At $206.51, VRT is 45% below its 14 May 2026 high and trades on 20.8x FY27 consensus EPS, even though organic orders more than doubled year on year in Q3 2026 and full-year guidance was raised by $650M. Trailing EV/EBITDA (24.8x) is still above its five-year year-end median (21.9x), but the FCF yield (4.0%) is the highest in its five-year history. Suggested label: **fair**.
+At $206.51, VRT is 45% below its 14 May 2026 high and trades on 20.8x FY27 consensus EPS, even though organic orders more than doubled year on year in Q3 2026 and full-year guidance was raised by $650M. Trailing EV/EBITDA (24.8x) is still above its five-year year-end median (21.9x), but the FCF yield (3.96%) is above every year-end value except FY23's 4.22%. Suggested label: **fair**.
 
 #### Cited Findings
 - (1) Price $206.51, 11 Nov 2026 close (+6.33% on the day); pre-market $201.86 on 12 Nov. Market cap $79.52B; EV $79.16B; net cash $0.35B; 385.06M shares — [Stock Analysis VRT statistics](https://stockanalysis.com/stocks/vrt/statistics/).
@@ -67,7 +67,7 @@ At $206.51, VRT is 45% below its 14 May 2026 high and trades on 20.8x FY27 conse
 ### 3. TE Connectivity (TEL, NYSE)
 
 #### Takeaway
-At $219.41, TEL is down 11% over 12 months while orders rose 29% (book-to-bill 1.14). It trades on 16.1x FY27 and 14.4x FY28 consensus EPS, with every multiple at its own five-year year-end median. Today's price needs very little growth beyond the FY28 consensus. Suggested label: **attractive**, the only US Tier 1 name to get it under this method.
+At $219.41, TEL is down 11% over 12 months while orders rose 29% (book-to-bill 1.14). It trades on 16.1x FY27 and 14.4x FY28 consensus EPS. P/E, EV/EBITDA and FCF yield sit at its own five-year year-end medians (EV/Sales and P/B are 10-26% above). Today's price needs very little growth beyond the FY28 consensus. Suggested label: **attractive**, the only US Tier 1 name to get it under this method.
 
 #### Cited Findings
 - (1) Price $219.41, 11 Nov 2026 close; pre-market $218.80. Market cap $62.90B; EV $67.49B; net debt $4.59B; 286.7M shares — [Stock Analysis TEL statistics](https://stockanalysis.com/stocks/tel/statistics/).
@@ -83,7 +83,7 @@ At $219.41, TEL is down 11% over 12 months while orders rose 29% (book-to-bill 1
 #### Inferences
 - What the price assumes: FY2030 EPS of about $15.49 is needed (20x exit, 9%). That is 7.7% a year from FY26 actual EPS of $11.52, or only 4.3% a year after FY27E. The FY28 consensus ($15.20) almost reaches it, so the price embeds roughly no growth after FY28. With a 25x exit the requirement ($12.39) is already met by the FY27 consensus.
 - Bridge or successor: consensus decelerates from +18% (FY27) to +11.5% EPS growth (FY28), which fits a copper "bridge" that keeps selling but does not boom, with no big optical-successor ramp included. The multiple does not need the successor to arrive on schedule. The $1.6B of optics bolt-ons is upside the numbers do not appear to include (inference).
-- (7) Suggested label: **attractive**. The reasons are the low implied-growth hurdle, multiples at their own medians, and a share price that diverges from orders (12 months -11% against orders +29%). Risks to the label: the FY28 slowdown in consensus, and auto and industrial cyclicality, which is not assessed here. Conditions that would make entry even better: below the 2026 closing low of $195.84 (about 14.4x FY27E), or EV/EBITDA of 12x or less. The label is invalidated if book-to-bill falls below 1.0 or the FQ1 27 guide ($5.35B and $3.30) is missed.
+- (7) Suggested label: **attractive**. The reasons are the low implied-growth hurdle, earnings-based multiples at their own medians (P/B and EV/Sales somewhat above), and a share price that diverges from orders (12 months -11% against orders +29%). Risks to the label: the FY28 slowdown in consensus, and auto and industrial cyclicality, which is not assessed here. Conditions that would make entry even better: below the 2026 closing low of $195.84 (about 14.4x FY27E), or EV/EBITDA of 12x or less. The label is invalidated if book-to-bill falls below 1.0 or the FQ1 27 guide ($5.35B and $3.30) is missed.
 
 #### Gaps
 - Results date for FQ1 FY27 (usually late January; unconfirmed); index and ETF weights.
@@ -257,7 +257,7 @@ At $158.87, TSEM is 50% below its 22 Jun 2026 high and trades on 22.7x FY27 cons
 ### 11. Camtek (CAMT, Nasdaq and TASE)
 
 #### Takeaway
-At $107.05, CAMT is 48% below its 11 May 2026 high and close to its 52-week low (5 Nov 2026). It trades on 20.9x FY27 consensus, which equals the company's own 2027 outlook of more than $800M. Multiples sit close to its own five-year medians. Suggested label: **fair**.
+At $107.05, CAMT is 48% below its 11 May 2026 high and close to its 52-week low (5 Nov 2026). It trades on 20.9x FY27 consensus, which equals the company's own 2027 outlook of more than $800M. Multiples are slightly above its own five-year medians on EV/EBITDA (+16%) and EV/Sales (+8%) and in line on P/B. Suggested label: **fair**.
 
 #### Cited Findings
 - (1) Price $107.05, 11 Nov 2026 Nasdaq close (+4.76%); pre-market $105.23. On TASE: 34,010 agorot at the 11 Nov close, and ILS 335.40 (about $105.30) intraday on 12 Nov. Market cap $5.00B (about ILS 15.9B); EV $4.61B; net cash $0.39B (after $489M of debt); 46.73M shares — [Stock Analysis CAMT statistics](https://stockanalysis.com/stocks/camt/statistics/); [Yahoo Finance CAMT.TA](https://finance.yahoo.com/quote/CAMT.TA/history/).
@@ -342,7 +342,7 @@ Several of these "private" names are no longer independent. CoolIT now belongs t
 | Schott (Germany; specialty glass) | The Carl Zeiss Foundation is the sole owner of Schott AG ([Wikipedia Schott AG, revised 2 Nov 2026](https://en.wikipedia.org/wiki/Schott_AG)) | n/a | None known for Schott AG | Possibly via Schott Pharma's listing, but that is pharma packaging, not the AI-relevant glass business; not verified this session | Secondary source |
 | Corintis (Switzerland; microfluidic cold plates) | Not verified. The website cites a Microsoft collaboration and a "#1 Swiss Startup of 2025" award but shows no funding data ([Corintis site](https://www.corintis.com/)) | Not found | Not verified | None verified | Unverified |
 | Teramount (Israel; detachable fibre-to-chip coupling) | Possibly Molex. teramount.com redirects to a Molex product page (TeraVerse), checked 12 Nov 2026 | Not verified | n/a | None if Molex owns it (Koch is private) | Unverified, though strongly suggested by the redirect |
-| DustPhotonics (Israel; silicon-photonics chips) | Credo Technology (Nasdaq: CRDO) acquired 100% on 28 May 2026 for total purchase consideration of $1.3B: $769.6M cash and $169.1M of shares, the rest including other consideration items in the 10-Q table ([Credo 10-Q, quarter to 1 Aug 2026](https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm)). The 13 Apr 2026 announcement gave $750M cash plus about 0.92M shares upfront and up to about 3.21M earn-out shares ([Credo 8-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828026024892/april20268-kex991.htm)) | Acquisition | n/a | CRDO (Nasdaq) | Verified. This corrects the coordinator's lead: the deal closed on 28 May 2026, not "by 1 August", and total consideration was $1.3B |
+| DustPhotonics (Israel; silicon-photonics chips) | Credo Technology (Nasdaq: CRDO) acquired 100% on 28 May 2026 for total purchase consideration of $1.3B: $769.6M cash and $169.1M of shares, the rest including other consideration items in the 10-Q table ([Credo 10-Q, quarter to 1 Aug 2026](https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm)). The 13 Apr 2026 announcement gave $750M cash plus about 0.92M shares upfront and up to about 3.21M earn-out shares ([Credo 8-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828026024892/april20268-kex991.htm)) | Acquisition | n/a | CRDO (Nasdaq) | Verified, and consistent with the coordinator's lead (completed before 1 Aug 2026). The exact completion date is 28 May 2026. "$750M cash plus stock" is the announced upfront structure; total accounting consideration was $1.3B |
 | Tata Electronics (India) | Not verified this session (believed to be a Tata Sons subsidiary; Tata Sons is unlisted) | Not found | Not verified | None direct (unverified) | Unverified |
 
 ### Inferences
