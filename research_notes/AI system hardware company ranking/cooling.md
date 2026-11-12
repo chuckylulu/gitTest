@@ -314,6 +314,10 @@ Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras
 - 2026 tariffs about $105M.
 - Liquid-cooling revenue not disclosed; "taking orders" for a new modular liquid-cooling platform.
 - Systems Protection includes "cooling solutions, both liquid and air" — [nVent 10-Q Q3 2026](https://www.sec.gov/Archives/edgar/data/1720635/000162828026068596/nvt-20260930.htm)
+- Returns (TTM, data date 12 Nov 2026) — [stockanalysis](https://stockanalysis.com/stocks/nvt/statistics/) (secondary):
+  - ROIC 13.5%; ROE 17.4%; operating margin 17.7%; FCF margin 12.1%; net debt $1.22bn.
+  - The much lower ROIC than Vertiv reflects acquisition goodwill.
+- Total equity $4,112.5M at 30 Sep 2026 — [10-Q](https://www.sec.gov/Archives/edgar/data/1720635/000162828026068596/nvt-20260930.htm)
 
 #### Auras (TPEx: 3324)
 
@@ -334,6 +338,14 @@ Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras
 - The margin fall was attributed to several new liquid-cooling products in trial production at once and to a generation change. Q3 call due 18 Nov 2026.
 - Capex plan NT$2–2.5bn over two years; evaluating Taiwan and Thailand lines (Nov 2025) — [udn](https://money.udn.com/money/story/5612/9140567)
 - Management warned "NVIDIA-led procurement will pressure cold-plate margins" (Nov 2025) — same source.
+- Exchange open data, 9M 2026 — [TPEx t187ap06](https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci); [TPEx t187ap07](https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci):
+  - revenue NT$27.04bn; gross profit NT$7.52bn (27.8%); operating income NT$4.27bn (15.8%); net NT$3.39bn;
+  - 30 Sep 2026 total equity NT$15.56bn; liabilities NT$22.63bn;
+  - annualised ROE about 29% (derived).
+- Oct 2026 revenue NT$3.37bn (+44.7% y/y); Jan–Oct +68.8% — [TPEx t187ap05](https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O)
+- Returns (TTM, 12 Nov 2026) — [stockanalysis](https://stockanalysis.com/quote/tpex/3324/statistics/) (secondary):
+  - ROIC 23.2%; ROE 33.9%;
+  - TTM FCF −NT$3.20bn (negative); net debt NT$5.31bn.
 
 #### Envicool (SZSE: 002837)
 

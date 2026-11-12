@@ -851,6 +851,12 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
 
 ### Primary — companies and official releases
 - Ibiden, Financial Results of 1H FY2026 (deck dated 30 Oct 2026; forecasts as of 29 Oct 2026) — https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q2.pdf
+- Ibiden, Consolidated financial results (tanshin) for Q2 FY2026, with balance sheet and cash flow (29 Oct 2026) — https://www.ibiden.com/ir/library/statement/items/tannshinn2026Q2.pdf
+- Ibiden, Outline of Consolidated Financial Results, Q2 (29 Oct 2026) — https://www.ibiden.com/ir/items/hosokushiryou2026Q2.pdf
+- Ibiden, Key Q&A from the 2Q financial presentation (30 Oct 2026) — https://www.ibiden.com/ir/items/en_QA_FY2026Q2.pdf
+- Ibiden, Notice regarding capital investment for high-performance IC package substrates (29 Oct 2026) — https://www.ibiden.com/ir/items/koteishisansyutoku2026Q2.pdf
+- AT&S, Half-Year Financial Report 2026/27 (5 Nov 2026) — https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668
+- AT&S, Annual Financial Report 2025/26 (FY ended 31 Mar 2026) — https://ats.net/en/download/annual-financial-report-2025-26/?wpdmdl=61790
 - Ibiden, Integrated Report 2025 (FY2024 data) — https://www.ibiden.com/ir/items/IntegratedReport2025_en.pdf
 - NVIDIA, "NVIDIA and Supply Chain Partners Expand Capacity…" (GTC Berlin, 21 Oct 2026) — https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx
 - Samsung Electro-Mechanics, NVIDIA ABF supply release (21 Oct 2026) — https://m.samsungsem.com/global/newsroom/news/view.do?id=10614
@@ -886,6 +892,9 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
 - The Elec, Ibiden Gama investment (30 Oct 2026) — https://www.thelec.net/news/articleView.html?idxno=15090
 - Korea Herald, GlaSSEM JV (2 Jul 2026) — https://www.koreaherald.com/article/10796508
 - RCRTech, NVIDIA capacity commitments (23 Oct 2026) — https://rcrtech.com/semiconductor-news/nvidia-supply-chain-capacity-commitments/
+
+### Third-party financial statistics (quality fields only; fetched 12 Nov 2026)
+- stockanalysis.com statistics pages, TTM — Ibiden https://stockanalysis.com/quote/tyo/4062/statistics/ ; Unimicron https://stockanalysis.com/quote/tpe/3037/statistics/ ; SEMCO https://stockanalysis.com/quote/krx/009150/statistics/ ; AT&S https://stockanalysis.com/quote/vie/ATS/statistics/ ; SKC https://stockanalysis.com/quote/krx/011790/statistics/ ; Ajinomoto https://stockanalysis.com/quote/tyo/2802/statistics/ ; Nittobo https://stockanalysis.com/quote/tyo/3110/statistics/ ; LG Innotek https://stockanalysis.com/quote/krx/011070/statistics/ ; Nan Ya PCB https://stockanalysis.com/quote/tpe/8046/statistics/ ; Kinsus https://stockanalysis.com/quote/tpe/3189/statistics/ ; Zhen Ding https://stockanalysis.com/quote/tpe/4958/statistics/ ; Daeduck https://stockanalysis.com/quote/krx/353200/statistics/
 
 ### Secondary — market, materials and glass
 - TrendForce, Nittobo forecast and T-glass (6 Aug 2026) — https://www.trendforce.com/news/2026/08/06/news-nittobo-raises-fy2027-net-profit-forecast-by-jpy-3b-no-further-t-glass-price-hikes-planned/

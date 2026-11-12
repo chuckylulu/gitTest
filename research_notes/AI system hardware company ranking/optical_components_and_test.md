@@ -2,7 +2,7 @@
 
 Conventions. Every figure carries (period covered; publication date). "Company claim, unconfirmed" = a company statement no outside party has confirmed. "Secondary" = trade press or analyst estimate. "Derived" = my arithmetic on cited figures. No share prices, valuation multiples, market caps or price targets are used (separate workstream). Scope boundary respected: switch makers, NVIDIA/Broadcom/Marvell CPO system programmes, connectors/fibre and processor-to-processor optical links are covered elsewhere and appear here only as demand drivers.
 
-Tooling note (affects coverage): the shared WebSearch budget for this run ran out after about 14 searches, and the Exa and Firecrawl tools had no credits. Everything after that came from fetching specific pages directly: SEC EDGAR filings and XBRL pages, company IR pages, and pages that earlier searches had surfaced. As a result, coverage of Japan, Taiwan, Korea, India, Europe and the test-equipment makers is much thinner than for the six key companies (see sections 1 Gaps and 7).
+Tooling note (affects coverage): the shared WebSearch budget for this run ran out after about 14 searches, and the Exa and Firecrawl tools had no credits. Everything after that came from fetching specific pages directly: SEC EDGAR filings and XBRL pages, company IR pages, pages that earlier searches had surfaced, and cninfo filing PDFs (Innolight and Eoptolink 2025 annual and Q3 2026 reports). As a result, coverage of Japan, Taiwan, Korea, India, Europe and the test-equipment makers is much thinner than for the six key companies (see sections 1 Gaps and 7).
 
 ---
 
@@ -565,6 +565,7 @@ Value is currently captured most by InP laser and substrate owners, and the inte
 - NPO dates: Tower "appreciable" NPO shipments 2H 2027 ([MarketBeat](https://www.marketbeat.com/instant-alerts/transcript-tower-semiconductor-q3-earnings-call-highlights-2026-11-02/)); Fabrinet NPO revenue 2H FY27 ([MarketBeat](https://www.marketbeat.com/instant-alerts/transcript-fabrinet-q1-earnings-call-highlights-2026-11-02/)); Lumentum NPO late 2027-28 ([MarketBeat](https://www.marketbeat.com/instant-alerts/lumentum-q4-earnings-call-highlights-2026-08-11/)); ECOC: NPO "lacked definitive detail" ([Cignal](https://cignal.ai/2026/09/ecoc-2026-show-report/)).
 - Integration moves:
   - Marvell-Lumentum, "end-to-end" with "co-designed, pre-validated optical solutions" ([Marvell](https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity));
+  - Credo (SerDes/DSP/AEC vendor) bought DustPhotonics (SiPh PICs) on 28 May 2026 for about $1.25B total consideration, to build "a vertically integrated connectivity stack", after buying Hyperlume (microLED optical interconnect) in Sep 2025 ([Credo 10-Q R12](https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/R12.htm));
   - Cignal: the deal signals the value chain "compressing", and could mirror Broadcom's 20-year Ethernet position ([Cignal](https://cignal.ai/2026/11/marvell-acquires-lumentum/));
   - TrendForce: the deal fills Marvell's InP laser gap and challenges Broadcom ([TrendForce](https://www.trendforce.com/presscenter/news/20261103-13294.html));
   - CPO "moves some optical component value from pluggable transceivers into switching equipment" ([TrendForce](https://www.trendforce.com/presscenter/news/20261102-13291.html)).
@@ -587,7 +588,7 @@ Value is currently captured most by InP laser and substrate owners, and the inte
 ## 7. What could not be verified
 
 ### Takeaway
-All seven "leads to verify" were checked. Four are confirmed with primary or strong secondary evidence (NVIDIA investments, Innolight HK listing, Tower expansion, Teradyne-Quantifi), two are partly confirmed (laser shortages; RoboTechnik-ficonTEC), and one is not re-verified (China's InP export licensing). One major new development was found: the Marvell-Lumentum combination.
+All seven "leads to verify" were checked. Four are confirmed with primary or strong secondary evidence (NVIDIA investments, Innolight HK listing, Tower expansion, Teradyne-Quantifi), two are partly confirmed (laser shortages; RoboTechnik-ficonTEC), and one is not re-verified (China's InP export licensing). The coordinator passed on two more leads from another researcher, and both are confirmed from primary filings: Marvell-Lumentum (Marvell release, 2 Nov 2026) and Credo-DustPhotonics (Credo 10-Q). The Credo figures are updated: closed 28 May 2026, about $1.25B total including a $310M contingent earn-out.
 
 ### Cited Findings (status of leads)
 - **NVIDIA about $2B each in Lumentum and Coherent with multi-year supply commitments (Mar 2026): CONFIRMED.**
