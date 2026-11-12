@@ -70,10 +70,35 @@ Overall takeaway: all five are profitable, cash-generative and conservatively fi
 - Guidance: Q4 FY26 revenue $1.930–1.950bn (+37% YoY at midpoint), non-GAAP EPS $3.34–3.40 (+76%); implied FY26 revenue $7.103bn (+32%) and non-GAAP EPS $11.48 (+60%); non-GAAP tax rate 14%; ~172m diluted shares. — [presentation slide 11](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf)
 - Fiscal Q4 FY26 (quarter to 31 Oct 2026) report: 19 Nov 2026 after market close (per stockanalysis.com, retrieved 12 Nov 2026). — [stockanalysis KEYS](https://stockanalysis.com/stocks/keys/)
 - Other filings: FY2025 10-K filed 17 Dec 2025 (per deck safe-harbour; EDGAR index shows 15 Dec 2025 — minor discrepancy); Q3 10-Q filed 2 Sep 2026; 8-K on 2 Nov 2026 (Items 5.02/9.01 = officer/director change; content not read). — [presentation slide 2](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf); [EDGAR submissions](https://data.sec.gov/submissions/CIK0001601046.json)
-#### Test c: revenue model
-#### Test d: financial strength and concentration
-#### Test e: cycle, scenario exposure, export controls
-#### Theme exposure
+#### Keysight — test c (revenue model)
+**Takeaway:** Mostly hardware: "Services and other" was 21–25% of revenue in FY23–FY26; no software share or annual recurring revenue (ARR) figure appears in the documents retrieved.
+- Products vs Services & other: FY2023 $4,336m / $1,128m (services 20.6%); FY2024 $3,717m / $1,262m (25.3%); FY2025 $4,063m / $1,312m (24.4%) (shares my arithmetic); 9M FY26 $1,135m of $5,163m (22.0%); Q3 FY26 $382m of $1,846m (20.7%) — the share fell as product revenue surged. — [Keysight FY2025 10-K, filed 17 Dec 2025](https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm); [Keysight 10-Q](https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm)
+- Remaining performance obligations ≈$616m at 31 Jul 2026 (21% in rest of FY26, 43% in FY27, 36% later); contract liabilities $957m. — [Keysight 10-Q](https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm)
+- 10-K strategy language: grow "the software and services content of our business", "which has the added benefit of increasing recurring revenue"; ~40,000 end customers a year in >100 countries. — [Keysight FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm)
+- Gap: software share, recurring share and ARR not found.
+
+#### Keysight — test d (financial strength and concentration)
+**Takeaway:** Strong, rising non-GAAP margins and low net leverage, but GAAP returns on capital are mid-teens (acquisition goodwill) and there is no dividend.
+- Margins: Q3 FY26 non-GAAP GM 69.0%, op margin 33.2% (+820 bp); GAAP operating income $461m (≈25%); TTM GAAP GM 63.3%, op margin 19.8%; FY21–FY25 GAAP op margin 17.0–25.6%. — [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf); [KEYS financials](https://stockanalysis.com/stocks/keys/financials/)
+- ROIC (stockanalysis) 17.6% now; 12.4–30.8% in FY21–FY25. — [KEYS ratios](https://stockanalysis.com/stocks/keys/financials/ratios/)
+- FCF: Q3 FY26 $403m; TTM $1.47bn (22.3% margin); FCF/NI 1.17 TTM and 0.85–1.51 in FY21–FY25 (my arithmetic). — [KEYS financials](https://stockanalysis.com/stocks/keys/financials/)
+- Balance sheet: cash $2.605bn (31 Jul 2026); senior notes par $2.55bn — $700m 4.60% due 6 Apr 2027, $500m 3.00% due 30 Oct 2029, $750m 5.35% due 30 Jul 2030, $600m 4.95% due 15 Oct 2034; $750m revolver (expiry 30 Jul 2026 per FY25 10-K; renewal not verified); net debt $161m (stockanalysis) ≈0.09x TTM EBITDA of $1.70bn (my arithmetic). — [Keysight FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm); [Keysight 8-K](https://www.sec.gov/Archives/edgar/data/0001601046/000160104626000029/exhibit991-q326pressrelease.htm); [KEYS statistics](https://stockanalysis.com/stocks/keys/statistics/)
+- R&D $1,007m in FY2025 = 18.7% of revenue (my arithmetic). — [Keysight FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm)
+- Capital return: buybacks $520m in 9M FY26 ($210m in Q3), framed as "share repurchases to offset dilution"; no dividend. — [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf); [Keysight 10-Q](https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm)
+- Acquisitions (October 2025): Spirent $1,564m; Synopsys Optical Solutions Group $580m; Ansys PowerArtist $26m; Spirent's high-speed Ethernet, network-security and channel-emulation lines sold to Viavi for $399m; integration ahead of plan, 80–90% of $100m cost synergies at run-rate exiting Q4 FY26. — [Keysight 10-Q](https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm); [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf)
+- Concentration: Q3 FY26 Americas 39%, Europe 17%, Asia Pacific 44%; China not disclosed in the documents retrieved; no >10% customer seen in retrieved text (not confirmed). — [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf)
+- Tariffs: $100m IEEPA tariff refund receivable booked; $40m of surcharge refunds owed to customers. — [Keysight 10-Q](https://www.sec.gov/Archives/edgar/data/1601046/000160104626000036/keys-20260731.htm)
+
+#### Keysight — test e (cycle, scenarios, export controls)
+**Takeaway:** In a strong order up-cycle led by AI-infrastructure communications; the FY2024 downturn (revenue −9%, GAAP operating margin −8 points) shows earnings are more cyclical than the software narrative suggests.
+- Cycle: orders $2.091bn (+56%, core +52%), book-to-bill ≈1.13 (my arithmetic), record backlog; implied FY26 revenue $7.103bn (+32%) and non-GAAP EPS $11.48 (+60%); consensus FY27 revenue $8.21bn (+15.4%), EPS $13.93 (+21.4%). — [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf); [KEYS forecast](https://stockanalysis.com/stocks/keys/forecast/)
+- Downturn precedent: FY24 revenue −8.9%, GAAP op margin 25.2% → 17.0%, FCF $1,211m → $898m. — [KEYS financials](https://stockanalysis.com/stocks/keys/financials/)
+- AI-linked share: Commercial Communications = 55% of Q3 FY26 revenue (+56%), with record revenue "driven by the rapid scaling of the AI infrastructure ecosystem"; EISG semiconductor growth tied to advanced nodes, HBM and silicon photonics; exact AI share not quantified. Aerospace, Defense & Government (18%, +14%) is non-AI ballast. — [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf)
+- Export controls/China: 10-K cites "tightening of export control regulations" as a risk; no quantified China exposure found; Asia Pacific +42% YoY in Q3 FY26. — [Keysight FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/keys-20251031.htm); [Keysight presentation](https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q3/presentation/Q3-26-Results-Presentation.pdf)
+- Scenario exposure (my inference): steady growth — orders and backlog support FY27 consensus (+15%); financing-led pause — FY24-type outcome (−9% revenue, −8 points GAAP margin) is the reference, with Commercial Communications (55%) most exposed and ADG/EISG diversifying; faster acceleration — high operating leverage (core incremental operating margin 66% in Q3 FY26).
+
+#### Keysight — theme exposure
+- Inference: essentially all revenue is electronic design, test and measurement (CSG $1,345m + EISG $501m in Q3 FY26); AI-run instrument set-up and calibration touches the hardware base, the "Services and other" line (~21–25%) and design/test software.
 
 ### 1.3 Onto Innovation (NYSE: ONTO)
 #### Latest results (Q3 2026) and guidance
@@ -86,10 +111,31 @@ Overall takeaway: all five are profitable, cash-generative and conservatively fi
 - 2031 convertible notes: $1.5bn principal (plus option for $200m), 0.50% coupon, effective rate 0.39%, net proceeds $1.47bn; conversion rate 2.6192 shares/$1,000 = ~$381.80/share (~3.9m shares; make-whole max ~5.9m); not redeemable before 6 Jun 2029; capped calls cost $89m (cap not disclosed on page); $500m bridge commitment (unused). The 8-K of 21 May 2026 (Items 1.01/2.03/3.02) is consistent with the note issue date (inference). — [Onto 10-Q R59](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R59.htm); [EDGAR submissions](https://data.sec.gov/submissions/CIK0000704532.json)
 - Rigaku: purchase of investment $719.5m (9M 2026), carrying value $678.7m after $40.8m unrealised loss (fair-value accounting through P&L implied); 27% stake closed in August 2026 per release. Semilab business combination (dated 17 Nov 2025 in XBRL) — deferred tax liability $46.6m; revenue contribution figures shown ($8.6m, $22.5m, $68.6m) without clear period alignment. R&D $45.1m in Q3 (11.0% of revenue, my arithmetic). Buybacks 9M 2026 $205.0m (~805k shares, in Q2). Shares outstanding 49,084,327 (30 Oct 2026). — [Onto 10-Q](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm); [Onto 10-Q R39](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R39.htm)
 - Net debt ≈ $1.50bn notes principal − $1.25bn cash & securities ≈ $0.25bn (my arithmetic; stockanalysis shows net cash −$221.7m), but the $678.7m Rigaku stake is an additional liquid-ish asset (listed company — not verified).
-#### Test c
-#### Test d
-#### Test e
-#### Theme exposure
+#### Onto — test c (revenue model)
+**Takeaway:** Predominantly systems (hardware) revenue; the systems vs software/services split was not retrieved (gap). Visibility comes from a >$1.3bn backlog (≈3x quarterly revenue).
+- Backlog ">$1.3 billion" at Q3 2026; Q4 guide $430–450m. — [Onto 8-K](https://www.sec.gov/Archives/edgar/data/0000704532/000119312526453582/onto-ex99_1.htm)
+- Gap: revenue disaggregation (10-Q R76) not read; recurring share unknown.
+
+#### Onto — test d (financial strength and concentration)
+**Takeaway:** Solid but not elite margins (GAAP operating margin 15–24% over five years), the lowest ROIC of the five, the highest customer concentration (top four ≈57%), and a newly leveraged balance sheet ($1.5bn convertible) used partly for a 27% stake in Rigaku.
+- Margins: Q3 2026 GM 54.8% GAAP / 57.6% non-GAAP; op margin 23.3% / 32.6%; FY21–FY25 GM 52.4–54.6%, op margin 15.5–23.6%. — [Onto 8-K](https://www.sec.gov/Archives/edgar/data/0000704532/000119312526453582/onto-ex99_1.htm); [ONTO financials](https://stockanalysis.com/stocks/onto/financials/)
+- Returns: ROIC 12.7% now; 10.9–21.9% in FY21–FY25; ROE 7.6%. — [ONTO ratios](https://stockanalysis.com/stocks/onto/financials/ratios/)
+- FCF: TTM $247.6m (18.9% margin), FCF/NI 1.64; FY25 $299.8m. — [ONTO financials](https://stockanalysis.com/stocks/onto/financials/)
+- Debt: $1.5bn 0.50% 2031 convertible notes (conversion ≈$381.80; not redeemable before 6 Jun 2029); cash and securities $1.25bn; net debt ≈$0.22–0.25bn ≈0.56–0.63x TTM EBITDA of $394m (my arithmetic), against which the Rigaku stake is carried at $678.7m. — [Onto 10-Q R59](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R59.htm); [ONTO statistics](https://stockanalysis.com/stocks/onto/statistics/)
+- R&D $45.1m in Q3 2026 (11.0% of revenue, my arithmetic); buybacks $205.0m in 9M 2026; no dividend. — [Onto 10-Q](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm)
+- Acquisitions/investments: Semilab business combination (dated ~17 Nov 2025 in XBRL; price not retrieved); 27% Rigaku stake bought for $719.5m (closed August 2026), already marked down $40.8m. — [Onto 10-Q R39](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R39.htm); [Onto 8-K](https://www.sec.gov/Archives/edgar/data/0000704532/000119312526453582/onto-ex99_1.htm)
+- Concentration: customers A–D 16.8%, 14.5%, 14.3%, 11.5% of 9M-2026 sales; Q3 2026 by country Taiwan 42.7%, Korea 20.1%, US 12.3%, China 7.8%, Southeast Asia 7.7%, Japan 5.0%, Europe 4.3%. — [Onto 10-Q R78](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R78.htm); [Onto 10-Q R77](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R77.htm)
+
+#### Onto — test e (cycle, scenarios, export controls)
+**Takeaway:** Highest cyclical beta of the five (FY23 −18.8%), now on a steep up-cycle (Q3 +88% YoY; FY27 consensus +36%); lowest China exposure (≈6–8%).
+- Cycle: 2026 growth guided ">45%"; consensus FY26 $1.49bn (+47.9%), FY27 $2.02bn (+36.0%); EPS $8.48 → $12.86. — [Onto 8-K](https://www.sec.gov/Archives/edgar/data/0000704532/000119312526453582/onto-ex99_1.htm); [ONTO forecast](https://stockanalysis.com/stocks/onto/forecast/)
+- Downturn precedent: FY23 revenue −18.8%, op margin 23.6% → 15.5%. — [ONTO financials](https://stockanalysis.com/stocks/onto/financials/)
+- AI-linked share: not quantified; release cites AI/HPC driving device complexity and process-control intensity; records in Advanced Nodes and Advanced Packaging. — [Onto 8-K](https://www.sec.gov/Archives/edgar/data/0000704532/000119312526453582/onto-ex99_1.htm)
+- Export controls/China: China 7.8% of Q3 2026 revenue (6.1% of 9M) — the lowest direct exposure of the five; generic risk-factor language only. — [Onto 10-Q R77](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/R77.htm)
+- Scenario exposure (my inference): steady growth — backlog covers roughly three quarters; financing-led pause — the 2023 precedent suggests revenue could fall by about a fifth with margins down ~8 points, amplified by customer concentration (convertible interest is small at 0.5%); faster acceleration — leveraged to advanced packaging and leading-edge optical CD metrology.
+
+#### Onto — theme exposure
+- Inference: effectively all revenue is process-control metrology/inspection, packaging lithography and related software/service — fully on-theme.
 
 ### 1.4 Nova (Nasdaq/TASE: NVMI)
 #### Latest results (Q3 2026) and guidance
