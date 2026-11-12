@@ -22,7 +22,7 @@ Park Systems is the only company in these regions with primary-filing evidence o
 | Region | Sub-segment | Company (listing) | Key dated evidence |
 |---|---|---|---|
 | Korea | AFM nano-metrology (CMP, roughness, sidewall, mask repair, packaging Cu-pad/RDL) + optical (ellipsometry, holography, WLI) | Park Systems (140860 KOSDAQ) | 2025 rev 2,056억, OPM 20.5% [PIR] |
-| Korea | Optical patterned-wafer defect inspection (dark-field), IR bond-void, HBM, packaging | Nextin (348210 KOSDAQ) | 2025 OP −12억; China 85-87% of 2024 rev [A348210][NX0618] |
+| Korea | Optical patterned-wafer defect inspection (dark-field), IR bond-void, HBM, packaging | Nextin (348210 KOSDAQ) | 2025 OP −12억; China 85-87% of 2024 rev [A348210] [NX0618] |
 | Korea | Overlay and thin-film metrology | Auros Technology (322310 KOSDAQ) | 2025 rev 521억, OP −84억 [AU0211] |
 | Korea | 3D SPI/AOI (boards) and 3D packaging inspection | Koh Young (098460 KOSDAQ) | Q3'26 OP 194억 (+312%) [KY1103a] |
 | Korea | Package/FC-BGA substrate inspection | Intekplus (064290 KOSDAQ) | 2025 OP −37억 [A064290] |
@@ -31,13 +31,13 @@ Park Systems is the only company in these regions with primary-filing evidence o
 | Korea | 3D inspection incl. memory modules | Pemtron (168360 KOSDAQ) | Micron Malaysia order 50억 [NVN168360] |
 | Korea | Reliability/analysis services | QRT (405100 KOSDAQ) | 2025 rev 689억 [A405100] |
 | Korea | Virtual-metrology software | Gauss Labs (private; SK hynix investor and customer) | Panoptes VM in SK hynix fabs since 2022 [GL-SKH] |
-| Taiwan | Analysis labs (TEM/FIB material and failure analysis = reference data) | MA-tek 閎康 (3587 TPEx), iST 宜特 (3289 TPEx), MSScorps 汎銓 (6830 TWSE) | Jan-Oct 2026 rev +17.0%, −6.2%, +26.7% [TPEX-REV][TWSE-REV] |
-| Taiwan | Wafer/advanced-packaging AOI + AI defect classification | V5 Technologies 倍利科 (7822 TWSE, listed 30 Mar 2026) | Reportedly TSMC-qualified; Jan-Oct rev +69.7% [V5-SD][TWSE-REV] |
-| Taiwan | PCB/substrate/board AOI, AXI, panel and packaging AOI | Machvision 牧德 (3563), TRI 德律 (3030), Utechzone 由田 (3455), GPM 均豪 (5443), Favite 晶彩科 (3535) | Oct 2026 rev YoY: +96%, +72%, −18%, +126%, +73% [TWSE-REV][TPEX-REV] |
+| Taiwan | Analysis labs (TEM/FIB material and failure analysis = reference data) | MA-tek 閎康 (3587 TPEx), iST 宜特 (3289 TPEx), MSScorps 汎銓 (6830 TWSE) | Jan-Oct 2026 rev +17.0%, −6.2%, +26.7% [TPEX-REV] [TWSE-REV] |
+| Taiwan | Wafer/advanced-packaging AOI + AI defect classification | V5 Technologies 倍利科 (7822 TWSE, listed 30 Mar 2026) | Reportedly TSMC-qualified; Jan-Oct rev +69.7% [V5-SD] [TWSE-REV] |
+| Taiwan | PCB/substrate/board AOI, AXI, panel and packaging AOI | Machvision 牧德 (3563), TRI 德律 (3030), Utechzone 由田 (3455), GPM 均豪 (5443), Favite 晶彩科 (3535) | Oct 2026 rev YoY: +96%, +72%, −18%, +126%, +73% [TWSE-REV] [TPEX-REV] |
 | Taiwan | Packaging process equipment with some inspection (not core metrology) | E&R 鈦昇 (8027), All Ring 萬潤 (6187), Scientech 辛耘 (3583) | Oct 2026 rev YoY +109%, +218%, +26% |
 | India | Metrology start-up | Makr Microsystems (private, Bengaluru) | Rs 10.2 crore seed, Sep 2026 [MAKR] |
 | India | Test/product-engineering hours | Tessolve (private) | FY26 rev ₹1,526 crore [TESS] |
-| India | Assembly and test projects (ISM) | Micron Sanand, Kaynes, CG Semi, Tata Assam | Mostly running or in trial in 2026 [ISM-TV][ISM-CT] |
+| India | Assembly and test projects (ISM) | Micron Sanand, Kaynes, CG Semi, Tata Assam | Mostly running or in trial in 2026 [ISM-TV] [ISM-CT] |
 | SE Asia | Board-level and machine-vision inspection | ViTrox (Bursa) | 3Q26 rev RM485.1M, NP RM118.6M [VT1106] |
 | SE Asia | Back-end automation/test and inspection | Pentamaster (Bursa) | 3Q26 NP RM20.4M [PM1106] |
 | SE Asia | Wafer-level vision inspection/sorting + materials | MI Technovation (Bursa) | 3Q26 core NP RM69M [MI1102] |
@@ -50,7 +50,7 @@ Park Systems is the only company in these regions with primary-filing evidence o
 | (a) Position | Direct tip-surface physical measurement. NX-Wafer does wafer inspection/analysis, automated defect review and post-CMP roughness "in front- and back-end"; NX-3DM measures sidewall/CD without cross-sectioning (company claim, unconfirmed) [PH1]. CEO: hybrid-bond Cu-pad height deformation is nm-scale, "only AFM can measure it"; AFM is slow (company claim) [DD25]. No chipmaker confirms tool-of-record status. Industrial units produced: 58 (2024), 75 (2025), 43 (H1'26); export ASP ≈ KRW 2.2bn [PH1]. |
 | (b) Lead | Share of the AFM market: 21.7% in 2024 vs Bruker 15.8% and Oxford 14.3% (MarketsandMarkets-based, cited by the company) [PDK]. 23.8% of 2025 AFM revenue and 340 systems, #1 by units (QY Research, via company release) [MH1104]. "8 of top-10 chipmakers" are customers (company claim, unconfirmed) [FN0601]. Intel "a main customer"; mass-production supply of NX-TSH under discussion with the largest foundry (company statements) [ZD0529]. Third imec JDP, Apr 2026 [PH1]. |
 | (c) Revenue model | 2025: industrial 71%, research 22%, service 7% [PVU]; H1'26: 65/28/7 [PDK]. No software or subscription line. Parent-only consumables plus service is 2.0% of 2025 revenue [PH1]. Probe maker acquired Apr 2026. |
-| (d) Financials | 2025: revenue 2,056억 (+17.5%), GPM 66.4%, OP 422억 (20.5%), NI 345억. H1'26: revenue 924억 (−10%), GPM 68.6%, OP 63억 (6.8%) [PIR][PDK]. Net cash ≈ 438억 at 30 Jun 2026 [PH1]. ROE 16.7% (2025) [A140860]. FCF (parent) 96억 in 2025 vs 268억 in 2024 [PDK]. Top customer 8% of H1'26 revenue [PH1]. Exports 92% [PH1]. Greater China ≈ 41% of 2025 revenue (broker) [SH0728]. |
+| (d) Financials | 2025: revenue 2,056억 (+17.5%), GPM 66.4%, OP 422억 (20.5%), NI 345억. H1'26: revenue 924억 (−10%), GPM 68.6%, OP 63억 (6.8%) [PIR] [PDK]. Net cash ≈ 438억 at 30 Jun 2026 [PH1]. ROE 16.7% (2025) [A140860]. FCF (parent) 96억 in 2025 vs 268억 in 2024 [PDK]. Top customer 8% of H1'26 revenue [PH1]. Exports 92% [PH1]. Greater China ≈ 41% of 2025 revenue (broker) [SH0728]. |
 | (e) Resilience | Orders in Q2'26 were a record 784억; backlog 1,125억 at 30 Jun 2026 vs 693억 a year earlier [PDK]. Utilisation 96-98% [PH1]. Industrial AFM technology is Korean National Core Technology no. 2010-11 [PH1]. KRW strength is a stated H2'26 headwind [MZ0915]. |
 
 **Table C. Park Systems: six transitions (SAID vs DONE)**
@@ -73,7 +73,7 @@ Park Systems is the only company in these regions with primary-filing evidence o
 | PER trailing / forward | 63.35x (TTM EPS 3,315) / 31.53x (2026E EPS 6,661) [NV140860] |
 | PBR / dividend yield | 4.29x / 0.24% [NV140860] |
 | Own history | Year-end PER 49.2x (2023), 34.5x (2024), 42.4x (2025) [A140860]; company's 2023-25 average PER 41.8x, PBR 7.5x [PVU] |
-| Consensus | 2026E revenue 2,463억, OP 503억; Q3'26E revenue 680억, OP 181억 [A140860][Q140860] |
+| Consensus | 2026E revenue 2,463억, OP 503억; Q3'26E revenue 680억, OP 181억 [A140860] [Q140860] |
 | Latest guidance | Qualitative: full year "can meet broker expectations" (CEO, 29 May 2026) [FN0601] |
 | Next event | Q3 2026 quarterly report; not published as of 12 Nov 2026 (due ~14 Nov) |
 
@@ -91,14 +91,7 @@ Park's strengths on the record: 64-68% gross margins, ~20% operating margins in 
 
 ### Cited Findings
 **(a) Position**
-- Product set [PH1]:
-  - NX-Wafer: inspection, automated defect review, post-CMP roughness.
-  - NX-3DM: sidewall, overhang, CD.
-  - NX-Hybrid WLI: AFM + white-light interferometry for QA/process control incl. advanced packaging; "orders and shipments under way".
-  - NX-Mask: photomask particle removal/repair, delivered to chipmakers and mask makers.
-  - NX-TSH: large and heavy samples; displays, now packaging.
-  - NX-HDM/PTR: hard disks.
-  - Optical: Accurion ellipsometers; Lyncée holographic microscopes.
+- Product set [PH1]: NX-Wafer (inspection, automated defect review, post-CMP roughness); NX-3DM (sidewall, overhang, CD); NX-Hybrid WLI (AFM + white-light interferometry for QA/process control incl. advanced packaging; "orders and shipments under way"); NX-Mask (photomask particle removal/repair, delivered to chipmakers and mask makers); NX-TSH (large/heavy samples; displays, now packaging); NX-HDM/PTR (hard disks); Accurion ellipsometers and Lyncée holographic microscopes.
 - Filing claims 0.01 nm vertical resolution and no sample preparation, and says SEM cannot accurately measure FinFET/GAA 3D shapes, so AFM is "becoming essential" (company claim, unconfirmed) [PH1].
 - SK Securities: with D2W hybrid bonding, Cu-dishing tolerance moves from sub-µm to nm; AFM demand is "structural, not cyclical" (broker view) [SK0930].
 
@@ -117,29 +110,19 @@ Park's strengths on the record: 64-68% gross margins, ~20% operating margins in 
   - H1'26 orders were led by mainland China and Taiwan; H2 orders come from the US, Korea and Japan.
   - Hybrid WLI sales to a North American customer and TSH sales to a foundry's packaging lines are expected from H2'26 into 2027.
 - SK Securities: order growth centred on Greater China, with high-value new tools entering the backlog; US orders for new tools expected in H2 [SK0930].
-- Third imec JDP (April 2026) covers advanced packaging, wafer bonding and related CMP; Park joined imec's 3D Systems Integration IIAP (company disclosure) [PH1][PDK].
+- Third imec JDP (April 2026) covers advanced packaging, wafer bonding and related CMP; Park joined imec's 3D Systems Integration IIAP (company disclosure) [PH1] [PDK].
 
 **(c) Revenue model**
-- Orders by year (industrial/research/service, 억원) [PDK]:
-  - 2021: 920 (622/262/36)
-  - 2022: 1,472 (870/554/48)
-  - 2023: 1,531 (1,067/380/84)
-  - 2024: 1,844 (1,277/448/119)
-  - 2025: 2,080 (1,491/462/~127, service implied)
+- Orders by year, 억원 (industrial/research/service) [PDK]: 2021 920 (622/262/36); 2022 1,472 (870/554/48); 2023 1,531 (1,067/380/84); 2024 1,844 (1,277/448/119); 2025 2,080 (1,491/462/~127, service implied).
 - Backlog at end-2025 was 636억 (industrial 78%) [PVU].
 - Service covers installation, maintenance, upgrades and application support [PVU]. Parent-only consumables and service: 34억 in 2025, 18억 in H1'26 [PH1].
-- Production is hand assembly by skilled staff (38 people in H1'26) [PH1][DS0602].
+- Production is hand assembly by skilled staff (38 people in H1'26) [PH1] [DS0602].
 
 **(d) Financial strength (K-IFRS consolidated, 억원)**
-- Revenue / gross profit / OP by year [PDK][PIR]:
-  - 2021: 853 / 552 / 176
-  - 2022: 1,245 / 815 / 326
-  - 2023: 1,448 / 924 / 276
-  - 2024: 1,751 / 1,142 / 385
-  - 2025: 2,056 / 1,365 / 422
+- Revenue / gross profit / OP [PDK] [PIR]: 2021 853/552/176; 2022 1,245/815/326; 2023 1,448/924/276; 2024 1,751/1,142/385; 2025 2,056/1,365/422.
 - Net income: 428 (2024), 345 (2025).
 - Quarterly revenue / OP: Q2'25 523/120; Q3'25 456/86; Q4'25 568/84; Q1'26 394/21; Q2'26 530/42 [PDK]. H1'26 SG&A rose 29% (R&D, labour, sales commissions) [PDK]; press also cites HQ-move costs and incentives [SK0930].
-- R&D: 197억 = 9.5% of 2025 revenue (consolidated chart); parent R&D 141억 = 18.5% of H1'26 parent revenue; 130 R&D staff [PDK][PH1].
+- R&D: 197억 = 9.5% of 2025 revenue (consolidated chart); parent R&D 141억 = 18.5% of H1'26 parent revenue; 130 R&D staff [PDK] [PH1].
 - Balance sheet at 30 Jun 2026: equity 3,403억, debt ratio 39.3% (55.4% at end-2025). Deposits 1,265억 vs borrowings 827억, i.e. net cash ≈ 438억 (≈13억 at end-2025) [PH1].
 - KRW 100bn perpetual bond with warrants (hybrid equity), issued 8 Jun 2026: 30 years, 0% coupon, no investor put; buyers Kiwoom Securities and NV Mezzanine Growth Equity PEF [PH1]. Use of funds: 200억 R&D, 400억 M&A, 400억 capacity [DS0602]. Warrant exercise price: could not verify.
 - FCF (parent): 2022 170억, 2023 171억, 2024 268억, 2025 96억. DPS 500 KRW [PDK]. KIS commercial credit rating BBB- (20 Apr 2026) [PH1].
@@ -151,7 +134,7 @@ Park's strengths on the record: 64-68% gross margins, ~20% operating margins in 
 
 **(e) Resilience**
 - Quarterly orders: 323 → 409 → 558 → 629 → 784억 (Q2'25-Q2'26).
-- Backlog over the same quarters: 693 → 645 → 636 → 871 → 1,125억. It was 1,023억 on 14 Aug 2026 at the then-current FX rate [PDK][PH1].
+- Backlog over the same quarters: 693 → 645 → 636 → 871 → 1,125억. It was 1,023억 on 14 Aug 2026 at the then-current FX rate [PDK] [PH1].
 
 ### Inferences
 - **ROIC (my estimate, 2025): about 16%.** NOPAT ≈ 422억 × (1 − 16.4% tax) ≈ 353억, over invested capital ≈ equity 2,251 + debt 752 − cash 766 ≈ 2,238억. Goodwill and the new HQ are included.
@@ -188,7 +171,7 @@ Park's concrete actions cluster on transition 3 (packaging) and on adding optica
 - **DONE, M&A:**
   - Accurion: 100% acquired 4 Oct 2022 [PH1].
   - Lyncée Tec: announced 6 Jan 2025, with a plan for a fully automated DHM for advanced packaging [PLY]. The H1 report dates the deal March 2025 and the value-up plan says 2024 (inconsistent).
-  - Rocky Mountain Nanotechnology (solid Pt/Pt-Ir probes; ~10 nm tips): acquired April 2026 for in-house parts and next-generation nanoprobing [FN0506][PH1].
+  - Rocky Mountain Nanotechnology (solid Pt/Pt-Ir probes; ~10 nm tips): acquired April 2026 for in-house parts and next-generation nanoprobing [FN0506] [PH1].
   - CEO: 5 targets under review (Korea, US, Germany, France), ~2 to be disclosed in 2026, metrology tools or components only (company statement) [FN0601].
 
 ### Inferences
@@ -233,14 +216,8 @@ The other Korean inspection vendors split sharply in 2025-26. Nextin and Auros l
 
 ### Cited Findings
 - **Nextin (348210)**
-  - Revenue / OP: 2023 879/362억 (41% OPM); 2024 1,137/470억; 2025 669/−12억; Q2'26 208/−8; 2026E 712/3 [A348210][Q348210].
-  - H1'26 [NX1018]:
-    - Revenue 288억 (−28.5%), operating loss 63억.
-    - Products 188억 (−41%); services 98억 (+18%, 34% of sales); GPM ~48%.
-    - HBM tool KROKY 59억 vs 200억.
-    - China ~64억 vs 115억.
-    - R&D 21.7% of sales; H1 orders 210억; backlog 90억.
-    - ASPER shipped to its Wuxi entity Sep 2026; certification of the Wuxi plant pending.
+  - Revenue / OP: 2023 879/362억 (41% OPM); 2024 1,137/470억; 2025 669/−12억; Q2'26 208/−8; 2026E 712/3 [A348210] [Q348210].
+  - H1'26 [NX1018]: revenue 288억 (−28.5%), operating loss 63억; products 188억 (−41%), services 98억 (+18%, 34% of sales); GPM ~48%; HBM tool KROKY 59억 vs 200억; China ~64억 vs 115억; R&D 21.7% of sales; H1 orders 210억, backlog 90억; ASPER shipped to its Wuxi entity Sep 2026, Wuxi plant certification pending.
   - SK hynix contracts: 107억 (Mar 2026) [NX0326] and 254.4억 (6 Oct 2026, to 25 Nov 2027, 38% of 2025 revenue; the company links it to the Yongin Y1 fab) [NX1014]. Shinhan (25 Aug 2026): China orders delayed, target cut (headline) [NX0825].
   - China was 85-87% of 2024 revenue. KROKY was "adopted by an HBM maker" (company claim). Nextin US is in San Jose; X-ray JV Nexray with Axiomatique [NX0618].
   - IRIS-III (IR detection of non-metal voids in W2W/C2W bonding) launched Feb 2026 [NX0210]. ASPER (warpage-tolerant packaging inspection; 50 nm defects claimed; AI algorithm) launched Dec 2025 [NX1217].
@@ -252,14 +229,14 @@ The other Korean inspection vendors split sharply in 2025-26. Nextin and Auros l
   - KRW 1bn treasury-share trust (10 Nov 2026) [AU1110].
   - Overlay and IR-overlay products and customers: background, not verified.
 - **Koh Young (098460)**
-  - 2025 revenue 2,326억, OP 173억 (7.5%); Q2'26 888/146억 (record); 2026E 3,674/609억 [A098460][Q098460].
-  - Q3'26: OP 194억 (+312%) and first quarterly revenue above 1,000억 (headlines, 3 Nov 2026) [KY1103a][KY1103b].
+  - 2025 revenue 2,326억, OP 173억 (7.5%); Q2'26 888/146억 (record); 2026E 3,674/609억 [A098460] [Q098460].
+  - Q3'26: OP 194억 (+312%) and first quarterly revenue above 1,000억 (headlines, 3 Nov 2026) [KY1103a] [KY1103b].
   - Orders and investment: new order in China's AI-server chain [KY1021]; SOCAMM2 inspection order from a domestic memory maker [KY0930]; 294억 capex [KY0806].
   - Korea Investment & Securities target 44,000 KRW [KY1012].
   - Price 24,200; market cap KRW 1.65tn; PER 34.8x trailing / 34.6x forward [P098460].
   - Share of revenue from semiconductors vs boards: could not verify.
 - **Intekplus (064290)**
-  - 2025 revenue 898억, OP −37억; Q2'26 90/−51억; 2026E 1,071/83억; debt ratio 183% [A064290][Q064290].
+  - 2025 revenue 898억, OP −37억; Q2'26 90/−51억; 2026E 1,071/83억; debt ratio 183% [A064290] [Q064290].
   - Contracts: 140억 [IK0626]; 218억 [IK0702a]; 85억 with a Taiwanese firm [IK0702b]; 61억 [IK0909].
   - Price 47,600 (52-week low 10,960); market cap 6,195억; PBR 14x [P064290].
 - **Gigavis (420770)**
@@ -295,33 +272,25 @@ Taiwan's growth vehicles in this field in 2026 are:
 Board and substrate AOI makers (Machvision, TRI, GPM) are booming on AI servers, but are not wafer metrology. Cheng Mei Instrument, named in the brief, did not appear in TWSE/TPEx listed monthly-revenue data. TSMC builds its defect-inspection AI on NVIDIA tools in-house.
 
 ### Cited Findings
-- **Monthly revenue, October 2026** (NT$ thousand; month YoY; Jan-Oct and YoY) [TWSE-REV][TPEX-REV]:
-  - MA-tek 338,226 (+10.2%); 3,383,431 (+17.0%)
-  - iST 360,503 (−8.4%); 3,757,748 (−6.2%)
-  - MSScorps 254,801 (+48.5%); 2,228,073 (+26.7%)
-  - V5 Technologies 316,939 (+32.6%); 2,622,995 (+69.7%)
-  - Machvision 403,332 (+95.6%); 3,408,003 (+24.6%)
-  - TRI 926,468 (+71.9%); 9,213,217 (+33.0%)
-  - Utechzone 151,483 (−18.0%); 1,221,908 (−14.5%)
-  - GPM 716,168 (+126.0%); 5,007,838 (+33.7%)
-  - Favite 74,553 (+72.8%); 830,399 (+222.6%)
-  - E&R 257,512 (+109.2%); 1,832,617 (+51.3%)
-  - All Ring 978,004 (+217.7%); 8,067,739 (+68.6%)
-  - Scientech 1,101,175 (+25.5%); 10,298,835 (+9.2%)
-- **Prices and valuation** (close; P/E; P/B; yield). TWSE names are as of 11 Nov 2026 and TPEx names as of 12 Nov 2026 [TWSE-PX][TWSE-PE][TPEX-PX][TPEX-PE]:
-  - MA-tek NT$188.0; 22.8x; 2.15x; 2.24%
-  - iST NT$115.0; 25.2x; 2.10x; 3.88%
-  - MSScorps NT$470; 1,880x (near-zero TTM EPS); 7.53x
-  - V5 NT$644; 31.2x; 4.65x
-  - Machvision NT$623; 33.4x; 6.85x
-  - TRI NT$233.5; 16.9x; 5.19x
-  - Utechzone NT$184; 78.6x
-  - GPM NT$86.2; 27.5x; P/B 0.78x (as published; looks anomalous)
-  - Favite NT$75.2; 33.9x
-  - E&R NT$143.5; 478x
-  - All Ring NT$950; 40.6x
-  - Scientech NT$505; 31.0x
-- **V5 Technologies (倍利科)**, all from Chinese-press search summaries; underlying articles not opened [V5-SD][V5-CT][V5-UDN][V5-BN]:
+- **Monthly revenue (Oct 2026, NT$ thousand) and valuation** [TWSE-REV] [TPEX-REV] [TWSE-PX] [TWSE-PE] [TPEX-PX] [TPEX-PE]. Prices for TWSE names (MSScorps, V5, Machvision, TRI, Favite, Scientech) are as of 11 Nov 2026; for TPEx names as of 12 Nov 2026.
+
+| Company (code) | Oct rev (YoY) | Jan-Oct rev (YoY) | Close NT$ | P/E | P/B | Yield |
+|---|---|---|---|---|---|---|
+| MA-tek 閎康 (3587) | 338,226 (+10.2%) | 3,383,431 (+17.0%) | 188.0 | 22.8x | 2.15x | 2.24% |
+| iST 宜特 (3289) | 360,503 (−8.4%) | 3,757,748 (−6.2%) | 115.0 | 25.2x | 2.10x | 3.88% |
+| MSScorps 汎銓 (6830) | 254,801 (+48.5%) | 2,228,073 (+26.7%) | 470 | 1,880x (near-zero TTM EPS) | 7.53x | 0.21% |
+| V5 Technologies 倍利科 (7822) | 316,939 (+32.6%) | 2,622,995 (+69.7%) | 644 | 31.2x | 4.65x | 0.99% |
+| Machvision 牧德 (3563) | 403,332 (+95.6%) | 3,408,003 (+24.6%) | 623 | 33.4x | 6.85x | 2.25% |
+| TRI 德律 (3030) | 926,468 (+71.9%) | 9,213,217 (+33.0%) | 233.5 | 16.9x | 5.19x | 3.00% |
+| Utechzone 由田 (3455) | 151,483 (−18.0%) | 1,221,908 (−14.5%) | 184 | 78.6x | 4.42x | 1.90% |
+| GPM 均豪 (5443) | 716,168 (+126.0%) | 5,007,838 (+33.7%) | 86.2 | 27.5x | 0.78x* | 2.55% |
+| Favite 晶彩科 (3535) | 74,553 (+72.8%) | 830,399 (+222.6%) | 75.2 | 33.9x | 5.13x | n/a |
+| E&R 鈦昇 (8027) | 257,512 (+109.2%) | 1,832,617 (+51.3%) | 143.5 | 478x | 5.32x | 0% |
+| All Ring 萬潤 (6187) | 978,004 (+217.7%) | 8,067,739 (+68.6%) | 950 | 40.6x | 8.58x | 1.23% |
+| Scientech 辛耘 (3583) | 1,101,175 (+25.5%) | 10,298,835 (+9.2%) | 505 | 31.0x | 4.16x | 1.14% |
+
+\*As published by TPEx; looks anomalous.
+- **V5 Technologies (倍利科)**, all from Chinese-press search summaries; underlying articles not opened [V5-SD] [V5-CT] [V5-UDN] [V5-BN]:
   - Products: AOI and metrology for wafer and advanced-packaging steps (plating, RDL, coating, bonding). V5300 PRO AOI at 100-150x vs 1-10x for conventional AOI, measuring micro-bumps, RDL and CD.
   - Software: the V5 ADC AI platform integrates 12 AOI brands, at >10 chipmaker customers and on >800 tools (company claim).
   - TSMC: reportedly "passed TSMC and other major customers' qualification, gradually replacing incumbent suppliers" (media; not confirmed by TSMC). Chairman 林坤禧 is reported to be an ex-TSMC senior VP.
@@ -357,16 +326,16 @@ Board and substrate AOI makers (Machvision, TRI, GPM) are booming on AI servers,
 Nothing of global significance exists in Indian measurement or inspection tools. The only indigenous metrology effort found is Makr Microsystems, a seed-stage start-up. India's role is engineering-services hours (Tessolve) and newly running assembly-and-test plants that will buy foreign inspection tools.
 
 ### Cited Findings
-- **Makr Microsystems (Bengaluru):** Rs 10.2 crore seed led by Bluehill VC with Artha Venture Fund (early Sep 2026). It works on "nanoscale 3D subsurface metrology" for hidden structures and defects; the team has AFM and MEMS backgrounds. No products or customers disclosed [MAKR][MAKR2].
+- **Makr Microsystems (Bengaluru):** Rs 10.2 crore seed led by Bluehill VC with Artha Venture Fund (early Sep 2026). It works on "nanoscale 3D subsurface metrology" for hidden structures and defects; the team has AFM and MEMS backgrounds. No products or customers disclosed [MAKR] [MAKR2].
 - **Applied Instruments venture:** described as "India's first Make in India semiconductor equipment company" with defect-inspection offerings, formed with Singapore-based Applied Instruments. Indigenous content unverified [TV-AI].
 - **Tessolve (private):** FY26 revenue ₹1,526 crore (FY25 ₹1,157 crore); target ₹2,000 crore for FY27; ≥25% of revenue from AI/data-centre work; no IPO planned (single outlet) [TESS].
 - **India Semiconductor Mission:**
-  - Phase 2 ("Semicon 2.0") approved by Cabinet in July 2026 at ~Rs 1.25-1.28 lakh crore; figures vary by source [ISM-EMS][ISM-TV].
+  - Phase 2 ("Semicon 2.0") approved by Cabinet in July 2026 at ~Rs 1.25-1.28 lakh crore; figures vary by source [ISM-EMS] [ISM-TV].
   - Micron Sanand: assembly-and-test in commercial production from ~Feb 2026 (one source).
   - Kaynes Semicon Sanand OSAT: inaugurated 31 Mar 2026.
   - CG Semi: commercial production reported 4 Jul 2026, though other sources differ.
   - Tata Assam: in trial production, with output targeted by 31 Mar 2027.
-  - All are assembly, test and packaging, not fabs; the sources are secondary and inconsistent [ISM-TV][ISM-CT].
+  - All are assembly, test and packaging, not fabs; the sources are secondary and inconsistent [ISM-TV] [ISM-CT].
 - **Park Systems** has run an Indian sales subsidiary since Sep 2021 [PH1].
 
 ### Inferences
@@ -382,7 +351,7 @@ Malaysia's listed inspection names are in a strong AI-driven upswing, but they s
 
 ### Cited Findings
 - **ViTrox**
-  - 3Q26 revenue RM485.1M (RM228.6M a year earlier); net profit RM118.58M (RM34.72M); best quarter since its 2005 listing [VT1106][VT1105].
+  - 3Q26 revenue RM485.1M (RM228.6M a year earlier); net profit RM118.58M (RM34.72M); best quarter since its 2005 listing [VT1106] [VT1105].
   - Growth came from Automated Board Inspection and Machine Vision System on AI-infrastructure and networking demand, helped by tax incentives [VT1106].
   - 9M26 net profit RM254.8M (RM87.0M). Q3 revenue beat the RM360-402M guidance cited by BIMB [VT-EDGE].
   - Share price RM10.60 (5 Nov 2026); market cap ~RM20bn (search summary) [VT-EDGE].
@@ -390,7 +359,7 @@ Malaysia's listed inspection names are in a strong AI-driven upswing, but they s
 - **MI Technovation:** 3Q26 core net profit RM69M (+114% YoY); 9M RM151M (Apex Research); materials unit Mi Material Holding listed on SGX on 28 Oct 2026 [MI1102].
 - **SixSense (private)**
   - Collaboration with Tong Hsing Electronic on AI defect classification, announced Feb-Mar 2026 [SX-TH].
-  - Company claims: >100M chips analysed; engineers fine-tune models on their own fab data and deploy in under two days; 2026 roadmap toward real-time in-machine classification (company claims) [SX-TH][SX-SGI].
+  - Company claims: >100M chips analysed; engineers fine-tune models on their own fab data and deploy in under two days; 2026 roadmap toward real-time in-machine classification (company claims) [SX-TH] [SX-SGI].
 
 ### Inferences
 - ViTrox's quarterly net margin rose from ~15% to ~24% (my arithmetic). Annualised 9M earnings (~RM340M) put it at roughly 59x a RM20bn market cap (rough, my arithmetic).
@@ -409,7 +378,7 @@ Korean KOSDAQ names are directly accessible; Park Systems has 37.86% foreign hol
 ### Cited Findings
 - **Korea, rules:** the government says it abolished foreign investor registration, moved to LEIs, broadened omnibus accounts, expanded English disclosure and resumed short selling [KR-MSCI]. It also issued an integrated-account guideline [KR-OMNI] and published an FX roadmap including 24-hour FX trading from July 2026 [KR-ROAD].
 - **Korea, MSCI:** the 23 Jun 2026 review left Korea off the developed-market watch list, citing offshore won convertibility, omnibus use and pre-funding of settlement [KR-MSCI].
-- **Korea, holdings:** foreign ownership on 12 Nov 2026 was Park 37.86%, Koh Young 31.92%, Nextin 15.28%, Auros 7.11% [P140860][P098460][P348210][P322310]. Nextin is in the KOSDAQ Global Segment [NX0618].
+- **Korea, holdings:** foreign ownership on 12 Nov 2026 was Park 37.86%, Koh Young 31.92%, Nextin 15.28%, Auros 7.11% [NV140860] [P098460] [P348210] [P322310]. Nextin is in the KOSDAQ Global Segment [NX0618].
 - **Taiwan, India, Malaysia (background, not verified):**
   - Taiwan: foreign investors register as FINI through a local agent/custodian.
   - India: Foreign Portfolio Investor registration with SEBI; the relevant Indian firms (Tessolve, Makr) are private anyway.
@@ -427,9 +396,9 @@ Korean KOSDAQ names are directly accessible; Park Systems has 37.86% foreign hol
 On the evidence collected, probably not on scale or confirmed tool-of-record status. The strongest case is Park Systems as the niche leader in a physical-constraint measurement (nm-scale topography, including hybrid-bond Cu pads) relevant to stacked chips. A secondary case is Taiwan's analysis labs as holders of outsourced reference data. This is evidence for the writer to judge, not a ranking.
 
 ### Cited Findings
-- **Park Systems:** #1 in AFM with ~22-24% share (company-cited) [PDK][MH1104]. Its 2025 revenue of KRW 205.6bn [PIR] is small next to KLA's ~US$13bn as cited by Park's CEO [FN0601 (via fnnews 1 Jun 2026)]. No chipmaker confirms it as tool of record.
+- **Park Systems:** #1 in AFM with ~22-24% share (company-cited) [PDK] [MH1104]. Its 2025 revenue of KRW 205.6bn [PIR] is small next to KLA's ~US$13bn as cited by Park's CEO [FN0601]. No chipmaker confirms it as tool of record.
 - **V5 Technologies:** reportedly TSMC-qualified; 2025 revenue NT$2.1bn [V5-SD].
-- **Analysis labs:** MA-tek + iST + MSScorps Jan-Oct 2026 revenue ≈ NT$9.4bn combined (my sum) [TPEX-REV][TWSE-REV].
+- **Analysis labs:** MA-tek + iST + MSScorps Jan-Oct 2026 revenue ≈ NT$9.4bn combined (my sum) [TPEX-REV] [TWSE-REV].
 
 ### Inferences
 - If the global list values "owning a physical constraint plus reference role" over scale, Park is a candidate for the tail of a 15-company list. Otherwise these regions contribute niche suppliers and labour-based reference labs, not global judges.
@@ -466,7 +435,6 @@ On the evidence collected, probably not on scale or confirmed tool-of-record sta
 [MZ0915]: https://n.news.naver.com/mnews/article/018/0006369420 "Edaily on Meritz Securities note, 15 Sep 2026"
 [SH0728]: https://stockhub.kr/news/news_080f11887650 "stockhub summary of SK Securities 2Q26 preview, 28 Jul 2026"
 [NV140860]: https://m.stock.naver.com/api/stock/140860/integration "Naver Finance quote and valuation, Park Systems, 12 Nov 2026"
-[P140860]: https://m.stock.naver.com/api/stock/140860/integration "same as NV140860"
 [A140860]: https://m.stock.naver.com/api/stock/140860/finance/annual "Naver/FnGuide annual financials and consensus, 12 Nov 2026"
 [Q140860]: https://m.stock.naver.com/api/stock/140860/finance/quarter "Naver/FnGuide quarterly financials and consensus, 12 Nov 2026"
 [NVN140860]: https://m.stock.naver.com/api/news/stock/140860?pageSize=20&page=1 "Naver news headline list, Park Systems, 12 Nov 2026"
