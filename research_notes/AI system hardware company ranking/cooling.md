@@ -118,18 +118,20 @@ Note: "Verified" means this session found a dated 2026 source for the row's key 
 - **The two-phase layer is thin.** It consists of start-ups (Accelsius, ZutaCore), sub-units of large groups (LiquidStack in Trane) and ODMs running qualification work (Wiwynn, MiTAC).
 
 ### Gaps
-- No 2026 figures were gathered for:
-  - Kaori, Jentech, Delta's cooling share, Schneider-Motivair revenue, Munters, Alfa Laval, Stulz, Rittal;
-  - mainland China beyond Envicool;
+- Still missing after the second pass:
+  - Delta's cooling share of revenue, Schneider-Motivair revenue, Munters, Alfa Laval, Stulz, Rittal;
+  - Kaori's margins;
+  - data-centre splits for the Chinese vendors;
   - Japan (Daikin/Chilldyne, Nidec, MHI) and Korea (LG, Samsung/FläktGroup closing);
-  - TIM suppliers, and QD makers' market shares.
-- Cause: the shared search budget was exhausted, and Chinese, Japanese and Korean home-market filings (cninfo, EDINET/TDnet, DART) were not reachable without search.
+  - global TIM suppliers, and QD makers' market shares.
+- Cause: the search budget was exhausted. Japanese and Korean home-market filings (EDINET/TDnet, DART) could not be located without search.
+- Taiwan and mainland China headline financials were filled from exchange open data and Eastmoney.
 
 ---
 
 ## (2) Evidence on tests (a)–(e) for key companies
 
-Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras, Envicool**. Accelsius and ZutaCore (two-phase) are covered briefly as successor-side bellwethers.
+Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras, Envicool**, plus **Jentech**, added in the second pass because exchange data show the segment's highest margins. Accelsius and ZutaCore (two-phase) are covered briefly as successor-side bellwethers.
 
 ### Takeaway
 - **Vertiv** has the best evidence on breadth, financial strength and recurring revenue:
@@ -355,6 +357,31 @@ Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras
 - Q3 R&D +39.4%; FX losses and higher interest also weighed.
 - Balance sheet: contract liabilities RMB665M (+188% vs start of year); inventory RMB2.507bn (+155%), including goods shipped but not yet recognised.
 - Profit lag attributed to delayed shipments and revenue recognition, and upfront investment in liquid cooling and overseas channels.
+- Returns (TTM, 12 Nov 2026) — [stockanalysis](https://stockanalysis.com/quote/she/002837/statistics/) (secondary):
+  - ROIC 15.7%; ROE 14.7%; operating margin 10.5%;
+  - FCF margin 4.2% (TTM FCF RMB295M); net debt RMB304M.
+- 9M weighted ROE 10.15% (not annualised) — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22002837%22)) (secondary)
+- Peer context (Eastmoney, 9M 2026): Shenling, Goaland, Tongfei and FRD grew revenue 25–37%, with gross margins of 20–30%. Sugon Digital Creation lost money (gross margin 8.5%). Mainland Chinese liquid-cooling vendors earn markedly lower margins and returns than the Taiwanese component makers (see map rows).
+
+#### Jentech (TWSE: 3653), added after the second pass
+
+**(a) Position**
+- Process know-how in heat spreaders and lids (in-package metal parts). Jentech is the reported lead candidate for the micro-channel lid (MCL), the most likely in-package successor to the cold plate.
+  - Secondary/rumour; the company declines comment under NDA — [Digitimes 12 Sep 2025](https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000732415_G4K58U450ZCNXZ6RERD9C); [CTEE 30 Sep 2025](https://www.ctee.com.tw/news/20250930700073-439901)
+- Product classes: lids/heat spreaders are successor-neutral; MCL is SUCCESSOR, with timing slipped to "not near-term" — [TechNews 27 Jan 2026](https://technews.tw/2026/01/27/rubin-mccp-ai-gpu/)
+
+**(b) Lead**
+- No third-party share data. The financial outcomes imply pricing power (next bullet).
+
+**(d) Financial strength**
+- 9M 2026 — [TWSE t187ap06](https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci); [t187ap07](https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci):
+  - revenue NT$22.07bn; gross margin 46.96%; operating margin 36.22%; net NT$6.63bn; EPS NT$45.03;
+  - 30 Sep 2026 equity NT$27.19bn vs liabilities only NT$7.29bn;
+  - annualised ROE about 33% (derived).
+- Oct 2026 revenue +80.7% y/y — [TWSE t187ap05](https://openapi.twse.com.tw/v1/opendata/t187ap05_L)
+
+**Gaps**
+- Customers, concentration and geography not verified.
 
 **(a)/(b)**
 - Showed the Deschutes CDU design (spec v1.0) at OCP 2026 — [Dell'Oro](https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/)
@@ -398,7 +425,7 @@ Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras
   - Together these signal commoditisation risk in CDUs and standard cold plates once supply catches up.
 
 ### Gaps
-- Return on invested capital (ROIC) could not be computed for any company: equity and invested-capital figures were not extracted.
+- ROIC comes only from a secondary aggregator (stockanalysis, TTM) and from my ROE derivations on exchange data. Definitions differ: AVC's 160% ROIC reflects very low invested capital. Boyd and CoolIT have no standalone returns.
 - AVC's and Auras' largest-customer and top-five shares, and revenue by country, were not found. Taiwanese annual reports (MOPS) were not reachable.
 - Vertiv gives no customer-concentration percentages.
 - Schneider-Motivair and Delta cooling revenue, and its share of group revenue, were not found.
@@ -464,6 +491,11 @@ None of the key companies yet has a funded, shipping successor to the single-pha
 - **nVent — partly coherent.** Funded, with capacity being added, but there is no disclosure that lets anyone judge its liquid-cooling lead.
 - **Auras — partly coherent.** Claimed MCL capability, but current execution shows margin stress, and NVIDIA-led procurement limits pricing.
 - **Envicool — partly coherent / insufficient evidence.** Growth is real, but profit has declined, and its standing with US or hyperscaler customers is unverified.
+- **Jentech — partly coherent.**
+  - Its lids and heat spreaders are needed whatever the cooling method.
+  - It is funded (equity NT$27.2bn, low liabilities).
+  - It is the reported MCL lead, but MCL has slipped, and all customer and qualification evidence is rumour-level.
+  - What must go right: MCL yield and leak problems solved before micro-channel cold plates, which do not need Jentech, become entrenched.
 - **Accelsius — not coherent on funding.** Its technology traction is real but early.
 - **ZutaCore — partly coherent.** Funded for now, with strategic backers; production orders are unverified.
 
@@ -478,10 +510,24 @@ None of the key companies yet has a funded, shipping successor to the single-pha
 ### Takeaway
 1. **Vertiv**
 2. **AVC**
-3. **Boyd (Eaton) = CoolIT (Ecolab)** — tie; cannot separate
-4. **nVent**
-5. **Auras = Envicool** — tie
-6. Successor-side bellwethers, kept separate: ZutaCore ahead of Accelsius.
+3. **Jentech** — provisional; rests on exchange-reported margins, with customer evidence secondary
+4. **Boyd (Eaton) = CoolIT (Ecolab)** — tie; cannot separate
+5. **nVent**
+6. **Auras**, narrowly ahead of **Envicool**
+7. Successor-side bellwethers, kept separate: ZutaCore ahead of Accelsius.
+
+Second-pass return evidence (TTM, stockanalysis, secondary, 12 Nov 2026):
+
+| Company | ROIC | ROE | Other |
+|---|---|---|---|
+| Vertiv | 43.8% | 46.6% | — |
+| AVC | 159.8% (inflated by low invested capital) | 66.4% | — |
+| Auras | 23.2% | — | Negative TTM FCF |
+| Envicool | 15.7% | — | — |
+| nVent | 13.5% | — | — |
+| Jentech | — | ~33% annualised (derived from exchange data) | — |
+
+Sources: [VRT](https://stockanalysis.com/stocks/vrt/statistics/); [AVC](https://stockanalysis.com/quote/tpe/3017/statistics/); [Auras](https://stockanalysis.com/quote/tpex/3324/statistics/); [Envicool](https://stockanalysis.com/quote/she/002837/statistics/); [NVT](https://stockanalysis.com/stocks/nvt/statistics/)
 
 ### Cited Findings
 - **Vertiv: highest.** It has the best combination of things the evidence can confirm:
@@ -501,16 +547,21 @@ None of the key companies yet has a funded, shipping successor to the single-pha
   - Boyd's segment margin is about 24% — [Eaton 10-Q](https://www.sec.gov/Archives/edgar/data/1551182/000155118226000040/etn-20260930.htm)
   - CoolIT has no standalone margin data — [Ecolab 10-Q](https://www.sec.gov/Archives/edgar/data/31462/000162828026068208/ecl-20260930.htm)
 - **nVent: fifth.** Strong group metrics but undisclosed liquid metrics — [nVent Q3 call](https://www.fool.com/earnings/call-transcripts/2026/10/30/nvent-electric-nvt-q3-2026-earnings-call-transcript/)
-- **Auras and Envicool: tied, sixth and seventh.**
-  - Auras: operating margin 13.9% in Q3 2026, with ramp problems — [CTEE](https://www.ctee.com.tw/news/20261111701940-430503)
-  - Envicool: net margin 9.5% and falling 9M profit — [建投机械](https://news.qq.com/rain/a/20261026A0BV6X00)
+- **Jentech: third, provisional.**
+  - 9M 2026 gross margin 47.0%, operating margin 36.2%, low leverage — [TWSE open data](https://openapi.twse.com.tw/v1/opendata/t187ap17_L)
+  - Ranked below AVC because its qualification and customer evidence is rumour-level and its MCL successor has slipped — [TechNews](https://technews.tw/2026/01/27/rubin-mccp-ai-gpu/)
+- **Auras: sixth, narrowly ahead of Envicool.**
+  - Auras: higher ROIC (23% vs 16%) and operating margin (9M 15.8%, with Q3 13.9% during ramp problems); but negative TTM FCF and net debt — [TPEx open data](https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci); [CTEE](https://www.ctee.com.tw/news/20261111701940-430503); [stockanalysis](https://stockanalysis.com/quote/tpex/3324/statistics/)
+  - Envicool: Q3 net margin 9.5%, falling 9M profit, small positive FCF — [建投机械](https://news.qq.com/rain/a/20261026A0BV6X00); [stockanalysis](https://stockanalysis.com/quote/she/002837/statistics/)
 
 ### Inferences
 - If quality is weighted toward durability through a two-phase transition, Vertiv's lead over AVC widens. If it is weighted toward current returns, AVC's margins may equal Vertiv's.
 - **AAON** is excluded from the key set. It is a fast grower (BASX +218%) but is restating two quarters and has disclosed a material weakness, which is a governance negative — [AAON 8-K 9 Nov 2026](https://www.sec.gov/Archives/edgar/data/824142/000082414226000083/aaon-20261109.htm)
 
 ### Gaps
-- Without ROIC and concentration data, the AVC–Vertiv gap and the Boyd–CoolIT tie cannot be resolved.
+- Second-pass returns (AVC ROE 66% vs Vertiv 47%) favour AVC on current returns. Vertiv still ranks first on breadth, recurring revenue and successor-neutral positioning.
+- Customer-concentration data are still missing for both, so the AVC–Vertiv order is a judgement call.
+- The Boyd–CoolIT tie cannot be resolved: neither has standalone balance-sheet data.
 
 ---
 
@@ -650,7 +701,11 @@ None of the key companies yet has a funded, shipping successor to the single-pha
   - Schneider/Motivair revenue;
   - Munters and Alfa Laval data-centre orders;
   - Rittal and Stulz.
-- **Mainland China beyond Envicool** (Shenling, Goaland, Sugon Digital Creation, Huawei Digital Power, Lenovo Neptune): no 2026 data. Coverage is thin because cninfo and Chinese-language sources were not reachable without search.
+- **Mainland China:** 9M 2026 headline financials for Shenling, Goaland, Tongfei, FRD, Zhongshi, Yinlun and Sugon Digital Creation were obtained in the second pass from Eastmoney (secondary).
+  - Still missing: data-centre or liquid-cooling revenue splits; Huawei Digital Power and Lenovo Neptune; and any NVIDIA or US hyperscaler qualification of Chinese vendors. cninfo filings themselves were not read.
+- **Kaori:** margins are not in the TWSE open-data profitability set; only revenue was obtained.
+- **EU F-gas Regulation (EU) 2024/573:** EUR-Lex returned empty pages through the proxy, so milestone dates were not verified.
+- **Newsroom fetches that failed:** Samsung (FläktGroup closing) timed out; NVIDIA's Vera Rubin product page and Corintis' news page returned 404.
 - **Japan and Korea:**
   - Daikin–Chilldyne deal and Samsung–FläktGroup closing not re-verified;
   - Nidec CDU revenue, MHI and LG Electronics not covered;
@@ -701,6 +756,24 @@ None of the key companies yet has a funded, shipping successor to the single-pha
 - Innventure 10-Q (quarter to 30 Jun 2026) — filed 13 Aug 2026 — https://www.sec.gov/Archives/edgar/data/2001557/000200155726000154/innv-20260630.htm
 - Innventure 8-K (Nasdaq notice) — 23 Oct 2026 — https://www.sec.gov/Archives/edgar/data/2001557/000200155726000198/innv-20261023.htm
 - Innventure strategic review press release — 2 Nov 2026 — https://www.sec.gov/Archives/edgar/data/2001557/000200155726000202/inv-pressreleasefundingstr.htm
+
+**Exchange open data (primary, built from MOPS filings)**
+- TWSE monthly revenue (Oct 2026) — published 11 Nov 2026 — https://openapi.twse.com.tw/v1/opendata/t187ap05_L
+- TWSE profitability analysis (9M 2026) — published 12 Nov 2026 — https://openapi.twse.com.tw/v1/opendata/t187ap17_L
+- TWSE income statements (9M 2026) — https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci
+- TWSE balance sheets (30 Sep 2026) — https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci
+- TPEx monthly revenue (Oct 2026) — published 12 Nov 2026 — https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap05_O
+- TPEx income statements — https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap06_O_ci
+- TPEx balance sheets — https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap07_O_ci
+
+**Data aggregators (secondary)**
+- Eastmoney financial-report API (RPT_LICO_FN_CPD; 9M 2026 company reports), accessed 12 Nov 2026 — e.g. https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22002837%22)
+- stockanalysis.com statistics pages (TTM; returns and margins only; valuation fields ignored), data date 12 Nov 2026:
+  - https://stockanalysis.com/stocks/vrt/statistics/
+  - https://stockanalysis.com/stocks/nvt/statistics/
+  - https://stockanalysis.com/quote/tpe/3017/statistics/
+  - https://stockanalysis.com/quote/tpex/3324/statistics/
+  - https://stockanalysis.com/quote/she/002837/statistics/
 
 **Standards bodies and regulators**
 - OCP white paper "Thermal Boundaries in AI Infrastructure", v1.00 — 12 Oct 2026 — https://www.opencompute.org/documents/white-paper-thermal-boundaries-in-ai-infrastructure/

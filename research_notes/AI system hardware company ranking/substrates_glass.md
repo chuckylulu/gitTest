@@ -26,11 +26,11 @@ AI-grade organic substrate supply is concentrated in Ibiden (Japan), Unimicron (
 | Shinko Electric Industries | Japan | Private (JIC-led SPC JICC-04; tender closed 18 Mar 2025) | Major FC-BGA maker | Brief. Planned stakes: JIC 80%, DNP 15%, Mitsui Chemicals 5%. No current financials are public ([DNP, 19 Mar 2025](https://www.global.dnp/en/news/detail/2025/03/0319_20176512/); [DIGITIMES, 21 Mar 2025](https://apps.digitimes.com/news/a20250321PD206.html?chid=12)) |
 | Nan Ya PCB | Taiwan | TWSE 8046 | ABF/BT; Taiwan (Shulin, Jinxing) and Kunshan (China) | Brief. Conservative expansion of 5–10% a year; wins with US server-CPU and networking customers ([CTEE, 6 Nov 2026](https://www.ctee.com.tw/news/20261106700224-430502)) |
 | Kinsus | Taiwan | TWSE 3189 | ABF (46.7% of Q3 revenue) and BT (38.3%) | Brief ([storm.mg](https://www.storm.mg/article/11165649)) |
-| Zhen Ding Technology | Taiwan | TWSE 4958 | PCB major entering ABF | Brief. Named as one of Taiwan's "four ABF makers" ([Wantrich, 28 Oct 2026](https://wantrich.chinatimes.com/news/20261028900159-420101)); no ABF data retrieved (gap) |
+| Zhen Ding Technology | Taiwan | TWSE 4958 | PCB major entering ABF | Brief. Named as one of Taiwan's "four ABF makers" ([Wantrich, 28 Oct 2026](https://wantrich.chinatimes.com/news/20261028900159-420101)); no ABF-specific data retrieved (gap). Group TTM: revenue NT$210.65bn, operating margin 9.9%, FCF −NT$43.0bn on NT$65.8bn capex (section 2.9) |
 | LG Innotek | Korea | KRX 011070 | FC-BGA for PC processors; AI-accelerator FC-BGA targeted for 2027; glass pilot | Brief. Package solutions are only 7.6% of sales ([Korea Herald, 27 Oct 2026](https://www.koreaherald.com/article/10916657)) |
-| Daeduck Electronics | Korea | KRX 353200 | FC-BGA and memory substrates | Left out: no 2026 company data retrieved (search budget) |
+| Daeduck Electronics | Korea | KRX 353200 | FC-BGA and memory substrates | Brief. Third-party TTM: revenue KRW 1.35tn, operating margin 13.0%, ROIC 18.4%, net cash KRW 217bn (section 2.9). FC-BGA share of sales and AI customers not retrieved |
 | Kyocera | Japan | TSE 6971 | Organic FC-BGA packages | Left out: no 2026 data retrieved (Japanese-language IR not reached) |
-| Toppan Holdings | Japan | TSE 7911 | FC-BGA; glass-core pilot line being commissioned | Brief ([IRZ, 4 Sep 2026](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
+| Toppan Holdings | Japan | TSE 7911 | FC-BGA (Niigata; new Singapore plant); glass-core pilot line being commissioned | Brief, but notable. First overseas FC-BGA plant (Advanced Substrate Technologies, Singapore) opened 29 Sep 2026, backed by Singapore's EDB and **Broadcom**; operations from Dec 2026; large, high-layer FC-BGA for generative AI and network switches; FC-BGA capacity target ≥2.5x the FY2022 level by end FY2027 ([Toppan, 30 Sep 2026](https://www.holdings.toppan.com/en/news/2026/09/newsrelease260930_1.html); [IRZ, 4 Sep 2026](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
 | Dai Nippon Printing (DNP) | Japan | TSE 7912 | Glass-core pilot line started Dec 2025; 15% of the Shinko SPC | Brief ([IRZ](https://irz.fr/en/articles/verre-remplace-pas-encore-organique-en/)) |
 | Shennan Circuits | China | SZSE 002916 | Leading Chinese FC-BGA maker (≤26 layers in volume, company claim) | Brief ([Sina, 23 Oct 2026](https://finance.sina.com.cn/stock/aigc/agcbld/2026-10-23/doc-iniwcnvh5019323.shtml)) |
 | Shenzhen Fastprint | China | SZSE 002436 | FC-BGA (≤20 layers in volume); Zhuhai and Guangzhou | Brief; Q3 2026 data is a gap ([Eastmoney, Apr 2026](https://caifuhao.eastmoney.com/news/20260414014428571468720)) |
@@ -142,10 +142,12 @@ The shortage is most credible through 2027. 2028 is the swing year, because most
   - Yangmei Plant 2 for 2027–28 demand.
 - **SEMCO:** KRW 6.8tn package-substrate investment (Sejong, Busan, Vietnam), production phased from 2027, meaningful revenue from 2028 ([Investing.com transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-samsung-electromechanics-posts-record-q3-2026-profit-93CH-4977482)).
 - **AT&S:** Kulim 1 and 2 in capacity build through 2027/28, high-volume manufacturing in 2028/29; Chongqing high-volume manufacturing in 2027/28 ([Investing.com, 4 Aug 2026](https://www.investing.com/news/company-news/ats-q1-202627-slides-ai-demand-drives-40-revenue-surge-93CH-4834617)).
+- **Toppan:** Singapore plant starts Dec 2026; FC-BGA capacity ≥2.5x the FY2022 level by end FY2027 ([Toppan](https://www.holdings.toppan.com/en/news/2026/09/newsrelease260930_1.html)).
 - **Nan Ya PCB:** ABF capacity +5–10% a year over the next two years ([CTEE](https://www.ctee.com.tw/news/20261106700224-430502)).
 
 #### Cited findings: qualification and shares
 - **NVIDIA:** Ibiden, Unimicron and SEMCO are named by NVIDIA itself (PRIMARY, customer-confirmed) ([NVIDIA](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx)).
+- **Broadcom:** Toppan's new Singapore FC-BGA plant (operations Dec 2026; large, high-layer substrates for generative AI and network switches) is "backed by" Singapore's EDB and Broadcom. This is a supplier-side primary statement implying Broadcom sourcing from Toppan ([Toppan, 30 Sep 2026](https://www.holdings.toppan.com/en/news/2026/09/newsrelease260930_1.html)). Broadcom's own confirmation was not found.
 - **AMD:** named by AT&S in a regulated ad hoc announcement ([13 Jun 2026](https://www.finanzwire.com/press-release/ats-austria-technologie-systemtechnik-ag-etr-aus-eqs-adhoc-ats-austria-technologie-systemtechnik-ag-ats-expands-ai-substrate-capacity-in-kulim-and-increases-outlook-for-202627-JHz5CRE5qDV)). I did not find AMD's own confirmation.
 - **Unnamed US customers:**
   - Nan Ya PCB: a major US chip company adopts its ABF for a next-generation server CPU from Q1 2027; a US networking customer is in mass production at Kunshan ([CTEE](https://www.ctee.com.tw/news/20261106700224-430502)).
@@ -383,9 +385,9 @@ Q3 2026, published 28 Oct 2026 ([transcript](https://www.investing.com/news/tran
 |---|---|---|---|
 | Q1 2026/27 (Apr–Jun 2026) | EUR 549m (+40% cc) | EUR 165m (30.1%) | Microelectronics EUR 344m (+93% cc) |
 | Q2 2026/27 (Jul–Sep 2026) | EUR 681.9m (+52.4% cc) | EUR 244.0m (35.8%) | EBIT EUR 153.0m; net result EUR 125.4m |
-| H1 2026/27 | EUR 1,230.6m (+45.4%) | EUR 409.0m (33.2%, my arithmetic) | See cash flow below |
+| H1 2026/27 | EUR 1,230.6m (+45.4%; cc +46%) | EUR 409.0m (33.2%) | EBIT EUR 226.4m; profit EUR 166.2m; ROCE 17.7% |
 
-- **Cash flow (H1):** operating cash flow EUR 100.4m (vs 209.4m) as working capital and safety inventories rose. Operating FCF was −EUR 11.0m; about EUR 120m at the prior-year factoring level ([ad-hoc-news, 12 Nov 2026](https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565)).
+- **Cash flow (H1):** operating cash flow EUR 100.4m (vs 209.4m) as working capital and safety inventories rose. Operating FCF was −EUR 11.0m per the press article (the report itself says −EUR 10.6m), or about EUR 120m at the prior-year factoring level ([ad-hoc-news, 12 Nov 2026](https://www.ad-hoc-news.de/boerse/news/corporate-news/at-und-s-stock-record-quarter-lifts-earnings-as-full-year-outlook-holds/70496565)).
 - **H1 2026/27 per the report itself** (PRIMARY, 5 Nov 2026) ([H1 report](https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668)):
   - EBIT EUR 226.4m (18.4%); profit EUR 166.2m; ROCE 17.7% (H1 2025/26: 0.3%).
   - Net capex −EUR 111.0m; FCF from operations −EUR 10.6m (prior year +125.1m).

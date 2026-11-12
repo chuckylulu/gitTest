@@ -181,3 +181,25 @@ StockAnalysis statistics (12 Nov 2026 close; S&P Global consensus for forward P/
 - ATEYY (Advantest ADR, OTC): ≈USD 16.9M/day. FUWAY (Furukawa ADR) ≈USD 1.3M/day; SMTOY (Sumitomo Electric ADR) ≈USD 3.4M/day; FKURF (Fujikura ordinary) ≈USD 20k/day.
 - No US OTC line found (Yahoo) for LG Innotek, SKC, SEMCO, Hanmi or the SK hynix Luxembourg GDS.
 - Shinko Electric (taken private): website news 2026-09-30 "acquisition of Japan Display Inc.'s Mobara Fab"; 2026-09-28 MOU with SAIMEMORY on ZAM memory; 2026-08-26 Lam Research supplier award; site links an "About Delisting and Share Consolidation" page — https://www.shinko.co.jp/english/
+
+### SK hynix US ADS — primary SEC filings (EDGAR CIK 2120882; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=SK+hynix)
+- F-6 filed 2026-07-01; F-1/A 2026-07-06; 8-A12B and Nasdaq CERT 2026-07-09; 424B4 final prospectus 2026-07-09 (https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm).
+- Terms (424B4): 177,900,000 ADSs = 17,790,000 newly issued common shares; **each ADS = one-tenth of a common share**; IPO price US$149.00/ADS; gross US$26,507.1M; proceeds before expenses US$26,249.6M (net ≈US$26.2B) for general corporate purposes incl. capex; Nasdaq Global Select symbol "SKHY"; depositary Citibank, N.A.; no over-allotment option "due to restrictions under Korean law"; 90-day company lock-up from 9 Jul 2026 (so expired around 7 Oct 2026); cornerstone indications up to US$7B from Baillie Gifford, Coatue funds and Situational Awareness Partners; 728,865,500 common shares outstanding after the offering; KRX close on 9 Jul 2026 KRW 2,186,000 (≈US$1,421.28 at 1,538.05), so the IPO price was ≈4.8% above the local-equivalent price (my calc: 149/142.13).
+- CORRECTION to my earlier inference: the price-comparison ratio of ~0.14 reflects a PREMIUM, not the ratio. With 1 ADS = 0.1 share, SKHY's premium over the KRX share (my calc from Yahoo closes, US close vs next KRX close at same-day USD/KRW): median +40.1% over 72 sessions since listing; min +19.3% (2026-07-13), max +56.6% (2026-10-14), latest +52.2% (SKHY US$142.25 on 11 Nov vs KRX ₩1,254,000 on 12 Nov = US$94.12 per 0.1 share). A persistent premium suggests limited fungibility (Korean rules on ADS creation) — mechanism not verified in the deposit agreement text.
+- 6-K reports filed regularly (e.g., 2026-10-28/29 results); Schedule 13D filed by SK hynix on 2026-11-03 with Penguin Solutions, Inc. as subject company (stake size not extracted) — https://www.sec.gov/Archives/edgar/data/1616533/000119312526444399/0001193125-26-444399-index.htm
+- SMH (VanEck Semiconductor ETF) holds SKHY at 4.01% (holdings as of 2026-11-10; 26 holdings) — https://stockanalysis.com/etf/smh/holdings/ . EWJ holdings 2026-11-10: Advantest 2.74%, Tokyo Electron 2.52%, Kioxia 1.31%, Mitsubishi Electric 1.18% (Disco, Ibiden, Fujikura etc. not in visible top 25) — https://stockanalysis.com/etf/ewj/holdings/
+
+### Global peers (StockAnalysis statistics; US prices = 11 Nov 2026 close, Asia/Europe = 12 Nov 2026)
+| Peer | Mcap | Trailing P/E | Fwd P/E | EV/EBITDA | EV/S | P/B | FCF yld | Div yld | Op margin TTM |
+|---|---|---|---|---|---|---|---|---|---|
+| Micron (MU) | US$917.9B | 10.91 | 4.60 | 7.81 | 6.38 | 6.63 | 6.42% | 0.07% | 74.59% |
+| Unimicron (3037.TW) | TWD 1.30T | 39.58 | 24.63 | 31.67 | 7.97 | 7.92 | 0.26% | 0.25% | 13.30% |
+| BESI (BESI.AS) | EUR 12.76B | 43.35 | 26.75 | 33.85 | 14.33 | 19.50 | 2.23% | 1.00% | 40.54% |
+| ASMPT (0522.HK) | HKD 42.44B | 20.39 | 17.12 | 13.56 | 2.26 | 2.45 | 1.60% | 2.70% | 12.20% |
+| Lam Research (LRCX) | US$294.65B | 35.15 | 22.95 | 28.76 | 11.14 | 21.18 | 2.22% | 0.56% | 36.95% |
+| Applied Materials (AMAT) | US$313.53B | 34.08 | 22.27 | 30.69 | 10.11 | 12.24 | 1.79% | 0.54% | 31.22% |
+| Tokyo Seimitsu (7729.T) | ¥539.4B | 17.72 | 14.69 | 10.88 | 2.70 | 2.70 | 5.21% | 2.38% | 21.61% |
+| Sunny Optical (2382.HK) | HKD 69.17B | 12.60 | 14.00 | 7.18 | 1.02 | 2.02 | 6.86% | 1.92% | 8.48% |
+| Corning (GLW) | US$103.76B | 48.78 | 28.78 | 24.74 | 6.23 | 7.98 | 2.37% | 0.93% | 16.77% |
+Sources: https://stockanalysis.com/stocks/mu/statistics/ ; /quote/tpe/3037/statistics/ ; /quote/ams/BESI/statistics/ ; /quote/hkg/0522/statistics/ ; /stocks/lrcx/statistics/ ; /stocks/amat/statistics/ ; /quote/tyo/7729/statistics/ ; /quote/hkg/2382/statistics/ ; /stocks/glw/statistics/
+- TrendForce press releases (https://www.trendforce.com/presscenter/news, retrieved 2026-11-12): 2026-11-11 "Mounting Finished-Goods Inventories Prompt Some PC OEMs to Adjust Memory Procurement Plans for 2027" (notebook shipments expected to fall sharply QoQ from 3Q26; PC OEMs face weak sales and rising inventories after more than a year of higher memory prices); 2026-11-06 "Persistently High DRAM Prices Drive Adoption of Reballed Memory" (mobile DRAM contract prices rising; reballed memory penetration ~3–4% in 2026 → 7–9% in 2027); 2026-11-03 Marvell–Lumentum acquisition approved by boards.
