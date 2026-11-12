@@ -78,7 +78,7 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
   - The 2025 roadmap's "9.5-reticle CoWoS in 2027" did not appear in the 2026 write-ups I found. In Oct 2026 Wei said "we are working on the 9X reticle size and moving into the 14X." That 2027 date is unconfirmed, not shown to have slipped.
 
 **(b) Lead: strong outside evidence.**
-- Yole: TSMC is one of six integrated firms holding ~97% of 2025 high-end performance packaging revenue ([Electronics Weekly, 25 Sep 2026](https://www.electronicsweekly.com/news/business/advanced-packaging-to-be-a-51bn-market-by-2031-2026-09/)).
+- Yole: TSMC is one of six integrated firms holding ~97% of 2025 high-end performance packaging revenue ([Electronics Weekly, 25 Sep 2026](https://www.electronicsweekly.com/news/business/advanced-packaging-to-be-a-51bn-market-by-2031-2026-09/)). The scope is inferred from the article's context: it does not restate the scope next to the 97% figure. The list includes memory makers' 3D NAND hybrid bonding, so it is not a pure 2.5D share.
 - Morgan Stanley (analyst): NVIDIA booked ~800–850k CoWoS wafers for 2026, ~60% of TSMC output ([clusterbid](https://clusterbid.com/blog/gpu-supply-chain-2026-tsmc-cowos-nvidia-allocation-lead-times)). Silicon Analysts: NVIDIA, Broadcom and AMD together take ≥85% ([TechTimes, 28 Jul 2026](https://www.techtimes.com/articles/321754/20260728/ai-supply-crisis-moves-upstream-advanced-packaging-becomes-binding-constraint.htm)).
 - AMD is "a key SoIC customer" (TrendForce, 13 Apr 2026).
 - On the competitor alternative, Wei said it offers "a very competitive solution", but that TSMC is the only one producing 5x-reticle packaging at scale (company claim, unconfirmed; 3Q26 call).
@@ -88,7 +88,7 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
 - Hardware (wafers and packaging services) priced per wafer or package. It recurs through multi-year capacity planning with customers rather than contract annuities: "it takes more than five years to develop the technology and product, prepare the capacity" (2Q26 call).
 - No labour-hour or per-seat exposure.
 - Pricing power: CoWoS price increases of 10–20% are reportedly "being prepared" across TSMC and OSATs (Commercial Times via [vlsi.kr, 27 Oct 2026](https://www.vlsi.kr/en/cowos-price-hike-mb-en/), secondary).
-- Packaging revenue: ~8% (2024), "slightly over 10%" (2025), "low-teens %" (2026 guide). That is ≈US$12bn+ in 2025 and ≈US$20bn+ in 2026 if 2026 revenue grows ~40% (calc.).
+- Packaging revenue: ~8% (2024), "slightly over 10%" (2025), "low-teens %" (2026 guide). That is ≈US$12bn+ in 2025 and ≈US$20bn+ in 2026 if 2026 revenue grows ~40% (calc.). TrendForce (13 Apr 2026) instead says ~8% in 2025 and >10% in 2026. That conflicts with TSMC's corrected transcript, which I treat as authoritative; TrendForce looks a year behind.
 - Prepayments or long-term agreements for packaging: none found.
 
 **(d) Financial strength (primary).**
@@ -101,7 +101,7 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
   - Revenue US$46.72bn (+41.2% YoY in US$; NT$1,494.24bn, +50.9%).
   - Gross margin 66.4%; operating margin 58.7%; net margin 51.1%.
   - Operating cash flow NT$919.77bn; capex NT$443.21bn; free cash flow NT$476.56bn.
-  - Cash and marketable securities NT$4,016.98bn against long-term interest-bearing debt NT$818.38bn, i.e., net cash ≈NT$3.2tn (calc.).
+  - Cash and marketable securities NT$4,016.98bn against long-term interest-bearing debt NT$818.38bn, i.e., net cash ≈NT$3.2tn (calc., netting long-term interest-bearing debt only).
   - Annualised ROE 45.5%; inventory days 82 (74 a year earlier).
 - **Guidance:** 4Q26 revenue US$52.3–54.3bn, gross margin 65–67%. FY2026 growth "slightly above 40%" (Jul 2026). 2026 capex US$60–64bn, raised from US$52–56bn; 10–20% of it goes to "advanced packaging, testing, mask making and others".
 - **Concentration:** customer and geography shares were not retrieved (see §7). By analyst estimate NVIDIA alone takes ~60% of CoWoS wafers.
@@ -207,13 +207,13 @@ Key companies: TSMC, ASE, Amkor, Intel (packaging), Samsung (packaging), JCET. S
 - **EMIB-T:** SUCCESSOR candidate to silicon interposers for large packages. "Introduced EMIB-T in 2025, with adoption expected to scale beginning in 2026" (company claim) ([Intel 2025 Annual Report, SEC](https://www.sec.gov/Archives/edgar/data/50863/000005086326000060/intc014890-arsa.pdf)).
 - **Foveros-B and Foveros-R:** "targeted for high-volume manufacturing in 2027".
 - **Foveros Direct (hybrid bonding):** "announced in 2025"; HVM date not found.
-- **Constraint:** the CFO said 1H27 "will remain constrained on Intel 3 wafers and substrates", and that capacity is being added in New Mexico and Malaysia (3Q26 call, 29 Oct 2026). Risk factors cite "industry-wide substrate and memory shortages" ([10-Q, quarter to 26 Sep 2026](https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000191/intc-20260926.htm)).
+- **Constraint:** CFO Zinsner said "the first half will remain constrained on Intel 3 wafers and substrates", with added substrate capacity arriving in the back half ([3Q26 call summary, 29 Oct 2026](https://finance.yahoo.com/markets/stocks/articles/intel-corp-intc-q3-2026-051348065.html)). Intel cited "an industry-wide shortage of advanced organic substrates for our EMIB packaging" and said it is adding advanced-packaging capacity "to support strong customer ramps... next year in New Mexico and Malaysia" (3Q26 call, quoted in a search summary of the [Benzinga transcript](https://www.benzinga.com/news/26/10/62725076/intel-q3-2026-earnings-call-transcript); the full page returned 403, so the speaker is not identified). Risk factors cite "industry-wide substrate and memory shortages" ([10-Q, quarter to 26 Sep 2026](https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000191/intc-20260926.htm)).
 
 **(b) Lead: outside evidence of interest, not yet of volume.**
 - SemiAnalysis reported that Google's 9th-gen TPU would use EMIB-T, with volume ~2027 (secondary; timeline disputed) ([Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/intels-emib-packaging-gains-traction-as-chip-designers-look-to-skirt-tsmcs-cowos-constraints-googles-reported-decision-for-9th-gen-tpus-highlights-intels-attractive-alternative)).
 - MediaTek, at Goldman Sachs Taiwan Day (reported 2 Jun 2026), was quoted saying a next-gen program "is adopting only EMIB-T, tape-out 4Q26, mass production 4Q27". MediaTek then denied the report via Nikkei. It added Intel to its supplier list on 29 May 2026 ([Wccftech](https://wccftech.com/mediatek-says-its-next-gen-program-will-only-use-intels-emib-t-for-packaging/)).
 - KeyBanc (analyst): Amazon and Google are potential EMIB customers; Qualcomm AI300 is under evaluation (~1m units ≈US$2–3bn of packaging revenue); substrate yields of ~50–60% at Ibiden and 20–30% at Unimicron could cap a Google ramp at ~5–6m units ([Wccftech](https://wccftech.com/keybanc-says-intel-has-won-contracts-from-broadcom-google-apple-amd-microsoft-and-nvidia-while-amazon-anthropic-and-spacexs-terafab-continue-to-evaluate-its-14a-and-18a-p-processes/); [Lapedus](https://marklapedus.substack.com/p/q3-26-foundryosat-earnings-hit-or-ded)).
-- The strongest outside signal is TSMC's own CEO. He called the competitor solution "very competitive" (Oct 2026) and said "the technology looks good, according to the newspaper, and we hope they will be successful" (Jul 2026).
+- The strongest outside signal is TSMC's own CEO. In Oct 2026, answering an analyst question that named EMIB-T, he called "our competitor" solution "very competitive", without naming Intel. In Jul 2026, on EMIB-T, he said "the technology looks good, according to the newspaper, and we hope they will be successful".
 - Against this, no customer has publicly confirmed an EMIB-T volume award. External foundry and assembly/test revenue was only US$411m in 3Q26, "primarily due to a non-recurring customer program", and US$878m over 9M26 (10-Q).
 
 **(c) Revenue model.**
