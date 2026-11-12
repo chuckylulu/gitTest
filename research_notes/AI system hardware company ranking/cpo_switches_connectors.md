@@ -498,15 +498,18 @@ The transitions are numbered as in the brief: (1) copper to optical between proc
 
 ## 4. Suggested ordering of key companies by quality alone (not valuation, not size)
 
+Final suggested order (seven key companies):
+
 1. **NVIDIA (networking)** — the highest margins of the group, net cash, a shipped successor and control of scarce capacity.
 2. **Broadcom** — a NEAR-TIE with NVIDIA that I cannot cleanly separate. Broadcom leads on merchant CPO maturity and FCF conversion. NVIDIA leads on balance sheet (net cash vs Broadcom's net debt of about $35B), on a named production CPO deployment and on capacity control.
-3. **Arista**, 4. **Amphenol**, 5. **Corning** — a TIE CLUSTER I cannot separate with confidence:
+3. **Fujikura** (LOW-CONFIDENCE placement; added after the Japanese filings were retrieved). On returns (ROIC ~45%), net cash and Information & Communications margin (~37%) it beats everything below it and roughly matches Broadcom on returns. It is held back by unverified customer and country concentration, yen sensitivity, a history of cyclical fibre markets, and thin evidence on CPO-specific products.
+4. **Arista**, 5. **Amphenol**, 6. **Corning** — a TIE CLUSTER I cannot separate with confidence:
    - Arista: best margins and no debt, but no owned constraint, bridge-side positioning and two-customer concentration.
    - Amphenol: strong margins (29.7%) and diversification; straddles copper and fibre.
    - Corning: owns the physical constraint and has customer-funded LTAs, but lower margins (core operating margin 22.7%) and capital intensity.
-6. **Marvell** — successor-side and strategically bold, but GAAP operating margin of 16.8%, a 37% distributor concentration, scale-up optics revenue near zero, and large integration risk to 2028.
+7. **Marvell** — successor-side and strategically bold, but GAAP operating margin of 16.8%, a 37% distributor concentration, scale-up optics revenue near zero, and large integration risk to 2028.
 
-**Fujikura (added after the Japanese filings were retrieved):** it joins the tie cluster. On returns (ROIC ~45%), net cash and segment margin (~37%) it sits at the TOP of that cluster, arguably level with Broadcom on returns. It is held back by unverified customer and country concentration, yen sensitivity, a history of cyclical fibre markets, and thin evidence on CPO-specific products. Suggested placement: between Broadcom and Arista, flagged as low-confidence.
+Fujikura and Corning are the two "physical constraint" fibre owners. Fujikura currently converts that position into far higher returns (ROIC ~45% vs ~12%). Corning has the stronger contracted demand (Meta up to $6B; NVIDIA partnership; customer deposits), while Fujikura's contracts were not found.
 
 Return-on-capital cross-check (section 2.8, secondary TTM data): the ordering holds at the top (NVIDIA ROIC ~92% > Broadcom ~31%) and at the bottom (Marvell ~7%). Within the tie cluster, returns favour Arista (ROE ~34%, ROCE ~28%, net cash) and Amphenol (ROIC ~23%) over Corning (ROIC ~12%). If a strict order is needed, use Arista ≥ Amphenol > Corning, while noting that Corning alone owns a physical constraint (fibre capacity and glass know-how) and has customer-funded LTAs.
 
@@ -568,6 +571,9 @@ CPO in scale-out switches ships in volume first: capacity in 2027, real volume i
 - Chinese CPO switches: product status at Huawei, H3C, Ruijie and ZTE is still unverified, and Huawei is unlisted, so no filing exists. Q3 2026 headline financials for Unisplendour/H3C, Ruijie, ZTE, YOFC and T&S are now VERIFIED from cninfo filings. Chinese export-control specifics for switches and optics beyond NVIDIA's China exclusion remain unverified. Hollow-core fibre (Microsoft, YOFC). Multicore-fibre adoption beyond Corning's launch. VSFF (MMC, SN-MT) adoption shares.
 - Japanese fibre makers: H1 FY26 results are now VERIFIED from TDnet 決算短信 (Fujikura 10 Nov, Sumitomo Electric 30 Oct, Furukawa 9 Nov 2026). Still unverified: their customer concentration, named hyperscaler contracts, CPO, multicore and hollow-core product progress, and Senko and other private connector makers.
 - Supplier shares for fibre and connectors. Demand per rack beyond Corning's per-GPU figures.
+- India: Sterlite Technologies (STL) results not retrieved (the BSE announcements API returned "Access Denied" to automated access); NSE not tried. India's verified role in this segment is design centres only (Ayar Labs Bengaluru, Sep 2026; Marvell operations per its 10-K) and Amphenol's CCS-related ADC India open offer (2026).
+- Europe: Huber+Suhner's 2026 figures not retrieved; its investor page shows the next release (order intake and net sales FY2026) on 21 Jan 2027. Prysmian, Rosenberger and TE Connectivity not checked. Nokia's AI-optics push known only from a headline (Fierce Network, 6 Nov 2026).
+- Korea: no Korean CPO-switch or optical-I/O company found. Korea's verified roles are substrates (Samsung Electro-Mechanics), packaging (Amkor Korea) and an NVLink Fusion collaboration (Rebellions/SK Telecom, 8 Nov 2026). DART was not searched.
 - AMD's optical scale-up roadmap and the AMD-Enosemi deal; the Astera Labs-aiXscale deal; Molex-Teramount terms; Ranovus, Oriole, Avicena, OpenLight and Xsight funding and runway; Celestica DS6005 specs.
 - Cisco Q1 FY27 results (not out or not indexed by 12 Nov 2026); Cisco's FY26 gross-margin level (only the -0.4 pp change was extracted). Accton Q3 2026 gross margin and EPS: its statements were not yet in TWSE open data on 12 Nov 2026.
 - Return on capital comes only from an aggregator (stockanalysis.com, TTM). It was not recomputed from filings, and methodology differences (e.g. Arista's ~240% ROIC) make cross-company comparison approximate.
