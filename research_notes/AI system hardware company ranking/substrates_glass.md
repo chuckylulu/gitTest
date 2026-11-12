@@ -563,6 +563,55 @@ Source: TrendForce, 6 Aug 2026, reporting the 5 Aug forecast revision.
 - Q2 LIDE order from "a leading specialty glass manufacturer" for advanced-packaging qualification.
 - The company says it is "premature" to claim a glass breakthrough. 2026 guidance of EUR 105–120m excludes large semiconductor orders.
 
+### 2.9 Cross-company returns and balance sheets (third-party TTM; quality metrics only)
+
+**Source and caveats.** stockanalysis.com statistics pages, fetched 12 Nov 2026 (URL pattern `https://stockanalysis.com/quote/<exchange>/<ticker>/statistics/`).
+- Figures are trailing twelve months to the latest filed quarter. Sep 2026 is confirmed where cash matches company filings (Ibiden, AT&S, Unimicron). Korean companies may be to Jun 2026.
+- These are third-party computations, and ROIC definitions vary.
+- Valuation fields on these pages were deliberately not used.
+
+| Company | TTM revenue | TTM op. margin | ROE | ROIC | Net cash (+) / net debt (−) | TTM FCF |
+|---|---|---|---|---|---|---|
+| Ibiden | JPY 483.3bn | 17.8% | 14.1% | 15.7% | +JPY 250.9bn | +JPY 168.1bn (incl. customer advances) |
+| Unimicron | NT$167.7bn | 13.3% | 23.6%* | 23.9%* (ROCE 7.3%) | +NT$109.7bn | +NT$3.8bn |
+| Samsung Electro-Mechanics | KRW 12.46tn | 9.8% | 10.6% | 9.8% | +KRW 240.6bn | +KRW 285.6bn |
+| AT&S | EUR 2.18bn | 14.0% | 18.5% | 11.8% | −EUR 1.36bn | +EUR 94.6m |
+| SKC (Absolics parent) | KRW 2.08tn | −9.9% | −26.7% | −3.9% | −KRW 2.23tn | −KRW 959.9bn |
+| Ajinomoto (whole group) | JPY 1.68tn | 10.8% | 20.6% | 11.7% | −JPY 342.1bn | +JPY 119.4bn |
+| Nittobo | JPY 129.3bn | 21.3% | n/a | 14.3% | −JPY 5.0bn | −JPY 16.9bn |
+| LG Innotek | KRW 24.04tn | 4.5% | 11.4% | 12.2% | −KRW 942.5bn | +KRW 225.5bn |
+| Nan Ya PCB | NT$52.3bn | 18.2% | 16.6% | 17.7% | +NT$9.3bn | +NT$6.8bn |
+| Kinsus | NT$48.95bn | 13.7% | 13.0% | 12.4% | +NT$5.1bn | +NT$1.8bn |
+| Zhen Ding Technology | NT$210.65bn | 9.9% | 9.1% | 8.5% | +NT$9.3bn | −NT$43.0bn (capex NT$65.8bn) |
+| Daeduck Electronics | KRW 1.35tn | 13.0% | 16.6% | 18.4% | +KRW 216.7bn | +KRW 70.8bn |
+
+\*Unimicron's returns are inflated by Q2 2026 non-operating gains, and the ROIC/ROCE gap is internally inconsistent.
+
+Per-company URLs:
+- [Ibiden](https://stockanalysis.com/quote/tyo/4062/statistics/)
+- [Unimicron](https://stockanalysis.com/quote/tpe/3037/statistics/)
+- [SEMCO](https://stockanalysis.com/quote/krx/009150/statistics/)
+- [AT&S](https://stockanalysis.com/quote/vie/ATS/statistics/)
+- [SKC](https://stockanalysis.com/quote/krx/011790/statistics/)
+- [Ajinomoto](https://stockanalysis.com/quote/tyo/2802/statistics/)
+- [Nittobo](https://stockanalysis.com/quote/tyo/3110/statistics/)
+- [LG Innotek](https://stockanalysis.com/quote/krx/011070/statistics/)
+- [Nan Ya PCB](https://stockanalysis.com/quote/tpe/8046/statistics/)
+- [Kinsus](https://stockanalysis.com/quote/tpe/3189/statistics/)
+- [Zhen Ding](https://stockanalysis.com/quote/tpe/4958/statistics/)
+- [Daeduck](https://stockanalysis.com/quote/krx/353200/statistics/)
+
+Inferences:
+- **TTM figures still include weak late-2025 quarters.** Current run-rates are much higher: Ibiden Electronics H1 operating margin 29%; Unimicron Q3 operating margin 20%; AT&S Q2 EBITDA margin 35.8%.
+- **Balance-sheet ordering** for funding the 2027–29 capacity wave:
+  1. Ibiden: ~JPY 250bn net cash plus JPY 200bn customer advances.
+  2. Unimicron and SEMCO: net cash.
+  3. Nan Ya PCB, Kinsus and Daeduck: small net cash.
+  4. Nittobo: roughly neutral.
+  5. AT&S: EUR 1.3bn net debt, offset by EUR 1.2bn of prepayments.
+  6. SKC: KRW 2.2tn net debt and cash burn. This is the weakest position from which to fund a successor through slips.
+- **Zhen Ding's heavy negative FCF** reflects capex for its ABF/HDI push. Its ABF economics cannot be separated.
+
 ---
 
 ## (3) Path-forward evidence and suggested verdicts
@@ -687,7 +736,7 @@ Tracker sources: [SBS Biz](https://v.daum.net/v/20260529115214214); [IRZ](https:
 | Rank | Company | Why |
 |---|---|---|
 | 1 (tie) | **Ajinomoto (ABF business)** | Material chokepoint; ~58% business-profit margin (H1 FY2026); low capital intensity; survives the glass-core transition. Caveat: ABF is ~7.5% of a food-led group, so group-level exposure is diluted. |
-| 1 (tie) | **Ibiden** | Customer-confirmed lead at NVIDIA; ~29% Electronics operating margin; customer-funded expansion; single-A. Weaknesses: capital intensity (capex ≥ EBITDA FY2026–27), cyclicality (FY2024 ROE 6.8%), likely high customer concentration. **Cannot separate from Ajinomoto**: the two sit on different layers of the same constraint. |
+| 1 (tie) | **Ibiden** | Customer-confirmed lead at NVIDIA (Ibiden says high-end AI has only three suppliers); ~29% Electronics operating margin. Customer-funded expansion visible on its balance sheet: JPY 199.7bn advances received, ~JPY 258bn net cash at Sep 2026. Single-A. Weaknesses: capital intensity (capex ≥ EBITDA FY2026–27), cyclicality (FY2024 ROE 6.8%), likely high customer concentration (undisclosed). **Cannot separate from Ajinomoto**: the two sit on different layers of the same constraint. |
 | 3 (tie) | **Nittobo** | Tightest 2026–27 chokepoint and pricing power. But smaller, with second sources arriving in 2027 and a long-run glass-core substitution risk. |
 | 3 (tie) | **Samsung Electro-Mechanics** | NVIDIA entry; strongest balance sheet and diversification; funded glass option. Division margins not disclosed. **Cannot separate cleanly from Nittobo.** |
 | 5 | **Unimicron** | Scale and NVIDIA reservation; lower margins than Ibiden; partly financed expansion; deep 2024–25 trough (FY2025 OP ~NT$6.7bn). Close to SEMCO on the substrate business alone. |
@@ -724,6 +773,7 @@ Not ranked (not key; brief evidence only): Nan Ya PCB, Kinsus, LG Innotek, Shenn
 - **Slips:** CONFIRMED (Absolics ≥3 slips; Intel from "late decade" to ~2030).
 - **Bridge longevity:** SUPPORTED. Ibiden's CY30+ roadmap is organic; NVIDIA is funding organic capacity to 2028+.
 - **"Binding in 2028–30":** only partly supported.
+  - On the supplier side, Ibiden (30 Oct 2026) accepted that the shortage lasts "until around 2030". It said no technology can replace leading-edge substrates, so "demand will ultimately have to be constrained", and that new buildings take ≥4 years. This is a self-interested company claim, but it is consistent with NVIDIA pre-funding capacity.
   - 2026–27 is clearly binding: ABF lead times 48–56 weeks (TrendForce, Sep 2026); BofA sees shortage through 2028; Unimicron's chairman sees ~20% material shortages in 2027.
   - But NVIDIA targets 2.5x substrate capacity within three years (Oct 2026), and Ibiden, Unimicron, SEMCO and AT&S capacity lands 2028–29. By 2029–30, substrates may stop being binding in the steady and pause scenarios. They stay binding mainly in the acceleration scenario.
 - **Where the binding constraint actually sits in 2026–27:** upstream T-glass and thin glass cloth (no new Nittobo capacity before mid-2027; 3x only by FY3/2029) more than ABF film. Ajinomoto claims it can meet current demand (company claim).
@@ -772,7 +822,11 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
 ---
 
 ## (7) What I could not verify
-- **Customer concentration:** top customer and top-5 share for Ibiden, Unimicron, SEMCO, AT&S, Nan Ya PCB and Kinsus were not disclosed in the retrieved material. AT&S says only that "all major customers" generate three-digit-million-euro revenue.
+- **Customer concentration:** now available for AT&S (top five 76.5%, largest ~31%, FY2025/26). For Ibiden, Unimicron, SEMCO, Nan Ya PCB and Kinsus it was not retrieved:
+  - Ibiden's securities-report page loads by script;
+  - the TWSE document server returned a stub;
+  - DART needs an API key;
+  - Unimicron's site failed TLS verification (I did not bypass it).
 - **Shares and qualification:** reliable supplier shares at Google, Amazon, Broadcom, Marvell and MediaTek. Prismark and Yole tables were not retrieved.
 - **Ajinomoto's 30% ABF price increase:** secondary only; not quantified in Ajinomoto's 9 Nov 2026 deck. Same for the reported ~30% cut to China allocations.
 - **NVIDIA's advance to Ibiden:** the ~JPY 280bn figure is Bunshun's report, unconfirmed by either party. The "JPY 500bn three-year capex funded substantially by prepayments" quote is secondary (RCRTech).
@@ -780,7 +834,7 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
 - **Absolics:** AMD and AWS qualification (industry press only); Applied Materials' current stake; CHIPS disbursement status after May 2026; The Elec's 27 Jul 2026 Taiwan reliability item (via IRZ only).
 - **SEMCO:** the KRW 2.5tn Vietnam approval (call-coverage summary, not opened); the Broadcom glass qualification ("reported"); the "only supplier" embedded claim (company claim).
 - **Nittobo:** H1 FY3/2027 results (Nov 2026), balance sheet and the cause of the −52% net-profit forecast. Nittobo IR pages did not render.
-- **Net debt and returns:** Ibiden net debt at Sep 2026 and FY2025/26 ROE; Unimicron total debt; ROIC for any company.
+- **Net debt and returns:** now covered by primary filings for Ibiden and AT&S and by third-party TTM pages for the rest (section 2.9). Limits: site-computed ROIC definitions vary (Unimicron's 23.9% ROIC vs 7.3% ROCE is inconsistent), Korean TTM may lag a quarter, and no company-reported ROIC was found except AT&S's ROCE (17.7% for H1).
 - **Missing companies:** Zhen Ding ABF progress; Kyocera, Toppan, DNP, Shinko and Daeduck 2026 substrate financials; Fastprint Q3 2026; Philoptics; Corning, AGC, NEG and Schott glass-core revenue or customers; Sekisui and Chinese build-up-film substitutes. The "Lotus Holdings RMB 103m" ABF-substitute item was seen as a headline only ([BigGo](https://finance.biggo.com/news/72147843-2346-4bf7-ad32-2d8c56ae3ca9)).
 - **Policy exposure:** 2026 tariff and export-control specifics affecting substrate trade flows (e.g., US semiconductor tariffs, Malaysia/Vietnam reciprocal tariffs).
 - **Regions:** Israel — no player surfaced and no dedicated MAYA check was run. India — the claimed Intel–Odisha–3DGS MoU (May 2026) comes from one weak source ([Anantam IAS](https://anantamias.com/current-affairs/india-3d-semiconductor-packaging-odisha-2026/)).
@@ -788,7 +842,7 @@ Value capture is splitting rather than migrating wholesale. Foundries keep the i
 - **Data conflicts:**
   - Unimicron Q3 EPS: NT$6.15, 6.32 or 6.36 depending on source.
   - Shennan FC-BGA layers: ≤26 vs ≤22.
-  - Ibiden Gama Cell6 product: "AI ASIC" on the slide vs "server CPU" in The Elec.
+  - Ibiden Gama Cell6 product: "AI ASIC" on the slide vs "server CPU" in The Elec. Partly resolved: the primary capex notice (29 Oct 2026) says the ~JPY 151bn addition is for CPU substrates at Gama "and other overseas plant", and the Q&A says it is for EMIB. EMIB serves both Intel CPUs and foundry-customer ASICs, so both labels can be true.
 - **Search budget:** further searching was blocked when the WebSearch budget ran out; a follow-up session could close most of the gaps above.
 
 ---

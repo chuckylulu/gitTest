@@ -403,7 +403,8 @@ Every key company must get through transition (2), plug-in modules to CPO, and m
 
 #### Innolight: SAID vs DONE
 - **DONE:**
-  - HK$60.9B raised (Jul 2026);
+  - HK$60.9B raised (Jul 2026); 9M 2026 cash raised from investors RMB 54.54B ([Q3 report](http://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF));
+  - 9M 2026 capex RMB 9.16B (vs RMB 1.61B); construction in progress up to RMB 5.50B (same source);
   - 1.6T volume driving GM ([ifeng](https://finance.ifeng.com/c/8xcyvWhXO0b); [ComSoc](https://techblog.comsoc.org/2026/10/02/light-counting-optical-transceiver-sales-surge-ieee-802-3-and-itu-t-optical-transport-standards-explained-uec-addendum/)).
 - **SAID:** no verified 2026 statement on CPO/NPO wins was retrieved.
 
@@ -602,7 +603,13 @@ All seven "leads to verify" were checked. Four are confirmed with primary or str
 - **China export licensing for InP in 2025: NOT RE-VERIFIED.** AXT's Q3 2026 release still lists "the receipt of export permits" as a risk ([AXT 8-K](https://www.sec.gov/Archives/edgar/data/1051627/000143774926033941/ex_1013304.htm)). AXT's revenue trough at $18.0M in Q2 2025 and recovery to $73.4M in Q3 2026 ([10-Q](https://www.sec.gov/Archives/edgar/data/1051627/000143774926027677/axti20260630_10q.htm)) is consistent with a 2025 permit disruption that has since eased (inference).
 - **RoboTechnik completed its purchase of ficonTEC: PARTLY CONFIRMED.** ficonTEC's site presents RoboTechnik's Hong Kong listing as enabling "ficonTEC's next phase of growth", which implies ownership; the completion date was not found ([ficonTEC](https://www.ficontec.com/)).
 - **Teradyne bought Quantifi Photonics: CONFIRMED.** "Quantifi Photonics Limited, A Teradyne Company" ([Quantifi](https://www.quantifiphotonics.com/)); deal date not found.
-- **NEW (not in the leads): Marvell-Lumentum all-stock combination, 2 Nov 2026** ([Marvell](https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity)).
+- **Marvell-Lumentum all-stock combination (lead from another researcher, 2 Nov 2026): CONFIRMED (primary).** Marvell release, 2 Nov 2026: 4.500 Marvell shares per Lumentum share; about 67%/33% pro forma ownership; close expected 1H CY2028; shareholder and regulatory approvals needed ([Marvell](https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity)). TrendForce says US and China approval is needed ([TrendForce](https://www.trendforce.com/presscenter/news/20261103-13294.html)). Lumentum has filed multiple Form 425 communications since 2 Nov 2026 ([SEC submissions](https://data.sec.gov/submissions/CIK0001633978.json)). Effect on notes: Lumentum is ranked as a standalone company today but is expected to become part of Marvell from 1H 2028.
+- **Credo completed its purchase of DustPhotonics, about $750M cash plus stock, by 1 Aug 2026 (lead from another researcher): CONFIRMED, with updated figures (primary).**
+  - Credo acquired 100% of DustPhotonics Ltd on 28 May 2026.
+  - Total purchase consideration about $1.25B: $769.6M cash, $169.1M fair value of shares issued, $310.0M contingent earn-out ($10M liability plus $300M equity, payable in cash and shares), $2.5M replacement awards. Goodwill $895.8M.
+  - Described as "a developer of Silicon Photonics Photonic Integrated Circuit technology for optical transceivers", acquired to build "a vertically integrated connectivity stack".
+  - Sources: Credo 10-Q for the quarter ended about 1 Aug 2026, filed 2 Sep 2026 ([R12](https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/R12.htm); [R37](https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/R37.htm); [R38](https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/R38.htm)).
+  - Effect on notes: DustPhotonics moves from "Israeli private firm" to a unit of Credo (Nasdaq: CRDO). That is another case of a DSP/SerDes silicon vendor integrating optics (alongside Marvell-Lumentum).
 
 ### Inferences
 - The InP licensing question matters most for AXT, whose production is all in China, and for Chinese buyers. For Western laser makers, JX's 7-10x expansion and in-house growth (Coherent) are the mitigation.
@@ -650,6 +657,11 @@ Primary sources cover the six key companies well: SEC 10-K/10-Q/8-K/6-K XBRL pag
 - Quantifi Photonics homepage (2026): https://www.quantifiphotonics.com/
 - ficonTEC homepage (accessed 12 Nov 2026): https://www.ficontec.com/
 - Coherent PhotonLink launch (Semiconductor Today, 22 Sep 2026; based on company release): https://semiconductor-today.com/news_items/2026/sep/coherent-220926.shtml
+- Innolight (Zhongji Innolight) 2025 annual report, cninfo, pub. 31 Mar 2026: http://static.cninfo.com.cn/finalpage/2026-03-31/1225056459.PDF
+- Innolight Q3 2026 report, cninfo, pub. 30 Oct 2026: http://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF
+- Eoptolink 2025 annual report, cninfo, pub. 24 Apr 2026: http://static.cninfo.com.cn/finalpage/2026-04-24/1225172598.PDF
+- Eoptolink Q3 2026 report, cninfo, pub. 30 Oct 2026: http://static.cninfo.com.cn/finalpage/2026-10-30/1225642947.PDF
+- Credo 10-Q (qtr ended about 1 Aug 2026), business-combination pages, filed 2 Sep 2026: https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/R12.htm ; .../R37.htm ; .../R38.htm
 
 **Secondary: earnings-call summaries and reviews**
 - MarketBeat, Lumentum Q4 FY26 call, 11 Aug 2026: https://www.marketbeat.com/instant-alerts/lumentum-q4-earnings-call-highlights-2026-08-11/

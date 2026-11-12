@@ -365,6 +365,30 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
 - **Credo** — no FY27 Q1 financials retrieved. Strategy is vertical (SerDes + DSP + SiPh via DustPhotonics + microLED via Hyperlume). Expects its optical portfolio to be "a significant growth driver in fiscal 2027" (company claim, unconfirmed) — [Credo IR feed](https://investors.credosemi.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&bodyType=1&pressReleaseDateFilter=3&pageSize=200&pageNumber=0&year=2026).
 - **Ciena** — FY29 targets (16 Sep 2026): ~30% revenue CAGR 2026-29, ~50% gross margin, 32-35% operating margin, ~20% FCF margin. New "Interconnects" reporting segment from FY27 — [Ciena IR feed](https://investor.ciena.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&bodyType=1&pressReleaseDateFilter=3&pageSize=200&pageNumber=0&year=2026).
 
+### 2.7b Fujikura (added as a seventh key company) and the other Japanese fibre makers — primary TDnet filings (Japanese-language)
+
+**Takeaway.** Fujikura is the purest listed AI-fibre profit story found. Its Information & Communications segment margin (~37%) is well above Corning's optical segment net margin (~22%), and it has net cash. Customer concentration and the product-level CPO roadmap are unverified.
+
+- **(a) Position.**
+  - Physical constraint and process know-how in fibre, high-density cable and optical components (successor-aligned for transitions 1 and 2).
+  - The company says demand came from "expanding data-centre investment", and that it also won optical-component orders by meeting short lead times ("短納期対応により受注した光コンポーネント製品等") — H1 FY26 決算短信, 10 Nov 2026, https://www.release.tdnet.info/inbs/140120261109569418.pdf.
+  - Portfolio pruning: selling its 60.8% stake in power-cable maker Nishi Nippon Electric Wire to an Aspirant Group fund (TDnet, 5 Nov 2026, https://www.release.tdnet.info/inbs/140120261105565331.pdf).
+- **(b) Lead.** Segment sales +91.6% and operating profit +194.8% y/y (H1 FY26). Third-party share and named customers: not retrieved (gap).
+- **(c) Revenue model.** One-off hardware; no LTA or prepayment disclosure found.
+- **(d) Financial strength.**
+  - H1 FY26 (Apr-Sep 2026; released 10 Nov 2026): group net sales ¥867.4B (+55.2%); operating profit ¥235.0B (+160.6%; ~27% margin); net income ¥180.3B (+168.5%); total assets ¥1,171.6B; equity ratio 59.2%.
+  - FY26 guide (revised 10 Nov 2026): sales ¥1,768B (from ¥1,755B), operating profit ¥429B (from ¥432B; trimmed for a stronger yen, now ¥156/USD vs ¥160), net income ¥326B. FY25 actual: sales ¥1,182.4B, operating profit ¥188.7B — https://www.release.tdnet.info/inbs/140120261109570131.pdf.
+  - TTM (aggregator, secondary): ROIC ~44.8%, ROE ~45.1%, ROCE ~41.0%, FCF ~¥181B, net cash ~¥137B — https://stockanalysis.com/quote/tyo/5803/statistics/.
+- **(e) Resilience.** Yen sensitivity is explicit. Customer and country concentration is not disclosed in the 決算短信 (gap). Fibre has historically been cyclical (inference).
+- **Path / verdict:** a beneficiary of copper-to-optical (more fibre per GPU), like Corning. No CPO-specific product evidence was retrieved. **Suggested verdict: COHERENT on financial evidence; path evidence thin.**
+- **Sumitomo Electric** (H1 FY26 released 30 Oct 2026):
+  - Group sales ¥2,764.9B (+16.5%), operating profit ¥219.6B (+43.5%), both records. Info & Comms sales ¥201.5B (+48.8%), operating profit ¥61.2B (up ¥39.2B), driven by "data-centre optical wiring products, optical devices" — https://www.release.tdnet.info/inbs/140120261029559548.pdf.
+  - TTM ROIC ~11%, net debt ~¥481B (aggregator, secondary). AI fibre is a small part of a diversified group.
+- **Furukawa Electric** (H1 FY26 released 9 Nov 2026):
+  - Group sales ¥737.7B (+20.8%), operating profit ¥57.6B (+201%). Optical Solutions sales ¥130.9B (+43.9%), operating profit ¥23.6B (up ¥22.9B); Information Components ¥118.9B (+23.2%), operating profit ¥15.2B — https://www.release.tdnet.info/inbs/140120261106567992.pdf.
+  - FY26 guide raised (9 Nov 2026) to sales ¥1,570B and operating profit ¥136B (from ¥1,530B / ¥123B; FY25 actual ¥1,307.6B / ¥63.9B), "mainly due to increased demand for data-centre-related products" — https://www.release.tdnet.info/inbs/140120261106568021.pdf.
+  - TTM ROIC ~10%, FCF negative, net debt ~¥254B (aggregator, secondary).
+
 ### 2.8 Return-on-capital summary (TTM to latest reported quarter; stockanalysis.com statistics pages retrieved 12 Nov 2026; aggregator methodology, secondary; valuation fields deliberately ignored)
 
 | Company | ROIC | ROE | ROCE | Net cash (+) / net debt (-) |
@@ -376,6 +400,9 @@ Key companies chosen: NVIDIA (networking and optics), Broadcom, Arista, Corning,
 | Cisco | ~20.4% | ~27.3% | ~18.3% | -$15.3B |
 | Celestica | ~41.9% | ~30.2% | ~20.6% | +$2.9B |
 | Corning | ~12.1% | ~17.9% | ~10.8% | -$6.6B |
+| Fujikura | ~44.8% | ~45.1% | ~41.0% | +¥137B |
+| Sumitomo Electric | ~11.0% | ~16.2% | ~13.4% | -¥481B |
+| Furukawa Electric | ~10.1% | ~28.5% | ~15.1% | -¥254B |
 | Marvell | ~6.9% | ~16.5% | ~6.3% | -$1.35B |
 
 ### Gaps (section 2)
@@ -479,6 +506,8 @@ The transitions are numbered as in the brief: (1) copper to optical between proc
    - Corning: owns the physical constraint and has customer-funded LTAs, but lower margins (core operating margin 22.7%) and capital intensity.
 6. **Marvell** — successor-side and strategically bold, but GAAP operating margin of 16.8%, a 37% distributor concentration, scale-up optics revenue near zero, and large integration risk to 2028.
 
+**Fujikura (added after the Japanese filings were retrieved):** it joins the tie cluster. On returns (ROIC ~45%), net cash and segment margin (~37%) it sits at the TOP of that cluster, arguably level with Broadcom on returns. It is held back by unverified customer and country concentration, yen sensitivity, a history of cyclical fibre markets, and thin evidence on CPO-specific products. Suggested placement: between Broadcom and Arista, flagged as low-confidence.
+
 Return-on-capital cross-check (section 2.8, secondary TTM data): the ordering holds at the top (NVIDIA ROIC ~92% > Broadcom ~31%) and at the bottom (Marvell ~7%). Within the tie cluster, returns favour Arista (ROE ~34%, ROCE ~28%, net cash) and Amphenol (ROIC ~23%) over Corning (ROIC ~12%). If a strict order is needed, use Arista ≥ Amphenol > Corning, while noting that Corning alone owns a physical constraint (fibre capacity and glass know-how) and has customer-funded LTAs.
 
 Concentration cross-check (primary filings): the most concentrated are Celestica (top-3 = 66% of Q3 2026 revenue; top-10 = 85%) and Arista (26% + 16% in FY25). Broadcom's top-5 end customers are ~50% of revenue (9M FY26). NVIDIA's largest direct customer is 16% (Q2 FY27). Marvell's Distributor A is 37% (FY26). Amphenol is diversified.
@@ -537,7 +566,7 @@ CPO in scale-out switches ships in volume first: capacity in 2027, real volume i
 - Customer-published CPO reliability beyond the Meta/Broadcom lab result (no NVIDIA-CPO customer reliability data found). Field-fleet failure rates.
 - Third-party CPO share-of-ports figures for 2026-2030 straight from LightCounting, Dell'Oro, 650 Group or Cignal AI publications. Only secondary chart readings were available.
 - 2026 status of Chinese CPO switches (Huawei, H3C, Ruijie, ZTE) and Chinese export-control specifics for switches and optics beyond NVIDIA's China exclusion. Hollow-core fibre (Microsoft, YOFC). Multicore-fibre adoption beyond Corning's launch. VSFF (MMC, SN-MT) adoption shares.
-- Japanese fibre and connector makers' 2026 results (Fujikura, Sumitomo, Furukawa): IR pages are script-rendered, and TDnet/EDINET could not be searched.
+- Japanese fibre makers: H1 FY26 results are now VERIFIED from TDnet 決算短信 (Fujikura 10 Nov, Sumitomo Electric 30 Oct, Furukawa 9 Nov 2026). Still unverified: their customer concentration, named hyperscaler contracts, CPO, multicore and hollow-core product progress, and Senko and other private connector makers.
 - Supplier shares for fibre and connectors. Demand per rack beyond Corning's per-GPU figures.
 - AMD's optical scale-up roadmap and the AMD-Enosemi deal; the Astera Labs-aiXscale deal; Molex-Teramount terms; Ranovus, Oriole, Avicena, OpenLight and Xsight funding and runway; Celestica DS6005 specs.
 - Cisco Q1 FY27 results (not out or not indexed by 12 Nov 2026); Cisco's FY26 gross-margin level (only the -0.4 pp change was extracted). Accton Q3 2026 gross margin and EPS: its statements were not yet in TWSE open data on 12 Nov 2026.
@@ -578,7 +607,15 @@ Primary — filings and company releases:
 - Celestica 10-Q Q3 2026 — https://www.sec.gov/Archives/edgar/data/1030894/000103089426000050/cls-20260930.htm (filed 26 Oct 2026)
 - Credo 10-Q, quarter to 1 Aug 2026 (DustPhotonics purchase accounting) — https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm (filed 2 Sep 2026)
 - TWSE open data, listed-company income statements (ASE 3711, KYEC 2449, Wiwynn 6669; 2026 Q3, table dated 12 Nov 2026) — https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci
-- stockanalysis.com statistics pages (TTM return metrics only; aggregator; retrieved 12 Nov 2026) — https://stockanalysis.com/stocks/nvda/statistics/ (likewise /avgo/, /anet/, /glw/, /aph/, /mrvl/, /csco/, /cls/)
+- stockanalysis.com statistics pages (TTM return metrics only; aggregator; retrieved 12 Nov 2026) — https://stockanalysis.com/stocks/nvda/statistics/ (likewise /avgo/, /anet/, /glw/, /aph/, /mrvl/, /csco/, /cls/); Japan: https://stockanalysis.com/quote/tyo/5803/statistics/ (likewise /5802/, /5801/)
+- TDnet (Japan Exchange timely disclosure; Japanese-language primary filings):
+  - Fujikura H1 FY26 決算短信 — https://www.release.tdnet.info/inbs/140120261109569418.pdf (10 Nov 2026)
+  - Fujikura forecast revision — https://www.release.tdnet.info/inbs/140120261109570131.pdf (10 Nov 2026)
+  - Fujikura subsidiary transfer — https://www.release.tdnet.info/inbs/140120261105565331.pdf (5 Nov 2026)
+  - Sumitomo Electric H1 FY26 決算短信 — https://www.release.tdnet.info/inbs/140120261029559548.pdf (30 Oct 2026)
+  - Furukawa Electric H1 FY26 決算短信 — https://www.release.tdnet.info/inbs/140120261106567992.pdf (9 Nov 2026)
+  - Furukawa forecast revision — https://www.release.tdnet.info/inbs/140120261106568021.pdf (9 Nov 2026)
+  - Daily listing pages used to locate them: https://www.release.tdnet.info/inbs/I_list_001_20261110.html (etc.)
 
 Earnings-call transcripts (third-party transcription):
 - NVIDIA Q2 FY27 — https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/ (26 Aug 2026 call)

@@ -84,9 +84,13 @@ Note: "Verified" means this session found a dated 2026 source for the row's key 
 | Jabil | US | NYSE: JBL | Micro-channel cold plates | At OCP 2026 — [Dell'Oro](https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/) | Partial |
 | xFusion | China | Private | Diamond-copper cold plates; 300 kW–1.2 MW power prototype | At OCP 2026 — [Dell'Oro](https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/) | Partial |
 | Envicool (英维克) | China | SZSE: 002837 | CDUs, cold plates, QDs, precision air conditioning; Deschutes CDU | 9M 2026 revenue +22.9%, net profit −7.6%. Deschutes design shown at its OCP 2026 booth — [Sina 26 Oct 2026](https://finance.sina.com.cn/stock/zqgd/2026-10-26/doc-iniwpwiq2476322.shtml); [Dell'Oro](https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/) | Y |
-| Shenling (申菱) | China | SZSE: 301018 (not re-verified) | Data-centre air conditioning and liquid cooling | Not re-verified | N |
-| Goaland (高澜) | China | SZSE: 300499 (not re-verified) | Liquid-cooling systems | Not re-verified | N |
-| Sugon Digital Creation (曙光数创) | China | BSE: 872808 (not re-verified) | Immersion and cold-plate cooling for Sugon | Not re-verified | N |
+| Shenling (申菱) | China | SZSE: 301018 | Data-centre air conditioning and liquid cooling | 9M 2026: revenue RMB3.43bn (+36.9%), net profit RMB142M (−5.4%), gross margin 19.6%, weighted ROE 5.1% (9M, not annualised) — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22301018%22)) (secondary) | Y |
+| Goaland (高澜) | China | SZSE: 300499 | Liquid-cooling systems | 9M 2026: revenue RMB0.77bn (+30.5%), net profit RMB61M (+76.8%), gross margin 29.6% — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22300499%22)) (secondary) | Y |
+| Sugon Digital Creation (曙光数创) | China | BSE (code now 920808) | Immersion and cold-plate cooling for Sugon | Weak: 9M 2026 revenue RMB325.5M (+16.7%), net loss RMB119.2M, gross margin 8.5%, weighted ROE −17.0% — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_NAME_ABBR%3D%22%E6%9B%99%E5%85%89%E6%95%B0%E5%88%9B%22)) (secondary) | Y |
+| Tongfei (同飞) | China | SZSE: 300990 | Industrial and data-centre liquid-cooling units | 9M 2026: revenue RMB2.71bn (+30.4%), net profit RMB208M (+15.4%), gross margin 21.0% — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22300990%22)) (secondary). Data-centre share not known | Y |
+| FRD (飞荣达) | China | SZSE: 300602 | Thermal modules, cold plates, TIMs | 9M 2026: revenue RMB5.77bn (+25.1%), net profit RMB423M (+47.9%), gross margin 21.3% — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22300602%22)) (secondary) | Y |
+| Zhongshi Technology (中石科技) | China | SZSE: 300684 | TIMs and thermal materials | 9M 2026: revenue RMB1.50bn (+15.4%), net profit RMB285M (+13.1%), gross margin 33.5% — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22300684%22)) (secondary) | Y |
+| Yinlun (银轮) | China | SZSE: 002126 | Thermal management, including data-centre liquid cooling | 9M 2026: revenue RMB13.96bn (+26.2%), net profit RMB638M (−5.0%), gross margin 17.9%. Mostly automotive; data-centre share not known — [Eastmoney API](https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_LICO_FN_CPD&columns=ALL&filter=(SECURITY_CODE%3D%22002126%22)) (secondary) | Y |
 | Huawei Digital Power | China | Private (Huawei) | Liquid-cooled data-centre infrastructure | Not re-verified | N |
 | Lenovo (Neptune) | China/HK | HKEX: 0992 (not re-verified) | Warm-water DTC in own servers | Not re-verified | N |
 | Daikin (Chilldyne) | Japan | TSE: 6367 (not re-verified) | Chillers; Chilldyne negative-pressure DTC (reported 2025 deal) | Deal not re-verified | N |
@@ -191,6 +195,11 @@ Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras
 - Footprint: about 300 offices and plants in 40+ countries; about 34,000 employees — same 10-K.
 - Customer concentration: no percentages disclosed. The 10-K says large cloud/hyperscale, neocloud and colocation customers "comprise a material portion of our customer base" and have leverage that can produce "downward pricing pressures" — same 10-K.
 - Working capital: 9M 2026 inventories rose by $1,814.9M and receivables by $1,276.1M, offset by +$2,312.9M deferred revenue — [10-Q](https://www.sec.gov/Archives/edgar/data/1674101/000162828026067893/vrt-20260930.htm)
+- Returns (TTM to Q3 2026, data date 12 Nov 2026) — [stockanalysis](https://stockanalysis.com/stocks/vrt/statistics/) (secondary):
+  - ROIC 43.8%; ROE 46.6%; ROCE 29.3%;
+  - FCF margin 24.0%; TTM revenue $13.12bn; TTM FCF $3.15bn;
+  - total debt including leases $3.36bn; net cash $0.35bn.
+- Total equity $5,502.0M at 30 Sep 2026 (vs $3,941.3M at 31 Dec 2025) — [10-Q](https://www.sec.gov/Archives/edgar/data/1674101/000162828026067893/vrt-20260930.htm)
 
 **(e) Resilience**
 - Tariffs:
@@ -240,6 +249,15 @@ Key companies chosen: **Vertiv, AVC, Boyd (Eaton), CoolIT (Ecolab), nVent, Auras
   - short-term borrowings NT$27,423M (+44% q/q);
   - FX loss NT$304M in Q3.
 - Customer concentration and revenue by geography: not disclosed in the materials found.
+- Exchange open data, 30 Sep 2026 balance sheet — [TWSE t187ap07](https://openapi.twse.com.tw/v1/opendata/t187ap07_L_ci); [t187ap06](https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci):
+  - total assets NT$232.50bn; liabilities NT$157.21bn; total equity NT$75.29bn;
+  - current assets NT$178.80bn vs current liabilities NT$141.76bn;
+  - 9M net income NT$31.54bn, giving annualised ROE on period-end equity of about 56% (derived).
+- Returns (TTM, data date 12 Nov 2026) — [stockanalysis](https://stockanalysis.com/quote/tpe/3017/statistics/) (secondary):
+  - ROE 66.4%; ROCE 57.7%; ROIC 159.8% (inflated by low invested capital; read with caution);
+  - FCF margin 19.3%; TTM FCF NT$39.47bn;
+  - total debt NT$39.44bn vs cash NT$80.03bn (net cash NT$40.59bn).
+- Monthly revenue: Oct 2026 NT$22.10bn (+34.4% y/y); Jan–Oct NT$179.35bn (+65.6%) — [TWSE t187ap05](https://openapi.twse.com.tw/v1/opendata/t187ap05_L)
 
 **(e) Resilience**
 - AVC "has not yet felt significant price pressure"; supply remains below demand.
