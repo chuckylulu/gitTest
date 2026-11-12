@@ -249,7 +249,7 @@ New US, Japanese and European flagships are AI-first, and native FP64 per GPU is
 - LineShine contradicts the claim that all new scientific supercomputers are AI machines.
 
 ### Gaps
-- Not verified: ORNL's Lux and Discovery, NERSC's Doudna (HTTP 403), France's Alice Recoque, Korea's KISTI-6 and India's national systems. HPCwire's report that the US Genesis Mission will lean on the Ozaki scheme returned HTTP 403.
+- Not verified: ORNL's Lux and Discovery, NERSC's Doudna (HTTP 403), France's Alice Recoque, Korea's KISTI-6 and India's national systems. HPCwire's Genesis Mission/Ozaki report returned HTTP 403.
 
 ## Could not verify
 1. That any AI-built GPU port is in production use for any listed CPU-only code. How CPPWRF was developed, and who uses it.
