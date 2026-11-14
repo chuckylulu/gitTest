@@ -467,7 +467,7 @@ The main unverified areas are named hyperscaler contracts, product-level lead ti
 
 ### Cited Findings
 - **Process limits:**
-  - The shared web-search quota was exhausted partway through. The fallback tools the coordinator suggested were also unavailable: Exa search and fetch returned HTTP 402 (credits exceeded), and Consensus returned its monthly usage limit (resets 1 Dec 2026). Later work therefore used only direct fetches of URLs already identified and Hitachi and NERC primary PDFs. Items marked "search-result summary" were not opened and should be treated as unverified.
+  - The shared web-search quota was exhausted partway through, and the budget notice said not to work around the limit through other search services. After a coordinator tip that was later withdrawn, a few calls were attempted to Exa (HTTP 402, credits exceeded) and Consensus (monthly limit reached). All failed and **no information in this file comes from them**. All later work used only direct fetches of URLs already identified (Hitachi IR PDFs, Hitachi and Hitachi Energy release pages, and the NERC 2026 State of Reliability PDF linked from an already-fetched article). Items marked "search-result summary" were not opened and should be treated as unverified.
   - www.nrel.gov did not resolve from this session (it would need allowlisting in the session's network settings).
   - EUR-Lex returned only a generic shell page.
   - nationalgrid.com, datacenterdynamics.com and tokyobrief.com returned HTTP 403.
