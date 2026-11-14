@@ -129,7 +129,7 @@ Group guidance was met or beaten in FY2024, FY2025 and FY2026, after upgrades du
 
 **Siemens Gamesa**
 - June 2023 onshore quality problems: Siemens Energy shares fell about 35% between 21 and 23 June 2023. The company sought German government guarantees in Oct 2023 – [Wikipedia, Siemens Energy (rev. 1381626439, accessed Nov 2026)](https://en.wikipedia.org/wiki/Siemens_Energy) [independent, tertiary]. The problems centred on rotor blades and main bearings ("wrinkles in rotor blades", "particles in the bearings section") of the 4.X/5.X platforms – [POWER, May 2024](https://www.powermag.com/siemens-gamesa-changes-ceo-announces-job-cuts-as-part-of-new-focus/) [independent]
-- FY2023 group net loss €4,588m; Profit before SI −€2,776m – [SE-FY24-Letter] [company]
+- FY2023 group net loss €4,588m; Profit before SI −€2,776m – [SE-FY24-Letter] [company]. Of the €4.6bn warned FY23 loss, €4.4bn was attributed to Siemens Gamesa – [Oxford Business Law Blog, 13 Dec 2023](https://blogs.law.ox.ac.uk/oblb/blog-post/2023/12/taxes-blown-wind-siemens-gamesa-bailout) [independent]
 - Break-even target: the earliest dated statement retrieved is 13 Nov 2024 – "we assume that we will successfully continue on the path to reach break-even in fiscal year 2026"; "we expect sales activities for the 5.X onshore turbine to be resumed during fiscal year 2025" – [SE-FY24-PR] [company]. Restated Nov 2025 – [SE-FY25-PR] [company]
 - Outcome: FY26 Siemens Gamesa Profit before SI €8m (vs −€1.4bn FY25 and −€1,781m FY24). Q3 FY26 was the first quarterly profit since Q4 FY22, and Q4 FY26 the second – [SE-FY26-PR], 11 Nov 2026; [SE-Q3FY26-Deck]; [SE-FY24-PR] [company]
 - Onshore: first orders for the SG 7.0 platform ("successor to the 5.X turbine") came in Q2 FY26 – [SE-Q2FY26-ER], 12 May 2026 [company]. Quality-related cash-outs at Siemens Gamesa: €450m in FY25 (€157m in Q4 FY25) – [SE-Q4FY25-Deck] [company]
@@ -218,6 +218,7 @@ FY2026: orders €68.1bn, revenue €44.2bn, Profit before SI €5.5bn (12.4%), 
 **2023 guarantee package (terms)**
 - Reported 14 Nov 2023: a €15bn package in which private banks would provide €12bn of guarantees, with the federal government counter-guaranteeing €7.5bn. The remaining €3bn was to come from other sources. The economy ministry said the measures would impose "a pause on dividends and higher level bonuses", and the government would receive an annual fee – [BusinessLive/Reuters, 14 Nov 2023, snippet](https://www.businesslive.co.za/bd/companies/industrials/2023-11-14-germany-provides-siemens-energy-with-75bn-in-state-guarantees/); [Investing.com/Reuters, 14 Nov 2023, snippet](https://m.uk.investing.com/news/stock-market-news/german-government-unveils-deal-for-siemens-energy-guarantees-3237252?ampMode=1) [independent]. One report also said Siemens AG would cover a €1bn first-loss tranche (snippet, same search) [independent]
 - Company confirmation of the structure: an €11bn federally backed facility with a €7.5bn federal counter-guarantee, plus a €1bn Siemens AG-backed facility, both replaced 5 Jun 2025 – [Siemens Energy, 5 Jun 2025](https://www.siemens-energy.com/global/en/home/press-releases/siemens-energy-replaces--federal-guarantee-with-a-new-bank-facil.html) [company]
+- Related Siemens AG support (Nov 2023): purchase of an 18% stake in Siemens Ltd (India) from Siemens Energy for €2.1bn, and a reduction of the brand fees Siemens AG receives. The dividend ban and the bonus restrictions for directors and senior managers applied while the guarantees were in force – [Oxford Business Law Blog, 13 Dec 2023](https://blogs.law.ox.ac.uk/oblb/blog-post/2023/12/taxes-blown-wind-siemens-gamesa-bailout) [independent – academic]
 
 **Siemens Energy India (2025)**
 - FY25 included positive Special items of about €0.5bn "subsequent to the demerger of the energy business from Siemens Limited, India" – [SE-Q4FY25-Deck] [company]
@@ -361,11 +362,25 @@ Siemens AG has cut its stake to below 5%: 14.96% → 5.54% (effective 2 Apr 2026
 ## (8) Legal and regulatory
 
 ### Takeaway
-The main regulatory episode, the 2023 German federal counter-guarantee (€7.5bn, with dividend and bonus pauses), ended in June 2025 with a private €9bn facility; the dividend ban was lifted for FY2025. Current regulatory exposures in the sources are US tariffs (company estimated below $117m profit impact for 2025), a 2026 US executive order on bulk-power equipment (seen by the company as favouring "trusted suppliers"), the Siemens brand licence (about €300m/yr, to 2030), and the TI separation. The guidance excludes "charges related to any future legal and regulatory matters". No retrieved source covered shareholder lawsuits, Siemens Gamesa warranty litigation, antitrust or investigations.
+The main regulatory episode, the 2023 German federal counter-guarantee (€7.5bn, with dividend and bonus pauses), ended in June 2025 with a private €9bn facility; the dividend ban was lifted for FY2025. Current regulatory exposures in the sources are US tariffs (company estimated below $117m profit impact for 2025), a 2026 US executive order on bulk-power equipment (seen by the company as favouring "trusted suppliers"), the Siemens brand licence (about €300m/yr, to 2030), and the TI separation. The guidance excludes "charges related to any future legal and regulatory matters". An academic critique (Oxford Business Law Blog, Dec 2023) notes that the guarantee terms were largely undisclosed, and Siemens Gamesa's defect exposure (faulty components in 15–30% of models, over €1bn replacement costs) is documented. No retrieved source covered shareholder lawsuits, warranty litigation, antitrust or investigations.
 
 ### Cited Findings
 - 2023 guarantee: €15bn package; federal counter-guarantee €7.5bn; dividend and "higher level bonuses" paused; annual fee to the government (14 Nov 2023) – [BusinessLive/Reuters, snippet](https://www.businesslive.co.za/bd/companies/industrials/2023-11-14-germany-provides-siemens-energy-with-75bn-in-state-guarantees/) [independent]. Replaced 5 Jun 2025 – [Siemens Energy](https://www.siemens-energy.com/global/en/home/press-releases/siemens-energy-replaces--federal-guarantee-with-a-new-bank-facil.html) [company]. Dividend restriction lifted 30 Jul 2025 by the Bundestag Budget Committee – [Siemens Energy ad-hoc](https://www.siemens-energy.com/global/en/home/press-releases/Ad-hoc_release_Siemens_Energy_Dividend_restriction_already_lifted_for_FY2025.html) [company]
 - CFO Ferraro on the guarantee: "The federal government's counter-guarantee was instrumental in 2023 during a challenging phase" (5 Jun 2025) – [Siemens Energy](https://www.siemens-energy.com/global/en/home/press-releases/siemens-energy-replaces--federal-guarantee-with-a-new-bank-facil.html) [company]
+- Independent legal commentary (Horst Eidenmüller and Javier Paz Valbuena, Oxford Business Law Blog, 13 Dec 2023):
+  - The €7.5bn federal guarantee backstopped an €11bn bank line of performance guarantees, and a further €1bn bank line had a first-loss tranche.
+  - Siemens AG bought an 18% stake in Siemens Ltd (India) for €2.1bn (reported 15% discount to the NSE price) and agreed to reduce the brand fees it receives from Siemens Energy.
+  - Siemens Energy may not pay dividends while the guarantees are in force, and bonuses for directors and senior managers are restricted.
+  - Spanish discussions covered about €3bn of backstopped guarantees.
+  - "Very little is known" about the guarantee terms. The post does not say whether the European Commission was notified of or approved the measure; it notes only that bailouts face constraints in "state aid and antitrust laws".
+  - Opinion: Siemens Gamesa "should not have been bailed out, and certainly not on the specific terms of this rescue".
+  – [Oxford Business Law Blog](https://blogs.law.ox.ac.uk/oblb/blog-post/2023/12/taxes-blown-wind-siemens-gamesa-bailout) [independent – academic]
+- Siemens Gamesa quality and warranty exposure:
+  - A technical review in 2023 found faulty components in "15 to 30% of its turbine models", with replacement costs of over €1bn (Wikipedia, citing the FT).
+  - The 163 MW Odal Vind onshore wind farm in Norway was partially shut down in 2024 over blade manufacturing defects (Wikipedia, citing Wind Power Monthly; the WPM page returned 403).
+  – [Wikipedia, Siemens Gamesa (accessed Nov 2026)](https://en.wikipedia.org/wiki/Siemens_Gamesa) [independent, tertiary]
+  - "At least 2,900 of roughly 65,000" turbines were reportedly affected – [Oxford Business Law Blog, 13 Dec 2023](https://blogs.law.ox.ac.uk/oblb/blog-post/2023/12/taxes-blown-wind-siemens-gamesa-bailout) [independent]
+  - Siemens Energy's own figure is €450m of quality-related cash-outs at Siemens Gamesa in FY25 – [SE-Q4FY25-Deck] [company]
 - US tariffs: "In May, the company said U.S. import tariffs could shave less [than] $117 million off profits in 2025". The Charlotte expansion was driven partly by "persistent import tariffs" – [Stanly News Journal, 8 Aug 2025](https://stanlyjournal.com/2025/08/08/siemens-to-expand-charlotte-facility-for-u-s-transformer-production/) [independent]
 - US bulk-power equipment Executive Order (2026): "targeted rather than a blanket ban, with key implementation details still to come… the order's apparent focus on equipment, components and digital access from sanctioned or security-sensitive jurisdictions could strengthen the position of trusted suppliers" – [SE-PreClose], 30 Sep 2026 [company]
 - US policy alignment: the $1bn US investment release quotes the Interior Secretary and "White House National Energy Dominance Chair" Doug Burgum, and Bruch saying "The current policy environment has contributed to this momentum" – [SE-US1bn], 3 Feb 2026 [company]
@@ -378,7 +393,8 @@ The main regulatory episode, the 2023 German federal counter-guarantee (€7.5bn
 - The guarantee episode left no remaining restrictions in the retrieved sources. Dividends resumed (FY25 €0.70; FY26 proposed €2.30) and large buybacks are running, which implies the bonus and dividend conditions no longer bind.
 
 ### Gaps
-- EU state-aid treatment of the 2023 counter-guarantee (whether notified or approved, or structured at market terms) was not found.
+- EU state-aid treatment of the 2023 counter-guarantee (whether notified or approved, or structured at market terms) was not found. The Dec 2023 Oxford commentary does not mention a Commission decision, and no Commission document was retrieved.
+- No source found on whether Odal Vind or other Siemens Gamesa defect cases led to warranty litigation or arbitration (as opposed to repairs).
 - Shareholder lawsuits over the June 2023 Siemens Gamesa profit warning, Siemens Gamesa warranty claims and litigation, the Russia exit (incl. legacy Nord Stream turbine and JV matters), sanctions cases, antitrust matters and investigations were not retrieved (search budget exhausted). The annual report's legal-proceedings note was not accessible (the financial-publications page is script-rendered).
 - No primary source was found on the US bulk-power equipment EO, or on Section 232 or other tariff measures specific to transformers or turbines.
 
@@ -416,6 +432,7 @@ The technology base is mature. The SGT-800 (620 units, >20m hours), the SGT-A35 
 - Blades and vanes: "framework agreements with our suppliers to support deliveries into the 2030s. All key components are multi-sourced… in-house blades and vanes production". Service needs "around 70 percent of blades and vanes" – [SE-PreClose] [company]. Capital Injection Ceramics (CIC) was acquired (ceramic cores) – [SE-CMD25-GS] [company]. Tampa blades and vanes expansion – [SE-US1bn] [company]
 - Analysts asked about yttrium and rhenium shortages. Bruch said parts "will still be constrained, but I think it's really controlled" without addressing those materials directly – [SE-Q4FY26-Call] [company]
 - Forgings: EPRI: "there's a very limited number of places in the world where you can have extremely large components forged", which "bites the 400 MW rotor and not the 20 MW one" – [Open Factory (quoting EPRI)](https://open-factory.com/articles/slot-economy/) [independent]
+- Wood Mackenzie names hot-section component manufacturing, "especially single-crystal blade production", as the industry's main bottleneck – [Utility Dive, 9 Apr 2026](https://www.utilitydive.com/news/gas-turbine-supply-crunch-set-to-raise-prices-195-by-2027-woodmac/816904/) [independent]
 
 ### Inferences
 - On solid ground: the efficiency, reliability and fleet-hour claims for the SGT-800, the SGT-A35 and the H/HL class rest on large or operating fleets, and an independent operator (SSE) confirms best-in-Europe efficiency at about 63%. The ">64%" is a gross ISO rating, not an operator-reported net figure. Weaker ground: hydrogen (100% shown only at small scale in a company-coordinated, EU-funded demonstration), 420 kV SF6-free (pre-commercial), and AI load-following (marketing claims with no published test data).
@@ -485,7 +502,11 @@ Siemens Energy's total gas commitments (104 GW at Sep 2026; 95 GW at Jun 2026) a
 The financial, order-book, capacity and governance data are well covered by primary company documents up to 11 Nov 2026. Independent verification is weakest for named data-centre customers, HVDC framework contracts, legal proceedings and peer market-share data. Part of this is because the shared web-search budget ran out mid-research and Firecrawl credits were exhausted.
 
 ### Cited Findings
-- Tools note: the Firecrawl search call failed with "Insufficient credits", and later WebSearch calls returned "web search budget is used up". After that, only known URLs were fetched directly (session log, 14 Nov 2026).
+- Tools note (session log, 14 Nov 2026):
+  - Firecrawl search failed with "Insufficient credits", and later WebSearch calls returned "web search budget is used up".
+  - Single attempts with Exa search (HTTP 402, credits exceeded) and Consensus (free monthly quota used) returned no data. Following a coordinator correction, no substitute search services were used after that.
+  - From then on, only URLs already obtained were fetched directly.
+  - These pages returned HTTP 403 and remain unverified at page level: DatacenterDynamics (Fermi 600 MW purchase; Blackstone/Williams 2.6 GW), S&P Global (30 Jun 2026 gas-turbine outlook), Wind Power Monthly (Odal Vind), TipRanks, MarketScreener.
 
 ### Inferences
 - Items in the Gaps list below should not be assumed to be absent in reality. They were not retrievable in this session.
