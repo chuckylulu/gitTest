@@ -8,7 +8,7 @@ Source labels used throughout: **CC** = company-controlled (IonQ, its subsidiari
 As of 14 Nov 2026, the IonQ machines anyone can rent on public clouds are still the 25-qubit Aria and the 36-qubit Forte and Forte Enterprise. These use ytterbium ions and laser gates, with roughly 99.5–99.6% typical two-qubit fidelity. The fifth-generation barium-based Tempo (IonQ: 100 "target" qubits, #AQ 64 claimed September 2025) is sold for on-premises and private-cloud use and is not listed on AWS or Azure. The sixth-generation Superion 256 (on-chip "Electronic Qubit Control", chips made by IonQ's subsidiary SkyWater) was launched on 8 Sep 2026. Ions have been trapped in prototypes, but no gate or fidelity data have been published, and customer deliveries are planned for 2027.
 
 ### Cited Findings
-**Aria (generation-4 class, cloud)**
+**Aria (cloud)**
 - Azure Quantum lists target "IonQ Aria 1" (ionq.qpu.aria-1), 25 qubits. Its average fidelities are: single-qubit 99.95% (SPAM-corrected); two-qubit 99.6% (not SPAM-corrected); SPAM 99.61%. Timings: T1 10–100 s, T2 1 s, single-qubit gate 135 µs, two-qubit gate 600 µs. "Debiasing" error mitigation is on by default for Aria and Forte and is priced. The page says IonQ manipulates "hyperfine energy states of Ytterbium ions with lasers" — [Microsoft Learn (IND platform doc; specs vendor-supplied), "IonQ quantum computing provider – Azure Quantum", ms.date 17 Sep 2025, updated 29 Aug 2026](https://learn.microsoft.com/en-us/azure/quantum/provider-ionq)
 - Amazon Braket's device table (accessed 14 Nov 2026) lists only IonQ Forte-1 and Forte-Enterprise-1 (us-east-1). Aria and Tempo are not listed — [AWS (IND platform doc), "Amazon Braket supported regions and devices", accessed 14 Nov 2026](https://docs.aws.amazon.com/braket/latest/developerguide/braket-devices.html)
 
@@ -134,7 +134,7 @@ This physical/logical-qubit plan replaced the #AQ-based plans of 2020–2023. It
 ### Takeaway
 IonQ met or beat its own #AQ milestones: #AQ 29 (2023), #AQ 35 (January 2024, "a year ahead") and #AQ 64 (September 2025, "three months ahead"). All were company-measured, with error mitigation and compiler optimization allowed. It did not meet its more physical 2020 commitments:
 - Modular systems "networked together in a datacenter" by 2023: rack-mounted Forte Enterprise arrived in 2024–25, and two commercial machines were first linked photonically only in April 2026, with no metrics disclosed.
-- #AQ 64 "using 16:1 error-correction encoding" by 2025: #AQ 64 was reached without error correction.
+- #AQ 64 "using 16:1 error-correction encoding" by 2025: #AQ 64 was reached on a ~64–100-qubit machine, which rules out 16:1 encoding (that would need ~1,024 physical qubits). IonQ's release mentions no error correction.
 - "Broad quantum advantage" by 2025: there is no evidence it happened. IonQ's 2025 advantage claims are narrow.
 - The 2026 target of 256-qubit demonstrations became 2027 deliveries.
 
@@ -366,7 +366,7 @@ None of the scaling pillars of IonQ's roadmap has been demonstrated in public da
 - **Manufacturing economics:** cost-per-qubit reduction >300× is an IonQ expectation — [IonQ (CC), 8 Sep 2026](https://www.ionq.com/news/ionq-launches-superion-product-line-industry-leading-upgradeable-platform-designed-to-scale-manufacturable-fault-tolerant-quantum-computing). The "<$30M for 2M qubits" review has no named reviewer — [Nasdaq (IND-relay) (excerpt)](https://www.nasdaq.com/articles/ionqs-quantum-roadmap-and-foundry-strategy-through-2030)
 
 ### Inferences
-- The gap to the 2026 logical target is about five orders of magnitude: ~1×10⁻² measured per-cycle logical error versus a <1×10⁻⁷ target. No public evidence through 14 Nov 2026 shows the 12-logical-qubit target being met.
+- The gap to the 2026 logical target is about five orders of magnitude: ~1×10⁻² measured per-cycle logical error versus a <1×10⁻⁷ target. The units are not identical: the roadmap's "logical error state" has no stated unit. No public evidence through 14 Nov 2026 shows the 12-logical-qubit target being met.
 - Ion-species continuity is unproven:
   - Commercial machines use ytterbium (Aria/Forte, per Azure).
   - The breakeven work used barium-133 (Tempo-class).
