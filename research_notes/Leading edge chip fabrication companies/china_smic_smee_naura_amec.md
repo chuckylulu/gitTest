@@ -215,3 +215,206 @@ Sources [FILING via press]: [Sina](https://finance.sina.com.cn/stock/relnews/cn/
 - Naura's customer concentration, subsidy income and overseas share; AMEC's FY2025 gross margin; the one-day price reaction of each to its Q3 report; current status of either on the Pentagon list after the 8 Jun 2026 update.
 
 ---
+
+## 4. SiCarrier and the Huawei-linked fabs (SwaySure, Pengxinwei, Pensun)
+
+### Takeaway
+These are state-owned, Huawei-adjacent, US-sanctioned and almost wholly undisclosed. What is confirmed is who owns them, that Washington lists them as part of Huawei's chip effort, and that SiCarrier exhibits real tools. Node, yield and capacity claims are press reports; no teardown found attributes a shipped chip to any of the fabs.
+
+### Cited Findings
+- SiCarrier: founded Aug 2021 in Shenzhen; owned by the Shenzhen government through Shenzhen Major Industry Investment Group (SZMII); works with Huawei's 2012 Lab, with staff and patent transfers (Bloomberg, Dec 2023); subsidiaries Cornerstone (photoresist), Zetop (lithography), Ueascend (equipment); patent for self-aligned quadruple patterning granted late 2023; first public showing at SEMICON China in March 2025 with dozens of etch, deposition, metrology and inspection tools [PRESS] — [Wikipedia: SiCarrier](https://en.wikipedia.org/wiki/SiCarrier)
+- Entity List from 2 Dec 2024 ("Shenzhen SiCarrier Technologies"); BIS's stated reason is a significant risk of contributing to Huawei's indigenous production of advanced-node chips [official] — [89 FR 96830](https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28267.htm)
+- Funding: Reuters (May 2025) reported it was seeking about US$2.8bn in a first round at about US$11bn (RMB 80bn), lithography excluded; Huawei said it had no affiliation [PRESS/COMPANY CLAIM] — [EET China](https://www.eet-china.com/mp/a404858.html); [Sina, 15 May 2025](https://finance.sina.com.cn/tech/discovery/2025-05-15/doc-inewprws9199887.shtml). A Sept 2025 report gives RMB 65bn excluding lithography, a second round under way, backlog above RMB 10bn, revenue projections of about RMB 4.5bn (2025), 7.5bn (2026) and 16.9bn (2028), a RMB 2bn profit target for 2027 and an IPO planned alongside [PRESS] — [Cnyes, 7 Sep 2025](https://news.cnyes.com/news/id/6143649). A 2026 special report says it "raised $2.8B" [PRESS; completion unverified] — [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs)
+- Lithography link: Shanghai Yuliangsheng's immersion tool (section 2) is described as tied to SiCarrier [PRESS] — [Wikipedia: SiCarrier](https://en.wikipedia.org/wiki/SiCarrier)
+
+| Fab | Reported (press, analysts) | Official |
+|---|---|---|
+| PXW / Pengxinwei, Shenzhen | Founded by a former Huawei executive; "largest node" of the network, R&D and pilot production; 2 fabs | Already on the Entity List; Footnote 5 added 2 Dec 2024 |
+| Pensun / PST (Shenzhen Pengxinxu) | Mobile chips; 2 fabs | Added 2 Dec 2024 with Footnote 5 |
+| SwaySure (昇维旭) | DRAM; registered Mar 2022; 12-inch line with "28nm" capability, planned 140,000 wafers/month per a company-document entry circulated on X; possibly 3 fabs, one reportedly using only SiCarrier tools; linked to HBM on the Ascend roadmap | Added 2 Dec 2024 with Footnote 5 |
+| Qingdao SiEn, DGGMT (Dongguan), Fujian Jinhua, Pengjin | "About 11 fabs across 9 sites", perhaps five aiming at sub-7nm-class | Fujian Jinhua given Footnote 5 on 2 Dec 2024 |
+
+Sources — [Blocks & Files, 16 Jul 2026](https://www.blocksandfiles.com/ai-ml/2026/07/16/huawei-could-become-a-dram-fabber/5273853); [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs); [89 FR 96830](https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28267.htm)
+- Ownership and funding: PST, PXW and SwaySure are 100% owned by SZMII under Shenzhen's state-assets regulator; Bloomberg (2023) reported SZMII was set up largely to support Huawei; Big Fund III and municipal land and utilities are described as financing sources; Huawei reportedly bought over US$9bn of foreign equipment [PRESS] — [Blocks & Files](https://www.blocksandfiles.com/ai-ml/2026/07/16/huawei-could-become-a-dram-fabber/5273853); [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs)
+- Huawei told the FT that SiCarrier, SwaySure, UEA, PXW and PST are not affiliated with it [COMPANY CLAIM]; the same report classes node targets, yields, capacity and timelines as "reported but unverified" — [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs)
+
+### Inferences
+- (Researcher's reading) For the listed companies these entities are customers of Naura and AMEC, a possible rival to SMIC in advanced logic, and — in SiCarrier's case — a state-funded rival to both toolmakers in etch and deposition.
+
+### Gaps
+- No 2026 funding close, listing filing, revenue or customer confirmation for SiCarrier was found, and nothing verifiable on output at PXW, Pensun or SwaySure. No route to investor exposure was identified.
+
+---
+
+## 5. China's equipment self-sufficiency
+
+### Takeaway
+The domestic share is 23%, 35% or 55% depending on the denominator. It is high in strip, cleaning, CMP and mature-node etch, and close to nil in lithography and at 14nm and below. The five big foreign toolmakers still took 23–36% of their latest-quarter revenue from China.
+
+### Cited Findings
+
+| Measure | Value | Period | Measured by |
+|---|---|---|---|
+| Domestic share of tools used in Chinese fabs | 25% → 35% (target 30%) | 2024 → 2025 | China Semiconductor Industry Association, Jan 2026 |
+| Share of new purchases by value | 23% | 2025 | research cited by Korea's ETNews |
+| Share of tender value, new and expanded 12-inch fabs | ~55% (RMB 23.6bn of ~43bn) | to Dec 2025 | industry-ministry document reported by SCMP |
+| Localisation rate | 8% → 23.2% → 39% | 2021 → 2025 → 2030E | Yole Group |
+| Domestic vendors' share by output value | 26% → 38% | → 2028E | Goldman Sachs |
+
+Sources [ESTIMATE] — [TrendForce, 12 Jan 2026](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/); [Jiwei via Tencent News, 16 Sep 2026](https://news.qq.com/rain/a/20260916A09VKF00); [TechTimes](https://www.techtimes.com/articles/322817/20260803/amec-plasma-etching-profit-nearly-doubled-h1-2026-tsmc-phases-out-its-tools.htm)
+
+| Process step | Broker estimate for 2025 (Soochow) | Other measures |
+|---|---|---|
+| Strip | >80% | 80–90% at 28nm and above |
+| Etch | 55–65% | association: >40%; by tender count ~23%; under 15% at 14nm and below |
+| Cleaning | 50–60% | by tender count ~20% |
+| CMP | 30–40% | Hwatsing has >90% of domestic-vendor CMP sales |
+| Thermal | 30–40% | by tender count ~28% |
+| Deposition | ~25% | association: >40% |
+| Ion implant | <20% | ~15%; by tender count ~3% |
+| Track | <10% | ~6% |
+| Metrology and inspection | <10% | association: 25% |
+| Lithography | <1% | association: 18% (mostly mature-node and packaging) |
+
+Sources [ESTIMATE] — [Jiwei via Tencent News](https://news.qq.com/rain/a/20260916A09VKF00); [EEFocus, 11 Nov 2026](https://global.eefocus.com/article/2026-semiconductor-equipment-review-domestic-equipment-tiers-and-gaps-behind-numerous-domestic-firsts.html); [TrendForce](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/)
+- Minimum-content rule: Reuters reported (30 Dec 2025) unpublished guidance that fabs seeking approval for new or expanded capacity must buy at least 50% of equipment from domestic suppliers, with leeway for advanced lines; there is no official text [PRESS] — [Sina, 31 Dec 2025](https://finance.sina.com.cn/tech/roll/2025-12-31/doc-inhesnwn9115614.shtml); [TrendForce](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/)
+- State funding: the third Big Fund began operating at end-2024 with US$47bn of registered capital; a further subsidy programme of up to RMB 500bn is reported to be in preparation [PRESS] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [TrendForce](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/)
+- Size and depth: mainland China was 43% of US$133bn of global equipment sales in 2025 (SEMI); Goldman forecasts a US$53bn Chinese wafer-fab-equipment market in 2027; domestic parts cover under 8% of a RMB 114bn parts market [ESTIMATE] — [Jiwei via Tencent News](https://news.qq.com/rain/a/20260916A09VKF00)
+
+**China's share of revenue at the five large foreign toolmakers**
+
+| Vendor | Latest quarter (report date) | China share | Basis | Comparison | Company outlook |
+|---|---|---|---|---|---|
+| ASML | Q3 2026 (14 Oct 2026) | 23% | net system sales | 14% in Q2 2026; 42% in Q3 2025 | about 20% of 2026 total net sales |
+| Applied Materials | quarter to 25 Oct 2026 (12 Nov 2026) | 25% (US$2.64bn) | net revenue | 29% a year earlier; FY2026 27% vs 30% | none given |
+| Lam Research | quarter to 27 Sep 2026 (21 Oct 2026) | 35% | revenue | 26% in June quarter; 43% a year earlier | none given |
+| KLA | quarter to Sep 2026 (28 Oct 2026) | 34% | revenue | 39.5% a year earlier | 27–29% in December quarter; low-20s% in 2027 |
+| Tokyo Electron | Jul–Sep 2026 (30 Oct 2026) | 36.4% (¥339.9bn) | net sales | 30.4% in Apr–Jun; 40.3% a year earlier | low-30s% for year to Mar 2027 |
+
+Sources [FILING unless noted] — ASML: [EEFocus](https://global.eefocus.com/article/2026-semiconductor-equipment-review-domestic-equipment-tiers-and-gaps-behind-numerous-domestic-firsts.html), [East Asia Brief](https://eastasiabrief.com/trade-policy/asml-tool-makers-see-china-sales-share-plunge-third-1292), [ASML call](https://www.fool.com/earnings/call-transcripts/2026/10/14/asml-asml-q3-2026-earnings-call-transcript/); Applied: [8-K exhibit](https://www.sec.gov/Archives/edgar/data/0000006951/000162828026073360/exhibit991q42026earningsre.htm); Lam: [8-K exhibit](https://www.sec.gov/Archives/edgar/data/0000707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm), [TokenPost for comparisons](https://www.tokenpost.com/news/business/39296); KLA: [shareholder letter](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1117/10679/letter_to_shareholders/KLA_Earnings_Shareholder_Letter_-_Q1_FY27.pdf), [call](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/); Tokyo Electron: [call transcript](https://stockanalysis.com/quote/tyo/8035/transcripts/719106-q2-2027/), [BigGo](https://finance.biggo.com/news/JP_8035.T_2026-10-30); year-earlier KLA and Tokyo Electron figures from [East Asia Brief](https://eastasiabrief.com/trade-policy/asml-tool-makers-see-china-sales-share-plunge-third-1292) [PRESS]
+- China's share of ASML's immersion-DUV shipments rose from 26% in 2022 to 60–70% between Q1 2024 and Q1 2026, with over US$13bn spent on NXT:1980i systems in 2024–25 [ESTIMATE] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
+
+### Inferences
+- (Researcher's reading) The series measure different things; taken together they say substitution is real at mature nodes and in a handful of steps, while at the leading edge China still buys foreign tools wherever licences allow.
+- The foreign vendors' falling China percentages partly reflect faster growth elsewhere: Applied's China revenue rose in dollars while its share fell.
+
+### Gaps
+- No single official series by process step exists; 2026 figures are forecasts or part-year. The Reuters original on the 50% rule and Big Fund III's 2026 investments were not read directly.
+
+---
+
+## 6. Export controls on chip-making equipment as they stand in November 2026
+
+### Takeaway
+The US rules of October 2022, October 2023 and December 2024 are all in force. The September 2025 Affiliates (50%) Rule has been suspended since 10 Nov 2025; the suspension, due to end 9 Nov 2026, was extended to 10 Jan 2027, the same day to which China extended its rare-earth pause and to which the trade truce now runs. The open risk for SMIC is allied controls: the MATCH Act, which targets immersion-DUV sales and servicing, has cleared a House committee but neither chamber's floor.
+
+### Cited Findings
+
+| Effective | Measure | Official document or source |
+|---|---|---|
+| 7–21 Oct 2022 | US: new control on advanced tools (ECCN 3B090); licence needed for any controlled item going to Chinese fabs making specified advanced chips (§744.23); limits on US persons (§744.6) | [87 FR 62186](https://www.govinfo.gov/content/pkg/FR-2022-10-13/html/2022-21658.htm) |
+| 17 Nov 2023 | US: tool list widened and moved into ECCNs 3B001/3B002; 0% de minimis for specified lithography; reach extended to Macau and arms-embargoed destinations | [88 FR 73424](https://www.govinfo.gov/content/pkg/FR-2023-10-25/html/2023-23049.htm) |
+| 2 Dec 2024 (compliance 31 Dec) | US: foreign-direct-product rules for chip tools and for "Footnote 5" Entity List parties; new ECCNs 3B903, 3B992–3B994; HBM control | [89 FR 96790](https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28270.htm) |
+| 2 Dec 2024 | US Entity List: 140 additions including Naura, Piotech, ACM Shanghai, SiCarrier, SwaySure, Pengxinxu; Footnote 5 and presumption of denial for SMIC entities; AMEC dropped from the Validated End-User programme | [89 FR 96830](https://www.govinfo.gov/content/pkg/FR-2024-12-05/html/2024-28267.htm) |
+| 29 Sep 2025 | US Affiliates Rule: entities at least 50% owned by Entity List, Military End-User or certain sanctioned parties treated as listed | [90 FR 47201](https://www.govinfo.gov/content/pkg/FR-2025-09-30/html/2025-19001.htm) |
+| 10 Nov 2025 → 9 Nov 2026 | Affiliates Rule suspended for a year under the US–China deal (White House fact sheet, 1 Nov 2025) | [Thompson Hine](https://www.thompsonhinesmartrade.com/2026/11/bis-extends-affiliates-rule-until-january-2027/) |
+| to 10 Jan 2027 | Suspension extended by BIS final rule announced 5 Nov 2026 (FR Doc. 2026-22793); the rule "could take effect" afterwards | [Thompson Hine](https://www.thompsonhinesmartrade.com/2026/11/bis-extends-affiliates-rule-until-january-2027/); [Reed Smith](https://www.reedsmith.com/our-insights/blogs/trade-compliance-resource-hub/5272/bis-further-suspends-affiliates-rule-until-january-2027/); [Clifford Chance](https://www.cliffordchance.com/briefings/2026/11/bis-suspends-affiliates-rule-until-january-10-2027.html) |
+| 1 Sep 2023; 7 Sep 2024 | Netherlands: national licence requirement for advanced DUV lithography, widened to more equipment on 7 Sep 2024; "not an export ban", case by case | [Government of the Netherlands, 6 Sep 2024](https://www.government.nl/latest/news/2024/09/06/the-netherlands-expands-export-control-measure-advanced-semiconductor-manufacturing-equipment) |
+| 23 Jul 2023; 28 May 2025; 14 Feb 2026 | Japan: 23 categories of advanced tools put under licence; later amendments; a further draft opened for comment 19 Oct 2026 | [CSIS translation of the 2023 rule](https://csis-website-prod.s3.amazonaws.com/s3fs-public/2023-07/230718_CSISTranslations_JapaneseExportControls_0.pdf); [Timewell (consultancy column, not checked against METI)](https://timewell.jp/en/columns/semiconductor-export-regulation-2026) |
+| 11 Nov 2026 → 10 Jan 2027 | China: Commerce Ministry/Customs Announcement No. 58 of 2026 keeps the 9 Oct 2025 export-control announcements suspended | [CNA, 10 Nov 2026](https://www.cna.com.tw/news/acn/202611100073.aspx) |
+
+- What the allied rules allow in practice: ASML's NXT:1970i and later need a Dutch (or Japanese-equivalent) licence for anywhere in China and "many licenses have been granted"; older immersion tools ship freely; Dutch rules exempt the minimum technology needed to install and repair lawfully exported tools, so ASML still services the Chinese fleet (servicing revenue estimated at US$1–1.5bn a year). The US bars 1970i/1980i only for Entity-Listed fabs and advanced-node production, and bars US persons from servicing advanced fabs [ESTIMATE] — [Center for Technology & Statecraft, Sep 2026](https://techstatecraft.org/duv/); [Bits&Chips, 7 Apr 2026](https://bits-chips.com/article/us-bill-targets-asmls-immersion-business-in-china-with-expanded-export-curbs/). The Dutch government treats DUV licence details as confidential (Reuters, Jan 2025) [PRESS] — [ITdaily](https://itdaily.com/news/business/dutch-set-asml-sales-to-china-free-from-export-law/)
+- MATCH Act: H.R. 8170 introduced 2 Apr 2026 and ordered reported by the House Foreign Affairs Committee on 22 Apr 2026; Senate companion S. 4281 introduced 13 Apr 2026 and referred to Senate Banking; no floor vote found. It would cover all immersion-DUV machines plus through-silicon-via, cryogenic-etch and cobalt-deposition tools, give the Netherlands and Japan 150 days to match US controls before US jurisdiction is extended, and (Senate text) name SMIC, CXMT, YMTC, Hua Hong and Huawei and restrict servicing. The Dutch trade minister lobbied against it in Washington in June 2026; one analysis expects House passage but no enactment in this Congress [official/PRESS] — [Congress.gov H.R. 8170](https://www.congress.gov/bill/119th-congress/house-bill/8170); [Congress.gov S. 4281](https://www.congress.gov/bill/119th-congress/senate-bill/4281/text); [Yeandel, 9 Aug 2026](https://www.yeandel.co.uk/22-q3-2026-updates/match-act-clock-not-started.html); [Timewell](https://timewell.jp/en/columns/semiconductor-export-regulation-2026)
+- US ownership-related lists: the Pentagon's Section 1260H list was updated on 8 Jun 2026 (65 additions including Alibaba, Baidu, BYD, WuXi AppTec; 10 removals), with procurement bans from 30 Jun 2026 and 30 Jun 2027; listing does not itself bar investment but raises the risk of Treasury designation, which does [official via law firm] — [Holland & Knight, Jul 2026](https://www.hklaw.com/en/insights/publications/2026/07/department-of-war-updates-section-1260h). Of the companies here only SMIC (and Huawei) is on Treasury's investment-ban list — [OFAC NS-CMIC list](https://www.treasury.gov/ofac/downloads/ccmc/nscmiclist.pdf)
+- China's counter-measures: Announcement No. 58 (9 Nov 2026) continues the suspension of 2025 Announcements 55 (superhard materials), 56 (rare-earth equipment and materials), 57 (five medium and heavy rare earths), 58 (lithium-battery and graphite-anode items), 61 and 62 (rare-earth technology and related licensing); measures against US firms on the unreliable-entity and export-control lists stay suspended; the 24% additional tariff stays suspended with 10% retained; port fees suspended to 10 Jan 2027. The controls are paused, not repealed [official via press] — [CNA](https://www.cna.com.tw/news/acn/202611100073.aspx). TechInsights itself was placed on China's unreliable-entity list [PRESS] — [SCMP via Yahoo](https://tech.yahoo.com/computing/articles/huaweis-kirin-9030-processor-shows-093000039.html)
+- Trade truce: the Busan framework of 30 Oct 2025 was a one-year package; on 23 Sep 2026 the US Treasury Secretary announced an extension to 10 Jan 2027, around a Xi Jinping state visit to Washington; on 6 Nov 2026 USTR extended 178 Section 301 exclusions and the port-fee suspension to 9 Jan 2027; a Xi–Trump meeting at APEC was expected in the week of 16 Nov; chip-export controls were "discussed but not agreed" [PRESS] — [Tariffstool guide](https://www.tariffstool.com/guides/us-china-trade-truce-extended-january-2027); [CNA](https://www.cna.com.tw/news/acn/202611100073.aspx)
+
+### Inferences
+- (Researcher's reading) 10 January 2027 is now a single cliff date for the Affiliates Rule, China's rare-earth pause and the truce. The Affiliates Rule matters here mainly for the many subsidiaries and funds majority-owned by Entity-Listed parents (SMIC, Naura, SiCarrier).
+- Controls so far bind tools at the frontier and US-origin content; the installed immersion fleet and its servicing are the part still open, and the part the MATCH Act aims at.
+
+### Gaps
+- Not verified: the Federal Register page citations for the November 2025 suspension and November 2026 extension; whether BIS issued any other tool rule in 2026; the content of Japan's October 2026 draft; the status of China's gallium, germanium and antimony ban on exports to the US; Chinese investigations of foreign chip firms in 2026; the outcome of the APEC meeting.
+
+---
+
+## 7. "China is closing the gap" versus "China is stuck without EUV"
+
+### Takeaway
+Both statements are supported, on different axes. Independent teardowns show SMIC still shrinking without EUV (N+3 density above TSMC's 2020-vintage N6), and domestic tool share is rising fast. But each further step costs more and yields less, the measured gap to TSMC's current nodes is about a factor of two in density, lithography is under 1% localised, and the best outside estimates put Huawei's AI-chip output at a few percent of Nvidia's through 2028.
+
+### Cited Findings
+
+**Evidence for "closing the gap"**
+- Two independent labs confirm node progress without EUV: N+2 in 2023, N+3 in a phone on sale in December 2025; N+3 logic density (113.4 MTr/mm²) exceeds TSMC N6 and its tightest metal pitch (32.5nm) is finer than the 36nm of Intel's shipped 18A product [CONFIRMED] — [TechInsights](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown)
+- Scale and demand: record SMIC revenue, 97.3% utilisation and AI-related demand that management says exceeds supply [FILING/COMPANY CLAIM] — [TrendForce](https://www.trendforce.com/news/2026/11/13/news-smic-sees-capacity-tightness-through-2027-possibly-into-2h28-equipment-lead-times-stretch-to-16-24-months/)
+- Tools: domestic share of installed tools up from 25% to 35% in a year, etch and deposition above 40% [ESTIMATE] — [TrendForce](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/)
+- Lithography: a domestic 28nm immersion tool reported in low-volume production (Reuters, Jul 2026) and an EUV prototype generating light (Reuters, Dec 2025) [PRESS] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [EE Times](https://www.eetimes.com/china-euv-breakthrough-and-the-rise-of-the-silicon-curtain/)
+- AI chips: Ascend 950 on SMIC N+3 from 2026 with about 1.5m units modelled for the year; Huawei's roadmap runs to stacked logic in 2030 [ESTIMATE/COMPANY CLAIM] — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- Tool stock: over 330 ASML immersion systems at Chinese-owned fabs; if imports continue at the 2024–25 pace and the fleet is turned to AI chips, China "could erase much of the US advantage" [ESTIMATE] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/). An April 2026 AEI report makes the same argument about the NXT:1980i "loophole" [ESTIMATE, via a blog summary] — [abhs.in](https://www.abhs.in/blog/china-duv-lithography-loophole-smic-huawei-near-frontier-chips-aei-april-2026)
+
+**Evidence for "stuck without EUV"**
+- N+3 is "significantly less scaled" than 5nm; its density is about half that of TSMC N3P; the chip performs like three-year-old Android flagships [CONFIRMED] — [TechInsights](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown); [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- Diminishing returns: N+4 is expected to add about 20% density; N+5 is "unlikely" to be cost-competitive; no denser-than-5nm-equivalent process before the end of the decade [ESTIMATE] — [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown); [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- Yield and cost: 20–40% on large AI dies, N+3 at or below 20% in pilot, 7nm wafers 40–50% dearer than TSMC's [ESTIMATE/PRESS] — [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs); [EE Times](https://www.eetimes.com/china-euv-breakthrough-and-the-rise-of-the-silicon-curtain/)
+- AI output: the Ascend 910C teardown found TSMC dies and Korean memory; Huawei's 2026 compute is put at under 4% of Nvidia's and about 1.5% in 2028 on domestic memory alone; another study puts the US advantage in AI computing power at about 50 times [ESTIMATE] — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031); [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
+- Lithography: under 1% localised; no SMEE immersion tool confirmed in production; a commercially viable 7nm-capable domestic immersion tool not expected before the mid-2030s; the EUV prototype has made no chips [ESTIMATE/PRESS] — [EEFocus](https://global.eefocus.com/article/2026-semiconductor-equipment-review-domestic-equipment-tiers-and-gaps-behind-numerous-domestic-firsts.html); [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [Power Electronics News](https://www.powerelectronicsnews.com/taking-stock-of-chinas-euv-lithography-efforts/)
+- Supply chain: tool localisation under 15% at 14nm and below; parts under 8%; SMIC's own tool deliveries slipping 16–24 months [ESTIMATE/COMPANY CLAIM] — [Jiwei via Tencent News](https://news.qq.com/rain/a/20260916A09VKF00); [TrendForce](https://www.trendforce.com/news/2026/11/13/news-smic-sees-capacity-tightness-through-2027-possibly-into-2h28-equipment-lead-times-stretch-to-16-24-months/)
+
+**Observable events in 2027–2029 that would settle it** (researcher's list, built from the sources' own milestones)
+- A teardown showing N+4-class density (about 138 MTr/mm²) in a shipping Huawei chip — the Ascend 970, due late 2028, is expected on N+4 — or its absence — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- Ascend 960 (late 2027) and 970 (late 2028) shipping at announced specifications on domestic memory, and CXMT's HBM wafer starts reaching the modelled 55,000 (2027) and 100,000 (2028) a month — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- First working chips attributed to the Chinese EUV prototype: official target 2028, sources' expectation 2030 — [Power Electronics News](https://www.powerelectronicsnews.com/taking-stock-of-chinas-euv-lithography-efforts/)
+- Domestic immersion tools counted on SMIC production lines in 2027 (planned), and unit shipments (5 a year rising to 20 claimed for one maker) — [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
+- Whether the MATCH Act or matching Dutch and Japanese servicing limits become law, and what then happens to SMIC's utilisation and capex — [Yeandel](https://www.yeandel.co.uk/22-q3-2026-updates/match-act-clock-not-started.html)
+- China's share of foreign toolmakers' revenue against Chinese fab capex: KLA guides to low-20s% in 2027 — [KLA call](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/)
+- SMIC's gross margin against depreciation growing about 30% a year, and any separate disclosure of FinFET revenue — [call transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-smic-tops-revenue-forecast-in-q3-2026-on-ai-demand-93CH-5023901)
+- Whether Hua Hong's 7nm-class line reaches its reported end-2026 target — [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs)
+
+### Inferences
+- (Researcher's reading) "Closing the gap" is best supported for volume and breadth at 7nm-class and above; "stuck" is best supported for density beyond roughly 5nm-equivalent and for the cost of each wafer. The two are compatible.
+- Almost all volume, yield and cost numbers come from a small set of analysts repeated across outlets; they should be treated as one or two observations, not many.
+
+### Gaps
+- TechInsights' and SemiAnalysis' quantitative yield and cost findings are behind paywalls. No 2026 teardown of an Ascend 950 was found.
+
+---
+
+## 8. What could not be verified, and figures on which sources conflict
+
+**Could not verify**
+1. SMIC's global foundry share and rank for 2026 (no TrendForce or Counterpoint figure retrieved).
+2. SMIC FY2025 government funding, depreciation and customer concentration; Huawei's share of SMIC revenue.
+3. Terms of the capital increase at SMIC's FinFET subsidiary (SMIC South). Researcher's unverified recollection: a roughly US$7.8bn increase with third-Big-Fund vehicles was announced with the SMNC deal in late December 2025.
+4. Year-end 2025 closes and 2026 year-to-date moves for SMIC A-shares and AMEC; AMEC's share count changed in 2026 (957.84m now against registered capital of 626.1m shown in an undated company-registry snippet), so unadjusted earlier prices such as RMB 305.61 (27 Mar 2026) are not comparable.
+5. Short-selling in practice: Hong Kong short interest and borrow cost for 0981; whether Naura, AMEC or SMIC A-shares can be borrowed. Researcher's unverified background: mainland securities lending has been tightly restricted since mid-2024 and foreign investors cannot practically short through Stock Connect.
+6. Naura: subsidy income, top-five customers, overseas revenue; whether Naura, AMEC, SMEE, YMTC or CXMT changed status in the 8 Jun 2026 Pentagon list update (one secondary source says CXMT was re-added).
+7. AMEC's 9M 2026 operating cash flow (−RMB 0.105bn) comes from a search-engine summary, not a page read directly.
+8. SMEE: financials, current owners, the AMIES spin-off, any customer confirmation of the 28nm immersion tool; the self-media pages making these claims have been deleted.
+9. SiCarrier: whether the US$2.8bn round closed; any 2026 listing filing.
+10. The Reuters article of 16 Mar 2026 whose web address reads "China's No. 2 chipmaker readies 7-nm production": a think-tank paper cites it for "weak" SMIC 7nm yields, but the address suggests its subject is another chipmaker; the article was not read.
+11. Japan: a social-media claim that controls on advanced-packaging tools took effect on 1 Aug 2026; the content of the October 2026 draft.
+12. China: status of the December 2024 ban on gallium, germanium and antimony exports to the US (its suspension was due to end 27 Nov 2026 by the researcher's recollection); the exact wording of 2025 Announcement No. 61 on chip-related end uses.
+13. The outcome of the Xi–Trump meeting at APEC; any BIS tool rule in 2026 beyond those listed.
+14. Why the sector fell from August highs to early-November lows (Naura −38%, SMIC H to HK$42.62). A headline seen beside one article referred to a fall in Nvidia's market value after a reported resignation of its chief executive; this was not checked and is not used.
+15. One-day share-price reactions of Naura and AMEC to their Q3 reports.
+
+**Figures on which sources conflict**
+1. SMIC 2025 capex: "about US$8.1bn" (press on the plan) against US$8.40bn cash spend (annual-report summary).
+2. SMIC Q4 2025 "net profit US$203m, −24.9%" (Caixin) appears to be profit including minorities; full-year attributable profit was US$685m.
+3. SMIC attributable profit Q3 2026: US$428.4m under IFRS; RMB 2.847bn under China GAAP (IFRS-equivalent RMB 2.91bn).
+4. SMIC market value: HK$622.7bn (data site, blended), about HK$415bn (H price × all shares), RMB 946–957bn (A price × all shares).
+5. SMIC H-share trailing P/E: 41x (data site, 13 Nov) against "127–129x" quoted by a news site in October 2026 at HK$56–58 and 115x for 2025 earnings.
+6. SMIC N+3 status: "pilot, yields at or below 20%" (TD Cowen via press), "30–40%" (other estimates), "in mass production" (Epoch, TechPowerUp via Semisino).
+7. Huawei AI-chip output for 2026: about 1.5m Ascend units (Epoch, WSJ); 600,000 Ascend 910C within 1.6m dies (Bloomberg); 62,000–160,000 Nvidia B300-equivalents (Institute for Progress via CTS). Epoch's own text gives both "more than 10 million" and "13 million" stockpiled HBM stacks.
+8. Localisation: 23% (new purchases), 35% (installed base), 55% (tenders); lithography under 1% against 18%; etch 23% (tender count), over 40% (association), 55–65% (broker); metrology under 10% against 25%.
+9. SMEE's 28nm immersion tool: "in full mass production" (social media), "10nm-capable, mass-produced and sold" (Korean press), "not yet in production" (Chinese trade press, Sept 2026). Wikipedia calls the SSA600 an immersion tool; other sources describe it as dry ArF.
+10. SiCarrier valuation: RMB 65bn, RMB 80bn (about US$11bn) or "nearly RMB 100bn"; round "sought" against "raised".
+11. Naura's October 2026 acquisition price: RMB 405m (broker note, 4.05亿元) against "RMB 4.05bn" in one summary; the lower figure fits the target's size.
+12. AMEC chambers in production: over 8,800 (trade press) against over 9,300 (company, end-Sept 2026). AMEC's buyback cap of RMB 433.04 sits far above the RMB 246 share price.
+13. MATCH Act committee vote: 36–8 (Congress.gov as summarised, Timewell) against 44–0 (Yeandel).
+14. Affiliates Rule extension announced 5 Nov 2026 (Thompson Hine) or 6 Nov (Clifford Chance); the original rule is dated 29 Sep 2025 (effective) and 30 Sep 2025 (published).
+15. China's rare-earth pause: one outlet reported on 9 Nov 2026 that no extension had been published; Announcement No. 58 of the same day extends it.
+16. Dutch control on NXT:2000i-class tools: in force from 1 Sep 2023 (Dutch government) against "1 January 2024" (consultancy column).
+17. ASML's China share: 23% of Q3 net system sales against about 20% of full-year total net sales (different bases). Applied Materials: 28% (July quarter) against 25% (October quarter).
+18. AMEC valuation: 46.7x trailing reported earnings against about 103x on earnings before non-recurring items; forward P/E 58.5x (data site) against 47x (Everbright 2026 forecast).
