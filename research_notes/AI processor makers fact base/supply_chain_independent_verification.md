@@ -283,7 +283,7 @@ The JEDEC HBM4 standard (JESD270-4, April 2025) specifies a 2,048-bit interface 
 - **[SUPPLIER]** SK hynix says lower stack counts (8-high) require more cubes and base dies for the same capacity, and that it has built this into its supply plan (Oct 2026). Source: [The Motley Fool transcript, 2026-10-28](https://www.fool.com/earnings/call-transcripts/2026/10/28/sk-hynix-skhy-q3-2026-earnings-call-transcript/)
 
 ### Inferences
-- At 11 Gb/s per pin on a 2,048-bit interface, one stack would carry about 2.8 TB/s (11 × 2048 / 8 GB/s). That is about 40% above the JEDEC 8 Gb/s baseline. This is my arithmetic.
+- At 11 Gb/s per pin on a 2,048-bit interface, one stack would carry about 2.8 TB/s (11 × 2048 / 8 GB/s). That is about 38% above the roughly 2.05 TB/s JEDEC 8 Gb/s baseline. This is my arithmetic.
 
 ### Gaps
 - I did not verify Rubin's per-GPU HBM4 capacity or bandwidth (NVIDIA-stated figures) in this pass.
@@ -320,7 +320,7 @@ The BIS rules of 2 December 2024 control HBM above 2 GB/s/mm² memory-bandwidth 
   - A July 2026 Japanese analysis says CXMT's HBM3 mass production slipped from 1H26 and volume in 2026 looks difficult. Source: [semi-connect.net, "CXMT HBM3: China AI memory challenge 2026," Jul 2026](https://semi-connect.net/cxmt-hbm3-china-ai-memory-challenge-2026/)
 
 ### Inferences
-- SemiAnalysis's "one-month gap between control announcement and enforcement" sits uneasily with a law-firm summary that reports no delayed compliance date for the HBM controls (seen in a search summary, not opened). This should be checked against the Federal Register text.
+- SemiAnalysis's "one-month gap between control announcement and enforcement" sits uneasily with a BIS summary document that reportedly gave the HBM controls no delayed compliance date. I saw that only in a search summary and did not open the document. Other Category 3 changes in the same package had a 31 Dec 2024 compliance date, which may explain the discrepancy. This should be checked against the Federal Register text.
 
 ### Gaps
 - I found no official production figures for CXMT HBM or Huawei HiBL.
@@ -419,7 +419,7 @@ MLCommons published three rounds in 2026: Inference v6.0 (1 Apr), Training v6.0 
   - Source: [MLCommons, Training v6.0 results announcement, 2026-06-16](https://mlcommons.org/2026/06/mlperf-training-v6-0-results/)
   - Secondary claims [UNOPENED]: the fastest DeepSeek-V3 time was 2.02 min on 8,192 GB300 GPUs; eight teams submitted GB300 NVL72 results; AMD made its first multi-node training submission (MI355X). [CHIP-CO: AMD] MI355X within 5% of B200 on Llama 2-70B LoRA and within 6% on Llama 3.1-8B pretraining, at FP4. [CHIP-CO: NVIDIA] GB300 NVL72 up to 1.6x GB200 NVL72 at the same scale. Sources: [Digital Applied, "MLPerf Training v6.0: Reading the 2026 Hardware Race," 2026-06-21](https://www.digitalapplied.com/blog/mlperf-training-v6-2026-results-hardware-leaderboard); [AMD blog, 2026](https://www.amd.com/en/blogs/2026/amd-delivers-breakthrough-mlperf-training-6-0-results.html) (HTTP 503 when fetched)
 - **[INDEPENDENT: MLCommons] Inference v6.0 (1 Apr 2026):**
-  - 24 submitters, including AMD, Google, Intel, NVIDIA, Lenovo, MangoBoost, Oracle and Red Hat.
+  - 24 submitters: AMD, ASUSTeK, Cisco, CoreWeave, Dell, GATEOverflow, GigaComputing, Google, HPE, Intel, Inventec, KRAI, Lambda, Lenovo, MangoBoost, MiTAC, Nebius, Netweb, NVIDIA, Oracle, Quanta Cloud Technology, Red Hat, Stevens Institute of Technology, Supermicro.
   - Largest system: 72 nodes and 288 accelerators.
   - New tests: GPT-OSS 120B, interactive DeepSeek-R1, DLRMv3, text-to-video, VLM and YOLOv11.
   - Source: [MLCommons, Inference v6.0 results announcement, 2026-04-01](https://mlcommons.org/2026/04/mlperf-inference-v6-0-results/)
@@ -596,7 +596,7 @@ Most 2026 technical disclosures were presented by the vendors themselves. At Hot
   - [PRESS] TSMC wafer prices rise 3–6% from January 2027, with the steepest increases on 2nm and 3nm (Liberty Times). CoWoS rises up to 20% (Commercial Times). Source: [TrendForce, 2026-10-27](https://www.trendforce.com/news/2026/10/27/news-tsmc-reportedly-eyes-20-cowos-price-hike-skips-equipment-price-renegotiations-amid-ai-demand-surge/)
   - [INDEPENDENT: TechInsights] SMIC N+3 is DUV-based and less scaled than 5nm; low yields are expected on large AI dies (December 2025 and March 2026). Sources: [TechInsights, 2025-12-11](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [TechInsights, 2026-03-17](https://www.techinsights.com/ja/node/61228)
 - **Efficiency and reliability**
-  - [COMPANY-AUTHORED: Google] 0.24 Wh per median Gemini text prompt (May 2025 measurement period), down 33x in 12 months. Source: [arXiv 2508.15734, 2025-08-21](https://arxiv.org/abs/2508.15734)
+  - [COMPANY-AUTHORED: Google] 0.24 Wh per median Gemini text prompt, down 33x over the preceding 12 months (paper dated 21 Aug 2025). Source: [arXiv 2508.15734, 2025-08-21](https://arxiv.org/abs/2508.15734)
   - [INDEPENDENT: SemiAnalysis] Throughput per provisioned MW is software-dependent: B200 rose from about 300k to about 500k tok/s per MW at 50 tok/s/user in about six weeks (April to June 2026). Source: [InferenceX, 2026-06-09](https://inferencex.semianalysis.com/blog/deepseekv4-16t-day-0-to-day-43-performance)
   - [CUSTOMER: Meta] On 16,384 H100s there was one unexpected interruption about every 3 hours (419 in 54 days); GPUs and HBM3 together accounted for 47.3%. Source: [arXiv 2407.21783](https://arxiv.org/pdf/2407.21783)
   - [COMPANY-AUTHORED: Google] TPU v4: 99.98% availability; about 1% of jobs affected by hardware outages. Source: [NSDI '24](https://www.usenix.org/conference/nsdi24/presentation/zu)
@@ -604,7 +604,7 @@ Most 2026 technical disclosures were presented by the vendors themselves. At Hot
 
 ### Inferences
 - A 14-reticle CoWoS package (2028) would be roughly 12,000 mm² of interposer if one reticle is about 858 mm². That is still about a quarter of a ~46,000 mm² wafer-scale die. Both the 858 mm² and the WSE area are commonly cited figures that I did not re-source here (see Gaps).
-- The Llama 3 interruption rate (419 in 54 days, about 7.8 per day) implies about 0.00048 unexpected interruptions per GPU per day. This is my arithmetic.
+- The Llama 3 interruption rate (419 in 54 days, about 7.8 per day) implies about 0.00047 unexpected interruptions per GPU per day. This is my arithmetic.
 
 ### Gaps
 - Not re-sourced in this pass: the reticle field of 26 × 33 mm ≈ 858 mm²; Cerebras WSE-3 die area and transistor count.
@@ -674,10 +674,10 @@ Ten items are recorded below, numbered C1 to C10.
 - **C6. NVIDIA rack-scale (NVL72) advantage versus InferenceX.** SemiAnalysis found GB200 NVL72 has "nearly no advantage" at about 130 tok/s/user and costs more per million tokens (February 2026). It found B200 and B300 beat GB200 and GB300 on TCO-normalized throughput for MiniMax M3 (August 2026). Sources: [InferenceX v2](https://inferencex.semianalysis.com/blog/inferencex-v2-nvidia-blackwell-vs-amd-vs-hopper); [AgentX](https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat). In the other direction, InferenceX measured Blackwell gains of up to about 98–100x over an H100 baseline in one configuration, more than NVIDIA's GTC 2024 "up to 30x" claim. Separately, NVIDIA's Hot Chips 2026 claim of Vera Rubin NVL72 at "up to 30X" GB300 at high interactivity ([Semiconductor Engineering](https://semiengineering.com/can-gpus-continue-to-dominate-ai-compute/)) compares with 2.5–3.7x in NVIDIA's own MLPerf v6.1 preview entries ([StorageReview](https://www.storagereview.com/news/mlperf-inference-v6-1-5-7x-per-accelerator-gains-a-512-gpu-run-and-vera-rubins-first-peer-reviewed-numbers)) and 1.8–2.0x tokens per $ of TCO on InferenceX at 100 tok/s/user ([UNOPENED]). These are different metrics and operating points, not like-for-like.
 - **C7. Cerebras speed multiples versus independent per-token measurements.** Cerebras (19 Sep 2025) claimed "~21x faster" than DGX B200 (end-to-end Llama 3 70B reasoning, "recalculated by Cerebras" from SemiAnalysis data) and 2,700+ against 900 tok/s on gpt-oss-120B citing AA ([Cerebras](https://www.cerebras.ai/blog/cerebras-cs-3-vs-nvidia-dgx-b200-blackwell)). AA-relayed figures for June 2026 show Cerebras at about 1,705–1,753 tok/s on gpt-oss-120B, about 2.4x the next-fastest API ([Fast.io](https://fast.io/resources/fastest-ai-2026/), [UNOPENED]). IEEE Spectrum (4 Jun 2025) called AA-based comparisons not apples-to-apples ([IEEE Spectrum](https://spectrum.ieee.org/nvidia-blackwell-mlperf-training-5)). The 21x figure is not reproduced by any independent per-token measurement found; it uses a different metric.
 - **C8. Claims not independently tested.**
-  - Google: TPU 8t/8i at "about 2x prior TPUs" (Hot Chips 2026), with Ironwood never submitted to MLPerf (Tae Kim, 2026-04-01).
-  - AWS: Trainium price-performance claims, with no MLPerf or InferenceX data through August 2026 ([InferenceX v2](https://inferencex.semianalysis.com/blog/inferencex-v2-nvidia-blackwell-vs-amd-vs-hopper); [AgentX](https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat)).
+  - Google: TPU 8t/8i at "about 2x prior TPUs" (Hot Chips 2026). Ironwood was not submitted to MLPerf Inference v6.0 ([Tae Kim, 2026-04-01](https://taekim.substack.com/p/nvidia-wins-mlperf-ai-inference-benchmarks)). The only independent Ironwood data point found is a later InferenceX result I did not open: TPU v7 FP8 at 1.85–2.17x the tokens per $ of GB300 NVL72 FP8 on Qwen3.5-397B at 200 tok/s/user, with GB300 NVL72 FP4 leading at every matched point.
+  - AWS [CHIP-CO, via secondary] [UNOPENED]: AWS says Trainium offers 30–40% better price-performance than GPU-based EC2 P5e/P5en ([Introl blog relaying the AWS claim](https://introl.com/blog/ai-accelerators-beyond-gpus-tpu-trainium-gaudi-cerebras)). There is no MLPerf or InferenceX Trainium data through August 2026 ([InferenceX v2](https://inferencex.semianalysis.com/blog/inferencex-v2-nvidia-blackwell-vs-amd-vs-hopper); [AgentX](https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat)).
   - Cerebras: CS-4 "up to 10x throughput/W" (Hot Chips 2026).
-  - None of these is contradicted; all are unverified by independent measurement as of 14 Nov 2026.
+  - None of these is contradicted; except for the unopened Ironwood result, all are unverified by independent measurement as of 14 Nov 2026.
 - **C9. Huawei HBM self-sufficiency versus reported foreign dependence.**
   - Huawei side: Huawei presents the 950 series with self-developed HBM (HiBL 1.0) ([TrendForce, 2026-03-23](https://www.trendforce.com/news/?p=54956)).
   - Other side: The Information (via TrendForce, 3 Nov 2026) reports that Huawei's next chip will rely heavily on Samsung and SK hynix HBM and that customers are being asked to source memory, alongside smuggling ([TrendForce](https://www.trendforce.com/news/?p=66148)). Epoch AI (24 Sep 2026) estimates the 2025 gap was filled by more than 10M foreign stockpiled stacks ([Epoch AI](https://epochai.substack.com/p/how-far-behind-nvidia-is-huawei)).
