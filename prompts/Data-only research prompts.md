@@ -1,6 +1,6 @@
 # Data-only research prompts
 
-Eight short prompts with seven or eight companies each. All share one body; only the sector and the companies change.
+Eight short prompts with seven to ten companies each. All share one body; only the sector and the companies change.
 
 ## 1. AI processors
 
@@ -52,7 +52,7 @@ No rankings, recommendations or investment opinions. Give a date and a source fo
 
 ## 5. System-level hardware: stacking
 
-Deep research, data and information only. Sector: chip stacking and advanced packaging. Companies: TSMC (advanced-packaging business); SK hynix; Samsung Electronics (memory and packaging); Micron; BE Semiconductor; Hanmi Semiconductor; ASE Technology; FormFactor.
+Deep research, data and information only. Sector: chip stacking and advanced packaging. Companies: TSMC (advanced-packaging business); SK hynix; Samsung Electronics (memory and packaging); Micron; BE Semiconductor; Hanmi Semiconductor; Disco; ASE Technology; FormFactor; Advantest.
 
 For each company, or for the relevant division where the business sits inside a larger group, gather the facts: what it makes and at what stage, technology and roadmap with dates, which past milestones were met or missed, revenue, margins, cash, debt and funding, customers and contracts, capacity, ownership and key people, legal and regulatory matters.
 
