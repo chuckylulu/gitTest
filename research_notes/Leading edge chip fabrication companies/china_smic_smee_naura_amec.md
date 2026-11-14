@@ -341,80 +341,80 @@ The US rules of October 2022, October 2023 and December 2024 are all in force. T
 ## 7. "China is closing the gap" versus "China is stuck without EUV"
 
 ### Takeaway
-Both statements are supported, on different axes. Independent teardowns show SMIC still shrinking without EUV (N+3 density above TSMC's 2020-vintage N6), and domestic tool share is rising fast. But each further step costs more and yields less, the measured gap to TSMC's current nodes is about a factor of two in density, lithography is under 1% localised, and the best outside estimates put Huawei's AI-chip output at a few percent of Nvidia's through 2028.
+Both statements are supported, on different axes. Independent teardowns show SMIC still shrinking without EUV (N+3 density above TSMC's 2020-vintage N6) and domestic tool share is rising fast. But each further step costs more and yields less, the measured density gap to TSMC's current node is about a factor of two, lithography is under 1% localised, and the best outside estimates put Huawei's AI-chip output at a few percent of Nvidia's through 2028.
 
 ### Cited Findings
 
-**Evidence for "closing the gap"**
-- Two independent labs confirm node progress without EUV: N+2 in 2023, N+3 in a phone on sale in December 2025; N+3 logic density (113.4 MTr/mm²) exceeds TSMC N6 and its tightest metal pitch (32.5nm) is finer than the 36nm of Intel's shipped 18A product [CONFIRMED] — [TechInsights](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown)
-- Scale and demand: record SMIC revenue, 97.3% utilisation and AI-related demand that management says exceeds supply [FILING/COMPANY CLAIM] — [TrendForce](https://www.trendforce.com/news/2026/11/13/news-smic-sees-capacity-tightness-through-2027-possibly-into-2h28-equipment-lead-times-stretch-to-16-24-months/)
-- Tools: domestic share of installed tools up from 25% to 35% in a year, etch and deposition above 40% [ESTIMATE] — [TrendForce](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/)
-- Lithography: a domestic 28nm immersion tool reported in low-volume production (Reuters, Jul 2026) and an EUV prototype generating light (Reuters, Dec 2025) [PRESS] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [EE Times](https://www.eetimes.com/china-euv-breakthrough-and-the-rise-of-the-silicon-curtain/)
-- AI chips: Ascend 950 on SMIC N+3 from 2026 with about 1.5m units modelled for the year; Huawei's roadmap runs to stacked logic in 2030 [ESTIMATE/COMPANY CLAIM] — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
-- Tool stock: over 330 ASML immersion systems at Chinese-owned fabs; if imports continue at the 2024–25 pace and the fleet is turned to AI chips, China "could erase much of the US advantage" [ESTIMATE] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/). An April 2026 AEI report makes the same argument about the NXT:1980i "loophole" [ESTIMATE, via a blog summary] — [abhs.in](https://www.abhs.in/blog/china-duv-lithography-loophole-smic-huawei-near-frontier-chips-aei-april-2026)
+**Strongest evidence for "closing the gap"**
+- Two independent labs confirm node progress without EUV: N+2 in 2023, N+3 in a phone on sale in December 2025; N+3 logic density (113.4 MTr/mm²) exceeds TSMC N6, and its tightest metal pitch (32.5nm) is finer than the 36nm of Intel's shipped 18A product [CONFIRMED] — [TechInsights](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown)
+- Record SMIC revenue at 97.3% utilisation, with AI-related demand said to exceed supply [FILING/COMPANY CLAIM] — [TrendForce](https://www.trendforce.com/news/2026/11/13/news-smic-sees-capacity-tightness-through-2027-possibly-into-2h28-equipment-lead-times-stretch-to-16-24-months/)
+- Domestic share of installed tools up from 25% to 35% in one year [ESTIMATE] — [TrendForce](https://www.trendforce.com/news/2026/01/12/news-chinas-domestic-chip-equipment-adoption-beats-2025-target-at-35-led-by-naura-amec/)
+- A domestic 28nm immersion tool in low-volume production (Reuters, Jul 2026) and an EUV prototype generating light (Reuters, Dec 2025) [PRESS] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [EE Times](https://www.eetimes.com/china-euv-breakthrough-and-the-rise-of-the-silicon-curtain/)
+- Ascend 950 on SMIC N+3 from 2026, about 1.5m Ascend units modelled for the year, and a Huawei roadmap to stacked logic in 2030 [ESTIMATE/COMPANY CLAIM] — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- More than 330 ASML immersion systems already at Chinese-owned fabs; if imports continue at the 2024–25 pace and the fleet is turned to AI chips, China "could erase much of the US advantage" [ESTIMATE] — [Center for Technology & Statecraft](https://techstatecraft.org/duv/). An April 2026 AEI report argues likewise [ESTIMATE, via a blog summary] — [abhs.in](https://www.abhs.in/blog/china-duv-lithography-loophole-smic-huawei-near-frontier-chips-aei-april-2026)
 
-**Evidence for "stuck without EUV"**
-- N+3 is "significantly less scaled" than 5nm; its density is about half that of TSMC N3P; the chip performs like three-year-old Android flagships [CONFIRMED] — [TechInsights](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown); [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
-- Diminishing returns: N+4 is expected to add about 20% density; N+5 is "unlikely" to be cost-competitive; no denser-than-5nm-equivalent process before the end of the decade [ESTIMATE] — [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown); [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+**Strongest evidence for "stuck without EUV"**
+- N+3 is "significantly less scaled" than 5nm, about half the density of TSMC N3P, and the chip performs like three-year-old Android flagships [CONFIRMED] — [TechInsights](https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm); [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown); [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- Diminishing returns: N+4 adds about 20% density, N+5 is "unlikely" to be cost-competitive, and nothing denser than a 5nm-equivalent is expected this decade [ESTIMATE] — [SemiAnalysis](https://newsletter.semianalysis.com/p/steel-smic-n3-teardown); [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
 - Yield and cost: 20–40% on large AI dies, N+3 at or below 20% in pilot, 7nm wafers 40–50% dearer than TSMC's [ESTIMATE/PRESS] — [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs); [EE Times](https://www.eetimes.com/china-euv-breakthrough-and-the-rise-of-the-silicon-curtain/)
-- AI output: the Ascend 910C teardown found TSMC dies and Korean memory; Huawei's 2026 compute is put at under 4% of Nvidia's and about 1.5% in 2028 on domestic memory alone; another study puts the US advantage in AI computing power at about 50 times [ESTIMATE] — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031); [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
-- Lithography: under 1% localised; no SMEE immersion tool confirmed in production; a commercially viable 7nm-capable domestic immersion tool not expected before the mid-2030s; the EUV prototype has made no chips [ESTIMATE/PRESS] — [EEFocus](https://global.eefocus.com/article/2026-semiconductor-equipment-review-domestic-equipment-tiers-and-gaps-behind-numerous-domestic-firsts.html); [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [Power Electronics News](https://www.powerelectronicsnews.com/taking-stock-of-chinas-euv-lithography-efforts/)
-- Supply chain: tool localisation under 15% at 14nm and below; parts under 8%; SMIC's own tool deliveries slipping 16–24 months [ESTIMATE/COMPANY CLAIM] — [Jiwei via Tencent News](https://news.qq.com/rain/a/20260916A09VKF00); [TrendForce](https://www.trendforce.com/news/2026/11/13/news-smic-sees-capacity-tightness-through-2027-possibly-into-2h28-equipment-lead-times-stretch-to-16-24-months/)
+- The Ascend 910C teardown found TSMC dies and Korean memory; Huawei's 2026 compute is put under 4% of Nvidia's and about 1.5% in 2028 on domestic memory alone; another study puts the US lead in AI computing power at about 50 times [ESTIMATE] — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031); [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
+- Lithography under 1% localised; no SMEE immersion tool confirmed in production; a commercially viable 7nm-capable domestic immersion tool not expected before the mid-2030s; the EUV prototype has made no chips [ESTIMATE/PRESS] — [EEFocus](https://global.eefocus.com/article/2026-semiconductor-equipment-review-domestic-equipment-tiers-and-gaps-behind-numerous-domestic-firsts.html); [Center for Technology & Statecraft](https://techstatecraft.org/duv/); [Power Electronics News](https://www.powerelectronicsnews.com/taking-stock-of-chinas-euv-lithography-efforts/)
+- Tool localisation under 15% at 14nm and below, parts under 8%, and SMIC's own tool deliveries slipping 16–24 months [ESTIMATE/COMPANY CLAIM] — [Jiwei via Tencent News](https://news.qq.com/rain/a/20260916A09VKF00); [TrendForce](https://www.trendforce.com/news/2026/11/13/news-smic-sees-capacity-tightness-through-2027-possibly-into-2h28-equipment-lead-times-stretch-to-16-24-months/)
 
 **Observable events in 2027–2029 that would settle it** (researcher's list, built from the sources' own milestones)
 - A teardown showing N+4-class density (about 138 MTr/mm²) in a shipping Huawei chip — the Ascend 970, due late 2028, is expected on N+4 — or its absence — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
-- Ascend 960 (late 2027) and 970 (late 2028) shipping at announced specifications on domestic memory, and CXMT's HBM wafer starts reaching the modelled 55,000 (2027) and 100,000 (2028) a month — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
-- First working chips attributed to the Chinese EUV prototype: official target 2028, sources' expectation 2030 — [Power Electronics News](https://www.powerelectronicsnews.com/taking-stock-of-chinas-euv-lithography-efforts/)
-- Domestic immersion tools counted on SMIC production lines in 2027 (planned), and unit shipments (5 a year rising to 20 claimed for one maker) — [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
+- Ascend 960 (late 2027) and 970 (late 2028) shipping at announced specifications on domestic memory; CXMT HBM wafer starts reaching the modelled 55,000 (2027) and 100,000 (2028) a month — [Epoch AI](https://epoch.ai/publications/huaweis-roadmap-to-2031)
+- First working chips from the Chinese EUV prototype: official target 2028, sources' expectation 2030 — [Power Electronics News](https://www.powerelectronicsnews.com/taking-stock-of-chinas-euv-lithography-efforts/)
+- Domestic immersion tools counted on SMIC production lines in 2027, and unit shipments (5 a year rising to 20 claimed for one maker) — [Center for Technology & Statecraft](https://techstatecraft.org/duv/)
 - Whether the MATCH Act or matching Dutch and Japanese servicing limits become law, and what then happens to SMIC's utilisation and capex — [Yeandel](https://www.yeandel.co.uk/22-q3-2026-updates/match-act-clock-not-started.html)
-- China's share of foreign toolmakers' revenue against Chinese fab capex: KLA guides to low-20s% in 2027 — [KLA call](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/)
+- China's share of foreign toolmakers' revenue (KLA guides to low-20s% in 2027) set against Chinese fab capex — [KLA call](https://www.fool.com/earnings/call-transcripts/2026/10/29/kla-klac-q1-2027-earnings-call-transcript/)
 - SMIC's gross margin against depreciation growing about 30% a year, and any separate disclosure of FinFET revenue — [call transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-smic-tops-revenue-forecast-in-q3-2026-on-ai-demand-93CH-5023901)
 - Whether Hua Hong's 7nm-class line reaches its reported end-2026 target — [Semisino](https://www.semisino.com/articles/huawei-shadow-fabs)
 
 ### Inferences
-- (Researcher's reading) "Closing the gap" is best supported for volume and breadth at 7nm-class and above; "stuck" is best supported for density beyond roughly 5nm-equivalent and for the cost of each wafer. The two are compatible.
-- Almost all volume, yield and cost numbers come from a small set of analysts repeated across outlets; they should be treated as one or two observations, not many.
+- (Researcher's reading) "Closing the gap" is best supported for volume and breadth at 7nm-class and above; "stuck" is best supported for density beyond roughly 5nm-equivalent and for cost per wafer. The two are compatible.
+- Almost all volume, yield and cost numbers come from a few analysts repeated across outlets; treat them as one or two observations, not many.
 
 ### Gaps
-- TechInsights' and SemiAnalysis' quantitative yield and cost findings are behind paywalls. No 2026 teardown of an Ascend 950 was found.
+- TechInsights' and SemiAnalysis' quantitative yield and cost findings are paywalled. No 2026 teardown of an Ascend 950 was found.
 
 ---
 
 ## 8. What could not be verified, and figures on which sources conflict
 
 **Could not verify**
-1. SMIC's global foundry share and rank for 2026 (no TrendForce or Counterpoint figure retrieved).
+1. SMIC's global foundry share and rank for 2026.
 2. SMIC FY2025 government funding, depreciation and customer concentration; Huawei's share of SMIC revenue.
-3. Terms of the capital increase at SMIC's FinFET subsidiary (SMIC South). Researcher's unverified recollection: a roughly US$7.8bn increase with third-Big-Fund vehicles was announced with the SMNC deal in late December 2025.
-4. Year-end 2025 closes and 2026 year-to-date moves for SMIC A-shares and AMEC; AMEC's share count changed in 2026 (957.84m now against registered capital of 626.1m shown in an undated company-registry snippet), so unadjusted earlier prices such as RMB 305.61 (27 Mar 2026) are not comparable.
+3. Terms of the capital increase at SMIC's FinFET subsidiary (SMIC South). Researcher's unverified recollection: about US$7.8bn, with third-Big-Fund vehicles, announced alongside the SMNC deal in late December 2025.
+4. Year-end 2025 closes and 2026 year-to-date moves for SMIC A-shares and AMEC. AMEC's share count changed in 2026 (957.84m now; an undated registry snippet shows registered capital of 626.1m), so earlier quotes such as RMB 305.61 (27 Mar 2026) are not comparable.
 5. Short-selling in practice: Hong Kong short interest and borrow cost for 0981; whether Naura, AMEC or SMIC A-shares can be borrowed. Researcher's unverified background: mainland securities lending has been tightly restricted since mid-2024 and foreign investors cannot practically short through Stock Connect.
-6. Naura: subsidy income, top-five customers, overseas revenue; whether Naura, AMEC, SMEE, YMTC or CXMT changed status in the 8 Jun 2026 Pentagon list update (one secondary source says CXMT was re-added).
-7. AMEC's 9M 2026 operating cash flow (−RMB 0.105bn) comes from a search-engine summary, not a page read directly.
-8. SMEE: financials, current owners, the AMIES spin-off, any customer confirmation of the 28nm immersion tool; the self-media pages making these claims have been deleted.
-9. SiCarrier: whether the US$2.8bn round closed; any 2026 listing filing.
-10. The Reuters article of 16 Mar 2026 whose web address reads "China's No. 2 chipmaker readies 7-nm production": a think-tank paper cites it for "weak" SMIC 7nm yields, but the address suggests its subject is another chipmaker; the article was not read.
+6. Naura's subsidy income, top-five customers and overseas revenue; whether Naura, AMEC, SMEE, YMTC or CXMT changed status in the 8 Jun 2026 Pentagon list update (one secondary source says CXMT was re-added).
+7. AMEC's 9M 2026 operating cash flow (−RMB 0.105bn): taken from a search-engine summary, not a page read directly.
+8. SMEE's financials, current owners, the AMIES spin-off and any customer confirmation of the 28nm immersion tool; the self-media pages making these claims have been deleted.
+9. Whether SiCarrier's US$2.8bn round closed; any 2026 listing filing.
+10. The Reuters article of 16 Mar 2026 whose web address reads "China's No. 2 chipmaker readies 7-nm production": a think-tank paper cites it for "weak" SMIC 7nm yields, but the address suggests another chipmaker is the subject; not read.
 11. Japan: a social-media claim that controls on advanced-packaging tools took effect on 1 Aug 2026; the content of the October 2026 draft.
-12. China: status of the December 2024 ban on gallium, germanium and antimony exports to the US (its suspension was due to end 27 Nov 2026 by the researcher's recollection); the exact wording of 2025 Announcement No. 61 on chip-related end uses.
-13. The outcome of the Xi–Trump meeting at APEC; any BIS tool rule in 2026 beyond those listed.
-14. Why the sector fell from August highs to early-November lows (Naura −38%, SMIC H to HK$42.62). A headline seen beside one article referred to a fall in Nvidia's market value after a reported resignation of its chief executive; this was not checked and is not used.
-15. One-day share-price reactions of Naura and AMEC to their Q3 reports.
+12. China: the status of the December 2024 ban on gallium, germanium and antimony exports to the US (by the researcher's recollection its suspension was due to end 27 Nov 2026); the wording of 2025 Announcement No. 61 on chip-related end uses; investigations of foreign chip firms in 2026.
+13. The outcome of the Xi–Trump meeting at APEC; any BIS tool rule in 2026 beyond those listed; Federal Register page citations for the November 2025 suspension and November 2026 extension.
+14. Why the sector fell from August highs to early-November lows (Naura −38%; SMIC H to HK$42.62). A headline seen beside one article referred to a fall in Nvidia's market value after a reported resignation of its chief executive; it was not checked and is not used.
+15. One-day share-price reactions of Naura and AMEC to their Q3 reports; the date of SMIC H's 52-week high.
 
 **Figures on which sources conflict**
-1. SMIC 2025 capex: "about US$8.1bn" (press on the plan) against US$8.40bn cash spend (annual-report summary).
-2. SMIC Q4 2025 "net profit US$203m, −24.9%" (Caixin) appears to be profit including minorities; full-year attributable profit was US$685m.
-3. SMIC attributable profit Q3 2026: US$428.4m under IFRS; RMB 2.847bn under China GAAP (IFRS-equivalent RMB 2.91bn).
+1. SMIC 2025 capex: "about US$8.1bn" (press) against US$8.40bn cash spend (annual-report summary).
+2. SMIC Q4 2025 "net profit US$203m, −24.9%" (Caixin) appears to include minorities; full-year attributable profit was US$685m.
+3. SMIC Q3 2026 attributable profit: US$428.4m under IFRS; RMB 2.847bn under China GAAP (IFRS-equivalent RMB 2.91bn).
 4. SMIC market value: HK$622.7bn (data site, blended), about HK$415bn (H price × all shares), RMB 946–957bn (A price × all shares).
-5. SMIC H-share trailing P/E: 41x (data site, 13 Nov) against "127–129x" quoted by a news site in October 2026 at HK$56–58 and 115x for 2025 earnings.
-6. SMIC N+3 status: "pilot, yields at or below 20%" (TD Cowen via press), "30–40%" (other estimates), "in mass production" (Epoch, TechPowerUp via Semisino).
-7. Huawei AI-chip output for 2026: about 1.5m Ascend units (Epoch, WSJ); 600,000 Ascend 910C within 1.6m dies (Bloomberg); 62,000–160,000 Nvidia B300-equivalents (Institute for Progress via CTS). Epoch's own text gives both "more than 10 million" and "13 million" stockpiled HBM stacks.
+5. SMIC H-share trailing P/E: 41x (data site, 13 Nov) against "127–129x" on a news site in October 2026 at HK$56–58, and 115x on 2025 earnings.
+6. SMIC N+3 status: "pilot, yields at or below 20%" (TD Cowen via press), "30–40%" (other estimates), "in mass production" (Epoch; TechPowerUp via Semisino).
+7. Huawei AI-chip output for 2026: about 1.5m Ascend units (Epoch, WSJ); 600,000 Ascend 910C within 1.6m dies (Bloomberg); 62,000–160,000 Nvidia-B300-equivalents (Institute for Progress via CTS). Epoch gives both "more than 10 million" and "13 million" stockpiled HBM stacks.
 8. Localisation: 23% (new purchases), 35% (installed base), 55% (tenders); lithography under 1% against 18%; etch 23% (tender count), over 40% (association), 55–65% (broker); metrology under 10% against 25%.
-9. SMEE's 28nm immersion tool: "in full mass production" (social media), "10nm-capable, mass-produced and sold" (Korean press), "not yet in production" (Chinese trade press, Sept 2026). Wikipedia calls the SSA600 an immersion tool; other sources describe it as dry ArF.
+9. SMEE's 28nm immersion tool: "in full mass production" (social media), "10nm-capable, mass-produced and sold" (Korean press), "not yet in production" (Chinese trade press, Sept 2026). Wikipedia calls the SSA600 an immersion tool; other sources call it dry ArF.
 10. SiCarrier valuation: RMB 65bn, RMB 80bn (about US$11bn) or "nearly RMB 100bn"; round "sought" against "raised".
-11. Naura's October 2026 acquisition price: RMB 405m (broker note, 4.05亿元) against "RMB 4.05bn" in one summary; the lower figure fits the target's size.
-12. AMEC chambers in production: over 8,800 (trade press) against over 9,300 (company, end-Sept 2026). AMEC's buyback cap of RMB 433.04 sits far above the RMB 246 share price.
-13. MATCH Act committee vote: 36–8 (Congress.gov as summarised, Timewell) against 44–0 (Yeandel).
+11. Naura's October 2026 acquisition price: RMB 405m (broker note) against "RMB 4.05bn" in one summary; the lower figure fits the target's size.
+12. AMEC chambers in production: over 8,800 (trade press) against over 9,300 (company, end-Sept 2026). AMEC's buyback cap of RMB 433.04 is far above its RMB 246 share price.
+13. MATCH Act committee vote: 36–8 (Congress.gov as summarised; Timewell) against 44–0 (Yeandel).
 14. Affiliates Rule extension announced 5 Nov 2026 (Thompson Hine) or 6 Nov (Clifford Chance); the original rule is dated 29 Sep 2025 (effective) and 30 Sep 2025 (published).
 15. China's rare-earth pause: one outlet reported on 9 Nov 2026 that no extension had been published; Announcement No. 58 of the same day extends it.
-16. Dutch control on NXT:2000i-class tools: in force from 1 Sep 2023 (Dutch government) against "1 January 2024" (consultancy column).
+16. Dutch control on NXT:2000i-class tools: from 1 Sep 2023 (Dutch government) against "1 January 2024" (consultancy column).
 17. ASML's China share: 23% of Q3 net system sales against about 20% of full-year total net sales (different bases). Applied Materials: 28% (July quarter) against 25% (October quarter).
-18. AMEC valuation: 46.7x trailing reported earnings against about 103x on earnings before non-recurring items; forward P/E 58.5x (data site) against 47x (Everbright 2026 forecast).
+18. AMEC valuation: 46.7x trailing reported earnings against about 103x before non-recurring items; forward P/E 58.5x (data site) against 47x (Everbright 2026 forecast).
