@@ -425,7 +425,7 @@ Most contradictions come from definitions and moving baselines rather than outri
    - Independent: Wood Mackenzie projects a 15% US power-transformer shortage in 2026 (via [GreentechLead](https://greentechlead.com/power/transformer-orders-in-2026-ge-vernova-hitachi-energy-and-hd-hyundai-electric-capture-power-demand-55939)).
 9. **AI load "spikes" versus NERC's evidence.**
    - Claim: Schierenbeck said AI loads peak "in seconds" at "up to 10 times" normal use (July 2025, [SL Guardian](https://slguardian.org/governments-must-curb-ais-power-spikes-to-protect-grid-stability-warns-hitachi-energy/)).
-   - Evidence: NERC's documented events are simultaneous *disconnections* of up to about 1,800 MW triggered by UPS and ride-through settings ([Tech Times/NERC SOR 2026 (4 Jul 2026)](https://www.techtimes.com/articles/319695/20260704/ai-data-centers-triggered-1800-mw-grid-drop-nerc-issues-highest-alert.htm); [NERC alert (4 May 2026)](https://www.nerc.com/globalassets/programs/bpsa/alerts/level-3-computational-load-alert.pdf)).
+   - Evidence: NERC's documented events are simultaneous customer-initiated *load reductions* of up to 1,800 MW after transmission faults ([NERC 2026 State of Reliability (24 Jun 2026)](https://www.nerc.com/globalassets/programs/rapa/pa/nerc_sor_2026_overview.pdf)). NERC is addressing them through UPS-setting, modelling and ride-through requirements ([NERC alert (4 May 2026)](https://www.nerc.com/globalassets/programs/bpsa/alerts/level-3-computational-load-alert.pdf)).
    - This supports "data centres pose grid-stability risk", but no independent figure for "10x in seconds" was found.
 10. **OpenAI deal characterisation.**
     - Some coverage (Dow Jones citing WSJ) described Hitachi *providing* T&D equipment to OpenAI data centres.
@@ -467,7 +467,7 @@ The main unverified areas are named hyperscaler contracts, product-level lead ti
 
 ### Cited Findings
 - **Process limits:**
-  - The shared web-search quota was exhausted partway through, so later work used only direct fetches of URLs already identified.
+  - The shared web-search quota was exhausted partway through. The fallback tools the coordinator suggested were also unavailable: Exa search and fetch returned HTTP 402 (credits exceeded), and Consensus returned its monthly usage limit (resets 1 Dec 2026). Later work therefore used only direct fetches of URLs already identified and Hitachi and NERC primary PDFs. Items marked "search-result summary" were not opened and should be treated as unverified.
   - www.nrel.gov did not resolve from this session (it would need allowlisting in the session's network settings).
   - EUR-Lex returned only a generic shell page.
   - nationalgrid.com, datacenterdynamics.com and tokyobrief.com returned HTTP 403.
