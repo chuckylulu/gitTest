@@ -149,7 +149,7 @@ Facts that cut against a short: demand "much higher than supply" with no custome
 - Because estimates rose while the price halved, the share price now embeds a judgement about durability of 2027–28 earnings rather than about their level; the evidence in this file cannot settle that.
 
 ### Gaps
-- Share by process step is known here only as ranks and multiples of the nearest competitor that Applied reproduces from TechInsights; no percentages, and nothing that establishes sole- or dual-supplier status for any leading-edge step. Etch is the one large category where the deck claims no #1 position.
+- Share by process step is known here only as ranks and multiples of the nearest competitor that Applied reproduces from TechInsights; no percentages, and nothing that establishes sole- or dual-supplier status for any leading-edge step. In etch the deck claims leadership only in conductor etch for advanced foundry-logic and DRAM, not a #1 rank overall.
 - The investor deck was read through an automated extraction; a few extracted items were internally inconsistent (segment revenue history) and were left out. It gives per-node figures, not a separate figure for backside power delivery.
 - FY2026 customer names and percentages await the 10-K due in December 2026; the Besi purchase price and Applied's other strategic holdings were not found.
 
