@@ -533,7 +533,10 @@ On-site generation faces state-level air-permit fights (xAI in Mississippi and T
 
 **Federal policy and trade**
 - President Trump, State of the Union (24 February 2026), announced a "ratepayer protection pledge": "So I'm telling them they can build their own plant, they're going to produce their own electricity." There were no enforcement details. Source: [Power Engineering (25 Feb 2026)](https://www.power-eng.com/onsite-power/trump-urges-tech-companies-to-build-their-own-power-plants-for-data-centers/) [independent].
-- Section 232 tariffs on transformers and GOES are covered in Section 4: 50% on steel and aluminium content from 18 August 2025, and the April 2026 Proclamation 11021 restructuring with GOES at 50%. Sources: [TED Magazine](https://tedmag.com/trump-administration-increases-tariffs-on-certain-transformers/); [White House Annexes (Apr 2026)](https://www.whitehouse.gov/wp-content/uploads/2026/04/ANNEXES-I-A-I-B-II-III-IV.pdf) [independent].
+- Section 232 tariffs on transformers and GOES (details in Section 4):
+  - From 18 August 2025: 50% on the steel and aluminium content of transformers.
+  - From 7 April 2026 (April 2026 restructuring), on full value: GOES (headings 7225 and 7226) at 50%; transformers up to 10 MVA, transformer cores and some switchgear parts at 25%; transformers above 10 MVA (8504.23) and dry-type above 500 kVA (8504.34) on a temporary reduction list until 31 December 2027.
+  - Sources: [TED Magazine](https://tedmag.com/trump-administration-increases-tariffs-on-certain-transformers/); [White House Annexes (Apr 2026)](https://www.whitehouse.gov/wp-content/uploads/2026/04/ANNEXES-I-A-I-B-II-III-IV.pdf) [independent – government].
 - DOE Section 202(c) emergency orders kept 8 plants in 7 states (5,349 MW) running. The Sierra Club estimates more than $235m in ratepayer costs for the first 13 orders. Source: [Open Factory (rev. 11 Oct 2026)](https://open-factory.com/articles/behind-meter-90gw/) [independent; secondary]. Unverified.
 
 ### Inferences
@@ -698,7 +701,13 @@ The main gaps are paywalled market data (McCoy, Dora and GlobalData shares; Wood
   - Open Factory says Georgia EPD (2 July 2026) found VoltaGrid had installed 8 of 33 engines and "said construction must pause" ([Open Factory](https://open-factory.com/articles/behind-meter-90gw/)) [secondary].
   - Atlanta News First (2 July 2026) reports 7 of 33 engines, per the SELC's 19 June aerial images. It also reports that EPD had **not** confirmed an investigation and that no pause directive had been reported ([ANF](https://www.atlantanewsfirst.com/2026/07/02/advocacy-groups-say-covington-data-center-power-plant-are-building-without-proper-permits/)) [independent].
   - The Open Factory claim is therefore unverified or contradicted.
-- **Section 232 transformer rate conflict:** a 15% "transitional" rate vs a 25% rate with Korean and Indian exemptions. Both appear only in secondary sources ([DistroForge](https://distroforge.com/blog/section-232-tariff-grid-equipment-procurement-impact/); [MegaGrid Supply](https://megagridsupply.com/insights/tariff-shock-transformers-2026)) and neither was verified in the Federal Register.
+- **Section 232 transformer rate conflict (partly resolved).** Reading the [White House annexes (Apr 2026)](https://www.whitehouse.gov/wp-content/uploads/2026/04/ANNEXES-I-A-I-B-II-III-IV.pdf) directly:
+  - Transformers above 10 MVA (8504.23) are on the Annex III temporary-reduction list until 31 December 2027.
+  - Transformers up to 10 MVA and transformer cores are on the 25% full-value list.
+  - GOES headings 7225 and 7226 are on the 50% list.
+  - Still unverified: the exact reduced rate (clause (5) of the Proclamation, reported as 15%) and any country exemptions.
+- FERC's page of Commissioner Rosner's remarks on the 18 June 2026 orders returned HTTP 403 ([FERC](https://www.ferc.gov/news-events/news/commissioner-rosners-remarks-large-load-show-cause-orders-e-7-e-12-june-18-2026)).
+- **Search tools not used after the budget ran out.** The coordinator suggested Exa and Consensus as fallbacks. The WebSearch limit notice told me to stop searching and not work around the limit, so I made no further searches with any tool. After that point I only read primary URLs I already had: ERCOT, the White House annexes and FERC. Every gap listed below could be filled by a follow-up search session.
 - **The 2025 global gas-turbine order total varies by source:** 96 GW (MHI), 100.3 GW (EPRI), more than 100 GW (S&P/McCoy) and 110 GW (Wood Mackenzie). US totals range from 40 to 51 GW. Sources as cited in Section 2.
 
 ### Inferences
