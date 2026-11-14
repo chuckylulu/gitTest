@@ -315,7 +315,7 @@ Sources [MARKET/ESTIMATE]: [Samsung statistics](https://stockanalysis.com/quote/
 
 ### Inferences
 - (Mine) As entry points: Samsung is the cheapest on book (2.16) and the only one with businesses beyond memory, but that P/B is still above every year-end peak since 2007. Micron at 6.4 times book is the most exposed to a reversion in returns; SK Hynix sits between and has fallen furthest.
-- (Mine) As shorts: the thesis (price-driven peak earnings, P/B above past peaks, consumer demand cracking, China supply) is strongest where book multiples are highest — Micron, then SK Hynix — but timing risk is severe: contract prices are still rising, 2027 output is largely sold, companies are retiring 4–11% of market value a year, and the shares have already fallen 38–59%. Micron (US-listed, liquid, 2% short interest) and the SK Hynix ADR are mechanically easier to short than Seoul-listed shares.
+- (Mine) As shorts: the thesis (price-driven peak earnings, P/B above past peaks, consumer demand cracking, China supply) is strongest where book multiples are highest — Micron, then SK Hynix — but timing risk is severe: contract prices are still rising, 2027 output is largely sold, the companies are returning roughly 4–11% of market value a year through buybacks and dividends (derived), and the shares have already fallen 38–59%. Micron (US-listed, liquid, 2% short interest) and the SK Hynix ADR are mechanically easier to short than Seoul-listed shares.
 
 ### Gaps
 - KOSPI's 13 Nov close, unadjusted year-end 2025 closes and KRX short-interest balances for Samsung and SK Hynix were not retrieved.
