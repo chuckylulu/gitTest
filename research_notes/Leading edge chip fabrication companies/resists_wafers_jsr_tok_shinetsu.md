@@ -20,7 +20,7 @@ Only one hard, dated, third-party share number was obtainable: TOK 29.3% of EUV 
 ### Cited Findings
 **Size and shares**
 - Semiconductor photoresist market US$3,081m in 2025, +12.7% YoY (TOK calculation from SEMI data); US$2,689m in 2024, +14.1% [ESTIMATE] — [TOK Integrated Report 2026, p.10](https://www.tok.co.jp/application/files/7417/9299/7012/Integrated_report2026_all.pdf); [TOK prior-year report, p.9](https://www.tok.co.jp/application/files/6717/5465/4693/Integrated_report2024_all_a4.pdf)
-- TOK shares by shipment volume, Fuji Chimera Research ("2026 先端/注目半導体関連市場の現状と将来展望"), 2025: EUV 29.3% (Global No.1), ArF 14.4% (No.4), KrF 33.3% (No.1), g/i-line 25.3% (No.1). 2024 (2025 edition): EUV 28.0% (No.2), ArF 15.9% (No.4), KrF 32.4% (No.1), g/i 22.7% (No.1). Forecast volume CAGR 2025→2031: EUV 28.2%, ArF 7.4%, KrF 6.1%, g/i 3.8% [ESTIMATE; reliability: reputable Japanese research house, but quoted by the beneficiary, volume not value, and no other supplier's figure is shown] — same two TOK reports.
+- TOK shares by shipment volume, Fuji Chimera Research ("2026 先端/注目半導体関連市場の現状と将来展望"), 2025: EUV 29.3% (Global No.1), ArF 14.4% (No.4), KrF 33.3% (No.1), g/i-line 25.3% (No.1). 2024 (2025 edition): EUV 28.0% (No.2), ArF 15.9% (No.4), KrF 32.4% (No.1), g/i 22.7% (No.1). Forecast market CAGR 2025→2031 (basis not stated): EUV 28.2%, ArF 7.4%, KrF 6.1%, g/i 3.8% [ESTIMATE; reliability: reputable Japanese research house, but quoted by the beneficiary, volume not value, and no other supplier's figure is shown] — same two TOK reports.
 - JSR: "No.2 global share in photoresists" and "the only company able to offer both CAR and MOR for EUV" [COMPANY CLAIM, no measurer or period given] — [Mitsui Chemicals presentation, 9 Nov 2026, slide 15](https://jp.mitsuichemicals.com/content/dam/mitsuichemicals/sites/mci/documents/release/2026/event_261109.pdf)
 - Inpria (JSR's MOR subsidiary) sales: US$27.5m (FY2023), US$51.1m (FY2024), US$60.1m (FY2025); operating loss US$9.3m → US$28.3m → US$42.3m; net assets −US$28.7m [FILING] — [Mitsui Chemicals timely disclosure, 9 Nov 2026, appendix](https://jp.mitsuichemicals.com/content/dam/mitsuichemicals/sites/mci/documents/release/2026/261109.pdf). This is the only audited-type number sizing spin-on MOR (entity sales; may include intragroup flows).
 - Low-reliability market-report figures (paid-report teasers, scope differs): "top three (TOK, JSR, Shin-Etsu) ≈90% of EUV resist"; EUV resist market US$176m in 2024 → US$822m in 2031 (QYResearch) versus US$358m in 2025 (another vendor); "JSR >22% in 2024, top five = 50%" for "photoresist chemicals for advanced lithography" (GMI) [ESTIMATE, weak] — [GII/QYResearch page](https://www.gii.co.jp/report/qyr1862412-euv-photoresists-global-market-share-ranking.html); [GMI page](https://www.gminsights.com/industry-analysis/photoresist-chemicals-for-advanced-lithography-market) (seen only as search summaries).
@@ -98,7 +98,7 @@ Unusually for a delisted company, JSR is well documented: it still files securit
 - Exposure for an outside investor: none in JSR equity; JSR bonds (¥47bn); after closing, Mitsui Chemicals shares — market value ¥692.6bn at ¥1,815 (13 Nov 2026), i.e. JSR's EV is ≈2.7x the buyer's market value (calc). Mitsui fell 10.3% on 4 Nov (Reuters report of the deal) and 8.5% on 9 Nov (announcement), then recovered to ¥1,815 — [kabutan 4183](https://kabutan.jp/stock/kabuka?code=4183&ashi=day)
 
 **(f) Case against**
-- Business: earnings quality (continuing-operations profit ¥1.8bn after ¥31.1bn finance costs and ¥18.0bn PPA amortisation); goodwill plus intangibles ¥609.5bn exceed equity; Inpria's losses are widening as sales grow; MOR adoption is still described by an independent observer as lacking "a major foothold"; TOK overtook the unnamed 2024 EUV leader; 22.8% of revenue from China; third ownership change in four years, integration into a petrochemical-heavy parent, key-staff retention.
+- Business: earnings quality (continuing-operations profit ¥1.8bn after ¥31.1bn finance costs and ¥18.0bn PPA amortisation); goodwill plus intangibles ¥609.5bn exceed equity; Inpria's losses are widening as sales grow; MOR adoption is still described by an independent observer as lacking "a major foothold"; TOK overtook the unnamed 2024 EUV leader; 22.8% of revenue from China; second change of owner in under four years, integration into a petrochemical-heavy parent, key-staff retention.
 - For the indirect holder (Mitsui shares): 16x EBITDA paid with a bridge loan, dilution up to ¥150bn, leverage above 4x, synergy mostly a 2035 number; approval and closing risk through FY2027.
 - Dated events: shelf registration effective 17 Nov 2026; JSR H1 briefing (last year: 19 Nov); regulatory filings; closing targeted H2 FY2027.
 
@@ -118,7 +118,7 @@ TOK is a single-segment, net-cash resist and high-purity-chemical maker growing 
 
 ### Cited Findings
 **(a) Position**
-- Shares: see Key question 1 (EUV 29.3% No.1; KrF 33.3% No.1; g/i 25.3% No.1; ArF 14.4% No.4; 2025 volume, Fuji Chimera); overall semiconductor photoresist share 24.7%, No.1 (2024) [ESTIMATE via company].
+- Shares: see Key question 1 (EUV 29.3% No.1; KrF 33.3% No.1; g/i 25.3% No.1; ArF 14.4% No.4; 2025 volume, Fuji Chimera); overall semiconductor photoresist share 24.7%, No.1 (2024; TOK's calculation from Fuji Chimera data) [ESTIMATE via company] — [prior-year report, p.7](https://www.tok.co.jp/application/files/6717/5465/4693/Integrated_report2024_all_a4.pdf)
 - Sales mix FY2025: electronic functional materials (resists, packaging materials) ¥124.7bn, high-purity chemicals ¥109.4bn, other ¥2.9bn [FILING] — [FY2025 kessan tanshin, 9 Feb 2026](https://www.tok.co.jp/application/files/1517/7061/1184/q4_2512.pdf)
 - Customer concentration: TSMC ¥79.6bn = 33.6% of FY2025 sales (¥61.1bn, 30.4% in FY2024) [FILING] — [securities report FY2025](https://www.tok.co.jp/application/files/9717/7432/8945/securities_2512.pdf)
 - Geography FY2025: Taiwan ¥85.6bn (36.1%), China ¥48.6bn (20.5%), Japan ¥36.6bn, Korea ¥30.4bn, US ¥24.0bn, other ¥11.7bn [FILING] — FY2025 tanshin.
@@ -175,7 +175,7 @@ TOK is a single-segment, net-cash resist and high-purity-chemical maker growing 
 ## Key question 4 — Shin-Etsu Chemical (TSE 4063)
 
 ### Takeaway
-Group profit is two stories: electronics materials (wafers, resists, mask blanks, magnets) is at full utilisation with operating profit up 28% in the half and a 38% margin, while the PVC/caustic segment lost 43% of its profit last year and is still down. Net cash is about ¥1.35tn after ¥800bn of buybacks in two years; guidance is conservative by management's own admission.
+Group profit is two stories: electronics materials (wafers, resists, mask blanks, magnets) is at full utilisation with operating profit up 28% in the half and a 38% margin, while the PVC/caustic segment lost 43% of its profit last year and is still down. Net cash is about ¥1.35tn after ¥750bn of buybacks in 18 months (another ¥50bn authorised on 13 Nov 2026); guidance is conservative by management's own admission.
 
 ### Cited Findings
 **(a) Position**
@@ -231,7 +231,7 @@ Group profit is two stories: electronics materials (wafers, resists, mask blanks
 - Reaction to H1 results (27 Oct, after close): +2.6% next day; −6.7% on 6 Nov in the sector sell-off.
 
 **(f) Case against**
-- Business: a third of sales and, at the last peak, 40% of profit is a commodity (PVC) whose profit fell 43% in a year; wafer pricing is locked by contracts signed in 2020–21, so the upcycle reaches the P&L slowly; new wafer capacity is twice as expensive; gross margin fell four points in FY3/2026; no numerical medium-term plan or succession timetable in the documents read.
+- Business: 38% of sales and, in FY3/2025, 39% of operating profit came from a commodity segment (PVC/caustic) whose profit then fell 43% in a year (calc); wafer pricing is locked by contracts signed in 2020–21, so the upcycle reaches the P&L slowly; new wafer capacity is twice as expensive; gross margin fell four points in FY3/2026; no numerical medium-term plan or succession timetable in the documents read.
 - Shares: about 20x for a group whose operating profit is still 30% below the FY3/2023 peak (¥998bn); consensus already sits above guidance; net cash is being distributed (lower interest income ahead).
 - Events: ¥50bn buyback to 27 Apr 2027; Q3 results around late January (27 Jan in 2026); 2027 PVC contract outcome; first wafer contract renewals from end-2027.
 
@@ -264,7 +264,7 @@ Both are leveraged ways into the same demand, with opposite profiles: SUMCO has 
 - Jul–Sep net profit includes a ¥13.7bn gain on selling part of Formosa Sumco Technology (stake 43.2% → 38.0%; deconsolidated 30 Sep 2026) and a ¥3.8bn loss on ending wafer production at Miyazaki [FILING] — [variance notice](https://ssl4.eir-parts.net/doc/3436/tdnet/2911065/00.pdf); [FST notice](https://ssl4.eir-parts.net/doc/3436/tdnet/2765310/00.pdf)
 - Balance sheet 30 Sep 2026: interest-bearing debt ¥250.8bn (¥353.7bn at Dec 2025), cash ¥120.7bn, net D/E 0.23x, equity ratio 61.2%; fixed assets ¥398.9bn after deconsolidation (¥670.6bn); nine-month FCF ¥48.1bn; dividend ¥20 [FILING].
 - Market statements: long-term-contract prices "were kept"; Q4 300mm demand "becoming more than we can supply"; "at current prices and with inflation, expansion investment has no economic rationality", and would take years; FX: ¥1/US$ ≈ ¥1.2bn of operating profit; Q4 guidance sales ¥107.0bn (ex-FST), OP ¥1.0bn [COMPANY CLAIM].
-- Record: no full-year guidance until 11 Nov; operating profit fell from ¥109.7bn (FY2022) to a loss in four years as 300mm expansion depreciation arrived; 16 Jan 2026 leadership change (chairman-CEO Hashimoto to adviser, president Awa retired, Jiro Ryuta president) [FILING] — [notice, 5 Jan 2026](https://ssl4.eir-parts.net/doc/3436/tdnet/2736783/00.pdf); [kabutan finance](https://kabutan.jp/stock/finance?code=3436)
+- Record: no full-year guidance until 11 Nov; operating profit fell from ¥109.7bn (FY2022) to a loss in four years as 300mm expansion depreciation arrived; leadership change announced 5 Jan 2026, effective 27 Mar 2026 (chairman-CEO Hashimoto to director-adviser, president Awa retired, Jiro Ryuta president) [FILING] — [notice, 5 Jan 2026](https://ssl4.eir-parts.net/doc/3436/tdnet/2736783/00.pdf); [kabutan finance](https://kabutan.jp/stock/finance?code=3436)
 - Market facts: ¥2,114.5; market value ¥740.4bn; P/E not meaningful; P/B 1.31x; EV/EBITDA ≈7.2x (calc); +47.4% YTD, +72.5% over 12 months, −64% from the July high of ¥5,939; ten-year range ¥590–¥5,939; IFIS consensus FY2026 OP −¥7.4bn (pre-dating guidance), mean target ¥3,888; +3.9% the day after results — [kabutan 3436](https://kabutan.jp/stock/?code=3436); [kabuyoho](https://kabuyoho.jp/reportAnalyst?bcode=3436)
 
 **Entegris**
@@ -295,12 +295,12 @@ All five are funded for their stated plans, but by different means: Shin-Etsu an
 | JSR | Deal approvals and closing (H2 FY2027); integration; MOR/high-NA adoption; core OP ¥100bn by FY2030; exit of KBI/CRO | Korea MOR plant, Taiwan JV and CMP lab; 9 disposals; net debt −¥123bn in a year | Own OCF ¥62bn vs capex ¥25–32bn; LBO loans to be replaced by Mitsui's ¥1,640bn bridge, ≤¥150bn equity, ¥300bn mezzanine |
 | TOK | High-NA resist choice; TSMC dependence; larger JSR–Mitsui rival; China/Taiwan exposure | Koriyama, Aso, Pyeongtaek, Incheon builds; plan targets met a year early | Own cash flow plus ¥20bn of 2025 debt; net cash ≈¥39bn |
 | Shin-Etsu | Wafer contract renewals from end-2027; brownfield vs double-cost greenfield; PVC pricing; rare-earth supply | Isesaki resist site; wafer price rises from Oct 2026; Shintech feedstock project | Own cash flow (≈¥700bn OCF vs ¥380bn capex); net funds ≈¥1.35tn |
-| SUMCO | Depreciation hump (¥131bn in 2026); price resets; whether to expand at all | Capex cut 86% from 2024 pace; FST sell-down; Miyazaki closed; debt −¥103bn | Internal cash flow and asset sale |
+| SUMCO | Depreciation hump (¥131bn in 2026); price resets; whether to expand at all | Capex ¥214.9bn (2024) → ¥79.9bn (2025) → ¥29.7bn in 9M 2026; FST sell-down; Miyazaki closed; debt −¥103bn (partly deconsolidation) | Internal cash flow and asset sale |
 | Entegris | Margin targets; 2028–2030 maturities (US$3.3bn); China controls; tariffs | Term loan repaid; revolver enlarged to US$750m; US$77m CHIPS funding for Colorado Springs | Operating cash flow (US$606m in nine months) |
 
 Sources as cited in Key questions 2–5.
 
-**Past downturns** [FILING, via kabutan's compiled history unless noted]
+**Past downturns** [FILING figures as compiled by kabutan, a third-party aggregator, unless noted]
 - TOK: sales −31% from FY3/2008 (¥102.3bn) to FY3/2010 (¥70.6bn); FY2019 −2.3%; FY2023 −7.5% with OP −25%; operating cash flow stayed positive every year 2021–2025 (¥17.2bn–¥35.2bn) — [kabutan](https://kabutan.jp/stock/finance?code=4186); [securities report](https://www.tok.co.jp/application/files/9717/7432/8945/securities_2512.pdf)
 - Shin-Etsu: sales −33% from FY3/2008 (¥1,376bn) to FY3/2010 (¥917bn); FY3/2024 sales −14%, OP −30% (¥998bn → ¥701bn); FY3/2026 OP −14% while electronics OP rose 6% — [kabutan](https://kabutan.jp/stock/finance?code=4063)
 - SUMCO: sales −54% from FY1/2008 (¥475bn) to FY1/2010 (¥218bn); 2023–2025: sales −7% then +3%, but OP ¥109.7bn → ¥1.3bn and dividend ¥81 → ¥20 — [kabutan](https://kabutan.jp/stock/finance?code=3436)
