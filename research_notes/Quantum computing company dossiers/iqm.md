@@ -110,7 +110,7 @@ It also took €35M of EIB venture debt (Apr 2022). The July 2026 SPAC and PIPE 
   - DEFM14A: about 14.6M shares at $10.00 per ADS, about $146M, including some RAAQ insiders (e.g., Peter Ort buying 50,000 ADSs) — [C · DEFM14A](https://www.sec.gov/Archives/edgar/data/0002052161/000119312526259964/d900375ddefm14a.htm).
   - At closing: **14,548,000 shares, €127.7M ($145.5M)**. Placement agents were J.P. Morgan Securities LLC and TD Cowen — [C-relay · HPCwire, 2026-07-01](https://www.hpcwire.com/off-the-wire/iqm-completes-spac-merger-and-begins-trading-on-nasdaq-as-iqmx/).
   - QCR names J.P. Morgan SE and Rothschild & Co as advisors — [I · QCR, "IQM … Completes Nasdaq Merger via Real Asset Acquisition Corp…", 2026-07-01](https://quantumcomputingreport.com/iqm-quantum-computers-completes-nasdaq-merger-via-real-asset-acquisition-corp-to-establish-liquid-public-capitalization/).
-  - Contradiction: coverage of the February announcement cited a PIPE of about $134M — [search excerpt summarising Cooley/DCD coverage](https://www.cooley.com/news/coverage/2026/2026-02-23-iqm-announces-merger-with-real-asset-acquisition-corp-concurrent-pipe-financing).
+  - Contradiction: according to search-engine summaries, coverage of the February announcement cited a PIPE of about $134M. The underlying articles were not opened; DCD returned 403 — [I · DCD, "IQM Quantum Computers to go public via SPAC merger with Real Asset Acquisition Corp.", 2026-02 (search excerpt)](https://www.datacenterdynamics.com/en/news/iqm-quantum-computers-to-go-public-via-spac-merger-with-real-asset-acquisition-corp/). The figure probably rose because the PIPE was upsized, but this is not confirmed.
 - **Trust account**: about $179.6M (≈$10.41 per share) at the 3 Jun 2026 record date, across 17.25M public shares. The maximum-redemption scenario was $160.4M. RAAQ closed at $11.80 on 3 Jun 2026 — [C · DEFM14A](https://www.sec.gov/Archives/edgar/data/0002052161/000119312526259964/d900375ddefm14a.htm).
 - **Proceeds**: about **€198.7M ($233.5M)** including remaining trust funds — [C-relay · HPCwire](https://www.hpcwire.com/off-the-wire/iqm-completes-spac-merger-and-begins-trading-on-nasdaq-as-iqmx/).
   - QCR labels the $233.5M as both "Total Gross Runway" and "net" — [I · QCR, 2026-07-01](https://quantumcomputingreport.com/iqm-quantum-computers-completes-nasdaq-merger-via-real-asset-acquisition-corp-to-establish-liquid-public-capitalization/).
@@ -342,8 +342,8 @@ Current targets: 150-qubit Halocene/Radiance by end-2026; VTT 300 qubits in 2027
 
 ### Inferences
 - Slippage relative to the Nov 2023 targets (calculation):
-  - On-premises 54-qubit system: about 18 months late.
-  - 150-qubit system: at least about 20 months late, and still not confirmed as accepted at 14 Nov 2026.
+  - On-premises 54-qubit system: about 16–19 months late (Q3 2024 → 12 Feb 2026).
+  - 150-qubit system: about 20–22 months late and counting (Q1 2025 → "at customer sites" Nov 2026), and still not confirmed as accepted at 14 Nov 2026.
 - ORNL delivery came about 9 months after its Q3 2025 target.
 - IQM no longer gives a date for the 2023 claim of "quantum advantage experiments in 2024". The DEFM14A says no current quantum computer, including IQM's, has reached broad quantum advantage — [C · DEFM14A](https://www.sec.gov/Archives/edgar/data/0002052161/000119312526259964/d900375ddefm14a.htm).
 
