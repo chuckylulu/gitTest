@@ -1,6 +1,6 @@
 # Data-only research prompts
 
-Seven short prompts with six or seven companies each. All share one body; only the sector and the companies change.
+Eight short prompts with seven companies each. All share one body; only the sector and the companies change.
 
 ## 1. AI processors
 
@@ -74,9 +74,21 @@ Cross-examine: test every important claim against sources the company does not c
 
 No rankings, recommendations or investment opinions. Give a date and a source for every figure, and say what you could not find or verify.
 
-## 7. Verification and simulation
+## 7. Verification
 
-Deep research, data and information only. Sector: verification and simulation software. Companies: Synopsys (including Ansys); Cadence; Siemens EDA (division of Siemens); Dassault Systemes; Harmonic; PhysicsX.
+Deep research, data and information only. Sector: verification of chips and software. Companies: Synopsys (verification and sign-off tools); Cadence (verification tools); Siemens EDA (division of Siemens); Harmonic; AdaCore; AbsInt; ChipAgents.
+
+For each company, or for the relevant division where the business sits inside a larger group, gather the facts: what it makes and at what stage, technology and roadmap with dates, which past milestones were met or missed, revenue, margins, cash, debt and funding, customers and contracts, capacity, ownership and key people, legal and regulatory matters.
+
+Examine the science under each one: what has been demonstrated, who outside the company has verified it, what remains unproven, and which physical or engineering limits apply. State whether it stands on solid ground, and why.
+
+Cross-examine: test every important claim against sources the company does not control (customers, suppliers, competitors, regulators, published papers) and against the other companies on this list, and record the contradictions.
+
+No rankings, recommendations or investment opinions. Give a date and a source for every figure, and say what you could not find or verify.
+
+## 8. Simulation
+
+Deep research, data and information only. Sector: physical simulation software. Companies: Ansys (simulation business of Synopsys); Siemens's simulation business (Simcenter and Altair); Dassault Systemes; Cadence's multiphysics business; COMSOL; PhysicsX; Neural Concept.
 
 For each company, or for the relevant division where the business sits inside a larger group, gather the facts: what it makes and at what stage, technology and roadmap with dates, which past milestones were met or missed, revenue, margins, cash, debt and funding, customers and contracts, capacity, ownership and key people, legal and regulatory matters.
 
