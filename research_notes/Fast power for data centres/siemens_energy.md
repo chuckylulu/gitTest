@@ -238,7 +238,12 @@ FY2026: orders €68.1bn, revenue €44.2bn, Profit before SI €5.5bn (12.4%), 
 ## (5) Customers and contracts
 
 ### Takeaway
-Siemens Energy does not name data-centre end customers in its results. It says data-centre-related business is about €15bn of the €164bn backlog (<10%, Gas Services plus Grid Technologies) and about 20% of Q3 FY26 gas order GW. Named, verifiable data-centre-linked deals are mostly with intermediaries and developers: Eaton (partnership, not an order), Fermi America (LOIs plus a smaller SGT-800 purchase), Dynamis (119 SGT-400 cores, about 1.7 GW, firm agreement), and Williams/Meta (3 SGT-400s at Socrates South, versus a company claim of "5 GW" with Williams). Utility orders found (Xcel, AECI) are driven by load growth and peaks, not explicitly by data centres. No direct xAI, Meta, Oracle, Microsoft or Crusoe turbine order with Siemens Energy was found.
+Siemens Energy does not name data-centre end customers in its results. It says data-centre-related business is about €15bn of the €164bn backlog (<10%, Gas Services plus Grid Technologies) and about 20% of Q3 FY26 gas order GW. Named, verifiable data-centre-linked deals are mostly with intermediaries and developers:
+- Eaton: partnership, not an order.
+- Fermi America: LOIs plus a smaller SGT-800 purchase.
+- Dynamis: 119 SGT-400 cores, about 1.7 GW; signed, but firmness and value undisclosed.
+- Babcock & Wilcox: 20 x 50 MW steam-turbine sets, 1 GW, for its FastPower data-centre programme.
+- Williams/Meta: 3 SGT-400s at Socrates South, versus a company claim of "5 GW" with Williams. Utility orders found (Xcel, AECI) are driven by load growth and peaks, not explicitly by data centres. No direct xAI, Meta, Oracle, Microsoft or Crusoe turbine order with Siemens Energy was found.
 
 ### Cited Findings
 **Data-centre share (company)**
@@ -270,7 +275,7 @@ Siemens Energy does not name data-centre end customers in its results. It says d
 
 ### Gaps
 - No Siemens Energy turbine or grid order was found from xAI, Meta (direct), Oracle, Microsoft, Crusoe, OpenAI/Stargate, Duke, Entergy, Dominion or Georgia Power. Searches were cut short by the search budget, so absence is not proof.
-- A reported Babcock & Wilcox selection of Siemens Energy turbines for a 1.2 GW Applied Digital project appeared only in a search summary and was not verified.
+- The B&W–Siemens Energy 1 GW steam-turbine agreement (Aug 2026) is verified. A search summary also linked B&W/Siemens Energy turbines to a 1.2 GW Applied Digital project; that link, and whether the B&W agreement is firm, were not verified.
 - HVDC framework details (TenneT 2 GW programme, Amprion BalWin/Korridor B, 50Hertz, UK EGL projects) with values and dates were not retrieved in this session. Siemens Energy's role in these is believed but unverified here.
 
 ---
