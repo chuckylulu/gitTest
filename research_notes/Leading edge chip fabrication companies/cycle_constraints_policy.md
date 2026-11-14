@@ -216,3 +216,147 @@ Sources: SEMI via PR Newswire — [2025 billings, 7 Apr 2026](https://www.prnews
 ### Gaps
 - TechInsights and Gartner forecasts were not obtained. SEMI's regional forecast figures and World Fab Forecast detail are in images or behind a paywall. Tokyo Electron's market view (a $150–170bn a year range for 2026–27 on one aggregator page) could not be verified.
 - SEMI's year-end forecast and the WSTS autumn forecast are both due in December 2026.
+
+## 5. Past downturns, for calibration
+
+### Takeaway
+In the two deep downturns (2001–03 and 2008–09) equipment makers' revenue fell 37–58% and profits became losses. In the two shallow ones (2019 and 2023) revenue fell 0–15% and ASML grew, yet shares still fell 26–57%. Order backlog cushioned only when leading-edge demand held.
+
+### Cited Findings
+
+**Table 6. Revenue, peak to trough.** [FILING; percentages my calc]
+
+| Company | 2000–03 | 2007–09 | 2018–20 | 2022–24 |
+|---|---|---|---|---|
+| Applied Materials (FY Oct) | $9.56bn → $4.48bn (FY2000–03): −53%; net income $2.06bn → −$0.15bn | $9.73bn → $5.01bn (FY2007–09): −49%; operating income $2.37bn → −$0.39bn | $16.70bn → $14.61bn: −13%; operating income −25% | no fall ($25.79bn → $26.52bn) |
+| Lam Research (FY Jun) | $1.52bn → $0.76bn (FY2001–03): −50% | $2.57bn → $1.12bn (FY2007–09): −57%; net income $0.69bn → −$0.30bn | $11.08bn → $9.65bn: −13% | $17.43bn → $14.91bn (FY2023–24): −14% |
+| KLA (FY Jun) | $2.10bn → $1.32bn (FY2001–03): −37% | $2.73bn → $1.52bn (FY2007–09): −44%; net income $0.53bn → −$0.52bn | rose | $10.50bn → $9.81bn: −7% |
+| ASML | €2.67bn → €1.59bn (2000–01): −41%; net income €0.38bn → −€0.48bn | €3.77bn → €1.60bn (2007–09): −58% | rose 8% (2019) | rose 30% (2023) |
+| TSMC | NT$166.2bn → NT$125.9bn (2001): −24%; net income −78%; utilisation 106% → 51%; capex NT$103.8bn → NT$37.9bn (2000–03) | not re-fetched | not re-fetched | not re-fetched |
+| Micron (FY Aug/Sep) | $6.36bn → $2.59bn (FY2000–02): −59% | $5.84bn → $4.80bn (FY2008–09): −18%; operating losses of $1.6–1.7bn in both years | $30.39bn → $21.43bn (FY2018–20): −29%; operating income −80% | $30.76bn → $15.54bn (FY2023): −49%; operating income $9.70bn → −$5.75bn |
+
+Sources: 10-K and 20-F filings — [Applied FY2003](https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm); Lam [FY2003](https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm), [FY2010](https://www.sec.gov/Archives/edgar/data/707549/000119312510194304/d10k.htm); KLA [FY2003](https://www.sec.gov/Archives/edgar/data/319201/000031920103000112/fy2003kla10k.htm), [FY2010](https://www.sec.gov/Archives/edgar/data/319201/000119312510179757/d10k.htm); Micron [FY2003](https://www.sec.gov/Archives/edgar/data/723125/000104746903033422/a2120427z10-k.htm), [FY2010](https://www.sec.gov/Archives/edgar/data/723125/000072312510000174/q4fy2010.htm); [ASML 2003](https://www.sec.gov/Archives/edgar/data/937966/000115697304000133/u47074e20vf.htm); [TSMC 2003](https://www.sec.gov/Archives/edgar/data/1046179/000119312504095792/d20f.htm); later years from SEC XBRL for [Applied](https://data.sec.gov/api/xbrl/companyconcept/CIK0000006951/us-gaap/Revenues.json), [Lam](https://data.sec.gov/api/xbrl/companyconcept/CIK0000707549/us-gaap/Revenues.json), [KLA](https://data.sec.gov/api/xbrl/companyconcept/CIK0000319201/us-gaap/Revenues.json), [ASML](https://data.sec.gov/api/xbrl/companyconcept/CIK0000937966/us-gaap/Revenues.json), [Micron](https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/us-gaap/Revenues.json).
+
+**Table 7. Largest share-price fall in each episode, %.** [my calc from daily closes; [Yahoo Finance chart data](https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX?period1=757382400&period2=1794700000&interval=1d), same endpoint per ticker]
+
+| | 2000–02 | 2007–08 | 2018 | 2021–22 | 2026 high to November low | 13 Nov 2026 vs high; year to date |
+|---|---|---|---|---|---|---|
+| Philadelphia Semiconductor Index | −84 | −69 | −26 | −47 | −38 | −31; +43 |
+| ASML (New York) | −90 | −66 | −34 | −57 | −32 | −25; +40 |
+| Applied Materials | −82 | −65 | −53 | −55 | −56 | −49; +44 |
+| Lam Research | −88 | −75 | −46 | −57 | −57 | −48; +32 |
+| KLA | −73 | −76 | −34 | −41 | −57 | −50; +25 |
+| Tokyo Electron | −80 | −75 | −49 | −49 | −48 | −40; +38 |
+| TSMC (ADR) | −85 | −51 | −26 | −57 | −27 | −18; +31 |
+| Micron | −93 | −88 | −54 | −50 | −46 | −36; +173 |
+| SK hynix | not meaningful | −85 | −40 | −44 | −61 | −58; +87 |
+| Samsung Electronics | −65 | −47 | −29 | −37 | −48 | −43; +72 |
+
+Index dates: 10 Mar 2000 to 9 Oct 2002; 17 Jul 2007 to 20 Nov 2008; 12 Mar to 24 Dec 2018; 27 Dec 2021 to 14 Oct 2022; 22 Jun to 5 Nov 2026.
+
+**Backlog as a cushion.**
+- Applied Materials' backlog was $4.38bn at the end of fiscal 2000 (46% of that year's sales) and $2.73bn a year later; in fiscal 2003 "backlog adjustments ... totaled $553 million, which consisted of cancellations, currency and other adjustments" [FILING] — [10-K](https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm).
+- ASML's backlog fell from 365 systems (end-2000) to 118 (end-2001) and systems sold from 455 to 197 [FILING] — [20-F](https://www.sec.gov/Archives/edgar/data/937966/000115697304000133/u47074e20vf.htm). Lam: orders "are subject to cancellation by our customers with limited penalties" [FILING] — [10-K](https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm).
+- Today: Applied's backlog was $15.0bn at 26 Oct 2025 [FILING via [analysis](https://sec-api.io/insights/applied-materials-amat-financial-analysis-q3-fy2026-china-revenue-share-export-control-settlement-wafer-equipment-peers-and-scenarios-to-fy2029)]; SK hynix's long-term agreements cover volume within "a range agreed with customers, not fixed prices" [COMPANY CLAIM, summary page] — [Finsee](https://finsee.ai/earnings/skhy/2026/q3/en/); Micron's are "take or pay" with $32bn of commitments [COMPANY CLAIM] — [Blocks & Files](https://www.blocksandfiles.com/flash/2026/10/01/memory-gold-rush-bonanza-makes-billions-for-micron/5300445).
+
+### Inferences
+- A shallow pause on the 2019 or 2023 pattern would mean equipment revenue down 10–15% and memory revenue down 30–50%. A deep one on the 2001 or 2009 pattern would mean equipment down 40–55% and losses.
+- The shallow cases may understate the risk to ASML and TSMC. In 2019 and 2023 the leading edge was the stable part of demand; an AI-led pause would start at the leading edge.
+- Equipment shares have already fallen as far as in 2022 (56–57% at the low), before any fall in revenue. A shallow pause is arguably priced; a deep one (65–90% in 2000–02 and 2007–08) is not.
+- Memory contracts now protect volumes better than in past cycles, but not prices.
+
+### Gaps
+- SEMI's industry totals for 2001, 2009, 2019 and 2023, and the downturn-year results of TSMC (after 2001), Tokyo Electron, Samsung and SK hynix, were not re-fetched.
+
+## 6. Policy and geopolitics as of November 2026
+
+### Takeaway
+The measures that matter most are narrow or suspended, and the dates cluster: the US–China truce, the US affiliates rule and China's rare-earth controls all run to 10 January 2027. The only US chip tariff in force covers a narrow class of AI chips and exempts US data centres; I found no proclamation of the broader "phase two" tariff.
+
+### Cited Findings
+
+**US tariffs and country terms.**
+- Proclamation 11002, signed 14 January 2026, effective 12:01 a.m. EST on 15 January 2026: a 25% duty on "certain advanced computing chips" and derivative products; exempt when imported for US data centres, repairs, research, startups, non-data-centre consumer and civil industrial uses, the public sector, or other uses the Commerce Secretary approves. Chip-making equipment is not tariffed. The President "may consider imposing significant tariffs on imports of semiconductors" with "an accompanying tariff offset program". Commerce found the US "fully manufactures only approximately 10 percent of the chips it requires". Reports were due at 90 days and by 1 July 2026 [FILING] — [proclamation text](https://www.govinfo.gov/content/pkg/CDOC-119hdoc136/html/CDOC-119hdoc136.htm). A customs-compliance page updated 11 October 2026 still lists phase two as "pending" [PRESS] — [GingerControl](https://gingercontrol.com/blog/section-232-semiconductor-tariff).
+- Taiwan: the Agreement on Reciprocal Trade, signed 12 February 2026, caps US tariffs at 15% and gives chips "most-favorable-treatment under Section 232"; Taiwan pledged $250bn of investment and up to $250bn of credit guarantees and refused a US goal of moving 40% of chip output ("that's impossible"); the text went to the legislature for approval [PRESS, named officials] — [Taipei Times, 14 Feb 2026](https://www.taipeitimes.com/News/front/archives/2026/02/14/2003852298). Firms building US capacity may import up to 2.5 times planned capacity duty-free during construction and 1.5 times US output afterwards [PRESS] — [Taipei Times, 16 Jan 2026](https://www.taipeitimes.com/News/front/archives/2026/01/16/2003850714).
+- Korea: for chips and chip-making equipment, terms "no less favorable than terms that may be offered in a future agreement" of comparable trade volume (13 Nov 2025) [FILING] — [White House](https://www.whitehouse.gov/fact-sheets/2025/11/joint-fact-sheet-on-president-donald-j-trumps-meeting-with-president-lee-jae-myung/). EU: combined tariff on chips "does not exceed 15 percent"; the EU "intends to purchase at least $40 billion worth of U.S. AI chips" (21 Aug 2025) [FILING] — [White House](https://www.whitehouse.gov/briefings-statements/2025/08/joint-statement-on-a-united-states-european-union-framework-on-an-agreement-on-reciprocal-fair-and-balanced-trade/). Japan: the implementing order of 4 September 2025 does not mention semiconductors [FILING] — [White House](https://www.whitehouse.gov/presidential-actions/2025/09/implementing-the-united-states-japan-agreement/).
+- CHIPS Act: the government took 9.9% of Intel at $20.47 a share, paid with $11.1bn of grants (August 2025); the manufacturing tax credit was raised by 10 points; in May 2026 nine quantum firms received $2bn of grants in return for equity stakes [PRESS, encyclopaedia summary] — [Wikipedia](https://en.wikipedia.org/wiki/CHIPS_and_Science_Act).
+
+**US export controls.**
+- AI chips to China: from 15 January 2026, case-by-case licence review for chips below 21,000 total processing performance and 6,500 GB/s memory bandwidth (Nvidia H200, AMD MI325X), subject to US third-party testing and supply certifications [FILING] — [BIS](https://bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china), [Covington](https://www.cov.com/-/media/files/corporate/publications/2026/04/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau.pdf). Nvidia's August guidance still assumed no China data-centre revenue [COMPANY CLAIM] — [Verdict](https://www.verdict.co.uk/nvidia-q2-fy27-results/).
+- Affiliates (50%) rule: issued 30 September 2025 (90 FR 47201), stayed 10 November 2025, and "further stayed until January 10, 2027" by a rule effective 9 November 2026 (91 FR 70789) [FILING] — [Federal Register](https://www.federalregister.gov/documents/2026/11/09/2026-22793/extension-of-the-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed).
+- MATCH Act: would give allies 150 days to match US controls, failing which the US could bar ASML from selling or servicing immersion DUV tools at SMIC, Huawei, Hua Hong, CXMT and YMTC. It rode on the defence bill, which failed to advance on 14 July 2026; the Dutch government rejects policy "dictated by unilateral US legislation" [PRESS] — [Bits&Chips, 21 Aug 2026](https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/).
+
+**US–China truce and China's measures.**
+- The October 2025 Busan truce was extended by two months to 10 January 2027, announced on 23 September 2026 during Xi's state visit to Washington; the US Trade Representative said national-security export controls were "off the table"; no longer-term deal was reached [PRESS, named officials] — [China Briefing, 29 Sep 2026](https://www.china-briefing.com/news/xi-trump-meeting-washington-takeaways/).
+- China's notices of 9 November 2026: the 24% additional tariff stays suspended (10% remains); export-control waivers for critical minerals, measures against 11 US firms on the unreliable-entity list and 16 on the export-control list, and special port fees are all suspended to 10 January 2027; a third Xi–Trump meeting of the year was expected at the APEC summit in China the following week [PRESS] — [Reuters via TimesLIVE](https://www.timeslive.co.za/news/world/2026-11-09-china-extends-us-trade-truce-by-two-months/).
+- Chinese actions in 2026: ten US entities, including MP Materials, added to the export-control list in June; procurement curbs on 46 US firms; a public reporting channel for mineral-export violations from 1 July [ESTIMATE, law-firm summary] — [Morgan Lewis](https://www.morganlewis.com/pubs/2026/07/recent-china-export-control-actions-signal-active-enforcement-for-rare-earths-and-strategic-minerals). A state-backed group targets about 5 home-made immersion DUV tools in 2026 and about 20 in 2027; China imported 95 DUV systems in 2025 [PRESS] — [TrendForce, 25 Aug 2026](https://www.trendforce.com/news/2026/08/25/news-u-s-may-push-near-total-asml-china-ban-on-duv-sales-and-servicing-amid-chinas-domestic-lithography-push/).
+
+**Taiwan.**
+- On 13–14 November 2026 Taiwan's defence ministry counted 10 PLA aircraft sorties (4 inside its air-defence zone), 8 navy vessels and 3 official ships [FILING] — [MND](https://www.mnd.gov.tw/en/News/PLAAct/88212). On 12 November a China Coast Guard ship declared a "law enforcement patrol" about 40 nautical miles south-east of Orchid Island [PRESS] — [CNA](https://focustaiwan.tw/politics/202611140008). Xi said unification "must and will be achieved" [PRESS] — [CNA](https://focustaiwan.tw/politics/202611120026).
+- Electricity: the last reactor shut on 17 May 2025 and a restart referendum failed on 23 August 2025; Taipower applied to restart Maanshan on 27 March 2026, the regulator approved a preliminary plan on 24 September 2026, and the minister targets 2028 [PRESS, encyclopaedia summary] — [Wikipedia](https://en.wikipedia.org/wiki/Maanshan_Nuclear_Power_Plant). TSMC: "power supply situation is one of the consideration factors" in capacity planning [COMPANY CLAIM] — [call](https://www.webull.com/news/15751044230423552).
+- Capital Economics: a fall in AI capital spending could cut Taiwan's real GDP growth next year by about 3 points and Korea's by about 1 [ESTIMATE] — [Fortune](https://fortune.com/2026/11/08/stock-market-outlook-sp500-ai-capex-gdp-growth-productivity/).
+
+### Inferences
+- Tariff exposure for leading-edge makers is low today because of the exemptions and the country caps. The open risk is phase two, which would reach chips, equipment and derivative products, with an offset favouring firms that build in the US.
+- 10 January 2027 is the date to watch. A lapse would bring back the affiliates rule, which reaches Chinese buyers of tools and design software, and China's rare-earth regime, which reaches tool makers' inputs.
+- Three leader-level meetings in 2026 argue against a near-term crisis, but they also make export controls a bargaining item in either direction. The Taiwan Strait evidence gathered here is too thin to move a prior.
+
+### Gaps
+- Not found: any phase-two tariff action after 1 July 2026; ratification of the Taiwan agreement; Dutch or Japanese control changes in 2026; counts of 2026 exercises around Taiwan, official invasion or blockade assessments, insurance or market-implied measures; Taiwan's reserve margin.
+
+## 7. Sector pricing and positioning
+
+### Takeaway
+The Philadelphia Semiconductor Index peaked at 14,634.72 on 22 June 2026, fell 38% to 9,011.14 on 5 November and closed at 10,146.32 on 13 November: 31% below the high and 43% up on the year. Equipment makers are 48–50% below their highs. Positioning was one-sided in July and still overweight in October.
+
+### Cited Findings
+- Index levels and per-stock moves: Table 7 [my calc from exchange closes]. The 5 November close was 12.25% down on the day, the largest fall since 16 March 2020 [CONFIRMED by exchange data] — [24/7 Wall St](https://247wallst.com/investing/2026/11/06/chip-stocks-just-had-their-second-worst-day-on-record/).
+- Valuation: the iShares Semiconductor ETF showed a price/earnings ratio of 39.31 and price/book of 9.00 on 12 November 2026, with $41.2bn of assets [FILING, fund sponsor data] — [iShares](https://www.ishares.com/us/products/239705/ishares-semiconductor-etf).
+- Positioning: in July 2026, 82% of fund managers called long semiconductors the most crowded trade and none reported being short; chip funds took a record $10bn of net inflows in January–May (Morningstar) [ESTIMATE] — [Reuters via Express Tribune](https://tribune.com.pk/story/2618784/among-ai-crowd-some-investors-position-for-slower-hyperscaler-spending-growth). In October, 45% still named semiconductors and technology overweights were the highest since August 2020 [ESTIMATE] — [Crypto Briefing](https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/). Nomura attributed the 5 November fall partly to hedge funds selling the year's winners [PRESS] — [24/7 Wall St](https://247wallst.com/investing/2026/11/06/chip-stocks-just-had-their-second-worst-day-on-record/).
+- Dated tests ahead: Nvidia results on 17 November; SEMI and WSTS forecasts in December; 10 January 2027 truce date; the large buyers' 2027 capex figures in late January and early February 2027.
+
+### Inferences
+- Prices have moved from euphoria to discounting a shallow pause in equipment and memory, while the index is held up by its largest members. A trailing multiple near 39 on earnings inflated by memory margins of 80% is not a cushion: cyclical multiples look lowest at peak earnings.
+
+### Gaps
+- Forward earnings multiples for the index and the equipment group against their own history, short interest and fund flows after May 2026 were not obtained. A sibling note (`market_data_snapshot.md`) is compiling per-company multiples.
+
+## 8. What I could not verify, and figures on which sources conflict
+
+### Takeaway
+The filed figures (capex, cash flow, debt, revenue histories, the Federal Register stay) are solid. The weakest material is press-relayed: lab financials, bank forecasts seen only in summaries, capacity counts from unnamed supply-chain sources, and almost everything on Taiwan Strait risk.
+
+### Cited Findings
+
+**Could not verify.**
+1. Whether a phase-two Section 232 action on chips or equipment was proclaimed after 1 July 2026; ratification and entry into force of the Taiwan–US agreement.
+2. Reports that Chinese customs blocked H200 imports, that Samsung and SK hynix hold annual 2026 licences for their China fabs, and the detail of the February 2026 Supreme Court tariff ruling: seen in search summaries only.
+3. Polymarket odds (secondary page blocked); the UBS, Goldman and Jefferies notes (press relays only); JPMorgan ($5.5tn through 2030) and Bank of America ($800bn in 2026, $1tn in 2027) forecasts (search summaries only).
+4. OpenAI's revenue and burn in dollars; Anthropic's financials (prospectus not read).
+5. Microsoft's October call details and Oracle's total debt (secondary write-ups).
+6. Industry equipment totals in past downturns. From memory, not re-fetched: about −59% (2000–02), −63% (2007–09), −7% (2019), −1% (2023).
+7. Tokyo Electron's market forecast; ASML's 2025 EUV unit count; wafer-per-month capacity figures for TSMC.
+8. Dutch and Japanese export-control changes in 2026; the MATCH Act's status after July 2026.
+9. Taiwan Strait exercise counts, official risk assessments, insurance or market measures; Taiwan's reserve margin.
+10. International Energy Agency data, interconnection-queue statistics and transformer lead times from primary sources.
+11. The iShares page shows 39.31 for both the price/earnings ratio and another field, so the figure may be a display error.
+
+**Conflicting figures.**
+1. Microsoft calendar-2026 capex: $190bn (before a July accounting change), $175bn (July), about $170bn (October).
+2. Amazon's quarterly capex: $75.9bn "cash capex" (call) against $77.3bn purchases of property and equipment (filing). Meta 2025: $69.7bn (filing line) against $72.2bn including finance leases.
+3. Anthropic's commitments: $417bn, $518bn or up to $800bn depending on the outlet; xAI/SpaceX capacity $84.5bn or $120.5bn; public filing dated 29 September or 26 October 2026.
+4. OpenAI's November round: target $30bn at $1.4tn (press), $1.5tn (investors), neither confirmed by the company. March round: $110bn at $730bn pre-money or $122bn at $852bn post-money.
+5. Goldman's 2028 figure: $1.4tn or $2tn; 2027 growth 50% or 54%. Morgan Stanley's $600bn: one year's cash burn (2027) or a cumulative shortfall through 2028.
+6. Wafer-fab equipment: SEMI $143.9bn (2026) and about $175bn (2027) against the vendors' mid-$150bn and above $200bn. SEMI's July release implies 2025 DRAM and NAND equipment of about $27.9bn and $10.6bn against $22.5bn and $14.0bn in its December 2025 release.
+7. CoWoS capacity in 2026: about 106,000 wafers a month (Goldman, annual average), over 130,000 (Commercial Times), or 120,000–140,000 at TSMC plus 50,000–60,000 at subcontractors.
+8. CoreWeave's 2026 capex guidance: $37–39bn or $31–35bn.
+9. US data-centre capacity at risk from moratoriums: about 30% of 2028 additions (UBS), 20% of 2028 projects or about 5 GW (Morgan Stanley), 5.7–30 GW (SemiAnalysis), about 45% of planned capacity (Goldman, one secondary report).
+10. ASML: EUV growth "over 45%" (sales) or "more than 50%" (units); China 14% of system sales (April–June), about 20% (full-year guide), 23% (July–September, per a sibling note).
+11. The 5 November index fall: 12.25% at the close against "about 9%" and 8.27% in intraday reports.
+12. SK hynix shareholder returns: KRW 60tn additional or about KRW 100tn in total. Micron fiscal-2026 capex: $27.4bn net or $30.7bn gross.
+
+### Inferences
+- Where a filing and a press figure disagree I have used the filing and said so. Where only press figures exist (the labs, the bank forecasts), treat magnitudes as indicative and directions as more reliable.
+
+### Gaps
+- A second pass with search access should close items 1, 3, 8, 9 and 10 of the first list before any conclusion leans on them.
