@@ -27,11 +27,12 @@ Sources [MARKET]: [Samsung statistics](https://stockanalysis.com/quote/krx/00593
 ## 1. Samsung latest numbers: Q3 2026 by division, capital spending, net cash, shareholder returns, governance and labour
 
 ### Takeaway
-Samsung reported the largest quarterly operating profit of any technology company (KRW 107.4tn in Q3 2026), but 99% of it came from the chip division and, inside that, from memory pricing; every consumer-device division lost money and the foundry/System LSI units are still estimated to be loss-making. The balance sheet (about KRW 200tn net cash) and trailing free cash flow (about KRW 203tn) comfortably fund the KRW 84.4tn 2026 capital budget and a KRW 90–110tn shareholder-return plan from internal cash.
+Samsung reported what it calls the first quarterly operating profit above KRW 100tn at any technology company (KRW 107.4tn in Q3 2026), but 99% of it came from the chip division and, inside that, from memory pricing; the phone, TV and appliance divisions lost money and the foundry/System LSI units are still estimated to be loss-making. The balance sheet (about KRW 200tn net cash) and trailing free cash flow (about KRW 203tn) comfortably fund the KRW 84.4tn 2026 capital budget and a KRW 90–110tn shareholder-return plan from internal cash.
 
 ### Cited Findings
 
 **(a) Position, ownership, customers, China**
+- Role in leading-edge chips: memory (DRAM, NAND, HBM), contract manufacturing of logic for fabless customers (Foundry Business), and its own mobile processors and image sensors (System LSI) [FILING] — [2026 Half-year Business Report](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_Half_Interim_Report.pdf). Main competitors: TSMC and SMIC in foundry (Q2 section); SK Hynix, Micron and CXMT in memory (Q3 section).
 - Listing and share count: common and preferred shares on the Korea Exchange, GDRs on the London Stock Exchange; 5,764,191,903 common and 802,371,203 preferred shares outstanding at 30 Jun 2026 [FILING] — [2026 Half-year Business Report](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_Half_Interim_Report.pdf).
 - Ownership at 30 Jun 2026: the controlling group held 19.69% of common shares (Samsung Life 8.51%, Samsung C&T 5.11%, Samsung Fire & Marine 1.49%, Lee Jae-yong 1.67%, Hong Ra-hee 1.25%, others); National Pension Service 7.89%; BlackRock 5.14% (2019 filing); 7.97 million minority holders owned 66.24% [FILING] — [Half-year report](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_Half_Interim_Report.pdf).
 - Customer concentration: in 1H26 the five largest customers (alphabetically Alphabet, Amazon, Apple, Hong Kong Techtronics, Supreme Electronics) were about 25% of sales [FILING] — [Half-year report](https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_Half_Interim_Report.pdf).
@@ -121,8 +122,8 @@ The foundry has real 2nm output, one filed anchor contract (Tesla, USD 16.5bn to
 - Demand backdrop: TSMC is reported fully booked at 2nm through 2028 [PRESS] — [Korea Herald](https://www.koreaherald.com/article/10705747). Samsung expects sub-8nm utilisation above 100% in 2027 and second-half 2027 mass production for major 2nm customers [COMPANY CLAIM] — [call summary](https://www.itiger.com/news/1179661800).
 
 ### Inferences
-- (Mine) Coherent: the plan now rests on things only Samsung has — its own HBM base-die demand filling 4nm, a US 2nm site, and TSMC being sold out. Funded: yes, from memory cash flow; the estimated 2025–26 foundry/LSI losses (about KRW 10.7tn) are under 4% of one year's trailing group operating profit.
-- (Mine) Not yet credible as a 2nm second source on the evidence: one customer-confirmed 2nm contract, whose first product has already slipped to late 2027; share falling for two quarters; yields known only from conflicting leaks; breakeven moved to 2028. The proof points are Taylor's 2027 start, Tesla AI6 volume, and a second customer naming Samsung itself.
+- (Mine) Coherent: the plan now rests on identifiable supports — its own HBM base-die demand filling 4nm, a US 2nm site with a filed anchor contract, and TSMC reportedly being sold out. Funded: yes, from memory cash flow; the estimated 2025–26 foundry/LSI losses (about KRW 10.7tn) are under 4% of one year's trailing group operating profit.
+- (Mine) Not yet credible as a 2nm second source on the evidence: one filed contract naming a 2nm customer (Tesla), whose first product has already slipped to late 2027; share falling for two quarters; yields known only from conflicting leaks; breakeven moved to 2028. The proof points are Taylor's 2027 start, Tesla AI6 volume, and a second customer naming Samsung itself.
 
 ### Gaps
 - No foundry-only revenue, profit, capex or yield figure is published.
@@ -134,7 +135,7 @@ The foundry has real 2nm output, one filed anchor contract (Tesla, USD 16.5bn to
 ## 3. Samsung memory and the memory cycle: HBM, nodes, contract prices, 2027 supply, signs of a peak, Chinese competitors
 
 ### Takeaway
-Samsung has recovered its position in high-bandwidth memory (third-party share 15% in 2Q25 to 33% in 2Q26) and leads DRAM again, and contract prices are several times 2025 levels. Most of the 2026 profit rise is price, not volume. Price increases are slowing, consumer demand is breaking, and CXMT has reached 10% of DRAM revenue — while all three majors report multi-year contracts and say supply stays short into 2028.
+Samsung has recovered in high-bandwidth memory (third-party share 15% in 2Q25 to 33% in 2Q26) and leads DRAM again, with contract prices several times 2025 levels and most of the 2026 profit rise coming from price rather than volume. Price increases are now slowing, consumer demand is breaking and CXMT has reached 10% of DRAM revenue, while all three majors report multi-year contracts and say supply stays short into 2028.
 
 ### Cited Findings
 
@@ -263,7 +264,7 @@ Sources [MARKET/ESTIMATE, CompaniesMarketCap series; calendar-year, USD-based fo
 - This cycle's extremes: year-end 2025 P/B was already 1.76–1.96 (Samsung), 3.73–3.86 (SK Hynix) and 6.04 (Micron); Micron's P/B at its August 2026 fiscal year-end was 7.82 [MARKET] — [Samsung ratios](https://stockanalysis.com/quote/krx/005930/financials/ratios/), [SK Hynix ratios](https://stockanalysis.com/quote/krx/000660/financials/ratios/), [Micron ratios](https://stockanalysis.com/stocks/mu/financials/ratios/), CompaniesMarketCap pages above.
 
 ### Inferences
-- (Mine) Today's trailing P/Es of 4.7–10.5 and forward P/Es of 2.4–4.4 are the lowest in the series and, by the historical pattern, say the market expects earnings to fall, not that the shares are cheap. On P/B, all three remain above every prior-cycle peak even after falls of 38–59% from the June highs.
+- (Mine) Today's trailing P/Es of 4.7–10.5 and forward P/Es of 2.4–4.4 are the lowest in the series and, by the historical pattern, say the market expects earnings to fall, not that the shares are cheap. On P/B, all three remain above every year-end value of earlier cycles (2007–2024) even after falls of 38–59% from the June highs.
 - (Mine) Using end-June equity (KRW 579.3tn, about KRW 88,000 a share), Samsung's June closing high of KRW 362,500 was about 4.1 times book, roughly double any year-end value since 2007. On FY2025 earnings the current prices equal about 30 times (Samsung), 20 times (SK Hynix) and 100 times (Micron).
 
 ### Gaps
@@ -275,7 +276,7 @@ Sources [MARKET/ESTIMATE, CompaniesMarketCap series; calendar-year, USD-based fo
 ## 6. Market facts (part e) and the case against each business and each share (part f), including short selling in Korea
 
 ### Takeaway
-All three shares roughly doubled or tripled over twelve months yet stand 38–59% below their June 2026 highs after five violent sell-offs; consensus still assumes revenue up 40–107% next year. The shares price a sharp earnings decline on P/E while still sitting above past-cycle peak P/B. Shorting is legally open in Korea but operationally constrained and exposed to very large buybacks, record volatility and circuit breakers; SK Hynix can now also be shorted through its US ADR.
+All three shares roughly doubled or tripled over twelve months yet stand 38–59% below their June 2026 highs after repeated violent sell-offs; they price a sharp earnings decline on P/E while still sitting above past-cycle year-end P/B peaks, and consensus still assumes revenue up 40–107% next year. Shorting is legally open in Korea but operationally constrained and exposed to very large buybacks, record volatility and circuit breakers; SK Hynix can now also be shorted through its US ADR.
 
 ### Cited Findings
 
@@ -337,6 +338,7 @@ Sources [MARKET/ESTIMATE]: [Samsung statistics](https://stockanalysis.com/quote/
 7. A reported S&P Global figure for Korean stock on loan (USD 42.5bn, February 2026) and January 2026 fines for naked shorting of Samsung shares: seen only in search summaries.
 8. The Samsung–Modine talks, the Samsung–Broadcom MOU and SK Hynix's reported purchase of Intel's Ohio site: press or tertiary sources only.
 9. Micron's 52-week closing high of USD 1,213.56 on 25 Jun 2026: search summary only; the intraday high of USD 1,255 is from the data vendor.
+10. KOSPI's fall of 9% with a trading halt on 13 Jul 2026: single press source (Wealth Professional).
 
 **Figures on which sources conflict**
 1. Samsung Q3 2026 foundry/LSI loss: KRW 0.777tn (Kiwoom) versus about KRW 1.5tn (unattributed, Herald) versus about USD 743m (SamMobile, search summary); Meritz's pre-release memory profit estimate of KRW 111.9tn exceeds the whole reported DS profit of KRW 106.5tn.
@@ -348,5 +350,5 @@ Sources [MARKET/ESTIMATE]: [Samsung statistics](https://stockanalysis.com/quote/
 7. Samsung FY2025 net income: KRW 45.2tn (press) versus KRW 44.3tn (S&P, attributable). FY2025 capex: about KRW 52.7tn (company basis, derived) versus KRW 47.5tn (cash-flow basis).
 8. Price/book: StockAnalysis 2.16 / 2.87 / 6.36 versus CompaniesMarketCap 2.71 / 3.81 / 6.26 (and a second figure of 3.10 / 5.12 / 6.51 on the same pages) for Samsung / SK Hynix / Micron. Samsung market value KRW 1,324tn (about USD 0.99tn at 1,340) versus USD 1.012tn.
 9. SK Hynix ADR proceeds: USD 26.5bn (Wikipedia) versus "more than USD 26bn" (press) versus up to USD 29.4bn planned. CXMT IPO: RMB 29.5bn planned (Reuters via Wikipedia) versus RMB 57.92bn raised (StorageNewsletter); first-day gain "almost 500%" versus 466%.
-10. KOSPI on 13 Jul 2026: −9% with a trading halt (Wealth Professional); direction on 9 Nov differs between headline summaries and the Korea JoongAng report of "three straight sessions of sharp declines" before 10 Nov.
+10. KOSPI direction on 9 Nov 2026: headline summaries describe a rebound, while Korea JoongAng Daily reports "three straight sessions of sharp declines" before the +4.39% close of 5,239.13 on 10 Nov.
 11. Micron forward estimates: FY2027 table (revenue USD 275.9bn, EPS USD 176.50) versus the same page's "next year" figures (USD 320.1bn, USD 207.76).
