@@ -229,7 +229,7 @@ Published estimates for breaking RSA-2048 have fallen from 20 million qubits / 8
 - Energy (Parker & Vermeer, arXiv 27 Apr 2023, older; RAND researchers per prior knowledge) [IND]: ~6 W per qubit, extrapolated from transmon systems, gives ~125 MW for a superconducting cryptographically relevant machine and ~$64,000 of electricity per broken key. Assumes a spacetime volume of 5.9×10⁶ qubit-days taken from older estimates — [arXiv:2304.14344](https://arxiv.org/abs/2304.14344)
 
 ### Inferences
-- Platform speed sets the trade-off. Within one cost model (Pinnacle, Feb–May 2026), moving from 1 µs to 1 ms cycles at equal runtime raises qubit counts ~30× for ions (2.7–3.1M vs ~94–98k) and ~100–130× for atoms (9.5–13M). The atom-specific design of Cain et al. instead uses high-rate codes and reconfigurability to reach 10⁴ qubits at weeks-to-months runtime. Estimates for the same platform therefore differ by about 3 orders of magnitude depending on code family and assumptions (see contradiction below).
+- Platform speed sets the trade-off. Within one cost model (Pinnacle, Feb–May 2026), moving from 1 µs to 1 ms cycles at equal runtime raises qubit counts ~30× for ions (2.7–3.1M vs ~94–98k) and ~100–130× for atoms (9.5–13M). The ion case is partly offset because it assumes a 10× lower physical error (0.01% vs 0.1%). The atom-specific design of Cain et al. instead uses high-rate codes and reconfigurability to reach 10⁴ qubits at weeks-to-months runtime. Estimates for the same platform therefore differ by about 3 orders of magnitude depending on code family and assumptions (see contradiction below).
 - RAND's 125 MW (2023) rests on a 5.9×10⁶ qubit-day spacetime volume from older estimates. Scaling it linearly to Gidney 2025's < 1M qubits at the same 6 W/qubit would give single-digit MW (my extrapolation, not a published figure).
 - Every 2025–2026 estimate assumes about 10⁻³ physical error across 10⁴–10⁶ qubits, plus real-time decoding and reaction times of about 10 µs. None of these has been shown at scale (Section 2).
 
@@ -254,7 +254,7 @@ IBM's three July 2026 claims are unrefereed preprints still being challenged; on
 
 **Google RCS (2019 onward)**
 - Google 2019 (Arute et al., *Nature* 574, 505; older, prior knowledge) [CO]: 53 qubits, linear cross-entropy benchmark (XEB) of ~0.002; claimed 10,000 years classically. IBM proposed ~2.5 days on the Summit supercomputer — [DOI 10.1038/s41586-019-1666-5](https://doi.org/10.1038/s41586-019-1666-5); [PostQuantum summary](https://postquantum.com/industry-news/ibm-three-quantum-advantage-papers/)
-- Pan, Chen & Zhang (Chinese Academy of Sciences), *PRL* 129, 090502 (2022, older) [IND]: one million samples of the 53-qubit, 20-cycle Sycamore circuits at fidelity ~0.0037 in ~15 h on 512 GPUs; projected tens of seconds on an exaflop machine — [arXiv:2111.03011](https://arxiv.org/abs/2111.03011)
+- Pan, Chen & Zhang (CAS Institute of Theoretical Physics, per prior knowledge; affiliation not shown on the arXiv page), *PRL* 129, 090502 (2022, older) [IND]: one million samples of the 53-qubit, 20-cycle Sycamore circuits at fidelity ~0.0037 in ~15 h on 512 GPUs; projected tens of seconds on an exaflop machine — [arXiv:2111.03011](https://arxiv.org/abs/2111.03011)
 - Willow RCS (9 Dec 2024) [CO]: 103 qubits, depth 40, XEB 0.1%; "5 minutes vs 10^25 years" (company estimate) — [Willow spec sheet](https://quantumai.google/static/site-assets/downloads/willow-spec-sheet.pdf)
 
 **USTC RCS**
@@ -358,7 +358,7 @@ Cryogenics is the clearest bottleneck for superconducting qubits, and for photon
 
 ### Inferences
 - At 10–100 L per refrigerator, global He-3 output of 22,000–30,000 L/yr could supply only ~220–3,000 new dilution refrigerators a year, even if all of it went to fridges. Bluefors alone ships about one system a day (~365/yr). The Bluefors–Interlune contract (10,000 L/yr) would equal about a third to a half of today's stated global output, if delivered. All of this is my arithmetic on the cited figures.
-- Interlune's projected 2.5 kg/yr would be ~18,700 L at standard temperature and pressure (He-3 density ≈ 0.134 g/L — standard physical constant, my conversion). If that triples US output, current US output is about 6,000 L/yr, consistent with the 22,000–30,000 L/yr multi-country range.
+- Interlune's projected 2.5 kg/yr would be ~18,600 L at standard temperature and pressure (He-3 density ≈ 0.1346 g/L — standard physical constant, my conversion). Depending on how "roughly tripling current US production" is read, current US output is about 6,000–9,000 L/yr. That is consistent with the 22,000–30,000 L/yr multi-country range.
 - A fault-tolerant superconducting machine of ~10⁵–10⁶ qubits would, per MP-IDSA, need "dozens or hundreds" of interconnected refrigerators. That makes He-3 supply, fridge lead times, and dense cryogenic wiring (not quantified in sources found) first-order constraints. Photonic machines avoid millikelvin cooling but need multi-hundred-watt 2–4 K plants.
 
 ### Gaps
