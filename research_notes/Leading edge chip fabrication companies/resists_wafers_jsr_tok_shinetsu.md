@@ -6,7 +6,7 @@ Research limits: the shared web-search budget ran out part-way through and the F
 
 **Most decision-relevant facts first**
 1. JSR is being sold again: on 9 Nov 2026 Mitsui Chemicals (4183) agreed to buy 100% of JSR from the JIC Capital funds, with DBJ, for ¥1,840bn EV (equity ¥1,392.1bn; 16x FY26E EBITDA), closing targeted for Oct 2027–Mar 2028. JIC paid ¥4,350/share (≈¥904bn equity) in 2024. No resist-industry merger happened under JIC; relisting is superseded.
-2. TOK is the only supplier with a third-party EUV share in the public domain: 29.3% by 2025 shipment volume, No.1 (28.0%, No.2 in 2024), per Fuji Chimera Research as quoted by TOK. TSMC was 33.6% of TOK's FY2025 sales.
+2. TOK is the only supplier for which a dated third-party EUV share was found: 29.3% by 2025 shipment volume, No.1 (28.0%, No.2 in 2024), per Fuji Chimera Research as quoted by TOK. TSMC was 33.6% of TOK's FY2025 sales.
 3. Earnings momentum (latest quarter, YoY): TOK OP +43% (margin 22.1%); Shin-Etsu OP +27% (electronics materials OP +34% in Jul–Sep, PVC segment still down for the half); Entegris sales +25%; SUMCO barely back to operating profit and guiding to a full-year loss.
 4. Prices are well off mid-2026 peaks: TOK −43% from May high, Shin-Etsu −28% from June high, SUMCO −64% from July high, Entegris −21% from June high — but still +27%, +17%, +47%, +75% year-to-date.
 
@@ -15,14 +15,14 @@ Research limits: the shared web-search budget ran out part-way through and the F
 ## Key question 1 — EUV photoresist market map
 
 ### Takeaway
-Only one hard, dated, third-party share number was obtainable: TOK 29.3% of EUV resist shipments in 2025 (No.1; Fuji Chimera via TOK). Everything else on supplier shares is company wording or low-grade market-report copy; chemically amplified resist (CAR) remains the production standard, metal-oxide resist (MOR, JSR/Inpria) and Lam's dry resist have confirmed but narrow production footholds, and high-NA is where the resist choice is still open.
+Only one hard, dated, third-party share number was obtainable: TOK 29.3% of EUV resist shipments in 2025 (No.1; Fuji Chimera via TOK). Everything else on supplier shares is company wording or low-grade market-report copy; chemically amplified resist (CAR) remains the production standard, metal-oxide resist (MOR, JSR/Inpria) and Lam's dry resist have production footholds that rest on company statements with unnamed customers, and high-NA is where the resist choice is still open.
 
 ### Cited Findings
 **Size and shares**
 - Semiconductor photoresist market US$3,081m in 2025, +12.7% YoY (TOK calculation from SEMI data); US$2,689m in 2024, +14.1% [ESTIMATE] — [TOK Integrated Report 2026, p.10](https://www.tok.co.jp/application/files/7417/9299/7012/Integrated_report2026_all.pdf); [TOK prior-year report, p.9](https://www.tok.co.jp/application/files/6717/5465/4693/Integrated_report2024_all_a4.pdf)
 - TOK shares by shipment volume, Fuji Chimera Research ("2026 先端/注目半導体関連市場の現状と将来展望"), 2025: EUV 29.3% (Global No.1), ArF 14.4% (No.4), KrF 33.3% (No.1), g/i-line 25.3% (No.1). 2024 (2025 edition): EUV 28.0% (No.2), ArF 15.9% (No.4), KrF 32.4% (No.1), g/i 22.7% (No.1). Forecast market CAGR 2025→2031 (basis not stated): EUV 28.2%, ArF 7.4%, KrF 6.1%, g/i 3.8% [ESTIMATE; reliability: reputable Japanese research house, but quoted by the beneficiary, volume not value, and no other supplier's figure is shown] — same two TOK reports.
 - JSR: "No.2 global share in photoresists" and "the only company able to offer both CAR and MOR for EUV" [COMPANY CLAIM, no measurer or period given] — [Mitsui Chemicals presentation, 9 Nov 2026, slide 15](https://jp.mitsuichemicals.com/content/dam/mitsuichemicals/sites/mci/documents/release/2026/event_261109.pdf)
-- Inpria (JSR's MOR subsidiary) sales: US$27.5m (FY2023), US$51.1m (FY2024), US$60.1m (FY2025); operating loss US$9.3m → US$28.3m → US$42.3m; net assets −US$28.7m [FILING] — [Mitsui Chemicals timely disclosure, 9 Nov 2026, appendix](https://jp.mitsuichemicals.com/content/dam/mitsuichemicals/sites/mci/documents/release/2026/261109.pdf). This is the only audited-type number sizing spin-on MOR (entity sales; may include intragroup flows).
+- Inpria (JSR's MOR subsidiary) sales: US$27.5m (FY2023), US$51.1m (FY2024), US$60.1m (FY2025); operating loss US$9.3m → US$28.3m → US$42.3m; net assets −US$28.7m [FILING] — [Mitsui Chemicals timely disclosure, 9 Nov 2026, appendix](https://jp.mitsuichemicals.com/content/dam/mitsuichemicals/sites/mci/documents/release/2026/261109.pdf). This is the only filed number sizing spin-on MOR (entity sales; may include intragroup flows).
 - Low-reliability market-report figures (paid-report teasers, scope differs): "top three (TOK, JSR, Shin-Etsu) ≈90% of EUV resist"; EUV resist market US$176m in 2024 → US$822m in 2031 (QYResearch) versus US$358m in 2025 (another vendor); "JSR >22% in 2024, top five = 50%" for "photoresist chemicals for advanced lithography" (GMI) [ESTIMATE, weak] — [GII/QYResearch page](https://www.gii.co.jp/report/qyr1862412-euv-photoresists-global-market-share-ranking.html); [GMI page](https://www.gminsights.com/industry-analysis/photoresist-chemicals-for-advanced-lithography-market) (seen only as search summaries).
 - Undated aggregator text: five Japanese makers (TOK, JSR, Shin-Etsu, Sumitomo Chemical, Fujifilm) hold ~90% of world photoresist share; Shin-Etsu "about 20% of photoresists, over 40% in leading-edge" [ESTIMATE, old (c.2021) and unsourced] — [asset-alive theme page](https://www.asset-alive.com/thema/?mode=show&tid=227)
 
@@ -41,7 +41,7 @@ Only one hard, dated, third-party share number was obtainable: TOK 29.3% of EUV 
 ### Inferences
 - TOK moving from No.2 (28.0%) to No.1 (29.3%) means another supplier led EUV volumes in 2024 with more than 28%; with JSR calling itself No.2 in photoresists overall, EUV CAR is a three-horse race (TOK, JSR, Shin-Etsu) with each plausibly in the 20–30% band. This is inference, not a measured split.
 - MOR revenue is still small: Inpria's US$60m compares with a ~US$3.1bn resist market and an EUV sub-market in the hundreds of millions of dollars.
-- Because a chipmaker's resist is qualified layer by layer, the 2019 episode showed leverage without lasting share loss for the Japanese makers that built Korean plants (TOK, JSR) — inference from plant decisions above.
+- The 2019 episode is the precedent for export licensing being applied to resists; TOK (Incheon, Pyeongtaek) and JSR (Cheongju MOR plant) now finish product inside Korea, which weakens that lever for Korean customers but not for others — inference from the plant decisions cited here and in Key question 3.
 
 ### Gaps
 - No verifiable 2024/2025 EUV share for JSR, Shin-Etsu, Sumitomo Chemical, Fujifilm, DuPont/Qnity or Dongjin; no TECHCET or Fuji Keizai table obtained (search budget exhausted).
@@ -107,7 +107,7 @@ Unusually for a delisted company, JSR is well documented: it still files securit
 - The buyer being a pellicle/tape maker rather than a resist rival is consistent with the antitrust constraint JSR itself flagged in 2024.
 
 ### Gaps
-- R&I rating level; split of ¥447.9bn "debt-like items"; H1 FY3/2027 figures (not yet published); customer names for MOR; any job-cut programme (none found in the filing text; headcount fell 9%, largely disposals).
+- R&I rating level; split of ¥447.9bn "debt-like items"; H1 FY3/2027 figures (not yet published); customer names for MOR; any job-cut programme (none found in the filing text; headcount fell 9% in a year of disposals).
 
 ---
 
@@ -119,6 +119,7 @@ TOK is a single-segment, net-cash resist and high-purity-chemical maker growing 
 ### Cited Findings
 **(a) Position**
 - Shares: see Key question 1 (EUV 29.3% No.1; KrF 33.3% No.1; g/i 25.3% No.1; ArF 14.4% No.4; 2025 volume, Fuji Chimera); overall semiconductor photoresist share 24.7%, No.1 (2024; TOK's calculation from Fuji Chimera data) [ESTIMATE via company] — [prior-year report, p.7](https://www.tok.co.jp/application/files/6717/5465/4693/Integrated_report2024_all_a4.pdf)
+- Standing at the leading edge: one of a handful of qualified EUV CAR suppliers (rivals JSR, Shin-Etsu, Sumitomo Chemical, Fujifilm, DuPont/Qnity, Dongjin), not a sole source; leader by volume in KrF and g/i-line; fourth in ArF (shares above).
 - Sales mix FY2025: electronic functional materials (resists, packaging materials) ¥124.7bn, high-purity chemicals ¥109.4bn, other ¥2.9bn [FILING] — [FY2025 kessan tanshin, 9 Feb 2026](https://www.tok.co.jp/application/files/1517/7061/1184/q4_2512.pdf)
 - Customer concentration: TSMC ¥79.6bn = 33.6% of FY2025 sales (¥61.1bn, 30.4% in FY2024) [FILING] — [securities report FY2025](https://www.tok.co.jp/application/files/9717/7432/8945/securities_2512.pdf)
 - Geography FY2025: Taiwan ¥85.6bn (36.1%), China ¥48.6bn (20.5%), Japan ¥36.6bn, Korea ¥30.4bn, US ¥24.0bn, other ¥11.7bn [FILING] — FY2025 tanshin.
@@ -180,6 +181,7 @@ Group profit is two stories: electronics materials (wafers, resists, mask blanks
 ### Cited Findings
 **(a) Position**
 - Electronics materials = silicon wafers, photoresists, photomask blanks, rare-earth magnets, encapsulants; AI-related products about 15% of group sales (April 2026); wafers for GPU/HBM just under 10% of industry 300mm volume, over 20% for broader AI/data-centre demand [COMPANY CLAIM] — [FY3/2026 call summary, 28 Apr 2026](https://www.shinetsu.co.jp/wp-content/uploads/2025/07/20260428_summary_J.pdf)
+- Rivals by product (names only; shares not verified here): wafers — SUMCO, GlobalWafers, Siltronic, SK Siltron; EUV/ArF resists — TOK, JSR, Sumitomo Chemical, Fujifilm; mask blanks — Hoya, AGC. One of several suppliers in each; customer concentration is not disclosed in the documents read.
 - Sales by market, H1 FY3/2027: Japan 22%, US 26%, Asia/Oceania 34% of which China 10%, Europe 11%, other 7% [FILING] — [H1 tanshin, 27 Oct 2026](https://www.shinetsu.co.jp/wp-content/uploads/2026/07/20261027_con_J.pdf)
 - Photoresists: "exposure materials keep expanding"; new Isesaki site began operating in FY3/2026; Jan–Mar 2026 resist sales "grew sharply" on Oct–Dec; mask blanks: "working on the next move" [COMPANY CLAIM] — FY3/2026 call summary; [FY3/2026 tanshin](https://www.shinetsu.co.jp/wp-content/uploads/2025/07/20260428_con_J.pdf)
 
@@ -213,7 +215,7 @@ Group profit is two stories: electronics materials (wafers, resists, mask blanks
 - FY3/2026 landed "in line with the forecast published last July" (OP −14%); the decline was PVC: Shintech major turnaround and annual contract price resets [COMPANY CLAIM] — FY3/2026 call summary.
 - FY3/2027 guidance was withheld in April (Iran conflict, feedstock volatility), issued 24 Jul at OP ¥700bn with the comment that it "is below analysts' forecasts … the gap arises in infrastructure materials", and kept in October despite 55% first-half progress [COMPANY CLAIM] — [Q1 call summary, 24 Jul 2026](https://www.shinetsu.co.jp/wp-content/uploads/2026/07/20260724_summary_J.pdf)
 - Capex slipped: FY3/2026 ¥339.7bn vs ¥370bn forecast (equipment acceptance timing); FY3/2027 forecast raised from ¥350bn to ¥380bn in October [COMPANY CLAIM].
-- Write-downs: restructuring charge ¥10.4bn in FY3/2026 (Simcoa, Australia; ¥7.8bn plus ¥2.9bn impairment the year before) [FILING].
+- Write-downs: restructuring charge ¥10.4bn in FY3/2026 (reorganisation of Simcoa, Australia); FY3/2025 carried ¥7.8bn of restructuring cost and ¥2.9bn of impairment [FILING].
 - Wafers: "our business is centred on long-term contracts, so there has been no recent price change" (April) → price increases applied from October 2026 on volumes above contract and for customers without contracts; advanced products priced by tier [COMPANY CLAIM].
 - Company word only: wafer and resist market positions (no share figures in the documents read).
 
@@ -232,14 +234,14 @@ Group profit is two stories: electronics materials (wafers, resists, mask blanks
 
 **(f) Case against**
 - Business: 38% of sales and, in FY3/2025, 39% of operating profit came from a commodity segment (PVC/caustic) whose profit then fell 43% in a year (calc); wafer pricing is locked by contracts signed in 2020–21, so the upcycle reaches the P&L slowly; new wafer capacity is twice as expensive; gross margin fell four points in FY3/2026; no numerical medium-term plan or succession timetable in the documents read.
-- Shares: about 20x for a group whose operating profit is still 30% below the FY3/2023 peak (¥998bn); consensus already sits above guidance; net cash is being distributed (lower interest income ahead).
+- Shares: about 20x for a group whose operating profit is still 30% below the FY3/2023 peak (¥998bn); consensus already sits above guidance; net cash is being distributed (interest income was ¥31.1bn in the half; lower balances imply less of it — my inference).
 - Events: ¥50bn buyback to 27 Apr 2027; Q3 results around late January (27 Jan in 2026); 2027 PVC contract outcome; first wafer contract renewals from end-2027.
 
 ### Inferences
 - If the 2020–21 contracts roll off between end-2027 and 2030 at prices reflecting "double" construction costs, wafer profit growth is a 2028–2030 event more than a 2027 one.
 
 ### Gaps
-- 300mm wafer share, wafer/resist/blank revenue split, EUV resist share, Isesaki capex amount, details of the February 2026 secondary offering, management ages/succession — none available in the documents fetched.
+- 300mm wafer share, customer concentration, wafer/resist/blank revenue split, EUV resist share, Isesaki capex amount, details of the February 2026 secondary offering, management ages/succession — none available in the documents fetched.
 
 ---
 
@@ -303,9 +305,10 @@ Sources as cited in Key questions 2–5.
 **Past downturns** [FILING figures as compiled by kabutan, a third-party aggregator, unless noted]
 - TOK: sales −31% from FY3/2008 (¥102.3bn) to FY3/2010 (¥70.6bn); FY2019 −2.3%; FY2023 −7.5% with OP −25%; operating cash flow stayed positive every year 2021–2025 (¥17.2bn–¥35.2bn) — [kabutan](https://kabutan.jp/stock/finance?code=4186); [securities report](https://www.tok.co.jp/application/files/9717/7432/8945/securities_2512.pdf)
 - Shin-Etsu: sales −33% from FY3/2008 (¥1,376bn) to FY3/2010 (¥917bn); FY3/2024 sales −14%, OP −30% (¥998bn → ¥701bn); FY3/2026 OP −14% while electronics OP rose 6% — [kabutan](https://kabutan.jp/stock/finance?code=4063)
-- SUMCO: sales −54% from FY1/2008 (¥475bn) to FY1/2010 (¥218bn); 2023–2025: sales −7% then +3%, but OP ¥109.7bn → ¥1.3bn and dividend ¥81 → ¥20 — [kabutan](https://kabutan.jp/stock/finance?code=3436)
+- SUMCO: sales −54% from FY1/2008 (¥475bn) to FY1/2010 (¥218bn); sales −3% (2023), −7% (2024), +3% (2025), but OP ¥109.7bn (2022) → ¥1.3bn (2025) and dividend ¥81 → ¥20 — [kabutan](https://kabutan.jp/stock/finance?code=3436)
 - Entegris: revenue US$3.52bn (2023) → US$3.24bn (2024, −8%) → US$3.20bn (2025, −1%); net income US$180.7m → US$292.8m → US$235.6m — [stockanalysis.com](https://stockanalysis.com/stocks/entg/forecast/)
 - JSR: core OP ¥43.3bn (FY2021) → ¥34.0bn → ¥8.3bn → ¥0.2bn (FY2024, JIC's presentation basis) → ¥62.3bn (FY2025) — JIC reference material.
+- Sector-wide dated event: Japanese market commentary lists Nvidia's results among the focus points for the week of 16 Nov 2026 — [kabuyoho news list](https://kabuyoho.jp/reportTop?bcode=4063)
 
 ### Inferences
 - The 2026 share-price pattern was common to all four listed names (peak May–July, 17–34% falls in July, further 7–14% single-day falls on 5–6 Nov); the cause was not researched here and should come from the macro/cycle notes.

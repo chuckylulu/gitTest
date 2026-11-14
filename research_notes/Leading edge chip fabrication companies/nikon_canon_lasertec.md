@@ -1,94 +1,303 @@
 # Japanese lithography and mask-inspection companies: Nikon, Canon, Lasertec (+ Gigaphoton/Komatsu note) — fact base as of 14 November 2026
 
-STATUS: WORK IN PROGRESS — skeleton saved at start of research; sections are filled in as sources are checked.
+**How to read this file.** Tags: [FILING] filed/audited figure · [COMPANY CLAIM] company statement no outside party has confirmed (includes all forecasts) · [CONFIRMED] company statement confirmed by a named outside party · [ESTIMATE] third-party estimate/calculation · [PRESS] press report. "My calc" = arithmetic by this researcher on filed figures. Share prices are Tokyo closes for Friday 13 Nov 2026 taken from Kabutan (exchange-data vendor); Kabutan's market values use issued shares including treasury stock, so ex-treasury values are also given.
 
-Tag key: [FILING] filed/audited figure · [COMPANY CLAIM] company statement not confirmed by an outside party · [CONFIRMED] company statement confirmed by a named outside party · [ESTIMATE] third-party estimate · [PRESS] press report resting on unnamed sources.
+**Method limit.** The shared web-search budget ran out after three searches, so this file rests on documents fetched directly from company IR sites, TDnet/EDINET copies, SEC EDGAR, Scorpion Capital's site, Kabutan and karauri.net. I could not search Reuters/Nikkei/Bloomberg, TechInsights, Gartner or SEMI; everything that needed them is listed at the end as unverified. Sections (a)–(d) are business facts; (e) is market facts; (f) is the case against. My own readings appear only under "Inferences".
 
-## Nikon (TSE 7731)
-
-### Takeaway
-(interim draft — being expanded)
-
-### Cited Findings
-- [FILING] FY to 31 Mar 2026 (published 8 May 2026): revenue ¥677.1bn (−5.3%), operating loss ¥112.4bn, loss attributable to owners ¥86.0bn, FCF −¥17.0bn, ROE −14.1%, dividend ¥40. Impairment losses ¥99.1bn, of which Digital Manufacturing (Nikon SLM Solutions) ¥90.6bn and Precision Equipment ¥5.8bn. — [Nikon FY2026/3 presentation](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_all_e.pdf); [tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_4qf_c_e.pdf)
-- [FILING] 1H FY3/2027 (Apr–Sep 2026, published 5 Nov 2026): revenue ¥334.6bn (+6.9%), operating profit ¥8.9bn, net ¥10.6bn, FCF −¥11.8bn; Precision Equipment revenue ¥90.6bn, OP ¥7.2bn; full-year guidance revenue ¥722bn, OP ¥16.5bn, net ¥16.0bn, ROE 2.7%, dividend ¥20. — [Nikon 2Q FY2027/3 presentation](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
-- [COMPANY CLAIM] Nikon is "reassessing the development plan for the next-generation ArF immersion lithography system" (5 Nov 2026). — [Nikon 2Q Q&A, 9 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_2q/20261109_e.pdf)
-- [FILING] Semiconductor lithography units incl. refurbished: FY3/2023 45; FY3/2024 46; FY3/2025 28; FY3/2026 27; FY3/2027 forecast 28 (ArF immersion 3, ArF dry 7, KrF 1, i-line etc. 17). — same presentation, p.38.
-
-
-#### Interim data dump (to be reorganised in final pass)
-- Nikon market facts (Kabutan, close 13 Nov 2026): ¥1,604.0; mkt cap ¥535.1bn (333.59m issued shares); forecast PER 33.0x; PBR 0.89x; yield 1.25%; margin buy/sell ratio 3.01x; 52-wk high ¥2,390 (15 May 2026), low ¥1,497 (9 Nov 2026); YTD −8.0% (¥1,744 on 30 Dec 2025); 12-month −10.9% (¥1,800 on 13 Nov 2025); 10-yr range ¥620 (Oct 2020)–¥2,396 (Jan 2018). — https://kabutan.jp/stock/kabuka?code=7731
-- Nikon balance sheet 30 Sep 2026: cash ¥145.8bn; bonds and borrowings ¥59.1bn current + ¥171.6bn non-current; interest-bearing debt per company chart ¥254.3bn; equity ratio 53.4%; inventories ¥357.2bn; advances received ¥74.3bn.
-- Nikon capex/D&A/R&D (¥bn): FY3/24 capex 70.7, D&A 35.6, R&D 76.5; FY3/25 69.3 / 44.1 / 80.1; FY3/26 59.8 / 43.0 / 77.1; FY3/27 forecast 75.0 / 43.0 / 73.5. FCF: FY3/24 −10.6; FY3/25 −21.7; FY3/26 −17.0; 1H FY3/27 −11.8.
-- EssilorLuxottica: 10.75% at 1 Oct 2025 with clearance to go to 20% (Nikon 2Q FY3/26 slides, 6 Nov 2025); 61,052 thousand shares = 18.53% at 31 Mar 2026 (Nikon stock status page https://www.nikon.com/company/ir/stock_info/status/).
-- Medium-term plan FY2026–2030 (8 May 2026): FY2030 targets revenue ¥1tn, OP ¥80bn, ROIC 7%, ROE 10%; Precision Equipment FY26 ¥188bn/¥12bn → FY28 ¥255bn/¥23bn → FY30 ¥290bn/¥33bn. https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf
-- Canon market facts (Kabutan, 13 Nov 2026): ¥4,832; PER 12.1x; PBR 1.21x; yield 3.31%; mkt cap ¥6,444.7bn on issued shares (1,333.76m) / ≈¥4,027bn on 833.3m shares outstanding ex-treasury; YTD +4.3%; 12-month +7.7%.
-- Canon lithography units: 2025 actual 234 (KrF 46, i-line 188); 2026 Q1 44, Q2 48, Q3 42; FY2026 projection 221 (KrF 66, i-line 155) as of 27 Oct 2026.
-- Lasertec market facts (Kabutan, 13 Nov 2026): ¥36,130; PER 36.0x; PBR 13.53x; yield 0.97%; mkt cap ¥3,406.6bn (issued shares); YTD +21.9%; 12-month +23.6%; all-time high ¥58,580 (19 Jun 2026).
-- Lasertec FY6/2026: sales ¥230.5bn (−8.3%), OP ¥105.3bn, NI ¥77.5bn, orders ¥237.5bn, backlog ¥323.0bn; FY6/2027 guidance sales ¥290bn, OP ¥125bn, NI ¥90bn; Q1 FY6/2027 sales ¥40.4bn (−25.5%), OP ¥15.8bn (−41.0%).
-
-### Inferences
-(pending)
-
-### Gaps
-(pending)
-
-## Canon (TSE 7751)
+## Nikon (TSE 7731): results to March 2026, first half to September 2026, Precision Equipment, restructuring, EssilorLuxottica, balance sheet
 
 ### Takeaway
-(pending)
+Nikon's semiconductor lithography is a sub-scale DUV business (27–28 tools a year, three of them ArF immersion) inside a group that lost ¥112bn at operating level in FY3/2026, has had three years of negative free cash flow and is now in net debt; on 5 Nov 2026 it said it is "reassessing" the next-generation ArF immersion platform it had promised as a prototype in FY2028. Guidance was raised on service revenue, but the group's guided FY3/2027 ROE is 2.7% and the shares trade at 0.89x book and 33x guided earnings.
 
 ### Cited Findings
-(pending)
+
+#### (a) Position
+- [FILING] Product scope: ArF immersion (NSR-S636E), ArF dry (NSR-S333F, first unit shipped FY3/2026), KrF and i-line steppers/scanners, FPD lithography, digital (maskless) lithography DSP-100/110 for advanced packaging, Litho Booster alignment stations. No EUV tool. Separately, the Industry segment sells "EUV related components". — [2Q FY3/2027 slides, 5 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf); [Q&A 13 May 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2026_4q/20260513_e.pdf)
+- [FILING] Semiconductor lithography units sold, including refurbished (fiscal years to March):
+
+| FY to Mar | ArF immersion | ArF dry | KrF | i-line etc. | Total | of which new |
+|---|---|---|---|---|---|---|
+| 2023 | 4 | 8 | 6 | 27 | 45 | 27 |
+| 2024 | 11 | 8 | 4 | 23 | 46 | 31 |
+| 2025 | 3 | 5 | 2 | 18 | 28 | 18 |
+| 2026 | 3 | 4 | 0 | 20 | 27 | 22 |
+| 2027 forecast (5 Nov 2026) | 3 | 7 | 1 | 17 | 28 | 23 |
+
+  1H FY3/2027 actual: 6 new + 2 refurbished (1H FY3/2026: 8 + 1), so 20 of the 28 forecast units fall in October–March. FPD lithography: 38 units FY3/2025, 32 FY3/2026, 27 forecast FY3/2027 (17 sold in 1H). — [2Q FY3/2027 slides pp.10, 19, 38](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- [COMPANY CLAIM] Nikon's own estimate of the world semiconductor-lithography market: 625 units CY2024, 570 CY2025, 580 CY2026; FPD lithography 58 / 67 / 50 units. On that basis Nikon's 22 new tools in FY3/2026 are about 4% of market units (my calc). — [FY3/2026 slides, 8 May 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_all_e.pdf)
+- [COMPANY CLAIM] Customer concentration: the plan review says semiconductor lithography "fell short of offsetting decline in orders from core customer", cites "revenue reliance on a specific customer" and says "business at our core US customer contracts substantially". The customer is not named in any document read. — [Medium-Term Management Plan, 8 May 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf)
+- [FILING] Precision Equipment revenue by customer location (includes FPD tools): FY3/2025 ¥202.0bn, of which China ¥87.9bn (43.5%), US ¥25.9bn (12.8%); FY3/2026 ¥167.3bn, of which China ¥81.6bn (48.8%), US ¥19.6bn (11.7%), Europe ¥24.2bn, Japan ¥18.0bn; 1H FY3/2027 ¥90.6bn, of which China ¥41.3bn (45.6%), US ¥9.1bn (10.0%). Group revenue from China: ¥170.5bn of ¥677.2bn in FY3/2026 (25.2%); ¥80.4bn of ¥334.7bn in 1H FY3/2027 (24.0%). Percentages are my calc. — [FY3/2026 tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_4qf_c_e.pdf); [1H FY3/2027 tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27_2qf_c_e.pdf)
+- [FILING] Ownership: listed on TSE Prime; 333,585,686 shares issued, 4,112,725 in treasury (30 Sep 2026). Largest holders at 31 Mar 2026: SG/EssilorLuxottica 61,052 thousand shares (18.53% ex-treasury), Master Trust Bank of Japan 13.88%, Meiji Yasuda Life 5.34%, a Silchester International vehicle 3.07%. — [Nikon stock information page](https://www.nikon.com/company/ir/stock_info/status/); [1H FY3/2027 tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27_2qf_c_e.pdf)
+- [COMPANY CLAIM] EssilorLuxottica held 10.75% at 1 Oct 2025 and had "obtained clearance to own up to 20%". The filings read do not state its intentions. — [2Q FY3/2026 presentation script, 6 Nov 2025](https://www.nikon.com/company/ir/ir_library/result/pdf/2026/26second_all_script_e.pdf)
+
+#### (b) Economics
+- [FILING] Group, ¥bn:
+
+| | FY3/2025 | FY3/2026 | 1H FY3/2027 (Apr–Sep 2026) | FY3/2027 guidance (5 Nov 2026) |
+|---|---|---|---|---|
+| Revenue | 715.2 | 677.1 (−5.3%) | 334.6 (+6.9%) | 722.0 |
+| Gross margin | 43.6% | 40.9% | 43.2% | n/a |
+| Operating profit | 2.4 | −112.4 | 8.9 (1H FY3/2026: −4.8) | 16.5 |
+| Profit attributable to owners | 6.1 | −86.0 | 10.6 | 16.0 |
+| Free cash flow | −21.7 | −17.0 | −11.8 | n/a |
+| Capex (incl. right-of-use) | 69.3 | 59.8 | n/a | 75.0 |
+| R&D (incl. capitalised) | 80.1 | 77.1 (11.4% of revenue) | n/a | 73.5 |
+| ROE | 0.9% | −14.1% | n/a | 2.7% |
+| Dividend per share | ¥50 | ¥40 | ¥10 interim | ¥20 |
+
+  FY3/2024 free cash flow was also negative (−¥10.6bn). — [2Q FY3/2027 slides](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf); [FY3/2026 tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_4qf_c_e.pdf); [1H FY3/2027 tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27_2qf_c_e.pdf)
+- [FILING] Guidance history for FY3/2027: operating profit ¥10.0bn on revenue ¥740bn (8 May 2026) → ¥11.0bn / ¥732bn (6 Aug) → ¥16.5bn / ¥722bn (announced 30 Oct, confirmed 5 Nov). The upgrade is attributed to Precision Equipment service revenue, US tariff refunds (¥6.4bn booked in 1H) and deferred expenses; second-half operating profit guidance was cut from ¥16.5bn to ¥7.6bn. — [Forecast revision, 30 Oct 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/news/2026/20261030_01_e.pdf); [2Q FY3/2027 slides p.29](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- [FILING] Balance sheet at 30 Sep 2026: cash ¥145.8bn; bonds and borrowings ¥230.7bn (¥59.1bn current, ¥171.6bn non-current); interest-bearing debt ¥254.3bn on the company's chart, i.e. net debt about ¥108bn (my calc; ¥82bn at Mar 2026, ¥50bn at Mar 2025). Equity ratio 53.4%; inventories ¥357.2bn (Precision Equipment ¥128.7bn at Mar 2026); advances received ¥74.3bn. The company is not in net cash. — [1H FY3/2027 tanshin](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27_2qf_c_e.pdf); [2Q FY3/2027 slides pp.32–33](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- [FILING] Precision Equipment segment (semiconductor + FPD lithography), ¥bn: FY3/2025 revenue 201.9, operating profit 1.5; FY3/2026 revenue 167.2, operating loss 4.5 (after ¥9.2bn net one-time costs); 1H FY3/2027 revenue 90.6, operating profit 7.2 (Q1 −2.6, Q2 +9.8, the latter helped by an inventory write-down reversal pulled forward from 2H); FY3/2027 guidance revenue 190.0, operating profit 13.0 (6.8%). Segment R&D ¥21.6bn in FY3/2026. Service revenue is not disclosed in absolute terms; it is expected to rise about ¥5.0bn in FY3/2027. — [2Q FY3/2027 slides](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf); [Q&A, 9 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_2q/20261109_e.pdf)
+- [FILING] Rest of group, FY3/2026 actual → FY3/2027 guidance, ¥bn: Imaging Products 290.1 / OP 17.2 → 280.0 / 13.0 (camera demand falling in China; memory costs); Healthcare 111.9 / 1.5 → 126.0 / 10.0; Industry (ex-Components; optical and EUV-related components, measuring) 76.1 / 9.0 → 88.0 / 16.5; Digital Manufacturing (metal 3D printers, Nikon SLM Solutions) 28.0 / −106.2 → 34.0 / −4.0; corporate −30.7 → −34.0. — [2Q FY3/2027 slides pp.17, 28](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+
+#### (c) Execution record
+- [FILING] Previous plan (FY2022–25) targeted revenue ¥700bn, operating margin above 10% and ROE above 8% for FY2025; actual FY3/2026 was a ¥112.4bn operating loss. The company's own review: "limited resources were spread across many new initiatives". — [Medium-Term Management Plan, 8 May 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf)
+- [FILING] Impairments: ¥99.1bn in FY3/2026, of which ¥90.6bn in Digital Manufacturing (all ¥60.6bn of Nikon SLM Solutions goodwill plus ¥26.2bn of its intangibles; SLM was acquired in 2023) and ¥5.8bn in Precision Equipment "due to the downturn in the semiconductor lithography system business". FY3/2025 had ¥10.8bn, of which ¥7.9bn in Precision Equipment ("revisions to investment plans by major customers"). Precision Equipment also wrote down ¥5.6bn of long-held inventory in Q4 FY3/2026. — [FY3/2026 tanshin, impairment note](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_4qf_c_e.pdf); [Notice, 30 Apr 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/news/2026/20260430_01_e.pdf); [Notice, 5 Feb 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/news/2026/20260205_02_e.pdf)
+- [FILING] FY3/2026 guidance path: operating profit ¥14.0bn (6 Nov 2025) → −¥100.0bn (5 Feb 2026) → −¥112.4bn actual; dividend cut from ¥50 to ¥40; chairman and president took no bonus. From 1 April 2026 Yasuhiro Ohmura (former CTO) is President and CEO, Muneaki Tokunari is chairman. — [Notice, 5 Feb 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/news/2026/20260205_01_e.pdf); [Change of representative directors, 12 Feb 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/news/2026/20260212_01_e.pdf)
+- [COMPANY CLAIM] Roadmap slip. 6 Nov 2025: Nikon was "jointly working with a major semiconductor maker to develop a new platform for ArF immersion lithography… on track to deliver a prototype in FY28". 5 Nov 2026: "Reassessing the development plan for the next-generation ArF immersion lithography system"; the Q&A says the review covers "the scope and timing of development" because demand for existing tools is stronger than expected. — [Script, 6 Nov 2025](https://www.nikon.com/company/ir/ir_library/result/pdf/2026/26second_all_script_e.pdf); [Q&A, 9 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_2q/20261109_e.pdf)
+- [FILING] Unit forecasts missed: FY3/2026 semiconductor units were guided at 34 (Aug 2025), then 29 (Nov 2025), and came in at 27 as customers postponed deliveries; FY3/2027 refurbished units were trimmed from 6 to 5 in November 2026. — [Script, 6 Nov 2025](https://www.nikon.com/company/ir/ir_library/result/pdf/2026/26second_all_script_e.pdf); [2Q FY3/2027 slides p.19](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- [COMPANY CLAIM] Not confirmed by any outside party in the material read: "strong inquiries, including requests for system evaluations, from customers with whom we have not previously done business, including major semiconductor manufacturers", driven by HBM-related ArF dry demand; all ArF dry tools planned for FY3/2027 are ordered; of three ArF immersion tools planned, one is ordered and two are under negotiation; DSP-100 has its first order with delivery in FY3/2028. — [Q&A, 9 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_2q/20261109_e.pdf)
+- [FILING] Contingencies: provision of ¥1.49bn at subsidiary Optos for possible US penalties over refurbished products sold without distinction from new ones (review continuing, further impact "unable to reasonably estimate"); Indian customs case back before the Supreme Court since July 2026, no provision. — [1H FY3/2027 tanshin, contingent liabilities](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27_2qf_c_e.pdf)
+
+#### (d) Path forward, 2027–2030
+- [COMPANY CLAIM] Plan FY2026–2030 (published 8 May 2026): FY2030 revenue ¥1tn, operating profit ¥80bn+, ROIC 7%, ROE 10%. Precision Equipment: revenue ¥188bn / OP ¥12bn (FY26) → ¥255bn / ¥23bn (FY28) → ¥290bn / ¥33bn (FY30, 11.4% margin). Three focus areas: digital cinema cameras, large-format metal 3D printers, "ArF immersion and digital lithography". Semiconductor strategy: "focus on expanding business in existing models for multiple major semiconductor makers" and win back-end customers with digital lithography. — [Medium-Term Management Plan](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf)
+- [COMPANY CLAIM] Funding: up to ¥800bn of operating cash flow before R&D over five years, split R&D 45–50%, capex about 40%, shareholder returns about 10% (total return ratio 40% or more); major M&A paused; ¥60bn+ of share and land sales; production-site capex scaled back from ¥100bn to ¥70bn; equity ratio to stay above 50% and interest-bearing debt to be "reined in". — [Medium-Term Management Plan p.16](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf)
+- [COMPANY CLAIM] Done so far: Yokohama plant closed (2025); Nikon Metrology NV dissolved; MRMC sold (2026); wafer-bonding R&D business transferred; a higher-productivity digital lithography system (1.5 µm line/space) announced June 2026 for launch in FY3/2028; next fiscal year "sales of ArF lithography systems as a whole" expected to exceed this year's. — [Medium-Term Management Plan p.15](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf); [Q&A, 17 Aug 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_1q/20260817_e.pdf); [Q&A, 9 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_2q/20261109_e.pdf)
+- [COMPANY CLAIM] EUV-related components (Industry segment): demand is "expanding beyond conventional use in mask shops to include mass-production processes at wafer fabs", with earnings contribution "from the next fiscal year onward". — [Q&A, 9 Nov 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2027_2q/20261109_e.pdf)
+
+#### (e) Market facts (kept apart)
+- Close 13 Nov 2026 ¥1,604.0. Market value ¥535.1bn on issued shares, ¥528.5bn ex-treasury (my calc). Forecast P/E 33.0x (guided EPS ¥48.57); trailing P/E not meaningful (FY3/2026 EPS −¥261.57); P/B 0.89x; yield 1.25%; margin-trading long/short ratio 3.01x. — [Kabutan 7731](https://kabutan.jp/stock/kabuka?code=7731); [2Q FY3/2027 slides p.16](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- 2026 year-to-date −8.0% (¥1,744 on 30 Dec 2025); 12 months −10.9% (¥1,800 on 13 Nov 2025). 52-week high ¥2,390 (15 May 2026), low ¥1,497 (9 Nov 2026). Annual ranges: 2025 ¥1,238.5–1,941.5; 2024 ¥1,319.5–2,010; 2023 ¥1,154–1,943.5; 2022 ¥1,052–1,774; 2021 ¥633–1,360; 2020 ¥620–1,397; 2018 high ¥2,396. — [Kabutan 7731 daily/yearly tables](https://kabutan.jp/stock/kabuka?code=7731)
+- Reaction to news: forecast upgrade filed 15:30 on 30 Oct → +3.7% on 2 Nov; first-half results filed 15:30 on 5 Nov → −8.1% on 6 Nov, a day on which Japanese semiconductor stocks opened sharply lower on US AI-regulation fears. After the full-year results and plan of 8 May 2026 the shares rose from ¥1,880.5 to ¥2,326.5 by 14 May (cause not checked). — [Kabutan 7731](https://kabutan.jp/stock/kabuka?code=7731); [MINKABU PRESS via Kabutan, 6 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611060620)
+- Consensus for the next two fiscal years: not obtained (see Gaps). Company guidance is the only forward figure here.
+
+#### (f) Case against
+- Business: no EUV; ArF immersion volume of 3 tools a year; the successor platform is under review; segment impairments in two consecutive years; nearly half of segment revenue from China; the "core US customer" has shrunk to about 10–12% of segment revenue by region; group free cash flow negative for three years while debt rose; the profit engine (Imaging) is guided down from ¥41.3bn (FY3/2025) to ¥13.0bn; acquisitions (SLM, Avonix, MRMC, Metrology) have ended in impairment, sale or liquidation. — [Medium-Term Management Plan p.3](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/management/midtermbusiness/pdf/2026/0508e.pdf); [FY3/2026 slides](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_all_e.pdf)
+- Shares: 33x guided earnings for a 2.7% ROE; the FY3/2027 upgrade rests partly on one-off tariff refunds and deferred costs, and second-half guidance was lowered. Reported short positions of 0.5% or more: Goldman Sachs 0.86% (10 Nov 2026) and Caisse de dépôt et placement du Québec 0.91% (6 Nov 2026). No short-seller report on Nikon was found. — [karauri.net 7731](https://karauri.net/7731/); [2Q FY3/2027 slides p.29](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- Against a short: price is 0.89x book and at the bottom of its 52-week range; an 18.5% strategic holder is cleared to 20%; guidance was just raised. — [Nikon stock information page](https://www.nikon.com/company/ir/stock_info/status/); [Kabutan 7731](https://kabutan.jp/stock/kabuka?code=7731)
+- Dated events: third-quarter results (prior year: 5 Feb 2026) and full-year results (prior year: 8 May 2026); the outcome of the ArF immersion plan review; delivery of 20 semiconductor tools in October–March. — [Nikon IR news list](https://www.nikon.com/company/ir/news/)
 
 ### Inferences
-(pending)
+- (Mine) Nikon is managing a legacy DUV position rather than executing a funded leading-edge plan: the only leading-edge development item was put under review within a year, segment R&D is about ¥21bn, and the plan's own wording is "existing models". The five-year plan is funded from operating cash flow that has not covered investment in any of the last three years.
+- (Mine) The FY3/2027 upgrade is low quality as evidence of lithography recovery: unit forecasts did not rise, the uplift came from service, tariff refunds and timing, and second-half profit guidance fell.
+- (Mine) Nikon's remark that EUV-component demand is moving from mask shops to wafer fabs matches Lasertec's description of fab adoption of actinic inspection; Nikon does not name the customer, so the link is unproven.
+- (Mine) EssilorLuxottica's stake matters for the share price more than for lithography; its intentions are not on the record I could reach.
 
 ### Gaps
-(pending)
+- Named customers and their revenue shares (Intel is widely assumed to be the "core US customer"; not confirmed here). Service revenue in yen. Semiconductor versus FPD split of segment revenue and of China revenue.
+- EssilorLuxottica's holding after 31 Mar 2026, its stated intentions, and which approvals it obtained from whom.
+- Consensus estimates, historical P/E and P/B ranges, and press coverage of the November results.
 
-## Nikon and Canon versus ASML: unit share by tool type and leading-edge relevance
+## Canon (TSE 7751): fiscal 2025, third quarter 2026, Industrial segment, nanoimprint, Utsunomiya, buybacks
 
 ### Takeaway
-(pending)
+Canon is a ¥4.8tn printing, imaging and medical group in which lithography sits inside an Industrial segment worth about 8% of sales; it sold 234 i-line and KrF tools in 2025 (none ArF or EUV), repeatedly cut its 2026 unit forecast to 221, and its nanoimprint tool has still not entered volume production three years after launch. The group earns about 9.6% ROE, has moved to roughly ¥0.6tn of net debt while buying back ¥500bn of shares in two years, and trades at about 12x guided earnings.
 
 ### Cited Findings
-(pending)
+
+#### (a) Position
+- [FILING] Semiconductor lithography units (calendar years):
+
+| | KrF | i-line | Total | FPD lithography |
+|---|---|---|---|---|
+| 2024 actual | 51 | 182 | 233 | 27 |
+| 2025 actual | 46 | 188 | 234 | 33 |
+| 2026 Q1 / Q2 / Q3 actual | 10 / 17 / 14 | 34 / 31 / 28 | 44 / 48 / 42 | 6 / 6 / 2 |
+| 2026 projection, 27 Oct 2026 | 66 | 155 | 221 | 20 |
+
+  Earlier totals shown by Canon: 84 (2019), 122 (2020), 140 (2021), 176 (2022), 187 (2023). — [FY2025 notes, 29 Jan 2026](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf); [Q3 2026 notes, 27 Oct 2026](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf); [Q1 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q1e-note.pdf); [Q2 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q2e-note.pdf); [FY2024 notes](https://global.canon/en/ir/conference/pdf/conf2024e-note.pdf); [Industrial Group briefing, 10 Sep 2024](https://global.canon/en/ir/conference/pdf/event2024ind-e.pdf)
+- [COMPANY CLAIM] Role: i-line tools for power/analog, image sensors and back-end (FPA-5520iV LF for interposers; FPA-8000iW for 515×510 mm panels); KrF mainly for memory. Canon describes its back-end tool as one that "sets the industry standard for leading-edge semiconductor packaging". No numeric share of back-end lithography appears in the documents read. — [FY2025 notes p.20](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf); [Industrial Group briefing](https://global.canon/en/ir/conference/pdf/event2024ind-e.pdf)
+- [COMPANY CLAIM] New KrF scanner FPA-6400ES6a (400 wafers per hour, 4.0 nm overlay) launches early December 2026. — [Canon news, 10 Nov 2026](https://global.canon/en/news/2026/20261110.html)
+- [COMPANY CLAIM] Nanoimprint (FPA-1200NZ2C, launched 13 Oct 2023; minimum linewidth 14 nm, "equivalent to the 5 nm node"): one system shipped to the Texas Institute for Electronics on 26 Sep 2024 for R&D; a system at "a major semiconductor manufacturer" had its specifications confirmed by the customer (Jan 2026); additional equipment was shipped in June 2026; Canon says it is "making steady progress toward its adoption in mass production beginning in 2027". The customer is not named and no volume production is reported. — [Canon news, 26 Sep 2024](https://global.canon/en/news/2024/20240926.html); [Canon news, 13 Oct 2023](https://global.canon/en/news/2023/20231013.html); [FY2025 notes](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf); [Q3 2026 notes pp.11, 21](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf)
+- [COMPANY CLAIM] A nanoimprint-derived wafer planarisation process (inkjet-based adaptive planarisation) is to be commercialised in 2027. — [Canon news, 13 Jan 2026](https://global.canon/en/news/2026/20260113-2.html)
+- [FILING] Sales by region, nine months 2026: Americas 32.7%, Europe 26.5%, Japan 20.4%, Asia and Oceania 20.4% (China is not broken out). 1,333,763,464 shares issued, 500,439,561 in treasury at 30 Sep 2026; listed in Tokyo, Nagoya, Sapporo and Fukuoka. — [Q3 2026 results](https://global.canon/en/ir/results/2026/rslt2026q3e.pdf)
+
+#### (b) Economics
+- [FILING] Group, ¥bn (US GAAP):
+
+| | FY2025 | Q3 2026 (Jul–Sep) | 9M 2026 | FY2026 projection (27 Oct 2026) |
+|---|---|---|---|---|
+| Net sales | 4,624.7 (+2.5%) | 1,158.8 (+4.9%) | 3,433.4 (+4.0%) | 4,766.0 (+3.1%) |
+| Gross margin | 46.7% | 46.9% | 48.5% | 47.3% |
+| Operating profit | 455.4 (9.8%) | 97.1 (8.4%) | 327.7 (9.5%) | 456.0 (9.6%) |
+| Net income | 332.1 | 75.2 | 246.4 | 333.0 |
+| R&D | 339.3 (7.3% of sales) | n/a | 263.2 | n/a |
+| Capex (purchases of fixed assets) | 262.2 | n/a | 187.9 | n/a |
+| Free cash flow | 238.5 | n/a | n/a | 209.0 (was 290.0) |
+| ROE | 9.7% | n/a | n/a | 9.6% |
+| EPS | ¥367.48 | | ¥287.24 | ¥390.78 |
+
+  2024 reported operating profit was ¥279.8bn against ¥444.9bn "excluding the impact of impairment loss". The 2026 projection started at sales ¥4,765bn / OP ¥479bn (29 Jan), was ¥4,800bn / ¥465bn in July and is now ¥4,766bn / ¥456bn; the latest cut is mainly Medical production delays (sales impact about ¥90bn). — [Q3 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf); [FY2025 results](https://global.canon/en/ir/results/2025/rslt2025e.pdf); [Q3 2026 results](https://global.canon/en/ir/results/2026/rslt2026q3e.pdf); [FY2025 notes](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf)
+- [FILING] Net debt: at 30 Sep 2026 cash ¥697.5bn plus short-term investments ¥12.4bn against short-term loans ¥914.0bn and long-term debt ¥404.4bn, about ¥609bn net debt (my calc); at 31 Dec 2025 about ¥198bn. Other short-term loans rose ¥437bn in nine months. Shareholders' equity ¥3,327bn. — [Q3 2026 results, balance sheet and cash flow](https://global.canon/en/ir/results/2026/rslt2026q3e.pdf); [FY2025 results](https://global.canon/en/ir/results/2025/rslt2025e.pdf)
+- [FILING] Shareholder returns: ¥300bn of buybacks in 2025; a ¥200bn programme (up to 54 million shares, 6.1%) authorised 29 Jan 2026 and completed in September 2026; dividend ¥160. — [Buyback notice, 29 Jan 2026](https://global.canon/en/ir/release/2026/p2026jan29-2e.pdf); [Q3 2026 notes p.13](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf)
+- [FILING] Industrial segment, ¥bn: 2025 sales 361.1 (optical equipment, i.e. semiconductor and FPD lithography, 256.4; industrial equipment 104.7), operating profit 62.5 (17.3%); 9M 2026 sales 218.9 (−10.7%), operating profit 30.1 (13.8%); 2026 projection sales 338.6 (−6.2%), operating profit 58.6. Industrial is 7.8% of 2025 group sales (my calc). Segment inventory ¥158.0bn, 190 days at Sep 2026 (118 days at Dec 2025), attributed to tools awaiting installation and deliberate stocking. — [Q3 2026 notes pp.5, 11, 12, 21](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf); [FY2025 notes](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf)
+- [FILING] Other segments, 2026 projection, ¥bn: Printing 2,579.4 / OP 262.8; Imaging 1,190.7 / 191.6 (network cameras +20%); Medical 522.7 / 3.6 (2025: 580.6 / 32.8). — [Q3 2026 notes p.11](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf)
+
+#### (c) Execution record
+- [FILING] Unit forecasts: in January 2025 Canon projected 308 lithography tools for 2025 (KrF 76, i-line 232); it sold 234. For 2026 it projected 224 (Jan), 238 (Apr), 227 (Jul) and 221 (Oct); nine-month sales are 134, leaving 87 for the fourth quarter. Reasons given: weak power-semiconductor demand, component supply, and customers' site-preparation delays. — [FY2024 notes](https://global.canon/en/ir/conference/pdf/conf2024e-note.pdf); [FY2025 notes](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf); [Q3 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf); [Q2 2026 Q&A](https://global.canon/en/ir/conference/pdf/conf2026q2e-qa.pdf)
+- [FILING] Phase VI plan: the 2025 sales target (¥4.5tn) was reached a year early, but the 12% operating-margin target for 2025 was missed (actual 9.8%). — [Phase VII notes, 15 Jan 2026](https://global.canon/en/ir/conference/pdf/phase7-e-note.pdf)
+- [COMPANY CLAIM] Utsunomiya lithography plant: construction began December 2023 on a site of about 70,000 m², with operation planned for the first half of 2025; in July 2026 Canon said capacity would rise by more than 20% "from next year onward" as supplier constraints ease; 2026 capex still includes "expanding semiconductor lithography equipment production capacity at the new Utsunomiya plant". No outside confirmation of the plant's output was found. — [Industrial Group briefing](https://global.canon/en/ir/conference/pdf/event2024ind-e.pdf); [Q2 2026 Q&A](https://global.canon/en/ir/conference/pdf/conf2026q2e-qa.pdf); [Q3 2026 notes p.13](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf)
+- [COMPANY CLAIM] Nanoimprint claims resting on Canon's word: 14 nm linewidth, lower power and cost, customer "specifications confirmed". Canon declines to disclose unit or revenue targets because "they depend on how customers adopt and use the technology". — [Phase VII Q&A](https://global.canon/en/ir/conference/pdf/phase7-e-qa.pdf); [Canon news, 26 Sep 2024](https://global.canon/en/news/2024/20240926.html)
+
+#### (d) Path forward, 2027–2030
+- [COMPANY CLAIM] Phase VII (2026–2030): sales ¥5.0tn, operating margin 12%, ROE 12% in 2028; ¥5.6tn, 15%, 15% in 2030. Industrial sales from ¥365.9bn (2025 projection) to ¥600bn in 2030 (about +10% a year), by "raising our market share in existing equipment segments such as i-line and KrF" and adding "nanoimprint and ArF lithography equipment" in the first half of the plan. — [Phase VII notes](https://global.canon/en/ir/conference/pdf/phase7-e-note.pdf); [Phase VII Q&A, Q17](https://global.canon/en/ir/conference/pdf/phase7-e-qa.pdf)
+- [COMPANY CLAIM] Funding: five-year operating cash flow before development costs ¥5.4tn; ¥3tn into existing businesses, ¥1tn or more to shareholders (payout about 40% plus flexible buybacks), up to ¥2tn of "strategic investment" funded with interest-bearing debt; M&A aimed at medical and semiconductors. — [Phase VII notes p.12](https://global.canon/en/ir/conference/pdf/phase7-e-note.pdf); [Phase VII Q&A](https://global.canon/en/ir/conference/pdf/phase7-e-qa.pdf)
+- [COMPANY CLAIM] 2027 swing factors named by management: tariff refunds of about ¥60–70bn in 2026 "will not recur"; memory and raw-material costs stay high; structural-reform benefits rise; semiconductor equipment orders are increasing; Medical production normalises from the second quarter of 2027; unit sales of both i-line and KrF expected to rise. — [Q3 2026 Q&A, Q8](https://global.canon/en/ir/conference/pdf/conf2026q3e-qa.pdf); [Q2 2026 Q&A, Q11](https://global.canon/en/ir/conference/pdf/conf2026q2e-qa.pdf)
+- [FILING] Management: Fujio Mitarai remains Chairman and CEO; Kazuto Ogawa became President and COO after the March 2026 shareholders' meeting. — [Change of representative directors, 29 Jan 2026](https://global.canon/en/ir/release/2026/p2026jan29e.pdf)
+
+#### (e) Market facts (kept apart)
+- Close 13 Nov 2026 ¥4,832. Market value ¥6,444.7bn on issued shares; ¥4,026.6bn on 833.3 million shares outstanding ex-treasury (my calc). P/E 13.1x trailing (FY2025 EPS) and 12.4x on the 2026 projection (my calc; Kabutan shows 12.1x); P/B 1.21x; yield 3.31%; margin ratio 3.60x. — [Kabutan 7751](https://kabutan.jp/stock/kabuka?code=7751); [Q3 2026 results](https://global.canon/en/ir/results/2026/rslt2026q3e.pdf)
+- 2026 year-to-date +4.3% (¥4,633 at end-2025); 12 months +7.7%. 2026 range ¥3,987 (7 May) to ¥5,033 (9 Feb). Annual ranges: 2025 ¥3,893–5,233; 2024 ¥3,594–5,274 (ten-year high, Dec 2024); 2023 ¥2,754–3,912; 2022 ¥2,538–3,516; 2021 ¥1,876–2,938; 2020 low ¥1,627. — [Kabutan 7751](https://kabutan.jp/stock/kabuka?code=7751)
+- Reaction to results: third-quarter results at 15:30 on 27 Oct → −6.0% on 28 Oct ("full-year forecast cut on medical production delay"); first-quarter results day 24 Apr 2026 −7.9%. [ESTIMATE] Nomura cut its rating from Buy to Neutral and its target from ¥5,300 to ¥5,000 on 28 Oct 2026. — [Kabutan 7751](https://kabutan.jp/stock/kabuka?code=7751); [Kabutan rating digest, 28 Oct 2026](https://kabutan.jp/stock/news?code=7751&b=n202610281133)
+
+#### (f) Case against
+- Business: lithography is confined to i-line and KrF; ArF is a plan and nanoimprint is unproven in production; unit forecasts have been cut in each of the last two years; Medical profit has collapsed; printing unit volumes are falling (office MFD units −5% in the 2026 projection); 2026 profit includes ¥60–70bn of non-recurring tariff refunds. — [Q3 2026 notes p.17](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf); [Q3 2026 Q&A](https://global.canon/en/ir/conference/pdf/conf2026q3e-qa.pdf)
+- Shares: buybacks and a ¥1tn inventory have been financed by short-term borrowing; ROE target of 15% depends partly on "reducing capital through share buybacks"; reported short positions: Morgan Stanley MUFG 0.80% (30 Oct 2026), Goldman Sachs 0.57% (5 Nov 2026). No short-seller report found. — [Phase VII Q&A, Q1](https://global.canon/en/ir/conference/pdf/phase7-e-qa.pdf); [karauri.net 7751](https://karauri.net/7751/); [Q3 2026 notes p.12](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf)
+- Dated events: fourth-quarter delivery of 87 lithography tools; full-year results (prior year: 29 Jan 2026) with 2027 unit guidance; nanoimprint adoption decision in 2027; Medical normalisation by 2Q 2027. — [Q3 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf)
 
 ### Inferences
-(pending)
+- (Mine) Canon's lithography plan is coherent and funded (capacity, a new KrF tool, group cash flow of roughly ¥460bn a year), but it is a mature-node, memory-peripheral and packaging business. Its leading-edge options (nanoimprint, ArF) are unproven and too small to move a ¥4.8tn group before 2028.
+- (Mine) For an equity holder, Canon is a printing/imaging/medical story with a buyback-driven capital policy; lithography evidence (units, nanoimprint adoption) matters at the margin.
+- (Mine) The pattern of projecting more tools than are delivered (308 → 234; 238 → 221) argues for discounting the 87-unit fourth-quarter plan.
 
 ### Gaps
-(pending)
+- Canon's share of back-end/advanced-packaging lithography; the identity of the nanoimprint customer (Kioxia is widely assumed) and the role of Dai Nippon Printing; nanoimprint throughput, defectivity and overlay data from any customer; whether the Utsunomiya plant is fully operating; China share of sales; consensus estimates.
 
-## Lasertec (TSE 6920)
+## Nikon and Canon against ASML: unit share by tool type, leading-edge relevance, and whether each has a funded plan
 
 ### Takeaway
-(pending)
+By units the three makers sold roughly 590 tools in 2025 (ASML 327, Canon 234, Nikon 27), but every EUV tool and almost all ArF immersion tools were ASML's; Canon leads only in i-line and Nikon is marginal in every class. Neither Japanese maker supplies the critical layers of leading-edge logic or DRAM today.
 
 ### Cited Findings
-(pending)
+- [FILING] ASML lithography systems sold: 418 in 2024 (EUV 44, DUV 374); 327 in 2025 (EUV 48, of which 4 high-NA EXE; DUV 279); 291 in the first nine months of 2026 (79, 91, 121 by quarter; Q3: 113 new, 8 used). China was 36.1% of ASML's total net sales in 2024 and 29.1% in 2025. — [ASML 2025 annual report, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026011377/asml-2025xannualxreportx.htm); [ASML Q3 2026 press release, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm); [ASML Q3 2026 financial statements, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm)
+- Unit shares built from the three companies' own reports (my calc; Nikon is on a fiscal year ending the following March and includes refurbished tools, ASML includes used tools):
+
+| | ASML | Canon | Nikon | ASML / Canon / Nikon share |
+|---|---|---|---|---|
+| 2024 | 418 | 233 | 28 (FY3/2025) | 61.6% / 34.3% / 4.1% |
+| 2025 | 327 | 234 | 27 (FY3/2026) | 55.6% / 39.8% / 4.6% |
+| 2026 to September | 291 | 134 | 8 (Apr–Sep) | 67% / 31% / 2% |
+
+  Sources as above plus [Canon Q3 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf) and [Nikon 2Q FY3/2027 slides](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf).
+- By type, 2025: EUV — ASML 48, others none. ArF immersion — Nikon 3. ArF dry — Nikon 4. KrF — Canon 46, Nikon 0. i-line — Canon 188, Nikon 20. ASML's 279 DUV tools are not split by type in the text I could read. — [ASML 2025 annual report, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026011377/asml-2025xannualxreportx.htm); [Canon FY2025 notes](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf); [Nikon 2Q FY3/2027 slides p.38](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf)
+- [COMPANY CLAIM] Leading-edge relevance as each describes it: Nikon reports "customer inquiries and technical evaluations… in leading-edge semiconductor nodes" and positions the NSR-S636E "for the most critical layers"; Canon cites KrF demand "particularly for memory applications" and back-end tools for AI packaging; ASML plans a 30% increase in low-NA EUV and DUV immersion capacity for 2027. — [Nikon 2Q FY3/2027 slides p.3](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2027/27second_all_e.pdf); [Nikon Q&A, 13 May 2026](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/qa/2026_4q/20260513_e.pdf); [Canon Q3 2026 notes](https://global.canon/en/ir/conference/pdf/conf2026q3e-note.pdf); [ASML Q3 2026 press release, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm)
+- [FILING] Scale by value: ASML net system sales €24.5bn in 2025 (€21.2bn in nine months of 2026); Canon optical equipment (semiconductor plus FPD lithography) ¥256.4bn in 2025; Nikon Precision Equipment ¥167.2bn in FY3/2026. — [ASML 2025 annual report, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026011377/asml-2025xannualxreportx.htm); [ASML Q3 2026 financial statements, SEC](https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm); [Canon FY2025 notes](https://global.canon/en/ir/conference/pdf/conf2025e-note.pdf); [Nikon FY3/2026 slides](https://www.nikon.com/content/dam/web-assets/nikoncom/company/local/global/en/ir/ir_library/result/pdf/2026/26_all_e.pdf)
 
 ### Inferences
-(pending)
+- (Mine) At the leading edge the supplier count is: EUV, one (ASML); ArF immersion, effectively one with Nikon as a token second source (3 tools a year); KrF, two that matter (ASML, Canon); i-line, three (Canon first). Nikon's "evaluations by new major customers" would have to convert into tens of ArF tools a year to change this.
+- (Mine) Canon's plan is funded and coherent but aimed at mature nodes, memory periphery and packaging; Nikon's is a legacy position with an option on tight ArF supply.
 
 ### Gaps
-(pending)
+- No TechInsights, Gartner or SEMI share data could be retrieved; all shares above are my arithmetic from company unit disclosures with mismatched fiscal periods and new/used definitions. ASML's DUV split by type for 2025 and 2026, and calendar-year Nikon units, were not obtained.
 
-## Gigaphoton / Komatsu (TSE 6301) — short note
+## Lasertec (TSE 6920): products, monopoly status, customers, competitors, results to June 2026 and September 2026, orders, Scorpion Capital
 
 ### Takeaway
-(pending)
+Lasertec is the supplier of actinic EUV patterned-mask inspection (ACTIS) and, by its own account, still without a competing product; it earns about 59% gross and 45% operating margins with no debt, but three customers were 62% of FY6/2026 sales and orders swing violently (¥105bn, then ¥238bn, now a ¥400–500bn outlook). Scorpion Capital's June 2024 prediction of a 65–70% inventory write-down has not materialised in audited accounts through June 2026, while its warning on demand was followed by a 61% order collapse in FY6/2025 before the recovery.
 
 ### Cited Findings
-(pending)
+
+#### (a) Position
+- [COMPANY CLAIM] Products: ACTIS actinic (13.5 nm) EUV patterned-mask inspection — A150 (2019, "world's first"), A300 for high-NA and current-NA masks (released 24 Nov 2023, "URASHIMA" source), A200HiT for wafer fabs (released 31 Oct 2025, "triple inspection speed of ACTIS A150"); MATRICS DUV-light mask inspection (X8/9ULTRA used for EUV masks; X712 for 90–250 nm nodes, released 31 Mar 2026); ABICS actinic EUV blank inspection; MAGICS blank inspection; SiC and other wafer inspection. — [A200HiT release](https://ssl4.eir-parts.net/doc/6920/tdnet/2705318/00.pdf); [A300 release](https://ssl4.eir-parts.net/doc/6920/tdnet/2366954/00.pdf); [MATRICS X712 release](https://ssl4.eir-parts.net/doc/6920/tdnet/2784198/00.pdf); [Q1 FY6/2027 1on1 FAQ](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/216260/00.pdf)
+- [FILING] Mix: ACTIS ¥70.5bn (30.6% of FY6/2026 sales) and MATRICS ¥51.2bn (22.3%); services ¥58.6bn (25.4%). FY6/2026 orders: ACTIS ¥62.0bn, MATRICS ¥77.2bn. — [FY6/2026 1on1 FAQ, 6 Aug 2026](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/209783/00.pdf)
+- [COMPANY CLAIM] Sole-supplier status: an analyst on the August 2026 call cited the company's "previous explanation that ACTIS, with no existing competition, has better margins"; another said a competitor's stance that actinic inspection is unnecessary "has completely lost support". Management adds that if EUV pellicles become metal-based, "only ACTIS can penetrate the pellicle". No outside confirmation, and no dated KLA, Zeiss or NuFlare product timeline, was found in this session. — [FY6/2026 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/210010/00.pdf)
+- [FILING] Customers above 10% of sales: FY6/2026 — TSMC ¥49.2bn (21.4%), Intel ¥47.7bn (20.7%), Samsung Electronics ¥46.5bn (20.2%), together 62.2%; FY6/2025 — Intel ¥83.7bn (33.3%), TSMC ¥66.1bn (26.3%), Samsung ¥50.0bn (19.9%), together 79.4% (percentages my calc). — [Securities report FY6/2026, filed 24 Sep 2026 (Japanese)](https://ssl4.eir-parts.net/doc/6920/yuho_pdf/S100Z32V/00.pdf)
+- [FILING] FY6/2026 sales by customer location: Korea 28.7%, US 22.4%, Taiwan 19.9%, other Asia 13.5%, Japan 12.2%, Europe 3.4%. China is not shown separately (it sits in "other Asia", ¥31.1bn). [COMPANY CLAIM] "As for China, we cannot sell EUV equipment so the portion of sales made up by China is not so high", while DUV MATRICS orders from China are strengthening. — [FY6/2026 tanshin, 6 Aug 2026](https://ssl4.eir-parts.net/doc/6920/tdnet/2865490/00.pdf); [FY6/2026 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/210010/00.pdf)
+- [FILING] Ownership: TSE Prime; 94,286,400 shares, 4,579,785 in treasury (30 Sep 2026); top holders at 30 Jun 2026 are trust banks (Master Trust 20.59%, Custody Bank 6.92%) and founding-family individuals (about 3% each). Auditor PwC Japan, continuous audit period eight years. — [Fact Sheet 2026](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym6/209869/00.pdf); [Securities report FY6/2026](https://ssl4.eir-parts.net/doc/6920/yuho_pdf/S100Z32V/00.pdf)
+
+#### (b) Economics
+- [FILING] ¥bn (Japanese GAAP, single segment):
+
+| | FY6/2025 | FY6/2026 | Q1 FY6/2027 (Jul–Sep 2026) | FY6/2027 guidance (unchanged 30 Oct 2026) |
+|---|---|---|---|---|
+| Net sales | 251.5 (+17.8%) | 230.5 (−8.3%) | 40.4 (−25.5%) | 290.0 (+25.8%) |
+| Gross margin | 58.9% | 59.2% | 59.5% | n/a |
+| Operating income | 122.8 (48.8%) | 105.3 (45.7%) | 15.8 (39.1%) | 125.0 (43.1%) |
+| Net income | 84.7 | 77.5 | 10.7 | 90.0 |
+| Operating cash flow | 77.9 | 48.5 | 39.1 | n/a |
+| Capex | 4.9 | 2.3 | 1.0 | 5.7 |
+| R&D | 11.7 | 16.3 (7.1%) | 4.7 | 20.0 |
+| ROE | 46.9% | 33.9% | n/a | n/a |
+| Orders | 105.2 | 237.5 | not disclosed | outlook 400–500 |
+| Backlog, period end | 315.9 | 323.0 | not disclosed | n/a |
+
+  Free cash flow (operating plus investing) ¥75.5bn in FY6/2025 and ¥46.7bn in FY6/2026 (my calc). — [FY6/2026 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2865490/00.pdf); [Q1 FY6/2027 tanshin, 30 Oct 2026](https://ssl4.eir-parts.net/doc/6920/tdnet/2902313/00.pdf); [FY6/2026 1on1 FAQ](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/209783/00.pdf); [Q1 FY6/2027 1on1 FAQ](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/216260/00.pdf)
+- [FILING] Five-year series, ¥bn (fiscal years to June 2022 → 2026): sales 90.4, 152.8, 213.5, 251.5, 230.5; orders 323.8, 186.6, 272.8, 105.2, 237.5; backlog 369.2, 402.9, 462.2, 315.9, 323.0; inventories 104.1, 152.1, 162.4, 169.0, 167.8; employees 662 → 1,335. — [Fact Sheet 2026](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym6/209869/00.pdf)
+- [FILING] Balance sheet at 30 Sep 2026: cash ¥110.8bn, no interest-bearing debt; work in process ¥138.1bn and raw materials ¥47.5bn (inventories ¥185.6bn); advances received ¥87.1bn (up ¥42.8bn in the quarter; "received when tools are shipped"); equity ratio 65.4%. Dividends: ¥329 for FY6/2026, ¥351 forecast; ¥12.0bn buyback in Aug–Dec 2025. — [Q1 FY6/2027 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2902313/00.pdf); [Q1 FY6/2027 1on1 FAQ](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/216260/00.pdf); [FY6/2026 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2865490/00.pdf)
+
+#### (c) Execution record
+- [COMPANY CLAIM] Order outlook for FY6/2027 raised on 30 Oct 2026 from ¥300–400bn to ¥400–500bn; more than 60% of the extra ¥100bn is ACTIS, mainly A200HiT for logic fabs. Management states the increase reflects demand "on customers' forecast" for which "we haven't received the actual orders yet"; purchase orders are expected after customers finish evaluating the A200HiT, with qualification "around the end of this year… gradually early next year". ACTIS lead time has stretched to about 1.5 years because of component supply. — [Q1 FY6/2027 briefing transcript, 30 Oct 2026](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/216849/00.pdf)
+- [FILING] FY6/2026 sales beat the ¥220bn forecast (104.8%) on early acceptances and a weak yen; R&D ran 25% over plan. Margin guidance for FY6/2027 is lower (43.1% from 45.7%); in October 2026 management attributed part of this to low-margin MATRICS tools tied to "performance improvement" work and said: "Due to insufficient internal communication, we sincerely apologise for not providing a clearer explanation." — [FY6/2026 1on1 FAQ](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/209783/00.pdf); [Q1 FY6/2027 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/216849/00.pdf)
+- [COMPANY CLAIM] High-NA: A300 inquiries come "from fabs for R&D purposes and from mask shops"; "High-NA adoption in mass production is still some way off." Memory makers are running demonstrations but A200HiT demand "has not… shown up on the forecast of memory customers". — [Q1 FY6/2027 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/216849/00.pdf)
+- Scorpion Capital report, 5 June 2024 (Scorpion disclosed it was short). Main claims: "a colossal fraud"; revenue and margins faked, offset by inflated inventory, with "a looming, inevitable 65–70% write-down"; ACTIS "defective with a fatally flawed EUV light source"; the A300 "a hoax" covering replacement of A150 tools; the Innovation Park "generally deserted"; TSMC, Intel and Samsung (about 77–80% of revenue) "exasperated", with TSMC having "ceased buying its EUV machines"; KLA's "imminent EUV market entry will be catastrophic"; the auditor was changed from Deloitte in 2018. — [Scorpion Capital summary report](https://scorpionreports.s3.us-east-2.amazonaws.com/Summary1.pdf); [full report](https://scorpionreports.s3.us-east-2.amazonaws.com/6920.pdf)
+- [COMPANY CLAIM] Lasertec's reply: denial on 5 June 2024; on 6 June it said ACTIS sales were ¥76.6bn in the first nine months of FY6/2024 (¥40.4bn in all of FY6/2023) and that tools are held as work in process until customer acceptance, when cost and revenue are booked together, with production lead times of one to two years. — [Statement, 5 Jun 2024](https://ssl4.eir-parts.net/doc/6920/tdnet/2457223/00.pdf); [Additional statement, 6 Jun 2024](https://ssl4.eir-parts.net/doc/6920/tdnet/2457806/00.pdf)
+- [CONFIRMED, with limits] A special investigation committee (two of Lasertec's outside directors plus Tomotaka Iwata, partner of KPMG FAS, assisted by KPMG FAS accountants) examined ACTIS and MATRICS work in process above ¥300m per job at 31 Mar 2024, observed three inventory counts, vouched orders, shipments, receipts and acceptances, and reported on 5 Aug 2024 that "no irregularities… were identified". Stated limitation: the report rests on "statements and materials submitted by LT"; only a summary was published. — [Announcement, 5 Aug 2024](https://ssl4.eir-parts.net/doc/6920/tdnet/2483469/00.pdf); [Investigation report (summary), 9 Aug 2024](https://ssl4.eir-parts.net/doc/6920/tdnet/2490411/00.pdf)
+- [FILING] Later evidence: no inventory write-down of the predicted kind appears in the accounts for FY6/2025 or FY6/2026 or in the September 2026 quarter; inventories stayed at ¥162–169bn and rose to ¥185.6bn with new orders; the three named customers bought ¥199.8bn in FY6/2025 and ¥143.5bn in FY6/2026; orders fell 61% in FY6/2025 and then rose 126%. — [Fact Sheet 2026](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym6/209869/00.pdf); [Securities report FY6/2026](https://ssl4.eir-parts.net/doc/6920/yuho_pdf/S100Z32V/00.pdf); [Q1 FY6/2027 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2902313/00.pdf)
+- [FILING] Accounting items raised: revenue is recognised mostly at a point in time (¥183.1bn of ¥230.5bn in FY6/2026) on customer acceptance; inventories were 73% of FY6/2026 sales and are 64% of guided FY6/2027 sales (my calc); advances received fell ¥20.1bn in FY6/2026 and rose ¥42.8bn in the following quarter. A correction filed 2 Nov 2026 fixed a mislabelled line in the English statement of comprehensive income (totals unchanged). — [FY6/2026 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2865490/00.pdf); [Q1 FY6/2027 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2902313/00.pdf); [Correction, 2 Nov 2026](https://ssl4.eir-parts.net/doc/6920/tdnet/2903633/00.pdf)
+
+#### (d) Path forward, 2027–2030
+- [COMPANY CLAIM] Things to get through: A200HiT qualification at logic fabs and conversion of forecast demand into purchase orders; first memory-fab adoption; high-NA volume use of the A300; tools for large-format masks (a new development, "not reflected in FY2027's order outlook"); component lead times; R&D up to ¥20bn. Capacity: "our current resources, including those of our partner companies, are generally sufficient to support the JPY 400~500 billion sales target set out in our mid-term management plan". — [Q1 FY6/2027 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/216849/00.pdf); [Q1 FY6/2027 1on1 FAQ](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym9/216260/00.pdf)
+- [FILING] Funding: internal; capex is about 1–2% of sales, there is no debt, and customer advances finance work in process. — [Q1 FY6/2027 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2902313/00.pdf)
+
+#### (e) Market facts (kept apart)
+- Close 13 Nov 2026 ¥36,130. Market value ¥3,406.6bn on issued shares, ¥3,241bn ex-treasury (my calc); net cash ¥110.8bn. P/E 41.9x trailing (EPS ¥862.99) and 36.0x on guidance (EPS ¥1,003.27); P/B 13.5x; yield 0.97%; margin ratio 4.20x. — [Kabutan 6920](https://kabutan.jp/stock/kabuka?code=6920); [Q1 FY6/2027 tanshin](https://ssl4.eir-parts.net/doc/6920/tdnet/2902313/00.pdf)
+- 2026 year-to-date +21.9% (¥29,645 at end-2025); 12 months +23.6%. All-time high ¥58,580 on 19 Jun 2026; the close is 38% below it. Annual ranges: 2025 ¥10,245–33,330; 2024 ¥14,740–45,500 (June 2024, the month of the Scorpion report: ¥33,300–40,650); 2023 ¥17,485–38,440; 2022 ¥14,320–36,090; 2021 ¥11,270–35,670; 2019 ¥1,261–5,780. — [Kabutan 6920 monthly/yearly tables](https://kabutan.jp/stock/kabuka?code=6920)
+- Reaction to results (all filed at 15:45): 30 Jan 2026 → −14.0% next session; 30 Apr → +0.6%; 6 Aug (full year and guidance) → −13.6%; 30 Oct → +8.0% on 2 Nov. [PRESS] Fisco: first-quarter operating income was "about ¥10bn below market expectations" but treated as timing, with the order-outlook increase the positive. The shares then fell 14.2% on 5 Nov (US semiconductor index down more than 3%) and 4.6% on 6 Nov (US AI-regulation fears), and rebounded 7.7% and 6.3% on 10–11 Nov. — [Kabutan 6920](https://kabutan.jp/stock/kabuka?code=6920); [Fisco via Kabutan, 2 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611020678); [Kabutan, 6 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611060451); [MINKABU PRESS via Kabutan, 6 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611060620)
+- [ESTIMATE] Broker targets after the results: Goldman Sachs Buy, ¥70,000 → ¥71,000 (2 Nov); Iwai Cosmo "A", ¥65,500 → ¥66,000 (4 Nov). Full consensus not obtained. — [Kabutan rating digest, 2 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611020989); [Kabutan rating digest, 4 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611041212)
+
+#### (f) Case against
+- Business: three customers are 62–79% of sales; ACTIS and MATRICS are over half; orders have halved or doubled in each of the last four years; the raised outlook counts tools not yet ordered and a product not yet qualified; margins are guided down; a competitor's entry would attack the highest-margin product; export rules bar EUV-tool sales to China while China-related DUV demand is rising. — [Securities report FY6/2026](https://ssl4.eir-parts.net/doc/6920/yuho_pdf/S100Z32V/00.pdf); [Q1 FY6/2027 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/216849/00.pdf)
+- Shares: 36x guided earnings and 13.5x book; first-quarter profit fell 41% and missed expectations; sell-side targets are almost double the price; single-day moves of 8–14% around results are routine. Reported short positions of 0.5% or more have fallen away: Morgan Stanley MUFG dropped to 0.48% on 11 Nov 2026 (1.03% on 30 Oct) and Goldman Sachs to 0.47% on 29 Oct. — [karauri.net 6920](https://karauri.net/6920/); [Kabutan 6920](https://kabutan.jp/stock/kabuka?code=6920)
+- Dated events: A200HiT qualification results (late 2026 to early 2027); half-year results with order data (prior year: 30 Jan 2026); any KLA product announcement. — [Q1 FY6/2027 briefing transcript](https://ssl4.eir-parts.net/doc/6920/ir_material_for_fiscal_ym5/216849/00.pdf)
 
 ### Inferences
-(pending)
+- (Mine) Business quality is high on the evidence of audited margins, cash generation and repeat purchases by all three leading-edge manufacturers; the weak points are concentration and order volatility, not solvency.
+- (Mine) Scorpion's fraud and write-down thesis is not supported by anything filed in the 29 months since; its demand thesis was right for one year (orders −61%, share price −74% from the 2024 high to the April 2025 low) and wrong thereafter. The committee that cleared the inventory was commissioned by the company and published only a summary, so "cleared" should be read with that limit.
+- (Mine) As a short candidate Lasertec offers valuation and event risk, but order momentum is rising and reported short interest is minimal; as an entry point, the price already assumes the ¥400–500bn order outlook converts.
 
 ### Gaps
-(pending)
+- Competitor timelines (KLA actinic or e-beam alternatives, Zeiss, NuFlare) and any customer confirmation of A200HiT or A300 performance. Quarterly orders (disclosed half-yearly). China revenue. Consensus estimates and historical valuation ranges. Whether Scorpion still holds a position.
 
-## Could not verify / figures on which sources conflict
+## Gigaphoton / Komatsu (TSE 6301): the two-supplier DUV light-source market and what it means for Nikon and Chinese tool makers
 
-(pending)
+### Takeaway
+Gigaphoton is Komatsu's unlisted excimer-laser subsidiary and, with ASML-owned Cymer, one of the two established makers of DUV lithography light sources; I could verify its ownership and footprint but not current market shares or its exposure to Chinese scanner makers.
+
+### Cited Findings
+- [COMPANY CLAIM] Gigaphoton Inc.: founded 1 Aug 2000; capital ¥5bn; stockholder Komatsu Ltd.; 1,426 employees (consolidated, 31 Mar 2026); develops, makes and services excimer lasers for lithography and EUV light sources; calls itself "the world's leading excimer laser light source manufacturer" that has grown to "dominate the Asian market including Japan"; offices include Shanghai, Beijing, Xi'an and a Changzhou training centre in China, and Eindhoven in the Netherlands. — [Gigaphoton company page](https://www.gigaphoton.com/company)
+- [COMPANY CLAIM] Recent activity: a gas-recycling system for ArF excimer lasers (30 Sep 2026); exhibiting at an advanced-packaging and chiplet summit (13 Oct 2026). — [Gigaphoton home/news](https://www.gigaphoton.com/en/)
+- Market facts: Komatsu closed at ¥6,159 on 13 Nov 2026 (P/E 14.3x forecast, P/B 1.57x, market value ¥5,635.7bn on issued shares; +23.2% year-to-date; −7.6% on 29 Oct 2026). Gigaphoton is a small part of Komatsu, so Komatsu shares are not a practical way to own it. — [Kabutan 6301](https://kabutan.jp/stock/kabuka?code=6301)
+
+### Inferences
+- (Mine) For Nikon, an independent light-source supplier in Japan removes dependence on a competitor-owned source (Cymer belongs to ASML), but it does not address Nikon's scale problem. For Chinese tool makers, access to Gigaphoton or Cymer ArF sources is a control point subject to Japanese and Dutch/US export rules; Gigaphoton's Chinese service sites show it has an installed base at Chinese fabs.
+
+### Gaps
+- No sourced figures for DUV light-source market share, Gigaphoton revenue or profit, its share of Nikon and Canon tools, sales to Chinese scanner makers, or the state of Chinese domestic sources. The Komatsu segment data were not retrieved.
+
+## Could not verify, and figures on which sources conflict
+
+### Could not verify (not found, or recalled but not re-checked in this session)
+- Independent market-share measurements (TechInsights, Gartner, SEMI) for lithography by tool type and for mask inspection.
+- Consensus estimates for the next two fiscal years for all three companies; 5–10-year P/E and P/B ranges (only price ranges are given).
+- ASML's DUV unit split by type. From memory only: 2024 was ArF immersion 129, ArF dry 25, KrF 152, i-line 68 (this sums to the verified 374), which would put Nikon at about 2% of ArF immersion units and Canon at about 25% of KrF and 68% of i-line in 2024.
+- That Nikon's "core US customer" is Intel; that Canon's nanoimprint customer is Kioxia and that Dai Nippon Printing makes the templates; nanoimprint throughput and defect data.
+- EssilorLuxottica's current holding (last filed figure 18.53% at 31 Mar 2026), the authorities that cleared it to 20%, and its stated intentions.
+- KLA's, Zeiss's and NuFlare's actinic or alternative EUV mask-inspection timelines; whether any Lasertec customer has publicly confirmed ACTIS performance; whether the Scorpion claim about the Innovation Park was ever tested by a third party.
+- Whether Canon's Utsunomiya plant reached planned output; its cost.
+- The cause of Nikon's share-price rise in May 2026; press reports on any of the November 2026 results.
+- [PRESS] MINKABU PRESS (via Kabutan, 9 Nov 2026) attributed weakness in Japanese semiconductor shares that day to reports of a board investigation at Nvidia involving its CEO; I did not verify this anywhere else. — [Kabutan, 9 Nov 2026](https://kabutan.jp/stock/news?code=6920&b=n202611090234)
+- Upcoming results dates (company calendars showed only past events; dates above are prior-year analogues).
+
+### Figures on which sources conflict
+- Market value: Kabutan uses issued shares including treasury stock (Canon ¥6.44tn; Lasertec ¥3.41tn; Nikon ¥535bn); on shares outstanding the values are ¥4.03tn, ¥3.24tn and ¥528bn. Canon's difference is 37%.
+- Canon forward P/E: Kabutan 12.1x, Nikkei 12.0x, my calculation on the company's ¥390.78 EPS projection 12.4x.
+- Canon 2024 operating profit: ¥279.8bn as reported versus ¥444.9bn "excluding the impact of impairment loss"; 2025 growth is therefore +62.8% or +2.4%.
+- Nikon FY3/2026 segment figures were restated when Nikon Vision moved from Components to Imaging: Imaging operating profit ¥16.7bn (as first reported) versus ¥17.2bn (restated); Components/Industry ¥9.5bn versus ¥9.0bn.
+- Nikon first-half revenue: ¥334.5bn in the 30 October forecast revision versus ¥334.6bn/¥334.7bn in the 5 November results (rounding and final figures).
+- Nikon Precision Equipment impairment for FY3/2026: ¥5.7bn on the slides, ¥5.8bn in the tanshin note; inventory write-down ¥5.5bn versus ¥5.6bn.
+- Nikon net debt: ¥85bn using bonds and borrowings only, ¥108bn using the company's "interest-bearing debt" chart figure.
+- Lasertec FY6/2027 guided EPS: ¥1,004.12 in the August tanshin versus ¥1,003.27 in the October tanshin (share count change).
+- Lasertec customer concentration: Scorpion cites "~80%" and "77%" for TSMC, Intel and Samsung; the securities report gives 79.4% for FY6/2025 and 62.2% for FY6/2026.
+- ASML 2025 gross margin appears as 52.8% and 51.8% in different places of its annual report text as read by the fetch tool; not reconciled.
+- Unit totals mix definitions: ASML includes used systems, Nikon includes refurbished systems and reports on a March fiscal year, Canon reports new calendar-year units; Nikon's own "market scale" (570 units in 2025) is lower than the 588 obtained by adding the three companies' reported units.
