@@ -260,7 +260,12 @@ Among fuel cells, only Bloom has GW-scale data-centre deals in independent sourc
 - **Wärtsilä** (competitor):
   - 282 MW order (15 × 50SG engines) for a US data centre developed by a major independent power producer, delivery 2028 and full operation 2029. Wärtsilä counts this as its seventh US data-centre order, taking US data-centre capacity sold above 3 GW. Source: [Wärtsilä press release (5 Oct 2026)](https://www.wartsila.com/media/news/05-10-2026-wartsila-to-supply-282-mw-onsite-power-solution-for-a-u-s-data-center-as-ai-growth-intensifies-demand-for-reliable-power-3797450) [independent; competitor].
   - Earlier 2026 orders: 429 MW (24 engines) in Q1 and 412 MW (34SG) in Q2. Source: [Wärtsilä announced orders](https://www.wartsila.com/investors/markets/announced-orders) [independent; competitor]; search excerpt.
-  - January–September 2026 interim report: Q3 organic order intake up 41%, and engine lead times continue to lengthen. Source: [Wärtsilä Interim Report Jan–Sep 2026 (27 Oct 2026)](https://www.wartsila.com/media/news/27-10-2026-wartsila-s-interim-report-january-september-2026-3806530) [independent; competitor]; release summary via search excerpt.
+  - January–September 2026 interim report (27 October 2026), read directly. Source: [Wärtsilä Interim Report Jan–Sep 2026 (27 Oct 2026)](https://www.wartsila.com/media/news/27-10-2026-wartsila-s-interim-report-january-september-2026-3806530) [independent; competitor].
+    - "Considering the strong Energy order intake, lead times for our engines continue to increase."
+    - "Equipment delivery times continued to increase, impacting the timing of revenue recognition."
+    - Data centres: "Interest from the data centre segment also remained strong, with a dynamic pipeline of opportunities." The 282 MW order "demonstrates the growing need for fast-deployable, reliable, and scalable power solutions".
+    - Marine and Energy combined order intake rose 47% to EUR 2,368m in Q3 2026.
+    - No data-centre order total or pipeline size is given.
 - **INNIO Jenbacher and VoltaGrid**:
   - VoltaGrid will deploy 2.3 GW of Jenbacher-based modular generation for Oracle Cloud Infrastructure, with Energy Transfer supplying gas (announced October 2025). Source: [DCD (Oct 2025)](https://www.datacenterdynamics.com/en/news/voltagrid-to-supply-oracle-with-23gw-of-natural-gas-power-for-ai-data-centers/) [independent]; search excerpt.
   - Open Factory reports an INNIO order of 1.1 GW for more than 200 J624 engines (July 2026), a 1.25 GW INNIO–Rehlko framework (April 2026), a VoltaGrid order of 1.5 GW (300 Jenbacher units) and $5.0bn of VoltaGrid financing for a "4.3+ GW" plan. Source: [Open Factory (rev. 11 Oct 2026)](https://open-factory.com/articles/behind-meter-90gw/) [independent; secondary]. Not verified against primary sources.
@@ -289,7 +294,7 @@ Among fuel cells, only Bloom has GW-scale data-centre deals in independent sourc
 - At Serverfarm's Covington, Georgia site, at least 36 of 37 planned diesel emergency generators were installed, according to the Southern Environmental Law Center (SELC) letter. Source: [Atlanta News First (2 Jul 2026)](https://www.atlantanewsfirst.com/2026/07/02/advocacy-groups-say-covington-data-center-power-plant-are-building-without-proper-permits/) [independent].
 
 ### Inferences
-- In independent trackers, engines and Bloom fuel cells appear as the main non-turbine options for BTM plants that must be online before 2028. Lead-time indicators (Wärtsilä's "lengthening" comment; 78–130 weeks for large engines) suggest engines are no longer a short-lead item at GW scale.
+- In independent trackers, engines and Bloom fuel cells appear as the main non-turbine options for BTM plants that must be online before 2028. Lead-time indicators (Wärtsilä says engine lead times "continue to increase"; 78–130 weeks for large engines) suggest engines are no longer a short-lead item at GW scale.
 - Bloom's data-centre deployments are mostly behind the meter and largely absent from EIA's generator inventory. Independent confirmation of installed MW therefore depends on customer disclosures (AEP, Oracle) and trackers (Cleanview), not federal statistics.
 
 ### Gaps
@@ -500,7 +505,13 @@ On-site generation faces state-level air-permit fights (xAI in Mississippi and T
   - RM26-4 was left open.
   - Concurrences by Chairman Swett and Commissioners LaCerte, Rosner, See and Chang.
 - RMI adds: FERC suggested defining a large load as a new facility over 50 MW taking service above 69 kV. PJM was not ordered to reform co-location because it had already made a compliance filing in its co-location proceeding (EL25-49). SPP's earlier reforms for "high impact large loads" (HILL and HILLGA, ER26-247) were accepted. If abeyance is granted, filings move to 15 November and responses to 15 December 2026. Source: [RMI (6 Jul 2026)](https://rmi.org/resources/understanding-fercs-large-load-orders/) [independent].
-- FERC's own page: [Commissioner Rosner's remarks on the large-load show-cause orders (18 Jun 2026)](https://www.ferc.gov/news-events/news/commissioner-rosners-remarks-large-load-show-cause-orders-e-7-e-12-june-18-2026) [independent – regulator]; not read in full.
+- FERC's own page: [Commissioner Rosner's remarks on the large-load show-cause orders (18 Jun 2026)](https://www.ferc.gov/news-events/news/commissioner-rosners-remarks-large-load-show-cause-orders-e-7-e-12-june-18-2026) [independent – regulator]; returned HTTP 403, not read.
+- A FERC-docket tracker, last refreshed 9 July 2026, reports:
+  - PJM's compliance filing in the co-location proceeding (EL25-49) on 23 February 2026, with its behind-the-meter generation tariff "requested effective July 31, 2026".
+  - PJM's June 2026 order cited as 195 FERC ¶ 61,211.
+  - No RTO responses to the June orders as of its refresh date.
+  - It lists the dockets as "EL26-68 through EL26-72", which conflicts with McGuireWoods' EL26-67–EL26-72 and needs eLibrary confirmation.
+  - Source: [Interconnection Queue "FERC Watch" (refreshed 9 Jul 2026)](https://interconnectionqueue.org/ferc) [independent; secondary; marks its own items "VERIFY"].
 - SPP: a HILLGA (expedited generator) study "completed in under 90 days". SPP's "CHILLS" filing offers "seven-year non-firm transmission service" as a bridge. Source: [Ascend Analytics (5 May 2026)](https://www.ascendanalytics.com/blog/large-load-interconnection-queues-data-center-grid-access) [independent].
 - MISO filed large-load reliability tariff revisions on 28 Aug 2026 (ER26-3650). Source: search excerpt of [Infracompute regulatory tracker](https://www.infracompute.co.uk/tools/regulatory-tracker/us-ferc-large-load-interconnection) [independent; secondary]. Unverified.
 
@@ -527,6 +538,7 @@ On-site generation faces state-level air-permit fights (xAI in Mississippi and T
 
 **Air permitting of on-site generation**
 - Mississippi: the MDEQ Permit Board approved xAI's 41-turbine Southaven permit (10 March 2026) and denied the appeal (reported 11 November 2026). MDEQ said earlier unpermitted units were "temporary-mobile". The NAACP Clean Air Act suit is pending, and DOJ sought to intervene for xAI. Sources: [Mississippi Free Press](https://www.mississippifreepress.org/mississippi-permit-board-grants-xais-request-for-41-southaven-gas-turbines-to-power-memphis-data-center/); [Action News 5 (11 Nov 2026)](https://www.actionnews5.com/2026/11/11/state-rejects-appeal-over-spacexais-air-permit-southaven-facility/); [Sci Am (9 Sep 2026)](https://www.scientificamerican.com/article/spacexais-colossus-data-center-is-fueling-a-massive-backlash/) [independent].
+- The SELC said on 10 March 2026 that the Mississippi permit "likely underestimates the amount of pollution coming from the site". It said up to 27 turbines were operating without a permit, and cited a study estimating $30–44m a year in health damages. The release names no turbine models or MW. Source: [SELC press release (10 Mar 2026)](https://www.selc.org/press-release/mississippi-regulators-rubber-stamp-air-permit-for-xai-power-plant-ignoring-overwhelming-public-pushback/) [independent; advocacy group].
 - Tennessee: Shelby County approved a 15-turbine permit for Colossus 1 after the SELC threatened suit. Source: [Sci Am (9 Sep 2026)](https://www.scientificamerican.com/article/spacexais-colossus-data-center-is-fueling-a-massive-backlash/) [independent].
 - Georgia: the SELC asked the Georgia EPD (25 June 2026) to stop VoltaGrid and Serverfarm building before a permit was issued. Source: [SELC letter](https://www.selc.org/wp-content/uploads/2026/06/VoltaGrid-and-Serverfarm-Enforcement-Request.pdf); [Atlanta News First (2 Jul 2026)](https://www.atlantanewsfirst.com/2026/07/02/advocacy-groups-say-covington-data-center-power-plant-are-building-without-proper-permits/) [independent].
 - Texas: the TCEQ issued a standard permit for Abilene's 10 turbines; a PSD permit for more is pending (draft 5 August 2026). Source: [Compute Atlas](https://www.compute-atlas.com/facilities/crusoe-abilene-onsite-generation-tx) [independent; secondary citing TCEQ]. The TCEQ also permitted GW Ranch for up to 7.65 GW. Source: [POWER (1 Sep 2026)](https://www.powermag.com/ansaldo-us-gas-turbine-market-equipment-crunch/) [independent].
@@ -628,7 +640,7 @@ No independent statements specific to Schneider Electric's or Hitachi Energy's d
   - Dora Partners' Tony Brough: Solar Turbines is "enjoying an order boom" ([MPS](https://www.modernpowersystems.com/data-centre-power/could-a-delivery-backlog-derail-a-gt-boom/)).
   - All [independent].
 - **Qualifies engine-speed claims** (compare with Caterpillar's own statements in the company research):
-  - Competitor Wärtsilä reports engine lead times "lengthening" (interim report, 27 Oct 2026) ([Wärtsilä](https://www.wartsila.com/media/news/27-10-2026-wartsila-s-interim-report-january-september-2026-3806530)) [competitor].
+  - Competitor Wärtsilä (27 Oct 2026): "lead times for our engines continue to increase" and "Equipment delivery times continued to increase" ([Wärtsilä interim report](https://www.wartsila.com/media/news/27-10-2026-wartsila-s-interim-report-january-september-2026-3806530)) [competitor].
   - The independent monitor gives 78–130 weeks for large reciprocating engines (typical 104) ([Open Factory](https://open-factory.com/articles/behind-meter-90gw/), secondary).
 - **Competitive pressure documented:** Wärtsilä has sold more than 3 GW of US data-centre engines ([Wärtsilä, 5 Oct 2026](https://www.wartsila.com/media/news/05-10-2026-wartsila-to-supply-282-mw-onsite-power-solution-for-a-u-s-data-center-as-ai-growth-intensifies-demand-for-reliable-power-3797450)). Jenbacher is behind VoltaGrid's 2.3 GW Oracle programme ([DCD](https://www.datacenterdynamics.com/en/news/voltagrid-to-supply-oracle-with-23gw-of-natural-gas-power-for-ai-data-centers/)).
 
@@ -707,7 +719,7 @@ The main gaps are paywalled market data (McCoy, Dora and GlobalData shares; Wood
   - GOES headings 7225 and 7226 are on the 50% list.
   - Still unverified: the exact reduced rate (clause (5) of the Proclamation, reported as 15%) and any country exemptions.
 - FERC's page of Commissioner Rosner's remarks on the 18 June 2026 orders returned HTTP 403 ([FERC](https://www.ferc.gov/news-events/news/commissioner-rosners-remarks-large-load-show-cause-orders-e-7-e-12-june-18-2026)).
-- **Search tools not used after the budget ran out.** The coordinator suggested Exa and Consensus as fallbacks. The WebSearch limit notice told me to stop searching and not work around the limit, so I made no further searches with any tool. After that point I only read primary URLs I already had: ERCOT, the White House annexes and FERC. Every gap listed below could be filled by a follow-up search session.
+- **No substitute search services used.** When the WebSearch budget ran out, the limit notice said not to work around it. Following that notice, and the coordinator's later correction, I did not use Exa, Consensus or Firecrawl. After that point I only read URLs I already had: ERCOT, the White House annexes, FERC, Wärtsilä, the SELC and a FERC-docket tracker. Every gap listed below could be filled in a follow-up search session.
 - **The 2025 global gas-turbine order total varies by source:** 96 GW (MHI), 100.3 GW (EPRI), more than 100 GW (S&P/McCoy) and 110 GW (Wood Mackenzie). US totals range from 40 to 51 GW. Sources as cited in Section 2.
 
 ### Inferences
