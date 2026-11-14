@@ -186,7 +186,7 @@ Herweck was removed in Nov 2024 for "divergences in the execution of the company
 ### Cited Findings
 **Mid-term targets**
 - Promise (2023 CMD, 9 Nov 2023): organic revenue growth +7% to +10% CAGR 2023–2027, plus organic adjusted EBITA margin expansion of "around +50 basis points". — [Schneider CMD 2023 release via Webdisclosure (snippet) [company]](https://webdisclosure.com/press-release/schneider-electric-epa-su-schneider-electric-hosts-a-capital-markets-day-for-investors-and-financial-analysts-Y3eOo6edoer). Utility Dive described it as cumulative organic annual growth of 7–10% from 2023 through 2027 and long-term growth "north of 5% on average across the economic cycle". — [Utility Dive, 6 Nov 2024 [independent]](https://www.utilitydive.com/news/schneider-electric-replaces-ceo-peter-herweck-amid-strategic-execution-issue/732175/)
-- Outcome: FY2025 revenue +8.9% organic, adjusted EBITA +12.3% organic, margin +50bps organic to 18.7%. — [FY2025 results release, 26 Feb 2026 [company]](https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf). FY2024 organic growth was about +8% (company summary) or 8.4% (call). — [Utility Dive FY2024 coverage (snippet) [independent]](https://www.utilitydive.com/news/schneider-electric-books-strong-2024-revenue-growth-data-centers-blum-maxson/740829/)
+- Outcome: FY2025 revenue +8.9% organic, adjusted EBITA +12.3% organic, margin +50bps organic to 18.7%. — [FY2025 results release, 26 Feb 2026 [company]](https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf). FY2024 organic growth was "+8% organic to €38 billion" per the company's FY2024 presentation, and 8.4% per a call-transcript summary. — [Schneider FY2024 results presentation (snippet) [company]](https://se.com/ww/en/assets/564/document/505718/presentation-fy-results-2024.pdf); [roic.ai FY2024 call transcript (snippet) [company statements]](https://www.roic.ai/quote/SBGSY/transcripts/2024-year/4-quarter)
 - Reset (CMD, 11 Dec 2025, McLaren Technology Center, Woking, UK) — [CMD 2025 release, 11 Dec 2025 [company]](https://cdn.financialreports.eu/financialreports/media/filings/1651/2025/ISS/1651_iss_2025-12-11_bb1b122f-b857-4156-b220-f276a77441b4.pdf):
   - organic revenue growth target of +7–10% CAGR "extended through 2030" (2025–2030);
   - +250bps cumulative organic adjusted EBITA margin expansion 2026–2030;
@@ -206,7 +206,7 @@ Herweck was removed in Nov 2024 for "divergences in the execution of the company
 **Buyback**
 - Promise: a €600m tranche executed by Natixis from 9 Mar 2026, to be completed by November 2026.
 - Outcome: by 12 Oct 2026, 1.8m shares bought for €497m at an average of €269; "on track" for end-November.
-- The overall €2.5–3.5bn programme runs to 2030, "with a pause expected in 2027 and 2028".
+- The overall €2.5–3.5bn programme runs to 2030, with a pause expected in 2027 and 2028 (paraphrase of the release, not a verbatim quote).
 — [Q1 2026 release, 30 Apr 2026 [company]](https://finanzwire.com/press-release/schneider-electric-epa-su-first-quarter-revenues-2026-hD4UmP80CSR); [Q3 2026 release, 16 Oct 2026 [company]](https://www.finanzwire.com/press-release/schneider-electric-epa-su-third-quarter-revenues-2026-odiihfxJLgs)
 
 **CEO change (Nov 2024)** — [Utility Dive, 6 Nov 2024 [independent]](https://www.utilitydive.com/news/schneider-electric-replaces-ceo-peter-herweck-amid-strategic-execution-issue/732175/); [Bloomberg, 4 Nov 2024 (snippet) [independent]](https://www.bloomberg.com/news/articles/2024-11-04/schneider-electric-names-olivier-blum-as-ceo-replacing-herweck)
@@ -233,7 +233,7 @@ Herweck was removed in Nov 2024 for "divergences in the execution of the company
 
 ### Inferences
 - The first-year FY2026 guidance (+100–120bps organic margin) would deliver about 40–48% of the cumulative +250bps 2026–2030 CMD margin target in year one.
-- The buyback "pause expected in 2027 and 2028" coincides with the expected Q3 2027 closing of the $23.7bn-EV PTC deal (section 4). The release does not state the link explicitly.
+- The buyback pause expected in 2027–2028 coincides with the expected Q3 2027 closing of the $23.7bn-EV PTC deal (section 4). The release does not state the link explicitly.
 - The FY2025 margin of +50bps organic was at the low end of the original FY2025 ambition range and was held back by mix (Systems), tariffs and raw materials (section 4). Treat that as "met at the low end".
 
 ### Gaps
@@ -260,7 +260,7 @@ Net debt rose to €15.4bn (Jun 2026) after the SEIPL buyout, and before the pen
 | Net income, group share | 4,269 | 4,163 (−2%) | 2,488 (+30.1%) | n/a |
 | Free cash flow | 4,216 | 4,635 (+10%; cash conversion 111%, 106% adjusted) | 1,631 (+244%; +140% excluding the 2025 fine) | n/a |
 | Adjusted EPS (€) | 8.32 | 8.59 (+3%; +13.6% organic) | 4.79 (+20.7%) | n/a |
-| Dividend per share (€) | 3.90 | 4.20 (+8%; approved at AGM of 7 May 2026) | — | — |
+| Dividend per share (€) | 3.90 | 4.20 (+8%; proposed "subject to Shareholder approval on May 7, 2026"; the AGM vote itself was not verified) | — | — |
 | Net debt (period end) | 8,147 | 13,721 | 15,360 (30 Jun 2026) | n/a |
 
 - Q1 2026 revenue was €9,767m (+11.2% organic, +4.7% reported; FX −6.7%; scope +1.1%, mainly Motivair).
@@ -553,7 +553,7 @@ Data-centre leadership sits in "Secure Power & Data Centers", with conflicting e
 — [Autorité de la concurrence, 30 Oct 2024 [independent – regulator]](https://www.autoritedelaconcurrence.fr/en/press-release/electrical-equipment-autorite-imposes-fines-eu470-million-manufacturers-schneider)
 - Schneider "conteste fermement" (firmly contests) the decision and reserved the right to appeal. — [EnergyNews / AFP (snippet) [independent]](https://energynews.pro/schneider-electric-rexel-sonepar-et-legrand-condamnes-a-470-millions-deuros-pour-entente-anticoncurrentielle)
 - Fine paid: "a fine of -€207 million paid in 2025 in relation to a previously disclosed legal case in France" (H1 2025 per the H1 2026 release). — [FY2025 release [company]](https://www.se.com/ww/en/assets/564/document/528237/release-fy-results-2025.pdf); [H1 2026 release [company]](https://www.se.com/ww/en/assets/pdf/release-hy-results-2026)
-- Bloomberg Law headlined the CEO change "Schneider Electric Replaces CEO After Price-Fixing Case"; the company did not link the two. — [Bloomberg Law (snippet) [independent]](https://news.bloomberglaw.com/antitrust/schneider-electric-replaces-ceo-after-price-fixing-case-2)
+- Bloomberg Law's article on the CEO change sits at a URL whose slug reads "schneider-electric-replaces-ceo-after-price-fixing-case". The headline shown in search is "Schneider Electric Ousts CEO After Disagreements Over Strategy". Coverage noted the change came shortly after the French price-fixing fine; the company did not link the two. — [Bloomberg Law (snippet) [independent]](https://news.bloomberglaw.com/antitrust/schneider-electric-replaces-ceo-after-price-fixing-case-2)
 
 **Cyber incidents**
 - Jan 2024: Cactus ransomware hit Schneider's Sustainability Business division (Resource Advisor platform). Cactus claimed 1.5 TB. — [SecurityWeek (snippet) [independent]](https://www.securityweek.com/cactus-ransomware-group-confirms-hacking-schneider-electric/amp/); [Data Center Knowledge (snippet) [independent]](https://www.datacenterknowledge.com/data-breaches/-cactus-ransomware-strikes-schneider-electric)
