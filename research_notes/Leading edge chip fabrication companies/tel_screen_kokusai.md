@@ -60,3 +60,30 @@ Source D = Kokusai FY27/3 Q2 results presentation, 9 Nov 2026: https://ssl4.eir-
 - [COMPANY CLAIM] Medium-term targets (revised 13 May 2026): revenue ≥¥330bn now expected in FY27/3 (two years early vs "by FY29/3"); adj. OPM ≥30% targeted for FY28/3; FY28/3 "direction": outgrow WFE (company's CY2027 WFE view: +30%+, ~$190bn). Production at 70–80% utilisation across three sites (Toyama, Tonami, Cheonan). (Source D)
 
 ## (Remaining sections pending)
+
+## Interim save #2 (raw additions, to be restructured)
+
+### TEL additions
+- [FILING] FY2026: sales ¥2,443.5bn (+0.5% vs FY2025 ¥2,431.5bn); OP ¥624.9bn (−10.4%); NI ¥574.4bn incl. ¥115.4bn extraordinary gain on sale of cross-shareholdings; ROE 29.6% (FY22 37.2, FY23 32.3, FY24 21.8, FY25 30.3); FCF ¥433.2bn (record); total shareholder return ¥437.4bn (dividends ¥287.4bn + buybacks ¥149.9bn). Guidance of 6 Feb 2026 (sales 2,410 / OP 593 / NI 550) beaten. Source: FY2026 results transcript 30 Apr 2026 https://www.tel.co.jp/ir/library/report/jngpc500000000l6-att/fy26q4transcript-j.pdf
+- SPE new-equipment sales by product FY2026 (¥1,775.4bn): coater/developer 28%, etch 36%, deposition 20%, cleaning 9%, wafer prober 5%, other 2% (same source). Field Solutions FY2026 ¥626.0bn (+16.3%).
+- China share FY2026 full year 34.1% (same source).
+- Guidance practice changed 30 Apr 2026: only next-half forecast at year-end ("some customers' investment has become extremely large"). H1 FY27 forecast: 30 Apr sales ¥1,570bn/OP ¥431bn → 30 Jul ¥1,620bn/¥458bn → actual ¥1,667.4bn/¥506.7bn.
+- Medium-term plan (set 2022, target year FY2027): sales ≥¥3tn, OPM ≥35%, ROE ≥30%. Company (30 Jul 2026): sales and ROE in sight; OPM "challenging"; aims GPM >50% within two years. New plan being drafted. Q&A: https://www.tel.co.jp/ir/library/report/negqvb0000000eqw-att/FY27Q1_EarningCall_QA_J.pdf
+- [COMPANY CLAIM] coater/developer share ≥90%; dielectric etch share ≥50%; etch share fell ~5ppt CY2025 vs CY2024 (company Q&A 30 Apr 2026 attributes to delivery timing, customer mix, regulation-related delivery adjustments); "market share has been declining over the past few years" attributed mainly to FX (Q&A 30 Jul 2026).
+- Taiwan case: indicted 2 Dec 2025 (TEL Taiwan unit); verdict 27 Apr 2026 (IP & Commercial Court): ex-employee Chen Li-ming 10 years; unit fined NT$150m, suspended on paying NT$100m to TSMC + NT$50m to treasury; unit said 21 May 2026 it would not appeal (Reuters via The Star https://www.thestar.com.my/tech/tech-news/2026/05/21/tokyo-electron039s-taiwan-unit-says-it-will-not-appeal-ruling-in-tsmc-trade-secrets-case ; Focus Taiwan https://focustaiwan.tw/society/202604270011).
+- Q&A 2 Nov 2026: WFE CY2026 ≈$160bn (DRAM high-$40bn, NAND mid-$10bn, logic/foundry high-$80bn); CY2027 ≥$210bn built bottom-up from customer plans; price revisions "not one-off", full effect from FY2028; H2 GPM 48.3%. https://www.tel.co.jp/ir/library/report/kuoaek00000000iu-att/FY27Q2_EarningCall_QA_J.pdf
+
+### Market data (Yahoo Finance chart API, split-adjusted closes; retrieved 14 Nov 2026)
+- TEL 8035: close 13 Nov 2026 ¥9,461; end-2025 ¥6,864 (YTD +37.8%); 13 Nov 2025 ¥6,782 (12m +39.5%); 2026 closing high ¥15,760 (1 Jul 2026) → −40.0%; low after peak ¥8,263 (6 Nov 2026). Results 30 Oct after close: 30 Oct ¥9,514 → 2 Nov ¥10,005 (+5.2%).
+- Screen 7735: close 13 Nov 2026 ¥8,564; end-2025 ¥7,620 (YTD +12.4%); 13 Nov 2025 ¥6,280 (+36.4%); high ¥19,490 (1 Jul 2026) → −56.1%. Results 30 Oct after close: ¥11,375 → 2 Nov ¥9,218 (−19.0%).
+- Kokusai 6525: close 13 Nov 2026 ¥5,984; end-2025 ¥5,495 (YTD +8.9%); 13 Nov 2025 ¥4,374 (+36.8%); high ¥12,000 (3 Jul 2026) → −50.1%. Results 9 Nov intraday (14:00): 6 Nov ¥5,057 → 9 Nov ¥4,876 (−3.6%) → 10 Nov ¥5,576 (+14.4%).
+- Nikkei 225: 61,142 on 13 Nov 2026; high 72,366 (25 Jun 2026).
+- Context: 30 Oct 2026 "Intel shock" (SOX −7.2%); 3 Nov US midterms (Democratic win), 5 Nov US tech sell-off on AI/data-centre regulation fears; 6 Nov Tokyo chip stocks gap down (Kabutan/Minkabu 6 Nov 2026 https://kabutan.jp/stock/news?code=8035&b=n202611060620 ; 2 Nov 2026 https://kabutan.jp/stock/news?code=8035&b=n202611021007).
+- Screen reaction: Jul–Sep OP ¥40.2bn vs ~¥42bn market expectation; FY guide unchanged (Fisco via Kabutan 2 Nov 2026 https://kabutan.jp/stock/news?code=7735&b=n202611020367). Kokusai: Jul–Sep OP ¥20.9bn ≈¥1bn above consensus; FY OP guide ¥79.4bn vs consensus ≈¥81bn; limit-up intraday 10 Nov (https://kabutan.jp/stock/news?code=6525&b=n202611100598).
+- Short positions ≥0.5% (karauri.net, from JPX filings): TEL none since Aug 2025; Screen none since Apr 2026 (AQR below 0.5% on 23 Apr 2026); Kokusai: Barclays Capital Securities 0.97% (9 Nov 2026); during Oct 2026 also JPMorgan (1.39% on 9 Oct), Nomura Intl (1.10%), Goldman Sachs (0.90% on 13 Oct), BNP Paribas (0.73%) — all since below threshold except Barclays. https://karauri.net/6525/
+
+### Kokusai Q&A (10 Nov 2026) https://ssl4.eir-parts.net/doc/6525/ir_material_for_fiscal_ym/217728/00.pdf
+- FY28/3 revenue "direction" ≈ +40% (high-¥400bn range); three plants can support ≈¥500bn consolidated revenue; new production area needed for FY29/3+; lead time ≈8 months; advance orders extending into FY29/3 mostly from China-local customers (DRAM, logic/foundry) — H1 orders had "special-demand element"; order growth unlikely to accelerate further; China-local share to stay in 30s%; company's CY2027 WFE view: China-local ≈+10%, rest of world ≈+35%.
+
+### Screen Q&A (2 Nov 2026) https://www.screen.co.jp/download_file/4db3efd0-f722-4954-af39-5f753a4128cf/317
+- FY guidance kept despite record orders: Hikone production re-layout; revenue recognised at installation completion; ≈¥20bn slipped deal from prior year booked in Q2; lead time 4–5 months; H2 SPE sales ¥360bn+ split ≈40:60 Q3:Q4; next medium-term plan (from FY2028/03) may remain an "investment phase" rather than "harvest phase"; portfolio restructuring (electronics, GA) to be outlined at IR Day end-March 2027, details with May 2027 results.

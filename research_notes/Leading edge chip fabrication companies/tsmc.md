@@ -1,69 +1,304 @@
-# TSMC (Taiwan Semiconductor Manufacturing Company) — fact base as of mid-November 2026
+# TSMC (Taiwan Semiconductor Manufacturing Company; TWSE 2330, NYSE TSM) — fact base as of 14 November 2026
 
-_Status: skeleton saved 14 Nov 2026; research in progress. Sections will be filled as sources are checked._
+**Tags.** [FILING] filed/audited figure · [COMPANY CLAIM] company statement no outside party has confirmed · [CONFIRMED] company statement confirmed by a named outside party · [ESTIMATE] third-party estimate · [PRESS] press report (unnamed sources unless marked "on-record").
+**Data-sheet map.** (a) Position → §1 and §3 · (b) Economics → §1 · (c) Execution record → §2 · (d) Path forward → §5 (+§4) · (e) Market facts → §6 · (f) Case against → §6.
+**Method note.** Primary documents (earnings transcripts, management reports, 6-Ks, 20-F risk factors, 2025 Annual Report chapters, symposium press release) were read in full text. The shared web-search budget ran out part-way through, so some secondary items could only be reached through known URLs; anything recalled but not re-verified is in the closing "could not verify" list, not in the findings. "Own calc" marks my arithmetic on cited inputs.
 
-## 1. Latest numbers (Q3 2026, monthly revenue, guidance, mix, customers)
+## 1. Latest numbers: Q3 2026, monthly revenue, guidance, mix, customers (data sheet a, b)
 
 ### Takeaway
-(in progress)
+Q3 2026 (reported 15 Oct 2026) was a record: revenue US$46.7bn (+41% YoY), gross margin 66.4%, operating margin 58.7%, net cash NT$2.99tn, and 2026 guidance has been raised three times (growth "close to 30%" → "around 44%"; capex US$52–56bn → US$60–64bn). Growth is almost entirely price/mix at the leading edge (wafer shipments +9.6% YoY against revenue +41%), concentrated in HPC/AI (68% of revenue), North American customers (79%) and two customers that made up 36% of 2025 revenue.
 
 ### Cited Findings
 
+**Economics table (company basis, NT$bn unless stated)**
+
+| Item | FY2025 (pub. 15 Jan 2026 / AR Apr 2026) | 3Q26 (pub. 15 Oct 2026) | Tag / source |
+|---|---|---|---|
+| Revenue | 3,809.05 (US$122.42bn); +31.6% NT$, +35.9% US$ | 1,494.24 (US$46.72bn); +50.9% NT$, +41.2% US$ YoY; +16.2% US$ QoQ | [FILING] [AR ch.1](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch1.pdf); [3Q26 report](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf) |
+| Gross margin | 59.9% | 66.4% (2Q26 67.7%; 3Q25 59.5%) | [FILING] same |
+| Operating margin | 50.8% | 58.7% | [FILING] same |
+| Net income | 1,717.88 (US$55.21bn); net margin 45.1% | 763.06; net margin 51.1% | [FILING] same |
+| Diluted EPS | NT$66.25 (+46.4%) | NT$29.43 (US$4.60/ADR) | [FILING] same |
+| ROE | 35.4% | 45.5% annualised | [FILING] [4Q25 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf); 3Q26 report |
+| ROIC (third-party definition) | 51.0% | 60.3% TTM | [ESTIMATE] [StockAnalysis ratios](https://stockanalysis.com/quote/tpe/2330/financials/ratios/) |
+| Operating cash flow | 2,274.98 | 919.77 | [FILING] [StockAnalysis cash flow](https://stockanalysis.com/quote/tpe/2330/financials/cash-flow-statement/); 3Q26 report |
+| Capex | 1,272.41 (US$40.9bn) | 443.21 (US$13.84bn); 9M26 US$40.64bn | [FILING] [4Q25 report](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm); 3Q26 report |
+| Free cash flow (OCF − capex) | 1,002.57 | 476.56 (1Q26 348.21; 2Q26 287.36) | [FILING] same |
+| R&D | 246.43 (6.5% of revenue; 2024: 204.18) | 88.98 (6.0% of revenue) | [FILING] [AR ch.5](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch5.pdf); 3Q26 report |
+| D&A | 681.65 | 220.20 (3Q25 162.79) | [FILING] StockAnalysis cash flow; 3Q26 report |
+| Cash + marketable securities | 3,068.59 | 4,016.98 (US$126bn) | [FILING] 4Q25 report; 3Q26 report |
+| Interest-bearing debt / net cash | n/a | 1,031.58 / **2,985.40 net cash** | [FILING] 3Q26 report |
+| Cash dividends paid | 467 (NT$18/share) | 155.59 in quarter; NT$24/share to be received in 2026 | [FILING]/[COMPANY CLAIM] 4Q25 call; [2Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf) |
+
+- TTM to Sep 2026: revenue NT$4,944.8bn, OCF NT$3,127.6bn, capex NT$1,646.9bn, FCF NT$1,480.7bn, dividends paid NT$570.5bn. [FILING, aggregated by data vendor] — [StockAnalysis](https://stockanalysis.com/quote/tpe/2330/financials/cash-flow-statement/)
+- 3Q26 non-operating gain NT$34.59bn vs NT$95.83bn in 2Q26, which included ~NT$63bn disposal/mark-to-market gains on Vanguard (VIS) shares, worth NT$2.24 of 2Q26 EPS (one-off). [FILING] — [3Q26 report](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf); [2Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf)
+- 3Q26 "other investing sources" of NT$198.74bn were "mainly attributable to U.S. Treasury Department Investment Tax Credits"; subsidies recognised from the US, Japan, Germany and China were NT$167.6bn in 9M26 (NT$167.0bn of it in 3Q). [FILING] — 3Q26 report; [Focus Taiwan/CNA, 14 Nov 2026](https://focustaiwan.tw/business/202611140005)
+
+**Quarterly run and guidance record (US$bn revenue; GM; OM)**
+
+| Quarter | Guidance given | Actual | Source |
+|---|---|---|---|
+| 4Q25 | GM 59–61% | $33.73bn; 62.3%; 54.0%; EPS NT$19.50 | [FILING] [4Q25 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf) |
+| 1Q26 | $34.6–35.8bn; 63–65%; 54–56% | $35.9bn; 66.2%; 58.1%; EPS NT$22.08 | [FILING] [1Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf) |
+| 2Q26 | $39.0–40.2bn; 65.5–67.5%; 56.5–58.5% | $40.2bn; 67.7%; 60.3%; EPS NT$27.25 | [FILING] 2Q26 call |
+| 3Q26 | $44.6–45.8bn; 65–67%; 56–58% | $46.72bn; 66.4%; 58.7%; EPS NT$29.43 | [FILING] [6-K](https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26presentatione.htm) |
+| 4Q26 | $52.3–54.3bn; 65–67%; 56.5–58.5% (FX 31.8) | due mid-Jan 2027 | [COMPANY CLAIM] [6-K](https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm) |
+
+- FY2026 US$ revenue growth guidance: "close to 30%" (15 Jan) → "above 30%" (16 Apr) → "slightly above 40%" (16 Jul) → "around 44%" (15 Oct). 2026 capex: US$52–56bn (Jan) → "towards the high end" (Apr) → US$60–64bn (Jul, reiterated Oct); 70–80% for advanced nodes, ~10% specialty, 10–20% packaging/test/mask. [COMPANY CLAIM] — 4Q25, 1Q26, 2Q26 calls; [3Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf)
+- On 2027: no number. CFO (15 Oct 2026): "a bit too early to share the CapEx number beyond this year's"; capex 2026–2028 "significantly higher than the past three years" (US$101bn in 2023–25); revenue growth still expected to outpace capex growth; N2-family capacity to "more than double in 2027"; management "prudent in our business planning going into 2027" because consumer/price-sensitive segments are hurt by rising component prices. [COMPANY CLAIM] — 3Q26 call; 4Q25 call
+- Monthly revenue: October 2026 NT$586.89bn (+14.7% MoM, +59.7% YoY; record); Sept NT$511.86bn; Jan–Oct NT$4,485.62bn (+43.3%). [FILING] — [6-K, 10 Nov 2026](https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000796/tsm-revenue20261110.htm). August NT$514.81bn was the prior record; Q4 guidance implies NT$538–570bn a month for Nov–Dec. [ESTIMATE] — [Focus Taiwan/CNA](https://focustaiwan.tw/business/202611100014)
+
+**Mix (3Q26 vs 3Q25; FY2025)** [FILING] — [3Q26 report](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf); [AR ch.2](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch2.pdf)
+
+| | 3Q26 | 2Q26 | 3Q25 | FY2025 |
+|---|---|---|---|---|
+| 2nm / 3nm / 5nm / 7nm (% wafer revenue) | 8 / 33 / 28 / 10 | 3 / 30 / 33 / 11 | 0 / 23 / 37 / 14 | – / 24 / 36 / 14 |
+| ≤7nm | 79% | 77% | 74% | 74% |
+| HPC / smartphone / IoT / auto | 68 / 21 / 4 / 4 | 66 / 22 / 5 / 4 | 57 / 30 / 5 / 5 | 58 / 29 / 5 / 5 |
+| North America / Asia Pacific / China / Japan / EMEA | 79 / 10 / **5** / 3 / 3 | 78 / 8 / 6 / 4 / 4 | 76 / 9 / 8 / 4 / 3 | 75 / 9 / **9** / 4 / 3 |
+
+- Wafer shipments 4.476m 12-inch equivalents in 3Q26, +9.6% YoY and +3.2% QoQ; FY2025 15.0m (12.9m in 2024). Annual capacity 17–18m wafers in 2025 and planned 17–18m in 2026 (0% growth), with ≤7nm planned at 70–80% of 2026 wafer sales. [FILING] — 3Q26 report; [AR ch.1](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch1.pdf)
+- AI accelerators (narrow definition, excluding CPUs) were "high-teens percent" of 2025 revenue; target raised in Jan 2026 to a "mid-to-high-fifties % CAGR" for 2024–2029; company-wide revenue to "approach a 25% CAGR" in US$ over the same period. On 15 Oct 2026 the CEO said of the AI figure "it probably will be higher". [COMPANY CLAIM] — 4Q25 call; 3Q26 call
+- Margin drivers: N2 ramp dilutes gross margin 2–3 points for FY2026 (3–4 points in 2H26); overseas fabs "closer to 2%" in 2026, widening to 3–4 points "in the next few years"; N3 margin to cross the corporate average in 2H26; depreciation up "high-teens" in 2026; long-run targets gross margin "56% and higher" and ROE "high-twenties" through the cycle; tax rate 17–18% in 2026 (16% in 2025). [COMPANY CLAIM] — 4Q25, 1Q26, 2Q26, 3Q26 calls
+- Currency: every 1% fall in the US$ against the NT$ cuts operating margin ~0.3 point (2025 basis). Average rate was 29.91 in 3Q25, 31.98 in 3Q26. [FILING] — [20-F risk factors](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm); 3Q26 report
+- Dividend: policy is "sustainable and steadily increasing" quarterly cash dividends; board approved NT$9.0 for 3Q26 on 10 Nov 2026 (ex-date 11 Mar 2027; NT$7.0 for 2Q26, ex-date 10 Dec 2026). Same meeting approved capital appropriations of US$40.93bn, up to US$500m each for Anthropic (shares at IPO price) and OpenAI (preferred stock), and up to US$500m for a new strategic-investment company. [FILING] — [6-K board resolutions](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm)
+
+**Position, customers, ownership (data sheet a)**
+- Supplies contract manufacture of logic chips plus advanced packaging; 534 customers, 12,682 products, 305 process technologies in 2025; "more than 90,000" staff. [FILING] — [AR 2025](https://investor.tsmc.com/static/annualReports/2025/english/index.html)
+- Share: 72.5% of top-10 foundry revenue in 2Q26 (TrendForce, 9 Sep 2026; Samsung 5.9%, SMIC 5.4%, UMC 3.9%, GlobalFoundries 3.2%); 72% in 1Q26. [ESTIMATE] — [TrendForce](https://www.trendforce.com/presscenter/news/20260909-13225.html). TSMC's own wider measure: 40% of "Foundry 2.0" (all logic wafer manufacturing, packaging, test, mask-making) in 2025, up from 34% in 2024. [COMPANY CLAIM] — [AR ch.2](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch2.pdf)
+- Customer concentration: ten largest customers 70% / 76% / 78% of revenue in 2023 / 2024 / 2025; largest 25% / 22% / 19%; second largest 11% / 12% / 17%. [FILING] — [20-F](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm). The annual report shows the ranking flipped: "Customer A" NT$727.0bn (19%) in 2025 vs NT$352.3bn (12%) in 2024; "Customer B" NT$645.2bn (17%) vs NT$624.3bn (22%). TSMC does not name them. [FILING] — [AR ch.5](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch5.pdf)
+- Ownership: 25,932.5m shares; ADR programme 20.49% (1,062.7m ADSs at 28 Feb 2026, 1 ADS = 5 shares, depositary Citibank); National Development Fund (Taiwan government) 6.38% with a board seat; Government of Singapore 2.08%; Norges Bank 1.81%. C.C. Wei is both Chairman (since June 2024) and CEO; 7 of 10 directors are independent. [FILING] — [AR ch.4](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch4.pdf); [AR ch.2](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch2.pdf)
+
 ### Inferences
+- Own calc: FY2026 revenue implied by actuals plus Q4 guidance is US$175–177bn (+43% to +45%); capital intensity ~34–36%; implied 4Q26 capex US$19–23bn, the largest quarter ever.
+- Own calc: revenue per wafer shipped was ~US$10,440 in 3Q26 vs ~US$8,100 in 3Q25 (+29% in US$; +38% in NT$). With total wafer capacity flat in 2026, growth is coming from mix (N3/N2), price and packaging, not volume.
+- Own calc: Customer A's billings rose ~106% in 2025 while Customer B's rose ~3%. Press identifies them as Nvidia and Apple; that identification is not from TSMC.
+- The plan is self-funded: TTM operating cash flow is ~1.9x capex, and net cash rose NT$1.23tn in twelve months even with record capex and dividends.
 
 ### Gaps
+- Full-year 2025 and 2026 quarterly figures on the 20-F (IASB) basis were not read; the 20-F body beyond Item 3 could not be retrieved.
+- No 2027 capex or revenue guidance exists yet; the first numbers are due with 4Q26 results (mid-January 2027; date not yet on the [IR calendar](https://investor.tsmc.com/english/financial-calendar)).
+- The July 2025 and January 2025 call transcripts were not read in this session.
 
-## 2. Technology roadmap, promise versus delivery — and the A16 claim
+## 2. Technology roadmap, promise versus delivery — and the claim "A16 slipped from late 2026 to 2027" (data sheet c)
 
 ### Takeaway
-(in progress)
+N2 was delivered on the promised schedule (volume production 4Q25; 8% of wafer revenue by 3Q26) and an outside teardown firm has reportedly found it in a shipping phone. On A16, the only thing that demonstrably moved is the year on TSMC's public roadmap slide (2026 → 2027, April 2026), which trade press called a slip; TSMC has never confirmed a slip, kept saying "volume production in second half 2026" in writing and in person through July 2026, but dropped A16 timing from its earnings calls after January 2026 and has not announced that production has started. No customer product on A16 is confirmed.
 
 ### Cited Findings
 
-### Inferences
+**A16 timing — what was said, when**
+
+| Date | Source | Statement | Tag |
+|---|---|---|---|
+| 24 Apr 2024 | TSMC press release (NA symposium) | A16 with Super Power Rail "for planned production in 2026" | [COMPANY CLAIM] [PR](https://pr.tsmc.com/english/news/3136) |
+| 26 Jul 2024 | Kevin Zhang interview | "targeting the second half of 2026 to go into production for A16 for lead customers"; "A16 will start in Taiwan" | [COMPANY CLAIM] [More Than Moore](https://morethanmoore.substack.com/p/q-and-a-with-tsmc-on-next-gen-foundry) |
+| 17 Apr 2025 | 1Q25 call | "Volume production is scheduled for second half 2026" (same for N2P) | [COMPANY CLAIM] [transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-04/7630274eecc1197a4e3ea6a415f44a47204fe10a/TSMC%201Q25%20Transcript.pdf) |
+| 16 Oct 2025 | 3Q25 call | "Volume production is on track for second half '26" | [COMPANY CLAIM] [transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf) |
+| 1 Dec 2025 | DigiTimes (as relayed) | Nvidia the sole A16 customer at the time; Kaohsiung Fab 22 phase 3 to begin A16 output for Nvidia's roadmap in 2027, tools moving in 2Q26 | [PRESS] [Xenospectrum](https://xenospectrum.com/en/nvidia-feynman-tsmc-a16-report/) |
+| 15 Jan 2026 | 4Q25 call | "Volume production is on track for second half 2026" | [COMPANY CLAIM] [transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf) |
+| 22 Mar 2026 | Cnyes (as relayed) | A16 supply limited; Nvidia to keep only the most critical die on A16 and move others to N3P; ~20k wafers/month by end-2027, ~40k in 2028 | [PRESS]/[ESTIMATE] Xenospectrum |
+| ~Apr 2026 | 2025 Annual Report, shareholder letter | "Volume production for both N2P and A16 is scheduled for the second half of 2026" | [FILING of a COMPANY CLAIM] [AR ch.1](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch1.pdf) |
+| 16 Apr 2026 | 1Q26 call | A16 named once with no date; the "N2 and A16 status" passage used in earlier calls replaced by N2/N3 capacity and A14 | [COMPANY CLAIM] [transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf) |
+| 22 Apr 2026 | TSMC press release (NA symposium) | A13 and A12 (2029), N2U (2028) announced; A16 not mentioned at all | [COMPANY CLAIM] [PR](https://pr.tsmc.com/system/files/newspdf/attachment/49337b40ff139d51d533076cf7a945b30e107e07/2026%20Tech%20Symposium%20(E)_Final_wmn.pdf) |
+| 22–27 Apr 2026 | Trade press on the symposium slides | Tom's Hardware: TSMC "now lists A16 as a 2027 process technology, which is technically a slip from 2026", while quoting Zhang that A16 "will be ready for production in 2026". SemiEngineering: "A16 had been advertised earlier for production in late 2026, but Figure 1 now shows it in 2027." TrendForce: "A16 volume production is now slated for 2027, marking a delay". Gigazine: moved to 2027 "to match customer product plans" | Named outlets reading a TSMC slide — [Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-unveils-process-technology-roadmap-through-2029-a12-a13-n2u-announced-a16-slips-to-2027); [SemiEngineering](https://semiengineering.com/tsmc-tech-symposium-2026-by-the-numbers/); [TrendForce](https://www.trendforce.com/news/2026/04/23/news-tsmc-unveils-latest-roadmap-a12-a13-set-for-2029-without-high-na-euv-a16-volume-production-delayed-to-2027/); [Gigazine](https://www.gigazine.net/gsc_news/en/20260423-tsmc-roadmap-a13) |
+| Jun 2026 | TSMC paper at VLSI Symposium; AGM material (as relayed) | A16 developed and qualified, mass production expected 4Q26; AGM material says 2H26 | [COMPANY CLAIM, second-hand] [WindowsForum summary](https://windowsforum.com/news/tsmc-a16-still-targets-q4-2026-mass-production.443204/) |
+| 3 Jul 2026 | Japan Technology Symposium (Zhang), reported by Mynavi | N2P and A16 mass production "scheduled to start in the second half of 2026" (2026年下半期…量産開始が予定) | [COMPANY CLAIM via press] [Mynavi](https://news.mynavi.jp/techplus/article/20260706-4659370/) |
+| 16 Jul 2026 | 2Q26 call | A16 not mentioned; A12 (Super Power Rail on the A14 platform) and A13 set for 2029 | [COMPANY CLAIM] [transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf) |
+| 20 Aug 2026 | Chosunbiz citing Liberty Times; TradingKey citing "supply chain reports" | A16 development and validation complete; mass production targeted 4Q26 | [PRESS] [TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262120754-tsmc-produce-1-6nm-a16-chip-q4-ahead-intel-samsung-tradingkey) |
+| 15 Oct 2026 | 3Q26 call | The word "A16" does not appear. Asked whether power constraints push customers to backside power: "the answer is no… some of the accelerator might be using it… mobile phones, they don't use it" | [COMPANY CLAIM] [transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf) |
+
+- TSMC's A16 web page (image paths dated July 2026) gives no production date. [COMPANY CLAIM] — [tsmc.com](https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_A16)
+- Neither TSMC nor Nvidia has confirmed that Nvidia's "Feynman" uses A16; Nvidia's GTC 2026 presentation did not name A16 or TSMC. [PRESS] — [Xenospectrum](https://xenospectrum.com/en/nvidia-feynman-tsmc-a16-report/)
+
+**Rest of the roadmap**
+- N2: promised "volume production in the second half of 2025" (Apr 2025); delivered — "entered high volume manufacturing in 4Q 2025 at both our Hsinchu and Kaohsiung sites with good yield" (Jan 2026); first revenue 2Q26 (3%), 8% in 3Q26. [COMPANY CLAIM → FILING for revenue] — 1Q25 call; 4Q25 call; 3Q26 report. Outside confirmation: TrendForce says 2nm "contributed revenue for the first time in 2Q26" [ESTIMATE] ([TrendForce](https://www.trendforce.com/presscenter/news/20260909-13225.html)); Wikipedia's node table cites a TechInsights note on the iPhone 18 Pro Max for N2 shipping in 3Q26 [CONFIRMED per secondary source; the TechInsights note itself was not read] ([Wikipedia](https://en.wikipedia.org/wiki/2_nm_process)); AMD's EPYC "Venice" cited as among the first enterprise CPUs on N2 [PRESS] ([TrendForce](https://www.trendforce.com/news/2026/07/20/news-tsmcs-265b-u-s-bet-no-food-left-on-the-table-despite-4-5x-higher-fab-construction-costs/)).
+- N2 yield: TSMC says "good yield", that N2 defect density is improving faster than N3 did, and that it has >20 customer tape-outs with >70 in the pipeline. No independent yield figure found. [COMPANY CLAIM] — [SemiEngineering](https://semiengineering.com/tsmc-tech-symposium-2026-by-the-numbers/)
+- N2P: promised volume production 2H26 (every call Apr 2025–Jan 2026; annual report). Not mentioned on the Oct 2026 call; start not confirmed. [COMPANY CLAIM] — 4Q25 call; [AR ch.1](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch1.pdf)
+- A14 (second-generation nanosheet, no backside power): risk production 2027, volume 2028; internal test vehicle "close to 90%" 256Mb SRAM yield; CEO expects A14 "will be a bigger node than our current N2". A13 (6% area shrink) and A12 (backside power) 2029; N2U 2028. [COMPANY CLAIM] — 2Q26 call; 3Q26 call; 2026 symposium PR
+- High-NA EUV: A13/A12 (2029) are not expected to need it [PRESS reading of TSMC roadmap] ([TrendForce](https://www.trendforce.com/news/2026/04/23/news-tsmc-unveils-latest-roadmap-a12-a13-set-for-2029-without-high-na-euv-a16-volume-production-delayed-to-2027/)). CEO, 15 Oct 2026: "our plan is to use it in 2030", when it "will be mature" and cost "reasonable"; a joint ASML–TSMC large-format photomask initiative (8 Sep 2026) targets 2031. [COMPANY CLAIM] — 3Q26 call; 3Q26 report. Samsung has installed High-NA tools for use from 1.4nm; Intel plans it for 14A. [PRESS] — [TrendForce](https://www.trendforce.com/news/2026/06/30/news-samsung-reportedly-restarts-1-4nm-push-targets-2029-mass-production-to-close-gap-with-tsmc-intel/)
+
+**Execution record beyond nodes**
+- Arizona fab 1 (N4): delayed in July 2023 for lack of skilled labour [PRESS, on-record] ([Wikipedia: TSMC](https://en.wikipedia.org/wiki/TSMC)); high-volume production since 4Q24 with yield "comparable to our fabs in Taiwan" [COMPANY CLAIM] (1Q25 call). Outside confirmation: Apple said in Feb 2026 it would buy more than 100 million chips from TSMC Arizona in 2026 [CONFIRMED via secondary source] ([Wikipedia: TSMC Arizona](https://en.wikipedia.org/wiki/TSMC_Arizona)).
+- Arizona fab 2 (N3): first targeted 2026, pushed to 2027–28 in Jan 2024 [PRESS, on-record] (Wikipedia: TSMC), then pulled in to 2H27 (Jan 2026) and "third quarter '27, slightly ahead of our previous schedule" (Oct 2026). [COMPANY CLAIM] — 4Q25 call; 3Q26 call
+- Kumamoto fab 2: reported in 2024 as up-to-6nm with shipments late 2027 [PRESS] (Wikipedia: TSMC); now N3 with volume production 2028. Dresden: production 2027. [COMPANY CLAIM] — 1Q26 call; [Focus Taiwan](https://focustaiwan.tw/business/202611140005)
+- Guidance: every 2026 quarter met or beat the top of revenue guidance; gross margin beat the top of the range in 4Q25 and 1Q26 by 130 and 120 basis points. [FILING] — 4Q25, 1Q26, 3Q26 calls
+- Write-downs: none found. Earthquake losses net of insurance ~NT$3bn (2Q24) and NT$5.3bn (1Q25). [FILING] — [20-F](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm)
+- Resting on the company's word alone: all A16 and A14 performance claims (A16 vs N2P: 8–10% speed, 15–20% power, 7–10% density), N2 yield, Arizona yield parity, 5.5-reticle CoWoS yield >98%. [COMPANY CLAIM] — 1Q25 call; SemiEngineering
+
+### Inferences (mine)
+- Evidence for "slipped": TSMC's own April 2026 roadmap graphic moved A16 from the 2026 column to 2027; four outlets reported it independently; the reported Zhang remark separates "ready for production in 2026" from product ramp; DigiTimes had A16 output for Nvidia starting in 2027 as early as Dec 2025; TSMC then stopped giving A16 dates on three consecutive earnings calls; no start-of-production announcement exists six weeks before year-end.
+- Evidence against: the annual report (April 2026), the VLSI paper (June), AGM material (June) and the Japan symposium (3 July 2026) all still say volume production starts in 2H26/4Q26, and August press says validation is complete with 4Q26 on target. TSMC has never used the word delay.
+- Best reading: what slipped, by the press's account, is the year in which A16 appears as a production node for customers on TSMC's roadmap — in effect first customer product ramp and any meaningful revenue (2027) — not, by TSMC's account, the technical start of volume production (still 2H26). The claim is accurate as a description of the slide and misleading if read as a TSMC-confirmed delay to start of production. A16 is a niche HPC node with one reported lead customer, so the revenue stake in 2026–27 is small either way.
 
 ### Gaps
+- No primary TSMC statement after 3 July 2026 on A16 timing; whether production actually began in 4Q26 is unverifiable today.
+- The Tom's Hardware article body was unreachable (HTTP 403); its content is taken from search extracts and from outlets quoting it. The 2026 symposium slides themselves were not seen.
+- No independent N2 or A16 yield data found.
 
-## 3. Claim test: "over 90% of the most advanced chips are made in Taiwan"
+## 3. Claim test: "over 90% of the most advanced chips are made in Taiwan" (data sheet a)
 
 ### Takeaway
-(in progress)
+The figure traces to one source: SIA/BCG (April 2021), which put 92% of the world's sub-10nm logic manufacturing capacity in Taiwan using 2019-era data. By SIA's own later count the same measure was 69% in 2022, so "over 90%" is stale for that definition; it remains roughly right only for a narrower one — merchant-foundry output at the newest nodes (3nm and 2nm) in 2026, where TSMC's volume is entirely in Taiwan — and no primary source publishes that number. Every forecast has Taiwan's share falling to roughly 47–58% by 2030–32 on the broad definitions.
+
+### Cited Findings
+- Origin: "100% of the world's most advanced (below 10 nanometers) semiconductor manufacturing capacity is currently located in Taiwan (92%) and South Korea (8%)". Definition: capacity, logic, below 10nm; report dated April 2021. [ESTIMATE] — [SIA summary page](https://www.semiconductors.org/strengthening-the-global-semiconductor-supply-chain/); [SIA/BCG report](https://www.semiconductors.org/wp-content/uploads/2021/05/BCG-x-SIA-Strengthening-the-Global-Semiconductor-Value-Chain-April-2021_1.pdf). A Statista chart built on the BCG data dates the figures to 2019. [ESTIMATE] — [Statista](https://www.statista.com/chart/amp/30041/global-semiconductor-wafer-fabrication-capacity-by-type-and-location)
+- The number is still recycled: CNBC (30 Sep 2025) wrote that Taiwan produces "over 90% of the world's advanced semiconductors", citing "a 2021 industry report"; in the same piece Commerce Secretary Lutnick said "if you have 95%…", proposed "let's get to 50-50", and was reported to want ~40% of US chip needs made domestically within the presidential term. [PRESS, on-record] — [CNBC](https://www.cnbc.com/2025/09/30/taiwan-should-only-produce-half-of-americas-chips-says-us-commerce-chief.html). Taiwan's negotiator said Taiwan "will not agree" to a 50-50 split. [PRESS, on-record] — [CNBC, 2 Oct 2025](https://www.cnbc.com/2025/10/02/taiwan-us-chip-production-tsmc-trade-tariffs.html)
+- SIA update (May 2024, 2022 data): Taiwan 69% and South Korea 31% of sub-10nm capacity in 2022; forecast for 2032 Taiwan 47%, US 28%, South Korea 9%, Europe 6%, Japan 5%, China ~2%. SIA defines "advanced logic" as below 10nm and "leading-edge" as 5nm or smaller (the Commerce Department definition). [ESTIMATE] — [The Register](https://www.theregister.com/2024/05/08/us_china_sia/); [SIA summary](https://www.semiconductors.org/wp-content/uploads/2024/05/Emerging-Resilience-in-the-Semiconductor-Supply-Chain_SIA-Summary.pdf)
+- TrendForce (advanced-process capacity, threshold not stated in the release): Taiwan 71% in 2021, forecast 58% by 2030 with the US at 22% (5 Mar 2025); a December 2025 update put the US at ~28% and Taiwan ~55% of advanced output by 2030. [ESTIMATE] — [TrendForce](https://www.trendforce.com/presscenter/news/20250305-12504.html); [SemiMedia](https://www.semimedia.cc/global-chip-capacity-shifts-as-u-s-advanced-node-share-seen-reaching-28-by-2030/)
+- Current revenue share: TSMC 72.5% of top-10 foundry revenue in 2Q26, Samsung Foundry 5.9% (US$3.26bn, all nodes). The ranking is of foundries and does not count Intel's production for itself. [ESTIMATE] — [TrendForce](https://www.trendforce.com/presscenter/news/20260909-13225.html)
+- Where TSMC's newest nodes are made today: N2 "ramping… at both Hsinchu and Kaohsiung"; "our practice is to prioritize the land in Taiwan to support the fast ramp of our newest node due to the need for tight integration with R&D". Outside Taiwan TSMC runs only N4 in Arizona (since 4Q24) plus mature nodes in Kumamoto and Nanjing; first overseas N3 is Arizona fab 2 in 3Q27, then Kumamoto fab 2 in 2028. [COMPANY CLAIM] — [1Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf); [3Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf)
+- New fabs under way: "nearly 20 fabs worldwide in progress… 13 leading edge and advanced packaging fabs in Taiwan… and another five to six fabs overseas". [COMPANY CLAIM] — 3Q26 call
+- Arizona plan: third and fourth fabs "will utilize N2 and A16", fifth and sixth "even more advanced technologies" (Apr 2025); US$100bn added on 16 Jul 2026 "to build several more… fabs for 2-nanometer and below technologies, as well as advanced packaging", taking the commitment to US$265bn and, per Reuters, twelve fabs and packaging plants plus an R&D centre. TSMC's stated end-state: "around 30% of our two-nanometer and more advanced capacity would be based in Arizona once we complete scaling out to this independent GIGAFAB cluster" — no date attached. [COMPANY CLAIM] — [1Q25 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-04/7630274eecc1197a4e3ea6a415f44a47204fe10a/TSMC%201Q25%20Transcript.pdf); [2Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf); [4Q25 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf); [TrendForce, 20 Jul 2026](https://www.trendforce.com/news/2026/07/20/news-tsmcs-265b-u-s-bet-no-food-left-on-the-table-despite-4-5x-higher-fab-construction-costs/)
+- Arizona 2nm timing by outside account: fab 3 "2 nm targeted for 2029"; fab 4 2030. [PRESS, secondary] — [Wikipedia: TSMC Arizona](https://en.wikipedia.org/wiki/TSMC_Arizona)
+- What others add outside Taiwan: Intel 18A entered volume production in 4Q25 with shipments in 1Q26 (US fabs); Samsung SF2 in mass production since 2025 for Exynos, SF2P due 4Q26; Rapidus ran 2nm trial production in 2025. [PRESS, secondary] — [Wikipedia: 2 nm process](https://en.wikipedia.org/wiki/2_nm_process). Intel's 18A yield reportedly reached 85% and Intel reportedly plans to make 80–90% of Nova Lake compute tiles on 18A rather than TSMC N2. [PRESS] — TrendForce, 20 Jul 2026
+- A user of the capacity states the dependence in a filing: Anthropic's IPO prospectus says most advanced chipmaking capacity is in Taiwan, mainly at TSMC, and that TSMC has at times been unable to meet demand. [CONFIRMED by a named outside party, via press summary] — [StockAnalysis, 11 Nov 2026](https://stockanalysis.com/news/tsmc-invest-1-billion-anthropic-openai/)
+
+### Inferences (mine)
+- Own calc: TSMC's N3+N2 were 41% of 3Q26 wafer revenue, i.e. roughly US$17–19bn in the quarter, all made in Taiwan. Samsung Foundry's revenue across all nodes was US$3.3bn a quarter. Even if every Samsung dollar were 3nm/2nm, Taiwan would hold ≥84% of merchant-foundry revenue at those nodes; on any realistic split it is above 90%. That excludes Intel's in-house 18A output and Samsung's in-house Exynos volume, which no source quantifies.
+- So: "over 90%" is (i) correct for sub-10nm capacity in 2019; (ii) wrong for the same definition from 2022 (69%); (iii) probably still right in 2026 for merchant output at 3nm-and-below; (iv) unverified for capacity at 2nm-class once Intel 18A is counted.
+- Direction: Arizona N3 (3Q27), Kumamoto N3 (2028), Arizona N2/A16 (around 2029), Intel 18A/14A and Samsung Taylor all dilute it; TSMC's own end-state is ~70% of its 2nm-and-beyond in Taiwan. A reasonable range for Taiwan's share of sub-10nm capacity by 2030–32 is 47–58% (SIA, TrendForce), while its share of the very newest node in any given year will stay higher because TSMC ramps new nodes in Taiwan first.
+
+### Gaps
+- USITC and Commerce Department source documents using a "92%" figure were not located in this session.
+- No published 2025–26 split of 2nm/3nm capacity by country; no verified status of Samsung's Taylor, Texas fab.
+- TrendForce's node threshold for "advanced" is not stated in the releases read.
+
+## 4. Advanced packaging (CoWoS, SoIC, panel-level) and pricing power
+
+### Takeaway
+Packaging is still short in late 2026 by the CEO's own admission, though the gap is narrowing and outside estimates expect it to ease in 2027; TSMC is filling it with its own expansion, outsourcing and a new interposer supply deal rather than ceding the work. Pricing evidence is strong in the numbers (revenue per wafer up ~29% YoY in dollars) but management frames price rises as recovering cost inflation, and specific 2026–27 price-list increases rest on press reports.
+
+### Cited Findings
+- CEO, 15 Oct 2026: "Definitely, we have a little bit shortage on the back end"; TSMC signed a deal for GlobalFoundries to supply silicon interposers; "CoWoS is still the number one choice for our customers"; 5x-reticle packages in production, 9x and 14x in development. [COMPANY CLAIM] — [3Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf)
+- Capacity: TSMC CoWoS could reach 120,000–140,000 wafers a month in 2026, with OSAT partners adding 50,000–60,000 (industry total near 200,000); supply–demand gap ~20% narrowing to ~10% by end-2026 (Economic Daily News, citing institutional investors). TrendForce expects CoWoS capacity to grow more than 60% by 2027 and the 2.5D shortage to begin easing in 2027. TSMC's own figure: CoWoS capacity CAGR above 80% for 2022–2027. [PRESS]/[ESTIMATE]/[COMPANY CLAIM] — [TrendForce, 15 Jun 2026](https://www.trendforce.com/news/2026/06/15/news-tsmc-cowos-supply-demand-gap-reportedly-seen-narrowing-from-20-to-10-by-end-2026-as-capacity-expands/)
+- Economics: CoWoS average selling price ~US$10,000 per wafer, "on par with 7nm"; advanced packaging ~10% of TSMC's 2025 revenue with margins below the corporate average (Commercial Times sources). [PRESS] — [TrendForce, 28 Apr 2026](https://www.trendforce.com/news/2026/04/28/news-tsmc-cowos-wafer-asp-reportedly-nears-7nm-levels-advanced-packaging-poised-to-become-a-key-profit-driver/)
+- Outsourcing and spillover: ASE's SPIL bought a NT$2.8bn plant "amid spillover demand from TSMC advanced packaging capacity crunch" (Jun 2026); ASE reportedly raised advanced-packaging quotes by more than 20% (Jul 2026). [PRESS] — [TrendForce CoWoS news index](https://www.trendforce.com/news/tag/cowos/). Arizona fab 1 chips are packaged at Amkor's Peoria, Arizona plant. [PRESS, secondary] — [Wikipedia: TSMC Arizona](https://en.wikipedia.org/wiki/TSMC_Arizona). TSMC's first Arizona packaging plant is at permit/preparation stage. [COMPANY CLAIM] — [4Q25 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf)
+- Roadmap: 5.5-reticle CoWoS in production at >98% yield; 14-reticle (about 10 compute dies and 20 HBM stacks) 2028; SoW-X 2029; A14-on-A14 SoIC 2029; co-packaged optics (COUPE on substrate) production 2026. [COMPANY CLAIM] — [2026 symposium PR](https://pr.tsmc.com/system/files/newspdf/attachment/49337b40ff139d51d533076cf7a945b30e107e07/2026%20Tech%20Symposium%20(E)_Final_wmn.pdf); [SemiEngineering](https://semiengineering.com/tsmc-tech-symposium-2026-by-the-numbers/)
+- Panel-level (CoPoS): CEO in Apr 2026 — "we build a pilot line right now and expect production a couple of years later"; Jul 2026 — "about another one year to be mature". Press: pilot production mid-2027, mass production 2028–29, Nvidia expected first. [COMPANY CLAIM]/[PRESS] — [1Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf); [2Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf); TrendForce, 15 Jun 2026
+- Packaging competition: MediaTek reportedly using both Intel EMIB and TSMC CoWoS for its AI ASIC; on Intel's EMIB-T the CEO conceded "our competitors offer a very competitive solution". [PRESS]/[COMPANY CLAIM] — TrendForce CoWoS index; 3Q26 call
+- Pricing, management's words: "Our pricing will remain strategic, not opportunistic"; pricing gains in recent years were "just enough to cover the inflation cost from tools, equipment, materials, labor" (CFO, Jan 2026); "we don't suddenly increase our price"; US-made wafers "will be a little bit different from the one we produce in Taiwan"; "there is no ceiling for TSMC's profitability, but a dramatic increase will not happen overnight" (CEO, Jul and Oct 2026). TSMC does "not allow our customers to sublet or auction off the capacity". [COMPANY CLAIM] — 4Q25, 2Q26, 3Q26 calls
+- Pricing, outside readings: blended wafer price up ~20% a year for two years, price and mix combined (analyst estimate put to management, Jan 2026); "foundry prices for 5/4nm and more advanced nodes increased" in 2Q26 (TrendForce); an analyst cited "reports of significant price increases across your mature and advanced nodes" for 2027 and management did not deny them (Oct 2026). [ESTIMATE]/[PRESS] — 4Q25 call; [TrendForce](https://www.trendforce.com/presscenter/news/20260909-13225.html); 3Q26 call
+- Demand versus supply: "the demand actually is still far above our capability today to supply"; an analyst's "30% to 50%" excess-demand figure for 3nm-and-below went unquantified by management. [COMPANY CLAIM] — 3Q26 call; 2Q26 call
+
+### Inferences
+- Gross margin rose from 59.9% (2025) to ~66–68% in 2026 while N2 and overseas fabs were diluting it by a combined 4–5 points; that is the hardest evidence of pricing power plus utilisation, whatever the framing.
+- Packaging is a bottleneck TSMC is choosing to relieve through partners (ASE/SPIL, Amkor, GlobalFoundries interposers); that widens the supply chain and opens a door to Intel's EMIB on packaging-only business.
+
+### Gaps
+- No TSMC-published CoWoS capacity in wafers per month for any year; all such numbers are press or broker estimates. Percentage price-list increases for 2026 and 2027 could not be verified.
+
+## 5. What TSMC has to get through in 2027–2030 (data sheet d)
+
+### Takeaway
+The technology hurdles (A14 in 2028, backside power at volume, High-NA from 2030) look less threatening than the non-technical ones: a business that is 79% North American by customer, 78% top-ten customers and 68% AI/HPC must build an unprecedented ~20 fabs at once, absorb 3–4 points of overseas margin dilution, and keep US trade policy, Taiwan power supply and AI capital spending on side. Everything committed so far is being paid from operating cash flow, with subsidies a small supplement and no new equity.
 
 ### Cited Findings
 
+| Hurdle | Facts | What TSMC has done / how paid |
+|---|---|---|
+| Technology transitions | A14 volume 2028; A13/A12 2029; High-NA from 2030; "the CapEx-per-k cost for A14 will be even higher" than N2 [COMPANY CLAIM] ([4Q25 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf)) | R&D NT$246bn in 2025 (6.5% of revenue) [FILING] ([AR ch.5](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch5.pdf)); A14 capacity preparation begun [COMPANY CLAIM] (3Q26 call) |
+| Build-out and funding | 2026 capex US$60–64bn; 2026–28 "significantly higher" than US$101bn of 2023–25; ~20 fabs in progress; equipment "tool price inflation is real" [COMPANY CLAIM] ([3Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf)) | US$40.64bn spent in 9M26; US$40.93bn appropriated by the board on 10 Nov 2026 [FILING] ([3Q26 report](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf); [6-K](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm)); funded from OCF (NT$3.13tn TTM) and NT$2.99tn net cash |
+| US tariffs and trade deal | IEEPA tariffs (from Apr 2025) excluded chips but raised US operating costs; ruled unlawful by the US Supreme Court in Feb 2026 and replaced by a Section 122 tariff; Section 232 chip investigation closed Dec 2025 with a 25% tariff on certain advanced computing chips (exempt if imported for designated US use), a tariff-offset programme for domestic manufacturing, and possible broader tariffs later; US–Taiwan trade and investment agreement announced Jan 2026 caps reciprocal tariffs on Taiwanese goods at 15% and promises preferential Section 232 treatment for Taiwanese chipmakers investing in the US — details "still unclear"; two Section 301 probes covering Taiwan opened Mar 2026 [FILING] ([20-F](https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm)) | US commitment raised to US$165bn (Mar 2025) and US$265bn (Jul 2026) [COMPANY CLAIM] ([2Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf)); evaluating Texas and use of a customer's planned "Terafab", but "the fab got to be run by TSMC" [COMPANY CLAIM] (3Q26 call) |
+| US pressure for a production share | Lutnick's "50-50" and ~40% domestic targets (Sep 2025); Taiwan refused a 50-50 split [PRESS, on-record] ([CNBC](https://www.cnbc.com/2025/09/30/taiwan-should-only-produce-half-of-americas-chips-says-us-commerce-chief.html)) | Stated end-state ~30% of 2nm-and-beyond capacity in Arizona, undated [COMPANY CLAIM] (4Q25 call) |
+| Arizona cost and staffing | US fab construction costs "roughly 4 to 5 times higher than in Taiwan" (CFO to CNBC); overseas dilution ~2 points in 2026 → 3–4 points [COMPANY CLAIM] ([TrendForce](https://www.trendforce.com/news/2026/07/20/news-tsmcs-265b-u-s-bet-no-food-left-on-the-table-despite-4-5x-higher-fab-construction-costs/); 3Q26 call) | CHIPS Act: up to US$6.6bn grants and US$5bn loans (Nov 2024); Germany up to EUR5bn [FILING] (20-F); NT$167.6bn subsidies and tax credits booked in 9M26; TSMC Arizona earned NT$54.0bn in 9M26, JASM NT$2.4bn, ESMC lost NT$1.1bn [FILING via press] ([Focus Taiwan](https://focustaiwan.tw/business/202611140005)); higher prices for US-made wafers [COMPANY CLAIM] (3Q26 call) |
+| Taiwan electricity and water | TSMC's tariff rose 25% from Apr 2024 and a further 14% in Oct 2024; outages and drought rationing are named risks [FILING] ([AR ch.6](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch6.pdf)); CEO: "I worry about the electricity in Taiwan first" (Jan 2026); after the Middle East disruption the government said LNG was secured "through at least May" 2026 [COMPANY CLAIM] (4Q25 call; [1Q26 call](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf)) | Works with Taipower; multi-sourced gases with safety stock; target of 100% renewable power by 2040 [COMPANY CLAIM] (1Q26 call; [AR ch.1](https://investor.tsmc.com/static/annualReports/2025/english/pdf/2025_tsmc_ar_e_ch1.pdf)) |
+| Taiwan Strait | 13 of ~19 fabs in progress are in Taiwan and every new node ramps there first [COMPANY CLAIM] (3Q26 call; 1Q26 call); the 20-F notes cross-strait tension has repeatedly depressed the share price [FILING] (20-F) | Overseas clusters in Arizona, Kumamoto, Dresden; no insurance or hedge disclosed |
+| Customer concentration / AI pause | Top ten 78%, top two 36% of 2025 revenue [FILING] (20-F); HPC 68% of 3Q26 [FILING]; Nvidia's founder-CEO Jensen Huang resigned on 12 Nov 2026 after reports of a relationship with a person US agencies link to Chinese intelligence; CFO Colette Kress is interim CEO; House committee chairs sought a briefing on 18 Nov; Commercial Times says Nvidia "may slow chip orders"; TrendForce has "not observed significant order cuts" and expects AMD (~10%) and ASICs (~30%) to take AI-server share in 2027 [PRESS, on-record event; order reports unnamed] ([Focus Taiwan](https://focustaiwan.tw/business/202611130010); [TrendForce 10 Nov](https://www.trendforce.com/news/2026/11/10/news-nvidia-order-cuts-reportedly-loom-amid-huang-controversy-amd-asic-rivals-may-gain-tsmc-capacity/); [TrendForce 13 Nov](https://www.trendforce.com/news/2026/11/13/news-nvidia-without-huang-new-tests-ahead-as-amd-eyes-gains-tsmc-finds-a-cushion-and-memory-giants-weigh-risks/)) | Capacity planned with customers and "customers' customers"; TSMC now sends its own teams to check US data-centre build-out and power; CPUs for agentic AI and networking chips broaden demand [COMPANY CLAIM] (3Q26 call); stakes of up to US$500m each in Anthropic and OpenAI [FILING] (6-K) |
+| Competition at 2nm-class | Samsung SF2 in production, SF1.4 pushed from 2027 to 2029; Intel 18A in volume, 18A-P in pilot, 14A risk production 2028 and volume 2029 per Reuters [PRESS] ([TrendForce](https://www.trendforce.com/news/2026/06/30/news-samsung-reportedly-restarts-1-4nm-push-targets-2029-mass-production-to-close-gap-with-tsmc-intel/)); analysts on TSMC's calls cite Tesla deals with Samsung, Nvidia's acquired LPU product made at Samsung, and Intel insourcing; CEO calls Intel "a formidable competitor" [COMPANY CLAIM] (1Q26 call) | CEO: adopting a new node takes customers 2–3 years plus 1–2 years to ramp; "working with our customers for their next-generation LPU"; A14 engagement "higher than" N2 at the same stage [COMPANY CLAIM] (4Q25, 1Q26, 3Q26 calls) |
+| Export controls / China | China 5% of 3Q26 revenue (9% in 2025); licence needed for 16nm-and-below shipments to specified destinations (Jan 2025 rule); Nanjing fab's validated-end-user status expired Dec 2025, replaced by an annual licence; Oct 2024 self-report that a customer's chip may have reached a restricted entity [FILING] (3Q26 report; 20-F) | Annual licence obtained; cooperation with US and Taiwan authorities [FILING] (20-F) |
+| Trade secrets / data security | Aug 2025: TSMC reported that two current and six former employees illegally obtained 2nm trade secrets; one had joined Tokyo Electron; arrests followed [PRESS, on-record] ([Wikipedia: TSMC](https://en.wikipedia.org/wiki/TSMC)); 12 Nov 2026: employee personal data posted on an external site, no evidence TSMC systems were breached [FILING] ([6-K](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm)) | Legal action; third-party forensic firm engaged [FILING] (6-K) |
+| Currency | 1% US$ depreciation = −0.3 point operating margin [FILING] (20-F) | No structural hedge disclosed in documents read |
+| Mature nodes | 6-inch Fab 2 and 8-inch Fab 5 to be wound down; mature capacity refocused on image sensors (JASM, Sony joint venture) and automotive (ESMC) [COMPANY CLAIM] (1Q26 call; 3Q26 report) | Space reused for leading-edge work |
+
 ### Inferences
+- The plan is paid for: FY2025–9M26 operating cash flow covered capex and dividends with NT$1.2tn to spare, debt is flat at ~NT$1.03tn, and subsidies (NT$168bn in 9M26; CHIPS grants up to US$6.6bn) are small beside a US$60–64bn annual budget. The US$265bn Arizona figure has no timetable and is a commitment, not money spent.
+- The binding constraints for 2027–30 are external (tools, power, permits, trade rules, AI capital) rather than financial. Company evidence that demand exceeds supply is unverifiable from outside except through prices and lead times.
+- The Nvidia leadership crisis is the first real test of the concentration risk: TSMC is paid by whichever designer wins, but Nvidia is the reported driver of the fastest-growing, highest-priced capacity (N3, CoWoS, A16).
 
 ### Gaps
+- Investment amounts and credit-guarantee terms of the January 2026 US–Taiwan agreement, the final Section 232 offset rules, court outcomes of the 2025 trade-secret cases, and TSMC's share of Taiwan's electricity use were not verified in this session.
+- No customer has been confirmed, on the record, as having moved a leading-edge product from TSMC to Samsung, Intel or Rapidus in 2026; the examples are analyst references on calls.
 
-## 4. Advanced packaging and pricing power
+## 6. Market facts (data sheet e) and the case against (data sheet f)
 
 ### Takeaway
-(in progress)
+At NT$2,350 (ADR US$398.73) on 13 Nov 2026 TSMC is valued at NT$60.9tn, about 24x trailing and 16–21x forward earnings: mid-range against its own five-year history on trailing earnings and low on forward earnings, because consensus already assumes revenue +38% and EPS +35% in 2027. The shares are up 52% (Taiwan) and 31% (ADR) in 2026 but have fallen 9–18% from early-October highs in a sector sell-off that owes nothing to TSMC's own results; analyst positioning is uniformly bullish (20 of 21 buy-rated), which is itself a risk.
 
 ### Cited Findings
 
-### Inferences
+**Market facts (kept separate from the business facts above)**
+
+| Item | Taiwan shares (2330) | US ADR (TSM, 1 ADR = 5 shares) | Source |
+|---|---|---|---|
+| Close 13 Nov 2026 | NT$2,350 (+0.43%) | US$398.73 (−1.67%) | [StockAnalysis 2330](https://stockanalysis.com/quote/tpe/2330/history/); [StockAnalysis TSM](https://stockanalysis.com/stocks/tsm/history/) |
+| Market value | NT$60.94tn (~US$1.85tn at 32.95) | ~US$2.07tn at the ADR price | [StockAnalysis](https://stockanalysis.com/quote/tpe/2330/statistics/); [x-rates](https://www.x-rates.com/historical/?from=USD&amount=1&date=2026-11-13); [Motley Fool](https://www.fool.com/investing/2026/11/13/tsmc-s-terrific-growth-clearly-shows-that-the-chip-sell-off-is-overdone-here-are-the-best-stocks-to-buy-hand-over-fist/) |
+| End-2025 close → YTD | NT$1,550 → +51.6% | US$303.89 → +31.2% | [Yahoo 2330.TW](https://query1.finance.yahoo.com/v8/finance/chart/2330.TW?range=2y&interval=1mo); [Yahoo TSM](https://query1.finance.yahoo.com/v8/finance/chart/TSM?range=2y&interval=1mo) (own calc) |
+| 13 Nov 2025 close → 12 months | NT$1,460 → +61.0% | US$282.20 → +41.3% | Yahoo daily series (own calc); vendor shows +59.3% / +37.2% |
+| 52-week range | NT$1,375–2,590 | US$266.82–487.47 | Yahoo |
+| Recent closing high | NT$2,585 (6–7 Oct 2026); now −9.1% | US$485.80 (5 Oct 2026); now −17.9% | StockAnalysis history (own calc) |
+| Trailing P/E | 24.1x (EPS TTM NT$97.48) | 26.9x | StockAnalysis [2330](https://stockanalysis.com/quote/tpe/2330/statistics/), [TSM](https://stockanalysis.com/stocks/tsm/statistics/) |
+| Forward P/E (next 12 months) | 16.5x | 19.0x | same |
+| P/B; EV/EBITDA; FCF yield; dividend yield | 8.65x; 15.95x; 2.4%; 1.2% | 8.4x; 15.5x; –; 1.1% | same; [ratios](https://stockanalysis.com/quote/tpe/2330/financials/ratios/) |
+
+- Consensus (40 analysts, updated 11 Nov 2026): FY2026 revenue NT$5.58tn (+46.5%), EPS NT$110.63 (+67%); FY2027 revenue NT$7.69tn (+37.8%), EPS NT$149.53 (+35.2%). Price targets (21 analysts): low US$440, median US$560, average US$586.69, high US$1,000; 14 strong buy, 6 buy, 1 hold, 0 sell. [ESTIMATE] — [StockAnalysis forecast](https://stockanalysis.com/stocks/tsm/forecast/)
+- Own range, year-end trailing P/E on the Taiwan shares: 26.9x (2021), 11.7x (2022), 18.1x (2023), 24.1x (2024), 23.7x (2025); forward P/E at those dates 23.5x, 11.9x, 16.8x, 19.3x, 21.3x. [ESTIMATE] — [StockAnalysis ratios](https://stockanalysis.com/quote/tpe/2330/financials/ratios/). ADR-based year-end P/E 2016–2025: 11.6, 14.8, 14.2, 23.5, 28.3, 27.2, 11.2, 19.3, 28.8, 28.3. [ESTIMATE] — [CompaniesMarketCap](https://companiesmarketcap.com/tsmc/pe-ratio/)
+- Reaction to Q3 results (released after the Taiwan close on 15 Oct): ADR −1.8% on 15 Oct and −2.3% on 16 Oct; Taiwan shares −2.0% on 15 Oct and −0.8% on 16 Oct. Chip stocks had fallen for eight straight sessions on AI-financing worries (CoreWeave bond yields near 16%, Oracle credit-default swaps at 18-year highs), and gross margin had dipped 130bp. [PRESS] — StockAnalysis histories; [Khan Capital](https://khancapitals.com/tsmc-q3-2026-earnings/)
+- Since then: ADR −5.95% on 30 Oct, −10.78% on 5 Nov (to US$353.10), then +6.3%, +3.5%, +2.0%, +4.25% over the next four sessions; Taiwan shares −4.7% on 6 Nov and +4.8% on 11 Nov after the October sales, NT$9 dividend and Anthropic/OpenAI stakes. The Philadelphia semiconductor index fell 17% from the start of October to 13 Nov; Nvidia fell 29%. [PRESS] — StockAnalysis histories; [Motley Fool](https://www.fool.com/investing/2026/11/13/tsmc-s-terrific-growth-clearly-shows-that-the-chip-sell-off-is-overdone-here-are-the-best-stocks-to-buy-hand-over-fist/); [StockAnalysis news](https://stockanalysis.com/news/nvidia-rotation-amd-broadcom-chip-stocks/); [StockAnalysis news](https://stockanalysis.com/news/tsmc-invest-1-billion-anthropic-openai/)
+- Short interest in the ADR: 32.2m ADRs, 0.66% of shares outstanding on the vendor's basis, 2.78 days to cover. [ESTIMATE] — [StockAnalysis](https://stockanalysis.com/stocks/tsm/statistics/)
+- Dated events ahead: 17 Nov Nvidia results (first under the interim CEO); 18 Nov requested congressional briefing; 10 Dec November sales and ex-dividend (NT$7.0); 8 Jan 2027 December sales; mid-Jan 2027 4Q26 results with first 2027 capex and growth guidance; 11 Mar 2027 ex-dividend (NT$9.0). — [StockAnalysis news](https://stockanalysis.com/news/nvidia-rotation-amd-broadcom-chip-stocks/); [TrendForce](https://www.trendforce.com/news/2026/11/09/news-nvidia-faces-leadership-test-ahead-of-earnings-ceo-probe-congressional-briefing-request-and-key-risks-to-watch/); [TSMC calendar](https://investor.tsmc.com/english/financial-calendar); [6-K](https://www.sec.gov/Archives/edgar/data/1046179/000104617926000797/tsm-boardx202611xx.htm)
+
+### Inferences (mine; business and share price kept apart)
+
+**ADR premium.** Own calc: US$398.73 ÷ 5 × 32.95 = NT$2,628 against NT$2,350, a premium of ~11.8% (the two closes are ~14 hours apart). Using the 4Q25 average rate of 31.01, the premium at end-2025 was ~22%. The premium has roughly halved in 2026, which together with a ~5% weaker NT$ explains why the ADR is up 31% and the local share 52%.
+
+**Strongest arguments against the business.**
+1. Concentration on every axis: one island for all 2nm/3nm output, two customers for 36% of revenue, one end-market (AI/HPC) for 68%, one country's customers for 79%.
+2. The largest and fastest-growing customer has just lost its founder-CEO amid a national-security probe, with unnamed-source reports of order slowdowns.
+3. Capital intensity is rising at each node (N2 dearer than N3, A14 dearer still, US fabs 4–5x construction cost), while overseas dilution widens to 3–4 points; the 56%+ long-run gross-margin target is ten points below today's level.
+4. Total wafer capacity is not growing in 2026; growth is price and mix, which invites customers to fund alternatives (Intel 18A/14A, Samsung SF2, a customer-owned "Terafab", Intel packaging).
+5. Policy risk has no ceiling: Section 232 scope, an undefined offset scheme, US pressure for a fixed share of production, export-licence dependence for Nanjing.
+6. Roadmap disclosure has become less transparent on the one node (A16) where timing is in question.
+
+**Strongest arguments against the shares at this price.**
+1. What is priced: consensus 2027 revenue of NT$7.69tn (roughly US$235–240bn) is already far above what the company's formal "approach 25% CAGR from 2024" implies for 2027 (~US$176bn). The forward multiple looks low only if a second year of ~35% EPS growth arrives; on flat 2027 earnings the shares are on ~21x.
+2. Peak-margin risk: gross margin 66–68% versus a through-cycle target of 56%; trailing EPS includes a NT$2.24 one-off; the NT$ at ~33 flatters NT$ earnings by more than a point of margin versus the 31.8 guided.
+3. Positioning: 20 of 21 analysts rate it buy with an average target 47% above the price, and the shares fell on a record quarter — incremental good news has not been moving the stock.
+4. AI funding chain: TSMC is now investing in its customers' customers (Anthropic, OpenAI) while credit markets are questioning AI debt.
+
+**Arguments on the other side (for balance).** Results have beaten guidance every quarter of 2026; October sales (+59.7%) are above the run-rate needed for Q4; net cash is NT$2.99tn; forward P/E is below end-2024 and end-2025 levels; competitors' 2nm-class customer wins remain anecdotal.
+
+**Practical limits on a short.** ADR short interest is small and liquid (2.8 days to cover), so borrow is unlikely to be the constraint; the constraints are (i) a company that has raised guidance three times this year and reports monthly sales (next 10 Dec), (ii) two-way daily moves of 5–10% in November, (iii) dividend liabilities on 10 Dec and 11 Mar, (iv) for the ADR, a premium that can widen again, and for the Taiwan line, local short-sale rules that were not verified here. Governance flags are modest: combined Chairman/CEO since 2024, a 6.38% state shareholder with a board seat, and a November 2026 employee-data leak; no accounting or related-party issue was found in the documents read.
 
 ### Gaps
+- The specific trigger for the ADR's 10.8% fall on 5 Nov 2026 was not identified (it preceded the first Nvidia-CEO reports of 8 Nov).
+- FY2028 consensus is behind a paywall; no ten-year P/E series for the Taiwan line before 2021 was retrieved; ADR premium history rests on my own two-point calculation.
+- Taiwan short-selling rules, securities-lending cost and daily price limits were not verified.
 
-## 5. What TSMC has to get through in 2027–2030
+## Closing lists
 
-### Takeaway
-(in progress)
+### What I could not verify
+1. Whether A16 volume production has actually started in 4Q26; the wording of the April 2026 symposium slide and Kevin Zhang's remark (seen only through secondary reports); any A16 customer other than the press-reported Nvidia.
+2. N2P's start of volume production (promised 2H26); any independent N2, A16 or Arizona yield figure; the TechInsights iPhone 18 Pro Max note (cited via Wikipedia only).
+3. Investment and credit-guarantee amounts of the January 2026 US–Taiwan agreement (recalled as US$250bn each, not re-checked) and the final Section 232 offset rules.
+4. USITC and US Commerce documents behind "92%"/"95%" statements; any 2025–26 country split of 2nm/3nm capacity; Samsung Taylor's status; Samsung's reported 50–60% SF2 yield (uncited on Wikipedia).
+5. Identity of "Customer A" and "Customer B" (press: Nvidia and Apple); reported Nvidia order cuts (unnamed supply-chain sources).
+6. TSMC CoWoS capacity in wafers per month for 2024–27; percentage wafer price increases for 2026 and 2027; advanced packaging's share of revenue.
+7. Outcomes of the 2025 2nm trade-secret prosecutions and the reported suit against a former senior vice-president who joined Intel (recalled, not re-checked).
+8. TSMC's share of Taiwan's electricity consumption; Taiwan short-selling and securities-lending rules.
+9. The cause of the 5 Nov 2026 one-day fall in the ADR; FY2028 consensus; the date of the 4Q26 results call.
+10. Statements on the January 2025 and July 2025 earnings calls (transcripts not read).
 
-### Cited Findings
-
-### Inferences
-
-### Gaps
-
-## 6. Market facts and the case against (data-sheet parts e and f)
-
-### Takeaway
-(in progress)
-
-### Cited Findings
-
-### Inferences
-
-### Gaps
+### Figures on which sources conflict
+1. **A16 timing**: 2H 2026 / 4Q 2026 (TSMC calls to Jan 2026, 2025 Annual Report, June 2026 VLSI paper, 3 July 2026 Japan symposium) versus 2027 (TSMC's April 2026 roadmap slide as reported by Tom's Hardware, SemiEngineering, TrendForce, Gigazine; DigiTimes on Kaohsiung output).
+2. **Taiwan's share of advanced capacity**: 92% (SIA/BCG, sub-10nm, 2019 data) vs 69% (SIA, sub-10nm, 2022) vs 71% (TrendForce, "advanced", 2021); 2030–32 forecasts 47% (SIA, 2032), 58% (TrendForce, Mar 2025), ~55% (TrendForce via SemiMedia, Dec 2025); US 22% vs 28%.
+3. **Market value**: US$1.85tn (Taiwan price × shares) vs US$2.07tn (ADR price × ADR-equivalents) — the 12% ADR premium.
+4. **12-month price change**: +41.3% ADR / +61.0% Taiwan (own calc from Yahoo closes) vs +37.2% / +59.3% (StockAnalysis).
+5. **FY2025 net income and EPS**: NT$1,717.88bn and NT$66.25 (company, Taiwan-IFRS) vs NT$1,697.6bn and NT$65.47 (StockAnalysis); TTM EPS NT$98.26 (sum of reported quarters) vs NT$97.48 (vendor).
+6. **Current ADR P/E**: 26.9x (StockAnalysis) vs 37.5x (CompaniesMarketCap, undated and apparently stale).
+7. **Arizona scale**: "10 fabs, two packaging plants" vs "12 fabs and packaging facilities" vs "up to 12 fabs"; fab 3 node timing 2029 (Wikipedia) with no company date.
+8. **Intel 14A timing**: risk production 2028 / volume 2029 (Reuters via TrendForce) vs risk 2H 2027 / volume 2028 (TradingKey).
+9. **Interest-bearing debt**: NT$1,031.58bn (management report, all debt) vs NT$818.38bn (vendor "total debt", long-term only).
+10. **Overseas margin dilution timing**: "2–3% early, 3–4% in the latter stages" of a five-year period (Jan–Jul 2026) vs "closer to 2% for 2026… 3% to 4% in the next few years" (Oct 2026).
+11. **Arizona fab 1 start**: "high volume production in 4Q24" (TSMC) vs "began early 2025" (Wikipedia).
