@@ -48,3 +48,28 @@ Session date: 2026-11-21. Rules: research/CLAUDE.md (imported by the root CLAUDE
     - Assemble dossier.md.
     - Run compliance, numbers and completeness critics, with up to 2 fix rounds.
     - Write review_packet.md.
+    - Result: reconcile found no wrong printed values. It found one-off SG&A named for two quarters, FY2025 Q2 (about JPY 2 bn printed, link to the charge kept as sensitivity only) and FY2025 Q4 (no amount), and unified the tags of rows sharing a quote.
+    - B1 keeps 6 claims. China/export controls (C4) moved to B3 and the excluded list; the memory-share claim was added.
+    - gaps.md has 183 lines plus a list of documents to save by hand. handoff.md has 17 cells.
+    - dossier.md is about 116 KB. 1,185 cited ids all exist, and the cited tags match evidence.csv.
+    - Critic round 1 found 56 defects (8 major); round 2 found 19 (3 major). All were fixed or rejected with reasons in parts/XM_fixlog.md.
+    - Fix round 2 read the public TDnet daily lists for 28 Oct-21 Nov 2026: 121 GETs with the honest User-Agent, 1.5 s apart, all HTTP 200. Advantest had no forecast-revision filing in that window (A3-322). The four list pages that hold Advantest items were then saved to sources/ by the orchestrator.
+11. Orchestrator tidy-up:
+    - Renamed the 83rd and 84th semi-annual reports to their printed filing dates (13 Nov 2024 / 13 Nov 2025) and updated DS-003 and the dossier.
+    - Annotated 11 NOT RETRIEVED manifest rows that later saves superseded.
+    - Updated calc/RP_check.py to the final packet layout: 0 problems.
+12. Self-check (rules: clean-context sub-agent given only evidence.csv and sources/advantest/; ids from parts/packet_ids.txt, plus 5 handoff inputs):
+    | id | verdict | action |
+    |---|---|---|
+    | A1-060, A1-067, A1-062, A1-064 | MATCH | - |
+    | A1-316 | MISMATCH (period) | The row was labelled FY2026 Q3 / Oct-Dec 2026, the quarter of the statement, but the page speaks of 1H FY2026. Fixed to FY2026 1H / Apr-Sep 2026 (stated 28 Oct 2026). The cause was the reconcile step's rule of labelling past statements by their statement quarter. calc/XM_period_labels_fix.py restored the referenced period on all 64 rows the rule had moved; the packet row was updated. |
+    | A4-407, CL-070, A2-001, A2-141, A2-038, A5-063, A1-295, A1-299, TH-119 | MATCH | - |
+    | A4-134 | MATCH | The checker noted that the quote is an uninformative text-layer fragment; the value was verified on the rendered chart. The note was extended. |
+    | Secondary: A5-017, A5-018, A1-174, A6-326, A6-170 | MATCH | - |
+    Totals: 19 MATCH, 1 MISMATCH (fixed), 0 CANNOT OPEN.
+    After the fix: merge 2,415 rows. quote_check: all 1,955 quoted rows found. row_check: 3 known false positives. RP_check: 0 problems. DS_id_check: 0 missing ids and 0 tag mismatches.
+
+## Open items for the user
+- Documents to save by hand into sources/advantest/: see the top of gaps.md. Most important are the three CB offering notices (E_Info_20260401_02/03/04, HTTP 403), which hold the CB call/put and lock-up terms.
+- SEC EDGAR was not used. Teradyne 10-K/10-Q figures and any customer filings naming Advantest are NOT RETRIEVED.
+- The IAR 2026 file name keeps 2026-11-11 (PDF CreationDate); the news index lists the report on 2026-10-16.

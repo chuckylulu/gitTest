@@ -1,4 +1,5 @@
 statement rows relabelled: 333; by branch {'CY': 45, 'F': 144, 'M': 15, 'P': 58, 'Q': 58, 'T': 13, 'unchanged': 117}
+NOTE (2026-11-21): branch P below was superseded by calc/XM_period_labels_fix.py after the clean-context self-check: rows about a past period carry that period, with the statement date in brackets.
 branch codes: CY calendar-year; P past -> statement quarter; Q present quarter; F forecast period; T third-party/undated -> statement quarter; M manual
 
 id | tag | branch | period_fiscal before -> after | period_calendar before -> after | note added
