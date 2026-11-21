@@ -1,0 +1,409 @@
+                                                                                                                                                                  Accelerating XPS Metrology with AI to Enhance
+                                                                                                                                                                    Throughput in High-Volume Semiconductor
+2026 37th Annual SEMI Advanced Semiconductor Manufacturing Conference (ASMC) | 979-8-3315-8050-6/26/$31.00 ©2026 IEEE | DOI: 10.1109/ASMC69324.2026.11551272
+
+
+
+
+                                                                                                                                                                                  Manufacturing
+
+                                                                                                                                                                             Parikshit Jain, Dmitry Kislitsyn, Heath   Ravi Dey, Aarthi Sundaram, Ganesh
+                                                                                                                                                                                       Pois, Paul Isbester,                Subramanian, Mark Duggan
+                                                                                                                                                                            Mark Klare, Mitch Shiver, Prakhar Soni,           GLOBALFOUNDRIES
+                                                                                                                                                                                           Wei Ti Lee                400 Stonebreak Road Extension, Malta, NY
+                                                                                                                                                                                Nova Measuring Instruments, Inc.                   12020, USA
+                                                                                                                                                                             3342 Gateway Blvd., Fremont, CA 94538        ORCID : 0000-0002-8999-7657
+                                                                                                                                                                                    ORCID: 0009-0009-4024-7693
+
+
+                                                                                                                                                                  Abstract—Metrology       in     high-volume      semiconductor             yond established process control limits. Results demonstrate
+                                                                                                                                                               manufacturing is increasingly constrained by the need for                     that this approach can approximately double the measurement
+                                                                                                                                                               nanometer-level precision, extensive sampling, and the growing                throughput while maintaining compositional accuracy and
+                                                                                                                                                               complexity of device architectures. As the global demand
+                                                                                                                                                               for semiconductors accelerates, there is an urgent need for                   precision comparable to full acquisition time methods.
+                                                                                                                                                               scalable solutions that enhance measurement efﬁciency and                        An X-ray Photoelectron Spectroscopy (XPS) spectrum is
+                                                                                                                                                               throughput from manufacturing facilities without compromising                 built by scanning energy and, at each channel k, counting
+                                                                                                                                                               on measurement integrity. In this study, we present results                   the number of photoelectrons during a ﬁnite live time as
+                                                                                                                                                               from an AI-driven in-line metrology framework developed
+                                                                                                                                                               as part of this work, which leverages big data analytics and                  shown in Figure 1. High-volume manufacturing (HVM) re-
+                                                                                                                                                               machine-learning to signiﬁcantly reduce measurement time
+                                                                                                                                                               while maintaining accuracy, precision, and sensitivity. By
+                                                                                                                                                               integrating AI with established ﬁlm analysis algorithms, the
+                                                                                                                                                               system performs spectral reconstruction to compensate for signal
+                                                                                                                                                               degradation caused by reduced acquisition times. It is trained on
+                                                                                                                                                               large-scale historical datasets, enabling reliable performance in
+                                                                                                                                                               real-world production environments. Experimental evaluations
+                                                                                                                                                               conducted in a high-volume manufacturing setting at a
+                                                                                                                                                               GlobalFoundries facility demonstrate up to a twofold increase in
+                                                                                                                                                               metrology throughput, while remaining within bounds to ensure
+                                                                                                                                                               measurement integrity in terms of accuracy, precision, and
+                                                                                                                                                               sensitivity. This advancement offers a scalable and cost-effective
+                                                                                                                                                               approach to accelerate XPS metrology, with the potential to
+                                                                                                                                                               support next-generation fabrication demands.
+
+                                                                                                                                                                  Keywords: XPS, Machine learning, In-line metrology, Semi-
+                                                                                                                                                               conductor manufacturing, High-volume manufacturing, Spectral                  Fig. 1: Structure of an electron spectrometer. Courtesy of AG
+                                                                                                                                                               reconstruction, Throughput enhancement, Measurement accuracy,                 Jacobs.
+                                                                                                                                                               Process control.
+                                                                                                                                                                                                                                             quires metrology solutions that maintain tight process windows
+                                                                                                                                                                                      I. I NTRODUCTION                                       while meeting aggressive cycle-time goals. XPS is central
+                                                                                                                                                                  The proposed paper will present a case study describing                    for near-surface compositional analysis, yet its throughput
+                                                                                                                                                               how metrology throughput can be improved by implementing                      is bounded by the signal-to-noise ratio (SNR) limited by
+                                                                                                                                                               a machine learning based spectral reconstruction process that                 counting statistics. Reducing acquisition time decreases per-
+                                                                                                                                                               optimizes XPS measurements in high-volume semiconduc-                         channel live time and increases relative noise, which can
+                                                                                                                                                               tor manufacturing. This work addresses the critical trade-off                 degrade peak ﬁdelity, compositional accuracy, precision, and
+                                                                                                                                                               between acquisition time and measurement quality in XPS                       sensitivity if uncorrected.
+                                                                                                                                                               metrology, demonstrating that faster sampling can be achieved                    To formulate it conceptually, let the true count rate be rk
+                                                                                                                                                               without compromising accuracy, precision, or sensitivity be-                  (counts s−1 ). If each channel is acquired with dwell time τ
+
+
+
+
+                                                                                                                                                                            Authorized licensed use limited to: Nova Ltd.. Downloaded on June 16,2026 at 21:37:48 UTC from IEEE Xplore. Restrictions apply.
+and repeated N sweeps, the live time is T ≡ N τ and the                       while suppressing noise components. Model parameters are
+observed counts satisfy                                                       optimized through validation to ensure physically plausible
+                                                                              spectral characteristics.
+                                        ck                                     Figure 2 provides an overview of the complete processing
+       ck ∼ Poisson rk T ,           r̂k ≡    (counts s−1 ).
+                                          T                                   pipeline from raw measurements through denoising to quanti-
+Because Poisson ﬂuctuations obey Var(ck ) = E[ck ] = rk T ,                   tative concentration determination.
+the rate (counts/s) estimator is unbiased with variance that falls
+inversely with live time: [1], [2], [7]
+                                             rk
+             E[r̂k ] = rk ,     Var(r̂k ) = ,                  (1)
+                                             T
+                            
+                               Var(r̂k )        1
+              RSD(r̂k ) =                 =√        .          (2)
+                               E[r̂k ]         rk T
+   Equation (2) shows the key dependency: for a ﬁxed under-
+                                             −1
+   √ rate rk , the relative noise in counts s
+lying                                           decreases as
+1/ T , i.e. doubling dwell time (or the number of sweeps)
+improves the per-channel signal-to-noise as
+                                       √
+                 SNRk ≈ rk T ∝            T.                                                  Fig. 2: Overview of ML application.
+
+Since T = N τ , decreasing the sweep count N linearly reduces                   Elemental concentrations are determined from the enhanced
+T ; see [3] for experimental evidence and discussion. With                    spectra using an established thin-ﬁlm analysis algorithm that
+the growing adoption of data-driven models and Physical                       accounts for multi-layer structures and incorporates standard
+AI, which combines machine learning with domain-speciﬁc                       corrections. The fundamental relationship can be conceptually
+physics [6] [4], hybrid approaches are increasingly used to                   represented as:
+reduce time and improve efﬁciency.
+                                                                                                  Ii /Si
+                                                                                       Ci =                × 100%,                   Ci = 100%,   (4)
+                      II. M ETHODOLOGY                                                            j Ij /Sj                       i
+
+   Each acquired spectrum is treated as a high-dimensional                    where Ii represents the characteristic intensity for element i
+feature vector comprising intensity values sampled across m                   and Si denotes the relative sensitivity factor. This expression
+discrete energy channels. For a dataset containing n spectra,                 provides a simpliﬁed conceptual framework; the actual im-
+the measurements are organized into the matrix                                plementation is substantially more elaborate and incorporates
+                   ⎡                         ⎤                                standard parameters and correction procedures appropriate
+                     I1 (E1 ) · · · I1 (Em )
+                   ⎢ I2 (E1 ) · · · I2 (Em ) ⎥                                for rigorous thin-ﬁlm quantiﬁcation. For the quaternary Si-
+                   ⎢                         ⎥                                O-B-Ge systems examined in this work, the four elemental
+               X=⎢ .           ..       ..   ⎥,           (3)
+                   ⎣ ..           .      .   ⎦                                concentrations sum to 100%. The integration of machine
+                        In (E1 )    ···    In (Em )                           learning-based denoising with established ﬁlm analysis en-
+                                                                              ables reliable concentration determination from signiﬁcantly
+where Ii (Ej ) denotes the measured intensity at energy channel
+                                                                              noisier input data than conventional approaches, facilitating
+Ej for sample i. The resulting data matrix X ∈ Rn×m forms
+                                                                              substantial reductions in per-spectrum acquisition time while
+the basis for subsequent processing.
+                                                                              maintaining analytical precision.
+   To compensate for increased shot noise from reduced acqui-
+sition time (a critical constraint in high-throughput industrial
+settings), the spectra undergo processing through an unsu-                                         III. E XPERIMENTAL SETUP
+pervised machine learning-based denoising framework. The                         As shown in Figure 3 the setup of X-ray photoelectron
+approach exploits the intrinsic structure of spectroscopic data:              spectroscopy (XPS) quantiﬁcation of boron in epitaxial SiGe
+physically meaningful features such as peak positions, line-                  source/drain structures. It is intrinsically challenging due to
+shapes, and relative intensities exhibit strong inter-correlation             multiple compounding factors. The low B1s photoemission
+and coherent patterns, whereas random noise contributions are                 yield, combined with the low boron dose employed in the
+uncorrelated and distributed across the measurement domain.                   PFET epitaxial process, results in a weak boron signal. The
+The algorithm discovers underlying statistical regularities                   B1s peak lies directly on top of the second Si2s plasmon,
+without requiring labeled training examples, learning to dis-                 causing the boron signal to be effectively masked by the
+tinguish between coherent signal patterns and high-frequency                  silicon plasmon background. This spectral overlap, together
+stochastic ﬂuctuations by analyzing correlation structures                    with three-dimensional FinFET geometry effects and matrix-
+across multiple spectra and energy channels. The denoised                     and strain-induced peak broadening in SiGe, leads to a
+spectra X̃ preserve quantitatively accurate peak intensities                  severely reduced signal-to-noise ratio (SNR). Consequently,
+
+
+
+
+             Authorized licensed use limited to: Nova Ltd.. Downloaded on June 16,2026 at 21:37:48 UTC from IEEE Xplore. Restrictions apply.
+reliable boron quantiﬁcation using conventional XPS analysis                     •   Solo Mode: In Solo Mode, a second and independent
+requires long acquisition times. These limitations motivate the                      wafer set was measured using the physically reduced
+investigation of machine learning–based approaches to reduce                         acquisition time (approximately 50% of the POR FT
+acquisition time while maintaining measurement accuracy and                          recipe). Unlike Shadow Mode, measurements were col-
+physical consistency.                                                                lected directly under real half-time hardware conditions.
+                                                                                     The ML model developed during Shadow Mode was
+                                                                                     applied without retraining to these HT measurements.
+                                                                                     Performance was evaluated relative to the legacy POR
+                                                                                     FT baseline to verify that throughput improvement from
+                                                                                     reduced acquisition time did not compromise metrology
+                                                                                     accuracy or process control capability. As shown in
+                                                                                     Fig. 4, Result 3 (POR FT reference) is compared against
+                                                                                     Result 4 (real HT + ML). Together, Shadow and Solo
+                                                                                     Modes constitute a two-stage validation methodology:
+                                                                                     ﬁrst isolating ML reconstruction capability under con-
+Fig. 3: Representative FinFET 3D structure with diamond-                             trolled conditions, and subsequently conﬁrming robust-
+shaped SiGeB epitaxy. Derived from: Jusang Lee, Proc. of                             ness under true production operation.
+SPIE Vol 10959, 2019 [5].
+
+   Two sets of Silicon-Germanium-Boron (SiGeB) wafers (30
+wafers each) were characterized using Nova’s VeraFlex XPS
+metrology tool on regular production wafers. We used two
+different modes of validation. Shadow Mode and Solo Mode.
+Figure 4 illustrates the process ﬂow of validation (Both
+Shadow and Solo mode).
+   • Shadow Mode: In the Shadow Mode phase, the machine
+     learning (ML) framework was developed and evaluated
+     using synthetically generated half-time (HT) data derived
+     from a ﬁrst set of legacy Process-of-Record (POR) full-
+     time (FT) acquisitions. A dedicated signal-processing
+     algorithm was developed to generate HT-equivalent data
+     from the original FT measurements. The algorithm was                     Fig. 4: Operational modes for data acquisition: Shadow Mode
+     independently validated in separate experiments and                      and Solo Mode.
+     demonstrated to accurately reproduce the characteristics
+     of real half-time (HT) acquisitions while preserving the                    Measurement sites: Thirteen (13) measurement sites per
+     same physical wafer population. This ensured that both                   wafer capture within-wafer variation. Figure 5 illustrates the
+     HT (ML-applied) and FT (reference) results corresponded                  site layout used in production.
+     to identical wafers, thereby eliminating wafer-to-wafer
+     variability and isolating the effect of acquisition time
+     reduction.
+     The ML model was trained on historical FT data and
+     subsequently validated on the generated HT-equivalent
+     dataset. The predicted metrology outputs were directly
+     benchmarked against the original FT POR measurements.
+     As shown in Fig. 4, Result 1 (POR FT baseline) is
+     compared with Result 2 (HT-equivalent data with ML
+     applied). This controlled evaluation enabled quantitative
+     assessment of prediction accuracy, systematic bias, and                          Fig. 5: Measurement site locations at each wafer
+     variability under reduced acquisition conditions.
+     Upon meeting predeﬁned performance criteria, the trained                   Here, “recipe” denotes the VeraFlex parameter set for SiGeB
+     model was advanced to validation under real reduced-                     (X-ray line, analyzer pass energy, lens mode, step size ΔE,
+     time acquisition conditions. In this step, the recipe time               neutralizer settings).
+     was physically reduced to true half-time operation (ap-
+     proximately 50% of the original POR FT duration),                                   IV. M ETRICS AND ACCEPTANCE C RITERIA
+     transitioning from synthetic evaluation to production-                     We compare HTML (HT+ML) to FT and contrast with
+     level validation.                                                        uncorrected HT using HVM-oriented metrics.
+
+
+
+
+             Authorized licensed use limited to: Nova Ltd.. Downloaded on June 16,2026 at 21:37:48 UTC from IEEE Xplore. Restrictions apply.
+                                                (1)           (2)
+   1) RMSE of wafer means: Let Ci and Ci denote wafer-                                                          V. R ESULTS
+mean concentrations from the reference and candidate results,
+                                                                                    In this work, FT refers to the measurement obtained with
+respectively.
+                                                                                 full-time acquisition, while HT denotes half-time acquisition.
+   The RMSE is                                                                   HTML represents the results obtained by applying machine
+                                                                                 learning to half-time acquisition. For validation, two batches
+                        n              2                                      of the process are used: Shadow mode and Solo mode. HTML
+                       1
+                RMSE = 
+                                (2)  (1)
+                               Ci − Ci                                           measurements on top of the ML model demonstrate quantita-
+                         n i=1                                             (5)   tive equivalence to FT POR results, with strong linear corre-
+                           Acceptance: RMSE < 0.45                               lation (R2 = 0.96 for boron and R2 = 0.95 for silicon) and
+                                                                                 slopes within acceptance limits. Figure 6 shows the accuracy
+     2) Slope of wafer-mean line: From the linear regression                     plots for both boron and silicon species, conﬁrming this strong
+ (2)          (1)
+Ci      = m Ci + b, require                                                      linear agreement. Although a bias term of b = 1.44 for Boron
+                                                                                 and b = 1.89 for Silicon is present, it does not materially
+                               0.9 < m < 1.0.                              (6)   affect quantitative interpretation of the measurements. The
+                                                                                 bias introduces a uniform proportional offset across all values
+   3) Relative RSD Difference (stability): For wafer i and
+               (k) (k)   (k)                                                     rather than altering relative trends, spatial non-uniformities,
+result k, RSDi = σi /μi . Deﬁne
+                                                                                 or wafer-to-wafer variations. As a result, comparative anal-
+                         (2)            (1)                            n         ysis and process monitoring remain unaffected. In practical
+                 RSDi          − RSDi                               1
+Δi = 100 ·                                          ⇒   Δavg =            Δi ,   applications, this bias can be compensated through calibration,
+                         RSDi
+                                (1)                                 n i=1
+                                                                                 and therefore it is not expected to impact the reliability or
+                                                                           (7)
+                                                                                 usability of the measurement results. Precision analysis shows
+with acceptance −5 < Δavg < 0 (%).
+                                                                                 site-level variability, and in both shadow mode and solo mode,
+  4) Site-Scaled Standard Deviation Ratio (Cross-Wafer
+                                                                                 the HTML performance are statistically indistinguishable from
+Stability): To evaluate cross-wafer stability, each site mea-
+                                                                                 FT, while uncorrected HT data exhibit signiﬁcant shift. Figure
+surement is ﬁrst normalized by its corresponding wafer mean:
+                                                                                 7,8,11 and 12 shows precision plots for both shadow and
+                                          (k)                                    solo mode validation. The sensitivity analysis indicates that,
+                                 (k)     cij
+                                rij =         (k)
+                                                    ,                            in Shadow Mode, ML-corrected HT measurements (HTML)
+                                         μi                                      closely match the FT baseline across wafer sites for silicon,
+          (k)                                                                    while uncorrected HT data show elevated site-level variability.
+where cij denotes the measurement at wafer i, site j, for
+                   (k)
+                                                                                 For boron, however, the reduced acquisition time introduces
+condition k, and μi is the mean across all sites on wafer i.                     some loss in sensitivity that is only partially recovered by
+  For each site j, the cross-wafer standard deviation is com-                    the ML correction. Figure 9 and 10 shows sensitivity plots
+puted as                                                                       for shadow mode validation. A two-sample t-test at the 95%
+                   (k)                    (k)           (k)
+                 σj      = StdDev r1j , . . . , rnj             .                conﬁdence level conﬁrms no detectable difference between
+                                                                                 HTML and FT, establishing that the ML correction preserves
+The site-averaged standard deviation is then deﬁned as                           both accuracy and precision, thereby enabling throughput
+                                          13                                     enhancement without compromising metrology ﬁdelity.
+                                        1     (k)
+                          σ̄ (k) =           σ .                                     Shadow Mode Precision p
+                                                                                                           plots for Boron and Silicon
+                                       13 j=1 j
+
+     The stability ratio between the two conditions is given by
+                                          σ̄ (2)
+                               Ratio =           ,                         (8)
+                                          σ̄ (1)
+with an acceptance criterion of Ratio ∈ [0.90, 1.00]. This
+metric quantiﬁes the relative change in measurement precision
+across wafers.                                                                     Fig. 7: Shadow Mode - Precision plot for Boron (Atomic Conc.)
+   5) Point-level R2 (all sites, all wafers): Regress y = mx+b
+                                 (1)             (2)
+at the point level with xij = cij and yij = cij ; require
+
+                           0.90 < R2 < 1.0.                                (9)
+
+  A/B statistical tests: Two-sample t-tests (signiﬁcance α =
+0.05) compare FT vs. HT and FT vs. HTML for Boron
+and Silicon to assess population similarity (fail to reject H0
+indicates no statistically signiﬁcant difference).                                 Fig. 8: Shadow Mode - Precision plot for Silicon (Atomic Conc.)
+
+
+
+
+                Authorized licensed use limited to: Nova Ltd.. Downloaded on June 16,2026 at 21:37:48 UTC from IEEE Xplore. Restrictions apply.
+                 Shadow plots for Accuracy
+                 Boron (Atomic Concentration)
+
+
+
+
+                                                                                 Fig. 11: Solo Mode - Precision plot for Boron (Atomic Conc.)
+
+
+
+
+                Silicon (Atomic Concentration)
+
+
+                                                                                 Fig. 12: Solo Mode - Precision plot for Silicon (Atomic Conc.)
+
+                                                                                 Statistical A/B testing: The null hypothesis stated that the
+                                                                              absolute difference in means between FT and the comparator
+                                                                              exceeded an acceptable threshold (|μd | ≥ Δ), while the al-
+                                                                              ternative hypothesis stated that the difference remained within
+                                                                              this threshold (|μd | < Δ). A negligible threshold of Δ ≈ 0.2%
+                                                                              in atomic concentration was deﬁned for silicon, with the cor-
+                                                                              responding boron threshold obtained by proportional scaling.
+                                                                                 Let μd = μFT − μHTML/HT denote the mean difference.
+                                                                              The hypotheses were deﬁned as
+Fig. 6: Shadow Mode – Accuracy plots for Boron and Silicon.
+                                                                                             H0 : |μd | ≥ Δ        vs.    H1 : |μd | < Δ.
+
+
+                                                                                                         TABLE I
+  Shadow Mode Sensitivity plots for Boron and Silicon                                             Statistical Test Results
+                                                                                       Comparison     Boron      Silicon Reject H0
+                                                                                       FT–HTML 0.02710 0.00102             True
+                                                                                         FT–HT       0.63780 0.61723       False
+
+                                                                                 Statistically signiﬁcant p-values for the FT–HTML compar-
+                                                                              ison led to rejection of the null hypothesis for both boron
+                                                                              and silicon, supporting agreement between FT and HTML. In
+                                                                              contrast, non-signiﬁcant p-values for the FT–HT comparison
+                                                                              indicated that the null hypothesis could not be rejected for
+Fig. 9: Shadow Mode - Sensitivity plot for Boron (Atomic Conc.)               either element.
+
+                                                                                                              S UMMARY
+                                                                                 In this work, we present a production-oriented, AI-assisted
+                                                                              spectral reconstruction framework for X-ray Photoelectron
+                                                                              Spectroscopy (XPS) that substantially accelerates composi-
+                                                                              tional metrology while preserving full-time (FT) measurement
+                                                                              ﬁdelity. The approach was rigorously validated on two inde-
+                                                                              pendent SiGeB wafer sets, each comprising approximately 60
+Fig. 10: Shadow Mode - Sensitivity plot for Silicon (Atomic Conc.)
+                                                                              wafers, and evaluated across two complementary validation
+                                                                              modes.
+  Solo Mode Precision plots for Boron and Silicon
+                                                                                 Across both datasets, the method consistently delivers FT-
+                                                                              grade performance from half-time (HT) acquisitions, effec-
+                                                                              tively doubling throughput. Key metrology metrics meet or
+
+
+
+
+             Authorized licensed use limited to: Nova Ltd.. Downloaded on June 16,2026 at 21:37:48 UTC from IEEE Xplore. Restrictions apply.
+exceed acceptance thresholds, demonstrating robustness across                   [4] Parikshit Jain, Shane McQuarrie, and Boris Kramer. Performance com-
+spatial sampling scales. A/B testing establishes statistical                        parison of data-driven reduced models for a single-injector combustion
+                                                                                    process.
+equivalence for Boron and near-equivalence for Silicon relative                 [5] Jusang Lee, Ganesh Subramanian, Manasa Medikonda, Hossam Lazkani,
+to FT measurements. A modest reduction in Boron sensitivity                         Judson Holt, Churamani Gaire, Paul Isbester, and Mark Klare. Full
+was observed; however, the deviation remains within process                         structure transistor process monitoring of boron and germanium in pfet
+                                                                                    epi using in-line xps. In Metrology, Inspection, and Process Control for
+control and manufacturing speciﬁcation limits, and ongoing                          Microlithography XXXIII, volume 10959 of Proceedings of SPIE, page
+region-speciﬁc optimization is expected to close this gap.                          109590N, San Jose, California, USA, 2019. SPIE.
+   This capability addresses a long-standing throughput bot-                    [6] Renee Swischuk, Boris Kramer, Cheng Huang, and Karen Willcox. Learn-
+                                                                                    ing physics-based reduced-order models for a single-injector combustion
+tleneck in semiconductor manufacturing, where XPS dwell                             process. AIAA Journal, 58(6):2658–2672, June 2020.
+times constrain tool utilization. By nearly doubling throughput                 [7] John F. Watts and John Wolstenholme. An Introduction to Surface
+without hardware modiﬁcations or meaningful accuracy loss,                          Analysis by XPS and AES. John Wiley & Sons, 2 edition, 2020.
+the method enables more efﬁcient process monitoring and
+scales naturally within existing XPS toolchains. If HT RSTD
+exceeds HTML RSTD on our live monitoring dashboard, an
+alert is triggered to indicate potential model drift. This alert
+signals that retraining or recalibration of the solution may be
+required.
+   Future work will focus on extending the proposed frame-
+work across multiple XPS tool types, product lines, and pro-
+cess chemistries. In parallel, standardized operating procedures
+(SOPs) are being developed to support consistent deployment
+across tools and fabs. The proposed framework is structured
+to support applicability across a broad range of operational
+conditions while maintaining stable and predictable perfor-
+mance. Consistent evaluation and validation practices are
+employed to ensure reliable behavior in diverse measurement
+contexts. Empirical studies demonstrate stable performance
+under representative conditions, enabling dependable use for
+comparative analysis and ongoing monitoring. To support
+long-term robustness, the framework accommodates periodic
+incorporation of newly available data as part of routine opera-
+tion. In addition, monitoring of measurement consistency over
+time is supported to ensure sustained performance as operating
+conditions evolve. Collectively, these characteristics provide a
+scalable and maintainable foundation for applying data-driven
+methods to advanced semiconductor metrology.
+
+                        ACKNOWLEDGMENT
+   We thank Tyler Lynn and Robert Johnson (GlobalFoundries)
+for setting up the real-time NovaFit server and operational
+support during in-fab evaluation.
+The authors gratefully acknowledge the late Alok Vaid for
+his pioneering contributions to the ﬁeld and his invaluable
+guidance during the early stages of this work. His vision and
+expertise continue to inspire our research efforts.
+
+                             R EFERENCES
+[1] Neal Fairley, Pascal Bargiela, Adam J. Roberts, Vincent Fernandez,
+    and Jonas Baltrusaitis. Practical guide to understanding goodness-
+    of-ﬁt metrics used in chemical state modeling of x-ray photoelectron
+    spectroscopy data by synthetic line shapes using nylon as an example.
+    Journal of Vacuum Science & Technology A, 41(1):013203, 2023.
+[2] Gordon R. Gilmore. Practical Gamma-Ray Spectrometry. John Wiley &
+    Sons, 2 edition, 2008. See Ch. 5, “Statistics of Counting”.
+[3] Grzegorz Greczynski and Lars Hultman. A step-by-step guide to
+    perform x-ray photoelectron spectroscopy. Journal of Applied Physics,
+    132(1):011101, 07 2022.
+
+
+
+
+               Authorized licensed use limited to: Nova Ltd.. Downloaded on June 16,2026 at 21:37:48 UTC from IEEE Xplore. Restrictions apply.
+

@@ -1,0 +1,239 @@
+ Unique Spectral Interferometry solutions for complex High Aspect
+                    Ratio 3D NAND structures
+   Jaesuk Yoona, Jongmin Parka, Minjung Shina, and Dongchul Ihma, Oshrat Bismuthb, Smadar
+    Ferberb, Jacob Ofekb, Igor Turovetsb, Isaac Kim*c, aFlash Process Development Team MI,
+    Samsung R&D Center, Hwaseong, Korea, bNOVA Ltd, Rehovot, Israel, cNova Measuring
+                          Instruments Korea Ltd., Gyeonggi-do, Korea.
+
+
+                                                     ABSTRACT
+We have demonstrated the unique capabilities of spectral interferometry (SI) with vertical traveling scatterometry
+algorithms (VTS) to solve 3D NAND challenges by measuring complex layer thicknesses of the multideck 3D
+structures directly from the VTS signals, without modeling, with Cell Over Periphery (COP) underlayer filtering.
+Multiple examples are presented in the paper, including the measurement of the thin and thick layers of memory
+structures above the complex logic arrays and the remaining thickness of the fully processed Si wafer from the back
+side after thinning.
+In addition, VTS and AI enable direct profiling of the deep through-type cell metal contacts in the areas with
+nonperiodic staircases and significant lateral variations under the measurement spot.
+Keywords: OCD, Spectral Interferometry, Spectral Reflectometry, 3D NAND, HAR, contact hole profiles, staircases,
+and non-periodical targets.
+
+
+
+                                                 1. INTRODUCTION
+     A novel spectral interferometry technique called vertical traveling scatterometry (VTS) that utilizes
+unique information from spectral interferometry was introduced in [1,2]. It enabled solutions for
+applications that were not feasible with traditional scatterometry approaches and allowed for data filtering
+related to spectral information from buried layers, which can then be ignored in the optical model [2] to
+overcome geometrical complexities and focus on parameters of interest through dramatically simplified
+optical modeling. Such model simplifications were proposed for logic back-end-of-line applications,
+including critical dimensions of metals above GAA transistors, embedded memory in the active area, and
+critical dimensions of the top metals [2]. In all these applications, scatterometry combined with spectral
+interferometry measured the (mostly lateral) parameters of interest (POI) on the repetitive targets of the
+topmost layer by filtering out information from buried underlayers [2]. These capabilities are required to
+address 3D NAND process challenges, exploring the third dimension instead of conventional lateral scaling,
+driving the semiconductor industry for over 50 years. It continues to grow in height, with 1000 memory
+layers becoming feasible targets in the near future. One of the main metrology challenges is measuring the
+layer or feature thickness, especially in complicated multideck structures, which can vary from a single
+nanometer to tens of microns. Currently, the main challenges for High Aspect Ratio (HAR) lateral
+parameters are the profiles or variations of the lateral parameters with the feature depth.
+    The 3D NAND challenges addressed in the current study are shown in Figure 1. The first challenge is
+measuring above complex underlayers, both for the Cell over the periphery (COP) and multi-deck
+technology (A), as well as for wafer thinning for bonding of the Cell and periphery (B). Another challenge
+is measuring nonperiodic staircase structures such as through type cell metal contacts (C).
+    *Isaac-k@novami.com , phone +82-31-1076806698; novami.com
+
+
+                   Metrology, Inspection, and Process Control XXXVIII, edited by Matthew J. Sendelbach,
+                            Nivea G. Schuch, Proc. of SPIE Vol. 12955, 129551S · © 2024 SPIE
+                                            0277-786X · doi: 10.1117/12.3010729
+
+
+                                           Proc. of SPIE Vol. 12955 129551S-1
+      A                                       B                                      C
+          Figure 1. 3D NAND challenges COP and multi-deck technology (A) bonding of Cell and periphery (B) and
+          through type cell metal contacts (C).
+
+
+
+
+          A                           B                              C
+          Figure 2. SI optical concept (A), VTS underlayer filtering (B), and Direct Z profiling of the complex
+          multideck 3D NADN features (C).
+
+
+
+         In our study, we demonstrate the capabilities of SI (the scheme is shown in Figure 2A) with VTS algorithms
+to solve 3D metrology challenges by measuring complex layer thicknesses of the multideck 3D structures directly
+from the VTS signals, without modeling, with underlayer filtering (Figure 2B). Multiple examples are presented in
+the paper, including the measurement of the thin and thick layers of memory structures above the complex logic arrays
+and the remaining thickness of the fully processed Si wafer from the back side after thinning.
+         In addition, VTS and AI enable direct profiling (see Figure 2C) - measurement of the profiles of the deep
+through-type cell metal contacts in the areas with staircases and significant lateral variations under the measurement
+spot. This represents a challenge for traditional scatterometry, which usually measures repetitive grating structures.
+
+
+
+    2. RESULTS AND DISCUSSION.
+    VTS benefits were demonstrated in multiple 3D NAND applications (Figure 3). For all applications, we have
+shown direct measurement of thickness POI without modeling, with a single recipe, anywhere in the cell array, with
+complete 3D profiling for the contact application.
+
+
+
+
+                                          Proc. of SPIE Vol. 12955 129551S-2
+         A                           B                          C                                    D
+         Figure 3. 3D NAND applications studied in the paper: remaining Si thickness (A), remaining mold (B) CMP,
+         top TEOS (C), and through cell metal contact (D).
+         We analyzed different measurement sites for all applications, including multiple cell locations and specially
+designed simplified Optical CD targets that do not have complex patterns, such as periphery structures below the
+decks, staircases, etc. All CD structures were successfully measured with standard scatterometry solutions, modeling,
+and interpretation methods. All cell site solutions were achieved using the VTS capability. The robustness of VTS
+solutions was tested by applying them to different cell locations (with different underlayers) and proving their ability
+to cover significant variations of the parameters of interest (POI).
+
+
+
+         Remaining Si thickness.
+      Remaining Si is an example of wafer thinning for Hybrid bonding that is required for the next generations of
+3D NAND devices, where cell-to-periphery stacking will be used to reach 1000+ layers of devices [3].
+          We present the results of backside measurements of the extremely thinned, fully integrated wafers (polished
+down to a few microns) glued to the carrier. In this case, reflectance spectra are affected by the COP layers on the
+front side, and VTS allowed us to focus on the remaining Si thickness and eliminate the signal from these underlayers.
+VTS results are shown in Figure 4 as radial plots and wafer maps. Results for two measurement sites (above the OCD
+target and front side Cell) have similar fingerprints and minor expected offset between the two targets. OCD site
+results obtained with VTS modeling match results obtained with traditional OCD solutions.
+
+
+
+
+                                           Proc. of SPIE Vol. 12955 129551S-3
+                  A                                     B
+Figure 4. VTS results for the Remaining Si thickness after wafer thinning. Radial plots (A) and wafer maps
+(B) of the remaining Si for two locations, with OCD target and Cell (COP) below the silicon on the front side
+(the wafer is glued on the carrier and thinned down to microns).
+
+
+
+Remaining Mold CMP
+
+
+
+
+Figure 5. VTS signal for the Remaining mold CMP steps 1-5. The target parameter, the overall thickness of
+the dielectric stack, is measured directly from the VTS signal.
+
+
+
+
+                                 Proc. of SPIE Vol. 12955 129551S-4
+                                                                    A
+
+
+
+
+                                                                    B
+
+
+
+
+         Figure 6. VTS results for the remaining mold after six CMP steps. Radial plots for overall dielectric thickness
+         (A) are presented with a variability chart (B) for CELL and OCD targets. The Y scale on all graphs has a 4-
+         micron range, clearly showing the magnitude of the difference between the Cell and the OCD target.
+          The remaining mold applications represent a multideck 3D NAND stack, with the top part of the third deck
+being partially removed by a sequence of the CMP steps, with the POI as the total thickness of the remaining dielectric
+stack. The sequence of CMP steps and corresponding VTS signals are shown in Figure 5. VTS signal allows direct
+measurement of the overall thickness, as shown for the first five CMP steps. Diameter plots for overall dielectric
+thickness are presented together with a variability chart for the Cell and OCD targets in Figure 6. There is a significant
+difference in the overall thickness between the Cell and OCD targets for all CMP steps. Also, CMP removal rates are
+different; the removal rate in the Cell sites is 1.5 to 2 times higher than on the OCD target. In addition, There is a
+difference between within-wafer (WIW) uniformity and the wafer fingerprint of the remaining thickness for the two
+targets. Measurements in the Cell are a must for the process control of this 3-deck application. VTS allows these direct
+and accurate in-cell measurements of the overall thickness of the complex 3-deck COP application, with a single recipe
+covering an extensive application range of multiple CMP steps.
+
+
+
+         Top TEOS
+
+
+
+
+                  A                                       B
+         Figure 7. Top TEOS thickness Wafer Maps (A) are presented for one of the bottom deck staircase
+         arrangements and the OCD metrology target without staircases/COP. The diameter plots of top TEOS
+         thickness clearly show the difference between all the staircase locations and OCD targets, as average value
+         and WIW nonuniformity.
+
+
+
+                                            Proc. of SPIE Vol. 12955 129551S-5
+         The top TEOS application goal is to measure the thin dielectric layer covering nonperiodic structures with
+different complex staircase arrangements in the top and bottom decks, all above the complex COP. Results of the
+measurements are shown in Figure 7 for two measurement sites: Cell and OCD. Results clearly show the difference
+in wafer fingerprint for the two sites, proving the need for process control in the Cell. We should note that the same
+VTS recipe was used on multiple cell locations and showed consistent results on all staircase arrangements on both
+decks.
+
+
+
+         Through cell metal contact
+         Process control for the Contact application requires measuring the CD profile of the HAR hole structure
+passing down through two deck staircase structures above the periphery (COP). In this application, the underlayer and
+the layers around the target feature profile are nonperiodic.
+         SI measurements were performed at multiple measurement sites with three different staircase arrangements
+on the top and the bottom decks, as shown in Figure 8A. To measure the profile of the HAR hole, we have created an
+AI (Machine Learning) solution based on the reference metrology measurement of the multiple CDs along the profile
+for all measurement targets. SI measurement results agree well with the reference metrology for all contact profile
+locations from top to bottom at all measurement sites. Examples of the measured profiles are shown in Figure 8B.
+
+
+
+
+                  A                                                   B
+         Figure 8. Schematic representation of contact profile measurements (A) and measured profiles (B) examples.
+          The most essential parameter for contact process control is the Bottom CD. Wafer maps of the bottom CD
+are shown for 3DOE CD skew wafers in Figure 9A; maps are similar for three wafers for the SI and reference
+measurements. The correlation plot shows a good R2=0.89 and a small RMSE (Root Mean Square Error) below 5A
+(see Figure 9B). In this example, removing incoming variability of non-target parameters, we demonstrated the direct
+correlation between the VTS signal and the POI, which allows efficient AI solutions with minimal reference data.
+An additional challenge of this application was the precision of the measurements since the target size (or the size of
+the area with the required TCMC contacts to be measured) was smaller than the measurement spot size. We performed
+unique optimization of the best measurement location based on the VTS signal analysis. It allowed improvement in
+repeatability down to 3sigma of 0.15%.
+
+
+
+
+                                          Proc. of SPIE Vol. 12955 129551S-6
+                           A                            B
+         Figure 9. Bottom Contact CD wafer maps (A) for three wafers with the OCD skew and correlation plot (B)
+         for VTS results and the reference metrology.
+
+                                                 3. CONCLUSIONS
+          VTS capabilities were demonstrated on multiple 3D NAND applications, with underlayer filtering and direct
+Z profiling measurements in the memory cell arrays without modeling and reference data, with a minimal time to
+solution. An additional key benefit of the VTS approach is that a single measurement solution can be used at any cell
+location on the wafer and for any range of variations of the target parameter(s). The remaining Si, Remaining mold,
+and top TEOS were directly measured above the complex underlayers (molds, COPs, and staircases).
+         With the AI (ML) solution, the complete 3D profiling of cell metal contacts was demonstrated on the non-
+periodical staircase structures. A good correlation of the bottom CD to the reference metrology was presented. This
+example shows that a direct correlation between SI-measured signal and the POI and removal of incoming variability
+of non-target parameters allows efficient ML solutions with minimal reference data.
+        These capabilities of the SI technology will help address process control challenges for multiple emerging
+3D applications, such as CFET logic with BSPDN and 3D DRAM.
+
+
+                                                  REFERENCES:
+[1] D. Schmidt et al., OCD enhanced: implementation and validation of spectral interferometry for nanosheet inner
+spacer indentation," Proc. SPIE 11611 (2021)
+[2] D. Schmidt et al., Spectral interferometry for fully integrated device metrology, J. Micro/Nanopattern. Mater.
+Metrol., 22(3) 031203 (2023)
+[3] J. Han et al, IEDM 35-1, (2023)
+
+
+
+
+                                          Proc. of SPIE Vol. 12955 129551S-7
+

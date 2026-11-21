@@ -1,0 +1,238 @@
+       PROCEEDINGS OF SPIE
+       SPIEDigitalLibrary.org/conference-proceedings-of-spie
+
+
+
+
+                   Full structure transistor process
+                   monitoring of boron and germanium
+                   in PFET EPI using in-line XPS
+
+
+
+
+                   Jusang Lee, Ganesh Subramanian, Manasa Medikonda,
+                   Hossam Lazkani, Judson Holt, et al.
+
+
+
+
+                                  Jusang Lee, Ganesh Subramanian, Manasa Medikonda, Hossam Lazkani,
+                                  Judson Holt, Churamani Gaire, Paul Isbester, Mark Klare, "Full structure
+                                  transistor process monitoring of boron and germanium in PFET EPI using in-
+                                  line XPS," Proc. SPIE 10959, Metrology, Inspection, and Process Control for
+                                  Microlithography XXXIII, 109590N (23 May 2019); doi: 10.1117/12.2515266
+
+                                  Event: SPIE Advanced Lithography, 2019, San Jose, California, United States
+
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019 Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                  Full structure transistor process monitoring of boron and germanium
+                                       in PFET EPI using in-line XPS
+                     Jusang Lee a, Ganesh Subramanian a, Manasa Medikonda a, Hossam Lazkani a, Judson Holt a,
+                                            Churamani Gaire a, Paul Isbester b, Mark Klare b
+                         a
+                           GLOBALFOUNDRIES, 400 Stonebreak Road Extension, Malta, NY 12020, USA
+                   b
+                     Nova Measuring Instruments, Inc., 3090 Oakmead Village Drive, Santa Clara, CA 95051, USA
+
+
+                                                                                  ABSTRACT
+
+                The epitaxial growth of source/drain structures demands a process with tight control of boron and germanium
+                composition to ensure consistent device performance. However, in-line monitoring of the epitaxial composition in
+                FINFET structures has been one of the most difficult challenges for both process development and manufacturing.
+                Traditional in-line monitoring schemes have relied heavily on critical dimension (CD) measurements, with no
+                composition information. Instead, composition information was provided by offline analysis techniques such as
+                secondary ion mass spectrometry (SIMS), which is destructive and does not measure the composition directly on the
+                FinFET device structure. In this paper, we present results from in-line X-Ray Photoelectron Spectroscopy (XPS)
+                measurements on FinFET structures. This technique is not only sensitive to individual element abundance but also gives
+                information related to the local chemical environment. For this application we monitored silicon, germanium, and boron
+                concentrations in SiGeB EPI source/drain 3D structure without interference from other structural features in the logic
+                device. The in-line XPS measurement of PFET EPI boron and germanium performed in this way on the full structure
+                transistor has been demonstrated to correlate with CMOS device performance, thus significantly reducing time to detect
+                epitaxial composition drift or excursion.
+
+                Keywords: In-line XPS, metrology, boron, process monitoring, Epi, germanium, SiGe, FinFETs.
+
+
+                                                                           1. INTRODUCTION
+
+                A basic field effect transistor (FET) as presented in figure 1 consists of a source, drain, and control gate. Doping silicon
+                with Group III elements such as boron creates mobile holes in the valence band resulting in p-type semiconductor
+                material. During epitaxial growth additional elements such as germanium are used to adjust lattice strain to further
+                improve the electrical performance of the semiconductor device. For improved device performance many advance
+                semiconductor nodes have moved from planar to FinFET device architecture, as shown1 in figure 2. The source and
+                drain in these FINFET structures are grown epitaxially into complex 3D geometries with specific tailored dopant and
+                elemental composition to provide desired electrical performance in the final device. These 3D FINFET structures
+                provide challenges to the in-line control of both the epitaxial structure and composition. Measuring structure with
+                techniques such as optical critical dimension (OCD), critical dimension scanning electron microscopy (CDSEM) or other
+                in-line techniques is effective for size control, but does not give any information about composition, which is critical for
+                controlling electrical performance2. Instead, composition is typically measured on large planar pads using secondary ion
+                mass spectroscopy (SIMS), X-Ray diffraction (XRD), X-Ray Fluorescence (XRF), XPS, ellipsometry, and resistivity.
+                Although those techniques are sensitive to low level dopant concentrations, interpretation of those measurements is
+                complicated by process loading effect differences between the large planar pads and device-like 3D structures2. As a
+                result of these challenges, when evaluating 3D FINFET EPI device performance, problems related to dopant
+                concentration are often only revealed after many process steps during electrical testing.
+
+
+
+
+                                               Metrology, Inspection, and Process Control for Microlithography XXXIII, edited by
+                                               Vladimir A. Ukraintsev, Ofer Adan, Proc. of SPIE Vol. 10959, 109590N © 2019
+                                                       SPIE · CCC code: 0277-786X/19/$18 · doi: 10.1117/12.2515266
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590N-1
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                      Figure 1:       Planar transistor where electrical flow between epitaxially grown source and drain is governed by voltage
+                      applied to the gate
+
+
+
+
+                      Figure 2:       Representative FINFET 3D structure with diamond shaped SiGeB epitaxy.
+
+
+
+                                                            2. BACKGROUND AND MOTIVATION
+
+                In-line metrology utilizing XPS provides several advantages over geometric or traditional material composition
+                techniques in that the electron binding energy is directly related to not only the element of origin but also the local
+                chemical environment. For the case of XPS measurements on complex 3D FINFET structures, the non-planar geometry
+                is actually beneficial as it reduces undesirable plasmon peaks observed on blanket wafers. As shown in figure 3, the
+                binding energy of boron at 188 eV overlaps with the significantly stronger Si2s resonance plasmon at 185 eV. Isolating
+                the silicon into fins such as in 3D FINFET structures reduces the silicon lattice resonance and resulting plasmon signals,
+                resulting in improved sensitivity for B1s peaks while also directly measuring the epitaxial composition in a device-like
+                structure (figure 4).
+
+
+
+
+                      Figure 3:       XPS spectrum of SiGeB on a blanket Si wafer showing strong Si2s resonance plasmons.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590N-2
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                      Figure 4:      B1s spectrum from SiGeB epitaxy grown on a 3D FinFET structure which demonstrates the significant reduction
+                      of Si2s resonance plasmons to provide integrateable peaks (B1s and B-O) for determination of boron concentration in
+                      source/drain epitaxy.
+
+                As a result, in-line XPS allows for much tighter epitaxial process control, enabling tighter control of device performance.
+                In this work, we will demonstrate a monitoring scheme that selectively monitors Si/Ge/B concentrations in a PFET
+                structure using XPS. A set of full flow product wafers with various Si/Ge/B process conditions was analyzed in line with
+                XPS, and the XPS results correlated to device electrical test results. Multiple experiment wafers were processed with
+                varying epitaxial conditions, including different power and Ge and B precursor gas flows. Various techniques were used
+                to characterize the completed process. These techniques included CD-SEM, Resistivity, XRD, OCD and in-line XPS.
+                The full flow wafers were then advanced to electrical test (e-test) to compare device performance to inline metrology.
+                The final results were tabulated, and all techniques were compared to e-test for all the varying process conditions. Each
+                characterization technique was compared to e-test result, and ranked according to its correlation to critical parameters.
+
+
+                                                                                 3. RESULTS
+
+                3.1 Comparison of in-line XPS to offline SIMS
+                For the assessment of dopant concentrations of EPI, offline SIMS provides a well calibrated depth-resolved measure of
+                Boron concentration on solid pad sites. However, offline techniques result in significant delay between the time of EPI
+                formation to the time of analysis, and can only be done on a small number of samples, both of which render
+                unacceptable for statistical process control. In addition, SIMS is only able to characterize the composition on a
+                representative solid measurement pad, in which may have elemental composition differences when compared to the
+                composition in an actual device structure. In order to demonstrate the correlation between these measurement methods,
+                source/drain epitaxy process with a series of different B2H6 precursor flows was grown on both FinFET production
+                wafers (measured in-line with XPS) and blanket Si wafers (measured off-line with SIMS), and the results are shown in
+                figure 5. We see comparable trends for boron dopant concentration with respect to B2H6 flow for each method.
+                However, there are several points that should be mentioned. First, it is evident that the in-line XPS %B has a non-linear
+                dependence on gas flow, compared to the linear response of the SIMS measurement. This is likely due to epitaxial
+                dopant saturation in the device area, but it could also be due to an XPS measurement artifact. Second, the XPS reported
+                value of the Boron concentration (between 10% - 20% B) is significantly higher than the SIMS value (between 1e20 –
+                2e20 atoms/cm^3). Part of that discrepancy is due to epi loading effect between blanket and patterned wafers, but even
+                given that difference the XPS value is simply not physically possible. That is, any epitaxial film that contained >10% B
+                would show high levels of defectivity, which are not observed. However, the fact that good correlation extends across a
+                large process range validates the use of in-line XPS for statistical process control.
+
+                3.2 Comparison of in-line XPS to other in-line metrology
+                Wafers processed on different epitaxial chambers were evaluated by multiple in-line metrology tools such as XPS, CD-
+                SEM, and OCD to assess response to variation in B2H6 flow, as shown in figure 6. Only XPS was able to differentiate
+                healthy epitaxial chambers compared to those that required tuning. In addition to the device impact (discussed below),
+                mismatched boron can also result in significantly higher defectivity. Figure 7 shows that elevated concentration of
+                boron (as measured by in-line XPS) is directly correlated to higher on-wafer defectivity, in this case due to an epitaxial
+                process tuning issue.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590N-3
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                      Figure 5:      Offline SIMS analysis of epitaxial films on blanket Si utilized as reference metrology for boron concentration in
+                      source/drain EPI. Both SIMS and in-line XPS provide direct correlation of boron concentration to B2H6 flow but XPS measures
+                      on device-like 3D structure whereas SIMS evaluates EPI grown on a blanket Si wafer.
+
+
+
+                                                                                                      OCD                 OCD
+                                         XPS                         CDSEM                          EPI Height          EPI Width
+
+
+
+
+                      Figure 6:      CDSEM, OCD, and XPS vs boron flow offset from multiple EPI chambers. Only in-line XPS was successful in
+                      identifying chambers which required tuning.
+
+
+                3.3 Effective electrical test
+                In-line device electrical test provides a direct measurement of device performance. Wafers measured with both in-line
+                CDSEM (for EPI size) and XPS (for boron concentration) after source drain epitaxial growth were measured at electrical
+                test. Figure 8 shows the correlation of device performance (as measured by Ieff) with both CDSEM epi size and XPS
+                %B. Furthermore, to characterize the cross-device loading effect both 2 fin and 40 fin structures were tested. Compared
+                to in-line CDEM, XPS boron % showed significantly clearer correlation with device performance, and especially good
+                correlation to the ratio of the Ieff performance of the different devices measured (2FIN/40FIN).
+
+
+                                                                             4. CONCLUSION
+
+                In summary, we have demonstrated that in-line XPS compelling capability for in-line statistical process control of boron-
+                doped source/drain epitaxy on FinFET structure, with good correlation to off-line SIMS, in-line defectivity, and device
+                performance measured at electrical test. Being able to directly measure boron on the 3D FinFET structure also bypasses
+                potential epitaxial loading effect differences that can be seen between blanket wafers and device structures. In-line XPS
+                can be measured directly following epitaxial growth which decreases the turn-around time for identification of dopant
+                concentration excursion or drift which can directly impact device electrical performance.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590N-4
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                      Figure 7:       In-line defectivity vs. normalized XPS B% on patterened FinFET wafers.
+
+
+
+
+                      Figure 8:     Correlation of effective device performance (Ieff) to epitaxial lateral dimension (as measured by CDSEM) and
+                      XPS B%. Device performance was measured on two different device structures (2FIN and 40FIN) and the ratio of the
+                      performance of those two stuctures is also shown.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590N-5
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                                REFERENCES
+
+                [1] John F Watts, “X-ray photoelectron spectroscopy,” Elsevier Science Ltd, Vacuum, vol. 45, no. 6/7, pp. 653-671,
+                    1994.
+                [2] C. Thomas Larson, Emir Gurer, and J. Kelly Truman, “Using an XPS-based metrology system to determine film
+                    thickness and composition,” Micro, Defect/Yield Analysis and Metrology, April 2005.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590N-6
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+
