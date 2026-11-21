@@ -1,0 +1,939 @@
+
+
+X-ray Inspection Becoming Essential In Advanced Packaging
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                X-ray Inspection Becoming Essential In Advanced Packaging                                                    
+
+Test, Measurement & Analytics
+
+X-ray Inspection Becoming Essential In Advanced Packaging
+
+Improvements in speed and precision have transformed a research tool for studying defects in chips into an industry workhorse.
+
+								July 9th, 2024 - 
+
+								By: 
+Gregory Haley
+
+X-ray technology is moving into the mainstream of chip manufacturing as complex assemblies and advanced packaging make it increasingly difficult to ensure these devices will work as expected throughout their lifecycles.
+
+A single defect in a chiplet or interconnect can transform a complex advanced package into expensive scrap, and the risk only increases as the chip industry shifts from homogeneous to heterogeneous chiplets from multiple vendors and foundries. While optical inspection can catch the majority of defects quickly and nearly effortlessly before they are assembled together inside a package, it cannot see inside the package to determine if bumps are aligned, chiplets have shifted during packaging, or whether structures have remained intact during the packaging process. That requires other inspection technologies, such as X-ray, ultrasonic, and infrared imaging.
+
+“There are a lot of different tools you can use for review and inspection,” says Daniel Chen, applications manager at 
+Bruker
+ Nano. “They all provide different sources of information, and they all have an important role to play.”
+
+X-ray inspection, which sat on the sidelines for years due to its higher cost and slower speed, has undergone significant changes in recent years. Today it is faster, more precise, and less damaging to components. As a result it is starting to be used more widely, spurred on by a growing emphasis on reliability as chips increasingly are used for mission-critical and safety-critical applications in markets such as automotive, medical, and for AI training and inferencing.
+
+“X-ray is highly effective at examining different material densities within a package,” says Brad Perkins, product line manager at 
+Nordson Test & Inspection
+. “It excels with wire-bonded packages, identifying breaks, foreign materials, and voids in solder joints, all of which can affect package reliability.”
+
+This capability is critical for detecting issues like voids in solder joints in flip-chip and ball grid array (BGA) packages, wire bonds, and underfill materials, as well as misalignments and other defects that can compromise device functionality and reliability.
+
+“One of the key benefits of X-ray is its penetration capability,” says Fred Duewer, senior algorithms engineer at Bruker. “It allows for transmission imaging, enabling the inspection of a part’s interior post-assembly — something most other approaches can’t achieve.”
+
+Beyond detecting defects, X-ray inspection also provides invaluable metrology data, enabling manufacturers to monitor and control the back-end process effectively.
+
+“Our approach is to resolve the process instead of the defects,” adds Chen. “If you can find the root cause, then you can control the process and eventually get rid of the defects.”
+
+X-ray imaging for heterogeneous packaging
+
+X-ray imaging is also essential for ensuring proper alignment of bump connections in heterogeneous packages. Insufficient overlap in bump alignments can lead to severe thermal management issues and reduce device lifespan. Voiding within solder joints is another major concern, as those voids weaken the structural integrity of connections, which can lead to operational failures. “Head-in-pillow” defects, for example, where solder joints do not fully connect, compromise joint quality and result in poor electrical performance.
+
+“Inspection and metrology as a whole are becoming more important,” says Nordson’s Perkins. “With rising material costs and bills of material for heterogeneous packages, ensuring not just known good die, but also known good assembly, is crucial. The cost of scrap in high-value assemblies is enormous, so increasing yield through better inspection is key.”
+
+X-ray imaging’s ability to provide detailed internal views of semiconductor packages makes it indispensable. It allows manufacturers to detect and address issues early in the process, significantly improving yield and reducing the costly scrap of multi-chip/chiplet packages.
+
+Fig. 1: X-ray inspection of bump diameters for non-wet detection. Source: Bruker
+
+“The challenges of advanced packaging are highlighted by AI chips, where the high-bandwidth memory and logic circuitry are layered, sitting on top of the logic circuitry,” says Adi Shulner, product marketing manager at Bruker. “That adds complexity to each package and each process, leading to the need for early inspection and metrology of those chips. If you can detect those excursions early, it adds value for the customer, and we’re seeing those requirements and the needs from our customers continue to grow.”
+
+Optimizing performance
+
+Ensuring optimal performance of X-ray inspection machines involves several steps to minimize unwanted radiation and enhance efficiency, including precision alignment, beam blanking, and mechanical filters.
+
+Accurate alignment of the X-ray tube and the detector is essential, as well. Matching the angles of the lens on the X-ray tube with those on the detector ensures the X-ray does not flood the area with unnecessary radiation. In addition, fine-tuning settings to achieve lower intensity levels, faster inspection times, and less sampling can significantly improve both efficiency and cost control. Beam blanking, meanwhile, allows the beam to hit the X-ray source emitters only during part inspection, preventing unnecessary radiation during machine movements.
+
+“There’s an X-ray source that emits a beam through the wafer, which then passes through a scintillator onto a collection detector,” says Shulner. “The detector collects this beam and the image processing is based on AI and machine learning algorithms.”
+
+Additionally, complex controls for managing the tube and mechanical filters can further optimize performance, while mechanical filters at the ends of the tubes can reduce the levels of energy, thus decreasing overall radiation exposure.
+
+X-ray inspection issues and solutions
+
+One of the primary challenges in X-ray imaging for semiconductor inspection is dealing with materials of similar densities. When inspecting packages with materials that have very similar density profiles, X-ray imaging technology struggles to differentiate between them. This lack of contrast can obscure critical defects and make accurate inspection difficult.
+
+Moreover, X-ray imaging operates by passing through the sample at all points, which introduces another layer of complexity, especially in heterogeneous packaging. In simpler flip-chip interfaces, X-ray imaging can effectively identify issues. However, as packaging becomes more advanced with 
+high-bandwidth memory
+ (HBM) stacks on high-performance computing (HPC) components, the process becomes increasingly noisy. The multiple layers and interfaces within these complex structures create significant amounts of scatter and noise, complicating the imaging process.
+
+“The biggest challenge with heterogeneous 2.5D and 3D packaging is the noise from the multiple interfaces and decoupling layers,” says Perkins. “Each layer and interface adds complexity, making it difficult to get clear images without adjusting various parameters.”
+
+To address these challenges, adjustments in the imaging process are necessary. Different energy (kV) settings, power adjustments, and varying exposure times are employed to optimize the imaging for each specific layer and material interface. This fine-tuning is crucial to enhancing image clarity and accuracy, enabling the detection of defects that might otherwise be missed.
+
+In these advanced packaging scenarios, X-ray tools must be adaptable and capable of handling a wide range of settings to achieve the best possible imaging results. This adaptability is essential for accurately inspecting complex multi-layered packages and predicting their reliability and performance. But that predictability comes with its own challenges.
+
+“The traditional way of building an accurate model might require 10,000 samples, but with some products, you don’t even make 10,000 dies, or at least not initially,” says Michael Yu, vice president of advanced solutions at 
+PDF Solutions
+. “The challenge is how can you build a model using a small data set that still allows you to make these predictions without having to run through a lot of wafers, so you can get the benefit of a predictive model early on.”
+
+“With the increased sensitivities of HBM and other advanced semiconductor components, the danger of X-ray overexposure has become a significant concern. Overexposure to X-rays can damage these sensitive components, affecting their performance and reliability. Therefore, it is essential to carefully manage the X-ray dose to avoid compromising the integrity of the devices. Advanced control mechanisms and precise calibration of the X-ray systems are necessary to ensure that the exposure remains within safe limits while still providing the detailed imaging required for thorough inspection.
+
+Several strategies are used in the design of machines and sensors to ensure optimal X-ray imaging for semiconductor inspection. First, it’s crucial to minimize X-ray scattering, which can be achieved through precise mechanical design and incorporating methods to absorb stray X-rays within the machine. By carefully matching the angles of the X-ray tube lens and the detector, the tool can produce clear images without flooding the area with unnecessary radiation.
+
+Adjusting the machine settings to lower energy (kV) levels, faster exposure times, less sampling, and less averaging helps in achieving this balance. Additionally, techniques like beam blanking, which only activates the X-ray beam when it is needed for imaging, further reduce unnecessary radiation exposure. This approach improves imaging quality while reducing damage to sensitive circuitry.
+
+Mechanical filters also are applied to the ends of X-ray tubes to reduce various levels of energy, thus controlling and minimizing the overall radiation dose. These combined strategies ensure that X-ray imaging systems are both effective and efficient in inspecting complex semiconductor packages, providing detailed internal views while maintaining sensitivity and precision.
+
+“Of course, there are limitations when looking at throughput,” Perkins explains. “If I’m doing a full 3D reconstruction on every part, taking one-degree increments with 256 projections or more, it can involve thousands of projections to complete the reconstruction. This is feasible for detailed inspection, but impractical from a production standpoint. We can’t spend an hour inspecting every chip. So the challenge is to achieve 3D reconstruction without requiring a full, time-consuming process. If I can capture an image at an angle, it’s much faster than taking hundreds of images for reconstruction.”
+
+X-ray inspection of TSVs
+
+X-ray also can be used to inspect the quality of the via fill in 
+through-silicon vias
+, which are used in both 2.5D and 3D-ICs. The process is reminiscent of inspecting drilled copper vias in printed circuit boards. Fill percentage and the maximum void size within the via can impact the conductivity and overall reliability of the connection.
+
+X-rays are emitted through the wafer, with the results captured on a detector. Advanced algorithms and AI systems analyze these results to determine the quality of the TSVs, and this data is then used in a broader analysis to identify potential defects and potential process improvements.
+
+X-ray imaging for TSVs serves three primary purposes:
+
+Failure Detection:
+ The most straightforward use of X-ray imaging is to detect failures. If a TSV is likely to fail, the system flags it, stopping its progress in the build process. This ensures that only high-quality components move forward.
+
+Preventive Process Improvements
+: Data collected from X-ray inspections, such as maximum void size and fill percentage, can be used to drive preventive process improvements. By understanding trends and anomalies, manufacturers can refine their processes to enhance yield and reliability.
+
+Integration with Larger Analysis Databases: 
+The information from X-ray inspections is often integrated into larger analysis databases, where it can be combined with data from other imaging sources. This holistic approach allows engineers to gather comprehensive insights, improving their ability to determine which chips are good and which ones need further inspection.
+
+X-ray imaging provides supplemental information that enhances the overall inspection process. This includes reporting the total percent voiding seen in each device, which is used alongside pass/fail criteria. Even parts that pass may not be perfect, but by understanding the contributors to both passes and failures, manufacturers can aim for continuous improvement.
+
+The X-ray inspection process often employs sampling methods to manage throughput. Due to the high resolution required, full inspection of every wafer isn’t always feasible. Instead, heat maps and other sampling techniques are used to extrapolate findings from inspected areas to the entire wafer. This approach ensures efficiency while maintaining high standards of quality control.
+
+“Your process tends to drive your results,” says Bruker’s Duewer. “Understanding your process and being able to understand how variations within it change failure rate is key to improving overall yield.”
+
+X-ray imaging and AI/ML integration
+
+The integration of various imaging systems has generated vast amounts of data, increasingly analyzed using artificial intelligence (AI) and machine learning (ML) techniques. These advanced analytical tools make defect detection and process optimization more efficient and accurate. AI and ML can help increase yields and improve process technology.
+
+“Predictive models created through AI can help increase yields and improve process technology,” says PDF’s Yu. “While there are many systems that help customers see the problems, once they see them, there has to be a way for them to understand what they’re seeing. That’s the benefit of big data analytics — to help customers understand what they are seeing so they can take actions to improve their processes and predict issues before they manifest into significant problems.”
+
+Others agree. “Now we have all this data across the insertions, and we can further optimize our processes,” says Keith Schaub, vice president of technology and strategy at 
+Advantest
+. “But it’s not just about optimization. It’s about making the system smarter. Given the limited budget, if we can skip inspections on high-quality products, we save both time and money, which can be allocated elsewhere. If AI can predict failures earlier, it saves resources by identifying problems before they manifest.”
+
+Predictive models using AI provide a level of foresight into potential defects, helping manufacturers optimize their inspection processes. This capability also enables better adaptability to changing manufacturing environments, offering significant advantages in dynamic production settings.
+
+Bridging design and test
+
+Increasing collaboration between design and test engineers is essential for optimizing semiconductor inspection processes. Traditionally, design and test teams have operated in silos, with little communication between them. This lack of coordination often leads to inefficiencies and missed opportunities for improving the overall process.
+
+“There are two practical barriers at this moment for creating accurate predictive models with AI for back-end operations,” says PDF’s Yu. “First, managing the data flow and ensuring traceability across different foundries and OSATs is crucial. Second, handling confidential information is a challenge, as one party is often reluctant to share process-related data. In the front end, there are fewer issues since a foundry owns all the info throughout the front-end process. But in the test and back-end assembly space where components of the final product could come from multiple foundries and OSATs, people traditionally don’t share information. We are working to bridge that gap while maintaining confidentiality.”
+
+One key stumbling block to greater collaboration between design and test engineers is that wafers often move between different companies for various stages of processing. This movement can create barriers to communication and data sharing due to concerns about protecting intellectual property and confidentiality.
+
+“Design engineers sometimes use their own tools and live in their own world, while test engineers live in another,” says Mark Kahwati, product marketing director in 
+Teradyne
+‘s semiconductor testing group. “We’ve developed processes to bridge the gap between them so they can sit shoulder-to-shoulder, using the same vocabulary to debug silicon and find issues. This facilitates better communication, with feedback and feed-forward loops. We’re making progress in breaking down these silos, but there are still some challenges as they each have their own turf.”
+
+By fostering greater collaboration and leveraging advanced data management and security solutions, the semiconductor industry can ensure more effective and efficient inspection processes, ultimately leading to higher yields and better product reliability.
+
+Conclusion
+
+X-ray imaging’s ability to inspect internal structures non-destructively, combined with advanced data analysis, makes it an indispensable tool in modern semiconductor manufacturing. By addressing issues such as misalignments, voids, and insufficient bonding early in the process, manufacturers can significantly enhance yield and reduce scrap, ultimately leading to more reliable and cost-effective semiconductor devices.
+
+However, the collaboration between design and test engineers, coupled with the power of AI and machine learning, will be critical for overcoming the challenges of modern semiconductor inspection and ensuring the highest levels of quality and performance.
+
+Related Reading
+
+Progress In Wafer And Package Level Defect Inspection
+
+Advances in imaging systems aim to improve throughput without sacrificing measurement accuracy.
+
+Inspection, Metrology Issues In Advanced Packages
+
+How to ensure that chips and chiplets will work as expected inside a package.
+
+ Tags:
+
+advanced packaging
+
+Advantest
+
+Bruker
+
+chiplets
+
+heterogeneous integration
+
+metrology
+
+Nordson Test & Inspection
+
+optical inspection
+
+PDF Solutions
+
+Teradyne
+
+X-ray inspection
+
+Gregory Haley 
+
+(all posts)
+
+							Gregory Haley is a technology editor at Semiconductor Engineering.
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+
