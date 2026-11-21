@@ -18,3 +18,4 @@ Session date: 2026-11-21. Branch: claude/festive-rubin-y6as19. Output folder: re
 2. Core download: 53 documents RETRIEVED, 0 failed (sources/kla/_manifest.csv). Covered: 10-K FY23-FY26; 10-Q Q1 FY24-Q1 FY27; shareholder letters and earnings slides Q4 FY24-Q1 FY27 (no letter is posted for Q3 FY25); earnings releases Q1 FY24-Q1 FY27; Investor Day 2026 deck, full transcript and Q&A transcript; Services update (Nov 2025); Annual Report 2026; stock-split FAQ.
    - Dates marked "approximate" in the manifest (services update, annual report) are not printed dates.
 3. Five parallel module agents (brief: out/kla/BRIEF.md): A1/A2; A3/A6/Q5; A4/A5; Q1/Q4/Nova; Q2/Q3. Each writes out/kla/parts/<part>.csv and notes.
+- Correction (lead): an early lead note (in the Q1 agent prompt) said "Axion" does not appear in KLA's 10-K/10-Q text. That was wrong. "Axion" appears in the 10-K FY23-FY26 Item 1 product list. "Rigaku" appears in none of the saved KLA filings.
