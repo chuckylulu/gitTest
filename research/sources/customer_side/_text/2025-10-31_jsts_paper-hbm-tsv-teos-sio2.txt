@@ -1,0 +1,609 @@
+
+
+	JSTS - Journal of Semiconductor Technology and Science
+
+JSTS
+Journal of Semiconductor Technology and Science
+
+IEIE
+
+Contact
+
+Open Access
+
+Bimonthly
+
+ISSN : 1598-1657 (Print)
+
+ISSN : 2233-4866 (Online)
+
+Mobile QR Code
+
+JSTS Index Information Download 
+
+Main Menu
+
+Main Menu
+
+Current Issue
+
+Early Access
+
+Journal Archive (2019~)
+
+Journal Archive (2001~2018)
+
+Editorial board
+
+Scope / Indexing
+
+Instructions to authors
+
+Online-Submission
+
+Haedong
+ Best Paper Award
+
+Journal letter
+
+Contact information
+
+The Journal of Semiconductor Technology and Science (JSTS) is an international, peer-reviewed, and 
+open-access
+ journal that is published 
+bimonthly.
+
+                                        - Scope: semiconductor processes, devices, circuits, and MEMS.
+
+                                        - Editor-in-Chief: Prof. Woo Young Choi (ECE, Seoul National University)
+
+                                        - Indexed within 
+Science Citation Index Expanded (SCIE), SCOPUS,
+ Korea Citation Index (KCI), and other databases.
+
+ Journal Search
+
+Home
+
+Archive
+
+2025-10
+
+(Vol.25 No.05)
+
+10.5573/JSTS.2025.25.5.490
+
+Journal XML
+
+EndNote
+
+RefWorks
+
+Medlars
+
+RIS
+
+BibTeX
+
+Export citation
+
+ XML
+
+ PDF
+
+ INFO
+
+ REF
+
+Journal Information
+
+                              [
+
+Research article
+
+                              ]
+
+JSTS(Journal of Semiconductor Technology and Science)
+
+IEIE
+
+                              Vol.
+                              25,
+
+                              No.
+                              05,
+
+                              p.
+490
+-
+495
+
+ISSN
+ (print)
+ : 
+1598-1657
+
+ISSN
+ (online)
+ : 
+2233-4866
+
+Received
+ : 
+9 Jun. 2025
+Revised
+ : 
+26 Aug. 2025
+Accepted
+ : 
+28 Aug. 2025
+
+DOI
+ : 
+https://doi.org/10.5573/JSTS.2025.25.5.490
+
+TEOS SiO${}_{2}$ Film Deposition Optimization for Increasing Capability and Securing
+                  TSV Robustness of HBM
+
+WhoangIntae
+1
+
+LimByung Yoon
+1
+
+BangKijun
+1
+
+LeeSang Un
+1
+
+                        (SK hynix, Icheon, 17336, Korea)
+
+*
+
+                        					E-mail: 
+intae.whoang@sk.com
+
+Copyright © The Institute of Electronics and Information Engineers(IEIE)
+
+License
+ : 
+
+                        						This is an Open-Access article distributed under the terms of the Creative Commons
+                        Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/3.0/)
+                        which permits unrestricted non-commercial use, distribution, and reproduction in any
+                        medium, provided the original work is properly cited.(
+www.theieie.org
+).
+
+Abstract
+
+                     					At SK hynix's wafer level package (WLPKG) line, a passivation SiN layer is deposited
+                     to prevent Cu diffusion in through silicon via (TSV), followed by a tetraethyl orthosilicate
+                     (TEOS)-based SiO${}_{2}$ layer deposition to ensure TSV robustness during planarization
+                     of protruded TSVs. With the increasing demand for high bandwidth memory (HBM), the
+                     TEOS SiO${}_{2}$ deposition process became a throughput bottleneck due to the chamber
+                     configuration of the existing CVD equipment. To enhance productivity, process optimization
+                     was pursued to improve the deposition rate while maintaining the film properties required
+                     for subsequent processes. Recipe modifications were evaluated under mass production
+                     conditions, with a focus on deposition rate, film uniformity, and potential risks
+                     such as particle generation and CMP removal rate (R/R) changes that could impact TSV
+                     yield. Increasing TEOS flow initially improved the deposition rate by up to 78% but
+                     caused TSV damage due to higher CMP R/R at wafer edges. By optimizing O${}_{2}$ flow,
+                     He-carrier flow, and chamber pressure, film robustness was enhanced, and final adjustments
+                     reduced TEOS flow to achieve a 46% rate improvement without significant R/R variation.
+                     The optimized recipe increased CVD process capacity by approximately 25%, meeting
+                     both productivity and quality stability requirements for high-volume HBM manufacturing.
+
+Index Terms
+
+ WLP,  TSV,  HBM,  chemical vapor deposition film
+
+I. INTRODUCTION
+
+The SiN/SiO${}_{2}$ film deposition process, as shown in 
+Fig. 1
+, is a passivation film created to protect the device after Through Silicon Via (TSV)
+                  protrusion in the Wafer Level Package (WLPKG) TSV Si Dry Etch process.
+
+Fig. 1. TSV process flow & SiN/SiO$_{2}$ film dep.
+
+To explain this in more detail, as shown in 
+Fig. 2
+, after thinning the backside of the device wafer bonded to the carrier wafer, the
+                  TSV protruded through the Si Dry Etch process. After that, a SiN layer for passivation
+                  to prevent Cu diffusion in the protruded TSV and a SiO${}_{2}$ layer for robustness
+                  to prevent TSV damage during the TSV opening and planarization process through the
+                  Chemical Mechanical Polishing (CMP) process of the protruded TSV, are sequentially
+                  deposited. At that time, our company had been working on an overall capacity improvement
+                  task to achieve the High Bandwidth Memory (HBM) production target, but it was necessary
+                  to improve the SiO${}_{2}$ deposition process, which had a relatively low deposition
+                  rate and was acting as a bottleneck. However, although increasing high-frequency power
+                  would easily increase the deposition rate of SiO${}_{2}$ film as shown 
+[1]
+, due to the characteristic of the equipment used by SK hynix, it was impossible to
+                  simply increase the high-frequency power or the low-frequency power to improve the
+                  deposition rate, which is usually used to improve the deposition rate.
+
+Fig. 2. TSV protrusion removal process.
+
+Therefore, in this study, to improve productivity in the SiO${}_{2}$ film deposition
+                  process, we aim to secure conditions that can minimize the change in the properties
+                  of the SiO${}_{2}$ film that can affect the linked process while increasing the deposition
+                  rate. In addition, since the recipe developed in this study is a mass production recipe
+                  used in the SK hynix mass production line, most of the data is masked as it cannot
+                  be disclosed due to confidentiality.
+
+II. EXPERIMENTAL METHODS
+
+1. Exploring Factors That Increase Deposition Rate
+
+Prior to conducting this experiment, verification was conducted as shown in 
+Table 1
+ to examine the influence of the major parameters of our CVD equipment on the Tetraethyl
+                     Orthosilicate (TEOS) SiO${}_{2}$ film deposition rate. To verify the influence of
+                     each gas flow composition in the recipe to increase the TEOS SiO${}_{2}$ film deposition
+                     rate, the major parameters were selected and the process influence for each TEOS flow
+                     and O${}_{2}$ flow was heuristically verified to examine the influence on film thickness
+                     uniformity that can be used in the mass production line, not simply through an increase
+                     in the deposition rate, as a recipe that can be used in the mass production line was
+                     set. In addition, the level that can be applied to the mass production line immediately
+                     after the recipe development is completed, in terms of both deposition rate and uniformity,
+                     was reviewed. To evaluate the TEOS flow, the change in deposition rate when the TEOS
+                     level was changed as in 
+Table 1
+ in the existing recipe conditions, was verified.
+
+Table 1. Deposition rate evaluation condition.
+
+TEOS Flow
+
+Evaluation
+
+O
+2
+ Flow
+
+Evaluation
+
+He-Carrier Flow
+
+Evaluation
+
+TEOS
+
+a ~ 2a
+
+Original
+
+Original Condition
+
+O
+2
+
+Original Condition
+
+b ~ 4b
+
+He Carrier
+
+Original
+
+c ~ 1.5c
+
+As a result of the evaluation, as shown in 
+Fig. 3
+, when confirming the relationship between the change in film deposition rate and
+                     the increase in TEOS flow, as suggested in 
+[3]
+, it was confirmed that there was a strong positive correlation at the level of r${}^{2}$
+                     0.99.
+
+Fig. 3. Change in deposition rate according to changes in TEOS flow.
+
+The second deposition rate verification evaluation according to the change in O${}_{2}$
+                     flow was conducted. In this experiment, there was no correlation between the change
+                     in O${}_{2}$ flow and the deposition rate as shown in 
+Fig. 4
+.
+
+Fig. 4. Change in dep. rate according to changes in O$_{2}$ flow.
+
+However, the increase in the uniformity of the film thickness was confirmed according
+                     to the change in O${}_{2}$ flow as shown in 
+Fig. 5
+.
+
+Fig. 5. Change in film uniformity to change in O$_{2}$ flow.
+
+Reason for the result of 
+Figs. 4
+ and 
+5
+ is although TEOS flow was kept constant, increasing the oxygen flow altered the spatial
+                     distribution of deposition. A local decrease in deposition rate was observed in certain
+                     wafer regions; however, due to compensating increases in other areas, the overall
+                     mean film thickness remained nearly unchanged.
+
+In this experiment, after confirming the results of the two parameters, it was found
+                     that the deposition rate could be improved by increasing the TEOS flow, and the change
+                     in O${}_{2}$ flow was minimized to lower the change in film uniformity. However, it
+                     was confirmed that simply increasing the TEOS flow posed a particle source risk in
+                     the operation of the company's CVD equipment, and in the long term, there was a risk
+                     of clogging the fore-line, which is the pumping line of the CVD equipment. To improve
+                     this, the amount of O${}_{2}$ flow and the amount of He-carrier gas flow in the recipe
+                     were increased at the same rate as the increase in TEOS flow, and it was confirmed
+                     that there was still no difference in the deposition rate under the given conditions.
+                     Based on the results of the above experiment, after applying the changed recipe, it
+                     was possible to secure an 80% deposition rate improvement condition compared to the
+                     existing mass production conditions with the changed recipe.
+
+2. Effect of the Linked Process According to the Application of the New Recipe
+
+As a result of applying the SiO${}_{2}$ film deposition recipe for increasing the
+                     deposition rate and improving the equipment stability, there were no unusual issues
+                     in the inspection results and visual results as shown in 
+Fig. 6
+.
+
+Fig. 6. CVD film IR inspection image.
+
+However, a decrease in yield was confirmed due to TSV damage in the wafer edge area
+                     after the subsequent CMP process. The cause of the decrease in yield was found to
+                     be the difference in CMP removal rate (R/R) due to the change in the SiO${}_{2}$ film
+                     properties, and as shown in 
+Fig. 7
+, it was confirmed to be a lack of TSV robustness in the relatively vulnerable edge
+                     area of wafer.
+
+Fig. 7. CMP R/R comparison between original and modified recipe.
+
+ Therefore, to significantly improve the properties of the SiO${}_{2}$ film, additional
+                     evaluation was performed for changes in O${}_{2}$ flow and pressure as shown in 
+Table 2
+. As a result of the evaluation, a decrease in CMP R/R was confirmed for an increase
+                     in O${}_{2}$ flow, as shown in 
+Fig. 8
+.
+
+Table 2. CMP removal rate evaluation condition.
+
+O
+2
+ Evaluation
+
+Pressure Evaluation
+
+TEOS
+
+2a
+
+2a
+
+O
+2
+
+d~2d
+
+Best from O
+2
+ eval
+
+Pressure
+
+Original
+
+e~1.2e
+
+Fig. 8. Change in CMP R/R according to change in O$_{2}$ flow.
+
+In addition, after verifying the change in pressure conditions, as shown in 
+Figs. 9
+ and 
+10
+, the deposition rate increased but, having p-value less than 0.05 for comparing 3
+                     different pressure conditions, there was no significant difference in CMP R/R.
+
+Fig. 9. Change in dep. rate according to change in pressure.
+
+Fig. 10. CMP R/R comparison according to change in pressure.
+
+Through this evaluation, we optimized the recipe to provide a certain level of O${}_{2}$
+                     flow to secure sufficient strength of the SiO${}_{2}$ film, thereby helping to reduce
+                     CMP R/R and further improving the deposition rate by increasing the pressure. As a
+                     result of applying the recipe optimization, when compared to the existing recipe under
+                     the conditions of increased O${}_{2}$ flow and increased pressure, there was an average
+                     difference in R/R with p-value greater than 0.05, showing significant different from
+                     original condition, but it was secured within the range of the dispersion, as shown
+                     in 
+Fig. 11
+.
+
+Fig. 11. CMP R/R comparison after O$_{2}$ flow optimization.
+
+3. Additional Recipe Improvement for Yield Stabilization
+
+After securing the improved conditions for O${}_{2}$ flow, He-carrier flow, and pressure
+                     under the existing TEOS flow, the deposition rate was improved by about 78%, but there
+                     was still a difference in CMP R/R, and a yield drop due to damage to the TSV in the
+                     edge area was still confirmed. To improve this, additional evaluation of O${}_{2}$
+                     flow was conducted as in the results of Experiment 2, but it was confirmed that the
+                     CMP R/R saturated after a certain level even with the increase of the O${}_{2}$ flow
+                     as shown in 
+Fig. 12
+.
+
+Fig. 12. Change in CMP R/R according to change in O$_{2}$ flow.
+
+In order to secure the condition of no significant difference in CMP R/R while sacrificing
+                     a certain level of deposition rate by lowering the TEOS flow, the TEOS flow level
+                     was changed to the 1.5a level from 2a. After securing the corresponding condition,
+                     the deposition rate slightly decreased from 78% to 46%, but when analyzing the significant
+                     difference in CMP R/R, having p-value less than 0.05, it was possible to secure a
+                     level of no significant difference from the existing mass-produced recipe as shown
+                     in 
+Fig. 13
+.
+
+Fig. 13. CMP R/R comparison after final recipe.
+
+As a result of applying the corresponding verification content to the HBM product,
+                     it was improved to a level where there was no significant difference in yield, as
+                     in 
+Fig. 14
+., FIB cross-section inspection to compare step coverage of SiO${}_{2}$ Film by the
+                     TSV results also confirmed that there was no difference.
+
+Fig. 14. FIB cross-sectional image comparison after dep rate incraesed.
+
+III. CONCLUSIONS
+
+This study focused on optimizing the TEOS-based SiO$_2$ film deposition process at
+                  SK hynix's HBM mass production line, aiming to address production bottlenecks and
+                  improve HBM manufacturing capacity. By increasing the TEOS flow, a 78% improvement
+                  in deposition rate was achieved, resolving throughput limitations. Risks such as particle
+                  contamination and fore-line clogging were mitigated by adjusting O$_2$ and He-carrier
+                  gas flows. Although the initial optimization resulted in CMP R/R and TSV damage issues,
+                  further adjustments to O$_2$ flow and chamber pressure enhanced film robustness, reducing
+                  these problems. Ultimately, a 46% increase in deposition rate was achieved while maintaining
+                  minimal impact on CMP R/R, ensuring process stability. The optimized recipe led to
+                  a 25% increase in overall CVD process capacity, significantly improving production
+                  efficiency. The optimized process was successfully applied in mass production, demonstrating
+                  improved productivity and stable quality, with no significant differences in yield
+                  or inspection results. This study highlights the importance of process optimization
+                  for enhancing production capacity while maintaining quality in high-volume semiconductor
+                  manufacturing.
+
+References
+
+1
+
+A. M. Mahajan, L. S. Patil, J. P. Bange, and D. K. Gautam, ``Teos-PECVD system for
+                           high growth rate deposition of SIO2 films,'' Vacuum, vol. 79, pp. 194-202, July 2005.
+
+2
+
+A. M. Mahajan, L. S. Patil, J. P. Bange, and D. K. Gautam, ``Growth of SiO$_2$ films
+                           by TEOS-PECVD system for microelectronics applications,'' Surface and Coatings Technology,
+                           vol. 183, pp. 295-300, 2004.
+
+3
+
+J. H. Lee, C. H. Jeong, J. T. Lim, N. G. Jo, S. J. Kyung, and G. Y. Yeom, ``Characteristic
+                           of SiO$_2$ films deposited by using low-temperature PECVD with TEOS/N2/O2,'' Journal
+                           of the Korean Physical Society, vol. 46, no. 4, pp. 890-894, Apr. 2005.
+
+4
+
+A. M. Mahajan, L. S. Patil, and D. K. Gautam, ``Influence of process parameters on
+                           the properties of TEOS–PECVD-grown SiO$_2$ films,'' Surface and Coatings Technology,
+                           vol. 188-189, pp. 314-318, , Dec. 2004.
+
+5
+
+Y. Liu, W. Ren, L. Zhang, and X. Yao, ``New method for making porous SiO$_2$ thin
+                           films,'' Thin Solid Films, vol. 353, pp. 124-128, 1999
+
+6
+
+S. K. Ray, C. K. Maiti, S. K. Lahiri, and N. B. Chakrabarti, ``TEOS-based PECVD of
+                           silicon dioxide for VLSI applications,'' Advanced Materials for Optics and Electronics,
+                           vol. 6, pp. 73-82, , Mar. 1996
+
+7
+
+A. S. Bil and S. E. Alexandrov, ``The effect of the process parameters on the growth
+                           rate and composition of the anti scratch films deposited from TEOS by AP-PECVD on
+                           polycarbonate,'' Plasma Chemistry and Plasma Processing, vol. 43, pp. 901-920, 2023
+
+8
+
+G. Wei, S. Varghese, K. Beaman, I. Vasilyeva, T. Mendiola, and A. Carswell, ``A comprehensive
+                           study on nanomechanical properties of various SiO$_2$-based dielectric films,'' Proc.
+                           of IEEE Workshop on Microelectronics and Electron Devices,  pp. 1-4, Apr. 2010
+
+9
+
+J. H. Chen, T. F. Lei, J.-H. Chen, and T. S. Chao, ``Characteristics of TEOS polysilicon
+                           oxides: Improvement by CMP and high temperature RTA  N$_2$/N$_2$O annealing,'' Journal
+                           of The Electrochemical Society, vol. 147, no. 11, 4282, 2000
+
+10
+
+C.-W. Liu, B.-T.. Dai, and C.-F. Yeh, ``Characterization of the chemical-mechanical
+                           polishing process based on nanoindentation measurement of dielectric films,'' Journal
+                           of the Electrochemical Society, vol. 142, no. 9, 3098, 1995
+
+Intae Whoang
+
+               			Intae Whoang received his B.S degree in industrial engineering from Purdue University,
+               Indiana, United States of America in 2017. He joined SK hynix Inc., Icheon, Korea,
+               in 2018, where he has been working in wafer level packaging technology team. His research
+               interest is process optimization and development for thinfilm and dry etch process
+               to enhance productivity and to reduce cost of HBM products.
+
+Byung Yoon Lim
+
+               			Byung Yoon Lim received his B.S degree in mechanical and material engineering from
+               The Australian National University, Canberra, Australia in 2014. He joined SK hynix
+               Inc., Icheon Korea, in 2018, where he has been working in wafer level packaging technology
+               team. His research interest is improving efficiency of dry etch equipment to enhance
+               productivity and reduce cost of HBM products.
+
+Kijun Bang
+
+               			Kijun Bang received his B.S degree in electronic control engineering from Kumoh
+               National Institute of Technology, Gumi, South Korea. He Joined SK hynix Inc., Icheon,
+               Korea, in 2006 and has been working in wafer level packaging technology team since
+               2009. He is currently research manager of the photo, dry etch, and thinfilm process.
+
+Sang Un Lee
+
+               			Sang Un Lee received his B.S. degree in mechatronics engineering from Chungnam
+               National University, Daejeon, Republic of Korea, in 2005. He joined SK hynix Inc.,
+               Icheon, Korea, in the same year, where he worked in FAB manufacturing technology focusing
+               on etch process development. In 2023, he moved to the wafer level packaging team.
+               He is currently leading a team responsible for photo, dry etch, and thinfilm processes.
+
+Article Information (continued)
+
+                           [
+
+Research article
+
+                           ]
+
+Index Terms
+ : 
+
+Index Terms
+
+Keyword
+ : 
+ WLP
+
+Keyword
+ : 
+ TSV
+
+Keyword
+ : 
+ HBM
+
+Keyword
+ : 
+ chemical vapor deposition film
+
+This display is generated from NISO JATS XML with 
+jats-style.xsl
+. The XSLT engine is Saxonica.
+
+Copyright © IEIE All right's reserved
+
+Articles published in JSTS are distributed under the terms of the Creative Commons Attribution Non-Commercial License (CC BY-NC 3.0), which permits non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. Commercial use requires the prior permission of the publisher (
+www.theieie.org
+).
+
+ISSN : 1598-1657 (Print)  / 
+ISSN : 2233-4866 (Online)
+

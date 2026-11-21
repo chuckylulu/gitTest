@@ -29,7 +29,12 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
 
 6. Scan v2 (after PAPL reported misses): the affiliation pattern now drops commas/periods and matches "Intel" case-insensitively. It adds 3 TSMC ECTC 2025 papers ("Taiwan Semiconductor, Manufacturing Company") and 1 Intel IRPS 2025 paper ("INTEL Client Computing Group"); no SK hynix, Samsung or Micron paper was added; nothing dropped. 562 chipmaker papers in calc/paper_candidates.csv; additions listed in calc/paper_candidates_v2_added.txt. PAPL had already read all four (one in scope, PAPL-017).
 7. IITC 2026 programme page saved (sources/customer_side/2026-11-21_iitc_IITC2026-program-page.html): no paper by the seven on inspecting or measuring HBM or hybrid bonds; Micron gave an invited talk on memory stacking (title only) and a workshop talk on HBM thermal challenges.
+8a. Scan v3 (after PAPM reported misattribution): the Micron pattern now excludes "HANA Micron" (a Korean OSAT). Five ECTC 2025/2026 papers dropped (listed in PAPM notes). Final inventory: 557 chipmaker papers (Samsung 214, Intel 117, TSMC 99, Micron 60, ASE 38, SK hynix 26, Amkor 4); 486 with Semantic Scholar abstract.
 8. research/tools/merge_parts.py patched to skip parts/*_table.csv (table files are not evidence files; reported by TALK).
 
+## Module results (as reported; tag counts from the part files)
+- SMP (sampling): 44 rows. XR (X-ray dose + TSMC keynote): 38 rows. AW (awards): 58 rows + 193-row winner table. TALK (non-paper statements): 61 rows + 43-row table. PAPL (TSMC/Intel/ASE/Amkor papers): 188 rows + 41-row table (26 papers). PAPM (SK hynix/Samsung/Micron papers, SPIE volumes, 4 JSTS papers read in open-access full text): 229 rows + 50-row table (42 papers). Every module ran quote_check with all quotes FOUND.
+- Agent-side housekeeping: several agents re-saved documents under their printed dates and deleted first copies or bot-challenge pages; the main session then marked 33 manifest rows whose files no longer exist as NOT RETRIEVED (calc step in this log, 2026-11-21).
+
 ## Steps
-(continued below as modules report)
+(continued below)

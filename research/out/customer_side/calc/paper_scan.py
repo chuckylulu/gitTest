@@ -15,7 +15,7 @@ OUT = os.path.join(ROOT, "research", "out", "customer_side", "calc", "paper_cand
 CO = {
     "SK hynix": re.compile(r"hynix", re.I),
     "Samsung": re.compile(r"Samsung(?!\s*Electro-?\s*Mechanics)", re.I),
-    "Micron": re.compile(r"Micron\b(?!\s*(scale|size))"),
+    "Micron": re.compile(r"(?<!HANA )(?<!Hana )Micron\b(?!\s*(scale|size))"),
     "TSMC": re.compile(r"TSMC|Taiwan Semiconductor Manufacturing", re.I),
     "Intel": re.compile(r"\bIntel\b", re.I),
     "ASE": re.compile(r"\bASE\b|Advanced Semiconductor Engineering|\bSPIL\b|Siliconware", re.I if False else 0),

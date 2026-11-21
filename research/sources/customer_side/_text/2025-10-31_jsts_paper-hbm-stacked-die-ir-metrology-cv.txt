@@ -1,0 +1,628 @@
+
+
+	JSTS - Journal of Semiconductor Technology and Science
+
+JSTS
+Journal of Semiconductor Technology and Science
+
+IEIE
+
+Contact
+
+Open Access
+
+Bimonthly
+
+ISSN : 1598-1657 (Print)
+
+ISSN : 2233-4866 (Online)
+
+Mobile QR Code
+
+JSTS Index Information Download 
+
+Main Menu
+
+Main Menu
+
+Current Issue
+
+Early Access
+
+Journal Archive (2019~)
+
+Journal Archive (2001~2018)
+
+Editorial board
+
+Scope / Indexing
+
+Instructions to authors
+
+Online-Submission
+
+Haedong
+ Best Paper Award
+
+Journal letter
+
+Contact information
+
+The Journal of Semiconductor Technology and Science (JSTS) is an international, peer-reviewed, and 
+open-access
+ journal that is published 
+bimonthly.
+
+                                        - Scope: semiconductor processes, devices, circuits, and MEMS.
+
+                                        - Editor-in-Chief: Prof. Woo Young Choi (ECE, Seoul National University)
+
+                                        - Indexed within 
+Science Citation Index Expanded (SCIE), SCOPUS,
+ Korea Citation Index (KCI), and other databases.
+
+ Journal Search
+
+Home
+
+Archive
+
+2025-10
+
+(Vol.25 No.05)
+
+10.5573/JSTS.2025.25.5.484
+
+Journal XML
+
+EndNote
+
+RefWorks
+
+Medlars
+
+RIS
+
+BibTeX
+
+Export citation
+
+ XML
+
+ PDF
+
+ INFO
+
+ REF
+
+Journal Information
+
+                              [
+
+Research article
+
+                              ]
+
+JSTS(Journal of Semiconductor Technology and Science)
+
+IEIE
+
+                              Vol.
+                              25,
+
+                              No.
+                              05,
+
+                              p.
+484
+-
+489
+
+ISSN
+ (print)
+ : 
+1598-1657
+
+ISSN
+ (online)
+ : 
+2233-4866
+
+Received
+ : 
+9 Jun. 2025
+Revised
+ : 
+11 Auh. 2025
+Accepted
+ : 
+12 Aug. 2025
+
+DOI
+ : 
+https://doi.org/10.5573/JSTS.2025.25.5.484
+
+A Development of a Robust Computer Vision-based Framework for Metrology and Inspection
+                  of Stacked Die in HBM Process
+
+SeongHye Yun
+1
+
+YoonSung Hyun
+1
+
+LeeYoung Hoon
+1
+
+YoonGwang Min
+1
+
+                        (SK hynix.Inc., Icheon, Korea)
+
+*
+
+                        					E-mail: 
+hyeyun1014@gmail.com
+,
+hyeyun.seong@sk.com
+
+Copyright © The Institute of Electronics and Information Engineers(IEIE)
+
+License
+ : 
+
+                        						This is an Open-Access article distributed under the terms of the Creative Commons
+                        Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/3.0/)
+                        which permits unrestricted non-commercial use, distribution, and reproduction in any
+                        medium, provided the original work is properly cited.(
+www.theieie.org
+).
+
+Abstract
+
+                     					The rapid advancement of high bandwidth memory (HBM) technology introduces significant
+                     challenges in metrology due to its complex 3D stacked die architecture. Conventional
+                     measurement and inspection tools, optimized for planar DRAM wafers, fail to accurately
+                     assess critical die-to-die alignment parameters such as die shift and tilt, particularly
+                     post-bonding. This paper presents a novel metrology methodology leveraging infrared
+                     (IR) imaging combined with advanced image processing algorithms to overcome these
+                     limitations. A dual-scan system captures both base wafer fiducials and top die patterns,
+                     enabling precise alignment measurement within stacked HBM assemblies. Edge enhancement
+                     using Sobel filtering and normalized cross-correlation (NCC) techniques facilitate
+                     robust pattern recognition and sub-pixel alignment, addressing challenges posed by
+                     low contrast and IR resolution constraints. Experimental validation on production-grade
+                     HBM wafers demonstrates superior recognition rates and measurement repeatability,
+                     establishing the proposed approach as a reliable and efficient solution for next-generation
+                     semiconductor metrology. The integration of IR optics and sophisticated algorithmic
+                     processing significantly improves inspection coverage, contributing to enhanced yield
+                     and manufacturing robustness in advanced 3D memory technologies.
+
+Index Terms
+
+ High bandwidth memory (HBM),  stacked die shift measurement,  infrared optics,  sobel filter,  cross,  correlation
+
+I. INTRODUCTION
+
+With the rapid advancement of artificial intelligence (AI), high-performance computing,
+                  and data-centric applications, the global demand for high-speed memory has intensified.
+                  Among various memory solutions, high bandwidth memory (HBM) has emerged as a critical
+                  technology due to its superior bandwidth and energy efficiency. As AI accelerators,
+                  graphic processing unit (GPU)s, and data centers increasingly adopt HBM, the importance
+                  of HBM-specific manufacturing processes has grown significantly 
+[1]
+. Unlike conventional DRAM, HBM utilizes a 3D stacked die architecture, wherein multiple
+                  memory dies are vertically integrated onto a base wafer via chip-to-wafer bonding
+
+[2]
+. This architectural shift introduces unique metrology and inspection (MI) challenges,
+                  especially in maintaining precise die alignment and structural integrity 
+[3]
+. In particular, the stacking process---one of the most critical steps in HBM fabrication---demands
+                  highly specialized MI solutions capable of detecting die shift, tilt, and bonding
+                  defects with sub-micron accuracy. As such, the development of HBM-optimized MI techniques
+                  has become indispensable for ensuring yield and long-term reliability in advanced
+                  semiconductor manufacturing.
+
+II. PROPOSED MEASUREMENT SOLUTION
+
+1. Limitations of Conventional Measurement
+
+Conventional metrology and inspection tools deployed in DRAM fabs are inadequate for
+                     the intricate 3D geometry of stacked dies in HBM. Wafer-level critical dimension (CD)
+                     and thickness measurements, as well as 2D photo resist (PR) overlay inspections, frequently
+                     fail due to absence of surface patterns and limited die edge visibility. Furthermore,
+                     traditional overlay techniques cannot detect critical post-bonding defects such as
+                     die shift and tilt in stacked HBM. In HBM, precise alignment between through silicon
+                     via (TSV) core dies and front/back bumps is essential. Unlike planar wafers with fixed
+                     reference points, stacked dies exhibit positional variability, complicating accurate
+                     alignment measurement. This work presents a novel metrology methodology tailored to
+                     reliably quantify die-to-die alignment in stacked HBM assemblies.
+
+Fig. 1. Conventional metrology and inspection tools.
+
+2. Infrared Imaging for Non-Destructive Inspection in Semiconductor Manufacturing
+
+Infrared (IR) optical imaging has emerged as a practical approach for non-destructive
+                     inspection in semiconductor manufacturing, particularly for applications involving
+                     silicon-based structures 
+[4]
+. Due to silicon's partial transparency at near-infrared (NIR) wavelengths (typically
+                     longer than 1,100 nm), IR imaging enables internal observation of buried patterns
+                     (
+Fig. 2
+) 
+[5]
+, die-to-die alignment markers, and TSVs without physical cross-sectioning. This capability
+                     is especially critical for HBM packaging, where stacked die configurations require
+                     accurate assessment of die alignment, tilt, and bonding integrity beneath the top
+                     layers.
+
+Fig. 2. Schematic diagram of an NIR confocal scanner 
+[1]
+.
+
+In a recent study, IR-based optical systems were employed to visualize and inspect
+                     the internal structures of silicon dies through non-invasive imaging techniques, demonstrating
+                     applicability in defect detection and alignment verification in multi-layer semiconductor
+                     devices 
+[6]
+.
+
+3. Stack Die Measurement Solution
+
+In this study, we propose a novel metrology methodology based on recognizing silicon-transmitted
+                     patterns by leveraging the intrinsic optical properties of silicon wafers. This approach
+                     enables detection of patterns that are otherwise unobservable through conventional
+                     2D inspection techniques. Specifically, it facilitates the recognition of internal
+                     structures within the top die of HBM by using silicon-transmitted patterns as metrology
+                     keys, rather than relying solely on traditional pattern recognition. Consequently,
+                     the method integrates both metrology and inspection characteristics, overcoming the
+                     limitations of existing single-purpose approaches. This solution employs IR optics
+                     to penetrate silicon layers and reveal the internal structures of the top die in stacked
+                     HBM. A dual-scan method is used: Scan 1 locates the fixed fiducial on the base wafer,
+                     and Scan 2 detects the top die position via pattern recognition. The positional difference
+                     between fiducial and die patterns enables accurate quantification of die shift and
+                     tilt. To overcome IR resolution limits, advanced image processing algorithms are applied,
+                     enhancing detection accuracy. In semiconductor manufacturing, metrology tools require
+                     both high resolution and throughput; the proposed method addresses these demands,
+                     ensuring  reliable and efficient die alignment measurement.
+
+Fig. 3. IR imaging enables internal observation.
+
+III. EDGE ENHANCEMENT AND PATTERN MATCHING USING SOBEL FILTERING AND CROSS-CORRELATION
+
+In this study, edge detection and pattern recognition were applied to the inspection
+                  of key features during the stacked die alignment process. The use of cross-correlation
+                  enables robust image matching across the dual-scan system, while Sobel filtering was
+                  introduced to enhance edge clarity, particularly in IR images of the top die.
+
+1. Edge Detection
+
+In computer vision and image processing, edge detection involves localizing significant
+                     variations in gray-level intensity and identifying the underlying physical phenomena
+                     that cause them. Such information is essential for various applications, including
+                     3D reconstruction, motion analysis, object recognition, image enhancement and restoration,
+                     image registration, and image compression 
+[7]
+. In this context, the concept of edge detection is introduced, and numerous filtering
+                     techniques have been explored in the literature to improve the performance of edge
+                     detection algorithms. For example, Ranjan et al. 
+[8]
+ proposed a method that combines guided image filtering with the Sobel operator, which
+                     significantly improves both accuracy and processing speed. By applying a weighted
+                     guided filter prior to edge detection, their method preserves detailed edge structures
+                     while suppressing noise. The results demonstrated superior performance compared to
+                     traditional Sobel-based approaches, particularly in images with complex textures or
+                     low contrast regions.
+
+2. Implementation of Sobel Filters for Image Analysis
+
+In this study, various edge detection filters---including Sobel, Laplacian, Resize,
+                     and Robert operators---were implemented and compared using custom image processing
+                     scripts. The raw images employed were selectively extracted regions of the HBM die,
+                     to which each filter was applied via Python coding. The transformed images were then
+                     analyzed to evaluate the effectiveness of each filter. The primary objective of applying
+                     these image filters was to optimize the clarity of characteristic features in IR-transmitted
+                     die patterns. As demonstrated in 
+Fig. 4
+, Sobel filtering provided the most distinct visualization of active chip patterns,
+                     particularly in scans of the top die. The Sobel operator is a first-order edge detection
+                     operator widely used to calculate the gradient magnitude of an image. It emphasizes
+                     edges by measuring the rate of change in pixel intensity values. Specifically, the
+                     Sobel operator employs two 3?3 convolution kernels---one detecting horizontal changes
+                     ($G_x$) and the other detecting vertical changes ($G_y$)---defined as follows 
+[9]
+:
+
+$
+                     					G_x=\left(\begin{array}{ccc}
+                     					-1&0&1\\
+                     					2&0&2\\
+                     					-1&0&1
+                     					\end{array}\right),~G_y = \left(\begin{array}{ccc}
+                     					-1&-2&-1\\
+                     					0&0&0\\
+                     					1&2&1
+                     					\end{array}\right).
+                     					$
+
+The gradient magnitude $G$ at each pixel is then computed as the Euclidean norm of
+                     these components:
+
+                     					$
+                     					G=\sqrt{G_x^2 + G_y^2}.
+                     					$
+
+This calculation effectively highlights regions with significant intensity variations,
+                     corresponding to edges within the image. By applying the Sobel operator, the study
+                     was able to enhance the edge clarity in IR images, facilitating more accurate recognition
+                     of die patterns critical for stacked die alignment and inspection.
+
+Fig. 4. Edge enhancement effect of Sobel filter on weak IR patterns.
+
+3. Cross-correlation
+
+Following edge enhancement, normalized cross-correlation (NCC) was applied to perform
+                     sub-pixel alignment 
+[10]
+. Cross-correlation is an established method in semiconductor metrology that identifies
+                     the displacement between two images by locating the maximum similarity over spatial
+                     shifts. This displacement vector enables accurate correction of die shift and tilt,
+                     improving the overall repeatability of inspection. The NCC value ranges from $-1$
+                     to $1$, with a value of $1$ indicating a perfect match. The peak location of the NCC
+                     map provides the displacement vector $(\Delta x$, $\Delta y)$, which is used to determine
+                     die shift and tilt angles. This approach is inherently robust against uniform variations
+                     in brightness and sensor noise, making it particularly suitable for infrared (IR)
+                     image environments where contrast can be low and illumination inconsistent. Marušic
+                     et al. 
+[11]
+ further improved computational efficiency by developing a segmented NCC algorithm
+                     for template matching, which demonstrated higher speed and alignment precision.
+
+                     					$
+                     					NCC(u,v) \\
+                     					= \frac{\sum_{s,y} [T(x,y)-\bar{T}]\cdot[I(x+u, u+v)-\overline{I_{u,v}}]}{\sqrt{\sum_{x,y}[T(x,y)\!-\!\bar{T}]^2}*\sqrt{\sum_{x,y}[I(x\!+\!u,
+                     y\!+\!v)\!-\!\overline{I_{u,v}}]^2}},
+                     					$
+
+where
+
+• $T(x, y)$ is the grayscale intensity of the template image,
+
+• $I(x + u, y + v)$ is the target image shifted by $(u, v)$,
+
+• $\bar{T}$ and $\overline{I_{u,v}}$ are the mean intensities of the template and
+                     the corresponding search region in the target image 
+[10]
+.
+
+IV. EXPERIMENTS
+
+Building upon these theoretical foundations, we conducted an experimental study to
+                  identify optimized inspection conditions for HBM stack measurement using IR-based
+                  imaging techniques. These methods were applied to both Scan1 (fiducial key detection)
+                  and Scan2 (active top die pattern detection). To determine optimal matching conditions,
+                  two configurations were compared experimentally:
+
+•  Case 1: Cross-correlation only
+
+•  Case 2: Cross-correlation with Sobel filtering
+
+Experimental results showed that:
+
+For Scan1, which focuses on simple fiducial patterns (e.g., squares, circles), cross-correlation
+                  alone yielded highly stable results due to the geometric clarity of the key.
+
+O Recognition rate: 
+
+- CC only $=$ 100%
+
+- CC $+$ Sobel $=$ 100%
+
+- CC $+$ Robert $<$ 90%
+
+${\to}$ Optimal: Cross-correlation only
+
+For Scan2, involving complex top die patterns under IR imaging, edge clarity was enhanced
+                  significantly with Sobel filtering. This was particularly effective in compensating
+                  for differences in bump height and IR optical focus, which often degrade image contrast.
+
+O Recognition rate:
+
+- CC only $=$ 90%
+
+- CC $+$ Sobel $=$ 100%
+
+- CC $+$ Laplacian $=$ 0%
+
+$\to$ Optimal: Cross-correlation with Sobel filtering
+
+Fig. 5. Experimental results of Scan1, 2 image.
+
+Final validation using actual HBM device wafers in a production-grade MI setup confirmed
+                  these findings. The use of Sobel filtering in conjunction with cross-correlation provided
+                  the best performance in Scan2 conditions, while Scan1 retained full detection reliability
+                  with cross-correlation alone.
+
+Fig. 6. Recognition accuracy comparison between CC only and CC $+$ Sobel filters.
+
+O Effective edge detection strategy:
+
+•  Scan1: Cross-correlation (CC) only
+
+•  Scan2: Cross-correlation $+$ Sobel filtering
+
+V. CONCLUSIONS
+
+This work presents a comprehensive metrology and inspection (MI) solution tailored
+                  for the unique challenges of stacked high-bandwidth memory (HBM) architectures. By
+                  integrating IR imaging, cross-correlation, Sobel filtering, and robust coordinate-based
+                  positioning logic, the proposed method significantly enhances alignment inspection
+                  coverage and accuracy across multiple die layers. Experimental validation using actual
+                  HBM wafers demonstrated that:
+
+•  Scan1, targeting bottom-layer fiducials, achieved high recognition accuracy using
+                  cross-correlation alone.
+
+•  Scan2, targeting complex top die patterns under IR, required Sobel filtering to
+                  maintain high detection accuracy and sub-pixel alignment.
+
+Comparative studies of multiple edge enhancement filters confirmed Sobel filtering
+                  as the most effective for IR-transmitted images, significantly outperforming Laplacian
+                  and Robert operators in both robustness and clarity. Final validation in a production-grade
+                  MI environment confirmed the system's stability, efficiency, and ability to detect
+                  die shift and tilt with high precision. The proposed approach not only improves inspection
+                  accuracy but also contributes to measurable yield enhancement in HBM assembly lines,
+                  establishing a new benchmark for advanced metrology solutions in 3D memory packaging.
+
+ACKNOWLEDGMENTS
+
+                  				This study was supported by SK hynix's internal research and innovation initiative.
+
+References
+
+1
+
+M. Zhu, Y. Zhuo, C. Wang, W. Chen, and Y. Xie, ``Performance evaluation and optimization
+                           of HBM-Enabled GPU for data-intensive applications,'' Proc. of Design, Automation
+                           & Test in Europe Conference & Exhibition (DATE), pp. 1245-1248, 2017.
+
+2
+
+H. Jun, J. Cho, K. Lee, H.-Y. Son, K. Kim, and H. Jin, ``HBM (High Bandwidth Memory)
+                           DRAM technology and architecture,'' Proc. of 2017 IEEE International Memory Workshop
+                           (IMW), pp. 1-4, 2017.
+
+3
+
+R. Alapati, Y. Travaly, J. V. Olmen, R. C. Teixeira, J. Vaes, and M. van Cauwenbergh,
+                           ``TSV metrology and inspection challenges,'' Proc. of 2009 IEEE International Conference
+                           on 3D System Integration, San Francisco, CA, USA, pp. 1-4, 2009.
+
+4
+
+S. Lee and H. Yoo, ``A near-infrared confocal scanner,'' Measurement Science and Technology,
+                           vol. 25, no. 6, 065403, 2014.
+
+5
+
+A. Trigg, ``Applications of infrared microscopy to IC and MEMS packaging,'' IEEE Transactions
+                           on Electronics Packaging Manufacturing, vol. 26, no. 3, pp. 232-238, Jul. 2003.
+
+6
+
+H. Li, G. Feng, T. Bourgade, C. Zuo, Y. Du, S. Zhou, and A. Asundi, ``Silicon wafer
+                           microstructure imaging using infrared transport of intensity equation,'' Proc. SPIE
+                           International Conference on Experimental Mechanics, vol. 9302, 93023I, 2015.
+
+7
+
+D. Ziou and S. Tabbone, ``Edge detection techniques - An overview,'' Pattern Recognition
+                           and Image Analysis: Advances in Mathematical Theory and Applications, vol. 8, no.
+                           4, pp. 537-559, 1998.
+
+8
+
+R. Ranjan and V. Avasthi, ``Edge detection using guided Sobel image filtering,'' Wireless
+                           Personal Communications, vol. 131, no. 1, pp. 651-677, 2023.
+
+9
+
+O. R. Vincent and O. Folorunso, “A descriptive algorithm for Sobel image edge detection,”
+                           Jan. 1, 2009. [Online]. Available: http://proceedings.informingscience.org/InSITE2009/InSITE09p097-107Vincent613.pdf.
+
+10
+
+F. Zhao, Q. Huang, and W. Gao, ``Image matching by normalized cross-correlation,''
+                           Proc. of 2006 IEEE International Conference on Acoustics, Speech and Signal Processing
+                           (ICASSP), Toulouse, France, pp. II-II, 2006.
+
+11
+
+D. Marušić, S. Popović, and Z. Kalafatić, ``Template matching in images using segmented
+                           normalized cross-correlation,'' arXiv preprint arXiv:2502.01286, 2025.
+
+Hye-Yun Seong
+
+               			Hye-Yun Seong is currently a Technical Leader at SK hynix Inc., where she is responsible
+               for the development and management of measurement and inspection (MI) solutions specialized
+               for high-bandwidth memory (HBM). Main focus lies in designing and implementing advanced
+               MI solutions for HBM stack and mold structure measurements. Her professional interests
+               include semiconductor package metrology, HBM process diagnostics, and the integration
+               of MI technologies for advanced packaging. She is also responsible for measurement
+               development utilizing AI-based deep learning techniques.
+
+Sung-Hyun Yoon
+
+               			Sung-Hyun Yoon is working as a technical leader at SK hynix Inc. Fundamental Technology
+               Center, leading the development of advanced technologies that integrate semiconductor
+               processes with artificial intelligence. His main roles and achievements include focusing
+               on enhancing metrology and inspection technologies in the HBM production process and
+               contributing to the advancement of HBM production using deep learning. Additionally,
+               he is spearheading the development of the world's first HBM inspection solution by
+               developing AI-based defect prediction models.
+
+Young-Hoon Lee
+
+               			Young-Hoon Lee is a part leader of the HBM MI Technology team at SK hynix Inc.,
+               leading metrology and inspection development for advanced semiconductor packaging.
+               He has extensive experience in process optimization and has contributing to the development
+               of innovative techniques for accurate and reliable HBM analysis.
+
+Gwang Min Yoon
+
+               			Gwang Min Yoon is the team leader of the HBM MI Technology team at SK hynix Inc.
+               He has led multiple initiatives in 3D semiconductor inspection and continues to oversee
+               the development of high-precision measurement solutions for emerging memory technologies
+               of HBM.
+
+Article Information (continued)
+
+                           [
+
+Research article
+
+                           ]
+
+Index Terms
+ : 
+
+Index Terms
+
+Keyword
+ : 
+ High bandwidth memory (HBM)
+
+Keyword
+ : 
+ stacked die shift measurement
+
+Keyword
+ : 
+ infrared optics
+
+Keyword
+ : 
+ sobel filter
+
+Keyword
+ : 
+ cross
+
+Keyword
+ : 
+ correlation
+
+This display is generated from NISO JATS XML with 
+jats-style.xsl
+. The XSLT engine is Saxonica.
+
+Copyright © IEIE All right's reserved
+
+Articles published in JSTS are distributed under the terms of the Creative Commons Attribution Non-Commercial License (CC BY-NC 3.0), which permits non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. Commercial use requires the prior permission of the publisher (
+www.theieie.org
+).
+
+ISSN : 1598-1657 (Print)  / 
+ISSN : 2233-4866 (Online)
+
