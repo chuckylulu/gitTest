@@ -112,5 +112,7 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
     - The bottom line, Sections 1, 2.2, 3 and 5 and the review packet were rewritten accordingly.
     Final build: 832 evidence rows ([F] 578, [C] 73, [S] 84, [I] 97); every quote FOUND.
 
+15. GitHub push protection blocked a commit. sources/customer_side/2026-11-21_nist_fcmn2026-page-571991.html, a NIST page saved by the ADDM collector, embeds the site's own Mapbox access token in its Drupal settings. The token was replaced with "[REDACTED-third-party-mapbox-token]", the manifest sha256 and note were updated, and the unpushed commit was amended. Nothing else in the page changed.
+
 ## Steps
 (continued below)
