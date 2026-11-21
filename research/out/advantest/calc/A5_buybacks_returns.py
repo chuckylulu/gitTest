@@ -94,13 +94,14 @@ oneoffs = {
     "FY2024": [("Essai goodwill/intangible impairment, other expenses (pre-tax)", -21393, "A5-166, A5-167, A5-169")],
     "FY2025": [("Gain on fair value of share call options, financial income (pre-tax); called one-off (A5-033)", 17312, "A5-230"),
                ("Income from partial divestiture of a business, other income (pre-tax)", 2504, "A5-156"),
+               ("One-time SG&A charge in Q2 related to a growth investment, ~2 bn (amount A1-511; link inferred A1-512, Medium)", -2000, "A3-093, A1-511, A1-512"),
                ("One-off SG&A expenses in Q4 (amount not disclosed)", None, "A5-227")],
     "FY2026 1H": [("Gain on valuation of financial instruments, financial income (pre-tax); not called one-off", 54171, "A5-228"),
-                  ("One-time reversal of inventory write-down (amount not disclosed)", None, "A5-229")],
+                  ("One-time reversal of inventory write-down, named for Q1 and 1H (amount not disclosed)", None, "A5-229, A1-315")],
 }
 print("\nNamed / itemised one-off items inside net income (pre-tax amounts, JPY million):")
 for k, items in oneoffs.items():
     for name, amt, ids in items:
-        print(f"  {k:10s} {name:95s} {'n.d.' if amt is None else format(amt, ',d'):>8s} [{ids}]")
+        print(f"  {k:10s} {name:112s} {'n.d.' if amt is None else format(amt, ',d'):>8s} [{ids}]")
 print("  Net income (and hence the total return ratio) ex these items cannot be computed: the tax effect of each item")
 print("  is NOT DISCLOSED, and two items have no amount. Ratios above are on reported net income only.")

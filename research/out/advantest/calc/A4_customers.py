@@ -83,3 +83,6 @@ for name, c, p in checks:
     print(f"   {name}: computed {c:.2f}% vs printed {p}% -> {'MATCH' if round(c, 1) == p else 'MISMATCH'}")
 print(f"NVIDIA Group (note 6(6)) JPY {NVIDIA_FY25:,} m vs NVIDIA International, Inc. (Item 2) JPY {NVIDIA_INTL_FY25:,} m: "
       f"other group entities JPY {res['nvidia_group_minus_nvidia_intl_FY2025_JPYm']:,} m ({res['nvidia_group_minus_nvidia_intl_FY2025_pp']:.1f} pp)")
+# fix round 2 (2026-11-21): the two named >=10% customer groups in JPY million (A4-001 + A4-002), FY2025 (Apr 2025-Mar 2026)
+print(f"RESULT named_FY2025_JPYm = {NVIDIA_FY25 + TSMC_FY25}  (NVIDIA Group {NVIDIA_FY25:,} + TSMC {TSMC_FY25:,}; "
+      f"{pct(NVIDIA_FY25 + TSMC_FY25, SALES_FY25):.1f}% of FY2025 net sales)")

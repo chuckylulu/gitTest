@@ -127,3 +127,11 @@ print(f"LTM net sales {LTM_TOT:,}; Services and Others {LTM_SO:,} = {pct(LTM_SO,
 print(f"LTM Support Services (sum of quarterly chart labels) {LTM_SUPPORT_BN:.1f} bn = {pct(LTM_SUPPORT_BN, LTM_TOT / 1000):.1f}% of LTM net sales "
       "(NOT a company definition of recurring revenue)")
 print(f"LTM SoC test system sales {LTM_SOC:,} = {pct(LTM_SOC, LTM_TOT):.1f}% of LTM net sales")
+
+print("\n=== 7. FY2026 Q2 (Jul-Sep 2026) vs FY2025 Q2 (Jul-Sep 2025): ratio changes in percentage points (fix round 2, 2026-11-21) ===")
+# Test System segment income / segment sales, JPY million, from section 1 (YTD differencing): FY2025 Q2 113,631 / 237,403; FY2026 Q2 264,842 / 436,669
+# SoC share of net sales from chart labels (JPY bn): FY2025 Q2 173.7 / 262.9 (A1-254, A1-032); FY2026 Q2 353.3 / 477.7 (A1-282, A1-060)
+m25, m26 = pct(113631, 237403), pct(264842, 436669)
+s25, s26 = pct(173.7, 262.9), pct(353.3, 477.7)
+print(f"Test System segment margin: FY2025 Q2 {m25:.1f}% -> FY2026 Q2 {m26:.1f}%, {m26 - m25:+.1f} pp")
+print(f"SoC share of net sales: FY2025 Q2 {s25:.1f}% -> FY2026 Q2 {s26:.1f}%, {s26 - s25:+.1f} pp")

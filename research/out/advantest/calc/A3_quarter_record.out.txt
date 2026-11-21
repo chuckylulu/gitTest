@@ -136,8 +136,8 @@ pre-tax amount (no tax effect assumed) - an arithmetic bound, not an estimate of
   FY2024 Q4 NI upper bound if impairment carried no tax effect 61.4 vs guidance 46.3: +32.6% -> the NI miss classification depends on the undisclosed tax effect
   FY2025 Q4 NI less full pre-tax call-option gain 109.6 vs guidance 80.0: +37.0% (beat) - beat holds
   FY2026 Q2 valuation gains = 54.171 - 41.075 = 13.096; NI less full pre-tax gains 180.2 vs guidance 163.2: +10.4% (beat) - beat holds
-  FY2025 Q2 OI: management named a one-time SG&A charge (A3-093) without an amount -> cannot adjust; reported OI beat +12.6% stands.
-  FY2026 Q2 OI: management named a one-time inventory write-down reversal benefit in 1H (A3-229) without an amount -> cannot adjust.
+  FY2025 Q2 OI ex ~2 bn one-time SG&A charge (A3-093; amount A1-511, link A1-512 Medium) 110.4 vs guidance 96.3: +14.6% (beat); reported +12.6% - beat either way; OPM reported 41.2%, ex charge 42.0%
+  FY2026 Q2 OI: management named a one-time inventory write-down reversal for FY2026 Q1 (A1-315) and for 1H (A3-229), without an amount; whether any of it fell in Q2 is not disclosed -> cannot adjust.
 
 Additional one-off sensitivity (verifier, 2026-11-21). Same conventions as above (JPY billion).
   [context] FY2023 Q2 OI less settlement income 17.8 vs Q2 guidance 22.3: -20.1% (miss); reported -5.8% miss either way
@@ -145,8 +145,15 @@ Additional one-off sensitivity (verifier, 2026-11-21). Same conventions as above
   [context] FY2023 2H NI less approx. DTA benefit 32.55 vs 2H guidance 34.1: -4.5% (miss); reported +6.6%; impairment after-tax effect not disclosed
   [context] FY2023 Q4 NI less approx. DTA benefit 11.4 vs Q4 guidance 17.4: -34.5% (miss); adding back the full pre-tax impairment as well (no tax effect) gives 20.4 (+17.2%) - an arithmetic bound only
   FY2024 Q3 slot (2H FY2024) OI ex impairment 154.69 vs 2H guidance 70.1: +120.7% (beat); 2H OPM reported 29.6%, ex impairment 34.3%; NI upper bound (no tax effect) 113.23 (+114.9%) - beat either way
-  FY2025 Q1 slot (FY2025 vs initial) OI less divestiture gain 496.62 vs 242.0: +105.2% (beat); NI less full pre-tax call-option and divestiture gains 355.54 vs 179.0: +98.6% - beat either way; Q2 one-time SG&A charge amount not disclosed
+  FY2025 Q1 slot (FY2025 vs initial) OI less divestiture gain 496.62 vs 242.0: +105.2% (beat); NI less full pre-tax call-option and divestiture gains 355.54 vs 179.0: +98.6% - beat either way; also adding back the ~2 bn Q2 one-time SG&A charge (A1-512, Medium): OI 498.62 (+106.0%); FY2025 Q4 one-off SG&A amount not disclosed
   FY2025 Q3 slot (2H FY2025) NI less full pre-tax call-option gain 188.23 vs 2H guidance 105.2: +78.9% (beat); OI has no named item with an amount in 2H (2H OPM 44.3%)
   FY2026 Q1 slot (provisional) 1H NI less full pre-tax valuation gains 313.91 = 67.4% of initial FY NI guidance (reported 79.1%); 1H OPM 54.0% includes an inventory write-down reversal of undisclosed amount
   FY2026 Q2 OPM reported 55.9%; Q2-only share of the 1H inventory write-down reversal not disclosed -> no ex-item figure
   FY2024 Q4 NI ex impairment: in-line if the after-tax effect >= 5.4 (25% of 21.393), beat if > 7.2 (34%); company says the impairment losses were not tax-deductible (A3-316), which points to the upper end
+
+====================================================================================================
+COUNT over the independent single-quarter slots only: FY2024 Q4 (Jan-Mar 2025), FY2025 Q2 (Jul-Sep 2025), FY2025 Q4 (Jan-Mar 2026), FY2026 Q2 (Jul-Sep 2026)
+  Sales beats 4, in-line 0, misses 0 of 4
+  OI    beats 4, in-line 0, misses 0 of 4
+  NI    beats 3, in-line 0, misses 1 of 4  (miss: FY2024 Q4 (Jan-Mar 2025))
+  EPS   beats 3, in-line 0, misses 1 of 4  (miss: FY2024 Q4 (Jan-Mar 2025))

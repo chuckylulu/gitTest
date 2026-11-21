@@ -1,0 +1,388 @@
+rows loaded: 2380 from A1, A2, A3, A4, A5, A6, TH, CL
+
+=== (a) SAME local_file + first page, different modules, same quantity, disagreement ===
+
+-- a1 same quote+period, value/unit differ: 1 pair(s)
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf p.1] TH-116 vs CL-039
+  TH-116  [C] | 66                                     | % (CY2025)         | n/a (calendar year)      | CY2024; CY2025 (stated 28 Oct 2026)          | Company estimate: SoC tester share 56% (CY2024) to 66% (CY2025); path to above 70%
+  CL-039  [C] | 56; 66                                 | %                  | n/a (calendar year)      | CY2024; CY2025 (estimate of 28 Oct 2026)     | Advantest estimate: its SoC tester share rose from 56% (CY2024) to 66% (CY2025); further g
+
+-- a1b same quote+period_fiscal, period_calendar differs: 6 pair(s)
+[2026-01-28_advantest_earnings-call-QA-FY2025Q3.pdf p.2] A1-303 vs TH-205
+  A1-303  [C] | majority                               | statement          | FY2025 Q4                | Jan-Mar 2026 (28 Jan 2026)                   | Company says the majority of 'Computing and Communications' is currently HPC/AI (category 
+  TH-205  [C] | majority                               | share of Computing | FY2025 Q4                | Jan-Mar 2026 (stated 28 Jan 2026)            | Management (Jan 2026): the "Computing and Communications" category includes HPC/AI and app
+[2026-07-29_advantest_earnings-call-QA-FY2026Q1.pdf p.4] A1-315 vs A2-052
+  A1-315  [C] | not disclosed                          | JPY                | FY2026 Q1                | Apr-Jun 2026                                 | Management: FY2026 Q1 margins benefited from a reversal of inventory obsolescence, not exp
+  A2-052  [C] |                                        | text               | FY2026 Q1                | Apr-Jun 2026 (stated 29 Jul 2026)            | FY2026 Q1 margins benefited from a reversal of inventory obsolescence that management says
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf p.1] A1-316 vs A2-180
+  A1-316  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  A2-180  [C] |                                        | text               | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | 1H FY2026 operating margin included a one-time benefit from a reversal of inventory write-
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf p.1] A1-316 vs CL-073
+  A1-316  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  CL-073  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | Management: 1H FY2026 operating margin had a one-time benefit from reversal of inventory w
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf p.1] A2-180 vs A3-229
+  A2-180  [C] |                                        | text               | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | 1H FY2026 operating margin included a one-time benefit from a reversal of inventory write-
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf p.1] A3-229 vs CL-073
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  CL-073  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | Management: 1H FY2026 operating margin had a one-time benefit from reversal of inventory w
+
+-- a2 same quote+value, period differs: 7 pair(s)
+[2025-04-25_advantest_financial-results-FY2024Q4-full-year.pdf p.15] A3-063 vs A6-223
+  A3-063  [F] | 21,393                                 | JPY million        | FY2024 Q4                | Jan-Mar 2025                                 | FY2024 one-off named by management: impairment of goodwill and intangible assets (Essai, S
+  A6-223  [F] | 21,393                                 | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | Impairment losses on goodwill and intangible assets (Essai, SLT), FY2024 segment note
+[2026-07-29_advantest_earnings-call-QA-FY2026Q1.pdf p.4] A4-312 vs CL-060
+  A4-312  [F] | 19                                     | %                  | FY2026 Q2                | Jul-Sep 2026 (29 Jul 2026)                   | Management (Jul 2026): China accounts for approximately 19% of total sales and has been ar
+  CL-060  [C] | approximately 19                       | %                  | FY2026 Q1                | Apr-Jun 2026 (stated 29 Jul 2026)            | Management (Jul 2026): China is about 19% of total sales, relatively consistent around 20%
+[2026-10-28_advantest_earnings-briefing-notes-FY2026Q2.pdf p.9] TH-102 vs CL-006
+  TH-102  [C] | approximately 11.5                     | USD billion        | n/a (calendar year)      | CY2026 (forecast as of 28 Oct 2026)          | Company forecast: CY2026 SoC tester market 10.5-11.5 USD bn, expected near upper end (~11.
+  CL-006  [C] | 11.5                                   | USD billion        | n/a (calendar year)      | CY2026 (estimate of 28 Oct 2026)             | Company estimate: CY2026 SoC tester market about USD 11.5bn, near top of its range; memory
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf p.8] A1-307 vs CL-038
+  A1-307  [F] | 21.4; 2.5                              | JPY billion        | FY2024 Q4                | Jan-Mar 2025                                 | Slide note: Q4 FY24 operating income includes impairment of approx. JPY 21.4 billion; Q1 F
+  CL-038  [F] | 21.4; 2.5                              | JPY billion        | FY2024 Q4; FY2025 Q1     | Jan-Mar 2025; Apr-Jun 2025                   | Company-named one-offs in operating income: ~JPY 21.4bn impairment in Q4 FY24 and ~JPY 2.5
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf p.1] TH-042 vs CL-001
+  TH-042  [C] | about 50                               | % per year         | FY2026 Q3                | Oct-Dec 2026 (stated 28 Oct 2026)            | Management (Oct 2026): tester TAM grew at an annual average of about 50% or slightly above
+  CL-001  [C] | about 50%                              | % per year         | n/a (calendar year)      | past few years to CY2025 (stated 28 Oct 2026 | Management: tester TAM has grown about 50% a year or slightly more over the past few years
+[2026-11-09_federalregister_FR-2026-22793-BIS-affiliates-suspension-extension.pdf p.1] A4-336 vs CL-104
+  A4-336  [F] | 10 Jan 2027 (end of extended suspensio | date               | FY2026 Q3                | Oct-Dec 2026 (published 9 Nov 2026)          | Nov 2026: BIS extends the Affiliates-rule suspension through 10 Jan 2027
+  CL-104  [F] | January 10, 2027                       | date               | FY2026 Q4                | Jan-Mar 2027 (10 Jan 2027)                   | BIS extends the stay of the Affiliates rule (90 FR 47201) until 10 Jan 2027
+[2026-11-11_advantest_integrated-annual-report-2026.pdf p.23] A2-057 vs A5-193
+  A2-057  [C] | 70                                     | JPY billion        | FY2026 Q3                | Oct-Dec 2026 (stated 11 Nov 2026; bonds issu | JPY 70 bn of the April 2026 JPY 100 bn convertible bond is scheduled to go to expanding pr
+  A5-193  [C] | 70                                     | JPY billion        | FY2026-FY2028            | Apr 2026-Mar 2029 (stated 11 Nov 2026)       | CFO: JPY 70bn of CB funds for production capacity and inventory
+
+-- a3 same claim keywords+period, values do not overlap: 1 pair(s)
+[2026-10-28_advantest_earnings-briefing-notes-FY2026Q2.pdf p.11] A3-110 vs CL-035
+  A3-110  [C] | 50                                     | %                  | FY2026 2H                | Oct 2026-Mar 2027                            | Management (Oct 2026): FY2026 2H operating margin expected to exceed 50%, about 3 points a
+  CL-035  [C] | 47.3                                   | %                  | FY2026 2H                | Oct 2026-Mar 2027 (forecast of 28 Oct 2026)  | July forecast had assumed a 2H FY2026 operating margin of 47.3%; October forecast about 3 
+
+(a) total flagged pairs: 15
+
+=== (b) SAME local_file + quote, DIFFERENT tags (all modules) ===
+[2024-06-25_advantest_press-release-E-Info-20240625.pdf] A3-237 [C] vs A3-240 [F] | quote: return on invested capital (roic) 21.2% 18-28%
+  A3-237  [C] | 18-28                                  | %                  | FY2024-FY2026            | Apr 2024-Mar 2027                            | MTP3 original target (Jun 2024): ROIC, FY2024-26 average
+  A3-240  [F] | 21.2                                   | %                  | FY2021-FY2023            | Apr 2021-Mar 2024                            | MTP2 (FY2021-23 avg.) ROIC as printed in the MTP3 press release (footnote *2 gives the NOP
+[2025-10-28_advantest_earnings-briefing-slides-FY2025Q2.pdf] A3-141 [C] vs A3-187 [F] | quote: 218.67 123.14 109.03 232.19 144.61 378.06
+  A3-141  [C] | 144.61                                 | JPY                | FY2025 2H                | Oct 2025-Mar 2026                            | 2H FY2025 forecast given at Q2 release (2025-10-28): basic EPS
+  A3-187  [F] | 109.03                                 | JPY                | FY2025 Q2                | Jul-Sep 2025                                 | FY2025 Q2 actual (single quarter, slide): basic EPS
+[2026-07-29_advantest_earnings-call-QA-FY2026Q1.pdf] A4-312 [F] vs CL-060 [C] | quote: china accounts for approximately 19% of total sales and has remained
+  A4-312  [F] | 19                                     | %                  | FY2026 Q2                | Jul-Sep 2026 (29 Jul 2026)                   | Management (Jul 2026): China accounts for approximately 19% of total sales and has been ar
+  CL-060  [C] | approximately 19                       | %                  | FY2026 Q1                | Apr-Jun 2026 (stated 29 Jul 2026)            | Management (Jul 2026): China is about 19% of total sales, relatively consistent around 20%
+[2026-10-28_advantest_earnings-briefing-notes-FY2026Q2.pdf] A1-314 [C] vs A3-227 [F] | quote: in q2, we recorded financial income of 14.7 billion jpy
+  A1-314  [C] | 14.7                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Management: Q2 FY2026 financial income of JPY 14.7 billion mainly reflected period-end val
+  A3-227  [F] | 14.7                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Management: Q2 FY2026 financial income of JPY 14.7 bn, mainly period-end valuation gains o
+[2026-10-28_advantest_earnings-briefing-notes-FY2026Q2.pdf] A1-314 [C] vs CL-031 [F] | quote: in q2, we recorded financial income of 14.7 billion jpy
+  A1-314  [C] | 14.7                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Management: Q2 FY2026 financial income of JPY 14.7 billion mainly reflected period-end val
+  CL-031  [F] | 14.7                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 financial income of JPY 14.7bn, mainly period-end valuation gains on investment 
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-153 [C] vs A3-188 [F] | quote: 515.15 241.27 267.75 508.99 517.23 1,027.08
+  A3-153  [C] | 517.23                                 | JPY                | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: basic EPS
+  A3-188  [F] | 267.75                                 | JPY                | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): basic EPS
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A1-295 [F] vs A1-297 [C] | quote: computing / communications
+  A1-295  [F] | 95%                                    | % of SoC Test Syst | FY2025                   | Apr 2025-Mar 2026                            | Share of SoC Test Systems sales from 'Computing / Communications' applications, FY2025 (ro
+  A1-297  [C] | 90%                                    | % of SoC Test Syst | FY2026 (forecast)        | Apr 2026-Mar 2027                            | Forecast share of SoC Test Systems sales from 'Computing / Communications', FY2026e as of 
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A1-296 [F] vs A1-297 [C] | quote: computing / communications
+  A1-296  [F] | 90%                                    | % of SoC Test Syst | FY2024                   | Apr 2024-Mar 2025                            | Share of SoC Test Systems sales from 'Computing / Communications' applications, FY2024 (ro
+  A1-297  [C] | 90%                                    | % of SoC Test Syst | FY2026 (forecast)        | Apr 2026-Mar 2027                            | Forecast share of SoC Test Systems sales from 'Computing / Communications', FY2026e as of 
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A2-027 [C] vs A3-181 [F] | quote: sales / 売上高 1,128.6 367.5 477.7 845.2 1,017.8 1,863.0
+  A2-027  [C] | 1,017.8                                | JPY billion        | FY2026 2H (forecast)     | Oct 2026-Mar 2027 (stated 28 Oct 2026)       | FY2026 2H net sales forecast (company forecast, Oct 2026)
+  A3-181  [F] | 367.5                                  | JPY billion        | FY2026 Q1                | Apr-Jun 2026                                 | FY2026 Q1 actual (single quarter, slide): net sales
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A2-027 [C] vs A3-184 [F] | quote: sales / 売上高 1,128.6 367.5 477.7 845.2 1,017.8 1,863.0
+  A2-027  [C] | 1,017.8                                | JPY billion        | FY2026 2H (forecast)     | Oct 2026-Mar 2027 (stated 28 Oct 2026)       | FY2026 2H net sales forecast (company forecast, Oct 2026)
+  A3-184  [F] | 477.7                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): net sales
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf] A1-316 [C] vs A3-229 [F] | quote: there was also a one-time benefit to the operating margin from a reversal of inventory write-down
+  A1-316  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf] A2-180 [C] vs A3-229 [F] | quote: there was also a one-time benefit to the operating margin from a reversal of inventory write-down
+  A2-180  [C] |                                        | text               | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | 1H FY2026 operating margin included a one-time benefit from a reversal of inventory write-
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf] A3-229 [F] vs CL-073 [C] | quote: there was also a one-time benefit to the operating margin from a reversal of inventory write-down
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  CL-073  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | Management: 1H FY2026 operating margin had a one-time benefit from reversal of inventory w
+
+(b) total pairs with different tags: 13
+
+=== (b2) SAME local_file, one quote contains the other (30+ chars), DIFFERENT tags ===
+[2025-01-29_advantest_earnings-briefing-slides-FY2024Q3.pdf] A1-089 [F] vs A3-133 [C]
+  A1-089  [F] | 70.30                                  | JPY                | FY2024 Q3                | Oct-Dec 2024                                 | Basic EPS, FY2024 Q3 (single quarter)
+  A3-133  [C] | 63.53                                  | JPY                | FY2024 Q4                | Jan-Mar 2025                                 | Q4 FY2024 forecast given at Q3 release (2025-01-29): basic EPS
+[2025-02-27_advantest_news-Micronics-Japan-strategic-partnership.html] A5-161 [C] vs TH-019 [F]
+  A5-161  [C] |                                        | text               | FY2024 Q4                | Jan-Mar 2025 (27 Feb 2025)                   | Micronics Japan: planned minority stake under partnership (Feb 2025)
+  TH-019  [F] |                                        | statement          | FY2024 Q4                | Jan-Mar 2025 (27 Feb 2025)                   | Partnership with probe-card maker Micronics Japan with planned minority stake (Feb 2025)
+[2026-01-28_advantest_earnings-briefing-slides-FY2025Q3.pdf] A1-087 [F] vs A3-145 [C]
+  A1-087  [F] | 109.03                                 | JPY                | FY2025 Q2                | Jul-Sep 2025                                 | Basic EPS, FY2025 Q2 (single quarter)
+  A3-145  [C] | 111.80                                 | JPY                | FY2025 Q4                | Jan-Mar 2026                                 | Q4 FY2025 forecast given at Q3 release (2026-01-28): basic EPS
+[2026-01-28_advantest_earnings-briefing-slides-FY2025Q3.pdf] A1-088 [F] vs A3-145 [C]
+  A1-088  [F] | 108.37                                 | JPY                | FY2025 Q3                | Oct-Dec 2025                                 | Basic EPS, FY2025 Q3 (single quarter)
+  A3-145  [C] | 111.80                                 | JPY                | FY2025 Q4                | Jan-Mar 2026                                 | Q4 FY2025 forecast given at Q3 release (2026-01-28): basic EPS
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-150 [C] vs A3-181 [F]
+  A3-150  [C] | 1,017.8                                | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: net sales
+  A3-181  [F] | 367.5                                  | JPY billion        | FY2026 Q1                | Apr-Jun 2026                                 | FY2026 Q1 actual (single quarter, slide): net sales
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-150 [C] vs A3-184 [F]
+  A3-150  [C] | 1,017.8                                | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: net sales
+  A3-184  [F] | 477.7                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): net sales
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-151 [C] vs A3-182 [F]
+  A3-151  [C] | 510.2                                  | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: operating income
+  A3-182  [F] | 190.0                                  | JPY billion        | FY2026 Q1                | Apr-Jun 2026                                 | FY2026 Q1 actual (single quarter, slide): operating income
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-151 [C] vs A3-185 [F]
+  A3-151  [C] | 510.2                                  | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: operating income
+  A3-185  [F] | 266.8                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): operating income
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-152 [C] vs A3-183 [F]
+  A3-152  [C] | 373.4                                  | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: net income
+  A3-183  [F] | 174.8                                  | JPY billion        | FY2026 Q1                | Apr-Jun 2026                                 | FY2026 Q1 actual (single quarter, slide): net income
+[2026-10-28_advantest_earnings-briefing-slides-FY2026Q2.pdf] A3-152 [C] vs A3-186 [F]
+  A3-152  [C] | 373.4                                  | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: net income
+  A3-186  [F] | 193.3                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): net income
+[2026-10-28_advantest_earnings-call-QA-FY2026Q2.pdf] A3-229 [F] vs A5-229 [C]
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  A5-229  [C] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+
+(b2) total near-same-quote pairs with different tags: 11
+
+=== (c) KEY FIGURES BY MODULE (review by hand) ===
+
+-- FY2026 Q2 net sales / YoY: 13 row(s)
+  A1-060  [F] | 477.7                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Net sales, FY2026 Q2 (single quarter)
+  A1-067  [F] | +81.7%                                 | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Net sales YoY change as printed, FY2026 Q2 vs FY2025 Q2
+  A1-284  [F] | 29.9                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Other Systems sales (handlers, device interfaces, SLT), FY2026 Q2
+  A1-371  [I] | +81.7                                  | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Net sales YoY growth, FY2026 Q2 vs year-earlier quarter
+  A1-391  [I] | 477,727                                | JPY million        | FY2026 Q2                | Jul-Sep 2026                                 | Single quarters re-derived from tanshin YTD statements agree with slide quarterly figures 
+  A2-083  [I] | 477,727                                | JPY million        | FY2026 Q2                | Jul-Sep 2026                                 | Single-quarter net sales derived as YTD difference
+  A3-184  [F] | 477.7                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): net sales
+  A3-291  [I] | +9.9                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 slot (Jul-Sep 2026): Q2 guidance of 2026-07-29 vs actual - sales 477.7 vs 434.5 
+  A6-165  [F] | 477.7                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Net sales, single quarter FY2026 Q2 (briefing slide)
+  A6-311  [I] | 477,727; 266,819; 55.9                 | JPY million; %     | FY2026 Q2                | Jul-Sep 2026                                 | Latest quarter FY2026 Q2: single-quarter net sales, operating income and margin (reference
+  TH-081  [F] |                                        | statement          | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2: SLT system sales increased mainly from consumer electronics applications (not A
+  CL-024  [F] | 477.7                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 net sales (single quarter, slide)
+  CL-141  [I] | 477,727; 266,819; 55.9; 81.7           | JPY million; %     | FY2026 Q2                | Jul-Sep 2026                                 | Second-document check: FY2026 Q2 single quarter from tanshin YTD figures = sales JPY 477,7
+
+-- FY2026 Q2 gross margin: 6 row(s)
+  A1-061  [F] | 339.8                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Gross profit, FY2026 Q2 (single quarter)
+  A1-062  [F] | 71.1                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Gross margin as printed, FY2026 Q2
+  A1-372  [I] | +107.7                                 | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Gross profit YoY growth, FY2026 Q2
+  A1-373  [I] | +8.9                                   | percentage points  | FY2026 Q2                | Jul-Sep 2026                                 | Gross margin change vs year-earlier quarter, FY2026 Q2
+  A1-499  [F] | +107.7%                                | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Gross profit YoY change as printed, FY2026 Q2 vs FY2025 Q2
+  CL-026  [F] | 71.1                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 gross margin (single quarter)
+
+-- FY2026 Q2 operating income / margin: 13 row(s)
+  A1-063  [F] | 266.8                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Operating income, FY2026 Q2 (single quarter)
+  A1-064  [F] | 55.9                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Operating margin as printed, FY2026 Q2
+  A1-068  [F] | +146.0％                                | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Operating income YoY change as printed, FY2026 Q2 vs FY2025 Q2
+  A1-374  [I] | +146.0                                 | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Operating income YoY growth, FY2026 Q2
+  A1-375  [I] | +14.6                                  | percentage points  | FY2026 Q2                | Jul-Sep 2026                                 | Operating margin change vs year-earlier quarter, FY2026 Q2
+  A1-395  [I] | 55.8                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Core operating margin (company definition applied by us: OI excluding other income/expense
+  A3-185  [F] | 266.8                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 actual (single quarter, slide): operating income
+  A3-227  [F] | 14.7                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Management: Q2 FY2026 financial income of JPY 14.7 bn, mainly period-end valuation gains o
+  A6-166  [F] | 266.8                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Operating income, single quarter FY2026 Q2 (briefing slide)
+  A6-311  [I] | 477,727; 266,819; 55.9                 | JPY million; %     | FY2026 Q2                | Jul-Sep 2026                                 | Latest quarter FY2026 Q2: single-quarter net sales, operating income and margin (reference
+  CL-025  [F] | 266.8; 55.9%                           | JPY billion; %     | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 operating income and operating margin
+  CL-031  [F] | 14.7                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | FY2026 Q2 financial income of JPY 14.7bn, mainly period-end valuation gains on investment 
+  CL-141  [I] | 477,727; 266,819; 55.9; 81.7           | JPY million; %     | FY2026 Q2                | Jul-Sep 2026                                 | Second-document check: FY2026 Q2 single quarter from tanshin YTD figures = sales JPY 477,7
+
+-- FY2026 Q2 SoC / memory sales: 14 row(s)
+  A1-282  [F] | 353.3                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | SoC Test Systems sales, FY2026 Q2
+  A1-283  [F] | 53.4                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Memory Test Systems sales, FY2026 Q2
+  A1-457  [I] | +103.4                                 | %                  | FY2026 Q2                | Jul-Sep 2026                                 | SoC Test Systems sales YoY growth, FY2026 Q2
+  A1-458  [I] | +21.6                                  | %                  | FY2026 Q2                | Jul-Sep 2026                                 | Memory Test Systems sales YoY growth, FY2026 Q2
+  A1-462  [I] | 74.0                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | SoC Test Systems as % of total net sales, FY2026 Q2
+  A4-313  [C] | 80-85                                  | %                  | FY2026 Q2                | Jul-Sep 2026 (29 Jul 2026)                   | Management (Jul 2026): China sales mix approx. 80-85% SoC testers, approx. 15% memory test
+  A4-317  [F] |                                        |                    | FY2026 Q2                | Jul-Sep 2026                                 | Q2 FY26 notes: China sales of both SoC and Memory Test Systems increased
+  TH-141  [F] | 353.3                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | SoC Test Systems sales FY2026 Q2
+  TH-147  [F] | 53.4                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Memory Test Systems sales FY2026 Q2
+  CL-016  [S] |                                        |                    | FY2026 Q2                | Jul-Sep 2026 (asked 28 Oct 2026)             | Securities analysts (question at Q2 FY2026 briefing): Taiwan equipment-import and Malaysia
+  CL-027  [F] | 353.3                                  | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | SoC test system sales, FY2026 Q2
+  CL-028  [F] | 53.4                                   | JPY billion        | FY2026 Q2                | Jul-Sep 2026                                 | Memory test system sales, FY2026 Q2
+  CL-063  [F] |                                        |                    | FY2026 Q2                | Jul-Sep 2026                                 | Q2 FY2026: China sales of both SoC and memory test systems increased
+  CL-114  [I] | 103.4; 21.6; -2.2; -6.8; 20.2->13.1    | %                  | FY2026 Q2                | Jul-Sep 2026                                 | SoC test system sales rose 103.4% YoY in FY2026 Q2 while memory test system sales rose 21.
+
+-- LTM sales / GM / OPM / China: 20 row(s)
+  A1-396  [I] | 1,447,077                              | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM net sales (FY2025 + 1H FY2026 - 1H FY2025)
+  A1-397  [I] | +48.1                                  | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM net sales YoY growth vs Oct 2024-Sep 2025 (977,234)
+  A1-398  [I] | 68.2                                   | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM gross margin
+  A1-399  [I] | 50.0                                   | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM operating margin
+  A1-421  [I] | 502,225                                | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM operating cash flow
+  A1-422  [I] | 273,933                                | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM free cash flow, company definition (CFO + CFI)
+  A1-423  [I] | 463,173                                | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM free cash flow, capex-based
+  A1-427  [I] | 4,968                                  | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM share-based compensation expense
+  A1-430  [I] | 1.81                                   | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | SBC as % of FCF, LTM: company-definition FCF 1.81% (capex-based 1.07%)
+  A1-505  [I] | 796,437                                | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM income before income taxes (FY2025 + 1H FY2026 - 1H FY2025); 55.0% of LTM net sales
+  A1-506  [I] | 724,954                                | JPY million        | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | LTM income before income taxes excluding the call-option gain (17,312) and 1H FY2026 valua
+  A1-508  [I] | 9.4                                    | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | Services and Others segment share of LTM net sales (135,423 / 1,447,077). NOT a company de
+  A1-509  [I] | 5.6                                    | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | Support Services sub-segment share of LTM net sales (81.6 bn of chart labels / 1,447.1 bn)
+  A1-510  [I] | 70.2                                   | %                  | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | SoC test system sales share of LTM net sales (1,015,368 / 1,447,077)
+  A2-160  [I] | +44,392                                | JPY million        | FY2025 Q3 to FY2026 Q2 ( | Oct 2025-Sep 2026                            | Sum of advance-receipts cash-flow increases over last 4 quarters (FY2025 Q3 to FY2026 Q2)
+  A4-370  [I] | 19.5                                   | %                  | LTM                      | Oct 2025-Sep 2026                            | China share of sales, last four quarters (FY2025 Q3-FY2026 Q2), ship-to
+  A4-371  [I] | 281.7                                  | JPY billion        | LTM                      | Oct 2025-Sep 2026                            | China sales, last four quarters (FY2025 Q3-FY2026 Q2), ship-to
+  A4-432  [I] | +50.2                                  | % YoY              | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | China sales (ship-to), last four quarters vs prior four quarters: Oct 2025-Sep 2026 JPY 28
+  A6-312  [I] | 1,447,077; 50.0                        | JPY million; %     | FY2025 Q3-FY2026 Q2      | Oct 2025-Sep 2026                            | T4Q to FY2026 Q2 (Oct 2025-Sep 2026): net sales and operating margin
+  CL-118  [I] | 23.9; 17.3; 18.9; 18.9; 72.9; 19.5     | %                  | FY2025 Q3-FY2026 Q2      | Oct 2025-Sep 2026                            | China ship-to share of sales: 23.9% (FY25 Q3), 17.3% (FY25 Q4), 18.9% (FY26 Q1), 18.9% (FY
+
+-- NVIDIA / TSMC / Samsung shares: 33 row(s)
+  A4-001  [F] | 243,735                                | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | Net sales to the NVIDIA Group (customer group >=10% of net sales), FY2025
+  A4-002  [F] | 124,922                                | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | Net sales to Taiwan Semiconductor Manufacturing Co., Ltd. (customer >=10% of net sales), F
+  A4-003  [F] | 96,158                                 | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | Net sales to TSMC (>=10% customer), FY2024, as comparative in the 84th report
+  A4-004  [F] | 87,734                                 | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | Net sales to the Samsung Group (>=10% customer), FY2024, as comparative in the 84th report
+  A4-005  [F] | 96,158                                 | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | Net sales to TSMC (>=10% customer), FY2024, as first reported in the 83rd report
+  A4-006  [F] | 87,734                                 | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | Net sales to the Samsung Group (>=10% customer), FY2024, as first reported in the 83rd rep
+  A4-007  [F] | 57,725                                 | JPY million        | FY2023                   | Apr 2023-Mar 2024                            | Net sales to the Samsung Group (only customer group >=10%), FY2023
+  A4-008  [F] |                                        |                    | FY2024                   | Apr 2024-Mar 2025                            | Customer groups >=10% of net sales in FY2024 were TSMC and the Samsung Group (NVIDIA not n
+  A4-339  [I] | 21.6                                   | %                  | FY2025                   | Apr 2025-Mar 2026                            | NVIDIA Group share of consolidated net sales, FY2025
+  A4-340  [I] | 11.1                                   | %                  | FY2025                   | Apr 2025-Mar 2026                            | TSMC share of consolidated net sales, FY2025
+  A4-341  [I] | 32.7                                   | %                  | FY2025                   | Apr 2025-Mar 2026                            | Two named >=10% customer groups (NVIDIA Group + TSMC) together, share of net sales, FY2025
+  A4-342  [I] | 12.3                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | TSMC share of consolidated net sales, FY2024
+  A4-343  [I] | 11.3                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | Samsung Group share of consolidated net sales, FY2024
+  A4-344  [I] | 23.6                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | Two named >=10% customer groups (TSMC + Samsung) together, FY2024
+  A4-345  [I] | 11.9                                   | %                  | FY2023                   | Apr 2023-Mar 2024                            | Samsung Group share of consolidated net sales, FY2023
+  A4-348  [I] | <77,971                                | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | NVIDIA Group sales in FY2024 were below 10% of FY2024 net sales (it is not named among >=1
+  A4-349  [I] | +29.9                                  | % YoY              | FY2025                   | Apr 2025-Mar 2026                            | Net sales to TSMC, FY2025 vs FY2024
+  A4-404  [I] |                                        |                    | FY2024 Q4-FY2026 Q3      | Jan 2025-Nov 2026                            | The 2025-2026 BIS rules read mainly regulate chips, data centres, foundries, OSATs and aff
+  A4-406  [F] | 228,273                                | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | Net sales to NVIDIA International, Inc. (single counterparty, >=10% of net sales), FY2025
+  A4-407  [F] | 20.2                                   | %                  | FY2025                   | Apr 2025-Mar 2026                            | NVIDIA International, Inc. share of total net sales, FY2025 (company-printed)
+  A4-408  [F] | 11.1                                   | %                  | FY2025                   | Apr 2025-Mar 2026                            | TSMC share of total net sales, FY2025 (company-printed)
+  A4-409  [F] | 12.3                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | TSMC share of total net sales, FY2024 (company-printed, comparative in 84th report)
+  A4-410  [F] | 82,795                                 | JPY million        | FY2024                   | Apr 2024-Mar 2025                            | Net sales to Samsung Electronics Co., Ltd. (single counterparty), FY2024
+  A4-411  [F] | 10.6                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | Samsung Electronics Co., Ltd. share of total net sales, FY2024 (company-printed)
+  A4-412  [F] | 55,325                                 | JPY million        | FY2023                   | Apr 2023-Mar 2024                            | Net sales to Samsung Electronics Co., Ltd. (single counterparty), FY2023
+  A4-413  [F] | 11.4                                   | %                  | FY2023                   | Apr 2023-Mar 2024                            | Samsung Electronics Co., Ltd. share of total net sales, FY2023 (company-printed)
+  A4-434  [I] | 15,462                                 | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | NVIDIA Group (note 6(6)) less NVIDIA International, Inc. (Item 2 table): FY2025 net sales 
+  A4-435  [I] | 0                                      | mismatches of 5    | FY2025                   | Apr 2025-Mar 2026                            | Company-printed single-counterparty shares (NVIDIA International 20.2%, TSMC 11.1% and 12.
+  TH-164  [F] |                                        | statement          | FY2025 Q3                | Oct-Dec 2025 (24 Dec 2025)                   | TSMC Excellent Performance Award (Nov 2025, reported by Advantest) for flexibility in expa
+  TH-165  [C] |                                        | statement          | n/a (Micron statement)   | Jul-Sep 2026 (stated 30 Sep 2026)            | Micron (30 Sep 2026): says it has completed agreements for the vast majority of its CY2027
+  CL-068  [F] | 243,735; 124,922                       | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | FY2025 net sales to the NVIDIA Group and TSMC (each above 10% of net sales)
+  CL-069  [F] | 228,273; 20.2                          | JPY million; %     | FY2025                   | Apr 2025-Mar 2026                            | FY2025 sales to NVIDIA International, Inc. (single counterparty) 228,273, 20.2% of total
+  CL-119  [I] | 21.6; 11.1; 32.7; ~17                  | % of net sales     | FY2025                   | Apr 2025-Mar 2026                            | FY2025 customer concentration: NVIDIA Group 21.6% and TSMC 11.1% of net sales (together 32
+
+-- Inventories (balance): 27 row(s)
+  A2-032  [F] | 209,707                                | JPY million        | FY2024 end               | 31 Mar 2025                                  | Total inventories (consolidated balance sheet)
+  A2-033  [F] | 209,274                                | JPY million        | FY2025 Q1 end            | 30 Jun 2025                                  | Total inventories (consolidated balance sheet)
+  A2-034  [F] | 210,038                                | JPY million        | FY2025 Q2 end            | 30 Sep 2025                                  | Total inventories (consolidated balance sheet)
+  A2-035  [F] | 222,464                                | JPY million        | FY2025 Q3 end            | 31 Dec 2025                                  | Total inventories (consolidated balance sheet)
+  A2-036  [F] | 231,718                                | JPY million        | FY2025 end               | 31 Mar 2026                                  | Total inventories (consolidated balance sheet)
+  A2-037  [F] | 273,654                                | JPY million        | FY2026 Q1 end            | 30 Jun 2026                                  | Total inventories (consolidated balance sheet)
+  A2-038  [F] | 352,426                                | JPY million        | FY2026 Q2 end            | 30 Sep 2026                                  | Total inventories (consolidated balance sheet)
+  A2-039  [F] | 23,979                                 | JPY million        | FY2023 end               | 31 Mar 2024                                  | Inventory component: Finished goods
+  A2-040  [F] | 38,872                                 | JPY million        | FY2023 end               | 31 Mar 2024                                  | Inventory component: Work in process
+  A2-041  [F] | 141,538                                | JPY million        | FY2023 end               | 31 Mar 2024                                  | Inventory component: Raw materials and supplies
+  A2-042  [F] | 27,730                                 | JPY million        | FY2024 end               | 31 Mar 2025                                  | Inventory component: Finished goods
+  A2-043  [F] | 53,225                                 | JPY million        | FY2024 end               | 31 Mar 2025                                  | Inventory component: Work in process
+  A2-044  [F] | 128,752                                | JPY million        | FY2024 end               | 31 Mar 2025                                  | Inventory component: Raw materials and supplies
+  A2-045  [F] | 35,244                                 | JPY million        | FY2025 end               | 31 Mar 2026                                  | Inventory component: Finished goods
+  A2-046  [F] | 69,240                                 | JPY million        | FY2025 end               | 31 Mar 2026                                  | Inventory component: Work in process
+  A2-047  [F] | 127,234                                | JPY million        | FY2025 end               | 31 Mar 2026                                  | Inventory component: Raw materials and supplies
+  A2-116  [I] | +67.8                                  | %                  | FY2026 Q2 end            | 30 Sep 2026                                  | Inventories YoY change, 30 Sep 2025 to 30 Sep 2026
+  A2-117  [I] | +120,708                               | JPY million        | FY2026 1H                | Apr-Sep 2026                                 | Inventories increase in 1H FY2026 (31 Mar 2026 to 30 Sep 2026)
+  A2-118  [I] | 61.4                                   | %                  | FY2024 end               | 31 Mar 2025                                  | Raw materials and supplies share of total inventories
+  A2-119  [I] | 54.9                                   | %                  | FY2025 end               | 31 Mar 2026                                  | Raw materials and supplies share of total inventories
+  A2-177  [F] | 204,389                                | JPY million        | FY2023 end               | 31 Mar 2024                                  | Total inventories (consolidated balance sheet)
+  A2-178  [I] | 69.2                                   | %                  | FY2023 end               | 31 Mar 2024                                  | Raw materials and supplies share of total inventories
+  A2-181  [F] | -119,541                               | JPY million        | FY2026 1H                | Apr-Sep 2026                                 | Cash-flow statement: (increase) decrease in inventories, 6M YTD (negative = increase)
+  A2-182  [F] | 120.7                                  | JPY billion        | FY2026 1H                | Apr-Sep 2026                                 | Company text: inventories increased JPY 120.7 bn from 31 Mar 2026 to 30 Sep 2026
+  A2-183  [F] | approximately 20                       | % of total assets  | FY2025 end               | 31 Mar 2026                                  | Auditor key audit matter: inventories of JPY 231,718 m are about 20% of total assets at 31
+  CL-088  [F] | 231,718; 352,426                       | JPY million        | FY2025 end; FY2026 Q2 en | 31 Mar 2026; 30 Sep 2026                     | Inventories at 31 Mar 2026 and 30 Sep 2026
+  CL-120  [I] | 120,708; 52.1                          | JPY million; %     | FY2026 1H                | Apr-Sep 2026                                 | Inventories rose JPY 120,708m (+52.1%) between 31 Mar 2026 and 30 Sep 2026
+
+-- China share: 27 row(s)
+  A4-312  [F] | 19                                     | %                  | FY2026 Q2                | Jul-Sep 2026 (29 Jul 2026)                   | Management (Jul 2026): China accounts for approximately 19% of total sales and has been ar
+  A4-313  [C] | 80-85                                  | %                  | FY2026 Q2                | Jul-Sep 2026 (29 Jul 2026)                   | Management (Jul 2026): China sales mix approx. 80-85% SoC testers, approx. 15% memory test
+  A4-314  [C] | 20                                     | %                  | FY2026 Q2                | Jul-Sep 2026 (29 Jul 2026)                   | Management (Jul 2026): until new China fabs start around 2028-2029, China sales expected a
+  A4-350  [I] | 23.7                                   | %                  | FY2024 Q3                | Oct-Dec 2024                                 | China share of quarterly sales (ship-to region), FY2024 Q3
+  A4-351  [I] | 19.2                                   | %                  | FY2024 Q4                | Jan-Mar 2025                                 | China share of quarterly sales (ship-to region), FY2024 Q4
+  A4-352  [I] | 14.8                                   | %                  | FY2025 Q1                | Apr-Jun 2025                                 | China share of quarterly sales (ship-to region), FY2025 Q1
+  A4-353  [I] | 19.8                                   | %                  | FY2025 Q2                | Jul-Sep 2025                                 | China share of quarterly sales (ship-to region), FY2025 Q2
+  A4-354  [I] | 23.9                                   | %                  | FY2025 Q3                | Oct-Dec 2025                                 | China share of quarterly sales (ship-to region), FY2025 Q3
+  A4-355  [I] | 17.3                                   | %                  | FY2025 Q4                | Jan-Mar 2026                                 | China share of quarterly sales (ship-to region), FY2025 Q4
+  A4-356  [I] | 18.9                                   | %                  | FY2026 Q1                | Apr-Jun 2026                                 | China share of quarterly sales (ship-to region), FY2026 Q1
+  A4-357  [I] | 18.9                                   | %                  | FY2026 Q2                | Jul-Sep 2026                                 | China share of quarterly sales (ship-to region), FY2026 Q2
+  A4-366  [I] | +26.3                                  | % YoY              | FY2025 Q3                | Oct-Dec 2025                                 | China quarterly sales (ship-to) YoY, FY2025 Q3 vs FY2024 Q3
+  A4-367  [I] | +27.4                                  | % YoY              | FY2025 Q4                | Jan-Mar 2026                                 | China quarterly sales (ship-to) YoY, FY2025 Q4 vs FY2024 Q4
+  A4-368  [I] | +77.9                                  | % YoY              | FY2026 Q1                | Apr-Jun 2026                                 | China quarterly sales (ship-to) YoY, FY2026 Q1 vs FY2025 Q1
+  A4-369  [I] | +72.9                                  | % YoY              | FY2026 Q2                | Jul-Sep 2026                                 | China quarterly sales (ship-to) YoY, FY2026 Q2 vs FY2025 Q2
+  A4-370  [I] | 19.5                                   | %                  | LTM                      | Oct 2025-Sep 2026                            | China share of sales, last four quarters (FY2025 Q3-FY2026 Q2), ship-to
+  A4-373  [I] | 18.9                                   | %                  | FY2025                   | Apr 2025-Mar 2026                            | China share of net sales (customer location, annual securities report), FY2025
+  A4-377  [I] | 22.5                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | China share of net sales (customer location, annual securities report), FY2024
+  A4-381  [I] | 32.3                                   | %                  | FY2023                   | Apr 2023-Mar 2024                            | China share of net sales (customer location), FY2023
+  A4-382  [I] | +21.8                                  | % YoY              | FY2025                   | Apr 2025-Mar 2026                            | China net sales (customer location) FY2025 vs FY2024
+  A4-432  [I] | +50.2                                  | % YoY              | LTM FY2025 Q3-FY2026 Q2  | Oct 2025-Sep 2026                            | China sales (ship-to), last four quarters vs prior four quarters: Oct 2025-Sep 2026 JPY 28
+  CL-058  [S] | 80; 15                                 | %                  | n/a (calendar year)      | CY2026 (published 5 Oct 2026)                | TrendForce: imported equipment is over 80% of China's back-end memory test installed base;
+  CL-060  [C] | approximately 19                       | %                  | FY2026 Q1                | Apr-Jun 2026 (stated 29 Jul 2026)            | Management (Jul 2026): China is about 19% of total sales, relatively consistent around 20%
+  CL-061  [C] | 20% or lower                           | % of sales         | n/a (calendar year)      | to CY2028-CY2029 (stated 29 Jul 2026)        | Management (Jul 2026): until new China fabs (2028-2029), China sales expected around the c
+  CL-062  [S] | 20-25                                  | %                  | FY2025 Q3                | Oct-Dec 2025 (published 30 Jan 2026)         | RCR Wireless quoting CEO (Jan 2026): China business 'quite healthy around 20%-25% of the o
+  CL-118  [I] | 23.9; 17.3; 18.9; 18.9; 72.9; 19.5     | %                  | FY2025 Q3-FY2026 Q2      | Oct 2025-Sep 2026                            | China ship-to share of sales: 23.9% (FY25 Q3), 17.3% (FY25 Q4), 18.9% (FY26 Q1), 18.9% (FY
+  CL-132  [C] | 20-25                                  | % of revenue       | FY2025 Q3                | Oct-Dec 2025 (stated 28 Jan 2026)            | Management (Jan 2026): China business 'quite healthy', around 20% to 25% of overall revenu
+
+-- FY2026 guidance (sales / OI / NI / OPM / GM): 39 row(s)
+  A1-297  [C] | 90%                                    | % of SoC Test Syst | FY2026 (forecast)        | Apr 2026-Mar 2027                            | Forecast share of SoC Test Systems sales from 'Computing / Communications', FY2026e as of 
+  A2-026  [C] | approximately 20%                      | %                  | FY2026 2H (forecast) vs  | Oct 2026-Mar 2027 vs Apr-Sep 2026 (stated 28 | Sales expected to grow about 20% from 1H to 2H FY2026
+  A2-027  [C] | 1,017.8                                | JPY billion        | FY2026 2H (forecast)     | Oct 2026-Mar 2027 (stated 28 Oct 2026)       | FY2026 2H net sales forecast (company forecast, Oct 2026)
+  A2-191  [I] | +20.4                                  | %                  | FY2026 2H (forecast) vs  | Oct 2026-Mar 2027 vs Apr-Sep 2026            | Company 2H FY2026 sales forecast vs reported 1H FY2026 sales (checks the 'about 20%' remar
+  A3-010  [C] | 150                                    | JPY per USD        | FY2026 2H                | Oct 2026-Mar 2027                            | FY2026 forecast FX assumption for 2H: 1 USD = 150 JPY, 1 EUR = 170 JPY
+  A3-094  [C] | 1,420,000                              | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 initial full-year forecast (2026-04-27): net sales
+  A3-095  [C] | 627,500                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 initial full-year forecast (2026-04-27): operating income
+  A3-096  [C] | 629,000                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 initial full-year forecast (2026-04-27): income before income taxes
+  A3-097  [C] | 465,500                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 initial full-year forecast (2026-04-27): net income
+  A3-098  [C] | 641.61                                 | JPY                | FY2026                   | Apr 2026-Mar 2027                            | FY2026 initial full-year forecast (2026-04-27): basic EPS
+  A3-099  [C] | 1,714,000                              | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q1 release (2026-07-29): net sales
+  A3-100  [C] | 846,000                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q1 release (2026-07-29): operating income
+  A3-101  [C] | 891,000                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q1 release (2026-07-29): income before income taxes
+  A3-102  [C] | 660,000                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q1 release (2026-07-29): net income
+  A3-103  [C] | 911.64                                 | JPY                | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q1 release (2026-07-29): basic EPS
+  A3-104  [C] | 1,863,000                              | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q2 release (2026-10-28), current as of 2026-11-21: net sales
+  A3-105  [C] | 967,000                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q2 release (2026-10-28), current as of 2026-11-21: operating
+  A3-106  [C] | 1,021,500                              | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q2 release (2026-10-28), current as of 2026-11-21: income be
+  A3-107  [C] | 741,500                                | JPY million        | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q2 release (2026-10-28), current as of 2026-11-21: net incom
+  A3-108  [C] | 1,027.08                               | JPY                | FY2026                   | Apr 2026-Mar 2027                            | FY2026 forecast revised up at Q2 release (2026-10-28), current as of 2026-11-21: basic EPS
+  A3-110  [C] | 50                                     | %                  | FY2026 2H                | Oct 2026-Mar 2027                            | Management (Oct 2026): FY2026 2H operating margin expected to exceed 50%, about 3 points a
+  A3-111  [C] | 20                                     | %                  | FY2026 2H                | Oct 2026-Mar 2027                            | Management (Oct 2026): sales expected to grow approx. 20% from 1H to 2H FY2026
+  A3-112  [C] | 68                                     | %                  | FY2026                   | Apr 2026-Mar 2027                            | Management (Oct 2026): FY2026 gross margin expected at approximately 68%
+  A3-150  [C] | 1,017.8                                | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: net sales
+  A3-151  [C] | 510.2                                  | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: operating income
+  A3-152  [C] | 373.4                                  | JPY billion        | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: net income
+  A3-153  [C] | 517.23                                 | JPY                | FY2026 2H                | Oct 2026-Mar 2027                            | 2H FY2026 forecast given at Q2 release (2026-10-28), outstanding: basic EPS
+  A3-279  [I] | +31.2                                  | %                  | FY2026                   | Apr 2026-Mar 2027                            | FY2026 guidance raised twice: Jul 2026 sales +20.7%, OI +34.8%; Oct 2026 sales +8.7%, OI +
+  A3-280  [I] | 51.9                                   | %                  | FY2026                   | Apr 2026-Mar 2027                            | Implied FY2026 operating margin by guidance version: 44.2% (Apr), 49.4% (Jul), 51.9% (Oct 
+  A3-281  [I] | +20.4                                  | %                  | FY2026 2H                | Oct 2026-Mar 2027                            | FY2026 1H actual = 45.4% of current FY sales guidance (OI 47.2%); implied 2H sales 1,017,8
+  A3-282  [I] | 1,075                                  | JPY million        | FY2026 2H                | Oct 2026-Mar 2027                            | FY2026 guidance implies about 1,075 million of net financial items (IBT minus OI) in 2H vs
+  A3-302  [I] | 1,060.3                                | JPY billion        | FY2026                   | Apr 2026-Mar 2027                            | The Oct-2025 revised MTP3 ranges imply FY2026 sales of about 775-1,060 bn (simple-mean ass
+  TH-131  [C] | 1,375.0                                | JPY billion        | FY2026 (forecast)        | Apr 2026-Mar 2027                            | SoC Test Systems sales forecast FY2026 (Oct 2026)
+  TH-134  [C] | 1,863.0                                | JPY billion        | FY2026 (forecast)        | Apr 2026-Mar 2027                            | Net sales forecast FY2026 (Oct 2026)
+  CL-033  [C] | 1,863,000; 967,000                     | JPY million        | FY2026                   | Apr 2026-Mar 2027 (forecast of 28 Oct 2026)  | FY2026 forecast (Oct 2026): net sales 1,863,000; operating income 967,000
+  CL-034  [C] | 51.9                                   | %                  | FY2026                   | Apr 2026-Mar 2027 (forecast of 28 Oct 2026)  | FY2026 operating margin forecast 51.9%
+  CL-035  [C] | 47.3                                   | %                  | FY2026 2H                | Oct 2026-Mar 2027 (forecast of 28 Oct 2026)  | July forecast had assumed a 2H FY2026 operating margin of 47.3%; October forecast about 3 
+  CL-036  [C] | 149.0                                  | JPY billion        | FY2026                   | Apr 2026-Mar 2027 (forecast of 28 Oct 2026)  | FY2026 sales forecast raised by JPY 149.0bn from the July forecast
+  CL-117  [I] | 1,017,800; 20.4; 510,191; 50.1; 54.0   | JPY million; %     | FY2026 2H                | Oct 2026-Mar 2027                            | Implied 2H FY2026 (Oct 2026-Mar 2027) from the Oct-2026 forecast: sales 1,017,800 (+20.4% 
+
+-- Buybacks / share repurchases: 14 row(s)
+  A5-094  [F] | 50                                     | JPY billion        | FY2024 Q3                | Oct-Dec 2024 (resolved 30 Oct 2024; window 1 | Buyback resolved 30 Oct 2024: up to 9m shares / JPY 50bn, 1 Nov 2024-26 Feb 2025
+  A5-095  [F] | 49,999,998,563                         | JPY                | FY2024                   | Apr 2024-Mar 2025 (executed Nov 2024-28 Jan  | Oct-2024 buyback completed 28 Jan 2025: 5,711,000 shares for JPY 49,999,998,563
+  A5-096  [F] | 70                                     | JPY billion        | FY2025 Q1                | Apr-Jun 2025 (resolved 25 Apr 2025; window 7 | Buyback resolved 25 Apr 2025: up to 19m shares / JPY 70bn, 7 May-22 Sep 2025
+  A5-097  [F] | 69,999,937,500                         | JPY                | FY2025 1H                | Apr-Sep 2025 (executed 7 May-22 Sep 2025)    | Apr-2025 buyback completed 22 Sep 2025: 6,643,900 shares for JPY 69,999,937,500
+  A5-098  [F] | 150                                    | JPY billion        | FY2025 Q3                | Oct-Dec 2025 (resolved 28 Oct 2025; window 4 | Buyback resolved 28 Oct 2025: up to 18m shares / JPY 150bn, 4 Nov 2025-28 Oct 2026
+  A5-102  [F] | 280                                    | JPY billion        | FY2026 Q3                | Oct-Dec 2026 (resolved 28 Oct 2026; window 2 | Buyback resolved 28 Oct 2026: up to 11m shares (1.5%) / JPY 280bn, 29 Oct 2026-24 Mar 2027
+  A5-109  [F] | 40,198                                 | shares             | FY2026 Q3                | Oct-Dec 2026 (30 Oct 2026)                   | E_Info_20261030 is a restricted-stock disposal notice (40,198 treasury shares), not a buyb
+  A5-210  [I] | 114,228.3                              | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | Buybacks executed in FY2025 (Apr-2025 programme 69,999.9 + Oct-2025 programme 44,228.4)
+  A5-212  [I] | 48.8                                   | %                  | FY2024                   | Apr 2024-Mar 2025                            | Total return ratio FY2024 (dividends by record date 28,721 + buybacks 50,000) / net income
+  A5-225  [F] | 42                                     | %                  | FY2025                   | Apr 2025-Mar 2026                            | Company-printed total return ratio: FY2025 42%, FY2024 49% (definition: total dividends + 
+  A5-226  [F] | 114.2                                  | JPY billion        | FY2025                   | Apr 2025-Mar 2026                            | Company-printed share repurchase amount: FY2025 JPY 114.2bn, FY2024 JPY 50.0bn
+  CL-099  [F] | 11 million; 280; March 24, 2027        | shares; JPY billio | FY2026 2H                | Oct 2026-Mar 2027 (29 Oct 2026-24 Mar 2027)  | Share repurchase authorised 28 Oct 2026: up to 11m shares / JPY 280bn, period 29 Oct 2026 
+  CL-100  [F] | 420,900; 14,563,326,000                | shares; JPY        | FY2026 Q3                | Oct-Dec 2026 (29-31 Oct 2026)                | Repurchased to 31 Oct 2026: 420,900 shares for JPY 14,563,326,000
+  CL-124  [I] | 265,436,674,000; 10,579,100; 5.2       | JPY; shares; %     | FY2026 2H                | Oct 2026-Mar 2027 (headroom after 31 Oct 202 | Buyback headroom after 31 Oct 2026: JPY 265,436,674,000 and 10,579,100 shares, to be used 
+
+-- One-off SG&A: 8 row(s)
+  A1-185  [F] | 26,134                                 | JPY million        | FY2025                   | Apr 2025-Mar 2026                            | Parent-only (non-consolidated, J-GAAP) statement of operations, note *1 'major items' of S
+  A1-311  [C] | not disclosed                          | JPY                | FY2025 Q4                | Jan-Mar 2026                                 | Management says Q4 FY2025 SG&A included one-off expenses related to business operations (a
+  A1-475  [I] | 155,059                                | JPY million        | FY2025 Q4                | Jan-Mar 2026                                 | Income before tax FY2025 Q4 excluding call-option gain (reported 172,371); margin 47.3% vs
+  A1-503  [I] | +79.2                                  | %                  | FY2025 Q4                | Jan-Mar 2026                                 | Operating income YoY, FY2025 Q4 vs FY2024 Q4 excluding the FY2024 Q4 impairment (153,114 v
+  A3-093  [F] |                                        | text               | FY2025 Q2                | Jul-Sep 2025                                 | Management: Q2 FY2025 SG&A included a one time charge related to a growth investment (amou
+  A5-135  [F] | 746                                    | JPY million        | FY2021                   | Apr 2021-Mar 2022                            | R&D Altanova acquisition-related expense (in SG&A FY2021)
+  A5-227  [C] |                                        | text               | FY2025 Q4                | Jan-Mar 2026                                 | FY2025 Q4 SG&A included one-off expenses related to business operations; no amount given
+  A6-245  [C] |                                        |                    | FY2019 Q1                | Apr-Jun 2019                                 | Management explanation, FY2019 Q1: SG&A up on reinforced customer support while gross marg
+
+-- Inventory write-down reversal: 10 row(s)
+  A1-315  [C] | not disclosed                          | JPY                | FY2026 Q1                | Apr-Jun 2026                                 | Management: FY2026 Q1 margins benefited from a reversal of inventory obsolescence, not exp
+  A1-316  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  A2-052  [C] |                                        | text               | FY2026 Q1                | Apr-Jun 2026 (stated 29 Jul 2026)            | FY2026 Q1 margins benefited from a reversal of inventory obsolescence that management says
+  A2-180  [C] |                                        | text               | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | 1H FY2026 operating margin included a one-time benefit from a reversal of inventory write-
+  A3-229  [F] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  A3-290  [I] | 59.5                                   | %                  | FY2026 Q1                | Apr-Jun 2026                                 | FY2026 Q1 slot (Apr-Jun 2026): only initial FY guidance (1,420.0 bn sales) outstanding; FY
+  A5-229  [C] |                                        | text               | FY2026 1H                | Apr-Sep 2026                                 | Management: 1H FY2026 operating margin had a one-time benefit from a reversal of inventory
+  A6-311  [I] | 477,727; 266,819; 55.9                 | JPY million; %     | FY2026 Q2                | Jul-Sep 2026                                 | Latest quarter FY2026 Q2: single-quarter net sales, operating income and margin (reference
+  CL-073  [C] | not disclosed                          | JPY                | FY2026 1H                | Apr-Sep 2026 (stated 28 Oct 2026)            | Management: 1H FY2026 operating margin had a one-time benefit from reversal of inventory w
+  CL-089  [F] |                                        |                    | FY2025                   | Apr 2025-Mar 2026 (risk factors as of FY2025 | Advantest risk disclosure: excess inventory or obsolescence from mismatch between demand a

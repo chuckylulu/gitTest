@@ -40,3 +40,14 @@ d, lo, hi = MEM_FY25 * DRAM_FY25 / 100, MEM_FY25 * (DRAM_FY25 - 2.5) / 100, MEM_
 print(f"  FY2025: memory {MEM_FY25} x {DRAM_FY25}% = {d:.1f} JPYbn (range {lo:.1f}-{hi:.1f}); / net sales {SALES_FY25} = "
       f"{100*d/SALES_FY25:.1f}% (range {100*lo/SALES_FY25:.1f}-{100*hi/SALES_FY25:.1f}%)")
 print(f"  Memory test systems / net sales FY2025 = {100*MEM_FY25/SALES_FY25:.1f}%")
+
+# ---- fix round 2 (2026-11-21): DRAM proxy for FY2024 and the FY2026 forecast ----
+MEM_FY24, DRAM_FY24, SALES_FY24 = 157.7, 95, 779.7     # TH-203 (slide p.16), TH-059 (FY24 95%), TH-135 (JPY bn)
+MEM_FY26E, DRAM_FY26E, SALES_FY26E = 229.0, 85, 1863.0  # TH-208 [C] memory forecast, TH-207 [C] DRAM 85% FY26e, TH-134 [C]
+for lbl, mem, dr, sal in [("FY2024 (Apr 2024-Mar 2025)", MEM_FY24, DRAM_FY24, SALES_FY24),
+                          ("FY2026e (Apr 2026-Mar 2027, forecasts of 2026-10-28)", MEM_FY26E, DRAM_FY26E, SALES_FY26E)]:
+    d, lo, hi = mem * dr / 100, mem * (dr - 2.5) / 100, mem * (dr + 2.5) / 100
+    print(f"  {lbl}: memory {mem} x {dr}% = {d:.1f} JPYbn (range {lo:.1f}-{hi:.1f}); / net sales {sal} = "
+          f"{100*d/sal:.1f}% (range {100*lo/sal:.1f}-{100*hi/sal:.1f}%)")
+print("  Cross-check FY2024 in JPY million (A1-341 memory 157,676; A1-002 net sales 779,707): "
+      f"{100 * 157676 * 0.95 / 779707:.1f}%")

@@ -180,7 +180,7 @@ NOT RETRIEVED (tried: Firecrawl paper search and WebSearch; IEEE Xplore is paywa
 | SK hynix, Hot Chips 28 tutorial (2016, conference tutorial, not peer-reviewed) | HBM carries IEEE1500 test/repair features for test after SiP assembly. The flow has hot/cold test, repair and a KGSD speed test | [F] TH-163 |
 | TSMC award (Advantest release, 2025-12-24) | Recognised for flexibility in expanding production capacity | [F] TH-164 |
 | Micron, Fiscal Q4 2026 remarks (2026-09-30) | Says agreements are done for the vast majority of its CY2027 HBM bit supply; nothing on test | [C] TH-165 |
-| Teradyne Q3 2026 (quarter ended 27 Sep 2026) | Revenue: SoC USD 676 m, memory USD 301 m (a record; Teradyne attributes it to HBM/DRAM and NAND). The two plus IST USD 95 m equal the USD 1,072 m Semi Test revenue in the press release | [F] TH-166, TH-167 |
+| Teradyne Q3 2026 (quarter ended 27 Sep 2026) | Revenue: SoC USD 676 m, memory USD 301 m (a record) [F] TH-166, TH-167; Teradyne attributes the record to HBM/DRAM and NAND [C] TH-206 (split from TH-167 in fix round 1). The two plus IST USD 95 m equal the USD 1,072 m Semi Test revenue in the press release | as shown |
 | Teradyne | Test share of semiconductor capex rose from 6.4% (2025) to 8.1% (Jan-Aug 2026) | [C] TH-169 |
 | Teradyne | Claims higher share in HBM performance test. Says lower HBM stack heights raise that TAM | [C] TH-168 |
 | Teradyne | Dual-vendor progress: first hyperscaler in the mature phase (next ramp mid-2027); merchant GPU customer in fast follower (revenue 2027); second hyperscaler in fast follower (capacity buys 2H 2027); third in qualification. Mature-vendor share range 30-70% | [C] TH-170, TH-171, TH-172, TH-173 |

@@ -1,0 +1,342 @@
+statement rows relabelled: 333; by branch {'CY': 45, 'F': 144, 'M': 15, 'P': 58, 'Q': 58, 'T': 13, 'unchanged': 117}
+branch codes: CY calendar-year; P past -> statement quarter; Q present quarter; F forecast period; T third-party/undated -> statement quarter; M manual
+
+id | tag | branch | period_fiscal before -> after | period_calendar before -> after | note added
+A1-297 | [C] | F | FY2026 (forecast) -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A1-302 | [C] | Q | FY2025 Q4 -> FY2025 Q4 | Jan-Mar 2026 (28 Jan 2026) -> Jan-Mar 2026 (stated 28 Jan 2026) | 
+A1-303 | [C] | Q | FY2025 Q4 -> FY2025 Q4 | Jan-Mar 2026 (28 Jan 2026) -> Jan-Mar 2026 (stated 28 Jan 2026) | 
+A1-304 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 -> CY2025 (stated 28 Jan 2026) | 
+A1-305 | [C] | P | FY2025 -> FY2026 Q1 | Apr 2025-Mar 2026 -> Apr-Jun 2026 (stated 27 Apr 2026) | Statement refers to FY2025 (Apr 2025-Mar 2026).
+A1-310 | [C] | P | FY2025 Q4 -> FY2026 Q1 | Jan-Mar 2026 -> Apr-Jun 2026 (stated 27 Apr 2026) | Statement refers to FY2025 Q4 (Jan-Mar 2026).
+A1-311 | [C] | P | FY2025 Q4 -> FY2026 Q1 | Jan-Mar 2026 -> Apr-Jun 2026 (stated 27 Apr 2026) | Statement refers to FY2025 Q4 (Jan-Mar 2026).
+A1-315 | [C] | P | FY2026 Q1 -> FY2026 Q2 | Apr-Jun 2026 -> Jul-Sep 2026 (stated 29 Jul 2026) | Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A1-316 | [C] | P | FY2026 1H -> FY2026 Q3 | Apr-Sep 2026 -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 1H (Apr-Sep 2026).
+A1-317 | [C] | P | FY2025 Q1 -> FY2025 Q2 | Apr-Jun 2025 -> Jul-Sep 2025 (stated 29 Jul 2025) | Statement refers to FY2025 Q1 (Apr-Jun 2025).
+A1-318 | [C] | P | FY2024 Q4 -> FY2025 Q1 | Jan-Mar 2025 -> Apr-Jun 2025 (stated 25 Apr 2025) | Statement refers to FY2024 Q4 (Jan-Mar 2025).
+A1-350 | [C] | P | FY2026 Q2 -> FY2026 Q3 | Jul-Sep 2026 -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 Q2 (Jul-Sep 2026).
+A1-494 | [C] | Q | FY2026 Q1 -> FY2026 Q1 | Apr-Jun 2026 (26 Jun 2026) -> Apr-Jun 2026 (stated 26 Jun 2026) | 
+A1-495 | [C] | Q | FY2024 Q1 -> FY2024 Q1 | Apr-Jun 2024 (25 Jun 2024) -> Apr-Jun 2024 (stated 25 Jun 2024) | 
+A1-496 | [C] | F | FY2026 (forecast) -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A1-498 | [C] | P | FY2026 Q1 -> FY2026 Q2 | Apr-Jun 2026 -> Jul-Sep 2026 (stated 29 Jul 2026) | Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A2-001 | [F] | P | FY2021 Q4 -> FY2022 Q1 | Jan-Mar 2022 (stated 27 Apr 2022) -> Apr-Jun 2022 (stated 27 Apr 2022) | Statement refers to FY2021 Q4 (Jan-Mar 2022).
+A2-002 | [F] | P | FY2021 Q4 -> FY2022 Q1 | Jan-Mar 2022 (stated 27 Apr 2022) -> Apr-Jun 2022 (stated 27 Apr 2022) | Statement refers to FY2021 Q4 (Jan-Mar 2022).
+A2-013 | [C] | P | FY2025 Q1 -> FY2025 Q2 | Apr-Jun 2025 (stated 29 Jul 2025) -> Jul-Sep 2025 (stated 29 Jul 2025) | Statement refers to FY2025 Q1 (Apr-Jun 2025).
+A2-014 | [C] | F | FY2025 2H (outlook) -> FY2025 2H | Oct 2025-Mar 2026 (stated 29 Jul 2025) -> Oct 2025-Mar 2026 (stated 29 Jul 2025) | 
+A2-015 | [C] | P | FY2025 Q2 -> FY2025 Q3 | Jul-Sep 2025 (stated 28 Oct 2025) -> Oct-Dec 2025 (stated 28 Oct 2025) | Statement refers to FY2025 Q2 (Jul-Sep 2025).
+A2-016 | [C] | F | FY2025 2H (outlook) -> FY2025 2H | Oct 2025-Mar 2026 (stated 28 Oct 2025) -> Oct 2025-Mar 2026 (stated 28 Oct 2025) | 
+A2-017 | [C] | P | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 (stated 28 Jan 2026) -> Jan-Mar 2026 (stated 28 Jan 2026) | Statement refers to FY2025 Q3 (Oct-Dec 2025).
+A2-018 | [C] | P | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 (stated 28 Jan 2026) -> Jan-Mar 2026 (stated 28 Jan 2026) | Statement refers to FY2025 Q3 (Oct-Dec 2025).
+A2-019 | [C] | F | FY2025 2H (outlook) -> FY2025 2H | Oct 2025-Mar 2026 (stated 28 Jan 2026) -> Oct 2025-Mar 2026 (stated 28 Jan 2026) | 
+A2-022 | [C] | Q | FY2026 Q1 -> FY2026 Q1 | Apr-Jun 2026 (stated 27 Apr 2026; horizon at least 2-3 years) -> Apr-Jun 2026 (stated 27 Apr 2026) | Period detail moved from period_calendar: horizon at least 2-3 years.
+A2-024 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 (stated 29 Jul 2026; horizon this fiscal year into next) -> Jul-Sep 2026 (stated 29 Jul 2026) | Period detail moved from period_calendar: horizon this fiscal year into next.
+A2-025 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2027 (outlook stated 28 Oct 2026) -> CY2027 (stated 28 Oct 2026) | 
+A2-026 | [C] | F | FY2026 2H (forecast) vs FY2026 1H -> FY2026 2H | Oct 2026-Mar 2027 vs Apr-Sep 2026 (stated 28 Oct 2026) -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | Compared with FY2026 1H.
+A2-027 | [C] | F | FY2026 2H (forecast) -> FY2026 2H | Oct 2026-Mar 2027 (stated 28 Oct 2026) -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A2-028 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2027 (outlook stated 28 Oct 2026) -> CY2027 (stated 28 Oct 2026) | 
+A2-052 | [C] | P | FY2026 Q1 -> FY2026 Q2 | Apr-Jun 2026 (stated 29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A2-053 | [C] | P | FY2026 1H -> FY2026 Q3 | Apr-Sep 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 1H (Apr-Sep 2026).
+A2-054 | [C] | P | FY2026 Q1 -> FY2026 Q2 | Apr-Jun 2026 (stated 29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A2-057 | [C] | M | FY2026 Q3 -> FY2026-FY2028 | Oct-Dec 2026 (stated 11 Nov 2026; bonds issued Apr 2026) -> Apr 2026-Mar 2029 (stated 11 Nov 2026) | Period detail moved from period_calendar: bonds issued Apr 2026. Forecast period matched to A5-193 and the planned-use dates A5-072/A5-073 (by Mar 2029 / Mar 2027).
+A2-155 | [C] | Q | FY2026 Q1 -> FY2026 Q1 | Apr-Jun 2026 (stated in report filed 26 Jun 2026) -> Apr-Jun 2026 (stated 26 Jun 2026) | 
+A2-165 | [C] | F | FY2026 2H (outlook) -> FY2026 2H | Oct 2026-Mar 2027 (stated 28 Oct 2026) -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A2-166 | [C] | F | FY2026 2H (forecast, Q3 and Q4) -> FY2026 2H | Oct 2026-Mar 2027 (stated 28 Oct 2026) -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | Forecast covers Q3 and Q4.
+A2-173 | [F] | P | FY2025 Q2 -> FY2025 Q3 | Jul-Sep 2025 (stated 28 Oct 2025) -> Oct-Dec 2025 (stated 28 Oct 2025) | Statement refers to FY2025 Q2 (Jul-Sep 2025).
+A2-180 | [C] | P | FY2026 1H -> FY2026 Q3 | Apr-Sep 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 1H (Apr-Sep 2026).
+A2-187 | [C] | P | FY2022 1H -> FY2022 Q3 | Apr-Sep 2022 (stated 27 Oct 2022) -> Oct-Dec 2022 (stated 27 Oct 2022) | Statement refers to FY2022 1H (Apr-Sep 2022).
+A3-007 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-008 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-010 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-011 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-012 | [C] | F | FY2022 -> FY2022 | Apr 2022-Mar 2023 -> Apr 2022-Mar 2023 (stated 31 Jan 2023) | 
+A3-013 | [C] | F | FY2022 -> FY2022 | Apr 2022-Mar 2023 -> Apr 2022-Mar 2023 (stated 31 Jan 2023) | 
+A3-014 | [C] | F | FY2022 -> FY2022 | Apr 2022-Mar 2023 -> Apr 2022-Mar 2023 (stated 31 Jan 2023) | 
+A3-018 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 26 Apr 2023) | 
+A3-019 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 26 Apr 2023) | 
+A3-020 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 26 Apr 2023) | 
+A3-021 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 26 Apr 2023) | 
+A3-022 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 26 Jul 2023) | 
+A3-023 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-024 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-025 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-026 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-027 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-028 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Jan 2024) | 
+A3-029 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Jan 2024) | 
+A3-030 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Jan 2024) | 
+A3-031 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 31 Jan 2024) | 
+A3-040 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 26 Apr 2024) | 
+A3-041 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 26 Apr 2024) | 
+A3-042 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 26 Apr 2024) | 
+A3-043 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 26 Apr 2024) | 
+A3-044 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 31 Jul 2024) | 
+A3-045 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 31 Jul 2024) | 
+A3-046 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 31 Jul 2024) | 
+A3-047 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 31 Jul 2024) | 
+A3-048 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-049 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-050 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-051 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-052 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-053 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 29 Jan 2025) | 
+A3-054 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 29 Jan 2025) | 
+A3-055 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 29 Jan 2025) | 
+A3-056 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 29 Jan 2025) | 
+A3-057 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 29 Jan 2025) | 
+A3-066 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-067 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-068 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-069 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-070 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 25 Apr 2025) | 
+A3-071 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 29 Jul 2025) | 
+A3-072 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 29 Jul 2025) | 
+A3-073 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 29 Jul 2025) | 
+A3-074 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 29 Jul 2025) | 
+A3-075 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 29 Jul 2025) | 
+A3-076 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-077 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-078 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-079 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-080 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-081 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Jan 2026) | 
+A3-082 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Jan 2026) | 
+A3-083 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Jan 2026) | 
+A3-084 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Jan 2026) | 
+A3-085 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 -> Apr 2025-Mar 2026 (stated 28 Jan 2026) | 
+A3-093 | [C] | P | FY2025 Q2 -> FY2025 Q3 | Jul-Sep 2025 -> Oct-Dec 2025 (stated 28 Oct 2025) | Statement refers to FY2025 Q2 (Jul-Sep 2025).
+A3-094 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 27 Apr 2026) | 
+A3-095 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 27 Apr 2026) | 
+A3-096 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 27 Apr 2026) | 
+A3-097 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 27 Apr 2026) | 
+A3-098 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 27 Apr 2026) | 
+A3-099 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 29 Jul 2026) | 
+A3-100 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 29 Jul 2026) | 
+A3-101 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 29 Jul 2026) | 
+A3-102 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 29 Jul 2026) | 
+A3-103 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 29 Jul 2026) | 
+A3-104 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-105 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-106 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-107 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-108 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-110 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-111 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-112 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-113 | [C] | Q | FY2023 Q2 -> FY2023 Q2 | Jul-Sep 2023 -> Jul-Sep 2023 (stated 26 Jul 2023) | 
+A3-114 | [C] | Q | FY2023 Q2 -> FY2023 Q2 | Jul-Sep 2023 -> Jul-Sep 2023 (stated 26 Jul 2023) | 
+A3-115 | [C] | Q | FY2023 Q2 -> FY2023 Q2 | Jul-Sep 2023 -> Jul-Sep 2023 (stated 26 Jul 2023) | 
+A3-116 | [C] | F | FY2023 2H -> FY2023 2H | Oct 2023-Mar 2024 -> Oct 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-117 | [C] | F | FY2023 2H -> FY2023 2H | Oct 2023-Mar 2024 -> Oct 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-118 | [C] | F | FY2023 2H -> FY2023 2H | Oct 2023-Mar 2024 -> Oct 2023-Mar 2024 (stated 31 Oct 2023) | 
+A3-119 | [C] | Q | FY2023 Q4 -> FY2023 Q4 | Jan-Mar 2024 -> Jan-Mar 2024 (stated 31 Jan 2024) | 
+A3-120 | [C] | Q | FY2023 Q4 -> FY2023 Q4 | Jan-Mar 2024 -> Jan-Mar 2024 (stated 31 Jan 2024) | 
+A3-121 | [C] | Q | FY2023 Q4 -> FY2023 Q4 | Jan-Mar 2024 -> Jan-Mar 2024 (stated 31 Jan 2024) | 
+A3-122 | [C] | Q | FY2024 Q2 -> FY2024 Q2 | Jul-Sep 2024 -> Jul-Sep 2024 (stated 31 Jul 2024) | 
+A3-123 | [C] | Q | FY2024 Q2 -> FY2024 Q2 | Jul-Sep 2024 -> Jul-Sep 2024 (stated 31 Jul 2024) | 
+A3-124 | [C] | Q | FY2024 Q2 -> FY2024 Q2 | Jul-Sep 2024 -> Jul-Sep 2024 (stated 31 Jul 2024) | 
+A3-125 | [C] | F | FY2024 2H -> FY2024 2H | Oct 2024-Mar 2025 -> Oct 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-126 | [C] | F | FY2024 2H -> FY2024 2H | Oct 2024-Mar 2025 -> Oct 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-127 | [C] | F | FY2024 2H -> FY2024 2H | Oct 2024-Mar 2025 -> Oct 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-128 | [C] | F | FY2024 2H -> FY2024 2H | Oct 2024-Mar 2025 -> Oct 2024-Mar 2025 (stated 30 Oct 2024) | 
+A3-129 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 -> Jan-Mar 2025 (stated 29 Jan 2025) | 
+A3-130 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 -> Jan-Mar 2025 (stated 29 Jan 2025) | 
+A3-131 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 -> Jan-Mar 2025 (stated 29 Jan 2025) | 
+A3-132 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 -> Jan-Mar 2025 (stated 29 Jan 2025) | 
+A3-133 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 -> Jan-Mar 2025 (stated 29 Jan 2025) | 
+A3-134 | [C] | Q | FY2025 Q2 -> FY2025 Q2 | Jul-Sep 2025 -> Jul-Sep 2025 (stated 29 Jul 2025) | 
+A3-135 | [C] | Q | FY2025 Q2 -> FY2025 Q2 | Jul-Sep 2025 -> Jul-Sep 2025 (stated 29 Jul 2025) | 
+A3-136 | [C] | Q | FY2025 Q2 -> FY2025 Q2 | Jul-Sep 2025 -> Jul-Sep 2025 (stated 29 Jul 2025) | 
+A3-137 | [C] | Q | FY2025 Q2 -> FY2025 Q2 | Jul-Sep 2025 -> Jul-Sep 2025 (stated 29 Jul 2025) | 
+A3-138 | [C] | F | FY2025 2H -> FY2025 2H | Oct 2025-Mar 2026 -> Oct 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-139 | [C] | F | FY2025 2H -> FY2025 2H | Oct 2025-Mar 2026 -> Oct 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-140 | [C] | F | FY2025 2H -> FY2025 2H | Oct 2025-Mar 2026 -> Oct 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-141 | [C] | F | FY2025 2H -> FY2025 2H | Oct 2025-Mar 2026 -> Oct 2025-Mar 2026 (stated 28 Oct 2025) | 
+A3-142 | [C] | Q | FY2025 Q4 -> FY2025 Q4 | Jan-Mar 2026 -> Jan-Mar 2026 (stated 28 Jan 2026) | 
+A3-143 | [C] | Q | FY2025 Q4 -> FY2025 Q4 | Jan-Mar 2026 -> Jan-Mar 2026 (stated 28 Jan 2026) | 
+A3-144 | [C] | Q | FY2025 Q4 -> FY2025 Q4 | Jan-Mar 2026 -> Jan-Mar 2026 (stated 28 Jan 2026) | 
+A3-145 | [C] | Q | FY2025 Q4 -> FY2025 Q4 | Jan-Mar 2026 -> Jan-Mar 2026 (stated 28 Jan 2026) | 
+A3-146 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A3-147 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A3-148 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A3-149 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A3-150 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-151 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-152 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-153 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+A3-221 | [F] | P | FY2025 Q2 -> FY2025 Q3 | Jul-Sep 2025 -> Oct-Dec 2025 (stated 28 Oct 2025) | Statement refers to FY2025 Q2 (Jul-Sep 2025).
+A3-222 | [F] | P | FY2025 Q2 -> FY2025 Q3 | Jul-Sep 2025 -> Oct-Dec 2025 (stated 28 Oct 2025) | Statement refers to FY2025 Q2 (Jul-Sep 2025).
+A3-223 | [C] | P | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 -> Jan-Mar 2026 (stated 28 Jan 2026) | Statement refers to FY2025 Q3 (Oct-Dec 2025).
+A3-224 | [C] | P | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 -> Jan-Mar 2026 (stated 28 Jan 2026) | Statement refers to FY2025 Q3 (Oct-Dec 2025).
+A3-225 | [F] | P | FY2025 Q4 -> FY2026 Q1 | Jan-Mar 2026 -> Apr-Jun 2026 (stated 27 Apr 2026) | Statement refers to FY2025 Q4 (Jan-Mar 2026).
+A3-226 | [C] | P | FY2026 Q2 -> FY2026 Q3 | Jul-Sep 2026 -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 Q2 (Jul-Sep 2026).
+A3-229 | [C] | P | FY2026 1H -> FY2026 Q3 | Apr-Sep 2026 -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 1H (Apr-Sep 2026).
+A3-230 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 -> Apr 2024-Mar 2025 (stated 29 Jan 2025) | 
+A3-231 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 29 Jul 2026) | 
+A3-234 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A3-235 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A3-236 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A3-237 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A3-238 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A3-239 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A3-242 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+A3-243 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+A3-244 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+A3-245 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+A3-246 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+A3-247 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+A3-252 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 11 Nov 2026) | 
+A3-253 | [C] | F | FY2027 Q1 -> FY2027 Q1 | Apr-Jun 2027 (around May 2027; stated 28 Oct 2026) -> Apr-Jun 2027 (stated 28 Oct 2026) | Period detail moved from period_calendar: around May 2027.
+A3-312 | [C] | F | FY2022 -> FY2022 | Apr 2022-Mar 2023 -> Apr 2022-Mar 2023 (stated 31 Jan 2023) | 
+A3-314 | [C] | F | FY2023 -> FY2023 | Apr 2023-Mar 2024 -> Apr 2023-Mar 2024 (stated 26 Jul 2023) | 
+A4-305 | [C] | Q | FY2022 Q3 -> FY2022 Q3 | Oct-Dec 2022 (27 Oct 2022) -> Oct-Dec 2022 (stated 27 Oct 2022) | 
+A4-306 | [C] | Q | FY2022 Q3 -> FY2022 Q3 | Oct-Dec 2022 (27 Oct 2022) -> Oct-Dec 2022 (stated 27 Oct 2022) | 
+A4-307 | [C] | Q | FY2024 Q1 -> FY2024 Q1 | Apr-Jun 2024 (26 Apr 2024) -> Apr-Jun 2024 (stated 26 Apr 2024) | 
+A4-308 | [C] | Q | FY2024 Q1 -> FY2024 Q1 | Apr-Jun 2024 (26 Apr 2024) -> Apr-Jun 2024 (stated 26 Apr 2024) | 
+A4-309 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 (29 Jan 2025) -> Jan-Mar 2025 (stated 29 Jan 2025) | 
+A4-310 | [C] | Q | FY2025 Q1 -> FY2025 Q1 | Apr-Jun 2025 (25 Apr 2025) -> Apr-Jun 2025 (stated 25 Apr 2025) | 
+A4-311 | [C] | Q | FY2026 Q1 -> FY2026 Q1 | Apr-Jun 2026 (27 Apr 2026) -> Apr-Jun 2026 (stated 27 Apr 2026) | 
+A4-312 | [F] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 (29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A4-313 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 (29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A4-314 | [C] | M | FY2026 Q2 -> n/a (calendar year) | Jul-Sep 2026 (29 Jul 2026) -> to CY2028-CY2029 (stated 29 Jul 2026) | Forecast horizon matched to CL-061 (same Q&A answer).
+A4-318 | [C] | Q | FY2026 Q2 -> FY2026 Q2 | Jul-Sep 2026 (29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | 
+A4-423 | [C] | Q | FY2019 Q2 -> FY2019 Q2 | Jul-Sep 2019 (25 Jul 2019) -> Jul-Sep 2019 (stated 25 Jul 2019) | 
+A4-424 | [C] | Q | FY2023 Q2 -> FY2023 Q2 | Jul-Sep 2023 (26 Jul 2023) -> Jul-Sep 2023 (stated 26 Jul 2023) | 
+A5-056 | [C] | P | FY2025 end -> FY2026 Q1 | 31 Mar 2026 -> Apr-Jun 2026 (stated 26 Jun 2026) | Statement refers to FY2025 end (31 Mar 2026).
+A5-072 | [C] | F | FY2026-FY2028 -> FY2026-FY2028 | Apr 2026-Mar 2029 -> Apr 2026-Mar 2029 (stated 26 Jun 2026) | 
+A5-073 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 26 Jun 2026) | 
+A5-074 | [C] | F | FY2026-FY2027 -> FY2026-FY2027 | Apr 2026-Mar 2028 -> Apr 2026-Mar 2028 (stated 26 Jun 2026) | 
+A5-081 | [F] | P | FY2026 Q1 -> FY2026 Q3 | Apr-Jun 2026 (CB priced 1 Apr 2026; stated 11 Nov 2026) -> Oct-Dec 2026 (stated 11 Nov 2026) | Period detail moved from period_calendar: CB priced 1 Apr 2026. Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A5-082 | [C] | P | FY2026 Q1 -> FY2026 Q3 | Apr-Jun 2026 (CB issued Apr 2026; stated 11 Nov 2026) -> Oct-Dec 2026 (stated 11 Nov 2026) | Period detail moved from period_calendar: CB issued Apr 2026. Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A5-083 | [C] | P | FY2026 Q1 -> FY2026 Q3 | Apr-Jun 2026 (CB issued Apr 2026; stated 11 Nov 2026) -> Oct-Dec 2026 (stated 11 Nov 2026) | Period detail moved from period_calendar: CB issued Apr 2026. Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A5-085 | [C] | P | FY2026 Q1 -> FY2026 Q3 | Apr-Jun 2026 (CB issued Apr 2026; stated 11 Nov 2026) -> Oct-Dec 2026 (stated 11 Nov 2026) | Period detail moved from period_calendar: CB issued Apr 2026. Statement refers to FY2026 Q1 (Apr-Jun 2026).
+A5-086 | [F] | M | FY2014 onward -> FY2026 Q3 | 2014 issue; status stated 11 Nov 2026 -> Oct-Dec 2026 (stated 11 Nov 2026) | Former label: FY2014 onward / 2014 issue; status stated 11 Nov 2026. Refers to the CB issued in 2014.
+A5-090 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 26 Jun 2026) | 
+A5-091 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 26 Jun 2026) | 
+A5-127 | [C] | Q | FY2026 Q3 -> FY2026 Q3 | Oct-Dec 2026 (28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+A5-137 | [C] | Q | FY2021 Q3 -> FY2021 Q3 | Oct-Dec 2021 (17 Nov 2021) -> Oct-Dec 2021 (stated 17 Nov 2021) | 
+A5-160 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 (announced 9 Jan 2025) -> Jan-Mar 2025 (stated 9 Jan 2025) | 
+A5-161 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 (27 Feb 2025) -> Jan-Mar 2025 (stated 27 Feb 2025) | 
+A5-185 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 26 Jun 2026) | 
+A5-186 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A5-187 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A5-188 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A5-189 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A5-190 | [C] | F | FY2026 end -> FY2026 end | 31 Mar 2027 -> 31 Mar 2027 (stated 25 Jun 2024) | 
+A5-191 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A5-192 | [C] | F | FY2024-FY2026 -> FY2024-FY2026 | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 25 Jun 2024) | 
+A5-195 | [C] | P | FY2025 end -> FY2026 Q1 | 31 Mar 2026 -> Apr-Jun 2026 (stated 26 Jun 2026) | Statement refers to FY2025 end (31 Mar 2026).
+A5-227 | [C] | P | FY2025 Q4 -> FY2026 Q1 | Jan-Mar 2026 -> Apr-Jun 2026 (stated 27 Apr 2026) | Statement refers to FY2025 Q4 (Jan-Mar 2026).
+A5-229 | [C] | P | FY2026 1H -> FY2026 Q3 | Apr-Sep 2026 -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 1H (Apr-Sep 2026).
+A6-238 | [C] | P | FY2015 9M -> FY2015 Q4 | Apr-Dec 2015 -> Jan-Mar 2016 (stated 27 Jan 2016) | Statement refers to FY2015 9M (Apr-Dec 2015).
+A6-239 | [C] | P | FY2015 Q3 -> FY2015 Q4 | Oct-Dec 2015 -> Jan-Mar 2016 (stated 27 Jan 2016) | Statement refers to FY2015 Q3 (Oct-Dec 2015).
+A6-240 | [C] | P | FY2016 1H -> FY2016 Q3 | Apr-Sep 2016 -> Oct-Dec 2016 (stated 26 Oct 2016) | Statement refers to FY2016 1H (Apr-Sep 2016).
+A6-241 | [C] | P | FY2018 -> FY2019 Q1 | Apr 2018-Mar 2019 -> Apr-Jun 2019 (stated 25 Apr 2019) | Statement refers to FY2018 (Apr 2018-Mar 2019).
+A6-242 | [C] | Q | FY2019 Q1 -> FY2019 Q1 | Apr-Jun 2019 (25 Apr 2019) -> Apr-Jun 2019 (stated 25 Apr 2019) | 
+A6-243 | [C] | Q | FY2019 Q1 -> FY2019 Q1 | Apr-Jun 2019 (25 Apr 2019) -> Apr-Jun 2019 (stated 25 Apr 2019) | 
+A6-244 | [C] | P | FY2019 Q1 -> FY2019 Q2 | Apr-Jun 2019 -> Jul-Sep 2019 (stated 24 Jul 2019) | Statement refers to FY2019 Q1 (Apr-Jun 2019).
+A6-245 | [C] | P | FY2019 Q1 -> FY2019 Q2 | Apr-Jun 2019 -> Jul-Sep 2019 (stated 24 Jul 2019) | Statement refers to FY2019 Q1 (Apr-Jun 2019).
+A6-246 | [C] | P | FY2022 9M -> FY2022 Q4 | Apr-Dec 2022 -> Jan-Mar 2023 (stated 31 Jan 2023) | Statement refers to FY2022 9M (Apr-Dec 2022).
+A6-247 | [C] | Q | FY2023 Q1 -> FY2023 Q1 | Apr-Jun 2023 (26 Apr 2023) -> Apr-Jun 2023 (stated 26 Apr 2023) | 
+A6-248 | [C] | P | FY2023 Q1 -> FY2023 Q2 | Apr-Jun 2023 -> Jul-Sep 2023 (stated 26 Jul 2023) | Statement refers to FY2023 Q1 (Apr-Jun 2023).
+A6-249 | [C] | P | FY2023 Q1 -> FY2023 Q2 | Apr-Jun 2023 -> Jul-Sep 2023 (stated 26 Jul 2023) | Statement refers to FY2023 Q1 (Apr-Jun 2023).
+A6-250 | [C] | P | FY2023 -> FY2024 Q1 | Apr 2023-Mar 2024 -> Apr-Jun 2024 (stated 26 Apr 2024) | Statement refers to FY2023 (Apr 2023-Mar 2024).
+A6-251 | [C] | P | FY2008 -> FY2009 Q1 | Apr 2008-Mar 2009 -> Apr-Jun 2009 (stated 27 Apr 2009) | Statement refers to FY2008 (Apr 2008-Mar 2009).
+A6-252 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2015 -> CY2015 (stated 11 Nov 2026) | 
+A6-253 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2016 -> CY2016 (stated 11 Nov 2026) | 
+A6-254 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2018 -> CY2018 (stated 11 Nov 2026) | 
+A6-255 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2019 -> CY2019 (stated 11 Nov 2026) | 
+A6-256 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2022 -> CY2022 (stated 11 Nov 2026) | 
+A6-257 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2023 -> CY2023 (stated 11 Nov 2026) | 
+A6-258 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2015 -> CY2015 (stated 11 Nov 2026) | 
+A6-259 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2016 -> CY2016 (stated 11 Nov 2026) | 
+A6-260 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2018 -> CY2018 (stated 11 Nov 2026) | 
+A6-261 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2019 -> CY2019 (stated 11 Nov 2026) | 
+A6-262 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2022 -> CY2022 (stated 11 Nov 2026) | 
+A6-263 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2023 -> CY2023 (stated 11 Nov 2026) | 
+TH-009 | [F] | P | FY2025 Q1 -> FY2025 Q2 | Apr-Jun 2025 (change effective from FY2025 Q1; stated 29 Jul 2025) -> Jul-Sep 2025 (stated 29 Jul 2025) | Period detail moved from period_calendar: change effective from FY2025 Q1. Statement refers to FY2025 Q1 (Apr-Jun 2025).
+TH-041 | [C] | M | FY2026 Q3 -> FY2026 | Oct-Dec 2026 (stated 28 Oct 2026) -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | Explains the raised FY2026 forecast; labelled like CL-071.
+TH-047 | [C] | P | FY2025 -> FY2026 Q3 | Apr 2025-Mar 2026 (Integrated Annual Report dated 11 Nov 2026) -> Oct-Dec 2026 (stated 11 Nov 2026) | Statement refers to FY2025 (Apr 2025-Mar 2026).
+TH-050 | [C] | F | FY2024 -> FY2024 | Apr 2024-Mar 2025 (expectation stated 26 Apr 2024) -> Apr 2024-Mar 2025 (stated 26 Apr 2024) | 
+TH-074 | [C] | Q | FY2024 Q3 -> FY2024 Q3 | Oct-Dec 2024 (10 Dec 2024) -> Oct-Dec 2024 (stated 10 Dec 2024) | 
+TH-082 | [C] | Q | FY2024 Q4 -> FY2024 Q4 | Jan-Mar 2025 (12 Feb 2025) -> Jan-Mar 2025 (stated 12 Feb 2025) | 
+TH-083 | [C] | Q | FY2025 Q3 -> FY2025 Q3 | Oct-Dec 2025 (10 Dec 2025) -> Oct-Dec 2025 (stated 10 Dec 2025) | 
+TH-084 | [C] | Q | FY2025 Q3 -> FY2025 Q3 | Oct-Dec 2025 (10 Dec 2025) -> Oct-Dec 2025 (stated 10 Dec 2025) | 
+TH-085 | [C] | Q | FY2026 Q1 -> FY2026 Q1 | Apr-Jun 2026 (22 Apr 2026) -> Apr-Jun 2026 (stated 22 Apr 2026) | 
+TH-086 | [C] | Q | FY2026 Q3 -> FY2026 Q3 | Oct-Dec 2026 (17 Nov 2026) -> Oct-Dec 2026 (stated 17 Nov 2026) | 
+TH-088 | [C] | P | FY2025 -> FY2026 Q3 | Apr 2025-Mar 2026 -> Oct-Dec 2026 (stated 11 Nov 2026) | Statement refers to FY2025 (Apr 2025-Mar 2026).
+TH-096 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate as of 27 Apr 2026) -> CY2025 (stated 27 Apr 2026) | 
+TH-097 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate as of 27 Apr 2026) -> CY2025 (stated 27 Apr 2026) | 
+TH-098 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate as of 27 Apr 2026) -> CY2025 (stated 27 Apr 2026) | 
+TH-099 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024 (final, as shown 27 Apr 2026) -> CY2024 (stated 27 Apr 2026) | 
+TH-100 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024 (final, as shown 25 Apr 2025) -> CY2024 (stated 25 Apr 2025) | 
+TH-101 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (forecast as of 28 Oct 2026) -> CY2026 (stated 28 Oct 2026) | 
+TH-102 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (forecast as of 28 Oct 2026) -> CY2026 (stated 28 Oct 2026) | 
+TH-103 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (forecast as of 28 Oct 2026) -> CY2026 (stated 28 Oct 2026) | 
+TH-104 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024 (estimate of 31 Jan 2024) -> CY2024 (stated 31 Jan 2024) | 
+TH-105 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024 (estimate of 31 Jan 2024) -> CY2024 (stated 31 Jan 2024) | 
+TH-106 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024 (estimate of 26 Apr 2024) -> CY2024 (stated 26 Apr 2024) | 
+TH-107 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate of 29 Jan 2025) -> CY2025 (stated 29 Jan 2025) | 
+TH-108 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate of 29 Jan 2025) -> CY2025 (stated 29 Jan 2025) | 
+TH-109 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate of 29 Jul 2025) -> CY2025 (stated 29 Jul 2025) | 
+TH-110 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate of 28 Oct 2025) -> CY2025 (stated 28 Oct 2025) | 
+TH-111 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (estimate of 28 Jan 2026) -> CY2026 (stated 28 Jan 2026) | 
+TH-112 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (estimate of 28 Jan 2026) -> CY2026 (stated 28 Jan 2026) | 
+TH-113 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (estimate of 27 Apr 2026) -> CY2026 (stated 27 Apr 2026) | 
+TH-114 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (estimate of 29 Jul 2026) -> CY2026 (stated 29 Jul 2026) | 
+TH-119 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024; CY2025 (as shown 27 Apr 2026) -> CY2024; CY2025 (stated 27 Apr 2026) | 
+TH-121 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024-CY2026 average (assumption of 25 Jun 2024) -> CY2024-CY2026 average (stated 25 Jun 2024) | 
+TH-122 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024-CY2026 average (assumption of 25 Jun 2024) -> CY2024-CY2026 average (stated 25 Jun 2024) | 
+TH-131 | [C] | F | FY2026 (forecast) -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+TH-134 | [C] | F | FY2026 (forecast) -> FY2026 | Apr 2026-Mar 2027 -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+TH-165 | [C] | T | n/a (Micron statement) -> FY2026 Q2 | Jul-Sep 2026 (stated 30 Sep 2026) -> Jul-Sep 2026 (stated 30 Sep 2026) | 
+TH-168 | [C] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-169 | [C] | M | n/a (calendar year) -> n/a (calendar year) | CY2025 vs Jan-Aug 2026 (stated 28 Oct 2026) -> CY2025; Jan-Aug 2026 (stated 28 Oct 2026) | Calendar wording matched to CL-018.
+TH-170 | [C] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-171 | [C] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-172 | [C] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-173 | [C] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (presentation 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-174 | [C] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-175 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025; target model (stated 28 Oct 2026; model updated 3 Feb 2026) -> CY2025; target model (stated 28 Oct 2026) | Period detail moved from period_calendar: model updated 3 Feb 2026.
+TH-177 | [F] | T | n/a (Teradyne statement) -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | 
+TH-178 | [C] | T | n/a (Teradyne statement) -> FY2024 Q4 | Jan-Mar 2025 (presentation 12 Mar 2025) -> Jan-Mar 2025 (stated 12 Mar 2025) | 
+TH-179 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2023; CY2024; CY2025 (as shown 27 Apr 2026) -> CY2023; CY2024; CY2025 (stated 27 Apr 2026) | 
+CL-001 | [C] | M | n/a (calendar year) -> FY2026 Q3 | past few years to CY2025 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Former label: n/a (calendar year) / past few years to CY2025. Statement about the past few years (no years named); labelled like TH-042.
+CL-003 | [C] | F | FY2026 Q4 -> FY2026 Q4 | Jan-Mar 2027 (Jan 2027 briefing; stated 28 Oct 2026) -> Jan-Mar 2027 (stated 28 Oct 2026) | Period detail moved from period_calendar: Jan 2027 briefing.
+CL-006 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (estimate of 28 Oct 2026) -> CY2026 (stated 28 Oct 2026) | 
+CL-007 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024-CY2026e (estimate of 28 Oct 2026) -> CY2024-CY2026e (stated 28 Oct 2026) | 
+CL-009 | [C] | P | FY2025 Q1 -> FY2025 Q2 | Apr-Jun 2025 (stated 29 Jul 2025) -> Jul-Sep 2025 (stated 29 Jul 2025) | Statement refers to FY2025 Q1 (Apr-Jun 2025).
+CL-011 | [C] | P | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 (stated 28 Jan 2026) -> Jan-Mar 2026 (stated 28 Jan 2026) | Statement refers to FY2025 Q3 (Oct-Dec 2025).
+CL-016 | [S] | M | FY2026 Q2 -> FY2026 Q3 | Jul-Sep 2026 (asked 28 Oct 2026) -> Oct-Dec 2026 (asked 28 Oct 2026) | Statement refers to FY2026 Q2 (Jul-Sep 2026).
+CL-017 | [F] | P | FY2026 Q2 -> FY2026 Q3 | Jul-Sep 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 Q2 (Jul-Sep 2026).
+CL-019 | [C] | M | Teradyne 2H 2026 -> FY2026 Q3 | Jul-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to Teradyne 2H 2026 (Jul-Dec 2026). Teradyne statement on its 2H 2026 compute program timing.
+CL-020 | [C] | M | Teradyne Q4 2026 -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to Teradyne Q4 2026 (Oct-Dec 2026).
+CL-033 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 (forecast of 28 Oct 2026) -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+CL-034 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 (forecast of 28 Oct 2026) -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+CL-035 | [C] | F | FY2026 2H -> FY2026 2H | Oct 2026-Mar 2027 (forecast of 28 Oct 2026) -> Oct 2026-Mar 2027 (stated 28 Oct 2026) | 
+CL-036 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 (forecast of 28 Oct 2026) -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+CL-039 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2024; CY2025 (estimate of 28 Oct 2026) -> CY2024; CY2025 (stated 28 Oct 2026) | 
+CL-040 | [C] | M | n/a (calendar year) -> FY2026 Q3 | not specified (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Former label: n/a (calendar year) / not specified. No timing given; labelled like TH-117.
+CL-042 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2023-CY2025 (estimate of 27 Apr 2026) -> CY2023-CY2025 (stated 27 Apr 2026) | 
+CL-044 | [C] | M | Teradyne Q4 2026 -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to Teradyne Q4 2026 (Oct-Dec 2026).
+CL-048 | [C] | T | n/a (no date) -> FY2026 Q3 | mid-term, not specified (presented 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Former label: n/a (no date) / mid-term, not specified.
+CL-051 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2025 (estimate of 27 Apr 2026) -> CY2025 (stated 27 Apr 2026) | 
+CL-053 | [C] | F | FY2026 -> FY2026 | Apr 2026-Mar 2027 (forecast of 28 Oct 2026) -> Apr 2026-Mar 2027 (stated 28 Oct 2026) | 
+CL-054 | [C] | M | Teradyne Q4 2026 -> FY2026 Q3 | Oct-Dec 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to Teradyne Q4 2026 (Oct-Dec 2026).
+CL-060 | [F] | P | FY2026 Q1 -> FY2026 Q2 | Apr-Jun 2026 (stated 29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | Statement refers to FY2026 Q1 (Apr-Jun 2026).
+CL-062 | [S] | M | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 (published 30 Jan 2026) -> Jan-Mar 2026 (published 30 Jan 2026) | Quarter corrected: 30 Jan 2026 falls in FY2025 Q4 (Jan-Mar 2026).
+CL-073 | [C] | P | FY2026 1H -> FY2026 Q3 | Apr-Sep 2026 (stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Statement refers to FY2026 1H (Apr-Sep 2026).
+CL-076 | [C] | P | FY2025 Q4 -> FY2026 Q1 | Jan-Mar 2026 (stated 27 Apr 2026) -> Apr-Jun 2026 (stated 27 Apr 2026) | Statement refers to FY2025 Q4 (Jan-Mar 2026).
+CL-077 | [C] | F | FY2024-FY2026 avg -> FY2024-FY2026 avg | Apr 2024-Mar 2027 -> Apr 2024-Mar 2027 (stated 28 Oct 2025) | 
+CL-080 | [C] | M | Teradyne Q4 2026 -> FY2026 Q3 | Oct-Dec 2026 (call date not given; stated 28 Oct 2026) -> Oct-Dec 2026 (stated 28 Oct 2026) | Period detail moved from period_calendar: call date not given. Statement refers to Teradyne Q4 2026 (Oct-Dec 2026). Teradyne's Q4 2026 call date is not given.
+CL-084 | [C] | T | n/a (no date) -> FY2026 Q3 | not specified (stated 12 Nov 2026) -> Oct-Dec 2026 (stated 12 Nov 2026) | Former label: n/a (no date) / not specified.
+CL-085 | [C] | T | n/a (no date) -> FY2026 Q2 | not specified (stated 29 Jul 2026) -> Jul-Sep 2026 (stated 29 Jul 2026) | Former label: n/a (no date) / not specified.
+CL-102 | [C] | F | FY2027 Q1 -> FY2027 Q1 | Apr-Jun 2027 (around May 2027; stated 28 Oct 2026) -> Apr-Jun 2027 (stated 28 Oct 2026) | Period detail moved from period_calendar: around May 2027.
+CL-130 | [C] | F | FY2025 -> FY2025 | Apr 2025-Mar 2026 (forecast of 28 Jan 2026) -> Apr 2025-Mar 2026 (stated 28 Jan 2026) | 
+CL-132 | [C] | P | FY2025 Q3 -> FY2025 Q4 | Oct-Dec 2025 (stated 28 Jan 2026) -> Jan-Mar 2026 (stated 28 Jan 2026) | Statement refers to FY2025 Q3 (Oct-Dec 2025).
+CL-136 | [C] | M | Teradyne Q4 2026 -> Teradyne Q4 2026 | Oct-Dec 2026 (guidance of 27 Oct 2026) -> Oct-Dec 2026 (stated 27 Oct 2026) | 
+CL-138 | [C] | CY | n/a (calendar year) -> n/a (calendar year) | CY2026 (estimate of 28 Jan 2026) -> CY2026 (stated 28 Jan 2026) | 
+CL-143 | [C] | T | n/a (no date) -> FY2026 Q3 | not specified (stated 28 Oct 2026; update possibly Jan 2027) -> Oct-Dec 2026 (stated 28 Oct 2026) | Period detail moved from period_calendar: update possibly Jan 2027. Former label: n/a (no date) / not specified.
+
+statement rows left unchanged because the label could not be parsed: 0
+
+non-statement rows whose quarter label does not contain the single date in their period_calendar (review):
+  total: 0

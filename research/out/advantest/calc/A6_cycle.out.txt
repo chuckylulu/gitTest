@@ -46,7 +46,7 @@ FY2024 Q2  Jul-Sep 2024    190,481    63,534   33.4         0    33.4    598,202
 FY2024 Q3  Oct-Dec 2024    218,152    69,267   31.8         0    31.8    683,121     26.9 OK (diff sales 0.05, OI 0.07 bn)
 FY2024 Q4  Jan-Mar 2025    232,349    64,035   27.6   -21,393    36.8    779,707     29.3 OK (diff sales 0.05, OI 0.06 bn)
 FY2025 Q1  Apr-Jun 2025    263,776   123,952   47.0     2,504    46.0    904,758     35.5 OK (diff sales 0.02, OI 0.05 bn)
-FY2025 Q2  Jul-Sep 2025    262,957   108,483   41.3         0    41.3    977,234     37.4 OK (diff sales 0.06, OI 0.08 bn)
+FY2025 Q2  Jul-Sep 2025    262,957   108,483   41.3    -2,000    42.0    977,234     37.4 OK (diff sales 0.06, OI 0.08 bn)
 FY2025 Q3  Oct-Dec 2025    273,804   113,571   41.5         0    41.5  1,032,886     39.7 OK (diff sales 0.00, OI 0.03 bn)
 FY2025 Q4  Jan-Mar 2026    328,073   153,114   46.7         0    46.7  1,128,610     44.2 OK (diff sales 0.03, OI 0.01 bn)
 FY2026 Q1  Apr-Jun 2026    367,473   189,990   51.7         0    51.7  1,232,307     45.9 Q1 = YTD Q1 (no differencing)
@@ -139,7 +139,7 @@ Cross-check mismatches vs company-printed quarters: none
    FY2022 IFRS    sales   560,191 OI   167,687 OM   29.9% (printed 29.9) | one-offs -3,000 -> OM ex   30.5%  Q4: inventory valuation losses (~3 bn, Q&A)
    FY2023 IFRS    sales   486,507 OI    81,628 OM   16.8% (printed 16.8) | one-offs -5,819 -> OM ex   18.0%  Q2: settlement income (named for 1H; placed in Q2 by quarterly other income-expenses Q1 0.2 / Q2 3.2 bn); Q4: goodwill impairment, Essai (SLT)
    FY2024 IFRS    sales   779,707 OI   228,161 OM   29.3% (printed 29.3) | one-offs -21,393 -> OM ex   32.0%  Q4: goodwill and intangibles impairment, Essai (SLT)
-   FY2025 IFRS    sales 1,128,610 OI   499,120 OM   44.2% (printed 44.2) | one-offs +2,504 -> OM ex   44.0%  Q1: gain on partial divestiture of a business; Q4: one-off SG&A expenses named by management, amount not disclosed (A1-311)
+   FY2025 IFRS    sales 1,128,610 OI   499,120 OM   44.2% (printed 44.2) | one-offs +504 -> OM ex   44.2%  Q1: gain on partial divestiture of a business; Q2: one-time SG&A charge related to a growth investment (~2 bn; amount from notes p.9, link inferred A1-512); Q4: one-off SG&A expenses named by management, amount not disclosed (A1-311)
    local FY peaks -> troughs found: [('FY2007', 'FY2009'), ('FY2011', 'FY2013'), ('FY2014', 'FY2016'), ('FY2018', 'FY2019'), ('FY2022', 'FY2023')]
 
    Fiscal-year peak -> trough (each FY local peak to the lowest FY before regaining it; FY2006 not retrieved, so 2007-09 starts at FY2007):

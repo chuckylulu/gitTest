@@ -178,6 +178,11 @@ ibt25x = ibt25 - FY25_DIVEST_GAIN - FY25_CALLOPT_GAIN
 print(f"  FY2025 OI reported {oi25:,} ({pct(oi25, g25):+.1f}%); ex divestiture gain {oi25x:,}: {pct(oi25x, g25):+.1f}% ({cls(pct(oi25x, g25))})")
 print(f"  FY2025 OPM reported {oi25/1128610*100:.1f}% (A3-086); ex divestiture gain {oi25x/1128610*100:.1f}%")
 print(f"  FY2025 IBT reported {ibt25:,} ({pct(ibt25, gibt25):+.1f}%); ex divestiture and call-option gains {ibt25x:,}: {pct(ibt25x, gibt25):+.1f}% ({cls(pct(ibt25x, gibt25))})")
+# reconcile XM 2026-11-21: FY2025 Q2 one-time SG&A charge (A3-093), ~2,000 per notes p.9 (A1-511), link inferred (A1-512, Medium)
+FY25_Q2_CHARGE = 2000
+print(f"  FY2025 OI variant also adding back the ~2,000 Q2 one-time SG&A charge (A1-512, Medium): {oi25x + FY25_Q2_CHARGE:,}: "
+      f"{pct(oi25x + FY25_Q2_CHARGE, g25):+.1f}% ({cls(pct(oi25x + FY25_Q2_CHARGE, g25))}); OPM {(oi25x + FY25_Q2_CHARGE)/1128610*100:.1f}%; "
+      "FY2025 Q4 one-off SG&A (A1-311) has no disclosed amount")
 
 print()
 print("=" * 100)
@@ -227,6 +232,7 @@ print("    so it was already in the 9M base of that guidance; the 'ex impairment
 print("    and the Q4 DTA benefit came after the guidance date.")
 print("  FY2024 impairment 21,393 (A3-063): booked in Q4, after the 2025-01-29 guidance.")
 print("  FY2025 divestiture gain 2,504 (A3-091): booked in Q1, before the 2026-01-28 guidance; the call-option gain 17,312 (A3-092): Q4, after it.")
+print("  FY2025 Q2 one-time SG&A charge (~2,000, A3-093/A1-512): booked in Q2, before the 2026-01-28 guidance; FY2025 Q4 one-off SG&A (no amount, A1-311): after it.")
 
 # ---- added by verifier 2026-11-21: FY2024 NI miss and the non-deductible impairment ----
 print()
@@ -243,3 +249,34 @@ x = ni24 + FY24_IMPAIRMENT
 print(f"  With no tax effect (fully non-deductible, upper bound): NI ex impairment {x:,} ({pct(x, gni24):+.1f}%, {cls(pct(x, gni24))})")
 t_x = (ibt24 + FY24_IMPAIRMENT - x) / (ibt24 + FY24_IMPAIRMENT) * 100
 print(f"  Tax share ex impairment on that basis: {t_x:.1f}% vs {t_g:.1f}% implied by the guidance")
+
+# ---- added in fix round 1 (2026-11-21): annual count of beats / in-line / misses vs the LATEST guidance ----
+print()
+print("=" * 100)
+print("Annual COUNT, FY2023-FY2025 (Apr 2023-Mar 2026), actual vs the latest guidance (set at the Q3 release), +/-2% band")
+YEARS = [k for k in FY if not k.startswith("FY2022")]
+acnt = {m: {"beat": 0, "in-line": 0, "miss": 0, "no guidance": 0} for m in ORDER}
+for fy in YEARS:
+    latest, act = FY[fy]["versions"][-1][2], FY[fy]["actual"]
+    for m in ORDER:
+        if m in latest and m in act:
+            acnt[m][cls(pct(act[m], latest[m]))] += 1
+        else:
+            acnt[m]["no guidance"] += 1
+for m in ORDER:
+    c = acnt[m]
+    n = c["beat"] + c["in-line"] + c["miss"]
+    print(f"  {NAMES[m]:18s} beats {c['beat']}, in-line {c['in-line']}, misses {c['miss']} of {n}"
+          + (f" (no guidance in {c['no guidance']} year)" if c["no guidance"] else ""))
+# OI without the one-offs management named inside operating income (impairments FY2023 and FY2024; divestiture gain FY2025)
+OI_ADJ = {"FY2023 (Apr 2023-Mar 2024)": +FY23_IMPAIRMENT, "FY2024 (Apr 2024-Mar 2025)": +FY24_IMPAIRMENT,
+          "FY2025 (Apr 2025-Mar 2026)": -FY25_DIVEST_GAIN}
+ox = {"beat": 0, "in-line": 0, "miss": 0}
+for fy in YEARS:
+    latest, act = FY[fy]["versions"][-1][2], FY[fy]["actual"]
+    d = pct(act["oi"] + OI_ADJ[fy], latest["oi"])
+    ox[cls(d)] += 1
+    print(f"  {fy}: OI without the named one-off in OI {act['oi'] + OI_ADJ[fy]:,} vs latest {latest['oi']:,}: {d:+.1f}% ({cls(d)})")
+d23 = pct(FY["FY2023 (Apr 2023-Mar 2024)"]["actual"]["oi"] + FY23_IMPAIRMENT - FY23_SETTLEMENT, FY["FY2023 (Apr 2023-Mar 2024)"]["versions"][-1][2]["oi"])
+print(f"  FY2023 also without the settlement income: {d23:+.1f}% ({cls(d23)}); the FY2025 Q4 one-off SG&A has no disclosed amount and stays inside FY2025")
+print(f"  Operating income without the named one-offs: beats {ox['beat']}, in-line {ox['in-line']}, misses {ox['miss']} of 3")

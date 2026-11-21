@@ -258,8 +258,15 @@ x = SQ["FY2025 Q4"]["ni"] - CALL25
 print(f"  FY2025 Q4 NI less full pre-tax call-option gain {x:.1f} vs guidance {G['FY2025 Q4']['ni']}: {pct(x, G['FY2025 Q4']['ni']):+.1f}% ({cls(pct(x, G['FY2025 Q4']['ni']))}) - beat holds")
 x = SQ["FY2026 Q2"]["ni"] - VAL26_Q2
 print(f"  FY2026 Q2 valuation gains = {VAL26_H1} - {VAL26_Q1} = {VAL26_Q2:.3f}; NI less full pre-tax gains {x:.1f} vs guidance {G['FY2026 Q2']['ni']}: {pct(x, G['FY2026 Q2']['ni']):+.1f}% ({cls(pct(x, G['FY2026 Q2']['ni']))}) - beat holds")
-print("  FY2025 Q2 OI: management named a one-time SG&A charge (A3-093) without an amount -> cannot adjust; reported OI beat +12.6% stands.")
-print("  FY2026 Q2 OI: management named a one-time inventory write-down reversal benefit in 1H (A3-229) without an amount -> cannot adjust.")
+# reconcile XM 2026-11-21: the FY2025 Q2 notes p.9 print ~2 bn of Q2 expenses for initiatives to enhance competitiveness (A1-511);
+# linked to the one-time SG&A charge named on p.3 (A3-093) by inference (A1-512, Medium)
+Q2CH25 = 2.0
+x = SQ["FY2025 Q2"]["oi"] + Q2CH25
+print(f"  FY2025 Q2 OI ex ~2 bn one-time SG&A charge (A3-093; amount A1-511, link A1-512 Medium) {x:.1f} vs guidance {G['FY2025 Q2']['oi']}: "
+      f"{pct(x, G['FY2025 Q2']['oi']):+.1f}% ({cls(pct(x, G['FY2025 Q2']['oi']))}); reported {pct(SQ['FY2025 Q2']['oi'], G['FY2025 Q2']['oi']):+.1f}% - beat either way; "
+      f"OPM reported {SQ['FY2025 Q2']['oi']/SQ['FY2025 Q2']['s']*100:.1f}%, ex charge {x/SQ['FY2025 Q2']['s']*100:.1f}%")
+print("  FY2026 Q2 OI: management named a one-time inventory write-down reversal for FY2026 Q1 (A1-315) and for 1H (A3-229), without an amount; "
+      "whether any of it fell in Q2 is not disclosed -> cannot adjust.")
 
 # ---- added by verifier 2026-11-21: one-off sensitivity for the remaining slots (one-off rule) ----
 SETTLE23 = 3.179   # A3-038 settlement income (in OI); first reported in the 1H FY2023 tanshin (A3-315), absent from the Q1 tanshin -> Q2 FY2023
@@ -289,7 +296,8 @@ print(f"  FY2024 Q3 slot (2H FY2024) OI ex impairment {x:.2f} vs 2H guidance {G[
 fy = FYACT["FY2025"]
 x = fy["oi"] - DIV25
 print(f"  FY2025 Q1 slot (FY2025 vs initial) OI less divestiture gain {x:.2f} vs {G['FY2025 FYinit']['oi']}: {pct(x, G['FY2025 FYinit']['oi']):+.1f}% ({cls(pct(x, G['FY2025 FYinit']['oi']))}); "
-      f"NI less full pre-tax call-option and divestiture gains {fy['ni'] - CALL25 - DIV25:.2f} vs {G['FY2025 FYinit']['ni']}: {pct(fy['ni'] - CALL25 - DIV25, G['FY2025 FYinit']['ni']):+.1f}% - beat either way; Q2 one-time SG&A charge amount not disclosed")
+      f"NI less full pre-tax call-option and divestiture gains {fy['ni'] - CALL25 - DIV25:.2f} vs {G['FY2025 FYinit']['ni']}: {pct(fy['ni'] - CALL25 - DIV25, G['FY2025 FYinit']['ni']):+.1f}% - beat either way; "
+      f"also adding back the ~2 bn Q2 one-time SG&A charge (A1-512, Medium): OI {x + Q2CH25:.2f} ({pct(x + Q2CH25, G['FY2025 FYinit']['oi']):+.1f}%); FY2025 Q4 one-off SG&A amount not disclosed")
 # window: FY2025 Q3 slot (2H FY2025 includes the Q4 call-option gain; no OI item with an amount)
 a = DER["FY2025 2H"]
 x = a["ni"] - CALL25
@@ -307,3 +315,26 @@ g, a = G["FY2024 Q4"]["ni"], SQ["FY2024 Q4"]["ni"]
 ni_in, ni_beat = g * (1 - BAND / 100) - a, g * (1 + BAND / 100) - a
 print(f"  FY2024 Q4 NI ex impairment: in-line if the after-tax effect >= {ni_in:.1f} ({ni_in/IMP24*100:.0f}% of {IMP24}), beat if > {ni_beat:.1f} "
       f"({ni_beat/IMP24*100:.0f}%); company says the impairment losses were not tax-deductible (A3-316), which points to the upper end")
+
+# ---- added in fix round 1 (2026-11-21): count over the independent single-quarter slots only ----
+# The Q3 slots test 2H (so they contain the next Q4, which is tested again in its own slot) and the Q1 slots
+# test the full year (FY2025 Q1 contains FY2025 Q2-Q4 and repeats the FY2025 annual test). Only the Q2 and Q4
+# slots compare one quarter with a printed single-quarter forecast, and none of them overlaps another slot.
+print()
+print("=" * 100)
+SINGLE = [s for s in SLOTS if s[6] == "window" and s[5] == "direct quarterly"]
+print("COUNT over the independent single-quarter slots only: " + ", ".join(f"{s[0]} ({s[1]})" for s in SINGLE))
+ind = {m: {"beat": 0, "in-line": 0, "miss": 0} for m, _ in METRICS}
+missed = {m: [] for m, _ in METRICS}
+for q, cal, gk, gdate, per, method, grp in SINGLE:
+    a, _ = actual_for(per)
+    for m, _n in METRICS:
+        if m in G[gk] and m in a:
+            c = cls(pct(a[m], G[gk][m]))
+            ind[m][c] += 1
+            if c == "miss":
+                missed[m].append(f"{q} ({cal})")
+for m, name in METRICS:
+    c = ind[m]
+    print(f"  {name:5s} beats {c['beat']}, in-line {c['in-line']}, misses {c['miss']} of {sum(c.values())}"
+          + (f"  (miss: {', '.join(missed[m])})" if missed[m] else ""))

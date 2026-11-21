@@ -348,13 +348,16 @@ ONEOFFS = {
     "FY2023 Q4": [(-ONEOFF_FY2023_Q4_IMPAIRMENT_M, "goodwill impairment, Essai (SLT)", "other")],
     "FY2024 Q4": [(-ONEOFF_FY2024_Q4_IMPAIRMENT_M, "goodwill and intangibles impairment, Essai (SLT)", "other")],
     "FY2025 Q1": [(+ONEOFF_FY2025_Q1_DIVEST_M, "gain on partial divestiture of a business", "other")],
+    # reconcile XM 2026-11-21: one-time SG&A charge related to a growth investment (FY2025 Q2 notes p.3, A3-093); amount
+    # 'approximately 2 billion JPY' from the same notes p.9 (A1-511); the link between the two passages is inferred (A1-512, Medium)
+    "FY2025 Q2": [(-2000, "one-time SG&A charge related to a growth investment (~2 bn; amount from notes p.9, link inferred A1-512)", "other")],
 }
 UNQUANTIFIED = {
     "FY2019 Q1": "inventory valuation losses named (milder than in FY2018 Q4), amount not disclosed (A6-315)",
     "FY2019 Q3": "one-time amortisation expense on transferred SLT business (amount not disclosed)",
     "FY2025 Q4": "one-off SG&A expenses named by management, amount not disclosed (A1-311)",
     "FY2026 Q1": "reversal of inventory write-down named by management, amount not disclosed (A1-315)",
-    "FY2026 Q2": "1H reversal of inventory write-down named by management, amount not disclosed (A1-316)",
+    "FY2026 Q2": "reversal of inventory write-down named for Q1 (A1-315) and 1H (A1-316); whether any of it fell in Q2 and the amount are not disclosed",
 }
 # placement checks for the items named for a half or a full year
 assert OTHER_INC_BN_FY2018_Q2 >= ONEOFF_FY2018_1H_FIXEDASSET_BN - 0.05 and OTHER_INC_BN_FY2018_Q1 < 0.5

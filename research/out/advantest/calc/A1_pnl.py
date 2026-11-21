@@ -170,3 +170,18 @@ print("LTM operating income / gross profit ex one-offs: not computable (FY2025 Q
 print(f"Prior LTM GM {pct(ltm_prev['gp'], ltm_prev['sales']):.1f}%; prior LTM OM {pct(ltm_prev['oi'], ltm_prev['sales']):.1f}%")
 q4 = sum(Q[k][0] for k, _ in pairs)
 print(f"Check: sum of four single quarters from slides = {sum(Q[c][0] for c, _ in pairs):.1f} bn")
+
+print("\n=== 7. 1H FY2026 (Apr-Sep 2026) operating margin (fix round 1, 2026-11-21) ===")
+# A1-098 operating income 456,809 and A1-094 / CL-032 net sales 845,200, six months to 30 Sep 2026 (JPY million)
+print(f"1H FY2026 operating margin = {H26['oi']:,} / {H26['sales']:,} = {pct(H26['oi'], H26['sales']):.2f}% "
+      "(includes the inventory write-down reversal named for 1H, amount not disclosed)")
+
+print("\n=== 8. FY2024 (Apr 2024-Mar 2025) vs FY2023 (Apr 2023-Mar 2024), JPY million (fix round 2, 2026-11-21) ===")
+# FY2023 actuals: A3-032 net sales 486,507; A3-033 operating income 81,628; A3-035 net income 62,290 (FY2023 tanshin p.1)
+# FY2024 actuals: A1-002 779,707; A1-014 228,161; A1-019 161,177. Printed FY2024 YoY (FY2024 tanshin p.1): A1-518, A1-519, A1-520
+FY23 = dict(sales=486507, oi=81628, ni=62290)
+PRINTED_FY24 = dict(sales=60.3, oi=179.5, ni=158.8)
+for k in ["sales", "oi", "ni"]:
+    v = yoy(FY24[k], FY23[k])
+    print(f"{k}: FY2024 {FY24[k]:,} vs FY2023 {FY23[k]:,}  YoY {v:+.1f}% (printed {PRINTED_FY24[k]:+.1f}%; "
+          f"{'agrees' if round(v, 1) == PRINTED_FY24[k] else 'DIFFERS'})")
