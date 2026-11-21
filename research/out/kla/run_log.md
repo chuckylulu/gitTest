@@ -32,3 +32,17 @@ Session date: 2026-11-21. Branch: claude/festive-rubin-y6as19. Output folder: re
    - Fix: one rule was applied across the file. A forward-looking or not independently testable company statement is [C]. 19 rows were retagged [F]->[C]: A3-026, A3-033, A3-034, A3-035, A3-037, A3-040, A4-041, A4-057, A4-063, A4-068, Q2-001, Q2-002, Q2-003, Q2-004, Q2-005, Q2-007, Q2-012, Q5-005, Q5-011. Each carries a note. A4-041's period was corrected to Jan-Dec 2026. Tag references in the notes, dossier, handoff and review packet were updated.
    - Past quarterly guidance rows (A3-001 to A3-022) stay [F]. Each records a figure KLA issued, which the A3 test then compared with reported results. The CY2025 outlook (A3-030) stays [F] for the same reason.
    - KLA's AP revenue figures (~$950M, ~$635M) are now [C] throughout, matching A1-069/A1-070. They are management-defined figures outside the segment reporting and cannot be tested independently.
+7. Completeness and rule critics (workflow wf_beacca7e-cbc): two clean-context critics compared the deliverables with the request and with CLAUDE.md. Findings and fixes:
+   - Quarterly RPO was missing. The saved 10-Qs and 10-Ks for Q1 FY24-Q4 FY25 disclose quarterly RPO with a 12-month share. Added as A2-035 to A2-051 (8 RPO amounts [F], 8 KLA 12-month estimates [C], 1 series [I]). Script: calc/a2_rpo_series.py, which parses the saved texts. Also recorded: KLA dropped the quarterly RPO note from Q1 FY26 (Jul-Sep 2025) onward.
+   - The 2012-15 downturn low had no one-off list. Fetched the Q1 FY15 10-Q: no one-off named, so the GAAP OM low of 17.0% holds with and without one-offs (A6-026, A6-027). Fetched the Q4 FY14 release: KLA-Tencor then reported non-GAAP net income and EPS only, with no non-GAAP operating margin (A6-028). The Q1 FY15 release is NOT RETRIEVED.
+   - The fiscal year-end was restated in each appended note. build_dossier.py now strips those lines, so the year-end appears once in dossier.md. A Lasertec year-end line remains.
+   - Verdict words: "CONFIRMED" in the prior-claim tables became "MATCHES SOURCE", and "NOT VERIFIABLE" became "UNSUPPORTED". The dossier head explains these status words. The only remaining verdict word ("refute") sits inside [I] Q4-033.
+   - Bare NOT DISCLOSED / NOT RETRIEVED markers: each now carries its (read: ...) / (tried: ...) clause. "Not attempted" items now read "tried: none; no attempt in this session".
+   - Section 2 headline rows now carry both fiscal and calendar labels.
+   - B2 now gives single facts tagged only [F]/[C]. The earlier pessimistic item 1 cited [I] rows.
+   - gaps.md is rebuilt from every marker in dossier.md (122 items) plus 24 manifest NOT RETRIEVED documents.
+   - An untagged Camtek "leadership" claim with no saved source was removed from the Q2 notes.
+   - Not changed, and why:
+     - Some table cells still carry two tagged items, e.g. a [F] value next to an [I] share. Each item is tagged separately.
+     - B3 keeps the expected earnings windows, which are marked [I] because the dates are not announced, and two undated rows marked "Not dated".
+8. Final checks: evidence.csv has 503 rows ([F] 272, [C] 101, [I] 93, [S] 37). quote_check: 410 FOUND, 0 NOT FOUND, 0 flags. Every evidence id cited in dossier.md (460), handoff.md (70) and review_packet.md (21) exists, and the "[tag] id" pairs agree with evidence.csv.

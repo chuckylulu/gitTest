@@ -17,7 +17,7 @@ Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula b
 ### KLA X-ray products
 | Product | Launch | Applications (KLA words) | Status, KLA words | Status, customer or partner papers | Throughput | Revenue or units |
 |---|---|---|---|---|---|---|
-| Axion T2000 (CD-SAXS, transmission) | 2022-12-06 [F] Q1-001 | 3D NAND and DRAM. Logic is not mentioned [F] Q1-001, Q1-002 | At launch: "multiple systems in operation at leading memory manufacturers" [C] Q1-003. Mar 2026: "used in high volume manufacturing today" for vertical NAND and DRAM capacitor [C] Q1-005. Apr 2026: adoption "took quite a while"; no "quick adoption of X-ray anytime soon" [S] Q1-007, Q1-008 | KLA+Lam 2024: CD-SAXS as a rapid screen for tilt and bending [S] Q1-011. Kioxia+WD+KLA 2024: CD-SAXS as the reference that trains OCD [S] Q1-012. Lam 2025: CD-SAXS has low depth sensitivity and averages over the spot [S] Q1-013. 2026 Axion 3D NAND hole-distance paper: title only [S] Q1-014 | NOT DISCLOSED (read: launch release; 10-K FY26 Item 1; Investor Day deck and transcripts). Fact sheet NOT RETRIEVED | NOT DISCLOSED (read: 10-K FY26 Item 1 and Item 7; letters Q4 FY24 to Q1 FY27; Investor Day deck). The CFO said the market is $75-100M and KLA's share is about 60% [S] Q1-009. Implied KLA revenue $45-60M a year [I] Q1-010 (Low) |
+| Axion T2000 (CD-SAXS, transmission) | 2022-12-06 [F] Q1-001 | 3D NAND and DRAM. Logic is not mentioned [F] Q1-001, Q1-002 | At launch: "multiple systems in operation at leading memory manufacturers" [C] Q1-003. Mar 2026: "used in high volume manufacturing today" for vertical NAND and DRAM capacitor [C] Q1-005. Apr 2026: adoption "took quite a while"; no "quick adoption of X-ray anytime soon" [S] Q1-007, Q1-008 | KLA+Lam 2024: CD-SAXS as a rapid screen for tilt and bending [S] Q1-011. Kioxia+WD+KLA 2024: CD-SAXS as the reference that trains OCD [S] Q1-012. Lam 2025: CD-SAXS has low depth sensitivity and averages over the spot [S] Q1-013. 2026 Axion 3D NAND hole-distance paper: title only [S] Q1-014 | NOT DISCLOSED (read: launch release; 10-K FY26 Item 1; Investor Day deck and transcripts). Fact sheet NOT RETRIEVED (tried: kla.com fact-sheet PDF URL, returned HTML) | NOT DISCLOSED (read: 10-K FY26 Item 1 and Item 7; letters Q4 FY24 to Q1 FY27; Investor Day deck). The CFO said the market is $75-100M and KLA's share is about 60% [S] Q1-009. Implied KLA revenue $45-60M a year [I] Q1-010 (Low) |
 | Other X-ray (XRR/XRF/HRXRD) | none found | n/a | n/a | n/a | n/a | n/a |
 
 - Investor Day 2026 lists "X-Ray Metrology" under "Portfolio Expansion" (slide p100). It gives no roadmap, revenue or units [F] Q1-006.
@@ -106,20 +106,20 @@ Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula b
 ## Prior-claim check (kla_metrology_audit.md lines 21-68 and the KLA row at line 1033; Onto row at 1034 where it touches Rigaku)
 | Prior claim | Result | Evidence |
 |---|---|---|
-| EUV reticle tools: Teron 640e/eS/eS2, Teron SL670e XP2, Gen5 Agera print check, TeraBeam 8xx | CONFIRMED (names) | Q4-002..004 |
-| TeraBeam 8xx "12×12 multi-column EBMI at TSMC N2 HVM" | CORRECTED: KLA says 5 years of development at TSMC, released 2026 [C]. "N2 HVM" is NOT VERIFIABLE. "12×12" is in the transcript, but the same passage says "24 columns" | Q4-005, Q4-006 |
-| "Actinic 7xx … Early Demo Stage, requires NA change" | CONFIRMED. "*Requires NA Change" is a footnote on the 2x–3x nm use case; "Early Demo Stage" is in the release-date column | Q4-001 |
-| TeraBeam High-NA and nano-imprint reticle feasibility | NOT VERIFIABLE (nano-imprint appears in no saved doc) | — |
-| 8xx shipped for ≤3 nm qualification "Q2 CY2021" (Q4 FY21 letter) | CORRECTED (minor): the letter says "shipped last quarter" in the Jun-2021-quarter letter, which may mean Jan-Mar or Apr-Jun 2021. Qualification at "3nm and below" is CONFIRMED | Q4-012 |
-| Actinic 7xx milestone "MISSED" | NOT VERIFIABLE as "missed": no dated KLA commitment was found. Status is early demo | Q4-001, Q4-033 |
-| Lasertec ACTIS A200HiT launched Oct 2025, 3× A150 speed | CONFIRMED (2025-10-31). A Lasertec paper uses the A100 as the 3x baseline | Q4-021, Q4-029 |
-| Lasertec JPY 114.8B FY25 ACTIS sales | NOT VERIFIABLE: the presentation is NOT RETRIEVED and the tanshin has no product split. A secondary lead attributes the figure to the Lasertec FY6/2025 presentation script | — |
-| Lasertec ACTIS "sole commercial 13.5 nm actinic HVM system" | NOT VERIFIABLE as "sole". Lasertec claims wide HVM adoption [S]. No other commercial actinic patterned inspector was found | Q4-029 |
-| Axion: transmissive CD-SAXS, non-destructive HVM 3D shape/tilt metrology | CONFIRMED (CD-SAXS, transmissive; HVM as a KLA claim). "Twisting" is not in KLA's words (release says width, shape, tilt) | Q1-002, Q1-005 |
-| Axion 3D NAND twisting validation (Lam + KLA, 2 wafers, 651 sites, R²>0.84, CD-SEM calibration), doi 10.1117/12.3090197 | CORRECTED: the DOI exists, but its title is about hole-to-hole distance variance. The figures and the Lam affiliation are NOT VERIFIABLE (abstract NOT RETRIEVED) | Q1-014 |
-| TSMC + KLA: optical hits resolution limits on N2 curvilinear masks, requiring 12×12 e-beam (doi 12.3111792) | NOT VERIFIABLE (abstract NOT RETRIEVED). KLA's summary of the TSMC paper: DUV covers ≥36 nm reticle printed pitch, e-beam down to 20 nm | Q4-013; transcript p40 |
-| Onto row: "Rigaku 27% / Ai Diffract X-ray tie-up" | CONFIRMED (Onto holds 27% of Rigaku; Ai Diffract is Onto software) | Q1-015, Q1-016, Q1-018 |
-| Onto row: Rigaku optical+X-ray HVM guided ~2028+ (Onto Q1 2026 call) | NOT VERIFIABLE (Onto call transcript not retrieved) | — |
+| EUV reticle tools: Teron 640e/eS/eS2, Teron SL670e XP2, Gen5 Agera print check, TeraBeam 8xx | MATCHES SOURCE (names) | Q4-002..004 |
+| TeraBeam 8xx "12×12 multi-column EBMI at TSMC N2 HVM" | CORRECTED: KLA says 5 years of development at TSMC, released 2026 [C]. "N2 HVM" is UNSUPPORTED. "12×12" is in the transcript, but the same passage says "24 columns" | Q4-005, Q4-006 |
+| "Actinic 7xx … Early Demo Stage, requires NA change" | MATCHES SOURCE. "*Requires NA Change" is a footnote on the 2x–3x nm use case; "Early Demo Stage" is in the release-date column | Q4-001 |
+| TeraBeam High-NA and nano-imprint reticle feasibility | UNSUPPORTED (nano-imprint appears in no saved doc) | — |
+| 8xx shipped for ≤3 nm qualification "Q2 CY2021" (Q4 FY21 letter) | CORRECTED (minor): the letter says "shipped last quarter" in the Jun-2021-quarter letter, which may mean Jan-Mar or Apr-Jun 2021. Qualification at "3nm and below" is MATCHES SOURCE | Q4-012 |
+| Actinic 7xx milestone "MISSED" | UNSUPPORTED as "missed": no dated KLA commitment was found. Status is early demo | Q4-001, Q4-033 |
+| Lasertec ACTIS A200HiT launched Oct 2025, 3× A150 speed | MATCHES SOURCE (2025-10-31). A Lasertec paper uses the A100 as the 3x baseline | Q4-021, Q4-029 |
+| Lasertec JPY 114.8B FY25 ACTIS sales | UNSUPPORTED: the presentation is NOT RETRIEVED (tried: lasertec.co.jp IR page widget; publicnow 403) and the tanshin has no product split. A secondary lead attributes the figure to the Lasertec FY6/2025 presentation script | — |
+| Lasertec ACTIS "sole commercial 13.5 nm actinic HVM system" | UNSUPPORTED as "sole". Lasertec claims wide HVM adoption [S]. No other commercial actinic patterned inspector was found | Q4-029 |
+| Axion: transmissive CD-SAXS, non-destructive HVM 3D shape/tilt metrology | MATCHES SOURCE (CD-SAXS, transmissive; HVM as a KLA claim). "Twisting" is not in KLA's words (release says width, shape, tilt) | Q1-002, Q1-005 |
+| Axion 3D NAND twisting validation (Lam + KLA, 2 wafers, 651 sites, R²>0.84, CD-SEM calibration), doi 10.1117/12.3090197 | CORRECTED: the DOI exists, but its title is about hole-to-hole distance variance. The figures and the Lam affiliation are UNSUPPORTED (abstract NOT RETRIEVED (tried: spiedigitallibrary.org, bot block; Crossref/OpenAlex, no abstract)) | Q1-014 |
+| TSMC + KLA: optical hits resolution limits on N2 curvilinear masks, requiring 12×12 e-beam (doi 12.3111792) | UNSUPPORTED (abstract NOT RETRIEVED (tried: spiedigitallibrary.org, bot block; Crossref/OpenAlex, no abstract)). KLA's summary of the TSMC paper: DUV covers ≥36 nm reticle printed pitch, e-beam down to 20 nm | Q4-013; transcript p40 |
+| Onto row: "Rigaku 27% / Ai Diffract X-ray tie-up" | MATCHES SOURCE (Onto holds 27% of Rigaku; Ai Diffract is Onto software) | Q1-015, Q1-016, Q1-018 |
+| Onto row: Rigaku optical+X-ray HVM guided ~2028+ (Onto Q1 2026 call) | UNSUPPORTED (Onto call transcript not retrieved) | — |
 
 ## Gaps (one line each)
 - Axion fact sheet: NOT RETRIEVED (tried: kla.com/documents/pdf/KLA_Axion_T2000_ProductFactSheet.pdf returns HTML; kla.com Axion page and metrology product page are JS shells with no text).
@@ -134,5 +134,5 @@ Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula b
 - Reticle inspection revenue: NOT DISCLOSED (read: letters Q1 FY26-Q1 FY27, Patterning paragraphs).
 - KLA EUV/reticle optics supplier: NOT DISCLOSED (read: 10-K FY26 Item 1 Manufacturing, Item 1A).
 - Onto-Rigaku Business Wire copies: NOT RETRIEVED (tried: three businesswire.com URLs, HTTP/2 stream error). Onto's own q4cdn PDFs were saved instead.
-- Rigaku release date on rigaku.com: NOT DISCLOSED on the page (read: full page text). Date taken from Onto's same-day release.
-- Onto Q1 2026 call / 10-Q (Rigaku HVM timing): NOT RETRIEVED (not tried: investors.ontoinnovation.com is a known 403).
+- Rigaku release date on rigaku.com: NOT DISCLOSED (read: full page text). Date taken from Onto's same-day release.
+- Onto Q1 2026 call / 10-Q (Rigaku HVM timing): NOT RETRIEVED (tried: none; investors.ontoinnovation.com refused this session's fetches with 403, so no attempt was made).

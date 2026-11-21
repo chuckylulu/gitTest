@@ -12,6 +12,8 @@ for title, f in order:
     t = open(os.path.join(HERE, "parts", f), encoding="utf-8").read()
     t = re.sub(r"^(#+) ", lambda m: "#" + m.group(1) + " ", t, flags=re.M)  # demote
     t = re.sub(r"^## .*\n", "", t, count=1)  # drop the note's own title (now ##)
+    # the fiscal year-end is stated once, in the head: drop the notes' own restatements
+    t = re.sub(r"^(KLA )?[Ff]iscal year ends June 30\. ", "", t, flags=re.M)
     out += [f"## {title}", "", t.strip(), ""]
 open(os.path.join(HERE, "dossier.md"), "w", encoding="utf-8").write("\n".join(out) + "\n")
 print("dossier.md lines:", sum(1 for _ in open(os.path.join(HERE, "dossier.md"))))

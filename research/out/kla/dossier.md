@@ -30,29 +30,31 @@ The detailed sections after Module B are the module notes, kept as written. Each
    - The "Affiliates Rule": KLA's ~$300-350M estimate covers Oct 2025-Dec 2026, not FY26. KLA called it "extended export controls" and did not name the rule [C] A4-068.
    - "Oct 17, 2023" is the date BIS announced the rule. It was published in the Federal Register on 2023-10-25 [F] A4-060.
 5. **Affiliates Rule suspension.** The suspension did not end in Nov 2026; it was extended to 2027-01-10 [S] A4-073.
-6. **Earnings-call Q&A.** KLA does not post call transcripts. Every call quote here comes from a third-party transcript and is tagged [S]. The Q4 FY26 call transcript (2026-07-28) was NOT RETRIEVED.
+6. **Earnings-call Q&A.** KLA does not post call transcripts. Every call quote here comes from a third-party transcript and is tagged [S]. The Q4 FY26 call transcript (2026-07-28) was NOT RETRIEVED (tried: fool.com URL patterns, 404; fortune.com page holds only the header).
 
 **prior/ (the "KLA Corporation Metrology Audit" chat, Step 1)**
 
 Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was taken from the user's Google Drive and extracted to `prior/text/kla_metrology_audit.md`; see run_log.md.
 
+Status words in the prior-claim checks: MATCHES SOURCE, CORRECTED, PARTLY MATCHES SOURCE, or UNSUPPORTED (no saved source supports the claim; the reason and the documents read are given). Missing data uses only NOT DISCLOSED (read: ...) or NOT RETRIEVED (tried: ...).
+
 | # | Prior claim | Status | Evidence |
 |---|---|---|---|
 | 7 | 2022 Investor Day CY2026 target "MET" | CORRECTED: tested against FY26 (Jul 2025-Jun 2026) figures; CY2026 is not yet reported. On an implied basis revenue and OM beat the model, while non-GAAP GM (~62.5%) misses its ~63% | [C] A3-037, [I] A3-039 |
-| 8 | Backlog rise from $7.86B to $12.57B caused by optical bottlenecks | Figures CONFIRMED; cause CORRECTED. The 10-K attributes the rise to AI-infrastructure demand | [F] A2-001 |
+| 8 | Backlog rise from $7.86B to $12.57B caused by optical bottlenecks | Figures MATCHES SOURCE; cause CORRECTED. The 10-K attributes the rise to AI-infrastructure demand | [F] A2-001 |
 | 9 | "Flat CY26 capacity plan" | No such statement found | — |
 | 10 | DRAM cost pressure "into H2 CY2027" | CORRECTED: the 10-K says fiscal 2027, which ends Jun 2027 | [C] Q5-005 |
 | 11 | Services ">3-yr fixed subscriptions, <20% T&M" | CORRECTED: >80% of services revenue comes from multi-year subscription contracts, with ~3-year average length and 95% renewal; 95% of revenue is "recurring" including T&M | [C] A1-062, A1-063 |
 | 12 | Kronos 1190XR as the hybrid-bonding pre-bond tool | CORRECTED: KLA says Kronos is "not going to be sufficient" for hybrid bonding | [C] Q3-003 |
-| 13 | SPIE 10.1117/12.3090197 is an Axion "twisting validation" (Lam, 651 sites, R²>0.84) | CORRECTED: the paper is on hole-to-hole distance variance. The prior's figures are NOT VERIFIABLE | [S] Q1-014 |
+| 13 | SPIE 10.1117/12.3090197 is an Axion "twisting validation" (Lam, 651 sites, R²>0.84) | CORRECTED: the paper is on hole-to-hole distance variance. The prior's figures are UNSUPPORTED | [S] Q1-014 |
 | 14 | TeraBeam 8xx "at TSMC N2 HVM" | Unsupported. KLA says five years of development at TSMC, released 2026 | [C] Q4-005 |
 | 15 | IMAPS DOI 10.4071/001c.171430 (2026-08-11) supports irArcher, Kronos and void details | CORRECTED: it is a generic KLA abstract (Crossref date 2026-09-21) and supports none of these details | [F] Q3-019 |
-| 16 | FPD manufacturing "ended Dec 31, 2024" | CORRECTED: that was the announced target; no later filing confirms the date | [F] A5-053 |
+| 16 | FPD manufacturing "ended Dec 31, 2024" | CORRECTED: that was the announced target; no later filing gives the completion date | [F] A5-053 |
 | 17 | CY25 mix "94.2% / 5.8%" | CORRECTED: Semi PC systems plus services = 93.2%; PCB and Component = 5.2%; Specialty Semi Process 4.4% was left out | A12 notes |
-| 18 | Lasertec "JPY 114.8B FY25 ACTIS sales" | NOT VERIFIABLE: Lasertec's filings give no product split, and its results presentation was NOT RETRIEVED | — |
-| 19 | "Actinic 7xx … Early Demo Stage, requires NA change" | CONFIRMED on the slide page image | [F] Q4-001 |
-| 20 | Gen4/Gen5 lead times >12 months | CONFIRMED in call transcripts only | [S] Q5-027, Q5-028 |
-| 21 | Q1 FY27 revenue $4.14B, non-GAAP OM 46.1%, FCF $1.34B, LTM revenue $14.51B | CONFIRMED | [F] A1-001, A1-018, A1-028; [I] A1-025 |
+| 18 | Lasertec "JPY 114.8B FY25 ACTIS sales" | UNSUPPORTED: Lasertec's filings give no product split, and its results presentation was NOT RETRIEVED (tried: lasertec.co.jp IR results page, script widget; publicnow copy, 403) | — |
+| 19 | "Actinic 7xx … Early Demo Stage, requires NA change" | MATCHES SOURCE on the slide page image | [F] Q4-001 |
+| 20 | Gen4/Gen5 lead times >12 months | MATCHES SOURCE in call transcripts only | [S] Q5-027, Q5-028 |
+| 21 | Q1 FY27 revenue $4.14B, non-GAAP OM 46.1%, FCF $1.34B, LTM revenue $14.51B | MATCHES SOURCE | [F] A1-001, A1-018, A1-028; [I] A1-025 |
 | 22 | Names | "Teron 6xx" is not a KLA product name; the transcript renders Kronos as "Chronos" and actinic as "Ectinic" | [F] Q4-003 |
 
 ---
@@ -65,7 +67,7 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 
 | Product | Launch | Applications | Status in KLA's words | Status in customers' words | Throughput | Revenue / units |
 |---|---|---|---|---|---|---|
-| Axion T2000 (transmission CD-SAXS) | 2022-12-06 [F] Q1-001 | 3D NAND and DRAM; logic not mentioned [F] Q1-001 | Launch: "multiple systems in operation at leading memory manufacturers" [C] Q1-003. Mar 2026: "used in high volume manufacturing today" [C] Q1-005 | No customer statement on production status found. Customer co-authored papers use CD-SAXS as a reference or screening method [S] Q1-011, Q1-012 and note its low depth sensitivity [S] Q1-013 | NOT DISCLOSED | NOT DISCLOSED. CFO remark: X-ray CD market $75-100M, KLA about 60% [S] Q1-009, which implies about $45-60M a year [I] Q1-010 (Low) |
+| Axion T2000 (transmission CD-SAXS) | 2022-12-06 [F] Q1-001 | 3D NAND and DRAM; logic not mentioned [F] Q1-001 | Launch: "multiple systems in operation at leading memory manufacturers" [C] Q1-003. Mar 2026: "used in high volume manufacturing today" [C] Q1-005 | No customer statement on production status found. Customer co-authored papers use CD-SAXS as a reference or screening method [S] Q1-011, Q1-012 and note its low depth sensitivity [S] Q1-013 | NOT DISCLOSED (read: launch release 2022-12-06; 10-K FY26 Item 1; Investor Day deck and transcripts) | NOT DISCLOSED (read: 10-K FY26 Items 1 and 7; letters Q4 FY24-Q1 FY27; Investor Day deck). CFO remark: X-ray CD market $75-100M, KLA about 60% [S] Q1-009, which implies about $45-60M a year [I] Q1-010 (Low) |
 
 **KLA statements since April 2026 on the Onto–Rigaku alliance or on hybrid X-ray + optical CD**
 - Only one was found, on the Q3 FY26 call of 2026-04-29, nine days after the deal was announced.
@@ -73,15 +75,15 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
   - CFO: the market figures above [S] Q1-009.
   - KLA named neither Onto nor Rigaku.
 - Nothing in the Q3 FY26, Q4 FY26 or Q1 FY27 letters, the 10-K FY26, the Q1 FY27 10-Q, the 2026 press releases, or the Q1 FY27 call transcript [I] Q1-028.
-- The Q4 FY26 call transcript is NOT RETRIEVED, so Q1-028 has Medium confidence.
+- The Q4 FY26 call transcript is NOT RETRIEVED (tried: fool.com 404; fortune.com header only), so Q1-028 has Medium confidence.
 
 ### Q2. Advanced packaging vs Onto and Camtek
 
 | Period | Total AP systems | AP process control (inspection + metrology) | Other AP (process equipment etc.) |
 |---|---|---|---|
 | CY2025 actual | ~$950M, >70% YoY [C] Q2-005 | ~$635M (66.8%) [C] Q2-007, [I] Q2-I03 | ~$315M, not broken out by KLA. Covers SPTS etch/deposition/dicing (Specialty Semi Process) and ICOS/Zeta/Orbotech substrate lines (PCB and Component Inspection) [I] Q2-I03 (Medium) |
-| CY2026 target | Jan 2026: "mid-teens" growth, not updated since [C] Q2-006 | "approximately $1.1 billion", >70% YoY. Set 2026-07-28, reaffirmed 2026-10-28 [C] Q2-009, Q2-010. Like-for-like: +73.2% [I] Q2-I01 | NOT DISCLOSED |
-| CY2027 | NOT DISCLOSED; AP is named only among drivers of 2027 capacity growth [C] Q2-011 | NOT DISCLOSED | NOT DISCLOSED |
+| CY2026 target | Jan 2026: "mid-teens" growth, not updated since [C] Q2-006 | "approximately $1.1 billion", >70% YoY. Set 2026-07-28, reaffirmed 2026-10-28 [C] Q2-009, Q2-010. Like-for-like: +73.2% [I] Q2-I01 | NOT DISCLOSED (read: letters Q2 FY26-Q1 FY27 Outlook sections) |
+| CY2027 | NOT DISCLOSED (read: Q4 FY26 and Q1 FY27 letters, Outlook). AP is named only among drivers of 2027 capacity growth [C] Q2-011 | NOT DISCLOSED (read: same) | NOT DISCLOSED (read: same) |
 
 - Product families in the process-control bucket (Semi PC segment): Kronos, CIRCL-AP, Micro-SR, irArcher, PWG5 XT, eDR7xxxAP and others [F] Q2-019.
 - ICOS and Zeta are in the PCB and Component Inspection segment [F] Q2-020. SPTS is in Specialty Semiconductor Process [F] Q2-021.
@@ -94,28 +96,28 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 
 | Step | KLA tool | Status | Gap |
 |---|---|---|---|
-| Incoming wafer shape | PWG5 with XT Option | In the 10-K product list [F] Q3-005; hybrid-bonding shipment status NOT DISCLOSED | No die-level warpage product named |
-| Pre-bond surface defects / particles | Puma, Voyager, broadband plasma (29xx); "whole suite" plus "next four systems" [C] Q3-001, Q3-002. Kronos "not going to be sufficient" [C] Q3-003 | Announced; HVM status NOT DISCLOSED | KLA's own target is 0.05-0.5 µm sensitivity [C] Q3-004 |
-| Cu recess / dishing | No tool named for hybrid bonding in KLA documents | NOT DISCLOSED | Target 0.001 µm Cu-recess accuracy [C] Q3-004 |
-| Bond overlay | irArcher Series | In the 10-K [F] Q3-005; die-to-wafer status NOT DISCLOSED | Precision specs NOT RETRIEVED |
-| Post-bond buried voids | **None** | No product, partnership, acquisition or stated intent in any saved KLA document [I] Q3-I01 | Onto: EchoScan launched Jan 2025, ≥1 µm voids [C] Q3-012, validating at Samsung [S] Q3-014. Camtek: 2027-28 roadmap item [C] Q3-016 |
+| Incoming wafer shape | PWG5 with XT Option | In the 10-K product list [F] Q3-005; hybrid-bonding shipment status NOT DISCLOSED (read: 10-K FY26 Item 1; Investor Day deck and transcript) | No die-level warpage product named |
+| Pre-bond surface defects / particles | Puma, Voyager, broadband plasma (29xx); "whole suite" plus "next four systems" [C] Q3-001, Q3-002. Kronos "not going to be sufficient" [C] Q3-003 | Announced; HVM status NOT DISCLOSED (read: Investor Day transcript p30, p78; letters Q3 FY26-Q1 FY27) | KLA's own target is 0.05-0.5 µm sensitivity [C] Q3-004 |
+| Cu recess / dishing | No tool named for hybrid bonding in KLA documents | NOT DISCLOSED (read: 10-K FY26 Item 1; Investor Day slides 66-67 and transcript) | Target 0.001 µm Cu-recess accuracy [C] Q3-004 |
+| Bond overlay | irArcher Series | In the 10-K [F] Q3-005; die-to-wafer status NOT DISCLOSED (read: 10-K FY26 Item 1; Investor Day deck) | Precision specs NOT RETRIEVED (tried: kla.com product page, bot check; ECTC 2023 paper, 403) |
+| Post-bond buried voids | **None** | No product, partnership, acquisition or stated intent in any saved KLA document [I] Q3-I01 | Onto: EchoScan launched Jan 2025, ≥1 µm voids [C] Q3-012, in validation on Samsung lines [S] Q3-014. Camtek: 2027-28 roadmap item [C] Q3-016 |
 
 ### Q4. EUV mask inspection vs Lasertec
 
 - **Actinic.** The Investor Day slide lists "Actinic 7xx … *Requires NA Change … Early Demo Stage" [F] Q4-001. In KLA's words it is a lab prototype with first images and a first inspection [C] Q4-007. KLA calls it "Defense 3", a low-frequency check [C] Q4-009, with "quite bad" cost of ownership for requalification [C] Q4-010.
 - **E-beam.** TeraBeam 8xx (multi-column e-beam) released in 2026 [F] Q4-002 after five years of development at TSMC [C] Q4-005. A Samsung + KLA paper reports it in production use at Samsung [S] Q4-014.
 - **Optical.** Teron 640e/eS/eS2 (mask shop, 2017) and Teron SL670e/XP/XP2 (fab requalification, 2018) [F] Q4-003, Q4-004.
-- **EUV optics supplier.** NOT DISCLOSED; the 10-K has only general single-source language [F] Q4-020.
+- **EUV optics supplier.** NOT DISCLOSED (read: 10-K FY26 Item 1 Manufacturing, Item 1A); the 10-K has only general single-source language [F] Q4-020.
 - **Lasertec.**
   - ACTIS A150 shipped in 2019 [F] Q4-022, and the A200HiT was released 2025-10-31 at 3x the A150's speed [F] Q4-021.
   - FY2026 (Jul 2025-Jun 2026) orders were JPY 237.5B against 105.2B the year before [F] Q4-024.
-  - ACTIS sales are NOT DISCLOSED in Lasertec's filings.
+  - ACTIS sales: NOT DISCLOSED (read: Lasertec tanshin FY2026 p18, Q1 FY2027 p10).
 
 ### Q5. Supply limits
 
 - **Components named.** Optics (glass and "volume optics") are the longest-lead item [S] Q5-024, Q5-029. The Investor Day supply slide lists sole-sourced optics, sensors and lasers, plus mostly sole-sourced stages and motion control [C] Q5-018.
 - **Lead times.** Historically about 6 months; 7-9 months in Oct 2025 [S] Q5-022; an order-to-ship time fence of almost 60 weeks in Mar 2026 [C] Q5-019; about 12 months on average in Oct 2026, with Gen4/Gen5 longer [S] Q5-027, Q5-028. The months figures appear in no KLA document.
-- **Backlog conversion.** H1 CY26 was capacity-limited and H2 CY26 is about 20-25% above H1 [C] Q5-013, Q5-016. Revenue lost or deferred, and the 12-month share of the $12.57B backlog, are NOT DISCLOSED. Purchase commitments rose to $8.87B [F] A2-029.
+- **Backlog conversion.** H1 CY26 was capacity-limited and H2 CY26 is about 20-25% above H1 [C] Q5-013, Q5-016. Revenue lost or deferred, and the 12-month share of the $12.57B backlog, are NOT DISCLOSED (read: letters Q2 FY26-Q1 FY27; FY26 10-K Item 1 Backlog and MD&A). Purchase commitments rose to $8.87B [F] A2-029.
 - **DRAM chips.** These are a cost problem, not a shipment limit: a 75-100 bps hit to CY26 gross margin [C] Q5-011, continuing through fiscal 2027 [C] Q5-005.
 
 ---
@@ -124,24 +126,24 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 
 | Item | Value | Evidence |
 |---|---|---|
-| Revenue Q2 FY26 to Q1 FY27 ($M) | 3,297.1 / 3,415.1 / 3,657.6 / 4,136.0; YoY +7.2 / +11.5 / +15.2 / +28.9% | [F] A1-001..004, [I] A1-005 |
+| Revenue ($M), Q2 FY26 (Oct-Dec 2025) / Q3 FY26 (Jan-Mar 2026) / Q4 FY26 (Apr-Jun 2026) / Q1 FY27 (Jul-Sep 2026) | 3,297.1 / 3,415.1 / 3,657.6 / 4,136.0; YoY +7.2 / +11.5 / +15.2 / +28.9% | [F] A1-001..004, [I] A1-005 |
 | FY26 (Jul 2025-Jun 2026) | $13,579.5M, +11.7%; GM 61.3% GAAP / 62.4% non-GAAP; OM 41.7% / 43.1% | [F] A1-002, [I] A1-023 |
-| LTM to Sep 2026 | $14,505.8M (+15.8%); FCF $4,037.6M; SBC/FCF 8.0% | [I] A1-025, A1-036 |
-| One-offs management named | Last 4 quarters: acquisition-related charges only (the non-GAAP exclusion). FY25: $239.1M PCB impairment and $7.1M restructuring | [F] A1-009, A1-015, A1-016 |
-| Product groups, Q1 FY27 | Wafer inspection $2,111M; patterning $862M; services $851M (+14%) | [F] A1-043..047 |
-| End market, semi PC systems, Q2 FY26 to Q1 FY27 | Foundry/logic ~60 / 62 / 79 / 72%. Memory DRAM:NAND 75:25 / 86:14 / ~83:17 / not disclosed | [F] A1-051..054 |
-| Services | FY26 $3,125.9M (+16.5%, 23% of revenue); >80% multi-year subscription contracts; ~3-year average; 95% renewal; target 13-15% CAGR | [I] A1-061; [C] A1-062, A1-063, A1-066 |
-| Backlog | $9.83B (Jun 2024), $7.86B (Jun 2025), $12.57B (Jun 2026). Annual only. 12-month share NOT DISCLOSED for FY26; 71-76% for FY25 | [F] A2-001, A2-003 |
-| Orders / book-to-bill | NOT DISCLOSED; FY26 implied ~1.35 | [I] A2-006 (Low) |
-| Purchase commitments | $2.75B (Dec 2025) → $8.87B (Sep 2026) | [F] A2-029..032 |
-| Inventory, Jun 2025 → Sep 2026 | +27%; raw materials +43%, WIP +29%, finished goods −13% | [I] A2-011 |
-| Guidance record, last 8 quarters | Revenue 0 beat / 8 in-line / 0 miss (above the midpoint every quarter). Non-GAAP EPS 1 / 7 / 0. GAAP EPS 0 / 7 / 1, the miss due to an impairment | [I] A3-025 |
-| China share | Q1 FY24 to Q1 FY27: 42.8 → 44.6 peak (Q4 FY24) → 24.3 (Q3 FY26) → 34.5% (Q1 FY27). FY24 42.8%, FY25 33.3%, FY26 29.8% | [F] A4-010..013, [I] A4-016..028 |
+| LTM: Q2 FY26-Q1 FY27 (Oct 2025-Sep 2026) | $14,505.8M (+15.8%); FCF $4,037.6M; SBC/FCF 8.0% | [I] A1-025, A1-036 |
+| One-offs management named | Q2 FY26-Q1 FY27 (Oct 2025-Sep 2026): acquisition-related charges only (the non-GAAP exclusion). FY25 (Jul 2024-Jun 2025): $239.1M PCB impairment and $7.1M restructuring | [F] A1-009, A1-015, A1-016 |
+| Product groups, Q1 FY27 (Jul-Sep 2026) | Wafer inspection $2,111M; patterning $862M; services $851M (+14%) | [F] A1-043..047 |
+| End market, semi PC systems, Q2 FY26 (Oct-Dec 2025) to Q1 FY27 (Jul-Sep 2026) | Foundry/logic ~60 / 62 / 79 / 72%. Memory DRAM:NAND 75:25 / 86:14 / ~83:17 / not disclosed | [F] A1-051..054 |
+| Services | FY26 (Jul 2025-Jun 2026) $3,125.9M (+16.5%, 23% of revenue); >80% multi-year subscription contracts; ~3-year average; 95% renewal; target 13-15% CAGR | [I] A1-061; [C] A1-062, A1-063, A1-066 |
+| Backlog / RPO | Quarterly RPO (end of Q1 FY24, Sep 2023, to Q4 FY25, Jun 2025): $10.85B → $9.83B → $7.86B. KLA's own 12-month share rose from 50-60% to 71-76% [F] A2-035..050; [C] 12-month shares. KLA stopped the quarterly RPO note after Jun 2025: NOT DISCLOSED (read: 10-Q Notes Q1 FY26 to Q1 FY27). Annual backlog at the end of FY26 (Jun 30, 2026): $12.57B, 12-month share NOT DISCLOSED (read: FY26 10-K Item 1 Backlog and Notes) | [F] A2-001; [I] A2-051 |
+| Orders / book-to-bill | NOT DISCLOSED (read: letters, slides, releases and 10-Qs Q2 FY26-Q1 FY27); FY26 (Jul 2025-Jun 2026) implied ~1.35 | [I] A2-006 (Low) |
+| Purchase commitments | $2.75B (Dec 31, 2025, end of Q2 FY26) → $8.87B (Sep 30, 2026, end of Q1 FY27) | [F] A2-029..032 |
+| Inventory, end of Q4 FY25 (Jun 2025) → end of Q1 FY27 (Sep 2026) | +27%; raw materials +43%, WIP +29%, finished goods −13% | [I] A2-011 |
+| Guidance record, Q2 FY25 (Oct-Dec 2024) to Q1 FY27 (Jul-Sep 2026) | Revenue 0 beat / 8 in-line / 0 miss (above the midpoint every quarter). Non-GAAP EPS 1 / 7 / 0. GAAP EPS 0 / 7 / 1, the miss due to an impairment | [I] A3-025 |
+| China share | Q1 FY24 (Jul-Sep 2023) 42.8% → peak 44.6% in Q4 FY24 (Apr-Jun 2024) → low 24.3% in Q3 FY26 (Jan-Mar 2026) → 34.5% in Q1 FY27 (Jul-Sep 2026). FY24 42.8%, FY25 33.3%, FY26 29.8% | [F] A4-010..013, [I] A4-016..028 |
 | Export-rule estimates (KLA's own) | Oct 2022: $500-900M gross CY23. Oct 2023: none. Dec 2024: ~$500M ± $100M CY25. Affiliates Rule: ~$300-350M for Oct 2025-Dec 2026 | [C] A4-057, A4-063, A4-068; [F] A4-061 (no estimate given) |
-| Customers >10% | TSMC ~19% of FY26 revenue; two unnamed customers at 21% and 13% in Q1 FY27 | [F] A4-046, A4-051 |
-| Debt | Notes $5.95B (8 fixed-rate tranches, 2029-2062); cash and securities $4.74B; net debt $1.21B; next maturity $800M 4.10% due 2029-03-15; $1.5B revolver undrawn; no convertibles | [F] A5-006..014, [I] A5-028 |
-| Buyback | Remaining authorisation $8.81B (Sep 30, 2026); last-4-quarter repurchases $2.68B | [F] A5-038, [I] A5-037 |
-| Last downturns | CY2022-23: revenue −21.1%; GAAP OM −10.7 pts, or −6.0 pts ex impairments; non-GAAP −5.7 pts. CY2012-15: revenue −28.0%; GAAP OM −18.7 pts | [I] A6-010..012, A6-023, A6-024 |
+| Customers >10% | TSMC ~19% of FY26 (Jul 2025-Jun 2026) revenue; two unnamed customers at 21% and 13% in Q1 FY27 (Jul-Sep 2026) | [F] A4-046, A4-051 |
+| Debt, end of Q1 FY27 (Sep 30, 2026) | Notes $5.95B (8 fixed-rate tranches, 2029-2062); cash and securities $4.74B; net debt $1.21B; next maturity $800M 4.10% due 2029-03-15; $1.5B revolver undrawn; no convertibles | [F] A5-006..014, [I] A5-028 |
+| Buyback | Remaining authorisation $8.81B (Sep 30, 2026); repurchases in Q2 FY26-Q1 FY27 (Oct 2025-Sep 2026) $2.68B | [F] A5-038, [I] A5-037 |
+| Last downturns | CY2022-23: revenue −21.1%; GAAP OM −10.7 pts, or −6.0 pts ex impairments; non-GAAP −5.7 pts. CY2012-15: revenue −28.0%; GAAP OM −18.7 pts, no one-off named at the low in Q1 FY15 (Jul-Sep 2014) [I] A6-027 | [I] A6-010..012, A6-023, A6-024 |
 
 ---
 
@@ -161,14 +163,14 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 ### B2. Facts that weaken each reading ([F], [C] or [S] only)
 
 **Weaken the optimistic reading**
-1. Purchase commitments rose from about $2.75B (Dec 31, 2025) to $8.87B (Sep 30, 2026) [F] A2-032, A2-029. A long-term receivables line ($266.8M at Sep 30, 2026) appeared in Jun 2026 [F] A2-023. The FY26 10-K does not say how much of the $12.57B backlog ships within 12 months [F] A2-001.
-2. China was 34.5% of Q1 FY27 revenue [F] A4-010. The suspension of the Affiliates Rule runs to 2027-01-10 [S] A4-073, and KLA's own estimate for "extended export controls" was ~$300-350M [C] A4-068.
-3. KLA's actinic EUV mask inspector is at "Early Demo Stage" [F] Q4-001, while Lasertec released a 3x-faster ACTIS A200HiT on 2025-10-31 [F] Q4-021. Separately, an HBM maker replaced its "tool of record" with Onto's Dragonfly G5 + 3Di [C] Q2-029.
+1. Purchase commitments rose from about $2.75B at the end of Q2 FY26 (Dec 31, 2025) to $8.87B at the end of Q1 FY27 (Sep 30, 2026) [F] A2-032, A2-029.
+2. China was $1,425.7M, 34.5% of Q1 FY27 (Jul-Sep 2026) revenue, up 49% from the prior quarter [F] A4-010.
+3. KLA's Investor Day slide of 2026-03-12 (Q3 FY26) lists its actinic EUV mask inspector as "Early Demo Stage" [F] Q4-001.
 
 **Weaken the pessimistic reading**
-1. Revenue landed inside the guided range, and above its midpoint, in each of the last 8 quarters (Q2 FY25 to Q1 FY27) [F] A3-001..A3-023 (rows by quarter). The current Q2 FY27 guide is $4.7B ± $0.2B [C] A3-026.
-2. Backlog was $12.57B at Jun 30, 2026, up from $7.86B a year earlier [F] A2-001, against FY26 revenue of $13.58B [F] A1-002.
-3. Services revenue was $3.13B in FY26, +16.5% [F] A1-046. Over 80% of it comes from multi-year subscription contracts, with a 95% renewal rate [C] A1-062, A1-063.
+1. Q1 FY27 (Jul-Sep 2026) revenue was $4,136.0M [F] A3-023, against the $4.0B ± $0.2B guidance KLA gave the quarter before [F] A3-022.
+2. Backlog was $12.57B at the end of FY26 (Jun 30, 2026), up from $7.86B a year earlier [F] A2-001.
+3. Over 80% of services revenue ($3.13B in FY26, Jul 2025-Jun 2026) comes from multi-year subscription contracts, according to KLA [C] A1-062.
 
 ### B3. Dated catalysts, next 12 months (2026-11-21 to 2027-11-20)
 
@@ -196,7 +198,7 @@ See `handoff.md`. It also holds the extra cell: products where KLA competes dire
 
 ## Part Q1, Q4, Nova: X-ray vs Rigaku, EUV mask vs Lasertec, Nova overlap
 
-KLA fiscal year ends June 30. Lasertec fiscal year ends June 30 (Lasertec "FY2026" = Jul 2025-Jun 2026). Nova and Onto use calendar years. Rigaku: calendar year (not used for figures here).
+Lasertec fiscal year ends June 30 (Lasertec "FY2026" = Jul 2025-Jun 2026). Nova and Onto use calendar years. Rigaku: calendar year (not used for figures here).
 Evidence rows: `parts/Q1.csv` (28), `parts/Q4.csv` (33), `parts/NV.csv` (6). Arithmetic: `calc/q14_calcs.py`. Text rebuild of OpenAlex abstract records: `calc/q14_openalex_to_text.py` (rebuilds `_text/*.txt` from saved JSON; quotes in rows were checked against that text).
 Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula bot block). Abstracts were saved from the OpenAlex index (copies of the publisher abstract). They are tagged [S], not [F].
 
@@ -213,7 +215,7 @@ Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula b
 #### KLA X-ray products
 | Product | Launch | Applications (KLA words) | Status, KLA words | Status, customer or partner papers | Throughput | Revenue or units |
 |---|---|---|---|---|---|---|
-| Axion T2000 (CD-SAXS, transmission) | 2022-12-06 [F] Q1-001 | 3D NAND and DRAM. Logic is not mentioned [F] Q1-001, Q1-002 | At launch: "multiple systems in operation at leading memory manufacturers" [C] Q1-003. Mar 2026: "used in high volume manufacturing today" for vertical NAND and DRAM capacitor [C] Q1-005. Apr 2026: adoption "took quite a while"; no "quick adoption of X-ray anytime soon" [S] Q1-007, Q1-008 | KLA+Lam 2024: CD-SAXS as a rapid screen for tilt and bending [S] Q1-011. Kioxia+WD+KLA 2024: CD-SAXS as the reference that trains OCD [S] Q1-012. Lam 2025: CD-SAXS has low depth sensitivity and averages over the spot [S] Q1-013. 2026 Axion 3D NAND hole-distance paper: title only [S] Q1-014 | NOT DISCLOSED (read: launch release; 10-K FY26 Item 1; Investor Day deck and transcripts). Fact sheet NOT RETRIEVED | NOT DISCLOSED (read: 10-K FY26 Item 1 and Item 7; letters Q4 FY24 to Q1 FY27; Investor Day deck). The CFO said the market is $75-100M and KLA's share is about 60% [S] Q1-009. Implied KLA revenue $45-60M a year [I] Q1-010 (Low) |
+| Axion T2000 (CD-SAXS, transmission) | 2022-12-06 [F] Q1-001 | 3D NAND and DRAM. Logic is not mentioned [F] Q1-001, Q1-002 | At launch: "multiple systems in operation at leading memory manufacturers" [C] Q1-003. Mar 2026: "used in high volume manufacturing today" for vertical NAND and DRAM capacitor [C] Q1-005. Apr 2026: adoption "took quite a while"; no "quick adoption of X-ray anytime soon" [S] Q1-007, Q1-008 | KLA+Lam 2024: CD-SAXS as a rapid screen for tilt and bending [S] Q1-011. Kioxia+WD+KLA 2024: CD-SAXS as the reference that trains OCD [S] Q1-012. Lam 2025: CD-SAXS has low depth sensitivity and averages over the spot [S] Q1-013. 2026 Axion 3D NAND hole-distance paper: title only [S] Q1-014 | NOT DISCLOSED (read: launch release; 10-K FY26 Item 1; Investor Day deck and transcripts). Fact sheet NOT RETRIEVED (tried: kla.com fact-sheet PDF URL, returned HTML) | NOT DISCLOSED (read: 10-K FY26 Item 1 and Item 7; letters Q4 FY24 to Q1 FY27; Investor Day deck). The CFO said the market is $75-100M and KLA's share is about 60% [S] Q1-009. Implied KLA revenue $45-60M a year [I] Q1-010 (Low) |
 | Other X-ray (XRR/XRF/HRXRD) | none found | n/a | n/a | n/a | n/a | n/a |
 
 - Investor Day 2026 lists "X-Ray Metrology" under "Portfolio Expansion" (slide p100). It gives no roadmap, revenue or units [F] Q1-006.
@@ -302,20 +304,20 @@ Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula b
 ### Prior-claim check (kla_metrology_audit.md lines 21-68 and the KLA row at line 1033; Onto row at 1034 where it touches Rigaku)
 | Prior claim | Result | Evidence |
 |---|---|---|
-| EUV reticle tools: Teron 640e/eS/eS2, Teron SL670e XP2, Gen5 Agera print check, TeraBeam 8xx | CONFIRMED (names) | Q4-002..004 |
-| TeraBeam 8xx "12×12 multi-column EBMI at TSMC N2 HVM" | CORRECTED: KLA says 5 years of development at TSMC, released 2026 [C]. "N2 HVM" is NOT VERIFIABLE. "12×12" is in the transcript, but the same passage says "24 columns" | Q4-005, Q4-006 |
-| "Actinic 7xx … Early Demo Stage, requires NA change" | CONFIRMED. "*Requires NA Change" is a footnote on the 2x–3x nm use case; "Early Demo Stage" is in the release-date column | Q4-001 |
-| TeraBeam High-NA and nano-imprint reticle feasibility | NOT VERIFIABLE (nano-imprint appears in no saved doc) | — |
-| 8xx shipped for ≤3 nm qualification "Q2 CY2021" (Q4 FY21 letter) | CORRECTED (minor): the letter says "shipped last quarter" in the Jun-2021-quarter letter, which may mean Jan-Mar or Apr-Jun 2021. Qualification at "3nm and below" is CONFIRMED | Q4-012 |
-| Actinic 7xx milestone "MISSED" | NOT VERIFIABLE as "missed": no dated KLA commitment was found. Status is early demo | Q4-001, Q4-033 |
-| Lasertec ACTIS A200HiT launched Oct 2025, 3× A150 speed | CONFIRMED (2025-10-31). A Lasertec paper uses the A100 as the 3x baseline | Q4-021, Q4-029 |
-| Lasertec JPY 114.8B FY25 ACTIS sales | NOT VERIFIABLE: the presentation is NOT RETRIEVED and the tanshin has no product split. A secondary lead attributes the figure to the Lasertec FY6/2025 presentation script | — |
-| Lasertec ACTIS "sole commercial 13.5 nm actinic HVM system" | NOT VERIFIABLE as "sole". Lasertec claims wide HVM adoption [S]. No other commercial actinic patterned inspector was found | Q4-029 |
-| Axion: transmissive CD-SAXS, non-destructive HVM 3D shape/tilt metrology | CONFIRMED (CD-SAXS, transmissive; HVM as a KLA claim). "Twisting" is not in KLA's words (release says width, shape, tilt) | Q1-002, Q1-005 |
-| Axion 3D NAND twisting validation (Lam + KLA, 2 wafers, 651 sites, R²>0.84, CD-SEM calibration), doi 10.1117/12.3090197 | CORRECTED: the DOI exists, but its title is about hole-to-hole distance variance. The figures and the Lam affiliation are NOT VERIFIABLE (abstract NOT RETRIEVED) | Q1-014 |
-| TSMC + KLA: optical hits resolution limits on N2 curvilinear masks, requiring 12×12 e-beam (doi 12.3111792) | NOT VERIFIABLE (abstract NOT RETRIEVED). KLA's summary of the TSMC paper: DUV covers ≥36 nm reticle printed pitch, e-beam down to 20 nm | Q4-013; transcript p40 |
-| Onto row: "Rigaku 27% / Ai Diffract X-ray tie-up" | CONFIRMED (Onto holds 27% of Rigaku; Ai Diffract is Onto software) | Q1-015, Q1-016, Q1-018 |
-| Onto row: Rigaku optical+X-ray HVM guided ~2028+ (Onto Q1 2026 call) | NOT VERIFIABLE (Onto call transcript not retrieved) | — |
+| EUV reticle tools: Teron 640e/eS/eS2, Teron SL670e XP2, Gen5 Agera print check, TeraBeam 8xx | MATCHES SOURCE (names) | Q4-002..004 |
+| TeraBeam 8xx "12×12 multi-column EBMI at TSMC N2 HVM" | CORRECTED: KLA says 5 years of development at TSMC, released 2026 [C]. "N2 HVM" is UNSUPPORTED. "12×12" is in the transcript, but the same passage says "24 columns" | Q4-005, Q4-006 |
+| "Actinic 7xx … Early Demo Stage, requires NA change" | MATCHES SOURCE. "*Requires NA Change" is a footnote on the 2x–3x nm use case; "Early Demo Stage" is in the release-date column | Q4-001 |
+| TeraBeam High-NA and nano-imprint reticle feasibility | UNSUPPORTED (nano-imprint appears in no saved doc) | — |
+| 8xx shipped for ≤3 nm qualification "Q2 CY2021" (Q4 FY21 letter) | CORRECTED (minor): the letter says "shipped last quarter" in the Jun-2021-quarter letter, which may mean Jan-Mar or Apr-Jun 2021. Qualification at "3nm and below" is MATCHES SOURCE | Q4-012 |
+| Actinic 7xx milestone "MISSED" | UNSUPPORTED as "missed": no dated KLA commitment was found. Status is early demo | Q4-001, Q4-033 |
+| Lasertec ACTIS A200HiT launched Oct 2025, 3× A150 speed | MATCHES SOURCE (2025-10-31). A Lasertec paper uses the A100 as the 3x baseline | Q4-021, Q4-029 |
+| Lasertec JPY 114.8B FY25 ACTIS sales | UNSUPPORTED: the presentation is NOT RETRIEVED (tried: lasertec.co.jp IR page widget; publicnow 403) and the tanshin has no product split. A secondary lead attributes the figure to the Lasertec FY6/2025 presentation script | — |
+| Lasertec ACTIS "sole commercial 13.5 nm actinic HVM system" | UNSUPPORTED as "sole". Lasertec claims wide HVM adoption [S]. No other commercial actinic patterned inspector was found | Q4-029 |
+| Axion: transmissive CD-SAXS, non-destructive HVM 3D shape/tilt metrology | MATCHES SOURCE (CD-SAXS, transmissive; HVM as a KLA claim). "Twisting" is not in KLA's words (release says width, shape, tilt) | Q1-002, Q1-005 |
+| Axion 3D NAND twisting validation (Lam + KLA, 2 wafers, 651 sites, R²>0.84, CD-SEM calibration), doi 10.1117/12.3090197 | CORRECTED: the DOI exists, but its title is about hole-to-hole distance variance. The figures and the Lam affiliation are UNSUPPORTED (abstract NOT RETRIEVED (tried: spiedigitallibrary.org, bot block; Crossref/OpenAlex, no abstract)) | Q1-014 |
+| TSMC + KLA: optical hits resolution limits on N2 curvilinear masks, requiring 12×12 e-beam (doi 12.3111792) | UNSUPPORTED (abstract NOT RETRIEVED (tried: spiedigitallibrary.org, bot block; Crossref/OpenAlex, no abstract)). KLA's summary of the TSMC paper: DUV covers ≥36 nm reticle printed pitch, e-beam down to 20 nm | Q4-013; transcript p40 |
+| Onto row: "Rigaku 27% / Ai Diffract X-ray tie-up" | MATCHES SOURCE (Onto holds 27% of Rigaku; Ai Diffract is Onto software) | Q1-015, Q1-016, Q1-018 |
+| Onto row: Rigaku optical+X-ray HVM guided ~2028+ (Onto Q1 2026 call) | UNSUPPORTED (Onto call transcript not retrieved) | — |
 
 ### Gaps (one line each)
 - Axion fact sheet: NOT RETRIEVED (tried: kla.com/documents/pdf/KLA_Axion_T2000_ProductFactSheet.pdf returns HTML; kla.com Axion page and metrology product page are JS shells with no text).
@@ -330,12 +332,12 @@ Tag note: SPIE papers could not be opened on spiedigitallibrary.org (Incapsula b
 - Reticle inspection revenue: NOT DISCLOSED (read: letters Q1 FY26-Q1 FY27, Patterning paragraphs).
 - KLA EUV/reticle optics supplier: NOT DISCLOSED (read: 10-K FY26 Item 1 Manufacturing, Item 1A).
 - Onto-Rigaku Business Wire copies: NOT RETRIEVED (tried: three businesswire.com URLs, HTTP/2 stream error). Onto's own q4cdn PDFs were saved instead.
-- Rigaku release date on rigaku.com: NOT DISCLOSED on the page (read: full page text). Date taken from Onto's same-day release.
-- Onto Q1 2026 call / 10-Q (Rigaku HVM timing): NOT RETRIEVED (not tried: investors.ontoinnovation.com is a known 403).
+- Rigaku release date on rigaku.com: NOT DISCLOSED (read: full page text). Date taken from Onto's same-day release.
+- Onto Q1 2026 call / 10-Q (Rigaku HVM timing): NOT RETRIEVED (tried: none; investors.ontoinnovation.com refused this session's fetches with 403, so no attempt was made).
 
 ## Part Q2, Q3: advanced packaging, hybrid bonding
 
-KLA fiscal year ends June 30. Calendar years (CY) are used for AP revenue because KLA states them that way. Onto and Camtek have December year-ends. No per-share figures are used here. Evidence ids refer to `parts/Q2.csv` and `parts/Q3.csv`. Arithmetic: `calc/q2_ap_revenue.py`.
+Calendar years (CY) are used for AP revenue because KLA states them that way. Onto and Camtek have December year-ends. No per-share figures are used here. Evidence ids refer to `parts/Q2.csv` and `parts/Q3.csv`. Arithmetic: `calc/q2_ap_revenue.py`.
 
 ### Q2-A. KLA advanced-packaging (AP) revenue: two definitions
 
@@ -380,7 +382,7 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 | Kronos 1190 / 1190XR (2D patterned AP inspection) | None found | Onto: an HBM maker chose Dragonfly G5 + 3Di after onsite competitive evaluations, "displacing the previously established tool of record" (incumbent not named) [C] Q2-029. Camtek: >$50M Hawk orders from "a leading HBM player" [F] Q2-035 |
 | CIRCL-AP (all-surface cluster) | None found | Onto Dragonfly G5 qualified for 2.5D (second qualification) [C] Q2-031 |
 | ICOS F26x / T-series (component, post-dice) | None found | n/a (Onto and Camtek do not target final component inspection in the saved documents) |
-| Zeta-5xx/6xx, Micro-SR, eDR AP, irArcher, PWG5 XT | None found | Camtek's 3D bump metrology "leadership" (call summaries, not saved) |
+| Zeta-5xx/6xx, Micro-SR, eDR AP, irArcher, PWG5 XT | None found | n/a in saved documents |
 
 - Result: **no non-KLA source located names a specific KLA packaging win or loss.** Competitors' win releases do not name the vendor they displaced. [I] Q2-I07.
 - Onto's 10-K names "KLA and Camtek" as its principal AP-inspection competitors. [F] Q2-028
@@ -395,21 +397,21 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 | Step | KLA tool offered | Status (evidence) | Gap | Onto | Camtek |
 |---|---|---|---|---|---|
 | Incoming wafer shape / flatness, bow, warpage | PWG5 with XT Option (packaging list) | Listed in 10-K FY24-FY26 [F] Q3-005. HB/D2W shipment status NOT DISCLOSED (read: 10-K FY26 Item 1) | No die-level warpage product named | Not in saved docs | Pre-bond wafer and die warpage: 2027-28 roadmap [C] Q3-017 |
-| Pre-bond surface defects / particles | Puma, Voyager, BBP (29xx/Gen4). KLA says Kronos "not going to be sufficient" [C] Q3-003; "whole suite of systems", "next four systems" developed [C] Q3-001, Q3-002 | Announced/ready per KLA (Mar 2026). HB-specific HVM shipments NOT DISCLOSED | KLA's target: 0.05-0.5 µm sensitivity [C] Q3-004 | Dragonfly G5 150 nm [C] (Q2-029 release) | Hawk 150 nm, marketed for HB [F] Q2-034; <150 nm HB requirement [C] Q3-018 |
-| Cu recess / dishing, topography | Not named for HB in saved docs. Candidates on slide 66 (SpectraShape, Zeta, Aleris) are an inference only | Status NOT DISCLOSED | KLA's target: 0.001 µm Cu-recess accuracy [C] Q3-004 | 3Di (bumps) | Post-CMP dishing/roughness: 2027-28 roadmap [C] Q3-017 |
-| Bond overlay (post-bond, IR) | irArcher Series | Listed in 10-K [F] Q3-005. The ST/KLA ECTC 2023 paper (irArcher 007 for W2W) is a lead only (403). D2W status NOT DISCLOSED | Precision specs not retrievable | Not in saved docs (TheElec says PLA can also measure overlay [S] Q3-014) | Not in saved docs |
+| Pre-bond surface defects / particles | Puma, Voyager, BBP (29xx/Gen4). KLA says Kronos "not going to be sufficient" [C] Q3-003; "whole suite of systems", "next four systems" developed [C] Q3-001, Q3-002 | Announced/ready per KLA (Mar 2026). HB-specific HVM shipments NOT DISCLOSED (read: Investor Day transcript p30, p78; 10-K FY26 Item 1) | KLA's target: 0.05-0.5 µm sensitivity [C] Q3-004 | Dragonfly G5 150 nm [C] (Q2-029 release) | Hawk 150 nm, marketed for HB [F] Q2-034; <150 nm HB requirement [C] Q3-018 |
+| Cu recess / dishing, topography | Not named for HB in saved docs. Candidates on slide 66 (SpectraShape, Zeta, Aleris) are an inference only | Status NOT DISCLOSED (read: 10-K FY26 Item 1; Investor Day slides 66-67) | KLA's target: 0.001 µm Cu-recess accuracy [C] Q3-004 | 3Di (bumps) | Post-CMP dishing/roughness: 2027-28 roadmap [C] Q3-017 |
+| Bond overlay (post-bond, IR) | irArcher Series | Listed in 10-K [F] Q3-005. The ST/KLA ECTC 2023 paper (irArcher 007 for W2W) is a lead only (403). D2W status NOT DISCLOSED (read: 10-K FY26 Item 1; Investor Day deck) | Precision specs not retrievable | Not in saved docs (TheElec says PLA can also measure overlay [S] Q3-014) | Not in saved docs |
 | Post-bond buried voids | **None found** | [I] Q3-I01 | Gap | EchoScan (launched Jan 2025, ≥1 µm voids) [C] Q3-012; PLA SPIE 2026 [F] Q3-010, [C] Q3-011; in validation on Samsung production lines [S] Q3-014 | 2027-28 roadmap item [C] Q3-016 |
 
 - Onto, describing the incumbent void method (unnamed, presumably SAM): "≥10µm void size sensitivity", water immersion required. [C] Q3-013
-- Samsung is also talking to several ultrasound and X-ray vendors (not named) [S] Q3-015. SAM vendors (e.g. PVA TePla, Hitachi, Sonix) are not covered by any saved source: NOT RETRIEVED (tried: no search pass on SAM vendors beyond TheElec).
+- Samsung is also talking to several ultrasound and X-ray vendors (not named) [S] Q3-015. SAM vendors (e.g. PVA TePla, Hitachi, Sonix) are not covered by any saved source: NOT RETRIEVED (tried: TheElec article only; no further search of SAM vendors).
 - KLA on HBM: two stacking processes are in use, and failure rates rise "on a log scale" with stack height [C] Q3-007. Both HB and TC-NCF raise intensity, and KLA is "not choosing" [C] Q3-008. The Annual Report says customers "increasingly adopted" HB in FY26 [C] Q3-006.
-- Post-bond voids at KLA: no product, partnership, acquisition or stated intent appears in the 10-K FY26, the 10-Q for Q1 FY27, Annual Report 2026, the Investor Day deck and transcript, or the letters [I] Q3-I01. The IMAPS 2026 KLA paper abstract is generic [F] Q3-019. KLA job postings: NOT RETRIEVED (tried: not searched, time). SPIE/ECTC full texts by KLA authors (e.g. 10.1117/12.3049615 "Shape-induced overlay for W2W hybrid bonding", 2025; affiliations not confirmed): NOT RETRIEVED (tried: Crossref metadata only).
+- Post-bond voids at KLA: no product, partnership, acquisition or stated intent appears in the 10-K FY26, the 10-Q for Q1 FY27, Annual Report 2026, the Investor Day deck and transcript, or the letters [I] Q3-I01. The IMAPS 2026 KLA paper abstract is generic [F] Q3-019. KLA job postings: NOT RETRIEVED (tried: none; no search was run in this session). SPIE/ECTC full texts by KLA authors (e.g. 10.1117/12.3049615 "Shape-induced overlay for W2W hybrid bonding", 2025; affiliations not shown in Crossref): NOT RETRIEVED (tried: Crossref metadata only).
 
 ### Ledger evidence (B1 input)
 
 | Claim | For | Against | Strongest tag (for / against) |
 |---|---|---|---|
-| Process-control intensity rises with AP and HBM | KLA packaging intensity (KLA Semi PC AP revenue / AP market) 0.4% (2018) → 5.6% (2025) [C] Q2-016; HB specs ~10x tighter (0.05-0.5 µm vs 1-5 µm) [C] Q3-004; HBM gave a $450M incremental intensity gain in CY25 [C] Q2-018; KLA's CY26 AP process-control growth is ~2x the AP market [C] Q2-009; Camtek: <150 nm HB particle sensitivity, more RDL steps [C] Q3-018; Onto: AP inspection rates are high [F] Q2-039 | KLA's "intensity" metric mixes share gain with intensity (KLA's own definition, Q2-016). Process control's share of AP capex is NOT DISCLOSED as a number (read: Investor Day slide 143, a chart without data labels; a visual read puts it at ~$1.3B of ~$11.3B, [I] Q2-I06, Low). Onto: AP demand is driven by assembly volumes [F] Q2-039. No third-party quantified intensity figure found | [C] / [F] |
+| Process-control intensity rises with AP and HBM | KLA packaging intensity (KLA Semi PC AP revenue / AP market) 0.4% (2018) → 5.6% (2025) [C] Q2-016; HB specs ~10x tighter (0.05-0.5 µm vs 1-5 µm) [C] Q3-004; HBM gave a $450M incremental intensity gain in CY25 [C] Q2-018; KLA's CY26 AP process-control growth is ~2x the AP market [C] Q2-009; Camtek: <150 nm HB particle sensitivity, more RDL steps [C] Q3-018; Onto: AP inspection rates are high [F] Q2-039 | KLA's "intensity" metric mixes share gain with intensity (KLA's own definition, Q2-016). Process control's share of AP capex is NOT DISCLOSED (read: Investor Day slide 143, a chart without data labels; a visual read puts it at ~$1.3B of ~$11.3B, [I] Q2-I06, Low). Onto: AP demand is driven by assembly volumes [F] Q2-039. No third-party quantified intensity figure found | [C] / [F] |
 | AP revenue exceeds $1.1B in CY26 | Guide ~$1.1B (>70%) on 2026-07-28, reaffirmed 2026-10-28 [C] Q2-009, Q2-010; call summary [S] Q2-030 | It is "approximately $1.1B", not "exceeds". The definition is AP **process control systems** only. On the total-systems basis the Jan 2026 guide (mid-teens on $950M ≈ $1.07-1.11B) was never updated [C] Q2-006; KLA has not given a CY26 total-AP figure since. CY26 actual is not reported until late Jan 2027 | [C] / [C] |
 | Post-bond buried-void inspection stays outside KLA's portfolio | No void product or intent in KLA filings, deck or transcript [I] Q3-I01; Onto has a launched tool and a Samsung JDP [C] Q3-012, [S] Q3-014 | KLA says it has a "whole suite" of HB systems and four more developed (unnamed) [C] Q3-001, Q3-002. kla.com product pages were not retrievable, so an unlisted product cannot be excluded. Camtek is also only at roadmap stage [C] Q3-016 | [I] / [C] |
 
@@ -417,7 +419,7 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 
 | Step | KLA | Onto | Camtek |
 |---|---|---|---|
-| 2D patterned AP inspection (bumps, RDL, post-dice) | Kronos 1190/1190XR, CIRCL-AP; Puma/Voyager/29xx adapted [F] Q2-019, [C] Q2-026 | Dragonfly G5 (150 nm), Firefly (panel) [C]/[F] Q2-029, Q2-032 | Hawk (150 nm), Eagle G5 / Eagle-i / Eagle-AP [F] Q2-034 |
+| 2D patterned AP inspection (bumps, RDL, post-dice) | Kronos 1190/1190XR, CIRCL-AP; Puma/Voyager/29xx adapted [F] Q2-019, [C] Q2-026 | Dragonfly G5 (150 nm) [C] Q2-029; Firefly (panel) [F] Q2-032 | Hawk (150 nm), Eagle G5 / Eagle-i / Eagle-AP [F] Q2-034 |
 | 3D bump metrology | Zeta-5xx/6xx, Micro-SR (inference: segment lists, no spec retrieved) | 3Di on Dragonfly [C] Q2-029 | Eagle-AP / Hawk 3D metrology; 10th-generation sensor for <5 µm bumps in 2027 [C] (Camtek deck p17) |
 | Defect review | eDR7xxxAP [F] Q2-019 | not in saved docs | not in saved docs |
 | Wafer/die shape, warpage | PWG5 XT [F] Q3-005 | not in saved docs | roadmap [C] Q3-017 |
@@ -430,17 +432,17 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 
 | Prior claim | Result | Evidence |
 |---|---|---|
-| "Total AP revenue ~$950M in CY25" | CONFIRMED (total systems basis) | [C] Q2-005, Q2-012 |
+| "Total AP revenue ~$950M in CY25" | MATCHES SOURCE (total systems basis) | [C] Q2-005, Q2-012 |
 | "AP Process Control Systems revenue on track for $1.1B+ in CY26 (+70%+ YoY)" | CORRECTED: "approximately $1.1 billion", not "$1.1B+"; growth >70% on a $635M process-control base, not on $950M | [C] Q2-010, [C] Q2-007, [I] Q2-I01, Q2-I02 |
-| "share ~4x over 4 years" | CONFIRMED as KLA claim | [C] Q2-013 |
-| "irArcher 007 post-bond IR overlay 1.5-3.3 nm precision across 100-350 µm die" | NOT VERIFIABLE: irArcher Series is in the 10-K, but no saved source gives these numbers (kla.com JS challenge; ECTC 2023 PDF 403; IMAPS abstract silent) | [F] Q3-005, [F] Q3-019 |
-| "PWG5 XT option" | CONFIRMED (10-K FY24-FY26: "PWG5 with XT Option") | [F] Q3-005 |
-| "Kronos 1190XR down to 150 nm" | NOT VERIFIABLE from KLA (the 2020 release gives no nm figure; kla.com not retrievable; DirectIndustry 403). Also, KLA says Kronos is not sufficient for HB, so its use as an HB pre-bond tool is CORRECTED | [F] Q2-027, [C] Q3-003 |
+| "share ~4x over 4 years" | MATCHES SOURCE as KLA claim | [C] Q2-013 |
+| "irArcher 007 post-bond IR overlay 1.5-3.3 nm precision across 100-350 µm die" | UNSUPPORTED: irArcher Series is in the 10-K, but no saved source gives these numbers (kla.com JS challenge; ECTC 2023 PDF 403; IMAPS abstract silent) | [F] Q3-005, [F] Q3-019 |
+| "PWG5 XT option" | MATCHES SOURCE (10-K FY24-FY26: "PWG5 with XT Option") | [F] Q3-005 |
+| "Kronos 1190XR down to 150 nm" | UNSUPPORTED from KLA (the 2020 release gives no nm figure; kla.com not retrievable; DirectIndustry 403). Also, KLA says Kronos is not sufficient for HB, so its use as an HB pre-bond tool is CORRECTED | [F] Q2-027, [C] Q3-003 |
 | "IMAPS 2026-08-11 doi 10.4071/001c.171430" | CORRECTED: the DOI resolves to Chet Lenox (KLA), "AI-Driven Process Control for Advanced Packaging", IMAPSource Proceedings, Crossref date 2026-09-21 (an 08-11 event date is not shown). The abstract does not support the irArcher, Kronos or void details the prior chat cited to it | [F] Q3-019 |
-| "Samsung + Onto SPIE 2026 doi 10.1117/12.3095356 PLA 1 µm voids under 665 µm Si" | PARTLY CONFIRMED: the DOI, title and 1 µm figure check out; it was presented 2026-02-24 and published 2026-04-08 (not "Apr 8 presentation"). Samsung co-authorship and "665 µm Si" are NOT VERIFIABLE (no affiliations in Crossref; the abstract lacks 665 µm). A Samsung–Onto JDP is reported by [S] TheElec | [F] Q3-010, [C] Q3-011, [S] Q3-014 |
-| "HBM hybrid bonding future adoption; 8H/12H and 12H/16H remain TCB" | NOT VERIFIABLE as a KLA statement. KLA says DRAM moves to HB "in the future" and it is indifferent; the deck shows "8 to 12 chip stacks"; no 16H/TCB roadmap appears in the KLA deck or transcript | [C] Q3-009, Q3-008 |
-| "KLA has no commercial post-bond buried-void tool" | CONFIRMED as absence in saved KLA documents (inference) | [I] Q3-I01 |
-| KLA row "zero post-bond buried-void PLA tool" | CONFIRMED (same basis) | [I] Q3-I01 |
+| "Samsung + Onto SPIE 2026 doi 10.1117/12.3095356 PLA 1 µm voids under 665 µm Si" | PARTLY MATCHES SOURCE: the DOI, title and 1 µm figure check out; it was presented 2026-02-24 and published 2026-04-08 (not "Apr 8 presentation"). Samsung co-authorship and "665 µm Si" are UNSUPPORTED (no affiliations in Crossref; the abstract lacks 665 µm). A Samsung–Onto JDP is reported by [S] TheElec | [F] Q3-010, [C] Q3-011, [S] Q3-014 |
+| "HBM hybrid bonding future adoption; 8H/12H and 12H/16H remain TCB" | UNSUPPORTED as a KLA statement. KLA says DRAM moves to HB "in the future" and it is indifferent; the deck shows "8 to 12 chip stacks"; no 16H/TCB roadmap appears in the KLA deck or transcript | [C] Q3-009, Q3-008 |
+| "KLA has no commercial post-bond buried-void tool" | MATCHES SOURCE as absence in saved KLA documents (inference) | [I] Q3-I01 |
+| KLA row "zero post-bond buried-void PLA tool" | MATCHES SOURCE (same basis) | [I] Q3-I01 |
 
 ### Premise issues
 
@@ -453,7 +455,7 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 
 ### Retrieval notes (for the lead)
 
-- www.kla.com serves a JavaScript bot-challenge page to fetch.py. These saved files contain no content and should be treated as NOT RETRIEVED although the manifest says RETRIEVED: `2026-11-21_kla_product-page-AP-wafer-inspection-metrology.html`, `2026-11-21_kla_solutions-page-advanced-packaging.html`, `2026-11-21_kla_advance-article-p74080.html`. `Advanced_Packaging_Portfolio_Overview.pdf` returned HTML (NOT RETRIEVED).
+- www.kla.com serves a JavaScript bot-challenge page to fetch.py. These saved files contain no content and were set to NOT RETRIEVED in the manifest by the lead (tried: fetch.py on kla.com, JavaScript bot check): `2026-11-21_kla_product-page-AP-wafer-inspection-metrology.html`, `2026-11-21_kla_solutions-page-advanced-packaging.html`, `2026-11-21_kla_advance-article-p74080.html`. `Advanced_Packaging_Portfolio_Overview.pdf` returned HTML: NOT RETRIEVED (tried: direct PDF URL).
 - The Camtek order release `2026-01-01_camtek_press-release-105M-orders-OSAT-HBM.html` is actually dated 2026-06-02 (wrong date in the file name; the CSV gives the correct date).
 - The Onto Q3 2026 release was saved from a finviz copy of Business Wire (`2026-11-05_onto_...`); the release date in the text is 2026-11-09.
 
@@ -467,11 +469,11 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 - NOT RETRIEVED (tried: Crossref only): affiliations and full text of SPIE 10.1117/12.3095356 (Samsung co-authorship, 665 µm Si).
 - NOT RETRIEVED (tried: web search; DigiTimes paywalled; no Korean/Taiwan article names KLA): a non-KLA report of a specific KLA AP win or loss.
 - NOT DISCLOSED (read: Camtek 20-F FY2025 Item 3/4; Oct 2026 deck; Q3 2026 release): Camtek's named competitors.
-- NOT RETRIEVED (tried: not attempted): KLA job postings on void or acoustic inspection; SAM vendor sources.
+- NOT RETRIEVED (tried: none; no attempt in this session): KLA job postings on void or acoustic inspection; SAM vendor sources.
 
 ## Part A1, A2: results, segments, services, leading signals
 
-Fiscal year ends June 30. Quarters: Q2 FY26 = Oct-Dec 2025, Q3 FY26 = Jan-Mar 2026, Q4 FY26 = Apr-Jun 2026, Q1 FY27 = Jul-Sep 2026 (latest). $ in millions unless stated. Per-share figures: Q4 FY26 and later documents are post-split (10-for-1, effective June 11, 2026); the Q2 and Q3 FY26 releases and letters are pre-split [F] A1-037. No per-share figure is used below.
+Quarters: Q2 FY26 = Oct-Dec 2025, Q3 FY26 = Jan-Mar 2026, Q4 FY26 = Apr-Jun 2026, Q1 FY27 = Jul-Sep 2026 (latest). $ in millions unless stated. Per-share figures: Q4 FY26 and later documents are post-split (10-for-1, effective June 11, 2026); the Q2 and Q3 FY26 releases and letters are pre-split [F] A1-037. No per-share figure is used below.
 Scripts: `research/out/kla/calc/a12_results.py` (A1), `research/out/kla/calc/a12_leading.py` (A2). Every built-in check passed: segment and product sums, FY26 = sum of quarters, adjustment totals, recomputed non-GAAP margins within 0.05pp of KLA's stated figures.
 
 ### A1 Results
@@ -549,8 +551,8 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 
 | Item | Jun 30, 2025 | Dec 31, 2025 | Mar 31, 2026 | Jun 30, 2026 | Sep 30, 2026 | Evidence |
 |---|---|---|---|---|---|---|
-| Backlog ($B) | 7.86 | NOT DISCLOSED | NOT DISCLOSED | 12.57 | NOT DISCLOSED ("continues to grow") | [F] A2-001, A2-003; [C] A2-004 |
-| Orders / book-to-bill | NOT DISCLOSED | NOT DISCLOSED | NOT DISCLOSED | FY26 implied ~1.35 | NOT DISCLOSED | [I] A2-006 (Low) |
+| Backlog ($B) | 7.86 | NOT DISCLOSED (read: 10-Q Q2 FY26 Notes) | NOT DISCLOSED (read: 10-Q Q3 FY26 Notes) | 12.57 | NOT DISCLOSED (read: 10-Q Q1 FY27 Notes; letter says "continues to grow") | [F] A2-001, A2-003; [C] A2-004 |
+| Orders / book-to-bill | NOT DISCLOSED (read: 10-K FY25, Q4 FY25 letter) | NOT DISCLOSED (read: Q2 FY26 letter, slides, 10-Q) | NOT DISCLOSED (read: Q3 FY26 letter, slides, 10-Q) | FY26 implied ~1.35 | NOT DISCLOSED (read: Q1 FY27 letter, slides, 10-Q) | [I] A2-006 (Low) |
 | Inventory total ($M) | 3,212.1 | 3,282.6 | 3,437.0 | 3,648.5 | 4,090.4 | [F] A2-007..010 |
 | - raw materials | 1,491.8 | 1,568.7 | 1,648.4 | 1,849.7 | 2,126.9 | |
 | - WIP | 833.9 | 836.2 | 929.6 | 937.7 | 1,076.9 | |
@@ -565,6 +567,26 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 | DSO (days, trade AR) | | 57.9 | 60.7 | 71.9 | 68.3 | [I] A2-027 |
 | Purchase commitments ($B) | n/a | 2.75 | 4.83 | 5.97 | 8.87 | [F] A2-029..032 |
 
+#### Quarterly RPO and the share due within 12 months (added after the completeness review)
+
+KLA published quarterly remaining performance obligations (RPO) through Jun 2025 and then stopped.
+
+| Quarter-end | RPO ($B) | KLA's estimate of share due within 12 months | Implied $B within 12 months | Evidence |
+|---|---|---|---|---|
+| Q1 FY24 (Sep 30, 2023) | 10.85 | 50-60% (stated as 40-50% beyond) | 5.42-6.51 | [F] A2-035, [C] A2-036 |
+| Q2 FY24 (Dec 31, 2023) | 10.65 | 50-55% (45-50% beyond) | 5.33-5.86 | [F] A2-037, [C] A2-038 |
+| Q3 FY24 (Mar 31, 2024) | 9.90 | 55-60% (40-45% beyond) | 5.45-5.94 | [F] A2-039, [C] A2-040 |
+| Q4 FY24 (Jun 30, 2024) | 9.83 | 59-64% | 5.80-6.29 | [F] A2-041, [C] A2-042 |
+| Q1 FY25 (Sep 30, 2024) | 10.04 | 65-70% | 6.53-7.03 | [F] A2-043, [C] A2-044 |
+| Q2 FY25 (Dec 31, 2024) | 9.14 (after a ~$430M cut for the Dec 2024/Jan 2025 export rules) | 67-72% | 6.12-6.58 | [F] A2-045, [C] A2-046 |
+| Q3 FY25 (Mar 31, 2025) | 8.91 | 70-75% | 6.24-6.68 | [F] A2-047, [C] A2-048 |
+| Q4 FY25 (Jun 30, 2025) | 7.86 | 71-76% | 5.58-5.97 | [F] A2-049, [C] A2-050 |
+| Q1 FY26 (Sep 30, 2025) to Q1 FY27 (Sep 30, 2026) | NOT DISCLOSED (read: Notes "Revenue" in 10-Qs Q1 FY26, Q2 FY26, Q3 FY26, Q1 FY27 and the FY26 10-K; none contains an RPO paragraph). The FY26 10-K gives only the Item 1 backlog of $12.57B at Jun 30, 2026 | NOT DISCLOSED (read: FY26 10-K Item 1 Backlog and Notes) | - | [I] A2-051 |
+
+- The implied $ amounts are [I] A2-051 (High). The script `calc/a2_rpo_series.py` reads each figure from the saved filing text.
+- Between Sep 2023 and Jun 2025, RPO fell from $10.85B to $7.86B while the share KLA expected to ship within 12 months rose from 50-60% to 71-76%. The dollars due within 12 months stayed at about $5.4-7.0B.
+- The quarterly RPO note, with its 12-month split, was dropped from Q1 FY26 (Jul-Sep 2025). It disappeared just before backlog rose to $12.57B and lead times lengthened. Only annual backlog figures remain, and the FY26 10-K omits the 12-month share [I] A2-051.
+
 - Backlog is "primarily consisting of sales orders where written customer requests have been received" [F] A2-002. It is disclosed only annually, in the 10-K. The FY26 10-K attributes the rise to AI-infrastructure demand. Unlike the FY25 10-K (71-76% within 12 months [F] A2-003), it gives **no share due within 12 months**: NOT DISCLOSED (read: 10-K FY26 Item 1 Backlog).
 - KLA's 10-Q "transaction price not yet recognized" table equals contract liabilities only ("which equals our contract liabilities") [F] A2-013. It is not a full RPO or backlog figure, so the 10-Qs give no quarterly backlog: NOT DISCLOSED (read: 10-Q Q2 FY26, Q3 FY26, Q1 FY27 Note 2).
 - Orders, bookings and book-to-bill: NOT DISCLOSED (read: Q2 FY26-Q1 FY27 letters, slides, releases, 10-Qs). The FY26 implied orders of ~$18.3B and book-to-bill of ~1.35 = (revenue + Δbacklog) / revenue [I] A2-006 (Low: cancellations, FX and backlog scope are unknown).
@@ -576,23 +598,23 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 
 | Prior claim | Verdict | Correct value / comment | Evidence |
 |---|---|---|---|
-| Backlog $7.86B (Jun 30, 2025) to $12.57B (Jun 30, 2026) | CONFIRMED (amounts); CORRECTED (cause) | Amounts are right. The 10-K attributes the rise to "strong demand driven by the AI infrastructure buildout"; it does not cite optical supply bottlenecks as the prior file implies | [F] A2-001 |
-| Services $3.1B FY26; $850M Q1 FY27 +14% YoY | CONFIRMED | FY26 $3,125.9M; Q1 FY27 $850.5M, +14.2% | [F] A1-046, A1-057; [I] A1-061 |
+| Backlog $7.86B (Jun 30, 2025) to $12.57B (Jun 30, 2026) | MATCHES SOURCE (amounts); CORRECTED (cause) | Amounts are right. The 10-K attributes the rise to "strong demand driven by the AI infrastructure buildout"; it does not cite optical supply bottlenecks as the prior file implies | [F] A2-001 |
+| Services $3.1B FY26; $850M Q1 FY27 +14% YoY | MATCHES SOURCE | FY26 $3,125.9M; Q1 FY27 $850.5M, +14.2% | [F] A1-046, A1-057; [I] A1-061 |
 | >80% of services on >3-yr (fixed) subscription contracts; <20% T&M | CORRECTED | >80% of revenue from multi-year subscription contracts [C]; the written slide says "~3-year average contract length" (spoken: "more than three years"). "Fixed" is not KLA's word. The slide says 95% of services revenue is recurring including T&M, and gives no "<20% T&M" figure | [C] A1-062..064 |
-| 95% contract renewal | CONFIRMED | 95% contract renewal rate (Investor Day); >95% in Nov 2025 update | [C] A1-063, A1-065 |
-| Services CAGR target raised to 13-15% (Mar 2026) | CONFIRMED | | [C] A1-066 |
-| Q1 FY27 revenue $4.14B, non-GAAP OM 46.1%, GM 61.9% / 62.7% | CONFIRMED | 4,136.0; 46.1% (recomputed 46.05%); GAAP GM 61.9%, NG 62.7% | [F] A1-001, A1-006, A1-017, A1-018 |
-| Q1 FY27 +28.9% YoY | CONFIRMED | +28.9% | [I] A1-005 |
-| LTM $14.51B | CONFIRMED | $14,505.8M (+15.8% YoY) | [I] A1-025 |
-| LTM GM 61.5% / 62.5% | CONFIRMED | 61.47% / 62.47% | [I] A1-026 |
-| Q1 FY27 FCF $1.34B (OCF $1.53B - capex $195M) | CONFIRMED | 1,530.9 - 194.8 = 1,336.2 | [F] A1-027, A1-028 |
-| FY26 revenue $13.58B | CONFIRMED | 13,579.5 | [F] A1-002 |
-| Q2 FY27 guidance $4.70B ± $200M | CONFIRMED | $4.7B ± $200M; NG GM 62.5% ± 1% | [C] A1-075 |
-| Services 20.6% of Q1 FY27 revenue; FY26 23.0% | CONFIRMED | 20.6%; 23.0% | [I] A1-061 |
-| Recurring ~16.5%-18.4% of total revenue | NOT VERIFIABLE as stated | >80% x FY26 services = ≥18.4% of FY26 revenue (illustrative lower bound only); KLA gives no recurring-revenue % of total | a12_results.py output |
+| 95% contract renewal | MATCHES SOURCE | 95% contract renewal rate (Investor Day); >95% in Nov 2025 update | [C] A1-063, A1-065 |
+| Services CAGR target raised to 13-15% (Mar 2026) | MATCHES SOURCE | | [C] A1-066 |
+| Q1 FY27 revenue $4.14B, non-GAAP OM 46.1%, GM 61.9% / 62.7% | MATCHES SOURCE | 4,136.0; 46.1% (recomputed 46.05%); GAAP GM 61.9%, NG 62.7% | [F] A1-001, A1-006, A1-017, A1-018 |
+| Q1 FY27 +28.9% YoY | MATCHES SOURCE | +28.9% | [I] A1-005 |
+| LTM $14.51B | MATCHES SOURCE | $14,505.8M (+15.8% YoY) | [I] A1-025 |
+| LTM GM 61.5% / 62.5% | MATCHES SOURCE | 61.47% / 62.47% | [I] A1-026 |
+| Q1 FY27 FCF $1.34B (OCF $1.53B - capex $195M) | MATCHES SOURCE | 1,530.9 - 194.8 = 1,336.2 | [F] A1-027, A1-028 |
+| FY26 revenue $13.58B | MATCHES SOURCE | 13,579.5 | [F] A1-002 |
+| Q2 FY27 guidance $4.70B ± $200M | MATCHES SOURCE | $4.7B ± $200M; NG GM 62.5% ± 1% | [C] A1-075 |
+| Services 20.6% of Q1 FY27 revenue; FY26 23.0% | MATCHES SOURCE | 20.6%; 23.0% | [I] A1-061 |
+| Recurring ~16.5%-18.4% of total revenue | UNSUPPORTED as stated | >80% x FY26 services = ≥18.4% of FY26 revenue (illustrative lower bound only); KLA gives no recurring-revenue % of total | a12_results.py output |
 | CY25: $9.0B Semi PC + $3.0B services / $12.74B; "94.2% Semi PC + Services; ~5.8% PCB/Comp" | CORRECTED | CY25 total $12,745M is right. Semi PC systems (WI+Patterning+Other) $8,971M + services $2,903M = 93.2%. PCB & Component segment = 5.2% (systems only 3.0%). Specialty Semi Process (4.4%) is missing from the prior split | Q2 FY26 slides p6-7; a12_results.py |
 | Total AP revenue ~$950M CY25; AP process-control systems $1.1B+ in CY26 (+70%+) | CORRECTED (wording) | $950M is "total systems revenue" [C]. The CY26 figure is "approximately $1.1 billion" (not "$1.1B+") on a ~$635M process-control base, >70% YoY | [C] A1-069..071 |
-| Gen4/Gen5 lead times >12 months; optical bottlenecks constrained H1 CY26 | NOT VERIFIABLE (in A1/A2 docs) | Q2 FY26 letter: lead times "increasing due to supply constraints", with no months stated | [C] A2-005 |
+| Gen4/Gen5 lead times >12 months; optical bottlenecks constrained H1 CY26 | UNSUPPORTED (in A1/A2 docs) | Q2 FY26 letter: lead times "increasing due to supply constraints", with no months stated | [C] A2-005 |
 
 ### Premise issues
 - The prior file implies the 10-K ties the backlog rise to optical supply bottlenecks. The 10-K cites AI-driven demand (above).
@@ -613,7 +635,7 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 
 ## Part A3, A6, Q5: guidance record, cycle, supply limits
 
-Fiscal year ends June 30. Q1 FY27 = Jul-Sep 2026 (latest reported). Per-share figures: pre-split up to and including Q3 FY26 results; post-split from Q4 FY26 results onward (10-for-1, effective after the Nasdaq close on 2026-06-11) [F] A3-027.
+Q1 FY27 = Jul-Sep 2026 (latest reported). Per-share figures: pre-split up to and including Q3 FY26 results; post-split from Q4 FY26 results onward (10-for-1, effective after the Nasdaq close on 2026-06-11) [F] A3-027.
 Calc scripts: `research/out/kla/calc/a3_guidance_record.py`, `a6_cycle_drawdowns.py`, `q5_supply_calc.py` (run with `python3 -I`).
 
 ### Premise issues
@@ -677,8 +699,8 @@ One-off items management named:
 | Revenue trough | Q4 FY23 (Apr-Jun 2023) $2,355.1M, **−21.1%**. Second dip in Q3 FY24 (Jan-Mar 2024) at $2,359.8M | First trough Q2 FY13 (Oct-Dec 2012) $673.0M, −24.6%. Deepest Q1 FY16 (Jul-Sep 2015) $642.6M, **−28.0%** |
 | Quarters below peak | 7 (peak regained in Q2 FY25) | 15 (peak regained in Q4 FY16) |
 | GAAP OM at peak → low | 40.2% → 29.5% in Q2 FY24, **−10.7 pts**, including a $219.0M impairment. Excluding impairments: 34.2% in Q3 FY24, **−6.0 pts** | 35.7% → 17.0% in Q1 FY15 (Jul-Sep 2014), **−18.7 pts**. At the Sep-2015 revenue low: 25.0% (26.1% excluding the $7.1M restructuring) |
-| Non-GAAP OM at peak → low | 42.4% → 36.8% in Q3 FY24, **−5.7 pts**. From the margin peak in Q1 FY23 (44.1%): −7.3 pts | NOT RETRIEVED (tried: no KLA-Tencor 2012-15 earnings releases fetched) |
-| One-offs named by management | Impairments of $219.0M (Q2 FY24) and $70.5M (Q3 FY24); restructuring of $19.1M (Q3 FY23) and $8.1M (Q4 FY23) [F] A6-005, A6-006, A6-009 | Restructuring of $22.4M (Q4 FY15) and $7.1M (Q1 FY16) [F] A6-019. One-offs in Q1 FY15: not identified |
+| Non-GAAP OM at peak → low | 42.4% → 36.8% in Q3 FY24, **−5.7 pts**. From the margin peak in Q1 FY23 (44.1%): −7.3 pts | NOT DISCLOSED (read: KLA-Tencor Q4 FY14 release p1). KLA-Tencor then reported non-GAAP net income and EPS only, with no non-GAAP operating margin [F] A6-028 |
+| One-offs named by management | Impairments of $219.0M (Q2 FY24) and $70.5M (Q3 FY24); restructuring of $19.1M (Q3 FY23) and $8.1M (Q4 FY23) [F] A6-005, A6-006, A6-009 | Restructuring of $22.4M (Q4 FY15) and $7.1M (Q1 FY16) [F] A6-019. Q1 FY15 (Jul-Sep 2014, the OM low, revenue $642.9M, OI $109.2M [F] A6-026): no one-off named in the 10-Q, so 17.0% holds with and without one-offs [I] A6-027 |
 | Evidence | [I] A6-010, A6-011, A6-012 | [I] A6-023, A6-024 |
 
 Method notes:
@@ -730,27 +752,27 @@ Method notes:
 | Prior claim | Verdict | Evidence |
 |---|---|---|
 | 2022 Investor Day CY2026 target $14.0B ± $500M, 41-43% OM: "MET" | **CORRECTED.** CY2026 is not complete, and the prior used FY26 revenue. On a CY26 implied basis (Q2 FY27 guidance midpoint), revenue of about $15.9B **exceeds** the top of the range and OM of about 45% exceeds 41-43%. The same target model's ~63% GM is **not met** (about 62.5%). EPS target $38±1.50 pre-split, implied about $46.5 | A3-037, A3-039, A3-041 |
-| Optical component bottlenecks constrained H1 CY26 shipments | **CONFIRMED** (company statements [C] and calls [S]; not in the 10-K, which the prior cited) | Q5-010, Q5-020, Q5-024, Q5-030 |
-| Gen4/Gen5 lead times extended past 12 months | **CONFIRMED [S] only** (Q1 FY27 call: average about 12 months, Gen4/Gen5 "longer"); not in KLA documents | Q5-027, Q5-028 |
-| Backlog $7.86B (Jun 2025) → $12.57B (Jun 2026) lifted by optical bottlenecks | Figures **CONFIRMED**; cause **CORRECTED**. The 10-K attributes the increase to "strong demand driven by the AI infrastructure buildout" | Q5-002 |
+| Optical component bottlenecks constrained H1 CY26 shipments | **MATCHES SOURCE** (company statements [C] and calls [S]; not in the 10-K, which the prior cited) | Q5-010, Q5-020, Q5-024, Q5-030 |
+| Gen4/Gen5 lead times extended past 12 months | **MATCHES SOURCE [S] only** (Q1 FY27 call: average about 12 months, Gen4/Gen5 "longer"); not in KLA documents | Q5-027, Q5-028 |
+| Backlog $7.86B (Jun 2025) → $12.57B (Jun 2026) lifted by optical bottlenecks | Figures **MATCHES SOURCE**; cause **CORRECTED**. The 10-K attributes the increase to "strong demand driven by the AI infrastructure buildout" | Q5-002 |
 | Management planned flat CY26 capacity | **CORRECTED.** No capacity plan statement found. Oct 2025 guidance was H1 CY26 revenue "roughly flat to modestly up" vs H2 CY25. CFO (Oct 2026, [S]): they had expected 2026 "pretty flat". H1 capacity decisions were made inside the lead time [C] | Q5-020, Q5-031 |
 | DRAM memory pricing pressuring image-processing compute costs into H2 CY2027 | **CORRECTED.** Filings say a GM impact "in fiscal 2027" (to Jun 2027 = H1 CY2027). Letters say pricing persists "through at least calendar 2026". No H2 CY2027 statement found | Q5-005, Q5-011, Q5-012, Q5-017 |
-| Current KLA tool delivery lead time ~12 months average | **CONFIRMED [S]** (Q1 FY27 call, 2026-10-28) | Q5-027 |
-| Q2 FY27 guidance $4.70B ± $200M; Q1 FY27 non-GAAP OM 46.1% | **CONFIRMED** | A3-026, A3-041 |
+| Current KLA tool delivery lead time ~12 months average | **MATCHES SOURCE [S]** (Q1 FY27 call, 2026-10-28) | Q5-027 |
+| Q2 FY27 guidance $4.70B ± $200M; Q1 FY27 non-GAAP OM 46.1% | **MATCHES SOURCE** | A3-026, A3-041 |
 
 ### Gaps
 - Q4 FY26 earnings-call transcript (2026-07-28): NOT RETRIEVED (tried: fool.com URL patterns for 07/28 and 07/29 returned 404; GuruFocus is paywalled; not worked around).
-- Non-GAAP operating margin for the 2012-15 downturn: NOT RETRIEVED (tried: no KLA-Tencor FY12-FY16 earnings releases fetched).
+- Non-GAAP operating margin for the 2012-15 downturn: NOT DISCLOSED (read: KLA-Tencor Q4 FY14 earnings release p1; the company then reported non-GAAP net income and EPS only).
 - Lead times in months: NOT DISCLOSED (read: FY26 10-K Item 1 Backlog and Item 1A; Q1 FY27 10-Q Item 1A; letters Q2 FY26 to Q1 FY27). Secondary sources only.
 - Revenue deferred by supply constraints: NOT DISCLOSED (read: letters Q2 FY26 to Q1 FY27; FY26 10-K MD&A).
 - 12-month conversion share of the FY26 backlog: NOT DISCLOSED (read: FY26 10-K Item 1 Backlog).
 - Q4 FY19 revenue excluding Orbotech: NOT DISCLOSED (read: FY19 10-K Note 20; Q3 FY19 10-Q revenue-by-product table).
-- One-off items in Q1 FY15 (Jul-Sep 2014, the OM low): NOT RETRIEVED (tried: the Q1 FY15 10-Q was not fetched; the FY15 10-K quarterly note has no operating detail).
+- One-off items in Q1 FY15 (Jul-Sep 2014, the OM low): NOT DISCLOSED (read: Q1 FY15 10-Q statements of operations, MD&A, Note 17). Q1 FY15 earnings release: NOT RETRIEVED (tried: ir.kla.com financial-results listing; press-release pages 38-41).
 - Q3 FY25 earnings release: text extraction unreadable (font encoding). Values taken from the Q3 FY25 letter and the Q3 FY26 release comparative.
 
 ## Part A4, A5: concentration, China, export rules, balance sheet, capital
 
-Fiscal year ends June 30. Q1 FY27 = Jul-Sep 2026 (latest; 10-Q filed 2026-10-29). $ in thousands unless stated. Evidence ids refer to `parts/A4.csv` and `parts/A5.csv`. Arithmetic: `calc/a4_region_parse.py`, `calc/a4_segment_parse.py`, `calc/a4_china_share.py` (output `calc/a4_china_share_output.txt`), `calc/a5_capital.py` (output `calc/a5_capital_output.txt`).
+Q1 FY27 = Jul-Sep 2026 (latest; 10-Q filed 2026-10-29). $ in thousands unless stated. Evidence ids refer to `parts/A4.csv` and `parts/A5.csv`. Arithmetic: `calc/a4_region_parse.py`, `calc/a4_segment_parse.py`, `calc/a4_china_share.py` (output `calc/a4_china_share_output.txt`), `calc/a5_capital.py` (output `calc/a5_capital_output.txt`).
 
 No margin or profit figures are computed in A4/A5, so no one-off adjustment table is needed. The impairments listed under A5 are the one-off items management named for FY24 and FY25 (handled by A1 for margins).
 
@@ -820,7 +842,7 @@ Fiscal years: FY24 42.8%, FY25 33.3%, FY26 29.8% [F] A4-011 to A4-013. Calendar 
 
 | Rule (date) | What it restricts (as KLA or the FR text says) | KLA's own impact statement | Evidence |
 |---|---|---|---|
-| Oct 7, 2022 BIS IFR (87 FR 62186) | Licences needed for effectively all KLA products and services to China fabs making non-planar or <=16/14nm logic, >=128-layer NAND, or <=18nm half-pitch DRAM; limits on US-person support; limits on tools sold to China WFE makers | Preliminary **gross direct CY2023 impact of $500M-$900M** (based on backlog, before reallocation). By Aug 2023: "have not significantly impacted our operations to date" | [C] A4-057, A4-058, A4-059; FR text NOT RETRIEVED |
+| Oct 7, 2022 BIS IFR (87 FR 62186) | Licences needed for effectively all KLA products and services to China fabs making non-planar or <=16/14nm logic, >=128-layer NAND, or <=18nm half-pitch DRAM; limits on US-person support; limits on tools sold to China WFE makers | Preliminary **gross direct CY2023 impact of $500M-$900M** (based on backlog, before reallocation). By Aug 2023: "have not significantly impacted our operations to date" | [C] A4-057, A4-058, A4-059; FR text NOT RETRIEVED (tried: govinfo.gov PDF and HTML, 502) |
 | Oct 17, 2023 update (SME IFR 88 FR 73424, published Oct 25, 2023; effective Nov 2023) | Revises the 2022 parameters, adds anti-circumvention measures, extends coverage to arms-embargoed countries | **No quantified impact**: "still evaluating these rules" | [F] A4-060, A4-061 |
 | Dec 2, 2024 IFR (89 FR 96790) + Entity List additions; Jan 2025 follow-on rules | New SME controls, new foreign direct product (FDP) rules, HBM controls, more Entity List names, a revised advanced-DRAM definition | **~$500M ± $100M CY2025 revenue impact, ~70% systems** (first given early Dec 2024). **RPO cut by ~$430M** (about half due within 12 months). Services growth hit in Mar 2025 quarter | [F] A4-062, A4-064, A4-066; [C] A4-063; [S] A4-065 |
 | Sep 29, 2025 Affiliates Rule IFR (90 FR 47201) | Entity List / MEU restrictions extended to entities ≥50% owned by listed parties | **~$300-350M across the Dec 2025 quarter and CY2026**, described as "extended export controls" (KLA did not name the rule). CFO: the Dec 2025 quarter impact was "fairly immaterial" | [F] A4-067; [C] A4-068; [S] A4-069 |
@@ -910,18 +932,18 @@ Impairments:
 - Q2 FY25: $239.1M, PCB ($230.4M goodwill + $8.7M intangibles) [F] A5-055.
 - FY26 annual test (Dec 31, 2025): no impairment [F] A5-056.
 
-Cumulative charges are $528.6M across three charges, all in the Orbotech-derived PCB and Display businesses (KLA does not tie them to the Orbotech deal by name in these filings). The Display exit followed a major Display customer's cancellation of a technology project, and a settlement was received in Q2 FY25 (amount NOT DISCLOSED) [F] A5-054.
+Cumulative charges are $528.6M across three charges, all in the Orbotech-derived PCB and Display businesses (KLA does not tie them to the Orbotech deal by name in these filings). The Display exit followed a major Display customer's cancellation of a technology project, and a settlement was received in Q2 FY25 (amount NOT DISCLOSED (read: FY25 10-K Item 7)) [F] A5-054.
 
 ### Prior-claim check (prior/text/kla_metrology_audit.md)
 
 | Prior claim | Verdict | Evidence |
 |---|---|---|
-| "Q1 FY27 10-Q: China +49% QoQ / +13% YoY" | CONFIRMED. The exact share is 34.5% (the prior said "exact SEC % pending") | [F] A4-010, A4-015 |
-| "Announced FPD manufacturing exit Mar 2024" | CONFIRMED (decision March 2024) | [F] A5-053 |
-| "following customer project cancellation" | CONFIRMED (FY25 10-K) | [F] A5-054 |
-| "ended manufacturing Dec 31, 2024" | CORRECTED: Dec 31, 2024 was the *announced target* for ending manufacturing of *most* Display products. No later filing confirms the actual completion date | [F] A5-053 |
-| "$70.5M Q3 FY24 goodwill impairment" | CONFIRMED. The prior omits the related $219.0M (Q2 FY24) and $239.1M (Q2 FY25) PCB/Display impairments | [F] A5-051, A5-052, A5-055 |
-| "Q1 FY27 10-Q accession 0000319201-26-000034 dated 2026-10-29" | CONFIRMED (ir.kla.com mirror URL; signature date October 29, 2026) | [F] A4-010 url |
+| "Q1 FY27 10-Q: China +49% QoQ / +13% YoY" | MATCHES SOURCE. The exact share is 34.5% (the prior said "exact SEC % pending") | [F] A4-010, A4-015 |
+| "Announced FPD manufacturing exit Mar 2024" | MATCHES SOURCE (decision March 2024) | [F] A5-053 |
+| "following customer project cancellation" | MATCHES SOURCE (FY25 10-K) | [F] A5-054 |
+| "ended manufacturing Dec 31, 2024" | CORRECTED: Dec 31, 2024 was the *announced target* for ending manufacturing of *most* Display products. No later filing gives the actual completion date | [F] A5-053 |
+| "$70.5M Q3 FY24 goodwill impairment" | MATCHES SOURCE. The prior omits the related $219.0M (Q2 FY24) and $239.1M (Q2 FY25) PCB/Display impairments | [F] A5-051, A5-052, A5-055 |
+| "Q1 FY27 10-Q accession 0000319201-26-000034 dated 2026-10-29" | MATCHES SOURCE (ir.kla.com mirror URL; signature date October 29, 2026) | [F] A4-010 url |
 | KLA handoff row "China %: Pending" | Now filled: Q1 FY27 34.5%; FY26 29.8%; LTM 29.0% | [I] A4-028, [F] A4-013 |
 | KLA row "LTM $14.51B" (cross-check only, A1 scope) | Consistent: LTM regional total $14,505.8M | [I] A4-040 |
 
@@ -931,7 +953,7 @@ Cumulative charges are $528.6M across three charges, all in the Orbotech-derived
 - The prompt says KLA estimated "~$400-500M CY2025 impact" for the Dec 2024 rules. KLA's figure was ~$500M ± $100M, i.e. $400-600M, with ~70% in systems [C] A4-063.
 - The prompt frames the "affiliates rule ~$300-350M" estimate as an FY26 figure. KLA framed it as the Dec 2025 quarter plus calendar 2026 (Oct 2025-Dec 2026), and attributed it to "extended export controls" without naming the Affiliates Rule [C] A4-068.
 - The suspension of the Affiliates Rule did not simply end in Nov 2026. It was extended to Jan 10, 2027 [S] A4-073.
-- The prompt expects a "China share of semi process control systems" figure. KLA does not publish one (NOT DISCLOSED above).
+- The prompt expects a "China share of semi process control systems" figure. KLA does not publish one: NOT DISCLOSED (read: letters and slides Q4 FY24-Q1 FY27; Investor Day 2026).
 - Prior file: the FPD "ended manufacturing Dec 31, 2024" claim is corrected above.
 
 ### Gaps

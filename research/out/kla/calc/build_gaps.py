@@ -1,29 +1,55 @@
-"""Build gaps.md: every NOT DISCLOSED / NOT RETRIEVED line from the part notes, plus manifest NOT RETRIEVED rows.
-Usage: python3 -I research/out/kla/calc/build_gaps.py  (run from repo root or anywhere)"""
+"""Build gaps.md: every 'NOT DISCLOSED (read: ...)' / 'NOT RETRIEVED (tried: ...)' in dossier.md, one per line,
+with the item it refers to and the dossier section; then every manifest row with status NOT RETRIEVED.
+Usage: python3 -I research/out/kla/calc/build_gaps.py (run build_dossier.py first)"""
 import csv, os, re
-HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # out/kla
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))         # repo root
-NOTES = [("Q1/Q4/Nova", "Q14_notes.md"), ("Q2/Q3", "Q23_notes.md"), ("A1/A2", "A12_notes.md"),
-         ("A3/A6/Q5", "A36Q5_notes.md"), ("A4/A5", "A45_notes.md")]
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
+MARK = re.compile(r"NOT (DISCLOSED|RETRIEVED) \((read|tried):")
+
+def close_paren(s, i):
+    d = 0
+    for j in range(i, len(s)):
+        if s[j] == "(": d += 1
+        elif s[j] == ")":
+            d -= 1
+            if d == 0: return j + 1
+    return len(s)
+
 out = ["# Gap log - KLA (KLAC), FY ends June 30", "",
-       "One line per item. Built by calc/build_gaps.py from the part notes ('Gaps' sections) and from sources/kla/_manifest.csv. "
-       "Items were de-duplicated by text only, so near-duplicates across parts can remain.", ""]
-seen = set()
-for label, f in NOTES:
-    txt = open(os.path.join(HERE, "parts", f), encoding="utf-8").read()
-    m = re.search(r"^## Gaps.*?$(.*?)(?=^## |\Z)", txt, re.S | re.M)
-    block = m.group(1) if m else ""
-    items = [l.strip()[2:].strip() for l in block.splitlines() if l.strip().startswith("- ")]
-    items = [i for i in items if "NOT DISCLOSED" in i or "NOT RETRIEVED" in i or "Not retrieved" in i]
-    out.append(f"## {label}")
-    for i in items:
-        k = re.sub(r"\W+", "", i.lower())[:120]
-        if k in seen: continue
-        seen.add(k); out.append(f"- {i}")
-    out.append("")
-out.append("## Manifest: documents attempted and NOT RETRIEVED")
+       "Built by calc/build_gaps.py. Part 1 lists every NOT DISCLOSED / NOT RETRIEVED marker in dossier.md (one per line, with the item and the section). "
+       "Part 2 lists every document attempt logged NOT RETRIEVED in sources/kla/_manifest.csv. The same item can appear in two sections when two parts of the dossier record it.", "",
+       "## 1. Items in dossier.md", ""]
+seen, sec, n, header, prev = set(), "", 0, [], ""
+for line in open(os.path.join(HERE, "dossier.md"), encoding="utf-8"):
+    line = line.rstrip("\n")
+    if line.startswith("#"):
+        sec = line.lstrip("# ").strip(); continue
+    if line.startswith("|---"):
+        header = [c.strip() for c in prev.strip("|").split("|")]; prev = line; continue
+    if not line.startswith("|"): header = []
+    prev = line
+    pieces = [c.strip() for c in line.strip("|").split("|")] if line.startswith("|") else [line.strip("- ").strip()]
+    rowlabel = pieces[0] if line.startswith("|") else ""
+    for ci, p in enumerate(pieces):
+        col = header[ci] if line.startswith("|") and ci < len(header) and ci > 0 else ""
+        for m in MARK.finditer(p):
+            end = close_paren(p, m.start() + len("NOT DISCLOSED ") if m.group(1) == "DISCLOSED" else m.start() + len("NOT RETRIEVED "))
+            marker = p[m.start():end]
+            if "(read: ...)" in marker or "(tried: ...)" in marker: continue
+            before = p[:m.start()].strip(" :;,.-")
+            before = re.split(r"(?<=[.;])\s", before)[-1] if before else ""
+            item = (rowlabel + " - " if rowlabel and rowlabel not in before else "") + (col + " - " if col and col not in before else "") + before
+            item = re.sub(r"\*\*", "", item)[-160:].strip(" -:") or "(see section)"
+            key = re.sub(r"\W+", "", (item + marker).lower())
+            if key in seen: continue
+            seen.add(key); n += 1
+            out.append(f"- [{sec[:60]}] {item}: {marker}")
+out += ["", f"({n} items)", "", "## 2. Documents attempted and NOT RETRIEVED (manifest)", ""]
+k = 0
 for r in csv.DictReader(open(os.path.join(ROOT, "research/sources/kla/_manifest.csv"), encoding="utf-8")):
     if r["status"] == "NOT RETRIEVED":
-        out.append(f"- NOT RETRIEVED (tried: {r['url']}; {r['http_code'] or 'no code'}; {r['note'][:160]}) - {r['doctype']}")
+        k += 1
+        out.append(f"- {r['doctype']} ({r['issuer']}, {r['date']}): NOT RETRIEVED (tried: {r['url']}; HTTP {r['http_code'] or 'n/a'}; {r['note'][:140]})")
+out.append(f"\n({k} documents)")
 open(os.path.join(HERE, "gaps.md"), "w", encoding="utf-8").write("\n".join(out) + "\n")
-print("lines", len(out))
+print("dossier items", n, "manifest", k)

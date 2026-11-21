@@ -51,5 +51,5 @@ Short names for the KLA documents used below:
 ## 3 questions not settled
 
 1. **Did KLA react to Onto–Rigaku on the Q4 FY26 call (2026-07-28)?** The transcript was NOT RETRIEVED, and no KLA document after April 2026 mentions the deal.
-2. **How much of the $12.57B backlog (Jun 30, 2026) ships within 12 months, and how much revenue have supply limits deferred?** The FY26 10-K dropped the 12-month share; the FY25 10-K gave 71-76%. Lead-time months appear only in third-party call transcripts.
+2. **How much of the $12.57B backlog (Jun 30, 2026) ships within 12 months, and how much revenue have supply limits deferred?** KLA published quarterly RPO with a 12-month share through Jun 2025 (last figure: $7.86B, 71-76% within 12 months, FY25 10-K). It then dropped the quarterly note, and the FY26 10-K gives no 12-month share. Lead-time months appear only in third-party call transcripts.
 3. **What is KLA's actual position in hybrid-bonding inspection?** The four unnamed "next" hybrid-bonding systems, the specifications of Kronos, irArcher and CIRCL-AP, and any void-inspection plans could not be checked: kla.com product pages and the SPIE/ECTC full texts were NOT RETRIEVED.

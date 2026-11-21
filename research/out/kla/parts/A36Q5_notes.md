@@ -64,8 +64,8 @@ One-off items management named:
 | Revenue trough | Q4 FY23 (Apr-Jun 2023) $2,355.1M, **−21.1%**. Second dip in Q3 FY24 (Jan-Mar 2024) at $2,359.8M | First trough Q2 FY13 (Oct-Dec 2012) $673.0M, −24.6%. Deepest Q1 FY16 (Jul-Sep 2015) $642.6M, **−28.0%** |
 | Quarters below peak | 7 (peak regained in Q2 FY25) | 15 (peak regained in Q4 FY16) |
 | GAAP OM at peak → low | 40.2% → 29.5% in Q2 FY24, **−10.7 pts**, including a $219.0M impairment. Excluding impairments: 34.2% in Q3 FY24, **−6.0 pts** | 35.7% → 17.0% in Q1 FY15 (Jul-Sep 2014), **−18.7 pts**. At the Sep-2015 revenue low: 25.0% (26.1% excluding the $7.1M restructuring) |
-| Non-GAAP OM at peak → low | 42.4% → 36.8% in Q3 FY24, **−5.7 pts**. From the margin peak in Q1 FY23 (44.1%): −7.3 pts | NOT RETRIEVED (tried: no KLA-Tencor 2012-15 earnings releases fetched) |
-| One-offs named by management | Impairments of $219.0M (Q2 FY24) and $70.5M (Q3 FY24); restructuring of $19.1M (Q3 FY23) and $8.1M (Q4 FY23) [F] A6-005, A6-006, A6-009 | Restructuring of $22.4M (Q4 FY15) and $7.1M (Q1 FY16) [F] A6-019. One-offs in Q1 FY15: not identified |
+| Non-GAAP OM at peak → low | 42.4% → 36.8% in Q3 FY24, **−5.7 pts**. From the margin peak in Q1 FY23 (44.1%): −7.3 pts | NOT DISCLOSED (read: KLA-Tencor Q4 FY14 release p1). KLA-Tencor then reported non-GAAP net income and EPS only, with no non-GAAP operating margin [F] A6-028 |
+| One-offs named by management | Impairments of $219.0M (Q2 FY24) and $70.5M (Q3 FY24); restructuring of $19.1M (Q3 FY23) and $8.1M (Q4 FY23) [F] A6-005, A6-006, A6-009 | Restructuring of $22.4M (Q4 FY15) and $7.1M (Q1 FY16) [F] A6-019. Q1 FY15 (Jul-Sep 2014, the OM low, revenue $642.9M, OI $109.2M [F] A6-026): no one-off named in the 10-Q, so 17.0% holds with and without one-offs [I] A6-027 |
 | Evidence | [I] A6-010, A6-011, A6-012 | [I] A6-023, A6-024 |
 
 Method notes:
@@ -117,20 +117,20 @@ Method notes:
 | Prior claim | Verdict | Evidence |
 |---|---|---|
 | 2022 Investor Day CY2026 target $14.0B ± $500M, 41-43% OM: "MET" | **CORRECTED.** CY2026 is not complete, and the prior used FY26 revenue. On a CY26 implied basis (Q2 FY27 guidance midpoint), revenue of about $15.9B **exceeds** the top of the range and OM of about 45% exceeds 41-43%. The same target model's ~63% GM is **not met** (about 62.5%). EPS target $38±1.50 pre-split, implied about $46.5 | A3-037, A3-039, A3-041 |
-| Optical component bottlenecks constrained H1 CY26 shipments | **CONFIRMED** (company statements [C] and calls [S]; not in the 10-K, which the prior cited) | Q5-010, Q5-020, Q5-024, Q5-030 |
-| Gen4/Gen5 lead times extended past 12 months | **CONFIRMED [S] only** (Q1 FY27 call: average about 12 months, Gen4/Gen5 "longer"); not in KLA documents | Q5-027, Q5-028 |
-| Backlog $7.86B (Jun 2025) → $12.57B (Jun 2026) lifted by optical bottlenecks | Figures **CONFIRMED**; cause **CORRECTED**. The 10-K attributes the increase to "strong demand driven by the AI infrastructure buildout" | Q5-002 |
+| Optical component bottlenecks constrained H1 CY26 shipments | **MATCHES SOURCE** (company statements [C] and calls [S]; not in the 10-K, which the prior cited) | Q5-010, Q5-020, Q5-024, Q5-030 |
+| Gen4/Gen5 lead times extended past 12 months | **MATCHES SOURCE [S] only** (Q1 FY27 call: average about 12 months, Gen4/Gen5 "longer"); not in KLA documents | Q5-027, Q5-028 |
+| Backlog $7.86B (Jun 2025) → $12.57B (Jun 2026) lifted by optical bottlenecks | Figures **MATCHES SOURCE**; cause **CORRECTED**. The 10-K attributes the increase to "strong demand driven by the AI infrastructure buildout" | Q5-002 |
 | Management planned flat CY26 capacity | **CORRECTED.** No capacity plan statement found. Oct 2025 guidance was H1 CY26 revenue "roughly flat to modestly up" vs H2 CY25. CFO (Oct 2026, [S]): they had expected 2026 "pretty flat". H1 capacity decisions were made inside the lead time [C] | Q5-020, Q5-031 |
 | DRAM memory pricing pressuring image-processing compute costs into H2 CY2027 | **CORRECTED.** Filings say a GM impact "in fiscal 2027" (to Jun 2027 = H1 CY2027). Letters say pricing persists "through at least calendar 2026". No H2 CY2027 statement found | Q5-005, Q5-011, Q5-012, Q5-017 |
-| Current KLA tool delivery lead time ~12 months average | **CONFIRMED [S]** (Q1 FY27 call, 2026-10-28) | Q5-027 |
-| Q2 FY27 guidance $4.70B ± $200M; Q1 FY27 non-GAAP OM 46.1% | **CONFIRMED** | A3-026, A3-041 |
+| Current KLA tool delivery lead time ~12 months average | **MATCHES SOURCE [S]** (Q1 FY27 call, 2026-10-28) | Q5-027 |
+| Q2 FY27 guidance $4.70B ± $200M; Q1 FY27 non-GAAP OM 46.1% | **MATCHES SOURCE** | A3-026, A3-041 |
 
 ## Gaps
 - Q4 FY26 earnings-call transcript (2026-07-28): NOT RETRIEVED (tried: fool.com URL patterns for 07/28 and 07/29 returned 404; GuruFocus is paywalled; not worked around).
-- Non-GAAP operating margin for the 2012-15 downturn: NOT RETRIEVED (tried: no KLA-Tencor FY12-FY16 earnings releases fetched).
+- Non-GAAP operating margin for the 2012-15 downturn: NOT DISCLOSED (read: KLA-Tencor Q4 FY14 earnings release p1; the company then reported non-GAAP net income and EPS only).
 - Lead times in months: NOT DISCLOSED (read: FY26 10-K Item 1 Backlog and Item 1A; Q1 FY27 10-Q Item 1A; letters Q2 FY26 to Q1 FY27). Secondary sources only.
 - Revenue deferred by supply constraints: NOT DISCLOSED (read: letters Q2 FY26 to Q1 FY27; FY26 10-K MD&A).
 - 12-month conversion share of the FY26 backlog: NOT DISCLOSED (read: FY26 10-K Item 1 Backlog).
 - Q4 FY19 revenue excluding Orbotech: NOT DISCLOSED (read: FY19 10-K Note 20; Q3 FY19 10-Q revenue-by-product table).
-- One-off items in Q1 FY15 (Jul-Sep 2014, the OM low): NOT RETRIEVED (tried: the Q1 FY15 10-Q was not fetched; the FY15 10-K quarterly note has no operating detail).
+- One-off items in Q1 FY15 (Jul-Sep 2014, the OM low): NOT DISCLOSED (read: Q1 FY15 10-Q statements of operations, MD&A, Note 17). Q1 FY15 earnings release: NOT RETRIEVED (tried: ir.kla.com financial-results listing; press-release pages 38-41).
 - Q3 FY25 earnings release: text extraction unreadable (font encoding). Values taken from the Q3 FY25 letter and the Q3 FY26 release comparative.

@@ -78,8 +78,8 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 
 | Item | Jun 30, 2025 | Dec 31, 2025 | Mar 31, 2026 | Jun 30, 2026 | Sep 30, 2026 | Evidence |
 |---|---|---|---|---|---|---|
-| Backlog ($B) | 7.86 | NOT DISCLOSED | NOT DISCLOSED | 12.57 | NOT DISCLOSED ("continues to grow") | [F] A2-001, A2-003; [C] A2-004 |
-| Orders / book-to-bill | NOT DISCLOSED | NOT DISCLOSED | NOT DISCLOSED | FY26 implied ~1.35 | NOT DISCLOSED | [I] A2-006 (Low) |
+| Backlog ($B) | 7.86 | NOT DISCLOSED (read: 10-Q Q2 FY26 Notes) | NOT DISCLOSED (read: 10-Q Q3 FY26 Notes) | 12.57 | NOT DISCLOSED (read: 10-Q Q1 FY27 Notes; letter says "continues to grow") | [F] A2-001, A2-003; [C] A2-004 |
+| Orders / book-to-bill | NOT DISCLOSED (read: 10-K FY25, Q4 FY25 letter) | NOT DISCLOSED (read: Q2 FY26 letter, slides, 10-Q) | NOT DISCLOSED (read: Q3 FY26 letter, slides, 10-Q) | FY26 implied ~1.35 | NOT DISCLOSED (read: Q1 FY27 letter, slides, 10-Q) | [I] A2-006 (Low) |
 | Inventory total ($M) | 3,212.1 | 3,282.6 | 3,437.0 | 3,648.5 | 4,090.4 | [F] A2-007..010 |
 | - raw materials | 1,491.8 | 1,568.7 | 1,648.4 | 1,849.7 | 2,126.9 | |
 | - WIP | 833.9 | 836.2 | 929.6 | 937.7 | 1,076.9 | |
@@ -94,6 +94,26 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 | DSO (days, trade AR) | | 57.9 | 60.7 | 71.9 | 68.3 | [I] A2-027 |
 | Purchase commitments ($B) | n/a | 2.75 | 4.83 | 5.97 | 8.87 | [F] A2-029..032 |
 
+### Quarterly RPO and the share due within 12 months (added after the completeness review)
+
+KLA published quarterly remaining performance obligations (RPO) through Jun 2025 and then stopped.
+
+| Quarter-end | RPO ($B) | KLA's estimate of share due within 12 months | Implied $B within 12 months | Evidence |
+|---|---|---|---|---|
+| Q1 FY24 (Sep 30, 2023) | 10.85 | 50-60% (stated as 40-50% beyond) | 5.42-6.51 | [F] A2-035, [C] A2-036 |
+| Q2 FY24 (Dec 31, 2023) | 10.65 | 50-55% (45-50% beyond) | 5.33-5.86 | [F] A2-037, [C] A2-038 |
+| Q3 FY24 (Mar 31, 2024) | 9.90 | 55-60% (40-45% beyond) | 5.45-5.94 | [F] A2-039, [C] A2-040 |
+| Q4 FY24 (Jun 30, 2024) | 9.83 | 59-64% | 5.80-6.29 | [F] A2-041, [C] A2-042 |
+| Q1 FY25 (Sep 30, 2024) | 10.04 | 65-70% | 6.53-7.03 | [F] A2-043, [C] A2-044 |
+| Q2 FY25 (Dec 31, 2024) | 9.14 (after a ~$430M cut for the Dec 2024/Jan 2025 export rules) | 67-72% | 6.12-6.58 | [F] A2-045, [C] A2-046 |
+| Q3 FY25 (Mar 31, 2025) | 8.91 | 70-75% | 6.24-6.68 | [F] A2-047, [C] A2-048 |
+| Q4 FY25 (Jun 30, 2025) | 7.86 | 71-76% | 5.58-5.97 | [F] A2-049, [C] A2-050 |
+| Q1 FY26 (Sep 30, 2025) to Q1 FY27 (Sep 30, 2026) | NOT DISCLOSED (read: Notes "Revenue" in 10-Qs Q1 FY26, Q2 FY26, Q3 FY26, Q1 FY27 and the FY26 10-K; none contains an RPO paragraph). The FY26 10-K gives only the Item 1 backlog of $12.57B at Jun 30, 2026 | NOT DISCLOSED (read: FY26 10-K Item 1 Backlog and Notes) | - | [I] A2-051 |
+
+- The implied $ amounts are [I] A2-051 (High). The script `calc/a2_rpo_series.py` reads each figure from the saved filing text.
+- Between Sep 2023 and Jun 2025, RPO fell from $10.85B to $7.86B while the share KLA expected to ship within 12 months rose from 50-60% to 71-76%. The dollars due within 12 months stayed at about $5.4-7.0B.
+- The quarterly RPO note, with its 12-month split, was dropped from Q1 FY26 (Jul-Sep 2025). It disappeared just before backlog rose to $12.57B and lead times lengthened. Only annual backlog figures remain, and the FY26 10-K omits the 12-month share [I] A2-051.
+
 - Backlog is "primarily consisting of sales orders where written customer requests have been received" [F] A2-002. It is disclosed only annually, in the 10-K. The FY26 10-K attributes the rise to AI-infrastructure demand. Unlike the FY25 10-K (71-76% within 12 months [F] A2-003), it gives **no share due within 12 months**: NOT DISCLOSED (read: 10-K FY26 Item 1 Backlog).
 - KLA's 10-Q "transaction price not yet recognized" table equals contract liabilities only ("which equals our contract liabilities") [F] A2-013. It is not a full RPO or backlog figure, so the 10-Qs give no quarterly backlog: NOT DISCLOSED (read: 10-Q Q2 FY26, Q3 FY26, Q1 FY27 Note 2).
 - Orders, bookings and book-to-bill: NOT DISCLOSED (read: Q2 FY26-Q1 FY27 letters, slides, releases, 10-Qs). The FY26 implied orders of ~$18.3B and book-to-bill of ~1.35 = (revenue + Δbacklog) / revenue [I] A2-006 (Low: cancellations, FX and backlog scope are unknown).
@@ -105,23 +125,23 @@ KLA uses two AP revenue definitions, and they are not interchangeable:
 
 | Prior claim | Verdict | Correct value / comment | Evidence |
 |---|---|---|---|
-| Backlog $7.86B (Jun 30, 2025) to $12.57B (Jun 30, 2026) | CONFIRMED (amounts); CORRECTED (cause) | Amounts are right. The 10-K attributes the rise to "strong demand driven by the AI infrastructure buildout"; it does not cite optical supply bottlenecks as the prior file implies | [F] A2-001 |
-| Services $3.1B FY26; $850M Q1 FY27 +14% YoY | CONFIRMED | FY26 $3,125.9M; Q1 FY27 $850.5M, +14.2% | [F] A1-046, A1-057; [I] A1-061 |
+| Backlog $7.86B (Jun 30, 2025) to $12.57B (Jun 30, 2026) | MATCHES SOURCE (amounts); CORRECTED (cause) | Amounts are right. The 10-K attributes the rise to "strong demand driven by the AI infrastructure buildout"; it does not cite optical supply bottlenecks as the prior file implies | [F] A2-001 |
+| Services $3.1B FY26; $850M Q1 FY27 +14% YoY | MATCHES SOURCE | FY26 $3,125.9M; Q1 FY27 $850.5M, +14.2% | [F] A1-046, A1-057; [I] A1-061 |
 | >80% of services on >3-yr (fixed) subscription contracts; <20% T&M | CORRECTED | >80% of revenue from multi-year subscription contracts [C]; the written slide says "~3-year average contract length" (spoken: "more than three years"). "Fixed" is not KLA's word. The slide says 95% of services revenue is recurring including T&M, and gives no "<20% T&M" figure | [C] A1-062..064 |
-| 95% contract renewal | CONFIRMED | 95% contract renewal rate (Investor Day); >95% in Nov 2025 update | [C] A1-063, A1-065 |
-| Services CAGR target raised to 13-15% (Mar 2026) | CONFIRMED | | [C] A1-066 |
-| Q1 FY27 revenue $4.14B, non-GAAP OM 46.1%, GM 61.9% / 62.7% | CONFIRMED | 4,136.0; 46.1% (recomputed 46.05%); GAAP GM 61.9%, NG 62.7% | [F] A1-001, A1-006, A1-017, A1-018 |
-| Q1 FY27 +28.9% YoY | CONFIRMED | +28.9% | [I] A1-005 |
-| LTM $14.51B | CONFIRMED | $14,505.8M (+15.8% YoY) | [I] A1-025 |
-| LTM GM 61.5% / 62.5% | CONFIRMED | 61.47% / 62.47% | [I] A1-026 |
-| Q1 FY27 FCF $1.34B (OCF $1.53B - capex $195M) | CONFIRMED | 1,530.9 - 194.8 = 1,336.2 | [F] A1-027, A1-028 |
-| FY26 revenue $13.58B | CONFIRMED | 13,579.5 | [F] A1-002 |
-| Q2 FY27 guidance $4.70B ± $200M | CONFIRMED | $4.7B ± $200M; NG GM 62.5% ± 1% | [C] A1-075 |
-| Services 20.6% of Q1 FY27 revenue; FY26 23.0% | CONFIRMED | 20.6%; 23.0% | [I] A1-061 |
-| Recurring ~16.5%-18.4% of total revenue | NOT VERIFIABLE as stated | >80% x FY26 services = ≥18.4% of FY26 revenue (illustrative lower bound only); KLA gives no recurring-revenue % of total | a12_results.py output |
+| 95% contract renewal | MATCHES SOURCE | 95% contract renewal rate (Investor Day); >95% in Nov 2025 update | [C] A1-063, A1-065 |
+| Services CAGR target raised to 13-15% (Mar 2026) | MATCHES SOURCE | | [C] A1-066 |
+| Q1 FY27 revenue $4.14B, non-GAAP OM 46.1%, GM 61.9% / 62.7% | MATCHES SOURCE | 4,136.0; 46.1% (recomputed 46.05%); GAAP GM 61.9%, NG 62.7% | [F] A1-001, A1-006, A1-017, A1-018 |
+| Q1 FY27 +28.9% YoY | MATCHES SOURCE | +28.9% | [I] A1-005 |
+| LTM $14.51B | MATCHES SOURCE | $14,505.8M (+15.8% YoY) | [I] A1-025 |
+| LTM GM 61.5% / 62.5% | MATCHES SOURCE | 61.47% / 62.47% | [I] A1-026 |
+| Q1 FY27 FCF $1.34B (OCF $1.53B - capex $195M) | MATCHES SOURCE | 1,530.9 - 194.8 = 1,336.2 | [F] A1-027, A1-028 |
+| FY26 revenue $13.58B | MATCHES SOURCE | 13,579.5 | [F] A1-002 |
+| Q2 FY27 guidance $4.70B ± $200M | MATCHES SOURCE | $4.7B ± $200M; NG GM 62.5% ± 1% | [C] A1-075 |
+| Services 20.6% of Q1 FY27 revenue; FY26 23.0% | MATCHES SOURCE | 20.6%; 23.0% | [I] A1-061 |
+| Recurring ~16.5%-18.4% of total revenue | UNSUPPORTED as stated | >80% x FY26 services = ≥18.4% of FY26 revenue (illustrative lower bound only); KLA gives no recurring-revenue % of total | a12_results.py output |
 | CY25: $9.0B Semi PC + $3.0B services / $12.74B; "94.2% Semi PC + Services; ~5.8% PCB/Comp" | CORRECTED | CY25 total $12,745M is right. Semi PC systems (WI+Patterning+Other) $8,971M + services $2,903M = 93.2%. PCB & Component segment = 5.2% (systems only 3.0%). Specialty Semi Process (4.4%) is missing from the prior split | Q2 FY26 slides p6-7; a12_results.py |
 | Total AP revenue ~$950M CY25; AP process-control systems $1.1B+ in CY26 (+70%+) | CORRECTED (wording) | $950M is "total systems revenue" [C]. The CY26 figure is "approximately $1.1 billion" (not "$1.1B+") on a ~$635M process-control base, >70% YoY | [C] A1-069..071 |
-| Gen4/Gen5 lead times >12 months; optical bottlenecks constrained H1 CY26 | NOT VERIFIABLE (in A1/A2 docs) | Q2 FY26 letter: lead times "increasing due to supply constraints", with no months stated | [C] A2-005 |
+| Gen4/Gen5 lead times >12 months; optical bottlenecks constrained H1 CY26 | UNSUPPORTED (in A1/A2 docs) | Q2 FY26 letter: lead times "increasing due to supply constraints", with no months stated | [C] A2-005 |
 
 ## Premise issues
 - The prior file implies the 10-K ties the backlog rise to optical supply bottlenecks. The 10-K cites AI-driven demand (above).
