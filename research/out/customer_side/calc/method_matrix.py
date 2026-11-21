@@ -30,16 +30,16 @@ METHODS = ["optical", "infrared", "acoustic", "laser-acoustic", "X-ray CT / lami
 # (company, method): (status, what/where in the company's words, evidence ids, confidence, reason)
 A = {
  # ---------------- SK hynix
- ("SK hynix", "optical"): ("production", "HBM in-line chip-warpage optical module, \"commercialized solution currently in use\" ([C]); fab-wide optical inspection at each process step in development and mass production", "PAPM-201 PAPM-203 PAPM-206 TALK-006 TALK-007", "Medium", "HBM warpage production status is the company's own untestable claim; fab-wide statement is generic"),
- ("SK hynix", "infrared"): ("production", "TSV CVD-film IR inspection in the HBM WLP line \"successfully applied in mass production\"; post-bond die shift/tilt by IR validated in a \"production-grade MI setup\" on actual HBM wafers (pilot)", "PAPM-219 PAPM-222 PAPM-213 PAPM-216", "Medium", "journal full text read; 'applied in mass production' refers to the optimized TSV film process including its IR inspection step"),
+ ("SK hynix", "optical"): ("production", "HBM in-line chip-warpage optical module, \"commercialized solution currently in use\" ([C]); fab-wide optical inspection at each process step in development and mass production (newsroom)", "PAPM-201 PAPM-203 PAPM-206 TALK-006 TALK-007", "Medium", "HBM warpage production status is the company's own untestable claim; fab-wide statement is generic"),
+ ("SK hynix", "infrared"): ("production", "TSV CVD-film IR inspection in the HBM WLP line, in a process the authors say was \"successfully applied in mass production\" ([C]); post-bond die shift/tilt by IR validated in a \"production-grade MI setup\" on actual HBM wafers (pilot)", "PAPM-219 PAPM-222 PAPM-213 PAPM-216", "Medium", "journal full text read; the mass-production statement is the company's own untestable claim and refers to the optimized TSV film process including its IR inspection step"),
  ("SK hynix", "acoustic"): ("lab", "C-SAM on 12-layer HBM4 stacks of Mechanical Test Vehicle 4: \"void-free\"", "PAPM-134 PAPM-135 PAPM-136 PAPM-137", "High", "abstract states a test vehicle"),
  ("SK hynix", "laser-acoustic"): ("none found", "", "", "Medium", "no SK hynix document read names it"),
  ("SK hynix", "X-ray CT / laminography"): ("none found", "", "", "Medium", "no SK hynix 2025-26 document read names X-ray for HBM/TSV/bonding (PAPM gap list)"),
  ("SK hynix", "X-ray scatterometry / XRF / XRD"): ("none found", "", "", "Medium", "none in abstracts or newsroom read"),
  ("SK hynix", "AFM"): ("none found", "", "", "Medium", "none in abstracts or newsroom read"),
- ("SK hynix", "e-beam"): ("production", "FIB cross-section of TSV SiO2 step coverage in a process \"successfully applied in mass production\"; fab-wide electron-microscope inspection at each process step", "PAPM-221 PAPM-222 TALK-006 TALK-007", "Medium", "FIB is used as the process monitor of a production process; fab-wide statement is generic"),
+ ("SK hynix", "e-beam"): ("production", "FIB cross-section of TSV SiO2 step coverage in a process the authors say was \"successfully applied in mass production\" ([C]); fab-wide electron-microscope inspection at each process step (newsroom)", "PAPM-221 PAPM-222 TALK-006 TALK-007", "Medium", "FIB is used as the process monitor of a production process; fab-wide statement is generic"),
  ("SK hynix", "electrical test"): ("lab", "HBM4 MTV4 daisy-chain resistance; HBM3E TSV keep-out-zone EM/TDDB and chip-level tests; back-side RDL daisy-chain test vehicle. Press only: an HBM4 system-level tester passed internal qualification ([S], not counted)", "PAPM-135 PAPM-139 PAPM-140 PAPM-155 SMP-009 TALK-017", "Medium", "own words give test vehicles only; qualification report is press"),
- ("SK hynix", "extra: virtual metrology / ML sampling"): ("production", "Panoptes VM \"in its production lines since 2022\"; GRACE overlay VM in production since 2025 (front-end, not HBM-specific)", "TALK-004 SMP-005 SMP-007", "High", "company newsroom, explicit"),
+ ("SK hynix", "extra: virtual metrology / ML sampling"): ("production", "Panoptes VM \"in its production lines since 2022\" and GRACE overlay VM in production since 2025, both by SK hynix's own claim ([C]); front-end, not HBM-specific", "TALK-004 SMP-005 SMP-007", "Medium", "company newsroom, explicit but untestable"),
  # ---------------- Samsung
  ("Samsung", "optical"): ("production", "191 Hitachi High-Tech IS4100 patterned-wafer inspectors matched in a DRAM HVM line (memory front end, not HBM); for hybrid bonding optical inspection is only \"examined\" (VLSI 2025 workshop)", "PAPM-224 PAPM-225 TALK-020", "High", "journal full text names the HVM line"),
  ("Samsung", "infrared"): ("lab", "IR photoemission / lock-in OBIRCH in V-NAND failure analysis, said to be \"reaching their limits\"", "PAPM-081 PAPM-086", "Medium", "FA lab use only; nothing on bonded interfaces"),
@@ -49,18 +49,18 @@ A = {
  ("Samsung", "X-ray scatterometry / XRF / XRD"): ("none found", "pre-bond SiCN characterised by XPS, ToF-SIMS and MEIS (other methods)", "PAPM-057 PAPM-058", "Medium", "no XRF/XRD/SAXS named"),
  ("Samsung", "AFM"): ("pilot", "high-throughput in-line AFM \"performed on production wafers in the fab\" for hybrid bonding in VNAND (three wafers; Nearfield co-authors); AFM \"examined\" for HB (workshop)", "SMP-016 TALK-020", "Medium", "production wafers, but a three-wafer study with the tool vendor; VNAND, not HBM"),
  ("Samsung", "e-beam"): ("lab", "PFIB-SEM deprocessing of HBM2 (with Thermo Fisher); TEM of pre-bond SiCN; AI super-resolution SEM imaging (no status). SEM review/CD measurement in the fab named as a contamination source (implies routine use, not stated as such)", "PAPM-094 PAPM-095 PAPM-057 SMP-017 PAPM-112 PAPM-113", "Low", "routine fab SEM use is implied, not stated"),
- ("Samsung", "electrical test"): ("production", "HBM buffer-die pad-to-micro-bump interface-resistance pre-screen \"in mass production\"; repair+ECC \"Validated on HBM\" and 12-High HBM chip-on-wafer refresh test \"demonstrated in HBM products\" (pilot); leakage-current metrology for hybrid Cu bonding (lab)", "PAPM-049 PAPM-105 PAPM-108 PAPM-109 PAPM-052 PAPM-054", "High", "explicit 'in mass production' in the IRPS 2025 abstract"),
+ ("Samsung", "electrical test"): ("pilot", "proposed method \"for pre-screening of these interface failures in mass production\" (HBM buffer-die pad-to-micro-bump resistance; a proposal, adoption not stated); repair+ECC \"Validated on HBM\"; 12-High HBM chip-on-wafer refresh test (\"demonstrated in HBM products\" is a [C]); leakage-current metrology for hybrid Cu bonding (lab)", "PAPM-049 PAPM-105 PAPM-108 PAPM-109 PAPM-110 PAPM-052 PAPM-054", "Medium", "IRPS 2025 abstract says 'We propose' the mass-production pre-screen; no deployment statement"),
  ("Samsung", "extra: virtual metrology / ML sampling"): ("lab", "ML imputation where \"measurements are conducted on only about 4% of the products\" in DRAM development; SPIE VNAND mass-metrology VM paper attributed to Samsung by inference only", "PAPM-098 PAPM-099 PAPM-193", "Medium", "development phase; SPIE attribution is [I]"),
  # ---------------- Micron
- ("Micron", "optical"): ("production", "AI-enhanced imaging and defect classification across \"front end, assembly and test\" (fab-wide, not HBM-specific)", "TALK-038 TALK-039 SMP-022", "Medium", "company blog, generic"),
+ ("Micron", "optical"): ("production", "AI-enhanced imaging and defect classification across \"front end, assembly and test\", by Micron's own claim ([C]); fab-wide, not HBM-specific", "TALK-038 TALK-039 SMP-022", "Medium", "company blog, generic and untestable"),
  ("Micron", "infrared"): ("none found", "", "", "Medium", "no Micron document read names it"),
  ("Micron", "acoustic"): ("lab", "CSAM \"clean of voids\" on wafer-to-wafer bonding aimed at HBM density; integration \"is demonstrated\"", "PAPM-015 PAPM-016 PAPM-017", "High", "abstract: demonstration"),
  ("Micron", "laser-acoustic"): ("none found", "", "", "Medium", "no Micron document read names it"),
  ("Micron", "X-ray CT / laminography"): ("lab", "co-authored lab X-ray irradiation study of 3D NAND (not an inspection-use statement). Vendor claim only: SEC says it supplies HBM X-ray inspection tools to Micron (not counted)", "XR-007 XR-008", "Medium", "irradiation study, not inspection use"),
  ("Micron", "X-ray scatterometry / XRF / XRD"): ("none found", "", "", "Medium", "no Micron document read names it"),
  ("Micron", "AFM"): ("none found", "", "", "Medium", "no Micron document read names it"),
- ("Micron", "e-beam"): ("production", "CD-SEM image anomaly detection \"during in-line monitoring\"; new in-line CD-SEM secondary-electron metric for DRAM container slant; off-line SEM overlay where capacitor tilt limits in-line metrology", "PAPM-007 PAPM-008 PAPM-002 PAPM-010", "Medium", "in-line monitoring in a memory fab; HBM not named"),
- ("Micron", "electrical test"): ("lab", "daisy chains in HBM development find voids before visual inspection (CTO, quoted by press [S]); added electrical coverage \"to prevent test escapes during production\" in graphics DRAM (proposed)", "TALK-035 TALK-036 PAPM-026 PAPM-027", "Medium", "HBM item is press-quoted; DRAM item is a proposal"),
+ ("Micron", "e-beam"): ("production", "CD-SEM images \"are captured at metrology step to monitor structural measurements and detect anomaly\" (ML models for them called \"crucial\" during in-line monitoring, deployment not stated); new in-line CD-SEM secondary-electron metric for DRAM container slant; off-line SEM overlay where capacitor tilt limits in-line metrology", "PAPM-007 PAPM-008 PAPM-002 PAPM-010", "Medium", "CD-SEM at metrology steps is described as the manufacturing context; HBM not named"),
+ ("Micron", "electrical test"): ("lab", "daisy chains in HBM development find voids before visual inspection (CTO at ITF World, quoted by press [S]; talk date not stated); added electrical coverage \"to prevent test escapes during production\" in graphics DRAM (proposed)", "TALK-035 TALK-036 PAPM-026 PAPM-027", "Medium", "HBM item is press-quoted; DRAM item is a proposal"),
  ("Micron", "extra: virtual metrology / ML sampling"): ("pilot", "cloud VM validated on one year of production data in an HVM memory fab, \"meeting production release criteria\" (dry etch)", "SMP-025", "Medium", "release criteria met; deployment scale not stated"),
  # ---------------- TSMC
  ("TSMC", "optical"): ("none found", "", "", "Medium", "TSMC's own sites refuse scripts; no TSMC paper read names it"),
@@ -104,7 +104,7 @@ A = {
  ("Amkor", "X-ray scatterometry / XRF / XRD"): ("none found", "", "", "Medium", "none found"),
  ("Amkor", "AFM"): ("none found", "", "", "Medium", "none found"),
  ("Amkor", "e-beam"): ("none found", "", "", "Medium", "none found"),
- ("Amkor", "electrical test"): ("production", "test-services page offers \"in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D\" (an offer, not a statement about a named product)", "SMP-038 TALK-049 TALK-050", "Low", "service offer; date of the text not stated"),
+ ("Amkor", "electrical test"): ("production", "test-services page offers distributed test incl. \"in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D\" ([C] service offer; HBM named only as market context)", "SMP-038 TALK-049 TALK-050", "Low", "service offer, untestable; date of the text not stated"),
  ("Amkor", "extra: virtual metrology / ML sampling"): ("none found", "", "", "Medium", "none found"),
 }
 
@@ -113,11 +113,11 @@ A = {
 # HBM = HBM stack, TSV or micro-bump line; HB = hybrid / wafer bonding (not HBM); FE = memory front end, fab-wide;
 # offer = service offering. [C] = the status is the company's own untestable claim.
 SCOPE = {
-    ("SK hynix", "optical"): "HBM [C]; FE", ("SK hynix", "infrared"): "HBM", ("SK hynix", "e-beam"): "HBM; FE",
-    ("SK hynix", "extra: virtual metrology / ML sampling"): "FE",
+    ("SK hynix", "optical"): "HBM [C]; FE", ("SK hynix", "infrared"): "HBM [C]", ("SK hynix", "e-beam"): "HBM [C]; FE",
+    ("SK hynix", "extra: virtual metrology / ML sampling"): "FE [C]",
     ("Samsung", "optical"): "FE", ("Samsung", "AFM"): "HB (VNAND)", ("Samsung", "electrical test"): "HBM",
-    ("Micron", "optical"): "FE", ("Micron", "e-beam"): "FE", ("Micron", "extra: virtual metrology / ML sampling"): "FE",
-    ("Amkor", "electrical test"): "offer",
+    ("Micron", "optical"): "FE [C]", ("Micron", "e-beam"): "FE", ("Micron", "extra: virtual metrology / ML sampling"): "FE",
+    ("Amkor", "electrical test"): "offer [C]",
 }
 
 

@@ -8,8 +8,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.d
 OUT = os.path.join(ROOT, "research", "out", "customer_side")
 ev = {r["id"]: r for r in csv.DictReader(open(os.path.join(OUT, "evidence.csv"), encoding="utf-8"))}
 CLAIMS = [  # (id, one-line statement for the reviewer)
-    ("PAPM-049", "Samsung pre-screens HBM buffer-die pad-to-micro-bump interface resistance in mass production (electrical test)"),
-    ("PAPM-222", "SK hynix: optimised TSV SiO2 film process (IR inspection + FIB checks) 'successfully applied in mass production' in the HBM WLP line"),
+    ("PAPM-049", "Samsung PROPOSES an electrical pre-screen of HBM buffer-die pad-to-micro-bump interface resistance for use in mass production (adoption not stated)"),
+    ("PAPM-222", "SK hynix authors say the optimised TSV SiO2 film process (IR inspection + FIB checks) was 'successfully applied in mass production' in the HBM WLP line (company claim)"),
     ("PAPM-201", "SK hynix: in-line optical chip-warpage measurement for HBM is a 'commercialized solution currently in use' (company claim)"),
     ("PAPM-206", "SK hynix in-line chip warpage: about 7-10 minutes for all 600 chips of a wafer"),
     ("PAPM-216", "SK hynix: IR post-bond die shift/tilt metrology validated on actual HBM wafers in a 'production-grade MI setup'"),
@@ -22,11 +22,11 @@ CLAIMS = [  # (id, one-line statement for the reviewer)
     ("XR-003", "Intel: on-package DRAM survived three times the DRAM maker's X-ray limit without infant mortality; long-term reliability may be reduced"),
     ("XR-015", "Press only: TSMC's SEMICON Taiwan 2026 forum keynote abstract reportedly lists 'DRAM/HBM damage concern by X-ray'"),
     ("PAPM-225", "Samsung: 191 Hitachi High-Tech IS4100 inspectors matched to +/-2% in a DRAM HVM line (memory front end)"),
-    ("TALK-014", "SK hynix (Aug 2026): D2W hybrid bonding for HBM is 'progressing toward commercialization' (not yet in production)"),
+    ("TALK-014", "Guest tech note by an Inha University professor on SK hynix's newsroom (Aug 2026): D2W hybrid bonding for HBM is 'progressing toward commercialization' (not SK hynix's own words)"),
 ]
 INFER = [  # (ids, statement, inputs)
-    ("SYN-002, SYN-008, SYN-019, SYN-001", "Only three company x method cells pair production wording with HBM: SK hynix infrared and e-beam (TSV-film inspection) and Samsung electrical test; SK hynix optical joins them on a company claim. Every other bonded-interface method is lab, test vehicle or press.",
-     "PAPM-219, PAPM-221, PAPM-222 (SK hynix JSTS), PAPM-049 (Samsung IRPS), PAPM-201 [C]; all other cells in calc/method_matrix.py"),
+    ("SYN-001, SYN-002, SYN-008, SYN-019", "Production wording for HBM-line inspection comes only from SK hynix's own untestable claims (TSV-film IR/FIB checks; in-line chip warpage); Samsung's HBM micro-bump pre-screen is a proposal for mass production (pilot). Every other bonded-interface method is lab, test vehicle or press.",
+     "PAPM-219, PAPM-221, PAPM-222 [C], PAPM-201 [C] (SK hynix JSTS), PAPM-049 (Samsung IRPS, 'We propose'); all other cells in calc/method_matrix.py"),
     ("XR-038", "In period, chipmaker X-ray-damage statements come from Intel (dose numbers, on-package DRAM), Micron (co-author, 3D NAND), Samsung (patent application) and TSMC (press only); none gives an HBM dose limit.",
      "XR-001..XR-013; searches listed in the XR module notes"),
     ("SMP-041", "HBM test intensity is rising (more insertions and items, higher test cost) but no chipmaker publishes a count or test time.",
