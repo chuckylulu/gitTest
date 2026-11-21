@@ -1,24 +1,24 @@
 | Method | SK hynix | Samsung | Micron | TSMC | Intel | ASE | Amkor |
 |---|---|---|---|---|---|---|---|
-| optical | PROD (HBM [C]; FE) | PROD (FE) | PROD (FE) | - | lab | - | - |
-| infrared | PROD (HBM) | lab | - | lab | lab | - | - |
+| optical | PROD (HBM [C]; FE) | PROD (FE) | PROD (FE [C]) | - | lab | - | - |
+| infrared | PROD (HBM [C]) | lab | - | lab | lab | - | - |
 | acoustic | lab | lab | lab | - | lab | lab | lab |
 | laser-acoustic | - | - | - | - | - | - | - |
 | X-ray CT / laminography | - | lab | lab | - | lab | lab | - |
 | X-ray scatterometry / XRF / XRD | - | - | - | - | - | - | - |
 | AFM | - | PILOT (HB (VNAND)) | - | - | lab | lab | - |
-| e-beam | PROD (HBM; FE) | lab | PROD (FE) | - | lab | lab | - |
-| electrical test | lab | PROD (HBM) | lab | lab | lab | lab | PROD (offer) |
-| extra: virtual metrology / ML sampling | PROD (FE) | lab | PILOT (FE) | lab | - | - | - |
+| e-beam | PROD (HBM [C]; FE) | lab | PROD (FE) | - | lab | lab | - |
+| electrical test | lab | PILOT (HBM) | lab | lab | lab | lab | PROD (offer [C]) |
+| extra: virtual metrology / ML sampling | PROD (FE [C]) | lab | PILOT (FE) | lab | - | - | - |
 
 ### Basis for each cell (one [I] row each in evidence.csv, SYN-001 ...)
 
-- SYN-001 SK hynix / optical: **production** (rests on: HBM [C]; FE). HBM in-line chip-warpage optical module, "commercialized solution currently in use" ([C]); fab-wide optical inspection at each process step in development and mass production. Inputs: PAPM-201 PAPM-203 PAPM-206 TALK-006 TALK-007. [I] Medium.
-- SYN-002 SK hynix / infrared: **production** (rests on: HBM). TSV CVD-film IR inspection in the HBM WLP line "successfully applied in mass production"; post-bond die shift/tilt by IR validated in a "production-grade MI setup" on actual HBM wafers (pilot). Inputs: PAPM-219 PAPM-222 PAPM-213 PAPM-216. [I] Medium.
+- SYN-001 SK hynix / optical: **production** (rests on: HBM [C]; FE). HBM in-line chip-warpage optical module, "commercialized solution currently in use" ([C]); fab-wide optical inspection at each process step in development and mass production (newsroom). Inputs: PAPM-201 PAPM-203 PAPM-206 TALK-006 TALK-007. [I] Medium.
+- SYN-002 SK hynix / infrared: **production** (rests on: HBM [C]). TSV CVD-film IR inspection in the HBM WLP line, in a process the authors say was "successfully applied in mass production" ([C]); post-bond die shift/tilt by IR validated in a "production-grade MI setup" on actual HBM wafers (pilot). Inputs: PAPM-219 PAPM-222 PAPM-213 PAPM-216. [I] Medium.
 - SYN-003 SK hynix / acoustic: **lab**. C-SAM on 12-layer HBM4 stacks of Mechanical Test Vehicle 4: "void-free". Inputs: PAPM-134 PAPM-135 PAPM-136 PAPM-137. [I] High.
-- SYN-008 SK hynix / e-beam: **production** (rests on: HBM; FE). FIB cross-section of TSV SiO2 step coverage in a process "successfully applied in mass production"; fab-wide electron-microscope inspection at each process step. Inputs: PAPM-221 PAPM-222 TALK-006 TALK-007. [I] Medium.
+- SYN-008 SK hynix / e-beam: **production** (rests on: HBM [C]; FE). FIB cross-section of TSV SiO2 step coverage in a process the authors say was "successfully applied in mass production" ([C]); fab-wide electron-microscope inspection at each process step (newsroom). Inputs: PAPM-221 PAPM-222 TALK-006 TALK-007. [I] Medium.
 - SYN-009 SK hynix / electrical test: **lab**. HBM4 MTV4 daisy-chain resistance; HBM3E TSV keep-out-zone EM/TDDB and chip-level tests; back-side RDL daisy-chain test vehicle. Press only: an HBM4 system-level tester passed internal qualification ([S], not counted). Inputs: PAPM-135 PAPM-139 PAPM-140 PAPM-155 SMP-009 TALK-017. [I] Medium.
-- SYN-010 SK hynix / extra: virtual metrology / ML sampling: **production** (rests on: FE). Panoptes VM "in its production lines since 2022"; GRACE overlay VM in production since 2025 (front-end, not HBM-specific). Inputs: TALK-004 SMP-005 SMP-007. [I] High.
+- SYN-010 SK hynix / extra: virtual metrology / ML sampling: **production** (rests on: FE [C]). Panoptes VM "in its production lines since 2022" and GRACE overlay VM in production since 2025, both by SK hynix's own claim ([C]); front-end, not HBM-specific. Inputs: TALK-004 SMP-005 SMP-007. [I] Medium.
 - SYN-011 Samsung / optical: **production** (rests on: FE). 191 Hitachi High-Tech IS4100 patterned-wafer inspectors matched in a DRAM HVM line (memory front end, not HBM); for hybrid bonding optical inspection is only "examined" (VLSI 2025 workshop). Inputs: PAPM-224 PAPM-225 TALK-020. [I] High.
 - SYN-012 Samsung / infrared: **lab**. IR photoemission / lock-in OBIRCH in V-NAND failure analysis, said to be "reaching their limits". Inputs: PAPM-081 PAPM-086. [I] Medium.
 - SYN-013 Samsung / acoustic: **lab**. acoustic microscopy "examined" for hybrid-bonding inspection (VLSI 2025 workshop abstract). Press only: talks/joint development with ultrasound vendors ([S], not counted). Inputs: TALK-020 TALK-027. [I] Medium.
@@ -27,13 +27,13 @@
 - SYN-016 Samsung / X-ray scatterometry / XRF / XRD: **none found**. pre-bond SiCN characterised by XPS, ToF-SIMS and MEIS (other methods). Inputs: PAPM-057 PAPM-058. [I] Medium.
 - SYN-017 Samsung / AFM: **pilot** (rests on: HB (VNAND)). high-throughput in-line AFM "performed on production wafers in the fab" for hybrid bonding in VNAND (three wafers; Nearfield co-authors); AFM "examined" for HB (workshop). Inputs: SMP-016 TALK-020. [I] Medium.
 - SYN-018 Samsung / e-beam: **lab**. PFIB-SEM deprocessing of HBM2 (with Thermo Fisher); TEM of pre-bond SiCN; AI super-resolution SEM imaging (no status). SEM review/CD measurement in the fab named as a contamination source (implies routine use, not stated as such). Inputs: PAPM-094 PAPM-095 PAPM-057 SMP-017 PAPM-112 PAPM-113. [I] Low.
-- SYN-019 Samsung / electrical test: **production** (rests on: HBM). HBM buffer-die pad-to-micro-bump interface-resistance pre-screen "in mass production"; repair+ECC "Validated on HBM" and 12-High HBM chip-on-wafer refresh test "demonstrated in HBM products" (pilot); leakage-current metrology for hybrid Cu bonding (lab). Inputs: PAPM-049 PAPM-105 PAPM-108 PAPM-109 PAPM-052 PAPM-054. [I] High.
+- SYN-019 Samsung / electrical test: **pilot** (rests on: HBM). proposed method "for pre-screening of these interface failures in mass production" (HBM buffer-die pad-to-micro-bump resistance; a proposal, adoption not stated); repair+ECC "Validated on HBM"; 12-High HBM chip-on-wafer refresh test ("demonstrated in HBM products" is a [C]); leakage-current metrology for hybrid Cu bonding (lab). Inputs: PAPM-049 PAPM-105 PAPM-108 PAPM-109 PAPM-110 PAPM-052 PAPM-054. [I] Medium.
 - SYN-020 Samsung / extra: virtual metrology / ML sampling: **lab**. ML imputation where "measurements are conducted on only about 4% of the products" in DRAM development; SPIE VNAND mass-metrology VM paper attributed to Samsung by inference only. Inputs: PAPM-098 PAPM-099 PAPM-193. [I] Medium.
-- SYN-021 Micron / optical: **production** (rests on: FE). AI-enhanced imaging and defect classification across "front end, assembly and test" (fab-wide, not HBM-specific). Inputs: TALK-038 TALK-039 SMP-022. [I] Medium.
+- SYN-021 Micron / optical: **production** (rests on: FE [C]). AI-enhanced imaging and defect classification across "front end, assembly and test", by Micron's own claim ([C]); fab-wide, not HBM-specific. Inputs: TALK-038 TALK-039 SMP-022. [I] Medium.
 - SYN-023 Micron / acoustic: **lab**. CSAM "clean of voids" on wafer-to-wafer bonding aimed at HBM density; integration "is demonstrated". Inputs: PAPM-015 PAPM-016 PAPM-017. [I] High.
 - SYN-025 Micron / X-ray CT / laminography: **lab**. co-authored lab X-ray irradiation study of 3D NAND (not an inspection-use statement). Vendor claim only: SEC says it supplies HBM X-ray inspection tools to Micron (not counted). Inputs: XR-007 XR-008. [I] Medium.
-- SYN-028 Micron / e-beam: **production** (rests on: FE). CD-SEM image anomaly detection "during in-line monitoring"; new in-line CD-SEM secondary-electron metric for DRAM container slant; off-line SEM overlay where capacitor tilt limits in-line metrology. Inputs: PAPM-007 PAPM-008 PAPM-002 PAPM-010. [I] Medium.
-- SYN-029 Micron / electrical test: **lab**. daisy chains in HBM development find voids before visual inspection (CTO, quoted by press [S]); added electrical coverage "to prevent test escapes during production" in graphics DRAM (proposed). Inputs: TALK-035 TALK-036 PAPM-026 PAPM-027. [I] Medium.
+- SYN-028 Micron / e-beam: **production** (rests on: FE). CD-SEM images "are captured at metrology step to monitor structural measurements and detect anomaly" (ML models for them called "crucial" during in-line monitoring, deployment not stated); new in-line CD-SEM secondary-electron metric for DRAM container slant; off-line SEM overlay where capacitor tilt limits in-line metrology. Inputs: PAPM-007 PAPM-008 PAPM-002 PAPM-010. [I] Medium.
+- SYN-029 Micron / electrical test: **lab**. daisy chains in HBM development find voids before visual inspection (CTO at ITF World, quoted by press [S]; talk date not stated); added electrical coverage "to prevent test escapes during production" in graphics DRAM (proposed). Inputs: TALK-035 TALK-036 PAPM-026 PAPM-027. [I] Medium.
 - SYN-030 Micron / extra: virtual metrology / ML sampling: **pilot** (rests on: FE). cloud VM validated on one year of production data in an HVM memory fab, "meeting production release criteria" (dry etch). Inputs: SMP-025. [I] Medium.
 - SYN-032 TSMC / infrared: **lab**. "IR imaging" of bonding quality in a university-led wafer-level transfer paper with two TSMC co-authors. Inputs: PAPL-001 PAPL-002. [I] Medium.
 - SYN-035 TSMC / X-ray CT / laminography: **none found**. Press only: SEMICON Taiwan 2026 forum keynote reportedly lists "DRAM/HBM damage concern by X-ray" and calls for X-ray-compatible HBM ([S]; abstract NOT RETRIEVED). Inputs: XR-013 XR-015. [I] Medium.
@@ -55,4 +55,4 @@
 - SYN-059 ASE / electrical test: **lab**. open/short and I-V curve tracing in FA of HBM-bearing fan-out packages; hybrid-bond electrical yield on test vehicles. Inputs: PAPL-106 PAPL-116. [I] High.
 - SYN-061 Amkor / optical: **none found**. shadow moire warpage on a lidded FCBGA (adjacent). Inputs: PAPL-181. [I] Medium.
 - SYN-063 Amkor / acoustic: **lab**. SAT at thermal-cycling read-points on a 2.5D CoW test vehicle with mimic HBMs; cracks confirmed by cross-section. Inputs: TALK-051 TALK-052. [I] High.
-- SYN-069 Amkor / electrical test: **production** (rests on: offer). test-services page offers "in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D" (an offer, not a statement about a named product). Inputs: SMP-038 TALK-049 TALK-050. [I] Low.
+- SYN-069 Amkor / electrical test: **production** (rests on: offer [C]). test-services page offers distributed test incl. "in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D" ([C] service offer; HBM named only as market context). Inputs: SMP-038 TALK-049 TALK-050. [I] Low.

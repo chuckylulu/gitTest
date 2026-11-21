@@ -1,6 +1,6 @@
 # PAPL notes: conference-paper evidence for TSMC, Intel, ASE (incl. SPIL), Amkor (Jan 2025 - 21 Nov 2026)
 
-Files: `PAPL_table.csv` (41 rows, 26 papers), `PAPL.csv` (188 evidence rows, quote_check: FOUND 188 / NOT FOUND 0).
+Files: `PAPL_table.csv` (41 rows, 26 papers), `PAPL.csv` (189 evidence rows incl. 1 [I] without quote, quote_check: FOUND 188 / NOT FOUND 0).
 Every [F] row rests on the paper's abstract (Semantic Scholar record) or its Crossref record. **No full text was read.** IEEE papers: full text NOT RETRIEVED (ieeexplore.ieee.org bot challenge, per the access rules). ISTFA papers: full text NOT RETRIEVED (fetch.py gets HTTP 403 from dl.asminternational.org, tested 2026-11-21, manifest row for istfa2026p0194).
 
 ## How the set was built
@@ -11,7 +11,7 @@ Every [F] row rests on the paper's abstract (Semantic Scholar record) or its Cro
 ## Findings by company
 
 ### TSMC: mostly electrical test, no inspection method named for SoIC or CoWoS HBM stacks
-- SoIC-CS (logic base die with multilayered memory top dies): integration yield shown "on daisy chains" (PAPL-010, PAPL-011). Status: "proven feasible for the first time in this study" (PAPL-012). TSMC claims SoIC-CS can support 8/12/16-hi HBM on a logic base ([C] PAPL-013).
+- SoIC-CS (logic base die with multilayered memory top dies): integration yield shown "on daisy chains" (PAPL-010, PAPL-011). Status in TSMC's words: "proven feasible for the first time in this study" ([C] priority claim, PAPL-012). TSMC claims adopting SoIC-CS in next-generation 8/12/16-hi HBM on CoWoS can support power densities above 1.2 W/mm2 ([C] PAPL-013).
 - CoWoS-R with 4 SoC + 12 HBM: RDL/via interconnects tested by via-chain continuity, comb/meander Rs and leakage current (PAPL-006, PAPL-007). The platform is "currently in production" ([C] PAPL-008). The warpage paper reports "good in-line yields" and "good process control in fine pitch ubump joining" but names no measurement method (PAPL-135, [C] PAPL-136).
 - Micro-bumps: electromigration tests of Cu/Sn and Cu/Ni/Sn/Cu full-IMC micro-bumps (PAPL-018 to PAPL-020). The IRPS 2026 CoWoS EM paper covers RDL, TSV, micro-bump and C4 tiers but names no test method (PAPL-149, PAPL-150).
 - Multi-die test: UCIe-based interconnect, logic and memory test and repair on N3P + CoWoS-S silicon test vehicles. The paper is co-authored with Synopsys (PAPL-022 to PAPL-024).
@@ -34,7 +34,7 @@ Every [F] row rests on the paper's abstract (Semantic Scholar record) or its Cro
 - **FA on 3D stacks.**
   - SIL thermal imaging after thermal flattening of warped Foveros samples (PAPL-078 to PAPL-080).
   - Synchrotron X-ray-assisted device alteration (XADA) on the base die of a mock stacked die (PAPL-082, PAPL-083).
-  - RF-modulated lock-in thermography for 2.5/3D packages including HBM accelerators (PAPL-089 to PAPL-091).
+  - RF-modulated lock-in thermography isolating electrical opens; the abstract only "discusses" use on 2.5/3D packages, with HBM accelerators named as context (PAPL-089 to PAPL-091).
 - **Status words.** "test vehicle", "pathfinding test vehicles" (PAPL-144), "preliminary readouts", "feasibility", "development ... roadmap". The only manufacturing phrase is the [C] "high-volume manufacturing environment" for mid-BEOL hybrid bonding (PAPL-152).
 
 ### ASE (incl. SPIL): FA of HBM-bearing fan-out packages, plus university hybrid-bonding work
@@ -66,8 +66,8 @@ Every [F] row rests on the paper's abstract (Semantic Scholar record) or its Cro
 6. TSMC, ECTC 2025, CoWoS-R warpage, 12 HBM ("in-line yields"; method missing): https://doi.org/10.1109/ECTC51687.2025.00026
 7. ASE, ECTC 2026, FOCoS-B micro-bump 3D XRM workflow: https://doi.org/10.1109/ECTC51846.2026.00245
 8. ASE, ECTC 2026, FOCoS ASIC-HBM RDL fault localization: https://doi.org/10.1109/ECTC51846.2026.00249
-9. Intel, ISTFA 2026, stacked-die debug at a synchrotron (X-ray flux/dose): https://doi.org/10.31399/asm.cp.istfa2026p0194
-10. Intel, ISTFA 2026, RF lock-in thermography for 2.5/3D and HBM packages: https://doi.org/10.31399/asm.cp.istfa2026p0419
+9. Intel, ISTFA 2026, stacked-die debug at a synchrotron (XADA under attenuated X-ray flux): https://doi.org/10.31399/asm.cp.istfa2026p0194
+10. Intel, ISTFA 2026, RF lock-in thermography (2.5/3D use discussed): https://doi.org/10.31399/asm.cp.istfa2026p0419
 11. Intel, ECTC 2026, ultra-low-temperature hybrid bonding (Cu pad recess; method missing): https://doi.org/10.1109/ECTC51846.2026.00224
 12. TSMC, ECTC 2025, CoWoS-R 1.4/1.4 um RDL with 12 HBM: https://doi.org/10.1109/ECTC51687.2025.00047
 13. Intel, ECTC 2026, CPO die-to-die TCB (3D X-ray CT, SEM-EDX): https://doi.org/10.1109/ECTC51846.2026.00325
@@ -133,7 +133,7 @@ Every [F] row rests on the paper's abstract (Semantic Scholar record) or its Cro
 
 ## Leads for other modules (listed, not pursued)
 - **X-ray dose / radiation and X-ray limits**
-  - Intel synchrotron XADA: circuit "response scales with flux density and exposure time" (PAPL-086). Lab-source brightness limits throughput (PAPL-084).
+  - Intel synchrotron XADA: circuit "response scales with flux density and exposure time" (PAPL-086; XADA signal, not device damage; the dose link is researcher reading). Lab-source brightness limits throughput (PAPL-084).
   - ASE: 3D X-ray FOV limit (PAPL-101); lapping to about 10 um before XRM (PAPL-109).
   - Intel CT: voxel resolution (PAPL-166).
   - TSMC ISTFA 2025 e-beam probing of A16 notes "contamination buildup due to prolonged e-beam exposure" (die-level; abstract in the part1 file; 10.31399/asm.cp.istfa2025p0527).
@@ -141,15 +141,20 @@ Every [F] row rests on the paper's abstract (Semantic Scholar record) or its Cro
   - Intel 100% C2W overlay vs "reduced sampling plans" (PAPL-055 to PAPL-062).
   - ASE AI-enhanced SAM "decreases significantly SAM scanning time" (PAPL-160).
   - Intel DL package inspection for HVM (PAPL-172, PAPL-173).
-  - Intel e-beam point scan, 1 billion hot spots/hour (PAPL-175).
+  - Intel-led e-beam point scan paper with PDF Solutions co-authors, 1 billion hot spots/hour (PAPL-174, PAPL-175).
   - Intel AI warpage model, <1% of physical time-to-data (PAPL-169).
   - Also: ASE GA-NN warpage prediction (10.1109/ECTC51687.2025.00274), Intel production-scale CP-stage ML binning (10.1109/ITC64303.2026.00008), Intel HVM cell-aware diagnostics (10.1109/ITC58126.2025.00046).
 - **Tool vendors as co-authors or named**
   - EV Group (Intel overlay, PAPL-061)
   - Applied Materials (Intel CMP/HB, PAPL-038)
   - Fouriers Scientific (Intel FDTR, PAPL-053)
-  - PVA TePla Analytical Systems (ASE SAM, PAPL-161)
-  - Comet Technologies / Dragonfly (Intel CT, PAPL-164, PAPL-167)
+  - PVA TePla Analytical Systems (co-author of ASE SAM paper, PAPL-161; the record does not describe its business)
+  - Comet Technologies co-authors; Dragonfly software named, maker not stated (Intel CT, PAPL-164, PAPL-167; vendor roles are researcher background)
   - Synopsys (TSMC UCIe test, PAPL-024)
   - Siemens EDA (Intel multi-die test, 10.1109/ITC64303.2026.00097)
   - "a commercial fusion bonder", maker not named (Intel W2W, PAPL-043)
+
+## Corrections after verification (2026-11-21)
+- Changed after an independent two-stage check: PAPL-012, PAPL-013, PAPL-039, PAPL-044, PAPL-086, PAPL-090, PAPL-095, PAPL-120, PAPL-129, PAPL-145, PAPL-155, PAPL-161, PAPL-167, PAPL-174, PAPL-183; new row PAPL-189 [I].
+- PAPL-012 retagged [C] ('first time' priority claim). PAPL-013 now states the >1.2 W/mm2 power-density claim. PAPL-039 marked as recap of earlier work. PAPL-044 limited to below 350 °C. PAPL-086 reframed as XADA signal (no dose in source). PAPL-090 'discusses', not demonstrated. PAPL-129 HBM/NAND are authors' suggested examples, not targets. PAPL-095, PAPL-120 quotes widened to carry the value/finding.
+- SPIL is counted under ASE only by inference: Crossref names SPIL, not ASE (PAPL-145, PAPL-155); SPIL = ASE Technology Holding subsidiary per AW-055 [S] (PAPL-189 [I]). Vendor descriptions of PVA TePla and Comet removed from [F] rows (PAPL-161, PAPL-167). PDF Solutions co-authors added (PAPL-174); Lightmatter product named (PAPL-183).

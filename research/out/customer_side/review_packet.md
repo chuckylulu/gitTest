@@ -10,8 +10,8 @@ Caveats:
 
 | Id | Tag | Claim | Value | Period | Public URL | Page / section |
 |---|---|---|---|---|---|---|
-| PAPM-049 | [F] | Samsung pre-screens HBM buffer-die pad-to-micro-bump interface resistance in mass production (electrical test) | - | Mar-Apr 2025 | https://doi.org/10.1109/irps48204.2025.10983202 | abstract |
-| PAPM-222 | [F] | SK hynix: optimised TSV SiO2 film process (IR inspection + FIB checks) 'successfully applied in mass production' in the HBM WLP line | - | Oct 2025 | https://doi.org/10.5573/JSTS.2025.25.5.490 | full text |
+| PAPM-049 | [F] | Samsung PROPOSES an electrical pre-screen of HBM buffer-die pad-to-micro-bump interface resistance for use in mass production (adoption not stated) | - | Mar-Apr 2025 | https://doi.org/10.1109/irps48204.2025.10983202 | abstract |
+| PAPM-222 | [C] | SK hynix authors say the optimised TSV SiO2 film process (IR inspection + FIB checks) was 'successfully applied in mass production' in the HBM WLP line (company claim) | - | Oct 2025 | https://doi.org/10.5573/JSTS.2025.25.5.490 | full text |
 | PAPM-201 | [C] | SK hynix: in-line optical chip-warpage measurement for HBM is a 'commercialized solution currently in use' (company claim) | - | Oct 2025 | https://doi.org/10.5573/JSTS.2025.25.5.585 | full text |
 | PAPM-206 | [F] | SK hynix in-line chip warpage: about 7-10 minutes for all 600 chips of a wafer | 7-10 | Oct 2025 | https://doi.org/10.5573/JSTS.2025.25.5.585 | full text |
 | PAPM-216 | [F] | SK hynix: IR post-bond die shift/tilt metrology validated on actual HBM wafers in a 'production-grade MI setup' | - | Oct 2025 | https://doi.org/10.5573/JSTS.2025.25.5.484 | full text |
@@ -24,11 +24,11 @@ Caveats:
 | XR-003 | [F] | Intel: on-package DRAM survived three times the DRAM maker's X-ray limit without infant mortality; long-term reliability may be reduced | 3 | Apr 2025 (orig. Oct 2024) | https://magazines007.com/pdf/SMT007-Apr2025.pdf | p54 |
 | XR-015 | [S] | Press only: TSMC's SEMICON Taiwan 2026 forum keynote abstract reportedly lists 'DRAM/HBM damage concern by X-ray' | n/a | Sep 2026 | https://windowsforum.com/news/tsmcs-hbm-x-ray-inspection-focus-what-it-really-means.444052/ | body |
 | PAPM-225 | [F] | Samsung: 191 Hitachi High-Tech IS4100 inspectors matched to +/-2% in a DRAM HVM line (memory front end) | - | Dec 2025 | https://doi.org/10.5573/JSTS.2025.25.6.623 | full text |
-| TALK-014 | [F] | SK hynix (Aug 2026): D2W hybrid bonding for HBM is 'progressing toward commercialization' (not yet in production) | status: toward commercialisation | Aug 2026 | https://news.skhynix.com/en/tech-note-series-ep2/ | section 'Two Major Hybrid Bonding Methods' |
+| TALK-014 | [S] | Guest tech note by an Inha University professor on SK hynix's newsroom (Aug 2026): D2W hybrid bonding for HBM is 'progressing toward commercialization' (not SK hynix's own words) | status: toward commercialisation | Aug 2026 | https://news.skhynix.com/en/tech-note-series-ep2/ | section 'Bump-less Chip Connections Enable High Efficiency and Bandwidth, Drawing Particular Attention in the HBM', second paragraph after the figure captioned 'Two Major Hybrid Bonding Methods' |
 
 ## 5 inferences the conclusions lean on
 
-1. [I] Only three company x method cells pair production wording with HBM: SK hynix infrared and e-beam (TSV-film inspection) and Samsung electrical test; SK hynix optical joins them on a company claim. Every other bonded-interface method is lab, test vehicle or press. (rows SYN-002, SYN-008, SYN-019, SYN-001). Inputs: PAPM-219, PAPM-221, PAPM-222 (SK hynix JSTS), PAPM-049 (Samsung IRPS), PAPM-201 [C]; all other cells in calc/method_matrix.py.
+1. [I] Production wording for HBM-line inspection comes only from SK hynix's own untestable claims (TSV-film IR/FIB checks; in-line chip warpage); Samsung's HBM micro-bump pre-screen is a proposal for mass production (pilot). Every other bonded-interface method is lab, test vehicle or press. (rows SYN-001, SYN-002, SYN-008, SYN-019). Inputs: PAPM-219, PAPM-221, PAPM-222 [C], PAPM-201 [C] (SK hynix JSTS), PAPM-049 (Samsung IRPS, 'We propose'); all other cells in calc/method_matrix.py.
 2. [I] In period, chipmaker X-ray-damage statements come from Intel (dose numbers, on-package DRAM), Micron (co-author, 3D NAND), Samsung (patent application) and TSMC (press only); none gives an HBM dose limit. (rows XR-038). Inputs: XR-001..XR-013; searches listed in the XR module notes.
 3. [I] HBM test intensity is rising (more insertions and items, higher test cost) but no chipmaker publishes a count or test time. (rows SMP-041). Inputs: SMP-009..SMP-015, SMP-038..SMP-040, PAPM-049.
 4. [I] Memory makers present virtual metrology as extra coverage on every wafer, not as cutting physical measurements. (rows SMP-042). Inputs: SMP-001, SMP-002, SMP-005..SMP-008, SMP-022, SMP-025.

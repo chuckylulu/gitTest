@@ -1,8 +1,8 @@
 # PAPM notes: conference-paper evidence for SK hynix, Samsung Electronics and Micron (Jan 2025 to 21 Nov 2026)
 
-Files: `PAPM_table.csv` (50 rows, 42 papers), `PAPM.csv` (229 evidence rows: 216 [F], 9 [C], 4 [I]; every quote FOUND by `quote_check.py`), counts script `research/out/customer_side/calc/PAPM_counts.py`.
+Files: `PAPM_table.csv` (50 rows, 42 papers), `PAPM.csv` (232 evidence rows: 212 [F], 15 [C], 5 [I]; every quote FOUND by `quote_check.py`), counts script `research/out/customer_side/calc/PAPM_counts.py`.
 Conference papers here are evidenced by their abstract only. For the IEEE papers the full text is NOT RETRIEVED (ieeexplore.ieee.org bot challenge). For ISTFA (ASM) papers the publisher page was not tried. For SPIE the full text is NOT RETRIEVED (spiedigitallibrary.org bot challenge).
-**Exception: four 2025 JSTS journal papers**, added at the coordinator's request, were read in full from the open-access article pages on jsts.org. They are three SK hynix papers and one Samsung paper (PAPM-198 to PAPM-229).
+**Exception: four 2025 JSTS journal papers**, added at the coordinator's request, were read in full from the open-access article pages on jsts.org. They are three SK hynix papers and one SKKU paper whose first author is a Samsung Electronics engineer (PAPM-198 to PAPM-229).
 
 How the set was built: I read the titles of all 304 rows in `calc/abstract_screen.csv` whose companies include SK hynix, Samsung or Micron. I then read the abstracts of about 110 of them, plus all 117 SPIE MIPC XXXIX/XL records that had a scope or company keyword, out of 309. A paper went into the table only if its abstract names (a) an in-scope object and (b) a method. In-scope papers whose abstract names no method have evidence rows only and are listed in section 1.4.
 
@@ -10,38 +10,38 @@ How the set was built: I read the titles of all 304 rows in `calc/abstract_scree
 
 ### 1.1 SK hynix (8 papers in the table, 11 rows)
 - **HBM chip warpage, in-line (JSTS 2025, full text).** This is the clearest production statement in the module.
-  - Problem: before this work there was "no equipment or method for direct in-line measurement of chip warpage" of thinned HBM dies on carriers (PAPM-199). Destructive sampling gave a sample "far too small" (PAPM-208).
+  - Problem: the authors state there is "currently no equipment or method for direct in-line measurement of chip warpage", as ultra-thin wafers are bonded to carrier wafers [C] (PAPM-199). Destructive sampling gave a sample "far too small" (PAPM-208).
   - Method: SK hynix added "an optical module for warpage measurement" and vacuum chucking to the automated 400 mm ring-frame handler (PAPM-203).
   - Validation: against an Akrometrix AXP destructive reference, the agreement is cosine 0.8805, Pearson 0.6610, R2 0.4369 (PAPM-204, PAPM-205).
-  - Throughput: about 7-10 min for 600 chips (PAPM-206). With a 3D laser scanner at ~10 um x-y resolution, about 5 min per wafer (PAPM-207).
+  - Throughput: about 7-10 min for 600 chips with CTD-VC (PAPM-206). For the destructive flux-based UF-SL/CF-SL methods, a 3D laser scanner at ~10 um x-y resolution takes about 5 min per wafer (PAPM-207).
   - The destructive flux-based variants are limited by "time, cost, and operational complexity" (PAPM-209).
   - Claims, tagged [C]: "world's first" (PAPM-200); "implemented into measurement equipment and developed into a commercialized solution currently in use" (PAPM-201); method "transferred to measurement equipment suppliers", with the suppliers not named (PAPM-202).
 - **HBM post-bond die shift and tilt by infrared (JSTS 2025, full text).** This is bond overlay in the stack.
-  - SK hynix says tools "optimized for planar DRAM wafers" cannot assess post-bonding die shift and tilt (PAPM-211, PAPM-212).
+  - SK hynix says tools "optimized for planar DRAM wafers" "fail to accurately assess" die shift and tilt, particularly post-bonding (PAPM-211); traditional overlay "cannot detect" them (PAPM-212).
   - Its method is IR imaging with a dual scan of base-wafer fiducials and top-die patterns (PAPM-213, PAPM-214).
-  - Stated limits: "low contrast and IR resolution constraints" (PAPM-215).
+  - Challenges the method addresses (not stated as remaining limits): "low contrast and IR resolution constraints" (PAPM-215).
   - Validated on "actual HBM device wafers in a production-grade MI setup" (PAPM-216).
-- **TSV films in the HBM WLP line (JSTS 2025, full text).** "CVD film IR inspection" and FIB cross-section of SiO2 step coverage over TSVs (PAPM-218, PAPM-219, PAPM-221). The process was "successfully applied in mass production" (PAPM-222).
+- **TSV films in the HBM WLP line (JSTS 2025, full text).** "CVD film IR inspection" and FIB cross-section of SiO2 step coverage over TSVs (PAPM-218, PAPM-219, PAPM-221). The authors state the process was "successfully applied in mass production" [C] (PAPM-222); the yield drop from TSV edge damage occurred with an intermediate trial recipe (PAPM-220).
 - **HBM4 stack, micro-bumps and voids.** The VLSI 2026 HBM4 paper (SK hynix Inc. / SK hynix America) checks micro-bump joint integrity "for entire 12-layer stacks" in two ways: daisy-chain resistance and Confocal Scanning Acoustic Microscopy (C-SAM). The result reported is "void-free and high micro-bump integrity". The work used "Mechanical Test Vehicle 4 (MTV4)", which places it at test-vehicle stage (PAPM-134, PAPM-135, PAPM-136, PAPM-137). The abstract names die warpage as a challenge but does not say how warpage was measured (PAPM-138).
 - **TSV in HBM3E.** Electrical reliability tests (EM, IMD TDDB) plus "Chip level tests" were used for the TSV keep-out zone in HBM3E (PAPM-139, PAPM-140, PAPM-141, PAPM-142).
-- **Pre-bond surface and bond overlay (hybrid bonding).** The SiCN pre-bond surface was characterized by VSFG spectroscopy and zeta potential (PAPM-146). The stated motivation is bonding alignment accuracy "towards below 200 nm pitch" (PAPM-145). The co-authors include Tokyo Electron (bonder maker) and Yokohama National University (PAPM-144).
+- **Pre-bond surface and bond overlay (hybrid bonding).** The SiCN pre-bond surface was characterized by VSFG spectroscopy and zeta potential (PAPM-146). The stated motivation is bonding alignment accuracy "towards below 200 nm pitch" (PAPM-145). This is a joint paper: first and last authors Yokohama National University, 4 of 10 authors SK hynix, 3 Tokyo Electron (bonder maker) (PAPM-143, PAPM-144).
 - **W2W bonding interface strength.** An in-situ vision system films the Maszara blade test and measures crack velocity, which is an optical method (PAPM-152, PAPM-153). The authors state that the conventional test "has limitations in the amount of information" it yields (PAPM-151).
 - **3D stacked memory, base-die back-side RDL.** A daisy-chain test vehicle with EM and TDDB tests and an 8-layer stack (PAPM-155, PAPM-156, PAPM-157, PAPM-158).
 - **Other SK hynix papers.** Hybrid-bonding misalignment and dishing appear only in FEM simulation, with stability "even with up to 20% misalignment" (PAPM-160, PAPM-161). The 4F2 VG DRAM uses a "wafer-bonded structure" with die thinning, and no metrology is named (PAPM-163). The IITC 2025 paper on HBM wafer-level-packaging interconnect has no abstract (PAPM-164).
-- **Lead (VM).** SK hynix's own newsroom says it has used Gauss Labs' Panoptes VM in production lines since 2022. It also names two joint SPIE MIPC XL papers (PAPM-197).
+- **Lead (VM).** SK hynix's own newsroom says it has used Gauss Labs' Panoptes VM in production lines since 2022 [C] (PAPM-197). It also lists two joint SK hynix / Gauss Labs papers (PAPM-231); their match to SPIE MIPC XL DOIs is by title [I] (PAPM-232).
 
 ### 1.2 Samsung Electronics (18 papers + 3 SPIE by inference, 22 rows)
 - **DRAM HVM optical defect inspection fleet (JSTS 2025, full text).**
-  - Authors are from Samsung Institute of Technology and Sungkyunkwan University (PAPM-223).
+  - An SKKU degree-programme paper: the first author is a Samsung Electronics engineer (1 of 3 authors); it is not an official Samsung Electronics paper (PAPM-223).
   - 191 Hitachi High-Tech IS4100 patterned-wafer inspectors at after-develop, after-etch and post-CMP checkpoints were sensitivity-matched to within ±2% in "a Samsung Electronics high-volume manufacturing (HVM) line" (PAPM-224, PAPM-225, PAPM-226).
   - Scope: 300 mm 10-nm-class D1y DRAM (PAPM-227).
-  - Manual matching took "over three hours per tool"; PM time fell 45% (PAPM-228, PAPM-229).
+  - Manual matching was "often requiring over three hours per tool"; PM time fell 45% (PAPM-228, PAPM-229).
   - This is memory front-end inspection, not HBM.
 - **HBM electrical test is the most specific statement in this set.** The IRPS 2025 paper from DRAM Yield Enhancement pre-screens the pad to micro-bump interface resistance on the HBM buffer die "in mass production", by making small BEOL layout changes. The authors' reason: such failures are "hard to find in the HBM-DRAM fabrication site" (PAPM-046, PAPM-047, PAPM-048, PAPM-049, PAPM-050). Two more HBM electrical tests:
   - EDS repair integrated with on-die ECC, "Validated on HBM", which addresses "the rising test cost" (PAPM-105, PAPM-106, PAPM-107);
-  - a refresh (tREFi) chip-on-wafer test at 120 C "for 12-High stacked HBM devices" (PAPM-108, PAPM-109, PAPM-110).
+  - a refresh (tREFi) chip-on-wafer test at 120 C "for 12-High stacked HBM devices" (PAPM-108, PAPM-109); the cell transistor "is demonstrated in ... HBM products" is a company claim [C] (PAPM-110).
 - **Hybrid Cu bonding.**
-  - A "fast and non destructive" leakage-current method on a 20,000-pad array is called "a process sensitive electrical metrology signal" and is tied to bonding misalignment (PAPM-051, PAPM-052, PAPM-053, PAPM-054, PAPM-055).
+  - A "fast and non destructive" leakage-current method on a 20,000-pad array is called "a process sensitive electrical metrology signal"; the leakage origin "was verified through bonding misalignment analysis". The paper is Seoul National University-led, with 3 of 7 Samsung authors (PAPM-051, PAPM-052, PAPM-053, PAPM-054, PAPM-055).
   - Pre-bond SiCN plasma activation was characterized by TEM, ToF-SIMS, XPS and MEIS (PAPM-057, PAPM-058).
   - In-scope papers with no method named in the abstract:
     - Cu recess "within a nanometer range" by wet ALE (PAPM-116, PAPM-117, PAPM-118);
@@ -51,21 +51,21 @@ How the set was built: I read the titles of all 304 rows in `calc/abstract_scree
 - **Wafer bonding in memory (V-NAND).** Two 450-layer cell wafers were bonded, and the "alignment deterioration" from large warpage was "solved by applying new overlay correction technology". The bond-overlay metrology is not named (PAPM-123, PAPM-124).
 - **Failure analysis (FA) of packages and HBM.**
   - Samsung Semiconductor Inc. (San Jose) gave an invited review of the 2.5D/3D package FI-FA flow: fault isolation, cross-section, micro-probing and electron microscopy (PAPM-060, PAPM-061).
-  - The DRAM project team, with ThermoFisher co-authors, deprocessed an HBM2 sample using a "Helios Hydra 5+ PFIB-SEM" (PAPM-094, PAPM-095, PAPM-096).
+  - A vendor-led paper (5 of 6 authors ThermoFisher, 1 Samsung DRAM project engineer) deprocessed an HBM2 sample using a "Helios Hydra 5+ PFIB-SEM" (PAPM-094, PAPM-095, PAPM-096).
 - **V-NAND fault localization (FA).**
   - Lock-in OBIRCH for depth isolation in Cell-over-Peripheral, with Hamamatsu co-authors (PAPM-081, PAPM-082, PAPM-083, PAPM-084).
-  - IR-source photoemission and OBIRCH "are reaching their limits" as NAND height grows. Visible thermoreflectance (VTR) is proposed instead (PAPM-086, PAPM-087, PAPM-088).
-  - Channel-hole navigation on Thermo Fisher's iFAST platform: 97.6% detection success at the "developmental stage" (PAPM-090, PAPM-091, PAPM-092).
+  - IR-source photoemission and OBIRCH "are reaching their limits" as NAND height grows. Visible thermoreflectance (VTR) is proposed instead; 1 of 9 co-authors is from Hamamatsu (PAPM-085, PAPM-086, PAPM-087, PAPM-088).
+  - Channel-hole navigation on Thermo Fisher's iFAST platform: 97.6% detection success at the "developmental stage". Joint paper: 3 of 9 co-authors are ThermoFisher (PAPM-089, PAPM-090, PAPM-091, PAPM-092).
 - **DRAM films and lines (electrical).**
-  - GIDL-asymmetry detection of lateral silicide diffusion, described as moving "from reactive microscopy to proactive electrical monitoring". The novelty, "zero-defect" and "real-time" wording are claims and are tagged [C] (PAPM-067, PAPM-068, PAPM-069, PAPM-070, PAPM-071).
+  - GIDL-asymmetry detection of lateral silicide diffusion, described as moving "from reactive microscopy to proactive electrical monitoring". The novelty, "zero-defect", "real-time" and turnaround wording are claims and are tagged [C] (PAPM-067, PAPM-068, PAPM-069, PAPM-070, PAPM-071, PAPM-230).
   - BCAT word-line disconnection screening. Test time falls from 10 h to 5 h. The conventional L4 test "often damages weak dies" (PAPM-076, PAPM-077, PAPM-078, PAPM-079).
-  - Laser-induced leakage-current mapping of ZrO2 capacitor arrays. DRAM is not named in the abstract (PAPM-073, PAPM-074).
+  - A method to detect potential high-k defect sites by laser-induced leakage-current mapping "has been proposed and examined" (ZrO2 capacitor arrays). DRAM is not named in the abstract; 2 of 7 authors are Samsung (PAPM-073, PAPM-074).
   - Chip-level extraction of mismatch across "millions" of bit-line sense amplifiers in packaged DRAM (PAPM-102, PAPM-103, PAPM-104).
   - Chip-edge burnout in thinned, warped memory dies in multi-die packages, found by DC tests after assembly (PAPM-063, PAPM-064, PAPM-065).
 - **Sampling (lead).** In DRAM development "measurements are conducted on only about 4% of the products". ML imputation fills in the rest (PAPM-098, PAPM-099, PAPM-100).
 - **e-beam side effect (lead).** Micro-bubble coating defects were traced to "wafer review or critical dimension (CD) measurements using a scanning electron microscope (SEM)". The cause was carbon contamination in the SEM chamber (PAPM-112, PAPM-113, PAPM-114).
 - **SPIE papers attributed by product term only, [I] Medium/Low.** Each of these papers names "VNAND" / "V-NAND", Samsung's product term. The ISTFA 2026 Samsung paper uses the same term next to "SAMSUNG" (PAPM-091).
-  - OES plus deep-learning prediction of the memory-hole distortion profile on "8-th generation VNAND", R2 0.69 / 0.58 (PAPM-183, PAPM-184, PAPM-185, PAPM-186);
+  - OES plus deep-learning prediction of the memory-hole distortion profile on "8-th generation VNAND", best R2 0.69 / 0.58 (PAPM-183, PAPM-184, PAPM-185, PAPM-186);
   - macro-optical colour inspection of HAR etch defects in "3D V-NAND" (PAPM-188, PAPM-189, PAPM-190, PAPM-191);
   - wafer mass metrology (MMT) on "9th-generation VNAND", with stated limits of "near-zero site coverage and limited directional information" (PAPM-193, PAPM-194, PAPM-195, PAPM-196).
 
@@ -82,10 +82,10 @@ How the set was built: I read the titles of all 304 rows in `calc/abstract_scree
 - **Detection limits Micron states.**
   - An oxide void in Flash "not easily detectable by the inline inspection" and missed by initial electrical test (PAPM-020, PAPM-021).
   - A DRAM particle defect "undetectable through standard electrical testing" (PAPM-023, PAPM-024).
-  - Added electrical coverage and wafer-level analysis "to prevent test escapes during production" in graphics DRAM (PAPM-026, PAPM-027).
+  - Increased electrical coverage and wafer-level analysis "to prevent test escapes during production" in graphics DRAM "have been proposed" (not stated as deployed) (PAPM-026, PAPM-027).
 - **e-beam FA in memory.**
   - "low-dose TEM imaging" of photoresist. Other protection methods caused "distortion from preparation and beam interaction" (PAPM-029, PAPM-030, PAPM-031, PAPM-032).
-  - AI-guided FIB thinning for DRAM/NAND, using Thermo Fisher AIPs, with Thermo Fisher co-authors (PAPM-034, PAPM-035, PAPM-036, PAPM-037).
+  - AI-guided FIB thinning for DRAM/NAND, using Thermo Fisher AIPs; 8 of 16 authors are Thermo Fisher. "Successfully implemented" is a self-reported in-use claim [C] (PAPM-034, PAPM-035, PAPM-036, PAPM-037).
 - **SPIE papers that name Micron.** The records carry no affiliations, so authorship is unverified.
   - Inline automated PFIB-SEM "ground truth" CD metrology on 3D NAND "in collaboration with Micron", with slit-width repeatability 3σ 0.64 nm (PAPM-166, PAPM-167, PAPM-168, PAPM-169).
   - ASML 25-beamlet multi-e-beam inspection evaluated "on Micron Technology's DRAM and 3D-NAND devices" (PAPM-171, PAPM-172, PAPM-173).
@@ -109,7 +109,7 @@ These counts come from `calc/PAPM_counts.py` run on `PAPM_table.csv`, and are [I
 - **Status and limits.** 21 of 50 rows have no stated status and 31 of 50 have no stated limits. Statements of mass production or HVM:
   - Samsung bump-resistance paper (PAPM-049);
   - Samsung DRAM optical-inspection fleet (PAPM-224);
-  - SK hynix TSV-film paper (PAPM-222);
+  - SK hynix TSV-film paper [C] (PAPM-222);
   - SK hynix warpage "commercialized solution currently in use" [C] (PAPM-201);
   - the Samsung-attributed MMT paper (PAPM-195).
   Test vehicles are explicit for SK hynix (PAPM-135, PAPM-158).
@@ -224,7 +224,7 @@ The SPIE MIPC XXXIX (Feb 2025) and XL (Feb 2026) records carry no affiliations, 
 
 **C. Memory, device type not named (low priority):** 10.1117/12.3051274, 10.1117/12.3051452, 10.1117/12.3048535, 10.1117/12.3051763, 10.1117/12.3090778 (URLs as https://doi.org/<DOI>).
 
-SK hynix's own newsroom attributes two further MIPC XL papers, 10.1117/12.3087531 and 10.1117/12.3089595, to SK hynix and Gauss Labs. Both are on VM, outside this module's process steps (PAPM-197).
+SK hynix's own newsroom lists two joint SK hynix / Gauss Labs papers (PAPM-231); by title and author match they are MIPC XL 10.1117/12.3087531 and 10.1117/12.3089595 [I] (PAPM-232). Both are on VM, outside this module's process steps.
 
 ## 4. Premise problems
 - **HANA Micron counted as Micron.** `paper_candidates.csv` tags 5 papers as "Micron" whose only Micron-like affiliation is HANA Micron Inc., a Korean OSAT unrelated to Micron Technology: ECTC 2025 00286, 00348, 00336 and ECTC 2026 00289, 00104. Two would otherwise be in scope: 00348, a bridge-die package with HBM dies and metallographic micro-bump analysis, and 00336, a micro-bump vertical wire checked by electrical test. Both are excluded.
@@ -240,8 +240,9 @@ SK hynix's own newsroom attributes two further MIPC XL papers, 10.1117/12.308753
 - **VLSI 2025 has no abstracts.** VLSI 2025 DOIs carry the 10.23919 prefix. The publisher elided the abstracts in Semantic Scholar, and Crossref has none, so all 35 VLSI 2025 papers from the three companies lack abstracts.
 - **Vendor-led co-authorship weakens the "chipmaker statement" reading.**
   - ISTFA 2026 p0474 (Samsung HBM2 PFIB) lists 5 ThermoFisher affiliations and 1 Samsung.
-  - ECTC 2025 00350 (SK hynix bond wave) has a Yokohama National University first author and Tokyo Electron co-authors.
-  - ISTFA 2025 p0244 (Micron AAT) and p0563 (Samsung OBIRCH) have Thermo Fisher and Hamamatsu co-authors respectively.
+  - ECTC 2025 00350 (SK hynix bond wave) has Yokohama National University first and last authors, 4 of 10 SK hynix authors and 3 Tokyo Electron co-authors.
+  - ISTFA 2025 p0244 (Micron AAT) and p0563 (Samsung OBIRCH) have Thermo Fisher and Hamamatsu co-authors respectively; p0495 (Samsung VTR) has 1 Hamamatsu co-author of 9; ISTFA 2026 p0749 (Samsung iFAST) has 3 ThermoFisher co-authors of 9.
+  - ECTC 2026 00250 (Samsung leakage) is Seoul National University-led (3 of 7 Samsung); IRPS 2026 11499353 (ZrO2 mapping) has 2 of 7 Samsung authors; JSTS 25.6.623 is an SKKU degree-programme paper with a Samsung engineer as first author.
 - **The JSTS warpage paper, as described by the coordinator / TALK module.**
   - Correction: the "transferred to measurement equipment suppliers" sentence is in the Introduction (PAPM-202). The abstract instead says the work was "implemented into measurement equipment and developed into a commercialized solution currently in use" (PAPM-201). Both are company claims [C].
   - The Crossref title truncates "UV-Induced" to "UV-In".
@@ -283,7 +284,7 @@ SK hynix's own newsroom attributes two further MIPC XL papers, 10.1117/12.308753
 - "1β DRAM" EBI 1.99% in-die coverage (PAPM-180).
 - Samsung-attributed MMT "near-zero site coverage" (PAPM-194) and OES-based hole-profile prediction (PAPM-183).
 - Samsung DRAM in-fab metrology anomaly detection (PAPM-133).
-- SK hynix Panoptes VM since 2022 (PAPM-197).
+- SK hynix Panoptes VM since 2022 [C] (PAPM-197).
 - Samsung GIDL "real-time monitoring" [C] (PAPM-071).
 - Unattributed SPIE: 10.1117/12.3051267 ("impossible to achieve full coverage measurement with existing measurement technologies"); 10.1117/12.3090223 (AEI sampling).
 - SK hynix measures the warpage of "all chips" on a wafer in about 7-10 min, replacing destructive sampling (PAPM-206, PAPM-208).
@@ -291,10 +292,10 @@ SK hynix's own newsroom attributes two further MIPC XL papers, 10.1117/12.308753
 
 **Tool vendors.**
 - Thermo Fisher: Micron AAT (PAPM-034, PAPM-036), Samsung HBM2 PFIB (PAPM-094, PAPM-095), Samsung iFAST (PAPM-090), Micron-named "Wafer DualBeam" (PAPM-166).
-- Hamamatsu: Samsung OBIRCH (PAPM-081).
+- Hamamatsu: Samsung OBIRCH (PAPM-081); Samsung VTR co-author (PAPM-085).
 - Tokyo Electron: SK hynix bond wave (PAPM-144).
 - ASML: Micron-named MBI and CGI (PAPM-172, PAPM-176).
-- Gauss Labs: SK hynix VM (PAPM-197).
+- Gauss Labs: SK hynix VM [C] (PAPM-197, PAPM-231).
 - Hitachi High-Tech: 191 IS4100 patterned-wafer inspectors in a Samsung DRAM HVM line (PAPM-225).
 - Akrometrix: AXP used as the destructive warpage reference by SK hynix (PAPM-204).
 - Unnamed "measurement equipment suppliers" commercialized SK hynix's chip-warpage method (PAPM-202). The paper also mentions an unnamed "certain equipment supplier" of vertical-hold wafer warpage systems.
@@ -313,3 +314,10 @@ SK hynix's own newsroom attributes two further MIPC XL papers, 10.1117/12.308753
   - "Characteristics of PVD SiCN for Application in Hybrid Cu Bonding": SeoulTech per snippet. https://doi.org/10.5573/JSTS.2025.25.1.102
   - Affiliation not checked, and the topics are thermal or design: https://doi.org/10.5573/jsts.2026.26.2.97 (heat dissipation in high-stacked HBM) and https://doi.org/10.5573/jsts.2026.26.4.292 (voltage control in hybrid-bonding 3D NAND).
 - **Samsung, J. Micro/Nanopatterning (JM3) 2025, "massive metrology ... HB VNAND".** A journal paper, not a conference paper. Its record is saved by another module (`2025-09-12_semanticscholar_s2-jmm-041405-samsung-massive-metrology-hb-vnand`), and it is worth cross-checking against the V-NAND bonding rows here.
+
+## Corrections after verification (2026-11-21)
+- Rows corrected after an independent two-stage quote check: PAPM-017, PAPM-027, PAPM-036, PAPM-051, PAPM-054, PAPM-071, PAPM-073, PAPM-076, PAPM-085, PAPM-089, PAPM-090, PAPM-094, PAPM-110, PAPM-143, PAPM-151, PAPM-185, PAPM-190, PAPM-197, PAPM-199, PAPM-205, PAPM-207, PAPM-210, PAPM-211, PAPM-215, PAPM-220, PAPM-222, PAPM-223, PAPM-228.
+- Follow-on note edits: PAPM-095, PAPM-096 (vendor-led paper), PAPM-212 to PAPM-216 (no Semantic Scholar record saved).
+- Retagged [F] to [C] (in-use or state-of-the-art claims): PAPM-036, PAPM-110, PAPM-197, PAPM-199, PAPM-222.
+- New rows: PAPM-230 [C] (turnaround claim split from PAPM-071), PAPM-231 [F] (newsroom paper list), PAPM-232 [I] (newsroom papers matched to SPIE DOIs).
+- `PAPM_table.csv`: co-authorship qualifiers added to the chipmaker column for vendor-, university- or jointly-led papers; [C] noted in the status column for PAPM-036, PAPM-110 and PAPM-222; wording aligned for PAPM-027, PAPM-054, PAPM-185, PAPM-190, PAPM-207, PAPM-215 and PAPM-228. Table counts in section 1.4 are unchanged.

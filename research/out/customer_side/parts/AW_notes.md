@@ -1,7 +1,7 @@
 # Module AW - supplier awards 2025-2026 (customer_side run, 2026-11-21)
 
 Scope: supplier-award events held or announced 1 Jan 2025 - 21 Nov 2026 by SK hynix, Samsung Electronics (DS), Micron, TSMC, Intel, ASE (incl. SPIL) and Amkor, and which inspection, metrology or test vendors won.
-Files: `parts/AW.csv` (58 evidence rows), `parts/AW_table.csv` (193 winner rows), `calc/AW_counts.py` (counts behind AW-058).
+Files: `parts/AW.csv` (60 evidence rows), `parts/AW_table.csv` (193 winner rows), `calc/AW_counts.py` (counts behind AW-058).
 Reading rule used: a winner row is [F] only when the chipmaker's own page or the winning vendor's own release was saved and read; press lists are [S]. vendor_class is my classification by company type (single value: inspection, metrology, test or other), not by the product each award cites. KLA, Camtek, Lasertec, V5 and TRI are tagged inspection; Onto and Nova metrology; Advantest, Teradyne, Technoprobe, FormFactor, Keysight, AEM, Hon Precision and Korea Instrument test. Diversified tool makers (Applied Materials, ASML, Tokyo Electron, Canon, DISCO) are tagged other, because no award category names a process-control product.
 
 ## 1. Findings
@@ -26,8 +26,8 @@ Full lists only: 17 inspection/metrology/test entries out of 177 listed winner e
 Events found but without readable winner names: SK hynix Partners Day 2025 (14 winners) and 2026 (11 winners); Amkor Supplier Excellence Award 2025 (9 Dec 2025); TSMC OIP Partner of the Year 2025 (only Teradyne's own release read).
 
 ### TSMC
-- **2025 SCM Forum, 25 Nov 2025 (not December).** 30 winners; press reproduces TSMC's alphabetical list (AW-001, AW-002). Inspection/metrology/test winners, all in 卓越量產支援 (Excellent Production Support): Advantest (AW-003), KLA (AW-004), Onto Innovation (AW-005). Advantest and Onto state the same award in their own releases (AW-006, AW-008). Both describe the rationale as capacity flexibility and delivery support, not a specific inspection or test product (AW-007, AW-009). Tokyo Electron was absent from the 2025 list (AW-010). TSMC's own release was not read (pr.tsmc.com refuses scripts).
-- **2026 SCM Forum, 17 Nov 2026 (already held).** 35 winners, up from 30 (AW-011, AW-012). Inspection/metrology/test winners: Advantest (Excellent Production Support, second year running; AW-013); KLA with two awards, 卓越技術暨量產支援 (Excellent Technology and Production Support) and 卓越綠色製造 (Excellent Green Manufacturing) (AW-014); Lasertec, new, Excellent Production Support (AW-015); and V5 Technologies (倍利科技), new, Excellent Production Support (AW-016). V5 is a Taiwanese AI-plus-optical inspection maker that listed in March 2026 (AW-017). Onto is not on the 2026 list. Tokyo Electron returns in 2026 under Excellent Production Support (AW-018). SPIL is itself a 2026 TSMC award winner (卓越先進封測量產支援, Excellent Advanced Packaging and Test Production Support; AW_table, AW-011).
+- **2025 SCM Forum, 25 Nov 2025 (not December).** 30 winners; press reproduces TSMC's alphabetical list (AW-001, AW-002). Inspection/metrology/test winners, all in 卓越量產支援 (Excellent Production Support): Advantest (AW-003), KLA (AW-004), Onto Innovation (AW-005). Advantest and Onto state the same award in their own releases (AW-006, AW-008). Both describe the rationale, in the vendors' own words, as capacity flexibility and delivery support, not a specific inspection or test product (AW-007, AW-009; Onto's is its own paraphrase of TSMC, tagged [C]). Tokyo Electron was absent from the 2025 list (AW-010). TSMC's own release was not read (pr.tsmc.com refuses scripts).
+- **2026 SCM Forum, 17 Nov 2026 (already held).** 35 winners, up from 30 (AW-011, AW-012). Inspection/metrology/test winners: Advantest (Excellent Production Support, second year running; AW-013); KLA with two awards, 卓越技術暨量產支援 (Excellent Technology and Production Support) and 卓越綠色製造 (Excellent Green Manufacturing) (AW-014); Lasertec, not on the 2025 list, Excellent Production Support (AW-015); and V5 Technologies (倍利科技), not on the 2025 list, Excellent Production Support (AW-016). V5 is a Taiwanese AI-plus-optical inspection maker that listed in March 2026 (AW-017). Onto is not on the 2026 list. Tokyo Electron returns in 2026 under Excellent Production Support (AW-018). SPIL is itself a 2026 TSMC award winner (卓越先進封測量產支援, Excellent Advanced Packaging and Test Production Support; AW_table, AW-011).
 - **TSMC OIP Partner of the Year 2025 (24 Sep 2025, Santa Clara).** Teradyne states it won for "TSMC 3DFabric Testing", citing multi-die test methods for chiplets and CoWoS (AW-019). This is a design-ecosystem award, separate from the SCM Forum supplier awards. TSMC's own OIP list was not read. No 2026 3DFabric Testing winner was found.
 
 ### Intel
@@ -35,7 +35,7 @@ Events found but without readable winner names: SK hynix Partners Day 2025 (14 w
 - **2026 EPIC Supplier Awards, 41 recipients (announced 19 Mar 2026 per AEM's release date).** Vendor releases: Lasertec (AW-028), FormFactor (AW-029, category not stated) and AEM Holdings, which calls itself a global leader in test innovation (AW-030). Israeli press adds Camtek and Nova (AW-031). Intel's list and categories were not read. KLA's presence and the categories are search leads only (section 4).
 
 ### SK hynix
-- **2025 Partners Day, 29 Sep 2025:** 14 winners in four categories (technology innovation, quality improvement, shared growth, ESG). SK hynix's page names none (AW-032). Only one winner was identified, ULVAC (Best Partner Award, sputtering tool; AW-033). No inspection, metrology or test winner could be identified for 2025.
+- **2025 Partners Day, 29 Sep 2025:** 14 winners in four categories (technology innovation, quality improvement, shared growth, ESG). SK hynix's page names none (AW-032). Only one winner was identified, ULVAC (Best Partner Award, sputtering tool; AW-033). ULVAC's claim that its ENTRON tool is qualified as POR at SK hynix is untestable ([C], AW-059). No inspection, metrology or test winner could be identified for 2025.
 - **2026 Partners Day, 28 Sep 2026 (Co-Growth Council 25th anniversary):** 11 winners in four categories, again unnamed (AW-034). Onto Innovation reportedly received a Best Partner Award for technology achievement, tied to HBM hidden-defect inspection (Dragonfly G5). Its release could not be saved (investors.ontoinnovation.com refuses scripts; the Business Wire copy failed), so this is a lead only (section 4). It is the single most relevant item in this module.
 - **First Japan Partners Day, 29 Oct 2026 (Chiba):** about 20 partners attended, including Advantest and DISCO. The article mentions no awards (AW-035).
 - Out-of-period context: FormFactor reported an SK hynix Best Partner Award in Nov 2024 for HBM probe cards (AW-036).
@@ -46,15 +46,15 @@ Events found but without readable winner names: SK hynix Partners Day 2025 (14 w
 - No Samsung Electronics award called "Best Partner" was found. The DS and DX divisions have held separate 상생협력 Days since 2025 (AW-040 source).
 
 ### Micron
-- **Micron Supplier Awards 2025** were celebrated in the week before 31 Oct 2025, with 14 recipients (AW-041). **The 2026 awards** were given at Supplier Day in Boise (blog dated 22 Oct 2026; AW-044). Micron's own page lists every winner and category for both years. Neither year has an inspection, metrology or test-equipment winner. Hanmi Semiconductor (a TC-bonder maker; my characterisation) won "Outstanding Performance in Assembly & Test Capital Equipment" in both years (AW-042, AW-043).
+- **Micron Supplier Awards 2025** were celebrated in the week before 31 Oct 2025, with 14 recipients (AW-041). **The 2026 awards** were given at Supplier Day in Boise (blog dated 22 Oct 2026; AW-044). Micron's own page lists every winner and category for both years. Neither year has an award category named for inspection or metrology; by my classification ([I], Medium; the page gives no product lines) no winner is primarily an inspection, metrology or test-equipment vendor. Hanmi Semiconductor (a TC-bonder maker; my characterisation) won "Outstanding Performance in Assembly & Test Capital Equipment" in both years (AW-042, AW-043).
 
 ### ASE (incl. SPIL)
 - **2024 Best Supplier Awards, ceremony 11 Apr 2025 (in period):** 17 winners (AW-045), including Teradyne (Asia) (AW-046) and Test Research Inc. (TRI), a maker of AOI, AXI and in-circuit test systems (AW-047, AW-048).
-- **2025 Best Supplier Awards, ceremony 24 Apr 2026:** 19 Best Supplier and 3 Supplier Sustainability awards (AW-049). cnyes counts 22 (AW-053), while DigiTimes' headline says 18 (AW-054, unresolved). Test winners: Advantest Taiwan (AW-050) and Hon Precision, a test-handler and active-thermal-control maker (AW-051, AW-052). SPIL had no separate award event; the ceremony was held jointly by ASEH with ASE, SPIL and USI (AW-055). ASE's own release was not read (aseglobal.com refuses scripts).
+- **2025 Best Supplier Awards, ceremony 24 Apr 2026:** 19 Best Supplier and 3 Supplier Sustainability awards (AW-049). cnyes counts 22 (AW-053), while DigiTimes' headline says 18 (AW-054, unresolved). Test winners: Advantest Taiwan (AW-050) and Hon Precision, a test-handler and active-thermal-control maker (AW-051, AW-052). No separate SPIL award event was found (NOT RETRIEVED). ASE, SPIL and USI took part in ASEH's ceremony per TechNews; cnyes says ASEH held it jointly with them (AW-049, AW-055). ASE's own release was not read (aseglobal.com refuses scripts).
 
 ### Amkor
 - Amkor's own blog shows an Amkor Supplier Award to Henkel (SiP business unit), posted 17 Apr 2025 (AW-056).
-- Amkor's **Supplier Excellence Award 2025** was presented on 9 Dec 2025, chosen from more than 3,000 suppliers (Senju release, AW-057; ASMPT also announced a win). No inspection, metrology or test winner was found, but Amkor's full list was not read.
+- Senju states it received Amkor's **Supplier Excellence Award 2025** on 9 Dec 2025 (vendor release, not Amkor's own statement; AW-057) and that it was chosen from more than 3,000 suppliers ([C], AW-060). ASMPT also announced a win. No inspection, metrology or test winner was found, but Amkor's full list was not read.
 
 ### Cross-event pattern ([I], see AW-058)
 - KLA appears on every full TSMC and Intel list read: TSMC 2025 and 2026, Intel 2025, plus Intel 2026 as a lead. Advantest appears on TSMC 2025, TSMC 2026 and ASE 2025. Lasertec appears on Intel 2025, Intel 2026 and TSMC 2026; its Intel 2025 category is EUV mask development, not packaging.
@@ -93,8 +93,8 @@ Manifest housekeeping: I replaced several first downloads saved with `--date aut
 
 1. "TSMC Excellent Performance Awards ... December 2025": the 2025 SCM Forum was held on **25 Nov 2025** (AW-001, AW-006). Advantest's release came out on 24 Dec 2025. The 2026 forum has already been held, on **17 Nov 2026** (AW-011).
 2. Samsung "Best Partner" award: no Samsung Electronics award by that name was found. The semiconductor award event is the **DS 상생협력 Day** (Apr 2025, Apr 2026), run separately from the DX one since 2025 (AW-040). "Best Partner Award" is SK hynix's name for its Partners Day awards (AW-033).
-3. SPIL has no separate supplier award. Its suppliers are honoured at the ASE Technology Holding ceremony, which ASEH runs jointly with ASE, SPIL and USI (AW-055). SPIL itself is a 2026 TSMC award winner.
-4. Micron: the awards are "Micron Supplier Awards" in 14 "Outstanding Performance in ..." categories. Its "Assembly & Test Capital Equipment" category went to Hanmi (a TC-bonder maker) in both years, not to a tester or inspection vendor (AW-042, AW-043).
+3. No separate SPIL supplier award was found (NOT RETRIEVED). Its suppliers are honoured at the ASE Technology Holding ceremony, in which ASE, SPIL and USI take part (TechNews; cnyes says held jointly) (AW-055). SPIL itself is a 2026 TSMC award winner.
+4. Micron: the awards are "Micron Supplier Awards" in 14 "Outstanding Performance in ..." categories. Its "Assembly & Test Capital Equipment" category went to Hanmi (a TC-bonder maker) in both years, not to a tester or inspection vendor (my classification, [I]; AW-042, AW-043).
 5. Watch-list names Tokyo Electron, DISCO and Canon did win (TSMC 2026, Intel 2025, ASE 2024 and Micron for TEL; TSMC and Intel for DISCO; TSMC 2025 and ASE 2024 for Canon). The categories are production, technology-development, safety or business ones, not probers or inspection, so they are classed other.
 6. The ASE 2025 Best Supplier count varies: 19 named Best Supplier winners plus 3 Sustainability (technews), 22 (cnyes), 18 (DigiTimes headline). I use the names list.
 
@@ -112,3 +112,12 @@ Manifest housekeeping: I replaced several first downloads saved with `--date aut
 - Liberty Times (ec.ltn.com.tw/article/paper/1778949) reportedly calls V5 Technologies a repeat TSMC winner (再度得獎), while managertoday marks it new versus 2025. V5 may have won in 2024; not checked.
 - TechInsights "Global Semiconductor Supplier Awards" (Advantest, FormFactor) are customer-survey rankings, not chipmaker supplier awards, so they are excluded.
 - SK hynix 기술혁신기업 (Technology Innovation Company) cohort selections (e.g. 8th cohort, Aug 2025) are a supplier-development programme, not an award, so they are excluded. The cohort lists may include Korean inspection vendors; not checked.
+
+## Corrections after verification (2026-11-21)
+
+- AW-009 re-tagged [F] -> [C] (Onto's paraphrase of TSMC's rationale; no TSMC wording).
+- AW-018 claim: 'new' reworded to 'not on the 2025 list' (the article's 新面孔 definition).
+- AW-033 split: award receipt stays [F]; ENTRON POR adoption claim moved to new row AW-059 [C].
+- AW-042, AW-043 claims: only 'no category named for inspection or metrology' stays [F]; 'no inspection/metrology/test vendor' moved to an [I] note.
+- AW-049, AW-055: 'co-hosted'/'held jointly' softened to TechNews' 共襄盛舉 (took part); cnyes' 共同舉辦 cited separately.
+- AW-057: claim cut to Senju's account of the award and date (vendor release, not Amkor's); '3,000 suppliers' moved to new row AW-060 [C].

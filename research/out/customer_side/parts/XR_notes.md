@@ -19,14 +19,14 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
 - **Failure mode.** They name static refresh time (tref, i.e. retention) as the most sensitive parameter, with reverse-junction leakage as the probable cause. This comes from the literature they cite, not from their own measurement (XR-004).
 - **Doses.** They stepped the dose up in 50-rad increments to 350 rad (3.5 Gy), and MemTest86 showed no errors (XR-002).
 - **Limit.** They call 350 rad "three times the limit provided by DRAM manufacturer". They saw no infant-mortality failures but warn that long-term reliability "may be reduced" (XR-003). The manufacturer's limit and the supplier's name are not stated. Read literally, the limit is about 117 rad (XR-035, Low confidence).
-- **Test set-up.** They used a 2D manual X-ray tool (MXI) and a 3D automated tool (AXI), with TLD dosimeters. Settings were 120–160 kV, 14.5–20 W and 55–315 s, with no filter or with Al, Zn or Cu filters of 1.6–4.8 mm (XR-005).
+- **Test set-up.** All dose DOE runs used a 2D manual X-ray tool (MXI), with TLD dosimeters. Settings were 120–160 kV, 14.5–20 W and 55–315 s, with no filter or with Al, Zn or Cu filters of 1.6–4.8 mm. Dose on three BGA builds was also measured in typical 3D automated (AXI) scans (XR-005).
 - **Dose drivers.** Copper filters cut dose the most but made images unusable. Dose rose linearly with inspection time, and the PCB and substrate acted as shields (XR-006).
 - **Production constraint?** The authors call it an inspection challenge, not a production constraint. Elsewhere they say latent damage is expected to affect only a small share of samples (p46).
 - **Scope.** The memory is on-package DRAM in an Intel BGA, not HBM.
 
 **Micron (co-author).** Micron's S. Beltrami (Process R&D, Vimercate) co-authored an IEEE TNS paper in August 2025 with the University of Padova (XR-008).
 - **Finding.** Earlier X-ray exposure did not significantly change the alpha soft-error rate of 3D NAND, "at least for small doses" (XR-007).
-- **Dose framing.** Those doses were "well above those commonly used for printed circuit board inspections" (XR-009).
+- **Dose framing.** The "small doses" at which no significant change was seen were still "well above those commonly used for printed circuit board inspections" (XR-009).
 - **Failure modes studied.** Threshold-voltage shifts and bit-error rates.
 - **Limits of the evidence.** I read the abstract only, and it gives no dose numbers. The authors do not frame it as a production constraint.
 
@@ -53,7 +53,7 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
 **Out-of-period chipmaker context (labelled; not used for the in-period answer).**
 - Intel, SMTA International October 2024 abstract: DRAM exposure limits "are not clear or readily available" (XR-027).
 - Samsung patent US 10,984,853 B2 (granted 2021): X-ray damage to memory devices "is increasing" and "quantifying the X-ray dosage is difficult". The patent puts an on-chip BJT dose detector in the memory device (XR-028).
-- Samsung patent US 11,217,495 B2 (granted 2022): soft X-rays cause "degradation of refresh characteristics or a charge loss" (XR-029).
+- Samsung patent US 11,217,495 B2 (granted 2022): soft X-rays "may be absorbed" in the substrate and cause "degradation of refresh characteristics or a charge loss" (XR-029).
 - Intel patent US 11,506,709 B2 (granted 2022): commercial X-ray radiation "may potentially induce irreversible damage" at gate level in memory dies. It names DRAM, SRAM and HBM (XR-030).
 - NIST report on ECTC 2024: TSMC's Zou named 3D X-ray imaging and IR inspection as TSMC techniques. The summary contains no dose remark (XR-031).
 
@@ -65,7 +65,7 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
 | Intel | same, p54 | "Even after total exposure of 350 rads, MemTest86 gave no errors on the DRAM." | 350 rad (3.5 Gy) total, 50 rad steps; DOE 120–160 kV, 14.5–20 W, 55–315 s, Al/Zn/Cu 1.6–4.8 mm (Table 1) | No functional errors (MemTest86) | 2D manual X-ray (MXI); TLD dosimetry; 3D AXI dose also measured | [F] XR-002, XR-005 |
 | Intel | same, p54 | "even after overexposure to three times the limit provided by DRAM manufacturer, no infant mortality failures were observed." | 3× maker limit; limit not stated (≈117 rad implied, [I] XR-035, Low) | No infant mortality; "reliability ... over longer periods of usage may be reduced" | 2D MXI | [F] XR-003 |
 | Intel | same, p48 | "the increase in reverse junction leakage is the most probable cause for tref degradation" | none | Retention / static refresh (tref) degradation via junction leakage (from cited literature) | n/a (literature) | [F] XR-004 |
-| Micron (co-author, Padova lead) | IEEE TNS, Aug 2025, abstract | "Experimental results show that the alpha soft error rate is not significantly affected by previous X-ray irradiation, at least for small doses" | Doses "well above those commonly used for printed circuit board inspections"; no values in abstract | Vt shifts, bit errors (3D NAND); no significant alpha SER change | Lab X-ray irradiation, then alpha exposure | [F] XR-007, XR-008, XR-009 |
+| Micron (co-author, Padova lead) | IEEE TNS, Aug 2025, abstract | "Experimental results show that the alpha soft error rate is not significantly affected by previous X-ray irradiation, at least for small doses" | "Small doses" still "well above those commonly used for printed circuit board inspections"; no values in abstract | Vt shifts, bit errors (3D NAND); no significant alpha SER change | Lab X-ray irradiation, then alpha exposure | [F] XR-007, XR-008, XR-009 |
 | Micron (adjacent) | IRPS, Mar 2026, abstract | "The threshold for total ionizing dose damage from terrestrial usecases is measured and shown to be inconsequential." | Threshold value not in abstract | TID (terrestrial, not X-ray inspection) | Accelerated neutron/alpha tests | [F] XR-010 |
 | Samsung | US 2026/0126403 A1, filed Oct 2025, pub. May 2026 | "damage and defects that may occur in the object to be inspected due to the X-ray beam can be reduced" | None | "damage and defects" (unspecified); HBM microbump bonding named as target | Inline X-ray laminography/CT with low-pass filter | [F] XR-011, XR-012 |
 | TSMC (press account) | DIGITIMES, 4 Sep 2026 (teaser; paywalled) | "TSMC is calling for future HBM and DRAM designs to become more compatible with X-ray inspection" | None visible | "radiation exposure to sensitive memory devices" | X-ray inspection (type not stated) | [S] XR-013, XR-014 |
@@ -93,7 +93,7 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
 - **Who and where.** DIGITIMES's photo caption shows "TSMC's Zhihua Zou" speaking on advanced packaging inspection challenges at SEMICON Taiwan 2026 (XR-014).
 - **Title.** A WindowsForum article links to a page with the anchor text "Keynote: Challenges and Opportunities for Metrology and Inspection of Advanced Packaging", at https://www.semicontaiwan.org/en/node/18506 (XR-016).
 - **Slot.** Search snippets of the refused forum page place it as the keynote of the **Semiconductor Advanced Inspection and Metrology Forum** on **Friday 4 September 2026, 09:45–10:25, Room 402, TaiNEX 1 (4F)**. The slot details are leads only.
-- **Not a main-stage keynote.** It was a forum keynote, not a show-level keynote. A third-party guide (snippet only) says TSMC was not on the main keynote stage that year.
+- **Not a main-stage keynote (snippets only).** Per the same snippets it was a forum keynote, not a show-level keynote; the saved WindowsForum page says only "keynote". A third-party guide (snippet only) says TSMC was not on the main keynote stage that year.
 
 **(a) Published abstract text: NOT RETRIEVED.** It sits on semicontaiwan.org, which refuses scripts (HTTP 403 on https://www.semicontaiwan.org/en/node/18506). I found no copy on a script-friendly host: no SEMI newswire release, co-organiser page or hosted PDF programme carried it. The user can save these pages by hand:
 - https://www.semicontaiwan.org/en/node/18506 (keynote abstract)
@@ -117,10 +117,10 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
 - **WindowsForum, 5 Sep 2026 (unsigned analysis).**
   - It says the public abstract lists "DRAM/HBM damage concern by X-ray". It also says the abstract names collaboration with foundry customers, HBM vendors and equipment vendors, and "design for metrology", as opportunities (XR-015, XR-017).
   - It says the abstract does not set a mandatory design rule or supplier requirement.
-  - It says no public material gives doses or failure rates (XR-018).
+  - It says no public evidence in the material it reviewed gives doses or failure rates (XR-018).
   - Its title for the talk, "a TSMC advanced-packaging metrology keynote at SEMICON Taiwan", matches the user's wording.
 - **Uncle Stock Notes, 7 Sep 2026 (Chinese investor Substack paraphrasing DIGITIMES).**
-  - It attributes the talk to TSMC's advanced-packaging quality and reliability team at the closing session (XR-019). That conflicts with the caption (Zou) and the forum-keynote slot.
+  - It attributes the talk to TSMC's advanced-packaging quality and reliability team at the closing session (XR-019). Saved sources do not corroborate this: the caption names only Zou (no team or session) and WindowsForum gives no time slot. Neither contradicts it; the forum-keynote slot is a snippet lead only.
   - It says TSMC "named" SK hynix, Samsung and Micron, and asked for X-ray markers designed into HBM dies ("DFI"). No other saved source supports this. Treat it as the blogger's reading.
 - **Not saved.** An apparent full copy of the DIGITIMES article on lcdproduct.com was not fetched, because it would get around the DIGITIMES paywall (see leads).
 
@@ -165,11 +165,11 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
 
 ## 3. Premise problems in the prompt
 
-1. **"Keynote at SEMICON Taiwan, September 2026."** The talk exists, but it was the keynote of one forum, the Semiconductor Advanced Inspection and Metrology Forum, on 4 September 2026. It was not a SEMICON Taiwan main-stage keynote. The slot comes from snippets, and the speaker from the DIGITIMES caption (XR-014, XR-037).
+1. **"Keynote at SEMICON Taiwan, September 2026."** The talk exists: the speaker comes from the DIGITIMES caption, and "keynote" and the title from WindowsForum. Per search snippets only, it was the keynote of one forum, the Semiconductor Advanced Inspection and Metrology Forum, on 4 September 2026, not a SEMICON Taiwan main-stage keynote (XR-014, XR-037).
 2. **"Quote the published abstract."** The abstract is published only on semicontaiwan.org, which refuses scripts, and I found no copy elsewhere. It is NOT RETRIEVED. What we have about it is a secondary paraphrase (WindowsForum, XR-015, XR-017), which must not be treated as the abstract.
 3. **"TSMC urges HBM makers to design for X-ray inspection."** That is DIGITIMES's headline framing. The claim that TSMC "named" SK hynix, Samsung and Micron, and asked for X-ray markers in HBM dies, comes only from an investor blog (XR-019). WindowsForum says the abstract states no mandate (XR-017).
 4. **The XR-1 premise that chipmakers have published HBM X-ray dose limits.** In period, no chipmaker document gives an HBM dose limit or HBM failure dose. The only chipmaker dose numbers are Intel's, for on-package DRAM: 350 rad tested, three times an unstated maker limit (XR-002, XR-003). Intel's article is an April 2025 republication of an October 2024 paper, so it is in period only through the republication.
-5. **The blog's description of the talk.** It attributes the talk to TSMC's quality and reliability team at the "closing session". That conflicts with the forum-keynote slot and with the APME (metrology) role in the speaker-bio snippet (XR-019).
+5. **The blog's description of the talk.** It attributes the talk to TSMC's quality and reliability team at the "closing session". No saved source corroborates or contradicts this; it fits poorly only with snippet leads (the forum-keynote slot and the APME (metrology) role in the speaker-bio snippet) (XR-019).
 
 ## 4. Unverified leads (could not be turned into [F] or [S] rows)
 
@@ -190,3 +190,15 @@ I found nothing in period from SK hynix or Amkor. ASE's in-period paper uses 3D 
   - One `firecrawl_search` call failed for lack of credits. Discovery otherwise used WebSearch.
   - Four DIGITIMES Taiwan pages fetched while looking for a Chinese version of the article proved unrelated video items and are not cited (`2026-11-21_digitimes-tw_shwnws-*.html`).
   - These saved files are also uncited or off-topic: `2025-08-28_nist_material-needs-measurement-challenges-adv-packaging.pdf`, `2025-01-10_zeiss_ebook-semiconductor-packaging-failure-analysis.pdf`, `2026-11-21_cnyes_semi-test-metrology-three-demands-2025.html`, `2026-11-21_googlepatents_US12237032B1.html` (University of Alabama in Huntsville), and `2026-11-21_smta-circuitinsight_dram-damage-xray-post-pcb-assembly-served.html` (a non-paper page).
+
+## Corrections after verification (2026-11-21)
+
+- Rows changed after an independent two-stage check: XR-005, XR-009, XR-014, XR-018, XR-019, XR-022, XR-029, XR-037.
+- XR-005: Intel's dose DOE ran on the 2D MXI machine only; AXI was used only to measure dose on three BGA builds (p50).
+- XR-009: claim restated as the abstract's finding (no significant alpha-SER change at small doses that are still well above PCB-inspection doses); new quote; Micron link now cited to the Crossref record.
+- XR-014: note cross-reference corrected to XR-013 / XR-037.
+- XR-018: WindowsForum's limiter "in the material reviewed" restored.
+- XR-019: blog's team and closing-session attribution is "not corroborated" by saved sources, not "in conflict" with them.
+- XR-022: publication date corrected to 2025-07-21; partner spelled Axiomatique (via the NexRay JV).
+- XR-029: "may" restored; damaged chip 35 has no stated type (logic/memory types belong to the two-chip embodiment).
+- XR-037: talk date and "forum keynote" slot marked in the claim as coming from unsaved search snippets only.

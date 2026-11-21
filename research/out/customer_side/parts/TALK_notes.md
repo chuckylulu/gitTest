@@ -1,28 +1,28 @@
 # TALK module notes: chipmakers' non-paper statements on inspecting HBM stacks and hybrid-bonded interfaces (Jan 2025 to 21 Nov 2026)
 
-Files: evidence `research/out/customer_side/parts/TALK.csv` (61 rows: 28 [F], 5 [C], 25 [S], 3 [I]; quote_check: 58 of 58 quotes FOUND), table `research/out/customer_side/parts/TALK_table.csv` (43 rows), sources in `research/sources/customer_side/`.
+Files: evidence `research/out/customer_side/parts/TALK.csv` (61 rows: 20 [F], 11 [C], 27 [S], 3 [I] after the verification fixes; quote_check: 58 of 58 quotes FOUND), table `research/out/customer_side/parts/TALK_table.csv` (43 rows), sources in `research/sources/customer_side/`.
 
 Method: discovery with WebSearch and Firecrawl search (English, Korean, Chinese). I also listed the WordPress REST search on news.skhynix.com and news.skhynix.co.kr; those listings went to the scratchpad only and are not cited. Firecrawl search credits ran out for about 10 minutes mid-run and then came back. Every document cited was saved with fetch.py.
 
 ## 1. Findings
 
-**Overall.** In the non-paper material I could open, none of the seven names a production method for post-bond void or bond-overlay inspection of HBM or hybrid-bonded stacks in its own words (TALK-055, [I], Medium). The only claim of a method on a production line is Samsung with picosecond laser-acoustic tools, and it comes from trade press citing industry sources, not from Samsung (TALK-024 to TALK-029). When chipmakers do speak, they describe needs, and three needs recur:
+**Overall.** In the talk, newsroom, web-page and press material I could open (plus Amkor's IMAPS 2025 paper), none of the seven names a production method for post-bond void or bond-overlay inspection of HBM or hybrid-bonded stacks in its own words (TALK-055, [I], Medium). The only production-line claim of a post-bond void/overlay method is Samsung with picosecond laser-acoustic tools, and it comes from trade press citing industry sources, not from Samsung (TALK-024 to TALK-029). When chipmakers do speak, they describe needs, and three needs recur:
 - particles and surface condition before bonding;
-- warpage at wafer and chip level;
+- warpage at wafer, chip and package level (Amkor's input is package-level only);
 - detection of buried or lower-interface voids (TALK-056, [I]).
 
 **SK hynix**
-- Its own 2025-26 statements are about fab-wide AI rather than physical inspection of HBM stacks (TALK-057, [I]):
-  - an AI defect-image analysis system that "drastically reduced the time required for defect analysis" (TALK-001);
-  - AI virtual metrology that screens "quality anomalies across all wafers without increasing the total production time" (TALK-002), in an article framed around HBM smart factories. The 31% productivity and 21% yield gains are company claims (TALK-003).
-- It names its virtual-metrology vendor itself: Gauss Labs' "Panoptes VM", used "in its production lines since 2022". This is front-end lithography overlay, not HBM stacking (TALK-004).
+- Its own 2025-26 statements are about fab-wide AI, general wafer-level DMI metrology and inspection, and supplier co-development, not physical inspection of HBM stacks (TALK-057, [I]):
+  - an AI defect-image analysis system that "drastically reduced the time required for defect analysis" (TALK-001, [C]; fab-wide, not among the HBM smart-factory system features);
+  - AI virtual metrology that screens "quality anomalies across all wafers without increasing the total production time" (TALK-002, [C]), in an article framed around HBM smart factories. The 31% productivity and 21% yield gains are also company claims (TALK-003).
+- It names its virtual-metrology vendor itself: Gauss Labs' "Panoptes VM", used "in its production lines since 2022" (an in-use company claim). This is front-end lithography overlay, not HBM stacking (TALK-004, [C]).
 - Its Korean newsroom describes the DMI function (Defect analysis, Metrology, Inspection). Metrology covers nm-scale line width, thickness and alignment in vertical stacking (TALK-005). Inspection uses optical and electron-microscope tools at each process step (TALK-006). DMI works across development and mass production (TALK-007).
 - An SK hynix metrology engineer states a limit: areas that used to be measurable are increasingly hard to measure accurately (TALK-008).
 - SK hynix's supplier co-development programme is the clearest sign of where it wants new inspection tools. The chipmaker names both vendors itself:
   - NexSensor (넥센서), selected in Aug 2025 to develop wafer and chip warpage measurement equipment (TALK-009). SK hynix calls warpage measurement and control essential (TALK-010) and expects the work to reduce its reliance on overseas tools (TALK-011, [C]).
   - Cobis Technology, whose "hybrid wafer metrology equipment" got an interim review (TALK-012). The term is undefined; do not read it as "hybrid-bonded wafers".
 - SEMICON Korea 2026: an SK hynix DRAM engineer presented on overlay control for CMP. The talk content beyond its title was not published (TALK-013).
-- SK hynix's own Hybrid Bonding Tech Note (Aug 2026) says die-to-wafer hybrid bonding for HBM is "progressing toward commercialization" (TALK-014). It calls current TCB unsuitable below about 7 µm pitch (TALK-015) and names no inspection method.
+- A guest Hybrid Bonding Tech Note on the SK hynix Newsroom (Aug 2026), written by Prof. Seunghwan Joo of Inha University, not by SK hynix, says die-to-wafer hybrid bonding for HBM is "progressing toward commercialization" (TALK-014, [S]). It calls current TCB unsuitable below about 7 µm pitch (TALK-015, [S]) and names no inspection method. It is not SK hynix's own view.
 - Advanced MR-MUF is said to allow thinner stacking "without warpage" (TALK-016, [C]). No measurement is given.
 - Press (TrendForce, citing Korean media) reports an HBM4 system-level/SiP test tool, co-developed with partners, that passed SK hynix's internal qualification (TALK-017, [S]).
 
@@ -45,18 +45,18 @@ Method: discovery with WebSearch and Firecrawl search (English, Korean, Chinese)
   All of this is [S]. The vendor is named by the press, not by Samsung.
 
 **Micron**
-- CTO Scott DeBoer (ITF World 2025, quoted by Semiconductor Engineering):
+- CTO Scott DeBoer (ITF World, talk year and month not stated; quoted by Semiconductor Engineering, 12 Aug 2025):
   - Micron uses daisy chains in HBM development "to evaluate thousands of connections at once" (TALK-035);
   - a resistance shift reveals "voids or bond degradation even before visual inspection sees it" (TALK-036);
   - the industry lacks standard hybrid-bonding test structures, so Micron invents its own test vehicles (TALK-037). All [S].
-- Micron's Dec 2025 blog describes AI-enhanced imaging and classification in testing and inspection (TALK-038), applied across "front end, assembly and test" (TALK-039). It also cites deep-learning AI-ADC (TALK-041) and 100 million wafer images a week (TALK-040, [C]). It is not HBM-specific.
+- Micron's Dec 2025 blog describes AI-enhanced imaging and classification in testing and inspection (TALK-038), applied across "front end, assembly and test" (TALK-039, CVP Koen de Backer). It also cites deep-learning AI-ADC (TALK-041) and 100 million wafer images, all run through AI models each week (TALK-040). All four are company in-use claims [C]. It is not HBM-specific.
 - VLSI 2025 Workshop 9 talk by Micron's Charles Wang (abstract): it covers challenges in "Processing, Measuring and Testing" C2W-bonded memory stacks. No method is named (TALK-021).
 - SEMICON Taiwan 2025 keynote by Chang Yu-lin (Micron Taiwan VP, advanced packaging & test operations):
   - pre-applied NCF lets Micron expel bubbles, i.e. voids are controlled by the process (TALK-042);
   - warpage, cracks and particles are amplified in stacking (TALK-043). [S]
 
 **Intel**
-- Intel organised VLSI 2025 Workshop 9. Its description lists the needed metrology: "ultra-dense sampling highthroughput surface topography, real-time defect analyses, subsurface void detection" (TALK-022).
+- Intel organised VLSI 2025 Workshop 9. Its unsigned description (authorship by the Intel organisers is inferred, not stated) lists the needed metrology: "ultra-dense sampling highthroughput surface topography, real-time defect analyses, subsurface void detection" (TALK-022).
 - The organiser bio says Haris Khan Niazi leads Intel's hybrid-bonding and 3D HI metrology and inspection (TALK-023).
 - Intel Foundry Direct Connect 2025/2026 material and the Foveros Direct tech brief sit on hosts that refuse (see gaps).
 - An Intel Fellow's deck (Tadayon: "metrologies to detect defects at all levels – surface and buried") is dated Apr 2024. It is out-of-period context only and not used in the table (TALK-054).
@@ -124,7 +124,7 @@ Method: discovery with WebSearch and Firecrawl search (English, Korean, Chinese)
    - the HBM4 shipment release (Feb 2026) names no bonding method;
    - the HBM page says Samsung is "preparing to adopt" HCB (TALK-034);
    - TheElec says the industry expects HCB from HBM4E 16+ layers.
-5. For SK hynix, its own Tech Note (Aug 2026) puts hybrid-bonded HBM as "progressing toward commercialization", not in production (TALK-014).
+5. For SK hynix, a guest Tech Note on its newsroom (Aug 2026; author Prof. Seunghwan Joo, Inha University, not SK hynix) puts hybrid-bonded HBM as "progressing toward commercialization", not in production (TALK-014, [S]).
 6. I could not confirm "intelligent packaging fab (AP7/AP8)" as a TSMC term in any document I could retrieve. My TSMC rows rest on press accounts only: 3DICAMA remarks and the SEMICON Taiwan 2026 keynote, which XR found.
 7. The VLSI 2025 Workshop 9 page gives the Samsung speaker as "Suyoung Lee" in the talk line but "Suyoung Yang" in the bio heading. Search snippets also gave "Yusin Yang". I used the page's talk line.
 8. Tool problem for the merge step: `research/tools/merge_parts.py` globs every `parts/*.csv`, so it will pick up `TALK_table.csv`. That file has a different header and no `id` column. Exclude it, or merge only `TALK.csv`, when building evidence.csv. I did not edit the tool.
@@ -152,3 +152,12 @@ Method: discovery with WebSearch and Firecrawl search (English, Korean, Chinese)
 - SK hynix and Gauss Labs, SPIE Advanced Lithography + Patterning 2026: "A Virtual Metrology-Driven Tool-to-Tool Matching: Toward Early Anomaly Detection and Diagnosis" and "GRACE: A Gradient-Based Model-Agnostic Explainability Framework for Photolithography Overlay Virtual Metrology". DOIs were not looked up (titles from the SK hynix newsroom, 2026-02-19).
 - Samsung, ISSCC 2026 paper on 4F² VCT DRAM made with wafer-to-wafer hybrid bonding (mentioned by TheElec 2026-03-31). Title and DOI not looked up.
 - Not a chipmaker, for exclusion: R. Chang et al. (A*STAR), ECTC 2025, DOI 10.1109/ECTC51687.2025.00161 (HBM bump visual inspection with AI).
+
+## Corrections after verification (2026-11-21)
+
+- Retagged [F] to [C] (company in-use/performance claims): TALK-001, TALK-002, TALK-004, TALK-038, TALK-039, TALK-041.
+- Retagged [F] to [S] and reattributed to the guest author (Prof. Seunghwan Joo, Inha University), not SK hynix: TALK-014, TALK-015.
+- Claim, value or note corrected: TALK-001 (HBM context), TALK-004 (Gauss Labs "an industrial AI startup", not "SK affiliate"), TALK-022 (authorship of the workshop text is an inference), TALK-040 (sensor count is not a weekly figure).
+- Talk date and locator corrected: TALK-035, TALK-036 (ITF World talk date not stated; section 'Voids, contamination, and non-bonded zones'); TALK-052 (p2, Section II.A).
+- Inferences rescoped, inputs completed, confidence reasons added: TALK-055, TALK-056, TALK-057.
+- Table rows updated to match: TALK-001/003, 002, 004 and 038-041 now [C]; Intel workshop authorship hedged; DeBoer talk year removed.

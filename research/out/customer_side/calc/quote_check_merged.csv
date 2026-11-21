@@ -34,7 +34,7 @@ PAPM-032,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPM-033,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ISTFA2025-26-volume-list.json,"Micron Technology , Boise, Idaho, United States of America"
 PAPM-034,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ISTFA2025-26-volume-list.json,"Thermo Fisher Scientific , Brno, Jihomoravsk\u00fd kraj, Czech Republic"
 PAPM-035,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,the feature size at the targeted cut face during the Focused Ion Beam (FIB) process has been reduced to sub-ten nanometer scale
-PAPM-036,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,Micron has successfully implemented cut-face probability calculation and sliced image data interpolation methods using machine vision image artificial intellige
+PAPM-036,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,Micron has successfully implemented cut-face probability calculation and sliced image data interpolation methods using machine vision image artificial intellige
 PAPM-037,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"This technology has been integrated into its associated FIB platform, augmented by Open-AutoTEM, (iFast Extensibility)."
 PAPM-038,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_VLSI2025-volume-list.json,"Micron Technology,Richardson,TX"
 PAPM-039,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_VLSI2026b-volume-list.json,"Micron Technology Inc.,Boise,USA"
@@ -108,7 +108,7 @@ PAPM-106,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPM-107,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"Validated on HBM, it provides a scalable solution for the rising test cost of high-density HBM and DRAM products."
 PAPM-108,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_VLSI2026b-volume-list.json,"Samsung Electronics Co., Ltd.,Memory Business,Hwasung-Si,Gyeonggi-Do,Republic of Korea"
 PAPM-109,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,cell refresh interval time (tREFi) performance at high temperature of 120° C during Chip on Wafer (CoW) test for 12-High stacked HBM devices
-PAPM-110,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,is demonstrated in High Band Width Memory (HBM) products
+PAPM-110,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,is demonstrated in High Band Width Memory (HBM) products
 PAPM-111,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ASMC2025-volume-list.json,"Samsung Electronics Co., Ltd,Device Solution (DS) Division,Hwaseong-si,South Korea"
 PAPM-112,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,this defect is closely associated with wafer review or critical dimension (CD) measurements using a scanning electron microscope (SEM) prior to the coating proc
 PAPM-113,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"carbon compound-based contamination in a vacuum SEM chamber, leading to bubble nucleation and air entrapment during the acceleration coating stage"
@@ -195,15 +195,15 @@ PAPM-193,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPM-194,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_spie-mipc-2025-26-part1.json,While limitations remain—near-zero site coverage and limited directional information—these can be mitigated through modeling and hybrid metrology.
 PAPM-195,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_spie-mipc-2025-26-part1.json,"MMT is a key virtual metrology (VM) enabler for mass production, providing wafer-level sensing and excursion-gated inspection for fab-wide feedback"
 PAPM-196,[I],,,,,
-PAPM-197,[F],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-spie-al-2026-virtual-metrology.html,Panoptes VM (Virtual Metrology)” in its production lines since 2022
+PAPM-197,[C],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-spie-al-2026-virtual-metrology.html,Panoptes VM (Virtual Metrology)” in its production lines since 2022
 PAPM-198,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"(SK hynix Inc., Icheon, Republic of Korea)"
-PAPM-199,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"there is currently no equipment or method for direct in-line measurement of chip warpage, as ultra-thin wafers are bonded to carrier wafers during handling"
+PAPM-199,[C],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"there is currently no equipment or method for direct in-line measurement of chip warpage, as ultra-thin wafers are bonded to carrier wafers during handling"
 PAPM-200,[C],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"This paper presents the world's first research on a direct, large-scale, non-destructive chip warpage measurement process applicable in in-line manufacturing."
 PAPM-201,[C],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,The results of this study have been implemented into measurement equipment and developed into a commercialized solution currently in use.
 PAPM-202,[C],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,This method has been transferred to measurement equipment suppliers and has since been developed and commercialized as a LSCW measurement solution.
 PAPM-203,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,The existing automated RF wafer handling system was modified by integrating an optical module for warpage measurement and implementing vacuum chucking capabilit
 PAPM-204,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,cross-validation was performed using the AXP manual destructive analysis system from Akrometrix Inc.
-PAPM-205,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"coefficient of determination R$^2$ were 0.8805, 0.6610, and 0.4369, respectively"
+PAPM-205,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"The cosine similarity, Pearson correlation coefficient, and coefficient of determination R$^2$ were 0.8805, 0.6610, and 0.4369, respectively"
 PAPM-206,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,the total measurement time of approximately 7 to 10 minutes for all chips
 PAPM-207,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,"3D laser scanner was used with an x- and y-axis resolution set to approximately 10 $\mu$m, the measurement took approximately five minutes per wafer"
 PAPM-208,[F],FOUND,1,,research/sources/customer_side/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.html,the sample size is far too small to effectively inform defect reduction strategies
@@ -220,14 +220,17 @@ PAPM-218,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-t
 PAPM-219,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,Fig. 6. CVD film IR inspection image.
 PAPM-220,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,a decrease in yield was confirmed due to TSV damage in the wafer edge area after the subsequent CMP process
 PAPM-221,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,FIB cross-section inspection to compare step coverage of SiO${}_{2}$ Film by the TSV results also confirmed that there was no difference
-PAPM-222,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,"The optimized process was successfully applied in mass production, demonstrating improved productivity and stable quality, with no significant differences in yi"
-PAPM-223,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"(Samsung Institute of Technology, Samsung-ro 1, Giheung-gu, Youngin-si, Gyeonggi-do 17113, Republic of Korea)"
+PAPM-222,[C],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,"The optimized process was successfully applied in mass production, demonstrating improved productivity and stable quality, with no significant differences in yi"
+PAPM-223,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"He is also an engineer with the Semiconductor Business Division at Samsung Electronics, South Korea."
 PAPM-224,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"Applied to 191 optical inspection tools in a Samsung Electronics high-volume manufacturing (HVM) line, the approach achieved a sensitivity matching accuracy wit"
 PAPM-225,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,The 191 inspection systems used in this study are Hitachi High-Tech IS4100 patterned-wafer defect inspection tools
 PAPM-226,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"Deployed across 191 IS4100 patterned-wafer optical inspectors operating at after-develop (ADI), after-etch (AEI), and post-CMP inspection (PCI) checkpoints"
 PAPM-227,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"The study covered 300-mm high-volume manufacturing for 10-nm-class second-generation DRAM (1y, a.k.a. D1y)"
 PAPM-228,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,often requiring over three hours per tool due to iterative scan–adjust–verify cycles
 PAPM-229,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,reduced preventive maintenance (PM) time by 45%
+PAPM-230,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,reducing turnaround-time by orders-of-magnitude
+PAPM-231,[F],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-spie-al-2026-virtual-metrology.html,The two papers to be presented are based on joint research conducted by members of Gauss Labs and SK hynix
+PAPM-232,[I],,,,,
 PAPL-001,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2025-volume-list.json,"Taiwan Semiconductor Manufacturing Company,Corporate Research,Hsinchu,Taiwan"
 PAPL-002,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"Bonding quality is evaluated through plasma activation and IR imaging, while COMSOL simulations were employed to assess thermal performance."
 PAPL-003,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,This method utilizes temporary bonding and wafer thinning.
@@ -239,8 +242,8 @@ PAPL-008,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPL-009,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2025-volume-list.json,"TSMC,Hsinchu,Taiwan,R.O.C."
 PAPL-010,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,High integration yield on daisy chains has also been successfully demonstrated.
 PAPL-011,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,a 3D IC consisting of a high-performance compute base die and multilayered high-capacity memory top dies
-PAPL-012,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,is proven feasible for the first time in this study
-PAPL-013,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"can be supported by adopting SoIC®-CS in next-generation HBM (8-hi, 12-hi and up to 16-hi DRAM layers on an enhanced logic base die)"
+PAPL-012,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,is proven feasible for the first time in this study
+PAPL-013,[C],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,Much higher power densities (more than $1.2 ~\mathrm{W} / \text{mm}^{2}$) can be supported by adopting SoIC®-CS in next-generation HBM
 PAPL-014,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_IRPS2025-volume-list.json,"Quality and Reliability Taiwan Semiconductor Manufacturing Company, Ltd.,Hsinchu,Taiwan,R.O.C."
 PAPL-015,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,Tests like double cantilever and nano-indentation provide critical data on interface robustness and stress resistance
 PAPL-016,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"integrate multiple chips, including logic systems-on-chip and high-bandwidth memory, within a single package"
@@ -271,7 +274,7 @@ PAPL-040,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC202
 PAPL-041,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,Thermoreflectance measurements indicate that the total thermal resistance of the new bonding layer is 10 X smaller than that of CVD silicon oxide
 PAPL-042,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,we report a newly developed 300 mm wafer-to-wafer bonding technology
 PAPL-043,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"The new process is carried out at ambient conditions using alternative materials and a commercial fusion bonder, without the need for plasma activation."
-PAPL-044,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,We demonstrate that the bonding energy matches or exceeds that of fusion-bonded oxide
+PAPL-044,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,We demonstrate that the bonding energy matches or exceeds that of fusion-bonded oxide within a temperature range below
 PAPL-045,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,"Intel Corporation,Chandler,USA"
 PAPL-046,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,A test vehicle featuring a dense grid of fiducials across the chiplet is fabricated to enable near-infrared (NIR) post-bond chiplet level overlay mapping.
 PAPL-047,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,chiplet distortion has become more prominent as one of the biggest contributors of the post bond overlay error
@@ -313,7 +316,7 @@ PAPL-082,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPL-083,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,demonstrating feasibility for base die XADA at a synchrotron
 PAPL-084,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,faces challenges related to slow measurement times due to limited laboratory x-ray source brightnesses
 PAPL-085,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,thermal technique resolutions degrade with increasing stack thicknesses
-PAPL-086,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,find that response scales with flux density and exposure time
+PAPL-086,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,We also examine attenuated x-ray flux circuit responses and find that response scales with flux density and exposure time
 PAPL-087,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,where significant speed ups in throughput times over laboratory XADA are observed
 PAPL-088,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ISTFA2025-26-volume-list.json,"Intel Corporation , Chandler Blvd, Chander, AZ, USA"
 PAPL-089,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,This study expands on a novel application of LIT that uses RF signals to isolate electrical open signatures
@@ -322,7 +325,7 @@ PAPL-091,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPL-092,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,it can detect subtle thermal signatures through multiple relatively thick layers of materials
 PAPL-093,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_VLSI2026b-volume-list.json,"Intel,Santa Clara,CA,USA"
 PAPL-094,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,An innovative and cost effective multiple-wafer via-in-one TSV architecture implementing into 3D high bandwidth DRAM cube has been demonstrated.
-PAPL-095,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,Consistence of normalized resistance for each via-in-one TSV and contact ring
+PAPL-095,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,Consistence of normalized resistance for each via-in-one TSV and contact ring ($<10 \%$ variation) test describes the good quality of interconnection.
 PAPL-096,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,test describes the good quality of interconnection
 PAPL-097,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part2.json,on one Logic and successful reliability testing confirm its robustness
 PAPL-098,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,"Advanced Semiconductor Engineering, Inc,Kaohsiung,Taiwan"
@@ -347,7 +350,7 @@ PAPL-116,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPL-117,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,An Ag passivation layer was deposited on the Cu pads of a 30-micrometer-pitch test vehicle via an electroless plating process.
 PAPL-118,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,"Advanced Semiconductor Engineering (ASE) Group,Product Characterization,Kaohsiung City,Taiwan"
 PAPL-119,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"a surface topography featuring protruding Cu pads and a recessed PI region, as verified by atomic force microscopy (AFM)"
-PAPL-120,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,as revealed by focused ion beam (FIB) cross-sectional analysis
+PAPL-120,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"robust nt-Cu/PI hybrid joints bonded at 250 °C and 10 MPa for 1 hour, without the need for post-bonding annealing"
 PAPL-121,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,uniform and selective electroless deposition of highly (111)-textured nt-Cu pads on a fine-pitch polyimide (PI) hybrid bonding test vehicle
 PAPL-122,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,"Advanced Semiconductor Engineering, Inc., Taiwan,Kaohsiung City,Taiwan"
 PAPL-123,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"including cross-sectional focused ion beam (FIB), scanning electron microscopy (SEM), energy-dispersive spectroscopy (EDS), and electrical tests"
@@ -356,7 +359,7 @@ PAPL-125,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_
 PAPL-126,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,"ASE Group,Kaohsiung,Taiwan"
 PAPL-127,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"electrical continuity was confirmed through a daisy chain consisting of 2,409 serially connected Cu electrodes"
 PAPL-128,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,pressure-less hybrid bonding at 200°C was achieved using a 10-µm-pitch daisy-chain test vehicle
-PAPL-129,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,such as High Bandwidth Memory and NAND flash memory
+PAPL-129,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"the proposed approach can reduce thermal budget and mechanical stress in devices employing fine-pitch interconnects, such as High Bandwidth Memory and NAND flas"
 PAPL-130,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,"Advanced Package Development Advanced Semiconductor Engineering (ASE) Group,Kaohsiung City,Taiwan"
 PAPL-131,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,Interfacial voids in Chip-on-Wafer (CoW) hybrid bonding—a leading 3D-IC architecture—cause electrical open circuits and compromise functional yield.
 PAPL-132,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,"For 8mm x 12mm x 0.05mm TEOS oxide dies, yield surged from 2.8% to 99% via angular optimization."
@@ -416,10 +419,11 @@ PAPL-185,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ISTFA20
 PAPL-186,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,we compare QDM magnetic images with lock-in thermography (LIT) images of internal currents in 2.5D chiplet devices
 PAPL-187,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_ISTFA2025-26-volume-list.json,"Intel Corp. Inc. , Chandler, AZ, USA"
 PAPL-188,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json,The paper highlights the potential for application of the proposed method for failure analysis in heterogeneous 3D-integrated microelectronic devices.
-TALK-001,[F],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html,the AI-based defect image analysis system has drastically reduced the time required for defect analysis
-TALK-002,[F],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html,detecting and inspecting quality anomalies across all wafers without increasing the total production time for finished products
+PAPL-189,[I],,,,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,
+TALK-001,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html,the AI-based defect image analysis system has drastically reduced the time required for defect analysis
+TALK-002,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html,detecting and inspecting quality anomalies across all wafers without increasing the total production time for finished products
 TALK-003,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html,"We increased productivity by 31% in processes that had previously experienced bottlenecks, and improved yield by 21%"
-TALK-004,[F],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-spie-al-2026-virtual-metrology.html,has used Gauss Labs’ AI-based virtual metrology solution “Panoptes VM (Virtual Metrology)” in its production lines since 2022
+TALK-004,[C],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-spie-al-2026-virtual-metrology.html,has used Gauss Labs’ AI-based virtual metrology solution “Panoptes VM (Virtual Metrology)” in its production lines since 2022
 TALK-005,[F],FOUND,1,,research/sources/customer_side/2026-05-22_skhynix_newsroom-kr-hypidia-dmi-article.html,"회로 선폭 및 두께, 수직 적층 시의 정렬 상태 등을 나노 단위로 측정하여"
 TALK-006,[F],FOUND,1,,research/sources/customer_side/2026-05-22_skhynix_newsroom-kr-hypidia-dmi-article.html,광학 및 전자현미경 장비를 활용해 수많은 칩 중에서 어디에 문제가 있는지를 빠르게 찾아내는 첫 번째 방어선이다
 TALK-007,[F],FOUND,1,,research/sources/customer_side/2026-05-21_skhynix_newsroom-kr-jobreport-base-technology.html,DMI(Defect analysis & Metrology Inspection)는 제품 개발과 양산 과정에서 발생하는 패턴 변화와 결함을 검출하는 핵심 계측 기술을 개발하며
@@ -429,8 +433,8 @@ TALK-010,[F],FOUND,1,,research/sources/customer_side/2025-08-25_skhynix_newsroom
 TALK-011,[C],FOUND,1,,research/sources/customer_side/2025-08-25_skhynix_newsroom-kr-tech-innovation-partners-8th.html,SK하이닉스는 해당 기술의 해외 의존도를 낮추고 국산화 비중을 한층 높일 것으로 기대하고 있다
 TALK-012,[F],FOUND,1,,research/sources/customer_side/2025-08-25_skhynix_newsroom-kr-tech-innovation-partners-8th.html,코비스테크놀로지의 ‘하이브리드 웨이퍼 계측 장비 개발’에 대해서도 중간 점검의 시간을 가졌다고
 TALK-013,[F],FOUND,1,,research/sources/customer_side/2026-02-12_skhynix_newsroom-semicon-korea-2026.html,Lee Hyeokjung of DRAM C&C addressed optimal overlay (O/L) control conditions for effective chemical mechanical polishing (CMP)
-TALK-014,[F],FOUND,1,,research/sources/customer_side/2026-08-25_skhynix_newsroom-technote-hybrid-bonding.html,"For HBM, the D2W approach is being adopted and is progressing toward commercialization."
-TALK-015,[F],FOUND,1,,research/sources/customer_side/2026-08-25_skhynix_newsroom-technote-hybrid-bonding.html,making them unsuitable for pitches of approximately 7µm or below
+TALK-014,[S],FOUND,1,,research/sources/customer_side/2026-08-25_skhynix_newsroom-technote-hybrid-bonding.html,"For HBM, the D2W approach is being adopted and is progressing toward commercialization."
+TALK-015,[S],FOUND,1,,research/sources/customer_side/2026-08-25_skhynix_newsroom-technote-hybrid-bonding.html,making them unsuitable for pitches of approximately 7µm or below
 TALK-016,[C],FOUND,1,,research/sources/customer_side/2025-06-17_skhynix_newsroom-oneteam-hbm-leadership.html,This updated technique allowed for thinner chip stacking without warpage and used new protective materials to optimize thermal performance
 TALK-017,[S],FOUND,1,,research/sources/customer_side/2026-02-25_trendforce_news-skhynix-hbm4-package-sip-tester.html,The device passed SK hynix’s internal qualification testing last month.
 TALK-018,[F],FOUND,1,,research/sources/customer_side/2025-06-08_vlsisymposium_workshop2025-9-hybrid-bonding-metrology-inspection.html,"ensuring precise alignment, large area 3-dimensional topology and warpage metrology at both wafer level and chip level"
@@ -453,10 +457,10 @@ TALK-034,[C],FOUND,1,,research/sources/customer_side/2026-11-21_samsung_product-
 TALK-035,[S],FOUND,1,,research/sources/customer_side/2025-08-12_semiengineering_article-metrology-under-pressure-hybrid-bonding.html,"In our HBM development work, we use daisy chains to evaluate thousands of connections at once"
 TALK-036,[S],FOUND,1,,research/sources/customer_side/2025-08-12_semiengineering_article-metrology-under-pressure-hybrid-bonding.html,we can identify voids or bond degradation even before visual inspection sees it
 TALK-037,[S],FOUND,1,,research/sources/customer_side/2025-08-12_semiengineering_article-metrology-under-pressure-hybrid-bonding.html,We’re having to invent our own test vehicles just to understand how different tools respond to the same defect types.
-TALK-038,[F],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,Validates functionality and structural integrity using AI-enhanced imaging and classification systems to detect flaws invisible to the human eye.
-TALK-039,[F],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,"This analysis spans everything — front end, assembly and test"
+TALK-038,[C],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,Validates functionality and structural integrity using AI-enhanced imaging and classification systems to detect flaws invisible to the human eye.
+TALK-039,[C],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,"This analysis spans everything — front end, assembly and test"
 TALK-040,[C],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,"At Micron, 590,000 sensors produce 100 million wafer images in 436 million control points."
-TALK-041,[F],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,"Using deep learning, AI-ADC sorts and categorizes millions of flaws annually"
+TALK-041,[C],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,"Using deep learning, AI-ADC sorts and categorizes millions of flaws annually"
 TALK-042,[S],FOUND,1,,research/sources/customer_side/2025-09-09_technews_article-micron-hbm-semicon-taiwan-2025.html,而使用NCF，我們可以更好地將氣泡向外排出
 TALK-043,[S],FOUND,1,,research/sources/customer_side/2025-09-09_technews_article-micron-hbm-semicon-taiwan-2025.html,如晶片翹曲（warpage）、裂紋（crack）、或粒子污染，都會在後續的堆疊過程中被放大
 TALK-044,[S],FOUND,1,,research/sources/customer_side/2025-09-10_worldjournal_article-3dicama-tsmc-ase-alliance.html,自動化搬運、第一時間偵測與跨公司即時支援必須成為基本盤
@@ -485,7 +489,7 @@ XR-005,[F],FOUND,48,,research/sources/customer_side/2025-04-01_iconnect007_SMT00
 XR-006,[F],FOUND,52,,research/sources/customer_side/2025-04-01_iconnect007_SMT007-Apr2025-magazine.pdf,copper is the most effective material
 XR-007,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_10.1109-tns.2025.3561936.json,"Experimental results show that the alpha soft error rate is not significantly affected by previous X-ray irradiation, at least for small doses"
 XR-008,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_10.1109-tns.2025.3561936.json,"Process Research and Development, Micron Technology, Vimercate, Italy"
-XR-009,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_10.1109-tns.2025.3561936.json,well above those commonly used for printed circuit board inspections
+XR-009,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_10.1109-tns.2025.3561936.json,"not significantly affected by previous X-ray irradiation, at least for small doses, well above those commonly used for printed circuit board inspections"
 XR-010,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_10.1109-irps61424.2026.11499239.json,The threshold for total ionizing dose damage from terrestrial usecases is measured and shown to be inconsequential.
 XR-011,[F],FOUND,1,,research/sources/customer_side/2026-11-21_googlepatents_US20260126403A1.html,damage and defects that may occur in the object to be inspected due to the X-ray beam can be reduced
 XR-012,[F],FOUND,1,,research/sources/customer_side/2026-11-21_googlepatents_US20260126403A1.html,voids that may appear in a bonding structure such as a High Bandwidth Memory (HBM) device
@@ -515,13 +519,13 @@ XR-035,[I],,,,,
 XR-036,[I],,,,,
 XR-037,[I],,,,,
 XR-038,[I],,,,,
-SMP-001,[F],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,achieved quality innovation through an AI-based virtual measurement system enabling quality inspections for every wafer
-SMP-002,[F],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,detecting and inspecting quality anomalies across all wafers without increasing the total production time for finished products
+SMP-001,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,achieved quality innovation through an AI-based virtual measurement system enabling quality inspections for every wafer
+SMP-002,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,detecting and inspecting quality anomalies across all wafers without increasing the total production time for finished products
 SMP-003,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,"We increased productivity by 31% in processes that had previously experienced bottlenecks, and improved yield by 21%"
-SMP-004,[F],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,the AI-based defect image analysis system has drastically reduced the time required for defect analysis
+SMP-004,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-smart-factory-vm.html,the AI-based defect image analysis system has drastically reduced the time required for defect analysis
 SMP-005,[F],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-gausslabs-spie-al-2026-vm.html,Panoptes VM can effectively identify performance differences between equipment that were difficult to analyze previously due to low sampling rates
 SMP-006,[F],FOUND,1,,research/sources/customer_side/2026-04-08_semanticscholar_s2-spie-3087531-vm-tttm-skhynix.json,physical metrology is sparse and requires a considerable amount of time to reach statistical significance
-SMP-007,[F],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-gausslabs-spie-al-2026-vm.html,SK hynix has been applying this framework in its production environment since last year to promptly detect process abnormalities
+SMP-007,[C],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-gausslabs-spie-al-2026-vm.html,SK hynix has been applying this framework in its production environment since last year to promptly detect process abnormalities
 SMP-008,[F],FOUND,1,,research/sources/customer_side/2026-04-08_semanticscholar_s2-spie-3089595-grace-overlay-vm-skhynix.json,virtual metrology (VM) has emerged to complement the throughput limitations and sampling blind spots of physical metrology
 SMP-009,[S],FOUND,1,,research/sources/customer_side/2026-02-24_thelec_kr-skhynix-hbm4-sip-tester.html,SK하이닉스가 고대역폭메모리4(HBM4)에 사용하는 실장 테스트 장비 개발에 성공했다
 SMP-010,[S],FOUND,1,,research/sources/customer_side/2026-02-25_trendforce_news-skhynix-hbm4-package-sip-tester.html,memory companies are expanding their own system-level testing capabilities
@@ -536,7 +540,7 @@ SMP-018,[F],FOUND,1,,research/sources/customer_side/2025-12-11_crossref_cr-jmm-0
 SMP-019,[F],FOUND,1,,research/sources/customer_side/2026-09-04_samsung_techblog-gtc2026-agentic-ai-engineering.html,"In advanced memory such as HBM4E, even minor process variations can have a substantial impact on quality and yield"
 SMP-020,[C],FOUND,1,,research/sources/customer_side/2025-10-31_samsung_newsroom-nvidia-ai-megafactory.html,"These virtual environments identify anomalies, perform predictive maintenance and optimize production before changes are applied in the physical world"
 SMP-021,[F],FOUND,1,,research/sources/customer_side/2025-09-21_semanticscholar_s2-itc2025-00024-samsung-massive-test-dram.json,mismatches in millions of bit line sensing amplifiers (BLSAs) can be extracted at the chip level
-SMP-022,[F],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,Technicians and engineers no longer need to classify wafer defects manually
+SMP-022,[C],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,Technicians and engineers no longer need to classify wafer defects manually
 SMP-023,[F],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,"590,000 sensors produce 100 million wafer images in 436 million control points"
 SMP-024,[C],FOUND,1,,research/sources/customer_side/2025-12-09_micron_blog-smart-manufacturing-ai-enterprise-scale.html,We can now launch products twice as fast
 SMP-025,[F],FOUND,1,,research/sources/customer_side/2026-05-01_semanticscholar_s2-asmc2026-11551271-micron-cloud-vm.json,providing rapid estimation of quality metrics from process data to improve sampling efficiency
@@ -552,13 +556,16 @@ SMP-034,[F],FOUND,1,,research/sources/customer_side/2025-05-05_semanticscholar_s
 SMP-035,[F],FOUND,1,,research/sources/customer_side/2026-03-22_semanticscholar_s2-irps2026-11499289-tsmc-die-of-interest.json,Experimental results demonstrate a 9-fold improvement in identifying outlier dies compared to baseline
 SMP-036,[F],FOUND,1,,research/sources/customer_side/2025-09-21_semanticscholar_s2-itc2025-00023-tsmc-3d-test-access-sow.json,"It enables efficient scan path configuration, optimizing test scheduling while reducing power consumption"
 SMP-037,[F],FOUND,1,,research/sources/customer_side/2025-11-16_crossref_cr-istfa2025-p0011-ase-ai-sam-enhancement.json,decreases significantly SAM scanning time
-SMP-038,[F],FOUND,1,,research/sources/customer_side/2026-06-17_amkor_test-services-page.html,in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D
+SMP-038,[C],FOUND,1,,research/sources/customer_side/2026-06-17_amkor_test-services-page.html,in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D
 SMP-039,[S],FOUND,1,,research/sources/customer_side/2026-05-12_semiengineering_hbm-shifts-testing-left.html,"Intermediate testing during the assembly process is becoming increasingly critical, especially as the cost of HBM continues to rise"
 SMP-040,[S],FOUND,1,,research/sources/customer_side/2026-05-12_semiengineering_hbm-shifts-testing-left.html,The number of test insertions for a 12-stack die can range from 3 to 12
 SMP-041,[I],,,,,
 SMP-042,[I],,,,,
 SMP-043,[I],,,,,
 SMP-044,[I],,,,,
+SMP-045,[C],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-gausslabs-spie-al-2026-vm.html,has used Gauss Labs’ AI-based virtual metrology solution “Panoptes VM (Virtual Metrology)” in its production lines since 2022
+SMP-046,[C],FOUND,1,,research/sources/customer_side/2026-09-04_samsung_techblog-gtc2026-agentic-ai-engineering.html,"In process control, it enables instant defect detection and corrective actions."
+SMP-047,[C],FOUND,1,,research/sources/customer_side/2026-09-04_samsung_techblog-gtc2026-agentic-ai-engineering.html,"During the session, Samsung unveiled its Pyeongtaek fab Digital Twin, demonstrating full-scale virtual manufacturing capabilities and reinforcing its collaborat"
 AW-001,[S],FOUND,1,,research/sources/customer_side/2025-11-26_technews_tsmc-scm-forum-2025-awards.html,2025 年台積電優良供應商卓越表現獎得獎名單如下 (按英文名稱字母排序)：
 AW-002,[S],FOUND,1,,research/sources/customer_side/2025-11-28_bnext_tsmc-scm-forum-2025-awards.html,今年共有30家廠商獲獎
 AW-003,[S],FOUND,1,,research/sources/customer_side/2025-11-26_technews_tsmc-scm-forum-2025-awards.html,愛德萬測試股份有限公司-卓越量產支援
@@ -567,7 +574,7 @@ AW-005,[S],FOUND,1,,research/sources/customer_side/2025-11-26_technews_tsmc-scm-
 AW-006,[F],FOUND,1,,research/sources/customer_side/2025-12-24_advantest_news-tsmc-excellent-performance-award-2025.html,"named a winner of TSMC's Excellent Performance Award, recognized in the category of Excellent Production Support"
 AW-007,[F],FOUND,1,,research/sources/customer_side/2025-12-24_advantest_news-tsmc-excellent-performance-award-2025.html,"Advantest was recognized for its flexibility in expanding its production capacity, leveraging tooling and manpower to fulfill urgent demand."
 AW-008,[F],FOUND,1,,research/sources/customer_side/2025-12-22_onto_release-tsmc-excellent-production-support-2025.pdf,"received the “Excellent Production Support” award from Taiwan Semiconductor Manufacturing Co., Ltd (TSMC)"
-AW-009,[F],FOUND,1,,research/sources/customer_side/2025-12-22_onto_release-tsmc-excellent-production-support-2025.pdf,TSMC saluted Onto Innovation for supporting its 2025 deliveries through proactive supply chain management and manufacturing agility.
+AW-009,[C],FOUND,1,,research/sources/customer_side/2025-12-22_onto_release-tsmc-excellent-production-support-2025.pdf,TSMC saluted Onto Innovation for supporting its 2025 deliveries through proactive supply chain management and manufacturing agility.
 AW-010,[S],FOUND,1,,research/sources/customer_side/2025-11-26_digitimes_tsmc-scm-forum-2025-awards.html,did not appear on the chipmaker's 2025 Excellent Performance Awards list
 AW-011,[S],FOUND,1,,research/sources/customer_side/2026-11-17_managertoday_tsmc-scm-forum-2026-awards.html,台積電 2026 年 11 月 17 日舉辦供應鏈管理論壇，頒發 2026 年優良供應商卓越表現獎，共 35 家供應商獲獎
 AW-012,[S],FOUND,1,,research/sources/customer_side/2026-11-17_uanalyze_tsmc-scm-forum-2026-awards.html,今年獲頒優良供應商卓越表現獎的廠商總數由去年的30家擴大至35家
@@ -617,3 +624,83 @@ AW-055,[S],FOUND,1,,research/sources/customer_side/2026-04-24_technews_ase-suppl
 AW-056,[F],FOUND,1,,research/sources/customer_side/2025-04-17_amkor_blog-henkel-supplier-excellence-award.html,presented Henkel Adhesive Technologies with the prestigious Amkor Supplier Award
 AW-057,[F],FOUND,1,,research/sources/customer_side/2026-02-13_senju_news-amkor-supplier-excellence-award-2025.html,"On December 9, 2025, Senju Metal Industry Co., Ltd. has received the Supplier Excellence Award 2025 from Amkor Technology, Inc."
 AW-058,[I],,,,research/out/customer_side/calc/AW_counts.py,
+AW-059,[C],FOUND,1,,research/sources/customer_side/2025-11-21_ulvac_news-skhynix-best-partner-award-2025.html,"its ENTRON sputtering system, which was qualified as POR* within SK hynix's semiconductor manufacturing process."
+AW-060,[C],FOUND,1,,research/sources/customer_side/2026-02-13_senju_news-amkor-supplier-excellence-award-2025.html,"Selected from among more than 3,000 suppliers worldwide, this award recognizes outstanding performance and commitment to quality."
+SYN-001,[I],,,,,
+SYN-002,[I],,,,,
+SYN-003,[I],,,,,
+SYN-004,[I],,,,,
+SYN-005,[I],,,,,
+SYN-006,[I],,,,,
+SYN-007,[I],,,,,
+SYN-008,[I],,,,,
+SYN-009,[I],,,,,
+SYN-010,[I],,,,,
+SYN-011,[I],,,,,
+SYN-012,[I],,,,,
+SYN-013,[I],,,,,
+SYN-014,[I],,,,,
+SYN-015,[I],,,,,
+SYN-016,[I],,,,,
+SYN-017,[I],,,,,
+SYN-018,[I],,,,,
+SYN-019,[I],,,,,
+SYN-020,[I],,,,,
+SYN-021,[I],,,,,
+SYN-022,[I],,,,,
+SYN-023,[I],,,,,
+SYN-024,[I],,,,,
+SYN-025,[I],,,,,
+SYN-026,[I],,,,,
+SYN-027,[I],,,,,
+SYN-028,[I],,,,,
+SYN-029,[I],,,,,
+SYN-030,[I],,,,,
+SYN-031,[I],,,,,
+SYN-032,[I],,,,,
+SYN-033,[I],,,,,
+SYN-034,[I],,,,,
+SYN-035,[I],,,,,
+SYN-036,[I],,,,,
+SYN-037,[I],,,,,
+SYN-038,[I],,,,,
+SYN-039,[I],,,,,
+SYN-040,[I],,,,,
+SYN-041,[I],,,,,
+SYN-042,[I],,,,,
+SYN-043,[I],,,,,
+SYN-044,[I],,,,,
+SYN-045,[I],,,,,
+SYN-046,[I],,,,,
+SYN-047,[I],,,,,
+SYN-048,[I],,,,,
+SYN-049,[I],,,,,
+SYN-050,[I],,,,,
+SYN-051,[I],,,,,
+SYN-052,[I],,,,,
+SYN-053,[I],,,,,
+SYN-054,[I],,,,,
+SYN-055,[I],,,,,
+SYN-056,[I],,,,,
+SYN-057,[I],,,,,
+SYN-058,[I],,,,,
+SYN-059,[I],,,,,
+SYN-060,[I],,,,,
+SYN-061,[I],,,,,
+SYN-062,[I],,,,,
+SYN-063,[I],,,,,
+SYN-064,[I],,,,,
+SYN-065,[I],,,,,
+SYN-066,[I],,,,,
+SYN-067,[I],,,,,
+SYN-068,[I],,,,,
+SYN-069,[I],,,,,
+SYN-070,[I],,,,,
+MAIN-001,[I],,,,,
+MAIN-002,[I],,,,,
+MAIN-003,[I],,,,,
+MAIN-004,[F],FOUND,1,,research/sources/customer_side/2026-11-21_iitc_IITC2026-program-page.html,"14.1 Advanced Memory Stacking: Thermal, Process and Reliability Challenges [Invited]"
+MAIN-005,[I],,,,,
+MAIN-006,[I],,,,,
+MAIN-007,[I],,,,,
+MAIN-008,[I],,,,,
