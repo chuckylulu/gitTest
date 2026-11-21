@@ -46,14 +46,14 @@ One-off items management named:
 |---|---|---|---|
 | CY2025: WFE up mid-single digits from high-$90B; KLA to outperform; non-GAAP GM ~62%±50bps (raised to 62.5%±50bps in Apr 2025) | 2025-01-30 | KLA revenue +17% to $12.745B, against KLA's own estimate of low-double-digit industry growth. GM 62.8%, inside the raised range. **Met/beat** | [F] A3-030, A3-031; [I] A3-032 |
 | CY2026: H1 CY26 up mid-single digits vs H2 CY25 (Jan 2026); KLA growth "high teen" YoY (Apr 2026); H2/H1 ~20% (Jul), then ~25% (Oct); GM ~62%±50bps | 2026-01-29 to 2026-10-28 | H1 CY26 came in +8.7% vs H2 CY25 (above "mid-single"). Using the Q2 FY27 midpoint, CY26 is about $15.91B (+24.8%), above "high teen", and H2/H1 is +24.9%. CY26 GM about 62.5%, at the top of the range. **Exceeded so far; not final** | [F] A3-033 to A3-035; [I] A3-036 |
-| 2022 Investor Day CY2026 model: revenue $14B±$0.5B; non-GAAP GM ~63%; OM 41-43%; EPS $38±$1.50 (pre-split = $3.80±$0.15) | 2022-06-16 | Implied CY26: revenue about $15.91B (above $14.5B top), non-GAAP OM about 45.2%, non-GAAP EPS about $4.65 post-split ($46.5 pre-split): all **beat**. Non-GAAP GM about 62.5%, **below** the ~63% target; management named DRAM cost and tariffs | [F] A3-037, A3-040, [C] A3-038, [I] A3-039 |
+| 2022 Investor Day CY2026 model: revenue $14B±$0.5B; non-GAAP GM ~63%; OM 41-43%; EPS $38±$1.50 (pre-split = $3.80±$0.15) | 2022-06-16 | Implied CY26: revenue about $15.91B (above $14.5B top), non-GAAP OM about 45.2%, non-GAAP EPS about $4.65 post-split ($46.5 pre-split): all **beat**. Non-GAAP GM about 62.5%, **below** the ~63% target; management named DRAM cost and tariffs | [F] A3-037, A3-041, [C] A3-038, [I] A3-039 |
 | Pending: 2030 model of $26B±$2.5B revenue, OM 45-47%, EPS $84±$8 (pre-split) | 2026-03-12 | Due 2031 | [F] A3-040 |
 
 ## A6 Cycle: last two downturns
 
 **Why these two.** Test used: reported quarterly revenue falls at least 10% from a quarterly peak and stays below that peak for at least 3 quarters.
 - **2022-23** passes.
-- **2018-19** fails on reported revenue: Q2 FY19 to Q3 FY19 was only −2.0%, because Orbotech (consolidated from 2019-02-20) added $161.3M [F] A6-020. Excluding Orbotech, Q3 FY19 was −16.4%, but that can only be computed for one quarter [I] A6-025.
+- **2018-19** fails on reported revenue: Q2 FY19 to Q3 FY19 was only −2.0%, because Orbotech (consolidated from 2019-02-20) added $161.3M [F] A6-021. Excluding Orbotech, Q3 FY19 was −16.4%, but that can only be computed for one quarter [I] A6-025.
 - **2020** (COVID) was −5.7%.
 - The next qualifying episode is the **FY2013-FY2016 (CY2012-15)** trough. Revenue stayed below the Jun-2012 peak until Apr-Jun 2016 [I] A6-023.
 - 2008-09 was deeper (−59.4% revenue; GAAP OM 25.6% → −12.4%) but older [I] A6-025.
@@ -116,7 +116,7 @@ Method notes:
 ## Prior-claim check (kla_metrology_audit.md lines 21-68 and line ~1033, in scope)
 | Prior claim | Verdict | Evidence |
 |---|---|---|
-| 2022 Investor Day CY2026 target $14.0B ± $500M, 41-43% OM: "MET" | **CORRECTED.** CY2026 is not complete, and the prior used FY26 revenue. On a CY26 implied basis (Q2 FY27 guidance midpoint), revenue of about $15.9B **exceeds** the top of the range and OM of about 45% exceeds 41-43%. The same target model's ~63% GM is **not met** (about 62.5%). EPS target $38±1.50 pre-split, implied about $46.5 | A3-037, A3-039, A3-040 |
+| 2022 Investor Day CY2026 target $14.0B ± $500M, 41-43% OM: "MET" | **CORRECTED.** CY2026 is not complete, and the prior used FY26 revenue. On a CY26 implied basis (Q2 FY27 guidance midpoint), revenue of about $15.9B **exceeds** the top of the range and OM of about 45% exceeds 41-43%. The same target model's ~63% GM is **not met** (about 62.5%). EPS target $38±1.50 pre-split, implied about $46.5 | A3-037, A3-039, A3-041 |
 | Optical component bottlenecks constrained H1 CY26 shipments | **CONFIRMED** (company statements [C] and calls [S]; not in the 10-K, which the prior cited) | Q5-010, Q5-020, Q5-024, Q5-030 |
 | Gen4/Gen5 lead times extended past 12 months | **CONFIRMED [S] only** (Q1 FY27 call: average about 12 months, Gen4/Gen5 "longer"); not in KLA documents | Q5-027, Q5-028 |
 | Backlog $7.86B (Jun 2025) → $12.57B (Jun 2026) lifted by optical bottlenecks | Figures **CONFIRMED**; cause **CORRECTED**. The 10-K attributes the increase to "strong demand driven by the AI infrastructure buildout" | Q5-002 |
