@@ -1,0 +1,418 @@
+
+
+SK hynix HBM Packaging at Hot Chips 2026 - ServeTheHome
+
+Facebook
+
+Linkedin
+
+RSS
+
+TikTok
+
+X
+
+Youtube
+
+Forums
+
+AI
+
+Server
+
+Server Systems
+
+Server CPUs
+
+Accelerators
+
+Server Motherboards
+
+Server Chassis
+
+Other Components
+
+5G Edge
+
+Storage
+
+Networking
+
+Workstation
+
+Workstation Processors
+
+Workstation Motherboards
+
+Software
+
+Operating Systems
+
+Server Applications
+
+Virtualization
+
+Guides
+
+Buyer’s Guides
+
+Tips
+
+Top Hardware Components for TrueNAS / FreeNAS NAS Servers
+
+Top Hardware Components for pfSense Appliances
+
+Top Hardware Components for napp-it and Solarish NAS Servers
+
+Top Picks for Windows Server 2016 Essentials Hardware
+
+The DIY WordPress Hosting Server Hardware Guide
+
+Search
+
+Facebook
+
+Linkedin
+
+RSS
+
+TikTok
+
+X
+
+Youtube
+
+                Saturday, November 21, 2026
+
+ServeTheHome News
+
+Storage Reliability
+
+Raid Calculator
+
+RAID Reliability Calculator | Simple MTTDL Model
+
+About
+
+Contact
+
+Editorial and Copyright Policies
+
+AG Substack
+
+AG Reports
+
+Subscribe
+
+ServeTheHome Forums
+
+Sign in
+
+Welcome! Log into your account
+
+your username
+
+your password
+
+Forgot your password? Get help
+
+Privacy Policy
+
+Password recovery
+
+Recover your password
+
+your email
+
+A password will be e-mailed to you.
+
+ServeTheHome
+
+Advertisement
+
+Forums
+
+AI
+
+Server
+
+Server Systems
+
+Server CPUs
+
+Accelerators
+
+Server Motherboards
+
+Server Chassis
+
+Other Components
+
+5G Edge
+
+Storage
+
+Networking
+
+Workstation
+
+Workstation Processors
+
+Workstation Motherboards
+
+Software
+
+Operating Systems
+
+Server Applications
+
+Virtualization
+
+Guides
+
+Buyer’s Guides
+
+Tips
+
+Top Hardware Components for TrueNAS / FreeNAS NAS Servers
+
+Top Hardware Components for pfSense Appliances
+
+Top Hardware Components for napp-it and Solarish NAS Servers
+
+Top Picks for Windows Server 2016 Essentials Hardware
+
+The DIY WordPress Hosting Server Hardware Guide
+
+Home
+
+Server
+
+Other Components
+
+SK hynix HBM Packaging at Hot Chips 2026
+
+Server
+Other Components
+
+SK hynix HBM Packaging at Hot Chips 2026
+
+By
+
+Patrick Kennedy
+ - 
+
+August 23, 2026
+
+1
+
+Facebook
+X
+Pinterest
+Linkedin
+ReddIt
+Email
+Print
+Copy URL
+
+SK hynix HBM is a 3D-stacked structure, which has a base die and a stack of
+
+SK hynix’s Hot Chips 2026 presentation is around high-bandwidth memory (HBM) and advanced packaging. From a slide flip, it looks like they will be covering the 3D stacking, bonding, and system integration choices behind high-bandwidth memory.
+
+Like the others, we are doing these live, so please excuse typos.
+
+SK hynix HBM Packaging at Hot Chips 2026
+
+SK hynix began by explaining that HBM is a 3D-stacked structure comprising a base die and a stack of core dies, up to 16 slices in total. GPU and HBM sit together on a silicon interposer in a 2.5D package and communicate via 1024 IOs across 16 channels, with four slices per rank and four ranks in a 16-high stack. Getting that interposer connection right matters because it is where HBM meets the accelerator.
+
+SK hynix HBM is a 3D-stacked structure, which has a base die and a stack of
+
+Higher bandwidth, higher capacity, and higher power efficiency are the why behind advancing HBM.
+
+SK hynix REQUIREMENTS FOR MEMORY
+
+Despite the per-GB cost being higher for HBM, SK hynix argues that wider HBM adoption saves space, power, and operating costs. This is a bit of an interesting comparison, but it is showing 12x GDDR6 sites versus 4x HBM3E sites as being more space efficient while providing more bandwidth and capacity. This seems like a bit of an odd direct comparison point since cards like the consumer(-ish) NVIDIA GeForce RTX 5090 have 32GB of GDDR7, but OK.
+
+SK hynix The more HBM adoption is more save the space, power & operation cost
+
+Capacity and bandwidth climb with every HBM generation. HBM2E delivered 460 GB/s, HBM3 moved to 717 GB/s, HBM3E reached 1024 GB/s, and HBM4 doubles the picture with 2048 GB/s across 2048 IOs. Package size grows too, from a 10×11 mm base to a 12.4×11 mm footprint on HBM4.
+
+SK hynix HBM Capacity & Bandwidth Increases vs HBM Generation
+
+HBM4 has more TSVs and micro-bumps. SK hynix lists over 20K TSVs and 16148 base micro-bumps on a 12.8×11 mm part with a 775 um Z-height, targeting more than 2 TB/s of bandwidth with a 40+ percent power-efficiency gain and improved thermal resistance. Capacity climbs to 48 GB, with 12-high in production and 16-high under qualification.
+
+SK hynix HBM4 package height and size are bigger and implement more TSV and uBumps than
+
+Stacking die-to-die has two main bonding choices, and SK hynix lays out the trade-off between thermo-compression bonding with non-conductive film and mass reflow with molded underfill. TC+NCF offers high productivity and low thermal resistivity but is sensitive to chip warpage, while MR+MUF handles thin-die warpage better at the cost of higher thermal resistivity and a narrower gap-fill window. Choosing between them shapes downstream yield and thermal behavior.
+
+SK hynix TC+NCF MR+MUF
+
+SK hynix runs a full wafer-level flow behind HBM assembly, from silicon etch and TSV copper fill through BEOL metallization, wafer thinning, back-side processing, singulation, and testing. A known-good stacked die (KGSD) wafer step allows SK hynix to test each cube before it reaches system-level packaging, preventing defective units from consuming costly interposer real estate.
+
+SK hynix Wafer (Base/Core) WT WLP & KGSD (Known Good Stacked Die) Wafer KGSD Wafer Test
+
+TSV formation, micro-bumping, wafer thinning, and chip stacking carry most of the HBM packaging challenge. SK hynix flags process uniformity, yield, and copper contamination as concerns on the TSV and bump side, then points to thin-die handling and warpage control during wafer thinning and stack assembly with underfill.
+
+SK hynix TSV formation, micro-bumping, wafer thinning, and chip stacking are key features
+
+The HBM3E 16-high part at 48GB per cube marks a packaging milestone, since adding two more die on top of the earlier 12-high stack forces the package to stay inside the same Z-height budget. SK hynix had to cut chip thickness, gap height, and bump pitch roughly in half to fit the taller stack while keeping gap-fill quality intact.
+
+SK hynix HBM3E 16Hi
+
+As stack height rises toward 20 or more die, thermal management becomes the binding constraint. This figure compares relative thermal resistance across bonding and material-stack options, from plain molded underfill through advanced MR-MUF and hybrid bonding, with each step reducing thermal resistance while supporting more layers.
+
+SK hynix Memory Capacity Thermal Management
+
+Hybrid bonding changes how a stack gets assembled. Pick and place occurs at room temperature, and an anneal above 200C forms SiO2-to-SiO2 and Cu-to-Cu bonds, which is the mechanism that enables the stack to shed the bumps and gap-fill of older approaches.
+
+SK hynix Pick & Place at Room Temp. Annealing > 200’C
+
+SK hynix positions hybrid bonding as the path to 20-or-more-high stacks, wider performance from a narrower bump pitch, and better thermal efficiency through higher conductivity. At a fixed Z-height, hybrid bonding allows the die to use a thicker core and pushes bump pitch below 18 um, which MR-MUF cannot manage.
+
+SK hynix Hybrid bonding is promising more memory capacity (≥ 20Hi), more performance
+
+SK hynix compared its approach with competitor cooling schemes. Its i-HBM embeds a high-thermal-conductivity, electrically insulating cooling component within the hot die-to-die PHY area to create a dedicated heat path, targeting a reduction in thermal resistance of over 30 percent. Samsung HPB moves DRAM next to the processor with a copper heat spreader, and Micron refines the base-die circuit design for efficiency.
+
+SK hynix i-HBM
+Looking past HBM4, SK hynix frames the remaining work around two levers. One lever adds bandwidth by expanding the data IOs and raising per-IO speed, and the other improves power efficiency with a logic base die and more TSVs. Both levers show up in the next several figures.
+
+SK hynix Exploring new solutions to overcome challenges in bandwidth and power consumption
+
+Bandwidth growth comes from pushing more data IOs and a faster I/O rate, with logic process integration in the picture. SK hynix shows per-unit bandwidth climbing from 0.5 TB/s on HBM2E to 2.0 TB/s on HBM4, with the HBM3E-to-HBM4 step doubling I/O speed while the data-IO count moves past 1K.
+
+SK hynix enhances bandwidth by more data I/Os with doubled TSV
+
+On the power side, SK hynix leans on an optimized logic foundry process and power TSVs spread across the part to improve the power delivery network. SK hynix highlights a 75 percent PDN improvement across recent HBM generations as the low-power logic approach keeps scaling.
+
+SK hynix Dramatic power efficiency improvement by optimized logic foundry process
+
+SK hynix then shifts to system-level impact, noting that memory used to be assembled last in the system integration flow. In advanced packaging for AI, HBM is now assembled first, which puts the cubes and the interposer under much stronger reliability pressure before the rest of the package is built. The photo is a pretty old motherboard which is fun.
+
+SK hynix IMPACT ON HBM
+
+SK hynix is now comparing the major advanced packaging approaches, including CoWoS-S, CoWoS-L, and EMIB, and where each puts stress on the HBM cubes and the silicon interposer. Packaging choice changes how much mechanical and thermal stress the HBM stack must absorb.
+
+SK hynix IMPACT ON HBM
+
+Finally, there are three packaging direction tiers, from die-on-die to die-to-die on an interposer to package-to-package on a board. Placing HBM in that hierarchy shows why it sits in the most demanding tier and why SK hynix is pushing so hard on stacking and bonding.
+
+SK hynix Structure
+
+It feels like SK hynix is focusing on packaging a lot here compared to some of the other HBM talks at Hot Chips.
+
+Final Words
+
+SK hynix’s Hot Chips 2026 presentation made it clear that HBM packaging is tightening into a co-design problem in which bonding, thermal, and interposer stress all interact. I wish the company had gone more into some of the custom HBM solutions or even HBM5 in their talk, but this is what we got. Hopefully we will get more information on those soon-ish.
+
+We have a full recap on the Substack, including where all of these pieces ranked in terms of popularity:
+
+Hot Chips 2026 Recap and Data by Patrick Kennedy
+
+The data is in, and here is who created buzz at Hot Chips this year
+
+Read on Substack
+
+TAGS
+HBM
+Hot Chips 2026
+SK.Hynix
+
+Facebook
+X
+Pinterest
+Linkedin
+ReddIt
+Email
+Print
+Copy URL
+
+Previous article
+Samsung Evolving HBM Base Die at Hot Chips 2026
+Next article
+d-Matrix Raptor 3D-DRAM Accelerator for Generative Inference at Hot Chips 2026
+
+Patrick Kennedy
+https://www.servethehome.com
+Patrick has been running STH since 2009 and covers a wide variety of SME, SMB, and SOHO IT topics. Patrick is a consultant in the technology industry and has worked with numerous large hardware and storage vendors in the Silicon Valley. The goal of STH is simply to help users find some information about server, storage and networking, building blocks. If you have any helpful information please feel free to post on the forums.
+
+Facebook
+
+Linkedin
+
+X
+
+RELATED ARTICLES
+MORE FROM AUTHOR
+
+JEDEC Previews DDR6 Memory Standard: 2.35x More Bandwidth, 44% Narrower DIMMs
+
+Marvell Structera X 3406 and 3506 CXL 3.2 Memory Expanders
+
+Astera Labs Releases Leo 2 CXL Memory Controllers and Leo X Controller for Rackscale Fabric-Attached Memory
+
+1 COMMENT
+
+M
+
+									            August 23, 2026									            At									            7:23 pm                                            
+
+Okay, great, lots of RAM for AI data centers. What about reasonably priced RAM for the little people?
+
+LEAVE A REPLY
+
+Please enter your comment!
+
+Please enter your name here
+
+You have entered an incorrect email address!
+
+Please enter your email address here
+
+Save my name, email, and website in this browser for the next time I comment.
+
+Sign me up for the STH newsletter!
+
+Δ
+
+This site uses Akismet to reduce spam. 
+Learn how your comment data is processed.
+
+Newsletter
+
+  Get the best of STH delivered weekly to your inbox. We are going to curate a selection of the best posts from STH each week and deliver them directly to you.
+
+Your email address: 
+
+  By opting-in you agree to have us send you our newsletter. We are using a third party service to manage subscriptions so you can unsubscribe at any time.
+
+Leave this field empty if you're human: 
+
+--- Advertisements ---
+
+ABOUT US
+ServeTheHome is the IT professional's guide to servers, storage, networking, and high-end workstation hardware, plus great open source projects.
+
+Advertise on STH
+
+DISCLAIMERS: We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.
+
+Please be advised of our data usage for machine learning and AI inference and training purposes which can be found 
+here
+ along with our other editorial and copyright policies.
+FOLLOW US
+
+Facebook
+
+Linkedin
+
+RSS
+
+TikTok
+
+X
+
+Youtube
+
+                    © 2009-2026 
+Axautik Group LLC
+

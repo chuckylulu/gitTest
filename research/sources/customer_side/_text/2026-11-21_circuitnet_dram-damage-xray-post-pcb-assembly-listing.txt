@@ -1,0 +1,166 @@
+
+
+DRAM damage due to X-Ray Inspections Post PCB Assembly
+
+circuitnet
+
+Electronics Manufacturing and Assembly News
+
+SUBSCRIBE
+
+SEARCH
+
+PAPERS
+
+NEWS
+
+EXPERTS
+
+HOME
+
+Sponsor
+
+Dedicated Tool for Process Development
+
+Advanced plating capability at Uyemura Tech Center: Process Development, UBM, pilot production. ENIG, ENEPIG, EPIG/EPAG, RAIG immersion gold; all substrates. On-site analysis.
+
+Uyemura
+
+Sponsor
+
+Epoxy Offers Ultra High Heat Transfer
+
+ Bond EP5TC-80 is a NASA low outgassing rated epoxy that achieves a thermal conductivity of 3.3-3.7 W/(m·K), while also retaining its electrical non-conductivity.
+
+Master Bond
+
+DRAM damage due to X-Ray Inspections Post PCB Assembly
+
+				This paper outlines several mitigation strategies for minimizing radiation dosage during X-ray inspections, particularly in the context of printed circuit boards (PCBs). One key observation is that the PCB itself acts as an effective shield, significantly reducing radiation exposure.
+
+Technical Paper
+
+DOWNLOAD
+
+Authored By:
+
+				Saurabh Gupta, Howlit Chng, Michael Cathcart, Christopher Alvarez, Jose I Hernandez, Jeff Burgess 
+
+Intel Corporation 
+
+OR, USA 
+
+Summary
+
+				X-ray inspection remains integral in the Surface Mount Technology (SMT) industry, persistently employed to inspect obscured and defective solder joints within ball grid arrays (BGAs) and flip chip packages. This pivotal step streamlines failure analysis activities, offering a non-destructive and effective means of ensuring the quality of printed circuit board (PCB) assemblies. However, this ubiquitous technique carries an inherent risk for BGAs housing on-package memory modules. Excessive exposure to X-rays can potentially lead to the degradation of dynamic random-access memory (DRAM), underscoring the delicate balance between inspection and the preservation of memory integrity on these BGAs. Although this balance is so critical, the limits to which these DRAMs can be exposed are not clear or readily available.
+
+Previous research has extensively discussed the static refresh degradation of DRAM caused by X-ray irradiation. However, the radiation levels on the PCB assembly have not been thoroughly characterized for post-SMT X-ray inspection. Additionally, readily available functional test data on these BGAs with on-package memory which have undergone X-ray exposure are lacking. The characterization of X-ray exposure levels has been conducted on packages and boards of varying thicknesses. A range of materials and filter thicknesses have been evaluated in this process. Furthermore, the exposure on both automated inspection and manual inspection systems has been characterized. This comprehensive evaluation seeks to provide insights into the impact of X-ray irradiation on DRAM, shedding light on potential vulnerabilities and informing strategies for reducing X-ray exposure and improvement in manufacturing processes.
+
+This paper also investigates the radiation tolerance of PCB assemblies housing BGAs with on-package memory, pinpointing the radiation threshold where functionality issues arise. Through exposure to different radiation levels using a manual x-ray inspection tool, the package was subjected to stress testing using open-source memory testing software to assess memory performance. The results are then discussed in the context of the refresh time degradation of such DRAMs as reported by other studies. 
+
+Conclusions
+
+				This paper outlines several mitigation strategies for minimizing radiation dosage during X-ray inspections, particularly in the context of printed circuit boards (PCBs). One key observation is that the PCB itself acts as an effective shield, significantly reducing radiation exposure. This relationship is shown in Figure 8. This protective effect was clearly demonstrated in the experimental results, highlighting the importance of considering the board’s material properties during inspection. The study also examined the impact of inspection time on dosage, revealing a direct correlation—longer inspection times result in higher radiation exposure. This finding emphasizes the need to optimize inspection duration to minimize dosage without compromising the thoroughness of the inspection.
+
+Another critical factor discussed is the choice of filter material. Copper was identified as the most effective filter for shielding radiation, significantly reducing dosage levels. However, this reduction in dosage comes at a cost, as the images produced with copper filters were of very poor quality due to the diminished X-ray penetration.
+
+Additionally, the paper explores the relationship between material thickness and dosage, finding that this relationship follows a decreasing exponential trend. As material thickness increases, the reduction in dosage becomes marginal, indicating diminishing returns with further thickness enhancements. 
+
+This paper also investigated the radiation tolerance of PCB assemblies housing BGAs with on-package memory. It was noted that there was no initial degradation of the performance of the DRAM observed even after over exposure to several times the recommended limit of DRAM exposure from manufacturer. 
+
+Initially Published in the SMTA Proceedings
+
+Comments
+
+No comments have been submitted to date.
+
+Submit A Comment
+
+				Comments are reviewed prior to posting. You must include your full name to have your comments posted. We will not post your email address.
+
+Your Name
+
+Your Company
+
+Your E-mail
+
+Your Country
+
+Your Comments
+
+Free Newsletter Subscription
+
+Circuitnet is built for professionals who bear the responsibility of looking ahead, imagining the future, and preparing for it.
+
+Insert Your Email Address
+
+Sponsor
+
+EZ-FLO High Precision Ceramic Dispense Tips
+
+The ceramic molding process allows for smaller more precise inner diameters with a glass-like finish, giving you the ultimate control. Learn more.
+
+DL Technology
+
+About Us
+ |
+
+Advertising
+ |
+
+Archives
+ |
+
+Ask the Experts
+ |
+
+Calendar
+ |
+
+Contact Us
+ |
+
+Custom Email Broadcast
+ |
+
+Disclaimer
+ |
+
+News
+ |
+
+Press Releases
+ |
+
+Press Release Submit
+ |
+
+Privacy Policy
+ |
+
+Search
+ |
+
+Subscription
+ |
+
+Technical Papers
+ |
+
+Technical Paper Submit
+ |
+
+Viewpoint
+
+Circuitnet
+
+	58 Plaistow Road, Suite A15, #1013, Plaistow, NH 03865, USA
+
+	Jeff Ferry, Publisher  | Ken Cavallaro, Editor/Business Manager
+
+	Copyright © Circuitnet Media LLC. All rights reserved.
+
+A Circuitnet Media Publication
+
+	ISSN 2768-2668 
+

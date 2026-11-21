@@ -1,0 +1,248 @@
+Advanced Packaging
+Next Generation Metrologies & Fault Detection Methods
+Pooya Tadayon
+Intel Fellow, Director of Assembly & Test Pathfinding
+Executive Summary
+
+ The era of 3D integration and advanced packaging is upon us, but the
+ ecosystem is not ready
+
+ Fine pitch features in advanced 3D packaging require metrologies to
+ detect defects at all levels – surface and buried
+
+ Innovative solutions are needed to enable non-destructive, sub-micron
+ resolution, and high-speed metrologies
+
+
+
+
+Assembly Test Technology Development                                     2
+                    Advanced Packaging Technology Drivers
+                                       COST           PERFORMANCE/SCALING
+
+
+
+
+                      Moore’s Law
+
+
+           Source: Google, IEDM23, SC1.6
+
+
+                       Higher wafer cost drives     Need for complex sizes that
+                           disaggregation             exceed the reticle limit
+
+            Advanced packaging is required to re-aggregate chiplets and build
+                        complexes larger than the reticle limit
+Assembly Test Technology Development                                              3
+Evolution of Advanced Packaging
+
+                                                       ADVANCED PACKAGING ERA
+
+
+
+
+                                                                                                                                        Time
+
+Package main function:                                Added package value:
+provide power and signaling from motherboard to die   high density interconnects that enable larger die complexes from multiple process nodes
+
+
+ Assembly Test Technology Development                                                                                                           4
+Evolution of 3D Packaging
+                                                                         High
+                                                                      Bandwidth
+                                                                     Large Memory
+                                                                         Stack
+
+
+
+
+              Memory                   Logic
+                Logic                  Logic
+                                                                  Legacy I/O
+
+
+
+
+     3D today                                                             3D future
+      “planar”                                                             “cube”
+
+
+       3D stacking will evolve to enable more complex and integrated devices
+
+
+Assembly Test Technology Development                                                  5
+Key Trend: Pitch Scaling
+                          9 um pitch
+
+
+                                             3 um pitch
+                                                             1 um pitch   0.4 um pitch
+
+
+
+
+                                                                              time
+
+
+             Cu-Cu hybrid bonding enables aggressive pitch scaling to ≤1 um
+
+Assembly Test Technology Development                                                     6
+  Key Challenges: Defect Isolation in Stacks
+
+
+
+                                                        >>10 die
+                                                         stack
+
+
+
+
+As devices become more complex with reduced dimensions, more advanced defect
+ isolation methods are required to pinpoint location of defects in buried structures
+
+  Assembly Test Technology Development                                                 7
+  Key Challenges: High Resolution CSAM
+
+                       50 um
+          Resolution
+
+
+
+
+                                          775um thick Si
+
+                                                                                  <5um thick Si
+
+
+
+
+                        1 um
+
+
+                                          100 MHz                                    1 GHz        De Wolf et. al, ISTFA 2019
+
+
+                                                           Transducer Frequency
+
+CSAM is a critical metrology, but higher resolution requires sample prep/die thinning
+                that is not always possible with 3D stacked structures
+
+   Assembly Test Technology Development                                                                                        8
+Key Challenges: High Resolution Imaging
+      Typical 3D X-ray for interconnect                     Nano 3D X-ray with <1um res.;
+      defects; no sample prep is needed                     sample preparation is needed
+
+
+                                                                                                              Sample prep and long
+                                                                                                              scanning time needed
+                                                                                                              to reach high resolution
+                                                                                                              for fine pitch features
+                                                                                                              will slow down yield
+                                                                                                              learnings and impact
+                                                                                                              time to market
+
+
+Cheryl Hartfield et. al. DOI: 10.1109/IPFA.2018.8452551   Christian Schmidt, Lorenz Lechner, Ingrid DeWolf,
+                                                          Soon-Wook Kim, Eric Beyn ECTC 2018
+
+
+     Need innovation in imaging to quickly detect subtle defects buried under
+                      multiple interfaces non-destructively
+
+Assembly Test Technology Development                                                                                                     9
+Key Challenges: High Resolution Imaging
+                                                                                      Fast/Automated
+                                1
+                                                                                        •     Sub-micro resolution
+                                                                                        •     Fast scan
+                                                                                               • High speed detectors
+                                                                                               • Large FOV
+                                                                                               • Fast data processing
+                                                                                        •     AI & deep learning
+
+ Low resolution                                                                                                                                   High resolution
+                               2                                                                                                                  3
+
+
+
+
+                                                                                      Slow/Manual
+                                       1.   https://smtnet.com/news/index.cfm?fuseaction=view_news&company_id=54743&news_id=24997
+                                       2.   https://www.glenbrooktech.com/x-ray-inspection-system-rentals/bga-inspection/
+Assembly Test Technology Development   3.   Yan Li and Deepak Goyal, “3D Microelectronic Packaging: From Architectures to Applications”, 2nd edition, Springer, 2021, ISSN 1437-0387   10
+Trends: Glass Substrates
+
+
+
+
+     Glass offers improved material properties resulting in better dimensional
+                           stability and ability to scale
+Assembly Test Technology Development                                             11
+Key Challenges: Crack Detection
+
+
+
+
+                              Edge defects due   Cracks that can become
+                                to singulation   gross fails if undetected
+
+
+
+     New in-line metrologies required to quickly detect micron-level cracks in
+                                glass substrates
+Assembly Test Technology Development                                             12
+Trends: Co-Packaged Optics
+
+
+
+
+    Glass bridge with integrated waveguides is key to enabling a high-volume
+                          compatible pluggable solution
+Assembly Test Technology Development                                           13
+Key Challenges: Metrology
+
+      Integrated
+      waveguides
+
+
+
+
+                                          High precision
+                                         micromachined
+                                       alignment features
+
+
+
+
+    Non-destructive methods for 3D mapping of optical waveguides in glass +
+     high accuracy measurement of fine features on a transparent substrate
+
+Assembly Test Technology Development                                          14
+Key Challenges: Metrology
+
+
+
+
+       Need higher level of integration of metrologies inside process tools for
+                      real-time process feedback and control
+
+Assembly Test Technology Development                                              15
+Executive Summary
+
+ The era of 3D integration and advanced packaging is upon us, but the
+ ecosystem is not ready
+
+ Fine pitch features in advanced 3D packaging require metrologies to
+ detect defects at all levels – surface and buried
+
+ Innovative solutions are needed to enable non-destructive, sub-micron
+ resolution, and high-speed metrologies
+
+
+
+
+Assembly Test Technology Development                                     16
+17
+

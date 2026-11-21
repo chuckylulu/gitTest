@@ -1,0 +1,1971 @@
+Semiconductor Package Failure Analysis with
+ZEISS 3D X-ray Microscopy and LaserFIB
+
+
+
+                                                                                                                                                             Cracks
+                                                                                                                                   Cracks
+                                                                                                         100 µm
+
+
+
+                                               PCB and substrates                Broken vias                      Battery module (Scout-and-Zoom)
+
+
+
+
+               Gyroscope
+
+
+                                                                                                                                            100 µm
+  1 mm
+
+
+
+
+              Flip Chip - Level 1
+                 PoP - Level 1
+
+
+
+           Ball Grid Array - Level 2
+
+
+
+           Ball Grid Array - Level 2                                                                                                                                  100 µm
+
+
+
+  600 µm                                                                                                                                             Control board
+
+
+  100 µm
+
+
+
+
+                                                                        100 µm
+
+
+
+         Level 2 interconnect          Level 2 interconnect with void     TSV voids            Bump cracks                   Solder bump non wet
+Introduction
+
+
+
+
+Semiconductor packaging technology advancements are enabling improved
+system performance beyond transistor scaling. However, increasing density
+and shrinking of interconnects and complex package architectures introduce
+new challenges for fault isolation, non-destructive imaging, and physical
+failure analysis workflows. Advances in 3D X-ray microscopy and AI-enabled
+reconstruction break traditional barriers of throughput, image quality, field of
+view and resolution. However, these techniques still face challenges in advanced
+packages where interconnect pitch and size are in micron scale or below and
+rely on physical failure analysis (PFA).
+
+X-ray microscopy is still relevant in guiding the sample preparation in PFA,
+such as determining the region of interest and orientation of the cross-section.
+In addition, the integration of short-pulsed lasers with FIB-SEMs introduces
+a new paradigm for high throughput, artifact-free sample preparation of
+semiconductor packages compared to traditional mechanical methods providing
+access to deeply buried interconnects and subsequent cross-sectional analysis.
+
+ZEISS has developed a novel correlative workflow connecting these two
+microscopy techniques where 3D XRM guides precise and targeted sample
+preparation with fs-laser integrated Ga FIB-SEM, reducing sample preparation
+and analysis from days to hours. This compendium includes recent publications
+highlighting this workflow and several use cases that enable sample preparation
+for fault isolation and physical failure analysis.
+Table of Contents
+
+
+
+
+An Artificial Intelligence Powered Resolution Recovery                                   4
+Technique and Workflow to Accelerate Package Level
+Failure Analysis with 3D X-ray Microscopy
+A novel deep learning 3D XRM reconstruction workflow on a 2.5 D package
+that requires only one large FOV scan and one high-resolution scan is reported.
+
+
+
+Detecting Wafer Level Cu Pillar Defects Using Advanced                                   9
+3D X-ray Microscopy (XRM) with Submicron Resolution
+A powerful new defect localization technique is described in two case studies
+about failures from an assembly process and a reliability test on wafer level
+chip scale packages with small scale copper pillars.
+
+
+
+A Breakthrough in Resolution and Scan Speed: Overcome                                   13
+the Challenges of 3D X-ray Imaging Workflows for
+Electronics Package Failure Analysis
+A new scintillator material and objective lens delivers excellent spatial resolution.
+Combined with deep learning reconstruction, data acquisition can be accelerated
+by a factor of four, improving efficiency in FA applications.
+
+
+
+Targeted Sample Preparation and Analysis of Advanced                                    18
+Packaging using Correlated X-ray Microscopy and LaserFIB
+A new sample preparation technique for fault isolation of advanced packages,
+using correlated, high-resolution 3D X-ray microscopy and a LaserFIB to pinpoint,
+isolate and open a 20 µm wirebond without damage to adjacent wires.
+
+
+
+Correlative Microscopic Workflow Powered by AI to                                       23
+Accelerate FA of Next-Generation Semiconductor Packages
+This study introduces an AI-powered correlative microscopic workflow that
+integrates non-destructive X-ray imaging, FIB polishing, and SEM analysis techniques
+for the examination of fan-out wafer-level packages (FOWLP), and hybrid bonds.
+
+
+
+Accelerate Your 3D X-ray Failure Analysis by Deep Learning                              29
+High Resolution Reconstruction
+A deep learning based high-resolution reconstruction technique can substantially
+shorten X-ray failure analysis workflows. The throughput improvement by a factor
+of four or ten was demonstrated for several semiconductor package examples.
+Originally Published at ISTFA 2023: Proceedings from the 49th International Symposium
+for Testing and Failure Analysis Conference
+
+
+An Artificial Intelligence Powered Resolution
+Recovery Technique and Workflow to
+Accelerate Package Level Failure Analysis
+with 3D X-ray Microscopy
+Syahirah Mohammad-Zulkifli, Bernice Zee, Qiu Wen, Maverique Ong
+Advanced Micro Devices (Singapore) Pte Ltd, Device Analysis Lab
+
+Yanjing Yang, Andriy Andreyev, Masako Terada, Allen Gu
+Carl Zeiss Microscopy
+
+
+
+Abstract                                                                                                          a
+3D X-ray microscopy (XRM) is an effective high-resolution                                    InFO     Chip A               Chip B
+and non-destructive tool for semiconductor package level
+                                                                                                               Substrate
+failure analysis [1-3]. One limitation with XRM is the ability to
+achieve high-resolution 3D images over large fields of view
+                                                                                                                  b
+(FOVs) within acceptable scan times. As modern semiconductor
+                                                                                                                Silicon
+packages become more complex, there are increasing demands                                                       FeOL
+for 3D X-ray instruments to image encapsulated structures and                                                    BeOL
+                                                                                                                 BeOL
+                                                                                                                 FeOL
+failures with high productivity and efficiency. With the challenge
+                                                                                                                Silicon
+to precisely localize fault regions, it may require high-resolution
+imaging with a FOV of tens of millimeters. This may take
+                                                                                                                  c
+over hundreds of hours of scans if many high-resolution but
+                                                                                    HBM                          SoC                        HBM
+small-volume scans are performed and followed with the                                                                                                 Molding
+
+conventional 3D registration and stitches. In this work, a novel          RDL              LSI                          IPD           LSI                TIV
+
+deep learning reconstruction method and workflow to address
+                                                                                                               Substrate
+the issue of achieving high-resolution imaging over a large
+FOV is reported. The AI powered technique and workflow
+can be used to restore the resolution over the large FOV
+scan with only one high-resolution and one large FOV scan.               Figure 1 Illustration examples of next generation packaging technologies used
+                                                                         for heterogenous integration; a) WLFO, b) TSV, and c) embedded bridges [4].
+Additionally, the 3D registration and stitch workflow are
+automated to achieve large FOV images with a recovered
+resolution comparable to the actual high-resolution scan.
+
+
+Introduction
+The pace of adopting next generation packaging technologies              The resolution of non-destructive imaging techniques has
+for heterogeneous integration has picked up significantly as             also been pushed to theoretical limits in imaging highly
+the cost of transistor scaling has risen astronomically. Examples        miniaturized interconnects. Consequently, 3D X-ray microscopy
+of such packaging technologies include Wafer-Level Fan-Out               (XRM) has become the preferred non-destructive imaging tool
+(WLFO), Through-Silicon-Vias (TSV), 3D interconnects and                 for semiconductor package failure analysis because of its
+embedded bridges as shown in Figure 1.                                   high-resolution imaging capabilities [1-3]. It has become a
+                                                                         critical tool because of its ability to clearly image different
+Next generation packaging technologies present interesting               interfaces of complex multichip packages. However, trade-offs
+challenges to current failure analysis techniques. The ability to        in terms of FOV, image signal-to-noise ratio (SNR), and scan
+localize and visualize defects prior to and during physical failure      times must be balanced. To overcome these constraints,
+analysis (PFA) is no longer straightforward. Complex die stacking        machine learning methodologies are being applied to the
+and numerous die-to-die interconnects with no direct electrical          reconstruction step to enhance imaging efficiency and quality.
+contact make package-level electrical fault isolation (EFI) difficult.
+
+
+
+
+AI-powered Resolution Recovery Technique and Workflow Accelerates Package FA                                                                              4
+A deep learning based high-resolution reconstruction method
+capable of speeding up data acquisition by at least a factor of
+four without the need of beamline hardware in the 3D XRM
+tool was recently reported [5-6]. Improved scan throughput                                                     Inference
+was achieved through the implementation of pre-trained neural
+
+
+
+
+                                                                        FOV (Volume)
+networks which extract signals from low-dose data more                                                                            High Resolution
+
+
+
+
+                                                                                         Training
+                                                                                                                                   at Large FOV
+efficiently than the conventional Feldkamp-Davis-Kress (FDK)                                                                   (with short scan time)
+method. However, this methodology can only be applied to
+small FOV, high-resolution scans. As larger multichip packages
+                                                                                                                   Training
+with complex routing and stacking becomes more mainstream,
+there is a growing need for large FOV, high-resolution imaging.
+
+
+In this paper, another novel deep learning-based reconstruction
+method capable of learning the point spread function (PSF)                                                   Resolution
+of low-resolution data in a neural network training process is            Figure 2 The schematics of the DeepScout reconstruction method to restore image
+described. Through this new methodology, the resolution of                resolution from the low-resolution image input.
+
+low-resolution data with a large FOV is restored through an
+inference process without physically performing numerous
+high-resolution scans. We will demonstrate on several IC                  This procedure is summarized in Figure 2. DeepScout can
+packages that the proposed workflow can be utilized in                    mitigate the trade-off between slow acquisition and high
+imaging circuit interconnect elements in a large area, in                 resolution by learning thedependencies between low-resolution
+which standard XRM has not been practically possible                      and high-resolution datasets.
+due to the trade-off of image resolution and FOV.
+                                                                          Case Studies
+DeepScout Methodology                                                     Case Study 1: Embedded Bridge Package
+DeepScout is a novel image reconstruction method that                     An advanced stacked die package with interconnectivity issues
+tackles the problem of large FOV, high-resolution imaging by              was sent in for failure analysis (FA). As per traditional FA flow, a
+using a deep-learning algorithm to learn the effective point              non-destructive C-Mode Scanning Acoustic Microscopy (CSAM)
+spread function (PSF) of the imaging device and then use it               test was performed to isolate the fault. CSAM results showed an
+to perform deconvolution and improve the spatial resolution.              anomaly spanning across the majority of the length of the unit
+                                                                          in Figure 3. To understand the nature and location of the failure,
+In the first stage of the DeepScout workflow, two datasets                a DeepScout scan to image the internal structures was done.
+need to be acquired on the same object at low-resolution and              This scan was able to capture a large FOV at the anomaly
+high-resolution. The acquisition parameters for low-resolution            region with a high resolution of 0.72 µm/voxel.
+and high-resolution datasets are chosen in such a way that
+the voxel size ratio is less than six, where the high-resolution          From the 3D XRM DeepScout scan results, notch-like defects
+volume is contained inside the low-resolution volume and is               were clearly resolved across the row of microbumps. A comparison
+representative of the object interiors. Then the two datasets are         at the same FOV between the 0.4X objective scan in Figure 4a
+reconstructed and registered to ensure precise correspondence             and the DeepScout scan in Figure 4b shows better resolved
+between the same features imaged at low and high resolution.              features for the reconstructed image obtained with DeepScout.
+Such a registered image pair is then passed to the DeepScout              Figure 4c is the actual high-resolution scan at 0.72 µm/voxel
+neural network for training, where the network will learn to              resolution used for training the network model in DeepScout
+create a mapping from low resolution to high resolution. A                method.
+complete description of the DeepScout training process and
+network is out of the scope of this paper. For further details
+please refer to Ref. [7]. After the training is complete, the trained
+DeepScout model can then be used to improve the spatial
+resolution of the entire low-resolution dataset, or another
+                                                                                                             Anomalies
+dataset acquired in similar conditions for the same or
+equivalent sample type.
+
+
+                                                                          Figure 3 CSAM image showing anomalies at the microbump interface.
+
+
+
+
+AI-powered Resolution Recovery Technique and Workflow Accelerates Package FA                                                                            5
+  a                                                                                        a
+
+
+
+
+  b
+
+
+
+
+                                                                                           b
+
+  c
+
+
+
+
+      100 µm
+
+
+Figure 4 Reconstructed microbump image with notches a) a virtual cross-section
+of a low-resolution scan at 2.3 µm/vox resolution; b) a virtual slice of the DeepScout
+volume; and c) the high-resolution scan data at 0.72 µm/vox resolution used for
+training the network model in DeepScout method.                                            c
+
+
+
+
+Case Study 2: WLFO Package
+Ultra-short reach (USR) bump fails were reported for a WLFO
+unit in this case study. As there are no ball out for these USR
+bumps, fault isolation through electrical techniques is not
+possible. To assist in the fault isolation, 3D XRM was used to
+give an overview of the internal layers and check if any defects
+could be observed. The 3D XRM scan requires a large FOV to                               Figure 5 A DeepScout example. a) a virtual planar view of a low-resolution
+
+target the failing USR bumps and corresponding redistribution                            scan at 2.1 µm/vox resolution; b) a virtual slice of the DeepScout volume; and
+                                                                                         c) the high-resolution scan data at 0.7 µm/vox resolution used for training
+layer (RDL) traces between graphics core die (GCD) and
+                                                                                         the network model in DeepScout method.
+memory-controlled die (MCD). High-resolution scans are
+also required to visualize the fine bump pitch and line width
+spacing at the RDL and USR layers. To ensure both requirements
+are fulfilled, a DeepScout scan was performed.                                           Although there were no obvious anomalies from the 3D XRM
+                                                                                         images, the data from these scans has provided the analyst
+At the same FOV, the reconstructed image obtained with                                   with a guide of the overview across a large FOV of the different
+DeepScout on Figure 5b shows better resolved RDL traces and                              layers as shown in Figure 6. Because of the enhanced resolution
+USR bumps compared to Figure 5a, which was obtained using                                on a DeepScout volume, it provides guidance and assurance for
+the 0.4X objective. The example demonstrates the resolution on                           the analyst on how to proceed in the subsequent PFA to ensure
+small structures can be restored with the DeepScout method                               successful root cause analyses. In this case we focused on the
+and workflow. More importantly, the volume of DeepScout                                  USR MCD interconnect during PFA based on the DeepScout
+is the same as the large FOV scan at 2.1 µm/voxel.                                       data and a via crack defect was captured and visualized with
+                                                                                         a FIB-SEM workflow per Figure 7.
+
+
+
+
+AI-powered Resolution Recovery Technique and Workflow Accelerates Package FA                                                                                              6
+  Top View Layer 1                        Top View Layer 2                       a
+
+
+
+                                                                                                                           Anomalies
+
+
+
+
+  Top View Layer 3                        Top View Layer 4
+
+                                                                                 b
+
+
+
+                                                                                                                         Anomalies
+
+
+Figure 6 3D XRM DeepScout virtual planar slice view of multiple layers of the
+WLFO package over a large FOV.
+
+
+
+                                                                                Figure 8 CSAM image showing anomaly at the a) microbump interface and
+                                                                                b) C4 bump interface.
+
+
+
+                                Via Crack
+
+                                                                                 a. Top View Layer                    a. Cross-section Slice View
+
+
+
+
+           3 µm
+                                                                                      Anomaly ROI
+Figure 7 Image of USR MCD interconnect showing via crack observed after PFA
+using focused ion beam (FIB).
+                                                                                 b. Top View Layer                    b. Cross-section Slice View
+
+
+
+Case Study 3: Embedded Bridge Package
+In this case study, an embedded bridged advanced stacked
+die package was reported as failing power supply short. Curve                         Anomaly ROI
+trace verification and CSAM imaging revealed an anomaly in
+one segment of the package. From the CSAM image shown
+                                                                                 c. Top View Layer                    c. Cross-section Slice View
+in Figure 8, it was not apparent if the observed anomaly was
+confined to the microbump interface or if it has extended to
+the C4 bump interface.
+
+
+Hence, 3D XRM was carried out at the region of interest to                            Anomaly ROI
+verify the anomaly and determine the cause of short failure.
+                                                                                Figure 9 A virtual planar and cross-section slice obtained from a) 0.4X
+Due to the extent of the damage observed via CSAM, imaging
+                                                                                objective at 7.82 µm/vox resolution reconstructed with conventional FDK
+a large FOV with high resolution was required. From Figure 9,                   method; b) 4X objective at 1.4 µm/vox resolution reconstructed with
+for the same FOV, the reconstructed image obtained with                         conventional FDK method; and c) 4X objective at 1.4 µm/vox resolution
+                                                                                reconstructed with DeepScout method that was trained with high-resolution
+DeepScout on the bottom using the 4X objective shows better
+                                                                                scan data at 0.7 µm/vox resolution.
+resolved microbumps than the image on the top which was
+obtained using the 0.4X objective. DeepScout allows FA
+engineers to acquire 3D X-ray data with both large FOV
+and high-resolution benefits.
+
+
+
+
+AI-powered Resolution Recovery Technique and Workflow Accelerates Package FA                                                                                7
+Conclusion
+3D XRM has become the preferred non-destructive imaging                        because the tradeoff between resolution and FOV is one
+tool for semiconductor package failure analysis because of its                 of the fundamental limitations in microscopy and microanalysis [7].
+high-resolution imaging capabilities. However, as new package                  In this paper, deep learning powered X-ray imaging technique
+architectures trend towards 3D stacking and multichip modules,                 DeepScout has shown the capability to address the issue of
+interconnect densification and miniaturization as well as increased            achieving high resolution at a large area. We have shown several
+package size presents a challenge in structural and failure analysis,          case studies of complex advanced packages with the technique.
+
+
+
+
+Acknowledgment
+The authors would like to thank their colleagues who have contributed to this work.
+
+
+References
+[1] L. Mirkarimi, A. Gu, L. Hunter, G. Guevara, M. Huynh, R. Katkar, “X-ray Microscopy and Root Cause Analysis in Electronic Packaging”, Proc 41st Int’l
+    Symp for Testing and Failure Analysis, Portland, OR, Nov. 2015, pp. 430-435. doi: 10.31399/asm.cp.istfa2015p0430
+[2] A. Gu, J. Auyoong, “3D Measurement Workflow for Packaging Development and Production Control Using High-Resolution 3D X-ray Microscope”,
+    2018 IEEE 20th Electronics Packaging Tech Confer (EPTC), Singapore, Dec. 2018. doi:10.1109/EPTC.2018.8654390
+[3] S. M. Zulkifli, B. Zee, W. Qiu, A. Gu, “High-Res 3D X-ray Microscopy for Non-Destructive Failure Analysis of Chip-to-Chip Micro-bump Interconnects
+    in Stacked Die Packages”, IEEE 24th Int’l Symp on the Physical and Failure Analysis of Integrated Circuits (IPFA), Chengdu, China, Jul. 2017.
+    doi:10.1109/IPFA.2017.8060111
+[4] 3DFabric | TSMC. (n.d.). Retrieved April 11, 2023, from https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm
+[5] A. Gu, A. Andreyev, M. Terada, B. Zee, S. M. Zulkifli, Y. Yang, “Accelerate Your 3D X-ray Failure Analysis by Deep Learning High Resolution
+    Reconstruction Paper,” Int’l Symp for Testing and Failure Analysis, No: istfa2021p0291, pp. 291-295, Phoenix, AZ, Dec 2021.
+[6] A. Gu, M. Terada, H. Stegmann, T. Rodgers, C. Fu and Y. Yang, “From System to Package to Interconnect: An Artificial Intelligence Powered
+    3D X-ray Imaging Solution for Semiconductor Package Structural Analysis and Correlative Microscopic Failure Analysis,” IPFA 2022, Singapore.
+[7] M. Andrew, A. Andreyev, F. Yang, M. Terada, A. Gu, R. White, “Fully automated deep learning based resolution recovery”, SPIE Advances in
+    X-ray Imaging, 2022. https://doi.org/10.1117/12.2633095.Z
+
+
+
+
+AI-powered Resolution Recovery Technique and Workflow Accelerates Package FA                                                                               8
+Originally Published at ISTFA 2023: Proceedings from the 49th International Symposium
+for Testing and Failure Analysis Conference
+
+
+Detecting Wafer Level Cu Pillar Defects
+Using Advanced 3D X-ray Microscopy (XRM)
+with Submicron Resolution
+Susan Li, John Frame, Edita Madriaga-Berry, Jose Hulog, Ming Zhang
+Infineon Technology
+
+Masako Terada, Allen Gu, David Taraci
+Carl Zeiss Microscopy
+
+
+
+
+Abstract                                                                                   Introduction
+In this work we present a new defect localization capability                               2D X-ray imaging and inspection remain the most commonly
+on Wafer Level Chip Scale Packages (WLCSP) with small-scale                                used X-ray technique. Incident X-ray irradiates samples and a
+Cu pillars using advanced 3D X-ray microscopy (XRM). In                                    2D detector is utilized to collect shadow or projection images,
+comparison to conventional microcomputed tomography                                        where absorption contrast is generated by the difference in
+(Micro-CT or microCT) flat-panel technology, the synchrotron-                              X-ray absorption between different materials or thickness. This
+based optically enhanced 3D X-ray microscopy can detect                                    technique, however, is not adequate for revealing true 3D
+very small defects with submicron resolutions. Two case                                    structures because it projects 3D objects to a 2D plane. As a
+studies on actual failures (one from the assembly process and                              result, when it is used for semiconductor packages, important
+one from reliability testing) will be discussed to demonstrate                             information such as internal faulty regions of a device may
+this powerful defect localization technique. Using the tool                                remain hidden due to complicated multi-layer structures.
+has helped speed up the failure analysis (FA) process by                                   The disadvantage may be overcome by using 3D X-ray
+locating the defects non-destructively in a matter of hours                                computed tomography (CT) technique.
+instead of days or weeks as needed with destructive physical
+failure analysis.                                                                          In a CT system, a series of 2D projection views is captured
+                                                                                           at different angles while the specimen rotates. These 2D
+                              Traditional microCT                     Flat Panel           images are used to reconstruct 3D X-ray tomographic volume
+                                                                                           by applying mathematic models and algorithms. The spatial
+                                                                                           resolution of the imaging technique can be improved by the
+         Sample                                                                            integration of an optical microscopy system. The improved
+Source
+                                                                                           technology, named as 3D X-ray microscopy (XRM), was used
+                                                                                           in this work for highresolution 3D imaging, providing an
+                                                                                           insightful vision for non-destructive FA technology.
+                                           b
+
+    a
+
+                        Geometric Magnification = ( a + b ) / a
+
+                                                                                                              0
+
+
+                                                                                                              2                                                               Xradia Vera XRM
+
+                                                                           Microscope
+                                X-ray Microscopy                           Objectives                         4
+                                                                                           Resolution (µm)
+
+
+
+
+                                                                                                              6
+                                         Sample
+
+                                                                                                              8
+Source
+                                                                                                                                           Geometric Mag-based microCT’s
+                                                                                                             10
+
+                                                                  b
+                                                                                                             12
+                    a                                                        Optical
+                                                                           Magnification
+                                                                                                             14
+                        Geometric Magnification = ( a + b ) / a                                                   0   10                 20               30               40              50
+                                                                                                                           Working Distance (mm) – similar to sample radius
+
+Figure 1 Comparison of XRM optical architecture with traditional microCT.                  Figure 2 Resolution performance comparison between traditional microCT and XRM.
+                                                                                           The sample was about 55x55 mm in size.
+
+
+
+
+Detecting Wafer Level Cu Pillar Defects with Advanced 3D XRM                                                                                                                                9
+Figure 1 shows the comparison of the setup of a 3D XRM                                   However, it normally cannot detect small, subtle defects such
+with the traditional microCT. In the XRM configuration, a                                as separated solder joint interfaces, slightly lifted wire bonds,
+high-resolution X-ray scintillator is coupled with optical lens                          or bump cracks. It also cannot reveal the details on small-scale
+system to further magnify the image and improve spatial                                  Cu pillars (25-30 µm in diameter), such as those used by an
+resolution and contrast. This architecture with two-stage                                automotive fingerprint sensor (Figure 5a).
+magnification mechanism is unique to provide the necessary
+resolution required to image subtle internal defects of large                            Advanced 3D XRM systems utilize the innovations first developed
+electronic devices (Figure 2). Because XRM’s unique resolution-                          for synchrotron-based instruments. It uniquely employs scintillator-
+at-a-distance capability, XRM can be used to detect many                                 coupled optics as an integral part of the X-ray detector. Unlike
+different types of failure modes, shown in Figure 3.                                     conventional Micro-CT techniques, where spatial resolution solely
+                                                                                         relies on geometric magnification, the optical objective-based
+                                                                                         XRM utilizes a unique two-stage magnification mechanism to
+                                                                                         achieve high resolution over large working distances. Better
+                                                                                         resolution can be achieved even for large semiconductor package
+                                                                                         samples. The latest 3D XRM system enables users to visualize and
+  Fatigue Cracks            Head in Pillow         Wire Touch             Broken TSV     quantify internal structures with resolution down to 0.45 µm,
+                                                                                         significantly beyond the conventional Micro-CT flat-panel
+                                                                                         technology.
+
+
+                                                                                         This advanced XRM tool is ideal for revealing defects in the
+ PTH Crack          µbump Voids              Al Wires       Stitch Bond      Non-wet     fingerprint sensor’s small-scale Cu pillars – defects which other
+                                                                                         conventional Micro-CT X-ray systems cannot detect. Without any
+                                                                                         sample preparation, the data of a targeted area was acquired at
+                                                                                         0.72 µm/voxel resolution with 70 kV X-ray source energy and a
+                                                                                         4X objective in XRM. It took about 1.3 hours for the 3D scan
+ Trace Cracks           µbump Cracks                    Die Cracks        µbump Shorts
+                                                                                         and reconstruction, and the detailed small-scale Cu pillars’ joint
+Figure 3 A variety of defect types that can be detected with 3D X-ray microscopy         conditions including solder joint non-wetting and cracking
+with the sample sizes ranging from a few mm to tens of mm.
+                                                                                         were revealed (Figures 5b, 5c and 5d).
+
+
+3D X-ray tools have been widely used for non-destructive failure                         In this paper, we will describe how to use the latest 3D XRM
+analysis to inspect wire-bonding related defects, solder joints                          tool to analyze failing devices from the assembly process and
+and die attach voids, and other anomalies on printed circuit                             after reliability testing and obtain very impressive results in a
+boards (PCBs) and IC packages [1]. 3D CT scanning compiles                               much shorter analysis cycle time.
+digital X-ray images into a 3D volume, resolving internal
+structures that can be virtually sliced, measured and viewed
+at any angle digitally, all without physically damaging actual                           Conventional Micro-CT                   3D X-ray microscopy (XRM)
+parts   [2-5]
+                . A conventional flat-panel Micro-CT X-ray system can
+achieve resolutions of the order of 2-10 µm depending on the
+size and materials of a device being analyzed and can reveal
+defects such as fused bond wires or wires touching the lead
+post [6] (Figure 4).
+
+                                                                                                                        a                                                 b
+
+                                    b
+                                                                                                                                                                  30 µm
+                                                  a
+                        a
+
+
+
+                                                  b
+                                                                                                                                             c                            d
+Figure 4 Conventional Micro-CT images showed a bond wire touching the lead
+post (a) and a fused open bond wire (b).                                                 Figure 5 Compared to a) conventional Micro-CT X-ray, b) 3D XRM reveals more
+                                                                                         details of the small-scale Cu pillars including solder joint non-wetting (blue
+                                                                                         arrows) and cracking (red arrows) (c and d).
+
+
+
+
+Detecting Wafer Level Cu Pillar Defects with Advanced 3D XRM                                                                                                              10
+Results and Discussion
+The failing device analyzed is a fingerprint sensor with a Flip-Chip                 The scan was performed with 1 µm/voxel resolution and com-
+die mounted on a PCB substrate through small-scale Cu pillars. It                    pleted within 1 hour. These findings enabled us to visualize the
+is used for automotive applications and is therefore subjected to                    defects in detail, and the information was quickly fed back to the
+stringent reliability tests. Some failures were observed after 1000                  assembly team to implement corrective actions.
+cycles of temperature cycling test, while others were found right
+after the assembly process. Two units with failures at transmit                      Case Study 2
+(TX) or receive (RX) pins were selected for the 3D XRM analysis.                     Another fingerprint sensor device showed a partial panel failure
+                                                                                     at one single RX pin after 1000 temperature cycles. Optical and
+Case Study 1                                                                         Scanning Electron Microscope (SEM) inspection revealed an
+One fingerprint sensor device failed at three RX pins and three                      anomaly, possibly package surface damage, at the physical
+TX pins right after assembly process. 2D X-ray inspection was                        location where the partial panel failure was detected through
+initially performed on the unit, and an abnormally shaped Cu                         the electrical testing (Figure 8).
+pillar was found at one of the failing RX pins, but nothing
+abnormal could be seen at other failing RX and TX pins.
+                                                                                                                                     Optical
+The intact unit was then analyzed using 3D XRM at the failing
+RX and TX pins. The scan was performed at 0.73 µm/voxel
+resolution at 70 kV for 1.3 hours. The detailed 3D X-ray images
+showed the deformed Cu pillar with a shorter Cu stem, open
+solder joint, and even a slightly bent Cu trace at the affected
+                                                                                             Anomaly                                 SEM
+failing RX pin where an anomalous Cu pillar was detected under
+the 2D X-ray inspection (Figure 6). The 3D X-ray analysis also
+showed non-wetting solder joints at the other failing RX and
+TX pins that conventional Micro-CT could not see (Figure 7).
+
+                                                                                     Figure 8 Optical and SEM inspection showed an anomaly at the reported
+                                                                                     partial panel failing location.
+         2D X-ray                       3D X-ray microscopy (XRM)
+
+
+                                                                                     The unit was then analyzed using 3D XRM with focus on the
+                                                                                     anomalous location. The detailed 3D X-ray image showed a cut
+                                                                                     open Cu trace underneath the anomaly (Figure 9).
+
+
+
+
+Anomalous Cu Pillar at RX71                                                           3D Rendering
+Figure 6 3D X-ray microscope image can resolve the detailed structure and
+defects at the deformed Cu pillar of the failing RX pin.
+
+
+                                                                                                 Open trace                           Open trace
+             2D X-ray                      3D X-ray microscopy (XRM)
+
+                                                                                     Figure 9 3D X-ray image showed cut open Cu trace at the anomalous location
+                                                                                     where the partial panel failure was detected.
+
+
+
+
+Figure 7 The detailed 3D X-ray images revealed non-wetting solder caps at all
+reported failing RX and TX pins, indicated by original round solder caps (the rest
+of non-wetting pins shown were not electrically tested).
+
+
+
+
+Detecting Wafer Level Cu Pillar Defects with Advanced 3D XRM                                                                                                 11
+To further understand the failure mechanism, FIB cross-section                  It is presumed that a loose particle landing on the package
+was performed at the affected location, and the result showed                   surface was pressed into the package surface during clamping of
+a sharp-edged SiO2 piece pressed through the package surface,                   the test socket, cutting the Cu trace underneath. The damaged
+cutting the Cu trace (Figure 10). After checking the socket                     Cu trace became completely open after 1000 temperature cycles.
+for ATE testing, it was confirmed that the affected location                    The information was then provided to the product team for
+was right underneath the clamp of the test socket.                              improving ATE test conditions and test socket cleanliness.
+
+
+                                                                                Conclusions
+                                                                                The analysis results obtained from this advanced 3D X-ray
+                                                                                microscope tool significantly exceeded our expectations from
+                                                                                a typical Micro-CT X-ray tool, and sped up the FA process by
+                                                                                finding defects non-destructively in a matter of hours instead
+                                                                                of days or weeks as would be the case with destructive
+       50 µm
+                                                                                physical failure analysis.
+Figure 10 FIB cross-section at the anomalous location showed a sharp-edged
+particle pressed into the package, cutting open the Cu trace underneath.
+EDX analysis showed the particle to be a piece of SiO2.
+
+
+
+
+Acknowledgements
+The authors would like to thank Robert Blazer from Infineon San Jose FA lab and Claudia Keller from Infineon Munich FA lab, for their helpful review
+of this paper.
+
+
+References
+[1] Tom Moore; Cheryl Hartfield, “X-ray and SAM – Challenges for IC Package Inspection,” ISTFA 2022, Pasadena, California
+[2] Cheryl Hartfield, “Nanoscale 3D X-ray Microscopy for High Density Multi-Chip Package FA,” ISTFA 2018, Phoenix, Arizona
+[3] S. M. Zulkifli, B. Zee, W. Qiu, A. Gu, “High-Res 3D X-ray Microscopy for Non-Destructive Failure Analysis of Chip-to-Chip Micro-bump Interconnects
+    in Stacked Die Packages”, IEEE 24th Int’l Symp on the Physical and Failure Analysis of Integrated Circuits (IPFA), Chengdu, China, Jul. 2017.
+    doi:10.1109/IPFA.2017.8060111
+[4] A. Gu, A. Andreyev, M. Terada, B. Zee, S. M. Zulkifli, Y. Yang, “Accelerate Your 3D X-ray Failure Analysis by Deep Learning High Resolution
+    Reconstruction Paper,” Int’l Symp for Testing and Failure Analysis, No: istfa2021p0291, pp. 291-295, Phoenix, AZ, Dec 2021.
+[5] A. Gu, M. Terada, H. Stegmann, T. Rodgers, C. Fu and Y. Yang, “From System to Package to Interconnect: An Artificial Intelligence Powered
+    3D X-ray Imaging Solution for Semiconductor Package Structural Analysis and Correlative Microscopic Failure Analysis,” IPFA 2022, Singapore
+[6] Susan Li, “Failure Analysis Challenges for Chip Scale Packages,” ISTFA 2022, Pasadena, California.
+
+
+
+
+Detecting Wafer Level Cu Pillar Defects with Advanced 3D XRM                                                                                             12
+Original Published at 2023 IEEE International Symposium on the Physical and
+Failure Analysis of Integrated Circuits (IPFA)
+
+
+A Breakthrough in Resolution and
+Scan Speed: Overcome the Challenges
+of 3D X-ray Imaging Workflows for
+Electronics Package Failure Analysis
+Allen Gu, Gerhard Krampert, Susan Candell, Masako Terada,
+Carl Zeiss Research Microscopy Solutions, 5300 Central Parkway, Dublin, CA 94568, USA
+Thomas Rodgers
+Carl Zeiss Microscopy GmbH, Rudolf Eber Str. 2, BG 41/1, 73447 Oberkochen, Germany
+
+
+
+
+Abstract
+Non-destructive 3D X-ray microscopy (XRM) has played an               3D XRM has become the preferred solution for semiconductor
+important role in advances of semiconductor packaging                 package failure analysis because of its non-destructive and
+development and failure analysis [1-3]. Over the past decade, the     high resolution capabilities. Unlike conventional computed
+IC industry has increasingly focused on packaging innovations         tomography techniques, where spatial resolution solely relies
+to improve device performance and cost-effectiveness. The             on geometric magnification, XRM utilizes a unique two-stage
+emergence of novel 2.5D, 3D and recent heterogenous                   magnification mechanism to achieve high resolution over large
+integration packages challenges the existing X-ray imaging            working distances. With both geometric and optical magnification,
+and characterization workflows because I/O interconnects              XRM enables submicron resolution across the normal range of
+such as small-volume solders and hybrid Cu-to-Cu bonds are            semiconductor package sizes. XRM system resolution and
+more miniaturized in densely packed packages. In this report,         contrast are defined by a variety of contributing factors such
+we will introduce a new scintillator material coupled with            as source, detector, scan conditions, etc. In this paper, we focus
+a 40X objective lens (referred as 40X-P), integrated in an XRM        on both the resolution and contrast improvement enabled by
+detector system, capable of delivering better spatial resolution      a new scintillator material coupled with a 40X objective lens.
+and contrast than the traditional Cesium Iodide (referred as CsI)     It is capable of delivering significantly better spatial resolution
+scintillator based X-ray detector. Several commercial semicon-        and contrast over a broader range of X-ray energies than the
+ductor packages will be imaged and analyzed with both the             traditional CsI scintillator based detector. This is achieved via
+new 40X-P and a standard 40X objectives for comparison.               the higher density (i.e., higher average z-number) of the new
+We will also demonstrate that the data acquisition with 40X-P         scintillator material compared to CsI. Because of the heavy
+can be accelerated by a factor of four with a deep learning           atom compositions, it converts high-energy X-ray photons
+reconstruction method, improving its efficiency in failure            to visible light better than the traditional CsI, making it better
+analysis applications.                                                resolution and contrast even at high energies.
+
+Introduction                                                          The first test vehicle was a commercially purchased 9x14x1.1 mm
+Semiconductor packaging technologies have been the driving            DRAM memory package with four layers of microbump and TSV
+force to propel advances of electronics device performance,           stacks. The second test vehicle is a commercial 22x26x1 mm
+while traditional silicon downscaling has been slowing down.          embedded multi-die interconnect bridge (EMIB) package with
+The IC packaging industry faces a paradigm shift in design,           a heterogeneously integrated high-bandwidth memory and a
+manufacturing, and inspection techniques to adopt more than           graphics processor. We will demonstrate that the new 40X-P
+Moore packaging innovations. Among many newly emerged                 delivers better 2D and 3D resolutions and contrast of X-ray
+interconnection techniques, fine pitch interconnection, 3D            microscopic images on these test vehicles. In the previous
+stacking, and solderless hybrid bonding are particularly attractive   studies, we reported the deep learning based reconstruction
+for the advantage to increase I/O density with the bridged            method can be used to speed up the scan throughput by a
+size gap between Si and package. However, the IC industry             factor of four [4-6]. Here, we apply the reconstruction workflow
+faces the challenge to find an effective non-destructive solution     to reduce the scan time of the 3D data acquired with the
+for imaging these relentlessly miniaturized interconnects             40X-P objective.
+and defects.
+
+
+
+
+Breakthrough in Resolution and Scan Speed                                                                                                   13
+Instrumentation and Setups
+In a typical data acquisition with XRM,       The image acquired by the 40X-P objective                   However, imaging small interconnects
+a sample rotates by 180 (± fan angle)         in Fig. 2b looked much crispier than the                    and internal defects of these packages
+or 360 degrees, and a set of projection       image with a standard 40X objective in                      has been challenging because of resolution
+images are acquired by an X-ray detector      Figure 2a, especially on the edges of Cu                    limitations in microCT and XRM systems.
+system. A scintillator screen coupled with    pillars and microbumps. DRAM packaging                      Prior to the 40X objective tests, we used
+an optical objective is utilized to convert   architectures have utilized a small-volume                  low-magnification objectives of 0.4X and
+X-ray photons to visible light, and the       soldering technique to stack multiple layers                4X to precisely localize the scan region
+magnified projection images are captured      of dies through a thermocompression                         (Figure 3a) for the data acquisition with
+by a CCD camera. These 2D images are          bonding process. The bond linethickness                     40X objectives. With the X-ray imaging
+mathematically reconstructed to 3D data.      of ~15 µm and TSV with a diameter                           parameters in Figure 2, the sample was
+For the comparative studies, both 40X-P       of 5 µm have been seen in advanced                          scanned with both 40X objectives.
+and standard 40X objective lenses were        DRAM packages.
+installed on a same turret for all imaging
+work. The standard procedures of beam
+alignment and objective calibration were
+followed.                                      A                                                           B
+
+Figure 1 shows the example 2D projections
+on a standard resolution target obtained
+with a standard 40X (Figure 1a) and the
+40X-P (Figure 1b) objectives at 120 kV
+and a LE6 X-ray filter. Because of the
+superior performance at high energies of
+the new 40X-P, 500 nm spatial resolution
+was achieved. The measured modular
+transfer function of 40X-P only drops off     Figure 1 Resolution and contrast performance comparison. A) A 2D projection view with a standard 40X
+                                              objective lens at 120 kV X-ray energy and a LE6 filter. B) 2D projection view with the 40X-P at the same energy
+at highest levels of resolution, indicating   and filter. The test sample was a ZEISS standard resolution target.
+that the new objective maintains superior
+contrast in the high spatial frequency
+range. Although the peak performances
+of both objectives are achieved at a           A                                                           B
+low energy, high energy performance
+is more critical in imaging high-density
+IC packages.
+
+
+Results and Discussions
+Because each projection contributes to
+the image quality of a reconstructed
+volume, it is important to optimize 2D             50 µm                                                       50 µm
+
+X-ray projection views prior to 3D data
+                                              Figure 2 Resolution performance comparison of 2D projections on the DRAM package sample.
+acquisition. Figure 2 shows the two
+                                              A) with a standard 40X objective lens at 70 kV and a LE2 filter. B) with the 40X-P at the same energy and filter.
+projection images on a commercially
+purchased DRAM package, which was
+not trimmed or prepared in the imaging
+work. Both images were acquired at 70 kV
+with a LE2 source filter at 0.49 µm/pixel
+resolution for a comparison.
+
+
+
+
+Breakthrough in Resolution and Scan Speed                                                                                                                       14
+Figure 3c is a virtual cross-section image
+                                                             A
+of TSVs and microbumps acquired with
+the 40X-P objective, clearly showing the
+resolution and contrast improvement over
+the image with a standard 40X objective
+(Figure 3b). Furthermore, the voids in
+microbump solders appeared much better
+defined than the image of the voids
+acquired by the standard 40X. The material
+phase separation can be clearly seen on the
+planar view acquired by 40X-P objective
+in Figure 3e, while the same virtual slice
+shows a blurry image on the phase
+separation in Figure 3d.
+                                                             B                                                      C
+We reported a lab-based nanoscale
+tomographic technique to explore the
+applications of imaging semiconductor
+packages and back-end-of-line (BEOL)
+structures [7-8]. About 100 nm features can
+be effectively visualized, but the technique
+                                                                 100 µm
+requires a significant sample preparation.
+Because the non-destructivity is highly
+valuated in failure analysis applications,                   D                                                      E
+we studied the 40X-P performance to
+image BEOL structures of an EMIB packa-
+ge, which are not among typical regions
+of interest with XRM. Figure 4b shows
+more promising resolution and contrast
+performance with the 40X-P objective,
+                                                                 100 µm
+compared with the image performance
+by a standard 40X (Figure 4a). The metal
+                                                           Figure 3 A comparative study of the 40X-P objective to a standard 40X objective on the DRAM package
+lines and small submicron features are                     sample. Two 3D tomographies with 40X objective were acquired at 0.49 µm/voxel. A) step-by-step zooming
+clearly resolved with greater certainty with               in scans with low mangification objectives of 0.4X and 4X, B) a cross-section view of the reconstructed
+                                                           volume acquired with a standard 40X objective, C) the corresponding cross-section with the 40X-P objective,
+the 40X-P objective than a standard 40X.                   D) a planar view of the reconstructed volume acquired with the standard 40X, and E) the corresponding
+                                                           planar view with the 40X-P objective.
+
+
+
+
+ A                                                                                       B
+
+
+
+
+  10 µm                                                                                  10 µm
+
+
+Figure 4 Resolution and contrast performance comparison of the 40X-P objective with a standard 40X objective on the DRAM package sample. The tomography was
+acquired at 0.49 µm/vox resolution. A) a planar virtual slice of the reconstructed volume acquired with a standard 40X objective, B) the corresponding view with the
+40X-P objective.
+
+
+
+
+Breakthrough in Resolution and Scan Speed                                                                                                                                15
+EMIB packaging technique utilizes a
+                                                A                                          B
+small Si bridge to connect multiple dies.
+It is an alternative technique to 2.5D Si
+interposer packaging for its benefits on
+die placement flexibility and free of TSV
+process. An EMIB package was purchased
+through a commercial channel and the
+sample was not trimmed or prepared in
+the imaging work. Figure 5a shows the
+sample photo. A scan with 4X objective
+at 0.73 µm/vox resolution was performed
+to precisely localize a microbump region
+                                                C                                                      D
+for the following 40X scans (Figure 5b).
+Figure 5c-f shows the 3D microscopic
+images acquired at 0.32 µm/voxel
+resolution with both 40X objective lenses.
+The virtual slice of the data acquired with
+the 40X-P objective shows the better                                                                                                          BEOL
+                                                20 µm
+resolution and contrast of the solder voids
+(Figure 5d) than with a standard 40X
+                                                E                                                      F
+objective in Figure 5c. Even the smaller
+BEOL structures were resolved more
+clearly in the image acquired with the
+40X-P objective. The example planar view
+in Figure 5f revealed the surface detail
+of metal traces, indicating the image
+obtained by the 40X-P objective delivers
+                                                20 µm
+better resolution and contrast than the
+standard 40X objective.                       Figure 5 A comparison of the 40X-P objective to a standard 40X objective on the EMIB package sample.
+                                              The images were acquired with both 40X objectives at 0.32 µm/vox resolution. A) photo of the sample,
+                                              B) the image was acquired with 4X at 0.73 µm/vox for localizing 40X scans, C) a cross-section view of the
+To demonstrate that this new 40X-P
+                                              reconstructed volume acquired with a standard 40X objective, D) the corresponding cross-section view with
+detector can be efficiently used in X-ray     the 40X-P objective, E) a planar view of the reconstructed volume acquired with a standard 40X, and
+failure analysis workflow, we utilized the    F) the corresponding cross-section view with the 40X-P objective.
+
+deep learning reconstruction method
+reported previously [4-6] to improve the
+scan throughput while maintain the
+image quality. The standard Feldkamp-           A                                                      B
+Davis-Kress (FDK) reconstruction provides
+accurate and fast reconstruction, but
+it is sensitive to photon starvation and
+resulting images are prone to noise and
+under-sampling artifacts. For example,
+                                                 20 µm
+a typical data acquisition with a 40X
+objective lens requires an overnight scan
+                                              Figure 6 A comparative study of the deep learning reconstruction result to the standard FDK reconstruction.
+with the FDK reconstruction for high          The tomography was acquired at 0.32 µm/vox resolution with the 40X-P objective. A) a virtual slice from a
+image quality. In a 3.5 hour scan with the    3.5 hour scan with the standard FDK reconstruction. B) the same virtual slice from a 3.5 hour scan with the
+                                              deep learning reconstruction method.
+40X-P objective and FDK reconstruction,
+the detail of microbump and BEOL
+structures has not been clearly revealed
+due to high noise level (Figure 6a).
+
+
+
+
+Breakthrough in Resolution and Scan Speed                                                                                                                   16
+By contrast, the 3.5 hour scan with the deep learning             References
+reconstruction clearly shows the improved image quality           [1] L. Mirkarimi, A. Gu, L. Hunter, G. Guevara, M. Huynh, R. Katkar,
+                                                                      “X-ray Microscopy and Root Cause Analysis in Electronic Packaging”,
+with the same scan time (Figure 6b). The result shows that
+                                                                      Proc 41st Int’l Symp for Testing and Failure Analysis, Portland, OR,
+the new 40X-P detector can be efficiently used for failure
+                                                                      Nov. 2015, pp. 430-435. doi: 10.31399/asm.cp.istfa2015p0430
+analysis workflows with unparalleled resolution and contrast.     [2] S. M. Zulkifli, B. Zee, W. Qiu, A. Gu, “High-Res 3D X-ray Microscopy
+                                                                      for Non-Destructive Failure Analysis of Chip-to-Chip Micro-bump
+Conclusion                                                            Interconnects in Stacked Die Packages”, IEEE 24th Int’l Symp on the
+The impacts of innovative packaging technologies have                 Physical and Failure Analysis of Integrated Circuits (IPFA), Chengdu,
+                                                                      China, Jul. 2017. doi:10.1109/IPFA.2017.8060111
+been seen across advanced semiconductor packages. The
+                                                                  [3] A. Gu, J. Auyoong, “3D Measurement Workflow for Packaging
+failure analysis community always carves for more effective
+                                                                      Development and Production Control Using High-Resolution 3D X-ray
+and efficient non-destructive solutions for solving root cause        Microscope”, 2018 IEEE 20th Electronics Packaging Tech Confer (EPTC),
+analysis challenges in these complex packages. We demonstrated        Singapore, Dec. 2018. doi:10.1109/EPTC.2018.8654390
+the breakthrough in resolution and contrast is enabled with       [4] M. Andrew, R. Sanapala, A. Andreyev, H. Bale, C. Hartfield,
+a new scintillator material based X-ray detector in XRM.              “Supercharging X-ray Microscopy Using Advanced Algorithms”,
+                                                                      Microscopy and Analysis, pp17, Nov/Dec 2020
+Because of its superior performance at higher energies over
+                                                                  [5] A. Gu, A. Andreyev, M. Terada, B. Zee, S. M. Zulkifli, Y. Yang,
+the traditional CsI scintillator based detector, it can be used
+                                                                      “Accelerate Your 3D X-ray Failure Analysis by Deep Learning High
+in imaging high-density semiconductor packages. With the              Resolution Reconstruction Paper,” Int’l Symp for Testing and Failure
+deep learning reconstruction workflow, the scan speed                 Analysis, No: istfa2021p0291, pp. 291-295, Phoenix, AZ, Dec 2021
+can be improved while maintaining the unprecedented               [6] A. Gu, M. Terada, H. Stegmann, T. Rodgers, C. Fu and Y. Yang,
+resolution and contrast.                                              “From System to Package to Interconnect: An Artificial Intelligence
+                                                                      Powered 3D X-ray Imaging Solution for Semiconductor Package
+                                                                      Structural Analysis and Correlative Microscopic Failure Analysis,”
+                                                                      IPFA 2022, Singapore
+                                                                  [7] C. Schmidt, S. Kelly, Y. Wang, S.T. Coyle, M. H. Shearer, “Novel sample
+                                                                      preparation and High-Resolution X-ray tomography for Package FA,”
+                                                                      IEEE 24th Int’l Symp on the Physical and Failure Analysis of Integrated
+                                                                      Circuits (IPFA), Chengdu, China, Jul. 2017
+                                                                  [8] C. Schmidt, L. Lechner, I. DeWolf, S. W. Kim, E. Beyne, “Novel failure
+                                                                      analysis techniques for 1.8 μm pitch wafer-to-wafer bonding,”
+                                                                      IEEE 68th Electronic Components and Technology Conference,
+                                                                      San Diego, CA, May 2018.
+
+
+
+
+Breakthrough in Resolution and Scan Speed                                                                                                  17
+Originally Published at ICSJ 2022: Proceedings from 11th IEEE Components, Packaging and
+Manufacturing Technology (CPMT) Symposium Japan (ICSJ)
+
+
+Targeted Sample Preparation and Analysis
+of Advanced Packaging using Correlated
+X-ray Microscopy and LaserFIB
+Vignesh Viswanathan
+Research Microscopy Solutions, Carl Zeiss Pte Ltd, Singapore, Singapore
+Takehide Oda, Etsuo Maeda, Chisato Yamamoto
+Research Microscopy Solutions, Carl Zeiss Co., Ltd., Tokyo, Japan
+Longan Jiao
+Research Microscopy Solutions, Carl Zeiss (Shanghai) Co., Ltd., Shanghai, China
+
+
+
+
+Abstract
+X-ray microscopy and femtosecond (fs) laser integrated                    Subsequent fault isolation using multiple tools and techniques
+FIB-SEM are combined in a workflow to guide precise and                   have become necessary starting with curve tracing, TDR, high
+targeted sample preparation to enable functional testing                  resolution, non-destructive imaging using SAM, X-ray CT, and
+and fault isolation without damaging the package and IC.                  IR imaging followed by physical analysis using mechanical and
+                                                                          focused ion beam (FIB)-based cross-sectioning for visualizing
+Introduction                                                              and characterization of defects, Figure 1. [1]
+Emerging technologies such as AI, 5G, IoT, wearables, cloud,
+computing, and autonomous vehicles hold great promise for                 Once the fault isolation is completed and a failure site has
+improvement and transformation of human lives globally.                   been localized, high-resolution imaging techniques such as
+In today’s More-than-Moore era, advanced packaging has                    3D X-ray microscopy (XRM) can visualize defects and guide
+emerged as a critical enabler for these next generation of                sample preparation for physical analysis to disclose defects for
+electronic devices. System level performance improvements                 root cause investigation [2, 3]. However, the region of interest (ROI)
+through heterogeneous integration has added more functionality            may be several hundreds of microns (µm) or millimeter (mm)
+while improving the cost-performance gaps. Developments in                deep into the package which requires removal of large volume
+various materials, processes, and architectures for 2.5D and 3D           of material with high accuracy in the microns or better range.
+packaging has enabled high density interconnects with shrinking           Conventional techniques such as mechanical cross-section enable
+dimensions and pitch which is essential for continued scaling in          large cross-section preparation but are slow and have limited
+performance and integration of various devices at lower costs.            accuracy. FIB using liquid metal ion source or plasma ion source
+                                                                          is very precise and effective in preparing cross-sections in the
+As the complexity of electronic packages continues to increase,           hundreds of microns cubic volume which would still need long
+so do the challenges in characterization during process develop-          preparation times to access deep structures (hours to days).
+ment and failure analysis (FA). Traditionally, FA workflow in IC          Laser ablation using ultra-fast pulsed lasers have been adopted
+packaging begins with the electrical and functional testing of the        as stand-alone and integrated into FIB systems which allows large
+device followed by incoming optical and 2D X-ray inspection.              volume removal (mm3) at high throughput (minutes to hours) [4-7].
+
+
+
+
+     Electrical and                                                                       High-resolution              Physical
+     functional testing          Inspection            1      Fault isolation             imaging                2     failure analysis
+
+    • ATE                      • Optical                   • Curve tracing             • 3D X-ray CT                 • Mechanical
+    • Reliability tests        • 2D X-ray                  • IR lock-in                • SAM                          cross-section
+    • Functional tests                                       thermography              • High resolution             • FIB-SEM
+
+                                                           • Magnetic current            IR LSM                      • SEM-EDS
+                                                             imaging
+                                                           • TDR/EOTPR
+                                                           • SAM
+
+
+
+
+Targeted Sample Prep and Analysis of Advanced Packaging using Correlated XRM and LaserFIB                                                    18
+For targeting sub-surface and buried features, an XRM-guided                           Methods
+workflow for sample preparation through integrated laserFIBs                           A. Sample Preparation
+has already demonstrated high precision and high throughput                            For the demonstration of this workflow, we extracted a base
+sample preparation in 2.5D packaging and display [8-11].                               band modem IC from the motherboard of a mobile phone,
+Besides large volume removal, the ability to access deeply                             which is a 3D package consisting of one flip-chip die (baseband
+buried structures with high precision can also be used to                              processor) connected to the substrate through solder bumps
+selectively sever electrical wires and connections to simplify                         and another die (memory and/or analog) with wire bonds.
+and isolate complex circuitry during fault isolation.                                  Upon preliminary inspection, no damage to the internal
+                                                                                       structures was observed.
+In advanced packages with high IO and complex interconnect
+structures, localization of tiny defects by electrical curve                           B. Workflow
+tracing, TDR, or lock-in thermography can be challenging.                              In 3D packages, electrical connections going to the different
+Finding these failures in complex packages such as system-                             modules may have complex circuitry that could lead to
+in-package, multi- stack dies and package-on-package                                   challenging fault isolation routines to identify the failure sites.
+devices with several functional components can be quite                                In such 3D packaging, it would require deactivating certain
+time consuming. Deduction by elimination would require                                 features or parts of the circuit to isolate some components
+disconnecting or breaking the electrical connectivity in parts                         and determine failure sites with higher accuracy. The ability
+of the circuitry without affecting any other component which                           to selectively break an interconnect or wire without damaging
+can be a challenge. This would require a precise and selective                         the chip for functional testing can be achieved if they are
+technique to break the interconnects and wires while retaining                         accessible either through the molding compound or through
+all other functionalities of the device.                                               other protective packaging materials as highlighted in Figure 2.
+
+
+In this work, we apply a workflow combining a non-destructive                          The workflow combines two techniques, a high-resolution
+3D X-ray microscopy that guides the sample preparation using                           non-destructive 3D X-ray microscopy and an fs laser integrated
+a FIB integrated with an fs laser with high precision for fault                        FIB-SEM. In this work, we utilize ZEISS 620 Xradia Versa and
+isolation in 3D packages.                                                              ZEISS Crossbeam laser 550 to perform the analysis. Figure 3
+                                                                                       illustrates the process and steps involved. The sample is scanned
+                                                                                       at low resolution to obtain an overview of the entire package
+                                                                                       and interconnect structure to check for defects or anomalies.
+                                                                    fs laser           This information may be available from other fault isolation
+                              Molding compound resin                                   techniques or known data and may be skipped. Once the region
+                   Adhesive
+                                                                   Cut wire
+                                                                              X        of interest (ROI) is identified, this must be referenced to a unique
+                                  Wire bond die                                        feature that is visible and accessible for imaging either by SEM
+                                  Flip chip die
+                                                                                       or optical methods on the surface. Hence, the top surface above
+
+                                     Substrate
+                                                                                       the ROI is marked to add fiducials for easy reference to the
+                                                                                       sub-surface feature. The package is scanned again using the
+                                                                                       X-ray microscope at sufficient resolution to capture both ROI
+Figure 2 Schematic illustrating how wire bond can be cut to isolate functions from
+                                                                                       and the surface fiducials to localize the ROI with respect to
+the top die during functional testing and fault isolation                              the surface fiducials.
+
+
+
+
+           Overview                      Laser-milled                     X-ray scan to                     Laser milling              X-ray
+           X-ray scan                    fiducial markers                 correlate fiducials               to target feature          verification
+                                                                          to ROI                            of interest
+
+
+
+
+    1 mm                              300 µm                              1 mm                           200 µm                   100 µm
+
+
+Figure 3 Sample preparation workflow process using 3D X-ray guided laser milling of interconnects for fault isolation
+
+
+
+
+Targeted Sample Prep and Analysis of Advanced Packaging using Correlated XRM and LaserFIB                                                                    19
+Subsequently, the fs laser is used to
+perform a precise fine cut on the desired
+                                                  A                                                         B
+wire or interconnect to isolate features
+or parts of the circuitry. The sample is
+again checked using the X-ray to
+determine if the precise cutting is
+sufficient or successful for further
+fault isolation.
+                                                  C                                                         D
+In this example we demonstrate that
+the 20 µm wide wire that is 150 µm
+deep can be precisely cut with the laser
+without decapsulating or damaging any
+part of the die and other interconnects           500 µm
+
+or neighboring wires. To improve the
+laser milling accuracy, a calibration step is     E                                                         F
+performed to determine the parameters
+for accurate positioning and laser milling
+depth. Once the calibration is performed,
+thelaser parameters can be replicated
+on additional wires or on other samples
+                                                  100 µm                                                    100 µm
+made of similar materials. The results
+are presented in the next section.
+                                                  G                                                         H
+Results                                                                                                               280 µm                 145 µm
+                                                                 145 µm
+The first experiment is performed to
+determine the optimal milling parameters,
+Figure 4. The second experiment is perfor-
+                                                  100 µm                                                    100 µm
+med targeting a single wire to demonstrate
+precision and replication of the milling
+                                                  I                                                         J
+parameters on other sites, Figure 5.
+The overview X-ray scan is acquired in
+28 minutes at 100kV, 14W and                                        1
+12 µm/voxel. The low-resolution fast                                2
+scan is sufficient to observe the internal                          3
+structure of the devices and layout of                                                                       100 µm
+
+the interconnects and wires. The sample
+is mounted on a carbon stub which allows          K                                                         L
+transfer of the sample between the XRM                                                                                     3     2      1
+and LaserFIB. Subsequently, the sample is                                     1
+transferred to the LaserFIB to generate                                       2
+fiducial markers on the top right. The                                        3
+
+Crossbeam laser 550 operates with a               100 µm                                                    100 µm
+
+separate chamber for laser milling and
+                                                Figure 4 A) Overview X-ray scan of chip showing top molding compound surface and B) internal wires and
+has micron scale accuracy with a registra-
+                                                flip chip bumps. C) SEM image after laser marking of fiducials. D) XRM overview showing position of fiducials
+tion process between the SEM and laser.         highlighted by red circle. E) Higher magnification XRM scan virtual cross-section of the fiducials and F) underlying
+The laser milling is performed at 4W with       wires. G) and H) Distance of the wires and chip from the top surface is measured to be 145 µm and 280 µm
+                                                respectively. I) Top surface (in green) with laser fiducuals is overlayed with wires (in orange) and the position
+a pulse frequency of 10 KHz and milling         of laser milling test patterns 1,2 and 3 with varying doses are shown. J) SEM image after laser milling.
+time is 1 second. The fiducial markers are      K) XRM scan showing virtual cross-section on top of the wire and L) virtual cross-section view of wires cut
+                                                corresponding to the 3.
+20 µm wide and over 1.2 mm x 1.2 mm.
+The sample is scanned again with the
+XRM at higher resolution at 2 µm/voxel
+at 100kV and 14W in 2 hours.
+
+
+
+Targeted Sample Prep and Analysis of Advanced Packaging using Correlated XRM and LaserFIB                                                                        20
+                                                                                                                          Now both the ROI and fiducial markers
+  A                                                            B                                                          are captured. The position of the wires
+                                                                                                                          with respect to the laser milled surface
+                                                                                                                          fiducial markers can be determined by
+                                                                                                                          overlaying the two virtual cross-sections.
+                                                                                                                          The wire is 145 µm below the surface
+ 1 mm                                                          1 mm                                                       and has a diameter of about 20 µm. The
+                                                                                                                          die is 280 µm below the surface giving
+  C                                                            D                                                          a clearance of about 115 µm from the
+                                                                                                                          bottom of the wire. Since the material
+                                                                                                                          information is not known, the laser milling
+                                                                                                                          parameters are to be optimized with a
+                                                                                                                          dose test such that the milling only cuts
+ 300 µm                                                        1 mm                                                       the wire and does not penetrate deeper
+                                                                                                                          to damage the die. A series of rectangles
+  E                                                            F                                                          (labelled 1, 2 and 3) 100 µm x 100 µm is
+                                                                                                                          milled at 4W with a frequency of 10 KHz
+                                                                                                                          and speed of 20 mm/sec while varying
+                                                                                                                          additional parameters to control the
+                                                                                                                          milling depth to determine the optimal
+         1 mm                                                         1 mm                                                conditions for the laser milling. The mil-
+                                                                                                                          ling pattern cuts multiple wires providing
+                                                                                                                          several data points to check for repeatabili-
+  G                                                            H                              149 µm
+                                                                                                                          ty and local variations in the materials due
+                                                                           280 µm
+                              75 µm                                                          170 µm                       to fillers or additional components. The
+                                                                                                                          milling takes less than 20 seconds to com-
+                                                                                                                          plete. The sample is then scanned again
+                                                                                                                          in the XRM at 2 µm/voxel at 100kV and
+  100 µm                                                        100 µm
+                                                                                                                          14W in 2 hours to check the depth of the
+                                                                                                                          laser cuts. It can be observed that the dose
+  I                                                            J
+                                                                                                                          in rectangle 1 is insufficient to cut the wire
+                                                                                                                          reliably while the dose in rectangles 2 and
+                                                                                                                          3 cut the wires and do not damage the
+                                                                                                                          die below. The optimal dose is chosen to
+                                                                                                                          be dose 2.
+      200 µm                                                       200 µm
+
+                                                                                                                          The same workflow is now followed to
+  K                                                            L                                                          target a single wire in another area of the
+                                                                                                                          chip as shown in Figure 5. Previous X-ray
+                                                                                                                          overview scans provide low resolution
+                                                                                                                          position information to laser mill surface
+                                                                                                                          fiducial marks on the lower left corner of
+  100 µm                                                        100 µm                                                    the chip. Laser milling of fiducials follow
+                                                                                                                          earlier recipe and are completed in less
+Figure 5 A) Overview X-ray scan of chip showing top molding compound surface and B) internal wires and
+                                                                                                                          than 1 second. Higher resolution X-ray scan
+flip chip bumps. C) SEM image after laser marking of fiducials. D) XRM overview showing position of fiducials.
+E) Higher magnification XRM scan virtual cross-section of fiducials and F) underlying wires. G) The distance of           at 2 µm/voxel is required to obtain accurate
+wire from neighboring wire and H) distance of wire from top surface and distance of chip from the top is                  positioning of the target wire. The wire is
+measured to be 149 µm and 280 µm respectively. I) top surface (in green) with laser fiducuals is overlayed with
+the wires (in pink) and the position of laser milling is highlighted by the crosshair. J) SEM image after laser milling   about 150 µm from the top surface and
+100 x 100 µm square targeting 150 µm deep wire. K) XRM scan showing virtual side view of cut wire while                   the nearest wire is at a pitch of 75 µm.
+L) maintaining neighboring wire.
+                                                                                                                          The overlay of the X-ray image with the
+                                                                                                                          fiducials and wires are aligned with the
+                                                                                                                          SEM image to provide a precise location
+                                                                                                                          of the wire, Figure 5I.
+
+
+
+Targeted Sample Prep and Analysis of Advanced Packaging using Correlated XRM and LaserFIB                                                                               21
+Now a 100 µm x 100 µm rectangle is positioned precisely and                     Conclusion
+milled with the laser following the earlier recipe. The milling is              A novel correlative workflow using LaserFIB and 3D XRM
+completed within 20 seconds. The final X-ray scan verifies that the             techniques is presented for targeted sample preparation for
+laser cut precisely targets the wire of interest and doesn’t damage             fault isolation in 3D BGA packages consisting of wire bonds
+the neighboring wire or the die below indicating the workflow can               and flip chip devices. The case study presented targets an
+be employed for precise and targeted sample preparation.                        interconnect wire connecting the top die in the 3D package to
+                                                                                isolate part of the circuit / device for functional testing and fault
+Discussion                                                                      isolation. The 620 Versa 3D XRM was used to scan and identify
+In this work, the recipe is repeatable at different locations                   the interconnects and features and correlate with surface fea-
+within the same sample and for similar packages using the same                  tures patterned on the sample using the Crossbeam 550 fs-Laser
+molding compound materials. However, the variations arising                     FIB-SEM for precise targeting and sample preparation. The wire
+due to the presence of filler materials and other additives are not             was cut precisely without damaging neighboring wires or the
+thoroughly studied and would need further optimization. The                     die while retaining most of the package for further testing.
+gaussian profile of the laser beam introduces a side wall taper of              The entire process from feature identification until the wire
+close to 15 degrees which adds requirements on the minimum                      milling and isolation of the circuit is completed in 8 hours
+opening area at the top surface to completely cut the wire and                  highlighting the throughput and precision capabilities of this
+this depends on the depth of the interconnect from the surface.                 streamlined workflow which can open new capabilities in the
+The entire workflow takes 5 hours and can be completed in                       fault isolation and failure analysis of advanced packages.
+6-8 hours including data reconstruction and preparation time in
+between steps. Further functional testing of the chip is required
+to validate the proposed method and is part of the future work.
+
+
+
+Acknowledgement
+The authors would like to acknowledge the support from ZEISS Microscopy Customer Centre Tokyo in providing the microscopes and tools used to
+develop this workflow.
+
+References
+[1] Pacheco, M., Wang, Z., Skoglund, L., Liu, Y., Medina, A., Raman, A., Dias, R., Goyal, D., and Ramanathan, S., “Advanced Fault Isolation and
+     Failure Analysis Techniques for Future Package Technologies.” Intel Technology Journal, 9(4) 2005.
+[2] Sylvester, Y., Hunter, L., Johnson, B. and Estrada, R., “3D X-ray microscopy: A near-SEM non-destructive imaging technology used in the
+     development of 3D IC packaging,” 2013 IEEE International 3D Systems Integration Conference (3DIC), 2013, pp. 1-7.
+[3] Nair Gourikutty S.B, Chow, Y. M., Alton, J., Umralkar, R.B., Bai, H., Chua, K.K., Bhattacharya, S., “Defect Localization in Through-Si-Interposer
+     Based 2.5D ICs,” 2020 IEEE 70th Electronic Components and Technology Conference (ECTC), 2020, pp. 1180-1185.
+[4] Stegmann, H., Dömer, H., Cai, H., Rosenkranz, R. and Zschech, E., “Efficient target preparation by combining laser ablation and FIB milling in a
+     single tool,” 2011 Semiconductor Conference Dresden, 2011, pp. 1-4.
+[5] Randolph, S. J., Filevich, J., Botman, A., Gannon, R., Rue, C., & Straw, M. “In situ femtosecond pulse laser ablation for large volume 3D analysis
+     in scanning electron microscope systems” Journal of Vacuum Science & Technology B, Vol. 36, No. 6 (2018), 06JB01.
+[6] Tuček, M., Blando, R., Váňa, R., Hladík, L. and Oboňa, J. V., “Speeding up large-scale failure analysis of semiconductor devices by laser ablation,”
+     2020 IEEE International Symposium on the Physical and Failure Analysis of Integrated Circuits (IPFA), 2020, pp. 1-3.
+[7] Tordoff, B., Hartfield, C., Holwell, A.J. et al. “The LaserFIB: new application opportunities combining a high-performance FIB-SEM with femtosecond
+     laser processing in an integrated second chamber,” Appl. Microsc. Vol. 50, No. 24 (2020)
+[8] Hartfield, C., Kaestner, M., Mueller, S., Atkinson-Mora, J. and Schullmeyer, I., "A new approach for rapid analysis of buried 2.5/3D package structures",
+     Chip Scale Review Vol. 24, No. 3 (2020) pp. 39-42.
+[9] Kaestner, M., Mueller, S., Gregorich, T., Hartfield, C., Nolan, C., Schulmeyer, I., “Novel workflow for high-resolution imaging of structures in
+     advanced 3D and fan-out packages”, China Semiconductor Technology International Conference (CSTIC) (IEEE, Shanghai, 2019), pp. 1–3.
+[10] Leslie, N., Lai, B., Lee, H., Lee, M., Kang, C.H., Patakova, Z., Zelenka, F., and Varslot, T., “Addressing Failures in Advanced Packaging Through a
+     Correlative Workflow” International Symposium for Testing and Failure Analysis (ISTFA), 2020, pp. 17-19.
+[11] Viswanathan, V., Jiao, L. and Hartfield, C., “Developments in Advanced Packaging Failure Analysis using Correlated X-ray Microscopy and LaserFIB”,
+     2021 IEEE 23rd Electronics Packaging Technology Conference (EPTC), 2021, pp. 80-84.
+
+
+
+
+Targeted Sample Prep and Analysis of Advanced Packaging using Correlated XRM and LaserFIB                                                                 22
+Originally Published at ISTFA 2024: Proceedings from the 50th International Symposium
+for Testing and Failure Analysis Conference
+
+
+Correlative Microscopic Workflow Powered by
+Artificial Intelligence to Accelerate Failure Analysis
+of Next-Generation Semiconductor Packages
+Yu-Jen Chang, Cheng-Hsin Liu, Yi-Sheng Lin, Chen-Chao Wang
+Advanced Semiconductor Engineering
+Nicky Liu, Bessy Chiu, Allen Gu
+ZEISS Microscopy
+
+
+
+
+Abstract                                                                                     Introduction
+Over the past decade, the semiconductor industry has                                         Next generation packaging technologies present significant
+increasingly focused on packaging innovations to improve                                     challenges to the mainstream packaging and failure analysis
+device performance, power efficiency, and reduce                                             techniques. The ability to localize and visualize a defect prior
+manufacturing cost. The recent heterogeneous integration                                     to physical failure analysis (PFA) is no longer straightforward.
+offers an attractive solution in advanced IC packaging because                               FOWLP offers diverse benefits such as increased external I/Os,
+it enables the integration of diverse functional components,                                 integration of thin dies, and improved fine-pitch interconnections.
+such as logic, memory, power modulator, and sensor on a                                      However, challenges have risen in FOWLP failure analysis due
+single package platform. However, the adoption of the                                        to its complex package structure, thin die handling, and dense
+emerging structures, materials, and components in advanced                                   layer-to-layer connectivity. In new heterogeneously-integrated
+packages has challenged existing fault isolation and analysis                                packages, hybrid bonding provides a solution for sub 10 µm
+techniques. One of the major challenges is the limited                                       pitches by using solderless Cu-to-Cu bonds to connect stacked
+accessibility to defects because fault regions are often                                     dies. It generates superior interconnection density, enabling 3D,
+located deep within devices. Without high-accuracy positional                                2.5D packages, and advanced memory cubes. However, hybrid
+information of a defect, physical cross-sectioning and FIB                                   bonding relies on pristine surface quality and precise alignment
+polishing may alter or destroy the evidence of root causes.                                  to ensure bonding quality, strength, and reliability. The failure
+                                                                                             mechanisms and root causes on these two packages and
+A non-destructive microscopic approach is preferred to                                       interconnects are not completely understood.
+map defective sites and surrounding structures. However,
+this method is limited by spatial resolution, especially
+for analyzing novel submicron interconnects such as fine                                                                ASIC                     HBM
+pitch microbumps, redistribution layers (RDLs), and hybrid
+bonds. In this paper, we report an AI powered correlative                                    µ-bump
+microscopic workflow, where non-destructive X-ray imaging,                                   RDL
+                                                                                             C4 bump
+FIB polishing, and high-resolution SEM analyzing techniques
+                                                                                              Substrate
+are combined to solve the accessibility problem. Because
+3D X-ray imaging may take a larger fraction of the time
+span over the entire workflow, a deep-learning based
+reconstruction method was applied to accelerate data                                                                               Si
+acquisition. Several next-generation packages, fan-out                                                                           Metal
+wafer-level package (FOWLP) and hybrid bonds with                                                                    Cu pad                 Cu pad
+                                                                                                                                 Open
+sub 10 µm pitch, were used as the test vehicles to
+demonstrate the workflow performance and efficiency.                                                                             Metal
+
+                                                                                                                                   Si
+
+
+                                                                                             Figure 1 The schematics of the test vehicles: fan-out wafer-level package
+                                                                                             (top) and hybrid bond package (bottom).
+
+
+
+
+Correlative XRM-FIB Microscopy Workflow Powered by AI Accelerates Next-Generation Semiconductor Packages FA                                                              23
+3D X-ray microscopy (XRM) is widely                           Figure 2b shows several FIB cut fiducial                  Figure 2c shows both fiducial marks
+utilized as an effective high-resolution                      marks for subsequent registration. It                     were visualized with the fast X-ray
+and non-destructive imaging and analysis                      took 18 minutes to mill the trapezoid                     projection. The phase-contrast image
+tool in package-level failure analysis.          [1-4]
+                                                              of 20x30 µm opening and 20 µm deep,                       was acquired with 0.26 µm/pixel
+With a recently developed deep learning                       with FIB current of 30 nA at 30 kV.                       resolution at 70 kV for 20 sec exposure
+reconstruction method, X-ray scan                             A 30 µm radius circle was created with                    time. Figure 2d is slightly zoomed-out
+speed can be accelerated by a factor of                       FIB current of 30 nA for 12 minutes.                      image that shows the target µbump
+four.   [5-6]
+                With the assistance of acquired                                                                         near to the fiducial mark. The X-ray
+3D XRM dataset, failure analysts can                          Although a 3D X-ray scan is typically                     propagation phase contrast is the
+navigate through the entire package                           performed in the workflow, here we                        alternative method to the more
+volume to identify the specific regions                       utilized a single X-ray projection image                  popular absorption contrast. In a
+and failures of interest. This makes                          of the thin package for saving scan                       typical phase contrast imaging setup,
+the subsequent cross-sectioning more                          time, because it reveals good enough                      X-ray photons pick up the difference
+effective than the conventional broad                         contrast for registration purpose.                        that exists in X-ray refractive index
+ion beam polishing, where the actual                                                                                    at the air-silicon interfaces.
+location of a defect may be missed
+because no 3D navigational information
+is available. We have demonstrated that                                                     a.
+                                                                                                                   Si
+the integration of laser ablation with
+                                                                                                               Die metal
+focused ion beam (FIB) techniques has
+enabled rapid preparation of site-specific                                                                                   Crack
+cross-sections with extremely high
+precision.[7-8] In this paper, we report
+a three-step PFA process dedicated
+to analyze fine structures and defects                                                                           RDL
+
+in several FOWLP and hybrid bonding
+packages with high accuracy. Firstly,
+a semiconductor package is imaged                              b.                                                       c.
+with high-resolution 3D XRM, and the
+AI-powered reconstruction is used to
+                                                                                                                                          Fiducial mark
+accelerate scan speed. Secondly, X-ray
+images are aligned and correlated with
+SEM images based on FIB cut fiducial
+marks on a package surface. This is
+the main step in the correlative work-
+flow, where these two instruments
+are connected through the shared                               d.                                                       e.
+coordinates of the defect. Finally, the
+                                                                    Target bump
+FIB polished surface is imaged and
+analyzed with FE-SEM.
+
+
+Results
+FOWLP microbumps
+A FOWLP package with the µbump
+inter-connection issue was sent in to test
+the correlative workflow. An electrical                       Figure 2 The case study of FOWLP µbump: a) the schematics of the package structures shows possible
+
+test was performed and initially concluded                    defective microbump. b) FIB cuts of several geometric features (inside the green box) used as fiducial marks.
+                                                              c) 2D X-ray phase contrast image shows the fiducial marks. d) A large field of view X-ray image shows
+that the bad connectivity on a specific
+                                                              both the target bump and fiducial mark. e) ~100 nm bump cracks revealed during the FIB cutting and SEM
+bump may be the root cause of the open                        imaging workflow.
+circuit (Figure 2a). In order to validate the
+observation, the proposed correlative
+workflow was performed.
+
+
+
+Correlative XRM-FIB Microscopy Workflow Powered by AI Accelerates Next-Generation Semiconductor Packages FA                                                              24
+With the highlighted interfaces, the                          For a robustness test of RDLs and
+edges of the FIB-cut fiducial marks can                       underfills, we used the proposed
+be differentiated easily without investing                    correlative workflow to evaluate how
+long time for 3D X-ray scans. In this case,                   underfill cracks may have an impact
+it only took ~200 sec for the phase                           on RDL metal lines underneath.
+contrast imaging. Using the alignment                         Figure 3a-b shows the case study
+software configured within the FIB                            of RDL layers (2x2 µm) in a FOWLP
+system, the exact bump location was                           package. The fiducial mark “ASE”
+identified. We performed a FIB cross-                         was cut by FIB with 30 kV and 30 nA
+sectioning and polishing. Figure 2e                           shown in Figure 3c. It took about 20
+shows ~100 nm bump cracks that would                          minutes for ~20 µm deep feature.
+nothave been detected with X-ray                              The underfill cracks were visualized
+imaging. The CTE mismatch between                             on the same micrograph. A 3D X-ray
+silicon and the PCB was the root cause                        scan with a standard reconstruction
+of the bump crack.                                            at 0.83 µm resolution was followed
+                                                              for 3.6 hour scan time (Figure 3d).
+FOWLP RDL
+RDL plays a critical role in FOWLP                            Cycle time is critical in semiconductor
+packages for redistributing electrical                        package-level failure isolation and                    Figure 4 A comparison of the standard FDK with the
+                                                                                                                     deep learning-based reconstruction. a) the virtual
+signals between dies and external                             analysis. To improve 3D X-ray scan
+                                                                                                                     slice shows the fiducial mark acquired by FDK for
+interconnects. Less than 2x2 µm fine                          throughput which is usually a bottle-                  3.6 hours. b) the same slice acquired for 0.9 hours and
+pitch RDLs in next-generation WLP                             neck of the analysis workflow, we                      reconstructed with the deep learning reconstruction.
+devices may have several challenges                           used the deep-learning based
+for failure analysis because of process                       reconstruction method described
+uniformity, high aspect ratios, and                           in reference. [5-6]
+alignment accuracy.
+
+
+                                                                                                                     The 3.6 hour and 0.9 hour scan results
+ a. UF crack                                                  b. Underfill
+                                                                                                                     were reconstructed by both standard FDK
+                                                                   Fine line
+       Protective metal layer                                                                                        and DeepRecon reconstruction methods,
+                                                                                    RDL broken
+                                                                                                                     respectively for a comparative study.
+       RDL 1-Target                                                Fine line
+                                                                                                                     Figure 4b is an example reconstructed
+                                                                                                              2 µm
+       RDL 2                                                                                                         slice with 0.9 hour scan, showing
+                                                                   Fine line                                         comparable image quality on the fiducial
+       RDL 3                                                                                                  2 µm   mark to the 3.6 hour scan reconstructed
+       RDL 4                                                       Fine line                                         by the standard FDK method (Figure 4a).
+ c.                                                           d.                                                     In both cases, it is clearly visualized of
+                                                                                                                     the FIB-cut symbols “XY” and “ASE”
+                                                                                                                     created for alignment purpose. This
+                                                                                                                     case demonstrated that the new deep-
+                                                                                                                     learning based reconstruction method
+                                                                                                                     was effective to reduce the scan time
+        UF crack
+                                                                                                                     by a factor of four, compared with the
+                                                                                                                     standard FDK reconstruction.
+
+
+Figure 3 The case study of FOWLP RDL: a) the schematics of the package structures shows underfill cracks.
+b) the cross-section shows the RDL broken metal line. c) SEM image shows the FIB-cut fiducial marks “XY” and
+“ASE” and underfill cracks. d) 3D reconstructed slice of the X-ray scan (3.6 hour) shows the alignment features.
+
+
+
+
+Correlative XRM-FIB Microscopy Workflow Powered by AI Accelerates Next-Generation Semiconductor Packages FA                                                                 25
+ a.                                                          b.                                                        Hybrid Bonds
+                                                                                                                       Hybrid bonding in heterogenous
+                                                                                                                       integration and other advanced IC
+                                       XRM image                                                                       packages enables sub 10 µm pitch
+                                                                                                SEM image
+  SEM image                                                                                                            interconnection with high-density
+                                                                                                                       external I/Os. However, there are
+                                                                                                XRM image
+                                                                                                                       several challenges in processing and
+                                                                                                                       failure analysis, such as surface quality,
+                                                                                                                       bonding reliability, and Cu-to-Cu
+ c.                                                          d.                                                        misalignment.
+
+
+                                                                                 Platinum                              Figure 6a shows the diagram of
+                                                                                                                       hybrid bonds (3x3 µm) with possible
+                            Target RDL                                                                                 electrical open failure. The fiducial
+                                                                                                                       marks with the arrow and letter “F”
+                                                                                                                       were milled by FIB with 30 kV and
+                                                                                                                       30 nA shown in Figure 6b. It took
+
+                                                             f.                                                        about 7 mins for each mark. A 3D X-ray
+ e.
+                                                                                                                       scan at 0.5 µm/pixel resolution for 9
+                                                                                                                       hour was followed (Figure 6c). Figure
+                                                                                                                       6d shows that the images from SEM
+                                                                                                                       and X-ray tomography were overlaid
+                                                                                        Target RDL
+                                                                                                                       each other by necessary translations
+                                                                                                                       of the coordinates. Figure 7 shows a
+                                                                                                                       comparative study between these two
+                                                                                                                       reconstruction methods used in the
+Figure 5 The workflow detail of the case study of FOWLP RDL. a-b) the alignment of XRM image with SEM                  hybrid bond package case. The 9 hour
+image. FIB cut geometric features of “XY” and “ASE” used as fiducial marks for registration. c) 3D reconstructed
+                                                                                                                       and 2.25 hour scan results at 0.5 µm/
+slice shows the target RDL. d) Platinum bar deposition. e) FIB cut and SEM image of the abnormal RDL.
+f) 3D X-ray scan validated the target RDL after cross-sectioning.                                                      vox were reconstructed by FDK and
+                                                                                                                       deep-learning reconstruction methods
+                                                                                                                       respectively.
+
+
+Figure 5 is the workflow detail on the                            a.                                                    b.
+                                                                                          Si
+FOWLP RDL case study. Figure 5a-b
+shows that the images of SEM and
+                                                                                        Metal
+X-ray scans were overlaid with one
+                                                                        Cu pad                       Cu pad
+on the top of the other, by necessary                         3 µm                     Open
+coordinates translation. As a result,
+                                                                                        Metal
+the SEM sample stage was moved
+to the target RDL (Figure 5c). After Pt                                                   Si
+deposition (Figure 5d) for tilt angle
+detection, a FIB cut performed,                                   c.                                                    d.
+revealing the abnormal RDL in the                                                                                               SEM image
+green box (Figure 5e). Another
+0.9 hour X-ray scan with deep learning
+reconstruction was followed to verify
+that the targe RDL was actually                                                                                                                 XRM image
+processed with FIB-SEM (Figure 5f).
+
+
+                                                              Figure 6 The case study of hybrid bonds. a) the schematics of the Cu-to-Cu with possible opens.
+                                                              b) SEM image of the FIB cut fiducial marks on surface. c) X-ray image shows the same fiducial marks.
+                                                              d) overlay two images together.
+
+
+
+
+Correlative XRM-FIB Microscopy Workflow Powered by AI Accelerates Next-Generation Semiconductor Packages FA                                                          26
+The virtual cross-sectional slice from FDK                      a.                                                       b.
+9 hour (Figure 7a) and the deep-learning
+2.25 hour (Figure 7b) scans resulted in very
+comparable image quality, clearly visualizing                                   Target
+the FIB-processed alignment marks.
+
+
+Figure 8 is the workflow detail of the
+hybrid bond case study. Once the images
+were aligned properly, the SEM sample
+stage was automatically moved to the                            c.                                                       d.
+target hybrid bond with ease translation                                          Open
+(Figure 8a). Following the Pt deposition
+(Figure 8b), a FIB cut was performed,
+revealing the opening failure on these                                                                                               Target
+two Cu-to-Cu bonds (Figure 8c).
+Figure 9 shows the further magnified
+view on the hybrid bond cracks on
+the right. Another 3D X-ray scan was
+followed (Figure 8d), having validated                        Figure 8 The workflow detail of the hybrid bond case study. a) move the SEM sample stage to the target
+                                                              hybrid bond. b) SEM Pt deposition. c) the SEM micrograph shows the opening defect between the Cu bonds
+that the cut hybrid bonds were indeed
+                                                              on the target interconnectors. d) X-ray image validated that the target hybrid bond was FIB cross-sectioned.
+the bonds of interest. From electrical
+testing to the physical failure analysis
+using the proposed workflow, we
+concluded that the insufficient wafer
+planarization was the root cause of
+bonding failure.
+
+
+
+
+ a.
+
+
+
+
+                                                                                                                                                                   1 µm
+
+
+                                                              Figure 9 SEM image shows the further magnified view on the hybrid bond cracks. The zooming-in area is the
+ b.
+                                                              green box on Figure 8.
+
+
+
+
+                                                              Conclusion
+                                                              We demonstrated a correlative microscopic method and workflow that combine
+                                                              XRM’s non-destructive 3D imaging with FIB-SEM cross-sectioning and imaging
+                                                              capabilities, enabling analysts to precisely locate and prepare defects of interest for
+                                                              nanoscale analyses with FE-SEM. AI-powered reconstruction for 3D data acquisition
+                                                              has shown powerful to significantly reduce the time-to-results of the entire workflow.
+Figure 7 A comparison of the standard FDK with
+the deep learning-based reconstruction method.                Three use cases were studied for the failure analysis of fine-pitch interconnects in
+a) the virtual slice shows the fiducial mark acquired         next-generation IC packages. As new package architectures are trending towards
+by FDK for 9 hour. b) the same slice acquired for
+                                                              3D packaging and heterogenous integration, the reported workflow can be used
+2.25 hour and reconstructed with the deep learning
+reconstruction.                                               for more effective and efficient root cause determination.
+
+
+
+
+Correlative XRM-FIB Microscopy Workflow Powered by AI Accelerates Next-Generation Semiconductor Packages FA                                                                  27
+References
+[1] L. Mirkarimi, A. Gu, L. Hunter, G. Guevara, M. Huynh, R. Katkar, “X-ray Microscopy and Root Cause Analysis in Electronic Packaging”,
+    Proc 41st Int’l Symp for Testing and Failure Analysis, Portland, OR, Nov. 2015, pp. 430-435. doi: 10.31399/asm.cp.istfa2015p0430
+[2] A. Gu, J. Auyoong, “3D Measurement Workflow for Packaging Development and Production Control Using High-Resolution 3D X-ray Microscope”,
+    2018 IEEE 20th Electronics Packaging Tech Confer (EPTC), Singapore, Dec. 2018. doi:10.1109/EPTC.2018.8654390
+[3] S. M. Zulkifli, B. Zee, W. Qiu, A. Gu, “High-Res 3D X-ray Microscopy for Non-Destructive Failure Analysis of Chip-to-Chip Micro-bump Interconnects
+    in Stacked Die Packages”, IEEE 24th Int’l Symp on the Physical and Failure Analysis of Integrated Circuits (IPFA), Chengdu, China, Jul. 2017.
+    doi:10.1109/IPFA.2017.8060111
+[4] S. Li, J. Frame, E. M. Berry, J. Hulog, M. Zhang; A. Gu, M. Terada, D. Taraci, “Detecting Wafer Level Cu Pillar Defects Using Advanced 3D X-ray
+    Microscopy (XRM) with Submicron Resolution”, Int’l Symp. for Testing and Failure Analysis, istfa2023p0432, pp. 432-435;
+    https://doi.org/10.31399/asm.cp.istfa2023p0432
+[5] A. Gu, A. Andreyev, M. Terada, B. Zee, S. M. Zulkifli, Y. Yang, “Accelerate Your 3D X-ray Failure Analysis by Deep Learning High Resolution
+    Reconstruction Paper,” Int’l Symp for Testing and Failure Analysis, No: istfa2021p0291, pp. 291-295, Phoenix, AZ, Dec 2021.
+[6] S. M. Zulkifli, B. Zee, Q. Wen, M. Ong; A. Gu, A. Andreyev, M. Terada, Y. Yang, “An Artificial Intelligence Powered Resolution Recovery
+    Technique and Workflow to Accelerate Package Level Failure Analysis with 3D X-ray Microscopy”, Int’l Symp for Testing and Failure Analysis,
+    istfa2023p0443, pp. 443-447; https://doi.org/10.31399/asm.cp.istfa2023p0443
+[7] A. Gu, M. Terada, H. Stegmann, T. Rodgers, C. Fu and Y. Yang, “From System to Package to Interconnect: An Artificial Intelligence Powered
+    3D X-ray Imaging Solution for Semiconductor Package Structural Analysis and Correlative Microscopic Failure Analysis,” IPFA 2022, Singapore
+[8] T. Rodgers; A. Gu; G. Johnson; M. Terada; N. Cohan; V. Viswanathan; M. W. Phaneuf; J. D. Fourestier; E. Ruttan; S. McCracken; S. Costello;
+    A. M Robinson; A. Gibson; A. Balfour, “A Correlative Microscopic Workflow For Nanoscale Failure Analysis and Characterization of Advan-
+    ced Electronics Packages,” Int’l Symp for Testing and Failure Analysis, istfa2022p0319, pp. 319-323; 5 pages https://doi.org/10.31399/asm.
+    cp.istfa2022p0319
+
+
+
+
+Correlative XRM-FIB Microscopy Workflow Powered by AI Accelerates Next-Generation Semiconductor Packages FA                                         28
+Originally Published at ISTFA 2021: Proceedings from the 47th International Symposium
+for Testing and Failure Analysis Conference
+
+
+Accelerate Your 3D X-ray Failure Analysis by
+Deep Learning High Resolution Reconstruction
+Allen Gu, Andriy Andreyev, Masako Terada
+Carl Zeiss Research Microscopy Solutions, 5300 Central Parkway, Dublin, CA 94568, USA
+Bernice Zee, Syahirah Mohammad-Zulkifli
+Advanced Micro Devices (Singapore) Pte Ltd, Device Analysis Lab 508 Chai Chee Lane, Singapore 469032
+Yanjing Yang
+Carl Zeiss X-ray Microscopy Applications, 50 Kaki Bukit Place, Singapore 415926
+
+
+
+
+Abstract
+Over the past decade, 3D X-ray has played a critical role in           A faster X-ray solution is required to substantially enhance the
+semiconductor package failure analysis (FA), primarily owing to        imaging efficiency so that the user does not have to compromise
+its non-destructive nature and high resolution capability [1,2].       image quality and scan throughput in high resolution imaging.
+As novel complex IC packages soar in recent years [3,4], X-ray
+failure analysis faces increasing challenges in imaging new            Computed tomography (CT) image reconstruction, a necessary
+advanced packages because IC interconnects are more densely            step in any 3D X-ray workflow, converts 2D projection images
+packed in larger platforms. It takes several hours to overnight        to a 3D volume. Most commercial CT systems utilize the
+to image fault regions at high resolution or crucial details of a      traditional FDK algorithm for reconstruction. It can generate
+defect remain undetected. A high-productivity X-ray solution           good quality images in a fast and reliable reconstruction process.
+is required to substantially speed up data acquisition while           In addition, it does not require as high computing power as
+maintaining image quality. In this paper, we propose a new             other reconstruction methods such as iterative reconstruction.
+deep learning high-resolution reconstruction (DLHRR) method,           The FDK method, however, is sensitive to photon starvation
+capable of speeding up data acquisition by at least a factor of        and resulting images are prone to a variety of under-sampling
+four through the implementation of pre-trained neural networks.        artifacts. Consequently, a high number of projections, and/or
+We will demonstrate that DLHRR extracts signals from low-dose          long exposure time per projection are required for reducing
+data more efficiently than the conventional Feldkamp-Davis-Kress       image noise and artifacts. Long scans are necessary for high
+(FDK) method, which is sensitive to noise and prone to the             quality data acquisition. In this work, we will introduce and
+aliasing image artifacts. Several semiconductor packages               evaluate a new deep learning-based reconstruction method
+and a commercial smartwatch battery module will be analyzed            to overcome this hurdle.
+using the proposed technique. Up to 10x scan throughput
+improvement was demonstrated on a commercial IC package.               a
+                                                                                                      Deep Learning
+Without the need of any additional X-ray beam-line hardware,                                      High-Resolution Recon
+                                                                                                        (DLHRR)
+the proposed method can provide a viable and affordable
+solution to turbocharge X-ray failure analysis.
+
+
+Introduction
+                                                                                                   Input   Hidden    ... Layer
+                                                                                                                         Hidden Output
+As the era of transistor scaling driven technology is coming to            Low # of projections
+                                                                                                   Layer   Layer 1             N Layer
+                                                                                                                                         High image quality
+                                                                              or exposure
+an end in the semiconductor industry, packaging innovation             b
+strives to continuously improve the performance and reliability
+of electronics products. The trend of 3D packaging and
+                                                                                                  Conventional FDK Recon
+heterogenous integration has presented increasing challenges
+to existing FA techniques because of more complex multichip
+architectures and more miniaturized interconnects. The 3D X-ray
+workflow is known for enhancing FA success rates by its non-               Low # of projections                                          Low image quality
+                                                                              or exposure
+destructive and high-resolution imaging capabilities. However,
+its applications to advanced packages have become less effective       Figure 1 Schematics of the architecture of the proposed DLHRR method
+                                                                       a) and its performance advantage over the conventional FDK method b).
+due to increasing package complexity and density, together with        With the same low number of projections, DLHRR generates higher quality
+the surging demand for non-destructive X-ray inspection.               images than the conventional FDK method.
+
+
+
+
+3D X-ray FA by Deep Learning High-resolution Reconstruction                                                                                                   29
+Deep Learning High-resolution Reconstruction
+Deep learning based convolutional neural networks have shown          This provides the network with enough training data. Furthermore,
+excellent performance in numerous computer vision tasks such          the training data are augmented during the training process to
+as recognition, segmentation, resolution improvement, and             account for potential variations in sample and data acquisition
+denoising [5-8]. However, the reported methods are not directly       conditions. Overall, the images reconstructed by the DLHRR
+useful to X-ray microscopy, where an actual 3D image has to           method routinely result in better quality than the FDK-reconstructed
+be reconstructed from a set of 2D X-ray projections, in which         images, in which the critical structural information is frequently
+the corrections for source spectrum, photon statistics, sample        lost due to the under-sampling noise and artifacts.
+drifts and X-ray scattering are required to maintain the highest
+image resolution and quality.                                         Results
+                                                                      In our first case study, 3D X-ray data was acquired at 0.7 µm/vox
+The new convolutional neural network method is based on               resolution on a 50x50 mm AMD HBM-µbump 2.5D package
+the “noise2noise” model and approach [9] with the ZEISS               (Fig. 2a). The fault region was µbump joint cracks at the
+proprietary cost function and training data preparation               high-bandwidth memory stack and interposer interface, as
+protocol available under ZEISS DeepRecon Pro. The network             shown in Fig. 2b. It is a 3D color-rendering image. With a typical
+proposed and evaluated in this work (Fig. 1) is more suitable         setting of FDK reconstruction, 1,600 projections were acquired
+for high-resolution image reconstruction, because it addresses        in a 9.6 hour tomography, revealing ~ 1 µm thick bump cracks
+image quality degradation in the scenario of low pixel counts         (Fig. 2c-d). The DLHRR slices in Fig. 2e-f) showed very similar
+or insufficient number of projections [10]. The training input        image quality on the corresponding cracks with only 400
+is a set of low number of projections with high-noise pixels,         projections for a 2.4 hour scan. This case demonstrated that
+and the training target is an image created from a high               DLHRR successfully learned to differentiate signal and noise
+number of projections with low-noise pixels, which serves             from the training data, achieving equivalent image quality
+as the “ground truth” data.                                           without losing the visibility of the small features in a scan
+                                                                      4x faster than FDK.
+The training of the network is done in a manner that it is
+applicable to the desired X-ray microscope data acquisition
+settings and a given sample class. The model will need to be
+                                                                      a                                          b
+retrained if such parameters change. However, the network is
+quite lightweight and can be re-trained within 3 hours on a
+relatively mid-range professional workstation (Dell Precision
+7920) utilizing two professional GPUs totaling 48 GB of video
+RAM. Once the network is trained, it can be applied to all
+the tomographic data that belongs to the same class and the
+reconstruction itself takes less than 5 minutes for a 1000 3 voxels    c       FDK – 9.6 hours                     e    DLHRR – 2.4 hours
+image volume. We intentionally minimized the number of
+parameters to be optimized to just one that controls the noise
+level dictated by the desired total acquisition scan time. It works
+especially well when the imaging task consists of several samples
+or ROIs that need to be imaged in the same or similar manner,
+since every subsequent sample/ROI does not require retraining
+of the network. Given the simplicity of the training process and
+the comparatively short training duration that is of the same
+order of magnitude as iterative reconstruction, we foresee
+that DLHRR will be used on unique samples as well.
+
+
+Since the applicability of the network is narrowed to a strict
+sample class and acquisition conditions, the network can              Figure 2 Comparison of the DLHRR results to FDK on a 50x50 mm AMD HBM-µbump
+be trained on as little as one tomography. There are also no          package. a) sample, b) a 3D color-rendering image at 0.72 µm/vox resolution,
+                                                                      c-d) virtual cross-section slices from the FDK 9.6 hour scan, e-f) virtual slices from
+strict requirements towards the training data, other than the         the DLHRR 2.4 hour scan. c) and e) are the top-down views, and d) and f) are the
+sample needing to be well represented with all characteristic         cross-sectional views.
+
+features in the field-of-view. It is worth noting that even
+a single tomographic acquisition is three dimensional in
+nature, containing hundreds or thousands of 2D images.
+
+
+
+3D X-ray FA by Deep Learning High-resolution Reconstruction                                                                                             30
+In the second case study, X-ray scans were obtained at                                         a                        b
+1.5 µm/vox resolution on a commercial 10x10 mm smartphone
+A8 package. Both FDK and DLHRR reconstruction methods
+were performed for comparison. Since there were no known
+electrical open or short failures in the test sample, we focused
+on solder ball and via voids, a common defect in IC packages.
+Fig. 3a) shows an example slice from the 6 hour scan reconstructed
+by FDK. The image quality is acceptable with this long scan.
+As the X-ray dose decreased by a factor of ten, the traditional                       c        FDK – 4 hours                      d       DLHRR – 1 hour
+FDK method showed its inefficiency to extract signal from the
+0.6 hour scan (data not shown). By contrast, the slice from the
+same short scan but reconstructed by DLHRR maintained the
+high image quality – no image detail was lost (Fig. 3b).
+
+
+a         FDK – 6 hours                  b     DLHRR – 0.6 hours
+
+
+                                                                                     Figure 4 DLHRR results used in the reliability study of a 50x75 mm 2.5D interposer
+                                                                                     package. a) sample, b) a 3D color-rendering image for the defective corner of the
+                                                                                     package, acquired at 0.7 µm/vox, c) a reconstructed slice by the FDK 4 hour scan,
+                                                                                     d) a reconstructed slice by the DLHRR 1 hour scan. The insets in c-d) are the digitally
+                                                                                     zoomed-in images on the cracked bump.
+
+
+
+
+                                                                                     3D X-ray imaging and analysis are important in quality inspection
+Figure 3 A comparison of the virtual slices extracted from a) the FDK 6 hour scan,
+                                                                                     and longevity study of lithium-ion batteries. A high-resolution
+b) the DLHRR 0.6 hour scan at 1.5 µm/voxel resolution on a smartphone A8 package.    interior tomography on a battery sample can take ~24 hours with
+                                                                                     the traditional FDK reconstruction. To test the scan throughput
+                                                                                     improvement by the new DLHRR method, we acquired 3D X-ray
+Analysis time is critical in semiconductor package reliability                       data on a commercial smartwatch battery module, which were
+testing because package structures may alter over the test                           later reconstructed by these two methods for a comparative
+cycles. To understand throughput improvement for 3D X-ray                            study (Fig. 5). The baseline data from the FDK 24 hour scan are
+application in reliability testing, we acquired data on a 2.5D                       shown in Fig. 5a-b). When reducing the number of projections
+interposer package tested by using the JEDEC thermal cycle                           by a factor of four (Fig. 5c), the FDK slice showed a high level of
+standard (Fig. 4a). The 4 hour and 1 hour scan results at                            noise, which shadowed the visibility of the polymer separator,
+0.7 µm/vox were reconstructed by both DLHRR and FDK                                  a key structure relevant to battery performance. The low data
+methods for comparison. Fig.4b is the 3D color-rendering                             quality resulted from under-sampling noise and artifacts in the
+image from the FDK 4 hour scan, showing the defective bumps                          FDK reconstruction, which would make it difficult for subsequent
+at the corner of the package. The virtual cross-sectional slice                      segmentation and quantification. By contrast, the DLHRR slice
+from FDK 4 hour (Fig. 4c) and DLHRR 1 hour (Fig. 4d) scans                           (Fig. 5d) showed clear particle boundary definitions even at
+resulted in very comparable image quality, clearly visualizing                       the reduced scan time at 6 hours. It was found that the contrast-
+~ 2 µm cracks at C4 bumps, the byproduct of the thermal cycle.                       to-noise ratio from the DLHRR 6 hour scan is even higher than
+With the high-level noise in the FDK 1 hour data (not shown),                        the FDK 24 hour scan. This case further demonstrated the
+the crack information may be misinterpreted. This case                               effectiveness of the new DLHRR reconstruction method to
+demonstrated that the DLHRR method was effective to                                  reduce the data acquisition time by a factor of four.
+reduce the scan time by a factor of four, compared with
+the standard FKD reconstruction.
+
+
+
+
+3D X-ray FA by Deep Learning High-resolution Reconstruction                                                                                                              31
+ a                                        b       FDK – 24 hours            a      FDK – 30 minutes                   c DLHRR – 30 minutes
+
+
+
+
+ c        FDK – 6 hours                   d     DLHRR – 6 hours              b                                        d
+
+
+                                                                                  Smeared                                 Enhanced
+                                                                                 metal lines                              metal lines
+                                                      polymer
+                                                     separator
+
+
+Figure 5 A comparative study of the DLHRR results to FDK on a commercial    Figure 6 With the same scan time, the DLHRR results in c-d) show superior image
+smartwatch battery module. The tomography was acquired at 0.53 µm/vox       quality over the FDK results in a-b). The data was acquired on a commercial
+resolution. a) a 3D color-rendering image from the FKDK 24 hour scan,       µbump-TSV DRAM sample at 1 µm/vox resolution. The blue arrow in d) shows an
+b) a virtual slice from the FKD 24 hour scan, c) a virtual slice from the   enhanced contrast-to-noise ratio on the metal lines, which were smeared in the
+FDK 6 hour scan, d) a virtual slice from the DLHRR 6 hour scan.             FDK result. a) and c) are top-down views. b) and d) are cross-sectional views.
+
+
+
+
+So far we have demonstrated that the DLHRR method can be                    3D volume stitching plays an important role in FA fault isolation,
+used for reducing scan time significantly on several cases. It can          intellectual property intelligence and reverse engineering appli-
+also be used for improving image quality in a same scan time                cations. The benefit is to achieve higher resolution for a field of
+setting. 3D X-ray data were acquired at 1 µm/vox resolution on              view (FOV) through multiple-volume stitching, overcoming the
+a commercial 4-High DRAM package (Fig. 6). The sample was                   detector size limitation. However, the total scan time is long
+chosen because it has about 2 µm thin metal lines on the top                because of the multi-volume data acquisition. The DLHRR
+of dies, a good target for image quality assessment. With FDK               method can elevate the scan efficiency without losing image
+reconstruction, 400 projections were acquired in a 30 minute                quality because the time reduction for a single volume scan can
+tomography. The resulting top-down view and cross-sectional                 be applied to other volumes without the need of an additional
+views are showed in Fig. 6 a-b. The metal lines however were                network training. The test sample was the entire accelerator/
+largely smeared due to the high level of noise generated by                 gyroscope package, as indicated by the red box in Fig. 7a, of a
+the traditional reconstruction method in the low X-ray dose                 commercial smartphone mother board. We acquired 3x3 volumes
+tomographic scan (Fig. 6b). The small structure may be                      with 1.6 µm/voxel resolution for each volume. With a typical FDK
+overlooked due to the low image quality. Longer scans are                   reconstruction setting, it took 100 minutes for each volume.
+generally required to retain this small feature. With the DLHRR             The nine volumes took the total of 900 minutes and the stitched
+method, the visibility of the same metal lines was largely                  data are shown in Fig. 7 b-c. With the DLHRR reconstruction
+enhanced (Fig. 6d) even in the short scan data. During the                  method, only 25 minutes per scan was required. As shown in
+network training process, the machine has learned to recognize              Fig. 7e, the 25 minutes scan and DLHRR reconstruction generated
+the small feature and the surrounding noise. Compared with                  excellent image quality. By contrast, the result from a 25 minutes
+the high level of noise in Fig. 6a, the DLHRR results show higher           scan and FDK reconstruction showed a high level of noise and
+contrast-to-noise ratio in the top-down view (Fig. 6c). This case           rich streak artifacts (Fig. 7d), which may cause a failure of stitching.
+demonstrated the effectiveness of the new DLHRR reconstruction              The visibility of the Si structure was overshadowed by the noise.
+method to improve image quality in the same scan time, especially           In this case, the DLHRR method succeeded to reduce the total
+for short scans. As modern advanced packages become more                    scan time to 225 minutes in the data acquisition of all the
+complex, defects and failures are more difficult to image and               stitched volumes, which requires 900 minutes scan with the
+characterize. Highest image quality with shortest scan time                 traditional FDK method. The trained network model based
+is always preferred in 3D X-ray failure analysis workflows to               on the center volume was successfully applied on all other
+enhance the success rate of root cause analyses.                            volumes. We demonstrated that the DLHRR can be used to
+                                                                            improve the image resolution over larger FOVs through more
+                                                                            efficient multiple-volume data acquisition and stitching.
+
+
+
+
+3D X-ray FA by Deep Learning High-resolution Reconstruction                                                                                              32
+ a                                                                                        Conclusion
+                                                                                          The impacts of artificial intelligence technology have been
+                                                                                          seen across most industrial segments and commercial services
+                                                                                          such as transportation, healthcare, education, on-line shopping,
+                                                                                          finance and many more. This technological development provides
+                                                                                          a golden opportunity for the electronics failure analysis society to
+                                                                                          enable capability improvement and revolution. In this report, we
+                                                                                          demonstrated a deep learning based high-resolution reconstruction
+ b                                              c                                         technique which can be used to substantially shorten X-ray failure
+                                                                                          analysis workflows. The throughput improvement by a factor of
+                                                                                          four or ten was demonstrated for several semiconductor package
+                                                                                          examples. Since the network can be trained on as little as one
+                                                                                          tomography dataset, its application range is limited to the sample
+                                                                                          class and acquisition condition specified by that training dataset.
+                                                                                          Network applicability to broad sample classes can be improved
+                                                                                          with further development. It is also possible to extend 3D X-ray
+ d      FDK – 25 minutes                     e DLHRR – 25 minutes                         applications to other high-productivity areas such as fault
+                                                                                          screening and isolation, package construction analysis,
+                                                                                          and even in-line inspection and metrology.
+                                                               Si structures
+
+
+
+Figure 7 DLHRR was used in a test of multiple volumes stitching. a) an accelerator/
+gyroscope package in a commercial smartphone motherboard. b) 3x3 stitched
+volumes. c) a virtual cross-section of the stitched volume from the FDK reconstruction.
+d) a virtual slice from the FDK 25 minute scan. e) a corresponding slice from the
+DLHRR 25 minute scan. Both scans were acquired at 1.6 µm/voxel resolution.
+
+
+Acknowledgements
+We thank Dr. Lars Omlor, Dr. Matthew Andrew, and Dr. Christoph Hilmar Graf vom Hagen, Carl Zeiss X-ray Microscopy, Dublin, CA, USA, for the DLHRR
+algorithm development, and instrumental discussions on its applications.
+
+Reference
+[1] L. Mirkarimi, A. Gu, L. Hunter, G. Guevara, M. Huynh, R. Katkar, “X-ray Microscopy and Root Cause Analysis in Electronic Packaging”,
+     Proc 41st Int’l Symp for Testing and Failure Analysis, Portland, OR, Nov. 2015, pp. 430-435. doi: 10.31399/asm.cp.istfa2015p0430
+[2] S. M. Zulkifli, B. Zee, W. Qiu, A. Gu, “High-Res 3D X-ray Microscopy for Non-Destructive Failure Analysis of Chip-to-Chip Micro-bump Interconnects 		
+     in Stacked Die Packages”, IEEE 24th Int’l Symp on the Physical and Failure Analysis of Integrated Circuits (IPFA), Chengdu, China, Jul. 2017.
+     doi:10.1109/IPFA.2017.8060111
+[3] T. Gregorich, M. Terada, C. Hartfield, A. Gu and J. Vardaman, “Non-destructive Characterization of Application Processor Panel Level Package Used in
+     Galaxy Smartwatch”, 2019 Int’l Wafer Level Packaging Confer., San Jose, CA, Oct. 2019, pp. 1-7. doi: 10.23919/IWLPC.2019.8914126
+[4] A. Gu, J. Auyoong, “3D Measurement Workflow for Packaging Development and Production Control Using High-Resolution 3D X-ray Microscope”,
+     2018 IEEE 20th Electronics Packaging Tech Confer (EPTC), Singapore, Dec. 2018. doi:10.1109/EPTC.2018.8654390
+[5] K. Simonyan and A. Zisserman, “Very Deep Convolutional Networks for Large-Scale Image Recognition”, Int’l Confer. on Learning Representations,
+     2015, arXiv:1409.1556
+[6] V. Badrinarayanan, A. Kendall and R. Cipolla, “SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation”,
+     IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 39, issue 12, 2017
+[7] C. Ledig, L. Theis, F. Huszar, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, A. Tejani, J. Totz, Z. Wang and W, Shi, “Photo-Realistic Single Image
+     Super-resolution Using a Generative Adversarial Network” in Computer Vision and Pattern Recognition, 2017
+[8] K. Zhang, W. Zuo, Y. Chen, D. Meng and L. Zhang, “Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising”,
+     IEEE Transactions on Image Processing, vol. 26, issue, 7, 2017
+[9] J. Lehtinen, J. Munkberg, J. Hasselgren, S. Laine, T. Karras, M. Aittala, and T. Aila, “Noise2Noise: Learning Image Restoration without Clean Data,”
+     35th Int. Conf. Mach. Learn. ICML 2018 7 (2018).
+[10] M. Andrew, R. Sanapala, A. Andreyev, H. Bale, C. Hartfield, “Supercharging X-ray Microscopy Using Advanced Algorithms”,
+     Microscopy and Analysis, pp17, Nov/Dec 2020
+
+
+
+
+                      Follow us on social media:
+
+
+
+
+                      microscopy@zeiss.com
+                      www.zeiss.com/semiconductor-microscopy
+

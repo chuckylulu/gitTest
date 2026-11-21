@@ -1,0 +1,2585 @@
+                                 APRIL 2025 • FEATURED CONTENT
+
+
+
+
+        Do You Have X-ray Vision?
+As a technology, X-ray is ancient (a 19th century invention that revolutionized 20th century medicine)
+but it's finding a new application in the 21st century on the EMS provider’s shop floor. As component
+packaging continues to evolve, inspecting through components is crucial. Has X-ray’s time finally
+come in electronics manufacturing?
+
+                                                           FEATURE COLUMN
+ 8                                                    8    Looking Deep Into
+                                                           the Future of X-ray
+                                                           by Nolan Johnson
+
+                                                     26    Unlocking the Invisible:
+                                                           The Critical Role of
+                                                           X-ray Technology
+                                                           by Mike Konrad
+
+                                           26
+                                                           FEATURE ARTICLE
+                                                     18    Book Excerpt: The Printed
+                                                           Circuit Assembler's Guide
+                                                           to... X-ray Inspection
+                                                           by Bill Cardoso
+                  18
+                                                     36    The Future of
+                                                           Advanced
+                                                           Packaging
+                                                           is X-ray
+                                                           by David Kruiphof
+                                                           and Kevin Jan
+
+                                                     46    DRAM Damage Due to
+                                                           X-ray Inspections
+                                                           Post-PCB Assembly
+46                                                         by Saurabh Gupta, et al
+
+4 SMT007 MAGAZINE I APRIL 2025
+ Technica USA & PARMI USA Partner to Elevate
+Customer Support for Electronics Manufacturing
+     with Cutting-edge Inspection Solutions!
+
+
+
+
+                                                          3D AOI          Laser Line           Fastest Inspection
+                                                                         Scan Method          Speed in the Industry
+
+                                           3D AOI
+
+       PARMI is taking great pride in providing       Real 3d Image   Inspection Irrelevant    Inspection of up to
+leading-edge solutions and adding value to everyday                     to Color, Material,      65mm Height
+   production environment. For any combination of                      Surface Roughness
+  challengeable applications, PARMI's selected and
+ proven performance set us apart as a world leader.
+
+         Available through Technica, USA
+             in assigned territories.
+
+
+
+
+                      1-800-909-8697 • www.technica.com
+                                 APRIL 2025 • ADDITIONAL CONTENT
+
+
+
+
+                                                      COLUMNS
+                                                  10 Artificial Intelligence,
+                                                      Part 5: Brain, Mind,
+                                                      Intelligence
+                                                      by Dr. Jennie Hwang
+
+ 58                                               58 The Growing Role of
+                                                      Additive Manufacturing
+                                                      by Josh Casper
+
+                                                  72 Basics of Component
+                                                      Lead Tinning
+                                                      by Nash Bell
+
+                                           72     76 Redefining Connection
+                                                      and Responsibility in
+       SHORTS                                         Digital Transformation
+ 24    Real Time with... IPC APEX                     by Tom Yang
+       EXPO 2025: Reporting on the
+       Future of X-ray Technology
+       with Bill Cardoso                              ARTICLES
+                                                  64 IPC APEX EXPO 2025 Show Review: The
+ 25    Infographic: The Anatomy                       New Normal Looks Like the Old Normal
+       of an X-ray Machine
+                                                      by Nolan Johnson
+ 42    Hybrid States of Light and Matter May
+       Significantly Enhance OLED Brightness      70 Real Time with... IPC APEX
+                                                      EXPO 2025 Photo Gallery
+ 56    Peter Bigelow: Perseverance Paid Off
+
+                                                      DEPARTMENTS
+       HIGHLIGHTS                                 87 Career Opportunities
+ 44 MilAero007                                    94 Educational Resources
+ 84 Top Ten Editor’s Picks                        95 Advertiser Index & Masthead
+6 SMT007 MAGAZINE I APRIL 2025
+                                  The QUALITY of our solutions is
+                              directly related to the DEDICATION
+                                  of the PEOPLE who make them.
+                                                       ALLOW US TO APPLY OUR PASSION
+                                                       TO YOUR CLEANING CHALLENGES.
+
+
+
+
+ Imagine working with a team of the industry’s most DEDICATED SCIENTISTS and
+cleaning chemistry experts who are PASSIONATE about innovating and creating the
+  most SUSTAINABLE, effective cleaning technologies to meet your unique needs.
+            That’s what you get when SCIENCE and care CONVERGE.
+
+              FIND QUALITY SOLUTIONS AT KYZENANSWERS.COM
+
+
+
+
+                                      KYZEN.COM
+      WO RL DW I D E E N VI R ON M E N TA L LY R ES PON S IBL E C L EA N IN G TEC HN OLOGIES
+      Looking Deep Into the
+        Future With X-ray
+                                           Nolan’s Notes
+                            Feature Column by Nolan Johnson, I-CONNECT007
+
+
+
+
+  We’re talking about catching the vision of         famous comment about the secret to his scoring
+X-ray technology in this issue of SMT007 Mag-        success: “I skate to where the puck will be, not
+azine, and it’s the perfect opportunity to recall    where the puck is.” I liken that to X-ray inspec-
+those back-of-the-comic books “X-ray glasses”        tion, which has been standing here all this time
+we all fell for as kids. Our hopes and dreams of     waiting for the industry to catch up. Has X-ray’s
+seeing through walls were quashed by the real-       time finally come in electronics manufacturing?
+ization that our new specs were merely a rain-          We’ve just returned from IPC APEX EXPO
+bow filter encased in cardboard. Let’s be hon-       2025 in Anaheim; you'll find my impres-
+est with each other, because we’re all in this       sions on the show on page 64. I want to take
+business with a similar mindset: You bought          a moment to reflect on the momentum I see
+some, didn’t you? It’s okay and only natural. It’s   recently with line equipment R&D. New pack-
+what we did with our “Fantastic Four” ambi-          ages are pushing pick-and-place machinery to
+tions and “paper route” finances.                    either handle very large components or very,
+  As a diagnostic tool, X-ray has been around for    very small ones. New high-performance mate-
+over a century, and available to EMS inspection      rials are tweaking the tried-and-true solder-
+for some years. It seems the industry has moved      ing processes. Those large packages are hiding
+far enough forward to fully embrace X-ray on the     all their solder joints underneath the package
+assembly line. I’m reminded of Wayne Gretzky’s       itself. None of this is really new; rather, it’s the
+
+8 SMT007 MAGAZINE I APRIL 2025
+magnitude that’s new, and it’s the magnitude              Columnist Mike Konrad moderates a discus-
+that brings X-ray into focus.                          sion on X-ray applications with Jesper Lykke,
+  To highlight this month's theme, I start with        president and CEO of Viscom, and Robert
+an excerpt from a new book published by                Boguski, CEO of Datest. This roundtable-style
+I-Connect007 by Creative Electron’s Dr. Bill           discussion provides some insight into user per-
+Cardoso, The Printed Circuit Assembler’s Guide         spective on the use of X-ray inspection.
+to… X-ray Inspection. The book starts with some           Our other columnists touch on their areas of
+X-ray history and discusses its practical appli-       expertise as well. Dr. Jennie Hwang continues
+cations for EMS providers. It is free to down-         her series on AI, new columnist Josh Casper
+load here. Also, in this issue, I’ve included an       writes on additive manufacturing, Nash Bell
+interview I had with Bill on the IPC APEX              discusses the basics of proper lead tinning,
+EXPO show floor.                                       and Tom Yang considers “Redefining Connec-
+  To further the topic of X-ray inspection             tion and Responsibility in Digital Transforma-
+applications, you’ll find two technical papers         tion.” While perhaps not exactly on the topic
+on X-ray applications that address what we’re          of X-ray, these columns address adjacent issues
+seeing with X-ray inspection today. While one          that are key drivers of change on our shop
+speaks to X-ray’s role in the future of advanced       floors in their own right.
+packaging, the other talks about DRAM dam-                All this X-ray goodness, however, is built
+age due to X-ray inspections in the post-PCB           into some “big iron” capital equipment. We’re
+assembly process.                                      not wearing this technology on our faces in the
+  With automated optical inspection, X-ray is          form of a pair of X-ray specs—not yet, at least.
+coming into its own. It would seem it's only a         Nevertheless, new challenges in AOI require
+matter of time before artificial intelligence starts   new inspection techniques and the thought-
+to put the AI in AOI, making AOI much faster           ful application of tried-and-true technology in
+and reducing the risk of human error. But each         new ways. So, turn on those comic book X-ray
+application has its own merits. As a reference,        glasses and look deep into the future. SMT007
+one of the award-winning papers at this year’s
+APEX EXPO Technical Conference was by Ben                               Nolan Johnson is managing
+Rachinger about creating a federated database                           editor of SMT007 Magazine.
+                                                                        Nolan brings 30 years of career
+of inspection images that can be shared amongst                         experience focused almost
+multiple EMS companies even while protecting                            entirely on electronics design
+the proprietary information. For those of you                           and manufacturing. To contact
+following AI closely, this paper is a good read.                        Johnson, click here.
+
+
+
+
+                                                                           APRIL 2025 I SMT007 MAGAZINE 9
+Artificial Intelligence Part 5:
+  Brain, Mind, Intelligence
+                                  SMT Perspectives and Prospects
+                          by Dr. Jennie S. Hwang, CEO, H-TECHNOLOGIES GROUP
+
+
+
+
+  Filmmaker James Cameron, who directed                Experts widely agree that early child-
+“The Terminator,” “Avatar,” “Titanic,” and          hood is the most sensitive period for form-
+other award-winning movies, equates gener-          ing strong neural connections and establish-
+ative artificial intelligence (AI) with human       ing foundational neural architecture, making
+dreams. Can we explain dreams’ origins, con-        it the most important period for brain devel-
+tent formation, and links to real events, emo-      opment. Early childhood lays the founda-
+tions, and memories? Are dreams the result          tion for future learning, behavior, and emo-
+of the brain interpreting neural signals dur-       tional well-being. The brain has all the power
+ing sleep?                                          in connections, wiring, storage, memory,
+  Although it is generally understood that          and processing to function as a human being.
+dreams are the confluence of neurological,          The human brain also requires a lot of fuel;
+psychological, and physical processes dur-          it reportedly reaches its peak with approxi-
+ing sleep, can we answer the above questions        mately 100 billion nerve cells or neurons,
+through experiences or science?                     and it takes 20W to power a brain1.
+10 SMT007 MAGAZINE I APRIL 2025
+Discover 7 new ways
+to thrive on change
+Introducing the new MX7™ mounthead technology
+Seven independent mountheads, 14 high-precision motors. And an entirely new level
+of high-speed flexible assembly. With the all-new MX7™ mounthead technology, you
+can place a far wider range of components at up to 48% higher top speeds. The
+fast-beating heart of the new high-speed MYPro A40™ pick-and-place platform, the
+MX7™ opens up entirely new ways to expand your product mix and accelerate your
+throughput. Learn how the next-generation MX7™ can boost your productivity and
+help you thrive on change at pcba.mycronic.com
+                                                   ligence as any device that perceives its envi-
+                                                   ronment and takes actions that maximize its
+                                                   chance of successfully achieving its goals. It
+                                                   also includes a system’s ability to interpret
+                                                   correctly external data, learn from such data,
+                                                   and use what it has learned to achieve specific
+                                                   goals and tasks through flexible adaptation.
+                                                      At its broadest level, intelligence is the abil-
+                                                   ity to achieve a range of goals in different and
+                                                   unpredictable environments. Higher intelli-
+                                                   gent systems can fulfill a wider range of goals
+                                                   in a wider range of predictable and unpre-
+                                                   dictable environments.
+                                                      A marvel of the human brain is that it can
+                                                   deal with the unexpected. Today, we need
+  If transmitting and receiving electrochem-       to advance the understanding of the brain to
+ical signals via neurons are essentially the       advance AI. Meanwhile, AI is fostering brain
+thoughts, emotions, actions, and automatic         research.
+functions of the human body, then the neu-
+rons’ knowledge controls how to use the            Brain Research
+combined power of the conscious and uncon-            AI enables new kinds of research2. The
+scious mind to think in a healthier, more flex-    capacity of modern computer systems to
+ible, resilient, and goal-supporting way. Is       process more data than in the past opens
+thinking linked to electrical signals zooming      immense possibilities. Mathematics makes
+inside our heads, forming a complex code           many kinds of AI possible, such as clus-
+carried by our neurons? Can we say the brain       ter models. One example of this method-
+is the hardware, the mind is the software,         ology is to amass a pool of data that groups
+and the operating system gathers, stores, and      people into different clusters and uses arti-
+manages information by using our brain’s           ficial neuron networks to interpret the elec-
+massive processing resources and capacities        trical signals of hundreds of neurons in the
+as the basis of human intelligence?                brain. The research’s main finding was that
+  What is artificial intelligence, and what is     the actual substance of thought and the pat-
+human intelligence?                                terns that constitute the mind we use to read
+                                                   is dynamic electrical activity in our brains,
+Artificial Intelligence vs.                        rather than something physically anchored
+Human Intelligence                                 to neurons. This is an important finding. It
+  Currently, there is no single established        perhaps points to the immense complexity,
+test that can authoritatively measure artifi-      nuance, and intricacy of brain dynamics—
+cial or human intelligence. Humans gener-          our mind, thoughts, and the mechanism of
+ate data, acquire information, and translate       thinking and reasoning.
+it into knowledge. Cumulative knowledge               While neural networks in the brain are
+builds intelligence. As such, it is plausible to   vastly more complicated, the result of this
+define human intelligence as the capacity to       simulation is a model system that is both
+acquire knowledge and the ability to apply it      close enough to its biological equivalent and
+to achieve desired outcomes.                       simple enough to offer hints about how the
+  Computer science defines artificial intel-       brain works.
+12 SMT007 MAGAZINE I APRIL 2025
+delvi.tech
+AI in Brain Research                               to read mind and brain activity using a self-
+  Brain study and neuroscience continue to         supervised learning model that can extract
+advance. Two notable clinical research tri-        meaning from giant pools of data without
+als are being conducted at Neuralink and AI        human instruction. The goal is to create a
+at Meta labs. Reportedly, a second human           “speech decoder” that can directly transform
+(as of this writing) has received a Neuralink      our brain activity (our thoughts) into words.
+brain implant, which could lead to a poten-
+tial milestone in developing brain-computer        Present and Future
+interface technology. The implant device is           How neurons in our brains communicate
+one-fifth the thickness of a human hair and is     and explore the nature of cognition is still an
+designed to sit on top of the brain and detect     enigma and human intellect is still intriguing.
+neuron spikes by detecting signals from indi-      Take the stock market as an example. One can
+vidual neurons inside the brain—a poten-           use a computerized analysis of market data
+tial advance that could decode higher-qual-        to detect hidden patterns and write AI algo-
+ity brain signals. A brain-computer interface,     rithms to pick stocks3. However, at present,
+such as a brain implant, allows humans to          no AI model can consistently and reliably pre-
+have direct control of a computer or external      dict the stock market. This, in part, is a result
+device solely using human thoughts. It is a        of the stock market data being “noisier” than
+set of tiny electrodes (e.g., platinum) embed-     language and other data, making it harder to
+ded in a thin film that conforms to the sur-       explain or predict how the market moves4.
+face of the brain. Each electrode listens to the      In his book The Transcendent Brain: Spir-
+electrical activity underneath the brain and       ituality in the Age of Science, author Alan
+takes an electrical video in real-time of the      Lightman writes, “Some human experiences
+thoughts taking place on the brain’s surface       are simply not reducible to zeros and ones.”
+to record, amplify, digitize, and then trans-      This reflects the current and future chal-
+mit them using AI to compute the vast num-         lenges of AI to reach the capacity and capa-
+ber of signals in real-time to aid studies.        bility of the human brain, dubbed Artificial
+  Separately, the Meta AI lab studies how          General Intelligence (AGI).
+
+
+
+
+14 SMT007 MAGAZINE I APRIL 2025
+                                                               alphacircuit.com
+
+
+
+
+  Future-Ready Solutions: Meeting All
+of Your PCB Needs Today and Tomorrow
+      
+   
+        
+    
+       
+   
+
+                                              OUR CAPABILITES        OUR PRODUCTS
+  Is the concept of and the technology                       Dr. Jennie S. Hwang, an international busi-
+behind the large language models (LLMs)                   nesswoman, speaker, and business and technol-
+that mimic the way humans think, act, read,               ogy advisor, is a pioneer and long-standing leader
+                                                          in SMT manufacturing since its inception, and in
+write, and reason a promising path to achieve
+                                                          developing and implementing lead-free electronics
+AGI and beyond?                                           technology and manufacturing.
+  Can we turn the human brain into a machine                 She has served as chair of Artificial Intelligence-
+or, when can we turn the human brain into a               Justified Confidence for DoD Command and Con-
+machine?                                                  trol study, chair of AI Committee of the National
+  This is an opportune moment to quote                    Academies, and Review Panels of NSF National
+Albert Einstein, who noted, “Computers are                AI Institutes and Committee of Strategic Think-
+                                                          ing for Engineering Research. An International Hall
+incredibly fast, accurate, and stupid. Humans             of Famer (Women in Technology), she has been
+are incredibly slow, inaccurate, and brilliant.           inducted into the National Academy of Engineer-
+Together, they are powerful beyond imag-                  ing, named an R&D-Stars-to-Watch, and received
+ination.” He was correct then, and he’s still             the YWCA Achievement Award. She has held
+correct today. SMT007                                     senior executive positions with Lockheed Mar-
+                                                          tin Corp., and was CEO of International Electronic
+References                                                Materials Corp. She is currently CEO of H-Technol-
+   1. “The blood-brain barrier: an engineering per-       ogies Group, providing business, technology, and
+spective,” by A.D. Wong, Frontiers of Neuroengi-          manufacturing solutions.
+neering 6, e7, 2013.                                         She has served as chair of the Laboratory
+   2. “A new era in cognitive neuroscience: the           Assessment Board, the DoD Army Research Lab-
+tidal wave of artificial intelligence (AI),” by Z. Chen   oratory Assessment Board, and the Assessment
+and A. Yadollahpour, BMC Neurosci 25, 23 (2024).          Board of Army Engineering Centers. She is on the
+   3. The Man Who Solved the Market: How Jim              board of Fortune-500 NYSE companies and civic
+Simons Launched the Quant Revolution, by Greg-            and university boards, Commerce Department’s
+ory Zucherman, Portfolio, 2023.                           Export Council, National Materials and Manufac-
+   4. “AI Can Write a Song, but It Can’t Beat the         turing Board, NIST Assessment Board, various
+Market,” Wall Street Journal, April 12, 2023.             national panels/committees, and international lead-
+                                                          ership positions.
+Appearances                                                  She is the author of 10 books (four as co-author)
+                    Dr. Jennie Hwang will present         and 750+ technical/editorial publications. She is a
+                    two webinar courses for IPC:          speaker and author on trade, business, and educa-
+                    “Reliability of Electronics—Sol-      tion issues. Her formal education includes four aca-
+                    der Joint Voids—All You Should        demic degrees (Ph.D., M.S., M.A., B.S.), as well as
+                    Know” May 13 and 15; and “Arti-       Harvard Business School Executive Program and
+                    ficial Intelligence—A Primer and      Columbia University Corporate Governance Pro-
+                    Essentials,” June 17 and 19.          gram. To read previous columns, click here.
+
+
+
+
+16 SMT007 MAGAZINE I APRIL 2025
+     GIVE
+ YOUR TRAINING
+                 THE
+
+
+
+Create a Foundation for Your Organizations
+				          Electronics Training Programs
+All IPC member companies can access training modules on electrostatic discharge
+(ESD), safety, and foreign object debris (FOD) in electronics manufacturing. Save
+costs with free access and standardize training across all locations.
+
+      Available in English, Spanish, French and German
+
+                   IPC MEMBERS SAVE $165 PER TRAINEE
+
+
+
+
+        ESD                          SAFETY                   FOD
+
+             Explore essential courses and
+             gain your competitive EDGE at
+             edu.ipc.org/membercourses today!
+   Book Excerpt: The Printed Circuit
+Assembler’s Guide to... X-ray Inspection
+by Bill Cardoso,
+CREATIVE ELECTRON
+
+“If the hand is held between the discharge          Introduction: A Brief History of X-rays
+tube and the screen, the darker shadow of the          It was the late part of the 19th century, and
+                                                    scientists around the world were fascinated
+bones is seen within the slightly dark shadow-      by a new device called the Crookes tube
+image of the hand itself... For brevity’s sake, I   (Figure 2). First shown to the world in 1878
+shall use the expression ‘rays’; to distinguish     by English scientist Sir William Crookes, the
+                                                    device’s mysterious properties intrigued the
+them from others of this name, I shall call         best minds. One of these scientists was J.J.
+them ‘X-rays.’”                                     Thompson, who, in 1897, figured out that the
+—Wilhelm Conrad Roentgen, Munich, 1895              cathode rays inside the tube were negatively
+                                                    charged, which led to the discovery of the
+                                                    electron. He also figured out that a magnetic
+                                                    field could steer this stream of electrons, and
+                                                    with that, he paved the way for the invention
+                                                    of the television.
+                                                       As you can tell, a lot happened in the 1890s.
+                                                    For the context of this book, we’ll focus on
+                                                    another scientist playing with Crookes tubes
+                                                    near Munich, Germany. Wilhelm Roentgen
+                                                    was curious why a fluorescent screen on the
+                                                    other side of his lab was glowing when the
+                                                    tube was on. He shielded the tube, and the
+                                                    glowing kept happening. He also noticed that
+                                                    the photographic paper in his lab was devel-
+                                                    oped with weird shadows. His “Eureka!”
+                                                    moment was realizing that his Crookes
+                                                    tube was generating new rays that could go
+                                                    through matter. Not knowing what to call it,
+                                                    he called it “X”—as in the unknown variable
+                                                    of an equation. And that’s how “X-rays” were
+                                                    discovered.
+           Figure 1: Photograph of X-ray               He promptly volunteered his wife to place
+         image of Anna Ludwig, the wife of
+                                                    her hand between the tube and some photo-
+          Wilhelm Roentgen, showing her
+           hand. (Source: Gary Korkala)             graphic film, and the first X-ray was created
+                                                    (as seen in Figure 1). To Roentgen’s credit,
+                                                    he decided not to patent his findings. He
+                                                    recognized that X-rays were such an impor-
+18 SMT007 MAGAZINE I APRIL 2025
+                                                           the German scientist who gave up
+                                                           a fortune to help society benefit
+                                                           from his invention. Soon after that,
+                                                           Nobel directed his will to estab-
+                                                           lish and fund the Nobel prize. Who
+                                                           was the first recipient of the Nobel
+                                                           Prize? Yes, Wilhelm Roentgen.
+
+                                                           The Modern X-ray Machine
+                                                             Since Roentgen’s discovery in
+                                                          1895, X-ray machines have been
+                                                          used in various applications, from
+                                                          the inspection of seeds to car
+                                                          chassis—and everything else in
+                                                          between. To cover even a frac-
+                                                          tion of these applications would
+                                                          fill several books, so we’ll focus on
+                                                          the X-ray inspection of electronic
+                                                          assemblies. We designed this book
+                                                          to follow the same process we use
+                                             Figure 2     when designing an X-ray machine.
+                                                          The first step is to define the X-ray
+tant discovery that society should be able to imaging train needed, namely the proper
+take advantage of it as soon and as freely as X-ray source and sensor. The second step is to
+possible. And he was right. As early as 1896 determine how the sample will move in and
+(a year after the discovery of the X-rays in out of the machine and how the sample will
+Munich), physicians at Dartmouth College move inside the machine. Lastly, we need to
+in New Hampshire were taking X-rays of decide who (or what) will make pass-and-fail
+their patients. That’s an astounding adoption decisions based on the tests performed on
+time for a new technology! Consider this the X-ray images.
+took place before emails, fax machines, TV,
+or even radio! Remember that those Crookes Imaging
+tubes were in dozens of laboratories world-       The first step in defining the best X-ray
+wide, so when word went out that they cre- inspection system for your application is to
+ated these weird invisible rays that pene- determine whether the machine will pro-
+trated objects—well, you can imagine every- duce images that will reveal the defects in
+one wanted to see it for themselves.            your samples. The following two steps in this
+  Another prominent figure of the 19th cen- process (motion and decision) are irrelevant
+tury was Alfred Nobel (Figure 3). His claim if you can’t see what you need to see.
+to fame is less humanitarian: He invented         The question we are often asked is, “How
+dynamite in 1867. The invention was initially do I get a good X-ray image?” We thought this
+used for construction projects but quickly was an excellent question to help us guide
+became used in military applications. Nobel this book. Once you understand the princi-
+made a lot of money with his patents related ples of X-ray inspection—which you’ll need
+to exploding things. Not particularly happy to do so you know how to get a good X-ray
+with his legacy, in 1895, he learned about image—the applications of the technology
+
+20 SMT007 MAGAZINE I APRIL 2025
+THE                     NEXT
+ EVOLUTION
+OF SOLDER
+
+
+
+
+                                                              Indium12.9HF
+
+Excellent drop shock                    Enhanced thermal       High transfer efficiency
+reliability in low-temp                 cycling performance    and exceptional SPI yield
+applications and TCT
+                                        Superior voiding       High oxidation resistance
+15% energy savings
+     *                                  performance            to eliminate graping in
+*Dependent on process
+                                                               air reflow
+                                        Reflow temperature
+Reflow temperature
+                                        235–250°C              Low BGA, CSP, LGA,
+200–240°C
+                                                               and QFN voiding
+
+
+
+
+            indium.com
+
+             ©2025 Indium Corporation
+will be seamless. Once you appreciate the        feed the samples into the machine by hand,
+difference between the voltage and the cur-      to fully automated systems with conveyor-
+rent in the X-ray tube and how these param-      ized feeding mechanisms, the range of auto-
+eters impact the focal spot size in the tar-     mation solutions is as vast as the applications
+get, you’ll be able to assess which X-ray tube   they solve. The main drive to determine the
+your application requires based on the den-      type of automation your application requires
+sity and size of your sample. The same analy-    is the number of boards you must inspect
+sis is extended to the X-ray sensor, where the   daily. Manual X-ray machines can process
+exposure time, type of scintillator material,    dozens or hundreds of boards, while auto-
+type of sensor, and pixel size are some of the   mated systems are deployed when hundreds
+many parameters you’ll need to consider to       to thousands of boards are checked daily.
+properly select which imaging train will pro-    Robots are also being utilized in semi- and
+duce the best image.                             fully automated X-ray systems.
+
+Motion                                           Decision
+  Upon the determination that you have             The last step determines how the data will
+the proper imaging train—X-ray sensor and        be processed. This is the last step of the pro-
+source—to image your samples, it’s time to       cess after you have captured good images
+understand how your samples will enter,          and are collecting data as fast as you need
+move, and exit the machine. The mechan-          and from all the places on the board you’re
+ics involved in the motion of your samples       interested in inspecting. Now that you have
+significantly impact the design of the X-ray     all these data, how are you transforming it
+system. From manual systems where you’ll         into information? Remember, information
+
+
+
+
+                                                                                    Figure 3
+
+
+22 SMT007 MAGAZINE I APRIL 2025
+ We offer industry leading flex design services, premier in-house
+  manufacturing of flexible circuits, rigid flex, flexible heaters,
+   membrane switches, plastic moldings and EMS services!
+
+Global Experts in Flex Design                   High Reliability & Advanced
+Our engineering team has decades                Manufacturing
+of flex design experience providing             Combining design services, bare flex,
+innovative solutions for 1000’s of              and FPCA in-house, we are experts at
+compact and high-performance                    high-density interconnects and
+devices.                                        high-reliability manufacturing.
+
+
+State-of-the-Art Facilities                     Comprehensive Services
+MES controlled plant featuring                  From design and prototyping to full
+automation and new high-speed                   assembly and product box builds,
+SMT lines; offering Flip Chip, Wire             FCT minimizes your supplier and
+Bond, and Die Bond Assembly with                logistics lists.
+full traceability.
+
+                         LET’S GET STARTED!
+ We partner with you by providing precision engineering, quality production, and
+     cost-effective solutions that will bring your products to market faster!
+
+  sales@flexiblecircuit.com           763.545.3333       www.flexiblecircuit.com
+is data you can act on. Data you can’t act on          Before that, X-ray machine manufacturers
+have another name: noise. You’ll need fully            followed Steps 1, 2, and 3 (imaging, motion,
+automated decision-making software (based              and decision) to design a solution for an
+on computer vision or artificial intelligence)         electronic manufacturing supplier (EMS)
+if you’re deploying a fully automated sys-             or contract manufacturing company (CM).
+tem producing vast amounts of                                    The invention of the BGA kicked
+data per second. At the other end                                off the bottom terminated com-
+of the spectrum is a system that                                 ponent (BTC) revolution, which
+delivers data much slower than                                   triggered a convergence in the
+a manual system. In this case, it                                design of X-ray machines. The
+is possible to have the operator                                 myriad BTC designs simplified
+make the pass/fail determination                                 and unified the problems X-ray
+(upon proper training).                                          machines would reveal. In turn, it
+   The X-ray machine industry                                    allowed the convergence of soft-
+drastically changed when the                                     ware and hardware to find these
+ball grid array (BGA) package                                    defects.
+was invented in the early 1980s.                                  Continue reading this book here.
+
+
+
+     Reporting on the Future of X-ray Technology
+
+
+
+
+     Bill Cardoso, CEO of Creative Electron, talks about the changing landscape of X-ray technology.
+   He says the rise of miniaturization and complexity in assemblies, along with the introduction of fully
+   automated 3D X-ray machines to meet U.S. demand are driving the technology. Bill predicts a future
+                   where X-ray technology becomes more affordable and widespread.
+
+24 SMT007 MAGAZINE I APRIL 2025
+      Unlocking the Invisible:
+The Critical Role of X-ray Technology
+                                      The Knowledge Base
+                                  Feature Column by Mike Konrad, SMTA
+
+
+   From detecting voids under BGAs to sol-           of X-ray systems and what manufacturers can
+der defects in high-reliability applications,        expect in terms of capabilities and usability.
+X-ray inspection has become an indispens-              On the other side is Robert Boguski, CEO
+able tool in modern manufacturing. But how           of Datest, a user of X-ray technology, operat-
+is the technology evolving? What challenges          ing a contract testing company that relies on
+do experts face in deploying X-ray inspection        this equipment daily to ensure product reli-
+effectively and what does the future hold for        ability. Their perspective highlights the prac-
+this critical quality assurance method?              tical challenges and benefits of implementing
+   To answer these questions, I spoke with           X-ray inspection in real-world production
+two experts in the X-ray industry, each              environments, from detecting hidden solder-
+bringing a unique perspective to the con-            ing defects to meeting industry standards for
+versation. Jesper Lykke is the president and         quality assurance.
+CEO of Viscom, a manufacturer of X-ray                 Together, these two viewpoints offer a
+equipment, specializing in developing cut-           comprehensive look at X-ray technology’s
+ting-edge inspection technology. Jesper pro-         current state and how it is evolving to meet
+vides insight into how hardware and software         the increasing demands of the electronics
+innovations are shaping the next generation          manufacturing industry.
+
+26 SMT007 MAGAZINE I APRIL 2025
+Questions for an X-ray Equipment                     • What type of defect/process control does
+Manufacturer:                                          the system need to handle?
+What are the most significant advancements           • How many boards need to be inspected daily?
+in X-ray inspection technology in recent             • What are the space constraints on the pro-
+years, and how have they improved defect               duction floor?
+detection in circuit assemblies?                     • Is this for a new line setup or integration
+Jesper Lykke: X-ray technology hasn’t changed          into an existing line?
+significantly, but the software that processes       • What are the customer’s specific process
+the images has advanced considerably. With             requirements?
+AI-driven defect detection, identifying flaws,
+even those traditionally hard to spot, has            By gathering this information, we can
+become much easier. AI can filter out noise,        effectively guide the customer toward the
+assess the area based on experience, and indi-      best solution for their needs. This is not a
+cate whether a potential defect is present. This    quick, five-minute conversation. Our goal is
+allows operators to focus primarily on the          to provide comprehensive support, ensur-
+most challenging defects, while AI efficiently      ing we fully understand the customer’s needs
+handles routine detections. It’s a win-win:         and expectations.
+Operators are not overwhelmed by excessive
+defect calls, and the company can maintain          Can you explain the key differences between
+high product quality with greater ease.             2D, 3D, and CT X-ray imaging, and in what
+                                                    scenarios each technology provides the
+How do you guide electronics manufacturers          greatest value?
+in selecting the right X-ray system for their       Lykke: The key difference lies in the level of
+specific inspection needs, such as quality          detail: 2D provides fewer details, while CT
+control, failure analysis, or process monitoring?   offers the most comprehensive view. This all
+Lykke: Through conversations, we aim                depends on the number of images captured
+to understand exactly what the customer             for each area of interest; the more images, the
+expects from the machine. This involves ask-        clearer the solder joints or defects will appear.
+ing numerous practical questions, such as:          However, this comes with a tradeoff: CT takes
+  • Will the system be used inline or offline?      longer than 2D. Choosing the right method is
+  • What inspection speed is required?              about balancing speed and inspection goals.
+                                                    For manual or semi-automated X-ray inspec-
+                                                    tion in a lab environment, maximizing detail
+                                                    is often the priority since time is less critical.
+                                                    Conversely, for inline X-ray inspection, speed
+                                                    is essential, making 2D or 3D more suitable.
+
+                                                    What role does automation and AI-driven
+                                                    analysis play in modern X-ray inspection sys-
+                                                    tems, and how does it impact efficiency and
+                                                    accuracy in defect detection?
+                                                    Lykke: This role is significant. As mentioned
+                                                    earlier, AI greatly simplifies defect detec-
+                                                    tion, requiring far less effort while improving
+   Jesper Lykke                                     accuracy. Refer to the explanation above for
+                                                    more details.
+28 SMT007 MAGAZINE I APRIL 2025
+With miniaturization and ultra-high-density
+interconnects (UHDI) becoming more com-
+mon, how is X-ray technology evolving to
+keep up with these challenges?
+Lykke: There are several ways to approach
+this, or even a combination of methods. One
+option is using higher-resolution X-ray tech-
+nology, now capable of sub-1 micron focus
+spots, which generally improves the detec-
+tion of smaller objects and defects. Addition-
+ally, AI plays a crucial role here for the same
+reasons mentioned earlier, enhancing detec-
+tion accuracy with minimal effort.
+  Product design also impacts inspection
+results. Ideally, designing the product with-
+out heavy metal objects directly opposite fine-
+pitch components can improve visibility. How-         Misconception: More images always mean
+ever, this is rarely feasible since boards are typ-   better inspection.
+ically designed with specific requirements in         Reality: Capturing excessive images can
+mind. In challenging cases, achieving sufficient      improve detail but may drastically slow the
+visibility may require higher tube power, which       process. The key is finding the right balance
+can risk washing out fine defects.                    between resolution, speed, and data volume,
+                                                      especially for inline inspection.
+What are the most common misconceptions
+about X-ray inspection in electronics man-            Misconception: X-ray inspection is only for
+ufacturing, and how do you address them               complex boards.
+when working with customers?                          Reality: While essential for complex PCBs
+Lykke: Misconception: X-ray can detect every          with hidden joints (e.g., BGA, QFN), X-ray
+defect perfectly.                                     can also improve quality control on simpler
+Reality: While X-ray is highly effective, it’s not    boards by detecting solder voids, bridges, or
+foolproof. Certain defects, especially those          alignment issues.
+involving subtle material inconsistencies or
+minimal density differences, can be challeng-         Misconception: X-ray inspection is too slow
+ing to detect. AI-enhanced image processing           for inline production.
+significantly improves detection rates but is         Reality: Modern inline X-ray systems are
+still dependent on image quality and inspec-          designed for high-speed inspection, especially
+tion parameters.                                      with AI algorithms that reduce processing
+                                                      time by quickly identifying areas of concern.
+Misconception: Higher tube power always
+means better results.                                 Misconception: All X-ray systems provide
+Reality: Increasing tube power may improve            the same results.
+penetration but can also wash out fine details        Reality: Different X-ray technologies, 2D,
+as mentioned above, particularly in delicate          3D, and CT vary in detail, speed, and suit-
+components or small solder joints. Proper             ability for certain applications as described
+calibration and balancing resolution with             above. Choosing the right method is crucial
+power are critical.                                   for achieving optimal results.
+
+                                                                        APRIL 2025 I SMT007 MAGAZINE 29
+Questions for a Contract Testing Company:           Boguski: Never take the customer’s descrip-
+As a contract inspection provider, what are the     tion of the problem at face value. Frequently
+most common reasons customers turn to X-ray         we find problems on the board, but in a dif-
+inspection services for their circuit assemblies?   ferent location than the customer initially
+Robert Boguski: The reasons would include           suspects.
+precise defect detection at higher resolution         I recommend that you look at the entire
+and magnification (we have a more powerful          board. Don’t focus solely on the custom-
+X-ray system than the customer, and they are        er’s area of interest. Ask the customer at the
+skeptical about results from their own sys-         beginning of the engagement whether our
+tem); that X-ray sees what other inspection         finding nothing wrong would be a good thing
+methods don’t (obvious example: under-              or a bad thing. Their answer tells a lot.
+neath BGAs); and failure analysis, meaning            Give the customer realistic expectations
+that I know a problem exists, because there         of the probability of finding the suspected
+is an electrical failure, but thus far I haven’t    defect. The more realistic the front-end set-
+been able to verify/validate the root cause.        ting, the calmer the relationship. If you man-
+Other reasons include a need for second             age the time and expectations at the begin-
+opinion, lack of X-ray capability at their own      ning, there are typically fewer surprises and
+facility, and customer feedback, usually in         recriminations at the end.
+the form of rejections and/or field failures.
+   Sometimes, the equipment or process              Can you share an example of a particularly
+isn’t working. It’s 4 p.m. Friday at the end        challenging inspection case where X-ray
+of the quarter, and money is riding on the          technology provided critical insights that
+problem being resolved. It feels like we’re         other inspection methods could not?
+all going to die.                                   Boguski: We recently did several projects for
+                                                    a medical startup, in which we were asked to
+What best practices do you follow to ensure         X-ray and CT scan human blood vessels for
+consistency and accuracy when inspecting            signs of calcified plaque buildup. The images
+a wide variety of assemblies from different         were used in clinical trials of a medical prod-
+manufacturers?                                      uct. We had to design a process to reliably
+                                                    handle human tissue, especially to hold it
+                                                    steady during the imaging process (vibra-
+                                                    tion distorts images). It took several months
+                                                    of trial-and-error engineering to achieve a
+                                                    repeatable, reliable process, but in the end,
+                                                    we did it, and the customer was happy.
+
+                                                    How do you work with customers to interpret
+                                                    X-ray findings and help them resolve potential
+                                                    manufacturing defects or quality/reliability
+                                                    concerns?
+                                                    Boguski: With a customer new to our service,
+                                                    the best way is to review the images of the
+                                                    first job with them, explaining to the unini-
+                                                    tiated in X-ray technology exactly what they
+   Rob Boguski                                      are seeing, and why what they are seeing
+                                                    either is or isn’t a legitimate defect. This can
+30 SMT007 MAGAZINE I APRIL 2025
+    Dispensing • Coating
+Plasma Cleaning • Soldering
+
+
+
+
+  {��} Global service and support
+
+   0 Low cost of ownership
+     a   Industry 4.0 ready
+
+
+
+      l',i;;ison
+         Electronics Solutions
+
+
+         www.nordson.com/electronics
+be done either in person or on a virtual call.   us to go directly to CT scanning). We usu-
+Knowledge is power, and we believe in trans-     ally take this conservative approach because
+mitting knowledge. An informed customer          it saves the customer money and arrives at
+tends to be a satisfied customer, in our expe-   the objective in a quicker and more system-
+rience. Satisfied customers tend to return       atic way. Customers typically are not put out
+and tell others about us.                        when we save them money.
+  Once the review is complete, we are often
+asked to recommend process improve-              What advancements in X-ray inspection tech-
+ments. We are not process engineers, so we       nology have had the biggest impact on your
+must tread carefully when asked this ques-       ability to serve customers effectively, and
+tion. Usually, we provide a range of possible    where do you see the technology heading
+causes. If the customer pushes harder and        in the future?
+wants to know the specific root cause of a       Boguski: The obvious answer is AI. It is remov-
+problem, we often refer them to an indus-        ing some of the drudgery from the old school
+try colleague who is a process management        method of having one person reviewing hun-
+consultant.                                      dreds of images from one board, with the
+                                                 attendant risk that operator fatigue will set in
+From your experience, what are the key dif-      and something crucial will be missed. Hav-
+ferences in value between 2D and 3D X-ray        ing said that, AI does not eliminate the need
+technology, and how do you determine which       for skilled, experienced Xray technicians and
+method is best suited for a particular inspec-   analysts, with time-based knowledge to dis-
+tion need?                                       tinguish false from true failures, and to eval-
+Boguski: 2D is conventional X-ray inspec-        uate subtle defects and judge their potential
+tion; 3D is CT scanning. The terms are con-      to contribute to future catastrophic board or
+stantly mixed up and lead to much con-           system failures.
+fusion. Unscrupulous persons often take            Also, digital detector technology in both
+advantage of this by playing on peoples’         X-ray and CT scanning systems is constantly
+ignorance. Conventional X-ray is cheaper         improving, thereby enabling us to capture
+by the hour than CT scanning. Most of our        images, and defects, at finer resolutions
+inspection engagements begin with conven-        (often in the sub-micron range), that are
+tional X-ray, if for no better reason than as    essential for today’s microelectronics failure
+a sanity check (even if the customer wants       analysis.
+32 SMT007 MAGAZINE I APRIL 2025
+COM M ERCI
+         AL • M I
+                LITARY • M EDI
+                             CAL • BAREBOARD
+
+
+
+
+    www.
+       usc
+         irc
+           uit
+             .com
+What are the biggest misconceptions of X-ray       reply, “You need to get out more.” It’s tough
+technologies?                                      to address a solid-state world possessed of a
+Boguski: Confusion in terminology, especially      vacuum tube mindset.
+between 2D and 3D X-ray. Shady operators
+exploit this ignorance to their own advan-         Conclusion
+tage. For example, CT scanning is nothing            Thank you to Jesper and Robert. In the fast-
+more than the amalgamation of multiple 2D          paced world of electronics manufacturing, the
+X-ray images into a three-dimensional whole        pursuit of reliability and precision is relent-
+for analysis. A lot of powerful software and       less. As circuit assemblies become more com-
+computing power is needed to achieve this,         plex, with finer pitches, denser components,
+and we do it every day.                            and hidden solder joints, traditional inspec-
+  Another frequent human problem is the            tion methods often fall short. This is where
+know-it-all—a “TechBro” process engineer           X-ray technology steps in as a game-changer,
+who has anointed themselves as “God’s Gift         allowing manufacturers to see beyond the sur-
+to Failure Analysis,” and who has prede-           face, identify hidden defects, and ensure the
+termined the outcome in their own minds.           integrity of their products. SMT007
+This often begs the question of why they are
+requesting our services in the first place. Peo-                  Mike Konrad is founder and CEO
+ple are funny. Beware of anyone who prefaces                      of Aqueous Technologies, and
+                                                                  vice president of communications
+the discussion with, “In my years of working
+                                                                  for SMTA. To read past columns,
+in this industry, I have never seen a defect                      click here.
+such as you claim to see,” to which we usually
+
+
+
+
+34 SMT007 MAGAZINE I APRIL 2025
+REDUCE SOLDER
+ USAGE UP TO
+
+
+
+
+“Using MS2 Molten Solder Surfactant for Solder Dross
+ Recovery has been extremely efficient and profitable
+  for the company. We are getting 80% +/- recovery.”
+                     David Ramirez
+                     SME Engineer in Guadalajara, Mexico
+
+
+
+CALCULATE YOUR SAVINGS
++1 (800) 757-6533 | sales@pkaymetal.com
+                                                   www.pkaymetal.com
+  The Future of Advanced
+Packaging Inspection Is X-ray
+
+
+
+
+Article by David Kruidhof and Kevin Jan
+COMET YXLON
+
+Editor’s Note: The following is an excerpt from    and SEM tools. However, with the develop-
+a paper at the 2024 SMTA Wafer-Level Pack-         ment of 2.5 and 3D packaging, using these
+aging Symposium. For access to the full paper,     optical tools has become less effective and/
+please refer to the SMTA Knowledge Base at         or time-consuming and expensive. The need
+www.smta.org.                                      to see internal defects has also made these
+                                                   tools destructive.
+  Driven by smartphones, high-performance            Detecting and understanding killer defects
+computers, and artificial intelligence, the        quickly can decrease time to market, increase
+global demand for high-end computing               yield, and improve process controls, all of
+power is constantly rising. The industry is also   which are vital for foundries and OSATs to
+facing demands for miniaturization, which          develop competitive technologies in a fast-
+creates the need for ever-smaller defect rec-      changing environment. To continue to find
+ognition. The semiconductor industry has           these killer defects requires the change from
+been identifying and solving these challenges      these typical inspection methods to non-
+for decades using various optical inspection       destructive techniques.
+36 SMT007 MAGAZINE I APRIL 2025
+                      Figure 1: Example of a 3D package with various interconnects.
+
+  While historically X-ray inspection was not         are fast enough to provide value within their
+the preferred technology, advances in image           production processes, increase yield, and
+resolution and speed have made it the unique          reduce waste at an early stage. This arti-
+solution for inspecting 3D packaging non-             cle will give an overview on how X-ray and
+destructively today.                                  laminography inspection can provide value-
+  Advanced packaging companies seek non-              added data and information within minutes
+destructive automated inspection tools that           instead of weeks, for exactly that.
+
+
+
+
+                       Figure 2: Slice and 3D rendering of GPU with 0.85 µm voxel.
+
+38 SMT007 MAGAZINE I APRIL 2025
+                      Figure 3: Repeatable results throughout the day are required.
+
+Advances in X-ray Technology                            Completing this incredibly precise task
+Refinement of spatial resolution                      repeatedly with the same results, provides
+   Advances in X-ray tube and X-ray detector          the certainty that the results are reliable.
+hardware have increased resolution in both
+2D and 3D inspection of materials. From               Laminography allows for high-resolution 3D inspection
+the perspective of the X-ray tube, there was            Traditional CT inspection requires gather-
+the need for smaller focal spots as well as           ing 2D X-ray images all around an object. Var-
+improved stability during potentially long            ious trajectories have found shortcuts around
+scan times, where required. On the other              this, with varying levels of detail loss and the
+side, the detectors have improved their sen-          introduction of artefacts. In electronics man-
+sitivity while decreasing pixel pitch without
+unacceptable losses of sensitive area.
+   These are only two pieces of the puzzle,
+and alone, they make great strides for 2D
+X-ray inspection. However, for the active
+movement of multiple axes that is required
+for 3D inspection, there are more preci-
+sion requirements. That is, every axis needs
+to move perfectly together. With a simple
+computer tomography (CT) system, that
+may start with only one axis and precision
+control for that is rudimentary at this point.
+With more advanced CT systems with a
+flexible rotation axis and with laminogra-
+phy trajectories being put to use, the num-
+ber of actively moving axes is no longer triv-
+ial. Keeping these all moving simultane-
+ously with perfect synchronicity requires                  Figure 4: Laminography trajectories allow
+precision movement systems.                                             for batch scans.
+
+                                                                           APRIL 2025 I SMT007 MAGAZINE 39
+                      Figure 5: Results of scan times between eight and 33 minutes.
+
+ufacturing, the disproportionate dimensions           producing diminishing returns after an hour
+made it impossible to get enough detail while         or so. Necessary image quality and therefore
+spinning the board around.                            scan time, will need to be determined on a
+  Fortunately, laminography scans were                case by case basis.
+invented that allowed for a different angle
+of rotation that was more conducive to parts          Defect detectability
+of this shape. Employing this trajectory for            Putting all this technology together yields
+advanced packaging inspection has many                a system that can detect a wide variety of
+advantages over CT.                                   defects including the following:
+  While CT of even small packages would                 • Tilting between layers
+still require movement away from the X-ray              • Missing interconnects
+source, decreasing magnification and, there-            • Bridging of interconnects
+fore, detail, or allowing the highest level of          • Bulging interconnects
+detail to be gathered only in the corners or            • Undersized bumps
+other limited regions, laminography scans               • Shifted layers
+can be achieved anywhere of interest.                   • Voiding within interconnects
+  This strategy, along with precision move-
+ment throughout a large enough sys-
+tem, allows for a tray of components to be
+inspected in one batch run, increasing pro-
+ductivity many times over.
+
+Scan time variations yield varying results
+  One of the other variables that affects
+resulting image quality is scan time. Many
+tests have been done with acceptable results
+that were achieved in under 10 minutes.
+However, longer scan times were also tested,                 Figure 6: Head-in-pillow defect visible
+which showed improved quality, eventually                               on 65 µm bump.
+
+40 SMT007 MAGAZINE I APRIL 2025
+  • Missing or small via connects                        Conclusion
+  • Head-in-pillow defects                               Given these advancements, X-ray inspec-
+  • Cracks in substrates                                 tion technology is now the best option for
+                                                         inspecting the interconnects between layers
+Advances in Software Technology                          within advanced packaging.
+Automated Analysis                                         With its unparalleled level of detail with
+  With advanced packages being used to run               viewable area, diagnosing killer defects
+AI tools, the number of interconnects with               while accelerating ramp-up time has never
+the chip continues to climb exponentially.               been simpler. Due to the non-destructive
+Even with the sub-micron detail that is pos-             nature of the process, chip production lines
+sible to achieve today, the manual inspection            can be monitored more closely, increasing
+of interconnects in tens of thousands is not             yields. SMT007
+practical. Fortunately, automation is advanc-
+ing here as well. Image analysis is no longer                                        David Kruidhof is a
+                                                                                     technical sales manager
+only being accomplished at the 2D level, but                                         at Comet Yxlon in Cal-
+3D volumes can be automatically segmented                                            ifornia, and Kevin Jan
+and inspected, greatly reducing the need for                                         works for Comet Yxlon
+human intervention.                                                                  in Hamburg, Germany.
+
+
+
+        Hybrid States of Light and Matter May
+        Significantly Enhance OLED Brightness
+  Researchers developed a theoretical model that           OLEDs are electronic components made from or-
+predicts substantial increase in the brightness of or-   ganic carbon-based compounds that produce light
+ganic light-emitting diodes (OLEDs) by leveraging        when an electric current is applied to them. In OLED
+novel quantum states called polaritons. Integrating      displays, the pixels themselves emit light, unlike liq-
+polaritons into OLEDs effectively requires the dis-      uid crystal displays, which use LED backlighting.
+covery of new materials, making practical implemen-        When sandwiched between two semi-transpar-
+tation an exciting challenge.                            ent mirrors, the organic emitters can couple with the
+  OLEDs are quite slow at converting electric current    confined light, creating new hybrid states of light
+into light, with only 25% probability in emitting pho-   and matter called polaritons. By fine-tuning these
+tons efficiently and rapidly. The latter is an impor-    states, it is possible to find a sweet spot where the
+tant condition for boosting the brightness of OLEDs,     remaining 75% dark states start becoming bright po-
+which tend to be dimmer than other light technolo-       laritons instead.
+gies. Researchers from the University of Turku, Fin-       “In this work, we carefully examined where the
+land, and Cornell University, USA, have now pro-         polariton sweet spot lies in different scenarios. We
+posed a predictive model to overcome this problem.       found that the strength of the polaritonic effect in
+                                                         OLEDs’ performance depends on the number of
+                                                         coupled molecules. The fewer, the better,” says As-
+                                                         sociate Professor Konstantinos Daskalakis from the
+                                                         University of Turku.
+                                                           “The next challenge is to develop feasible architec-
+                                                         tures facilitating single-molecule strong coupling or
+                                                         invent new molecules tailored for polariton OLEDs.
+                                                         Both approaches are challenging, but as a result, the
+                                                         efficiency and brightness of OLED displays could be
+                                                         significantly improved,” Daskalakis explains.
+                                                         (Source: University of Turku)
+
+42 SMT007 MAGAZINE I APRIL 2025
+      ....       Completely eliminate post-processing steps
+                 and stations. No more q-tips and isopropyl
+-·-              alcohol to clean up after pizza cutters, routers
+                 and inferior laser systems.
+
+
+
+             r   Our software and laser technology allows the
+                 operator to fine tune settings to match your
+                 exact quality and cycle time requirements.
+
+
+                             GET MORE INFO
+I-Connect007 Welcomes New Milaero                Saab Signs MoU with ICEYE to Integrate
+Columnist Jesse Vaughan u                        Advanced Space-Based Radar Data to
+I-Connect007 is excited to announce the addi-    Military Command Systems u
+tion of a new monthly column, “Beyond the        Saab and ICEYE, a leading provider of Syn-
+Board,” authored by Jesse Vaughan, a sea-        thetic-Aperture Radar (SAR) data and ana-
+soned expert in the PCB/milaero sector. Jesse,   lytics, today announced a Memorandum of
+a third-generation printed circuit board tech-   Understanding (MoU) to cooperate on the
+nologist currently working at Summit Intercon-   development and integration of advanced
+nect, brings a wealth of knowledge and passion   space-based radar data in Saab’s command and
+to our publications. His new column, “Beyond     control systems. Space-based sensor capabili-
+the Board,” will delve into market and indus-    ties are becoming crucial for modern militar-
+try trends, workforce engagement, and the pro-   ies, providing access to critical information in
+cesses and technology roadmap within the elec-   challenging environments.
+tronics industry.
+                                                 NASA Uses New Technology to
+RTX’s Collins Aerospace Unveils New              Understand California Wildfires u
+Engineering Development and Test                 Developed at NASA Jet Propulsion Lab ( JPL),
+Center in Bengaluru u                            the science instrument gives researchers a
+Collins Aerospace, an RTX business, opened       more detailed picture of high-temperature sur-
+its new Engineering Development and Test         faces, such as land scorched by wildfire, than
+Center (EDTC) at the company’s North Gate        previous infrared instruments. The January
+campus in Bengaluru, India. The new facility     wildfires in California devastated local habi-
+streamlines product development, testing, and    tats and communities. In an effort to better
+certification of components locally, bringing    understand wildfire behavior, NASA scientists
+aerospace technologies to market faster.         and engineers tried to learn from the events by
+                                                 testing new technology.
+Lockheed Martin, Nokia, and Verizon
+Advance Defense Capabilities Through             FAA Certifies Airbus H125 IFR Capability u
+5G.MIL® Collaboration u                          The H125‘s single pilot instrument flight rules
+Lockheed Martin, Nokia, and Verizon              (IFR) capability has been certified by the U.S.
+announced the successful integration of          Federal Aviation Administration (FAA), pav-
+Nokia’s industry-leading, military-grade 5G      ing the way for first deliveries in 2025 from
+solutions into Lockheed Martin’s 5G.MIL®         Airbus Helicopters’ assembly line in Colum-
+Hybrid Base Station (HBS). The technology        bus, Mississippi. This new feature, developed
+advances new capabilities to integrate com-      in collaboration with Moog´s Genesys Aero-
+mercial 5G connections with military commu-      systems, consists of an upgraded cockpit and a
+nications systems to provide decisive informa-   new autopilot along with redundant hydraulic
+tion for national defense.                       and electrical systems.
+
+44 SMT007 MAGAZINE I APRIL 2025
+    DRAM Damage Due to X-ray
+ Inspections Post-PCB Assembly
+Article by Saurabh Gupta, et al
+INTEL
+
+
+(Editor’s note: This paper was originally         imaging results while minimizing any risk of
+published in the SMTA proceedings.)               damage to the samples. Although latent dam-
+                                                  age is a possibility, it is expected to affect only
+  Concerns are increasingly being raised about    a small percentage of samples, as the major-
+the potential for X-ray inspection steps dur-     ity are likely to have enough tolerance in key
+ing manufacturing, such as post-SMT inspec-       or sensitive parameters to alleviate concerns
+tions, to cause latent damage to semiconduc-      about device failure.
+tor components. Several publications1-3 have        One of the most significant semiconductor
+stressed the need for users to be aware of the    devices being used nowadays is the Dynamic
+risks associated with X-ray exposure to com-      Random Access Memory (DRAM). One
+ponents, even though the radiation levels         major use of the DRAM in the current pack-
+involved typically do not cause immediate fail-   aging landscape is to have an on-package
+ures. Defining the thresholds for any type of     DRAM close to the CPU to improve the band-
+degradation, however, can be difficult. Users     width and lower latency. Several studies have
+must take care to configure the inspection        reported that the critical device parameters
+setup in a way that achieves the best possible    of DRAM are sensitive to X-ray irradiation.
+
+
+
+
+46 SMT007 MAGAZINE I APRIL 2025
+Table 1: DOE table for radiation exposure
+
+ Filter Material   Filter thickness (mm)   Inspection time (sec)   Tube Voltage (kV)   X-ray power (W)   # of Runs   Comments
+
+    No Filter               0                       55                   120                14.5            2
+   Aluminum                1.6                      55                   120                14.5            2
+                                                                                                                       Filter
+      Zinc                 1.6                      55                   120                14.5            2        material &
+                                                                                                                     thickness
+    Copper                 1.6                      55                   120                14.5            2
+   Aluminum                4.8                      55                   120                14.5            2
+   Aluminum                4.8                     135                   120                14.5            2
+                                                                                                                     Inspection
+   Aluminum                4.8                     255                   120                14.5            2
+                                                                                                                        Time
+   Aluminum                4.8                     315                   120                14.5            2
+   Aluminum                4.8                      75                   160                20.0            1
+   Aluminum                4.8                      75                   140                14.5            1
+   Aluminum                4.8                      75                   160                14.5            1          Tube
+                                                                                                                     Voltage &
+   Aluminum                4.8                      75                   140                17.5            1         Power
+    No Filter               0                       75                   160                20.0            1
+    No Filter               0                       75                   160                14.5            1
+
+
+The static refresh tref or retention time is the                    fications, which reduce the distance between
+amount of time a DRAM cell or device can                            the package and the X-ray source and hence
+reliably hold data; and several studies4-6 have                     leads to higher dosage. In addition to devel-
+reported degradation in the DRAM reten-                             oping methods to inspect the packages, it
+tion time upon exposure to radiation such as                        is also crucial to characterize the functional
+X-rays. Measurement of other timing parame-                         performance of DRAM upon X-ray exposure.
+ters, such as tac (access time) and trp (precharge                     This paper provides an in-depth analy-
+time), had been made in prior X-ray exper-                          sis of the factors influencing X-ray inspec-
+iments; however, no significant shifts
+were observed. As such, only tref appears
+to be the most sensitive parameter.
+Since leakage is a strong component of
+refresh characteristics, it is believed that
+the increase in reverse junction leakage
+is the most probable cause for tref degra-
+dation after subjecting DRAM compo-
+nents to X-ray radiation1.
+   The DRAM damage due to irradi-
+ation poses a significant challenge to
+the inspections of BGAs with on-pack-
+age DRAM to produce an image qual-
+ity that is needed for providing the nec-
+essary information regarding the phys-
+ical defects present, e.g., voids in sol-
+der joints after SMT assembly. As BGA                                      Figure 1: Functional test set-up
+pitch reduces, it is becoming increas-                                        for DRAM performance.
+ingly necessary to go to higher magni-
+48 SMT007 MAGAZINE I APRIL 2025
+tion of BGAs, focusing on key variables such           TLDs are a useful dosimeter choice, as they
+as the type and thickness of the X-ray filter          are simple to use and good for measuring
+material, the thickness of the circuit board,          integrated dose applications. Their princi-
+and the duration of the inspection process. It         ple of operation is to create “color centers”
+also examines the impact of X-ray power and            within their crystal structure when ioniz-
+voltage settings on the inspection quality. By         ing radiation (the X-rays in our case) are
+understanding how these parameters affect              absorbed. Subsequent heating of the TLD
+the inspection outcomes, the study aims to             material releases the stored photons cre-
+optimize the X-ray inspection process for              ated by the radiation, as each color center
+better accuracy and reliability. Additionally,         is driven back to its lowest energy state. The
+the paper outlines strategies for mitigating           results (photons = dose) from the test sample
+radiation damage in BGAs, considering three            can then be referenced against a calibration
+different construction types. These mitiga-            table for the TLDs used4. The dosimeter was
+tion techniques are crucial for preserving the
+integrity and functionality of DRAM during
+inspection. A test setup was also developed
+to detect changes in functional performance
+of the DRAM when exposed to increasing
+levels of radiation.
+                                                        a                         b
+Experimental Method
+  Radiation measurement was performed
+using a widely used thermo-luminescent
+detector (TLD) with an accuracy of ±5%
+and a minimum reportable dose of 0.01 rad.              c                         d
+
+                        Variability Chart for Dosimeter reading (rad)
+
+
+
+
+ e
+Figure 2: BGA #1 results: (a) and (b) position of dosimeters on the BGA; (c) and (d) position of dosimeters
+  with respect to the X-ray source; (e) TLD readings in 2D X-ray (MXI) and 3D X-ray (AXI) machines with
+                                               different filters.
+
+                                                                            APRIL 2025 I SMT007 MAGAZINE 49
+attached to the area of interest where radia-           A 10L 0.5 mm thick PCB with BGA #1
+tion needed to be measured using a Kapton             assembled on it was used to characterize the
+tape. Radiation was measured in both types            influence of various inspection parameters on
+of machines: automated X-ray inspection               the X-ray dosage. Table 1 shows the parame-
+(AXI or 3D X-ray) and manual X-ray inspec-            ters that were varied to characterize the effect
+tion (MXI or 2D X-ray).                               of the radiation. All these DOEs were con-
+  Three BGAs with different geometries of             ducted in a 2D X-ray (MXI) machine so that
+board and substrate were chosen for evalu-            the various parameters could be controlled
+ation of the dosage experienced by on-pack-           more accurately. Three types of filter mate-
+age DRAM. BGA #1 had a 0.58 mm thick                  rials, namely aluminum, copper, and zinc,
+substrate and was placed on a 10L 0.6 mm              were evaluated for their efficacy in shielding
+thick PCB. BGA #2 had a 1.56 mm thick sub-            radiation. The inspection time, X-ray power,
+strate and was placed on a 16L 1.58 mm thick
+board. BGA #3 had a 2.27 mm thick substrate
+and was assembled on a 28L 3.175 mm thick
+board. All three BGA construction types
+serve as test vehicles that have the on-pack-
+age DRAM memory completely exposed. If
+there is a heat spreader (IHS), then it could
+provide additional shielding from the X-ray
+                                                       a                      b
+radiation and that is not in the scope of this
+paper. The radiation absorbed by the on-
+package DRAM was characterized for the
+three BGA construction types in a typical
+AXI as well as MXI scans.                              c                       d
+
+                         Variability Chart for Dosimeter reading (rad)
+
+
+
+
+ e
+                                  Figure 3: BGA #2 X-ray dosage results.
+
+50 SMT007 MAGAZINE I APRIL 2025
+                         Variability Chart for Dosimeter reading (rad)
+
+
+
+
+                                                                               a
+
+
+
+
+ b
+     Figure 4: BGA #3 X-ray dosage results. Package is facing away from X-ray source in both machines.
+
+and tube voltage were also varied on the               dosimeters with respect to the X-ray source
+machine. Different board thicknesses were              on both the 2D X-ray and 3D X-ray machines.
+also tested under the same inspection condi-           The 3D X-ray machine has a 0.5 mm thick
+tions to characterize the impact of the PCB            aluminum on-unit filter attached to the X-ray
+material on radiation absorption.                      source while additional filters can be added
+  A functional test was set up using a vali-           to the 2D X-ray machine as needed. Figure
+dation platform hardware that contained a              2e shows the dosage readings for the BGA
+motherboard, heatsink, keyboard, moni-                 #1. The readings show that the PCB absorbs
+tor, mouse and SSD. The hardware setup is              a significant amount of radiation and that Al
+equivalent to a functional laptop or desktop           filters help reducing the dosage.
+installed with Windows Operating system.                  Figures 3a and 3b show the dosimeter loca-
+Functional SOC with memory on package                  tions on BGA #2. Pos A is on the PCB on the
+will then be installed on this socketed moth-          same side of the board as the BGA, Pos B is
+erboard and tested using MemTest86. Mem-               on the memory, and Pos C is on the PCB the
+Test86 is an open-source memory testing                side of the board opposite to that of the BGA.
+tool for memory diagnostics and was used to            Figures 3c and 3d show the locations of the
+test if the DRAM had errors upon exposure              dosimeters with respect to the X-ray source
+to radiation.                                          on both the 2D X-ray and 3D X-ray machines.
+                                                       Figure 3e shows the dosage readings for the
+Results and Discussion                                 BGA #2. The readings also show that PCB
+  Figures 2a and 2b show the dosimeter loca-           absorbs a significant amount of radiation and
+tions on BGA #1. Pos A is on the PCB on the            that Al filters help reduce the dosage.
+same side of the board as the BGA, Pos B is               Figure 4a shows the dosimeter locations
+on the memory, and Pos C is on the PCB on              on BGA #3. Pos A is on the Si, Pos B is on
+side of the board opposite to that of the BGA.         the memory, and Pos C is on the PCB on the
+Figures 2c and 2d show the locations of the            same side of the board as the BGA. Figure 4b
+                                                                           APRIL 2025 I SMT007 MAGAZINE 51
+   Variability Chart for Dosimeter reading (rad)         Variability Chart for Dosimeter reading (rad)
+
+
+
+
+  a                                                     b
+
+
+      Bivariate Fit of Dosimeter Reading (rad)              Bivariate Fit of Dosimeter Reading (rad)
+              by Inspection Time (Sec)                              by Inspection Time (Sec)
+
+
+
+
+  c                                                     d
+
+ Figure 5: Dependence on dosage on: a) filter material and thickness; b) tool parameters for inspection;
+                              c) inspection time; d) board thickness.
+
+shows the dosage readings for the BGA #3.             ever, Figure 6 shows the image quality with
+In the case of a 3D X-ray scan, the readings          the three materials of equal thickness and,
+are highest for Pos C, as expected, as there          although copper provides the most shielding
+is more material absorbing radiation on Pos           from radiation, it is quite ineffective to pro-
+A and Pos B. However, for the 2D X-ray, the           duce the image quality needed for inspec-
+order of readings is reversed. Pos A sees the         tion. Aluminum, on the other hand, seems to
+highest radiation even though it is the most          provide effective shielding and preserve the
+shielded. This is because the amount of dos-          image quality as seen in Figure 6.
+age absorbed also depends on the method                 Figure 5b examines the influence of tube
+and the actual path of the X-ray scan.                power and voltage on dosage. It reveals that
+   Figure 5 provides a detailed analysis of var-      while tube power significantly affects dos-
+ious factors affecting dosage in X-ray imag-          age at a constant tube voltage, variations in
+ing. In Figure 5a, the impact of different fil-       tube voltage have a minimal impact on dosage
+ter materials on dosage is highlighted, show-         when X-ray power is kept constant. Figure 5c
+ing that copper is the most effective material        demonstrates a linear relationship between
+for reducing dosage. This suggests copper’s           inspection time and dosage, indicating that
+superior filtering capability in attenuating          longer exposure leads directly to higher dos-
+X-rays compared to other materials. How-              age. Lastly, Figure 5d illustrates a decreasing
+
+52 SMT007 MAGAZINE I APRIL 2025
+                                                      The results from the functional test are
+                                                    shown in Figure 7. The BGA with on-pack-
+                                                    age DRAM was exposed in increments of 50
+                                                    rad and, after subsequent exposure, the per-
+                                                    formance was measured using the test setup
+                                                    shown in Figure 1. There were no errors
+                                                    recorded by MemTest86 after any of the
+                                                    exposures as shown in Figure 7. Even after
+                                                    total exposure of 350 rads, MemTest86 gave
+                                                    no errors on the DRAM. The results indicate
+                                                    that even after overexposure to three times
+                                                    the limit provided by DRAM manufacturer,
+                                                    no infant mortality failures were observed.
+                                                    However, the reliability of the DRAM over
+                                                    longer periods of usage may be reduced.
+
+                                                    Summary
+                                                      This paper outlines several mitigation strat-
+                                                    egies for minimizing radiation dosage during
+                                                    X-ray inspections, particularly in the context
+    Figure 6: 2D X-ray images with various filter   of printed circuit boards (PCBs). One key
+            materials and thicknesses.              observation is that the PCB itself acts as an
+exponential relationship between board thick-       effective shield, significantly reducing radia-
+ness and dosage, suggesting that beyond a cer-      tion exposure. This relationship is shown in
+tain thickness, increasing the thickness has a      Figure 8. This protective effect was clearly
+diminishing effect of reducing the dosage.          demonstrated in the experimental results,
+
+
+
+
+                   Figure 7: Reference test from Memtest86 showing the DRAM passing
+                                with no errors after an exposure of 350 rads.
+
+54 SMT007 MAGAZINE I APRIL 2025
+       Figure 8: Effect of board and substrate geometries on the X-ray dosage absorbed by DRAM.
+
+highlighting the importance of considering           erance of PCB assemblies housing BGAs with
+the board’s material properties during inspec-       on-package memory. It was noted that there
+tion. The study also examined the impact of          was no initial degradation of the performance
+inspection time on dosage, revealing a direct        of the DRAM observed even after overexpo-
+correlation: longer inspection times result          sure to several times the recommended limit
+in higher radiation exposure. This finding           of DRAM exposure from manufacturer.
+emphasizes the need to optimize inspection
+duration to minimize dosage without com-
+promising the thoroughness of the inspec-
+tion. Another critical factor discussed is the
+choice of filter material. Copper was identi-
+fied as the most effective filter for shielding
+radiation, significantly reducing dosage lev-
+els. However, this reduction in dosage comes
+at a cost, as the images produced with cop-
+per filters were of very poor quality due to
+the diminished X-ray penetration.
+   Additionally, the paper explores the rela-
+tionship between material thickness and
+dosage, finding that this relationship fol-
+lows a decreasing exponential trend. As
+material thickness increases, the reduc-
+tion in dosage becomes marginal, indicat-
+ing diminishing returns with further thick-
+ness enhancements.
+   This paper also investigated the radiation tol-
+
+                                                                        APRIL 2025 I SMT007 MAGAZINE 55
+Future Work
+  More extensive research is needed to                  ston. IEEE Transactions on Device and Materials
+                                                        Reliability 7, 105-111, 2007.
+fully understand how overexposure affects
+                                                           4. “Radiation-Induced Variable Retention Time in
+the functional performance of DRAM. This                Dynamic Random Access Memories,” by Vincent
+includes conducting detailed failure analy-             Goiffon, Antoine Jay, Philippe Paillet, Teddy Bilba,
+ses to identify specific performance degrada-           Théo Deladerrière, Guillaume Beaugendre, Alexan-
+tion that may occur. Additionally, it is crucial        dre Le Roch, Arnaud Dion, Cédric Virmontois, Jean-
+to perform aging studies to assess the long-            Marc Belloir, and Marc Gaillardin, IEEE Transactions
+term reliability of these devices. Such stud-           on Nuclear Science 67 (2020): 234-244.
+                                                           5. “An Evaluation of X-Ray Irradiation Induced
+ies will help determine how DRAM compo-
+                                                        Dynamic Refresh Characterization in DRAM,” by
+nents behave over time after being initially            Kyungwoo Lee, Chae-Hyuk Yun, HyungAh Seo, Tae
+exposed to radiation. SMT007                            hun Kang, Yunsung Lee, and Kangyong Cho. 2019
+                                                        IEEE International Reliability Physics Symposium
+References                                              (IRPS), IEEE Press, 1-3, 2019.
+  1. “Considerations for minimizing radiation doses        6. “Impact of X-Ray Radiation on the Reliability
+to components during X-ray inspection,” by David        of Logic Integrated Circuits,” by Somayyeh Rahimi,
+Bernard and Richard C. Blish, 2005 7th Electronic       Christian Schmidt, Joy Liao, Howard Lee Marks, and
+Packaging Technology Conference 2, 8 pp, 2003.          Kyung Mo Shin. 2020 IEEE International Reliability
+  2. “Filter optimization for X-ray inspection of       Physics Symposium (IRPS), IEEE Press, 1–4, 2020.
+surface-mounted ICs,” by R. C. Blish, S. X. Li, and
+D. Lehtonen. IEEE Transactions on Device and                           This paper was written by Saurabh
+Materials Reliability, vol. 2, no. 4, pp. 102-106,                     Gupta, Howlit Chng, Michael Cath-
+Dec. 2002.                                                             cart, Christopher Alvarez, Jose I
+  3. “X-Ray Radiation Effect in DRAM Retention                         Hernandez, Jeff Burgess, all of Intel
+Time,” by Akram Ditali, Manny Ma, and M. John-                         Corporation.
+
+
+
+Peter Bigelow: Perseverance Paid Off
+                      Interview by Barry Matties
+
+                      After walking off the stage at    Get involved, and even more, you need to get to
+                      IPC APEX EXPO, where he re-       know the people that are on the committees and in
+                      ceived the IPC Raymond E.         the industry. They can be a wonderful personal sup-
+                      Pritchard Hall of Fame Award,     port system. You learn so much more when you get
+                      I caught up with Peter Big-       to interact with people who are doing the same thing
+                      elow to find out how it felt to   you’re doing but maybe you’re coming from a differ-
+                      receive the award and what        ent angle and different perspective.
+                      advice he has for others com-
+                      ing up through the industry.      How long have you been at this?
+                                                        I’ve been in circuit boards for 34 years. I’ve been in
+Barry Matties: Peter, you just received the IPC         the electronics industry since 1977.
+Raymond E. Pritchard Hall of Fame award. What’s
+that like?                                              Will you share one of the most memorable mo-
+Peter Bigelow: I’m honored, and frankly, quite sur-     ments of your esteemed career?
+prised, to have received the award. I’m excited to      Oh, that’s a tough one. I would say it was taking
+say that I’ve been part of IPC for so many years and    the leap of faith to acquire a company. and work it
+have been able to make a contribution to the indus-     through very challenging times. The industry was
+try as well as to the association.                      not in a robust state at that time, but just by having
+                                                        patience, working with good people, taking it one
+With all your years of wisdom and experience, what      day at a time and paying attention to the future, not
+advice would you give a young person coming into        worrying about the moment, it was a proud time of
+the industry now?                                       my career. That has been a proud moment for me.
+
+56 SMT007 MAGAZINE I APRIL 2025
+ The Growing Role of
+Additive Manufacturing                  Smart Automation
+                                    by Josh Casper, Horizon Sales
+
+(Editor’s note: Josh Casper is a new columnist for   expanded to support a wide range of applica-
+SMT007 Magazine. His columns will focus on           tions in the electronics industry. The devel-
+the unique challenges and trends in the electron-    opment of materials in additive manufac-
+ics industry, specifically around automation.)       turing is meeting the demands of high-tem-
+                                                     perature environments and ESD protection
+   As additive manufacturing (AM) matures            necessary to become a viable solution in
+and reaches new business sectors through-            electronics manufacturing.
+out the manufacturing world, electronics               From the production of essential sup-
+manufacturing is beginning to reap the bene-         port items such as wave solder pallets and
+fits of this ultra-flexible technology. AM (also     JEDEC trays to the creation of highly cus-
+known as 3D printing) capabilities have now          tomized hand-soldering fixtures and support
+
+
+
+
+58 SMT007 MAGAZINE I APRIL 2025
+                                                        100% Employee
+                                                           Owned
+
+
+
+         For applications
+           that require
+      rugged, robust
+       and reliable
+         solutions
+
+
+
+  Whether you are seeking solutions for defense, aerospace, or
+ civilian avionics, AMI has you covered. We are AS9100D certified,
+ITAR registered and can meet your Class 3 requirements. We can
+     satisfy all your needs while exceeding your expectations!
+
+      Let us be your Mil/Aero EMS resource!
+
+      The partnership and support, as
+       well as the technical industry
+       specifics that AMI consistently
+      provides, empower our teams to
+     support aggressive timelines and
+      successfully deliver products to
+          our customers on time!
+     -Aerospace Defense Supplier - Tier 2     www.amiems.com
+                                                  rials with enhanced strength and durabil-
+                                                  ity. This is particularly important in applica-
+                                                  tions where support tooling needs to remain
+                                                  rigid and flat to hold products in place with-
+                                                  out the risk of warping. Materials like carbon
+                                                  fiber polymers offer significantly enhanced
+                                                  strength, allowing the production of parts
+                                                  that are both lightweight and capable of han-
+                                                  dling the forces encountered during produc-
+                                                  tion processes.
+                                                    Additionally, with the importance of ESD
+                                                  protection in electronics, additive manu-
+                                                  facturing has advanced to include materi-
+                                                  als with integrated conductive or dissipa-
+                                  Josh Casper     tive properties. AM companies can produce
+                                                  parts that prevent electrostatic buildup and
+                                                  discharge, reducing the risk of damage to
+tooling, AM is helping to reduce costs and        sensitive components. These materials can
+improve efficiency. Here, we’ll explore AM’s      safely be used in applications ranging from
+impact on electronics manufacturing, from         JEDEC trays to wave solder pallets, ensur-
+the improvements that have made it a viable       ing that all parts remain safe during manu-
+solution to some of the real-world applica-       facturing and transport.
+tions existing today.
+                                                  Additive Manufacturing and
+Advanced Materials for Higher Tempera-            Wave Solder Pallets
+tures, Strength, and ESD Protection                 Wave solder pallets are typically manufac-
+   One of the recent developments of addi-        tured utilizing traditional subtractive manu-
+tive manufacturing is the improvement in          facturing approaches, such as milling, drill-
+materials, allowing AM to meet the spe-           ing, cutting, etc. This involves the removal
+cific demands of the industry. As electron-       of material from a solid block to achieve the
+ics manufacturing involves exposure to high       desired form. While capable of high preci-
+temperatures, particularly during processes       sion, these methods can be time-consuming
+like wave soldering and reflow, AM materials      and expensive, particularly when producing
+have evolved to withstand these conditions.       intricate parts. These small inefficiencies can
+   Materials such as high-temperature-resis-      create a bottleneck in PCB manufacturing.
+tant carbon fiber PEEK (PolyEtherEtherKe-           Additive manufacturing addresses these
+tone) enable the production of parts that can     limitations by enabling the production of
+endure the heat generated during processes        highly customized wave solder pallets. Man-
+like wave soldering. These materials retain       ufacturers can use design and print pallets
+their integrity even at temperatures exceed-      tailored to the unique dimensions of the
+ing 250°C, making them ideal for applications     PCB and the components being assembled.
+where traditional AM plastics might fail.         This not only provides greater flexibility in
+   In addition to temperature resistance, the     production but also allows for quicker turn-
+strength of additive manufacturing materi-        around times. Manufacturers can easily iter-
+als has significantly improved in recent years.   ate and adjust the design of their solder pal-
+Today, manufacturers have access to mate-         lets digitally.
+
+60 SMT007 MAGAZINE I APRIL 2025
+ACHIEVE EFFICIENT THERMAL MANAGEMENT
+WITH SUSTAINABLE SILICONE SOLUTIONS
+Transferring heat away from processors, power supplies, LEDs and other key
+components is critical to achieve optimal performance.
+CHT’s range of 1-part silicone adhesives and 2-part potting compounds is designed
+with key properties for environmental protection and thermal management. These
+silicone chemistries also can be further customized to help you meet your specific
+design requirements and improve manufacturing processes:
+
+   f    Easy dispensing
+   f    Room temperature or heat curing chemistries
+   f    Flowable & thixotropic rheologies
+   f    Fast skinning grades
+   f    Compatibility with a wide range of substrates for structural integrity
+   f    Non-corrosive
+   f    Flame retardant, UL listed grades
+
+Committed to sustainability, CHT is leading the way as an innovative
+partner for efficient, environmentally friendly solutions and actively
+supports customers as they too move forward.
+
+
+
+cht-silicones.com
+  In addition, customization can extend to        ers can more quickly respond to changing
+features like ventilation channels and opti-      production requirements and avoid inven-
+mal support structures to further improve         tory shortages.
+soldering quality, something that some tra-
+ditional manufacturing methods struggle to        Support Tooling: Cost-Effective and
+accommodate.                                      Customizable Solutions
+                                                    Support tooling, such as jigs, guides, and
+JEDEC Trays                                       holding fixtures, is used in several assembly
+  JEDEC trays play an essential role in the       processes. It ensures that components are
+handling, storage, and transport of sensi-        correctly positioned and securely held dur-
+tive surface-mount components. Tradi-             ing operations like inspection, testing, or
+tional manufacturing of these trays can be        assembly.
+both time-consuming and expensive, partic-          Additive manufacturing provides a cost-
+ularly when manufacturers require custom-         effective and highly flexible solution. By
+ized designs to accommodate different com-        designing and printing support tooling
+ponent sizes.                                     in-house, manufacturers can create cus-
+  Additive manufacturing provides a solu-         tom tools that are specifically suited to the
+tion to these challenges by enabling the pro-     requirements of a particular job. Whether it’s
+duction of JEDEC trays with tailored dimen-       a jig designed to hold a complex PCB shape,
+sions, optimized for specific component           or a guide that helps position a specific com-
+types. As additive manufacturing technology       ponent, additive manufacturing makes it
+continues to evolve, it is likely that manufac-   possible to quickly produce tools with tai-
+turers will increasingly rely on 3D printing      lored features.
+to produce JEDEC trays that not only pro-           This ability to design and produce cus-
+tect components but also reduce production        tom support tooling can lead to significant
+costs and improve supply chain efficiency.        cost savings, as it can significantly reduce the
+  The reduction in lead times is another          involvement and stress on a manufacturer’s
+important benefit of additive manufacturing       labor force. Additionally, additive manufac-
+in JEDEC tray production. By printing trays       turing supports rapid design iterations, allow-
+on demand rather than waiting for mass            ing manufacturers to refine their tools quickly
+production or custom molds, manufactur-           to improve performance and efficiency.
+
+                                                  Conclusion
+                                                    Additive manufacturing is quickly becom-
+                                                  ing an essential tool in electronics manufac-
+                                                  turing. The ability to produce customized sup-
+                                                  port items offers manufacturers greater flexi-
+                                                  bility, faster lead times, and reduced costs. As
+                                                  this technology continues to advance, additive
+                                                  manufacturing will play an even more signifi-
+                                                  cant role in shaping the future of electronics
+                                                  production, driving innovation, and improv-
+                                                  ing efficiency across the industry. SMT007
+
+                                                  Josh Casper is regional sales manager for
+                                                  Horizon Sales.
+
+62 SMT007 MAGAZINE I APRIL 2025
+IPC APEX EXPO 2025 REVIEW
+
+The New Normal Looks
+Like the Old Normal
+
+                      (LR) Devan Iyer, the Chief Strategist for Advanced Packaging at
+                       IPC and Ahmad Bahai, Ph. D, Sr. VP & CTO, Texas Instruments.
+
+Article by Nolan Johnson
+I-CONNECT007
+
+  At IPC APEX EXPO, my days are filled                 be that the upward trend might be shifted
+with either talking or listening from sunup            by current changes in economic pol-
+to sundown. I get to ask questions of some             icy coming out of the U.S., but it will not
+of the brightest minds in the business, while          be squelched by it. Naturally, the trade in
+also listening and synthesizing what they’re           equipment seemed brisk on the show floor.
+sharing with me about the current and future
+
+                                                         2
+state of the industry. Here are five observa-                    The EMS Leadership Summit is
+tions based on these conversations.                              improving in value and insight. I’ve
+                                                                 had the pleasure of attending several
+
+  1
+         The industry is optimistic. Even in           of these summits, and each year the agenda
+         the face of uncertainty, buyers and           gets better. Mark Wolfe, Tracy Riggan, and
+         vendors are moving forward with               the rest of the planning committee dial in the
+their plans. One industry insider said, “If            program with every iteration. If the objec-
+they have a strategic plan at all, they’re still       tive of the summit is to bring EMS industry
+executing on it.” The sentiment seems to               leadership together to network, build better
+64 SMT007 MAGAZINE I APRIL 2025
+ Simplify programming     Minimize false calls and         Apply real-time process
+and expedite production    escapes while reducing          control and adjustment
+  with Koh Young Auto     operator subjectivity with       with Koh Young Process
+  Programming (KAP)           Smart Review 3.0                 Optimizer (KPO)
+
+
+
+kohyoungamerica.com         00®00                    america@kohyoung.com
+                                                  to look like the early semiconductor fabs—
+                                                  and they should. We’re fabricating in those
+                                                  same feature sizes on the board nowadays
+                                                  that used to be on the chip. New materials
+                                                  require new methods, while some require
+                                                  minor tweaks, and others require the instal-
+                                                  lation of entire lines. New software tools for
+                                                  process control, sensing, tracking, inven-
+                                                  tory management, scheduling, and more,
+                                                  continue to move us deeper into the real-
+                                                  ity of Industry 4.0, which leads me to AI.
+
+
+
+                                                   4
+                                                            Artificial intelligence is staying
+                                                            and will earn its keep. I discount
+                                                            generative AI, however. It’s getting
+                                                  all the hype in the mainstream and will likely
+   Mark Wolfe chatting with Tracy Riggan at the
+                                                  follow the traditional hype curve. Sure, it has
+             EMS leadership dinner.               a place, but all we have to do is look at Ben
+                                                  Rachinger’s award-winning paper from this
+working relationships, and share the latest       year’s conference to see that AOI data sets not
+industry information, then the summit team        only can be shared between multiple com-
+raised the bar again this year. I highly recom-   panies through a federated library to build a
+mend attending next year’s daylong event.         more powerful large language model, but that
+                                                  the data can also be stored in tokens, protect-
+
+  3
+         The developments in adjacent tech        ing the proprietary nature of the source data.
+         sectors will change our manufac-         The unexpected insights coming from AI LLM
+         turing techniques. It has always         implementations which are properly used is
+been the case that adjacent industries—semi-      nothing less than mind-boggling. In focused
+conductor manufacturing, for example—             industrial applications, predictive analysis—
+influence our industry. New component             based on seeing patterns in past data so sub-
+packages are an obvious example. Devan Iyer,      tle that humans cannot identify them—will be
+IPC chief strategist for advanced packaging,      disruptive (and in a good way).
+and Dr. Ahmed Bahai, chief technology offi-
+
+                                                   5
+cer at Texas Instruments and one of the key-              Regional diversification seems to
+note speakers, discussed the new develop-                 be unstoppable. Sure, opinions dif-
+ments in packaging with me at length. The                 fer on whether regional develop-
+themes in the conversation suggest not a          ment is good for the industry, but it seems
+trickle-down but rather a cascading chain of      like those who are building up infrastruc-
+events that will change the components we         ture are bullish, while those losing market
+will handle.                                      share are bearish. India, SE Asia, and Mex-
+  Another key development is shrinking            ico continue to build out. While it’s true
+feature sizes on the PCB, for which some          that much of the investment in these three
+of the older semiconductor manufactur-            regions was originally to support automotive
+ing technologies come increasingly into           and EVs, the available capacity outside China
+play—for example, interposers. Conse-             seems attractive to OEMs looking to reshore.
+quently, some of our PCB fabs are starting        Another sign of regional vibrancy is the
+66 SMT007 MAGAZINE I APRIL 2025
+increased involvement of Japan and SE Asia
+in IPC standards work, etc. Sydney Xiao,
+IPC president of North Asia, highlights this
+trend in her Real Time with… interview.
+
+   Thirty years ago, the PCB portion of the
+electronics industry was a thriving network
+of businesses: Many family-owned or simi-
+larly small serving a local/regional customer
+base. This was when the OEMs took a much
+more active role in moving their designs into
+fabrication and manufacture. A key part of
+that highly resilient supply chain was that
+OEMs of a certain size would build their
+own fab and EMS facilities, keeping manu-
+facturing in-house and customized to their
+products. But on a global scale, we threw up
+                                                       (L-R) Dr. Diana Radovan and Alison James
+obstacles and diverted most of the business
+to one central region.                             competitiveness. Alison James, IPC senior
+   I liken it to an analogy of removing dams       director for Europe, has been speaking with
+from our riverways in the western United           us about IPC Europe’s work with the Euro-
+States. Built originally for various well-inten-   pean Union’s Competitiveness Compass.2
+tioned but obsolete purposes, these dams           After hearing their remarks, I could see the
+persist in disrupting an ecosystem while no        parallels to the dam removal projects: To re-
+longer providing any benefit in return. It is a    establish a thriving ecosystem, we need to
+biologist’s dream to study how a river ecosys-     clear out the barriers, obstacles, and diver-
+tem rebounds once the dam is demolished.           sions, while also paying attention to sustain-
+While it’s no surprise that the original ecosys-   ability. It was my take-away that the EU Com-
+tem returns, what is surprising is the rapidity    pass work seems intent to remove key strate-
+and the robustness with which the regional         gic economic dams so that European manu-
+diversity recovers. Rivers for which the dam       facturing can once again flow.
+had wiped the native salmon population for           There is no doubt this is an exciting time
+a hundred years, now have salmon returning         to be in electronics manufacturing. Virtu-
+to spawn as little as three years later1.          ally every aspect of our industry is moving
+   Like the rivers, our regional diversity         solidly (finally) into the 21st century. It’s
+is returning. As Chris Mitchell, IPC vice          about time. SMT007
+president of global government relations,
+said in his Real Time with… interview with         References
+I-Connect007, the world wholeheartedly             1. I asked Grok to fact-check this claim, only to
+embraced free trade after the fall of the Ber-     find out that river biologists reported migratory
+lin Wall. It can be argued that we overdid it,     fish returning in weeks or months if the conditions
+                                                   were right.
+resulting in optimizing the resilience out of
+                                                   2. 'IPC’s Call to Action for the EU Competitiveness
+our supply chains, diverting too much eco-         Compass', SMT007.com, March 2025
+nomic flow away from its natural course, as
+it were. Chris suggests that the pendulum is       Nolan Johnson is managing editor of SMT007
+swinging back to encourage more regional           Magazine.
+
+68 SMT007 MAGAZINE I APRIL 2025
+70 SMT007 MAGAZINE I APRIL 2025
+APRIL 2025 I SMT007 MAGAZINE 71
+Basics of Component Lead Tinning
+                                  Knocking Down the Bone Pile
+                                      by Nash Bell, BEST, INC.
+
+  The component lead tinning process serves           The use of a single static solder pot for both
+several critical functions, including remov-       removal of an original alloy as well as com-
+ing gold plating, mitigation of tin whiskers,      ponent re-tinning should be avoided. This
+reconditioning of component solderability          is not a recommended practice since dross,
+issues, and alloy conversion from lead-free        organic contaminants, flux residue buildup,
+(Pb-free) to tin-lead or from tin-lead to lead-    and accumulation of gold can be trans-
+free for RoHS compliance. We will cover            ferred to the re-tinned component leads
+each of these topics in more detail in upcom-      or terminations. Those using this practice
+ing columns.                                       rely on outdated standards and procedures
+  Traditionally, some in the electronics           that are not in compliance with the GEIA-
+assembly industry have utilized a single static    STD-0006 component re-tinning industry
+solder pot for manual lead tinning. While          requirements.
+typically performed as a secondary opera-             A manual re-tinning process typically
+tion prior to board assembly, this may appear      involves a technician dipping a through-hole
+to be economical but has several disadvan-         or surface mount device multiple times into
+tages from a quality standpoint.                   a static solder pot to remove the original lead
+
+72 SMT007 MAGAZINE I APRIL 2025
+finish. This is followed by preheating the            solder pot, the composition of the surface
+components on a hot plate, then manually              level solder is dependent on the specific grav-
+applying RMA flux to the leads before mov-            ity of the elements present. This is especially
+ing each component into the same static sol-          problematic when using a static pot to per-
+der pot for re-tinning.                               form both alloy removal and refinishing of a
+  When component leads are manually                   component’s leads. If the original lead finish
+tinned, several issues can arise. The manual          is gold-plated, the gold can dissolve into the
+tinning process may not create a high-qual-           static pot, potentially altering the composi-
+ity intermetallic bond on the lead, leading to        tion of the solder alloy. Furthermore, a static
+a poor base metal and a rough surface finish.         solder pot, as seen in Figure 1, may contain
+When soldering to a printed circuit board, the        other contaminants, such as dross, RMA flux
+solder can initially wick up the lead and wet         residues, and oxidation on the surface, which
+the plated through-hole. However, once the            can negatively impact solderability.
+re-tinned surface becomes liquidus, the sol-             Another drawback of repeatedly using a
+der may partially run back down or migrate            single static solder pot is that organic con-
+away from the lead, resulting in de-wetting           taminants, such as mold release agents,
+at the targeted soldering temperature. Thus,          can float on the surface of the molten sol-
+the de-wetting at the joint site and poor sol-        der. These agents will not be driven off by
+derability can often be traced to irregularities      heat unless temperatures exceed 500°C. The
+from the manual tinning process that nega-            presence of these organic contaminants in
+tively impact the intermetallic bond.                 the static solder pot can be verified using
+  An additional disadvantage of using a sin-          either atomic absorption (AA) analysis or
+gle solder pot is the risk of contamination.          infrared spectrophotometry with Fourier
+Since there is no circulation within a static         transform (FTIR).
+
+
+
+
+         Figure 1: A static pot may contain other contaminants, such as dross, RMA flux residues,
+                  and oxidation on the surface, which can negatively impact solderability.
+
+74 SMT007 MAGAZINE I APRIL 2025
+                                                                      minimize non-wetting issues,
+                                                                      and enhance solderability.
+                                                                         The RHSD component lead
+                                                                      tinning process utilizes two
+                                                                      separate solder pots. The first
+                                                                      is a cleansing bath of molten
+                                                                      solder to remove the original
+                                                                      solder coating, unwanted plat-
+                                                                      ing, and any residual contam-
+                                                                      inants. Next, the component
+                                                                      leads are preheated and fluxed,
+                                                                      followed by a final immersion
+                                                                      in a clean solder bath of pure
+                                                                      eutectic solder. This provides
+            Figure 2: The surface of manually re-tinned               a homogeneous intermetal-
+             pins often appears to have a rough finish.               lic layer with the base metal of
+                                                                      the component leads, which
+   The surface of manually re-tinned pins increases the overall solderability, thus facil-
+often appears to have a rough finish as seen itating improved reliability of printed circuit
+in Figure 2. This is indicative of an uncon- board assemblies.
+trolled lead tinning process due to impuri-               All types of through-hole and surface
+ties such as excessive dross, flux residues, and mount components can be re-tinned using
+non-optimized immersion dwell and extrac- the robotic hot solder dip process. Sur-
+tion speed.                                             face mount components with terminations
+   Figure 3 shows an example of random or pads without leads, such as chip compo-
+surface anomalies on the resulting solder nents, SOTs, SOICs, LCCs, and PLCCs can
+joints. These irregularities can be described be re-tinned using the solder drag process. In
+as alligator skinning, voids, and blow-holes many cases fixturing may be required when
+which are more likely to occur with a man- automatically re-tinning surface mount com-
+ual tinning process and are considered solder ponents to ensure consistency is maintained
+defects per IPC J-STD-001.                              during the re-tinning process.
+   The ideal method to facilitate re-tinning of           Formed multi-side components such as FP
+surface mount or through-hole components and QFP devices, have very delicate leads
+is to use the robotic hot solder dip (RHSD) that can be easily damaged. These are typi-
+process. It is recommended that this re-tin- cally re-tinned using a side wave process with
+ning operation be carried out
+using a lead tinning machine
+utilizing precise flux applica-
+tion, controlled preheating, dual
+solder pots, nitrogen inerting,
+and defined process control. A
+defined process of this type is
+highly recommended in lieu of
+manually dipping components
+into a single static solder pot to                                   Figure 3
+reduce solder contamination,
+                                                                        APRIL 2025 I SMT007 MAGAZINE 75
+                                                   to remove any residual flux r esidues. S ubse-
+                                                   quently, components should be dry baked for
+                                                   the applicable component moisture sensitiv-
+                                                   ity level (MSL). This s hould b e f ollowed b y
+                                                   solderability testing per J-STD-002.
+                                                     Ultrasonic cleaning is another common
+                                                   cleaning method that should be used cau-
+                                                   tiously. Semiconductor devices can be poten-
+                                                   tially damaged by cavitation resulting from
+                                                   certain frequencies in ultrasonic cleaners
+                                                   which is unsuitable for cleaning electronic
+                                                   components. Ultrasonic cleaners meant for
+                                                   other applications, such as cleaning of small
+                                                   mechanical parts, should not be used for
+   Nash Bell                                       cleaning these components. If an ultrasonic
+                                                   cleaner is used, it should be a continuous
+the components held in position by a multi-        variable frequency (CVF) type designed spe-
+axis articulated robot equipped with a rotary      cifically for cleaning of electronics.
+vacuum head.                                         In conclusion, the component lead tinning
+  A key issue when re-tinning fine-pitch sur-      process is essential for enhancing solderabil-
+face mount devices such as QFPs and no-lead        ity and ensuring the reliability of electronic
+QFNs is to maintain coplanarity across all         assemblies. While traditional manual meth-
+leads to ensure consistent solder distribution     ods using a single static solder pot may seem
+and limit the potential for bridging. X-ray flu-   cost-effective, they are fraught with challenges
+orescence (XRF) testing can be used to ver-        that can negatively impact the quality of work,
+ify solder thickness, in addition to alloy com-    including the transfer of contaminants and the
+position, when determining if a coplanarity        creation of de-wetted solder joints.
+issue exists.                                        To achieve optimal results, employ-
+  Fine-pitch QFPs pose certain challenges          ing advanced techniques like the robotic
+but can be successfully tinned with proper         hot solder dip process is strongly recom-
+process controls in place. These components        mended. This method provides better con-
+may range from 6 mm x 6 mm up to 50 mm             trol over the re-tinning process, safeguards
+x 50 mm with a lead pitch as small as 0.012”       against contamination, and ensures a con-
+making the margin for error very small.            sistent, high-quality intermetallic bond. By
+Given the tight spacing and delicate nature of     adhering to industry standards and utilizing
+these leads, there is the potential for bridging   proper equipment, manufacturers can signif-
+and lead damage when tinning these types of        icantly improve solderability and reliability,
+components. Using a controlled automated           ultimately leading to more dependable elec-
+system with these fine-pitch components            tronic components and assemblies. SMT007
+will provide significant improvement in
+achieving consistent and reliable outcomes         Future columns will delve deeper into each aspect
+with limited defects.                              of the lead tinning process, providing further
+                                                   insights, and best practices to enhance quality and
+  Following the robotic hot solder dip pro-
+                                                   performance in the assembly of electronic devices.
+cess, all re-tinned devices should be cleaned
+in a batch wash or cleaning system, using the      Nash Bell is president of BEST, Inc. To read past
+appropriate solvent or aqueous cleaning agent      columns from this company, click here.
+
+76 SMT007 MAGAZINE I APRIL 2025
+         DESIGN TIPS #124:
+                        ETCH COMPENSATION
+
+What is minimum space and trace?                    Before etching
+The answer depends on the starting
+copper weight.
+
+This is because we must do an etch comp
+on the traces in CAM to compensate for
+known etch loss. The space between
+traces after compensation will play a role
+in whether a board can be manufactured.
+
+The lower the spacing width, the higher
+the cost. Designers don’t always account
+for the proper starting copper weight after         After etching
+edge compensation.
+
+                                                TRACE
+Design tips:                                    WIDTH
+                                                           During etching, trace
+• For accurate starting copper weight, add a               width expands beyond
+                                                           the width of the resist.
+half mil (.0005”) to all copper features.
+
+• Start with 3/8 or 1/4 oz. foil, reducing
+etch comp and less likely to cause a
+spacing issue.
+
+• Boards that call for full body electrolytic
+gold are not comped to avoid gold slivers
+occurring during the etching process.
+                   Redefining
+         Connection and Responsibility
+           in Digital Transformation
+                                     Global Citizenship
+                                     by Tom Yang, CEE PCB
+
+
+
+
+  The fusion of technology and global citizen-   cation and professional development. For
+ship has fostered unprecedented collaboration    example, online courses allow individuals in
+and exchange. Digital tools offer new ways       remote areas to access high-quality educa-
+to connect but also challenges that require a    tion, while freelance marketplaces open up
+mindful and ethical approach. While these        job opportunities worldwide.
+technologies bridge gaps, enhance inclusivity,     Global collaboration also fosters a sense of
+and encourage cross-cultural understanding,      inclusivity. Products, policies, and strategies
+we must also consider the accompanying eth-      benefit from the diverse perspectives shared
+ical responsibilities.                           on online forums. This strengthens cultural
+  Digital tools allow businesses and individ-    exchange and diversity and can offer com-
+uals around the globe to collaborate seam-       prehensive solutions to global challenges.
+lessly through a variety of tools, including     Digital inclusivity provides for unique per-
+videoconferencing, collaborative software,       spectives, making products and services that
+and project management platforms. This has       reflect diverse user bases.
+proven transformative, particularly in edu-        Artificial intelligence (AI) has become a
+
+78 SMT007 MAGAZINE I APRIL 2025
+foundation for businesses and organizations         the digital age requires an ethical approach to
+seeking to understand and predict global            data collection and analysis. Companies must
+consumer behavior. By analyzing large data          take responsibility for how they gather, store,
+sets, AI can help businesses customize their        and use consumer data while still respecting
+offerings to different cultural groups. From        individuals’ rights and privacy.
+e-commerce to entertainment, AI algorithms            The EU’s General Data Protection Regula-
+personalize user experiences and                             tion (GDPR) is designed to protect
+help companies keep track of                                       data privacy. It has set a global
+diverse consumer bases. For                                            standard, influencing other
+example, streaming apps                                                   countries to adopt similar
+like TikTok use AI to                                                       regulations. However,
+recommend content                                                             the challenge is how to
+that resonates with                                                            balance using data for
+individuals, but also                                                           innovation while still
+adjust these algo-                                                               respecting users’ pri-
+rithms for differ-                                                               vacy. Individuals are
+ent countries based                                                              demanding transpar-
+on local trends and                                                             ency and account-
+preferences. This has                                                          ability from organiza-
+enabled companies to                                                          tions. For businesses
+reach wider audiences,                                                       and organizations com-
+creating a truly global                                                    mitted to ethical prac-
+impact. However, AI also                                                tices, respecting data pri-
+raises ethical questions and                                        vacy is not only a legal obliga-
+privacy issues.                                                 tion; it’s essential to building trust
+   Social media has become a key driver of            with global audiences.
+global citizenship, offering platforms for            Despite the promise of digital transforma-
+dialogue across cultures, with organiza-            tion, access to technology remains unequal.
+tions, activists, and influencers using them        Billions worldwide still lack internet access
+to engage with audiences around the world.          or digital tools, especially those in low-
+The ability of social media to amplify over-        income regions where infrastructure and
+looked voices makes it valuable for inclusiv-       resources are limited. For global citizenship
+ity and social change.                              to be fully inclusive, we must address these
+   Social media can also engage diverse audi-       digital divides.
+ences simultaneously. Campaigns like #Cli-            Governments, organizations, and tech
+mateAction have gained global traction              companies are taking steps to address these
+because they resonate across borders. Social        gaps. However, achieving digital equity
+media platforms also enable people to learn         requires building sustainable infrastructure,
+about environmental issues, which fosters           fostering local tech ecosystems, and ensur-
+empathy and global responsibility. However,         ing affordability. Only by dissolving these
+social media companies have a responsibility        disparities can we create a digital landscape
+to prevent misinformation and respect user          of inclusivity and equality, which is the core
+privacy, which is an ongoing challenge. Every       of global citizenship.
+online click and interaction generates data that      The World Health Organization’s (WHO)
+is valuable to businesses but potentially inva-     use of digital tools during the COVID-19
+sive to individual privacy. Global citizenship in   pandemic demonstrates the power of digi-
+
+80 SMT007 MAGAZINE I APRIL 2025
+                                               ®
+                                    Training Center
+
+
+
+  Offering Worldwide IPC Certification for all
+Credential Levels in all Six Certification Standards
+
+
+
+
+        The CIS (Operator), CSE (Standard Expert), and CIT (Trainer)
+      credential levels for IPC Certification can be taught online or in
+     person at your facility or at one of our worldwide training centers.
+
+
+
+
+    www.blackfox.com | Phone: (888) 837-9959 | sharonm@blackfox.com
+tal transformation to create a global impact.       Google’s AI ethics board, though short-lived,
+Through social media, online portals, and data      understood the need for accountability.
+analysis, they provided real-time updates,          Companies can also prioritize ethical princi-
+debunked misinformation, and coordinated            ples by involving different voices in decision-
+efforts to distribute medical resources glob-       making processes.
+ally, which saved lives.                              The balance between innovation and ethics
+  Another example is IBM’s blockchain tech-         also extends to environmental responsibility.
+nology to improve transparency in supply            Digital transformation has a significant car-
+chains. IBM and its partners can track prod-        bon footprint. Data centers, cloud comput-
+ucts from origin to consumer, ensuring eth-         ing, and digital devices use a lot of energy, so
+ical sourcing and reducing the risk of fraud,       individuals and organizations must consider
+exemplifying how technology can enhance             the sustainability of their tech practices,
+ethical practices. This benefits consumers          adopt energy-efficient solutions, and reduce
+and the environment.                                digital waste.
+  These examples underscore how digital tools         True global citizenship in the digital age
+can extend the principles of global citizen-        goes beyond leveraging technology for con-
+ship—such as transparency, responsibility, and      venience or profit. It calls for thoughtful
+inclusivity—into practical applications with far-   engagement and awareness of our collective
+reaching impact. As more organizations adopt        responsibility to the planet. By balancing
+digital transformation strategies, the potential    innovation and ethics, we can foster a digi-
+for positive global change grows, but so does       tal landscape that benefits all while uphold-
+the need for ethical vigilance. AI, for instance,   ing the inclusivity, empathy, and respect that
+offers the potential to solve global problems,      define true global citizenship. SMT007
+but also comes with risks as the biases inherent
+in AI algorithms can be discriminatory. In addi-                      Tom Yang is CEO of
+tion, the proliferation of surveillance technolo-                     CEE PCB. To read past
+gies raises privacy concerns.                                         columns, click here.
+  To navigate these ethical complexities,
+organizations must adopt frameworks that
+guide responsible innovation. For example,
+
+
+
+
+82 SMT007 MAGAZINE I APRIL 2025
+                  TOP TEN          Finding Strength Through Laughter: IPC Women
+                                                                                      EDITOR’S
+                                                                                       PICKS
+
+
+
+                                   in Electronics Reception Inspires and Engages
+                                   The IPC APEX EXPO 2025 Women in Electronics Reception
+                                   brought together women for an insightful presentation by
+                                   keynote speaker Jody Urquhart, a motivational speaker,
+                                   comedienne, and author. A central theme of Urquhart’s talk
+was the challenge of belonging in male-dominated work environments. She encouraged women
+to embrace their natural strengths—empathy, compassion, and emotional intelligence– not only
+foster stronger connections but also enhance leadership effectiveness.
+
+
+
+North American EMS Industry                               Roadmapping Sustainability:
+Up 1.7% in February                                       Paving the Way for Eco-
+“The EMS sector saw a pickup in bookings in the
+                                                          friendly Electronics
+last month, bringing the strongest book-to-bill ratio
+since May 2024,” said Shawn DuBravac, IPC’s chief
+economist. “While year-to-date trends remain down
+for 2025, demand continues at a robust pace.”
+
+
+
+
+                                                          In light of ongoing climate
+                                                          challenges, the electronics industry
+                                                          is poised for a transformative shift
+                                                          driven by heightened consumer
+                                                          and corporate awareness of
+                                                          sustainable practices and circularity.
+                                                          INEMI (International Electronics
+                                                          Manufacturing Initiative) enlisted
+                                                          the help of the electronics industry
+Standards Driving Factory of the Future                   to roadmap that transformation in
+                                                          electronics manufacturing. This
+Thomas Marktscheffel is enthusiastic about what
+                                                          article provides an overview of the
+is possible today with manufacturing’s use of data
+                                                          resulting sustainable electronics
+and how that is an evolved vision for Factory of the
+                                                          roadmap and how to get involved.
+Future. Though this industry buzz phrase is currently
+focused solely on EMS, it is reflective of what is
+coming for PCB fabricators as well.
+
+
+84 SMT007 MAGAZINE I APRIL 2025
+SMTA Announces Expanded Program for                              IPC Releases Latest List of
+High Reliability: Strategic Technology                           Standards and Revisions
+Advancement Research Forum                                       To view a complete list of newly
+                        The SMTA announced the                   published standards and
+                        finalized program for the High           standards revisions, translations,
+                        Reliability: Strategic Technology        proposed standards for ballot,
+                        Advancement Research Forum               final drafts for industry review,
+                        which takes place April 30-May 1,        working drafts, and project
+2025, in Olathe, Kansas. The event, now in its third year,       approvals, visit ipc.org/status.
+addresses challenges for electronics manufacturers in            These are the latest releases for
+the high-reliability sector.                                     Q1 2025.
+
+
+
+IPC’s Call to Action for the EU                  The Training Connection LLC Unveils
+Competitiveness Compass                          New Website to Enhance Test
+The European Union
+                                                 Engineering Training Accessibility
+Competitiveness                                  The Training Connection, LLC (TTC-LLC) is excited
+Compass is a strategic                           to announce the relaunch of its official website,
+roadmap adopted                                  TTC-LLC.us. The updated platform enhances the
+by the European                                  user experience with real-time class availability,
+Commission to guide                              dynamic scheduling, and streamlined access to
+priorities for the next                          course information—bringing TTC-LLC’s training
+five years. In this interview, Alison James,     services into a new era of digital accessibility.
+IPC senior director of Europe government
+relations, explains how IPC has been
+proactive in aligning with the roadmap.
+                                                 Real Time with... IPC APEX EXPO
+                                                 2025: Navigating Aerospace
+European EMS Market                              Training Trends With Blackfox
+Experiences Double Digit                         Sharon Montana-Beard of Blackfox discusses
+Negative Growth in 2024,                         key industry trends and geopolitical factors
+But May Experience Slight                        affecting aerospace training. She emphasizes
+Positive Growth in 2025                          the significance of IPC WHMA-A-620 training
+                                                 and NASA certification for private aerospace
+The full report, “Annual Survey of the           contracts. Blackfox operates training centers
+European EMS Industry 2025,” authored                                  across the U.S., Mexico,
+by Dieter G. Weiss and Dr. Mareike                                     and Southeast Asia,
+Haass can be purchased directly from                                   responding to the rising
+in4ma at www.in4ma.de.                                                 global demand for space
+                                                                       hardware training and
+                                                                       offering courses in Spanish
+                                                                       with international trainers.
+
+           For the latest news and information, visit SMT007.com
+                                                                       APRIL 2025 I SMT007 MAGAZINE 85
+                   Career Opportunities
+
+
+    Various Positions                       Sales Applications Engineer
+                                              The Sales Applications Engineer is responsible
+   For 40 years, Technica USA has been      for working with customers and managing inquiries
+providing products, equipment, and ser-     to result in an accurate quote for business and
+                                            ongoing customer support. The Sales Applications
+vices to the printed circuit board fabri-
+                                            Engineer reports to the Application Engineering
+cation and assembly markets. Working        Manager.
+with our worldwide partners, we offer
+                                            Essential Job Duties:
+our customers solutions through best-       • Interface with customers via direct contact, sales
+in-class product lines. Technica has          calls, email, and phone to determine need, provide
+offices in San Jose, Calif, and Rancho        design assistance and provide a quote for business
+                                            • Management of programs from key customers
+Cucamonga, Calif.                             from initial purchase order to end of life
+    We are expanding and looking for        • Interface with customers regarding all aspects
+highly qualified Business Development/        of a program
+                                            • Serve as liaison with All Flex regarding customer
+Account Managers for both the PCB             issues related to a specific situation
+and PCBA markets.
+   We are adding to our growing national    Qualifications:
+                                            • Degree in engineering, math or science or
+equipment service coverage and look-          equivalent work experience.
+ing for experienced Equipment Service       • Prefer 5-8 years of product and/or manufacturing
+                                              experience with flex circuits, flex heaters or circuit
+Technician/Engineers.                         board industry
+    Are you a PCBA equipment applica-       • Knowledge and understanding of concepts,
+tions expert with experience in compo-        contents, and application of ISO 9000 helpful
+                                            • Proficient in Microsoft Office applications and
+nent placement and inspection? We are         data entry. NetSuite experience preferred
+looking for Equipment Product Special-      • Must be a U.S. Citizen or U.S. Permanent Resident
+ists to work within our San Jose, Calif.,
+                                              We offer a competitive base salary in the
+PCBA Equipment Demo center.                 $80,000 to $85,000 range, based on experience
+                                            and qualifications, along with bonus and profit-
+                                            sharing opportunities tied to performance.
+Please visit www.technica.com/careers
+ to learn more about these positions          If interested, please email resumes to
+    and submit your resume today!           joseph.janasz@allflexinc.com.
+
+
+
+
+                                                                  APRIL 2025 I SMT007 MAGAZINE 87
+                          Career Opportunities
+
+    Arlon EMD, located in Rancho Cucamonga,
+  California, is currently interviewing candidates
+  for open positions in:                                   Sales Coordinator
+                                                          Come join the sales team at ASC Sunstone Circuits
+    • Engineering                                      in Mulino, Oregon, as our Sales Coordinator! This
+    • Quality                                          position is responsible for ensuring the seamless
+    • Various Manufacturing                            processing, tracking, and delivery of customer
+                                                       orders while providing exceptional client communi-
+     All interested candidates should contact Ar-      cation and internal coordination. Some of the duties
+  lon’s HR department at 909-987-9533 or email         include:
+  resumes to careers.ranch@arlonemd.com.
+     Arlon is a major manufacturer of specialty           • Order processing
+  high-performance laminate and prepreg mate-             • Order tracking and status updates
+  rials for use in a wide variety of printed circuit     • Customer communication
+  board applications. Arlon specializes in thermo-       • Internal coordination with sales,
+                                                            production, and shipping
+  set resin technology, including polyimide, high
+                                                         • Administrative support
+  Tg multifunctional epoxy, and low loss thermo-
+  set laminate and prepreg systems. These resin        Education & Experience
+  systems are available on a variety of substrates,       A high school diploma or GED is required for this
+  including woven glass and non-woven aramid.          role. In addition to the education requirement, a
+  Typical applications for these materials include     minimum of two years of related experience in an
+  advanced commercial and military electronics         administrative or support role, within a sales or cus-
+  such as avionics, semiconductor testing, heat        tomer service environment, is required. An equiva-
+  sink bonding, High Density Interconnect (HDI)        lent combination of education, training, and experi-
+  and microvia PCBs (i.e., in mobile communica-        ence may satisfy these requirements.
+  tion products).
+     Our facility employs state of the art produc-     Knowledge, Skills, and Abilities
+                                                         The ability to adjust to new situations, environ-
+  tion equipment engineered to provide cost-
+                                                       ments, and changing priorities, to effectively con-
+  effective and flexible manufacturing capacity,       vey information and ideas through written, verbal,
+  allowing us to respond quickly to customer           and non-verbal means; and proficiency in Microsoft
+  requirements while meeting the most stringent        Office Suite or related programs are essential.
+  quality and tolerance demands. Our manufac-
+  turing site is ISO 9001: 2015 registered, and        Benefits
+  through rigorous quality control practices and         • 401(k) matching
+  commitment to continual improvement, we                • Dental insurance
+  are dedicated to meeting and exceeding our             • Employee assistance program
+  customers’ requirements.                               • Flexible spending account
+                                                         • Health insurance
+    For additional information, please visit our         • Life insurance
+                                                         • Paid time off
+         website at www.arlonemd.com
+                                                         • Vision insurance
+
+
+
+
+88 SMT007 MAGAZINE I APRIL 2025
+                       Career Opportunities
+
+
+                                                       Service Engineer:
+PCB Manufacturing Technician                                       Chicago
+                                                     Join the Schmoll America Team as a Service
+             Join the Team at                     Engineer—Where Innovation Meets Customer
+        Accurate Circuit Engineering!             Excellence! Are you a technical mastermind with
+  Located in Santa Ana, California, Accurate      a passion for solving complex problems and deliv-
+Circuit Engineering (ACE) delivers high-quality   ering exceptional customer experiences? Look no
+                                                  further than Schmoll America!
+PCB solutions with a focus on innovation and
+                                                     We’re looking for engineers to work in the
+precision.                                        Chicagoland area.
+  Role: Accurate Circuit Engineering is look-        As a Service Engineer, you’ll be the driving
+                                                  force behind our customers’ success, providing
+ing for detail-oriented PCB Manufacturing
+                                                  top-notch technical support and maintenance ser-
+Technicians for all areas in PCB manufacturing.   vices for our PCB industry-leading equipment.
+Responsibilities include operating manufactur-
+ing equipment, performing quality checks, and     What you’ll do:
+                                                  • Install, commission, and maintain Schmoll
+documenting production data.                         equipment at customer sites
+Qualifications:                                   • Troubleshoot and repair equipment with ease
+                                                     and precision
+• High school diploma or equivalent;              • Provide technical training and tailored
+  technical training preferred                       applications solutions to customers
+• Experience in PCB manufacturing or
+                                                  What we offer:
+  electronics assembly a plus                     • A dynamic and supportive work environment
+• Strong attention to detail and ability to         where your voice matters
+  follow instructions                             • Opportunities for professional growth and
+• Familiarity with PCB manufacturing and            development in a cutting-edge industry
+  testing tools is advantageous                   • A competitive salary and benefits package
+                                                  • The satisfaction of knowing you’re making a
+What ACE Offers:                                    real difference in our customers’ lives
+• Competitive wages and benefits                  What we’re looking for:
+• Career growth opportunities                     • Engineering degree preferred
+• Supportive work environment with                • 3+ years of experience in an engineering role
+  comprehensive training                          • Strong technical knowledge of electrical and
+                                                    mechanical systems
+  To apply, send your resume and cover letter     • Excellent problem-solving and analytical skills
+to sales@ace-pcb.com with the subject “PCB        • Willingness to travel (up to 75%) to customer
+Manufacturing Technician Application.”              sites and HQ in Germany
+                                                     If you’re a motivated professional looking for a
+  Accurate Circuit Engineering is an equal-
+                                                  challenging and rewarding role, we want to hear
+opportunity employer and values diversity in      from you! Please submit your resume and cover
+the workplace.                                    letter to HR@SchmollAmerica.com.
+
+
+
+
+                                                                     APRIL 2025 I SMT007 MAGAZINE 89
+                            Career Opportunities
+
+    Sr. Test Engineer (STE-MD)                                          Rewarding Careers
+                                                                Take advantage of the opportunities we
+     The Test Connection, Inc. is a test engineering firm.   are offering for careers with a growing test
+  We are family owned and operated with solid growth
+  goals and strategies. We have an established work-
+                                                             engineering firm. We currently have several
+  force with seasoned professionals who are committed        openings at every stage of our operation.
+  to meeting the demands of high-quality, low-cost and          The Test Connection, Inc. is a test engi-
+  fast delivery.                                             neering firm. We are family owned and oper-
+     TTCI is an Equal Opportunity Employer. We offer         ated with solid growth goals and strategies.
+  careers that include skills-based compensation. We         We have an established workforce with sea-
+  are always looking for talented, experienced test engi-
+  neers, test technicians, quote technicians, electronics
+                                                             soned professionals who are committed to
+  interns, and front office staff to further our customer-   meeting the demands of high-quality, low-
+  oriented mission.                                          cost and fast delivery.
+                                                                TTCI is an Equal Opportunity Employer.
+    • Candidate would specialize in the development
+       of in-circuit test (ICT) sets for Keysight 3070
+                                                             We offer careers that include skills-based
+       (formerly Agilent & HP), Teradyne/GenRad, and         compensation. We are always looking for
+       Flying Probe test systems.                            talented, experienced test engineers, test
+    • Strong candidates will have more than five years       technicians, quote technicians, electronics
+       of experience with in-circuit test equipment.         interns, and front office staff to further our
+       Some experience with flying probe test                customer-oriented mission.
+       equipment is preferred. A candidate would
+       develop, and debug on our test systems and
+       install in-circuit test sets remotely online or at      Associate Electronics Technician/
+       customer’s manufacturing locations nationwide.
+                                                                      Engineer (ATE-MD)
+    • Proficient working knowledge of Flash/ISP                 TTCI is adding electronics technician/engineer
+       programming, MAC Address and Boundary                 to our team for production test support.
+       Scan required. The candidate would also help
+       support production testing implementing                • Candidates would operate the test systems
+       Engineering Change Orders and program                     and inspect circuit card assemblies (CCA)
+       enhancements, library model generation,                   and will work under the direction of engi-
+       perform testing and failure analysis of                   neering staff, following established proce-
+       assembled boards, and other related tasks.                dures to accomplish assigned tasks.
+       An understanding of stand-alone boundary               • Test, troubleshoot, repair, and modify
+       scan and flying probe desired.                            developmental and production electronics.
+    • Some travel required. Positions are available in        • Working knowledge of theories of
+       the Hunt Valley, Md., office.                             electronics, electrical circuitry, engineering
+    Contact us today to learn about the rewarding                mathematics, electronic and electrical
+  careers we are offering. Please email resumes with a           testing desired.
+  short message describing your relevant experience           • Advancement opportunities available.
+  and any questions to careers@ttci.com. Please, no           • Must be a US citizen or resident.
+  phone calls.
+
+
+
+
+90 SMT007 MAGAZINE I APRIL 2025
+                         Career Opportunities
+
+
+     Sales Manager                                        Are You Our Next
+              Longmont, CO
+   This is a full-time, on-site role for a Sales Man-
+ager at Blackfox Training Institute in Longmont,
+CO. We are looking for a Sales Manager with a
+                                                            Superstar?!
+strong track record of B2B sales management                Insulectro, the largest national
+experience. The Sales Manager will be respon-           distributor of printed circuit board
+sible for day-to-day sales activities, developing       materials, is looking to add super-
+sales strategies, building and maintaining client
+                                                        stars to our dynamic technical and
+relationships, and achieving sales targets. Addi-
+tionally, the Sales Manager will participate in in-     sales teams. We are always look-
+dustry events, represent the company at trade           ing for good talent to enhance our
+shows, and collaborate with the marketing team.         service level to our customers and
+                                                        drive our purpose to enable our
+Qualifications:                                         customers to build better boards
+• Sales Strategy Development, Client
+  Relationship Management, and Sales Target
+                                                        faster. Our nationwide network
+  Achievement                                           provides many opportunities for
+• Experience in B2B sales and a proven track            a rewarding career within our
+  record of meeting sales goals                         company.
+• Structured and growth-oriented approach to               We are looking for talent with
+  Sales Leadership
+                                                        solid background in the PCB or
+• Excellent communication and negotiation skills
+• Knowledge of the training or education                PE industry and proven sales
+  industry a plus                                       experience with a drive and atti-
+• Able to work effectively in a team and                tude that match our company cul-
+  independently                                         ture. This is a great opportunity to
+• Bachelor’s degree in Business                         join an industry leader in the PCB
+  Administration, Engineering or related field
+• Proficiency in CRM software such as Hubspot
+                                                        and PE world and work with a ter-
+• Services sales experience will be a strong plus       rific team driven to be vital in the
+                                                        design and manufacture of future
+          Contact Jamie Noland to apply:                circuits.
+              jamien@blackfox.com
+
+
+
+
+                                                                     APRIL 2025 I SMT007 MAGAZINE 91
+                         Career Opportunities
+
+
+    Field Service Technician                           Become a Certified IPC
+      MivaTek Global is focused on providing a
+   quality customer service experience to our            Master Instructor
+   current and future customers in the print-
+   ed circuit board and microelectronic indus-          Opportunities are available in Canada, New Eng-
+   tries. We are looking for bright and talented     land, California, and Chicago. If you love teaching
+   people who share that mindset and are en-         people, choosing the classes and times you want to
+   ergized by hard work who are looking to be        work, and basically being your own boss, this may
+   part of our continued growth.                     be the career for you. EPTAC Corporation is the lead-
+      Do you enjoy diagnosing machines and           ing provider of electronics training and IPC certifi-
+   processes to determine how to solve our           cation and we are looking for instructors that have
+   customers’ challenges? Your 5 years work-
+                                                     a passion for working with people to develop their
+   ing with direct imaging machinery, capital
+                                                     skills and knowledge. If you have a background
+   equipment, or PCBs will be leveraged as you
+   support our customers in the field and from       in electronics manufacturing and enthusiasm for
+   your home office. Each day is different, you      education, drop us a line or send us your resume.
+   may be:                                           We would love to chat with you. Ability to travel re-
+                                                     quired. IPC-7711/7721 or IPC-A-620 CIT certification
+   • Installing a direct imaging machine             a big plus.
+   • Diagnosing customer issues from both
+      your home office and customer site             Qualifications and skills
+   • Upgrading a used machine                          • A love of teaching and enthusiasm to help
+   • Performing preventive maintenance                   others learn
+   • Providing virtual and on-site training            • Background in electronics manufacturing
+   • Updating documentation                            • Soldering and/or electronics/cable assembly
+                                                         experience
+     Do you have 3 years’ experience working
+                                                       • IPC certification a plus, but will certify the
+   with direct imaging or capital equipment? En-
+   joy travel? Want to make a difference to our          right candidate
+   customers? Send your resume to N.Hogan@
+   MivaTek.Global for consideration.                 Benefits
+                                                       • Ability to operate from home. No required
+   More About Us                                         in-office schedule
+     MivaTek Global is a distributor of Miva Tech-     • Flexible schedule. Control your own schedule
+   nologies’ imaging systems. We currently have        • IRA retirement matching contributions after
+   55 installations in the Americas and have ma-         one year of service
+   chine installations in China, Singapore, Korea,     • Training and certifications provided and
+   and India.                                            maintained by EPTAC
+
+
+
+
+92 SMT007 MAGAZINE I APRIL 2025
+                    Career Opportunities
+
+
+ Sales Representatives
+Prototron Circuits, a market-leading, quick-
+turn PCB manufacturer located in Tucson,
+AZ, is looking for sales representatives for
+the Southeastern U.S. territory. With 35+
+years of experience, our PCB manufactur-
+ing capabilities reach far beyond that of
+your typical fabricator.
+
+Reasons you should work with Prototron:
+• Solid reputation for on-time delivery
+   (98+% on-time)
+• Capacity for growth
+• Excellent quality
+• Production quality quick-turn services
+    in as little as 24 hours
+• 5-day standard lead time
+• RF/microwave and special materials
+• AS9100D
+• MIL-PRF- 31032
+• ITAR
+• Global sourcing option (Taiwan)
+• Engineering consultation, impedance
+    modeling
+• Completely customer focused team
+
+       Interested? Please contact
+      Russ Adams at (206) 351-0281
+        or russa@prototron.com.
+
+
+
+
+                                               APRIL 2025 I SMT007 MAGAZINE 93
+               More Secrets of High-speed PCBs
+               by Martyn Gaudion, Polar Instruments
+               This book emphasizes the most effective methods for transitioning quality designs from
+               prototype to production with a focus on signal integrity. In the realm of signal integrity, the
+               most skilled designers and fabricators consistently measure, model, and then measure
+               again to guarantee the highest quality and predictable signal integrity in their designs and
+               products. Read it now!
+
+
+                DFM Essentials
+                by Anaya Vardya, American Standard Circuits, ASC Sunstone Circuits
+                One of the biggest challenges facing printed circuit board designers is not understanding
+                the cost drivers in the PCB manufacturing process, particularly the manufacturing of
+                advanced technology PCBs. The guidelines offered in this book are based on both ASC
+                recommendations and IPC standards. Download your copy today.
+
+
+
+
+94 SMT007 MAGAZINE I APRIL 2025
+        MANAGING EDITOR: NOLAN JOHNSON
+      (971) 202-0110; nolan@iconnect007.com                    A DV ERT I SER I N D EX
+       EXECUTIVE ADVISOR: BARRY MATTIES
+            barry@iconnect007.com
+                                                          AEGIS.................................................67
+          ASSOCIATE EDITOR: MICHELLE TE                   Akrometrix..........................................73
+            michelle@iconnect007.com
+                                                          Alpha Circuit........................................15
+        TECHNICAL EDITOR: PETE STARKEY
+   +44 (0) 1455 293333; pete@iconnect007.com              AMI EMS............................................ 59
+        TECHNICAL EDITOR: PATTY GOLDMAN                   ASC Sunstone.......................................19
+ CONTRIBUTING TECHNICAL EDITOR: HAPPY HOLDEN              Axxon Mycronic....................................47
+     (616) 741-9213; happy@iconnect007.com
+ CONTRIBUTING TECHNICAL EDITOR: DAN FEINBERG
+                                                          Blackfox Training Institute................. 27, 81
+            baer@iconnect007.com
+                                                          CHT....................................................61
+BUSINESS DEVELOPMENT MANAGER: BARB HOCKADAY
+      (916) 365-1727; barb@iconnect007.com                Delvitech............................................13
+MARKETING SERVICES MGR.: TOBEY MARSICOVETERE              Flexible Circuit Technologies.................. 23
+    (847) 250-1696; tobey@iconnect007.com
+                                                          I-007eBooks......................................2, 3
+ DIGITAL MARKETING MANAGER: BRITTANY MARTIN
+           brittany@iconnect007.com                       Indium...............................................21
+       PRODUCTION MANAGER: SHELLY STEIN                   IPC............................................... 17, 83
+            shelly@iconnect007.com
+         MAGAZINE LAYOUT: MARIEL EVANS                    IPC Community.................................... 63
+    AD DESIGN: SHELLY STEIN, MIKE RADOGNA,                Koh Young.......................................... 65
+             TOBEY MARSICOVETERE
+                                                          KYZEN................................................. 7
+    CREATIVE TECHNOLOGIST: BRYSON MATTIES
+                                                          Linkage Technologies............................41
+                COVER: SHELLY STEIN
+ COVER IMAGE: COURTESY OF CREATIVE ELECTRON
+                                                          LPKF................................................. 43
+                                                          Mycronic............................................. 11
+                                                          Nordson.............................................31
+                                                          On the Line with.................................. 69
+                                                          P Kay Metal........................................ 35
+                 SMT007 MAGAZINE®                         Prototron Circuits.................................77
+      is published by IPC Publishing Group, Inc.,
+ 3000 Lakeside Dr., Suite 105N, Bannockburn, IL 60015     Rehm.................................................37
+© 2025 IPC Publishing Group, Inc. does not assume and     Summit Interconnect............................ 45
+  hereby disclaims any liability to any person for loss
+    or damage caused by errors or omissions in the        SMTA..................................................57
+ material contained within this publication, regardless
+    of whether such errors or omissions are caused        SPEA..................................................79
+   accidentally, from negligence or any other cause.
+                                                          Technica USA........................................ 5
+            April 2025, Volume 40, Number 4               The Test Connection............................. 53
+        SMT007 MAGAZINE is published monthly,
+    by IPC Publishing Group, Inc., dba I-Connect007.      US Circuit........................................... 33
+
+                                                                                  APRIL 2025 I SMT007 MAGAZINE 95
+
