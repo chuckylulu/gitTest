@@ -12,7 +12,7 @@
 | PAPM-049 | MATCH | - | We propose a practical but very effective method for pre-screening of these interface failures in mass production with the idea of small changes in BE | [F] |
 | PAPM-222 | PARTIAL | confirmed PARTIAL | III. CONCLUSIONS: "The optimized process was successfully applied in mass production, demonstrating improved productivity and stable quality, with no  | [C] |
 | PAPM-201 | MATCH | - | The results of this study have been implemented into measurement equipment and developed into a commercialized solution currently in use. | [C] |
-| PAPM-206 | MATCH | - | the y-axis indicates the total time (in seconds) required to measure 600 chips. Under the given experimental conditions, the total measurement time of | [F] |
+| ADDL-002 | MATCH (completeness-round check) | - | Exact quote on p3 ('HVM starting in 2019'). Wafer/die sort comes from the p11 table. A production statement, so [C] is correct. | [C] |
 | PAPM-216 | MATCH | - | Final validation using actual HBM device wafers in a production-grade MI setup confirmed these findings. | [F] |
 | PAPM-136 | MATCH | - | Micro-bump joint integrity for entire 12-layer stacks after reliability confirmed with daisy chain resistance and Confocal Scanning Acoustic Microscop | [F] |
 | SMP-031 | MATCH | - | The implementation of 100% overlay measurement is needed ... to achieve high overlay metrology throughput with 100% chiplet inspection ... roadmap tow | [F] |
@@ -22,5 +22,5 @@
 | TALK-024 | MATCH | - | Samsung Electronics has begun introducing new inspection equipment for hybrid bonding, with Onto Innovation’s systems reportedly undergoing validation | [S] |
 | XR-003 | MATCH | - | even after overexposure to three times the limit provided by DRAM manufacturer, no infant mortality failures were observed. However, the reliability o | [F] |
 | XR-015 | MATCH | - | The public keynote abstract explicitly lists “DRAM/HBM damage concern by X-ray” among the challenges for advanced-packaging inspection. | [S] |
-| PAPM-225 | MATCH | - | The 191 inspection systems used in this study are Hitachi High-Tech IS4100 patterned-wafer defect inspection tools | [F] |
+| ADDM-007 | MATCH (completeness-round check) | - | The quote is on p4: 10-20 min per wafer for SAM, and an interferometry alternative was developed. | [F] |
 | TALK-014 | MISMATCH | confirmed MISMATCH | Quote is exact, from the paragraph beginning "The W2W method has been commercialized...": "For HBM, the D2W approach is being adopted and is progressi | [S] |

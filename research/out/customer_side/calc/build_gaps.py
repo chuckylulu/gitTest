@@ -36,8 +36,41 @@ for f in sorted(glob.glob(os.path.join(OUT, "parts", "*_notes.md"))):
             items.append((mod, norm(line)))
 for m in MAIN:
     items.append(("MAIN", m))
+DROP = [  # duplicates or misclassified lines (final check): covered by other lines in the allowed form
+    "NOT DISCLOSED (read: Semantic Scholar abstract of Micron VLSI 2025",   # missing abstract = NOT RETRIEVED (PAPM line)
+    "measurement method of the AEM paper (no abstract in either record)",  # covered by the ADDM NOT RETRIEVED line
+    "Every [F] row rests on the paper's abstract",                          # summary prose, covered by the ieeexplore lines
+    "Conference papers here are evidenced by their abstract only",         # summary prose, covered by the PAPM full-text lines
+    "The volume-production release of 8 Jul 2025 is NOT RETRIEVED (see section 2)",  # covered by the globenewswire line
+]
+
+
+def form_first(t):
+    """Rewrite a gap line so it starts with the allowed form: 'NOT RETRIEVED (tried: ...) - subject' or
+    'NOT DISCLOSED (read: ...) - subject'. Parenthesised forms without 'tried:'/'read:' get the keyword inserted."""
+    t = re.sub(r"NOT RETRIEVED \((?!tried:)", "NOT RETRIEVED (tried: ", t)
+    t = re.sub(r"NOT DISCLOSED \((?!read:)", "NOT DISCLOSED (read: ", t)
+    m = re.search(r"NOT (RETRIEVED|DISCLOSED) \(", t)
+    if not m:
+        return t
+    i, depth = m.end() - 1, 0
+    for j in range(i, len(t)):
+        depth += t[j] == "("
+        depth -= t[j] == ")"
+        if depth == 0:
+            break
+    form = t[m.start():j + 1]
+    rest = (t[:m.start()] + " " + t[j + 1:]).strip()
+    rest = re.sub(r"\s+", " ", rest).strip(" .:;-")
+    rest = rest.replace(" The vendor links are", "").strip(" .:;-")
+    return form + (" - " + rest if rest else "")
+
+
 seen, out = set(), []
 for mod, t in items:
+    if any(d in t for d in DROP):
+        continue
+    t = form_first(t)
     k = re.sub(r"[^a-z0-9]", "", t.lower())[:220]
     if k in seen:
         continue

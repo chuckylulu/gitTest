@@ -31,10 +31,16 @@ print("### The 15 most important rows (review packet claims): result of the self
 print("")
 print("| Id | First pass | Second check | Wording found by the checker (excerpt) | Tag after fixes |")
 print("|---|---|---|---|---|")
+gf = json.load(open(os.path.join(C, "gapfill_results.json")))
+gchk = {r["id"]: r for x in gf["gapfill"] for r in x["check"]["rows"]}
 src = open(os.path.join(C, "build_review_packet.py"), encoding="utf-8").read()
-ids = re.findall(r'\("((?:PAPM|PAPL|TALK|XR|SMP|AW)-\d{3})", "', src.split("INFER")[0])
+ids = re.findall(r'\("((?:PAPM|PAPL|TALK|XR|SMP|AW|ADDM|ADDL)-\d{3})", "', src.split("INFER")[0])
 for i in ids:
     r = rows.get(i, {}); c = conf.get(i)
+    if not r and i in gchk:  # added in the completeness round; checked there by a clean-context agent
+        g = gchk[i]
+        print(f"| {i} | {g['verdict']} (completeness-round check) | - | {g['issue'][:150].replace('|', '/')} | {ev[i]['tag']} |")
+        continue
     sec = "-" if not c else (f"confirmed {c['final_verdict']}" if c["problem_is_real"] else "not confirmed (row kept)")
     fw = (c["found_wording"] if c else r.get("found_wording", ""))[:150].replace("|", "/").replace("\n", " ")
     print(f"| {i} | {r.get('verdict','?')} | {sec} | {fw} | {ev[i]['tag']} |")

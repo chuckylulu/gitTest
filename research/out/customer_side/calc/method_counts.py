@@ -11,9 +11,9 @@ CLS = [
     ("e-beam (SEM/TEM/FIB)", r"e-beam|\bSEM\b|\bTEM\b|\bFIB\b|electron|STEM"),
     ("AFM", r"\bAFM\b|atomic force"),
     ("acoustic microscopy", r"(?<!laser-)acoustic|\bC?-?SAM\b|\bSAT\b|cSAM"),
-    ("optical", r"optical|interferom|moir|vision|reflectom|ellipsom"),
+    ("optical", r"optical|interferom|moir|vision|(?<!X-ray )reflectom|ellipsom"),
     ("infrared", r"infrared|\bIR\b|\bNIR\b|thermograph|OBIRCH"),
-    ("X-ray CT / laminography", r"X-ray CT|laminograph|X-ray micro|\bXRM\b|X-ray"),
+    ("X-ray CT / laminography", r"X-ray CT|laminograph|X-ray micro|\bXRM\b|3D X-ray"),
     ("X-ray scatterometry / XRF / XRD", r"XRF|XRD|SAXS|XRR|scatterometr|X-ray reflect"),
     ("laser-acoustic", r"laser-acoustic|picosecond|photoacoustic|laser ultras"),
 ]
@@ -24,7 +24,10 @@ for name, rx in CLS:
     n = sum(1 for r in sel if re.search(rx, r["method"], re.I))
     counts.append((n, name))
 counts.sort(key=lambda x: -x[0])
-txt = (f"Of the {len(sel)} Section 1 documents on the six named steps whose evidence is not press-only, "
+STACK = re.compile(r"pre-bond surface|bond overlay|post-bond voids|TSV / micro-bump|wafer shape", re.I)
+n_stack = sum(1 for r in sel if STACK.search(r["process_step"]))
+txt = (f"Of the {len(sel)} Section 1 documents on the six named steps whose evidence is not press-only "
+       f"({n_stack} concern HBM, TSV/micro-bump, bonding or wafer shape; {len(sel)-n_stack} only memory film and CD metrology), "
        + ", ".join(f"{name} is named in {n}" for n, name in counts)
-       + " (count by `calc/method_counts.py`; one document can name several methods).")
+       + " (count by `calc/method_counts.py`; one document can name several methods) [I] MAIN-013.")
 print(txt)

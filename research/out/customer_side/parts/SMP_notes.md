@@ -40,34 +40,36 @@ Module run 2026-11-21. Period: 1 Jan 2025 to 21 Nov 2026. Evidence rows: `resear
 
 ## Direction table
 
-| Chipmaker | Product / process | Direction (more / fewer / replaced by VM-AI / unclear) | What is counted (steps, sampling %, measurements, test time) | Numbers | Exact wording | Tag + evidence id |
+| Chipmaker | Product / process | Direction (more / fewer / supplemented by VM-AI / replaced by VM-AI / unclear) | What is counted (steps, sampling %, measurements, test time) | Numbers | Exact wording | Tag + evidence id |
 |---|---|---|---|---|---|---|
+| SK hynix | HBM in-line chip warpage | more (destructive sample to all chips) | chips measured per wafer; time | 600 chips in about 7-10 min | "the sample size is far too small to effectively inform defect reduction strategies" | [F] PAPM-206, PAPM-208; deployment [C] PAPM-201 |
+| Samsung | DRAM development in-fab measurement | replaced by VM-AI (ML imputation of unmeasured products, development phase) | sampling % | about 4% measured | "measurements are conducted on only about 4% of the products" | [F] PAPM-099, PAPM-100 |
 | SK hynix | HBM4 package-level SiP / system-level test | more | test capability (memory-side SLT for compatibility checks and failed-unit re-test; not a per-unit step) | none | "SK하이닉스가 고대역폭메모리4(HBM4)에 사용하는 실장 테스트 장비 개발에 성공했다" | [S] SMP-009, SMP-010 |
 | SK hynix | HBM wafer test + KGSD wafer test (Hot Chips 2026) | unclear (insertions shown, no trend) | test steps | 2 wafer-level test steps named | "A known-good stacked die (KGSD) wafer step allows SK hynix to test each cube before it reaches system-level packaging" | [S] SMP-011 |
-| SK hynix | VM (scope not stated; HBM smart-factory article) | replaced by VM-AI (coverage up) | wafer coverage (virtual) | every wafer | "an AI-based virtual measurement system enabling quality inspections for every wafer" | [C] SMP-001 |
-| SK hynix | VM (scope not stated) | replaced by VM-AI | coverage; production time | all wafers; no added production time | "detecting and inspecting quality anomalies across all wafers without increasing the total production time for finished products" | [C] SMP-002 |
-| SK hynix | Panoptes VM tool-to-tool matching | replaced by VM-AI (offsets low sampling) | sampling rate (physical, qualitative) | none | "difficult to analyze previously due to low sampling rates" | [F] SMP-005, SMP-006; [C] SMP-045 (in use since 2022) |
-| SK hynix | Litho overlay VM (GRACE), in production since 2025 per SK hynix | replaced by VM-AI (complements) | sampling blind spots; F1 | +62.57 pp / +56.99 pp F1 | "complement the throughput limitations and sampling blind spots of physical metrology" | [C] SMP-007; [F] SMP-008 |
-| SK hynix | AI defect-image analysis | replaced by VM-AI (analysis time) | defect analysis time | none | "drastically reduced the time required for defect analysis" | [C] SMP-004 |
+| SK hynix | VM (scope not stated; HBM smart-factory article) | supplemented by VM-AI (coverage up) | wafer coverage (virtual) | every wafer | "an AI-based virtual measurement system enabling quality inspections for every wafer" | [C] SMP-001 |
+| SK hynix | VM (scope not stated) | supplemented by VM-AI (coverage up) | coverage; production time | all wafers; no added production time | "detecting and inspecting quality anomalies across all wafers without increasing the total production time for finished products" | [C] SMP-002 |
+| SK hynix | Panoptes VM tool-to-tool matching | supplemented by VM-AI (offsets low sampling) | sampling rate (physical, qualitative) | none | "difficult to analyze previously due to low sampling rates" | [F] SMP-005, SMP-006; [C] SMP-045 (in use since 2022) |
+| SK hynix | Litho overlay VM (GRACE), in production since 2025 per SK hynix | supplemented by VM-AI (complements) | sampling blind spots; F1 | +62.57 pp / +56.99 pp F1 | "complement the throughput limitations and sampling blind spots of physical metrology" | [C] SMP-007; [F] SMP-008 |
+| SK hynix | AI defect-image analysis | supplemented by AI (analysis time) | defect analysis time | none | "drastically reduced the time required for defect analysis" | [C] SMP-004 |
 | SK hynix | DRAM/SoC test (not HBM-specific) | fewer (goal) | test time, TAT | none | "그리고 테스트 시간 단축과 TAT" | [F] SMP-012 |
 | Samsung | HBM buffer-die micro-bump resistance pre-screen | more (proposed) | test/monitoring items | +1 proposed item (adoption not stated) | "it can be an essential quality monitoring item for buffer die" | [F] SMP-014 |
 | Samsung | HBM/DRAM EDS test (repair + on-die ECC) | more (cost), mitigation offered | test cost | none | "the rising test cost of high-density HBM and DRAM products" | [F] SMP-015 |
 | Samsung | HBM package non-destructive monitoring (red light source) | more | inspection methods | none | "Red 광원을 활용해 새로운 모니터링 솔루션을 개발한 것이다" | [F] SMP-013 |
 | Samsung | VNAND W2W hybrid bonding, in-line AFM | more (massive metrology) | measurements per wafer/die | 6 production wafers in study | "essentially calling for massive metrology" | [F] SMP-016 |
-| Samsung | SEM metrology/inspection imaging, AI enhancement (device type not stated) | replaced by VM-AI (time per image) | acquisition/throughput time | -75% (3.9x faster) | "by a decrease of up to 75% (3.9 times faster) in comparison to HQ" | [F] SMP-017 |
+| Samsung | SEM metrology/inspection imaging, AI enhancement (device type not stated) | supplemented by AI (time per image) | acquisition/throughput time | -75% (3.9x faster) | "by a decrease of up to 75% (3.9 times faster) in comparison to HQ" | [F] SMP-017 |
 | Samsung | HBM4E manufacturing, Agentic AI + digital twin | unclear | none | none | "In advanced memory such as HBM4E, even minor process variations can have a substantial impact on quality and yield" | [F] SMP-019; [C] SMP-046, SMP-047, SMP-020 |
 | Micron | Wafer-defect AI-ADC | replaced by VM-AI (manual classification) | classification labor | none | "Technicians and engineers no longer need to classify wafer defects manually" | [C] SMP-022 |
 | Micron | Fab-wide image AI | unclear (level, no trend) | images / control points per week | 100 M images; 436 M control points | "590,000 sensors produce 100 million wafer images in 436 million control points" | [F] SMP-023 |
-| Micron | Dry-etch cloud VM (HVM memory fab) | replaced by VM-AI (sampling efficiency) | sampling efficiency | 1 year production data | "to improve sampling efficiency" | [F] SMP-025 |
+| Micron | Dry-etch cloud VM (HVM memory fab) | supplemented by VM-AI (sampling efficiency; may include fewer measurements) | sampling efficiency | 1 year production data | "to improve sampling efficiency" | [F] SMP-025 |
 | Micron | DRAM container-slant inline CD-SEM metric | more (inline); offered as alternative to destructive checks | inline measurements | +1 metric | "practical alternative to backscatter electron detection or destructive techniques" | [F] SMP-026 |
 | Micron | DRAM test capacity (capex) | more (capacity) | test facility | none | "Singapore HBM advanced packaging facility and Taiwan DRAM test facility" | [F] SMP-028 |
 | Intel | C2W hybrid-bond overlay metrology | more (reduced sampling to 100%) | sampling %, chiplets measured | 100% chiplets | "to achieve high overlay metrology throughput with 100% chiplet inspection" | [F] SMP-030, SMP-031 |
 | Intel | Multi-die client CPU test (hybrid bonding not stated) | fewer | test application time | none | "significantly reduced their overall test application time across their manufacturing test flows" | [F] SMP-032 |
-| Intel | Front-end litho virtual defect metrology (proposed; HVM deployment not stated) | replaced by VM-AI (coverage up) | wafer/die coverage | every wafer and die | "Comprehensive gross defect monitoring is achieved for every wafer and die at each photolithography step" | [F] SMP-033 |
+| Intel | Front-end litho virtual defect metrology (proposed; HVM deployment not stated) | supplemented by VM-AI (coverage up) | wafer/die coverage | every wafer and die | "Comprehensive gross defect monitoring is achieved for every wafer and die at each photolithography step" | [F] SMP-033 |
 | Intel | Front-end e-beam VC full-wafer inspection | more | hot spots per hour | 1 billion/h | "Throughputs of 1 billion hot spots per hour are routinely achieved" | [F] SMP-034 |
-| TSMC | Packaging unit: ML Die-of-Interest, adaptive test | replaced by VM-AI (targeted testing) | outlier-die identification (metric not defined) | 9-fold vs baseline | "a 9-fold improvement in identifying outlier dies compared to baseline" | [F] SMP-035 |
+| TSMC | Packaging unit: ML Die-of-Interest, adaptive test | supplemented by VM-AI (targeted testing, envisioned) | outlier-die identification (metric not defined) | 9-fold vs baseline | "a 9-fold improvement in identifying outlier dies compared to baseline" | [F] SMP-035 |
 | TSMC | SoW 3D test access (IEEE 1838) | unclear | test scheduling | none | "optimizing test scheduling while reducing power consumption" | [F] SMP-036 |
-| ASE | Flip-chip FA, AI-enhanced SAM | replaced by VM-AI (scan time) | SAM scan time | none | "decreases significantly SAM scanning time" | [F] SMP-037 |
+| ASE | Flip-chip FA, AI-enhanced SAM | supplemented by AI (scan time) | SAM scan time | none | "decreases significantly SAM scanning time" | [F] SMP-037 |
 | Amkor | 2.5D/3D distributed test (HBM named only as market context) | more | intermediate test insertions | none | "in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D" | [C] SMP-038; [S] SMP-039 |
 
 ## 2. Gaps
@@ -109,6 +111,7 @@ Module run 2026-11-21. Period: 1 Jan 2025 to 21 Nov 2026. Evidence rows: `resear
 - Out of period, context only: SK hynix newsroom (Feb 2024) reported Panoptes VM on over 50 million wafers; Gauss Labs Panoptes VM 2.0 release (Aug 2024) reported about 29% variability improvement with APC.
 
 ## Corrections after verification (2026-11-21)
+- Final check (main session): direction labels for VM/AI rows changed from 'replaced by' to 'supplemented by' where the source presents VM/AI as extra coverage or speed; 'replaced' kept for Micron AI-ADC (manual classification no longer needed) and the added Samsung 4% row; rows added for SK hynix all-chip warpage (PAPM-206/208, [C] PAPM-201) and Samsung DRAM-development imputation (PAPM-099/100).
 
 - Retagged [F] to [C] (untestable company in-use, performance or service claims): SMP-001, SMP-002, SMP-004, SMP-007, SMP-022, SMP-038.
 - Split: SMP-005 (in-use since 2022 moved to new SMP-045 [C]); SMP-019 (agentic-AI defect detection and Pyeongtaek digital twin moved to new SMP-046 and SMP-047 [C]).

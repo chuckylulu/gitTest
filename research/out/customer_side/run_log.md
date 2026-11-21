@@ -64,7 +64,7 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
 | PAPM-049 | MATCH | - | We propose a practical but very effective method for pre-screening of these interface failures in mass production with the idea of small changes in BE | [F] |
 | PAPM-222 | PARTIAL | confirmed PARTIAL | III. CONCLUSIONS: "The optimized process was successfully applied in mass production, demonstrating improved productivity and stable quality, with no  | [C] |
 | PAPM-201 | MATCH | - | The results of this study have been implemented into measurement equipment and developed into a commercialized solution currently in use. | [C] |
-| PAPM-206 | MATCH | - | the y-axis indicates the total time (in seconds) required to measure 600 chips. Under the given experimental conditions, the total measurement time of | [F] |
+| ADDL-002 | MATCH (completeness-round check) | - | Exact quote on p3 ('HVM starting in 2019'). Wafer/die sort comes from the p11 table. A production statement, so [C] is correct. | [C] |
 | PAPM-216 | MATCH | - | Final validation using actual HBM device wafers in a production-grade MI setup confirmed these findings. | [F] |
 | PAPM-136 | MATCH | - | Micro-bump joint integrity for entire 12-layer stacks after reliability confirmed with daisy chain resistance and Confocal Scanning Acoustic Microscop | [F] |
 | SMP-031 | MATCH | - | The implementation of 100% overlay measurement is needed ... to achieve high overlay metrology throughput with 100% chiplet inspection ... roadmap tow | [F] |
@@ -74,9 +74,8 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
 | TALK-024 | MATCH | - | Samsung Electronics has begun introducing new inspection equipment for hybrid bonding, with Onto Innovation’s systems reportedly undergoing validation | [S] |
 | XR-003 | MATCH | - | even after overexposure to three times the limit provided by DRAM manufacturer, no infant mortality failures were observed. However, the reliability o | [F] |
 | XR-015 | MATCH | - | The public keynote abstract explicitly lists “DRAM/HBM damage concern by X-ray” among the challenges for advanced-packaging inspection. | [S] |
-| PAPM-225 | MATCH | - | The 191 inspection systems used in this study are Hitachi High-Tech IS4100 patterned-wafer defect inspection tools | [F] |
+| ADDM-007 | MATCH (completeness-round check) | - | The quote is on p4: 10-20 min per wafer for SAM, and an interferometry alternative was developed. | [F] |
 | TALK-014 | MISMATCH | confirmed MISMATCH | Quote is exact, from the paragraph beginning "The W2W method has been commercialized...": "For HBM, the D2W approach is being adopted and is progressi | [S] |
-
 
 12. Fixes: workflow customer-side-apply-fixes (one agent per module file) applied the confirmed fixes; results in calc/fix_results.json. The main session then:
     - corrected the same wrong note on PAPM-217..229 and the TALK-037 period;
@@ -114,5 +113,26 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
 
 15. GitHub push protection blocked a commit. sources/customer_side/2026-11-21_nist_fcmn2026-page-571991.html, a NIST page saved by the ADDM collector, embeds the site's own Mapbox access token in its Drupal settings. The token was replaced with "[REDACTED-third-party-mapbox-token]", the manifest sha256 and note were updated, and the unpushed commit was amended. Nothing else in the page changed.
 
-## Steps
-(continued below)
+
+16. Final check (workflow customer-side-final-check; results in calc/final_check_results.json). Two clean-context lenses: evidence faithfulness, and compliance with the rules and the five asks. They found 16 must-fix items and a number of should-fix items. All must-fix items and most should-fix items were applied in the scripts and template, then everything was rebuilt.
+    Content changes:
+    - Samsung electrical test moved to lab: no statement places the test on production wafers or lines.
+    - Micron X-ray CT moved to none: an irradiation study is not inspection use. ASE acoustic moved to none: adjacent flip-chip FA.
+    - PAPM-224, TALK-006 and TALK-007 retagged [C] as in-use statements; Samsung optical, SK hynix optical and SK hynix e-beam now carry [C].
+    - Premise item 4 now cites TSMC's CPS test of the SoIC stack (ADDL-025).
+    - Premise items 9 and 10 were added: VM "replacing" measurement, and award vendors not being named.
+    - Section 3.1 now has a by-generation block (HBM4, HBM4E). An HBM4E line was added to the bottom line.
+    - The Section 3.4 direction table now says "supplemented by VM-AI" where VM adds coverage. Rows were added for SK hynix all-chip warpage and Samsung's roughly 4% measurement with ML imputation.
+    - The Section 4 award table gained SK hynix rows and Amkor's December 2025 award, with tagged "none" cells; Micron 2026 is now 13 companies.
+    - The Section 2.1 table gained the Intel copper-filter row (XR-006, MAIN-011).
+    - The method-count regexes were tightened (X-ray CT no longer counts XRD, XRR or EDX; optical no longer counts X-ray reflectometry). The count is now [I] MAIN-013.
+    Form changes:
+    - Section 1 uses one tag per row, with other-tag ids listed in the evidence column.
+    - Missing data appears only as "NOT DISCLOSED (read: ...)" or "NOT RETRIEVED (tried: ...)". gaps.md lines now start with the form, and five duplicate or misclassified lines were dropped.
+    - Verdict words in the analyst's voice were removed.
+    - New rows: MAIN-013 to MAIN-015.
+    Not applied: E8's option to add a new [S] row for the blog's naming claim; the dossier drops the claim instead. C17 says "or add a note"; retagging was chosen.
+    Final mechanical checks:
+    - quote_check over evidence.csv: every quote FOUND;
+    - no loose missing-data forms and no verdict words outside quotes or [I] lines in dossier.md (script check);
+    - every evidence id cited in dossier.md exists (build_dossier.py check).

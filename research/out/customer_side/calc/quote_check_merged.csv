@@ -222,7 +222,7 @@ PAPM-220,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-t
 PAPM-221,[F],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,FIB cross-section inspection to compare step coverage of SiO${}_{2}$ Film by the TSV results also confirmed that there was no difference
 PAPM-222,[C],FOUND,1,,research/sources/customer_side/2025-10-31_jsts_paper-hbm-tsv-teos-sio2.html,"The optimized process was successfully applied in mass production, demonstrating improved productivity and stable quality, with no significant differences in yi"
 PAPM-223,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"He is also an engineer with the Semiconductor Business Division at Samsung Electronics, South Korea."
-PAPM-224,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"Applied to 191 optical inspection tools in a Samsung Electronics high-volume manufacturing (HVM) line, the approach achieved a sensitivity matching accuracy wit"
+PAPM-224,[C],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"Applied to 191 optical inspection tools in a Samsung Electronics high-volume manufacturing (HVM) line, the approach achieved a sensitivity matching accuracy wit"
 PAPM-225,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,The 191 inspection systems used in this study are Hitachi High-Tech IS4100 patterned-wafer defect inspection tools
 PAPM-226,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"Deployed across 191 IS4100 patterned-wafer optical inspectors operating at after-develop (ADI), after-etch (AEI), and post-CMP inspection (PCI) checkpoints"
 PAPM-227,[F],FOUND,1,,research/sources/customer_side/2025-12-31_jsts_paper-optical-inspection-tool-matching.html,"The study covered 300-mm high-volume manufacturing for 10-nm-class second-generation DRAM (1y, a.k.a. D1y)"
@@ -425,8 +425,8 @@ TALK-002,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom
 TALK-003,[C],FOUND,1,,research/sources/customer_side/2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html,"We increased productivity by 31% in processes that had previously experienced bottlenecks, and improved yield by 21%"
 TALK-004,[C],FOUND,1,,research/sources/customer_side/2026-02-19_skhynix_newsroom-spie-al-2026-virtual-metrology.html,has used Gauss Labs’ AI-based virtual metrology solution “Panoptes VM (Virtual Metrology)” in its production lines since 2022
 TALK-005,[F],FOUND,1,,research/sources/customer_side/2026-05-22_skhynix_newsroom-kr-hypidia-dmi-article.html,"회로 선폭 및 두께, 수직 적층 시의 정렬 상태 등을 나노 단위로 측정하여"
-TALK-006,[F],FOUND,1,,research/sources/customer_side/2026-05-22_skhynix_newsroom-kr-hypidia-dmi-article.html,광학 및 전자현미경 장비를 활용해 수많은 칩 중에서 어디에 문제가 있는지를 빠르게 찾아내는 첫 번째 방어선이다
-TALK-007,[F],FOUND,1,,research/sources/customer_side/2026-05-21_skhynix_newsroom-kr-jobreport-base-technology.html,DMI(Defect analysis & Metrology Inspection)는 제품 개발과 양산 과정에서 발생하는 패턴 변화와 결함을 검출하는 핵심 계측 기술을 개발하며
+TALK-006,[C],FOUND,1,,research/sources/customer_side/2026-05-22_skhynix_newsroom-kr-hypidia-dmi-article.html,광학 및 전자현미경 장비를 활용해 수많은 칩 중에서 어디에 문제가 있는지를 빠르게 찾아내는 첫 번째 방어선이다
+TALK-007,[C],FOUND,1,,research/sources/customer_side/2026-05-21_skhynix_newsroom-kr-jobreport-base-technology.html,DMI(Defect analysis & Metrology Inspection)는 제품 개발과 양산 과정에서 발생하는 패턴 변화와 결함을 검출하는 핵심 계측 기술을 개발하며
 TALK-008,[F],FOUND,1,,research/sources/customer_side/2026-05-21_skhynix_newsroom-kr-jobreport-base-technology.html,기존에는 계측이 가능했던 영역조차 정확한 측정이 어려워지는 경우가 많아지고 있습니다
 TALK-009,[F],FOUND,1,,research/sources/customer_side/2025-08-25_skhynix_newsroom-kr-tech-innovation-partners-8th.html,넥센서는 ‘웨이퍼 및 칩 와피지 측정 장비 개발’을 진행하게 된다
 TALK-010,[F],FOUND,1,,research/sources/customer_side/2025-08-25_skhynix_newsroom-kr-tech-innovation-partners-8th.html,와피지 측정 및 제어 기술은 점점 미세화되는 반도체 공정의 불량률을 줄이기 위해 꼭 필요한 기술이다
@@ -831,3 +831,6 @@ MAIN-009,[I],,,,,
 MAIN-010,[F],FOUND,1,,research/sources/customer_side/2026-05-01_semanticscholar_s2-asmc2026-11551271-micron-cloud-vm.json,large-scale VM deployment remains challenging due to limited scalability and performance degradation under non-stationary manufacturing conditions
 MAIN-011,[F],FOUND,52,,research/sources/customer_side/2025-04-01_iconnect007_SMT007-Apr2025-magazine.pdf,although copper provides the most shielding
 MAIN-012,[S],FOUND,1,,research/sources/customer_side/2026-05-12_semiengineering_article-hbm-shifts-testing-left.html,Many of these challenges are resolved by the time we reach high-volume manufacturing (HVM) in our factory.
+MAIN-013,[I],,,,,
+MAIN-014,[I],,,,,
+MAIN-015,[I],,,,,
