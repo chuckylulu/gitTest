@@ -70,10 +70,10 @@ Fiscal years: FY24 42.8%, FY25 33.3%, FY26 29.8% [F] A4-011 to A4-013. Calendar 
 
 | Rule (date) | What it restricts (as KLA or the FR text says) | KLA's own impact statement | Evidence |
 |---|---|---|---|
-| Oct 7, 2022 BIS IFR (87 FR 62186) | Licences needed for effectively all KLA products and services to China fabs making non-planar or <=16/14nm logic, >=128-layer NAND, or <=18nm half-pitch DRAM; limits on US-person support; limits on tools sold to China WFE makers | Preliminary **gross direct CY2023 impact of $500M-$900M** (based on backlog, before reallocation). By Aug 2023: "have not significantly impacted our operations to date" | [F] A4-057, A4-058, A4-059; FR text NOT RETRIEVED |
+| Oct 7, 2022 BIS IFR (87 FR 62186) | Licences needed for effectively all KLA products and services to China fabs making non-planar or <=16/14nm logic, >=128-layer NAND, or <=18nm half-pitch DRAM; limits on US-person support; limits on tools sold to China WFE makers | Preliminary **gross direct CY2023 impact of $500M-$900M** (based on backlog, before reallocation). By Aug 2023: "have not significantly impacted our operations to date" | [C] A4-057, A4-058, A4-059; FR text NOT RETRIEVED |
 | Oct 17, 2023 update (SME IFR 88 FR 73424, published Oct 25, 2023; effective Nov 2023) | Revises the 2022 parameters, adds anti-circumvention measures, extends coverage to arms-embargoed countries | **No quantified impact**: "still evaluating these rules" | [F] A4-060, A4-061 |
-| Dec 2, 2024 IFR (89 FR 96790) + Entity List additions; Jan 2025 follow-on rules | New SME controls, new foreign direct product (FDP) rules, HBM controls, more Entity List names, a revised advanced-DRAM definition | **~$500M ± $100M CY2025 revenue impact, ~70% systems** (first given early Dec 2024). **RPO cut by ~$430M** (about half due within 12 months). Services growth hit in Mar 2025 quarter | [F] A4-062, A4-063, A4-064, A4-066; [S] A4-065 |
-| Sep 29, 2025 Affiliates Rule IFR (90 FR 47201) | Entity List / MEU restrictions extended to entities ≥50% owned by listed parties | **~$300-350M across the Dec 2025 quarter and CY2026**, described as "extended export controls" (KLA did not name the rule). CFO: the Dec 2025 quarter impact was "fairly immaterial" | [F] A4-067, A4-068; [S] A4-069 |
+| Dec 2, 2024 IFR (89 FR 96790) + Entity List additions; Jan 2025 follow-on rules | New SME controls, new foreign direct product (FDP) rules, HBM controls, more Entity List names, a revised advanced-DRAM definition | **~$500M ± $100M CY2025 revenue impact, ~70% systems** (first given early Dec 2024). **RPO cut by ~$430M** (about half due within 12 months). Services growth hit in Mar 2025 quarter | [F] A4-062, A4-064, A4-066; [C] A4-063; [S] A4-065 |
+| Sep 29, 2025 Affiliates Rule IFR (90 FR 47201) | Entity List / MEU restrictions extended to entities ≥50% owned by listed parties | **~$300-350M across the Dec 2025 quarter and CY2026**, described as "extended export controls" (KLA did not name the rule). CFO: the Dec 2025 quarter impact was "fairly immaterial" | [F] A4-067; [C] A4-068; [S] A4-069 |
 | Nov 10, 2025 suspension (FR 2025-19846), to Nov 9, 2026 | Affiliates Rule stayed | Jan 2026 CFO: China now expected **up** in CY2026, versus modestly down three months earlier; the affiliate business "feathered" back into the forecast; the recovered amount was "that ballpark" of $300-350M (no exact figure) | [F] A4-070, A4-071; [S] A4-072 |
 | Nov 9, 2026 extension of the suspension to Jan 10, 2027 | Affiliates Rule still stayed | No KLA statement (falls after the Q1 FY27 10-Q). The Q1 FY27 10-Q has no new export risk factor | [S] A4-073; [F] A4-074 |
 | 2026 SME-specific BIS rules | none found that KLA names | FY26 10-K and Q1 FY27 10-Q list no 2026 rule | [F] A4-074 |
@@ -83,7 +83,7 @@ Fiscal years: FY24 42.8%, FY25 33.3%, FY26 29.8% [F] A4-011 to A4-013. Calendar 
 
 ## A4.6 "China revenue has normalised": evidence for and against
 
-What KLA calls normal: a China share in the high-20s percent of revenue in CY2026 (letter [F] A4-041; CFO "27% to 29%" [S] A4-078), falling to the low-20s in 2027 [S] A4-078. The CFO attributed the decline partly to export controls and partly to "general normalization" [S] A4-075. China's growth is expected to be slower than WFE [S] A4-077.
+What KLA calls normal: a China share in the high-20s percent of revenue in CY2026 (letter [C] A4-041; CFO "27% to 29%" [S] A4-078), falling to the low-20s in 2027 [S] A4-078. The CFO attributed the decline partly to export controls and partly to "general normalization" [S] A4-075. China's growth is expected to be slower than WFE [S] A4-077.
 
 For:
 - CY2026 Jan-Sep China share is 28.7%, inside KLA's high-20s range [I] A4-031. If Q2 FY27 lands at a 25-29% China share, CY2026 comes out at 27.6-28.8% [I] A4-035.
@@ -178,8 +178,8 @@ Cumulative charges are $528.6M across three charges, all in the Orbotech-derived
 ## Premise issues
 
 - The prompt dates the 2023 update "Oct 17, 2023". That is the BIS announcement date. The SME rule was published in the Federal Register on Oct 25, 2023 (88 FR 73424) and took effect in November 2023 [F] A4-060.
-- The prompt says KLA estimated "~$400-500M CY2025 impact" for the Dec 2024 rules. KLA's figure was ~$500M ± $100M, i.e. $400-600M, with ~70% in systems [F] A4-063.
-- The prompt frames the "affiliates rule ~$300-350M" estimate as an FY26 figure. KLA framed it as the Dec 2025 quarter plus calendar 2026 (Oct 2025-Dec 2026), and attributed it to "extended export controls" without naming the Affiliates Rule [F] A4-068.
+- The prompt says KLA estimated "~$400-500M CY2025 impact" for the Dec 2024 rules. KLA's figure was ~$500M ± $100M, i.e. $400-600M, with ~70% in systems [C] A4-063.
+- The prompt frames the "affiliates rule ~$300-350M" estimate as an FY26 figure. KLA framed it as the Dec 2025 quarter plus calendar 2026 (Oct 2025-Dec 2026), and attributed it to "extended export controls" without naming the Affiliates Rule [C] A4-068.
 - The suspension of the Affiliates Rule did not simply end in Nov 2026. It was extended to Jan 10, 2027 [S] A4-073.
 - The prompt expects a "China share of semi process control systems" figure. KLA does not publish one (NOT DISCLOSED above).
 - Prior file: the FPD "ended manufacturing Dec 31, 2024" claim is corrected above.

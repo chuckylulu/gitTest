@@ -8,10 +8,10 @@ KLA uses two different AP figures. The prior chat put them side by side as if th
 
 | Period | Figure | KLA definition (wording) | Date stated | Evidence |
 |---|---|---|---|---|
-| CY24 (Jan-Dec 2024) | > $500M, later "~$500M" | "total advanced packaging revenue across the entire KLA portfolio" | 2024-07-24, 2025-01-30 | [F] Q2-001, Q2-002 |
-| CY25 estimate | > $925M; process control "over 70%" of it | "advanced packaging related revenue" | 2025-07-31 | [F] Q2-003 |
-| **CY25 actual, total** | **~$950M, ">70% YoY"** | "calendar 2025 total systems revenue" (all KLA AP systems) | 2026-01-29 | [F] Q2-005; same on Investor Day slide 68 [F] Q2-012 |
-| **CY25 actual, process control** | **~$635M** | "Semiconductor Process Control product portfolio revenue" | 2026-04-29 | [F] Q2-007 |
+| CY24 (Jan-Dec 2024) | > $500M, later "~$500M" | "total advanced packaging revenue across the entire KLA portfolio" | 2024-07-24, 2025-01-30 | [C] Q2-001, Q2-002 |
+| CY25 estimate | > $925M; process control "over 70%" of it | "advanced packaging related revenue" | 2025-07-31 | [C] Q2-003 |
+| **CY25 actual, total** | **~$950M, ">70% YoY"** | "calendar 2025 total systems revenue" (all KLA AP systems) | 2026-01-29 | [C] Q2-005; same on Investor Day slide 68 [C] Q2-012 |
+| **CY25 actual, process control** | **~$635M** | "Semiconductor Process Control product portfolio revenue" | 2026-04-29 | [C] Q2-007 |
 | CY26 guide (Jan 2026) | mid-teens growth | total-systems basis | 2026-01-29 | [C] Q2-006 |
 | CY26 guide (early 2026) | > 30% growth | Semi PC basis | quoted in Apr 2026 letter | [C] Q2-008 |
 | CY26 guide (Apr 2026) | ~$1.0B | Semi PC product portfolio | 2026-04-29 | [C] Q2-008 |
@@ -95,8 +95,8 @@ Split by product family, from 10-K FY26 Item 1 segment tables:
 
 | Prior claim | Result | Evidence |
 |---|---|---|
-| "Total AP revenue ~$950M in CY25" | CONFIRMED (total systems basis) | [F] Q2-005, Q2-012 |
-| "AP Process Control Systems revenue on track for $1.1B+ in CY26 (+70%+ YoY)" | CORRECTED: "approximately $1.1 billion", not "$1.1B+"; growth >70% on a $635M process-control base, not on $950M | [C] Q2-010, [F] Q2-007, [I] Q2-I01, Q2-I02 |
+| "Total AP revenue ~$950M in CY25" | CONFIRMED (total systems basis) | [C] Q2-005, Q2-012 |
+| "AP Process Control Systems revenue on track for $1.1B+ in CY26 (+70%+ YoY)" | CORRECTED: "approximately $1.1 billion", not "$1.1B+"; growth >70% on a $635M process-control base, not on $950M | [C] Q2-010, [C] Q2-007, [I] Q2-I01, Q2-I02 |
 | "share ~4x over 4 years" | CONFIRMED as KLA claim | [C] Q2-013 |
 | "irArcher 007 post-bond IR overlay 1.5-3.3 nm precision across 100-350 µm die" | NOT VERIFIABLE: irArcher Series is in the 10-K, but no saved source gives these numbers (kla.com JS challenge; ECTC 2023 PDF 403; IMAPS abstract silent) | [F] Q3-005, [F] Q3-019 |
 | "PWG5 XT option" | CONFIRMED (10-K FY24-FY26: "PWG5 with XT Option") | [F] Q3-005 |

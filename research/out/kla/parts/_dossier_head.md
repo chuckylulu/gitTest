@@ -20,14 +20,14 @@ The detailed sections after Module B are the module notes, kept as written. Each
 1. **Onto–Rigaku direction.** Onto bought 27.0% of Rigaku (announced 2026-04-20, closed 2026-08-10, JPY 113.08B, about $720M, one board seat) [F] Q1-015, Q1-018. Rigaku did not buy a stake in Onto. "Ai Diffract" is Onto software; it is used with Rigaku's CD-SAXS tools [C] Q1-016.
 2. **Axion family.** KLA has one X-ray line, Axion (the T2000, launched 2022-12-06). No successor or other X-ray product (XRR/XRF/HRXRD) was found [F] Q1-001, Q1-004. "Axion Series" does appear in the 10-K FY23-FY26 product lists. A note in this session's agent brief said otherwise; it was wrong and is corrected in run_log.md.
 3. **AP revenue figures use two definitions.**
-   - CY2025 "total systems revenue": about $950M [F] Q2-005.
-   - CY2025 "Semiconductor Process Control product portfolio" revenue: about $635M [F] Q2-007.
+   - CY2025 "total systems revenue": about $950M [C] Q2-005.
+   - CY2025 "Semiconductor Process Control product portfolio" revenue: about $635M [C] Q2-007.
    - The CY2026 target is "approximately $1.1 billion" of AP *process control systems* revenue [C] Q2-010.
 
    So the ledger wording "exceeds $1.1B" is stronger than what KLA says.
 4. **Export-rule estimates.**
-   - The Dec 2024 rules: KLA's estimate is about $500M ± $100M for CY2025, i.e. $400-600M, with about 70% in systems [F] A4-063.
-   - The "Affiliates Rule": KLA's ~$300-350M estimate covers Oct 2025-Dec 2026, not FY26. KLA called it "extended export controls" and did not name the rule [F] A4-068.
+   - The Dec 2024 rules: KLA's estimate is about $500M ± $100M for CY2025, i.e. $400-600M, with about 70% in systems [C] A4-063.
+   - The "Affiliates Rule": KLA's ~$300-350M estimate covers Oct 2025-Dec 2026, not FY26. KLA called it "extended export controls" and did not name the rule [C] A4-068.
    - "Oct 17, 2023" is the date BIS announced the rule. It was published in the Federal Register on 2023-10-25 [F] A4-060.
 5. **Affiliates Rule suspension.** The suspension did not end in Nov 2026; it was extended to 2027-01-10 [S] A4-073.
 6. **Earnings-call Q&A.** KLA does not post call transcripts. Every call quote here comes from a third-party transcript and is tagged [S]. The Q4 FY26 call transcript (2026-07-28) was NOT RETRIEVED.
@@ -38,10 +38,10 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 
 | # | Prior claim | Status | Evidence |
 |---|---|---|---|
-| 7 | 2022 Investor Day CY2026 target "MET" | CORRECTED: tested against FY26 (Jul 2025-Jun 2026) figures; CY2026 is not yet reported. On an implied basis revenue and OM beat the model, while non-GAAP GM (~62.5%) misses its ~63% | [F] A3-037, [I] A3-039 |
+| 7 | 2022 Investor Day CY2026 target "MET" | CORRECTED: tested against FY26 (Jul 2025-Jun 2026) figures; CY2026 is not yet reported. On an implied basis revenue and OM beat the model, while non-GAAP GM (~62.5%) misses its ~63% | [C] A3-037, [I] A3-039 |
 | 8 | Backlog rise from $7.86B to $12.57B caused by optical bottlenecks | Figures CONFIRMED; cause CORRECTED. The 10-K attributes the rise to AI-infrastructure demand | [F] A2-001 |
 | 9 | "Flat CY26 capacity plan" | No such statement found | — |
-| 10 | DRAM cost pressure "into H2 CY2027" | CORRECTED: the 10-K says fiscal 2027, which ends Jun 2027 | [F] Q5-005 |
+| 10 | DRAM cost pressure "into H2 CY2027" | CORRECTED: the 10-K says fiscal 2027, which ends Jun 2027 | [C] Q5-005 |
 | 11 | Services ">3-yr fixed subscriptions, <20% T&M" | CORRECTED: >80% of services revenue comes from multi-year subscription contracts, with ~3-year average length and 95% renewal; 95% of revenue is "recurring" including T&M | [C] A1-062, A1-063 |
 | 12 | Kronos 1190XR as the hybrid-bonding pre-bond tool | CORRECTED: KLA says Kronos is "not going to be sufficient" for hybrid bonding | [C] Q3-003 |
 | 13 | SPIE 10.1117/12.3090197 is an Axion "twisting validation" (Lam, 651 sites, R²>0.84) | CORRECTED: the paper is on hole-to-hole distance variance. The prior's figures are NOT VERIFIABLE | [S] Q1-014 |
@@ -79,7 +79,7 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 
 | Period | Total AP systems | AP process control (inspection + metrology) | Other AP (process equipment etc.) |
 |---|---|---|---|
-| CY2025 actual | ~$950M, >70% YoY [F] Q2-005 | ~$635M (66.8%) [F] Q2-007, [I] Q2-I03 | ~$315M, not broken out by KLA. Covers SPTS etch/deposition/dicing (Specialty Semi Process) and ICOS/Zeta/Orbotech substrate lines (PCB and Component Inspection) [I] Q2-I03 (Medium) |
+| CY2025 actual | ~$950M, >70% YoY [C] Q2-005 | ~$635M (66.8%) [C] Q2-007, [I] Q2-I03 | ~$315M, not broken out by KLA. Covers SPTS etch/deposition/dicing (Specialty Semi Process) and ICOS/Zeta/Orbotech substrate lines (PCB and Component Inspection) [I] Q2-I03 (Medium) |
 | CY2026 target | Jan 2026: "mid-teens" growth, not updated since [C] Q2-006 | "approximately $1.1 billion", >70% YoY. Set 2026-07-28, reaffirmed 2026-10-28 [C] Q2-009, Q2-010. Like-for-like: +73.2% [I] Q2-I01 | NOT DISCLOSED |
 | CY2027 | NOT DISCLOSED; AP is named only among drivers of 2027 capacity growth [C] Q2-011 | NOT DISCLOSED | NOT DISCLOSED |
 
@@ -116,7 +116,7 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 - **Components named.** Optics (glass and "volume optics") are the longest-lead item [S] Q5-024, Q5-029. The Investor Day supply slide lists sole-sourced optics, sensors and lasers, plus mostly sole-sourced stages and motion control [C] Q5-018.
 - **Lead times.** Historically about 6 months; 7-9 months in Oct 2025 [S] Q5-022; an order-to-ship time fence of almost 60 weeks in Mar 2026 [C] Q5-019; about 12 months on average in Oct 2026, with Gen4/Gen5 longer [S] Q5-027, Q5-028. The months figures appear in no KLA document.
 - **Backlog conversion.** H1 CY26 was capacity-limited and H2 CY26 is about 20-25% above H1 [C] Q5-013, Q5-016. Revenue lost or deferred, and the 12-month share of the $12.57B backlog, are NOT DISCLOSED. Purchase commitments rose to $8.87B [F] A2-029.
-- **DRAM chips.** These are a cost problem, not a shipment limit: a 75-100 bps hit to CY26 gross margin [F] Q5-011, continuing through fiscal 2027 [F] Q5-005.
+- **DRAM chips.** These are a cost problem, not a shipment limit: a 75-100 bps hit to CY26 gross margin [C] Q5-011, continuing through fiscal 2027 [C] Q5-005.
 
 ---
 
@@ -137,7 +137,7 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 | Inventory, Jun 2025 → Sep 2026 | +27%; raw materials +43%, WIP +29%, finished goods −13% | [I] A2-011 |
 | Guidance record, last 8 quarters | Revenue 0 beat / 8 in-line / 0 miss (above the midpoint every quarter). Non-GAAP EPS 1 / 7 / 0. GAAP EPS 0 / 7 / 1, the miss due to an impairment | [I] A3-025 |
 | China share | Q1 FY24 to Q1 FY27: 42.8 → 44.6 peak (Q4 FY24) → 24.3 (Q3 FY26) → 34.5% (Q1 FY27). FY24 42.8%, FY25 33.3%, FY26 29.8% | [F] A4-010..013, [I] A4-016..028 |
-| Export-rule estimates (KLA's own) | Oct 2022: $500-900M gross CY23. Oct 2023: none. Dec 2024: ~$500M ± $100M CY25. Affiliates Rule: ~$300-350M for Oct 2025-Dec 2026 | [F] A4-058, A4-061, A4-063, A4-068 |
+| Export-rule estimates (KLA's own) | Oct 2022: $500-900M gross CY23. Oct 2023: none. Dec 2024: ~$500M ± $100M CY25. Affiliates Rule: ~$300-350M for Oct 2025-Dec 2026 | [C] A4-057, A4-063, A4-068; [F] A4-061 (no estimate given) |
 | Customers >10% | TSMC ~19% of FY26 revenue; two unnamed customers at 21% and 13% in Q1 FY27 | [F] A4-046, A4-051 |
 | Debt | Notes $5.95B (8 fixed-rate tranches, 2029-2062); cash and securities $4.74B; net debt $1.21B; next maturity $800M 4.10% due 2029-03-15; $1.5B revolver undrawn; no convertibles | [F] A5-006..014, [I] A5-028 |
 | Buyback | Remaining authorisation $8.81B (Sep 30, 2026); last-4-quarter repurchases $2.68B | [F] A5-038, [I] A5-037 |
@@ -155,18 +155,18 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 | AP revenue exceeds $1.1B in CY2026 | User's claim; KLA guide of 2026-07-28, reaffirmed 2026-10-28 | "approximately $1.1 billion" of AP process-control systems revenue, >70% YoY, reaffirmed [C] Q2-010. Like-for-like growth +73.2% [I] Q2-I01 | KLA says "approximately", not "exceeds". The figure covers process control only. On the total-systems basis the last guide was mid-teens growth on ~$950M, about $1.07-1.11B [C] Q2-006. CY26 actual is due in late Jan 2027 [I] B-002 | For [C] / Against [C] |
 | Actinic patterned-mask inspection is close to production | Question raised at Investor Day 2026-03-12; the user's claim | KLA has a lab prototype with first images and a first inspection, and says results "look quite impressive" [C] Q4-007. "We are developing an actinic inspection system" [C] Q4-011 | Slide release column reads "Early Demo Stage" with no date [F] Q4-001. KLA positions actinic as low-frequency "Defense 3" with poor cost of ownership [C] Q4-009, Q4-010. Nothing in the letters or 2026 press releases [F] Q1-027. KLA's 2026 mask launch was e-beam (TeraBeam) [F] Q4-002. Lasertec has shipped ACTIS since 2019 and launched the A200HiT in Oct 2025 [F] Q4-021, Q4-022. [I] Q4-033: KLA's own disclosures refute "close to production" (Medium) | For [C] / Against [F] |
 | Post-bond buried-void inspection stays outside KLA's portfolio | User's claim; prior chat (Nov 2026) | No void product, partnership, acquisition or stated intent in the 10-K FY26, Q1 FY27 10-Q, Annual Report 2026, Investor Day deck and transcript, or letters [I] Q3-I01. Onto has a launched tool and a Samsung development deal [C] Q3-012, [S] Q3-014 | KLA claims a "whole suite" of hybrid-bonding systems and four more developed, unnamed [C] Q3-001, Q3-002. kla.com product pages could not be retrieved, so an unlisted product cannot be ruled out. "Stays outside" is a forecast that no document can settle | For [I] / Against [C] |
-| China revenue has normalised | KLA letter 2026-10-28 ("high-20s" CY26); CFO Oct 2026 ("low-20s" in 2027) | Jan-Sep 2026 China share 28.7% [I] A4-031, inside KLA's high-20s guide [F] A4-041 and the FY21-FY23 range of 26.5-28.9% [I] A4-034. China grew 6.4% in that period vs 18.6% total [I] A4-033 | Q1 FY27 China +49% QoQ to 34.5% [F] A4-010, A4-015. China dollars are flat (FY24 $4.20B, FY25 $4.04B, FY26 $4.05B) [F] A4-011..013. KLA itself expects a further fall to the low-20s in 2027 [S] A4-078. The Affiliates Rule suspension ends 2027-01-10 unless extended [S] A4-073, against KLA's own $300-350M estimate [F] A4-068 | For [F] / Against [F] |
+| China revenue has normalised | KLA letter 2026-10-28 ("high-20s" CY26); CFO Oct 2026 ("low-20s" in 2027) | Jan-Sep 2026 China share 28.7% [I] A4-031, inside KLA's high-20s guide [C] A4-041 and the FY21-FY23 range of 26.5-28.9% [I] A4-034. China grew 6.4% in that period vs 18.6% total [I] A4-033 | Q1 FY27 China +49% QoQ to 34.5% [F] A4-010, A4-015. China dollars are flat (FY24 $4.20B, FY25 $4.04B, FY26 $4.05B) [F] A4-011..013. KLA itself expects a further fall to the low-20s in 2027 [S] A4-078. The Affiliates Rule suspension ends 2027-01-10 unless extended [S] A4-073, against KLA's own $300-350M estimate [C] A4-068 | For [C] / Against [F] |
 | X-ray CD metrology will not see quick production adoption (found claim) | KLA CEO, Q3 FY26 call, 2026-04-29 | Axion took years to reach adoption [S] Q1-007. The X-ray CD market is only $75-100M [S] Q1-009. A Lam paper notes CD-SAXS's low depth sensitivity [S] Q1-013 | KLA said at Investor Day that Axion is "used in high volume manufacturing today" [C] Q1-005. Onto paid ~$720M for 27% of Rigaku [F] Q1-018. Onto says Ai Diffract + Rigaku CD-SAXS has been "selected by two key customers" [C] Q1-016. Rigaku targets ≥$300M incremental opportunity by 2030 [C] Q1-021 | For [S] / Against [F] |
 
 ### B2. Facts that weaken each reading ([F], [C] or [S] only)
 
 **Weaken the optimistic reading**
 1. Purchase commitments rose from about $2.75B (Dec 31, 2025) to $8.87B (Sep 30, 2026) [F] A2-032, A2-029. A long-term receivables line ($266.8M at Sep 30, 2026) appeared in Jun 2026 [F] A2-023. The FY26 10-K does not say how much of the $12.57B backlog ships within 12 months [F] A2-001.
-2. China was 34.5% of Q1 FY27 revenue [F] A4-010. The suspension of the Affiliates Rule runs to 2027-01-10 [S] A4-073, and KLA's own estimate for "extended export controls" was ~$300-350M [F] A4-068.
+2. China was 34.5% of Q1 FY27 revenue [F] A4-010. The suspension of the Affiliates Rule runs to 2027-01-10 [S] A4-073, and KLA's own estimate for "extended export controls" was ~$300-350M [C] A4-068.
 3. KLA's actinic EUV mask inspector is at "Early Demo Stage" [F] Q4-001, while Lasertec released a 3x-faster ACTIS A200HiT on 2025-10-31 [F] Q4-021. Separately, an HBM maker replaced its "tool of record" with Onto's Dragonfly G5 + 3Di [C] Q2-029.
 
 **Weaken the pessimistic reading**
-1. Revenue landed inside the guided range, and above its midpoint, in each of the last 8 quarters (Q2 FY25 to Q1 FY27) [F] A3-001..A3-023 (rows by quarter). The current Q2 FY27 guide is $4.7B ± $0.2B [F] A3-026.
+1. Revenue landed inside the guided range, and above its midpoint, in each of the last 8 quarters (Q2 FY25 to Q1 FY27) [F] A3-001..A3-023 (rows by quarter). The current Q2 FY27 guide is $4.7B ± $0.2B [C] A3-026.
 2. Backlog was $12.57B at Jun 30, 2026, up from $7.86B a year earlier [F] A2-001, against FY26 revenue of $13.58B [F] A1-002.
 3. Services revenue was $3.13B in FY26, +16.5% [F] A1-046. Over 80% of it comes from multi-year subscription contracts, with a 95% renewal rate [C] A1-062, A1-063.
 
@@ -175,10 +175,10 @@ Where the file sits: the repo's `prior/` held only `.gitkeep`. The chat was take
 | Date | Event | Evidence |
 |---|---|---|
 | 2026-12-01 | Dividend of $0.23/share (post-split) payable; record date 2026-11-16 | [F] B-001 |
-| 2027-01-10 | Suspension of the BIS Affiliates Rule ends unless extended. KLA's own exposure estimate was $300-350M | [S] A4-073; [F] A4-068 |
-| Late Jan 2027 (date not yet announced) | Q2 FY27 (Oct-Dec 2026) results. They test the $4.7B ± $0.2B guide [F] A3-026; complete CY2026 against KLA's "~$1.1B" AP process-control target [C] Q2-010, the high-20s China share [F] A4-041, and the 2022 Investor Day CY2026 model [F] A3-037 | [I] B-002 |
+| 2027-01-10 | Suspension of the BIS Affiliates Rule ends unless extended. KLA's own exposure estimate was $300-350M | [S] A4-073; [C] A4-068 |
+| Late Jan 2027 (date not yet announced) | Q2 FY27 (Oct-Dec 2026) results. They test the $4.7B ± $0.2B guide [C] A3-026; complete CY2026 against KLA's "~$1.1B" AP process-control target [C] Q2-010, the high-20s China share [C] A4-041, and the 2022 Investor Day CY2026 model [C] A3-037 | [I] B-002 |
 | Late Apr 2027 (expected) | Q3 FY27 (Jan-Mar 2027) results | [I] B-002 (same pattern) |
-| Through Jun 2027 | KLA expects DRAM chip costs to weigh on gross margin "in fiscal 2027" | [F] Q5-005 |
+| Through Jun 2027 | KLA expects DRAM chip costs to weigh on gross margin "in fiscal 2027" | [C] Q5-005 |
 | Late Jul 2027 / early Aug 2027 (expected) | Q4 FY27 and FY27 results, then the FY27 10-K with the annual backlog figure (and possibly the 12-month conversion share) | [I] B-002; [F] A2-001 |
 | Late Oct 2027 (expected) | Q1 FY28 (Jul-Sep 2027) results | [I] B-002 |
 | None in the window | No debt maturity before 2029-03-15 ($800M 4.10% notes). The revolver runs to 2030-07-03. No lock-ups apply | [F] A5-006, A5-017 |

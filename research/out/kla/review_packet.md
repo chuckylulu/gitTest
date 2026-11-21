@@ -17,12 +17,12 @@ Short names for the KLA documents used below:
 | 2 | Non-GAAP operating margin | [F] | 46.1% | Q1 FY27 | SL-Q1FY27, p3 |
 | 3 | Capex; FCF = OCF $1,530.9M − capex $194.8M | [F] | $1,336.2M FCF | Q1 FY27 | ER-Q1FY27, p5 |
 | 4 | Backlog | [F] | $7.86B → $12.57B | Jun 30, 2025 → Jun 30, 2026 | 10K-FY26, Item 1 "Backlog" |
-| 5 | Q2 FY27 guidance (post-split EPS) | [F] | Revenue $4.7B ± $0.2B; non-GAAP GM 62.5% ± 1pt; non-GAAP EPS $1.44 ± $0.11 | Oct-Dec 2026 | SL-Q1FY27, p8-9 |
+| 5 | Q2 FY27 guidance (post-split EPS) | [C] | Revenue $4.7B ± $0.2B; non-GAAP GM 62.5% ± 1pt; non-GAAP EPS $1.44 ± $0.11 | Oct-Dec 2026 | SL-Q1FY27, p8-9 |
 | 6 | China revenue (34.5% of total) | [F] | $1,425.7M | Q1 FY27 | 10Q-Q1FY27, segment and geographic note |
-| 7 | KLA's estimate of the Dec 2024 export rules' impact (~70% systems) | [F] | ~$500M ± $100M | CY2025 | Q2 FY25 letter, p11: https://d1io3yog0oux5.cloudfront.net/_e8ec0a75333fe915a94800e2cce2bfa3/klatencor/db/1117/10569/letter_to_shareholders/KLA+Corporation+Q2FY25+Shareholder+Letter.pdf |
-| 8 | KLA's estimate of the impact of "extended export controls" (the Affiliates Rule) | [F] | ~$300-350M | Oct 2025-Dec 2026 | Q1 FY26 letter, p9: https://d1io3yog0oux5.cloudfront.net/_e8ec0a75333fe915a94800e2cce2bfa3/klatencor/db/1117/10596/letter_to_shareholders/KLA+Corporation+Letter+to+Shareholders+Q1+FY26.pdf |
+| 7 | KLA's estimate of the Dec 2024 export rules' impact (~70% systems) | [C] | ~$500M ± $100M | CY2025 | Q2 FY25 letter, p11: https://d1io3yog0oux5.cloudfront.net/_e8ec0a75333fe915a94800e2cce2bfa3/klatencor/db/1117/10569/letter_to_shareholders/KLA+Corporation+Q2FY25+Shareholder+Letter.pdf |
+| 8 | KLA's estimate of the impact of "extended export controls" (the Affiliates Rule) | [C] | ~$300-350M | Oct 2025-Dec 2026 | Q1 FY26 letter, p9: https://d1io3yog0oux5.cloudfront.net/_e8ec0a75333fe915a94800e2cce2bfa3/klatencor/db/1117/10596/letter_to_shareholders/KLA+Corporation+Letter+to+Shareholders+Q1+FY26.pdf |
 | 9 | Remaining buyback authorisation | [F] | $8.81B | Sep 30, 2026 | 10Q-Q1FY27, Part II Item 2 |
-| 10 | CY25 AP revenue of the Semi Process Control portfolio | [F] | ~$635M | CY2025 | Q3 FY26 letter, p5: https://d1io3yog0oux5.cloudfront.net/_e8ec0a75333fe915a94800e2cce2bfa3/klatencor/db/1117/10655/letter_to_shareholders/KLA+Shareholder+Letter+-+Q3+FY26.pdf |
+| 10 | CY25 AP revenue of the Semi Process Control portfolio | [C] | ~$635M | CY2025 | Q3 FY26 letter, p5: https://d1io3yog0oux5.cloudfront.net/_e8ec0a75333fe915a94800e2cce2bfa3/klatencor/db/1117/10655/letter_to_shareholders/KLA+Shareholder+Letter+-+Q3+FY26.pdf |
 | 11 | CY26 AP process-control systems target, >70% YoY, reaffirmed | [C] | "approximately $1.1 billion" | CY2026 | SL-Q1FY27, p2 |
 | 12 | Actinic EUV mask inspector status | [F] | "Actinic 7xx … Early Demo Stage" | Mar 2026 | ID-deck, p91 |
 | 13 | Lasertec ACTIS A200HiT released, 3x the A150's speed | [F] | released 2025-10-31 | Oct 2025 | https://www.lasertec.co.jp/en/news/2025/20251031_3912.html |

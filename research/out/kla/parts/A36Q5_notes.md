@@ -8,7 +8,7 @@ Calc scripts: `research/out/kla/calc/a3_guidance_record.py`, `a6_cycle_drawdowns
 - The Q3 FY25 earnings-release text extraction is garbled (font encoding). I took the exact Q3 FY25 revenue ($3,063,029K) from the comparative column of the Q3 FY26 release and from the Q3 FY25 letter.
 - Prior file (kla_metrology_audit.md, line 33) tests the 2022 Investor Day **CY2026** target against **FY26** revenue ($13.58B, Jul 2025-Jun 2026). That mixes the fiscal and calendar years. CY2026 ends Dec 2026 and is not yet reported.
 - Prior file cites the FY26 10-K for "optical component bottlenecks" and "Gen4/Gen5 lead times past 12 months". The 10-K names neither optics nor Gen4/Gen5. Those statements come from the earnings call (secondary) and the Investor Day.
-- The Q2 FY26 Motley Fool transcript reads "2026 revenue will grow mid-single digits compared to 2025". The letter says H1 CY26 vs H2 CY25 [F] A3-033. I treat this as a transcription error. The Q3 FY26 transcript says "first half of 2016" where it means 2026 [S] Q5-026.
+- The Q2 FY26 Motley Fool transcript reads "2026 revenue will grow mid-single digits compared to 2025". The letter says H1 CY26 vs H2 CY25 [C] A3-033. I treat this as a transcription error. The Q3 FY26 transcript says "first half of 2016" where it means 2026 [S] Q5-026.
 - The Q3 FY25 letter calls 63.0% non-GAAP GM "about 50 basis points higher than the midpoint of guidance". The guided midpoint was 62% (Q2 FY25 letter p.11; slides p.12), so 63.0% is 100 bps above it, at the top of the range. This is an internal inconsistency in KLA's letter. I classified it as in-line [I] A3-006.
 
 ## A3 Guidance record
@@ -25,7 +25,7 @@ Rule (stated once and used for every metric): result **above the top** of the gu
 | Q3 FY26 (Jan-Mar 2026) | 3,350±150 → 3,415.1 IN | 61.75±1 → 62.2 IN | 9.08±0.78 → 9.40 IN | 8.85±0.78 → 9.12 IN | [F] A3-016/017, [I] A3-018 |
 | Q4 FY26 (Apr-Jun 2026) | 3,575±200 → 3,657.6 IN | 61.75±1 → 62.4 IN | 0.987±0.10* → 1.05 IN | 0.966±0.10* → 1.04 IN | [F] A3-019/020, [I] A3-021 |
 | Q1 FY27 (Jul-Sep 2026) | 4,000±200 → 4,136.0 IN | 62.5±1 → 62.7 IN | 1.16±0.10 → 1.22 IN | 1.14±0.10 → 1.18 IN | [F] A3-022/023, [I] A3-024 |
-| **Q2 FY27 (Oct-Dec 2026), current** | 4,700±200 | 62.5±1 | 1.44±0.11 | 1.41±0.11 | [F] A3-026 |
+| **Q2 FY27 (Oct-Dec 2026), current** | 4,700±200 | 62.5±1 | 1.44±0.11 | 1.41±0.11 | [C] A3-026 |
 
 \* Pre-split guidance of $9.87±$1.00 (non-GAAP) and $9.66±$1.00 (GAAP), divided by 10.
 
@@ -39,15 +39,15 @@ One-off items management named:
 - Q2 FY25 GAAP EPS of $6.16 included a $239.1M goodwill and intangible impairment ($1.76/share) [F] A3-028. Without it, GAAP EPS was $7.92, inside the range (6.85-8.05) [I] A3-003. The impairment was not in the guidance.
 - The Q4 FY25 non-GAAP EPS beat came from the tax rate: 9.9% actual vs 13.5% guided. At the guided rate, EPS would have been $9.00, inside the range [F] A3-029. Q3 FY25 at the guided rate: $8.55, also in-line.
 
-**Guidance maintained late in a period and then missed: none found.** KLA does not update quarterly guidance within the quarter. Its calendar-year views were raised, never cut, over 2025-2026. Examples: CY25 GM went from 62%±0.5 to 62.5%±0.5; CY26 wafer-equipment (WFE) outlook went from low $120B (core) to >$140B, then low-$150B, then mid-$150B [F] A3-030, A3-033 to A3-035.
+**Guidance maintained late in a period and then missed: none found.** KLA does not update quarterly guidance within the quarter. Its calendar-year views were raised, never cut, over 2025-2026. Examples: CY25 GM went from 62%±0.5 to 62.5%±0.5; CY26 wafer-equipment (WFE) outlook went from low $120B (core) to >$140B, then low-$150B, then mid-$150B [F] A3-030; [C] A3-033 to A3-035.
 
 ### Calendar-year and long-range statements (last 3) and outcomes
 | Statement | Made | Outcome | Evidence |
 |---|---|---|---|
 | CY2025: WFE up mid-single digits from high-$90B; KLA to outperform; non-GAAP GM ~62%±50bps (raised to 62.5%±50bps in Apr 2025) | 2025-01-30 | KLA revenue +17% to $12.745B, against KLA's own estimate of low-double-digit industry growth. GM 62.8%, inside the raised range. **Met/beat** | [F] A3-030, A3-031; [I] A3-032 |
-| CY2026: H1 CY26 up mid-single digits vs H2 CY25 (Jan 2026); KLA growth "high teen" YoY (Apr 2026); H2/H1 ~20% (Jul), then ~25% (Oct); GM ~62%±50bps | 2026-01-29 to 2026-10-28 | H1 CY26 came in +8.7% vs H2 CY25 (above "mid-single"). Using the Q2 FY27 midpoint, CY26 is about $15.91B (+24.8%), above "high teen", and H2/H1 is +24.9%. CY26 GM about 62.5%, at the top of the range. **Exceeded so far; not final** | [F] A3-033 to A3-035; [I] A3-036 |
-| 2022 Investor Day CY2026 model: revenue $14B±$0.5B; non-GAAP GM ~63%; OM 41-43%; EPS $38±$1.50 (pre-split = $3.80±$0.15) | 2022-06-16 | Implied CY26: revenue about $15.91B (above $14.5B top), non-GAAP OM about 45.2%, non-GAAP EPS about $4.65 post-split ($46.5 pre-split): all **beat**. Non-GAAP GM about 62.5%, **below** the ~63% target; management named DRAM cost and tariffs | [F] A3-037, A3-041, [C] A3-038, [I] A3-039 |
-| Pending: 2030 model of $26B±$2.5B revenue, OM 45-47%, EPS $84±$8 (pre-split) | 2026-03-12 | Due 2031 | [F] A3-040 |
+| CY2026: H1 CY26 up mid-single digits vs H2 CY25 (Jan 2026); KLA growth "high teen" YoY (Apr 2026); H2/H1 ~20% (Jul), then ~25% (Oct); GM ~62%±50bps | 2026-01-29 to 2026-10-28 | H1 CY26 came in +8.7% vs H2 CY25 (above "mid-single"). Using the Q2 FY27 midpoint, CY26 is about $15.91B (+24.8%), above "high teen", and H2/H1 is +24.9%. CY26 GM about 62.5%, at the top of the range. **Exceeded so far; not final** | [C] A3-033 to A3-035; [I] A3-036 |
+| 2022 Investor Day CY2026 model: revenue $14B±$0.5B; non-GAAP GM ~63%; OM 41-43%; EPS $38±$1.50 (pre-split = $3.80±$0.15) | 2022-06-16 | Implied CY26: revenue about $15.91B (above $14.5B top), non-GAAP OM about 45.2%, non-GAAP EPS about $4.65 post-split ($46.5 pre-split): all **beat**. Non-GAAP GM about 62.5%, **below** the ~63% target; management named DRAM cost and tariffs | [C] A3-037, A3-041, [C] A3-038, [I] A3-039 |
+| Pending: 2030 model of $26B±$2.5B revenue, OM 45-47%, EPS $84±$8 (pre-split) | 2026-03-12 | Due 2031 | [C] A3-040 |
 
 ## A6 Cycle: last two downturns
 
@@ -81,7 +81,7 @@ Method notes:
   - low-volume, sole-sourced complex parts: optics, sensors, lasers;
   - high-volume, mostly sole-sourced parts: volume optics, stages, motion control;
   - Tier 2-4: semiconductors, electronic components.
-- DRAM chips for the image-processing computers shipped with the tools. These are a **cost** problem, not a shipment limit: KLA says it "secured the required supply" [C] Q5-012. Filings: suppliers discontinued certain DRAM chips and prices rose [F] Q5-004, Q5-005.
+- DRAM chips for the image-processing computers shipped with the tools. These are a **cost** problem, not a shipment limit: KLA says it "secured the required supply" [C] Q5-012. Filings: suppliers discontinued certain DRAM chips and prices rose [F] Q5-004; [C] Q5-005.
 - Rare-earth elements: a risk factor only, with no stated impact [F] Q5-008.
 
 **Lead times (months):**
@@ -108,9 +108,9 @@ Method notes:
 - FY26 backlog share to convert within 12 months: NOT DISCLOSED (read: FY26 10-K Item 1 Backlog). The FY25 10-K gave 71-76% [F] Q5-001.
 
 **DRAM cost on gross margin:**
-- 75-100 bps hit to CY26 GM (Jan 2026) [F] Q5-011.
+- 75-100 bps hit to CY26 GM (Jan 2026) [C] Q5-011.
 - About 100 bps "over the next several quarters" (Apr 2026) [C] Q5-012.
-- FY26 10-K: adverse GM impact "in fiscal 2027" (Jul 2026-Jun 2027) [F] Q5-005.
+- FY26 10-K: adverse GM impact "in fiscal 2027" (Jul 2026-Jun 2027) [C] Q5-005.
 - Oct 2026: "persistently high" memory costs; system redesign under way to use less memory [C] Q5-017.
 
 ## Prior-claim check (kla_metrology_audit.md lines 21-68 and line ~1033, in scope)
