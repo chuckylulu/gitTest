@@ -1,0 +1,213 @@
+                                                                         Advantest Corporation
+                                                         FY2025 (Period ended March 31, 2026) Financial Briefing
+                                                                            Q&A Summary
+                                                                                    April 27th, 2026
+
+
+[ Tester Market Outlook | テスタ市場見通し ]
+                                               English                                                             日本語
+Q1      Following the strong progress in SoC tester sales, could you provide more detail       SoC テスタ売上が大きく進捗していることを踏まえ、市場シェアを含め
+        on the assumptions, including market share, behind your latest tester market           た最新のテスタ市場見通しの前提について、より詳細に説明してほしい。
+        outlook? Has there been any change in market conditions or customer demand             また、GPU およびカスタム ASIC に関して、現行の見通しにまだ織り込
+        from GPU and custom ASICs that are not yet reflected in your forecast?                 まれていない市場環境の変化や顧客需要の変化はあるか。
+
+A1      We continue to project decent year-on-year growth in the tester market from            CY2025 から CY2026 にかけて、テスタ市場は前年比で堅調な成長が続
+        CY2025 to CY2026, and we continue to progress with market share gains. There           くと見込んでおり、市場シェアの拡大も引き続き進んでいる。ファウン
+        are also external factors, such as foundry and advanced packaging capacity, but        ドリや先端パッケージングの生産能力といった外部の変動要因もある
+        those factors are already embedded in our TAM estimates. Compared with                 が、これらの要因は当社の市場規模予想にすでに織り込んでいる。年初
+        January, visibility has improved as we see firming in forecasts.                       と比べると、予測の確度が高まりつつあるのが確認できており、見通し
+                                                                                               のビジビリティは改善している。
+
+
+
+
+[ Demand Driver | 需要ドライバ ]
+                                               English                                                             日本語
+Q2      Given SoC testers can be used across device generations, how should we think           SoC テスタはデバイスの世代を超えて使用できることを踏まえると、今
+        about new system demand versus replacement or upgrade demand going                     後の需要について、新規システム需要と、置き換え需要又はアップグレ
+        forward?                                                                               ード需要をどのように考えればよいか。
+
+A2      We expect the new system demand to continue as we are still in this growth             当社は、成長局面が続いているため、新規システム需要は少なくとも今
+        phase, and we expect that this will continue at least next two to three years.         後 2～3 年は続くと見込んでいる。それ以降は、これらのデバイスがより
+        Beyond that, we believe that as these devices get more complex, they will              複雑化するにつれてアップグレードが必要になると考えている。その段
+        require upgrades. At that point, there may be an upgrade cycle for the systems.        階では、システムのアップグレードサイクルが発生し得る。とはいえ、
+        Having said this, we still expect the overall use of AI and the tokens to continue     AI の利用全体とトークンの総量は今後数年にわたり成長し続けると見て
+        to grow for several years. There are always new catalysts for the industry and         いる。業界には常に新たなカタリストがあり、新しいセグメントも出て
+        new segments that emerge. Therefore, we are not concerned about demand                 くることが見込まれる。したがって、需要が頭打ちになることは懸念し
+        plateauing.                                                                            ていない。
+
+        We would also like to point out another element, which is semiconductor unit
+                                                                                               もう一つの要素として、半導体の生産数量の増加がある。ウェハ投入量
+        volume growth. As wafer starts, advanced packaging capacity, new memory
+                                                                                               の増加、先端パッケージングの生産能力の高まり、新たなメモリ工場の
+        factories are brought online, unit volume will continue to grow. Moreover,
+                                                                                               立ち上げが進むにつれ、数量は増え続けるだろう。さらに、テストコン
+        there's another component, which is test content growth which will likely
+                                                                                               テンツの増加という要素もあり、これも今後成長が続く可能性が高い。
+        continue. In light of these two factors, there will always be a need for additional
+                                                                                               これら二つの要因を踏まえると、追加のキャパシティは常に必要となる。
+        capacity. Then, within that capacity, there will be upgrade opportunities for
+                                                                                               そのキャパシティの中で、電源などのアップグレード需要も生まれる。
+        power supplies, etc. But overall, the trajectory of the unit volume multiplied by
+                                                                                               ただ、全体としては、数量の増加に加え、テストコンテンツも増えるこ
+        test content is likely to drive new capacity to be put in place for test.
+                                                                                               とで、テスタの新たなキャパシティ導入を促すと見ている。
+
+
+
+
+                                                                                           1
+[ Agentic AI-related Test Demand | エージェンティック AI 関連テスト需要 ]
+                                              English                                                          日本語
+Q3     What is your view on CPU testing opportunities given the recent rise of agentic       昨今のエージェンティック AI の台頭を受けて CPU の成長が押し上げら
+       AI which is likely to boost CPU growth?                                               れる可能性があることを踏まえ、CPU テスタの需要についてどう見てい
+                                                                                             るか。
+
+A3     As the industry moves toward heavy inferencing, there is more CPU usage,              業界が推論中心へ移行するにつれ、高負荷の数理演算ワークロードや前
+       driven by heavy math workloads and pre- and post- processing. These workloads         処理・後処理により CPU 使用が増えている。これらのワークロードに
+       bring cost and power considerations and are increasingly being pushed through         おいてコスト面および消費電力面の考慮が必須となり、データセンタ側
+       data centers. In parallel, more agentic tools are emerging, which rely on             で処理される傾向が強まっている。並行して、CPU 上で動作するソフト
+       software running on CPUs. As a result, CPUs, LPUs, and GPUs are all part of a         ウェアを基盤とするエージェンティックなツールも増えている。こうし
+       broad migration underway today.                                                       た背景から、CPU、LPU、GPU はいずれも現在進行している広範な技術
+                                                                                             シフトを構成する要素となっている。
+       We are well positioned to serve this part of the market, as we have long-time
+       customers where we've been in place for decades. We have been very                    当社はこの市場領域に対応できる良いポジションを確保している。とい
+       intentional for some of the fabless accounts that are of note, where we believe       うのも、数十年にわたって取引のある長期顧客が存在し、長年当社シス
+       Advantest has a large ecosystem of partners that work on the fabless side, with       テムを利用いただいているためである。加えて、注目すべき一部のファ
+       the V93000 being a de facto standard in the foundry and OSAT space. We                ブレス顧客に対しても、特に注力してきた。当社は、ファブレス側で協
+       continue to work hard with those partners to maximize the value of our systems        業するパートナーの大きなエコシステムがあり、V93000 はファウンド
+       in the OSAT space.                                                                    リ及び OSAT 領域で事実上の標準機だと認識している。当社は OSAT 領
+                                                                                             域における当社システムの価値を最大化するため、これらのパートナー
+       Given the huge complexity of these devices, collaborating with our partners to
+                                                                                             と引き続き緊密に取り組んでいる。
+       develop the full test solutions is critical. Some market research calls for orders
+       of higher compute for inferencing versus training. Therefore, we have factored        また、これらのデバイスはとても複雑であるため、パートナーと連携し
+       that into our 2026 forecast, but we see that going throughout 2027 and beyond.        て包括的なテストソリューションを開発することが重要となる。市場調
+                                                                                             査の一部では、推論向けの計算需要は学習向けと比べて桁違いに大きく
+                                                                                             なるとされている。したがって当社はそれを CY2026 の見通しに織り込
+                                                                                             んでいるが、この流れは CY2027 以降も続くと見ている。
+
+
+
+
+[ Silicon Photonics | シリコンフォトニクス ]
+                                              English                                                          日本語
+Q4     You mentioned receiving a large ATE (Automated Test Equipment) order in the           シリコンフォトニクスの量産において大口の ATE（Automated Test
+       high-volume production for silicon photonics. Please comment on your TAM              Equipment）受注を獲得されたとのことだが、これを踏まえ、この領域
+       projection for this domain as well as market share outlook. How do you plan to        における市場規模及び市場シェアの見通しについてコメントいただきた
+       catch up with a competitor, given the strength of your competitor?                    い。また、競合他社も強い領域という中で、どのように追い上げを図る
+                                                                                             のか。
+A4     First, we do not view this as a catch-up situation—we believe we are already          始めに、当社は「追い上げ」の局面とは見ていない。この領域では、当
+       leading in this domain. That said, the market size is still difficult to define, as   社がすでにリードしていると考えている。もっとも、シリコンフォトニ
+       silicon photonics is a very new domain with many uncertainties around test            クスはとても新しい領域であり、テスト投入量、テスト時間、歩留まり
+       insertions, test times, and yields. This year is effectively the first year of some   など不確実性が多いため、今の段階で市場規模を定義することは難しい。
+       volume production.                                                                    今年は実質的に、一部で量産が立ち上がる初年度にあたる。
+
+       In terms of trajectory, we see that next year should more than double and then        伸びの軌道としては、来年は 2 倍超、その翌年少なくとも再び 2 倍程度
+       after that, double again at least. While we are very bullish on the opportunity, it   になると見ている。この需要機会に対して強気な見方をしているものの、
+       is still too early to determine TAM.                                                  市場規模を見極めるには時期尚早である。
+
+       Finally, our leadership position reflects our deliberate approach to partnership      最後に、当社のリーダーシップは、パートナー選定において十分な検討
+       selection. Silicon photonics test cell solutions are highly sophisticated, and        を行う姿勢を反映したものである。シリコンフォトニクスのテストセル・
+       working with the right partners has been a key strength of our offering.              ソリューションは極めて高度な技術が求められるため、適切なパートナ
+                                                                                             ーとの連携こそが当社の提供価値を高める上で重要な要素となってい
+                                                                                             る。
+
+
+
+
+                                                                                         2
+[ Production Capacity | 生産能力 ]
+                                               English                                                           日本語
+ Q5      On your SoC tester capacity outlook, you previously guided to about 5,000             SoC テスタの生産能力見通しについて、以前は 2027 年 3 月期末までに
+         systems by the end of the fiscal year ending March 2027, but have since               約 5,000 台とガイダンスしていたが、その後、10,000 台に向けて増産を
+         discussed accelerating expansion toward 10,000 systems. When do you expect            加速する方針に言及されている。10,000 台の水準にはいつ到達する見込
+         to reach the 10,000‑system level? Given that your CY2026 SoC tester TAM               みか。また、CY2026 の SoC テスタ市場規模見通しが概ね据え置きであ
+         guidance is largely unchanged, what’s driving the decision to expand capacity         るにもかかわらず、より積極的に生産能力拡大を進める判断の背景は何
+         more aggressively?                                                                    か。
+
+ A5      We had announced that we would have at least 5,000 systems per year by the            当社は、今年度末までに少なくとも年産 5,000 台を確保すると発表して
+         end of this fiscal year, and we are tracking above that plan. We also had said that   いたが、足元はその計画を上回るペースで推移している。また、数年後
+         several years later, we would be at 7,500 systems per year, and we have been          に年産 7,500 台としていた点についても、前倒しで進めている。したが
+         aggressive in pulling that in. Therefore, we are now moving to a third step, which    って現在は、第 3 段階として、年産 10,000 台へ移行している。これは
+         will be 10,000 systems per year which we are targeting to be ready by the end         CY2028 末までの準備完了を目指すが、実際には CY2029 に入る可能性
+         of CY2028, but more likely into CY2029.                                               が高い。
+
+         We need to plan this capacity more than one year out. As we are bullish upon          生産能力拡大は 1 年先ではなく、複数年先を見据えて計画する必要があ
+         the market continuing its high growth rate, in order to put the right supply chain    る。市場が高成長を継続すると見ている中で、適切なサプライチェーン
+         and production capacity in place, we have to make those kinds of decisions a          と生産能力を構築するためには、2～3 年ほど前から意思決定しなければ
+         couple of years in advance. This is what is driving these continuous step             ならない。こうした判断が、段階的な増強を継続的に押し上げている。
+         functions upward.
+
+
+
+
+[ Competitive Dynamics | 競合状況 ]
+                                               English                                                           日本語
+ Q6      How do you view the competitive environment and customer sourcing                     GPU 市場を中心に、競争環境および顧客の調達戦略（例えばデュアルソ
+         strategies, i.e., dual sourcing, particularly in the GPU market?                      ース化）をどのように見ているか。
+
+ A6      We are comfortable in our position at GPU customers and other accelerator             GPU およびその他のアクセラレータ顧客における当社のポジションは
+         customers and continue to focus on product performance, economics, and                良好だと捉えており、引き続き製品性能、経済性、技術力に注力してい
+         technical capability. While customers may consider dual-vendor strategies as          る。市場が拡大し、供給確保への懸念が高まる中で、顧客がデュアルベ
+         markets scale and as customers are concerned about the assurance of supply,           ンダー戦略を検討する可能性はあるが、当社はそれに先回りして対応し
+         we are staying ahead of that. In addition, platform selection is driven by            ている。加えて、プラットフォーム選定は技術的な能力が主因であり、
+         technology capabilities, for which we also have a strategy to stay ahead.             この点でも先行するための戦略を策定している。さらに、デュアルベン
+         Furthermore, we would like to point out that the dual vendor strategy can also        ダー戦略は、領域によっては当社にとってもメリットになり得る点を指
+         benefit us in certain areas.                                                          摘しておきたい。
+
+
+
+
+[ Profit Margin | 利益率 ]
+                                                English                                                          日本語
+ Q7      What are reasons for a strong margin delivery in FY2025 Q4? Is this due to a          FY2025 Q4 で利益率が強く出た要因は何か。SoC テスタの成長がメモリ
+         better mix given SoC tester growth outpaced memory tester growth? For                 テスタの成長を上回ったことで、ミックスが改善したことによるもの
+         FY2026 guidance, the Company is projecting a flat operating margin, despite the       か。FY2026 のガイダンスでは、SoC テスタがメモリテスタを上回って
+         fact that SoC tester business will outgrow memory tester business. Is there           成長するにもかかわらず、営業利益率は横ばいを見込んでいる。このガ
+         conservatism in this guidance?                                                        イダンスには保守的な見方が含まれているのか。
+
+ A7      For Q4, we had an ideal condition - a blend of product mix along with the             Q4 は理想的な状況だった。製品ミックスに加え、ライセンス収入が重な
+         licensing that really drove very high gross margin. SoC tester mix contributed. In    り、売上総利益率が非常に高い水準となった。SoC テスタのミックスも
+         addition, within our memory tester business, its product mix improved with            寄与した。加えて、メモリテスタでも、より収益性の高い製品の販売が
+         higher margin products delivering stronger sales in addition to healthy licensing     好調だったことで製品ミックスが改善し、健全なライセンス収入も上乗
+         revenue. Therefore, Q4 represented an optimal mix for us, which may not be            せとなった。したがって、Q4 は当社にとって最適なミックスとなった
+         the case for FY2026. In addition, there will be inflationary pressures. Our testers   が、FY2026 でも同様になるとは限らない。さらに、インフレによるコ
+         use a large amount of memory semiconductors which are challenged by supply            スト上昇圧力もある。当社のテスタはメモリ半導体を大量に使用してお
+         constraints.                                                                          り、これらは供給制約の影響を受けている。
+
+
+
+
+                                                                                           3
+[ China | 中国 ]
+                                                        English                                                                                            日本語
+ Q8         Could you comment on demand dynamics and your position in China?                                   中国における需要動向および御社のポジションについてコメントいただ
+                                                                                                               きたい。
+
+ A8         We believe China remains an important region for us. At the same time, the                         中国は引き続き当社にとって重要な地域と認識している。一方で、地政
+            environment is complex, shaped by geopolitical components. We have a                               学的要素に左右される複雑な環境でもある。当社は、中国市場において
+            leadership position in our technical capabilities that are needed for the China                    も、求められる技術力においてリーダーとしての地位を有していると見
+            market as well. We continue to participate where appropriate, while carefully                      ている。規制や市場環境を慎重に見極めつつ、適切な範囲で引き続き事
+            navigating regulatory and market conditions.                                                       業機会に参画していく。
+
+
+Note
+This document is prepared for those who were unable to attend the financial briefing and is intended only for reference purposes. The original content has been revised and edited by Advantest for ease of
+understanding. This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These statements include, among other things, the discussion
+of Advantest’s business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of
+forward-looking terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks,
+uncertainties and other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed or implied by such forward-looking
+statements. Except as required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+
+
+※本資料に記載されている内容は、決算説明会の質疑をもとに当社の判断で要約したものです。また本資料には、将来の事象についての、当社の現時点における期待、見積り及び予測に基づく記述
+が含まれております。これらの将来の事象に係る記述は、当社における実際の財務状況や活動状況が、当該将来の事象に係る記述によって明示されているもの又は暗示されているものと重要な差異
+を生じるかもしれないという既知及び未知のリスク、不確実性その他の要因が内包されており、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、
+当社は、新たな情報、将来の出来事、又はその他の理由により、将来予想に関する記述を更新又は修正することはありません。
+
+
+
+
+                                                                                                          4
+

@@ -1,0 +1,593 @@
+                                                                    Advantest Corporation
+                                                                    IR Fireside Chat Script
+                                                                       November 12, 2026
+
+
+
+
+[Introduction / はじめに]
+                                               English                                                        日本語
+Oike         Good afternoon, everyone. Thank you for joining today’s Fireside Chat.     皆様、こんにちは。本日は当社の Fireside Chat にご参加いただき、誠
+尾池                                                                                      にありがとうございます。
+             Last year, we invited our CTO and Group CEO. This year, we have
+             invited our Chief Supply Chain Officer to join the discussion about        昨年は CTO とグループ CEO による対談をお届けしましたが、今年は
+             our supply chain strategy with our Group CEO.                              Chief Supply Chain Officer のリヒャルトを迎え、グループ CEO のダ
+                                                                                        グとともに当社のサプライチェーン戦略について対談を行います。
+             First, I would like to ask both of you to introduce yourselves.
+                                                                                        それではまず、お二人から自己紹介をお願いします。
+
+Lefever      I think everybody knows me, so I don’t need to give much of an             私のことはご存じだと思いますので、詳しい自己紹介は必要ないでし
+ラフィーバ        introduction. I am the Group CEO and am responsible for all                ょう。私はグループ CEO として、当社のあらゆる事業活動に責任を負
+             activities across the company.                                             っています。
+
+             Lately, I have been working much more closely with my colleague            最近は、サプライチェーンが当社にとって大きな事業機会となってい
+             Richard on the supply chain front because it represents a big              ることから、この分野で同僚のリヒャルトとこれまで以上に緊密に連
+                                                                                        携して取り組んでいます。それでは、リヒャルト、お願いします。
+             opportunity for the company. Richard?
+
+Junger       Thank you. My name is Richard Junger, and I am the Chief Supply            ありがとうございます。Chief Supply Chain Officer のリヒャルト ユ
+ユンガー         Chain Officer.                                                             ンガーです。
+
+             I have worked in the semiconductor industry since 2006 in many             私は 2006 年から半導体業界で働いており、これまでサプライチェー
+             different supply chain roles. This is a very special occasion to discuss   ンに関するさまざまな職務を経験してきました。今回、こうしてサプ
+             the supply chain.                                                          ライチェーンについてお話しできることを大変特別な機会だと感じて
+                                                                                        います。よろしくお願いします。
+
+
+
+[Structural Changes in the Market / マーケットの構造的変化]
+                                               English                                                        日本語
+Oike         Thank you very much. My first question. How has the rise of AI             ありがとうございます。最初の質問です。AI の急速な普及によって、
+尾池           changed the environment surrounding Advantest’s supply chain?              アドバンテストのサプライチェーンを取り巻く環境は、どのように変
+                                                                                        化してきたのでしょうか。
+
+Lefever      Probably the biggest change brought about by AI has been the shift         まず、AI によってもたらされた最大の変化は、おそらく先端パッケー
+ラフィーバ        to high-volume production of advanced packaging. That added a              ジの本格的な量産への移行です。これによって、それまでにはないレ
+             level of testing complexity that had not existed before. It resulted in    ベルでテストの複雑化が生じました。その結果、テストタイムとテス
+                                                                                        トコンテンツが、テスト業界でこれまで経験したことのないほど増加
+             increases in test time and test content that the test industry had
+                                                                                        しました。
+             never experienced.
+                                                                                        従来から、半導体の数量増加は需要を押し上げる要因でした。それに
+             Semiconductor unit volume has always been a driver, along with
+                                                                                        加えて、トランジスタ数の増加やムーアの法則に伴い、テストコンテ
+             increases in test content associated with transistor counts and            ンツも増加してきました。しかし、現在はそれとはまったく異なる次
+             Moore’s Law. But this has now reached an entirely different level. In      元に達しています。場合によっては、世代が一つ進むだけで、テスト
+             some cases, we are seeing test times increase by multiples from one        タイムが数倍に増加するケースも見られます。これによってテスト需
+             generation to the next. That created an exponential ramp in test           要が指数関数的に急増し、その需要に当社はどう対応するかという課
+             demand and the resulting challenge for us to meet that demand.             題が生じました。
+
+
+
+                                                                                1
+            No one really predicted the extent of the increase in test content, so   テストコンテンツがここまで増加するとは、実際には誰も予測してい
+                                                                                     ませんでした。そのため、当社のお客様を含め、多くの人にとって予
+            almost everyone, including our customers, was caught off guard.
+                                                                                     想外の事態となりました。幸い、当社はそれに先んじて対応すること
+            Fortunately, we were able to stay ahead of it, and Richard can talk
+                                                                                     ができました。この点については、リヒャルトからさらに詳しく説明
+            more about that.
+                                                                                     できると思います。
+
+            The other factor, which perhaps could have been anticipated but has      もう一つの要因は、ある程度は予想できたことかもしれませんが、最
+            become increasingly apparent, is that our testers have a similar         近になってますます明確になってきたことです。それは、当社のテス
+            component mix to data-center racks. As a result, we sometimes find       タがデータセンターのサーバーラックと似たような部品構成になって
+            ourselves competing for components with the very customers we            いるという点です。その結果、場合によっては、当社のお客様と部品
+            serve.                                                                   の確保を競い合う状況が生じています。
+
+                                                                                     PCB（プリント基板）、汎用部品、ケーブル、コネクタをはじめ、サー
+            PCBs, standard components, cables, connectors, and many other
+                                                                                     バーラックに使用される多くの部品は、当社のテスタにも必要です。
+            items used in data-center racks are also required for our testers. We
+                                                                                     そのため、当社はお客様と多くの部分で同じサプライチェーンを共有
+            therefore depend on many of the same supply chains. That creates a
+                                                                                     しています。こうした事情により、外からは見えにくいサプライチェ
+            level of complexity that may not be fully understood.                    ーン上の複雑さが生じています。
+
+            We work closely with our customers because they understand that          この問題については、お客様とも緊密に連携しています。お客様も、
+            they need testers to test the components that ultimately go into         最終的にサーバーラックに搭載される部品をテストするためには、テ
+            those racks. We therefore maintain constant communication on this        スタが必要であることを理解しているからです。そのため、この問題
+            issue.                                                                   については常にお客様とコミュニケーションを取っています。
+
+                                                                                     これら２つの点が、最近の変化をもたらしている大きな要因だと見て
+            I think those are the two major factors behind the recent changes.
+                                                                                     います。
+
+Junger      I would echo what Doug said about the supply base, which has             サプライヤーの部品供給環境については、ダグが話したことに私も同
+ユンガー        changed significantly.                                                   感です。サプライヤーを取り巻く環境は大きく変化しています。
+
+            This is not like the disruptions we saw in 2021, when there were         これは、部品不足が発生した 2021 年のようなサプライチェーンの混
+            shortages. The industry is now undergoing a major transformation,        乱とは異なります。現在、業界は大きな変革期にあり、主要な部材を
+            as many suppliers of key commodities are shifting toward                 供給する多くのサプライヤーが、AI 関連の需要への対応にシフトして
+                                                                                     います。その結果、当社のサプライチェーンにおいても、新たに対応
+            supporting AI. That creates another set of changes that we must
+                                                                                     しなければならないさまざまな変化が生じています。
+            address within our supply chain.
+                                                                                     ダグが述べたように、こうした問題をあらかじめ見越し、実際に発生
+            As Doug said, we need to work with our customers and supply chain
+                                                                                     した際に適切に対応できるよう、お客様やサプライチェーンのパート
+            partners to anticipate these issues and respond to them as they
+                                                                                     ナーと連携して取り組んでいく必要があります。
+            arise.
+
+
+
+[Evolution of Advantest’s Approach to Supply Chain Management / アドバンテストのサプライチェーンマネジメントの進化]
+                                             English                                                  日本語
+Oike        As the business environment has changed, how has Advantest’s             事業環境が変化する中、アドバンテストのサプライチェーンマネジメ
+尾池          approach to supply chain management evolved?                             ントに対する考え方は、どのように進化してきたのでしょうか。
+
+Junger      We have made several fundamental changes since 2021, when we             2021 年に深刻な供給不足に直面して以降、私たちはいくつかの抜本的
+ユンガー        faced significant supply shortages. Those challenges forced us to        な変革を行ってきました。当時の課題をきっかけに、業界の変化にど
+            reconsider how we respond to the industry’s dynamics.                    う対応するかを改めて見直すことになりました。
+
+            We moved away from a classical waterfall-style forecasting model (*)     従来のウォーターフォール型の需要予測モデル(*)から脱却し、私たち
+            toward a top-down approach that we call “anticipating.” This             が「anticipating（将来の需要を見越して備える）」と呼ぶトップダウ
+                                                                                     ン型のアプローチへと移行しました。これによって、需要に先んじて
+            enabled us to make major and sometimes bold decisions to prepare
+                                                                                     準備を進め、必要な供給能力を確保するため、大規模で、時には大胆
+            and put capacity in place ahead of demand.
+                                                                                     な意思決定を行えるようになりました。
+            Anticipating does not mean looking only at customer demand. It
+                                                                                     「将来の需要を見越して備える」とは、単にお客様の需要だけを見る
+            means examining the broader ecosystem, understanding how it is
+                                                                                     ということではありません。より広いエコシステム全体を捉え、それ
+            evolving, looking into the future. From there, we determine what
+                                                                                     がどのように変化しているのかを理解した上で、将来を見据えるとい
+            steps and decisions we need to take to respond to and support the        うことです。その上で、業界の変化に対応し、その発展を支えていく
+            industry.                                                                ために、私たちがどのような行動を取り、どのような意思決定をして
+                                                                                     いくべきかを見極めます。
+
+
+            Another major change came from recognizing the high degree of            もう一つの大きな変化は、市場には非常に高い不確実性があると認識
+                                                                                     したことです。お客様自身も、将来何が必要になるのかを予測するの
+            uncertainty in the market. Even our customers sometimes find it
+                                                                                     が難しい場合があります。そこで私たちは、在庫を重要な戦略的手段
+            difficult to anticipate what they will need. We therefore decided to
+                                                                                     として活用することにしました。
+            treat inventory as a key strategic tool.
+
+            This means moving from a just-in-time environment, which limits          これは、必要なものを必要な時に必要な量だけ確保する「ジャスト・
+            the available bandwidth, to a just-in-case environment. That             イン・タイム型」から、不測の需要に備える「ジャスト・イン・ケー
+                                                                                     ス型」への移行を意味します。ジャスト・イン・タイム型では、供給
+                                                                            2
+          required a substantial change in how we utilize our capital to            余力に限界があるためです。そのためには、お客様を支えるために当
+          support customers.                                                        社の資金をどのように活用するかも大きく変える必要がありました。
+
+          Another result of anticipating the industry is top-down decision-         業界の先行きを見越すことで生まれたもう一つの変化が、トップダウ
+          making. We still collect bottom-up data from customers and the            ン型の意思決定です。もちろん、お客様や業界からボトムアップでデ
+          industry, but we know that this provides only a small window into         ータを収集することは今も続けています。しかし、そうした情報だけ
+                                                                                    では、将来起こり得ることの一部分しか捉えられないことも分かって
+          what may happen. We therefore also take an ecosystem approach,
+                                                                                    います。そのため、エコシステム全体を俯瞰するアプローチとトップ
+          and a top-down review and use it to guide the company in making
+                                                                                    ダウンでのレビューを行い、それを経営判断に活かしています。こう
+          bold decisions, including expanding capacity ahead of demand to           した考え方に基づき、お客様を支えるために需要に先んじて生産能力
+          support our customers.                                                    を拡大するなど、大胆な意思決定を行っています。
+
+
+
+          (*) building demand forecasts from customers and using them to make       (*)お客様から上がってくる需要予測を順番に積み上げ、それをもとに
+          decisions on production, component procurement, and capacity expansion.   生産・部材調達・能力増強を決めていく方法
+Lefever   I would reinforce Richard’s final point about the top-down approach.      リヒャルトが最後に話したトップダウンアプローチについて、私から
+ラフィーバ     Over the last couple of years, we have relied much more on top-down       も強調したいと思います。ここ数年、私たちはトップダウン型の意思
+          decision-making.                                                          決定を以前にも増して重視するようになっています。
+
+          One reason is that customers are sometimes hesitant to provide the        その理由の一つは、お客様は適切な需要予測を提示することに慎重に
+          right forecasts. We have a highly experienced management team,            なる場合があるということです。当社にはとても経験豊富な経営チー
+                                                                                    ムがそろっています。その中でも、業界の将来性に対する私たちの確
+          and I give Richard a lot of credit for making decisions based on our
+                                                                                    信を基に意思決定をしてきたリヒャルトの貢献は大きいと思っていま
+          conviction about the industry.
+                                                                                    す。
+          We also have excellent customer relationships. Sometimes,
+                                                                                    また、当社はお客様ととても良好な関係を築いています。時には、経
+          executive-to-executive discussions provide information that does not
+                                                                                    営幹部同士の対話から得られる情報が、ボトムアップで得ている情報
+          match what we are hearing through bottom-up channels. In those            と一致しない場合もあります。そのような場合には、経営幹部レベル
+          cases, it is easy to decide that we should rely on the executive-level    で得られた情報を重視するという判断がしやすくなります。
+          information.
+                                                                                    一方で、この 1 年ほどで、ボトムアップで把握できる情報も改善して
+          I will say that bottom-up visibility has improved over the past year.     きました。より長期的な需要予測を受け取れるようになっています。
+          We are beginning to receive longer-term forecasts. In some cases, we      場合によっては 18 カ月先までの予測を受け取ることもありますし、
+          receive 18-month forecasts, and some companies are even willing to        数年先までの予測をご共有くださるお客様も出てきています。これは
+          provide multiyear forecasts. That helps tremendously.                     とても大きな助けになっています。
+
+          They are doing this because they are also adopting a top-down             お客様がこうした情報を共有くださるようになった背景には、お客様
+          approach within their own companies. This has become part of the          自身も社内でトップダウンアプローチを取り入れていることがありま
+                                                                                    す。これはすでに事業運営の一部となっており、今後も変わらないと
+          business, and I do not think it will change. Our top-down decisions
+                                                                                    考えています。需要が急増した際に、当社が必要な供給能力をあらか
+          are the reason we had the right capacity in place when these demand
+                                                                                    じめ確保できていたのは、こうしたトップダウン型の意思決定を行っ
+          ramps occurred.
+                                                                                    てきたからです。
+
+Oike      So, this change is occurring not only on the supply side but also on      つまり、この変化は供給側だけでなく、お客様側でも起きているとい
+尾池        the customer side.                                                        うことですね。
+
+Junger    Yes. That is a major change.                                              はい。これは非常に大きな変化です。
+ユンガー
+          Managing demand and supply has become a much more strategic               需要と供給の管理は、単に「テスタが必要だから 1 台購入する」とい
+          effort across companies rather than simply a technical process of         った実務的なプロセスではなく、企業間でより戦略的に取り組むテー
+          saying, “I need a tester, so I will buy one.”                             マになっています。
+
+          The discussion is now about securing long-term capacity to support        現在の議論は、お客様を長期的に支えるために、必要な供給能力をど
+          customers. It has therefore become a strategic conversation at the        う確保するかというものになっています。そのため、ボトムアップで
+          executive level, although it continues to be complemented by tactical     把握する実務レベルの需要予測を引き続き活用しつつも、経営幹部レ
+                                                                                    ベルで議論すべき戦略的テーマになっています。
+          forecasting.
+
+          I believe this is one of the biggest changes we have seen. We call it a   これは、私たちが経験してきた中でも最も大きな変化の一つだと思い
+                                                                                    ます。私たちはこれをトップダウンアプローチと呼んでいますが、実
+          top-down approach, but it has really become an exercise in strategic
+                                                                                    際には、企業間で戦略的な方向性をすり合わせる取り組みへと発展し
+          alignment across companies.
+                                                                                    ていると言えるでしょう。
+
+
+
+
+                                                                              3
+[Decision-Making Framework / 意思決定フレームワーク]
+                                            English                                                 日本語
+Oike       Thank you for sharing that. So, with considerable uncertainty in the    ありがとうございます。では、市場の不確実性が非常に高まる中、ア
+尾池         market, what indicators does Advantest look at when making              ドバンテストでは、生産能力に関する意思決定を行う際、どのような
+           capacity decisions? You have already touched on several of them, but    指標を重視しているのでしょうか。すでにいくつかの点に触れていた
+                                                                                   だきましたが、ほかに補足があればお聞かせください。
+           do you have any additional comments?
+
+Lefever    The whole world is asking this question. It seems to be discussed in    これは今、世界中の誰もが抱いている疑問です。どの会社の取締役会
+ラフィーバ      every boardroom: How long will this continue?                           でも、
+                                                                                     「この状況はいつまで続くのか」という議論が行われていると思
+                                                                                   います。
+           We monitor many different signals. We look at large language
+                                                                                   私たちは、さまざまなシグナルを注視しています。例えば、大規模言
+           models and profit per token. We look at data-center capital
+                                                                                   語モデルやトークン（AI が処理する情報量の単位）当たりの収益性、
+           expenditure and energy sources. We look at foundry and memory
+                                                                                   データセンターの設備投資や電力供給能力を見ています。また、ファ
+           wafer starts, the amount of clean-room space being built, the
+                                                                                   ウンドリやメモリ半導体のウェーハ供給量、建設中のクリーンルーム
+           semiconductor production equipment and materials industry, and          の規模、半導体製造装置・材料業界の動向、さらには原材料まで幅広
+           even raw materials.                                                     く見ています。
+
+           We examine the entire supply chain stack and look for                   つまり、サプライチェーン全体をくまなく精査し、その中に不連続性
+           discontinuities to confirm that all of these areas are growing          がないかを確認することで、これらの領域が十分に成長しているかを
+           sufficiently.                                                           確かめています。
+
+                                                                                   ただ最終的には、私たちが直接向き合っているお客様から得られる情
+           Ultimately, however, we rely on the customers we deal with face to
+                                                                                   報を重視しています。多くの場合、景気のサイクルに対して必要以上
+           face. More often than not, people overcompensate for cycles, whereas
+                                                                                   に反応しがちですが、私たちは長期的な成長という視点で捉えていま
+           we take a long-term perspective on growth.
+                                                                                   す。
+
+           There will be downward cycles, and we know how to manage them.          もちろん、今後も需要が落ち込む局面はあるでしょう。しかし、そう
+           The bigger risk is not having sufficient capacity.                      した局面には十分対応できます。それよりも大きなリスクは、必要な
+                                                                                   供給能力を確保しないことです。
+           The AI and data-center market will eventually transition toward
+           edge and physical AI. Everyone understands that this will happen,       AI やデータセンター市場は、いずれエッジ AI やフィジカル AI へと広
+           although no one knows the exact timing. It will create another          がっていくでしょう。それがいつ起こるのか、正確なタイミングは誰
+                                                                                   にも分かりませんが、いずれそうなることは誰もが理解しています。
+           significant tailwind for the industry, so we must be ready.
+                                                                                   それは業界にとって新たな大きな追い風となるため、私たちはそれに
+           There is a great deal of discussion about a supposed bubble. In the     備えておかなければなりません。
+           end, however, we continue to advance according to a very long-term
+                                                                                   いわゆる「バブル」をめぐる議論も盛んに行われています。しかし、
+           vision for the company, somewhat independently of short-term            最終的には、私たちは短期的な景気サイクルに過度に左右されること
+           cycles.                                                                 なく、当社の非常に長期的なビジョンに基づいて事業を前に進めてい
+                                                                                   ます。
+
+Junger     I would add that this is really about what we call scenario planning.   付け加えると、これはまさに私たちが「シナリオプランニング」と呼
+ユンガー                                                                               んでいる考え方です。
+           We evaluate all those parameters and define different scenarios.
+           That allows us to adjust and validate them over time while aligning     先ほど挙げたさまざまな要素を評価した上で、複数のシナリオを設定
+           our strategy with developments in the ecosystem.                        しています。これによって、エコシステムの動向に合わせて当社の戦
+                                                                                   略を調整しながら、各シナリオを継続的に修正・検証することができ
+           This goes beyond the detailed supply chain. We must also examine        ます。
+           the global economy and geopolitical environment, understand how
+                                                                                   そして、見るべき範囲は個々のサプライチェーンの詳細だけにとどま
+           they could influence supply chain shifts and changes, and
+                                                                                   りません。世界経済や地政学的な環境についても分析する必要があり
+                                                                                   ます。それらがサプライチェーンの構造や変化にどのような影響を及
+                                                                          4
+             incorporate those factors into our scenario planning.                    ぼす可能性があるのかを理解し、そうした要素もシナリオプランニン
+                                                                                      グに織り込んでいく必要があります。
+
+
+
+
+[Execution / 実行力]
+                                              English                                                  日本語
+Oike         Looking ahead, what gives you confidence that Advantest can              今後、次のステージの生産能力拡大を着実に進めていけるという自信
+尾池           deliver the next phase of capacity expansion?                            は、どこから来ているのでしょうか？
+
+Junger       The short answer is that we have done it before.                         端的に言えば、これまでにも実現してきた実績があるからです。
+ユンガー
+             Over the past five or six years, we have established a strong track      過去 5～6 年にわたり、これまでご説明してきた取り組みを通じて、当
+             record of significantly expanding our supply chain through the           社はサプライチェーンの供給能力を大幅に拡大してきた確かな実績が
+             processes we have described. We prepared ourselves by ensuring           あります。必要な時に十分な生産・供給能力を確保できるよう事前に
+             that capacity would be available when needed, and we demonstrated        準備し、需要の変化にも迅速に対応できることを実証してきました。
+
+             that we could respond quickly.                                           製品によっては供給能力を 10 倍に、また一部のモジュールでは最大
+
+             For some products, we increased capacity tenfold, and for some           20 倍にまで拡大しました。
+
+             modules, as much as twentyfold.                                          供給能力をさらに次のレベルへ引き上げるには、再び大きな取り組み
+                                                                                      が必要になります。しかし、次のステップに向けた考え方や計画はす
+             Taking capacity to the next level will require another major effort,
+                                                                                      でに整っています。これまでにも実現してきた経験と確かな実績があ
+             but we already have the thought process and planning in place for
+                                                                                      り、さらにすでに先を見据えて準備を進めているからこそ、自信を持
+             the next step. We are confident because we have done this before, we
+                                                                                      っています。私たちは現状にとどまることなく、供給能力をさらに高
+             have a strong track record, and we are already thinking ahead of         めていきます。
+             time. We are not stopping where we are today.
+
+Lefever      Richard, perhaps you could talk about what we learned in 2021,           リヒャルト、2021 年のコロナ禍で深刻な供給不足に直面した際に、私
+ラフィーバ        during the COVID-19 pandemic, when we faced significant supply           たちが何を学んだのかについても説明してもらえますか。
+             shortage.
+
+Junger       It was a challenging period, but also a very valuable one because we     非常に厳しい時期でしたが、同時に多くのことを学んだという意味で、
+ユンガー         learned many lessons.                                                    大変貴重な経験でもありました。
+
+             One lesson concerned supply chain visibility. We needed end-to-end       その一つが、サプライチェーンの可視性です。変化が起きた際に迅速
+             visibility deep into the supply chain, sometimes down to the wafer       に対応できるだけの時間を確保するためには、サプライチェーンの川
+             level, so that we would have enough time to respond quickly to           上から川下まで一貫して状況を把握する必要がありました。場合によ
+                                                                                      っては、ウェーハレベルまでさかのぼって把握する必要がありました。
+             changes.
+
+             Another lesson concerned buffer strategy. We accepted that the           もう一つの教訓は、バッファ戦略です。半導体業界は非常に変化が激
+                                                                                      しいため、そうした変化に備えるには、さまざまな手段を活用する必
+             industry is so dynamic that we need to use different tools to prepare
+                                                                                      要があると認識しました。
+             ourselves.
+                                                                                      サプライヤーとのパートナーシップも重要な要素でした。当社の中核
+             Partnerships with suppliers were another key element. We began
+                                                                                      的・主要なサプライヤーとは、戦略面、実務面の両方で、従来以上に
+             engaging much more deeply with our core and key suppliers at both
+                                                                                      深く連携するようになりました。戦略面では、経営幹部同士の対話を
+             strategic and tactical levels. Strategically, we intensified exchanges   強化しました。それに加えて、当社とサプライヤーをつなぎ、よりタ
+             between executives, while we complemented this with digital              イムリーに情報を共有できるよう、デジタルトランスフォーメーショ
+             transformation (DX) initiatives and tools that connect our companies     ン(DX)の取り組みやツールも活用しました。
+             and provide a more timely flow of information.
+                                                                                      また、サプライチェーンのモデル自体も見直しました。当時得た多く
+             We also adjusted our supply chain models. Many lessons from that         の教訓を、その後の戦略に取り入れています。
+             period were incorporated into our strategy.
+
+                                                                             5
+           Another element was the decision to put capacity in place ahead of       さらに、需要が顕在化する前に必要な供給能力を確保しておくこと、
+           demand and to use scenario planning. Advanced planning became            そしてシナリオプランニングを活用することも重要な要素となりまし
+           another building block arising from those lessons.                       た。こうした経験から、より高度な事前計画も新たな取り組みの柱の
+                                                                                    一つとなりました。
+           We continue to evolve because the industry does not stop, and
+           neither do we. We must continue developing our capabilities in           業界は絶えず変化しており、私たちも立ち止まることはありません。
+           logistics, data management, and supplier engagement.                     物流、データ管理、サプライヤーとの連携といった能力を継続的に高
+                                                                                    めていく必要があります。
+Lefever    When I look back, I sometimes have different memories because of         振り返ってみると、当時はエスカレーション対応や毎日の電話会議が
+ラフィーバ      all the escalations and daily calls. But we did several very important   あまりにも多かったので、リヒャルトとは少し違った記憶もあります。
+           things.                                                                  ただ、非常に重要ないくつかの取り組みを実施しました。
+
+           We established long-term agreements, or LTAs. These are now              まず、長期供給契約を締結しました。今では一般的になっていますが、
+           common, but at the time we were creating them for components we          当時は、それまで長期契約が必要になるとは考えてもいなかったよう
+                                                                                    な部品についても、こうした契約を結ぶようになりました。
+           had never thought would require such agreements.
+
+           We also moved toward multi-sourcing in many cases—not just two           また、多くの部品について複数購買へ移行しました。単に 2 社から調
+                                                                                    達するというレベルではなく、場合によっては最大 6 社程度の調達先
+           sources, but sometimes as many as half a dozen. We created a new
+                                                                                    を確保しました。さらに、新しい調達チームを立ち上げ、DX の推進や
+           procurement team and introduced DX initiatives and digital
+                                                                                    デジタルツールも導入しました。
+           transformation tools.
+                                                                                    もう一つの大きな変化は、問題発生時のエスカレーションルートを整
+           Another major change was the establishment of escalation channels
+                                                                                    備し、サプライヤー企業との経営幹部レベルの関係を構築したことで
+           and executive-level relationships with our suppliers. Traditionally, I   す。従来、私は主にお客様の経営幹部と話をしていました。しかし、
+           spoke mainly with the top executives of our customers. Following         2021 年の経験を受けて、サプライヤー企業の CEO とも直接関係を構
+           what happened in 2021, I also needed relationships with the CEOs         築する必要があると考えるようになりました。
+           of our suppliers.
+                                                                                    こうして築いた関係は、現在の供給能力拡大に伴うさまざまな課題に
+           Those relationships have become extremely useful as we deal with         対応する上で、非常に役立っています。これらは、2021 年に得た教訓
+           the current challenges of expansion. These are just some of the          のほんの一部です。そして今、私たちが再び供給不足の局面に直面す
+           lessons we learned in 2021 that are benefiting us now as we face         る中で、当時の経験が大いに生かされています。
+
+           another period of shortages.
+
+
+
+
+[Risk Management / リスクマネジメント]
+                                           English                                                  日本語
+Oike       We need to be ready to capture growth opportunities. On the other        成長機会に備える一方で、需要が下振れするリスクもあります。この
+尾池         hand, there is always a risk that demand will fall short. How do you     両者のバランスをどのように取っているのでしょうか？
+           balance the two?
+
+Junger     It comes down to how we structure and use our supply chain.              重要なのは、サプライチェーンをどのように構築し、活用しているか
+ユンガー                                                                                ということです。
+           On the supply side, we use strategic inventory. As a company, we
+           have adopted a just-in-case operating model, which gives us              供給面では、戦略的に在庫を保有しています。 当社は、会社全体とし
+           considerable flexibility in inventory management.                        てジャスト・イン・ケース型のオペレーションモデルを採用しており、
+                                                                                    これによって在庫管理に大きな柔軟性を持たせています。
+           It allows us, in a positive sense, to build inventory when business
+           slows so that we are ready to capture the next wave of demand.           この仕組みによって、事業が減速した局面でも、次の需要拡大に備え
+                                                                                    て、将来の需要を取り込むための在庫をあらかじめ積み増すことがで
+           This is enabled by our long-term platform strategy for our products.     きます。
+           That strategy gives us confidence that inventory prepared for the
+           next ramp will remain useful because the platform provides
+                                                                           6
+          continuity in the use of supplies and materials.                        これを可能にしているのが、当社製品における長期的なプラットフォ
+                                                                                  ーム戦略です。この戦略により、部材を継続的に使用できるため、次
+          We complement this by using contract manufacturers. Their
+                                                                                  の需要拡大に備えて確保した在庫も引き続き有効に活用できるという
+          economies of scale help support us through business cycles. We have     自信を持っています。
+          benefited considerably from this model because it keeps our fixed-
+          cost structure low and allows our variable costs to follow the cycle.   さらに、これを補完する形で外部の製造委託先も活用しています。製
+                                                                                  造委託先が持つ規模の経済を活用することで、事業の変動にも柔軟に
+          These two tools help us navigate business cycles.                       対応することができます。当社は、このモデルから大きなメリットを
+                                                                                  得ています。固定費を低く抑えながら、需要の変動に応じて変動費を
+                                                                                  増減させることができるからです。
+
+                                                                                  この二つの仕組みによって、当社は事業サイクルに柔軟に対応してい
+                                                                                  ます。
+
+Lefever   I would add that our management team and Board of Directors             加えて、当社の経営チームと取締役会は、戦略在庫は非常に重要な資
+ラフィーバ     understand that strategic inventory is gold.                            産であると理解しています。
+
+          We do not view it simply in terms of obsolescence risk. We take the     私たちは、在庫を単純に陳腐化リスクの観点だけから捉えているわけ
+                                                                                  ではありません。むしろ逆です。長期的な需要に強い確信を持ってい
+          opposite view: we want to hold this inventory because we have strong
+                                                                                  るからこそ、積極的に在庫を持っておきたいと考えています。
+          conviction about the long term.
+                                                                                  リヒャルトが述べたように、当社のプラットフォーム戦略には、10 年
+          As Richard said, our platform strategy includes platforms that can
+                                                                                  から 15 年にわたって使用できるプラットフォームもあります。その
+          last 10 to 15 years. That makes the inventory liquid for us because
+                                                                                  ため、在庫は当社にとって活用可能性の高い資産となります。仮に市
+          it can be used. If there is a downturn, the inventory will still be
+                                                                                  場が下降局面に入ったとしても、需要が回復すれば、その在庫を引き
+          useful when demand returns.                                             続き活用することができます。
+
+          This differs from the conventional business approach of focusing        これは、在庫回転日数や過剰在庫・陳腐化在庫のリスクを重視する従
+          heavily on days inventory outstanding and the risk of excess and        来型の経営アプローチとは異なります。
+          obsolete inventory.
+                                                                                  私たちは異なるアプローチを取っています。在庫評価減が発生する可
+          We take a different approach. We are much more concerned about          能性よりも、需要が発生した際にそれに応えられないリスクのほうを
+          our ability to meet demand than about the possibility of having to      はるかに重視しています。当社にとって、リスクとリターンのバラン
+          record write-downs. For the company, the risk-reward trade-off is       スは非常に明確です。
+
+          very clear.
+
+Oike      So, this is closely connected to the platform strategy.                 つまり、これはプラットフォーム戦略と密接に結び付いているという
+尾池                                                                                ことですね。
+
+Junger    Yes. It is definitely enabled by the platform strategy.                 はい。その通りです。プラットフォーム戦略があるからこそ、このよ
+ユンガー                                                                              うな取り組みが可能になっています。
+
+
+
+
+                                                                           7
+[Stakeholder Value Creation / ステークホルダー価値の創造]
+                                             English                                               日本語
+Oike        How does this supply chain transformation translate into real value     このようなサプライチェーンの変革によって、お客様やビジネスパー
+尾池          for customers and business partners?                                    トナーには、具体的にどのような価値を提供できるのでしょうか？
+
+Junger      It provides significant value to the ecosystem because we are closely   これはエコシステム全体に大きな価値をもたらしています。なぜなら、
+ユンガー        connected with our partners, meaning both customers and suppliers.      当社はお客様とサプライヤーの双方を含むパートナーと、緊密に連携
+                                                                                    しているからです。
+            Customers benefit from our ability to provide systems when they
+            need them because we are prepared. Suppliers also benefit from          お客様にとっては、当社が十分な準備を整えていることで、必要なと
+            participating in and supporting this industry and from sharing the      きに必要なシステムを提供できるというメリットがあります。一方、
+                                                                                    サプライヤーにとっても、この業界に参画し、支えることで、エコシ
+            success we can generate together across the ecosystem.
+                                                                                    ステム全体でともに生み出す成長の果実を分かち合うことができると
+            The    foundation     is   executive-level   partnership:   strategic   いうメリットがあります。
+            partnerships, long-term relationships, and a high degree of trust
+                                                                                    その基盤となっているのが、経営幹部レベルでのパートナーシップで
+            among the companies involved. Together, we can move the industry
+                                                                                    す。戦略的なパートナーシップ、長期的な関係、そして関係する企業
+            forward.
+                                                                                    間の高い信頼関係が重要です。こうした連携を通じて、私たちはとも
+                                                                                    に業界を前進させることができます。
+Lefever     We have worked very hard to earn a high level of market share in        当社は、SoC とメモリの両分野において高水準のシェアを獲得するた
+ラフィーバ       both SoC and memory.                                                    めに、努力を積み重ねてきました。
+
+            In most cases, customers prefer to work with a single supplier          多くの場合、お客様は必要なテスタと供給能力を確保できるのであれ
+            because it is more efficient in terms of engineering resources and      ば、1 社のサプライヤーに集約することを望みます。 その方がエンジ
+            managing their installed base, provided they can obtain the testers     ニアリング・リソースの効率的な活用や、すでに導入している装置の
+                                                                                    管理という面で効率が良いからです。
+            and capacity they need.
+
+            We never want to give customers a reason to look elsewhere. The         私たちは、お客様に他を探す理由を決して与えたくありません。お客
+                                                                                    様にとっての真の価値は、1 社のベンダーに集約することで、エンジ
+            real value for customers is the tangible efficiency gained by relying
+                                                                                    ニアリングや装置管理の効率を高められることにあります。
+            on a single vendor.
+                                                                                    当社はそうした信頼を築いてきました。そして、その信頼こそが、ア
+            We have earned that trust, and that is why Advantest’s market
+                                                                                    ドバンテストの市場シェアが継続的に上昇している理由です。
+            share has continued to rise.
+
+
+                                                                           8
+[Closing / クロージング]
+                                                                English                                                                                          日本語
+ Oike                There have recently been questions about the sustainability of AI                                足元では、AI 関連投資の持続性と、それが市場に及ぼし得る影響につ
+ 尾池                  investments and what that could mean for the market. As we                                       いて、さまざまな見方が示されています。最後に、本日の対談を通じ
+                     conclude, what key message would you like investors to take away                                 て投資家の皆様に最もお伝えしたいメッセージは何でしょうか。
+
+                     from today’s discussion?
+
+ Junger              We have been through many cycles in this industry, and one thing                                 私たちは、この業界でこれまで数多くのサイクルを経験してきました。
+ ユンガー                we have learned is that technology prevails.                                                     そして、そこから学んだことの一つは、最終的には技術の進化が市場
+                                                                                                                      の原動力となることです。
+                     We experienced the dot-com cycle, and today everyone uses the
+                     Internet. We experienced the mobile-phone cycle, and today                                       私たちはドットコム時代のサイクルを経験しましたが、今では誰もが
+                     everyone uses mobile phones. We also experienced the cloud cycle.                                インターネットを利用しています。携帯電話のサイクルも経験しまし
+                                                                                                                      たが、今では誰もが携帯電話を使っています。そして、クラウドコン
+                     Over many years, Advantest has demonstrated its ability to manage                                ピューティングの普及に伴う成長サイクルも経験してきました。
+                     these cycles. We are preparing ourselves to do the same in the future.
+                                                                                                                      アドバンテストは長年にわたり、こうしたさまざまなサイクルに対応
+                     This is reflected in all the strategies we discussed today and is
+                                                                                                                      できることを実証してきました。そして、今後も同じように対応でき
+                     intended to ensure that we can sustain ourselves through the next
+                                                                                                                      るよう準備を進めています。
+                     wave of cycles.
+                                                                                                                      本日お話ししたさまざまな戦略は、こうした考え方を反映したもので
+                                                                                                                      あり、今後訪れる新たなサイクルにおいても、持続的な成長を実現し
+                                                                                                                      ていくためのものです。
+
+ Lefever             Richard covered most of the main points.                                                         リヒャルトが主要なポイントのほとんどを説明してくれました。
+ ラフィーバ
+                     We have an experienced management team whose members have                                        当社には経験豊富な経営チームがあり、メンバーはそれぞれのキャリ
+                     been through five or six major cycles during their careers. We know                              アの中で、これまで 5 回、6 回という大きな市場サイクルを経験して
+                     how to manage downturns. We still have the scars from those                                      きました。市場が下降局面に入った際にどう対応すべきか、私たちは
+                     experiences.                                                                                     十分に理解しています。そうした経験から得た教訓は、今もしっかり
+                                                                                                                      と私たちの中に刻まれています。
+                     We know how to leverage our variable-cost model, and we know how
+                     to scale back. That is the easier part.                                                          また、変動費型のビジネスモデルをどう活用し、需要に応じて事業規
+                                                                                                                      模を縮小すべきかについても分かっています。むしろ、これは対応し
+                     Our main focus is scaling up because insufficient capacity is the only                           やすい部分です。
+                     thing that could truly stop the progress the company is making.
+                                                                                                                      私たちがより重視しているのは、需要の拡大に合わせて供給能力を引
+                     We are highly willing to act proactively, and that is something                                  き上げていくことです。 なぜなら、十分な供給能力を確保できないこ
+                     everyone should recognize about Advantest. Unlike many other                                     とこそが、当社の成長を本当の意味で妨げ得る要因だからです。
+                     companies, we have strong long-term conviction.
+                                                                                                                      私たちは、必要と判断すれば、積極的かつ大胆に行動することをため
+                     I have always told my children, “No risk it, no biscuit.” Part of that                           らいません。 これは、アドバンテストという会社について、ぜひ皆さ
+                     mindset has become ingrained in the company.                                                     んに理解していただきたい点です。多くの企業とは異なり、私たちは
+                                                                                                                      長期的な成長に強い確信を持っています。
+                     We are very excited about the future. We believe this upward trend
+                     will continue well into the future, and we intend to be ready.                                   私は子どもたちにいつも、
+                                                                                                                                 「No risk it, no biscuit.」、つまり「リスクを
+                                                                                                                      取らなければ、成果は得られない」と言ってきました。そうした考え
+                                                                                                                      方は、当社の企業文化にも根付くようになりました。
+
+                                                                                                                      私たちは将来に大きな期待を持っています。この成長トレンドは今後
+                                                                                                                      も長期にわたって続くと見ており、その成長機会を確実に捉えられる
+                                                                                                                      よう、しっかりと準備を進めていきます。
+
+ Note
+1.   This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These statements include, among other things, the discussion of Advantest’s
+     business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of forward-looking
+     terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks, uncertainties and
+     other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed or implied by such forward-looking statements. Except as
+     required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+2.   The content of this script may not necessarily correspond to the Fireside Chat.
+
+
+※
+1.    本資料には、将来の事象についての、当社の現時点における期待、見積りおよび予測に基づく記述が含まれております。これらの将来の事象に係る記述は、当社における実際の財務状況や活動状
+      況が、当該将来の事象に係る記述によって明示されているものまたは暗示されているものと重要な差異を生じるかもしれないという既知および未知のリスク、不確実性その他の要因が内包されてお
+      り、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、またはその他の理由により、将来予想に関する記述
+      を更新または修正することはありません。
+2.    本スクリプトの内容は Fireside Chat と必ずしも一致しない場合があります。
+
+
+
+
+                                                                                                          9
+

@@ -1,0 +1,13 @@
+JPY million; negative net debt = net cash
+date                              cash   borrow  bondsCV  leases |    (a)exL    (b)inL  (c)exL,CBface  (d)inL,CBface
+2025-03-31 (FY2024 end)        262,544   74,955        0  18,548 |  -187,589  -169,041       -187,589       -169,041
+2025-12-31 (FY2025 Q3 end)     329,322   75,651        0  15,552 |  -253,671  -238,119       -253,671       -238,119
+2026-03-31 (FY2025 end)        339,966        0        0  20,192 |  -339,966  -319,774       -339,966       -319,774
+2026-06-30 (FY2026 Q1 end)     413,124        0   88,930  19,236 |  -324,194  -304,958       -313,124       -293,888
+2026-09-30 (FY2026 Q2 end)     401,785        0   89,486  17,760 |  -312,299  -294,539       -301,785       -284,025
+
+Company definition (borrowings - cash) at 31 Mar 2026: calc -339,966 vs reported -339,966 -> match=True
+Cash + unused committed line/overdraft at 2026-03-31 (FY2025 end): 479,966 (cash 339,966 + lines 140,000)
+Cash + unused committed line/overdraft at 2026-09-30 (FY2026 Q2 end): 541,785 (cash 401,785 + lines 140,000)
+Change in cash 31 Mar 2026 -> 30 Sep 2026: 61,819
+Investment securities check 30 Sep 2026: equity 203,670 + funds 228,916 = 432,586 vs reported 432,586

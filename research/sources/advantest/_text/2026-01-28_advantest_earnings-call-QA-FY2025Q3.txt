@@ -1,0 +1,196 @@
+                                                                       Advantest Corporation
+                                                 Q3 FY2025 (Three months ended December 31st, 2025) Financial Briefing
+                                                                           Q&A Summary
+                                                                                  January 28th, 2026
+
+
+[FY2025 Performance | FY2025 業績]
+                                                 English                                                                 日本語
+ Q1      What has changed over the last three months that drove the strong results?            直近 3 カ月で何が変化し、今回の好調な業績につながったのか。
+
+ A1      In the last three months, we saw significant pull-ins from customers as their         直近 3 カ月では、顧客製品の立ち上がりが想定以上に早く進んだことを
+         devices ramped more quickly than anticipated. Some of the new product                 背景に、前倒し需要が顕著に発生した。当初は年初以降と見ていた一部
+         launches we had expected for early this year were actually pulled in. This was        の新製品ローンチが前倒しされたことも、業績を押し上げた主要因の一
+         one of the major factors.                                                             つである。
+
+         Looking at next year, we can point to the growth in custom ASICs as a significant     来期に向けては、カスタム ASIC の成長が重要なドライバーとなる見通
+         driver. In FY2025, many new designs were being launched. Now it appears that          しである。FY2025 には多くの新規設計が立ち上がったが、FY2026 にか
+         in FY2026, they will be moving into high-volume manufacturing, which we               けてこれらが量産フェーズに移行することで、当社業績への直接的な貢
+         anticipate will directly contribute to our business.                                  献が見込まれる。
+
+ Q2      Your second-half performance is outperforming your expectations from three            足元の下期業績は、3 カ月前の想定を上回っているが、これは主として
+         months ago. Is this mainly GPU-driven, or is custom ASIC already contributing         GPU 向けビジネスによるものか。それとも、カスタム ASIC がすでに想
+         to the better-than-expected performance?                                              定以上の業績に寄与しているのか。
+
+ A2      Multiple factors contributed to the second-half outperformance. We have been          下期業績の上振れは、複数の要因によるものである。中でも、想定より
+         able to expand our production capacity sooner than anticipated, which was a           も早期に生産能力の拡張を進めることができた点は、供給制約の解消に
+         significant factor in resolving constraints.                                          大きく寄与した。
+
+         Beyond that, the business across the board is strong. It is not attributable to any   加えて、特定の用途に依存するものではなく、事業全体が総じて好調に
+         single application. The entire high-performance computing market—whether              推移している。GPU、カスタム ASIC、推論向けデバイスを含む高性能コ
+         GPUs, custom ASICs, or inferencing devices—is performing very well. Given our         ンピューティング市場全体がとても堅調であり、当社はその中でのポジ
+         market position, we have benefited from this broad-based growth.                      ションを背景に、こうした幅広い成長の恩恵を受けている。
+
+
+
+[Tester Market Outlook | テスタ市場見通し]
+                                                 English                                                                  日本語
+ Q3      Could you provide more details on the breakdown of the SoC tester market              SoC テスタ市場の TAM について、CY2025 および CY2026 における AI 関
+         TAM, including AI-related exposure for CY2025 and CY2026? What are your               連の内訳を含め、より詳しく説明してほしい。また、市場シェアに関す
+         market share assumptions? Also, what scenarios are you assuming for the low           る前提条件についてもお聞かせいただきたい。併せて、CY2026 の TAM
+         end and high end of your CY2026 TAM guidance for both SoC and memory?                 見通しにおいて、SoC およびメモリそれぞれの下限・上限の前提条件や
+                                                                                               シナリオについても教えてほしい。
+
+ A3      From a SoC perspective, the largest subsegment continues to be “Computing             SoC テスタ市場では、引き続き「コンピューティング・通信」分野が最
+         and Communications” in which HPC (High Performance Computing)/AI accounts             大 の サ ブ セ グ メ ン ト で あ り 、 そ の 大 半 を HPC (High Performance
+         for the majority. In CY2025, this represented approximately 80% of SoC TAM,           Computing)/AI 関連が占めている。CY2025 においては、同分野が SoC 向
+         and we expect a similar trend to continue into CY2026. This will remain the main      け TAM の約 8 割を占めており、CY2026 においても同様のトレンドが継
+         growth driver, as we expect increasing device complexity to continue to drive         続すると見ている。デバイスのさらなる複雑化に伴うテスト回数の増加
+         more test insertions and longer test times.                                           やテスト時間の長期化を背景に、今後も主要な成長ドライバーであり続
+                                                                                               ける見通しである。
+         Regarding market share, we will release final CY2025 figures in April. In broad
+         strokes at present, we believe we gained market share in SoC during CY2025,           市場シェアについては、CY2025 の最終値を 4 月に開示予定である。現
+         and we see that trend continuing into CY2026.                                         時点での予測としては、CY2025 において SoC 分野でシェア拡大ができ
+                                                                                               たのではないかと見ており、この流れは CY2026 も継続すると考えてい
+         In the SoC device market, we see very strong business on the demand side. On
+                                                                                               る。
+         the assumptions driving the low and high ends of our TAM range in CY2026, we
+         think it is largely related to semiconductor’s supply-side economics—from wafer       SoC デバイス市場では、とても力強い需要が見られる。CY2026 の TAM
+         starts to advanced packaging capacity to memory availability. If there is             見通しにおける下限・上限は、ウェーハ投入量、先端パッケージング生
+         sufficient wafer supply, advanced packaging capacity, and memory availability,        産能力、メモリ供給状況など、主として半導体市場の生産能力の状況に
+         there is a scenario where we may reach the higher end.                                左右されるものと見ている。これらの制約が緩和された場合には、TAM
+                                                                                               が上限に近づく可能性がある。
+         On the memory side, it is also supply-related in terms of how much memory can
+         be produced. New factories are being built by DRAM suppliers, coming online in        メモリデバイスについても、基本的には上記と同様の供給制約が前提と
+         late CY2027 and into CY2028. Until then, there is significant re-allocation of        なる。DRAM 各社は新工場建設を進めており、CY2027 後半から CY2028
+         wafer starts toward AI applications. How well memory suppliers optimize their         にかけて本格稼働が見込まれている。それまでの期間は、AI 用途を中心
+         wafer starts toward high-end areas will dictate where we end up within the            としたウェーハ再配分が続く見通しであり、各社が高付加価値領域への
+         range.                                                                                最適化をどの程度進められるかが、TAM レンジの水準を左右する。
+
+
+                                                                                           1
+[Growth Drivers | 成長ドライバー]
+                                                English                                                                日本語
+ Q4     Could you breakdown the HPC/AI-related business further between GPU and                   HPC/AI 関連ビジネスについて、CY2025 における GPU とカスタム ASIC の
+        custom ASIC for CY2025, and share your outlook for CY2026?                                内訳をどのように見ているか。また、CY2026 に向けた見通しについて
+                                                                                                  どのように考えているか。
+
+ A4     We do not disclose beyond “Computing and Communications” categories,                      当社では「コンピューティング・通信」の詳細な内訳は開示していない
+        which include HPC/AI and application processors. The majority are currently on            が、ここには HPC/AI やアプリケーションプロセッサが含まれている。
+        the HPC/AI side, and we expect this trend to continue.                                    現時点では、その大半が HPC/AI 関連であり、この傾向は今後も継続す
+                                                                                                  ると見ている。
+        In CY2025, there was clearly a shift toward custom ASIC and our business with
+        those customers also grew. That said, GPUs continue to be very strong and                 CY2025 においては、カスタム ASIC へのシフトが明確に見られ、当該顧
+        remain the number one driver for the business. We expect this trend to                    客向けビジネスも拡大した。一方で、GPU 向けビジネスも引き続きとて
+        continue—more business with custom ASIC providers, while the GPU business                 も堅調であり、最大の成長ドライバーである状況に変わりはない。今後
+        remains healthy.                                                                          は、カスタム ASIC 向けビジネスの拡大が進む一方で、GPU 向けビジネ
+                                                                                                  スも健全な水準で推移する見通しである。
+
+ Q5     You mentioned that TAM for CY2026 is expected to grow by approximately                    CY2026 の TAM が約 30％成長する見通しだが、カスタム ASIC、GPU のテ
+        30%. How would you rank the contributions for potential TAM growth from the               スト時間、半導体の数量増加の 3 つの成長要因の寄与度をどのように位
+        following factors: Custom ASIC, GPU test time, semiconductor volume growth?               置づけているか。
+
+ A5     We are estimating that the biggest driver is the additional unit volumes for              最も大きな成長要因は、カスタム ASIC の生産数量の増加であると見て
+        custom ASICs. We have said before that the test content for a typical custom              いる。これまでも説明してきたとおり、一般的なカスタム ASIC のアー
+        ASIC architecture is similar to that of GPU accelerators — they also have                 キテクチャにおけるテスト内容は GPU アクセラレータと同程度であり、
+        significant test content. What is driving the trajectory is really the unit volume        いずれも高いテスト負荷を伴う。足元の成長トレンドを牽引しているの
+        increase and the growing adoption of custom ASIC.                                         は、こうした数量の増加とカスタム ASIC の採用拡大である。
+
+
+
+[FY2026 Outlook and MTP3 | FY2026 見通しおよび MTP3]
+                                                English                                                                日本語
+ Q6     The TAM figures you disclosed suggest that FY2026 revenue could potentially               開示されている TAM の数値を見ると、FY2026 の売上高は前年比で 30～
+        grow between 30% and 40% year-over-year. Is my assumption correct? Is there               40％程度の成長が見込まれるように見えるが、この理解で正しいか。さ
+        a possibility that you could grow further? It also seems likely that FY2026 could         らに高い成長となる可能性はあるのか。併せて、FY2026 の業績が、修正
+        outperform your revised Third Mid-Term Management Plan (MTP3) figures.                    後の第 3 次中期経営計画(MTP3)の想定を上回る可能性について、どのよ
+        Any thoughts on this?                                                                     うに考えているか。
+
+ A6     We do not provide FY2026 forecast until April. However, looking at our TAM                FY2026 の業績予想については、4 月に開示予定。ただし、当社の TAM 見
+        projections and applying assumptions around market share, there is a case                 通しに、市場シェアに関する一定の前提を置いて試算すると、相応の成
+        where we could potentially see that level of growth. We think this is actually in         長が見込まれることも想定される。これは、業界全体において他社が
+        line with what other companies in the wider industry are projecting for 2026.             2026 年に向けて示している成長見通しとも概ね沿うものと考えてい
+                                                                                                  る。
+        Regarding the MTP3, we are certainly surpassing many of the goals we had set
+        for the three-year period. We will be revisiting those numbers as we enter                MTP3 については、3 年間で設定した目標の多くを既に上回る進捗とな
+        FY2026, which will be the final year of our MTP3.                                         っている。FY2026 は MTP3 の最終年度にあたることから、同年度に入る
+                                                                                                  タイミングで目標値をレビューする。
+
+
+
+[Outlook for CY2027 and Beyond | CY2027 以降の見通し]
+                                                English                                                                日本語
+ Q7     Based on conversations with your customers, is there any visibility you can               顧客との対話を踏まえ、CY2027 以降について現時点で共有できる見通
+        share on CY2027 and beyond?                                                               しはあるか。
+
+ A7     It is still too early to provide specific guidance. However, in general terms, many       現時点では、具体的な見通しを示すには時期尚早。ただし、顧客との対
+        of our customers have indicated they are sold out through this year and into              話を踏まえると、多くの顧客では来年にかけてすでに注文が埋まってい
+        next year. This bodes well for the test capacity they will need. Coupling that            る状況にあり、必要となるテスト能力の観点では良好な環境にあると見
+        with increasing device complexity year after year also supports a positive                ている。これに加え、デバイスの高機能化、さらなる複雑化が年々進ん
+        outlook for CY2027, but it is too early to say definitively at this point.                でいることも、中長期的な需要を下支えする要因となっており、CY2027
+                                                                                                  に向けた見通しは総じて明るいが、現時点で断定的な見解を示す段階に
+                                                                                                  はない。
+
+
+
+
+                                                                                              2
+[Production Capacity | 生産能力]
+                                                        English                                                                                            日本語
+ Q8         Originally, the company had suggested that you aim for capacity expansion                          従来、CY2026 における生産能力は CY2025 比で 60～70％の拡大を目標
+            target of 60% to 70% in CY2026 versus CY2025 and that you would aim for                            とし、SoC テスタは FY2026 末に 5,000 台を目指す方針だった。今回示し
+            5,000 units by the end of FY2026 in SoC testers. Given the CY2026 TAM outlook                      た CY2026 の TAM 見通しと、仮に市場シェアが 60％程度に達する可能
+            you presented today and potential market share of 60%, it seems 5,000 units                        性を踏まえると、5,000 台では不足するようにも見える。足元の生産能
+            may not be sufficient. What are your current thoughts on the capacity?                             力についての考え方を伺いたい。
+
+
+
+ A8         We are on track for the 5,000 systems per year target by the end of FY2026. 5,000                  FY2026 末における SoC テスタ年間 5,000 台の目標については、計画どおり
+            systems represent a minimum target, and we have the scalability to go beyond                       進捗している。5,000 台はあくまで最低限の目標であり、それを上回る需
+            that. In fact, we are now considering expanding further given the demand outlook                   要の伸びに対応した拡張性を有している。実際、今回開示した TAM 見通し
+            reflected in our TAM projections.                                                                  が示す需要環境を踏まえ、さらなる増産についても検討を進めている。
+
+            We have also outlined plans to move toward 7,500 systems per year within a                         併せて、数年以内に年間 7,500 台、その後は 10,000 台規模まで拡張してい
+            couple of years, and then beyond that to 10,000 systems. We may need to                            く計画もある。当初想定よりも前倒しで拡張を進める必要が生じる可能性
+            accelerate that build-out faster than originally planned, but that is simply a matter              はあるが、これは実行スピードの問題であり、方向性自体に変更はない。
+            of executing faster than anticipated.
+
+
+
+[China Business | 中国ビジネス]
+                                                        English                                                                                            日本語
+ Q9         You mentioned strong customer demand and pull-ins in the December                                  Q3 の売上高は、顧客需要の強さや前倒しが見られ、前四半期比で増加
+            quarter, and China revenue increased quarter-over-quarter. Does this strong                        したが、こうした強い需要には中国向けも含まれているのか。また、
+            demand include China? What is your outlook for China SoC demand in                                 CY2026 における中国の SoC 需要について、どのように見ているか。
+            CY2026?
+
+ A9         Our China business remains quite healthy, representing around 20% to 25% of                        中国ビジネスは引き続き堅調であり、全社売上高の約 20～25％を占め
+            overall revenue. It is an important region for us, both on the SoC side and                        ている。SoC 向けおよびメモリ向け共に、中国は当社にとって重要な市
+            memory.                                                                                            場である。
+
+            There are thousands of fabless companies in China, and in addition, there are a                    中国には数千社規模のファブレス企業が存在する。加えて、中国の SoC
+            variety of device segments on the SoC side that serve everything. This is all                      デバイス分野では、幅広い領域に対する需要がある。これらは当社のグ
+            reflected in our overall global TAM numbers.                                                       ローバルでの TAM 見通しにすでに織り込まれている。
+
+
+
+
+Note
+This document is prepared for those who were unable to attend the financial briefing and is intended only for reference purposes. The original content has been revised and edited by Advantest for ease of
+understanding. This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These statements include, among other things, the discussion of
+Advantest’s business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of forward-
+looking terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks, uncertainties
+and other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed or implied by such forward-looking statements. Except as
+required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+
+
+※本資料に記載されている内容は、決算説明会の質疑をもとに当社の判断で要約したものです。また本資料には、将来の事象についての、当社の現時点における期待、見積りおよび予測に基づく記述が
+含まれております。これらの将来の事象に係る記述は、当社における実際の財務状況や活動状況が、当該将来の事象に係る記述によって明示されているものまたは暗示されているものと重要な差異を生じ
+るかもしれないという既知および未知のリスク、不確実性その他の要因が内包されており、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、当社は、新
+たな情報、将来の出来事、またはその他の理由により、将来予想に関する記述を更新または修正することはありません。
+
+
+
+
+                                                                                                          3
+

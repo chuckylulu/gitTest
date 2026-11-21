@@ -1,0 +1,198 @@
+                                                                          Advantest Corporation
+                                                                 IR Fireside Chat – Q&A Session Summary
+                                                                                November 17, 2025
+
+
+[Die-Level Probing Opportunity | ダイレベルプロービングの事業機会]
+                                              English                                                                 Japanese
+ Q1：     Regarding die-level probing, could you share your outlook on this                    ダイレベルプロービングの事業機会に対する見通しを共有いただきたい。
+         opportunity? I understand the next merchant GPU may adopt a die-level                次世代 GPU がダイレベルプローバを採用する可能性があると理解してい
+         prober. When do you expect it to contribute to earnings, and how should              る。その業績寄与はいつ頃と予測しているか。また、定量的にどのくらい
+         we quantify the impact?                                                              の規模が見込めるのか。
+
+ A1：     [Lefever] We are seeing traction build for die-level probe insertion for             [ラフィーバ] ダイレベルプローブの導入は、良品ダイおよび良品
+         known good die and for known good CoW(Chip on Wafer) use. This is a very             CoW(Chip on Wafer)用途で進展している。この領域は新たなテスト工程（イ
+         dynamic area because it's different. The value proposition seems like it             ンサーション）の追加となり、流動的な要素が大きい。
+                                                                                                                      （しかしながら、
+         started to be fairly compelling around this insertion. In terms of timing, it        こうしたテスト）インサーションの追加がもたらす提供価値はかなり魅力
+         appears later next year to be ramping potential for this business, and we            的である。時間軸としては、来年後半に立ち上がる可能性があり、その後
+         anticipate it will be followed by several years of fairly high growth. The use       数年間は高い成長が続くことが期待できる。ただし、ダイレベルプローブ
+         case and the value add for this insertion has to be very clear for it to have        のインサーションの力強い立ち上がりが実現する条件として、明確な効果
+         aggressive ramp-up.                                                                  と付加価値の証明が求められる。
+
+         [Serrer] The power levels at the wafer test are so high that thermal
+                                                                                              [ゼラー] ウェーハテスト時の電力レベルは非常に高いため、ウェーハ全
+         challenge and warpage at the entire wafer level is too high and difficult to
+                                                                                              体での熱課題や反りが顕著となっており、制御が難しい。顧客は真の良品
+         manage. Customers really want to do real known good die and want to do
+                                                                                              ダイを求め、後工程でのチップレットのマッチングを重視しており、高温
+         matching of chiplets later on. They need to perform very precise and
+                                                                                              での精密かつ正確な良品ダイテストを必要としている。ダイか CoW かに
+         accurate known good die test at hot temperature. Going to the die level
+                                                                                              かかわらず、ダイレベルでのテストを挿入することで、より精密な測定が
+         test, whether it's die or CoW, enables our customers to do much more
+                                                                                              可能となる。このことが、ダイレベルプローブを求める主な原動力と考え
+         precise measurements, and that's the driver for this opportunity.
+                                                                                              られる。
+
+
+
+
+[AI Utilization in Semiconductor Testing | 半導体試験における AI 活用]
+                                              English                                                                 Japanese
+ Q2：      How are you leveraging AI to improve and enhance your semiconductor                 半導体テスタ事業を高度化・強化するために AI をどう活用しているのか
+          tester business?                                                                    教えてほしい。
+
+ A2：      [Serrer] We use AI to improve efficiency in R&D. For example, software              [ゼラー] 当社は、AI を活用し、研究開発の効率を向上させている。具体
+          development and code completion as well as automatic test case for                  例として、ソフトウェア開発やコード自動補完、さらにソフトウェアテス
+          software test generation. That really helps us to improve time to market            ト用テストケースの自動生成がある。これにより、ソフトウェア開発にお
+          on the software development.                                                        ける市場投入までの時間を短縮できる。
+                                                                                              ハードウェア側では、ASIC および FPGA 設計が当社の主要技術の一つだ。
+          On the hardware side, ASIC and FPGA design are one of our key
+                                                                                              EDA（Electronic Design Automation）業界の最新ツールセットに AI を組み
+          technologies, and using the latest tool set from the EDA (Electronic
+                                                                                              合わせることで、ハードウェア設計に使用される ASIC および FPGA の開
+          Design Automation) industry with AI helps us speed up the
+                                                                                              発を加速している。
+          development of ASIC and FPGA which are used in the hardware design.
+                                                                                              また、この技術を顧客支援に向けて、当社営業およびサポートスタッフに
+          We also use this technology to enable our customers and our sales as
+                                                                                              対しても活用しており、プログラミング用のコード自動補完、ソフトウェ
+          well as support staff through code completion for programming,
+                                                                                              ア検証、デバッグツールなどに展開している。これにより、当社の顧客支
+          software checking, and debugging tooling, all of which are being rolled
+                                                                                              援の効果を高めるほか、顧客自身が AI を通じて効率を改善できるように
+          out. We will be more effective in supporting customers and helping
+                                                                                              している。
+          customers themselves improve efficiency through AI.
+
+          [Lefever] We use AI extensively for our development and operations to               [ラフィーバ] 当社は社内の開発と業務運用において AI を幅広く活用し、
+          drive velocity and productivity. We are also enabling AI to be used with our        スピードと生産性を高めている。テスタに AI を組込む施策も進めており、
+          testers, and we can see the effects of that. If all companies are leveraging        その効果を実感している。すべての企業が AI を活用し、当社と同様のメ
+          AI and experiencing its benefits as we do, we believe there’s a good reason         リットを享受しているのであれば、AI 需要を楽観視できる十分な根拠と
+          to be optimistic about AI demand.                                                   なるのではないか。
+
+
+
+
+[Global Integration & Cultural Transformation | 世界規模での統合と企業文化の変革]
+                                              English                                                                 Japanese
+ Q3：     Now that you have been CEO for over a year, what has been the most                   CEO に就任して 1 年以上が経過した今、アドバンテストの PMI を通じた
+         challenging aspect of your role, given Advantest’s history of globalization          グローバル化の歴史等を踏まえ、CEO として最大のチャレンジはどうい
+         through acquisitions? How have you worked to transform the company’s                 うところにあると感じるか。また、企業文化の変革をどのように進めてい
+                                                                                              るのか。CEO 就任後に成し遂げたことで、最大の功績は何か。
+                                                                                          1
+          culture? What do you consider your greatest achievement so far?
+
+ A3：      [Lefever] Our focus on globalization and teamwork across the organization                       [ラフィーバ] グローバル化と組織横断的なチームワークへの取り組み
+          began long ago - not just recently. Advantest has always been at the cutting                    は、最近始まったものではなく、以前から継続しているものだ。当社は、
+          edge in its ability to operate globally, building on the legacy established by                  歴代リーダー達が築いた基盤を礎に、グローバル事業運営の最前線を走
+          many leaders.                                                                                   り続けている。
+                                                                                                          私が継続的に注力している領域は二つある。第一に、複数の技術分野にま
+          Then, there are two areas I am focused on continuing. First, encouraging
+                                                                                                          たがる統合を継続的に推進することがとても重要だ。デバイスの複雑化
+          continued integration of technology across domains is very critical. The
+                                                                                                          が高度統合型ソリューションの実現を後押ししている。当社は、企業全体
+          device complexity is driving highly integrated solutions. Advantest is unique
+                                                                                                          にわたり多様な製品と技術を備えている点で際立っている。CTO である
+          in having diverse products and technologies across the company. One of
+                                                                                                          ユルゲンの主要な役割の一つは、これらの製品ラインと技術をテストセ
+          Juergen’s key roles as CTO is to integrate these product lines and
+                                                                                                          ルおよびテストセルソリューションに統合することであり、これは過去
+          technologies into test cells and test cell solutions—going beyond what we
+                                                                                                          の取り組みから一線を画す戦略である。
+          have done in the past.
+                                                                                                          第二に、業界のスピードが予想を超えて加速する中、顧客との緊密な連携
+          Second, as industry speed accelerates beyond expectations, maintaining
+                                                                                                          が求められるため、顧客やパートナーとの密接な対話を維持することが
+          close dialogue with customers and partners becomes essential, because of
+                                                                                                          不可欠となっている。当社は地域に根ざした強い存在感を長年維持して
+          the need to be tightly aligned with our customers. Advantest has a strong
+                                                                                                          きた。その上で、各地域の現地法人がこういった対話支援に重要な役割を
+          history of local presence. Local Advantest entities play a critical role in
+                                                                                                          果たしている。当社のビジネスユニットおよびファンクショナルユニッ
+          supporting such dialogue. We will continue to empower them through a
+                                                                                                          トとの協調的なアプローチを通じて、引き続きローカルメンバーを支援
+          concerted approach with our business units and functional units.
+                                                                                                          していく。
+
+
+
+
+[SiConicTM Strategy – Bridging ATE and EDA | SiConicTM 戦略 ― ATE と EDA の架け橋]
+                                                    English                                                                     Japanese
+ Q4：      Will SiConic™ be a trigger for strengthening relationships with existing                        SiConic™は、既存顧客との関係強化や新規顧客の獲得を促進させるきっか
+          customers and drawing in new customers?                                                         けとなると考えて良いのか。
+
+
+ A4：      [Serrer] This represents a new opportunity for the industry, as EDA and ATE                     [ゼラー] これは業界に新たな機会をもたらすものだ。従来、EDA と ATE
+          (Automated Test Equipment) have historically operated separate                                  (Automated Test Equipment)はそれぞれ独立したエコシステムとして機能
+          ecosystems. Today, rising complexity demands solutions that bridge this                         してきたが、昨今では複雑性の高まりにより、両者をつなぐソリューショ
+          gap. Our approach for this is SiConic™. This represents a business                              ンが求められている。当社のアプローチは SiConic™である。設計段階へ
+          opportunity for us in and of itself, but SiConic™ also helps with following                     SiConic™を導入すること自体が当社に事業機会をもたらすことに加えて、
+          insertions later on. Sign-off(*) pre-validation and post-validation represent                   SiConic™の導入は、その後のテスト工程にも効果を発揮する。サインオフ
+          a big market, but also, the DFT (Design For Testability) developed there is                     (*)に向けた事前・事後の検証は大きな市場を示唆しており、そこで開発
+          the basis for later test.                                                                       された DFT（Design For Testability）は、後のテストに不可欠な基盤となる。
+
+
+                                                                                                          (*)半導体の設計や検証が終わったあと、製造や量産といった次のステップ に進むた
+          (*)"Sign-off" is the final, formal approval, after semiconductor design and verification,
+                                                                                                          めに各工程の結果が正式に承認されること。
+          enabling progression to subsequent steps such as manufacturing and mass production.
+
+ Q5：      What differentiates your relationship with EDA from other competitors?                          EDA との関係において、競合他社と差別化される点は何か。
+
+
+ A5：      [Serrer] We have good ongoing collaborations with all EDA vendors at                            [ゼラー] 当社は、すべての EDA 企業の経営層・マネージャー層・エンジ
+          executive, management, and engineering levels on collaborative projects.                        ニアレベルで共同プロジェクトを進めているが、ここでも当社の協働を
+          For this, our culture, which focuses on collaboration, is essential. In                         重視する企業文化が不可欠となっている。加えて、HPC 市場における当社
+          addition, our endeavors in the HPC market helps. We also collaborate with                       の活動も優位に働いている。当社が EDA 企業、顧客の半導体設計部門、
+          design departments and DFT departments of our customers. Bringing these                         および DFT の開発部門と協働する中で、この三者を結びつけることが秘
+          three parties together is the secret; we make this happen across the entire                     訣であり、当社はそれをフロー全体で実現している。
+          flow.
+
+
+
+[Capacity Expansion Plans | 生産能力拡張計画]
+                                                    English                                                                     Japanese
+          [Moderator/Mihashi] To conclude, I would like to highlight one point; given [モデレータ/三橋] 最後に、1 点強調させていただきたい。良好な事業見
+          the favorable outlook and ongoing developments, we need to take an 通しと継続的な当社の取り組みを踏まえ、将来に向けて当社は生産能力
+          additional step in capacity expansion. Doug, could you elaborate on what 増強の面でさらに一歩前進させる必要があると認識している。ダグさん
+          is currently being implemented?                                                                 より、現在の能力増強の取り組みについて、詳細を補足していただきた
+                                                                                                          い。
+
+
+          [Lefever] As mentioned earlier about velocity and time to market, this                          [ラフィーバ] 先ほど言及したスピードや Time to market と同様に、スケ
+          question concerns scale.                                                                        ールも論点である。
+          For our SoC testers, we target capacity for at least 5,000 systems by the SoC テスタについては、FY2026 末までに少なくとも 5,000 台規模/年の生
+                                                                                                      2
+              end of FY2026, then target capacity for 7,500 systems within a couple of 産能力を目標とし、その後数年で 7,500 台規模/年を目指しているが、必
+              years. If we need to do faster, it's possible. Then, the third step is to target 要に応じてそのタイミングを早めることは可能と考えている。さらに第
+              capacity for 10,000 systems out into a little further out in time. On the ３段階として、その先数年で 10,000 台規模/年を見据えている。メモリ側
+              memory side, the ratio is smaller than SoC, but the trajectory of scale is は SoC と比べると台数規模は小さいが、スケールの方向感は同様だ。
+              similar.                                                                                        なお、ここで述べた数値は、市場に向けた当社のバッファを含む生産能力
+              Please note that the numbers provided are not meant to be extrapolated 規模のみを示しており、当社の売上や TAM に換算することをお示しする
+              into our sales or TAM; they represent only the production capacity ものではないことにご留意いただきたい。
+              including buffer which we are putting in place for the market.
+
+
+Note
+This document is prepared for those who were unable to attend the IR Fireside Chat and is intended only for reference purposes. The original content has been revised and edited by Advantest for ease of
+understanding.
+This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These statements include, among other things, the discussion of Advantest’s
+business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of forward-looking
+terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks, uncertainties and other
+factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed or implied by such forward-looking statements. Except as required
+by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+
+
+※本資料に記載されている内容は、IR Fireside Chat の質疑をもとに当社の判断で要約したものです。また本資料には、将来の事象についての、当社の現時点における期待、見積りおよび予測に基づく記
+述が含まれております。 これらの将来の事象に係る記述は、当社における実際の財務状況や活動状況が、当該将来の事象に係る記述によって明示されているものまたは暗示されているものと重要な差異
+を生じるかもしれないという既知および未知のリスク、不確実性その他の要因が内包されており、当社としてその実現を約束する趣旨のものではありません。
+法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、またはその他の理由により、将来予想に関する記述を更新または修正することはありません。
+
+
+
+
+                                                                                                          3
+

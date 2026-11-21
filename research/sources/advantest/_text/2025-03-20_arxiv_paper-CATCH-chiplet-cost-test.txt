@@ -1,0 +1,841 @@
+                                          CATCH: a Cost Analysis Tool for Co-optimization
+                                              of chiplet-based Heterogeneous systems
+                                                    Alexander Graening* , Jonti Talukdar** , Saptadeep Pal† , Krishnendu Chakrabarty†† , Puneet Gupta*
+                                            *                                                                        **
+                                                Department of Electrical and Computer Engineering                         Department of Electrical and Computer Engineering
+                                                      University of California, Los Angeles                                               Duke University
+                                                    agraening@ucla.edu, puneet@ee.ucla.edu                                            jonti.talukdar@duke.edu
+arXiv:2503.15753v1 [cs.AR] 20 Mar 2025
+
+
+
+
+                                                                        †                                                   ††
+                                                                       Etched                                                    School of Electrical, Computer and Energy
+                                                               saptadeep@etched.com                                                            Engineering
+                                                                                                                                         Arizona State University
+                                                                                                                                     krishnendu.chakrabarty@asu.edu
+
+
+                                            Abstract—With the increasing prevalence of chiplet systems              the dominant current application for chiplets, there are many
+                                         in high-performance computing applications, the number of                  reasons to use chiplets for smaller systems.
+                                         design options has increased dramatically. Instead of chips                   Chiplet systems enable integrating multiple process
+                                         defaulting to a single die design, now there are options for 2.5D
+                                         and 3D stacking along with a plethora of choices regarding                 technologies in a package. This can allow for implementing
+                                         configurations and processes. For chiplet-based designs, high-             different parts of the design in more favorable technologies.
+                                         impact decisions such as those regarding the number of chiplets,           For example, some analog designs have better properties in
+                                         the design partitions, the interconnect types, and other factors           less-advanced technology nodes. Also, GaN is better than
+                                         must be made early in the development process. In this work,               silicon for power circuits, but not as good as silicon for logic
+                                         we describe an open-source tool, CATCH, that can be used to
+                                         guide these early design choices. We also present case studies             [4]. Chiplet systems can mix these technologies in a package.
+                                         showing some of the insights we can draw by using this tool.                  Another benefit of chiplets is the possibility of reducing
+                                         We look at case studies on optimal chip size, defect density, test         cost by moving from a monolithic to a chiplet system. For
+                                         cost, IO types, assembly processes, and substrates.                        large systems, splitting a large die into smaller dies can
+                                                                                                                    increase yield and decrease the corresponding cost. For
+                                                                 I. I NTRODUCTION
+                                                                                                                    smaller systems, the yield benefit is less significant, but reuse
+                                            Chiplets are becoming increasingly important in modern                  of chiplets can amortize non-recurring engineering (NRE)
+                                         chip design. This is partly due to the slowing of Moore’s Law              costs over larger effective volumes. These cost benefits are
+                                         scaling. In order to continue scaling the number of transistors            balanced against the added expenses of advanced packaging.
+                                         in a package, it is necessary to increase the size of the package.         To make an educated decision regarding a design’s chiplet
+                                         As simply making an arbitrarily large die runs into reticle                configuration, it is important to conduct detailed analysis of
+                                         stitching complications and low die yield, chiplet systems                 the costs associated with chipletization.
+                                         are often used to integrate multiple dies in a package. This
+                                         can include both 2.5D and 3D stacking. NVIDIA’s advanced                   B. Variety of Configuration Options for Chiplet Systems
+                                         GPU designs such as the A100 [1] are good examples of                         Chiplets provide a wide range of configuration options.
+                                         this strategy. The NVIDIA A100 integrates high bandwidth                   These include the number of chiplets and the stacking config-
+                                         memory (HBM), which is a form of 3D stacked memory                         uration. Should a design be a single die? Should it be split and
+                                         alongside a large GPU die. The A100 contains a single GPU                  integrated on an interposer? Should it be 3D stacked? Each
+                                         die along with 6 HBM stacks. There are other examples of                   option has its own cost and yield implications. Additionally,
+                                         chiplets in industry from both Intel [2] and AMD [3].                      integration substrates, bonding pitch, IO cell design, testing
+                                                                                                                    process, and many other factors all influence the cost.
+                                         A. Chipletization Size Regimes
+                                            Each of the previous examples of chiplet systems are larger             C. Need for a Chiplet Cost Modeling Tool
+                                         than standard reticle size. These systems would be impossible                 The design choices for chiplet configuration options need
+                                         or impractical to implement as a single die. Although this is              to be made early in the design process. For example, splitting
+                                                                                                                    a monolithic design into two 2.5D integrated chiplets will
+                                           This work was supported in part by CHIMES, one of the seven centers in
+                                         JUMP 2.0, a Semiconductor Research Corporation (SRC) program sponsored     require adding IO cells and reorganizing the design blocks
+                                         by DARPA, ASML and the CDEN center.                                        for each of the component chiplets. It will require designing
+an integration substrate and ensuring that signals crossing               E. Overview
+the chiplet boundary can handle any latency added for the
+                                                                             Our model can be broken conceptually into two parts. The
+inter-chiplet communication. Switching from a monolithic to
+                                                                          first is the generic descriptive system model and the second
+a chiplet-based design late in the design process can result in
+                                                                          is the set of cost modeling functions that are used to generate
+delays and increased design costs.
+                                                                          the system cost. For the generic system model, we ensure
+   This paper describes CATCH, a tool to evaluate the cost
+                                                                          assumptions about IO placement, die sizes, power, and power
+impacts of a wide range of chiplet-specific design choices.
+                                                                          pins are met without requiring explicit user attention. The
+While this work specifically addresses cost modeling, it is also
+                                                                          cost functions then operate on the computed parameters of
+important to evaluate factors such as performance, thermal,
+                                                                          the system described in the system definition.
+and power. Therefore, our cost-modeling tool is designed to
+                                                                             In addition to providing a tool, we present interesting
+streamline integration with other tools for co-optimization in
+                                                                          studies for the following design factors:
+future work.
+                                                                            • Cost Optimal Chiplet Size
+D. Prior Work                                                               • Testing Cost
+   A number of previous works have addressed parts of this                  • IO Reach
+
+problem. Our modeling tool is an extended version of the                    • Assembly Costs
+
+model originally introduced in [5]. This paper used an early                • Interposer Type
+
+version of our model that lacked support for NRE cost, test                 • NRE cost
+
+cost, wafer utilization, IO reach, and multiple substrate types.             This paper starts with a description of the system model
+We greatly expand on this model in the current work.                      and is followed by a detailed description of the cost
+   Chiplet Actuary [6] is an open-source cost modeling tool               model functions. After this, we present a description of the
+that addresses many of the same problems we are trying to                 input formats along with comments on the sources of the
+address. This tool thoroughly addresses NRE costs, but lacks              numbers used for our studies. This is followed by the case
+the flexibility of our tool to model arbitrary stacking configura-        studies section with associated discussions to show how
+tions of dies and has less detailed modeling of recurring costs.          the tool can be used for design space exploration. Our cost
+   A much more complete cost model was described in [7]. It               modeling tool is open source at https://github.com/nanocad-
+describes a detailed spreadsheet-based cost model that covers             lab/cost model chiplets along with a script to allow for easy
+die cost, die yield, assembly yield, testing cost, yield/cost prop-       reproduction of all the plots in this paper.
+agation during assembly, IO cost, and NRE costs. In addition
+to covering these costs, the authors address some factors that                          II. M ODELING T OOL OVERVIEW
+we do not address in our work. These include the cost impacts
+of adding redundancy and the impacts of changing cost and                    One advantage of our model compared to other cost models
+yield over time as well as the impact of uncertainty on the               is that we attempt to capture the features of an arbitrary
+assumed parameters. However, [7] does not include assembly                design that ensures consistency between factors such as area,
+cost as an additional cost due to time spent on a bonding                 power, and IOs. This is useful for modeling the cost of a
+machine for a complicated chiplet system. Additionally, there             specific system, running a design space exploration where
+is no general IO model based on a netlist and no sense of                 you want all designs to remain feasible while you sweep a
+how reach or number of IOs will impact the size of a die with             parameter, and for integrations with other tools that require
+a certain bonding pitch. The system modeling is also more                 the calculated non-cost parameters generated in the model.
+limited for co-optimization studies as the focus is on cost.
+                                                                          A. Supported Physical Architectures
+   Several works that do not focus on cost modeling use
+simplified equations to calculate the cost of partitioning a                 The modeling tool is centered around the definition of
+design into various chiplet configurations as in [8]–[10].                Chip objects. These Chip objects have a variety of parameters
+Note that [8] depends on reuse, which is calculated from                  some of which are directly user-defined and others that are
+an equation that incorrectly models this as a direct function             calculated from the provided parameters. Architectures are
+of area where smaller chiplets are more reusable. In reality,             modeled as stacks of Chips with different parameters. This
+larger chiplets with more features can be more reusable than              means that a PCB with some chips on top could be modeled
+smaller chiplets as they can be used for a wider range of                 just as well as a 2.5D integrated system with multiple chiplets
+designs if you turn off the unnecessary blocks. As such, we               in a single package on an interposer or a 3D system where
+avoid including a simple reuse model as it is important to                we have multiple dies stacked on top of each other vertically.
+know a full design portfolio to assess the impacts of reuse.              As shown in Figure 1, combinations of stacked Chips are
+If reuse is known, this can be accounted for in our model by              supported so long as top Chips are smaller than lower chips.
+adjusting die quantities for a chiplet assembly.                          By changing parameters, it is possible to define a Chip object
+   A number of other works also use a simplified cost model               with low cost per unit area to represent a PCB. With a different
+as part of a larger design space exploration either for chiplets          set of parameters, a Chip could be a passive interposer, PCB,
+or a specific aspect of chiplet design. [11]–[15]                         logic, memory, or analog in any technology node.
+
+
+
+                                                                      2
+                                                                                    The netlist is stored in a series of adjacency matrices. Each
+                                                                                  IO type in the design has its own adjacency matrix where
+                                                                                  the row indicates the TX chip and the column indicates the
+                                                                                  RX chip. To calculate the area required by the IO cells, the
+                                                                                  model iterates through each IO type that has an adjacency
+                                                                                  matrix in the design and takes the sum of the entries in the
+                                                                                  row and column corresponding to the chip:
+Fig. 1. Supported Structures. The tool can model any arbitrary 2.5D or                                            n
+                                                                                                                  X
+3D stack of Chip objects provided that a larger die is not placed on top of                               AIO =     AIO,i                       (2)
+multiple smaller dies.
+                                                                                                                  i=1
+
+                                                                                  where n is the number of IO cells in the design.
+B. Recursive Structure                                                                                   X                 X
+   CATCH is designed to facilitate reuse of functions and                                 AIO,i = ai,T X   Mi [b,:]+ai,RX     Mi [:,b]          (3)
+support arbitrary stacking. Due to this, the structure of
+                                                                                     Note that Mi is the adjacency matrix for IO cell i. ai,T X and
+the system is defined in the Chip definitions and the same
+                                                                                  ai,RX are the transmit and receiving area of the IO cell respec-
+functions are run on each Chip object recursively.
+                                                                                  tively. Note that M is the adjacency matrix calculated such that
+   Each Chip object contains the information specific to the
+                                                                                  the numbers indicate the number of instances of the IO cell
+die, substrate, or PCB represented along with a list of all Chip
+                                                                                  required to satisfy the required bandwidth. Diagonal elements
+objects that are stacked on top of it. There are no arbitrary
+                                                                                  of the adjacency matrix are set to 0 to avoid double counting.
+limits to this structure, so a Chip may contain a list of as
+                                                                                  The number for each of the other entries is calculated as below:
+many stacked Chip objects as desired and each of the stacked
+chips can contain its own additional stacked Chip objects.                                                            
+                                                                                                                        Breq
+                                                                                                                              
+In the example in Figure 1, the definition of the Interposer                                          NIO instances =                            (4)
+                                                                                                                        BIO
+Chip object contains the definitions of both the CPU and the
+Accelerator Chip objects. The Memory Chip object is then                          where Breq is the required bandwidth and BIO is the
+nested in the definition for the Accelerator Chip.                                bandwidth for the specific IO.
+                                                                                    3) Stack Area: The stacked Chip area is simply a sum of
+C. Area Propagation                                                               the areas of each Chip stacked on top of the Chip in question:
+  Area is computed as the largest of 3 values: area of the                                                     n
+core plus IO cells, area of the Chips stacked on top of the
+                                                                                                               X
+                                                                                                      Astack =   Asubchip,i                     (5)
+Chip, or area required by the pads. Note that we also include                                                   i=0
+a “black box area” parameter that allows overriding this
+computation and setting an exact area for each Chip.                              where Asubchip is the area of the subchip expanded by half of
+                                                                                  the die separation distance on each edge along with an edge
+            Achip = max{Acore +AIO ,Astack ,Apads }                    (1)        exclusion zone the defines the distance a die may be placed
+                                                                                  from the edge of the lower chip when stacking. This is due to
+   1) Core Area: Core area (Acore ) is simply the core area                       the minimum die separation for bonding. We make the simpli-
+defined in the system definition. Note that a Chip such as an in-                 fying assumption that the dies pack together well and that the
+terposer or PCB will not have a core area since those areas are                   total area required for bonding is the sum of the subchip areas.
+determined by the areas of the bonding pads or stacked dies.                         4) IO Pad Area: Pad area is calculated based on the area
+   2) IO Area: IO area (AIO ) is the area of the IO cells                         required for the power and signal pads based on both the
+required according to the bandwidth requirements and IO                           bump pitch and the reach of the IO cells for signal pads.
+type in the netlist. The IO cell area is only added to the                        Since each IO cell has a reach, the pads must be placed
+terminal Chip objects on a net. If the interconnect passes                        within a region at the edge of the die. Assuming nearest
+through another die or interposer, this will add to the number                    neighbor communication, this means that signal pads will
+of bumps but not to the IO cell area for that Chip.                               have a valid placement region within a band with a thickness
+   IO area is calculated by adding up the number of nets that                     given by the following equation and shown in Figure 2.
+cross the chip boundary for each chip object. Since the design
+netlist assigns an IO type and bandwidth to each connection,                                                    R−Dchip separation
+                                                                                             Wplacement band =                               (6)
+the model computes the number of IO cells required to satisfy                                                             2
+the bandwidth requirement for the connection and sums up                            To check this for multiple IO types, the IO cells are sorted
+the total area of the IO cells in the chip. It is possible for the                according to reach and placed from the shortest reach to the
+transmit IO cell to have a different size than the receive IO                     longest reach starting from the outside of the die and moving
+cell for unidirectional IO types. To capture this, the IO cells                   inward. After all signal pads are placed, the power pads are
+define both a transmit and a receive area. The appropriate area                   placed with no reach restriction. If for any IO pad, there is
+is added for each connection based on the netlist direction.                      not enough area that satisfies the reach constraint, the size
+
+
+
+                                                                              3
+                                                                      by the IOs. Note that we also offer a “black box power”
+                                                                      parameter that overrides this computation to allow setting the
+                                                                      exact power for a specific Chip.
+
+                                                                                        P = Pcore +Pstack +PIO                   (8)
+                                                                         1) Core Power: Core power is defined for each Chip. This
+                                                                      is one number and as it is used to compute the number of
+                                                                      required power and ground connections, this is the maximum
+                    Fig. 2. IO Pad Placement
+                                                                      power required by the die.
+                                                                         2) Stack Power: Due to the recursive structure, the total
+                                                                      power for the chip is the sum of the self power and the stack
+                                                                      power which is the sum of the total powers of each chip on
+                                                                      top of the chip in question.
+                                                                                                        n
+                                                                                                        X
+                                                                                             Pstack =         Pi                 (9)
+                                                                                                        i=1
+
+                                                                      where Pstack is the stack power and Pi is the power of the
+                                                                      i-th chip stacked on the current chip. n is the number of
+                                                                      stacked chips.
+                                                                         3) IO Power: Similar to the computation of the IO
+              Fig. 3. Multiple IO Type Pad Placement                  requirements described in section II-C2, each IO type has a
+                                                                      defined bandwidth dependent power and each connection has
+                                                                      an average bandwidth utilization. This is added to the total
+of the chip is increased to increase the perimeter and thus           power computation used for power pads.
+the valid placement area before moving to the next IO type.              4) Power Pads: This impacts the pad area in addition to
+Since the power pads do not have a reach constraint, they             the signal IOs and test pads. The power that can be supported
+will only increase the chip area if there is not enough area          per pad is computed by finding the maximum pad current
+at the center of the chip to place them. See Figure 3 for a           according to the operating voltage and the maximum current
+general map of how these IOs are placed.                              density times the area of the pad assuming a circular pad
+   There are several simplifying assumptions for the IO pad           with a diameter half of the bonding pitch.
+placement that impact the accuracy of the approximation for
+different situations. CATCH assumes neighbor to neighbor                            Ppad = Vcore Jmax π(dbonding /4)2          (10)
+connections where each IO type has equal bandwidth
+connecting to chips in each direction from the chip. If a             where Ppad is the power per pad, Vcore is the core voltage,
+signal is expected to connect over a chip more than the               Jmax is the maximum current density for the type of bond,
+minimum separation distance away, the valid placement                 and dbonding is the bonding pitch.
+region will be incorrect. If the chip primarily connects to a           The number of power pads is calculated according to the
+chip on one side, it will also be incorrect since the IOs are         maximum power per bump and the total power P of the chip.
+placed all around the chip perimeter.                                 Note that this is multiplied by 2 since both power and ground
+   In addition to IO pad area, power pads and test pads               pins are required.
+must be placed. The power pad computation is described                                                       
+in section II-D4 and the test pad computation is described                                                 P
+                                                                                            Nppads = 2                          (11)
+below. Neither of these pad types have a reach constraint.                                               Ppad
+   5) Test Pad Area: We assume a scan chain test. Nsc is the            Nppads is the number of power pads, P is the total power of
+number of scan chains, NIOs per sc is the number of IOs per           the chip and stack, and Ppad is the maximum power per pad.
+scan chain, and Ntest IO of f set is an offset for the number
+of IOs to account for signals such as a test enable signal. The       E. Connectivity Structure
+computation for the number of test IOs (Ntest IOs ) is shown            The system definition includes a netlist which describes the
+in equation 7.                                                        connections between Chip objects. Each defined connection
+                                                                      has a from and a to Chip and provides an IO type. The
+       Ntest IOs = Nsc ×NIOs per sc +Ntest IO of f set      (7)       connection also includes either a required bandwidth or a
+                                                                      “count” of the required number of instances of the IO type.
+D. Power Propagation                                                    Since IO types may be defined as either bidirectional or
+  Power is computed as the sum of the core power, the                 unidirectional, the from and to blocks are interchangeable in
+power of stacked chips, and the additional power required             the case of a connection defined with a bidirectional IO type.
+
+
+
+                                                                  4
+In the case where an IO type is unidirectional, connections
+must be defined in each direction separately.
+   We consider a source-sink model in this definition and
+do not directly support an IO with a single source and
+multiple sinks or vice versa. Defining an IO of one of these
+configurations within the current framework requires defining
+a dummy, 0-area Chip object and custom IO types with
+different to and from areas.
+
+                      III. C OST M ODEL
+A. Manufacturing/assembly
+  1) Die Cost: The cost of the individual die is given below
+as Cself .                                                               Fig. 4. Stackup Options. It is possible to define the characteristics of a die
+                                                                         either as a single Layer or as a stack of Layers.
+                Cself = CRE,self +CN RE,self                 (12)
+   The cost is split into recurring cost (CRE,self ) and non-            the cost per mm2 according to the wasted silicon. We use the
+recurring cost (CN RE,self ). CRE,self is defined below in               following method to determine how many dies will fit.
+Equation 13.                                                                Typical wafer blade dicing uses cuts that cross the full
+                                 Cdie +Ctest                             wafer. This means dies must be placed in a grid pattern. For
+                    CRE,self =                               (13)        a more flexible dicing method such as plasma dicing, it is
+                                   Ytested
+                                                                         possible to place the dies on the wafer more flexibly. This
+   Ytested is the percentage of dies that pass test. This is             second case is more applicable if the die size is close to the
+typically higher than Ytrue , which is the number of dies that           reticle size since the reticle boundary can also limit flexibility
+are good (independent of test quality) according to our yield            of die placement. We support both options and recommend
+model. CN RE,self is defined according to Equation 24.                   the grid option as default.
+   The assembly cost and yield are added as shown in                        For the grid die placement, we use an iterative method to
+equation 14 along with the sum of stacked dies.                          estimate the maximum number of dies that fit. We do this
+                                                                         by increasing the number of dies in the first column of dies
+                       C = CRE +CN RE                        (14)        starting on the left starting with 1 until there is room for more
+                                                                         dies to fit to the left of the column. This is shown in Figure 5.
+                                               Pn                        The die calculation is similar to the no-grid option described
+          Casmb +Ctest,asmb +Cself,RE +         i=1 CRE,i                below, but with the added constraint that all the dies must fall
+  CRE =                                                      (15)
+                         Ytested,asmb                                    on the grid and a block of rows in accordance with the size
+                                      n
+                                                                         of the first column are placed initially instead of a single row.
+               CN RE = CN RE,self +
+                                      X
+                                            CN RE,i          (16)           For the non-grid placement option, we only look at two
+                                      i=1
+                                                                         cases. The first option places a row of chips above the
+                                                                         diameter of the wafer as shown in Figure 6 on the left. The
+   Each CRE,i and CN RE,i are computed recursively the                   number of chips (N0 ) that fit here is shown in equation 18.
+same way as CRE and CN RE . CN RE is kept separate
+from CRE as the recurring costs scale with yield while the                                             q
+                                                                                                        r2 −y 2 
+                                                                                                                    
+non-recurring costs do not.                                                                                   chip 
+                                                                                                  N0 =                                         (18)
+   Raw (untested) die cost is calculated according to the area                                            xchip
+of each die. The dies can be defined as a single “layer” or
+multiple layers which can have their own associated costs                where r is the usable radius of the wafer (assuming some
+as shown in Figure 4. In the case where there are multiple               edge exclusion) and xchip and ychip are the are the x and y
+layers, the cost of the die is the sum of the costs of each layer.       dimensions of the die.
+                              n
+                              X                                            The second option places chips directly on the diameter of
+                       Cdie =   Clayer,i                     (17)        the wafer for the first row as shown in Figure 6 on the right.
+                              i=1                                        The number of chips in the first placed row is given in equation
+  The layer cost is calculated from the cost per mm2 . Since             19. The only difference from equation 18 is the height at which
+wafer costs for different technology nodes are publicly avail-           we calculate the length of the chord of the wafer.
+able, we compute the cost per mm2 from the wafer cost. The                                          $p                %
+cost also depends on the number of dies that fit on the wafer, so                                     r2 −(ychip /2)2
+                                                                                               N0 =                                              (19)
+we estimate the number of dies that fit on the wafer to increase                                          xchip
+
+
+
+                                                                     5
+                                                                                       Fig. 7. Reticle Utilization. In this example, square dies are placed in a
+                                                                                       reticle and the best utilization comes from the smallest dies.
+
+
+                                                                                       wafer with a poor reticle fit. We assume that a percentage
+                                                                                       of the wafer cost is due to time on the lithography machine
+                                                                                       and scale that cost according to the extra time spent on the
+                                                                                       machine when the chip is a poor fit for the reticle.
+Fig. 5. The die per wafer calculation will increase the number of dies in the
+first column iteratively and fit around that. The best of these will be selected                                                      Plitho
+                                                                                                Clayer = Clayer baseline (1−Plitho +          )   (21)
+as the solution. In this example, the best case was 4 dies in the first column                                                       Ureticle
+with a total of 108 dies per wafer. This did not run past 6 dies in the first
+column as 7 would allow enough room for another column to the left and                    Reticle utilization is the percentage of the reticle used by
+would look like one of the previous cases.                                             a chip. If the chip is much smaller than the reticle, many
+                                                                                       instances can fit in a single reticle. If the chip is large, it
+                                                                                       is more likely there will be a large waste of reticle area as
+                                                                                       shown in Figure 7:
+                                                                                                                    Kreticle Achip
+                                                                                                             Ureticle =                                    (22)
+                                                                                                                        Areticle
+                                                                                       where Kreticle is the number of chips in a reticle.
+                                                                                                                                
+                                                                                                                        Areticle
+                                                                                                           Kreticle =                                      (23)
+                                                                                                                         Achip
+                                                                                         Non-Recurring Engineering (NRE) costs are costs that
+                                                                                       occur once regardless of production volume and may be
+Fig. 6. Die Per Wafer Calculation Without Grid. If using a dicing technique            amortized over the production volume. We described this by
+such as plasma dicing, there is less constraint that the dies are placed on a          splitting the NRE costs into design costs and mask costs.
+grid. We provide a flag to allow selecting this method.
+                                                                                                                       Cdesign +Cmask
+                                                                                                            CN RE =                                        (24)
+                                                                                                                       Nmanuf actured
+   In the first case, adding the first row above the diameter line
+of the wafer, additional rows of dies are added each above the                           The NRE costs are amortized over the design volume
+previous until there is no room for an additional row and the                          Nmanuf actured . We split the design costs further into frontend
+result is doubled to account for the lower half of the wafer.                          and backend costs:
+In the second case the same is done except the first row is
+                                                                                                                    CBE +CF E +Cmask
+unique and is not counted twice along with the other rows.                                               CN RE =                                           (25)
+   We include both scribe line and edge exclusion in this                                                             Nmanuf actured
+computation by simply reducing the size of the circle and                              where CBE and CF E are the backend and frontend design
+increasing the size of the dies that are placed. Also, note that                       costs respectively.
+while the example figures show square dies, CATCH supports                                The mask costs are a sum of the mask costs for each
+different aspect ratios.                                                               layer and can be reduced by techniques such as multi-project
+   The cost per mm2 is used to compute a cost per layer                                wafers that share a reticle for multiple chip designs.
+shown in equation 20.                                                                                                            n
+                                                                                                                                 X
+                                                                                                       Cmask = Preticleshare           Cmask,i             (26)
+                  Clayer baseline = Achip Cper mm2                        (20)                                                   i=1
+
+   A substantial percentage of costs come from time spent on                              Preticleshare is the percentage of the reticle that is taken
+the lithography machine [16]. Since foundries typically place                          by the design. In a standard design, this value will be 1, but
+requirements on die size to ensure good reticle fit, we add                            it will can take a value smaller than 1 to model multi-project
+an adjustment for the additional exposures required to fill a                          wafers and shared mask sets.
+
+
+
+                                                                                   6
+                                                                         ratio. The critical area ratio is the percentage of the area
+                                                                         where defects will cause faults.
+
+
+                                                                                          AC = (Acore +AIO )Rcritical                 (32)
+
+                                                                           When a die is larger than a reticle, it is necessary to stitch
+                                                                         multiple reticles together. To calculate the number of reticles
+                                                                         required and the yield impact, we use the following equations.
+
+
+                                                                                             Ystitching = YPKerStitch
+                                                                                                              stitch
+                                                                                                                                      (33)
+                      Fig. 8. Reticle Stitching
+                                                                         where Kstitch is the number of stitches.
+
+   The NRE design costs for both front end and back end                                                  
+                                                                                                                A
+                                                                                                                        
+vary by design type. Memories are very repetitive, so adding                                    Nret =                                (34)
+                                                                                                             Areticle
+a memory to a design may only require running a generator
+script with the appropriate parameters. Designing logic will                We also need the number of stitches required. To do this,
+require much more thought from the designer including                    reticles are assumed to be placed in as close to a square
+writing HDL and running place and route tools. Analog is                 configuration as possible then additional reticles are placed
+the most intensive where typically both a logical design and             on the boundary.
+a physical custom design are required. To account for this,
+the design is split according to the percentages of the core                                               jp             k
+area that fall into each category.                                                              Ns,lsq =           Nret               (35)
+   NRE frontend costs include the system definition and
+HDL development and testing. Backend includes physical                   where Ns,lsq is the number of reticles on a side of the largest
+design and implementation including cost of EDA tools for                square configuration of reticles lower than the number of
+automated steps of the physical design:                                  reticles required. For dies that are only slightly smaller than
+                                                                         a reticle, this will be one.
+   CN RE,F E = Acore (CL,F E PL +CM,F E PM +CA,F E PA )
+                                                     (27)                                                 2
+                                                                                                  Nlsq = Ns,lsq                       (36)
+
+   CN RE,BE = Acore (CL,BE PL +CM,BE PM +CA,BE PA )                      where Nlsq is the number of reticles in the square with Ns,lsq
+                                                              (28)       reticles per side.
+where PL , PM , and PA refer to the percentage of the design
+that falls into the logic, memory, or analog categories and                                                                   
+                                                                                                                          Nret −Nlsq
+                                                                                                                                      
+each is multiplied by the appropriate cost for the category.             Kstitch = 2Ns,lsq (Ns,lsq −1)+2(Nret −Nlsq )−
+                                                                                                                             Ns,lsq
+   2) Die Yield: Die yield is calculated based on the area                                                                         (37)
+of the chip and the negative binomial yield model based on
+                                                                            The final reported chip yield is based on the Yself , which
+the layer parameters. If there is more than one layer in the
+                                                                         is the Ydie for the die in question described above. This
+stackup, the yields of each layer are multiplied to get the
+                                                                         is multiplied by the assembly yield described in section
+total yield. If the chip is larger than a reticle, we also assume
+                                                                         III-A4 and a quality yield term that depends on the expected
+some stitching yield dependent on the number of times a chip
+                                                                         percentage of stacked dies that are good.
+crosses the reticle boundary shown in Figure 8:
+                                n
+                                Y                                                           Ychip = Yself Yassembly YQ                (38)
+                       Ydie =       Ylayer,i                 (29)
+                                i=1
+                                                                           Quality yield is the yield determined by the probability
+                  Ylayer = Ystitching ×Ydef ect              (30)        that the chips in the assembly are good. In a scenario with
+                                                                         perfect test, the quality yield would be 1, but in reality it will
+                                D0 AC −α                                 be smaller.
+                   Ydef ect = (1+       )                  (31)
+                                   α
+                                                                                                             n
+where D0 is the defect density and AC is the critical area                                                   Y
+                                                                                                   YQ =          Qi                   (39)
+determined as a product of the total area and the critical area                                              i=1
+
+
+
+
+                                                                     7
+   3) Assembly Cost: Assembly cost is primarily calculated             region where the bond fails due to the rigidity of silicon. This
+as the cost of time spent on pick and place and bonding                can interfere with the connections formed during annealing
+machines along with operator cost. Assembly machines can               [18]. To model this factor, we added a term for the probability
+have multiple heads to simultaneously pick and place and               that there are no particles on the bonding surface given a defect
+bond dies, but there is variation in the parameters of the             density and bonding area. This term is a reduced form of the
+machines used. CATCH allows for setting both the size of the           negative binomial yield model with a clustering factor of one.
+group of dies that can be placed simultaneously and the size
+of the group that can be bonded simultaneously. This allows
+                                                                                           N
+                                                                                           pin    Ndies            1
+for the user to set parameters to test methods ranging from                 Yassembly = Ybond  ×Yalignment ×                        (44)
+individual pick and place followed by individual bonding as                                                     1+DH Abond
+is frequently the case for thermal compression bonding [17]            where Yassembly is the assembly yield, Ybond is the yield per
+to simultaneous bonding using a method such as reflow. The             pin, Npin is the number of pins to bond, Yalignment is the
+cost of assembly is shown in equation 40:                              alignment yield for a single die, and Ndies is the number of
+                                                                       dies. DH is the defect density per unit area on the dielectric
+   Cassembly = CP nP/s TP nP +Cbond/s Tbond +Cmat A        (40)        used for hybrid bonding and Abond is the area of the hybrid
+                                                                       bond. The defect density for the dielectric bond can be set to
+where Cassembly is the total cost of assembly, Cmat is the             zero if hybrid bonding is not used.
+cost of materials to bond per unit area, and A is the area being
+bonded. The other parameters are cost and time parameters              B. Test
+defined in the following equations.
+   Pick and place time is computed simply as the number of                Splitting a monolithic design into multiple chiplets has
+dies to be bonded divided by the number of dies that can be            mixed impacts on the testing process. Smaller chips provide
+placed at once as below.                                               the opportunity for more fine-grained tests. This can improve
+                                                                     the quality of the final product [19]. Although the chips will be
+                               Ndies                                   better tested, testing time goes up since chips will be tested in-
+                     TP nP =           tP nP                (41)
+                               GP nP                                   dividually before being assembled on the interposer and likely
+where TP nP is the pick and place time, tP nP is the time for          again after assembly to ensure assembly did not introduce any
+a single pick and place step, Ndies is the number of dies to           errors. To capture this, we include a test cost model in CATCH.
+be bonded, and GP nP is the size of the group that can be                 We assume a scan-chain style test. The scan chain length
+placed simultaneously.                                                 corresponds to the number of cycles of the test clock required
+   Bonding time is computed simply as the number of dies to            to load a test pattern. The testing cost is based on the time
+be bonded divided by the number of dies that can be bonded             required for test and the cost of time spent on the testing
+at once as below.                                                      machine. As calculating the number of test patterns required
+                                                                     to achieve a certain fault coverage is design specific, we take
+                             Ndies                                     the required number of patterns and the scan chain length as
+                   Tbond =          tbond                (42)
+                             Gbond                                     inputs along with the test clock period and the cost of time
+where Tbond is the total bonding time, tbond is the time for           spent on the testing machine.
+a single bonding step, and Gbond is the size of the group that
+can be bonded simultaneously.                                                       Ctest = Kmachine Npatterns Lsc Ttest            (45)
+   The cost of assembly is computed by multiplying the time
+required by the cost per second.                                       where Kmachine is the cost per second of operating the test
+                                                                       machine, Npatterns is the number of test patterns required
+          Cassembly = Tbond ∗Kbond +TP nP ∗KP nP           (43)        to achieve the defined fault coverage, Lsc is the scan-chain
+                                                                       length (corresponding to the number of clock cycles per test),
+where Kbond and KP nP are the cost of time spent in bonding
+                                                                       and Ttest is the period of the test clock in seconds.
+and pick and place respectively.
+   4) Assembly Yield: Assembly yield is the yield of stacked
+top Chips on the bottom Chip. This is dependent on many                                Ytest = 1−Kcoverage (1−Ytrue )               (46)
+factors. For simplicity, we break it down into three main
+components. The first, bonding yield, is the probability that an       where Kcoverage is the fault coverage and Ytrue is the yield
+individual bond succeeds. This scales according to the number          calculated as described in previous sections.
+of pins bonded. The second component of yield is the die                 Since testing may be performed at different steps of assem-
+alignment. This scales with the number of dies. The third com-         bly in a chiplet-based system, testing parameters are defined
+ponent is included for hybrid bonding. In hybrid bonding, there        separately for individual dies and for the stacked assembly at
+is a need to have a very clean bonding surface for the initial         each stage. This provides flexibility to evaluate more thorough
+dielectric bond. Even a very small particle can leave a large          (and expensive) tests at different steps of the process.
+
+
+
+                                                                   8
+C. Yield/Quality/Cost Structure                                         as well. In the case of wafer to wafer bonding, bonding group
+  To handle the cost and yield of the system and the                    and pick and place group should be set large enough to fit
+components recursively, we determine two values for each                the entire wafer of dies. The assembly process definition also
+component Chip: quality and tested cost. Quality is the                 includes the die separation, edge exclusion for stacking one
+percentage of post-test chips that are expected to be good.             die on another, maximum current density of the pads, and the
+Tested cost is the cost accounting for the yield of the system.         yield parameters for estimating the yield of the assembly step.
+                                                                           The test process definition includes time spent per test
+                                  Cuntested                             cycle, cost of time spent on the test machine, pattern count,
+                      Ctested =                             (47)
+                                   Ytest                                scan chain length, and defect coverage. This is included for
+where Cuntested is the cost of the Chip itself along with               both self-test and assembly-test, so different amounts of test
+the tested costs of any component upper Chips and cost                  may be allocated to different steps of the assembly process.
+of assembly. The Ytest is the percentage of the assembled                  Layers are defined based on a cost per mm2 . This should
+Chip plus upper Chips that will pass test. The cost and yield           be the cost assuming the wafer is fully utilized with no waste.
+propagation is shown in Figure 9. Note that the NRE costs               The layer definition also contains yield parameters for the
+are computed in parallel and added to the final RE costs                negative binomial yield model, percentage of layer cost that
+since NRE is independent from the yield.                                is due to time in lithography, mask cost, and stitching yield.
+                                                                           Defect densities are derived from the numbers in [20]. Since
+              IV. T OOL I NTERFACE /OVERVIEW                            we do not have comprehensive numbers for defect densities
+   The tool is designed to be user friendly and fully                   for each technology node, we assume older technologies have
+parameterized. This is accomplished by using a multi-file               equal or better defect densities than newer. We also use the
+structure for parameter and system definitions. The input files         number for defect density at manufacturing unless otherwise
+follow an XML format.                                                   stated.
+A. File Structure                                                                             V. C ASE S TUDIES
+   1) System Description: The system description consists of            A. Test Case
+two files: a Chip definition file and a Chip-level netlist. These
+files change with different systems.                                       In the following case studies, we used a test case based on
+   The Chip definition file contains the parameters that are            a generic graph processor. Our generic graph processor is a
+specific to each Chip in the stack along with the names of              homogeneous chiplet design. This is the test case used in [5].
+processes defined in the library file for testing, assembly, lay-       For this test case, we assume we have an 800 mm2 chip. Since
+ers, and wafer process. If one Chip is stacked on another Chip,         this is smaller than a standard reticle (for a 33×26 mm reticle,
+the upper Chip definition is nested in the lower Chip definition.       area is 858 mm2 ) it can be manufactured as a monolithic die if
+   The netlist simply contains a reference to the IO type and           yield is reasonable. We consider splitting this theoretical graph
+the names of the Chip objects which are connected by that               processor chip into different numbers of chiplets. Since this is
+IO. To define external connections, simply set one of the ends          a homogeneous case, we consider that the edge bandwidth is
+of the connection to a chip that does not exist in the Chip             constant as shown in Figure 10. As CATCH does not require
+definition file. This can be a dummy name like “external”               circuit specifics, we assume that the number of cores in the
+or the name of a block which you are not including in the               graph processor divides evenly by the number of chiplets we
+analysis. In this case, only one of the ends of the IO will             use to implement the design and that each chiplet is identical.
+count toward the area of the system.
+                                                                        B. Default Assumptions
+   2) Library Files: The process names referenced in the
+Chip definition file are contained in a set of library files.              The default assumptions regarding values used for the
+These are expected to be reused across studies.                         case studies are shown in Table I. The defect density is a
+   The IO definition file contains a list of defined IO types           good defect density for a mature process [20]. The critical
+which may be selected from in the netlist file. Each IO has             area ratios chosen were used to provide some yield scaling
+the option to define a different area for the from and to               between the technology nodes as similar sized defects will
+cells. In the case the IO is bidirectional, these should be the         be less likely to cause critical faults in less advanced nodes.
+same. Each IO also has a maximum bandwidth which it can                 Silicon cost per mm2 is from the 300 mm wafer costs in
+support, a number of wires/pads required for the protocol, a            [21], but note that the actual cost of dies will vary based on
+maximum reach, and an energy per bit.                                   wafer utilization and yield.
+   The assembly process definition file contains information
+on the cost of time spent on the bonding machine along with             C. Cost Optimal Chiplet Size
+the time required for a single step of pick and place and for             The cost-optimal size for chiplets in a chiplet system
+a single step of bonding. Since multiple dies may be placed             depends on many factors. In this case study, we look at
+at a time or multiple dies may be bonded simultaneously                 the homogeneous graph processor test case and sweep the
+depending on the machine, there is a bonding group parameter            number of chiplets from 4 to 64.
+
+
+
+                                                                    9
+                                                              Fig. 9. Yield and Cost Propagation
+
+
+
+
+Fig. 10. Homogeneous Graph Processor. The graph processor is shown for
+the monolithic case and for 4 or 16 chiplets. 8 Gbps per edge in the monolithic
+case is an example value. Actual number is set for each case study. The marked
+edge bandwidths ensure that the external bandwidth is the same in each case.
+
+
+                                 TABLE I
+                          TABLE OF A SSUMPTIONS                                        Fig. 11. Optimal Chiplet Size Across Technologies. The best shown chiplet
+                                                                                       size configuration for 3nm is 9, 88 mm2 chiplets and the best case for
+                                                                                       40nm is 4, 200 mm2 chiplets.
+                          3nm     5nm      7nm     10nm      12nm     40nm
+  Defect Den. (/cm2 )      0.5      0.5     0.5       0.5      0.5       0.5
+  Critical Area Frac.      0.7    0.67     0.64     0.62       0.6       0.5
+  Cost per mm2            0.29    0.25     0.13    0.085     0.056    0.034
+
+
+
+   1) Technology Node: The cost-optimal chiplet size varies
+depending on the technology node. The results of running a
+sweep in multiple technology nodes are shown in Figure 11.
+   2) Process Node Maturity: The defect density of immature
+process nodes will be higher than it will be for mature
+processes. Since this significantly impacts yield, it will also
+have an impact on the optimal chiplet size. In Figure 12, three
+different defect densities are shown for the 3nm node. Defect                          Fig. 12. Optimal Chiplet Size Across Defect Densities. The best shown
+density of 0.005 per mm2 corresponds to the defect density                             chiplet size configuration is different for each defect density.
+used in Figure 11 and the other studies except where noted.
+   3) Assembly Type: Assembly cost depends largely on time
+spent on the assembly machine. This can be impacted by the                             bonding. The IO type is UCIe standard for the organic case
+assembly strategies regarding placement and bonding. Typical                           and UCIe advanced for the silicon cases. In the results shown
+PCB assembly involves placing each component individually,                             here, organic is more expensive than silicon mostly because
+then using solder reflow as a bonding step. More advanced                              the UCIe standard IO cell is larger and supports a lower
+bonding techniques may have a process where dies are                                   bandwidth than the UCIe advance IO cell mostly due to
+bonded individually in addition to being placed individually.                          bump pitch. At the end with the larger number of chiplets,
+Different assembly strategies will begin to have a substantial                         you also see some impact due to the cost of assembly.
+impact on cost for larger numbers of chiplets. In Figure                                 4) Non-Recurring Engineering Cost: Non-Recurring Engi-
+13, we compare the scaling for a silicon substrate using                               neering (NRE) costs include costs such as masks and tooling
+individual bonding with a silicon substrate using simultaneous                         that occur regardless of manufacturing volume. In most of the
+
+
+
+                                                                                  10
+Fig. 13. Assembly Process Sweep. X-axis shows the number of chiplets and                 Fig. 15. Fault Coverage Sweep for Mature Process Node.
+the size of each chiplet used for the study.
+
+
+
+
+                                                                                Fig. 16. Fault Coverage Sweep for Immature Process Node. Due to the
+Fig. 14. NRE Sweep. Design cost was included and scaled based on the            increase in test cost for the higher fault coverage, the best cost in this case
+estimated amount of duplication in each die.                                    is the 95% fault coverage. 50% fault coverage is the worst due to extremely
+                                                                                high scrap cost.
+
+
+case studies, we have assumed a high manufacturing volume
+                                                                                15 and 16 for the graph processor test case. We used the
+so these costs are small. For low volume manufacturing with
+                                                                                graph processor configuration with 16, 50 mm2 chiplets for
+non-homogeneous chiplet designs, NRE costs are a significant
+                                                                                these results and used the 3nm node with both the elevated
+factor making smaller chiplets less cost-effective (due to a
+                                                                                defect density of 0.01 per mm2 and the good defect density
+greater number of masks) unless chiplets can be designed to be
+                                                                                for mature processes of 0.005 per mm2 . Due to the number
+reusable across a wide range of designs. In Figure 14, we show
+                                                                                of chiplets, poor testing at the die level results in many of
+how the cost decreases as manufacturing quantity increases for
+                                                                                the assembled systems failing, giving high scrap cost. Dies
+our homogeneous test case. The shape of the chiplet config-
+                                                                                are tested individually and after each assembly step. For the
+uration does not change between quantities since the quantity
+                                                                                2.5D case, this means the dies are tested before assembly and
+scales with the number of dies on the system as all dies are the
+                                                                                once all dies are on the interposer.
+same in this test case. As an approximation, since this system
+                                                                                   The results change if we instead use a 3D stacked system
+is approximately reticle sized, regardless of the die size chosen
+                                                                                instead of a 2.5D integrated system. Where the first case
+here, all dies for one assembly approximately fit in a single ret-
+                                                                                included 16 dies placed beside each other on an interposer,
+icle. Additionally, since this is a homogeneous graph processor
+                                                                                in this case, we stacked the 16 dies one on top of the other.
+case, we assume the same design costs go into the system re-
+                                                                                We assume die-to-wafer stacking so that individual dies are
+gardless of number of chiplets as would be the case if a single
+                                                                                only stacked if the rest of the stack has tested as functional.
+block was designed and copied across the rest of the system.
+                                                                                These results are shown in Figure 17 and 18. In this case,
+D. Test Cost                                                                    the increased testing gives better yield and lower scrap cost
+                                                                                than the 2.5D case.
+   Fault coverage at intermediate testing steps impacts the
+stack yield and scrap cost associated with bad dies. If the test                E. IO Reach
+coverage is too low, good dies are wasted when assemblies                         IO reach limits the region on the die where an IO cell can be
+including good dies are thrown away because a bad die was                       placed. In an IO constrained example, this can require increas-
+not detected during test. The fault coverage does come at                       ing the die size to increase the perimeter where the IO cell
+the expense of increased test costs. This is shown in Figure                    can be placed. To demonstrate this, Figure 19 shows how cost
+
+
+
+                                                                           11
+  Fig. 17. Fault Coverage Sweep for 3D Case in Mature Process Node.                        Fig. 20. Interposer Material Comparison.
+
+
+
+                                                                            substrate materials impact the achievable bonding pitches,
+                                                                            cost, and yield. Silicon substrates have the advantage of
+                                                                            sharing the coefficient of thermal expansion (CTE) of the
+                                                                            dies which allows use of extremely small bonding pitch. This
+                                                                            comes at the disadvantage of being a more expensive option
+                                                                            than using an organic substrate. An additional consideration
+                                                                            is that organic substrates tend to have lower loss than silicon.
+                                                                            Glass interposers try to take some of the best of both worlds
+                                                                            with smaller pitch than organic substrates and better signal
+                                                                            integrity than silicon. Organic, silicon, and glass substrates are
+                                                                            compared on the homogeneous test case for a 16-chiplet design
+ Fig. 18. Fault Coverage Sweep for 3D Case in Immature Process Node.        in Figure 20. The IO type is UCIe standard for the organic
+                                                                            case and UCIe advanced for the silicon and glass cases.
+                                                                               Another integration option is to use an embedded bridge
+                                                                            die that allows high density interconnections through the
+                                                                            silicon, but allows the body of the substrate to be a material
+                                                                            other than silicon to reduce cost and improve yield. To
+                                                                            support this option in the cost model, we allow setting a die
+                                                                            as “buried” which will interpret it as not taking up area on
+                                                                            the surface of the interposer as it will be place under the dies
+                                                                            that are bonded on top and level with the interposer surface.
+
+
+                                                                            G. Non-Recurring Engineering Cost
+
+                                                                               One useful applications for chiplets is the situation where
+                       Fig. 19. Reach Sweep.
+                                                                            you want to update one die in an existing system. This can
+                                                                            allow reusing most of the dies, but adding one a new die
+changes with respect to the reach of the IO cell. For this study,           for additional functionality or a different application. The
+we used a parallel IO type and scaled the reach instead of using            primary new cost in this situation is the increased NRE cost
+UCIe as was used for the other studies. Note that the 2mm                   of designing and manufacturing a new die.
+reach allows mostly edge placement of IO cells, where the                      To see the impact of NRE cost on a system like this
+longer reaches allow for placement of IO cells further from the             where one die is new and low volume while all the others
+edge of the die. We see a penalty in the die area when the reach            are high volume either due to reuse across a large number
+is too small since the die size is increased to provide more                of designs or because they were previously designed for a
+perimeter for edge placements of IO cells, but when the reach               different system, we looked at a 4-chiplet system using the
+is large enough, we no longer see a benefit to scaling the reach.           homogeneous test case, but varying the quantities. In this
+                                                                            case 3 of the 4 dies were set to a high enough quantity to
+F. Interposer Study                                                         make NRE negligible, then the quantity of the other die was
+  Chiplet systems using 2.5D stacking require some kind of                  varied. This is shown in Figure 21. Here despite the new die
+substrate or interposer between dies and the PCB. Different                 only making up 25% of the silicon area, NRE cost dominates.
+
+
+
+                                                                       12
+                                                                                      [9] F. Li, Y. Wang, Y. Wang, M. Wang, Y. Han, H. Li, and X. Li,
+                                                                                          “Chipletizer: Repartitioning socs for cost-effective chiplet integration,”
+                                                                                          in 2024 29th Asia and South Pacific Design Automation Conference
+                                                                                          (ASP-DAC), 2024, pp. 58–64.
+                                                                                     [10] S. Chen, S. Li, Z. Zhuang, S. Zheng, Z. Liang, T.-Y. Ho, B. Yu,
+                                                                                          and A. L. Sangiovanni-Vincentelli, “Floorplet: Performance-aware
+                                                                                          floorplan framework for chiplet integration,” IEEE Transactions on
+                                                                                          Computer-Aided Design of Integrated Circuits and Systems, vol. 43,
+                                                                                          no. 6, pp. 1638–1649, 2024.
+                                                                                     [11] S. Pal, D. Petrisko, R. Kumar, and P. Gupta, “Design space exploration
+                                                                                          for chiplet-assembly-based processors,” IEEE Transactions on Very
+                                                                                          Large Scale Integration (VLSI) Systems, vol. 28, no. 4, pp. 1062–1073,
+                                                                                          2020.
+                                                                                     [12] D. Stow, Y. Xie, T. Siddiqua, and G. H. Loh, “Cost-effective design of
+                                                                                          scalable high-performance systems using active and passive interposers,”
+                                                                                          in 2017 IEEE/ACM International Conference on Computer-Aided
+Fig. 21. NRE Impact with One New Die. The cost of the existing                            Design (ICCAD), 2017, pp. 728–735.
+high-volume dies is almost negligible for very low volumes.                          [13] J. Kim, V. C. Krishna Chekuri, N. M. Rahman, M. A. Dolatsara,
+                                                                                          H. Torun, M. Swaminathan, S. Mukhopadhyay, and S. Kyu Lim, “Silicon
+                                                                                          vs. organic interposer: Ppa and reliability tradeoffs in heterogeneous
+                                                                                          2.5d chiplet integration,” in 2020 IEEE 38th International Conference
+                          VI. C ONCLUSION                                                 on Computer Design (ICCD), 2020, pp. 80–87.
+                                                                                     [14] D. Stow, I. Akgun, and Y. Xie, “Investigation of cost-optimal network-
+                                                                                          on-chip for passive and active interposer systems,” in 2019 ACM/IEEE
+   In this work, we have shown that CATCH is a valuable tool                              International Workshop on System Level Interconnect Prediction (SLIP),
+to analyze chiplet systems at an early design stage using high                            2019, pp. 1–8.
+level design descriptions. Our tool includes detailed modeling                       [15] X. Hao, Z. Ding, J. Yin, Y. Wang, and Y. Liang, “Monad: Towards
+                                                                                          cost-effective specialization for chiplet-based spatial accelerators,” in
+for cost and yield for silicon, assembly, and test. Additionally,                         2023 IEEE/ACM International Conference on Computer Aided Design
+we include netlist support to show the impact of IO cells and                             (ICCAD), 2023, pp. 1–9.
+inter-chiplet bandwidths. The tool allows exploring a wide va-                       [16] Dylan      Patel,    “Die     size      and     reticle    conundrum       –
+                                                                                          cost      model       with      lithography       scanner      throughput,”
+riety of options to make informed decisions about the physical                            2022,     accessed:     Oct.      27,     2024.      [Online].    Available:
+configuration of a chiplet system during design and it helps                              https://www.semianalysis.com/p/die-size-and-reticle-conundrum-cost
+identify important areas of high cost where improvement will                         [17] K. Sahoo, H. Ren, and S. S. Iyer, “A high throughput two-stage
+                                                                                          die-to-wafer thermal compression bonding scheme for heterogeneous
+have the largest impact in system cost. Since this is based on a                          integration,” in 2023 IEEE 73rd Electronic Components and Technology
+flexible design description format it is also well-suited to inte-                        Conference (ECTC), 2023, pp. 362–366.
+grations with other tools for co-optimizations in future work.                       [18] F. Nagano et al., “Void formation mechanism related to particles during
+                                                                                          wafer-to-wafer direct bonding,” ECS Journal of Solid State Science and
+                                                                                          Technology, vol. 11, no. 6, p. 063012, Jun 2022.
+                             R EFERENCES                                             [19] P. Singh and D. Landis, “Optimal chip sizing for multi-chip modules,”
+                                                                                          IEEE Transactions on Components, Packaging, and Manufacturing
+                                                                                          Technology: Part B, vol. 17, no. 3, pp. 369–375, 1994.
+ [1] NVIDIA, “NVIDIA A100 GPUs power the modern data center,” 2024,                  [20] A. Shilov, “Intel says defect density at 18a is healthy,
+     accessed: Oct. 13, 2024. [Online]. Available: https://www.nvidia.com/                potential clients are lining up,” 2024. [Online]. Available:
+     en-us/data-center/a100/                                                              https://www.tomshardware.com/tech-industry/intel-says-defect-density-
+ [2] Samuel K. Moore, “Behind Intel’s HPC chip that will pierce                           at-18a-is-healthy-potential-clients-are-lining-up
+     the exascale barrier - IEEE Spectrum.” 2022, accessed: Oct. 29,                 [21] ——,       “TSMC’s       wafer      prices    revealed:     300mm      wafer
+     2024. [Online]. Available: https://spectrum.ieee.org/intel-s-exascale-               at 5nm is nearly $17,000,” 2020. [Online]. Available:
+     supercomputer-chip-is-a-master-class-in-3d-integration                               https://www.tomshardware.com/news/tsmcs-wafer-prices-revealed-
+ [3] AMD, “AMD Instinct™ accelerators,” 2024, accessed: Oct. 13, 2024.                    300mm-wafer-at-5nm-is-nearly-dollar17000
+     [Online]. Available: https://www.amd.com/en/products/accelerators/
+     instinct.html
+ [4] E. A. Jones, F. F. Wang, and D. Costinett, “Review of commercial
+     GaN power devices and GaN-based converter design challenges,” IEEE
+     Journal of Emerging and Selected Topics in Power Electronics, vol. 4,
+     no. 3, pp. 707–719, 2016.
+ [5] A. Graening, S. Pal, and P. Gupta, “Chiplets: How small is too small?”
+     in 2023 60th ACM/IEEE Design Automation Conference (DAC), 2023,
+     pp. 1–6.
+ [6] Y. Feng and K. Ma, “Chiplet actuary: a quantitative cost model and
+     multi-chiplet architecture exploration,” in Proceedings of the 59th
+     ACM/IEEE Design Automation Conference, ser. DAC ’22. New York,
+     NY, USA: Association for Computing Machinery, 2022, p. 121–126.
+     [Online]. Available: https://doi.org/10.1145/3489517.3530428
+ [7] M. Ahmad, J. DeLaCruz, and A. Ramamurthy, “Heterogeneous
+     integration of chiplets: Cost and yield tradeoff analysis,” in 2022 23rd
+     International Conference on Thermal, Mechanical and Multi-Physics
+     Simulation and Experiments in Microelectronics and Microsystems
+     (EuroSimE), 2022, pp. 1–9.
+ [8] P. Ehrett, T. Austin, and V. Bertacco, “Chopin: Composing cost-effective
+     custom chips with algorithmic chiplets,” in 2021 IEEE 39th International
+     Conference on Computer Design (ICCD), 2021, pp. 395–399.
+
+
+
+
+                                                                                13
+

@@ -1,0 +1,230 @@
+                                                                                                                                                                            POSTER #04
+
+
+                            Innovations in Testing for Truly Known
+                             Good High Bandwidth Memory Stacks
+                                                    Alan Liao - FormFactor
+                                                Hiromitsu Takasu - ADVANTEST
+High Bandwidth Memory Market Size & Kown Good Die/Stack Test Demands
+HBM Market Size
+• Revenue CAGR 23 ~ 29 at 38%                                                                                                                                                  HBM1/2: 4-high DRAM stack
+
+
+
+
+• Wafer Production 23 ~ 29 at 23%                                                                                                                                 >10%
+
+
+
+
+Package final test is necessary, but provides limited
+insight to improve performance & yield Ideally, each
+component is good before integration                                                                                                   HBM4: 16-high DRAM stack
+
+
+
+
+• Nirvana is Known Good Die (KGD), just test everything
+Economics may dictate something shy of KGD
+• Pre-package wafer test  scrap-cost avoidance
+• Final-test and system-test opportunities prevent escapes
+
+
+
+Typical HBM Test Insertion – Pros & Cons on KGD PAD Testing
+  Memory core
+
+                                                                                                                                                                               Shipment
+
+  Wafer/TSV                Thinning
+  process   Wafer test     & Bump                dicing
+                                                                                                    KGS Test:
+                                                                                              Post-stack Wafer Test               Dicing
+  Base Logic
+                                                                                                                                    &
+                                                                                                                                Debonding
+
+  Wafer/TSV                Thinning                                      stack & Mold
+  process   Wafer test     & Bump
+
+                                                                                           Micro-bump probing test              DFT pad probing test
+                                                             DFT Pads
+                                                                                           All 8ch simultaneously test          Do not damage Micro-bumps.
+                                                                        48um               can be executed.                     Big number of parallel test
+                                                                                      Pros
+                                                                                           Test close to actual usage           can be executed.
+                                                                               55um
+
+
+
+
+                                                                                           conditions
+                                                                                           Deep bump coining                    Test different from actual
+                                                                                           unusable in production.              usage conditions
+                                                                                      Cons
+                                                                                           Small number of parallel
+                                                                 Micro Bump
+                                                                                           test due to many I/O pins.
+
+HBM test cell solution by “Die Carrier”
+  Die Carrier (Interposer , Lid , Probe)                                                Inserter/Remover
+
+
+
+
+  Inserter / Remover                                           Tester and                                                Inserter / Remover                               Reconstruction
+   (Insert function)                                            Handler                                                  (Remove function)                               XY pitch accuracy
+                                  Vision
+                                                                                                                                                                            ≦±50um
+      Singulated die (Untest)    Alignment                                                                               Singulated die (Tested)
+
+
+
+
+                                              Carrier Tray                                                Carrier Tray
+
+
+                                Die Carrier                                                                              Die Carrier
+  WF FOUP 12” Wafer Frame                                                 Advantest Test cell                                     12” Wafer Frame WF FOUP
+
+
+
+                                                SWTest Conference 2025, June 2 to 4, 2025
+FFI HBM Singulated Stack Die Test Solution
+Product Features:
+• Compatible with T11 series probe
+
+• Offer same high-speed performance as HFTAP
+
+• Cold and Hot temperature capability
+
+• Design with Advantest handler and tester build in vision alignment feature
+
+Product Benefits:
+• Offer solution for truly known good stack/die test solution
+• Enable quality screening post HBM stack wafer dicing
+• HBM KGD test capability up to 4GHz
+• Fast soak time switching temperature
+Memory core
+
+                                                                                                                                 Shipment
+
+Wafer/TSV              Thinning
+process   Wafer test   & Bump        dicing
+                                                                          KGS Test:
+                                                                    Post-stack Wafer Test     Dicing           KGS Test:
+Base Logic                                                                                               Post-stack Wafer Test
+                                                                                                &
+                                                                                            Debonding
+
+Wafer/TSV              Thinning                      stack & Mold
+process   Wafer test   & Bump
+
+                                  Known Good Stack Wafer Test Flow               Known Good Stack Die Test Flow
+                                                             Test efficiency:                                     Test efficiency:
+         DC & Simple Function Test                           90%                                                  100%
+
+
+                                                             80%                                                  100%
+         Cold & Hot Temp Test
+
+
+                                                             70%                                                   100%
+         High Freq Test                                                                                 *reject a failure die between the
+                                                                                                        test steps and keep efficiency
+
+
+Carrier structure and SI/PI Simulation result
+• Carrier structure                                                 • SI Simulation result
+• Structure
+     •    Contact to HBM device : MEMS Probe
+     •    Contact to test socket : Interposer
+
+• Pros
+     •    High electrical performance can be expected
+     •    Similar pad scrub behavior with wafer test
+                                                                      T5833 Read cycle simulation results on Carrier Solution
+                                                    Contact Probe   • PI Simulation result
+                                              Interposer
+
+
+
+
+                                                                          T5833 Power supply simulation (IR-Drop) results
+
+                                         SWTest Conference 2025, June 2 to 4, 2025
+Thermal technical challenge
+• High Power Density in HBM Stacks:
+    •     An HBM 3D memory stack die can dissipate significant power during test
+    •     In a high-parallel testing, the total heat load poses a serious thermal management challenge
+
+• Thermal control by memory handler
+    •     Die temperature is well controlled by connecting memory handler
+    •     The handler has individual sensor and applies cooling air to keep die Tj
+
+             item          value            Output
+                                             Air
+          Parallelism       64                                            Input
+        Heat generation    15W                                          cooling Air
+         temperature       105℃                                                                               -8C
+
+
+
+        Tj rise(all Die)   ≦3℃
+                                                                                               Single unit evaluation result
+
+Alignment accuracy & repeatability
+• Automated alignment processes:
+        Detect the die reference bumps                                                                        Validation result
+        from each hole with the camera                                                                                    12
+
+                                                                                                                          10
+
+                                                                                                                              8
+
+                                                                                                                              6
+
+        Calculate X,Y and theta                                                                                               4
+                                                                                Y error [um]
+
+
+
+
+                                                                                                                              2
+
+                                                                                                                              0
+                                                                                               -12 -10   -8    -6   -4   -2        0   2   4   6   8   10   12
+        Move the alignment actuator to               Before alignment                                                         -2
+
+        the correct position                                                                                                  -4
+
+                                                                                                                              -6
+
+                                                                                                                              -8
+
+                                                                                                                         -10
+        Check the position of the die                                                                                    -12
+        reference bump with the camera                                                                              X error [um]
+                                                                                                   Alignment accuracy    ：less than ±1.4um
+                                                                                                   Alignment accuracy 4σ ：less than ±3um
+                                                                                Align the centers of the two reference
+                                                      After alignment           points on the carrier and the die
+
+Conclusion
+• Technical Advantage – Die-Level Testing
+    •     Singulated die testing allows full-speed, multi-temperature screening before stacking
+    •     One-time contact via die carrier achieves complete test coverage (DC, functional, etc.) in a single insertion
+    •     Supports high parallelism, improving overall throughput without compromising test quality
+
+• Scalability and Future Applications
+    •     The short transmission path of the die carrier architecture enables reliable multi-GHz test performance
+    •     Well suited for wafer-level high-speed memory testing and future chiplet architectures
+
+Acknowledgement & Contact information
+The authors express their gratitude to Abdelrahman Awad from FormFactor as well as Toshiyuki
+Kiyokawa and Atsushi Nakadate from Advantest for their valuable contribution to this paper.
+                       Alan Liao                                   Hiromitsu Takasu
+        Asia Region Product Marketing Director      Device Interface Business Development Manager
+                 ALiao@formfactor.com                       hiromitsu.takasu@advantest.com
+                                      SWTest Conference 2025, June 2 to 4, 2025
+

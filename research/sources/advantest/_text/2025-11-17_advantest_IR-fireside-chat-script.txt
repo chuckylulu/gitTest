@@ -1,0 +1,703 @@
+                                                                   Advantest Corporation
+                                                                   IR Fireside Chat Script
+                                                                       November 17, 2025
+
+
+
+
+                                          English                                                                 日本語
+Oike   Thank you very much for joining Advantest Corporation’s IR Fireside            本日はご多用のところ、株式会社アドバンテストの IR ファイヤーサイド・
+尾池     Chat despite your busy schedule. We are excited to present this session        チャットにご参加いただき、誠にありがとうございます。本セッションを開
+       and would like to introduce our panelists and our moderator.                   催できることを大変嬉しく思っております。まずは、本日のパネリストおよ
+                                                                                      びモデレーターをご紹介いたします。
+
+       From the left side of the slide:
+                                                                                      (スライド左側より順に)
+       Douglas Lefever, Representative Director, Senior Executive Officer,             •   ダグラス・ラフィーバー（代表取締役兼経営執行役員、グループ CEO）
+       and Group CEO                                                                   •   ユルゲン・ゼラー(経営執行役員、CTO(Chief Technology Officer))
+                                                                                       •   三 橋 靖 夫 ( 経 営 執 行 役 員 、 CSRO(Chief Stakeholder Relations
+       Juergen Serrer, Senior Executive Officer and CTO (Chief Technology
+                                                                                           Officer))
+       Officer)
+
+       Yasuo Mihashi, Senior Executive Officer and CSRO (Chief
+       Stakeholder Relations Officer).
+
+
+                                                                                      本日のファイヤーサイド・チャットでは、三橋がモデレーターを務めます。
+       Mihashi will serve as the moderator for today’s fireside chat session. I
+                                                                                      私は IR 部の尾池です。本セッションの進行役を務めさせていただきます。
+       am Oike from the IR Department, and I will be serving as your
+       facilitator today.
+
+
+
+
+                                          English                                                                 日本語
+Oike   The theme of the discussion is: “Be the most trusted and valued test           本日のディスカッション・テーマは、「半導体バリューチェーンで最も信頼
+尾池     solution company in the semiconductor value chain.” This is                    され、最も価値あるテスト・ソリューション・カンパニーへ」です。こちら
+       Advantest’s vision statement which we re-defined last year.                    は、昨年当社が再定義したビジョン・ステートメントです。
+
+
+                                                                                  1
+             Following the fireside chat, we will open the floor for questions from            セッション終了後には、参加者の皆様からのご質問をお受けする予定です。
+             the audience.
+
+
+
+[Introduction / はじめに]
+                                                English                                                                  日本語
+Mihashi      Good morning, good afternoon, and good evening. Thank you for                     皆様、本日は世界各地からアドバンテストのファイヤーサイド・チャットに
+三橋           joining Advantest Fireside Chat today. Let me introduce our CEO,                  ご参加いただき誠にありがとうございます。弊社 CEO のダグラス・ラフィ
+             Douglas Lefever, sitting besides me, and also our CTO, Juergen Serrer.            ーバー、そして CTO のユルゲン・ゼラーをご紹介いたします。本セッショ
+             We will conduct today's session with all three of us.                             ンは、私たち 3 名で進行してまいります。
+
+
+Lefever      Thank you, Yas. It is great to be here. We are in a beautiful setting - it        三橋さん、ありがとうございます。本日この場に参加でき、大変光栄です。
+ラフィーバ        is autumn here in Germany. I know we're amongst the Mercedes-Benz                 ここドイツは秋の美しい季節を迎えており、私たちはメルセデス・ベンツの
+             area where many things started on the automotive industry. I, myself,             発祥地として知られる地域におります。自動車産業の多くがこの地から始ま
+             come from a family in the automotive industry, not in Germany, but in             りました。私自身も自動車業界にルーツを持つ家庭で育ちました。出身はド
+             the Detroit area. That's how I started my career, but I quickly moved to          イツではなく、米国のデトロイト地域ですが、そこでキャリアをスタートさ
+             the semiconductors, and I have been in the industry now for 27-28 years           せました。その後すぐに半導体業界へと転身し、現在ではこの業界に 27〜
+             now. I am happy to be here.                                                       28 年携わっております。本日、皆様とこのような場を共有できることを大
+                                                                                               変嬉しく思っております。
+
+
+Serrer       Hello, I am Juergen. Here - Boeblingen - is the first site of Hewlett-            こんにちは、ユルゲン・ゼラーです。ここベーブリンゲンは、米国以外で初
+ゼラー          Packard outside of the United States. I'm now 34 years in the ATE                 め て Hewlett Packard の 拠 点 が 設 立 さ れ た 場 所 で す 。 私 は こ の
+             (Automated Test Equipment) industry - Hewlett Packard, Agilent,                   ATE(Automated Test Equipment)業界に携わって 34 年になります。
+                                                                                                                                             Hewlett
+             Verigy, and since 2011 with Advantest. I'm happy that now the entire              Packard、Agilent、Verigy を経て、2011 年よりアドバンテストに在籍して
+             team is still in Boeblingen, and they can show everything what we are             おります。本日は、我々経営チームがベーブリンゲンに集い、私たちの取り
+             doing.                                                                            組みを皆様にご紹介できることを大変嬉しく思っております。
+
+
+
+
+[The Third Mid-term Management Plan / 第 3 期中期経営計画]
+                                                                                                                         日本語
+Mihashi      Let me start touching up on MTP3(The Third Mid-term Management                    まずは、MTP3(Third Mid-term Management Plan: 第 3 期中期経営計画)
+三橋           Plan). It's been 1.5 years since we initiated MTP3. Maybe we can talk             について触れさせていただきます。MTP3 を開始してから、すでに 1 年半が
+             about highlights of MTP3. We still have 1.5 years to focus on expanding           経過しました。あと１年半、事業の拡大に注力する期間を残しています。
+             our business.
+
+Lefever      I can start, Yas. But maybe before we even talk about the MTP3, we                三橋さん、ありがとうございます。では、MTP3 についてお話しする前に、
+ラフィーバ        can just go back even a couple years further. When we started talking             少し過去を振り返ってみたいと思います。当社が中期経営計画について議論
+             about mid-term management plans, we did that around 2017 when                     を始めたのは、吉田さん(吉田芳明氏、現・取締役会長)が CEO に就任され
+             Yoshida San (Mr. Yoshiaki Yoshida, Current Chairman of the Board)                 た 2017 年頃のことでした。その際、1 年単位ではなく、業界のサイクルを
+             became CEO, we implemented these three-year management plans,                     踏まえた 3 年単位での計画策定が必要であると認識し、3 ヶ年経営計画を導
+             realizing that we needed to start planning not just one year out, but take        入しました。これに伴い、戦略の策定と、3 年単位での自己評価を可能にす
+             into account all the cyclical effects. So we started putting some                 る Key Performance Indicators(主要業績評価指標)を設定しました。
+                                                                                                                                            2018 年
+             strategies in place along with some key performance indicators to                 から 2020 年、続いて 2021 年から 2023 年までの 2 期を経て、現在は第 3
+             measure ourselves over a three-year period rather than single years. So           期の中間地点を超えたところです。
+             we did that from 2018 to 2020 and then 2021 to 2023, and now we're
+             in our third three-year tranche and halfway through that.
+
+
+                                                                                               これまでの各計画は成功を収めました。これは当社が、成功を導いた既存戦
+             Each of those plans has been very successful. I think we've built new
+                                                                                               略の上に、新たな戦略を積み重ねてきたことによります。多くの取り組みを
+             strategies upon ones that are still core to our success, and so, as we look
+                                                                                               想定どおりに推進し、中期経営計画期間ごとに高い成長率を実現してきまし
+             into the second-half of this MTP3, we're doing a lot of things right. I
+                                                                                               た。現行の MTP3 では、業界におけるスピードとスケールというテーマへ
+             think the company has executed in a way that the management really
+                                                                                               の対応が一層強く求められています。MTP3 の後半に向けて、Time to
+             was expecting and we've been able to grow from Plan to Plan at a very
+                                                                                               market の側面がますます重要になっているという点に集約されます。
+             high rate. So, as we look into this MTP3, a couple of the themes now
+             that we're having to adapt even more is around the concept of velocity
+             and scale in our industry that the time to market aspect is becoming
+             more and more critical.
+
+             The device generations are at a cadence of one year now, as opposed to
+                                                                                               現在、デバイスの世代交代は、これまでの数年単位ではなく、1 年単位のペ
+             a couple years or even longer in some cases in the past. So we're having
+                                                                                               ースで進行しています。そのため、当社としても開発サイクルの短縮が求め
+             to shorten our development cycles. I'm sure Juergen can speak to that.
+                                                                                               られています。この点については、ユルゲンからも補足があるかと思います。
+             But then, we're also having to scale out at a level in our production that
+                                                                                               また、これまでの計画では想定していなかったレベルで、生産能力増強にも
+                                                                                           2
+           we never had assumed in the previous plans. So we've done a good job               取り組まなければならない状況です。MTP3 の前半では、当社は取り組みの
+           I think in the first part of this midterm plan, and the second half is going       成果としてよい経過を遂げており、MTP3 の後半では、より一層、スケール
+           to be a lot more about scale, investing in our supply chain, investing in          の拡大に注力していく方針です。具体的には、サプライチェーンへの投資、
+           our production capacity.                                                           生産能力の増強などが挙げられます。
+
+
+
+           As we reported in our last disclosure, we've upped the full year numbers
+                                                                                              直近の開示でもお伝えした通り、通期の業績見通しを上方修正するととも
+           and we've updated the three-year plan numbers significantly. That's a
+                                                                                              に、3 年間の目標数値も大幅に修正しました。これは、当社が現在置かれて
+           result of all the growth that we're experiencing along with our ability to
+                                                                                              いる環境への柔軟な対応力の結果であると考えています。
+           respond to that growth.
+
+
+
+
+[Complexity and our Business / 複雑性と当社ビジネス]
+
+
+
+
+Mihashi    I see. So, we are doing many things which could lead our business to               私たちは現在、事業の成功につながる多くの取り組みを進めています。当社
+三橋         be in a position of success. Our success comes from increasing                     の成功は、「複雑性」が高まっていることに起因していると考えています。
+           “complexity”. So what you can say about “complexity”?                              この「複雑性」について、どのようにお考えでしょうか。
+
+
+Serrer     Well, it's a complex question. The AI market is enormously driven by               それは複雑な質問ですね。AI 市場では、性能と電力といった要因が市場成長をと
+ゼラー        performance and power. So our customers are pushing all technologies to            ても強く牽引しています。そのため当社の顧客はあらゆる技術を限界まで追求し
+           the limits, whether that's high bandwidth memory (HBM) now becoming                ています。例えば、高速化と積層化が日々進化している高帯域幅メモリ(HBM:
+           very fast, even more stacks, the IO speed going 224 Gbps now moving to             High Bandwidth Memory)、I/O 速度が 224Gbps にもなる光電融合への移行、新
+           optical integration, new process technology, and 3.5 D packaging                   しいプロセス技術、そして 3.5D パッケージング技術などで、これらすべてが同時
+           technology. This is all stacking up. Combined with what Doug said about            に進展しています。加えて、ダグが述べたスピード、市場投入までの時間的プレ
+           velocity, the time to market pressure, the increased quality levels, this          ッシャー、品質水準の向上要求などが相まって、巨大なテスト課題を生み出して
+           comes all together and generates an enormous test challenge - we call this         います。私たちはこれを業界全体の課題、あるいは業界の問題と呼んでいます。
+           an industry challenge and an industry problem. This is where we are                当社はまさにこの領域に注力しており、課題解決に向けて積極的に投資を行って
+           focusing and where we are investing to resolve it.                                 います。
+
+
+Mihashi    It used to be that testing was caught as a cost, because you needed to             かつては、テストとはコストとして捉えられていました。デバイスが正常か
+三橋         judge whether device is OK or not. But now, testing is becoming                    否かを判定することに必要とされていました。しかし現在では、テストの位
+           something different from where we were - we are showing more value                 置づけは従来とは異なるものになりつつあります。私たちは、従来のテスト
+           than what was original testing. Do you think that this trend will be kept          と比べて、高い付加価値を発揮できるようになっています。この傾向は、少
+           for at least in the next years?                                                    なくとも今後数年間は継続すると考えていますか。
+
+
+Serrer     Yes, I'm very sure because the technology which is used, they always               はい、私はこの傾向が継続すると確信しています。なぜなら、活用される技
+ゼラー        move to the edge. So our job, in the meantime, is not just go, no go, but          術は常に先端へと向かって進化しているからです。したがって、私たちの役
+           we have to trim and calibrate every device, sometimes even sub-                    割は、単に「合格／不合格」を判定するだけではありません。現在では、す
+           sections of every device to its optimal performance point and having               べてのデバイス、時にはその一部のセクションに対しても、テストを通じて
+           enough margins to the individual circuit. That's now something we have             最適な性能ポイントに合わせて調整、最適化を行い、個々の回路に十分なマ
+           been doing for many years, and will continue - to truly calibrate so that          ージンを持たせる必要があります。これは、私たちが長年にわたって取り組
+           we make devices better, and that's a necessary step.                               んできたことであり、今後も継続していくものです。真の最適化を追求する
+                                                                                              ことで、デバイスの性能を向上させる──これは不可欠なステップです。
+
+                                                                                          3
+Lefever   I would just add that I agree with Juergen and that the kind of equation           私もユルゲンと同じ意見です。補足すると、現在ではとても複雑な
+ラフィーバ     has changed a little bit now with these very complex HPC(High                      HPC(High Performance Computing)/AI デバイスやパッケージング技術の
+          Performance Computing)/AI devices and the packaging technology,                    登場により、テストを取り巻く状況はやや変化しています。特に、そのパッ
+          and the cost of that packaging technology now is driving a focus on                ケージング技術のコストが、歩留まりと品質への注力を強く促しています。
+          yield and quality. There was always that aspect in the past; but now               過去にもこういった側面は常にありましたが、現在これらのデバイスはとて
+          these devices have such high ASPs and they're so costly in terms of the            も高価であり、パッケージングのコストも極めて高額です。このような高価
+          packaging that the test content naturally is going up to make sure they're         なパッケージを廃棄することなく、高い歩留まりのデバイスを確保するた
+          getting high yield devices because it's just too expensive to throw away           め、テスト項目、回数はおのずと増加しています。
+          these expensive packages now.
+
+Serrer    Another example is power pairing. So the process variation is such that            もう一つの例は、電力最適化ペアリングです。プロセスのばらつきがあるた
+ゼラー       everybody wants to squeeze out the last piece of power. People want to             め、極限まで電力性能を引き出すことに対する意欲が高まっています。電力
+          pair chiplets in regard to best combination for power, and that's where            の観点から最適な組み合わせとなるようにチップレットをペアリングする
+          we help. That's one of the areas where we are really good to provide               ことが求められています。当社がとても得意とする分野の一つであり、歩留
+          that data to optimize the yield and the performance level of the bins.             まりと性能を最適化するためのデータを提供しています。
+
+
+Mihashi   It is really good for us that test has become so valuable to produce very          微細化技術や異種統合技術（ヘテロジニアスインテグレーション）などの要
+三橋        complicated devices due to factors including miniaturization                       因を背景に、かなり複雑なデバイスを製造するうえでテストが極めて価値あ
+          technologies and heterogeneously integrated technologies. But,                     るものとなったことは、当社にとって追い風です。一方で、テストにおける
+          meanwhile, efficiency is always a requirement for testing. What is our             効率性の追求は不変です。このような複雑なテストの思想や手法に対して、
+          approach to efficiency gains for such complicated testing philosophies             将来的に効率性を高めるため、当社はどのようなアプローチを取っているの
+          and methodologies in the future?                                                   でしょうか。
+
+
+Serrer    Well, I mean, let's start with a couple of things. And first of all, we are        はい、いくつかの点にわけてお話しします。第一に、DFT(Design for
+ゼラー       convinced that you have to extend towards a design because that is                 Testability)は半導体の設計段階で盛り込まれるため、当社は（テスト）アプ
+          where DFT(Design For Testability) is set. So that's part of the reason             ローチを設計にまで拡張する必要があると私たちは確信しています。これ
+                                                                 TM
+          why we engage in our new initiative called SiConic          to close the gap       が、当社が新たな取り組みである「SiConicTM」を推進している理由の一つ
+          between EDA(Electronic Design Automation) and ATE- to prepare to                   です。この取り組みは、EDA(Electronic Design Automation)と ATE 間のギ
+          have a good sign off (*) to also allow that the designers talk to the test         ャップを埋めることを目的としています。これにより、設計者とテストエン
+          engineers. Test engineers can move the results back much better, and               ジニアの対話を可能とし、適切なサインオフ(*)にそなえます。テストエンジ
+          that flow is closed.                                                               ニアは結果をより良い形でフィードバックでき、そのサインオフに向けたプ
+                                                                                             ロセスが完了します。
+
+          Secondly, we certainly invest tremendously into automation tooling,
+                                                                                             第二に、当社は顧客の生産性を大幅に向上させるために、自動化ツール、ATE
+          ATE software, and AI tools ourselves to make our users much more
+                                                                                             ソフトウェア、そして AI ツールへの投資を積極的に行っています。
+          productive.
+
+          Third is what we call as “Distribution of test.” Sometimes our                     第三に、当社が「Distribution of test(テストの分散)」と呼んでいる取り組
+          customers don't know where to put what content and what content they               みがあります。顧客は、どこにどのテスト項目を配置すべきか、あるいは追
+          have to add. For this, we have a strategy of allowing the “Distribution            加すべきかを判断できない場合があります。当社は、エンジニアリング、ウ
+          of tests” along all test insertions whether that's engineering, wafer sort,        ェーハソート、高温/低温パッケージテスト、バーンイン、システムレベル
+          hot/cold package test, burn in, system level test.                                 テストなど、すべてのテスト・インサーションにおいてテストの最適な分散
+                                                                                             をテスト手法として持ち合わせています。
+          So these are just a few highlights.
+                                                                                             以上が、いくつかのハイライトです。
+
+
+          (*)"Sign-off" is the final, formal approval, after semiconductor design            (*)半導体の設計や検証が終わったあと、製造や量産といった次のステップ
+          and verification, enabling progression to subsequent steps such as                 に進むために各工程の結果が正式に承認されること。
+          manufacturing and mass production.
+
+
+
+Lefever   The other thing to add is that in the previous mid-term plans, we've               もう一点補足しますと、当社は過去の中期経営計画において、後工程フロー
+ラフィーバ     done a good job of adding some of those pieces in that back end flow.              にいくつかの要素を追加することに成功してきました。ユルゲンの指摘の通
+          To Juergen's point, as the “Distribution of test” moves around                     り、
+                                                                                              「Distribution of test」は、デバイスの種類やライフサイクルの段階によ
+          depending upon the type of device or where it is and where it's in its             ってテスト項目をどこで行うかをシフトさせていきます。このように、当社
+          lifecycle, our approach is being able to cover those different insertions.         のアプローチはそれぞれのテスト・インサーションに対する網羅性を持ち合
+                                                                                             わせています。
+
+          I can remember actually going back to the 2017 timeframe - I still have
+                                                                                             私は 2017 年当時のことをよく覚えています。EDA から ATE への統合を(後
+          a picture of the whiteboard that we made of this kind of moving to the
+                                                                                             工程フローの)左側に、システムレベルテストとクラウドベースのデータ分
+          left and integrating EDA to ATE and going right with system level test
+                                                                                             析による連携を右側に描いたホワイトボードの写真を今でも持っています。
+          and having cloud based data analytics to tie them together. That was all
+                                                                                             それは 8〜9 年前のことです。第 1 期および第 2 期の中期経営計画を通じ
+          the way back to eight or nine years ago. Throughout that first and
+
+                                                                                         4
+              second mid-term plan, we've made some inorganic moves and                          て、当社はインオーガニックな提携や買収を行い、同時にダイレベル・プロ
+              acquisitions. We've done some organic development on things like die               ーブなどのオーガニックな開発も進めてきました。現在、これらの要素を統
+              level probe. Now we're putting those things together and we're seeing              合し、当社の投資と戦略の効果が現れ始めています。
+              the effects of those investments and strategies.
+
+
+
+[             / リスクへの対応]
+                                                 English                                                           日本語
+    Mihashi   Indeed, we are making good progress. So my next question is that while             確かに当社は順調に進捗しています。そこで次の質問ですが、これまでとて
+    三橋        we've been doing great, we must consider where the risks are hidden -              も良い成果を上げている一方で、当社の成長や戦略の過程に潜むリスクにつ
+              some risk factor on the way over our company growth and our company                いても考慮しなければなりません。どこにリスクがあるとお考えでしょう
+              strategies. Where do you see risks? We are working on production                   か。現在、当社は生産能力の拡大に取り組んでおり、これは最大のリスク対
+              capacity expansion, which is one of the biggest risks. So what are                 応の一つです。では、潜在的なリスクにはどのようなものがあるでしょうか。
+              potential risks?
+
+    Lefever   Yes, I get this question a lot because everyone wants to talk about                ええ、この質問はよく受けます。というのも、皆さんバブルや景気後退時に
+    ラフィーバ     bubble and what happens in a downturn.                                             何が起こるのかについて関心があるからです。
+
+
+                                                                                                 まず、私は今回の状況は異なると考えています。ある意味では、これは単に
+              For one thing, I believe this is different. In some ways, it's just a bigger
+                                                                                                 より大きな波に過ぎません。また、過去に見てきた状況と似ている部分もあ
+              wave. In some ways it’s similar to what we've seen in the past, where
+                                                                                                 ります。技術変革の波が訪れると、まずインフラやエンタープライズレベル
+              initially with a wave of technology change - there's initially an
+                                                                                                 での成長があり、その後、コンシューマーレベル、今回で言えば「エッジ」
+              infrastructure or enterprise level growth and that typically gets followed
+                                                                                                 に関する動きが続くのが典型的なパターンですが、今回もこのような流れに
+              up with something more at the consumer level or in this case people
+                                                                                                 なるのではと認識しています。ただし、エンタープライズからエッジへの移
+              talk about the edge. I firmly believe that that will happen; the timing of
+                                                                                                 行のタイミングについては、まだ不透明です。「起こるかどうか」という点
+              when the handoff from enterprise to edge is still a question. I think that's
+                                                                                                 については議論の余地はないですが、「いつ起こるか」という点については
+              debatable -but not about if it's going to happen, it's about when. We're
+                                                                                                 色んな見方があるかもしれません。いずれにしろ、それが起こることという
+              fairly comfortable in that that will happen and those volumes could be
+                                                                                                 ことについてはその確度は高いと考えており、その規模は現在データセンタ
+              orders of magnitude higher than what we're seeing at the data center
+                                                                                                 ー・レベルで見ているものよりも何倍も大きくなる可能性もあります。した
+              level. So we have high confidence that the future will kind of track with
+                                                                                                 がって、当社が過去に経験してきた傾向に沿って将来は展開が進むと確信し
+              what we've seen historically.
+                                                                                                 ています。
+
+
+                                                                                                 とはいえ、当社ではリスクへの対応としていくつかの取り組みを行っていま
+              That being said, we've done a couple things, and maybe Juergen can
+                                                                                                 す。プラットフォーム戦略についてはこの後ユルゲンから補足があるかもし
+              talk about the platform approach, which the company has really been
+                                                                                                 れません。この戦略は、業界の浮き沈みに対応するために当社がかなり規律
+              disciplined about, that helps us through kind of the ebb and flows of the
+                                                                                                 をもって進めてきたものです。一方、組織構造の観点では、特に固定費に関
+              industry. But from a structure standpoint, we're being very disciplined
+                                                                                                 してとても厳格なコスト管理を行っています。市場における一時的な変化に
+              in our cost, particularly in our fixed cost level. I think we're pretty well
+                                                                                                 は十分対応できる体制が整っていると考えています。
+              prepared for any kind of change in the market temporarily.
+
+
+
+              The last thing I'll say is that while AI and HPC have driven the market,           最後に申し上げたいのは、AI や HPC が市場を牽引してきましたが、当社の
+              our portfolio solutions can adapt to wherever there's good segments.               ソリューション・ポートフォリオは、有望なセグメントがある場所ならどこ
+              Especially when the consumer segment comes back, we have a very,                   でも適応できるということです。特にコンシューマー向けセグメントが回復
+              very robust portfolio of tests and measurement products to address                 した際には、それに対応する極めて強固な、テスタ/計測モジュール群とい
+              those segments.                                                                    った製品ポートフォリオを備えています。
+
+
+
+    Serrer    I think the risk of capacity is even an opportunity. In other                      私は、生産能力に関するリスクはむしろ当社にとって機会であると考えてい
+    ゼラー       words, we have been investing so much in our flexible supply                       ます。つまり、当社は不確実性に対応し、スケールできるよう、柔軟なサプ
+              chain so that we can scale and handle the uncertainty - so that                    ライチェーンへの投資を多大に行ってきました。その結果、当社は、生産能
+              we believe that our capacity and our manufacturing and supply                      力、製造体制、そしてサプライチェーンに競争優位性があると確信していま
+              chain in the meantime is the competitive advantage.                                す。
+
+
+[Growth investment / 成長投資]
+                                                 English                                                           日本語
+    Mihashi   In the materials of MTP3 update, we stated that we will increase our               とても多様かつ複雑な技術が次々と登場している事業環境のもと、当社は研
+    三橋        R&D expenditures because so many different technologies are coming                 究開発費を増加させることを MTP3 アップデートの資料において示しまし
+              up that are complex. So we need to build something surprising in the               た。CTO として、多くの取り組むべき策を持ち、市場に画期的な提案をもた
+              market. So, CTO, you probably have many plans.                                     らすこともあるでしょう。
+
+    Serrer    I think that's the nature of AI right now, that everything is so fast. There       現在の AI の本質は、すべてが非常に速いという点にあると考えています。
+              are various technology options the market may take. To answer it, what             市場が採用し得る技術的選択肢はさまざまですが、それに対応するためには
+                                                                                             5
+ゼラー        you have to do is multiple things.                                                複数の取り組みが必要です。
+
+
+                                                                                             まず、どのような技術トレンドが現実化するか、しないのかを見極める必要
+           First of all, you have to find out what's coming and what's not coming.
+                                                                                             があります。そのために当社は、業界の専門家や顧客、さらに主要なパート
+           We have established a really tight relationship with industry experts,
+                                                                                             ナーとのより緊密な関係を構築しています。新しい技術を開発する場合、5
+           customers, but also with leading partners. If you need to develop, new
+                                                                                             年以上かかることがあります。製品化を開始する場合は、約３年です。ソフ
+           technology may take five plus years. If you start a product made, three
+                                                                                             トウェアの改良であれば、半年程度です。かなり先の、将来の技術方向性を
+           years. If it's a software enhancement, half a year. So, the most critical
+                                                                                             見据え、長いリードタイムを要する技術開発が最も重要です。当社の技術ト
+           one is the ones where far out and you need a long lead time. So, our
+                                                                                             レンド予測への取り組みは磨かれてきており、これまでのところヒット率も
+           endeavors to predict trends I think is really good and we have so far a
+                                                                                             高いと認識しています。
+           good hit rate.
+
+           And then you need to invest in the different technology options.                  次に、あらゆる技術の展開に備えるべく投資をしていく必要があります。
+
+           Third, that's more the scaling aspect, as Doug mentioned. You also have
+                                                                                             第三に、ダグが述べたように、これはスケーリングの側面に関するものです。
+           to then think if you identify the industry problem, how to map that on
+                                                                                             業界の課題を特定した場合、それを当社のプラットフォームにどのようにス
+           our platform in a scaling way so that at the end everything fits together
+                                                                                             ケーラブルな形で適用し、最終的にすべてが統合され効果的になるかを考え
+           and becomes effective. That's usually the second step that we build
+                                                                                             る必要があります。そして次に、既存のインストール環境と互換性を有する
+           scalable solutions which are compatible with what was already
+                                                                                             スケーラブルなソリューションを構築します。これは顧客にとって大きな価
+           installed. That's a big value for our customers.
+                                                                                             値となります。
+
+
+           So, they can flexibly shift our capacity, and we use the assets, but also         その結果、顧客は当社のテストプラットフォームを将来ニーズに合わせて柔
+           allow that platform to be extended and scaled to future needs.                    軟に拡張し、活用しつづけることを可能にします。
+
+
+Lefever    Yes, I would add to that too. I'm always challenging Juergen on the               はい、その点について私も補足したいと思います。私は常にユルゲンに対し
+ラフィーバ      R&D, because I think more, right now, is better. But the other thing we           て研究開発について意見を述べています。なぜなら、現時点ではより多くの
+           can't do it all ourselves, is another point, especially now we have to            投資が望ましいと考えているからです。しかし、もう一つの重要な点は、す
+           approach things not from just a tester, but a test cell perspective, and so       べてを自社だけで行うことはできないということです。特に現在では、テス
+           we've engaged with very critical partners in the industry, and a lot of           タ単体ではなく、テストセルの視点から取り組む必要があります。そのため、
+           times, we are co-investing with those partners to develop that full test          当社は業界内の非常に重要なパートナーと連携しています。そして、多くの
+           cell solution. And so, sometimes, I view that as an R&D dollars or yen            場合、当社はパートナーと共同投資を行い、周辺装置も含めたフルのテスト
+           or euro in those cases, that doesn't necessarily show up in our direct            セル・ソリューションを開発しています。そのため、ケースバイケースとな
+           R&D, but it's certainly focused on development of critical solutions to           りますが、こういった支出は実質的には R&D 投資として見做していいと私
+           address these industry problems that Juergen spoke about.                         は考えますが、それが必ずしも当社の直接的な研究開発費として計上される
+                                                                                             わけではありません。しかし確実に、ユルゲンが述べた業界の課題に対応す
+                                                                                             るための重要なソリューション開発に焦点を当てています。
+
+
+
+
+[Engagement focus in R&D/研究開発における注力分野]
+                                              English                                                         日本語
+Mihashi    I think we are really extending through your CTO networks, and Doug,              当社は、CTO のネットワーク、そしてダグのネットワークを通じて、保有す
+三橋         your networks, on how we can expand the area, and the technologies                る技術と今後予想されるさまざまな技術とをどのように組み合わせ事業領
+           that need to be combined with all the upcoming technologies. But                  域を拡大していくか検討していると思います。しかし、当社の事業規模の拡
+           internally our operation is expanding as our business grows, so I think           大に伴い、社内のオペレーションも大きくなっており、内部的にもいくつか
+           we have some challenges internally too. How should we try to further              の課題があると考えています。将来にむけてどのように連携を深めるべきで
+           engage? So, from a CTO viewpoint, what are you focusing?                          しょうか。CTO の視点から、現在どの点に注力しているのかお聞かせくだ
+                                                                                             さい。
+Serrer     A couple of areas. First of all, we are continuously investing into what          いくつかの重点分野があります。まず、当社はプラットフォームとアーキテ
+ゼラー        we call refreshing the platform and the architecture. And those things            クチャの進化と呼んでいる分野に継続的に投資しています。これらの取り組
+           take a long time. So, you have been continuously investing.                       みには長い時間を要します。
+
+           Second is we run programs that we can run now our projects for
+                                                                                             次に、当社は現在、V93000 研究開発プロジェクトを複数のラボ（拠点）で
+           V93000 in various R&D labs. I mean it started all here in Germany, but
+                                                                                             実施するプログラムを行っています。これらはドイツで始まりましたが、現
+           now we also we have extended that to China, to Japan and we are also
+                                                                                             在では中国、日本へと拡大し、さらに米国でも共同プロジェクトを開始して
+           now starting some projects together in US. So this gives us the
+                                                                                             います。これにより、リソースを柔軟に配分し、要素を組み合わせ、相乗効
+           flexibility to allocate resources. And combine things, and leverage, and
+                                                                                             果を引き出すことができます。
+           get these energies out of it.
+
+           Next is there are investments into more software, automation and AI to
+                                                                                             さらに、ソフトウェア、オートメーション、AI へのさらなる投資を行い、社
+           make us internally more productive.
+                                                                                             内の生産性を高めていきます。
+           That‘s not only on the software area, but also on ASIC design, thermal            こうしたソフトウェア分野に加え、ASIC 設計、熱シミュレーション、機械
+
+                                                                                         6
+              simulations, mechanical simulations, and those are just a few points.            シミュレーションなど、これらはほんの一例です。
+
+ Lefever      Having those, very large R&D hubs here in Boeblingen and over in                 当社は、ここべーブリンゲンと日本に大規模な研究開発拠点を有しており、
+ ラフィーバ        Japan, those are our main our two big hubs, but I think what we'll see           これらが当社の二大拠点となります。しかし、将来的には、顧客の周辺に配
+              in the future is, some level of local R&D, specifically placed around            置されるローカルな研究開発活動がある程度必要になるのではないかとみ
+              customers, because the solutions are so complex that there has to be             ています。というのも、ソリューションが非常に複雑であるため、新しいソ
+              some touch of locality to help implement new solutions and so, I see us          リューションを実装するには、顧客の拠点に近い地域の技術支援が少なから
+              heading in that direction, into the next couple of years.                        ず必要であると考えるためです。当社は今後数年間でその方向に進んでいく
+                                                                                               と考えています。
+
+
+
+
+[Collaborating with internal and external partners / 社内外パートナーとの協働]
+                                                English                                                             日本語
+ Mihashi      So, next question. It's been 14 years since Verigy and Advantest have            それでは次の質問です。Verigy とアドバンテストが一緒になって 14 年が経
+ 三橋           been together. There are lots of discussions we've been through, and             ちました。これまで多くの議論を重ね、今ではかなり大きな組織、ひとつの
+              now we really have become big parties, one big family. On our way, or            大家族となりました。これまでの歩み、そしてこれからの将来を見据え、企
+              from here to future, we really need to think about cultures inside of the        業文化がもたらすものについて、経営視点で真剣に考察し、どのように表現
+              company- how we should express our company cultures as                           していくか考えていく必要があります。CTO としてほぼすべての事業部門
+              management. You, as CTO, are taking care of almost all Business Units,           を担当しているユルゲンから、コメントお願いします。
+              so, Juergen, you should start.
+
+ Serrer       I think we have this nice culture of teamwork and collaboration. And             当社には、チームワークと協働という素晴らしい文化があると考えていま
+ ゼラー          this is important because people need to talk. Not just between R&D,             す。これは重要です。なぜなら、コミュニケーションが必要不可欠だからで
+              to our sales people, to our application engineers to really find out what        す。それは、研究開発部門だけでなく、営業担当者やエンジニアとの間でも
+              is important or not. This is very important in this type of market.              行われ、何が重要で何がそうでないかを見極めるためです。このような市場
+                                                                                               環境では、これはとても大切なことだと考えています。
+
+              Second is collaboration with partners, that are openly discussing what
+                                                                                               次に、パートナーとの協働です。業界で直面する課題について率直に議論し
+              are the industry problems coming, and then turn it into solutions. As I
+                                                                                               あい、それをソリューションへと転換します。先ほど述べたように、この複
+              mentioned, part of the solution to address this complexity is the
+                                                                                               雑性に対応するソリューションとして「Distribution of test」が挙げられま
+              “Distribution of test.” So now we have to address that the different
+                                                                                               す。そのためには、異なる事業部門や製品群が相互に連携する必要があり、
+              Business Units or the different products are linked together. Therefore,
+                                                                                               協働やチームワークのスキル、文化が一層重要になりつつあります。これは、
+              this collaboration or skill or culture of collaboration and teamwork gets
+                                                                                               社外だけでなく社内においても、あてはまり、この企業文化に好奇心と情熱
+              more and more important, not only outside, but also inside. And this,
+                                                                                               という側面加わることが、アドバンテストの独自の特徴だと考えています。
+              paired with curiosity, the passion, I think that's a unique characteristic
+              of Advantest.
+
+
+
+
+[Corporate culture "INTEGRITY" / 企業文化「INTEGRITY」]
+
+
+
+
+                                                English                                                             日本語
+ Mihashi      I think we have initiated our activities, or our philosophy, "                   当社は「INTEGRITY」というコアバリューを浸透させる活動を 2018 年から
+ 三橋           INTEGRITY"I think we have communicated this in around 2018 and                   始め、現在 5 年以上経過しましたが、
+                                                                                                                 「INTEGRITY」の重要性を今も継続的
+              now it's been more than five years, and we have been expressing how              に発信し続けています。日々のコミュニケーション業務と「INTEGRITY」浸
+              important “INTEGRITY” is. This activity along with our daily                     透への取り組みは、私たちが最も重視する共通の価値観の醸成に役立ってい
+                                                                                           7
+           communication operations, was it helping our commonality of what we               るのでしょうか。
+           care the most?
+
+Serrer     Well, I mean, the results show it, right?                                         （「INTEGRITY」浸透の取り組みの効果は、）業績に表れているのではないで
+ゼラー                                                                                          しょうか？
+
+Lefever    Yes. I think this the concept that we started with “INTEGRITY” -each              そうですね。当社が「INTEGRITY」という概念を掲げて始めたこの取り組み
+ラフィーバ      letter of “INTEGRITY” has its own meaning that we focus on for                    は当社にとってとても重要だと考えています。
+                                                                                                                 「INTEGRITY」の各文字には、
+           different parts of the company- is super important to Advantest. I mean           それぞれ異なる意味があり、当社の各部門で重点的に取り組んでいます。当
+           our reputation is a company of high integrity and our vision is to be the         社は高い誠実さ（インテグリティ）を持つ企業としての評判を築いており、
+           most trusted and valued supplier and I think we're living up to that.             最も信頼され、価値あるサプライヤーになることをビジョンとしています。
+           We're not perfect, but it's not because we don't ever have high integrity.        そして、その実現に向けて着実に取り組んでいると考えています。もちろん
+           I feel confident saying that our culture is very well established and             完璧ではありませんが、それは必ずしも高い高潔さ（インテグリティ）が欠
+           something that we protect and hold very dear to us.                               けているからではありません。当社の文化は非常に確立されており、私たち
+                                                                                             が守り、大切にしているものであると自信を持って言えます。
+
+           I mean, we're a 71 year old company that now is a blend of Japan, who
+                                                                                             当社は 71 年の歴史を持つ企業であり、現在では、日本の長期的視点、サー
+           has this very long-term view, very service oriented, excellent
+                                                                                             ビス志向、優れたエンジニアリング技術、ドイツの精密な能力とプラットフ
+           engineering technology, the German precision capabilities and
+                                                                                             ォーム規律へのアプローチ、チームワーク、そして米国の「カウボーイ精神」
+           approach to platform discipline and the teamwork and then the
+                                                                                             に象徴される柔軟性と行動力を融合させています。多くの人が、これら三つ
+           Cowboys, from the US. But we've honestly, we've pulled this off as a
+                                                                                             の文化の最良の部分を取り入れることは難しいと疑っていた中で、当社はそ
+           company while a lot of people would have doubted we'd been able to
+                                                                                             れを見事に実現しました。さらに、東南アジア、台湾、韓国、そしてヨーロ
+           take the best parts of those three cultures. And then you add into it,
+                                                                                             ッパの他の地域の文化も加わっています。当社は、これら多様な文化を取り
+           Southeast Asia, Taiwan, South Korea, and other parts of Europe. I think
+                                                                                             入れ、アドバンテストの文化として融合させることに成功しました。そして、
+           we've done an excellent job in the company of taking those different
+                                                                                             その中心には常に「INTEGRITY」という企業文化があります。
+           cultures and putting them together inside of the Advantest culture,
+           again, which is built around this concept of “INTEGRITY”.
+
+
+
+[Extending company cultures / 企業文化のさらなる浸透と発展]
+                                              English                                                           日本語
+Mihashi    Doug, you've been a CEO for one and a half years. I think what you                ダグ、あなたが CEO になってから 1 年半が経ち、CEO 就任後の取り組みは
+三橋         said began to be supported after you became CEO. It has been more                 支持され始めています。一方、当社は創業から 70 年以上が経過しました。
+           than 70 years since our company was founded. There are many                       当社には日本文化に基づく多くの企業哲学があります。さらにこの先も当社
+           Japanese culture based philosophies. Now in one and a half years and              は多様性を高めていく中で、当社の企業文化をより積極的かつより謙虚なも
+           more in the future, we are really being diverse, but how should we                のにするには、どのように発展させるべきとお考えでしょうか。
+           extend our company cultures to be more aggressive and more humble?
+           Any comment?
+
+Lefever    Yes. Well, it has been a year and a half, a little less hair and a few more       はい、1 年半が経ちました。髪が少し薄くなり、体重は少し増えたと思いま
+ラフィーバ      kilos I'm sure, but I have enjoyed it, and one of the best parts of the job       すが、楽しんでいます。この仕事の最も素晴らしいことの一つは、世界各地
+           is going to the different offices around the world and spending time              のオフィスを訪れ、社員と時間を過ごすことです。デバイスの複雑さのみな
+           with our employees around the world. And for sure, the world, it's not            らず、今や世界は多くの側面でより複雑になっていると我々はよく話しま
+           just device complexity. We often talk about the world that's more                 す。そのため、当社内で明確にコミュニケーションを取り、戦略的に足並み
+           complex now in so many ways, and so, to have a network within                     を揃えるネットワークを構築することは容易ではありません。
+           Advantest that can communicate clearly and be on the same page
+           strategically is not an easy undertaking.
+
+
+
+
+                                                                                         8
+                                               English                                                             日本語
+Lefever     And so, we spend a lot of time in our management team and we have                  そこで、当社の経営チームは多くの時間を費やし、優れた三軸構造のマトリ
+ラフィーバ       this really wonderful, I would say Three-Way Matrix where we have                  クスを構築しました。第一に（製品、サポートといった）各事業の損益に責
+            our business units which are driving the P&L, we have the functional               任を持つ事業部門。第二に技術サポート、営業、管理、オペレーションなど、
+            groups that are supporting the different functions, service support,               各機能を支援する機能グループ。そして第三に地域ベースの組織がありま
+            sales, administration, operations, these things. And then we have sort of          す。これらが相互に協働することで、事業部門と機能部門のマトリクスに地
+            a third layer which is our regional based entities that then all cooperate         域性を加えています。
+            together and gives us the local blend on top of those business unit and
+            functional unit matrices.
+                                                                                               同様の取り組みを試みている企業は数多くあると思いますが、当社において
+            And so I am sure other companies have tried to do this, but I think it for
+                                                                                               は非常に効果的だったと考えています。つまり、地政学的な状況に応じて、
+            us it's really worked quite well to address how we scale if the business
+                                                                                               どの地域で事業を展開し、拡大するかという点において、とてもうまく対応
+            moves in one region versus the other, depending upon geopolitics, our
+                                                                                               できているからです。当社のグローバル拠点はすでに 16〜17 か国にまたが
+            footprint is already in, I think, 16 or 17 countries. So it's easy for us to
+                                                                                               っています。そのため、どこで事業が展開されるかに応じて、柔軟にスケー
+            scale depending upon where the business ends up happening. That's
+                                                                                               ルすることが可能です。これは今後さらに重要になると考えています。この
+            something, I think, we'll see more of. I think we should be proud of that
+                                                                                               三軸構造のマトリクスが多くの成功をもたらしたことを誇りに思うべきだ
+            three-way matrix that's led to a lot of success.
+                                                                                               と考えています。
+
+
+[Aiming towards the future/ 未来を見据えた取り組み]
+                                               English                                                              日本語
+Mihashi     Let me touch again about our “Automation of Test”. What do we need                 改めて私たちの取り組む「Automation of Test」について触れたいと思います。
+三橋          to do aiming forward towards the future, about this automations,                   ユルゲン、将来に向けてどのような取り組みが必要でしょうか。
+            Juergen?
+
+Serrer      Well, as I had already said, things become much more complex and the               先ほど申し上げたとおり、状況はますます複雑化し、Time to Market へのプレ
+ゼラー         time to market pressure continues to dominate everything. We have to               ッシャーが依然として課題の核心です。当社が提唱する、「Automation of
+            enable what we call automation, or an entire flow, and that's where we             Test」
+                                                                                                   、つまりテストフロー全体の網羅性を高める取り組みを進めています。
+            are working on.
+
+
+
+
+                                                                                           9
+                                             English                                                              日本語
+Serrer    This also is internally, but also working with partners to have all pieces          これを実現するため、社内で（組織横断的に）取り組むと同時に、
+                                                                                                                           （社外の）
+ゼラー       lined up and interacting efficiently, and that's the main direction. And            パートナーとも協力し、すべての要素を取り揃え、効率的に連携させること
+          this means we need to work with EDA companies to prepare the front                  が私たちの主なアプローチです。具体的には、（前述したように）テスト項
+          end, the test content, then our solutions need to be able to efficiently            目を効率的に分散、管理する当社のソリューションを前工程まで拡張させ、
+          manage and control the test content, and move content around to the                 テストフローの異なるテスト・インサーションでのテスト結果をフィードバ
+          different insertions and certainly the results, to feedback to process to           ックして、（設計における）改善すべき箇所を判断できるようにするため、
+          decide for improvement.                                                             EDA 企業との連携が必要となっています。
+
+
+                                                                                              こうした連携は、テストセルへの取り組みも含まれます。私は、ダイレベル
+          This also includes test cells. I strongly believe that die level probing
+                                                                                              のプロービングが必要になると強く信じています。熱制御は業界における主
+          will need to come. The thermal is one of the key challenges in the
+                                                                                              要な課題の一つですが、ウェーハ・テストであろうと、ファイナル・テスト
+          industry. So you also have to think about the test cell spec, whether
+                                                                                              であろうと、さらには品質保証の最後の砦としての SLT（システムレベルテ
+          that's wafer sort or whether that's in a final test, if not kilowatts of the
+                                                                                              スト）においても、多大なキロワット数の熱制御が求められる中、それぞれ
+          thermal control, vast thermal control, but also in SLT(System Level
+                                                                                              のテストセルの仕様について考慮する必要があります。これらすべての要素
+          Test) as a last quality gate all those pieces have to interact, and allow
+                                                                                              が連携し、顧客が Time to Market、品質レベル、生産性を達成できるよう
+          our customers to achieve the time to market, the quality levels, and the
+                                                                                              にする必要があります。これが当社の進むべき主な方向性です。
+          productivity. So, this is the main direction where we are heading.
+
+Lefever   I would just add. If you look at our history now going back again to the            補足させていただきます。当社の歴史を振り返り、初期の中期計画まで遡っ
+ラフィーバ     early mid-term planning, we've basically been marching toward this                  てみると、私たちは基本的にこの究極的な目標に向かって歩み続けてきたと
+          ultimate goal. So, we take the decision in 2017/2018 to really double               言えます。2017 年から 2018 年にかけて、私たちは半導体テストに本格的
+          down on semiconductor tests. We felt like that was going to be a place,             に注力するという決断を下しました。そこには十分な可能性があり、当社が
+          there's enough there for us to focus on that.                                       集中すべき領域だと考えたのです。
+
+          And then, as we went forward, we picked up different pieces of the
+                                                                                              その後、（計画を）進めていく中で、さまざまなソリューションの要素を取
+          solutions, right now we've been integrating and enabling this
+                                                                                              り入れてきました。現在では、それらを統合し、
+                                                                                                                   「Automation of Test」とし
+          automation of solutions, and ultimately there'll be this back end flow
+                                                                                              てソリューション（の提供）を実現しつつ、最終的には、後工程フローを全
+          and it'll be different for different devices and even different customers.
+                                                                                              網羅していきます。そしてそれは、デバイスごと、顧客別にそれぞれ展開で
+          But at that point Advantest will have successfully put this capability in
+                                                                                              きることを可能としたいと考えています。なお、こういった「Automation of
+          place where we can enable this automation, and so, ultimately the goal
+                                                                                              Test」の取り組みを進め続けることで、
+                                                                                                                 （５年前と比べると現時点ではさら
+          of the company is to really be able to provide this enablement of the
+                                                                                              に複雑な）後工程フローを提供するという究極的な目標に近づきつつありま
+          back end flow that is so much more complicated now than it was just
+                                                                                              す。
+          five years ago.
+
+Mihashi   Yes, I think we keep telling, it's been so complex. So, I think this kind           確かに、私たちは一貫して「複雑化している」と強調してきました。このよ
+三橋        of complexity is really the thing that's going to keep driving our                  うな複雑性こそが、今後も当社の活動を推進し続ける原動力になるでしょ
+          activities. But also this is one of the biggest hurdles for our customers           う。しかし、これは顧客にとって最大のハードルの一つでもあるため、当社
+          so we keep focusing on this kind of technologies and the industries of              はこの種の技術や半導体産業の複雑性への取り組みに引き続き邁進してい
+          complex semiconductors.                                                             るのです。
+
+
+
+
+                                                                                         10
+[Closing/ クロージング]
+                                                              English                                                                                          日本語
+ Mihashi               Well, it was good communications and many insights and inputs. Thank                     多くの洞察、意見の交換ができ、充実したコミュニケーションとなりました。
+ 三橋                    you so much. And I think we now are moving to Q&As, but Doug, any                        誠にありがとうございます。ここから質疑応答に移りたいと思いますが、ダ
+                       other comment at the end?                                                                グ、最後に何かコメントはありますか？
+
+
+ Lefever               Yes, I'll just say that there's never been a better time in our careers for              私たちのキャリアにおいて、テスト業界がこれほどの追い風に恵まれた時期
+ ラフィーバ                 test, and we've lived through some experiences, so we've seen lots of                    はかつてありませんでした。私たちは長年この業界に身を置き、多くの変化
+                       changes and ups and downs, and we never fully expected things to get                     や浮き沈みを経験してきましたが、現状がここまで進化するとは予想しきれ
+                       to where they are already now.                                                           ていませんでした。
+
+                       But the company has just been investing continuously for this time. And
+                                                                                                                当社はこの間、継続的に投資を行ってきました。そして先ほど申し上げたよ
+                       like I said, we're kind of in this period of accelerated growth where test
+                                                                                                                うに、当社は加速的な成長期にあります。今後も半導体のバリューチェーン
+                       is just going to continue to be a value-added part of the semiconductor
+                                                                                                                において、テストは付加価値を生み出す要素であり続けるでしょう。当社は、
+                       value chain and we feel well positioned going forward as a company.
+                                                                                                                今後の展開においても非常に良いポジションを確保できると感じています。
+
+Note
+1.     This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These statements include, among other things, the discussion of Advantest’s
+       business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of forward-looking
+       terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks, uncertainties and
+       other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed or implied by such forward-looking statements. Except as
+       required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+2.     The content of this script may not necessarily correspond to the Fireside Chat.
+
+
+※
+1.      本資料には、将来の事象についての、当社の現時点における期待、見積りおよび予測に基づく記述が含まれております。 これらの将来の事象に係る記述は、当社における実際の財務状況や活動状
+        況が、当該将来の事象に係る記述によって明示されているものまたは暗示されているものと重要な差異を生じるかもしれないという既知および未知のリスク、不確実性その他の要因が内包されてお
+        り、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、またはその他の理由により、将来予想に関する記述
+        を更新または修正することはありません。
+2.      本スクリプトの内容は Fireside Chat と必ずしも一致しない場合があります。
+
+
+
+
+                                                                                                           11
+

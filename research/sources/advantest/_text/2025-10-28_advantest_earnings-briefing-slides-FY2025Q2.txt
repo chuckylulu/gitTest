@@ -1,0 +1,659 @@
+Q2 FY25 (Three months ended September 30th, 2025)
+Financial Briefing
+2025年度(2026年3月期) 第2四半期決算説明会
+
+
+October 28th, 2025 Advantest Corporation
+2025年10月28日 株式会社アドバンテスト
+
+
+
+
+All Rights Reserved - ADVANTEST CORPORATION
+Note / ご注意
+Accounting Standards                                                                          会計基準について
+ – Our results and outlook, described in this presentation, have been prepared in              – 本プレゼンテーション資料に記載されている実績や見通し数値は、国際会計基準
+   accordance with IFRS.                                                                         (IFRS)に基づいて作成しています。
+
+Cautionary Statement with Respect to Forward-Looking Statements                               将来の事象に係る記述に関する注意
+ – This presentation and any information provided orally by Advantest                          – 本プレゼンテーション資料およびアドバンテスト代表者が口頭にて提供する情報には、将
+   representatives contains “forward-looking statements” that are based on                       来の事象についての、当社の現時点における期待、見積りおよび予測に基づく記述が含
+   Advantest’s current expectations, estimates and projections. These                            まれております。これらの将来の事象に係る記述は、当社における実際の財務状況や活
+   statements include, among other things, the discussion of Advantest’s                         動状況が、当該将来の事象に係る記述によって明示されているものまたは暗示されてい
+   business strategy, outlook and expectations as to market and business                         るものと重要な差異を生じるかもしれないという既知および未知のリスク、不確実性その
+   developments, production and capacity plans. Generally, these forward-                        他の要因が内包されており、当社としてその実現を約束する趣旨のものではありません。
+   looking statements can be identified by the use of forward-looking terminology                法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、また
+   such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,”                   はその他の理由により、将来予想に関する記述を更新または修正することはありません。
+   “should” and similar expressions. Forward-looking statements are subject to
+   known and unknown risks, uncertainties and other factors that may cause                    本資料の利用について
+   Advantest’s actual results, levels of activity, performance or achievements to              – 本プレゼンテーション資料に記載されている情報は、各国の著作権法、特許法、商標法、
+   be materially different from those expressed or implied by such forward-                      意匠法等の知的財産権法その他の法律及び各種条約で保護されています。事前に当
+   looking statements. Except as required by law, we do not intend to update or                  社の文書による承諾を得ない限り、これらの情報を使用(改変、複製、転用等)すること
+   revise any forward-looking statements as a result of new information, future                  を禁止します。
+   events or otherwise.
+
+Use of These Materials
+ – The information contained in this presentation is protected under intellectual
+   property laws, such as copyright law, patent law, trademark law and design
+   law, and other laws and statutes of each country and various treaties. Any use
+   (modification, copying, diversion, etc.) of this information, that is not approved
+   in writing by our company in advance, is forbidden.
+
+
+
+2                                                                      All Rights Reserved - ADVANTEST CORPORATION
+Summary / サマリー
+    •   Sales in Q2 FY25 exceeded our July forecast and                     •     FY25 Q2の売上は、7月時点の予想を上回り、四半期最高業
+        remained close to quarterly record levels                                 績に匹敵する水準を継続
+
+    •   Operating income and net income beat our July                       •     営業利益、当期利益も7月時点の予想を上回ったが、製品構
+        forecast, with the QoQ decline due mostly to product                      成の変化と販売管理費の増加により、前四半期比では減少
+        mix and an increase in SG&A
+
+    •   We are raising our full-year guidance for FY25                      •     上期の業績が予想を上回ったこと、および下期に想定してい
+        following our stronger-than-expected 1H results                           た調整がより緩やかになる見通しを踏まえ、FY25通期の業績
+        and because the originally expected digestion in 2H                       予想を上方修正
+        of FY25 is now expected to be more moderate
+
+    •   We are also raising our 3-year Mid-Term Plan                        •     AI関連需要の堅調な推移、供給能力の強化、市場シェアの拡
+        financial targets to reflect the robustness of AI-related                 大を反映し、3ヵ年の中期経営計画における財務目標も引き
+        demand, enhanced supply capabilities, and our                             上げ
+        market share outperformance
+
+    •   Accelerate growth investments strategically in                      •     技術開発やテスト自動化、サプライチェーン、近縁市場など
+        technology development and automation of test,                            への成長投資を戦略的に推進し、業界におけるリーダーシッ
+        supply chain, and adjacent areas to maintain our                          プの維持を図る
+        leadership position
+
+
+3                                                     All Rights Reserved - ADVANTEST CORPORATION
+Tester Market Trends: Oct. 2025 Outlook / テスタ市場の動向 <2025年10月時点の見方>
+    Business Environment                                                                 事業環境
+    • The semiconductor demand is expected to continue to be driven                      • 半導体の需要は、引き続き、主にAI関連アプリケーションがけん引すると予
+      mainly by AI-related applications                                                    想
+    • Visibility has improved although some risks remain such as                         • 地政学的リスクの継続や急激な為替変動リスクなど、一部のリスクは残存
+      potential and ongoing geopolitical risks and the possible risk of                    するものの、ビジビリティは改善
+      sharp exchange rate fluctuations
+                                                                                         • AIデータセンタ能力増強がグローバルに進む中、当社の事業環境
+    • Confidence in a favorable business environment continues                             は引き続き良好に推移する公算
+      amidst the ongoing build out of the global AI data center
+      infrastructure
+
+    Tester Market Forecast                                                               テスタ市場
+    • Raised CY25 SoC tester market size forecast as AI-related                          • AI関連向けの需要は従前の予想を超過、CY25のSoCテスタ市場規模予
+      demand drives the market more than previously expected                               測を上方修正
+
+    • Narrowed the range of CY25 memory tester market size                               • CY25メモリテスタ市場規模予測の範囲を縮小しつつ、中央値は据え置き
+      forecast, keeping the mid-point unchanged                                                                                          Source: Advantest
+
+                           Market Size / 市場規模                        CY24 Actual / 実績                              CY25 Estimate / 推定
+                    SoC Testers / SoCテスタ
+                                                                         $   4.1B / 41億ドル                      $   6.5 - 6.9B / 65 - 69億ドル
+                                                (Approx. / 約)                                                      ($5.7 - 6.3B / 57 - 63億ドル *)
+
+                    Memory Testers / メモリテスタ
+                                                                         $   1.9B / 19億ドル                      $   1.8 - 2.1B / 18 - 21億ドル
+                                                (Approx. / 約)                                                      ($1.7 - 2.2B / 17 - 22億ドル *)
+                   * Estimate as of July 2025 / 2025年7月時点の当社推定
+
+4                                                                All Rights Reserved - ADVANTEST CORPORATION
+Financial Results for Q2 FY25 & Full-Year Forecast
+2025年度第2四半期決算報告および2025年度通期見通し
+
+Hisako Takada Senior Executive Officer, CFO
+高田 寿子 経営執行役員 CFO
+
+
+All Rights Reserved - ADVANTEST CORPORATION
+Q2 FY25 Summary of Results / 四半期業績推移
+
+                                                   FY24                                                                    FY25
+           （JPY B / 10億円）                                                                                   Q2              QoQ / 前四半期比               YoY / 前年同期比
+                                     Q1       Q2          Q3           Q4             Q1         Forecast        Results   Change                    Change
+                                                                                                                                           (%)                     (%)
+                                                                                                     予想           実績       増減額                       増減額
+
+    Sales / 売上高                      138.7    190.5     218.2         232.3          263.8          237.2         262.9        -0.8         -0.3%      +72.5     +38.0%
+
+    Gross Profit / 売上総利益              76.9    110.1       118.9       139.2          171.6               -        163.7        -8.0         -4.7%      +53.6     +48.6％
+           Gross Margin / 売上総利益率     55.4%    57.8%       54.5%        59.9%          65.1%              -         62.2%    -2.9pts                   +4.4pts
+
+    Operating Income / 営業利益           31.3     63.6       69.2          64.1         124.0            96.3        108.4      -15.5         -12.5%      +44.9     +70.7％
+         Operating Margin / 営業利益率    22.6%    33.4%       31.8%        27.6%          47.0%          40.6%         41.3%    -5.7pts                   +7.9 pts
+
+    Income Before Tax / 税引前利益         31.9     60.7       70.6          61.6         121.4            96.1        109.1      -12.2         -10.1%      +48.4     +79.8％
+
+    Net Income / 当期利益                 23.9     45.4       51.9          40.0           90.2           71.8         79.6      -10.5         -11.7％      +34.2     +75.1％
+        Net Income Margin / 当期利益率    17.2%    23.9%       23.8%        17.2%          34.2%          30.3%         30.3%    -3.9 pts                  +6.4 pts
+
+                            1 US$                                                                                                                    JPY 8 Appreciation
+                                       153      154         149            154            146             140        146               -
+    Exchange Rate (JPY)     1米ドル                                                                                                                           8円 円高
+    為替レート (円)               1 Euro                                                                                         JPY 8 Depreciation        JPY 2 Depreciation
+                            1ユーロ
+                                       165      168         162            160            162             155        170         8円 円安                     2円 円安
+
+
+    Dividend Per Share (JPY)              -        19           -           20               -              -         29                         -                   +10
+    1株当たり配当額 (円)
+
+
+
+
+6                                                           All Rights Reserved - ADVANTEST CORPORATION
+Quarterly Sales by Segment / 四半期売上高 事業セグメント別
+                                                                                                                     Test Systems Breakdown
+                                                                                                                     テストシステム 内訳                                    240.6       237.4
+（JPY B / 10億円）
+                                                                      263.8              262.9                                              194.1       204.1       15.8        19.8
+                                                                                                                                                                    33.5
+                                                                                                                                 167.3       26.5
+                                                                                                                                                         20.2                   43.9
+                                                      232.3                                                                                              35.1
+                                    218.2                                                                                         21.8
+                                                                                                                      117.3                  54.6
+                                                                                                                                  36.0
+                                                                                                                      16.2
+                     190.5                                                                                            32.0                                         191.3       173.7
+                                                                                                                                                        148.8
+                                                                                                                                 109.5      113.0
+                                                                                                                      69.1
+      138.7                                                                                                            FY24                                         FY25
+                                                                      240.6              237.4                          Q1         Q2         Q3          Q4         Q1          Q2
+                                                       204.1
+                                     194.1                                                                               ■ Other Systems
+                                                                                                                           その他システム
+                                                                                                                                           ■ Memory Test Systems
+                                                                                                                                             メモリテストシステム
+                                                                                                                                                                   ■ SoC Test Systems
+                                                                                                                                                                     SoCテストシステム
+                      167.3
+       117.3                                                                                                         Services & Others Breakdown
+                                                                                                                     サービス他 内訳
+
+                                                                                                                                                         28.2                  25.6
+                                                                                                                      21.4       23.2       24.1                    23.2
+                                      24.1              28.2                              25.6                                                           14.3
+       21.4           23.2                                            23.2                                                        14.4       13.9                   13.9        15.4
+                                                                                                                      13.1
+       FY24                                                           FY25
+        Q1              Q2             Q3                Q4            Q1                   Q2                                               10.2        13.9        9.3        10.2
+                                                                                                                       8.3        8.8
+                                                                                                                       FY24                                         FY25
+                               ■ Test Systems   ■ Services & Others                                                     Q1         Q2         Q3          Q4         Q1          Q2
+                                 テストシステム          サービス他
+                                                                                                                              ■ Support Services / サポート・サービス ■ Others / その他
+
+    Note: Intersegment transactions have been eliminated from total / 合計にはセグメント間の内部取引の消去分が含まれます
+
+7                                                                      All Rights Reserved - ADVANTEST CORPORATION
+Quarterly Sales by Region (Ship to Region) / 四半期売上高 地域(出荷先)別
+
+        （JPY B / 10億円）
+                                                                                        263.8         262.9
+                                                                                                3.8           5.2
+                                                                       232.3             32.7
+                                           218.2                                  2.5                  56.1
+                                                       3.4               23.7
+                            190.5
+                                    4.6                                                                             ■ Japan / 日本
+                                             54.9
+                                                                                                                    ■ S. Korea / 韓国
+                             45.0                                                                                   ■ Taiwan / 台湾
+              138.7                                                                     162.1
+                                                                        133.1                         115.4         ■ China / 中国
+                      5.3
+                                             78.8                                                                   ■ Americas / 米州
+               33.4
+                             73.1                                                                                   ■ Europe / 欧州
+                                                                                                                    ■ Other / その他
+               41.5
+
+                                             51.8                                                      52.1
+                             42.7                                        44.6            39.0
+               36.0
+                                             12.6                                                      11.3
+                9.1          12.4                                        13.0            9.6                  6.1
+                    3.9             5.4                5.0                        5.7           4.4
+                9.5           7.3            11.7                         9.7           12.2           16.7
+               FY24                                                                     FY25
+                Q1           Q2               Q3                         Q4              Q1            Q2
+
+
+
+
+8                                         All Rights Reserved - ADVANTEST CORPORATION
+Sales, Gross Profit, Operating Income / 売上高、売上総利益、営業利益
+
+                          （JPY B / 10億円）
+                                                                                                                                      263.8                   262.9
+
+                                                                                                           232.3                              65.1%
+                                                                                218.2                                                                                  62.2%
+                                                                                                                   59.9%
+                                                              57.8%
+                                   55.4%              190.5                               54.5%                                                      47.0%
+                                                                                                                                            171.6
+                                                                                                                                                                    163.7 41.3%
+                            138.7                                                                                  139.2
+                                                                     33.4%                        31.8%                                            124.0
+                                                                                                                            27.6%                                           108.4
+                                                                                          118.9
+                                            22.6%            110.1
+                                     76.9
+                                                                      63.6                        69.2                      64.1
+
+                                            31.3
+
+
+                                    FY24                                                                                                      FY25
+                                     Q1                        Q2                          Q3                          Q4                      Q1                      Q2
+                                                             Sales         Gross Profit         Operating Income   ■
+                                                                                                                       Gross Margin    ●
+                                                                                                                                           Operating Margin
+                                                             売上高           売上総利益                営業利益                   売上総利益率              営業利益率
+
+    Note: Operating income includes an impairment loss of approximately JPY 21.4 billion on goodwill and intangible assets in Q4 FY24, and a gain of approximately JPY 2.5 billion from the partial
+    divestiture of a business in Q1 FY25 / FY24 Q4の営業利益にはのれんおよび無形資産の減損損失約214億円、FY25 Q1の営業利益には事業の一部譲渡による譲渡益約25億円を含みます
+
+9                                                                                    All Rights Reserved - ADVANTEST CORPORATION
+Investments, Cash Flow / 投資等、キャッシュ・フロー
+＜Investments / 投資等＞                                                                            ＜Cash Flow / キャッシュ・フロー＞
+  ■ R&D Expenses / 研究開発費                                                                                    Cash flows from operating activities / 営業キャッシュ・フロー
+  ■ Capital Expenditure / 設備投資                                                                              Cash flows from investing activities / 投資キャッシュ・フロー
+  ■ Depreciation & Amortization / 減価償却費                                                               ●     Free Cash Flows / フリー・キャッシュ・フロー
+
+
+（JPY B / 10億円）                               20.0                                                  （JPY B / 10億円）
+                                                                                                                                                     115.6
+                                                                           18.3
+ 17.3          17.1          17.0                           17.1                                                                                                                      93.0
+                                                                                                                                                             89.8
+                                                                                                                                       77.5
+                                                                                                                         65.2                                                               79.3
+                                                                                                                                            72.9                      46.9
+                                                                                                                                61.8
+                                                                               9.4                     27.7
+                                                 7.5                                                                                                                     43.5
+                                                                  6.1                                         19.3
+                                  5.2
+     4.4          3.9
+         7.1         7.2               6.7            6.1            6.1            6.3                                     -3.4            -4.6                            -3.4
+                                                                                                             -8.4
+                                                                                                                                                                                           -13.7
+                                                                                                                                                           -25.8
+     FY24                                                         FY25                                     FY24                                                          FY25
+      Q1           Q2             Q3             Q4                Q1          Q2                           Q1             Q2             Q3              Q4              Q1              Q2
+     12.5%        9.0%            7.8%           8.6%             6.5%        6.9%
+                         R&D Expenses as a % of Total Net Sales                                     * Free Cash Flows＝Cash flows from operating activities + Cash flows from investing activities
+                                    研究開発費売上高比率                                                        フリー・キャッシュ・フロー＝営業キャッシュ・フロー＋投資キャッシュ・フロー
+
+
+
+10                                                                         All Rights Reserved - ADVANTEST CORPORATION
+Financial Position / 連結財政状態
+＜Assets / 資産の部＞                              971.5                                          ＜ Liabilities & Equity / 負債・資本の部＞                       971.5
+                                889.9                                                                                      889.9
+ （JPY B / 10億円）
+                   854.2                                                                     （JPY B / 10億円）
+                                                                                                                 854.2                               117.2 Trade & Other Payables
+                                                                                                                                                           営業債務およびその他の債務
+
+
+                                             298.2       Cash & Cash Equivalents                                                        98.7                 Short-term borrowings
+      762.1                                              現金および現金同等物                                          762.1         107.1                      74.9   短期借入金
+
+                                273.4                                                                                                   74.5                 Other Current Liabilities
+                   262.5                                                                                       96.0        75.0                      131.5 その他の流動負債
+      167.2                                                                                                                             104.4                      Other Non-Current
+                                                                                                               78.3        127.4                      37.6         Liabilities
+                                             163.7       Trade & Other Receivables                                                      38.1          32.4         その他の非流動負債
+                                                         営業債権およびその他の債権                       Long-term
+      114.1                     128.0                                                        borrowings        74.3                     32.4          48.4       Share Capital / 資本金
+                   113.0                                                                     長期借入金                         38.2         47.6
+                                                                                                               37.7        32.4                                  Share Premium
+                                                                                                                                                                 資本剰余金
+                                                                                                               32.4        46.7
+                                             210.0       Inventories                                           45.0
+      218.5        209.7        209.3                    棚卸資産
+
+                                                           Other Current Assets
+                                                           その他の流動資産
+                                 17.2         22.2                                                                                                           Retained Earnings &
+       19.8         14.6                                                                                                                494.2        529.5 Others
+                                                         PP&E and Right-of-use assets                                                                        利益剰余金等
+                    96.9         97.4        106.0       有形固定資産および使用権資産                                                    427.4
+       92.1                                                                                                   398.4
+                                              78.6       Goodwill & Intangible Assets
+                    78.4         76.3                    のれんおよび無形資産
+       96.2
+       54.2         79.1         88.3         92.8       Other Non-Current Assets
+                                                         その他の非流動資産
+
+     09/30/2024   03/31/2025   06/30/2025   09/30/2025                                                       09/30/2024   03/31/2025   06/30/2025   09/30/2025
+                                                         Equity Attributable to Owners of the Parent
+                                                         親会社の所有者に帰属する持分
+                                                                                                                475.8       506.5        574.2       610.3
+                                                         Ratio of Equity Attributable to Owners of
+                                                         the Parent / 親会社所有者帰属持分比率                              62.4%       59.3%       64.5%        62.8%
+
+
+
+11                                                                     All Rights Reserved - ADVANTEST CORPORATION
+  FY25 Forecast / FY25業績予想
+                                                                 FY24                                    FY25 Forecast 予想                                              vs. FY24
+                                                                                                                                                                                                    Forecast
+                                                                                                                   1H                                                                               as of July
+                                                                                                                                                                                                                        Change
+ （JPY B / 10億円）                                                Results                                                                                           Change                                                    修正額
+                                                                                                                 Results           2H                                               (%)            7月時点予想
+                                                                   実績               Q1              Q2                                                             増減額
+                                                                                                                  実績
+Sales / 売上高                                                        779.7          263.8           262.9           526.7           423.3            950.0            +170.3        +21.8%                835.0                      +115.0
+
+Operating Income / 営業利益                                            228.2          124.0           108.4           232.4           141.6            374.0            +145.8        +63.9%                300.0                      +74.0
+                     Operating Margin / 営業利益率                       29.3%           47.0%           41.3%          44.1%           33.4%             39.4%          +10.1pts                             35.9%                     +3.5pts
+
+Income Before Tax / 税引前利益                                          224.8          121.4           109.1           230.5           141.0            371.5            +146.7        +65.3%                297.0                      +74.5
+
+Net Income / 当期利益                                                  161.2             90.2           79.6          169.8           105.2            275.0            +113.8        +70.6%                221.5                      +53.5
+                   Net Income Margin / 当期利益率                        20.7%           34.2%           30.3%          32.2%           24.9%             28.9%           +8.2pts                             26.5%                     +2.4pts
+
+Basic EPS（JPY) / 基本的一株当たり利益(円) *1                               218.67 123.14 109.03 232.19 144.61                                               378.06           +159.39         +72.9%              302.71                   +75.35
+
+R&D Expenses / 研究開発費                                                 71.4            17.1           18.3            35.4            43.6              79.0             +7.6       +10.6%                  76.5                       +2.5
+Capital Expenditure / 設備投資                                           21.0             6.1            9.4            15.5            15.5              31.0            +10.0       +47.6%                  26.0                       +5.0
+Depreciation & Amortization / 減価償却費                                  27.1             6.1            6.3            12.4            14.6              27.0              -0.1        -0.4%                 26.0                       +1.0
+                                                   1 US$                                                                                                          JPY 10 Appreciation                               JPY 1 Depreciation
+                                                                        153            146             146             146             140              143                                                  142
+Exchange Rate (JPY) *2                             1米ドル                                                                                                                  10円 円高                                           1円 円安
+為替レート (円)                                          1 Euro                                                                                                         JPY 3 Appreciation                                JPY 4 Depreciation
+                                                   1ユーロ
+                                                                        164            162             170             166             155              161               3円 円高
+                                                                                                                                                                                                             157          4円 円安
+
+*1: Basic earnings per share in forecast is calculated deeming the average number of outstanding shares as the number of issued and outstanding shares as of September 30 th, 2025 excluding the number of treasury shares as of
+   September 30th, 2025 / 予想における「基本的EPS」は、2025年9月30日現在の「期末発行済株式数(自己株式を含む)」から「期末自己株式数」を除いた株式数を、期中平均株式数とみなして算定しております
+*2: Our latest forecast for the impact of exchange rate fluctuations on FY25 operating income is plus JPY 2.9 billion per 1 yen of JPY depreciation vs USD, and minus JPY 0.3 billion per 1 yen of JPY depreciation vs. the Euro
+   為替レート変動がFY25の営業利益に与える影響の最新見通しは、対米ドルが1円安時+29億円です。対ユーロは-3億円です
+
+
+  12                                                                                           All Rights Reserved - ADVANTEST CORPORATION
+FY25 Outlook by Segment / FY25 事業別見通し
+
+ Sales Trends / 売上推移
+（JPY B / 10億円）
+
+ ■ Other Systems / その他システム                              (Forecast as of July /
+                                                            7月時点予想)                    Test Systems / テストシステム事業
+ ■ Memory Test Systems / メモリテストシステム
+ ■ SoC Test Systems / SoCテストシステム
+                                                                                       ＜ SoC Test Systems / SoCテストシステム＞
+                                        847.0                (737.0)
+
+                                          70.0                (65.0)                      •    Sales growth is expected primarily from AI-related applications
+                 682.8                                                                          AI関連向けを中心に、売上の伸長を予想
+                                         153.0               (139.0)
+                 84.7
+
+                 157.7
+                                                                                                 Applications / アプリケーション              FY22   FY23   FY24   FY25e
+                                                                                                  Computing / Communications
+                                                                                                        コンピューティング・通信                  65%    60%    90%    90%
+                                         624.0               (533.0)                     Automotive / Industrial / Consumer / DDIC*
+                                                                                                      車載・産業機器・民生・DDIC*                35%    40%    10%    10%
+                 440.4                                                                 Numbers are rounded to the nearest 5% / 内訳比率は実数ではなく、5％近似値で丸めて表示しています
+                                                                                       * DDIC: Display Driver IC / ディスプレイ・ドライバIC
+
+
+
+
+                 FY24                    FY25e
+                                      (Forecast / 予想)
+
+
+
+13                                                                        All Rights Reserved - ADVANTEST CORPORATION
+FY25 Outlook by Segment / FY25 事業別見通し
+
+ Sales Trends / 売上推移
+（JPY B / 10億円）
+
+ ■ Other Systems / その他システム                              (Forecast as of July /
+                                                            7月時点予想)                    Test Systems / テストシステム事業
+ ■ Memory Test Systems / メモリテストシステム
+ ■ SoC Test Systems / SoCテストシステム
+                                                                                       ＜ Memory Test Systems / メモリテストシステム ＞
+                                        847.0                (737.0)
+
+                                          70.0                (65.0)                      •    Sales are expected to remain elevated particularly for AI-
+                 682.8                                                                         related high-performance DRAM
+                                         153.0               (139.0)
+                                                                                                AI関連の高性能DRAM向けを中心に高水準な売上を維持すると予想
+                 84.7
+
+                 157.7
+                                                                                                  Applications / アプリケーション       FY22    FY23     FY24    FY25e
+
+                                                                                                                 DRAM           60%     90%      95%     90%
+                                         624.0               (533.0)                           Non-Volatile Memory / 不揮発性メモリ    40%     10%      5%      10%
+                                                                                        Numbers are rounded to the nearest 5% / 内訳比率は実数ではなく、5％近似値で丸めて表示しています
+                 440.4
+
+
+
+
+                 FY24                    FY25e
+                                      (Forecast / 予想)
+
+
+
+14                                                                        All Rights Reserved - ADVANTEST CORPORATION
+FY25 Outlook by Segment / FY25 事業別見通し
+
+ Sales Trends / 売上推移
+（JPY B / 10億円）
+
+ ■ Support Services / サポート・サービス
+                                                                                   Services & Others / サービス他
+ ■ Others / その他
+                                                                                   ＜ Support Services / サポート・サービス＞
+
+                                                                                      •    Demand for maintenance service is firm due to steady
+                                                                                           growth of our installed base
+                                                    (Forecast as of July /
+                                                        7月時点予想)                             当社製品の設置台数の着実な伸びにより、サポート・サービスの需要は堅調
+                                    103.0                 (98.0)
+                  96.9
+                                                                                   ＜ Others / その他＞
+
+                  55.7               60.0                 (58.0)
+                                                                                      •    Sales of test interface boards are growing steadily, while
+                                                                                           nano-technology business is facing softness in demand
+                                                                                            ナノテクノロジー製品は需要が軟調であるものの、テスト用インタフェースボード
+                                                                                            の売上は着実に伸張
+                  41.2               43.0                 (40.0)
+
+
+                  FY24               FY25e
+                                  (Forecast / 予想)
+
+
+
+15                                                                    All Rights Reserved - ADVANTEST CORPORATION
+The 3rd Mid-term Management Plan (MTP3) update
+第3期中期経営計画（MTP3、 FY24 - FY26）アップデート
+
+Douglas Lefever Representative Director, Senior Executive Officer, Group CEO
+ダグラス ラフィーバ 代表取締役 兼 経営執行役員 Group CEO
+
+
+All Rights Reserved - ADVANTEST CORPORATION
+MTP3 Update / MTP3改定について
+•    Raised MTP3 financial targets                                            •     MTP3経営指標を上方修正
+
+     -   Growth in volume and complexity of HPC/AI                                   -     HPC/AI用半導体の数量増加と複雑化の進展を受け、
+         semiconductors generating higher than initially                                   半導体テスト需要は当初予想を上回る水準に拡大し
+         expected tester demand                                                            て推移
+
+     -   Market share gains outpaced initial assumptions due                         -     優れた顧客提案とサポート、製品供給能力の強化を
+         to enhanced supply capabilities in addition to                                    背景に、ATE市場における当社シェアの伸長も事前
+         superior offering and customer support                                            想定を超過
+
+     -   Confidence continues in a favorable business                                -     AIデータセンタ能力の増強がグローバルに進む中、
+         environment through MTP3 amidst the ongoing build                                 当社の事業環境はMTP3期間全体にわたり良好なも
+         out of the global AI data center infrastructure                                   のとなる公算
+
+•    Maintain MTP3 strategies                                                 •     MTP3における戦略は不変
+
+     -   MTP3 initiatives are advancing steadily; no major                           -     MTP3における各施策の進捗には手ごたえを感じて
+         changes to strategic direction                                                    おり、これまでの方向性を継続
+
+     -   Shareholder return policy remains unchanged                                 -     株主還元もこれまでの方針を継続
+
+     -   Aggressively driving growth investments                                     -     積極的に成長投資を推進
+
+
+17                                                   All Rights Reserved - ADVANTEST CORPORATION
+Revision of MTP3 Targeted Management Metrics (FY24 - FY26 Avg.)
+MTP3経営指標（2024 - 2026年度平均）の修正
+
+
+                                                                                Announced in Jun. 2024                                                                 Revised in Oct. 2025
+                                                                                   Previous Targets                                                                       New Targets*
+                                                                                      前回(2024年6月)公表値                                                                      今回(2025年10月)修正値
+
+
+                         Sales / 売上高                                           JPY    560 - 700B                                                            JPY 835                    -        930B
+     Operating Profit Margin / 営業利益率                                                      22 - 28%                                                               33                    -        36%
+                 Net Income / 当期利益                                                JPY     93 - 147B                                                         JPY 207                    -        248B
+                    ROIC / 投下資本利益率                                                        18 - 28%                                                               34                    -        39%
+           Basic EPS / 基本的一株当たり利益                                              JPY    127 - 202                                                             JPY 284                    -        341
+      * The exchange rates used in the previous announcement were 140 JPY to the US dollar and 155 JPY to the Euro. The revised targets use the same exchange rates for FY25 Q3-Q4 and FY26. Actual rates in FY24
+        were 153 JPY to the U.S. dollar and 164 JPY to the Euro, FY25 Q1 were 146 JPY to the U.S. dollar and 162 JPY to the Euro, and FY25 Q2 were 146 JPY to the U.S. dollar and 170 JPY to the Euro. / 前回公表時の前
+        提とした為替レート、および今回の修正においてFY25 Q3-Q4とFY26の業績予想の前提とした為替レートは1米ドル＝140円、1ユーロ＝155円。 FY24の為替レートの実績は1米ドル＝153円、1ユーロ＝164円。 FY25 Q1の実績は1米ドル
+        ＝146円、1ユーロ＝162円。 FY25 Q2の実績は1米ドル＝146円、1ユーロ＝170円。
+      * Return on Invested Capital = NOPAT / Invested capital (average at beginning and end of period). NOPAT = Operating income x (1 - tax ratio 25%). Invested Capital = Borrowings + Corporate bonds + Total equity, with
+        excluding Lease liabilities. / 投下資本利益率：NOPAT÷投下資本（期首・期末平均）。NOPAT：営業利益×(１-税負担率25%)。投下資本：借入金＋社債＋資本合計（リース負債含まず）
+
+
+18                                                                                        All Rights Reserved - ADVANTEST CORPORATION
+Shareholder Return / 株主還元
+Commitment to shareholder returns under MTP3 policy                                                                MTP3期間における方針に沿った株主還元の実行
+
+     •   ≥50% cumulative total return ratio* over 3-years of the MTP3                                                •     MTP3期間の3年間合計で、配当に加えて自己株式取得を含めた
+         period through dividends and share repurchases                                                                    総還元性向*50％以上
+         Target shareholder returns may be subject to change in favor of growth investments or due to                      ただし、成長投資機会の発生や事業環境の悪化などにより、これらの株主還元水準は見直される場合があります
+         deteriorating market conditions.
+             *Total return ratio: (Dividend + share repurchase) / consolidated net income                                  * 総還元性向：(配当額＋自己株式取得額)÷連結当期利益
+
+✓ Dividend                                                                                                         ✓ 配当
+ • Stable and continuous dividends with a minimum of JPY 30 per                                                     • 配当については1株当たり通期30円を最低限とする方針のもと、安定的・
+   share annually                                                                                                     継続的な配当を実施
+
+         ⁻      Interim dividend for FY25:               JPY 29                                                           ⁻     2025年度の中間配当は29円とすることを本日決議
+                (FY24 interim dividend and year-end divided were JPY 19 and 20, respectively)
+                                                                                                                                (2024年度の中間配当実績は19円、期末配当実績は20円)
+
+
+
+
+✓ Share Repurchase                                                                                                 ✓ 自己株式取得
+ • A new share repurchase program has been authorized today                                                         • 新たな自己株式取得を本日決議
+
+         ⁻      Total number of shares to be acquired: Up to 18 million shares                                            ⁻     取得し得る株式の総数:               1,800万株 (上限)
+                                                                       (Equivalent to 2.5% of outstanding                                                 (発行済株式総数(自己株式を除く)に対す
+                                                                       shares excluding treasury stock)                                                   る割合: 2.5％)
+
+         ⁻      Total cost of acquisition:                             Up to JPY 150B                                     ⁻     株式の取得価額の総額:               1,500億円 (上限)
+
+         ⁻      Target period of acquisition:                          One year from November, 2025                       ⁻     取得する期間(予定):               2025年11月から1年間
+
+
+19                                                                                          All Rights Reserved - ADVANTEST CORPORATION
+1 Trillion-yen P/L Model / 1兆円売上時 収益モデル
+•    Drive profitability across various phases of the market cycle through operational efficiency and a resilient cost structure
+     市場サイクルのあらゆる局面において高い収益性を追求するため、オペレーション効率改善とコスト構造強化に努める
+
+•    Bolster R&D investments to solidify our path toward R&D-led sales and margin expansion
+     先端技術開発への積極投資により、売上拡大・利益率改善の道筋をさらに確固とする
+
+
+                                            300B yen Model                               500B yen Model                1 trillion-yen Model
+                                           (disclosed in 2018 / 2018年公表)               (disclosed in 2022 / 2022年公表)   売上高1兆円到達時のイメージ
+
+       Sales / 売上高                                     JPY 300B                                      JPY 500B                  JPY 1,000B
+
+       Gross Profit Margin / 売上総利益率                            54%                                         57%                         61%
+       SG&A as % of Sales / 販管費売上高比率                           32%                                         28%                         23%
+       Operating Profit Margin / 営業利益率                         22%                                         29%                         38%
+
+       R&D expenses as % of Sales                              13%                                         12%                         10%
+       / 研究開発費売上高比率
+
+
+       R&D expenses / 研究開発費                              JPY 39B                                         JPY 60B                  JPY 100B
+
+
+
+
+20                                                         All Rights Reserved - ADVANTEST CORPORATION
+Spurring Growth Investments / 成長投資の促進
+
+     Spurring growth investments across four themes to deliver greater value to stakeholders
+              ステークホルダーに対する提供価値拡大に向け、下記4テーマに対する成長投資を促進
+
+
+
+
+        1                   Fortify our core business in HPC/AI area
+                                  HPC/AI領域におけるコア事業のさらなる強化
+
+
+
+
+        2                          Continue to expand adjacently
+                                            近縁市場への事業展開を継続
+
+
+
+
+        3                  Fortify our supply chain with valued suppliers
+                                               サプライチェーンの強化
+
+
+
+
+        4                        Accelerate strategic partnerships
+                                      ビジネスパートナーとの協業を積極化
+
+
+
+21                                     All Rights Reserved - ADVANTEST CORPORATION
+Other Topics / その他トピックス
+
+
+❑       Integrated Annual Report 2025 scheduled for publication in November
+        統合報告書2025を11月発行予定
+
+
+
+
+❑       Virtual IR Fireside Chat scheduled for November 17th
+        バーチャルIR Fireside Chatを11月17日に開催予定
+
+
+
+
+❑       Selected as a component of the TOPIX Core30*
+        「TOPIX Core30」* 構成銘柄に選定
+        ＊ TOPIX Core30:
+          A stock price index composed of 30 stocks with particularly high market capitalization and liquidity among the constituent stocks of the Tokyo Stock Price Index (TOPIX).
+          東証株価指数(TOPIX)を構成する銘柄のうち、時価総額・流動性の特に高い30銘柄で構成される株価指数
+
+
+
+
+22                                                                     All Rights Reserved - ADVANTEST CORPORATION
+All Rights Reserved - ADVANTEST CORPORATION
+
