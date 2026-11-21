@@ -1,0 +1,902 @@
+
+
+Redefining Processes At Sub-2nm
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                Redefining Processes At Sub-2nm                                                    
+
+Test, Measurement & Analytics
+
+Redefining Processes At Sub-2nm
+
+Discrete steps are being merged with others as dimensions shrink into the angstrom range.
+
+								September 10th, 2026 - 
+
+								By: 
+Ed Sperling
+
+Key Takeaways:
+
+Sub-2nm manufacturing is blurring traditional process boundaries as shrinking dimensions and tighter margins make test, metrology, inspection, and manufacturing increasingly interdependent.
+
+More sensitivity creates more noise. Advanced inspection can detect millions of potential defects, making it harder to distinguish harmless process variation from issues that affect yield, reliability, or performance.
+
+Data needs to flow back and forth across a chip’s entire lifecycle so it can be acted upon as needed.
+
+The lines between discrete semiconductor manufacturing processes are starting to blur at sub-2nm nodes as transistors continue to shrink, sensitivity to various processes rises, and the amount of margin available to minimize problems disappears.
+
+At these dimensions, a single atom can change how a chip behaves, and even a gentle wafer probe can damage an oxide layer or a via on a thinned substrate. Process variation can cause false error reporting in metrology. And a nano-sized particle that remains on a chip after removing a sacrificial material can turn an expensive multi-die stack into scrap.
+
+“People are going from trying to probe chiplets to having sacrificial pads because they don’t want to damage the bumps that we’re actually going to bond to,” said Lee Harrison, director of automotive IC solutions at 
+Siemens EDA
+. “And now we’re seeing hybrid bonding, which is a super cool technology, but there’s no way you’re going to be able to probe a hybrid bond and keep it in one piece. We’re seeing some customers doing wafer bonding before test because you’re getting these extra-thin dies and extra-thin wafers.”
+
+At older nodes, there was enough margin built into manufacturing processes to ignore these kinds of issues. Substrates were thicker, less prone to warpage, and structures were more stable. But below 2nm, many dies are collections of chiplets because demand for processing far exceeds the number of transistors that can be packed into a reticle-sized die. That increases thermal density, elevates structural stress, and generates a huge number of unknowns because different workloads can stress chips in different ways. At the same time, increasing the overall performance of a device requires everything to be smaller, thinner, and subsequently more fragile, creating a confusing array of overlapping and often contradictory needs.
+
+Large AI data centers are fully aware of these issues, which is why they are migrating toward redundant server clusters. “You’re probably going to have some manufacturing problems, so we’re building solutions for redundancy,” said Rob Kruger, product management director for multi-die strategy and 3D IP at 
+Synopsys
+. “So you can have redundant clusters instead of redundant lanes and a 3D interconnect, because if you have a fault — it might take out a whole slew of faults, not just one — and then you have multi-die tests, you have to test these dies before you integrate and then after integration. There are some standards there, which are helping, and having hierarchical test servers on each die is becoming common. You can test before you package, after package, and then have capabilities to repair packages if there are problems using redundancy. They can do that for UCIe and for 3D connections.”
+
+That effectively moves margin outside the individual dies within a package, enabling hot swapping of compute resources. Ironically, this approach originally was developed for mainframes and minicomputers several decades ago to reduce downtime, but it was largely abandoned in the 1990s with the introduction of inexpensive servers running Windows NT and various flavors of Unix.
+
+False positives
+
+Shrinking features enabled the proliferation of cheap hardware, but the laws of physics are starting to reverse those cost benefits. Deploying exactly the same processes across a wafer can produce different results in different sectors of that wafer. And while this variation in processes is generally predictable, it can impact other processes that in the past were not affected.
+
+“We are seeing an explosion in the number of defects detected on the wafer to millions of defects,” said Prasad Bachiraju, senior director of business development at 
+Onto Innovation
+. “Because of the tool sensitivity, when you’re trying to capture the critical defect, it is actually capturing the neighborhood and the process variation also as a defect. That’s all noise and nuisance.”
+
+Others agree. “What we are seeing is that advanced nodes are making the industry less able to rely on inspection signals alone to decide what matters electrically,” said Noam Brousard, vice president of solutions engineering at 
+proteanTecs
+. “At 2nm and below, the volume of potential indications can be enormous, and many signals may reflect local process variation rather than a defect that will become a functional or reliability problem.”
+
+No single solution exists. Instead, multiple approaches are required to work in sync, under continuous monitoring, and each needs to be evaluated and implemented in the context of potential interactions with other solutions.
+
+“One of the paradigm changes in how we monitor quality and health is that we are not tracking a single indicator, but a collection of many data points,” Brousard said. “Individual indicators, such as process variation, temperature, or voltage, may suggest an out-of-bounds condition, but they can also reflect normal variation rather than a true defect. As designs become more complex, there are more clues that may point to a defective part, but it is increasingly difficult to distinguish between harmless variation and a condition that will affect operation. You need to look at the end result — how the actual logic is being affected by the combination of many possible factors.”
+
+In addition, there are more insertion points that can cause defects, and there is more data being produced than can be classified and processed using traditional cloud-based methods. The best way to comprehend that data is by abstracting it.
+
+“The industry has shifted to virtual capabilities, and away from iterative work, to do R&D,” said David Fried, chief AI officer and corporate vice president for Semiverse Solutions at 
+Lam Research
+. “A lot of virtualization, modeling, and optimization has happened, so I have high hopes that the types of structures and technologies that are marching toward manufacturing in these nodes are designed in a more robust way than technologies of the past. Hopefully what that translates to is that we don’t have late showstopper-type problems in these technologies. It’s a challenge to ramp these technologies. The individual process variabilities are still going to be really challenging. Hundreds of processes have to come together, and you need to account for variations in all those processes. Historically, this has been done by just running scads of hardware through the fab and trying to use data measurement, metrology, and inspection to map out the boundaries of all these variations. But there is an amazing amount of process complexity. There are so many steps in the process that you just can’t map out the full space with hardware anymore.”
+
+Looking deeper, wider, and more often
+
+There are no real surprises here. What’s changed is the sheer volume of things that need to be considered.
+
+“Warpage is pretty well understood,” said Juliette Vandermeer, product marketing manager at 
+Bruker Semiconductor
+. “You know the process, you know what kind of silicon film you grow on the wafers, and you know, ‘Okay, this will warp that way.’ But if something gets really warped, it also has microfractures.”
+
+Finding those fractures requires looking much deeper into the various metal layers, often using X-ray diffraction imaging — also called X-ray tomography — to see and measure what’s actually happening inside a chip or package at each process stage or insertion point.
+
+“The layers are getting thinner, so a higher precision is required,” Vandermeer said. “The challenge is really the thickness and the concentration, which is the growth process. There is temperature control during the growth, and interfacial roughness has an impact on the quality of the resistor channels. These are parameters we measure, and if there is an error at the front end, that can propagate to the very end. Our customers need to be certain that a process is well controlled. The process specs need to be tight, in the angstrom range, and our metrology specs need to be in the sub-angstrom range.”
+
+Fig. 1: X-ray diffraction imaging can find defects in wafers that can cause catastrophic structural failure before breakage occurs. Source: Bruker
+
+This is more than just the overlapping of process steps during manufacturing. It’s a compression of the whole design-through-manufacturing chain, and beyond that into the field. Data needs to flow in multiple directions and be analyzed outside of traditional silos, and extracting that data requires more types of testing, inspection, and metrology equipment, as well as infrastructure to sort through all of it and take action in real-time.
+
+“We’re starting to see a mixture,” said Siemens’ Harrison. “The regular ATPG scan is still very dominant in the whole test strategy. You might have a couple thousand processing elements, so you would test your processing elements with ATPG. But if you’re doing some kind of core harvesting, then you might pick up another strategy, whether that’s BiST (built-in self-test) or some other kind of functional test, to do the reallocation of lanes or interconnect and things like that. And then, testing in the field is becoming a significant demand right now. I scoped out our original in-system deterministic test product back in 2019, where we had a couple of automotive customers asking us for better test quality than logic BiST. However, what’s happened is the guys doing the data centers have really taken hold of that technology, and they’re driving it forward using the kind of periodic testing they do on data centers to make sure everything is still working. They’re doing it to save a huge amount of cash in terms of being able to understand when to do that preventive maintenance instead of just guessing at it.”
+
+Just setting limits on temperature or tracking the speed of data movement is no longer sufficient. What’s required is a hierarchical way to coordinate, interpret, and prioritize data at every phase of manufacturing and operation, and then determine where it will best be used.
+
+“Margin Agents allow us to answer a more important question than temperature alone can answer,” said proteanTecs’ Brousard. “They tell us how safe a specific buried domain actually is, not just how hot it is. That distinction matters significantly in a stacked structure. In a shingled or vertical stack, thermal coupling between layers can degrade the effective timing margin of a domain even when nothing inside that domain has changed. A neighboring tier may run hot; self-heating may increase the local temperature, and timing paths in the domain above or below it may lose margin as a result. A thermal sensor can tell you that temperature increased, but it cannot tell you whether that increase created an actual timing risk. The relationship between local heat and margin loss depends on which paths are affected, how they are routed relative to the hot layer, and what voltage they are running at.”
+
+That might affect only a single die on a wafer, or it could affect an entire panel or advanced package.
+
+“When a wafer is tested at the foundry, they don’t know where those chips are going to go to be packaged, assembled, and tested,” said John Kibarian, CEO of 
+PDF Solutions
+. “They’ve got to know where to go to send the material to take the human out of the loop. That’s really not something that’s gone on. We call that the orchestration layer. This is like a low-code or no-code way of connecting your apps. If you think about PLM, ERP, and MES systems, your engineering data, manufacturing yield data, and ultimately your design automation information, you need to be able to get that information in order to take the human out of the loop so AI can make appropriate decisions.”
+
+Conclusion
+
+The smaller the features on a die, or the denser the package, the bigger the challenge in keeping track of everything. At each new node below 2nm, more testing, more precision, and more information about what’s going on at the surface and within a chip or package are all essential. But in addition to that, each process needs to include cross-over data and a level of awareness about what impact each step can have on other process steps, and what used to be defined spaces for testing, measuring, and inspecting are now a collection of overlapping combinations of steps that must be considered both individually and collectively.
+
+Related Article
+
+Multi-Die Assemblies Dominate At 2nm And Below
+
+Chips are getting bigger, more modular, and much more capable as new innovations mix with existing processes and long-researched projects go mainstream.
+
+ Tags:
+
+2nm
+
+ATPG
+
+Bruker
+
+Lam Research
+
+Onto Innovation
+
+PDF Solutions
+
+process monitoring
+
+proteanTecs
+
+semiconductor manufacturing
+
+Siemens EDA
+
+Synopsys
+
+test
+
+Ed Sperling 
+
+(all posts)
+
+							Ed Sperling is the editor in chief of Semiconductor Engineering.
+
+1 comments
+
+Ben Zaryouh
+
+says:
+
+September 15, 2026 at 3:16 am
+
+Excellent article. One particularly important point is the growing need to correlate process and monitoring data with the electrical behavior of the actual functional logic.
+
+At advanced nodes, where margins are increasingly small and workload-dependent variation becomes more significant, proxy monitors alone may not always provide sufficient visibility. Direct measurement of representative paths, functional paths, and memory structures could provide a much stronger link between process variation, silicon characterization, aging, and in-field behavior.
+
+This type of capability can ultimately help connect manufacturing data with real silicon behavior throughout the device lifecycle.
+
+Reply
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+
