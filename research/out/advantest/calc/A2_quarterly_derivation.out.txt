@@ -1,0 +1,18 @@
+Single-quarter net sales and cost of sales, JPY million (derived from YTD where needed)
+quarter                           sales       COGS  slide_sales_JPYbn  check
+FY2024 Q4 (Jan-Mar 2025)        232,349     93,115                     
+FY2025 Q1 (Apr-Jun 2025)        263,776     92,138              263.8  OK
+FY2025 Q2 (Jul-Sep 2025)        262,957     99,316              262.9  OK within 0.1bn rounding (slide likely 526.7-263.8)
+FY2025 Q3 (Oct-Dec 2025)        273,804    104,096              273.8  OK
+FY2025 Q4 (Jan-Mar 2026)        328,073    106,953              328.1  OK
+FY2026 Q1 (Apr-Jun 2026)        367,473    111,920              367.5  OK
+FY2026 Q2 (Jul-Sep 2026)        477,727    137,902              477.7  OK
+
+Cross-check of derived quarterly COGS against slide sales minus slide gross profit (JPY billion, 1-decimal slide rounding):
+  FY2025 Q1 (Apr-Jun 2025): tanshin-derived 92.1 vs slide-implied 92.2 -> diff -0.06 (OK)
+  FY2025 Q2 (Jul-Sep 2025): tanshin-derived 99.3 vs slide-implied 99.2 -> diff +0.12 (OK)
+  FY2025 Q3 (Oct-Dec 2025): tanshin-derived 104.1 vs slide-implied 104.1 -> diff -0.00 (OK)
+  FY2025 Q4 (Jan-Mar 2026): tanshin-derived 107.0 vs slide-implied 107.0 -> diff -0.05 (OK)
+  FY2026 Q1 (Apr-Jun 2026): tanshin-derived 111.9 vs slide-implied 111.9 -> diff +0.02 (OK)
+  FY2026 Q2 (Jul-Sep 2026): tanshin-derived 137.9 vs slide-implied 137.9 -> diff +0.00 (OK)
+  Largest absolute difference: 0.12 JPY billion

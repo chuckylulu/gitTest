@@ -1,0 +1,15 @@
+Segment income with and without the one-off items management named (JPY million)
+FY2024 old 'Services, Support and Others': reported -10,914; ex impairment 21,393 -> 10,479
+FY2024 new 'Services and Others':          reported -16,125; ex impairment 21,393 -> 5,268
+   restatement effect on services income: reported -5,211; ex impairment -5,211 (impairment sits in the services segment on both bases)
+FY2024 total segment income: reported 231,054; ex impairment 252,447
+1H FY2025 'Services and Others': reported 3,048; ex divestiture income 2,504 -> 544
+1H FY2025 total segment income: reported 234,552; ex divestiture income -> 232,048
+1H FY2024, 9M FY2024, Q1 FY2024: segment notes name no one-off item for these periods (no adjustment).
+RESULT sso_income_old_FY2024_ex_impairment = 10479
+RESULT so_income_new_FY2024_ex_impairment = 5268
+RESULT services_income_change_reported = -5211
+RESULT services_income_change_ex_impairment = -5211
+RESULT total_segment_income_FY2024_ex_impairment = 252447
+RESULT so_income_1H_FY2025_ex_divestiture = 544
+RESULT total_segment_income_1H_FY2025_ex_divestiture = 232048

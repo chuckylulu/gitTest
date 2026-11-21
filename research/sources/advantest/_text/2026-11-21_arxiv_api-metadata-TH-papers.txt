@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/PBp+lslKiLfPRE3/Mzydi6/UsvE</id>
+  <title>arXiv Query: search_query=&amp;id_list=2006.04798v1,2503.15753v1,2508.01786v1,2511.05506v1,2606.22149v1,2611.19544v1&amp;start=0&amp;max_results=6</title>
+  <updated>2026-11-21T10:53:48Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=6&amp;id_list=2006.04798v1,2503.15753v1,2508.01786v1,2511.05506v1,2606.22149v1,2611.19544v1" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>6</opensearch:itemsPerPage>
+  <opensearch:totalResults>6</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2511.05506v1</id>
+    <title>YAP+: Pad-Layout-Aware Yield Modeling and Simulation for Hybrid Bonding</title>
+    <updated>2025-10-20T00:40:45Z</updated>
+    <link href="https://arxiv.org/abs/2511.05506v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.05506v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Three-dimensional (3D) integration continues to advance Moore's Law by facilitating dense interconnects and enabling multi-tier system architectures. Among the various integration approaches, Cu-Cu hybrid bonding has emerged as a leading solution for achieving high interconnect density in chiplet integration. In this work, we present YAP+, a yield modeling framework specifically tailored for wafer-to-wafer (W2W) and die-to-wafer (D2W) hybrid bonding processes. YAP+ incorporates a comprehensive set of yield-impacting failure mechanisms, including overlay misalignment, particle defects, Cu recess variations, surface roughness, and Cu pad density. Furthermore, YAP+ supports pad layout-aware yield analysis, considering critical, redundant, and dummy pads across arbitrary 2D physical layout patterns. To support practical evaluation, we developed an open-source yield simulator, demonstrating that our near-analytical model matches simulation accuracy while achieving over 1,000x speedup in runtime. This performance makes YAP+ a valuable tool for co-optimizing packaging technologies, assembly design rules, and system-level design strategies. Beyond W2W-D2W comparisons, we leverage YAP+ to investigate the impact of pad layout patterns, bonding pitch, and pad ratios across different pad types, and explore the benefits of strategically placing redundant pad replicas.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-20T00:40:45Z</published>
+    <arxiv:comment>The paper is currently under review by IEEE TCAD</arxiv:comment>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Zhichao Chen</name>
+    </author>
+    <author>
+      <name>Puneet Gupta</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15753v1</id>
+    <title>CATCH: a Cost Analysis Tool for Co-optimization of chiplet-based Heterogeneous systems</title>
+    <updated>2025-03-20T00:07:10Z</updated>
+    <link href="https://arxiv.org/abs/2503.15753v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.15753v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the increasing prevalence of chiplet systems in high-performance computing applications, the number of design options has increased dramatically. Instead of chips defaulting to a single die design, now there are options for 2.5D and 3D stacking along with a plethora of choices regarding configurations and processes. For chiplet-based designs, high-impact decisions such as those regarding the number of chiplets, the design partitions, the interconnect types, and other factors must be made early in the development process. In this work, we describe an open-source tool, CATCH, that can be used to guide these early design choices. We also present case studies showing some of the insights we can draw by using this tool. We look at case studies on optimal chip size, defect density, test cost, IO types, assembly processes, and substrates.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-20T00:07:10Z</published>
+    <arxiv:comment>13 pages, 21 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Alexander Graening</name>
+    </author>
+    <author>
+      <name>Jonti Talukdar</name>
+    </author>
+    <author>
+      <name>Saptadeep Pal</name>
+    </author>
+    <author>
+      <name>Krishnendu Chakrabarty</name>
+    </author>
+    <author>
+      <name>Puneet Gupta</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19544v1</id>
+    <title>DT-MATCH: Defect- and Topology-Aware Chiplet Matching for Yield Optimization in Heterogeneous Integration</title>
+    <updated>2026-11-14T18:13:04Z</updated>
+    <link href="https://arxiv.org/abs/2611.19544v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19544v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Heterogeneous integration (HI) and advanced packaging enable chiplet-based system-on-chip (SoC) designs; however, they also introduce new yield challenges arising from manufacturing defects and complex die-to-die (D2D) interconnect constraints. In particular, lane-level defects, limited spares, and strict structural compatibility requirements impede the efficient assembly of functional systems from defective but repairable chiplets. We present DT-MATCH, a defect- and topology-aware chiplet matching framework that maximizes the number of functional SoCs under realistic assembly constraints. DT-MATCH provides two complementary approaches. The integer linear programming (ILP)-based approach is implemented using a batching strategy to approximate the exact formulation. The greedy randomized adaptive search procedure (GRASP)-based approach provides substantial acceleration, but it does not guarantee yield optimality. Both approaches use a preprocessing pipeline to reduce the problem size. Experimental results on industrial designs demonstrate that, as expected, the ILP-based approach achieves superior solution quality. The GRASP-based approach leads to lower runtimes while still achieving solution quality that is comparable to the ILP-based solution. Together, these methods provide a trade-off between solution quality and efficiency for practical chiplet assembly optimization.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T18:13:04Z</published>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Xuanyi Tan</name>
+    </author>
+    <author>
+      <name>Sanmitra Banerjee</name>
+    </author>
+    <author>
+      <name>Dhruv Thapar</name>
+    </author>
+    <author>
+      <name>Sreejit Chakravarty</name>
+    </author>
+    <author>
+      <name>Krishnendu Chakrabarty</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2006.04798v1</id>
+    <title>Yield Loss Reduction and Test of AI and Deep Learning Accelerators</title>
+    <updated>2020-06-08T04:26:12Z</updated>
+    <link href="https://arxiv.org/abs/2006.04798v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2006.04798v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With data-driven analytics becoming mainstream, the global demand for dedicated AI and Deep Learning accelerator chips is soaring. These accelerators, designed with densely packed Processing Elements (PE), are especially vulnerable to the manufacturing defects and functional faults common in the advanced semiconductor process nodes resulting in significant yield loss. In this work, we demonstrate an application-driven methodology to reduce the yield loss of AI accelerators by correlating the circuit faults in the PEs of the accelerator with the desired accuracy of the AI workload execution. We exploit the error-healing properties of backpropagation during training, and the inherent fault tolerance features of trained deep learning models during inference to develop the presented yield loss reduction and test methodology. An analytical relationship is derived between fault location, fault rate, and the AI task`s accuracy for deciding if the accelerator chip can pass the final yield test. An yield-loss reduction aware fault isolation, ATPG, and test flow are presented for the multiply and accumulate units of the PEs. Results obtained with widely used AI/deep learning benchmarks demonstrate the efficacy of the proposed approach in the reduction of yield loss of AI accelerator designs while maintaining the desired accuracy of AI tasks.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-06-08T04:26:12Z</published>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Mehdi Sadi</name>
+    </author>
+    <author>
+      <name>Ujjwal Guin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.22149v1</id>
+    <title>Failure Analysis in Transition: An Industry Survey of Challenges, Priorities, and Standardization Needs in Advanced Packaging and Heterogeneous Integration</title>
+    <updated>2026-06-20T16:59:36Z</updated>
+    <link href="https://arxiv.org/abs/2606.22149v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.22149v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Failure analysis is being reshaped by heterogeneous integration, chiplet-based architectures, hybrid bonding, backside technologies, &amp; increasingly buried package structures. To examine how practitioners view this transition, an anonymous survey was distributed across a broad set of organizations involved in semiconductor design, packaging, systems, tools, &amp; failure analysis. The survey collected approximately one hundred responses &amp; probed organizational background, supported product domains, future priorities in failure analysis, critical bottlenecks, sample preparation challenges, emerging architecture specific pain points, &amp; perceived needs for workflow acceleration &amp; data standardization. The results show that heterogeneous integration, chiplet, and three-dimensional products dominate the respondent base at 69%, while package &amp; heterogeneous integration failure analysis received the highest importance rating at 7.92 out of 10. Hybrid bonding emerged as the most difficult new architecture to analyze at 54%, higher-resolution non-destructive imaging ranked as the most important future accelerator at 8.18 out of 10, and 83% of respondents supported formalized data standardization frameworks. The complete survey data are provided in Appendix A (Table II) to improve transparency &amp; support future benchmarking.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-20T16:59:36Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Himanandhan Reddy Kottur</name>
+    </author>
+    <author>
+      <name>Nusra Akter Takia</name>
+    </author>
+    <author>
+      <name>Mahamudul Hassan Fuad</name>
+    </author>
+    <author>
+      <name>Istiaq Firoz Shiam</name>
+    </author>
+    <author>
+      <name>Matthew Walsh</name>
+    </author>
+    <author>
+      <name>Navid Asadizanjani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.01786v1</id>
+    <title>Silent Data Corruption by 10x Test Escapes Threatens Reliable Computing</title>
+    <updated>2025-08-03T14:53:33Z</updated>
+    <link href="https://arxiv.org/abs/2508.01786v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.01786v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Too many defective compute chips are escaping existing manufacturing tests -- at least an order of magnitude more than industrial targets across all compute chip types in data centers. Silent data corruptions (SDCs) caused by test escapes, when left unaddressed, pose a major threat to reliable computing. We present a three-pronged approach to future directions in overcoming test escapes: (a) Quick diagnosis of defective chips directly from system-level incorrect behaviors. Such diagnosis is critical for gaining insights into why so many defective chips escape existing manufacturing testing. (b) In-field detection of defective chips. (c) New test experiments to understand the effectiveness of new techniques for detecting defective chips. These experiments must overcome the drawbacks and pitfalls of previous industrial test experiments and case studies.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-03T14:53:33Z</published>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Subhasish Mitra</name>
+    </author>
+    <author>
+      <name>Subho Banerjee</name>
+    </author>
+    <author>
+      <name>Martin Dixon</name>
+    </author>
+    <author>
+      <name>Rama Govindaraju</name>
+    </author>
+    <author>
+      <name>Peter Hochschild</name>
+    </author>
+    <author>
+      <name>Eric X. Liu</name>
+    </author>
+    <author>
+      <name>Bharath Parthasarathy</name>
+    </author>
+    <author>
+      <name>Parthasarathy Ranganathan</name>
+    </author>
+  </entry>
+</feed>

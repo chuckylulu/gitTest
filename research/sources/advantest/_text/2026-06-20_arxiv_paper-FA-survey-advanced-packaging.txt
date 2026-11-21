@@ -1,0 +1,474 @@
+      Failure Analysis in Transition: An Industry Survey of
+  Challenges, Priorities, and Standardization Needs in Advanced
+            Packaging and Heterogeneous Integration
+  Himanandhan Reddy Kottur*, Nusra Akter Takia*, Mahamudul Hassan Fuad*, Istiaq Firoz Shiam*, Matthew Walsh⸸, Navid
+                                                    Asadizanjani*
+            *Department of Electrical and Computer Engineering, University of Florida, Gainesville, FL, USA
+                                 ⸸
+                                   Florida Semiconductor Engine, Kissimmee, FL, USA
+                               Corresponding authors: h.kottur@ufl.edu, nasadi@ufl.edu
+
+Abstract—Failure analysis is being reshaped by heterogeneous           This transition creates two related pressures. i) physical:
+integration, chiplet-based architectures, hybrid bonding,           regions of interest are harder to access, geometries are more
+backside technologies, & increasingly buried package                fragile, & destructive preparation can distort the defect being
+structures. To examine how practitioners view this transition,      investigated. ii) informational: meaningful diagnosis
+an anonymous survey was distributed across a broad set of           increasingly depends on combining electrical, physical,
+organizations involved in semiconductor design, packaging,          thermal, imaging, process, & package context into one coherent
+systems, tools, & failure analysis. The survey collected            interpretation. The field therefore requires not only better
+approximately one hundred responses & probed organizational         instrumentation, but also stronger workflow integration &
+background, supported product domains, future priorities in         better data handoff among tools & teams.
+failure analysis, critical bottlenecks, sample preparation             To study how practitioners perceive this change, a survey
+challenges, emerging architecture specific pain points, &           was conducted:
+perceived needs for workflow acceleration & data                     Across participants from fabless companies, OSAT &
+standardization. The results show that heterogeneous                     packaging organizations, systems & OEM companies,
+integration, chiplet, and three-dimensional products dominate            EDA & tool vendors, failure analysis laboratories,
+the respondent base at 69%, while package & heterogeneous                universities, & other institutions.
+integration failure analysis received the highest importance
+                                                                     The survey was focused on the practical barriers that shape
+rating at 7.92 out of 10. Hybrid bonding emerged as the most
+                                                                         present day failure analysis, especially in advanced
+difficult new architecture to analyze at 54%, higher-resolution
+                                                                         packaging & heterogeneous integration.
+non-destructive imaging ranked as the most important future
+accelerator at 8.18 out of 10, and 83% of respondents supported     The goal of this paper is not simply to list responses, but to
+formalized data standardization frameworks. The complete            interpret them as evidence of a broader shift in the center of
+survey data are provided in Appendix A (Table II) to improve        gravity of failure analysis. The complete survey results are
+transparency & support future benchmarking.                         presented in Appendix A (Table I) for full transparency.
+Keywords—failure analysis, heterogeneous integration,                    II. SURVEY SCOPE & RESPONDENT PROFILE
+advanced packaging, hybrid bonding, chiplets, non-destructive          The survey collected approximately one hundred anonymous
+imaging, sample preparation, standardization, artificial            responses from participants spanning multiple parts of the
+intelligence.                                                       semiconductor ecosystem. Organizational representation
+                    I.       INTRODUCTION                           included:
+Failure analysis has traditionally been associated with device               a) OSAT & packaging organizations at 22%
+level localization, physical deprocessing, materials                         b) Fabless companies at 19%
+characterization, & root cause isolation in comparatively                    c) Failure analysis laboratories at 16%
+accessible semiconductor structures. That model remains                      d) Systems & OEM organizations at 10%
+important, but the structure of modern products has changed.                 e) EDA & tool vendors at 10%
+Fig 1. represents the evolution of semiconductor failure analysis            f) And an additional 23% categorized as other
+from conventional device-centric methodologies toward multi-        The comments within the other category indicate participation
+abstraction-level analysis required for advanced heterogeneous      from academic institutions, modeling & simulation groups,
+integration technologies. Advanced packaging, fan out               prototyping & testing organizations, & specialized material
+technologies, chiplets, three-dimensional stacking, backside        suppliers, which broadens the perspective beyond only high-
+power delivery, & hybrid bonding have redistributed failure         volume manufacturing. Fig. 2. represents the percentage
+mechanisms across interfaces, buried interconnects, package         distribution of key focus areas in modern semiconductor failure
+materials, thermal pathways, & assembly induced stresses. As        analysis, emphasizing packaging, fabless ecosystems,
+a result, failure analysis now operates across multiple             EDA/tool vendors, and AI-assisted analysis methodologies.
+abstraction levels rather than within only the transistor or
+interconnect domain.
+                   Fig. 1. Evolution of Failure Analysis in Advanced Heterogeneous Semiconductor Packaging Architecture.
+                                                                                   TABLE I. Key Quantitative Survey Highlights
+     The supported product domains reveal where the strongest             Metric                                           Value
+technical concentration currently lies. Heterogeneous
+integration, chiplet, & three-dimensional products accounted              Package & HI FA importance rating                7.92/10
+for 69% of responses, the highest share in the survey. Photonics          System-level FA importance rating                7.56/10
+& co packaged optics followed at 41%, while logic at advanced
+nodes represented 35%, power products 24%, MEMS & sensors                 Device-level fault isolation rating              7.51/10
+20%, memory 16%, & other product categories 14%. This
+                                                                          Device-level physical analysis rating            7.03/10
+distribution is significant because the dominant product base
+already consists of architectures where failures can emerge               Hybrid bonding: hardest architecture             5.4/10
+from interfaces, packaging complexity, thermomechanical
+coupling, & cross-die interactions rather than from isolated              BSPDN: backside probing as top challenge         7.5/10
+transistor-level defects.                                                 NDI imaging: highest future accelerator          8.18/10
+
+                                                                          Support for standardization frameworks           8.3/10
+
+                                                                         III. IMPORTANCE OF FAILURE ANALYSIS AREAS
+                                                                            Participants were asked to rate the importance of several
+                                                                       failure analysis domains for the coming years on a ten-point
+                                                                       scale (see Table I). The results are instructive: they do not imply
+                                                                       that device-level methods are losing value; rather, they indicate
+                                                                       that package- and system-coupled problems now demand equal
+                                                                       strategic attention alongside traditional device-level work.
+                                                                          Package & heterogeneous integration failure analysis
+                                                                       received the highest average score at 7.92 out of 10. System-
+                                                                       level failure analysis followed at 7.56, device-level fault
+                                                                       isolation at 7.51, & device-level physical analysis at 7.03. This
+                                                                       ranking is especially notable because package & heterogeneous
+        Fig. 2. Distribution of survey participants by organization
+                               category                                integration analysis exceeds both traditional device level
+                                                                       catagories. In practical terms, this reflects the diagnostic burden
+     Table I summarizes key quantitative highlights from the           imposed by die to wafer integration, fan out packaging, large
+survey. These metrics are discussed in detail in the sections that     substrates, buried interfaces, cross domain signal pathways, &
+follow; readers are encouraged to cross-reference Table II in          thermomechanical interactions that are not captured by
+Appendix A for the full result set.                                    conventional device centric workflows. The survey therefore
+supports the view that failure analysis is expanding upward          3D X-ray, & viii) And better understanding of how artificial
+from transistor level structures toward interfaces, assemblies, &    intelligence can be used under limited data & trustworthiness
+field relevant system behavior.                                      constraints. At the same time, destructive analysis requests
+                                                                     remain technically demanding, including cryogenic SEM for
+    IV. CURRENT BOTTLENECKS IN WORKFLOW
+                                                                     fragile materials, low dose TEM, sub angstrom metrology, &
+                          EXECUTION
+                                                                     ultra-thin lamella preparation. Together, these findings suggest
+   The survey also examined the most critical organizational         that future failure analysis will rely on a tighter interplay
+challenges. Although individual ratings varied by category, the      between minimally invasive screening & carefully targeted
+strongest pressures clustered around package level defects,          destructive confirmation.
+preparation related access problems, & the difficulty of
+integrating standardized data with artificial intelligence-based       VI. EMERGING ARCHITECTURES & THEIR PAIN
+interpretation. These results should be read as a coupled                                        POINTS
+problem rather than as isolated complaints. In advanced                 The survey provides particularly clear insight into
+packaging, a defect may only become interpretable if the             architecture specific difficulty. When respondents were asked
+sample is opened correctly, the buried region is imaged with         which, new architecture is hardest to analyze today, hybrid
+sufficient resolution, & the resulting data can be correlated with   bonding received 54% of responses, well above gate all around
+electrical behavior, process history, & design intent.               devices at 24%, backside power delivery networks at 14%, &
+   The open-ended responses reinforce this interpretation.           other categories at 8%. This is a strong signal that hybrid
+Participants asked for the ability to directly connect failure       bonding has become a central challenge in the current failure
+mechanisms to functional behavior, for stronger modeling &           analysis landscape.
+verification capability, & for workflows that can handle                The hybrid bonding specific responses identify three
+increasing product complexity without disproportionate cost &        dominant technical obstacles: (i) detecting voids, gaps, &
+latency. Several comments explicitly stated that traditional         misalignment at the bonding interface (ii) achieving cross
+failure analysis is becoming too slow, too costly, & in some         section preparation without inducing artifacts and& (iii)
+cases insufficient for determining the true root cause in highly     managing warped wafers or dies & the resulting impact on
+integrated systems. This concern is consistent with the              bonding yield. These results reveal why hybrid bonding is so
+quantitative responses & suggests that workflow scalability is       challenging: diagnosis requires simultaneous control of
+now a major technical issue.                                         interface imaging, sample preparation fidelity & package level
+                                                                     mechanics. The failure signature may be local, but its origin can
+        V. SAMPLE PREPARATION & IMAGING
+                                                                     be coupled to global warpage, alignment error, oxide condition,
+                         LIMITATIONS
+                                                                     copper topography & process induced stress [3].
+   Sample preparation remains one of the most consequential
+bottlenecks identified in the survey. The listed concerns include
+preparing ultra-thin lamella without introducing artifacts,
+achieving accurate delayering in advanced BEOL & low k
+structures, accessing regions of interest such as BSPDNs,
+TSVs, TGVs, & hybrid bonded interfaces, & consistently
+preparing large or non-standard geometries affected by bow or
+warpage. These are not minor procedural inconveniences. In
+many advanced packages, the act of exposing the structure can
+change fracture paths, redistribute stress, smear interfaces, or
+remove evidence needed for reliable root cause identification.
+   A related survey question asked which imaging or analysis
+methods most need improvement. Non-destructive analysis
+methods were selected far more often than destructive analysis
+methods, with:                                                       Fig. 3. Most challenging emerging device & packaging architectures
+                                                                                              for failure analysis
+          72% of respondents favoring greater improvement
+             in non-destructive approaches versus                       Gate all around technologies present a different but related
+          28% for destructive approaches.                           challenge profile. For GAA analysis, 56% of respondents
+                                                                     identified structural damage during electrical probing or
+This result is especially important because it demonstrates a
+                                                                     nanoprobing as the dominant issue, while 44% cited delayering
+strong industry demand for deeper observability before
+                                                                     without losing device integrity. This distribution shows that
+irreversible deprocessing occurs. The open-ended responses in
+                                                                     access itself is becoming a failure analysis risk. In highly scaled
+this section repeatedly request: i) better resolution, ii) greater
+                                                                     structures, the act of preparing or contacting the device can alter
+penetration depth, iii) faster throughput, iv) improved
+                                                                     the evidence under investigation. Similarly, for backside power
+reconstruction, v) multimodal imaging, vi) the ability to localize
+                                                                     delivery networks, 75% of respondents identified electrical
+faults within true three-dimensional volumes without disturbing
+                                                                     probing or nanoprobing from the backside as the most difficult
+the assembly [1-2] vii) nano-void detection and high-resolution
+                                                                     issue, while 25% pointed to locating & isolating defects in
+buried power rails. These responses confirm that the dominant           & throughput. Second, the outputs of multiple modalities must
+challenge in BSPDN analysis is not only localization, but also          become easier to align, compare, & interpret. Third, artificial
+practical measurement access through an increasingly                    intelligence can become useful only when the underlying data
+concealed architecture [4]. Fig. 3. illustrates the percentage          is standardized enough to support trustworthy training &
+distribution of emerging semiconductor technology priorities            validation. The survey therefore does not present AI as a
+among respondents. Hybrid bonding received the highest                  replacement for expert failure analysis. Instead, it positions AI
+interest, followed by gate-all-around (GAA) devices and                 as an accelerator that becomes credible only after improvements
+backside power delivery networks (BSPDN), reflecting the                in imaging quality, data quality, & workflow coherence [6].
+industry’s transition toward advanced heterogeneous
+                                                                                    VIII. STANDARDIZATION & DATA
+integration and next-generation device architectures.
+                                                                                             INFRASTRUCTURE
+   Comments on overall three-dimensional heterogeneous
+integration extend this picture. Participants cited heat                   One of the strongest consensus results in the survey concerns
+dissipation, electromagnetic compatibility, active embedded             standardization. A clear 83% of respondents stated that the
+components, die to die fault isolation, CTE mismatch, hybrid            industry needs formalized data standardization frameworks for
+bonding quality, power delivery, signal integrity, & interactions       advanced packaging technologies such as fan out wafer level
+across multiple dies & abstraction levels. Such responses show          packaging [7], 2.5D interposers [8], 3D stacked dies [9], &
+that failure analysis in 3DHI is fundamentally a multiscale             hybrid bonding [10], while only 17% disagreed. The associated
+problem. The root cause may no longer map neatly onto one               open-ended comments explain why. Participants asked for
+process module or one structural layer, which raises the need           standardized interconnect & interface definitions, common
+for better integration between package design, process                  failure analysis data formats & handoff procedures, stronger
+knowledge, characterization, & reliability interpretation.              statistical reporting practices, benchmark datasets for AI &
+                                                                        machine learning, standardized techniques for sample
+  VII. WHAT WOULD MOST ACCELERATE FUTURE                                preparation, tool integration with EDA & test ecosystems, &
+                     FAILURE ANALYSIS                                   end to end traceability metadata that captures electrical &
+Among the proposed areas of improvement, higher resolution              thermomechanical intent.
+non-destructive imaging for buried structures & advanced
+packaging received the strongest average score at 8.18 out of
+10. Artificial intelligence & machine learning enabled defect
+detection & classification followed at 7.27 out of 10. Integration
+of standardized data from multimodal sources such as electrical
+failure analysis, physical failure analysis, X ray, & data fusion
+rather than from isolated tool improvements [5].
+
+
+
+
+                                                                        Fig. 5. Industry needs formalized data standardization frameworks in
+                                                                                         advanced packaging failure analysis
+                                                                           Fig. 5. survey responses indicating the perceived need for
+                                                                        additional failure analysis tools and methodologies in advanced
+                                                                        semiconductor technologies. A significant majority of
+                                                                        respondents (83%) agreed that current approaches require
+                                                                        further development to address the growing complexity of
+                                                                        modern packaging and heterogeneous integration architectures.
+                                                                        At the same time, the minority perspective is important. The
+                                                                        respondents who opposed standardization did not reject rigor;
+                                                                        instead, they warned that a single rigid framework may not fit
+Fig. 4. Key improvement areas expected to accelerate failure analysis   the wide diversity of problems, manufacturers, & applications.
+                            workflows                                   They also noted that over standardization could suppress
+   Fig. 4. Depicts the average importance ratings of emerging           creativity & may be difficult to apply in proprietary
+failure analysis technologies, highlighting the significance of         environments. The implication is that the most effective path is
+advanced imaging, AI-assisted defect classification, data               likely a layered standardization model. Core metadata,
+integration, and automated sample preparation in next-                  reporting structures, & multimodal handoff conventions can be
+generation semiconductor packaging. This result supports a              standardized, while detailed analysis strategies remain flexible
+practical roadmap for future development. First, buried                 enough to accommodate product specific constraints.
+structures must become more visible with sufficient resolution
+                      IX. DISCUSSION                                 metrology outputs, electrical test results, optical measurements,
+                                                                     & physical FA observations into a unified representation of the
+Taken together, the survey results support three larger
+                                                                     device or package. Such a framework would allow FA results
+conclusions about the trajectory of failure analysis. First, the
+                                                                     to be used not only for post failure diagnosis, but also for
+center of gravity of failure analysis is moving from a
+                                                                     predictive learning, process correction, yield improvement, &
+predominantly device centric discipline toward package,
+                                                                     reliability forecasting, making FA part of a closed-loop
+interface, & system level diagnostics. This transition does not
+                                                                     engineering system rather than a final-stage activity.
+reduce the importance of device level methods. Rather, it
+indicates that future FA must increasingly address packaging         A particularly important finding is that the survey aligns
+complexity, heterogeneous integration, & cross domain                physical bottlenecks with organizational priorities. The
+interactions among electrical, thermal, mechanical, optical, &       respondents are not merely asking for better microscopes or
+material domains. This shift is especially important for             better algorithms in isolation. They are implicitly pointing
+emerging technologies such as silicon photonics, co packaged         toward an integrated workflow that begins with early
+optics, hybrid electronic photonic integration, backside power       localization & process aware monitoring, proceeds through
+delivery, & three-dimensional integration, where failure             minimally invasive imaging, transitions into targeted
+mechanisms may no longer be confined to a single transistor,         destructive analysis when necessary, & ends with a data
+metal line, or die. In these systems, FA must account for optical    framework capable of linking observations to design intent,
+loss, thermal drift, coupling efficiency, waveguide damage,          process history, & system behavior. This is a more demanding
+interfacial delamination, contamination, stress induced              model of failure analysis than the one traditionally associated
+misalignment, & package level degradation as interconnected          with single die debug, but it is the model increasingly required
+contributors to performance loss.                                    by advanced packaging, heterogeneous integration, silicon
+                                                                     photonics, & future system level electronics.
+Second, the hardest problems identified by the survey are
+coupled problems. Hybrid bonding, backside power delivery,                                   X. CONCLUSION
+silicon photonics, & three-dimensional integration all require          This paper analyzed an industry informed survey of
+simultaneous control of access, imaging, deprocessing fidelity,      approximately one hundred participants regarding the present
+& interpretation. For example, in photonic systems,                  & future needs of failure analysis in advanced semiconductor
+conventional electrical FA alone may be insufficient because         technologies. The results show that heterogeneous integration,
+failures can arise from changes in optical mode confinement,         chiplet, & three-dimensional products now dominate the
+fiber to chip coupling, resonator detuning, heater instability, or   respondent landscape, & that package & heterogeneous
+mechanically induced waveguide deformation. Similarly, in            integration failure analysis has become the highest rated
+hybrid bonded & vertically integrated systems, the relevant          strategic focus area. Hybrid bonding was identified as the
+defect may be buried beneath multiple functional layers & may        hardest new architecture to analyze, while higher resolution
+require a combination of nondestructive inspection, targeted         non-destructive imaging was ranked as the most important
+cross sectioning, electrical characterization, & materials           accelerator, & standardized data frameworks as a broadly
+analysis. These examples suggest that future FA workflows            shared industry need.
+must become more multimodal, physics aware, & application
+                                                                        The broader message is that failure analysis is no longer well
+specific.
+                                                                     described as a sequence of disconnected inspection steps. In
+Third, data infrastructure is becoming nearly as important as        advanced packaging & heterogeneous integration, it must be
+instrumentation. Without standardized multimodal data                treated as a coordinated diagnostic system that connects
+structures, process traceability, & links between inspection         materials, structures, interfaces, package mechanics, design
+results & design intent, even high-quality measurements can          context, & data infrastructure. Survey based studies such as this
+remain isolated & difficult to convert into reusable engineering     one are valuable because they expose where practitioners see
+knowledge. A particularly important direction is the closer          the greatest friction in that system. The complete survey data,
+integration of FA within line & near line process monitoring.        presented in Appendix A (Table I), supports transparency,
+Performing failure analysis only after complete fabrication,         replication, & benchmarking for future work. The present
+assembly, or package level qualification can be expensive, time      results indicate that the future of failure analysis will depend on
+consuming, & sometimes too late to identify the root cause with      simultaneous progress in non-destructive observability, artifact
+sufficient confidence. Future FA should therefore move closer        aware sample preparation, architecture specific diagnostic
+to the manufacturing flow, where early indicators such as wafer      strategies, & flexible but formalized data integration
+warpage, bond interface nonuniformity, optical alignment drift,      frameworks.
+contamination signatures, dielectric damage, or process induced
+stress can be detected before additional value is added through
+subsequent process steps.
+     This in line direction also connects naturally to the
+development of digital twin frameworks for advanced
+electronics manufacturing & packaging. A digital twin could
+combine design files, process parameters, inspection data,
+                   ACKNOWLEDGEMENT                                        Wang, Eds., San Diego, United States: SPIE, Oct. 2024, p. 79.
+                                                                          doi: 10.1117/12.3028177.
+The authors gratefully acknowledge the support of the Florida
+Semiconductor ENGINE program for facilitating this survey                 [6]      K. Yahyaei, M.S.M. Khan, S. Ghosh, A. Roy, P. Craig,
+study. The support provided through the NSF Engine                        N. Varshney and N. Asadizanjani, “X-ADAPT: AI-driven
+contributed to the development, coordination, & dissemination             design-based strategy to address x-ray compatibility challenges
+of the survey, enabling engagement with participants from                 in advanced packaging metrology,” in Metrology, Inspection,
+relevant academic, industry, & research communities.                      and Process Control XXXIX, M. J. Sendelbach and N. G.
+                                                                          Schuch, Eds., San Jose, United States: SPIE, Apr. 2025, p. 209.
+                         REFERENCES
+                                                                          doi: 10.1117/12.3060349.
+[1]      A. Zhou, Y. Zhang, F. Ding, Z. Lian, R. Jin, Y. Yang,
+                                                                          [7]      C. Tc, D. Ho, C. SC, H. Hy, S. Soh, S. Lim, "Fan-Out
+Q. Wang and L. Cao., “Research progress of hybrid bonding
+                                                                          Wafer Level Packaging Development Line," 2020 IEEE 22nd
+technology       for      three-dimensional       integration,”
+                                                                          Electronics Packaging Technology Conference (EPTC),
+Microelectronics Reliability, vol. 155, p. 115372, Apr. 2024,
+                                                                          Singapore,    Singapore,     2020,    pp.    440-444,     doi:
+doi: 10.1016/j.microrel.2024.115372.
+                                                                          10.1109/EPTC50525.2020.9315155.
+[2]     R. Noor, H. Reddy Kottur, P. Craig, L. Kumar Biswas,
+                                                                          [8]      B. Sawyer, B. C. Chou, S. Gandhi, J. Mateosky, V.
+M.S.M. Khan, N. Varshney, H. Dalir, E. Akçalı, B.G. Motlagh,
+                                                                          Sundaram and R. Tummala, "Modeling, design, and
+C. Woychik, Y.K. Yoon and N. Asadizanjani, “US
+                                                                          demonstration of 2.5D glass interposers for 16-channel 28 Gbps
+Microelectronics Packaging Ecosystem: Challenges and
+                                                                          signaling applications," 2015 IEEE 65th Electronic
+Opportunities,”         2023,            arXiv.         doi:
+                                                                          Components and Technology Conference (ECTC), San Diego,
+10.48550/ARXIV.2310.11651.
+                                                                          CA,       USA,       2015,       pp.      2188-2192,       doi:
+[3]      N. Asadizanjani, H. Reddy Kottur, and H. Dalir,                  10.1109/ECTC.2015.7159906.
+Introduction to Microelectronics Advanced Packaging
+                                                                          [9]      J. Fang, X. Guan and E. Li, "The Failure Analysis of
+Assurance. in Synthesis Lectures on Engineering, Science, and
+                                                                          3D-Stacked Die Packaging Flash," 2024 25th International
+Technology. Cham: Springer Nature Switzerland, 2025. doi:
+                                                                          Conference on Electronic Packaging Technology (ICEPT),
+10.1007/978-3-031-86102-4.
+                                                                          Tianjin,      China,      2024,       pp.      1-4,      doi:
+[4]      J. P. Colinge, M. H. Gao, A. Romano-Rodriguez, H.                10.1109/ICEPT63120.2024.10668419.
+Maes, and C. Claeys, “Silicon-on-insulator ‘gate-all-around
+                                                                          [10]     B. Jiang, Y. Yu, Z. Zhong, K. Fan, Q. Lin, J. Liang, H.
+device,’” in International Technical Digest on Electron
+                                                                          Liu and X. Liu, “Cu–Cu hybrid bonding technology: from
+Devices, San Francisco, CA, USA: IEEE, 1990, pp. 595–598.
+                                                                          physical mechanisms to system integration for 3D ICs,” Moore.
+doi: 10.1109/IEDM.1990.237128.
+                                                                          More, vol. 2, no. 1, p. 18, Dec. 2025, doi: 10.1007/s44275-025-
+[5]      P. Craig, N. Varshney, A. Roy, C. Woychik, H. Dalir,             00036-1.
+and N. Asadizanjani, “Motivating automated multimodal
+failure analysis for heterogeneously integrated devices,” in
+Developments in X-Ray Tomography XV, B. Müller and G.
+                                                              APPENDIX A
+    TABLE II. Complete Industry Survey Results: Failure Analysis in Advanced Packaging & Heterogeneous Integration
+    The following table presents all quantitative & qualitative findings from the survey described in the main text. It is included to improve
+  transparency, enable benchmarking, & support future comparative studies. Percentages reflect share of respondents selecting each option;
+                                                  importance ratings are on a 10-point scale.
+
+
+
+ Survey Question / Category                                       Response / Finding                                      Result / Statistic
+
+ A. Respondent Profile and Organizational Background
+
+ Organization type (select all    OSAT and packaging organizations                                                              22%
+ that apply)
+
+                                  Fabless companies                                                                             19%
+
+                                  Failure analysis laboratories                                                                 16%
+
+                                  Systems and OEM organizations                                                                 10%
+                                EDA and tool vendors                                                                    10%
+
+                                Other (academic, modeling/simulation, prototyping, material suppliers)                  23%
+
+B. Supported Product Domains
+
+Primary product domain(s)       Heterogeneous integration, chiplet, and 3D products                                     69%
+supported (select all that
+apply)
+
+                                Photonics and co-packaged optics                                                        41%
+
+                                Logic at advanced nodes                                                                 35%
+
+                                Power products                                                                          24%
+
+                                MEMS and sensors                                                                        20%
+
+                                Memory                                                                                  16%
+
+                                Other                                                                                   14%
+
+C. Importance of Failure Analysis Areas (rated on a 10-point scale)
+
+Rate the importance of each     Package and heterogeneous integration failure analysis                                 7.92 / 10
+FA domain for the coming
+years
+
+                                System-level failure analysis                                                          7.56 / 10
+
+                                Device-level fault isolation                                                           7.51 / 10
+
+                                Device-level physical analysis                                                         7.03 / 10
+
+D. Sample Preparation and Imaging Limitations
+
+Which type of analysis          Non-destructive analysis approaches                                                     72%
+method most needs
+improvement?
+
+                                Destructive analysis approaches                                                         28%
+
+Open-ended requests for non-    Higher resolution; greater penetration depth; faster throughput; improved 3D      Multiple responses
+destructive imaging             reconstruction; multimodal imaging; 3D fault localization without disturbing
+improvements                    assembly; nano-void detection; high-resolution 3D X-ray; AI under limited data
+                                and trustworthiness constraints
+
+Open-ended requests for         Cryogenic SEM for fragile materials; low-dose TEM; sub-angstrom metrology;        Multiple responses
+destructive analysis            ultra-thin lamella preparation
+improvements
+
+Sample preparation              Ultra-thin lamella without artifacts; accurate delayering in advanced BEOL/low-   Multiple responses
+challenges cited (open-ended)   k; access to BSPDNs, TSVs, TGVs, hybrid bonded interfaces; handling
+                                large/warped/non-standard geometries
+
+E. Emerging Architecture Pain Points
+
+Which new architecture is       Hybrid bonding                                                                          54%
+hardest to analyze today?
+
+                                Gate-all-around (GAA) devices                                                           24%
+                                Backside power delivery networks (BSPDN)                                                  14%
+
+                                Other                                                                                      8%
+
+Hybrid bonding: primary         Detecting voids, gaps, and misalignment at the bonding interface                       Most cited
+challenges (open-ended)
+
+                                Cross-section preparation without inducing artifacts                                  2nd most cited
+
+                                Managing warped wafers / dies and impact on bonding yield                             3rd most cited
+
+GAA devices: dominant           Structural damage during electrical probing / nanoprobing                                 56%
+challenge
+
+                                Delayering without losing device integrity                                                44%
+
+BSPDN: dominant challenge       Electrical probing / nanoprobing from the backside                                        75%
+
+                                Locating and isolating defects in buried power rails                                      25%
+
+3D heterogeneous integration:   Heat dissipation; EMC; active embedded components; die-to-die fault isolation;      Multiple responses
+challenges cited (open-ended)   CTE mismatch; hybrid bonding quality; power delivery; signal integrity; cross-
+                                die and cross-abstraction-level interactions
+
+F. What Would Most Accelerate Future Failure Analysis (rated on a 10-point scale)
+
+Rate each proposed              Higher-resolution non-destructive imaging for buried structures / advanced               8.18 / 10
+improvement area                packaging
+
+                                AI / ML-enabled defect detection and classification                                      7.27 / 10
+
+                                Integration of standardized multimodal data (EFA, PFA, X-ray, acoustic)                  6.85 / 10
+
+                                Automation in sample preparation                                                         6.56 / 10
+
+G. Standardization and Data Infrastructure
+
+Does the industry need          Support for formalized frameworks                                                         83%
+formalized data
+standardization frameworks
+for advanced packaging FA?
+
+                                Concerns about rigidity, proprietary constraints, suppression of creativity               17%
+
+Specific standardization        Standardized interconnect/interface definitions; common FA data formats and         Multiple responses
+requests (open-ended)           handoff procedures; stronger statistical reporting; benchmark datasets for AI/ML;
+                                standardized sample preparation techniques; tool integration with EDA and test
+                                ecosystems; end-to-end traceability metadata capturing electrical and
+                                thermomechanical intent.
+

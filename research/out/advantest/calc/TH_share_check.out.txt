@@ -1,0 +1,34 @@
+== (1) CY2025 implied share from Advantest's own sales and TAM ==
+  FY24Q4 Jan-Mar 2025: SoC 148.8 JPYbn / 154 = 0.9662 USDbn; memory 35.1 / 154 = 0.2279 USDbn
+  FY25Q1 Apr-Jun 2025: SoC 191.3 JPYbn / 146 = 1.3103 USDbn; memory 33.5 / 146 = 0.2295 USDbn
+  FY25Q2 Jul-Sep 2025: SoC 173.7 JPYbn / 146 = 1.1897 USDbn; memory 43.9 / 146 = 0.3007 USDbn
+  FY25Q3 Oct-Dec 2025: SoC 165.2 JPYbn / 152 = 1.0868 USDbn; memory 57.3 / 152 = 0.3770 USDbn
+  CY2025 SoC sales  = 679.0 JPYbn = 4.553 USDbn
+  CY2025 mem sales  = 169.8 JPYbn = 1.135 USDbn
+  implied SoC share    = 4.553/6.9 = 66.0%  (company claim 66%; gap -0.0 pts)
+  implied memory share = 1.135/2.1 = 54.0%  (company claim 61%; gap -7.0 pts)
+  implied overall share = 5.688/9.0 = 63.2%  (company claim 65%, TH-115)
+  sensitivity flat FX 146: SoC 67.4%, memory 55.4%
+  sensitivity flat FX 150: SoC 65.6%, memory 53.9%
+  sensitivity flat FX 154: SoC 63.9%, memory 52.5%
+
+== (1b) CY2024 implied share from Advantest's own sales and TAM ==
+  FY23Q4 Jan-Mar 2024: SoC 58.7 / 147 = 0.3993; memory 32.8 / 147 = 0.2231 USDbn
+  FY24Q1 Apr-Jun 2024: SoC 69.1 / 153 = 0.4516; memory 32.0 / 153 = 0.2092 USDbn
+  FY24Q2 Jul-Sep 2024: SoC 109.5 / 154 = 0.7110; memory 36.0 / 154 = 0.2338 USDbn
+  FY24Q3 Oct-Dec 2024: SoC 113.0 / 149 = 0.7584; memory 54.6 / 149 = 0.3664 USDbn
+  CY2024 SoC sales = 350.3 JPYbn = 2.320 USDbn; memory = 155.4 JPYbn = 1.032 USDbn
+  implied SoC share    = 2.320/4.1 = 56.6%  (company claim 56%; gap +0.6 pts)
+  implied memory share = 1.032/1.9 = 54.3%  (company claim 63%; gap -8.7 pts)
+  sensitivity flat FX 147: SoC 58.1%, memory 55.6%
+  sensitivity flat FX 151: SoC 56.6%, memory 54.2%
+  sensitivity flat FX 154: SoC 55.5%, memory 53.1%
+  cross-check: FY2024 SoC Q1-Q4 = 69.1+109.5+113.0+148.8 = 440.4 (FY2024 SoC 440.4, TH-130); memory 32.0+36.0+54.6+35.1 = 157.7 (FY2024 memory 157.7, TH-203)
+
+== (2) Two-vendor split, Jul-Sep 2026 (Advantest FY2026 Q2 vs Teradyne Q3 2026) ==
+  Advantest SoC 353.3 JPYbn / 161 = 2194 USDm; memory 53.4 / 161 = 332 USDm
+  Teradyne  SoC 676 USDm; memory 301 USDm
+  Advantest share of the two-vendor SoC total    = 76.4%  (ratio 3.25x)
+  Advantest share of the two-vendor memory total = 52.4%  (ratio 1.10x)
+  caveats: other vendors excluded (two-vendor shares overstate both); Teradyne segment revenue may include service;
+           Teradyne quarter ends late Sep 2026; revenue recognition differs from Advantest's TAM basis.

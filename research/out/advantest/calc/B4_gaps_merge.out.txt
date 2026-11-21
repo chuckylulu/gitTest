@@ -1,0 +1,140 @@
+exact-form occurrences in parts/*.md: 252 (195 in *_gaps.md files)
+manifest NOT RETRIEVED rows: 24 (9 superseded by a later RETRIEVED file, 15 open)
+  superseded: https://www.advantest.com/investors/pdf/E_BIZ_221027_QA.pdf -> 2022-10-27_advantest_earnings-call-QA-FY2022Q2.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2023-10-25/pdf/2023-23049.pdf -> 2023-10-25_federalregister_FR-2023-23049-BIS-SME-rule.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2025-09-30/pdf/2025-19001.pdf -> 2025-09-30_federalregister_FR-2025-19001-BIS-affiliates-rule.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00789.pdf -> 2026-01-15_federalregister_FR-2026-00789-BIS-license-review-policy-rule.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2025-01-16/pdf/2025-00711.pdf -> 2025-01-16_federalregister_FR-2025-00711-BIS-foundry-due-diligence-rule.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2026-01-15/html/2026-00789.htm -> 2026-01-15_federalregister_FR-2026-00789-BIS-license-review-policy-rule.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2025-01-16/html/2025-00711.htm -> 2025-01-16_federalregister_FR-2025-00711-BIS-foundry-due-diligence-rule.pdf
+  superseded: https://www.govinfo.gov/content/pkg/FR-2023-10-25/pdf/2023-23055.pdf -> 2023-10-25_federalregister_FR-2023-23055-BIS-advanced-computing-rule.pdf
+  superseded: https://investors.teradyne.com/news-releases/news-release-details/teradyne-reports-third-quarter-2026-results -> 2026-10-27_teradyne_press-release-Q3-2026-results.html
+  open: https://www3.advantest.com/investors/pdf/E_BIZ_220728_QA.pdf -> merged into e_biz_220728
+  open: https://www.advantest.com/document/en/investors/aad/E_Info_20260401_02.pdf -> merged into cb_02
+  open: https://www.advantest.com/document/en/investors/aad/E_Info_20260401_03.pdf -> merged into cb_03
+  open: https://www.advantest.com/document/en/investors/aad/E_Info_20260401_04.pdf -> merged into cb_04
+  open: https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2007_FN.pdf -> merged into fy2007
+  open: https://investors.teradyne.com/news-releases -> own line (Sources)
+  open: https://pmc.ncbi.nlm.nih.gov/articles/PMC13609547/ -> merged into pmc
+  open: https://www.bloomberg.com/news/articles/2026-04-28/advantest-shares-decline-after-outlook-misses-on-tight-capacity -> merged into bbg_0428
+  open: https://streetinsider.com/Basic+Content/Nvidia+test+slot+could+send+this+stock+soaring%2C+UBS+says/25021163.html -> merged into streetinsider
+  open: https://www.tipranks.com/news/the-fly/advantest-downgraded-to-market-perform-from-outperform-at-bernstein -> merged into bernstein
+  open: https://xenospectrum.com/en/teradyne-q3-2026-revenue-plateau/ -> merged into xeno_ter
+  open: https://xenospectrum.com/en/china-memory-testing-hbm-equipment/ -> merged into xeno_china
+  open: https://ng.investing.com/news/analyst-ratings/bernstein-cuts-advantest-stock-rating-to-market-perform-slashes-target-93CH-1828631 -> merged into bernstein
+  open: https://www.nasdaq.com/articles/ter-rides-strong-semiconductor-test-segment-more-upside-ahead-0 -> merged into zacks
+  open: https://www.bis.doc.gov/index.php/documents/product-guidance/3211-2023-1-25-updated-faqs-for-oct-7-advanced-computing-and-semiconductor-manufacturing-equipment-rule/file -> merged into bis_faq
+  covered: A4.md:34 customers above 10% of net sales for any half-year or quarter (split over the three A4 lines for 1H FY2026, 1H FY2025 and single quarters)
+merged gaps: 47 keys had more than one occurrence
+  ai_share: 4 occurrences from A1.md, A1_gaps.md, TH.md, TH_gaps.md -> A1
+  hbm_share: 3 occurrences from A1_gaps.md, CL_gaps.md, TH_gaps.md -> A1
+  ap_share: 2 occurrences from A1_gaps.md, TH_gaps.md -> A1
+  cc_split: 2 occurrences from A1_gaps.md, TH_gaps.md -> A1
+  recurring: 3 occurrences from A1.md, A1_gaps.md -> A1
+  adj_gm: 3 occurrences from A1.md, A1_gaps.md -> A1
+  q4_sga: 6 occurrences from A1.md, A1_gaps.md, A3.md, A5.md, A5_gaps.md -> A1
+  reversal: 17 occurrences from A1.md, A1_gaps.md, A2.md, A2_gaps.md, A3.md, A3_gaps.md, A5.md, A5_gaps.md, B1.md, CL.md, CL_gaps.md -> A1
+  tax_oneoffs: 6 occurrences from A1.md, A1_gaps.md, A5.md, A5_gaps.md -> A1
+  q2_charge: 2 occurrences from A1_gaps.md, A3_gaps.md -> A1
+  purchase_commit: 2 occurrences from A2.md, A2_gaps.md -> A2
+  e_biz_220728: 2 occurrences from A2_gaps.md, _manifest.csv -> A2
+  q1q3_guid: 2 occurrences from A3.md, A3_gaps.md -> A3
+  tax_fy23: 2 occurrences from A3.md, A3_gaps.md -> A3
+  tax_fy24: 2 occurrences from A3.md, A3_gaps.md -> A3
+  mtp3_status: 2 occurrences from A3.md, A3_gaps.md -> A3
+  semi_basis: 2 occurrences from A4.md, A4_gaps.md -> A4
+  asia_split: 2 occurrences from A4.md, A4_gaps.md -> A4
+  china19: 2 occurrences from A4.md, A4_gaps.md -> A4
+  corp_adj: 2 occurrences from A4.md, A4_gaps.md -> A4
+  orders_restate: 2 occurrences from A4.md, A4_gaps.md -> A4
+  meti: 2 occurrences from A4.md, A4_gaps.md -> A4
+  bis_faq: 2 occurrences from A4_gaps.md, _manifest.csv -> A4
+  cb_02: 2 occurrences from A5_gaps.md, _manifest.csv -> A5
+  cb_03: 2 occurrences from A5_gaps.md, _manifest.csv -> A5
+  cb_04: 2 occurrences from A5_gaps.md, _manifest.csv -> A5
+  covenants: 2 occurrences from A5.md, A5_gaps.md -> A5
+  facilities: 2 occurrences from A5_gaps.md, B3.md -> A5
+  ye_div: 3 occurrences from A5_gaps.md, B3.md -> A5
+  fy2007: 3 occurrences from A6.md, A6_gaps.md, _manifest.csv -> A6
+  ifrs15: 2 occurrences from A6.md, A6_gaps.md -> A6
+  ifrs16: 2 occurrences from A6.md, A6_gaps.md -> A6
+  tam_method: 3 occurrences from B1.md, TH.md, TH_gaps.md -> TH
+  cap10k: 3 occurrences from B3.md, CL_gaps.md, TH_gaps.md -> TH
+  pmc: 2 occurrences from TH_gaps.md, _manifest.csv -> TH
+  papers: 2 occurrences from TH.md, TH_gaps.md -> TH
+  bbg_0428: 2 occurrences from CL_gaps.md, _manifest.csv -> CL/B
+  streetinsider: 2 occurrences from CL_gaps.md, _manifest.csv -> CL/B
+  bernstein: 3 occurrences from CL_gaps.md, _manifest.csv -> CL/B
+  xeno_ter: 2 occurrences from CL_gaps.md, _manifest.csv -> CL/B
+  xeno_china: 2 occurrences from CL_gaps.md, _manifest.csv -> CL/B
+  zacks: 2 occurrences from CL_gaps.md, _manifest.csv -> CL/B
+  lockup: 2 occurrences from B3.md, CL_gaps.md -> CL/B
+  q3day: 2 occurrences from B3.md, CL_gaps.md -> CL/B
+  calendar: 5 occurrences from B3.md, CL_gaps.md -> CL/B
+  mtp4date: 2 occurrences from B3.md, CL_gaps.md -> CL/B
+  ter_call: 2 occurrences from B3.md, CL_gaps.md -> CL/B
+gap lines per group: A1 22, A2 44, A3 13, A4 21, A5 24, A6 14, TH 25, CL/B 19, Sources 1; total 183
+form check: 0 lines not in the exact form; verdict-word check: 0 lines
+mentions not in the exact form (reviewed by hand; each refers to a logged gap): 61
+  A1_verify.md:57 ... 1), and the 12 Nov 2026 fireside chat. No amount. Logged as NOT DISCLOSED with the list read.
+  A1_verify.md:59 ... offerings", ASR84 p.38, and "Boost Recurring", MTP3 p.20). NOT DISCLOSED; proxies added and labelled as not comp
+  A1_verify.md:60 ... e published; only core operating income (full-year slides). NOT DISCLOSED line added; handoff shows reported / n.
+  A2_verify.md:116 ... 8 Revenue gives revenue by region and segment only). Still NOT DISCLOSED.
+  A2_verify.md:117 ... 6: no inventory note in the 85th report (notes 1-13). Still NOT DISCLOSED; confirmed the split appears only in th
+  A2_verify.md:119 ... , Q&A, 85th report, integrated report, fireside chat. Still NOT DISCLOSED.
+  A2_verify.md:120 ... 38 and MTP3 slides p.33 mention it without a formula. Still NOT DISCLOSED.
+  A2_verify.md:122 ... time: no figure in FY2025 Q3 to FY2026 Q2 documents. Still NOT DISCLOSED.
+  A4.md:114 ... on 23 Jul 2023 [F] (A4-331). The METI original is listed as NOT RETRIEVED under the premise notes.
+  A4.md:141 ... - Orders cannot be checked (NOT DISCLOSED line in the premise notes).
+  A4_verify.md:36 ... o not state a basis. Corrected A4.md and A4-385 and added a NOT DISCLOSED line. The semi-annual figures equal the
+  A4_verify.md:133 ... 25 Jan 2023) | bis.doc.gov URL cited in the rule, one try | NOT RETRIEVED: the response was not the PDF. Kept. |
+  A4_verify.md:134 ... a. | The company says orders "are also not listed". Kept as NOT DISCLOSED with that section cited. |
+  A5_verify.md:27 ... - Net income ex items stays NOT DISCLOSED for want of the tax effect. Note 15(3)
+  A5_verify.md:28 ... 386 at 31 Mar 2026 and 522 at 31 Mar 2025 (new A5-237). The NOT DISCLOSED line for it was removed from A5_gaps.md
+  A5_verify.md:186 ... s are printed (A5-225); the cumulative MTP3 figure is still NOT DISCLOSED.
+  A5_verify.md:191 ... not retried, as instructed.** E_Info_20260401_02/03/04 stay NOT RETRIEVED, with full URLs in A5_gaps.md.
+  A6_verify.md:23 ... rther inventory losses without an amount (A6-315, logged as NOT DISCLOSED).
+  A6_verify.md:25 ... prior years (A6-331 to A6-333). The size of their effect is NOT DISCLOSED.
+  A6_verify.md:88 ... d without them. Items named without an amount are listed as NOT DISCLOSED in A6_gaps.md: FY2019 Q1 inventory loss
+  A6_verify.md:91 ... e 74th term, and sec.gov is unavailable. Nothing new; still NOT RETRIEVED.
+  A6_verify.md:92 ... ,099. The one-time part is still not separated, so it stays NOT DISCLOSED.
+  B1.md:17 ... 25 Apr 2025) [C] (TH-043). | For: [C]. The share method is NOT DISCLOSED (see B1-6), and the [I] check shows onl
+  B1.md:18 ... 1-315) and the 1H FY2026 margin [C] (CL-073); the amount is NOT DISCLOSED (table below). Higher DRAM and other co
+  B1.md:21 ... hare estimates. | For: [C], a company estimate; method: the NOT DISCLOSED line on the TAM and share method (gaps.
+  B1.md:28 ... 6) gross margin | 71.1% [F] (CL-026) | Same reversal | Same NOT DISCLOSED line |
+  B1.md:29 ... ng margin | 54.0% [I] (A1-516, High) | Same reversal | Same NOT DISCLOSED line |
+  B1.md:30 ... rgin | 51.9% [C] (CL-034) | Same reversal, inside 1H | Same NOT DISCLOSED line |
+  B1.md:70 ... and 1H FY2026 [C] (CL-073); its amount and any Q2 part are NOT DISCLOSED (table above).
+  B3.md:9 ... where no date is published, the date cell carries the exact NOT DISCLOSED line instead of an estimated date or "d
+  B3.md:12 ... | Date (or month; a NOT DISCLOSED line where no date is published) | Even
+  B3.md:57 ... | Same NOT DISCLOSED line as the dividend-payment row | Q1 F
+  B3.md:58 ... | Same NOT DISCLOSED line as the dividend-payment row | Q2 F
+  CL.md:85 ... [F] (CL-025); GM 71.1% [F] (CL-026) | not computable (same NOT DISCLOSED item) | same reversal; whether any of i
+  CL.md:87 ... 6-Mar 2027) | OPM 51.9% [C] (CL-034) | not computable (same NOT DISCLOSED item) | same reversal | - |
+  CL_verify.md:172 ... report found nothing. The 403 URLs were not retried. Still NOT RETRIEVED.
+  CL_verify.md:173 ... - **Teradyne flat Q4 guide**: the press analysis is still NOT RETRIEVED, but the primary fact now comes from Te
+  CL_verify.md:174 ... : the Teradyne IR home page lists only the UBS event. Still NOT DISCLOSED.
+  CL_verify.md:175 ... amount**: the 85th semi-annual report was also read. Still NOT DISCLOSED.
+  CL_verify.md:176 ... results day**: the IR news index 2026 was also read. Still NOT DISCLOSED.
+  TH.md:203 ... - Theme share of revenue (company definition): NOT DISCLOSED as an AI, HBM or advanced-packaging sha
+  TH.md:220 ... - Two attempts at Teradyne URLs returned 404 and are logged NOT RETRIEVED in the manifest. Firecrawl credits ran
+  TH_verify.md:30 ... ming. TH-181 note and TH.md section 6 updated; method stays NOT DISCLOSED.
+  TH_verify.md:248 ... rt 85th text for AI/HPC revenue statements; none. Gap stays NOT DISCLOSED; the company's "majority HPC/AI" statem
+  TH_verify.md:250 ... e arXiv API record once (one request, saved); no venue. New NOT DISCLOSED gap line added.
+  TH_verify.md:251 ... - TH_gaps.md: all 29 lines match the exact NOT DISCLOSED / NOT RETRIEVED forms; TH.md gap lines
+  TH_verify.md:251 ... - TH_gaps.md: all 29 lines match the exact NOT DISCLOSED / NOT RETRIEVED forms; TH.md gap lines rewritten into t
+  XM_fixlog.md:15 ... e CB-terms line is now in gaps.md under A5 and after the CB NOT RETRIEVED line in dossier 7.2. Counts were re-run
+  XM_fixlog.md:15 ... were re-run after all round-1 additions: 183 gap lines, 152 NOT DISCLOSED and 31 NOT RETRIEVED, A5 24 (not the cr
+  XM_fixlog.md:15 ... round-1 additions: 183 gap lines, 152 NOT DISCLOSED and 31 NOT RETRIEVED, A5 24 (not the critic's 179/A5 23, bec
+  XM_fixlog.md:16 ... | 2 | FIXED | B3 row: date cell is the NOT DISCLOSED line for the FY2026 full-year results d
+  XM_fixlog.md:16 ... date; the past-pattern [I] Low (CL-127) phrase removed. The NOT DISCLOSED line under the table is the gaps.md CL/
+  XM_fixlog.md:19 ... 702 ("January 2027 [F] (CL-094)"), 705 (Teradyne call-date NOT DISCLOSED line as date), 710 ("Around May 2027 [C
+  XM_fixlog.md:31 ... | 17 | FIXED | Handoff and section 2 keep only the NOT DISCLOSED line and point to dossier 3.7; 3.7 says
+  XM_fixlog.md:67 ... 26, by day, with a form-based company search; recorded as a NOT RETRIEVED line under A3 and a save-by-hand bullet
+  XM_fixlog.md:89 ... and 5.2; 3.2 FY2025 Q2 "Without" cell is "not computable - NOT DISCLOSED line in the Amount cell"; FY2025 row dr
+  XM_fixlog.md:90 ... pendent-slot rows "0"; every "not computable" now names its NOT DISCLOSED line; 10.1 B1-6 "method: NOT DISCLOSED
+  XM_fixlog.md:90 ... table" now names its NOT DISCLOSED line; 10.1 B1-6 "method: NOT DISCLOSED line in section 9.3" (also in parts/B1.
+  XM_reconcile.md:47 ... 27). No amount in the notes, Q&A, slides, tanshin or ASR84: NOT DISCLOSED (unchanged).
+  XM_reconcile.md:57 ... ul-Sep 2026); the 1H remark may restate the Q1 item. Amount NOT DISCLOSED in every document read.
+  XM_reconcile.md:157 ... , Q1 FY2026 Q&A A9); whether any of it fell in FY2026 Q2 is NOT DISCLOSED. [reconcile XM 2026-11-21] |
+wrote /home/user/gitTest/research/out/advantest/gaps.md

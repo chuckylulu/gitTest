@@ -1,0 +1,44 @@
+== SoC tester TAM estimate path (USD bn) ==
+  CY2024 2024-01-31 first                                3.3-3.6   mid 3.45  [TH-104]
+  CY2024 2024-04-26                                      2.9-3.2   mid 3.05  [TH-106]
+  CY2024 final (FY25 slides 2026-04-27)                  4.1-4.1   mid 4.10  [TH-099]
+  CY2024: latest/final midpoint vs first midpoint = 4.10/3.45 -> +18.8%
+  CY2024: lowest midpoint 3.05; final vs lowest +34.4%
+  CY2025 2025-01-29 first                                4.2-4.8   mid 4.50  [TH-107]
+  CY2025 2025-07-29                                      5.7-6.3   mid 6.00  [TH-109]
+  CY2025 2025-10-28                                      6.5-6.9   mid 6.70  [TH-110]
+  CY2025 final (2026-04-27)                              6.9-6.9   mid 6.90  [TH-096]
+  CY2025: latest/final midpoint vs first midpoint = 6.90/4.50 -> +53.3%
+  CY2026 2026-01-28 first                                8.5-9.5   mid 9.00  [TH-111]
+  CY2026 2026-04-27                                      8.7-9.5   mid 9.10  [TH-113]
+  CY2026 2026-07-29                                     10.5-11.5  mid 11.00  [TH-114]
+  CY2026 2026-10-28 'approx. 11.5'                      11.5-11.5  mid 11.50  [TH-102]
+  CY2026: latest/final midpoint vs first midpoint = 11.50/9.00 -> +27.8%
+
+== Memory tester TAM estimate path (USD bn) ==
+  CY2024 2024-01-31 first                                1.3-1.6   mid 1.45  [TH-105]
+  CY2024 final (2025-04-25)                              1.9-1.9   mid 1.90  [TH-100]
+  CY2024: latest/final midpoint vs first midpoint = 1.90/1.45 -> +31.0%
+  CY2025 2025-01-29 first                                1.7-2.2   mid 1.95  [TH-108]
+  CY2025 final (2026-04-27)                              2.1-2.1   mid 2.10  [TH-097]
+  CY2025: latest/final midpoint vs first midpoint = 2.10/1.95 -> +7.7%
+  CY2026 2026-01-28 first                                2.2-2.7   mid 2.45  [TH-112]
+  CY2026 2026-07-29 / 2026-10-28 (around midpoint)       2.5-3.0   mid 2.75  [TH-103]
+  CY2026: latest/final midpoint vs first midpoint = 2.75/2.45 -> +12.2%
+
+== Year-on-year growth of company TAM (total) ==
+  CY2024 vs CY2023: 6.0/4.4 -> +36.4%
+  CY2025 vs CY2024: 9.0/6.0 -> +50.0%
+  CY2026e vs CY2025: 13.0-14.5 / 9.0 -> +44.4% to +61.1%
+  CAGR CY2023->CY2026e: 43.5% to 48.8% per year (company says about 50%/yr, TH-042)
+  SoC CY2026e vs CY2025: +52.2% to +66.7%
+
+== MTP3 (Jun 2024) market assumption vs latest company estimates ==
+  CY2024-26 average now: 9.33 to 9.83 USD bn vs MTP3 assumption 5.9
+  -> +58.2% to +66.7% above the MTP3 assumption
+  MTP3 assumed growth vs MTP2 average: +15.7%; latest implies +83.0% to +92.8%
+
+== Teradyne vs Advantest TAM statements ==
+  CY2025 ATE TAM: Advantest 9.0 vs Teradyne ~9.0 -> difference +0.0
+  Teradyne target-model TAM 12.0-14.0 vs Advantest CY2026e 13.0-14.5:
+    overlap range 13.0-14.0; Advantest CY2026e midpoint 13.75 vs Teradyne target midpoint 13.00

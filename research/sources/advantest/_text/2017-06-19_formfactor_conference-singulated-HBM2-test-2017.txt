@@ -1,0 +1,262 @@
+     Verification of Singulated HBM2
+      stacks with Die Level Handler
+   Dave Armstrong
+Toshiyuki Kiyokawa
+        Quay Nhin
+                                         Abstract
+                                     Background only – will
+                                     delete on final material
+
+
+• High-Bandwidth-Memory continues to evolve and demand more stringent testing
+  requirement in terms of test coverage & speed as well as probing accuracy. The recent
+  breakthrough of 2.5D and 3D wafer level packaging technologies has opened up many new
+  possibilities and challenges from test perspectives. A faster tester with higher signal fidelity
+  performance is needed along with an advance probe card technology that can provide the
+  required signal fidelity and the ability to successfully probe on TSV micro-bump structure in
+  an ultra-low pitch grid array. The new test flows and test insertion points needed to
+  validate true “known-good-stack” will be discussed.
+• This presentation introduces the HBM2 requirements and addresses the key electrical
+  challenges focusing on simulation versus actual tester measured results collected from
+  direct MicroBump probing above 2 Gbps on all HBM2 Direct Access data
+  channels. Measurement data will be shared from probing HMB2 devices under various
+  probing conditions such as test temperature, test durations, and overdrive, and the various
+  test insertions.
+                                        Paper Discussion Outline
+• Industry Need for High Performance HBM Memory
+    –   HBM process flow and test insertion point
+    –   Known good stack die probing key challenges
+
+• Test Cell explanation : T5503HS + HA1000L + FFI Probecard
+• Probe card design challenges: probing on TSV bump and <60um pitch
+    –   Space Transformation, and MEMs spring development
+    –   Probe card specification
+
+w Direct on Micro-bump probing results
+    –   Overdrive versus probe force & probe diameter/depth discussion
+    –   Ambient scrub mark pictures & result
+    –   High temperature scrub mark & test result
+
+• Signal output/input
+    –   Simulation vs Actual Measurement result @ 2Gbps
+    –   1ch drive vs 8ch simultaneous drive actual result
+    –   1.6GHz/3.2Gbps simulation result
+
+   Proven benefits of this approach & Next Steps
+    –   Final product testing
+    –   High temperature and High frequency
+    –   Multi-site for future HVM
+HBM Addresses the Industry’s Need
+for High Performance Memory
+• Increased Bandwidth
+• Lower Power Consumption
+• Higher Density Package
+   – HBM provide higher bandwidth than GDDR5 technology
+   – 40% less power consumption
+   – Smaller form factor with variety of density solutions
+                                                                                                     Source: AMD
+                                                                                        8Hi HBM2 [64Gb]
+
+
+                                                                                Applications and drivers
+                                                                                   Graphic card
+                                                                                   Server/Network
+                                                                                   Game Console
+                                                                                   High performance computing
+                                                                                   Personal Computer
+                                                                                   Artificial Intelligence
+                                              Source: https://www.skhynix.com
+                               HBM Flow and KGSD Test Challenges
+ memory core
+
+Wafer/TSV process   Flip   Thinning
+                           & Bump      dicing
+ logic     wafer test      formation                                                                            Shipment
+                                                               Flip
+                                                                                   Dicing
+                                                                                   & Debonding
+Wafer/TSV process Flip     Thinning             stack & Mold
+                            & Bump                              Post-stack Wafer
+           wafer test      formation
+                                                                                                 KGSD Verification on
+                                                                Test (PSWT) Test
+                                                                Pad @Test Mode                   μBump @Speed Test
+Key Challenges
+       o    Handling of bare stack die
+       o    Thermal movement
+       o    Contact stability at elevated temperature
+       o    Micro-bump “coining” behavior at high temp
+              Known-Good-Stack Testing Goals
+
+• Contact all micro-bumps on HBM stacks to allow native mode functional and
+  performance testing on all eight memory channels.
+
+• Support at-speed testing > 2.4Gbps.
+
+• Confirm hot-temperature and cold-temperature testing.
+
+• Reliable contact to >4,000 micro-bumps with a pitch of 55um.
+                          Test Cell explanation
+  T5503
+  Main Frame                   TH Manipulator
+                               䠄RAM:PDT2340-502R)
+
+                                       T5503
+                                       Test Head
+
+
+
+
+Chiller
+           Filter unit
+                         HA1000L
+            Known-Good Stack Probing Solution
+HA1000 is a Flexible handling & probing
+system for singulated die and stack testing.
+
+The HA1000 is ideal for confirming             Key Characteristics
+Known Good Die (KGD) and
+Known Good Stacks (KGS).                       • Vision alignment system aligns to the finest geometries.
+                                               • Handles 3D stacks regardless of number of die or height.
+                                               • Vision alignment aligns to the smallest features.
+                                               • Automatic thermal control tests from -40C to +125C.
+                                               • Very low thermal resistance.
+                                               • Ideal for catching defects before they propagate to the
+                                                next customer and assembly level.
+               Probe Card Design Requirement
+            JEDEC HBM2 Layout Configuration and ST Routing Challenge
+                                                  HBM Array Structure
+  I/O PWR
+
+
+
+
+                                                    •   Total TSV Micro Bumps: 3990
+                                                           í 55μm Micro Bump Pitch
+                                                               (27.5 x 48um staggered)
+  PWR
+
+
+
+
+                                                    •   Total IO Micro Bumps: 1728
+                                                    •   Direct access micro bumps176
+                                                    •   Total Power Supplies: 3 – 1056
+Access
+Direct
+
+
+
+
+                                                    •   Total ground Micro Bumps: 1030
+
+                                                • Array size
+                                                   – 6022μm x 2832μm
+                                                • Test requirement
+                                                   – 2.133 Gb/s Functional test of the
+                                                     stack
+                                                   – All 8 device channels
+                             Probe card design challenges
+                             Probing on TSV bump at <50um staggered pitch
+Actual FFI Apollo MF40 Probe Card
+                                                                  FormFactor Solution
+                                                                     – Apollo MF40 MEMs
+                                                                         • High speed grid array application
+                                                                         • 1GHz [2Gb/s] on TSV Micro-bump
+
+
+                                                                  Challenges:
+                                                                     – Design rules for high speed
+                                                                         • SI simulation validation
+                                                                         • Impedance control from LIF to Tip
+                                                                     – MEMs probe development
+                                                                         • K-force vs CRES optimization
+                                                                         • Life time vs CCC requirement
+                                                                     – ST Trace geometry
+                                                                         • Line & Space technology
+                                                                         • Routing challenges
+                                                    Probe array
+                                                                     – ST Manufacturability
+Space Transformation Design Challenges
+                        Small die size, high bump counts
+                        • ~4000 traces in ~6x3mm
+                        • FFI proprietary ST MLO fan-out
+                          design enabler
+                        • Tight line/spacing requirement and
+                          manufacturability
+                        • Impedance control optimization
+
+
+
+
+                                                           11
+FFI MF40 Micro-Bump Probing Characteristics
+         HBM2 Die Micro-bump Probing Results - Ambient
+• We succeeded in contacting all I/O pins
+• Ambient scrub mark pictures & result
+   – Contact Time:6sec, Contact : 1 time vs 2 times
+   – Contact Time:60sec, Contact : 1 time vs 2 times
+   HBM2 Die Micro-bump Probing Results – High Temperature
+• We succeeded in contacting all I/O pins
+• High temperature scrub mark & test result
+   – Contact Time:6sec, Contact : 1 time vs 2 times
+   – Contact Time:60sec, Contact : 1 time vs 2 times
+
+
+
+
+                  Over Drive:50um
+Signal output/input
+• Simulation vs Actual Measurement result @ 2Gbps
+                        Simulation                                                       Actual Measurement
+           PRBS                          T5503                           •   PRBS signal driver and T5503HS’s comparator were
+                       Probe                                                 WHUPLQDWHGZLWKƻ
+  Victim
+           PRBS                          Pin                   Eye
+                       Card                                              •   Signal height was 1.2V
+  PRBS     PRBS                          Elect.                Diagram
+           PRBS        Model
+                                         Model
+           Simulation schematic of HBM as driver at 1 victim
+Signal output/input
+
+• 1ch drive vs 8ch simultaneous drive actual result
+   – 1ch measurement / 1ch drive Eye width is bigger than 1ch measurement / 8ch drives
+
+
+
+
+  Shmoo(Dout) 1ch meas. / 1ch drive                                Shmoo(Dout) 1ch meas. / 8ch drives
+Signal output/input
+  • 1.6GHz/3.2Gbps simulation result
+      – MF40 technology supports operating speed to 3.2Gbps with additional design rules optimization
+                                                  eye-pattern evaluating point
+
+   T5503HS’s        Probe Card’s                                                 3.2Gbps Signal Performance
+                                                        DUT
+   driver model     measured S-para
+                   S-para was measured by            Including HBM2
+                   Network Analyzer up to10GHz.      IBIS model
+Benefit Summary
+
+• Working together as a team Advantest together with FormFactor developed a
+  production worthy tool for confirming Known-Good Memory Stacks with >4,000 micro-
+  bumps and 55um bump pitch.
+
+• The resulting design exceeded our design goals of 0.8g/probe and >160mA CCC with a
+  wide operational temperature range.
+
+• The solution exceeded our high frequency goal demonstrating >3 Gbps performance.
+
+• The solution contacts to all eight HBM channels enabling native mode performance
+  and functional testing of these complex devices.
+                              Contributors
+         Special thanks to the following contributors to this paper
+         • Uyen Nguyen
+         • Todd Swart
+
+
+
+
+Author                                                                19
+

@@ -1,0 +1,267 @@
+Next Generation KGD Memory Test Achieved
+  Wafer Level Speed Beyond 3GHz/6Gbps
+
+
+                                                Byeongseon Ko
+                                          SK hynix, Engineering Director
+                                            Alan Liao (Speaker)
+                        FormFactor, Director Probe BU Product Marketing
+                                   Agenda
+• Is Known Good Die/Stack Test Needed?
+     – Advanced packaging complexity trend
+     – KGDS Tester Insertion in HBM manufacturing flow
+• KGDS test requirements challenge probe card design
+     – DRAM speed spec drives KGDS test speed requirement
+• Probe Card solution for KGD test
+     – Probe card solution case study: KGS HBM2 and KGD LPDDR4
+• Electrical Performance Validation
+     – Probe card design simulation & measurement vs. production test result
+• Feature Development Direction and Acknowledgement
+     – Conclusion, feature development and acknowledgement
+
+Byeongseon & Alan                                                              2
+      Why DRAM KGDS Test Needed in Advanced Packaging?
+• Advanced Packaging Complexity Trend:
+    – From simple SoC + HBM to multiple SoC + multiple HBM
+    – HBM DRAM stack increased
+    – Package size growing
+• Advanced Packaging Revenue Growth in
+  CAGR 6.6% (2014~2025)
+    – More chips in the package  high value $
+                                                               Source: Cadence website
+
+    – Advanced Packaging offers more features and computing
+      power than individual IC package result into market
+      growth
+• DRAM KGDS Test Help Reduce Risk and Cost
+  on Advanced Packaging/HBM
+    – Higher complexity  lower yield
+    – Higher complexity  higher packaging cost
+    – Earlier defect detection help save package cost
+        https://www.swtest.org/swtw_library/2020proc/pdf/00p
+        m_SWTest_Untethered_Keynote_Slessor_FormFactor.pdf
+
+
+
+  Byeongseon & Alan                                                                3
+   Choices of Known Good Die/Stack Test in HBM Manufacturing Flow
+                             KGD Test: At Wafer
+                             Sort Test
+    DRAM Wafer
+
+      Wafer/TSV process   Flip    Thinning
+                                  & Bump        dicing
+       Logic wafer test           formation                                                                                                                        Shipment
+                                                                                                               Dicing
+                                                                              Flip                             & Debonding
+      Wafer/TSV process   Flip    Thinning                     stack & Mold            KGS Test: Post-
+                                   & Bump                                              stack Wafer Test                                  KGS Test: Post-Stack
+                   wafer test     formation                                                                                              Single Die Test
+
+                                                  Chioce 1                                               Chioce 2                                        Chioce 3
+                                           (Known Good Die Test)                             (Known Good Stack Wafer Test)                  (Known Good Stack Single Die Test)
+Where to Test in the HBM Flow:                DRAM Wafer Sort                                   DRAM Wafer Post Stacking                        DRAM Stack Die Post Dicing
+             Probing Interface:               Pad on DRAM Die                               Sacrifical PAD in HBM Bump Array                       HBM Micro-Bumps
+       Probe Card Technology:             DRAM HFTAP Probe Card                                  DRAM HFTAP Probe Card                          Vertical MEMS Probe Card
+                                 Probing recipe and probe card technology                        Known good stack result
+                     Advantage: similar to wafer sort test. Earliest detection         Relatively cost effective solution (high test     Full test coverage, truly known good stack
+                                              in HBM Mfg flow                            efficiency and good enough coverage)
+
+                                                                                     Test strategy and DFT build to die design to get   HBM2 bump pitch and signal count challenge
+                                    Known good die only, not able to detect                      good enough coverage                      space transformer fan out (high cost)
+                    Challenges:
+                                         defects during wafer stack                  Probing recipe optimization for wafer stack and     Probing recipe develop on single die stack
+                                                                                       CTE management on composition material                            handling
+
+                                                                                                                                          https://www.swtest.org/swtw_library/2017pr
+                                                                                                                                          oc/PDF/S09_01_Nhin_SWTW2017R2.pdf
+
+  Byeongseon & Alan                                                                                                                                                                    4
+      HBM and DRAM Data Rate Spec Drives KGD Test Requirement
+• HBM Application Expands to Broader Market
+     – From Graphic to Server, AI, Automotive, HPC
+• HBM to HBM3 Performance Enhancement
+     – Faster data rate speed
+     – Higher memory bandwidth
+     – Wider temperature range
+• KGD Test Requirements, PC Challenges
+     – Probe Card speed requirement from 1.6GHz to >3GHz
+     – Temperature range from -40~125C to -40~150C
+     – Test efficiency to meet high volume production
+
+                                                           Source: SK Hynix Presentation “An In-depth Study of High Bandwidth Memory”
+
+
+
+
+Byeongseon & Alan                                                                                                                 5
+     Probe Card Solutions Case Study: KDS HBM2 and KGD LPDDR4
+• KGS HBM2 Probe Card                              • KGD LPDDR4 Probe Card
+     – Max 64DUTs, 18TD, T11.2P (-40~150°C)            – Max 128DUTs, 45TD, T11.2P (-40~150°C)
+     – Target Speed 3.2GHz                             – Target Speed 3.2GHz
+     – Advantest T5503 HS2 H7-010508                   – Advantest T5503 HS2 H7-010569
+
+
+
+
+              Both Probe Card Solution Achieve Highest DUT Parallelism and Speed
+              Requirement (>3GHz), T11.2P Offers Wide Temperature Range
+
+Byeongseon & Alan                                                                                6
+FFI KGDS Probe Card Design Experience: Design & Actual Correlated
+                                                                                                                                                              Eye-Diagram
+                                                                                                                                                         Assume 50ohm on die termination
+                                                   Insertion Loss                                                       Return Loss                           Prefect Input Signal
+                                      0                                                                0
+  Design Simulation
+
+
+                                      -1                                                             -10
+
+                                      -2                                                             -20
+                                                       ~3.6GHz @-3db
+                                      -3                                                             -30                                                              Height: 0.329
+                         dB(S(2,1))
+
+
+
+
+                                                                                        dB(S(1,1))
+                                      -4                                                             -40           3.2GHz@-20db
+                                      -5                                                             -50
+
+                                      -6                                                             -60
+
+                                      -7                                                             -70
+                                           0   1   2   3     4     5    6   7   8   9                      0   1    2    3    4     5    6   7   8   9
+
+                                                            freq, GHz                                                        freq, GHz
+  Outgoing Measurement
+
+
+
+
+                                                           ~3.5GHz @-3db
+                                                                                                                                                                        Height: 0.328
+                                                                                                                   3.2GHz@-18db
+
+
+
+
+Alan                                                                                                                                                                                       7
+                    KGD LPDDR4 Probe Card SHMOO Result
+                                     •   SHMOO Plot from Tester on TCK vs. TAC Pin at
+                                         105°C Test
+                                          – LPDDR4 KGD test target spec 4.266Gbps
+                                            (~2.2GHz)
+                                          – Maximum test speed run up to 6.061Gbps
+                                            (~3.0GHz)
+                                          – Test pattern total # of transition >1632 times
+                                          – Test pattern considered ISI (inter symbol
+                                            interference)
+                                     •   Conclusion:
+                                          – From 2GHz speed to 3 GHz speed test all
+                                            patterns passed enough timing margin
+                                          – From 2GHz to 3 GHz, probe card degradation
+                                            within 25ps only. Exceeds expectation.
+                                          – FFI K32 probe card proven works beyond 3GHz
+                                            speed test
+
+
+Byeongseon & Alan                                                                        8
+         KGD LPDDR4 Probe Card D-Eye SHMOO Result
+                                  D-Eye (VRE_OUT vs. TAC) SHMOO
+                                   Data Rate 4.266Gbps and 6Gbps
+
+
+
+
+                                                     Eye-Height:
+                                                     ~140mV
+                    Eye-Height:
+                    ~200mV
+
+
+
+
+     • At 3GHz data rate, eye-height achieve ~40% good margin for KGD test
+
+Byeongseon & Alan                                                            9
+           LPDDR4 Probe Card D-Eye SHMOO Conclusion
+
+Perfect
+Input
+Signal
+
+
+
+
+                      Tester Input Signal      Probe Card Output      D-Eye SHMOO from Test Floor
+                      Simulation 3.2GHz        Simulation 3.2GHz      3.0GHz Data Rate Test Pattern
+          • FFI simulation considered tester and probe card signal degradation
+          • Simulation considers ideal case (no crosstalk noise and power/GND noise)
+          • Simulation shows 43% eye height, confirmed by SHMOO plot and test floor data,
+            performance reach 90~95% to the simulation result.
+          • Both simulation and actual test result show FFI K32 probe card capable for >3GHz
+            test speed, correlate between design simulation and test result
+
+  Byeongseon & Alan                                                                                   10
+       Further Improve Probe Card Speed Performance Beyond
+                         4GHz Specification
+
+                                                    • FFI PCB Design Measurement
+                                                      Result Show There is Path for Probe
+                                                      Card Support >5GHz KGDS Test
+                                                      Requirement
+                                                       – Multiple signal channel PCB only
+                                                         simulation
+                                                       – With advanced design rule (for HFTAP K40
+                                                         and K50 product)
+                                                       – Existing tester configuration
+                                                       – With PCB high speed material and
+                                                         manufacturing rule
+                                                       – -3dB bandwidth improve by 1.9GHz
+        M1: PCB design with Advanced Design Rule
+        M2: PCB design with HFTAP K32 Design Rule
+
+Alan                                                                                           11
+        Future KGDS Probe Card Development Direction
+• Satisfy for Higher Speed Test
+  Requirements
+   – K32 (3.2GHz) has released to HVM
+   – K40 (4.0GHz) in customer evaluation
+   – Probe Card architecture proven for
+     >5.0GHz speed
+   – >4.0GHz development pending ATE
+     roadmap
+• Increase Test Efficiency by Raising
+  Maximum # of DUT on Probe Card
+   – K16 (1.6GHz) has a solution for x2
+     signal sharing by x2 TTRE technology
+     to double the parallelism
+   – Co-working with tester companies for
+     higher density channels for x256 DUT
+     at 3.2GHz ~ 4.0GHz solutions
+
+ Alan                                                  12
+          Key Take Aways and Acknowledgments
+• KGDS Test Demand Increase as Advanced Packaging (HBM) Chip demand Increases Dramatically
+    – AP IC revenue continues growing since 2014 forecast at 6.6% CAGR
+    – As more IC integrate to AP and size & signal channel scale, AP become more complex which leads to a low
+      yield and high-cost combination.
+    – KGDS test is one way to improve final yield and reduce packaging cost by eliminating bad components at
+      early packaging stages
+• KGDS Test Requirements Continue to Challenge Probe Card Technology
+    – KGDS test speed requirement continues to increase (from 800MHz to 3.2GHz)
+    – As AP IC demand increases, KGDS test solution requires better test efficiency to reduce cost and support
+      higher volume
+    – FFI HFTAP probe card technology has validated on production test passed 3.0GHz speed and achieved max
+      128 DUT. Performance and measurement data show promising result on Probe Card support higher speed
+      and parallelism
+• Acknowledgment
+    – Mr. Byeongseon Ko (SK hynix): worked with FFI provided production test data
+    – Mr. MJ Lee (FFI): provided materials for this presentation
+    – Mr. Jim Tseng (FFI): provided simulation & measurement data for this presentation
+
+ Alan                                                                                                        13
+

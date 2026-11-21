@@ -1,0 +1,99 @@
+[1] distinct ids cited: 1185; total citations: 1572
+[1] cited ids not found in evidence.csv: 0
+[2] tag mismatches (cited tag vs evidence tag): 0
+[3] [I] tags without High/Medium/Low: 0
+[4] verdict-word occurrences: 0
+[5] valuation-vocabulary occurrences (review by hand): 25
+    line 3: valuation | Date: 2026-11-21. Scope: one company, process-control theme "test" (automatic test equipment for AI chips, HBM and advanced packaging). No s
+    line 3: multiples | Date: 2026-11-21. Scope: one company, process-control theme "test" (automatic test equipment for AI chips, HBM and advanced packaging). No s
+    line 37: valuation | | No one-off was named in the 2018-19 trough quarter (module first draft) | Management named an inventory valuation loss of about JPY 2 bn i
+    line 125: valuation | | FY2026 Q1 (Apr-Jun 2026) | Reversal of inventory obsolescence, "not expected to occur on a recurring basis" [C] (A1-315); gross margin hel
+    line 127: Valuation | | FY2026 Q1 (Apr-Jun 2026), Q2 (Jul-Sep 2026) and 1H (Apr-Sep 2026) | Valuation gains on strategic-investment financial instruments, in fina
+    line 127: valuation | | FY2026 Q1 (Apr-Jun 2026), Q2 (Jul-Sep 2026) and 1H (Apr-Sep 2026) | Valuation gains on strategic-investment financial instruments, in fina
+    line 132: valuation | - LTM (Oct 2025-Sep 2026) income before tax without the call-option gain and the 1H FY2026 (Apr-Sep 2026) valuation gains: JPY 724,954 m, 50
+    line 134: valuation | - Recurring inventory valuation losses, not named as one-offs: JPY 17,712 m in FY2024 (Apr 2024-Mar 2025) and 16,006 m in FY2025 (Apr 2025-M
+    line 135: valuation | - Net income without the named items: NOT DISCLOSED (read: FY2025 tanshin notes; Annual Securities Report 84th, Note 15(3) tax-rate reconcil
+    line 233: valuation | - Inventory valuation losses expensed: JPY 7,347 m (FY2023, Apr 2023-Mar 2024) [F] (A2-048), 17,712 m (FY2024, Apr 2024-Mar 2025) [F] (A2-04
+    line 310: valuation | | FY2026 Q2 (Jul-Sep 2026) | Q2 FY2026 (29 Jul 2026) | 434.5 [C] (A3-146) -> 477.7 [F] (A3-184), +9.9% [I] High (A3-291) | 224.5 [C] (A3-147
+    line 372: valuation | - Guidance implies about JPY 1,075 m of net financial items in 2H vs 53,425 m in 1H, when 1H held JPY 54,171 m of valuation gains [I] Medium
+    line 385: valuation | - NI and margin figures include the named one-offs (FY2024 impairment, Apr 2024-Mar 2025; FY2025 divestiture and call-option gains, Apr 2025
+    line 526: valuation | - One-offs inside the net income used: FY2024 (Apr 2024-Mar 2025) impairment (21,393) [F] (A5-167); FY2025 (Apr 2025-Mar 2026) call-option g
+    line 561: valuation | | One-offs named by management | ~JPY 3 bn inventory valuation losses in FY2022 Q4 (Jan-Mar 2023) [F] (A6-219); none in FY2023 Q1 (Apr-Jun 2
+    line 561: valuation | | One-offs named by management | ~JPY 3 bn inventory valuation losses in FY2022 Q4 (Jan-Mar 2023) [F] (A6-219); none in FY2023 Q1 (Apr-Jun 2
+    line 566: valuation | | Other one-offs in the window | 1H FY2023 (Apr-Sep 2023) settlement income JPY 3,179 m [F] (A6-220), placed in FY2023 Q2 (Jul-Sep 2023) by 
+    line 568: valuation | - The FY2019 (Apr 2019-Mar 2020) ex-one-off figures (T4Q 21.8% to FY2019 Q3, Jan-Dec 2019 [I] Medium (A6-295); fiscal-year FY2018 (Apr 2018-
+    line 569: valuation | - The judgement inside the ex-one-off figures: inventory valuation losses recur every year (JPY 2,728-7,347 m a year over FY2018-FY2023, Apr
+    line 572: valuation | - Older cycles (U.S. GAAP, annual): FY2011 (Apr 2011-Mar 2012) -> FY2013 (Apr 2013-Mar 2014) sales -20.7%, OM 0.6% -> -32.5%, or -16.9% with
+    line 605: multiples | | "In some cases" test times rise "by multiples" from one generation to the next (CEO, stated 12 Nov 2026) | [C] (TH-034) |
+    line 706: valuation | 3. Cycle. In the last downturn quarterly sales fell 31.3% QoQ, JPY 147.4 bn in FY2022 Q4 (Jan-Mar 2023) to 101.3 bn in FY2023 Q1 (Apr-Jun 20
+    line 710: valuation | 2. SoC scale and margin. SoC test sales JPY 353.3 bn in FY2026 Q2 (Jul-Sep 2026) vs 173.7 bn in FY2025 Q2 (Jul-Sep 2025) [F] (CL-027, CL-029
+    line 778: valuation | - One-offs: only items management itself named are removed, and only when an amount is printed. Recurring inventory valuation losses are rem
+    line 778: Valuation | - One-offs: only items management itself named are removed, and only when an amount is printed. Recurring inventory valuation losses are rem
+[6] lines stating the fiscal-year end: 1 [5]
+[7] number-before-tag not found in the cited row (review by hand): 6
+    line 305: '755.0' vs A3-066 value '755,000'
+    line 305: '1,128.6' vs A3-086 value '1,128,610'
+    line 305: '242.0' vs A3-067 value '242,000'
+    line 305: '499.1' vs A3-087 value '499,120'
+    line 309: '1,420.0' vs A3-094 value '1,420,000'
+    line 309: '627.5' vs A3-095 value '627,500'
+[8] lines with a fiscal label that never carries calendar months in that line (review): 58
+    line 5: FY2026 | Fiscal year ends 31 March; fiscal years are named by their start year (FY2026 = Apr 2026-M
+    line 9: FY2025 | How to read: every claim carries one tag and the evidence ids behind it, e.g. "JPY 477.7 b
+    line 19: FY2025 | | Run facts: FY named by start year; latest quarter FY2026 Q2 (Jul-Sep 2026) released 28 O
+    line 25: FY2025 | | Orders, backlog and book-to-bill can be tracked for four quarters (project rules A2) | F
+    line 27: FY2023 Q3, 1H FY2024 | | Statutory quarterly securities reports exist for every quarter (working assumption) | Th
+    line 28: FY2025, 1H FY2026, 1H FY2025, 1H FY2024 | | Filing dates of the statutory reports = file metadata dates (working assumption) | The 8
+    line 34: FY2024, FY2025 | | Regional sales have one basis | Quarterly slides split by ship-to region; the annual sec
+    line 35: FY2014, FY2015 | | Advantest has reported under IFRS since FY2014 (module first draft) | IFRS was adopted w
+    line 43: FY2024 Q4 | | Company documents agree with each other on MTP2 ROIC (FY2021-FY2023, Apr 2021-Mar 2024 a
+    line 59: FY2025 | | LTM revenue and YoY | JPY 1,447,077m, LTM FY2025 Q3-FY2026 Q2 (Oct 2025-Sep 2026), +48.1
+    line 60: FY2025, FY2026 | | Gross margin reported / adjusted / ex one-offs | Reported 71.1% FY2026 Q2 (Jul-Sep 2026)
+    line 61: FY2025 | | LTM FCF and SBC/FCF | LTM FY2025 Q3-FY2026 Q2 (Oct 2025-Sep 2026): FCF JPY 273,933m, com
+    line 64: FY2025, FY2025 Q3 | | Inventory signal | Inventories JPY 231,718m (31 Mar 2026, FY2025 end) to 352,426m (30 Se
+    line 76: FY2024 | - Guidance record. Every closed quarterly slot in FY2024 Q3-FY2026 Q2 (Oct 2024-Sep 2026) 
+    line 123: FY2025 | | FY2025 Q4 (Jan-Mar 2026) | "One-off expenses related to business operations" in SG&A [C]
+    line 130: FY2025 | - FY2025 Q3 (Oct-Dec 2025): no one-off named, so OM 41.5% [F] (A1-043) is also the ex-one-
+    line 135: FY2025, FY2026 Q1 | - Net income without the named items: NOT DISCLOSED (read: FY2025 tanshin notes; Annual Se
+    line 153: FY2025 | - FY2025 Q4 (Jan-Mar 2026): derived company-definition FCF JPY 106,418 m [I] High (A1-408)
+    line 175: FY2026 | Test System segment margins: FY2025 Q4 (Jan-Mar 2026) may include the one-off SG&A and FY2
+    line 194: FY2025 | - NOT DISCLOSED (read: Q2 FY26 / Q1 FY26 / FY25 / Q3 FY25 earnings-briefing slides and not
+    line 201: FY2025, FY2026 Q2 | NOT DISCLOSED (read: Annual Securities Report 84th, Business Risks p.38 and Note 22 Revenu
+    line 211: FY2025 | | Orders received, order backlog | Not disclosed since FY2021 Q4 (Jan-Mar 2022); "We no lo
+    line 213: FY2025 Q1 | | Book-to-bill | NOT DISCLOSED (read: briefing slides and Q&A summaries FY2025 Q1 to FY202
+    line 216: FY2025 | NOT DISCLOSED (read: FY2025 Q1-FY2026 Q2 slides, notes, Q&A and tanshin; ASR 84th; SAR 85t
+    line 231: FY2026 | - One-off effect: the reversal of inventory write-down named for FY2026 Q1 (Apr-Jun 2026) 
+    line 265: FY2025 Q4 | - Receivables rose 46.3% YoY to 30 Sep 2026 (FY2026 Q2 end) while FY2026 Q2 (Jul-Sep 2026)
+    line 285: FY2025 Q3, FY2025 Q4, FY2026 Q1, FY2026 Q2, FY2025 Q1 | Lead times: nine to 12 months (stated Oct 2022) [C] (A2-010) and about six months (stated 
+    line 293: FY2024, FY2024 Q4, FY2025 Q4, FY2025 Q3 | - Formal guidance is full-year only: net sales, operating income (OI), income before tax (
+    line 295: FY2025 Q1, FY2025 | - Test: each quarter is compared with the guidance published at the previous quarter's res
+    line 305: FY2025 | | FY2025 Q1 (Apr-Jun 2025) | FY2025 initial (25 Apr 2025) | full year 755.0 [C] (A3-066) -
+    line 346: FY2023 Q1, FY2024, FY2025 | JPY m. Intermediate versions (FY2023 Q1 maintained; FY2024 raised 31 Jul and 30 Oct 2024; 
+    line 357: FY2023 Q4 | - **Guidance maintained late in the period and then missed.** In FY2023 (Apr 2023-Mar 2024
+    line 370: FY2026 | - Current vs initial: sales +31.2%, OI +54.1% [I] High (A3-279). Implied operating margin 
+    line 381: FY2026 | | ROIC | 18-28% [C] (A3-237) | 34-39% [C] (A3-245) | 31.5% [F] (A3-249) | 54.4% [F] (A3-25
+    line 385: FY2024, FY2025, FY2026, FY2026 Q1, FY2026 Q2 | - NI and margin figures include the named one-offs (FY2024 impairment, Apr 2024-Mar 2025; 
+    line 457: FY2024 Q4 | - Within the compared set (0 of 102 region, customer and segment pairs [I] High (A4-386); 
+    line 458: FY2025 | - The explained change is the segment restatement from FY2025 Q1 (Apr-Jun 2025) ("after th
+    line 460: FY2025, FY2026 | - Orders cannot be checked: NOT DISCLOSED (read: FY2025 Q1-Q4 and FY2026 Q1-Q2 financial r
+    line 524: FY2026 Q2 | - Dividends per share: FY2024 (Apr 2024-Mar 2025) JPY 39.00, payout 17.8% [F] (A5-116); FY
+    line 551: FY2015, FY2016, FY2022 | - Only three T4Q drawdowns of 1% or more exist since FY2015 Q4 (Jan-Mar 2016): -6.55% (T4Q
+    line 566: FY2019 Q3 | | Other one-offs in the window | 1H FY2023 (Apr-Sep 2023) settlement income JPY 3,179 m [F
+    line 575: FY2018 | - Accounting breaks: IFRS 15 from FY2018 Q1 (Apr-Jun 2018) and IFRS 16 from FY2019 Q1 (Apr
+    line 584: FY2025 | NOT DISCLOSED (read: Q3 FY2025 Financial Briefing Q&A A4; Q2 FY26 Financial Briefing slide
+    line 626: FY2025, FY2026 | - The memory gap recurs in both years, which points to a definitional difference (e.g. han
+    line 693: FY2025, FY2026 Q2 | | **B1-4 Supply-bound.** Supply capacity, not demand, is the binding constraint; demand "c
+    line 697: FY2026 | Margins in this ledger with and without the one-offs management named are in section 3.2 (
+    line 726: FY2026 Q2 | | 31 Mar 2027 | FY2026 (Apr 2026-Mar 2027) and MTP3 end [F] (CL-101); MTP3 revised targets
+    line 727: FY2025 | | NOT DISCLOSED (read: IR web page IR Calendar 2026-11-21, FY2025 and FY2026 Yearly Calend
+    line 729: FY2026 | | Around May 2027 [C] (CL-102) | Fourth Mid-Term Management Plan, possibly with an outlook
+    line 738: FY2026 | - 10,000 SoC systems a year: original target end FY2028 (Mar 2029), now aimed about a year
+    line 743: FY2025 | NOT DISCLOSED (read: IR web page IR Calendar 2026-11-21, FY2025 and FY2026 Yearly Calendar
+    line 750: FY2026 Q1 | - Amounts of the FY2026 Q1/1H (Apr-Sep 2026) inventory write-down reversal and of the FY20
+    line 755: FY2007 | - CB offering notices (early redemption, lock-up), METI originals, and anything on sec.gov
+    line 767: FY2008 | **Sources used.** The module parts merged in `evidence.csv` hold 2,410 rows: 1,487 [F], 43
+    line 770: FY2007 | - sec.gov: the session had no contact User-Agent to declare, so nothing on EDGAR was fetch
+    line 771: FY2007, FY2022 Q1 | - advantest.com refused the three April 2026 CB offering notices (HTTP 403), so early-rede
+    line 776: 1H FY2026, FY2025, 1H FY2025 | - Periods: every figure carries its fiscal label and calendar months. Dated company statem
+    line 779: FY2026 Q3 | - File names carry the printed document date. All statutory-report file names match the da
+RESULT problems in checks 1-3: 0

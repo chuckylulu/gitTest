@@ -1,0 +1,46 @@
+Programme utilisation (executed / authorised)
+  Oct-2024 (FY2024)                  shares   5,711,000/  9,000,000 =  63.5%   yen    50.00bn/  50.0bn = 100.0%   [A5-094,A5-095]
+  Apr-2025 (FY2025)                  shares   6,643,900/ 19,000,000 =  35.0%   yen    70.00bn/  70.0bn = 100.0%   [A5-096,A5-097]
+  Oct-2025 (FY2025-26)               shares   5,759,000/ 18,000,000 =  32.0%   yen   150.00bn/ 150.0bn = 100.0%   [A5-098,A5-101]
+  Oct-2026 (FY2026, to 31 Oct 2026)  shares     420,900/ 11,000,000 =   3.8%   yen    14.56bn/ 280.0bn =   5.2%   [A5-102,A5-104]
+Oct-2025 split check: shares 5,759,000 vs 5,759,000; yen 149,996,716,000 vs 149,996,716,000 -> match=True
+Oct-2025 programme total (FY2025 + 1H FY2026): 149,996.7 JPY million
+
+Buybacks executed by fiscal year (JPY million):
+  FY2023                      0.0
+  FY2024                 50,000.0
+  FY2025                114,228.3
+  FY2026 1H             105,768.3
+  FY2026 Oct 29-31       14,563.3
+
+Total return ratio by period (company formula, dividends on record-date basis):
+  FY2024     dividends    28,721 + buybacks   50,000.0 =   78,721.0; NI   161,177; ratio  48.8%
+  FY2025     dividends    42,859 + buybacks  114,228.3 =  157,087.3; NI   375,353; ratio  41.9%
+  FY2026 1H  dividends    35,376 + buybacks  105,768.3 =  141,144.3; NI   368,083; ratio  38.3%
+  MTP3 cumulative FY2024 to FY2026 1H: returns 376,952.7 / NI 904,613 = 41.7%
+  same incl. buybacks 29-31 Oct 2026 (NI unchanged, i.e. mixed periods): 391,516.0 / 904,613 = 43.3%
+
+Oct-2026 programme remaining authorisation after 31 Oct 2026: 265,436.7 JPY million = 66.1% of cash at 30 Sep 2026 (401,785)
+
+Treasury share cancellation 6 Feb 2026: 34,141,256 of 766,141,256 = 4.46%; shares after = 732,000,000
+
+DPS (split-adjusted, yen): {'FY2022': 33.75, 'FY2023': 34.25, 'FY2024': 39.0, 'FY2025': 59.0}
+  FY2025 vs FY2024 DPS change: 51.3%;  FY2026 interim 49 vs FY2025 interim 29: 69.0%
+
+Dividend-timing check vs company-printed total return ratio:
+  FY2024: record-date basis 48.8% (rounds to 49%), payment-date basis 48.0% (rounds to 48%); company 49% -> record-date matches=True, payment-date matches=False
+     buybacks calc 50.0bn vs company 50.0bn
+  FY2025: record-date basis 41.9% (rounds to 42%), payment-date basis 40.0% (rounds to 40%); company 42% -> record-date matches=True, payment-date matches=False
+     buybacks calc 114.2bn vs company 114.2bn
+  Cash-flow 'purchases of treasury shares' FY2025 114,328 (A5-122) exceeds programme total 114,228.3 by 99.7; the company does not itemise the difference.
+
+Named / itemised one-off items inside net income (pre-tax amounts, JPY million):
+  FY2024     Essai goodwill/intangible impairment, other expenses (pre-tax)                                                    -21,393 [A5-166, A5-167, A5-169]
+  FY2025     Gain on fair value of share call options, financial income (pre-tax); called one-off (A5-033)                      17,312 [A5-230]
+  FY2025     Income from partial divestiture of a business, other income (pre-tax)                                               2,504 [A5-156]
+  FY2025     One-time SG&A charge in Q2 related to a growth investment, ~2 bn (amount A1-511; link inferred A1-512, Medium)     -2,000 [A3-093, A1-511, A1-512]
+  FY2025     One-off SG&A expenses in Q4 (amount not disclosed)                                                                   n.d. [A5-227]
+  FY2026 1H  Gain on valuation of financial instruments, financial income (pre-tax); not called one-off                         54,171 [A5-228]
+  FY2026 1H  One-time reversal of inventory write-down, named for Q1 and 1H (amount not disclosed)                                n.d. [A5-229, A1-315]
+  Net income (and hence the total return ratio) ex these items cannot be computed: the tax effect of each item
+  is NOT DISCLOSED, and two items have no amount. Ratios above are on reported net income only.

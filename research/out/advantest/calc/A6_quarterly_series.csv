@@ -1,0 +1,47 @@
+fiscal_quarter,calendar_months,quarter_end,net_sales_jpy_m,operating_income_jpy_m,operating_margin_pct,named_oneoffs_in_oi_jpy_m,oneoff_note,oi_ex_oneoffs_jpy_m,operating_margin_ex_oneoffs_pct,t4q_net_sales_jpy_m,t4q_operating_income_jpy_m,t4q_operating_margin_pct,t4q_operating_margin_ex_oneoffs_pct,company_printed_sales_jpy_bn,company_printed_oi_jpy_bn,check_vs_printed,derivation
+FY2015 Q1,Apr-Jun 2015,2015-06-30,40166,2475,6.2,0,,2475,6.2,,,,,,,Q1 = YTD Q1 (no differencing),Q1 = YTD Q1
+FY2015 Q2,Jul-Sep 2015,2015-09-30,46181,4202,9.1,0,,4202,9.1,,,,,,,no company-printed single quarter in the files read,YTD Q2 minus YTD Q1
+FY2015 Q3,Oct-Dec 2015,2015-12-31,29885,-219,-0.7,0,,-219,-0.7,,,,,,,no company-printed single quarter in the files read,YTD Q3 minus YTD Q2
+FY2015 Q4,Jan-Mar 2016,2016-03-31,45879,6139,13.4,0,,6139,13.4,162111,12597,7.8,7.8,,,no company-printed single quarter in the files read,YTD FY minus YTD Q3
+FY2016 Q1,Apr-Jun 2016,2016-06-30,40669,5738,14.1,0,,5738,14.1,162614,15860,9.8,9.8,,,Q1 = YTD Q1 (no differencing),Q1 = YTD Q1
+FY2016 Q2,Jul-Sep 2016,2016-09-30,35526,2580,7.3,0,,2580,7.3,151959,14238,9.4,9.4,,,no company-printed single quarter in the files read,YTD Q2 minus YTD Q1
+FY2016 Q3,Oct-Dec 2016,2016-12-31,31376,973,3.1,0,,973,3.1,153450,15430,10.1,10.1,,,no company-printed single quarter in the files read,YTD Q3 minus YTD Q2
+FY2016 Q4,Jan-Mar 2017,2017-03-31,48345,4614,9.5,0,,4614,9.5,155916,13905,8.9,8.9,,,no company-printed single quarter in the files read,YTD FY minus YTD Q3
+FY2017 Q1,Apr-Jun 2017,2017-06-30,40697,2226,5.5,0,,2226,5.5,155944,10393,6.7,6.7,40.7,2.2,"OK (diff sales 0.00, OI 0.03 bn)",Q1 = YTD Q1
+FY2017 Q2,Jul-Sep 2017,2017-09-30,47715,5186,10.9,0,,5186,10.9,168133,12999,7.7,7.7,47.7,5.2,"OK (diff sales 0.02, OI 0.01 bn)",YTD Q2 minus YTD Q1
+FY2017 Q3,Oct-Dec 2017,2017-12-31,50876,3233,6.4,-3300,"inventory write-down, nanotechnology (~3.3 bn)",6533,12.8,187633,15259,8.1,9.9,50.9,3.2,"OK (diff sales 0.02, OI 0.03 bn)",YTD Q3 minus YTD Q2
+FY2017 Q4,Jan-Mar 2018,2018-03-31,67935,13842,20.4,0,,13842,20.4,207223,24487,11.8,13.4,67.9,13.9,"OK (diff sales 0.03, OI 0.06 bn)",YTD FY minus YTD Q3
+FY2018 Q1,Apr-Jun 2018,2018-06-30,70931,15818,22.3,0,,15818,22.3,237457,38079,16.0,17.4,70.9,15.8,"OK (diff sales 0.03, OI 0.02 bn)",Q1 = YTD Q1
+FY2018 Q2,Jul-Sep 2018,2018-09-30,72646,17945,24.7,1000,"gain on sale of fixed assets (~1.0 bn; named for 1H, placed in Q2 by quarterly other income Q1 0.1 / Q2 1.0 bn)",16945,23.3,262388,50838,19.4,20.3,72.7,18.0,"OK (diff sales 0.05, OI 0.05 bn)",YTD Q2 minus YTD Q1
+FY2018 Q3,Oct-Dec 2018,2018-12-31,74920,20703,27.6,2500,pension transfer to defined contribution (~2.5 bn),18203,24.3,286432,68308,23.8,22.6,74.9,20.7,"OK (diff sales 0.02, OI 0.00 bn)",YTD Q3 minus YTD Q2
+FY2018 Q4,Jan-Mar 2019,2019-03-31,63959,10196,15.9,-2000,"inventory valuation loss (~2 bn, Q&A)",12196,19.1,282456,64662,22.9,22.4,64.0,10.2,"OK (diff sales 0.04, OI 0.00 bn)",YTD FY minus YTD Q3
+FY2019 Q1,Apr-Jun 2019,2019-06-30,66165,15160,22.9,0,"inventory valuation losses named (milder than in FY2018 Q4), amount not disclosed (A6-315)",15160,22.9,277690,64004,23.0,22.5,66.2,15.2,"OK (diff sales 0.03, OI 0.04 bn)",Q1 = YTD Q1
+FY2019 Q2,Jul-Sep 2019,2019-09-30,71586,17718,24.8,0,,17718,24.8,276630,63777,23.1,22.9,71.6,17.7,"OK (diff sales 0.01, OI 0.02 bn)",YTD Q2 minus YTD Q1
+FY2019 Q3,Oct-Dec 2019,2019-12-31,69917,14253,20.4,0,one-time amortisation expense on transferred SLT business (amount not disclosed),14253,20.4,271627,57327,21.1,21.8,69.9,14.2,"OK (diff sales 0.02, OI 0.05 bn)",YTD Q3 minus YTD Q2
+FY2019 Q4,Jan-Mar 2020,2020-03-31,68226,11577,17.0,0,,11577,17.0,275894,58708,21.3,21.3,68.2,11.6,"OK (diff sales 0.03, OI 0.02 bn)",YTD FY minus YTD Q3
+FY2020 Q1,Apr-Jun 2020,2020-06-30,66725,13458,20.2,0,,13458,20.2,276454,57006,20.6,20.6,66.7,13.5,"OK (diff sales 0.02, OI 0.04 bn)",Q1 = YTD Q1
+FY2020 Q2,Jul-Sep 2020,2020-09-30,77377,17479,22.6,2451,gain on transfer of probe card business (30 Jul 2020),15028,19.4,282245,56767,20.1,19.2,77.4,17.4,"OK (diff sales 0.02, OI 0.08 bn)",YTD Q2 minus YTD Q1
+FY2020 Q3,Oct-Dec 2020,2020-12-31,78072,15241,19.5,0,,15241,19.5,290400,57755,19.9,19.0,78.1,15.3,"OK (diff sales 0.03, OI 0.06 bn)",YTD Q3 minus YTD Q2
+FY2020 Q4,Jan-Mar 2021,2021-03-31,90615,24548,27.1,5569,"pension plan transfer, Advantest Europe GmbH (named for FY; placed in Q4 by quarterly other income-expenses Q2 2.6 / Q4 5.7 bn)",18979,20.9,312789,70726,22.6,20.0,90.6,24.5,"OK (diff sales 0.02, OI 0.05 bn)",YTD FY minus YTD Q3
+FY2021 Q1,Apr-Jun 2021,2021-06-30,97116,26125,26.9,0,,26125,26.9,343180,83393,24.3,22.0,97.1,26.1,"OK (diff sales 0.02, OI 0.02 bn)",Q1 = YTD Q1
+FY2021 Q2,Jul-Sep 2021,2021-09-30,90874,21351,23.5,0,,21351,23.5,356677,87265,24.5,22.9,90.9,21.4,"OK (diff sales 0.03, OI 0.05 bn)",YTD Q2 minus YTD Q1
+FY2021 Q3,Oct-Dec 2021,2021-12-31,112077,33566,29.9,0,,33566,29.9,390682,105590,27.0,25.6,112.1,33.5,"OK (diff sales 0.02, OI 0.07 bn)",YTD Q3 minus YTD Q2
+FY2021 Q4,Jan-Mar 2022,2022-03-31,116834,33692,28.8,0,,33692,28.8,416901,114734,27.5,27.5,116.8,33.7,"OK (diff sales 0.03, OI 0.01 bn)",YTD FY minus YTD Q3
+FY2022 Q1,Apr-Jun 2022,2022-06-30,135943,44783,32.9,0,,44783,32.9,455728,133392,29.3,29.3,135.9,44.8,"OK (diff sales 0.04, OI 0.02 bn)",Q1 = YTD Q1
+FY2022 Q2,Jul-Sep 2022,2022-09-30,138863,43133,31.1,0,,43133,31.1,503717,155174,30.8,30.8,138.9,43.1,"OK (diff sales 0.04, OI 0.03 bn)",YTD Q2 minus YTD Q1
+FY2022 Q3,Oct-Dec 2022,2022-12-31,137993,41224,29.9,0,,41224,29.9,529633,162832,30.7,30.7,138.0,41.2,"OK (diff sales 0.01, OI 0.02 bn)",YTD Q3 minus YTD Q2
+FY2022 Q4,Jan-Mar 2023,2023-03-31,147392,38547,26.2,-3000,"inventory valuation losses (~3 bn, Q&A)",41547,28.2,560191,167687,29.9,30.5,147.4,38.6,"OK (diff sales 0.01, OI 0.05 bn)",YTD FY minus YTD Q3
+FY2023 Q1,Apr-Jun 2023,2023-06-30,101251,14269,14.1,0,,14269,14.1,525499,137173,26.1,26.7,101.3,14.3,"OK (diff sales 0.05, OI 0.03 bn)",Q1 = YTD Q1
+FY2023 Q2,Jul-Sep 2023,2023-09-30,116260,21000,18.1,3179,settlement income (named for 1H; placed in Q2 by quarterly other income-expenses Q1 0.2 / Q2 3.2 bn),17821,15.3,502896,115040,22.9,22.8,116.2,21.0,"OK (diff sales 0.06, OI 0.00 bn)",YTD Q2 minus YTD Q1
+FY2023 Q3,Oct-Dec 2023,2023-12-31,133233,26830,20.1,0,,26830,20.1,498136,100646,20.2,20.2,133.2,26.8,"OK (diff sales 0.03, OI 0.03 bn)",YTD Q3 minus YTD Q2
+FY2023 Q4,Jan-Mar 2024,2024-03-31,135763,19529,14.4,-8998,"goodwill impairment, Essai (SLT)",28527,21.0,486507,81628,16.8,18.0,135.8,19.5,"OK (diff sales 0.04, OI 0.03 bn)",YTD FY minus YTD Q3
+FY2024 Q1,Apr-Jun 2024,2024-06-30,138725,31325,22.6,0,,31325,22.6,523981,98684,18.8,19.9,138.7,31.3,"OK (diff sales 0.03, OI 0.02 bn)",Q1 = YTD Q1
+FY2024 Q2,Jul-Sep 2024,2024-09-30,190481,63534,33.4,0,,63534,33.4,598202,141218,23.6,25.1,190.5,63.6,"OK (diff sales 0.02, OI 0.07 bn)",YTD Q2 minus YTD Q1
+FY2024 Q3,Oct-Dec 2024,2024-12-31,218152,69267,31.8,0,,69267,31.8,683121,183655,26.9,28.2,218.2,69.2,"OK (diff sales 0.05, OI 0.07 bn)",YTD Q3 minus YTD Q2
+FY2024 Q4,Jan-Mar 2025,2025-03-31,232349,64035,27.6,-21393,"goodwill and intangibles impairment, Essai (SLT)",85428,36.8,779707,228161,29.3,32.0,232.3,64.1,"OK (diff sales 0.05, OI 0.06 bn)",YTD FY minus YTD Q3
+FY2025 Q1,Apr-Jun 2025,2025-06-30,263776,123952,47.0,2504,gain on partial divestiture of a business,121448,46.0,904758,320788,35.5,37.5,263.8,124.0,"OK (diff sales 0.02, OI 0.05 bn)",Q1 = YTD Q1
+FY2025 Q2,Jul-Sep 2025,2025-09-30,262957,108483,41.3,-2000,"one-time SG&A charge related to a growth investment (~2 bn; amount from notes p.9, link inferred A1-512)",110483,42.0,977234,365737,37.4,39.6,262.9,108.4,"OK (diff sales 0.06, OI 0.08 bn)",YTD Q2 minus YTD Q1
+FY2025 Q3,Oct-Dec 2025,2025-12-31,273804,113571,41.5,0,,113571,41.5,1032886,410041,39.7,41.7,273.8,113.6,"OK (diff sales 0.00, OI 0.03 bn)",YTD Q3 minus YTD Q2
+FY2025 Q4,Jan-Mar 2026,2026-03-31,328073,153114,46.7,0,"one-off SG&A expenses named by management, amount not disclosed (A1-311)",153114,46.7,1128610,499120,44.2,44.2,328.1,153.1,"OK (diff sales 0.03, OI 0.01 bn)",YTD FY minus YTD Q3
+FY2026 Q1,Apr-Jun 2026,2026-06-30,367473,189990,51.7,0,"reversal of inventory write-down named by management, amount not disclosed (A1-315)",189990,51.7,1232307,565158,45.9,46.0,,,Q1 = YTD Q1 (no differencing),Q1 = YTD Q1
+FY2026 Q2,Jul-Sep 2026,2026-09-30,477727,266819,55.9,0,reversal of inventory write-down named for Q1 (A1-315) and 1H (A1-316); whether any of it fell in Q2 and the amount are not disclosed,266819,55.9,1447077,723494,50.0,50.0,477.7,266.8,"OK (diff sales 0.03, OI 0.02 bn)",YTD Q2 minus YTD Q1

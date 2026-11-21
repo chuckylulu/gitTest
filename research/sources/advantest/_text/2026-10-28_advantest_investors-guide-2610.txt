@@ -1,0 +1,402 @@
+Investors Guide
+October 28, 2026
+
+
+
+
+                   1
+Index
+
+
+
+Overview
+
+
+
+Chapter 1.   Sales Composition
+
+             -   Test Systems Business
+
+             -   Services and Others
+
+
+
+Chapter 2.   Business Model
+
+             -   Customer Base
+
+             -   Testing Process and Tester's Role
+
+             -   Product Portfolio
+
+
+
+Chapter 3.   Competitive Environment and Our Competitive Advantage
+
+
+
+Chapter 4.   Mid-Term Management Plan
+
+
+
+
+                                                2
+Overview
+
+
+
+
+The Investors’ Guide is an attempt for us to explain, for example, our sales composition, growth drivers,
+market characteristics, business model and competitive environment 1.
+
+The chart above shows global semiconductor sales and Advantest’s consolidated sales over the past
+seven years. The semiconductor and tester markets both grew significantly from 2020 to 2022 due to
+the acceleration of digitization caused by Covid-19. However, in 2023, the semiconductor market
+entered a correction phase, and the tester market shrank, partly as a reaction to the elevated demand
+triggered by Covid-19. Following the market expansion in 2024 driven by increasing semiconductor
+complexity, both the semiconductor and tester markets grew significantly thereafter, and Advantest
+posted record high sales and profits in FY2025. In the medium to long term, our sales are expected to
+expand along with the continued growth of the semiconductor market, while fluctuations are also to be
+expected.
+
+
+
+
+1
+  This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These
+statements include, among other things, the discussion of Advantest’s business strategy, outlook and expectations as to market and business
+developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of forward-looking
+terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking
+statements are subject to known and unknown risks, uncertainties and other factors that may cause Advantest’s actual results, levels of
+activity, performance or achievements to be materially different from those expressed or implied by such forward-looking statements. Except
+as required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or
+otherwise.
+                                                                     3
+Chapter 1. Sales Composition
+The Company's business segments consist of (1) Test System Business and (2) Services and Others. The
+core business is the Test Systems business. Historical sales by segment and the main products included
+in each segment are as follows.
+
+
+
+
+                                                   4
+Test Systems Business
+
+
+
+
+The Test Systems business is divided into three sub-segments: SoC testers, memory testers and other
+systems. Historically, the memory testers had been the company's main business. However, in the
+2000s, the Company began strengthening the SoC tester business, which now accounts for the majority
+of segment sales, thanks in part to the acquisition of Verigy in 2011. Other Systems contain test
+handlers, device interfaces, and the system level test systems. For more information on test processes in
+the semiconductor development and manufacturing processes, please refer to Chapter 2.
+
+   SoC Testers
+
+The SoC testers mainly fall in two categories: "Computing and Communications" and "Automotive,
+Industrial, Consumer, and DDIC (display driver ICs)". The table below shows the sales breakdown of SoC
+testers.
+
+
+
+
+“Computing” in "Computing and Communications" includes leading-edge devices such as HPC (High
+Performance Computing) and AI, and “Communications” include application processors (APs) for
+smartphones. "Automotive, Industrial, Consumer and DDIC" includes a wide range of semiconductors
+for automotive, industrial and consumer markets, as well as display driver ICs (DDICs). The
+semiconductors tested in the Computing and Communications category are mainly high-performance
+semiconductors that are manufactured using leading-edge processes, while the Automotive, Industrial,
+Consumer, and DDIC categories are mostly semiconductors that are manufactured using mature
+processes.
+
+
+
+                                                   5
+SoC Tester Market Size Trends
+
+The SoC tester market size has been on an increasing trend, albeit with cyclicality. While the market
+exhibits cyclicality depending on the level of capital investment by customers, such cyclicality is
+expected to moderate as the breadth of semiconductor demand expands. Against the backdrop of
+changes in the demand structure described below, the market is likely to continue its medium- to long-
+term growth trend. For market share, please refer to Chapter 3, “Competitive Environment and Our
+Competitive Advantage.”
+
+
+
+
+SoC test demand is determined by the capacity expansion (capacity buy) and demand based on the
+performance evolution cycle of semiconductors (technology buy). In addition to the increase in tester
+demand due to the broadening base of semiconductor demand, the need to ensure reliability
+predicated on growing complexity is also driving test demand. Moreover, the challenges associated with
+miniaturization and increasing complexity of semiconductors are driving importance of testing and are
+tailwinds to tester demand.
+
+The capacity buy is influenced by semiconductor manufacturers' production plans, the design and
+manufacturing proficiency of individual target devices under test, improvements in test efficiency, and
+fabless companies' plans for selecting and switching test supply chains.
+
+On the other hand, demand for technology buys is increasing year by year against the backdrop of
+technological advancements such as smartphone performance improvements and new technology
+trends such as HPC/AI/machine learning. These are driving semiconductor miniaturization,
+heterogenous integration, and complexity growth, as represented by advanced packaging. The resulting
+                                                    6
+increase in transistor counts and the level of integration cause an increase in test volume and test
+insertions.
+
+
+
+
+    Memory Testers
+
+The memory testers are broken down by application: DRAM and non-volatile memory, and the table
+below shows the sales breakdown.
+
+
+
+
+Memory Tester Market Size Trend
+
+The memory tester market shows an expanding trend due to a broadening range of memory
+semiconductor applications and rising quality assurance requirements in response to technological
+advancements. For market share, please refer “Chapter 3. Competitive Environment and Our
+Competitive Advantage”.
+
+
+
+
+                                                    7
+The demand for memory testers is essentially determined by the industry's bit growth rate and the
+trend in memory bandwidth (data transmission speed). This is because as bits on a chip increases, test
+time increases, and the increase in bandwidth drives demand for faster speed for test. In addition to
+higher memory density and interface speeds, the trend toward higher reliability requirement is also an
+important driver of demand.
+
+
+
+   Other Systems
+
+Other Systems consists of test handlers, device interfaces, and system level test systems. Test handlers
+are products that automatically handle and sort semiconductor devices. Device interfaces serve as
+interfaces for a device under test. Sales of test handlers and device interfaces tend to move in tandem
+with sales of semiconductor testers. The system level test systems are test equipment that are used to
+test devices in final application mode. With the increasing complexity of semiconductors, there is a
+growing need to screen defects that escape device level tests. Therefore, the Company is working to
+expand the system level test business.
+
+Services and Others
+
+Services and Others consists of Support Services, Nano-technology products, the Consumables, and
+others. Support Services provides maintenance services to products installed at customers. For
+nanotechnology the main product is CD-SEM (critical dimension-scanning electron microscope) which is
+based on electron beam control technology. Applications include dimensional measurement of wiring
+patterns on photomasks which are used in the semiconductor manufacturing front-end process.
+Consumables include semiconductor test interface boards and test sockets.
+
+
+
+
+                                                    8
+Chapter 2. Business Model
+The value that we provide to our customers in relation to semiconductor tests mainly lies in our
+technical and support capabilities for supporting their semiconductor development and volume
+production. In the following sections, we will show how we support our customers by introducing our
+customer base, explaining the role of testers and our testing processes, and presenting our product
+portfolio.
+
+Customer Base
+
+Our customers include semiconductor manufacturers, and we supply testers primarily to IDMs
+(Integrated Device Manufacturers), fabless semiconductor design companies, foundries (such as wafer
+fabrication companies), and OSATs (outsourced semiconductor assembly and test companies). We have
+strong relationships with a wide variety of customers, whether they are IDMs, fabless, foundries, or
+OSATs. Traditionally, in the semiconductor industry, IDMs with a vertically integrated model that
+handled everything from design to manufacturing to sales were the main players. In the last 20 years or
+so, however, the rise of fabless, foundries, and OSATs has become prominent, and the global
+disaggregated model (the fabless-foundry-OSAT model) has grown. Under the disaggregated model, the
+same testers selected by fabless companies for verification during device design are often used by
+foundries for sample evaluation and wafer testing, and by OSATs for post-assembly package testing.
+Therefore, decision-making by a fabless customer is an important point for tester selection in the
+disaggregated model.
+
+
+
+
+Role of testers and testing process
+
+Semiconductor testers test the performance of semiconductors, and their role is mainly divided into
+design evaluation and volume production of semiconductors. Although the volume is larger for volume
+production, recently the demand for testers used in the design and development phase has been
+increasing. With the growing complexity of semiconductor design, testers are helping customers shorten
+their development time by screening design defects and providing feedback at the semiconductor’s
+evaluation phase.
+
+
+
+                                                   9
+In volume production, testers are used for wafer testing and for package testing. The front-end process
+is for wafer fabrication, and takes place at the very end of wafer fabrication process by testing wafers.
+The back-end process is to assemble and package chips which have been singulated from wafers. The
+package test is conducted at the final stage of the back-end process to screen defects.
+
+
+
+
+In semiconductor testing, electrical signals are applied to semiconductor devices, and the output signals
+are compared with reference data and expected values to determine whether the device has passed or
+failed. Semiconductor manufacturing is said to involve more than 1,000 individual process steps. Among
+these steps, semiconductor testing is the only process that uses electrical signals to test devices, playing
+a critical role in quality assurance.
+
+Advantest plays a role in supporting device quality by providing seamless technical testing support from
+semiconductor development to volume production across a full range of customers such as IDMs,
+fabless, foundries, and OSATs. This long-standing commitment to advancing test solutions by
+overcoming technical challenges throughout the test supply chain, from fabless to foundries to OSATs,
+has strengthened the trust between the Company and each of the players in the supply chain.
+
+
+
+Product Portfolio
+
+In recent years, with increasing complexities of semiconductors and challenges of their development
+and manufacturing, test challenges are also growing. These challenges are heightening the increasing
+importance of providing a comprehensive test environment, as opposed to just providing a tester, in
+order to achieve highly accurate testing. In its product portfolio, Advantest owns different pieces of
+technology that enable a comprehensive test environment including the contact technology necessary
+for measurement, test handlers with active thermal control capability, and device interfaces necessary
+for high-performance measurement.
+
+Our technological capability to provide optimal combination of testers and peripheral equipment
+simultaneously enables us to speedily create the optimal measurement environment for our customers.
+                                                   10
+Our customers are able to bring their products to market faster, thereby enhancing their competitive
+advantage. The higher the performance of a device, the more it highlights Advantest’s strength in
+providing a one-stop solution in a timely manner.
+
+Testers are at the core of our comprehensive solution approach. Based on our close relationship with
+customers, we are able to gain insight into their technological needs and challenges, and design
+products with the scalability to support the technological evolution over the next 10 years.
+
+
+
+
+What is at the core of our tester scalability is our module architecture approach in SoC testers. For
+devices such as SoCs that boast a large number of applications and fast device upgrade cycles, the
+module architecture helps customers secure a return on their tester investment. This is because the
+ability to flexibly reconfigure testers through the module architecture. Necessary functions can be
+reconfigured in modules according to the application, leading to a higher return on investment for
+customers. As shown in the table below, by preparing a wide range of modules, including digital, analog,
+and power-mixed signal, technological advancements can be made flexibly.
+
+
+
+
+                                                  11
+Chapter 3. Competitive Environment and Our Competitive Advantage
+Testers are critical for ensuring the quality of customer devices. Changing a tester platform is essentially
+equivalent to rebuilding the entire environment for device development, evaluation, and mass
+production, resulting in significant additional costs for the customer.
+
+We believe that our current position is largely the result of continuous efforts to innovate and expand
+our product portfolio to meet the ever-changing demands of a broader customer base.
+
+
+
+
+Advantest has the largest customer base in the industry. The expansion of the customer base creates a
+virtuous cycle and can also be a starting point for the next growth cycle. By meeting the demands and
+challenges of a broader customer base, we can more effectively identify the needs of the next-
+generation tester development, which in turn reduces risk and improves the efficiency of R&D projects
+and increases the value of the solutions we provide. By continuing the process of feeding test trends
+into the next-generation tester development, we have evolved to serve a broader range of applications.
+
+
+
+
+                                                     12
+As for our product portfolio, the increasing complexity of devices is leading to further increase the
+importance of our broad portfolio. A concrete example of this is advanced packaging. While circuit
+integration in semiconductors has traditionally been pursued in the 2D (planar) direction, development
+in the 2.5D and 3D directions is accelerating with a focus on increased computational efficiency and
+energy savings. With such technological advancement, customers are re-evaluating their test
+methodologies. Advantest’s broad product portfolio and comprehensive test coverage are contributing
+to this shift by supporting the need for more advanced testing and enhanced quality assurance.
+
+
+
+
+By expanding the economic and social benefits it provides, Advantest aims to become the most trusted
+and valued test solution company in the semiconductor value chain.
+
+
+
+
+                                                  13
+Chapter 4. Mid-Term Management Plan
+The Third Mid-Term Management Plan (MTP3, FY2024-2026), announced in June 2024, promotes four
+strategies and aims to achieve the following five management metrics. Management metrics were
+raised in October 2025 due to expected record-breaking results.
+
+
+
+
+① Outpace the growth in our core market
+
+In line with its growth strategy, Advantest has expanded its business domains year by year. In the past,
+the semiconductor tester (ATE) market has been the main market that Advantest focused on. However,
+from MTP3 onwards, while ATE will remain the central axis, Advantest will aim for further growth based
+on a larger footprint enabled by past efforts it has made related to that axis. In this expanded core
+market, Advantest expects future growth opportunities to arise from increased semiconductor
+production volume, higher performance semiconductors, and the increasing complexity of
+semiconductors. To address these opportunities, Advantest will not only improve the performance of
+individual test solutions, but also create new value for its customers through “Automation of Test,” –
+specifically, by improving the efficiency of semiconductor testing, by organically integrating its diverse
+portfolio of products and solutions, and by collaborating with external partners. Through these efforts,
+Advantest will continue to grow faster than its core market.
+
+
+
+
+                                                    14
+② Expand adjacently / new businesses
+
+As semiconductors continue to become more high-performance and complex, there is a demand for
+broader and more integrated test solutions. Advantest has been expanding its business into system level
+test and test peripherals, and will continue this initiative to further increase the value it provides to
+customers.
+
+
+
+③ Drive operational excellence
+
+Advantest has already transitioned to a CxO structure in which the CxOs are in charge of all operations in
+the entire group. Advantest will continue to solve testing issues in the semiconductor industry by
+leveraging in-house technology on a cross-functional basis under the strong ownership of each CxO. In
+addition to the above, to become a company that is valuable to all of the stakeholders, Advantest
+believes that it needs to improve not only the excellence of its products and technologies, but also the
+efficiency and effectiveness of all of its operations. To this end, Advantest is committed to accelerating
+internal operations and streamlining manpower by using DX (digital transformation), building a resilient
+supply chain, strengthening our human capital through recruiting competent talents and expanding
+employee training, and improving internal productivity through the use of AI and data analytics.
+
+
+
+④ Enhance sustainability
+
+Advantest's long-term management goal is to enhance the value it provides to its stakeholders in a well-
+balanced and multifaceted manner. Advantest will further strengthen its foundation for enhancing
+corporate value through proactive and positive action on sustainability issues such as climate change
+and human rights, the execution of responsible business activities, including legal compliance and
+adherence to ethical business practices, and the reinforcement of risk management and enhancement
+of corporate governance, to earn greater trust from each stakeholder. Ultimately, Advantest hopes to
+contribute to sustainability, i.e., to meet the needs of the present without compromising the ability of
+future generations to meet their own needs. Advantest will also strive to cultivate and instill a common
+culture and shared values within the company, as these are the starting point for promoting initiatives
+related to sustainability.
+
+
+
+
+                                                   15
+

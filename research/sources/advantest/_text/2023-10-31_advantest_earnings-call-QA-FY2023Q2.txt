@@ -1,0 +1,194 @@
+                           Advantest Corporation
+     FY2023 2Q (Three months ended September 30, 2023) Financial Briefing
+                              Q＆A Summary
+
+                                        October 31, 2023
+
+
+Q:    The cut to your gross profit margin forecast seems large compared to the extent by which
+      you now say you expect sales to decline. What has prompted you to lower your gross profit
+      margin forecast by approximately five percentage points versus what you had announced in
+      July? What degree of impact do you expect from factors such as a less favorable product
+      mix and higher parts procurement costs? Also, why were you unaware of such impacts
+      three months ago?
+A:    We have lowered our gross profit margin forecast because of a significantly less favorable
+      product mix and because the yen is substantially weaker than reflected by the exchange
+      rates on which we had based our forecasts. The greatest reason for the cut is that while we
+      now anticipate a sizable decline in our SoC tester sales, a large percentage of which are
+      generated in foreign currencies, we now expect higher memory testers sales, which are
+      often generated in currencies other than the US dollar. Another reason for cutting our gross
+      profit margin forecast is that the processing costs included in our COGS have risen by more
+      than we had anticipated. Three months ago in July, we had not factored environmental
+      changes of this extent into our forecasts.
+
+
+Q:    What do you forecast your shares of the SoC and memory tester markets will be next year
+      and beyond? Also, how is growth in generative AI applications likely to change your shares
+      of those markets?
+A:    Our market shares fluctuate depending on trends at particular customers, but we expect our
+      combined market share for SoC and memory testers to remain at 50% to 55% in CY2024.
+      We are very well positioned in high-performance computing (HPC), specifically in AI, at
+      our traditional HPC customers, as well as at hyperscalers and ASIC providers. We expect
+      to continue to do well as the volume of semiconductors developed in those areas grows.
+
+
+Q:    Based on the visibility you have now, could you comment on what you expect in terms of
+      the nature and the mixes of the SoC and memory tester markets in CY2024? In particular,
+      could you share your thinking on the size of the test market for HBM this year and next?
+A:    We expect the market to be driven primarily by test demand for high-performance
+      semiconductors next year.
+
+                                                   1
+                                                           All Rights Reserved - ADVANTEST CORPORATION
+     I refer to the extremely high-performance, large-scale logic chips for AI applications,
+     which is an area we view as important. HBM is the high-performance memory that is
+     required alongside these logic chips. We expect the number of HBM chips required per
+     generative AI logic chip to grow as well, so the testing of these two types of chips is likely
+     to increase in complexity.
+
+
+Q:   Compared to CY2023, what sort of growth do you expect in the size of the SoC and
+     memory tester markets next year and beyond?
+A:   CY2023 has been a down year, but we expect the market to start on the road to recovery in
+     CY2024. As of July, our FY2024 forecast had assumed that sales would return to a level on
+     par with FY2022. However, as of October, we felt that the recovery we had seen in
+     FY2023 fell quite a bit short of what we had been anticipating. We think that the pickup
+     may not come until roughly six to nine months later than what we had anticipated as of
+     July, meaning in the latter half of CY2024. While we are alarmed by the diminished
+     likelihood of our sales returning to the FY2022 level in FY2024, we think that even if they
+     do not reach that level, they are likely to start a gradual upward trajectory.
+
+
+Q:   On the topic of new business opportunities related to HBM, could you tell us what portion
+     of your memory tester sales that HBM currently represents, what your market share is, and
+     how quickly you expect sales to grow going forward? Also, how is growth in HBM sales
+     likely to impact Advantest’s total gross profit margin?
+A:   Many years of effort have enabled us to establish a strong position in the HBM test market.
+     We expect HBM test demand to continue to demonstrate substantial growth in FY2024, so
+     this strong position should be an advantage for us. We expect our gross profit margin to
+     improve thanks to initiatives including those designed to bolster our contribution margin.
+
+
+Q:   My sense is that wafer-level test margins for HBM are not that good. Am I wrong?
+A:   Wafer tests tend to have lower margins than package tests in the memory test space. With
+     the evolution to HBM3 and beyond, wafer layer counts are poised to grow, which is likely
+     to make it more difficult to achieve good yields and result in more stringent quality
+     assurance requirements for the end products as well. Given that production capacity for
+     advanced packages that include HBM looks set to double or triple next year, we expect to
+     see quite a lot of HBM test demand next year and beyond. As a manufacturer, we have also
+     honed our methods for achieving better margins, including through volume production. We
+     therefore expect our profitability to improve as we achieve better margins both on wafer
+     and package tests.
+
+                                                 2
+                                                            All Rights Reserved - ADVANTEST CORPORATION
+Q:   My impression is that the interface speeds are insufficient when HBM3 is tested on your
+     testers. If I additionally consider the roadmaps that memory manufacturers have already
+     released, I feel that you are going to have to release many new tester products. Do you
+     already have development resources and production capacity in place to enable you to
+     respond to the needs of the major HBM manufacturers?
+A:   Our current tester portfolio is amply capable of covering the testing needs of the HBM,
+     HBM2, and HBM3 devices that are currently on the market. The continued evolution of
+     HBM next year and beyond will demand faster interface speeds, which means that our
+     testers will also need to evolve to keep up. We continue to prepare for that through our
+     daily development efforts, and we do have the resources in place that will allow us to
+     solidly address the needs of new devices when they appear. On the question of production
+     capacity, I would note that our customers provide us with forecasts of their long-term
+     production plans in advance and that we have already begun to add to our production
+     capacity this year. In addition, we are preparing for further capacity expansions next year
+     so that we will be able to keep pace with the forecast information that we have received
+     from our customers.
+
+
+Q:   The major foundries are expected to add assembly capacity for 2.5D, 3D, and other
+     advanced packaging. Will they need to procure new tester equipment as they build their
+     new fabs and lines, or will the utilization of existing testers have to rise before new tester
+     demand is triggered? Also, are you starting to see HBM tester demand related to these
+     capacity additions?
+A:   Tester equipment investment involves two different business models. In the case of large-
+     scale logic chips, our customers are either the fabless companies that develop the chips or
+     the foundries and OSATs that are contracted to manufacture them. For the HBM and other
+     memory chips used in conjunction with these logic chips, our customers have adopted the
+     integrated device manufacturer (IDM) business model, whereby they handle everything
+     from the development through to the manufacturing.
+     We expect production volumes of these chips to grow as more capacity for the assembly of
+     advanced packaging comes online. As more large-scale logic chips are produced, we expect
+     to see increasing installations of our latest SoC tester, the V93000 EXA Scale™. However,
+     on the utilization side of the equation, I would note that the foundries and OSATs have
+     installed many SoC testers for smartphone application processors over the past two years,
+     but some of that capacity is going unused because of the deterioration in market conditions.
+     Currently, some customers are upgrading the configurations of existing testers to respond
+
+                                                 3
+                                                            All Rights Reserved - ADVANTEST CORPORATION
+     to test demand for AI chips, which is helping to fill that idle capacity. The major foundries
+     plan to increase their assembly capacity next year and beyond, so if higher volumes come
+     in, we would expect to see a rapid recovery in utilization rates that should ultimately lead to
+     new tester demand. Meanwhile, the memory chip manufacturers that produce HBM are
+     IDMs and strategically purchase the equipment that they need when they need it, so
+     demand for memory testers is picking up ahead of demand for SoC testers.
+
+
+Q:   How much new tester demand due you expect HBM to drive? Please also share your
+     expectations for earnings contributions and market size in quantitative terms.
+A:   In keeping with AI server growth, HBM is likely to grow by roughly 30% to 40% annually
+     going forward. We believe that this, combined with increased density per device, will
+     indicate what test demand will look like. While we have rough estimates of tester demand
+     based on our recent orders, we would like to refine them more based on the evolution of the
+     technology to HBM4 and so forth, as well as on the resulting increases in layer counts and
+     density.
+
+
+Q:   Could you share your outlook for the system level test (SLT) business? Also, do you think
+     that the HPC/AI market for SLT can grow to the size of the smartphone market for SLT?
+A:   High-volume smartphones have represented a significant portion of our SLT business. As
+     such, demand is soft at the moment. Going forward, we expect to see more SLT demand as
+     semiconductor volumes in the HPC/AI space grow.
+     For our customers to enjoy the benefits delivered by the SLT automation solutions we
+     offer, their volumes and test times must reach certain thresholds. At present, most SLT
+     work is performed manually, but we expect growth to result in higher volumes, which
+     should in turn trigger demand for automation to optimize SLT equipment. We believe that
+     that will lead to business opportunities for us.
+     Another factor is that with applications like HPC, AI, and ADAS, we anticipate demand for
+     testing not only whether chips operate as designed, but also for SLT to establish whether
+     they work together as a system. As larger training models result in more data to be
+     processed, test times will get longer, which we believe will lead to growth in tester
+     demand.
+     However, we expect it will take some time for the HPC/AI market for SLT to grow to the
+     size of the smartphone market for SLT. We believe that SLT demand will remain flat in
+     FY2024 until demand in the smartphone market picks up. However, in the long term, we
+     expect that SLT demand will expand over a period of several years in semiconductor
+     growth markets such as HPC/AI and ADAS.
+
+                                                 4
+                                                           All Rights Reserved - ADVANTEST CORPORATION
+Note
+
+This document is prepared for those who were unable to attend the financial briefing and is intended only for
+
+reference purposes. The original content has been revised and edited by Advantest for ease of understanding.
+
+
+
+This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates
+
+and projections. These statements include, among other things, the discussion of Advantest’s business strategy,
+
+outlook and expectations as to market and business developments, production and capacity plans. Generally, these
+
+forward-looking statements can be identified by the use of forward-looking terminology such as “anticipate,”
+
+“believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements
+
+are subject to known and unknown risks, uncertainties and other factors that may cause Advantest’s actual results,
+
+levels of activity, performance or achievements to be materially different from those expressed or implied by such
+
+forward-looking statements.
+
+
+
+
+                                                          5
+                                                                      All Rights Reserved - ADVANTEST CORPORATION
+

@@ -1,0 +1,14 @@
+module | [F] | [C] | [S] | [I] | total
+A1 | 362 | 15 | 0 | 147 | 524
+A2 | 99 | 37 | 0 | 62 | 198
+A3 | 131 | 142 | 0 | 50 | 323
+A4 | 349 | 12 | 0 | 76 | 437
+A5 | 165 | 28 | 0 | 26 | 219
+A6 | 271 | 26 | 6 | 51 | 354
+TH | 62 | 115 | 10 | 23 | 210
+CL | 48 | 63 | 14 | 20 | 145
+DS | 0 | 0 | 0 | 5 | 5
+RESULT module rows (excl. DS): [F] 1487, [C] 438, [S] 30, [I] 455; total 2410
+RESULT manifest rows: NOT RETRIEVED 27, RETRIEVED 218, SUPERSEDED 6; total 251
+RETRIEVED by issuer: advantest 180, federalregister 11, arxiv 7, teradyne 7, swtest 2, formfactor 1, hotchips 1, rcrwireless 1, techinsights 1, fourweekmba 1, micron 1, trendforce 1, technews 1, wing-vc 1, simplywallst 1, whitehouse-govinfo 1
+RESULT retrieved documents issued by Advantest: 180; by others: 38

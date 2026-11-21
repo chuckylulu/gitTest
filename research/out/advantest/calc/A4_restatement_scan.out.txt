@@ -1,0 +1,31 @@
+== Statement line items: first reported vs later comparative ==
+--- FY2024 P&L: FY2024 results vs FY2025 results
+   lines compared 21: same 21, changed 0; only in first doc 0, only in later doc 0
+--- 31 Mar 2025 balance sheet: FY2024 results vs FY2025 results
+   lines compared 36: same 36, changed 0; only in first doc 0, only in later doc 0
+--- FY2024 net sales by geographical area: FY2024 results vs FY2025 results
+   lines compared 5: same 5, changed 0; only in first doc 8, only in later doc 8
+   (unmatched labels: first ['Net sales to unaffiliated customers 598,128 73,180 108,399', 'Inter segment sales － － －', 'Total 598,128 73,180 108,399', '(operating income (loss) before share 244,021 16,786 (10,914)', 'Operating income － － －', 'Financial income － － －'] later ['Net sales to unaffiliated customers 1,019,380 109,230', 'Inter segment sales 10 ', 'Total 1,019,390 109,230', '(operating income (loss) before share 518,760 8,758', 'Operating income ', 'Financial income '])
+--- FY2024 consolidated P&L: 83rd vs 84th annual securities report
+   lines compared 21: same 21, changed 0; only in first doc 0, only in later doc 0
+--- 31 Mar 2025 balance sheet: 83rd vs 84th annual securities report
+   lines compared 36: same 36, changed 0; only in first doc 0, only in later doc 0
+--- Q1 FY2024 P&L: FY24 Q1 results vs FY25 Q1 results
+   lines compared 14: same 14, changed 0; only in first doc 0, only in later doc 6
+   (unmatched labels: first [] later ['Net income', 'Remeasurements of defined benefit pension plan', 'Exchange differences on translation of foreign operations', 'Total other comprehensive income (loss)', 'Total comprehensive income for the period', 'Owners of the parent'])
+--- 1H FY2024 P&L: FY24 Q2 results vs FY25 Q2 results
+   lines compared 14: same 14, changed 0; only in first doc 0, only in later doc 0
+--- 9M FY2024 P&L: FY24 Q3 results vs FY25 Q3 results
+   lines compared 14: same 14, changed 0; only in first doc 0, only in later doc 0
+--- Q1 FY2025 P&L: FY25 Q1 results vs FY26 Q1 results
+   lines compared 20: same 20, changed 0; only in first doc 0, only in later doc 0
+--- 1H FY2025 P&L: FY25 Q2 results vs FY26 Q2 results
+   lines compared 14: same 14, changed 0; only in first doc 0, only in later doc 0
+
+== Briefing slides: single-quarter summary figures shown in more than one deck (JPY bn) ==
+   quarter-items shown in >=2 decks: 65; identical in all decks 65; changed 0
+
+RESULT statement_lines_compared = 195
+RESULT statement_lines_changed = 0
+RESULT slide_quarter_items_compared = 65
+RESULT slide_quarter_items_changed = 0

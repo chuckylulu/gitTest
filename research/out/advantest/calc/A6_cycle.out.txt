@@ -1,0 +1,189 @@
+==============================================================================================================
+A6 - Advantest cycle analysis. IFRS, JPY million unless stated. Fiscal year ends 31 March; FY named by start year.
+Quarter = YTD minus prior YTD from the tanshin releases; checked against company-printed single quarters (JPY bn).
+==============================================================================================================
+
+1. Quarterly series (also saved to A6_quarterly_series.csv)
+quarter    months            sales        OI    OM%  one-offs  OM ex%  T4Q sales  T4Q OM% check
+FY2015 Q1  Apr-Jun 2015     40,166     2,475    6.2         0     6.2                     Q1 = YTD Q1 (no differencing)
+FY2015 Q2  Jul-Sep 2015     46,181     4,202    9.1         0     9.1                     no company-printed single quarter in the files read
+FY2015 Q3  Oct-Dec 2015     29,885      -219   -0.7         0    -0.7                     no company-printed single quarter in the files read
+FY2015 Q4  Jan-Mar 2016     45,879     6,139   13.4         0    13.4    162,111      7.8 no company-printed single quarter in the files read
+FY2016 Q1  Apr-Jun 2016     40,669     5,738   14.1         0    14.1    162,614      9.8 Q1 = YTD Q1 (no differencing)
+FY2016 Q2  Jul-Sep 2016     35,526     2,580    7.3         0     7.3    151,959      9.4 no company-printed single quarter in the files read
+FY2016 Q3  Oct-Dec 2016     31,376       973    3.1         0     3.1    153,450     10.1 no company-printed single quarter in the files read
+FY2016 Q4  Jan-Mar 2017     48,345     4,614    9.5         0     9.5    155,916      8.9 no company-printed single quarter in the files read
+FY2017 Q1  Apr-Jun 2017     40,697     2,226    5.5         0     5.5    155,944      6.7 OK (diff sales 0.00, OI 0.03 bn)
+FY2017 Q2  Jul-Sep 2017     47,715     5,186   10.9         0    10.9    168,133      7.7 OK (diff sales 0.02, OI 0.01 bn)
+FY2017 Q3  Oct-Dec 2017     50,876     3,233    6.4    -3,300    12.8    187,633      8.1 OK (diff sales 0.02, OI 0.03 bn)
+FY2017 Q4  Jan-Mar 2018     67,935    13,842   20.4         0    20.4    207,223     11.8 OK (diff sales 0.03, OI 0.06 bn)
+FY2018 Q1  Apr-Jun 2018     70,931    15,818   22.3         0    22.3    237,457     16.0 OK (diff sales 0.03, OI 0.02 bn)
+FY2018 Q2  Jul-Sep 2018     72,646    17,945   24.7     1,000    23.3    262,388     19.4 OK (diff sales 0.05, OI 0.05 bn)
+FY2018 Q3  Oct-Dec 2018     74,920    20,703   27.6     2,500    24.3    286,432     23.8 OK (diff sales 0.02, OI 0.00 bn)
+FY2018 Q4  Jan-Mar 2019     63,959    10,196   15.9    -2,000    19.1    282,456     22.9 OK (diff sales 0.04, OI 0.00 bn)
+FY2019 Q1  Apr-Jun 2019     66,165    15,160   22.9         0    22.9    277,690     23.0 OK (diff sales 0.03, OI 0.04 bn)
+FY2019 Q2  Jul-Sep 2019     71,586    17,718   24.8         0    24.8    276,630     23.1 OK (diff sales 0.01, OI 0.02 bn)
+FY2019 Q3  Oct-Dec 2019     69,917    14,253   20.4         0    20.4    271,627     21.1 OK (diff sales 0.02, OI 0.05 bn)
+FY2019 Q4  Jan-Mar 2020     68,226    11,577   17.0         0    17.0    275,894     21.3 OK (diff sales 0.03, OI 0.02 bn)
+FY2020 Q1  Apr-Jun 2020     66,725    13,458   20.2         0    20.2    276,454     20.6 OK (diff sales 0.02, OI 0.04 bn)
+FY2020 Q2  Jul-Sep 2020     77,377    17,479   22.6     2,451    19.4    282,245     20.1 OK (diff sales 0.02, OI 0.08 bn)
+FY2020 Q3  Oct-Dec 2020     78,072    15,241   19.5         0    19.5    290,400     19.9 OK (diff sales 0.03, OI 0.06 bn)
+FY2020 Q4  Jan-Mar 2021     90,615    24,548   27.1     5,569    20.9    312,789     22.6 OK (diff sales 0.02, OI 0.05 bn)
+FY2021 Q1  Apr-Jun 2021     97,116    26,125   26.9         0    26.9    343,180     24.3 OK (diff sales 0.02, OI 0.02 bn)
+FY2021 Q2  Jul-Sep 2021     90,874    21,351   23.5         0    23.5    356,677     24.5 OK (diff sales 0.03, OI 0.05 bn)
+FY2021 Q3  Oct-Dec 2021    112,077    33,566   29.9         0    29.9    390,682     27.0 OK (diff sales 0.02, OI 0.07 bn)
+FY2021 Q4  Jan-Mar 2022    116,834    33,692   28.8         0    28.8    416,901     27.5 OK (diff sales 0.03, OI 0.01 bn)
+FY2022 Q1  Apr-Jun 2022    135,943    44,783   32.9         0    32.9    455,728     29.3 OK (diff sales 0.04, OI 0.02 bn)
+FY2022 Q2  Jul-Sep 2022    138,863    43,133   31.1         0    31.1    503,717     30.8 OK (diff sales 0.04, OI 0.03 bn)
+FY2022 Q3  Oct-Dec 2022    137,993    41,224   29.9         0    29.9    529,633     30.7 OK (diff sales 0.01, OI 0.02 bn)
+FY2022 Q4  Jan-Mar 2023    147,392    38,547   26.2    -3,000    28.2    560,191     29.9 OK (diff sales 0.01, OI 0.05 bn)
+FY2023 Q1  Apr-Jun 2023    101,251    14,269   14.1         0    14.1    525,499     26.1 OK (diff sales 0.05, OI 0.03 bn)
+FY2023 Q2  Jul-Sep 2023    116,260    21,000   18.1     3,179    15.3    502,896     22.9 OK (diff sales 0.06, OI 0.00 bn)
+FY2023 Q3  Oct-Dec 2023    133,233    26,830   20.1         0    20.1    498,136     20.2 OK (diff sales 0.03, OI 0.03 bn)
+FY2023 Q4  Jan-Mar 2024    135,763    19,529   14.4    -8,998    21.0    486,507     16.8 OK (diff sales 0.04, OI 0.03 bn)
+FY2024 Q1  Apr-Jun 2024    138,725    31,325   22.6         0    22.6    523,981     18.8 OK (diff sales 0.03, OI 0.02 bn)
+FY2024 Q2  Jul-Sep 2024    190,481    63,534   33.4         0    33.4    598,202     23.6 OK (diff sales 0.02, OI 0.07 bn)
+FY2024 Q3  Oct-Dec 2024    218,152    69,267   31.8         0    31.8    683,121     26.9 OK (diff sales 0.05, OI 0.07 bn)
+FY2024 Q4  Jan-Mar 2025    232,349    64,035   27.6   -21,393    36.8    779,707     29.3 OK (diff sales 0.05, OI 0.06 bn)
+FY2025 Q1  Apr-Jun 2025    263,776   123,952   47.0     2,504    46.0    904,758     35.5 OK (diff sales 0.02, OI 0.05 bn)
+FY2025 Q2  Jul-Sep 2025    262,957   108,483   41.3    -2,000    42.0    977,234     37.4 OK (diff sales 0.06, OI 0.08 bn)
+FY2025 Q3  Oct-Dec 2025    273,804   113,571   41.5         0    41.5  1,032,886     39.7 OK (diff sales 0.00, OI 0.03 bn)
+FY2025 Q4  Jan-Mar 2026    328,073   153,114   46.7         0    46.7  1,128,610     44.2 OK (diff sales 0.03, OI 0.01 bn)
+FY2026 Q1  Apr-Jun 2026    367,473   189,990   51.7         0    51.7  1,232,307     45.9 Q1 = YTD Q1 (no differencing)
+FY2026 Q2  Jul-Sep 2026    477,727   266,819   55.9         0    55.9  1,447,077     50.0 OK (diff sales 0.03, OI 0.02 bn)
+
+Cross-check mismatches vs company-printed quarters: none
+
+2. Downturn screens (all drawdowns from a running peak)
+2a. T4Q net sales drawdowns of at least 1% (T4Q starts FY2015 Q4 because IFRS quarterly data start FY2015 Q1)
+   T4Q peak FY2016 Q1 (162,614) -> trough FY2016 Q2 (151,959): -6.6%; recovered above peak in FY2017 Q2
+   T4Q peak FY2018 Q3 (286,432) -> trough FY2019 Q3 (271,627): -5.2%; recovered above peak in FY2020 Q3
+   T4Q peak FY2022 Q4 (560,191) -> trough FY2023 Q4 (486,507): -13.2%; recovered above peak in FY2024 Q2
+2b. Single-quarter net sales drawdowns of at least 10%
+   quarter peak FY2015 Q2 (46,181) -> trough FY2015 Q3 (29,885): -35.3%; regained in FY2016 Q4
+   quarter peak FY2016 Q4 (48,345) -> trough FY2017 Q1 (40,697): -15.8%; regained in FY2017 Q3
+   quarter peak FY2018 Q3 (74,920) -> trough FY2018 Q4 (63,959): -14.6%; regained in FY2020 Q2
+   quarter peak FY2022 Q4 (147,392) -> trough FY2023 Q1 (101,251): -31.3%; regained in FY2024 Q2
+
+3. Downturns under the stated definition (T4Q net sales down >= 5% from its running peak)
+   Every T4Q drawdown of 1% or more is listed in 2a; a threshold anywhere from 1% to 5.2% selects the same three episodes.
+
+  Episode 1: window FY2015 Q2 .. FY2017 Q1  [T4Q peak lies in the first year of computable IFRS T4Q data (quarters start FY2015 Q1): earlier T4Q values unknown, depth may be understated]
+   single-quarter peak FY2015 Q2 (Jul-Sep 2015) sales 46,181  -> trough FY2015 Q3 (Oct-Dec 2015) sales 29,885: -35.3%
+   operating income 4,202 -> -219: -105.2%; ex named one-offs 4,202 -> -219: -105.2%
+   operating margin at peak 9.1% -> at trough -0.7%: -9.8 pp   | ex one-offs 9.1% -> -0.7%: -9.8 pp   | ex named items other than inventory losses 9.1% -> -0.7%: -9.8 pp
+   highest quarterly margin up to the sales trough FY2015 Q2 9.1% -> lowest after it FY2015 Q3 -0.7%: -9.8 pp   | ex one-offs FY2015 Q2 9.1% -> FY2015 Q3 -0.7%: -9.8 pp
+   duration: 1 quarter(s) peak to trough; quarterly sales regained the peak in FY2016 Q4 (6 quarters after the peak)
+   T4Q: peak FY2016 Q1 162,614 -> trough FY2016 Q2 151,959: -6.6% over 1 quarters; T4Q margin 9.8% -> 9.4% (-0.4 pp); ex one-offs 9.8% -> 9.4% (-0.4 pp); T4Q back above peak in FY2017 Q2
+
+  Episode 2: window FY2017 Q4 .. FY2020 Q2
+   single-quarter peak FY2018 Q3 (Oct-Dec 2018) sales 74,920  -> trough FY2018 Q4 (Jan-Mar 2019) sales 63,959: -14.6%
+   operating income 20,703 -> 10,196: -50.8%; ex named one-offs 18,203 -> 12,196: -33.0%
+   operating margin at peak 27.6% -> at trough 15.9%: -11.7 pp   | ex one-offs 24.3% -> 19.1%: -5.2 pp   | ex named items other than inventory losses 24.3% -> 15.9%: -8.4 pp
+   highest quarterly margin up to the sales trough FY2018 Q3 27.6% -> lowest after it FY2018 Q4 15.9%: -11.7 pp   | ex one-offs FY2018 Q3 24.3% -> FY2019 Q4 17.0%: -7.3 pp
+   duration: 1 quarter(s) peak to trough; quarterly sales regained the peak in FY2020 Q2 (7 quarters after the peak)
+   T4Q: peak FY2018 Q3 286,432 -> trough FY2019 Q3 271,627: -5.2% over 4 quarters; T4Q margin 23.8% -> 21.1% (-2.7 pp); ex one-offs 22.6% -> 21.8% (-0.8 pp); T4Q back above peak in FY2020 Q3
+     one-offs FY2018 Q2: +1,000 (gain on sale of fixed assets (~1.0 bn; named for 1H, placed in Q2 by quarterly other income Q1 0.1 / Q2 1.0 bn)) -> OM 24.7% reported, 23.3% ex
+     one-offs FY2018 Q3: +2,500 (pension transfer to defined contribution (~2.5 bn)) -> OM 27.6% reported, 24.3% ex
+     one-offs FY2018 Q4: -2,000 (inventory valuation loss (~2 bn, Q&A)) -> OM 15.9% reported, 19.1% ex
+     one-offs FY2019 Q1: +0 (inventory valuation losses named (milder than in FY2018 Q4), amount not disclosed (A6-315)) -> OM 22.9% reported, 22.9% ex
+     one-offs FY2019 Q3: +0 (one-time amortisation expense on transferred SLT business (amount not disclosed)) -> OM 20.4% reported, 20.4% ex
+     one-offs FY2020 Q2: +2,451 (gain on transfer of probe card business (30 Jul 2020)) -> OM 22.6% reported, 19.4% ex
+
+  Episode 3: window FY2022 Q1 .. FY2024 Q1
+   single-quarter peak FY2022 Q4 (Jan-Mar 2023) sales 147,392  -> trough FY2023 Q1 (Apr-Jun 2023) sales 101,251: -31.3%
+   operating income 38,547 -> 14,269: -63.0%; ex named one-offs 41,547 -> 14,269: -65.7%
+   operating margin at peak 26.2% -> at trough 14.1%: -12.1 pp   | ex one-offs 28.2% -> 14.1%: -14.1 pp   | ex named items other than inventory losses 26.2% -> 14.1%: -12.1 pp
+   highest quarterly margin up to the sales trough FY2022 Q1 32.9% -> lowest after it FY2023 Q1 14.1%: -18.8 pp   | ex one-offs FY2022 Q1 32.9% -> FY2023 Q1 14.1%: -18.8 pp
+   duration: 1 quarter(s) peak to trough; quarterly sales regained the peak in FY2024 Q2 (6 quarters after the peak)
+   T4Q: peak FY2022 Q4 560,191 -> trough FY2023 Q4 486,507: -13.2% over 4 quarters; T4Q margin 29.9% -> 16.8% (-13.2 pp); ex one-offs 30.5% -> 18.0% (-12.5 pp); T4Q back above peak in FY2024 Q2
+     one-offs FY2022 Q4: -3,000 (inventory valuation losses (~3 bn, Q&A)) -> OM 26.2% reported, 28.2% ex
+     one-offs FY2023 Q2: +3,179 (settlement income (named for 1H; placed in Q2 by quarterly other income-expenses Q1 0.2 / Q2 3.2 bn)) -> OM 18.1% reported, 15.3% ex
+     one-offs FY2023 Q4: -8,998 (goodwill impairment, Essai (SLT)) -> OM 14.4% reported, 21.0% ex
+
+4. Sensitivity: a '>= 15% single-quarter decline from the running peak' rule selects
+   FY2015 Q2 (Jul-Sep 2015) 46,181 -> FY2015 Q3 (Oct-Dec 2015) 29,885: -35.3%; OM 9.1% -> -0.7% (-9.8 pp)
+   FY2016 Q4 (Jan-Mar 2017) 48,345 -> FY2017 Q1 (Apr-Jun 2017) 40,697: -15.8%; OM 9.5% -> 5.5% (-4.1 pp)
+   FY2022 Q4 (Jan-Mar 2023) 147,392 -> FY2023 Q1 (Apr-Jun 2023) 101,251: -31.3%; OM 26.2% -> 14.1% (-12.1 pp)
+   (10-15% band, not selected) FY2018 Q3 -> FY2018 Q4: -14.6%
+
+5. FY2015-FY2016 quarterly detail (IFRS; T4Q not computable before FY2015 Q4)
+   FY2015 Q1 Apr-Jun 2015: sales 40,166 OI 2,475 OM 6.2%
+   FY2015 Q2 Jul-Sep 2015: sales 46,181 OI 4,202 OM 9.1%
+   FY2015 Q3 Oct-Dec 2015: sales 29,885 OI -219 OM -0.7%
+   FY2015 Q4 Jan-Mar 2016: sales 45,879 OI 6,139 OM 13.4%
+   FY2016 Q1 Apr-Jun 2016: sales 40,669 OI 5,738 OM 14.1%
+   FY2016 Q2 Jul-Sep 2016: sales 35,526 OI 2,580 OM 7.3%
+   FY2016 Q3 Oct-Dec 2016: sales 31,376 OI 973 OM 3.1%
+   FY2016 Q4 Jan-Mar 2017: sales 48,345 OI 4,614 OM 9.5%
+   FY2017 Q1 Apr-Jun 2017: sales 40,697 OI 2,226 OM 5.5%
+   FY2017 Q2 Jul-Sep 2017: sales 47,715 OI 5,186 OM 10.9%
+   peak FY2015 Q2 46,181 -> FY2015 Q3 29,885: -35.3%, OM 9.1% -> -0.7%; second low FY2016 Q3 31,376 (-32.1% vs FY2015 Q2), OM 3.1%
+
+6. Annual series and fiscal-year peak-to-trough (U.S. GAAP to FY2013, IFRS from FY2014)
+   FY2007 US GAAP sales   182,767 OI    22,716 OM   12.4% (printed 12.4) | one-offs +0 -> OM ex   12.4%  
+   FY2008 US GAAP sales    76,652 OI   -49,457 OM  -64.5% (printed -64.5) | one-offs -27,600 -> OM ex  -28.5%  inventory valuation 8.7 + restructuring 5.1 + PP&E impairment 13.8 bn
+   FY2009 US GAAP sales    53,225 OI   -11,639 OM  -21.9% (printed -21.9) | one-offs +0 -> OM ex  -21.9%  no item named in the text read
+   FY2010 US GAAP sales    99,634 OI     6,111 OM    6.1% (printed None) | one-offs +0 -> OM ex    6.1%  
+   FY2011 US GAAP sales   141,048 OI       837 OM    0.6% (printed 0.6) | one-offs +0 -> OM ex    0.6%  
+   FY2012 US GAAP sales   132,903 OI        80 OM    0.1% (printed None) | one-offs +0 -> OM ex    0.1%  
+   FY2013 US GAAP sales   111,878 OI   -36,369 OM  -32.5% (printed -32.5) | one-offs -17,500 -> OM ex  -16.9%  inventory valuation 4.0 + impairment 13.5 bn (Q3)
+   FY2014 IFRS    sales   163,803 OI    16,858 OM   10.3% (printed None) | one-offs +0 -> OM ex   10.3%  US GAAP: 163329 / 14619
+   FY2015 IFRS    sales   162,111 OI    12,597 OM    7.8% (printed 7.8) | one-offs +0 -> OM ex    7.8%  
+   FY2016 IFRS    sales   155,916 OI    13,905 OM    8.9% (printed 8.9) | one-offs +0 -> OM ex    8.9%  
+   FY2017 IFRS    sales   207,223 OI    24,487 OM   11.8% (printed 11.8) | one-offs -3,300 -> OM ex   13.4%  Q3: inventory write-down, nanotechnology (~3.3 bn)
+   FY2018 IFRS    sales   282,456 OI    64,662 OM   22.9% (printed 22.9) | one-offs +1,500 -> OM ex   22.4%  Q2: gain on sale of fixed assets (~1.0 bn; named for 1H, placed in Q2 by quarterly other income Q1 0.1 / Q2 1.0 bn); Q3: pension transfer to defined contribution (~2.5 bn); Q4: inventory valuation loss (~2 bn, Q&A)
+   FY2019 IFRS    sales   275,894 OI    58,708 OM   21.3% (printed 21.3) | one-offs +0 -> OM ex   21.3%  Q1: inventory valuation losses named (milder than in FY2018 Q4), amount not disclosed (A6-315); Q3: one-time amortisation expense on transferred SLT business (amount not disclosed)
+   FY2020 IFRS    sales   312,789 OI    70,726 OM   22.6% (printed 22.6) | one-offs +8,020 -> OM ex   20.0%  Q2: gain on transfer of probe card business (30 Jul 2020); Q4: pension plan transfer, Advantest Europe GmbH (named for FY; placed in Q4 by quarterly other income-expenses Q2 2.6 / Q4 5.7 bn)
+   FY2021 IFRS    sales   416,901 OI   114,734 OM   27.5% (printed 27.5) | one-offs +0 -> OM ex   27.5%  
+   FY2022 IFRS    sales   560,191 OI   167,687 OM   29.9% (printed 29.9) | one-offs -3,000 -> OM ex   30.5%  Q4: inventory valuation losses (~3 bn, Q&A)
+   FY2023 IFRS    sales   486,507 OI    81,628 OM   16.8% (printed 16.8) | one-offs -5,819 -> OM ex   18.0%  Q2: settlement income (named for 1H; placed in Q2 by quarterly other income-expenses Q1 0.2 / Q2 3.2 bn); Q4: goodwill impairment, Essai (SLT)
+   FY2024 IFRS    sales   779,707 OI   228,161 OM   29.3% (printed 29.3) | one-offs -21,393 -> OM ex   32.0%  Q4: goodwill and intangibles impairment, Essai (SLT)
+   FY2025 IFRS    sales 1,128,610 OI   499,120 OM   44.2% (printed 44.2) | one-offs +504 -> OM ex   44.2%  Q1: gain on partial divestiture of a business; Q2: one-time SG&A charge related to a growth investment (~2 bn; amount from notes p.9, link inferred A1-512); Q4: one-off SG&A expenses named by management, amount not disclosed (A1-311)
+   local FY peaks -> troughs found: [('FY2007', 'FY2009'), ('FY2011', 'FY2013'), ('FY2014', 'FY2016'), ('FY2018', 'FY2019'), ('FY2022', 'FY2023')]
+
+   Fiscal-year peak -> trough (each FY local peak to the lowest FY before regaining it; FY2006 not retrieved, so 2007-09 starts at FY2007):
+   FY2007 -> FY2009 (US GAAP): sales 182,767 -> 53,225 -70.9%; OM 12.4% -> -21.9% (-34.3 pp); ex one-offs 12.4% -> -21.9% (-34.3 pp)
+   FY2011 -> FY2013 (US GAAP): sales 141,048 -> 111,878 -20.7%; OM 0.6% -> -32.5% (-33.1 pp); ex one-offs 0.6% -> -16.9% (-17.5 pp)
+   FY2014 -> FY2016 (IFRS): sales 163,803 -> 155,916 -4.8%; OM 10.3% -> 8.9% (-1.4 pp); ex one-offs 10.3% -> 8.9% (-1.4 pp)
+   FY2018 -> FY2019 (IFRS): sales 282,456 -> 275,894 -2.3%; OM 22.9% -> 21.3% (-1.6 pp); ex one-offs 22.4% -> 21.3% (-1.1 pp)
+   FY2022 -> FY2023 (IFRS): sales 560,191 -> 486,507 -13.2%; OM 29.9% -> 16.8% (-13.2 pp); ex one-offs 30.5% -> 18.0% (-12.5 pp)
+   FY2008 (inside 2007-09): OM -64.5% reported, -28.5% ex named items (OI ex -21,857)
+
+7. Market context from the Integrated Annual Report 2026 (company estimates; WSTS)
+   Memory tester market (USD m) CY2015 470 -> CY2016 470: +0.0%
+   Memory tester market (USD m) CY2018 1,150 -> CY2019 650: -43.5%
+   Memory tester market (USD m) CY2022 1,200 -> CY2023 1,100: -8.3%
+   SoC tester market (USD m) CY2015 1,650 -> CY2016 2,000: +21.2%
+   SoC tester market (USD m) CY2018 2,550 -> CY2019 2,700: +5.9%
+   SoC tester market (USD m) CY2022 4,000 -> CY2023 3,300: -17.5%
+   WSTS semiconductor sales (USD bn) CY2015 335 -> CY2016 339: +1.2%
+   WSTS semiconductor sales (USD bn) CY2018 469 -> CY2019 412: -12.2%
+   WSTS semiconductor sales (USD bn) CY2022 574 -> CY2023 527: -8.2%
+
+8. Latest quarter FY2026 Q2 (Jul-Sep 2026): sales 477,727, OI 266,819, OM 55.9%; T4Q sales 1,447,077, T4Q OM 50.0%
+
+9. Threshold sensitivity of the T4Q definition (which episodes a given threshold selects)
+   T4Q drawdown from peak FY2018 Q3: 5.17%
+   T4Q drawdown from peak FY2016 Q1: 6.55%
+   T4Q drawdown from peak FY2022 Q4: 13.15%
+   threshold in (0.00%, 5.17%]: selects T4Q peaks ['FY2016 Q1', 'FY2018 Q3', 'FY2022 Q4']; last two = ['FY2018 Q3', 'FY2022 Q4']
+   threshold in (5.17%, 6.55%]: selects T4Q peaks ['FY2016 Q1', 'FY2022 Q4']; last two = ['FY2016 Q1', 'FY2022 Q4']
+   threshold in (6.55%, 13.15%]: selects T4Q peaks ['FY2022 Q4']; last two = ['FY2022 Q4']
+   above 13.15%: none
+   2018-19 clears the 5% threshold by 0.17 pp
+
+10. Inventory valuation losses recognised as expense (annual securities reports) vs amounts management named for one quarter
+   FY2018: 6,324 (= 2.2% of net sales 282,456)
+   FY2019: 3,468 (= 1.3% of net sales 275,894)
+   FY2020: 3,307 (= 1.1% of net sales 312,789)
+   FY2021: 2,728 (= 0.7% of net sales 416,901)
+   FY2022: 6,344 (= 1.1% of net sales 560,191)
+   FY2023: 7,347 (= 1.5% of net sales 486,507)
+   FY2018 Q4 named ~2 bn = 32% of the FY2018 total; FY2022 Q4 named ~3 bn = 47% of the FY2022 total; FY2023 total 7,347 with no quarterly amount named
+
+11. Peak-to-trough quarter changes vs the QoQ changes printed on the company's briefing slides
+   2018-19 FY2018 Q3->FY2018 Q4: computed sales -14.6% / OI -50.8% / OM -11.7 pp; printed -14.6% / -50.8% / -11.7 pts -> MATCH
+   2022-23 FY2022 Q4->FY2023 Q1: computed sales -31.3% / OI -63.0% / OM -12.1 pp; printed -31.3% / -63.0% / -12.1 pts -> MATCH
+
+Wrote A6_quarterly_series.csv and A6_cycle_metrics.json

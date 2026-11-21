@@ -1,0 +1,135 @@
+                                           Advantest Corporation
+                                           IR Technical Briefing
+                                             Q＆A Summary
+
+                                               November 28, 2024
+
+
+      [HPC(High Performance Computing)/AI tester demand trends]
+Q1:   After listening to the Company’s presentation today, I have high expectations that the
+      tester market for HPC will continue to expand significantly in both quality and quantity. Is
+      this view correct? Given that GPUs (Graphics Processing Unit) are already approaching
+      their technical limits, I understand that it will not be easy for testers to keep up if they
+      continue to evolve at a rapid pace. What is the Company’s view on this?
+A1:   We believe that there is a clear trend toward expanding test volume due to the increasing
+      complexity of semiconductors and semiconductor test. The current increase in test volume
+      is driven by structural factors. The extent of the increase in test volume cannot be known
+      until the target wafers are actually measured upon the transition to the next generation
+      device. We and our customers are still at the beginning stage of this change in test volume,
+      and we need to accumulate more experience. Therefore, it is possible that the test volume
+      fluctuates beyond our initial expectation. It is very difficult to predict test times, test
+      volume, and test insertions in advance. On the other hand, customers are working to
+      generate more efficient test patterns to reduce scan test* time. As a tester supplier, we are
+      collaborating with EDA (Electronic Design Automation) vendors so that we can better
+      contribute to supporting the technological advancement of our customers' semiconductors.
+
+      *“Scan test”: a test method which uses design for testability circuits as described on page 12 of the presentation
+
+
+
+      [Changes in semiconductor technology test time]
+Q2:   As the primary demand driver for high-end SoC testers shifts from smartphone APUs
+      (Application Processor Units) to HPC, how will test times change? The trend of increasing
+      transistor count has been ongoing for some time. Until now, I believe that test times
+      increased in the initial ramp up stages of new semiconductors and then gradually leveled
+      off as yields improved.
+A2:   In the initial stages of releasing new semiconductors, test times increase, and efforts to
+      level out test times as the semiconductor and test quality mature are fundamentally the
+      same for both APUs and HPC. However, especially for HPC, the development cycle for
+
+
+
+                                                            1
+                                                                           All Rights Reserved - ADVANTEST CORPORATION
+      new devices has become as short as about one year. The reality is that customers do not
+      have sufficient time to work on test time optimization.
+
+
+      [Tester performance coverage for semiconductor technology advancement]
+Q3:   I understand that the test times have increased due to chiplet* technology. If the number of
+      dies in a chiplet increases further in the future, will test times increase accordingly?
+
+      *“Chiplet”: A technology that combines small semiconductor devices, each divided by function, like building blocks
+
+      into one package
+
+
+
+A3:   As you correctly understand, if the number of dies in a chiplet increases, test times tend to
+      increase. Although we are working with EDA vendors to improve the efficiency of scan
+      test, the practice of testing all dies remains unchanged. Therefore, as the number of silicon
+      dies integrated in a package increases, the number of target devices for test increases and
+      test patterns become longer, leading to longer test times. In addition, when multiple silicon
+      dies are placed side by side on an interposer (an intermediate substrate connecting
+      semiconductor devices and electronic components), defects are more likely to occur at the
+      interconnects between the dies, which can also lead to additional test items.
+
+
+      [Test Method]
+Q4:   Regarding the “V93000” modules on page 16 of the presentation, I understand that the
+      mainstay for HPC is the “PS(Pin Scale)5000”, but what are your plans for the future?
+      Will the “PS5000” still be effective even if higher performance and processing
+      capabilities are required of testers in a few years' time?
+A4:   The “PS5000” has been a mainstream digital module for HPC, capable of test speeds up
+      to 5 Gbps. We believe that it will continue to be the mainstay module for scan test for a
+      long time. In addition, as explained on page 11 of the presentation, many customers are
+      working to improve scan test efficiency through various approaches such as Scan-over-
+      HSIO (High Speed IO) technology. By adopting modules such as “PS Multilevel Serial”
+      and “Link Scale” in addition to “PS5000”, they are expanding test coverage.
+
+
+Q5:   What is it that makes your scan test superior to the competition?
+A5:   For example, we believe that the “PS5000” has a competitive advantage in scan test in
+      terms of specifications such as “the large capacity of its vector memory (memory for
+      storing input/output patterns)”, “the number of input/output pins”, and “the speed of
+      input/output signals”. In addition, the flexibility to flexibly balance these three factors
+
+
+                                                          2
+                                                                        All Rights Reserved - ADVANTEST CORPORATION
+          according to the customer's test specifications is a factor that has been well-received by
+          many customers.
+
+
+ Q6:      Does the “large capacity of vector memory” mean that it can store more rows and
+          columns of input/output patterns, as illustrated on page 12 of the presentation, i.e., more
+          data can be tested at one time?
+ A6:      Yes.
+
+
+ Q7:      What does “95 to 99.5% high test coverage” on page 12 of the presentation refer to?
+ A7:      Test coverage refers to the value indicating the extent to which the scan circuit can test the
+          transistors on the device under test. We indicated a range of 95 to 99.5%, but this varies
+          depending on the design of the customer's scan circuit.
+
+
+Note
+
+This document is prepared for those who were unable to attend the IR Technical Briefing and is intended only for
+
+reference purposes. The original content has been revised and edited by Advantest for ease of understanding.
+
+
+
+This document contains“forward-looking statements” that are based on Advantest’s current expectations,
+
+estimates and projections. These statements include, among other things, the discussion of Advantest’s business
+
+strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally,
+
+these forward-looking statements can be identified by the use of forward-looking terminology such as “anticipate,”
+
+“believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements
+
+are subject to known and unknown risks, uncertainties and other factors that may cause Advantest’s actual results,
+
+levels of activity, performance or achievements to be materially different from those expressed or implied by such
+
+forward-looking statements.
+
+
+
+
+                                                          3
+                                                                      All Rights Reserved - ADVANTEST CORPORATION
+

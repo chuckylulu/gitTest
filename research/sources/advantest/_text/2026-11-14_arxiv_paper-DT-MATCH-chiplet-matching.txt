@@ -1,0 +1,828 @@
+                                          DT-MATCH: Defect- and Topology-Aware Chiplet
+                                          Matching for Yield Optimization in Heterogeneous
+                                                             Integration
+                                                Xuanyi Tan1 , Sanmitra Banerjee1 , Dhruv Thapar1 , Sreejit Chakravarty2 and Krishnendu Chakrabarty1
+                                                         1 School of Electrical, Computer and Energy Engineering, Arizona State University, Tempe, AZ
+                                                                                        2 Ampere Computing, Santa Clara, CA
+
+
+
+                                            Abstract—Heterogeneous integration (HI) and advanced pack-             arises: how should a manufacturer use interconnect defect data
+                                         aging enable chiplet-based system-on-chip (SoC) designs; however,
+arXiv:2611.19544v1 [cs.AR] 14 Nov 2026
+
+
+
+
+                                                                                                                   before assembly to maximize the number of sellable products?
+                                         they also introduce new yield challenges arising from manu-                  This question is related to yield-oriented matching in three-
+                                         facturing defects and complex die-to-die (D2D) interconnect
+                                         constraints. In particular, lane-level defects, limited spares, and       dimensional (3D) integration [5]. Earlier studies show that
+                                         strict structural compatibility requirements impede the efficient         selective matching of dies or wafers can improve compound
+                                         assembly of functional systems from defective but repairable              yield in stacked memories and wafer-to-wafer (W2W) bonding
+                                         chiplets. We present DT-MATCH, a defect- and topology-aware               [6]. Subsequent work extends these ideas to redundancy sharing,
+                                         chiplet matching framework that maximizes the number of                   parametric die selection, and assembly-aware planning for
+                                         functional SoCs under realistic assembly constraints. DT-MATCH
+                                         provides two complementary approaches. The integer linear                 heterogeneous bonding [5], [7], [8]. These solutions established
+                                         programming (ILP)-based approach is implemented using a                   a principle: once pre-bond test data is available, the matching
+                                         batching strategy to approximate the exact formulation. The               strategy plays a key role in determining final yield. However,
+                                         greedy randomized adaptive search procedure (GRASP)-based                 these formulations rely on assumptions that do not hold in
+                                         approach provides substantial acceleration, but it does not               chiplet-based heterogeneous integration (HI). They fail to
+                                         guarantee yield optimality. Both approaches use a preprocessing
+                                         pipeline to reduce the problem size. Experimental results on              capture fine-grained interconnect constraints. As a result, the
+                                         industrial designs demonstrate that, as expected, the ILP-based           compatibility among tested chiplets to be assembled is often
+                                         approach achieves superior solution quality. The GRASP-based              oversimplified, which does not accurately reflect feasibility in
+                                         approach leads to lower runtimes while still achieving solution           practical chiplet assembly scenarios.
+                                         quality that is comparable to the ILP-based solution. Together,              In this paper, we present DT-MATCH, a defect- and topology-
+                                         these methods provide a trade-off between solution quality and
+                                         efficiency for practical chiplet assembly optimization.                   aware framework for chiplet matching under realistic assembly
+                                                                                                                   constraints. We formulate the problem as an assembly optimiza-
+                                                                 I. Introduction                                   tion over a finite inventory of tested chiplets with defective
+                                                                                                                   but repairable interfaces, with the objective of maximizing
+                                            Chiplet-based integration has emerged as a practical path              the number of functionally complete system-on-chip (SoC)
+                                         for extending system capability when a single monolithic                  instances. Each SoC consists of a set of roles, and each role
+                                         die becomes increasingly constrained by reticle limits, cost,             must be assigned a physical chiplet instance of the required
+                                         yield, and the need to mix process technologies. Recent                   chiplet type, such as GPU, IO, or HBM. Each chiplet instance
+                                         industry efforts such as Universal Chiplet Interconnect Express           can be used at most once across all assemblies. The connections
+                                         (UCIe) indicate a shift toward an open ecosystem, where                   among chiplet instances must satisfy a shared spare-budget
+                                         reusable chiplets communicate through standardized on-package             constraint at each interface position. For a symmetric chiplet
+                                         interconnects, and the package increasingly functions as the              whose two orientations are functionally equivalent, a 180°
+                                         system [1], [2]. In this setting, the value of a chiplet is               rotation can expose a less defective side and make an otherwise
+                                         determined not only by whether it passes wafer sort, but also             incompatible connection possible when the number of defects
+                                         by whether a physical instance can be integrated with other               at an interface in the original orientation exceeds the allowed
+                                         available instances to form a complete and functional system.             spare budget. Figure 1 illustrates a motivating example of
+                                            Modern chiplet-based packages make testing and repair a                chiplet matching.
+                                         first-order concern. Large numbers of inter-die interconnects                The chiplet matching problem lies at the intersection of
+                                         are implemented through structures such as micro-bumps and                test, repair, and optimization. Defect maps and spare-budget
+                                         copper pillars, and these links are susceptible to manufacturing          information are generated upstream during post wafer level test,
+                                         defects such as opens and shorts [3], [4]. The ongoing IEEE               while the downstream task is to use this information to optimize
+                                         P3405 effort is standardizing chiplet interconnect test and               the assembly of chiplets into SoCs. Based on this formulation,
+                                         repair through dedicated architectural support, including lane            DT-MATCH includes an exact integer linear programming
+                                         numbering, clustering, and redundancy [3]. As post-wafer test             (ILP) model and a scalable optimization framework that link
+                                         data becomes richer and more structured, a natural question               pre-bond test information to package-level assembly decisions.
+
+
+
+                                                                                                               1                                                 Regular Paper
+         0        0            1        1                      0        0             1        2       parametric die selection [7], [8], [12]–[15]. In addition, [16]
+             C2                    C3                              C2                     C4           formulates multi-product planning with die-to-wafer bonding
+         1        1            2        1                      1        1             1        1
+                                                                                                       as an ILP problem. These studies indicate that yield depends
+                   1+2=3>2                                                  1+1=2≤2
+                  × incompatible                                             compatible
+                                                                                                       on assembly decisions. However, prior models assume regular
+         1        0            1        1                      1        0             1        1
+                                                                                                       structures (e.g., stacked dies or homogeneous tiers) and do not
+                       C1                                                      C1                      capture the heterogeneity of chiplets, the presence of multiple
+                                                 (a)
+                                                                                                       connections per chiplet, or compatibility constraints that depend
+         0        0            1        1                      0        0             1        2       on interface-specific defects under limited spare budgets.
+             C2                    C3                              C2                     C3
+         1        1            2        1                      1        1             1        1       B. Chiplet Interconnect Test, Repair, and Standards
+                                            C3 is rotated by
+                   1+2=3>2                                                  1+1=2≤2
+                                                  180°                                                    Test data plays a key role in enabling defect-aware assembly.
+                  × incompatible                                             compatible
+
+         1        0            1        1                      1        0             1        1
+                                                                                                       In 3D stacked ICs, die-centric DfT and IEEE Std 1838 support
+                       C1                                                      C1                      pre-, mid-, and post-bond testing, treating inter-die interconnects
+                                                 (b)
+                                                                                                       as explicit test targets [17], [18]. These methods emphasize
+Fig. 1: Motivating examples of defect-aware chiplet assembly. In                                       that manufacturing must preserve test access and diagnostic
+both scenarios, the default placement (left) causes the combined                                       resolution before bonding, a requirement that also applies to
+defect count at the interfaces between C3 and C1 to exceed the                                         chiplet systems with dense micro-bumps and short die-to-die
+shared spare budget of 2. Small squares on each chiplet side                                           (D2D) links. Recent studies further develop interconnect test
+denote interfaces, with numbers indicating defect counts (i.e.,                                        methods and architectures, including standardized support such
+the number of faulty lanes). Two strategies restore compatibility                                      as IEEE P3405 [19]–[22]. Related work also models defects
+(right): (a) replacing C3 with another chiplet C4 of the same                                          and repair under realistic conditions [23], [24].
+type but with a more favorable defect distribution; and (b)                                               Test outputs provide more than binary pass or fail labels. A
+rotating C3 by 180◦ so that its less defective side faces C1.                                          chiplet may have multiple interfaces, each with different defect
+                                                                                                       counts and remaining spare capacity, so whether it can be
+   The contributions of this paper are as follows:                                                     used depends on how it is paired with other chiplets. However,
+   • We formulate a chiplet matching problem for HI based on                                           these methods mainly focus on detecting and repairing defects,
+     post wafer-level test data that captures realistic assembly                                       and do not address how tested chiplets should be selected and
+     constraints.                                                                                      assembled into complete systems.
+   • We propose a unified lossless preprocessing pipeline to
+     reduce problem size while preserving optimality.             C. Gap Relative to Prior Work
+   • We develop two complementary solution approaches. The           This paper addresses a critical gap in SoC assembly at the
+     ILP-based approach achieves high solution quality and intersection of test, repair, and optimization. Post wafer-level
+     is well suited for small- to medium-scale chiplet assem- test assembly decisions can improve yield, while test data
+     bly. The greedy randomized adaptive search procedure provides detailed information on D2D link conditions, leading
+     (GRASP)-based metaheuristic shows faster runtime while to a constrained assembly optimization problem in HI. In this
+     achieving comparable solution quality compared to the problem, chiplet instances must be selected and placed within a
+     ILP-based approach, and is well suited for large-scale fixed SoC topology, where all required connections must satisfy
+     instances.                                                   shared spare-budget constraints, rotations may be applied under
+   The remainder of the paper is organized as follows. Section II design limitations, and each instance can be used at most once.
+provides background and motivation. Section III describes the        These characteristics are not captured by prior methods,
+preliminaries and problem formulation. Section IV describes       which  typically assume regular structures, homogeneous stacks,
+the proposed framework. Section V evaluates the effectiveness     or wafer-level   operations. To the best of our knowledge, prior
+of this framework. Section VI concludes the paper.                work  has  not formulated the problem of maximizing the number
+                                                                  of assemblable heterogeneous SoCs based on post wafer-level
+         II. Related Prior Work and Research Gap                  test data under fine-grained defect constraints and limited spare
+A. Yield-Aware Wafer/Die Matching                                 budgets. Our work establishes a direct link between post wafer-
+   Yield enhancement based on post wafer-level test matching level test data and package-level yield optimization.
+has been studied for 3D integration. Yield-oriented models for            III. Preliminaries and Problem Formulation
+stacked integrated circuits (ICs) are developed in [5], analyzing
+the effects of inventory size, matching strategies, and defect A. Preliminaries
+assumptions. Prior work shows yield-aware matching can be            1) SoC Structure and Role Assignment: We consider a target
+formulated as a combinatorial optimization problem [9], [10]. SoC composed of 𝑚 chiplets. Since these chiplets serve different
+   Other work studies defect-aware die selection with repair. In functions, we model them as 𝑚 distinct roles (𝑟 1 , 𝑟 2 , . . . , 𝑟 𝑚 ).
+3D-stacked memories, complementary defect patterns enable Different roles may correspond to the same chiplet type, for
+repairable stacks under redundancy [6], [11], and subsequent example, multiple roles may require chiplets of the HBM
+studies extend these ideas to redundancy allocation and or GPU type. To capture this relation, we define a mapping
+
+
+
+                                                                                                   2                                                   Regular Paper
+       (a) Chiplet inventory                                           System topology                      (b)
+                                                                                                                𝒓₁ East side                                             N           1               8          S
+                                                                                           𝒆₁
+        𝑡1       IO             IO                                            N                                                    𝒒=1 → k=1                  1                      2
+                                                                                                                                                                                             𝒆₁ 𝒆₂
+                                                                                                                                                                                                     7
+                                                                                                                                                                                                                        4
+                                                                  𝒆𝟑                            𝒓₂ : HBM1           𝒒=1
+                                                                                                                                   𝒒=2 → k=2                                         3               6
+                                                                                                                    𝒒=2
+                                                                            𝒓₁ : IO             (Type 2)                           𝒒=3 → k=3                 2
+                                                                                                                                                                       𝒐 = 0°                180°
+                                                                                                                    𝒒=3                                                              4               5       𝒐 = 180°   3
+                                                                                                                                   𝒒=4 → k=4            𝒆𝟑                                               E          W
+        𝑡2      HBM         HBM                        𝒓₄: GPU          W              E                            𝒒=4        → edge e₁ to r₂ (HBM1)
+                                                                                                                                                                  W              E                                          𝒆𝟑
+                                                                                                                                                              3    𝑟₁ : IO           5               4        𝑟₁ : IO   2
+                                                       (Type 3)             (Type 1)                                𝒒=5
+                                                                                                𝒓₃ : HBM2                           𝒒=5 → k=1                     (Type 1)           6               3       (Type 1)
+                                                                                                                    𝒒=6             𝒒=6 → k=2                 4                              𝒆₂ 𝒆₁
+                                                                                                (Type 2)                            𝒒=7 → k=3                                        7               2                  1
+        𝑡3     GPU          GPU                                                S                                    𝒒=7
+                                                                                           𝒆₂                                       𝒒=8 → k=4                            S           8               1          N
+                                                                                                                    𝒒=8        → edge e₂ to r₃ (HBM2)
+
+       (c)   IO instance 𝒊 assigned to role 𝒓₁ (Type 1, 𝒐              Spare lanes (𝑺𝒔𝒉𝒂𝒓𝒆𝒅(𝒆, 𝒌)) = 2      (d)                              𝒇෠ 𝒖,𝒌 + 𝒇෠ 𝒗,𝒌 ≤ Spare lanes (𝑺𝒔𝒉𝒂𝒓𝒆𝒅(𝒆, 𝒌)) = 2
+             = 0°)                                                      HBM1 → role 𝒓₂ (Type 2, 𝒐 = 0°)            Edge 𝒆₁ (𝒓₁ → 𝒓₂):
+              East side — 8 interfaces:                                 West-side interfaces:                        Slot       𝒇෠ 𝒖         𝒇෠ 𝒗        Sum       Spare lanes                           Result
+                   Window for 𝒆₁ → 𝒓₂:
+                                                            𝒆₁                                                       𝒌=1           0          1           1             2                ≤               ✓ PASS
+                                                                        𝑘=1 𝒇෠ 𝒗 = 1
+                   𝑞=1 𝒇෠ 𝒖 = 0                                         𝑘=2 𝒇෠ 𝒗 = 1                                 𝒌=2           1          1           2             2                ≤               ✓ PASS
+                   𝑞=2 𝒇෠ 𝒖 = 1                                         𝑘=3 𝒇෠ 𝒗 = 2                                 𝒌=3           0          2           2             2                ≤               ✓ PASS
+                   𝑞=3 𝒇෠ 𝒖 = 0                                         𝑘=4 𝒇෠ 𝒗 = 0                                  k=4          2          0           2             2                ≤               ✓ PASS
+                                                                                                                   Edge 𝒆₂ (𝒓₁ → 𝒓₃):
+                   𝑞=4 𝒇෠ 𝒖 = 2
+                                                                        HBM2 → role 𝒓₃ (Type 2, 𝒐 = 0°)               Slot        𝒇෠ 𝒖       𝒇෠ 𝒗        Sum          Spare lanes                        Result
+                 Window for 𝒆₂ → 𝒓₃:                                    West-side interfaces:                         𝒌=1          1          0           1               2              ≤               ✓ PASS
+                 𝑞=5 𝒇෠ 𝒖 = 1                               𝒆₂                                                        𝒌=2          0          1           1               2              ≤               ✓ PASS
+                                                                        𝑘=1 𝒇෠ 𝒗 = 0
+                 𝑞=6 𝒇෠ 𝒖 = 0                                           𝑘=2 𝒇෠ 𝒗 = 1                                  𝒌=3          3          0           3               2              >               ✗ FAIL
+                 𝑞=7 𝒇෠ 𝒖 = 3                                           𝑘=3 𝒇෠ 𝒗 = 0                                  𝒌=4          1          1           2               2              ≤               ✓ PASS
+                 𝑞=8 𝒇෠ 𝒖 = 1                                           𝑘=4 𝒇෠ 𝒗 = 1                                 𝒆₁: ALL PASS ✓ 𝒆₂: Interface pair 𝒌=3 (3+0=3 > 2) → FAIL ✗
+                   Fault-free    Faulty    Spare                                                                    ⇒ IO is incompatible with HBM2​ on edge e2​ at this orientation
+
+
+Fig. 2: System model illustrated on a simplified SoC example [25]. (a) SoC topology with four roles and topology edges.
+(b) Disjoint window assignment on the east side of 𝑟 1 . Effect of 180◦ rotation on interface indices. (c) Defect maps and lane-level
+visualization across edge-local indices for a candidate chiplet assembly. (d) Compatibility verification under Equation (1).
+function 𝑡 = 𝑡𝑦 𝑝𝑒(𝑟) that specifies the chiplet type 𝑡 required                                                within that segment. Interface segments assigned to different
+by role 𝑟. After wafer sort, each chiplet type has an inventory                                                 edges are non-overlapping, reflecting resource allocation in
+containing all tested instances of that type. The problem is to                                                 physical assembly. During assembly, chiplets may be placed
+select instances from these inventories, assign them to roles,                                                  with different orientations. Without orientation, assigning a
+and assemble them according to the SoC topology to form                                                         role involves selecting a chiplet instance from the inventory of
+a complete SoC. During assembly, roles must be physically                                                       its type. When orientation is considered, the assignment also
+connected. We represent the SoC topology as a set of edges 𝑒                                                    determines how the instance is placed. We use a variable 𝑜 to
+between roles, where each edge specifies a required connection                                                  denote orientation, for example, 𝑜 = 0◦ indicates no rotation
+between the chiplets assigned to two roles. Each chiplet has                                                    and 𝑜 = 180◦ indicates a 180◦ rotation. For each role 𝑟, the
+four physical directions, 𝑑 ∈ {𝐸, 𝑆, 𝑊, 𝑁 }, and each edge                                                      allowed orientations are given by 𝑂 𝑡 𝑦 𝑝𝑒(𝑟 ),𝑟 ⊆ {0◦ , 180◦ },
+corresponds to a connection between a specific side of one                                                      determined by design constraints. Rotation changes both the
+chiplet and a specific side of another chiplet.                                                                 physical directions and the ordering of interfaces along each
+                                                                                                                side, for example, swapping east and west and reversing the
+Example 1: Figure 2(a) illustrates the above model using a
+                                                                                                                interface sequence. As a result, an interface indexed as 𝑞 may
+simplified SoC with four roles. The design requires two HBM
+                                                                                                                correspond to a different physical location after rotation, and
+chiplets, one IO chiplet, and one GPU chiplet. For each chiplet
+                                                                                                                matching decisions must account for both interface properties
+type, we assume the inventory contains two tested instances
+                                                                                                                and their ordering under the chosen orientation 𝑜.
+for matching and selection. The SoC topology specifies the
+connectivity between roles. The east interfaces of the IO chiplet
+are partitioned into two groups: one connects to the west                                                       Example 2: Figure 2(b) illustrates the relationship among
+interfaces of 𝐻𝐵𝑀1 , and the other to the west interfaces of                                                    interface indices, edges, and rotation. We consider the east
+𝐻𝐵𝑀2 . The west interfaces of the IO chiplet connect to the                                                     side of the IO chiplet, which has eight interfaces indexed by
+east interfaces of the GPU chiplet. These connections define                                                    spatial order as 𝑞 = (1, 2, . . . , 8). In the SoC topology, this
+the topology and physical interconnections among roles. □                                                       side participates in two connections: 𝑞 = (1, . . . , 4) connect
+   2) Interface-Level Interconnection Modeling: To charac-                                                      to 𝐻𝐵𝑀1 via edge 𝑒 1 , and 𝑞 = (5, . . . , 8) connect to 𝐻𝐵𝑀2
+terize interconnections between chiplets, i.e., edges 𝑒, we                                                     via edge 𝑒 2 . Thus, each edge corresponds to a distinct subset
+use a finer-grained description of chiplet interfaces. For each                                                 of interfaces on the same side, forming a connection window.
+direction 𝑑 ∈ {𝐸, 𝑆, 𝑊, 𝑁 }, all interfaces along that side are                                                 For each edge, we define a local index 𝑘 within its interface
+indexed by their spatial order as (1, 2, . . . , 𝑞), where each                                                 subset to denote the connection position. For 𝑒 1 , 𝑞 = (1, . . . , 4)
+index corresponds to a physical location. In practical SoC                                                      map to 𝑘 = (1, . . . , 4); for 𝑒 2 , 𝑞 = (5, . . . , 8) also map to
+topologies, an edge represents a mapping between two groups                                                     𝑘 = (1, . . . , 4). The index 𝑘 is defined per edge and is not
+of interfaces on the corresponding sides of two chiplets. For                                                   global. When the IO chiplet is rotated by 180◦ (𝑜 = 180◦ ),
+each edge, we model this as selecting a contiguous segment of                                                   its east and west sides are swapped and the interface order
+interface positions on both sides, referred to as a connection                                                  is reversed. Consequently, indices defined by 𝑞 map to new
+window. Within each edge, a local index 𝑘 denotes the 𝑘-th                                                      positions, which may change the interface subsets used by
+interface pair in the window, capturing the relative position                                                   each connection. Determining connectivity therefore requires
+
+
+
+                                                                                                            3                                                                                                Regular Paper
+considering both interface indices and their ordering under the            rotations that assembles at least 𝐺 complete SoCs, with all
+chosen orientation.                                                □       roles filled, each instance used at most once, and Equation (1)
+   3) Defect-Aware Compatibility: After post wafer-level test-             satisfied for every edge and slot?
+ing, each chiplet instance is associated with lane-level defect
+                                                                           Theorem 1. The decision version of the chiplet matching
+information at every interface, represented as the number of
+                                                                           problem is NP-complete. It remains NP-hard even when each
+faulty lanes. For an instance 𝑖 of chiplet type 𝑡, we denote
+                                                                           role has a single rotation, each side connects to at most one
+this by 𝑓𝑡 ,𝑖,𝑑,𝑞 , the number of faulty lanes at interface position
+                                                                           neighbor, and defect counts and spare budgets are binary.
+𝑞 on side 𝑑. For each edge 𝑒 and local index 𝑘, the D2D
+protocol provides a shared spare-lane budget 𝑆shared (𝑒, 𝑘),          Proof. Given a candidate solution, we can check in polynomial
+which specifies the maximum number of faulty lanes that               time that each role is assigned a chiplet of the required type,
+can be repaired for the corresponding interface pair.                 each chiplet instance is used at most once, and Equation (1)
+   When two instances are assigned to adjacent roles 𝑟 𝑢 and          holds for all connections. Therefore, the problem is in NP. To
+𝑟 𝑣 with orientations 𝑜𝑢 and 𝑜 𝑣 , their interfaces are aligned       prove NP-hardness, we reduce from 3-Dimensional Matching
+according to edge 𝑒 and the index mapping, resulting in faulty-       (3DM) [26]. Given three disjoint sets 𝑈, 𝑉, 𝑊 of size 𝑛 and
+lane counts 𝑓ˆ𝑢,𝑘 and 𝑓ˆ𝑣,𝑘 at each local index 𝑘. A connection       a set of triples Γ ⊆ 𝑈 × 𝑉 × 𝑊, the problem asks whether
+at index 𝑘 is compatible if and only if                               there exist 𝐺 pairwise disjoint triples. We map each element
+                           𝑓ˆ𝑢,𝑘 + 𝑓ˆ𝑣,𝑘 ≤ 𝑆shared (𝑒, 𝑘).        (1) to a leaf chiplet and each triple to a hub chiplet, assigning
+                                                                      faulty-lane patterns so that Equation (1) holds if and only if a
+This condition must hold for all 𝑘 on the edge; otherwise, the hub connects to its three corresponding leaves.
+edge is incompatible and the two chiplets cannot be connected.           Construction. We construct a star-shaped SoC with one hub
+Example 3: Figure 2(c) illustrates compatibility in a concrete        role   𝑟 𝐻 and three leaf roles 𝑟𝑈 , 𝑟 𝑉 , 𝑟 𝑊 , connected by edges
+                                                                                                              ◦
+example using the two edges on the east side of the IO chiplet        𝑒 𝑈 , 𝑒 𝑉 , 𝑒 𝑊 . Only orientation 0 is allowed. Each edge has 𝑛
+that connect to two HBM chiplets. For both edges, the spare- interface positions with a shared spare budget of 1. For each
+lane budget is 2 for all local indices 𝑘. For edge 𝑒 1 between the element 𝑢 𝑖 ∈ 𝑈, we create a leaf chiplet whose faulty-lane
+IO chiplet and 𝐻𝐵𝑀1 , the sum of faulty lanes on both sides vector on edge 𝑒𝑈 is e𝑖 ; similarly for 𝑉 and 𝑊. For each triple
+does not exceed 2 at any 𝑘, so the edge is compatible. For edge 𝛾 = (𝑢 𝑖 , 𝑣 𝑗 , 𝑤 𝑙 ) ∈ Γ, we create a hub chiplet whose three sides
+𝑒 2 between the IO chiplet and 𝐻𝐵𝑀2 , the sum at the third have faulty-lane vectors 1 − e𝑖 , 1 − e 𝑗 , and 1 − e𝑙 .
+local index exceeds the budget, making the edge incompatible             Correctness. On edge 𝑒𝑈 , the hub corresponding to 𝛾 is
+and preventing the connection. Figure 2(d) presents the same          compatible        with 𝑢 𝑖 since e𝑖 + (1 − e𝑖 ) = 1 satisfies Equation (1).
+                                                                      For   any    𝑢 𝑖 ′ ≠ 𝑢 𝑖 , the sum exceeds 1, violating the constraint.
+process in tabular form by evaluating each interface position
+using Equation (1), providing a direct view of the compatibility The same holds for 𝑒 𝑉 and 𝑒 𝑊 . Thus each hub can connect
+checking procedure.                                                □ only to the three chiplets in its triple, and each feasible SoC
+                                                                      corresponds to one triple. Since each chiplet instance is used
+B. Problem Formulation                                                at most once, constructing 𝐺 SoCs is possible if and only if
+   • Given: The target SoC topology defined by a set of roles 𝑟       Γ contains 𝐺 disjoint triples. The reduction is polynomial, so
+     and their connectivity; for each chiplet type 𝑡, the inventory the problem is NP-hard. Combined with NP membership, the
+     of tested instances and whether 180◦ rotation is supported; problem is NP-complete.                                                       □
+     for each tested chiplet instance, the faulty lane information
+      𝑓𝑡 ,𝑖,𝑑,𝑞 ; for each edge 𝑒 and its 𝑘-th local connection                      IV. Proposed Optimization Framework
+     position, the spare-lane budget 𝑆shared (𝑒, 𝑘).                     The NP-completeness result of Theorem 1 motivates two
+   • Determine: An assignment of chiplet instances and                complementary solution approaches. Fig. 3 provides an
+     feasible rotations to roles such that complete SoCs are overview of the framework. Both approaches share a lossless
+     assembled.                                                       preprocessing pipeline (Section IV-A) that reduces the problem
+   • Subject to:                                                      size. The approaches then diverge: one adopts an ILP-based
+        (i) Every role 𝑟 in each assembled SoC is filled by formulation with rolling-horizon batching, while the other
+              a chiplet instance of type 𝑡𝑦 𝑝𝑒(𝑟) at a rotation in employs a GRASP-based heuristic for a scalable solution.
+              𝑂 𝑡 𝑦 𝑝𝑒 (𝑟 ) ,𝑟 .
+                                                                      A. Exact Preprocessing
+       (ii) Each chiplet instance can be assigned to at most one
+              SoC.                                                       1) Equivalence-Class Aggregation: We compress the inven-
+     (iii) For every topology edge and every local interface tory of each chiplet type by aggregating equivalent instances.
+              position, the compatibility condition (1) is satisfied. Two instances of the same type are considered equivalent if
+   • Objective: Maximize the total number of complete SoCs.
+                                                                      they have identical faulty-lane values at all interface positions
+                                                                      relevant to feasible assembly.
+C. Decision Problem and Complexity                                       The aggregation has two steps. First, we retain only the
+   Consider the decision version: given the input and target 𝐺, interface positions used in the SoC topology. For each retained
+does there exist a feasible assignment of chiplet instances and position (𝑑, 𝑞) of type 𝑡, let 𝐵𝑡max          ,𝑑,𝑞 be the largest spare budget
+
+
+
+
+                                                                       4                                                     Regular Paper
+                             Tested chiplet inventory, SOC                                 (a)                               q=1             N
+                                                                                                                                           q=2
+                           topology, and related information                                                                         N
+                                                                                                            𝒒=1             Unreachable — no edge
+                  Lossless preprocessing for state reduction                                                𝒒=2
+                           Equivalence-class aggregation                                                          W             Chiplet of type-1                     E
+                                                                                                            𝒒=3
+                               Merge identical defect profiles
+                                                                                                            𝒒=4
+                                     Role-level pruning                                                                                   S
+                                                                                           (b)
+                     One-sided defect + rotation dominance pruning
+                                                                                                 Instance           W:q=1    W:q=2        W:q=3         W:q=4        N:q=1 N:q=2
+                                                                                                    𝒊₁                0        1            0             1            0     1
+                                 Candidate state set                                                𝒊₂                0        1            0             1            1     0
+                                                                                                    𝒊₃                0        2            2             0            0 ✗ 0
+                                                                                                    𝒊₄                0        2            2             0            1     1
+          ILP-based method                             GRASP-based method                           𝒊₅                0        1            0             4            0     2
+        Compact ILP formulation                       Pattern compatibility table                   𝒊₆                0        1            0             4            3     0
+        Compatibility-aware modeling                       Edge-level exact lookup                  𝒊₇                1        1            2             0            0     0
+
+
+
+
+                                                                                                                                                                             →
+       Rolling-horizon batching                                                                                           No edge uses North side →Removed from defect map
+        Solve fixed-size subproblems                                                       (c)                    We set the maximum spare-lane budget 𝐵max = 2
+            Periodic repair                          Scarcity-aware construction                   Instance                W: q=1       W: q=2       W: q=3      W: q=4
+         Reoptimize recent batches                        GRASP with reactive RCL                     𝒊₁                      0           1             0          1
+                                                                                                      𝒊₂                      0           1             0          1
+                                                                                                      𝒊₃                      0           2             2          0
+                             Maximized assembled SoCs                                                 𝒊₄                      0           2             2          0
+                                                                                                      𝒊₅                      0           1             0         3*
+                                                                                                      𝒊₆                      0           1             0         3*
+      Fig. 3: Overview of the DT-MATCH framework.                                                     𝒊₇                      1           1             2          0
+                                                                                           (d)
+that can occur at that position. For each instance 𝑖 and
+                                                                                            Class 𝑐1               Class 𝑐2                    Class 𝑐3              Class 𝑐4
+each retained position
+                          (𝑑, 𝑞), we clip the faulty-lane value                            Members: 𝒊₁, 𝒊₂        Members: 𝒊₃, 𝒊₄             Members: 𝒊₅, 𝒊₆        Members : 𝒊₇
+                                                                                            Profile: [0, 1, 0, 1] Profile: [0, 2, 2, 0]       Profile: [0, 1, 0, 3] Profile: [1, 1, 2, 0]
+                                   ,𝑑,𝑞 + 1 , since larger values
+as 𝑓˜𝑡 ,𝑖,𝑑,𝑞 = min 𝑓𝑡 ,𝑖,𝑑,𝑞 , 𝐵𝑡max
+                                                                                                𝑚1,1 = 2               𝑚1,2 = 2                    𝑚1,3 = 2              𝑚1,4 = 1
+cannot be repaired and are therefore indistinguishable. Second,
+instances with identical clipped values at all retained positions
+                                                                                         Fig. 4: Equivalence-class aggregation illustrated on a type-1
+are grouped into equivalence classes 𝑐. Each class represents a
+                                                                                         chiplet. (a) Interface layout with reachable and unreachable
+unique faulty-lane pattern and contains all instances with that
+                                                                                         sides. (b) Raw defect map; North-side columns are removed.
+pattern. For each class 𝑐 of type 𝑡, we record the number of
+                                                                                         (c) Clipped defect profiles with sentinel values marked by *. (d)
+instances it contains, denoted by 𝑚 𝑡 ,𝑐 . Before aggregation, each
+                                                                                         Resulting four equivalence classes with their instance counts.
+role is assigned a chiplet instance and an orientation 𝑜, forming
+a state (𝑖, 𝑜). After aggregation, instances within the same class  entire class.
+𝑐 are interchangeable, so the assignment can be represented           In Section IV-A1, we introduce class–orientation states (𝑐, 𝑜).
+as (𝑐, 𝑜), referred to as a state. This replaces instance-level     However, not all states are useful for a given role, as some
+states (𝑖, 𝑜) with class-level states (𝑐, 𝑜), reducing the number   can never participate in a feasible assembly. We therefore
+of states and thus the size of the search space.                    apply two role-level pruning techniques. The first, one-sided
+Example 4: Figure 4 illustrates the preprocessing procedure pruning, removes (𝑐, 𝑜) if it already violates the spare-budget
+on a specific chiplet type. The north-side interfaces do not constraint, i.e., if 𝛼𝑟 ,𝑒,𝑘,𝑐,𝑜 > 𝑆shared (𝑒, 𝑘) for some (𝑒, 𝑘). In
+participate in any connections in the SoC topology, while the this case, no pairing can make the connection compatible. The
+west-side interfaces do, so the north side is discarded and only second, rotation-dominance pruning, removes (𝑐, 𝑜 2 ) if there
+the west side is retained, as shown in Figure 4(b). Based on exists (𝑐, 𝑜 1 ) such that 𝛼𝑟 ,𝑒,𝑘,𝑐,𝑜1 ≤ 𝛼𝑟 ,𝑒,𝑘,𝑐,𝑜2 for all (𝑒, 𝑘),
+this reduction, the faulty-lane values on the west-side interfaces with strict inequality for at least one position. In this case,
+are simplified. Suppose the spare budget at each position is 2. 𝑜2 is never better than 𝑜 1 . The remaining states are used in
+When the faulty-lane count exceeds this budget, its exact value subsequent SoC assembly.
+is irrelevant and is capped at the budget plus one. For example, Example 5: Fig. 5 illustrates the pruning process. In Fig. 5(a),
+for the 5th and 6th instances, the faulty-lane count at the 4th (𝑐 2 , 0◦ ) is removed because the number of faulty lanes at 𝑘 = 3
+west-side interface is 4, which is capped at 3. Finally, instances exceeds the spare budget. The same applies to (𝑐 2 , 180◦ ). In
+with identical simplified patterns are grouped, partitioning the Fig. 5(b), the orientation 𝑜 = 180◦ has faulty-lane values
+inventory of this chiplet type into four equivalence classes. □ [0, 1, 0, 1], while 𝑜 = 0◦ has values [0, 0, 0, 0]. Since 𝑜 = 180◦
+     2) Role-Level Pruning: Before equivalence-class aggrega- is dominated by 𝑜 = 0◦ , it is removed.                              □
+tion, the faulty-lane information of each instance is described by    Equivalence-class aggregation and role-level pruning together
+ 𝑓𝑡 ,𝑖,𝑑,𝑞 . After aggregation, instances are grouped into classes, provide a lossless reduction in problem size, reducing the num-
+so individual instances no longer need to be tracked. Instead, we ber of variables and constraints in the ILP-based formulation
+define a class-level quantity 𝛼𝑟 ,𝑒,𝑘,𝑐,𝑜 to represent the number and the search space explored by the GRASP-based method.
+of faulty lanes from class 𝑐 at the 𝑘-th interface pair on
+edge 𝑒 under orientation 𝑜. This value is obtained from a B. ILP-Based Method
+representative instance of class 𝑐 after applying orientation         For each chiplet type, let 𝑁𝑡 be the number of available
+𝑜. Since all instances in 𝑐 share identical clipped faulty-lane instances and 𝑛𝑡 the number of roles that require it. The
+values at relevant interface positions, this value applies to the maximum number of SoCs that can be assembled is bounded
+
+
+
+                                                                                     5                                                                            Regular Paper
+  (a)                Example: Role 𝒓𝟏 (Type 1), edge 𝒆₁, 𝑺𝒔𝒉𝒂𝒓𝒆𝒅 = 2 for all 𝒌
+  State (class, 𝒐)    𝒌=1            𝒌=2              𝒌=3              𝒌=4       Status
+                                                                                              are fixed, class counts are updated, and states that become
+        (𝒄𝟏 , 0°)       1               1                2               0       Keep         infeasible under the updated inventory are removed before
+    (𝒄𝟏 , 180°)         0               1                0               1       Keep         the next batch. Because decisions are made sequentially, early
+        (𝒄𝟐 , 0°)       1               0                3               1       Prune        batches may consume instances that are more valuable later,
+    (𝒄𝟐 , 180°)         1               3                0               1       Prune        leading to suboptimal yield. To mitigate this, we periodically
+        (𝒄𝟑 , 0°)       0               2                1               2       Keep         revisit recent batches and reoptimize them: assignments in these
+    (𝒄𝟑 , 180°)         2               1                2               0       Keep         batches are released and recomputed jointly under the same ILP
+  (b)                         Example: class 𝒄₁, role 𝒓₁, one edge
+                                                                                              constraints, with priority given to chiplet types with the fewest
+  State (class, 𝒐)     𝒌=1             𝒌=2             𝒌=3             𝒌=4       Status
+      (𝒄𝟏 , 0°)         0               0               0               0         Keep        remaining instances. The updated solution is accepted only if
+    (𝒄𝟏 , 180°)         0               1               0                1       Prune        it increases the total number of assembled SoCs, allowing the
+                                                                                              solver to correct earlier decisions while keeping the problem
+Fig. 5: Role-level pruning illustrated on two examples. (a) One-
+                                                                                              size manageable.
+sided defect pruning: states whose defect contribution exceeds
+the shared spare budget at any slot are pruned. (b) Rotation-                                 C. GRASP-Based Method
+dominance pruning: an orientation uniformly dominated by
+another orientation of the same class is pruned.                                      The GRASP-based method follows the standard GRASP
+                                                                                   framework [27], which consists of multiple independent iter-
+by 𝑆max = min𝑡 ⌊𝑁𝑡 /𝑛𝑡 ⌋, determined by the most constrained ations. Each iteration constructs one solution, and the best
+type. We index assemblies by 𝑠 ∈ {1, . . . , 𝑆max }. A binary solution across all iterations is retained. At a high level, each
+variable 𝑌𝑠 indicates whether assembly 𝑠 is realized, and iteration starts from the full chiplet inventory and repeatedly
+𝑋𝑠,𝑟 ,𝑐,𝑜 indicates whether state (𝑐, 𝑜) is assigned to role 𝑟 builds complete SoCs. Each SoC is constructed step by step by
+in assembly 𝑠. The objective is to maximize the number of assigning chiplets to roles, while ensuring that all connections
+                                Í
+assembled SoCs, max 𝑠 𝑌𝑠 .                                                         satisfy the compatibility condition in Equation (1). Once no
+   The ILP formulation enforces four groups of constraints:                        more complete SoCs can be formed, the iteration produces a
+   • Role completeness. Each role in an assembled SoC must                         set of assembled SoCs as its solution.
+                                                                                      1) Preprocessing and Compatibility: For each edge, we
+                                                          Í
+      select exactly one surviving state: (𝑐,𝑜) 𝑋𝑠,𝑟 ,𝑐,𝑜 = 𝑌𝑠 .
+      When 𝑌𝑠 = 1, exactly one class-orientation state is selected precompute the compatibility between class–orientation states
+      for each role; when 𝑌𝑠 = 0, all variables 𝑋𝑠,𝑟 ,𝑐,𝑜 are forced at its two endpoints and store the results in a compatibility
+      to 0, and the assembly is not formed.                                        table. A pair is marked compatible if their faulty-lane values
+   • Class usage limit. Each equivalence class can only                            satisfy the spare-budget constraint at every interface position.
+      be   used       as many       times   as   available    in  the  inventory:  This table is used during construction, where a complete SoC
+      Í Í                    Í
+         𝑠 𝑟:type(𝑟 )=𝑡 𝑜 𝑋𝑠,𝑟 ,𝑐,𝑜 ≤ 𝑚 𝑡 ,𝑐 . This constraint limits
+                                                                                   is built step by step by assigning chiplets to roles, to enable
+      how many times class 𝑐 can be assigned across all fast validity checking.
+      assemblies. Once the available instances in class 𝑐 are                         2) Greedy Randomized Construction: In each GRASP
+      exhausted, no assignments of this class are allowed.                         iteration, SoCs are constructed sequentially from the residual
+   • Interface-level defect compatibility. For every connection, inventory, each built incrementally from a seed role along the
+      consider an edge 𝑒 between two roles 𝑟 𝑢 and 𝑟 𝑣 . The topology. The seed is chosen to prioritize the most constrained
+      total number of faulty lanes from both endpoints must be resource: for each chiplet type, we compute the ratio between
+      within the available spare budget:                                           its remaining instances and the number of roles that require it,
+           ∑︁                                                                      and select the role with the smallest ratio.
+                  𝛼𝑟𝑢 ,𝑒,𝑘,𝑐,𝑜 · 𝑋𝑠,𝑟𝑢 ,𝑐,𝑜                                           The SoC is then expanded by assigning adjacent roles. For
+          (𝑐,𝑜)
+             ∑︁                                                                    each role, all (𝑐, 𝑜) choices are evaluated, and a choice is
+         +             𝛼𝑟𝑣 ,𝑒,𝑘,𝑐′ ,𝑜′ · 𝑋𝑠,𝑟𝑣 ,𝑐′ ,𝑜′ ≤ 𝑆shared (𝑒, 𝑘) · 𝑌𝑠 . (2) feasible if the class 𝑐 has remaining instances, it is compatible
+            (𝑐 ′ ,𝑜′ )                                                             with all assigned neighbors according to the precomputed table
+      When 𝑌𝑠 = 1, the combined faulty-lane values at each in Section IV-C1, and it does not eliminate all feasible (𝑐, 𝑜)
+      connection position must not exceed the spare budget; options for any adjacent unassigned role, avoiding dead ends.
+      when 𝑌𝑠 = 0, the constraint is inactive because no                              When multiple feasible (𝑐, 𝑜) choices exist, a restricted
+      assignments are made.                                                        candidate    list (RCL) is formed. Candidates are ranked by
+   • Symmetry breaking. Assemblies are activated in order:
+                                                                                   a  scarcity    score, where smaller values indicate that the
+      𝑌𝑠 ≥ 𝑌𝑠+1 . This enforces that assembly 𝑠 + 1 can be used                    corresponding     class has fewer remaining instances, and one
+      only if assembly 𝑠 is used, avoiding equivalent solutions.                   (𝑐, 𝑜) is selected uniformly at random. The RCL size is adjusted
+                                                                                   using reactive GRASP [28], using smaller lists for stronger
+This formulation is exact but becomes expensive for large
+                                                                                   guidance and larger ones for more exploration.
+inventories. To improve scalability, we use a rolling-horizon
+batching strategy. Instead of solving for all 𝑆max assemblies Example 6: Consider a simple SoC with three roles 𝑟 1 , 𝑟 2 ,
+at once, each iteration solves a smaller ILP over the current and 𝑟 3 . Suppose the chiplet type required by 𝑟 1 is the most
+remaining inventory. After each iteration, selected assignments constrained, while the types for 𝑟 2 and 𝑟 3 have larger inventories.
+
+
+
+                                                                                          6                                                 Regular Paper
+Algorithm 1 GRASP-Based SoC Assembly                                                 TABLE I: Published benchmark statistics.
+                                                                               ID Benchmarks Description Chiplet composition # Chiplets
+Require:                                                                                       An all-GPU
+    𝐴𝑟class     // candidate class-orientation pairs for each role                AMD Instinct              8 XCD + 4 IOD
+                                                                                B              data center                      20
+    𝑚 𝑡 ,𝑐      // multiplicity of class 𝑐 of type 𝑡                              MI300X [25]                  +8 HBM3
+                                                                                               accelerator
+    𝑁iter       // number of GRASP iterations                                                  AMD’s first
+Objective: 𝑋best          // best solution                                        AMD Instinct              6 XCD + 3 CCD
+                                                                               A               data center                      21
+ 1: 𝑋best ← ∅                                                                     MI300A [30]              +4 IOD + 8 HBM3
+                                                                                                  APU
+ 2: for ℓ = 1 to 𝑁iter do
+ 3:      initialize residual inventory                                        TABLE II: Proprietary industrial benchmark statistics.
+ 4:       𝑋←∅
+ 5:      while a complete SoC can be constructed do                                                  Unit die cost SoC costPackage Total
+                                                                             ID Chiplet composition C1     C2 C3
+ 6:           initialize empty SoC 𝑆, select seed role                            C1𝑑1 + 2 C2𝑑1
+ 7:           while 𝑆 is incomplete do                                       D1
+                                                                                     + 2 C3𝑑1
+                                                                                                   $1,000 $250 $250 $2,000 $500 $2,500
+ 8:                select next role (most constrained)                                 C1𝑑2
+ 9:                compute feasible candidates, build RCL and sample         D2
+                                                                                     + 8 C2𝑑2
+                                                                                                   $1,000$2,000 - $17,000 $500 $17,500
+    one candidate, assign and update inventory
+10:           end while
+11:           add 𝑆 to 𝑋                                                   the problem size is characterized by 𝑆max , the upper bound
+12:      end while                                                         on the number of complete SoCs that can be assembled from
+13:      if |𝑋 | > |𝑋best | then                                           the available inventory. Since different inventories can share
+14:           𝑋best ← 𝑋
+15:      end if                                                            the same 𝑆max , we generate multiple inventory instances for
+16: end for                                                                each 𝑆max to capture variation in composition while keeping
+17: return 𝑋best                                                           the problem size fixed. Here, an inventory instance refers
+                                                                           to a specific configuration of chiplet counts across chiplet
+                                                                           types, rather than individual chiplet instances. Specifically, we
+The role 𝑟 1 is therefore selected as the seed. Assume two                 introduce a 20% variation in the number of chiplets of each
+feasible states exist for 𝑟 1 , (𝑐 𝑎 , 0◦ ) and (𝑐 𝑏 , 180◦ ), both        type. For each inventory instance, one type is randomly selected
+satisfying the feasibility conditions under the current partial            as the bottleneck that determines 𝑆max , while the remaining
+assignment. If class 𝑐 𝑎 has fewer remaining instances than 𝑐 𝑏 ,          types are assigned with small random variations, ensuring none
+then (𝑐 𝑎 , 0◦ ) receives a better scarcity score. Both may enter          becomes more restrictive. As a result, all inventory instances
+the RCL, from which one is selected.                              □        share the same 𝑆max but differ in composition.
+   The algorithm then proceeds to an adjacent role with the                   For each 𝑆max , we generate 𝑁 inventory instances, where
+fewest feasible (𝑐, 𝑜) options and continues until all roles               larger 𝑁 increases diversity and smaller 𝑁 reduces runtime
+are assigned, yielding one complete SoC. Once all the roles                overhead. For each method, we report yield and runtime across
+have been assigned, a single physical instance is selected from            the 𝑁 instances. Yield, defined as the ratio of assembled SoCs
+each chosen class, and the corresponding inventory counts are              to 𝑆max , is summarized by its mean, median, minimum, and
+decremented accordingly. This step completes the construction              maximum, denoted by 𝑌mean , 𝑌med , 𝑌min , and 𝑌max . Runtime
+of one SoC. The method then attempts to construct an additional            is reported similarly as 𝑇mean , 𝑇med , 𝑇min , and 𝑇max . This
+SoC using the updated residual inventory. This iterative process           setup captures both solution quality and efficiency, as well
+continues until no further complete SoC can be assembled,                  as variability across inventory instances.
+ultimately yielding a set of SoCs for the current iteration.
+   The overall procedure is summarized in Algorithm 1. The                 C. Benchmarks
+GRASP-based method does not solve a global optimization
+                                                                    We evaluate our method on four benchmarks. Two of these,
+model, but it scales better on large inventories.
+                                                                 shown in Table I, are constructed from published industry
+                V. Experimental Evaluation                       papers, and the other two, shown in Table II, are anonymized
+                                                                 real designs from industry.
+A. Experimental Setup                                               Each design consists of multiple chiplets as specified in the
+   All experiments for DT-MATCH are conducted on a work- chiplet composition column. For example, D1 includes five
+station with AMD EPYC 7313 processors. The ILP model is chiplets (one 𝐶1 , two 𝐶2 , and two 𝐶3 ), while D2 includes nine
+implemented in Python and solved using Gurobi via its Python chiplets (one 𝐶1 and eight 𝐶2 ). In Table II, the unit die cost
+API with default parameters [29]. Parameter settings for both columns (𝐶1 , 𝐶2 , 𝐶3 ) report the cost per chiplet type. The SoC
+the ILP-based and GRASP-based methods are chosen based on cost is the sum over all chiplets in a design, and the total cost
+a sweep to balance solution quality and runtime. For the ILP- further includes the package cost. These values support the
+based method, the batch size is 150. The repair procedure is yield-aware cost analysis in Section V-E, which quantifies the
+applied every two batches and reoptimizes the last four batches. financial impact of yield loss.
+For the GRASP-based method, the number of iterations is 5.          For all benchmarks, faulty lanes at each interface of every
+                                                                 chiplet instance are generated using a Poisson distribution
+B. Evaluation Metrics                                            with parameter 𝜆 = 1, applied uniformly across chiplet types,
+   To evaluate the proposed methods, we compare yield and instances, directions, and interface positions. In Section V-D,
+runtime under different problem sizes. For a fixed SoC topology, for each 𝑆max , we generate 𝑁 = 20 inventory instances. Each
+
+
+
+                                                                       7                                                  Regular Paper
+TABLE III: Comparison of five methods across benchmarks for DT-MATCH. Yield is reported as (𝑌min , 𝑌med , 𝑌max ), and runtime
+is reported as (𝑇min , 𝑇med , 𝑇max ).
+                                  Benchmark A                              Benchmark B                          Benchmark D1                        Benchmark D2
+𝑆max     Method
+                        Yield (%)         Runtime (min)          Yield (%)        Runtime (min)           Yield (%)       Runtime (min)       Yield (%)       Runtime (min)
+     Batched ILP (68.5, 75.0, 79.5)       (2.6, 4.5, 17.6)   (71.0, 76.0, 77.0)     (3.2, 3.8, 8.1)    (94.5, 96.5, 97.5) (0.1, 0.1, 0.1) (95.5, 97.5, 100.0) (0.3, 0.3, 0.3)
+       GRASP        (66.5, 71.5, 75.5)     (2.3, 2.4, 2.5)   (69.0, 71.5, 75.5)     (1.7, 2.0, 2.2)    (94.5, 95.0, 97.0) (0.1, 0.1, 0.1) (95.5, 97.5, 99.5) (0.3, 0.3, 0.3)
+ 200 Monolithic ILP (68.5, 75.0, 80.5)     (6.6, 6.8, 7.3)   (71.0, 76.0, 78.0)     (6.4, 7.1, 7.4)    (94.5, 96.5, 97.5) (0.1, 0.2, 0.2) (95.5, 97.5, 100.0) (0.1, 0.3, 0.4)
+        Greedy        (0.0, 0.0, 0.5)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (43.5, 88.5, 91.0) (0.0, 0.0, 0.0) (67.5, 86.5, 88.5) (0.0, 0.0, 0.0)
+       Random         (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (68.5, 74.5, 79.5) (0.0, 0.0, 0.0) (55.5, 58.0, 66.0) (0.0, 0.0, 0.0)
+     Batched ILP (71.8, 74.3, 75.8) (9.9, 10.5, 13.3) (71.3, 73.8, 76.3)           (8.0, 9.3, 22.3)   (95.3, 97.8, 100.0) (0.5, 0.5, 0.9) (96.5, 97.5, 100.0) (0.8, 0.8, 0.8)
+       GRASP        (69.0, 70.5, 73.8)     (4.4, 5.3, 5.7)   (69.5, 72.3, 73.3)     (4.3, 4.6, 5.1)   (95.0, 97.8, 100.0) (0.2, 0.2, 0.2) (96.5, 97.5, 100.0) (0.6, 0.6, 0.7)
+ 400 Monolithic ILP (71.8, 74.3, 76.3) (39.0, 43.6, 46.8) (72.0, 74.0, 77.8) (77.4, 82.6, 118.8) (95.3, 97.8, 100.0) (0.2, 0.7, 0.7) (96.5, 97.5, 100.0) (0.4, 0.8, 1.4)
+        Greedy        (0.0, 0.0, 0.5)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.3)      (0.0, 0.0, 0.0)    (81.8, 86.0, 94.5) (0.0, 0.0, 0.0) (62.5, 77.3, 90.5) (0.0, 0.0, 0.0)
+       Random         (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (72.5, 76.0, 77.8) (0.0, 0.0, 0.0) (54.3, 59.0, 64.0) (0.0, 0.0, 0.0)
+     Batched ILP (70.2, 75.0, 77.8) (23.9, 25.8, 41.1) (69.5, 72.3, 74.7) (28.9, 34.4, 43.2) (96.2, 96.7, 100.0) (0.7, 0.7, 0.7) (96.8, 97.3, 100.0) (0.9, 0.9, 1.0)
+       GRASP        (68.5, 71.0, 75.7)     (7.9, 9.1, 9.7)   (68.3, 71.0, 72.7)     (6.7, 6.9, 7.7)    (95.3, 96.7, 98.7) (0.3, 0.3, 0.3) (96.7, 97.3, 99.5) (0.9, 1.0, 1.0)
+ 600 Monolithic ILP (70.7, 75.3, 78.3) (95.7, 118.1, 130.8) (70.7, 73.8, 75.3) (494.1, 614.2, 1086.1) (96.2, 96.8, 100.0) (0.5, 2.0, 2.6) (96.8, 97.3, 100.0) (0.8, 2.1, 2.4)
+        Greedy        (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.5)      (0.0, 0.0, 0.0)    (36.3, 86.8, 93.0) (0.0, 0.0, 0.0) (80.0, 85.3, 88.3) (0.1, 0.1, 0.1)
+       Random         (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (73.3, 74.5, 76.0) (0.0, 0.0, 0.0) (55.7, 58.3, 61.3) (0.0, 0.0, 0.0)
+     Batched ILP (71.3, 72.1, 81.3) (36.0, 44.2, 45.5) (70.5, 71.6, 80.9) (28.3, 40.5, 42.9) (96.3, 97.8, 100.0) (1.1, 1.1, 1.1) (97.4, 97.5, 100.0) (1.3, 1.4, 1.5)
+       GRASP        (69.5, 70.5, 75.0) (10.8, 11.5, 14.7) (69.4, 70.0, 79.6)      (8.0, 10.0, 10.4)    (96.0, 97.0, 99.5) (0.3, 0.3, 0.4) (97.3, 97.5, 99.8) (1.2, 1.3, 1.4)
+ 800 Monolithic ILP (71.1, 72.5, 83.0) (205.9, 248.1, 395.5)      timeout              timeout        (96.3, 97.8, 100.0) (1.0, 2.2, 2.4) (97.4, 97.5, 100.0) (2.5, 4.1, 4.9)
+        Greedy        (0.0, 0.0, 0.1)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (59.5, 89.3, 91.6) (0.0, 0.0, 0.0) (12.5, 75.5, 78.9) (0.0, 0.1, 0.1)
+       Random         (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (74.6, 75.9, 77.4) (0.0, 0.0, 0.0) (56.8, 57.8, 58.9) (0.0, 0.0, 0.0)
+     Batched ILP (71.0, 73.9, 79.8) (49.8, 60.3, 66.2) (70.0, 71.3, 78.8) (39.1, 49.9, 67.1) (96.2, 96.3, 100.0) (3.7, 4.9, 5.2) (96.4, 97.1, 100.0) (5.4, 5.6, 6.9)
+       GRASP        (69.3, 70.3, 76.4) (13.6, 15.1, 15.6) (68.9, 70.3, 75.6) (11.6, 12.0, 12.8) (95.3, 96.3, 100.0) (0.4, 0.4, 0.5) (96.5, 97.1, 99.9) (1.7, 1.7, 1.7)
+1000 Monolithic ILP (71.5, 74.3, 80.2) (500.3, 624.9, 928.3)      timeout              timeout        (96.3, 96.3, 100.0) (1.1, 3.2, 3.4) (96.5, 97.1, 100.0) (1.6, 7.5, 8.8)
+        Greedy        (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.1)      (0.0, 0.0, 0.0)    (78.0, 78.5, 92.9) (0.0, 0.0, 0.0) (57.4, 70.5, 89.8) (0.1, 0.1, 0.2)
+       Random         (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)     (0.0, 0.0, 0.0)      (0.0, 0.0, 0.0)    (72.9, 75.7, 77.0) (0.0, 0.0, 0.0) (57.6, 58.9, 59.2) (0.0, 0.0, 0.0)
+
+
+inventory instance uses a different random seed in the Poisson     1%, while runtime decreases substantially as the problem size
+sampling, introducing variability across inventory instances.      grows. For example, at 𝑆max = 1000, it is several times faster
+                                                                   than the monolithic ILP on Benchmark A. On Benchmark
+D. Yield and Runtime Results                                       B, the monolithic ILP becomes intractable at larger sizes; for
+   We compare the ILP-based approach and the GRASP- 𝑆max = 800 and 𝑆max = 1000, it fails to converge within the
+based approach with three other methods on four benchmarks, time limit, even after extended execution exceeding two weeks.
+including monolithic ILP, naive random matching, and naive In contrast, the ILP-based method remains tractable in all cases,
+greedy. The three methods are described as follows.                showing that batching mitigates scalability limitations. Third,
+   • Monolithic ILP: this method removes the rolling-horizon       the GRASP-based method further improves runtime while
+     batching from our ILP-based approach and solves the maintaining competitive solution quality. It is consistently faster
+     entire problem in a single formulation, which serves as a than the ILP-based method, often by 2–5× on Benchmarks A
+     proxy for optimal solutions.                                  and B, with yield only slightly lower, typically within a few
+   • Random matching: this method assigns chiplet instances        percentage points. This indicates a favorable trade-off between
+     to roles uniformly at random without considering any quality and runtime, making it suitable for large-scale or time-
+     constraints.                                                  constrained scenarios. Finally, for Benchmarks D1 and D2,
+   • Greedy: this method traverses roles in a fixed order and, for all methods achieve similarly high yields, suggesting weaker
+     each role, selects the first (𝑐, 𝑜) in the instance sequence constraints. However, the ILP-based and GRASP-based methods
+     that is compatible with all already assigned neighboring are more effective than greedy and random methods, which
+     roles.                                                        still show noticeable degradation.
+                                                                      Overall, the ILP-based method provides near-optimal solu-
+All methods are evaluated under different problem sizes
+                                                                   tions with improved scalability, while the GRASP-based method
+characterized by 𝑆max .
+                                                                   offers higher efficiency with only minor loss in yield, enabling
+   Table III compares the proposed methods with several
+                                                                   practical deployment across a wide range of problem sizes.
+others across different problem sizes. The ILP-based method
+is denoted as Batched ILP and the GRASP-based method
+                                                                   E. Yield-Aware Cost Analysis of SoC Assembly
+as GRASP. We make several observations. First, both the
+ILP-based method and the GRASP-based method consistently              To quantify the economic impact of chiplet matching in DT-
+achieve high yield across all benchmarks and significantly MATCH, we convert yield into cost using a cost-per-good-SoC
+outperform the greedy and random methods. For Benchmarks model based on the relationship 𝐶good = 𝐶SoC /𝑌mean , where
+A and B, greedy and random methods produce yields close 𝐶SoC is the total cost and 𝑌mean is the average assembly yield.
+to zero. In contrast, the proposed methods maintain stable Table IV reports results at 𝑆max = 1000, with cost savings
+and high-quality results, demonstrating the effectiveness of the measured relative to random matching. Yield improvements
+modeling and preprocessing techniques. Second, the ILP-based translate into cost reductions due to the inverse relationship
+method achieves solution quality very close to the monolithic between cost and yield. For D1, the ILP-based method increases
+ILP while improving scalability. On Benchmarks A and B, 𝑌mean from 75.2% (Random) to 97.8%, reducing the cost per
+its median yield differs from the monolithic ILP by less than good SoC from $3,324 to $2,556, a 23.1% reduction. The
+
+
+
+                                                                                      8                                                                Regular Paper
+TABLE IV: Yield-aware cost savings of die matching methods                                        76 (a)
+                                                                                                                                                                  A full
+
+
+
+
+                                                                            Ymean (%)
+at 𝑆max = 1000. Random matching is used as the reference.                                                                                                         A w/o preprocessing
+                                                                                                  74                                                              B full
+Cost per good SoC is computed as total cost/𝑌mean .                                                                                                               B w/o preprocessing
+   Total cost                  𝑌mean  Cost per   Cost saving Saving                                       0     250    500   750 1000 1250 1500 1750 2000
+ID                Method
+      ($)                       (%) good SoC ($)     ($)      (%)
+                                                                                                          (b)                                                     D1 full
+
+
+
+
+                                                                      Ymean (%)
+                  Random        75.2    3,324         0        0.0
+                                                                                         98.5
+D1    2,500        Greedy       81.8    3,056        268       8.0                                                                                                D1 w/o preprocessing
+                Batched ILP 97.8        2,556        768      23.1                                                                                                D2 full
+                  GRASP                                                                  98.0
+                                97.3
+                Monolithic ILP 97.8
+                                        2,569
+                                        2,556
+                                                     755
+                                                     768
+                                                              22.7
+                                                              23.1                                                                                                D2 w/o preprocessing
+                                                                                         97.5
+                  Random        58.6   29,863         0        0.0                                        0     250    500   750 1000 1250 1500 1750 2000
+D2   17,500        Greedy       72.1   24,271       5,592     18.7
+                                                                                               5.0 (c)
+
+
+
+
+                                                                          Runtime (h) Runtime (h)
+                Batched ILP 97.6       17,930      11,933     40.0
+                  GRASP         97.6   17,930      11,933     40.0                                                                                                A full
+                Monolithic ILP 97.7    17,911      11,952     40.0                                                                                                A w/o preprocessing
+                                                                                               2.5                                                                B full
+                                                                                                                                                                  B w/o preprocessing
+GRASP-based method achieves a similar result with 97.3%                                        0.0
+                                                                                                          0     250    500   750 1000 1250 1500 1750 2000
+                                                                                                          (d)
+yield and $2,569 cost. For D2, the ILP-based method improves
+𝑌mean from 58.6% to 97.6%, reducing cost from $29,863 to                                                                                                          D1 full
+                                                                                                      2                                                           D1 w/o preprocessing
+$17,930, corresponding to a 40.0% reduction, with the GRASP-                                                                                                      D2 full
+                                                                                                                                                                  D2 w/o preprocessing
+based method achieving the same result. Greedy matching                                               0
+                                                                                                          0     250    500   750 1000 1250 1500 1750 2000
+provides only moderate savings, reducing cost by 8.0% for
+                                                                                                          (e)                                                     A full
+                                                                                                                                                                  A w/o preprocessing
+
+
+
+
+                                                                            Ymean (%)
+D1 and 18.7% for D2, indicating that simple heuristics cannot                                     71                                                              A w/o reactive
+fully exploit yield improvements. In contrast, the optimization-                                                                                                  B full
+                                                                                                  70                                                              B w/o preprocessing
+based methods consistently achieve the highest yield and lowest                                                                                                   B w/o reactive
+cost. The ILP-based method, the GRASP-based method, and                                                         5000    10000   15000   20000   25000   30000
+                                                                                                  97 (f)                                                          D1 full
+                                                                                                                                                                  D1 w/o preprocessing
+                                                                            Ymean (%)
+the monolithic ILP produce nearly identical results on both
+benchmarks, indicating negligible yield differences at this scale.                                96                                                              D1 w/o reactive
+                                                                                                                                                                  D2 full
+                                                                                                                                                                  D2 w/o preprocessing
+                                                                                                  95                                                              D2 w/o reactive
+F. Ablation Study                                                                                               5000    10000   15000   20000   25000   30000
+                                                                         (g)                                     A full
+                                                                            Runtime (h) Runtime (h)
+
+
+   To validate the effectiveness of the enhancement techniques                                                   A w/o preprocessing
+introduced in Section IV, we conduct an ablation study to             20                                         A w/o reactive
+                                                                                                                 B full
+quantify the impact of removing each component on runtime                                                        B w/o preprocessing
+                                                                       0                                         B w/o reactive
+and the SoC yield. For the ILP-based approach, we examine                    5000 10000 15000 20000 25000 30000
+the effect of excluding exact preprocessing. The rolling-horizon      10 (h)                                     D1 full
+                                                                                                                 D1 w/o preprocessing
+batching strategy is not further evaluated here, since it has been                                               D1 w/o reactive
+                                                                       5                                         D2 full
+discussed in Section V-D and is equivalent to the monolithic                                                     D2 w/o preprocessing
+ILP formulation. For the GRASP-based approach, we analyze              0                                         D2 w/o reactive
+                                                                             5000 10000 15000 20000 25000 30000
+the impact of removing exact preprocessing, as well as disabling                          Smax
+reactive GRASP.                                                    Fig. 6: Ablation study of preprocessing and reactive compo-
+   Figure 6 presents an ablation study on the key components of nents. (a) and (b) show 𝑌mean of the ILP-based method with
+the proposed methods. For the ILP-based method (Figure 6(a)– and without preprocessing on Benchmarks A and B, and D1
+(b)), removing preprocessing has little impact on yield. On and D2, respectively. (c) and (d) show the runtime of the ILP-
+Benchmark A, the difference is within about 2%, and it is based method under the same settings. (e) and (f) show 𝑌mean
+marginal on the others. A similar pattern is observed for of the GRASP-based method under three configurations (full,
+the GRASP-based method (Figure 6(e)–(f)). This behavior without preprocessing, and without reactive mechanism) on
+is expected because preprocessing groups instances with Benchmarks A and B, and D1 and D2, respectively. (g) and
+identical faulty-lane patterns into equivalence classes, so the (h) show the runtime of the GRASP-based method under the
+method operates at the class level and makes decisions over same configurations.
+aggregated representatives. Without preprocessing, the method
+instead operates directly on individual instances. Although of about 1% across all benchmarks, with negligible runtime
+this transformation is lossless in terms of feasible solutions, change. This indicates that reactive GRASP improves solution
+it alters the structure of the search space and the ordering of quality with minimal overhead. Therefore, preprocessing is
+decisions, which leads to small variations in the final yield. critical for scalability with negligible impact on yield, while
+Preprocessing has a strong impact on runtime. As shown in the reactive GRASP mechanism provides modest yield gains
+Figure 6(c)–(d) and Figure 6(g)–(h), removing it significantly at almost no runtime cost.
+increases runtime, especially as 𝑆max grows, confirming that         We further evaluate the impact of the Poisson parameter 𝜆
+preprocessing reduces problem size and improves scalability. on 𝑌mean . As shown in Figure 7, yield decreases as 𝜆 increases
+The effect is less pronounced on Benchmark D1, which is across all benchmarks, since larger 𝜆 leads to higher expected
+less constrained. For the GRASP-based method, disabling the faulty-lane counts. The sensitivity varies across benchmarks.
+reactive mechanism causes a small but consistent yield drop For the more challenging benchmarks (A and B), yield drops
+
+
+
+                                                                      9                                                                                         Regular Paper
+              100                                                                           [6] L. Jiang, R. Ye, and Q. Xu, “Yield enhancement for 3d-stacked memory
+                  80                                                                            by redundancy sharing across dies,” in 2010 IEEE/ACM International
+                           A - Batched ILP
+      Ymean (%)            A - GRASP                                                            Conference on Computer-Aided Design (ICCAD). IEEE, 2010, pp.
+                  60       B - Batched ILP                                                      230–234.
+                           B - GRASP
+                  40       D1 - Batched ILP
+                                                                                            [7] S. Park and T. Kim, “Die matching algorithm for enhancing parametric
+                           D1 - GRASP                                                           yield of 3d ics,” in International SoC Design Conference (ISOCC). IEEE,
+                  20       D2 - Batched ILP                                                     2012, pp. 143–146.
+                   0       D2 - GRASP                                                       [8] Q. Xu, L. Jiang, H. Li, and B. Eklow, “Yield enhancement for 3d-stacked
+                       0.0         0.5      1.0      1.5       2.0        2.5   3.0             ics: Recent advances and challenges,” in 17th Asia and South Pacific
+                                         of Poisson defect distribution                         Design Automation Conference. IEEE, 2012, pp. 731–737.
+Fig. 7: Impact of the Poisson parameter 𝜆 on yield across                                   [9] T. Dokka, M. Bougeret, V. Boudet, R. Giroudeau, and F. C. Spieksma,
+benchmarks for the ILP-based method (Batched ILP) and the                                       “Approximation algorithms for the wafer to wafer integration problem,”
+GRASP-based method (GRASP) with 𝑆max = 250.                                                     in International Workshop on Approximation and Online Algorithms.
+                                                                                                Springer, 2012, pp. 286–297.
+                                                                                           [10] G. Duvillié, M. Bougeret, V. Boudet, T. Dokka, and R. Giroudeau, “On
+rapidly and approaches zero when 𝜆 ≥ 2, indicating that high                                    the complexity of wafer-to-wafer integration,” in International Conference
+defect rates severely limit feasible SoC assembly. In contrast,                                 on Algorithms and Complexity. Springer, 2015, pp. 208–220.
+Benchmarks D1 and D2 are more robust, maintaining relatively                               [11] J. Lee, K. Park, and S. Kang, “Yield enhancement techniques for 3d
+                                                                                                memories by redundancy sharing among all layers,” ETRI Journal, vol. 34,
+high yield at moderate 𝜆, although the decreasing trend remains                                 no. 3, pp. 388–398, 2012.
+clear. Across all settings, the ILP-based method (Batched ILP)                             [12] M. Taouil and S. Hamdioui, “Yield improvement for 3d wafer-to-wafer
+consistently achieves slightly higher yield than the GRASP-                                     stacked memories,” Journal of Electronic Testing, vol. 28, no. 4, pp.
+                                                                                                523–534, 2012.
+based method (GRASP), while both follow similar degradation                                [13] B. Zhang and V. D. Agrawal, “A novel wafer manipulation method for
+trends as 𝜆 increases. This indicates that the methods remain                                   yield improvement and cost reduction of 3d wafer-on-wafer stacked ics,”
+stable under varying defect levels.                                                             Journal of Electronic Testing, vol. 30, no. 1, pp. 57–75, 2014.
+                                                                                           [14] W. Kang, C. Lee, K. Cho, and S. Kang, “A die selection and matching
+                        VI. Conclusion                                                          method with two stages for yield enhancement of 3-d memories,” in
+                                                                                                22nd Asian Test Symposium. IEEE, 2013, pp. 301–306.
+   We have presented DT-MATCH, a defect- and topology-                                     [15] Z. Chen and P. Gupta, “Yap: Yield modeling and simulation for advanced
+aware chiplet matching framework that maximizes the number                                      packaging,” in ACM/IEEE Design Automation Conference (DAC), 2025,
+of functional SoCs. We formulate the post wafer-level test                                      pp. 1–7.
+                                                                                           [16] Z. Zhuang, K.-Y. Chao, B. Yu, T.-Y. Ho, and M. D. Wong, “Multi-
+assembly problem, capturing role-specific chiplet types, lane-                                  product optimization for 3d heterogeneous integration with d2w bonding,”
+level defect maps, shared spare-lane budgets, and allowed                                       in IEEE/ACM International Conference on Computer Aided Design
+chiplet orientations, and prove it to be NP-complete. We                                        (ICCAD), 2023, pp. 1–9.
+                                                                                           [17] E. J. Marinissen, C.-C. Chi, M. Konijnenburg, and J. Verbree, “A dft
+propose a unified lossless preprocessing pipeline including                                     architecture for 3d-sics based on a standardizable die wrapper,” Journal
+equivalence-class aggregation and role-level pruning to reduce                                  of Electronic Testing, vol. 28, no. 1, pp. 73–92, 2012.
+problem size while preserving optimality. Building on this                                 [18] “Ieee standard for test access architecture for three-dimensional stacked
+                                                                                                integrated circuits,” IEEE Std 1838-2019, pp. 1–73, 2020.
+pipeline, we develop two complementary approaches: an ILP-                                 [19] P.-Y. Chuang, F. Lorenzelli, and E. J. Marinissen, “Generating test patterns
+based approach with rolling-horizon batching and periodic                                       for chiplet interconnects: Achieving optimal effectiveness and efficiency,”
+repair for high solution quality, and a GRASP-based approach                                    in IEEE International Test Conference in Asia (ITC-Asia), 2023, pp. 1–6.
+                                                                                           [20] T.-H. Wang, P.-Y. Chuang, F. Lorenzelli, and E. J. Marinissen, “Test and
+with scarcity-guided construction for scalable performance.                                     repair improvements for ucie,” in IEEE European Test Symposium (ETS),
+Experimental results on industry benchmarks show that the                                       2024, pp. 1–6.
+ILP-based approach achieves superior yield, while the GRASP-                               [21] C. Lai and S.-Y. Huang, “Connectivity-agnostic built-in self-repair of
+                                                                                                interconnects in a chiplet ic,” IEEE Transactions on Computer-Aided
+based approach provides significant runtime reduction with                                      Design of Integrated Circuits and Systems, vol. 44, no. 7, pp. 2451–2460,
+comparable solution quality, offering a practical trade-off for                                 2024.
+chiplet assembly optimization.                                                             [22] P. Bhoumik, D. Thapar, A. Chaudhuri, and K. Chakrabarty, “Smart:
+                                                                                                Scalable and modular architecture for routing-aware testing of fan-out
+                     Acknowledgment                                                             wafer-level packages,” in IEEE International Test Conference (ITC), 2025,
+                                                                                                pp. 310–319.
+  The authors thank Arjun Chaudhuri from Arizona State                                     [23] J. Xie, Y. Wang, and Y. Xie, “Yield-aware time-efficient testing and
+University for his comments and suggestions on this work.                                       self-fixing design for tsv-based 3d ics,” in 17th Asia and South Pacific
+                                                                                                Design Automation Conference. IEEE, 2012, pp. 738–743.
+                                           References                                      [24] P. Bhoumik, A. Chaudhuri, S. K. Goel, and K. Chakrabarty, “Fault
+                                                                                                modeling and testing of chiplet-to-chiplet interconnects in fan-out wafer-
+ [1] P. Onufryk and S. Choudhary, “Ucie: Standard for an open chiplet                           level packaging,” in IEEE International Test Conference, 2025, pp. 357–
+     ecosystem,” IEEE Micro, vol. 45, no. 1, pp. 16–25, 2024.                                   366.
+ [2] A. Huynh, K. Stahn, M. Mota, C. de Verteuil, J. Pyon, and R. Mova-                    [25] A. Smith, E. Chapman, C. Patel, R. Swaminathan, J. Wuu, T. Huang,
+     hedinia, “Ucie standard: Enhancing die-to-die connectivity in modern                       W. Jung, A. Kaganov, H. McIntyre, and R. Mangaser, “11.1 amd
+     packaging,” IEEE Micro, vol. 45, no. 1, pp. 26–34, 2025.                                   instincttm mi300 series modular chiplet package–hpc and ai accelerator
+ [3] E. J. Marinissen, V. Pancholi, P.-Y. Chuang, and M. Keim, “Ieee std                        for exa-class systems,” in IEEE International Solid-State Circuits
+     p3405: New standard-under-development for chiplet interconnect test and                    Conference (ISSCC), vol. 67, 2024, pp. 490–492.
+     repair,” in IEEE 42nd VLSI Test Symposium (VTS), 2024, pp. 1–11.                      [26] J. Hartmanis, “Computers and intractability: A guide to the theory of
+ [4] P.-Y. Chuang, F. Lorenzelli, S. Chakravarty, C.-W. Wu, G. Gielen, and                      np-completeness (michael r. garey and david s. johnson),” Siam Review,
+     E. J. Marinissen, “Effective and efficient testing of large numbers of                     vol. 24, no. 1, p. 90, 1982.
+     inter-die interconnects in chiplet-based multi-die packages,” in IEEE 41st            [27] T. A. Feo and M. G. Resende, “Greedy randomized adaptive search
+     VLSI Test Symposium (VTS), 2023, pp. 1–6.                                                  procedures,” vol. 6, no. 2. Springer, 1995, pp. 109–133.
+ [5] M. Taouil, S. Hamdioui, and E. J. Marinissen, “Yield improvement for
+     3d wafer-to-wafer stacked ics using wafer matching,” ACM Transactions
+     on Design Automation of Electronic Systems (TODAES), vol. 20, no. 2,
+     pp. 1–23, 2015.
+
+
+                                                                                      10                                                             Regular Paper
+[28] M. Prais and C. C. Ribeiro, “Reactive grasp: An application to a matrix         [Online]. Available: https://www.gurobi.com
+     decomposition problem in tdma traffic assignment,” INFORMS Journal         [30] Samuel K. Moore, “AMD’s Next GPU Is a 3D-Integrated Superchip,”
+     on Computing, vol. 12, no. 3, pp. 164–176, 2000.                                https://spectrum.ieee.org/amd-mi300, Dec. 2023, accessed: 2026-04-13.
+[29] Gurobi Optimization, LLC, “Gurobi Optimizer Reference Manual,” 2026.
+
+
+
+
+                                                                           11                                                        Regular Paper
+
