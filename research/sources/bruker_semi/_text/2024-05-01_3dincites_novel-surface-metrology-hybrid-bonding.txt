@@ -1,0 +1,186 @@
+ 
+
+Surface Metrology Techniques for Hybrid Bonding - IMAPS 3D InCites Content Platform
+
+3D In-Depth
+What is 3D Integration?
+Design
+Applications
+Devices
+Manufacturing
+Materials
+Processes and Technology
+Test and Inspection
+Community
+IMAPS Corporate Membership
+News
+White Papers
+Event Coverage
+Blogs
+Francoise in 3D
+Packaging IFTLE
+3D In Context
+From Different Dimensions
+Interconnectology 101
+3D InCites Podcasts
+About Us
+How to Contribute Content
+Acceptable Use Policy
+
+Novel Surface Metrology Techniques for Hybrid Bonding
+3D In-Depth
+, 
+Processes and Technology
+May 21, 2024
+ · 
+By Dr. Oliver Zhao
+ · 
+adeia
+
+Executive Summary: Innovative, High Throughput Surface Metrology
+Hybrid bonding 
+ is enabling the next generation of advanced packaging in the semiconductor industry. As hybrid bonding occurs at the molecular level, it requires careful control of the surface topography for high yield.
+At Adeia, we developed new methods to improve both throughput and assembly yield in the overall assembly process. The first concept we developed is an optical interferometry-based surface metrology technique that measures Cu interconnect recess over 1000x faster than the standard AFM technique. The second is an implementation of a convolutional neural network (CNN) for automated defect inspection. The CNN was trained for the most relevant defects attributed to hybrid bonding yield loss.
+Both innovations increase the throughput of sample screening without sacrificing data fidelity or reliability. The increased throughput enables faster product development with enhanced yield, thereby improving cost and time to market.
+Key Factors for Surface Metrology for Hybrid Bonding
+Two important parameters for die and wafer inspection are metal recess and defectivity. Recess is defined as the depth of the metal interconnects, typically copper, with respect to the dielectric surface (Figure 1).
+Figure 1. a) Cross-section schematic illustrating a typical hybrid bonding surface with Cu recess defined. b) Atomic Force Microscopy image of a hybrid bonding surface showing the Cu pads recessed below the SiO2 dielectric after CMP.
+The Cu recess may be controlled through careful chemical-mechanical polishing (CMP) within the damascene process. Defectivity is a measure of the surface flaws in the material. Defect examples include foreign material due to particles in the air, metal corrosion, lithography pattern defects, and scratches from the CMP step (Figure 2).
+Figure 2. Representative examples of relevant defects in samples prepared for hybrid bonding and their categories. These images with thousands more were used to train Adeia’s CNN for defect identification.
+The surface characterization accuracy is critical when driving toward high-throughput characterization. High-throughput data collection enables larger datasets, leading to improved understanding of process-materials and parameter-performance relationships. Accurate characterization at higher throughput leads to shorter manufacturing cycles.
+Statistical Study of Copper Recess with 1000x Higher Throughput
+Atomic force microscopy (AFM) is the standard method to measure Cu recess. AFM is a surface characterization technique where a probe tip at the end of a cantilever is scanned over the surface of a sample. The topography of the sample is measured based on the deflection of the cantilever from the probe tip interaction with atomic forces on the surface of the sample.
+AFM is widely accepted because the data is extremely reliable, and it offers nanometer-scale resolution in X and Y and ~ 1 Angstrom resolution in Z. However, probe-based AFM is slow. Imaging an 80µm by 80µm area takes ~5 minutes, forcing lower sampling statistics per wafer.
+Optical interferometry, a non-contact technique, records surface topography data with high throughput. It uses the interference of reflected light from a sample surface with a reference light beam to measure the height of surface features.
+The throughput of optical interferometry is about 1,000 times faster than AFM with a resolution of 0.5 µm in X and Y, and a few nanometers in Z, and is dependent on material composition. If the surface is composed of different materials, e.g., Cu from the pad surface and SiO2 from the dielectric surface, the apparent topography is different from the actual due to the different material optical responses.
+
+In our 2024 ECTC paper entitled, “High-Throughput Characterization of Nanoscale Topography for Hybrid Bonding by Optical Interferometry,” we present a method to calibrate the interferometry for a Cu/SiO2 hybrid bonding surface and study its topography with greater than 1,000 times higher throughput.
+With this method, we can obtain larger quantities of reliable data, revealing new insights into the statistical distribution of Cu recess across a wafer. Maps of metal recesses across a wafer can be created in a reasonable time frame (Figure 3), and CMP process conditions used to control recess can be tuned with more confidence during process development.
+Figure 3. Map of across-wafer recess distribution where the values plotted are the difference from the mean recess. Data was collected with an optical interferometry in phase-shift interferometry mode.
+Our 2023 ECTC paper [1] briefly described the idea, and the 2024 paper will present the full details of the technique using multiple examples.
+Measuring Defectivity with Convolutional Neural Networks
+Optical imaging is the standard method of identifying defects on the surface of samples due to its speed and accuracy. Depending on the pad and pitch size, inspection systems take hundreds to thousands of images across a single wafer to determine defectivity on the wafer. The task of image defect identification and recognition is perfect for the CNN model application. CNNs are regularly used in image recognition problems to identify features and categorize defects.
+At Adeia, we implemented CNN models and trained them with our own dataset of a few thousand images of wafer and die surfaces, which were collected with dark field imaging on an automated microscope stage.
+Our CNN model identified defects at a higher rate than a highly trained human operator and flagged defects that are known to negatively affect yield in hybrid bonding samples. Details of the CNN architecture, the training data, and the effectiveness of the models will be explained in detail 
+in our 2024 ECTC paper
+, “Deep Convolution Neural Networks for Automatic Detection of Defects which Impact Hybrid Bonding Yield.”
+Dr. Bongsub Lee, Co-Author
+Dr. Bongsub Lee is the Director of Design and Analysis at Adeia in San Jose, California. He is working on hybrid bonding technology, especially regarding materials characterization, device design, and supply chain management. He received his PhD in Materials Science and Engineering from the University of Illinois at Urbana-Champaign and his master’s and bachelor’s degrees from Seoul National University. He made more than 60 publications, which have been cited more than 2700 times in total.
+References
+[1] L. Mirkarimi, T. Workman, J. Theil, G. Fountain, K. Bang, O. Zhao, B. Lee, C. Uzoh, D. Suwito and G. Gao, “
+Fine Pitch Die-to-Wafer Hybrid Bonding
+,” in IEEE 73rd Electronic Components and Technology Conference (ECTC), Orlando, FL, USA, 2023.
+
+Dr. Oliver Zhao
+Dr. Oliver Zhao is a Staff Integration Engineer at Adeia in San Jose, California. He…
+View Dr. Oliver Zhao's posts
+Related Category Posts
+When Memory Is Scarce, Every Good Die Counts: Test, Repair, and Reliability Across SRAM, DRAM, HBM, and Emerging Memories
+Nov 16, 2026
+AI accelerators and data‑center GPUs are using memory faster than...
+AI is Driving New Industrial Infrastructure for the Factory of Tomorrow
+Nov 12, 2026
+From predictive maintenance and quality inspection to supply chain optimization...
+From Optical Modules to Compute Packages: How Co-Packaged Optics is Reshaping Photonics Manufacturing
+Nov 11, 2026
+The next phase of AI infrastructure development will depend on...
+Related Tag Posts
+July Member News: Bold Investments and Strategic Acquisitions
+Jul 31, 2025
+July marked a dynamic period for our community members, characterized...
+The Benefits of Photonic Debonding in Advanced Semiconductor and Electronics Manufacturing
+Apr 14, 2025
+The semiconductor industry is rapidly advancing, with an increasing emphasis...
+March Member News: Shaping the Future of Technology
+Mar 27, 2025
+In the month of March, the semiconductor industry saw significant...
+
+Sitemap
+3D In-Depth
+What is 3D Integration?
+Design
+Devices
+Manufacturing
+Materials
+Processes and Technology
+Test and Inspection
+Community
+IMAPS Corporate Membership
+Press Releases
+White Papers
+Blogs
+Francoise in 3D
+Packaging IFTLE
+3D In Context
+From Different Dimensions
+Interconnectology 101
+About Us
+IMAPS 3D InCites Acceptable Use Policy
+3D Event Coverage
+Copyright © 2026
+
+We are using cookies to give you the best experience on our website.
+You can find out more about which cookies we are using or switch them off in 
+settings
+.
+
+Accept
+
+Reject
+
+Settings
+
+Change cookie settings
+
+Close GDPR Cookie Settings
+
+Privacy Overview
+
+Necessary
+
+Analytics
+
+Marketing
+
+by  
+GDPR Cookie Compliance
+
+Privacy Overview
+This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
+Please visit our 
+Privacy Policy page
+.
+
+Necessary
+Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.
+
+Enable or Disable Cookies
+
+Enabled
+
+Disabled
+
+Analytics
+This website uses Google Analytics to collect anonymous information such as the number of visitors to the site, and the most popular pages.
+Keeping this cookie enabled helps us to improve our website.
+
+Enable or Disable Cookies
+
+Enabled
+
+Disabled
+
+Marketing
+This website uses the following additional cookies:
+Klaviyo Cookies
+
+Enable or Disable Cookies
+
+Enabled
+
+Disabled
+
+Enable All
+
+Save Changes
+ 
