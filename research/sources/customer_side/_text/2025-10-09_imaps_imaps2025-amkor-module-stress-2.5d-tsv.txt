@@ -1,0 +1,336 @@
+                                       IMAPS 2025 Symposium | San Diego, CA | Sep. 29 – Oct. 2
+
+
+                                                                                                                 Page |1
+
+
+             Module Stress Reduction for 2.5D TSV-based Heterogeneous Package
+
+             Hoon Jung, Quan Pham, Bryce Lukehart, Haamid Juvale, MinKeon Lee, JunOh Bong, HyungSang Park
+                                                   Amkor Technology
+                                               2045 E. Innovation Circle
+                                                    Tempe, AZ 85284
+                                                      480-821-5000
+                      Hoon.jung@amkor.co.kr, Quan.Pham@amkor.com, Bryce.Lukehart@amkor.com,
+                    Haamid.Juvale@amkor.com, MinKeon.Lee@amkor.co.kr, JunOh.Bong@amkor.co.kr,
+                                             HyungSang.Park@amkor.co.kr
+
+
+
+
+           Abstract
+           Resilience to mechanical stress is an essential requirement for successful electronics applications. This paper
+           investigates how underfill and metal lid adhesive choice effect module stresses in 2.5D Through Silicon Via
+           (TSV) based heterogeneous packages. Key material properties such as glass transition temperature (Tg),
+           modulus of elasticity and coefficient of thermal expansion (CTE) are critical when package warpage is varied
+           from room to peak (240~260°C) reflow temperatures. Application-specific integrated circuit (ASIC) die
+           (especially in 5 nm wafer node), high-bandwidth memory (HBM) (trending toward HBM3, HBM3E and
+           HBM4 series) as well as larger, thicker substrates are driving a sharp increase in package costs. This increase
+           in material costs makes it difficult to perform engineering evaluations with a sufficiently high sample size.
+           Utilizing mechanical stress simulations is a cost-effective alternative. This paper describes ANSYS module
+           stress simulations run with both flat-top lid and stiffener ring designs of various foot widths and thicknesses.
+           This allows for the assessment of a variety of underfill and metal lid adhesive choices in the different package
+           configurations. Then, when a key configuration is identified, physical test vehicles can be made to confirm
+           simulation results. Using a Chip on Wafer (CoW) assembly test vehicle with 72-mm x 72-mm package size
+           and 39-mm x 35-mm module size, it was determined that the choice of these materials is critical, not only for
+           package warpage management, but also for module resistance against mechanical stress in reliability testing.
+
+           Key words
+           Heterogeneous Integration, Package Warpage, Module Stress Simulation, Chip on Wafer (CoW), 2.5D
+           Silicon Interposer, High-Bandwidth Memory (HBM), Underfill for Chip on Wafer (CoW)
+
+
+
+
+I. Introduction                                                          interposer utilizes finer lines and spaces and can reduce the
+   The accelerating demands of artificial intelligence (AI)              distance between logic and memory to <100 µm. The
+and computing markets have created a push for a more                     shrinkage in distance can reduce signal delays, preserve
+complicated package structure. To meet the demand for                    signal integrity, and lower energy consumption which is key
+increased processing speeds, memory location is trending                 in high performance computing applications. The
+towards closer and closer physical proximity to the central              progression of signal path reduction is shown in Fig. 1 below.
+processing unit (CPU). This drives the adoption of the so-               Another benefit of 2.5D packaging is the increased
+called 2.5D packaging technology. This involves first using              interconnect density that is possible over a traditional organic
+a Chip on Wafer (CoW) process, then singulating the module               substrate. Current high-bandwidth memory (HBM) chips
+and proceeding with traditional flip chip (FC) assembly.                 have roughly 4000 connections. The 2.5D package structure
+   There are several reasons why 2.5D packaging is                       is visualized in Fig. 2 which shows the interconnections
+preferred. In 2.5D, the main CPU and memory are connected                between the organic substrate and the silicon interposer.
+to the package substrate with a silicon interposer, which also
+utilizes through silicon vias to traditional copper (Cu) pillar
+(CuP) interconnects with the package substrate. This silicon
+
+Module Stress COrrelation for 2.5D TSV-based Heterogeneous                2025 iMAPS 58th International Symposium On Microelectronics, SAN
+Package                                                                                                    DIEGO;Hoon.Jung@amkor.co.kr
+
+
+
+                                                                  0096
+                                                    IMAPS 2025 Symposium | San Diego, CA | Sep. 29 – Oct. 2
+
+
+                                                                                                                                             Page |2
+
+
+                                                                                      with daisy-chain test nets are used in place of functional
+                                                                                      components; these are referred to as “mimic” components.
+                                                                                      Within the heterogenous integrated module are two mimic
+                                                                                      HBMs, a mimic ASIC, and dummy silicon (Si) filler die.
+                                                                                      After successful test vehicle assembly, the packages were
+                                                                                      subjected to package-level thermal cycling test, C condition
+                                                                                      (-65 to 125°C). During the inspection points, scanning
+                                                                                      acoustic tomography (SAT) imaging showed there were
+                                                                                      signs of cracking or delamination within the heterogeneous
+           Fig. 1. Advanced packaging trends.
+                                                                                      module. These units were then taken for destructive failure
+                                                                                      analysis where cross-sections confirmed the presence of
+                                                                                      underfill cracking. The crack was determined to be between
+              The 2.5D modules are larger than a typical monolithic die
+                                                                                      the top die and the silicon interposer and at the corner of the
+           and are subject to intense thermal and mechanical stresses
+                                                                                      mimic ASIC as shown in Fig. 3.
+           during thermal cycling. One of the common failure points is
+           underfill cracking in the interface between the organic
+           substrate and silicon interposer. This can lead to failures in
+           C4 or CuP interconnects. To maintain yields, it is critical to
+           choose the correct materials for underfill and lid adhesive.
+           Key elements of the solution include the three structures
+           shown in Fig. 2:
+             (1) Integration of HBM and serializer/deserializer
+                   SerDes microchips using micro-bump joining to an
+                   interposer.
+             (2) Through Silicon Via (TSV) interposer connections to
+                   C4 or large CuP.
+             (3) Package substrate.                                                           Fig. 3. Example underfill crack in 2.5D package.
+
+
+                                                                                                      Table I. Package Specifications.
+                                                                                       Package size                  72 x 72 mm
+                                                                                       Logic size (mimic)            26 x 31 mm
+                                                                                                                      (full die thickness)
+                                                                                       Si interposer thickness       0.1 mm
+                                                                                       HBM size (mimic)              10 x 11 mm, HBM2 mimic
+                                                                                       Substrate                     thickness/layer/build-up/core: 2.0
+                                                                                                                     mm/16 layers/ABF GZ-series/T-
+                                                                                                                     glass core, 1.2 mm thickness
+                                                                                       Metal lid                     71.5 x 71.5 mm size
+                                                                                                                     Cavity depth 0.9 mm
+                                                                                                                     Lid feet: 8 mm
+                                                                                                                     Thickness: 3 mm
+           Fig. 2. Three key elements of advanced 2.5D packaging technology.           Total package height          5.65 mm
+           `                                                                           Bottom ball grid array        1.1/0.6 mm
+                                                                                       (BGA) pitch/raw ball          (full grid array)
+           II. Experiments and simulations                                             size
+
+           A. Test vehicle information and thermal cycling
+                                                                                      B. Finite element analysis model
+           In this paper, a 2.5D package with TSV silicon interposer
+           will be studied (see Table 1). The purpose of this test vehicle            Mechanical simulations were used to help determine the
+           is to validate the assembly process and the reliability of the             appropriate design and material changes that could mitigate
+           design and the selected packaging materials before                         the underfill cracking issue found during thermal cycling. A
+           committing expensive, functional components. Thus, for the                 representative finite element analysis (FEA) model was built
+           validation and reliability testing, mechanical representatives             with temperature-dependent material properties. Thermal
+                                                                                      cycling stresses were simulated by applying temperature
+Module Stress COrrelation for 2.5D TSV-based Heterogeneous                 2025 iMAPS 58th International Symposium On Microelectronics, SAN
+Package                                                                                                     DIEGO;Hoon.Jung@amkor.co.kr
+
+
+
+                                                                               0097
+                                                     IMAPS 2025 Symposium | San Diego, CA | Sep. 29 – Oct. 2
+
+
+                                                                                                                                                  Page |3
+
+
+           changes to the model. These temperature changes then drive
+           the subsequent thermal strains and stresses that arise due to
+                                                                                        C. Stress simulation DOE
+           the mismatches in coefficient of thermal expansion (CTE)
+           between the different materials that comprise the package.                   Based on the thermal cycle failure mode, several material
+           This approach is adequate for stress trend analysis.                         and package attributes were chosen to study their effect on
+                                                                                        the underfill stress magnitude:
+
+                                                                                        1.   Die underfill – switching a failing material to a different
+                                                                                             material is a nuanced topic: not only do the specific
+                                                                                             material properties such as modulus, CTE, and Tg
+                                                                                             influence its stress level, but the inherent strength will
+           Fig. 4. Simulation models: lidded 2.5D package (left), lid removed
+           to see module (middle), and stiffener package version (right).                    change from material to material which complicates the
+                                                                                             comparison. For example, fatigue resistance, toughness,
+                                                                                             yield point, tensile strength, elongation limit,
+           In the model, the region of underfill that experienced                            temperature stability are material specific, and all play a
+           cracking was closely investigated to check for stress                             role in the failure outcome. Nevertheless, it is still
+           behavior that would correlate with the reliability testing                        valuable to understand how stress may be influenced by
+           observations. A cross-section of this region and a stress                         switching materials. For this study, an alternative die
+           contour is shown on Fig. 4. The simulation shows relatively                       underfill with higher Tg will be compared.
+           high stress concentrated around the corner of the ASIC die
+           which correlates well with the crack location observed. This                 2.   Lid type – the current design of the package incorporates
+           stress output was then used to compare various package                            a flat-top lid which serves many roles: to protect the
+           designs and materials.                                                            heterogeneous module and package top surface, to be an
+                                                                                             integral part of the thermal path to the final thermal
+                                                                                             solution, and finally to interact with all other package
+                                                                                             materials to achieve acceptable coplanarity for
+                                                                                             subsequent assembly steps. However, by applying force
+                                                                                             onto the package through the thermal interface material
+                                                                                             (TIM) and lid foot adhesive, the lid will also impart
+                                                                                             stresses, especially at the module corners. The
+                                                                                             simulation compared the effects of switching to a
+                                                                                             stiffener ring.
+
+                                                                                        3.   Lid foot adhesive – the adhesive material used can play
+                                                                                             a significant role in the warpage of the package and the
+                                                                                             stress in certain regions. The modulus of the adhesive is
+                                                                                             a key attribute because it determines how well the
+                                                                                             substrate edges and the lid foot are coupled, which will
+                                                                                             maximize the interaction of the lid or stiffener with the
+                                                                                             substrate. However, the adhesive can also impart higher
+                                                                                             stresses into the die or module from increased substrate
+                                                                                             bending.
+
+                                                                                        A simulation study was conducted based on the three factors
+                                                                                        discussed above. Their effects on the ASIC underfill stress
+                                                                                        are plotted in Fig. 6.
+
+
+
+
+           Fig. 5. Detailed model cross section with a purple arrow showing
+           stress contour viewing direction (left), and stress contour on ASIC
+           underfill (right) as well as pointing the spot (ASIC die’s corner,
+           bottom) for stress simulation.                                                           Fig. 6. Plot of relative stress comparison.
+Module Stress COrrelation for 2.5D TSV-based Heterogeneous                   2025 iMAPS 58th International Symposium On Microelectronics, SAN
+Package                                                                                                       DIEGO;Hoon.Jung@amkor.co.kr
+
+
+
+                                                                                 0098
+                                                  IMAPS 2025 Symposium | San Diego, CA | Sep. 29 – Oct. 2
+
+
+                                                                                                                                        Page |4
+
+
+           The results show expected trends with a reduction in stress              are shown in Table II. Core material and its thickness can
+           due to the high Tg underfill, low modulus lid adhesive, and              have a strong influence on the package warpage and stresses.
+           stiffener, in the order of stress reduction magnitude. The               Because substrates are heavily loaded with copper for
+           higher Tg underfill has a transition temperature significantly           routing and power or ground planes, the core helps to reduce
+           higher than the high temperature dwell of the thermal cycle              the overall CTE of the substrate so the CTE mismatch
+           condition. This can benefit the underfill stress because the             between a silicon die or heterogeneous module is reduced.
+           thermal strain the occurs during each cycle is entirely
+                                                                                              Table II. Follow-up Warpage and Stress Study.
+           comprised of CTE1, thereby reducing the overall thermal
+           strain of the underfill. The low modulus adhesive and the
+           switch from lid to stiffener ring had a moderate stress
+           reduction effect as well.
+
+           D. Follow-up build and analysis
+           Procuring stiffeners would lead to a lengthy project delay, so
+           it was decided to continue with test vehicle builds using the
+           alternative die underfill material and lower modulus lid
+           adhesive, which simulation estimated to reduce stress by
+           39%. These packages were successfully assembled and
+           submitted to the same thermal cycle reliability testing as
+           before. With the package and material changes, the test
+           vehicle passed the reliability testing with no abnormal SAT,
+           or underfill cracking. However, the changes that allowed the
+           test vehicle to pass thermal cycle testing consequently
+           increased the package warpage. The measured package
+           warpage (shown in Fig. 7) measured from the substrate                                      Fig. 8. ASIC underfill stress.
+           BGA-side and the 2D diagonal profiles are in dead-bug
+           orientation. The interaction between the module and the                  The first two legs of the simulation study reflect the known
+           substrate is clearly observed in the curvature at the center of          data points from the test vehicle builds so the underfill crack
+           the package. Then, outside of the module area, the substrate             results are noted on the graph. The simulation results show
+           and lid interaction pulls the substrate back towards the peak            that with high Tg die underfill material and with stiffener, the
+           or valley. As previously mentioned, this will reduce warpage             stress remains close to the known-good test vehicle design
+           but can introduce stress into the module corners.                        and the core material and thickness does not have a
+                                                                                    significant effect on the ASIC underfill crack. This is a
+                                                                                    promising result because there are many factors that can be
+                                                                                    selected to reduce warpage without the risk of reintroducing
+                                                                                    stress into the ASIC underfill.
+
+
+
+
+            Fig. 7. Package warpage measurements (top), package diagonal                Fig. 9. Package warpage simulation results showing Room
+                  profiles: 25°C (left), 125°C (mid), and 260°C (right).                 Temperature (RT) and High Temperature (HT) warpage.
+
+           An additional simulation study was performed to identify a               Several key conclusions can be reached by combining the
+           design that will have low stress and low warpage. This study             findings from the initial stress analysis in Fig. 6 with the
+           will investigate several additional factors such as core                 additional results:
+           material, core thickness and stiffener material. The details
+Module Stress COrrelation for 2.5D TSV-based Heterogeneous                 2025 iMAPS 58th International Symposium On Microelectronics, SAN
+Package                                                                                                     DIEGO;Hoon.Jung@amkor.co.kr
+
+
+
+                                                                             0099
+                                                   IMAPS 2025 Symposium | San Diego, CA | Sep. 29 – Oct. 2
+
+
+                                                                                                                                                Page |5
+
+
+           1.   While the combination of stiffener + high modulus
+                adhesive and lid + low modulus adhesive is roughly
+                equal in underfill stress reduction, the resulting warpage
+                with stiffener + high modulus adhesive is lower (leg 2
+                vs leg 3), meaning it has improved stress and warpage
+                performance.
+
+           2.   The effect of core CTE and core thickness is moderate,
+                and their effects can be combined to significantly reduce
+                warpage. As shown in Fig. 7, the package warpage is
+                driven by the warpage within the module area. So, by
+                reducing the CTE mismatch between the module and the
+                substrate, this effect can be reduced.                              References
+                                                                                    [1]   Mike Kelly, “Amkor Heterogeneous IC Packaging: Optimizing
+           3.   In this case, the SUS 403 stiffener material was not                      Performance and Cost,” published on September 22, 2022 in
+                                                                                          Semiconductor Story https://amkor.com/blog/heterogeneous-ic-
+                effective in reducing warpage but was effective in                        packaging-optimizing-performance-and-cost/ .
+                reducing stress. This is likely due to the reduced CTE of
+                the material which significantly reduces its mismatch               [2]   “2.5D MCM (Multi-chip Module) Technology Development for
+                with the substrate and consequently, its warpage-                         Advanced Package,” 2023 IEEE 73rd Electronic Components and
+                                                                                          Technology Conference (ECTC)
+                correcting abilities.                                                     https://conferences.computer.org/ectc/pdfs/ECTC2023-
+                                                                                          1NkkviSxgDnmPjptC1ysqm/349800a778/349800a778.pdf.
+           Based on the simulation results, design and material changes
+           can be recommended for the next test vehicle builds.                     [3]   “2.5D-Level Packaging Technology Materials, Assembly, Process,
+                                                                                          and Reliability Challenges,” Jun 14, 2022, NASA Electronic Parts and
+                                                                                          Packaging Program
+           III. Conclusion                                                                https://nepp.nasa.gov/docs/etw/2022/14-JUN-TUE/1255-Suh-CL-22-
+           As packaging trends continue towards minimizing distance                       3179.pdf.
+           between memory and ASIC die, assembly cost and                           [4]   John H. Lau, “State-of-the-Art in Chiplets Horizontal
+           complexity increase exponentially. This complexity lies not                    Communications,” 2023 Journal of Microelectronics and Electronic
+           only in the manufacturing process but also in the addition of                  Packaging
+                                                                                          https://imapsjmep.org/api/v1/articles/81977-state-of-the-art-in-
+           materials and interfaces within a heterogenous package.                        chiplets-horizontal-communications.pdf .
+           Ensuring that all the materials and their interactions can
+           result in a reliable and warpage-controlled package is                   © 2025, Amkor Technology, Inc. All rights reserved.
+           increasingly difficult, highlighting the importance of
+           utilizing finite element analysis to determine improvement
+           paths. In 2.5D TSV construction, failures have occurred in
+           numerous test conditions and locations such as microbumps,
+           TSVs, silicon interposer corner, underfill between
+           heterogenous components. This paper discussed a case study
+           involving die underfill cracking during thermal cycle testing
+           of a 2.5D TSV-based package and the subsequent simulation
+           analysis. Initial simulations were used to select design
+           changes that successfully mitigated the underfill cracking.
+           However, these design changes led to increased warpage,
+           necessitating a follow up simulation study. Finally, design
+           and material factors were identified that could both reduce
+           underfill stress and reduce package warpage. These findings
+           highlight the importance of using experimental data along
+           with simulation analysis to help select the proper materials
+           to reduce mechanical stress while still maintaining
+           acceptable warpage levels in the package.
+
+
+
+
+Module Stress COrrelation for 2.5D TSV-based Heterogeneous               2025 iMAPS 58th International Symposium On Microelectronics, SAN
+Package                                                                                                   DIEGO;Hoon.Jung@amkor.co.kr
+
+
+
+                                                                             0100
+

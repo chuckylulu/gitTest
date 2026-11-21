@@ -1,0 +1,1976 @@
+
+
+            Material-Mechanistic Interplay in SiCN Wafer Bonding for 3D Integration - PMC
+
+      Skip to main content
+
+                        An official website of the United States government
+
+Here's how you know
+
+Here's how you know
+
+Official websites use .gov
+
+                            A
+
+.gov
+ website belongs to an official
+                            government organization in the United States.
+
+Secure .gov websites use HTTPS
+
+                            A 
+lock
+ (
+
+Lock
+
+                                    Locked padlock icon
+
+) or 
+https://
+ means you've safely
+                                connected to the .gov website. Share sensitive
+                                information only on official, secure websites.
+
+                            Search
+
+Log in
+
+            Dashboard
+
+            Publications
+
+            Account settings
+
+        Log out
+
+                        Search…
+
+                            Search NCBI
+
+            Primary site navigation
+
+                    Search
+
+                    Logged in as:
+
+            Dashboard
+
+            Publications
+
+            Account settings
+
+        Log in
+
+Search PMC Full-Text Archive
+
+Search in PMC
+
+                                Journal List
+
+                                User Guide
+
+PERMALINK
+
+Copy
+
+    As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+    the contents by NLM or the National Institutes of Health.
+
+    Learn more:
+
+PMC Disclaimer
+
+    |
+
+        PMC Copyright Notice
+
+ACS Omega
+. 2025 Jun 23;10(25):27575–27584. doi: 
+10.1021/acsomega.5c03628
+
+Search in PMC
+
+Search in PubMed
+
+View in NLM Catalog
+
+Add to search
+
+Material-Mechanistic Interplay in SiCN Wafer Bonding
+for 3D Integration
+
+Hayato Kitagawa
+
+Hayato Kitagawa
+
+†
+
+Yokohama
+National University, Yokohama
+240-8501, Japan
+
+Find articles by 
+Hayato Kitagawa
+
+†
+, 
+Ryosuke Sato
+
+Ryosuke Sato
+
+†
+
+Yokohama
+National University, Yokohama
+240-8501, Japan
+
+Find articles by 
+Ryosuke Sato
+
+†
+, 
+Sodai Ebiko
+
+Sodai Ebiko
+
+†
+
+Yokohama
+National University, Yokohama
+240-8501, Japan
+
+Find articles by 
+Sodai Ebiko
+
+†
+, 
+Atsushi Nagata
+
+Atsushi Nagata
+
+‡
+
+Tokyo
+Electron Kyushu Limited, Kumamoto
+861-1116, Japan
+
+Find articles by 
+Atsushi Nagata
+
+‡
+, 
+Chiwoo Ahn
+
+Chiwoo Ahn
+
+§
+
+SK
+hynix Incorporation, Icheon
+17336, Korea
+
+Find articles by 
+Chiwoo Ahn
+
+§
+, 
+Yeounsoo Kim
+
+Yeounsoo Kim
+
+§
+
+SK
+hynix Incorporation, Icheon
+17336, Korea
+
+Find articles by 
+Yeounsoo Kim
+
+§
+, 
+Jiho Kang
+
+Jiho Kang
+
+§
+
+SK
+hynix Incorporation, Icheon
+17336, Korea
+
+Find articles by 
+Jiho Kang
+
+§
+, 
+Akira Uedono
+
+Akira Uedono
+
+∥
+
+University
+of Tsukuba, Tsukuba
+305-8573, Japan
+
+Find articles by 
+Akira Uedono
+
+∥
+, 
+Fumihiro Inoue
+
+Fumihiro Inoue
+
+†
+
+Yokohama
+National University, Yokohama
+240-8501, Japan
+
+Find articles by 
+Fumihiro Inoue
+
+†,
+*
+
+Author information
+
+Article notes
+
+Copyright and License information
+
+†
+
+Yokohama
+National University, Yokohama
+240-8501, Japan
+
+‡
+
+Tokyo
+Electron Kyushu Limited, Kumamoto
+861-1116, Japan
+
+§
+
+SK
+hynix Incorporation, Icheon
+17336, Korea
+
+∥
+
+University
+of Tsukuba, Tsukuba
+305-8573, Japan
+
+*
+
+Email: 
+inoue-fumihiro-ty@ynu.ac.jp
+.
+
+Received 2025 Apr 21; Accepted 2025 Jun 17; Revised 2025 May 18; Collection date 2025 Jul 1.
+
+© 2025 The Authors. Published by American Chemical Society
+
+This article is licensed under CC-BY-NC-ND 4.0
+
+PMC Copyright notice
+
+PMCID: PMC12224090  PMID: 
+40620956
+
+Abstract
+
+Wafer bonding is
+a step in processing of state-of-the-art integration
+architectures in CMOS devices. Sufficiently high bonding strength
+and low distortion with high alignment accuracy are essential to realize
+these device structures. A challenge in realizing advanced architectures
+is reducing the thermal history associated with the bonding process.
+Although much research has been conducted on wafer bonding methods
+compatible with the latest semiconductor manufacturing processes,
+discussions on the interface mechanisms during low temperature annealing
+have been insufficient. In this study, plasma-activated bonding was
+carried out using SiCN, which is a major bonding dielectric material.
+The bonding strength and water remaining at the interface were subsequently
+evaluated. We found that a SiCN film achieved greater bonding strength
+after post bond annealing at a low temperature of 250 °C and
+completely consumed the interfacial water. Analyses of the surface
+and interface revealed the carbon bonding leads to great bonding interface
+by low-temperature annealing.
+
+1. Introduction
+
+Advanced 3D integration
+structures such as complementary field-effect
+transistors (CFETs) and backside power delivery networks (BSPDNs)
+have been progressively investigated to achieve greater integrity
+and lower power consumption per unit area in advanced processors.
+
+−
+
+ Direct wafer bonding is essential for these architectures, and minimizing
+distortion at the bonding step is important to ensure overlay accuracy
+in lithography during backside fabrication. Thus, an atomic-level
+understanding of direct bonding technology is essential for the advanced-node
+complementary metal oxide semiconductor (CMOS) process era. In addition,
+hybrid bonding plays an important role in 3D chiplet applications
+that require high-density connections between wafers or chips, such
+as memory stacking and sensor integration.
+
+,
+
+ In
+such applications, highly reliable bonding with extreme grid alignment
+and sufficient bonding strength is essential to maintain high yields,
+where high thermal, electrical, and mechanical reliability are required
+for the bonding dielectric film. In addition, the thermal history
+resulting from high temperatures during bonding processes is becoming
+a serious issue in maintaining device performance.
+
+,
+
+ Therefore,
+achieving high bonding strength and reliable interfaces at low temperatures
+is the key to the further development of 3D structures fabricated
+using bonding processes.
+
+SiO
+2
+ deposited by chemical
+vapor deposition (CVD) has
+been mainly used in the direct bonding process for CMOS processes.
+However, the strength of the resultant bond is insufficient when postbonding
+annealing (PBA) is conducted at a temperature of less than 250 °C.
+In addition, CVD-SiO
+2
+ has excess water at the interface,
+resulting in the formation of microvoids, which adversely affect the
+strength of bonds formed in low-temperature processes. Overcoming this problem requires the development of new
+materials that form a water-free interface that can maintain stable
+bonding strength after low-temperature annealing.
+
+Recently,
+CVD-SiCN has attracted attention as an alternative material
+for achieving low-temperature bonds with the desired properties. CVD-SiCN
+has been shown to maintain high bonding strength after low-temperature
+annealing and to exhibit superior void suppression capability compared
+with conventional CVD-SiO
+2
+.
+
+−
+
+ SiCN is also known to
+function as a capping film against Cu in the back-end of line processes. These properties make CVD-SiCN a promising option
+for improving the reliability of devices fabricated using low-temperature
+bonding processes. However, there are many unexplored aspects of the
+mechanism involving SiCN, especially the specific influence of plasma
+activation conditions on the bonding strength. Previous studies have
+partially clarified the effects of dangling bonds and surface activation
+at the SiCN bonding interface.
+
+−
+
+ However, the full extent of the
+factors contributing to the strength enhancement at low temperatures
+has not been elucidated, nor has the role of interfacial water.
+
+In the present study, the mechanism resulting in a high bonding
+strength and a water-free interface in the low-temperature bonding
+of SiCN is clarified. From these findings, process factors that result
+in a more reliable bonding interface are proposed. Specifically, the
+conditions that promote the formation of an ideal interface are identified
+through a detailed evaluation of the changes in bonding strength under
+various plasma activation conditions. The aim is to provide, as a
+contribution to the further development of advanced integration technology,
+new knowledge for improving the reliability of low-temperature bonding
+processes using plasma activation.
+2. Experimental
+Section
+
+SiCN films were deposited onto 300 mm Si wafers via
+CVD, achieving
+a target thickness of 100 nm. Each wafer was subjected to chemical
+mechanical polishing (CMP) to obtain a surface roughness less than
+Rq 0.15 nm and the 80 nm film thickness, where the deposition parameters
+were adjusted to produce specific film properties. After CMP, N
+2
+ or O
+2
+ plasma activation and a deionized water
+rinse (hydration) were conducted. Finally, wafer bonding was performed.
+PBA was performed under nitrogen ambient at 200 °C, 250 °C,
+or 300 °C for 2 h.
+
+Composition analysis was carried out
+with Rutherford backscattering
+spectrometry with elastic recoil detection analysis (RBS–ERDA,
+HRBS500, Kobelco). The refractive indexes of SiCN films were measured
+by ellipsometry (RC2X-XNIR, J.A. Woollam). Gas emissions from the films were analyzed using thermal desorption
+spectroscopy (TDS, TDS1200II, ESCO).
+
+,
+
+The
+double cantilever beam (DCB) test was conducted using a custom-designed
+apparatus to assess bonding strength. In this setup, an actuator-driven
+blade is introduced into the bonding interface with an adjustable
+insertion distance and speed to precisely initiate delamination. This
+semiautomated approach enables consistent and reproducible measurements
+of bonding strength. The bonding energy 
+Gc
+ was determined
+using 
+eq 
+
+G
+c
+=
+3
+E
+t
+b
+2
+t
+w
+3
+/
+16
+L
+4
+(
+J
+/
+m
+2
+)
+
+1
+
+where 
+t
+
+b
+
+ represents the blade thickness, 
+E
+ is the Young’s modulus, 
+t
+
+w
+
+ is the wafer thickness, and 
+L
+ is the delamination
+length.
+
+The behavior of water stress corrosion manifests as
+an increase
+in the delamination distance over time after the blade is inserted.
+Internal water stress corrosion particularly occurs during measurements
+conducted in an anhydrous atmosphere (N
+2
+) inside a glovebox. This phenomenon can be used to evaluate remaining
+water at the bonding interface. In the
+present study, 0 s was defined as the moment the blade stopped, and
+the bonding strength was measured at 15, 30, 60, 120, and 180 s. The
+evaluation of interfacial remaining water was based on the reduction
+in bonding strength observed over these time intervals.
+
+Chemical
+bonds at the surface of SiCN were investigated using X-ray
+photoelectron spectroscopy (XPS, Quantera-SXM, ULVAC-PHI). The number
+of dangling bonds inside SiCN films was evaluated by electron spin
+resonance (ESR, EMXplus, Bruker) spectroscopy.
+
+,
+
+ Atomic-level vacancy analysis of bare SiCN films and their bonding
+interfaces was performed by positron annihilation spectroscopy (PAS).
+
+,
+
+ Cross-sectional images were acquired by transmission electron microscopy
+(TEM, JEM F200, JEOL), and additional interface composition and binding
+analysis were carried out by electron energy-loss spectroscopy (EELS,
+ARM200F, JEOL). In addition, after debonding,
+XPS analysis was performed to characterize interfacial bonds.
+3. Results and Discussion
+
+3.1. Investigation of Film Properties
+
+Various measurements were carried out to characterize the properties
+of two SiCN films: SiCN-A and SiCN-B. 
+Table 
+
+ shows the film composition ratios measured
+by RBS–ERDA. All of the element concentrations differ by only
+∼1% between the two films, indicating that the films have almost
+equivalent compositions.
+
+1. Composition of the
+SiCN Films, as
+Determined by RBS–ERDA
+
+.
+
+average
+composition (at %)
+
+Si
+
+O
+
+N
+
+C
+
+H
+
+SiCN-A
+
+22.8
+
+(0.2)
+
+19.7
+
+16.9
+
+40.4
+
+SiCN-B
+
+22.1
+
+(0.3)
+
+21.0
+
+15.6
+
+41.0
+
+Open in a new tab
+
+a
+The O value is below the lower limit
+of detection, thus it is for reference only.
+
+Figure 
+
+a shows
+the refractive index measurement results for the SiCN films, as obtained
+by ellipsometry. The results show that the refractive index of SiCN-B
+is lower than that of SiCN-A, suggesting the presence of void defects
+or more impurities such as water in SiCN-B than in SiCN-A.
+
+1.
+
+Open in a new tab
+
+(a) Refractive index measured by ellipsometry; (b) TDS
+spectra
+of degassed water from SiCN.
+TDS measurements were also carried out to obtain information about
+impurities. 
+Figure 
+
+b shows the results of water desorption measurements for SiCN films.
+The spectrum of SiCN-B exhibits a peak at ∼250 °C, and
+the spectra of both films show relatively larger peaks at ∼350
+°C compared with the peak in the spectrum of thermally grown
+SiO
+2
+ (Th–SiO
+2
+) in the previous report. The water desorption event near 250 °C
+corresponds to the direct desorption of moisture such as water vapor
+contained within the film, whereas the peak corresponding to 350 °C
+is associated with dehydration reactions occurring within the film.
+
+,
+
+The underlying reason for the disparity in detection between
+O
+and H
+2
+O in ERDA and TDS, respectively, can be attributed
+to the differing levels of adsorption or trapping of these elements
+within the SiCN film. The presence of H
+2
+O and OH, which
+exhibit weaker adsorption or trapping, renders them challenging to
+detect by ERDA. In contrast, elements that are strongly bound to each
+other, such as the film itself, are more readily detected. Consequently,
+these findings do not contradict each other, but rather provide complementary
+insights into the weakly trapped H
+2
+O in the SiCN film.
+3.2. Characterization of Bonding Strength and Interfacial
+Remaining Water by DCB
+
+The two of prepared SiCN-deposited
+wafers were bonded to each other via plasma activation. 
+Figure 
+
+a shows an image gained by
+scanning acoustic microscopy (SAM) of the SiCN-B wafer in its as-bonded
+condition; SiCN-A exhibited the same interface quality. The thermal
+stability of SiCN is consistent with that noted in previous reports.
+
+,,
+
+Figure 
+
+b shows the results of the bonding strength
+measurements on the laminated wafers treated at each of the investigated
+PBA temperatures. This result shows that the bonding strength of SiCN-B
+is higher than that of SiCN-A when PBA is conducted in the low-temperature
+region below 250 °C. The results also show that the bonding strength
+tends to be higher when N
+2
+ plasma is used than when O
+2
+ plasma is used. In particular, the bonding strength of SiCN-B
+wafers bonded using N
+2
+ plasma and subjected to PBA at 200
+°C is substantially greater than that of those treated under
+the same PBA conditions.
+
+2.
+
+Open in a new tab
+
+(a) SAM image of a Si wafer bonded with SiCN-B.
+(b) Bonding strength
+for each SiCN (A and B) and each process (O
+2
+ and N
+2
+ plasma activation).
+This higher bonding strength might be due to the properties of
+the SiCN-B film and the surface state formed by N
+2
+ plasma,
+which promotes bond formation at the interface. That is, the specific
+processing conditions can enable interfacial covalent bonds such as
+Si–O–Si to form with less energy. It should be important
+for achieving a high bonding strength at low temperatures. These conditions
+will be analyzed in greater detail in later sections. The slight decrease
+in bonding strength at PBA 300 °C on SiCN-B with N
+2
+ plasma and reverse with SiCN-A are thought to be due to the interface
+expansion caused by the growth of the interface oxide layer. It opposes
+the interfacial gap closure, because excessive heating energy can
+cause too much oxide growth, which adversely affects its bonding strength
+reported in the prior study. It is also
+conceivable that rise of O-related bonds may disturb interfacial covalent
+bonds. More detailed measurements are needed to determine these mechanisms.
+The important thing here is that this decline is not so problematic,
+because it is negligible and has been demonstrated to be no longer
+worse at elevated temperatures.
+
+We subsequently investigated
+the evolution of bonding strength
+over time to assess the remaining water at the interface. All of the
+measurements were conducted under anhydrous conditions; therefore,
+no water stress corrosion was caused by the air as the previous report. The detailed mechanism by which remaining water
+was detected (i.e., internal water stress corrosion) at the interface
+has been explained in our previous report. It is important to note of the assumption that less than 5% falls
+are within the 3σ error range, and the interfacial water consumption
+is completed from the point of compatibility with the high bonding
+strength. 
+Figure 
+
+ shows
+the results of the time-dependent bonding strength measurements for
+SiCN-A and SiCN-B bonded via N
+2
+ plasma activation and subjected
+to different PBA temperatures. 
+Figure 
+
+a shows that the attenuation of SiCN-A was 38.5% when
+PBA was conducted at 200 °C and 21.8% when PBA was conducted
+at 250 °C. However, the attenuation of SiCN-A was 2.75% when
+PBA was conducted 300 °C. 
+Figure 
+
+b shows that SiCN-B also exhibited a large attenuation
+of 32.2% after PBA at 200 °C. However, after PBA at 250 °C,
+the attenuation was almost negligible (1.30%). 
+Figure 
+
+c summarizes the bonding strength degradation
+rate after 180 s compared with that at 0 s for wafers bonded under
+various process conditions. When O
+2
+ plasma was used, the
+PBA temperature at which the bonding strength attenuation disappears
+increased for both films. Nevertheless, the bonding strength attenuation
+for SiCN-B was found to be eliminated at lower temperatures than that
+for SiCN-A even in this case. The bonding strength attenuation for
+SiCN-B was also found to be eliminated at lower temperatures than
+that for Th–SiO
+2
+. It appears that PBA at 250 °C
+in SiCN-A with O
+2
+ plasma may be more degraded than PBA200
+°C, but this is not the case. This is because the bonding strength
+is not high at PBA200 °C, and the reduction range of bonding
+strength is so small.
+
+3.
+
+Open in a new tab
+
+Time-dependent bonding strength results for (a) SiCN-A
+and (b)
+SiCN-B by DCB with N
+2
+ plasma at each PBA temperature; (c)
+degradation rate of bonding strength under each processing condition.
+The aforementioned results indicate that SiCN-B
+does not exhibit
+a decrease in bonding strength at lower temperatures. SiCN-B can consume
+the remaining water at the interface, consistent with the high bonding
+strength observed for SiCN-B at low temperatures in 
+Figure 
+
+b. This result is counterintuitive
+because SiCN-B contains more water than Th–SiO
+2
+.
+Conversely, the results suggest that there may be a dynamism that
+consumes a large amount of water. The higher interfacial water consumption
+capacity of SiCN-B compared with that of Th–SiO
+2
+ suggests that SiCN-B not only forms siloxane bonds via Si dangling
+bonds and annealing-induced water diffusion but also consumes water
+via SiCN-specific C dangling bonds. The mechanism of water consumption
+by SiCN is considered to play a prominent role.
+
+,
+
+ SiCN-A is considered to be inferior to SiCN-B with respect to its
+ability to consume water. The greater consumption of interfacial water
+by the N
+2
+-plasma-activated samples compared with the O
+2
+-plasma-activated samples indicates that the surface irradiated
+with N
+2
+ plasma differs from that treated with O
+2
+ plasma. For example, N-related bonds might be more likely to form
+interfacial bonds at lower temperatures or N
+2
+ plasma might
+create ideal surface conditions for interfacial water consumption.
+These consumption mechanisms will be discussed in subsequent sections;
+we focus here on SiCN-B. Therefore, more detailed investigations of
+SiCN-A and other films are needed to confirm the reproducibility of
+these interfacial conditions.
+3.3. Analysis
+of Prebonding Surface
+
+To
+investigate the properties regarding the water consumption mechanism,
+we used various measurements to characterize the film surfaces. 
+Figure 
+
+ shows the XPS spectra
+of the SiCN-B surface before and after plasma irradiation. Before
+plasma irradiation, Si–N and SiCO bonds in the SiCN film itself
+are dominant. However, SiO bonds are dominant after plasma irradiation,
+irrespective of the plasma irradiation conditions. A comparison of
+the plasma treatments confirms the presence of a large proportion
+of Si–N bonding as a result of the introduction of N by the
+N
+2
+ plasma, as well as a large proportion of SiCO bonds.
+
+4.
+
+Open in a new tab
+
+Surface
+conditions (a) before plasma treatment, (b) after O
+2
+ plasma
+treatment, and (c) after N
+2
+ plasma treatment
+of SiCN-B, as characterized by XPS.
+The aforementioned results indicate that plasma forms Si–OH
+active functional groups on the surface where composition-derived
+bonds exist before plasma irradiation. Plasma irradiation has been
+reported to not only activate functional groups but also introduce
+gas elements into the target. The introduction
+of O facilitates the formation of SiO
+2
+. N
+2
+ plasma
+contributes on the formation of Si–N bonds and more C-related
+bonds. Thus, the preirradiation state is likely to remain because
+of the use of N
+2
+, which is more inert than O
+2
+.
+
+−
+
+ More specifically, the introduction of nitrogen by N
+2
+ plasma increases Si–N bonds, and O
+2
+ plasma increases
+Si–O bonds. Furthermore, the inert nature of N
+2
+ plasma
+compared to the strong etching and oxidizing effects of O
+2
+ plasma is expected to result in milder surface alteration and maintain
+the carbon bonds in the film without removing them. As a result, N
+2
+ plasma creates a surface with more carbon-related surface
+bonds than O
+2
+ plasma.
+
+Figure 
+
+a shows
+the amount of dangling bonds in the SiCN-B film before and after the
+plasma treatments. The amount of dangling bonds per unit area increases
+similarly after irradiation with O
+2
+ and N
+2
+ plasma.
+Thus, the overall increase in the amount of active functional groups
+does not depend on the plasma species. In view of the XPS results
+in 
+Figure 
+
+, we reasonably
+assumed that a larger proportion of the total active functional groups
+is N- and C-related in the case of N
+2
+-plasma-treated SiCN-B
+than in the case of O
+2
+-plasma-treated SiCN-B. From this
+viewpoint, even if the total amount of dangling bonds after each plasma
+treatment is the same, the proportion of the functional groups responsible
+for the dangling bonds may change. Thus, differences in composition
+can occur in the region of a few nanometers of plasma action even
+if the overall composition of the film does not change. This measurement
+could not take care of Queue time, so this compares the change on
+the amount of dangling bonds in the film depending on the plasma conditions.
+
+5.
+
+Open in a new tab
+
+(a) The
+number of dangling bonds in SiCN-B before/after plasma
+activation, as determined by electron-spin resonance. (b) S-parameter
+of atomic-level vacancies in SiCN-A and SiCN-B before/after N
+2
+ plasma activation, as characterized by positron annihilation
+spectroscopy.
+The results of PAS measurements
+of the atomic vacancy defects in
+SiCN films before and after N
+2
+ plasma irradiation are shown
+in 
+Figure 
+
+b. In general,
+a higher 
+S
+-value indicates larger or more abundant
+atomic vacancy defects in a film.
+
+,
+
+ In addition,
+a factor in the case of low 
+S
+-values is the impurities
+such as water filling the defects.
+
+Figure 
+
+b shows that, before
+plasma irradiation, SiCN-B had a larger 
+S
+-value than
+SiCN-A in the topmost few nanometers of the surface and a smaller 
+S
+-value in the bulk region. After plasma irradiation, the
+relationship remained unchanged, although N
+2
+ plasma irradiation
+resulted in smaller 
+S
+-values in the subsurface region.
+The 
+S
+ value of the topmost surface is lowered by
+the plasma because the active dangling bonds formed on the surface
+tend to cause annihilation in the middle of the road, and the annihilation
+under the topmost surface is easily reduced as same as the previous
+report. Therefore, the defects are considered
+to increase at the subsurface after plasma activation.
+
+The aforementioned
+results indicate that the SiCN-B film contains
+more atomic defects than the SiCN-A film starting from the deposition
+step. The TDS measurements show that SiCN-A exhibits almost no water
+desorption below 250 °C, whereas SiCN-B shows substantial water
+desorption. On the basis of these results, we speculated that the
+bulk region contains a large amount of water, which is why fewer defects
+are detected in the bulk region. On the topmost surface, defects are
+thought to appear because of the spontaneous desorption of water.
+This interpretation supports the existence of state differences in
+the topmost surface area, as noted in the discussion of the results
+in 
+Figure 
+
+. Si and
+C dangling bonds are known to be reactive toward water-based substances
+that normally exist in films of dielectrics such as SiO
+2
+ and SiCN.
+
+,,
+
+ Thus, C dangling bonds, which might be more abundant near the topmost
+surface in SiCN-B, may contribute to the dynamics that consume water
+at the bonding interface.
+3.4. Analysis of Bonding Interface
+
+To
+clarify the interfacial water consumption mechanism of SiCN-B, we
+analyzed the bonding interface. 
+Figure 
+
+ shows the results of PAS measurements of the bonding
+interface. The 
+S
+ value of SiCN-A rises to the bulk 
+S
+ value as a monolayer film and then gradually decreases
+under the influence of the Si substrate. The overall 
+S
+ value of SiCN-A is larger than that of SiCN-B at the same PBA temperature,
+which is consistent with the results of surface PAS analysis in 
+Figure 
+
+b. On the other hand,
+the interfacial 
+S
+-value of SiCN-A is higher than
+SiCN-B at PBA 250 °C, even if the interface is formed by the
+top-surface with less vacancies from surface PAS measurement. In other
+words, the interfacial 
+S
+-value of SiCN-B is lower
+than SiCN-A, possibly due to its potential of much dangling bonds
+from the top-surface of SiCN-B. Regarding SiCN-B, there is a relatively
+steep upward trend toward the interface at 200 °C, but the trend
+becomes more gradual with increasing temperature. The overall value
+increases with annealing at higher temperatures, which is consistently
+attributed to diffusion and desorption of water or impurities from
+the bonding film.
+
+6.
+
+Open in a new tab
+
+PAS results for a bonded
+wafer with SiCN films activated by N
+2
+ plasma treatment
+and subjected to PBA at 250 °C.
+The lower 
+S
+-value indicates
+that fewer vacancies are present.
+
+,
+
+ In view of 
+Figure 
+
+, the lower 
+S
+ value at the SiCN-B interface relative to SiCN-A can be
+attributed to the reduction of defects at the interface due to bond
+formation and water consumption by dangling bonds. However, 
+Figure 
+
+b shows that dangling
+bonds at the topmost surface of SiCN-B are more abundant than those
+of SiCN-A. Therefore, there must be factors that facilitate interfacial
+bond formation and water consumption more than those of SiCN-A in
+the interface formation. It is possible that the proportion of dangling
+bond-bearing elements present in SiCN-B is not normal Si, but rather,
+for example, more C dangling bonds. This is not the elemental composition,
+but the proportion of elements that expose dangling bonds, which is
+not contractional with the results of ERDA. In the case of SiCN-B,
+a large amount of C dangling bonds and water molecules are thought
+to react to form a dense interfacial layer, which is evened more at
+higher temperatures such as 430 °C. On the other hand, the 
+S
+ value of the interface in SiCN-A is higher than that in
+SiCN-B, suggesting that the interface formation is not completed and
+that water byproducts are still generated. This is because the low 
+S
+ value on the subsurface in SiCN-A with N
+2
+ plasma
+from 
+Figure 
+
+b suggests
+that the water-consuming groups, represented by the carbon dangling
+bonds, are less likely to be present at the interface.
+
+From these, we can say that dangling bonds are very functional
+in consuming water at the interface and that their type is important.
+However, it is difficult to define the type of dangling bonds and
+their states at this point, so they will be discussed in the subsequent
+interfacial analysis. Please note that the analysis concentrates on
+SiCN-B. Therefore, a detailed interface analysis for all conditions
+is necessary to make the same statements.
+
+TEM and EELS results
+for the bonding interface of SiCN-B using
+O
+2
+ and N
+2
+ plasma are shown in 
+Figure 
+
+. 
+Figure 
+
+a shows that the bonding interface formed
+by O
+2
+ plasma consists solely of SiO. By contrast, the interface
+formed by N
+2
+ plasma consists of an SiCO layer a few nanometers
+thick between SiO layers. This SiCO layer is unique to this processing
+condition; it was not observed in a prior study.
+
+,
+
+ Thus,
+this unique interface can be derived from SiCN-B film properties,
+such as surface composition or etc. Compared with the C−K EELS
+spectrum of the SiCN bulk (
+d
+ = 0.00 nm) layer, a
+distinct shoulder is observed at ∼285 eV in the spectrum corresponding
+to the SiCO bonding interface (
+d
+ = 15.78 nm). These
+regions exhibit a greater contribution from π*-bonding, whereas
+the bulk peak at ∼292 eV is from σ*-bonding. Furthermore,
+the presence of peaks at 285–288 eV can be observed, which
+are indicative of C–OH and C–O–C functional groups. Also, there is almost no spectrum at the SiO
+layer region (
+d
+ = 14.28 nm), where C itself is not
+present, consistent with the results of 
+Figure 
+
+b. The EELS spectrum of the interface on
+SiCN-B with O
+2
+ plasma is not shown because the C–K
+peak did not appear due to the absence of carbon at the interface.
+
+7.
+
+Open in a new tab
+
+Cross-sectional
+image of the bonding interface with SiCN-B and
+a composition map of the bonding interface after PBA at 250 °C
+using (a) O
+2
+ plasma and (b) N
+2
+ plasma. (c) EELS
+spectra of the bonding interface formed with SiCN-B under the conditions
+corresponding to subfigure b.
+Given the results of the aforementioned analyses, the SiCO layer
+is formed at the interface when the SiCN-B-specific near-surface C
+dangling bonds are retained after the N
+2
+ plasma treatment
+and bonded together. Therefore, C dangling bonds can react with water
+at lower activation energies than Si dangling bonds. As illustrated in 
+Figure 
+
+b, the C–OH and C–O–C peaks at
+the SiCO interface are of particular significance, as they provide
+compelling evidence that the C dangling bond is instrumental in both
+the reaction with water and the formation of interfacial covalent
+bonds. On the other hand, there are other possibilities, such as C
+dangling bonds being not suitable for water but for H
+2
+.
+
+,
+
+ This property may lead to the completion of interfacial bonding
+and water consumption at lower temperatures. In this case, Si dangling
+bonds may require higher temperatures to form an interface with the
+SiO-dominant top surface after the O
+2
+ plasma treatment.
+In addition, according to the EELS results from the reference C–K
+spectra, the structure of bulk SiCN is more like that of diamond,
+whereas the structure of the interface is similar to that of graphite
+carbon. This indicates that more dangling
+bonds would be present at a certain layer interface. Thus, these dangling
+bonds might function as active sites to consume water. In other words,
+not only C dangling bonds but also a unique layer interface characteristic
+was found to be one element governing the ability to consume remaining
+water around the bonding interface. Furthermore, π* bondings
+can be CC, etc., and it is thought that carbon bonding as
+well as conventional water-mediated bonding at the interface is relevant
+for interface formation. This may contribute to increased bonding
+strength at low temperatures and high resistance against internal
+water stress corrosion. In addition, interfacial water can diffuse
+to the film bulk region. SiCN-B-derived
+C dangling bonds remain around the interface after the O
+2
+ plasma treatment, which may require higher-temperature PBA to provide
+sufficient energy for water molecules to diffuse out of the interface
+and react with the C dangling bonds. To clarify these dynamics, a
+deeper investigation of the role of each type of dangling bond at
+different depths from the wafer bonding interface is critical.
+
+To further analyze the interface bonding state, we conducted postdebonding
+XPS measurements (
+Figure 
+
+). Delamination was carried out in a glovebox, and the sample
+was transferred to the XPS instrument using a transfer vessel to avoid
+exposing the revealed interface to air. The bonding in samples treated
+with N
+2
+ plasma is still related to carbon, whereas SiO
+2
+ accounts for a large proportion of the bonding in the samples
+treated with O
+2
+ plasma. The samples treated with N
+2
+ plasma also contain many nitrogen-derived Si–N bonds.
+
+8.
+
+Open in a new tab
+
+XPS spectra
+after debonding of the SiCN-B bonded interface after
+PBA at 250 °C for samples prepared using O
+2
+ plasma
+[(a) Si
+2p
+ and (b) O
+1s
+ spectra] and N
+2
+ plasma [(c) Si
+2p
+ and (d) O
+1s
+ spectra].
+On the basis of the aforementioned results, SiO,
+SiN, and SiC (C)-mediated
+bonds may exist at the SiCN-B bonded interface in the N
+2
+ plasma-treated samples. In addition, more of the CO bonds are likely
+to be C–O–C bonds formed by the C dangling bonds consuming
+a large amount of water. These results support the previous results
+related to the interfacial water consumption mechanism associated
+with the combination of SiCN-B and a N
+2
+ plasma treatment.
+Another possibility is that the C–C bonds may have been broken,
+resulting in the appearance of CO bonds. Moreover, the presence of
+a small number of Si–N bonds may be due to the introduction
+of N by the N
+2
+ plasma; N
+2
+ is more inert than
+O
+2
+ and therefore less likely to be involved in interfacial
+bonding. However, further investigations are needed to clarify the
+effect of N-related bonding.
+
+A schematic of the bonding mechanism
+deduced from the results of
+this study is shown in 
+Figure 
+
+. In SiCN-B, subsurface C dangling bonds are retained after
+the N
+2
+ plasma treatment. After this bonding process, the
+SiCO layer is formed by interfacial bonding and water consumption
+during annealing at low temperatures. By this mechanism, the maximum
+bonding strength is achieved at lower temperatures and the interfacial
+water is consumed. Finally, the mechanism that achieves a highly reliable
+bonding interface without bonding strength decay has been clarified.
+However, a detailed analysis of the reproducibility of these formed
+interfacial layers and the bonding interfaces of other films is essential
+to verify the same statements.
+
+9.
+
+Open in a new tab
+
+A schematic of the mechanism of interface
+formation with SiCN-B
+under O
+2
+/N
+2
+ plasma.
+4. Conclusions
+
+In summary, plasma-activated
+wafer bonding with SiCN was carried
+out for high-quality bonding with low-temperature annealing. Compared
+with the SiCN-A film, the SiCN-B film with a high surface defect density
+exhibited higher bonding strength and superior interfacial water consumption
+at lower temperatures. We also found that, compared with O
+2
+ plasma, N
+2
+ plasma produced a more ideal surface and interface
+state with more C dangling bonds. This result suggests that the functional
+groups related to the C dangling bonds react with a large amount of
+water and form covalent bonds at the bonding interface at low temperatures
+to create a dense SiCO layer. In the future, the formation process
+and reproducibility of this interfacial layer should be studied in
+greater detail, along with other processing conditions.
+Acknowledgments
+
+This work was supported by the JSPS KAKENHI
+Grant
+Number 23K26388 and the JST PRESTO Grant Number JPMJPR22B3, Japan.
+We gratefully acknowledge the Toray Research Center for their expert
+support in the accurate acquisition and interpretation of TEM-EELS
+data, which significantly contributed to the interfacial analysis
+conducted in this work.
+H.K. and R.S.
+conducted most of the evaluations, measurements, and considerations
+for this study. S.E. contributed to the XPS analysis of this study
+specifically. A.N. and C.A. prepared samples and managed process experiments.
+Y.K. and J.K. supervised process procedures. A.U. performed PAS measurements
+and provided meaningful advice. F.I. supervised all procedures regarding
+this study.
+The authors
+declare no competing financial interest.
+References
+
+Sherwood, T.
+; 
+Patlolla, R.
+; 
+McIntyre, D.
+; 
+Sekine, T.
+; 
+Sreenivasan, R.
+; 
+Jeon, Y.
+; 
+Ley, R.
+; 
+Probst, G.
+; 
+Appell, J.
+; 
+Prakash, A.
+; 
+Gorchichko, M.
+; 
+Weis, B.
+. 
+300 nm Pitch W2W HBI for CFET and 3D DRAM Through
+Module Co-optimization; Proc. 2024 IEEE 74th
+Electron. Compon. Technol. Conf. (ECTC), Denver,
+CO, USA, May 28–31, 2024; pp 1968–1972. 10.1109/ECTC51529.2024.00334.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Hafez, W.
+; 
+Agnihotri, P.
+; 
+Asoro, M.
+; 
+Bains, B.
+; 
+Bambery, R.
+; 
+Bapna, M.
+; 
+Barik, A.
+; 
+Chatterjee, A.
+; 
+Chiu, P. C.
+; 
+Chu, T.
+; 
+Firby, C.
+; 
+Fisher, K.
+; 
+Fradkin, M.
+; et al. 
+Intel PowerVia Technology: Backside Power Delivery for High Density
+and High-Performance Computing. In Proc. 2023
+IEEE Symp. VLSI Technol. Circuits, Kyoto,
+Japan, June 12–16, 2023; pp 1–2. 10.23919/VLSITechnologyandCir57934.2023.10185208.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Mao, H.
+; 
+Xu, H.
+; 
+Zhang, S.
+; 
+Dai, Y.
+; 
+Cai, Z.
+; 
+Zeng, L.
+. 
+Effects of 2.5D/3D Stacking Structure on Signal Integrity
+of Chiplet
+Interconnection; Proc. 2024 25th Int. Conf.
+Electron. Packag. Technol. (ICEPT), Tianjin,
+China, August 12–15, 2024; pp 1–5. 10.1109/ICEPT63120.2024.10668609.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Ma, K.
+; 
+Bekiaris, N.
+; 
+Ramaswami, S.
+; 
+Ding, T.
+; 
+Probst, G.
+; 
+Burffraf, J.
+; 
+Uhrmann, T.
+. 
+0.5 μm Pitch
+Wafer-to-Wafer
+Hybrid Bonding with SiCN Bonding Interface for Advanced Memory; Proc. 2023 73rd IEEE Electron. Compon. Technol. Conf. (ECTC), Orlando, FL, USA, May 30–June
+2, 2023; pp 1110–1114. 10.1109/ECTC51909.2023.00190.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Sherwood, T.
+; 
+Patlolla, R.
+; 
+Salfelder, J.
+; 
+Kasbauer, T.
+; 
+Sreenivasan, R.
+; 
+Li, K.
+; 
+Ley, R.
+; 
+Probst, G.
+; 
+Appell, J.
+; 
+Ahn, K. C.
+; 
+Gorchichko, M.
+; 
+Uhrmann, T.
+. 
+Aggressive Pitch Scaling (sub-0.5
+μm) of W2W Hybrid Bonding Through Process Innovations. In Proc. 2023 73rd IEEE Electron. Compon. Technol. Conf.
+(ECTC), Orlando, FL, USA,
+May 30–June 2, 2023; pp 13–18. 10.1109/ECTC51909.2023.00010.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Kumar, N.
+; 
+Chen, Y.
+; 
+Sankatali, V.
+; 
+Mishra, S.
+; 
+Gupta, A.
+; 
+Singh, P.
+; 
+Catthoor, F.
+; 
+Myers, J.
+; 
+Ryckaert, J.
+; 
+Biswas, D.
+. 
+Thermal Insights into 3D Packaging
+of a High-Performance Server SoC
+in Advanced Nanosheet Technology. Proc. 2024
+IEEE Eur. Solid-State Electron. Res. Conf. (ESSERC), Bruges, Belgium:  March 6–8, 2024, 337–340. 10.1109/ESSERC62670.2024.10719443.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Xie, F.
+; 
+Chen, R.
+; 
+Wei, T.
+. 
+Thermal Mitigation Strategy
+for Backside
+Power Delivery Network. In Proc. 2024 IEEE
+74th Electron. Compon. Technol. Conf. (ECTC), Denver, CO, USA, May 28–31, 2024; pp 1485–1492. 10.1109/ECTC51529.2024.00241.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Fournel F., Martin-Cocher C., Radisson D., Larrey V., Beche E., Morales C., Delean P. A., Rieutord F., Moriceau H.. Water Stress
+Corrosion in Bonded Structures. ECS J. Solid
+State Sci. Technol. 2015;4:124–130. doi: 10.1149/2.0031505jss.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Inoue F., Peng L., Iacovo S., Phommahaxay A., Verdonck P., Meersschaut J., Dara P., Sleeckx E., Miller A., Beyer G., Beyne E.. Influence of Composition
+of SiCN as Interfacial Layer on Plasma Activated Direct Bonding. ECS J. Solid State Sci. Technol. 2019;8:P346–P350. doi: 10.1149/2.0241906jss.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Nagano F., Inoue F., Phommahaxay A., Peng L., Chancerel F., Naser H., Beyer G., Uedono A., Beyne E., De Gendt S., Iacovo S.. Origin of Voids at the SiO2/SiO2 and SiCN/SiCN Bonding Interface Using Positron Annihilation
+Spectroscopy and Electron Spin Resonance. ECS
+J. Solid State Sci. Technol. 2023;12:033002. doi: 10.1149/2162-8777/acbe18.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Ueda, T.
+; 
+Tetani, M.
+; 
+Morinaga, Y.
+; 
+Hamada, M.
+; 
+Takeuchi, M.
+; 
+Ichinose, K.
+; 
+Uya, S.
+; 
+Yano, H.
+; 
+Sato, N.
+; 
+Matsumoto, S.
+. 
+A Novel Role for SiCN to Suppress
+H
+2
+O
+Outgas from TEOS Oxide Films in Hybrid Bonding. In 2017 IEEE International Interconnect Technology Conference (IITC), Hsinchu, Taiwan, June 5–7, 2017; pp 1–3. 10.1109/IITC-AMC.2017.7968945.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Ma, K.
+; 
+Bekiaris, N.
+; 
+Hsu, C.
+H.
+; 
+Xue, L.
+; 
+Ramaswami, S.
+; 
+Ding, T.
+; 
+Probst, G.
+; 
+Wernicke, T.
+; 
+Uhrmann, T.
+; 
+Wimplinger, M.
+. 
+0.5 μm Pitch Wafer-to-Wafer
+Hybrid Bonding at Low Temperatures with SiCN Bond Layer; 2024 IEEE 74th Electronic Components and Technology Conference
+(ECTC): Denver, CO, USA, May
+28–31, 2024; pp 331–336. 10.1109/ECTC51529.2024.00061.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Ebiko, S.
+; 
+Iacovo, S.
+; 
+Chew, S.
+A.
+; 
+Zhang, B.
+; 
+Uedono, A.
+; 
+Inoue, F.
+. 
+Exploring Bonding Mechanism of SiCN
+for Hybrid Bonding; 2024 IEEE 74th Electronic
+Components and Technology Conference (ECTC): Denver, CO, USA, May 28–31, 2024; pp 1953–1957. 10.1109/ECTC51529.2024.00331.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Inoue, F.
+; 
+Nagata, A.
+; 
+Fuse, J.
+; 
+Ebiko, S.
+; 
+Sato, R.
+; 
+Saito, K.
+; 
+Kondo, Y.
+; 
+Kawauchi, T.
+; 
+Park, J.
+; 
+Ahn, C.
+; 
+Kim, M.
+; 
+Kang, J.
+. 
+Low Temperature Wafer Level
+Hybrid Bonding Enabled
+by Advanced SiCN and Surface Activation; 2024
+IEEE 74th Electronic Components and Technology Conference (ECTC): Denver, CO, USA, May 28–31, 2024; pp 69–75. 10.1109/ECTC51529.2024.00020.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Yang Y., Brun X. F., Weber M. H., Flores M.. Quantification
+of Interfacial
+Voids Using Positron Annihilation Spectroscopy for Mechanism Study
+on SiCN Bonding and SiN Bonding. ECS J. Solid
+State Sci. Technol. 2024;13:113002. doi: 10.1149/2162-8777/ad8c82.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Vedam K., So S. S.. Characterization
+of real surfaces by ellipsometry. Surf. Sci. 1972;29:379–395. doi: 10.1016/0039-6028(72)90226-9.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Sometani M., Hasunuma R., Ogino M., Kuribayashi H., Sugahara Y., Uedono A., Yamabe K.. Variation
+of Chemical
+Vapor Deposited SiO2 Density Due to Generation and Shrinkage
+of Open Space During Thermal Annealing. Jpn.
+J. Appl. Phys. 2012;51:021101. doi: 10.1143/JJAP.51.021101.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Vereecke G., Kondoh E., Richardson P., Maex K., Heyns M. M.. Wafer thermal
+desorption spectrometry in a rapid thermal processor using atmospheric
+pressure ionization mass spectrometry. IEEE
+Trans. Semicond. Manuf. 2000;13:315–321. doi: 10.1109/66.857942.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Fournel F., Continni L., Morales C., Da Fonseca J., Moriceau H., Rieutord F., Barthelemy A., Radu I.. Measurement of bonding energy in an anhydrous nitrogen atmosphere
+and its application to silicon direct bonding technology. J. Appl. Phys. 2012;111:104907. doi: 10.1063/1.4716030.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Kitagawa, H.
+; 
+Sato, R.
+; 
+Fuse, J.
+; 
+Yoshihara, Y.
+; 
+Inoue, F.
+. 
+Characterization
+of Carbon Contained Films at Bonding
+Interface for the Application of Backside Power Delivery Networks. In 2024 IEEE 26th Electronics Packaging Technology Conference
+(EPTC), Singapore, 2024; . 10.1109/EPTC62800.2024.10909864.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Peng, L.
+; et al. 
+Investigation of Paramagnetic Defects in SiCN
+and SiCO-based Wafer
+Bonding. In 2020 IEEE 22nd Electronics Packaging
+Technology Conference (EPTC), Singapore, 2020; pp 464–467. 10.1109/EPTC50525.2020.9315054.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Futako W., Umeda T., Nishizawa M., Yasuda T., Isoya J., Yamasaki S.. In situ ESR observation
+of interface dangling bond
+formation processes during amorphous SiO2 growth on Si. J. Non-Cryst. Solids. 2002;299–302:575–578. doi: 10.1016/S0022-3093(01)00964-4.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Krause-Rehberg, R.
+; 
+Leipner, H. S.
+. 
+Positron
+Annihilation in Semiconductors: Defect Studies. In Springer Series in Solid-State Sciences; Springer; Berlin, 1999; p 127. 10.1007/978-3-662-03893-2
+
+ [
+DOI
+] [
+Google Scholar
+]
+
+Uedono A., Wei L., Tanigawa S., Suzuki R., Ohgaki H., Mikado T., Kawano T., Ohji Y.. Positronium formation in SiO2 films grown on Si substrates
+studied by monoenergetic positron
+beams. J. Appl. Phys. 1994;75:3822–3828. doi: 10.1063/1.356059.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Papworth A. J., Kiely C., Burden A. P., Silva S. R., Amaratunga G.. Electron-energy-loss
+spectroscopy characterization of the sp2 bonding fraction
+within carbon thin films. Phys. Rev. B. 2000;62:12628. doi: 10.1103/PhysRevB.62.12628.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Onishi K., Kitagawa H., Teranishi S., Uedono A., Inoue F.. Temporary
+Direct Bonding by Low Temperature Deposited SiO2 for Chiplet
+Applications. ACS Appl. Electron. Mater. 2024;6:2449–2456. doi: 10.1021/acsaelm.4c00114.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Iwata T., Fuse J., Yoshihara Y., Kondo Y., Sano M., Inoue F.. Water Stress Corrosion
+at Wafer Bonding Interface During Bond Strength
+Evaluation. Mater. Sci. Semicond. Process. 2024;184:108820. doi: 10.1016/j.mssp.2024.108820.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Qiu Z., Yang X., Du C.. The Applications of Plasma Gas Injection
+for Pollutants Treatment. IEEE Trans. Plasma
+Sci. 2022;50:1999–2009. doi: 10.1109/TPS.2022.3177754.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Guerra V., Tejero-del-Caz A., Pintassilgo C. D., Alves L. L.. Modelling N2–O2 plasmas: volume and surface kinetics. Plasma Sources Sci. Technol. 2019;28:073001. doi: 10.1088/1361-6595/ab252c.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Kim J.-J., Park H.-H., Hyun S.-H.. The evolution
+of microstructure and
+surface bonding in SiO2 aerogel film after plasma treatment
+using O2, N2, and H2 gases. Thin Solid Films. 2001;384:236–242. doi: 10.1016/S0040-6090(00)01827-7.
+ [
+DOI
+] [
+Google Scholar
+]
+
+You Y.-B., Lee Y.-S., Kim S.-J., Cho C.-H., Seong I.-H., Jeong W.-N., Choi M.-S., You S.-J.. Influence of Additive
+N2 on O2 Plasma Ashing Process in Inductively
+Coupled Plasma. Nanomaterials. 2022;12:3798. doi: 10.3390/nano12213798.
+ [
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+
+Stengl R., Tan T., Gosele U.. A Model for the Silicon Wafer Bonding Process. Jpn. J. Appl. Phys. 1989;28:1735–1741. doi: 10.1143/JJAP.28.1735.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Lee R.-J., He P.-S., Tran D.-P., Chiu W.-L., Chang H.-H., Lee C.-C., Chen C.. Surface modification of nanotwinned
+copper and SiCN using N2 and Ar plasma activation. Appl. Surf. Sci. 2025;684:161832. doi: 10.1016/j.apsusc.2024.161832.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Pelaez-Fernandez M., Bermejo A., Benito A. M., Maser W. K., Arenal R.. Detailed thermal
+reduction analyses of Graphene Oxide via in-situ TEM/EELS studies. Carbon. 2021;178:477–487. doi: 10.1016/j.carbon.2021.03.018.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Lannoo M.. The role of
+dangling bonds in the properties of surfaces and interfaces of semiconductors. Revue de Physique Appliquée. 1990;25:887–894. doi: 10.1051/rphysap:01990002509088700.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Plach T., Hingerl K., Tollabimazraehno S., Hesser G., Dragoi V., Wimplinger M.. Mechanisms
+for room temperature direct wafer bonding. J.
+Appl. Phys. 2013;113:093701. doi: 10.1063/1.4794319.
+ [
+DOI
+] [
+Google Scholar
+]
+
+Articles from ACS Omega are provided here courtesy of 
+American Chemical Society
+
+ACTIONS
+
+View on publisher site
+
+PDF (7.6 MB)
+
+Cite
+
+Collections
+
+Permalink
+
+PERMALINK
+
+Copy
+
+RESOURCES
+
+                            Similar articles
+
+                             Cited by other articles
+
+                                 Links to NCBI Databases
+
+Cite
+
+Copy
+
+Download .nbib
+
+.nbib
+
+Format:
+
+        AMA
+
+        APA
+
+        MLA
+
+        NLM
+
+Add to Collections
+
+Create a new collection
+
+Add to an existing collection
+
+                Name your collection
+
+*
+
+                Choose a collection
+
+                Unable to load your collection due to an error
+
+Please try again
+
+          Add
+
+          Cancel
+
+                Follow NCBI
+
+NCBI on X (formerly known as Twitter)
+
+NCBI on Facebook
+
+NCBI on LinkedIn
+
+NCBI on GitHub
+
+NCBI RSS feed
+
+                            Connect with NLM
+
+NLM on X (formerly known as Twitter)
+
+NLM on Facebook
+
+NLM on YouTube
+
+National Library of Medicine
+
+ 8600 Rockville Pike
+ Bethesda, MD 20894
+
+            Web Policies
+
+            FOIA
+
+            HHS Vulnerability Disclosure
+
+            Help
+
+            Accessibility
+
+            Careers
+
+            NLM
+
+            NIH
+
+            HHS
+
+            USA.gov
+
+Back to Top
+

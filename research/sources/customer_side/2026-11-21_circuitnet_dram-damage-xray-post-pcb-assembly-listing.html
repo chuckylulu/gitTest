@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DRAM damage due to X-Ray Inspections Post PCB Assembly</title>
+	<meta name="description" content="Technical Paper">
+	<meta name="keywords" content="This paper outlines several mitigation strategies for minimizing radiation dosage during X-ray inspections, particularly in the context of printed circuit">
+	
+	<!-- Required to eliminate shadow below player -->	
+	<link rel="stylesheet" type="text/css" href="https://vjs.zencdn.net/7.8.3/video-js.css">
+	<!-- Required to eliminate shadow below player -->
+
+	<link rel="stylesheet" type="text/css" href="/styles/circuitnet-main.css?v=250210">
+
+		<link rel="stylesheet" type="text/css" href="/styles/circuitnet-video-overlay-4x3.css?v=200707">
+	
+	
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://vjs.zencdn.net/7.0/video.min.js"></script>
+	<script src="/scripts/videojs-overlay.min.js"></script>
+			
+	<!-- Correction for IE control bar -->
+	<style>
+    	@media all and (-ms-high-contrast:none)
+    	 {
+     	.video-js .vjs-control-bar  { height: 6em !important; }
+    	 *::-ms-backdrop, .video-js .vjs-control-bar  { height: 6em !important; }
+	 }
+  	</style>
+	<!-- Correction for IE control bar -->
+
+	
+</head>
+<body class="body">
+
+<div class="outer-container">
+
+<!-- Start Outer Table -->
+<table style="border-collapse:collapse; background-color:#FFFFFF;" class="outer-header-table">
+<tr>
+<td style="padding:5px;">
+
+	<!-- Header -->
+	<div style="background-color:#FFFFFF;" class="header-table">
+	
+	<table style="border-collapse:collapse; width:100%;">
+	<tr>
+	<td style="text-align:left; vertical-align:bottom; width:100%; padding-bottom:15px;">
+			
+		<table style="border-collapse:collapse; vertical-align:bottom; float:left;">
+		<tr>
+		<td style="vertical-align:bottom; padding-top:20px; font-family:Verdana,Geneva,sans-serif; font-size:48px; font-weight:bold; border-bottom:4px solid #808080; padding-bottom:5px;">
+		<a href="https://www.circuitnet.com/index.html"><span style="color:#0C8278; text-decoration:none;">circuitnet</span></a>
+		</td>
+		</tr>
+		</table>
+		
+		<table style="border-collapse:collapse;" class="nav-links">
+		<tr>
+		<td style="vertical-align:bottom;">
+		<div class="tagline">Electronics Manufacturing and Assembly News</div><br>
+		<div class="nav-hide"><a href="https://www.circuitnet.com/web/subscribe.html"><b>SUBSCRIBE</b></a></div>
+		<div class="nav-show"><a href="https://www.circuitnet.com/web/search.html"><b>SEARCH</b></a></div>
+		<div class="nav-show"><a href="https://www.circuitnet.com/papers/papers.html"><b>PAPERS</b></a></div>
+		<div class="nav-show"><a href="https://www.circuitnet.com/web/news.html"><b>NEWS</b></a></div>
+		<div class="nav-show"><a href="https://www.circuitnet.com/web/experts.html"><b>EXPERTS</b></a></div>
+		<div class="nav-hide"><a href="https://www.circuitnet.com/index.html"><b>HOME</b></a></div>
+		</td>
+		</tr>
+		</table>
+
+	</td>
+	</tr>
+	</table>
+	<!-- End Navigation -->
+
+</div>
+	<!-- Header -->
+
+</td>
+</tr>
+</table>
+
+<div class="outer-table-container">
+
+<table style="border-collapse:collapse;" class="outer-table">
+<tr>
+<td style="padding:5px;">
+
+	<!-- Start Main Section -->
+	<div class="main-table">
+		
+		<!-- Start Column Left -->
+		<div class="column-left">
+			
+			<table style="border-collapse:collapse; width:100%; margin-bottom:20px;">
+			<tr>
+			<td style="vertical-align:top; text-align:left;">
+			<table style="width:100%; border-collapse:collapse;">
+<tr>
+<td style="text-align:left; font-family:Verdana,Geneva,sans-serif; font-size:13px; line-height:18px;">
+		<table style="margin-left:5px; float:right;" align="right">
+		<tr><td style="padding:3px; vertical-align:top; text-align:center; font-size:11px; color:#333333;"><i>Sponsor</i></td></tr>
+		<tr><td style="padding:3px; vertical-align:top; border:1px solid #C0C0C0;">
+		<a href="https://www.circuitnet.com/sponsor/Uyemura-Circuitnet-14660T.html" target="_blank">
+				<img src="https://www.circuitnet.com/media/2/Uyemura_circuitnet_Plating_70x55.jpg" border="0" width="70" height="55" style="display:block; width:70px; height:55px;" alt="Uyemura">
+		
+				
+		</a></td></tr>
+		</table>
+<br>
+<a href="https://www.circuitnet.com/sponsor/Uyemura-Circuitnet-14660T.html" target="_blank"><b>Dedicated Tool for Process Development</b></a><br>
+Advanced plating capability at Uyemura Tech Center: Process Development, UBM, pilot production. ENIG, ENEPIG, EPIG/EPAG, RAIG immersion gold; all substrates. On-site analysis.<br>
+<b>Uyemura</b>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+			</td>
+			</tr>
+			</table>			
+	
+			<table style="width:160px; margin:0 auto; border-collapse:collapse; margin-bottom:20px; ">
+			<tr>
+			<td style="padding:3px; border:1px solid #CCCCCC;">			
+			
+
+
+
+<a href="https://www.circuitnet.com/sponsor/EOS-ESDA-Association-Circuitnet-15264B.html" target="_blank">
+		<img src="https://www.circuitnet.com/images/1/1782263379_328.jpg" border="0" width="160" height="300" style="display:block; width:160px; height:300px;" alt="EOS-ESDA-Association">
+	
+		
+</a>
+
+
+
+
+
+
+
+
+			</td>
+			</tr>
+			</table>
+			
+			<table style="margin-bottom:20px; width:100%; border-collapse:collapse;">
+			<tr>
+			<td style="vertical-align:top; text-align:left;">
+			<table style="width:100%; border-collapse:collapse;">
+<tr>
+<td style="text-align:left; font-family:Verdana,Geneva,sans-serif; font-size:13px; line-height:18px;">
+		<table style="margin-left:5px; float:right;" align="right">
+		<tr><td style="padding:3px; vertical-align:top; text-align:center; font-size:11px; color:#333333;"><i>Sponsor</i></td></tr>
+		<tr><td style="padding:3px; vertical-align:top; border:1px solid #C0C0C0;">
+		<a href="https://www.circuitnet.com/sponsor/Master-Bond-Circuit-Insight-13733T.html" target="_blank">
+		
+					
+						<img src="https://www.circuitnet.com/media/2/MasterBond_EP5TC-80_1.jpg" border="0" width="70" height="55" style="display:block; width:70px; height:55px;" alt="Master-Bond">
+			
+		
+		</a></td></tr>
+		</table>
+<br>
+<a href="https://www.circuitnet.com/sponsor/Master-Bond-Circuit-Insight-13733T.html" target="_blank"><b>Epoxy Offers Ultra High Heat Transfer</b></a><br>
+ Bond EP5TC-80 is a NASA low outgassing rated epoxy that achieves a thermal conductivity of 3.3-3.7 W/(m·K), while also retaining its electrical non-conductivity.<br>
+<b>Master Bond</b>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+			
+			</td>
+			</tr>
+			</table>
+						
+		</div>
+		<!-- End Column Left -->
+		
+		<!-- Start Column Center -->
+		<div class="column-center-container">
+		
+			<div class="column-center">
+						
+				<table style="width:100%; border-collapse:collapse;">
+			
+				
+				
+				<tr>
+				<td style="padding-bottom:20px;">
+				
+				<h2>DRAM damage due to X-Ray Inspections Post PCB Assembly</h2>
+				<br><br>
+						
+				
+				
+								
+												<table style="margin-left:5px; float:right;">
+<tr>
+<td style="padding:3px; vertical-align:top; border:1px solid #CCCCCC;">
+<img src="https://www.circuitnet.com/uploads/2/dram_damage_due_xray_inspections_post_pcb_assembly_smta_7055.jpg" style="width:70px; height:55px; border-style:none; display:block;" alt="DRAM damage due to X-Ray Inspections Post PCB Assembly">
+</td>
+</tr>
+</table>
+				
+				
+
+				This paper outlines several mitigation strategies for minimizing radiation dosage during X-ray inspections, particularly in the context of printed circuit boards (PCBs). One key observation is that the PCB itself acts as an effective shield, significantly reducing radiation exposure.<br>
+				<b>Technical Paper</b>
+			
+								
+
+								<br><br>
+				<a href="https://www.circuitinsight.com/uploads/2/dram_damage_due_xray_inspections_post_pcb_assembly_smta.pdf" target="_blank"><div class="button-more">DOWNLOAD</div></a>
+				
+			
+				
+				</td>
+				</tr>
+
+				<tr>
+				<td style="vertical-align:top; text-align:left; padding-bottom:20px;">
+				
+								<h3>Authored By:</h3><br>
+				Saurabh Gupta, Howlit Chng, Michael Cathcart, Christopher Alvarez, Jose I Hernandez, Jeff Burgess <br>
+Intel Corporation <br>
+OR, USA 
+				<br><br>
+				
+			
+				
+		
+								<h3>Summary</h3><br>
+				X-ray inspection remains integral in the Surface Mount Technology (SMT) industry, persistently employed to inspect obscured and defective solder joints within ball grid arrays (BGAs) and flip chip packages. This pivotal step streamlines failure analysis activities, offering a non-destructive and effective means of ensuring the quality of printed circuit board (PCB) assemblies. However, this ubiquitous technique carries an inherent risk for BGAs housing on-package memory modules. Excessive exposure to X-rays can potentially lead to the degradation of dynamic random-access memory (DRAM), underscoring the delicate balance between inspection and the preservation of memory integrity on these BGAs. Although this balance is so critical, the limits to which these DRAMs can be exposed are not clear or readily available.<br>
+<br>
+Previous research has extensively discussed the static refresh degradation of DRAM caused by X-ray irradiation. However, the radiation levels on the PCB assembly have not been thoroughly characterized for post-SMT X-ray inspection. Additionally, readily available functional test data on these BGAs with on-package memory which have undergone X-ray exposure are lacking. The characterization of X-ray exposure levels has been conducted on packages and boards of varying thicknesses. A range of materials and filter thicknesses have been evaluated in this process. Furthermore, the exposure on both automated inspection and manual inspection systems has been characterized. This comprehensive evaluation seeks to provide insights into the impact of X-ray irradiation on DRAM, shedding light on potential vulnerabilities and informing strategies for reducing X-ray exposure and improvement in manufacturing processes.<br>
+<br>
+This paper also investigates the radiation tolerance of PCB assemblies housing BGAs with on-package memory, pinpointing the radiation threshold where functionality issues arise. Through exposure to different radiation levels using a manual x-ray inspection tool, the package was subjected to stress testing using open-source memory testing software to assess memory performance. The results are then discussed in the context of the refresh time degradation of such DRAMs as reported by other studies. 
+				<br><br>
+				
+		
+								<h3>Conclusions</h3><br>
+				This paper outlines several mitigation strategies for minimizing radiation dosage during X-ray inspections, particularly in the context of printed circuit boards (PCBs). One key observation is that the PCB itself acts as an effective shield, significantly reducing radiation exposure. This relationship is shown in Figure 8. This protective effect was clearly demonstrated in the experimental results, highlighting the importance of considering the board’s material properties during inspection. The study also examined the impact of inspection time on dosage, revealing a direct correlation—longer inspection times result in higher radiation exposure. This finding emphasizes the need to optimize inspection duration to minimize dosage without compromising the thoroughness of the inspection.<br>
+<br>
+Another critical factor discussed is the choice of filter material. Copper was identified as the most effective filter for shielding radiation, significantly reducing dosage levels. However, this reduction in dosage comes at a cost, as the images produced with copper filters were of very poor quality due to the diminished X-ray penetration.<br>
+<br>
+Additionally, the paper explores the relationship between material thickness and dosage, finding that this relationship follows a decreasing exponential trend. As material thickness increases, the reduction in dosage becomes marginal, indicating diminishing returns with further thickness enhancements. <br>
+<br>
+This paper also investigated the radiation tolerance of PCB assemblies housing BGAs with on-package memory. It was noted that there was no initial degradation of the performance of the DRAM observed even after over exposure to several times the recommended limit of DRAM exposure from manufacturer. 
+				<br><br>
+				
+		
+				
+		
+								<b>Initially Published in the SMTA Proceedings</b>
+				<br><br>
+				
+			
+				</td>
+				</tr>
+			
+				<tr>
+				<td style="vertical-align:top; text-align:left; padding-bottom:20px; border-top:1px solid #C0C0C0;">
+				<h3>Comments</h3>		
+				<table style="width:100%; border-collapse:collapse; margin:10px 0px 10px 0px;">
+
+
+</table>
+
+<table style="width:100%; border-collapse:collapse; margin:10px 0px 10px 0px;">
+<tr>
+<td style="border-bottom:1px solid #C0C0C0; padding:0px 0px 10px 0px;">
+No comments have been submitted to date.
+</td></tr>
+</table>
+				</td>
+				</tr>
+				
+				<tr>
+				<td style="vertical-align:top; text-align:left; padding-bottom:10px;">
+				<form action="https://formspree.io/f/xknpldre" method="POST" enctype="multipart/form-data">
+				
+				<h3>Submit A Comment</h3>
+				<br>
+				Comments are reviewed prior to posting. You must include your full name to have your comments posted. We will not post your email address.
+				<br><br>
+					
+					<table style="border-collapse:collapse;">
+					<tr>
+					<td style="padding-bottom:20px;">
+
+						<table style="border-collapse:collapse; float:left;">
+						<tr>
+						<td style="width:300px;">
+						<b>Your Name</b><br>
+						<input name="name" size="35">
+						<br><br>
+						<b>Your Company</b><br>
+						<input name="company" size="35">
+						</td>
+						</tr>
+						</table>
+					
+						<table style="border-collapse:collapse; float:right;">
+						<tr>
+						<td style="width:300px;">
+						<b>Your E-mail</b><br>
+						<input name="email" size="35">
+						<br><br>
+						<b>Your Country</b><br>
+						<input name="country" size="35">
+						</td>
+						</tr>
+						</table>
+						
+					</td>
+					</tr>
+					</table>	
+				
+				<b>Your Comments</b><br>
+				<textarea style="padding:2px; border:1px solid #C0C0C0;" name="comment" cols="28" rows="6"></textarea>
+				<br><br>
+				<div class="g-recaptcha" data-sitekey="6LdZiy8UAAAAABlYz_DtbEDJqgcZ6yevE9GTuA1C" data-size="compact"></div>
+				<br>
+				<input name="submit" type="submit" value="SUBMIT" class="button-submit">
+				<input type="hidden" name="page" value="https://www.circuitnet.com/programs/56469.html">
+				<input type="hidden" name="web_page" value="https://www.circuitnet.com/programs/56469.html">		
+				<input type="hidden" name="title" value="DRAM damage due to X-Ray Inspections Post PCB Assembly">
+				</form>
+				
+				</td>
+				</tr>
+				
+				</table>
+
+			</div>
+		
+		</div>
+		<!-- End Column Center Column -->
+
+		<!-- Start Column Right -->
+		<div class="column-right">
+			
+			<table style="border-collapse:collapse; margin-bottom:20px; float:left; width:306px;">
+<tr>
+<td style="vertical-align:top; text-align:left; padding:8px; border:1px solid #CCCCCC; background-color:#FFFFFF; font-family:Verdana,Geneva,sans-serif; font-size:13px; line-height:18px;">
+<a href="/web/subscribe.html"><b>Free Newsletter Subscription</b></a>
+<br>
+Circuitnet is built for professionals who bear the responsibility of looking ahead, imagining the future, and preparing for it.
+<br><br>
+	
+<!-- Begin MailChimp Signup Form -->
+<b>Insert Your Email Address</b>
+<br>
+	
+<div id="mc_embed_signup">
+<form action="https://circuitnet.us10.list-manage.com/subscribe/post?u=eb3115f40f4fdd05dae9c9061&amp;id=73fa9293e5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<div id="mc_embed_signup_scroll">
+		<div class="mc-field-group"  style="padding-bottom:5px;">
+		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" size="32">
+		<br>
+		</div>
+		<div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none">
+		</div>
+		<div class="response" id="mce-success-response" style="display:none">
+		</div>
+	</div>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px; border:none;" class="button-subscribe">
+<input type="text" name="b_eb3115f40f4fdd05dae9c9061_73fa9293e5" tabindex="-1" value=""></div>
+<div class="clear">
+<input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button-subscribe">
+</div>
+</div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+</td>
+</tr>
+</table>
+			
+			<table style="border-collapse:collapse; width:100%; margin-bottom:20px;">
+			<tr>
+			<td style="vertical-align:top; text-align:left;">
+			<table style="width:100%; border-collapse:collapse;">
+<tr>
+<td style="text-align:left; font-family:Verdana,Geneva,sans-serif; font-size:13px; line-height:18px;">
+		<table style="margin-left:5px; float:right;" align="right">
+		<tr><td style="padding:3px; vertical-align:top; text-align:center; font-size:11px; color:#333333;"><i>Sponsor</i></td></tr>
+		<tr><td style="padding:3px; vertical-align:top; border:1px solid #C0C0C0;">
+		<a href="https://www.circuitnet.com/sponsor/DL-Technology-Circuitnet-7414T.html" target="_blank">
+				<img src="https://www.circuitnet.com/media/1/DL_Ceramic_Dispense_Tips_70-55.gif	" border="0" width="70" height="55" style="display:block; width:70px; height:55px;" alt="DL-Technology">
+		
+				
+		</a></td></tr>
+		</table>
+<br>
+<a href="https://www.circuitnet.com/sponsor/DL-Technology-Circuitnet-7414T.html" target="_blank"><b>EZ-FLO High Precision Ceramic Dispense Tips</b></a><br>
+The ceramic molding process allows for smaller more precise inner diameters with a glass-like finish, giving you the ultimate control. Learn more.<br>
+<b>DL Technology</b>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+			</td>
+			</tr>
+			</table>
+			
+		</div>
+		<!-- End Column Right -->
+		
+	</div>
+	<!-- End Main Section -->
+	
+</td>
+</tr>
+</table>
+
+</div>
+
+<table style="border-collapse:collapse;" class="outer-footer-table">
+<tr>
+<td style="padding:5px;">
+
+	<!-- Footer -->
+	<div class="footer-table">
+
+	<table style="border-collapse:collapse; width:100%; margin-left:auto; margin-right:auto;">
+	<tr>
+	<td style="padding-bottom:20px; padding-top:5px; text-align:left; font-family:Verdana,Geneva,sans-serif; font-size:13px;">
+	<a href="https://www.circuitnet.com/web/aboutus.html">About Us</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/advertise.html">Advertising</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/archives.html">Archives</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/experts.html">Ask&nbsp;the&nbsp;Experts</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/calendar.html">Calendar</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/contactus.html">Contact&nbsp;Us</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/custom_email.html">Custom&nbsp;Email&nbsp;Broadcast</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/disclaimer.html">Disclaimer</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/news.html">News</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/press.html">Press&nbsp;Releases</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/news_submit.html">Press&nbsp;Release&nbsp;Submit</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/privacy.html">Privacy&nbsp;Policy</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/search.html">Search</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/subscribe.html">Subscription</a>&nbsp;|
+	<a href="https://www.circuitnet.com/papers/papers.html">Technical&nbsp;Papers</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/white_paper_submit.html">Technical&nbsp;Paper&nbsp;Submit</a>&nbsp;|
+	<a href="https://www.circuitnet.com/web/viewpoint.html">Viewpoint</a>
+	<br><br>
+	<a href="https://www.circuitnet.com/index.html" style="text-decoration:none;"><b>Circuitnet</b></a><br>
+	58 Plaistow Road, Suite A15, #1013, Plaistow, NH 03865, USA
+	<br><br>
+	Jeff Ferry, Publisher  | Ken Cavallaro, Editor/Business Manager
+	<br><br>
+	Copyright &copy; Circuitnet Media LLC. All rights reserved.<br>
+	<a href="https://www.circuitnetmedia.com" style="text-decoration:none;">A Circuitnet Media Publication</a><br>
+	ISSN 2768-2668 
+	</td>
+	</tr>
+	</table>
+
+	<script>
+	var sc_project=11876914; 
+	var sc_invisible=1; 
+	var sc_security="7b5d225d"; 
+	var sc_https=1;  
+	</script>
+	<script src="https://www.statcounter.com/counter/counter.js" async></script>
+	<noscript>
+	</noscript>
+
+</div>
+	<!-- Footer -->
+
+</td>
+</tr>
+</table>
+<!-- End Outer Table -->
+
+
+			
+</div>
+
+<!-- Script to have overlay display when using Firefox -->
+<script>
+$(window).load(function() {
+ $('.vjs-overlay').removeClass('vjs-hidden');
+});
+</script>
+<!-- Script to have overlay display whenm using Firefox -->
+
+</body>
+</html>

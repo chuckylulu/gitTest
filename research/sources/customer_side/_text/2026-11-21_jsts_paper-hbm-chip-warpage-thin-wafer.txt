@@ -1,0 +1,1132 @@
+
+
+	JSTS - Journal of Semiconductor Technology and Science
+
+JSTS
+Journal of Semiconductor Technology and Science
+
+IEIE
+
+Contact
+
+Open Access
+
+Bimonthly
+
+ISSN : 1598-1657 (Print)
+
+ISSN : 2233-4866 (Online)
+
+Mobile QR Code
+
+JSTS Index Information Download 
+
+Main Menu
+
+Main Menu
+
+Current Issue
+
+Early Access
+
+Journal Archive (2019~)
+
+Journal Archive (2001~2018)
+
+Editorial board
+
+Scope / Indexing
+
+Instructions to authors
+
+Online-Submission
+
+Haedong
+ Best Paper Award
+
+Journal letter
+
+Contact information
+
+The Journal of Semiconductor Technology and Science (JSTS) is an international, peer-reviewed, and 
+open-access
+ journal that is published 
+bimonthly.
+
+                                        - Scope: semiconductor processes, devices, circuits, and MEMS.
+
+                                        - Editor-in-Chief: Prof. Woo Young Choi (ECE, Seoul National University)
+
+                                        - Indexed within 
+Science Citation Index Expanded (SCIE), SCOPUS,
+ Korea Citation Index (KCI), and other databases.
+
+ Journal Search
+
+Home
+
+Archive
+
+2025-10
+
+(Vol.25 No.05)
+
+10.5573/JSTS.2025.25.5.585
+
+Journal XML
+
+EndNote
+
+RefWorks
+
+Medlars
+
+RIS
+
+BibTeX
+
+Export citation
+
+ XML
+
+ PDF
+
+ INFO
+
+ REF
+
+Journal Information
+
+                              [
+
+Research article
+
+                              ]
+
+JSTS(Journal of Semiconductor Technology and Science)
+
+IEIE
+
+                              Vol.
+                              25,
+
+                              No.
+                              05,
+
+                              p.
+585
+-
+597
+
+ISSN
+ (print)
+ : 
+1598-1657
+
+ISSN
+ (online)
+ : 
+2233-4866
+
+Received
+ : 
+9 Jun. 2025
+Revised
+ : 
+9 Aug, 2025
+Accepted
+ : 
+12 Aug. 2025
+
+DOI
+ : 
+https://doi.org/10.5573/JSTS.2025.25.5.585
+
+Industry’s First In-line Chip Warpage Measurement Methods for HBM Manufacturing Using
+                  UV-Induced Delamination and a Flux-based Support Layer
+
+LeeSangyeop
+1,
+†
+
+Kim,Junghwi
+1
+
+WhoangIntae
+1
+
+JeongHongjae
+1
+
+MoonGitae
+1
+
+YoonSunghyun
+1
+
+LeeYounghoon
+1
+
+YoonGwangmin
+1
+
+LeeSangyup
+1,
+2,
+†,*
+
+                        (SK hynix Inc., Icheon, Republic of Korea)
+
+                        (H. Milton Stewart School of Industrial and Systems Engineering, Georgia Institute
+                        of Technology, Atlanta, USA)
+
+*
+
+                        					E-mail: 
+slee3734@gatech.edu
+,
+sangyup2.lee@sk.com
+
+† These authors contributed equally to this work.
+
+Copyright © The Institute of Electronics and Information Engineers(IEIE)
+
+License
+ : 
+
+                        						This is an Open-Access article distributed under the terms of the Creative Commons
+                        Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/3.0/)
+                        which permits unrestricted non-commercial use, distribution, and reproduction in any
+                        medium, provided the original work is properly cited.(
+www.theieie.org
+).
+
+Abstract
+
+                     					Advanced Packaging (AP) is driving innovation beyond the limits of traditional
+                     Moore's Law scaling. Among various advanced packaging technologies, High-Bandwidth
+                     Memory (HBM) is gaining significant attention for next-generation semiconductors.
+                     As the number of stacked layers in high-bandwidth memory increases, wafer and chip
+                     warpage become critical quality factors directly impacting yield and reliability.
+                     However, there is currently no equipment or method for direct in-line measurement
+                     of chip warpage, as ultra-thin wafers are bonded to carrier wafers during handling,
+                     making warpage measurement in this state meaningless. This paper presents the world's
+                     first research on a direct, large-scale, non-destructive chip warpage measurement
+                     process applicable in in-line manufacturing. We developed a novel measurement method
+                     based on specialized process treatments and hardware modifications. Experimental validation
+                     confirmed the accuracy and reliability of the proposed approach. The resulting high-volume
+                     chip-level warpage data showed a strong correlation with actual measurements, demonstrating
+                     that the method provides highly meaningful data for mass production applications.
+                     The results of this study have been implemented into measurement equipment and developed
+                     into a commercialized solution currently in use.	
+
+Index Terms
+
+ Chip Warpage,  UV-induced delamination,  large-scale measurement solution,  HBM,  advanced packaging
+
+I. INTRODUCTION
+
+Three-dimensional (3D) chip stacking can be categorized into three main approaches:
+                  Chip-to-Chip (C2C), Chip-to-Wafer (C2W), and Wafer-to-Wafer (W2W) 
+[1]
+. Currently, major HBM suppliers employ the C2W method for chip stacking, and C2W
+                  is also used in hybrid bonding, which has recently gained significant attention 
+[2]
+. In this process, HBM stacked products are fabricated using 300 mm base and core
+                  wafers produced in front-end fabs. Especially in HBM manufacturing, it is well known
+                  that core chips are stacked onto the base wafer, aligning each core chip precisely
+                  over the base chip (
+Fig. 1
+). As the HBM market rapidly expands, there is an increasing demand to stack more
+                  chips in a limited area. Suppliers are thus engaged in fierce competition to stack
+                  more and thinner chips 
+[3]
+. Compared to conventional memory products, HBM offers significantly higher added
+                  value, but it also presents greater manufacturing challenges. One of the most well-known
+                  and critical challenges is the warpage 
+[4-
+6]
+. With advanced packaging technologies drawing significant attention in the semiconductor
+                  industry, the importance of warpage continues to increase. In the HBM process as well,
+                  accurately assessing the warpage of ultra-thin wafers prior to the stacking process
+                  is critical for ensuring product quality. However, at this stage, the wafer is bonded
+                  to a carrier wafer for material handling purposes, and as a result, any 3D data acquired
+                  for warpage measurement reflects the carrier wafer rather than the actual product.
+                  Additionally, after debonding, the thin wafer is bonded to a 400 mm Ring-Frame (RF)
+                  for subsequent handling. In this state, measurement is further complicated due to
+                  tape sagging or warpage of the tape itself, making it difficult to obtain meaningful
+                  warpage data for the product. Furthermore, there is currently no equipment in the
+                  semiconductor industry capable of measuring the warpage of products mounted at 400
+                  mm RF.
+
+Several post-sawing processes between wafer input and stacking can further affect
+                  chip warpage, yet there is no means to directly measure the warpage of chips just
+                  before stacking. Consequently, information about chip warpage immediately prior to
+                  stacking must be inferred from predictive models or destructive sampling of a very
+                  limited number of chips, both of which are inherently limited in accuracy 
+[7]
+. The mechanisms responsible for warpage are extremely complex, involving numerous
+                  physical phenomena, and, most critically, cannot account for the substantial variability
+                  in materials, equipment, and process conditions present in real manufacturing environments
+
+[4]
+. Therefore, this study focuses on developing a practical methodology for measuring
+                  chip-level warpage after the sawing process, which is of particular interest for stacked
+                  product quality. Specifically, we investigated methods to enable large-scale measurement
+                  of chip warpage at the stage immediately after ultra-thin wafers are diced into individual
+                  chips just prior to stacking.
+
+  As previously discussed, the necessity of chip warpage measurement is growing, yet
+                  two major obstacles make this process essentially unfeasible. First, there is currently
+                  no available equipment or process technology capable of high throughput, inline measurement
+                  of ultra-thin wafer or chip warpage. Second, although destructive sampling allows
+                  for warpage measurement of a very limited number of chips, the sample size is far
+                  too small to effectively inform defect reduction strategies.
+
+  To overcome these limitations, we devised and experimentally validated three Large-Scale
+                  Chip Warpage (LSCW) measurement methods: two destructive approaches and one non-destructive
+                  approach. The two destructive methods revealed additional issues during experimentation
+                  and required precise control of optimal process parameters, which limited their practicality.
+                  In contrast, the non-destructive method was proven to be highly suitable for implementation
+                  in high-throughput measurement steps from a mass production perspective. Therefore,
+                  in this study, we propose a novel non-destructive method enabling high-throughput
+                  chip warpage measurement. This method has been transferred to measurement equipment
+                  suppliers and has since been developed and commercialized as a LSCW measurement solution.
+
+Fig. 1. HBM with vertically stacked homogeneous dies.
+
+II. PREVIOUS STUDIES AND TECHNIQUES ON WARPAGE MEASUREMENT AND BEHAVIOR 
+
+1. Existing Wafer Warpage Measurement Techniques Based on Optical Systems
+
+Wafer warpage measurement methods can first be classified into contact and non-contact
+                     types. Contact methods include the stylus-based method and caliper-based measurement
+
+[8]
+. Non-contact methods can be further categorized into Moiré, laser scanning, interferometry,
+                     and confocal-based techniques. Moiré methods, including shadow and projection moiré,
+                     have been widely used for wafer warpage measurement 
+[9,
+10]
+. Laser scanning-based methods are also commonly used in practice for warpage measurement
+                     due to their broad availability 
+[11,
+12]
+. Although interferometry-based systems are more expensive, they are capable of measuring
+                     in the range of several to tens of nanometers and have been employed for high-precision
+                     measurements 
+[13]
+. Confocal scanning systems, while slower and requiring more complex optical setups,
+                     also offer high measurement precision and are frequently used in practice 
+[14]
+. A comprehensive review of these various wafer warpage measurement techniques has
+                     been provided by Sun and Zhang 
+[15]
+. In the semiconductor manufacturing industry, where high-throughput warpage measurements
+                     must be performed on mass-produced wafers using automated equipment, the cost and
+                     speed of measurement systems are critical factors in technology adoption. In the case
+                     of Advanced Package products, the increasing complexity of packaging structures has
+                     led to a wider range of wafer warpages. Accordingly, compared to interferometry-based
+                     methods, Moiré and laser scanning-based measurement systems are often more cost-effective
+                     for manufacturers.
+
+2. Measurement Methods Based on Wafer Support Configurations
+
+In automated in-line measurement systems for mass production, wafer support configuration
+                     is a key design factor. While the optical module focuses on acquiring 3D data, the
+                     wafer support configuration directly influences the physical warpage of the sample
+                     during measurement. For example, warpage values measured using three supporting pins
+                     can differ from those measured using four pins. Therefore, for in-line automated systems,
+                     wafer support configuration must be carefully designed and implemented. Based on the
+                     wafer support configuration, existing warpage measurement systems can be classified
+                     into the following types. 
+
+The most technically advanced and cost-intensive method involves gripping and supporting
+                     a vertically held silicon wafer in an upright position for measurement. This approach
+                     reduces shape distortion caused by gravity 
+[16]
+. A certain equipment supplier currently provides a warpage measurement system capable
+                     of measuring the warpage of a vertically held wafer. To the best of our knowledge,
+                     this system is the only commercially available solution that enables wafer geometry
+                     measurement while the wafer is held in a vertical orientation. The supplier possesses
+                     a patent-based technology stack for precision 
+[17,
+18]
+. Therefore, replicating or implementing equipment that measures warpage with the
+                     wafer held in a vertical orientation remains challenging for other suppliers.
+
+Therefore, many warpage measurements are conducted by placing the wafer on a flat
+                     stage, and warpage measurement equipment is often developed and supplied based on
+                     this configuration. Yoo et al. 
+[19]
+ experimentally investigated various wafer support configurations and concluded that,
+                     under their experimental conditions, using a flat stage for warpage measurement reduces
+                     the effect of gravitational sag. In practice, some of the warpage measurement systems
+                     supplied to the industry are designed to operate with the wafer placed on a flat stage
+                     during measurement. However, this method can be susceptible to contamination and particle
+                     interference originating from the surface of the stage.
+
+In addition, warpage measurements can be conducted by supporting the wafer with three
+                     or four pins, lifting it from the stage surface during measurement. Liu et al. described
+                     a method that calculates gravity-induced deflection (GID) based on the positions of
+                     three supporting pins 
+[20]
+. Yoo et al. also conducted warpage measurement experiments using a pin support method
+                     in combination with a flat stage 
+[19]
+. However, in warpage measurement systems used in high-mix, high-volume manufacturing
+                     environments, it is practically impossible to accurately calculate the GID for an
+                     extremely diverse range of product conditions, which presents a limitation of this
+                     method.
+
+Warpage values measured using different methods can vary in both shape and magnitude,
+                     even when measured on the same wafer. In practice, semiconductor manufacturers often
+                     use multiple types of equipment to perform warpage measurements, and variation in
+                     measurement values due to different support configurations must be carefully controlled.
+                     This is typically managed through adjustment of mechanical process parameters across
+                     equipment types, a practice commonly referred to as Tool-to-Tool Matching.
+
+3. Limitations of Existing Research on LargeScale Chip Warpage Measurement
+
+While wafer warpage measurement techniques each have their own advantages, they are
+                     not easily applicable to measuring the warpage of ultra-thin chips attached to dicing
+                     tape on a 400 mm RF after dicing. On the other hand, as defects such as non-wet failures
+                     caused by chip warpage have emerged as critical yield-degrading factors in both homogeneous
+                     and heterogeneous chip stacking processes, there is a rapidly growing demand to precisely
+                     measure individual chip warpage immediately after dicing, i.e., just prior to stacking.
+
+Although some studies have analyzed chip warpage behavior after dicing 300 mm wafers,
+                     the semiconductor industry still largely relies on curvature data obtained before
+                     dicing or on indirect inference methods. Furthermore, studies such as 
+[21]
+ have employed finite element analysis (FEA) to simulate chip warpage or used manual
+                     measurement tools to inspect each chip individually. However, these methods are impractical
+                     in high-throughput production environments where speed is essential. In particular,
+                     process variations such as equipment inaccuracies, process fluctuations, and material
+                     property changes during actual dicing can cause unique mechanical responses in each
+                     chip. Conventional methods fail to capture these variations, making it difficult to
+                     accurately reflect the true warpage behavior. Moreover, applying FEA simulations to
+                     the vast number of chips produced in mass manufacturing is not a viable solution.
+
+In particular, the warpage state of chips attached to a 400 mm RF using the tape represents
+                     a critical intermediate stage in the back-end process. Nevertheless, research on direct
+                     measurement solutions capable of capturing chip warpage in this state quickly and
+                     simultaneously across multiple chips is almost nonexistent. This technological gap
+                     poses a major barrier to fully understanding warpage mechanisms under actual packaging
+                     conditions and to developing process control and optimization strategies based on
+                     this understanding.
+
+4. Influence of Tape Material Properties on Warpage Behavior
+
+The adhesive strength of dicing tape has a direct impact on the stability of die pick-up
+                     during semiconductor manufacturing processes, while other mechanical and thermal properties
+                     such as viscoelasticity and the coefficient of thermal expansion can exert indirect
+                     influence through temperature variations and stress distribution 
+[22]
+. During thermal cycling and mechanical handling, the material properties of the tape
+                     affect interfacial stress distribution, stress relaxation, and peeling behavior, which
+                     may indirectly influence the actual warpage profile or residual stress state of the
+                     chip 
+[23]
+. Furthermore, it has been reported that as the die becomes thinner, the adhesion
+                     to the tape increases, making the peeling process more difficult and potentially preventing
+                     the natural warpage of the chip from being revealed while it remains attached to the
+                     tape 
+[22]
+.
+
+In this study, we propose a method for measuring the warpage of large numbers of chips.
+                     Specifically, we introduce a measurement method that evaluates chip warpage in-situ
+                     while they remain attached to the dicing tape on a 400 mm RF. Two major technical
+                     challenges must be addressed for this measurement concept to be realized. First, due
+                     to the sagging of the RF tape under gravity, global warpage of the tape is introduced,
+                     which interferes with accurate measurement. Second, the adhesion of the chip to the
+                     tape flattens its warpage, preventing the actual warpage from being observed. To overcome
+                     these issues, we present a high-throughput chip warpage measurement solution for high-volume
+                     manufacturing, based on the UV-induced tape delamination mechanism introduced in Section
+                     III and further developed in Section IV.
+
+III. SCIENTIFIC MECHANISMS OF THE PROPOSED METHOD
+
+1. Mechanics of UV-Induced Chip-Tape Delamination
+
+In Section IV, as shown in 
+Fig. 2
+, this section explains the mechanism behind the thermomechanical warpage and delamination
+                     of semiconductor dies induced by UV treatment. This serves as the background for the
+                     core idea of the proposed method: using UV exposure to reveal the warpage of individual
+                     chips. The thermomechanical behavior at the chip-tape interface under UV irradiation
+                     is driven by the difference in coefficients of thermal expansion between the materials.
+                     When exposed to UV, both the chip and tape experience a rise in temperature, resulting
+                     in thermal stress at the interface. Thermal stress occurs when a material tends to
+                     expand or contract due to a temperature change but is mechanically constrained from
+                     doing so. In this context, the mismatch in thermal expansion between the chip and
+                     tape leads to interfacial stress development. When a material with a coefficient of
+                     linear thermal expansion $\alpha$ undergoes a temperature change $\Delta$T, and its
+                     expansion is completely restricted, the induced thermal stress $\sigma$ can be expressed
+                     as Eq. 
+(1)
+.
+
+(1)
+
+                     					$ \varepsilon = \Delta T \alpha + \frac{\sigma}{F}, $
+
+where $\sigma$ is the thermal stress generated within the material, $\varepsilon$
+                     is the total strain, $E$ is Young's modulus of the material, which defines its stiffness
+                     or resistance to elastic deformation under load. The coefficient $\alpha$ corresponds
+                     to the materials coefficient of linear thermal expansion, expressed in units of 1/K,
+                     indicating the rate at which the material expands per unit temperature increase. Finally,
+                     $\Delta$T is the change in temperature (in kelvin or degrees Celsius) experienced
+                     by the material 
+[24]
+. This UV-induced stress development sets the stage for delamination, governed by
+                     the interfacial energy dynamics described below. This UV-induced stress development
+                     sets the stage for delamination by releasing the inherent chip warpage previously
+                     constrained by the tape. Tape adhesion strength can be selectively reduced through
+                     UV stimulation. By applying UV irradiation, the adhesive strength can be weakened,
+                     enabling easier delamination of chips from the tape. This occurs because UV exposure
+                     increases crosslinking within the adhesive, leading to a reduction in its viscoelasticity
+                     and tack properties, thereby decreasing adhesion. Lee et al. investigated the conditions
+                     required for easily peelable acrylic dicing tapes, particularly focusing on the reduction
+                     of adhesion strength after UV exposure in the pick-up process due to polymer network
+                     formation 
+[23]
+. Additionally, Wang conducted a study on the strategic design of photoreactive monomers
+                     for the development of UV-induced debondable acrylic pressure-sensitive adhesives
+                     (PSA) 
+[25]
+. By leveraging these UV-induced structural transformations to lower peel strength,
+                     such mechanisms can be applied to the development of chip warpage measurement methods.
+
+Fig. 2. The non-destructive, large-scale chip warpage measurement method.
+
+2. Minimizing Warpage Interference via Uncured Flux Support Layer
+
+As described in Section IV, the proposed method involves placing ultra-thin chips
+                     horizontally on a high-viscosity, uncured flux layer, enabling the preservation of
+                     the chip's inherent warpage during measurement. The flux, possessing viscoelastic
+                     properties, flexibly deforms under the chip's load while preventing localized stress
+                     concentrations, thereby helping to retain the chip's natural warpage profile. Since
+                     the flux remains uncured, it does not mechanically constrain the chip and is unsuitable
+                     for vertical mounting. However, in a horizontal staging system, it effectively serves
+                     as a support layer without interfering with the chip. As a result, the flux does not
+                     disturb the chip's warpage, allowing for accurate measurement while preserving the
+                     original warpage characteristics. Due to the extremely weak mechanical coupling between
+                     the chip and the flux in this structure, mechanical interference is minimized rather
+                     than promoting stress transmission, which is advantageous for improving measurement
+                     accuracy. The following Eq. 
+(2)
+ describes how the warpage of an ultra-thin chip placed on uncured flux is transmitted
+                     as stress. The approximate equation 
+(2)
+ is a first-order approximation model based on the fundamental stress-strain relationship
+                     for linear elastic materials, $\sigma=E\cdot\varepsilon$. $\varepsilon$ is the strain,
+                     which can be approximated as $\varepsilon\approx\frac{w(x,y)}{t_f}$, where $t_f$ is
+                     the thickness of the support layer, and $w(x,y)$ is the out-of-plane displacement,
+                     or warpage, of the chip at position $(x,y)$. In this model, the support layer is assumed
+                     to behave as a linear elastic material, and a small vertical deformation occurs under
+                     the chip's load. This equation provides a physically intuitive model for estimating
+                     how the warpage of an ultra-thin chip placed on a flexible support layer is transmitted
+                     as vertical stress within the layer.
+
+(2)
+
+                     					$ \sigma(x,y) = E_f \frac{w(x,y)}{t_f}. $
+
+In Eq. 
+(2)
+, $\sigma(x,y)$ represents the compressive or tensile stress, $E_f$ is the Young's
+                     modulus of the flux,  $w(x,y)$ denotes the warpage (z-direction displacement) of the
+                     chip at position $x$ and $y$, and $t_f$ is the thickness of the flux layer. When $E_f$
+                     is small, the resulting stress $\sigma(x,y)$ is also small, allowing the flux to naturally
+                     absorb the chip's warpage with minimal interference. Therefore, the smaller the $E_f$,
+                     the more the flux behaves like a liquid, flexibly conforming to the chip's warpage
+                     and reducing mechanical interference. In this context, applying a large amount of
+                     uncured flux with a very low modulus increases the flux thickness $t_f$, and according
+                     to the equation, this further minimizes interference and allows better absorption
+                     of the chip's warpage. Several studies have shown that a higher Young's modulus increases
+                     structural rigidity and thereby reduces warpage through the same mechanism 
+[26,
+27]
+. In this study, we apply the opposite approach by using uncured flux with a low Young's
+                     modulus as a support layer to preserve the chip's inherent warpage during measurement.
+
+IV. PROPOSED LARGE-SCALE CHIP WARPAGE MEASUREMENT METHODS
+
+1. Chip-Tape Delamination and Vacuum Chucking (CTD-VC) Chip Warpage Measurement Method
+
+CTD-VC refers to a non-destructive, LSCW measurement method based on chip-tape interface
+                     delamination control and 400 mm vacuum chucking. As automated material handling (AMH)
+                     for 400 mm RF became feasible, the laser sawing process of wafers adopted the 400
+                     mm RF as a baseline, and it is now widely used in semiconductor manufacturing. However,
+                     the tape attached to the 400 mm RF tends to sag due to gravity, and after the sawing
+                     process, the diced chip-level products remain attached to the tape on the RF. In this
+                     state, applying conventional warpage measurement solutions becomes virtually impossible.
+                     While various existing optical systems have been developed with a focus on acquiring
+                     high-precision 3D data, the two previously mentioned factors, which are the sagging
+                     of the tape and the chip's attachment to the tape, physically conceal the actual warpage
+                     information of the sample. As a result, conventional measurement methods cannot capture
+                     accurate warpage. To overcome this limitation, this study proposes a practical solution,
+                     which is described in 
+Fig. 3
+.
+
+As shown in 
+Fig. 2
+, the wafer is diced into individual chips after the sawing process. At this stage,
+                     UV treatment is applied based on Eqs. 
+(1)
+ and 
+(2)
+ presented in Section III. Upon UV exposure, each chip undergoes partial delamination
+                     from the RF tape, which physically reveals the inherent warpage of the individual
+                     chips. In addition, to eliminate measurement errors caused by the global shape distortion
+                     due to gravitational sagging of the RF tape, the stage holding the 400 mm RF was modified
+                     to enable vacuum chucking of the tape. Through vacuum chucking, the tape is flattened,
+                     and sag-induced noise is effectively removed.
+
+  As a result, this measurement approach enables accurate acquisition of chip warpage
+                     by eliminating physical noise caused by tape bonding and sagging. The chips are scanned
+                     using a 3D optical module such as a 3D scanner or interferometer, and the acquired
+                     data contains sufficient information to calculate the warpage of each chip. After
+                     obtaining the 3D signals, reference points such as the chip corners are detected to
+                     perform chip-wise alignment, allowing each chip to be mapped to its own local 3D coordinate
+                     system as shown in 
+Fig. 3
+.
+
+Conventional optical systems have spatial resolutions $R_x$ and $R_y$ in the $x$ and
+                     $y$ directions, respectively. Given a chip with height $H$ and width $W$, the total
+                     number of height signals acquired per chip is approximately $\frac{H}{R_y}\times\frac{W}{R_x}$.
+                     Following this, application-specific processing techniques such as filtering only
+                     robust signals, masking bump features on the chip surface, or applying alignment algorithms
+                     for rapid chip alignment can be employed. However, these additional software applications
+                     are not the main focus of this paper and are therefore not discussed in detail. 
+Fig. 4
+ shows an example of signal from a single chip through actual experimentation.
+
+Through this approach, the warpage of all $N$ chips on a wafer can be measured simultaneously
+                     in a single scanning operation. In general, the time required for 3D scanning varies
+                     depending on the optical system used, typically ranging from 40 seconds to 5 minutes.
+                     Within this time frame, the warpage of all $N$ chips on the wafer can be measured
+                     at once. 
+
+In addition, the proposed method offers a significant advantage from a mass production
+                     perspective. The Auto Visual Inspection (AVI) process, well known in semiconductor
+                     inspection, is a widely used inspection solution in many semiconductor manufacturing
+                     environments. In the AVI equipment market, dedicated inspection systems for 400 mm
+                     RF have already been commercialized and developed over the past decade in response
+                     to industry demand. This presents an opportunity to integrate the AVI system with
+                     the chip warpage measurement process for combined operation. By installing two cameras
+                     on a single turret, the system can be configured with a dual optical setup that enables
+                     simultaneous AVI inspection and warpage measurement. Furthermore, the warpage measurement
+                     results can be fed back into the AVI inspection process to dynamically control the
+                     camera height during the 2D scanning stage.  This allows the system to address the
+                     well-known focus-out issue in AVI processes. Therefore, the proposed method offers
+                     groundbreaking advantages in both semiconductor mass production and process technology
+                     perspectives. As a result, the CTD-VC method offers significant advantages as a chip
+                     warpage measurement solution from a mass production perspective, not only by enabling
+                     accurate chip warpage measurement but also by providing a practical means to address
+                     focus-related issues in AVI processes.
+
+Fig. 3. Local and global coordinate system for 3D data.
+
+Fig. 4. Chip data obtained using the proposed method.
+
+2. Flux-based Support Layer (F-SL) Chip Warpage Measurement Methods: Cured Flux (CF-SL)
+                     and Uncured Flux (UF-SL) Methods
+
+F-SL chip warpage measurement methods can be classified into two categories, Cured
+                     Flux and Uncured Flux Support Layers. The Uncured Flux (UF-SL) method and Cured Flux
+                     (CF-SL) method, as described below, are destructive measurement techniques, unlike
+                     the first non-destructive approach. In these Methods, bare silicon wafers are patterned
+                     via photolithography to replicate the layout of the target chips. After the laser
+                     sawing process is completed, the target chips are stacked in a single layer onto the
+                     patterned bare silicon wafer. During this process, an excessive amount of flux is
+                     intentionally applied between the chips and the wafer. This flux serves as a damping
+                     layer to minimize deformation of the chip warpage induced by gravitational forces
+                     acting on the support surface.
+
+Since ultra-thin chips after laser sawing are only a few tens of microns thick, they
+                     are highly susceptible to warpage caused by their own weight. When such chips are
+                     placed directly onto a bare silicon wafer, point or partial contact with the support
+                     surface can induce stress concentration, and gravitational deflection can exaggerate
+                     the deformation, distorting the original warpage profile of the chip.
+
+To mitigate this, applying a highly viscous flux between the chips and the wafer allows
+                     the material to distribute uniformly across the chip surface, forming a continuous
+                     support layer. This support layer absorbs shear stress and bending moments, thus suppressing
+                     out-of-plane deformation. Flux materials with viscoelastic properties provide not
+                     only cushioning against external mechanical forces but also effective stress redistribution.
+
+Moreover, the flux fills micro-scale mechanical gaps between the chips and the bare
+                     wafer, enabling uniform support across the entire chip surface. This configuration
+                     helps ensure that the measured warpage characteristics more accurately reflect the
+                     inherent deformation of the chips.
+
+However, the UF-SL method is applicable only to measurement systems that utilize horizontal
+                     staging configurations. This is because the measurement is performed prior to the
+                     thermal curing of the flux, meaning that the flux remains in a non-cured, viscous
+                     state during the process. In this uncured state, the flux cannot withstand gravitational
+                     forces to maintain the chips' positions reliably. As a result, vertical staging systems
+                     are not compatible with this method, since the chips would shift or collapse under
+                     gravity. Therefore, this technique is incompatible with measurement systems based
+                     on vertical wafer staging.
+
+The CF-SL method is designed to enable chip warpage measurement even in metrology
+                     systems that utilize vertical staging. Like the UF-SL method, it involves stacking
+                     the chips onto a bare silicon wafer and applying flux between them. However, this
+                     approach adds a thermal curing step to solidify the flux layer. During the curing
+                     process, the intrinsic warpage of each chip induces subtle mechanical deformation,
+                     which is transmitted through the hardened flux layer to the underlying silicon wafer.
+                     As a result, localized stress distributions are generated on the backside of the bare
+                     wafer. By precisely measuring these localized stress patterns, the warpage characteristics
+                     of each chip can be indirectly inferred.
+
+The CF-SL method is based on the principle that stress induced by chip warpage is
+                     transmitted through the cured damping layer to the supporting substrate. Accordingly,
+                     it constitutes an indirect measurement technique that offers compatibility with vertical
+                     staging systems. In particular, by analyzing the stress distribution on the backside
+                     of the substrate, it becomes possible to indirectly estimate the subtle mechanical
+                     deformation of each chip. Therefore, this CF-SL Method is regarded as having the potential
+                     to be implemented in high-precision interferometry-based equipment. However, precise
+                     experimentation is required to evaluate the feasibility of accurately estimating warpage,
+                     as the effectiveness of this approach heavily depends on the resolution of stress
+                     transmission and the sensitivity of the interferometric system.
+
+V. EXPERIMENTS
+
+To evaluate the practical applicability of the proposed LSCW using CTD-VC, verification
+                  experiments were conducted using 400 mm RF wafers with chips remaining after the sawing
+                  process. The existing automated RF wafer handling system was modified by integrating
+                  an optical module for warpage measurement and implementing vacuum chucking capability
+                  on the stage, enabling repeated measurements. To verify the accuracy of the measured
+                  chip warpage data, cross-validation was performed using the AXP manual destructive
+                  analysis 
+
+system from Akrometrix Inc. Therefore, the chip warpage measured using the modified
+                  equipment implementing the CTD-VC method is considered the test value, while the chip
+                  warpage obtained from individual destructive measurements using AXP is regarded as
+                  the ground truth. In addition, to artificially induce global wafer warpage, a film
+                  was formed on the backside of the wafer to apply mechanical stress. The wafer underwent
+                  sawing and measurement using proposed method.
+
+The spatial distribution of applied stress was compared with the chip warpage data
+                  collected at various wafer locations. The throughput of the proposed method was also
+                  evaluated. Measurement data were also collected for the CF-SL and UF-SL method for
+                  large-scale destructive measurement approaches. In particular, the CF-SL method was
+                  tested using a system that vertically fixes the wafer for measurement, as illustrated
+                  in 
+Fig. 5
+. As shown in 
+Fig. 5
+, the platform grips the edge of the wafer and holds it in a vertical orientation.
+                  However, due to the results and the verified practicality and accuracy of the CTD-VC
+                  method, this study adopts the first method for further experiments and process development.
+                  The technical limitations and challenges observed in the initial trials of the CF-SL
+                  and UF-SL are discussed in the conclusion of this paper.
+
+Using the prepared LSCW method based on CTD-VC, the warpage of all chips on the wafer
+                  was measured. A total of 81 chips were then manually sampled from nine regions of
+                  the wafer (left, upper left, lower left, top, center, bottom, upper right, lower right,
+                  and right). 
+
+The warpage of these chips was individually measured at room temperature using the
+                  AXP manual analysis system. The values obtained using the LSCW method were considered
+                  as the test values, and those obtained through the AXP system were regarded as the
+                  ground truth. For confidentiality reasons, all data were normalized to an arbitrary
+                  unit using Min-Max Scaling. The results are presented in Figs. 6-8. The cosine similarity,
+                  Pearson correlation coefficient, and coefficient of determination R$^2$ were 0.8805,
+                  0.6610, and 0.4369, respectively. This result indicates that the spatial distribution
+                  pattern of chip warpage closely aligns with that of the ground truth, as evidenced
+                  by the high cosine similarity value. The relative trend in warpage magnitude across
+                  chip locations shows strong agreement with the ground truth data. Furthermore, a meaningful
+                  linear relationship was also observed between the two datasets.
+
+Furthermore, to validate the proposed method across the entire wafer area without
+                  sampling, a film was applied to the wafer to artificially introduce a stress pattern,
+                  followed by measurement. As shown in 
+Fig. 6
+, the measured chip warpage distribution qualitatively matched the expected deformation
+                  pattern, demonstrating that the method can effectively capture chip-level warpage
+                  behavior. The experimental results demonstrate that the proposed method enables the
+                  observation of chip-level warpage to a significant extent, which was previously unobservable
+                  in high-throughput inline environments. This represents a meaningful achievement,
+                  as it addresses a long-standing technical challenge in the industry where there has
+                  been a demand for chip-level warpage information but no viable means to measure it.
+
+In addition, the time required to measure the individual warpage of all chips on a
+                  wafer using the CTD-VC method increases with the number of measurement points per
+                  chip, and the results are summarized in 
+Fig. 9
+. In the graph shown in 
+Fig. 9
+, the $x$-axis represents the number of measurement points per chip, and the y-axis
+                  indicates the total time (in seconds) required to measure 600 chips. Under the given
+                  experimental conditions, the total measurement time of approximately 7 to 10 minutes
+                  for all chips demonstrates a dramatically improved speed compared to conventional
+                  methods that involve manual sampling and measurement. For the UF-SL and CF-SL methods,
+                  when using an interferometric optical module with an $x$- and $y$-axis resolution
+                  of 130 $\mu$m, approximately one minute was required per wafer, regardless of the
+                  number of measurement points. When a 3D laser scanner was used with an x- and y-axis
+                  resolution set to approximately 10 $\mu$m, the measurement took approximately five
+                  minutes per wafer. These measurement speeds are considered highly reasonable for inline
+                  equipment applications.
+
+Fig. 5. Stage equipped with a wafer grabber for vertical wafer staging.
+
+Fig. 6. Chip warpage distribution reflecting induced stress pattern. (a) Incoming
+                        warpage, (b) warpage compensation with CVD, and (c) results of LSCW using CTD-VC method.
+
+Fig. 7. Cross-validation results of CTD-VC. (a) LSCW results using CTD-VC. (b) Ground
+                        truth.
+
+Fig. 8. Results of 81ea chip samples for cross-validation.
+
+Fig. 9. Scan speed for 600 chips.
+
+VI. CONCLUSION AND IMPLICATIONS
+
+This study yields several experimental insights. First, in the UF-SL method, excessive
+                  flux overflowed onto the chip's top surface, as shown in 
+Fig. 10 (a)
+, introducing noise into the measurement results. In the CF-SL method, a characteristic
+                  ``smile''-shaped warpage pattern was observed, as depicted in 
+Fig. 10 (b)
+, consistent with prior product knowledge. However, additional high-precision validation
+                  is required to verify its practicality and reliability. Both approaches demand a highly
+                  optimized stacking process to obtain meaningful measurement data, which introduces
+                  limitations in terms of time, cost, and operational complexity. For example, both
+                  the UF-SL and CF-SL methods require optimization of process parameters related to
+                  flux application to improve measurement quality. In the case of the CF-SL method,
+                  additional optimization of thermal curing parameters is also necessary. Furthermore,
+                  precise adjustment of stacking parameters is required when placing chips on the flux-based
+                  support layer to ensure uniform stacking without step differences. Since the measurement
+                  results are highly sensitive to variations in these process conditions, these methods
+                  are considered less favorable than the CTD-VC method from an operational standpoint.
+                  Nevertheless, the UF-SL methods offer significant advantages over traditional manual
+                  chip warpage analysis techniques by enabling rapid, high-volume data acquisition through
+                  automated measurement systems. A current limitation, however, is that these methods
+                  only support room temperature measurements. With the addition of a chamber and temperature
+                  control functionality, it may become possible to capture chip warpage behavior under
+                  various thermal conditions.
+
+The primary focus of this study, the LSCW method using CTD-VC, has demonstrated substantial
+                  industrial value as a non-destructive technique suitable for in-line metrology. In
+                  the semiconductor equipment industry, this approach can drive increased demand for
+                  new metrology solutions. In the semiconductor manufacturing process, it offers a critical
+                  advantage by enabling acquisition of chip warpage data, which is a key factor in controlling
+                  the measured warpage data showed strong correlation and consistent trends with the
+                  target chip warpage, supporting the reliability and accuracy of the proposed method.
+
+Furthermore, the proposed method is practically advantageous as it can be integrated
+                  into existing AVI systems. By equipping a single turret with dual optical modules,
+                  the system can perform simultaneous AVI inspection and chip warpage measurement. The
+                  resulting warpage data can also be used to dynamically adjust camera focus during
+                  AVI scanning, effectively addressing the well-known focus-out issue in AVI processes.
+
+Based on these findings, our research team collaborated with multiple equipment vendors
+                  to implement the proposed method as a new application feature in commercial metrology
+                  systems. Both hardware and software modifications were made, and the solution has
+                  been successfully commercialized. It is now actively deployed in industrial settings
+                  to efficiently collect LSCW data. 
+
+Fig. 10. Chip warpage measurement results. (a) Result of UF-SL. (b) Result of CF-SL.
+
+ACKNOWLEDGMENTS
+
+                  				This work was supported by SK hynix Inc. The authors sincerely thank Professors
+                  Xiao Liu of the Georgia Institute of Technology for their continued guidance and encouragement
+                  during the Ph.D. studies of the corresponding author, Sangyup Lee, which greatly contributed
+                  to his research and engineering development.
+
+References
+
+1
+
+C. Y. Lee, J. Kim, H. Park, and S. Choi, ``3D integrated process and hybrid bonding
+                           of high-bandwidth memory (HBM),'' Electronic Materials Letters, vol. 21, no. 1, pp.
+                           1-25, Jan. 2025.
+
+2
+
+K.-I. Moon, H.-Y. Son, and K. Lee, ``Advanced packaging technologies in memory applications
+                           for future generative AI era,'' Proc. of the 2023 IEEE International Electron Devices
+                           Meeting (IEDM), San Francisco, CA, USA, pp. 1-4, Dec. 2023.
+
+3
+
+K. Kim and M.-J. Park, ``Present and future challenges of high-bandwidth memory (HBM),''
+                           Proc. of the 2024 IEEE International Memory Workshop (IMW), Monterey, CA, USA, pp.
+                           1-4, May 2024.
+
+4
+
+P. Praful, P. Pallavi, and C. Bailey, ``Warpage in wafer-level packaging: a review
+                           of causes, modelling, and mitigation strategies,'' Frontiers in Electronics, vol.
+                           5, 1515860, Jan. 2025.
+
+5
+
+S. McCann, J. Smith, T. Anderson, and R. Brown, ``Warpage and reliability challenges
+                           for stacked silicon interconnect technology in large packages,'' Proc. of the 2018
+                           IEEE 68th Electronic Components and Technology Conference (ECTC), San Diego, CA, USA,
+                           pp. 1-8, May 2018.
+
+6
+
+W. S. Lee, ``Seven years after the A10 processor: the era of heterogeneous integration,''
+                           Proc. of the 2023 IEEE International Interconnect Technology Conference (IITC) and
+                           IEEE Materials for Advanced Metallization Conference (MAM) (IITC/MAM), San Jose, CA,
+                           USA, pp. 1-4, Jun. 2023.
+
+7
+
+P. Chen, Y. Liu, H. Wang, and T. Lin, ``Warpage prediction methodology of extremely
+                           thin package,'' Proc. of the 2017 IEEE 67th Electronic Components and Technology Conference
+                           (ECTC), Orlando, FL, USA, pp. 1-6, May 2017.
+
+8
+
+S. Kang and I. C. Ume, ``Techniques for measuring warpage of chip packages, PWBs,
+                           and PWB assemblies,'' IEEE Transactions on Components, Packaging and Manufacturing
+                           Technology, vol. 3, no. 9, pp. 1533-1544, Sep. 2013.
+
+9
+
+L.-Y. Hong and Y.-T. Li, ``Optimize stencil apertures to eliminate SMT solder defects
+                           by shadow moiré for warpage measurement,'' Proc. of the 2023 18th International Microsystems,
+                           Packaging, Assembly and Circuits Technology Conference (IMPACT), Taipei, Taiwan, pp.
+                           312-316, Oct. 2023.
+
+10
+
+W. Tan and I. C. Ume, ``Warpage measurement of board assemblies using projection moiré
+                           system with improved automatic image segmentation algorithm,'' Proc. of the 2007 57th
+                           Electronic Components and Technology Conference (ECTC), Reno, NV, USA, pp. 1769-1774,
+                           May 2007.
+
+11
+
+F. Qin, S. Zhao, Y. Dai, M. Yang, M. Xiang, and D. Yu, ``Study of warpage evolution
+                           and control for six-side molded WLCSP in different packaging processes,'' IEEE Transactions
+                           on Components, Packaging and Manufacturing Technology, vol. 10, no. 4, pp. 730-738,
+                           Apr. 2020.
+
+12
+
+M.-L. Wu and J.-S. Lan, ``Simulation and experimental study of the warpage of fan-out
+                           wafer-level packaging: The effect of the manufacturing process and optimal design,''
+                           IEEE Transactions on Components, Packaging and Manufacturing Technology, vol. 9, no.
+                           7, pp. 1396-1405, Jul. 2019.
+
+13
+
+K.-W. Jang, J.-H. Park, S.-B. Lee, and K.-W. Paik, ``A study on thermal cycling (T/C)
+                           reliability of anisotropic conductive film (ACF) flip chip assembly for thin chip-on-board
+                           (COB) packages,'' Microelectronics Reliability, vol. 52, no. 6, pp. 1174-1181, Jun.
+                           2012.
+
+14
+
+C. Cai, S. Kim, T. Jung, and Y. Lee, ``Comparative analysis of package warpage using
+                           confocal method and digital image correlation,'' Proc. of the 2020 19th IEEE Intersociety
+                           Conference on Thermal and Thermomechanical Phenomena in Electronic Systems (ITherm),
+                           Orlando, FL, USA, pp. 1-6, Jul. 2020.
+
+15
+
+G. Sun and S. Zhang, ``A review on warpage measurement metrologies for advanced electronic
+                           packaging,'' Microelectronics Reliability, vol. 160, 115456, Apr. 2024.
+
+16
+
+J. M. Trujillo-Sevilla, T. Mori, K. Watanabe, and H. Yamada, ``New wafer shape measurement
+                           technique for 300 mm blank vertically held silicon wafer,'' Proc. of SPIE: Photonic
+                           Instrumentation Engineering X, vol. 12428, San Francisco, CA, USA, pp. 1-8, Jan. 2023.
+
+17
+
+Assignee, Wafer shape and flatness measurement apparatus and method, U.S. Patent 11,105,753
+                           B2, Sep. 7, 2021. https://patents.google.com/patent/US11105753B2/en
+
+18
+
+Assignee, Wafer shape and thickness measurement system utilizing shearing interferometers,
+                           U.S. Patent Application US 20,140,293,291 A1, Oct. 2, 2014. https://patents.google.com/patent/US20140293291A1/en
+
+19
+
+W. S. Yoo, T. Ishigaki, and K. Kang, ``Effects of anisotropy and supporting configuration
+                           on silicon wafer profile measurements for pattern overlay estimation,'' ECS Solid
+                           State Letters, vol. 4, no. 12, p. P91, Dec. 2015.
+
+20
+
+H. Liu, Y. Zhang, X. Li, and J. Wang, ``Analysis of factors affecting gravity-induced
+                           deflection for large and thin wafers in flatness measurement using three-point-support
+                           method,'' Metrology and Measurement Systems, vol. 22, no. 4, pp. 531-546, Dec. 2015.
+
+21
+
+W. Feng, Y. Zhou, T. Nakamura, and K. Sato, ``Study of wafer warpage reduction by
+                           dicing street,'' Japanese Journal of Applied Physics, vol. 61, no. SJ, SJ1001, Jan.
+                           2022.
+
+22
+
+Y. S. Chan, K. H. Ng, M. L. Low, and T. L. Lee, ``Characterization of dicing tape
+                           adhesion for ultra-thin die pick-up process,'' Proc. of the 2014 IEEE 16th Electronics
+                           Packaging Technology Conference (EPTC), Singapore, pp. 1-6, Dec. 2014.
+
+23
+
+S.-W. Lee, H.-J. Kim, J.-Y. Park, and K.-S. Han, ``Adhesion performance and UV-curing
+                           behaviors of interpenetrated structured pressure sensitive adhesives with 3-MPTS for
+                           Si-wafer dicing process,'' Journal of Adhesion Science and Technology, vol. 26, no.
+                           10-11, pp. 1629-1643, Jun. 2012.
+
+24
+
+Y. Yang, A. Winkler, and A. Karimzadeh, ``A practical approach for determination of
+                           thermal stress and temperature-dependent material properties in multilayered thin
+                           films,'' ACS Applied Materials & Interfaces, vol. 16, no. 24, pp. 31729-31737, Jun.
+                           2024.
+
+25
+
+R. Wang, Y. Zhao, L. Chen, and H. Liu, ``Steric and photoreactive control of UV-induced
+                           debonding in acrylic pressure-sensitive adhesives for wafer cutting via isocyanate
+                           monomer grafting,'' European Polymer Journal, vol. 198, 114128, Feb. 2025.
+
+26
+
+W.-C. Chuang and W.-L. Chen, ``Study on the strip warpage issues encountered in the
+                           flip-chip process,'' Materials, vol. 15, no. 1, 323, Jan. 2022.
+
+27
+
+J. Jeon, S. Park, Y. Kim, and H. Lee, ``Residual stress and deformation analysis considering
+                           adhesive material properties to enhance manufacturing of HBM,'' Journal of Materials
+                           Research and Technology, vol. 29, pp. 1-10, Jan. 2025.
+
+Sangyeop Lee
+
+               			Sangyeop Lee received his B.S. degree in naval architecture and ocean engineering
+               from Seoul National University, Seoul, South Korea in 2018. He joined SK hynix Inc.,
+               Icheon, Korea, in 2018, where he has been working in Wafer Level Packaging Team. He
+               is currently engaged in research on Chip Warpage solutions for HBM and the optimization
+               of die warpage. His work also focuses on enhancing the productivity of the SAT.
+
+Junghwi Kim
+
+               			Junghwi Kim received his B.S. degree in mechanical engineering from Inha University,
+               Incheon, South Korea in 2013. He is currently pursuing a master's degree in the Department
+               of Electrical Engineering at KAIST, conducting research on DRAM capacitors based on
+               ferroelectric materials. He joined SK hynix Inc., Icheon, Korea, in 2015, where he
+               has been working in Wafer Level Packaging Team. His research interest is improving
+               measuring the chip level warpage and die shape.
+
+Intae Whoang
+
+               			Intae Whoang received his B.S. degree in industrial engineering from Purdue University,
+               Indiana, United States of America in 2017. He joined SK hynix Inc., Icheon, Korea,
+               in 2018, where he has been working in Wafer Level Packaging Team.  His research interest
+               is process optimization and development for thin film and dry etch process to enhance
+               productivity and to reduce cost of HBM products.
+
+Hongjae Jeong
+
+               			Hongjae Jeong received his B.S. degree in chemical and biomolecular engineering
+               from Yonsei University, Seoul, South Korea in 2018. He joined SK hynix Inc., Icheon,
+               Korea, in 2018, and has been working in the HBM Technology team. His research interest
+               is focused on yield improvement of HBM through process optimization.
+
+Gitae Moon
+
+               			Gitae Moon received his B.S. degree in mechanical engineering from UNIST, Ulsan,
+               South Korea in 2018. He joined SK hynix Inc., Icheon, Korea, in 2018, where he has
+               been working in Wafer Level Packaging Team. His research interests is MR/HMR Stacking
+               Process and development for material to enhance productivity and to reduce cost of
+               HBM products.
+
+Sunghyun Yoon
+
+               			Sunghyun Yoon is working at SK hynix, where he leads research on advanced metrology
+               and inspection technologies for HBM production. His recent work focuses on the integration
+               of semiconductor processes with artificial intelligence, including the development
+               of AI-based defect prediction models for the world's first HBM inspection solution.
+
+Younghoon Lee
+
+               			Younghoon Lee is a part leader at SK hynix Inc., leading metrology and inspection
+               development for advanced semiconductor packaging. He has extensive experience in process
+               optimization and has contributing to the development of innovative techniques for
+               accurate and reliable HBM analysis.
+
+Gwangmin Yoon
+
+               			Gwangmin Yoon is the team leader at SK hynix Inc. He has led multiple initiatives
+               in 3D semiconductor inspection and continues to oversee the development of high-precision
+               measurement solutions for emerging memory technologies of HBM.
+
+Sangyup Lee
+
+               			Sangyup Lee received his B.S. and M.S. degrees in industrial engineering from Ajou
+               University, Suwon, South Korea, in 2016, and Yonsei University, Seoul, South Korea,
+               in 2018, respectively. He joined SK hynix Inc., Icheon, Korea, in 2018, where he worked
+               on WLPKG and HBM process technology. He has contributed to the development of SAT
+               and warpage measurement processes and equipment. He also led data science projects
+               leveraging machine learning to solve manufacturing challenges. He is currently pursuing
+               a Ph.D. degree in the H. Milton Stewart School of Industrial and Systems Engineering
+               at the Georgia Institute of Technology, Atlanta, GA, USA, under the supervision of
+               Prof. Jianjun Shi and Prof. Xiao Liu. His current research focuses on developing advanced
+               3D chip stacking methodologies.
+
+Article Information (continued)
+
+                           [
+
+Research article
+
+                           ]
+
+Index Terms
+ : 
+
+Index Terms
+
+Keyword
+ : 
+ Chip Warpage
+
+Keyword
+ : 
+ UV-induced delamination
+
+Keyword
+ : 
+ large-scale measurement solution
+
+Keyword
+ : 
+ HBM
+
+Keyword
+ : 
+ advanced packaging
+
+This display is generated from NISO JATS XML with 
+jats-style.xsl
+. The XSLT engine is Saxonica.
+
+Copyright © IEIE All right's reserved
+
+Articles published in JSTS are distributed under the terms of the Creative Commons Attribution Non-Commercial License (CC BY-NC 3.0), which permits non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. Commercial use requires the prior permission of the publisher (
+www.theieie.org
+).
+
+ISSN : 1598-1657 (Print)  / 
+ISSN : 2233-4866 (Online)
+

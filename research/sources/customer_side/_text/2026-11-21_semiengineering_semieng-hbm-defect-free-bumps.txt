@@ -1,0 +1,920 @@
+
+
+HBM Leads The Way To Defect-Free Bumps
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                HBM Leads The Way To Defect-Free Bumps                                                    
+
+Test, Measurement & Analytics
+
+HBM Leads The Way To Defect-Free Bumps
+
+Bump scaling is pushing defect inspection to the limit. What comes next and why it matters.
+
+								November 11th, 2025 - 
+
+								By: 
+Laura Peters
+
+High-bandwidth memory stands at the forefront of multiple technology developments as a critical enabler of AI, but it is one of the most difficult modules to manufacture. Leading HBM device makers and foundries must simultaneously handle multi-layer chip stacking, die warpage, and shorter product lifecycles that are shrinking from two years down to just one.
+
+But perhaps the most formidable challenge is introduced through the tightening size and pitch of through-silicon vias (TSVs) and microbumps, whose yield depends on the rapid resolution of defects for each generation of high bandwidth memory. Defect counts surge with the thousands of interconnects that must be flawlessly processed. These trends are pushing inspection tools to their absolute limit.
+
+“Small bumps are the problem, not the large bumps, said Alex Tokar, worldwide application and sales manager, X-ray division at 
+Bruker
+. “X-ray imaging can inspect the bumps as well as the underbump metallization for defects and inconsistencies.”
+
+HBM utilizes more data paths to achieve the high bandwidth needed, but with significantly smaller bump pitches than traditional ball grid arrays (BGAs) in flip chip packaging. For the current generation devices, HBM3E features 30- to 20-micron bumps, but HBM4 will likely scale down to the 10-micron level. “HBM is a key technology driving scaling. For HBM4, some customers are moving to a bump height of only 10 microns,” said Damon Tsai, head of product marketing, inspection products at 
+Onto Innovation
+.
+
+Challenges of scaling copper bumps
+
+In order to stack 16 chips under the height of a single wafer, each wafer backside must be thinned down dramatically, to as thin as 20 microns. Inspection technology of the backside is used in production to ensure flatness across the 300mm wafer. At the same time, the three HBM chipmakers — SK hynix, Samsung, and Micron — are evaluating the inevitable move to hybrid bonding.
+
+“We see so-called hybrid-hybrid bonding as a possible way of transitioning from microbumps to hybrid bonding,” Tsai said. “Here, two wafers use hybrid bonding, accessing the benefits of much shorter interconnects and signal delay, while the next level uses microbumping.”
+
+Tsai noted that warpage is becoming a bigger issue as wafers are thinned down further. “HBM companies are starting to think about wafer-to-wafer bonding, because after thinning, the wafer level is much easier to handle than the die level.”
+
+Another factor that negatively affects yield, reliability, and performance across bumps is an inconsistent bump height (poor coplanarity), which can result from plating non-uniformity and process variability. Meanwhile, a lack of coplanarity affects surrounding areas, inducing mechanical stress, interconnect fatigue, or thermal cycling failures. Latent defects that escape detection during manufacturing can lead to inconsistent contact, which degrades signal integrity, power delivery and reliability. The result of such misalignment causes opens and shorts during flip-chip bonding. [1]
+
+Given the breadth of these challenges, IC manufacturers typically focus on identifying issues after the plating step and before the reflow step (see figure 1). After copper and tin cap electroplating, confocal laser inspection outperforms white light inspection because of reflections off a rough metal surface that cause measurement noise.
+
+Fig. 1: Coherent laser measurements overcome the roughness of as-deposited copper pillars, while white light illumination suffers from scattering noise. After reflow, inline process control and AI analytics enable 3D anomaly detection across thousands of bumps.  Source: Onto Innovation
+
+The construction of 3D bump images benefits from using multiple cameras at different angles. “In the advanced packaging space, devices were laterally based for so long,” said John Hoffman, director of research and development at 
+Nordson Test & Measurement
+. “Now the challenges are vertical, as well. So the relevant metrics relate to the quality and size of the vias and bumps and how the stacking is being performed.”
+
+“When you go with stacking, coplanarity is a critical requirement, so you really want tight control of the flatness,” said Hoffman. “And customers want different capabilities when they stack one device on top of another. So as they’re developing the process they are evaluating ‘do I have to measure every single part and look at the warpage and map these things together or can I control things well enough so that things are really flat?’”
+
+Additionally, flexibility is necessary to accommodate different stages of development and to ramp to high-volume manufacturing. “A flexible tool can provide a profile of your part,” Hoffman said. “Some customers want to match the curvature of the different parts so that the die stacking is successful.”
+
+Why are HBMs so tough to make?
+
+In recent months, SK hynix, Samsung, and Micron have seen soaring demand for HBM. These modules are positioned along the shoreline of AI processors (XPUs) or ASICs in data servers. Because the physical shoreline space is limited, HBM makers must stack multiple DRAMs — 16 layers with a logic base controller, which could grow to 20 layers in HBM4.
+
+To facilitate manufacturing integration, JEDEC standards restrict the total height of the memory module to 775 microns in HBM4, roughly the thickness of a prime silicon wafer. TSVs and copper microbumps vertically interconnect the devices down to the purpose-built interposers, which enable bandwidths far exceeding those delivered by memories like DDR4 and GDDR5.
+
+Microbumps play a critical role in enabling HBM structures by serving as interconnects between dies, and between dies and interposers or substrates. These bumps need to be uniform in height, properly aligned, and defect-free. Microbumps also serve to dissipate heat in multi-die stacks, so the ability to assemble denser, smaller bumps also improves heat dissipation from the HBM modules.
+
+To reach an acceptable yield in the competitive market for HBM, chipmakers are optimizing 3D inspection approaches that can illuminate critical bump defects such as voids, poorly aligned pads, and solder extrusion. Automated optical inspection (AOI) with laser triangulation methods can provide bump height and coplanarity measurements, while X-ray inspection tools are well-suited to measuring hidden bump characteristics. Similarly, acoustic inspection tools are being actively improved to identify any voids in metal interconnects, a growing problem in microbumps, redistribution layers, and other interconnects.
+
+Such defects can occur anywhere among the thousands of copper microbumps connecting stacked chips, which become harder to inspect after the mass reflow or thermocompression bonding (TCB) step. Both Samsung and Micron use thermal compression with non-conductive film (TC-NCF) to bond their microbumps, while SK hynix employs a mass reflow molded underfill (MR-MUF) approach.
+
+Mass reflow is the most mature and the least expensive solder flow option. In general, mass reflow is used whenever possible. Thermocompression and R-LAB (reverse laser-assisted bonding) are both process enhancements to conventional MR that better manage warpage from die-to-die and within the package. Because TCB uses high pressure and high temperature, TC-NCF may not scale as well as MR-MUF approaches.
+
+For HBMs, characterizing and eliminating defects within an acceptable timeframe requires compilation abilities that are only possible using a combination of human expertise with AI data crunching. Add to that the critical choice between hybrid bonding and microbumps, and HBM is truly working at the edge of what is possible in fabricating high-yielding electrical connections.
+
+Interconnect density intensifies with the adoption of hybrid bonding for bond pad interconnects, with less room for error across the wafer and the challenge of detecting particles or microvoids at the Cu-Cu bond pad interface. Undetected voids can lead to open electrical connections, resulting in yield loss, and in extreme cases, wafer breakage.
+
+“Current acoustic technologies are limited to ≥10µm void size sensitivity and require water immersion, which adds the risk of bonded wafer contamination, delamination, and corrosion,” said Onto Innovation’s Tsai. The company is testing an immersion-free opto-acoustic solution at a customer site aimed at detecting ever smaller voids without the risks associated with water immersion.
+
+The cost of bump technologies is lower than that of hybrid bonding, but only if yield levels can be maintained as bumps scale below 20 microns. Microbumps face pitch limitations, especially below 10µm, due to challenges in plating uniformity and solder reflow variability.
+
+The transition from copper pillar bump manufacturing to hybrid bonding depends on the limitations of bumps with scaling, as well as the ease with which front-end wafer-to-wafer bonding can be implemented. “Because some memory makers also have front-end capability, it’s not as difficult to implement wafer-to-wafer bonding as it could be for other companies,” added Tsai.
+
+AI: Making sense of inspection data
+
+Microbumps suffer from a variety of defect types, including solder necking, head-in-pillow, and partial cracks.  A head-in-pillow defect is a latent defect where one ball appears to sink into the one below, resembling a head on a pillow. Once subjected to thermal and/or mechanical stress, a non-wet fault can occur. X-ray imaging can be instrumental in identifying marginal failures like head-in-pillow caused by bump misalignment from wafer tilt.
+
+Fig. 2: Gradual transition from good bumps to non-wet defect caused by die tilt. Source: Bruker
+
+It’s critical to catch these marginal defects using early inspection steps. The electrical connection means it will typically pass testing, but may show up as a high resistance connection. Later in the process, or when HBMs are in the field, the introduction of mechanical or thermal stress can lead to complete failure — an open, non-wet. Enabling real-time defect analysis and feedback to process equipment for statistical process control effectively reduces the cycle time of these yield loss assessments.
+
+Whether microbump defects are collected using optical, laser, X-ray, or acoustic inspection, compiling the massive amounts of data from the 3D bump assembly can significantly benefit from AI processing, which can improve the speed and accuracy of automated 3D defect detection methods. Depending on the customer, metrology suppliers often partner with customers to aid in inspection/metrology data analysis.
+
+“That becomes a big question,” said Nordson’s Hoffman. “‘How do we inject our data into their factory automation systems? Or does it work better as standalone capability?’ We support all kinds of different use cases.”
+
+A big part of using AI for metrology data analytics involves developing a multi-view approach to increase the robustness of defect detection. For example, A*STAR researcher Richard Chang and colleagues recently demonstrated how 3D X-ray scanning data, together with convolutional neural networks and vision transformers, improved detection accuracy and enabled comprehensive reports on hundreds of microbumps within minutes. [2]
+
+The researchers applied both deep learning and large language models to enable better defect detection accuracy, along with the assignment of fewer labels. “We detect individual HBMs consisting of multiple components along with providing a full report for the scanned chip providing 3D metrology information, details on defects, and possible root cause analysis for the defects,” stated the authors. The approach focuses on four features: bond-line thickness, solder-to-void ratio, pad misalignment, and solder extrusion, while also measuring copper pillar width and height.
+
+A*STAR’s segmentation method identifies defects from four regions of the bump – copper pillar, copper pad, void and solder  –based on transversal views, sagittal views and compiled 3D views of bump arrays. Generative AI reports then highlight potential failure patterns and suggest corrective actions. The approach also prioritizes critical defects based on historical and real-time data.
+
+A key role for GenAI lies in quickly creating reports based on queries. This enables root cause analysis back to the tool or process that caused the fault. “We then propose a fully automated system that, with one click, is able to provide a comprehensive report of the entire 3D scan consisting of more than 400 bumps in under 5 minutes,” the authors concluded.
+
+At the individual tool level, another area where AI can help is in separating measurement noise from the desired image, a result of the various film interfaces in stacked chips. In X-ray inspection, slight  adjustments in the imaging process can reduce noise and optimize image clarity. This may involve adjusting energy settings, power levels, or exposure times.
+
+Control of the X-ray dose is especially critical because X-rays potentially can damage sensitive devices, a top-line concern for memory chips. After all, such damage can degrade device performance and reliability.
+
+Conclusion
+
+With the transition to HBM4, chipmakers are facing multiple challenges associated with scaling copper microbumps to 10 microns in size, deciding when and how to migrate from microbumps to hybrid bonding, and choosing the best methods to analyze reams of data streaming from automated inspection methods.
+
+Microbumps suffer from a variety of defect types, including pad misalignment, solder necking, head-in-pillow, and partial cracks. The great challenge of inspecting and controlling thousands of bumps between die and from die to substrate lies in analyzing thousands of images in a reasonable timeframe. Defects such as solder extrusion and voids need to be traced back to their source for rapid prevention during manufacturing.
+
+A*STAR researchers suggested the following remedies: [2]
+
+Solder extrusion defects
+ occur due to excessive solder paste application, improper reflow temperature profile or insufficient solder mask coverage. Manufacturers should optimize solder paste volume control, adjust reflow temperature profiles and ensure proper solder mask coverage.
+
+Pad misalignment defects
+ arise due to improper alignment during die placement, PCB warpage, or inaccuracies during the stencil design. Manufacturers should implement high-accuracy placement techniques, ensure PCB flatness during assembly, and use accurate stencil alignment for consistent solder deposition.
+
+As HBM vendors approach the transition to HBM4, having an analytics framework and inspection methodology in place to detect the myriad bump defects and defect patterns from development to high-volume manufacturing will be key to producing modules with high yield.
+
+References
+
+https://semiengineering.com/interconnect-innovations-in-high-bandwidth-memory-part-2/
+
+R. Chang, et. al, “Efficient Visual Inspection Framework of High-Bandwidth Memory Bumps with Generative and Deep Learning AI,” 2025 IEEE 75th Electronic Components and Technology Conference (ECTC), Dallas, TX, USA, 2025, pp. 920-926, doi: 10.1109/ECTC51687.2025.00161.
+
+Related Reading
+
+HBM Options Increase As AI Demand Soars
+
+But manufacturing reliable 3D DRAM stacks with good yield is complex and costly.
+
+X-ray Inspection Becoming Essential In Advanced Packaging
+
+Improvements in speed and precision have transformed a research tool for studying defects in chips into an industry workhorse.
+
+Progress In Wafer And Package Level Defect Inspection
+
+Advances in imaging systems aim to improve throughput without sacrificing measurement accuracy.
+
+ Tags:
+
+A*Star
+
+Bruker
+
+defectivity
+
+GDDR
+
+HBM
+
+hybrid bonding
+
+interconnects
+
+microbumps
+
+Nordson Test & Inspection
+
+Onto Innovation
+
+stacked die
+
+TSVs
+
+Laura Peters 
+
+(all posts)
+
+							Laura Peters is senior executive editor for manufacturing and test at Semiconductor Engineering.
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+

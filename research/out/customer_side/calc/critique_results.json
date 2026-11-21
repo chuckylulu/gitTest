@@ -1,0 +1,1087 @@
+{
+ "narrative": {
+  "problems": [
+   {
+    "location": "Bottom line, bullet 1: \"What the seven name for HBM and bonded stacks is mostly electrical test and acoustic microscopy, and mostly on test vehicles ... [I] SYN-001 to SYN-070, Section 5\"",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "SYN-001..SYN-070; calc/section1_table.csv; PAPM-136, PAPM-016, PAPL-035, TALK-051, PAPM-221, PAPM-058, PAPL-036, PAPL-108, PAPL-115",
+    "explanation": "The dossier's own Section 1 data contradict the ranking. Among the 37 non-press Section 1 documents on the six named steps (in_scope_step=Y), electrical test and e-beam (SEM/TEM/FIB) are each named in 11. Acoustic and AFM are named in 5 each, optical in 4, and X-ray CT and infrared in 3 each. Acoustic is tied for third, not second, and e-beam is left out. The cited SYN rows hold per-company status and do not support a frequency claim. The acoustic examples also carry no ids.",
+    "exact_fix": "- **What the seven name for HBM and bonded stacks is mostly electrical test and electron-beam imaging (SEM/TEM, FIB cross-section), then AFM and acoustic microscopy, and mostly on test vehicles or in failure analysis.** Of the 37 non-press Section 1 documents on the six named steps, electrical test and e-beam are each named in 11, acoustic microscopy and AFM in 5 each, optical in 4, X-ray CT and infrared in 3 each (count from `calc/section1_table.csv`). Examples:\n  - electrical test: daisy chains, interface resistance and leakage;\n  - e-beam: SK hynix FIB cross-section of TSV film [F] PAPM-221; Samsung TEM of pre-bond SiCN [F] PAPM-058; Intel FIB-SEM on C2W hybrid-bond Kelvin structures [F] PAPL-036; ASE SEM/TEM/EDS of bonded interfaces [F] PAPL-108, PAPL-115;\n  - scanning acoustic microscopy (C-SAM / SAT / cSAM): SK hynix HBM4 test vehicle [F] PAPM-136; Micron wafer-to-wafer bonding [F] PAPM-016; Intel chip-to-wafer hybrid bonding [F] PAPL-035; Amkor 2.5D test vehicle [F] TALK-051.\n  The status words are \"test vehicle\", \"feasible\", \"demonstrated\" or \"examined\". [I] SYN-003, SYN-009, SYN-023, SYN-043, SYN-048, SYN-049, SYN-058, SYN-059, SYN-063, Medium"
+   },
+   {
+    "location": "Bottom line, bullet 2, first sub-bullet: \"SK hynix's optimised TSV-film process, with its IR inspection and FIB cross-section checks, was 'successfully applied in mass production' [C] PAPM-222.\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-222, PAPM-219, PAPM-221",
+    "explanation": "The JSTS full text applies the mass-production sentence to the optimised TEOS SiO2 deposition recipe: 'The optimized process was successfully applied in mass production ... with no significant differences in yield or inspection results.' The IR inspection image (Fig. 6) and the FIB cross-section comparison (Fig. 14) were used to qualify the recipe change. The paper does not say they are routine production inspection steps. The FIB cross-section is a one-off step-coverage comparison. Bundling the checks into the production claim turns a deposition-recipe claim into a production-inspection claim. The bullet heading ('Production wording for an HBM-line inspection or measurement step') depends on that.",
+    "exact_fix": "- **Production wording near HBM-line inspection or measurement comes only from SK hynix, and only as its own untestable claims:**\n  - SK hynix says its optimised TSV-liner (TEOS SiO2) deposition recipe was \"successfully applied in mass production\" with \"no significant differences in yield or inspection results\" [C] PAPM-222. The paper used its CVD-film IR inspection image and FIB cross-sections to qualify that recipe change and does not say they are routine production inspection steps [F] PAPM-219, PAPM-221."
+   },
+   {
+    "location": "Bottom line, bullet 2, second sub-bullet: \"SK hynix's in-line optical chip-warpage method for HBM is a 'commercialized solution currently in use' [C] PAPM-201.\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-201, PAPM-202",
+    "explanation": "PAPM-201 says the results were 'implemented into measurement equipment and developed into a commercialized solution currently in use'. PAPM-202 says the method 'has been transferred to measurement equipment suppliers' and commercialised as an LSCW solution. Neither row says the solution is in use on SK hynix's own HBM line, which the bullet heading ('HBM-line') implies.",
+    "exact_fix": "  - SK hynix says its in-line chip-warpage method for HBM was \"implemented into measurement equipment and developed into a commercialized solution currently in use\", after transfer \"to measurement equipment suppliers\"; the paper does not say where it is in use [C] PAPM-201, PAPM-202."
+   },
+   {
+    "location": "Bottom line, bullet 4: \"The non-electrical methods for bonded interfaces stay in development, with two exceptions:\" followed by four sub-bullets",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "PAPL-046, PAPL-059, PAPM-212, PAPM-213, PAPM-216, SMP-016",
+    "explanation": "The heading announces two exceptions, but four sub-bullets follow. The first two (Intel NIR, Intel 100% overlay) are development items, not exceptions. The SK hynix item concerns micro-bump-stacked HBM, not hybrid bonds, and its 'by IR ... post-bond die shift and tilt' wording is supported by PAPM-212/213, which are not cited. 'Samsung ran in-line AFM' misattributes a Nearfield-led paper: per SMP-016, 13 of 23 authors are from Nearfield, including the first and last authors. SMP-016 also gives six wafers, not three.",
+    "exact_fix": "- **Non-electrical methods for bonded interfaces stay in development:**\n  - Intel's near-infrared post-bond overlay mapping is on a test vehicle [F] PAPL-046.\n  - Intel's 100% chip-to-wafer overlay metrology is in development with a roadmap [F] PAPL-059.\n- **Two items come closer to production, both short of a deployment statement:**\n  - SK hynix validated IR measurement of post-bond die shift and tilt in micro-bump-stacked HBM (not hybrid bonds) \"using actual HBM device wafers in a production-grade MI setup\" [F] PAPM-212, PAPM-213, PAPM-216.\n  - A Nearfield-led paper with ten Samsung co-authors reports in-line AFM \"performed on production wafers in the fab\" (six wafers) for V-NAND (not HBM) hybrid bonding [F] SMP-016."
+   },
+   {
+    "location": "Bottom line, bullet 5: \"X-ray appears as failure-analysis practice (ASE 3D X-ray microscopy [F] PAPL-107; Intel CT and synchrotron work [F] PAPL-067, PAPL-082)\"",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "PAPL-067, PAPL-082, PAPL-107, XR-023",
+    "explanation": "PAPL-067 is 3D X-ray CT verifying TCB joint quality in process research for co-packaged optics, not failure analysis. PAPL-082 is speed-path debug by X-ray-assisted device alteration on a mock stacked die. There X-ray perturbs devices and does not inspect them. Neither is failure-analysis practice. The Intel X-ray CT paper that is FA (Intel/Comet de-warping of CT data, XR-023) is not cited.",
+    "exact_fix": "  - X-ray appears in failure analysis (ASE 3D X-ray microscopy [F] PAPL-107; Intel CT de-warping with Comet, on FCPGA packages [F] XR-023), in process-research verification (Intel 3D X-ray CT of TCB micro-bump joints [F] PAPL-067), in post-silicon debug by X-ray-assisted device alteration on a mock stacked die (Intel, synchrotron [F] PAPL-082), as \"examined\" (Samsung [F] TALK-020), in a patent application (Samsung [F] XR-012) and as a stated concern about memory damage (Intel [F] XR-001; TSMC per press [S] XR-013)."
+   },
+   {
+    "location": "Bottom line, bullet 5: \"Laser-acoustic use at Samsung is reported only by trade press citing industry sources [S] TALK-024.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "TALK-024, TALK-025, SYN-014",
+    "explanation": "TALK-024 does not name the laser-acoustic technique. That comes from TALK-025 ('laser ultrasound technology based on photoacoustic measurement'). TALK-024 also reports 'begun introducing' and 'reportedly undergoing validation on mass production lines', which is weaker than 'use'. SYN-014 itself says 'validation'.",
+    "exact_fix": "  - That Samsung has begun introducing laser-ultrasound (photoacoustic) hybrid-bonding inspection tools, reportedly \"undergoing validation on mass production lines\", comes only from trade press citing industry sources [S] TALK-024, TALK-025."
+   },
+   {
+    "location": "Bottom line, bullet 6: \"Intel exposed on-package DRAM to 350 rad, which it calls three times the DRAM maker's limit, with no functional errors ... [F] XR-002, XR-003.\"",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "XR-002, XR-003, XR-035",
+    "explanation": "Intel's text (p54) gives '350 rads ... no errors' and then 'overexposure to three times the limit provided by DRAM manufacturer'. It never states that 350 rad is the 'three times' figure. Section 2.1 treats that equation as the analyst's Low-confidence inference (XR-035, about 117 rad). The bottom line presents it as Intel's own [F] statement.",
+    "exact_fix": "  - Intel exposed on-package DRAM to a total of 350 rad in 50-rad steps with no MemTest86 errors [F] XR-002, and says the results show no infant-mortality failures \"even after overexposure to three times the limit provided by DRAM manufacturer\"; long-term reliability \"may be reduced\" [F] XR-003. Reading 350 rad as that \"three times\" (a limit of about 117 rad) is my inference [I] XR-035, Low."
+   },
+   {
+    "location": "Bottom line, bullet 7 (Sampling intensity): \"Direct evidence of more measurements per stack or wafer: ... SK hynix presents virtual metrology as extending coverage ... Micron cites VM ... No company gives an HBM test-time or insertion count [I] SMP-041.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "SMP-001, SMP-005, SMP-008, SMP-016, SMP-025, SMP-011, SMP-040, SMP-041, SMP-042",
+    "explanation": "The SK hynix and Micron sentences carry no tag or id. 'Direct evidence of more measurements' overstates items that are development (Intel), a proposal (Samsung pre-screen) or a stated need in a vendor-led paper (SMP-016, Nearfield-led). 'No company gives an HBM ... insertion count' conflicts with Section 3.4, which lists '2 wafer-level test steps named' from SK hynix's Hot Chips slides (via press, SMP-011). SMP-041 says only that none gives a count change.",
+    "exact_fix": "- **Sampling intensity.** Statements pointing to more measurements per stack or wafer, all development or proposals:\n  - Intel (with EV Group) says current chip-to-wafer bond-overlay tools use \"reduced sampling plans\", and it presents an on-the-move method for \"100% chiplet inspection\" as development on its roadmap [F] SMP-030, SMP-031;\n  - Samsung's proposed micro-bump pre-screen for mass production [F] PAPM-049;\n  - the call for \"massive metrology\" for V-NAND hybrid bonding in a Nearfield-led paper with Samsung co-authors [F] SMP-016.\n  SK hynix presents virtual metrology as giving \"quality inspections for every wafer\" [C] SMP-001 and as covering the \"low sampling rates\" and \"sampling blind spots\" of physical metrology [F] SMP-005, SMP-008. Micron cites VM \"to improve sampling efficiency\" without a number [F] SMP-025; that could include fewer physical measurements. No company discloses a percentage cut in physical measurements [I] SMP-042. No company gives an HBM test time or a change in the number of HBM test insertions; the only insertion figures are press reports [I] SMP-041."
+   },
+   {
+    "location": "Bottom line, bullet 8 (Awards): \"No award category read names an HBM or hybrid-bonding product. The one award tied to HBM inspection is Onto Innovation's reported SK hynix 2026 Best Partner Award, which is NOT RETRIEVED (gaps.md).\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "AW-019, AW-034, AW-058",
+    "explanation": "The Onto award has no evidence row and no tag. It is known only from a URL and search lead (gaps.md: release NOT RETRIEVED; AW-034 note). The rules say a lead is not a source, so 'The one award tied to HBM inspection is ...' states it as established. 'No award category ... names ...' also skips Teradyne's TSMC OIP award for '3DFabric Testing', which is TSMC's 3D packaging family (SoIC, CoWoS) and the nearest case. AW-058 supports the 1-in-10 count only.",
+    "exact_fix": "- **Awards rarely mark HBM or hybrid-bonding inspection.** On the award lists read in full, inspection, metrology and test vendors are about 1 winner in 10 [I] AW-058. No award category read names HBM or hybrid bonding; the nearest is Teradyne's TSMC OIP Partner of the Year 2025 for \"3DFabric Testing\", a design-ecosystem award [F] AW-019. A search lead says Onto Innovation received an SK hynix 2026 Best Partner Award \"for Hidden Defect Prevention in High Bandwidth Memory Production\"; the release is NOT RETRIEVED (tried: investors.ontoinnovation.com, refused; Business Wire copy, stream error), so the award is unverified (gaps.md)."
+   },
+   {
+    "location": "Bottom line, bullet 9: \"Tool vendors named by the chipmakers themselves: ... Nearfield (co-author of Samsung's in-line AFM paper) ... Tokyo Electron (co-author of SK hynix's bond-wave paper) [F] PAPM-144 ... Thermo Fisher and Hamamatsu (failure-analysis tools) [F] PAPM-095, PAPM-081 ... KLA, Onto, Camtek, Nova, Lasertec and Advantest appear as award winners, not in technical texts.\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPM-143, PAPM-144, SMP-016, PAPM-095, PAPM-081, PAPM-090, PAPM-034, PAPM-223, PAPM-225, XR-023, PAPM-172, PAPM-174, TALK-024",
+    "explanation": "The bond-wave paper is led by Yokohama National University (first and last authors); SK hynix supplies 4 of 10 authors (PAPM-143), so it is not 'SK hynix's paper'. The AFM paper is Nearfield-led (13 of 23 authors), not 'Samsung's'. PAPM-095 comes from a vendor-led paper (5 of 6 authors ThermoFisher). PAPM-081 is only a Hamamatsu co-author affiliation, and Section 1 says 'abstract names no tool maker', so Hamamatsu is not named as a tool. The Hitachi naming comes from an SKKU degree-programme paper that the PAPM-223 note calls 'not an official Samsung Electronics paper'. The heading 'named by the chipmakers themselves' covers several vendors that are only co-author affiliations. Onto is named by press as Samsung's JDP vendor, and ASML is named in Micron-device SPIE abstracts, so the closing sentence is incomplete.",
+    "exact_fix": "- **Tool vendors named in, or co-authoring, the chipmakers' documents:**\n  - Hitachi High-Tech IS4100 (Samsung DRAM HVM line; named in an SKKU degree-programme paper whose first author is a Samsung engineer) [F] PAPM-223, PAPM-225;\n  - Nearfield Instruments (leads the in-line AFM paper, 13 of 23 authors, with ten Samsung co-authors) [F] SMP-016;\n  - EV Group (co-author of Intel's 100% overlay paper) [F] PAPL-061;\n  - Applied Materials (co-author of Intel's hybrid-bonding CMP paper; the cSAM and FIB-SEM makers are not named) [F] PAPL-038;\n  - Tokyo Electron (co-author of a Yokohama National University-led bond-wave paper with four SK hynix co-authors) [F] PAPM-143, PAPM-144;\n  - Gauss Labs, whose Panoptes VM SK hynix says it has used in production since 2022 [C] TALK-004;\n  - NexSensor and Cobis Technology (SK hynix tool co-development) [F] TALK-009, TALK-012;\n  - Thermo Fisher (iFAST platform named in a Samsung-majority ISTFA 2026 FA paper; co-author of a joint Micron FIB paper) [F] PAPM-090, PAPM-034;\n  - Hamamatsu Photonics (co-author affiliation on a Samsung FA paper; no tool named in the abstract) [F] PAPM-081;\n  - PVA TePla (co-author of ASE's AI-SAM paper) [F] SMP-037;\n  - Comet (co-author of an Intel X-ray CT de-warping paper on FCPGA packages; not in the Section 1 table) [F] XR-023;\n  - Akrometrix (reference only) [F] PAPM-204.\n  ASML is named (multi-beam e-beam inspection; virtual computing platform) in two SPIE abstracts on Micron devices whose authors are not recorded [F] PAPM-172, PAPM-174. KLA, Camtek, Nova, Lasertec and Advantest appear only as award winners; Onto Innovation appears as an award winner and, in press only, as Samsung's hybrid-bonding inspection JDP vendor [S] TALK-024."
+   },
+   {
+    "location": "Section 0, item 3: \"Neither memory maker says its HBM is hybrid-bonded today. ... Production statements about hybrid bonding exist only for wafer-to-wafer V-NAND (Samsung, Section 1) and outside memory.\"",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "TALK-014, TALK-021, TALK-034, SMP-016, SYN-017",
+    "explanation": "The scope has three memory makers, so 'Neither' is wrong; Micron's position (TALK-021, an 'outlook' talk) is not mentioned. The first and last sentences carry no tag. Calling the Samsung/Nearfield V-NAND item a 'production statement' contradicts Section 5, which rates it PILOT ('validated on production wafers ... without a deployment statement'), and the bottom line, which treats it as an exception short of production. 'and outside memory' has no evidence: no in-period document read gives a production statement for hybrid-bonding inspection outside memory, and item 4 says no TSMC SoIC method was found. TALK-034 comes from an undated product page, which should be said.",
+    "exact_fix": "3. **\"Hybrid-bonded HBM\" as a current product.** None of the three memory makers says in a document read that its HBM is hybrid-bonded today [I] TALK-014, TALK-021, TALK-034. A guest tech note by Prof. Seunghwan Joo (Inha University), hosted on SK hynix's newsroom in August 2026, says die-to-wafer hybrid bonding for HBM is \"progressing toward commercialization\". That is not SK hynix's own statement [S] TALK-014. Samsung's undated HBM3E product-page FAQ says it is \"preparing to adopt\" hybrid copper bonding [C] TALK-034. Micron's VLSI 2025 workshop talk is an \"outlook\" for chip-to-wafer hybrid-bonded memory stacking [F] TALK-021. Inspection statements about hybrid-bonded HBM are therefore development statements. No in-period document read gives a production statement for a hybrid-bonding inspection or measurement step. The closest is in-line AFM \"performed on production wafers in the fab\" for V-NAND wafer-to-wafer hybrid bonding, in a Nearfield-led paper with Samsung co-authors, which Section 5 rates pilot [F] SMP-016."
+   },
+   {
+    "location": "Section 0, item 4: \"No in-period TSMC document read names an SoIC inspection or sampling method. TSMC's SoIC-CS paper shows only daisy-chain results [F] PAPL-010.\"",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "PAPL-010, PAPL-012, SYN-039",
+    "explanation": "Section 5 (SYN-039) counts the SoIC-CS daisy chains as a TSMC electrical-test method, so it is inconsistent to say that no TSMC document names an SoIC method. 'Shows only daisy-chain results' overstates what an abstract can show. The abstract says the daisy-chain yield was 'also' demonstrated, which implies other (thermal) results; only the abstract was read.",
+    "exact_fix": "4. **TSMC SoIC and Intel Foveros Direct.** Intel's 100% bond-overlay paper describes chip-to-wafer hybrid-bonding metrology \"at Intel\" but does not name Foveros Direct [F] PAPL-059. TSMC's SoIC-CS abstract reports, as its only test of the bonded stack, that \"high integration yield on daisy chains has also been successfully demonstrated\" [F] PAPL-010. Apart from that daisy-chain electrical test, no in-period TSMC document read names a method or a sampling plan for inspecting or measuring SoIC bonds [I] SYN-039, MAIN-006."
+   },
+   {
+    "location": "Section 0, item 5, second bullet: \"Samsung's semiconductor award event is the 'DS 상생협력 Day'. 'Best Partner Award' is SK hynix's term [F] AW-033, AW-040.\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "AW-032, AW-033, AW-034, AW-040",
+    "explanation": "AW-033 is a ULVAC vendor release. SK hynix's own Korean newsroom pages (AW-032, AW-034) call the event '파트너스데이' and the winners '우수 협력사'. They never use 'Best Partner Award' (checked in the saved HTML). The English term is the vendors' wording (ULVAC, FormFactor, Onto), not SK hynix's.",
+    "exact_fix": "   - Samsung's semiconductor award event is the \"DS 상생협력 Day\" [F] AW-040. SK hynix's own Korean newsroom calls its event \"파트너스데이\" (Partners Day) and the winners \"우수 협력사\" [F] AW-032, AW-034; \"Best Partner Award\" is the English name used in vendors' releases (e.g. ULVAC) [F] AW-033."
+   },
+   {
+    "location": "Section 0, item 7, second bullet: \"SPIE records carry no affiliations. A SPIE paper is attributed to a company only where its abstract names the company; otherwise the attribution is [I].\" (also Section 1 'How to read it': \"a row tagged [I] is attributed to the chipmaker by inference (SPIE records without affiliations)\")",
+    "problem": "overstates_evidence",
+    "evidence_ids": "SMP-016, SMP-017, PAPM-166, PAPM-171, PAPM-170, PAPM-165",
+    "explanation": "SPIE journal (J. Micro/Nanopatterning) Crossref records do carry affiliations: SMP-016 lists 10 Samsung and 13 Nearfield authors, and SMP-017 lists Samsung authors. The rule 'abstract names the company' also conflicts with the research question, which admits vendor material only where the company co-authors it. PAPM-171 ('evaluates the performance of this MBI tool on Micron Technology's DRAM') and PAPM-166 ('implemented in collaboration with Micron') name Micron's devices or collaboration, not Micron authorship, yet Section 1 tags them [F] as Micron documents.",
+    "exact_fix": "   - SPIE proceedings records in Crossref carry no affiliations (SPIE journal records such as J. Micro/Nanopatterning do). A SPIE proceedings paper is attributed to a company only where its abstract or the company's own release names it as an author. Where the abstract names only the company's devices or says \"in collaboration with\" it (e.g. PAPM-166, PAPM-171), authorship is unknown and the paper may be vendor material, so the attribution is [I] (retag the Section 1 rows for 10.1117/12.3056182, 10.1117/12.3093590 and 10.1117/12.3092424 from [F] to [I])."
+   },
+   {
+    "location": "Section 0, item 7, third bullet: \"The IITC 2026 programme was read directly and has no in-scope paper by the seven [F] MAIN-004.\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "MAIN-004",
+    "explanation": "MAIN-004 records a Micron invited talk, '14.1 Advanced Memory Stacking: Thermal, Process and Reliability Challenges', known by title only. Whether it covers inspection or measurement is unknown, so 'no in-scope paper' is a title-level judgement.",
+    "exact_fix": "   - IITC 2026 and IPFA 2026 are not yet in Crossref. The IITC 2026 programme was read directly. No title by the seven names inspection or measurement of HBM stacks or hybrid bonds; Micron's invited talk \"Advanced Memory Stacking: Thermal, Process and Reliability Challenges\" is known by title only [F] MAIN-004."
+   },
+   {
+    "location": "Section 0, item 8: \"Samsung Electro-Mechanics and Samsung Display are separate companies and are excluded. [I] MAIN-003\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "MAIN-003",
+    "explanation": "MAIN-003 covers only the HANA Micron exclusion (5 ECTC papers). No evidence row covers the Samsung Electro-Mechanics / Samsung Display exclusion, so that sentence has no support.",
+    "exact_fix": "8. **Company names.** \"HANA Micron\", a Korean OSAT, is not Micron Technology; five papers were dropped from the inventory for this reason [I] MAIN-003. Samsung Electro-Mechanics and Samsung Display are separate companies and are excluded (scope decision; no evidence row, add a MAIN row listing any papers dropped for this reason)."
+   },
+   {
+    "location": "Section 2.1, 'Reading of the table': \"Dose numbers. The only chipmaker dose numbers in the period are Intel's, for on-package DRAM [I] XR-038.\" and \"The only HBM-specific statements are a Samsung patent application with no numbers [F] XR-012\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "XR-002, XR-005, XR-009, XR-011, XR-012, XR-013, XR-015, XR-038",
+    "explanation": "XR-038 covers which companies made damage statements and says none came from SK hynix, ASE or Amkor. It does not establish that Intel's are the only dose numbers; that rests on XR-002/005 and on XR-009/011 having no values. XR-012 does carry a number (microbumps of 1 um or less), so 'no numbers' should be 'no dose numbers'. The no-dose statement itself is in XR-011.",
+    "exact_fix": "- **Dose numbers.** The only chipmaker dose numbers in the period are Intel's, for on-package DRAM [F] XR-002, XR-005; Micron's co-authored study and Samsung's patent application give no dose values [F] XR-009, XR-011; nothing from SK hynix, ASE or Amkor [I] XR-038.\n- **HBM-specific statements.** The only HBM-specific statements are a Samsung patent application with no dose numbers [F] XR-011, XR-012 and a TSMC talk known through the press [S] XR-013, XR-015."
+   },
+   {
+    "location": "Section 2.2 (c), third bullet: \"An investor blog (7 Sep 2026) ... It says TSMC named SK hynix, Samsung and Micron and asked for X-ray markers in HBM dies. ... The DIGITIMES caption names only 'TSMC's Zhihua Zou' [S] XR-019.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "XR-019, XR-014",
+    "explanation": "XR-019's claim and quote cover only the team and closing-session attribution, so the naming and markers statements have no evidence row. In the blog, the markers are the blogger's gloss ('其實就是要在晶粒裡預留專門給 X 光量測使用的標記'); what it attributes to TSMC is 'Design for Inspection, DFI'. The caption sentence cites XR-019, but the caption row is XR-014.",
+    "exact_fix": "- An investor blog (7 Sep 2026) attributes the talk to TSMC's advanced-packaging quality-and-reliability team at the closing session [S] XR-019, Low. The same blog says TSMC named SK hynix, Samsung and Micron and called for \"Design for Inspection\" (DFI) in HBM dies; the X-ray markers it describes are the blogger's own gloss (no evidence row for these statements). No other saved source corroborates the team, session or naming claims; the DIGITIMES caption names only \"TSMC's Zhihua Zou\" [S] XR-014."
+   },
+   {
+    "location": "Section 3.1: \"SK hynix warpage: from destructive sampling to all chips. SK hynix replaced destructive warpage sampling (a sample 'far too small') with in-line measurement of all chips on a wafer ... [F] PAPM-206, PAPM-208.\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-200, PAPM-201, PAPM-206, PAPM-208",
+    "explanation": "PAPM-206 and PAPM-208 support the method's throughput and the inadequacy of prior sampling. 'Replaced' is a deployment claim. The only deployment wording is the [C] 'commercialized solution currently in use' (PAPM-201), which does not say SK hynix's own line switched, and the paper frames the method as 'applicable in in-line manufacturing' (PAPM-200). Tagging 'replaced' as [F] upgrades a [C].",
+    "exact_fix": "- **SK hynix warpage: from destructive sampling to all chips (method; deployment is a company claim).** SK hynix presents an in-line method that measures all chips on a wafer, at about 7-10 minutes for 600 chips, in place of destructive sampling whose sample is \"far too small\" [F] PAPM-206, PAPM-208. That the method is \"currently in use\" is SK hynix's own claim, and the paper does not say where [C] PAPM-201."
+   },
+   {
+    "location": "Section 3.1: \"SK hynix: test insertions are visible, but there are no counts.\" and \"Overall direction ... No chipmaker publishes a count or a test time [I] SMP-041.\"",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "SMP-011, SMP-040, SMP-041",
+    "explanation": "Section 3.4 lists '2 wafer-level test steps named' for SK hynix's Hot Chips 2026 flow (SMP-011, via press). SMP-041 says that none gives a 'count change', not that none gives a count.",
+    "exact_fix": "- **SK hynix: test insertions are visible, but there is no count change or test time.** ... \n- **Overall direction.** Samsung papers, an Amkor web page, and trade-press reports on SK hynix and Amkor point to more test items and insertions and higher test cost. The SK hynix SiP-test item is press only. No chipmaker publishes a change in insertion count or a test time; the only insertion figures are press reports (two wafer-level test steps in SK hynix's Hot Chips flow [S] SMP-011; an unattributed 3-12 per 12-high stack [S] SMP-040) [I] SMP-041."
+   },
+   {
+    "location": "Section 3.1: \"Amkor: more insertions, by its own offer and its executive's words. Amkor's test page offers distributed test ... [C] SMP-038.\"",
+    "problem": "period_wrong",
+    "evidence_ids": "SMP-038, SMP-039, SMP-041, SYN-069",
+    "explanation": "The SMP-038 note says the page was first published in 2017 and modified on 2026-06-17, and the date of the quoted text is not stated, so it may not be in period (SMP-041 repeats this). The dossier presents it as in-period evidence of 'more insertions'. The same caveat applies to Section 5's Amkor PROD (offer [C]) cell, which rests on this page.",
+    "exact_fix": "- **Amkor: intermediate insertions offered, and called increasingly critical by its executive.**\n  - Amkor's test page offers distributed test, including \"in-situ test between key assembly steps and final test (SLT and ATE) for 2.5D & 3D\". HBM is named only as market context, and the date of this text is not stated (page first published 2017, modified June 2026), so it may predate the period [C] SMP-038."
+   },
+   {
+    "location": "Section 3.2: \"TSMC. Its packaging unit ranks outlier dies from inline data by ML, with a 9x gain over baseline. The adaptive, targeted test stage is 'envisioned' [F] SMP-035.\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "SMP-035",
+    "explanation": "'Its packaging unit ranks' reads as current practice. The abstract reports 'Experimental results demonstrate a 9-fold improvement' and defines no metric, and production use is not stated.",
+    "exact_fix": "- **TSMC.** An IRPS 2026 paper from its packaging unit reports that ML ranking of inline data identified outlier dies 9-fold better than a baseline in experiments (metric not defined); the adaptive, targeted test stage is \"envisioned\" [F] SMP-035. Nothing names SoIC or says the ranking is in production use."
+   },
+   {
+    "location": "Section 3.3, Samsung: \"In DRAM development, measurements cover 'only about 4% of the products', and ML imputation fills in the rest [F] PAPM-099.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "PAPM-099, PAPM-100",
+    "explanation": "PAPM-099 supports only the 4% figure. The imputation statement ('we managed to fill the absence by developing a missing data imputation method') is PAPM-100.",
+    "exact_fix": "  - In DRAM development, measurements cover \"only about 4% of the products\", and ML imputation fills the missing values [F] PAPM-099, PAPM-100."
+   },
+   {
+    "location": "Section 3.3, SK hynix: \"SK hynix says GRACE overlay VM has run in production since 2025 [C] SMP-007.\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "SMP-007, SMP-008",
+    "explanation": "SMP-007 says SK hynix 'has been applying this framework in its production environment since last year'. The framework is GRACE, an explainability framework for overlay VM (SMP-008), not the VM itself.",
+    "exact_fix": "  - SK hynix says it has applied GRACE, an explainability framework for overlay VM, in its production environment since 2025 [C] SMP-007."
+   },
+   {
+    "location": "Section 3.3, 'Pattern' sub-bullets: \"Samsung SEM, up to 75%; ASE SAM scan time, unquantified [F] SMP-037; SK hynix defect-analysis time, unquantified.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "SMP-004, SMP-017, SMP-037, SMP-044",
+    "explanation": "The SK hynix item carries no tag or id; per SMP-044 it is a [C] (SMP-004). The Samsung item also lacks its id.",
+    "exact_fix": "  - Samsung SEM, up to 75% [F] SMP-017;\n  - ASE SAM scan time, unquantified [F] SMP-037;\n  - SK hynix defect-analysis time, unquantified [C] SMP-004."
+   },
+   {
+    "location": "Section 4 notes: \"KLA is on every full TSMC and Intel list read; Advantest is on TSMC 2025, TSMC 2026 and ASE 2025 [I] AW-058.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "AW-058, AW-003, AW-004, AW-013, AW-014, AW-023, AW-050",
+    "explanation": "AW-058 holds only per-list counts of inspection/metrology/test winners and names no vendors. The KLA and Advantest listings are in the press rows cited in the Section 4 table, which are [S].",
+    "exact_fix": "- KLA is on every full TSMC and Intel list read (TSMC 2025 and 2026, Intel 2025) [S] AW-004, AW-014, AW-023; Advantest is on TSMC 2025, TSMC 2026 and ASE 2025 [S] AW-003, AW-013, AW-050."
+   },
+   {
+    "location": "Section 4 notes: \"Out-of-period context. FormFactor reported an SK hynix Best Partner Award in November 2024 for HBM probe cards [F] AW-036.\"",
+    "problem": "wrong_tag",
+    "evidence_ids": "AW-036",
+    "explanation": "AW-036 is tagged [S] (Semiconductor Digest article), not [F]. The rules forbid upgrading [S] to [F].",
+    "exact_fix": "- **Out-of-period context.** FormFactor reported an SK hynix Best Partner Award in November 2024 for HBM probe cards [S] AW-036."
+   },
+   {
+    "location": "Section 4 notes: \"Award categories describe production support, technology development or business performance. None names an HBM or hybrid-bonding inspection product [I] AW-058.\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "AW-058, AW-019",
+    "explanation": "AW-058 counts winners by vendor class and says nothing about category wording. The nearest category ('3DFabric Testing', AW-019) should be noted.",
+    "exact_fix": "- Award categories describe production support, technology development or business performance. None names HBM or hybrid-bonding inspection; the nearest is TSMC's OIP \"3DFabric Testing\" award to Teradyne, a design-ecosystem award [F] AW-019 (category reading over the award rows in the table above) [I] AW-058."
+   },
+   {
+    "location": "Section 5, 'Reading of the matrix': \"Only three cells pair production with HBM ... infrared and e-beam (TSV-film inspection, PAPM-222 [C]) and optical (in-line chip warpage, PAPM-201 [C]). [I] SYN-001, SYN-002, SYN-008\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-219, PAPM-221, PAPM-222, PAPM-201, SYN-002, SYN-008",
+    "explanation": "The mass-production sentence in PAPM-222 covers the deposition recipe. The IR image (PAPM-219) and the FIB cross-section comparison (PAPM-221) were used to qualify the recipe change. SYN-008's note ('FIB is used as the process monitor of a production process') is not in the text. The paper says FIB inspection was used 'to compare step coverage ... after dep rate increased'. On the dossier's own PROD definition ('company's own words say production ...'), these two cells are not production statements about the method.",
+    "exact_fix": "- **Production and HBM together.** Three cells pair production with HBM, all at SK hynix and all on its own untestable claims. Only one attaches the production wording to the measurement itself: optical (in-line chip warpage, \"commercialized solution currently in use\", PAPM-201 [C]). Infrared and e-beam rest on a paper whose mass-production sentence covers the TSV-liner deposition recipe. Its IR inspection image and FIB cross-sections were used to qualify that recipe and are not described as routine production steps (PAPM-219, PAPM-221, PAPM-222 [C]), so on a strict reading those two cells are lab. [I] SYN-001, SYN-002, SYN-008"
+   },
+   {
+    "location": "Section 5, 'Reading of the matrix': \"Samsung electrical test. It reaches pilot: a pre-screen proposed for mass production, and HBM validation and demonstration statements. [I] SYN-019\"",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "PAPM-049, PAPM-107, PAPM-109, PAPM-110, SYN-019",
+    "explanation": "PILOT is defined as 'validated on production wafers or lines, or demonstrated in products'. A proposal does not qualify. 'Validated on HBM' (PAPM-107; SYN-019 cites the affiliation row PAPM-105 instead) does not say production wafers or lines. The only product wording, 'demonstrated in HBM products', is a [C] (PAPM-110), yet the cell reads 'PILOT (HBM)' without the [C] marker that the legend requires. The cell also conflicts with the bottom line's 'proposal, not a statement of use' and with the Section 1 Samsung IRPS 2025 row, whose status column shows '\"in mass production\"' as if it were a status.",
+    "exact_fix": "- **Samsung electrical test.** The cell rests on a pre-screen proposed \"for pre-screening of these interface failures in mass production\" (adoption not stated, PAPM-049), a repair method \"Validated on HBM\" (PAPM-107) and the claim that a DRAM transistor's performance \"is demonstrated in High Band Width Memory (HBM) products\" (PAPM-110 [C]). None states validation on production wafers or lines, and the only product wording is a [C], so the cell should read PILOT (HBM [C]), or lab on a strict reading. [I] SYN-019\n(and in the Section 1 Samsung IRPS 2025 row, replace the status cell with: proposed \"for pre-screening of these interface failures in mass production\"; adoption NOT DISCLOSED (read: abstract))"
+   },
+   {
+    "location": "Section 5, 'Reading of the matrix': \"Every other PROD rests on memory front-end, fab-wide practice (some of it the company's own claim) or a service offer. [I] SYN-010, SYN-011, SYN-021, SYN-028, SYN-069\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPM-223, PAPM-224, SYN-011, TALK-038, TALK-039, SYN-021, SMP-038, SYN-069",
+    "explanation": "SYN-011 (Samsung optical PROD) rests on an SKKU degree-programme paper with one Samsung author, which PAPM-223's note calls 'not an official Samsung Electronics paper'. That does not meet the PROD rule ('the company's own words'). SYN-021 (Micron optical, labelled 'FE') rests on a blog claim that spans 'front end, assembly and test' (TALK-039) and a 'Testing and inspection' step (TALK-038), not the memory front end only. The Amkor offer is of uncertain date (SMP-038).",
+    "exact_fix": "- **Production elsewhere.** Every other PROD rests on memory front-end or fab-wide practice, some of it the company's own claim, or on a service offer. Samsung's optical cell rests on an SKKU degree-programme paper whose only Samsung author is the first author (PAPM-223). Micron's optical cell is a blog claim spanning \"front end, assembly and test\", not front end only (TALK-039 [C]). Amkor's offer is undated page text (SMP-038 [C]). [I] SYN-010, SYN-011, SYN-021, SYN-028, SYN-069"
+   },
+   {
+    "location": "Section 5, 'Reading of the matrix': \"TSMC, Intel, ASE and Amkor. Apart from Amkor's test offer, nothing goes beyond lab in their own words. TSMC's own hosts could not be read at all (gaps.md) ... [I] MAIN-006\"",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "MAIN-006, SYN-031..SYN-070",
+    "explanation": "MAIN-006 supports only the access sentence. The status claim rests on the TSMC, Intel, ASE and Amkor SYN rows.",
+    "exact_fix": "- **TSMC, Intel, ASE and Amkor.** Apart from Amkor's test offer, nothing goes beyond lab in their own words [I] SYN-031 to SYN-070. TSMC's own hosts could not be read at all (gaps.md), so its row reflects missing access as much as absence of use [I] MAIN-006."
+   },
+   {
+    "location": "Section 5, 'Reading of the matrix': \"Laser-acoustic use is reported only by press (Samsung), and X-ray scatterometry appears only in vendor-led SPIE papers without chipmaker affiliation. [I] SYN-004, SYN-006, SYN-014, SYN-016\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "SYN-014, TALK-024, TALK-025, SYN-004, SYN-006, SYN-016",
+    "explanation": "The press reports introduction and 'validation', not use (SYN-014 says 'reportedly undergoing validation'). No evidence row supports the X-ray scatterometry clause. parts/PAPM_notes.md lists SPIE MIPC CD-SAXS / X-ray CD papers as 'none names a chipmaker' and does not call them vendor-led; their authors are unknown because the records carry no affiliations. The cited SYN ids cover only SK hynix and Samsung, while the sentence covers all seven.",
+    "exact_fix": "- **Laser-acoustic and X-ray scatterometry / XRF / XRD are empty for all seven.** Laser-acoustic tools are reported, by press only, to be under validation on Samsung's mass-production lines. X-ray CD metrology (CD-SAXS) appears only in SPIE MIPC papers that name no chipmaker (listed in parts/PAPM_notes.md; no evidence row). [I] SYN-004, SYN-006, SYN-014, SYN-016, SYN-024, SYN-026, SYN-034, SYN-036, SYN-044, SYN-046, SYN-054, SYN-056, SYN-064, SYN-066"
+   },
+   {
+    "location": "Section 5 basis SYN-017 (and Section 1 Samsung JMM 041405 row): \"... performed on production wafers in the fab ... (three wafers; Nearfield co-authors)\"",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "SMP-016, SYN-017",
+    "explanation": "SMP-016 gives '6 production wafers measured (3 top, 3 bottom)'. The abstract confirms three split-condition top wafers plus three POR bottom wafers. Section 3.4 says '6 production wafers', while SYN-017 and the Section 1 row say 'three wafers'. 'Nearfield co-authors' also understates a Nearfield-led paper.",
+    "exact_fix": "- SYN-017 Samsung / AFM: **pilot** (rests on: HB (VNAND)). high-throughput in-line AFM \"performed on production wafers in the fab\" for hybrid bonding in VNAND (six wafers: three top, three bottom; Nearfield-led, 13 of 23 authors, 10 Samsung); AFM \"examined\" for HB (workshop). Inputs: SMP-016 TALK-020. [I] Medium."
+   },
+   {
+    "location": "Section 6, bullet 1: \"The exceptions are four open-access JSTS papers (SK hynix x3, Samsung x1) and the Intel SMT007 article, which were read in full. [I] MAIN-005\"",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "MAIN-005, TALK-051, TALK-052, TALK-053, PAPM-223",
+    "explanation": "The Amkor IMAPS 2025 symposium paper was also read in full: Section 1 says 'read: paper pp1-5', and TALK-051 to TALK-053 cite pp2 and p4. The 'Samsung x1' JSTS paper is an SKKU degree-programme paper with one Samsung author (PAPM-223 note). MAIN-005 needs the same correction.",
+    "exact_fix": "- **Abstracts, not full papers.** Conference evidence is abstract-level. Full texts sit behind ieeexplore.ieee.org, spiedigitallibrary.org and dl.asminternational.org, all of which refuse scripts. The exceptions, read in full, are four open-access JSTS papers (three SK hynix; one SKKU degree-programme paper with a Samsung first author), the Amkor IMAPS 2025 paper and the Intel SMT007 article. A method missing from an abstract may still be in the paper. [I] MAIN-005"
+   },
+   {
+    "location": "Section 6, bullet 2 heading: \"TSMC, Intel, ASE and Amkor primary sites were not readable.\"",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "MAIN-006, SMP-038, TALK-049, AW-056, AW-042, TALK-038",
+    "explanation": "The bullet body lists only 'Amkor IR', and Amkor's own test page (SMP-038), event page (TALK-049) and blog (AW-056) were read. Micron's IR is also listed, while Micron's blog and supplier page were read. The heading overstates the Amkor gap.",
+    "exact_fix": "- **TSMC, Intel and ASE primary sites, and Amkor's and Micron's IR sites, were not readable.** TSMC (all hosts), Intel (www and newsroom), ASE (all hosts), Amkor IR, Micron IR, SEMI/SEMICON and ECTC refuse scripts; Amkor's test, event and blog pages and Micron's blog and supplier page were read. The user can save the pages listed in gaps.md by hand. [I] MAIN-006"
+   }
+  ]
+ },
+ "table_memory": {
+  "problems": [
+   {
+    "location": "Section 1, SK hynix (section1_table.csv line 5): JSTS 25(5) 'Industry's First In-line Chip Warpage Measurement Methods...', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-199, PAPM-200, PAPM-201, PAPM-202",
+    "explanation": "Four of the cited rows are [C], and the status cell itself says '(claims [C])'. Rows that mix [F] and [C] evidence are tagged '[F]/[C]' elsewhere in the table (SPIE TTTM and GRACE rows). The mismatch comes from build_tables.py, which takes the tag from the module table (PAPM_table row 46 = [F]) and not from the evidence tags.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, SK hynix (line 5): JSTS warpage paper, 'Limits the authors state' cell starting 'approximately 7 to 10 minutes for all chips'",
+    "problem": "other",
+    "evidence_ids": "PAPM-205, PAPM-206, PAPM-207, PAPM-208, PAPM-209, PAPM-199",
+    "explanation": "The cell lists a throughput figure, a scanner time and an R2 agreement as limits, but the authors do not call them limits. It also includes a state-of-the-art claim (PAPM-199), which is not a limit of the method. It leaves out the one limitation the authors do state (PAPM-209: time, cost and operational complexity of the flux-based variants) and the limit of prior practice (PAPM-208).",
+    "exact_fix": "stated limit, of the flux-based UF-SL/CF-SL variants: \"limitations in terms of time, cost, and operational complexity\" (PAPM-209); prior destructive sampling: \"the sample size is far too small to effectively inform defect reduction strategies\" (PAPM-208). Reported but not called limits: \"approximately 7 to 10 minutes for all chips\" (600 chips, CTD-VC, PAPM-206); 3D laser scanner at ~10 um x-y resolution \"approximately five minutes per wafer\" (UF-SL/CF-SL, PAPM-207); R2 0.4369 vs Akrometrix AXP destructive reference (81 chips, min-max normalized, PAPM-205)"
+   },
+   {
+    "location": "Section 1, SK hynix (line 6): JSTS 25(5) 'TEOS SiO2 Film Deposition Optimization...', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-222",
+    "explanation": "PAPM-222 is [C], and the status cell quotes it as a company claim [C]. The tag column should show both tags.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, SK hynix (line 6): TEOS SiO2 paper, status cell '\"successfully applied in mass production\" (company claim [C], PAPM-222; data masked for confidentiality)'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-222, PAPM-219, PAPM-221",
+    "explanation": "In PAPM-222 the subject of 'successfully applied in mass production' is 'The optimized process', meaning the TEOS SiO2 deposition recipe. It is not the IR or FIB inspection. Placed in the status column for the inspection method, the bare phrase reads as if the inspection itself is in mass production.",
+    "exact_fix": "\"The optimized process was successfully applied in mass production ... with no significant differences in yield or inspection results\" (refers to the TEOS SiO2 TSV-passivation deposition process, not to the IR/FIB inspection itself; company claim [C], PAPM-222; data masked for confidentiality)"
+   },
+   {
+    "location": "Section 1, SK hynix (line 8): SK hynix Newsroom (KR) 2025-08-25 'Technology Innovation Companies 8th cohort', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "TALK-011",
+    "explanation": "The cited evidence includes TALK-011, which is [C] (expected localisation). The tag column shows only [F]. The alternative is to drop TALK-011 from the evidence column, because no cell uses it.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, SK hynix (line 13): ECTC 2026 'In-Situ Observation and Modeling of Crack Velocity at Wafer-to-Wafer Bonding Interface', Chipmaker cell 'SK hynix'",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPM-149",
+    "explanation": "The saved Crossref record (2026-11-21_crossref_ECTC2026-volume-list.json, 10.1109/ectc51846.2026.00262) lists 8 authors. The first and last authors, 3 of 8 in all, are at Sungkyunkwan University, and 5 are at SK hynix. Comparable co-led rows in the table say this (the YNU/TEL ECTC 2025 row, the SNU and Pohang Samsung rows), but this cell does not. The note on PAPM-149 should also record the SKKU co-authorship.",
+    "exact_fix": "SK hynix (5 of 8 authors; first and last authors Sungkyunkwan University, 3 of 8)"
+   },
+   {
+    "location": "Section 1, SK hynix (line 14): SK hynix Newsroom 2025-05-02 'VP Seungyong Doh awarded Bronze Tower Order...', Tool vendor cell '... ; NOT DISCLOSED in this article (Gauss Labs named in 2026-02-19 newsroom item, TALK-004)'",
+    "problem": "attribution_wrong",
+    "evidence_ids": "TALK-002, TALK-004",
+    "explanation": "The Doh article never names Gauss Labs (0 matches in 2025-05-02_skhynix_newsroom-doh-award-hbm-smart-factory.html). Linking its 'AI-powered virtual metrology' to Gauss Labs is an inference drawn from a different document. Tool vendors should be named only where the document names them.",
+    "exact_fix": "NOT DISCLOSED (read: same article, full text) ; NOT DISCLOSED (read: same article, full text)"
+   },
+   {
+    "location": "Section 1, Samsung (line 21): IRPS 2025 'Study on the Measurement Method of Interface Resistance in HBM-DRAM...', status cell '\"in mass production\" (pre-screening of buffer-die micro-bump interface resistance)'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-049, PAPM-050",
+    "explanation": "The authors' words are 'We propose a practical but very effective method for pre-screening of these interface failures in mass production'. That is a proposal, not a statement of use. The bare phrase 'in mass production' reads as deployment. It also contradicts the dossier's own Bottom line ('a proposal, not a statement of use') and SYN-019 ('a proposal, adoption not stated').",
+    "exact_fix": "proposed (abstract: \"We propose ...\"): \"a practical but very effective method for pre-screening of these interface failures in mass production\" (adoption not stated); \"it can be an essential quality monitoring item for buffer die\""
+   },
+   {
+    "location": "Section 1, Samsung (line 22): IRPS 2026 'Electrical Detection of Latent Silicide Diffusion in Advanced DRAM...', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-068, PAPM-069, PAPM-070, PAPM-071, PAPM-230",
+    "explanation": "Five of the seven cited rows are [C], and the status cell quotes two of them (PAPM-070, PAPM-071).",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Samsung (line 22): IRPS 2026 silicide/GIDL paper, status cell '\"real-time monitoring\" (claimed); \"verified across over 20k total test evaluations\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-070, PAPM-071",
+    "explanation": "Neither phrase gives a production, pilot or lab status. Both are capability claims tagged [C]. The second quote is cut loose from its subject: what was 'verified across over 20k total test evaluations' is 'zero-defect reliability', not a deployment.",
+    "exact_fix": "NOT DISCLOSED as production, pilot or lab (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract); capability claims [C]: \"enabling real-time monitoring with superior sensitivity\" (PAPM-071); \"we achieved zero-defect reliability, verified across over 20k total test evaluations\" (PAPM-070)"
+   },
+   {
+    "location": "Section 1, Samsung (line 23): J. Micro/Nanopatterning 24(4) 041405 'Massive metrology at wafer and die level for hybrid bonding in VNAND', Chipmaker cell 'Samsung'",
+    "problem": "attribution_wrong",
+    "evidence_ids": "SMP-016",
+    "explanation": "The SMP-016 note says 'Vendor-led: 23 authors, 10 Samsung, 13 Nearfield Instruments (incl. first and last author)', and the saved Crossref record confirms it. The chipmaker cell hides this. The venue cell's '(Samsung + Nearfield)' does not say who led.",
+    "exact_fix": "Samsung (co-author only: vendor-led, 13 of 23 authors Nearfield Instruments incl. first and last author, 10 Samsung)"
+   },
+   {
+    "location": "Section 1, Samsung (line 23): JMM 041405, status cell '... in-line Atomic Force Microscopy-based metrology tool\" (three wafers)'",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "SMP-016",
+    "explanation": "SMP-016 gives the value '6 production wafers measured (3 top, 3 bottom)'. The saved abstract says three 'top' wafers were measured plus 'an additional three wafers' as 'bottom' wafers.",
+    "exact_fix": "\"performed on production wafers in the fab using a high-throughput in-line Atomic Force Microscopy-based metrology tool\" (six wafers: three \"top\" wafers with a split condition, three \"bottom\" wafers in POR condition)"
+   },
+   {
+    "location": "Section 1, Samsung (line 23): JMM 041405, Tool vendor cell 'Nearfield Instruments (co-author; in-line AFM tool)'",
+    "problem": "attribution_wrong",
+    "evidence_ids": "SMP-016",
+    "explanation": "The abstract names no maker for the 'high-throughput in-line Atomic Force Microscopy-based metrology tool'. Nearfield can be listed as a co-author affiliation, but the cell should not imply that the document names Nearfield as the tool maker.",
+    "exact_fix": "Nearfield Instruments (co-author affiliation, 13 of 23 authors; abstract does not name the maker of the in-line AFM tool)"
+   },
+   {
+    "location": "Section 1, Samsung (line 25): SPIE MIPC XL 'Effective defect detection in 3D V-NAND flash memory using color-based image processing', Chipmaker cell 'Samsung? ([I] Low-Medium: ...)'",
+    "problem": "internal_inconsistency",
+    "evidence_ids": "PAPM-191",
+    "explanation": "PAPM-191, the [I] attribution row, gives confidence Low ('confidence Low; reason: product term only'), but the chipmaker cell says Low-Medium.",
+    "exact_fix": "Samsung? ([I] Low: \"3D V-NAND\" is Samsung's product term, sometimes used generically)"
+   },
+   {
+    "location": "Section 1, Samsung (line 26): SPIE MIPC XL 'Overcoming conventional limit of process variation by using virtual metrology with mass-based monitoring in V-NAND', status cell '\"key virtual metrology (VM) enabler for mass production\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-193, PAPM-195",
+    "explanation": "The phrase states a role the authors claim for MMT. The abstract does not say MMT is deployed in mass production. Standing alone in the status column, it reads as a production status. The ASML MBI row in the same table already adds '(benefit stated, not deployment)' in a similar case.",
+    "exact_fix": "\"MMT is a key virtual metrology (VM) enabler for mass production\" (role claimed, deployment not stated); study \"evaluated 9th-generation VNAND product using the Mass Measurement Tool (MMT), an in-line wafer-level measurement of mass change\""
+   },
+   {
+    "location": "Section 1, Samsung (line 28): Samsung Semiconductor HBM3E product page FAQ, Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "TALK-034",
+    "explanation": "TALK-034 is [C] (roadmap claim), and it is the source of the status cell's quote 'Samsung is preparing to adopt Hybrid Copper Bonding (HCB)'.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Samsung (line 36): ISTFA 2025 '3D-VNAND Depth Measurement Using OFI Lock-In OBIRCH', Chipmaker cell 'Samsung'",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPM-080, PAPM-081",
+    "explanation": "The saved Crossref record (ISTFA2025-26 volume list, 10.31399/asm.cp.istfa2025p0563) has 9 authors: 5 Samsung, including the first author, and 4 Hamamatsu Photonics (K.K. and Korea), including the last author. This is a joint paper with a tool vendor. The comparable Samsung/ThermoFisher ISTFA 2026 row says so in its chipmaker cell; this cell does not.",
+    "exact_fix": "Samsung (joint with Hamamatsu Photonics: 5 of 9 authors Samsung incl. first author, 4 Hamamatsu Photonics incl. last author)"
+   },
+   {
+    "location": "Section 1, Samsung (line 38): ISTFA 2025 'Application of NAND FLASH Failure Analysis Using Visible Thermo Reaction', limits cell '\"reaching their limits\"; \"As the NAND Height increases...\"'",
+    "problem": "other",
+    "evidence_ids": "PAPM-086, PAPM-087",
+    "explanation": "Both quotes describe the conventional methods (photoemission, and OBIRCH with an infrared source), not the new VTR method. Cut from their subject, 'reaching their limits' can be read as a limit of VTR.",
+    "exact_fix": "limits of the conventional methods, not of VTR: \"photoemission analysis and OBIRCH (Optical Beam Induced Resistance Change) analysis using an infrared light source are reaching their limits\"; \"As the NAND Height increases, it becomes more difficult for the Top & Back laser to reach\" ; VTR limits NOT DISCLOSED (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract)"
+   },
+   {
+    "location": "Section 1, Samsung (line 39): ISTFA 2025 'Stress-Optimized Screening for Reliability-Critical BCAT Disconnections', status cell '\"high-throughput DRAM manufacturing\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-079",
+    "explanation": "The authors' words are 'offering a practical solution for high-throughput DRAM manufacturing', which describes an intended use. Without 'offering a practical solution for', the phrase reads as a deployment status.",
+    "exact_fix": "\"offering a practical solution for high-throughput DRAM manufacturing\" (proposed use; deployment not stated)"
+   },
+   {
+    "location": "Section 1, Samsung (line 39): ISTFA 2025 BCAT screening, limits cell '\"reduces test time by 50%-from 10 hours to 5 hours\"; conventional L4 \"often damages weak dies during testing\"'",
+    "problem": "other",
+    "evidence_ids": "PAPM-076, PAPM-077, PAPM-078",
+    "explanation": "The 50% test-time cut is a stated gain, not a limit. The only limits the authors state are those of the conventional L3 and L4 screens.",
+    "exact_fix": "limits of the conventional screens (not of the new method): L4 \"is time-intensive and often damages weak dies during testing\"; soft disconnections \"are not easily captured during L3 structural screening\". New screen: limits NOT DISCLOSED (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract); test time stated as a gain, \"from 10 hours to 5 hours\""
+   },
+   {
+    "location": "Section 1, Samsung (line 40): ISTFA 2026 'Automated Navigation Framework for High-Density 3D VNAND...', limits cell '\"detection success rate of 97.6%\"; \"reduces analysis time by over 80%\"'",
+    "problem": "other",
+    "evidence_ids": "PAPM-092",
+    "explanation": "Both quotes are reported results or benefits. The authors do not state them as limits, and the abstract states no limit.",
+    "exact_fix": "NOT DISCLOSED (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract); results stated, not limits: \"detection success rate of 97.6%\"; \"reduces analysis time by over 80%\""
+   },
+   {
+    "location": "Section 1, Samsung (line 42): ITC 2025 'A Fine and Massive Test Methodology for Analyzing Core Characteristics...', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-104",
+    "explanation": "PAPM-104 is [C], and the status cell quotes it ('potential to become a standard measurement technique').",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Samsung (line 44): JMM 24(4) 041407 'AI-powered super-resolution and denoising of SEM images...', limits cell 'image time cut \"by a decrease of up to 75% (3.9 times faster) in comparison to HQ\"'",
+    "problem": "other",
+    "evidence_ids": "SMP-017",
+    "explanation": "The quote is a benefit of the method, not a limit. No limit of the AI method appears in SMP-017 or the saved abstract.",
+    "exact_fix": "NOT DISCLOSED (read: Crossref record 2025-10-17_crossref_cr-jmm-041407, abstract); benefit stated, not a limit: imaging time cut \"by a decrease of up to 75% (3.9 times faster) in comparison to HQ\""
+   },
+   {
+    "location": "Section 1, Samsung (line 45): JSTS 25(6) 'Precision Matching Optimization of Optical Metrology and Inspection Equipment...', Tag cell '[F]' and status cell '\"Samsung Electronics high-volume manufacturing (HVM) line\"'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-224, PAPM-226",
+    "explanation": "The status cell carries an in-use statement: 'Applied to 191 optical inspection tools in a Samsung Electronics HVM line' / 'Deployed across 191 IS4100 ...'. The dossier's tag rule makes in-use or production status a [C], and comparable statements are tagged [C] (PAPM-222, PAPM-110, TALK-004). Retag PAPM-224 and PAPM-226, or add a [C] row, then change the tag cell to '[F]/[C]'. Paste-ready status cell: \"Applied to 191 optical inspection tools in a Samsung Electronics high-volume manufacturing (HVM) line\" (in-use claim [C]; SKKU degree-programme paper)",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Samsung (line 46): VLSI 2026 'Innovative Performance of 6th Generation 11nm DRAM Cell Transistor for HBM4 Application', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-110",
+    "explanation": "PAPM-110 is [C], and the status cell quotes it.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Samsung (line 46): VLSI 2026 11nm DRAM paper, status cell '\"demonstrated in High Band Width Memory (HBM) products\" (company claim [C], PAPM-110; no product named)'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-109, PAPM-110",
+    "explanation": "In the abstract, what is 'demonstrated in HBM products' is 'The performance of [the] 11 nm-6th generation ... DRAM cell transistor', not the 12-High chip-on-wafer electrical test this row is about. As written, the cell reads as a production status for the test.",
+    "exact_fix": "transistor, not the test: cell-transistor performance \"is demonstrated in High Band Width Memory (HBM) products\" (company claim [C], PAPM-110; no product named); the test itself: tREFi at 120 C \"during Chip on Wafer (CoW) test for 12-High stacked HBM devices\" (PAPM-109), status not stated"
+   },
+   {
+    "location": "Section 1, Micron (line 49): ISTFA 2026 'DRAM Capacitor-Metal Redistribution Layer Overlay Measurement Using Image Processing with Dimple-Grinder Sample Preparation', status cell 'off-line, used \"when inline monitoring is ineffective\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-013",
+    "explanation": "The authors say 'the method can resolve ... when inline monitoring is ineffective', which states a capability shown in one case study. 'used' turns this into a statement of use.",
+    "exact_fix": "off-line (dimple-grinder sample preparation, SEM imaging); \"the method can resolve location-dependent capacitor-to-metal RDL overlay behavior when inline monitoring is ineffective\" (wafer-edge NZO case study)"
+   },
+   {
+    "location": "Section 1, Micron (line 51): SEMICON Taiwan 2025 keynote (Chang Yu-lin) via TechNews, limits cell 'NOT DISCLOSED (read: same) ; no figures; thin-die stress stated qualitatively'",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "TALK-042, TALK-043",
+    "explanation": "Neither cited row mentions thin-die stress. The saved TechNews article (2025-09-09_technews_article-micron-hbm-semicon-taiwan-2025.html) gives figures: wafer 775 um, stress up 8x when thickness halves, 8,000x at 1/20 thickness. So 'no figures ... qualitatively' is wrong, and the stress figures are physics context, not a measurement limit. The limit-like statement in the evidence is TALK-043.",
+    "exact_fix": "NOT DISCLOSED (read: same) ; risk stated, not a measurement limit: small errors \"such as die warpage, cracks or particle contamination are amplified in subsequent stacking\" (TALK-043, translation)"
+   },
+   {
+    "location": "Section 1, Micron (line 52): SPIE MIPC XL 'PFIB-SEM wafer DualBeam applications for ground truth in-fab 3D NAND metrology', Tool vendor cell 'NOT DISCLOSED as maker; \"Wafer DualBeam\" is a Thermo Fisher Scientific product name ([I])'",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "PAPM-165, PAPM-166",
+    "explanation": "The abstract does not name Thermo Fisher. The cell names a vendor by inference, but no [I] evidence row supports it, and the tag column ([F]) does not show an [I]. Tool vendors should be named only where the document names them. If the inference is kept, add an [I] evidence row and set the tag to '[F]/[I]'.",
+    "exact_fix": "NOT DISCLOSED (read: 2026-11-21_semanticscholar_spie-mipc-2025-26-part1.json, abstract; abstract names the system \"PFIB–SEM Wafer DualBeam\" but not its maker)"
+   },
+   {
+    "location": "Section 1, Micron (line 53): ASMC 2025 'CD-SEM Anomaly Detection Through Machine Learning and Generative AI', status cell '\"in-line monitoring\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-008",
+    "explanation": "The authors' sentence is 'The applications of these models during in-line monitoring are crucial to identify potential process issues', which states importance, not deployment. The dossier's own SYN-028 says 'deployment not stated'.",
+    "exact_fix": "\"The applications of these models during in-line monitoring are crucial to identify potential process issues\" (importance stated; deployment of the models not stated in abstract)"
+   },
+   {
+    "location": "Section 1, Micron (line 57): ASMC 2026 'cloud-based virtual metrology for dry etch in an HVM memory fab', limits cell '\"large-scale VM deployment remains challenging due to limited scalability and performance degradation\"'",
+    "problem": "wrong_or_missing_id",
+    "evidence_ids": "SMP-025",
+    "explanation": "No cited evidence row carries this quote: SMP-025's quote and claim do not contain it. In the saved abstract (2026-05-01_semanticscholar_s2-asmc2026-11551271) it is the general VM problem the paper sets out to solve, not a stated limit of the authors' framework.",
+    "exact_fix": "problem the paper addresses (not a stated limit of its framework): \"large-scale VM deployment remains challenging due to limited scalability and performance degradation under non-stationary manufacturing conditions\" (abstract; no evidence row yet)"
+   },
+   {
+    "location": "Section 1, Micron (line 57): ASMC 2026 cloud VM, Tag cell '[F]' with status '\"meeting production release criteria\"'",
+    "problem": "wrong_tag",
+    "evidence_ids": "SMP-025",
+    "explanation": "'meeting production release criteria', with validation on 'one year of production data ... in an HVM memory fab', is the company's own production-readiness statement and cannot be checked from the abstract. Under the dossier's tag rules that is a [C]. Paste-ready status cell: \"validated using one year of production data from multiple dry etch processes in an HVM memory fab\"; \"stable prediction accuracy meeting production release criteria\" (company production-readiness claim [C])",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Micron (line 58): IEEE TNS Aug 2025 'X-Ray Effects on Alpha-Induced Soft Error Rate in 3-D NAND Replacement Gate Flash', Chipmaker cell 'Micron'",
+    "problem": "attribution_wrong",
+    "evidence_ids": "XR-008, XR-009",
+    "explanation": "The XR-008 and XR-009 notes say 1 of 4 authors is Micron (S. Beltrami, Process R&D, Vimercate). The other three, including lead author M. Bagatin, are at Università di Padova. The paper is university-led, and the chipmaker cell hides it.",
+    "exact_fix": "Micron (co-author only: university-led, 1 of 4 authors Micron; lead author and 2 others University of Padova)"
+   },
+   {
+    "location": "Section 1, Micron (line 58): IEEE TNS X-ray/SER paper, status cell 'lab study'",
+    "problem": "other",
+    "evidence_ids": "XR-007",
+    "explanation": "'lab study' is the compiler's label, not the authors' words. The abstract gives no production, pilot or lab wording beyond 'Experimental results'.",
+    "exact_fix": "NOT DISCLOSED (read: Semantic Scholar abstract); irradiation experiment: \"Experimental results show that the alpha soft error rate is not significantly affected by previous X-ray irradiation\""
+   },
+   {
+    "location": "Section 1, Micron (line 59): ISTFA 2025 'Advancement Towards FIB Active Auto Thinning (AAT) Process', Tag cell '[F]'",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPM-036",
+    "explanation": "PAPM-036 is [C], and the status cell quotes it as a 'self-reported in-use claim [C]'.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, Micron (line 60): ISTFA 2026 'Low-Temperature CVD Oxide Deposition for Photoresist Protection', limits cell '\"PR deformation and profile distortion from preparation and beam interaction\"; ...'",
+    "problem": "other",
+    "evidence_ids": "PAPM-029, PAPM-030",
+    "explanation": "PAPM-030's quote begins 'All produced ...'. It refers to the other protection methods the authors benchmarked, not to their oxide method. Without that attribution the cell reads as a limit of the paper's own method.",
+    "exact_fix": "limit of the other protection methods benchmarked (not of the low-temperature oxide): \"All produced pronounced PR deformation and profile distortion from preparation and beam interaction\" (PAPM-030); the oxide \"stabilizes the PR throughout FIB lamella preparation and low-dose TEM imaging\" (PAPM-029); limits of the oxide method NOT DISCLOSED (read: abstract)"
+   },
+   {
+    "location": "Section 1, Micron (line 62): SPIE MIPC XL 'Computational guided dynamic sampling e-beam inspection in HVM automation with ASML's VCP', status cell '\"high-volume manufacturing\"; \"deployed ... integrated with fab automation\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-175, PAPM-176, PAPM-177",
+    "explanation": "The ellipsis drops 'on ASML's virtual computing platform (VCP)' and 'we demonstrated', so 'deployed' reads as deployed in a Micron fab. 'high-volume manufacturing' is the generic setting CGI is described for (PAPM-175), not a status. Micron is named only as the owner of the devices (PAPM-177), and authorship is not in the record.",
+    "exact_fix": "\"we demonstrated CGI automation deployed on ASML's virtual computing platform (VCP) integrated with fab automation\"; capture-rate gain measured \"on Micron Technology's memory devices\" (fab and production status not stated)"
+   },
+   {
+    "location": "Section 1, Micron (line 63): SPIE MIPC XL 'Poisson-CDF modeling of in-die optimization for electron beam inspection...', status cell '\"high-volume production\"'",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPM-179, PAPM-180",
+    "explanation": "'high-volume production' appears only as the setting of the problem: 'achieving strong inline–probe correlation in high-volume production remains challenging'. The method's own status is a validation on one DRAM case.",
+    "exact_fix": "NOT DISCLOSED (read: 2026-11-21_semanticscholar_spie-mipc-2025-26-part1.json, abstract); validation \"on a 1β DRAM storage node contact short case\" (PAPM-180)"
+   },
+   {
+    "location": "Section 1, Micron (line 63): Poisson-CDF EBI paper, limits cell 'coverage: \"1.99% coverage\"; \"limited in-die coverage\"'",
+    "problem": "other",
+    "evidence_ids": "PAPM-179, PAPM-180",
+    "explanation": "'1.99% coverage' is the model's recommended coverage, which improved correlation. It is not a limit. The stated problem is 'limited in-die coverage and random defect distribution'.",
+    "exact_fix": "problem stated: \"limited in-die coverage and random defect distribution\" (PAPM-179); model-recommended coverage, not a limit: \"1.99% coverage\" (PAPM-180)"
+   }
+  ]
+ },
+ "table_logic": {
+  "problems": [
+   {
+    "location": "Section 1, TSMC table / section1_table.csv row 67, 'Limits the authors state': \"yield target cited: '還要做到99%' (must reach 99%) under pre-finalisation volume production\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "TALK-044",
+    "explanation": "The saved World Journal article (2025-09-10_worldjournal_article-3dicama-tsmc-ase-alliance.html) quotes Jun He: '還沒完全定案就得量產、還要做到99%'. It never says 'yield', so 'yield target' is the dossier's reading. The sentence describes pressure on the business. It does not state a limit of any inspection or measurement method.",
+    "exact_fix": "NOT DISCLOSED as a method limit (read: article); context, not a stated limit: '還沒完全定案就得量產、還要做到99%' (volume production before things are fully settled, and still reach 99%; the article does not say 99% of what)"
+   },
+   {
+    "location": "Section 1, TSMC table / row 69, Tag cell: \"[F]\" (ECTC 2025 Fine Pitch High Density CoWoS-R)",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPL-005, PAPL-006, PAPL-007, PAPL-008",
+    "explanation": "PAPL-008 is tagged [C] because 'currently in production' is a company statement. The row's evidence is therefore mixed [F] and [C]. Rows 16 and 17 already use the form '[F]/[C]' for this case.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, TSMC table / row 69, 'Production, pilot or lab': \"\\\"The technology is currently in production for heterogeneous chiplet/HBM integration with high assembly yields.\\\" (status of CoWoS-R platform; test package is a build)\"",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPL-008, PAPL-007",
+    "explanation": "The quote is correct, but it is an untestable production claim (PAPL-008 is [C]) and the cell does not say so. Row 70 marks its own [C] inline, and this cell should do the same. The abstract's wording for the test package is 'were built'.",
+    "exact_fix": "\"The technology is currently in production for heterogeneous chiplet/HBM integration with high assembly yields.\" (company claim [C] PAPL-008, about the CoWoS-R platform, not the test method; the 5.5X test packages \"were built\")"
+   },
+   {
+    "location": "Section 1, TSMC table / row 70, Tag cell: \"[F]\" (ECTC 2025 SoIC Cool-Stacking)",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPL-009, PAPL-010, PAPL-011, PAPL-012",
+    "explanation": "PAPL-012 ('proven feasible for the first time') is tagged [C], and the status cell in this same row already cites it as [C]. The Tag cell shows only [F].",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, TSMC table / row 71, Chipmaker: \"TSMC\" (ECTC 2025 Thin 3D: ultra-thin wafer-level active device transfer)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-001",
+    "explanation": "PAPL-001 says 'university-led (National Yang Ming Chiao Tung University, Taiwan Semiconductor Research Institute); 2 of 12 authors from TSMC Corporate Research'. The Crossref record agrees: 7 authors are NYCU, including the first author (Ting-Yu Chen) and the last (Kuan-Neng Chen), 3 are TSRI and 2 are TSMC (Li, Radu). The dossier's own SYN-032 calls this paper university-led, but the table cell hides it.",
+    "exact_fix": "TSMC (co-author only: university-led paper; 2 of 12 authors TSMC Corporate Research; first and last authors National Yang Ming Chiao Tung University, 3 Taiwan Semiconductor Research Institute)"
+   },
+   {
+    "location": "Section 1, TSMC table / row 73, Venue/date/title: \"IRPS 2026 (Mar 2026) / Die of Interest: ML ranking of inline data for adaptive testing (TSMC Advanced Packaging Technology and Service)\"",
+    "problem": "other",
+    "evidence_ids": "SMP-035",
+    "explanation": "The title cell paraphrases the paper's title. The Semantic Scholar and Crossref records give it as 'Die of Interest – Die Level Predictive Modeling to Reduce Reliability Defect Escape', published 2026-03-22. All other rows give the real title.",
+    "exact_fix": "IRPS 2026 (2026-03-22) / Die of Interest – Die Level Predictive Modeling to Reduce Reliability Defect Escape (TSMC Advanced Packaging Technology and Service) (doi 10.1109/IRPS61424.2026.11499289)"
+   },
+   {
+    "location": "Section 1, TSMC table / row 74, Chipmaker: \"TSMC\" (ITC 2025 Leveraging UCIe Interface for Silicon Health & Reliability)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-021, PAPL-024",
+    "explanation": "PAPL-021 notes 'TSMC + Synopsys co-authors'. The Crossref record has 19 authors: 6 TSMC (including the first author, Goel) and 13 Synopsys. Most of the authors are from the vendor, and the chipmaker cell does not say so. The ThermoFisher rows (40, 59) show the convention for joint papers.",
+    "exact_fix": "TSMC (joint with Synopsys: 6 of 19 authors TSMC incl. first author, 13 Synopsys)"
+   },
+   {
+    "location": "Section 1, TSMC table / row 74, Tool vendor: \"Synopsys (co-author Crossref affiliation; EDA/test-IP vendor, not an inspection-tool maker)\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-024, PAPL-023",
+    "explanation": "The abstract names no tool or IP supplier. It says only 'integrates the UCIe protocol with advanced SLM techniques'. Synopsys appears only as a co-author affiliation, so putting it in the 'Tool vendor if named' slot suggests the document names it as a supplier, which it does not.",
+    "exact_fix": "NOT NAMED in abstract (co-author Crossref affiliation: Synopsys, EDA/test-IP vendor, 13 of 19 authors; abstract does not say whose test IP or equipment was used)"
+   },
+   {
+    "location": "Section 1, Intel table / row 76, Chipmaker: \"Intel\" (ECTC 2025 Electrical Performance of CMP Process for Hybrid Bonding)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-032, PAPL-038",
+    "explanation": "PAPL-032 notes 'Intel + Applied Materials co-authors'. The Crossref record has 8 authors: 3 Intel (first author Widodo and last author Brun, plus Prabhakar) and 5 Applied Materials. Most of the authors are from the vendor, and the cell does not say so.",
+    "exact_fix": "Intel (joint with Applied Materials: 3 of 8 authors Intel incl. first and last, 5 Applied Materials)"
+   },
+   {
+    "location": "Section 1, Intel table / row 76, Tool vendor: \"Applied Materials (co-author Crossref affiliation; process-equipment vendor; maker of test/inspection tools not named) ; Applied Materials (...cSAM tool maker not named) ; Applied Materials (...FIB-SEM maker not named) ; Applied Materials (...)\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-038, PAPL-035, PAPL-036, PAPL-037",
+    "explanation": "The abstract names no maker for the electrical test, cSAM, FIB-SEM or EDX. Applied Materials is a co-author affiliation only. Listing it four times in the 'Tool vendor if named' column reads as four named tool vendors, even though each caveat says the maker is not named.",
+    "exact_fix": "NOT NAMED in abstract for electrical test, cSAM, FIB-SEM or EDX (co-author Crossref affiliation: Applied Materials, process-equipment vendor, 5 of 8 authors)"
+   },
+   {
+    "location": "Section 1, Intel table / row 78, Chipmaker: \"Intel\" (ECTC 2026 Advanced Metrology ... 100% Bond Overlay Measurement)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-054, PAPL-061",
+    "explanation": "PAPL-054 notes 'Intel + EV Group co-author'. The Crossref record has 7 authors: 4 Intel (including first author Nguyen) and 3 EV Group (Bögelsack, Uhrmann, Brandl). The cell does not show that this is a joint paper with a vendor.",
+    "exact_fix": "Intel (joint with EV Group: 4 of 7 authors Intel incl. first author, 3 EV Group)"
+   },
+   {
+    "location": "Section 1, Intel table / row 78, Tool vendor: \"EV Group (co-author Crossref affiliation; bonding and metrology equipment vendor)\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-061, PAPL-055, PAPL-059",
+    "explanation": "The abstract does not name the maker of the overlay metrology tool. It speaks of 'the development of C2W overlay metrology at Intel'. PAPL-061 records only the affiliation 'EV Group, Austria'. The description 'bonding and metrology equipment vendor' does not come from the document, and unlike the other co-author-vendor cells this one has no 'maker not named' caveat. As written, it implies EVG supplied the 100% overlay tool.",
+    "exact_fix": "NOT NAMED in abstract (co-author Crossref affiliation: EV Group, 3 of 7 authors; the abstract does not say whose tool performed the overlay measurement)"
+   },
+   {
+    "location": "Section 1, Intel table / row 79, Chipmaker: \"Intel\" (ECTC 2026 Multiscale Mechanical Characterization of Hybrid-Bonding Copper)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-072",
+    "explanation": "PAPL-072 says 'NIST-led (first author NIST); Intel and Colorado School of Mines co-authors'. The Crossref record has 5 authors: 3 NIST (including first author Alderete), 1 Intel (Daharwal) and 1 Colorado School of Mines (last author Ciobanu). The cell hides that NIST led the paper.",
+    "exact_fix": "Intel (co-author only: NIST-led paper; 1 of 5 authors Intel; first author and 2 others NIST, last author Colorado School of Mines)"
+   },
+   {
+    "location": "Section 1, Intel table / row 79, 'Limits the authors state': \"\\\"spherical probe radii of less than 30 nm\\\" (probe size; throughput NOT DISCLOSED in abstract) ; NOT DISCLOSED (...)\"",
+    "problem": "other",
+    "evidence_ids": "PAPL-074, PAPL-075",
+    "explanation": "PAPL-074 records the probe radius as a description of the AFM setup. The authors do not present it as a limit, so it does not belong in the limits column. The abstract states no limit of the method.",
+    "exact_fix": "NOT DISCLOSED (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract); probe specs, not stated as limits: AFM \"spherical probe radii of less than 30 nm\", IIT \"spherical probes of 1 µm and 5 µm nominal radii\""
+   },
+   {
+    "location": "Section 1, Intel table / row 81, Chipmaker: \"Intel\" (VLSI 2026 Multiple-Wafer (9-Layer) ... Fusion-Bonded Via-In-One Architecture)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-093",
+    "explanation": "PAPL-093 says 'SAIMEMORY-led (first author); Intel, Powerchip Semiconductor Manufacturing Corp. and AP Memory co-authors'. The Crossref record has 16 authors: 1 SAIMEMORY (first author Morein), 2 Intel, 8 PSMC and 5 AP Memory. Intel holds 2 of the 16 places, and the cell hides that.",
+    "exact_fix": "Intel (co-author only: SAIMEMORY-led paper; 2 of 16 authors Intel; first author SAIMEMORY, 8 Powerchip Semiconductor Manufacturing Corp., 5 AP Memory)"
+   },
+   {
+    "location": "Section 1, Intel table / row 82, Chipmaker: \"Intel\" (VLSI Symposium 2025, Workshop 9 description, 'unsigned ... authorship inferred')",
+    "problem": "attribution_wrong",
+    "evidence_ids": "TALK-022, TALK-023",
+    "explanation": "The TALK-022 note records Intel authorship as an inference ('Authorship inference: inputs = Organizer labels + This workshop will explore voice; confidence Medium ... the page does not say who wrote this one'). The saved page lists three Intel organizers but no author for the description. The table marks inferred attribution elsewhere ('Samsung? ([I] ...)', 'Micron? ([I] ...)'), and here the chipmaker cell states it as fact. If the attribution is treated as an inference, the Tag cell should be '[F]/[I]'.",
+    "exact_fix": "Intel? ([I] Medium: unsigned workshop description shown under three Intel organizers Niazi, Dogiamis, Tomita; authorship inferred, TALK-022)"
+   },
+   {
+    "location": "Section 1, Intel table / row 87, Tool vendor: \"Fouriers Scientific (co-author Crossref affiliation; whether it sells FDTR instruments NOT verified)\"",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-053, PAPL-051",
+    "explanation": "The abstract does not name who made the FDTR instrument. Fouriers Scientific appears only as one co-author's affiliation (PAPL-053; 1 of 10 authors on Crossref). The cell hints that it might be the instrument vendor, which goes beyond the document.",
+    "exact_fix": "NOT NAMED in abstract (co-author Crossref affiliation: Fouriers Scientific, 1 of 10 authors; abstract does not say whose FDTR instrument was used)"
+   },
+   {
+    "location": "Section 1, Intel table / row 90, 'Limits the authors state': \"... ; \\\"response scales with flux density and exposure time\\\"\" (ISTFA 2026 Stacked Die Product Debug at a Synchrotron)",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPL-084, PAPL-085, PAPL-086",
+    "explanation": "PAPL-086 is a result: the full sentence ends 'providing guidance to future laboratory XADA tool development'. The evidence note says 'finding is about the XADA signal' and that the source does not mention dose or damage. Listing it as a limit the authors state is wrong. The two real stated limits (PAPL-084, PAPL-085) should stay.",
+    "exact_fix": "lab XADA: \"slow measurement times due to limited laboratory x-ray source brightnesses\"; thermal methods: \"resolutions degrade with increasing stack thicknesses\""
+   },
+   {
+    "location": "Section 1, Intel table / row 91, 'Production, pilot or lab': \"NOT DISCLOSED as production/pilot; dose study on product boards\" (SMT007 Apr 2025, DRAM Damage Due to X-ray Inspections)",
+    "problem": "overstates_evidence",
+    "evidence_ids": "XR-002, XR-005",
+    "explanation": "The paper (SMT007 PDF pp50-54) never says 'product boards'. It describes a dose DOE on three BGA builds (BGA #1-#3, MXI and AXI, XR-005) and a functional test in which a 'Functional SOC with memory on package' is mounted on 'a validation platform hardware'. Calling these product boards is stronger than the source.",
+    "exact_fix": "NOT DISCLOSED as production/pilot (read: SMT007 Apr 2025 pp46-56); dose study on three BGA builds and a functional test on \"validation platform hardware\""
+   },
+   {
+    "location": "Section 1, Intel table / row 91, 'Limits the authors state': \"... 350 rad = \\\"three times the limit provided by DRAM manufacturer\\\"; reliability \\\"may be reduced\\\"\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "XR-002, XR-003, XR-006",
+    "explanation": "On p54 the authors write 'Even after total exposure of 350 rads, MemTest86 gave no errors' and then 'even after overexposure to three times the limit provided by DRAM manufacturer, no infant mortality failures'. They never state the limit or an equation. XR-003 records 'The manufacturer's limit itself: NOT DISCLOSED', so '350 rad =' is the dossier's inference. The cell also omits a limit the authors do state (XR-006, p52): copper filtering 'is quite ineffective to produce the image quality needed for inspection'.",
+    "exact_fix": "\"poses a significant challenge to the inspections of BGAs with on-package DRAM\"; no MemTest86 errors after 350 rad total, which the authors describe as \"overexposure to three times the limit provided by DRAM manufacturer\" (limit value not given); reliability \"may be reduced\"; Cu filter cuts dose most but is \"quite ineffective to produce the image quality needed for inspection\""
+   },
+   {
+    "location": "Section 1, ASE table / row 92, Tag cell: \"[F]\" (ECTC 2026 Automated Tracing Method ... FOCoS-Bridge)",
+    "problem": "wrong_tag",
+    "evidence_ids": "PAPL-110, PAPL-111",
+    "explanation": "The row cites PAPL-110 ('significantly reduces PFA cycle time') and PAPL-111 ('effectively improved yield and reliability'), and both are tagged [C] in evidence.csv.",
+    "exact_fix": "[F]/[C]"
+   },
+   {
+    "location": "Section 1, ASE table / row 92, 'Limits the authors state': \"NOT DISCLOSED (...) ; \\\"the package was thinned using an automated lapping process to approximately 10 μm thickness\\\" (destructive preparation before 3D XRM)\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "PAPL-109",
+    "explanation": "The authors present lapping as a damage-reducing preparation step. The sentence begins 'To minimize artificial damage induced by mechanical grinding, the package was thinned...'. They do not state it as a limit or call it destructive, so 'destructive preparation' is the dossier's label.",
+    "exact_fix": "NOT DISCLOSED (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract); sample preparation before 3D XRM, not stated as a limit: \"the package was thinned using an automated lapping process to approximately 10 μm thickness\" (\"To minimize artificial damage induced by mechanical grinding\")"
+   },
+   {
+    "location": "Section 1, ASE table / row 93, Chipmaker: \"ASE\" (ECTC 2026 Fine-pitch Cu-Cu Hybrid Bonding Using Electroless-deposited (111) Nanotwinned Cu)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-118",
+    "explanation": "PAPL-118 says 'university-led (National Taiwan University); 4 of 10 authors ASE Corporate R&D'. The Crossref record shows the first author (Wei Choong Lee) and the last author (C. Robert Kao) at NTU, with 6 NTU and 4 ASE authors in all.",
+    "exact_fix": "ASE (co-author only: university-led paper; 4 of 10 authors ASE Corporate R&D; first and last authors National Taiwan University)"
+   },
+   {
+    "location": "Section 1, ASE table / row 94, Chipmaker: \"ASE\" (ECTC 2026 Low Temperature and Low Pressure Fine-pitch Cu-Cu Bonding by Electroplated In-Sn-Passivation)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-122",
+    "explanation": "PAPL-122 says 'university-led (National Taiwan University); 4 of 9 authors ASE'. The Crossref record shows the first author (Yu-Hsiang Lu) and the last author (C. Robert Kao) at NTU, with 5 NTU and 4 ASE authors in all.",
+    "exact_fix": "ASE (co-author only: university-led paper; 4 of 9 authors ASE; first and last authors National Taiwan University)"
+   },
+   {
+    "location": "Section 1, ASE table / row 95, Chipmaker: \"ASE\" (ECTC 2026 Low-Temperature Chip Scale Cu-Cu Hybrid Bonding by Electroless Ag Passivation)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-112",
+    "explanation": "PAPL-112 says 'university-led (National Taiwan University); 4 of 10 authors ASE'. The Crossref record shows the first author (Cheng-Yan Yang) and the last author (C. Robert Kao) at NTU, with 6 NTU and 4 ASE authors in all.",
+    "exact_fix": "ASE (co-author only: university-led paper; 4 of 10 authors ASE; first and last authors National Taiwan University)"
+   },
+   {
+    "location": "Section 1, ASE table / row 98, 'Limits the authors state': \"\\\"limited field of view (FOV) of 3D X-ray scans across long RDL interconnections\\\" ; NOT DISCLOSED (...) ; \\\"time-consuming, as it requires extensive site-specific milling...\\\"\"",
+    "problem": "other",
+    "evidence_ids": "PAPL-100, PAPL-101, PAPL-102",
+    "explanation": "Both quotes describe the conventional FA workflow that the paper sets out to replace: 'Conventional FA workflows ... often rely on open/short (O/S) testing followed by defect inspection using 3D X-ray microscopy. However, this approach is inefficient...'. They are not limits of ASE's proposed approach. The same row's method column lists X-ray CT and FIB as methods, so readers could take these as limits of the authors' own approach.",
+    "exact_fix": "limits of the conventional O/S-test + 3D X-ray + FIB workflow the paper sets out to improve: \"limited field of view (FOV) of 3D X-ray scans across long RDL interconnections\"; FIB \"time-consuming, as it requires extensive site-specific milling without prior knowledge of the failure location\"; limits of the proposed approach NOT DISCLOSED (read: 2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.json, abstract)"
+   },
+   {
+    "location": "Section 1, ASE table / row 99, Chipmaker: \"ASE\" (ECTC 2026 Pressure-less Cu/Polymer Hybrid Bonding ... Novel Polymer Adhesive)",
+    "problem": "attribution_wrong",
+    "evidence_ids": "PAPL-126",
+    "explanation": "PAPL-126 says 'Mitsui Chemicals-led (materials supplier); ASE Group co-authors'. The Crossref record has 12 authors: 7 Mitsui Chemicals (including first author Hayakawa) and 5 ASE Group. A supplier led the paper, and the cell hides that.",
+    "exact_fix": "ASE (co-author only: vendor-led paper, Mitsui Chemicals (materials supplier) 7 of 12 authors incl. first author, 5 ASE Group)"
+   },
+   {
+    "location": "Section 1, Amkor table / row 100, 'Production, pilot or lab': \"lab: test-vehicle reliability read-points ; lab: test vehicle\" (IMAPS 2025 Module Stress Reduction for 2.5D TSV-based Heterogeneous Package)",
+    "problem": "overstates_evidence",
+    "evidence_ids": "TALK-051, TALK-053",
+    "explanation": "The column is meant to hold the authors' words. The paper (p2) says 'test vehicle', 'During the inspection points', and that mimic components with daisy-chain test nets were used 'before committing expensive, functional components'. 'lab' and 'read-points' are the dossier's words, not the paper's.",
+    "exact_fix": "\"test vehicle\" with mimic HBMs (daisy-chain test nets \"in place of functional components\"); SAT at thermal-cycling \"inspection points\" ; \"test vehicle\" (warpage, Fig. 7)"
+   },
+   {
+    "location": "Section 1, Amkor table / row 100, 'Limits the authors state': \"SAT gave 'signs of cracking or delamination'; confirmation needed 'destructive failure analysis' (cross-sections) ; NOT DISCLOSED (read: paper)\"",
+    "problem": "overstates_evidence",
+    "evidence_ids": "TALK-051, TALK-052",
+    "explanation": "The authors describe a sequence: SAT 'showed there were signs of cracking or delamination'. 'These units were then taken for destructive failure analysis where cross-sections confirmed the presence of underfill cracking.' They do not say that SAT was insufficient or that destructive analysis was needed, so 'confirmation needed' adds an inference. The TALK-052 note itself reads it as 'SAT shows signs, cross-section confirms'.",
+    "exact_fix": "not stated as a limit: SAT \"showed there were signs of cracking or delamination\"; units \"were then taken for destructive failure analysis where cross-sections confirmed the presence of underfill cracking\" ; NOT DISCLOSED (read: paper)"
+   },
+   {
+    "location": "Section 1, Amkor table / row 102, 'Production, pilot or lab': \"'becoming increasingly critical' (no status)\" and 'Limits the authors state': \"NOT DISCLOSED (read: article)\" (Semiconductor Engineering 2026-05-12, Omer Dossani quote)",
+    "problem": "contradicts_evidence",
+    "evidence_ids": "TALK-050",
+    "explanation": "The saved article (2026-05-12_semiengineering_article-hbm-shifts-testing-left.html) continues Dossani's quote: 'Many of these challenges are resolved by the time we reach high-volume manufacturing (HVM) in our factory. However, they remain significant manufacturing considerations, requiring increasingly stringent control of temperature stability during testing, as well as the use of specialized sockets, dedicated cleaning materials, and enhanced data monitoring throughout the manufacturing process.' That gives a status claim ([C]) and stated constraints, so 'no status' and 'NOT DISCLOSED' are both wrong. TALK-050's quote covers only the first sentence and should be extended, or a new TALK row added.",
+    "exact_fix": "Status cell: \"Many of these challenges are resolved by the time we reach high-volume manufacturing (HVM) in our factory\" (speaker's claim, [C]; quoted in press) | Limits cell: \"they remain significant manufacturing considerations, requiring increasingly stringent control of temperature stability during testing, as well as the use of specialized sockets, dedicated cleaning materials, and enhanced data monitoring\""
+   }
+  ]
+ },
+ "missed_memory": {
+  "candidates": [
+   {
+    "company": "Samsung",
+    "title_or_description": "'Challenges and responses of metrology technologies for the new wave of 3D NAND devices' (Ihm, Kim: Flash Process Development Team, Samsung Semiconductor R&D Center; Han: Nova). SPIE Metrology, Inspection, and Process Control XXXIX, DOI 10.1117/12.3050400. Full text read via novami.com PDF.",
+    "date": "2025-02 conference; Crossref publication 2025-05-01 (PDF dated 2025-04-10)",
+    "url": "https://novami.com/wp-content/uploads/2025/04/challenges-and-responses-of-metrology-technologies-for-the-new-wave-of-3d-nand-devices.pdf",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "Samsung's own wording on how it inspects wafer-to-wafer hybrid Cu bonds (VNAND CMOS-to-array). (1) 'SAM requires 10 to 20 minutes to scan an entire wafer, we developed an alternative solution utilizing interferometry technology', giving a map 'within a minute' that correlates with the SAM void map. (2) AFM measures Cu pad recess at sub-nm resolution, but 'its low throughput remains a challenge for HVM'. (3) 'warpage monitoring is necessary at every process step'. (4) Voids over 100 um cause wafer breakage at thinning. These are numbers and stated limits that the dossier lacks for Samsung HCB (it has only the Nearfield massive-metrology paper and an ECTC panel paraphrase). They feed sections 1, 3 (more steps) and 5. DOI, title and 'novami' all absent from evidence.csv.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes: WebFetch downloaded the PDF from novami.com. SPIE's own page blocks scripts."
+   },
+   {
+    "company": "SK hynix",
+    "title_or_description": "Onto Innovation release 'Onto Innovation Receives Best Partner Award from SK hynix for Hidden Defect Prevention in High Bandwidth Memory Production'. Award for technology achievement at SK hynix 25th Anniversary Partners Day, 28 Sep 2026; Dragonfly G5 inspection; accepted from CEO Kwak Noh-Jung. Script-readable copy on StockTitan.",
+    "date": "2026-10-12 (award 2026-09-28)",
+    "url": "https://www.stocktitan.net/news/ONTO/onto-innovation-receives-best-partner-award-from-sk-hynix-for-hidden-4whkumk3v6n1.html",
+    "source_type": "vendor",
+    "topic": "supplier award",
+    "why_it_matters": "This is save-by-hand item #2 in gaps.md, which the dossier marks NOT RETRIEVED. The dossier calls it the only award found that ties an inspection tool to HBM production. This copy reads under WebFetch. Its claims: Onto was 'the only company recognized for technology achievement'; the award was for 'a defect prevention system with breakthrough measurement technology' for HBM; Dragonfly G5 'helps identify hidden defects earlier'. Section 4 could move it from not-retrieved to a [C] vendor claim. SK hynix itself is not quoted.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes for stocktitan.net (WebFetch worked). investors.ontoinnovation.com and Business Wire failed earlier."
+   },
+   {
+    "company": "SK hynix",
+    "title_or_description": "Infinitesima release: SK hynix 'has adopted the Metron3D 300mm in-line wafer metrology system and released it for use in volume production'. Includes quotes from Young-Hyun Choi, head of DMI (Defect Analysis, Metrology and Inspection Technology), SK hynix.",
+    "date": "2025-07-08 (GlobeNewswire); StorageNewsletter copy 2025-07-17",
+    "url": "https://www.storagenewsletter.com/2025/07/17/sk-hynix-chooses-infinitesima-metron-3d-300mm-system-for-in-line-process-control/",
+    "source_type": "vendor",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "An SK hynix executive, quoted by name, says in-line high-throughput AFM (Rapid Probe Microscope) has 'demonstrated excellent sub-nanometre 3D metrology with the required cost-of-ownership' and is released for volume production ([C] status claim). This names a metrology method and vendor at SK hynix that appears nowhere in the dossier. Caveat: the release says advanced DRAM, not HBM. Only Bits&Chips press (bits-chips.com/article/sk-hynix-to-use-infinitesimas-afm-metrology-in-hbm-production/) ties it to HBM, which would be [S]. 'Infinitesima' and 'Metron' are absent from evidence.csv.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes for storagenewsletter.com (WebFetch worked). The natlawreview copy returns 404."
+   },
+   {
+    "company": "SK hynix",
+    "title_or_description": "Femtometrix release 'Femtometrix Honored by the World's Leading Memory Manufacturer...': Best Partner (Innovation) award for in-line nonlinear-optical (SHG) process-control tools; credits contribution to HBM4. Photo caption: award received from 'CEO Kwak Noh-Jung', i.e. SK hynix Partners Day 2025.",
+    "date": "2025-10-23 (release); award ceremony presumably 2025-09-29",
+    "url": "https://apps.digitimes.com/news/a20251022PR203.html?chid=9",
+    "source_type": "vendor",
+    "topic": "supplier award",
+    "why_it_matters": "The dossier and gaps.md say only ULVAC was identified among SK hynix's 14 winners in 2025. This adds a metrology/process-control vendor tied to HBM4. The release never names SK hynix; the attribution rests on the CEO caption, so tag it [I], plus [C] for the vendor's claim. 'Femtometrix' is absent from evidence.csv.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "partly: WebFetch read the page, but Digitimes forbids republication and gave a summary only"
+   },
+   {
+    "company": "Samsung",
+    "title_or_description": "FCMN 2026 slide deck 'Production-Ready Hybrid Metrology for Deep 3D Structure Profiling Using SE and X-ray Diffraction'. Authors: Y. Kim, Y. Sohn, Y. Jeong (Samsung DS Division), P. Zuvela (Onto), M. Kuhn (Rigaku). Talk at FCMN, Monterey, 18 Mar 2026.",
+    "date": "2026-03-18",
+    "url": "https://cdn.fs.pathlms.com/E6x7snw6Si6F8pFwsPJw?dl=true",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "A Samsung-led primary deck on memory CD metrology. It says optical SE loses resolution in deep VNAND (WL ~200-400). X-ray CD (XCD/CD-SAXS) 'Demonstrates Production-Level Measurement Capability', with 'Measurement time ... reduced from 30 minutes to about 5.7 minute'. Model-guided ML raises correlation, e.g. 0.63 to 0.72. It adds a Samsung X-ray-based in-line metrology item; no dose or damage wording, and VNAND, not HBM. The dossier has no FCMN item.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes: curl got HTTP 200 PDF from cdn.fs.pathlms.com, a host already used in evidence.csv"
+   },
+   {
+    "company": "Micron",
+    "title_or_description": "'Nondestructive Metrology of SiO/SiN Multilayer Stack by X-Ray Reflectometry and Comparison With TEM Results', Surface and Interface Analysis. All 6 authors Micron Technology, Boise.",
+    "date": "2026-01-06",
+    "url": "https://doi.org/10.1002/sia.70044",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "Journal paper. A Micron statement on memory film metrology: it validates 'XRR as a process line monitoring tool for quick feedback of process quality' of the 3D NAND ONON stack against destructive TEM. It discusses limits and 'future implementation of XRR in manufacturing environments' (status: not yet in production). It adds a Micron film-metrology method that the dossier lacks (Micron rows are CD-SEM, e-beam, VM, FA).",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "abstract and affiliations via Crossref API yes; Wiley full text probably blocked"
+   },
+   {
+    "company": "Micron",
+    "title_or_description": "Scott DeBoer (Micron President and Chief Technology & Products Officer), SEMICON Taiwan 2026 Master Forum keynote, 2 Sep 2026, as reported by Business Next (數位時代).",
+    "date": "2026-09-03 (talk 2026-09-02)",
+    "url": "https://www.bnext.com.tw/article/92109/micron-vertical-hbm-hybrid-bonding",
+    "source_type": "press/trade",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "A dated, in-period Micron executive statement. Hybrid bonding 'in terms of large-scale mass-production capability is clearly behind'. Die-to-wafer and wafer-to-wafer bonding 'and related metrology' still need substantial improvement before vertical HBM can be mass-produced. It complements the undated ITF World quotes (TALK-035 to 037, via SemiEngineering) and the SEMICON Taiwan 2025 Micron talk. Tag [S]; the bnext URL is absent from evidence.csv.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes for bnext.com.tw (WebFetch worked)"
+   },
+   {
+    "company": "Micron",
+    "title_or_description": "'Novel Fractal Points Implementation for Electron Beam Inspection (EBI) and Data Analysis', IEEE ICMTS 2025. Authors: 4 Micron (Hiroshima F15, Taichung, Singapore), 2 ASML.",
+    "date": "2025-03-24",
+    "url": "https://doi.org/10.1109/icmts63811.2025.11068899",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "Micron-led DRAM-fab e-beam inspection with numbers: 'nuisance defects reduction by 98.1%', 'increase in defects of interest (DOI) by 255.7%', '10K-fold enhancement for resolution', aimed at shortening yield learning 'prior to probe readings'. The dossier's Micron e-beam items are SPIE abstracts where Micron is only inferred; this one has confirmed Micron affiliations. Front-end DRAM, not HBM.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "abstract via Semantic Scholar API yes; IEEE Xplore no"
+   },
+   {
+    "company": "SK hynix",
+    "title_or_description": "SK hynix Inc. Form 424B4 prospectus for its US ADS offering, filed on SEC EDGAR (CIK 2120882). SK hynix also now furnishes 6-Ks on EDGAR.",
+    "date": "2026-07-09 (prospectus date; filed 2026-07-10)",
+    "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "A script-readable primary SK hynix document. gaps.md #11 says SK hynix IR material could not be reached. Generic but citable statements: 'metrology inspection equipment' among principal equipment; 'We generally seek to obtain testing equipment with similar functionality from various vendors'; back-end 'inspection of individual ... dies. Chips that fail this test are either scrapped or repaired by laser trimming'; packaged parts 'fully tested'; HBM requires 'rigorous testing and approval processes'; MR-MUF overcomes 'warpage'. There are no counts, so it supports NOT DISCLOSED with a primary source. The 6-Ks checked (Q2 and Q3 2026 results, P&T7 investment) are DART translations with no call scripts.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes with a declared User-Agent (curl got HTTP 200 after redirect)"
+   },
+   {
+    "company": "Micron",
+    "title_or_description": "Micron Form 10-K for fiscal 2026 (year ended 3 Sep 2026), SEC EDGAR, Item 1 Manufacturing and Risk Factors.",
+    "date": "2026-10-09",
+    "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "Micron's own filing. 'We test our products at various stages in the manufacturing process, conduct numerous quality control inspections throughout the entire production flow, and perform high-temperature burn-in'. Its in-house AMBYX test/burn-in systems run 'simultaneous circuit tests ... reducing testing time and cost'. The cost section names 'testing at progressively higher performance speeds and quality levels'. A risk factor names 'achieving acceptable yields and quality for HBM products with their multiple chip layers'. This fills the dossier's Micron test-insertion gap (now only earnings capex, SMP-028) with a primary source. No counts.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes with a declared User-Agent (curl got HTTP 200)"
+   },
+   {
+    "company": "Micron",
+    "title_or_description": "Micron press release 'Micron Ships HBM4 to Key Customers to Power Next-Gen AI Platforms': HBM4 36GB 12-high built on 1-beta, 12-high packaging and a 'highly capable memory built-in self-test (MBIST) feature'.",
+    "date": "2025-06-10",
+    "url": "https://micron.gcs-web.com/node/48886",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "Micron's only in-period own statement found on test capability built into the HBM4 stack: MBIST is offered for customer integration and validation. It bears on section 3.1, test steps for HBM4, where the dossier has nothing from Micron. 'MBIST' is absent from evidence.csv.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "probably yes (micron.gcs-web.com is already in evidence.csv); investors.micron.com refuses"
+   },
+   {
+    "company": "Samsung",
+    "title_or_description": "'From CMP Surface Prediction to Defect Detection: An AI-Driven Virtual Metrology-TCAD Framework', SISPAD 2025. All 12 authors Samsung (7 Semiconductor R&D Center, 5 Foundry Business).",
+    "date": "2025-09-24",
+    "url": "https://doi.org/10.1109/sispad66650.2025.11186319",
+    "source_type": "conference paper/abstract",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "A Samsung-authored virtual-metrology item with confirmed affiliations. The dossier's Samsung VM rows are SPIE VNAND abstracts where Samsung is only inferred. The method unifies 'large-scale data-driven virtual metrology with 3D TCAD' to predict CMP non-uniformity, scaling to 'over two billion points within a four-hour window'. CMP topography is the key hybrid-bonding control, but the abstract does not say whether bonding layers are in scope; check before citing for hybrid bonding.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "abstract via Semantic Scholar API yes; IEEE Xplore no"
+   },
+   {
+    "company": "SK hynix",
+    "title_or_description": "'Material-Mechanistic Interplay in SiCN Wafer Bonding for 3D Integration', ACS Omega. Authors: 3 SK hynix (Ahn, Kim, Kang), YNU-led, with TEL Kyushu. Companion paper: 'Surface Chemistry Effects on Bond Wave Dynamics and Distortion-Induced Scaling Errors during Plasma-Activated Direct Bonding of SiCN', ACS Applied Electronic Materials, 2026-04-21, doi 10.1021/acsaelm.6c00446 (3 of 8 authors SK hynix).",
+    "date": "2025-06-23 (Omega); 2026-04-21 (AEM)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12224090/",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "Journal papers. SK hynix co-authored lab measurement of wafer-bonded SiCN interfaces. The full text (PMC) names the methods: double-cantilever-beam bonding energy, time-dependent DCB in N2 for interfacial water, a SAM image, positron annihilation, TEM/EELS, XPS and TDS. The AEM paper adds bond-wave and distortion (scaling-error) measurement. Same YNU/TEL/SK hynix group as the ECTC 2025 bond-wave paper in the dossier; it extends the SK hynix W2W method list. Status: lab.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes for PMC (WebFetch read the full text); pubs.acs.org returned 403"
+   },
+   {
+    "company": "Samsung",
+    "title_or_description": "'Warpage Control Strategies in 3D Advanced Packaging: A Focus on Post-Processing and Material-Level Optimization', IMAPS (IMAPSource Proceedings). All 12 authors Samsung Electronics.",
+    "date": "2026-10-27",
+    "url": "https://doi.org/10.4071/001c.173315",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "A Samsung empirical study of wafer-level warpage in 3D packaging 'using real-case wafer integration': EMC CTE under thermal cycling, CUF versus MUF, and wafer-support-system tuning. It bears on the brief's wafer/chip warpage item, where the dossier has SK hynix's in-line chip-warpage paper but nothing from Samsung. The abstract does not name the measurement tool or say whether the work is HBM, so the full text is needed.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "abstract via Crossref API yes; imapsource.org probably yes (an imapsource PDF is already in evidence.csv)"
+   },
+   {
+    "company": "SK hynix",
+    "title_or_description": "SEMI Korea training-course talk abstracts by memory-maker MI staff. MI Tutorial 2025: Cho Jong-hoe (DRAM MI Development Team, Metrology part lead, SK hynix) and Kim Deok-in (NAND MI Development, Inspection & Analysis part lead, SK hynix). SPT 2026 1st 'Metrology & Inspection': Oh Jae-hyung TL, SK hynix. MI Tutorial 2026 (Suwon, 22 Oct 2026): Cho Jong-hoe, Kim Jae-hyun (DRAM Metrology Technology team, SK hynix), and Ahn Jeong-ho PL (MI technology team, Samsung Electronics).",
+    "date": "2025-09 (MI2025 PDFs); 2026-03 (SPT2026); 2026-10-22 (MI2026)",
+    "url": "https://www.semi.org/sites/semi.org/files/2026-08/MI2026%20%EC%97%B0%EC%82%AC%20%EC%95%BD%EB%A0%A5%20%EB%B0%8F%20%EA%B0%9C%EC%9A%94_%EC%A1%B0%EC%A2%85%ED%9A%8C%20TL%2C%20SK%20hynix.pdf",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "These are in-period talks by SK hynix and Samsung metrology/inspection leads that the dossier does not list. Search snippets show only generic abstracts (MI tool principles, in-line metrology demand, next-generation MI tools); one SPT2026 snippet says demand for in-line metrology is rising. Low weight unless the PDFs are saved by hand. Other PDFs: .../2025-09/MI2025 ..._김덕인 TL, SK hynix.pdf; .../2026-03/8.SPT2026_1st_중급_Metrology & Inspection_오재형 TL, SK hynix.pdf; .../2026-09/MI2026 ..._안정호 PL, 삼성전자.pdf.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "no: semi.org returned 403 to WebFetch, and the firecrawl attempt did not run (account out of credits)"
+   }
+  ]
+ },
+ "missed_logic": {
+  "candidates": [
+   {
+    "company": "Intel (with FormFactor)",
+    "title_or_description": "SWTest 2026 deck W07_01, 'Micro Bump Probing: High Volume Experience Driven Capability Demonstration and Direction for Advanced 3D/2.5D Packaging' (Ahmed, Barghi, Subramanian, Wickramaratne of Intel Foundry; Streifer, Caughey of FormFactor)",
+    "date": "2026-06-08",
+    "url": "https://www.swtest.org/library/2026proc/pdf/W07_01_AHMED_SWTest-2026.pdf",
+    "source_type": "conference paper/abstract",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "This is the only production-status test statement found for Intel micro-bumps. It reads: 'micro-bump probing in High Volume Production through the Foveros product line (HVM starting in 2019) - with plans to enable micro-bump probing on EMIB devices this year'. The table gives Foveros DOW36 as 'In Mass Production since 2019, Wafer- and Die-Sort', with '25+ products, 300K+ wafers, 1500+ FFI probe heads'. EMIB45 mixed-pitch probing is 'Under development, Technology Certification by Q3'26', which adds a micro-bump sort step on EMIB, the bridge Intel uses for HBM. Other content: 'Bump deformation assessments to validate no downstream risks', 'Sort/Probe induced defect modes and yield losses', and SEM/EDS/X-ray characterization. It names FormFactor as co-author and probe supplier. The dossier's Intel sampling rows (SMP-030 to SMP-034) cover only hybrid-bond overlay and logic test. Micro-bumps, not hybrid bonds.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - PDF downloaded with plain curl; pdftotext works"
+   },
+   {
+    "company": "Intel",
+    "title_or_description": "Intel's own 2026 EPIC Supplier Award list (41 recipients with categories); the 2025 list (37 recipients, 8 Apr 2025) is on the same host",
+    "date": "2026-03-19",
+    "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-announces-2026-epic-supplier-award-recipients.html",
+    "source_type": "chipmaker own document",
+    "topic": "supplier award",
+    "why_it_matters": "The dossier lists Intel 2026 categories as NOT RETRIEVED and has 5 rows (Lasertec, FormFactor, AEM, Camtek, Nova), with no KLA. Intel's own list adds KLA, 'Excellence in Technology Development'. It gives the categories: Nova 'Excellence in Integrated CMP Metrology Solutions'; FormFactor 'Excellence in Sort Test Development'; Camtek and AEM 'Excellence in Business Enablement'; Lasertec 'EUV Mask Technology Development'. It also lists Tessolve, 'Excellence in Advanced Packaging and Post-Silicon Test', and SPIL (ASE group), 'Excellence in Delivery and Cycle Time'. The 2025 page gives KLA (Technology Development), Camtek (Affordability and Technology Development), Keysight (Technology Enablement), Technoprobe (Sort/Test Development) and Lasertec. These would upgrade AW-021 to AW-031 from [S] to [F] and change the AW-058 counts.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "partly - this intel.com/content/... newsroom URL returned full text to WebFetch; newsroom.intel.com 301-redirects to a 404, and fetch.py got 403 per gaps.md"
+   },
+   {
+    "company": "TSMC",
+    "title_or_description": "IMPACT 2025 paper 'Advanced Optical Metrology Using on Quality Monitoring of Carrier Wafer in Advanced Packaging' (doi 10.1109/impact67645.2025.11281768). All 8 authors are TSMC, including Zhi-Hua Zou, head of TSMC's Advanced Packaging Metrology Engineering division and the SEMICON Taiwan 2026 keynote speaker",
+    "date": "2025-10-21",
+    "url": "https://doi.org/10.1109/impact67645.2025.11281768",
+    "source_type": "conference paper/abstract",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "The dossier says no in-period TSMC document names a packaging inspection method. This abstract does name one, from TSMC's packaging-metrology group: an in-line optical tool measuring the transmittance, surface roughness and 'bulk defects (like voids or cracks)' of 12-inch transparent carrier wafers. These wafers support temporary bonding in 2.5D/3D flows and keep wafer warpage down. Quoted results: 'within one minute of measuring time'; 'validated on 12-inch transparent carrier wafer'; 'cross-checking results with other inspection instruments'. Status: demonstrated or validated, not stated as HVM. It is also the only in-period paper found by the keynote speaker. The IMPACT venue is not in calc/venues.tsv.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "abstract yes (Semantic Scholar batch API and Crossref returned it); full text no (ieeexplore bot challenge)"
+   },
+   {
+    "company": "TSMC",
+    "title_or_description": "SWTest 2026 deck M03_02, 'Integrated Solution for HPC Testing in AI Era' (Oscar Lee, Kenny Tang, TSMC)",
+    "date": "2026-06-08",
+    "url": "https://www.swtest.org/library/2026proc/pdf/M03_02_LEE_SWTest-2026.pdf",
+    "source_type": "conference paper/abstract",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "This is TSMC's own test-insertion map for CoWoS and SoIC, which the dossier lacks: section 3.2 has only the 'envisioned' Die-of-Interest step, SMP-035. Slide text: 'Boosting test coverage through distributed test architectures, including CP (CP/LSI/IVR/RDL) for KGD, CPS for KGS, AST for assembly quality'. The flow is SoIC top- and bottom-die wafer CP, then CPS (known-good stack), RDL-CP, WLCP, CoW-SDP, AST and FT. A 'CP Testing for Early Detection' slide gives cycle times (>2 weeks down to <1 week) and rising cost per stage. It lists 'HBM Base die' and 'New media (Cu pad, uBump)' as test targets, and shows a '1.7X / 3.3X' materials and cycle-time saving from fast stop-and-fix. It gives no production counts and no per-product insertion number. The dossier's TSMC SoIC row could move from nothing on screening to a test of the known-good stack.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - PDF downloaded with plain curl"
+   },
+   {
+    "company": "Intel (with Technoprobe)",
+    "title_or_description": "SWTest 2026 deck M02_01, 'Micro-bump probing for advanced System-on-Chip testing: A Preview into Native-Pitch Solutions and their challenges' (Periasamy, Mahadevapuram, Ahmed, Ashok of Intel Foundry; Parlato et al. of Technoprobe)",
+    "date": "2026-06-08",
+    "url": "https://www.swtest.org/library/2026proc/pdf/M02_01_PERIASAMY_SWTest-2026.pdf",
+    "source_type": "conference paper/abstract",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "Intel's stated reason for adding test: 'High die count package yield improvement need - Drives shift-left strategy for test - Need for probing on both core and µ-bumps Even at native pitches (< 50.0 µm)' on EMIB compute die. Method: native 45 µm pitch micro-bump probing (K tech). Post-probe bump-height metrology: 'Unprobed to probed bumps height difference is within assembly process threshold'. Also uses XRM 3D reconstruction of probe heads. Status: 'on track to pass criteria for high volume sort', so pre-HVM. It names Technoprobe as co-developer; Technoprobe won Intel's 2025 EPIC award for sort/test development (AW-025). This would add a 'more' row for Intel in the section 3.4 direction table.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - PDF downloaded with plain curl"
+   },
+   {
+    "company": "TSMC",
+    "title_or_description": "TSMC 2025 Annual Report (English), sections 5.3.2 to 5.3.4 and Quality and Reliability",
+    "date": "2026-05-06",
+    "url": "https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20Annual%20Report.E.pdf",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "gaps.md lists this report as NOT RETRIEVED. It returned to WebFetch, and pdftotext reads it except for CJK glyphs. TSMC applies ML and computer vision to 'yield analysis, process control, equipment failure detection, virtual metrology, and wafer defect inspection'. It also says 'TSMC is extending its intelligent manufacturing system from the front-end fabs to the back-end fabs, establishing a complete process management chain from wafer to die'. The Q&R digital initiatives cover 'automatic defect detection and classification, intelligent statistical process control (SPC) and metrology'. This is a [C] claim that VM and AI inspection now reach packaging fabs, a TSMC row missing from section 3.3. The report names no HBM or SoIC inspection method, which closes the gap as NOT DISCLOSED.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "likely yes - the 7.7 MB PDF returned to WebFetch, although gaps.md lists investor.tsmc.com as refusing; not tested with fetch.py"
+   },
+   {
+    "company": "ASE (ASE Technology Holding)",
+    "title_or_description": "ASEH 2025 Sustainability Report (English, full PDF): '2025 Product and Technology Development' list and 'AI in Manufacturing' section",
+    "date": "2026-09-07",
+    "url": "https://www.aseglobal.com/en/pdf/aseh-2025-csr-en-final.pdf",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "These are ASE's own words behind the AGM press item TALK-048 [S] ('高效率影像異常檢測AI技術'). The report has: 'Wire-Bond Packaging: AOI integrated with high efficiency anomaly detection AI technology for complex wirebonding inspection'. It also describes a 'proprietary smart wire-bonding AI-assisted inspection system equipped with AI-AOI ... and AVI', and an OOB platform that 'speeds up quality anomaly analysis from days to hours, reducing costs and wastage from rework, scrapping and repeated inspections'. My inference: the AI image-anomaly item is wire-bond AOI, not HBM. That would reframe TALK-048 and add an ASE [C] row to section 3.3. The report has no HBM or hybrid-bond inspection content.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - PDF downloaded with plain curl from aseglobal.com/en/pdf/ (the press-room HTML pages gave 403 to fetch.py)"
+   },
+   {
+    "company": "TSMC",
+    "title_or_description": "Search-engine snippets of TSMC's own keynote abstract and session page (Zhihua Zou, 'Challenges and Opportunities for Metrology and Inspection of Advanced Packaging', SEMICON Taiwan 2026)",
+    "date": "2026-09-04",
+    "url": "https://www.semicontaiwan.org/en/node/18506",
+    "source_type": "other",
+    "topic": "x-ray dose",
+    "why_it_matters": "These are snippet leads not yet in the dossier. Section 2.2(b) quotes only 'DRAM/HBM damage concern by X-ray'. The snippets add that the abstract also lists 'Infrared Red (IR) limitation to look through transparent materials only', 'higher warped wafers to handle' and 'resolution constraints for Scanning Acoustic Microscope', with 'AI models and design for metrology' as remedies. The zh page lists 'Key Technologies Covered': surface defects, buried defects, 2D/3D X-ray, SAM, AFM, warpage, DfM. These lines would show which non-X-ray methods TSMC calls limited. They are snippet paraphrases only and cannot be [F] until the page is saved by hand.",
+    "already_in_evidence": true,
+    "host_accepts_scripts_guess": "no - semicontaiwan.org returned 403 to WebFetch (en and zh); Firecrawl not available (out of credits); Wayback API rate-limited"
+   },
+   {
+    "company": "TSMC",
+    "title_or_description": "TSMC's own award-list PDFs: '2026 Supply Chain Management Forum Presents Awards to Outstanding Suppliers' (17 Nov 2026) and the 2025 edition (26 Nov 2025)",
+    "date": "2026-11-17",
+    "url": "https://pr.tsmc.com/system/files/newspdf/attachment/1e7873e182523d3351afd810dc413e0bce01ca5f/2026%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29-final_wmn.pdf",
+    "source_type": "chipmaker own document",
+    "topic": "supplier award",
+    "why_it_matters": "gaps.md says these same-host PDFs were not tried. Both returned to WebFetch. They would upgrade AW-001 to AW-016 from [S] to [F], with TSMC's English categories. 2026: ADVANTEST, Lasertec and V5 Technologies 'Excellent Production Support'; KLA 'Excellent Technology and Production Support and Excellence in Green Manufacturing'. Also 2026: All Ring Tech 'Excellent Production Support' (classed 'other' in AW_table; worth checking whether its tools are inspection), SPIL 'Excellent Turnkey Production Support', and an 'Advanced Packaging' breakout session. 2025: ADVANTEST, KLA, Onto Innovation and All RING TECH, each 'Excellent Production Support'. No category names HBM or hybrid bonding.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "partly - the 2026 PDF came back to WebFetch; the 2025 PDF returned HTML to curl but a PDF to WebFetch"
+   },
+   {
+    "company": "Amkor",
+    "title_or_description": "Amkor event page for ITC 2026: talk 'Advanced Packages, AI & Amkor: The OSAT Test Perspective' by Omer Dossani, VP Global Test Services. A companion ITC 2025 page lists Vineet Pancholi's 'Best Practices for Testing 2.5D Chiplet Package Designs'",
+    "date": "2026-10-11",
+    "url": "https://amkor.com/events/itc-2026-semiconductor-test-conference/",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "This is Amkor's own wording, where the dossier currently cites only trade press for this executive (SMP-039 [S]). The talk covers 'increasing production test times', 'the challenges associated with multi-chiplet advanced packages', and wafer- and package-level test-access constraints. It would support Amkor's 'more' row in section 3.4 with an Amkor-hosted statement, though HBM is not named and no numbers are given.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - amkor.com answered WebFetch (the dossier already saved other amkor.com pages)"
+   },
+   {
+    "company": "ASE",
+    "title_or_description": "IMPACT 2025 paper 'Accelerating AI-Based Defect Detection in Manufacturing: Synthetic Data and Model Optimization for Rapid and Stable Deployment' (doi 10.1109/impact67645.2025.11281550; all authors from ASE Corporate R&D, AI & Advanced Optical Technology Development Division)",
+    "date": "2025-10-21",
+    "url": "https://doi.org/10.1109/impact67645.2025.11281550",
+    "source_type": "conference paper/abstract",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "ASE's own numbers on AI image inspection, which the dossier has only as press (TALK-048) or the FA-only SAM paper (SMP-037). The abstract says 'AI-based image inspection has been widely adopted'. On substrate defects, synthetic data lifts recall from 82.1% to 93.1% with 50% less real data, and the CAD model gives 'escape rate <0.05%, false positives <1%, and ~10% uncertain cases'. This would add a quantified ASE row to section 3.3. It is not HBM-specific. The IMPACT venue was not scanned.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "abstract yes via Semantic Scholar and Crossref; full text no (ieeexplore)"
+   },
+   {
+    "company": "Intel",
+    "title_or_description": "Intel Foundry packaging web page, 'Advanced Chiplet Test' and 'Test Services' sections. The same host now also serves the Foveros Direct 3D tech brief (Nov 2025), which is save-by-hand item 12 in gaps.md",
+    "date": "2026-11-21",
+    "url": "https://www.intel.com/content/www/us/en/foundry/packaging.htm",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "These are Intel [C] claims about an added die-level test step. The page says 'The increased number of chiplets in a design drives a need for advanced test services that can identify and deliver known good die before final assembly'. It calls 'singulated die sort ... a best-in-class yield differentiator'. It also says 'The ability to test at the die level, versus wafer, is essential to deliver more known good die', plus package-level burn-in with active thermal control and SLT. The Foveros Direct brief (https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-11/foveros-direct-3d-tech-brief.pdf) downloaded and contains no inspection or metrology text, only 'yielded independently' and 'data-forward testing services'. That closes gap 12 as NOT DISCLOSED.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - both answered WebFetch (gaps.md assumed intel.com refuses)"
+   },
+   {
+    "company": "ASE (incl. SPIL)",
+    "title_or_description": "ASE's own Supplier Day pages: 2025 Best Supplier Awards (ceremony 24 Apr 2026, 19 plus 3 winners) and 2024 awards (11 Apr 2025, 17 winners)",
+    "date": "2026-04-24",
+    "url": "https://www.aseglobal.com/press-room/supplier-day-2026",
+    "source_type": "chipmaker own document",
+    "topic": "supplier award",
+    "why_it_matters": "Retrievable by WebFetch, though fetch.py got 403 per gaps.md. These would upgrade AW-045 to AW-055 from [S] to [F] with ASE's own spellings. 2026: 'Advantest Taiwan Inc.', 'HON. PRECISION, INC.', 'Allring Tech Co., Ltd.'. 2025 (https://www.aseglobal.com/press-room/supplier-day-2025): 'Teradyne (Asia) Pte. Ltd', 'Test Research, Inc.', 'Allring Technology'. The page names SPIL as a participating subsidiary, with no separate SPIL award. No inspection-vendor names change.",
+    "already_in_evidence": true,
+    "host_accepts_scripts_guess": "partly - answered WebFetch; fetch.py got HTTP 403 per gaps.md"
+   },
+   {
+    "company": "Amkor",
+    "title_or_description": "Amkor 'Smart Manufacturing' web page, AI/ML pillar (Automated Defect Classification)",
+    "date": "2026-08-01",
+    "url": "https://amkor.com/smart-manufacturing/",
+    "source_type": "chipmaker own document",
+    "topic": "sampling intensity / VM",
+    "why_it_matters": "Undated; the date given is approximate (the page shows ©2026 and image paths from Jul-Aug 2026). This is an Amkor [C] claim that AI replaces part of manual inspection: 'AI-powered vision systems for inspection, reducing AOI operators by 30% and significantly improving yield and cycle time'. Other text: 'Real-time Fault Detection and Classification (FDC) combined with Statistical Process Control (SPC)' and 'Full lot and unit-level traceability'. Amkor has no row in section 3.3. Not HBM-specific.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - answered WebFetch"
+   },
+   {
+    "company": "Intel",
+    "title_or_description": "US 2025/0006651 A1, 'Slit fiducials for integrated circuit device alignment' (assignee Intel; filed 30 Jun 2023, published 2 Jan 2025)",
+    "date": "2025-01-02",
+    "url": "https://patents.google.com/patent/US20250006651A1/en",
+    "source_type": "other",
+    "topic": "inspection/metrology method",
+    "why_it_matters": "A borderline but relevant patent: Intel's own description of IR bond-alignment metrology for stacked dies, with HBM-on-base-die stacking as context. It says alignment metrology 'uses infrared (IR) light to pass through the device', comparing fiducials in reflective or transmissive mode. It would support the Intel IR overlay rows (PAPL-045 to PAPL-049) with a dated Intel document on how the IR overlay marks are built. It gives no production status.",
+    "already_in_evidence": false,
+    "host_accepts_scripts_guess": "yes - patents.google.com already used for saved evidence (XR-028 to XR-030)"
+   }
+  ]
+ }
+}

@@ -17,7 +17,8 @@ def main():
     order = sys.argv[2:] or ["A1", "A2", "A3", "A4", "A5", "A6", "TH", "CL", "B"]
     pdir = os.path.join(ROOT, "out", company, "parts")
     files = [os.path.join(pdir, f"{m}.csv") for m in order if os.path.exists(os.path.join(pdir, f"{m}.csv"))]
-    files += sorted(f for f in glob.glob(os.path.join(pdir, "*.csv")) if f not in files)
+    files += sorted(f for f in glob.glob(os.path.join(pdir, "*.csv"))
+                   if f not in files and not f.endswith("_table.csv"))  # *_table.csv are not evidence files
     out, seen, problems = [], set(), []
     for f in files:
         rows = list(csv.DictReader(open(f, encoding="utf-8")))

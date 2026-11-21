@@ -1,0 +1,6937 @@
+
+
+US11217495B2 - X-ray system, semiconductor package, and tray having X-ray absorption filter 
+        - Google Patents
+
+US11217495B2 - X-ray system, semiconductor package, and tray having X-ray absorption filter 
+        - Google Patents
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+Download PDF
+
+Info
+
+Publication number
+
+US11217495B2
+
+US11217495B2
+
+US17/008,627
+
+US202017008627A
+
+US11217495B2
+
+US 11217495 B2
+
+US11217495 B2
+
+US 11217495B2
+
+US 202017008627 A
+
+US202017008627 A
+
+US 202017008627A
+
+US 11217495 B2
+
+US11217495 B2
+
+US 11217495B2
+
+Authority
+
+US
+
+United States
+
+Prior art keywords
+
+semiconductor
+
+package
+
+filter
+
+rays
+
+substrate
+
+Prior art date
+
+2013-10-16
+
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+
+Active
+
+Application number
+
+US17/008,627
+
+Other versions
+
+US20200402864A1
+
+      (
+en
+
+Inventor
+
+Sang-young Kim
+
+Kyung-Soo Rho
+
+Ho-Jeong Moon
+
+Hyuck Shin
+
+Sun-Nyeong Jung
+
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+
+    Samsung Electronics Co Ltd
+
+Original Assignee
+
+Samsung Electronics Co Ltd
+
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+
+2013-10-16
+
+Filing date
+
+2020-08-31
+
+Publication date
+
+2022-01-04
+
+2020-08-31
+
+Application filed by Samsung Electronics Co Ltd
+
+filed
+
+Critical
+
+Samsung Electronics Co Ltd
+
+2020-08-31
+
+Priority to US17/008,627
+
+priority
+
+Critical
+
+patent/US11217495B2/en
+
+2020-09-01
+
+Assigned to SAMSUNG ELECTRONICS CO., LTD.
+
+reassignment
+
+SAMSUNG ELECTRONICS CO., LTD.
+
+ASSIGNMENT OF ASSIGNORS INTEREST (SEE DOCUMENT FOR DETAILS).
+
+Assignors: MOON, HO-JEONG, SHIN, HYUCK, JUNG, SUN-NYEONG, KIM, SANG-YOUNG, RHO, KYUNG-SOO
+
+2020-12-24
+
+Publication of US20200402864A1
+
+publication
+
+Critical
+
+patent/US20200402864A1/en
+
+2022-01-04
+
+Application granted
+
+granted
+
+Critical
+
+2022-01-04
+
+Publication of US11217495B2
+
+publication
+
+Critical
+
+patent/US11217495B2/en
+
+Status
+
+Active
+
+legal-status
+
+Critical
+
+Current
+
+2034-08-08
+
+Anticipated expiration
+
+legal-status
+
+Critical
+
+Links
+
+USPTO
+
+USPTO PatentCenter
+
+USPTO Assignment
+
+Espacenet
+
+Global Dossier
+
+Discuss
+
+Images
+
+Classifications
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01N
+—
+INVESTIGATING OR ANALYSING MATERIALS BY DETERMINING THEIR CHEMICAL OR PHYSICAL PROPERTIES
+
+G01N23/00
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00
+
+G01N23/02
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by transmitting the radiation through the material
+
+G01N23/04
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by transmitting the radiation through the material and forming images of the material
+
+H01L22/12
+—
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01N
+—
+INVESTIGATING OR ANALYSING MATERIALS BY DETERMINING THEIR CHEMICAL OR PHYSICAL PROPERTIES
+
+G01N23/00
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00
+
+G01N23/02
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by transmitting the radiation through the material
+
+G01N23/06
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by transmitting the radiation through the material and measuring the absorption
+
+G01N23/083
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by transmitting the radiation through the material and measuring the absorption the radiation being X-rays
+
+G
+—
+PHYSICS
+
+G21
+—
+NUCLEAR PHYSICS; NUCLEAR ENGINEERING
+
+G21K
+—
+HANDLING OF PARTICLES OR IONISING RADIATION NOT OTHERWISE PROVIDED FOR; IRRADIATION DEVICES; GAMMA RAY OR X-RAY MICROSCOPES
+
+G21K1/00
+—
+Arrangements for handling particles or ionising radiation, e.g. focusing or moderating
+
+G21K1/10
+—
+Scattering devices; Absorbing devices; Ionising radiation filters
+
+H01L23/3114
+—
+
+H01L24/48
+—
+
+H01L25/0657
+—
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10P
+—
+GENERIC PROCESSES OR APPARATUS FOR THE MANUFACTURE OR TREATMENT OF DEVICES COVERED BY CLASS H10
+
+H10P74/00
+—
+Testing or measuring during manufacture or treatment of wafers, substrates or devices
+
+H10P74/20
+—
+Testing or measuring during manufacture or treatment of wafers, substrates or devices characterised by the properties tested or measured, e.g. structural or electrical properties
+
+H10P74/203
+—
+Structural properties, e.g. testing or measuring thicknesses, line widths, warpage, bond strengths or physical defects
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W72/00
+—
+Interconnections or connectors in packages
+
+H10W72/50
+—
+Bond wires
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W74/00
+—
+Encapsulations, e.g. protective coatings
+
+H10W74/10
+—
+Encapsulations, e.g. protective coatings characterised by their shape or disposition
+
+H10W74/111
+—
+Encapsulations, e.g. protective coatings characterised by their shape or disposition the semiconductor body being completely enclosed
+
+H10W74/129
+—
+Encapsulations, e.g. protective coatings characterised by their shape or disposition the semiconductor body being completely enclosed forming a chip-scale package [CSP]
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W90/00
+—
+Package configurations
+
+H01L2224/45099
+—
+
+H01L2224/48091
+—
+
+H01L2224/48153
+—
+
+H01L2224/48227
+—
+
+H01L2224/8592
+—
+
+H01L2924/00014
+—
+
+H01L2924/15184
+—
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W70/00
+—
+Package substrates; Interposers; Redistribution layers [RDL]
+
+H10W70/60
+—
+Insulating or insulated package substrates; Interposers; Redistribution layers
+
+H10W70/62
+—
+Insulating or insulated package substrates; Interposers; Redistribution layers characterised by their interconnections
+
+H10W70/65
+—
+Shapes or dispositions of interconnections
+
+H10W70/654
+—
+Top-view layouts
+
+H10W70/656
+—
+Fan-in layouts
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W72/00
+—
+Interconnections or connectors in packages
+
+H10W72/01
+—
+Manufacture or treatment
+
+H10W72/015
+—
+Manufacture or treatment of bond wires
+
+H10W72/01515
+—
+Forming coatings
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W72/00
+—
+Interconnections or connectors in packages
+
+H10W72/071
+—
+Connecting or disconnecting
+
+H10W72/075
+—
+Connecting or disconnecting of bond wires
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W90/00
+—
+Package configurations
+
+H10W90/701
+—
+Package configurations characterised by the relative positions of pads or connectors relative to package parts
+
+H10W90/751
+—
+Package configurations characterised by the relative positions of pads or connectors relative to package parts of bond wires
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10W
+—
+GENERIC PACKAGES, INTERCONNECTIONS, CONNECTORS OR OTHER CONSTRUCTIONAL DETAILS OF DEVICES COVERED BY CLASS H10
+
+H10W90/00
+—
+Package configurations
+
+H10W90/701
+—
+Package configurations characterised by the relative positions of pads or connectors relative to package parts
+
+H10W90/751
+—
+Package configurations characterised by the relative positions of pads or connectors relative to package parts of bond wires
+
+H10W90/754
+—
+Package configurations characterised by the relative positions of pads or connectors relative to package parts of bond wires between a chip and a stacked insulating package substrate, interposer or RDL
+
+Definitions
+
+Embodiments of the inventive concept
+
+relate to an X-ray system, a semiconductor package, and a tray having an X-ray absorption filter.
+
+a technique of testing a semiconductor package and a set board having the semiconductor package using an X-ray system
+
+is being studied.
+
+Embodiments of the inventive concept
+
+provide an X-ray system capable of reducing degradation of a semiconductor device and obtaining a clear image.
+
+Another embodiment of the inventive concept
+
+provides a semiconductor package capable of reducing degradation of the semiconductor device due to X-rays.
+
+Still another embodiment of the inventive concept
+
+provides a tray for a semiconductor device capable of reducing degradation of semiconductor device due to X-rays.
+
+Embodiments of the inventive concept
+
+provide an X-ray system.
+
+the X-ray system
+
+includes an X-ray source and a detector adjacent to the X-ray source.
+
+a test specimen holder
+
+is disposed between the X-ray source and the detector.
+
+a filter
+
+is disposed between the X-ray source and the test specimen holder.
+
+the filter
+
+includes a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+the filter
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the plate-shaped semiconductor
+
+may include a semiconductor wafer.
+
+test specimen holder
+
+may serve to load a semiconductor package.
+
+the filter
+
+may include the same or substantially the same material as a semiconductor substrate in the semiconductor package.
+
+the filter
+
+may have a greater thickness than that of the semiconductor substrate in the semiconductor package.
+
+the filter
+
+may be formed in the semiconductor package.
+
+the filter
+
+may be disposed between the X-ray source and the semiconductor substrate.
+
+a tray
+
+may be disposed on the semiconductor package.
+
+the tray
+
+may be disposed between the X-ray source and the semiconductor package.
+
+the filter
+
+may be formed in the tray or on the surface of the tray.
+
+the filter
+
+may include a metal filter including Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+the metal filter
+
+is formed on one surface of the plate-shaped semiconductor.
+
+Embodiments of the inventive concept
+
+provide a semiconductor package.
+
+the semiconductor package
+
+includes a semiconductor filter adjacent to the semiconductor chip.
+
+the semiconductor filter
+
+may have the same or substantially the same material as a semiconductor substrate in the semiconductor chip.
+
+a semiconductor oxide film
+
+configured to cover the surface of the semiconductor filter may be disposed.
+
+an encapsulant
+
+configured to cover the semiconductor chip may be formed.
+
+the semiconductor filter
+
+may include a granular semiconductor.
+
+the granular semiconductor
+
+may be included in the encapsulant.
+
+a package substrate
+
+may be attached to the semiconductor chip.
+
+the semiconductor filter
+
+may include a plate-shaped semiconductor.
+
+the plate-shaped semiconductor
+
+may be formed in the package substrate or on the surface of the package substrate.
+
+the plate-shaped semiconductor
+
+may be formed between the package substrate and the semiconductor chip.
+
+a through electrode electrically connected to the package substrate and the semiconductor chip passing through the plate-shaped semiconductor
+
+may be formed.
+
+an underfill layer or an adhesive film
+
+may be formed between the package substrate and the semiconductor chip.
+
+the semiconductor filter
+
+may include a granular semiconductor.
+
+the granular semiconductor
+
+may be included in the underfill layer or the adhesive film.
+
+a coating film
+
+configured to cover the semiconductor chip may be formed.
+
+the granular semiconductor
+
+may be included in the coating film.
+
+inventions of the inventive concept
+
+provide a tray.
+
+the tray
+
+includes a plurality of cavities on which a semiconductor package is seated. Sidewalls configured to separate the cavities from each other are provided. A lower plate exposed on the bottom of the cavities is provided. A semiconductor filter is disposed adjacent to the cavities.
+
+the semiconductor filter
+
+may include the same or substantially the same material as a semiconductor substrate in the semiconductor package.
+
+the semiconductor filter
+
+includes a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+the granular semiconductor
+
+is included in the lower plate.
+
+the granular semiconductor
+
+may be attached onto the surface of the lower plate.
+
+the plate-shaped semiconductor
+
+may be attached to the surface of the lower plate.
+
+the plate-shaped semiconductor
+
+is inserted into the lower plate.
+
+FIGS. 1 to 3
+
+are schematic configuration views illustrating an X-ray system in accordance with embodiments of the inventive concept
+
+FIG. 4
+
+is a perspective view illustrating a filter in accordance with embodiments of the inventive concept
+
+FIG. 5
+
+is an exploded perspective view of FIG. 4 ;
+
+FIG. 6
+
+is a perspective view illustrating a filter in accordance with embodiments of the inventive concept
+
+FIG. 7
+
+is an exploded perspective view of FIG. 6 ;
+
+FIG. 8
+
+is a perspective view illustrating a filter in accordance with embodiments of the inventive concept.
+
+FIGS. 9 and 10
+
+are cross-sectional views of FIG. 8 ;
+
+FIG. 11
+
+is a graph showing an absorption coefficient of silicon
+
+FIGS. 12 and 13
+
+are graphs showing X-ray intensity versus wavelength
+
+FIG. 14
+
+is a cross-sectional view illustrating a semiconductor package in accordance with embodiments of the inventive concept
+
+FIGS. 15 and 16
+
+are cross-sectional views illustrating a granular filter in accordance with embodiments of the inventive concept
+
+FIGS. 17 to 29
+
+are cross-sectional views illustrating a semiconductor package in accordance with embodiments of the inventive concept.
+
+FIG. 30
+
+is a perspective view illustrating a tray in accordance with embodiments of the inventive concept.
+
+FIG. 31
+
+is an exploded perspective view of FIG. 30 ;
+
+FIGS. 32 to 40
+
+are cross-sectional views illustrating a tray with packages inserted in accordance with some embodiments of the inventive concept.
+
+first, second, third, etc.
+
+may be used herein to describe various elements, components, regions, layers and/or sections, these elements, components, regions, layers and/or sections should not be limited by these terms. These terms are only used to distinguish one element, component, region, layer or section from another region, layer or section. Thus, a first element, component, region, layer or section discussed below could be termed a second element, component, region, layer or section without departing from the teachings of the present inventive concept.
+
+spatially relative terms
+
+such as “beneath,” “below,” “lower,” “above,” “upper” and the like, may be used herein for ease of description to describe one element's or feature's relationship to another element(s) or feature(s) as illustrated in the figures. It will be understood that the spatially relative terms are intended to encompass different orientations of the device in use or operation in addition to the orientation depicted in the figures. For example, if the device in the figures is turned over, elements described as “below” or “beneath” other elements or features would then be oriented “above” the other elements or features. Thus, the term “below” can encompass both an orientation of above and below. The device may be otherwise oriented (rotated 90 degrees or at other orientations) and the spatially relative descriptors used herein interpreted accordingly.
+
+Embodiments
+
+are described herein with reference to cross-sectional illustrations that are schematic illustrations of idealized embodiments (and intermediate structures). As such, variations from the shapes of the illustrations as a result, for example, of manufacturing techniques and/or tolerances, are to be expected. Thus, embodiments should not be construed as limited to the particular shapes of regions illustrated herein but are to include deviations in shapes that result, for example, from manufacturing. For example, an implanted region illustrated as a rectangle will, typically, have rounded or curved features and/or a gradient of implant concentration at its edges rather than a binary change from implanted to non-implanted region. Likewise, a buried region formed by implantation may result in some implantation in the region between the buried region and the surface through which the implantation takes place. Thus, the regions illustrated in the figures are schematic in nature and their shapes are not intended to illustrate the actual shape of a region of a device and are not intended to limit the scope of the present inventive concept.
+
+front side and back side
+
+may be used in a relative sense herein to facilitate easy understanding of the inventive concept. Accordingly, “front side” and “back side” may not refer to any specific direction, location, or component, and may be used interchangeably. For example, “front side” may be interpreted as “back side” and vice versa. Also, “front side” may be expressed as “first side,” and “back side” may be expressed as “second side,” and vice versa. However, “front side” and “back side” cannot be used interchangeably in the same embodiment.
+
+near
+
+is intended to mean that one among two or more components is located within relatively close proximity of a certain other component.
+
+first end
+
+when a first end is near a first side, the first end may be closer to the first side than a second end, or the first end may be closer to the first side than to a second side.
+
+FIGS. 1 to 3
+
+are schematic views of exemplary configurations of an X-ray system in accordance with some embodiments of the inventive concepts.
+
+the X-ray system according to some embodiments of the inventive concept
+
+may be a device for testing a semiconductor package or a set board having the semiconductor package.
+
+a detector 15
+
+may be disposed adjacent to an X-ray source, for example, an X-ray tube 12 .
+
+a test specimen holder 14
+
+may be disposed between the X-ray tube 12 and the detector 15 .
+
+a filter 22
+
+may be disposed between the X-ray tube 12 and the test specimen holder 14 .
+
+the X-ray tube 12 and the detector 15
+
+may be connected to a controller 16 .
+
+a display 17
+
+may be connected to the detector 15 through the controller 16 .
+
+a semiconductor package 31
+
+may be loaded onto the test specimen holder 14 .
+
+X-ray tube 12 shown in FIG. 1
+
+instead of the X-ray tube 12 shown in FIG. 1 , other types of X-ray sources/generators are used to implement the concepts of the present disclosure.
+
+the semiconductor package 31
+
+may include a package substrate 32 , a semiconductor chip 35 , and an encapsulant 39 .
+
+the semiconductor chip 35
+
+may include a semiconductor substrate 33 having an active region 34 thereon. Although a plurality of active and/or passive devices and insulating layers may be formed in the active region 34 , but the detailed description thereof will be omitted for the sake of brevity.
+
+the test specimen holder 14
+
+may be a device which can move the semiconductor package 31 to the left, right, up, or down, and/or rotate the semiconductor package 31 .
+
+the test specimen holder 14
+
+may be a part of a transportation device, such as a belt conveyer.
+
+the encapsulant 39
+
+may be formed of a conventional molding material such as an epoxy molding compound.
+
+the encapsulant 39
+
+may be other suitable encapsulants, e.g., a ceramic casing.
+
+the filter 22
+
+may include the same or substantially the same material as the semiconductor substrate 33 .
+
+the filter 22
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the semiconductor substrate 33
+
+may be a silicon wafer, and the filter 22 may include silicon.
+
+the semiconductor substrate 33
+
+may include GaAs, and the filter 22 may include GaAs.
+
+the filter 22
+
+may include a plate-shaped semiconductor (or semiconductor plate), a granular semiconductor or semiconductor particles, or a combination thereof.
+
+the filter 22
+
+may be referred to as a semiconductor filter.
+
+the filter 22
+
+may have a greater thickness than the semiconductor substrate 33 .
+
+the filter 22
+
+may further include a metal filter including Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+X-rays radiated from the X-ray tube 12
+
+may sequentially pass through the filter 22 and the semiconductor package 31 , and the detector 15 may detect the X-rays.
+
+the display 17
+
+may display an image converted from a signal detected in the detector 15 .
+
+the X-rays radiated from the X-ray tube 12
+
+may show various wavelengths and intensity.
+
+the X-rays radiated from the X-ray tube 12
+
+may include a first wavelength region required to obtain an image, and a second wavelength region absorbed into the semiconductor substrate 33 and degrades characteristics of the semiconductor chip 35 .
+
+the X-rays radiated from the X-ray tube 12
+
+may have a wavelength of about 0.01 nm to about 100 nm.
+
+the X-rays radiated from the X-ray tube 12
+
+may include a hard X-ray showing a wavelength of about 0.01 nm to about 10 nm and an intensity of about 12 KeV to about 120 KeV, a soft X-ray having a wavelength of about 10 nm to about 100 nm and an intensity of about 0.1 KeV to about 12 KeV.
+
+the hard X-ray
+
+may correspond to the first wavelength region, and the soft X-ray may correspond to the second wavelength region.
+
+the hard X-ray
+
+may be used for obtaining an image, and the soft X-ray may be absorbed into the semiconductor substrate 33 , and cause various failures, such as degradation of refresh characteristics or a charge loss in the semiconductor chip 35 .
+
+the semiconductor filter 22
+
+may transmit X-rays in the first wavelength region required to obtain an image, and absorb and/or shield X-rays in the second wavelength region which degrade the characteristics of the semiconductor chip 35 .
+
+the filter 22
+
+may transmit the hard X-ray and absorb the soft X-ray. In other words, the filter 22 may substantially prevent the transmission of the soft X-ray.
+
+the semiconductor package 31
+
+may include a semiconductor filter formed of the same or substantially the same material as the semiconductor substrate 33 .
+
+the semiconductor filter included in the semiconductor package 31
+
+may include a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+the semiconductor filter included in the semiconductor package 31
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the semiconductor filter included in the semiconductor package 31
+
+may transmit X-rays in the first wavelength region required to obtain an image, and absorb and/or shield X-rays in the second wavelength region which degrade the characteristics of the semiconductor chip 35 .
+
+the semiconductor filter included in the semiconductor package 31
+
+may transmit the hard X-ray and absorb the soft X-ray.
+
+a first tray 81 , a semiconductor package 31 , and a second tray 91
+
+may be loaded onto a test specimen holder 14 .
+
+the semiconductor package 31
+
+may be loaded between the first tray 81 and the second tray 91 .
+
+the second tray 91
+
+may be disposed between an X-ray tube 12 and the semiconductor package 31 .
+
+the first tray 81 and the second tray 91
+
+may include a semiconductor filter formed of the same or substantially the same material as the semiconductor substrate 33 in the semiconductor package 31 .
+
+the semiconductor filter included in the first tray 81 and the second tray 91
+
+may include a plate-shaped semiconductor or a semiconductor object having one or more substantially flat surfaces, a granular semiconductor, or any combination thereof.
+
+the semiconductor filter included in the first tray 81 and the second tray 91
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the semiconductor filter included in the first tray 81 and the second tray 91
+
+may transmit X-rays in a first wavelength region required to obtain an image, and absorb and/or shield X-rays in the second wavelength region which degrade the characteristics of the semiconductor package 31 .
+
+the semiconductor filter included in the first tray 81 and the second tray 91
+
+may transmit the hard X-ray and absorb the soft X-ray.
+
+a filter 22
+
+may be disposed between an X-ray tube 12 and a test specimen holder 14 .
+
+a first tray 81 , a semiconductor package 31 , a second tray 91
+
+may be loaded onto the test specimen holder 14 .
+
+the filter 22
+
+may be disposed between the X-ray tube 12 and the second tray 91 .
+
+the filter 22
+
+may include a semiconductor filter having the same or substantially the same material as a semiconductor substrate 33 in the semiconductor package 31 .
+
+the semiconductor package 31
+
+may include a semiconductor filter formed of the same or substantially the same material as the semiconductor substrate 33 in the semiconductor package 31 .
+
+the first tray 81 and the second tray 91
+
+may include a semiconductor filter formed of the same or substantially the same material as the semiconductor substrate in the semiconductor package 31 .
+
+FIG. 4
+
+is a perspective view illustrating a filter in accordance with some embodiments of the inventive concept
+
+FIG. 5
+
+is an exploded perspective view of FIG. 4 .
+
+a plurality of plate-shaped filters 22 A
+
+may be inserted into a filter case 23 .
+
+Each of the plate-shaped filters 22 A
+
+may include a plate-shaped semiconductor.
+
+Each of the plate-shaped filters 22 A
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+each of the plate-shaped filters
+
+may be a semiconductor wafer.
+
+Each of the plate-shaped filters 22 A
+
+may be a silicon wafer or a silicon on insulator (SOI) wafer.
+
+one or more plate-shaped filters 22 A
+
+may be inserted into the filter case 23 .
+
+FIG. 6
+
+is a perspective view illustrating a filter in accordance with some embodiments of the inventive concepts
+
+FIG. 7
+
+is an exploded perspective view of FIG. 6 .
+
+a plurality of plate-shaped filters 22 A and a metal filter 24
+
+may be inserted into a filter case 23 .
+
+the metal filter 24
+
+may include Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+FIG. 8
+
+is a perspective view illustrating a filter in accordance with some embodiments of the inventive concepts
+
+FIGS. 9 and 10
+
+are cross-sectional views of FIG. 8 .
+
+a metal filter 24 A
+
+may be formed on a plate-shaped filter 22 B.
+
+the plate-shaped filter 22 B
+
+may be a plate-shaped semiconductor, such as a semiconductor wafer.
+
+the metal filter 24 A
+
+may be formed on one surface of the plate-shaped filter 22 B.
+
+the metal filter 24 A
+
+may be in contact with one surface of the plate-shaped filter 22 B.
+
+the metal filter 24 A
+
+may have a smaller thickness than the plate-shaped filter 22 B.
+
+the plate-shaped filter 22 B
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the metal filter 24 A
+
+may include Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+an insulating layer 28
+
+(not shown in FIG. 8 ) and a metal filter 24 A may be formed on the plate-shaped filter 22 B.
+
+the insulating layer 28
+
+may be disclosed between the plate-shaped filter 22 B and the metal filter 24 A.
+
+the insulating layer 28
+
+may be in contact with both the plate-shaped filter 22 B and the metal filter 24 A.
+
+the insulating layer 28
+
+may be formed of silicon oxide.
+
+FIG. 11
+
+is a graph showing an absorption coefficient of silicon.
+
+a curve L 41
+
+is a line which indicates an absorption coefficient of silicon versus wavelength. As shown in the curve L 41 , silicon shows a high absorption coefficient at wavelengths of 10 nm to 1100 nm.
+
+FIGS. 12 and 13
+
+are graphs showing X-ray intensity on the y-axis versus wavelength on the x-axis.
+
+a curve L 51
+
+indicates intensity of X-rays radiated from an X-ray tube versus wavelength when a filter is not used. As shown in the curve L 51 , due to the characteristics of the X-ray tube, X-rays having a wavelength of 0.01 nm to 100 nm or more may be radiated.
+
+a curve L 52
+
+indicates intensity of X-rays irradiated to a sample versus wavelength when a filter is used. As shown in the curve L 52 , due to the absorption characteristics of a filter, the X-rays having a wavelength greater than 10 nm nm may be removed. The X-rays having a wavelength of 0.01 nm to 10 nm may be extracted using a filter in accordance with some embodiments of the inventive concepts, and irradiated to a sample.
+
+FIG. 14
+
+is a cross-sectional view of a semiconductor package in accordance with some embodiments of the inventive concepts
+
+FIGS. 15 and 16
+
+are cross-sectional views of a granular filter in accordance with some embodiments of the inventive concepts.
+
+a semiconductor package 31 A
+
+may include a package substrate 32 , a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+the first semiconductor chip 35
+
+may include a first semiconductor substrate 33 and a first active region 34 on the first semiconductor substrate 33 .
+
+a plurality of active and/or passive devices and insulating layers
+
+may be formed on the first active region 34 .
+
+the second semiconductor chip 45
+
+may include a second semiconductor substrate 43 and a second active region 44 on the second semiconductor substrate 43 .
+
+a plurality of active and/or passive devices and insulating layers
+
+may be formed on the second active region 44 .
+
+a plurality of granular filters 22 G
+
+may be included in the encapsulant 39 .
+
+the first semiconductor substrate 33 and the second semiconductor substrate 43
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the first semiconductor substrate 33 and the second semiconductor substrate 43
+
+may be a semiconductor wafer, such as a single crystalline silicon wafer or SOI wafer.
+
+the second semiconductor substrate 43
+
+may be the same or substantially the same type of semiconductor wafer as the first semiconductor substrate 33 , and the second semiconductor substrate 43 may be a different type of semiconductor wafer from the first semiconductor substrate 33 .
+
+the encapsulant 39
+
+may cover the first semiconductor chip 35 and the second semiconductor chip 45 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the first semiconductor substrate 33 or the second semiconductor substrate 43 .
+
+the first semiconductor substrate 33 and the second semiconductor substrate 43
+
+may be a silicon wafer, and each of the granular filters 22 G may include one or more silicon granules that may include, for instance, a single silicon particle or multiple silicon particles clustered together.
+
+the first semiconductor substrate 33 or the second semiconductor substrate 43
+
+may include GaAs, and each of the granular filters 22 G may include GaAs.
+
+the granular filters 22 G
+
+may be included in the encapsulant 39 .
+
+the granular filters 22 G and filler
+
+may be included in the encapsulant 39 .
+
+the granular filters 22 G
+
+may be included in the encapsulant 39 instead of the filler.
+
+the granular filters 22 G
+
+may shield X-ray having a wavelength region easily absorbed into the first semiconductor substrate 33 and the second semiconductor substrate 43 .
+
+the package substrate 32
+
+may be a rigid printed circuit board, a flexible printed circuit board, or a rigid-flexible printed circuit board.
+
+External terminals 36
+
+may be formed on the bottom surface of the package substrate 32 .
+
+the external terminals 36
+
+may be a solder ball, a conductive bump, a conductive tap, a conductive spacer, a lead grid array (LGA), a pin grid array (PGA), or a combination thereof.
+
+First through electrodes 41 passing through the first semiconductor chip 35
+
+may be formed.
+
+First internal terminals 37 and a first adhesive film 38
+
+may be formed between the first semiconductor chip 35 and the package substrate 32 .
+
+the first internal terminals 37
+
+may be a solder ball or a conductive bump.
+
+the first adhesive film 38
+
+may include an underfill layer.
+
+the first internal terminals 37
+
+may be connected to the first through electrodes 41 and the package substrate 32 through the first adhesive film 38 .
+
+the second semiconductor chip 45
+
+may be mounted on the first semiconductor chip 35 .
+
+Second internal terminals 47 and a second adhesive film 48
+
+may be formed between the first semiconductor chip 35 and the second semiconductor chip 45 .
+
+the second adhesive film 48
+
+may include a tape-type material film, a liquid-coating-curing material film, or a combination thereof.
+
+the second adhesive film 48
+
+may be referred to as a die attach film (DAF) or non-conductive film (NCF).
+
+the second semiconductor chip 45
+
+may show a different horizontal width from the first semiconductor chip 35 .
+
+the second semiconductor chip 45
+
+may have a smaller horizontal width than the first semiconductor chip 35 .
+
+the second semiconductor chip 45
+
+may be a different type from the first semiconductor chip 35 .
+
+the first semiconductor chip 35
+
+may be a logic chip
+
+the second semiconductor chip 45
+
+may be a memory chip.
+
+a granular filter 22 G
+
+may include a granular semiconductor.
+
+the granular semiconductor
+
+may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+the granular filter 22 G
+
+may have various shapes, such as a circle, an oval, a polygon, an amoeba, or any combination thereof.
+
+a semiconductor oxide film 220
+
+may substantially surround a granular filter 22 G.
+
+the granular filter 22 G
+
+may be a silicon grain
+
+the semiconductor oxide film 220
+
+may be a silicon oxide film.
+
+the semiconductor oxide film 220
+
+may be in direct contact with a surface of the granular filter 22 G.
+
+FIGS. 17 to 29
+
+are cross-sectional views illustrating a semiconductor package in accordance with some embodiments of the inventive concepts.
+
+a semiconductor package 31 B
+
+may include a package substrate 32 , a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+First internal terminals 37 and a first adhesive film 38
+
+may be formed between the first semiconductor chip 35 and the package substrate 32 .
+
+the first adhesive film 38
+
+may include an underfill layer.
+
+the first internal terminals 37
+
+may be connected to first through electrodes 41 and the package substrate 32 through the first adhesive film 38 .
+
+a plurality of granular filters 22 G
+
+may be included in the first adhesive film 38 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+the granular semiconductor
+
+may be one or more silicon granules that may include, for instance, a single silicon particle or multiple silicon particles clustered together. At least some of the granular filters 22 G may be spaced apart from each other.
+
+a semiconductor package 31 C
+
+may include a package substrate 32 , a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+First internal terminals 37 and a first adhesive film 38
+
+may be formed between the first semiconductor chip 35 and the package substrate 32 .
+
+the first adhesive film 38
+
+may include an underfill layer.
+
+Second internal terminals 47 and a second adhesive film 48
+
+may be formed between the first semiconductor chip 35 and the second semiconductor chip 45 .
+
+a plurality of granular filters 22 G
+
+may be included in the second adhesive film 48 , the first adhesive film 38 , and the encapsulant 39 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a semiconductor package 31 D
+
+may include a package substrate 32 , a first semiconductor chip 35 , a second semiconductor chip 45 , a first coating film 53 , and an encapsulant 39 .
+
+First internal terminals 37 and a first adhesive film 38
+
+may be formed between the first semiconductor chip 35 and the package substrate 32 .
+
+the first adhesive film 38
+
+may include an underfill layer.
+
+the first coating film 53
+
+may cover the first semiconductor chip 35 and the second semiconductor chip 45 .
+
+the first coating film 53
+
+may cover upper and side surfaces of the first semiconductor chip 35 and the second semiconductor chip 45 .
+
+the encapsulant 39
+
+may cover the first coating film 53 .
+
+a plurality of granular filters 22 G
+
+may be included in the first adhesive film 38 and the first coating film 53 . At least some of the granular filters 22 G may include a granular semiconductor formed the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a semiconductor package 31 E
+
+may include a package substrate 32 , a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+First internal terminals 37 , a first adhesive film 38 , and a second coating film 54
+
+may be formed between the first semiconductor chip 35 and the package substrate 32 .
+
+the first adhesive film 38
+
+may include an underfill layer.
+
+the second coating film 54
+
+may be formed between the first adhesive film 38 and the first semiconductor chip 35 .
+
+the second coating film 54
+
+may be in contact with the first adhesive film 38 and the first semiconductor chip 35 .
+
+Second internal terminals 47 and a second adhesive film 48 , and a third coating film 55
+
+may be formed between the first semiconductor chip 35 and the second semiconductor chip 45 .
+
+the third coating film 55
+
+may be formed between the second adhesive film 48 and the second semiconductor chip 45 .
+
+the third coating film 55
+
+may be in contact with the second adhesive film 48 and the second semiconductor chip 45 .
+
+the second coating film 54 and the third coating film 55
+
+may include photosensitive polyimide (PSPI).
+
+PSPI
+
+photosensitive polyimide
+
+a plurality of granular filters 22 G
+
+may be included in the second coating film 54 and the third coating film 55 . At least some of the granular filters 22 G may include a granular semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a semiconductor package 31 F
+
+may include a package substrate 32 , a plate-shaped filter 22 E, a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+Second through electrodes 51 passing through the plate-shaped filter 22 E
+
+may be formed.
+
+the plate-shaped filter 22 E
+
+may be formed between the package substrate 32 and the first semiconductor chip 35 .
+
+Third internal terminals 57
+
+may be formed between the plate-shaped filter 22 E and the package substrate 32 .
+
+the third internal terminals 57
+
+may include a solder ball or a conductive bump.
+
+First internal terminals 37 and a first adhesive film 38
+
+may be formed between the first semiconductor chip 35 and the plate-shaped filter 22 E.
+
+the plate-shaped filter 22 E
+
+may include a plate-shaped semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+the plate-shaped filter 22 E
+
+may have a greater thickness than the first semiconductor substrate 33 or the second semiconductor substrate 43 .
+
+the plate-shaped filter 22 E
+
+may have a larger horizontal width than the first semiconductor substrate 33 and the second semiconductor substrate 43 .
+
+a semiconductor package 31 G
+
+may include a package substrate 32 , a plate-shaped filter 22 E, a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+Second through electrodes 51
+
+may be formed to pass through the plate-shaped filter 22 E.
+
+the plate-shaped filter 22 E
+
+may be formed between the package substrate 32 and the first semiconductor chip 35 .
+
+Third internal terminals 57
+
+may be formed between the plate-shaped filter 22 E and the package substrate 32 .
+
+the third internal terminals 57
+
+may include a solder ball or a conductive bump.
+
+First internal terminals 37 and a first adhesive film 38
+
+may be formed between the first semiconductor chip 35 and the plate-shaped filter 22 E.
+
+the plate-shaped filter 22 E
+
+may include a plate-shaped semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a plurality of granular filters 22 G
+
+may be included in a first adhesive film 38 , a second adhesive film 48 , and the encapsulant 39 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the first semiconductor substrate 33 or the second semiconductor substrate 43 .
+
+a semiconductor package 31 H
+
+may include a package substrate 22 S, a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+the package substrate 22 S
+
+may include a plate-shaped semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a semiconductor package 31 I
+
+may include a package substrate 22 S, a first semiconductor chip 35 , a second semiconductor chip 45 , and an encapsulant 39 .
+
+the package substrate 22 S
+
+may include a plate-shaped semiconductor formed of the same or substantially the same material as a first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a plurality of granular filters 22 G
+
+may be included in the first adhesive film 38 , a second adhesive film 48 , and the encapsulant 39 .
+
+Each of the granular filters 22 G
+
+may include a plate-shaped semiconductor formed of the same or substantially the same material as the first semiconductor substrate 33 or second semiconductor substrate 43 .
+
+a semiconductor package 31 J
+
+may include a package substrate 32 , a third semiconductor chip 65 , and an encapsulant 39 .
+
+the third semiconductor chip 65
+
+may include a third semiconductor substrate 63 and a third active region 64 on the third semiconductor substrate 63 .
+
+a plurality of active and/or passive devices and insulating layers
+
+may be formed in the third active region 64 .
+
+a third adhesive film 61
+
+may be formed between the third semiconductor substrate 63 and the package substrate 32 .
+
+Fourth internal connectors 67
+
+may be formed between the third active region 64 and the package substrate 32 .
+
+the fourth internal connectors 67
+
+may include a bonding wire, a beam lead, a conductive tape, or a combination thereof.
+
+a fourth coating film 68
+
+may be formed on the third active region 64 .
+
+the encapsulant 39
+
+may cover the fourth coating film 68 .
+
+the fourth coating film 68
+
+may include PSPI.
+
+the fourth coating film 68
+
+may cover only the top surface of the third semiconductor chip 65 .
+
+a plurality of granular filters 22 G
+
+may be included in the fourth coating film.
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 63 .
+
+a semiconductor package 31 K
+
+may include a package substrate 32 , a third semiconductor chip 65 , and an encapsulant 39 .
+
+a first coating film 53
+
+may cover the top and side surfaces of the third semiconductor chip 65 .
+
+a plurality of granular filters 22 G
+
+may be included in the first coating film 53 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 63 .
+
+a semiconductor package 31 L
+
+may include a package substrate 32 , a third semiconductor chip 65 , and an encapsulant 39 .
+
+a third adhesive film 61 and a fifth coating film 69
+
+may be formed between third semiconductor substrate 63 and the package substrate 32 .
+
+the fifth coating film 69
+
+may be disclosed between the third semiconductor substrate 63 and the third adhesive film 61 .
+
+the fifth coating film 69
+
+may be in contact with the third semiconductor substrate 63 and the third adhesive film 61 .
+
+a fourth coating film 68
+
+may be formed on a third active region 64 .
+
+the encapsulant 39
+
+may cover the fourth coating film 68 .
+
+the fourth coating film 68 and the fifth coating film 69
+
+may include PSPI.
+
+a plurality of granular filters 22 G
+
+may be included in the fourth coating film and the fifth coating film.
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 63 .
+
+a semiconductor package 31 M
+
+may include a package substrate 32 , a third semiconductor chip 65 , a fourth semiconductor chip 75 , and an encapsulant 39 .
+
+the third semiconductor chip 65
+
+may include a third semiconductor substrate 63 and a third active region 64 on the third semiconductor substrate 63 .
+
+a fourth adhesive film 76
+
+may be formed between the third semiconductor substrate 63 and the package substrate 32 .
+
+the fourth semiconductor chip 75
+
+may include a fourth semiconductor substrate 73 and a fourth active region 74 on the fourth semiconductor substrate 73 .
+
+a fifth adhesive film 77
+
+may be formed between the fourth semiconductor substrate 73 and the third semiconductor chip 65 .
+
+a sixth coating film 78
+
+may be formed on the fourth active region 74 .
+
+a plurality of granular filters 22 G
+
+may be included in the fourth adhesive film 76 , the fifth adhesive film 77 , and the sixth coating film 78 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 63 or the fourth semiconductor substrate 73 .
+
+a semiconductor package 31 N
+
+may include a package substrate 32 , a third semiconductor chip 65 , a fourth semiconductor chip 75 , and an encapsulant 39 .
+
+a fourth adhesive film 76
+
+may be formed between third semiconductor substrate 63 and the package substrate 32 .
+
+a fifth adhesive film 77
+
+may be formed between a fourth semiconductor substrate 73 and the third semiconductor chip 65 .
+
+a first coating film 53
+
+may be formed on the fourth active region 74 . The first coating film 53 may cover top and side surfaces of the third semiconductor chip 65 and the fourth semiconductor chip 75 .
+
+a plurality of granular filters 22 G
+
+may be included in the first coating film 53 , the fourth adhesive film 76 , the fifth adhesive film 77 , and the encapsulant 39 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 63 or the fourth semiconductor substrate 73 .
+
+FIG. 30
+
+is a perspective view illustrating a tray in accordance with some embodiments of the inventive concepts
+
+FIG. 31
+
+is an exploded perspective view of FIG. 30
+
+FIGS. 32 to 38
+
+are cross-sectional views of a tray in accordance with some embodiments of the inventive concepts.
+
+the tray in accordance with some embodiments of the inventive concept
+
+may serve as a container capable of housing a semiconductor package.
+
+a second tray 91
+
+may be stacked on a first tray 81 .
+
+the first tray 81
+
+may include a first lower plate 83 , first partition walls 84 , and first cavities 85 .
+
+the second tray 91
+
+may include a second lower plate 93 , second partition walls 94 , second cavities 95 .
+
+a semiconductor package 31
+
+may be stacked between the first tray 81 and the second tray 91 . The semiconductor package 31 may be inserted into the first cavity 85 .
+
+the first partition walls 84
+
+may be formed on the first lower plate 83 . Side surfaces of the first partition walls 84 may define each of the first cavities 85 with upper surfaces of the first lower plate 83 .
+
+the bottom surfaces of the first cavities 85
+
+may be defined by the upper surface of the first lower plate 83 .
+
+the second tray 91
+
+may have substantially the same or substantially the same configuration as the first tray 81 .
+
+the first tray 81 and the second tray 91
+
+may include a semiconductor filter.
+
+the semiconductor filter
+
+may include the same or substantially the same material as the material that forms a semiconductor substrate in the semiconductor package 31 .
+
+the semiconductor filter
+
+may include a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+a first tray 81 A
+
+may include a first lower plate 83 , first partition walls 84 , and first cavities 85 .
+
+a semiconductor package 31
+
+may be inserted into one of the first cavities 85 .
+
+a plurality of granular filters 22 G
+
+may be mixed in or dispersed in the first lower plate 83 and the first partition walls 84 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+the first lower plate 83
+
+may have a greater thickness than a semiconductor substrate in the semiconductor package 31 .
+
+a first tray 81 B
+
+may include a first lower plate 83 , first partition walls 84 , and first cavities 85 .
+
+a semiconductor package 31
+
+may be inserted into one of the first cavities 85 .
+
+a plurality of granular filters 22 G
+
+may be included in the first lower plate 83 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+a tray 81 C
+
+may include a first lower plate 83 , first partition walls 84 , first cavities 85 , and a first tray coating film 87 .
+
+the first tray coating film 87
+
+may cover surfaces of the first lower plate 83 and the first partition walls 84 .
+
+the first tray coating film 87
+
+may cover lower and upper surfaces of the first lower plate 83 .
+
+the first tray coating film 87
+
+may cover the bottom and sidewalls of the first cavity 85 .
+
+a semiconductor package 31
+
+may be inserted into the first cavity 85 .
+
+a plurality of granular filters 22 G
+
+may be included in the first tray coating film 87 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+a first tray 81 D
+
+may include a first lower plate 83 , first partition walls 84 , first cavities 85 , and a second tray coating film 88 .
+
+the first tray coating film 87
+
+may cover an upper surface of the first lower plate 83 .
+
+the first tray coating film 87
+
+may cover the bottom of the first cavity 85 .
+
+a semiconductor package 31
+
+may be inserted into the first cavity 85 .
+
+a plurality of granular filters 22 G
+
+may be included in the first tray coating film 87 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+a first tray 81 E
+
+may include a first lower plate 83 , first partition walls 84 , first cavities 85 , and a plate-shaped filter 22 P.
+
+a semiconductor package 31
+
+may be inserted into one of the first cavities 85 .
+
+the plate-shaped filter 22 P
+
+may be a plate-shaped semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+the plate-shaped filter 22 P
+
+may have a greater thickness than the semiconductor substrate in the semiconductor package 31 .
+
+the plate-shaped filter 22 P
+
+may be attached to the bottom of the lower plate 83 .
+
+the plate-shaped filter 22 P
+
+may be attached to an upper surface of the first lower plate 83 .
+
+a first tray 81 F
+
+may include a first lower plate 83 , first partition walls 84 , first cavities 85 , and a plurality of plate-shaped filters 22 P.
+
+a semiconductor package 31
+
+may be inserted into one of the first cavities 85 .
+
+the plate-shaped filter 22 P
+
+may include a plate-shaped semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+the plurality of plate-shaped filter 22 Ps
+
+may be disposed in the first lower plate 83 .
+
+a single plate-shaped filter 22 P
+
+instead of multiple plate-shaped filters 22 P, may be formed or disposed in the first lower plate 83 .
+
+a tray 81 G
+
+may include a first lower plate 83 , first partition walls 84 , first cavities 85 , and multiple plate-shaped filters 22 P.
+
+a semiconductor package 31
+
+may be inserted into one of the first cavities 85 .
+
+the multiple plate-shaped filter 22 P
+
+may be a plate-shaped semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+the plate-shaped filter 22 P
+
+may be inserted into the first lower plate 83 .
+
+a plurality of granular filters 22 G
+
+may be included in the first lower plate 83 and the first partition walls 84 .
+
+Each of the granular filters 22 G
+
+may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the semiconductor package 31 .
+
+an X-ray system
+
+can have the same or substantially the same material as a semiconductor substrate in the semiconductor package.
+
+the semiconductor filter
+
+can include a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+the semiconductor filter
+
+can transmit X-rays in a first wavelength region which are required to obtain an image, and absorb X-rays in a second wavelength region which degrade the characteristics of a semiconductor chip.
+
+the X-ray system
+
+capable of substantially reducing degradation of a semiconductor device and obtaining a clear image can be implemented.
+
+the semiconductor package
+
+capable of substantially reducing degradation of the semiconductor device due to X-rays can be implemented.
+
+the tray for a semiconductor device
+
+capable of preventing degradation of the semiconductor device due to X-rays can be implemented.
+
+Landscapes
+
+Physics & Mathematics
+
+        (
+AREA
+)
+
+Health & Medical Sciences
+
+        (
+AREA
+)
+
+Immunology
+
+        (
+AREA
+)
+
+Biochemistry
+
+        (
+AREA
+)
+
+Pathology
+
+        (
+AREA
+)
+
+General Physics & Mathematics
+
+        (
+AREA
+)
+
+Life Sciences & Earth Sciences
+
+        (
+AREA
+)
+
+Chemical & Material Sciences
+
+        (
+AREA
+)
+
+Analytical Chemistry
+
+        (
+AREA
+)
+
+General Health & Medical Sciences
+
+        (
+AREA
+)
+
+Engineering & Computer Science
+
+        (
+AREA
+)
+
+General Engineering & Computer Science
+
+        (
+AREA
+)
+
+Spectroscopy & Molecular Physics
+
+        (
+AREA
+)
+
+High Energy & Nuclear Physics
+
+        (
+AREA
+)
+
+Toxicology
+
+        (
+AREA
+)
+
+Solid State Image Pick-Up Elements
+
+        (
+AREA
+)
+
+Structures Or Materials For Encapsulating Or Coating Semiconductor Devices Or Solid State Devices
+
+        (
+AREA
+)
+
+Microelectronics & Electronic Packaging
+
+        (
+AREA
+)
+
+Abstract
+
+An X-ray source is disposed and a detector is disposed adjacent to the X-ray source. A test specimen holder is disposed between the X-ray source and the detector. A filter is disposed between the X-ray source and the test specimen holder. The filter has a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+Description
+
+CROSS-REFERENCE TO RELATED APPLICATION
+
+This application is a continuation of U.S. patent application Ser. No. 15/635,188, filed Jun. 27, 2017, which is a continuation of U.S. patent application Ser. No. 14/455,858, filed on Aug. 8, 2014, which claims priority under 35 U.S.C. § 119 to Korean Patent Application No. 10-2013-0123584 filed on Oct. 16, 2013, the disclosure of which is hereby incorporated by reference in its entirety.
+
+BACKGROUND
+
+1. Technical Field
+
+Embodiments of the inventive concept relate to an X-ray system, a semiconductor package, and a tray having an X-ray absorption filter.
+
+2. Description of Related Art
+
+A technique of testing a semiconductor package and a set board having the semiconductor package using an X-ray system is being studied.
+
+v
+
+SUMMARY
+
+Embodiments of the inventive concept provide an X-ray system capable of reducing degradation of a semiconductor device and obtaining a clear image.
+
+Another embodiment of the inventive concept provides a semiconductor package capable of reducing degradation of the semiconductor device due to X-rays.
+
+Still another embodiment of the inventive concept provides a tray for a semiconductor device capable of reducing degradation of semiconductor device due to X-rays.
+
+The technical objectives of the inventive concept are not limited to the above disclosure, and other objectives may become apparent to those of ordinary skill in the art based on the following descriptions.
+
+Embodiments of the inventive concept provide an X-ray system. The X-ray system includes an X-ray source and a detector adjacent to the X-ray source. A test specimen holder is disposed between the X-ray source and the detector. A filter is disposed between the X-ray source and the test specimen holder. The filter includes a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+In another embodiment, the filter may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+In still another embodiment, the plate-shaped semiconductor may include a semiconductor wafer.
+
+In yet another embodiment, the test specimen holder may serve to load a semiconductor package. The filter may include the same or substantially the same material as a semiconductor substrate in the semiconductor package.
+
+In yet another embodiment, the filter may have a greater thickness than that of the semiconductor substrate in the semiconductor package.
+
+In yet another embodiment, the filter may be formed in the semiconductor package. The filter may be disposed between the X-ray source and the semiconductor substrate.
+
+In yet another embodiment, a tray may be disposed on the semiconductor package. The tray may be disposed between the X-ray source and the semiconductor package. The filter may be formed in the tray or on the surface of the tray.
+
+In yet another embodiment, the filter may include a metal filter including Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof. The metal filter is formed on one surface of the plate-shaped semiconductor.
+
+Embodiments of the inventive concept provide a semiconductor package. The semiconductor package includes a semiconductor filter adjacent to the semiconductor chip.
+
+In another embodiment, the semiconductor filter may have the same or substantially the same material as a semiconductor substrate in the semiconductor chip.
+
+In still another embodiment, a semiconductor oxide film configured to cover the surface of the semiconductor filter may be disposed.
+
+In yet another embodiment, an encapsulant configured to cover the semiconductor chip may be formed. The semiconductor filter may include a granular semiconductor. The granular semiconductor may be included in the encapsulant.
+
+In yet another embodiment, a package substrate may be attached to the semiconductor chip. The semiconductor filter may include a plate-shaped semiconductor. The plate-shaped semiconductor may be formed in the package substrate or on the surface of the package substrate.
+
+In yet another embodiment, the plate-shaped semiconductor may be formed between the package substrate and the semiconductor chip.
+
+In yet another embodiment, a through electrode electrically connected to the package substrate and the semiconductor chip passing through the plate-shaped semiconductor may be formed.
+
+In yet another embodiment, an underfill layer or an adhesive film may be formed between the package substrate and the semiconductor chip. The semiconductor filter may include a granular semiconductor. The granular semiconductor may be included in the underfill layer or the adhesive film.
+
+In yet another embodiment, a coating film configured to cover the semiconductor chip may be formed. The granular semiconductor may be included in the coating film.
+
+Furthermore, embodiments of the inventive concept provide a tray. The tray includes a plurality of cavities on which a semiconductor package is seated. Sidewalls configured to separate the cavities from each other are provided. A lower plate exposed on the bottom of the cavities is provided. A semiconductor filter is disposed adjacent to the cavities.
+
+In another embodiment, the semiconductor filter may include the same or substantially the same material as a semiconductor substrate in the semiconductor package.
+
+In still another embodiment, the semiconductor filter includes a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+In yet another embodiment, the granular semiconductor is included in the lower plate.
+
+In yet another embodiment, the granular semiconductor may be attached onto the surface of the lower plate.
+
+In yet another embodiment, the plate-shaped semiconductor may be attached to the surface of the lower plate.
+
+In yet another embodiment, the plate-shaped semiconductor is inserted into the lower plate.
+
+Details of other embodiments are included in the detailed description and drawings.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+The foregoing and other features and advantages of the inventive concepts will be apparent from the more particular description of preferred embodiments of the inventive concepts, as illustrated in the accompanying drawings in which like reference characters refer to the same or substantially the same parts throughout the different views. The drawings are not necessarily to scale, emphasis instead being placed upon illustrating the principles of the inventive concepts. In the drawings:
+
+FIGS. 1 to 3
+ are schematic configuration views illustrating an X-ray system in accordance with embodiments of the inventive concept;
+
+FIG. 4
+ is a perspective view illustrating a filter in accordance with embodiments of the inventive concept;
+
+FIG. 5
+ is an exploded perspective view of 
+FIG. 4
+;
+
+FIG. 6
+ is a perspective view illustrating a filter in accordance with embodiments of the inventive concept;
+
+FIG. 7
+ is an exploded perspective view of 
+FIG. 6
+;
+
+FIG. 8
+ is a perspective view illustrating a filter in accordance with embodiments of the inventive concept;
+
+FIGS. 9 and 10
+ are cross-sectional views of 
+FIG. 8
+;
+
+FIG. 11
+ is a graph showing an absorption coefficient of silicon;
+
+FIGS. 12 and 13
+ are graphs showing X-ray intensity versus wavelength;
+
+FIG. 14
+ is a cross-sectional view illustrating a semiconductor package in accordance with embodiments of the inventive concept;
+
+FIGS. 15 and 16
+ are cross-sectional views illustrating a granular filter in accordance with embodiments of the inventive concept;
+
+FIGS. 17 to 29
+ are cross-sectional views illustrating a semiconductor package in accordance with embodiments of the inventive concept;
+
+FIG. 30
+ is a perspective view illustrating a tray in accordance with embodiments of the inventive concept;
+
+FIG. 31
+ is an exploded perspective view of 
+FIG. 30
+; and
+
+FIGS. 32 to 40
+ are cross-sectional views illustrating a tray with packages inserted in accordance with some embodiments of the inventive concept.
+
+DETAILED DESCRIPTION OF THE EMBODIMENTS
+
+Various embodiments will now be described more fully with reference to the accompanying drawings in which some embodiments are shown. These inventive concepts may, however, be embodied in different forms and should not be construed as limited to the embodiments set forth herein. Rather, these embodiments are provided so that this disclosure is thorough and complete and fully conveys the inventive concept to those skilled in the art. In the drawings, the sizes and relative sizes of layers and regions may be exaggerated for clarity.
+
+It will be understood that when an element or layer is referred to as being “on,” “connected to” or “coupled to” another element or layer, it can be directly on, connected or coupled to the other element or layer or intervening elements or layers may be present. In contrast, when an element is referred to as being “directly on,” “directly connected to” or “directly coupled to” another element or layer, there are no intervening elements or layers present. Like numerals refer to like elements throughout. As used herein, the term “and/or” includes any and all combinations of one or more of the associated listed items.
+
+It will be understood that, although the terms first, second, third, etc. may be used herein to describe various elements, components, regions, layers and/or sections, these elements, components, regions, layers and/or sections should not be limited by these terms. These terms are only used to distinguish one element, component, region, layer or section from another region, layer or section. Thus, a first element, component, region, layer or section discussed below could be termed a second element, component, region, layer or section without departing from the teachings of the present inventive concept.
+
+Spatially relative terms, such as “beneath,” “below,” “lower,” “above,” “upper” and the like, may be used herein for ease of description to describe one element's or feature's relationship to another element(s) or feature(s) as illustrated in the figures. It will be understood that the spatially relative terms are intended to encompass different orientations of the device in use or operation in addition to the orientation depicted in the figures. For example, if the device in the figures is turned over, elements described as “below” or “beneath” other elements or features would then be oriented “above” the other elements or features. Thus, the term “below” can encompass both an orientation of above and below. The device may be otherwise oriented (rotated 90 degrees or at other orientations) and the spatially relative descriptors used herein interpreted accordingly.
+
+The terminology used herein is for the purpose of describing particular embodiments only and is not intended to be limiting of the present inventive concept. As used herein, the singular forms “a,” “an” and “the” are intended to include the plural forms as well, unless the context clearly indicates otherwise. It will be further understood that the terms “comprises” and/or “comprising,” when used in this specification, specify the presence of stated features, integers, steps, operations, elements, and/or components, but do not preclude the presence or addition of one or more other features, integers, steps, operations, elements, components, and/or groups thereof.
+
+Embodiments are described herein with reference to cross-sectional illustrations that are schematic illustrations of idealized embodiments (and intermediate structures). As such, variations from the shapes of the illustrations as a result, for example, of manufacturing techniques and/or tolerances, are to be expected. Thus, embodiments should not be construed as limited to the particular shapes of regions illustrated herein but are to include deviations in shapes that result, for example, from manufacturing. For example, an implanted region illustrated as a rectangle will, typically, have rounded or curved features and/or a gradient of implant concentration at its edges rather than a binary change from implanted to non-implanted region. Likewise, a buried region formed by implantation may result in some implantation in the region between the buried region and the surface through which the implantation takes place. Thus, the regions illustrated in the figures are schematic in nature and their shapes are not intended to illustrate the actual shape of a region of a device and are not intended to limit the scope of the present inventive concept.
+
+Terms such as “front side” and “back side” may be used in a relative sense herein to facilitate easy understanding of the inventive concept. Accordingly, “front side” and “back side” may not refer to any specific direction, location, or component, and may be used interchangeably. For example, “front side” may be interpreted as “back side” and vice versa. Also, “front side” may be expressed as “first side,” and “back side” may be expressed as “second side,” and vice versa. However, “front side” and “back side” cannot be used interchangeably in the same embodiment.
+
+The term “near” is intended to mean that one among two or more components is located within relatively close proximity of a certain other component. For example, it should be understood that when a first end is near a first side, the first end may be closer to the first side than a second end, or the first end may be closer to the first side than to a second side.
+
+Unless otherwise defined, all terms (including technical and scientific terms) used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this inventive concept belongs. It will be further understood that terms, such as those defined in commonly used dictionaries, should be interpreted as having a meaning that is consistent with their meaning in the context of the relevant art and will not be interpreted in an idealized or overly formal sense unless expressly so defined herein.
+
+FIGS. 1 to 3
+ are schematic views of exemplary configurations of an X-ray system in accordance with some embodiments of the inventive concepts. The X-ray system according to some embodiments of the inventive concept may be a device for testing a semiconductor package or a set board having the semiconductor package.
+
+Referring to 
+FIG. 1
+, a 
+detector
+
+15
+ may be disposed adjacent to an X-ray source, for example, an 
+X-ray tube
+
+12
+. A 
+test specimen holder
+
+14
+ may be disposed between the 
+X-ray tube
+
+12
+ and the 
+detector
+
+15
+. A 
+filter
+
+22
+ may be disposed between the 
+X-ray tube
+
+12
+ and the 
+test specimen holder
+
+14
+. The 
+X-ray tube
+
+12
+ and the 
+detector
+
+15
+ may be connected to a 
+controller
+
+16
+. A 
+display
+
+17
+ may be connected to the 
+detector
+
+15
+ through the 
+controller
+
+16
+. A 
+semiconductor package
+
+31
+ may be loaded onto the 
+test specimen holder
+
+14
+.
+
+In some embodiments, instead of the 
+X-ray tube
+
+12
+ shown in 
+FIG. 1
+, other types of X-ray sources/generators are used to implement the concepts of the present disclosure.
+
+The 
+semiconductor package
+
+31
+ may include a 
+package substrate
+
+32
+, a 
+semiconductor chip
+
+35
+, and an 
+encapsulant
+
+39
+. The 
+semiconductor chip
+
+35
+ may include a 
+semiconductor substrate
+
+33
+ having an 
+active region
+
+34
+ thereon. Although a plurality of active and/or passive devices and insulating layers may be formed in the 
+active region
+
+34
+, but the detailed description thereof will be omitted for the sake of brevity. The 
+test specimen holder
+
+14
+ may be a device which can move the 
+semiconductor package
+
+31
+ to the left, right, up, or down, and/or rotate the 
+semiconductor package
+
+31
+. The 
+test specimen holder
+
+14
+ may be a part of a transportation device, such as a belt conveyer.
+
+In some embodiment, the 
+encapsulant
+
+39
+ may be formed of a conventional molding material such as an epoxy molding compound. However, the 
+encapsulant
+
+39
+ may be other suitable encapsulants, e.g., a ceramic casing.
+
+The 
+filter
+
+22
+ may include the same or substantially the same material as the 
+semiconductor substrate
+
+33
+. The 
+filter
+
+22
+ may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof. For example, the 
+semiconductor substrate
+
+33
+ may be a silicon wafer, and the 
+filter
+
+22
+ may include silicon. The 
+semiconductor substrate
+
+33
+ may include GaAs, and the 
+filter
+
+22
+ may include GaAs. The 
+filter
+
+22
+ may include a plate-shaped semiconductor (or semiconductor plate), a granular semiconductor or semiconductor particles, or a combination thereof. The 
+filter
+
+22
+ may be referred to as a semiconductor filter. The 
+filter
+
+22
+ may have a greater thickness than the 
+semiconductor substrate
+
+33
+.
+
+In another embodiment, the 
+filter
+
+22
+ may further include a metal filter including Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+X-rays radiated from the 
+X-ray tube
+
+12
+ may sequentially pass through the 
+filter
+
+22
+ and the 
+semiconductor package
+
+31
+, and the 
+detector
+
+15
+ may detect the X-rays. The 
+display
+
+17
+ may display an image converted from a signal detected in the 
+detector
+
+15
+. The X-rays radiated from the 
+X-ray tube
+
+12
+ may show various wavelengths and intensity. The X-rays radiated from the 
+X-ray tube
+
+12
+ may include a first wavelength region required to obtain an image, and a second wavelength region absorbed into the 
+semiconductor substrate
+
+33
+ and degrades characteristics of the 
+semiconductor chip
+
+35
+.
+
+For example, the X-rays radiated from the 
+X-ray tube
+
+12
+ may have a wavelength of about 0.01 nm to about 100 nm. The X-rays radiated from the 
+X-ray tube
+
+12
+ may include a hard X-ray showing a wavelength of about 0.01 nm to about 10 nm and an intensity of about 12 KeV to about 120 KeV, a soft X-ray having a wavelength of about 10 nm to about 100 nm and an intensity of about 0.1 KeV to about 12 KeV. The hard X-ray may correspond to the first wavelength region, and the soft X-ray may correspond to the second wavelength region. The hard X-ray may be used for obtaining an image, and the soft X-ray may be absorbed into the 
+semiconductor substrate
+
+33
+, and cause various failures, such as degradation of refresh characteristics or a charge loss in the 
+semiconductor chip
+
+35
+.
+
+The 
+semiconductor filter
+
+22
+ may transmit X-rays in the first wavelength region required to obtain an image, and absorb and/or shield X-rays in the second wavelength region which degrade the characteristics of the 
+semiconductor chip
+
+35
+. The 
+filter
+
+22
+ may transmit the hard X-ray and absorb the soft X-ray. In other words, the 
+filter
+
+22
+ may substantially prevent the transmission of the soft X-ray.
+
+In still another embodiment, the 
+semiconductor package
+
+31
+ may include a semiconductor filter formed of the same or substantially the same material as the 
+semiconductor substrate
+
+33
+. The semiconductor filter included in the 
+semiconductor package
+
+31
+ may include a plate-shaped semiconductor, a granular semiconductor, or a combination thereof. The semiconductor filter included in the 
+semiconductor package
+
+31
+ may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof. The semiconductor filter included in the 
+semiconductor package
+
+31
+ may transmit X-rays in the first wavelength region required to obtain an image, and absorb and/or shield X-rays in the second wavelength region which degrade the characteristics of the 
+semiconductor chip
+
+35
+. The semiconductor filter included in the 
+semiconductor package
+
+31
+ may transmit the hard X-ray and absorb the soft X-ray.
+
+Referring to 
+FIG. 2
+, a 
+first tray
+
+81
+, a 
+semiconductor package
+
+31
+, and a 
+second tray
+
+91
+ may be loaded onto a 
+test specimen holder
+
+14
+. The 
+semiconductor package
+
+31
+ may be loaded between the 
+first tray
+
+81
+ and the 
+second tray
+
+91
+. The 
+second tray
+
+91
+ may be disposed between an 
+X-ray tube
+
+12
+ and the 
+semiconductor package
+
+31
+. The 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may include a semiconductor filter formed of the same or substantially the same material as the 
+semiconductor substrate
+
+33
+ in the 
+semiconductor package
+
+31
+. The semiconductor filter included in the 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may include a plate-shaped semiconductor or a semiconductor object having one or more substantially flat surfaces, a granular semiconductor, or any combination thereof. The semiconductor filter included in the 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+The semiconductor filter included in the 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may transmit X-rays in a first wavelength region required to obtain an image, and absorb and/or shield X-rays in the second wavelength region which degrade the characteristics of the 
+semiconductor package
+
+31
+. The semiconductor filter included in the 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may transmit the hard X-ray and absorb the soft X-ray.
+
+Referring to 
+FIG. 3
+, a 
+filter
+
+22
+ may be disposed between an 
+X-ray tube
+
+12
+ and a 
+test specimen holder
+
+14
+. A 
+first tray
+
+81
+, a 
+semiconductor package
+
+31
+, a 
+second tray
+
+91
+ may be loaded onto the 
+test specimen holder
+
+14
+. The 
+filter
+
+22
+ may be disposed between the 
+X-ray tube
+
+12
+ and the 
+second tray
+
+91
+.
+
+The 
+filter
+
+22
+ may include a semiconductor filter having the same or substantially the same material as a 
+semiconductor substrate
+
+33
+ in the 
+semiconductor package
+
+31
+. The 
+semiconductor package
+
+31
+ may include a semiconductor filter formed of the same or substantially the same material as the 
+semiconductor substrate
+
+33
+ in the 
+semiconductor package
+
+31
+. The 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may include a semiconductor filter formed of the same or substantially the same material as the semiconductor substrate in the 
+semiconductor package
+
+31
+.
+
+FIG. 4
+ is a perspective view illustrating a filter in accordance with some embodiments of the inventive concept, and 
+FIG. 5
+ is an exploded perspective view of 
+FIG. 4
+.
+
+Referring to 
+FIGS. 4 and 5
+, a plurality of plate-shaped 
+filters
+
+22
+A may be inserted into a 
+filter case
+
+23
+. Each of the plate-shaped 
+filters
+
+22
+A may include a plate-shaped semiconductor. Each of the plate-shaped 
+filters
+
+22
+A may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof. For example, each of the plate-shaped filters may be a semiconductor wafer. Each of the plate-shaped 
+filters
+
+22
+A may be a silicon wafer or a silicon on insulator (SOI) wafer.
+
+In another embodiment, one or more plate-shaped 
+filters
+
+22
+A, for example, ten plate-shaped 
+filters
+
+22
+A may be inserted into the 
+filter case
+
+23
+.
+
+FIG. 6
+ is a perspective view illustrating a filter in accordance with some embodiments of the inventive concepts, and 
+FIG. 7
+ is an exploded perspective view of 
+FIG. 6
+.
+
+Referring to 
+FIGS. 6 and 7
+, a plurality of plate-shaped 
+filters
+
+22
+A and a 
+metal filter
+
+24
+ may be inserted into a 
+filter case
+
+23
+. The 
+metal filter
+
+24
+ may include Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+FIG. 8
+ is a perspective view illustrating a filter in accordance with some embodiments of the inventive concepts, and 
+FIGS. 9 and 10
+ are cross-sectional views of 
+FIG. 8
+.
+
+Referring to 
+FIGS. 8 and 9
+, a 
+metal filter
+
+24
+A may be formed on a plate-shaped 
+filter
+
+22
+B. The plate-shaped 
+filter
+
+22
+B may be a plate-shaped semiconductor, such as a semiconductor wafer. The 
+metal filter
+
+24
+A may be formed on one surface of the plate-shaped 
+filter
+
+22
+B. The 
+metal filter
+
+24
+A may be in contact with one surface of the plate-shaped 
+filter
+
+22
+B. The 
+metal filter
+
+24
+A may have a smaller thickness than the plate-shaped 
+filter
+
+22
+B. The plate-shaped 
+filter
+
+22
+B may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof. The 
+metal filter
+
+24
+A may include Zn, Fe, Al, Cu, Ni, Zr, Mo, Mn, V, or a combination thereof.
+
+Referring to 
+FIGS. 8 and 10
+, an insulating layer 
+28
+ (not shown in 
+FIG. 8
+) and a 
+metal filter
+
+24
+A may be formed on the plate-shaped 
+filter
+
+22
+B. The insulating layer 
+28
+ may be disclosed between the plate-shaped 
+filter
+
+22
+B and the 
+metal filter
+
+24
+A. The insulating layer 
+28
+ may be in contact with both the plate-shaped 
+filter
+
+22
+B and the 
+metal filter
+
+24
+A. The insulating layer 
+28
+ may be formed of silicon oxide.
+
+FIG. 11
+ is a graph showing an absorption coefficient of silicon.
+
+Referring to 
+FIG. 11
+, a curve L
+41
+ is a line which indicates an absorption coefficient of silicon versus wavelength. As shown in the curve L
+41
+, silicon shows a high absorption coefficient at wavelengths of 10 nm to 1100 nm.
+
+FIGS. 12 and 13
+ are graphs showing X-ray intensity on the y-axis versus wavelength on the x-axis.
+
+Referring to 
+FIG. 12
+, a curve L
+51
+ indicates intensity of X-rays radiated from an X-ray tube versus wavelength when a filter is not used. As shown in the curve L
+51
+, due to the characteristics of the X-ray tube, X-rays having a wavelength of 0.01 nm to 100 nm or more may be radiated.
+
+Referring to 
+FIG. 13
+, a curve L
+52
+ indicates intensity of X-rays irradiated to a sample versus wavelength when a filter is used. As shown in the curve L
+52
+, due to the absorption characteristics of a filter, the X-rays having a wavelength greater than 10 nm nm may be removed. The X-rays having a wavelength of 0.01 nm to 10 nm may be extracted using a filter in accordance with some embodiments of the inventive concepts, and irradiated to a sample.
+
+FIG. 14
+ is a cross-sectional view of a semiconductor package in accordance with some embodiments of the inventive concepts, and 
+FIGS. 15 and 16
+ are cross-sectional views of a granular filter in accordance with some embodiments of the inventive concepts.
+
+Referring to 
+FIG. 14
+, a 
+semiconductor package
+
+31
+A may include a 
+package substrate
+
+32
+, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. The 
+first semiconductor chip
+
+35
+ may include a 
+first semiconductor substrate
+
+33
+ and a first 
+active region
+
+34
+ on the 
+first semiconductor substrate
+
+33
+. A plurality of active and/or passive devices and insulating layers may be formed on the first 
+active region
+
+34
+. The 
+second semiconductor chip
+
+45
+ may include a 
+second semiconductor substrate
+
+43
+ and a second 
+active region
+
+44
+ on the 
+second semiconductor substrate
+
+43
+. A plurality of active and/or passive devices and insulating layers may be formed on the second 
+active region
+
+44
+. A plurality of 
+granular filters
+
+22
+G may be included in the 
+encapsulant
+
+39
+.
+
+The 
+first semiconductor substrate
+
+33
+ and the 
+second semiconductor substrate
+
+43
+ may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof. For example, the 
+first semiconductor substrate
+
+33
+ and the 
+second semiconductor substrate
+
+43
+ may be a semiconductor wafer, such as a single crystalline silicon wafer or SOI wafer. The 
+second semiconductor substrate
+
+43
+ may be the same or substantially the same type of semiconductor wafer as the 
+first semiconductor substrate
+
+33
+, and the 
+second semiconductor substrate
+
+43
+ may be a different type of semiconductor wafer from the 
+first semiconductor substrate
+
+33
+.
+
+The 
+encapsulant
+
+39
+ may cover the 
+first semiconductor chip
+
+35
+ and the 
+second semiconductor chip
+
+45
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the 
+first semiconductor substrate
+
+33
+ or the 
+second semiconductor substrate
+
+43
+. For example, the 
+first semiconductor substrate
+
+33
+ and the 
+second semiconductor substrate
+
+43
+ may be a silicon wafer, and each of the 
+granular filters
+
+22
+G may include one or more silicon granules that may include, for instance, a single silicon particle or multiple silicon particles clustered together. The 
+first semiconductor substrate
+
+33
+ or the 
+second semiconductor substrate
+
+43
+ may include GaAs, and each of the 
+granular filters
+
+22
+G may include GaAs. The 
+granular filters
+
+22
+G may be included in the 
+encapsulant
+
+39
+. The 
+granular filters
+
+22
+G and filler (not illustrated) may be included in the 
+encapsulant
+
+39
+. The 
+granular filters
+
+22
+G may be included in the 
+encapsulant
+
+39
+ instead of the filler. The 
+granular filters
+
+22
+G may shield X-ray having a wavelength region easily absorbed into the 
+first semiconductor substrate
+
+33
+ and the 
+second semiconductor substrate
+
+43
+.
+
+The 
+package substrate
+
+32
+ may be a rigid printed circuit board, a flexible printed circuit board, or a rigid-flexible printed circuit board. 
+External terminals
+
+36
+ may be formed on the bottom surface of the 
+package substrate
+
+32
+. The 
+external terminals
+
+36
+ may be a solder ball, a conductive bump, a conductive tap, a conductive spacer, a lead grid array (LGA), a pin grid array (PGA), or a combination thereof.
+
+First through 
+electrodes
+
+41
+ passing through the 
+first semiconductor chip
+
+35
+ may be formed. First 
+internal terminals
+
+37
+ and a first 
+adhesive film
+
+38
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+package substrate
+
+32
+. The first 
+internal terminals
+
+37
+ may be a solder ball or a conductive bump. The first 
+adhesive film
+
+38
+ may include an underfill layer. The first 
+internal terminals
+
+37
+ may be connected to the first through 
+electrodes
+
+41
+ and the 
+package substrate
+
+32
+ through the first 
+adhesive film
+
+38
+.
+
+The 
+second semiconductor chip
+
+45
+ may be mounted on the 
+first semiconductor chip
+
+35
+. Second 
+internal terminals
+
+47
+ and a second 
+adhesive film
+
+48
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+second semiconductor chip
+
+45
+. The second 
+adhesive film
+
+48
+ may include a tape-type material film, a liquid-coating-curing material film, or a combination thereof. The second 
+adhesive film
+
+48
+ may be referred to as a die attach film (DAF) or non-conductive film (NCF).
+
+The 
+second semiconductor chip
+
+45
+ may show a different horizontal width from the 
+first semiconductor chip
+
+35
+. The 
+second semiconductor chip
+
+45
+ may have a smaller horizontal width than the 
+first semiconductor chip
+
+35
+. The 
+second semiconductor chip
+
+45
+ may be a different type from the 
+first semiconductor chip
+
+35
+. For example, the 
+first semiconductor chip
+
+35
+ may be a logic chip, and the 
+second semiconductor chip
+
+45
+ may be a memory chip.
+
+Referring to 
+FIG. 15
+, a 
+granular filter
+
+22
+G may include a granular semiconductor. The granular semiconductor may include Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof. The 
+granular filter
+
+22
+G may have various shapes, such as a circle, an oval, a polygon, an amoeba, or any combination thereof.
+
+Referring to 
+FIG. 16
+, a 
+semiconductor oxide film
+
+220
+ may substantially surround a 
+granular filter
+
+22
+G. For example, the 
+granular filter
+
+22
+G may be a silicon grain, and the 
+semiconductor oxide film
+
+220
+ may be a silicon oxide film. The 
+semiconductor oxide film
+
+220
+ may be in direct contact with a surface of the 
+granular filter
+
+22
+G.
+
+FIGS. 17 to 29
+ are cross-sectional views illustrating a semiconductor package in accordance with some embodiments of the inventive concepts.
+
+Referring to 
+FIG. 17
+, a 
+semiconductor package
+
+31
+B may include a 
+package substrate
+
+32
+, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. First 
+internal terminals
+
+37
+ and a first 
+adhesive film
+
+38
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+package substrate
+
+32
+. The first 
+adhesive film
+
+38
+ may include an underfill layer. The first 
+internal terminals
+
+37
+ may be connected to first through 
+electrodes
+
+41
+ and the 
+package substrate
+
+32
+ through the first 
+adhesive film
+
+38
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+adhesive film
+
+38
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+. As discussed above, the granular semiconductor may be one or more silicon granules that may include, for instance, a single silicon particle or multiple silicon particles clustered together. At least some of the 
+granular filters
+
+22
+G may be spaced apart from each other.
+
+Referring to 
+FIG. 18
+, a 
+semiconductor package
+
+31
+C may include a 
+package substrate
+
+32
+, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. First 
+internal terminals
+
+37
+ and a first 
+adhesive film
+
+38
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+package substrate
+
+32
+. The first 
+adhesive film
+
+38
+ may include an underfill layer. Second 
+internal terminals
+
+47
+ and a second 
+adhesive film
+
+48
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+second semiconductor chip
+
+45
+. A plurality of 
+granular filters
+
+22
+G may be included in the second 
+adhesive film
+
+48
+, the first 
+adhesive film
+
+38
+, and the 
+encapsulant
+
+39
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 19
+, a 
+semiconductor package
+
+31
+D may include a 
+package substrate
+
+32
+, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, a 
+first coating film
+
+53
+, and an 
+encapsulant
+
+39
+. First 
+internal terminals
+
+37
+ and a first 
+adhesive film
+
+38
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+package substrate
+
+32
+. The first 
+adhesive film
+
+38
+ may include an underfill layer. The 
+first coating film
+
+53
+ may cover the 
+first semiconductor chip
+
+35
+ and the 
+second semiconductor chip
+
+45
+. The 
+first coating film
+
+53
+ may cover upper and side surfaces of the 
+first semiconductor chip
+
+35
+ and the 
+second semiconductor chip
+
+45
+. The 
+encapsulant
+
+39
+ may cover the 
+first coating film
+
+53
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+adhesive film
+
+38
+ and the 
+first coating film
+
+53
+. At least some of the 
+granular filters
+
+22
+G may include a granular semiconductor formed the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 20
+, a 
+semiconductor package
+
+31
+E may include a 
+package substrate
+
+32
+, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. First 
+internal terminals
+
+37
+, a first 
+adhesive film
+
+38
+, and a 
+second coating film
+
+54
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+package substrate
+
+32
+. The first 
+adhesive film
+
+38
+ may include an underfill layer. The 
+second coating film
+
+54
+ may be formed between the first 
+adhesive film
+
+38
+ and the 
+first semiconductor chip
+
+35
+. The 
+second coating film
+
+54
+ may be in contact with the first 
+adhesive film
+
+38
+ and the 
+first semiconductor chip
+
+35
+.
+
+Second 
+internal terminals
+
+47
+ and a second 
+adhesive film
+
+48
+, and a 
+third coating film
+
+55
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the 
+second semiconductor chip
+
+45
+. The 
+third coating film
+
+55
+ may be formed between the second 
+adhesive film
+
+48
+ and the 
+second semiconductor chip
+
+45
+. The 
+third coating film
+
+55
+ may be in contact with the second 
+adhesive film
+
+48
+ and the 
+second semiconductor chip
+
+45
+. The 
+second coating film
+
+54
+ and the 
+third coating film
+
+55
+ may include photosensitive polyimide (PSPI). A plurality of 
+granular filters
+
+22
+G may be included in the 
+second coating film
+
+54
+ and the 
+third coating film
+
+55
+. At least some of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 21
+, a 
+semiconductor package
+
+31
+F may include a 
+package substrate
+
+32
+, a plate-shaped filter 
+22
+E, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. Second through 
+electrodes
+
+51
+ passing through the plate-shaped filter 
+22
+E may be formed. The plate-shaped filter 
+22
+E may be formed between the 
+package substrate
+
+32
+ and the 
+first semiconductor chip
+
+35
+. Third 
+internal terminals
+
+57
+ may be formed between the plate-shaped filter 
+22
+E and the 
+package substrate
+
+32
+. The third 
+internal terminals
+
+57
+ may include a solder ball or a conductive bump. First 
+internal terminals
+
+37
+ and a first 
+adhesive film
+
+38
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the plate-shaped filter 
+22
+E.
+
+The plate-shaped filter 
+22
+E may include a plate-shaped semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+. The plate-shaped filter 
+22
+E may have a greater thickness than the 
+first semiconductor substrate
+
+33
+ or the 
+second semiconductor substrate
+
+43
+. The plate-shaped filter 
+22
+E may have a larger horizontal width than the 
+first semiconductor substrate
+
+33
+ and the 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 22
+, a 
+semiconductor package
+
+31
+G may include a 
+package substrate
+
+32
+, a plate-shaped filter 
+22
+E, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. Second through 
+electrodes
+
+51
+ may be formed to pass through the plate-shaped filter 
+22
+E. The plate-shaped filter 
+22
+E may be formed between the 
+package substrate
+
+32
+ and the 
+first semiconductor chip
+
+35
+. Third 
+internal terminals
+
+57
+ may be formed between the plate-shaped filter 
+22
+E and the 
+package substrate
+
+32
+. The third 
+internal terminals
+
+57
+ may include a solder ball or a conductive bump. First 
+internal terminals
+
+37
+ and a first 
+adhesive film
+
+38
+ may be formed between the 
+first semiconductor chip
+
+35
+ and the plate-shaped filter 
+22
+E.
+
+The plate-shaped filter 
+22
+E may include a plate-shaped semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+. A plurality of 
+granular filters
+
+22
+G may be included in a first 
+adhesive film
+
+38
+, a second 
+adhesive film
+
+48
+, and the 
+encapsulant
+
+39
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the 
+first semiconductor substrate
+
+33
+ or the 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 23
+, a 
+semiconductor package
+
+31
+H may include a 
+package substrate
+
+22
+S, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. The 
+package substrate
+
+22
+S may include a plate-shaped semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 24
+, a semiconductor package 
+31
+I may include a 
+package substrate
+
+22
+S, a 
+first semiconductor chip
+
+35
+, a 
+second semiconductor chip
+
+45
+, and an 
+encapsulant
+
+39
+. The 
+package substrate
+
+22
+S may include a plate-shaped semiconductor formed of the same or substantially the same material as a 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+adhesive film
+
+38
+, a second 
+adhesive film
+
+48
+, and the 
+encapsulant
+
+39
+. Each of the 
+granular filters
+
+22
+G may include a plate-shaped semiconductor formed of the same or substantially the same material as the 
+first semiconductor substrate
+
+33
+ or 
+second semiconductor substrate
+
+43
+.
+
+Referring to 
+FIG. 25
+, a 
+semiconductor package
+
+31
+J may include a 
+package substrate
+
+32
+, a 
+third semiconductor chip
+
+65
+, and an 
+encapsulant
+
+39
+. The 
+third semiconductor chip
+
+65
+ may include a third semiconductor substrate 
+63
+ and a third 
+active region
+
+64
+ on the third semiconductor substrate 
+63
+. A plurality of active and/or passive devices and insulating layers may be formed in the third 
+active region
+
+64
+. A third 
+adhesive film
+
+61
+ may be formed between the third semiconductor substrate 
+63
+ and the 
+package substrate
+
+32
+. Fourth 
+internal connectors
+
+67
+ may be formed between the third 
+active region
+
+64
+ and the 
+package substrate
+
+32
+. The fourth 
+internal connectors
+
+67
+ may include a bonding wire, a beam lead, a conductive tape, or a combination thereof.
+
+A 
+fourth coating film
+
+68
+ may be formed on the third 
+active region
+
+64
+. The 
+encapsulant
+
+39
+ may cover the 
+fourth coating film
+
+68
+. The 
+fourth coating film
+
+68
+ may include PSPI. In some embodiments, the 
+fourth coating film
+
+68
+ may cover only the top surface of the 
+third semiconductor chip
+
+65
+. A plurality of 
+granular filters
+
+22
+G may be included in the fourth coating film. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 
+63
+.
+
+Referring to 
+FIG. 26
+, a 
+semiconductor package
+
+31
+K may include a 
+package substrate
+
+32
+, a 
+third semiconductor chip
+
+65
+, and an 
+encapsulant
+
+39
+. A 
+first coating film
+
+53
+ may cover the top and side surfaces of the 
+third semiconductor chip
+
+65
+. A plurality of 
+granular filters
+
+22
+G may be included in the 
+first coating film
+
+53
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 
+63
+.
+
+Referring to 
+27
+, a semiconductor package 
+31
+L may include a 
+package substrate
+
+32
+, a 
+third semiconductor chip
+
+65
+, and an 
+encapsulant
+
+39
+. A third 
+adhesive film
+
+61
+ and a 
+fifth coating film
+
+69
+ may be formed between third semiconductor substrate 
+63
+ and the 
+package substrate
+
+32
+. The 
+fifth coating film
+
+69
+ may be disclosed between the third semiconductor substrate 
+63
+ and the third 
+adhesive film
+
+61
+. The 
+fifth coating film
+
+69
+ may be in contact with the third semiconductor substrate 
+63
+ and the third 
+adhesive film
+
+61
+. A 
+fourth coating film
+
+68
+ may be formed on a third 
+active region
+
+64
+. The 
+encapsulant
+
+39
+ may cover the 
+fourth coating film
+
+68
+. The 
+fourth coating film
+
+68
+ and the 
+fifth coating film
+
+69
+ may include PSPI.
+
+A plurality of 
+granular filters
+
+22
+G may be included in the fourth coating film and the fifth coating film. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 
+63
+.
+
+Referring to 
+FIG. 28
+, a 
+semiconductor package
+
+31
+M may include a 
+package substrate
+
+32
+, a 
+third semiconductor chip
+
+65
+, a 
+fourth semiconductor chip
+
+75
+, and an 
+encapsulant
+
+39
+. The 
+third semiconductor chip
+
+65
+ may include a third semiconductor substrate 
+63
+ and a third 
+active region
+
+64
+ on the third semiconductor substrate 
+63
+. A 
+fourth adhesive film
+
+76
+ may be formed between the third semiconductor substrate 
+63
+ and the 
+package substrate
+
+32
+. The 
+fourth semiconductor chip
+
+75
+ may include a 
+fourth semiconductor substrate
+
+73
+ and a fourth active region 
+74
+ on the 
+fourth semiconductor substrate
+
+73
+. A fifth 
+adhesive film
+
+77
+ may be formed between the 
+fourth semiconductor substrate
+
+73
+ and the 
+third semiconductor chip
+
+65
+. A 
+sixth coating film
+
+78
+ may be formed on the fourth active region 
+74
+.
+
+A plurality of 
+granular filters
+
+22
+G may be included in the fourth 
+adhesive film
+
+76
+, the fifth 
+adhesive film
+
+77
+, and the 
+sixth coating film
+
+78
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 
+63
+ or the 
+fourth semiconductor substrate
+
+73
+.
+
+Referring to 
+FIG. 29
+, a 
+semiconductor package
+
+31
+N may include a 
+package substrate
+
+32
+, a 
+third semiconductor chip
+
+65
+, a 
+fourth semiconductor chip
+
+75
+, and an 
+encapsulant
+
+39
+. A 
+fourth adhesive film
+
+76
+ may be formed between third semiconductor substrate 
+63
+ and the 
+package substrate
+
+32
+. A fifth 
+adhesive film
+
+77
+ may be formed between a 
+fourth semiconductor substrate
+
+73
+ and the 
+third semiconductor chip
+
+65
+. A 
+first coating film
+
+53
+ may be formed on the fourth active region 
+74
+. The 
+first coating film
+
+53
+ may cover top and side surfaces of the 
+third semiconductor chip
+
+65
+ and the 
+fourth semiconductor chip
+
+75
+.
+
+A plurality of 
+granular filters
+
+22
+G may be included in the 
+first coating film
+
+53
+, the fourth 
+adhesive film
+
+76
+, the fifth 
+adhesive film
+
+77
+, and the 
+encapsulant
+
+39
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as the third semiconductor substrate 
+63
+ or the 
+fourth semiconductor substrate
+
+73
+.
+
+FIG. 30
+ is a perspective view illustrating a tray in accordance with some embodiments of the inventive concepts, and 
+FIG. 31
+ is an exploded perspective view of 
+FIG. 30
+. 
+FIGS. 32 to 38
+ are cross-sectional views of a tray in accordance with some embodiments of the inventive concepts. The tray in accordance with some embodiments of the inventive concept may serve as a container capable of housing a semiconductor package.
+
+Referring to 
+FIGS. 30 and 31
+, a 
+second tray
+
+91
+ may be stacked on a 
+first tray
+
+81
+. The 
+first tray
+
+81
+ may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, and 
+first cavities
+
+85
+. The 
+second tray
+
+91
+ may include a second 
+lower plate
+
+93
+, second partition walls 
+94
+, second cavities 
+95
+. A 
+semiconductor package
+
+31
+ may be stacked between the 
+first tray
+
+81
+ and the 
+second tray
+
+91
+. The 
+semiconductor package
+
+31
+ may be inserted into the 
+first cavity
+
+85
+.
+
+The 
+first partition walls
+
+84
+ may be formed on the first 
+lower plate
+
+83
+. Side surfaces of the 
+first partition walls
+
+84
+ may define each of the 
+first cavities
+
+85
+ with upper surfaces of the first 
+lower plate
+
+83
+. For example, the bottom surfaces of the 
+first cavities
+
+85
+ may be defined by the upper surface of the first 
+lower plate
+
+83
+. The 
+second tray
+
+91
+ may have substantially the same or substantially the same configuration as the 
+first tray
+
+81
+.
+
+The 
+first tray
+
+81
+ and the 
+second tray
+
+91
+ may include a semiconductor filter. The semiconductor filter may include the same or substantially the same material as the material that forms a semiconductor substrate in the 
+semiconductor package
+
+31
+. The semiconductor filter may include a plate-shaped semiconductor, a granular semiconductor, or a combination thereof.
+
+Referring to 
+FIG. 32
+, a first tray 
+81
+A may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, and 
+first cavities
+
+85
+. A 
+semiconductor package
+
+31
+ may be inserted into one of the 
+first cavities
+
+85
+. A plurality of 
+granular filters
+
+22
+G may be mixed in or dispersed in the first 
+lower plate
+
+83
+ and the 
+first partition walls
+
+84
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+. The first 
+lower plate
+
+83
+ may have a greater thickness than a semiconductor substrate in the 
+semiconductor package
+
+31
+.
+
+Referring to 
+FIG. 33
+, a 
+first tray
+
+81
+B may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, and 
+first cavities
+
+85
+. A 
+semiconductor package
+
+31
+ may be inserted into one of the 
+first cavities
+
+85
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+lower plate
+
+83
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+.
+
+Referring to 
+FIG. 34
+, a 
+tray
+
+81
+C may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, 
+first cavities
+
+85
+, and a first 
+tray coating film
+
+87
+. The first 
+tray coating film
+
+87
+ may cover surfaces of the first 
+lower plate
+
+83
+ and the 
+first partition walls
+
+84
+. The first 
+tray coating film
+
+87
+ may cover lower and upper surfaces of the first 
+lower plate
+
+83
+. The first 
+tray coating film
+
+87
+ may cover the bottom and sidewalls of the 
+first cavity
+
+85
+. A 
+semiconductor package
+
+31
+ may be inserted into the 
+first cavity
+
+85
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+tray coating film
+
+87
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+.
+
+Referring to 
+FIG. 35
+, a 
+first tray
+
+81
+D may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, 
+first cavities
+
+85
+, and a second 
+tray coating film
+
+88
+. The first 
+tray coating film
+
+87
+ may cover an upper surface of the first 
+lower plate
+
+83
+. The first 
+tray coating film
+
+87
+ may cover the bottom of the 
+first cavity
+
+85
+. A 
+semiconductor package
+
+31
+ may be inserted into the 
+first cavity
+
+85
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+tray coating film
+
+87
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+.
+
+Referring to 
+FIG. 36
+, a 
+first tray
+
+81
+E may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, 
+first cavities
+
+85
+, and a plate-shaped 
+filter
+
+22
+P. A 
+semiconductor package
+
+31
+ may be inserted into one of the 
+first cavities
+
+85
+. The plate-shaped 
+filter
+
+22
+P may be a plate-shaped semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+. The plate-shaped 
+filter
+
+22
+P may have a greater thickness than the semiconductor substrate in the 
+semiconductor package
+
+31
+. The plate-shaped 
+filter
+
+22
+P may be attached to the bottom of the 
+lower plate
+
+83
+.
+
+In another embodiment, as shown in 
+FIG. 37
+, the plate-shaped 
+filter
+
+22
+P may be attached to an upper surface of the first 
+lower plate
+
+83
+.
+
+Referring to 
+FIG. 38
+, a 
+first tray
+
+81
+F may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, 
+first cavities
+
+85
+, and a plurality of plate-shaped 
+filters
+
+22
+P. A 
+semiconductor package
+
+31
+ may be inserted into one of the 
+first cavities
+
+85
+. The plate-shaped 
+filter
+
+22
+P may include a plate-shaped semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+. The plurality of plate-shaped filter 
+22
+Ps may be disposed in the first 
+lower plate
+
+83
+.
+
+In another embodiment, as shown in 
+FIG. 39
+, a single plate-shaped 
+filter
+
+22
+P, instead of multiple plate-shaped 
+filters
+
+22
+P, may be formed or disposed in the first 
+lower plate
+
+83
+.
+
+Referring to 
+FIG. 40
+, a 
+tray
+
+81
+G may include a first 
+lower plate
+
+83
+, 
+first partition walls
+
+84
+, 
+first cavities
+
+85
+, and multiple plate-shaped 
+filters
+
+22
+P. A 
+semiconductor package
+
+31
+ may be inserted into one of the 
+first cavities
+
+85
+. The multiple plate-shaped 
+filter
+
+22
+P may be a plate-shaped semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+. The plate-shaped 
+filter
+
+22
+P may be inserted into the first 
+lower plate
+
+83
+. A plurality of 
+granular filters
+
+22
+G may be included in the first 
+lower plate
+
+83
+ and the 
+first partition walls
+
+84
+. Each of the 
+granular filters
+
+22
+G may include a granular semiconductor formed of the same or substantially the same material as a semiconductor substrate in the 
+semiconductor package
+
+31
+.
+
+According to some embodiments of the inventive concepts, an X-ray system, a semiconductor package, and a tray having a semiconductor filter can be provided. The semiconductor filter can have the same or substantially the same material as a semiconductor substrate in the semiconductor package. The semiconductor filter can include a plate-shaped semiconductor, a granular semiconductor, or a combination thereof. The semiconductor filter can transmit X-rays in a first wavelength region which are required to obtain an image, and absorb X-rays in a second wavelength region which degrade the characteristics of a semiconductor chip. The X-ray system capable of substantially reducing degradation of a semiconductor device and obtaining a clear image can be implemented. The semiconductor package capable of substantially reducing degradation of the semiconductor device due to X-rays can be implemented. The tray for a semiconductor device capable of preventing degradation of the semiconductor device due to X-rays can be implemented.
+
+The foregoing is illustrative of embodiments and is not to be construed as limiting thereof. Although a few embodiments have been described, those skilled in the art will readily appreciate that many modifications are possible in embodiments without materially departing from the novel teachings and advantages. Accordingly, all such modifications are intended to be included within the scope of this inventive concept as defined in the claims. In the claims, means-plus-function clauses are intended to cover the structures described herein as performing the recited function, and not only structural equivalents but also equivalent structures. Therefore, it is to be understood that the foregoing is illustrative of various embodiments and is not to be construed as limited to the specific embodiments disclosed, and that modifications to the disclosed embodiments, as well as other embodiments, are intended to be included within the scope of the appended claims.
+
+Claims (
+16
+)
+
+What is claimed is:
+
+1. A method for manufacturing a semiconductor device, comprising:
+
+providing a semiconductor package having a package substrate, a semiconductor chip disposed on the package substrate, and an encapsulant covering the semiconductor chip on the package substrate;
+
+placing the semiconductor package on a package holder;
+
+radiating X-rays having wavelengths spanning a wavelength range of about 0.01 nm to about 100 nm from a X-ray source onto the semiconductor package through a semiconductor filter, the semiconductor filter configured to transmit X-rays having a wavelength between about 0.01 nm and about 10 nm and substantially prevent transmission of X-rays having a wavelength between about 10 nm and 100 nm and including a plate-shaped semiconductor, a granular semiconductor, or a combination thereof; and
+
+detecting at least some of the X-rays from the semiconductor package,
+
+wherein the package holder comprises a tray having a plurality of cavities each configured to hold the semiconductor package therein, and the tray includes the semiconductor filter adjacent to the cavities.
+
+2. The method of 
+claim 1
+, wherein the semiconductor filter includes Si, Ge, GaAs, InP, InGaAs, InGaAsP, or a combination thereof.
+
+3. The method of 
+claim 1
+, wherein the semiconductor filter has the same or substantially the same material as the semiconductor chip.
+
+4. The method of 
+claim 1
+, wherein the semiconductor filter is disposed between the X-ray source and the package holder.
+
+5. The method of 
+claim 1
+, wherein semiconductor package further includes a semiconductor filter, and wherein the semiconductor package is placed on the package holder such that the semiconductor filter of the semiconductor package is positioned between the X-ray source and the semiconductor chip.
+
+6. The method of 
+claim 5
+, wherein the semiconductor filter of the semiconductor package includes the granular semiconductor dispersed in the encapsulant.
+
+7. The method of 
+claim 5
+, wherein the semiconductor package further comprises an underfill layer or an adhesive film between the package substrate and the semiconductor chip, and the semiconductor filter of the semiconductor package includes the granular semiconductor dispersed in the underfill layer or the adhesive film.
+
+8. The method of 
+claim 5
+, wherein the semiconductor package further comprises a coating film covering the semiconductor chip and disposed between the encapsulant and the semiconductor chip, and the semiconductor filter of the semiconductor package includes the granular semiconductor dispersed in the coating film.
+
+9. The method of 
+claim 5
+, wherein the semiconductor filter of the semiconductor package includes the plate-shaped semiconductor, and the plate-shaped semiconductor is provided as the package substrate.
+
+10. The method of 
+claim 9
+, wherein the plate-shaped semiconductor is disposed between the package substrate and the semiconductor chip, and the plate-shaped semiconductor includes a through electrode electrically connected to the package substrate and the semiconductor chip.
+
+11. The method of 
+claim 1
+, wherein the semiconductor package is removable from the semiconductor filter.
+
+12. A method for manufacturing a semiconductor device, comprising:
+
+providing a semiconductor package having a package substrate, and a semiconductor chip disposed on the package substrate;
+
+placing the semiconductor package on a package holder;
+
+radiating X-rays having wavelengths spanning a wavelength range of about 0.01 nm to about 100 nm from a X-ray source onto the semiconductor package through a semiconductor filter, the semiconductor filter configured to transmit X-rays having a wavelength between about 0.01 nm and about 10 nm and substantially prevent transmission of X-rays having a wavelength between about 10 nm and 100 nm and comprising a semiconductor material selected from a group consisting of Si, Ge, GaAs, InP, InGaAs, InGaAsP, and a combination thereof; and
+
+detecting at least some of the X-rays from the semiconductor packages,
+
+wherein the package holder comprises a tray having a plurality of cavities each configured to hold the semiconductor package therein, and the tray includes the semiconductor filter adjacent to the cavities.
+
+13. The method of 
+claim 12
+, wherein the semiconductor filter has the same or substantially the same material as the semiconductor chip.
+
+14. The method of 
+claim 12
+, wherein the placing the semiconductor package on a package holder comprises placing the semiconductor package such that the semiconductor filter is positioned between the X-ray source and the semiconductor chip.
+
+15. A method for manufacturing a semiconductor device, comprising:
+
+providing a semiconductor package having a package substrate, a semiconductor chip disposed on the package substrate, and an encapsulant covering the semiconductor chip on the package substrate;
+
+placing the semiconductor package on a package holder;
+
+radiating X-rays including hard X-rays and soft X-rays from a X-ray source onto the semiconductor package through a semiconductor filter, the semiconductor filter is configured to transmit the hard X-rays and substantially prevent transmission of the soft X-rays; and
+
+detecting at least some of the X-rays from the semiconductor package,
+
+wherein the package holder comprises a tray having a plurality of cavities each configured to hold the semiconductor package therein, and the tray includes the semiconductor filter adjacent to the cavities.
+
+16. The method of 
+claim 15
+, wherein the soft X-rays have a wavelength of about 10 nm to about 100 nm and wherein the hard X-rays have a wavelength of about 0.01 nm to about 10 nm.
+
+US17/008,627
+
+2013-10-16
+
+2020-08-31
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+Active
+
+US11217495B2
+
+        (
+en
+)
+
+Priority Applications (1)
+
+Application Number
+
+Priority Date
+
+Filing Date
+
+Title
+
+US17/008,627
+
+US11217495B2
+
+                (
+en
+)
+
+2013-10-16
+
+2020-08-31
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+Applications Claiming Priority (5)
+
+Application Number
+
+Priority Date
+
+Filing Date
+
+Title
+
+KR1020130123584A
+
+KR102171020B1
+
+                (
+en
+)
+
+2013-10-16
+
+2013-10-16
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+KR10-2013-0123584
+
+2013-10-16
+
+US14/455,858
+
+US9728293B2
+
+                (
+en
+)
+
+2013-10-16
+
+2014-08-08
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+US15/635,188
+
+US20170301591A1
+
+                (
+en
+)
+
+2013-10-16
+
+2017-06-27
+
+X-ray system, semiconductor package, and tray having x-ray absorption filter 
+
+US17/008,627
+
+US11217495B2
+
+                (
+en
+)
+
+2013-10-16
+
+2020-08-31
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+Related Parent Applications (1)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US15/635,188
+
+Continuation
+
+US20170301591A1
+
+              (
+en
+)
+
+2013-10-16
+
+2017-06-27
+
+X-ray system, semiconductor package, and tray having x-ray absorption filter 
+
+Publications (2)
+
+Publication Number
+
+Publication Date
+
+US20200402864A1
+
+              US20200402864A1
+              (
+en
+)
+
+2020-12-24
+
+US11217495B2
+
+true
+
+              US11217495B2
+              (
+en
+)
+
+2022-01-04
+
+Family
+
+ID=52809666
+
+Family Applications (3)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US14/455,858
+
+Active
+
+2035-05-12
+
+US9728293B2
+
+                (
+en
+)
+
+2013-10-16
+
+2014-08-08
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+US15/635,188
+
+Abandoned
+
+US20170301591A1
+
+                (
+en
+)
+
+2013-10-16
+
+2017-06-27
+
+X-ray system, semiconductor package, and tray having x-ray absorption filter 
+
+US17/008,627
+
+Active
+
+US11217495B2
+
+                (
+en
+)
+
+2013-10-16
+
+2020-08-31
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+Family Applications Before (2)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US14/455,858
+
+Active
+
+2035-05-12
+
+US9728293B2
+
+                (
+en
+)
+
+2013-10-16
+
+2014-08-08
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+US15/635,188
+
+Abandoned
+
+US20170301591A1
+
+                (
+en
+)
+
+2013-10-16
+
+2017-06-27
+
+X-ray system, semiconductor package, and tray having x-ray absorption filter 
+
+Country Status (3)
+
+Country
+
+Link
+
+US
+
+            (
+3
+)
+
+US9728293B2
+
+              (
+en
+)
+
+KR
+
+            (
+1
+)
+
+KR102171020B1
+
+              (
+en
+)
+
+CN
+
+            (
+2
+)
+
+CN104576432B
+
+              (
+en
+)
+
+Families Citing this family (9)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+KR102171020B1
+
+              (
+en
+)
+
+2013-10-16
+
+2020-10-29
+
+삼성전자주식회사
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+KR20180051175A
+
+              (
+en
+)
+
+*
+
+2016-11-08
+
+2018-05-16
+
+주식회사 쎄크
+
+Filter for reducing low energy x-ray, x-ray tube comprising the filter and x-ray system comprising the filter 
+
+EP3419050B1
+
+              (
+en
+)
+
+*
+
+2017-06-23
+
+2026-06-10
+
+ams International AG
+
+Radiation-hardened package for an electronic device 
+
+CN107731652B
+
+              (
+en
+)
+
+*
+
+2017-09-18
+
+2019-09-06
+
+中国科学院电子学研究所
+
+        Radiation ray detection device and preparation method thereof
+
+KR102487841B1
+
+              (
+en
+)
+
+*
+
+2018-03-14
+
+2023-01-11
+
+삼성전자주식회사
+
+Semiconductor package 
+
+KR102762974B1
+
+              (
+en
+)
+
+*
+
+2018-10-17
+
+2025-02-10
+
+삼성전자주식회사
+
+X-ray system including filter 
+
+JP7658945B2
+
+              (
+en
+)
+
+*
+
+2022-11-30
+
+2025-04-08
+
+株式会社日立パワーソリューションズ
+
+        Defect inspection system and defect inspection method
+
+GB2642434A
+
+              (
+en
+)
+
+*
+
+2024-07-04
+
+2026-01-14
+
+Nordson Corp
+
+An x-ray inspection apparatus and method for semiconductor wafers and an x-ray shield for the apparatus 
+
+TW202605969A
+
+              (
+en
+)
+
+*
+
+2024-07-04
+
+2026-02-01
+
+美商諾信公司
+
+An x-ray inspection apparatus and method for semiconductor wafers and an x-ray shield for the apparatus 
+
+Citations (25)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US4931852A
+
+              (
+en
+)
+
+*
+
+1986-06-13
+
+1990-06-05
+
+Advanced Micro Devices, Inc.
+
+High thermal conductivity/low alpha emission molding compound containing high purity semiconductor filler and integrated circuit package 
+
+JPH06174917A
+
+              (
+en
+)
+
+1992-07-13
+
+1994-06-24
+
+Hughes Aircraft Co
+
+        Semiconductor optical filter
+
+JPH09304598A
+
+              (
+en
+)
+
+1996-05-09
+
+1997-11-28
+
+Nikon Corp
+
+        X-ray filter and X-ray microscope
+
+KR19990030547A
+
+              (
+en
+)
+
+1997-10-01
+
+1999-05-06
+
+이계철
+
+        Lattice Assist Vertically Coupled Semiconductor Optical Filter
+
+WO2001044792A2
+
+              (
+en
+)
+
+1999-12-16
+
+2001-06-21
+
+The Secretary Of State For Defence
+
+Apparatus for fast detection of x-rays 
+
+JP2002243671A
+
+              (
+en
+)
+
+2001-02-22
+
+2002-08-28
+
+Kansai Tlo Kk
+
+        X-ray filter and X-ray fluorescence analyzer
+
+US6751294B1
+
+              (
+en
+)
+
+2002-08-08
+
+2004-06-15
+
+Advanced Micro Devices, Inc.
+
+Prevention of parametic or functional changes to silicon semiconductor device properties during x-ray inspection 
+
+US7072447B2
+
+              (
+en
+)
+
+2001-11-08
+
+2006-07-04
+
+Siemens Ag
+
+Device for filtering an x-ray beam 
+
+US20060220210A1
+
+              (
+en
+)
+
+2005-03-31
+
+2006-10-05
+
+Stats Chippac Ltd.
+
+Semiconductor assembly including chip scale package and second substrate and having exposed substrate surfaces on upper and lower sides 
+
+US20070170367A1
+
+              (
+en
+)
+
+*
+
+2006-01-26
+
+2007-07-26
+
+Xtreme Technologies Gmbh
+
+Narrow-band transmission filter for euv radiation 
+
+US20070176200A1
+
+              (
+en
+)
+
+2003-12-16
+
+2007-08-02
+
+Yoshinori Hatanaka
+
+Wide range radiation detector and manufacturing method 
+
+US7315611B2
+
+              (
+en
+)
+
+2003-06-03
+
+2008-01-01
+
+Monochromatic X-Ray Technologies, Inc.
+
+X-ray reflector exhibiting taper, method of making same, narrow band x-ray filters including same, devices including such filters, multispectral x-ray production via unispectral filter, and multispectral x-ray production via multispectral filter 
+
+KR20080060078A
+
+              (
+en
+)
+
+2006-12-26
+
+2008-07-01
+
+삼성전자주식회사
+
+        Silicon Connectors for Semiconductor Package Testing
+
+JP2008261650A
+
+              (
+en
+)
+
+2007-04-10
+
+2008-10-30
+
+Ntt Advanced Technology Corp
+
+        Soft X-ray filter and manufacturing method thereof
+
+US7763394B2
+
+              (
+en
+)
+
+2004-01-30
+
+2010-07-27
+
+Societe De Production Et De Recherches Appliquees Sopra
+
+Protected pattern mask for reflection lithography in the extreme UV or soft X-ray range 
+
+US20100246775A1
+
+              (
+en
+)
+
+2009-03-31
+
+2010-09-30
+
+Ping Yuan
+
+Filter and x-ray imaging apparatus using the filter 
+
+US20100327417A1
+
+              (
+en
+)
+
+2009-06-29
+
+2010-12-30
+
+Spansion Llc
+
+Electronic device having a molding compound including a composite material 
+
+KR101041752B1
+
+              (
+en
+)
+
+2011-02-01
+
+2011-06-17
+
+주식회사 시지트로닉스
+
+        Multistage semiconductor filter and manufacturing method
+
+US8031840B2
+
+              (
+en
+)
+
+2006-12-04
+
+2011-10-04
+
+Koninklijke Philips Electronics N.V.
+
+Beam filter, particularly for x-rays 
+
+US20120327626A1
+
+              (
+en
+)
+
+*
+
+2011-06-27
+
+2012-12-27
+
+Shinko Electric Industries Co., Ltd.
+
+Wiring substrate, its manufacturing method, and semiconductor device 
+
+US20130137216A1
+
+              (
+en
+)
+
+*
+
+2011-11-28
+
+2013-05-30
+
+Elpida Memory, Inc.
+
+Method of manufacturing semiconductor device having plural semiconductor chips stacked one another 
+
+US20130234320A1
+
+              (
+en
+)
+
+2012-03-09
+
+2013-09-12
+
+Industrial Technology Research Institute
+
+Chip stack structure and method for fabricating the same 
+
+US20140064445A1
+
+              (
+en
+)
+
+*
+
+2012-09-05
+
+2014-03-06
+
+David Lewis Adler
+
+High speed x-ray inspection microscope 
+
+US9728293B2
+
+              (
+en
+)
+
+2013-10-16
+
+2017-08-08
+
+Samsung Electronics Co., Ltd.
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+KR20180051175A
+
+              (
+en
+)
+
+2016-11-08
+
+2018-05-16
+
+주식회사 쎄크
+
+Filter for reducing low energy x-ray, x-ray tube comprising the filter and x-ray system comprising the filter 
+
+Family Cites Families (5)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+JPH0361840A
+
+              (
+en
+)
+
+*
+
+1989-07-31
+
+1991-03-18
+
+Kagaku Keisatsu Kenkyusho
+
+Measuring apparatus for x-ray absorption spectrum 
+
+KR20020072983A
+
+              (
+en
+)
+
+*
+
+2001-03-14
+
+2002-09-19
+
+삼성전자 주식회사
+
+X-ray photoelectron spectroscopy 
+
+CN101861529B
+
+              (
+en
+)
+
+*
+
+2007-10-04
+
+2013-06-19
+
+丹麦技术大学
+
+A detector for detecting particle radiation of an energy in the range of 150 eV to 300 keV, and a materials mapping apparatus with such a detector 
+
+JP5564303B2
+
+              (
+en
+)
+
+*
+
+2009-06-12
+
+2014-07-30
+
+株式会社日立ハイテクサイエンス
+
+        X-ray transmission inspection equipment
+
+GB201119257D0
+
+              (
+en
+)
+
+*
+
+2011-11-08
+
+2011-12-21
+
+Eshtech Ltd
+
+X-ray detection apparatus 
+
+2013
+
+2013-10-16
+
+KR
+
+KR1020130123584A
+
+patent/KR102171020B1/en
+
+active
+
+Active
+
+2014
+
+2014-08-08
+
+US
+
+US14/455,858
+
+patent/US9728293B2/en
+
+active
+
+Active
+
+2014-09-25
+
+CN
+
+CN201410497853.0A
+
+patent/CN104576432B/en
+
+active
+
+Active
+
+2014-09-25
+
+CN
+
+CN201910504815.6A
+
+patent/CN110136862B/en
+
+active
+
+Active
+
+2017
+
+2017-06-27
+
+US
+
+US15/635,188
+
+patent/US20170301591A1/en
+
+not_active
+
+Abandoned
+
+2020
+
+2020-08-31
+
+US
+
+US17/008,627
+
+patent/US11217495B2/en
+
+active
+
+Active
+
+Patent Citations (28)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US4931852A
+
+              (
+en
+)
+
+*
+
+1986-06-13
+
+1990-06-05
+
+Advanced Micro Devices, Inc.
+
+High thermal conductivity/low alpha emission molding compound containing high purity semiconductor filler and integrated circuit package 
+
+JPH06174917A
+
+              (
+en
+)
+
+1992-07-13
+
+1994-06-24
+
+Hughes Aircraft Co
+
+        Semiconductor optical filter
+
+US5463494A
+
+              (
+en
+)
+
+1992-07-13
+
+1995-10-31
+
+Hughes Aircraft Company
+
+Extrinsic semiconductor optical filter 
+
+JPH09304598A
+
+              (
+en
+)
+
+1996-05-09
+
+1997-11-28
+
+Nikon Corp
+
+        X-ray filter and X-ray microscope
+
+KR19990030547A
+
+              (
+en
+)
+
+1997-10-01
+
+1999-05-06
+
+이계철
+
+        Lattice Assist Vertically Coupled Semiconductor Optical Filter
+
+WO2001044792A2
+
+              (
+en
+)
+
+1999-12-16
+
+2001-06-21
+
+The Secretary Of State For Defence
+
+Apparatus for fast detection of x-rays 
+
+CN1434920A
+
+              (
+en
+)
+
+1999-12-16
+
+2003-08-06
+
+英国国防部
+
+Apparatus for fast detection by X-rays 
+
+JP2002243671A
+
+              (
+en
+)
+
+2001-02-22
+
+2002-08-28
+
+Kansai Tlo Kk
+
+        X-ray filter and X-ray fluorescence analyzer
+
+US7072447B2
+
+              (
+en
+)
+
+2001-11-08
+
+2006-07-04
+
+Siemens Ag
+
+Device for filtering an x-ray beam 
+
+US6751294B1
+
+              (
+en
+)
+
+2002-08-08
+
+2004-06-15
+
+Advanced Micro Devices, Inc.
+
+Prevention of parametic or functional changes to silicon semiconductor device properties during x-ray inspection 
+
+US7315611B2
+
+              (
+en
+)
+
+2003-06-03
+
+2008-01-01
+
+Monochromatic X-Ray Technologies, Inc.
+
+X-ray reflector exhibiting taper, method of making same, narrow band x-ray filters including same, devices including such filters, multispectral x-ray production via unispectral filter, and multispectral x-ray production via multispectral filter 
+
+US20070176200A1
+
+              (
+en
+)
+
+2003-12-16
+
+2007-08-02
+
+Yoshinori Hatanaka
+
+Wide range radiation detector and manufacturing method 
+
+US7763394B2
+
+              (
+en
+)
+
+2004-01-30
+
+2010-07-27
+
+Societe De Production Et De Recherches Appliquees Sopra
+
+Protected pattern mask for reflection lithography in the extreme UV or soft X-ray range 
+
+US20060220210A1
+
+              (
+en
+)
+
+2005-03-31
+
+2006-10-05
+
+Stats Chippac Ltd.
+
+Semiconductor assembly including chip scale package and second substrate and having exposed substrate surfaces on upper and lower sides 
+
+US20070170367A1
+
+              (
+en
+)
+
+*
+
+2006-01-26
+
+2007-07-26
+
+Xtreme Technologies Gmbh
+
+Narrow-band transmission filter for euv radiation 
+
+US8031840B2
+
+              (
+en
+)
+
+2006-12-04
+
+2011-10-04
+
+Koninklijke Philips Electronics N.V.
+
+Beam filter, particularly for x-rays 
+
+KR20080060078A
+
+              (
+en
+)
+
+2006-12-26
+
+2008-07-01
+
+삼성전자주식회사
+
+        Silicon Connectors for Semiconductor Package Testing
+
+JP2008261650A
+
+              (
+en
+)
+
+2007-04-10
+
+2008-10-30
+
+Ntt Advanced Technology Corp
+
+        Soft X-ray filter and manufacturing method thereof
+
+US20100246775A1
+
+              (
+en
+)
+
+2009-03-31
+
+2010-09-30
+
+Ping Yuan
+
+Filter and x-ray imaging apparatus using the filter 
+
+US8184776B2
+
+              (
+en
+)
+
+2009-03-31
+
+2012-05-22
+
+Ge Medical Systems Global Technology Company, Llc
+
+Filter and X-ray imaging apparatus using the filter 
+
+US20100327417A1
+
+              (
+en
+)
+
+2009-06-29
+
+2010-12-30
+
+Spansion Llc
+
+Electronic device having a molding compound including a composite material 
+
+KR101041752B1
+
+              (
+en
+)
+
+2011-02-01
+
+2011-06-17
+
+주식회사 시지트로닉스
+
+        Multistage semiconductor filter and manufacturing method
+
+US20120327626A1
+
+              (
+en
+)
+
+*
+
+2011-06-27
+
+2012-12-27
+
+Shinko Electric Industries Co., Ltd.
+
+Wiring substrate, its manufacturing method, and semiconductor device 
+
+US20130137216A1
+
+              (
+en
+)
+
+*
+
+2011-11-28
+
+2013-05-30
+
+Elpida Memory, Inc.
+
+Method of manufacturing semiconductor device having plural semiconductor chips stacked one another 
+
+US20130234320A1
+
+              (
+en
+)
+
+2012-03-09
+
+2013-09-12
+
+Industrial Technology Research Institute
+
+Chip stack structure and method for fabricating the same 
+
+US20140064445A1
+
+              (
+en
+)
+
+*
+
+2012-09-05
+
+2014-03-06
+
+David Lewis Adler
+
+High speed x-ray inspection microscope 
+
+US9728293B2
+
+              (
+en
+)
+
+2013-10-16
+
+2017-08-08
+
+Samsung Electronics Co., Ltd.
+
+X-ray system, semiconductor package, and tray having X-ray absorption filter 
+
+KR20180051175A
+
+              (
+en
+)
+
+2016-11-08
+
+2018-05-16
+
+주식회사 쎄크
+
+Filter for reducing low energy x-ray, x-ray tube comprising the filter and x-ray system comprising the filter 
+
+Non-Patent Citations (1)
+
+* Cited by examiner, † Cited by third party
+
+Title
+
+Office Action for U.S. Appl. No. 15/635,188, dated Oct. 6, 2020.
+
+Also Published As
+
+Publication number
+
+Publication date
+
+CN110136862B
+
+              (
+en
+)
+
+2023-01-03
+
+US9728293B2
+
+              (
+en
+)
+
+2017-08-08
+
+KR20150044515A
+
+              (
+en
+)
+
+2015-04-27
+
+US20200402864A1
+
+              (
+en
+)
+
+2020-12-24
+
+KR102171020B1
+
+              (
+en
+)
+
+2020-10-29
+
+CN104576432A
+
+              (
+en
+)
+
+2015-04-29
+
+CN110136862A
+
+              (
+en
+)
+
+2019-08-16
+
+US20150103974A1
+
+              (
+en
+)
+
+2015-04-16
+
+US20170301591A1
+
+              (
+en
+)
+
+2017-10-19
+
+CN104576432B
+
+              (
+en
+)
+
+2019-07-05
+
+Similar Documents
+
+Publication
+
+Publication Date
+
+Title
+
+US20200402864A1
+
+                (
+en
+)
+
+2020-12-24
+
+X-ray system, semiconductor package, and tray having x-ray absorption filter 
+
+US8994163B2
+
+                (
+en
+)
+
+2015-03-31
+
+Semiconductor assemblies, stacked semiconductor devices, and methods of manufacturing semiconductor assemblies and stacked semiconductor devices 
+
+US7919871B2
+
+                (
+en
+)
+
+2011-04-05
+
+Integrated circuit package system for stackable devices 
+
+US8633579B2
+
+                (
+en
+)
+
+2014-01-21
+
+Multi-chip package and method of manufacturing the same 
+
+Chang et al.
+
+2014
+
+Development and characterization of new generation panel fan-out (P-FO) packaging technology
+
+US7382046B2
+
+                (
+en
+)
+
+2008-06-03
+
+Semiconductor device protection cover, and semiconductor device unit including the cover 
+
+EP1929521A2
+
+                (
+en
+)
+
+2008-06-11
+
+Microelectronic devices, stacked microelectronic devices, and methods for manufacturing microelectronic devices 
+
+US9275976B2
+
+                (
+en
+)
+
+2016-03-01
+
+System-in-package with integrated socket 
+
+US20190019764A1
+
+                (
+en
+)
+
+2019-01-17
+
+Semiconductor package with electromagnetic interference shielding using metal layers and vias 
+
+US20160358891A1
+
+                (
+en
+)
+
+2016-12-08
+
+Opossum-die package-on-package apparatus 
+
+US9390992B2
+
+                (
+en
+)
+
+2016-07-12
+
+Semiconductor packages including a metal layer between first and second semiconductor chips 
+
+US20180366407A1
+
+                (
+en
+)
+
+2018-12-20
+
+Over-molded ic packages with embedded voltage reference plane &amp; heater spreader 
+
+US20210351163A1
+
+                (
+en
+)
+
+2021-11-11
+
+High density pillar interconnect conversion with stack to substrate connection 
+
+US8928150B2
+
+                (
+en
+)
+
+2015-01-06
+
+Multi-chip package and method of manufacturing the same 
+
+US11631644B2
+
+                (
+en
+)
+
+2023-04-18
+
+High density pillar interconnect conversion with stack to substrate connection 
+
+US20250046722A1
+
+                (
+en
+)
+
+2025-02-06
+
+Semiconductor package and methods of manufacturing 
+
+US20210134670A1
+
+                (
+en
+)
+
+2021-05-06
+
+Encapsulated solder tsv insertion interconnect 
+
+US12107054B2
+
+                (
+en
+)
+
+2024-10-01
+
+Semiconductor package, semiconductor device and shielding housing of semiconductor package 
+
+EP4184578A1
+
+                (
+en
+)
+
+2023-05-24
+
+Vertical diodes extending through support structures 
+
+Legal Events
+
+Date
+
+Code
+
+Title
+
+Description
+
+2020-08-31
+
+FEPP
+
+Fee payment procedure
+
+Free format text
+:
+
+ENTITY STATUS SET TO UNDISCOUNTED (ORIGINAL EVENT CODE: BIG.); ENTITY STATUS OF PATENT OWNER: LARGE ENTITY
+
+2020-09-01
+
+AS
+
+Assignment
+
+Owner name
+:
+
+SAMSUNG ELECTRONICS CO., LTD., KOREA, REPUBLIC OF
+
+Free format text
+:
+
+ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:KIM, SANG-YOUNG;RHO, KYUNG-SOO;MOON, HO-JEONG;AND OTHERS;SIGNING DATES FROM 20140729 TO 20140730;REEL/FRAME:053650/0137
+
+2021-02-03
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+NON FINAL ACTION MAILED
+
+2021-05-05
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+RESPONSE TO NON-FINAL OFFICE ACTION ENTERED AND FORWARDED TO EXAMINER
+
+2021-05-10
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+FINAL REJECTION MAILED
+
+2021-08-14
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+RESPONSE AFTER FINAL ACTION FORWARDED TO EXAMINER
+
+2021-09-02
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+NOTICE OF ALLOWANCE MAILED -- APPLICATION RECEIVED IN OFFICE OF PUBLICATIONS
+
+2021-11-26
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+PUBLICATIONS -- ISSUE FEE PAYMENT RECEIVED
+
+2021-11-30
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+PUBLICATIONS -- ISSUE FEE PAYMENT VERIFIED
+
+2021-12-15
+
+STCF
+
+Information on status: patent grant
+
+Free format text
+:
+
+PATENTED CASE
+
+2025-06-20
+
+MAFP
+
+Maintenance fee payment
+
+Free format text
+:
+
+PAYMENT OF MAINTENANCE FEE, 4TH YEAR, LARGE ENTITY (ORIGINAL EVENT CODE: M1551); ENTITY STATUS OF PATENT OWNER: LARGE ENTITY
+
+Year of fee payment
+:
+
+4
+

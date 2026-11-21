@@ -1,0 +1,664 @@
+                                                     IMAPS 2026 Symposium Boston
+
+
+
+
+                      Technical Challenges for Ultra Fine Pitch Hybrid Bonding
+             Charles G. Woychik†, Jonathan Abdilla††, Chris Scanlan††, Victor Vilar†, Robert Patti†, Dadi Setiadi†,
+                                   and Himanandhan Reddy Kottur*, Navid Asadizanjani*
+                                                   †NHanced Semiconductors, Inc.;
+                                                    cwoychik@nhanced-semi.com
+
+                                                      ††Besi Austria GmbH;
+                            *Department of Electrical and Computer Engineering, University of Florida
+
+
+
+           Abstract
+           Hybrid bonding is rapidly emerging as a foundational technology for next-generation advanced packaging,
+           enabling ultra-high-density interconnects required for heterogeneous integration of chiplets, logic, memory,
+           and specialized accelerators. As the industry pushes toward ultra-fine pitch interconnects approaching single-
+           digit microns and below, significant technical challenges must be addressed across the process flow. These
+           challenges include achieving extremely tight wafer and die alignment tolerances, maintaining surface
+           planarity and cleanliness at the nanometer scale, controlling copper dishing and dielectric erosion during
+           CMP, and ensuring defect-free oxide and copper-copper bonding interfaces. In addition, scaling hybrid
+           bonding to ultra-fine pitch requires improvements in metrology, defect inspection, thermal management, and
+           yield control to support high-volume manufacturing. Integration with complementary technologies such as
+           silicon interposers, wafer-to-wafer and die-to-wafer bonding architectures, and heterogeneous material stacks
+           further increases process complexity. This presentation reviews the key technical barriers to ultra-fine pitch
+           hybrid bonding and discusses emerging process solutions and equipment innovations required to enable
+           reliable, high-density interconnects for future high-performance computing, AI, and advanced system-in-
+           package applications.
+
+           Key words
+           Hybrid bonding, AI enabled metrology, photonic electronic integration, optical interconnect
+
+
+
+                                                                            challenges across materials, process integration, equipment
+I. Introduction                                                             capability, and manufacturing reliability. As interconnect
+                                                                            dimensions shrink to the micron and sub-micron regime,
+Ultra-fine pitch hybrid bonding is emerging as one of the                   even minor variations in surface topography, particle
+most important technologies enabling the next generation of                 contamination, alignment accuracy, or wafer warpage can
+semiconductor devices. As demand for higher performance,                    lead to bond failures, electrical opens, or reduced yield.
+lower power consumption, and increased functionality                        Achieving high-throughput manufacturing requires
+continues to accelerate, traditional packaging and                          extremely tight control of chemical mechanical planarization
+interconnect approaches are reaching their physical and                     (CMP), surface preparation, oxide activation, thermal
+electrical limits. Applications such as artificial intelligence,            expansion mismatch, and overlay precision. In addition,
+high-performance        computing,     advanced        memory               reliability concerns such as electromigration, thermal cycling
+architectures, photonics, and heterogeneous integration                     fatigue, void formation, and stress-induced defects become
+require significantly higher interconnect density and shorter               increasingly critical as bond pitches continue to decrease.
+signal paths than conventional solder-based technologies can
+provide. Hybrid bonding addresses these limitations by                      The transition toward heterogeneous integration further
+combining direct copper-to-copper and dielectric-to-                        increases the complexity of ultra-fine pitch hybrid bonding.
+dielectric bonding at extremely fine pitches, enabling near-                Advanced systems now integrate logic, memory, photonics,
+monolithic integration between chips, chiplets, wafers, and                 RF devices, and specialized accelerators fabricated using
+advanced substrates.                                                        different process technologies and materials. This creates
+                                                                            new challenges in die-to-wafer (D2W) and wafer-to-wafer
+Despite its significant advantages, scaling hybrid bonding to               (W2W) bonding, thermal management, known-good-die
+ultra-fine pitches introduces a wide range of technical                     strategies, testability, and supply chain scalability. At the
+
+
+
+                                                                                                                             1
+
+                                                                   000290
+                                                  IMAPS 2026 Symposium Boston
+
+
+
+
+same time, the semiconductor industry must balance                      deliver complete platform-level solutions rather than isolated
+performance improvements with manufacturability, cost,                  chips. This approach improves performance, power
+and long-term reliability to support high-volume production.            efficiency, design flexibility, and time-to-market while
+                                                                        reducing development risk and enabling “best-of-class”
+This paper examines the key technical barriers associated               integration of logic, memory, analog, RF, and photonics
+with ultra-fine pitch hybrid bonding and discusses the                  devices. The model is especially important for artificial
+process innovations required to enable future advanced                  intelligence, high-performance computing, defense,
+packaging architectures. Focus is placed on alignment                   automotive, and data center applications, where system-level
+accuracy, surface preparation, defect control, reliability,             integration and advanced packaging have become as critical
+thermal considerations, and integration strategies that are             as transistor scaling itself.
+critical for supporting next-generation heterogeneous
+integration platforms                                                   Figure 1 illustrates the main reasons for this change in
+                                                                        direction. Again, this relates to Gordon Moore’s future
+II. Changing Foundry Models                                             direction, in which he states that “It may prove to be more
+                                                                        economical to build large systems out of smaller functions
+                                                                        which are separately packaged and interconnected” [1]. This
+The Foundry 1.0 model refers to the traditional                         is the future Moore’s Law for the next generation of systems.
+semiconductor manufacturing ecosystem in which integrated
+device manufacturers (IDMs) and dedicated semiconductor
+foundries operated with clearly separated roles. In this
+model, fabless semiconductor companies focused on chip
+design and outsourced wafer fabrication to pure-play
+foundries, enabling reduced capital investment and faster
+product development cycles. Foundry 1.0 emphasized high-
+volume silicon scaling driven by Moore’s Law, with success
+largely dependent on lithography advances, transistor
+density improvements, and process node leadership.
+Packaging and assembly were typically treated as back-end
+commodity       services    performed     by     outsourced
+semiconductor assembly and test (OSAT) providers with
+limited system-level integration. While this model enabled                 Figure 1: Technology drivers for disaggregation of a
+rapid growth of the semiconductor industry for decades, it                 monolithic die into individual cells, called “Chiplets.”
+was primarily optimized for monolithic system-on-chip
+(SoC) designs and did not fully address emerging
+requirements for heterogeneous integration, chiplet                     III. Technical Drivers for Hybrid Bonding
+architectures, advanced packaging, photonics integration, or
+system-level co-optimization that are now driving the                   As semiconductor devices continue to scale, the traditional
+transition toward more collaborative Foundry 2.0                        approach of building a large monolithic system-on-chip
+approaches.                                                             (SoC) is becoming increasingly difficult and expensive due
+                                                                        to lithography limits, lower manufacturing yield, rising
+Foundry 2.0 is a manufacturing model that takes building                power density, and escalating design complexity. To address
+blocks from traditional semiconductor manufacturers and                 these challenges, modern silicon devices are being
+uses advanced packaging and additive manufacturing to                   disaggregated into smaller functional blocks known as
+create highly customized devices. The Foundry 2.0 model is              chiplets. Each chiplet can be independently optimized for a
+better suited for the future because it expands beyond                  specific function—such as compute, memory, analog, RF, or
+traditional wafer fabrication to include advanced packaging,            I/O—and fabricated using the most appropriate process
+heterogeneous integration, chiplet assembly, photonics                  node, improving both performance and cost efficiency.
+integration, and system-level co-optimization within a                  Chiplet-based architecture also improves manufacturing
+unified manufacturing ecosystem. As transistor scaling                  yield because smaller die sizes reduce the probability of
+slows and the cost of leading-edge nodes continues to rise,             defects impacting the entire system. In addition, advanced
+future semiconductor performance gains will come from                   packaging technologies such as silicon interposers, 2.5D
+integrating multiple optimized dies through advanced                    integration, 3D stacking, and hybrid bonding enable these
+packaging technologies such as hybrid bonding, silicon                  chiplets to communicate with near-monolithic bandwidth
+interposers, and high-density 3D integration. Foundry 2.0               and latency. This modular design approach accelerates
+enables closer collaboration among foundries, OSATs,                    product development, allows reuse of validated IP blocks,
+substrate suppliers, EDA providers, and system designers to             and provides greater flexibility for heterogeneous
+
+
+
+
+                                                                                                                                      2
+
+                                                               000291
+                                                     IMAPS 2026 Symposium Boston
+
+
+
+
+integration, making chiplets a critical enabling technology                 electrical resistance, power consumption, and signal delay.
+for next-generation high-performance computing, AI,                         This makes it a key enabler for heterogeneous integration,
+photonics, and advanced semiconductor systems. Gordon                       3D IC stacking, high-bandwidth memory (HBM), and
+Moore realized that this would eventually be the case [1].                  advanced AI and photonics systems.
+Figure 1 illustrated how this approach yields a more
+optimized design at the lowest overall cost. It also
+emphasizes that semiconductor device node shrinking will
+continue, but only on the cells (chiplets) that require it. This
+is where packaging plays a critical role in providing the best
+Size-Weight-and-Performance (SWAP) solution. The
+problem currently is that the domestic capabilities need to be
+developed to accommodate this approach.
+
+Figure 2 illustrates how device I/O pitch drives the
+appropriate interconnect technology [2]. The major
+takeaway is to use the appropriate technology for the contact
+density of the device. All these technologies will continue to              Figure 3: Evolution of packaging technology starting in
+be used; however, as the device pitch reaches 10 µm and less,               1980 to the present time.
+hybrid bonding becomes the necessary technology that
+scales with decreasing I/O pitch.
+                                                                            The process begins by forming copper interconnects
+                                                                            embedded in dielectric layers (typically silicon oxide) on
+                                                                            each surface, followed by chemical mechanical polishing to
+                                                                            achieve ultra-flat and smooth surfaces. After rigorous
+                                                                            cleaning and surface activation (often plasma treatment), the
+                                                                            wafers are precisely aligned at sub-micron accuracy. They
+                                                                            are then brought into contact, where dielectric surfaces
+                                                                            initially bond through weak intermolecular forces. A
+                                                                            subsequent thermal anneal strengthens the interface and
+                                                                            forms direct copper-to-copper electrical connections,
+                                                                            completing both mechanical and electrical integration in a
+                                                                            single step. Figure 4, provided by Adeia [3], schematically
+                                                                            shows the three major steps that create a hybrid bond
+Figure 2: Comparison of the interconnect technology used                    interconnect.
+for different ranges of I/O pitch.
+
+The integration of chiplets requires a semiconductor back
+end of line (BEOL) capability. Figure 3 illustrates the
+evolution of packaging starting in the 1980s, when the
+semiconductor fab was completely independent of
+packaging. However, as time progressed, packaging required
+wafer bumping and test, which was still independent of the
+fab. As the device pitches decreased to sub 10 µm, it became
+necessary to implement hybrid bonding, which requires
+BEOL capability, and total design up front with the fab. This
+is where the future of packaging lies.
+
+IV. Mechanism for Hybrid Bonding
+                                                                            Figure 4: Main process steps used to create a hybrid bond
+Hybrid bonding is an advanced semiconductor packaging                       [3].
+technique that directly connects two wafers or dies using
+both dielectric-to-dielectric bonding and copper-to-copper
+                                                                            Wafer-to-wafer (W2W) and die-to-wafer (D2W) hybrid
+interconnects. Unlike traditional solder-based micro-bumps,
+                                                                            bonding use the same fundamental mechanism—dielectric
+it enables extremely fine interconnect pitches, which
+                                                                            bonding plus direct copper-to-copper interconnects—but
+significantly increases wiring density while reducing
+                                                                            they differ in how the components are prepared and
+
+
+
+                                                                                                                                       3
+
+                                                                   000292
+                                                   IMAPS 2026 Symposium Boston
+
+
+
+
+assembled, which has major implications for yield,                        bond. A thinner die (typically 50 µm or less) can easily be
+flexibility, and cost.                                                    formed into a “smiley face” (convex) shape, where the initial
+                                                                          contact with the mating surface is in the center and the
+In W2W hybrid bonding, two fully processed wafers are                     weaker Van der Waals bonds migrate towards the perimeter
+aligned and bonded across their entire surfaces in a single               of the die, producing a void free interface.
+step. This approach offers the highest throughput and the best
+alignment accuracy because all features are processed in a                Die stacking enabled by hybrid bonding provides major
+uniform wafer-scale environment. It is especially attractive              gains in bandwidth and integration density, but it introduces
+for applications where both wafers have similar die yields                significant manufacturing challenges, particularly related to
+and identical layouts, such as certain types of memory                    micro-voiding and edge voiding at the bonding interface.
+stacking (e.g., HBM). However, its main limitation is yield-              Because hybrid bonding relies on direct dielectric-to-
+coupling: a defect on either wafer can potentially affect the             dielectric and copper-to-copper contact at extremely fine
+entire bonded stack, which becomes more problematic as                    pitches, even nanometer-scale particles, surface roughness,
+wafer sizes and defect densities increase.                                or local non-uniformities can trap voids during initial contact
+                                                                          and annealing. Micro-voids within the active bonding area
+D2W hybrid bonding, by contrast, involves picking and                     can degrade electrical continuity, increase contact resistance,
+placing individual known-good dies (KGDs) onto a host                     and create localized reliability risks under thermal cycling.
+wafer before bonding. This “chiplet-style” approach                       Edge voiding is especially problematic because wafer bow,
+significantly improves overall yield because only tested and              non-uniform CMP topography, and non-ideal pressure
+functional dies are integrated. It also provides much greater             distribution during bonding often lead to incomplete contact
+flexibility, enabling heterogeneous integration of different              initiation near the die or wafer periphery. These edge defects
+technologies—such as logic, memory, RF, or photonics—on                   can propagate inward during annealing, reducing effective
+a single platform. The tradeoff is increased process                      yield and limiting usable die area due to enlarged edge
+complexity, lower throughput, and more challenging                        exclusion zones. As a result, stringent limits must be placed
+alignment and placement control compared to W2W                           on surface preparation, planarization control, particle
+bonding.                                                                  contamination, and alignment accuracy to ensure void-free
+                                                                          bonding. While hybrid bonding enables unprecedented 3D
+In summary, W2W bonding prioritizes simplicity, alignment                 integration performance, managing micro- and edge-void
+precision, and high-volume uniformity, while D2W bonding                  formation remains one of the key barriers to high-volume
+prioritizes optimization and system-level flexibility. As a               manufacturing scalability. Figure 6 shows the effect of die
+result, W2W is often favored for homogeneous, memory-                     stacking on edge delamination.
+centric applications, while D2W is increasingly used for
+advanced chiplet-based architectures and heterogeneous
+integration in AI and high-performance computing systems.
+In this paper we will focus on the fundamentals of D2W
+bonding.
+
+
+
+
+                                                                          Figure 6: Die stacking challenges and how more layers affect
+                                                                          edge delamination.
+
+                                                                          Die thickness and overlay (lateral alignment error between
+                                                                          bonded dies) are two tightly coupled parameters that strongly
+                                                                          influence yield and reliability in hybrid bonding. Die
+Figure 5: Impact of die thickness on shape forming.                       thickness variations affect global and local planarity during
+                                                                          bonding; thinner dies are more flexible and can conform
+                                                                          better to bonding surfaces, but they are also more susceptible
+Figure 5 illustrates the impact of die thickness on shape
+                                                                          to bow, warp, and handling-induced distortion. Thicker dies
+forming. Thicker dies have a tendency for lower intrinsic
+                                                                          provide mechanical rigidity but can exacerbate non-uniform
+warpage, whereas thin dies can easily warp. The shape
+                                                                          contact pressure, especially across large-area interfaces,
+forming capability dramatically influences the quality of the
+
+
+
+                                                                                                                                       4
+
+                                                                 000293
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+increasing the risk of incomplete bonding initiation and                   micro-voids and interfacial defects. Consequently, yield is
+localized micro- or edge-void formation. Overlay error, on                 highly sensitive to the combined error budget of the entire
+the other hand, directly impacts the alignment of copper pads              bonding system, including stage accuracy, thermal drift, die
+and dielectric openings, which are already at sub-micron or                warpage, and pickup tool repeatability.
+sub-100 nm pitch in advanced hybrid bonding schemes.
+Even small misalignment can reduce effective copper-to-                    Modern hybrid-die bonders therefore rely on advanced
+copper contact area, increase electrical resistance, or lead to            optical alignment systems, in-situ metrology, and feedback-
+open circuits if pads partially miss their mating targets. When            controlled stages to achieve sub-50 nm placement accuracy.
+combined, thickness-induced warpage can effectively                        However, as bump pitches continue to shrink, the allowable
+worsen apparent overlay across the die, meaning that local                 misalignment window narrows further, making yield
+misalignment varies spatially even if global alignment is                  increasingly constrained by tool capability rather than
+nominally within spec. This coupling makes simultaneous                    process chemistry. In practice, the relationship between
+control of die thinning processes, stress management, and                  placement accuracy and yield is steep: small improvements
+high-precision alignment systems critical. Ultimately, tighter             in alignment precision can produce disproportionately large
+control of both thickness uniformity and overlay is essential              gains in functional die-to-die connectivity and overall device
+to minimize defectivity, improve bonding yield, and enable                 yield, especially in high-density chiplet and 3D integration
+scaling to finer pitches and larger die sizes. Figure 7 shows              architectures. Figure 8 illustrates the key performance factors
+the effect of die shape on assembly yield. Excessive tensile               for die placement accuracy.
+warpage resulting in a convex shape (smiley face – left side)
+results in the highest overlay error, as the die stretches. The
+other extreme is a compressive concave warpage (frowning
+face – right side) which yields the lowest overlay error, but
+results in void entrapment.
+
+
+
+
+                                                                           Figure 8: Key performance factors that influence die
+                                                                           placement accuracy.
+
+                                                                           Some data have been taken on alignment accuracy while
+                                                                           maintaining high throughput using the Besi Datacon 8800
+                                                                           Chameo bonder having the specifications of <200 nm
+                                                                           overlay, for 100-300 mm host wafer support using a pick
+Figure 7: The effect of die shape on hybrid bond assembly                  from film frame. The results for two different alignment
+yield.                                                                     methods are shown in Figure 9. The Circle approach shows
+                                                                           a dramatic improvement of 55 nm in the x-direction and 76
+Tool placement accuracy is one of the dominant factors                     nm in the y-direction. The Cross approach is still better than
+determining yield in hybrid die bonding, particularly as                   the specification, but not as good as the Circle approach.
+interconnect pitches scale into the sub-micron and even
+nanometer regime. In hybrid bonding, bonding happens in                    Fine-pitch hybrid bond interconnects are a key enabler of
+sequence, mechanical first, electrical thereafter. Therefore,              next-generation 3D integration and chiplet architectures,
+alignment accuracy (pick and place), and initial bonding                   allowing extremely high-density electrical and mechanical
+energy (non-shifting) becomes challenging.                                 connections between stacked dies without traditional solder
+                                                                           micro-bumps. These interconnects are typically defined by
+As placement accuracy improves, bond yield increases                       pitch scaling from the ~10 µm regime down to sub-micron
+nonlinearly because misalignment directly impacts both                     dimensions, where direct copper-to-copper bonding and
+electrical continuity and void-free interface formation. Even              dielectric-to-dielectric fusion replace conventional bump-
+small lateral offsets can lead to incomplete copper overlap,               based assembly. Figure 10 shows several different hybrid
+increased contact resistance, or open circuits, while vertical             bond configurations starting from 10 µm pitch and below.
+and angular errors can exacerbate local pressure non-
+uniformity during bonding, increasing the likelihood of
+
+
+
+                                                                                                                                        5
+
+                                                                  000294
+                                                  IMAPS 2026 Symposium Boston
+
+
+
+
+                                                                        2/2/2/2 µm L/W/S/T, but can down as low as 1/1/1/1 µm
+                                                                        L/W/S/T.
+
+
+
+
+Figure 9: Comparison of two different alignment methods on
+impacting tool performance.
+
+
+
+
+                                                                        Figure 11: Cross-section of an 8-wafer hybrid bond stack for
+                                                                        a 200 mm wafer size (NHanced Image).
+
+
+
+
+Figure 10: Examples of hybrid bond configurations ranging
+from 10 µm pitch down to 1.6 µm pitch (NHanced Image).
+
+Beyond logic stacking, fine-pitch hybrid bonding is also
+emerging in memory and photonics integration. As pitch
+scales below ~5 µm and toward sub-micron experimental
+regimes, challenges such as wafer warpage control, oxide
+                                                                        Figure 12: An illustration of a cross-section that has 8 total
+planarity, and copper surface preparation become dominant.
+                                                                        copper Damascene layers, 4 top and 4 bottom. This
+At these dimensions, interconnect density approaches that of
+                                                                        capability can be used for both silicon and glass core
+on-chip wiring, effectively blurring the boundary between
+                                                                        interposers (NHanced Image).
+intra-die and inter-die communication and making hybrid
+bonding a foundational technology for future heterogeneous
+integration systems.                                                    V. Metrology
+
+Figure 11 shows a stack of eight 200 mm wafers, each wafer              Intrinsic yield loss mechanisms in hybrid bonded chips are
+having a 14 µm thickness with 1.2 µm diameter TSVs.                     primarily driven by the extreme sensitivity of the bonding
+Complete bonding of all layers was achieved.                            interface to nanoscale surface and process imperfections.
+                                                                        Because hybrid bonding relies on direct dielectric-to-
+In addition, silicon and glass interposers having the cross-            dielectric and Cu-to-Cu contact at very fine pitches, even
+section shown in Figure 12 offer a packaging platform that              monolayer-level contamination such as native oxides,
+can accommodate both solder and hybrid bond                             moisture, organic residues, or CMP slurry particles can
+interconnections. For a Si-interposer, TSV dimensions can               prevent full atomic contact. These imperfections manifest as
+range from: 10 µm x 100 µm, 25 µm x 200 µm, and 50 µm                   localized non-bonds, micro-voids, or weak interfaces that
+x 300 µm. These same structures can be produced using a                 directly translate into open circuits or high-resistance
+glass core. Both types of interposers can accommodate an 8-             connections. In addition, surface topography issues—such as
+layer Cu Damascene structure, typically 4-layers on the top             CMP-induced dishing, erosion, and non-uniform dielectric
+and 4-layers on the bottom. Typical metal dimensions are                thickness—can prevent uniform contact across the wafer or
+                                                                        die, with edge regions often being especially susceptible to
+
+
+
+                                                                                                                                    6
+
+                                                               000295
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+void formation due to non-uniform pressure and polishing                   sensitivity to dielectric integrity and surface defects,
+effects.                                                                   although these techniques cannot, on their own, provide the
+                                                                           coverage and speed that hybrid-bond yield control requires.
+A second major class of intrinsic yield loss mechanisms
+comes from geometric and mechanical limitations in the                     Artificial intelligence (AI) is increasingly used to convert
+bonding process. As interconnect pitch scales down, overlay                these modalities from manual, operator-dependent
+and alignment errors become increasingly critical, where                   measurements into automated and consistent inspection.
+misregistration on the order of tens of nanometers can result              Deep convolutional neural networks (CNNs) applied to X-
+in partial or complete Cu-to-Cu misses. Thermo-mechanical                  ray projection and tomographic data can localize and classify
+effects such as wafer warpage, die bow, and stress gradients               defects automatically, which addresses both the throughput
+further degrade contact uniformity during bonding, leading                 limitation and the variability of human interpretation that
+to spatially varying bond quality across the interface. Even               constrain X-ray inspection of electronic assemblies. The
+when initial bonding appears successful, suboptimal Cu                     same principles support automated feature extraction for
+surface activation or annealing conditions can limit Cu grain              buried interconnects, such as the detection of vias and
+growth and diffusion, resulting in latent reliability issues or            conductive traces in reconstructed volumes, a capability that
+early-life resistance drift. Collectively, these mechanisms                transfers naturally to the inspection of fine-pitch copper pads
+show that hybrid bonding yield is fundamentally constrained                and TSVs in hybrid-bonded stacks. Because these algorithms
+by the interplay of surface chemistry, planarization quality,              operate on the reconstructed three-dimensional volume
+alignment precision, and mechanical flatness at nanometer-                 rather than on a single projection, they are well suited to the
+scale tolerances. Table 1 highlights some of the major yield               stacked, multi-layer geometries that make hybrid bonding
+loss mechanisms [4].                                                       difficult to inspect by conventional means.
+
+                                                                           Acoustic inspection is particularly important for hybrid
+                                                                           bonding because its dominant defects, namely interfacial
+                                                                           voids, incomplete dielectric fusion, and delamination, are
+                                                                           precisely the subsurface flaws that SAM is designed to
+                                                                           detect. To overcome the intrinsic noise and resolution limits
+                                                                           of SAM, a physics-informed neural network (PINN)
+                                                                           framework has been demonstrated that enhances acoustic
+                                                                           images by embedding the underlying wave-propagation
+                                                                           physics directly into the learning process, improving the
+                                                                           visibility of micro-bumps, TSVs, and delamination’s while
+                                                                           suppressing artifacts [6]. This physics-constrained approach
+                                                                           is valuable for trustworthy deployment, because the model is
+Table 1: Intrinsic yield loss mechanisms for hybrid bonded
+                                                                           regularized by the governing physics rather than relying on
+die.
+                                                                           purely data-driven inference, which improves reliability
+                                                                           when the technique is qualified for production use.
+Reliable high-volume production of ultra-fine pitch hybrid                 Complementary work uses generative adversarial networks
+bonds depends on the ability to detect interfacial defects non-            (GANs) to augment limited scanning electron microscopy
+destructively, at high throughput, and at the same length                  training data and to improve the recognition of physical
+scale at which those defects form. The yield-loss                          features, which helps to mitigate the data-scarcity problem
+mechanisms identified earlier in this paper, including                     that often constrains the adoption of AI in failure analysis.
+nanoscale contamination, micro-voids and edge voids,                       Taken together, these results point toward a multimodal, AI-
+copper dishing and dielectric erosion, overlay error, and                  driven metrology strategy in which X-ray CT, SAM, THz,
+warpage-induced non-uniform contact, are difficult to                      and optical or SEM data are acquired non-destructively and
+capture reliably with any single inspection method. Three-                 analyzed by a common deep-learning engine that detects,
+dimensional X-ray microscopy and computed tomography                       classifies, and quantifies the defect populations responsible
+(CT) resolve buried copper structures, through silicon vias                for hybrid-bond yield loss [7]. Machine-learning methods
+(TSVs), and redistribution layers, although both techniques                based on THz imaging extend this multimodal toolkit to
+become slow and dose limited as features approach the sub-                 dielectric and assurance applications in which X-ray contrast
+micron regime. Scanning acoustic microscopy (SAM) is the                   is poor. Surveys of die-attachment and bonding-defect
+principal tool for subsurface delamination and void detection              detection further confirm that the combination of optical,
+at bonded interfaces, yet its images are degraded by noise,                radiological, and acoustic sensing with deep learning has
+limited resolution, and weak contrast at fine pitch [5].                   become the leading direction for manufacturing-grade defect
+Terahertz (THz) imaging, together with optical and scanning                detection [8]. Figure 13 illustrates the resulting framework,
+electron microscopy (SEM) methods, adds complementary
+
+
+
+                                                                                                                                        7
+
+                                                                  000296
+                                                  IMAPS 2026 Symposium Boston
+
+
+
+
+in which the quantified defectivity is returned as a yield               On the surface and interface side, HVM viability is enabled
+model and feed-forward correction to the bonding process,                by CMP processes that now routinely achieve within-wafer
+thereby closing the loop between inspection and process                  non-uniformity control at sub-5 nm scale for dielectric height
+control. The central conclusion for ultra-fine pitch hybrid              and sub-1 nm RMS roughness on SiO₂. Cu pad formation has
+bonding is that metrology must evolve from isolated, manual              also stabilized through damascene integration schemes that
+measurements into an integrated, AI-enabled system that                  tightly control recess/dishing and ensure co-planarity
+makes inspection fast, repeatable, and increasingly                      between Cu and dielectric surfaces, which is critical because
+independent of human interpretation [9].                                 hybrid bonding relies on simultaneous Cu-Cu contact and
+                                                                         dielectric fusion. Plasma activation has become a
+                                                                         deterministic step for increasing surface energy and
+                                                                         promoting low-temperature covalent bonding of dielectrics
+                                                                         while enabling Cu oxide reduction during annealing.
+                                                                         Defectivity control has improved via front-end-style
+                                                                         contamination management—particle adders are now
+                                                                         tracked in the sub-10 nm regime using advanced inspection,
+                                                                         and bond void formation is increasingly treated as a yield
+                                                                         model parameter rather than an uncontrollable defect mode.
+
+                                                                         From a system integration perspective, D2W hybrid bonding
+                                                                         is also HVM-ready because it aligns naturally with known-
+                                                                         good-die (KGD) flows and yield partitioning strategies.
+Figure 13: AI-enabled multimodal metrology framework for
+                                                                         Unlike W2W bonding, D2W allows defective die discard
+hybrid-bond defect detection.
+                                                                         prior to bonding, improving effective system yield according
+                                                                         to a compounding model:
+Non-destructive imaging modalities feed a common deep-
+learning engine who’s quantified defectivity drives yield
+feedback to the bonding process. Acronyms used: computed                                 𝑌𝑌𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 = 𝑌𝑌𝑑𝑑𝑑𝑑𝑑𝑑 ⋅ 𝑌𝑌𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏 ⋅ 𝑌𝑌𝑤𝑤𝑤𝑤𝑤𝑤𝑤𝑤𝑤𝑤
+tomography (CT), scanning acoustic microscopy (SAM),
+terahertz (THz), scanning electron microscopy (SEM),                     This partitioning is particularly important in advanced nodes
+convolutional neural network (CNN), physics-informed                     where die yield variability dominates cost. Furthermore,
+neural network (PINN), and generative adversarial network                thermal-mechanical reliability has been brought under
+(GAN) [10].                                                              control through improved underfill-less bonding schemes
+                                                                         and stress-engineered redistribution layers (RDLs) that
+VI. Discussion                                                           mitigate CTE mismatch-induced shear at the Cu-Cu
+                                                                         interface. Combined with increasingly standardized process
+                                                                         modules (surface prep → plasma activation → precision
+D2W hybrid bonding is increasingly viewed as high-volume
+                                                                         alignment → thermo-compressive bonding → anneal), D2W
+manufacturing (HVM)-ready because the process has
+                                                                         hybrid bonding has transitioned from bespoke integration to
+converged across three tightly coupled domains: (1) sub-100
+                                                                         a repeatable unit process flow, making it compatible with
+nm placement control, (2) sub-nanometer surface
+                                                                         semiconductor HVM environments targeting AI
+engineering, and (3) statistically controlled defectivity at
+                                                                         accelerators, 3D memory stacks, and heterogeneous chiplet
+scale. On the placement side, modern die bonders now
+                                                                         integration. The readiness of D2W hybrid bonding for HVM
+incorporate high-resolution optical alignment systems,
+                                                                         rests on placement control, surface engineering, and
+multi-point fiducial recognition, and real-time thermal drift
+                                                                         statistically bound defectivity. What ultimately converts
+compensation that collectively enable overlay approaching
+                                                                         these capabilities into sustained yield is the ability to observe
+the intrinsic requirement window of fine-pitch Cu pads
+                                                                         and act on defects in line. AI-enabled inspection provides
+(often ~1–5 µm pitch in advanced implementations). Critical
+                                                                         this link, because it turns non-destructive metrology into a
+to HVM readiness is that the overlay error distribution is no
+                                                                         quantitative, closed-loop control system. When deep-
+longer dominated by systematic tool offsets but by bounded
+                                                                         learning analysis of X-ray, acoustic, and THz data produces
+stochastic terms (die pick-and-place variation, local chuck
+                                                                         consistent, operator-independent defect counts, bond voids
+non-flatness, and thermal expansion mismatch), which can
+                                                                         and overlay excursions can be treated as measurable yield-
+be modeled and corrected through calibration maps and feed-
+                                                                         model parameters rather than as uncontrollable defect
+forward correction. This makes D2W alignment behavior
+                                                                         modes. This statistical predictability is precisely what high-
+statistically predictable—an essential prerequisite for yield
+                                                                         volume manufacturing requires, and it directly addresses the
+scaling [11].
+                                                                         metrology, defect-inspection, and yield-control needs
+                                                                         identified at the start of this paper.
+
+
+
+                                                                                                                                                 8
+
+                                                                000297
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+A central advantage of the AI approach is multimodal data
+fusion, since no single modality fully characterizes a hybrid-
+bonded interface. X-ray CT resolves buried copper
+geometry, SAM reveals interfacial voids and delamination,
+and THz and SEM add dielectric and surface sensitivity. By
+learning across these complementary channels, machine-
+learning models can classify defects more reliably than any
+individual technique and at speeds compatible with
+production cadence, which reduces the manual-inspection
+bottleneck that has long limited advanced-packaging
+throughput. Surveys of die-attachment and bonding-defect
+inspection confirm that combining optical, radiological, and
+acoustic sensing with deep learning is now the dominant
+direction for manufacturing-grade defect detection [12].
+                                                                           Figure 14: Closed-loop AI-enabled metrology for high-
+Several practical considerations must still be managed before              volume hybrid bonding. Inspection, machine-learning
+these methods can be trusted in qualification and high-                    classification, statistical control with a digital twin, and feed-
+volume manufacturing. The first is data scarcity. Because the              forward correction form a continuous loop governed by
+defect classes of interest are, by design, rare, synthetic-data            trustworthy, explainable AI.
+generation with generative adversarial networks and related
+augmentation strategies is essential for training robust                   References
+models without waiting for large defective populations to
+accumulate. The second is trustworthiness and                              [1] G. E. Moore, “Cramming more components onto integrated
+explainability. For an inspection decision to gate a costly                circuits,” Electronics, vol. 38, no. 8, Apr. 19, 1965.
+stacked device, the output of the model must be interpretable
+and physically grounded, and physics-informed networks                     [2] T. Strothman, private communication, BESI.
+that embed imaging or wave-propagation physics in the
+architecture offer a promising route to models that are both               [3] R. Gangadharan, D. Suwito, T. Workman, C. Uzoh, J. Chen, P.
+accurate and defensible during process qualification. The                  Mrozek, A. Avellan, S. Sadiq, and L. Mirkarimi, “Reworkable die
+third is integration with the broader supply chain and                     to wafer hybrid bonding process,” in Proc. IEEE 76th Electronic
+assurance flow, in which the same imaging and AI                           Components and Technology Conference (ECTC), 2026, pp. 1337
+infrastructure that detects manufacturing defects also support             to 1344.
+authenticity     and      reliability   verification     across
+heterogeneous, multi-sourced components [13].                              [4] T. Workman et al., “19th IMAPS Conference,” Fountain Hills,
+                                                                           AZ, Mar. 13 to 16, 2023.
+The natural end state is a closed-loop, AI-enabled
+manufacturing system, illustrated in Figure 14, in which                   [5] A. Roy, M. M. Al Hasan, S. Ghosh, N. Varshney, J. Julia, R.
+                                                                           Forghani, and N. Asadizanjani, “Applications and challenges of AI
+multimodal inspection feeds machine-learning classification,               in PCB X ray inspection: A comprehensive study,” ACM J. Emerg.
+which in turn drives statistical process control and a digital-            Technol. Comput. Syst., 2024, doi: 10.1145/3703457.
+twin representation of the bonding process, and finally
+provides feed-forward correction to the bonder. Organized as               [6] S. Ghosh, N. Varshney, A. Roy, P. J. Craig, M. M. Al Hasan, R.
+layers of data, model, decision, and control, the same                     Ghane Motlagh, N. Elsayed, and S. J. Koppal, “Physics informed
+capability provides a roadmap for increasing autonomy and                  neural networks for SAM image enhancement with a novel physics
+yield control as the technology scales [14]. Within this                   constrained metric for advanced semiconductor packaging
+framework, AI-enabled X-ray, acoustic, and THz inspection                  inspection,” in Proc. IEEE 75th Electron. Compon. Technol. Conf.
+is not a downstream quality check but an integral, real-time               (ECTC), 2025, doi: 10.1109/ECTC51687.2025.00368.
+element of the process. It is this capability that makes ultra-
+fine pitch D2W hybrid bonding statistically predictable, less              [7] Villarraga-Gómez, Herminso, et al. "Assessing electronics with
+dependent on human interpretation, and therefore genuinely                 advanced 3D X-ray imaging techniques, nanoscale tomography,
+ready for high-volume manufacturing of AI accelerators,                    and deep learning." Journal of Failure Analysis and
+three-dimensional memory, and heterogeneous chiplet                        Prevention 24.5 (2024): 2113-2128.
+integration.
+                                                                           [8] J. True, C. Xi, N. Jessurun, K. Ahi, and N. Asadizanjani,
+                                                                           “Review of THz based semiconductor assurance,” Opt. Eng., vol.
+                                                                           60, no. 6, Art. no. 060901, 2021, doi: 10.1117/1.OE.60.6.060901.
+
+
+
+
+                                                                                                                                           9
+
+                                                                  000298
+                                                       IMAPS 2026 Symposium Boston
+
+
+
+
+[9] U. J. Botero, D. Koblah, D. E. Capecci, F. Ganji, N.
+Asadizanjani, D. L. Woodard, and D. Forte, “Automated via
+detection for PCB reverse engineering,” in Proc. Int. Symp. Testing
+Failure Anal. (ISTFA), 2020, doi: 10.31399/asm.cp.istfa
+2020p0157.
+
+[10] Cuomo, Salvatore, et al. "Scientific machine learning through
+physics–informed neural networks: Where we are and what’s
+next." Journal of scientific computing 92.3 (2022): 88.
+
+[11] M. M. Al Hasan, N. Vashistha, S. Taheri, M. Tehranipoor, and
+N. Asadizanjani, “Generative adversarial network for integrated
+circuits physical assurance using scanning electron microscopy,” in
+Proc. IEEE Int. Symp. Phys. Failure Anal. Integr. Circuits (IPFA),
+2021, doi: 10.1109/IPFA53173.2021.9617416.
+
+[12] J. True, C. Xi, N. Jessurun, K. Ahi, M. Tehranipoor, and N.
+Asadizanjani, “Terahertz based machine learning approach to
+integrated circuit assurance,” in Proc. IEEE 71st Electron. Compon.
+Technol.           Conf.          (ECTC),         2021,        doi:
+10.1109/ECTC32696.2021.00351.
+
+[13] L. Alam and N. Kehtarnavaz, “A survey of detection methods
+for die attachment and wire bonding defects in integrated circuit
+manufacturing,” IEEE Access, vol. 10, pp. 83826 to 83843, 2022,
+doi: 10.1109/ACCESS.2022.3197624.
+
+[14] R. Noor, H. R. Kottur, P. J. Craig, L. K. Biswas, M. S. M.
+Khan, N. Varshney, H. Dalir, E. Akçalı, M. Tehranipoor, and N.
+Asadizanjani, “US microelectronics packaging ecosystem:
+Challenges and opportunities,” arXiv:2310.11651, 2023, doi:
+10.48550/arXiv.2310.11651.
+
+
+
+
+                                                                                     10
+
+                                                                      000299
+

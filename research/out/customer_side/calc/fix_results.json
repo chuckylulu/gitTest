@@ -1,0 +1,620 @@
+[
+ {
+  "module": "PAPM",
+  "applied": [
+   {
+    "id": "PAPM-017",
+    "change": "value 2 -> \"<2\"; unit -> \"um top-wafer thickness (upper bound)\"; claim -> \"Top wafer thinned to less than 2 um on a temporary carrier and permanently bonded to the bottom wafer\" (removes the unstated 'before'). Tag [F] and the 20-word quote unchanged."
+   },
+   {
+    "id": "PAPM-027",
+    "change": "claim -> \"Proposed (not stated as deployed) response: via-formation process improvements, increased electrical coverage ... to prevent test escapes during production\". Added the optional note after checking the Crossref ASMC2025 record: all 9 authors list Micron Technology affiliations. Quote unchanged."
+   },
+   {
+    "id": "PAPM-036",
+    "change": "tag [F] -> [C] (self-reported in-use claim). Claim reworded to a joint Micron/Thermo Fisher abstract statement, marked not independently testable. Note now starts with \"joint abstract: 8 of 16 authors Micron, 8 Thermo Fisher (see PAPM-033/PAPM-034); in-use claim; \" (8+8 confirmed in Crossref). 25-word quote unchanged."
+   },
+   {
+    "id": "PAPM-051",
+    "change": "claim now adds \"university-led (Seoul National University; first and last authors); 3 of 7 authors Samsung\" (confirmed in Crossref ECTC2026 record). Quote, tag and date unchanged."
+   },
+   {
+    "id": "PAPM-054",
+    "change": "claim -> \"Leakage-current origin verified via bonding-misalignment analysis; leakage current established as a process-sensitive electrical metrology signal\". Quote and tag unchanged."
+   },
+   {
+    "id": "PAPM-071",
+    "change": "Split. PAPM-071 narrowed to \"Claims real-time monitoring with superior sensitivity\" (tag [C] and quote unchanged). The turnaround half moved to new row PAPM-230, the next unused id, used instead of the suggested 'PAPM-071b'."
+   },
+   {
+    "id": "PAPM-073",
+    "change": "claim -> \"Method to detect potential defect sites leading to high-k dielectric breakdown proposed and examined using laser-induced leakage-current mapping (IRPS 2026, Samsung co-authored)\". Note gained the ZrO2 correlation sentence (outside the quote) and the 2-of-7 Samsung / Pohang-department authorship (confirmed in the IRPS2026 Crossref record). Quote unchanged."
+   },
+   {
+    "id": "PAPM-076",
+    "change": "claim -> \"Soft BCAT-line disconnections are not easily captured by L3 structural screening (which targets permanent and open defects)\". Quote unchanged."
+   },
+   {
+    "id": "PAPM-085",
+    "change": "Appended to claim: \"; vendor co-author affiliation in same record: 'Hamamatsu Photonics K. K. , Joko-cho, Chuo-ku, Hamamatsu City, Shizuoka, Japan' (1 of 9 authors; 8 Samsung)\". The affiliation string is exact in the Crossref text copy."
+   },
+   {
+    "id": "PAPM-089",
+    "change": "Appended to claim: the joint Samsung–vendor clause (6 of 9 Samsung, 3 of 9 at the exact ThermoFisher Giheung-gu affiliation string, see PAPM-090). Checked against the Crossref record."
+   },
+   {
+    "id": "PAPM-090",
+    "change": "note replaced with the fix text: abstract only / NOT RETRIEVED; vendor co-authored, 3 of 9 authors ThermoFisher (named); iFAST is the co-authors' employer's platform, so this is a joint Samsung/Thermo Fisher statement. Quote and [F] unchanged."
+   },
+   {
+    "id": "PAPM-094",
+    "change": "claim replaced with the vendor-led author list (5 of 6 ThermoFisher including the first-listed author; 1 Samsung, 'DRAM project Engineering Team'). Note replaced with the counting basis (Crossref marks every author 'additional', so first-author status rests on list order). Also appended \"Paper is vendor-led: 5 of 6 authors ThermoFisher Scientific, 1 Samsung (Crossref record 10.31399/asm.cp.istfa2026p0474).\" to the PAPM-095 and PAPM-096 notes. Did not write that Helios Hydra is a ThermoFisher product."
+   },
+   {
+    "id": "PAPM-110",
+    "change": "tag [F] -> [C]. Claim -> company statement that the 11nm 6th-generation (1x-nm class) DRAM cell transistor 'is demonstrated in HBM products' (product use not independently verifiable). Added the [C] reason to the note. 9-word quote unchanged."
+   },
+   {
+    "id": "PAPM-143",
+    "change": "claim replaced with the full authorship breakdown: YNU first and last authors (3 of 10), 4 SK hynix, 2 Tokyo Electron Kyushu and 1 Tokyo Electron Limited, so a joint academic/vendor/SK hynix paper. Note replaced: Crossref metadata only; abstract in the S2 record (PAPM-145 to 148); findings belong to the joint team. Quote and [F] unchanged."
+   },
+   {
+    "id": "PAPM-151",
+    "change": "claim -> \"Limit of the conventional Maszara test: limited amount of information obtainable for analysis (though it provides valuable insight into W2W bonding reliability)\". Quote unchanged."
+   },
+   {
+    "id": "PAPM-185",
+    "change": "claim -> \"Best R2 0.69 (unseen wafer datasets) and 0.58 (all unseen chip datasets) for elemental hole distortion index prediction on 8th-gen VNAND samples\"; unit -> \"R2 (best result)\". Quote and value unchanged."
+   },
+   {
+    "id": "PAPM-190",
+    "change": "claim -> \"Authors describe the method as providing non-invasive, high-throughput and cost-effective detection (abstract gives no throughput or cost figures)\". [F] and quote unchanged."
+   },
+   {
+    "id": "PAPM-197",
+    "change": "tag [F] -> [C]. Claim reworded as an SK hynix company use claim (since 2022; statement 2026-02-19). Note set to the fix's '[C] under the currently in use rule ...' text, plus a pointer to PAPM-231/PAPM-232. Value, unit, document, url, local_file and quote unchanged. Added [F] row PAPM-231 and [I] row PAPM-232. Deviation: the fix's [I] wording said the author lists 'match exactly'. Crossref shows paper 1 matches (12 of 12 names), but paper 2 lists one extra author (Il Koo Kim) beyond the 11 newsroom names, so the [I] note says so."
+   },
+   {
+    "id": "PAPM-199",
+    "change": "tag [F] -> [C]. Claim -> \"SK hynix authors state there is currently no equipment or method for direct in-line chip warpage measurement, because ultra-thin wafers are bonded to carrier wafers during handling\". page_or_section 'full text' -> 'Abstract'. Added the optional 'untestable state-of-the-art claim ... world's first / Industry's First framing' note. 24-word quote unchanged."
+   },
+   {
+    "id": "PAPM-205",
+    "change": "New 17-word quote: \"The cosine similarity, Pearson correlation coefficient, and coefficient of determination R$^2$ were 0.8805, 0.6610, and 0.4369, respectively\". Verified in _text/2026-11-21_jsts_paper-hbm-chip-warpage-thin-wafer.txt. Note gained the 81-chip / AXP ground-truth / Min-Max scaling context. Claim and value unchanged."
+   },
+   {
+    "id": "PAPM-207",
+    "change": "claim -> \"For the flux-based (destructive) UF-SL/CF-SL methods: 3D laser scanner at ~10 um x-y resolution takes ~5 min per wafer (vs ~1 min with a 130 um interferometric module)\". Added the optional note (timing is not for CTD-VC/PAPM-206). Value and quote unchanged."
+   },
+   {
+    "id": "PAPM-210",
+    "change": "Note replaced: \"full text read (...); Crossref search records (crossref_search-jsts-2025-26-topic, crossref_search-xr-q5) give 2025-10-31 and carry no affiliation and no abstract; no Semantic Scholar record saved\". The same note change was made on PAPM-211 to PAPM-216, as the fix asks. A grep confirmed no S2 record for 25.5.484 is saved."
+   },
+   {
+    "id": "PAPM-211",
+    "change": "claim -> \"Conventional tools optimized for planar DRAM wafers fail to accurately assess die shift and tilt in HBM stacks, particularly post-bonding\"; page_or_section -> 'Abstract'; note per PAPM-210. Quote unchanged."
+   },
+   {
+    "id": "PAPM-215",
+    "change": "claim -> \"Challenges addressed: low contrast and IR resolution constraints, handled with Sobel edge enhancement plus normalized cross-correlation\"; note per PAPM-210. Quote unchanged."
+   },
+   {
+    "id": "PAPM-220",
+    "change": "claim now puts the yield drop in recipe-development context: the intermediate high-TEOS recipe caused it, and the final 1.5a recipe (+46%) showed no significant yield difference. Note gained the 'intermediate trial recipe' context with the exact Sec. 3 phrase (verified). Quote unchanged."
+   },
+   {
+    "id": "PAPM-222",
+    "change": "tag [F] -> [C]. Claim -> SK hynix authors state the optimized TEOS SiO2 deposition process (TSV passivation, HBM WLPKG line) was successfully applied in mass production (company statement; data masked for confidentiality). Added the [C] reason to the note (masking sentence verified). Quote unchanged."
+   },
+   {
+    "id": "PAPM-223",
+    "change": "New 15-word quote: \"He is also an engineer with the Semiconductor Business Division at Samsung Electronics, South Korea.\" Verified in _text/2025-12-31_jsts_paper-optical-inspection-tool-matching.txt. page_or_section -> 'author biographies (Hyoseop Shin); header affiliations p.623'. Claim -> first author is a Samsung Electronics engineer; SKKU degree-programme paper. Note gained the authorship context: aff2 is linked to no author (all 3 superscripts point to #aff1 in the HTML); Shin, Lee and Kongju bios and the naver.com address verified. Tag [F] kept."
+   },
+   {
+    "id": "PAPM-228",
+    "change": "value 3 -> \">3\"; claim -> \"Manual matching often took over three hours per tool\" (the optional hedge, applied). Unit and quote unchanged."
+   }
+  ],
+  "not_applied": [
+   {
+    "id": "PAPM-217 to PAPM-229 (note column)",
+    "reason": "Not in the fix list, so left as is. These rows carry the same note 'Crossref and Semantic Scholar records carry no affiliation and no abstract' that was corrected on PAPM-210 to 216. A grep shows no Semantic Scholar record saved for JSTS 25.5.490 or 25.6.623 either, so the same correction probably applies; flagged for the maintainer. The 25.5.585 rows (PAPM-198 to 209) are correct: an S2 record for that paper is saved."
+   },
+   {
+    "id": "SYN-002 / SYN-008 / SYN-010 / SYN-029, TALK-004, SMP-007",
+    "reason": "The confirmed reasons say these out-of-module rows use PAPM-222 / PAPM-197 inputs whose tags are now [C] (SYN-002/008 list PAPM-222 as an [F] input; TALK-004 and SMP-007 tag the same Panoptes production-use statement [F]). Left untouched because the task forbids editing other modules, evidence.csv and dossier.md; the owners of those modules should update them."
+   }
+  ],
+  "new_rows": [
+   "PAPM-230 [C] (split from PAPM-071): claim 'Claims orders-of-magnitude reduction in turnaround time'; quote 'reducing turnaround-time by orders-of-magnitude' (4 words, FOUND in _text/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.txt). Document, date 2026-03-22, page 'abstract', url, local_file and note copied from PAPM-071.",
+   "PAPM-231 [F] (from the PAPM-197 fix): SK hynix newsroom lists two joint SK hynix / Gauss Labs SPIE AL 2026 papers (tool-to-tool matching oral 23 Feb; GRACE overlay VM poster 25 Feb), with authors named under SK hynix team affiliations. Quote 'The two papers to be presented are based on joint research conducted by members of Gauss Labs and SK hynix' (20 words, FOUND). Document, date 2026-02-19, url and local_file copied from PAPM-197; page 'body (paper list)'. Oral/poster dates and team names verified in the text copy.",
+   "PAPM-232 [I] (from the PAPM-197 fix): the newsroom papers are SPIE MIPC XL 10.1117/12.3087531 and 10.1117/12.3089595. Confidence High. The note gives the inputs (newsroom HTML, Crossref SPIE-MIPC-XL-2026 volume list, two S2 records) and the reason: titles match exactly, paper 1 has 12/12 author names, paper 2 has 11 newsroom names all in Crossref plus one extra (Il Koo Kim), and the link is the researcher's match. No quote and no local_file, like PAPM-196."
+  ],
+  "table_or_notes_changes": [
+   "PAPM_table.csv row 10 (ASMC 2025 GDDR, PAPM-027): status '\"during production\" (proposed)' -> '\"have been proposed\" (via-formation improvements, increased electrical coverage and wafer-level analysis \"to prevent test escapes during production\"; not stated as deployed)'.",
+   "Row 12 (ISTFA 2025 p0244, PAPM-036): chipmaker -> 'Micron (joint with Thermo Fisher: 8 of 16 authors Micron, 8 Thermo Fisher)'. Status now ends '(self-reported in-use claim [C], PAPM-036; joint Micron/Thermo Fisher abstract)'.",
+   "Row 14 (ECTC 2026 00250, PAPM-051/054): chipmaker -> 'Samsung (co-author; university-led: first and last authors Seoul National University, 3 of 7 authors Samsung)'. process_step 'misalignment-linked leakage' -> 'leakage origin verified by bonding-misalignment analysis'.",
+   "Row 20 (IRPS 2026 GIDL): evidence_ids gained PAPM-230.",
+   "Row 21 (IRPS 2026 ZrO2 mapping, PAPM-073): chipmaker -> 'Samsung (co-author: 2 of 7 authors; first and last authors at Pohang engineering departments)'.",
+   "Rows 24-25 (ISTFA 2025 p0495, PAPM-085): tool_vendor keeps its NOT DISCLOSED prefix and adds '; co-author affiliation: Hamamatsu Photonics K. K. (1 of 9 authors, Crossref record, PAPM-085)'.",
+   "Row 26 (ISTFA 2026 p0749, PAPM-089/090): chipmaker -> 'Samsung (joint with ThermoFisher: 6 of 9 authors Samsung, 3 ThermoFisher Scientific)'. tool_vendor notes Thermo Fisher also employs 3 of 9 co-authors.",
+   "Row 27 (ISTFA 2026 p0474, PAPM-094): chipmaker -> 'Samsung (co-author only: vendor-led paper, 5 of 6 authors ThermoFisher Scientific, 1 Samsung)'.",
+   "Row 31 (VLSI 2026 11577343, PAPM-110): status gained '(company claim [C], PAPM-110; no product named)'.",
+   "Rows 36-37 (ECTC 2025 00350, PAPM-143): chipmaker -> 'SK hynix (co-author: 4 of 10 authors; first and last authors Yokohama National University; 3 Tokyo Electron)'.",
+   "Row 44 (PAPM-185): limits now quote 'the best results were ...' and are labelled best R2 for elemental hole distortion index prediction.",
+   "Row 45 (PAPM-190): 'non-invasive, high throughput' is now labelled as benefits as the authors describe them ('non-invasive, high throughput, and cost-effective'), with no throughput or cost figures given.",
+   "Row 47 (JSTS 25.5.585): limits now say the ~5 min/wafer laser-scanner figure is for the destructive flux-based UF-SL/CF-SL methods (7-10 min is CTD-VC); add the 81-chip, min-max-normalized basis of the R2; note that 'no equipment or method' is the authors' claim [C] (PAPM-199).",
+   "Row 48 (JSTS 25.5.484, PAPM-215): limits -> 'challenges the method addresses (not stated as remaining limits): \"low contrast and IR resolution constraints\"'.",
+   "Rows 49-50 (JSTS 25.5.490, PAPM-222): status gained '(company claim [C], PAPM-222; data masked for confidentiality)'.",
+   "Row 51 (JSTS 25.6.623, PAPM-223/228): chipmaker -> 'Samsung (first author a Samsung Electronics engineer, 1 of 3 authors; SKKU degree-programme paper)'. Limits now quote 'often requiring over three hours per tool'.",
+   "All chipmaker values keep their leading company name, and rows of the same paper keep identical chipmaker strings, so calc/PAPM_counts.py and build_tables.py grouping are unaffected. PAPM_counts.py output was compared before and after the edits and is identical (21 status NOT DISCLOSED, 31 limits NOT DISCLOSED, 10 vendor rows).",
+   "PAPM_notes.md: header count updated to 232 rows (212 [F], 15 [C], 5 [I]). Corrected sentences for PAPM-199 ([C], authors' statement), PAPM-207 (UF-SL/CF-SL context), PAPM-211/212 ('fail to accurately assess' vs 'cannot detect'), PAPM-215 (challenges addressed, not limits), PAPM-222 ([C]; PAPM-220 trial-recipe context), PAPM-143 (joint authorship), PAPM-197 ([C] plus PAPM-231/232), PAPM-223 (SKKU programme, 1 of 3 Samsung), PAPM-228 ('often requiring'), PAPM-110 ([C]), PAPM-051/054 (misalignment analysis; SNU-led), PAPM-094 (vendor-led), PAPM-085 (Hamamatsu), PAPM-089/090 (ThermoFisher co-authors), PAPM-071/230, PAPM-073 ('proposed and examined', 2 of 7), PAPM-185 (best R2), PAPM-027 ('have been proposed'), PAPM-036 ([C], 8 of 16 Thermo Fisher). Also updated the mass-production list, the newsroom/SPIE sentence in section 3, the vendor-led premise bullets, and the VM and Hamamatsu/Gauss Labs leads. Added '## Corrections after verification (2026-11-21)' listing the changed, retagged and new ids."
+  ],
+  "quote_check_summary": "python3 -I research/tools/quote_check.py research/out/customer_side/parts/PAPM.csv now gives FOUND 227 and '-' 5. The five '-' rows are the [I] rows with no quote (PAPM-181, 186, 191, 196, 232). There are no NOT FOUND, QUOTE>25W, BAD TAG, [F]-without-local-file or cited-page flags. Baseline before the edits was FOUND 225, '-' 4. All new quotes (PAPM-205: 17 words, PAPM-223: 15, PAPM-230: 4, PAPM-231: 20) were checked word for word in the cited _text copies before writing. The CSV was written with Python's csv module: same header and column order, UTF-8, the original CRLF line endings kept. The diff touches only the 34 changed rows plus 3 appended rows (PAPM-230 to 232)."
+ },
+ {
+  "module": "PAPL",
+  "applied": [
+   {
+    "id": "PAPL-012",
+    "change": "Tag changed from [F] to [C]. Claim now reads: 'Company claim (TSMC authors): SoIC-CS 3D IC (compute base die + multilayered memory top dies) proven feasible 'for the first time' (priority claim, not independently testable)'. Note replaced with the fix text, which points to PAPL-010 and PAPL-011 for the demonstrated result. Quote unchanged."
+   },
+   {
+    "id": "PAPL-013",
+    "change": "Claim now states that adopting SoIC-CS in next-gen 8/12/16-hi HBM on CoWoS can support power densities above 1.2 W/mm2. Value set to '>1.2' and unit to 'W/mm2'. Quote replaced with the 19-word sentence starting 'Much higher power densities (more than $1.2 ~\\mathrm{W} / \\text{mm}^{2}$)...', which appears exactly once in the part1 text copy. Note extended to explain the LaTeX rendering, the lower bound and the rest of the sentence. Tag stays [C]."
+   },
+   {
+    "id": "PAPL-039",
+    "change": "Claim relabelled as a recap of the authors' previous, undated research, not a result of this May 2025 paper. Note extended with the preceding abstract sentence and this paper's own result (>99% device yield). Quote unchanged."
+   },
+   {
+    "id": "PAPL-044",
+    "change": "Claim now limited to 'within a temperature range below 350 °C'. Quote widened to the exact 18-word span ending in 'below', verified in the part1 text copy. Note now says the sentence ends 'below 350 °C' (written in LaTeX in the source)."
+   },
+   {
+    "id": "PAPL-086",
+    "change": "Claim reframed as an XADA finding: circuit response to attenuated x-ray flux scales with flux density and exposure time, with the authors framing it as guidance for future lab XADA tools. Quote widened to the exact 19-word sentence. Note now begins by saying the source does not mention dose or device damage. Deviation from the fix: the fix's open to-do '(move to an [I] row if kept)' became a labelled inline [I] researcher reading with confidence Low and a reason, as in the PAPL-145 pattern. The lead is kept in the notes file, so leaving a to-do in the row was not right."
+   },
+   {
+    "id": "PAPL-090",
+    "change": "Claim replaced with the fix wording: the abstract only 'discusses' RF-LIT applications for 2.5/3D packaging, and the demonstrated part is RF-LIT isolating electrical open signatures. Quote, tag and note unchanged."
+   },
+   {
+    "id": "PAPL-095",
+    "change": "Quote replaced with the exact 21-word sentence that includes '($<10 \\%$ variation)', so the quote now shows the row's value. Verified in the part2 text copy."
+   },
+   {
+    "id": "PAPL-120",
+    "change": "Quote replaced with the exact 20-word span 'robust nt-Cu/PI hybrid joints bonded at 250 °C and 10 MPa for 1 hour, without the need for post-bonding annealing'. Claim changed to the robust-joints finding, attributed to FIB cross-section per the abstract."
+   },
+   {
+    "id": "PAPL-129",
+    "change": "Claim changed to: the authors suggest the approach can reduce thermal budget and stress in fine-pitch devices 'such as' HBM and NAND. Quote widened to the exact 24-word hedged span. Note now says only 5/10-um-pitch test vehicles were demonstrated. Tag stays [F]."
+   },
+   {
+    "id": "PAPL-145",
+    "change": "Claim now says SPIL affiliation for all 5 authors per Crossref; it no longer says ASE. In the note, 'abstract only' became 'abstract in Semantic Scholar record (see PAPL-146)'. Also appended an inline [I] that counts the paper as ASE group only via SPIL as a subsidiary of ASE Technology Holding, with input AW-055 [S] (TechNews quote), confidence High and a reason. The TechNews quote was verified in its text copy."
+   },
+   {
+    "id": "PAPL-155",
+    "change": "Claim now reads 'Intel; SPIL author affiliation per Crossref (8 Intel, 3 SPIL authors)'. The counts were checked against the Crossref JSON. Tag [F] and quote unchanged. A separate [I] row, PAPL-189, was added for the ASE attribution."
+   },
+   {
+    "id": "PAPL-161",
+    "change": "Removed '(SAM tool vendor)'. Claim is now 'Co-author affiliation PVA TePla Analytical Systems GmbH, Westhausen, Germany'. Note replaced: the record does not describe PVA TePla's business, so the vendor label is researcher background."
+   },
+   {
+    "id": "PAPL-167",
+    "change": "Removed the '(X-ray/CT software and equipment vendor)' description and replaced the note with the fix text: the record does not describe Comet's business, and the maker of Dragonfly is not named. Deviation from the fix: the fix's claim said 'Intel-led'. The Crossref record marks no author with sequence 'first'; all 8 are 'additional', with 3 Intel listed first and 5 Comet. The claim therefore reads '...Comet Technologies (four co-authors Canada, one USA) on ISTFA 2026 paper whose author list starts with 3 Intel authors (3 of 8 authors Intel)'."
+   },
+   {
+    "id": "PAPL-174",
+    "change": "Claim now says Intel-led (first author; 5 of 9 Intel, Hillsboro) and names the PDF Solutions co-authors (4 of 9, Milpitas). Checked against Crossref, where Patterson has sequence 'first'. Nothing was added about who supplies the e-beam system."
+   },
+   {
+    "id": "PAPL-183",
+    "change": "Claim now names the Lightmatter Passage M Series 3D Silicon Photonics Engine and says the paper is Lightmatter-led, with Amkor as one of five co-authors (Amkor is the last author per Crossref). It also adds the 7200 mm2 organic substrate and the multi-reticle 3D photonic interposer. Quote unchanged."
+   },
+   {
+    "id": "PAPL-189 (new, from PAPL-155 fix)",
+    "change": "Added an [I] row: 'SPIL co-authors of 10.1109/ectc51846.2026.00101 count as ASE (ASE Technology Holding) for this study'. Document, date, url and local_file are copied from PAPL-155, and the quote is empty, as in other modules' [I] rows. The note lists the inputs: PAPL-155 [F], AW-055 [S] (TechNews 2026-04-24, quote verified), and MoneyDJ 2025-04-11 (phrase 旗下子公司日月光、矽品、環電, verified in its text copy). Confidence High, with a reason."
+   }
+  ],
+  "not_applied": [
+   {
+    "id": "PAPL-145 (optional separate [I] row)",
+    "reason": "The PAPL-145 fix asks for the SPIL-as-ASE inference to go in the note, so no extra row was added. Only the PAPL-155 fix asks for a separate [I] row (PAPL-189)."
+   },
+   {
+    "id": "PAPL-167 (optional [I] vendor row)",
+    "reason": "The fix makes the vendor description optional, and the confirmer found that no saved source links 'Comet Technologies, Canada' to Dragonfly or to Comet X-ray/Yxlon. No [I] row was added. The notes now say the vendor role is researcher background."
+   },
+   {
+    "id": "PAPL-086 (literal note text)",
+    "reason": "The fix's parenthetical '(move to an [I] row if kept)' was not copied as written. It was turned into a labelled inline [I] reading with confidence Low and a reason, because the lead is kept in PAPL_notes.md."
+   },
+   {
+    "id": "PAPL-167 (literal claim text)",
+    "reason": "'Intel-led' was not used because the Crossref record designates no first author (all sequence 'additional') and Comet has 5 of the 8 authors. The claim gives the author order and counts instead."
+   }
+  ],
+  "new_rows": [
+   "PAPL-189,[I],\"SPIL co-authors of 10.1109/ectc51846.2026.00101 count as ASE (ASE Technology Holding) for this study\",,,n/a,May 2026,Crossref ECTC2026 volume listing (record of 10.1109/ectc51846.2026.00101),2026-05-26,inference from PAPL-155 (Crossref affiliation) and AW-055 (TechNews article para 1),https://doi.org/10.1109/ectc51846.2026.00101,research/sources/customer_side/2026-11-21_crossref_ECTC2026-volume-list.json,,High,\"Inputs: PAPL-155 [F] (Crossref affiliation 'Siliconware Precision Industries Ltd (SPIL),Taichung,Taiwan'); AW-055 [S] (TechNews 2026-04-24, quote 與旗下子公司日月光、矽品、環電一起共襄盛舉); MoneyDJ 2025-04-11 (旗下子公司日月光、矽品、環電; research/sources/customer_side/2025-04-11_moneydj-via-yahoo_ase-supplier-awards-2024.html). Confidence: High. Reason: two separate press reports name SPIL (矽品) as a subsidiary of ASE Technology Holding alongside ASE (日月光), but the Crossref record itself names only SPIL.\""
+  ],
+  "table_or_notes_changes": [
+   "PAPL_table.csv, TSMC SoIC-CS row (10.1109/ectc51687.2025.00055): status_in_authors_words now flags that 'first time' is the TSMC authors' priority claim, not testable ([C] PAPL-012). Row tag left at [F]; the existing CoWoS-R row already mixes in a [C] row the same way.",
+   "PAPL_table.csv, Intel RF-LIT row (10.31399/asm.cp.istfa2026p0419): process_step changed from 'fault isolation ... in 2.5/3D packages incl. HBM-stack accelerators' to electrical-open fault isolation, with 2.5/3D use only 'discussed' and HBM accelerators named as context. status_in_authors_words changed from NOT DISCLOSED to the quote '\"discusses RF-based LIT applications for fault isolation in 2.5/3D packaging architectures\"'.",
+   "PAPL_table.csv: no table row cites PAPL-145, PAPL-155, PAPL-161, PAPL-167, PAPL-174 or PAPL-183, and no row names SPIL, so there was no chipmaker-attribution change. Rows citing PAPL-039, PAPL-044, PAPL-086, PAPL-095, PAPL-120 and PAPL-129 do not depend on the corrected wording and were left unchanged.",
+   "PAPL_notes.md line 3: row count updated to 189 (incl. 1 [I] without quote); quote_check still FOUND 188 / NOT FOUND 0.",
+   "PAPL_notes.md TSMC bullet: PAPL-012 labelled a [C] priority claim, and PAPL-013 restated as the >1.2 W/mm2 power-density claim for next-gen HBM on CoWoS.",
+   "PAPL_notes.md Intel FA bullet and save-by-hand item 10: RF-LIT on 2.5/3D is described as 'discussed', not demonstrated.",
+   "PAPL_notes.md save-by-hand item 9 and the X-ray dose lead: 'dose' framing removed or labelled as researcher reading (XADA signal, not device damage).",
+   "PAPL_notes.md sampling leads: e-beam point-scan entry now reads 'Intel-led ... with PDF Solutions co-authors (PAPL-174, PAPL-175)'.",
+   "PAPL_notes.md tool-vendor list: PVA TePla and Comet/Dragonfly entries reworded so they no longer assert vendor roles that the records do not state.",
+   "PAPL_notes.md: added '## Corrections after verification (2026-11-21)' listing all 15 changed ids plus the new PAPL-189, with one-line summaries. It also records that SPIL is counted under ASE only by inference (AW-055 [S] -> PAPL-189 [I])."
+  ],
+  "quote_check_summary": "The final run of python3 -I research/tools/quote_check.py research/out/customer_side/parts/PAPL.csv gave FOUND 188, plus 1 row with no check ('-'): PAPL-189, the new [I] row, which has no quote. There were 0 NOT FOUND and 0 flags; no quote is over 25 words and every tag is valid. All 7 new or widened quotes (PAPL-013, -044, -086, -095, -120, -129, and the PAPL-039 note excerpt) were first checked to occur exactly once in research/sources/customer_side/_text/2026-11-21_semanticscholar_chipmaker-papers-2025-26-part1.txt or part2.txt, at 14-24 words each. The CSV and the table were written with Python's csv module (header and column order kept, UTF-8, original CRLF line endings). Only PAPL.csv, PAPL_table.csv and PAPL_notes.md were modified, and nothing was committed. Backup of the original CSV: /tmp/claude-0/-home-user-gitTest/f760c656-7b51-5536-97d4-42052faf1ece/scratchpad/PAPL.csv.bak"
+ },
+ {
+  "module": "TALK",
+  "applied": [
+   {
+    "id": "TALK-001",
+    "change": "Tag [F] to [C]. Claim replaced with the fix wording: 'drastically reduced', and the context is now \"fab-wide 'AI Everywhere' section; article headline concerns HBM smart factories\". Value set to 'AI defect image analysis in use; time reduction not quantified'. Note extended with the 'Doh claims' caption remark and the point that defect image analysis is not among the HBM smart factory system features. Quote unchanged and checked as exact."
+   },
+   {
+    "id": "TALK-002",
+    "change": "Tag [F] to [C]. Added to note: 'Company in-use/performance claim by VP Doh; not independently testable.' Claim, quote and section unchanged."
+   },
+   {
+    "id": "TALK-004",
+    "change": "Tag [F] to [C]. Note replaced with the fix text: Gauss Labs is 'an industrial AI startup' (the 'SK affiliate' wording is removed), production use since 2022 is SK hynix's own untestable in-use claim, and it is front-end litho overlay. Quote unchanged."
+   },
+   {
+    "id": "TALK-014",
+    "change": "Tag [F] to [S]. Claim reattributed to the guest Tech Note by Prof. Seunghwan Joo (Inha University), hosted on SK hynix Newsroom. page_or_section set to \"section 'Bump-less Chip Connections ... in the HBM', second paragraph after the figure captioned 'Two Major Hybrid Bonding Methods'\" (checked in the text copy: heading at line 112, caption at 134, quote at 140). Byline sentence put at the start of the note, and the 'names no inspection or metrology method' sentence kept. Quote unchanged. Confidence also changed High to Medium, which the fix did not specify. Reason: it matches TALK-015 (same document, the fix sets Medium) and every other [S] row in the module."
+   },
+   {
+    "id": "TALK-015",
+    "change": "Tag [F] to [S]. Claim reattributed to the guest Tech Note by Prof. Joo. Note replaced: outside-expert column, not SK hynix-authored, and the warpage/stress metrology link is the researcher's interpretation. Confidence High to Medium. Quote and the ~7 µm value unchanged."
+   },
+   {
+    "id": "TALK-022",
+    "change": "Note replaced with the hedged authorship inference: the description is unsigned and sits under three Intel organizers, with inputs, Medium confidence and a reason given. Optional claim fix applied: 'ultra-dense sampling, high-throughput surface topography', which matches the source. Quote unchanged (22 words). Tag stays [F]."
+   },
+   {
+    "id": "TALK-035",
+    "change": "period_calendar set to 'ITF World presentation, year and month not stated (article 12 Aug 2025)'. page_or_section set to \"section 'Voids, contamination, and non-bonded zones', resistance-mapping paragraph\" (checked: heading at line 160, quote at line 182). Note replaced with the unconfirmed-period wording, and '(imec)' dropped. Tag [S], quote and date unchanged."
+   },
+   {
+    "id": "TALK-036",
+    "change": "page_or_section set to \"section 'Voids, contamination, and non-bonded zones', resistance-mapping paragraph (DeBoer quote)\". period_calendar set to '2025 (article Aug 2025; ITF World talk date not stated)'. Note: 'Same ITF World remark as TALK-035; the article (12 Aug 2025) does not state the talk date.' Quote, claim and [S] unchanged."
+   },
+   {
+    "id": "TALK-038",
+    "change": "Tag [F] to [C]. Note: 'File saved by another module. Company statement of current use; not independently testable.' Quote unchanged."
+   },
+   {
+    "id": "TALK-039",
+    "change": "Tag [F] to [C]. Note replaced: spoken by Koen de Backer, Micron CVP, and it is a company claim of current in-house use. Optional claim rewording applied: 'Micron blog (K. de Backer, CVP): Micron's automated image-based deviation analysis spans front end, assembly and test'. Quote unchanged."
+   },
+   {
+    "id": "TALK-040",
+    "change": "Value set to '590,000 sensors; 100 million wafer images; 436 million control points'. Unit 'per week' cleared to empty. Note extended: the weekly cadence applies to the AI runs, and the sensor count is a total. Claim, [C] and quote unchanged."
+   },
+   {
+    "id": "TALK-041",
+    "change": "Tag [F] to [C]. Note: 'Company-reported in-use and scale claim (millions of flaws annually); not testable.' Claim and quote unchanged."
+   },
+   {
+    "id": "TALK-052",
+    "change": "page_or_section changed from 'p2, Introduction' to 'p2, Section II.A (Test vehicle information and thermal cycling)'. Quote still FOUND on p2, with no cited-page flag."
+   },
+   {
+    "id": "TALK-055",
+    "change": "Claim replaced with the fix's explicit scope: talk, newsroom, web-page and press material plus Amkor's IMAPS 2025 paper. The second clause is limited to post-bond void/overlay methods. Note replaced with the full input list (adds Samsung TALK-030..034, Micron TALK-021, Intel TALK-022..023, and TALK-054 excluded) and the corrected confidence reason."
+   },
+   {
+    "id": "TALK-056",
+    "change": "Claim now says 'warpage at wafer, chip and package level (Samsung, SK hynix supplier programme, Micron; Amkor package-level measurement)'. Note adds that TALK-053 and TALK-032 are package/substrate warpage, plus the Medium-confidence reason: 5 of 12 inputs are [S], and each group rests on 3-4 documents. Both counts were checked against the CSV."
+   },
+   {
+    "id": "TALK-057",
+    "change": "Claim replaced with the fix wording, which adds general wafer-level DMI metrology and inspection with no HBM link. Note replaced with the fix text and the Medium-confidence reason. One small addition beyond the fix: after 'TALK-014..016' I added '(TALK-014 and 015 are a guest Tech Note by Prof. Seunghwan Joo, Inha University, read as context, not as SK hynix's own words)'. Without it, the note would list an outside academic's column as one of 'SK hynix's own statements', which contradicts the corrected TALK-014/015."
+   }
+  ],
+  "not_applied": [
+   {
+    "id": "TALK-004 follow-on (SYN-010)",
+    "reason": "The fix notes that SYN-010 calls its inputs [F]. SYN.csv belongs to another module, so I did not touch it. Now that TALK-004 is [C], SYN-010's note ('tags of inputs: [F]') is out of date and needs updating in the SYN module."
+   },
+   {
+    "id": "TALK-038/039 follow-on (SYN-021); TALK-001/002 none",
+    "reason": "SYN-021 (another module) lists TALK-038 and TALK-039 under 'tags of inputs: [F]'. Both are now [C]. I left it unchanged because it is outside TALK; the SYN owner should update it."
+   },
+   {
+    "id": "TALK-037",
+    "reason": "Not in the fix list, so I left it unchanged. It has the same source (DeBoer in the same Semiconductor Engineering article) with period_calendar '2025', but the article attributes this quote only to 'Micron's DeBoer' and does not tie it to ITF World. '2025' is therefore the article date, and the row is not clearly wrong. The table row that covers TALK-035..037 was still updated so it no longer says 'ITF World 2025'."
+   }
+  ],
+  "new_rows": [],
+  "table_or_notes_changes": [
+   "TALK_table.csv, row 'TALK-001; TALK-003': tag [F] to [C]. process_step changed from '(HBM smart-factory context)' to '(not among the HBM smart-factory system features; HBM only in the headline)'. status_in_authors_words marked 'production (company claim, unquantified)'.",
+   "TALK_table.csv, rows 'TALK-002' and 'TALK-004': tag [F] to [C], and status_in_authors_words marked 'production (company claim)'.",
+   "TALK_table.csv, both Intel rows (TALK-022; TALK-023 and TALK-022): venue changed from 'description written by Intel organizers' to 'description (unsigned; shown under Intel organizers Niazi, Dogiamis, Tomita; authorship inferred)'.",
+   "TALK_table.csv, Micron DeBoer row (TALK-035..037): 'ITF World 2025 presentation' changed to 'ITF World presentation ... (talk year and month not stated)'.",
+   "TALK_table.csv, Micron blog row (TALK-038..041): tag [F] to [C]. Status changed to 'production (company claim)', and '100 million wafer images per week' changed to '100 million wafer images, all run through AI models each week (company figure)'.",
+   "TALK_table.csv: no row covers TALK-014, TALK-015 or TALK-052, and the Amkor row needed no change.",
+   "TALK_notes.md, header: tag counts updated to 20 [F], 11 [C], 27 [S], 3 [I], recomputed from the CSV.",
+   "TALK_notes.md, Overall: scope changed to 'talk, newsroom, web-page and press material ... (plus Amkor's IMAPS 2025 paper)'. The production-line clause is now limited to post-bond void/overlay methods. The needs bullet now reads 'warpage at wafer, chip and package level (Amkor's input is package-level only)'.",
+   "TALK_notes.md, SK hynix section: the TALK-057 summary now includes DMI and supplier co-development. TALK-001, 002 and 004 are marked [C], and TALK-001 is marked fab-wide.",
+   "TALK_notes.md, SK hynix section: the Tech Note bullet now names it as a guest column by Prof. Seunghwan Joo (Inha University), not SK hynix's own view, with TALK-014/015 marked [S].",
+   "TALK_notes.md, Micron section: DeBoer is now cited as 'ITF World, talk year and month not stated; quoted by Semiconductor Engineering, 12 Aug 2025'. The blog bullet now says 'all run through AI models each week' and 'All four are company in-use claims [C]'.",
+   "TALK_notes.md, Intel section: 'Its unsigned description (authorship by the Intel organisers is inferred, not stated)'.",
+   "TALK_notes.md, Premise 5: now reads 'a guest Tech Note on its newsroom (Aug 2026; author Prof. Seunghwan Joo, Inha University, not SK hynix) ... (TALK-014, [S])'.",
+   "TALK_notes.md: added the section '## Corrections after verification (2026-11-21)', listing the changed ids: 001, 002, 004, 014, 015, 022, 035, 036, 038, 039, 040, 041, 052, 055, 056, 057."
+  ],
+  "quote_check_summary": "python3 -I research/tools/quote_check.py research/out/customer_side/parts/TALK.csv was run after the edits: FOUND 58, '-' 3 (the three [I] rows TALK-055/056/057, which have no quote). Nothing came back NOT FOUND, there are no flags (no QUOTE>25W, no BAD TAG, no cited-page mismatch, including TALK-052 at 'p2, Section II.A'), and no quotes were changed. The CSV was written with csv.DictWriter, keeping the header, column order, UTF-8 and the original CRLF line endings, and a round-trip check confirmed the format is preserved. Exactly 16 rows changed and the row count stays 61. Files changed: /home/user/gitTest/research/out/customer_side/parts/TALK.csv, /home/user/gitTest/research/out/customer_side/parts/TALK_table.csv and /home/user/gitTest/research/out/customer_side/parts/TALK_notes.md. I did not touch any other module, evidence.csv, dossier.md or calc/, and nothing was committed. The PAPL and PAPM modifications in git status come from other agents."
+ },
+ {
+  "module": "XR",
+  "applied": [
+   {
+    "id": "XR-005",
+    "change": "Replaced the claim with the fix wording: all DOE runs were on the 2D MXI machine, and AXI was used only to measure dose on three BGA builds. page_or_section is now 'p48 Table 1; p49-50 (p50: DOE on MXI only)'. Added the exact p50 sentence and the AXI scope to the note. The quote (the Table 1 header) is unchanged and still FOUND on p48. I also added one clause to the note, beyond the fix: the 'orig. Oct 2024' in period_calendar comes from XR-027 (the Crossref SMTA Intl record), because this document says only 'originally published in the SMTA proceedings' and gives no date. I left period_calendar itself unchanged."
+   },
+   {
+    "id": "XR-009",
+    "change": "Replaced the claim with the fix wording: Micron co-authored the TNS paper on 3-D NAND RG flash; prior X-ray irradiation did not significantly affect alpha SER, at least for small doses that are still well above typical PCB-inspection doses. The new quote has 22 words and is word-for-word in the Semantic Scholar text copy. I replaced the note with the fix text, which now cites the Crossref record (it exists in sources/customer_side) for the Micron affiliation of S. Beltrami, plus vol. 72 no. 8 and pp. 2536-2541. Both details were checked in the Crossref text copy. Tag [F], date, url and local_file are unchanged."
+   },
+   {
+    "id": "XR-014",
+    "change": "In the note, changed the cross-reference 'Speaker identity for XR-2' to 'Speaker identity for XR-013 / XR-037', following the fix. Claim, quote, tag and date are unchanged."
+   },
+   {
+    "id": "XR-018",
+    "change": "Replaced the claim so that it keeps WindowsForum's limit 'in the material it reviewed' and the full list (tool types, package designs, measured failure rates). The quote is unchanged (exact, line 323, 22 words)."
+   },
+   {
+    "id": "XR-019",
+    "change": "Replaced the note: the team and 'closing session' (閉幕場) attribution is now described as 'not corroborated' by saved sources. The DIGITIMES caption names only Zou, and WindowsForum says 'keynote' with no time slot. The word 'conflict' and the unsaved 'forum-keynote slot' reference are gone. Claim, quote and tag are unchanged."
+   },
+   {
+    "id": "XR-022",
+    "change": "Changed date from 2025-07-18 to 2025-07-21. The page shows '발행일 : 2025-07-21 06:00', the print edition '2025-07-21 14면', and datePublished 2025-07-21T06:00+09:00. period_calendar stays Jul 2025. Replaced the note with the fix text: the tool was developed through NexRay (Nextin 60%, Axiomatique 40%), the partner is spelled Axiomatique (액시오매틱), and the URL's 20250718 is an article ID. Claim, quote and tag [S] are unchanged. The local_file name still carries the 2025-07-18 prefix; I did not rename the source file."
+   },
+   {
+    "id": "XR-029",
+    "change": "Claim now says soft X-rays 'may be absorbed' in the substrate and cause refresh degradation or charge loss, putting back the source's 'may'. The note now says the damaged chip 35 has no type in this embodiment; the logic chip (35) and memory chip (45) types come from the separate two-chip embodiment (lines 1283/1287). I did not add an 'implies DRAM' inference. Quote, value, unit, dates and tag are unchanged."
+   },
+   {
+    "id": "XR-037",
+    "change": "Replaced the claim with the fix wording. Speaker comes from the DIGITIMES caption; 'keynote' and the title come from WindowsForum. The date 4 Sept 2026 and the 'forum keynote' slot are marked as coming from unsaved search snippets only, consistent with the DIGITIMES timestamp and the 31 Aug–4 Sept programme window. Tag [I], confidence Medium and the existing note are unchanged."
+   }
+  ],
+  "not_applied": [
+   {
+    "id": "XR-037",
+    "reason": "The fix's instruction to relabel the issue from inference_inputs_missing to unsaved_detail_in_claim applies to the verification record, not to any column of XR.csv. There was nothing to change in the CSV for it."
+   },
+   {
+    "id": "XR-005",
+    "reason": "The confirmed_reason's side point that 'orig. Oct 2024' in period_calendar is not backed by the SMT007 document was not part of the fix. I left period_calendar as 'Apr 2025 (orig. Oct 2024)' because XR-027 supports Oct 2024. I only recorded the provenance in the note (see applied)."
+   }
+  ],
+  "new_rows": [],
+  "table_or_notes_changes": [
+   "parts/XR_table.csv does not exist, so no table rows were updated.",
+   "XR_notes.md, Intel 'Test set-up' bullet: now says all dose DOE runs used the 2D MXI machine and dose on three BGA builds was also measured in typical 3D AXI scans (XR-005).",
+   "XR_notes.md, Micron 'Dose framing' bullet and the Micron row of the dose-statements table: the phrase 'well above those commonly used for PCB inspections' is now tied to the 'small doses' (XR-009).",
+   "XR_notes.md, WindowsForum bullet: 'no public material' became 'no public evidence in the material it reviewed' (XR-018).",
+   "XR_notes.md, Uncle Stock Notes bullet and premise problem #5: 'conflicts with' became 'not corroborated by saved sources; neither contradicts it'; the forum-keynote slot and APME role are labelled snippet leads (XR-019).",
+   "XR_notes.md, out-of-period Samsung US 11,217,495 B2 bullet: 'may be absorbed' restored (XR-029).",
+   "XR_notes.md, XR-2 'Not a main-stage keynote' bullet and premise problem #1: the forum-keynote status and the 4 Sept date are marked as coming from search snippets only; saved WindowsForum says only 'keynote' (XR-037).",
+   "XR_notes.md: added a heading '## Corrections after verification (2026-11-21)' listing XR-005, XR-009, XR-014, XR-018, XR-019, XR-022, XR-029 and XR-037, one line each."
+  ],
+  "quote_check_summary": "I ran python3 -I research/tools/quote_check.py research/out/customer_side/parts/XR.csv after writing the CSV with the csv module (same header, same column order, UTF-8, CRLF as in the original; the round-trip was byte-identical before the edits). Result: FOUND 32, FOUND (layout-insensitive) 2, and 4 rows with no quote (the [I] rows XR-035 to XR-038). There are no NOT FOUND results and no flags. The changed rows XR-005 (p48), XR-009, XR-014, XR-018, XR-019, XR-022 and XR-029 are all FOUND. Files: /home/user/gitTest/research/out/customer_side/parts/XR.csv, /home/user/gitTest/research/out/customer_side/parts/XR_notes.md."
+ },
+ {
+  "module": "SMP",
+  "applied": [
+   {
+    "id": "SMP-001",
+    "change": "Tag [F]->[C]. Claim now reads 'SK hynix says its AI-based virtual measurement (virtual metrology) system enables quality inspection of every wafer' ('fab-wide incl. HBM smart factory' removed). Quote unchanged. Note extended: untestable claim about a deployed system, scope not stated, listed 'In addition' to the HBM smart factory, and the 'plans to continue ... applying it to the company's manufacturing sites' wording."
+   },
+   {
+    "id": "SMP-002",
+    "change": "Tag [F]->[C]. Note now starts 'Company claim, untestable (self-reported result of an internal system; no data, baseline or method given).' and keeps the old note after it."
+   },
+   {
+    "id": "SMP-003",
+    "change": "period_calendar set to 'period not stated (Doh links the gains to 2024 HBM sales growth); stated May 2025'."
+   },
+   {
+    "id": "SMP-004",
+    "change": "Tag [F]->[C]. Claim: 'VP Doh says the AI-based defect image analysis system has drastically cut defect-analysis time'. The '(AI defect classification)' gloss is removed. Note replaced with the fix text. Quote unchanged."
+   },
+   {
+    "id": "SMP-005",
+    "change": "Claim narrowed to 'Panoptes VM identifies tool-to-tool differences that low sampling rates had made hard to analyze'. Note replaced with the fix text: Gauss Labs described as 'an industrial AI startup'; in-use since 2022 is a [C] claim, now in SMP-045. Split: new row SMP-045 [C], same source fields. Its quote 'has used Gauss Labs’ AI-based virtual metrology solution “Panoptes VM (Virtual Metrology)” in its production lines since 2022' (18 words) was checked word-for-word in the _text copy, line 107."
+   },
+   {
+    "id": "SMP-007",
+    "change": "Tag [F]->[C]. Claim: 'SK hynix states it has applied the GRACE overlay-VM explainability framework in its production environment since 2025 (company claim, not independently testable)'. Quote, value, confidence High and the old note kept. Appended: \"Production use is SK hynix's own statement ('currently in use' type), so [C].\""
+   },
+   {
+    "id": "SMP-009",
+    "change": "Value: 'new SiP/SLT test capability at memory maker (for advance compatibility checks and re-testing failed units; not stated as a per-unit production step)'. Unit 'test steps'->'qualitative'. Note replaced with the fix text. Claim, tag [S], quote, period and confidence unchanged."
+   },
+   {
+    "id": "SMP-014",
+    "change": "Value: '1 proposed monitoring/test item (adoption in production not stated)'. Optional claim tightening applied: 'as an essential quality monitoring item' -> 'which it says can be an essential quality monitoring item for buffer die'. Quote unchanged."
+   },
+   {
+    "id": "SMP-016",
+    "change": "Note replaced: 23 authors, 10 Samsung, 13 Nearfield (incl. first and last author). The counts were checked against the saved Crossref JSON (12 'Nearfield Instruments B.V.', 1 'Nearfield Instruments', 10 Samsung). The old note said '10 of 14'."
+   },
+   {
+    "id": "SMP-017",
+    "change": "Claim prefix 'Memory (Samsung):' -> 'Samsung (Semiconductor R&D Center; device type not stated):'. Rest of the row unchanged."
+   },
+   {
+    "id": "SMP-018",
+    "change": "Claim: \"Samsung (division not stated): M. Lee (SAMSUNG Electronics Co., Ltd.) co-edits, with D. Schmidt (IBM Research - Albany), a JMM special section titled 'High-Density Sampling and Massive Metrology'\". Tag, quote and the rest unchanged."
+   },
+   {
+    "id": "SMP-019",
+    "change": "Split. SMP-019 stays [F], and its claim is narrowed to the HBM4E process-variation statement. Quote, section and note unchanged. The two [C] parts became new rows SMP-046 (agentic AI: instant defect detection and corrective actions) and SMP-047 (Pyeongtaek fab Digital Twin). The fix named them SMP-019a/019b, but the module rule says to use the next unused ids. Both quotes were checked word-for-word in the _text copy (lines 447 and 449; 11 and 21 words). Confidence is Medium and the notes follow the fix."
+   },
+   {
+    "id": "SMP-021",
+    "change": "Note replaced. The Samsung affiliation now comes from the saved Crossref record 2025-09-21_crossref_cr-itc2025-00024-samsung-massive-test-dram.json; the file exists."
+   },
+   {
+    "id": "SMP-022",
+    "change": "Tag [F]->[C]. Claim: 'company says its AI automatic defect classification (AI-ADC) system means technicians and engineers no longer need to classify wafer defects manually'; 'fab-wide incl. assembly and test' removed. Value: 'manual wafer-defect classification no longer needed (company statement)'. Note replaced and points to TALK-039; that row exists and is the de Backer scope quote. Quote unchanged."
+   },
+   {
+    "id": "SMP-026",
+    "change": "Claim: '... offered as a practical alternative to backscatter-electron or destructive checks; metric linked to yield' (was 'replaces'). Note extended with the Micron affiliations from the Crossref record; the file exists. Optional document change also applied: '(Micron Dry Etch / Metrology Process Engineering)' -> '(Micron; affiliations per Crossref record)'."
+   },
+   {
+    "id": "SMP-027",
+    "change": "Note replaced. The Micron affiliations now come from the saved Crossref record 2025-05-05_crossref_cr-asmc2025-11010721-micron-cdsem-anomaly-ml.json (the file exists). The note also says the S2 record has names only."
+   },
+   {
+    "id": "SMP-029",
+    "change": "Claim changed to the fix text ('Context (SPIE Advanced Lithography 2026 paper on ML-based Computational Guided Inspection deployed on ASML's VCP; author affiliations not in saved record): ...'). period_calendar set to 'Apr 2026 (proceedings date 2026-04-08 in record)'. In the note, 'Vendor (ASML) paper;' was replaced as the fix says. One redundant clause was folded in, so the note now reads: \"Runs on ASML's VCP; author affiliations not in saved record (neither ASML nor Micron authorship shown): context only, not a Micron statement. Direction: ...\". Tag, value, date and quote unchanged."
+   },
+   {
+    "id": "SMP-033",
+    "change": "Claim changed to the fix text: Intel authors; traditional small-% sampling is the abstract's general description; the system is proposed. Note extended: the sampling statement is not stated as Intel practice, deployment in Intel HVM is not stated, and 'logic' is a researcher classification. Quote, tag and date unchanged."
+   },
+   {
+    "id": "SMP-035",
+    "change": "Claim changed to '... reported a 9-fold improvement in identifying outlier dies vs baseline (metric not defined in abstract); ...' (was '9x more outlier dies'). Quote unchanged."
+   },
+   {
+    "id": "SMP-038",
+    "change": "Tag [F]->[C]. Claim now names the 'Artificial Intelligence, Networking & Computing' test section, with HBM named only as market context. page_or_section updated to that section. Note extended (HBM only in the market-context paragraph; hybrid bonding only in a separate handler list). Optional URL change applied: https://amkor.com/test/ -> https://amkor.com/test-services/, which is the canonical link in the saved HTML. The change is recorded in the note."
+   },
+   {
+    "id": "SMP-041",
+    "change": "Claim and document changed to the fix text; the document now includes SMP-010. In the note, 'SMP-038 [F]' became 'SMP-038 [C]', and the text about unnamed sources, the KGSD wafer test being part of the existing flow, and the Amkor page dates was appended."
+   },
+   {
+    "id": "SMP-042",
+    "change": "Claim and note changed to the fix text. One minimal change was made to keep the row consistent with the corrected SMP-033: the fix's scope phrase 'Intel HVM fab, segment not stated' now reads 'Intel paper on HVM fabs, deployment and segment not stated', because SMP-033 now says the abstract does not state deployment in Intel HVM. Tag [I], value n/a and period kept."
+   },
+   {
+    "id": "SMP-043",
+    "change": "Claim and note changed to the fix text: the main statement is the Intel + EV Group ECTC 2026 abstract, which is development/roadmap; also TALK-022; access gaps per MAIN-006. TALK-022 and MAIN-006 exist and match. The document field was also updated to 'Synthesis of SMP-030, SMP-031, TALK-022 and gap list (MAIN-006)' so it matches the inputs. Tag [I] and confidence Low kept."
+   },
+   {
+    "id": "SMP-044",
+    "change": "Claim, document and note changed to the fix text. One minimal correction: SMP-004 is now [C], so the note reads 'SMP-004 (no number; [C])' instead of '[F]', and the claim marks it '[C] SK hynix defect-analysis time'. The confidence reason now reads 'the SK hynix statement and the Micron figure are company claims that cannot be tested'."
+   }
+  ],
+  "not_applied": [
+   {
+    "id": "SMP-019 (row ids)",
+    "reason": "The fix asks for new rows named SMP-019a and SMP-019b. The task's module rule says to use the next unused id, so they are SMP-046 and SMP-047. SMP-045 had already gone to the optional SMP-005 in-use row. The content is exactly as the fix specifies."
+   },
+   {
+    "id": "SMP-005 (optional row)",
+    "reason": "The fix makes the separate [C] in-use row optional. I added it as SMP-045 because the notes report the since-2022 production use. It is listed here only to show the choice."
+   },
+   {
+    "id": "SMP_table.csv",
+    "reason": "parts/SMP_table.csv does not exist, so there was no table to update. The direction table inside SMP_notes.md was updated instead."
+   }
+  ],
+  "new_rows": [
+   "SMP-045 [C] SK hynix says it has used Gauss Labs' Panoptes VM in its production lines since 2022 (split from SMP-005; source 2026-02-19 SK hynix newsroom; quote 18 words, FOUND)",
+   "SMP-046 [C] Samsung GTC 2026 talk: Agentic AI in process control enables instant defect detection and corrective actions (split from SMP-019; quote 11 words, FOUND)",
+   "SMP-047 [C] Samsung GTC 2026 talk: unveiled a Pyeongtaek fab Digital Twin on NVIDIA Omniverse, claimed as full-scale virtual manufacturing (split from SMP-019; quote 21 words, FOUND)"
+  ],
+  "table_or_notes_changes": [
+   "No SMP_table.csv exists. All changes below are in research/out/customer_side/parts/SMP_notes.md.",
+   "Header updated to SMP-001 to SMP-047; quote_check 43 FOUND, 4 [I] rows without quote.",
+   "Findings text: SMP-001/002 marked [C] with 'fab-wide' replaced by 'scope not stated'. Also: SMP-004, SMP-007, SMP-022 and SMP-038 marked [C]; SMP-045 cited for Panoptes in use since 2022; SMP-009 purpose (compatibility checks and failed-unit re-test, not a per-unit step); SMP-014 'would add' one item, adoption not stated; SMP-026 'offered as a practical alternative'; SMP-017 device type not stated; SMP-018 M. Lee (Samsung) with D. Schmidt (IBM); SMP-019 with SMP-046/047 [C]; SMP-029 affiliations not in record; SMP-033 proposed system, Intel HVM deployment not stated; SMP-035 metric not defined; Amkor hybrid bonding only in a separate handler list.",
+   "Inference sentences for SMP-041, SMP-042, SMP-043 and SMP-044 aligned with the rescoped [I] rows.",
+   "Direction table rows updated: SK hynix SiP (test capability, not a per-unit step), SMP-001/002 (scope not stated, [C]), SMP-005/006 (+[C] SMP-045), SMP-007 [C]/SMP-008 [F], SMP-004 [C], Samsung buffer die (+1 proposed item), Samsung SEM (device type not stated), SMP-019 (+[C] SMP-046, SMP-047), Micron AI-ADC (wafer-defect, [C]), Micron container slant, Intel VM (proposed), TSMC (9-fold, metric not defined), Amkor (HBM only as market context, [C] SMP-038).",
+   "Premise-problems line on SMP-001/002 changed from 'describe fab-wide VM' to 'do not state their scope'.",
+   "Added '## Corrections after verification (2026-11-21)' listing the retagged, split, corrected and rescoped ids."
+  ],
+  "quote_check_summary": "I ran python3 -I research/tools/quote_check.py research/out/customer_side/parts/SMP.csv after writing the file. The result was 'FOUND: 43, -: 4' (the 4 [I] synthesis rows have no quote). There were no NOT FOUND rows and no flags (no QUOTE>25W, BAD TAG, [F] WITHOUT LOCAL FILE or page mismatch). Before the changes the run gave 40 FOUND; the 3 new [C] rows account for the difference. The CSV was written with Python's csv module (UTF-8, original header and column order, CRLF as before): 47 rows. Files: /home/user/gitTest/research/out/customer_side/parts/SMP.csv and /home/user/gitTest/research/out/customer_side/parts/SMP_notes.md. Backups of the originals are in /tmp/claude-0/-home-user-gitTest/f760c656-7b51-5536-97d4-42052faf1ece/scratchpad/smp/. No other module files, evidence.csv, dossier.md or calc/ were touched, and nothing was committed."
+ },
+ {
+  "module": "AW",
+  "applied": [
+   {
+    "id": "AW-009",
+    "change": "Changed the tag from [F] to [C]. Replaced the note with the fix's wording: it is Onto's own paraphrase of TSMC's rationale, contains no TSMC wording, its only direct quote is from Onto's CEO, the subtitle frames the award differently (AI in process control), and the award itself on 25 Nov 2025 is the only checkable fact. Claim, quote, p.1, date and confidence (High) are unchanged."
+   },
+   {
+    "id": "AW-018",
+    "change": "Changed the claim to: 'Seven of the 15 Excellent Production Support winners in 2026 were not on the 2025 list (新面孔 as defined by the article), including Lasertec, Tokyo Electron and V5'. Added the optional note text giving the 新面孔 definition (「新面孔」指 2025 年未上榜的廠商) and noting that TEL was a frequent past awardee per DigiTimes (AW-010). The quote is unchanged and was checked at line 170. The value '7 new of 15' was left as is because the fix does not mention it and the claim now defines the term."
+   },
+   {
+    "id": "AW-033",
+    "change": "Split the row. AW-033 stays [F] with the claim 'ULVAC states it received SK hynix's Best Partner Award at the 2025 Partners Day (29 Sep 2025)'. The quote is unchanged and 'POR adoption claim moved to AW-059 [C].' was added to the note."
+   },
+   {
+    "id": "AW-059",
+    "change": "New [C] row split from AW-033. It uses the same document, date (2025-11-21), url and local_file, with period Sep 2025 and page_or_section 'release para 2'. Claim: 'ULVAC claims its ENTRON sputtering system was qualified as POR (officially qualified and adopted) within SK hynix's semiconductor manufacturing process'. Value 'ENTRON POR qualification', unit 'adoption claim', confidence Medium, note taken from the fix. Quote (15 words, found at line 261 of the ULVAC text copy): 'its ENTRON sputtering system, which was qualified as POR* within SK hynix's semiconductor manufacturing process.'"
+   },
+   {
+    "id": "AW-042",
+    "change": "Changed the claim (still [F]) to: '...Hanmi Semiconductor won Outstanding Performance in Assembly & Test Capital Equipment; no award category is named for inspection or metrology'. The note now holds the [I] vendor-classification inference with its inputs (the 14 winner names), Medium confidence and the reason, as the fix gives it. Quote unchanged. As the fix says, I did not use the first checker's 'no ... test category' wording."
+   },
+   {
+    "id": "AW-043",
+    "change": "Changed the claim (still [F]) to: '...Hanmi Semiconductor again won Outstanding Performance in Assembly & Test Capital Equipment; the 14 awards (13 companies) include no category named for inspection or metrology.' The note now holds the [I] Medium inference with the 13-company input list and its reason, plus the source for Oct 2026 (the blog in AW-044). Quote unchanged."
+   },
+   {
+    "id": "AW-049",
+    "change": "In the claim, replaced '(co-hosted with subsidiaries ASE, SPIL and USI)' with '(TechNews says subsidiaries ASE, SPIL and USI joined in; cnyes says ASE Technology Holding held it jointly with them)'. In the note, replaced 'SPIL took part as co-host (AW-055).' with the sourced TechNews (共襄盛舉) and cnyes (共同舉辦) wordings. Quote, value, date, tag [S] and confidence are unchanged."
+   },
+   {
+    "id": "AW-055",
+    "change": "Changed the claim to: 'ASE Technology Holding held its '2025 Best Supplier' ceremony on 24 Apr 2026, with subsidiaries ASE, SPIL and USI taking part (共襄盛舉)'. Changed the value from 'SPIL co-host' to 'SPIL participant'. Removed the '(no separate SPIL supplier award found)' parenthetical from the claim. The note now says the SPIL-only search result is the researcher's (NOT RETRIEVED) and cites cnyes' stronger 共同舉辦 wording. Tag [S] and the quote are unchanged."
+   },
+   {
+    "id": "AW-057",
+    "change": "Changed the claim to 'Senju states it received Amkor's Supplier Excellence Award 2025 on 9 Dec 2025' (still [F], quote unchanged). Replaced the note with the fix's wording (a Senju-only vendor release, not Amkor's own statement) and added 'Supplier-count claim moved to AW-060 [C].'"
+   },
+   {
+    "id": "AW-060",
+    "change": "New [C] row, added under the fix's optional split, so that the '3,000 suppliers' statement, which AW_notes.md repeats, keeps a correctly tagged source. It uses the same document, date, url, local_file, period (Dec 2025) and section ('release body') as AW-057. Claim: 'Senju states the award was selected from among more than 3,000 suppliers worldwide (vendor claim, not testable from saved sources)'. Value 'more than 3,000', unit suppliers, confidence Medium. Quote (17 words, line 163 of the Senju text copy): 'Selected from among more than 3,000 suppliers worldwide, this award recognizes outstanding performance and commitment to quality.'"
+   }
+  ],
+  "not_applied": [
+   {
+    "id": "AW-055 (alternative)",
+    "reason": "The fix also offered a second option: keep 'co-host' and re-point the row to cnyes. I applied the first option instead, which softens the claim and keeps the TechNews source, and made the matching change to AW-049 that the fix asked for."
+   },
+   {
+    "id": "AW_table.csv",
+    "reason": "No table row needed a change. No table rows cite AW-009, AW-018, AW-033, AW-055 or AW-057, and there is no SK hynix ULVAC row and no Amkor Senju row. The AW-042 and AW-043 rows are per-winner facts from Micron's own list and correctly stay [F]. Their vendor_class values are already described in the notes as the researcher's classification. The AW-049 rows are already [S] and say nothing about co-hosting. The table has no status_in_authors_words column."
+   }
+  ],
+  "new_rows": [
+   "AW-059",
+   "AW-060"
+  ],
+  "table_or_notes_changes": [
+   "AW_notes.md header: '58 evidence rows' changed to '60 evidence rows'.",
+   "AW_notes.md TSMC 2025: the rationale sentence for AW-007/AW-009 now says it is in the vendors' own words and that Onto's is its own paraphrase of TSMC, tagged [C].",
+   "AW_notes.md TSMC 2026: 'Lasertec, new' and 'V5 ..., new' changed to 'not on the 2025 list' to match the AW-018 rewording.",
+   "AW_notes.md SK hynix: added that ULVAC's ENTRON POR claim cannot be tested ([C], AW-059).",
+   "AW_notes.md Micron: 'Neither year has an inspection, metrology or test-equipment winner' changed to 'no category named for inspection or metrology', with the vendor classification marked [I], Medium.",
+   "AW_notes.md ASE section and premise 3: 'held jointly / runs jointly' and 'SPIL has no separate supplier award' changed to: TechNews says ASE, SPIL and USI took part; cnyes says ASEH held it jointly; no separate SPIL award was found (NOT RETRIEVED).",
+   "AW_notes.md Amkor: the sentence now says Senju states the award and date (vendor release, AW-057), and the 3,000-supplier figure is [C] (AW-060).",
+   "AW_notes.md premise 4: 'not to a tester or inspection vendor' marked as my classification, [I].",
+   "AW_notes.md: added '## Corrections after verification (2026-11-21)', listing AW-009, AW-018, AW-033 (split to AW-059), AW-042, AW-043, AW-049, AW-055 and AW-057 (split to AW-060).",
+   "AW_table.csv: no changes."
+  ],
+  "quote_check_summary": "Ran python3 -I research/tools/quote_check.py research/out/customer_side/parts/AW.csv. Result: FOUND 59, '-' 1. The '-' is AW-058, an existing [I] row with no quote or local file, unchanged. There are no NOT FOUND rows, no quotes over 25 words, no bad tags and no page mismatches. Both new rows (AW-059 and AW-060) are FOUND on page 1. The CSV was written with Python's csv module, keeping the same header, column order, UTF-8 and CRLF line endings. The diff touches only the 8 fixed rows plus the 2 appended rows. No other module files, evidence.csv, dossier.md or calc/ were touched, and nothing was committed. Files changed: /home/user/gitTest/research/out/customer_side/parts/AW.csv and /home/user/gitTest/research/out/customer_side/parts/AW_notes.md."
+ }
+]

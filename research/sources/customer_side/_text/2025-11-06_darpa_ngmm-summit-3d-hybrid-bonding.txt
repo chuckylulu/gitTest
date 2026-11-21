@@ -1,0 +1,407 @@
+ The Quest for 3D Hybrid
+Bonding: Challenges for the
+        Next Steps
+                                     E. Jan Vardaman, President and
+                                                            Founder
+
+
+
+
+         © 2025 TechSearch International, Inc.
+                                      Outline
+
+• Hybrid bonding in HVM for die-to-wafer (D2W) and wafer-to-wafer
+  (W2W) applications
+  – Image sensors
+  – HPC
+  – Photonics including co-packaged optics (CPO)
+• Challenges and areas for future focus
+• Global research activities
+• New equipment developments (important but not covered)
+
+
+
+
+                             © 2025 TechSearch International, Inc.
+                   IMEC’s 3D Interconnects Roadmap
+
+
+
+
+                                                                         Source: IMEC.
+
+
+• Interconnect pitch scaling provides higher interconnect density
+• D2W can scale from the current ∼10µm to 5µm to 2µm
+• W2W bonding provides the greatest interconnect density with scaling from 2µm to
+  1µm to 400nm pitch
+                                © 2025 TechSearch International, Inc.
+                      3D Hybrid Bonding Applications
+
+• W2W bonding applications
+   – CMOS image sensors from Sony, TSMC, and Samsung
+   – 3D NAND wafers
+   – 3D DRAM (Tezzaron now NHanced Semiconductors)
+• D2W applications include computing (desktop, gaming, server, AI)
+• Future application include HBM (maybe some W2W) and co-packaged
+  optics (CPO)
+
+
+
+
+                                    © 2025 TechSearch International, Inc.
+          NHanced Direct Bond Interconnect (DBI®) process
+
+
+
+
+                                                                            Scalable To < 1um Pitch
+• Cu/SnN DBI® and Cu/SiO DBI ® hybrid bonding
+• <± 1µm misalignment performance @3sigma
+• Production minimum pitch 2.44 µm
+• Best alignment achieved with face-to-face bonding
+
+                                                                            1.6 μm DBI® pitch, 300°C
+                                          Source: NHanced Semiconductors.
+
+
+                                 © 2025 TechSearch International, Inc.
+Image Sensors
+
+
+
+
+ © 2025 TechSearch International, Inc.
+            Sony CoW Development for CMOS Image Sensor
+• Sony projects that CIS will continue to evolve with 2 types of 3D stacking structures
+   – Homogeneous chip stacking
+   – Heterogeneous chip stacking
+• CoW bonding can decrease yield loss with the use of KGD
+• Sony has demonstrated 6µm pitch Cu-Cu connections using >400mm2 CoW bonding process
+• New wafer thinning process for finer pitch (1 µm) Cu-Cu hybrid bonding
+   – Improved Si thickness uniformity
+
+
+
+
+                                                                                 Source: Sony.
+
+
+                                         © 2025 TechSearch International, Inc.
+High-Performance Computing
+
+
+
+
+        © 2025 TechSearch International, Inc.
+                                         AMD 3D V-Cache
+• Original AMD’s V-Cache stacked SRAM on top
+  of CPU core die using TSMC’s SoIC -X with Cu-
+  to-Cu hybrid bonding
+• In production for desktop and server CPUs,
+  gaming
+   – ∼9µm pad pitch originally
+   – 3X interconnect energy efficiency (vs. µbump
+     3D)
+   – >15X interconnect density (vs. µbump 3D)                                                 Source: AMD.
+
+   – Better signal/power ratio due to lower TSV
+     capacitance and inductance than with
+     µbumps
+                                                                                    Image
+   – Containing overhead cost such as IO area,                                      Removed
+     more complexity in design, and testing
+     require multi-disciplinary design to achieve
+     configuration flexibility and yield benefits
+
+
+
+                                            © 2025 TechSearch International, Inc.
+               AMD MI300 and MI325 with Hybrid Bonding
+• MI300 and MI325 stack logic on logic using TSMC’s
+  SoIC -X technology
+  – One configuration incorporates 3 CPU chiplets (CCDs) and 6
+    accelerator chiplets (XCDs) on top of 4 IO dies mounted on a silicon
+    interposer
+• Thermal design placing logic die on top to allow
+  backside of silicon path to heat sink
+• Power delivery is critical, requiring special design
+  considerations
+
+
+
+
+                                                                                 Source: AMD.
+
+
+
+
+                                         © 2025 TechSearch International, Inc.
+Photonics including CPO
+
+
+
+
+      © 2025 TechSearch International, Inc.
+                       TSMC’s COUPE with Hybrid Bonding
+
+
+
+
+                                                                                           Source: TSMC.
+
+
+• TSMC has been developing its CPO since 2017
+   – TSMC developed Compact Universal Photonic Engine (COUPE) that uses 3D stacking (hybrid
+     bonding) of die with TSV in PIC
+   – Use of hybrid bonding eliminates parasitic of wire bond or µbump connections between EIC and
+     PIC
+   – Stacking without solder bumps provides opportunity for smaller pad pitch and therefore higher
+     density, lower parasitics, and a higher data rate
+   – 40% reduction in laser power consumption compared to µbump solution, 25% power delivery
+     bandwidth improvement
+                                       © 2025 TechSearch International, Inc.
+             3D Heterogeneous Integration with Intel’s C2W
+                           Hybrid Bonding
+
+
+
+
+                                                                                            Source: Intel.
+
+
+• Intel demonstrated chip-to-wafer (C2W) bonding for interconnect between EIC and
+  PIC interfaces in CPO
+  – Local embedded multi-die interconnect bridges (EMIB) can be used to connect stacked chiplet
+    to HBM and CPO on the substrate level
+  – With pitch scaling, bonding accuracy becomes one of the most important factors
+  – Warpage of the die due to the stress level of each metal stack may introduce inconsistent local
+    distortion at the bonding step
+  – Improvements in post bond accuracy measurement metrology are needed to more accurately
+    correct bonding offsets
+                                      © 2025 TechSearch International, Inc.
+         HBM
+
+
+
+
+© 2025 TechSearch International, Inc.
+                              HBM with D2W Hybrid Bonding
+• HBM drivers
+   – Pitch reduction need for higher bandwidth
+   – Need thinner chip for higher capacity stack (HBI can reduce
+     thickness by 10-15%) or can increase check thickness to allow for
+     more stable wafer level processing
+• Micron indicates D2W stacking for HBM vs. W2W because of
+  accumulative yield loss with W2W
+• SK hynix reports 8-high stack advantages with HBI vs. µbump
+   – Interconnect length reduced by >100µm vs. µbump in 8-high
+     structure
+   – Reduced parasitic interconnection by 19%, reduced inductance by
+     35%, reduced capacitance by 15%
+   – Reduced channel loss from LC/RC delay in the intermetallic
+   – Lower thermal resistance with same bump density, 22.8% lower
+     thermal resistance than HBM with µbumps and molded underfill
+
+
+                                                                                     Source: SK hynix.
+
+                                             © 2025 TechSearch International, Inc.
+      Samsung Demonstration of HBM with Hybrid Bonding
+• Samsung conducted extensive work on hybrid bonding for HBM and demonstrated a
+  16-high stack HBM with hybrid bonding
+• Addressed Cu dishing challenges by controlling CMP and measuring using AFM after
+  CMP, control and prevent degradation in bonding quality is key
+
+
+
+
+                                                  Source: Samsung.
+
+
+                                  © 2025 TechSearch International, Inc.
+Next Steps
+
+
+
+
+© 2025 TechSearch International, Inc.
+                                                 Focus Areas
+• Design and EDA tools
+• Thermal design and and tradeoffs
+• Manufacturing and process control
+   – Cu pad surface control (use of CMP)
+   – Thermal process sensitivity
+  – Special dicing techniques required to reduce chipping and defects on the edge of the die
+  – Cleanliness is required (particles cause voids) = use of plasma clean and cleanroom assembly (at least class
+    100 is required)
+  – Pad alignment accuracy required
+  – Flatness and tolerance to process temperatures (wafer warpage is a concern)
+• Overlay challenges, especially in multi-die stacks
+   – Impacted by interconnect pitch and pad design
+   – Need accurate post-bonding overlay corrections
+• Need 100% inspection in die overlay
+   – Die from different technologies are a challenge (EVG reports sampling is not accurate)
+   – Current methods too slow
+• Control of wafer shape and surface quality for successful alignment and bonding
+                                              © 2025 TechSearch International, Inc.
+                                            Metrology Needs
+• Metrology for hybrid bonding requires higher precision and
+                                                                         Requirement                  µBump           Hybrid
+  new features vs. µbump                                                                                              Bonding
+• Large amount of data needs to feed back into the system                Bonding Alignment Accuracy   ∼3-10µm         <0.3µm
+  and inspection gaps are challenging (Micron)                           Bonding Interface Defects    Microns         Sub-micron
+   – Front-end inspection techniques do not understand                   Surface Topography           µm              nm
+     singular die and film frame backend process                         Patterning Method            Aligner/I-Line 248nm
+                                                                                                                     Scanner
+• With multi-die stacking, some companies have reported                  Die Warpage                  ∼60-100µm       10-20µm
+  appearance of voids in bottom few die after stacking that
+                                                                                                       Source: KLA.
+  did not appear at the time of initial placement
+   – The more die in the stack, the greater the accumulated
+     warpage
+   – Issues with non-contact have also been reported after die
+     placement
+   – Accumulated warpage of individual stack may be the
+     cause and proper dielectric optimization is required to
+     minimize total warpage
+   – New metrology systems needed to detect issues with
+     multi-die stacking
+                                              © 2025 TechSearch International, Inc.
+Activities at Research Organizations
+
+
+
+
+            © 2025 TechSearch International, Inc.
+           CEA-LETI 3D-Stacking and Packaging Technologies
+
+
+
+
+Source: CEA-LETI.
+
+
+• Long history of hybrid bonding R&D with publications since 2008
+   – Work with ST on image sensors
+
+
+                                © 2025 TechSearch International, Inc.
+                           CEA Leti Photonics Research
+
+• Research on
+  heterogeneous
+  integration for
+  photonics
+  applications
+• Growth of III-V
+  wafers (2’’, 3’’, 4’’)
+• Processing of SOI
+  wafers (8” or 12)
+  – Modulators
+  – Detectors
+  – Passive devices
+
+
+                                 © 2025 TechSearch International, Inc.
+           Continuing Die-to-Wafer Hybrid Bonding
+
+
+
+
+ Source: IMEC.
+
+
+
+
+• IMEC’s R&D long history includes W2W and D2W
+  – 17 years of R&D
+
+                       © 2025 TechSearch International, Inc.
+   IMEC Cu/SiCN W2W Hybrid Bonding Challenges to 400nm Pitch
+
+
+
+
+Source: IMEC.
+
+• Cu pad recess control
+• Topography control at each layer in stack highly impacting voiding during bonding and bonding
+  overlay
+• Process requires careful tuning to reduce overlay (100nm for 400nm pitch)
+• Risk of connected PAD corrosion for smaller PAD CD (<250nm)
+   – Process developments required to avoid corrosion or should be circumvented in design
+• Connectivity is ensured by Cu bulge out, a Cu expansion based on surface diffusion
+                                      © 2025 TechSearch International, Inc.
+Alternatives
+
+
+
+
+© 2025 TechSearch International, Inc.
+          Alternatives to Cu-to-Cu Direct Bonding or HBI
+
+• HBI provides the shortest distance and
+  best performance, but challenges
+  remain
+• Alternatives include µbumps
+  – IMEC indicates that 25µm pitch is possible
+    today, and it may be possible to go to                                                  Source: ASE.
+    20µm or even 5µm
+  – ASE has proposed Cu-Cu with electroless
+    Nano-Ag bonding (30µm pitch)
+  – Intel introduced Foveros with µbumps for
+    processor (suggests going to 36µm pitch)
+  – Samsung’s X-Cube with 25µm bump pitch
+  – TSMC SoIC-P using µbump for <25µm pitch
+  – K&S Cu-to-Cu TCB demonstrated                                        Source: Samsung.
+
+
+
+                                 © 2025 TechSearch International, Inc.
+           Integrated Optical Phased Array (OPA) for LiDAR
+
+
+
+
+                                                                             Source: CEA-LETI.
+
+
+
+• LiDAR for autonomous driving requires high accuracy and wide angle at long distance
+  – Si-based technology introduced
+
+
+
+                                     © 2025 TechSearch International, Inc.
+              TSV-based Optical Phased Array
+
+
+
+
+                                                                 Source: CEA-LETI.
+
+
+• TSV-based optical phased array
+
+
+
+                         © 2025 TechSearch International, Inc.
+                                        Conclusions
+• W2W and D2W is in high-volume production
+  – W2W can achieve fine pad pitch, but D2W process better suited for some applications
+• Many challenges
+  – Design capabilities and availability of tools
+  – Test solutions to provide KGD
+  – Process control
+    • Reduction of particle generation and improved cleaning solutions
+  – Metrology and inspection
+• Many companies and organizations working to meet challenges of hybrid bonding
+• Not all applications appropriate for hybrid bonding
+  – Alternative 3D solutions, including µbump
+
+
+
+
+                                     © 2025 TechSearch International, Inc.
+

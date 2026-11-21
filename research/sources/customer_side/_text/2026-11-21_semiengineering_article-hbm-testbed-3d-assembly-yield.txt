@@ -1,0 +1,932 @@
+
+
+HBM Becomes Testbed For 3D Assembly Yield
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                HBM Becomes Testbed For 3D Assembly Yield                                                    
+
+Test, Measurement & Analytics
+
+HBM Becomes Testbed For 3D Assembly Yield
+
+High-bandwidth memory has become a proving ground for 3D stack testing, DFT, and reliability.
+
+								August 11th, 2026 - 
+
+								By: 
+Laura Peters
+
+Key Takeaways:
+
+DFT is increasingly critical for detecting defects in memory cells, TSVs, microbumps, and high-speed interfaces, while power integrity and thermal effects add further test challenges.
+
+Marginal or aging interconnects are caught by a combination of BiST, embedded monitors, boundary scan, at-speed testing, redundancy/repair, and in-system monitoring, a complex hierarchy of testing.
+
+HBM is a reliability bottleneck, requiring greater visibility into individual bonds and TSVs, and more sophisticated SI/PI and repair mechanisms for latent failures in complex 2.5D/3D AI systems.
+
+The high cost of field failures in data centers is driving big changes in design-for-test, enabling chipmakers to identify impending failures and root out interconnect and die-to-die weaknesses. This is especially important for high-bandwidth memory (HBM), which is acting as the frontier architecture for proving out 3D manufacturing and testing strategies.
+
+HBM is well known for the tremendous benefits it delivers to data-intensive tasks such as AI, high-resolution graphics processing, and other applications that need massive data processing and high-speed data transfer. Its tightly coupled, vertically stacked DRAM creates ultrawide communication channels (1024, 2048 bits) that outperform all other memory types. But testing HBM faces tremendous challenges because of its complex structure, which becomes even harder with each device generation.
+
+“Now we are preparing for HBM 5 technology, which will increase that stack height to 24, which means even more data going back and forth. A lot of ones and zeros in very close proximity with no growth in footprint/area,” said Faisal Goriawalla, director of product management at 
+Synopsys
+. “So as the pitch between these signals is squeezed, you have electrical interference challenges such as the victim aggressor situation, where one net toggling could cause the other nets in its vicinity to also flip, which was not intended to happen. These tight pitches make the DFT aspects of testing, such as diagnosis, much more complicated in multi-die technology.”
+
+This is especially evident with microbumps and bonded interconnects, which often cannot be accessed directly. “Due to these interconnects being enclosed within a multi-die package, external testing access is inherently limited,” said Noam Brousard, vice president of solutions engineering at 
+proteanTecs
+. “We address this by embedding on-chip agents at the SoC-HBM interface that measure each signal lane individually, capturing per-lane parametric measurements: eye width, eye height, jitter, and lane skew, to provide real-time, high-accuracy, margin-to-failure visibility on every individual lane.”
+
+Such preventive techniques are becoming increasingly attractive to data centers running large language models, where interruptions lead to significant losses.
+
+In HBM3, 12 or more DRAM chiplets stack atop a silicon interposer, connected by finely spaced through-silicon vias (TSVs) and microbumps. As much effort goes into testing the TSVs, microbumps, and die-to-die interfaces as into testing the memory cells themselves. For this reason, DFT architectures have become critical for HBM module manufacturers, including SK hynix, Samsung, and Micron.
+
+The magnitude of this challenge cannot be overstated. “HBM testing can be a major bottleneck due to the complexity of test program development,” said Quoc Phan, technology enablement manager of 3DIC DFT and yield at 
+Siemens EDA
+. “Creating the specialized fault models and test algorithms necessary for detecting defects in TSVs, microbumps, and inter-die interfaces is an intricate process requiring deep expertise. Integrating these advanced tests seamlessly with the host processor’s DFT architecture and ensuring reliable communication between them adds substantial layers of complexity to both test program development and the subsequent debugging phases.”
+
+With the upcoming transition to hybrid bonding for advanced HBM4 processes, much more of the focus will be on ensuring the quality of each interconnect bond. “As we’re stacking these devices, the coplanarity, the warpage, the bonding processes, and everything that we’re doing to make these individual bonds from a C4 bump to a copper- to-copper bump or a die-to-die connection — each one of these bonds is critical, said Jack Lewis, CTO of 
+Modus Test
+. “The amount of precise information we can get about these individual bonds and the performance of the bonding processes will help our customers ramp and hit yield entitlement quickly.”
+
+DFT’s mission is to enable a consistent way of testing chips post-manufacturing. But with an HBM stack, it also needs to detect defects in the memory cells and periphery, TSVs, microbumps, die-die interfaces, base-die circuitry, package-level interconnects, and high-speed I/O interfaces to the accelerator, such as UCI Express.
+
+Although each chipmaker’s strategy is proprietary, relationships among companies are shifting. “DFT is developed as proprietary IP by each device manufacturer, so it is difficult to comment on specific implementations,” said Jin Yokoyama, senior director of memory product marketing at 
+Advantest
+. “However, looking forward, the boundary of responsibilities between SoC end users and memory vendors may become increasingly blurred and complex, particularly with respect to how DFT is defined and partitioned.”
+
+Part of this shift is the adoption of custom HBM for specific applications.
+
+Reconfiguring for custom HBM
+
+The transition from HBM3 to HBM4 includes the option of a custom logic base die that replaces the DRAM-built controller die of previous generations. Custom HBM is attractive because it allows the AI accelerator or GPU designer to optimize the memory stack for its specific workload. This is particularly important for AI training and inference, where performance is more often bandwidth-limited rather than compute-limited. The downside is that the longer development and qualification cycle is likely to limit custom HBM to the highest-volume applications.
+
+Fig. 1: The HBM DRAM stack. Source: Synopsys
+
+Importantly, custom HBM’s modifications alter the testing landscape. “Custom HBM gives SOC designers tremendous flexibility to configure the logic base die the way they want,” said Goriawalla. So if you are in a data center AI training environment where latency and throughput are critical, you can configure your HBM controller for those goals. But if you are in an AI inference type of application, where area and power are bigger concerns, then you can configure the HBM controller and logic differently. So this means we have to be thoughtful about DFT based on the use case scenario.”
+
+The additional logic circuitry in custom HBM means there is more opportunity to use on-die monitors on the base die to help detect timing-margin problems. “We look at the SOC and HBMs as part of a system. By placing monitors in the base die interface, we can capture timing-margin degradation, voltage droop, signal-integrity shifts, and other dynamic interactions between the HBM stack and the SoC,” said proteanTecs’ Brousard. “This visibility is especially important because traffic bursts, power transients, and thermal or process variation can affect the HBM system in ways that are difficult to detect from external testing alone. The value comes from combining many monitors across the HBM base die to generate a rich dataset that not only identifies margin problems but also helps infer their root cause so they can be properly mitigated.”
+
+HBM faces limits of probeability
+
+Interconnect bump pitch between DRAMs in HBM is now so tight (<40µm, with 20 to 25µm microbumps), that it has become nearly impossible to probe the microbumps directly. Even if the bumps could be probed, the risk of damage is too high. So in many cases, larger sacrificial pads are used for probing, but in the long run it appears that engineers will be increasingly dependent on built-in self-test (BiST) options, embedded monitors and sensors, and redundancy and repair mechanisms to ensure higher interconnect yield in manufacturing and in field use.
+
+“Any signal integrity issues after assembly and multi-die packaging become more difficult to diagnose and debug since probing is not easy,” said Goriawalla. “In addition to the lane repair capabilities built into the HBM protocol itself, Synopsys offers SLM ext-RAM IP that provides built-in redundancy analysis and post-package repair to test the thousands upon thousands of interconnects in HBM. During any service downtime mode, the user can run JEDEC-recommended algorithms via SLM ext-RAM to perform diagnosis and repair. This also enables a proactive approach. For instance, you may realize that certain failures occur in the field due to phenomena like aging or marginality.You don’t want your LLM, which can take days or weeks to run, to fail because of this marginality. So you proactively swap out a marginal lane with a good lane, enabling that in-field, in-system.”
+
+In-system testing and in-field diagnosis are extremely attractive to hyperscalar customers that are constantly pushing their systems for the highest uptime possible. “During mission mode testing you are determining whether the IC is performing its function, as expected,” said Goriawalla. “As it does the inference or the training, you use a contactless embedded monitoring system to see among all these lanes in the for die-to-die interfaces, if, for example, certain marginalities are occurring, or is the eye of the PHY getting smaller? Maybe you have a ‘walking wounded’ interconnect, and instead of letting it go to failure, at the next scheduled downtime, you take that marginal lane offline and swap it for a good lane.”
+
+In-system tests use embedded deterministic test (EDT) patterns to enable targeted in-field testing to detect latent defects that may arise during any stage of the device lifecycle. During use, chip manufacturers increasingly need to account for thermal stress, workload-induced degradation, voltage fluctuations, and other causes of aging. For that reason, in-system test, once limited to automotive and mission-critical systems, has moved into data centers.
+
+Package-level interface reliability
+
+Verifying the connectivity and functionality of XPU-XPU and XPU-HBM interfaces depends on well-established boundary scan testing, memory BiST, and at-speed functional testing. “Boundary scan, particularly 1149.1 and 1149.6, serves as a workhorse for testing interconnects at both the board and package levels. Each chip, including the xPU and HBM, incorporates a boundary scan register around its I/O pins. This method is valuable for detecting opens, shorts, and stuck-at faults on the interconnects without needing to fully operate the core logic,” said Siemens EDA’s Phan. “For high-speed, differential AC-coupled interfaces, common in xPU-xPU links, the 1149.6 standard is specifically designed to test their integrity, including detecting shorts between differential pairs.
+
+Phan noted that for HBM, dedicated MBiST or custom MBiST can be implemented within the SoC die. This MBIST generates specific data patterns, drives them across the HBM interface, and then reads them back from the HBM dies, thereby verifying the entire data path, including interposer traces, microbumps, and HBM I/O logic. The HBM dies often feature a loopback test mode that users can use to build a BiST for die-to-die interconnect tests at speed. HBM also supports lane repair capability through the standard 1500 interfaces when a faulty lane is detected.
+
+“For high-speed serial links between xPUs (like PCIe, CXL, or proprietary interconnects), specialized SerDes (serializer/deserializer) BiST is common. This involves activating loopback test modes (either internally or externally via package/interposer traces), and pseudo-random binary sequence (PRBS) generation and checking,” said Phan.
+
+Functional at-speed tests are essential when verifying connectivity. “These tests involve initiating large data transfers between the xPUs and HBM, or between two xPUs, and meticulously verifying the integrity of the data,” Phan said. “This approach tests the entire communication stack, encompassing protocols and error correction mechanisms, ensuring that the interfaces perform as expected under real-world data loads.”
+
+At the same time, Phan emphasized the increasing importance of I/O or lane repair capabilities. “These features prevent the need to discard an entire chip or package due to localized defects,” he said. “This built-in redundancy is critical for maintaining signal integrity and reducing manufacturing waste in complex AI accelerator systems.”
+
+Long-term reliability and silicon lifecycle management are also important considerations in 2.5D/3D chiplet-based packages. “Aging and stress-induced degradation require closer coordination between hardware and system software, with continuous tracking of parameters such as delay shifts, process monitoring, temperature, frequency, and eye width to enable timely decisions throughout the chip’s lifecycle,” said Surbhi Bansal, engineering director of DFT at Cadence.
+
+“As a result, DFT is evolving beyond traditional structural test,” Bansal continued. “It now incorporates cross-die observability, such as in-situ eye-width measurement from the PHY during calibration and analog monitoring through ADC-based ATEST paths with digital readout, along with stress-aware test patterns. In addition, built-in redundancy and repair mechanisms across dies are part of the JEDEC spec and supported by our HBM PHY. Together, these capabilities enable more comprehensive visibility and resilience across the full lifecycle of the HBM stack.”
+
+Failures in 2.5D/3D architectures, TSV defectivity
+
+As HBM stacks grow from 8 chiplets to 12, 16, and beyond, problems that once were mere nuisances are becoming major challenges. The rigors of assembly lead to warpage issues, which can result in cracks or interconnect misalignment. “Issues such as cracks (including latent defects), thermal distribution, and hotspots have already proved important, and these effects may become even more pronounced with higher stack density,” said Advantest’s Yokoyama. In terms of DFT, “approaches such as programmable MBiST with more complex internal pattern execution may be considered to improve coverage.”
+
+A major source of defectivity is in the through-silicon vias (TSVs). With each new generation of HBM, TSVs become more closely spaced, introducing more potential for failure. TSVs are lined with a thin dielectric barrier before copper is deposited inside the vias, and any discontinuities in this layer can impact yield. As the TSV pitch shrinks, so does the pitch of the underlying microbumps that connect each DRAM to the DRAM below it in the stack.
+
+HBM manufacturers typically use the via middle integration flow for TSV formation, meaning the TSVs are formed after the front-end processes (transistors), but before back-end metallization. The advantage to this approach is that the TSV can be integrated before the wafer is thinned, while it is still thick and mechanically robust. Forming TSVs at this juncture also avoids exposing the finished BEOL stack to the aggressive via etch, high-temperature oxide line deposition, and copper annealing steps. TSVs inside HBM are generally 2 to 5 microns in diameter and 30 to 60 microns deep (i.e., the depth of the wafer).
+
+When larger TSVs are exposed at the wafer surface, a probe may contact them. However, given the tiny size of the TSV in HBM relative to probe needles (around 35µm), only TSV test structures can be contacted. Typically, hundreds or thousands of vias are connected in a daisy chain, particularly after backside wafer thinning and TSV reveal, where defects can be introduced. Any deviation from a normal in-series resistance can indicate potential defects such as opens, cracks, incomplete metal fill, misaligned contact, etc. But an outlier daisy-chain result alone will not indicate which TSV has failed.
+
+“With the traditional daisy chain, they chain many bonds together, so really you have a continuity check, a go/no go test. There is a loss of information about the individual bond because it’s drowned out in the noise of the entire chain,” said Modus Test’s Lewis. “What we need to do in the test vehicle design, instead of just chaining large chains, is make a Kelvin connection and get up around each one of these bonds and measure the bond — each individual bond with a Kelvin connection — very precisely into the micro-ohm range, by distributing [test structures] across each layer of the substrate, each die-to-die interconnect. It’s all about planning, test insertion of the circuit, and then making the measurements and getting sufficient data for it to be valuable. We need thousands of measurements per package to take that information and train the inspection models, as well.”
+
+Part of the change in TSV testing has to do with increasing signal integrity (SI) and power integrity (PI) issues as TSVs get closer together. “The industry’s shift in TSV testing is being driven by several factors,” said Cadence’s Bansal. “Higher speeds result in SI/PI dominating functionality. There’s also a need for at-speed, margin-aware validation, software methods to plot the eye, and system-level at-speed loopback tests.” She noted the need for more comprehensive LFSR polynomials to send more exhaustive seeds for testing SI/PI and other defects within and across lanes.
+
+When defects are found, HBM relies heavily on redundancy and repair to improve yield. Memory array testing typically identifies faulty rows or columns, identifies spare resources, and executes the repair program. “Memory repair is a built-in feature of the HBM die itself, because each die contains memory BiST engines specifically tailored to run sophisticated memory test algorithms to thoroughly test the memory cells,” said Phan. “Once a faulty memory location is identified (by the HBM’s BiST or the SoC’s MBiST), the user can program the failing addresses and channels into SOFT_REPAIR or HARD_REPAIR Write Data Registers (WDRs) via the IEEE-1500 interfaces. After programming, a memory repair operation can be initiated, allowing the HBM to reconfigure itself to bypass the faulty elements, improving yield and reliability.”
+
+There’s a growing need for power-aware simulation because so many high-speed channels operate simultaneously. “Power integrity is a growing challenge,” said Bansal. “The increasing number of high-speed channels introduces greater susceptibility to IR drop and simultaneous switching noise, driving the need for more robust design and power-aware simulation techniques, such as staggered activation to reduce initial inrush current.”
+
+Another technology that can help is power-aware automated test program generation. “Power-aware ATPG is often a necessity for AI applications due to their high-power demands,” said Siemens EDA’s Phan. “It can minimize power consumption during the critical scan shift and scan capture operations through a combination of hardware insertion and pattern generation techniques.” When combined with the Streaming Scan Network (SSN), power-aware ATPG can smooth the power profile through staggered shift clocks, significantly reducing test time and power usage.
+
+High temperature during testing also contributes to failures. “AI workloads utilize full HBM bandwidth on a continuous basis. Hence, heat generation is becoming increasingly common with HBM,” said Bansal. “For instance, high toggle rates cause localized heating, resulting in timing shifts, IR drop, and increased leakage. During test, heat generation is an issue at high ATPG toggle rates. However, this can also help screen the parts during test.”
+
+Together, these failure modes call for silicon lifecycle monitoring from manufacturing through the field to enable software repair whenever possible and hardware replacements only as needed. In general, there is a trend to use data center systems longer, which may only be possible when adequate in-field test and repair mechanisms are on board.
+
+Conclusion
+
+As HBMs grow in stack height and complexity, so does the testing approach and design-for-test strategy. The industry is rolling out HBM4 devices with stack heights of 16 DRAMs, some of which will have custom logic base dies to customize the configuration for specific workloads. DFT will also be customized to meet specialized needs and address the many failure modes of stacked dies, including TSV film discontinuities and unlanded contacts, thermally induced failures, timing shifts, SI/PI failures, die cracks, etc.
+
+DFT also verifies the connectivity and functionality of xPU-xPU and xPU-HBM interfaces using boundary scan testing, memory BiST, and at-speed functional testing. Embedded monitors zoom in on critical metrics like timing margin, temperature changes, and voltage droop, enabling big data analysis and potential tracing of failures to their root cause. Ultra-precise Kelvin measurements in appropriate test structures can help ensure the quality of individual bonds, whether they are hybrid-bonded chip-to-chip or thermocompression-bonded microbumps.
+
+Clearly, a wide range of tools and DFT techniques are needed to fully test advanced interconnects in stacked chips moving forward, and HBM is the proving ground for these methods.
+
+Related Articles
+
+Multi-Die Testing In The Field Must Build On Established Test Methodologies
+
+Having a device that works at time zero is no longer a guarantee of reliability over its lifetime.
+
+AI Accelerators Usher In New Era For IC Test
+
+The number and variety of test interfaces, coupled with increased packaging complexity, are adding a slew of new challenges.
+
+AI Accelerator Testing Depends On DFT Innovations
+
+Multi-die assemblies greatly increase the number of things that can go wrong, and the difficulty of finding them.
+
+HBM Shifts Testing Left To Preserve AI Chip Yield
+
+Testing sooner and more often can improve quality and reduce scrap, but it’s also more costly.
+
+ Tags:
+
+3D ICs
+
+Advantest
+
+Cadence
+
+design for test
+
+DFT
+
+DRAM
+
+HBM
+
+hybrid bonding
+
+Modus Test
+
+proteanTecs
+
+Siemens EDA
+
+Synopsys
+
+TSVs
+
+yield
+
+Laura Peters 
+
+(all posts)
+
+							Laura Peters is senior executive editor for manufacturing and test at Semiconductor Engineering.
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+

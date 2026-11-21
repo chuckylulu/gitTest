@@ -1,0 +1,822 @@
+                                                                                                                                                1
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+
+  Material Needs and Measurement Challenges for
+ Advanced Semiconductor Packaging: Understanding
+             the Soft Side of Science
+   Ran Tao, Member, IEEE, Polette Centellas, Stian Romberg, Anthony Kotula, Gale Holmes, Amanda Forster,
+ Christopher Soles, Robert Allen, Edvin Cetegen, William Chen, Life Fellow, IEEE, Jeffrey Gotro, Senior Member,
+                                  IEEE, and Mark Poliks, Senior Member, IEEE
+
+
+    Abstract—This Perspective builds upon insights from the                     reliability, open access, open data, polymeric materials, residual
+National Institute of Standards and Technology (NIST)-                          stress, research-grade test materials (RGTMs), standardization
+organized workshop, “Materials and Metrology Needs for                          and reproducibility, structure-property relationships, thermoset
+Advanced Semiconductor Packaging Strategies,” held at the 35th                  resins, underfill materials, viscoelastic modeling, warpage.
+annual Electronics Packaging Symposium in Binghamton, NY,
+on September 5, 2024. It outlines critical challenges and
+
+
+
+
+                                                                                P
+opportunities related to polymer-based “soft” materials in                                            I. INTRODUCTION
+advanced semiconductor packaging, with emphasis on polymer                              OLYMERIC materials—soft, versatile compounds
+science, measurement science (metrology), and the strategic
+                                                                                        composed of long, flexible, and repeating molecular
+development of Research-Grade Test Materials (RGTMs). These
+efforts, led by the NIST CHIPS team, aim to advance the                                 chains—have been used in semiconductor packaging
+fundamental understanding of structure–property–processing                      for decades. Since the early 1960s, polymeric packaging
+relationships, promote standardized guidelines and innovative                   materials have primarily served a straightforward function:
+methods for material characterization, and accelerate the                       mechanically encapsulating chips and securely attaching them
+development, qualification, and adoption of next-generation                     to circuit boards [1]. Historically, polymer-related challenges,
+packaging materials. The Perspective also distills key insights                 such as coefficient of thermal expansion (CTE) mismatch and
+from the panel discussion with industry experts, emphasizing the                moisture absorption (the so-called “popcorning” effect [2]),
+need for close collaboration among materials scientists, process                were primarily associated with mechanical reliability concerns
+engineers, and metrology experts to enable a holistic strategy,
+                                                                                rather than directly affecting device performance. Many of
+further highlighting the importance of cross-sector partnerships
+among industry, academia, and government to address pressing                    the polymeric materials introduced decades ago, including
+challenges in packaging materials and processes.                                epoxies, silicones, and polyimides, remain remarkably similar
+                                                                                to those still widely used today. They continue to fulfill
+Index Terms— Advanced semiconductor packaging, cure                             critical roles such as encapsulants, underfills, molding
+kinetics, heterogeneous integration (HI), metrology, moisture                   compounds, adhesives, thermal interface materials (TIMs),
+                                                                                and substrate dielectric layers (Fig. 1), providing essential
+   This work was supported in part by the National Institute of Standards and   electrical insulation, mechanical support, and environmental
+Technology,        U.S.   Department     of   Commerce,      under     Award    protection for advanced packages [3, 4].
+# 70NANB24H283. It was performed with funding from the CHIPS
+Metrology Program under Project 3.01, “Accurate Cure Kinetics, Stress,
+                                                                                    Today, the semiconductor industry is undergoing a
+Mechanical Properties, and Warpage Measurements for Next-Generation             transformative shift towards heterogeneous integration
+Microelectronics Packaging under Device-Relevant Conditions,” as part of        (HI) [5] to overcome the limitations of traditional transistor
+CHIPS for America, National Institute of Standards and Technology, U.S.
+Department of Commerce. (Corresponding author: Ran Tao).
+                                                                                scaling and achieve enhanced performance, miniaturization,
+   Official contribution of the National Institute of Standards and             and cost efficiency.       Over the next decade, emerging
+Technology; not subject to copyright in the United States.                      technologies—including 5G/6G wireless networks, artificial
+   Ran Tao, Polette Centellas, Stian Romberg, Anthony Kotula, Gale Holmes,      intelligence (AI), and high-performance computing (HPC),
+Amanda Forster, and Christopher Soles are with National Institute of
+Standards and Technology, Gaithersburg, MD 20899 USA (e-mail:                   will rely heavily on advanced packaging enabled by HI [6].
+ran.tao@nist.gov).                                                              As packaging architectures evolve into increasingly intricate
+   Ran Tao is also affiliated with North Carolina State University, Raleigh,    3D structures with finer feature sizes, smaller gap heights,
+NC 27695 USA.
+   Robert Allen is with National Renewable Energy Laboratory, Golden, CO        flexible chiplets, and diverse materials interfaces, the demands
+80401 USA.                                                                      on polymeric materials have become significantly more
+   Edvin Cetegen is with Intel Corporation, Chandler, AZ 85226 USA              stringent.    A broad spectrum of properties—including
+   William Chen is with Advanced Semiconductor Engineering, Inc.,
+Sunnyvale, CA 94085 USA                                                         mechanical, thermal, electrical, and chemical—must now be
+   Jeffrey Gotro is with Innocentrix, LLC, Rancho Santa Margarita, CA           simultaneously optimized. For instance, the transition from
+92688 USA                                                                       rigid chips to flexible electronic systems demands polymers
+   Mark Poliks is with Binghamton University, Binghamton, NY 13902 USA.
+   Color versions of one or more of the figures in this article are available
+                                                                                with enhanced flexibility, toughness, and long-term fatigue
+online at http://ieeexplore.ieee.org                                            resistance [7]. Likewise, 5G/6G applications require precise
+                                                                                                                                2
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+                                                                 These components are essential for deepening the fundamental
+                                                                 understanding of structure-property-processing relationships
+                                                                 in complex polymer formulations, promoting standardized
+                                                                 guidelines    and   innovative     methods    for    material
+                                                                 characterization, and accelerating the development,
+                                                                 qualification, and adoption of next-generation packaging
+                                                                 materials.
+
+                                                                  II. POLYMER-BASED MATERIALS IN ADVANCED PACKAGING
+                                                                    Given the diverse roles and growing functional demands of
+                                                                 polymer-based materials in advanced packaging applications,
+                                                                 careful optimization of their chemical composition,
+                                                                 mechanical properties, thermal stability, and dielectric
+                                                                 performance is essential. In this section, we briefly revisit key
+                                                                 principles in polymer science—spanning both polymer
+                                                                 physics and chemistry—that lay the groundwork for
+                                                                 understanding structure-property-processing relationships in
+                                                                 these materials.
+                                                                    The glass transition temperature (Tg) is often reported as a
+                                                                 single value in material datasheets—but the underlying
+                                                                 physics is far more complex and intriguing [14]. As Nobel
+                                                                 Laureate P. W. Anderson famously remarked, the glass
+                                                                 transition is “perhaps the deepest and most interesting
+Fig. 1. Polymer-based materials used in advanced packaging.      unsolved problem in solid-state physics [15].” Tg marks the
+(a) An overmolded flip chip package. (b) A lidded flip chip      temperature range over which a crosslinked polymer gradually
+package.                                                         transitions from a rigid, glassy state to a soft, rubbery state,
+                                                                 dictating the material’s physical and mechanical properties,
+control over dielectric properties to minimize transmission      processing conditions, and application temperature limits [16].
+loss and maintain signal integrity in high-frequency operating      However, the glass transition as measured in the laboratory
+environments [8, 9]. Furthermore, integrating a wide range of    is not a thermodynamically defined phase change; rather, it is
+materials into complex 3D multi-chip structures presents         a kinetic phenomenon that arises from the dramatic slowdown
+significant challenges in materials selection, process           of molecular motions as the material cools and falls out of
+optimization, and interconnect reliability [10].                 equilibrium [14, 16, 17]. As such, Tg depends on the intrinsic
+    These evolving requirements underscore the need to re-       polymer structure as well as external factors such as timescale
+examine legacy packaging resins and develop high-performance     (rate or frequency), thermal history (how the glass is formed),
+polymer-based materials tailored for next-generation             and measurement method (i.e., the property being probed).
+technologies [11]. Modern formulations often involve multiple    The value of Tg increases by approximately (3 to 5) °C for
+resins, multifunctional additives, and inorganic fillers,        every order-of-magnitude increase in cooling rate [17, 18].
+significantly increasing the complexity of material design and   Furthermore, Tg can shift under real-world operating
+manufacturing. This is further compounded by the industry’s      environments—through mechanisms such as physical
+heavy reliance on overseas material suppliers [12], limited      aging [19], stress relaxation, and moisture ingress, which alter
+transparency into material composition and performance data,     the polymer relaxation dynamics and effectively modify its
+and inadequate characterization standards and metrology          glass transition behavior.
+methods, all of which create additional hurdles in materials        The glass transition has many manifestations, including
+development and implementation.           At the same time,      changes in heat capacity, specific volume, modulus, viscosity,
+longstanding challenges—such as thermomechanical reliability     and dielectric constant. Each manifestation is measured by a
+concerns intrinsic to polymer behavior—persist and are further   different technique.       Thus, in practice, Tg can vary
+amplified in the context of HI.                                  significantly depending on how it is measured— differential
+   Addressing these multifaceted challenges requires a robust    scanning calorimetry (DSC), dynamic mechanical analysis
+and integrated materials science framework underpinned by        (DMA), rheometry, thermomechanical analysis (TMA),
+advanced and precise metrology techniques [13]. This             dilatometry, or dielectric analysis (DEA) each detect different
+Perspective explores key challenges and opportunities related    property changes [20]. For example, Tg values from DMA
+to polymer-based materials in advanced semiconductor             loss tangent peaks can be (15 to 20) °C higher than those
+packaging, with a focus on polymer science fundamentals,         measured by dilatometry on cooling at 1 °C/min—a
+measurement science (metrology), and the strategic               discrepancy that can lead to substantial error when predicting
+implementation of Research-Grade Test Materials (RGTMs).         rate-dependent processes [21]. Even within a single method
+                                                                                                                                 3
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+
+
+
+Fig. 2. (a) Typical composition of an epoxy-based underfill material shown as a pie chart; (b) Molecular-level schematic of the
+formulation highlighting the dispersion of functional additives and fillers within the epoxy matrix. Upon thermal curing, the
+epoxy resins undergo crosslinking reactions to form a three-dimensional polymer network.
+
+
+like DSC, Tg may be reported using different criteria for the     crosslink density, as shown in Fig. 2b.
+midpoint of the heat capacity step change, such as the               Fillers add yet another layer of complexity to the resin
+inflection point, half-height, or fictive temperature. This is    systems. Optimizing filler content, surface chemistry, and
+simply because the transition occurs over a temperature range     particle size and distribution is crucial to balance performance
+rather than as a sharp, single point. Therefore, reporting Tg     with manufacturability [24]. For example, in capillary
+without specifying the measurement technique and analysis         underfill formulations, low viscosity is required for efficient
+method is inadequate for meaningful interlaboratory               dispensing (Fig. 3a), while high filler loading is necessary to
+comparisons.                                                      reduce CTE. However, increasing filler content typically
+   Advanced formulations for polymer-based packaging              raises viscosity and complicates flow behavior [25],
+materials are highly complex, often incorporating significant     introducing effects such as thixotropy—a reversible, time-
+amounts of inorganic fillers along with a variety of additives    dependent decrease in viscosity under shear—and yield stress,
+to meet performance requirements (Fig. 2a). In thermoset          both of which can adversely impact processability [26, 27].
+polymers, which constitute the majority of polymer-based          This interplay between filler-resin interactions and the
+packaging materials, the curing process typically occurs          evolving polymer network during curing highlights the need
+through thermal crosslinking—a chemical reaction at elevated      for accurate chemoviscosity models, which describe how
+temperatures in which resin molecules polymerize into longer      viscosity changes with the degree of cure, time, and
+chains and eventually link together to form a rigid, three-       temperature [28].      In practice, underfills are frequently
+dimensional network (Fig. 2b). As curing progresses, Tg           dispensed at elevated temperatures to reduce viscosity,
+increases from the initial value of the uncured monomer           accelerate the process, and minimize the presence of voids in
+mixture (Tg0) to the fully cured value (Tg∞).                     the cured underfill.        Similarly, for advanced molding
+   The ability to control crosslink density and polymer           compounds used in compression molding of fan-out
+network structure through tailored polymer chemistry is           wafer/panel-level packaging (FO-WLP/FO-PLP), accurate
+central to designing base resins that define the basic physical   prediction     of     material     behavior      during    curing
+and mechanical properties of the material. In epoxy-based         (chemorheology) is essential for effective warpage
+formulations—a nearly century-old chemistry—the choice of         management [29, 30]. Process-induced warpage—arising
+monomers, curing agents, and catalysts, along with their          from CTE mismatch between different components, cure
+stoichiometry and reactivity, directly influences reaction        shrinkage, and hygrothermal stressors (Fig. 3b)—can lead to
+kinetics and the architecture of the resulting polymer            significant reliability risks, such as die shift, interconnect
+network [22]. Factors such as mono- vs. multi-functional          misalignment, and interfacial delamination [31].             The
+epoxides, aliphatic vs. aromatic curing agents, type of curing    mechanical behavior, adhesion, and stress-related performance
+agent (e.g. anhydride, amine, or Lewis acid), or the use of       of polymeric composites are critically important in this
+reactive diluents and modifiers can significantly impact the      context, as they directly affect warpage control, stress
+rate of polymerization (cure kinetics), gelation time, and the    reduction, and interfacial reliability in the final package.
+onset of vitrification, ultimately affecting storage life, the    Addressing these challenges requires an integrated approach
+processing window, and final material properties [23].            that combines advanced materials design, predictive modeling,
+Additionally, insufficient mixing of reactants prior to the gel   and process control [32, 33].
+point could result in network and morphological
+inhomogeneities [22], such as regions of low versus high
+                                                                                                                                      4
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+                                                                    B. Process Pathways Influence Residual Stress Development
+                                                                      Residual stress remains a longstanding challenge in composites
+                                                                    manufacturing. Effective process optimization requires careful
+                                                                    stress management throughout every stage of production. The
+                                                                    buildup of residual stress is highly dependent on the processing
+                                                                    pathway [44, 45], specifically, the temperature and time profile
+                                                                    the material experiences to reach its final degree of cure.
+                                                                    Therefore, optimizing cure schedules requires a deep
+                                                                    understanding of the material’s transformation behavior during
+                                                                    processing.
+                                                                      The Time-Temperature-Transformation (TTT) diagram
+                                                                    provides a conceptual framework for understanding the key
+                                                                    transitions during the isothermal curing of a thermoset [46, 47].
+                                                                    Fig. 4 highlights two key critical transitions that influence
+                                                                    manufacturability and residual stress development: gelation and
+                                                                    vitrification.
+                                                                      Gelation (red curve) marks the onset of a space-spanning,
+                                                                    infinite molecular network [48], characterized by an exponential
+Fig. 3. (a) Underfilling and molding steps used to encapsulate      increase in viscosity that theoretically diverges at the gel point
+and protect chips. (b) Schematic cross-sections depicting how       and coincides with the initial emergence of an equilibrium elastic
+processing conditions can induce warpage.                           modulus [49, 50]. Beyond this point, the material loses its
+                                                                    ability to flow, significantly impacting processability (e.g.,
+                                                                    dispensing and molding). Critically, after gelation, process-
+                                                                    induced stress begins to accumulate as the material transitions
+  III. INTRINSIC CHALLENGES BY POLYMERIC MATERIALS IN
+                                                                    from a viscous liquid to a gel-like, viscoelastic solid.
+                   ADVANCED PACKAGES
+                                                                    Vitrification (S-shaped blue curve) occurs when the Tg of the
+   Despite their versatility and cost efficiency, polymeric         material exceeds the cure temperature (Tc) [46]. As discussed
+materials inherently present challenges in semiconductor            earlier, Tg rises from the initial uncured Tg0 towards the ultimate
+packaging due to their cure-dependent, temperature-sensitive,       Tg∞ as crosslinking proceeds. Once vitrified, polymer chain
+hygroscopic, and viscoelastic (time-dependent) behaviors. In this   mobility becomes highly restricted, dramatically slowing the
+section, we highlight several important practices and insights      reaction rate and kinetically trapping the material in a “diffusion-
+from polymer research that help inform material processing          controlled” glassy state [51].            If vitrification occurs
+strategies.                                                         prematurely—before sufficient crosslinking—this can result in
+                                                                    high residual stress, poor adhesion, and long-term reliability
+                                                                    concerns. With a thorough understanding of the reaction kinetics
+A. Accurate Cure Kinetics for Advanced Resin Formulations           of a given material system, one can adjust the time and
+   Understanding cure kinetics and designing optimized curing       temperature of process steps to maintain the cure temperature
+schedules are essential for achieving desired material
+performance and improving manufacturing productivity.
+Advanced resin formulations with highly loaded fillers often
+exhibit complex, multi-step reactions that pose challenges for
+both measurement [34] and kinetics modeling [35-37]. Recent
+advances in kinetic analysis software have enabled the
+extraction of kinetic parameters from thermal analysis data
+that account for both chemical and diffusion-controlled
+kinetics [38].     Accurate cure kinetics models enable
+predictions and simulations under varying processing
+conditions (time and temperature), improve on-tool efficiency
+(e.g., post-mold cure design), and help reduce energy costs.
+These models are also foundational for enabling predictive
+modeling of process-dependent properties such as
+chemoviscosity and chemorheology [39, 40]. As noted earlier,
+Tg is a sensitive indicator of the degree of cure [41]—
+especially during the final stages where, for example, a 1%
+increase in conversion between 90 % and 100 % was observed
+to raise Tg by about 5 °C in an epoxy system [42, 43].              Fig. 4. Schematic of a typical Time-Temperature-
+Therefore, establishing the Tg vs. conversion relationship is       Transformation (TTT) diagram illustrating the key phase
+imperative when optimizing the cure profiles.                       transitions during thermoset curing.
+                                                                                                                                       5
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+above the Tg of the partially cured material to minimize those         infiltrates the package. This functional degradation remains a
+issues.                                                                significant concern due to constant fluctuations in moisture
+  Direct visualization of the TTT diagram offers valuable              levels over years of use.
+guidance for process design. At a selected isothermal Tc (green          Understanding the evolution of residual stress and functional
+line, Fig. 4), the material first undergoes gelation and then          material properties under relevant hygrothermal conditions is
+vitrification as curing progresses, ultimately forming a “gelled       important [55, 56]. Equally critical is evaluating how interfacial
+glass” state. To produce a partially cured, shape-retaining “B-        material properties change over time in response to these
+stage” material, a lower Tc should be chosen such that it              environmental stressors. Maintaining robust adhesion between
+intersects only the vitrification curve. In contrast, achieving full   polymers and adjacent materials—such as metals, oxides, or
+cure requires selecting a Tc above Tg∞ that avoids vitrification       other organic layers—remains a persistent challenge in advanced
+and intersects only the gelation curve—while remaining below           packaging [57, 58]. Overcoming these challenges will require
+the degradation threshold. In this case, the material undergoes        not only improved material formulations, but also advanced
+rapid gelation and proceeds into the “gelled rubber” region.           characterization techniques capable of assessing these behaviors
+  To illustrate the impact of cure pathways on residual stress         under application-relevant conditions.
+development, Fig. 4 compares two material states, A and B,
+following different cure conditions: profile A (tA, TA) and profile
+                                                                       D. Accurate Property Measurements and Modeling
+B (tB, TB). Although both paths reach the same degree of cure—
+falling along the same isoconversion contour in the TTT                  Accurate modeling of advanced packages depends on high-
+diagram—they result in different residual stresses. Profile A          quality, reliable material property data.          Polymers are
+achieves full cure through a shorter (tA < tB), higher-temperature     viscoelastic, exhibiting time-, frequency-, and temperature-
+(TA > TB) schedule that avoids vitrification (TA > Tg∞), resulting     dependent mechanical properties [59]. Among these, the
+in lower residual stress. In contrast, profile B follows a longer,     viscoelastic bulk modulus [60, 61] and Poisson’s ratio [62-64]
+lower-temperature cure TB < Tg∞, passing through vitrification         are important for predicting stress evolution [65]; however,
+and leading to greater stress accumulation. This comparison            their time and temperature dependencies are often overlooked.
+highlights the critical role of gelation and vitrification pathways    While simplified models that assume constant or purely elastic
+on stress development during thermoset curing. By leveraging           values may ease computation, they can lead to large
+TTT-informed chemorheological modeling, engineers can fine-            discrepancies between simulation and experimental results,
+tune processing conditions to minimize residual stress, maximize       especially in multi-layered structures with large CTE
+performance, and improve package reliability.                          mismatches. For example, incorporating a temperature-
+                                                                       dependent Poisson’s ratio into thermal warpage simulations
+                                                                       improved prediction accuracy by a factor of four compared to
+C. Hygrothermal Cycling During Operation                               constant-property models [66]. As packaging technologies
+  Residual stress contributes to reliability concerns in packages.     continue to scale toward thinner geometries and finer-pitch
+Environmental and operational stressors—such as temperature            interconnects, incorporating viscoelastic, time-dependent
+fluctuations and moisture ingress (hygroscopic swelling)—can           properties into simulations becomes not only beneficial but
+accelerate material degradation and exacerbate interface failures,     essential for reliable stress analysis and process design.
+ultimately reducing the device’s service life.
+  For example, underfill materials subjected to repeated thermal            “Modeling without metrology is imagination.”
+cycling are prone to developing microcracks and delaminating
+from multiple interfaces, potentially resulting in device
+                                                                             —William (Bill) Chen, Advanced Semiconductor
+failure [31, 52]. Those effects are most frequently due to
+                                                                            Engineering, Inc., at the 2024 Electronics Packaging
+mismatches in the CTE among the package, die, underfill, and
+                                                                                                 Symposium
+substrate. In such cases, thermal cycling can fatigue solder
+joints, leading to electrical failure. Accurate measurements of
+CTE, modulus, and Tg are essential for developing mechanical             Without rigorous metrology and standardized measurement
+models that predict the cycle life of an electronic assembly. In       methods to facilitate interlaboratory comparisons (e.g.,
+general, it is undesirable for a material’s Tg to fall within the      variations in Tg across different techniques as discussed
+operating temperature range of the hardware, due to the                earlier), predictive modeling remains limited. Accurate and
+significant change in CTE that occurs near the Tg. While the           reproducible data are critical for building reliable simulations
+decrease in modulus associated with the glass transition may           and enabling digital twins in thermoset manufacturing.
+partially mitigate the consequences of CTE mismatch [53, 54],          Robust metrology not only enhances modeling capabilities,
+comprehensive and accurate property data are essential for             but also enables fast materials screening and supports the
+predictive modeling and reliability assessment. In addition to         successful deployment of new materials from research to
+mechanical failures, moisture further complicates performance          production.
+by affecting functionality—through moisture diffusivity and
+solubility that degrade dielectric properties and compromise            IV. ADVANCING METROLOGIES TO ADDRESS MEASUREMENT
+signal integrity, particularly at the high switching speeds of 5G                          CHALLENGES
+and 6G technologies. I/O signals that are sharp and high-fidelity        Given the complex, multi-material, and multi-scale
+in a dry environment can become lossy or distorted as moisture         interactions that govern the performance of polymeric
+                                                                                                                                 6
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+                                                                   polymer network formation and phase evolution. SAXS
+                                                                   provides unique insights into chain rearrangement by
+                                                                   capturing heterogeneous crosslinking dynamics [76, 77]. It
+                                                                   can also characterize processing-induced anisotropy. Ultra-
+                                                                   small angle X-ray scattering (USAXS) can capture the size
+                                                                   and spatial distribution of filler particles [78]. These factors
+                                                                   are important in managing stress and interfacial adhesion.
+                                                                   Through cutting-edge measurement science and collaborative
+                                                                   research guided by the CHIPS Metrology Community [79],
+                                                                   the NIST project [67] aims to help the industry bridge existing
+                                                                   metrology gaps and build a robust foundation for the
+                                                                   development and adoption of next-generation packaging
+                                                                   materials.
+
+                                                                         V. OPPORTUNITIES IN MATERIALS AND PROCESSES
+                                                                     The rapid evolution of semiconductor packaging demands
+                                                                   innovative materials and processes to address challenges
+                                                                   related to warpage and stress, manufacturability, and next-
+                                                                   generation device architectures. Here, we highlight several
+                                                                   emerging trends discussed during the workshop.
+                                                                     UV-curable resins have emerged as a viable solution to
+Fig. 5. Advanced metrology techniques for polymer-based            mitigate thermally induced stress and warpage [80]. Their
+packaging material characterization in the NIST CHIPS              ability to enable localized, low-temperature curing enhances
+metrology project [67].                                            process control and lowers thermal budgets, though broader
+                                                                   adoption will require the development of compatible tooling
+packaging materials, advanced characterization techniques are      and processing methodologies.
+essential for gaining insights into structure–property–              Additively     manufactured     electronics    (AME)      are
+processing relationships and informing the development of          revolutionizing packaging schemes by enabling direct
+predictive models. At the same time, ensuring measurement          materials deposition with high precision and minimal waste.
+consistency and reproducibility across laboratories and tools is   AME facilitates the fabrication of complex interconnects and
+equally important. Such consistency is crucial for evaluating      custom device architectures but still faces challenges in
+material properties, optimizing processes, and improving           material compatibility, print resolution, and process
+reliability assessments.                                           standardization [81].
+  Fig. 5 presents a suite of advanced metrology techniques           The growing demand for flexible and stretchable electronics
+being developed and refined through our CHIPS Metrology            is driving the development of new polymeric materials with
+Project, Accurate Cure Kinetics, Stress, Mechanical                superior flexibility, low dielectric loss, and long-term
+Properties and Warpage Measurements for Next-Generation            mechanical stability.      These materials are essential for
+Microelectronics Packaging under Device Relevant                   wearable electronics, bio-integrated devices, and flexible
+Conditions [67]. These tools have been integral in developing      displays, requiring careful consideration of adhesion, fatigue
+accurate cure kinetics and chemorheological models by              resistance, and environmental durability [82, 83].
+implementing complementary approaches. These include                 Ultra-low Dk and Df dielectrics for 5G/6G applications are
+measuring the heat of reaction directly via DSC, capturing         emerging [84, 85]. In antenna-in-package (AiP) designs, low
+viscoelastic transitions during polymerization with                Dk enhances signal speed and antenna gain, while low Df
+simultaneous rheo-Raman spectroscopy [37], monitoring              reduces dielectric loss and improves radiation efficiency.
+chemical conversion by fast Fourier transform infrared             Achieving these properties requires precise molecular
+spectroscopy (FTIR) [68, 69], and assessing network                engineering, creating new opportunities to develop novel, low-
+formation through nuclear magnetic resonance (NMR).                loss dielectric polymers tailored for high-frequency
+Warpage and stress accumulation during cure are                    electronics.
+characterized using digital image correlation (DIC) [70, 71],
+                                                                     Dynamic thermosets, or vitrimers, are gaining attention for
+while stress bench setups enable evaluation of stress evolution
+                                                                   their unique ability to undergo network rearrangement without
+in processing and service-relevant environments [36]. Multi-
+                                                                   breaking down. These novel materials offer potential for
+mode Brillouin light scattering (BLS) and low-frequency
+                                                                   stress relaxation to mitigate warpage in high-density
+Raman (LFR) spectroscopy [72] further support local mapping
+                                                                   packaging and offer recyclability benefits for sustainable
+of modulus, viscoelasticity, and phonon interactions.
+                                                                   packaging [86, 87].
+  Ongoing collaborative efforts also explore additional in-situ
+                                                                     Lastly, next-generation TIMs for electric vehicles and
+techniques for tracking cure shrinkage and thermal expansion
+                                                                   autonomous systems are being developed to deliver high
+using DMA [73], TMA [74], and fiber Bragg grating (FBG)
+                                                                   thermal conductivity and long-term reliability under harsh
+sensors [75]. Time-resolved small-angle X-ray scattering
+                                                                   conditions [88]. Current research is increasingly focused on
+(SAXS) offers another powerful in-situ method for probing
+                                                                                                                              7
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+integrating nanostructures to meet stringent thermal                By utilizing simple, well-defined model systems, NIST’s
+management requirements of compact, high-power                    RGTM approach enables the systematic investigation of key
+electronics [89]. High-temperature aging or degradation of        variables—such as resin chemistry and filler content—
+encapsulation materials in electronic components used in          providing fundamental insights applicable across different
+automotive applications is another reliability concern during     material classes and packaging architectures. While the
+long-term use [90].                                               industry continues to evolve in complexity, the underlying
+                                                                  material science principles remain unchanged—only the scale
+     VI. RESEARCH-GRADE TEST MATERIALS (RGTMS)                    and integration challenges have changed from yesterday to
+  The path toward HI is not only diverse in the materials and     today.
+metrology being explored, but also in the tailored approaches       The benefits of RGTMs extend beyond metrology: they
+adopted across different sectors of the semiconductor             accelerate materials innovation, support technology
+ecosystem—each requiring unique solutions to address              qualification, and enhance industry collaboration. By enabling
+distinct challenges. A practice or solution that works well for   a data-driven approach to material characterization, RGTMs
+one company, one application, or one process may not be           promote open science and transparency. This, in turn, helps
+directly transferable to another. Moreover, knowledge gained      individual companies optimize their materials and processes
+from one material or process often lacks generalizability due     and also supports the broader semiconductor ecosystem by
+to the proprietary nature of commercial materials, which          aligning efforts between industry, academia, and government
+remain “black boxes” in terms of composition and additives.       research organizations.
+This makes quantitative comparisons between different
+systems difficult. In this dynamic, fast-paced landscape,                        VII. SUMMARY AND OUTLOOK
+RGTMs [91], a class of Reference Materials (RMs) [92], can          The landscape of polymeric materials for advanced
+serve as a powerful vehicle for next-generation packaging         semiconductor packaging faces a host of significant
+development.       These well-characterized, non-proprietary      challenges. First, the industry’s reliance on overseas polymer
+model materials serve as industry benchmarks, enabling            suppliers poses vulnerabilities in supply chain resilience and
+consistent measurements, supporting the development of            innovation security. Closely related to these concerns is the
+standardized methodologies, and advancing the scientific          rapidly changing regulatory climate that can cause
+understanding of structure–property relationships in packaging    manufacturers to modify material formulations or withdraw
+materials.                                                        products on short notice. Regulatory actions in one region can
+  NIST is leading efforts to develop RGTMs specifically           have global repercussions, affecting material availability
+tailored for semiconductor packaging applications, with initial   worldwide.      Second, limited information on material
+focus on advanced underfill materials and molding                 composition and performance data—due to proprietary
+compounds. Unlike commercial materials, RGTMs offer a             constraints—complicates material selection and qualification
+transparent and reproducible foundation for evaluating            processes. Furthermore, current characterization standards
+material properties and establishing consistent measurement       and     metrology      methods      lack    consistency    and
+protocols. These efforts aim to standardize metrologies,          comprehensiveness, often proving inadequate for evaluating
+improve interlaboratory reproducibility, and facilitate the       novel, complex material formulations.
+development of open-access materials databases for broader          To address these challenges, key takeaways from the panel
+industry adoption.                                                discussion point to several recommendations.               The
+  The development of RGTMs at NIST is tightly coupled with        semiconductor packaging community must come together to:
+the advancement of cutting-edge metrology techniques              (1) re-establish US-based supply chains for polymeric
+capable of probing structure-property relationships with          materials to reduce dependency on offshore suppliers; (2)
+spatial, temporal, and chemical resolution not previously         improve transparency in material data sheets and promote
+accessible in semiconductor research. This unique “one-two        standardized guidelines for material characterization; (3)
+punch”—combining metrology innovation with model                  develop advanced metrologies that meet stringent and
+material development—is a hallmark of NIST’s approach to          evolving performance requirements of next-generation
+advancing packaging science. This integrated strategy ensures     materials; and (4) foster robust, pre-competitive research
+that data generated from RGTMs is not only reproducible but       collaboration among academia, government laboratories, and
+also actionable, enabling the calibration and validation of       industry to accelerate materials development and adoption.
+predictive models for materials and process optimization.         With emerging materials requiring more than 10 years and up
+                                                                  to 25 years to reach volume production [93], sustained
+                                                                  collaborative efforts, such as those led by the CHIPS
+    “Fundamentals don’t change. Only difference is                Metrology Community [94], are essential for driving long-
+                      scale.”                                     term industry growth and competitiveness.
+                                                                    Addressing the intrinsic polymer challenges in
+   —Jeff Gotro, Innocentrix, LLC, at the 2024 Electronics         semiconductor packaging requires a deep, fundamental
+                  Packaging Symposium                             understanding of polymer science. Expertise in this field is
+                                                                  crucial for elucidating the complex relationships among
+                                                                  material constituents, bulk and interfacial properties,
+                                                                                                                                               8
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+processing conditions, and final material performance and          Drs. Sebastian Engmann, Andrew Gayle, Andrew Korovich,
+reliability. As the semiconductor industry continues to push       Alexander Landauer, Young Jong Lee, Chris Michaels, Ryan
+the boundaries of packaging technology, collaboration among        Nieuwendaal, Jianwei Tu, and Jan Obrzut (NIST) for their
+material scientists, process engineers, and metrology experts      helpful discussions. We appreciate Dr. Fan Zhang (NIST) and
+will be essential. Advancements in measurement science will        Dr. Jan Ilavsky (Argonne National Laboratory) for supporting
+be critical to unlocking and accelerating the next generation of   preliminary SAXS and USAXS measurements. The authors
+high-performance, reliable, and sustainable materials and          extend our gratitude to Dr. Bruce Prime (IBM, retired), Prof.
+processes.                                                         Greg McKenna (North Carolina State University), Prof.
+  Central to this effort is NIST’s unique “one-two punch”          Bongtae Han (University of Maryland), and Dr. Eric Schoch
+strategy: the integration of metrology development with the        (Northrop Grumman Corporation) for their careful reviews
+implementation of rigorously characterized model materials.        and valuable feedback on various versions of the manuscript.
+With its mission-driven mandate to pursue rigorous,
+foundational work, NIST is uniquely positioned to develop the
+                                                                                                  DISCLAIMER
+advanced metrology for tomorrow’s packaging materials [13].
+These efforts aim to establish measurement methods that are          These opinions, recommendations, findings, and
+both precise and practical. Ongoing work [36, 37, 72] is           conclusions do not necessarily reflect the views or policies of
+already yielding progress in characterizing the structure,         NIST or the United States Government.
+chemistry, and thermomechanical behavior in highly filled,
+heterogeneous polymer systems—enabling insights that would
+be difficult to obtain through industrial R&D alone.                                             REFERENCES
+  The strategic development and application of Research            [1] M. G. Pecht and L. T. Nguyen, "Plastic Packaging," in Microelectronics
+Grade Test Materials (RGTMs), are crucial for benchmarking,            Packaging Handbook: Semiconductor Packaging, R. R. Tummala, E. J.
+developing metrology methods, and elucidating fundamental              Rymaszewski, and A. G. Klopfenstein Eds. Boston, MA: Springer US,
+                                                                       1997, ch. 10, pp. 394-508.
+structure-property-processing relationships in highly-filled       [2] I. Fukuzawa, S. Ishiguro, and S. Nanbu, "Moisture Resistance
+polymeric materials. As the semiconductor industry continues           Degradation of Plastic LSIs by Reflow Soldering," in 23rd International
+to push the limits of 3D heterogeneous integration, the role of        Reliability Physics Symposium, 25-29 March 1985, pp. 192-197, doi:
+RGTMs will become even more critical. Ultimately, RGTMs                10.1109/IRPS.1985.362097.
+                                                                   [3] D. Lu and C. P. Wong, Materials for Advanced Packaging (Second
+help both individual companies and the broader semiconductor           Edition). Switzerland: Springer International Publishing, 2017.
+ecosystem by aligning measurement practices, simulation            [4] W. D. Weber, "Electronic Packaging," in Encyclopedia of Polymer
+inputs, materials development strategies and qualification             Science and Technology, 2001.
+processes—paving the way for a more resilient, efficient, and      [5] "Heterogeneous        Integration    Roadmap."       [Online].  Available:
+                                                                       http://eps.ieee.org/hir
+collaborative framework for semiconductor innovation.              [6] F. Sheikh, R. Nagisetty, T. Karnik, and D. Kehlet, "2.5D and 3D
+  Standardizing material property reporting and enhancing              Heterogeneous Integration: Emerging applications," IEEE Solid-State
+data transparency, including recommendations for datasheets            Circuits Magazine, vol. 13, no. 4, pp. 77-87, 2021, doi:
+and measurement protocols, are critical for improving material         10.1109/MSSC.2021.3111386.
+                                                                   [7] J. A. Rogers, T. Someya, and Y. Huang, "Materials and Mechanics for
+selection and reliability prediction.        Future metrology          Stretchable Electronics," Science, vol. 327, no. 5973, pp. 1603-1607,
+strategies must integrate multimodal measurement approaches            2010, doi: 10.1126/science.1182383.
+and support open-access databases [95] to facilitate broad         [8] Y. Zhou, "Material Foundation for Future 5G Technology," Acc. Mater.
+industry participation.      Establishing a material property          Res., vol. 2, no. 5, pp. 306-310, 2021, doi: 10.1021/accountsmr.0c00087.
+                                                                   [9] C. Tong, "5G Technology Components and Material Solutions for
+database that adheres to Findable, Accessible, Interoperable,          Hardware System Integration," in Advanced Materials and Components
+Reusable (FAIR) principles, and includes Machine Learning              for 5G and Beyond, C. Tong Ed.: Springer Nature Switzerland, 2022, pp.
+(ML)-ready datasets, along with standardized test methods,             1-32.
+will enable accurate modeling and simulation in                    [10]H. Kim, J. Y. Hwang, S. E. Kim, Y. C. Joo, and H. Jang,
+                                                                       "Thermomechanical Challenges of 2.5-D Packaging: A Review of
+semiconductor packaging technologies.                                  Warpage and Interconnect Reliability," IEEE Trans. Compon., Packag.,
+  By unifying these strategies through coordinated                     Manuf. Technol., vol. 13, no. 10, pp. 1624-1641, 2023, doi:
+collaboration among academia, government, and industry—                10.1109/TCPMT.2023.3317383.
+                                                                   [11]Y.-J. Wan, G. Li, Y.-M. Yao, X.-L. Zeng, P.-L. Zhu, and R. Sun, "Recent
+and aligning with initiatives such as the Heterogeneous                advances in polymer-based electronic packaging materials," Compos.
+Integration Roadmap (HIR) [5] and the Microelectronics and             Commun., vol. 19, pp. 154-167, 2020, doi: 10.1016/j.coco.2020.03.011.
+Advanced Packaging Technologies (MAPT) Roadmap [96]—               [12]R. Noor et al., "US Microelectronics Packaging Ecosystem: Challenges
+will help position the U.S. to maintain its technological              and Opportunities," arXiv:2310.11651 [eess.SY], 2023. [Online].
+                                                                       Available: https://arxiv.org/abs/2310.11651.
+leadership and build a more robust and resilient semiconductor     [13]"Strategic Opportunities for U.S. Semiconductor Manufacturing:
+ecosystem.                                                             Facilitating U.S. Leadership and Competitiveness through Advancements
+                                                                       in      Measurements        and     Standards."     [Online].   Available:
+                     ACKNOWLEDGMENT                                    https://nvlpubs.nist.gov/nistpubs/CHIPS/NIST.CHIPS.1000.pdf
+                                                                   [14]G. B. McKenna and S. L. Simon, "Chapter 2 - The glass transition: its
+   The authors sincerely thank Benson Chan and Prof. S.B.              measurement and underlying physics," in Handbook of Thermal Analysis
+Park (Binghamton University) for the opportunity to organize           and Calorimetry, vol. 3, S. Z. D. Cheng Ed.: Elsevier Science B.V., 2002,
+                                                                       pp. 49-109.
+the workshop at the 2024 Electronics Packaging Symposium           [15]P. W. Anderson, "Through the Glass Lightly," Science, vol. 267, no.
+in Binghamton, NY. We also thank project team members                  5204, pp. 1615-1616, 1995, doi: 10.1126/science.267.5204.1615.f.
+                                                                                                                                                                   9
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+[16]G. B. McKenna and S. L. Simon, "50th Anniversary Perspective:                       IEEE 75th Electronic Components and Technology Conference (ECTC),
+    Challenges in the Dynamics and Kinetics of Glass-Forming Polymers,"                 Dallas,       TX,      USA,         2025,     pp.      1784-1790,        doi:
+    Macromolecules, vol. 50, no. 17, pp. 6333-6361, 2017, doi:                          10.1109/ECTC51687.2025.00303.
+    10.1021/acs.macromol.7b01014.                                                   [38]C. Strasser, E. Moukhina, and J. Hartmann, "Time–Temperature-
+[17]G. B. McKenna, "10 - Glass Formation and Glassy Behavior," in                       Transformation (TTT) Cure Diagram of an Epoxy–Amine System,"
+    Comprehensive Polymer Science and Supplements, vol. 2, G. Allen and J.              Macromol. Theory Simul., vol. 33, no. 6, p. 2400039, 2024, doi:
+    C. Bevington Eds. Amsterdam: Pergamon, 1989, pp. 311-362.                           10.1002/mats.202400039.
+[18]J. D. Ferry, Viscoelastic Properties of Polymers, 3rd Edition. John Wiley       [39]P. J. Halley and M. E. Mackay, "Chemorheology of thermosets—an
+    & Sons, 1980.                                                                       overview," Polym. Eng. Sci., vol. 36, no. 5, pp. 593-609, 1996, doi:
+[19]J. M. Hutchinson, "Physical aging of polymers," Prog. Polym. Sci., vol.             10.1002/pen.10447.
+    20, no. 4, pp. 703-760, 1995, doi: 10.1016/0079-6700(94)00001-I.                [40]P. J. Halley, "A new chemorheological analysis of highly filled
+[20]R. Seyler, Assignment of the Glass Transition. ASTM International, 1994.            thermosets used in integrated circuit packaging," J. Appl. Polym. Sci., vol.
+[21]D. J. Plazek and K. L. Ngai, "The Glass Temperature," in Physical                   64, no. 1, pp. 95-106, 1997, doi: 10.1002/(SICI)1097-
+    Properties of Polymers Handbook, J. E. Mark Ed. New York, NY:                       4628(19970404)64:1<95::AID-APP8>3.0.CO;2-M.
+    Springer New York, 2007, pp. 187-215.                                           [41]G. Wisanrakkit and J. K. Gillham, "The glass transition temperature (Tg)
+[22]H. Q. Pham and M. J. Marks, "Epoxy Resins," in Encyclopedia of                      as an index of chemical conversion for a high-Tg amine/epoxy system:
+    Polymer Science and Technology, 2004.                                               Chemical and diffusion-controlled reaction kinetics," J. Appl. Polym. Sci.,
+[23]T. Vidil, F. Tournilhac, S. Musso, A. Robisson, and L. Leibler, "Control            vol.     41,      no.     11-12,      pp.    2885-2929,      1990,       doi:
+    of reactions and network structures of epoxy thermosets," Prog. Polym.              10.1002/app.1990.070411129.
+    Sci.,       vol.      62,       pp.        126-179,         2016,       doi:    [42]G. Wisanrakkit and J. K. Gillham, "Continuous heating transformation
+    10.1016/j.progpolymsci.2016.06.003.                                                 (CHT) cure diagram of an aromatic amine/epoxy system at constant
+[24]Z. Zhang, P. Zhu, and C. P. Wong, "Flip-Chip Underfill: Materials,                  heating rates," J. Appl. Polym. Sci., vol. 42, no. 9, pp. 2453-2463, 1991,
+    Process, and Reliability," in Materials for Advanced Packaging, D. Lu               doi: 10.1002/app.1991.070420911.
+    and C. P. Wong Eds. Cham: Springer International Publishing, 2017, pp.          [43]R. B. Prime, "Thermosets," in Thermal Characterization of Polymeric
+    331-371.                                                                            Materials (Second Edition), vol. 2, E. A. Turi Ed. San Diego, California:
+[25]J. Mewis and N. J. Wagner, "Hydrodynamic effects: Non-colloidal                     Academic Press, 1997, ch. 6, pp. 1379-1776.
+    particles," in Colloidal Suspension Rheology, (Cambridge Series in              [44]J. D. Russell, M. S. Madhukar, M. S. Genidy, and A. Y. Lee, "A New
+    Chemical Engineering. Cambridge: Cambridge University Press, 2011,                  Method to Reduce Cure-Induced Stresses in Thermoset Polymer
+    pp. 36-79.                                                                          Composites, Part III: Correlating Stress History to Viscosity, Degree of
+[26]"Thixotropy," in Colloidal Suspension Rheology, J. Mewis and N. J.                  Cure, and Cure Shrinkage," J. Compos. Mater., vol. 34, no. 22, pp. 1926-
+    Wagner Eds., (Cambridge Series in Chemical Engineering. Cambridge:                  1947, 2000, doi: 10.1106/uy9u-f2qw-2fkk-91kg.
+    Cambridge University Press, 2011, pp. 228-251.                                  [45]P. Prasatya, G. B. McKenna, and S. L. Simon, "A Viscoelastic Model for
+[27]P. C. F. Møller, J. Mewis, and D. Bonn, "Yield stress and thixotropy: on            Predicting Isotropic Residual Stresses in Thermosetting Materials: Effects
+    the difficulty of measuring yield stresses in practice," Soft Matter, vol. 2,       of Processing Parameters," J. Compos. Mater., vol. 35, no. 10, pp. 826-
+    no. 4, pp. 274-283, 2006, doi: 10.1039/B517840A.                                    848, 2001, doi: 10.1177/a037322.
+[28]P. I. Karkanas and I. K. Partridge, "Cure modeling and monitoring of            [46]J. B. Enns and J. K. Gillham, "Time–temperature–transformation (TTT)
+    epoxy/amine resin systems. II. Network formation and chemoviscosity                 cure diagram: Modeling the cure behavior of thermosets," J. Appl. Polym.
+    modeling," J. Appl. Polym. Sci., vol. 77, no. 10, pp. 2178-2188, 2000, doi:         Sci.,    vol.     28,    no.     8,    pp.    2567-2591,      1983,      doi:
+    10.1002/1097-4628(20000906)77:10<2178::AID-APP11>3.0.CO;2-0.                        10.1002/app.1983.070280810.
+[29]T. Braun et al., "How to Manipulate Warpage in Fan-out Wafer and Panel          [47]S. L. Simon and J. K. Gillham, "Thermosetting cure diagrams:
+    Level Packaging," in 2024 IEEE 74th Electronic Components and                       Calculation and application," J. Appl. Polym. Sci., vol. 53, no. 6, pp. 709-
+    Technology Conference (ECTC), Denver, CO, USA, 2024, pp. 1-6, doi:                  727, 1994, doi: 10.1002/app.1994.070530601.
+    10.1109/ECTC51529.2024.00008.                                                   [48]P. J. Flory, Principles of Polymer Chemistry. Ithaca, NY: Cornell
+[30]P. Praful and C. Bailey, "Warpage in wafer-level packaging: a review of             University Press, 1953.
+    causes, modelling, and mitigation strategies," Front. Electron., vol. 5,        [49]H. H. Winter and F. Chambon, "Analysis of Linear Viscoelasticity of a
+    2025, doi: 10.3389/felec.2024.1515860.                                              Crosslinking Polymer at the Gel Point," J. Rheol., vol. 30, no. 2, pp. 367-
+[31]R. Dias and D. Goyal, "Methodology and Challenges in Characterization               382, 1986, doi: 10.1122/1.549853.
+    of 3D Package Interconnection Materials and Processes," in Metrology            [50]H. H. Winter, "Gel Point," in Encyclopedia of Polymer Science and
+    and Diagnostic Techniques for Nanoelectronics (1st ed.), Z. Ma and D. G.            Technology, 2016, pp. 1-15.
+    Seiler Eds.: Jenny Stanford Publishing, New York, 2017.                         [51]S. L. Simon and J. K. Gillham, "Reaction kinetics and TTT cure diagrams
+[32]F. Hou et al., "Experimental Verification and Optimization Analysis of              for off-stoichiometric ratios of a high-Tg epoxy/amine system," J. Appl.
+    Warpage for Panel-Level Fan-Out Package," IEEE Trans. Compon.,                      Polym. Sci., vol. 46, no. 7, pp. 1245-1270, 1992, doi:
+    Packag., Manuf. Technol., vol. 7, no. 10, pp. 1721-1728, 2017, doi:                 10.1002/app.1992.070460714.
+    10.1109/TCPMT.2017.2726084.                                                     [52]W.-S. Lei and A. Kumar, "Delamination and Reliability Issues in
+[33]J. Lau and X. Fan, "Warpage Management in Semiconductor Packaging,"                 Packaged Devices," in Adhesion in Microelectronics, K. L. Mittal and T.
+    in Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and                     Ahsan Eds.: Scrivener Publishing, 2014, pp. 267-312.
+    Thermal Management for Chiplets and Heterogeneous Integration, J. Lau           [53]R. Tao and S. L. Simon, "Pressure-volume-temperature and glass
+    and X. Fan Eds.: Springer Nature, Singapore, 2025, pp. 261-321.                     transition behavior of silica/polystyrene nanocomposite," J. Polym. Sci. B
+[34]R. Tao, S. P. Phansalkar, A. M. Forster and B. Han, "Investigation of               Polym. Phys., vol. 53, no. 16, pp. 1131-1138, 2015, doi:
+    Cure Kinetics of Advanced Epoxy Molding Compound Using Dynamic                      10.1002/polb.23749.
+    Heating Scan: An Overlooked Second Reaction," in 2023 IEEE 73rd                 [54]Q. Li, S. A. Hutcheson, G. B. McKenna, and S. L. Simon, "Viscoelastic
+    Electronic Components and Technology Conference (ECTC), Orlando,                    properties and residual stresses in polyhedral oligomeric silsesquioxane-
+    FL, USA, 2023, pp. 1319-1326, doi: 10.1109/ECTC51909.2023.00225.                    reinforced epoxy matrices," J. Polym. Sci. B Polym. Phys., vol. 46, no. 24,
+[35]S. P. Phansalkar, Y. Jang, B. Han, R. Tao, and A. M. Forster, "Novel                pp. 2719-2732, 2008, doi: 10.1002/polb.21609.
+    method to determine autocatalytic cure kinetics model constants of dual-        [55]E. H. Wong, R. Rajoo , S. W. Koh , and T. B. Lim, "The Mechanics and
+    reaction thermosets," Mater. Sci. Eng. B, vol. 311, p. 117829, 2025, doi:           Impact of Hygroscopic Swelling of Polymeric Materials in Electronic
+    10.1016/j.mseb.2024.117829.                                                         Packaging," J. Electron. Packag., vol. 124, no. 2, pp. 122-126, 2002, doi:
+[36]P. Centellas et al., "Advanced Metrology Suite for Linking Residual                 10.1115/1.1461367.
+    Stress to Fundamental Properties of Thermoset Packaging Materials,"             [56]H. Ardebili, W. Ee Hua, and M. Pecht, "Hygroscopic swelling and
+    in 2025 IEEE 75th Electronic Components and Technology Conference                   sorption characteristics of epoxy molding compounds used in electronic
+    (ECTC),       Dallas,   TX,     USA,      2025,     pp.    432-439,     doi:        packaging," IEEE Transactions on Components and Packaging
+    10.1109/ECTC51687.2025.00078.                                                       Technologies, vol. 26, no. 1, pp. 206-214, 2003, doi:
+[37]A. P. Kotula, R. Tao, J. Tu, Y. J. Lee and G. A. Holmes, "Advanced                  10.1109/TCAPT.2002.806172.
+    Characterization of the Cure Kinetics of a Liquid Encapsulant," in 2025
+                                                                                                                                                              10
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+[57]V. K. Khanna, "Adhesion–delamination phenomena at the surfaces and            [76]M. Aoki, A. Shundo, R. Kuwahara, S. Yamamoto, and K. Tanaka,
+    interfaces in microelectronics and MEMS structures and packaged                   "Mesoscopic Heterogeneity in the Curing Process of an Epoxy–Amine
+    devices," J. Phys. D: Appl. Phys., vol. 44, no. 3, p. 034004, 2011, doi:          System," Macromolecules, vol. 52, no. 5, pp. 2075-2082, 2019, doi:
+    10.1088/0022-3727/44/3/034004.                                                    10.1021/acs.macromol.8b02416.
+[58]P. Viswanadham, "Role of Adhesion Phenomenon in the Reliability of            [77]T. Hoshino, Y. Okamoto, A. Yamamoto, and H. Masunaga,
+    Electronic Packaging," in Adhesion in Microelectronics, K. L. Mittal and          "Heterogeneous dynamics in the curing process of epoxy resins," Sci.
+    T. Ahsan Eds.: Scrivener Publishing, 2014, pp. 211-265.                           Rep., vol. 11, no. 1, p. 9767, 2021, doi: 10.1038/s41598-021-89155-x.
+[59]S. L. Simon, G. B. Mckenna, and O. Sindt, "Modeling the evolution of the      [78]F. Zhang and J. Ilavsky, "Bridging length scales in hard materials with
+    dynamic mechanical properties of a commercial epoxy during cure after             ultra-small angle X-ray scattering - a critical review," IUCrJ, vol. 11, no.
+    gelation," J. Appl. Polym. Sci., vol. 76, no. 4, pp. 495-508, 2000, doi:          5, pp. 675-694, 2024, doi: 10.1107/S2052252524006298.
+    10.1002/(SICI)1097-4628(20000425)76:4<495::AID-APP7>3.0.CO;2-B.               [79]"CHIPS Metrology Community Charter Outline." [Online]. Available:
+[60]R. Tao and S. L. Simon, "Bulk and Shear Rheology of Silica/Polystyrene            https://www.nist.gov/system/files/documents/2024/08/27/CHIPS%20Metr
+    Nanocomposite: Reinforcement and Dynamics," J. Polym. Sci. B Polym.               ology%20Charter%20Outline-508C.pdf
+    Phys., vol. 53, no. 9, pp. 621-632, 2015, doi: 10.1002/polb.23669.            [80]M. Schindler et al., "Development of UV-curable molding materials with
+[61]S. P. Phansalkar, R. Mittakolu and B. Han, "Time-dependent Bulk                   minimum die-shift for FOWLP/FOPLP," in 2024 IEEE 74th Electronic
+    Behavior of Cured Epoxy Molding Compound," in 2023 IEEE 73rd                      Components and Technology Conference (ECTC), Denver, CO, USA,
+    Electronic Components and Technology Conference (ECTC), Orlando,                  2024, pp. 860-864, doi: 10.1109/ECTC51529.2024.00138.
+    FL, USA, 2023, pp. 2093-2100, doi: 10.1109/ECTC51909.2023.00358.              [81]"Chapter 25: Additive Manufacturing & Additive Electronics for
+[62]D. J. O’Brien, N. R. Sottos, and S. R. White, "Cure-dependent                     Heterogeneous Integration," in Heterogeneous Integration Roadmap,
+    Viscoelastic Poisson’s Ratio of Epoxy," Exp. Mech., vol. 47, no. 2, pp.           2024                Edition.               [Online].              Available:
+    237-249, 2007, doi: 10.1007/s11340-006-9013-9.                                    https://eps.ieee.org/images/files/HIR_2024/HIR_2024_ch25_AME.pdf
+[63]H. Lu, X. Zhang, and W. G. Knauss, "Uniaxial, shear, and poisson              [82]D. Baran, D. Corzo, and G. T. Blazquez, "Flexible Electronics: Status,
+    relaxation and their conversion to bulk relaxation: Studies on poly(methyl        Challenges and Opportunities," Front. Electron., Specialty Grand
+    methacrylate)," Polym. Compos., vol. 18, no. 2, pp. 211-222, 1997, doi:           Challenge vol. 1, 2020, doi: 10.3389/felec.2020.594003.
+    10.1002/pc.10275.                                                             [83]L. Li, L. Han, H. Hu, and R. Zhang, "A review on polymers and their
+[64]N. W. Tschoegl, W. G. Knauss, and I. Emri, "Poisson's Ratio in Linear             composites for flexible electronics," Mater. Adv., vol. 4, no. 3, pp. 726-
+    Viscoelasticity – A Critical Review," Mech. Time-Depend. Mat., vol. 6,            746, 2023, doi: 10.1039/D2MA00940D.
+    no. 1, pp. 3-51, 2002, doi: 10.1023/A:1014411503170.                          [84]K. Hamada et al., "Novel High Reliability and Low Dk/Df Dielectric
+[65]S. P. Phansalkar, C. Kim, and B. Han, "Effect of critical properties of           RDL Material for High Frequency 5G Applications," in 2023 IEEE 73rd
+    epoxy molding compound on warpage prediction: A critical review,"                 Electronic Components and Technology Conference (ECTC), Orlando,
+    Microelectron. Reliab., vol. 130, p. 114480, 2022, doi:                           FL, USA, 2023, pp. 54-59, doi: 10.1109/ECTC51909.2023.00018.
+    10.1016/j.microrel.2022.114480.                                               [85]T. Kakutani et al., "Material Design and High Frequency Characterization
+[66]J. Kim et al., "Enhancing predictability of thermal warpage by applying           of Novel Ultra-Low Loss Dielectric Material for 5G and 6G
+    temperature-dependent Poisson's ratio of epoxy molding compound,"                 Applications," in 2021 IEEE 71st Electronic Components and Technology
+    Polym.       Test.,      vol.    125,     p.     108140,      2023,    doi:       Conference (ECTC), San Diego, CA, USA, 2021, pp. 538-543, doi:
+    10.1016/j.polymertesting.2023.108140.                                             10.1109/ECTC32696.2021.00096.
+[67]"NIST CHIPS Metrology R&D Project: Accurate Cure Kinetics, Stress,            [86]H. Zhang et al., "Aromatic disulfide epoxy vitrimer packaged electronic
+    Mechanical       Properties    and Warpage."         [Online].   Available:       devices: Nondestructive healing and recycling," Polymer, vol. 255, p.
+    https://www.nist.gov/programs-projects/accurate-cure-kinetics-stress-             125163, 2022, doi: 10.1016/j.polymer.2022.125163.
+    mechanical-properties-and-warpage                                             [87]M. A. Rashid, M. A. Islam, M. N. Hasan, M. N. N. Anu, and M. H. Ikbal,
+[68]G. Nikolic, S. Zlatkovic, M. Cakic, S. Cakic, C. Lacnjevac, and Z. Rajic,         "A critical review of dynamic bonds containing curing agents for epoxy
+    "Fast Fourier Transform IR Characterization of Epoxy GY Systems                   resin: Synthesis, challenges, and emerging applications," Polym. Degrad.
+    Crosslinked with Aliphatic and Cycloaliphatic EH Polyamine Adducts,"              Stab.,        vol.       229,       p.       110980,        2024,       doi:
+    Sensors, vol. 10, no. 1, pp. 684-696, 2010, doi:10.3390/s100100684.               10.1016/j.polymdegradstab.2024.110980.
+[69]M. G. González, J. C. Cabanelas, and J. Baselga, "Applications of FTIR        [88]K. C. Otiaba, N. N. Ekere, R. S. Bhatti, S. Mallik, M. O. Alam, and E. H.
+    on Epoxy Resins - Identification, Monitoring the Curing Process, Phase            Amalu, "Thermal interface materials for automotive electronic control
+    Separation and Water Uptake," in Infrared Spectroscopy - Materials                unit: Trends, technology and R&D challenges," Microelectron. Reliab.,
+    Science, Engineering and Technology, T. Theophanides Ed.: IntechOpen,             vol.      51,      no.      12,     pp.      2031-2043,      2011,      doi:
+    2012, pp. 261–284.                                                                10.1016/j.microrel.2011.05.001.
+[70]Y. Niu, S. Shao, S. B. Park, and C. L. Kao, "A Novel Speckle-Free             [89]Y. Zhang, J. Ma, N. Wei, J. Yang, and Q.-X. Pei, "Recent progress in the
+    Digital Image Correlation Method for In Situ Warpage Characterization,"           development of thermal interface materials: a review," Phys. Chem.
+    IEEE Trans. Compon., Packag., Manuf. Technol., vol. 7, no. 2, pp. 276-            Chem. Phys., vol. 23, no. 2, pp. 753-776, 2021, doi:
+    284, 2017, doi: 10.1109/TCPMT.2016.2635581.                                       10.1039/D0CP05514J.
+[71]G. Sun and S. Zhang, "A review on warpage measurement metrologies for         [90]A. Inamdar, Y.-H. Yang, A. Prisacaru, P. Gromala, and B. Han, "High
+    advanced electronic packaging," Microelectron. Reliab., vol. 160, p.              temperature aging of epoxy-based molding compound and its effect on
+    115456, 2024, doi: 10.1016/j.microrel.2024.115456.                                mechanical behavior of molded electronic package," Polym. Degrad.
+[72]S. Engmann, A. J. Gayle, S. K. Romberg, C. L. Soles and C. A. Michaels,           Stab.,        vol.       188,       p.       109572,        2021,       doi:
+    "A Dual Mode Brillouin/Low-Frequency Raman Spectroscopy                           10.1016/j.polymdegradstab.2021.109572.
+    Microscope for Local Mechanical Property Imaging for Semiconductor            [91]C. Beauchamp et al., "Metrological Tools for the Reference Materials and
+    Packaging Materials," in 2025 IEEE 75th Electronic Components and                 Reference Instruments of the NIST Material Measurement Laboratory,"
+    Technology Conference (ECTC), Dallas, TX, USA, 2025, pp. 1694-1701,               (in en), Special Publication (NIST SP), National Institute of Standards
+    doi: 10.1109/ECTC51687.2025.00288.                                                and Technology, Gaithersburg, MD, 2020, doi: 10.6028/NIST.SP.260-
+[73]K. F. Schoch, P. A. Panackal, and P. P. Frank, "Real-time measurement of          136-2020.
+    resin shrinkage during cure," Thermochim. Acta, vol. 417, no. 1, pp. 115-     [92]"NIST          Reference        Materials."       [Online].       Available:
+    118, 2004, doi: 10.1016/j.tca.2003.12.027.                                        https://www.nist.gov/reference-materials
+[74]H. Yu, S. G. Mhaisalkar, and E. H. Wong, "Cure shrinkage measurement          [93]"Chapter 15: Materials and Emerging Research Materials " in
+    of nonconductive adhesives by means of a thermomechanical analyzer,"              Heterogeneous Integration Roadmap, 2019 Edition. [Online]. Available:
+    J. Electron. Mater., vol. 34, no. 8, pp. 1177-1182, 2005, doi:                    https://eps.ieee.org/images/files/HIR_2019/HIR1_ch15_materials.pdf
+    10.1007/s11664-005-0248-5.                                                    [94]"CHIPS         Metrology        Community."        [Online].      Available:
+[75]C. Kim, S. P. Phansalkar, H.-S. Lee, and B. Han, "Measurement of                  https://www.nist.gov/chips/metrology-community
+    effective cure shrinkage of epoxy-based molding compound by fiber             [95]"The Metrology Exchange to Innovate in Semiconductors (METIS) data
+    Bragg grating sensor using two-stage curing process," J. Appl. Polym.             exchange ecosystem," https://www.nist.gov/programs-projects/metis.
+    Sci., vol. 139, no. 6, p. 51620, 2022, doi: 10.1002/app.51620.                [96]"Microelectronics and Advanced Packaging Technologies Roadmap."
+                                                                                      [Online]. Available: https://srcmapt.org/
+                                                                                                                                                              11
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+                       Ran Tao is a materials scientist in the Materials        CHIPs underfill formulations, composite micromechanics, embedded
+                       Measurement Laboratory at the National Institute of      interfaces, time-dependent relaxation phenomena in polymeric systems,
+                       Standards and Technology (NIST) in Gaithersburg,         ballistic fibers, nano-tailored multi-functional materials.
+                       Maryland.     Her research focuses on structure-
+                       property relationships in polymeric materials,                                     Amanda Forster is a materials research engineer in
+                       complex fluids, and composites for mission-driven                                  the Material Measurement Laboratory (MML) at the
+                       applications, including semiconductors, additive                                   National Institute of Standards and Technology in
+                       manufacturing, and safety and security.         She                                Gaithersburg, MD. She is also the leader of both the
+                       specializes in advanced rheology and thermal                                       Surface and Trace Chemical Analysis Group and the
+                       analysis for both fundamental and applied research.                                Security Technologies Group within the Materials
+                       Currently, Dr. Tao is working on investigating                                     Measurement Science Division, MML. She holds a
+thermo-mechanical challenges in molding compounds, underfills, and thermal                                B.S. in textile chemistry and a M.S. in textiles, fiber,
+interface materials for advanced semiconductor packaging.        She was                                  and polymer science from Clemson University and a
+recognized as a 2022 ACS PMSE Young Investigator by the American                                          Ph.D. in materials science and engineering from the
+Chemical Society. Dr. Tao serves on the Executive Board of the North                                      University of Maryland, College Park. Amanda has
+American Thermal Analysis Society, is an active member of the IEEE              spent most of her career working on issues related to the longevity of high
+Electronics Packaging Society, and is a technical committee member for          performance polymers and has published numerous papers related to the long-
+Emerging Technologies at ECTC.                                                  term stability of polymeric materials used in protective applications. Her
+                                                                                research group is currently focused on advancing standards and metrologies to
+                       Polette Centellas received her Ph.D. in Aerospace        support understanding of the cure kinetics of advanced packaging materials
+                       Engineering from the University of Illinois-Urbana-      and measure the effects of cure shrinkage on warpage. She has been at NIST
+                       Champaign in 2022. She then joined the National          since 2003, and has received several DOC level awards.
+                       Institute of Standards and Technology (NIST) for her
+                       post-doctoral research from 2022 to 2024. She is                                   Throughout his career, Christopher Soles has
+                       currently a Materials Research Engineer in the                                     helped develop metrology platforms that advance the
+                       Materials Measurement Laboratory, NIST. Her                                        deployment of new materials and polymers in
+                       research focuses on the mechanical characterization                                technology sectors that include semiconductor
+                       of polymers and polymer matrix composites,                                         electronics, printed and flexible electronics,
+                       specifically on measuring energy dissipation under                                 membranes for ion transport and water filtration,
+                       dynamic conditions and in situ residual stress                                     batteries, structural composites, and materials for
+development under hygrothermal loading.                                                                   impact mitigation. In the semiconductor field his
+                                                                                                          measurements have led to seminal advances in
+                      Stian Romberg received his B.S. degree in                                           deployment of porous low-k dielectrics, improving
+                      Mechanical Engineering from Brown University and                                    the resolution of chemically amplified photoresists,
+                      completed his M.S. and Ph.D. in Mechanical                the development nanoimprint lithography, and the commercialization of
+                      Engineering at the University of Tennessee,               Critical Dimension Small Angle X-ray Scattering. His research group is now
+                      Knoxville. He recently transitioned from a research       focused on developing metrology capabilities for next generation
+                      role at the National Institute of Standards and           semiconductor packaging materials. He received Bachelor of Science degrees
+                      Technology (NIST) to a Teaching Assistant                 in both Mechanical Engineering (ME) and Materials Science and Engineering
+                      Professor position at the University of Tennessee,        (MSE) in 1993, and then his Ph D in MSE in 1998, all from the University of
+                      Knoxville. His research interests include advanced        Michigan. He came to the Polymers Division of NIST in 1999 as an NRC
+                      manufacturing of thermoset composites, rheological        Postdoctoral Fellow and has led the Functional Polymers Group at NIST since
+                      characterization of complex fluids, additive              2007. He has published over 175 peer-reviewed publications, given over 200
+manufacturing processes, and materials for semiconductor packaging              invited talks, received several prestigious awards.
+applications.
+                                                                                                         Bob Allen is a polymer chemist with a research
+                         Anthony P. Kotula received his B.S. degree in                                   focus on designing new high performing polymer
+                         Chemical Engineering from Drexel University,                                    materials, polymerization, and recycling process
+                         Philadelphia, PA in 2009, and Ph.D. in Chemical                                 technology. He received his Ph.D. in Polymer
+                         Engineering from Carnegie Mellon University,                                    Chemistry with Prof. Jim McGrath at Virginia Tech
+                         Pittsburgh, PA in 2014. He is currently a staff                                 in 1985 and then enjoyed a long industrial career at
+                         scientist and project leader in the Polymers                                    IBM Almaden Research Center, where he worked at
+                         Processing Group at the National Institute of                                   the interface of polymer science and advanced
+                         Standards and Technology (NIST), Gaithersburg,                                  electronics technology.     He was trained as a
+                         MD. His primary research focuses on solidification                              photoresist chemist by the great Grant Willson. He
+                         processes in soft matter, including developing novel                            was a Master Inventor at IBM and won an IBM
+                         measurement techniques like the rheo-Raman             Corporate Award for his work on the design, development and
+microscope to study chemical crosslinking in thermoset composites for           commercialization of 193nm photoresist technology. He led photoresist
+applications in advanced packaging.                                             research at Almaden and more recently led the Polymer Science and
+                                                                                Technology Department. He is a member of the National Academy of
+                       Gale Holmes received a B.S. degree in chemistry          Engineering and a Fellow of SPIE and the ACS Polymer Division for his
+                       from the University of Texas at Austin in May 1977.      work on polymers for 193nm lithography. He’s also the recipient of the
+                       He then worked for the Dow Chemical Co in                Photopolymer Science and Technology Award (Japan) and the ACS Polymer
+                       Freeport, Texas as an analytical chemist for 12 years.   Division Industrial Polymer Chemistry Award. While at IBM, he co-invented
+                       In August 1989 he left Dow for Texas A&M                 the VolCat process with Greg Breyta, an amine-catalyzed glycolysis process
+                       University to pursue a Ph.D. in Mechanical               for the selective digestion of PET plastics and polyester textiles that’s
+                       Engineering. After graduation in August 1994, he         currently being commercialized by Reju. He joined NREL and the BOTTLE
+                       was briefly employed at Federal Mogul in Ann             Consortium in the Fall of 2020 to focus full time on polymer science and
+                       Arbor, Michigan before accepting a research position     sustainability. In the BOTTLE consortium, he works on new polymer
+                       in April 1995 with the National Institute of             recycling technologies and the application-specific design of high-
+                       Standards and Technology. He was the vice-chair of       performance polymers with a focus on feedstocks and end-of-use circularity.
+the Gordon Research Conference (GRC) on Composites 2008 and chair of this       He’s a Senior Research Fellow at NREL and is the co-lead of NREL’s Supply
+conference on January 17-22, 2010. He also received the Department of           Chain Strategy (aka Circular Economy) with a focus on polymers and
+Commerce Gold Medal in 2007 and again in 2010. His research interests are       composites.
+                                                                                   12
+> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER (DOUBLE-CLICK HERE TO EDIT) <
+
+                           Edvin Cetegen is a Principal Engineer at Intel
+                           Corporation, where he is part of the Advanced
+                           Packaging     Technology     and     Manufacturing
+                           organization.    His work focuses on advanced
+                           packaging technologies for high-performance
+                           semiconductor devices.     He holds a Ph.D. in
+                           Mechanical Engineering from the University of
+                           Maryland, College Park, with research expertise in
+phase change heat transfer and computational fluid dynamics. Dr. Cetegen
+has contributed to the development of next-generation thermal and packaging
+solutions, particularly in the areas of microchannel cooling, underfill control,
+chip attach and 3D integration.
+
+                        William (Bill) Chen holds the position of ASE
+                        Fellow & Senior Technical Advisor at ASE Group.
+                        Prior to joining the ASE, he was Director at the
+                        Institute of Materials Research & Engineering
+                        (IMRE) in Singapore, following a distinguished
+                        career at IBM Corporation. Bill is a past President
+                        of the IEEE Electronics Packaging Society. He is a
+                        Life Fellow of IEEE and a Fellow of ASME. He
+                        received the ASME InterPACK Achievement Award
+                        in 2007. In 2018, he received the IEEE Electronics
+                        Packaging Field Award, recognizing his contribution
+to electronics packaging, from research & development through
+industrialization. In 2022 he received the IMAPS Daniel C Hughes, Jr
+Memorial Award for outstanding achievement related to Microelectronics.
+Bill chairs the Heterogeneous Integration Roadmap (HIR) initiative, co-
+sponsored by Electronics Packaging Society, SEMI, Electron Devices Society,
+Photonics Society & ASME Electronics & Photonics Packaging Division. He
+received B.Sc.(Eng) from Queen Mary College, London University; M Sc.
+(Eng) from Brown University and PhD from Cornell University.
+
+                         Jeff Gotro, Senior Member IEEE, has over forty
+                         years of experience in thermoset polymers used in a
+                         variety of applications. Jeff held scientific and
+                         leadership positions at IBM, AlliedSignal,
+                         Honeywell, National Starch Electronic Materials,
+                         and InnoCentrix. He has published five book
+                         chapters, 61 papers in technical journals and
+                         conference proceedings and has 15 issued US
+                         Patents. Jeff has a Ph.D. in Materials Science from
+                         Northwestern University with a specialty in polymer
+                         chemistry and polymer physics.
+
+                         Mark D. Poliks is a SUNY Distinguished Professor
+                         and Empire Innovation Professor of Materials
+                         Science and Engineering and the School of Systems
+                         Science and Industrial Engineering at the Thomas J.
+                         Watson College of Engineering and Applied
+                         Science, Binghamton University, State University of
+                         New York. He is the founding director of the Center
+                         for Advanced Microelectronics Manufacturing
+                         (CAMM), a New York State Center of Advanced
+                         Technology and home to the New York Node of the
+                         federally supported NextFlex Manufacturing USA.
+Poliks has made sustained contributions to the fields of materials processing,
+electronics packaging, flexible, hybrid and additive electronics that are
+relevant to a variety of medical and industrial applications. Poliks was the
+General Chair of the 69th IEEE Electronic Components and Technology
+Conference (ECTC). He was a recipient of the 2017 SUNY Chancellor's
+Award for Excellence in Research, is a Fellow of NextFlex, a Senior Member
+of IEEE, an elected member of the IEEE Electronics Packaging Society (EPS)
+Board of Governors, serves as the director of student programs and is an IEEE
+Distinguished Lecturer. He is a member of technical councils for the SEMI
+FlexTech Alliance, NBMC and NextFlex, a member of the NextFlex
+governing council and serves on the advisory board for the Cornell Nanoscale
+Facility (CNF). Prior to joining Binghamton University full-time, he had
+significant experience working in the electronics industry serving as a senior
+technical manager at the IBM Corporation and as Director of R&D at Endicott
+Interconnect Technologies, Inc.
+

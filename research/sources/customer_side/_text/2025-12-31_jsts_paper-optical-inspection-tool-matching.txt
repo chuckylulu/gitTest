@@ -1,0 +1,888 @@
+
+
+	JSTS - Journal of Semiconductor Technology and Science
+
+JSTS
+Journal of Semiconductor Technology and Science
+
+IEIE
+
+Contact
+
+Open Access
+
+Bimonthly
+
+ISSN : 1598-1657 (Print)
+
+ISSN : 2233-4866 (Online)
+
+Mobile QR Code
+
+JSTS Index Information Download 
+
+Main Menu
+
+Main Menu
+
+Current Issue
+
+Early Access
+
+Journal Archive (2019~)
+
+Journal Archive (2001~2018)
+
+Editorial board
+
+Scope / Indexing
+
+Instructions to authors
+
+Online-Submission
+
+Haedong
+ Best Paper Award
+
+Journal letter
+
+Contact information
+
+The Journal of Semiconductor Technology and Science (JSTS) is an international, peer-reviewed, and 
+open-access
+ journal that is published 
+bimonthly.
+
+                                        - Scope: semiconductor processes, devices, circuits, and MEMS.
+
+                                        - Editor-in-Chief: Prof. Woo Young Choi (ECE, Seoul National University)
+
+                                        - Indexed within 
+Science Citation Index Expanded (SCIE), SCOPUS,
+ Korea Citation Index (KCI), and other databases.
+
+ Journal Search
+
+Home
+
+Archive
+
+2025-12
+
+(Vol.25 No.06)
+
+10.5573/JSTS.2025.25.6.623
+
+Journal XML
+
+EndNote
+
+RefWorks
+
+Medlars
+
+RIS
+
+BibTeX
+
+Export citation
+
+ XML
+
+ PDF
+
+ INFO
+
+ REF
+
+Journal Information
+
+                              [
+
+Research article
+
+                              ]
+
+JSTS(Journal of Semiconductor Technology and Science)
+
+IEIE
+
+                              Vol.
+                              25,
+
+                              No.
+                              6,
+
+                              p.
+623
+-
+632
+
+ISSN
+ (print)
+ : 
+1598-1657
+
+ISSN
+ (online)
+ : 
+2233-4866
+
+Received
+ : 
+5 Jun. 2025
+Revised
+ : 
+24 Aug. 2025
+Accepted
+ : 
+14 Sep. 2025
+
+DOI
+ : 
+https://doi.org/10.5573/JSTS.2025.25.6.623
+
+Precision Matching Optimization of Optical Metrology and Inspection Equipment for
+                  Yield Enhancement in Semiconductor Manufacturing
+
+ShinHyoseop
+1
+
+LeeHojun
+1
+
+ShinDongkun
+1
+
+                        (Department of Semiconductor and Display Engineering, Sungkyunkwan University, Suwon,
+                        Republic of Korea)
+
+                        (Samsung Institute of Technology, Samsung-ro 1, Giheung-gu, Youngin-si, Gyeonggi-do
+                        17113, Republic of Korea)
+
+                        					E-mail: 
+metropoly@naver.com
+
+Copyright © The Institute of Electronics and Information Engineers(IEIE)
+
+License
+ : 
+
+                        						This is an Open-Access article distributed under the terms of the Creative Commons
+                        Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/3.0/)
+                        which permits unrestricted non-commercial use, distribution, and reproduction in any
+                        medium, provided the original work is properly cited.
+
+Abstract
+
+As semiconductor manufacturing continues to scale down, the precision and reliability
+                     of high-resolution optical inspection equipment have become critical to maintaining
+                     process yield. However, variations in hardware sensitivity and parameter settings
+                     among identical tools often lead to inconsistencies in defect detection, undermining
+                     the stability of process control. This study proposes an automated hardware matching
+                     framework that combines a structured calibration sample fabricated using a Particle
+                     Deposition System (PDS) with a residual matrix-based linear interpolation algorithm.
+                     The proposed method enables automatic alignment of sensitivity responses across tools
+                     by quantifying detection discrepancies and deriving optimal settings for laser power
+                     and time delay integration (TDI) gain. Applied to 191 optical inspection tools in
+                     a Samsung Electronics high-volume manufacturing (HVM) line, the approach achieved
+                     a sensitivity matching accuracy within ±2% and reduced preventive maintenance (PM)
+                     time by 45%. Deployed across 191 IS4100 patterned-wafer optical inspectors operating
+                     at after-develop (ADI), after-etch (AEI), and post-CMP inspection (PCI) checkpoints,
+                     the matched fleet provided consistent in-line gating of excursions, aligning with
+                     the observed 0.41-pp improvement in production yield. This framework demonstrates
+                     a significant advancement over manual calibration approaches and validates its potential
+                     as a core enabling technology for Smart Fab and Unattended Fab environments.
+
+Index Terms
+
+Optical metrology, defect inspection, particle deposition system, hardware matching, semiconductor yield, residual matrix, TDI gain, laser power optimization, Smart Fab
+
+I. INTRODUCTION
+
+As device nodes continue to shrink and process complexity increases, the demand for
+                  precise and reliable inspection and metrology in semiconductor manufacturing is rising
+                  rapidly. In particular, optical metrology and inspection systems play a pivotal role
+                  in identifying particles and micro-defects during intermediate process stages, directly
+                  impacting yield and quality stability 
+[1-
+4]
+. However, as optical system resolution advances, even minor hardware variations across
+                  nominally identical tools can lead to inconsistencies in defect sensitivity. These
+                  variations undermine process control reliability and necessitate precise tool-to-tool
+                  matching for consistent production quality and high yield 
+[5]
+.
+
+In current semiconductor fabs, matching between optical inspection systems is typically
+                  performed manually during scheduled preventive maintenance. This process is time-consuming,
+                  labor-intensive, and inherently limited in reproducibility and quantitative precision
+                  due to operator dependency 
+[6]
+. Moreover, existing methods often involve reusing production wafers for calibration,
+                  making it difficult to achieve reproducible results or meaningful cross-comparisons.
+                  Particularly in ultra-low sensitivity regions (Laser Power: 0.05-1%), it becomes extremely
+                  challenging to distinguish fine sensitivity differences or define rigorous correction
+                  baselines between tools 
+[7,
+8]
+.
+
+This paper proposes a novel precision matching framework to overcome these industrial
+                  and technical limitations. Uniquely, the structured calibration sample and matching
+                  algorithm introduced herein were independently designed by us, rather than adapted
+                  from prior literature or commercial systems, and were practically validated within
+                  a high-volume semiconductor production line at Samsung Electronics. Specifically,
+                  structured calibration wafers were fabricated using internationally certified silica
+                  particles of four size intervals (150 nm, 250 nm, 350 nm, 450 nm) 
+[9]
+. Detection discrepancies between reference and target tools were quantified through
+                  residual matrices, and optimal hardware settings--laser power and TDI gain--were automatically
+                  derived using a linear interpolation algorithm 
+[10,
+11]
+.
+
+This framework, comprising calibration sample design, residual-based sensitivity analysis,
+                  and automated parameter tuning, provides a robust, repeatable, and scalable tool matching
+                  methodology aligned with the operational needs of smart semiconductor manufacturing
+                  environments 
+[12,
+13]
+. In high-volume manufacturing, patterned-wafer optical inspection at ADI/AEI/API
+                  checkpoints provides the throughput to stop excursions early; aligning sensitivity
+                  across the IS4100 fleet ensures consistent hold/rework decisions and prevents defect
+                  escapes that depress final yield. In nanometer-scale high-volume manufacturing, Hitachi
+                  High-Tech IS4100 patterned-wafer optical inspection directly affects final yield by
+                  providing whole-wafer, in-line gating at ADI/PDI, AEI/PEI, and API control points.
+                  At ADI, the tools detect resist scumming, micro-bridging, and pattern collapse; at
+                  AEI they flag etch stringers and post-etch residues; at API they capture scratches,
+                  embedded particles, and pattern-loss. These optical findings trigger automated hold/rework/release
+                  on product lots. By matching Laser Power and TDI Gain across the IS4100 fleet, the
+                  proposed framework ensures that the same physical excursion produces the same gating
+                  decision across tools, preventing defect escapes and unnecessary scrap and thereby
+                  linking optical inspection performance to the observed 0.41-pp yield improvement.
+
+II. OPTICAL METROLOGY AND INSPECTION MATCHING OPTIMIZATION
+
+1. Structured Calibration Wafer Architecture
+
+On a 300-mm wafer, four circular regions (R1-R4) were defined for particle sizes of
+                     150, 250, 350, and 450 nm. Using a Particle Deposition System (PDS), 1,000 ± 3% monodisperse
+                     silica spheres were uniformly deposited 
+[18]
+ per region (≈4,000 total), with inter-region spacing to avoid optical cross-talk.
+                     This structured artifact enables quantitative, repeatable tool-to-tool comparison
+                     under identical scan paths, including robust evaluation in the ultra-low-sensitivity
+                     regime (Laser Power: 0.05-1%). 
+Fig. 1
+ shows the particle-size deposition map and spatial layout 
+[14]
+.
+
+Fig. 1. Structured calibration wafer design and deposition map. Four zones on a 300-mm
+                           wafer; 1,000 particles per zone (150/250/350/450 nm) uniformly spaced.
+
+2. Selection of Matching Control Parameters: Laser Power and TDI Gain
+
+In this study, laser power and time delay integration (TDI) gain were selected as
+                     the key control parameters for achieving sensitivity alignment across optical inspection
+                     systems. These two variables are independent within the optical signal chain yet significantly
+                     influence defect detection sensitivity, making them ideal candidates for performance
+                     matching between tools.
+
+Laser power controls the intensity of the illumination projected onto the wafer. If
+                     set too low, the resulting scattering signal from particles may be insufficient, leading
+                     to missed defects. Conversely, excessive laser power can cause image saturation and
+                     amplified noise, thereby increasing the false detection rate. TDI gain is a sensor
+                     amplification technique that improves the signal-to-noise ratio (SNR) by temporally
+                     integrating multiple image signals acquired during stage movement 
+[16]
+. When optimally configured, it enhances sensitivity to subtle defects; however, if
+                     set too high, it may cause image distortion or contrast loss, ultimately degrading
+                     detection accuracy.
+
+These two parameters exert orthogonal influence on the optical system and, when explored
+                     jointly, provide a multidimensional space in which sensitivity characteristics can
+                     be optimized. Accordingly, this study utilizes the two-dimensional parameter space
+                     of laser power and TDI gain to identify the optimal configuration for each tool, enabling
+                     precision matching across the equipment set.
+
+3. Quantification and Visualization of Sensitivity Deviation
+
+To quantitatively characterize the sensitivity deviation between semiconductor inspection
+                     systems and provide a structured visual representation, we introduce a residual matrix–based
+                     analysis framework. This approach evaluates the relative difference in particle detection
+                     response between each system and a reference tool under identical operating conditions,
+                     mapping the results across a two-dimensional parameter space defined by Laser Power
+                     and Time Delay Integration (TDI) Gain.
+
+In this paper, “detection rate” denotes the proportion of planted particle sites on
+                     the PDS calibration wafer that are correctly reported by the tool for a given (Laser
+                     Power, TDI Gain) setting, using one-to-one positional matching to the deposition map;
+                     duplicate calls at a site are counted once, and off-map calls are excluded from the
+                     metric. Terminology notes. In this paper, we use “sensitivity deviation” (instead
+                     of “residual”) to mean the difference in detection rate between the test tool and
+                     the reference at the same (Laser Power, TDI Gain) operating point; values are summarized
+                     in a 5 × 5 grid and visualized as heatmaps. The experiment was conducted using 25
+                     combinations derived from five incremental levels of Laser Power and TDI Gain. Tool–reference
+                     differences in detection rate at each (Laser Power, TDI Gain) grid point were summarized
+                     as a 5 × 5 sensitivity-deviation table and visualized as heatmaps for before/after
+                     matching. Calibration workflow (non-iterative). Each tool acquires a single 5 × 5
+                     grid over predefined levels of Laser Power and TDI Gain. Detection rate at each grid
+                     point is computed against the PDS deposition map, producing a 5 × 5 sensitivity-deviation
+                     table. A software fine-grid search (up-sampling of the 5 × 5 surface) identifies the
+                     operating point that minimizes the absolute tool–reference deviation. The selected
+                     settings are applied once, and a single verification scan confirms alignment. To facilitate
+                     interpretation, we visualized the complete sensitivity-deviation using a heatmap,
+                     where the color gradient encodes the magnitude of residual values. As shown in 
+Fig. 2
+, the heatmap presents both the pre- and post-optimization results side by side, enabling
+                     direct visual comparison of sensitivity alignment performance. This unified visualization
+                     allows intuitive evaluation of improvements across the full Laser Power–TDI Gain space.
+
+Fig. 2. Heatmap visualization of residual matrix before and after matching.
+
+Notably, significant reductions in deviation were observed in the ultra-low sensitivity
+                     region (Laser Power: 0.05-1%), where conventional manual calibration is often unreliable.
+                     These results demonstrate the robustness and practical effectiveness of the proposed
+                     matching framework in minimizing hardware-induced performance discrepancies across
+                     tools. To obtain a denser view of the response surface, the 5 × 5 grid was up-sampled
+                     to a finer grid by standard bilinear interpolation, and the setting with the minimum
+                     absolute tool–reference deviation was selected. A 3D visualization of the interpolated
+                     surface is shown in 
+Fig. 3
+, Fleet-level dispersion was summarized by the root-mean-square error (RMSE) across
+                     tools, computed on detection-rate deviations at matched operating points 
+[20]
+.
+
+Fig. 3. Interpolated sensitivity-surface visualization.
+
+(1)
+
+                     $\text{RMSE} = \sqrt{\frac{1}{n}\sum_{t=1}^{n}\bigl(y_t - \hat{y}_t\bigr)^2},	$
+
+Fleet-level dispersion metric.
+
+We summarize across-tool dispersion using the conventional root-mean-square error
+                     (RMSE): where $y_t$ is the observed detection rate (%) of tool $t$ at its matched
+                     operating point (Laser Power, TDI Gain), $\hat{y}_t$ is the target detection rate
+                     (%) given by the reference tool at the same operating point (thus constant across
+                     $t$), and $n$ is the number of non-reference tools (here $n=190$). Detection rates
+                     are expressed in percent, so residuals and RMSE are reported in percentage points
+                     (pp). RMSE is non-negative (zero only under perfect alignment); for interpretation,
+                     RMSE = 2.0 implies an average 2.0-pp difference at the matched operating point. Because
+                     errors are squared, RMSE is more sensitive to large mismatches than to small ones
+
+[21]
+. For completeness, we also computed a surface-level RMSE across the full 5 × 5 (Laser
+                     Power, TDI Gain) grid per tool; conclusions were unchanged.
+
+III. EXPERIMENTAL CONFIGURATION AND RESULTS ANALYSIS
+
+To rigorously evaluate the performance and industrial applicability of the proposed
+                  optical metrology matching optimization framework, a comprehensive validation study
+                  was conducted in a high-volume semiconductor manufacturing setting. The experimental
+                  campaign was carried out at Samsung Electronics’ Semiconductor Division and involved
+                  the deployment of the proposed methodology across a fleet of 191 nominally identical
+                  optical defect inspection tools operating on the production line. The primary objectives
+                  of this large-scale study were threefold. First, we aimed to quantitatively verify
+                  the sensitivity alignment accuracy enabled by our framework, using a structured calibration
+                  wafer fabricated with a Particle Deposition System (PDS). Second, we sought to compare
+                  the sensitivity distribution across tools both before and after the application of
+                  automated parameter optimization, to determine the consistency and robustness of the
+                  alignment results. Lastly, we evaluated the broader operational impact of the framework,
+                  including improvements in preventive maintenance (PM) efficiency and its contribution
+                  to overall production yield enhancement. This section presents the experimental design,
+                  data collection methodology, optimization procedures, and post-matching performance
+                  assessments, offering comprehensive insight into the practical benefits and scalability
+                  of the proposed approach under real-world manufacturing conditions. For clarity, the
+                  matching is not an iterative zoom-in; a single 5×5 acquisition is followed by a software
+                  fine-grid search and one verification scan. For avoidance of doubt, detection-rate–based
+                  sensitivity matching is a metrology metric; the production-yield results presented
+                  here are computed independently from electrical die-sort (EDS) data. Integration of
+                  IS4100 in the yield pathway. Within the evaluated run sheets, lots traverse IS4100
+                  checkpoints at after-develop (ADI/PDI), after-etch (AEI/PEI), and after-CMP (API).
+                  These in-line, high-throughput patterned-wafer inspections detect resist scumming
+                  and bridging, post-etch residues and stringers, and scratches/embedded particles/pattern
+                  loss and feed automatic hold/rework/release logic on product lots, clarifying where
+                  and how optical inspection ties into production control. By matching Laser Power and
+                  TDI Gain across the IS4100 fleet, cross-tool sensitivity drift is reduced to within
+                  ±2%, which stabilizes excursion thresholds and ensures consistent gating decisions
+                  across tools; this mechanism links optical inspection performance to yield, consistent
+                  with the observed 0.41-pp improvement.
+
+1. Experimental Configuration and Implementation
+
+To evaluate the sensitivity alignment performance of the proposed framework under
+                     actual manufacturing conditions, a structured calibration wafer was custom-fabricated
+                     using a 300 mm substrate. The wafer incorporated four distinct particle zones, each
+                     populated with 1,000 monodisperse silica particles of varying diameters: 150 nm, 250
+                     nm, 350 nm, and 450 nm. These particle sizes were chosen to represent a realistic
+                     range of critical defect dimensions encountered in optical inspection processes. The
+                     spatial layout of the particle zones was symmetrically arranged to minimize cross-interference,
+                     and deposition uniformity was strictly controlled to ensure high repeatability and
+                     metrological consistency across tools. Tooling and deployment stages. The 191 inspection
+                     systems used in this study are Hitachi High-Tech IS4100 patterned-wafer defect inspection
+                     tools (registered in Korea as a Patterned Wafer Inspection System; a regulatory entry
+                     lists IS4100 (DI4200)), deployed in-line at after-develop inspection (ADI/PDI), after-etch
+                     inspection (AEI/PEI), and after-CMP (API) checkpoints. These stations provide high-throughput
+                     particle and pattern-defect detection on product wafers and gate hold/rework logic
+                     in real time. Hitachi’s public documentation for its patterned-wafer platforms (e.g.,
+                     DI-series) describes sheet-beam optical illumination with spatial filtering for high-sensitivity
+                     detection, and its wafer-surface LS-series explicitly documents laser-based illumination,
+                     consistent with the optical pipeline used for defect/particle capture in our fleet
+
+[15,
+19]
+. A total of 191 optical inspection systems was subjected to evaluation. Each tool
+                     scanned the same calibration wafer using 25 distinct parameter settings defined by
+                     a 5×5 matrix of Laser Power and Time Delay Integration (TDI) Gain values. One system
+                     was designated as the reference tool, and the remaining 190 systems were compared
+                     against it. For each tool, residual matrices were constructed by calculating the deviation
+                     in particle detection rates from the reference values at corresponding parameter points.
+                     These matrices provided a structured and quantitative representation of hardware-induced
+                     sensitivity variation across the toolset. To further refine the alignment precision
+                     beyond the discrete resolution of the experimental grid, a bilinear interpolation
+                     algorithm was applied to each residual matrix. This technique enabled the generation
+                     of a continuous residual surface comprising 1,600 virtual parameter combinations per
+                     tool, thereby increasing spatial resolution within the Laser Power–TDI Gain domain.
+                     The parameter set corresponding to the minimum interpolated residual value was identified
+                     as the optimal configuration for that tool. Once optimal parameters were determined,
+                     each tool was rescanned under the new settings to validate the improvement. This closed-loop
+                     process—encompassing structured calibration, grid-based sensitivity analysis with
+                     fine-grid search, and post-adjustment verification—was fully automated and standardized
+                     across all tools. The implementation of this workflow resulted in robust, scalable,
+                     and repeatable sensitivity matching, demonstrating significant performance enhancement
+                     over traditional manual calibration methods. In particular, the framework reduced
+                     reliance on operator experience and iterative tuning, while enabling high-throughput,
+                     data-driven optimization suitable for Smart Fab environments.
+
+After the optimal settings are applied, each tool completes a single verification
+                     scan on the same PDS wafer at the selected operating point. Acceptance is explicit:
+                     the tool is deemed “Spec in” if its PDS count matches the reference within ±5%; a
+                     ≥10% difference is “Spec out” and triggers immediate readjustment or maintenance.
+                     Intermediate gaps are re-checked by an immediate repeat verification scan to rule
+                     out transient variation. For every run, the system archives the calibration-wafer
+                     ID, recipe/firmware hashes, selected Laser Power and TDI Gain, the tool–reference
+                     deviation at the chosen point, and the verification outcome. Using a dedicated structured
+                     wafer—rather than production wafers—ensures repeatability, prevents cross-contamination
+                     of process lots, and provides a clean audit trail for PM planning and long-term drift
+                     monitoring. This single-pass verify-and-log step standardizes acceptance across the
+                     fleet and makes subsequent audits straightforward.
+
+Fig. 4. Workflow comparison: manual calibration (iterative trial-and-error) versus
+                           proposed single-pass software-assisted matching.
+
+Fig. 4
+ presents a comparative flowchart illustrating the key differences between the conventional
+                     manual calibration procedure and the automated sensitivity matching framework proposed
+                     in this study. In typical semiconductor manufacturing environments, optical inspection
+                     tools are calibrated during scheduled preventive maintenance using production wafers.
+                     This conventional approach depends heavily on manual parameter adjustments by field
+                     engineers, with calibration quality varying according to individual technical expertise
+                     rather than standardized methodology. Such variability often results in inconsistent
+                     sensitivity alignment across tools and necessitates rework—particularly in low-sensitivity
+                     regions where precise tuning is essential. Moreover, the manual calibration process
+                     is time-consuming and inefficient, often requiring over three hours per tool due to
+                     iterative scan–adjust–verify cycles. This prolonged procedure consumes significant
+                     engineering resources and reduces fab throughput. In contrast, the proposed framework
+                     is fully automated and standardized. It begins with a single scan of a PDS-based structured
+                     wafer, followed by grid-based sensitivity analysis and a fine-grid search over 1,600
+                     parameter combinations. The optimal Laser Power and TDI Gain settings are applied
+                     automatically, and a verification scan (rescanning) of the same wafer confirms sensitivity
+                     alignment—all completed within approximately one hour per tool. By reducing calibration
+                     time and eliminating operator-induced variability, the proposed process improves metrology
+                     accuracy and establishes a scalable, reproducible methodology suitable for Smart Fab
+                     and high-volume manufacturing environments. Spec criterion. In the manual flow, “Spec
+                     in” means the tool’s PDS count matches the reference within ±5% at the selected settings;
+                     a ≥10% count gap is flagged as Spec out and triggers readjustment.
+
+2. Improvement in Sensitivity Matching Accuracy
+
+The deviation in detection rates among tools was significantly reduced after applying
+                     the sensitivity matching algorithm. Initially, an average deviation of ±9.86% (standard
+                     deviation: 4.12%) was observed, which was reduced to ±1.73% (standard deviation: 0.58%)
+                     after optimization. A one-sided t-test confirmed that this difference was statistically
+                     significant with $p < 0.001$. This indicates a more than fivefold improvement in matching
+                     accuracy and a substantial contribution to consistent inspection performance across
+                     tools.
+
+Beyond the mean shift, dispersion tightens markedly: the across-tool standard deviation
+                     contracts from 4.12% to 0.58% (≈86% drop; ≈98% in variance). As 
+Fig. 5
+ shows, the interquartile range shrinks, outliers largely disappear, and the effect
+                     holds across all particle sizes—strongest at low Laser Power (0.05-0.5%). In root-mean-square
+                     error (RMSE) terms (
+Eq. (1)
+), the fleet is within ±2%, stabilizing excursion thresholds and reducing decision
+                     variability, false alarms, and defect escapes.
+
+Fig. 5. Box-plot comparison of detection-rate alignment across tools before and after
+                           matching.
+
+Fig. 5
+ illustrates a comparative box plot showing the distribution of sensitivity alignment
+                     across 191 optical inspection tools, evaluated before and after the implementation
+                     of the proposed matching framework. Prior to optimization, the detection rates exhibited
+                     a broad distribution, characterized by a wide interquartile range and a number of
+                     statistical outliers—indicating significant variability in defect detection performance
+                     among tools. Following the application of the automated matching algorithm, the distribution
+                     converged markedly toward the median, with a pronounced reduction in interquartile
+                     range. This narrowing of the distribution reflects improved consistency and alignment
+                     in sensitivity responses across the entire toolset. Additionally, the substantial
+                     decrease in outlier occurrence signifies a meaningful enhancement in uniformity, even
+                     among tools that previously showed large deviations from the reference. These results
+                     visually and quantitatively demonstrate the effectiveness of the proposed framework
+                     in achieving stable and repeatable tool-to-tool calibration. Unlike conventional manual
+                     approaches—which often rely on iterative trial-and-error procedures and are prone
+                     to operator variability—this improvement was realized through a fully automated process,
+                     driven by residual matrix analysis and bilinear interpolation-based parameter optimization.
+                     The enhanced alignment contributes directly to increased measurement reliability,
+                     reduced false detection rates, and improved predictive quality control. As semiconductor
+                     manufacturing continues to push toward higher density and complexity, such consistency
+                     is critical to sustaining yield and ensuring robust defect detection across process
+                     layers. The results in 
+Figure 5
+ underscore the value of adopting data-driven, algorithmic calibration methods as
+                     a core component of modern Smart Fab environments.
+
+3. Yield Calculation Protocol and Dataset
+
+Yield metric and aggregation. Overall production yield was computed from electrical
+                     die-sort (EDS) results as Yield = (Npass/Ntested) × 100%, aggregated at the lot level
+                     and summarized per product family. Manufacturing scope. The study covered 300-mm high-volume
+                     manufacturing for 10-nm-class second-generation DRAM (1y, a.k.a. D1y), consistent
+                     with industry nomenclature that maps “1x/1y/1z” to successive generations of 10-nm-class
+                     DRAM; here, 1y (D1y) denotes the second generation. Inspection control points included
+                     post-develop inspection (PDI/ADI), post-etch inspection (PEI/AEI), and CMP defect-control
+                     checkpoints. Observation window and population. Pre- and post-deployment windows were
+                     defined around the fleet-wide rollout of the matching framework; products and layers
+                     were selected to ensure comparable layer mix and stable fab conditions across the
+                     windows. Controls and exclusions. To isolate the matching effect, periods with mask
+                     revisions, recipe retargets, or equipment retrofits were excluded, and we verified
+                     that no concurrent changes were made to SPC guard bands; product mix and layer distribution
+                     were held comparable between the two windows. Statistics. Paired analyses were performed
+                     on lot-level yields per product × layer cell. The fleet-level improvement of +0.41
+                     percentage points remained statistically significant ($p = 0.012$, paired t-test),
+                     with a confirmatory Wilcoxon signed-rank test showing consistent directionality. Usage
+                     frequency of matched optical tools. In production, the matched patterned-wafer optical
+                     inspectors were executed per lot at after-develop inspection (ADI/PDI) on the critical
+                     lithography layers analyzed, consistent with industry-standard high-frequency ADI
+                     sampling (every lot or every few lots). Given the standard lot size of 25 wafers,
+                     each per-lot invocation corresponds to 25 wafers scanned at that checkpoint. These
+                     in-line inspections also operate at AEI/PEI and API (post-CMP) control points as part
+                     of excursion gating; because the matched tools drive hold/rework decisions at these
+                     stations, their per-lot usage establishes a direct causal pathway from improved sensitivity
+                     alignment to the measured yield gain 
+[17]
+.
+
+4. Improvement in Maintenance Efficiency
+
+The proposed automatic matching algorithm yielded substantial improvements in efficiency
+                     during Preventive Maintenance (PM) operations, particularly in the context of tool
+                     calibration workflows.
+
+After implementing automation, the average calibration time per optical inspection
+                     tool was measured at approximately 3.8 hours, accounting for multiple scan–adjust–verify
+                     cycles and manual tuning steps. Following implementation of the automated framework,
+                     this time was reduced to 2.1 hours, representing a 44.7% reduction in per-tool calibration
+                     time. This decrease was consistently observed across the 191 tools evaluated, underscoring
+                     the robustness and repeatability of the proposed method under varied tool conditions.
+
+Fig. 6
+ provides a visual comparison between the manual and automated calibration workflows,
+                     highlighting both the procedural differences and time savings.
+
+Fig. 6. Comparative diagram of workflow efficiency between manual and automated matching
+                           processes.
+
+While the manual method necessitates repeated iterative adjustments—each susceptible
+                     to human variability and misalignment—the automated approach executes sensitivity
+                     analysis, parameter optimization, and final validation in a single, continuous calibration
+                     cycle. This eliminates the trial-and-error iterations inherent in manual processes
+                     and ensures convergence to optimal settings based on quantitative residual minimization
+                     rather than subjective assessment. The data further reveal that the automated system
+                     not only reduces the time burden but also enhances the stability and standardization
+                     of PM routines. As calibration can now be completed within a fixed and predictable
+                     window (∼2.1 hours), equipment availability is improved, and production schedules
+                     can be more reliably maintained. When extrapolated to the full set of 191 tools, the
+                     total annual engineering resource savings are estimated to exceed 1,300 hours, assuming
+                     quarterly PM schedules per tool. These savings can be redirected toward higher-value
+                     engineering tasks, contributing to both human resource efficiency and process innovation.
+                     Additionally, by minimizing operator involvement and increasing process reproducibility,
+                     the proposed method strengthens equipment history tracking, improves the fidelity
+                     of sensitivity alignment records, and facilitates predictive maintenance planning.
+                     This operational advancement aligns well with the goals of Smart Fab initiatives,
+                     where automation, data integrity, and resource optimization are critical performance
+                     indicators.
+
+5. Yield Improvement and Process Stability Assessment
+
+An analysis of actual production yield before and after applying the matching system
+                     showed an improvement from 92.43% to 92.84%, a gain of approximately 0.41 percentage
+                     points. A paired-sample t-test confirmed statistical significance ($p = 0.012$). Notably,
+                     process layers requiring high-resolution sensitivity (e.g., Layers 7-9) saw improvements
+                     of up to 0.63 percentage points, attributed to more accurate defect detection and
+                     reduced false positives. Additionally, sensitivity alignment across tools was compared
+                     based on Laser Power settings. The results showed significant improvements, particularly
+                     under low Laser Power conditions (0.05-0.5%), after applying the automated matching
+                     system. This suggests that the proposed method enables reliable sensitivity alignment
+                     even in regions where traditional calibration methods struggle. Such improvements
+                     are especially valuable in advanced process nodes, where tight control of inspection
+                     performance directly affects device reliability and production yield.
+
+Fig. 7. Detection-sensitivity alignment comparison by laser-power setting (before
+                           vs. after optimization).
+
+Fig. 7
+ quantitatively compares detection sensitivity alignment across various Laser Power
+                     conditions (0.05%, 0.1%, 0.5%, 1.0%). Tools optimized via the proposed method consistently
+                     outperformed those using traditional calibration, particularly in low-sensitivity
+                     regions. This demonstrates the effectiveness of the interpolation-based matching algorithm
+                     in maintaining robust sensitivity alignment under challenging conditions. The reduced
+                     variance and improved convergence in detection rates further validate the algorithm’s
+                     ability to ensure consistent inspection performance across all tools.
+
+6. Summary of Key Results
+
+The proposed automatic matching framework addresses the sensitivity alignment challenge
+                     in semiconductor optical inspection systems through a combination of structured calibration
+                     wafers, residual matrix analysis, and interpolation-based optimization. Large-scale
+                     validation across 191 tools confirmed its effectiveness across multiple quality metrics,
+                     including alignment accuracy, maintenance efficiency, and production yield. Matching
+                     deviations were reduced from ±10% to within ±2%, PM time was cut by 45%, and overall
+                     yield improved by more than 0.4 percentage points. These results indicate that the
+                     framework is more than a technical enhancement; it represents a new paradigm for quantitative
+                     defect sensitivity control. Furthermore, all procedures are fully automated and operator-independent,
+                     ensuring high repeatability and reproducibility. As a core technology for Smart Fab
+                     realization, this framework offers strong industrial scalability. It is expected to
+                     be expanded to other in-line inspection systems, such as CD-SEM, E-Beam inspection,
+                     and overlay metrology, evolving into an integrated alignment solution that ensures
+                     quality uniformity across diverse semiconductor tools.
+
+IV. CONCLUSIONS
+
+This work presents a precision matching framework that combines a structured calibration
+                  wafer, residual-based sensitivity quantification, and interpolation-driven parameter
+                  optimization to address performance alignment challenges in semiconductor inspection
+                  systems. The proposed methodology was implemented on 191 optical inspection tools
+                  in a high-volume manufacturing (HVM) line at Samsung Electronics. As a result, sensitivity
+                  matching deviation was reduced from ±10% to within ±2%, preventive maintenance time
+                  was shortened by 45%, and production yield increased by approximately 0.41 percentage
+                  points. These results highlight the technical advantages of the proposed approach
+                  over conventional manual calibration methods, particularly in terms of accuracy, repeatability,
+                  and automation. Unlike traditional iterative procedures, the framework quantifies
+                  sensitivity discrepancies through residual matrix analysis and identifies optimal
+                  parameter settings via high-resolution bilinear interpolation. This enables consistent
+                  and precise quality control across tools, satisfying the rigorous requirements of
+                  modern Smart Fab environments. Ultimately, the proposed system establishes a fully
+                  automated and operator-independent metrology infrastructure that is robust, scalable,
+                  and suitable for next-generation semiconductor fabs aiming to enhance calibration
+                  efficiency, ensure production stability, and improve long-term process reproducibility.
+
+REFERENCES
+
+1
+
+Brunner T. A., 2007, Impact of overlay metrology errors on overlay control strategies,
+                           Proc. of SPIE, Vol. 6518, pp. 65180F-1-65180F-12
+
+2
+
+Thomas A. D., Soni K., Nithyanadan K., 2025, Physics based phase control in coherent
+                           beam combining systems, Journal of Lightwave Technology, Vol. 43, No. 2, pp. 824-831
+
+3
+
+Zhao K., Gao S., Li H., Ma J., Teng Y., Cao K., 2021, Effectiveness of partial discharge
+                           test in detecting micro-defects of insulators in GIS, Proc. of 2021 IEEE 4th International
+                           Conference on Renewable Energy and Power Engineering (REPE), pp. 97-102
+
+4
+
+Lee S. K., Ma S.-M., Seo I., Shin H. S., Kim H. S., Cross A., 2014, Investigation
+                           of novel inspection capability for 3D NAND device wordline inspection, Proc. of 25th
+                           Annual SEMI Advanced Semiconductor Manufacturing Conference (ASMC 2014), pp. 140-143
+
+5
+
+Wang K., Zhang S., Pi L., Shi Z., Zhang S., Yu X., 2023, Investigating the impact
+                           of probe geometry characteristics on the Ra in the international metrology comparison
+                           of surface roughness, Proc. of 2023 2nd International Conference on Optical Imaging
+                           and Measurement (ICOIM)
+
+6
+
+Nguyen H. G., Meiners M., Schmidt L., Franke J., 2020, Deep learning-based automated
+                           optical inspection system for crimp connections, Proc. of 2020 10th International
+                           Electric Drives Production Conference (EDPC), pp. 1-6
+
+7
+
+2017, High Power Laser-Sustained Plasma Light Sources for KLA-Tencor Optical Inspection
+                           Systems, EUV Litho Conf.
+
+8
+
+Rumiantsev A., 2019, On-Wafer Calibration Techniques Enabling Accurate Characterization
+                           of High-Performance Silicon Devices at the mm-Wave Range and Beyond, pp. 45-48
+
+9
+
+Sakamaki R., Horibe M., 2019, Probe positioner and probe tip calibration for traceable
+                           on-wafer measurement, Proc. of 2019 92nd ARFTG Microwave Measurement Conference (ARFTG),
+                           pp. 1-4
+
+10
+
+Klarák J., Andok R., Hricko J., Klacková I., Tsai H.-Y., 2022, Design of the automated
+                           calibration process for an experimental laser inspection stand, Sensors, Vol. 22,
+                           No. 14, pp. 5306
+
+11
+
+Zhang Y., Zhang Y., Liu W., 2023, Analysis, simulation, and scanning geometry calibration
+                           of palmer scanning in airborne hyperspectral LiDAR, Remote Sensing, Vol. 17, No. 8,
+                           pp. 1450
+
+12
+
+Fravolini M. L., Brunori V., Campa G., Napolitano M. R., La Cava M., 2005, Structural
+                           analysis approach for the generation of structured residuals for aircraft FDI, Aerospace
+                           and Electronic Systems Magazine, Vol. 20, No. 5, pp. 3-8
+
+13
+
+Lechien T., Dehaerne E., Dey B., Blanco V., Halder S., de Gendt S., Meert W., 2023,
+                           Automated semiconductor defect inspection in scanning electron microscope images:
+                           a systematic review, arXiv preprint arXiv:2308.08376
+
+14
+
+Dick W. D., Hegner L. A., Li L., 2023, 10nm particle deposition capability for qualification
+                           of next-generation defect inspection tools, Proc. of 2023 34th Annual SEMI Advanced
+                           Semiconductor Manufacturing Conference (ASMC), pp. 1-6
+
+15
+
+Dark Field Wafer Defect Inspection System DI4600, Product page
+
+16
+
+2023, TDI Primer--High Sensitivity Line Scanning, Technical primer
+
+17
+
+Defect Inspection and Review—Patterned/Unpatterned Wafer Defect Inspection & Review
+                           Systems, Product page
+
+18
+
+Auto-Load 20 nm Particle Deposition System 2300G3A, Product page
+
+19
+
+2024, Hitachi High-Tech Launches Wafer Surface Inspection System LS9300AD for Wafer
+                           Manufacturers, News release (PDF)
+
+20
+
+Getreuer P., 2011, Linear methods for image interpolation, Image Processing On Line
+                           (IPOL)
+
+21
+
+2010, Root Mean Square Error, NIST ITL Dataplot Reference
+
+Hyoseop Shin
+
+Hyoseop Shin is the first author of this paper and is currently pursuing a Ph.D. degree
+               in the Department of Semiconductor and Display Engineering at Sungkyunkwan University,
+               Samsung Institute of Technology, Republic of Korea. He is also an engineer with the
+               Semiconductor Business Division at Samsung Electronics, South Korea. His research
+               interests include optical metrology optimization, defect inspection alignment, and
+               smart factory automation for high-volume semiconductor manufacturing.
+
+Hojun Lee
+
+Hojun Lee is currently pursuing a M.S. degree in Industrial Engineering at Kongju
+               National University, Gongju, South Korea. His research focuses on Smart Fab systems
+               and the integration of advanced supply chain strategies for the semiconductor industry.
+               He is particularly interested in applying data-driven and statistical methodologies
+               to optimize high-volume semiconductor manufacturing and support real-time decision-making
+               in intelligent fabrication environments.
+
+Dongkun Shin
+
+Dongkun Shin received his Ph.D. degree in computer science and engineering from Seoul
+               National University, Seoul, South Korea, in 2004. From 2004 to 2007, he was a Senior
+               Engineer with Samsung Electronics, South Korea. He is currently a Professor with the
+               Department of Electrical and Computer Engineering, Sungkyunkwan University, Suwon,
+               South Korea. His research interests include flash storage, machine learning, computer
+               architecture, and operating systems.
+
+Article Information (continued)
+
+                           [
+
+Research article
+
+                           ]
+
+Index Terms
+ : 
+
+Index Terms
+
+Keyword
+ : 
+Optical metrology
+
+Keyword
+ : 
+defect inspection
+
+Keyword
+ : 
+particle deposition system
+
+Keyword
+ : 
+hardware matching
+
+Keyword
+ : 
+semiconductor yield
+
+Keyword
+ : 
+residual matrix
+
+Keyword
+ : 
+TDI gain
+
+Keyword
+ : 
+laser power optimization
+
+Keyword
+ : 
+Smart Fab
+
+This display is generated from NISO JATS XML with 
+jats-style.xsl
+. The XSLT engine is Saxonica.
+
+Copyright © IEIE All right's reserved
+
+Articles published in JSTS are distributed under the terms of the Creative Commons Attribution Non-Commercial License (CC BY-NC 3.0), which permits non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. Commercial use requires the prior permission of the publisher (
+www.theieie.org
+).
+
+ISSN : 1598-1657 (Print)  / 
+ISSN : 2233-4866 (Online)
+

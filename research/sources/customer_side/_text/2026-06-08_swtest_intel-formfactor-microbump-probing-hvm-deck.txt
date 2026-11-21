@@ -1,0 +1,318 @@
+ Micro Bump Probing: High Volume Experience
+Driven Capability Demonstration and Direction
+            for Advanced 3D/2.5D Packaging
+
+              Saad Ahmed1, Hamed Barghi1, Karthik Subramanian1, Thakshila
+              Wickramaratne1, Jeremy Streifer2, Ethan Caughey2
+                                                                     1 - Intel Foundry
+                                                                      2 - FormFactor
+
+
+          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                                                        Outline
+         Motivation, Background and Challenges w/ µBump probing
+         Foveros DOW36 vs. EMIB: Layout and Probing Solutions
+         Intel µ-Bump Experience: Qual Strategy, Results and HVM
+          Production Expertise
+         Summary and Outlook
+
+
+
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   2
+                                                                  Motivation
+ Recent trends drive increasing demand for proven / capable micro-bump
+      probing technologies
+          Explosive growth of AI workloads; Advanced heterogenous integration across multiple
+           silicon technology nodes; Aggressive interconnect pitch scaling; Known-good die (KGD)
+ Intel has extensive experience with micro-bump probing in High Volume
+      Production through the Foveros product line (HVM starting in 2019) – with
+      plans to enable micro-bump probing on EMIB devices this year
+
+
+
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   3
+                                     General Strategies to Consider
+ Goal to strike balance between
+        Minimizing design constraints to enable sort/test  Native pitch probing
+        Maximizing power delivery at sort, to improve screening efficiency and
+         minimize risks for burns/repairs that lead to probecard availability losses and
+         increase total cost of ownership  Relaxed pitch probing
+          Native Pitch Probing                                                                                          Relaxed Pitch Probing
+                                                           Less Constrained     Si Design* More Constrained
+
+                                                           Lower               Probe CCC                    Higher
+
+
+                                                           Lower              Power Delivery                Higher
+
+
+                                                           Higher         Probe Burn Risk                    Lower
+
+
+                                                           Higher   Probecard Availability Risk              Lower
+
+                                                                                                                       * Upfront planning for bump layout design rules
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)              SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                           4
+                                   Challenges with µBump Probing
+ Manage tight radial alignment control across a fleet in mass production
+ Stable and uniform electrical contact
+ Uniform µBump deformation
+ Sort/Probe induced defect modes and yield losses
+ Downstream risks at assembly and reliability requiring integrated qual strategies
+
+                                      Solder Avalanche                                                Missing Bump
+
+
+
+
+ Significant and synergized efforts across Intel Foundry and FormFactor, to co-optimize probe
+    architecture and probing process, to enable high-volume manufacturing
+
+ Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   5
+                               Foveros-S DOW36 vs EMIB Technology
+                                                                 • Foveros DOW36                                                       • EMIB45µm
+                                                                 • Full field µ-bumps                                                  • Core bumps: 65-70µm CD;
+                                                                 • 18µm CD                                                               100µm min pitch
+                                                                 • 36µm min bump                                                       • Bridge µ-bumps: 23-28µm
+                                                                   pitch                                                                 CD; 45µm min pitch
+
+
+
+
+Quad clusters (70µm min                              Singles (skip-bump, 90µm min                      µ-bump (skip-bump,         Core bump (100µm min
+probe pitch)                                         probe pitch by rule)                              90µm min probe pitch)      probe pitch)
+
+
+
+
+Quad Probing (Intel) – US Patent No. 12,163,982
+
+
+                   Both architectures require hybrid probe solutions with tight radial alignment control
+  Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)             SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                               6
+                                              µ-Bump Probing Solutions
+                               Min Square                   Tip                  Probe                              Hybrid
+      Probe                                                          CCC*                       Alignment
+                                 Pitch                      Size                 Force                              Option
+Single-IO-70                      72x62µm                  28x28µm    0.6A        0.8gf
+                                                                                              ≤7 µm (build)
+QUAD-70-A                                                                         1.3gf                               Yes
+                                  72x67µm                  47x47µm    0.7A                   ≤10 µm (accept)
+QUAD-70-B                                                                         2.7gf
+ Bridge-IO                       78x78µm                   28x28µm    1.1A        1.3gf
+  Core-90                         78x78µm                  50x56µm    1.3A        2.2gf
+                                                                                             ≤10 µm (accept)          Yes
+  Core-110                        78x95µm                  50x60µm    1.4A        2.5gf
+  Core-140                       75x125µm                  50x60µm    1.7A        2.7gf
+     In Qual                                                         Intel Foundry Data                   *MeGP is available and increases effective CCC
+
+
+
+       Multi-Bump
+                                                              Ex: Foveros DoW36
+                                                                                              Mix CD Bump                                    Ex: EMIB45 Mixed CD
+
+
+
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)             SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                      7
+                                                       Typical Qualification Plan
+  Select/develop probe(s) to meet                                          Intel + FFI test coupon                                       Build test vehicles (TV) to
+     critical sort requirements                                       characterization → probe finalized                                 validate required envelope
+                                                                                                                                        TV: Probe card          TV: Si
+                                                                                                           Materials
+                                                                                                        Characterization
+
+
+
+
+                                                                      Load
+
+
+
+
+                                                                                       Load
+                                                                                                        (SEM, EDS, X-ray)
+                                                                         Over Travel          Current
+
+
+
+
+                                                                                                                                        Thermomechanical cycling,
+                                                                                                                                          fatigue test and lifetime
+Assess probing performance at                                           Probing Process optimization                                         Hot
+
+
+
+
+                                                                                                                               Temp
+COLD/HOT/MERGED socket                                                   for high volume readiness
+
+
+
+
+                                                                                                                                                         Load
+(start at COLD; then switch to HOT for die sort only)                                                                                 Cold
+                                                                                Clean parameters
+                                                                                Over-Travel                                                 Time                    Time
+    Probe performance validation using
+                                                                                Card-to-card variation
+    baseline recipe for CRES and shorts
+                                                                                Module to module variation
+
+                                              Iteration, recipe optimization and
+                                              recipe hardening                                                                             Bump deformation
+                                                                                                                                       assessments to validate no
+                                                                                                                                           downstream risks
+  Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                        Hybrid Probing Radial Alignment
+                                                 (FFI Outgoing)
+
+ Foveros DOW36 HVM example
+
+
+ FormFactor outgoing radial alignment
+      from a representative product (Product A)
+                                                                                                                          Acceptance
+                                                                                                                          Spec
+ 243K springs across 15 cards, including                                                                             Build Spec
+      QUAD and Single probe types
+
+
+
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                9
+                                       Hybrid Probing Radial Alignment
+                                          (Intel Foundry Incoming)
+                               Foveros DoW36 – Product B                                                     EMIB45um Mixed Pitch – TV1
+                         QUAD-70-A + Single-IO-70 probe alignment                                        Core-90 + Bridge-IO probe alignment
+                                  (2 heads, 10k probes)                                                 (3 heads, 19k probes, in development)
+
+
+
+
+                                         QUAD-70-A         Single-IO-70                                         Core-90          Bridge-IO
+
+
+             Good radial alignment control demonstrated on many Foveros
+             products in high volume
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)       SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                         10
+                  Foveros DOW36 Mass Production Summary
+                         vs EMIB Mixed Pitch Probing
+                                                                         2019 – 2026+                                          2026 
+       Metric                                              Foveros DOW36                                    EMIB45 Mixed Pitch Probing
+       Bump info                                           Full field µ-bumps                               Mixed CD
+                                                           18µm CD                                          Core bumps: 65-70µm CD; 100µm min pitch
+                                                           36µm min pitch                                   Bridge µ-bumps: 23-28µm CD; 45µm min pitch
+       Probing pitch                                       Quad clusters (70µm min pitch)                   Core bumps (100µm min pitch)
+                                                           Single µBump (90µm min pitch by rule)            µ-bumps (90µm min pitch)
+       Radial Alignment Target                             ≤10 µm                                           ≤10 µm
+       Technology Readiness                                In Mass Production since 2019                    Under development
+                                                           Wafer- and Die-Sort                              Technology Certification by Q3’26
+       High Volume Production Experience                   Products: 25+ (multiple sites)                   --
+                                                           Wafers: 300K+
+                                                           FFI Probe Heads: 1500+
+       Probe Card Availability                             ~ 90% (Average across products)                  --
+       Probe card Mean Time to Failure                      1 – 2 for standard probe maintenance            --
+       (Card returns per 100 wafers)                       (Average across products)
+
+
+                                                                                                                                                   11
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)     SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                             Performance on EMIB45 Test Vehicle
+ Representative CRES results from EMIB45 Mixed CD TV using hybrid (Core-90+ Bridge-IO) probe card
+                                      100C Sort                                                                    Merged socket (die sort platform)
+
+
+
+
+                                                                                  Per probe CRES variation (ohm)
+ Per probe CRES variation (ohm)
+
+
+
+
+                                                                   Passing                                                                  Passing
+                                                                   limit                                                                    limit
+
+
+
+
+                                                                                                                                                       COLD -10C
+                                                                                                                                                       HOT  100C
+
+
+
+
+ Methodology:
+                                   Run wafer(s) multiple times and assess the per-pin CRES stability vs. different process variables
+                                    (temperature, overtravel, cleaning parameters, etc)
+                                   Validate no issues with process or probe card induced leakage
+                                   Freeze the most optimal recipe for mass production
+                                  Intel sort performance using FormFactor probes have healthy electrical
+                                  performance at Cold/Hot & Merged socket test conditions
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)             SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                                  Bump Deformation Examples
+      Foveros DoW36                                                 EMIB45 Mixed CD
+
+
+
+
+                                                                                                 Core
+                                                           QUAD
+
+
+
+
+                                                                                                 Bridge
+                                                           Single
+
+
+
+
+        Well-centered and symmetric bump   contacts with Intel probing process on microbumps
+                                      SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                                                                                    13
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)
+                      General Considerations for Overcoming
+                               Downstream Risks
+ Optimizing probe tip size and force to manage solder bump deformation
+ Good radial alignment control to minimize asymmetric bump deformation
+ Controlling the maximum die temperature throughout the test
+ Optimizing the Test time at HOT
+ Managing the number of touchdowns and/or using post sort reflow to
+    preserve the bump coplanarity
+ Assembly and reliability DOEs to quantify safe envelope
+
+
+
+                                                                                                                      14
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                              Summary and Future Outlook
+        Intel Foundry has significant µ-bump probing experience that is well
+         established in mass production across multiple sort platforms and
+         factories
+        FormFactor is a worldwide leader in probecard supply enabling high
+         volume test on µ-bump interfaces
+        The teams are leveraging proven expertise and Foveros DOW36 HVM
+         experience to develop µ-bump capable sort solutions for EMIB-T
+         advanced packaging
+        Collaboration as demonstrated here keeps probe technology and
+         packaging developments aligned, helping identify and address probing
+         challenges before they impact yield
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   15
+                                   Acknowledgements and Questions
+        Thank you to Intel Foundry and FormFactor colleagues for all
+         of your contributions
+
+        Questions?
+
+
+
+
+Saad Ahmed (Intel Foundry), Jeremy Streifer (FormFactor)   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   16
+
