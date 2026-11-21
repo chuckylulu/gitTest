@@ -1,0 +1,950 @@
+
+
+HBM Shifts Testing Left To Preserve AI Chip Yield
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                HBM Shifts Testing Left To Preserve AI Chip Yield                                                    
+
+Test, Measurement & Analytics
+
+HBM Shifts Testing Left To Preserve AI Chip Yield
+
+Testing sooner and more often can improve quality and reduce scrap, but it’s also more costly.
+
+								May 12th, 2026 - 
+
+								By: 
+Anne Meixner
+
+Key Takeaways:
+
+A high-yield, known-good stack requires multiple test insertions.
+
+Known good stack testing poses challenges for power delivery and thermal management.
+
+The shift to HBM4 and HBM5 will increase the pressure for shift-left test flows.
+
+Taller high-bandwidth memory (HBM) stacks and tighter TSV pitch are impacting AI module yields. The solution is to push test further left in the manufacturing flow, but that shift comes at a cost.
+
+HBM is an essential ingredient in AI systems, which have become insatiable consumers of memory as the volume of data to be processed and stored continues to grow. Over the past decade, HBM memories have grown from 2 to 12 dies in a stack, and soon will reach 16. Meanwhile, the number of HBM stacks in a multi-die assembly inside an AI data center has increased from 4 to 8.
+
+Today, HBM accounts for nearly half the cost of AI chips. So a defective memory stack found during final test is an expensive failure, which is why there is an increasing focus on known good stacks (KGS). But stacking dies is an intricate and difficult manufacturing process. Alignment of through-silicon vias (TSVs) to microbumps is measured in microns. The thinning and sawing of wafers introduce mechanical stresses that can exacerbate existing cracks, slips, and scratches. On top of that, thermal compression bonding can cause opens, shorts, and head-in-pillow and high-resistive connections.
+
+Worse, finding these real and potential defects is a huge challenge. Stacked die testing includes balancing test coverage with test time, mechanical handling, thermal management, and power delivery. While engineering teams can reduce test costs with DFT and high site count parallel test, stacked die have difficult thermal management problems due to stack height and high power. And all of this will become more difficult with HBM4 and HBM5.
+
+“Data from hyperscalers indicates that HBM failures are the number one cause of GPU failures in data centers,” said Faisal Goriawalla, director of product management for SLM at 
+Synopsys
+. “Studies also indicate that HBM is more prone to faults than traditional DRAM due to its complex vertical stacking, with column failure (e.g., TSV defects) being particularly common. The move from HBM3 to HBM4 will require further evolution in multi-die support. The 2,048-bit memory interface requires a significant increase in the number of TSVs routed through a memory stack. This will mean shrinking the external bump pitch as the total number of microbumps increases significantly. In addition, support for 16-high TSV stacks brings new complexity in wiring up an even larger number of DRAM dies without defects.”
+
+This calls for more testing earlier in the manufacturing flow so that faulty stacks can be scrapped prior to assembly. Today, to produce a shippable HBM stacked die, the test process includes multiple insertions at both wafer-level and stacked-die level. Both the HBM logic and HBM DRAM dies go through wafer test. Each DRAM will go through multiple insertions — wafer-level burn-in, hot and cold testing, and repair — after which the DRAM wafer is thinned, bumped, and singulated. DRAM dies are then stacked upon the wafer of logic base die and go through a series of test insertions. Depending on the assembly manufacturer’s process, the testing could be done after each DRAM die is stacked, or it could be done after 2 or 4 dies are stacked. Eventually the stacked wafer is singulated.
+
+Fig. 1: Generic manufacturing test process for HBM known good stacks comparing pre-singulated and post-singulated flows. Source Teradyne
+
+Hypothetically, one could test the singulated stacked HBM DRAM. However, that is not currently done.
+
+“The test flow on the left is the standard today,” explained Hanh Lai, product marketing manager in the memory division at 
+Teradyne
+. “It seems to be the most cost-effective and more risk-averse, because it doesn’t require probing an exotic structure, such as a singulated stacked die, though having dies stacked on a wafer does present a planarity challenge. But testing of singulated stacked dies is of interest, and prober companies are developing solutions. The reason is that integrators (i.e., Nvidia and AMD) are concerned about final package yield. In the typical GPU package, a GPU is surrounded by eight HBM stacks. One defective HBM stack becomes very costly at that particular point.”
+
+The call for shift left becomes louder as the cost of one bad die or bad stack rises.
+
+“It all comes down to cost,” said Vernon Rodgers, executive vice president of sales and marketing at Aehr Test Systems. “The ability to reduce the scrappage, improve yield, and reduce waste drives the test choices. Maybe in the past it was too expensive to move left, but today the yield cost curve definitely is driving it more and more left. Consider wafer level burn-in. Wafer level burn-in reduces infant mortality related defects. As we move to [more] dies per stack and bigger packages, this only becomes more important.”
+
+Others agree. “As HBM devices grow in complexity and cost, test content continues to shift earlier in the flow,” said Kevin Tran, senior director of product marketing at FormFactor. “This shift left helps prevent defective dies from entering expensive stacking processes and drives increased use of high‑speed test, wider parallelism, and tighter thermal control at wafer test.”
+
+Wafer test and burn-in
+
+The path to known-good stacks begins with known-good dies (KGDs). A thorough wafer test of each DRAM and the logic base die requires testing internal circuitry, core memories, and the TSVs.
+
+DRAMs require thousands of test patterns specific to the memory architecture. Due to the bit-cell density, the application of redundancy plays an essential role during the test process. Without it the wafer-level yield would be significantly lower. Patterns are supplied by ATEs, and to reduce test costs, DRAM dies are tested in parallel — typically 64 to 128 sites.
+
+Industry experts emphasize the importance of testing the logic base die because it provides the only access to the memory dies in the stack. In addition, the impact to stacked die yield is significant. “Consider the stacked die — one base logic, and then 8 to 16 HBM,” said Aehr Test’s Rodgers. “Making sure that base logic device is of the highest quality is critical, because if it’s bad, 16 dies get thrown away. So it’s a huge multiplier in the yield curve.”
+
+The logic base die test requirements focus on the DFT circuitry, which enables HBM DRAM test during the stacking process and throughout its lifecycle. This testing relies upon JEDEC-specified direct access [1-3] or IEEE 1500 [4] using a limited number of pads or microbumps. Applying test content at logic wafer test ensures there are no defects in the internal logic, circuitry for IEEE 1500, direct access bus, memory built-in self-test (MBiST), internal logic, TSV connectivity, and PHY circuitry.
+
+Nevertheless, the challenges with wafer probing increase with each new HBM generation.
+
+“At advanced DRAM process nodes, especially those used in HBM, wafer-level test is not just limited to contact and functional screening. It becomes a multi-dimensional challenge across mechanical, power delivery, signal integrity, and throughput,” said FormFactor’s Tran. “Shrinking pad geometries can be addressed with advanced MEMS probe technologies, which provide tighter pitch and improved accuracy control. New speed and power requirements in HBM4 and HBM5 demand data transfer rates exceeding 10 Gbps in future generations, and power levels of up to 100 watts per HBM stack. MEMS probes also offer higher current capability and, when combined with optimized probe card-level power delivery design, can address the high-power, high-speed requirements of KGD testing.”
+
+Typical DRAM test flows include wafer-level burn-in, during which latent defects are accelerated so that standard testing can be done. “With burn in, two things are addressed. One, you’re looking for devices that are weak, such as gate oxide issues. Two, because bit-cells are capacitors, you need to stabilize their values,” said Aehr Test’s Rodgers. “The debate has always been, do you burn-in at wafer, singulated die, or package? But now, when you start stacking, you want to move left, and it’s really what’s driving wafer-level burn-in.”
+
+The contact solution for wafer-level burn-in needs to address the mechanical challenges that come with electrically contacting the test access pads or bumps. This can be done for 300mm wafers using MEMS technology or with micro-pogo pins.
+
+Fig. 2: MEMS wafer-level contactor for burn-in. Source Aehr Test
+
+Combining DFT with probing on aluminum test pads assists in lowering test costs. In specifying the microbump layout for HBM I/O, the JEDEC standard includes space for adding sacrificial test pads.
+
+“When you use a sacrificial pad and space them out, your probe card becomes much cheaper. You don’t need to go spend $500,000 on a probe card. They can save up to 80% on the cost of a probe card. DFT enables quality, but what it really enables is a lower cost approach to wafer-level burn-in,” noted Rodgers. “You can go to micro pogo versus MEMS. I can offer the technology at two very different cost points, but the DFT will determine which cost point you actually enter.”
+
+Stack test
+
+Testing stacked dies reduces the yield risk of the AI product’s final test. As noted earlier, the standard manufacturing and test flow stacks HBM on the base die in wafer form. Then, the test interface probes the backside of the wafer. Multi-site testing is standard. But stacking dies poses challenges in terms of thermal management, power delivery, and mechanical handling. And as test insertions increase, containing test costs becomes more difficult. The number of test insertions for a 12-stack die can range from 3 to 12, depending on the assembly house’s quality levels.
+
+“Stacking DRAM dies can introduce new errors into the process, including issues related to higher‑speed transfers within the stack, increased power and current requirements for taller stacks, and thermal challenges associated with these factors,” noted FormFactor’s Tran. “Testing and sorting stacked die can eliminate bad die early and help reduce the overall cost of test. Stacked die testing requires alignment accuracy at the single-digit micron level. HBM5 requires up to 16‑high stacks, making alignment accuracy even more critical to accommodate TSV and bonding tolerances.”
+
+Others point to the importance of intermediate testing of stacks during the assembly process.
+
+“Intermediate testing during the assembly process is becoming increasingly critical, especially as the cost of HBM continues to rise. To support this, new contact mechanisms are being developed to enable reliable testing at intermediate stages,” said Omer Dossani, vice president of global test services at 
+Amkor Technology
+. “Many of these challenges are resolved by the time we reach high-volume manufacturing (HVM) in our factory. However, they remain significant manufacturing considerations, requiring increasingly stringent control of temperature stability during testing, as well as the use of specialized sockets, dedicated cleaning materials, and enhanced data monitoring throughout the manufacturing process.”
+
+When it comes to a test solution, power delivery and thermal management are always considerations, but they become complicated as the stack height grows. “If you look at a 16-story building, the sun hits the outside and the center doesn’t really get the heat,” said Aehr Test’s Rodgers. “It’s the reverse in a stacked die. The outside is cooled, but how do you get the heat out of the center? With stack die burn-in or test, how you manage the thermals in the center die is important.”
+
+Stacking dies necessitates good thermal and power management. “The problem is how to manage thermal output from these devices,” said Teradyne’s Lai. “The prober company needs to dissipate the heat from the HBM stacks. Right now, our tester has the capability of testing up to 128 devices in parallel, depending upon the device requirement in terms of pin count and power. From generation HBM3 to HBM4, the power increase is likely to be more than 2X. The challenge for both the prober and probe card companies is to dissipate the heat from these high-powered devices.”
+
+Testing at post-singulated die is an attractive shift-left test prior to 2.5D integration with the final AI chip. It also enables active thermal control versus the passive thermal control used for full-wafer testing. This capability provides more precise temperature during test. The solution for testing singulated stacks involves several technologies — die carrier for stacks, loader/unloader equipment, handler for stacked die, and active thermal control. None of these approaches is inexpensive, and each requires development into a high-volume manufacturing (HVM) solution.
+
+The current approach for testing stacked die is pre-singulation, probing the backside of the logic base die on aluminum pads for which there is a specified space amid the layout of microbumps. As such, the ATE needs the instrumentation to test both logic and memory, and with up to 128 test sites for parallel test, the power delivery demand is significant.
+
+After the DRAM is stacked on base die, testing the core memory can be done with the logic base die’s MBiST (often programmable) or a direct access bus. Repair for defective TSVs occurs during each test insertion.
+
+“The SoC designer must therefore be able to deploy a flexible BiST engine that allows different algorithms to be used to trade off high coverage versus test time, depending on the use case scenario (manufacturing test vs. power-on self-test (POST) vs. in-system debug and diagnosis),” said Synopsys’s Goriawalla. “This engine must be programmable to handle different latencies, and address ranges and timing of test operations that vary across DRAM manufacturers. It may also need to support post-package repair (PPR) for HBM DRAM to delay any ‘truck roll-out’ for in-field service. The diagnostics performed by the BiST engine must be precise, showing the failing bank, row address, column address, etc., if there is a defect detected in the DRAM stack.”
+
+Fig. 3: Example of fault detection in an HBM stack, which is required for repairing TSV connectivity. Source Synopsys
+
+Conclusion
+
+While HBM DRAM vendors can now charge a premium, their focus remains low-cost. “The mentality of memory manufacturers is that the test solution needs to be optimized for low-cost — more so than the SoC vendors who operate with very short lifecycle products,” said Teradyne’s Lai. “HBM manufacturers are in the business for a very long time in a very competitive market, which historically has low margins.”
+
+Still, the economic pressures of scrappage are driving HBM stacked-die vendors to more testing earlier in the flow, which invariably increases test costs. But that may be offset with a flexible MBiST on the base die, which permits tradeoffs on test content. Testing stacked dies with a high level of parallelism raises the bar for both ATE power delivery and thermal management solutions. And finally, there is still the prospect of testing post-singulated stacked dies, which remains to be proven with unknown economic impact.
+
+References
+
+HBM JEDEC 
+https://www.jedec.org/standards-documents/docs/jesd235a
+
+HBM3 JEDEC 
+https://www.jedec.org/system/files/docs/JESD238B.01.pdf
+
+HBM4 JEDEC 
+https://www.jedec.org/system/files/docs/JESD270-4A.pdf
+
+IEEE 1500 
+https://standards.ieee.org/ieee/1500/7704/
+
+Related Articles
+
+AI Accelerators Usher In New Era For IC Test
+
+The number and variety of test interfaces, coupled with increased packaging complexity, are adding a slew of new challenges.
+
+HBM Leads The Way To Defect-Free Bumps
+
+Bump scaling is pushing defect inspection to the limit. What comes next and why it matters.
+
+HBM4 Sticks With Microbumps, Postponing Hybrid Bonding
+
+Process cost and yield issues delay the adoption of hybrid bonding.
+
+Chiplet Interfaces Embrace Failures
+
+Why lane swapping is essential to meet assembly yield.
+
+ Tags:
+
+Aehr Test Systems
+
+Amkor
+
+back-side test
+
+DFT
+
+DRAM
+
+FormFactor
+
+HBM
+
+high-bandwidth memory
+
+JEDEC
+
+KGD
+
+KGS
+
+known good stack
+
+MBiST
+
+parallel test
+
+Repair
+
+Synopsys
+
+Teradyne
+
+TSV
+
+Anne Meixner 
+
+(all posts)
+
+							Anne Meixner is a technical editor at Semiconductor Engineering. She has 30+ years in the semiconductor industry. She became fascinated by defects in the semiconductor manufacturing process as a young engineer at IBM. Over that period, she has focused on test methodology with emphasis on mixed-signal and analog DFT and test. As a technical communicator she takes complex ideas and explains them in consumable understandable pieces. Meixner has worked at IBM, Carnegie Mellon University and Intel.  She holds three U.S. patents and her peers have recognized her work with two best papers at IEEE International Test Conference.  She founded The Engineers’ Daughter in 2015 to consult on semiconductor testing and to coach engineers.
+
+1 comments
+
+Saket Goyal
+
+says:
+
+May 12, 2026 at 8:15 am
+
+This is very well written article.
+
+Reply
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+
