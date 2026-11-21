@@ -35,6 +35,7 @@ for name, d in (("H1 2025 restated", H125r), ("H2 2025 derived", H225), ("H1 202
 print(f"H2 2025 vs H2 2024 sales YoY: H2 2024 = 445,362 - 189,315 = {445_362-189_315:,}; YoY {yoy(H225['sales'], 445_362-189_315):.1f}%")
 print(f"H1 2026 sales YoY {yoy(H126['sales'], H125r['sales']):.1f}%  FY2025 YoY {yoy(FY25['sales'], FY24r['sales']):.1f}%")
 # SBC / FCF
+print(f"PPE purchases H2 2025 = 41,479 - 11,322 = {41_479-11_322:,}")
 print(f"SBC/FCF FY2025: {pct(FY25['sbc'], FY25['fcf']):.1f}%;  FY2024: {pct(1_034, 41_414):.1f}%")
 ltm_fcf = H225["fcf"] + H126["fcf"]
 ltm_sbc = H225["sbc"] + H126["sbc"]

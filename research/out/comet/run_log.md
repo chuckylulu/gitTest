@@ -24,3 +24,29 @@ Session date: 2026-11-21. Fiscal year = calendar year (ends 31 December). Rules:
 3. Five parallel module agents (shared brief out/comet/calc/_agent_brief.md): XS (CA20 specs, dose, adoption),
    RV (rival systems), IXM (x-ray modules buyers and source roadmap), DV (division half-years, IXS economics and
    strategic options, PCT concentration and AE/MKS, CMD targets), A (group Module A).
+4. Module agents finished (row counts XS 73, RV 82, IXM 76, DV 163, A 255). Each ran tools/quote_check.py on its own part.
+   About 150 further documents were saved by agents (rival product pages and releases, Excillum/Hamamatsu/Zeiss source pages,
+   Comet x-ray module pages, older Comet reports back to 2017, newswire copies of 2022-2024 trading updates).
+5. Manifest audit (calc/manifest_audit.py): 9 rows marked RETRIEVED were not the documents (7 listing/JS pages already deleted by
+   agent A; a 212-byte Waygate bot-check page; an Elsevier redirect stub). Re-marked NOT RETRIEVED with an AUDIT note; none is
+   cited in evidence.csv.
+6. calc/fix_urls.py replaced 30 generic "comet.tech/en/investors" URLs in XS.csv with the exact download URL from the manifest.
+7. Module B rows (catalyst calendar) in parts/B.csv (calc/B_build_csv.py). Merge: tools/merge_parts.py -> evidence.csv, 653 rows
+   (363 [F], 188 [C], 41 [S], 61 [I]). quote_check on the merged file: 573 FOUND + 12 FOUND (layout-insensitive), 0 NOT FOUND,
+   0 flags; 68 rows carry no quote ([I] rows and [S] leads from refused pages).
+
+## Self-check (clean-context sub-agent, inputs: evidence.csv and sources/comet/ only)
+Rows checked: A-010, A-013, A-001, A-004, A-041, A-051, A-052, A-116, A-120, A-027, XS-051, XS-059, XS-022, DV-040, DV-142.
+Result: 15 MATCH, 0 MISMATCH, 0 CANNOT OPEN. Two caveats, both fixed by calc/selfcheck_fixes.py and re-merged:
+- A-001: figures correct, but cited p9 holds them in the book-to-bill reconciliation; the income statement is p10. Page corrected.
+- DV-142: values confirmed on the rendered CMD 2025 slide p86, but the quote "EBITDA +6 PP to +9 PP" spliced PCT's and IXS's
+  deltas from scrambled chart text. Quote replaced with the slide title and a note recording the rendered-slide read.
+Other wording found by the checker matched the row values and periods (e.g. A-120 "largest customer ... 22.8% of Group sales";
+XS-051 funnel ">60 Evaluation / >25 Qualification / 5 orders"; DV-040 IXS EBITDA (3,985)).
+
+## Outputs
+dossier.md, evidence.csv, handoff.md, review_packet.md, gaps.md (83 lines), run_log.md, calc/ (scripts), parts/ (module notes).
+
+## Attempts that added nothing (stopping rule)
+- 2022-2024 Q1/Q3 trading updates from the issuer: comet.tech redirects old URLs; web.archive.org reset connections twice.
+- Customer-side CA20 evidence: two search rounds (customers x conferences) found none.

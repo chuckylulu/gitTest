@@ -1,0 +1,654 @@
+id,tag,status,pages,flags,local_file,quote
+XS-001,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2023.html,"During a festive event, Comet Yxlon presents the brand-new CA20 3D X-ray system for advanced packaging applications."
+XS-002,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2023.html,Three-dimensional X-ray images with a resolution of less than 1 µm can reliably identify typical defects in 3D IC solder connections
+XS-003,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2023.html,"Modern analysis software based on deep learning takes over the automatic evaluation, including report generation according to the user's requirements."
+XS-004,[F],FOUND,13,,research/sources/comet/2024-06-13_comet_conference-presentation-Stifel-2024-06.pdf,CA20 Lab version introduced in late 2023
+XS-005,[C],FOUND,13,,research/sources/comet/2024-06-13_comet_conference-presentation-Stifel-2024-06.pdf,CA20 Fab: launch of automated version later in 2024
+XS-006,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2024.html,The new EFEM loader is an additional feature that speeds up automated operation in the fab under cleanroom conditions.
+XS-007,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2024.html,"Comet Yxlon now offers modular solutions for CoS inspections from lab to fab – featuring manual, assisted and fully automated defect recognition"
+XS-008,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2024.html,supplies detailed results data for the individual bumps within minutes as input to process control of the die attachement step
+XS-009,[F],FOUND (layout-insensitive),6,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"CA20 – now built for inspecting components directly within fabs, following the version for labs that was launched the previous year"
+XS-010,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-event-semicon-europa-2026.html,"the launch of our advanced packaging inspection specialist, CA20, in 2023, to fully automated semiconductor inspection in 2024"
+XS-011,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,Detector Active Area 130 x 130 mm 130 x 130 mm Pixel Matrix 1536 x 1536 px
+XS-012,[C],FOUND,2,,research/sources/comet/2026-02-27_comet_yxlon-CA20-CoS-Fab-flyer-2024.pdf,Max. frame rate up to 40 fps
+XS-013,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,System Weight ~ 2350 kg ~ 3650 kg
+XS-014,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"Defect size: <1 µm, <50 µm, <1 mm"
+XS-015,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"Cleanroom ready, with conditions within the cabinet comparable to ISO Class 3"
+XS-016,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"The CA20 optimises for speed and accuracy with a 2.5D approach, capturing 2D images at various angles to retain depth information."
+XS-017,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"Available as a fully-automated solution, it seamlessly integrates into the Fab’s material and information flows to deliver actionable real-time metrology data"
+XS-018,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"Extracted information is also available in machine readable form for post reporting jobs, e.g. KLARF, json, xml"
+XS-019,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-industry-page-packaging-inspection.html,CoS Insights X 3D is our specialised software for the CA20 equipped with an EFEM loader.
+XS-020,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"Speed up process development and failure analysis with fast, valuable insights and CoS 3D Clarity scans for bumps down to 50 µm."
+XS-021,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,our newly released Wafer Manager package automatically aligns wafers for inspection in seconds
+XS-022,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"To avoid damage to sensitive components such as flash and DRAM memories, it switches off the X-ray automatically once the dosage limit is reached."
+XS-023,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"monitors and tracks the X-ray dose that the sample is subjected to, taking into account the tube power and the distance to the sample"
+XS-024,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"The package includes a Dose Reduction Kit with a collimator and 4 filters, shielding parts outside the region of interest from radiation."
+XS-025,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,use the deep learning segmentation to extract the maximum of information from the low dose scan that protects your sensitive parts
+XS-026,[C],FOUND,1,,research/sources/comet/2026-10-29_comet_yxlon-blog-continuous-rotation-AI-denoising.html,The result is a four-minute 3D inspection cycle that retains the structural information needed for reliable TSV void detection.
+XS-027,[C],FOUND,1,,research/sources/comet/2026-10-29_comet_yxlon-blog-continuous-rotation-AI-denoising.html,the measured void ratio reaches 8.72 ± 0.38% compared with 9.03 ± 0.18% for the 60-minute reference scan
+XS-028,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA16.html,Submicron 2D and 2.5D X-ray inspection for flip chips and wafer bumping.
+XS-029,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA16.html,With the addition of an EFEM loader for 300mm wafers
+XS-030,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA16.html,process control for fine-pitch micro bumps down to 20μm on wafers
+XS-031,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA16.html,"User friendly recipe set-up, including simple configuration of production limits, easy test and validation and import/export between systems"
+XS-032,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-overview.html,CA product line CA16 CA20
+XS-033,[C],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"the division has expanded its product portfolio with new models tailored for specific uses, enabling entry into additional application areas"
+XS-034,[C],FOUND (layout-insensitive),29,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,integrates high-resolution 3D x-ray with AI-driven automated defect recognition (ADR) for solder bumps
+XS-035,[C],FOUND,6,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,These machines are equipped with Comet IXM’s advanced x-ray tubes
+XS-036,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-article-need-for-speed.html,The Fyne NF4 delivers up to four times more usable X-ray dose at 400nm resolution
+XS-037,[F],FOUND,5,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"Object Research Systems (ORS), the subsidiary which Comet acquired in December 2020"
+XS-038,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-industry-page-semiconductors.html,Our semiconductor software packages like TSV Insights X 2.5D and CoS Insights X 3D are exclusively availabe with Comet Yxlon systems.
+XS-039,[C],FOUND,59,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,DirectInspect Fully automated inspection
+XS-040,[C],FOUND,1,,research/sources/comet/2025-09_comet_press-release-JOINT3-consortium.html,"it delivers sub-micron resolution via cutting-edge computed laminography, revealing defects in seconds that previously took weeks to detect"
+XS-041,[C],FOUND,15,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"In the promising advanced packaging business, the collaboration with a leading company in this space is exceeding expectations"
+XS-042,[C],FOUND,62,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,Increased installed base at semiconductor market leader: our co-creation partner
+XS-043,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_news-CA20-launch.html,this was a discussion with a 3D IC manufacturer showing us the challenge to identify critical defects in complex packages fast
+XS-044,[C],FOUND,5,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,potential customers who have shown significant interest in using the CA20 in their laboratory and production processes
+XS-045,[F],FOUND,14,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,A significant milestone was achieved with the first purchase order for the CA20.
+XS-046,[C],FOUND,1,,research/sources/comet/2025-04_comet_press-release-Q1-2025-trading-update.html,"collaborating with multiple customers to introduce its innovative CA20 system for non-destructive semiconductor inspections, with several commercial agreements "
+XS-047,[C],FOUND (layout-insensitive),6,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,CA20 is gaining strong traction through meaningful engagement with leading semiconductor customers around the world
+XS-048,[C],FOUND,6,,research/sources/comet/2025-07-30_comet_results-presentation-H1-2025.pdf,CA20; market adoption remains delayed
+XS-049,[C],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,a handful of purchase orders for the x-ray system CA20 from various customers and a growing number of engagements
+XS-050,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,"more than 80 active collaborations on the x-ray system for semiconductor component inspection, CA20"
+XS-051,[C],FOUND,63,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,2025 >60 >25 5 - Strategic Partnerships to
+XS-052,[C],FOUND,63,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,5 2 0 2023 Evaluation Qualification orders
+XS-053,[C],FOUND,63,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,"Co-Creation with top market OSAT, IDM, foundry leaders"
+XS-054,[C],FOUND,60,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Root-Cause Failure Analysis Process Control CA20 CA20 FF35 CT Semi for the Lab for the Fab
+XS-055,[C],FOUND,61,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,sample inspection & ramp up Automated Inspection Automated inspection Root-Cause Next application: Glas Panel Level
+XS-056,[C],FOUND,87,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,CHF 10-15 mn CA20 > break-even investment
+XS-057,[F],FOUND,6,,research/sources/comet/2026-03-06_comet_results-presentation-FY2025.pdf,First commercial sales of CA20 systems
+XS-058,[C],FOUND,1,,research/sources/comet/2026-03_comet_press-release-FY2025-results.html,Profitability was impacted by double-digit million investments in the development and commercialization of the semiconductor-focused x-ray system CA20
+XS-059,[C],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,more than doubling the number of purchase orders for the CA20 x-ray system
+XS-060,[C],FOUND,6,,research/sources/comet/2026-07-30_comet_results-presentation-H1-2026.pdf,IXS more than doubled CA20 purchase
+XS-061,[C],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,"Strong order momentum, additional customer engagements and successful qualifications validate the compelling value proposition of the CA20 offering"
+XS-062,[C],FOUND,1,,research/sources/comet/2025-09_comet_press-release-JOINT3-consortium.html,"While early use focused on micro-bumps, the range of applications is far broader"
+XS-063,[F],FOUND (layout-insensitive),1,,research/sources/comet/2025-09-03_resonac_press-release-JOINT3-launch-nasdaq.html,"Comet Yxlon GmbH, EBARA Corporation"
+XS-064,[S],FOUND,1,,research/sources/comet/2024-12-01_3dincites_article-updated-CA20-2024.html,The new EFEM loader is an additional feature that speeds up automated operation in the fab under cleanroom conditions.
+XS-065,[S],FOUND,1,,research/sources/comet/2026-11-21_siliconsemiconductor_article-CA20-launch.html,"For the first time, the semiconductor market now has a nondestructive supplement or alternative to conventional destructive methods."
+XS-066,[S],FOUND,1,,research/sources/comet/2026-11-21_epp-europe_article-expansion-product-portfolio-semicon.html,They were developed under collaboration with Nagoya Electric Works.
+XS-067,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA16.html,"Test parts designed for Comet by Fraunhofer IZM-ASSID, they contain defects for illustrative purposes"
+XS-068,[S],FOUND,1,,research/sources/comet/2026-11-21_comet_dragonfly-HBM-microbump-spotlight.html,The workflow began with a rapid 30-second nano-CT overview scan at 2.6 µm voxel size
+XS-069,[C],FOUND,1,,research/sources/comet/2025-04-01_iconnect007_article-future-of-AP-inspection-is-xray-SMTA-excerpt.html,all of which are vital for foundries and OSATs to develop competitive technologies
+XS-070,[C],FOUND,43,,research/sources/comet/2024-01-29_hkust_seminar-slides-smart-material-advanced-packaging.pdf,Chiplet ------ COWOS Package – C4 bump inspection– defective：void
+XS-071,[C],FOUND,1,,research/sources/comet/2026-11-21_ipros_comet-japan-product-CA20.html,Our application lab in Yokohama is also capable of conducting sample evaluations and witness tests.
+XS-072,[I],,,,,
+XS-073,[I],,,,,
+RV-001,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"Defect size: <1 µm, <50 µm, <1 mm"
+RV-002,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2023.html,Three-dimensional X-ray images with a resolution of less than 1 µm can reliably identify typical defects in 3D IC solder connections
+RV-003,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-news-CA20-launch-2024.html,"Yesterday afternoon, Comet Yxlon officially launched the new solution with live demonstrations and invited guests at Semicon Europa."
+RV-004,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,Detector Active Area 130 x 130 mm
+RV-005,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,Non-destructive technology for three-dimensional insights into solder bumps or TSVs within minutes
+RV-006,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"With a fully automatic loader and ADC software, the CA20 is designed to complement your production line"
+RV-007,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,our newly released Wafer Manager package automatically aligns wafers for inspection in seconds
+RV-008,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,TSV Insights X 2.5D is our specialised software for the CA20 equipped with a fully-automated inspection package specifically designed for wafer level packaging.
+RV-009,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_yxlon-product-page-CA20.html,"To avoid damage to sensitive components such as flash and DRAM memories, it switches off the X-ray automatically once the dosage limit is reached."
+RV-010,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,ZEISS NLX introduces in-line 3D X-ray laminography at 300 mm wafer level
+RV-011,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,"It includes automated wafer loading via an Equipment Front End Module (EFEM), alignment functions and integration into fab automation systems."
+RV-012,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,"It is particularly suitable for near-line inspection, pilot lines and engineering tasks"
+RV-013,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,complements this concept with dedicated shielding that minimizes
+RV-014,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,"Precise measurements of shift, overlay, and tilt provide critical process control for the alignment of high-bandwidth memory (HBM)"
+RV-015,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,"Data evaluation on ZEISS NLX is powered by ZEISS INSPECT X-Ray, enabling 3D metrology, defect inspection and automated inspection flows in a single environment."
+RV-016,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_product-page-NLX.html,AI-based routines within the platform automatically highlight and segment relevant structures and defects in the volume data.
+RV-017,[F],FOUND,1,,research/sources/comet/2026-10-12_zeiss_press-release-SEMICON-West-2026-NLX.html,The system is designed for 300-millimeter wafers and supports both the development of new processes and high-volume production.
+RV-018,[F],FOUND,1,,research/sources/comet/2026-09-02_zeiss_press-release-SEMICON-Taiwan-2026.html,"Designed for 300 mm wafers, ZEISS NLX supports both process development and use in volume production."
+RV-019,[F],FOUND,1,,research/sources/comet/2026-07-10_zeiss_press-release-innovation-center-korea.html,Cleanroom at the ZEISS Semiconductor Innovation Center Yongin with NLX
+RV-020,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_page-advanced-semiconductor-packaging.html,Virtual cross section from same analysis highlights 30 µm microbumps imaged at 0.8 µm/voxel resolution.
+RV-021,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_page-advanced-semiconductor-packaging.html,Large field of view 3D X-ray scan of package-on-package (POP) from a smartphone main control board imaged at 10 µm/voxel.
+RV-022,[F],FOUND,1,,research/sources/comet/2026-11-21_zeiss_press-release-Versa-2026.html,"ZEISS today introduced ZEISS VersaXRM 5 Insight, a hybrid 3D X-ray microscope"
+RV-023,[C],FOUND,1,,research/sources/comet/2026-11-21_zeiss_press-release-Versa-2026.html,acquired at 0.8 μm / voxel using a 4x objective (~1.5 hours)
+RV-024,[C],FOUND,1,,research/sources/comet/2026-11-21_rigaku_page-advanced-packaging-metrology.html,"Rigaku is developing inline X-ray imaging solutions for automated defect detection in micro-bumps and TSVs, supporting high-throughput advanced packaging produc"
+RV-025,[C],FOUND,1,,research/sources/comet/2026-11-21_rigaku_page-advanced-packaging-metrology.html,"Rigaku delivers X-ray metrology solutions engineered to characterize thickness, composition, and structural integrity across packaging structures from ~100 nm t"
+RV-026,[F],FOUND,1,,research/sources/comet/2025-12-17_rigaku_press-release-ONYX-3200.html,"a new semiconductor metrology system to measure film thickness, composition and bump* structures for wafer-level processes"
+RV-027,[C],FOUND,1,,research/sources/comet/2025-12-17_rigaku_press-release-ONYX-3200.html,integrates an optical scanner to capture the overall bump shape and total height and a fluorescent X-ray detector
+RV-028,[C],FOUND,1,,research/sources/comet/2025-12-17_rigaku_press-release-ONYX-3200.html,Rigaku has shipped an initial ONYX 3200 system to a major global foundry for deployment in an advanced packaging line
+RV-029,[C],FOUND,1,,research/sources/comet/2025-12-17_rigaku_press-release-ONYX-3200.html,"The company targets JPY 1.5 billion in ONYX 3200 sales in FY2026, with plans to double to JPY 3 billion in FY2027"
+RV-030,[C],FOUND,1,,research/sources/comet/2026-11-21_rigaku_event-page-ECTC-2026.html,"Our portfolio of X-ray techniques, including XRR, HRXRD, TXRF, CD-SAXS, and X-ray topography"
+RV-031,[C],FOUND,1,,research/sources/comet/2026-11-21_rigaku_product-page-XTRAIA-XT.html,designed for in-line detection of crystallographic defects across wafers and epitaxial layer stacks
+RV-032,[F],FOUND,5,,research/sources/comet/2026-08-07_rigaku_H1-2026-results-filing.pdf,"In the semiconductor process control instruments business, revenue increased by 18.2% year on year to"
+RV-033,[F],FOUND,1,,research/sources/comet/2026-04-20_onto_press-release-Rigaku-partnership-nasdaq-copy.html,to acquire 27% of the outstanding common stock of Rigaku
+RV-034,[C],FOUND,1,,research/sources/comet/2026-04-20_onto_press-release-Rigaku-partnership-nasdaq-copy.html,This new offering has already been selected by two key customers
+RV-035,[C],FOUND,2,,research/sources/comet/2025-10-01_nordson_press-release-SEMICON-West-2025-pdf.pdf,"applications such as CoWoS, TSVs, 2.5 and 3D IC packaging and wafer bumps."
+RV-036,[C],FOUND,2,,research/sources/comet/2025-10-01_nordson_press-release-SEMICON-West-2025-pdf.pdf,"The system is designed for high-throughput metrology and defect review for optically hidden features, including voiding, fill levels, overlay and critical dimen"
+RV-037,[C],FOUND,1,,research/sources/comet/2026-11-21_iconnect007_article-Nordson-SEMICON-West-2026.html,delivers sub-micron 3D reconstruction with unprecedented imaging fidelity and production-speed throughput
+RV-038,[C],FOUND,1,,research/sources/comet/2026-11-21_iconnect007_article-Nordson-SEMICON-West-2026.html,improving throughput while reducing radiation exposure. It is particularly effective for semiconductor applications such as flip-chip and micro-bump inspection.
+RV-039,[C],FOUND,1,,research/sources/comet/2026-11-21_semiengineering_article-Nordson-HBM-3D-xray.html,"X-Plane Pro is designed to deliver limited-angle 3D imaging for larger samples, making it an excellent choice for high-throughput environments."
+RV-040,[F],FOUND,1,,research/sources/comet/2025-12-10_nordson_press-release-Q4-FY2025-results-bizwire-copy.html,"Ongoing sales strength in electronics dispense systems was more than offset by fewer deliveries of test and inspection systems, particularly x-ray systems."
+RV-041,[S],FOUND,1,,research/sources/comet/2026-11-21_semiengineering_article-xray-essential-advanced-packaging.html,We can't spend an hour inspecting every chip.
+RV-042,[S],,,,,
+RV-043,[C],FOUND,1,,research/sources/comet/2026-11-21_bruker_page-automated-xray-metrology.html,Fully automated µXRF metrology platform to monitor bump composition and under bump metallization
+RV-044,[C],FOUND,1,,research/sources/comet/2026-11-21_bruker_product-page-X200-en.html,Support defect inspection and process monitoring in advanced semiconductor manufacturing.
+RV-045,[S],,,,,
+RV-046,[F],FOUND,1,,research/sources/comet/2025-06-24_bruker_press-release-advanced-packaging-WLI-order.pdf,installation is part of a larger order from this semiconductor manufacturer for 27 Bruker optical metrology systems
+RV-047,[S],FOUND,1,,research/sources/comet/2026-11-21_semiengineering_article-xray-essential-advanced-packaging.html,"That adds complexity to each package and each process, leading to the need for early inspection and metrology of those chips."
+RV-048,[S],FOUND,1,,research/sources/comet/2026-11-21_semiengineering_article-HBM-nanosheet-xray-fab-use.html,"On the packaging side, we’re down in 3µm resolution, which for back-end defects is fine."
+RV-049,[S],FOUND,1,,research/sources/comet/2026-11-21_semiengineering_article-xray-essential-advanced-packaging.html,"With the increased sensitivities of HBM and other advanced semiconductor components, the danger of X-ray overexposure has become a significant concern."
+RV-050,[C],FOUND,8,,research/sources/comet/2024-07-01_sigray_IEEE-EPS-SCV-presentation-2024-07.pdf,0.5um Resolution and <0.3um Voxel
+RV-051,[C],FOUND,15,,research/sources/comet/2024-07-01_sigray_IEEE-EPS-SCV-presentation-2024-07.pdf,"12 Minute Scan, 0.2 µm Pixel Size"
+RV-052,[C],FOUND,18,,research/sources/comet/2024-07-01_sigray_IEEE-EPS-SCV-presentation-2024-07.pdf,Apex XCT-in-Line In-line System for Advanced Packaging
+RV-053,[C],FOUND,2,,research/sources/comet/2024-07-01_sigray_IEEE-EPS-SCV-presentation-2024-07.pdf,Received and expecting multiple POs
+RV-054,[C],FOUND,32,,research/sources/comet/2024-08-01_sigray_AVS-NCCAVS-presentation-2024-08.pdf,Enables 3D wafer spot analysis in as little as 2-3 minutes.
+RV-055,[C],FOUND,52,,research/sources/comet/2024-08-01_sigray_AVS-NCCAVS-presentation-2024-08.pdf,Fast Site Inspection: Up to 10 WPH
+RV-056,[C],FOUND,1,,research/sources/comet/2026-11-21_sigray_distributor-page-Apex-XCT-QD.html,0.5 µm 3D spatial resolution in <15 minutes
+RV-057,[C],FOUND,1,,research/sources/comet/2026-11-21_sigray_distributor-page-Apex-Hybrid-QD.html,Laminography: 300 mm wafer / 213 × 213 mm panel
+RV-058,[C],FOUND,6,,research/sources/comet/2025-11-10_sigray_Apex-Hybrid-white-paper.pdf,EFEM for In-line Use Yes On the Roadmap
+RV-059,[S],,,,,
+RV-060,[C],FOUND,1,,research/sources/comet/2026-11-21_omron_product-page-VT-X950.html,The X950 is the first in the VT series to support clean rooms for mid-process semiconductors where wafer-to-wafer bonding processes occur.
+RV-061,[C],FOUND,1,,research/sources/comet/2026-11-21_omron_product-page-VT-X950.html,"Equipped with a conveyor-based automatic loading/unloading function, contributing to automation and manpower saving in the manufacturing process"
+RV-062,[C],FOUND,1,,research/sources/comet/2026-11-21_omron_news-VT-X950-EU.html,"The VT-X950 features technology that captures stereoscopic images without stopping, ensuring continuous inspection."
+RV-063,[S],FOUND,1,,research/sources/comet/2026-11-21_dempa_article-Omron-VT-X950.html,They will be released sequentially from February 2024 onward.
+RV-064,[S],FOUND,1,,research/sources/comet/2024-12-20_monoist_article-Omron-VT-X950-SEMICON-Japan-2024.html,同年12月から販売を開始したCT型X線自動検査装置「VT-X950」を紹介した。
+RV-065,[C],FOUND,1,,research/sources/comet/2026-11-21_viscom_product-page-iX7059-One.html,this system delivers unrivaled image quality down to an astonishing 1μm resolution
+RV-066,[S],FOUND,1,,research/sources/comet/2026-02-04_asiae_article-SEC-Micron-HBM-xray-order.html,"Despite being a manual system, it has been deployed to Micron's mass-production line since 2023 and is being used for HBM process inspection."
+RV-067,[S],FOUND,1,,research/sources/comet/2026-02-04_asiae_article-SEC-Micron-HBM-xray-order.html,Sec signed a supply contract on the 3rd for HBM X-ray inspection equipment worth approximately 1.8 billion won
+RV-068,[S],FOUND,1,,research/sources/comet/2026-11-10_asiae_article-SEC-Micron-Singapore-order-ko.html,마이크론 싱가포르 법인과 약 58억원 규모의 HBM용 X-ray 검사장비 공급계약을 체결했다고 밝혔다
+RV-069,[S],FOUND,1,,research/sources/comet/2026-11-10_asiae_article-SEC-Micron-Singapore-order-ko.html,글로벌 반도체 후공정 전문기업(OSAT)의 웨이퍼 레벨 패키징(WLP) 양산라인에 자체 개발한 'Semi-scan Wafer'를 처음 공급하는 계약을 확보했다
+RV-070,[S],FOUND,1,,research/sources/comet/2026-11-21_technews_article-SEC-inline-HBM-TGV.html,可偵測在 HBM 堆疊製程中產生的 3 微米（ μm ）至 5 微米缺陷
+RV-071,[S],FOUND,1,,research/sources/comet/2026-09-22_economist-kr_article-SEC-inline-HBM.html,2025년에는 미국 메모리 업체 마이크론에 HBM용 수동 검사장비 8대를 판매하며
+RV-072,[S],FOUND,1,,research/sources/comet/2026-09-22_economist-kr_article-SEC-inline-HBM.html,검사 과정에서 HBM에 가해질 수 있는 X-ray 손상을 줄이는 기술도 특허 등록을 마쳤다
+RV-073,[S],FOUND,1,,research/sources/comet/2026-05-21_asiae_article-SEC-growth-strategy.html,The company is currently conducting evaluations of its inline inspection equipment for HBM with customers
+RV-074,[S],FOUND,1,,research/sources/comet/2026-11-21_sec-distributor-renex_distributor-page-X-EYE-NF120.html,Tomography is available if 3D CT module is added and Wafer Bump Automatic Inspection is available from loading to inspection with wafer handler systems.
+RV-075,[S],FOUND,1,,research/sources/comet/2026-01-16_asiae_article-SEC-NDR-inline.html,"our inline X-ray inspection equipment for HBM, which we introduced with the goal of completing development in February"
+RV-076,[C],FOUND,1,,research/sources/comet/2026-02-09_koreadaily_article-XAVIS-SEMICON-Korea-2026.html,"the Xscan-9860A, a wafer-level package inline inspection equipment, provides 0.25μm image resolution utilizing AI"
+RV-077,[C],FOUND,1,,research/sources/comet/2026-02-09_koreadaily_article-XAVIS-SEMICON-Korea-2026.html,"With various features and X-ray dose reduction technology, it can provide customized solutions to meet diverse customer requirements."
+RV-078,[F],FOUND,28,,research/sources/comet/2026-04-17_unicomp_disclosure-AN202604171821302692.pdf,目前，公司正在积极推进先进封装检测设备
+RV-079,[C],FOUND,28,,research/sources/comet/2026-04-17_unicomp_disclosure-AN202604171821302692.pdf,公司面向半导体先进封装场景研发的 X 射线智能检测设备，依托亚微米级分辨率微焦点 X 射线源
+RV-080,[C],FOUND,11,,research/sources/comet/2024-07-01_sigray_IEEE-EPS-SCV-presentation-2024-07.pdf,Field of View 1.47 x 1.15 mm 7.35 x 5.75 mm
+RV-081,[C],FOUND,8,,research/sources/comet/2024-07-01_sigray_IEEE-EPS-SCV-presentation-2024-07.pdf,Advanced algorithms for defect detection
+RV-082,[C],FOUND,1,,research/sources/comet/2026-11-21_sigray_distributor-page-Apex-Hybrid-QD.html,capable of handling up to ten 100 × 100 mm samples automatically
+IXM-001,[F],FOUND,98,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Intersegment sales — 12 9,941 (9,953) — —"
+IXM-002,[F],FOUND,99,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Intersegment sales — 52 12,436 (12,488) — —"
+IXM-003,[F],FOUND,92,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"Intersegment sales — 134 12,787 (12,921) — —"
+IXM-004,[F],FOUND,82,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"Intersegment sales — 407 13,616 (14,023) — —"
+IXM-005,[F],FOUND (layout-insensitive),81,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"Intersegment sales — 535 9,687 (10,222) — — —"
+IXM-006,[F],FOUND,22,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Intersegment sales - 6 6,008 (6,014) - -"
+IXM-007,[I],,,,,
+IXM-008,[F],FOUND,97,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,Transactions between the segments are invoiced at prices also charged to third parties.
+IXM-009,[F],FOUND,96,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Security 15,410 11,673"
+IXM-010,[F],FOUND,101,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"recorded sales of CHF 104.4 million with its largest customer, which"
+IXM-011,[F],FOUND,6,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,machines are equipped with Comet IXM's advanced x-ray tubes
+IXM-012,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_news-pct-yxlon-collaboration.html,"(computed tomography) system, equipped with two FXE X-ray tubes from Comet X-ray"
+IXM-013,[F],FOUND,47,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,Now even more user-friendly: equipped with MesoFocus 225
+IXM-014,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_news-6-things-about-fxe.html,"including systems for electronics inspection such as Cheetah and Cougar, formerly FeinFocus products"
+IXM-015,[F],FOUND (layout-insensitive),1,,research/sources/comet/2026-11-21_comet_xray-news-diondo-partnership.html,"diondo developed the d3, a cutting-edge inspection system integrating two of Comet X-ray's high-performance sources"
+IXM-016,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-ims-partnership.html,IMS Measuring Systems GmbH relied on the quality and reliability of Comet X-ray tubes in its systems for the steel industry
+IXM-017,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-case-story-nsi-chris.html,"MesoFocus tube we use at our facility consistently achieves the required resolution, and often exceeds it"
+IXM-018,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-case-story-nsi-patrick.html,How do you see NSI and Comet shaping this next stage?
+IXM-019,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-case-story-pinnacle-dirk-steiner.html,"some customers request specific brands, such as a Comet tube, based on their past experiences"
+IXM-020,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-case-story-x-ris-fabian-campo.html,How X-RIS uses BLOX data to turn service from emergency response into planned performance.
+IXM-021,[S],FOUND,1,,research/sources/comet/2025-02-01_bindt_news-mesofocus-x-ray-tube.html,The closed Comet iXRS 450 MF tube provides an alternative to the 450 kV Isovolt Minifocus X-ray tube of Waygate Technologies.
+IXM-022,[S],FOUND,1,,research/sources/comet/2024-10-14_onestopndt_news-waygate-launches-mesofocus.html,"The advanced Mesofocus X-ray tube, developed in collaboration with Comet"
+IXM-023,[F],FOUND,1,,research/sources/comet/2026-11-21_excillum_news-Waygate-collaboration.html,Excillum NanoTube N3 is incorporated into Waygate Technologies' Phoenix Nanotom
+IXM-024,[F],FOUND,1,,research/sources/comet/2026-11-21_excillum_news-Pinnacle-demonstrator.html,"Together with US-based Pinnacle X-Ray Solutions LLC., Excillum continues to push the boundaries with unmatched high-speed CT inspection"
+IXM-025,[F],FOUND,1,,research/sources/comet/2026-11-21_excillum_page-partners.html,we work closely in long-term partnerships with some of the most trusted OEMs and system integrators in the field of X-ray technologies
+IXM-026,[F],FOUND,1,,research/sources/comet/2026-09-01_excillum_news-Rigaku-CT-Lab-HR160.html,The CT Lab HR160 is developed in collaboration with Excillum
+IXM-027,[F],FOUND,1,,research/sources/comet/2026-09-08_excillum_news-SFA-partnership-NanoTube-N3.html,"Initial focus on Through-Glass Via (TGV) inspection, High Bandwidth Memory (HBM)-related applications, and advanced semiconductor packaging."
+IXM-028,[F],FOUND,1,,research/sources/comet/2026-11-21_excillum_news-p8242.html,With first deployments in July 2024 to the South Korean manufacturer's sites in Vietnam
+IXM-029,[F],FOUND,1,,research/sources/comet/2026-11-21_nikon_product-page-x-ray-source-technology.html,world-leading X-ray sources designed and manufactured in-house since 1986
+IXM-030,[F],FOUND,2,,research/sources/comet/2026-01-26_zeiss_product-flyer-Versa-ZXR1-source.pdf,"by designing and developing its own field-upgradeable X-ray source, ZEISS also controls the future of innovation for its systems"
+IXM-031,[F],FOUND,42,,research/sources/comet/2025-03-24_viscom_annual-report-FY2024.pdf,X-ray sector proprietary developments such as X-ray tubes and
+IXM-032,[S],FOUND,1,,research/sources/comet/2026-11-21_iconnect007_article-Nordson-DAGE-Quadra-new-edition.html,"Quadra 3 features the revolutionary QuadraNT sealed X-ray tube from Nordson DAGE, which requires no regular maintenance."
+IXM-033,[S],FOUND,1,,research/sources/comet/2026-05-21_asiae_article-SEC-growth-strategy.html,"SEC Co., Ltd. introduced its independently developed 'Hybrid Open Tube' technology"
+IXM-034,[F],FOUND,8,,research/sources/comet/2025-11-10_sigray_Apex-Hybrid-white-paper.pdf,Apex-Hybrid solves this challenge with a novel x-ray source
+IXM-035,[F],FOUND,1,,research/sources/comet/2026-11-21_werth_product-page-microfocus-transmission-monoblock.html,"These X-ray sources in monoblock design, which are unique on the market"
+IXM-036,[C],FOUND (layout-insensitive),20,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"X-ray modules and systems are deployed by leading foundries, integrated device manufacturers (IDMs), and outsourced semiconductor assembly and test"
+IXM-037,[C],FOUND,8,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,in industrial x-ray sources
+IXM-038,[C],FOUND,49,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,Open Nano Focus #3
+IXM-039,[C],FOUND,6,,research/sources/comet/2025-07-30_comet_results-presentation-H1-2025.pdf,"Drive for lower-cost suppliers, domestic"
+IXM-040,[C],FOUND,6,,research/sources/comet/2026-03-06_comet_results-presentation-FY2025.pdf,Market share gains in the U.S. and China; tariff burden successfully managed
+IXM-041,[C],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"accelerating spending on AI infrastructure and Advanced Packaging. In contrast, the electronics"
+IXM-042,[C],FOUND,86,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Product innovation
+IXM-043,[C],FOUND,37,,research/sources/comet/2021-11-14_comet_capital-markets-day-2021.pdf,Mini Focus Meso Focus Micro Focus Nano Focus
+IXM-044,[C],FOUND,46,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,FXE Micro Focus FYNE Nano Focus
+IXM-045,[C],FOUND,53,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,Future products – True Nano Focus
+IXM-046,[C],FOUND,47,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,IXM's new products introduced since 2021 contribute
+IXM-047,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_news-mesofocus.html,"Since its launch in June 2021, interest from customers for the MesoFocus technology has continued to grow"
+IXM-048,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-product-mxc-450-mf.html,bipolar oil-cooled tube assembly with five focal spots ranging from 0.06 mm to 0.45 mm
+IXM-049,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-focus-topic-mesofocus.html,eliminates this trade-off by combining high resolution (down to 25 µm) with robust uptime and easy production integration
+IXM-050,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-product-fxe-225-48.html,"With its 320 W of tube power, the Comet FXE is a sufficiently bright source"
+IXM-051,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-article-fxe-new-target.html,whereas with the HDP target the tube can operate at 170 W of power!
+IXM-052,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-article-fxe-resolution.html,the highest resolution achievable with the high-power target in nanofocus mode is 0.7 µm with a target power of up to 1.6 W
+IXM-053,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-focus-topic-fxe-190.html,"With the HRP target, the ultimate resolution of 0.45 µm is achieved at up to 1.4 W."
+IXM-054,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-focus-topics-fxe-keep-cool-and-carry-on.html,A cooled tube produces a five-fold reduction in spot drift
+IXM-055,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-focus-topic-fxe-quickswap.html,Comet X-ray is introducing the Quickswap filament for the FXE series
+IXM-056,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_news-fyne-introduction.html,"Comet is proud to introduce the FYNE 160 NF4, our high-end open X-ray source designed for demanding high-resolution applications"
+IXM-057,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-focus-topic-fyne.html,No significant change in resolution is observed even after more than 2600 hours of source operation.
+IXM-058,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-article-need-for-speed.html,"The Fyne NF4 delivers up to four times more usable X-ray dose at 400nm resolution, while the NF12 achieves up to ten times higher dose"
+IXM-059,[C],FOUND,16,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,featuring focal spot sizes as small as 600 nanometers
+IXM-060,[C],FOUND,48,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,resolution lost at the X-ray source cannot be recovered
+IXM-061,[C],FOUND,1,,research/sources/comet/2026-11-21_comet_xray-news-blox.html,Meet BLOX – our Industrial IoT health monitor for X-ray tubes and generators.
+IXM-062,[C],FOUND,6,,research/sources/comet/2026-03-06_comet_results-presentation-FY2025.pdf,"Clean Room operational, enabling scalable, high-quality manufacturing"
+IXM-063,[F],FOUND,1,,research/sources/comet/2026-11-21_excillum_datasheet-download-5698.pdf,Voltage 40-160 kV Max. power on target 16.6 W
+IXM-064,[C],FOUND,1,,research/sources/comet/2026-11-21_excillum_news-Waygate-collaboration.html,enables higher resolution based on 300 nm focal spot technology across the full voltage range of 40-160 kV
+IXM-065,[F],FOUND,1,,research/sources/comet/2026-11-21_excillum_product-page-MetalJet-E1plus-160kV.html,delivers 17 times more X-ray flux across a broad spectral range compared to a 30 W conventional tungsten-solid-anode microfocus source
+IXM-066,[C],FOUND,1,,research/sources/comet/2026-11-21_excillum_news-MetalJet-F1016-launch.html,MetalJet F1016 is a 160 kV microfocus X-ray source with up to 1600 W of power at 30 µm spot size.
+IXM-067,[C],FOUND,1,,research/sources/comet/2026-11-21_excillum_page-our-company.html,With nearly 300 sources deployed worldwide
+IXM-068,[C],FOUND,1,,research/sources/comet/2026-11-21_excillum_page-semiconductor-electronics.html,Extreme resolution nano-CT X-ray investigation of 3D memory (HBM2)
+IXM-069,[F],FOUND,1,,research/sources/comet/2026-08-20_hamamatsu_datasheet-L10711-26.pdf,High resolution: 0.2 μm (S mode)
+IXM-070,[F],FOUND,2,,research/sources/comet/2025-02-24_hamamatsu_catalog-microfocus-xray-sources.pdf,"Designed to operate between 20 and 300 kV, MFX are specifically developed for 2D and 3D"
+IXM-071,[F],FOUND,2,,research/sources/comet/2026-01-26_zeiss_product-flyer-Versa-ZXR1-source.pdf,ultimate spatial resolution <450 nm
+IXM-072,[C],FOUND,1,,research/sources/comet/2026-11-21_nikon_product-page-x-ray-source-technology.html,Nikon's 450kV/450W microfocus X-ray source is the only one in the world to offer high energy combined with a high-resolution focal spot size of 80µm
+IXM-073,[F],FOUND,1,,research/sources/comet/2026-11-21_thermofisher_product-page-PXS10-130kV.html,"Minimum spot size of 6 microns at 4 watts, for high-resolution imaging"
+IXM-074,[F],FOUND,6,,research/sources/comet/2025-11-10_sigray_Apex-Hybrid-white-paper.pdf,Spatial Resolution 500-600 nm 350 nm
+IXM-075,[F],FOUND,1,,research/sources/comet/2026-11-21_oxinst_page-xray-technology-home.html,"X-Ray Technology is a leading manufacturer of x-ray tubes, power supplies, and integrated x-ray sources."
+IXM-076,[F],FOUND,32,,research/sources/comet/2025-03-24_viscom_annual-report-FY2024.pdf,"necessary. In conjunction with a 180 kV closed X-ray tube,"
+DV-001,[F],FOUND,14,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,"External net sales 173,470 59,716 34,312 – – 267,498"
+DV-002,[F],FOUND,14,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,"Total net sales 173,470 59,990 40,985 (6,947) – 267,498"
+DV-003,[F],FOUND,14,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,"Segment operating income 29,328 (4,185) 3,738 (457) – 28,424"
+DV-004,[F],FOUND,14,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,"EBITDA 34,289 (1,585) 6,149 (457) (715) 37,681"
+DV-005,[F],FOUND,82,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"External net sales 381,424 129,944 75,026 — — 586,395"
+DV-006,[F],FOUND,82,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"Total net sales 381,424 130,351 88,643 (14,023) — 586,395"
+DV-007,[F],FOUND,82,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"Segment operating income 94,497 (3,104) 10,868 (1,227) — 101,033"
+DV-008,[F],FOUND,82,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"EBITDA 104,915 1,607 15,677 (1,227) (2,059) 118,913"
+DV-009,[F],FOUND,16,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"External net sales 106,791 56,784 43,450 – – 207,025"
+DV-010,[F],FOUND,16,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"Total net sales 106,791 56,796 50,830 (7,392) – 207,025"
+DV-011,[F],FOUND,16,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"Segment operating income 344 (1,957) 8,272 (229) – 6,430"
+DV-012,[F],FOUND,16,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"EBITDA 5,696 151 10,375 (229) (1,720) 14,275"
+DV-013,[F],FOUND,92,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"External net sales 193,155 116,826 87,472 — — 397,453"
+DV-014,[F],FOUND,92,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"Total net sales 193,155 116,961 100,258 (12,921) — 397,453"
+DV-015,[F],FOUND,92,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"Segment operating income 7,192 671 19,580 761 — 28,204"
+DV-016,[F],FOUND,92,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"EBITDA 18,719 4,923 23,819 761 (3,226) 44,996"
+DV-017,[F],FOUND,14,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"External net sales 94,257 55,138 39,920 – – 189,315"
+DV-018,[F],FOUND,14,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"Total net sales 94,257 55,173 46,472 (6,587) – 189,315"
+DV-019,[F],FOUND,14,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"Segment operating income 3,298 (4,082) 4,971 (152) – 4,036"
+DV-020,[F],FOUND,14,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"EBITDA 9,111 (1,933) 7,298 (152) (1,344) 12,980"
+DV-021,[F],FOUND,101,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"External net sales 247,391 115,836 82,135 — — 445,362"
+DV-022,[F],FOUND,101,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"Total net sales 247,391 115,888 94,571 (12,488) — 445,362"
+DV-023,[F],FOUND,101,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"Segment operating income 40,225 (8,854) 9,474 (138) — 40,708"
+DV-024,[F],FOUND,101,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"EBITDA 52,734 (4,306) 14,567 (138) (2,478) 60,380"
+DV-025,[F],FOUND,99,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Segment operating income restated 37,856 (8,854) 9,474 (138) — 38,338"
+DV-026,[F],FOUND,99,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"EBITDA restated 50,365 (4,306) 14,567 (138) (2,478) 58,011"
+DV-027,[F],FOUND,16,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"External net sales 134,262 48,681 44,211 – – 227,154"
+DV-028,[F],FOUND,16,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"Total net sales 134,262 48,689 48,402 (4,199) – 227,154"
+DV-029,[F],FOUND,16,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"Segment operating income or (loss) 14,955 (9,628) 5,893 (80) – 11,140"
+DV-030,[F],FOUND,16,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"EBITDA 21,151 (7,520) 8,322 (80) (1,165) 20,708"
+DV-031,[F],FOUND,23,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Segment operating income or (loss) 17,225 (9,628) 5,893 (80) - 13,410"
+DV-032,[F],FOUND,23,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"EBITDA 23,421 (7,520) 8,322 (80) (1,165) 22,978"
+DV-033,[F],FOUND,98,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"External net sales 257,102 110,804 89,137 — — 457,044"
+DV-034,[F],FOUND,98,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Total net sales 257,102 110,816 99,078 (9,953) — 457,044"
+DV-035,[F],FOUND,98,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Segment operating income 27,807 (11,646) 10,722 263 — 27,146"
+DV-036,[F],FOUND,98,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"EBITDA 40,407 (7,516) 15,771 263 (2,590) 46,335"
+DV-037,[F],FOUND,22,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"External net sales 143,570 48,734 47,530 - - 239,834"
+DV-038,[F],FOUND,22,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Total net sales 143,570 48,739 53,539 (6,014) - 239,834"
+DV-039,[F],FOUND,22,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Segment operating income or (loss) 22,630 (5,807) 5,793 (640) - 21,976"
+DV-040,[F],FOUND,22,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"EBITDA 28,947 (3,985) 8,630 (640) (1,585) 31,367"
+DV-041,[F],FOUND,11,,research/sources/comet/2022-07-27_comet_results-presentation-H1-2022.pdf,adj. EBITDA H1 2022 (excl. CHF 9.0 million trial expense) = CHF 46.7 million / adj. EBITDA margin 17.4%
+DV-042,[F],FOUND,13,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"Comet's trade secrets, EBITDA of the PCT division amounted to CHF 113.9 million, at a margin of 29.9%."
+DV-043,[F],FOUND,16,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,certain stock items totaling CHF 2.1 million were erroneously excluded from the assessment
+DV-044,[F],FOUND,16,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,certain expenses and related liabilities totaling CHF 0.3 mil- lion had erroneously not been recognized
+DV-045,[F],FOUND,5,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,one year earlier. This includes one-time expenses for cost reduction measures.
+DV-046,[F],FOUND,5,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"absence of one-off costs from the closure of volume pro duction of matchboxes in San Jose, USA."
+DV-047,[F],FOUND,7,,research/sources/comet/2023-07-27_comet_results-presentation-H1-2023.pdf,Capacity adaptations: operations headcount
+DV-048,[F],FOUND,5,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,short-time working for around 150 employees
+DV-049,[F],FOUND,101,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,included insurance recoveries of approximately CHF 2.1 million re- lating to this event.
+DV-050,[F],FOUND,102 111,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,as a result of the fire incident. The amount relates to the PCT segment.
+DV-051,[F],FOUND,4,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,EBITDA includes one-time costs of CHF 4.5 million related to the ramp-
+DV-052,[F],FOUND,8,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,This EBITDA margin includes one-off items totaling approximately 3 percentage points
+DV-053,[C],FOUND,5,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,sustainable EBITDA improvement of CHF 20-30 million per year from 2028
+DV-054,[F],FOUND,10,,research/sources/comet/2026-03-06_comet_results-presentation-FY2025.pdf,EBITDA margin 9.1% 11.1% 10.1%
+DV-055,[I],,,,,
+DV-056,[I],,,,,
+DV-057,[I],,,,,
+DV-058,[I],,,,,
+DV-059,[I],,,,,
+DV-060,[I],,,,,
+DV-061,[I],,,,,
+DV-062,[I],,,,,
+DV-063,[I],,,,,
+DV-064,[I],,,,,
+DV-065,[I],,,,,
+DV-066,[I],,,,,
+DV-067,[I],,,,,
+DV-068,[I],,,,,
+DV-069,[I],,,,,
+DV-070,[I],,,,,
+DV-071,[I],,,,,
+DV-072,[I],,,,,
+DV-073,[F],FOUND,15,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,Sales of X-Ray Systems division by market
+DV-074,[F],FOUND,15,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,Sales of X-Ray Systems division by market
+DV-075,[F],FOUND,17,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,Sales of X-Ray Systems division by market
+DV-076,[F],FOUND,13 15 17,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,division by market
+DV-077,[F],FOUND,13,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,Sales by market
+DV-078,[F],FOUND,16,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,Sales of Plasma Control Technologies division by market
+DV-079,[F],FOUND,16,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"electronics sector is not yet complete, which is why the less profitable"
+DV-080,[F],FOUND,14,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,still significant contribution from lower margin contracts have impact- ed profitability in the short term.
+DV-081,[F],FOUND,14,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,A significant milestone was achieved with the first purchase order for the CA20.
+DV-082,[C],FOUND,63,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,2025 >60 >25 5
+DV-083,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,"more than 80 active collaborations on the x-ray system for semiconductor component inspection, CA20"
+DV-084,[F],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,a handful of purchase orders for the x-ray system CA20 from various customers
+DV-085,[F],FOUND,1,,research/sources/comet/2026-03_comet_press-release-FY2025-results.html,Profitability was impacted by double-digit million investments in the development and commercialization
+DV-086,[C],FOUND,87,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,CHF 10-15 mn
+DV-087,[C],FOUND,87,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,CA20 > break-even
+DV-088,[C],FOUND,87,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Non-semi 5% – 10% > 10%
+DV-089,[C],FOUND,87,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Total IXS –3.7% 5% – 9%
+DV-090,[F],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,more than doubling the number of purchase orders for the CA20 x-ray system
+DV-091,[C],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,The break-even point for CA20 is still projected for 2028.
+DV-092,[F],FOUND,108,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,2024 to 2026 is assumed to be 13.3% for IXS (prior year: 22.2%)
+DV-093,[F],FOUND,119,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,2025 to 2027 is assumed to be 17.4% for IXS (prior year: 13.3%)
+DV-094,[F],FOUND,116,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,Discount rate (WACC) before tax 11.4% 8.8% 10.0% 9.0%
+DV-095,[F],FOUND,82,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"Number of employees at year-end 998 430 335 — — 1,763"
+DV-096,[F],FOUND,101,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"Number of employees at year-end 942 506 362 — — 1,810"
+DV-097,[C],FOUND,17,,research/sources/comet/2021-11-14_comet_capital-markets-day-2021.pdf,IXS: repositioning on track
+DV-098,[C],FOUND,5,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,The strategic realignment of the X-Ray Systems division with the ex pansion of its presence in the semiconductor/electronics market
+DV-099,[C],FOUND,23,,research/sources/comet/2022-11-15_comet_capital-markets-day-2022.pdf,Improvement in financial performance back-end loaded towards 2025 targets
+DV-100,[F],FOUND,15,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,IXS's focus on winning higher-return orders in the semiconductor and electronics market instead of less profitable volume business
+DV-101,[F],FOUND,5,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,IXS has fully integrated Object Research Systems (ORS)
+DV-102,[C],FOUND,22,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,serve legacy opportunistically
+DV-103,[F],FOUND,5,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,discontinuation of low-margin products
+DV-104,[C],FOUND,5,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,ductor and electronics industry has been pursued with unwavering commitment.
+DV-105,[F],FOUND,6,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,While cost reductions are focused on activities linked to traditional markets
+DV-106,[F],FOUND,4,,research/sources/comet/2025-07-30_comet_results-presentation-H1-2025.pdf,IXS division to undergo a cost efficiency program
+DV-107,[C],FOUND,30,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Profitability enhancement via restructuring in
+DV-108,[C],FOUND,84,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,− restructuring non-semi IXS
+DV-109,[C],FOUND,91,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,• Turnaround or phasing-out unprofitable
+DV-110,[C],FOUND,86,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,"• Operating leverage, price/mix, • Downsizing low-profitability • Volume growth, efficiency"
+DV-111,[F],FOUND,1,,research/sources/comet/2026-03_comet_press-release-FY2025-results.html,The positive impact of the restructuring measures initiated in the third quarter will have its full effect in the upcoming quarters.
+DV-112,[F],FOUND,25,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"In the fourth quarter of 2025, we initiated a restructuring program at"
+DV-113,[C],FOUND,18,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Following a comprehensive strategic review in 2025, Comet reaffirmed"
+DV-114,[C],FOUND,25,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"These fo- cused actions, rather than large structural exits, are designed to en- hance profitability"
+DV-115,[F],FOUND,6,,research/sources/comet/2026-03-06_comet_results-presentation-FY2025.pdf,Restructuring to sharpen semi focus
+DV-116,[F],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,Restructuring measures imple- mented in the last quarter of 2025 have contributed to improved prof- itability.
+DV-117,[C],FOUND,7,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"The division remains committed to its strategy of downsiz- ing low-margin businesses, right-sizing costs, and focusing on the CA20"
+DV-118,[C],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,reinforce our confidence in sustained growth for IXS in the semiconductor market
+DV-119,[F],FOUND,84,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"recorded sales of CHF 156 million with its largest customer, which rep"
+DV-120,[F],FOUND,84,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"recorded sales of CHF 211 million with its largest customer, which rep"
+DV-121,[F],FOUND,94,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"recorded sales of CHF 71 million with its largest customer, which repre"
+DV-122,[F],FOUND,103,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"recorded sales of CHF 106 million with its largest customer, which rep-"
+DV-123,[F],FOUND,101,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"recorded sales of CHF 104.4 million with its largest customer, which"
+DV-124,[I],,,,,
+DV-125,[F],FOUND,23,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,Advanced Energy X X
+DV-126,[C],FOUND,72,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,∼40% / ∼70% market share
+DV-127,[C],FOUND,8,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,in Vaccaps
+DV-128,[C],FOUND,22,,research/sources/comet/2022-11-15_comet_capital-markets-day-2022.pdf,"Market for RF generators in 2025e: ~USD 1.7 bn, targeted market share by 2025: ~10%"
+DV-129,[C],FOUND,16,,research/sources/comet/2022-07-27_comet_results-presentation-H1-2022.pdf,"expand market share in RF matchbox, maintain vaccaps share"
+DV-130,[C],FOUND,7,,research/sources/comet/2023-03-01_comet_results-presentation-FY2022.pdf,Growing market share in vacuum
+DV-131,[C],FOUND,5,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,share gains in a WFE market growing at a single-digit rate
+DV-132,[C],FOUND,75,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,>50 >30 15
+DV-133,[C],FOUND,68,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Top three players hold Top two players hold
+DV-134,[C],FOUND,74,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,"influence customer mix, less dependent on Memory"
+DV-135,[F],FOUND,6,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,With a book-to-bill ratio above the Group average
+DV-136,[C],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,market share gains from new products
+DV-137,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,Net sales of CHF 670 million to CHF 770 million (from CHF 800 million to CHF 900 million)
+DV-138,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,EBITDA margin between 22% and 27% of net sales (previously 25% to 30%)
+DV-139,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,Return on capital employed (ROCE) of 27% to 32% (from 30% to 35%)
+DV-140,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,new assumption for the USD/CHF exchange rate of 0.70 (previously 0.90)
+DV-141,[C],FOUND,86,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,247 to 480 116 to 160 95 to 130
+DV-142,[C],FOUND,86,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,Transforming into a Scalable High-tech Leader.
+DV-143,[C],FOUND,85,,research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf,PCT: ∼ 60%-70% Above group average
+DV-144,[C],FOUND,20 35,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,CHF 800 million to 900 million
+DV-145,[C],FOUND,32,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,Previous targets 2025 issued in 2019: Net sales > CHF 830 million / EBITDA margin of ∼25% / ROCE of ∼30%
+DV-146,[C],FOUND,35,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,IXS: 20%–25% Below group average
+DV-147,[F],FOUND,12,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,decreased to 5.2% (previous year: 9.7%).
+DV-148,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,"For FY26, Comet expects net sales of CHF 570 – 590 million, with a reported EBITDA margin of 17.0% – 19.0%."
+DV-149,[I],,,,,
+DV-150,[I],,,,,
+DV-151,[I],,,,,
+DV-152,[I],,,,,
+DV-153,[F],FOUND,1,,research/sources/comet/2025-04_comet_press-release-Q1-2025-trading-update.html,"All divisions reported double-digit revenue growth compared to the previous year, led by the Plasma Control Technologies (PCT) division."
+DV-154,[F],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,The decline in Q3/25 net sales was primarily due to lower business activity in the Plasma Control Technologies (PCT) division
+DV-155,[F],FOUND,5,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,with some orders being deferred from Q3 and Q4 to FY26.
+DV-156,[F],FOUND,1,,research/sources/comet/2026-04_comet_press-release-Q1-2026-trading-update.html,"primarily driven by lower revenues in the PCT and IXS divisions, while IXM delivered solid growth"
+DV-157,[F],FOUND,1,,research/sources/comet/2026-04_comet_press-release-Q1-2026-trading-update.html,"supported by all divisions, with PCT benefiting most from the unfolding semiconductor cycle"
+DV-158,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,the X-Ray Systems (IXS) division recorded slightly lower net sales than in the strong corresponding quarter of the previous year
+DV-159,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,Incoming orders and the order backlog continued to rise across all divisions
+DV-160,[S],,,,,
+DV-161,[S],,,,,
+DV-162,[S],,,,,
+DV-163,[S],,,,,
+A-001,[F],FOUND,9 10,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Net sales 239,834 227,154"
+A-002,[F],FOUND,10,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Gross profit 99,362 89,755"
+A-003,[F],FOUND,10,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Operating income 20,391 12,245"
+A-004,[F],FOUND,10,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"EBITDA 31,367 22,978"
+A-005,[F],FOUND,4,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,The EBITDA includes one-time costs of CHF 4.5 million related to the ramp
+A-006,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_results-presentation-H1-2026.pdf,239.8 41.4% 31.4
+A-007,[F],FOUND,9,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Free cash flow (19,306) 1,344"
+A-008,[F],FOUND,5,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,reflecting capital expenditures of CHF 29.4 million (H1/25 CHF 12.1 million)
+A-009,[F],FOUND,12,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,Share-based payments 666 370
+A-010,[F],FOUND,76,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Net sales 3 457,044 445,362"
+A-011,[F],FOUND,76,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Gross profit 173,677 38.0% 190,731 42.8%"
+A-012,[F],FOUND,76,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Operating income 24,556 5.4% 35,861 8.1%"
+A-013,[F],FOUND,76,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"EBITDA 46,335 10.1% 58,011 13.0%"
+A-014,[F],FOUND,78 155,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Net cash provided by operating activities 48,217 49,963"
+A-015,[F],FOUND,78 155,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Net cash (used in) investing activities (39,715) (8,549)"
+A-016,[F],FOUND,11,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Free cash flow 1 8,502 41,414 (584) 42,173 57,767"
+A-017,[F],FOUND,11,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Net sales 457,044 445,362 397,453 586,395 513,721"
+A-018,[F],FOUND,11,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"EBITDA 46,335 58,011 44,996 118,913 102,749"
+A-019,[F],FOUND,11,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,In % of net sales 10.1% 13.0% 11.3% 20.3% 20.0%
+A-020,[F],FOUND,78,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Share-based payments 30 1,415 1,034"
+A-021,[F],FOUND,135,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,The expenses recognized for share-based payments to the Executive Committee and Board of Directors
+A-022,[F],FOUND,101,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,included insurance recoveries of approximately CHF 2.1 million
+A-023,[F],FOUND,82,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"EBITDA 60,380 (2,369) 58,011"
+A-024,[F],FOUND,82,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Gross profit 193,100 (2,369) 190,731"
+A-025,[F],FOUND,18,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"EBITDA 20,708 2,270 22,978"
+A-026,[F],FOUND,18,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Cost of sales (139,669) 2,270 (137,399)"
+A-027,[F],FOUND,16,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,stock items totaling CHF 2.1 million were erroneously excluded
+A-028,[F],FOUND,16,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,expenses and related liabilities totaling CHF 0.3
+A-029,[F],FOUND,16,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,As the effects of these errors also carried forward into fiscal year 2025
+A-030,[F],FOUND,1,,research/sources/comet/2025-07_comet_press-release-H1-2025-results.html,"margin of 9.1%, compared to 6.9% in HY24"
+A-031,[F],FOUND,10,,research/sources/comet/2026-03-06_comet_results-presentation-FY2025.pdf,EBITDA margin 9.1% 11.1% 10.1%
+A-032,[C],FOUND,1,,research/sources/comet/2026-03_comet_press-release-FY2025-results.html,"EBITDA declined year on year, primarily due to the weaker U.S. dollar against the Swiss franc"
+A-033,[F],FOUND,12,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,reduced Group net sales by a total of CHF 20.8
+A-034,[F],FOUND,98,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Total net sales 257,102 110,816 99,078 (9,953) — 457,044"
+A-035,[F],FOUND,22,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Total net sales 143,570 48,739 53,539 (6,014) - 239,834"
+A-036,[F],FOUND,96,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Semiconductor 241,522 226,719"
+A-037,[F],FOUND,96,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Electronics 39,942 47,702"
+A-038,[C],FOUND,12,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,57% FY22 net sales
+A-039,[C],FOUND,1,,research/sources/comet/2026-07_comet_press-release-H1-2026-results.html,"AI infrastructure, Advanced Packaging, and leading-edge technologies experienced accelerated growth"
+A-040,[F],FOUND,1,,research/sources/comet/2026-07_comet_press-release-H1-2026-results.html,"In the second quarter, net sales reached CHF 133.5 million"
+A-041,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,"Net sales of CHF 155.6 million in Q3/26 (Q3/25: CHF 102.5 million), +51.9%"
+A-042,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,155.6 102.5 +51.9% (+49.9%) 395.5 329.6
+A-043,[F],FOUND,1,,research/sources/comet/2026-04_comet_press-release-Q1-2026-trading-update.html,Net sales of CHF 106.3 million in Q1/26 (Q1/25: CHF 111.2 million)
+A-044,[F],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,Net sales of CHF 102.5 million in Q3/25 (Q3/24: CHF 113.2 million)
+A-045,[F],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,Comet recorded net sales of CHF 329.6 million
+A-046,[F],FOUND,1,,research/sources/comet/2025-04_comet_press-release-Q1-2025-trading-update.html,Net sales of CHF 111.2 million in Q1/25 (Q1/24: CHF 80.9 million)
+A-047,[F],FOUND,9,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Incoming orders 354,843 222,947"
+A-048,[F],FOUND,9,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,Book-to-bill ratio 1.48 0.98
+A-049,[F],FOUND,4,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,(Q1/26 ytd 3M: 1.36)
+A-050,[F],FOUND,1,,research/sources/comet/2026-04_comet_press-release-Q1-2026-trading-update.html,"Order intake reached CHF 144.9 million, compared to CHF 129.9 million in Q4/25"
+A-051,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,Incoming orders: CHF 275.6 million in Q3/26 (Q3/25: CHF 102.1 million)
+A-052,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,Book-to-bill of 1.77 in Q3/26
+A-053,[C],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,a significant share of our order book already scheduled for delivery well into 2027
+A-054,[F],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,Incoming orders of CHF 327.4 million YTD September
+A-055,[F],FOUND,1,,research/sources/comet/2025-04_comet_press-release-Q1-2025-trading-update.html,Incoming orders of CHF 118.5 million in Q1/25 (Q1/24: 91.0 million)
+A-056,[F],FOUND,8,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"Incoming orders 222,947 207,562"
+A-057,[F],FOUND,7,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"Incoming orders 207,562 170,311"
+A-058,[F],FOUND,8,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"Incoming orders 170,311 329,556"
+A-059,[S],FOUND,1,,research/sources/comet/2024-04_webdisclosure_newswire-Comet-Q1-2024-trading-update.html,Book-to-bill of 1.09 at the end of Q1/24
+A-060,[F],FOUND,1,,research/sources/comet/2025-01_comet_press-release-Q4-2024-trading-update.html,Book-to-bill of 1.0 at year-end 2024
+A-061,[F],FOUND,10,,research/sources/comet/2023-03-01_comet_results-presentation-FY2022.pdf,book-to-bill of 0.92
+A-062,[F],FOUND,96,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,CHF 125.4 million (prior year: CHF 140.7 million)
+A-063,[F],FOUND,99,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,amounted to CHF 141 million (prior year: CHF 131 million)
+A-064,[F],FOUND,90,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,amounted to CHF 131 million (prior year: CHF 200 million)
+A-065,[F],FOUND,79,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,amounted to CHF 255 million (prior year: CHF 166 million)
+A-066,[F],FOUND,22,,research/sources/comet/2020-03-19_comet_results-presentation-FY2019.pdf,Order backlog 137.4 113.9 23.5 20.6%
+A-067,[F],FOUND,22,,research/sources/comet/2020-03-19_comet_results-presentation-FY2019.pdf,New orders 402.3 436.5 -34.2 -7.8%
+A-068,[F],FOUND,110,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Raw materials and semi-finished products 57,942 63,409"
+A-069,[F],FOUND,110,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Work in process 11,877 13,469"
+A-070,[F],FOUND,110,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Finished goods 19,662 27,870"
+A-071,[F],FOUND,110,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,inventory write-downs was CHF 4.3 million (prior year: CHF 8.5 million)
+A-072,[F],FOUND,113,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"Raw materials and semi-finished products 65,459 66,028"
+A-073,[F],FOUND,103,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"Finished goods 27,473 36,355"
+A-074,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Inventories 113,699 89,481"
+A-075,[F],FOUND,10,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"Inventories 102,733 106,798 107,811"
+A-076,[F],FOUND,10,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Cost of sales (140,472) (137,399)"
+A-077,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Contract liabilities 21,232 14,311"
+A-078,[F],FOUND,10,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"Contract liabilities 21,542 16,228 20,332"
+A-079,[F],FOUND,97,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,the reporting period amounted to CHF 13.1 million
+A-080,[F],FOUND,107 155,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Trade receivables, net 63,169 77,347"
+A-081,[F],FOUND,24,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Trade and other receivables, net — 78,605"
+A-082,[F],FOUND,24,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Trade and other receivables, net — 65,838"
+A-083,[F],FOUND,17,,research/sources/comet/2025-07-30_comet_half-year-report-H1-2025.pdf,"Trade and other receivables, net — 63,349"
+A-084,[F],FOUND,127,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,obligations at the balance sheet date totaling CHF 33.4 million
+A-085,[F],FOUND,118,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,the balance sheet date totaling CHF 42.8 million (prior year: CHF 63.2 million)
+A-086,[F],FOUND,108,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,the balance sheet date totaling CHF 37.9 million (prior year: CHF 17.5 million)
+A-087,[F],FOUND,127,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"There were no investment or capital commitments at December 31,"
+A-088,[F],FOUND,3,,research/sources/comet/2018-08-15_comet_half-year-report-H1-2018.pdf,Reiterating the expectations for 2018 of CHF 440-460 million in sales
+A-089,[F],FOUND,5,,research/sources/comet/2019-08-14_comet_half-year-report-H1-2019.pdf,the Group expects sales of between CHF 350 million and CHF 370 million and an EBITDA margin of 7.0% to 8.5%
+A-090,[F],FOUND,4,,research/sources/comet/2021-08-11_comet_half-year-report-H1-2021.pdf,"Guidance for FY2021: net sales in the range of CHF 480 million to CHF 500 million, EBITDA margin between 18.0% and 20.0%"
+A-091,[F],FOUND,18,,research/sources/comet/2022-03-03_comet_results-presentation-FY2021.pdf,570 to 610
+A-092,[F],FOUND,6,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,net sales in the range of CHF 580 million to CHF 610 million and an EBITDA margin of 21% to 23%
+A-093,[S],FOUND,1,,research/sources/comet/2022-10-20_boerse-online_newswire-Comet-Q3-2022-trading-update-DE.html,Nettoumsatz in der Bandbreite von CHF 580 bis 610 Mio. und eine EBITDA-Marge zwischen 21% und 23%
+A-094,[F],FOUND,10,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,the adjusted EBITDA margin was 21.8%
+A-095,[F],FOUND,4,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,CHF 46.7 million and 17.4% margin
+A-096,[F],FOUND,19,,research/sources/comet/2023-03-01_comet_results-presentation-FY2022.pdf,No reasonable and reliable forecast
+A-097,[S],FOUND,1,,research/sources/comet/2023-04-14_webdisclosure_newswire-Comet-Q1-2023-trading-update.html,Comet expects net sales of between CHF 440 million and CHF 480 million and an EBITDA margin of 13% to 15%
+A-098,[F],FOUND,6,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,Net sales and EBITDA margin are now expected to be at the lower end of the previous guidance range
+A-099,[S],FOUND,1,,research/sources/comet/2023-10-19_webdisclosure_newswire-Comet-Q3-2023-trading-update.html,It is now targeting net sales between CHF 380 million and CHF 400 million and an EBITDA margin of 7.0% to 9.0%
+A-100,[F],FOUND,20,,research/sources/comet/2023-11-08_comet_capital-markets-day-2023.pdf,CHF 380 million to 400 million
+A-101,[S],FOUND,1,,research/sources/comet/2023-10-19_webdisclosure_newswire-Comet-Q3-2023-trading-update.html,"Comet reported net sales of CHF 77.7 million in Q3/23, down 52.9% year-on-year (Q3/22: CHF 164.8 million)"
+A-102,[F],FOUND,19,,research/sources/comet/2024-03-03_comet_results-presentation-FY2023.pdf,440 to 480
+A-103,[S],FOUND,1,,research/sources/comet/2024-04_webdisclosure_newswire-Comet-Q1-2024-trading-update.html,net sales in the range of CHF 440 million to CHF 480 million and an EBITDA margin in the range of 15.0% to 17.0%
+A-104,[F],FOUND,6,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,confirms its guidance of net sales in the range of CHF 440 million to CHF 480 million
+A-105,[S],FOUND,1,,research/sources/comet/2024-10-18_webdisclosure_newswire-Comet-Q3-2024-trading-update.html,to the lower end of the range of CHF 440 million to CHF 480 million and 15.0% to 17.0% respectively
+A-106,[F],FOUND,1,,research/sources/comet/2025-01_comet_press-release-Q4-2024-trading-update.html,EBITDA margin slightly below its latest expectations
+A-107,[F],FOUND,1,,research/sources/comet/2025-03_comet_press-release-FY2024-results.html,EBITDA margin of 13.6% compared to 11.3% in FY23
+A-108,[F],FOUND,1,,research/sources/comet/2025-03_comet_press-release-FY2024-results.html,projected net sales of CHF 480 million to CHF 520 million and an EBITDA margin of 17.0% to 20.0%
+A-109,[F],FOUND,1,,research/sources/comet/2025-04_comet_press-release-Q1-2025-trading-update.html,While Comet confirms its guidance the company will continue to assess
+A-110,[F],FOUND,1,,research/sources/comet/2025-07_comet_press-release-H1-2025-results.html,Guidance for FY25 lowered: net sales of CHF 460 million to CHF 500 million and an EBITDA margin in a range of 10.0% to 14.0%
+A-111,[F],FOUND,1,,research/sources/comet/2025-10_comet_press-release-Q3-2025-trading-update.html,refines its guidance for net sales and EBITDA margin to the lower end of the range of CHF 460 million to CHF 500 million
+A-112,[F],FOUND,1,,research/sources/comet/2026-03_comet_press-release-FY2025-results.html,excludes one-off items of approximately 3 percentage points
+A-113,[F],FOUND,1,,research/sources/comet/2026-04_comet_press-release-Q1-2026-trading-update.html,Comet confirms its guidance for 2026
+A-114,[F],FOUND,1,,research/sources/comet/2026-07_comet_press-release-H1-2026-results.html,net sales of CHF 540–570 million and an EBITDA margin in the range of 14.0% to 17.0%
+A-115,[F],FOUND,15,,research/sources/comet/2026-07-30_comet_results-presentation-H1-2026.pdf,(excluding one-offs: 17.0% to 20.0%)
+A-116,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,FY26 guidance increased: net sales of CHF 570 – 590 million and an EBITDA margin of 17.0% – 19.0%
+A-117,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,includes one-time costs totaling up to 3 percentage points
+A-118,[C],FOUND,5,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,sustainable EBITDA improvement of CHF 20-30 million per
+A-119,[C],FOUND,1,,research/sources/comet/2025-11_comet_press-release-CMD-2025.html,Net sales of CHF 670 million to CHF 770 million (from CHF 800 million to CHF 900 million)
+A-120,[F],FOUND,101,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"CHF 104.4 million with its largest customer, which represented 22.8% of Group sales"
+A-121,[F],FOUND,103,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,resented 23.8% of Group sales (prior year: CHF 71 million and 17.7%
+A-122,[F],FOUND,94,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,sented 17.7% of Group sales (prior year: CHF 211 million and 36.1%
+A-123,[F],FOUND,84,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,resented 30.4% of Group sales (prior year: CHF 128 million and 32.4%
+A-124,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,Net sales are allo- cated to countries on the basis of customer location.
+A-125,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"China 114,604 120,152"
+A-126,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Total, Asia 289,842 277,920"
+A-127,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Malaysia 71,204 56,319"
+A-128,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Japan 18,718 18,228"
+A-129,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Rest of Asia 85,316 83,222"
+A-130,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Total, North America 81,578 88,319"
+A-131,[F],FOUND,100,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Total, Europe 78,174 71,411"
+A-132,[F],FOUND,103,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"China 120,152 108,040"
+A-133,[F],FOUND,103,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"Malaysia 56,319 28,002"
+A-134,[F],FOUND,94,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"Total, North America 92,736 221,944"
+A-135,[F],FOUND,94,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"China 108,040 105,848"
+A-136,[F],FOUND,83,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"China 98,561 55,101"
+A-137,[F],FOUND,23,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Asia 161,828 144,990"
+A-138,[F],FOUND,23,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"North America 41,456 41,212"
+A-139,[F],FOUND,23,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Europe 32,424 37,651"
+A-140,[F],FOUND,29,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,monitor the US export restrictions on the supply of semiconductor
+A-141,[F],FOUND,92,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,Trade restrictions are identified as an additional risk for inventory in
+A-142,[F],FOUND,209,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"including customs regulations, export controls,"
+A-143,[C],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,Comet is only affected to a limited extent
+A-144,[F],FOUND,71,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,The adjustment amounts to CHF 8.1 million in prior year.
+A-145,[F],FOUND,14,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"The adjustment amounts to CHF 4.0 million as of June 30,"
+A-146,[F],FOUND,11,,research/sources/comet/2019-08-14_comet_half-year-report-H1-2019.pdf,"EBITDA 29,527 2,580 32,107"
+A-147,[F],FOUND,21,,research/sources/comet/2020-03-19_comet_results-presentation-FY2019.pdf,In % of sales 10.8% 9.8% 1.1% 8.7%
+A-148,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Cash and cash equivalents 69,792 96,587"
+A-149,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Non-current debt (interest-bearing) 59,660 -"
+A-150,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Current lease liabilities 5,326 5,485"
+A-151,[F],FOUND,11,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Non-current lease liabilities 24,112 25,845"
+A-152,[F],FOUND,26,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"It has a term of five years and matures on April 18, 2031."
+A-153,[F],FOUND,26,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,carries a fixed annual coupon of 2.00%
+A-154,[F],FOUND,26,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"The bond maturing on April 20, 2026 was repaid on its maturity date"
+A-155,[F],FOUND,116 148,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"1.30%, payable annually on April 20."
+A-156,[F],FOUND,24,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Non-current debt, fixed rate — — — 59,660 61,440"
+A-157,[F],FOUND,26,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"The facility remained undrawn as of June 30, 2026."
+A-158,[F],FOUND (layout-insensitive),116,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,maximum leverage ratio of 3:1
+A-159,[F],FOUND,117,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"CHF 8.8 million was utilized as of December 31, 2025"
+A-160,[F],FOUND,130 155,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Net debt (5,287) (16,132)"
+A-161,[F],FOUND,133,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Lease liabilities 17 31,330 34,929 6,382 18,730 9,817"
+A-162,[F],FOUND,12,,research/sources/comet/2026-07-30_comet_results-presentation-H1-2026.pdf,Temporary net debt position
+A-163,[F],FOUND,27,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,"Comet Holding AG paid the dividend, which totaled CHF 3.9 million"
+A-164,[F],FOUND,14,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,Distribution per share 1 CHF 0.50 1.50 1.00 3.70 3.50
+A-165,[F],FOUND,78,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Dividend payment to shareholders of Comet Holding AG 33 (11,654) (7,772)"
+A-166,[F],FOUND,78,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Repurchase of treasury shares (439) (1,257)"
+A-167,[F],FOUND (layout-insensitive),27,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,No treasury shares were purchased on the market during the period.
+A-168,[F],FOUND,87,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"In 2025, there were no changes in the basis of consolidation from the prior year."
+A-169,[F],FOUND,90,,research/sources/comet/2025-03-05_comet_annual-report-FY2024.pdf,"In 2024, there were no changes in the basis of consolidation from the"
+A-170,[F],FOUND,83,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"In 2023, there were no changes in the basis of consolidation from the"
+A-171,[F],FOUND,73,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,"In 2022, there were no changes in the basis of consolidation from the"
+A-172,[F],FOUND,71,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"effective December 31, 2020, Comet acquired sole"
+A-173,[F],FOUND,97,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"Total consideration transferred 1 8,978"
+A-174,[F],FOUND,97,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"Goodwill, capitalized 1 4,710"
+A-175,[F],FOUND,5,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,we successfully integrated the acquired Canadian company
+A-176,[F],FOUND,69 71 79 80,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,Comet sold the ebeam lamp business to Tetra Pak eBeam Systems SA
+A-177,[F],FOUND,85,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"Gain on disposal of businesses 3,986"
+A-178,[F],FOUND,22,,research/sources/comet/2020-03-19_comet_results-presentation-FY2019.pdf,Loss on disposal of businesses - -6.6 6.6
+A-179,[F],FOUND,115,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Goodwill 19,869 20,377 6,873 6,873 26,742 27,250"
+A-180,[F],FOUND,116,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"For each CGU, the recoverable amount exceeds its carrying amount."
+A-181,[F],FOUND,102,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Impairment of property, plant and equipment 354 46"
+A-182,[F],FOUND,126,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,USD 20 million in punitive damages for a total of USD 40 million
+A-183,[F],FOUND (layout-insensitive),126,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,pre-judgement interest totaling approximately USD 19 million
+A-184,[F],FOUND,126,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,XP secured a USD 48.4 million bond to stay enforcement
+A-185,[F],FOUND (layout-insensitive),126,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"classified as a contingent asset as of December 31, 2025"
+A-186,[F],FOUND (layout-insensitive),27,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,vacated the prior judgment in the litigation
+A-187,[F],FOUND,27,,research/sources/comet/2026-07-30_comet_half-year-report-H1-2026.pdf,no receivable or income had been recog
+A-188,[C],FOUND,1,,research/sources/comet/2026-07_comet_press-release-XP-Power-appeal.html,The remand is not expected to have a material impact
+A-189,[F],FOUND,1,,research/sources/comet/2026-11-21_comet_press-release-bond-2026.html,"March 18, 2026"
+A-190,[F],FOUND,10,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"Net sales 513,721 395,816 371,606 436,356 443,370"
+A-191,[F],FOUND,10,,research/sources/comet/2022-03-03_comet_annual-report-FY2021.pdf,"EBITDA 102,749 58,616 39,974 42,966 63,203"
+A-192,[F],FOUND,7,,research/sources/comet/2018-08-15_comet_half-year-report-H1-2018.pdf,"Net sales 232,381 222,624 9,757 4.4%"
+A-193,[F],FOUND,7,,research/sources/comet/2018-08-15_comet_half-year-report-H1-2018.pdf,"EBITDA 29,527 33,819 (4,293) – 12.7%"
+A-194,[F],FOUND,6,,research/sources/comet/2019-08-14_comet_half-year-report-H1-2019.pdf,"Net sales 176,959 232,381 (55,422) – 23.8%"
+A-195,[F],FOUND,6,,research/sources/comet/2019-08-14_comet_half-year-report-H1-2019.pdf,"EBITDA 8,513 32,107 (23,595) – 73.5%"
+A-196,[F],FOUND,7,,research/sources/comet/2020-08-13_comet_half-year-report-H1-2020.pdf,"EBITDA 18,753 8,513 10,240 120.3%"
+A-197,[F],FOUND,7,,research/sources/comet/2020-08-13_comet_half-year-report-H1-2020.pdf,"Net sales 182,309 176,959 5,351 3.0%"
+A-198,[F],FOUND,8,,research/sources/comet/2021-08-11_comet_half-year-report-H1-2021.pdf,"Net sales 248,302 182,309 65,993 36.2%"
+A-199,[F],FOUND,8,,research/sources/comet/2021-08-11_comet_half-year-report-H1-2021.pdf,"EBITDA 44,252 18,753 25,499 136.0%"
+A-200,[F],FOUND,8,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,"Net sales 267,498 248,302 19,196 7.7%"
+A-201,[F],FOUND,8,,research/sources/comet/2022-07-27_comet_half-year-report-H1-2022.pdf,"EBITDA 37,681 44,252 (6,571) – 14.8%"
+A-202,[F],FOUND,9,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"Net sales 207,025 267,498 (60,473) – 22.6%"
+A-203,[F],FOUND,9,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,"EBITDA 14,275 37,681 (23,406) – 62.1%"
+A-204,[F],FOUND,5,,research/sources/comet/2023-07-27_comet_half-year-report-H1-2023.pdf,This includes one-time expenses for cost reduction
+A-205,[F],FOUND,11,,research/sources/comet/2024-03-03_comet_annual-report-FY2023.pdf,"of matchboxes in San Jose, California, reduced EBITDA in the first half"
+A-206,[F],FOUND,8,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"Net sales 189,315 207,025 (17,710) – 8.6%"
+A-207,[F],FOUND,8,,research/sources/comet/2024-07-30_comet_half-year-report-H1-2024.pdf,"EBITDA 12,980 14,275 (1,295) – 9.1%"
+A-208,[F],FOUND,10,,research/sources/comet/2024-03-03_comet_results-presentation-FY2023.pdf,154 107 100 78 113 207 191
+A-209,[F],FOUND,10,,research/sources/comet/2025-03-05_comet_results-presentation-FY2024.pdf,81 108 113 143
+A-210,[S],FOUND,1,,research/sources/comet/2023-04-14_webdisclosure_newswire-Comet-Q1-2023-trading-update.html,down 13.9% year-over-year (Q1/22: CHF 124.8 million)
+A-211,[S],FOUND,1,,research/sources/comet/2024-10-18_webdisclosure_newswire-Comet-Q3-2024-trading-update.html,(Q2/24: CHF 108.4 million)
+A-212,[S],FOUND,1,,research/sources/comet/2024-04_webdisclosure_newswire-Comet-Q1-2024-trading-update.html,(Q4/23: CHF 112.7 million)
+A-213,[F],FOUND,30,,research/sources/comet/2020-03-19_comet_results-presentation-FY2019.pdf,In H2_18 and again in
+A-214,[I],,,,,
+A-215,[I],,,,,
+A-216,[I],,,,,
+A-217,[I],,,,,
+A-218,[I],,,,,
+A-219,[I],,,,,
+A-220,[I],,,,,
+A-221,[I],,,,,
+A-222,[I],,,,,
+A-223,[I],,,,,
+A-224,[I],,,,,
+A-225,[I],,,,,
+A-226,[I],,,,,
+A-227,[I],,,,,
+A-228,[I],,,,,
+A-229,[I],,,,,
+A-230,[I],,,,,
+A-231,[I],,,,,
+A-232,[I],,,,,
+A-233,[I],,,,,
+A-234,[I],,,,,
+A-235,[I],,,,,
+A-236,[I],,,,,
+A-237,[I],,,,,
+A-238,[I],,,,,
+A-239,[I],,,,,
+A-240,[I],,,,,
+A-241,[I],,,,,
+A-242,[I],,,,,
+A-243,[I],,,,,
+A-244,[I],,,,,
+A-245,[I],,,,,
+A-246,[I],,,,,
+A-247,[I],,,,,
+A-248,[I],,,,,
+A-249,[F],FOUND,106,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"As Comet Holding AG has no such instruments, diluted earnings per share is identical to basic earnings per share."
+A-250,[F],FOUND,87 144,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,The full deregistration and liquidation process is expected to be completed by the second quarter of 2026.
+A-251,[F],FOUND,126,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"misappropriation, patent law, export regulations, tax law and competi"
+A-252,[F],FOUND,3,,research/sources/comet/2018-08-15_comet_half-year-report-H1-2018.pdf,"Closure of the Davenport site in Iowa, USA"
+A-253,[F],FOUND,22,,research/sources/comet/2020-03-19_comet_results-presentation-FY2019.pdf,Book-to-bill ratio 1.08 1.00 0.08 8.0%
+A-254,[F],FOUND,10,,research/sources/comet/2023-03-01_comet_annual-report-FY2022.pdf,In % of net sales 7.2% 11.2% 10.5% 13.1% 6.4%
+A-255,[F],FOUND,78,,research/sources/comet/2026-03-05_comet_annual-report-FY2025.pdf,"Purchases of property, plant and equipment 16 (41,479) (10,327)"
+B-001,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,Full-year results 2026
+B-002,[F],FOUND,1,,research/sources/comet/2026-10_comet_press-release-Q3-2026-trading-update.html,"78th Annual General Meeting, Trading Update Q1"
+B-003,[C],FOUND,1,,research/sources/comet/2026-07_comet_press-release-H1-2026-results.html,The new plant is planned to be fully operational by 2027
+B-004,[C],FOUND,1,,research/sources/comet/2026-07_comet_press-release-H1-2026-results.html,expected to be fully implemented by the end of 2027
