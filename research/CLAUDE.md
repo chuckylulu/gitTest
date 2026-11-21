@@ -2,7 +2,7 @@
 
 <!-- TODO: paste the rules block here (the one meant for System instructions in AI Studio). -->
 
-Contact email for API / polite-pool requests: <MY EMAIL>
+Contact email for API / polite-pool requests: yossiaa@gmail.com
 
 ## Layout
 - `prior/` – the 12 files exported from AI Studio (read-only reference material)
