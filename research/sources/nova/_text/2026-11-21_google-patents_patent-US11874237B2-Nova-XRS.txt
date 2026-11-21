@@ -1,0 +1,5587 @@
+
+
+US11874237B2 - System and method for measuring a sample by x-ray reflectance scatterometry 
+        - Google Patents
+
+US11874237B2 - System and method for measuring a sample by x-ray reflectance scatterometry 
+        - Google Patents
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Download PDF
+
+Info
+
+Publication number
+
+US11874237B2
+
+US11874237B2
+
+US17/114,842
+
+US202017114842A
+
+US11874237B2
+
+US 11874237 B2
+
+US11874237 B2
+
+US 11874237B2
+
+US 202017114842 A
+
+US202017114842 A
+
+US 202017114842A
+
+US 11874237 B2
+
+US11874237 B2
+
+US 11874237B2
+
+Authority
+
+US
+
+United States
+
+Prior art keywords
+
+ray
+
+sample
+
+ray beam
+
+sub
+
+chamber
+
+Prior art date
+
+2014-01-23
+
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+
+Active
+
+Application number
+
+US17/114,842
+
+Other versions
+
+US20210164924A1
+
+      (
+en
+
+Inventor
+
+Heath Pois
+
+David Reed
+
+Bruno SHUELER
+
+Rodney Smedt
+
+Jeffrey FANTON
+
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+
+    Nova Ltd
+
+Original Assignee
+
+Nova Measuring Instruments Inc
+
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+
+2014-01-23
+
+Filing date
+
+2020-12-08
+
+Publication date
+
+2024-01-16
+
+2020-12-08
+
+Priority to US17/114,842
+
+priority
+
+Critical
+
+patent/US11874237B2/en
+
+2020-12-08
+
+Application filed by Nova Measuring Instruments Inc
+
+filed
+
+Critical
+
+Nova Measuring Instruments Inc
+
+2021-06-03
+
+Publication of US20210164924A1
+
+publication
+
+Critical
+
+patent/US20210164924A1/en
+
+2022-01-17
+
+Assigned to NOVA MEASURING INSTRUMENTS LTD.
+
+reassignment
+
+NOVA MEASURING INSTRUMENTS LTD.
+
+CHANGE OF NAME (SEE DOCUMENT FOR DETAILS).
+
+Assignors: NOVA MEASURING INSTRUMENTS LTD.
+
+2022-03-13
+
+Assigned to NOVA LTD
+
+reassignment
+
+NOVA LTD
+
+CORRECTIVE ASSIGNMENT TO CORRECT THE NAME CHANGE ON THE COVER SHEET TO NOVA LTD. PREVIOUSLY RECORDED AT REEL: 058752 FRAME: 0343. ASSIGNOR(S) HEREBY CONFIRMS THE ASSIGNMENT.
+
+Assignors: NOVA MEASURING INSTRUMENTS LTD.
+
+2022-11-15
+
+Assigned to NOVA MEASURING INSTRUMENTS INC.
+
+reassignment
+
+NOVA MEASURING INSTRUMENTS INC.
+
+MERGER (SEE DOCUMENT FOR DETAILS).
+
+Assignors: REVERA, INCORPORATED
+
+2022-11-15
+
+Assigned to REVERA,INCORPORATED
+
+reassignment
+
+REVERA,INCORPORATED
+
+ASSIGNMENT OF ASSIGNORS INTEREST (SEE DOCUMENT FOR DETAILS).
+
+Assignors: FANTON, JEFFREY T., POIS, HEATH A., REED, DAVID A., SCHUELER, BRUNO W., SMEDT, RODNEY
+
+2024-01-15
+
+Priority to US18/412,817
+
+priority
+
+patent/US12360063B2/en
+
+2024-01-16
+
+Publication of US11874237B2
+
+publication
+
+Critical
+
+patent/US11874237B2/en
+
+2024-01-16
+
+Application granted
+
+granted
+
+Critical
+
+2025-07-11
+
+Priority to US19/267,476
+
+priority
+
+patent/US20260079122A1/en
+
+Status
+
+Active
+
+legal-status
+
+Critical
+
+Current
+
+2034-01-23
+
+Anticipated expiration
+
+legal-status
+
+Critical
+
+Links
+
+USPTO
+
+USPTO PatentCenter
+
+USPTO Assignment
+
+Espacenet
+
+Global Dossier
+
+Discuss
+
+Images
+
+Classifications
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01N
+—
+INVESTIGATING OR ANALYSING MATERIALS BY DETERMINING THEIR CHEMICAL OR PHYSICAL PROPERTIES
+
+G01N23/00
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00
+
+G01N23/20
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by using diffraction of the radiation by the materials, e.g. for investigating crystal structure; by using scattering of the radiation by the materials, e.g. for investigating non-crystalline materials; by using reflection of the radiation by the materials
+
+G01N23/201
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by using diffraction of the radiation by the materials, e.g. for investigating crystal structure; by using scattering of the radiation by the materials, e.g. for investigating non-crystalline materials; by using reflection of the radiation by the materials by measuring small-angle scattering
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01N
+—
+INVESTIGATING OR ANALYSING MATERIALS BY DETERMINING THEIR CHEMICAL OR PHYSICAL PROPERTIES
+
+G01N23/00
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00
+
+G01N23/20
+—
+Investigating or analysing materials by the use of wave or particle radiation, e.g. X-rays or neutrons, not covered by groups G01N3/00 – G01N17/00, G01N21/00 or G01N22/00 by using diffraction of the radiation by the materials, e.g. for investigating crystal structure; by using scattering of the radiation by the materials, e.g. for investigating non-crystalline materials; by using reflection of the radiation by the materials
+
+G01N23/207
+—
+Diffractometry using detectors, e.g. using a probe in a central position and one or more displaceable detectors in circumferential positions
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01N
+—
+INVESTIGATING OR ANALYSING MATERIALS BY DETERMINING THEIR CHEMICAL OR PHYSICAL PROPERTIES
+
+G01N2223/00
+—
+Investigating materials by wave or particle radiation
+
+G01N2223/05
+—
+Investigating materials by wave or particle radiation by diffraction, scatter or reflection
+
+G01N2223/054
+—
+Investigating materials by wave or particle radiation by diffraction, scatter or reflection small angle scatter
+
+H01L22/12
+—
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10P
+—
+GENERIC PROCESSES OR APPARATUS FOR THE MANUFACTURE OR TREATMENT OF DEVICES COVERED BY CLASS H10
+
+H10P74/00
+—
+Testing or measuring during manufacture or treatment of wafers, substrates or devices
+
+H10P74/20
+—
+Testing or measuring during manufacture or treatment of wafers, substrates or devices characterised by the properties tested or measured, e.g. structural or electrical properties
+
+H10P74/203
+—
+Structural properties, e.g. testing or measuring thicknesses, line widths, warpage, bond strengths or physical defects
+
+Definitions
+
+Embodiments of the invention
+
+are in the field of X-ray reflectance scatterometry (XRS) and, in particular, methods and systems for measuring periodic structures using multi-angle XRS.
+
+XRS
+
+X-ray reflectance scatterometry
+
+CD-SEM
+
+critical dimension scanning electron microscopy
+
+optical critical dimension (OCD) metrology
+
+faces a number of fundamental difficulties, including (1) the relatively long wavelength used is typically significantly larger than the device feature size and therefore does not provide a simple and direct measurement, and (2) OCD requires extensive modeling and interpolation, thus compromising the measurement sensitivity. Furthermore, over the last decades, use of shorter and shorter wavelengths has been necessitated by the reduction of circuit feature size. Currently the most advanced OCD system uses deep ultraviolet (DUV) wavelengths. Further incremental reduction in wavelength is not practical because of the extremely low transmission of shorter wavelength radiation in solids or even in low vacuum. Numerous problems can arise as a consequence, including low probing depth, lack of suitable optics, and stringent vacuum requirements. Such fundamental limitations have made it practically impossible to extend these existing technologies to meet the critical dimensional control requirements of next generation IC fabrication.
+
+DUV
+
+deep ultraviolet
+
+GISAS
+
+Grazing-incidence small-angle scattering
+
+GISAXS
+
+photons
+
+neutrons
+
+Grazing-incidence small-angle neutron scattering
+
+incident angles used in GISAS techniques
+
+is usually less than a few degrees, and even as small as a fraction of a degree. Accordingly, when used to measure 3D structures, information obtained through GISAS may be limited since the incident beam is directed mostly along only the top surfaces of such 3D structures.
+
+Embodiments of the present invention
+
+pertain to methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS).
+
+XRS
+
+multi-angle X-ray reflectance scatterometry
+
+a method of measuring a sample by X-ray reflectance scatterometry
+
+involves impinging an incident X-ray beam on a sample having a periodic structure to generate a scattered X-ray beam, the incident X-ray beam simultaneously providing a plurality of incident angles and a plurality of azimuthal angles. The method also involves collecting at least a portion of the scattered X-ray beam.
+
+a system for measuring a sample by X-ray reflectance scatterometry
+
+includes an X-ray source for generating an X-ray beam having an energy of approximately 1 keV or less.
+
+the system
+
+also includes a sample holder for positioning a sample having a periodic structure.
+
+the system
+
+also includes a monochromator positioned between the X-ray source and the sample holder. The monochromator is for focusing the X-ray beam to provide an incident X-ray beam to the sample holder.
+
+the incident X-ray beam
+
+simultaneously has a plurality of incident angles and a plurality of azimuthal angles.
+
+the system
+
+also includes a detector for collecting at least a portion of a scattered X-ray beam from the sample.
+
+FIG. 1
+
+illustrates a cross-sectional view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single angle of incidence.
+
+FIG. 2
+
+illustrates a cross-sectional view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple angles of incidence, in accordance with an embodiment of the present invention.
+
+FIG. 3
+
+illustrates a top-down view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single azimuthal angle.
+
+FIG. 4 A
+
+illustrates a top-down view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple azimuthal angles, with a central axis having a zero azimuthal angle, in accordance with an embodiment of the present invention.
+
+FIG. 4 B
+
+illustrates a top-down view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple azimuthal angles, with a central axis having a non-zero azimuthal angle, in accordance with an embodiment of the present invention.
+
+FIG. 5
+
+illustrates aspects of exemplary fin-FET devices suitable for low energy X-ray reflectance scatterometry measurements, in accordance with an embodiment of the present invention.
+
+FIG. 6
+
+includes a plot and corresponding structures of 0th order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention.
+
+FIG. 7
+
+includes a plot and corresponding structures of 1st order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention.
+
+FIG. 8
+
+is an illustration representing a periodic structure measurement system having X-ray reflectance scatterometry (XRS) capability, in accordance with an embodiment of the present invention.
+
+XRS
+
+X-ray reflectance scatterometry
+
+FIG. 9
+
+illustrates a block diagram of an exemplary computer system, in accordance with an embodiment of the present invention.
+
+XRS
+
+multi-angle X-ray reflectance scatterometry
+
+One or more embodiments described herein
+
+are directed to the use of an X-ray source configured in a manner that exploits simultaneous multiple incoming beam angles incident on a periodic (grating) structure for X-ray reflectance scatterometry measurements.
+
+Embodiments
+
+may enable detection of scattered light in two angular directions, as well as the use of reflected X-ray intensities to infer the shape and pitch of a periodic structure.
+
+Embodiments
+
+may provide suitable precision and stability measurements of the shape and size of complex two-dimensional (2D) and three-dimensional (3D) periodic structures in a production fab semiconductor environment. Such measurements may include shape profile of the periodic structures, and dimensions such as width, height and side-wall angle of the periodic structures.
+
+state-of-the-art shape metrology solutions
+
+utilize optical techniques with either single-wavelength or spectral sources nominally greater than 150 nanometers in wavelength.
+
+Spectral solutions
+
+are typically of fixed wavelength, and single wavelength sources that can vary in incident angle. Such solutions are in a wavelength/energy regime where  ⁇ >d, where  ⁇  is the incident light source, and d is the fundamental dimension of the periodic structure.
+
+optical scatterometry
+
+is approaching its fundamental sensitivity limits.
+
+wavelengths of light where  ⁇ /d ⁇ 1
+
+higher order scattering orders are available for detection, and provide direct sensitivity to the parameter d. More specifically, by using wavelengths of light less than the width and height of the structures being measured, interference fringes of multiple cycles are available, and provide sensitivity to height, width and line shape.
+
+multiple angles of incidence as well as azimuthal angles
+
+e.g., relative to the direction of structure symmetry
+
+three-dimensional information
+
+is obtained, providing three-dimensional shape sensitivity. The information obtained concerns dimensions that can critically affect device performance, and need to be controlled to very tight tolerances.
+
+FIG. 1
+
+illustrates a cross-sectional view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single angle of incidence.
+
+a periodic structure 100
+
+also referred to as a grating structure
+
+the light beam 102
+
+has an angle of incidence,  ⁇ i, relative to a horizontal plane 104 of the uppermost surface of the periodic structure 100 .
+
+Scattered beams 106
+
+are generated from the grating structure 100 .
+
+the scattered beams 106
+
+may include beams of differing scattered angle, each providing a different order of information of the grating structure 100 . For example, as shown in FIG.
+
+the arrangement of FIG. 1
+
+is illustrative of conventional OCD or GISAS scatterometry approaches.
+
+the periodic structure 100
+
+has features 108 that protrude in the z-direction by a height, h. Each feature 108 also has a width, w, along the x-axis and a length along the y-axis (i.e., into the page).
+
+the term “three-dimensional”
+
+is reserved to describe a periodic or grating structure having a length along the y-axis that is on the same order as the width, w.
+
+a periodic or grating structure
+
+having a length along the y-axis that is substantially longer than the width, w, e.g., several orders of magnitude longer.
+
+a periodic or grating structure
+
+is one having a non-planar topography within a region of measurement of, e.g., a semiconductor wafer or substrate.
+
+FIG. 2
+
+illustrates a cross-sectional view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple angles of incidence, in accordance with an embodiment of the present invention.
+
+the periodic structure 100
+
+is subjected to a conical X-ray beam 202 .
+
+the conical X-ray beam 202
+
+has a central axis 203 having an angle of incidence,  ⁇ i, relative to the horizontal plane 104 of the uppermost surface of the periodic structure 100 .
+
+the conical X-ray beam 202
+
+includes a portion, A, that has an incident angle  ⁇ i.
+
+the conical beam 202
+
+has a converging angle,  ⁇ cone, which is taken between outermost portion, B, and outermost portion, C, of the conical beam 202 . Since the conical beam 202 has the converging angle  ⁇ cone, portions of the conical beam 202 near the outer portion of the cone have a different angle of incidence on the structure 100 than the portions of the conical beam 202 that are aligned with the central axis 202 . Accordingly, the conical beam 202 simultaneously provides multiple angles of incidence for impinging on the structure 100 , as taken relative to the horizontal plane 104 .
+
+a scattered beam 206
+
+is generated from the grating structure 100 .
+
+the scattered beam 206
+
+may include portions attributable to different orders of information of the grating structure 100 , examples of which are described in greater detail below.
+
+an incident light beam
+
+can also have an azimuthal angle with respect to a periodic structure.
+
+FIG. 3
+
+illustrates a top-down view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single azimuthal angle.
+
+the periodic structure 100
+
+is shown from above the protruding portions 108 .
+
+the incident light beam 102
+
+can further have an azimuthal angle,  ⁇ g, relative to a direction, x, which is orthogonal to the protrusions 108 of the periodic structure 100 .
+
+⁇ g
+
+is non-zero, as is depicted in FIG. 3 .
+
+FIGS. 4 A and 4 B
+
+illustrate top-down views of a periodic structure subjected to scatterometry measurements using an incident beam having multiple azimuthal angles, in accordance with an embodiment of the present invention.
+
+the periodic structure 100
+
+is subjected to the conical X-ray beam 202 having the central axis 203 , as described in association with FIG. 2 .
+
+the conical X-ray beam 202
+
+further has dimensionality along the y-direction.
+
+the converging angle,  ⁇ cone, taken between outermost portion, B, and outermost portion, C, of the conical beam 202
+
+also provides a plurality of incident angles along the y-direction, e.g., to provide non-zero azimuthal angles of incidence.
+
+the central axis of the conical X-ray beam 202
+
+has an angle  ⁇ g of zero along the x-direction, with respect to the top-down view.
+
+the portion A the conical X-ray beam 202
+
+has a zero azimuthal angle.
+
+the portions B and C of the conical X-ray beam 202
+
+have non-zero azimuthal angles even though the central axis 203 of the conical X-ray beam 202 is orthogonal to the periodic structure 100 .
+
+the central axis of the conical X-ray beam 202
+
+has a non-zero angle,  ⁇ g, along the x-direction, with respect to the top-down view.
+
+the portion A the conical X-ray beam 202
+
+has a non-zero azimuthal angle.
+
+the portions B and C of the conical X-ray beam 202
+
+have non-zero azimuthal angles different from the azimuthal angle of portion A of the beam 202 .
+
+the conical beam 202
+
+since the conical beam 202 has the converging angle  ⁇ cone, portions of the conical beam 202 near the outer portion of the cone have a different azimuthal angle incident on the structure 100 than the portions of the conical beam 202 that are aligned with the central axis 202 . Accordingly, the conical beam 202 simultaneously provides multiple azimuthal angles for impinging on the structure 100 , as taken relative to the x-direction.
+
+a method of measuring a sample by X-ray reflectance scatterometry
+
+involves impinging an incident X-ray beam on a sample having a periodic structure.
+
+the X-ray beam
+
+has a conical shape to simultaneously provide multiple angles of incidence,  ⁇ i, and multiple azimuthal angles,  ⁇ g, as incident on the periodic structure.
+
+the impinging
+
+generates a scattered X-ray beam, a portion of which (if not all) can be collected in order to glean information about the periodic structure.
+
+the incident X-ray beam
+
+is a converging X-ray beam having a converging angle,  ⁇ cone, approximately in the range of 20-40 degrees.
+
+a central axis of the converging X-ray beam
+
+has a fixed non-zero incident angle,  ⁇ i, and an azimuthal angle,  ⁇ g, of zero relative to the sample, as was described in association with FIG. 4 A .
+
+a central axis of the converging X-ray beam
+
+has a fixed non-zero incident angle,  ⁇ i, and a non-zero azimuthal angle,  ⁇ g, relative to the sample, as was described in association with FIG. 4 B .
+
+the central axis of the converging X-ray beam
+
+has the fixed non-zero incident angle approximately in the range of 10-15 degrees from horizontal.
+
+the outermost portion of the conical shape of the beam and closest portion to the periodic structure
+
+e.g., portion C as shown in FIG. 2 , has an angle of approximately 5 degrees relative to a horizontal plane of the periodic structure.
+
+the incident X-ray beam
+
+is a converging X-ray beam having a converging angle approximately in the range of 2-10 degrees.
+
+a central axis of the converging X-ray beam
+
+has a fixed non-zero incident angle,  ⁇ i, and an azimuthal angle,  ⁇ g, of zero relative to the sample, as was described in association with FIG. 4 A .
+
+a central axis of the converging X-ray beam
+
+has a fixed non-zero incident angle,  ⁇ i, and a non-zero azimuthal angle,  ⁇ g, relative to the sample, as was described in association with FIG. 4 B .
+
+a low energy X-ray beam
+
+is impinged on the periodic structure.
+
+the low energy X-ray beam
+
+has an energy of approximately 1 keV or less. Use of such a low energy source can allow for larger incident angles yet with a smaller achievable spot size.
+
+the low energy X-ray beam
+
+is a K ⁇  beam generated from a source such as, but not limited to, carbon (C), molybdenum (Mo) or Rhodium (Rh).
+
+the low energy X-ray beam
+
+is focused using a toroidal multilayer monochromator prior to impinging on the periodic structure.
+
+the monochromator
+
+provides an incident angle range of approximately +/ ⁇ 30 degrees and an azimuth angle range of approximately +/ ⁇ 10 degrees.
+
+the toroidal multilayer monochromator
+
+provides an incident angle range of approximately +/ ⁇ 20 degrees.
+
+the conical X-ray beams described herein
+
+may not, or need not, be collimated. For example, in one embodiment, between focusing the beam at the above described monochromator and impinging the focused beam on the periodic sample, the beam is not subjected to collimation.
+
+the focused low energy X-ray beam
+
+is impinged on the sample at an incident angle range less than the angle of a nominal first-order angle at zero degrees.
+
+At least a portion of the scattered X-ray beam 206
+
+is collected using a detector 250 .
+
+a two-dimensional detector
+
+is used to simultaneously sample scattered signal intensity of the portion of the scattered X-ray beam 206 scattered from the plurality of incident angles and the plurality of azimuthal angles.
+
+the collected signal
+
+may then be subjected to scatterometry analysis, e.g., where inversion of scatter data is compared to theory to determine structural details of the periodic structure 100 .
+
+a shape of the periodic structure of a sample
+
+is estimated by inversion of scattering solutions relative to the sampled scattered signal intensity, e.g., by rigorously solving Maxwell's equations on the periodic structure.
+
+the X-ray beam impinged on the sample
+
+has a wavelength less than a periodicity of the periodic structure 100 .
+
+the probing wavelength
+
+is comparable to or less than fundamental structural dimensions, providing a richer set of data from the scattered beam 206 as compared to OCD scatterometry.
+
+the incident conical X-ray beam used for XRS
+
+is a converging X-ray beam having a converging angle,  ⁇ cone, approximately in the range of 20-40 degrees.
+
+⁇ cone
+
+converging angle
+
+Such a relatively broad cone angle
+
+may generate a scattered beam that includes higher order diffraction data in addition to zero-order reflection data.
+
+both zero order and higher order information
+
+are obtained in parallel with a single impinging operation.
+
+a relatively narrower cone angle
+
+may be used, e.g., the incident X-ray beam is a converging X-ray beam having a converging angle approximately in the range of 2-10 degrees. More than one single measurement may be performed using the relatively narrower cone angle. For example, in one embodiment, a first measurement is made where the central axis of the converging beam has an azimuthal angle of zero, as described in association with FIG. 4 A . A second measurement is then made where the central axis of the converging beam has a non-zero azimuthal angle, as described in association with FIG. 4 B .
+
+the first measurement
+
+is performed to collect 0th order but not 1st order diffraction data for a sample having a periodic structure.
+
+the second measurement
+
+is performed to collect 1st order but not 0th order diffraction data for a sample having a periodic structure. In this way, zero order data can be separated from higher order data at the time of generating the scattered beam.
+
+X-ray reflectance scatterometry
+
+is used to separate different orders on an array detector by approaching in a non-zero azimuth. In many cases it is the higher orders that are more useful. By cleanly obtaining all the orders in parallel, in one case, throughput can be enhanced. However, sequential approaches may also be used. Furthermore, a very focused beam is used to probe at a variety of incidence angles rather than at a single angle of incidence. In one embodiment, the beam is not collimated since for a collimated beam, a sample would require rotation with data taken serially. By capturing a higher order, use of a very small incidence angle is not needed in order to obtain a strong reflected beam. By contrast, in an embodiment, an angle of incidence of, e.g., 10 degrees to 15 degrees can be used even in the case where a specular (0-order) reflected beam is relatively weak but the  ⁇ 1 order, for example, is very strong.
+
+embodiments described herein
+
+can be used to acquire data from both the zero order (specular) reflection and from the diffracted (higher) orders.
+
+Conventional solutions
+
+have emphasized using either zero order or diffracted (higher) orders, but not both.
+
+Embodiments described herein
+
+can further be distinguished from prior disclosed scatterometry approaches, a couple examples of which are described below.
+
+U.S. Pat. No. 7,920,676 to Yun et al.
+
+describes a CD-GISAXS system and method.
+
+the described approach
+
+involves analyzing the diffraction pattern of scattered X-rays generated from a collimated beam and analyzing multiple orders of the diffracted light. Lower energy is used to provide a higher-convergence beam because the diffraction orders are spaced farther apart. However, the orders are still fairly closely spaced and the convergence angles described are in micro-radians. Furthermore, diffraction is not collected for a multitude of incidence angles.
+
+a wide range of incidence angles
+
+is used in a single beam.
+
+diffracted orders
+
+other than zero-order
+
+the +/ ⁇ 1 orders
+
+can have different sensitivities to grating characteristics (in particular, the pitch), so, in one embodiment, at least one extra order is captured when possible. Even so, the bulk of the information is contained in the way the signal varies with incident angle.
+
+U.S. Pat. No. 7,920,676
+
+essentially one incident angle is used and information is gathered by looking at a multiplicity of diffracted orders.
+
+the first order beam
+
+can be separated from the zero-order beam by moving the first-order beam to the side of the zero-order beam.
+
+the periodic or grating structure
+
+is approached at a non-zero azimuthal angle. In this way, a highly converging beam can be used while still achieving order separation.
+
+the +/ ⁇ 1 order diffracted beams
+
+are deflected to the side of the zero-order beam by a minimum of 10 degrees, and even more as the incidence angle is increased.
+
+a convergent beam of up to approximately 10 degrees
+
+can be used while avoiding overlap or data. It is to be appreciated that depending on the specifics of the grating pitch and the X-ray energy, the separation between orders can be made to be larger or smaller. Overall, in an embodiment, by collecting a multiplicity of incident and azimuthal angles simultaneously, more useful information is obtained than compared to a single shot of a collimated beam.
+
+U.S. Pat. No. 6,556,652 to Mazor et al.
+
+describes measurement of critical dimensions using X-rays.
+
+the described approach
+
+is not actually based on the diffraction of an X-ray beam at all. Instead, a “shadow” is created in a collimated beam.
+
+the shadow
+
+reflects off of a pattern (e.g., a linear grating structure).
+
+the contrast mechanism for the shadow
+
+is the difference in the critical angle for reflecting x-rays between a Si region at the bottom of a grating gap and the critical angle when passing first through ridge material (photoresist).
+
+a majority of information
+
+comes from signals at angles far above the critical angle.
+
+X-ray reflectance scatterometry
+
+can be viewed as a type of X-ray reflectometry (XRR) as applied to two-dimensional and three-dimensional periodic or grating structures.
+
+Traditional XRR measurements
+
+involve the use of a single source X-ray that probes a sample over a range of angles. Varying optical path length differences with angle provides interference fringes that can be discerned to glean film property information such as film thickness and film density.
+
+physics of the X-ray interaction with matter at higher source energies
+
+limits the angular range to a grazing incidence of typically less than approximately three degrees relative to sample horizontal plane.
+
+XRR
+
+has had limited production/inline viability.
+
+application of low-energy XRR/XRS
+
+enables the use of larger angles due to changing optical film properties with energy that lead to larger angles of signal sensitivity.
+
+a critical dimension (CD) of a semiconductor device
+
+refers to a feature that has a direct impact on device performance or its manufacturing yield. Therefore, CDs must be manufactured or controlled to tight specifications. Examples of more conventional CDs include gate length, gate width, interconnect line width, line spacing, and line width roughness (LWR). Semiconductor devices are very sensitive to such dimensions, with small variations potentially leading to substantial impacts on performance, device failure, or manufacturing yield. As integrated circuit (IC) feature sizes of semiconductor devices continue to shrink, manufacturers face ever decreasing process windows and tighter tolerances. This has dramatically raised the accuracy and sensitivity requirements for CD metrology tools as well as the need for non-destructive measurement sampling early in the manufacturing cycle with minimal impact to productivity of the semiconductor device manufacturing plant or fab.
+
+Non-planar semiconductor device fabrication
+
+has complicated matters even further.
+
+semiconductor devices fabricated on raised channels having a non-planar topography
+
+often referred to as fins further include fin dimensions as additional CDs that must be accounted for.
+
+fin-FET
+
+fin field effect transistor
+
+Such fin field effect transistor (fin-FET) or multi-gate devices
+
+have high-aspect ratio features, and the need for three-dimensional (3D) profile information on the fins of device structures, including sidewall angle, and top and bottom dimensions, has become critical. Consequently, the ability to measure the 3D profile provides far more valuable information than the conventional two-dimensional line width and spacing CD information.
+
+FIG. 5
+
+illustrates aspects of exemplary fin-FET devices suitable for low energy X-ray reflectance scatterometry measurements, in accordance with an embodiment of the present invention.
+
+structure A
+
+illustrates an angled cross-sectional view of a semiconductor fin 502 having a gate electrode stack 504 disposed thereon.
+
+the semiconductor fin 502
+
+protrudes from a substrate 506 which is isolated by shallow trench isolation (STI) regions 508 .
+
+the gate electrode stack 504
+
+includes a gate dielectric layer 510 and a gate electrode 512 .
+
+Structure B
+
+illustrates a cross-sectional view of a semiconductor fin 520 protruding from a substrate 522 between STI regions 524 .
+
+Structure B
+
+illustrates a cross-sectional view of a semiconductor fin 530 protruding from a substrate 532 between STI regions 534 , and having a multilayer stack of films 536 thereon.
+
+the layers of the multilayer stack of films 536
+
+may include material layers such as, but not limited to, titanium aluminum carbide (TiAlC), tantalum nitride (TaN) or titanium nitride (TiN).
+
+TiAlC
+
+titanium aluminum carbide
+
+TaN
+
+tantalum nitride
+
+TiN
+
+titanium nitride
+
+FIG. 6
+
+includes a plot 600 and corresponding structures (A)-(E) of 0th order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention.
+
+low energy XRS measurements
+
+can be used to distinguish between a nominal fin structure (structure A), a structure of increased fin height (structure B), a structure of decreased fin width (structure C), a structure of wider fin bottom CD versus fin top CD (structure D), and a structure of narrower fin bottom CD versus fin top CD (structure E).
+
+the Si fins
+
+are analyzed with 0th order conical diffraction at 45 degrees to the periodic structure. It is to be appreciated that, in comparison to optical data, a reduced region of highest signal is achieved with fringes in data seen in plot 600 being a consequence of short wavelength.
+
+FIG. 7
+
+includes a plot 700 and corresponding structures (A)-(E) of 1st order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention.
+
+low energy XRS measurements
+
+can be used to distinguish between a nominal fin structure (structure A), a structure of increased fin height (structure B), a structure of decreased fin width (structure C), a structure of wider fin bottom CD versus fin top CD (structure D), and a structure of narrower fin bottom CD versus fin top CD (structure E).
+
+the Si fins
+
+are analyzed with 1st order conical diffraction at 45 degrees to the periodic structure.
+
+1st order data
+
+is very sensitive to fin thickness (noting that structure B is separated significantly from the signals due to structures A and C-E). Also, 1st order data is very sensitive to pitch variation in the periodic structure, noting that the spectrum for varied pitch is also significantly discernible from the other spectra.
+
+an apparatus for performing X-ray reflectance scatterometry
+
+includes a generic X-ray source along with a focusing monochromator that extends in two dimensions.
+
+the focusing monochromator
+
+allows for incident rays of light to strike a periodic sample at two varying incident angles, (i) incident to the plane of the periodic structure, and (ii) azimuthally, with respect to the symmetry of the structure (and at fixed incident angle).
+
+the detection of the scattered light
+
+is achieved by a two-dimensional (2D) detector, which simultaneously samples the scattered signal intensity across the range of scattered angles in the two angular directions.
+
+⁇
+
+the angle of the nominal first-order angle at  ⁇  degree
+
+FIG. 8
+
+is an illustration representing a periodic structure measurement system having XRS capability, in accordance with an embodiment of the present invention.
+
+a system 800 for measuring a sample 802 by X-ray reflectance scatterometry
+
+includes an X-ray source 804 for generating an X-ray beam 806 having an energy of approximately 1 keV or less.
+
+a sample holder 808
+
+is provided for positioning the sample 802 , the sample having a periodic structure.
+
+a monochromator 810
+
+is positioned between the X-ray source 804 and the sample holder 802 , in that the X-ray beam 806 travels from the X-ray source 804 to the monochromator 810 and then to the sample holder 808 .
+
+the monochromator 810
+
+is for focusing the X-ray beam 806 to provide an incident X-ray beam 812 to the sample holder 808 .
+
+the incident X-ray beam 812
+
+simultaneously has a plurality of incident angles and a plurality of azimuthal angles.
+
+the system 800
+
+also includes a detector 814 for collecting at least a portion of a scattered X-ray beam 816 from the sample 802 .
+
+the X-ray source 804 , the sample holder 808 , the monochromator 810 and the detector 814
+
+are all housed in a chamber 818 .
+
+the system 800
+
+further includes an electron gun 820 .
+
+the X-ray source 804
+
+is an anode and the electron gun is directed at the anode.
+
+the anode
+
+is for generating low energy X-rays and includes a material such as, but not limited to, carbon (C), molybdenum (Mo) or Rhodium (Rh).
+
+the electron gun 820
+
+is an approximately 1 keV electron gun.
+
+a magnetic electron suppression device 822
+
+is included between the X-ray source 804 and the monochromator 810 .
+
+the monochromator 810
+
+is a toroidal multilayer monochromator that provides an incident angle range of approximately +/ ⁇ 30 degrees and an azimuth angle range of approximately +/ ⁇ 10 degrees. In one such embodiment, the toroidal multilayer monochromator provides an incident angle range of approximately +/ ⁇ 20 degrees. In an embodiment, as described above, there is no intervening collimator between the monochromator 810 and the sample holder 808 .
+
+the monochromator 810
+
+may be positioned to provide a desired incident beam for XRS measurements.
+
+the monochromator 810
+
+is positioned relative to the sample holder 808 to provide a converging X-ray beam having a central axis with a fixed non-zero incident angle and an azimuthal angle of zero relative to a periodic structure of a sample 802 .
+
+the monochromator 810
+
+is positioned relative to the sample holder 808 to provide a converging X-ray beam having a central axis with a fixed non-zero incident angle and a non-zero azimuthal angle relative to a periodic structure of a sample 802 .
+
+the monochromator 810
+
+is composed of alternating metal (M) layers and carbon (C) layers disposed on a glass substrate, where M is a metal such as, but not limited to, cobalt (Co) or chromium (Cr).
+
+M
+
+is a metal such as, but not limited to, cobalt (Co) or chromium (Cr).
+
+a multilayer monochromator
+
+is provided for reflecting carbon (C) based K ⁇  radiation and includes approximately would be 100 repeating layers of Co/C or Cr/C with a period of about 4 nanometers, i.e., a period slightly less than the wavelength of the reflected beam which may be approximately 5 nanometers.
+
+the Co or Cr layers
+
+are thinner than the C layers.
+
+the sample holder 808
+
+may be a moveable sample holder.
+
+the sample holder 808
+
+is rotatable to change an azimuth angle of a central axis of the X-ray beam 812 relative to a periodic structure of a sample 802 .
+
+the sample holder 808
+
+is rotatable to provide orthogonal operation with eucentric rotation, enabling two or more sample rotations per measurement.
+
+a navigation visual inspection apparatus 824
+
+allows visual inspection of the sample holder 808 , as is depicted in FIG. 8 .
+
+a flip-in objective lens
+
+is included for a vision-based inspection system.
+
+the detector 814
+
+is a two-dimensional detector.
+
+the two-dimensional detector
+
+may be configured for simultaneously sampling scattered signal intensity of the portion of the scattered X-ray beam 816 scattered from the plurality of incident angles and the plurality of azimuthal angles of the incident beam 812 .
+
+the system 800
+
+further includes a processor or computing system 899 coupled to the two-dimensional detector.
+
+the processor 899
+
+is for estimating a shape of the periodic structure of a sample 802 by inversion of scattering solutions relative to the sampled scattered signal intensity.
+
+a scanning slit
+
+may be implemented. In either case, the detector 814 can be configured to achieve approximately 1000 pixels of data collection across a dispersion range.
+
+Embodiments of the present invention
+
+may be provided as a computer program product, or software, that may include a machine-readable medium having stored thereon instructions, which may be used to program a computer system (or other electronic devices) to perform a process according to the present invention.
+
+a machine-readable medium
+
+includes any mechanism for storing or transmitting information in a form readable by a machine (e.g., a computer).
+
+a machine-readable (e.g., computer-readable) medium
+
+includes a machine (e.g., a computer) readable storage medium (e.g., read only memory (“ROM”), random access memory (“RAM”), magnetic disk storage media, optical storage media, flash memory devices, etc.), a machine (e.g., computer) readable transmission medium (electrical, optical, acoustical or other form of propagated signals (e.g., infrared signals, digital signals, etc.)), etc.
+
+FIG. 9
+
+illustrates a diagrammatic representation of a machine in the exemplary form of a computer system 900 within which a set of instructions, for causing the machine to perform any one or more of the methodologies discussed herein, may be executed.
+
+the machine
+
+may be connected (e.g., networked) to other machines in a Local Area Network (LAN), an intranet, an extranet, or the Internet.
+
+LAN
+
+Local Area Network
+
+the machine
+
+may operate in the capacity of a server or a client machine in a client-server network environment, or as a peer machine in a peer-to-peer (or distributed) network environment.
+
+the machine
+
+may be a personal computer (PC), a tablet PC, a set-top box (STB), a Personal Digital Assistant (PDA), a cellular telephone, a web appliance, a server, a network router, switch or bridge, or any machine capable of executing a set of instructions (sequential or otherwise) that specify actions to be taken by that machine.
+
+PC
+
+personal computer
+
+PDA
+
+Personal Digital Assistant
+
+STB
+
+set-top box
+
+WPA
+
+Personal Digital Assistant
+
+a cellular telephone
+
+e.g., a web appliance
+
+server
+
+e.g., a server
+
+network router
+
+e.g., switch or bridge
+
+any machine
+
+capable of executing a set of instructions (sequential or otherwise) that specify actions to be taken by that machine.
+
+the term “machine”
+
+shall also be taken to include any collection of machines (e.g., computers) that individually or jointly execute a set (or multiple sets) of instructions to perform any one or more of the methodologies discussed herein.
+
+a machine
+
+is configured to execute one or
+
+the exemplary computer system 900
+
+includes a processor 902 , a main memory 904 (e.g., read-only memory (ROM), flash memory, dynamic random access memory (DRAM) such as synchronous DRAM (SDRAM) or Rambus DRAM (RDRAM), etc.), a static memory 906 (e.g., flash memory, static random access memory (SRAM), etc.), and a secondary memory 918 (e.g., a data storage device), which communicate with each other via a bus 930 .
+
+main memory 904
+
+e.g., read-only memory (ROM), flash memory, dynamic random access memory (DRAM) such as synchronous DRAM (SDRAM) or Rambus DRAM (RDRAM), etc.
+
+DRAM
+
+dynamic random access memory
+
+SDRAM
+
+synchronous DRAM
+
+RDRAM
+
+Rambus DRAM
+
+static memory 906
+
+e.g., flash memory, static random access memory (SRAM), etc.
+
+secondary memory 918
+
+e.g., a data storage device
+
+Processor 902
+
+represents one or more general-purpose processing devices such as a microprocessor, central processing unit, or the like. More particularly, the processor 902 may be a complex instruction set computing (CISC) microprocessor, reduced instruction set computing (RISC) microprocessor, very long instruction word (VLIW) microprocessor, processor implementing other instruction sets, or processors implementing a combination of instruction sets. Processor 902 may also be one or more special-purpose processing devices such as an application specific integrated circuit (ASIC), a field programmable gate array (FPGA), a digital signal processor (DSP), network processor, or the like. Processor 902 is configured to execute the processing logic 926 for performing the operations discussed herein.
+
+ASIC
+
+application specific integrated circuit
+
+FPGA
+
+field programmable gate array
+
+DSP
+
+digital signal processor
+
+the computer system 900
+
+may further include a network interface device 908 .
+
+the computer system 900
+
+also may include a video display unit 910 (e.g., a liquid crystal display (LCD) or a cathode ray tube (CRT)), an alphanumeric input device 912 (e.g., a keyboard), a cursor control device 914 (e.g., a mouse), and a signal generation device 916 (e.g., a speaker).
+
+a video display unit 910
+
+e.g., a liquid crystal display (LCD) or a cathode ray tube (CRT)
+
+an alphanumeric input device 912
+
+e.g., a keyboard
+
+a cursor control device 914
+
+e.g., a mouse
+
+a signal generation device 916
+
+e.g., a speaker
+
+the secondary memory 918
+
+may include a machine-accessible storage medium (or more specifically a computer-readable storage medium) 931 on which is stored one or more sets of instructions (e.g., software 922 ) embodying any one or more of the methodologies or functions described herein.
+
+the software 922
+
+may also reside, completely or at least partially, within the main memory 904 and/or within the processor 902 during execution thereof by the computer system 900 , the main memory 904 and the processor 902 also constituting machine-readable storage media.
+
+the software 922
+
+may further be transmitted or received over a network 920 via the network interface device 908 .
+
+machine-accessible storage medium 931
+
+is shown in an exemplary embodiment to be a single medium, the term “machine-readable storage medium” should be taken to include a single medium or multiple media (e.g., a centralized or distributed database, and/or associated caches and servers) that store the one or more sets of instructions.
+
+the term “machine-readable storage medium”
+
+shall also be taken to include any medium that is capable of storing or encoding a set of instructions for execution by the machine and that cause the machine to perform any one or more of the methodologies of the present invention.
+
+the term “machine-readable storage medium”
+
+shall accordingly be taken to include, but not be limited to, solid-state memories, and optical and magnetic media.
+
+a non-transitory machine-accessible storage medium
+
+has stored thereon instruction for performing a method of measuring a sample by X-ray reflectance scatterometry.
+
+the method
+
+involves impinging an incident X-ray beam on a sample having a periodic structure to generate a scattered X-ray beam.
+
+the incident X-ray beam
+
+simultaneously provides a plurality of incident angles and a plurality of azimuthal angles.
+
+the method
+
+also involves collecting at least a portion of the scattered X-ray beam.
+
+XRS
+
+multi-angle X-ray reflectance scatterometry
+
+Landscapes
+
+Chemical & Material Sciences
+
+        (
+AREA
+)
+
+Crystallography & Structural Chemistry
+
+        (
+AREA
+)
+
+Physics & Mathematics
+
+        (
+AREA
+)
+
+Health & Medical Sciences
+
+        (
+AREA
+)
+
+Life Sciences & Earth Sciences
+
+        (
+AREA
+)
+
+Analytical Chemistry
+
+        (
+AREA
+)
+
+Biochemistry
+
+        (
+AREA
+)
+
+General Health & Medical Sciences
+
+        (
+AREA
+)
+
+General Physics & Mathematics
+
+        (
+AREA
+)
+
+Immunology
+
+        (
+AREA
+)
+
+Pathology
+
+        (
+AREA
+)
+
+Analysing Materials By The Use Of Radiation
+
+        (
+AREA
+)
+
+Abstract
+
+A system and method for measuring a sample by X-ray reflectance scatterometry. The method may include impinging an incident X-ray beam on a sample having a periodic structure to generate a scattered X-ray beam, the incident X-ray beam simultaneously providing a plurality of incident angles and a plurality of azimuthal angles; and collecting at least a portion of the scattered X-ray beam.
+
+Description
+
+CROSS-REFERENCE TO RELATED APPLICATIONS
+
+This application is a continuation of U.S. patent application Ser. No. 16/686,953, filing date 18 Nov. 2019, (now U.S. Pat. No. 10,859,519, issued Dec. 8, 2020), which is a continuation of U.S. patent application Ser. No. 16/181,287, filed on Nov. 5, 2018, (now U.S. Pat. No. 10,481,112, issued Nov. 19, 2019), which is a continuation of U.S. patent application Ser. No. 15/451,104, filed on Mar. 6, 2017 (now U.S. Pat. No. 10,119,925, issued Nov. 6, 2018), which is a continuation of U.S. patent application Ser. No. 14/161,942, filed on Jan. 23, 2014 (now U.S. Pat. No. 9,588,066, filed Mar. 7, 2017), the entire contents of which are hereby incorporated by reference herein.
+
+BACKGROUND
+
+1) Field
+
+Embodiments of the invention are in the field of X-ray reflectance scatterometry (XRS) and, in particular, methods and systems for measuring periodic structures using multi-angle XRS.
+
+2) Description of Related Art
+
+As integrated circuit (IC) features continue to be scaled to ever smaller dimensions, constraints on metrology used to measure such features become overwhelming. For example, critical dimension scanning electron microscopy (CD-SEM) metrology has several drawbacks that are becoming more significant with each new generation of IC technology. Drawbacks can include (1) the well known charging problem that limits the achievable resolution for IC metrology applications, (2) radiation damage induced dimensional shrinking of resists, (3) incompatibility with some low-k dielectrics, and (4) CD-SEM is essentially a surface technique making it difficult to measure three dimensional (3D) profiles.
+
+Similarly, optical critical dimension (OCD) metrology faces a number of fundamental difficulties, including (1) the relatively long wavelength used is typically significantly larger than the device feature size and therefore does not provide a simple and direct measurement, and (2) OCD requires extensive modeling and interpolation, thus compromising the measurement sensitivity. Furthermore, over the last decades, use of shorter and shorter wavelengths has been necessitated by the reduction of circuit feature size. Currently the most advanced OCD system uses deep ultraviolet (DUV) wavelengths. Further incremental reduction in wavelength is not practical because of the extremely low transmission of shorter wavelength radiation in solids or even in low vacuum. Numerous problems can arise as a consequence, including low probing depth, lack of suitable optics, and stringent vacuum requirements. Such fundamental limitations have made it practically impossible to extend these existing technologies to meet the critical dimensional control requirements of next generation IC fabrication.
+
+Grazing-incidence small-angle scattering (GISAS) is a scattering technique used to study nanostructured surfaces and thin films. The scattered probe is either photons (Grazing-incidence small-angle X-ray scattering, GISAXS) or neutrons (Grazing-incidence small-angle neutron scattering, GISANS). In either case, an incident beam strikes a sample under a small angle close to the critical angle of total external x-ray reflection. The intense reflected beam as well as the intense scattering in the incident plane are attenuated by a rod-shaped beam stop. The diffuse scattering from the sample is typically recorded with an area detector. However, since incident angles used in GISAS techniques is usually less than a few degrees, and even as small as a fraction of a degree. Accordingly, when used to measure 3D structures, information obtained through GISAS may be limited since the incident beam is directed mostly along only the top surfaces of such 3D structures.
+
+Thus, advances are needed in metrology of 3D structures.
+
+SUMMARY
+
+Embodiments of the present invention pertain to methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS).
+
+In an embodiment, a method of measuring a sample by X-ray reflectance scatterometry involves impinging an incident X-ray beam on a sample having a periodic structure to generate a scattered X-ray beam, the incident X-ray beam simultaneously providing a plurality of incident angles and a plurality of azimuthal angles. The method also involves collecting at least a portion of the scattered X-ray beam.
+
+In another embodiment, a system for measuring a sample by X-ray reflectance scatterometry includes an X-ray source for generating an X-ray beam having an energy of approximately 1 keV or less. The system also includes a sample holder for positioning a sample having a periodic structure. The system also includes a monochromator positioned between the X-ray source and the sample holder. The monochromator is for focusing the X-ray beam to provide an incident X-ray beam to the sample holder. The incident X-ray beam simultaneously has a plurality of incident angles and a plurality of azimuthal angles. The system also includes a detector for collecting at least a portion of a scattered X-ray beam from the sample.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+FIG. 
+1
+
+ illustrates a cross-sectional view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single angle of incidence.
+
+FIG. 
+2
+
+ illustrates a cross-sectional view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple angles of incidence, in accordance with an embodiment of the present invention.
+
+FIG. 
+3
+
+ illustrates a top-down view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single azimuthal angle.
+
+FIG. 
+4
+A
+ illustrates a top-down view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple azimuthal angles, with a central axis having a zero azimuthal angle, in accordance with an embodiment of the present invention.
+
+FIG. 
+4
+B
+ illustrates a top-down view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple azimuthal angles, with a central axis having a non-zero azimuthal angle, in accordance with an embodiment of the present invention.
+
+FIG. 
+5
+
+ illustrates aspects of exemplary fin-FET devices suitable for low energy X-ray reflectance scatterometry measurements, in accordance with an embodiment of the present invention.
+
+FIG. 
+6
+
+ includes a plot and corresponding structures of 0th order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention.
+
+FIG. 
+7
+
+ includes a plot and corresponding structures of 1st order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention.
+
+FIG. 
+8
+
+ is an illustration representing a periodic structure measurement system having X-ray reflectance scatterometry (XRS) capability, in accordance with an embodiment of the present invention.
+
+FIG. 
+9
+
+ illustrates a block diagram of an exemplary computer system, in accordance with an embodiment of the present invention.
+
+DETAILED DESCRIPTION
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) are described. In the following description, numerous specific details are set forth, such as X-ray beam parameters and energies, in order to provide a thorough understanding of embodiments of the present invention. It will be apparent to one skilled in the art that embodiments of the present invention may be practiced without these specific details. In other instances, well-known features such as entire semiconductor device stacks are not described in detail in order to not unnecessarily obscure embodiments of the present invention. Furthermore, it is to be understood that the various embodiments shown in the Figures are illustrative representations and are not necessarily drawn to scale.
+
+One or more embodiments described herein are directed to the use of an X-ray source configured in a manner that exploits simultaneous multiple incoming beam angles incident on a periodic (grating) structure for X-ray reflectance scatterometry measurements. Embodiments may enable detection of scattered light in two angular directions, as well as the use of reflected X-ray intensities to infer the shape and pitch of a periodic structure. Embodiments may provide suitable precision and stability measurements of the shape and size of complex two-dimensional (2D) and three-dimensional (3D) periodic structures in a production fab semiconductor environment. Such measurements may include shape profile of the periodic structures, and dimensions such as width, height and side-wall angle of the periodic structures.
+
+To provide context, state-of-the-art shape metrology solutions utilize optical techniques with either single-wavelength or spectral sources nominally greater than 150 nanometers in wavelength. Spectral solutions are typically of fixed wavelength, and single wavelength sources that can vary in incident angle. Such solutions are in a wavelength/energy regime where λ>d, where λ is the incident light source, and d is the fundamental dimension of the periodic structure. However, optical scatterometry is approaching its fundamental sensitivity limits.
+
+In accordance with an embodiment of the present invention, by using wavelengths of light where λ/d<1, higher order scattering orders are available for detection, and provide direct sensitivity to the parameter d. More specifically, by using wavelengths of light less than the width and height of the structures being measured, interference fringes of multiple cycles are available, and provide sensitivity to height, width and line shape. In an embodiment, by using multiple angles of incidence as well as azimuthal angles (e.g., relative to the direction of structure symmetry), three-dimensional information is obtained, providing three-dimensional shape sensitivity. The information obtained concerns dimensions that can critically affect device performance, and need to be controlled to very tight tolerances.
+
+In order aid in conceptualizing concepts involved herein, 
+FIG. 
+1
+
+ illustrates a cross-sectional view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single angle of incidence. Referring to 
+FIG. 
+1
+
+, a periodic structure 
+100
+ (also referred to as a grating structure) is subjected to a 
+light beam
+
+102
+. The 
+light beam
+
+102
+ has an angle of incidence, ϕi, relative to a 
+horizontal plane
+
+104
+ of the uppermost surface of the 
+periodic structure
+
+100
+. 
+Scattered beams
+
+106
+ are generated from the 
+grating structure
+
+100
+. The 
+scattered beams
+
+106
+ may include beams of differing scattered angle, each providing a different order of information of the 
+grating structure
+
+100
+. For example, as shown in 
+FIG. 
+1
+
+, three orders, n=1, n=0, n=−1, are shown, where the scattered angle for the n=−1 order has an angle of θ relative to the 
+horizontal plane
+
+104
+ of the uppermost surface of the 
+periodic structure
+
+100
+. The arrangement of 
+FIG. 
+1
+
+ is illustrative of conventional OCD or GISAS scatterometry approaches.
+
+It is to be appreciated that use of the terms “periodic” or “grating” structure throughout refers to structures that are non-planar and, in some contexts, can all be viewed as three-dimensional structures. For example, referring again to 
+FIG. 
+1
+
+, the 
+periodic structure
+
+100
+ has 
+features
+
+108
+ that protrude in the z-direction by a height, h. Each 
+feature
+
+108
+ also has a width, w, along the x-axis and a length along the y-axis (i.e., into the page). In some contexts, however, the term “three-dimensional” is reserved to describe a periodic or grating structure having a length along the y-axis that is on the same order as the width, w. In such contexts, the term “two-dimensional” is reserved to describe a periodic or grating structure having a length along the y-axis that is substantially longer than the width, w, e.g., several orders of magnitude longer. In any case, a periodic or grating structure is one having a non-planar topography within a region of measurement of, e.g., a semiconductor wafer or substrate.
+
+In contrast to 
+FIG. 
+1
+
+, 
+FIG. 
+2
+
+ illustrates a cross-sectional view of a periodic structure subjected to scatterometry measurements using an incident beam having multiple angles of incidence, in accordance with an embodiment of the present invention. Referring to 
+FIG. 
+2
+
+, the 
+periodic structure
+
+100
+ is subjected to a 
+conical X-ray beam
+
+202
+. The 
+conical X-ray beam
+
+202
+ has a 
+central axis
+
+203
+ having an angle of incidence, ϕi, relative to the 
+horizontal plane
+
+104
+ of the uppermost surface of the 
+periodic structure
+
+100
+. As such, the 
+conical X-ray beam
+
+202
+ includes a portion, A, that has an incident angle ϕi. The 
+conical beam
+
+202
+ has a converging angle, ϕcone, which is taken between outermost portion, B, and outermost portion, C, of the 
+conical beam
+
+202
+. Since the 
+conical beam
+
+202
+ has the converging angle ϕcone, portions of the 
+conical beam
+
+202
+ near the outer portion of the cone have a different angle of incidence on the 
+structure
+
+100
+ than the portions of the 
+conical beam
+
+202
+ that are aligned with the 
+central axis
+
+202
+. Accordingly, the 
+conical beam
+
+202
+ simultaneously provides multiple angles of incidence for impinging on the 
+structure
+
+100
+, as taken relative to the 
+horizontal plane
+
+104
+. A 
+scattered beam
+
+206
+ is generated from the 
+grating structure
+
+100
+. The 
+scattered beam
+
+206
+ may include portions attributable to different orders of information of the 
+grating structure
+
+100
+, examples of which are described in greater detail below.
+
+In addition to having an angle of incidence, an incident light beam can also have an azimuthal angle with respect to a periodic structure. Again for conceptual purposes, 
+FIG. 
+3
+
+ illustrates a top-down view of a periodic structure subjected to conventional scatterometry measurements using an incident beam having a single azimuthal angle. Referring to 
+FIG. 
+3
+
+, the 
+periodic structure
+
+100
+ is shown from above the protruding 
+portions
+
+108
+. Although not viewable in 
+FIG. 
+1
+
+, the 
+incident light beam
+
+102
+ can further have an azimuthal angle, θg, relative to a direction, x, which is orthogonal to the 
+protrusions
+
+108
+ of the 
+periodic structure
+
+100
+. In some cases, θg is non-zero, as is depicted in 
+FIG. 
+3
+
+. In cases where θg is zero, the direction of the 
+beam
+
+102
+ is along the x-direction, with respect to the top-down view. In all cases where conventional OCD or GISAS scatterometry approaches applied, however, the 
+beam
+
+102
+ has only one angle, θg. Thus, taking 
+FIGS. 
+1
+ and 
+3
+
+ together, conventionally, scatterometry is performed using a light beam having a single angle of incidence, ϕi, and a single azimuthal angle, θg.
+
+In contrast to 
+FIG. 
+3
+
+, 
+FIGS. 
+4
+A and 
+4
+B
+ illustrate top-down views of a periodic structure subjected to scatterometry measurements using an incident beam having multiple azimuthal angles, in accordance with an embodiment of the present invention. Referring to both 
+FIGS. 
+4
+A and 
+4
+B
+, the 
+periodic structure
+
+100
+ is subjected to the 
+conical X-ray beam
+
+202
+ having the 
+central axis
+
+203
+, as described in association with 
+FIG. 
+2
+
+. Although not viewable from 
+FIG. 
+2
+
+, the 
+conical X-ray beam
+
+202
+ further has dimensionality along the y-direction. That is, the converging angle, ϕcone, taken between outermost portion, B, and outermost portion, C, of the 
+conical beam
+
+202
+, also provides a plurality of incident angles along the y-direction, e.g., to provide non-zero azimuthal angles of incidence.
+
+Referring only to 
+FIG. 
+4
+A
+, the central axis of the 
+conical X-ray beam
+
+202
+ has an angle θg of zero along the x-direction, with respect to the top-down view. As such, the portion A the 
+conical X-ray beam
+
+202
+ has a zero azimuthal angle. Nonetheless, the portions B and C of the 
+conical X-ray beam
+
+202
+ have non-zero azimuthal angles even though the 
+central axis
+
+203
+ of the 
+conical X-ray beam
+
+202
+ is orthogonal to the 
+periodic structure
+
+100
+.
+
+Referring only to 
+FIG. 
+4
+B
+, the central axis of the 
+conical X-ray beam
+
+202
+ has a non-zero angle, θg, along the x-direction, with respect to the top-down view. As such, the portion A the 
+conical X-ray beam
+
+202
+ has a non-zero azimuthal angle. Additionally, the portions B and C of the 
+conical X-ray beam
+
+202
+ have non-zero azimuthal angles different from the azimuthal angle of portion A of the 
+beam
+
+202
+.
+
+In both cases illustrated in 
+FIG. 
+4
+A
+ and 
+FIG. 
+4
+B
+, since the 
+conical beam
+
+202
+ has the converging angle ϕcone, portions of the 
+conical beam
+
+202
+ near the outer portion of the cone have a different azimuthal angle incident on the 
+structure
+
+100
+ than the portions of the 
+conical beam
+
+202
+ that are aligned with the 
+central axis
+
+202
+. Accordingly, the 
+conical beam
+
+202
+ simultaneously provides multiple azimuthal angles for impinging on the 
+structure
+
+100
+, as taken relative to the x-direction.
+
+Thus, taking 
+FIG. 
+2
+
+ and one of 
+FIG. 
+4
+A or 
+4
+B
+ together, in accordance with an embodiment of the present invention, a method of measuring a sample by X-ray reflectance scatterometry involves impinging an incident X-ray beam on a sample having a periodic structure. The X-ray beam has a conical shape to simultaneously provide multiple angles of incidence, ϕi, and multiple azimuthal angles, θg, as incident on the periodic structure. The impinging generates a scattered X-ray beam, a portion of which (if not all) can be collected in order to glean information about the periodic structure.
+
+In an embodiment, the incident X-ray beam is a converging X-ray beam having a converging angle, ϕcone, approximately in the range of 20-40 degrees. In one such embodiment, a central axis of the converging X-ray beam has a fixed non-zero incident angle, ϕi, and an azimuthal angle, θg, of zero relative to the sample, as was described in association with 
+FIG. 
+4
+A
+. In another such embodiment, a central axis of the converging X-ray beam has a fixed non-zero incident angle, ϕi, and a non-zero azimuthal angle, θg, relative to the sample, as was described in association with 
+FIG. 
+4
+B
+. In either case, in a specific embodiment, the central axis of the converging X-ray beam has the fixed non-zero incident angle approximately in the range of 10-15 degrees from horizontal. In another specific embodiment, the outermost portion of the conical shape of the beam and closest portion to the periodic structure, e.g., portion C as shown in 
+FIG. 
+2
+
+, has an angle of approximately 5 degrees relative to a horizontal plane of the periodic structure.
+
+In other embodiments, an example of which is described in greater detail below, it may be preferable to use a narrower conical shape. For example, in an embodiment, the incident X-ray beam is a converging X-ray beam having a converging angle approximately in the range of 2-10 degrees. In one such embodiment, a central axis of the converging X-ray beam has a fixed non-zero incident angle, ϕi, and an azimuthal angle, θg, of zero relative to the sample, as was described in association with 
+FIG. 
+4
+A
+. In another such embodiment, a central axis of the converging X-ray beam has a fixed non-zero incident angle, ϕi, and a non-zero azimuthal angle, θg, relative to the sample, as was described in association with 
+FIG. 
+4
+B
+.
+
+In an embodiment, a low energy X-ray beam is impinged on the periodic structure. For example, in one such embodiment, the low energy X-ray beam has an energy of approximately 1 keV or less. Use of such a low energy source can allow for larger incident angles yet with a smaller achievable spot size. In one embodiment, the low energy X-ray beam is a Kα beam generated from a source such as, but not limited to, carbon (C), molybdenum (Mo) or Rhodium (Rh).
+
+In an embodiment, the low energy X-ray beam is focused using a toroidal multilayer monochromator prior to impinging on the periodic structure. In one such embodiment, the monochromator provides an incident angle range of approximately +/−30 degrees and an azimuth angle range of approximately +/−10 degrees. In a specific such embodiment, the toroidal multilayer monochromator provides an incident angle range of approximately +/−20 degrees. It is to be appreciated that the conical X-ray beams described herein may not, or need not, be collimated. For example, in one embodiment, between focusing the beam at the above described monochromator and impinging the focused beam on the periodic sample, the beam is not subjected to collimation. In one embodiment, the focused low energy X-ray beam is impinged on the sample at an incident angle range less than the angle of a nominal first-order angle at zero degrees.
+
+Referring again to 
+FIG. 
+2
+
+, in an embodiment, at least a portion of the 
+scattered X-ray beam
+
+206
+ is collected using a 
+detector
+
+250
+. In one such embodiment, a two-dimensional detector is used to simultaneously sample scattered signal intensity of the portion of the 
+scattered X-ray beam
+
+206
+ scattered from the plurality of incident angles and the plurality of azimuthal angles. The collected signal may then be subjected to scatterometry analysis, e.g., where inversion of scatter data is compared to theory to determine structural details of the 
+periodic structure
+
+100
+. In one such embodiment, a shape of the periodic structure of a sample is estimated by inversion of scattering solutions relative to the sampled scattered signal intensity, e.g., by rigorously solving Maxwell's equations on the periodic structure. In an embodiment, the X-ray beam impinged on the sample has a wavelength less than a periodicity of the 
+periodic structure
+
+100
+. Thus, the probing wavelength is comparable to or less than fundamental structural dimensions, providing a richer set of data from the 
+scattered beam
+
+206
+ as compared to OCD scatterometry.
+
+As described above, in an embodiment, the incident conical X-ray beam used for XRS is a converging X-ray beam having a converging angle, ϕcone, approximately in the range of 20-40 degrees. Such a relatively broad cone angle may generate a scattered beam that includes higher order diffraction data in addition to zero-order reflection data. Thus, in one embodiment, both zero order and higher order information are obtained in parallel with a single impinging operation.
+
+In other scenarios, it may be desirable to separate zero order reflection data from higher order diffraction data. In one such embodiment, a relatively narrower cone angle may be used, e.g., the incident X-ray beam is a converging X-ray beam having a converging angle approximately in the range of 2-10 degrees. More than one single measurement may be performed using the relatively narrower cone angle. For example, in one embodiment, a first measurement is made where the central axis of the converging beam has an azimuthal angle of zero, as described in association with 
+FIG. 
+4
+A
+. A second measurement is then made where the central axis of the converging beam has a non-zero azimuthal angle, as described in association with 
+FIG. 
+4
+B
+. In a specific embodiment, in a sequential manner, the first measurement is performed to collect 0th order but not 1st order diffraction data for a sample having a periodic structure. The second measurement is performed to collect 1st order but not 0th order diffraction data for a sample having a periodic structure. In this way, zero order data can be separated from higher order data at the time of generating the scattered beam.
+
+Pertaining again to both the parallel and sequential approaches, in accordance with embodiments described herein, X-ray reflectance scatterometry is used to separate different orders on an array detector by approaching in a non-zero azimuth. In many cases it is the higher orders that are more useful. By cleanly obtaining all the orders in parallel, in one case, throughput can be enhanced. However, sequential approaches may also be used. Furthermore, a very focused beam is used to probe at a variety of incidence angles rather than at a single angle of incidence. In one embodiment, the beam is not collimated since for a collimated beam, a sample would require rotation with data taken serially. By capturing a higher order, use of a very small incidence angle is not needed in order to obtain a strong reflected beam. By contrast, in an embodiment, an angle of incidence of, e.g., 10 degrees to 15 degrees can be used even in the case where a specular (0-order) reflected beam is relatively weak but the −1 order, for example, is very strong.
+
+In either case described above, whether collected in parallel or sequentially, embodiments described herein can be used to acquire data from both the zero order (specular) reflection and from the diffracted (higher) orders. Conventional solutions have emphasized using either zero order or diffracted (higher) orders, but not both. Embodiments described herein can further be distinguished from prior disclosed scatterometry approaches, a couple examples of which are described below.
+
+In a first previously described approach, U.S. Pat. No. 7,920,676 to Yun et al. describes a CD-GISAXS system and method. The described approach involves analyzing the diffraction pattern of scattered X-rays generated from a collimated beam and analyzing multiple orders of the diffracted light. Lower energy is used to provide a higher-convergence beam because the diffraction orders are spaced farther apart. However, the orders are still fairly closely spaced and the convergence angles described are in micro-radians. Furthermore, diffraction is not collected for a multitude of incidence angles.
+
+By contrast, in accordance with one or more embodiments described herein, a wide range of incidence angles is used in a single beam. In the present approach, diffracted orders (other than zero-order) do not actually have to be captured to be useful. However, the +/−1 orders can have different sensitivities to grating characteristics (in particular, the pitch), so, in one embodiment, at least one extra order is captured when possible. Even so, the bulk of the information is contained in the way the signal varies with incident angle. By contrast, in the U.S. Pat. No. 7,920,676, essentially one incident angle is used and information is gathered by looking at a multiplicity of diffracted orders.
+
+Furthermore, in accordance with one or more embodiments described herein, the first order beam can be separated from the zero-order beam by moving the first-order beam to the side of the zero-order beam. In one such embodiment, the periodic or grating structure is approached at a non-zero azimuthal angle. In this way, a highly converging beam can be used while still achieving order separation. In an exemplary embodiment, by approaching the grating at a 45° azimuth angle (for the central axis of the converging beam), the +/−1 order diffracted beams are deflected to the side of the zero-order beam by a minimum of 10 degrees, and even more as the incidence angle is increased. In this case, a convergent beam of up to approximately 10 degrees can be used while avoiding overlap or data. It is to be appreciated that depending on the specifics of the grating pitch and the X-ray energy, the separation between orders can be made to be larger or smaller. Overall, in an embodiment, by collecting a multiplicity of incident and azimuthal angles simultaneously, more useful information is obtained than compared to a single shot of a collimated beam.
+
+In a second previously described approach, U.S. Pat. No. 6,556,652 to Mazor et al. describes measurement of critical dimensions using X-rays. The described approach is not actually based on the diffraction of an X-ray beam at all. Instead, a “shadow” is created in a collimated beam. The shadow reflects off of a pattern (e.g., a linear grating structure). The contrast mechanism for the shadow is the difference in the critical angle for reflecting x-rays between a Si region at the bottom of a grating gap and the critical angle when passing first through ridge material (photoresist). By contrast, in accordance with embodiments described herein, a majority of information comes from signals at angles far above the critical angle.
+
+As mentioned briefly above, and exemplified below, X-ray reflectance scatterometry (XRS) can be viewed as a type of X-ray reflectometry (XRR) as applied to two-dimensional and three-dimensional periodic or grating structures. Traditional XRR measurements involve the use of a single source X-ray that probes a sample over a range of angles. Varying optical path length differences with angle provides interference fringes that can be discerned to glean film property information such as film thickness and film density. However, in XRR, physics of the X-ray interaction with matter at higher source energies limits the angular range to a grazing incidence of typically less than approximately three degrees relative to sample horizontal plane. As a result, XRR has had limited production/inline viability. By contrast, in accordance with embodiments described herein, application of low-energy XRR/XRS enables the use of larger angles due to changing optical film properties with energy that lead to larger angles of signal sensitivity.
+
+In an exemplary application of low energy XRS, fundamental semiconductor transistor building blocks may be measured and analyzed. For example, a critical dimension (CD) of a semiconductor device refers to a feature that has a direct impact on device performance or its manufacturing yield. Therefore, CDs must be manufactured or controlled to tight specifications. Examples of more conventional CDs include gate length, gate width, interconnect line width, line spacing, and line width roughness (LWR). Semiconductor devices are very sensitive to such dimensions, with small variations potentially leading to substantial impacts on performance, device failure, or manufacturing yield. As integrated circuit (IC) feature sizes of semiconductor devices continue to shrink, manufacturers face ever decreasing process windows and tighter tolerances. This has dramatically raised the accuracy and sensitivity requirements for CD metrology tools as well as the need for non-destructive measurement sampling early in the manufacturing cycle with minimal impact to productivity of the semiconductor device manufacturing plant or fab.
+
+Non-planar semiconductor device fabrication has complicated matters even further. For example, semiconductor devices fabricated on raised channels having a non-planar topography often referred to as fins further include fin dimensions as additional CDs that must be accounted for. Such fin field effect transistor (fin-FET) or multi-gate devices have high-aspect ratio features, and the need for three-dimensional (3D) profile information on the fins of device structures, including sidewall angle, and top and bottom dimensions, has become critical. Consequently, the ability to measure the 3D profile provides far more valuable information than the conventional two-dimensional line width and spacing CD information.
+
+FIG. 
+5
+
+ illustrates aspects of exemplary fin-FET devices suitable for low energy X-ray reflectance scatterometry measurements, in accordance with an embodiment of the present invention. Referring to 
+FIG. 
+5
+
+, structure A illustrates an angled cross-sectional view of a 
+semiconductor fin
+
+502
+ having a 
+gate electrode stack
+
+504
+ disposed thereon. The 
+semiconductor fin
+
+502
+ protrudes from a 
+substrate
+
+506
+ which is isolated by shallow trench isolation (STI) 
+regions
+
+508
+. The 
+gate electrode stack
+
+504
+ includes a 
+gate dielectric layer
+
+510
+ and a 
+gate electrode
+
+512
+. Structure B illustrates a cross-sectional view of a 
+semiconductor fin
+
+520
+ protruding from a 
+substrate
+
+522
+ between 
+STI regions
+
+524
+. Aspects of structure B that may provide important information through XRS measurements include fin corner rounding (CR), fin sidewall angle (SWA), fin height (H), fin notching (notch), and STI thickness (T), all of which are depicted in structure B of 
+FIG. 
+5
+
+. Structure C illustrates a cross-sectional view of a 
+semiconductor fin
+
+530
+ protruding from a 
+substrate
+
+532
+ between 
+STI regions
+
+534
+, and having a multilayer stack of 
+films
+
+536
+ thereon. The layers of the multilayer stack of 
+films
+
+536
+ may include material layers such as, but not limited to, titanium aluminum carbide (TiAlC), tantalum nitride (TaN) or titanium nitride (TiN). Comparing structures B and C, XRS measurements may be performed on a bare fin such as a bare silicon fin (structure B), or on a fin having different material layers disposed thereon.
+
+FIG. 
+6
+
+ includes a 
+plot
+
+600
+ and corresponding structures (A)-(E) of 0th order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention. Referring to 
+FIG. 
+6
+
+, low energy XRS measurements can be used to distinguish between a nominal fin structure (structure A), a structure of increased fin height (structure B), a structure of decreased fin width (structure C), a structure of wider fin bottom CD versus fin top CD (structure D), and a structure of narrower fin bottom CD versus fin top CD (structure E). In this exemplar case, the Si fins are analyzed with 0th order conical diffraction at 45 degrees to the periodic structure. It is to be appreciated that, in comparison to optical data, a reduced region of highest signal is achieved with fringes in data seen in 
+plot
+
+600
+ being a consequence of short wavelength.
+
+FIG. 
+7
+
+ includes a 
+plot
+
+700
+ and corresponding structures (A)-(E) of 1st order reflectance versus scattered angle silicon (Si) fins having a periodic structure with 10 nm/20 nm line/space ratio, in accordance with an embodiment of the present invention. Referring to 
+FIG. 
+7
+
+, low energy XRS measurements can be used to distinguish between a nominal fin structure (structure A), a structure of increased fin height (structure B), a structure of decreased fin width (structure C), a structure of wider fin bottom CD versus fin top CD (structure D), and a structure of narrower fin bottom CD versus fin top CD (structure E). In this exemplar case, the Si fins are analyzed with 1st order conical diffraction at 45 degrees to the periodic structure. Additionally, a structure of varying pitch has been included in 
+plot
+
+700
+. As shown in 
+plot
+
+700
+, 1st order data is very sensitive to fin thickness (noting that structure B is separated significantly from the signals due to structures A and C-E). Also, 1st order data is very sensitive to pitch variation in the periodic structure, noting that the spectrum for varied pitch is also significantly discernible from the other spectra.
+
+In another aspect, an apparatus for performing X-ray reflectance scatterometry is described. In general, in an embodiment, such an apparatus includes a generic X-ray source along with a focusing monochromator that extends in two dimensions. The focusing monochromator allows for incident rays of light to strike a periodic sample at two varying incident angles, (i) incident to the plane of the periodic structure, and (ii) azimuthally, with respect to the symmetry of the structure (and at fixed incident angle). The detection of the scattered light is achieved by a two-dimensional (2D) detector, which simultaneously samples the scattered signal intensity across the range of scattered angles in the two angular directions. In one embodiment, the constraints of the monochromator that assure the detected signal is free of scattering order-overlap require that the incident angle range be less than the angle of the nominal first-order angle at θ degree, i.e., θ=sin−1 (1−λ/d). As a result of the use of light with a characteristic wavelength smaller than the period of the grating, higher order diffraction orders are accessible, and provide additional information regarding the grating structure. In addition, interference fringes of multiple thickness cycles are available to determine line height, width and shape. The final estimation of the shape and structure of the periodic structure is achieved via inversion of the scattering solutions compared to the 2D interference/scatter data.
+
+As a more specific example, 
+FIG. 
+8
+
+ is an illustration representing a periodic structure measurement system having XRS capability, in accordance with an embodiment of the present invention.
+
+Referring to 
+FIG. 
+8
+
+, a 
+system
+
+800
+ for measuring a 
+sample
+
+802
+ by X-ray reflectance scatterometry includes an 
+X-ray source
+
+804
+ for generating an 
+X-ray beam
+
+806
+ having an energy of approximately 1 keV or less. A 
+sample holder
+
+808
+ is provided for positioning the 
+sample
+
+802
+, the sample having a periodic structure. A 
+monochromator
+
+810
+ is positioned between the 
+X-ray source
+
+804
+ and the 
+sample holder
+
+802
+, in that the 
+X-ray beam
+
+806
+ travels from the 
+X-ray source
+
+804
+ to the 
+monochromator
+
+810
+ and then to the 
+sample holder
+
+808
+. The 
+monochromator
+
+810
+ is for focusing the 
+X-ray beam
+
+806
+ to provide an 
+incident X-ray beam
+
+812
+ to the 
+sample holder
+
+808
+. The 
+incident X-ray beam
+
+812
+ simultaneously has a plurality of incident angles and a plurality of azimuthal angles. The 
+system
+
+800
+ also includes a 
+detector
+
+814
+ for collecting at least a portion of a 
+scattered X-ray beam
+
+816
+ from the 
+sample
+
+802
+.
+
+Referring again to 
+FIG. 
+8
+
+, in an embodiment, the 
+X-ray source
+
+804
+, the 
+sample holder
+
+808
+, the 
+monochromator
+
+810
+ and the 
+detector
+
+814
+ are all housed in a 
+chamber
+
+818
+. In an embodiment, the 
+system
+
+800
+ further includes an 
+electron gun
+
+820
+. In one such embodiment, the 
+X-ray source
+
+804
+ is an anode and the electron gun is directed at the anode. In a particular embodiment, the anode is for generating low energy X-rays and includes a material such as, but not limited to, carbon (C), molybdenum (Mo) or Rhodium (Rh). In one embodiment, the 
+electron gun
+
+820
+ is an approximately 1 keV electron gun. Referring again to 
+FIG. 
+8
+
+, a magnetic 
+electron suppression device
+
+822
+ is included between the 
+X-ray source
+
+804
+ and the 
+monochromator
+
+810
+.
+
+In an embodiment, the 
+monochromator
+
+810
+ is a toroidal multilayer monochromator that provides an incident angle range of approximately +/−30 degrees and an azimuth angle range of approximately +/−10 degrees. In one such embodiment, the toroidal multilayer monochromator provides an incident angle range of approximately +/−20 degrees. In an embodiment, as described above, there is no intervening collimator between the 
+monochromator
+
+810
+ and the 
+sample holder
+
+808
+. The 
+monochromator
+
+810
+ may be positioned to provide a desired incident beam for XRS measurements. For example, in a first embodiment, the 
+monochromator
+
+810
+ is positioned relative to the 
+sample holder
+
+808
+ to provide a converging X-ray beam having a central axis with a fixed non-zero incident angle and an azimuthal angle of zero relative to a periodic structure of a 
+sample
+
+802
+. In a second embodiment, the 
+monochromator
+
+810
+ is positioned relative to the 
+sample holder
+
+808
+ to provide a converging X-ray beam having a central axis with a fixed non-zero incident angle and a non-zero azimuthal angle relative to a periodic structure of a 
+sample
+
+802
+. In an embodiment, the 
+monochromator
+
+810
+ is composed of alternating metal (M) layers and carbon (C) layers disposed on a glass substrate, where M is a metal such as, but not limited to, cobalt (Co) or chromium (Cr). In a particular such embodiment, a multilayer monochromator is provided for reflecting carbon (C) based Kα radiation and includes approximately would be 100 repeating layers of Co/C or Cr/C with a period of about 4 nanometers, i.e., a period slightly less than the wavelength of the reflected beam which may be approximately 5 nanometers. In one such embodiment, the Co or Cr layers are thinner than the C layers.
+
+The 
+sample holder
+
+808
+ may be a moveable sample holder. For example, in an embodiment, the 
+sample holder
+
+808
+ is rotatable to change an azimuth angle of a central axis of the 
+X-ray beam
+
+812
+ relative to a periodic structure of a 
+sample
+
+802
+. In an embodiment, the 
+sample holder
+
+808
+ is rotatable to provide orthogonal operation with eucentric rotation, enabling two or more sample rotations per measurement. In an embodiment, a navigation 
+visual inspection apparatus
+
+824
+ allows visual inspection of the 
+sample holder
+
+808
+, as is depicted in 
+FIG. 
+8
+
+. In one such embodiment, a flip-in objective lens is included for a vision-based inspection system.
+
+In an embodiment, the 
+detector
+
+814
+ is a two-dimensional detector. The two-dimensional detector may be configured for simultaneously sampling scattered signal intensity of the portion of the 
+scattered X-ray beam
+
+816
+ scattered from the plurality of incident angles and the plurality of azimuthal angles of the 
+incident beam
+
+812
+. In an embodiment, the 
+system
+
+800
+ further includes a processor or 
+computing system
+
+899
+ coupled to the two-dimensional detector. In one such embodiment, the 
+processor
+
+899
+ is for estimating a shape of the periodic structure of a 
+sample
+
+802
+ by inversion of scattering solutions relative to the sampled scattered signal intensity. In place of a two-dimensional detector, in another embodiment, a scanning slit may be implemented. In either case, the 
+detector
+
+814
+ can be configured to achieve approximately 1000 pixels of data collection across a dispersion range.
+
+Embodiments of the present invention may be provided as a computer program product, or software, that may include a machine-readable medium having stored thereon instructions, which may be used to program a computer system (or other electronic devices) to perform a process according to the present invention. A machine-readable medium includes any mechanism for storing or transmitting information in a form readable by a machine (e.g., a computer). For example, a machine-readable (e.g., computer-readable) medium includes a machine (e.g., a computer) readable storage medium (e.g., read only memory (“ROM”), random access memory (“RAM”), magnetic disk storage media, optical storage media, flash memory devices, etc.), a machine (e.g., computer) readable transmission medium (electrical, optical, acoustical or other form of propagated signals (e.g., infrared signals, digital signals, etc.)), etc.
+
+FIG. 
+9
+
+ illustrates a diagrammatic representation of a machine in the exemplary form of a 
+computer system
+
+900
+ within which a set of instructions, for causing the machine to perform any one or more of the methodologies discussed herein, may be executed. In alternative embodiments, the machine may be connected (e.g., networked) to other machines in a Local Area Network (LAN), an intranet, an extranet, or the Internet. The machine may operate in the capacity of a server or a client machine in a client-server network environment, or as a peer machine in a peer-to-peer (or distributed) network environment. The machine may be a personal computer (PC), a tablet PC, a set-top box (STB), a Personal Digital Assistant (PDA), a cellular telephone, a web appliance, a server, a network router, switch or bridge, or any machine capable of executing a set of instructions (sequential or otherwise) that specify actions to be taken by that machine. Further, while only a single machine is illustrated, the term “machine” shall also be taken to include any collection of machines (e.g., computers) that individually or jointly execute a set (or multiple sets) of instructions to perform any one or more of the methodologies discussed herein. For example, in an embodiment, a machine is configured to execute one or more sets of instruction for measuring a sample by X-ray reflectance scatterometry. In one example, the 
+computer system
+
+900
+ may be suitable for use of 
+computer system
+
+899
+ of the above described 
+XRS apparatus
+
+800
+.
+
+The 
+exemplary computer system
+
+900
+ includes a 
+processor
+
+902
+, a main memory 
+904
+ (e.g., read-only memory (ROM), flash memory, dynamic random access memory (DRAM) such as synchronous DRAM (SDRAM) or Rambus DRAM (RDRAM), etc.), a static memory 
+906
+ (e.g., flash memory, static random access memory (SRAM), etc.), and a secondary memory 
+918
+ (e.g., a data storage device), which communicate with each other via a 
+bus
+
+930
+.
+
+Processor
+
+902
+ represents one or more general-purpose processing devices such as a microprocessor, central processing unit, or the like. More particularly, the 
+processor
+
+902
+ may be a complex instruction set computing (CISC) microprocessor, reduced instruction set computing (RISC) microprocessor, very long instruction word (VLIW) microprocessor, processor implementing other instruction sets, or processors implementing a combination of instruction sets. 
+Processor
+
+902
+ may also be one or more special-purpose processing devices such as an application specific integrated circuit (ASIC), a field programmable gate array (FPGA), a digital signal processor (DSP), network processor, or the like. 
+Processor
+
+902
+ is configured to execute the 
+processing logic
+
+926
+ for performing the operations discussed herein.
+
+The 
+computer system
+
+900
+ may further include a 
+network interface device
+
+908
+. The 
+computer system
+
+900
+ also may include a video display unit 
+910
+ (e.g., a liquid crystal display (LCD) or a cathode ray tube (CRT)), an alphanumeric input device 
+912
+ (e.g., a keyboard), a cursor control device 
+914
+ (e.g., a mouse), and a signal generation device 
+916
+ (e.g., a speaker).
+
+The 
+secondary memory
+
+918
+ may include a machine-accessible storage medium (or more specifically a computer-readable storage medium) 
+931
+ on which is stored one or more sets of instructions (e.g., software 
+922
+) embodying any one or more of the methodologies or functions described herein. The 
+software
+
+922
+ may also reside, completely or at least partially, within the 
+main memory
+
+904
+ and/or within the 
+processor
+
+902
+ during execution thereof by the 
+computer system
+
+900
+, the 
+main memory
+
+904
+ and the 
+processor
+
+902
+ also constituting machine-readable storage media. The 
+software
+
+922
+ may further be transmitted or received over a 
+network
+
+920
+ via the 
+network interface device
+
+908
+.
+
+While the machine-
+accessible storage medium
+
+931
+ is shown in an exemplary embodiment to be a single medium, the term “machine-readable storage medium” should be taken to include a single medium or multiple media (e.g., a centralized or distributed database, and/or associated caches and servers) that store the one or more sets of instructions. The term “machine-readable storage medium” shall also be taken to include any medium that is capable of storing or encoding a set of instructions for execution by the machine and that cause the machine to perform any one or more of the methodologies of the present invention. The term “machine-readable storage medium” shall accordingly be taken to include, but not be limited to, solid-state memories, and optical and magnetic media.
+
+In accordance with an embodiment of the present invention, a non-transitory machine-accessible storage medium has stored thereon instruction for performing a method of measuring a sample by X-ray reflectance scatterometry. The method involves impinging an incident X-ray beam on a sample having a periodic structure to generate a scattered X-ray beam. The incident X-ray beam simultaneously provides a plurality of incident angles and a plurality of azimuthal angles. The method also involves collecting at least a portion of the scattered X-ray beam.
+
+Thus, methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) have been described.
+
+Claims (
+19
+)
+
+What is claimed is:
+
+1. A method of measuring a sample by X-ray reflectance scatterometry, the method comprising:
+
+directing an X-ray generated within a first sub-chamber through a X-ray transmissive region that is formed between the first-sub chamber and a second sub-chamber towards a sample having a periodic structure and located within a second sub-chamber to generate a scattered X-ray beam, the incident X-ray beam simultaneously providing a plurality of incident angles and a plurality of azimuthal angles;
+
+suppressing, by a magnetic electron suppression device that is positioned within the first sub-chamber, electrons emitted, in addition to the X-ray, from the X-ray source as a result of illumination of the X-ray source with an electron beam from an electron gun;
+
+and
+
+collecting at least a portion of the scattered X-ray beam.
+
+2. A system for measuring a sample by X-ray reflectance scatterometry, the system comprising:
+
+a first sub-chamber;
+
+a second sub-chamber;
+
+an X-ray source that is located within the first sub-chamber and is configured to generate an X-ray beam that passes through a X-ray transmissive region formed between the first-sub chamber and the second sub-chamber;
+
+a sample holder located within the second-sub-chamber and is configured to position a sample having a periodic structure;
+
+optics positioned between the X-ray source and the sample holder, the optics is configured to focus the X-ray beam to provide an incident X-ray beam to the sample, the incident X-ray beam simultaneously having a plurality of incident angles and a plurality of azimuthal angles;
+
+a magnetic electron suppression device positioned within the first sub-chamber; wherein the magnetic electron suppression device is configured to suppress electrons emitted, in addition to the X-ray, from the X-ray source as a result of illumination of the X-ray source with an electron beam from an electron gun; and
+
+a detector that is configured to collect at least a portion of a scattered X-ray beam from the sample.
+
+3. The system according to 
+claim 2
+ wherein the X-ray transmissive region is a window.
+
+4. The system according to 
+claim 2
+, wherein the magnetic electron suppression device is positioned above the X-ray beam.
+
+5. The system according to 
+claim 2
+, wherein the magnetic electron suppression device is in contact with the electron gun.
+
+6. The system according to 
+claim 2
+, wherein at least a part of the magnetic electron suppression device is positioned above a top of the X-ray transmissive region.
+
+7. The system according to 
+claim 2
+, wherein the electron gun is configured to illuminate a X-ray source that is an anode, wherein the anode is configured to emit radiation towards the second sub-chamber.
+
+8. The system according to 
+claim 7
+ wherein the anode comprises at least one material out of carbon, Rhodium and molybdenum.
+
+9. The system according to 
+claim 2
+ wherein the electron gun comprises at least a portion located within the first sub-chamber.
+
+10. The system according to 
+claim 2
+ wherein the detector is a two-dimensional detector.
+
+11. The system according to 
+claim 2
+ wherein the detector is a scanning slit detector.
+
+12. The system according to 
+claim 2
+ wherein the optics comprises a monochromator.
+
+13. The system according to 
+claim 2
+ wherein the optics comprises a toroidal multilayer monochromator.
+
+14. The system according to 
+claim 2
+ wherein the sample holder is a rotatable sample holder.
+
+15. The system according to 
+claim 2
+ wherein the X-ray beam has an energy that does not exceed 1 keV.
+
+16. The system according to 
+claim 2
+ wherein the sample comprises a periodic structure; wherein the optics is configured to provide the incident X-ray beam to the periodic structure; wherein the at least portion of the scattered X-ray beam from the sample comprises at least a portion of scattered X-ray beam from the periodic structure.
+
+17. The system according to 
+claim 16
+ comprising a processor that is configured to estimate a shape of the periodic structure by inversion of scattering solutions relative to the at least portion of the scattered X-ray beam from the periodic structure.
+
+18. The system according to 
+claim 2
+ comprising a processor; wherein the incident X-ray beam is collimated; and wherein the processor is configured to analyze multiple orders of the at least portion of the scattered X-ray beam from the sample.
+
+19. The system according to 
+claim 2
+ wherein the magnetic electron suppression device is mechanically coupled to a top wall of the second sub-chamber via a mechanical interface.
+
+US17/114,842
+
+2014-01-23
+
+2020-12-08
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Active
+
+US11874237B2
+
+        (
+en
+)
+
+Priority Applications (3)
+
+Application Number
+
+Priority Date
+
+Filing Date
+
+Title
+
+US17/114,842
+
+US11874237B2
+
+                (
+en
+)
+
+2014-01-23
+
+2020-12-08
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+US18/412,817
+
+US12360063B2
+
+                (
+en
+)
+
+2014-01-23
+
+2024-01-15
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+US19/267,476
+
+US20260079122A1
+
+                (
+en
+)
+
+2014-01-23
+
+2025-07-11
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Applications Claiming Priority (5)
+
+Application Number
+
+Priority Date
+
+Filing Date
+
+Title
+
+US14/161,942
+
+US9588066B2
+
+                (
+en
+)
+
+2014-01-23
+
+2014-01-23
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US15/451,104
+
+US10119925B2
+
+                (
+en
+)
+
+2014-01-23
+
+2017-03-06
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/181,287
+
+US10481112B2
+
+                (
+en
+)
+
+2014-01-23
+
+2018-11-05
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/686,953
+
+US10859519B2
+
+                (
+en
+)
+
+2014-01-23
+
+2019-11-18
+
+Methods and systems for measuring periodic structures using multi-angle x-ray reflectance scatterometry (XRS) 
+
+US17/114,842
+
+US11874237B2
+
+                (
+en
+)
+
+2014-01-23
+
+2020-12-08
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Related Parent Applications (4)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US14/161,942
+
+Continuation
+
+US9588066B2
+
+              (
+en
+)
+
+2014-01-23
+
+2014-01-23
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US15/451,104
+
+Continuation
+
+US10119925B2
+
+              (
+en
+)
+
+2014-01-23
+
+2017-03-06
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/181,287
+
+Continuation
+
+US10481112B2
+
+              (
+en
+)
+
+2014-01-23
+
+2018-11-05
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/686,953
+
+Continuation
+
+US10859519B2
+
+              (
+en
+)
+
+2014-01-23
+
+2019-11-18
+
+Methods and systems for measuring periodic structures using multi-angle x-ray reflectance scatterometry (XRS) 
+
+Related Child Applications (1)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US18/412,817
+
+Continuation
+
+US12360063B2
+
+              (
+en
+)
+
+2014-01-23
+
+2024-01-15
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Publications (2)
+
+Publication Number
+
+Publication Date
+
+US20210164924A1
+
+              US20210164924A1
+              (
+en
+)
+
+2021-06-03
+
+US11874237B2
+
+true
+
+              US11874237B2
+              (
+en
+)
+
+2024-01-16
+
+Family
+
+ID=53544541
+
+Family Applications (7)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US14/161,942
+
+Active
+
+2035-04-21
+
+US9588066B2
+
+                (
+en
+)
+
+2014-01-23
+
+2014-01-23
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US15/451,104
+
+Active
+
+US10119925B2
+
+                (
+en
+)
+
+2014-01-23
+
+2017-03-06
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/181,287
+
+Active
+
+US10481112B2
+
+                (
+en
+)
+
+2014-01-23
+
+2018-11-05
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/686,953
+
+Active
+
+US10859519B2
+
+                (
+en
+)
+
+2014-01-23
+
+2019-11-18
+
+Methods and systems for measuring periodic structures using multi-angle x-ray reflectance scatterometry (XRS) 
+
+US17/114,842
+
+Active
+
+US11874237B2
+
+                (
+en
+)
+
+2014-01-23
+
+2020-12-08
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+US18/412,817
+
+Active
+
+US12360063B2
+
+                (
+en
+)
+
+2014-01-23
+
+2024-01-15
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+US19/267,476
+
+Pending
+
+US20260079122A1
+
+                (
+en
+)
+
+2014-01-23
+
+2025-07-11
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Family Applications Before (4)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US14/161,942
+
+Active
+
+2035-04-21
+
+US9588066B2
+
+                (
+en
+)
+
+2014-01-23
+
+2014-01-23
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US15/451,104
+
+Active
+
+US10119925B2
+
+                (
+en
+)
+
+2014-01-23
+
+2017-03-06
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/181,287
+
+Active
+
+US10481112B2
+
+                (
+en
+)
+
+2014-01-23
+
+2018-11-05
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US16/686,953
+
+Active
+
+US10859519B2
+
+                (
+en
+)
+
+2014-01-23
+
+2019-11-18
+
+Methods and systems for measuring periodic structures using multi-angle x-ray reflectance scatterometry (XRS) 
+
+Family Applications After (2)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US18/412,817
+
+Active
+
+US12360063B2
+
+                  (
+en
+)
+
+2014-01-23
+
+2024-01-15
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+US19/267,476
+
+Pending
+
+US20260079122A1
+
+                  (
+en
+)
+
+2014-01-23
+
+2025-07-11
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+Country Status (7)
+
+Country
+
+Link
+
+US
+
+            (
+7
+)
+
+US9588066B2
+
+              (
+en
+)
+
+EP
+
+            (
+2
+)
+
+EP3097383B1
+
+              (
+en
+)
+
+JP
+
+            (
+1
+)
+
+JP6560251B2
+
+              (
+en
+)
+
+KR
+
+            (
+3
+)
+
+KR102454547B1
+
+              (
+en
+)
+
+CN
+
+            (
+2
+)
+
+CN106164618B
+
+              (
+en
+)
+
+TW
+
+            (
+1
+)
+
+TWI660154B
+
+              (
+en
+)
+
+WO
+
+            (
+1
+)
+
+WO2015112444A1
+
+              (
+en
+)
+
+Families Citing this family (63)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US20150117599A1
+
+              (
+en
+)
+
+*
+
+2013-10-31
+
+2015-04-30
+
+Sigray, Inc.
+
+X-ray interferometric imaging system 
+
+JP6206901B2
+
+              (
+en
+)
+
+*
+
+2012-12-14
+
+2017-10-04
+
+大学共同利用機関法人 高エネルギー加速器研究機構
+
+  Scattering intensity distribution measuring method and measuring apparatus
+
+US10295485B2
+
+              (
+en
+)
+
+2013-12-05
+
+2019-05-21
+
+Sigray, Inc.
+
+X-ray transmission spectrometer system 
+
+USRE48612E1
+
+              (
+en
+)
+
+2013-10-31
+
+2021-06-29
+
+Sigray, Inc.
+
+X-ray interferometric imaging system 
+
+US9588066B2
+
+              (
+en
+)
+
+2014-01-23
+
+2017-03-07
+
+Revera, Incorporated
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+JP6258845B2
+
+              (
+en
+)
+
+*
+
+2014-12-19
+
+2018-01-10
+
+株式会社日立ハイテクノロジーズ
+
+        X-ray inspection method and apparatus
+
+WO2016124345A1
+
+              (
+en
+)
+
+2015-02-04
+
+2016-08-11
+
+Asml Netherlands B.V.
+
+Metrology method, metrology apparatus and device manufacturing method 
+
+KR102512180B1
+
+              (
+en
+)
+
+*
+
+2015-04-28
+
+2023-03-20
+
+케이엘에이 코포레이션
+
+        Computationally efficient X-ray based overlay measurements
+
+US10352695B2
+
+              (
+en
+)
+
+*
+
+2015-12-11
+
+2019-07-16
+
+Kla-Tencor Corporation
+
+X-ray scatterometry metrology for high aspect ratio structures 
+
+KR102184603B1
+
+              (
+en
+)
+
+*
+
+2016-04-22
+
+2020-11-30
+
+케이엘에이 코포레이션
+
+        Beam shaping slits for small spot sizes in transmission, small angle X-ray scatterometry
+
+US10775323B2
+
+              (
+en
+)
+
+*
+
+2016-10-18
+
+2020-09-15
+
+Kla-Tencor Corporation
+
+Full beam metrology for X-ray scatterometry systems 
+
+US10247683B2
+
+              (
+en
+)
+
+2016-12-03
+
+2019-04-02
+
+Sigray, Inc.
+
+Material measurement techniques using multiple X-ray micro-beams 
+
+US10393680B2
+
+              (
+en
+)
+
+*
+
+2017-01-18
+
+2019-08-27
+
+The Boeing Company
+
+X-ray sidescatter inspection of laminates 
+
+US10767978B2
+
+              (
+en
+)
+
+*
+
+2017-04-14
+
+2020-09-08
+
+Kla-Tencor Corporation
+
+Transmission small-angle X-ray scattering metrology system 
+
+CN106950236B
+
+              (
+en
+)
+
+*
+
+2017-05-17
+
+2023-06-13
+
+中国工程物理研究院核物理与化学研究所
+
+        A device for quickly locating the sample position of neutron small-angle scattering spectrometer
+
+US10636140B2
+
+              (
+en
+)
+
+*
+
+2017-05-18
+
+2020-04-28
+
+Applied Materials Israel Ltd.
+
+Technique for inspecting semiconductor wafers 
+
+US10727142B2
+
+              (
+en
+)
+
+2017-05-30
+
+2020-07-28
+
+Kla-Tencor Corporation
+
+Process monitoring of deep structures with X-ray scatterometry 
+
+US11333621B2
+
+              (
+en
+)
+
+*
+
+2017-07-11
+
+2022-05-17
+
+Kla-Tencor Corporation
+
+Methods and systems for semiconductor metrology based on polychromatic soft X-Ray diffraction 
+
+IL253578B
+
+              (
+en
+)
+
+*
+
+2017-07-19
+
+2018-06-28
+
+Nova Measuring Instr Ltd
+
+        Measurement of patterns using x-rays
+
+US10499876B2
+
+              (
+en
+)
+
+*
+
+2017-07-31
+
+2019-12-10
+
+Taiwan Semiconductor Manufacturing Company, Ltd.
+
+Test key design to enable X-ray scatterometry measurement 
+
+US10578566B2
+
+              (
+en
+)
+
+2018-04-03
+
+2020-03-03
+
+Sigray, Inc.
+
+X-ray emission spectrometer system 
+
+JP2019191167A
+
+              (
+en
+)
+
+*
+
+2018-04-23
+
+2019-10-31
+
+ブルカー ジェイヴィ イスラエル リミテッドＢｒｕｋｅｒ Ｊｖ Ｉｓｒａｅｌ Ｌｔｄ．
+
+X ray source optical system for small-angle x-ray scatterometry 
+
+WO2019236384A1
+
+              (
+en
+)
+
+2018-06-04
+
+2019-12-12
+
+Sigray, Inc.
+
+Wavelength dispersive x-ray spectrometer 
+
+DE112019003777B4
+
+              (
+en
+)
+
+2018-07-26
+
+2025-09-11
+
+Sigray, Inc.
+
+        HIGH BRIGHTNESS X-RAY REFLECTION SOURCE
+
+US10656105B2
+
+              (
+en
+)
+
+2018-08-06
+
+2020-05-19
+
+Sigray, Inc.
+
+Talbot-lau x-ray source and interferometric system 
+
+CN112638261B
+
+              (
+en
+)
+
+2018-09-04
+
+2025-06-27
+
+斯格瑞公司
+
+        Systems and methods utilizing filtered x-ray fluorescence
+
+US11056308B2
+
+              (
+en
+)
+
+2018-09-07
+
+2021-07-06
+
+Sigray, Inc.
+
+System and method for depth-selectable x-ray analysis 
+
+CN112212815B
+
+              (
+en
+)
+
+*
+
+2019-07-12
+
+2025-04-04
+
+长鑫存储技术有限公司
+
+        Three-dimensional shape measurement method and measurement device
+
+US11460418B2
+
+              (
+en
+)
+
+*
+
+2019-08-26
+
+2022-10-04
+
+Kla Corporation
+
+Methods and systems for semiconductor metrology based on wavelength resolved soft X-ray reflectometry 
+
+CN110730028B
+
+              (
+en
+)
+
+*
+
+2019-08-29
+
+2022-05-13
+
+广东工业大学
+
+Unmanned aerial vehicle-assisted backscatter communication device and resource allocation control method 
+
+CN114729907B
+
+              (
+en
+)
+
+2019-09-03
+
+2023-05-23
+
+斯格瑞公司
+
+        Systems and methods for computed tomography fluorescence imaging
+
+TWI753490B
+
+              (
+en
+)
+
+*
+
+2019-10-14
+
+2022-01-21
+
+財團法人工業技術研究院
+
+X-ray reflectometry and method thereof for measuring three dimensional nanostructures on flat substrate 
+
+US11867595B2
+
+              (
+en
+)
+
+2019-10-14
+
+2024-01-09
+
+Industrial Technology Research Institute
+
+X-ray reflectometry apparatus and method thereof for measuring three dimensional nanostructures on flat substrate 
+
+US11579099B2
+
+              (
+en
+)
+
+*
+
+2019-10-14
+
+2023-02-14
+
+Industrial Technology Research Institute
+
+X-ray reflectometry apparatus and method thereof for measuring three dimensional nanostructures on flat substrate 
+
+US11259394B2
+
+              (
+en
+)
+
+2019-11-01
+
+2022-02-22
+
+Kla Corporation
+
+Laser produced plasma illuminator with liquid sheet jet target 
+
+US11272607B2
+
+              (
+en
+)
+
+2019-11-01
+
+2022-03-08
+
+Kla Corporation
+
+Laser produced plasma illuminator with low atomic number cryogenic target 
+
+CN110793987B
+
+              (
+en
+)
+
+*
+
+2019-11-13
+
+2022-05-20
+
+中国科学院微电子研究所
+
+Test method and device 
+
+US11175243B1
+
+              (
+en
+)
+
+2020-02-06
+
+2021-11-16
+
+Sigray, Inc.
+
+X-ray dark-field in-line inspection for semiconductor samples 
+
+US11143604B1
+
+              (
+en
+)
+
+2020-04-06
+
+2021-10-12
+
+Kla Corporation
+
+Soft x-ray optics with improved filtering 
+
+WO2021237237A1
+
+              (
+en
+)
+
+2020-05-18
+
+2021-11-25
+
+Sigray, Inc.
+
+System and method for x-ray absorption spectroscopy using a crystal analyzer and a plurality of detector elements 
+
+JP7640682B2
+
+              (
+en
+)
+
+2020-09-17
+
+2025-03-05
+
+シグレイ、インコーポレイテッド
+
+        Systems and methods for depth-resolved metrology and analysis using x-rays - Patents.com
+
+US12480892B2
+
+              (
+en
+)
+
+2020-12-07
+
+2025-11-25
+
+Sigray, Inc.
+
+High throughput 3D x-ray imaging system using a transmission x-ray source 
+
+WO2022126071A1
+
+              (
+en
+)
+
+2020-12-07
+
+2022-06-16
+
+Sigray, Inc.
+
+High throughput 3d x-ray imaging system using a transmission x-ray source 
+
+US12013355B2
+
+              (
+en
+)
+
+2020-12-17
+
+2024-06-18
+
+Kla Corporation
+
+Methods and systems for compact, small spot size soft x-ray scatterometry 
+
+US20240068964A1
+
+              (
+en
+)
+
+*
+
+2020-12-31
+
+2024-02-29
+
+Nova Ltd.
+
+Evaluating x-ray signals from a perturbed object 
+
+US12360067B2
+
+              (
+en
+)
+
+2022-03-02
+
+2025-07-15
+
+Sigray, Inc.
+
+X-ray fluorescence system and x-ray source with electrically insulative target material 
+
+US20250067683A1
+
+              (
+en
+)
+
+*
+
+2022-03-10
+
+2025-02-27
+
+Nova Ltd.
+
+System and method for determining parameters of patterned structures from optical data 
+
+DE112023001408T5
+
+              (
+en
+)
+
+2022-03-15
+
+2025-02-13
+
+Sigray, Inc.
+
+        SYSTEM AND METHOD FOR COMPACT LAMINOGRAPHY USING A MICROFOCUS TRANSMISSION X-RAY SOURCE AND A VARIABLE MAGNIFICATION X-RAY DETECTOR
+
+CN119173759A
+
+              (
+en
+)
+
+2022-05-02
+
+2024-12-20
+
+斯格瑞公司
+
+        X-ray sequential array wavelength dispersive spectrometer
+
+TW202406409A
+
+              (
+en
+)
+
+*
+
+2022-05-26
+
+2024-02-01
+
+美商諾威量測設備公司
+
+X-ray source, x-ray beam and methods for generating the same 
+
+IL303689A
+
+              (
+en
+)
+
+*
+
+2022-07-19
+
+2024-02-01
+
+Bruker Tech Ltd
+
+Analysis of x-ray scatterometry data using deep learning 
+
+TWI814579B
+
+              (
+en
+)
+
+2022-09-13
+
+2023-09-01
+
+財團法人工業技術研究院
+
+X-ray reflectometry apparatus and method thereof for measuring three dimensional nanostructures on flat substrate 
+
+US12493004B2
+
+              (
+en
+)
+
+2022-09-28
+
+2025-12-09
+
+Industrial Technology Research Institute
+
+Method for determining parameters of three dimensional nanostructure and apparatus applying the same 
+
+WO2024173256A1
+
+              (
+en
+)
+
+2023-02-16
+
+2024-08-22
+
+Sigray, Inc.
+
+X-ray detector system with at least two stacked flat bragg diffractors 
+
+JP7834354B2
+
+              (
+en
+)
+
+*
+
+2023-03-23
+
+2026-03-24
+
+株式会社リガク
+
+        Analysis device, analysis method, and analysis program
+
+WO2024201306A2
+
+              (
+en
+)
+
+*
+
+2023-03-26
+
+2024-10-03
+
+Nova Measuring Instruments Inc.
+
+X-ray focusing and wavelength selection 
+
+US12181423B1
+
+              (
+en
+)
+
+2023-09-07
+
+2024-12-31
+
+Sigray, Inc.
+
+Secondary image removal using high resolution x-ray transmission sources 
+
+WO2025101530A1
+
+              (
+en
+)
+
+2023-11-07
+
+2025-05-15
+
+Sigray, Inc.
+
+System and method for x-ray absorption spectroscopy using spectral information from two orthogonal planes 
+
+KR20250090939A
+
+              (
+en
+)
+
+2023-12-13
+
+2025-06-20
+
+삼성전자주식회사
+
+Semiconductor inspection equipment 
+
+US12429436B2
+
+              (
+en
+)
+
+2024-01-08
+
+2025-09-30
+
+Sigray, Inc.
+
+X-ray analysis system with focused x-ray beam and non-x-ray microscope 
+
+WO2025155719A1
+
+              (
+en
+)
+
+2024-01-18
+
+2025-07-24
+
+Sigray, Inc.
+
+Sequential array of x-ray imaging detectors 
+
+US12431256B2
+
+              (
+en
+)
+
+2024-02-15
+
+2025-09-30
+
+Sigray, Inc.
+
+System and method for generating a focused x-ray beam 
+
+WO2026092935A1
+
+              (
+en
+)
+
+2024-11-04
+
+2026-05-07
+
+Asml Netherlands B.V.
+
+Metrology method and associated metrology device 
+
+Citations (6)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+TW200624799A
+
+              (
+en
+)
+
+2004-09-21
+
+2006-07-16
+
+Jordan Valley Applied Radiation Ltd
+
+Combined x-ray reflectometer and diffractometer 
+
+US20060158755A1
+
+              (
+en
+)
+
+2005-01-14
+
+2006-07-20
+
+Kazuhisa Matsuda
+
+X-ray focusing device 
+
+US20080273662A1
+
+              (
+en
+)
+
+*
+
+2007-05-04
+
+2008-11-06
+
+Xradia, Inc.
+
+CD-GISAXS System and Method 
+
+US20110268251A1
+
+              (
+en
+)
+
+*
+
+2010-04-29
+
+2011-11-03
+
+Bruker Axs, Inc.
+
+Method and apparatus for using an area x-ray detector as a point detector in an x-ray diffractometer 
+
+US20120106706A1
+
+              (
+en
+)
+
+*
+
+2010-10-27
+
+2012-05-03
+
+Bruker Axs Gmbh
+
+Method for X-ray diffractometry analysis at differing wavelengths without exchanging the X-ray source 
+
+US20120182542A1
+
+              (
+en
+)
+
+*
+
+2011-01-18
+
+2012-07-19
+
+Jordan Valley Semiconductors Ltd.
+
+Optical Vacuum Ultra-Violet Wavelength Nanoimprint Metrology 
+
+Family Cites Families (30)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US5619548A
+
+              (
+en
+)
+
+1995-08-11
+
+1997-04-08
+
+Oryx Instruments And Materials Corp.
+
+X-ray thickness gauge 
+
+US5923720A
+
+              (
+en
+)
+
+*
+
+1997-06-17
+
+1999-07-13
+
+Molecular Metrology, Inc.
+
+Angle dispersive x-ray spectrometer 
+
+US5963329A
+
+              (
+en
+)
+
+1997-10-31
+
+1999-10-05
+
+International Business Machines Corporation
+
+Method and apparatus for measuring the profile of small repeating lines 
+
+US6556652B1
+
+              (
+en
+)
+
+2000-08-09
+
+2003-04-29
+
+Jordan Valley Applied Radiation Ltd.
+
+Measurement of critical dimensions using X-rays 
+
+US6917433B2
+
+              (
+en
+)
+
+2000-09-20
+
+2005-07-12
+
+Kla-Tencor Technologies Corp.
+
+Methods and systems for determining a property of a specimen prior to, during, or subsequent to an etch process 
+
+US6895075B2
+
+              (
+en
+)
+
+*
+
+2003-02-12
+
+2005-05-17
+
+Jordan Valley Applied Radiation Ltd.
+
+X-ray reflectometry with small-angle scattering measurement 
+
+US6771735B2
+
+              (
+en
+)
+
+2001-11-07
+
+2004-08-03
+
+Kla-Tencor Technologies Corporation
+
+Method and apparatus for improved x-ray reflection measurement 
+
+JP3548556B2
+
+              (
+en
+)
+
+*
+
+2001-12-28
+
+2004-07-28
+
+株式会社リガク
+
+  X-ray diffractometer
+
+US6816570B2
+
+              (
+en
+)
+
+2002-03-07
+
+2004-11-09
+
+Kla-Tencor Corporation
+
+Multi-technique thin film analysis tool 
+
+US6815570B1
+
+              (
+en
+)
+
+2002-05-07
+
+2004-11-09
+
+Uop Llc
+
+Shaped catalysts for transalkylation of aromatics for enhanced xylenes production 
+
+KR101231731B1
+
+              (
+en
+)
+
+*
+
+2004-09-21
+
+2013-02-08
+
+조르단 밸리 세미컨덕터즈 리미티드
+
+Multifunction x-ray analysis system 
+
+US7076024B2
+
+              (
+en
+)
+
+*
+
+2004-12-01
+
+2006-07-11
+
+Jordan Valley Applied Radiation, Ltd.
+
+X-ray apparatus with dual monochromators 
+
+US7600916B2
+
+              (
+en
+)
+
+2004-12-01
+
+2009-10-13
+
+Jordan Valley Semiconductors Ltd.
+
+Target alignment for X-ray scattering measurements 
+
+US7483133B2
+
+              (
+en
+)
+
+2004-12-09
+
+2009-01-27
+
+Kla-Tencor Technologies Corporation.
+
+Multiple angle of incidence spectroscopic scatterometer system 
+
+US7110491B2
+
+              (
+en
+)
+
+2004-12-22
+
+2006-09-19
+
+Jordan Valley Applied Radiation Ltd.
+
+Measurement of critical dimensions using X-ray diffraction in reflection mode 
+
+US7428060B2
+
+              (
+en
+)
+
+2006-03-24
+
+2008-09-23
+
+Timbre Technologies, Inc.
+
+Optimization of diffraction order selection for two-dimensional structures 
+
+US8040511B1
+
+              (
+en
+)
+
+2008-01-29
+
+2011-10-18
+
+Kla-Tencor Corporation
+
+Azimuth angle measurement 
+
+US8243878B2
+
+              (
+en
+)
+
+*
+
+2010-01-07
+
+2012-08-14
+
+Jordan Valley Semiconductors Ltd.
+
+High-resolution X-ray diffraction measurement with enhanced sensitivity 
+
+US20110276319A1
+
+              (
+en
+)
+
+*
+
+2010-05-06
+
+2011-11-10
+
+Jonathan Michael Madsen
+
+Determination of material optical properties for optical metrology of structures 
+
+US9239522B2
+
+              (
+en
+)
+
+2010-10-08
+
+2016-01-19
+
+Kla-Tencor Corporation
+
+Method of determining an asymmetric property of a structure 
+
+JP5682918B2
+
+              (
+en
+)
+
+*
+
+2011-01-20
+
+2015-03-11
+
+独立行政法人産業技術総合研究所
+
+        Elemental quantitative analysis method and elemental quantitative analyzer by X-ray absorption edge method
+
+JP5743856B2
+
+              (
+en
+)
+
+*
+
+2011-11-10
+
+2015-07-01
+
+株式会社東芝
+
+        Measuring device and measuring method
+
+US8604427B2
+
+              (
+en
+)
+
+*
+
+2012-02-02
+
+2013-12-10
+
+Applied Materials Israel, Ltd.
+
+Three-dimensional mapping using scanning electron microscope images 
+
+JP6322627B2
+
+              (
+en
+)
+
+*
+
+2012-06-08
+
+2018-05-09
+
+リガク イノベイティブ テクノロジーズ インコーポレイテッド
+
+        Dual mode small angle scattering camera
+
+JP6206901B2
+
+              (
+en
+)
+
+2012-12-14
+
+2017-10-04
+
+大学共同利用機関法人 高エネルギー加速器研究機構
+
+  Scattering intensity distribution measuring method and measuring apparatus
+
+CN103901494B
+
+              (
+en
+)
+
+*
+
+2012-12-27
+
+2017-08-29
+
+同方威视技术股份有限公司
+
+Human body back scattering safe examination system and its method 
+
+US9588066B2
+
+              (
+en
+)
+
+2014-01-23
+
+2017-03-07
+
+Revera, Incorporated
+
+Methods and systems for measuring periodic structures using multi-angle X-ray reflectance scatterometry (XRS) 
+
+US10980494B2
+
+              (
+en
+)
+
+*
+
+2014-10-20
+
+2021-04-20
+
+The University Of North Carolina At Chapel Hill
+
+Systems and related methods for stationary digital chest tomosynthesis (s-DCT) imaging 
+
+WO2016124345A1
+
+              (
+en
+)
+
+2015-02-04
+
+2016-08-11
+
+Asml Netherlands B.V.
+
+Metrology method, metrology apparatus and device manufacturing method 
+
+KR102512180B1
+
+              (
+en
+)
+
+2015-04-28
+
+2023-03-20
+
+케이엘에이 코포레이션
+
+        Computationally efficient X-ray based overlay measurements
+
+2014
+
+2014-01-23
+
+US
+
+US14/161,942
+
+patent/US9588066B2/en
+
+active
+
+Active
+
+2015
+
+2015-01-16
+
+KR
+
+KR1020217040212A
+
+patent/KR102454547B1/en
+
+active
+
+Active
+
+2015-01-16
+
+KR
+
+KR1020227035176A
+
+patent/KR102499557B1/en
+
+active
+
+Active
+
+2015-01-16
+
+WO
+
+PCT/US2015/011753
+
+patent/WO2015112444A1/en
+
+not_active
+
+Ceased
+
+2015-01-16
+
+EP
+
+EP15739786.0A
+
+patent/EP3097383B1/en
+
+active
+
+Active
+
+2015-01-16
+
+JP
+
+JP2016566853A
+
+patent/JP6560251B2/en
+
+active
+
+Active
+
+2015-01-16
+
+EP
+
+EP25193996.3A
+
+patent/EP4621832A3/en
+
+active
+
+Pending
+
+2015-01-16
+
+CN
+
+CN201580015724.6A
+
+patent/CN106164618B/en
+
+active
+
+Active
+
+2015-01-16
+
+KR
+
+KR1020167022803A
+
+patent/KR102338518B1/en
+
+active
+
+Active
+
+2015-01-16
+
+CN
+
+CN202111110980.7A
+
+patent/CN113804710B/en
+
+active
+
+Active
+
+2015-01-22
+
+TW
+
+TW104102157A
+
+patent/TWI660154B/en
+
+active
+
+2017
+
+2017-03-06
+
+US
+
+US15/451,104
+
+patent/US10119925B2/en
+
+active
+
+Active
+
+2018
+
+2018-11-05
+
+US
+
+US16/181,287
+
+patent/US10481112B2/en
+
+active
+
+Active
+
+2019
+
+2019-11-18
+
+US
+
+US16/686,953
+
+patent/US10859519B2/en
+
+active
+
+Active
+
+2020
+
+2020-12-08
+
+US
+
+US17/114,842
+
+patent/US11874237B2/en
+
+active
+
+Active
+
+2024
+
+2024-01-15
+
+US
+
+US18/412,817
+
+patent/US12360063B2/en
+
+active
+
+Active
+
+2025
+
+2025-07-11
+
+US
+
+US19/267,476
+
+patent/US20260079122A1/en
+
+active
+
+Pending
+
+Patent Citations (6)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+TW200624799A
+
+              (
+en
+)
+
+2004-09-21
+
+2006-07-16
+
+Jordan Valley Applied Radiation Ltd
+
+Combined x-ray reflectometer and diffractometer 
+
+US20060158755A1
+
+              (
+en
+)
+
+2005-01-14
+
+2006-07-20
+
+Kazuhisa Matsuda
+
+X-ray focusing device 
+
+US20080273662A1
+
+              (
+en
+)
+
+*
+
+2007-05-04
+
+2008-11-06
+
+Xradia, Inc.
+
+CD-GISAXS System and Method 
+
+US20110268251A1
+
+              (
+en
+)
+
+*
+
+2010-04-29
+
+2011-11-03
+
+Bruker Axs, Inc.
+
+Method and apparatus for using an area x-ray detector as a point detector in an x-ray diffractometer 
+
+US20120106706A1
+
+              (
+en
+)
+
+*
+
+2010-10-27
+
+2012-05-03
+
+Bruker Axs Gmbh
+
+Method for X-ray diffractometry analysis at differing wavelengths without exchanging the X-ray source 
+
+US20120182542A1
+
+              (
+en
+)
+
+*
+
+2011-01-18
+
+2012-07-19
+
+Jordan Valley Semiconductors Ltd.
+
+Optical Vacuum Ultra-Violet Wavelength Nanoimprint Metrology 
+
+Also Published As
+
+Publication number
+
+Publication date
+
+US12360063B2
+
+              (
+en
+)
+
+2025-07-15
+
+US9588066B2
+
+              (
+en
+)
+
+2017-03-07
+
+WO2015112444A1
+
+              (
+en
+)
+
+2015-07-30
+
+US20260079122A1
+
+              (
+en
+)
+
+2026-03-19
+
+US20240345006A1
+
+              (
+en
+)
+
+2024-10-17
+
+US10119925B2
+
+              (
+en
+)
+
+2018-11-06
+
+EP3097383A1
+
+              (
+en
+)
+
+2016-11-30
+
+CN106164618A
+
+              (
+en
+)
+
+2016-11-23
+
+TWI660154B
+
+              (
+en
+)
+
+2019-05-21
+
+EP4621832A2
+
+              (
+en
+)
+
+2025-09-24
+
+KR20220142540A
+
+              (
+en
+)
+
+2022-10-21
+
+US20200088656A1
+
+              (
+en
+)
+
+2020-03-19
+
+CN113804710A
+
+              (
+en
+)
+
+2021-12-17
+
+JP2017504045A
+
+              (
+en
+)
+
+2017-02-02
+
+US20150204802A1
+
+              (
+en
+)
+
+2015-07-23
+
+US20190086342A1
+
+              (
+en
+)
+
+2019-03-21
+
+US10859519B2
+
+              (
+en
+)
+
+2020-12-08
+
+EP3097383A4
+
+              (
+en
+)
+
+2017-08-02
+
+CN106164618B
+
+              (
+en
+)
+
+2021-07-27
+
+KR102454547B1
+
+              (
+en
+)
+
+2022-10-14
+
+CN113804710B
+
+              (
+en
+)
+
+2023-03-24
+
+JP6560251B2
+
+              (
+en
+)
+
+2019-08-14
+
+KR20160111483A
+
+              (
+en
+)
+
+2016-09-26
+
+US20170176354A1
+
+              (
+en
+)
+
+2017-06-22
+
+US20210164924A1
+
+              (
+en
+)
+
+2021-06-03
+
+KR20210153752A
+
+              (
+en
+)
+
+2021-12-17
+
+TW201534863A
+
+              (
+en
+)
+
+2015-09-16
+
+KR102499557B1
+
+              (
+en
+)
+
+2023-02-16
+
+KR102338518B1
+
+              (
+en
+)
+
+2021-12-14
+
+EP3097383B1
+
+              (
+en
+)
+
+2025-08-06
+
+US10481112B2
+
+              (
+en
+)
+
+2019-11-19
+
+EP4621832A3
+
+              (
+en
+)
+
+2025-12-24
+
+Similar Documents
+
+Publication
+
+Publication Date
+
+Title
+
+US12360063B2
+
+                (
+en
+)
+
+2025-07-15
+
+System and method for measuring a sample by x-ray reflectance scatterometry 
+
+CN113677983B
+
+                (
+en
+)
+
+2022-11-15
+
+Method and system for combining X-ray metrology data sets to improve parameter evaluation 
+
+JP7486621B2
+
+                (
+en
+)
+
+2024-05-17
+
+        Full beam measurement of X-ray scatterometry system
+
+JP7557590B2
+
+                (
+en
+)
+
+2024-09-27
+
+        Transmission small angle X-ray scattering metrology system and method
+
+KR102512180B1
+
+                (
+en
+)
+
+2023-03-20
+
+        Computationally efficient X-ray based overlay measurements
+
+CN109073902A
+
+                (
+en
+)
+
+2018-12-21
+
+Beam shaping slit for small light spot size transmission small angle X ray scattering art 
+
+CN114608494B
+
+                (
+en
+)
+
+2023-01-06
+
+Nano-structure three-dimensional shape small-angle X-ray scattering measurement method and device 
+
+CN116888462B
+
+                (
+en
+)
+
+2025-01-28
+
+        Evaluation of X-ray signals from disturbed objects
+
+US20240085321A1
+
+                (
+en
+)
+
+2024-03-14
+
+Methods And Systems For Model-less, Scatterometry Based Measurements Of Semiconductor Structures 
+
+JP2024509348A
+
+                (
+en
+)
+
+2024-03-01
+
+        Evaluation of X-rays from perturbed objects
+
+Legal Events
+
+Date
+
+Code
+
+Title
+
+Description
+
+2020-12-08
+
+FEPP
+
+Fee payment procedure
+
+Free format text
+:
+
+ENTITY STATUS SET TO UNDISCOUNTED (ORIGINAL EVENT CODE: BIG.); ENTITY STATUS OF PATENT OWNER: LARGE ENTITY
+
+2021-02-19
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+APPLICATION DISPATCHED FROM PREEXAM, NOT YET DOCKETED
+
+2021-08-21
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+DOCKETED NEW CASE - READY FOR EXAMINATION
+
+2022-01-17
+
+AS
+
+Assignment
+
+Owner name
+:
+
+NOVA MEASURING INSTRUMENTS LTD., ISRAEL
+
+Free format text
+:
+
+CHANGE OF NAME;ASSIGNOR:NOVA MEASURING INSTRUMENTS LTD.;REEL/FRAME:058752/0343
+
+Effective date
+:
+
+20210725
+
+2022-03-13
+
+AS
+
+Assignment
+
+Owner name
+:
+
+NOVA LTD, ISRAEL
+
+Free format text
+:
+
+CORRECTIVE ASSIGNMENT TO CORRECT THE NAME CHANGE ON THE COVER SHEET TO NOVA LTD. PREVIOUSLY RECORDED AT REEL: 058752 FRAME: 0343. ASSIGNOR(S) HEREBY CONFIRMS THE ASSIGNMENT;ASSIGNOR:NOVA MEASURING INSTRUMENTS LTD.;REEL/FRAME:059363/0288
+
+Effective date
+:
+
+20210725
+
+2022-04-11
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+NON FINAL ACTION MAILED
+
+2022-07-16
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+RESPONSE TO NON-FINAL OFFICE ACTION ENTERED AND FORWARDED TO EXAMINER
+
+2022-10-04
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+FINAL REJECTION MAILED
+
+2022-11-15
+
+AS
+
+Assignment
+
+Owner name
+:
+
+NOVA MEASURING INSTRUMENTS INC., CALIFORNIA
+
+Free format text
+:
+
+MERGER;ASSIGNOR:REVERA, INCORPORATED;REEL/FRAME:061783/0924
+
+Effective date
+:
+
+20171108
+
+Owner name
+:
+
+REVERA,INCORPORATED, CALIFORNIA
+
+Free format text
+:
+
+ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:POIS, HEATH A.;REED, DAVID A.;SCHUELER, BRUNO W.;AND OTHERS;REEL/FRAME:061783/0858
+
+Effective date
+:
+
+20141017
+
+2023-04-19
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+EX PARTE QUAYLE ACTION MAILED
+
+2023-07-24
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+EX PARTE QUAYLE ACTION MAILED
+
+2023-08-30
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+RESPONSE TO EX PARTE QUAYLE ACTION ENTERED AND FORWARDED TO EXAMINER
+
+2023-09-07
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+NOTICE OF ALLOWANCE MAILED -- APPLICATION RECEIVED IN OFFICE OF PUBLICATIONS
+
+2023-12-12
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+PUBLICATIONS -- ISSUE FEE PAYMENT VERIFIED
+
+2023-12-27
+
+STCF
+
+Information on status: patent grant
+
+Free format text
+:
+
+PATENTED CASE
+

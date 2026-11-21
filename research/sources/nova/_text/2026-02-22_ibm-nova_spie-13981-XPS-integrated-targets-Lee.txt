@@ -1,0 +1,462 @@
+         In-line XPS for advanced semiconductor manufacturing and
+                    metrology on fully integrated targets
+    Christopher J. Lee*a, Manasa Medikondaa, Trevor McDonougha, Will Parkina, Ruqiang Baoa,
+                          Paul Isbesterb, Mark Klareb, and Daniel Schmidta
+                     a
+                       IBM Research, 257 Fuller Road, Albany, NY 12203, USA
+         b
+          Nova Measuring Instruments Inc., 3342 Gateway Blvd, Fremont, CA 94538, USA
+
+
+                                                       ABSTRACT
+
+The continual demands to shrink device sizes and length scales in the semiconductor industry have accelerated the adoption
+of X-ray photoelectron spectroscopy (XPS) as a critical step for in-line metrology. The technique was initially introduced
+to the in-line environment to measure ultrathin layers and layer stacks predominantly in the gate module. As these stacks
+and related structures increase in complexity through scaling, a more rigorous assignment of spectral components to their
+material intensity source is necessary to use the full potential of XPS. In this paper, the application areas for in-line XPS
+are reviewed and modeling practices are demonstrated that significantly enhance XPS measurement characterization
+related to gate-all-around (GAA) transistor architectures. Besides traditional measurements on non-patterned areas, the
+high surface sensitive nature of XPS may also be tailored specifically for use on fully integrated targets. For example,
+successful quantification of material residues remaining on active device areas is presented and discussed. Such
+measurements directly on device are particularly significant as dedicated measurement targets may not serve as a proxy
+for active areas anymore. The need for advanced XPS modeling capabilities beyond 1D film stack characterization and
+towards direct 2D/3D measurement on fully integrated structures will be highlighted.
+Keywords: X-ray photoelectron spectroscopy, gate-all-around, in-line metrology, in-line XPS, advanced XPS, XRF
+
+*Corresponding author: chris.j.lee@ibm.com
+
+
+1. INTRODUCTION
+Over the past couple decades, X-ray photoelectron spectroscopy (XPS) has emerged as a critical metrology technique in
+the semiconductor manufacturing environment as scaling demands of the industry drive characterization of smaller device
+sizes and surface interfaces. In-line XPS tooling was introduced in 2004 as a metrology solution to some of the challenges
+in the 65 nm node and beyond [1,2]. At that time, ellipsometry had reached accuracy limitations for the small film thickness
+variations of gate stack materials that could, however, be characterized with the highly surface and material sensitive, non-
+destructive analytical properties of XPS. The technique increased in relevancy as industry specifications drove the control
+of film thickness tolerances to sub-nm levels and new materials continued to be incorporated into different layers [3].
+While XPS measurement areas have generally been relegated to unpatterned wafers or blanket film metrology pads on
+integrated wafers, the technique and modeling capabilities have continually evolved to incorporate some direct
+measurement on fully integrated structures and device areas [4]. In 2015, working XPS models on structure have been
+published including a pitch-dependent monitor for Cu chemical mechanical polish (CMP) process control [5]. Later
+developments cover a wide ranger of applications including direct measurement of dopant material composition of source
+drain (S/D) pFET epi structures [6] and for area-selective deposition processes on patterned structure [7]. This trend is
+expected to become more relevant as scaling pushes towards smaller structural dimensions, resulting in greater potential
+deviations between metrology on blanket targets and 3D integrated structure.
+Additional challenges for XPS measurement integration include characterization of Nanosheet gate-all around (GAA)
+transistor architectures. Because XPS spectra and intensities include and are weighted respectively by all the materials
+present in the near surface regions of the measurement area, XPS modeling is only as accurate as the ability to fully
+characterize the respective spectra obtained. However, the precision of measurement is substantially improved if the proper
+material quantifications and structural dimensions are established and defined appropriately.
+In this paper, we first discuss XPS model developments necessary to enable blanket film thickness measurement on GAA
+film stacks. We then demonstrate how XPS may be employed as a direct metrology technique on fully integrated targets
+
+
+                           Metrology, Inspection, and Process Control XL, edited by Nivea G. Schuch,
+                            Hugo Cramer, Proc. of SPIE Vol. 13981, 139810A · 2026 Published by
+                                          SPIE · 0277-786X · doi: 10.1117/12.3091932
+
+
+                                             Proc. of SPIE Vol. 13981 139810A-1
+and device areas. Several applications are highlighted including S/D epi composition, parasitic epi growth in S/D region,
+and quantification of residues following removal via CMP processes. In addition, we highlight a hybrid metrology
+application where the XRF emission and spectra generated during XPS measurement is utilized to quantify embedded
+SiGe layers beyond limited depth of XPS penetration.
+
+2. EXPERIMENTAL DETAILS
+2.1 Experimental setup
+XPS is a technique that utilizes the photoelectron spectra generated from an X-ray source to determine the chemical and
+dimensional properties from the surface region of the sample. The fundamental interactions are illustrated in Fig. 1a where
+an X-ray excites a core level electron in the sample, simultaneously ejecting a photoelectron and leaving behind a core
+level hole. An electron from a higher shell may then relax into this hole and subsequently release the excess energy as X-
+ray fluorescence (XRF) or through the ejection another higher core electron, defined as an Auger electron emission. A
+general setup for XPS measurement (Fig. 2b) consists of an X-ray source which bombards a sample with monochromatic
+X-rays. A finite solid angle of the ejected photoelectrons corresponding with the aperture size are passed through and
+filtered by kinetic energy through the electron optics column and hemispherical energy analyzer before terminating at the
+electron detector. These photoelectron detection events may then be converted into spectra categorized by kinetic energy
+and signal intensity, or electron count rate, of the detected photoelectrons. Figure 1c shows an example survey scan for a
+TiO2 sample generated with all photoelectron excitation and Auger ejection peaks labelled.
+
+
+
+
+    Figure 1. (a) Simplified representation illustrating the photoelectron emission and X-ray fluorescence events following the X-
+    ray excitation of an z. (b) Schematic of an XPS measurement setup. (c) XPS spectra of a TiO 2 sample with photoelectron
+    excitation and Auger peaks labeled.
+While laboratory based XPS instrumentation and measurements are often designed to widely characterize a new material
+or process with a higher resolution and wider spectral output, in-line XPS measurements are engineered tightly around
+target materials and processes that have been otherwise characterized beforehand. Once an in-line XPS measurement
+routine can reliably quantify variation from a process baseline, the primary recipe design goal is to minimize measurement
+time much as possible to improve fab productivity. Recipe side optimizations include the minimization of spectral
+acquisition ranges, measurement scan time, and the number and location of measurements per wafer. Throughput
+optimizations on the tool side include standardization of instrumental configuration to a singular X-ray source, fixed
+photoemission angle to the detector, and a fixed high analyzer pass energy to maximize photoelectron flux. As XPS
+measurements require high-quality vacuum conditions < 5×10-7 Torr in an analysis chamber, throughput delays are
+minimized by staging wafers in queue in a pre-chamber load lock. This allows for simultaneous pump down of incoming
+wafers to appropriate vacuum levels while the active wafer is being measured in the analysis chamber.
+Measurements in this study were taken on a Nova VeraFlex IV XPS tool platform, capable of fully automated in-line
+processing of 300 mm wafers. This tool produces AlKα X-rays in a 50 µm diameter spot, allowing for measurement on
+fully integrated metrology targets equal to or greater than these dimensions. The electron detector in the setup utilizes a
+spherical capacitor analyzer (SCA) for XPS photoelectron detection. A secondary silicon drift detector (SDD) is installed
+on a side port on the instrumental chamber and allows for the capture and analysis XRF as well.
+
+2.2 Photoelectron attenuation modeling
+In order to provide meaningful quantification of collected XPS spectra, measurements rely on understanding and modeling
+the photoelectron yield and attenuation as the electrons move and scatter during their travel through measured material.
+
+
+
+
+                                                Proc. of SPIE Vol. 13981 139810A-2
+While a full review of these mechanisms is beyond the scope of this manuscript, many other studies provide a more
+comprehensive overview of these interactions, including fundamentals of spectral interpretation and peak fitting [8-13].
+Figure 2a illustrates the potential travel pathway of photoelectrons generated at several depths of a sample. As
+photoelectrons travel further through material layers, there is a larger probability that the photoelectron will undergo single
+or multiple scattering events, both inelastic and elastic. The expected reduction in photoelectron yield as a function of
+travel length and scattering can be characterized the effective attenuation length (EAL) [14]. This is dependent on the
+kinetic energy of the photoelectron as well as the material traversed in the path of the photoelectron. Photoelectrons
+generated near the surface of the film are less likely to scatter than photoelectrons generated in the bulk levels and therefore
+provide the highest intensity yield.
+Figure 2b shows a model depiction of the intensities generated from an SiO/Si film stack and Fig. 2c shows the modeled
+Si and SiO intensities as a function of film thickness. In this scenario, the intensity of Si scales according to the equations
+below
+                                                                  𝑑𝑆𝑖𝑂
+                                                                (−      )
+                                                      𝐼𝑆𝑖 ∝ 𝑒    𝐸𝐴𝐿𝑆𝑖𝑂
+                                                                                                                                      (1)
+                                                                       𝑑𝑆𝑖𝑂
+                                                                     (−      )
+                                                  𝐼𝑆𝑖𝑂 ∝ 1 − 𝑒        𝐸𝐴𝐿𝑆𝑖𝑂
+                                                                                                                                      (2)
+
+where ISi is the intensity of Si, ISiO is the intensity of SiO, dSiO is the thickness of SiO, and EALSiO is the EAL of Si
+photoelectrons travelling through the SiO layer. The thickness of the SiO layer can be extracted from the measurement by
+scaling the Si and SiO intensities accordingly. These exponential sensitivity properties of XPS enable the precise detection
+of small changes in ultrathin films < 2 nm while the bulk scattering generally results in the effective loss of measurement
+sensitivity beyond > 10 nm of material when utilizing an Al Kα X-ray source.
+
+
+
+
+    Figure 2. (a) Illustration for photoelectron excitation and electron scattering from the surface and bulk depths of sample. (b)
+    Model depiction of a SiO overlayer on top of a semi-infinite Si substrate along with corresponding (c) XPS SiO and Si
+    intensities as a function of SiO overlayer thickness.
+
+3. RESULTS AND DISCUSSION
+3.1 Nanosheet blanket models
+Layer-by-layer stack thickness measurements can generally be quantified with a high degree of precision using XPS so
+long as each layer of interest has a unique, identifiable peak in the XPS spectra. However, modelling the Nanosheet GAA
+stack consists of alternating Si and SiGe layers, both of which contribute separately to the intensity of the XPS Si peaks.
+This introduces error into the XPS measurement to any layers above the top Si sheet unless the contributions to the net Si
+intensity are properly attributed to their corresponding layers.
+An example of this is seen when comparing similar thicknesses of an interlayer (IL) dielectric grown on a directly on Si
+(Fig. 3a) compared to IL grown on a SiGe supported Si top sheet (Fig. 3b). While the XPS SiO intensity is similar between
+the two stacks (Fig. 3c), the Si intensity is measurably lower for the measurement on the Nanosheet stack. The traditional
+IL model has been built with the assumption that all the intensity from Si (ISi) comes from the Si substrate. However, the
+IL grown on a GAA Nanosheet stack has a lesser Si contribution since the Si content is more dilute in the SiGe layer
+compared to Si of a comparable depth and thickness.
+
+
+
+
+                                                 Proc. of SPIE Vol. 13981 139810A-3
+    Figure 3. Schematics for the blanket layer assumptions for the (a) traditional IL model on Si and (b) IL model with Si top
+    sheet and SiGe underlayer. (c) XPS Si 2p spectra for IL grown on Si (red) and IL grown on Si/SiGe (green).
+Nanosheet correction and top sheet extraction
+Figure 4a shows an illustration of the Nanosheet stack consisting of alternating Si and SiGe layers along with an overlayed
+chart of XPS signal intensity as function of distance to surface. This plot indicates that while most of the underlayers
+provide insignificant intensity contributions, the topmost SiGe layer still contributes substantially and must be considered
+in the model. Spectral contributions are shown for Ge (Fig. 4b) and Si (Fig. 4c), which includes both the Si contributions
+from the Si top sheet as well as the topmost SiGe layer. These Si contributions must be separated and applied to the
+appropriate layers in order to produce an effective model. After using the SiGe Ge percentage as a model input, the
+following intensity correction for the Si top sheet layer can be applied as follows
+                                     𝐼𝑆𝑖,𝑐𝑜𝑟𝑟𝑒𝑐𝑡 = 𝐼𝑆𝑖,𝑚𝑒𝑎𝑠𝑢𝑟𝑒𝑑 − 𝐶𝐹 ∙ 𝐼𝐺𝑒,𝑚𝑒𝑎𝑠𝑢𝑟𝑒𝑑                                              (3)
+where ISi,correct is the corrected Si top sheet intensity, ISi,measured is the total measured Si peak intensity, IGe,measured is the
+measured Ge intensity, and CF is the conversion factor used to relate the Ge and Si intensities from the SiGe layer.
+
+
+
+
+    Figure 4. XPS Ge 3d and Si 2p peak fitting and intensity extraction for (a) Process A and (b) Process B. (c) Si top sheet
+    thickness output for the Nanosheet model for Process A and Process B.
+Beyond the IL thickness correction, the Si intensity correction allows for the measurement of the Si top sheet thickness.
+The results of this model for two separate process treatments on the Nanosheet stack are shown with corresponding spectra,
+labelled as Process A (Fig. 5a) and Process B (Fig. 5b). Process B shows significantly higher Ge and Si intensities and
+substantially lower SiO intensities compared to Process A. Figure 5c shows that when the Nanosheet model is applied to
+spectra from these processes, Process A clearly exhibits a larger Si thickness than process B. In addition, both the processes
+and the model provide a stable cross-wafer baseline for Si thickness.
+
+
+
+
+                                                 Proc. of SPIE Vol. 13981 139810A-4
+    Figure 5. XPS Ge 3d and Si 2p peak fitting and intensity extraction for (a) Process A and (b) Process B. (c) Si top sheet
+    thickness output for the Nanosheet model for Process A and Process B.
+Nanosheet correction for high-k gate stack layer
+In addition, this correction can be extended to any subsequent layers added to the Nanosheet stack. Here we discuss the
+improvements when applying the Nanosheet after the addition of the high-k dielectric layer. Figure 6a illustrates a model
+depiction of the Nanosheet film stack following high-k dielectric deposition and corresponding spectra for a smaller Si top
+sheet thickness (Fig. 6b) and a larger Si top sheet thickness (Fig. 6c). In this case, new peak fitting must be applied to
+deconvolute the Ge intensities from the additional high-k spectral contributions. While the Ge intensities decrease at larger
+Si top sheet thicknesses, small Ge intensities can still be extracted with proper peak fitting as seen in the spectra. The
+Nanosheet correction may be applied so long as the Ge intensity can be extracted consistently and reliably.
+
+
+
+
+    Figure 6. (a) Schematic of XPS blanket model for high-K dielectric on Si/SiGe as a proxy for Nanosheet GAA. XPS Spectra
+    capturing the deconvolution of the high-K contribution from Ge for (b) a smaller Si top sheet thickness and (c) a larger Si top
+    sheet thickness.
+Figure 7a shows the effect on XPS measurement output for high-k thickness when modeled on a Si substrate compared to
+the Nanosheet stack. Nominal Si thicknesses were calibrated using X-ray diffraction measurements for and compared to
+the output from the XPS models. In the case of the Si substrate model, the XPS high-k thickness is greatly distorted at the
+lower end of nominal Si thickness measurements. However, the Nanosheet model correction flattens out the high-k
+thickness over all ranges of nominal Si thicknesses. In addition, Fig. 7b shows that the XPS Si thickness scales linearly
+with the nominal XRD calibrated thickness. The linearity of the model breaks only at much larger Si top sheet thicknesses
+where the reference Ge intensities become vanishingly small. The Nanosheet model therefore provides a robust method of
+monitoring Si top sheet thickness, particularly with smaller film thickness dimensions.
+
+
+
+
+                                                 Proc. of SPIE Vol. 13981 139810A-5
+    Figure 7. (a) Calculated high-k thickness from Si and Nanosheet models and (b) calculated Si thickness from Nanosheet
+    model measured from wafers with variable nominal Si top sheet thicknesses.
+3.2 XPS measurements on structure
+XPS characterization of integrated structure introduces additional modeling challenges compared to blanket film stacks as
+the measurement dimensionality changes from 1D to 3D. These measurements must account for any spectral contributions
+from material differences in the lateral directions in addition to the in-plane composition and thickness variations with
+respect to the wafer surface. In these scenarios, it is advantageous to apply hard modelling constraints to structural
+parameters and limit the solution variable space while leveraging the strengths of XPS measurements. This includes
+limiting analysis to the high sensitivity near surface structural elements, applying robust peak fitting to differentiate
+compositional to isolate regions of interest from other spectral contributions, and constraining known 2D and 3D
+parameters based on knowledge of the process and structures.
+S/D characterization on fully integrated targets
+XPS has previously been utilized to characterize SiGe composition for both the Nanosheet GAA blanket stacks as well as
+the dopant concentrations for S/D regions on structure [6,15,16]. In the following example, the extraction of the Ge %
+composition directly from the S/D regions of the structure is highlighted. The schematic in Fig. 8a shows a structure with
+after S/D epitaxy. The measured intensity from the S/D epi is expected to be smaller since the epi accounts for a smaller
+fraction of the exposed measurement area. The epi intensity is further diminished due to the taller dimensions of the
+sidewall structures which narrows the acceptable photoelectron ejection trajectory to the detector. This is observed from
+the spectra in Fig. 8b where the Si intensities from the S/D epi are substantially smaller than the other structural Si
+contributions. Fig. 8c shows that that after accounting for scale, the signal to noise of the Ge intensities are lower compared
+to the background level. Nonetheless, proper peak fitting enables the separation of the Si and Ge intensities specifically
+from the S/D region epi so that SiGe Ge % composition can be calculated. Figure 8c shows the results of this model applied
+to measurements on integrated targets with variable structural pitches. The cross-wafer averages show small differences
+but measurable decreases in Ge % as a function of changing pitch in order of Macro A, Macro B, and Macro C. A calibrated
+model for measurements on structure is highly desirable as shown here, where structural design variations directly affect
+the material properties following the same process step.
+
+
+
+
+    Figure 8. (a) Model of a structure with exposed S/D epi along with the photoemission path for epi measurement
+    characterization. XPS spectra for (b) Si 2p and (c) Ge 3d showing intensity contributions from S/D epi and other structure.
+    (d) Plot of S/D epi Ge % as a function of different structural pitches.
+
+
+
+
+                                                Proc. of SPIE Vol. 13981 139810A-6
+Parasitic nFET-epi growth on pFET S/D epi
+In the next example, we discuss a method using XPS to monitor parasitic epi growth on pFET S/D epi structures. Parasitic
+epi growth is a consequence of epi deposition processes where epi nucleates in unintended regions and negatively impacts
+device performance [17]. While many variations of parasitic growth exist, here we discuss using XPS to monitor a specific
+form of parasitic epi growth in the form of nFET epi nodules on active pFET S/D regions as depicted in Fig. 9a. In this
+case, some inhomogeneity in the process flow allows for nFET epi nodules to grow directly on the active pFET S/D region
+following nFET epi deposition. Because the nFET epi contains P while the pFET epi is free of any P content, XPS P 2p
+spectra can be used to detect the presence of nFET nodules on the surface of pFET S/D regions. This is shown in Fig. 9b
+where a structure with parasitic nFET nodules shows an elevated P 2p peak while the same region for a clean, functional
+pFET epi target is flat in that same region. By quantifying these P 2p peak intensities (Fig. 9c a clear elevated threshold
+for P intensity counts is observed and established compared to the lower baseline for the functional pFET epi region. This
+enables faster cycles of feedback directly after the nFET deposition so that processes can be optimized to minimize
+parasitic epi growth well before comprehensive defect inspection and device yield tests.
+
+
+
+
+    Figure 9. (a) Schematic of a clean pFET epi structure and pFET epi structure with parasitic nFET epi growth. (b) XPS P 2p
+    spectra for a clean pFET structure (green) and pFET epi structure with parasitic nFET epi growth (red). (c) Quantification of
+    XPS P 2p spectra for a functional pFET epi (green) and defective pFET epi (red).
+Residue CMP removal monitor on integrated targets and device area
+One key advantage of XPS measurement on structure is the enhanced sensitivity to the surface of measured target area.
+This makes the technique particularly powerful for determining whether material present is exposed to the surface or
+enclosed by another material with a separate composition. The following application highlights XPS as a way to monitor
+surface residues structure post CMP processes. This methodology can be applied to both integrated target structure and
+actual device areas.
+Figure 10a shows a schematic of a device structure prior to CMP processing intended to remove the surface residue layer
+to reveal the structure underneath. In the schematic, the surface residues are labelled as the highest sensitivity to XPS while
+the structure below has a lower sensitivity. Any structure below these regions provides negligible intensity contributions
+to the spectra due to the larger depth from the surface of the measured region. Figure 10b shows the XPS spectra region
+of interest for measurements on structure for a region with residues present and with the residues fully removed. The
+spectra for a structure with residues fully removed consists primarily of intensity region and peak area labelled as B,
+corresponding with intensity coming from the primary structure to be revealed. In contrast, the spectra from a structure
+with residues shows an elevated level of intensity from the spectral region labelled as A, corresponding with the larger
+presence of residue materials. This interpretation is validated by TEM images taken along with the XPS measurements for
+a device with underpolished structure (Fig. 10c) and a fully polished device with structure clear of residues (Fig. 10d).
+
+
+
+
+                                                Proc. of SPIE Vol. 13981 139810A-7
+    Figure 10. (a) Schematic of fully integrated structure utilizing XPS to validate full surface residue. (b) Comparison of XPS
+    spectra with residues and with residues removed and representative TEM images of structure with (c) residues present and (d)
+    residues removed.
+The progress towards clearing the surface of residues and revealing the underlying structure via CMP processes can then
+be monitored as intensity ratio A/B, representing relative intensity contributions from residues to structure. Figure 11a
+shows a box plot of ratio A/B measurements across fully integrated targets on a wafer following multiple rounds of the
+CMP process. After the first round, both the overall value and the relative measurement spread of these ratios are elevated
+across the wafer. These results are in agreement with larger amounts of residue still present on the wafer and
+inhomogeneous residue removal. However, both the ratio and the spread drop precipitously after the second and third
+rounds with some of the dies reaching a plateau at a low ratio value. By the fourth round, all the dies have settled
+homogeneously on this low intensity ratio plateau, indicating that the integrated target structures on wafer are free of
+residues.
+Figure 11b shows another example of cross wafer residue intensity ratios as a function of radial position. These
+measurements were taken directly on device areas following CMP processes, one of which resulted in a clean wafer and
+another wafer with edge residues. The central areas of both wafer exhibit minimal residue ratio values, indicating that the
+CMP processes are both effective in clearing the center of the wafer. However, the wafer with edge residues shows a
+continual growth in residue intensity when moving radially outward from the center, indicating that the CMP process for
+this wafer is less effective at the edges.
+
+
+
+
+    Figure 11. XPS residue to structure (A/B) intensity ratios following (a) multiple CMP cycles across wafer and after (b) process
+    optimization for center to edge variation.
+The dimensionless nature of these results, characterized as an accelerated dip in the residue to structure ratio followed by
+a plateau region, gives this surface characterization the flexibility to be applied broadly over a range of structural designs.
+
+
+
+
+                                                 Proc. of SPIE Vol. 13981 139810A-8
+As long as the intensity ratio plateau threshold is properly established for the measured regions of a clean wafer, this model
+can be extended to provide meaningful, quantifiable results on actual device areas in addition to fully integrated targets,
+providing the closest point of reference for actual device performance.
+XRF for SiGe indent and channel release
+With the addition of an XRF detector to an in-line XPS setup, XRF spectra can be acquired simultaneously with XPS
+spectra collection without any additional spectral acquisition time. In addition, XRF emissions are attenuated at a much
+larger length scale compared to the electron scattering lengths of photoelectrons and therefore are not subject to the same
+sampling depth limitations. This enables a much simpler quantification for XRF results as the total intensity from an XRF
+excitation scales linearly with the amount of the material of interest captured in the measured structure.
+XRF has long been evaluated as an option to characterize changes in the embedded SiGe layers within GAA stacks [18-
+20]. Here we discuss a method to characterize SiGe channel indent depth initially conducted by Schmidt et al. using a
+hybrid metrology approach with XRF and optical critical dimension (OCD) metrology [21,22]. In this study, the Ge Lα
+obtained from the XRF was used to quantify the volumetric change in SiGe content before and after SiGe indent. This data
+was then used along with an optical critical dimension (OCD) measurement in order to constrain the structural parameter
+space output by the subsequent model. By taking this hybrid metrology approach, the XRF-enhanced OCD model converts
+the volumetric changes from the Ge Lα counts into a specific indent depth for the SiGe layers separating the Nanosheets.
+Beyond this application, the Ge Lα XRF counts can be used to quantify any residual SiGe content following post channel
+release processes intended for full SiGe layer removal. Figure 12a shows the XRF spectra progression in order of
+decreasing Ge Lα for pre indent (Fig. 12b), post indent (Fig. 12c), and post channel release processes (Fig. 12d). As the
+Ge Lα excitations are insensitive to any surrounding structure, XRF can be used to monitor changes in the embedded SiGe
+layers through multiple steps throughout the full process flow.
+
+
+
+
+    Figure 12. (a) XRF Ge Lα spectra collected over the course of several SiGe removal processes along with process schematics
+    for (b) pre indent, (c) post indent, and (d) post channel release.
+
+4. SUMMARY AND CONCLUSIONS
+In this work, we have shown a novel method to improve XPS modeling to compensate for the finite thickness alternating
+Si and SiGe layers in Nanosheet GAA film stacks. Furthermore, it was demonstrated that XPS measurement capabilities
+have progressed beyond characterization limited to blanket films to the point of meaningful measurement on fully-
+integrated target and device areas. This includes the selective characterization of S/D epitaxy to determine pitch-dependent
+Ge %, parasitic epitaxial growth on the S/D regions, and the monitoring of material surface residues post CMP processes,
+for example. With parallel in-line XRF capabilities, it was also highlighted how the complementary XRF intensities can
+be utilized to measure volumetric in embedded materials beyond the limits of XPS penetration depth, and that these inputs
+can be integrated in a hybrid metrology setup with OCD to determine actual structural parameters. Measurement directly
+on integrated targets and active device areas are superior since it removes the need to account for differences in process
+outcomes on structure compared to proxy, blanket film stacks. As the application of XPS measurements expands to
+measurement on fully integrated structures, further development of modeling capabilities is needed to meet the growing
+complexity.
+
+
+
+
+                                               Proc. of SPIE Vol. 13981 139810A-9
+ACKNOWLEDGEMENTS
+
+The authors would like to thank Susan Emans (IBM) for fruitful discussions as well as IBM and Nova management for
+support of this work.
+
+
+REFERENCES
+
+[1] https://www.eetimes.com/revera-starts-life-with-a-tool-for-gate-metrology-2/
+[2] https://www.metrologyworld.com/doc/revera-announces-the-veraflex-materials-metro-0001/
+[3] C.R. Brundle, G. Conti, and P. Mack, “XPS and angle resolved XPS, in the semiconductor industry: Characterization
+     and metrology control of ultra-thin films,” J Electron Spectros Relat Phenomena 178–179(C), 433–448 (2010).
+[4] A. Vaid, G. Iddawela, S. Mahendrakar, M. Lenahan, M. Hossain, P. Timoney, A.F. Bello, C. Bozdog, H. Pois, W.T.
+     Lee, M. Klare, M. Kwan, B.C. Kang, P. Isbester, M. Sendelbach, N. Yellai, P. Dasari, and T. Larson, “Hybrid enabled
+     thin film metrology using XPS and optical,” Proc. SPIE 9778, Metrology, Inspection, and Process Control for
+     Microlithography XXX, 97780M (2016).
+[5] B. L’Herron, R. Chao, K. Kim, W.T. Lee, K. Motoyama, B. Deprospo, T. Standaert, J. Gaudiello, and C. Goldberg,
+     “Hybridization of XRF/XPS and scatterometry for Cu CMP process control,” Proc. SPIE 9424, Metrology, Inspection,
+     and Process Control for Microlithography XXIX, 94241M (2015).
+[6] J. Lee, G. Subramanian, M. Medikonda, H. Lazkani, J. Holt, C. Gaire, P. Isbester, and M. Klare, “Full structure
+     transistor process monitoring of boron and germanium in PFET EPI using in-line XPS,” Proc. SPIE 10959, Metrology,
+     Inspection, and Process Control for Microlithography XXXIII, 109590N (2019).
+[7] M. Medikonda, L. Wangoh, C.J. Lee, M. Klareb, D. Kislitsynb, H. Pois, P. Isbester, A. Cepler, W.T. Lee, and D.
+     Schmidt, “In-line XPS metrology for area-selective deposition processes on patterned structures,” Proc. SPIE 13891,
+     Metrology, Inspection, and Process Control XL, 13981-35 (2024).
+[8] A.G. Shard, “Practical guides for x-ray photoelectron spectroscopy: Quantitative XPS,” Journal of Vacuum Science
+     & Technology A: Vacuum, Surfaces, and Films 38(4), 041201 (2020).
+[9] M.H. Engelhard, D.R. Baer, A. Herrera-Gomez, and P.M.A. Sherwood, “Introductory guide to backgrounds in XPS
+     spectra and their impact on determining peak intensities,” Journal of Vacuum Science & Technology A: Vacuum,
+     Surfaces, and Films 38(6), 063203 (2020).
+[10] G.H. Major, N. Fairley, P.M.A. Sherwood, M.R. Linford, J. Terry, V. Fernandez, and K. Artyushkova, “Practical
+     guide for curve fitting in x-ray photoelectron spectroscopy,” Journal of Vacuum Science & Technology A: Vacuum,
+     Surfaces, and Films 38(6), 061203 (2020).
+[11] C.D. Wagner, L.E. Davis, M. Zeller, J.A. Taylor, R.H. Raymond, and L.H. Gale, “Empirical atomic sensitivity factors
+     for quantitative analysis by electron spectroscopy for chemical analysis,” Surface and Interface Analysis 3(5), 211–
+     225 (1981).
+[12] S. Doniach and M. Sunjic, “Many-electron singularity in X-ray photoemission and X-ray line spectra from metals,”
+     Journal of Physics C: Solid State Physics 3(2), 285 (1970).
+[13] S. Tougaard, “Practical guide to the use of backgrounds in quantitative XPS,” Journal of Vacuum Science &
+     Technology A: Vacuum, Surfaces, and Films 39(1) (2021).
+[14] C.J. Powell and A. Jablonski, “Surface sensitivity of X-ray photoelectron spectroscopy,” Nucl Instrum Methods Phys
+     Res A 601(1–2), 54–65 (2009).
+[15] B. L’herron, N. Loubet, Q. Liu, S. Farhat, J. Fullam, J. Gaudiello, S. Rangarajan, B. Sun, W.T. Lee, M. Klare, H. Pois,
+     M. Kwan, Y. Wang, T. Larson, R. Wacquez, and S. Maitrejean, “Silicon-Germanium (SiGe) composition and
+     thickness determination via simultaneous smallspot XPS and XRF measurements,” 25th Annual SEMI Advanced
+     Semiconductor Manufacturing Conference (ASMC), 26–30 (2014).
+[16] G.R. Muthinti, N. Loubet, R. Chao, A.A. de la Peña, J. Li, M.A. Guillorn, T. Yamashita, S. Kanakasabapathy, J.
+     Gaudiello, A.J. Cepler, M. Sendelbach, S. Emans, S. Wolfling, A. Ger, D. Kandel, R. Koret, W.T. Lee, P. Gin, K.
+     Matney, et al., “Materials characterization for process integration of multi-channel gate all around (GAA) devices,”
+     Proc. SPIE 10145, Metrology, Inspection, and Process Control for Microlithography XXXI, 101451U (2017).
+[17] D. Kong, R. Chao, M. Breton, C. Liu, G.R. Muthinti, S. Seo, N.J. Loubet, P. Montanini, J. Gaudiello, V. Basker, A.
+     Cepler, S. Ng-Emans, M. Sendelbach, I. Kaplan, G. Barak, D. Schmidt, and J. Frougier, “In-line characterization of
+     non-selective SiGe nodule defects with scatterometry enabled by machine learning,” ," Proc. SPIE 10585, Metrology,
+     Inspection, and Process Control for Microlithography XXXII, 1058510 (2018).
+
+
+
+
+                                            Proc. of SPIE Vol. 13981 139810A-10
+[18] R. Muthinti, N. Loubet, R. Chao, J. Ott, M. Guillorn, N. Felix, J. Gaudiello, P. Lund, A. Cepler, M. Sendelbach, O.
+     Cohen, S. Wolfling, C. Bozdog, and M. Klare, “Advanced in-line optical metrology of sub-10nm structures for gate
+     all around devices (GAA),” Proc. SPIE 9778, Metrology, Inspection, and Process Control for Microlithography XXX,
+     977810 (2016).
+[19] D. Kong, D. Schmidt, M. Breton, A.A. de la Peña, J. Frougier, A. Greene, J. Zhang, V. Basker, N. Loubet, I. Ahsan,
+     A. Cepler, M. Klare, M. Cheng, R. Koret, and I. Turovets, “Development of SiGe Indentation Process Control to
+     Enable Stacked Nanosheet FET Technology,” 2020 31st Annual SEMI Advanced Semiconductor Manufacturing
+     Conference (ASMC), 1–5 (2020).
+[20] J. Bogdanowicz, Y. Oniki, K. Kenis, Y. Muraki, T. Nuytten, S. Sergeant, A. Franquet, V. Spampinato, T. Conard, I.
+     Hoflijk, J. Meersschaut, N. Claessens, A. Moussa, D. van den Heuvel, J. Hung, R. Koret, A.-L. Charley, and P. Leray,
+     “Spectroscopy: a new route towards critical-dimension metrology of the cavity etch of nanosheet transistors,”
+     Metrology, Inspection, and Process Control for Semiconductor Manufacturing XXXV, 116111Q (2021).
+[21] D. Schmidt, C. Durfee, S. Pancharatnam, M. Medikonda, A. Greene, J. Frougier, A. Cepler, G. Belkin, D. Shafir, R.
+     Koret, R. Shtainman, I. Turovets, and S. Wolfling, “OCD enhanced: implementation and validation of spectral
+     interferometry for nanosheet inner spacer indentation,” Proc. SPIE 11611, Metrology, Inspection, and Process Control
+     for Semiconductor Manufacturing XXXV, 116111U (2021).
+[22] D. Schmidt, A. Cepler, C. Durfee, S. Pancharatnam, J. Frougier, M. Breton, A. Greene, M. Klare, R. Koret, and I.
+     Turovets, “Development of SiGe Indentation Process Control for Gate-All-Around FET Technology Enablement,”
+     IEEE Transactions on Semiconductor Manufacturing 35(3), 412–417 (2022).
+
+
+
+
+                                           Proc. of SPIE Vol. 13981 139810A-11
+

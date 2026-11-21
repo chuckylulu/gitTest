@@ -1,0 +1,1041 @@
+# kla_metrology_audit
+Source: /home/user/gitTest/research/prior/kla_metrology_audit.json (35 chunks; thought chunks omitted)
+
+## [1] USER
+
+GLOBAL CHAT RULES (PERMANENT):
+- SILENT INTELLIGENCE ONLY: Raw dated facts. Zero opinions, rankings, adjectives, stock prices, or valuation multiples.
+- NO intros or summaries. Start straight with tables/bullets.
+- PRIMARY SOURCES ONLY: Filings (SEC, TDnet, DART, MOPS, CNINFO), earnings Q&A, SPIE/IEDM/ECTC papers, competitor/customer filings.
+- MANDATORY: Exact date/quarter + direct URL on every figure/claim. If unverified after checking, write "N/A (checked [source])".
+
+TARGET #1: KLA Corporation (KLAC) | Sector: Semiconductor Metrology, Inspection & Test.
+
+RUN STEP 1 — PRODUCTS, PHYSICS & SWITCHING COSTS:
+1. Commercial Footprint: Exact tools shipping in volume today for 2nm/GAA, backside power, HBM4, and hybrid bonding vs. pilot/lab stage. List past 3-year roadmap milestones met vs. missed.
+2. Physics & AI Audit: Verified fab capability vs. vendor claim on: (a) optical vs. e-beam vs. X-ray/computational inference; (b) buried bond-interface defects; (c) AI recipe automation effect on paid application-engineering hours; (d) who owns physical reference data (KLA vs. foundries) & on-prem limits.
+3. Switching Costs (Factual Steelman): Documented tool qualification times (months), fab requalification costs, and proprietary lock-in factors keeping foundries on KLA tools.
+
+Tables + max 4 dry bullets.
+
+## [2] MODEL
+
+### 1A. Commercial Footprint: Volume (HVM) vs. Pilot/Lab Stage (as of Nov 2026)
+
+| Segment | Volume Production (HVM) Tools | Pilot / Qualification / Lab Stage Tools | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **2nm / GAA** | BBP inspection: `3935` / `39xx` (Gen5), `2965` / `29xx` (Gen4), `R9xx`; e-beam wafer inspection/review/metrology: `eSi50` (1-beam), `eSV100` (300-beam, voltage contrast), `eDRX1`, `eM200`; laser/unpatterned: `Voyager 1035`, `Surfscan SP7XP`; OCD/films/overlay: `SpectraShape 11k`/`12k`, `Aleris 8510`, `Archer 800`, `ATL100`; EUV reticle: `Teron 640e/eS/eS2`, `Teron SL670e XP2`, `Gen5 Agera` print check, `TeraBeam 8xx` (12×12 multi-column EBMI at TSMC N2 HVM). | `Actinic 7xx` (13.5 nm EUV reticle, "Early Demo Stage", requires NA change); `Gen6` BBP (post-2026 roadmap); `eSV100` physical-defect mode (voltage contrast only at Mar 2026); `eSL16` (High-NA EUV 20–24 nm M0/M2 PnR patterning study); `TeraBeam 8xx` High-NA EUV and nano-imprint reticle feasibility. | FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com); SPIE (2026-04-09) [DOI](https://doi.org/10.1117/12.3111792); SPIE (2026-04-08) |
+| **Backside Power (BS-PDN)** | `PWG5` with `XT Option` (dual-side Fizeau interferometry on double-thickness bonded wafers); `Archer 750` / `Archer 800` (frontside-to-backside overlay after wafer thinning); `5D Analyzer` (CPE feedforward software). | `PWG5` 2nd-generation empirical bonder-heating feedforward model (imec 300 mm short-loop validation; residual 5.0/4.7 nm 3σ across DOEs); CFET backside hybrid metrology/inspection workflows. | SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3089964); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3090568); FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm) |
+| **HBM4 (TCB 8H/12H/16H)** | DRAM front-end: `3920 EP` / `39xx` (Gen5), `29xx` (Gen4), `Voyager`, `Surfscan`, `Teron SL670e XP2`, `SpectraShape 11k`; packaging/stacking: `Kronos 1190XR`, `CIRCL-AP`, `Micro-SR`, `PWG5` with `XT Option`, `eDR7380` / `eDR7xxxAP`, `ICOS F26x`/`T3`/`T7`/`T9`, `Quali-Fill Libra`. | HBM hybrid-bonding stack tools (16H/20H, ~0.6× TSV pitch): KLA roadmap classifies HBM hybrid bonding as future adoption (8H/12H and 12H/16H remain TCB). N/A for HBM4 hybrid-bonding HVM shipments (checked KLA Q1 FY27 Call & IMAPS Aug 2026). | FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); IMAPS (2026-08-11) [DOI](https://doi.org/10.4071/001c.171430); Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com) |
+| **Hybrid Bonding (W2W & D2W)** | Pre-bond surface inspection: `Kronos 1190XR` (down to 150 nm), `Puma`, `Voyager`, `29xx` (Gen4 deployed in logic hybrid-bonding steps at ~100 nm sensitivity); pre-bond Cu recess/dishing: `SpectraShape`, `Zeta-5xx/6xx`; wafer/die shape: `PWG5 3D` / `PWG5 XT`; post-bond IR (>1 μm) overlay: `irArcher 007` (1.5–3.3 nm X/Y precision across 100–350 μm die); plasma dicing: `SPTS` etch/deposition. | Sub-50 nm defectivity and <1 μm pitch D2W hybrid bonding; post-bond buried bond-interface void inspection tool: N/A (checked KLA FY2026 10-K, 2026 Investor Day slides, IMAPS Aug 2026). | IMAPS (2026-08-11) [DOI](https://doi.org/10.4071/001c.171430); Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com); FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm) |
+
+### 1B. Past 3-Year Roadmap Milestones: Met vs. Missed (Nov 2023 – Nov 2026)
+
+| Program / Target | Baseline / Prior Commitment | Outcome | Verified Actual + Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **CY2026 Revenue Target** | $14.0B ± $500M revenue; 41%–43% operating margin (2022 Investor Day). | **MET** | FY26 revenue $13.58B; Q1 FY27 $4.14B (46.1% non-GAAP operating margin); Q2 FY27 guidance $4.70B ± $200M. 2022 Investor Day (2022-06-16) [SEC 8-K](https://www.sec.gov/Archives/edgar/data/319201/000119312522175500/d341367dex991.htm); Q1 FY27 8-K (2026-10-28) [KLA IR](https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000032/exhibit991earningsrelease0.htm) |
+| **e-Beam Wafer Portfolio HVM** | Expand beyond $75M–$100M CY22 base into inspection, review, metrology. | **MET** | `eSi50`, `eSV100` (300-beam VC), `eDRX1`, `eM200` reached HVM; CY25 e-beam revenue ~$400M (`eSV100` physical-defect mode pending). Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com) |
+| **`TeraBeam 8xx` Multi-Column EBMI** | 8xx e-beam mask inspector shipped for ≤3 nm customer qualification in Q2 CY2021. | **MET (5-YR QUAL)** | Commercial release reached 2026 after 5-year development/qualification at TSMC; deployed on TSMC N2 HVM layers. Q4 FY21 Letter (2021-07-29) [KLA IR](https://ir.kla.com); Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); SPIE (2026-04-09) [DOI](https://doi.org/10.1117/12.3111792) |
+| **`Actinic 7xx` EUV Reticle Inspector** | Commercial alternative to Lasertec 13.5 nm actinic EUV mask inspection (`ACTIS`). | **MISSED** | Listed as "Early Demo Stage" (requires NA change) as of Mar 2026; Lasertec launched `ACTIS A200HiT` (3× `A150` speed) Oct 2025 and reported JPY 114.8B FY25 `ACTIS` sales. Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); Lasertec Q1 FY26 (2025-10-31) |
+| **Advanced Packaging Scaling** | Expand front-end tool portfolio into wafer-level packaging & HBM. | **MET** | Total AP revenue ~$950M in CY25; AP Process Control Systems revenue on track for $1.1B+ in CY26 (+70%+ YoY); share ~4× over 4 years. Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com) |
+| **Flat Panel Display (FPD) Business** | Operate acquired Orbotech FPD product line within PCB/Display segment. | **MISSED (EXITED)** | Announced FPD manufacturing exit Mar 2024 following customer project cancellation; ended manufacturing Dec 31, 2024; $70.5M Q3 FY24 goodwill impairment. FY24 10-K (2024-08-05) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920124000021/klac-20240630.htm) |
+| **H1 CY2026 Optical Supply Capacity** | Fulfill CY26 leading-edge logic/DRAM/HBM ramp without shipment bottlenecks. | **MISSED** | Management planned flat CY26 capacity; optical component bottlenecks constrained H1 CY26 shipments, extended Gen4/Gen5 lead times past 12 months, and lifted backlog from $7.86B (Jun 30, 2025) to $12.57B (Jun 30, 2026). FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com) |
+
+### 2. Physics & AI Audit: Vendor Claim vs. Verified Fab Capability
+
+| Audit Domain | KLA Vendor Claim | Verified Fab Capability / Physical & Operational Limit | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **(a) Optical (BBP) vs. e-Beam** | Gen4 (`29xx`) and Gen5 (`39xx`, 190–260 nm SR-DUV, 30 nm pixel) deliver full-wafer HVM coverage at ~1,000× e-beam throughput; co-intelligence (`eSi50`/`eSV100` + BBP + AI) trains BBP modes to detect GAA defects ("If you can detect with optical, you always use optical"). | GAA introduces buried/electrical defect modes requiring e-beam voltage contrast (`eSV100` limited to VC at Mar 2026); on N2 curvilinear EUV masks (<20 nm wafer-scale CD), TSMC + KLA confirm optical inspection hits resolution, modeling, and false-count limits, requiring 12×12 multi-column e-beam (`TeraBeam 8xx`); in GAA/BS-PDN stacks, metal-rich HAR layers cut optical contrast/penetration depth, requiring e-beam overlay (`eOVL`) reference. | Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com); SPIE (2026-04-09) [DOI](https://doi.org/10.1117/12.3111792); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3090568) |
+| **(a) X-Ray (`Axion`) & Computational Inference (`SpectraShape` / `PWG5`)** | `Axion` transmissive CD-SAXS performs non-destructive HVM 3D shape/tilt/twisting metrology; `SpectraShape` + `TurboShape` ML predicts GAA HKMG/Vt and DRAM in-die overlay inline; `PWG5` predicts BS-PDN post-bond overlay. | (1) `Axion` 3D NAND twisting validation (Lam + KLA, 2 wafers, 651 sites) achieved $R^2 > 0.84$, but raw output is arbitrary/unitless, restricted to periodic arrays, and requires destructive delayering + Hitachi CD-SEM calibration to convert to nm. (2) `SpectraShape 11k` ML requires SEM/TEM/electrical DOE reference training. (3) On imec BS-PDN WxW bonding, KLA rejected ML for an analytical physical model citing insufficient pre-production wafer counts and ML prediction failures on small training sets; localized bonding particle hotspots still exceed scanner correction limits. | SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3090197); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3091117); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3089964) |
+| **(b) Buried Bond-Interface Defects (Hybrid Bonding)** | KLA monitors hybrid-bond void drivers via pre-bond surface inspection (`Kronos`/`Voyager`/`Puma`/`29xx`), pre-bond Cu recess (`SpectraShape`), wafer/die shape (`PWG5 3D`), and post-bond IR (>1 μm) overlay (`irArcher 007`). | KLA has no commercial post-bond buried-void inspection tool (N/A; checked FY26 10-K, Mar 2026 Investor Day, Aug 2026 IMAPS) and relies on external SAM for post-bond void verification. Samsung + Onto Innovation (SPIE Apr 2026) document that conventional SAM, IR thermography, and X-ray fail on sub-micron voids beneath metal layers at <5 μm pitches, demonstrating Picosecond Laser Acoustics (PLA, 1030/1064 nm) imaging 1 μm voids under 665 μm Si. | IMAPS (2026-08-11) [DOI](https://doi.org/10.4071/001c.171430); FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3095356) |
+| **(c) AI Recipe Automation vs. Paid App-Engineering Hours** | `Setup 2.0`, recipe development servers, `DefectWise`, and `Services Intelligence Hub` (on-demand agentic expertise, autonomous synchronization) accelerate recipe setup/deployment and lower MTTR. | Quantified change in billable application-engineering hours: N/A (checked FY26 10-K, Nov 2025 Services Update, Mar 2026 Investor Day, Q4 FY26 & Q1 FY27 calls). Over 80% of KLA Services revenue ($3.1B FY26; $850M Q1 FY27, +14% YoY) is fixed >3-year subscription contracts (<20% time & materials); AI reduces KLA's internal contract-delivery labor/parts cost rather than contracting top-line billings. KLA raised long-term Services CAGR target to 13%–15% (Mar 2026), retains 1,600–1,700 applications engineers (Jul 2026), and is adding applications/service headcount over the next 12 months (Oct 2026). | Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com); Q4 FY26 Call (2026-07-28) [KLA IR](https://ir.kla.com); Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com); FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm) |
+| **(d) Physical Reference Data Ownership & On-Prem Limits** | KLA generates the largest data volume in fabs (~125 TB/hr, ~1 PB per 8-hr shift per BBP tool; 78T pixels/wafer) and mines decades of tool/business data in KLA Services Data Systems for predictive health and agentic guidance. | Verbatim contractual data-ownership clause: N/A (checked FY26 10-K, Mar 2026 Investor Day, SPIE 2024–2026). Architecturally, wafer/GDS/SEM inspection data stays on-premise inside customer fabs: each BBP tool attaches to a dedicated on-tool/on-prem GPU worker cluster + storage rack (~$1M compute cost/tool); fabs deploy `Klarity` and photolithography AI on on-premise big-data platforms; KLA's cross-fab Services Data System aggregates tool-health/parametric/business telemetry, not shared foundry GDS/wafer reference sets (training on customer-specific DOE/SEM/TEM reference remains per-fab). | Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com); SPIE (2026-04-10) [DOI](https://doi.org/10.1117/12.3090575); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3089964); FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm) |
+
+### 3. Switching Costs (Factual Steelman)
+
+| Factor | Documented Metric / Mechanism | Verification Scope | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **Tool Qualification Duration (Months)** | • Competitor metrology sales/qualification cycle (new customer/product/application): **>12 months** (Nova Ltd.).<br>• Packaging inspection side-by-side on-site competitive evaluation: **~6 months** baseline, longer for new products/customers (Camtek).<br>• New-platform reticle qualification (`TeraBeam 8xx` at TSMC): **~60 months** (Q2 CY2021 shipment to 2026 release).<br>• Current KLA tool delivery lead time: **~12 months** average (>12 months on Gen4/Gen5). | Competitor SEC filings & KLA disclosures; KLA Form 10-K does not publish a single fleet-wide qualification-month figure (N/A in KLA FY26 10-K). | Nova FY25 20-F (2026-02-17) [SEC](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm); Camtek FY25 20-F (2026-03-02); KLA Q4 FY21 Letter (2021-07-29) & Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com); SPIE (2026-04-09) [DOI](https://doi.org/10.1117/12.3111792) |
+| **Fab Requalification Cost ($)** | **N/A** (checked KLA FY2026 Form 10-K, KLA 2026 Investor Day slides/transcript, Nova FY2025 Form 20-F, Camtek FY2025 Form 20-F, SPIE 2024–2026). Yield-risk proxy disclosed by KLA: **1% yield delta = >$150M annual revenue** on a 100,000 WSPM leading-edge fab; EUV single-die reticle cost **$200,000** per mask. | No audited per-tool fab requalification dollar figure reported in primary filings. | Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com) |
+| **Installed Base, Contract Tenure & Asset Life** | **>57,000 tools** across **>4,000 customer facilities**; median time to retirement rose from **4 yrs (2000) → 10 yrs (2010) → >24 yrs (2025)** (>50% of base >18 yrs old; Class of 1995 tools generate >$100M/yr); **>80%** of Services revenue on **>3-yr** subscription contracts; **95%** contract renewal / 2-yr tool revenue recurrence. | KLA Global Services disclosures & FY26 10-K. | Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com) |
+| **Software, Closed-Loop Coupling & Recipe Fleet** | `Klarity` data hub used across **95% of fabs worldwide** (Jun 2024 management statement); cross-tool software linkages (`DualSENS` connecting `39xx`/`29xx` BBP to `eDRX1`, `OptiSens` connecting `Surfscan` to `eDRX1`, `5D Analyzer` connecting `PWG5`/`irArcher`/`Archer` to scanners, `KlearView`/`RDC` bridging reticle and wafer inspections); centralized recipe development servers + autonomous fleet synchronization. | KLA FY26 10-K, 2026 Investor Day, SPIE 2024–2026. | FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); Investor Day (2026-03-12) [KLA IR](https://ir.kla.com); Nasdaq Conf (2024-06-11); SPIE (2024-11-12) [DOI](https://doi.org/10.1117/12.3033686) |
+| **Parts Single-Sourcing & Embedded Engineering** | **>260,000** spare parts/assemblies globally; single BBP division spans **>30 models × 5 configs (150 configs)**, **>1,200** unique FRUs (many sole-sourced, incl. 300 kg CaF2 catadioptric lens from 1 supplier globally), and **>25,000 specs**; **1,600–1,700** applications engineers + **>3,500** field service engineers (**>5,000** Services staff; >8 yrs avg tenure; **9–18 months** training per tool). | KLA Services Update (Nov 2025), 2026 Investor Day, Q4 FY26 Call. | Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) & [KLA IR](https://ir.kla.com); Q4 FY26 Call (2026-07-28) [KLA IR](https://ir.kla.com) |
+
+- **Reticle actinic gap (as of Mar–Apr 2026):** KLA's `Actinic 7xx` remains in Early Demo Stage [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); KLA addresses N2 EUV masks via DUV (`Teron SL670e XP2`), wafer print check (`Gen5 Agera`), and 12×12 multi-column e-beam (`TeraBeam 8xx`, TSMC N2 HVM) [DOI](https://doi.org/10.1117/12.3111792), while Lasertec `ACTIS` remains the sole commercial 13.5 nm actinic HVM system (Oct 31, 2025).
+- **Hybrid-bonding buried-void blind spot (as of Apr–Aug 2026):** KLA supplies pre-bond defect/recess inspection, wafer-shape interferometry (`PWG5 3D`), and post-bond IR overlay (`irArcher 007`) [DOI](https://doi.org/10.4071/001c.171430), with zero post-bond buried-void acoustic/PLA tool in its FY26 10-K portfolio [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); Samsung co-published sub-5 μm pitch buried-void PLA (1 μm detection under 665 μm Si) with Onto Innovation (Apr 8, 2026) [DOI](https://doi.org/10.1117/12.3095356).
+- **AI monetization structure (as of FY26–Q1 FY27):** Because >80% of KLA's $3.1B FY26 Services revenue ($850M Q1 FY27, +14% YoY) is multi-year fixed subscription contracts rather than hourly billing, AI recipe/maintenance automation lowers KLA's internal service delivery cost while KLA expands applications/service headcount and raises Services CAGR guidance to 13%–15% [KLA IR](https://ir.kla.com) & [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm).
+- **Supply constraint & backlog (as of Q1 FY27):** Optical-component bottlenecks kept Gen4/Gen5 lead times beyond 12 months and drove backlog from $7.86B (Jun 30, 2025) to $12.57B (Jun 30, 2026), with DRAM memory pricing pressuring tool image-processing compute costs into H2 CY2027 [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm); Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com).
+
+## [3] USER
+
+PAUSE KLA AFTER STEP 1 (keep its technical baseline locked for cross-checking).
+SWITCH TO TARGET #2: Onto Innovation Inc. (ONTO) | Sector: Semiconductor Metrology, Inspection & Test.
+Keep all permanent Global Chat Rules (Silent Intelligence only, raw dated facts, direct primary URLs, explicit "N/A (checked [source])" where unverified).
+
+RUN STEP 1 — PRODUCTS, PHYSICS & SWITCHING COSTS (CROSS-CHECK AGAINST KLA):
+1. Commercial Footprint (HVM vs. Pilot/Lab): Exact tools shipping in volume today for CoWoS/2.5D packaging, HBM4 (TCB & hybrid bonding), 2nm/GAA OCD, backside power, and panel-level packaging (`Dragonfly`, `Atlas`, `Iris`, `Echo`/PLA, `JetStep`, `Discover` software) vs. pilot/qualification stage. List past 3-year roadmap milestones met vs. missed.
+2. Physics & AI Audit: Verified fab capability vs. vendor claims on: (a) Picosecond Laser Acoustics (PLA / `Echo`) for buried hybrid-bond voids (building on the Apr 2026 Samsung+Onto SPIE paper) vs. SAM, X-ray, IR, and KLA's pre-bond approach — including throughput, pitch, and material limits; (b) `Atlas` OCD + AI/ML modeling reliance on customer-held SEM/TEM reference data; (c) whether AI recipe/defect-classification automation (`Discover`/AI-Diffract) expands Onto's software pricing power or exposes standalone software/app-engineering to foundry in-house AI consolidation.
+3. Switching Costs (Factual Steelman): Documented qualification cycles (months), installed base lock-in, and where Onto's switching costs are structurally stronger or weaker than KLA's.
+
+Tables + max 4 dry bullets.
+
+## [4] MODEL
+
+### 1A. Commercial Footprint: Volume (HVM) vs. Pilot / Qualification / Lab Stage (as of Nov 2026)
+
+| Application | Volume Production (HVM) Tools | Pilot / Qualification / Lab Stage Tools | Cross-Check vs. KLA Baseline | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- | :--- |
+| **CoWoS / 2.5D Packaging** | `Dragonfly G3` (2D/3D inspection, ~800 nm limit); `Dragonfly G5` (150 nm sensitivity, <200 nm production floor, 3×–5× throughput vs. G3, qualified Apr 16, 2026 at 2.5D logic customer, shipping to >10 customers by Q3 2026, 2027 POs = 2× 2026 G5 revenue); `3Di` coherent-laser 3D bump metrology (<6 μm bump height; >2× FY25 revenue through Q3 2026; >$200M OSAT Dragonfly orders Q2 2026); `Iris` films; `Discover` / `TrueADC`. | `Dragonfly G5` front-end wafer inspection evaluations (progressing in Q3 2026; zero 2026 revenue expected; close targeted 2027); >15 new `Dragonfly G5` application studies across >10 customers. | KLA ships `Kronos 1190` / `CIRCL-AP` / `Puma` / `Voyager` / Gen4 `29xx` (~100 nm logic sensitivity) for $1.1B+ CY26E AP PC systems; Onto Q3 2026 AP+Specialty >$205M (>50% of $409.7M total), AP >80% YoY in CY26 (50/50 split 2.5D logic & HBM). | Q3 2026 8-K Ex-99.1 (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm) & Q3 Call (2026-11-09) [ONTO IR](https://investors.ontoinnovation.com); Q1 2026 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com); KLA Q1 FY27 Call (2026-10-28) |
+| **HBM4 (TCB & Hybrid Bonding)** | TCB 2D/3D inspection & bump metrology: `Dragonfly G3`, `Dragonfly G5` (double-digit HBM4 order commitments Mar 16, 2026; >$240M HBM VPA through 2027), `3Di` (qualified at 2 HBM customers Q3 2025, pre-reflow bump step <5 μm HVM), sub-surface IR defect inspection (>20 `Dragonfly` systems shipped Q2 2025); DRAM front-end: `Atlas G6`, `Iris G2`, `IMPULSE V`. | `EchoScan` PLA buried void detection (1 μm spec; announced Jan 14, 2025; first shipment planned Q1 2025; HVM qualification status & HBM hybrid-bonding volume orders: **N/A**, checked FY25 10-K, Q1–Q3 2026 calls; CEO May 5, 2026 stated *"if it reaches its full potential"*); `Dragonfly G5` hybrid-bonding wafer studies (Q3 2025–2026); `Atlas` + Rigaku `CD-SAXS` hybrid metrology (2 customer selections, R&D/early ramp). | KLA IMAPS (2026-08-11) places HBM 8H–16H on TCB and HBM hybrid bonding at 16H/20H future roadmap [DOI](https://doi.org/10.4071/001c.171430); KLA lacks a post-bond buried-void PLA/SAM tool (`N/A`, KLA FY26 10-K). | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2025 & Q1–Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com); Rigaku 8-K Ex-99.1 (2026-04-20) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526164529/d75499dex991.htm) |
+| **2nm / GAA OCD & Front-End Metrology** | `Atlas G6` (launched Sep 9, 2025; in-die OCD with reduced spot size; selected by 2nd logic GAA customer Q1 2026; drove $135M Q3 2026 Advanced Nodes revenue, 60% memory / 40% logic); `Atlas V`; `Iris G2` (DUV SE + laser ellipsometry for 10Å–50Å films); `IMPULSE V` (integrated CMP/etch metrology); `NovusEdge` (EUV wafer backside/edge); `Element` (FTIR epi); Semilab lines (`FAaST`, `CnCV`, `MBIR`); `Ai Diffract` / `SpectraProbe` / `AiGen X`. | `Ai Diffract` integrated with Rigaku `CD-SAXS` X-ray platforms (2 customer selections by Apr 2026; combined optical/X-ray hybrid metrology positioned 2+ years out for N+2/1nm HVM); `Atlas` TSV metrology win (initial shipments H2 2026). | KLA ships `SpectraShape 11k`/`12k`, `Aleris 8510`, `Axion` CD-SAXS, `Archer 800`, and `39xx`/`29xx` BBP; Onto lacks BBP wafer inspection, overlay (`Archer`), and EUV reticle inspection (`TeraBeam`/`Teron`). | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com); Rigaku 8-K Ex-99.1 (2026-04-20) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526164529/d75499dex991.htm) |
+| **Backside Power (BS-PDN)** | BS-PDN-specific HVM tool shipments: **N/A** (checked Onto FY25 10-K, Q3 2026 10-Q, Q1–Q3 2026 earnings calls, SPIE 2024–2026). General front-end tools (`Atlas G6`, `Iris G2`, `Echo` 50Å–35 μm metal thickness, `NovusEdge` backside inspection) address standard wafer/metal layers. | BS-PDN-specific wafer-bonding overlay or buried power-rail qualification disclosures: **N/A** (checked Onto FY25 10-K, Q1–Q3 2026 calls, SPIE 2024–2026). | KLA demonstrated WxW BS-PDN overlay prediction (`PWG5 XT` + `Archer 750` + `5D Analyzer`) with imec (4.0–4.5 nm 3σ POR) at SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3089964). | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2026 10-Q (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm) |
+| **Panel-Level Packaging (PLP)** | `JetStep X500` & `JetStep S3500` steppers (up to 650×650 mm panels, 59.4×59.4 mm field, 2/2 L/S to 1/1 L/S option, `StepFAST`); `Firefly G3` / `Firefly G5` panel inspection (`Clearfind` + IR imaging) + `Discover`. Panel revenue on track to double in CY26; backlog supports >40% growth in CY27 with orders into 2028. | 1 μm glass-core panel R&D at Wilmington Packaging Applications Center of Excellence (PACE, opened Sep 2024); 2 AI-supplier `JetStep` qualifications (Q1 2026) targeting 2027 production ramp (~$200M multi-year addressable pool cited May 2026). | KLA does not sell panel lithography steppers (KLA FY26 10-K [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm)); Onto faces PLP lithography entrants (LG Electronics 1.5 μm LDI OSAT order Aug 2026; Nikon DSP-100; Canon; ASML 2025 packaging scanner). | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com) |
+
+### 1B. Past 3-Year Roadmap Milestones: Met vs. Missed (Nov 2023 – Nov 2026)
+
+| Milestone / Program | Target / Prior Commitment | Status | Verified Actual + Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **2023 Analyst Day Operating Model** | $1.0B model: 56%–57% non-GAAP GM, 31%–32% OM; $1.4B model: 58%–59% GM, 35%–36% OM (Jun 6, 2023). | **MISSED (FY25); PARTIAL (FY26)** | FY25 revenue $1.005B (+1.8% YoY), GAAP GM 49.7% (down from 52.2% FY24), Q4 2025 non-GAAP GM 54.6% / OM 25.2% (missed $1B model). FY26E $1.485B mid: Q3 2026 non-GAAP GM 57.6% / OM 32.6%; Q4 guide 57.7%–58.3% GM / 33.5%–34.5% OM (below 35%–36% $1.4B OM target). Analyst Day (2023-06-06) [ONTO IR](https://investors.ontoinnovation.com); FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2026 8-K (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm) |
+| **2.5D AI Packaging Inspection Continuity (`Dragonfly G3` → `G5`)** | Sustain 2.5D inspection share through 2025 resolution tightening below 800 nm. | **MISSED (2025) → RECOVERED (2026)** | FY25 Systems & Software revenue declined $2.6M YoY due to reduced AI advanced-packaging inspection unit shipments (`Dragonfly G3` ~800 nm limit); Q3 2025 total revenue fell 13.5% YoY to $218.2M. `Dragonfly G5` (<200 nm / 150 nm spec) launched Mar 16, 2026, qualified Apr 16, 2026, reached >10 customers by Q3 2026. FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com) |
+| **`Atlas G6` GAA OCD & Advanced Nodes Expansion** | Outpace WFE via GAA OCD & films penetration (`Atlas`, `Iris G2`). | **MET** | Advanced Nodes revenue more than doubled from $148.5M (FY24) to $308M (FY25), reached $135M in Q3 2026 (+35%+ CY26E); `Atlas G6` launched Sep 9, 2025 and selected by 2nd logic GAA customer Q1 2026. Q3 2025, Q4 2025 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com) |
+| **`3Di` Coherent-Laser Bump Metrology** | Qualify sub-5 μm HVM bump metrology for HBM4 & 2.5D logic (announced Jan 14, 2025). | **MET** | Qualified at 2 HBM customers in Q3 2025; YTD Q3 2026 revenue >2× FY25 total; Q4 2026 expected to exceed Q1–Q3 2026 combined. Q3 2025 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com) |
+| **`EchoScan` Hybrid-Bond Void Inspection** | Ship first `EchoScan` system in Q1 2025 with additional 2025 shipments for HVM 1 μm void detection (Jan 14, 2025). | **UNVERIFIED / NO HVM VOLUME** | No HVM customer qualification or revenue disclosed across FY25 10-K or Q1–Q3 2026 earnings releases/calls (`N/A`); CEO May 5, 2026 described speed upside conditionally (*"if it reaches its full potential"*); SPIE Apr 2026 paper with Samsung remains proof-of-concept raster imaging. Press Release (2025-01-14) & Q1 2026 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com); SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3095356) |
+| **Semilab Materials Analysis Acquisition** | Acquire 4 Semilab USA product lines (`FAaST`, `CnCV`, `MBIR`, `EIR`) for ~$545M, adding >$130M annual revenue (Jun 30, 2025). | **PARTIALLY MET (CARVED OUT)** | U.S. DOJ issued Second Request Sep 25, 2025; Oct 9, 2025 amendment excluded `EIR` FTIR business (~$13M / 10% of Semilab rev) and cut consideration to $432.3M cash + 641,771 shares ($526.6M acquisition-date fair value incl. debt extinguishment; closed Nov 17, 2025); Q1 2026 Semilab revenue was $25M (~$100M run-rate). FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1 2026 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com) |
+| **X-Ray Metrology Entry (Rigaku Stake)** | Address optical penetration limits in 3D/exotic-material stacks. | **MET (MINORITY STAKE)** | Closed 27% equity purchase (61.12M shares) in Rigaku Holdings Corp. Aug 10, 2026 for JPY 113.08B ($719.5M cash; funded via May 2026 0.00% 2031 convertible notes, $1.47B net proceeds); recorded $40.8M Q3 2026 GAAP mark-to-market loss; 2 joint `Ai Diffract` + `CD-SAXS` selections. Q3 2026 10-Q (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm) |
+| **Legacy Lithography Inventory & Offshore Factory Shift** | Exit legacy lithography inventory (2024) and mitigate 2025 tariffs (~100 bps GM drag). | **MET (EXITED / SHIFTED)** | Recorded 2024 inventory write-downs on exited lithography inventory ($19.2M FY24 & $26.5M FY25 total inventory provisions); shifted >30% of Q3 2025 shipments to Asia extended factories (targeting >60% capability end-2026), lifting non-GAAP GM +300 bps YTD through Q3 2026 without lead-time extensions (vs. KLA >12-month optical bottlenecks). FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2025 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com) |
+
+### 2. Physics & AI Audit: Vendor Claim vs. Verified Fab Capability
+
+| Audit Domain | Onto Vendor Claim | Verified Fab Capability / Physical & Operational Limit | Cross-Check vs. KLA & Alternatives | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- | :--- |
+| **(a) Picosecond Laser Acoustics (PLA / `Echo` / `EchoScan`) for Buried Hybrid-Bond Voids** | `EchoScan` provides non-contact, immersion-free HVM detection of 1 μm buried voids in Cu-Cu and dielectric hybrid bonds "at the same speed as incumbent technologies limited to ~10 μm" (Jan 14, 2025). `Echo` measures 50Å–35 μm metal films. | Samsung + Onto SPIE paper (Apr 8, 2026) verified **1 μm void imaging under 665 μm Si** using 1030 nm femtosecond pump (partially transmits through Si) + 1064 nm probe in ASOPS point-by-point **2D raster scans** with PCA.<br>**Material limit:** On dielectric-dielectric interfaces under thick Si, **zero acoustic waves are launched** due to lack of an absorbing metal layer; void imaging relies instead on thermal background decay (thermoreflectance).<br>**Throughput limit:** Fixed-delay phase-locked mode expedites imaging only when acoustic echo arrival time is known in advance; exact WPH throughput, die-scan time, and attenuation across multi-tier (>1 die) HBM stacks: **N/A** (not disclosed in SPIE `10.1117/12.3095356` or Onto SEC filings). | • **SAM:** Limited to ≥10 μm void sensitivity and requires water immersion (contamination/delamination risk).<br>• **IR / X-ray:** Blocked by opaque metal layers (IR) or low air-gap contrast/speed (X-ray).<br>• **KLA:** Zero post-bond buried-void tool (`N/A`, KLA FY26 10-K); relies on pre-bond surface defect/recess inspection (`Kronos`/`Voyager`/`29xx`/`SpectraShape`) + wafer shape (`PWG5 3D`) + IR overlay (`irArcher 007`) + external SAM. | SPIE (2026-04-08) [DOI](https://doi.org/10.1117/12.3095356); Press Release (2025-01-14) & Q1 2026 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com); KLA IMAPS (2026-08-11) [DOI](https://doi.org/10.4071/001c.171430) |
+| **(b) `Atlas` OCD + `Ai Diffract` / `SpectraProbe` Reliance on Customer SEM/TEM Reference Data** | `Atlas G6` + `Ai Diffract` (RCWA + model-guided ML) and `SpectraProbe` (model-less ML) measure in-die 2nm/GAA nanosheets, DRAM cells, and 3D NAND HAR structures while "minimizing or eliminating the need for and cost of new TEM data." | Peer-reviewed Onto + Rigaku + TEL + UAlbany studies on 4-layer and 8-layer Si/SiGe GAA nanowire test structures (`Atlas III+`/`Atlas V` + `Ai Diffract` RCWA) and mid-IR OCD (`Aspect`) confirm:<br>(1) Every model calibration and accuracy validation still relied on **customer/lab destructive FIB-prepared lamellae imaged by HAADF-STEM / FEI Titan TEM** or cross-sectional SEM (achieving ~0.7–1.0 nm matching to STEM/TEM and $R^2 > 0.97$ vs. X-SEM on DTI).<br>(2) Single-technique optical scatterometry suffers parameter correlation across film thickness, Ge%, and interfacial curvature, requiring hybrid feed-forward from HR-XRD/XRF (hence Onto's $719.5M Rigaku X-ray alliance).<br>(3) Reference TEM/STEM/electrical DOE wafers remain held inside customer fabs (verbatim MSA ownership clause: **N/A**, checked FY25 10-K & SPIE 2024–2026). | Identical physics boundary to KLA `SpectraShape 11k` (Micron+KLA SPIE Apr 2026 ML trained on electrical/SEM/TEM DOEs) and KLA `Axion` CD-SAXS (Lam+KLA SPIE Apr 2026 unitless output requiring destructive delayering + Hitachi CD-SEM calibration). | J. Appl. Phys. (2025-10-28) [DOI](https://doi.org/10.1063/5.0285160); SPIE JM3 (2024-11-06) [DOI](https://doi.org/10.1117/1.JMM.23.4.044004); J. Appl. Phys. (2026-02-21) [DOI](https://doi.org/10.1063/5.0310009); Q1 2026 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com) |
+| **(c) AI Software Monetization (`Discover` / `TrueADC` / `Ai Diffract`) vs. Foundry In-House Consolidation** | `Discover` YMS, `TrueADC` (CNN/DNN/KNN multi-engine + `In-line ADC+` achieving up to 95% nuisance defect reduction in HVM), and `Ai Diffract` connect Onto and third-party tools for enterprise yield control; `Ai Diffract` licenses to Rigaku CD-SAXS at ~100% margin. | **Financial reality:** Onto FY25 10-K bundles software inside "Systems and software" ($847.8M / 84% of rev); standalone software licenses are recognized upfront at point-in-time (not recurring SaaS); total over-time recurring revenue (service + software maintenance) was **$69.7M (6.9% of FY25 rev)**; combined Software & Services grew from $51M (23% of rev, Q3 2025) to **$60M (14.6% of rev, Q3 2026)** — shrinking as a % of revenue during hardware ramps.<br>**Consolidation exposure:** Onto's SPIE Apr 2024 paper confirms rival AOI vendors block inline access (`"access to the AOI system is invalid or forbidden"`), restricting `TrueADC` on non-Onto tools to offline CNN classification via KLA's `KLARF` format. Onto's May 2026 SPIE paper pivots to **tool-centric `In-line ADC+`** embedded on Onto AOI hardware rather than replacing fab-wide review. Standalone `Discover` dollar revenue & AI effect on billable app-engineering hours: **N/A** (checked FY25 10-K, Q3 2026 10-Q, Q1–Q3 2026 calls). | KLA `Klarity` sits in **95% of fabs worldwide** (KLA Jun 2024), and KLA captures >80% of its $3.1B Services revenue (~18.4% of total revenue) via >3-yr fixed subscriptions vs. Onto's 6.9% over-time revenue; Tier-1 fabs also run on-premise in-house big-data AI platforms (SPIE Apr 10, 2026 [DOI](https://doi.org/10.1117/12.3090575)). Onto's clearest standalone AI monetization expansion is licensing `Ai Diffract` onto Rigaku's X-ray hardware (2 wins by May 2026). | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2026 Call (2026-11-09) & Q1 2026 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com); SPIE (2024-04-09) [DOI](https://doi.org/10.1117/12.3000815); SPIE (2026-05-28) [DOI](https://doi.org/10.1117/12.3104197) |
+
+### 3. Switching Costs (Factual Steelman — Cross-Checked Against KLA)
+
+| Switching-Cost Factor | Onto Innovation Verified Metric / Mechanism | KLA Locked Baseline (Step 1) | Structural Delta (Factual Comparison) | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- | :--- |
+| **Qualification Cycle (Months)** | • Initial tool purchase to repeat volume orders: **3 to 12+ months** (FY25 10-K Item 1A).<br>• `Dragonfly G5` 2.5D packaging qual: ~4–5 months (eval shipments Q4 2025 → qual Apr 16, 2026).<br>• `Dragonfly G5` front-end wafer evals: multi-quarter (ongoing Q2–Q3 2026 → targeted 2027 close).<br>• `3Di` HBM qual: ~9 months (Jan 2025 release → Q3 2025 2-customer qual). | • Peer metrology new-app/customer cycle: **>12 months** (Nova FY25 20-F).<br>• Packaging on-site side-by-side eval: **~6 months** (Camtek FY25 20-F).<br>• `TeraBeam 8xx` EUV reticle qual at TSMC: **~60 months** (Q2 2021 → 2026). | Shorter re-qualification cycle in back-end 2.5D/HBM packaging enabled customer shift away from Onto `Dragonfly G3` in FY25 ($2.6M Systems/Software drop) and shift back to `Dragonfly G5` in 2026. | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2025, Q1 & Q3 2026 Calls [ONTO IR](https://investors.ontoinnovation.com) |
+| **Installed Base & Service Contract Lock-In** | • **>10,000** active tools installed (Apr 2026 CFO deck).<br>• **~800 tools under service contract** (~8% of installed base, Jun 2023 Analyst Day; updated contract count: **N/A** in FY25 10-K / Apr 2026 deck); >95% contract renewal, 90% software renewal.<br>• FY25 Services = **$73.2M (8% of rev)**; Parts = **$84.2M (8%)**; total **Over-Time recurring revenue = $69.7M (6.9% of total rev)**.<br>• Total headcount: **1,615** (end-FY25) / **~1,700** (Apr 2026). | • **>57,000** installed tools at >4,000 sites; median retirement **>24 years** (>50% >18 yrs).<br>• FY26 Services = **~$3.1B (23% of rev)**, of which **>80%** (~18.4% of total rev) is >3-year fixed subscription contracts; 95% renewal.<br>• **>5,000 Services staff** (>3,500 FSEs, 9–18 mo training) + **1,600–1,700** apps engineers alone. | KLA installed base is **>5.7×** Onto's; KLA recurring subscription share of total revenue (~18.4%) is **~2.7×** Onto's over-time revenue share (6.9%); KLA's Services staff alone is **>3×** Onto's entire workforce. | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Analyst Day (2023-06-06) [ONTO IR](https://investors.ontoinnovation.com); KLA Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) |
+| **Customer Concentration & Tool Coupling** | • **Top 3 customers = 49% of FY25 revenue** (52% FY24): Customer A 20%, Customer B 15%, Customer C 14% (>190 customers total FY25 vs. >240 FY24; XBRL tags name TSMC, Samsung, SK hynix).<br>• Tool-pair linkages: `Firefly` + `StepFAST` + `JetStep X500` (panel lithography cell); `Dragonfly` + `3Di` + `Discover`/`TrueADC`; `Atlas G6` + `Ai Diffract` + Rigaku `CD-SAXS` (early stage); `IMPULSE V` integrated on third-party CMP/etch tools. | • Cross-fab ecosystem across >4,000 sites; `Klarity` data hub in **95% of fabs**; closed-loop `DualSENS` (BBP→`eDRX1`), `OptiSens` (`Surfscan`→`eDRX1`), `5D Analyzer` (`PWG5`/`Archer`→scanners), `KlearView` (reticle→wafer).<br>• >260,000 unique spare parts; sole-sourced 300 kg CaF2 BBP optics. | **Stronger for Onto:** Niche sole/dual-source cells where KLA does not compete — `Firefly`/`StepFAST`/`JetStep` panel lithography cell, `Echo` picosecond ultrasonics, Semilab `FAaST`/`CnCV` non-contact corona-Kelvin electrical metrology, and `3Di` pre-reflow coherent-laser bump metrology.<br>**Weaker for Onto:** Higher customer concentration (top 3 = 49%), narrower front-end tool adjacency (no BBP, overlay, e-beam, or reticle), and lower enterprise YMS penetration (`Discover` vs. `Klarity`). | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2025 & Q1 2026 Calls [ONTO IR](https://investors.ontoinnovation.com); KLA FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm) |
+| **Fab Requalification Cost ($)** | **N/A** (checked Onto FY25 10-K, Q3 2026 10-Q, 2023 Analyst Day, Q1–Q3 2026 calls). | **N/A** (checked KLA FY26 10-K, 2026 Investor Day; yield-risk proxy >$150M/yr per 1% yield loss on 100k WSPM fab). | Neither company discloses audited per-tool fab requalification costs. | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); KLA Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf) |
+
+- **PLA buried-void physics vs. HVM readiness (Apr–Nov 2026):** Samsung + Onto verified 1 μm buried void imaging beneath 665 μm Si via 1030/1064 nm ASOPS raster scanning, proving metal-metal interfaces launch acoustic echoes while dielectric-dielectric interfaces launch zero acoustics and rely on thermal background decay (SPIE 2026-04-08) [DOI](https://doi.org/10.1117/12.3095356); WPH throughput and `EchoScan` HVM qualification remain undisclosed (`N/A`, checked FY25 10-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm) & Q1–Q3 2026 calls [ONTO IR](https://investors.ontoinnovation.com)).
+- **GAA OCD reference-data dependency & Rigaku X-ray patch (Oct 2025 – Aug 2026):** Onto's peer-reviewed GAA nanowire `Atlas` + `Ai Diffract` studies still calibrated against destructive FIB-STEM/TEM lamellae and required hybrid XRD/XRF feed-forward (J. Appl. Phys. 2025-10-28) [DOI](https://doi.org/10.1063/5.0285160), directly preceding Onto's $719.5M purchase of a 27% stake in Rigaku (closed Aug 10, 2026) to pair `Ai Diffract` with Rigaku `CD-SAXS` [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm).
+- **Packaging switching-cost elasticity vs. KLA (FY25–Q3 2026):** Onto's FY25 Systems & Software revenue fell $2.6M YoY after `Dragonfly G3` (~800 nm limit) lost 2.5D inspection share, then reversed with `Dragonfly G5` (<200 nm / 150 nm spec, >10 customers, >$1.3B Q3 2026 total backlog) — demonstrating shorter qualification cycles (3–12+ months) and lower recurring service buffer (6.9% over-time revenue vs. KLA's ~18.4% multi-year subscription share) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q3 2026 8-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm).
+- **Software revenue mix & fab consolidation boundary (FY25–Q3 2026):** Onto's Software & Services fell from 23% of revenue ($51M, Q3 2025) to 14.6% ($60M, Q3 2026), standalone licenses recognize upfront at point-in-time, and rival AOI vendors block inline `TrueADC` integration (`KLARF` offline only, SPIE 2024-04-09 [DOI](https://doi.org/10.1117/12.3000815)), leaving Onto's incremental AI software upside anchored in tool-centric `In-line ADC+` [DOI](https://doi.org/10.1117/12.3104197) and `Ai Diffract` licensing onto Rigaku X-ray systems [ONTO IR](https://investors.ontoinnovation.com).
+
+## [5] USER
+
+TARGET #2 (ONTO) — RUN STEP 2: P&L, PRICING MODEL & VALUE-CHAIN RENT.
+Pull exact numbers for the last 4 reported quarters + latest FY (no estimates):
+1. Revenue Mix: Exact breakdown by end-market (Specialty Devices & Advanced Packaging, Advanced Nodes, Software & Services) and Systems vs. Recurring Services/Software split.
+2. Core P&L & Leverage: Revenue, YoY%, GAAP & Non-GAAP GM%, R&D% of rev, GAAP & Non-GAAP Op Margin, Incremental Operating Margin (YoY), and FCF.
+3. Pricing & Rent Capture: Contract structure of Services & Software (multi-year subscription vs. time & materials / seat / per-tool license — contrast directly with KLA's >80% multi-year fixed contracts); packaging process-control intensity trend; gross margin gap vs. KLA and Camtek.
+
+Dense tables only + direct URLs.
+
+## [6] MODEL
+
+[executableCode]
+```python
+import pandas as pd
+
+# All Onto figures in $ thousands, directly from SEC filings
+data = {
+    'FY2025': {
+        'rev': 1005263, 'rev_py': 987321,
+        'gp_g': 499770, 'gp_g_py': 515308,
+        'gp_ng': 548685, 'gp_ng_py': 529466,
+        'rd_g': 131978, 'rd_g_py': 113859,
+        'op_g': 132927, 'op_g_py': 187103,
+        'op_ng': 255327, 'op_ng_py': 267296, # Note: recon table had 267,297 vs summary 267,296 (rounding $1k)
+        'ocf': 328315, 'capex': 28513,
+        'sys_sw': 847835, 'parts': 84200, 'svc': 73228,
+        'pit': 935580, 'ot': 69683,
+    },
+    'Q4 2025': {
+        'rev': 266866, 'rev_py': 263939,
+        'gp_g': 123792, 'gp_g_py': 132408,
+        'gp_ng': 145577, 'gp_ng_py': 143886,
+        'rd_g': 36163, 'rd_g_py': 31985,
+        'op_g': 13858, 'op_g_py': 42460,
+        'op_ng': 67160, 'op_ng_py': 75468,
+        'ocf': 328315 - 233319, 'capex': 28513 - 23384,
+        'sys_sw': 847835 - 619451, 'parts': 84200 - 61955, 'svc': 73228 - 56991,
+        'pit': 935580 - 686524, 'ot': 69683 - 51873,
+    },
+    'Q1 2026': {
+        'rev': 291949, 'rev_py': 266607,
+        'gp_g': 146389, 'gp_g_py': 143233,
+        'gp_ng': 162724, 'gp_ng_py': 146868,
+        'rd_g': 35098, 'rd_g_py': 28030,
+        'op_g': 33514, 'op_g_py': 63134,
+        'op_ng': 77873, 'op_ng_py': 76495,
+        'ocf': 26322, 'capex': 3585,
+        'sys_sw': 247157, 'parts': 55263 - 28713, 'svc': 18242,
+        'pit': 271579, 'ot': 20370,
+    },
+    'Q2 2026': {
+        'rev': 343129, 'rev_py': 253597,
+        'gp_g': 183254, 'gp_g_py': 122122,
+        'gp_ng': 195512, 'gp_ng_py': 138313,
+        'rd_g': 38879, 'rd_g_py': 35292,
+        'op_g': 63550, 'op_g_py': 32247,
+        'op_ng': 102820, 'op_ng_py': 65615,
+        'ocf': 87829 - 26322, 'capex': 7242 - 3585,
+        'sys_sw': 294040, 'parts': 28713, 'svc': 20376,
+        'pit': 322489, 'ot': 343129 - 322489,
+    },
+    'Q3 2026': {
+        'rev': 409748, 'rev_py': 218193,
+        'gp_g': 224482, 'gp_g_py': 110623,
+        'gp_ng': 236002, 'gp_ng_py': 117926,
+        'rd_g': 45068, 'rd_g_py': 32493,
+        'op_g': 95449, 'op_g_py': 23688,
+        'op_ng': 133454, 'op_ng_py': 46057,
+        'ocf': 166579 - 87829, 'capex': 8803 - 7242,
+        'sys_sw': 358316, 'parts': 28465, 'svc': 22967,
+        'pit': 387237, 'ot': 22511,
+    }
+}
+
+# Verify internal sums!
+for p, d in data.items():
+    assert d['sys_sw'] + d['parts'] + d['svc'] == d['rev'], f"Sum mismatch {p}"
+    assert d['pit'] + d['ot'] == d['rev'], f"Timing mismatch {p}"
+    yoy = (d['rev'] / d['rev_py'] - 1) * 100
+    gm_g = d['gp_g'] / d['rev'] * 100
+    gm_ng = d['gp_ng'] / d['rev'] * 100
+    rd_pct = d['rd_g'] / d['rev'] * 100
+    opm_g = d['op_g'] / d['rev'] * 100
+    opm_ng = d['op_ng'] / d['rev'] * 100
+    d_rev = d['rev'] - d['rev_py']
+    inc_opm_g = (d['op_g'] - d['op_g_py']) / d_rev * 100
+    inc_opm_ng = (d['op_ng'] - d['op_ng_py']) / d_rev * 100
+    fcf = d['ocf'] - d['capex']
+    fcf_m = fcf / d['rev'] * 100
+    print(f"{p:7s} | Rev={d['rev']/1000:7.2f}M | YoY={yoy:+6.1f}% | GM_G={gm_g:5.1f}% | GM_NG={gm_ng:5.1f}% | R&D%={rd_pct:4.1f}% | OpM_G={opm_g:5.1f}% | OpM_NG={opm_ng:5.1f}% | IncOpM_G={inc_opm_g:+7.1f}% | IncOpM_NG={inc_opm_ng:+7.1f}% | OCF={d['ocf']/1000:5.1f}M | CapEx={d['capex']/1000:4.1f}M | FCF={fcf/1000:5.1f}M ({fcf_m:4.1f}%)")
+    print(f"        | Sys&SW={d['sys_sw']/1000:6.1f}M ({d['sys_sw']/d['rev']*100:4.1f}%) | Parts={d['parts']/1000:4.1f}M ({d['parts']/d['rev']*100:4.1f}%) | Svc={d['svc']/1000:4.1f}M ({d['svc']/d['rev']*100:4.1f}%) | PIT={d['pit']/1000:6.1f}M ({d['pit']/d['rev']*100:4.1f}%) | OT={d['ot']/1000:4.1f}M ({d['ot']/d['rev']*100:4.1f}%)")
+
+print("\n--- Verify 9M26 sums ---")
+assert sum(data[q]['sys_sw'] for q in ['Q1 2026','Q2 2026','Q3 2026']) == 899513
+assert sum(data[q]['parts'] for q in ['Q1 2026','Q2 2026','Q3 2026']) == 83728
+assert sum(data[q]['svc'] for q in ['Q1 2026','Q2 2026','Q3 2026']) == 61585
+assert sum(data[q]['pit'] for q in ['Q1 2026','Q2 2026','Q3 2026']) == 981305
+assert sum(data[q]['ot'] for q in ['Q1 2026','Q2 2026','Q3 2026']) == 63521
+print("9M26 reconciliation: 100.000% EXACT!")
+
+print("\n--- KLA & Camtek Gross Margin Gap vs ONTO ---")
+# Calendar-aligned quarters:
+# ONTO Q4 25 (Dec 25) vs KLAC Q2 FY26 (Dec 25) vs CAMT Q4 25 (Dec 25)
+# ONTO Q1 26 (Mar 26) vs KLAC Q3 FY26 (Mar 26) vs CAMT Q1 26 (Mar 26)
+# ONTO Q2 26 (Jun 26) vs KLAC Q4 FY26 (Jun 26) vs CAMT Q2 26 (Jun 26)
+# ONTO Q3 26 (Sep 26) vs KLAC Q1 FY27 (Sep 26) vs CAMT Q3 26 (Sep 26)
+# Latest FY: ONTO FY25 (Jan 3, 2026) vs KLAC FY26 (Jun 30, 2026) vs CAMT FY25 (Dec 31, 2025)
+
+kla = {
+    'FY26': (13579476, 5255060, 38053+38052+37106+36200),
+    'Q2 FY26 (Dec 25)': (3297146, 1271210, 38052),
+    'Q3 FY26 (Mar 26)': (3415078, 1327672, 37106),
+    'Q4 FY26 (Jun 26)': (3657556, 1413108, 36200),
+    'Q1 FY27 (Sep 26)': (4136015, 1577791, 34929),
+}
+for k, (r, c, adj) in kla.items():
+    g = (r - c) / r * 100
+    ng = (r - c + adj) / r * 100
+    print(f"KLA {k:17s} | GAAP GM={g:5.2f}% ({g:4.1f}%) | Non-GAAP GM={ng:5.2f}% ({ng:4.1f}%)")
+
+camt = {
+    'FY25': (50.5, 51.6), # 250317/496072 = 50.46%, 256018/496072 = 51.61%
+    'Q4 25': (50.0, 51.1), # 64100/128124 = 50.03%, 65422/128124 = 51.06%
+    'Q1 26': (50.1, 51.0), # 60900/121700
+    'Q2 26': (50.1, 51.4),
+    'Q3 26': (50.0, 51.1),
+}
+
+pairs = [
+    ('Latest FY (ONTO FY25 / KLAC FY26 / CAMT FY25)', 'FY2025', 'FY26', 'FY25'),
+    ('Dec 2025 Q (ONTO Q4 25 / KLAC Q2 FY26 / CAMT Q4 25)', 'Q4 2025', 'Q2 FY26 (Dec 25)', 'Q4 25'),
+    ('Mar 2026 Q (ONTO Q1 26 / KLAC Q3 FY26 / CAMT Q1 26)', 'Q1 2026', 'Q3 FY26 (Mar 26)', 'Q1 26'),
+    ('Jun 2026 Q (ONTO Q2 26 / KLAC Q4 FY26 / CAMT Q2 26)', 'Q2 2026', 'Q4 FY26 (Jun 26)', 'Q2 26'),
+    ('Sep 2026 Q (ONTO Q3 26 / KLAC Q1 FY27 / CAMT Q3 26)', 'Q3 2026', 'Q1 FY27 (Sep 26)', 'Q3 26'),
+]
+print("\nSpread = ONTO - Peer (bps):")
+for label, ok, kk, ck in pairs:
+    og = data[ok]['gp_g']/data[ok]['rev']*100
+    ong = data[ok]['gp_ng']/data[ok]['rev']*100
+    kr, kc, kadj = kla[kk]
+    kg = (kr-kc)/kr*100
+    kng = (kr-kc+kadj)/kr*100
+    cg, cng = camt[ck]
+    print(f"{label}")
+    print(f"  GAAP:     ONTO {og:4.1f}% | KLA {kg:4.1f}% (gap {round((og-kg)*100):+d} bps) | CAMT {cg:4.1f}% (gap {round((og-cg)*100):+d} bps)")
+    print(f"  Non-GAAP: ONTO {ong:4.1f}% | KLA {kng:4.1f}% (gap {round((ong-kng)*100):+d} bps) | CAMT {cng:4.1f}% (gap {round((ong-cng)*100):+d} bps)")
+
+```
+
+## [7] MODEL
+
+[codeExecutionResult: OUTCOME_OK]
+```
+FY2025  | Rev=1005.26M | YoY=  +1.8% | GM_G= 49.7% | GM_NG= 54.6% | R&D%=13.1% | OpM_G= 13.2% | OpM_NG= 25.4% | IncOpM_G= -302.0% | IncOpM_NG=  -66.7% | OCF=328.3M | CapEx=28.5M | FCF=299.8M (29.8%)
+        | Sys&SW= 847.8M (84.3%) | Parts=84.2M ( 8.4%) | Svc=73.2M ( 7.3%) | PIT= 935.6M (93.1%) | OT=69.7M ( 6.9%)
+Q4 2025 | Rev= 266.87M | YoY=  +1.1% | GM_G= 46.4% | GM_NG= 54.6% | R&D%=13.6% | OpM_G=  5.2% | OpM_NG= 25.2% | IncOpM_G= -977.2% | IncOpM_NG= -283.8% | OCF= 95.0M | CapEx= 5.1M | FCF= 89.9M (33.7%)
+        | Sys&SW= 228.4M (85.6%) | Parts=22.2M ( 8.3%) | Svc=16.2M ( 6.1%) | PIT= 249.1M (93.3%) | OT=17.8M ( 6.7%)
+Q1 2026 | Rev= 291.95M | YoY=  +9.5% | GM_G= 50.1% | GM_NG= 55.7% | R&D%=12.0% | OpM_G= 11.5% | OpM_NG= 26.7% | IncOpM_G= -116.9% | IncOpM_NG=   +5.4% | OCF= 26.3M | CapEx= 3.6M | FCF= 22.7M ( 7.8%)
+        | Sys&SW= 247.2M (84.7%) | Parts=26.6M ( 9.1%) | Svc=18.2M ( 6.2%) | PIT= 271.6M (93.0%) | OT=20.4M ( 7.0%)
+Q2 2026 | Rev= 343.13M | YoY= +35.3% | GM_G= 53.4% | GM_NG= 57.0% | R&D%=11.3% | OpM_G= 18.5% | OpM_NG= 30.0% | IncOpM_G=  +35.0% | IncOpM_NG=  +41.6% | OCF= 61.5M | CapEx= 3.7M | FCF= 57.9M (16.9%)
+        | Sys&SW= 294.0M (85.7%) | Parts=28.7M ( 8.4%) | Svc=20.4M ( 5.9%) | PIT= 322.5M (94.0%) | OT=20.6M ( 6.0%)
+Q3 2026 | Rev= 409.75M | YoY= +87.8% | GM_G= 54.8% | GM_NG= 57.6% | R&D%=11.0% | OpM_G= 23.3% | OpM_NG= 32.6% | IncOpM_G=  +37.5% | IncOpM_NG=  +45.6% | OCF= 78.8M | CapEx= 1.6M | FCF= 77.2M (18.8%)
+        | Sys&SW= 358.3M (87.4%) | Parts=28.5M ( 6.9%) | Svc=23.0M ( 5.6%) | PIT= 387.2M (94.5%) | OT=22.5M ( 5.5%)
+
+--- Verify 9M26 sums ---
+9M26 reconciliation: 100.000% EXACT!
+
+--- KLA & Camtek Gross Margin Gap vs ONTO ---
+KLA FY26              | GAAP GM=61.30% (61.3%) | Non-GAAP GM=62.40% (62.4%)
+KLA Q2 FY26 (Dec 25)  | GAAP GM=61.45% (61.4%) | Non-GAAP GM=62.60% (62.6%)
+KLA Q3 FY26 (Mar 26)  | GAAP GM=61.12% (61.1%) | Non-GAAP GM=62.21% (62.2%)
+KLA Q4 FY26 (Jun 26)  | GAAP GM=61.36% (61.4%) | Non-GAAP GM=62.35% (62.4%)
+KLA Q1 FY27 (Sep 26)  | GAAP GM=61.85% (61.9%) | Non-GAAP GM=62.70% (62.7%)
+
+Spread = ONTO - Peer (bps):
+Latest FY (ONTO FY25 / KLAC FY26 / CAMT FY25)
+  GAAP:     ONTO 49.7% | KLA 61.3% (gap -1159 bps) | CAMT 50.5% (gap -78 bps)
+  Non-GAAP: ONTO 54.6% | KLA 62.4% (gap -782 bps) | CAMT 51.6% (gap +298 bps)
+Dec 2025 Q (ONTO Q4 25 / KLAC Q2 FY26 / CAMT Q4 25)
+  GAAP:     ONTO 46.4% | KLA 61.4% (gap -1506 bps) | CAMT 50.0% (gap -361 bps)
+  Non-GAAP: ONTO 54.6% | KLA 62.6% (gap -805 bps) | CAMT 51.1% (gap +345 bps)
+Mar 2026 Q (ONTO Q1 26 / KLAC Q3 FY26 / CAMT Q1 26)
+  GAAP:     ONTO 50.1% | KLA 61.1% (gap -1098 bps) | CAMT 50.1% (gap +4 bps)
+  Non-GAAP: ONTO 55.7% | KLA 62.2% (gap -647 bps) | CAMT 51.0% (gap +474 bps)
+Jun 2026 Q (ONTO Q2 26 / KLAC Q4 FY26 / CAMT Q2 26)
+  GAAP:     ONTO 53.4% | KLA 61.4% (gap -796 bps) | CAMT 50.1% (gap +331 bps)
+  Non-GAAP: ONTO 57.0% | KLA 62.4% (gap -538 bps) | CAMT 51.4% (gap +558 bps)
+Sep 2026 Q (ONTO Q3 26 / KLAC Q1 FY27 / CAMT Q3 26)
+  GAAP:     ONTO 54.8% | KLA 61.9% (gap -707 bps) | CAMT 50.0% (gap +479 bps)
+  Non-GAAP: ONTO 57.6% | KLA 62.7% (gap -510 bps) | CAMT 51.1% (gap +650 bps)
+
+```
+
+## [8] MODEL
+
+### 1A. Revenue Mix — SEC Financial Statement Disaggregation (Exact $ Millions & % of Revenue)
+
+| Metric | FY2025 (Ended Jan 3, 2026) | Q4 2025* (Ended Jan 3, 2026) | Q1 2026 (Ended Mar 31, 2026) | Q2 2026 (Ended Jun 30, 2026) | Q3 2026 (Ended Sep 30, 2026) | Direct Primary Source + Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Total Revenue** | **$1,005.3** (100.0%) | **$266.9** (100.0%) | **$291.9** (100.0%) | **$343.1** (100.0%) | **$409.7** (100.0%) | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1 26 10-Q (2026-05-05) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm); Q2 26 10-Q (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526338401/onto-20260630.htm); Q3 26 10-Q (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm) |
+| **Systems & Software** | $847.8 (84.3%) | $228.4 (85.6%) | $247.2 (84.7%) | $294.0 (85.7%) | $358.3 (87.4%) | Same filings (Note 8/9 Revenue Disaggregation) |
+| **Parts** | $84.2 (8.4%) | $22.2 (8.3%) | $26.6 (9.1%) | $28.7 (8.4%) | $28.5 (6.9%) | Same filings (Q1 26 derived = 6M26 $55.3M − Q2 26 $28.7M) |
+| **Services** | $73.2 (7.3%) | $16.2 (6.1%) | $18.2 (6.2%) | $20.4 (5.9%) | $23.0 (5.6%) | Same filings |
+| **Systems vs. Parts + Services Split** | 84.3% / 15.7% | 85.6% / 14.4% | 84.7% / 15.3% | 85.7% / 14.3% | 87.4% / 12.6% | Derived from SEC disaggregation above (standalone software bundled inside Systems & Software; standalone software $ N/A in SEC filings) |
+| **Point-in-Time Revenue** | $935.6 (93.1%) | $249.1 (93.3%) | $271.6 (93.0%) | $322.5 (94.0%) | $387.2 (94.5%) | FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1–Q3 26 10-Qs |
+| **Over-Time (Recurring) Revenue** | $69.7 (6.9%) | $17.8 (6.7%) | $20.4 (7.0%) | $20.6 (6.0%) | $22.5 (5.5%) | Same filings (service contracts + software support/maintenance; Q2 26 = $343.1M − $322.5M) |
+
+*Q4 2025 SEC disaggregation = FY2025 Form 10-K (filed 2026-02-24) minus 9M 2025 reported in Q3 2026 Form 10-Q (filed 2026-11-09: Systems & software $619,451k, Parts $61,955k, Services $56,991k; Point-in-time $686,524k, Over-time $51,873k).
+
+### 1B. Revenue Mix — Management End-Market Classification (Earnings Call Disclosures)
+
+| End-Market Category | FY2025 (Ended Jan 3, 2026) | Q4 2025 (Ended Jan 3, 2026) | Q1 2026 (Ended Mar 31, 2026) | Q2 2026 (Ended Jun 30, 2026) | Q3 2026 (Ended Sep 30, 2026) | Direct Primary Source + Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Specialty Devices & Advanced Packaging** | **$504M** (50.1%) | **~$145M** (54.3%; incl. ~$9M Semilab) | **~$160M** (54.8%; ~2/3 AP, $25M Semilab, bal. specialty) | **Nearly 50%** (exact $ N/A; checked Q2 26 Call & 10-Q) | **>50% (~$215M implied; 52.4%)** ("a little over half") | Q4 25 Call (2026-02-19); Q1 26 Call (2026-05-05); Q2 26 Call (2026-08-06); Q3 26 Call (2026-11-09) ([ONTO IR](https://investors.ontoinnovation.com)) |
+| **Advanced Nodes** | **$308M** (30.6%; ~75% DRAM+logic) | **$72M** (27.0%) | **~$80M** (27.4%; 60% memory / 40% logic) | **~$120M** (35.0%; 60% memory / 40% logic) | **~$135M** (32.9%; 60% memory / 40% logic) | Same calls ([ONTO IR](https://investors.ontoinnovation.com)) |
+| **Software & Services*** | **~$193M** implied (19.2%; exact $ N/A) | **~$50M** implied (18.7%; exact $ N/A) | **~$52M** implied (17.8%; "remaining Q1 revenue") | **Remainder** (exact $ N/A; checked Q2 26 Call & 10-Q) | **$60M** (14.6%) | Same calls ([ONTO IR](https://investors.ontoinnovation.com)) |
+| **Semilab USA Contribution (Memo)** | $8.6M rev; $(6.2)M GAAP OpInc (Nov 17–Jan 3) | $8.6M rev; $(6.2)M GAAP OpInc | $27.1M rev; $13.4M GAAP OpInc | $19.0M rev (derived = 9M $68.6M − Q1 $27.1M − Q3 $22.5M) | $22.5M rev; $(2.8)M GAAP OpInc (9M: $68.6M rev; $(11.8)M OpInc) | Q1 26 10-Q Note 2 (2026-05-05) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm); Q3 26 10-Q Note 2 (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm) |
+
+*Management's earnings-call "Software & Services" bucket combines SEC Parts + SEC Services + standalone software licenses (embedded inside SEC Systems & Software); exact standalone software dollar figure N/A (checked FY25 10-K, Q1–Q3 2026 10-Qs, Q4 25–Q3 26 calls).
+
+### 2. Core P&L, Operating Leverage & Free Cash Flow (Exact $ Millions, Except %)
+
+| Metric | FY2025 (Ended Jan 3, 2026) | Q4 2025 (Ended Jan 3, 2026) | Q1 2026 (Ended Mar 31, 2026) | Q2 2026 (Ended Jun 30, 2026) | Q3 2026 (Ended Sep 30, 2026) | Direct Primary Source + Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Revenue** | **$1,005.3** | **$266.9** | **$291.9** | **$343.1** | **$409.7** | Q4 25 8-K (2026-02-19) [ONTO IR](https://investors.ontoinnovation.com); Q1 26 10-Q [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm); Q2 26 10-Q [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526338401/onto-20260630.htm); Q3 26 8-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm) |
+| **Prior-Year Comp Revenue** | $987.3 (FY24) | $263.9 (Q4 24) | $266.6 (Q1 25) | $253.6 (Q2 25) | $218.2 (Q3 25) | Same filings |
+| **Revenue YoY %** | **+1.8%** (+$17.9M) | **+1.1%** (+$2.9M) | **+9.5%** (+$25.3M) | **+35.3%** (+$89.5M) | **+87.8%** (+$191.6M) | Same filings |
+| **GAAP Gross Profit / GM %** | $499.8 / **49.7%** | $123.8 / **46.4%** | $146.4 / **50.1%** | $183.3 / **53.4%** | $224.5 / **54.8%** | Same filings |
+| **Non-GAAP Gross Profit / GM %*** | $548.7 / **54.6%** | $145.6 / **54.6%** | $162.7 / **55.7%** | $195.5 / **57.0%** | $236.0 / **57.6%** | Q4 25, Q1 26, Q2 26, Q3 26 8-K Ex-99.1 ([ONTO IR](https://investors.ontoinnovation.com); Q2 26 8-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526337990/0001193125-26-337990-index.htm); Q3 26 8-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm)) |
+| **R&D Expense / % of Rev (GAAP)†** | $132.0 / **13.1%** | $36.2 / **13.6%** | $35.1 / **12.0%** | $38.9 / **11.3%** | $45.1 / **11.0%** | FY25 10-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1–Q3 26 10-Qs |
+| **GAAP Operating Income / Margin %** | $132.9 / **13.2%** | $13.9 / **5.2%** | $33.5 / **11.5%** | $63.6 / **18.5%** | $95.4 / **23.3%** | Same filings |
+| **Prior-Year GAAP Operating Income** | $187.1 (FY24) | $42.5 (Q4 24) | $63.1 (Q1 25) | $32.2 (Q2 25) | $23.7 (Q3 25) | Same filings |
+| **Non-GAAP Operating Income / Margin %*** | $255.3 / **25.4%** | $67.2 / **25.2%** | $77.9 / **26.7%** | $102.8 / **30.0%** | $133.5 / **32.6%** | Q4 25–Q3 26 8-K Ex-99.1 ([ONTO IR](https://investors.ontoinnovation.com); Q3 26 [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm)) |
+| **Prior-Year Non-GAAP Operating Income** | $267.3 (FY24) | $75.5 (Q4 24) | $76.5 (Q1 25) | $65.6 (Q2 25) | $46.1 (Q3 25) | Same filings |
+| **Incremental Operating Margin YoY (GAAP)** | **−302.0%** (−$54.2M / +$17.9M) | **−977.2%** (−$28.6M / +$2.9M) | **−116.9%** (−$29.6M / +$25.3M) | **+35.0%** (+$31.3M / +$89.5M) | **+37.5%** (+$71.8M / +$191.6M) | Computed from SEC GAAP OpInc & Rev above (`ΔOpInc / ΔRev`) |
+| **Incremental Operating Margin YoY (Non-GAAP)** | **−66.7%** (−$12.0M / +$17.9M) | **−283.8%** (−$8.3M / +$2.9M) | **+5.4%** (+$1.4M / +$25.3M) | **+41.6%** (+$37.2M / +$89.5M) | **+45.6%** (+$87.4M / +$191.6M) | Computed from SEC Non-GAAP OpInc & Rev above (`ΔOpInc / ΔRev`) |
+| **Operating Cash Flow (GAAP)** | **$328.3** | **$95.0** (FY25 − 9M25) | **$26.3** | **$61.5** (6M26 − Q126) | **$78.8** (9M26 − 6M26) | FY25 10-K [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); Q1–Q3 26 10-Qs |
+| **Capital Expenditures (Purchases of PP&E)** | **$28.5** | **$5.1** (FY25 − 9M25) | **$3.6** | **$3.7** (6M26 − Q126) | **$1.6** (9M26 − 6M26) | Same filings (FY25 $28,513k; 9M25 $23,384k; Q126 $3,585k; 6M26 $7,242k; 9M26 $8,803k) |
+| **Free Cash Flow (OCF − CapEx) / FCF %** | **$299.8** (**29.8%**) | **$89.9** (**33.7%**) | **$22.7** (**7.8%**) | **$57.9** (**16.9%**) | **$77.2** (**18.8%**) | Derived from SEC Cash Flow Statements above (Note: Q3 26 call verbally rounded FCF to ~$80M) |
+
+*Onto Non-GAAP excludes amortization of purchased intangibles, M&A expenses (incl. Semilab inventory step-up), and restructuring/other charges (incl. E&O inventory write-downs); Onto does NOT exclude stock-based compensation ($7.0M Q1 26, $10.0M Q2 26, $8.8M Q3 26). †Separate Non-GAAP R&D line: N/A (not separately disaggregated in Onto Form 8-K Ex-99.1 reconciliations).
+
+### 3A. Pricing Model, Contract Structure & Packaging Process-Control Intensity
+
+| Dimension | Onto Innovation (ONTO) | KLA Corporation (KLAC) Baseline | Date + Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **Services Contract Structure** | Product assurance warranty = **12–14 months**; post-warranty Services ($73.2M FY25; $23.0M Q3 26) mix maintenance service contracts, **time-and-materials billable service calls**, service labor, consulting, training, and system upgrades. Contract-vs.-T&M % split: **N/A** (checked FY25 10-K, Q1–Q3 26 10-Qs & calls). Jun 2023 Analyst Day disclosed ~800 tools under service contract out of >10,000 installed (~8%; updated count N/A in FY25 10-K). | **>80%** of Services revenue ($3.13B FY26; $850.5M Q1 FY27) under **>3-year fixed subscription contracts** (<20% T&M/parts); 95% renewal rate / 2-yr tool revenue recurrence; >57,000 installed tools. | ONTO FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); ONTO Analyst Day (2023-06-06) [ONTO IR](https://investors.ontoinnovation.com); KLA Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); KLA Q1 FY27 8-K (2026-10-28) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm) |
+| **Deferred Revenue Tenure Profile (as of Sep 30, 2026)** | Total Deferred Revenue = **$55.6M** (current ≤1 yr = **$45.5M** [81.7%]; non-current >1 yr = **$10.2M** [18.3%]; vs. Jan 3, 2026: current $31.8M + non-current $6.3M = $38.0M). Over-time revenue = **5.5%** of Q3 26 revenue (6.9% FY25). | Total Deferred Service Revenue = **$864.8M** (current = **$634.2M** [73.3%]; non-current = **$230.6M** [26.7%]), plus **$843.0M** deferred system revenue. Service revenue = **20.6%** of Q1 FY27 revenue (23.0% FY26). | ONTO Q3 26 10-Q (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm); KLA Q1 FY27 8-K (2026-10-28) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm) |
+| **Software Licensing Structure** | Standalone software licenses (primarily sold without systems) recognized **upfront at point-in-time** when made available (limited rights to use); software support & maintenance recognized **over-time** across contract term. Seat vs. per-tool vs. fab-site license pricing split: **N/A** (checked FY25 10-K, Q1–Q3 26 10-Qs & calls). New `Ai Diffract` licensing onto Rigaku CD-SAXS tools carries ~100% gross margin (2 wins by May 2026). | Bundled with tool fleet & enterprise `Klarity` / `5D Analyzer` / `OVALiS` / `RDC` ecosystem across 95% of fabs; software-only revenue breakout N/A in KLA FY26 10-K. | ONTO FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); ONTO Q1 26 Call (2026-05-05) [ONTO IR](https://investors.ontoinnovation.com); KLA FY26 10-K (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm) |
+| **Packaging Process-Control Intensity Trend** | • **Onto (Q3 26 Call, Nov 9, 2026):** Packaging process-control intensity increasing across 2.5D/3D heterogeneous integration, silicon interposers, and new substrates due to die value & process steps; Onto AP revenue growing **>80% YoY in CY26** (50/50 split 2.5D logic & HBM); `Dragonfly G5` application requests doubled QoQ in Q3 26 (2027 POs = 2× 2026 G5 rev). Exact Onto % intensity figure: **N/A** (checked FY25 10-K & Q1–Q3 26 calls).<br>• **Camtek (Q3 26 6-K, Nov 4, 2026):** ~80% of revenue from advanced packaging; YTD orders >$800M; CY26E ~$595M (+20% YoY) → CY27E >$800M (+35% YoY). | • **KLA (Mar 12, Apr 29, Jun 3 & Oct 28, 2026):** Total KLA Process Control share of WFE rose from **5.3% (CY19) → 7.4% (CY25) → ~9.0% target (CY30)**; KLA Semi PC systems share of the **$10B–$12B Advanced Packaging equipment market** expanded from **<1% (~2023) → >6% (mid-2026) → mid-7% guided year-end CY26**; KLA AP Semi PC systems revenue scaling **$635M (CY25) → ~$1.1B (CY26E, +70%+ YoY)** (total AP ~$950M CY25); DRAM intensity gained $450M incremental CY25 as HBM die size reached 3× DDR. | ONTO Q3 26 Call (2026-11-09) [ONTO IR](https://investors.ontoinnovation.com); KLA Investor Day (2026-03-12) [PDF](https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf); KLA Q1 FY27 Call (2026-10-28) [KLA IR](https://ir.kla.com); Camtek Q3 26 6-K (2026-11-04) [Camtek](https://www.camtek.com) |
+
+### 3B. Gross Margin Gap — ONTO vs. KLA (KLAC) & Camtek (CAMT) (Calendar-Aligned Periods)
+
+| Period (Calendar-Aligned) | ONTO GAAP GM% | KLA GAAP GM% | Gap: ONTO − KLA (GAAP) | CAMT GAAP GM% | Gap: ONTO − CAMT (GAAP) | ONTO Non-GAAP GM%* | KLA Non-GAAP GM%* | Gap: ONTO − KLA (Non-GAAP) | CAMT Non-GAAP GM%* | Gap: ONTO − CAMT (Non-GAAP) | Direct Primary Sources + Dates |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Latest FY** (ONTO FY25 / KLA FY26 / CAMT FY25) | **49.7%** | **61.3%** | **−1,159 bps** | **50.5%** | **−78 bps** | **54.6%** | **62.4%** | **−782 bps** | **51.6%** | **+298 bps** | ONTO FY25 10-K (2026-02-24) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm); KLA Q4 FY26 8-K (2026-07-28) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000024/exhibit991earningsrelease7.htm); CAMT FY25 20-F (2026-03-19) [SEC](https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/0001178913-26-001561-index.htm) & Q4 25 6-K (2026-02-18) |
+| **Dec 2025 Q** (ONTO Q4 25 / KLA Q2 FY26 / CAMT Q4 25) | **46.4%** | **61.4%** | **−1,506 bps** | **50.0%** | **−361 bps** | **54.6%** | **62.6%** | **−805 bps** | **51.1%** | **+345 bps** | ONTO Q4 25 8-K (2026-02-19) [ONTO IR](https://investors.ontoinnovation.com); KLA Q2/Q3 FY26 8-Ks (2026-01-29 / 2026-04-29) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000006/0000319201-26-000006-index.htm) & [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000014/exhibit991earningsrelease3.htm); CAMT Q4 25 6-K (2026-02-18) [Camtek](https://www.camtek.com) |
+| **Mar 2026 Q** (ONTO Q1 26 / KLA Q3 FY26 / CAMT Q1 26) | **50.1%** | **61.1%** | **−1,098 bps** | **50.1%** | **+4 bps** | **55.7%** | **62.2%** | **−647 bps** | **51.0%** | **+474 bps** | ONTO Q1 26 10-Q (2026-05-05) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm); KLA Q3 FY26 8-K (2026-04-29) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000014/exhibit991earningsrelease3.htm); CAMT Q1 26 6-K (2026-05-12) [Camtek](https://www.camtek.com) |
+| **Jun 2026 Q** (ONTO Q2 26 / KLA Q4 FY26 / CAMT Q2 26) | **53.4%** | **61.4%** | **−796 bps** | **50.1%** | **+331 bps** | **57.0%** | **62.4%** | **−538 bps** | **51.4%** | **+558 bps** | ONTO Q2 26 10-Q (2026-08-06) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526338401/onto-20260630.htm); KLA Q4 FY26 8-K (2026-07-28) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000024/exhibit991earningsrelease7.htm); CAMT Q2 26 6-K (2026-08-10) [Camtek](https://www.camtek.com) |
+| **Sep 2026 Q** (ONTO Q3 26 / KLA Q1 FY27 / CAMT Q3 26) | **54.8%** | **61.9%** | **−707 bps** | **50.0%** | **+479 bps** | **57.6%** | **62.7%** | **−510 bps** | **51.1%** | **+650 bps** | ONTO Q3 26 8-K (2026-11-09) [SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm); KLA Q1 FY27 8-K (2026-10-28) [SEC](https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm); CAMT Q3 26 6-K (2026-11-04) [Camtek](https://www.camtek.com) |
+
+*Non-GAAP comparability note: Neither ONTO nor KLA excludes stock-based compensation (SBC) from Non-GAAP COGS/GM%; Camtek excludes SBC from Non-GAAP COGS ($2.8M / ~57 bps in FY25; $0.7M / ~56 bps in Q4 25), widening ONTO's like-for-like Non-GAAP GM% spread over Camtek by an additional ~55–60 bps. ONTO Non-GAAP COGS add-backs in Q3 26 were $11.5M (281 bps: $10.9M restructuring/other + $0.6M amortization) vs. KLA Q1 FY27 $34.9M (84 bps: acquisition-related charges). Spreads computed from unrounded SEC dollar figures.
+
+## [9] USER
+
+TARGET #2 (ONTO) — RUN STEP 3: BALANCE-SHEET FOOTNOTES, CAPITAL HYGIENE & GOVERNANCE.
+Dig strictly into the latest 10-K/10-Q footnotes and proxy statement:
+1. Leading Signals (4-quarter trend): Inventory decomposed into Raw Materials / WIP / Finished Goods; Deferred Revenue; RPO (Current vs. Non-Current); Customer Deposits/Advances; Purchase Commitments; any disclosed Book-to-Bill or tool lead-time changes.
+2. Capital Hygiene: SBC as % of FCF; 3-year net diluted share count change (post-buybacks/issuances); Cash vs. Total Debt + exact Debt Maturity Wall; past 5-year M&A spend (exact deal prices, revenue contribution, and any goodwill/intangible impairments).
+3. Governance: Executive/CTO/key engineering changes in last 18 months; insider ownership %; any customer warrants or cross-holdings.
+
+Dense tables only. Exact footnote citations + URLs.
+
+## [10] MODEL
+
+[executableCode]
+```python
+# Complete arithmetic verification for ONTO Step 3
+
+# 1. Inventory 4-quarter trend ($ thousands)
+inv = {
+    'Q4 2025 (Jan 3, 2026)':  {'raw': 208061, 'wip': 59764, 'fg': 30439, 'tot': 298264},
+    'Q1 2026 (Mar 31, 2026)': {'raw': 232079, 'wip': 62493, 'fg': 21454, 'tot': 316026},
+    'Q2 2026 (Jun 30, 2026)': {'raw': 278289, 'wip': 73127, 'fg': 27827, 'tot': 379243},
+    'Q3 2026 (Sep 30, 2026)': {'raw': 313419, 'wip': 80498, 'fg': 30263, 'tot': 424180},
+}
+print("=== INVENTORY CHECK ===")
+for q, d in inv.items():
+    assert d['raw'] + d['wip'] + d['fg'] == d['tot']
+    print(f"{q}: Raw={d['raw']/1000:.1f}M ({d['raw']/d['tot']*100:.1f}%), WIP={d['wip']/1000:.1f}M ({d['wip']/d['tot']*100:.1f}%), FG={d['fg']/1000:.1f}M ({d['fg']/d['tot']*100:.1f}%), Tot={d['tot']/1000:.1f}M")
+
+raw_chg = (313419/208061 - 1)*100
+wip_chg = (80498/59764 - 1)*100
+fg_chg  = (30263/30439 - 1)*100
+tot_chg = (424180/298264 - 1)*100
+print(f"9M Chg (Jan 3 -> Sep 30, 2026): Raw {raw_chg:+.1f}%, WIP {wip_chg:+.1f}%, FG {fg_chg:+.1f}%, Tot {tot_chg:+.1f}%")
+
+# 2. Deferred Revenue 4-quarter trend ($ millions)
+def_rev = {
+    'Q4 2025': (31.781, 6.3),
+    'Q1 2026': (31.439, 8.3),
+    'Q2 2026': (35.916, 8.7),
+    'Q3 2026': (45.457, 10.2),
+}
+print("\n=== DEFERRED REVENUE CHECK ===")
+for q, (cur, nc) in def_rev.items():
+    tot = cur + nc
+    print(f"{q}: Cur=${cur:.1f}M ({cur/tot*100:.1f}%), NC=${nc:.1f}M ({nc/tot*100:.1f}%), Tot=${tot:.1f}M")
+print(f"Deferred Rev Total 9M Chg: {((45.457+10.2)/(31.781+6.3)-1)*100:+.1f}%")
+
+# 3. SBC as % of FCF ($ thousands)
+sbc_fcf = {
+    'FY2023':  {'sbc': 25513, 'ocf': 171973, 'capex': 22573},
+    'FY2024':  {'sbc': 28577, 'ocf': 245676, 'capex': 31903},
+    'FY2025':  {'sbc': 27617, 'ocf': 328315, 'capex': 28513},
+    'Q4 2025': {'sbc': 27617 - 20378, 'ocf': 328315 - 233319, 'capex': 28513 - 23384},
+    'Q1 2026': {'sbc': 7011,  'ocf': 26322,  'capex': 3585},
+    'Q2 2026': {'sbc': 10015, 'ocf': 87829 - 26322, 'capex': 7242 - 3585},
+    'Q3 2026': {'sbc': 8805,  'ocf': 166579 - 87829, 'capex': 8803 - 7242},
+    '9M 2026': {'sbc': 25831, 'ocf': 166579, 'capex': 8803},
+}
+print("\n=== SBC / FCF CHECK ===")
+for p, d in sbc_fcf.items():
+    fcf = d['ocf'] - d['capex']
+    pct = d['sbc'] / fcf * 100
+    print(f"{p:7s}: SBC=${d['sbc']/1000:5.2f}M | OCF=${d['ocf']/1000:6.2f}M | CapEx=${d['capex']/1000:5.2f}M | FCF=${fcf/1000:6.2f}M | SBC/FCF={pct:5.1f}%")
+assert 7011 + 10015 + 8805 == 25831
+
+# 4. 3-Year Diluted Share Count Change
+print("\n=== 3-YEAR DILUTED SHARE COUNT ===")
+q3_23, q3_26 = 49401, 49256
+fy_23, fy_24, fy_25, q4_25, q1_26, q2_26 = 49318, 49660, 49273, 49539, 50004, 49682
+print(f"Q3 2023 ({q3_23:,}k) -> Q3 2026 ({q3_26:,}k): {q3_26-q3_23:+,}k ({(q3_26/q3_23-1)*100:+.2f}%)")
+print(f"FY 2023 ({fy_23:,}k) -> Q3 2026 ({q3_26:,}k): {q3_26-fy_23:+,}k ({(q3_26/fy_23-1)*100:+.2f}%)")
+print(f"FY 2023 ({fy_23:,}k) -> FY 2025 ({fy_25:,}k): {fy_25-fy_23:+,}k ({(fy_25/fy_23-1)*100:+.2f}%)")
+end_sep23, end_sep26 = 49078, 49084
+print(f"Ending Shares Sep 30, 2023 ({end_sep23:,}k) -> Sep 30, 2026 ({end_sep26:,}k): {end_sep26-end_sep23:+,}k ({(end_sep26/end_sep23-1)*100:+.2f}%)")
+
+# 5. Cash vs Total Debt as of Sep 30, 2026
+cash_eq = 400677
+mkt_sec = 850794
+tot_cash = cash_eq + mkt_sec
+debt_face = 1500000
+debt_carry = 1473179
+net_cash_face = tot_cash - debt_face
+net_cash_carry = tot_cash - debt_carry
+print("\n=== CASH VS DEBT (Sep 30, 2026) ===")
+print(f"Cash & Marketable Sec: ${tot_cash/1000:.2f}M (Cash ${cash_eq/1000:.2f}M + Mkt Sec ${mkt_sec/1000:.2f}M)")
+print(f"Debt Face: ${debt_face/1000:.2f}M -> Net Cash (vs Face): ${net_cash_face/1000:+.2f}M")
+print(f"Debt Carrying: ${debt_carry/1000:.2f}M -> Net Cash (vs Carrying): ${net_cash_carry/1000:+.2f}M")
+print(f"Unamortized debt discount & issuance costs: ${(debt_face-debt_carry)/1000:.2f}M")
+
+# 6. Insider Ownership % (DEF 14A as of Mar 24, 2026)
+out_mar24 = 49743567
+print("\n=== INSIDER OWNERSHIP (Mar 24, 2026) ===")
+for name, sh in [('All directors & exec officers (13 persons)', 252428),
+                 ('Michael P. Plisinski (CEO)', 145307),
+                 ('Ramil Yaldaei (COO)', 7679),
+                 ('Ido Dolev (EVP PSG)', 5128),
+                 ('Brian K. Roberts (CFO)', 0),
+                 ('Shirley Chen (SVP CS)', 0)]:
+    print(f"{name:45s}: {sh:7,} shares = {sh/out_mar24*100:.2f}%")
+
+# 7. Past 5-year M&A & Strategic Equity Spend (Nov 2021 - Nov 2026)
+# Note: Inspectrology closed Q1 2021 (>5 yrs ago, though earnouts paid in 2022 $2.3M, 2023 $0.8M, 2024 $0.7M!)
+# Neta SAS: May 2022 ($4.6M cash)
+# Lumina Instruments + K&S lithography: Q4 2024 ($26.8M net cash: $25.0M Lumina + ~$1.8M K&S)
+# Private non-marketable equity: Q1 2025 ($8.0M cash)
+# Semilab USA LLC: Nov 17, 2025 ($520.5M revised fair value: $389.1M cash + $55.9M debt exting + $81.7M stock - $6.5M Q326 WC refund; $436.1M net cash in FY25 + $(6.5)M Q326 refund = $429.6M net cash + $81.7M stock)
+# Rigaku Holdings Corp (27% minority): Aug 10, 2026 ($719.5M cash)
+ma_ctrl_cash_5yr = 4.572 + 26.8 + 436.1 - 6.499
+ma_ctrl_tot_5yr = ma_ctrl_cash_5yr + 81.697
+equity_inv_5yr = 8.0 + 719.548
+print(f"\n=== 5-YR M&A & EQUITY SPEND (Nov 2021 - Nov 2026) ===")
+print(f"Control M&A net cash (excl. Inspectrology earnouts): ${ma_ctrl_cash_5yr:.1f}M; + Stock ($81.7M) = ${ma_ctrl_tot_5yr:.1f}M")
+print(f"Minority Equity Investments (Private + Rigaku 27%): ${equity_inv_5yr:.1f}M")
+print(f"Combined 5-yr M&A + Minority Equity (incl. $3.8M Inspectrology earnouts 2022-24): ${ma_ctrl_tot_5yr + equity_inv_5yr + 3.8:.1f}M")
+
+```
+
+## [11] MODEL
+
+[codeExecutionResult: OUTCOME_OK]
+```
+=== INVENTORY CHECK ===
+Q4 2025 (Jan 3, 2026): Raw=208.1M (69.8%), WIP=59.8M (20.0%), FG=30.4M (10.2%), Tot=298.3M
+Q1 2026 (Mar 31, 2026): Raw=232.1M (73.4%), WIP=62.5M (19.8%), FG=21.5M (6.8%), Tot=316.0M
+Q2 2026 (Jun 30, 2026): Raw=278.3M (73.4%), WIP=73.1M (19.3%), FG=27.8M (7.3%), Tot=379.2M
+Q3 2026 (Sep 30, 2026): Raw=313.4M (73.9%), WIP=80.5M (19.0%), FG=30.3M (7.1%), Tot=424.2M
+9M Chg (Jan 3 -> Sep 30, 2026): Raw +50.6%, WIP +34.7%, FG -0.6%, Tot +42.2%
+
+=== DEFERRED REVENUE CHECK ===
+Q4 2025: Cur=$31.8M (83.5%), NC=$6.3M (16.5%), Tot=$38.1M
+Q1 2026: Cur=$31.4M (79.1%), NC=$8.3M (20.9%), Tot=$39.7M
+Q2 2026: Cur=$35.9M (80.5%), NC=$8.7M (19.5%), Tot=$44.6M
+Q3 2026: Cur=$45.5M (81.7%), NC=$10.2M (18.3%), Tot=$55.7M
+Deferred Rev Total 9M Chg: +46.2%
+
+=== SBC / FCF CHECK ===
+FY2023 : SBC=$25.51M | OCF=$171.97M | CapEx=$22.57M | FCF=$149.40M | SBC/FCF= 17.1%
+FY2024 : SBC=$28.58M | OCF=$245.68M | CapEx=$31.90M | FCF=$213.77M | SBC/FCF= 13.4%
+FY2025 : SBC=$27.62M | OCF=$328.31M | CapEx=$28.51M | FCF=$299.80M | SBC/FCF=  9.2%
+Q4 2025: SBC=$ 7.24M | OCF=$ 95.00M | CapEx=$ 5.13M | FCF=$ 89.87M | SBC/FCF=  8.1%
+Q1 2026: SBC=$ 7.01M | OCF=$ 26.32M | CapEx=$ 3.58M | FCF=$ 22.74M | SBC/FCF= 30.8%
+Q2 2026: SBC=$10.02M | OCF=$ 61.51M | CapEx=$ 3.66M | FCF=$ 57.85M | SBC/FCF= 17.3%
+Q3 2026: SBC=$ 8.80M | OCF=$ 78.75M | CapEx=$ 1.56M | FCF=$ 77.19M | SBC/FCF= 11.4%
+9M 2026: SBC=$25.83M | OCF=$166.58M | CapEx=$ 8.80M | FCF=$157.78M | SBC/FCF= 16.4%
+
+=== 3-YEAR DILUTED SHARE COUNT ===
+Q3 2023 (49,401k) -> Q3 2026 (49,256k): -145k (-0.29%)
+FY 2023 (49,318k) -> Q3 2026 (49,256k): -62k (-0.13%)
+FY 2023 (49,318k) -> FY 2025 (49,273k): -45k (-0.09%)
+Ending Shares Sep 30, 2023 (49,078k) -> Sep 30, 2026 (49,084k): +6k (+0.01%)
+
+=== CASH VS DEBT (Sep 30, 2026) ===
+Cash & Marketable Sec: $1251.47M (Cash $400.68M + Mkt Sec $850.79M)
+Debt Face: $1500.00M -> Net Cash (vs Face): $-248.53M
+Debt Carrying: $1473.18M -> Net Cash (vs Carrying): $-221.71M
+Unamortized debt discount & issuance costs: $26.82M
+
+=== INSIDER OWNERSHIP (Mar 24, 2026) ===
+All directors & exec officers (13 persons)   : 252,428 shares = 0.51%
+Michael P. Plisinski (CEO)                   : 145,307 shares = 0.29%
+Ramil Yaldaei (COO)                          :   7,679 shares = 0.02%
+Ido Dolev (EVP PSG)                          :   5,128 shares = 0.01%
+Brian K. Roberts (CFO)                       :       0 shares = 0.00%
+Shirley Chen (SVP CS)                        :       0 shares = 0.00%
+
+=== 5-YR M&A & EQUITY SPEND (Nov 2021 - Nov 2026) ===
+Control M&A net cash (excl. Inspectrology earnouts): $461.0M; + Stock ($81.7M) = $542.7M
+Minority Equity Investments (Private + Rigaku 27%): $727.5M
+Combined 5-yr M&A + Minority Equity (incl. $3.8M Inspectrology earnouts 2022-24): $1274.0M
+
+```
+
+## [12] USER
+
+TARGET #2 (ONTO) — RUN STEP 3 (CONCISE, NO PER-LINE URL RE-VERIFICATION):
+Dig into the latest 10-K, Q1–Q3 2026 10-Qs, and 2026 Proxy footnotes. Cite one direct SEC URL per filing at the bottom of the response (do NOT re-verify every individual URL).
+
+1. Balance-Sheet Leading Signals (last 4 quarters): Inventory split (Raw Materials / WIP / Finished Goods); Deferred Revenue; RPO (Current vs. Non-Current); Customer Deposits/Advances; Purchase Commitments; any disclosed Book-to-Bill or lead-time shifts.
+2. Capital Hygiene: SBC as % of FCF; 3-year net diluted share count change; Cash vs. Total Debt + exact terms/conversion price of the May 2026 $1.47B convertible notes & Debt Maturity Wall; past 5-year M&A spend (Semilab, Rigaku 27% stake, etc.) vs. impairments.
+3. Governance: Key executive/CTO departures in last 18 months; insider ownership %; any customer warrants or cross-holdings.
+
+Dense tables only. Exact footnote numbers or "N/A (checked [filing])".
+
+## [13] MODEL
+
+[executableCode]
+```python
+# 1. Verify Q1, Q2, Q3, 9M 2026 & 9M 2025 SBC/FCF from 7.1, 15.1, 15.2 (all verbatim!)
+q1_sbc, q1_ocf, q1_capex = 7011, 26322, 3585
+h1_sbc, h1_ocf, h1_capex = 17026, 87829, 7242
+m9_sbc, m9_ocf, m9_capex = 25831, 166579, 8803
+m9_25_sbc, m9_25_ocf, m9_25_capex = 20378, 233319, 23384
+
+q2_sbc, q2_ocf, q2_capex = h1_sbc - q1_sbc, h1_ocf - q1_ocf, h1_capex - q1_capex
+q3_sbc, q3_ocf, q3_capex = m9_sbc - h1_sbc, m9_ocf - h1_ocf, m9_capex - h1_capex
+
+for name, sbc, ocf, capex in [
+    ('Q1 2026', q1_sbc, q1_ocf, q1_capex),
+    ('Q2 2026', q2_sbc, q2_ocf, q2_capex),
+    ('Q3 2026', q3_sbc, q3_ocf, q3_capex),
+    ('9M 2026', m9_sbc, m9_ocf, m9_capex),
+    ('9M 2025', m9_25_sbc, m9_25_ocf, m9_25_capex),
+]:
+    fcf = ocf - capex
+    print(f"{name}: SBC=${sbc/1000:.2f}M, OCF=${ocf/1000:.2f}M, CapEx=${capex/1000:.2f}M, FCF=${fcf/1000:.2f}M, SBC/FCF={sbc/fcf*100:.1f}%")
+
+# 2. Verify Form 4 aggregate insider holdings from 8.1.8 (excluding Dolev whose post-trade count was truncated)
+insiders = {
+    'Plisinski (CEO, Mar 2026)': 179242,
+    'Seams (Chair, May 2026)': 38513,
+    'Oh (SVP GC, May 2026)': 21110,
+    'Roberts (CFO, Sep 2026)': 21032,
+    'Yaldaei (COO, May 2026)': 17593,
+    'Chen (SVP CS, Sep 2026)': 14001,
+    'Miller (Dir, Sep 2026)': 10692,
+    'Su (Dir, May 2026)': 7984,
+    'Kelley (Dir, May 2026)': 6384,
+    'Schwartz (Dir, May 2026)': 3536,
+    'Lynch (Dir, Aug 2026)': 2684,
+}
+tot_f4 = sum(insiders.values())
+sh_out = 49084327 # Oct 30, 2026 per 1.1.4 / 7.1
+print(f"\nForm 4 reported direct holdings (11 officers/directors, excl. Dolev): {tot_f4:,} shares = {tot_f4/sh_out*100:.2f}% of {sh_out:,}")
+print(f"CEO Plisinski alone: 179,242 / {sh_out:,} = {179242/sh_out*100:.2f}%")
+
+# 3. Verify 3-yr diluted shares
+print(f"\n3-yr Diluted Shares Q3 2023 (49,401k) -> Q3 2026 (49,256k): {49256-49401:+,}k ({(49256/49401-1)*100:+.2f}%)")
+print(f"FY2023 (49,318k) -> FY2025 (49,273k): {49273-49318:+,}k ({(49273/49318-1)*100:+.2f}%)")
+print(f"FY2023 (49,318k) -> Q3 2026 (49,256k): {49256-49318:+,}k ({(49256/49318-1)*100:+.2f}%)")
+
+# 4. Verify 5-yr M&A + Strategic Equity totals (2022-2026, all verbatim from 12.3.2, 3.1.1, 7.1, 4.3.1)
+# Neta SAS (2022): $4.6M net cash (12.3.2)
+# FY2023: $0 (12.3.2)
+# FY2024: $26.8M net cash (incl. $25.0M Lumina Instruments in Q4 2024; 12.3.2)
+# Q1 2025: $8.0M non-marketable equity investment (4.3.1, 15.2)
+# Nov 17, 2025: Semilab USA LLC: $520.5M revised total consideration ($382.9M cash + $55.9M debt exting + $81.7M stock [641,771 sh @ $127.30]; less $8.9M acquired cash = $429.9M net cash + $81.7M stock; Q3 26 Cash Flow shows +$6.5M working-capital refund; 3.1.1, 7.1, 11.1.1)
+# Aug 10, 2026: Rigaku Holdings Corp 27% minority stake (61,123,436 sh): $719.5M cash (JPY 113.08B; 7.1, 3.4.8)
+ma_control = 4.6 + 26.8 + 520.462
+equity_min = 8.0 + 719.548
+print(f"\n5-yr Control M&A gross consideration (2022-2026): ${ma_control:.1f}M; Minority Equity Stakes: ${equity_min:.1f}M; Combined: ${ma_control+equity_min:.1f}M")
+
+# 5. Semilab goodwill revision check: Jan 3, 2026 total goodwill $644.015M -> Sep 30, 2026 $625.848M (diff -$18.167M measurement-period PPA adjustment, NOT impairment!)
+print(f"Goodwill change Jan 3 -> Sep 30, 2026: {(625848 - 644015)/1000:+.2f}M (Semilab PPA measurement-period adjustment; $6.5M WC refund + AR adjustment $14.4M -> $26.1M)")
+
+```
+
+## [14] MODEL
+
+[codeExecutionResult: OUTCOME_OK]
+```
+Q1 2026: SBC=$7.01M, OCF=$26.32M, CapEx=$3.58M, FCF=$22.74M, SBC/FCF=30.8%
+Q2 2026: SBC=$10.02M, OCF=$61.51M, CapEx=$3.66M, FCF=$57.85M, SBC/FCF=17.3%
+Q3 2026: SBC=$8.80M, OCF=$78.75M, CapEx=$1.56M, FCF=$77.19M, SBC/FCF=11.4%
+9M 2026: SBC=$25.83M, OCF=$166.58M, CapEx=$8.80M, FCF=$157.78M, SBC/FCF=16.4%
+9M 2025: SBC=$20.38M, OCF=$233.32M, CapEx=$23.38M, FCF=$209.94M, SBC/FCF=9.7%
+
+Form 4 reported direct holdings (11 officers/directors, excl. Dolev): 322,771 shares = 0.66% of 49,084,327
+CEO Plisinski alone: 179,242 / 49,084,327 = 0.37%
+
+3-yr Diluted Shares Q3 2023 (49,401k) -> Q3 2026 (49,256k): -145k (-0.29%)
+FY2023 (49,318k) -> FY2025 (49,273k): -45k (-0.09%)
+FY2023 (49,318k) -> Q3 2026 (49,256k): -62k (-0.13%)
+
+5-yr Control M&A gross consideration (2022-2026): $551.9M; Minority Equity Stakes: $727.5M; Combined: $1279.4M
+Goodwill change Jan 3 -> Sep 30, 2026: -18.17M (Semilab PPA measurement-period adjustment; $6.5M WC refund + AR adjustment $14.4M -> $26.1M)
+
+```
+
+## [15] MODEL
+
+### 1. Balance-Sheet Leading Signals (4-Quarter Trend: Q4 2025 – Q3 2026, $ Millions)
+
+| Metric | Q4 2025 (Jan 3, 2026) | Q1 2026 (Mar 31, 2026) | Q2 2026 (Jun 30, 2026) | Q3 2026 (Sep 30, 2026) | 9M Chg / Trend | Footnote / Filing Citation |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Inventory — Raw Materials (`Materials`)** | $208.1 (69.8%) | $232.1 (73.4%) | $278.3 (73.4%) | $313.4 (73.9%) | **+50.6%** (+$105.4M) | Q1/Q2/Q3 2026 10-Q Note 6 (`Balance Sheet Components`) |
+| **Inventory — Work-in-Process (`WIP`)** | $59.8 (20.0%) | $62.5 (19.8%) | $73.1 (19.3%) | $80.5 (19.0%) | **+34.7%** (+$20.7M) | Same footnotes |
+| **Inventory — Finished Goods** | $30.4 (10.2%) | $21.5 (6.8%) | $27.8 (7.3%) | $30.3 (7.1%) | **−0.6%** (−$0.2M) | Same footnotes |
+| **Total Inventories, net** | **$298.3** | **$316.0** | **$379.2** | **$424.2** | **+42.2%** (+$125.9M) | Q1/Q2/Q3 2026 10-Q Balance Sheets & Note 6 |
+| **Deferred Revenue — Current (≤1 yr)** | $31.8 (83.5%) | $31.4 (79.1%) | $35.9 (80.5%) | $45.5 (81.7%) | **+43.0%** (+$13.7M) | Q1/Q2/Q3 2026 10-Q Balance Sheets |
+| **Deferred Revenue — Non-Current (>1 yr)** | $6.3 (16.5%) | $8.3 (20.9%) | $8.7 (19.5%) | $10.2 (18.3%) | **+61.9%** (+$3.9M) | Q1/Q2/Q3 2026 10-Q Note 9 (`Revenue`; within `Other non-current liabilities`) |
+| **Total Deferred Revenue** | **$38.1** | **$39.7** | **$44.6** | **$55.7** | **+46.2%** (+$17.6M) | Derived sum of Current + Non-Current above |
+| **RPO (Current vs. Non-Current)** | N/A | N/A | N/A | N/A | Standalone RPO schedule not disclosed | **N/A** (checked FY25 10-K, Q1–Q3 2026 10-Qs Note 9 `Revenue`; only Deferred Revenue disclosed) |
+| **Customer Deposits / Advances** | N/A | N/A | N/A | N/A | No separate line or footnote breakout | **N/A** (checked FY25 10-K, Q1–Q3 2026 10-Qs; advance billings sit in `Deferred revenue` / `Other current liabilities`, latter $30.9M → $54.5M) |
+| **Purchase Commitments** | **$256.4** ($248.1 <1 yr; $8.3 1–3 yrs; $0 >3 yrs) | N/A | N/A | N/A | Annual disclosure only; +13-yr Andover HQ lease added Q2 2026 (159,947 sq ft, ~$17/sq ft initial rent, 2027 start) | FY25 10-K MD&A Contractual Obligations; Q2/Q3 2026 10-Q Note 8 (`Commitments and Contingencies`, lease signed Jun 18, 2026); quarterly purchase-commitment updates **N/A** (checked Q1–Q3 2026 10-Qs) |
+| **Book-to-Bill Ratio** | N/A | N/A | N/A | N/A | Ratio not disclosed | **N/A** (checked FY25 10-K, Q1–Q3 2026 10-Qs & Q4 25–Q3 26 earnings calls) |
+| **Total Backlog & Lead-Time Shifts** | Backlog: N/A | Backlog: N/A | Backlog: **>$1.0B** (first time >$1B) | Backlog: **>$1.3B** (+20% QoQ) | CEO (Nov 9, 2026): *"we have not seen lead time extensions"* despite component supply pressures | Q2 2026 8-K (2026-08-06); Q3 2026 8-K Ex-99.1 & Call (2026-11-09) |
+
+### 2A. Capital Hygiene — SBC/FCF, Share Count, Cash vs. Debt & Convertible Note Terms
+
+| Category | Metric | Verified Figure / Contractual Term | Period / Date | Footnote / Filing Citation |
+| :--- | :--- | :--- | :--- | :--- |
+| **SBC as % of FCF** | **9M 2026** | SBC **$25.8M** / FCF **$157.8M** (OCF $166.6M − CapEx $8.8M) = **16.4%** | 9M ended Sep 30, 2026 | Q3 2026 10-Q Cash Flows & Note 10 (`Share-Based Compensation`) |
+| **SBC as % of FCF** | **Quarterly 2026 Split** | Q1 26: **$7.0M / $22.7M (30.8%)**; Q2 26: **$10.0M / $57.9M (17.3%)**; Q3 26: **$8.8M / $77.2M (11.4%)** | Q1–Q3 2026 | Q1/Q2/Q3 2026 10-Q Cash Flows & Stockholders' Equity |
+| **SBC as % of FCF** | **Prior Comp (9M 2025)** | SBC **$20.4M** / FCF **$209.9M** (OCF $233.3M − CapEx $23.4M) = **9.7%** (FY25 full-year OCF $328.3M; full-year FY25 SBC exact table check: **N/A** in snippet extract) | 9M ended Sep 27, 2025 | Q3 2026 10-Q Cash Flows; FY25 10-K Cash Flows |
+| **3-Year Diluted Share Count** | **Q3 2023 → Q3 2026** | **49,401k → 49,256k** (**−145k shares / −0.29%**); FY23 (49,318k) → FY24 (49,660k) → FY25 (49,273k) → Q1 26 (50,004k) → Q2 26 (49,682k) → Q3 26 (49,256k; FY23→Q3 26 **−0.13%**). | Q3 2023 – Q3 2026 | Q3 2023 10-Q; FY25 10-K; Q1–Q3 2026 10-Qs Statements of Operations |
+| **Buybacks & Issuances (9M 2026 + Nov 2026)** | **Share Activity** | Issued **641,771 shares** ($81.7M) for Semilab (Nov 17, 2025); repurchased **805,325 shares** ($205.0M + $2.1M excise tax at $254.53/sh, May 18, 2026; 9M25 repurchased 492k sh for $75.0M); net SBC issuances 255k sh − 68k tax-withheld sh in 9M 2026; ending shares **49,084k** (Sep 30 & Oct 30, 2026). On **Nov 16, 2026**, Board authorized new **$400M** buyback replacing $99.9M prior remaining. | Nov 2025 – Nov 16, 2026 | Q3 2026 10-Q Equity Statement, Note 2 & Note 14; Nov 16, 2026 8-K Ex-99.1 |
+| **Cash vs. Total Debt** | **Balance Sheet (Sep 30, 2026)** | Cash & equivalents **$400.7M** + Marketable securities **$850.8M** = **$1,251.5M** total liquidity vs. Total Debt **$1,500.0M face** (**$1,473.2M carrying**, net of $26.8M unamortized discount/issuance costs; estimated fair value **$1,673.2M**). Net Cash = **−$248.5M** (vs. face) / **−$221.7M** (vs. carrying). | As of Sep 30, 2026 | Q3 2026 10-Q Balance Sheet, Note 3 (`Fair Value Measurements`) & Note 7 (`Debt Obligations`) |
+| **May 2026 Convertible Notes — Exact Terms** | **0.00% Convertible Senior Notes due 2031** | • **Issued:** May 21, 2026 (Rule 144A); **$1,500.0M principal** ($1.3B upsized from $1.1B + full $200M greenshoe); **$1,471.0M net proceeds** ($3.75M separate bridge commitment fees).<br>• **Coupon / Yield:** **0.00%** regular interest; **0.39%** effective interest rate (discount/issuance amortization).<br>• **Conversion:** Initial rate **2.6192 sh / $1,000** = **~$381.80/sh** (+50% vs. $254.53 May 18 reference; **~3.9M shares** initial); max Make-Whole rate **3.9288 sh / $1,000** (**~5.9M shares** max).<br>• **Capped Call:** **$88.95M gross cash** (**$69.68M** net of tax to APIC); initial cap price **$509.06/sh** (+100% premium).<br>• **Call / Redemption:** Non-callable before **June 6, 2029**; redeemable on/after June 6, 2029 at par if price >130% of conversion price for 20/30 trading days (partial redemption requires ≥$100M remaining). | Issued May 21, 2026 (Q2 2026) | Q3 2026 10-Q Note 7 (`Debt Obligations`) & Cash Flows; May 21, 2026 8-K |
+| **Debt Maturity Wall** | **Principal Repayment Schedule** | **2026–2030:** **$0** scheduled principal maturities (zero revolver/term-loan debt outstanding).<br>**2031:** **$1,500.0M** bullet maturity on **June 1, 2031** (100% of total debt). | As of Sep 30, 2026 | Q3 2026 10-Q Balance Sheet & Note 7 (`Debt Obligations`) |
+
+### 2B. Past 5-Year M&A & Strategic Equity Spend vs. Impairments (2022 – Nov 2026)
+
+| Deal / Target | Close Date | Exact Consideration | Revenue / Operating Contribution | Goodwill / Intangible Impairments | Footnote / Filing Citation |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Neta SAS** (France, opto-acoustics) | FY2022 | **$4.6M** net cash (zero acquisitions in FY2023) | Immaterial / not separately disaggregated (**N/A**, checked FY24 & FY25 10-Ks) | **$0** goodwill/intangible impairment (FY23–FY25) | FY24 10-K MD&A Investing Activities; FY25 10-K Ex-21.1 |
+| **Lumina Instruments Inc. + FY24 tuck-ins** | Q4 2024 | **$26.8M** total FY24 net cash (incl. **$25.0M** cash for Lumina Instruments laser optical defect inspection) | Immaterial / not separately disaggregated (**N/A**, checked FY24 & FY25 10-Ks) | **$0** goodwill/intangible impairment (separate legacy lithography inventory write-down recorded in FY24 COGS) | FY24 10-K MD&A & Acquisitions Note; FY25 10-K MD&A |
+| **Private Equity Investment (Undisclosed)** | Q1 2025 | **$8.0M** cash (Level 3 non-marketable equity security in `Other assets`) | Equity investment (no consolidated revenue) | **$0** impairment through Sep 30, 2026 | Q3 2026 10-Q Note 3 (`Fair Value Measurements`); Q1 2026 10-Q Cash Flows |
+| **Semilab USA LLC** (`FAaST`, `CnCV`, `MBIR`; `EIR` carved out Oct 9, 2025) | Nov 17, 2025 | **$520.5M** revised fair value ($382.9M cash + $55.9M debt extinguishment + $81.7M stock [641,771 sh @ $127.30]; initial $526.6M reduced by $6.5M Q3 26 working-capital refund; $8.9M cash acquired). Allocated $210.0M intangibles ($103M tech 7 yr, $82M cust. rel. 6 yr, $20M backlog 1.3 yr, $5M tradename 8 yr) + ~$295.3M revised goodwill (initial $313.4M − $18.2M PPA adjustment). | • Nov 17, 2025–Jan 3, 2026: **$8.6M rev** / **$(6.2)M** GAAP OpLoss.<br>• Q1 2026: **$27.1M rev** / **+$13.4M** GAAP OpInc.<br>• Q3 2026: **$22.5M rev** / **$(2.8)M** GAAP OpLoss (9M26 total rev/OpInc in Q3 10-Q Note 2). | **$0** impairment (total goodwill $644.0M Jan 3, 2026 → $625.8M Sep 30, 2026 reflects **−$18.2M ASC 805 measurement-period PPA adjustment**, not impairment) | Q1/Q2/Q3 2026 10-Q Note 2 (`Acquisitions and Investments`) & Cash Flows |
+| **Rigaku Holdings Corp.** (27.0% minority stake, TSE-listed) | Aug 10, 2026 | **$719.5M** cash (JPY 113.08B for 61,123,436 shares from Carlyle affiliate Atom Investment, L.P.) + 1 board seat | Unconsolidated (ASC 825 Fair Value Option); carrying value **$678.7M** as of Sep 30, 2026 | **$(40.8)M** GAAP mark-to-market unrealized loss in Q3 2026 `Other income, net` (fair-value remeasurement, not goodwill impairment) | Q3 2026 10-Q Note 2 (`Acquisitions and Investments`) & Statement of Operations |
+| **5-Year Totals (2022–Sep 2026)** | **2022–2026** | Control M&A: **$551.9M** gross ($470.2M cash + $81.7M stock); Minority Equity: **$727.5M** cash; **Combined: $1,279.4M** | — | **$0** goodwill or intangible impairment charges across FY23, FY24, FY25 & 9M 2026 (2022 goodwill impairment: **N/A**, checked FY24–FY25 10-Ks) | FY24 10-K Note 6; FY25 10-K Goodwill Note; Q3 2026 10-Q |
+
+### 3. Governance — Executive Changes (Last 18 Months), Insider Ownership & Cross-Holdings
+
+| Dimension | Verified Fact / Figure | Date / Window | Footnote / Filing Citation |
+| :--- | :--- | :--- | :--- |
+| **Executive Departures / Appointments (Last 18 Months: May 2025 – Nov 2026)** | • **CFO departure (Jun 12, 2025):** Mark R. Slicer (SVP & CFO) mutually terminated employment effective immediately (no operational disagreement disclosed; 2025 PSUs forfeited; $1.89M All Other Comp/separation in 2025 SCT).<br>• **CFO hire (Jun 16, 2025):** Brian K. Roberts appointed CFO (ex-CFO Sensata Technologies; $525k base, 80% bonus, $2.2M RSUs, $250k sign-on).<br>• **SVP Customer Success hire (Jun 16, 2025):** Shirley Chen appointed SVP Customer Success (ex-VP Sales & BD KLA Corp), succeeding Srinivas Vedula (resigned effective **Apr 8, 2025**, 19.5 months ago, Form 8-K Apr 1, 2025).<br>• **Board departures (May 2025):** Christine A. Tsingos & Leo Berlinghieri stepped down; Board shrunk from 9 to 7 (86% independent; independent Chair Christopher A. Seams). | May 2025 – Nov 2026 | Form 8-K Item 5.02 (2025-06-12); 2026 DEF 14A (2026-04-06) pp. 2–4, 49–50; Apr 1, 2025 8-K |
+| **CTO / Key Engineering Leadership Status** | Onto designates **no Chief Technology Officer** among SEC Section 16 Executive Officers (2026 Proxy NEOs: Plisinski [CEO], Roberts [CFO], Yaldaei [COO], Dolev [EVP Product Solutions Group], Chen [SVP CS], Slicer [former CFO]; Yoon Ah Oh [SVP GC & Sec]). Product R&D/engineering across inspection, metrology, lithography & software reports to **Dr. Ido Dolev** (ex-VP/GM Optical Metrology at KLA, appointed **Dec 1, 2024**, Form 8-K Nov 27, 2024). CTO / key engineering executive departures in last 18 months: **None disclosed / N/A** (checked SEC Form 8-K Item 5.02 filings & 2026 DEF 14A). | May 2025 – Nov 2026 | 2026 DEF 14A (2026-04-06); Nov 27, 2024 Form 8-K |
+| **Insider Ownership %** | • Exact 2026 DEF 14A p. 76 aggregate group table row (`All directors, director nominees and executive officers as a group`, record date Mar 24, 2026): **N/A** (page 76 table truncated in SEC search extract; checked 2026 DEF 14A).<br>• **Verified Form 4 direct holdings (Mar–Sep 2026, 11 current directors & executive officers excl. Dolev):** **322,771 shares = 0.66%** of 49,084,327 shares outstanding (Oct 30, 2026) — CEO Plisinski **179,242 sh (0.37%)**, Chair Seams 38,513 sh, GC Oh 21,110 sh, CFO Roberts 21,032 sh, COO Yaldaei 17,593 sh, SVP Chen 14,001 sh, Dir. Miller 10,692 sh, Dir. Su 7,984 sh, Dir. Kelley 6,384 sh, Dir. Schwartz 3,536 sh, Dir. Lynch 2,684 sh. Insider ownership guidelines: CEO 3× base salary, other NEOs 1× base, directors 3× retainer; anti-hedging/anti-pledging policies active. | Mar – Oct 2026 | 2026 DEF 14A p. 3 & p. 76 index; SEC Form 4 filings (Mar–Sep 2026); Q3 2026 10-Q cover share count |
+| **Customer Warrants or Cross-Holdings** | • **Customer Warrants:** **None / N/A** (checked FY25 10-K, Q1–Q3 2026 10-Qs, 2026 DEF 14A).<br>• **Cross-Holdings / Strategic Stakes:** (1) **27.0% equity stake in Rigaku Holdings Corp.** ($719.5M cost / $678.7M fair value Sep 30, 2026; 1 board seat nominee; joint `Ai Diffract` + `CD-SAXS` partnership); (2) **$8.0M** non-marketable equity stake in undisclosed private company (Q1 2025). Zero Item 404 related-party transactions; no poison pill. | As of Sep 30, 2026 | Q3 2026 10-Q Note 2 & Note 3; 2026 DEF 14A |
+
+### Direct SEC Filing URLs
+
+| Filing | Period / Event Date | Filing Date | Direct SEC EDGAR URL |
+| :--- | :--- | :--- | :--- |
+| **FY2025 Form 10-K** | FY ended Jan 3, 2026 | 2026-02-24 | https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm |
+| **Q1 2026 Form 10-Q** | Q1 ended Mar 31, 2026 | 2026-05-05 | https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm |
+| **Q2 2026 Form 10-Q** | Q2 ended Jun 30, 2026 | 2026-08-06 | https://www.sec.gov/Archives/edgar/data/704532/000119312526338401/onto-20260630.htm |
+| **Q3 2026 Form 10-Q** | Q3 ended Sep 30, 2026 | 2026-11-09 | https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm |
+| **Q3 2026 Form 8-K (Ex-99.1)** | Q3 ended Sep 30, 2026 | 2026-11-09 | https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm |
+| **2026 Definitive Proxy (DEF 14A)** | Record Date Mar 24, 2026 | 2026-04-06 | https://www.sec.gov/Archives/edgar/data/704532/000119312526143699/0001193125-26-143699-index.htm |
+| **FY2024 Form 10-K** | FY ended Dec 28, 2024 | 2025-02-25 | https://www.sec.gov/Archives/edgar/data/704532/000095017025026729/onto-20241228.htm |
+
+## [16] USER
+
+TARGET #2 (ONTO) — RUN STEPS 4 & 5 COMBINED (CONCISE, ONE URL PER FILING AT THE BOTTOM — NO PER-LINE URL RE-VERIFICATION):
+
+1. Customers, Geo & Cycle Stress:
+   - >10% customers (names/shares + YoY trend: TSMC, Samsung, SK hynix, OSATs) and 4-quarter geographic revenue split (China %, Taiwan %, Korea %) vs. manufacturing footprint & export-control revenue impact.
+   - Single-source supply bottlenecks (lasers/optics/stages) & field lead times.
+   - Exact revenue and operating margin drawdown during the last two semiconductor downturns (e.g., 2019, 2023).
+2. Verified Competitive Flow (last 24 months, non-Onto sources): Concrete socket wins/losses or dual-sourcing shifts vs. KLA (`Kronos`/`PWG5`/`SpectraShape`), Camtek (`Eagle`), Nova (`Prism`/OCD), and Chinese rivals (Skyverse, Jingce). Specifically verify where KLA's $1.1B+ CY26 AP push overlaps with or displaces Onto.
+3. Disputed Facts Ledger (neutral 3-column table, max 4 rows):
+   | Management Claim (+ date) | External Supporting Evidence | External Contradicting Evidence |
+   Cover: `Dragonfly G5` share vs. KLA & Camtek, `EchoScan` PLA commercial readiness, `Semilab`/`Rigaku` strategic payback, and software/AI pricing durability.
+
+Dense tables only. List all direct URLs once at the end.
+
+## [17] MODEL
+
+[executableCode]
+```python
+# Verify all geographic, downturn, and competitive numbers via Python
+
+# 1. Exact Q1 2026 (as reported Q1 10-Q & reclassified in Q2/Q3 10-Q), Q2 2026, Q3 2026, 9M 2026, 9M 2025 ($ thousands)
+geo_q1_orig = {'TW': 84962, 'KR': 69844, 'US': 59241, 'CN': 27778, 'JP': 16876, 'SEA': 16697, 'EU': 16551}
+geo_q2 = {'TW': 106407, 'KR': 100612, 'US': 84366, 'CN': 14707, 'JP': 9479, 'SEA': 11251, 'EU': 16307}
+geo_6m26 = {'TW': 190419, 'KR': 167310, 'US': 168100, 'CN': 31764, 'JP': 22668, 'SEA': 25499, 'EU': 29318}
+geo_q3 = {'TW': 174972, 'KR': 82266, 'US': 50433, 'CN': 32069, 'JP': 20627, 'SEA': 31754, 'EU': 17627}
+geo_9m26 = {'TW': 365391, 'KR': 249576, 'US': 218533, 'CN': 63833, 'JP': 43295, 'SEA': 57253, 'EU': 46945}
+geo_9m25 = {'TW': 227441, 'KR': 220828, 'US': 90946, 'CN': 56872, 'JP': 58152, 'SEA': 44179, 'EU': 39979}
+geo_q3_25 = {'TW': 59243, 'KR': 44864, 'US': 37793, 'CN': 27359, 'JP': 16015, 'SEA': 22329, 'EU': 10590}
+
+# Verify sums
+assert sum(geo_q1_orig.values()) == 291949
+assert sum(geo_q2.values()) == 343129
+assert sum(geo_6m26.values()) == 635078
+assert sum(geo_q3.values()) == 409748
+assert sum(geo_9m26.values()) == 1044826
+assert sum(geo_9m25.values()) == 738397
+assert sum(geo_q3_25.values()) == 218193
+
+# Reclassified Q1 2026 = 6M26 - Q2 26
+geo_q1_reclass = {k: geo_6m26[k] - geo_q2[k] for k in geo_q2}
+assert sum(geo_q1_reclass.values()) == 291949
+# Verify 9M26 - 6M26 == Q3 26
+for k in geo_q3:
+    assert geo_9m26[k] - geo_6m26[k] == geo_q3[k]
+
+print("=== GEOGRAPHIC MIX ($M and %) ===")
+for label, d in [('Q3 2025', geo_q3_25), ('9M 2025', geo_9m25), ('Q1 2026 (orig)', geo_q1_orig), ('Q1 2026 (recl)', geo_q1_reclass), ('Q2 2026', geo_q2), ('Q3 2026', geo_q3), ('9M 2026', geo_9m26)]:
+    tot = sum(d.values())
+    parts = [f"{k}=${d[k]/1000:.1f}M ({d[k]/tot*100:.1f}%)" for k in ['TW', 'KR', 'US', 'CN', 'SEA', 'JP', 'EU']]
+    print(f"{label:15s} (Tot=${tot/1000:.1f}M): " + " | ".join(parts))
+
+# 2. Downturn Drawdowns (2019 & 2023)
+print("\n=== 2023 DOWNTURN (EXACT SEC) ===")
+# Annual FY22 vs FY23 (from Q4 23 release 12.3)
+r22, r23 = 1005183, 815868
+opg22, opg23 = 236714, 116078
+opng22, opng23 = 301694, 195443
+print(f"Annual FY22->FY23: Rev ${r22/1000:.1f}M -> ${r23/1000:.1f}M ({(r23/r22-1)*100:+.1f}%)")
+print(f"  GAAP OM:     {opg22/r22*100:.1f}% -> {opg23/r23*100:.1f}% ({(opg23/r23 - opg22/r22)*10000:+.0f} bps)")
+print(f"  Non-GAAP OM: {opng22/r22*100:.1f}% -> {opng23/r23*100:.1f}% ({(opng23/r23 - opng22/r22)*10000:+.0f} bps)")
+
+# Quarterly Peak-to-Trough: Q2 2022 ($256.3M) / Q4 2022 ($253.3M, peak OM) -> Q2 2023 ($190.7M trough rev & trough Non-GAAP OM)
+rq2_22, opg_q2_22, opng_q2_22 = 256310, 57451, 73096
+rq4_22, opg_q4_22, opng_q4_22 = 253270, 61212, 76082
+rq2_23, opg_q2_23, opng_q2_23 = 190662, 24807, 40565
+rq4_23, opg_q4_23, opng_q4_23 = 218856, 28230, 56391
+print(f"Qtr Rev Peak Q2 22 (${rq2_22/1000:.1f}M) -> Trough Q2 23 (${rq2_23/1000:.1f}M): {(rq2_23/rq2_22-1)*100:+.1f}%")
+print(f"  Q2 22->Q2 23 GAAP OM: {opg_q2_22/rq2_22*100:.1f}% -> {opg_q2_23/rq2_23*100:.1f}% ({(opg_q2_23/rq2_23 - opg_q2_22/rq2_22)*10000:+.0f} bps)")
+print(f"  Q2 22->Q2 23 Non-GAAP OM: {opng_q2_22/rq2_22*100:.1f}% -> {opng_q2_23/rq2_23*100:.1f}% ({(opng_q2_23/rq2_23 - opng_q2_22/rq2_22)*10000:+.0f} bps)")
+print(f"OM Peak Q4 22 (${rq4_22/1000:.1f}M) -> Trough Q2 23 (${rq2_23/1000:.1f}M): Rev {(rq2_23/rq4_22-1)*100:+.1f}%")
+print(f"  Q4 22->Q2 23 GAAP OM: {opg_q4_22/rq4_22*100:.1f}% -> {opg_q2_23/rq2_23*100:.1f}% ({(opg_q2_23/rq2_23 - opg_q4_22/rq4_22)*10000:+.0f} bps)")
+print(f"  Q4 22->Q2 23 Non-GAAP OM: {opng_q4_22/rq4_22*100:.1f}% -> {opng_q2_23/rq2_23*100:.1f}% ({(opng_q2_23/rq2_23 - opng_q4_22/rq4_22)*10000:+.0f} bps)")
+print(f"  Q4 22->Q4 23 GAAP OM trough (incl. $9.5M litig + $5.1M restr): {opg_q4_22/rq4_22*100:.1f}% -> {opg_q4_23/rq4_23*100:.1f}% ({(opg_q4_23/rq4_23 - opg_q4_22/rq4_22)*10000:+.0f} bps)")
+
+print("\n=== 2019 DOWNTURN (PRE-MERGER STANDALONE & COMBINED) ===")
+# Nanometrics Q2 2018 ($88.6M, GAAP OM 23.5%, Non-GAAP OM 24.2%) -> Q1 2019 ($67.1M, GAAP OM 5.0%, Non-GAAP OM 8.5%)
+print(f"Nanometrics Q2 18 ($88.6M) -> Q1 19 ($67.1M): Rev {(67.1/88.6-1)*100:+.1f}% | GAAP OM 23.5%->5.0% (-1,850 bps) | Non-GAAP OM 24.2%->8.5% (-1,570 bps)")
+# Rudolph Q1 2018 ($73.1M, GAAP OpInc $17.465M = 23.9%) -> Q1 2019 ($60.9M, GAAP OpInc $7.608M = 12.5%) -> Q3 2019 ($62.9M, GAAP OpInc $5.29M = 8.4%)
+print(f"Rudolph Q1 18 ($73.1M, 23.9% GAAP OM) -> Q1 19 ($60.9M, 12.5% GAAP OM): Rev {(60.892/73.096-1)*100:+.1f}% | GAAP OM -1,140 bps")
+print(f"Rudolph Q1 18 (23.9% GAAP OM) -> Q3 19 ($62.9M, 8.4% GAAP OM incl. merger costs): GAAP OM -1,550 bps")
+# Reported Onto (Rudolph acctg acquirer + 2 mo Nanometrics in Q4 19): FY18 $273.8M (GAAP OM 18.7%, $51.1M) -> FY19 $305.9M (GAAP OM -1.7%, -$5.04M incl. $15.4M inv step-up & merger costs)
+print(f"Reported Onto FY18 ($273.8M, 18.7% GAAP OM) -> FY19 ($305.9M, -1.7% GAAP OM): GAAP OM -2,040 bps (distorted by Oct 25, 2019 merger)")
+
+```
+
+## [18] MODEL
+
+[codeExecutionResult: OUTCOME_OK]
+```
+=== GEOGRAPHIC MIX ($M and %) ===
+Q3 2025         (Tot=$218.2M): TW=$59.2M (27.2%) | KR=$44.9M (20.6%) | US=$37.8M (17.3%) | CN=$27.4M (12.5%) | SEA=$22.3M (10.2%) | JP=$16.0M (7.3%) | EU=$10.6M (4.9%)
+9M 2025         (Tot=$738.4M): TW=$227.4M (30.8%) | KR=$220.8M (29.9%) | US=$90.9M (12.3%) | CN=$56.9M (7.7%) | SEA=$44.2M (6.0%) | JP=$58.2M (7.9%) | EU=$40.0M (5.4%)
+Q1 2026 (orig)  (Tot=$291.9M): TW=$85.0M (29.1%) | KR=$69.8M (23.9%) | US=$59.2M (20.3%) | CN=$27.8M (9.5%) | SEA=$16.7M (5.7%) | JP=$16.9M (5.8%) | EU=$16.6M (5.7%)
+Q1 2026 (recl)  (Tot=$291.9M): TW=$84.0M (28.8%) | KR=$66.7M (22.8%) | US=$83.7M (28.7%) | CN=$17.1M (5.8%) | SEA=$14.2M (4.9%) | JP=$13.2M (4.5%) | EU=$13.0M (4.5%)
+Q2 2026         (Tot=$343.1M): TW=$106.4M (31.0%) | KR=$100.6M (29.3%) | US=$84.4M (24.6%) | CN=$14.7M (4.3%) | SEA=$11.3M (3.3%) | JP=$9.5M (2.8%) | EU=$16.3M (4.8%)
+Q3 2026         (Tot=$409.7M): TW=$175.0M (42.7%) | KR=$82.3M (20.1%) | US=$50.4M (12.3%) | CN=$32.1M (7.8%) | SEA=$31.8M (7.7%) | JP=$20.6M (5.0%) | EU=$17.6M (4.3%)
+9M 2026         (Tot=$1044.8M): TW=$365.4M (35.0%) | KR=$249.6M (23.9%) | US=$218.5M (20.9%) | CN=$63.8M (6.1%) | SEA=$57.3M (5.5%) | JP=$43.3M (4.1%) | EU=$46.9M (4.5%)
+
+=== 2023 DOWNTURN (EXACT SEC) ===
+Annual FY22->FY23: Rev $1005.2M -> $815.9M (-18.8%)
+  GAAP OM:     23.5% -> 14.2% (-932 bps)
+  Non-GAAP OM: 30.0% -> 24.0% (-606 bps)
+Qtr Rev Peak Q2 22 ($256.3M) -> Trough Q2 23 ($190.7M): -25.6%
+  Q2 22->Q2 23 GAAP OM: 22.4% -> 13.0% (-940 bps)
+  Q2 22->Q2 23 Non-GAAP OM: 28.5% -> 21.3% (-724 bps)
+OM Peak Q4 22 ($253.3M) -> Trough Q2 23 ($190.7M): Rev -24.7%
+  Q4 22->Q2 23 GAAP OM: 24.2% -> 13.0% (-1116 bps)
+  Q4 22->Q2 23 Non-GAAP OM: 30.0% -> 21.3% (-876 bps)
+  Q4 22->Q4 23 GAAP OM trough (incl. $9.5M litig + $5.1M restr): 24.2% -> 12.9% (-1127 bps)
+
+=== 2019 DOWNTURN (PRE-MERGER STANDALONE & COMBINED) ===
+Nanometrics Q2 18 ($88.6M) -> Q1 19 ($67.1M): Rev -24.3% | GAAP OM 23.5%->5.0% (-1,850 bps) | Non-GAAP OM 24.2%->8.5% (-1,570 bps)
+Rudolph Q1 18 ($73.1M, 23.9% GAAP OM) -> Q1 19 ($60.9M, 12.5% GAAP OM): Rev -16.7% | GAAP OM -1,140 bps
+Rudolph Q1 18 (23.9% GAAP OM) -> Q3 19 ($62.9M, 8.4% GAAP OM incl. merger costs): GAAP OM -1,550 bps
+Reported Onto FY18 ($273.8M, 18.7% GAAP OM) -> FY19 ($305.9M, -1.7% GAAP OM): GAAP OM -2,040 bps (distorted by Oct 25, 2019 merger)
+
+```
+
+## [19] MODEL
+
+### 1A. Customer Concentration (>10% Customers & Counterparty Trend)
+
+| Customer / Metric | FY2023 | FY2024 | FY2025 (Ended Jan 3, 2026) | Q1 2026 (Ended Mar 31, 2026) | Q2 / Q3 2026 | Primary Source & Counterparty Identification |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Customer A (% of Revenue)** | **14%** | **23%** (+900 bps) | **20%** (−300 bps) | **14.4%** (vs. 14.4% Q1 25) | N/A (truncated in SEC extract) | ONTO FY25 10-K Item 1 p. 7; Q1 26 10-Q Note 14 (anonymized starting FY25; prior FY23 10-K & Q1 25 10-Q XBRL tags named **TSMC**, **Samsung Semiconductor**, **SK hynix**, and in Q1 24 **YMTC**; FY25 10-K Item 1A names TSMC, Samsung Electronics, and Toshiba as regional accounts) |
+| **Customer B (% of Revenue)** | **19%** | **17%** (−200 bps) | **15%** (−200 bps) | **13.4%** (vs. <10% Q1 25) | N/A (truncated in SEC extract) | Same filings |
+| **Customer C (% of Revenue)** | **<10%** | **12%** | **14%** (+200 bps) | N/A | N/A | Same filings |
+| **Top 3 Combined (% of Revenue)** | **33%+** (2 >10%) | **52%** (3 >10%) | **49%** (3 >10%; >190 customers in >25 countries) | **27.8%+** (2+ >10%) | N/A | ONTO FY25 10-K Item 1 p. 7; Q1 26 10-Q |
+| **OSATs Individually >10% of Revenue** | None disclosed | None disclosed | None disclosed | None disclosed | None disclosed (>$200M Q2 26 OSAT `Dragonfly` orders; Q3 26 AP split 50/50 2.5D logic & HBM) | **N/A** for single OSAT >10% (checked ONTO FY23–FY25 10-Ks, Q1–Q3 26 10-Qs & calls) |
+| **Accounts Receivable >10% Concentration** | N/A | TSMC **~21%** of net AR (Jun 29, 2024) | **1 customer = 12.2%** of net AR (Jan 3, 2026) | N/A | **5 customers = 64.3%** of net AR (Jun 30, 2026) | ONTO Q2 24 10-Q; Q2 26 10-Q XBRL `R71.htm` |
+
+### 1B. Geographic Revenue Split (4-Quarter SEC Trend), Manufacturing Footprint & Export Controls
+
+| Region / Dimension | Q3 2025 (Sep 27, 2025) | Q4 2025 (Jan 3, 2026) | Q1 2026 (Mar 31, 2026)* | Q2 2026 (Jun 30, 2026) | Q3 2026 (Sep 30, 2026) | 9M 2026 vs. 9M 2025 (YoY) | Primary Source |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Taiwan** | $59.2M (**27.2%**) | N/A† | $84.0M (**28.8%**) [orig: $85.0M / 29.1%] | $106.4M (**31.0%**) | $175.0M (**42.7%**) | $365.4M (**35.0%**) vs. $227.4M (30.8%) [**+60.7%**] | Q1 26 10-Q; Q2 26 10-Q `R73.htm`; Q3 26 10-Q `R77.htm` |
+| **South Korea** | $44.9M (**20.6%**) | N/A† | $66.7M (**22.8%**) [orig: $69.8M / 23.9%] | $100.6M (**29.3%**) | $82.3M (**20.1%**) | $249.6M (**23.9%**) vs. $220.8M (29.9%) [**+13.0%**] | Same filings |
+| **United States** | $37.8M (**17.3%**) | N/A† | $83.7M (**28.7%**) [orig: $59.2M / 20.3%] | $84.4M (**24.6%**) | $50.4M (**12.3%**) | $218.5M (**20.9%**) vs. $90.9M (12.3%) [**+140.3%**] | Same filings |
+| **China** | $27.4M (**12.5%**) | N/A† | $17.1M (**5.8%**) [orig: $27.8M / 9.5%] | $14.7M (**4.3%**) | $32.1M (**7.8%**) | $63.8M (**6.1%**) vs. $56.9M (7.7%) [**+12.2%**] | Same filings |
+| **Southeast Asia** | $22.3M (**10.2%**) | N/A† | $14.2M (**4.9%**) [orig: $16.7M / 5.7%] | $11.3M (**3.3%**) | $31.8M (**7.7%**) | $57.3M (**5.5%**) vs. $44.2M (6.0%) [**+29.6%**] | Same filings |
+| **Japan** | $16.0M (**7.3%**) | N/A† | $13.2M (**4.5%**) [orig: $16.9M / 5.8%] | $9.5M (**2.8%**) | $20.6M (**5.0%**) | $43.3M (**4.1%**) vs. $58.2M (7.9%) [**−25.5%**] | Same filings |
+| **Europe** | $10.6M (**4.9%**) | N/A† | $13.0M (**4.5%**) [orig: $16.6M / 5.7%] | $16.3M (**4.8%**) | $17.6M (**4.3%**) | $46.9M (**4.5%**) vs. $40.0M (5.4%) [**+17.4%**] | Same filings |
+| **Total Revenue** | **$218.2M** | **$266.9M** | **$291.9M** | **$343.1M** | **$409.7M** | **$1,044.8M** vs. **$738.4M** (**+41.5%**) | Same filings |
+| **Manufacturing Footprint** | **Owned:** Milpitas, CA (automated/integrated metrology). **Leased U.S.:** Bloomington, MN (macro inspection/automated tools), Wilmington, MA (HQ; moving to leased 159,947 sq ft Andover, MA in 2027), Tucson, AZ (4D), Budd Lake, NJ, Snoqualmie, WA. **Asia Extended Factories:** Outsourced contract manufacturing ramped to >30% of Q3 2025 shipments, targeting >50%–60% capability by end-2026 to mitigate U.S./retaliatory tariffs and cut freight. Direct foreign offices/subsidiaries in China, Germany, Japan, Netherlands, South Korea, Singapore, Taiwan, Malaysia, Vietnam, Ireland, Switzerland, France (Neta). | | | | | | ONTO FY25 10-K Item 1 p. 8, Item 2 & Ex-21.1; Q1 25, Q3 25 & Q3 26 Calls; Q3 26 10-Q Note 8 |
+| **Export-Control Revenue Impact** | • **Oct 2022 BIS rules:** Management estimated **~$80M** FY2023 revenue headwind (Q3 2022 Call, Oct 27, 2022).<br>• **FY2023 & FY2024:** FY23 & FY24 10-Ks disclose Oct 2022/Oct 2023/2024/early-2025 EAR revisions (incl. YMTC Entity List) resulted in lower China net sales in both FY23 and FY24 and temporary license-wait revenue losses.<br>• **FY2025–9M 2026:** China contracted to **6.1%** of 9M 2026 revenue ($63.8M; 4.3% Q2 26, 7.8% Q3 26) vs. ~20% in 2020; exact FY25/FY26 dollar export-control revenue loss not disaggregated (**N/A**, checked FY25 10-K & Q1–Q3 26 10-Qs). | | | | | | ONTO Q3 22 Call (2022-10-27); FY23, FY24 & FY25 10-Ks Item 1A & MD&A; Q3 26 10-Q `R77.htm` |
+
+*Between Q1 2026 10-Q and Q2 2026 10-Q (`6M26 − Q2 26`), Onto reclassified $24.5M of Q1 2026 revenue into U.S. (+$24.5M) from China (−$10.7M), Japan (−$3.7M), Europe (−$3.5M), South Korea (−$3.1M), SE Asia (−$2.4M), and Taiwan (−$1.0M). †Q4 2025 standalone geographic dollars: **N/A** (FY25 10-K Note 15 dollar table truncated in SEC search extract; 9M 2025 verified in Q3 26 10-Q `R77.htm`).
+
+### 1C. Single-Source Supply Bottlenecks & Semiconductor Downturn Drawdowns (2019 & 2023)
+
+| Risk / Stress Metric | Verified Figure / Mechanism | Date / Period | Primary Source |
+| :--- | :--- | :--- | :--- |
+| **Single-Source Suppliers (Lasers / Optics / Stages)** | • **Sole/single-source reliance:** FY25 10-K Item 1A states a number of components/subassemblies are sole-sourced or single-sourced without long-term contracts, including **components sourced from a supplier in Israel** (escalating Middle East conflict flagged in FY24/FY25 10-K & Q3 26 10-Q).<br>• **Supplier requalification times:** **Up to 12 months** to qualify new suppliers for **lasers and certain optics**; **up to 9 months** for other components (stages/subassemblies); standard component delivery lead times **>6 months**.<br>• **2026 status & field lead times:** CFO (Q3 2026 Call, Nov 9, 2026) confirmed ***"we have not seen lead time extensions"*** despite precision-optics and freight cost pressures (contrasting with KLA's >12-month Gen4/Gen5 optical component bottleneck). Exact tool lead-time months: **N/A** (checked ONTO FY25 10-K & Q1–Q3 26 calls). | FY2024 – Nov 9, 2026 | ONTO FY24 10-K & FY25 10-K Item 1A; Q1–Q3 26 10-Qs & Q3 26 Call (2026-11-09) |
+| **Downturn #1 — 2019 Cycle (Pre-Merger Standalone & Reverse Merger)** | Onto formed Oct 25, 2019 via Rudolph–Nanometrics merger (Rudolph = accounting acquirer; FY18 pro forma combined = $599M rev, 27% Non-GAAP OM incl. $20M synergies).<br>• **Nanometrics standalone (OCD/front-end):** Peak Q2 2018 **$88.6M** (GAAP OM **23.5%**, Non-GAAP **24.2%**) → Trough Q1 2019 **$67.1M** (**−24.3% rev**; GAAP OM **5.0%** [−1,850 bps]; Non-GAAP OM **8.5%** [−1,570 bps]); Q2 2019 $67.6M (5.5% GAAP / 9.4% Non-GAAP OM).<br>• **Rudolph standalone (AP/inspection/litho):** Peak Q1 2018 **$73.1M** (GAAP OM **23.9%**, $17.5M) → Trough Q1 2019 **$60.9M** (**−16.7% rev**; GAAP OM **12.5%** [−1,140 bps]); Q3 2019 $62.9M (GAAP OM **8.4%** [−1,550 bps] incl. merger costs).<br>• **Reported Onto GAAP (annual):** FY18 **$273.8M** (GAAP OM **18.7%**, $51.1M) → FY19 **$305.9M** (incl. 2 mos Nanometrics; GAAP OM **−1.7%**, −$5.04M [−2,040 bps] incl. $15.4M merger inventory step-up & $7.8M E&O). Pro forma combined FY19 full-year revenue: **N/A** (truncated in FY19 10-K Note 3 extract). | Q1 2018 – Q4 2019 | Rudolph Q4 18 & Q1–Q3 19 Releases; Nanometrics Q4 18 & Q2 19 Releases; Merger 8-K Ex-99.5 (2019-06-24); ONTO FY19 & FY20 10-Ks |
+| **Downturn #2 — 2023 Cycle (Combined ONTO)** | • **Annual FY2022 → FY2023:** Revenue **$1,005.2M → $815.9M (−18.8%)**; GAAP OM **23.5% → 14.2% (−932 bps)**; Non-GAAP OM **30.0% → 24.0% (−606 bps)**.<br>• **Quarterly Revenue Peak → Trough (Q2 2022 → Q2 2023):** Revenue **$256.3M → $190.7M (−25.6%)**; GAAP OM **22.4% → 13.0% (−940 bps)**; Non-GAAP OM **28.5% → 21.3% (−724 bps)**.<br>• **Quarterly Margin Peak → Trough (Q4 2022 → Q2 2023 / Q4 2023):** Revenue $253.3M → $190.7M (−24.7%); GAAP OM **24.2% → 13.0% (−1,116 bps)** in Q2 23 (**12.9% / −1,127 bps** in Q4 23 incl. $9.5M litigation & $5.1M restructuring); Non-GAAP OM **30.0% → 21.3% (−876 bps)** in Q2 23. | Q2 2022 – Q4 2023 | ONTO Q2 23 Release (2023-08-10); Q4/FY23 Release (2024-02-08); FY23 & FY24 10-Ks |
+
+### 2. Verified Competitive Flow (Last 24 Months: Nov 2024 – Nov 2026 — Non-Onto Primary Sources)
+
+| Competitor | Verified Order / Socket Wins & Revenue Scale (Non-Onto Primary Filings / Calls) | Direct Overlap or Displacement vs. Onto | Date + Non-Onto Primary Source |
+| :--- | :--- | :--- | :--- |
+| **KLA Corporation (`KLAC`)**<br>(`Kronos`, `CIRCL-AP`, `PWG5`, `SpectraShape`, `Voyager`/`Puma`, Gen4 `29xx`) | • **AP Scale:** Total AP revenue reached **~$950M in CY25** (AP Semi PC systems **$635M CY25 → ~$1.1B+ CY26E, +70%+ YoY**); KLA AP share rose **4× in 4 years** from <10% (2020) to #1 in AP process control; KLA AP Semi PC share of $10B–$12B AP tool market rose from **<1% → ~6% (CY25) → mid-7% (end-CY26E)**.<br>• **Sensitivity Migration (Q1 FY27 Call, Oct 28, 2026):** CFO Bren Higgins confirmed `Kronos` remains packaging workhorse while demand shifts from macro toward **~100 nm logic hybrid-bonding sensitivity**, pulling KLA front-end `Voyager`/`Puma` laser scanning and Gen4 `29xx` BBP tools into packaging.<br>• **BS-PDN & W2W Bonding:** `PWG5 XT` + `Archer 750/800` + `5D Analyzer` validated with imec (SPIE Apr 2026); `SpectraShape 11k/12k` holds GAA/DRAM OCD sockets (Micron+KLA SPIE Apr 2026). | **Direct Overlap & Displacement:** (1) `Kronos` + `Voyager` + Gen4 `29xx` directly compete with Onto `Dragonfly G3/G5` on CoWoS/2.5D & logic hybrid-bonding inspection (Onto FY25 10-K MD&A confirmed FY25 AI packaging inspection units fell YoY while KLA AP grew ~70% YoY in CY25). (2) KLA `PWG5 XT` + `irArcher 007` + `SpectraShape` overlap Onto `3Di` / `Atlas` on interposer shape, Cu recess, and GAA OCD. (3) **Non-overlap:** KLA has no panel lithography (`JetStep`), no PLA buried-void tool (`EchoScan`), and no non-contact corona-Kelvin electrical tool (`Semilab FAaST`). | KLA Investor Day Slides & Transcript (2026-03-12); KLA Q1 FY26 Call (2025-10-29), Q3 FY26 Call (2026-04-29), FY26 10-K (2026-08-06), Q1 FY27 Call (2026-10-28); SPIE (2026-04-08) |
+| **Camtek Ltd. (`CAMT`)**<br>(`Eagle G5`, `Hawk`) | • **Revenue & Orders:** FY25 record $496.1M; Q3 2026 record **$161.3M (+28% YoY)**; Q4 guide ~$180M; **CY26E ~$595M (+20% YoY)**; **CY27E >$800M (+35% YoY)**; **>$800M YTD 2026 orders** (~80% AP; >50% OSATs); **`Eagle G5` + `Hawk` = ~57% of Q3 26 systems revenue**.<br>• **Verified Multi-System Wins:** **>$50M** initial `Hawk` orders (Nov 27, 2024); **~$25M** `Hawk` IDM AI order (Feb 11, 2026); **$31M** Tier-1 OSAT order (Mar 30, 2026); **>$105M** orders (**$55M** Tier-1 OSAT + **>$50M** all-`Hawk` HBM player for 2027 delivery, Jun 2, 2026); Intel 2025 EPIC Award (Apr 9, 2025); acquired **Visual Layer** (Apr 14, 2026) for visual AI inspection. | **Direct Head-to-Head Dual-Sourcing:** Camtek `Eagle G5` (2D/3D bump metrology) and `Hawk` (sub-micron 2D inspection + 3D metrology) compete directly socket-for-socket with Onto `Dragonfly G3/G5` and `3Di` across Tier-1 OSATs (CoWoS/2.5D) and HBM4 manufacturers; Camtek's >$50M all-`Hawk` HBM order (Jun 2026) confirms active dual-sourcing alongside Onto's >$240M HBM VPA. Visual Layer acquisition directly challenges Onto `TrueADC`/`Discover`. | Camtek FY25 20-F (2026-03-19); Camtek Q3 26 6-K Pre-release (2026-10-14) & Q2/Q3 26 Calls (2026-08-10, 2026-11-04); Camtek Press Releases (Nov 2024 – Jun 2026) |
+| **Nova Ltd. (`NVMI`)**<br>(`PRISM`, `WMC`, `Metrion`, `ELIPSON`, `AncoScene`, `VeraFlex`) | • **Revenue & GAA Scale:** FY25 **$881M (+31% YoY)**; Q3 2026 record **$287.8M (+28% YoY)**; LTM crossed **$1.0B** (Q4 guide $305M–$315M); on track for **$500M cumulative GAA revenue (2024–2026)**; GAA metrology intensity **+30% vs. FinFET**.<br>• **Verified Socket Wins:** `PRISM 2` qualified by leading logic maker for **BS-PDN front-end** with multi-tool orders (Oct 2024); `ELIPSON` (Raman) selected TOR at leading global foundry for GAA (Oct 2025); `Metrion` (SIMS) adopted by **4 of 5 major customers** (Q3 26); `AncoScene` released to HVM at leading foundry (Q3 26); **`Nova WMC`** (modular AP optical/interferometric dimensional metrology) named **TOR after competitive evaluation** at leading global foundry for multiple AP layers (Jul 2, 2026 Form 6-K) with **>10 customers** across logic, OSAT & HBM (AP = ~20% of Nova product revenue; integrated metrology share **>70%**). | **Direct Overlap & Pressure:** (1) `Nova PRISM` standalone OCD (incl. BS-PDN qualification) and >70%-share integrated metrology directly compete with Onto `Atlas G6` and `IMPULSE V`. (2) `Nova WMC` competitive TOR win at a leading foundry + >10 AP/HBM customers directly overlaps Onto's AP dimensional/warpage metrology (`Dragonfly`/`3Di`). (3) Nova's $500M cumulative 2024–2026 GAA revenue + 59% Non-GAAP GM outscale Onto's front-end GAA franchise. | Nova FY25 20-F (2026-02-17); Nova Form 6-K (2026-07-02); Cantor Conf (2026-03-10); Nova Q1–Q3 26 Calls (2026-05-14, 2026-08-06, 2026-11-05) |
+| **Skyverse (`688361.SS`, 中科飞测)** | • **Revenue:** FY24 **RMB 1.380B (+54.9% YoY)**; H1 2026 **RMB 941M (+34.0% YoY)** (Inspection RMB 641.5M [+50.5%], Metrology RMB 265.6M [+3.9%]); **9M 2026 RMB 1.614B (+34.3% YoY)**; Q3 2026 RMB 673M (+34.7% YoY, flipped profitable RMB 32M); R&D RMB 635M (39.3% of 9M rev).<br>• **Tool Qualifications (H1 2026 Report):** Mature-node brightfield & darkfield patterned inspection in volume shipments at domestic logic/memory/AP fabs; **HBM 3D AOI & 3D topography metrology qualified at domestic customers AND multiple overseas AP customers with volume shipments**; HAR etch metrology deployed at domestic memory fabs. | **China Localization & Overseas AP Entry:** Directly replaces U.S. inspection/metrology tools in China (where Onto fell to 6.1% of 9M 26 revenue under BIS rules) and marks first verified **overseas AP** volume shipments in 3D AOI/topography overlapping `Dragonfly`/`3Di`. | Skyverse FY25 Annual Report Summary (2026-04-25), H1 2026 Report (2026-08-26) & Q3 2026 Report (Oct 2026) [SSE] |
+| **Jingce Electronic (`300567.SZ`, 精测电子)** | • **Semiconductor Revenue & Backlog:** FY25 semiconductor revenue **RMB 1.318B (+71.6% YoY)**, GM 49.65%, flipped profitable (RMB 112.2M), >60% new semi orders in **<28 nm** nodes; H1 2026 semiconductor revenue **RMB 644M (+14.6% YoY)**; semiconductor backlog surged **+98% YoY to RMB 3.609B (~$541M)** (~70% of total backlog).<br>• **Tool Qualifications (FY25 & H1 26 Reports):** **Film thickness, OCD, and e-beam tools completed 7nm delivery and acceptance**; brightfield defect inspection accepted at 28 nm and delivered with new orders at 14 nm; **AP & glass-substrate TGV metrology** tools delivered in multiple units to production lines. | **China OCD, Film & Glass-Substrate Overlap:** Domestic 7nm OCD & thin-film acceptance + RMB 3.6B semi backlog directly competes with Onto `Atlas` / `Iris` / `Element` in China fabs and targets glass-substrate TGV metrology where Onto pitches `JetStep`/`Firefly`/`Atlas`. | Jingce FY25 Annual Report (2026-04-28) & H1 2026 Interim Report (Aug 2026) [SZSE] |
+
+### 3. Disputed Facts Ledger (Neutral Audit — 4 Rows)
+
+| Management Claim (+ Date) | External Supporting Evidence | External Contradicting Evidence |
+| :--- | :--- | :--- |
+| **`Dragonfly G5` Share vs. KLA & Camtek:**<br>Onto qualified `Dragonfly G5` (<200 nm / 150 nm spec; 3×–5× G3 speed) at a 2.5D logic customer (Apr 16, 2026), reached >10 customers with 2027 G5 POs = 2× 2026 G5 revenue, won SK hynix Best Partner Award for HBM (Oct 12, 2026), and guided AP >80% YoY in CY26 (Q3 2026 Call, Nov 9, 2026). | • Onto Q3 2026 revenue surged +87.8% YoY to $409.7M with >$1.3B backlog (+20% QoQ), >$240M HBM VPA (Feb 2026), and >$200M OSAT `Dragonfly` orders (Q2 2026) (ONTO Q3 26 8-K & Calls).<br>• SK hynix Best Partner Award (Oct 12, 2026) confirms HBM production adoption. | • **KLA** grew AP PC systems **+70%+ YoY to ~$1.1B+ in CY26E** (from $635M CY25 / ~$950M total AP), quadrupled share in 4 yrs, and is pulling `Voyager` + Gen4 `29xx` (~100 nm) into logic hybrid bonding (KLA Q1 FY27 Call, Oct 28, 2026).<br>• **Camtek** booked **>$800M YTD 2026 orders** (incl. >$50M all-`Hawk` HBM order & $55M Tier-1 OSAT order, Jun 2, 2026) with `Eagle G5`/`Hawk` at 57% of Q3 systems rev and CY27E >$800M (Camtek Q3 26 Call, Nov 4, 2026).<br>• Onto FY25 10-K confirmed FY25 AI packaging inspection units fell YoY under `G3` (~800 nm limit); Onto has not disclosed exact `G5` dollar share of inspection revenue. |
+| **`EchoScan` PLA Commercial Readiness:**<br>Announced `EchoScan` (Jan 14, 2025) to detect 1 μm buried hybrid-bond voids in atmosphere *"at the same speed as incumbent technologies limited to ~10 μm"* with initial shipment slated Q1 2025; CEO noted *"if it reaches its full potential, should be much faster"* (Q1 2026 Call, May 5, 2026). | • Peer-reviewed **Samsung Electronics + Onto** SPIE paper (Apr 8, 2026) verified **1 μm void imaging under 665 μm Si** for both metal-metal and dielectric-dielectric bonds without water immersion (overcoming SAM ≥10 μm limit and IR/X-ray metal blockage).<br>• KLA FY26 10-K and Aug 2026 IMAPS paper confirm KLA has no post-bond buried-void PLA/SAM tool. | • **Zero HVM qualification or commercial revenue** disclosed for `EchoScan` across FY25 10-K or Q1–Q3 2026 filings/calls (`N/A`).<br>• Samsung + Onto SPIE paper (Apr 8, 2026) confirms dielectric-dielectric bonds launch **zero acoustic waves** (relying on thermal decay), requires **point-by-point 2D raster scanning** (fast fixed-delay mode only if echo time is pre-known), and omits WPH throughput and multi-die HBM stack attenuation limits.<br>• KLA IMAPS (Aug 11, 2026) places HBM hybrid bonding out at 16H/20H future roadmap (8H–16H remain TCB). |
+| **`Semilab` / `Rigaku` Strategic Payback:**<br>Paid $520.5M revised fair value for Semilab USA (Nov 17, 2025; guided accretive in 2026) and $719.5M cash for 27% of Rigaku (Aug 10, 2026; expecting `Ai Diffract` licensing + >$7M dividends to offset foregone interest within 1 yr and unlock N+2/1nm hybrid optical+X-ray metrology; Q1 & Q3 2026 Calls). | • Joint Onto+Rigaku+TEL+UAlbany GAA studies (J. Appl. Phys. Oct 2025; SPIE JM3 Nov 2024) confirm optical OCD suffers parameter correlation requiring XRD/XRF hybrid feed-forward.<br>• Onto won 2 competitive joint `Ai Diffract` + Rigaku `CD-SAXS` customer selections by Apr/May 2026; Semilab generated $27.1M rev / +$13.4M GAAP OpInc in Q1 2026 (Q1 26 10-Q Note 2). | • **Semilab carve-out & earnings volatility:** DOJ Second Request forced exclusion of `EIR` FTIR line (~10% of Semilab rev); Semilab posted **$(6.2)M GAAP OpLoss** in Q4 25 ($8.6M rev), **$(2.8)M GAAP OpLoss** in Q3 26 ($22.5M rev), and **$(11.8)M 9M 2026 GAAP OpLoss** on $68.6M rev (Q3 26 10-Q Note 2), amid an ~10% power/SiC downturn.<br>• **Rigaku balance-sheet & timeline drag:** Funded via $1.5B convertible debt (flipping Onto to **−$248.5M net cash** vs. debt face); booked **$(40.8)M Q3 26 unrealized loss** ($678.7M carrying value); management concedes hybrid optical+X-ray HVM volume is **2+ years away** (N+2/1nm). |
+| **Software / AI Pricing Durability:**<br>Onto positions `Discover`, `TrueADC`/`In-line ADC+` (up to 95% nuisance reduction), and `Ai Diffract` (~100% GM Rigaku licensing) as factory-wide and cross-tool process control expanding value capture (FY25 10-K; Q1 26 Call, May 5, 2026; SPIE May 28, 2026). | • `Ai Diffract` achieved standalone ~100%-margin software licensing onto Rigaku CD-SAXS tools (2 customer selections by May 2026).<br>• Tool-embedded `In-line ADC+` demonstrated up to 95% nuisance defect reduction in HVM (SPIE May 28, 2026).<br>• Deferred revenue grew +46.2% in 9M 2026 ($38.1M → $55.7M, Q3 26 10-Q). | • **Shrinking recurring mix:** SEC over-time recurring revenue fell from **6.9% (FY25)** to **5.5% (Q3 26)** (vs. KLA's >80% of 20.6%–23.0% Services revenue on >3-yr fixed subscriptions); management's "Software & Services" fell from **23% (Q3 25)** to **14.6% ($60M, Q3 26)**; standalone licenses recognize upfront point-in-time.<br>• **Cross-tool barriers & in-house AI:** Onto's SPIE Apr 2024 paper admits rival AOI vendors block inline access (`KLARF` offline only); KLA `Klarity` sits in 95% of fabs; Tier-1 fabs build on-premise AI platforms (SPIE Apr 10, 2026); Camtek acquired Visual Layer (Apr 2026) and PDF Solutions grew Q3 26 platform rev +22% YoY at 77% GM. |
+
+### Direct Primary Source URLs (One Per Filing / Document)
+
+| Source / Filing | Period / Event Date | Filing / Pub Date | Direct Primary URL |
+| :--- | :--- | :--- | :--- |
+| **ONTO FY2025 Form 10-K** | FY ended Jan 3, 2026 | 2026-02-24 | https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm |
+| **ONTO Q1 2026 Form 10-Q** | Q1 ended Mar 31, 2026 | 2026-05-05 | https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm |
+| **ONTO Q2 2026 Form 10-Q** | Q2 ended Jun 30, 2026 | 2026-08-06 | https://www.sec.gov/Archives/edgar/data/704532/000119312526338401/onto-20260630.htm |
+| **ONTO Q3 2026 Form 10-Q** | Q3 ended Sep 30, 2026 | 2026-11-09 | https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm |
+| **ONTO Q3 2026 Form 8-K (Ex-99.1)** | Q3 ended Sep 30, 2026 | 2026-11-09 | https://www.sec.gov/Archives/edgar/data/704532/000119312526453582/onto-ex99_1.htm |
+| **ONTO FY2024 Form 10-K** | FY ended Dec 28, 2024 | 2025-02-25 | https://www.sec.gov/Archives/edgar/data/704532/000095017025026729/onto-20241228.htm |
+| **ONTO FY2023 Form 10-K** | FY ended Dec 30, 2023 | 2024-02-27 | https://www.sec.gov/Archives/edgar/data/704532/000095017024020150/0000950170-24-020150-index.htm |
+| **ONTO FY2019 Form 10-K** | FY ended Dec 31, 2019 | 2020-02-28 | https://www.sec.gov/Archives/edgar/data/704532/000156459020006357/onto-10k_20191231.htm |
+| **ONTO Investor Relations (Calls & Releases)** | Q1 19 – Q3 26 Calls/PRs | 2019 – 2026 | https://investors.ontoinnovation.com |
+| **KLA FY2026 Form 10-K** | FY ended Jun 30, 2026 | 2026-08-06 | https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm |
+| **KLA Q1 FY2027 Form 8-K (Ex-99.1)** | Q1 ended Sep 30, 2026 | 2026-10-28 | https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm |
+| **KLA 2026 Investor Day Slides** | CY25 Actuals / CY30 Model | 2026-03-12 | https://d1io3yog0oux5.cloudfront.net/_3a034dffd9dd75e789bd5c0c859681ae/klatencor/db/1091/10658/pdf/2026+Investor+Day+Master+Final_IR+copy.pdf |
+| **Camtek FY2025 Form 20-F** | FY ended Dec 31, 2025 | 2026-03-19 | https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/0001178913-26-001561-index.htm |
+| **Camtek Q3 2026 Form 6-K Pre-Release** | Q3 26 / CY26E / CY27E | 2026-10-14 | https://www.sec.gov/Archives/edgar/data/1109138/000117891326004767/zk2636225.htm |
+| **Camtek Investor Relations (Q3 26 & Orders)** | Nov 2024 – Nov 2026 | 2024 – 2026 | https://www.camtek.com |
+| **Nova FY2025 Form 20-F** | FY ended Dec 31, 2025 | 2026-02-17 | https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm |
+| **Nova Form 6-K (`Nova WMC` TOR Win)** | Advanced Packaging Win | 2026-07-02 | https://www.sec.gov/Archives/edgar/data/1109345/000117891326003080/zk2635640.htm |
+| **SPIE 2026: Samsung + Onto PLA Buried Voids** | HBM Hybrid Bonding | 2026-04-08 | https://doi.org/10.1117/12.3095356 |
+| **J. Appl. Phys.: Onto + Rigaku + TEL GAA OCD** | 8-Layer GAA NWTS | 2025-10-28 | https://doi.org/10.1063/5.0285160 |
+| **SPIE 2026: Onto Unified `In-line ADC+`** | HVM Defect Classification | 2026-05-28 | https://doi.org/10.1117/12.3104197 |
+| **SPIE 2024: Onto `TrueADC` & `KLARF` Limits** | Third-Party AOI Access | 2024-04-09 | https://doi.org/10.1117/12.3000815 |
+| **KLA IMAPS 2026: Hybrid Bonding Roadmap** | HBM TCB vs. Hybrid Bond | 2026-08-11 | https://doi.org/10.4071/001c.171430 |
+| **Skyverse (`688361.SS`) SSE Disclosures** | FY25 / H1 26 / Q3 26 | 2026-04 – 2026-10 | https://www.sse.com.cn |
+| **Jingce Electronic (`300567.SZ`) SZSE Filings** | FY25 / H1 26 | 2026-04 – 2026-08 | https://www.szse.cn |
+
+## [20] USER
+
+TARGET #2 (ONTO) — RUN STEP 6 (FINAL, CONCISE — NO URL RE-VERIFICATION):
+1. Hard Catalyst Calendar (Next 18 Months: Nov 2026 – May 2028): Dated events only — `Dragonfly G5` front-end qual target, `EchoScan` PLA / HBM4 hybrid-bonding milestones, `JetStep` 2027 AI panel ramp, Andover HQ move, Semilab integration / Rigaku joint `Ai Diffract`+`CD-SAXS` milestones, buyback/convertible call dates, regulatory deadlines.
+2. Verification Gap Log: Concise bullet list of every material item that returned N/A across Steps 1–5.
+3. Master Handoff Table (include KLA's available Step 1 metrics + Onto's complete row — we will copy this table into our next fresh chat):
+   | Company | Ticker/Country | Latest Qtr | Theme % | LTM Rev & YoY | GAAP / Non-GAAP GM% | 9M/LTM FCF & SBC/FCF | Over-Time Recurring % | China % | Inventory Signal | Past Downturn Drawdown | Core Moat vs. Main Vulnerability |
+
+Strict facts only. List any newly cited URLs once at the bottom.
+
+## [21] MODEL
+
+[executableCode]
+```python
+# Verify ONTO LTM (Q4 2025 + Q1 2026 + Q2 2026 + Q3 2026) vs Prior LTM (Q4 2024 + Q1 2025 + Q2 2025 + Q3 2025)
+# All exact $ thousands from Onto SEC 10-K & 10-Qs verified in Steps 2 & 3
+onto_ltm_rev = 266866 + 291949 + 343129 + 409748
+onto_py_ltm_rev = 263939 + 266607 + 253597 + 218193
+onto_ltm_yoy = (onto_ltm_rev / onto_py_ltm_rev - 1) * 100
+
+# Verify ONTO LTM FCF & SBC/FCF
+# Q4 2025: OCF 94,996k, CapEx 5,129k, FCF 89,867k; SBC = 27,617 - 20,378 = 7,239k (from FY25 10-K verified in Step 3!)
+# Wait: check if FY25 SBC 27,617k was verified verbatim in our Step 3 outputs — let's be 100% honest:
+# In Step 3, 9M 2026 SBC=$25,831k, OCF=$166,579k, CapEx=$8,803k, FCF=$157,776k (16.4%) were verbatim verified!
+# And FY25 OCF=$328,315k, CapEx=$28,513k -> Q4 2025 OCF=$94,996k, CapEx=$5,129k, FCF=$89,867k -> LTM FCF = 89,867 + 157,776 = 247,643k ($247.6M)!
+onto_9m_fcf = 166579 - 8803
+onto_9m_sbc = 25831
+onto_ltm_fcf = (328315 - 233319) - (28513 - 23384) + onto_9m_fcf
+onto_ltm_gp_g = 123792 + 146389 + 183254 + 224482
+onto_ltm_gp_ng = 145577 + 162724 + 195512 + 236002
+
+print(f"ONTO LTM Rev (ended Sep 30, 2026): ${onto_ltm_rev/1000:.2f}M vs Prior LTM ${onto_py_ltm_rev/1000:.2f}M -> YoY = {onto_ltm_yoy:+.1f}%")
+print(f"ONTO LTM GAAP GM%: {onto_ltm_gp_g/onto_ltm_rev*100:.1f}% | LTM Non-GAAP GM%: {onto_ltm_gp_ng/onto_ltm_rev*100:.1f}%")
+print(f"ONTO 9M26 FCF: ${onto_9m_fcf/1000:.1f}M | 9M26 SBC/FCF: {onto_9m_sbc/onto_9m_fcf*100:.1f}%")
+print(f"ONTO LTM FCF: ${onto_ltm_fcf/1000:.1f}M ({onto_ltm_fcf/onto_ltm_rev*100:.1f}% of LTM rev)")
+
+# Verify KLA LTM Revenue (Q2 FY26 + Q3 FY26 + Q4 FY26 + Q1 FY27) from Step 2 verified SEC 8-Ks!
+# Q2 FY26 $3,297,146k; Q3 FY26 $3,415,078k; Q4 FY26 $3,657,556k; Q1 FY27 $4,136,015k
+# FY26 total $13,579,476k -> Q1 FY26 = 13,579,476 - (3,297,146 + 3,415,078 + 3,657,556) = 3,209,696k!
+kla_q1_26 = 13579476 - (3297146 + 3415078 + 3657556)
+kla_ltm_rev = 3297146 + 3415078 + 3657556 + 4136015
+kla_q1_27_yoy = (4136015 / kla_q1_26 - 1) * 100
+kla_ltm_gp_g = (3297146-1271210) + (3415078-1327672) + (3657556-1413108) + (4136015-1577791)
+kla_ltm_gp_ng = kla_ltm_gp_g + 38052 + 37106 + 36200 + 34929
+print(f"\nKLA Q1 FY26 derived rev: ${kla_q1_26/1000:.1f}M -> Q1 FY27 YoY: {kla_q1_27_yoy:+.1f}% (matches 28.9% in 3.4.9!)")
+print(f"KLA LTM Rev (ended Sep 30, 2026): ${kla_ltm_rev/1000000:.2f}B")
+print(f"KLA LTM GAAP GM%: {kla_ltm_gp_g/kla_ltm_rev*100:.1f}% | LTM Non-GAAP GM%: {kla_ltm_gp_ng/kla_ltm_rev*100:.1f}%")
+# KLA Theme % check: Semi PC + AP + Reticle + Services = ~90%+ of revenue; let's check KLA FY26 10-K / Step 1 facts:
+# CY25 total $12.74B: Semi PC $9.0B + Services $3.0B = $12.0B (94.2%); PCB/Display/Comp Insp remainder (~5.8%).
+# ONTO Theme % check: 100% Semiconductor Metrology, Inspection, Lithography & Process Control Software (~52% Specialty/AP, ~33% Adv Nodes, ~15% SW&Svc in Q3 26).
+print(f"KLA CY25 Semi PC + Services share: {(9.0+3.0)/12.74*100:.1f}% (PCB/Comp Insp ~5.8%)")
+
+```
+
+## [22] MODEL
+
+[codeExecutionResult: OUTCOME_OK]
+```
+ONTO LTM Rev (ended Sep 30, 2026): $1311.69M vs Prior LTM $1002.34M -> YoY = +30.9%
+ONTO LTM GAAP GM%: 51.7% | LTM Non-GAAP GM%: 56.4%
+ONTO 9M26 FCF: $157.8M | 9M26 SBC/FCF: 16.4%
+ONTO LTM FCF: $247.6M (18.9% of LTM rev)
+
+KLA Q1 FY26 derived rev: $3209.7M -> Q1 FY27 YoY: +28.9% (matches 28.9% in 3.4.9!)
+KLA LTM Rev (ended Sep 30, 2026): $14.51B
+KLA LTM GAAP GM%: 61.5% | LTM Non-GAAP GM%: 62.5%
+KLA CY25 Semi PC + Services share: 94.2% (PCB/Comp Insp ~5.8%)
+
+```
+
+## [23] MODEL
+
+### 1. Hard Catalyst Calendar (Next 18 Months: Nov 2026 – May 2028)
+
+| Target Date / Window | Event / Milestone | Documented Contractual / Operational Detail | Primary Source |
+| :--- | :--- | :--- | :--- |
+| **2026-11-16 (Ongoing; no fixed expiry)** | **$400M Share Repurchase Program** | Board authorized up to $400M common stock buybacks (replacing $99.9M remaining from Feb 2024 plan); funded from cash via open-market or private transactions; discretionary, suspendable at any time. | ONTO Form 8-K Item 8.01 (2026-11-16) |
+| **2026-11-17 / Q4 2026** | **Semilab USA 1-Year Close & PPA Finalization** | One-year anniversary of Nov 17, 2025 acquisition closes ASC 805 measurement-period purchase price allocation (after −$18.2M goodwill adjustment and $6.5M working-capital refund through Q3 2026). | ONTO Q3 2026 10-Q Note 2 (2026-11-09) |
+| **Q4 2026 (Ended Dec 31, 2026; report expected Feb 2027)** | **Q4 2026 Guidance, `3Di` Step-Up, `Atlas` TSV & Asia Factory Target** | Revenue guided **$430M–$450M** (FY26E $1.485B midpoint, >45% YoY); Non-GAAP GM **57.7%–58.3%**; Non-GAAP OM **33.5%–34.5%**; `3Di` Q4 rev >Q1–Q3 2026 combined; initial `Atlas` TSV shipments H2 2026; Asia extended contract-manufacturing capability targeted **>60%** by end-2026. | ONTO Q3 2026 8-K Ex-99.1 & Call (2026-11-09) |
+| **2027-01-01 (FY beginning after Dec 15, 2026)** | **FASB ASU 2024-03 Annual Adoption** | Mandatory annual footnote disaggregation of inventory purchases, employee compensation, selling expense, and depreciation (interim reporting mandatory starting Jan 1, 2028). | ONTO Q2 & Q3 2026 10-Q Note 1 |
+| **H1 2027 (Jan – Jun 2027)** | **Sequential Revenue Growth & Backlog Conversion** | Management guided sequential revenue expansion through at least H1 2027 supported by **>$1.3B** Q3 2026 backlog (+20% QoQ). | ONTO Q3 2026 Call (2026-11-09) |
+| **CY2027 (Jan – Dec 2027)** | **`Dragonfly G5` Front-End Qual & 2× Volume Ramp + HBM VPA** | Front-end wafer inspection evaluations targeted to close in 2027 (zero 2026 rev expected); 2027 `Dragonfly G5` POs = **2×** 2026 G5 revenue; **>$240M** HBM volume purchase agreement deliveries extend through 2027. | ONTO Q1 & Q3 2026 Calls (2026-05-05, 2026-11-09) |
+| **CY2027 (Jan – Dec 2027)** | **`JetStep` AI Panel-Level Packaging Ramp** | Two AI-supplier `JetStep` qualifications (initiated Q1 2026) target 2027 production ramp; panel backlog supports **>40% YoY growth in CY2027** with orders booked into 2028. | ONTO Q1 & Q3 2026 Calls |
+| **CY2027 (Upon TI completion / ≤12 mos post-delivery)** | **Andover, MA Headquarters Lease Commencement** | 13-year lease (signed Jun 18, 2026) for **159,947 sq ft** at 3000 Minuteman Rd, Andover, MA (~$17/sq ft initial rent) replacing Wilmington, MA HQ; expected commencement in 2027. | ONTO Q2 & Q3 2026 10-Q Note 8 |
+| **2027-08-10 (1 Yr Post-Rigaku Close)** | **Rigaku 1-Year Interest-Offset & Joint `Ai Diffract`+`CD-SAXS` Checkpoint** | Management targeted standalone `Ai Diffract` licensing onto Rigaku X-ray tools + >$7M annual Rigaku dividends to offset foregone interest on the $719.5M stake within 1 year of Aug 10, 2026 close. Rigaku AGM board-seat election date: **N/A** (checked Q3 26 10-Q & Aug 10, 2026 PR). | ONTO Q1 2026 Call (2026-05-05); Q3 2026 10-Q Note 2 |
+| **2028-01-01 (FY & interims beginning after Dec 15, 2027)** | **FASB ASU 2025-06 Software Cost Standard** | Effective date for revised internal-use software capitalization threshold (annual & interim periods). | ONTO Q2 & Q3 2026 10-Q Note 1 |
+| **Post-Window / Undated (Outside May 2028)** | **`EchoScan` HVM / Rigaku Hybrid HVM / 2031 Convert Call** | • **`EchoScan` PLA / HBM4 hybrid-bonding HVM date:** **N/A** (no dated milestone in FY25 10-K or Q1–Q3 2026 calls; KLA IMAPS Aug 2026 places HBM hybrid bonding at future 16H/20H).<br>• **Rigaku optical+X-ray HVM:** Guided 2+ years out (~2028+ / N+2 & 1nm; Q1 2026 Call).<br>• **2031 Convertible Notes ($1.5B, $381.80 conv):** Non-callable before **2029-06-06** (130% trigger); maturity **2031-06-01** (Q3 26 10-Q Note 7). | ONTO Q1 2026 Call; Q3 2026 10-Q Note 7; KLA IMAPS (2026-08-11) |
+
+### 2. Verification Gap Log (Material `N/A` Items Across Steps 1–5)
+
+- **`EchoScan` PLA HVM status, throughput & stack depth (Steps 1, 5):** No HVM qualification, revenue, WPH/die-scan speed, or >1-die HBM stack attenuation disclosed (checked ONTO FY25 10-K, Q1–Q3 2026 10-Qs/calls, SPIE `10.1117/12.3095356`).
+- **Backside Power (BS-PDN) tool qualifications (Step 1):** No BS-PDN-specific HVM tool wins or wafer-bonding overlay disclosures for Onto (checked ONTO FY25 10-K, Q1–Q3 2026 calls, SPIE 2024–2026).
+- **Software & Services monetization granularity (Steps 1, 2):** Standalone `Discover`/`TrueADC`/`Ai Diffract` dollar revenue (bundled inside SEC `Systems & software`), seat vs. per-tool pricing split, Services contract-vs.-T&M %, updated contract-covered tool count post-2023 (~800 tools in Jun 2023), and AI automation effect on billable app-engineering hours undisclosed (checked ONTO FY25 10-K, Q1–Q3 2026 10-Qs/calls; KLA Step 1 also `N/A` on AI app-engineering hours).
+- **Reference-data MSA clauses & fab requalification cost ($) (Step 1):** Verbatim customer MSA ownership clauses for SEM/TEM/GDS reference data and audited per-tool fab requalification dollar costs undisclosed (checked ONTO FY25 10-K, KLA FY26 10-K, Nova/Camtek FY25 20-Fs, SPIE 2024–2026).
+- **Balance-sheet & P&L sub-schedules (Steps 2, 3):** Standalone RPO (current vs. non-current), separate Customer Deposits/Advances, Book-to-Bill ratio, quarterly Purchase Commitments (annual FY25 $256.4M only), and Non-GAAP R&D line undisclosed (checked ONTO FY25 10-K, Q1–Q3 2026 10-Qs/calls).
+- **Full-year FY2025 SBC & Proxy p. 76 aggregate insider table (Step 3):** Exact FY25 full-year SBC cash-flow line and 2026 DEF 14A p. 76 aggregate group ownership row truncated in SEC extracts (9M 2026 SBC/FCF 16.4% and Form 4 direct holdings 0.66% across 11 officers/directors excl. Dolev verified; checked ONTO FY25 10-K & 2026 DEF 14A).
+- **Geographic, customer & cycle sub-splits (Step 4):** Q4 2025 standalone geographic dollars (FY25 10-K Note 15 extract), Q2–Q3 2026 individual >10% revenue customer shares, exact tool lead-time months, FY25–FY26 China export-control dollar revenue impact, and combined pro forma FY19 full-year revenue undisclosed/truncated (checked ONTO FY19–FY25 10-Ks, Q1–Q3 2026 10-Qs/calls).
+- **Customer warrants & Rigaku board-election date (Steps 3, 6):** Zero customer warrants disclosed; Rigaku shareholder-meeting date for Onto board-seat election undisclosed (checked ONTO FY25 10-K, Q1–Q3 2026 10-Qs, 2026 DEF 14A).
+
+### 3. Master Handoff Table (Locked Baseline for Fresh Chat)
+
+| Company | Ticker/Country | Latest Qtr | Theme % | LTM Rev & YoY | GAAP / Non-GAAP GM% | 9M/LTM FCF & SBC/FCF | Over-Time Recurring % | China % | Inventory Signal | Past Downturn Drawdown | Core Moat vs. Main Vulnerability |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **KLA Corporation** *(Paused after Step 1)* | KLAC / USA | Q1 FY27 (Sep 30, 2026) | 94.2% Semi PC + Services (CY25: $9.0B Semi PC + $3.0B Svc / $12.74B; ~5.8% PCB/Comp Insp) | LTM $14.51B (Q1 FY27 $4.14B, +28.9% YoY; LTM YoY pending Step 2) | Q1 FY27: 61.9% / 62.7% (LTM: 61.5% / 62.5%) | Q1 FY27 FCF $1.34B (OCF $1.53B − CapEx $195M); 9M/LTM FCF & SBC/FCF pending Steps 2–3 | Q1 FY27 Services 20.6% ($850M; FY26 23.0%), >80% on >3-yr fixed subscriptions (~16.5%–18.4% of total rev) | Pending Step 4 (Q1 FY27 10-Q: China +49% QoQ / +13% YoY; exact SEC % pending) | Pending Step 3 (Backlog $12.57B Jun 30, 2026 vs. $7.86B Jun 30, 2025; Gen4/Gen5 lead times >12 mos) | Pending Step 4 | **Moat:** >57k installed tools (>24-yr median life), sole-sourced CaF2 BBP optics, `Klarity` in 95% of fabs, >80% >3-yr service subscriptions, 60-mo `TeraBeam 8xx` N2 reticle qual. **Vulnerability:** `Actinic 7xx` still Early Demo (Lasertec `ACTIS` sole HVM actinic), zero post-bond buried-void PLA tool, Gen4/Gen5 optical bottlenecks (>12-mo lead times). |
+| **Onto Innovation** *(Steps 1–6 Complete)* | ONTO / USA | Q3 2026 (Sep 30, 2026) | 100% Semi Process Control & Packaging Litho (Q3 26: ~52% Spec/AP, ~33% Adv Nodes, 14.6% SW&Svc) | LTM $1,311.7M (+30.9% YoY vs. $1,002.3M); Q3 26 $409.7M (+87.8% YoY) | Q3 26: 54.8% / 57.6% (LTM: 51.7% / 56.4%; SBC included in Non-GAAP) | 9M 26 FCF $157.8M (SBC/FCF 16.4%; Q3 26 11.4%); LTM FCF $247.6M (18.9% rev; LTM SBC/FCF N/A — FY25 SBC cell N/A) | 5.5% Q3 26 (6.1% 9M 26; 6.9% FY25); Deferred Rev $55.7M (+46.2% in 9M 26) | 7.8% Q3 26 (6.1% 9M 26, $63.8M; down from ~20% in 2020 under BIS rules) | $424.2M (+42.2% in 9M 26): Raw $313.4M (+50.6%), WIP $80.5M (+34.7%), FG $30.3M (−0.6%); Backlog >$1.3B; no lead-time extension | **2023:** FY rev −18.8% (GAAP OM −932 bps, NG −606 bps); Q2 22→Q2 23 rev −25.6% (Q4 22→Q2 23 GAAP OM −1,116 bps, NG −876 bps). **2019 (pre-merger):** Nanometrics −24.3% rev (−1,850 bps GAAP OM); Rudolph −16.7% rev (−1,140 bps GAAP OM) | **Moat:** `Dragonfly G5` (<200 nm) + `3Di` (<5 μm) AP/HBM footprint, `JetStep`/`Firefly` PLP cell, `Echo`/PLA buried-void IP (1 μm/665 μm Si w/ Samsung), Semilab non-contact electrical + Rigaku 27%/`Ai Diffract` X-ray tie-up. **Vulnerability:** Top-3 customers = 49% FY25 rev, 5.5%–6.9% over-time recurring share, KLA ($1.1B+ CY26E AP) & Camtek (>$800M YTD orders) dual-sourcing, −$248.5M net cash ($1.5B 2031 convert), Semilab $(11.8)M 9M26 OpLoss & Rigaku $(40.8)M Q3 mark-to-market loss, `EchoScan` HVM unverified. |
+
+### Newly Cited Primary URLs (Step 6)
+
+| Source / Filing | Date | Direct Primary URL |
+| :--- | :--- | :--- |
+| **KLA Q1 FY2027 Form 10-Q** | 2026-10-29 | https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm |
+| **ONTO Form 8-K ($400M Buyback) & Releases** | 2026-11-16 | https://investors.ontoinnovation.com |
