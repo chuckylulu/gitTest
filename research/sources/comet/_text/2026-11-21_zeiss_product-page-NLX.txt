@@ -1,0 +1,256 @@
+
+
+NLX | ZEISS SMT
+
+Skip to main content
+
+                            Semiconductor Manufacturing Technology
+
+                    Opens in another tab
+
+                    back
+
+Inspiring Technology
+
+Products
+
+SMT Magazine
+
+News and Events
+
+About us
+
+Career
+
+Contact
+
+Contact
+
+Related ZEISS Websites
+
+ZEISS Group
+
+Home
+
+Products
+
+Wafer Fab Solutions
+
+NLX
+
+Semiconductor Fab Solutions
+
+          ZEISS NLX 
+
+In-line 3D X-ray inspection for advanced packaging 
+
+Advanced packaging drives semiconductor design into the third dimension, combining complex stacking and dense interconnects in ever smaller form factors. These architectures extend functional capability, but at the same time the resulting 3D structures become increasingly difficult to inspect and control using established techniques. ZEISS NLX introduces in-line 3D X-ray laminography at 300 mm wafer level, providing volumetric, non-destructive insight into internal structures within stacked dies, such as micro bumps and through silicon vias (TSVs). As an automation-ready system for semiconductor fabs, NLX
+®
+ supports the introduction of robust 3D inspection into existing process flows, from early process development to high-volume production.
+
+Non-destructive 3D X-ray inspection of advanced packaging structures 
+
+Consistent 3D imaging and analysis up to the edge of the wafer 
+
+Designed for in-line integration and high-throughput inspection 
+
+X‑Guard dose control for sensitive areas 
+
+                  Page Content
+
+          Inspection challenges in advanced packaging 
+
+Complex 3D structures require more than   2D inspection 
+
+As feature sizes shrink and device concepts move into the third dimension, advanced packaging introduces multi-layer architectures, fine‑pitch interconnects and densely stacked components. Conventional two‑dimensional X‑ray inspection remains useful for certain tasks, but it only provides projected information and offers limited access to the true three‑dimensional arrangement of structures. With rising layer count and complexity, interpreting features and defect modes from 2D projections alone becomes increasingly ambiguous. Scanning Acoustic Microscopy (SAM) can address selected use cases, but requires coupling media and is not generally suited for full‑wafer inspection or all material stacks. 
+
+At the same time, fabs must meet demanding requirements for throughput, cleanliness, automation and device protection. This combination of complex 3D structures and tight process windows creates a need for inspection systems that deliver volumetric information at wafer level and can be reliably integrated into semiconductor production.  
+
+          Imaging principle of ZEISS NLX 
+
+3D X-ray laminography for wafer-level inspection 
+
+ZEISS NLX is a 3D X-ray laminography system designed for inspection and metrology of advanced packaging structures on 300 mm wafers. It reconstructs three-dimensional volume data from multiple projections and provides access to internal features without mechanically opening or destructively preparing the sample. Quantitative results can be derived directly from the reconstructed volume, supporting both dimensional measurements and defect detection.
+
+The advantage of laminography compared to conventional CT is its suitability for flat, laterally extended samples such as semiconductor wafers. The NLX
+®
+ imaging concept is optimized to achieve very high resolution on such flat objects while capturing complex near-surface and stacked structures at wafer level. This combines high spatial resolution with a measurement geometry and acquisition strategy that support high-throughput operation for advanced packaging applications.
+
+The system architecture is aligned with semiconductor fab requirements. A ZEISS proprietary X‑ray source and a dedicated beamline are combined with a mechanical and optical design optimized for sensitivity, stability and dose control. X‑Guard complements this concept with dedicated shielding that minimizes X‑ray exposure in sensitive areas on the wafer to avoid any damage. NLX
+®
+ can be integrated as an in‑line or near‑line system in existing process flows and supports automation‑ready inspection directly at wafer level.  
+
+          Application areas 
+
+ZEISS NLX addresses inspection and metrology tasks that arise when complex 3D interconnects and stacked devices must be controlled at wafer level. The system is suited for front-end related advanced packaging developments as well as for high-volume production of established designs. 
+
+          3D metrology for advanced packaging structures 
+
+ZEISS NLX enables high-precision three-dimensional metrology for advanced packaging wafers. Solder bump height, geometry, and coplanarity are quantified in 3D to verify interconnect integrity, ensuring mechanical reliability and consistent thermal performance in advanced packages and stacked devices. Precise measurements of shift, overlay, and tilt provide critical process control for the alignment of high-bandwidth memory (HBM) and other heterogeneous integration architectures.
+
+Additional metrology capabilities include quantitative evaluation of chip gap, die spacing, and interlayer distances to assess package assembly quality, thermal interfaces, and structural integrity. Together, these measurements deliver actionable process intelligence for development, qualification, statistical process control, and manufacturing optimization
+
+          3D defect inspection of interconnects and interfaces 
+
+Beyond dimensional metrology, ZEISS NLX delivers non-destructive volumetric inspection for comprehensive defect characterization in advanced packaging interconnects. High-resolution 3D imaging enables reliable detection of voids in micro bumps and C4 bumps, as well as missing and bridged bumps that compromise electrical connectivity and package reliability.
+
+For through-silicon vias (TSVs), ZEISS NLX identifies critical defects including voids and cracks that can impact device performance and long-term reliability. The reconstructed 3D volume also enables inspection of solder joints and bonding interfaces for defects such as cold joints, providing precise localization in depth and clear differentiation of failure mechanisms for rapid process diagnosis and yield improvement. 
+
+          NLX
+®
+-100 and NLX
+®
+-100M 
+
+ZEISS NLX is available in configurations that share the same core imaging and analysis capabilities but differ in their level of automation and handling concept. 
+
+          NLX
+®
+-100 
+
+Fully automated in-line configuration for high-volume production 
+
+ZEISS NLX-100 is the fully automated in-line configuration of the platform. It includes automated wafer loading via an Equipment Front End Module (EFEM), alignment functions and integration into fab automation systems. NLX
+®
+-100 is designed for continuous use in high-volume manufacturing environments where repeatability, cleanliness and stable inspection processes are essential. It is suited for fabs that want to integrate 3D X-ray inspection as a standardized step in their advanced packaging lines.
+
+          NLX
+®
+-100M 
+
+Flexible configuration for near-line inspection and in-line process development
+
+ZEISS NLX-100M provides the same core imaging concept and software environment, but with a reduced level of automation. It is particularly suitable for near-line inspection, pilot lines and engineering tasks, where flexibility and access to detailed 3D information are more important than maximal throughput. NLX
+®
+-100M gives process and development teams the ability to investigate wafers in depth, using the same evaluation workflows as the fully automated system.
+
+          Data evaluation, automation and AI 
+
+Data evaluation on ZEISS NLX is powered by ZEISS INSPECT X-Ray, enabling 3D metrology, defect inspection and automated inspection flows in a single environment. The software links volume data, analysis routines and inspection recipes to turn 3D X-ray information into reliable input for process and quality decisions. 
+
+          Statistical evaluation and process monitoring 
+
+ZEISS INSPECT X-Ray consolidates measurement and defect information across wafers and lots and presents it in statistical views. Distributions can be analyzed, trends tracked and drifts in critical parameters identified over time. In this way, random variation can be separated from systematic shifts, meaningful control limits can be defined and process adjustments can be justified with quantitative data. In day-to-day production, this supports more stable processes and reduces the risk of unnoticed degradation in advanced packaging steps. 
+
+          Automation and AI-supported inspection 
+
+ZEISS NLX inspection flows can be defined as recipes in the analysis environment: regions of interest, acquisition settings, metrology tasks and defect criteria are specified once and then executed consistently across wafers and lots. This helps standardize complex 3D inspections and ensures that defined inspection strategies are applied uniformly.
+
+AI-based routines within the platform automatically highlight and segment relevant structures and defects in the volume data. This provides a more consistent basis for defect decisions, reduces the effort required for manual review and allows inspection concepts to be transferred to new devices and process variants with limited adaptation. 
+
+          Anything is imaginable – a lot is possible 
+
+ZEISS enables semiconductor manufacturers worldwide to establish stable processes along the entire wafer lifecycle. As advanced packaging becomes more complex and three-dimensional, reliable access to internal structures at wafer level is essential for process control, yield and time to ramp. 
+
+ZEISS NLX is a 3D X‑ray laminography system for inspection and metrology of advanced packaging structures on 300 mm wafers. It provides non-destructive insight into internal features such as micro bumps, TSVs and stacked dies and is designed for in-line integration and high-throughput wafer-level inspection. 
+
+For further information please contact our experts.  
+
+Contact to ZEISS SMT 
+
+    Downloads or opens the file in a new tab
+
+    Jumps to the country switch in the footer
+
+    Opens in a new tab
+
+    Opens PDF-file in a new tab
+
+    Leads to login page
+
+    Opens a dialog
+
+Back to top
+
+Related ZEISS Websites
+
+        ZEISS Group
+
+Frequently Used
+
+Inspiring Technology
+
+Career at ZEISS SMT
+
+ZEISS SMT Magazine
+
+About ZEISS
+
+About
+
+Career
+
+Newsroom
+
+Compliance
+
+Social Media
+
+LinkedIn
+
+YouTube
+
+Select ZEISS Area
+
+Semiconductor Manufacturing Technology
+
+Cinematography
+
+Hunting
+
+Nature Observation
+
+Planetariums
+
+Simulation Projection Solutions
+
+Vision Care
+
+Digital Solutions & Software Development
+
+Research & Quality Solutions
+
+OEM Solutions
+
+Life Sciences Solutions
+
+Spectroscopy
+
+ZEISS Group
+
+Extended Reality
+
+Medical Technology
+
+Photography
+
+Semiconductor Manufacturing Technology
+
+Sunlens
+
+Select website
+
+Global website (English)
+
+Select language
+
+        Global website (English)
+
+Select location
+
+The content of this page was created with help of Generative AI
+
+Legal
+
+Contact
+
+Publisher
+
+Legal Notice
+
+Privacy Notice
+
+Cookie Notice
+
+Cookie Preferences
+

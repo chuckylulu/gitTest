@@ -1,0 +1,332 @@
+
+
+Technology Spotlight: Production-Speed 3D X-Ray Inspection with Continuous Rotation and AI Denoising - Comet YXLON
+
+Technologies
+
+Technologies
+
+Industrial X-ray
+
+Industrial CT
+
+Computed laminography
+
+CT metrology
+
+Data analytics
+
+Dragonfly
+
+Industries
+
+Industries
+
+Semiconductors
+
+Electronics
+
+Automotive
+
+Metal casting
+
+E-mobility
+
+Additive manufacturing
+
+Science & research
+
+Aerospace
+
+Quality
+
+Quality assurance
+
+Control & assurance
+
+ Non-destructive testing
+
+Products
+
+Product overview
+
+CA product line
+
+CA16
+
+CA20
+
+CC product line
+
+Cheetah EVO
+
+Cougar EVO
+
+UX product line
+
+UX50
+
+UX20
+
+FF product line
+
+FF85 CT
+
+FF35 CT
+
+FF20 CT
+
+Tire inspection
+
+MTIS
+
+Software solutions
+
+Software Suite
+
+Dragonfly 3D World
+
+Life Cycle Service
+
+Life cycle service
+
+Academy
+
+Customer support
+
+Upgrades
+
+Company
+
+Blog
+
+Who we are
+
+News
+
+Events
+
+Careers
+
+Contact us
+
+Support
+
+Smart Product Finder
+
+Home
+
+Blog
+
+Technology Spotlight: Production-Speed 3D X-Ray Inspection with Continuous Rotation and AI Denoising
+
+Technology Spotlight: Production-Speed 3D X-Ray Inspection with Continuous Rotation and AI Denoising
+
+October 29, 2026 | Hao-Che Chien and Chien-Yu Kuo
+
+How a combined hardware-and-software accelerated workflow brings high-quality TSV inspection closer to the production line.
+
+In advanced semiconductor manufacturing, inspection speed is a crucial factor for manufacturers looking for a competitive edge—it can directly affect time-to-market, yield, and process control. Yet the structures that need to be inspected are becoming smaller, denser, and more complex. Through-silicon vias (TSVs) illustrate this challenge well: millions of nearly identical features may be packed onto a single wafer, while the critical defects that matter (such as voids) can be only micrometers in size.
+Conventional computed tomography (CT), or even laminography (CL) can provide the required three-dimensional detail, but acquiring a volume with sufficient resolution, at a dose that will not damage the component, can often take too long for realistic inline use. To close that gap, our application team in Taiwan tested a workflow that combines continuous-rotation laminography with deep-learning image denoising and automated defect analysis. The result is a four-minute 3D inspection cycle that retains the structural information needed for reliable TSV void detection. Here is how the approach works—and why the combination matters.
+
+2D/2.5D vs. 3D for the Inspection of TSV Arrays
+
+Once a wafer has been processed, it can contain millions of TSVs packed closely together and sharing nearly identical dimensions. An inspection system must segment these individual structures, locate them consistently, and identify small internal defects—all at a speed that makes sense for manufacturing.
+For X-ray microscopy, the central constraint is a physical trade-off between throughput and image quality. Modern TSV inspection requires sub-1 µm resolution, which in turn requires a narrow X-ray focal spot. A smaller focal spot limits the target power that can be applied safely and therefore reduces photon flux. Conventional approaches compensate with longer exposures or multi-frame averaging to preserve the signal-to-noise ratio (SNR), but both options lengthen acquisition time and make full 3D inspection difficult to deploy inline.
+2.5D X-ray imaging offers a partial compromise. It combines the acquisition speed of 2D imaging with a limited set of projections captured at selected angles, producing depth-like information—a “pseudo-3D” view—at a much lower computational cost than a full CT scan. However, shadowing and overlap can still obscure features or generate false positives. In short, speed improves, but confidence in the results can suffer.
+
+Fig. 1.    Example of severe feature overlap in 2.5D tilted-detector imaging for dense TSV arrays, resulting in degraded void visibility and ambiguous defect interpretation
+.
+
+The Objective:
+ Could accurate 3D TSV void detection be delivered within a cycle time compatible with modern production?
+
+Stage 1: Hardware-Based Acceleration with Continuous-Rotation Laminography
+
+Laminography can be performed using two main scanning strategies. In stop-and-go scanning, rotation pauses at every angular position while multiple frames are acquired. This improves the SNR of each projection, but the repeated stopping, settling, and restarting adds substantial mechanical overhead.
+Continuous-rotation laminography keeps the sample moving while motion and acquisition remain synchronized. Removing the start-stop cycle sharply reduces total scan time. The trade-off is that motion blur and aliasing become possible, so precise motion control and projection synchronization are essential. With enough angular projections, however, the system can reconstruct TSV volumes accurately without introducing significant aliasing artifacts.
+
+Stage 2: Software-Based Acceleration with Deep Learning Denoising
+
+Faster, single-frame, low-dose acquisition naturally produces data with a lower SNR. The second stage addresses this limitation with an in-house deep learning denoising model trained for the specific device design. A high-projection stop-and-go laminography scan of one selected die provides the target reference for training.
+Once trained, the model can be applied to newly acquired datasets from other dies of identical design—with no additional retraining required. This design-specific, cross-die deployment strategy supports accurate restoration while keeping inference fast enough for an inline environment.
+The hardware and software accelerators can operate independently, but their real value appears when they are used in tandem. Continuous rotation first reduces acquisition time; deep learning then restores the image quality lost through faster, lower-dose capture. This “fast-on-fast” combination delivers high-quality volumetric data in a fraction of the time required by high-projection stop-and-go scanning.
+
+Comparing Speed, Signal, and Measurement Reliability
+
+Imaging condition
+Scan time
+Relative SNR
+Void ratio % (mean ± SD)
+High-projection stop-and-go laminography
+60 min
+1.00
+9.03 ± 0.18
+Low-projection stop-and-go laminography
+4 min
+0.43
+7.28 ± 1.39
+Continuous-rotation laminography
+4 min
+0.69
+8.17 ± 0.65
+Continuous-rotation laminography with deep learning denoising
+4 min
+1.08
+8.72 ± 0.38
+
+(a) High-projection stop-and-go laminography scan (1 hour)
+
+(b) Low-projection stop-and-go laminography scan (4 minutes)
+
+(c) Continuous-rotation laminography (4 minutes)
+
+(d) Continuous-rotation laminography with deep learning denoising 
+(4 minutes)
+
+The comparison shows why acquisition speed alone is not enough. Reducing the number of projections in a stop-and-go scan cuts the cycle from 60 minutes to four, but the relative SNR falls to 0.43 and the measured void ratio becomes less consistent. Continuous rotation provides a stronger four-minute baseline, with a relative SNR of 0.69 and a void ratio closer to the high-projection reference.
+Adding deep learning denoising changes the outcome more decisively. The relative SNR rises to 1.08, slightly above the high-projection reference value of 1.00, while the measured void ratio reaches 8.72 ± 0.38% compared with 9.03 ± 0.18% for the 60-minute reference scan. The method therefore preserves measurement reliability while reducing acquisition time significantly. 
+
+Stage 3: Testing the Results with AI-Powered Segmentation
+
+SNR is an important indicator, but the critical question is whether the reconstructed volume still supports the intended inspection task. Cross-sectional views of the denoised data show slightly lower edge sharpness and fine-detail contrast in the TSV copper filling and void boundaries than the high-projection stop-and-go scan. Even so, the critical structural features required for void detection remain sufficiently preserved.
+To test that point quantitatively, the team applied a second deep learning model to segment each TSV from the background and then segment the voids within it. The void volume was expressed as a percentage of the TSV volume. The high-projection reference measured a mean void ratio of 9.03 ± 0.18% while continuous-rotation laminography with denoising measured 8.72 ± 0.38%. This close agreement indicates that the accelerated workflow retains the information needed for automated defect analysis.
+
+Deep 
+learning
+ segmentation overlay on th
+e 
+TSV highlighting detected voids (
+Red
+) and 
+metals (Orange). 
+
+Conclusion: Bringing 3D Inspection into the Production Cycle
+
+The interposer TSV samples analysed in this research had already undergone metal filling and chemical mechanical polishing (CMP) and were therefore ready for integration with micro-bumps and redistribution layers (RDLs). At this point in advanced packaging, voids can have a direct impact on downstream reliability, making rapid and dependable inspection especially valuable.
+By combining continuous-rotation laminography, design-specific deep learning denoising, and automated segmentation, the team achieved high-quality 3D volumetric inspection within a four-minute cycle. That speed can support real-time process monitoring, faster yield improvement, and earlier detection of systematic process drift. Just as importantly, training the denoising model on a single die and applying it across an identical wafer design minimizes setup overhead. The broader lesson is clear: production-speed 3D inspection does not depend on a single breakthrough, but on coordinated acceleration across acquisition, reconstruction, and analysis.
+Acknowledgements: 
+This article would like to acknowledge the original authors of this research, Hao-Che Chien and Chien-Yu Kuo. Furthermore, This research would not have been possible without the valuable technical support in system integration, experimental setup, and data acquisition from the application team and R&D colleagues at Comet Solutions Taiwan. Special thanks are extended to the analysis software team for the contributions to the deep learning denoising model training, validation, and deployment. We would also like to acknowledge the collaboration of the process engineering partners who provided the TSV interposer samples and valuable feedback on inline inspection requirements. Their support was essential to the successful completion of this work.
+
+Latest three news
+
+Looking through the glass: X-ray Inspection of Through-Glass Vias (TGV) for Advanced Packaging
+
+June 22, 2026 | Dr. Daniel Stickler
+
+Glass is attracting increasing attention as a substrate material for advanced semiconductor packaging. Its dimensional stability and electrical properties make it an interesting basis for large-area panels and high-density interconnect structures. But when electrical connections are routed through the glass using through-glass vias (TGVs), a new inspection challenge emerges: many of the relevant defects are no longer visible from the surface.
+
+At Photomask Japan 2026, we presented our first imaging examples for glass substrates and TGV structures. The results show how X-ray imaging can provide non-destructive access to defects in etched glass vias and metallized TGVs — and why tilted radiography, computed laminography, detector performance, and AI-assisted analysis all matter.
+
+Read more
+
+Using CT to unearth new discoveries in Schleswig Holstein’s Duvenseer Moor. 
+
+June 8, 2026
+
+Earlier this year, we had the chance to collaborate with the Fraunhofer Research Institution for Individualized Medical Technology and Engineering IMTE (Fraunhofer IMTE) and the Leibniz Centre for Archaeology (LEIZA) on a unique find within an Aurochs skull unearthed at the oldest known grave in northern Germany – The Duvenseer Moor in Schleswig Holstein. 
+
+Read more
+
+A 9th-Grade Internship, a CT Scan, and an AI That Learned to Tell Sugar from Salt
+
+February 12, 2026 | Dr. Daniel Stickler
+
+During a recent three-week student internship at Comet Yxlon, I had the chance to mentor a 9th-grader who was curious, motivated—and (for good reasons) not allowed to operate X-ray equipment independently. So we designed a project that would still feel real: hands-on data, real analysis, and a clear outcome. The goal was to let her work independently in software while learning the basics of X-ray imaging and computed tomography.
+
+Read more
+
+Back
+
+Back
+
+Technology
+
+Industrial X-ray
+
+Laminography
+
+Industrial CT
+
+CT Metrology
+
+Data Analytics
+
+Industries
+
+Automotive
+
+E-Mobility
+
+Electronics
+
+ Semiconductor
+
+Aerospace
+
+Science & Research
+
+Additive Manufacturing
+
+Quality
+
+Control & Assurance
+
+Non-Destructive Testing
+
+Products
+
+CA16
+
+CA20
+
+Cheetah EVO
+
+Cougar EVO
+
+UX20
+
+UX50
+
+FF20 CT
+
+FF35 CT
+
+FF85 CT
+
+MTIS
+
+Software Suite
+
+Life Cycle Service
+
+Academy
+
+Customer support
+
+Company
+
+News
+
+Events
+
+Blog
+
+Jobs
+
+Contact us
+
+Cookies
+
+Imprint
+
+Privacy policy
+
+Sustainability
+
+Procurement
+
+Newsletter
+
+© 2026 Comet Group
+

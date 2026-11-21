@@ -1,0 +1,663 @@
+Advanced X-Ray Imaging Technologies
+For Heterogeneous 3D IC Package Metrology and Inspection
+
+
+
+
+                                                                         Jeﬀ Gelb
+                                                           Director, X-Ray Microscopy
+                                                                      August 21, 2024
+Founded in 2013
+● Dr. Wenbing Yun (OSA Fellow and serial
+  entrepreneur that founded Xradia, now Carl
+  Zeiss X-ray Microscopy) and Sylvia Lewis
+Our Technology:
+● Strong IP: 64 patents, 30+ pending, many
+  trade secrets
+● Disruptive x-ray components (source & optics)
+● 5 world leading product families
+Rapidly Growing:
+● 34k sq. ft. facility in Concord, CA (San
+                                                     Intro to Sigray
+  Francisco Bay Area) and 82 employees
+                                                      Mission: Bring next-generation X-ray
+● Global installation base of leading universities            technologies to semi FA labs
+  and companies (semiconductor & pharma)
+
+
+
+                                                                                             2
+Modern Challenges in Defect Detection
+For Failure Analysis Labs & In-Line Inspection
+
+❏   Inspect Multiple Layers of Buried Structures (Opaque/3D)
+❏   Device Features rapidly Shrinking… Microbumps < 10 um, TSV ~
+    few microns with defect sizes in submicron
+❏   Inspection time has to be compatible with in-line metrology
+❏   Non destructive
+
+                                    Current Solutions
+          Optical                        Scanning
+                                                                   X-ray imaging
+         Metrology                     Acoustic (SAM)
+                                                                   Resolution Limited,
+        Buried/Opaque                      Multilayers/3D
+                                                                      3D too slow
+Next-Generation X-Ray Systems from Sigray
+
+
+
+
+  AttoMap microXRF              QuantumLeap XAS                    EclipseXRM                             Apex XCT
+ Highest sensitivity to low Z   Only commercial f-XAS   Highest resolution (0.3μm spatial) 3D   Highest throughput 3D x-ray tool
+Highest resolution microXRF     Highest quality EXAFS     x-ray microscope on the market               (>1000X) for semi
+
+
+
+
+                                                                                                                                   4
+                                      Coin cell battery imaged with Sigray EclipseXRM
+
+
+
+
+Eclipse XRM
+
+
+Next-Generation 3D X-Ray Microscope
+XCT: An Essential Tool for Semi FA
+Flexible, Non-Destructive Part Inspection
+
+                         3D X-ray is a popular choice for non-destructive
+                                 failure analysis of chips & dies.
+Eclipse XRM: A Revolution in Resolution
+Major Architecture and System Changes for 300 nm Resolution
+
+         Highest Resolution Performance
+         ❖   0.3 µm (300 nm) Resolution
+         ❖   0.7 µm at large working distances
+
+    300 nm                250 nm                 200 nm
+
+
+
+
+                                                              7
+BGA Delamination Study: Semi FA
+Clear Images, Superior to Competition | EclipseXRM with Nanofocus Source
+
+
+
+
+             Competitor XRM                                  EclipseXRM
+
+
+
+
+                                                                           8
+BGA Inspection in 3D
+Cross-Sectional Views (Sagittal Plane) | EclipseXRM with Nanofocus Source
+
+
+
+
+                                                                            9
+Limitations of Objective Magniﬁcation in XRM
+Intrinsic Ineﬃciency due to Depth-Of-Field
+
+
+                    ● Microscope objective lenses have a fixed depth of field (DOF)
+                    ● Images captured must be in focus → limited scintillator thickness
+
+
+
+
+                                               (maximum scintillator thickness)
+
+
+
+
+                                                                                          ≤1 DOF
+                                                Scintillator                              (depth of
+                                                                                          field)
+
+
+                                                                                                  10
+High Magniﬁcations = Thin Scintillators
+
+                                                     Ideal 40X CsI (1.4µm)
+
+
+    Objective     Depth of Focus
+       20X            3.6 µm       Almost no x-ray absorption!
+                                   (Low Eﬃciency X-ray Detection)
+       40X            1.4 µm
+
+                                   1.9% at
+                                   36 keV    0.2% at 80 keV
+                                             (requires long
+    This is why we can’t simply              scan times)
+       move to 60X or 100X
+     magniﬁcations for higher
+             resolution
+
+
+
+                                                                             11
+Limitations of Objective Magniﬁcation in XRM
+Thin Scintillator = Small fraction of x-rays absorbed = low detector eﬃciency
+
+
+  ➔ X-ray penetration depth varies with accelerating voltage
+  ➔ Matching scintillator thickness to accelerating voltage → maximized SNR
+  ➔ Semiconductor samples require high accelerating voltages → scintillator-coupled
+    objectives are inefficient
+                                                  Typical Semi FA Imaging
+
+
+
+              Scintillator
+
+
+
+
+                                                                                                                     130 kVp
+                                                                                                           120 kVp
+                                                                                                 110 kVp
+                                                                                   100 kVp
+                                                                                                                               ≤1 DOF
+
+
+
+
+                                                                        90 kVp
+                                                               80 kVp
+                                                  70 kVp
+                                       60 kVp
+                             50 kVp
+                40 kVp
+
+
+
+
+                         Biology/Soft Materials            Small Packages & Dies             Large PCBs & Wafers
+
+
+                                                                                                                                        12
+Industry-Leading Flat Panel Detector
+Featuring Sigray HyperCapture Technology for Optimized Sensitivity
+
+
+
+● Sigray design using flat panel detector
+  provides up to 22x efficiency gain over
+  objective lenses
+● Physics-based design produces optimal
+  results over a range of sample types                                          22X gain
+  and magnification settings, with >6 MP
+  of capture area                                                    14X gain
+
+
+● Optional large-format detectors
+  provide custom-engineered fields of
+                                                                     5X gain    8X gain
+  view for inspecting large parts
+
+
+                                                                                           13
+Wire Bond Inspection
+Characterizing IMC @ 0.15 µm
+  Wire Bond Inspection: 3D Rendering at Bond Interface
+ Visualizing IMC at Bonding Interface @ 0.15 µm
+
+
+
+
+30 µm
+Wire Bond Inspection: Virtual Slice Analysis
+Visualizing IMC at Bonding Interface @ 0.15 µm
+
+
+
+
+                                                 0.9 µm
+Wire Bond Inspection: Virtual Slice Analysis
+Visualizing IMC at Bonding Interface @ 0.15 µm
+
+
+
+
+  80 µm
+
+
+
+
+                                                 20 µm
+        Package Inspection at Via Connection
+    Via Interface Separation: 12 hrs @ 0.25 µm
+
+Optical               SEM X-Sectional Image (Ex. ROI)   EclipseXRM @ 0.25 µm
+
+
+
+
+X-Ray
+Crack/Delamination at Via Interconnect
+Virtual Slice Inspection: 12 hrs @ 0.25 µm
+      Corroded Bond Pads
+     EclipseXRM: 8 hhrs @ 0.37 µm
+
+
+
+
+Sample              Sample 2
+
+Total integration   8.0 hrs
+time
+
+Voxel Size          0.37 μm
+
+Field of View       1.08 × 0.85 mm
+
+                                     ROI
+Corroded Bond Pads: Delayering View
+Virtually Slicing Through the Volume
+
+                                       Rough interface with lower intensity
+X-Sectional View: Delamination
+Corroded Bond Pads: 8 hrs @ 0.37 µm
+          Neighbor (“Good”)           Delamination (“Bad”)
+2.5D Integrated Circuit - Volume Rendering
+Metal Layers Rendered in 3D (6 µm Resolution)
+
+
+
+
+                                                23
+2.5D Integrated Circuit - Isolating Micro-Bumps
+3D Rendering Color-Coded by Volume
+
+
+
+
+Features can be labeled by measurement:
+ ● 3D Volume (pictured here)
+ ● Surface area
+ ● Sphericity
+ ● Aspect ratio / Feret diameters
+ ● Etc.
+
+
+                                                  24
+2.5D Integrated Circuit - Micro-Bump Voids in 3D
+3D Surface Rendering of Voids Within Micro-Bumps
+
+
+Automated image processing
+routines provide a statistical
+  model of voids per bump
+
+
+
+
+                                                   25
+Motherboard @ 11 µm, 26 µm Resolution
+3D Non-Destructive Inspection of CPU         215
+                                             mm
+
+
+
+
+                                        ROI - 26 µm
+
+
+
+
+                                          ROI - 11 µm
+
+
+
+
+                                                        26
+Motherboard Virtual Slice Details - BGA
+Multi-Scale Virtual Delayering
+
+
+26 µm                            11 µm
+
+
+
+
+                                          27
+Virtual Slice Details - CPU Components
+Multi-Scale Virtual Delayering
+
+
+26 µm                            11 µm
+
+
+
+
+                                         28
+Virtual Slice Details - TIM
+Multi-Scale Virtual Delayering
+
+
+26 µm                            11 µm
+
+
+
+
+                                         29
+                                                        Component on Intact PCB imaged with Sigray Apex XCT at 1.5 micron
+
+
+
+
+  Apex XCT
+Rapid Inspection of PCBs & Wafers
+   Rapid, High-Resolution Inspection of Dies, PCBs, &
+   300 mm Wafers
+Specimen Size
+
+
+         Challenges of XCT
+        Larger Specimens Require Long Exposure Times
+
+                                         Larger samples require increased source-detector distances,
+                  Increased Air Gap      which reduce X-ray flux by 1/r2 and increase exposure times.
+                Decreased X-Ray Flux
+
+
+
+
+                                                            Exposure Time for 0.5um imaging
+                                                                                                                           Wafers
+
+
+
+
+                                                                                              ← Faster (Better)
+                                                                                                                  Boards
+
+
+
+
+                                                                                                  Chips
+Specimen Size
+
+
+       Apex XCT-150: Highest Throughput 3D X-ray
+      Comparing Apex XCT vs. Other 3D X-Ray
+
+     ❏ Apex XCT preserves speed & resolution even for large samples.
+     ❏ Enables 3D wafer spot analysis in as little as 2-3 minutes.
+
+
+
+
+                                                   Throughput Acceleration with Apex XCT
+                                                                                                             10,000x
+                                                                                                              Faster
+
+
+
+
+                                                                                                    1600x
+                                                                                                    Faster
+                                                                                            16x
+                                                                                           Faster
+                                                                                           10 mm    100 mm   300 mm
+Apex XCT: Advanced Failure Analysis
+
+                                                                   How it Works
+
+                                               Throughput                               Contrast-Noise Ratio
+
+
+
+
+                                                            Focus-Object Distance
+
+  What it is                                             Sigray Innovations (World’s First)
+  3D X-ray Microscope designed for
+  Inspection and FA on PCBs & wafers
+                                           High CNR    Innovate Architecture | Finely-Tuned Processes
+  Advantages at a Glance                               Patent Pending
+   ● Highest spatial resolution (0.5 µm)
+      laminography for next-gen                        1-3 mm vs. 30-100 mm → >100X TPT gain
+                                           Small FOD
+      microbumps & hybrid bonding                      US Patent 11/686,692
+   ● 10-1000X TPT vs. XRM (<3 min)
+
+
+
+                                                                                                               33
+Exceptional Delaying Image with Unbiased Contrast
+
+Conventional XRM                                             Apex XCT
+
+
+
+
+Same sample and region
+Note poor signal to noise due to scintillator inefficiency   Note excellent signal to noise easily resolves cracks
+2.5x measurement time                                        4x the field of view (image cropped to same FOV for comparison)
+Difficult to see cracks
+
+                                                                                                                               34
+Commercial SSD: 3D Visualization (LFOV)
+Rendering the Complex 3D Architecture of 3D NAND with Low Magniﬁcation
+
+
+
+
+                                                                         35
+0.5 µm Resolution in 3 Minutes
+Example Virtual Slice - Intact PCB (50 mm x 100 mm), Targeted Interior Volume @ 0.5 µm
+
+
+          2.5 Hours                            17 Minutes                            3 Minutes
+
+
+
+
+                                                                                                 36
+                       Scalable Technology with Apex XCT
+                       Non-Destructive Inspection Capabilities: From PCBs to Full Wafers
+
+
+                                Components                                Wafers up to 300 mm+
+                                  & PCBs
+Sample Types
+Inspection Workflows
+
+
+
+
+                                                                37
+Warpage & Non-Wets / Cold Joints
+
+  Different layers can be seen in a single
+  slice due to warpage (center vs edges)
+Statistics: Wet vs. Non-Wet Joints
+
+
+
+
+                          ❏   The wetting status and locations of 1187 joints
+                              were analyzed < 6 min.
+                          ❏   575 non-wets were detected
+                          ❏   The distribution pattern of non-wets is consistent
+                              with the warpage of the layer
+Apex XCT Example: PCIe Graphics Card (NVIDIA 1070 Ti)
+True 3D Volumetric Data for Non-Destructive Analysis
+
+
+
+
+                                                        40
+41
+Apex XCT Example: Commercial SSD
+3D NAND Structure
+
+
+
+
+Parameter           Scan #1: LFOV Scan #2:
+                                  High-Res
+Exposure time       2 sec               1.8 sec
+
+
+Total scan time     27 min              18 min
+
+
+Voxel Size          8.6 µm              2.5 µm
+
+Field of View       25.4 mm x 20.1 mm   7.26 mm x 5.69
+                                        mm
+
+
+
+
+                                                         42
+Commercial SSD: High-Res Zoom-In
+Targeted, Non-Destructive Analysis of Buried Regions with High Magniﬁcation
+
+
+
+
+                                                                              43
+Commercial SSD: Virtual Slices
+Virtual De-Layering
+
+
+
+
+     ● Entire PCB sample imaged without
+        sectioning
+     ● Virtual de-layering provides
+        insight for:
+         ○ 3D chip architecture
+         ○ Voids in BGA
+         ○ Crack detection in RDL & UBM
+         ○ TSV inspection & CD
+            measurement
+
+
+                                          44
+Void Size Distribution in BGA
+True 3D Capabilities for Quantitative Reporting
+
+
+
+
+                                                  45
+Apex XCT Example: 300 mm Wafer with TSVs
+12 Minute Scan, 0.2 µm Pixel Size
+    Void Identiﬁcation in TSVs
+   3D Volume Rendering of TSVs and Voids
+
+Voids are in red
+TSVs are in grey
+Quantitative Analysis
+Void size distribution
+Apex XCT Example: Ti LaunchPad Board
+Full Device Mapping at 8 µm
+
+
+
+
+ ●   20 volumes collected and
+     stitched together
+     ○ 4 rows x 5 columns
+
+ ●   12 hours total acquisition time
+     ○ 36 mins/scan x 20 scans
+
+ ●   8.0 µm voxel size
+     ○ Full 8 µm voxels preserved
+        in ﬁnal stitched volume
+
+                                       49
+High Resolution, Large Volume
+Targeting Selected ROIs with High Resolution (1.5 µm Voxels)
+                                                                                                                Voxel: 1.5 µm
+                                                     Voxel: 4.0 µm
+
+
+
+
+                                                               ❖     Multi-scale imaging links the macro-, meso-,
+                                                                     and micro-scales
+                                                               ❖     Targeted, data-driven inspections reveal
+                                                                     ﬁne-scale features in solder connections
+
+
+
+                                                                                                                          50
+51
+                                                                                       Co
+Apex XCT-300 Series
+
+
+
+
+                                                                                          m
+                                                                                           in
+                                                                                           g:
+                                                                                              Q 4
+                                                                                                20
+Full Automation | Optional Integrated EFEM | Wafer Support up to 300 mm
+
+
+
+
+                                                                                                    24
+                                                 Industry-Leading Resolution: 500 nm
+
+
+                                                  Fast Site Inspection: Up to 10 WPH
+
+
+                                            EFEM-Compatible (Optional Factory Integration)
+
+
+                                                   Support Wafer FOUPs to 300 mm
+
+
+                                             Automated Recipes: Scan + Analysis Report
+         Coming Soon!
+  Apex XCT-300E / Apex XCT-300W              Full Host Communication API w/ SECS/GEM
+          Component on Intact PCB imaged with Sigray Apex XCT at 1.5 micron
+
+
+
+
+Summary
+
+
+
+
+                                                                              55
+Summary
+Advanced X-Ray Imaging Technologies for Heterogeneous 3D IC Package Metrology and Inspection
+
+
+
+  ❏    3D X-ray can provide resolution down to 0.3 µm, to satisfy
+       next-generation demands.
+  ❏    Automated, high-throughput 3D part inspection is now
+       available, capable of handling of dies, PCBs, & wafers up to
+       300 mm.
+
+
+
+      Resolution to 300 nm                Optimized Throughput
+
+
+          Highest Clarity               Automated Data Handling
+
+                                            Thank you for your attention!
+                                                jgelb@sigray.com
+

@@ -1,0 +1,347 @@
+
+
+Need for speed: Boosting X-ray inspection speed in advanced electronics - Comet X-RAY
+
+Products
+
+Product series
+
+Products explained
+
+All products
+
+Product series
+
+Product series
+
+Tubes & inserts
+
+Tubes
+
+Inserts
+
+FXE series
+
+NanoFocus
+
+MicroFocus
+
+Accessories
+
+FYNE series
+
+Transmission
+
+Xplorer series
+
+Cube
+
+ION series
+
+Modules
+
+Controllers
+
+iXRS series
+
+Ultra performance
+
+High power
+
+MesoFocus
+
+Standard
+
+Generators
+
+Accessories
+
+Controllers
+
+Software
+
+BLOX
+
+EVO series
+
+Directional
+
+Panoramic
+
+Controllers
+
+Accessories
+
+ECO series
+
+Directional
+
+Controllers
+
+Accessories
+
+XMB series
+
+Modules
+
+X-ray tubes
+
+Accessories
+
+Products explained
+
+Products explained
+
+Finding the perfect X-ray solution
+
+Finding the perfect X-ray solution
+
+Mini focus modules
+
+Sealed stationary modules
+
+Integrated modules
+
+Portable modules
+
+Mobile modules
+
+Meso focus modules
+
+Sealed stationary modules
+
+Micro focus modules
+
+Open stationary modules
+
+Sealed stationary modules
+
+Nano focus modules
+
+Open stationary modules
+
+All products
+
+All products
+
+All products
+
+Product configurator
+
+Service
+
+Service and support
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Service and support
+
+Service offering
+
+Technical support
+
+Return &  repair equipment - to Denmark
+
+EVO | ECO | ION | XMB | Y.SMART | Y.XPO series
+
+Return & repair equipment - globally, except to Denmark
+
+All product series
+
+Spare parts
+
+iXRS spare parts
+
+Product training
+
+Product training
+
+Product training
+
+Rental equipment
+
+Rental equipment
+
+Rental equipment
+
+Download center
+
+News
+
+Contact
+
+All products
+
+Get a quote
+
+Home
+
+News and more
+
+Need for speed: Boosting X-ray inspection speed in advanced electronics
+
+Inspect Faster. Achieve More.
+
+Need for Speed: Boosting X-ray Inspection Speed in Advanced Electronics
+
+October 28, 2026
+
+As electronics become more powerful and advanced packaging technologies more complex, manufacturers face the challenge of detecting ever-smaller defects without reducing throughput. Optical inspection methods cannot reveal the buried structures found in high-power electronics, chiplets, HBM, through glass vias (TGVs), and advanced 3D packages. X-ray inspection and automated X-ray inspection (AXI) provide the required visibility, but higher resolution and penetration have traditionally come at the expense of speed. Recent advances in micro and nano focus X-ray source technology are overcoming this trade-off by delivering higher photon flux, improved contrast-to-noise ratio, and faster imaging. In this post we review these developments in high-power electronics, where higher voltage and power are required to penetrate through dense structures while maintaining micro-scale imaging, and advanced packaging where increasing complexity from vertical integration and sub-micron resolution combine. We highlight how increased throughput can be achieved while maintaining reliable defect detection.
+
+Advanced packaging. (Left) Images of a GPU stack showing C4 and C2 bumps, HBM bumps, and through-silicon vias. (Right) Cross sections of the bump layers revealing voids.
+
+Methodology
+Inspection throughput depends on the entire imaging chain, including the X-ray source, detector, sample geometry, system stability, magnification, and image-processing software. To isolate the influence of the X-ray source, this study compares different source technologies while keeping the remaining inspection parameters constant. Commercial electronics samples and standardized test structures were examined using both microfocus and nanofocus X-ray sources supplied by Comet X-ray. High-power electronics were evaluated using 2D imaging at voltages between 90 and 160 kV to assess how higher source voltage affects penetration, contrast, and inspection speed. For advanced packaging applications, high-resolution measurements were performed across a similar voltage range using nanofocus sources and high magnification.
+
+Results and Discussion
+
+High-power electronics
+A sealed-type microfocus source was used to evaluate the effect of higher voltage operation on dense electronic assemblies, including an IGBT module used in electric vehicle traction inverters. Images are shown in the figure above. At 90 kV, the cooling pin fins could not be penetrated sufficiently, making void detection impossible, whereas at 130 kV and 160 kV, voids became visible with significantly higher contrast at the higher voltage. The contrast values are summarized in the table below. This increase in contrast translates directly into an exposure time reductions while maintaining defect detectability, resulting in substantially higher inspection throughput. While even higher voltages could further improve penetration, they would also increase shielding requirements, source weight, integration complexity, and overall system cost. These results show that higher source voltage can significantly improve both image quality and throughput, particularly for thick samples in at-line and in-line inspection environments.
+
+Inspection location
+90 kV
+130 kV
+160 kV
+Large void center 
+0%
+22%
+33%
+Small void center
+0%
+10%
+25%
+
+Advanced packaging
+Advanced packaging requires the inspection of extremely small features, with defects often measuring as little as 0.5 µm. An example is a GPU with high-bandwidth memory (HBM) stacks connected by TSVs on top of C2 and C4 bump layers (see image below). In the image, voids in the 100 µm C4 bumps and the 20 µm HBM bumps can clearly be identified. Conventional nano-focus sources provide sufficient resolution but are limited by low dose rates, resulting in long scan times, especially for 3D inspections. The Fyne NF4 delivers up to four times more usable X-ray dose at 400nm resolution, while the NF12 achieves up to ten times higher dose at 1.1 µm resolution, significantly improving throughput. Selecting a resolution that matches the actual defect size is therefore essential for efficient inspection. 
+
+Lifetime contribution to inspection speed
+Maintenance is a key factor in inspection throughput, as service interruptions reduce system availability. In open nano-focus sources, emitter lifetime often limits operation because filaments must be replaced after only a few hundred hours. By contrast, the Fyne nano source showed no significant loss of resolution after more than 2,600 hours of continuous operation, equivalent to around 11 months at 8 hours per day. This greatly reduces maintenance requirements, downtime, and operator intervention. The target can also be operated at a single position for at least twice the emitter lifetime, eliminating readjustments during normal maintenance intervals. For sealed sources, lifetime and reliability are equally important for inspection efficiency. The improved thermal robustness of metal-ceramic tubes reduces tube failures and extends operational lifetime.
+
+Commercial implications: cycle time, uptime, and cost
+The technical advantages of an X-ray source only create commercial value if they improve inspection speed or confidence without affecting takt time. In high-power electronics, higher voltage and power can reduce false negatives in metal-shaded areas and shorten inspection times. For advanced packaging, increased dose at sub-micron resolution helps minimize the scan-time penalty of high-resolution 3D inspection. Inspection economics depend not only on image quality but also on acquisition time, machine availability, and maintenance requirements. Higher dose rates can significantly reduce 3D scan times, while longer maintenance intervals improve system uptime. Conversely, excessive voltage or unnecessarily high resolution can increase shielding requirements, inspection time, and overall costs. The most effective solution is therefore application-specific and must balance technical performance with economic efficiency.
+
+Conclusion
+Electronics are becoming more complex, making defect detection more challenging
+X-ray inspection reveals hidden defects that optical methods cannot detect
+Nano focus X-ray sources can improve image quality and inspection speed
+Higher voltages can reduce inspection time while maintaining detectability
+Optimized X-ray systems increase throughput, yield, and uptime
+
+Chris Nicholson
+Chris Nicholson is Product Manager for microfocus and nanofocus X-ray sources at Comet X-ray. His responsibilities include the development and strategic management of X-ray source technologies used in electronics manufacturing, semiconductor inspection, and battery applications. 
+Before joining Comet X-ray in 2023, Christopher Nicholson worked in both academic research and industrial instrumentation. He completed a PhD in physics at the Max Planck Institute and Freie Universität Berlin, where his research focused on laser-induced phase transitions at metal-semiconductor interfaces. Today, his work focuses on advancing X-ray source technology for high-resolution inspection and supporting customers in addressing emerging challenges in electronics and semiconductor manufacturing.
+
+Latest three news
+
+Spotlight on Shelton. Featuring Pierre Niepel
+
+November 19, 2026
+
+Meet Pierre Niepel, 20 years in medical imaging, now leading Comet X-ray sales in the Americas. Pierre Niepel has joined Comet X-ray as Head of Sales Americas, based at our U.S. site in Shelton, Connecticut. He spent about 20 years in the U.S. medical imaging market, working at Siemens Healthineers and Boston Imaging before running his own advisory business. Pierre brings experience from the equipment-manufacturer side of the industry, and a clear view of what customers expect from their suppliers. We asked him why he joined Comet, where he intends to start, and how he sees customer relationships developing.
+
+Read more
+
+Focus topic. Semiconductor segment insights
+
+November 10, 2026
+
+The semiconductor industry has mastered the art of precision. Nanometer-scale processes, extensive testing, and sophisticated control systems create an environment that appears highly predictable. But while process control continues to improve, many of today's most critical defects are becoming harder to see as they disappear inside complex, multi-layer structures. As advanced packaging reshapes the industry, visibility itself is emerging as a decisive factor in manufacturing success.
+
+Read more
+
+Welcome Andreea!
+
+November 2, 2026
+
+Meet Andreea Vasiliu, our new Vice President of Global Sales!
+
+Andreea brings extensive international sales and leadership experience and knows Comet well from her previous roles within Plasma Control Technologies. During more than eight years with the company, she held several global and regional sales leadership positions, most recently as Director Sales EMEA and Vacuum Capacitors Global. 
+
+Since 2024, she has served as General Manager Europe and RoW at VAT Group.
+
+Read more
+
+Back
+
+Back
+
+Service                
+
+Service offering
+
+Technical support
+
+Returns & repairs - globally
+
+Returns & repairs - to Denmark
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Contact                
+
+Comet X-ray offices
+
+Local contacts
+
+Supply chain
+
+Applications
+
+Additive manufacturing
+
+Aerospace
+
+Automotive
+
+Battery
+
+Electronics
+
+Irradiation
+
+Other NDT
+
+Oil & gas
+
+Security
+
+Sorting
+
+Thickness gauging
+
+About us                
+
+Annual Appreciation Award 
+
+Comet
+
+Comet X-ray
+
+Open positions
+
+Poster gallery
+
+News                
+
+News and more
+
+Virtual Patent Marking
+
+Cookies
+
+Disclaimer
+
+Imprint
+
+Privacy policy
+
+© 2026 Comet Group
+

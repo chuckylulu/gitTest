@@ -1,0 +1,866 @@
+
+
+Inside X-ray Metrology
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Manufacturing, Packaging & Materials
+ >
+                                                                Inside X-ray Metrology                                                    
+
+Manufacturing, Packaging & Materials
+
+SPONSOR BLOG
+
+Inside X-ray Metrology
+
+Experts describe the trends for this emerging technology.        
+
+								November 19th, 2015 - 
+
+								By: 
+Mark LaPedus
+
+Chipmakers are ramping up a new class of chip architectures, such as 3D NAND and finFETs. Measuring and characterizing the tiny structures in these technologies is a major challenge. It will not only take the traditional metrology tools, but also various X-ray techniques. 
+
+To get a handle on X-ray metrology, Semiconductor Engineering recently discussed the trends with the following experts: David Rossi, president of the Semiconductor Division at Bruker; Isaac Mazor, vice president and general manager of the X-ray semiconductor business at Bruker; and Adam Feinstein, director of product management at Bruker. Bruker is a supplier of AFMs, X-ray metrology tools and other products. What follows are excerpts of that conversation.
+
+SE: Bruker has made several moves, including the recent acquisition of X-ray metrology tool specialist Jordan Valley Semiconductors. What was behind that deal?
+
+Rossi
+: It broadens our customer base. Also, when Bruker formed the Bruker Semiconductor division in January of this year, it was to align our X-ray and AFM technologies and products to be able to solve our customers’ metrology requirements. We also saw that we could serve our customers by joining forces with Jordan Valley in X-ray metrology. By combining Jordan Valley’s product and technologies with Bruker’s X-ray technologies, we really saw the ability to not only meet our customers’ current needs and requirements, but also their future requirements at 7nm and 5nm.
+
+SE: What are the big challenges in metrology today?
+
+Mazor
+: The challenges are increasing. The number of parameters of critical value is growing. And the complexity of these new structures is driving metrology.
+
+SE: Chipmakers are using traditional metrology tools. What about X-ray metrology?
+
+Mazor
+: As we move to 28nm and below, and down to 10nm and 7nm, we will see a substantial increase in X-ray metrology. It’s a must and a significant advantage. The two technologies that will require X-ray for 3D geometries are 3D memory and finFET structures. Both create a need for 3D metrology. X-ray can play a significant role.
+
+SE: Didn’t X-ray metrology begin to make inroads in the semiconductor business at 45nm?
+
+Mazor
+: There were several nodes that made X-ray a more viable option for metrology. The first one was perhaps copper metallization, which started at 180nm. Then, you are right when mentioning the 45nm node. When several companies adopted germanium as a strain, you started using strain-silicon. That brought in another X-ray metrology for photometric and concentration analysis. That significantly extended the X-ray market.
+
+SE: Why do we need X-ray metrology?
+
+Mazor
+: We are dealing with angstrom-level measurements.
+
+SE: Where is X-ray metrology being used?
+
+Feinstein
+: Now, we are seeing (it used) even more in strained-silicon with silicon-germanium. We are seeing it with raised source/drain at 14nm and 10nm. We will likely see it with III-V or SiGe fins as we go to 7nm and 5nm.
+
+SE: Which X-ray techniques are required for these applications?
+
+Feinstein
+: Generally speaking, we can think about XRD, which is X-ray diffraction, at the need to really qualify SiGe and the epitaxial quality of those films, as well as a way to directly quantify the targeted strain engineering in the channel.
+
+SE: Does X-ray metrology replace the traditional techniques like CD-SEM and OCD?
+
+Feinstein
+: It’s not necessarily that you are replacing anything. But as we integrate more materials, and we have more complex processes, whether that’s multiple patterning or three-dimensional structures, there’s the need for new and more advanced metrology. This overcomes where some of the traditional techniques may be hitting some of their limits.
+
+SE: What types of X-ray metrology tools are being used today?
+
+Feinstein
+: Originally, it was XRR, which is X-ray reflectivity. That was for simple thin-film measurements. Now, we are really seeing a transition to XRD and XRF.
+
+Mazor
+: XRR is important, but actually XRF was adopted long ago, especially in Japan. They have been using it for a long time. XRR and XRF, in a way, have become viable metrology technologies starting 10 years ago. XRF is growing. It is a photometric technique. It’s more capable for 3D geometries.
+
+SE: XRF, or X-ray fluorescence, looks at surface contamination. What about XRD?
+
+Mazor
+: XRD is back in play. It was sometimes useful at one time, but then it was put aside. XRD is now becoming a critical metrology technique for the selective growth of epi. The market will use it for II-VI and III-V. Those atoms will require selective growth. XRD is a technique to look at the quality of the epi and to qualify the repeating patterns of finFETs. XRD is emerging for 10nm and below. We believe it will be adopted as an in-line metrology, not just a metrology for ramp up.
+
+SE: What are some of the differences between these X-ray techniques? 
+
+Mazor
+: X-ray techniques have three modes of operation in general: X-ray in and X-ray out; X-ray in and electron out; and electron in and X-ray out. XPS is the one with X-ray in and electron out. It’s for composition and thickness at the angstrom level. At Bruker, we primarily deal with X-ray in and X-ray out. XRF, XRD and CD-SAXS are X-ray in and X-ray out. This is where we dominate. E-beam in and X-ray out have different applications. This is different than what we do.
+
+SE: For years, the industry has been working on CD-SAXS. It’s still not ready. What about CD-SAXS?
+
+Feinstein
+: If we go beyond epitaxial, this is really a XCD concept. This could be GI-SAXS or CD-SAXS, which is small-angle X-ray scattering. That is applicable to any type of material. So we can go from crystalline epitaxial, polycrystalline and resists. That’s really where X-ray enters into some of the traditional optical scatterometry spaces.
+
+Mazor
+: Basically, with CD-SAXS, you can do metrology with a 7nm or 5nm structure with no calibration. That saves you a huge amount of cost. The problem was, and still is, the productivity of this technique. But there is a lot of progress on this front. We will continue to catch up on the productivity. Once the productivity is achieved, there is no match for this powerful, non-destructive technology. We think this is the next technology for 3D memory, advanced epi and finFETs.
+
+ Tags:
+
+Bruker
+
+CD-SAXS
+
+Jordan Valley
+
+X-ray
+
+XPS
+
+XRD
+
+XRF
+
+Mark LaPedus 
+
+(all posts)
+
+							Mark LaPedus is Executive Editor for manufacturing at Semiconductor Engineering.
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Standards/Organizations
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+

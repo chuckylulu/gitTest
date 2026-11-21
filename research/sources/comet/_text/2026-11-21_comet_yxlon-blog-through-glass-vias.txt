@@ -1,0 +1,332 @@
+
+
+Looking through the glass: X-ray Inspection of Through-Glass Vias for Advanced Packaging - Comet YXLON
+
+Technologies
+
+Technologies
+
+Industrial X-ray
+
+Industrial CT
+
+Computed laminography
+
+CT metrology
+
+Data analytics
+
+Dragonfly
+
+Industries
+
+Industries
+
+Semiconductors
+
+Electronics
+
+Automotive
+
+Metal casting
+
+E-mobility
+
+Additive manufacturing
+
+Science & research
+
+Aerospace
+
+Quality
+
+Quality assurance
+
+Control & assurance
+
+ Non-destructive testing
+
+Products
+
+Product overview
+
+CA product line
+
+CA16
+
+CA20
+
+CC product line
+
+Cheetah EVO
+
+Cougar EVO
+
+UX product line
+
+UX50
+
+UX20
+
+FF product line
+
+FF85 CT
+
+FF35 CT
+
+FF20 CT
+
+Tire inspection
+
+MTIS
+
+Software solutions
+
+Software Suite
+
+Dragonfly 3D World
+
+Life Cycle Service
+
+Life cycle service
+
+Academy
+
+Customer support
+
+Upgrades
+
+Company
+
+Blog
+
+Who we are
+
+News
+
+Events
+
+Careers
+
+Contact us
+
+Support
+
+Smart Product Finder
+
+Home
+
+Blog
+
+Looking through the glass: X-ray Inspection of Through-Glass Vias for Advanced Packaging
+
+Looking through the glass: X-ray Inspection of Through-Glass Vias (TGV) for Advanced Packaging
+
+June 22, 2026 | Dr. Daniel Stickler
+
+Glass is attracting increasing attention as a substrate material for advanced semiconductor packaging. Its dimensional stability and electrical properties make it an interesting basis for large-area panels and high-density interconnect structures. But when electrical connections are routed through the glass using through-glass vias (TGVs), a new inspection challenge emerges: many of the relevant defects are no longer visible from the surface.
+
+At Photomask Japan 2026, we presented our first imaging examples for glass substrates and TGV structures. The results show how X-ray imaging can provide non-destructive access to defects in etched glass vias and metallized TGVs — and why tilted radiography, computed laminography, detector performance, and AI-assisted analysis all matter.
+
+Redefining inspection for Advanced Packaging. From QA to yield risk control 
+In the post-moore era, advanced packaging continues to play a critical role in meeting the ever-increasing demands of electronics production for more powerful performance in smaller and cheaper packages. As semiconductor manufacturers race to invest in this pivotal technology, they find themselves under pressure to deliver in a competitive landscape where even marginal yield improvements can have significant impact on profitability and time-to-market. The failure of a single chip within the stack can affect the entire package, causing costly production-line adaptations and delays. Staying ahead of the curve requires the adoption of comprehensive inspection strategies to identify potential defects in these ever-more complex structures quickly and reliably. 
+This is especially true for Glass Panel substrate technology. The material properties ensure that these panels are not only larger than a typical wafer, but also more densely packed. This means that not only does the cost of defect escape within a process rise exponentially, it also increases the complexity of inspection and places challenging constraints on throughput. Luckily, advancements in this field are moving quickly, as we shared at this year's Photomask Japan. 
+
+TGV Manufacturing Cycle
+
+Typical Defects during Selective Wet Etching
+Missing hole
+Micro-cracks and other glass defects
+Surface Roughness
+Geometry and spacing
+Residual glass 
+
+Typical Defects during Metallization
+Voids
+Inclusions, gaps, missing filling
+Delamination
+Micro-cracks
+
+Defects can occur before and after metallization
+The TGV manufacturing process typically is made up of three steps. It begins with local laser modification of the glass panel to mark the location of each TGV, followed by selective wet etching to form the via holes. In a later process step, the vias are metallized (generally with copper) to establish electrical connections through the glass. It is in this second and third step that the most common defects can arise within the process. 
+Before metallization, relevant indications of defective TGVs include missing holes, residual glass, geometry deviations, sidewall irregularities, and micro-cracks. After metallization, the focus shifts toward incomplete filling, void-like features, density fluctuations, and possible interface-related defects. Some of these features can be inspected optically as long as the glass and the relevant surfaces remain accessible. Once the via is metallized, however, internal information may be hidden behind opaque copper. This is where X-ray inspection becomes especially valuable.
+
+Example 1: Seeing defects in etched glass vias
+
+In this first example. We took a sample containing etched TGV holes before the metallization process. Low-energy X-ray imaging revealed potential defect areas such as residual glass and crack-related structures, and it was already possible to see that something was abnormal within the 2D image. What remained difficult was understanding where the defect was located exactly within the glass and how far it extended.
+The reconstructed 3DCL volume changed that interpretation. Virtual cross-sections showed that a defect initially appearing as a surface-related crack actually propagated within the glass volume near the via wall. The data suggested that existing crack-like structures had been enlarged during the wet-etching process.
+Detecting residual glass proved a different challenge. It could be detected visually, but the contrast was much weaker than for a fully open hole or a copper-filled structure. This example shows why TGV inspection is not only about spatial resolution. Some relevant defects are detected through very small gray-value differences, which places high demands on the complete imaging chain and highlights the important of software for finding defects that the human eye might miss.
+
+2D scan
+
+Crop into Region-of-Interest
+
+2D scan of 65µm TGV holes in glass, including a zoomed in region of interest with visible defects.  Sample provided by Fraunhofer IZM. 
+
+This sample, captured in 3D CL, showcases a variety of cross-sectional views, helping determine the true size and severity of the cracks. (top left: 3D rendering, top right: vertical cross-section, bottom left: horizontal cross-section, bottom right: 90° vertical cross-section)
+
+Example 2: Inspecting smaller metallized TGVs
+
+The inspection task becomes even more challenging after metallization. In small TGV structures with diameters of approximately 25 µm, the X-ray data revealed examples of incompletely formed or missing vias as well as subtle density fluctuations inside metallized structures.
+A missing or abnormal via can be apparent in a tilted radiograph because the full projected length of the structure becomes visible. In the corresponding 3DCL data, the indication can be examined in cross-section and related to the surrounding via geometry.
+More subtle were weak density fluctuations within individual TGVs. These did not appear as high-contrast, clearly defined air-filled voids. Instead, they were visible as small gray-value variations distributed along the metallized structures. Such indications are difficult to assess reliably by visual inspection alone, especially across large arrays of vias.
+
+A 2D overview scan of a glass sample post metallization. In this sample the spacing between the TGVs is 1 mm, and µmthe TGVs have a diameter of 25 
+µm
+
+Capturing key defects with 3D CL
+
+In the 3D rendering and cross section of the scanned sample, a 'double-shot' TGV, where two holes have been drilled in extremely close proximity to each other, is clearly visible. 
+
+This visualization highlights an area of the glass panel where a TGV hole has not been adequately drilled, and therefore not filled with copper, creating a clearly visible 'gap'.  
+
+The high resolution scan can also capture potential voids and density fluctuations or roughness within the material. The areas of low density are visible in the cross section as sections that are darker than the surrounding material. 
+
+Turning images into scalable information
+Detailed 3DCL datasets can contain many individual vias and a large number of cross-sections. Reviewing all of them manually is not a scalable inspection approach. For this reason, the reconstructed data was evaluated using Dragonfly 3D World and supported by Comet's AI image analysis workflows. AI-based segmentation can identify and visualize defect indications such as density fluctuations or void-like features throughout a volume. Instead of reviewing each via only as an image, the user can work with structured objects that can be located, counted, compared, and quantified.
+
+A screenshot from the Dragonfly 3D World software, showcasing a deep learning model being trained on TGV scan data. 
+
+The end result of the segmentation from the trained model, showcasing clear voids within the TGVs. 
+
+The same principle is relevant for faster 2.5D inspection. When the X-ray system geometry is known — including magnification, detector pixel size, and imaging angle — tilted radiographs can provide both defect-related contrast and practical dimensional information. Combined with automated defect recognition, this creates a path toward rapid inspection of large TGV arrays without reconstructing a full 3D volume for every inspected area.
+The image to the right showcases an existing software that is currently available for Through-Silicon-Via (TSV) inspection, TSV Insights X 2.5D from Comet Yxlon. As TGVs are generally larger than TSVs, but follow a similar form factor, this software presents a clear example of our goals for future automatic TGV inspection and classification. 
+
+before segmentation
+
+after segmentation
+
+Screenshot taken from our TSV Insights X 2.5D software. Image shows a wafer sample (source: Fraunhofer IZM-ASSID) where all TSVs have been manipulated to contain voids. The image shows the segmentation of eachTSV (yellow) and the voids within (red). 
+
+Summary
+
+A hybrid inspection strategy for glass-based packaging
+
+Glass substrates and TGVs introduce inspection tasks that require both speed and information depth. X-ray inspection can be a vital support to find and analyse defects across the entire manufacturing process. Fast projection imaging with 2D radiography can provide an initial screening step while for deeper insight and a more complete view, Computed Laminography provides the virtual cross-sections necessary, and AI-assisted analysis can help turn this comprehensive data into scalable inspection results.
+The examples presented at Photomask Japan demonstrate that X-ray imaging can already reveal defects in glass and metallized TGV structures that are difficult or impossible to access from the surface alone. As glass-based packaging technologies move toward broader industrial adoption, this ability to look inside — non-destructively and with increasing automation — will be an important contribution to process control and yield improvement
+You 
+would like to to find out more about how our CT and X-ray systems can support semiconductor inspection?
+Click here: 
+https://comet.tech/yxlon/industries/semiconductors
+Acknowledgement: Comet gratefully acknowledges Fraunhofer IZM Berlin for providing representative glass and TGV samples used in this work.
+
+Latest three news
+
+Technology Spotlight: Production-Speed 3D X-Ray Inspection with Continuous Rotation and AI Denoising
+
+October 29, 2026 | Hao-Che Chien and Chien-Yu Kuo
+
+How a combined hardware-and-software accelerated workflow brings high-quality TSV inspection closer to the production line.
+
+Read more
+
+Using CT to unearth new discoveries in Schleswig Holstein’s Duvenseer Moor. 
+
+June 8, 2026
+
+Earlier this year, we had the chance to collaborate with the Fraunhofer Research Institution for Individualized Medical Technology and Engineering IMTE (Fraunhofer IMTE) and the Leibniz Centre for Archaeology (LEIZA) on a unique find within an Aurochs skull unearthed at the oldest known grave in northern Germany – The Duvenseer Moor in Schleswig Holstein. 
+
+Read more
+
+A 9th-Grade Internship, a CT Scan, and an AI That Learned to Tell Sugar from Salt
+
+February 12, 2026 | Dr. Daniel Stickler
+
+During a recent three-week student internship at Comet Yxlon, I had the chance to mentor a 9th-grader who was curious, motivated—and (for good reasons) not allowed to operate X-ray equipment independently. So we designed a project that would still feel real: hands-on data, real analysis, and a clear outcome. The goal was to let her work independently in software while learning the basics of X-ray imaging and computed tomography.
+
+Read more
+
+Back
+
+Back
+
+Technology
+
+Industrial X-ray
+
+Laminography
+
+Industrial CT
+
+CT Metrology
+
+Data Analytics
+
+Industries
+
+Automotive
+
+E-Mobility
+
+Electronics
+
+ Semiconductor
+
+Aerospace
+
+Science & Research
+
+Additive Manufacturing
+
+Quality
+
+Control & Assurance
+
+Non-Destructive Testing
+
+Products
+
+CA16
+
+CA20
+
+Cheetah EVO
+
+Cougar EVO
+
+UX20
+
+UX50
+
+FF20 CT
+
+FF35 CT
+
+FF85 CT
+
+MTIS
+
+Software Suite
+
+Life Cycle Service
+
+Academy
+
+Customer support
+
+Company
+
+News
+
+Events
+
+Blog
+
+Jobs
+
+Contact us
+
+Cookies
+
+Imprint
+
+Privacy policy
+
+Sustainability
+
+Procurement
+
+Newsletter
+
+© 2026 Comet Group
+

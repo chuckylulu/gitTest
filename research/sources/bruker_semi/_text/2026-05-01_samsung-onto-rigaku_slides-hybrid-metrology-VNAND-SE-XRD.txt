@@ -1,0 +1,256 @@
+         Production-Ready Hybrid Metrology for De
+         ep 3D Structure Profiling Using SE and X-r
+                       ay Diffraction
+                                               26.03.18
+          Youngseok Kim¹, Younghoon Sohn¹, YongDeok Jeong¹, Petar Zuvela², Markus Kuhn³
+¹ Samsung Electronics Co., Ltd., Device Solutions Division, Hwaseong-si, Gyeonggi-do, Republic of Korea
+                               ² Onto Innovation Inc., Milpitas, CA, USA
+                                  ³ Rigaku Corporation, Tokyo, Japan
+                                                  6”                   8”                  12”
+Agenda 1. Limitations of Optical SE in Deep 3D Structures
+
+          2. Advantages of X-ray Diffraction Metrology
+
+
+          3. XCD Measurement Performance
+
+
+          4. Performance Enhancement Using MGML
+Limitations of Optical SE for Deep 3D Structure Monitoring
+
+                Deep VNAND structures generate strong spectral ripple and weak
+                metal sensitivity, which reduces structural resolution in SE-based
+                metrology.                                                           WL ~200th
+                                                                                     WL ~300th
+                                                                                     WL ~400th
+Adoption of XCD for Deep Structure Monitoring
+     X-ray diffraction directly captures periodic structural    CD Difference from XCD
+     variations and provides stronger sensitivity for deep 3D   Diffraction Residuals
+     structures than optical methods.
+
+
+
+
+                                                                  CD 19-18nm         CD 20-19nm
+
+
+
+
+                                                                      * Some materials provided by Rigaku
+Direct Structural Sensitivity of X-ray Diffraction
+
+                    Changes in pitch and layer thickness produce clear shifts in
+                    diffraction patterns, enabling sensitive structural monitoring.
+
+
+
+
+                               Pitch=120nm                             Height=1.4mm
+
+
+                               Pitch=95nm                              Height=1.2mm
+
+
+                               Pitch=70nm                              Height=1.0mm
+
+
+                               Pitch=50nm                              Height=0.8mm
+XCD Demonstrates Production-Level Measurement Capability
+                                        Measurement time was reduced from 30 minutes to about 5.7 minute while
+                                        maintaining correlation with reference data.
+                      Area
+                       1
+
+
+
+
+                      Area
+                       2
+
+
+
+
+                      Area
+                       3
+
+
+ Image from :
+ https://www.techinsights.com/blog/techin
+ sights-memory-technology-update-
+ iedm18
+Remaining Challenges in Production XCD Metrology
+                                                   -3nm
+
+
+
+
+                                          a
+                                                   0nm
+                                                          R2= 0.6 @12min
+                                                          R2= 0.6 @6min
+
+
+
+                                                   +3nm
+Overview of Model-Guided ML(MGML) Framework
+  Enables critical layers with great performance and time to solution
+                     RCWA Model
+ Experiment                           CDs, SWAs,
+ al spectrum                           Heights…                   Model-Guided ML
+
+                      Regression                                                       Robust and flexible
+
+                                                                                       Available in Ai Diffract
+
+
+                                                   Experimental
+                                                     spectrum
+                    RCWA/Precis
+                                                                                                  CDs, SWAs,
+                                                                                                   Heights…
+
+                 Machine Learning                                                                          Prediction
+
+  Experimental                      CDs, SWAs,
+
+
+
+
+                                                                                              Prediction
+    spectrum                         Heights…
+
+
+                                                                   Reference Data
+                                                                                                              Reference
+
+
+
+                                                                                * Some materials provided by Onto
+MGML Performance Improvement in OCD
+
+
+Achieving Satisfactory R² with Limited Sample Size   Reduced Recipe Model Revisions Under Structural Changes
+
+
+
+       Depth             CD1              CD2                    Other                        MGML
+
+
+
+
+                                                                                   * Some materials provided by Onto
+MGML Improves Correlation Across Items
+
+
+
+    Correlation by Item
+
+
+                                  2F TOP   2F BTM   1F TOP   1F BTM
+
+
+                     Tool Model    0.63     0.72     0.65     0.67
+
+
+                     /w MGML       0.72     0.82     0.78     0.81
+CD SAXS Measurement
+
+
+Area1
+
+
+
+                                                         Ref.
+Area2
+                                                         Step
+                                                         Sweep
+                         이걸로 스플릿 결과 R2, 프리시젼 더 좋음 그래프    Sweep /w MGML
+Area3
+
+
+
+
+Area4
+
+          Lot A Sample                    Lot B Sample
+Diffraction Signal Amplitude Differences
+
+
+           Qr
+                                           Good Correlation
+                                           Bad Correlation
+Noise Dominance Causes Modeling Instability
+      MGML helps separate structural signals from random noise, improving modeling robustness.
+
+
+ Qr
+
+
+
+                      S1,S4
+                      Bad Correlation without MGML
+
+
+
+
+        S3,S7
+        Good Correlation without MGML
+            Discussion1. Continuous Scan and Step Scan
+                                   The reproducible noise characteristics of continuous-scan
+                                   diffraction signals enable MGML to achieve reliable
+                                   structural matching even with shorter scan times.
+
+               Sweep Mode                                                                                  Step Mode
+
+                                                                                                               Sensitivity
+                                      Qz Signal Stability (MSE) (n = 5 static measurements)
+
+
+
+
+                                                                                               Intensity
+Intensity
+
+
+
+
+                     Sensitivity                                                                                 max
+                       max
+
+
+
+
+                        Angle            Sweep mode                                                                 Angle
+                                                                           Step mode
+Discussion 2. Sensitivity and Noise
+
+            The structural diffraction features remain separable even under noisy short-scan
+            conditions, enabling MGML to recover CD information.
+
+                                                                                               PT1 : 32nm
+                                                                                               PT2 : 33nm
+                                                                                               PT3 : 34nm
+Conclusions and Future Work
+
+ Summary
+
+ • X-ray diffraction enables structural monitoring beyond optical SE for deep VNAND.
+
+ • MGML improves agreement with reference measurements toward production targets.
+
+ • Continuous scanning stabilizes signals and supports shorter, production-ready recipes.
+
+
+
+ Future Work
+
+ • Further reduce scan time while maintaining robustness.
+
+ • Extend the approach to more complex 3D architectures.
+
+ • Integrate more advanced model-guided analysis.
+THANK YOU
+All materials are the property of Samsung Electronics.
+For inquiries regarding this work, please contact:
+ys0602.kim@samsung.com
+

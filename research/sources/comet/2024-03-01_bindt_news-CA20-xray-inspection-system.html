@@ -1,0 +1,993 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        X-ray inspection system</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="By leveraging advanced computed laminography and integrated artificial intelligence (AI) technology, Comet Yxlon brings high-resolution 3D X-ray capabilities to the forefront for detailed testing in the advanced packaging of integrated circuits (ICs)." />
+    <meta name="keywords" content="BINDT, News, X-ray" />
+    
+<script type="text/javascript" src="/resources/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/resources/jquery/jquery-analyticstagmanager.js"></script>
+<script type="text/javascript" src="/resources/jquery/jquery-ui-1.9.0.custom.min.js"></script>
+<script type="text/javascript" src="/resources/jquery/jquery.labelify.js"></script>
+<script type="text/javascript" src="/resources/Lib/javascript/interface.js"></script>
+<script type="text/javascript" src="/resources/BINDT/javascript/custom-form-elements/custom-form-elements.js"></script>
+<script type="text/javascript" src="/resources/BINDT/javascript/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="/resources/BINDT/javascript/default.js"></script>
+<script type="text/javascript" src="/resources/BINDT/javascript/colorbox/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/resources/BINDT/javascript/global.js"></script>
+<script type="text/javascript" src="/resources/BINDT/javascript/jquery.popupoverlay.js"></script>
+<link rel="stylesheet" type="text/css" href="/resources/BINDT/javascript/custom-form-elements/form.css" /><link rel="stylesheet" type="text/css" href="/resources/BINDT/javascript/colorbox/example4/colorbox.css" /><link rel="stylesheet" type="text/css" href="/resources/BINDT/css/global.css" />
+
+      <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="/resources/BINDT/css/style-ie-7.css" media="screen" />
+        <![endif]-->
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W6C4896');
+$(function(){$(document).analyticsTagManager().init({'currencyCode':"GBP"}); $(document).analyticsTagManager().bindTriggers(); });
+$(function(){{$(document).analyticsTagManager().pushComponentAdvertImpressions();}});
+</script>
+
+    
+
+<script type="text/javascript" >
+/* Attach tracking to all download & external links */
+var _gaq = _gaq || [];
+function _gaLt(event) {
+    var el = event.srcElement || event.target;
+    /* Loop up the tree through parent elements if clicked element is not a link (eg: an image in a link) */
+    while (el && (typeof el.tagName == 'undefined' || el.tagName.toLowerCase() != 'a' || !el.href))
+        el = el.parentNode;
+
+    if (el && el.href && el.parentNode.getAttribute('class')) {
+        if (el.href.indexOf(location.host) == -1) { /* external link */
+            /*_gaq.push(["_trackEvent", "Outgoing Links", el.href, document.location.pathname + document.location.search]);*/
+            _gaq.push(["_trackEvent", "Buttons", "Click", el.href]);
+            /* if target not set then delay opening of window by 0.5s to allow tracking */
+            if (!el.target || el.target.match(/^_(self|parent|top)$/i)) {
+                setTimeout(function () {
+                    document.location.href = el.href;
+                } .bind(el), 500);
+                /* Prevent standard click */
+                event.preventDefault ? event.preventDefault() : event.returnValue = !1;
+            }
+        }
+
+    }
+}
+
+/* Attach the event to all clicks in the document after page has loaded */
+var w = window;
+w.addEventListener ? w.addEventListener("load", function () { document.body.addEventListener("click", _gaLt, !1) }, !1)
+ : w.attachEvent && w.attachEvent("onload", function () { document.body.attachEvent("onclick", _gaLt) });
+</script>
+
+     <script type="text/javascript">
+          (function ($) {
+              $(window).load(function () {
+                  $(".inline").colorbox({ inline: true, width: "730px", onLoad: function () {
+                      $('#cboxClose').remove();
+                  }
+                  });
+              });
+          })(jQuery);
+     </script>
+
+</head>
+<body>
+    <!--top header-->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W6C4896" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script>$(function(){$(document).analyticsTagManager().pushRemarketingParams("MyAccount", "", "0");});
+</script>
+
+    
+    
+    <div class="container">
+        
+<script type="text/javascript">
+    (function ($) {
+        $(window).load(function () {
+
+            $("#SearchForm").submit(function (event) {
+                var searchterm = $("#searchterm").val();
+                // searchterm = decodeURIComponent(searchterm);
+                searchterm = searchterm.replace('&', 'and');
+                $("#searchterm").val(searchterm);
+                // event.preventDefault();
+            });
+
+        });
+
+        function htmlEncode(value) {
+            if (value) {
+                return jQuery('<div />').text(value).html();
+            } else {
+                return '';
+            }
+        }
+
+        function htmlDecode(value) {
+            if (value) {
+                return $('<div />').html(value).text();
+            } else {
+                return '';
+            }
+        }
+
+    })(jQuery);
+     </script>
+
+
+<div class="header">
+    
+    <div class="logo">
+      
+        <a href="/" title ="BINDT"></a>
+       
+    </div>
+    
+    <!-- Primary Links -->
+    <div class="inner">
+        
+            <ul class="top-nav"><li class="first"><a href="/" target="_self" class="" title="Home">Home</a></li><li><a href="/about-us" target="_self" class="" title="About Us">About Us</a></li><li><a href="/What-is-NDT" target="_self" class="" title="What is NDT?">What is NDT?</a></li><li><a href="/What-is-CM" target="_self" class="" title="What is CM?">What is CM?</a></li><li><a href="/Useful-Links" target="_self" class="" title="Useful Links">Useful Links</a></li><li><a href="/contact-us" target="_self" class="" title="Contact Us">Contact Us</a></li></ul>
+
+        <!-- Search Form -->
+         <form method="get" action="/home/search-results.html" id="SearchForm">
+        	<div>
+            <button title="Go" type="submit">Go</button>
+        	<label for="search-term">Search:</label>
+            <input type="text" title="Enter search term / keywords" name="searchterm" id="searchterm"  value="">
+            </div>
+        </form>
+
+        <!-- Mini Basket -->
+        <div class="mini-basket">
+<a title="View" href="/basket/">View</a>0&nbsp;items&nbsp;&pound;0.00</div>
+
+    </div>
+
+
+    <!-- Main Nav -->
+    
+
+<div class="clear"></div>
+
+<div class="main-nav" id="PrimaryMenu">
+
+<ul class="top">
+
+<li class="login-register">
+<a href="/Login.aspx?redirectto=%2fNews%2fmarch-2024%2fx-ray-inspection-system%2f" title="Log In">Log In / Register</a> 
+</li>
+<li id="nav-shopbindt">
+<a href="/shopbindt/" title="shopBINDT" class="submenu">shopBINDT</a>
+</li>
+<li id="nav-news">
+<a href="/News/" title="News"  >News</a>
+</li>
+<li id="nav-careers">
+<a href="/careers/" title="Careers" class="submenu">Careers</a>
+</li>
+<li id="nav-buyersguide">
+<a href="/Buyers-Guide/" title="Buyers' Guide" class="submenu">Buyers' Guide</a>
+</li>
+<li id="nav-forums">
+<a href="/forums/" title="Forums" class="submenu">Forums</a>
+</li>
+</ul>
+<ul class="bottom">
+
+<li id="nav-certification">
+<a href="/Certification/" title="Certification" class="submenu">Certification</a>
+</li>
+<li id="nav-educationtraining">
+<a href="/education-and-training/" title="Education & Training" class="submenu">Education & Training</a>
+</li>
+<li id="nav-membership">
+<a href="/membership/" title="Membership" class="submenu">Membership</a>
+</li>
+<li id="nav-eventsawards">
+<a href="/events-and-awards/" title="Events & Awards" class="submenu">Events & Awards</a>
+</li>
+<li id="nav-publications">
+<a href="/publications/" title="Publications" class="submenu">Publications</a>
+</li>
+<li id="nav-branchescommittees">
+<a href="/branches-and-committees/" title="Branches & Committees" class="submenu">Branches & Committees</a>
+</li>
+</ul>
+
+<span class="corner-tl"></span>
+<span class="corner-tr"></span>
+<span class="corner-br"></span>
+<span class="corner-bl"></span>
+</div>
+
+<div id="subnav-shopbindt" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/shopbindt/membership/" title="Membership">Membership</a><ul>
+<li class="first"><a href="/shopbindt/membership/bindt-membership/" title="BINDT Membership">BINDT Membership</a></li></ul>
+<ul>
+<li><a href="/shopbindt/membership/engc-memberships/" title="Engineering Council Registration">Engineering Council Registration</a></li></ul>
+</li></ul><ul><li><a href="/shopbindt/books/" title="Books">Books</a></li></ul><ul><li><a href="/shopbindt/events/" title="Events">Events</a></li></ul><ul><li><a href="/shopbindt/subscriptions/" title="Subscriptions">Subscriptions</a><ul>
+<li class="first"><a href="/shopbindt/subscriptions/insight-incl-ndtnews/" title="Insight including NDT News">Insight including NDT News</a></li></ul>
+<ul>
+<li><a href="/shopbindt/subscriptions/insight-euro/" title="Insight European issues only">Insight European issues only</a></li></ul>
+<ul>
+<li><a href="/shopbindt/subscriptions/condition-monitor/" title="Condition Monitor">Condition Monitor</a></li></ul>
+</li></ul><ul><li><a href="/shopbindt/conference-proceedings/" title="Conference proceedings">Conference proceedings</a></li></ul><ul><li><a href="/shopbindt/membership-items/" title="Membership items">Membership items</a></li></ul><ul><li><a href="/shopbindt/hois-documents/" title="HOIS Documents">HOIS Documents</a></li></ul><ul><li><a href="/shopbindt/asnt-publications/" title="ASNT Publications">ASNT Publications</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-careers" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/careers/" title="Careers">Careers</a></li></ul><ul><li><a href="/careers/careers-information/" title="Careers Information">Careers Information</a><ul>
+<li class="first"><a href="/careers/careers-information/" title="Careers introduction">Careers introduction</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/The-importance-of-NDT-and-CM/" title="The importance of NDT and CM">The importance of NDT and CM</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/Carrying-out-NDT-and-CM/" title="Carrying out NDT and CM">Carrying out NDT and CM</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/Working-in-NDT-and-CM/" title="Working in NDT and CM">Working in NDT and CM</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/Necessary-skills-and-qualifications/" title="Necessary skills and qualifications">Necessary skills and qualifications</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/Opportunities-for-career-advancement/" title="Opportunities for career advancement">Opportunities for career advancement</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/BINDT-and-your-career/" title="BINDT and your career">BINDT and your career</a></li></ul>
+<ul>
+<li><a href="/careers/careers-information/is-ndt-the-career-for-me/" title="Is non-destructive testing (NDT) the career for me?">Is non-destructive testing (NDT) the career for me?</a></li></ul>
+</li></ul><ul><li><a href="/careers/job-vacancies/" title="Job Vacancies">Job Vacancies</a><ul>
+<li class="first"><a href="/careers/job-vacancies/recruitment-advertising-rates/" title="Recruitment Advertising Rates">Recruitment Advertising Rates</a></li></ul>
+</li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-buyersguide" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/Buyers-Guide/NDT-Equipment-Providers/" title="NDT Equipment Providers ">NDT Equipment Providers </a></li></ul><ul><li><a href="/Buyers-Guide/NDT-Service-Inspection/" title="NDT Service Inspection">NDT Service Inspection</a></li></ul><ul><li><a href="/Buyers-Guide/CM-Equipment-Providers/" title="CM Equipment Providers">CM Equipment Providers</a></li></ul><ul><li><a href="/Buyers-Guide/CM-Service-Inspection/" title="CM Service Inspection">CM Service Inspection</a></li></ul><ul><li><a href="/Buyers-Guide/Education-and-Training/" title="Education and Training">Education and Training</a></li></ul><ul><li><a href="/Buyers-Guide/consulting/" title="Consulting">Consulting</a><ul>
+<li class="first"><a href="/Buyers-Guide/consulting/Independent-Consultants/" title="Independent Consultants ">Independent Consultants </a></li></ul>
+<ul>
+<li><a href="/Buyers-Guide/consulting/NDT-Consulting-Services/" title="NDT Consulting Services">NDT Consulting Services</a></li></ul>
+<ul>
+<li><a href="/Buyers-Guide/consulting/CM-Consulting-Services/" title="CM Consulting Services">CM Consulting Services</a></li></ul>
+</li></ul><ul><li><a href="/Buyers-Guide/Research/" title="Research">Research</a></li></ul><ul><li><a href="/Buyers-Guide/Corporate-Members/" title="Corporate Members">Corporate Members</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-forums" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/forums/Apprenticeships-update/" title="Apprenticeships update">Apprenticeships update</a><ul>
+<li class="first"><a href="/forums/Apprenticeships-update/" title="Apprenticeships update">Apprenticeships update</a></li></ul>
+</li></ul><ul><li><a href="/forums/back-to-basics/" title="Back to basics">Back to basics</a><ul>
+<li class="first"><a href="/forums/back-to-basics/" title="Back to basics">Back to basics</a></li></ul>
+</li></ul><ul><li><a href="/forums/boultons-bulletin/" title="Boulton’s Bulletin">Boulton’s Bulletin</a><ul>
+<li class="first"><a href="/forums/boultons-bulletin/" title="Boulton's Bulletin">Boulton's Bulletin</a></li></ul>
+</li></ul><ul><li><a href="/forums/Diversity-and-inclusion/" title="Diversity and inclusion">Diversity and inclusion</a><ul>
+<li class="first"><a href="/forums/Diversity-and-inclusion/" title="Diversity and inclusion">Diversity and inclusion</a></li></ul>
+</li></ul><ul><li><a href="/forums/howards-half-hour/" title="Howard's Half Hour">Howard's Half Hour</a><ul>
+<li class="first"><a href="/forums/howards-half-hour/howards-half-hour/" title="Howard's Half Hour">Howard's Half Hour</a></li></ul>
+</li></ul><ul><li><a href="/forums/in-focus/" title="In Focus">In Focus</a><ul>
+<li class="first"><a href="/forums/in-focus/" title="In Focus">In Focus</a></li></ul>
+</li></ul><ul><li><a href="/forums/letter-from-america/" title="Letter from America">Letter from America</a><ul>
+<li class="first"><a href="/forums/letter-from-america/" title="Letter from America">Letter from America</a></li></ul>
+</li></ul><ul><li><a href="/forums/moodys-memoranda/" title="Moody’s Memoranda">Moody’s Memoranda</a><ul>
+<li class="first"><a href="/forums/moodys-memoranda/" title="Moody’s Memoranda">Moody’s Memoranda</a></li></ul>
+</li></ul><ul><li><a href="/forums/nde-for-clean-energy-industries/" title="NDE for Clean Energy Industries">NDE for Clean Energy Industries</a><ul>
+<li class="first"><a href="/forums/nde-for-clean-energy-industries/" title="NDE for Clean Energy Industries">NDE for Clean Energy Industries</a></li></ul>
+</li></ul><ul><li><a href="/forums/on-the-job/" title="On the Job">On the Job</a><ul>
+<li class="first"><a href="/forums/on-the-job/" title="On the Job">On the Job</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/forums/people-in-nde/" title="People in NDE">People in NDE</a><ul>
+<li class="first"><a href="/forums/people-in-nde/" title="People in NDE">People in NDE</a></li></ul>
+</li></ul><ul><li><a href="/forums/aerospace-ndt-forum/" title="Aerospace NDT Forum">Aerospace NDT Forum</a></li></ul><ul><li><a href="/forums/fmc-working-group/" title="FMC Working Group">FMC Working Group</a></li></ul><ul><li><a href="/forums/irt-working-group/" title="IRT Working Group">IRT Working Group</a></li></ul><ul><li><a href="/forums/la-working-group/" title="LA Working Group">LA Working Group</a></li></ul><ul><li><a href="/forums/Product-Technology-Core-Model-Review/" title="Product Technology Core Model Review">Product Technology Core Model Review</a></li></ul><ul><li><a href="/forums/training-and-examination-group-teg/" title="Training and Examination Group (TEG)">Training and Examination Group (TEG)</a></li></ul><ul><li><a href="/forums/va-working-group/" title="VA Working Group">VA Working Group</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-certification" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/Certification/general-information/" title="General Information">General Information</a><ul>
+<li class="first"><a href="/Certification/general-information/" title="General Information">General Information</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/frequently-asked-questions-faq/" title="Frequently Asked Questions (FAQ)">Frequently Asked Questions (FAQ)</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/guidance-on-whistleblowing/" title="Guidance on Whistleblowing">Guidance on Whistleblowing</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/Certification/" title="Certification">Certification</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/Personnel-Certification/" title="Personnel Certification">Personnel Certification</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/An-Industry-Led-Initiative/" title="An Industry Led Initiative">An Industry Led Initiative</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/Standards-that-affect-your-PCN-Certificate/" title="Standards that affect your PCN Certificate">Standards that affect your PCN Certificate</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/European-and-Worldwide-Recognition/" title="European and Worldwide Recognition">European and Worldwide Recognition</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/Impartiality-Statement/" title="Impartiality Statement">Impartiality Statement</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/Committees/" title="Committees">Committees</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/ISO-20807-inspection-of-wrought-plate/" title="ISO 20807 Inspection of Wrought Plate">ISO 20807 Inspection of Wrought Plate</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/protecting-the-future/" title="Protecting the future">Protecting the future</a></li></ul>
+<ul>
+<li><a href="/Certification/general-information/pcn-in-service-inspection-certification/" title="PCN In-Service Inspection certification">PCN In-Service Inspection certification</a></li></ul>
+</li></ul><ul><li><a href="/Certification/pcn-news/" title="PCN News">PCN News</a><ul>
+<li class="first"><a href="/Certification/pcn-news/" title="PCN News">PCN News</a></li></ul>
+<ul>
+<li><a href="/Certification/pcn-news/PCN-Stamps/" title="PCN Stamps">PCN Stamps</a></li></ul>
+<ul>
+<li><a href="/Certification/pcn-news/Working-Groups/" title="Working Groups">Working Groups</a></li></ul>
+<ul>
+<li><a href="/Certification/pcn-news/PCN-Handbooks/" title="PCN Handbooks">PCN Handbooks</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/Certification/pcn-certificate-verification/" title="PCN Certificate Verification">PCN Certificate Verification</a><ul>
+<li class="first"><a href="/Certification/pcn-certificate-verification/pcn-verification-form/" title="PCN Verification Form">PCN Verification Form</a></li></ul>
+</li></ul><ul><li><a href="/Certification/product-technology-online-training/" title="Product Technology Online Training">Product Technology Online Training</a></li></ul><ul><li><a href="/Certification/PCN24download/" title="PCN24 Document Download">PCN24 Document Download</a></li></ul><ul><li><a href="/Certification/legacy-pcn-document-download/" title="Legacy PCN Document Download">Legacy PCN Document Download</a><ul>
+<li class="first"><a href="/Certification/legacy-pcn-document-download/Inspection-Documents/" title="Inspection Documents">Inspection Documents</a></li></ul>
+<ul>
+<li><a href="/Certification/legacy-pcn-document-download/Guided-Wave-Testing-Documents/" title="Guided Wave Testing Documents">Guided Wave Testing Documents</a></li></ul>
+<ul>
+<li><a href="/Certification/legacy-pcn-document-download/General-Requirements-Documents/" title="General Requirements Documents">General Requirements Documents</a></li></ul>
+<ul>
+<li><a href="/Certification/legacy-pcn-document-download/Welding-Inspection/" title="Welding Inspection">Welding Inspection</a></li></ul>
+</li></ul><ul><li><a href="/Certification/condition-monitoring-documents/" title="Condition Monitoring Documents">Condition Monitoring Documents</a><ul>
+<li class="first"><a href="/Certification/condition-monitoring-documents/Condition-Monitoring/" title="Condition Monitoring">Condition Monitoring</a></li></ul>
+</li></ul><ul><li><a href="/Certification/aerospace-requirements-documents/" title="Aerospace Requirements Documents">Aerospace Requirements Documents</a></li></ul><ul><li><a href="/Certification/ut-shell-boiler-welds/" title="UT Shell Boiler Welds">UT Shell Boiler Welds</a></li></ul><ul><li><a href="/Certification/pcn-examinations/" title="PCN Examinations">PCN Examinations</a><ul>
+<li class="first"><a href="/Certification/pcn-examinations/" title="PCN Examinations">PCN Examinations</a></li></ul>
+</li></ul><ul><li><a href="/Certification/outside-agency-approvals/" title="Outside Agency Approvals">Outside Agency Approvals</a><ul>
+<li class="first"><a href="/Certification/outside-agency-approvals/" title="Outside Agency Approvals">Outside Agency Approvals</a></li></ul>
+<ul>
+<li><a href="/Certification/outside-agency-approvals/Outside-Agency-Documents/" title="Outside Agency Documents">Outside Agency Documents</a></li></ul>
+</li></ul><ul><li><a href="/Certification/pressure-equipment-directive/" title="Pressure Equipment Directive">Pressure Equipment Directive</a><ul>
+<li class="first"><a href="/Certification/pressure-equipment-directive/" title="Pressure Equipment Directive">Pressure Equipment Directive</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/Certification/qms-certification/" title="QMS Certification">QMS Certification</a><ul>
+<li class="first"><a href="/Certification/qms-certification/" title="QMS Certification">QMS Certification</a></li></ul>
+</li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-educationtraining" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/education-and-training/degree-courses/" title="Degree Courses">Degree Courses</a><ul>
+<li class="first"><a href="/education-and-training/degree-courses/" title="Foundation Degree in NDT">Foundation Degree in NDT</a></li></ul>
+<ul>
+<li><a href="/education-and-training/degree-courses/bsc-honours-top-up-degree/" title="BSc Honours Top-Up Degree">BSc Honours Top-Up Degree</a></li></ul>
+</li></ul><ul><li><a href="/education-and-training/bindt-approved-trainers/" title="BINDT Approved Trainers">BINDT Approved Trainers</a><ul>
+<li class="first"><a href="/education-and-training/bindt-approved-trainers/" title="BINDT Approved Trainers">BINDT Approved Trainers</a></li></ul>
+</li></ul><ul><li><a href="/education-and-training/training-courses/" title="Training Courses">Training Courses</a><ul>
+<li class="first"><a href="/education-and-training/training-courses/" title="Training Courses: Part One">Training Courses: Part One</a></li></ul>
+<ul>
+<li><a href="/education-and-training/training-courses/Training-Courses-Part-Two/" title="Training Courses: Part Two">Training Courses: Part Two</a></li></ul>
+<ul>
+<li><a href="/education-and-training/training-courses/Training-Courses-Part-Three/" title="Training Courses: Part Three">Training Courses: Part Three</a></li></ul>
+<ul>
+<li><a href="/education-and-training/training-courses/Training-Courses-CM-and-Marine/" title="Training Courses: CM & Marine">Training Courses: CM & Marine</a></li></ul>
+<ul>
+<li><a href="/education-and-training/training-courses/Training-Courses-Air-Tightness-Testing/" title="Training Courses: Air Tightness Testing">Training Courses: Air Tightness Testing</a></li></ul>
+</li></ul><ul><li><a href="/education-and-training/cpd/" title="CPD">CPD</a><ul>
+<li class="first"><a href="/education-and-training/cpd/" title="Continuing Professional Development (CPD)">Continuing Professional Development (CPD)</a></li></ul>
+<ul>
+<li><a href="/education-and-training/cpd/cpd-records/" title="CPD Records">CPD Records</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/education-and-training/Apprenticeships/" title="Apprenticeships">Apprenticeships</a><ul>
+<li class="first"><a href="/education-and-training/Apprenticeships/ndt-operator-apprenticeship/" title="NDT Operator Apprenticeship">NDT Operator Apprenticeship</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/ndt-technician-apprenticeship/" title="NDT Technician Apprenticeship">NDT Technician Apprenticeship</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/ndt-engineer-apprenticeship/" title="NDT Engineer Apprenticeship">NDT Engineer Apprenticeship</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/graduate-apprenticeships-in-scotland/" title="Graduate Apprenticeships in Scotland">Graduate Apprenticeships in Scotland</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/information-for-employers/" title="Information for Employers">Information for Employers</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/information-for-apprentices/" title="Information for Apprentices">Information for Apprentices</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/bindt-end-point-assessment-package/" title="BINDT End-Point Assessment Package">BINDT End-Point Assessment Package</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/development-group-and-supporting-employers/" title="Development Group and Supporting Employers">Development Group and Supporting Employers</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/lead-providers/" title="Lead Providers">Lead Providers</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/glossary-of-terms/" title="Glossary of Terms">Glossary of Terms</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/apprenticeship-document-download/" title="Apprenticeship Document Download">Apprenticeship Document Download</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/The-Roger-Lyon-Apprentice-of-the-Year-Award/" title=" The Roger Lyon Apprentice of the Year Award"> The Roger Lyon Apprentice of the Year Award</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/The-NDT-Operator-of-the-Year-Award/" title="The NDT Operator of the Year Award">The NDT Operator of the Year Award</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/The-NDT-Engineering-Technician-of-the-Year-Award/" title="The NDT Engineering Technician of the Year Award">The NDT Engineering Technician of the Year Award</a></li></ul>
+<ul>
+<li><a href="/education-and-training/Apprenticeships/The-NDT-Engineer-of-the-Year-Award/" title="The NDT Engineer of the Year Award">The NDT Engineer of the Year Award</a></li></ul>
+</li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-membership" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/membership/for-individuals/" title="For Individuals">For Individuals</a><ul>
+<li class="first"><a href="/membership/for-individuals/" title="For Individuals">For Individuals</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/statement-of-ethical-principles-and-code-of-conduct/" title="Statement of Ethical Principles and Code of Conduct">Statement of Ethical Principles and Code of Conduct</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/guidance-on-whistleblowing/" title="Guidance on Whistleblowing">Guidance on Whistleblowing</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/education-requirements-matrix/" title="Education requirements matrix">Education requirements matrix</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/benevolent-fund/" title="Benevolent Fund">Benevolent Fund</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/engineering-technician-registration/" title="Engineering Technician Registration">Engineering Technician Registration</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/Student-Membership-Offer/" title="Student Membership Offer">Student Membership Offer</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/bindt-registered-practitioners/" title="BINDT-Registered Practitioners">BINDT-Registered Practitioners</a></li></ul>
+<ul>
+<li><a href="/membership/for-individuals/career-break-membership/" title="Career Break Membership">Career Break Membership</a></li></ul>
+</li></ul><ul><li><a href="/membership/for-companies/" title="For Companies">For Companies</a><ul>
+<li class="first"><a href="/membership/for-companies/" title="For Companies and Educational Establishments">For Companies and Educational Establishments</a></li></ul>
+<ul>
+<li><a href="/membership/for-companies/become-a-corporate-patron-of-the-bindt-benevolent-fund/" title="Become a Corporate Patron of the BINDT Benevolent Fund">Become a Corporate Patron of the BINDT Benevolent Fund</a></li></ul>
+<ul>
+<li><a href="/membership/for-companies/code-of-ethics/" title="Code of Ethics">Code of Ethics</a></li></ul>
+</li></ul><ul><li><a href="/membership/the-benefits/" title="The Benefits">The Benefits</a><ul>
+<li class="first"><a href="/membership/the-benefits/" title="New membership benefits">New membership benefits</a></li></ul>
+<ul>
+<li><a href="/membership/the-benefits/The-Benefits/" title="The Benefits">The Benefits</a></li></ul>
+</li></ul><ul><li><a href="/membership/fees/" title="Fees">Fees</a><ul>
+<li class="first"><a href="/membership/fees/" title="Fees">Fees</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/membership/engineers-registration/" title="Engineers Registration">Engineers Registration</a><ul>
+<li class="first"><a href="/membership/engineers-registration/" title="Engineers' Registration">Engineers' Registration</a></li></ul>
+<ul>
+<li><a href="/membership/engineers-registration/engineering-technician-registration/" title="Do Yourself A Favour">Do Yourself A Favour</a></li></ul>
+</li></ul><ul><li><a href="/membership/members-directory/" title="Members Directory">Members Directory</a><ul>
+<li class="first"><a href="/membership/members-directory/members-directory/" title="Members Directory">Members Directory</a></li></ul>
+</li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-eventsawards" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/events-and-awards/bindt-events-picture-gallery/" title="BINDT Events Picture Gallery">BINDT Events Picture Gallery</a></li></ul><ul><li><a href="/events-and-awards/branch-meetings/" title="Branch Meetings">Branch Meetings</a></li></ul><ul><li><a href="/events-and-awards/international-events/" title="International Events">International Events</a></li></ul><ul><li><a href="/events-and-awards/PastEventsandWebinars/" title="Past Events and Webinars">Past Events and Webinars</a><ul>
+<li class="first"><a href="/events-and-awards/PastEventsandWebinars/ndt-conferences/" title="NDT Conferences">NDT Conferences</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/CM-Conferences/" title="CM Conferences">CM Conferences</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/aerospace-events-and-workshops/" title="Aerospace Events and Workshops">Aerospace Events and Workshops</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/Materials-Testing-Exhibitions/" title="Materials Testing Exhibitions">Materials Testing Exhibitions</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/certification-events/" title="Certification Events">Certification Events</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/seminars-and-workshops/" title="Seminars and Workshops">Seminars and Workshops</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/branch-events/" title="Branch Events">Branch Events</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/PastEventsandWebinars/webinars/" title="Webinars">Webinars</a></li></ul>
+</li></ul><ul><li><a href="/events-and-awards/Seminars-and-Workshops/" title="Seminars and Workshops">Seminars and Workshops</a><ul>
+<li class="first"><a href="/events-and-awards/Seminars-and-Workshops/a-cross-industry-comparison-of-optimal-ndt-technology-seminar-and-burns-supper-2027/" title="A Cross-Industry Comparison of Optimal NDT Technology Seminar and Burns Supper 2027">A Cross-Industry Comparison of Optimal NDT Technology Seminar and Burns Supper 2027</a></li></ul>
+</li></ul><ul><li><a href="/events-and-awards/Webinars/" title="Webinars">Webinars</a></li></ul><ul><li><a href="/events-and-awards/aerospace-event-2027/" title="Aerospace Event 2027">Aerospace Event 2027</a><ul>
+<li class="first"><a href="/events-and-awards/aerospace-event-2027/" title="About the event">About the event</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/aerospace-event-2027/exhibitor-information/" title="Exhibitor information">Exhibitor information</a></li></ul>
+<ul>
+<li><a href="/events-and-awards/aerospace-event-2027/exhibitors/" title="Exhibitors">Exhibitors</a></li></ul>
+</li></ul><ul><li><a href="/events-and-awards/art-27/" title="Art '27">Art '27</a></li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/events-and-awards/Institute-Awards/" title="Institute Awards">Institute Awards</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-publications" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/publications/insight-journal/" title="Insight Journal">Insight Journal</a><ul>
+<li class="first"><a href="/publications/insight-journal/" title="Insight - Non-Destructive Testing & Condition Monitoring">Insight - Non-Destructive Testing & Condition Monitoring</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/Insight-Advertising-Rates-2026/" title="Insight Advertising Rates 2026">Insight Advertising Rates 2026</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/Features-Programme-2026/" title="Features Programme 2026">Features Programme 2026</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/back-issues/" title="Back Issues">Back Issues</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/Insight-Online/" title="Insight Online">Insight Online</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/Online-paper-submission/" title="Online paper submission">Online paper submission</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/This-months-Insight/" title="This month's Insight">This month's Insight</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/copyright/" title="Insight - Copyright">Insight - Copyright</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/Subscription-Rates-2026/" title="Subscription Rates 2026">Subscription Rates 2026</a></li></ul>
+<ul>
+<li><a href="/publications/insight-journal/insight-publication-ethics-statement/" title="Insight Publication Ethics Statement">Insight Publication Ethics Statement</a></li></ul>
+</li></ul><ul><li><a href="/publications/ijcm-journal/" title="IJCM Journal">IJCM Journal</a><ul>
+<li class="first"><a href="/publications/ijcm-journal/" title="International Journal of Condition Monitoring">International Journal of Condition Monitoring</a></li></ul>
+</li></ul><ul><li><a href="/publications/ndt-news/" title="NDT News">NDT News</a><ul>
+<li class="first"><a href="/publications/ndt-news/NDT-News-Advertising-Rates-2026/" title="NDT News Advertising Rates 2026">NDT News Advertising Rates 2026</a></li></ul>
+</li></ul><ul><li><a href="/publications/condition-monitor/" title="Condition Monitor">Condition Monitor</a></li></ul><ul><li><a href="/publications/ndt-Yearbook/" title="NDT Yearbook">NDT Yearbook</a><ul>
+<li class="first"><a href="/publications/ndt-Yearbook/" title="BINDT Yearbook">BINDT Yearbook</a></li></ul>
+</li></ul><ul><li><a href="/publications/ndt-apps/" title="NDT Apps">NDT Apps</a><ul>
+<li class="first"><a href="/publications/ndt-apps/" title="NDT Apps">NDT Apps</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/publications/publications-awards/" title="Publications Awards">Publications Awards</a></li></ul><ul><li><a href="/publications/home-page-advertising/" title="Home Page Advertising">Home Page Advertising</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-branchescommittees" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/branches-and-committees/branch-meetings-calendar/" title="Branch Meetings Calendar">Branch Meetings Calendar</a><ul>
+<li class="first"><a href="/branches-and-committees/branch-meetings-calendar/" title="Branch Calendar 2026-2027">Branch Calendar 2026-2027</a></li></ul>
+</li></ul><ul><li><a href="/branches-and-committees/Branch-News/" title="Branch News">Branch News</a><ul>
+<li class="first"><a href="/branches-and-committees/Branch-News/" title="Latest Branch News">Latest Branch News</a></li></ul>
+</li></ul><ul><li><a href="/branches-and-committees/branch-awards/" title="Branch Awards">Branch Awards</a></li></ul><ul><li><a href="/branches-and-committees/spotlight-talks/" title="Spotlight Talks">Spotlight Talks</a></li></ul><ul><li><a href="/branches-and-committees/early-careers-branch/" title="Early Careers Branch">Early Careers Branch</a></li></ul><ul><li><a href="/branches-and-committees/east-anglia-branch/" title="East Anglia Branch">East Anglia Branch</a></li></ul><ul><li><a href="/branches-and-committees/east-midlands-branch/" title="East Midlands Branch">East Midlands Branch</a></li></ul><ul><li><a href="/branches-and-committees/londonandhomecountiesbranch/" title="London & Home Counties Branch">London & Home Counties Branch</a></li></ul><ul><li><a href="/branches-and-committees/north-american-branch/" title="North American Branch">North American Branch</a></li></ul><ul><li><a href="/branches-and-committees/north-east-branch/" title="North East Branch">North East Branch</a></li></ul><ul><li><a href="/branches-and-committees/north-east-scottish-branch/" title="North East Scottish Branch">North East Scottish Branch</a></li></ul><ul><li><a href="/branches-and-committees/North-West-Branch/" title="North West Branch">North West Branch</a></li></ul><ul><li><a href="/branches-and-committees/plymouth-branch/" title="Plymouth Branch">Plymouth Branch</a></li></ul><ul><li><a href="/branches-and-committees/scottish-branch/" title="Scottish Branch">Scottish Branch</a></li></ul><ul><li><a href="/branches-and-committees/solent-branch/" title="Solent Branch">Solent Branch</a></li></ul><ul><li><a href="/branches-and-committees/south-wales-branch/" title="South Wales Branch">South Wales Branch</a></li></ul><ul><li><a href="/branches-and-committees/west-of-England-branch/" title="West of England Branch">West of England Branch</a></li></ul><ul><li><a href="/branches-and-committees/West-Midlands-branch/" title="West Midlands Branch">West Midlands Branch</a></li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/branches-and-committees/Yorkshire-branch/" title="Yorkshire Branch">Yorkshire Branch</a></li></ul><ul><li><a href="/branches-and-committees/institute-council/" title="Institute Council">Institute Council</a></li></ul><ul><li><a href="/branches-and-committees/governance-committees/" title="Governance Committees">Governance Committees</a></li></ul><ul><li><a href="/branches-and-committees/main-committees/" title="Main Committees">Main Committees</a></li></ul><ul><li><a href="/branches-and-committees/sub-committees/" title="Sub-Committees">Sub-Committees</a></li></ul><ul><li><a href="/branches-and-committees/institute-groups/" title="Special Interest Groups">Special Interest Groups</a></li></ul><ul><li><a href="/branches-and-committees/advisory-groups-and-committees/" title="Advisory Groups and Committees">Advisory Groups and Committees</a></li></ul><ul><li><a href="/branches-and-committees/Working-Groups/" title="Working Groups">Working Groups</a></li></ul><ul><li><a href="/branches-and-committees/User-Groups/" title="User Groups">User Groups</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-coffeebreak" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/Coffee-Break/Hector-the-Inspector/" title="Hector the Inspector">Hector the Inspector</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-airtightnesstestingmeasurement" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/air-tightness-testing-measurement/" title="Air Tightness Testing">Air Tightness Testing</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-whatisndt" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/What-is-NDT/" title="About NDT">About NDT</a></li></ul><ul><li><a href="/What-is-NDT/NDT-Method-Selector/" title="NDT Method Selector">NDT Method Selector</a></li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/What-is-NDT/Index-of-acronyms/" title="Index of acronyms">Index of acronyms</a><ul>
+<li class="first"><a href="/What-is-NDT/Index-of-acronyms/A/" title="A">A</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/B/" title="B">B</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/C/" title="C">C</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/D/" title="D">D</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/E/" title="E">E</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/F/" title="F">F</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/G/" title="G">G</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/H/" title="H">H</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/I/" title="I">I</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/K/" title="K">K</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/L/" title="L">L</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/M/" title="M">M</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/N/" title="N">N</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/O/" title="O">O</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/P/" title="P">P</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/Q/" title="Q">Q</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/R/" title="R">R</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/S/" title="S">S</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/T/" title="T">T</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/U/" title="U">U</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/V/" title="V">V</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/W/" title="W">W</a></li></ul>
+<ul>
+<li><a href="/What-is-NDT/Index-of-acronyms/X/" title="X">X</a></li></ul>
+</li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/What-is-NDT/Podcast-The-Naked-Scientist-on-NDT/" title="Podcast: The Naked Scientist on NDT">Podcast: The Naked Scientist on NDT</a></li></ul><ul><li><a href="/What-is-NDT/ACFM-technique/" title="ACFM technique">ACFM technique</a></li></ul><ul><li><a href="/What-is-NDT/Acoustic-methods/" title="Acoustic methods">Acoustic methods</a></li></ul><ul><li><a href="/What-is-NDT/Acoustic-emission-AE/" title="Acoustic emission (AE)">Acoustic emission (AE)</a></li></ul><ul><li><a href="/What-is-NDT/Acoustic-ranging/" title="Acoustic ranging">Acoustic ranging</a></li></ul><ul><li><a href="/What-is-NDT/Coating-thickness-measurement-methods/" title="Coating thickness measurement methods">Coating thickness measurement methods</a></li></ul><ul><li><a href="/What-is-NDT/Eddy-current-testing/" title="Eddy current testing">Eddy current testing</a></li></ul><ul><li><a href="/What-is-NDT/Electromagnetic-methods/" title="Electromagnetic methods">Electromagnetic methods</a></li></ul><ul><li><a href="/What-is-NDT/Erosion-corrosion/" title="Erosion corrosion">Erosion corrosion</a></li></ul><ul><li><a href="/What-is-NDT/Laser-based-inspection/" title="Laser-based inspection">Laser-based inspection</a></li></ul><ul><li><a href="/What-is-NDT/Leak-testing-methods/" title="Leak testing methods">Leak testing methods</a></li></ul><ul><li><a href="/What-is-NDT/Liquid-penetrant-inspection/" title="Liquid penetrant inspection">Liquid penetrant inspection</a></li></ul><ul><li><a href="/What-is-NDT/Magnetic-flux-leakage-methods/" title="Magnetic flux leakage methods">Magnetic flux leakage methods</a></li></ul><ul><li><a href="/What-is-NDT/Magnetic-particle-inspection-MPI/" title="Magnetic particle inspection (MPI)">Magnetic particle inspection (MPI)</a></li></ul><ul><li><a href="/What-is-NDT/Neutron-radiography/" title="Neutron radiography">Neutron radiography</a></li></ul><ul><li><a href="/What-is-NDT/Optical-methods/" title="Optical methods">Optical methods</a></li></ul><ul><li><a href="/What-is-NDT/Optical-metrology-and-holography/" title="Optical metrology and holography">Optical metrology and holography</a></li></ul><ul><li><a href="/What-is-NDT/Potential-drop-flaw-detection-and-sizing/" title="Potential drop flaw detection and sizing">Potential drop flaw detection and sizing</a></li></ul><ul><li><a href="/What-is-NDT/Radiography/" title="Radiography">Radiography</a></li></ul><ul><li><a href="/What-is-NDT/Real-time-radiography-and-radioscopy/" title="Real-time radiography and radioscopy">Real-time radiography and radioscopy</a></li></ul></td><td class="gap"><span></span></td><td class="col" ><ul><li><a href="/What-is-NDT/Resonant-inspection/" title="Resonant inspection">Resonant inspection</a></li></ul><ul><li><a href="/What-is-NDT/Stress-measurement/" title="Stress measurement">Stress measurement</a></li></ul><ul><li><a href="/What-is-NDT/Thermography/" title="Thermography">Thermography</a></li></ul><ul><li><a href="/What-is-NDT/Ultrasonic-methods/" title="Ultrasonic methods">Ultrasonic methods</a></li></ul><ul><li><a href="/What-is-NDT/Ultrasonic-advanced-methods/" title="Ultrasonic advanced methods">Ultrasonic advanced methods</a></li></ul><ul><li><a href="/What-is-NDT/Ultrasonic-flaw-detection/" title="Ultrasonic flaw detection">Ultrasonic flaw detection</a></li></ul><ul><li><a href="/What-is-NDT/Ultrasonic-thickness-gauging/" title="Ultrasonic thickness gauging">Ultrasonic thickness gauging</a></li></ul><ul><li><a href="/What-is-NDT/Visual-inspection/" title="Visual inspection">Visual inspection</a></li></ul><ul><li><a href="/What-is-NDT/Other-methods/" title="Other methods">Other methods</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div><div id="subnav-internationalandeuropeanstandards" class="sub-nav"><table><tr><td class="tl"></td><td class="t"></td><td class="tr"></td></tr><tr><td class="l"></td><td class="c"><table><tr><td class="col" ><ul><li><a href="/international-and-european-standards/general-standards-including-certification/" title="General Standards, including Certification">General Standards, including Certification</a></li></ul><ul><li><a href="/international-and-european-standards/standards-concerned-with-non-destructive-testing/" title="Standards concerned with Non-Destructive Testing">Standards concerned with Non-Destructive Testing</a><ul>
+<li class="first"><a href="/international-and-european-standards/standards-concerned-with-non-destructive-testing/" title="1. General Technique Standards">1. General Technique Standards</a></li></ul>
+<ul>
+<li><a href="/international-and-european-standards/standards-concerned-with-non-destructive-testing/2-applications-standards/" title="2. Applications Standards">2. Applications Standards</a></li></ul>
+<ul>
+<li><a href="/international-and-european-standards/standards-concerned-with-non-destructive-testing/3-other-standards-of-interest-to-non-destructive-testing/" title="3. Other standards of interest to non-destructive testing">3. Other standards of interest to non-destructive testing</a></li></ul>
+</li></ul><ul><li><a href="/international-and-european-standards/bsi-and-bsi-adopted-standards-published/" title="BSI and BSI-adopted Standards Published">BSI and BSI-adopted Standards Published</a></li></ul><ul><li><a href="/international-and-european-standards/electricity-association-technical-specifications/" title="Electricity Association Technical Specifications">Electricity Association Technical Specifications</a></li></ul></td></tr></table></td><td class="r"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></table></div>
+
+</div>
+        <div class="body">
+            <div class="two-bars">
+                <!-- Navigation -->
+                <div class="bar-left">
+               
+                    
+
+<div class="quick-links">
+
+<ul><li class="selected"><a href="/News/" title="News">News</a></ul><div class="bottom">&nbsp;</div>
+</div>
+                </div>
+                <!-- Content -->
+                <div class="bar-content">
+                    <!-- Breadcrumb Navigation -->
+                    
+
+<div class="breadcrumb">
+<ul><li> <a href="/News">News</a></li><li> <a href="/News/march-2024">March 2024</a></li><li> X-ray inspection system</li></ul>
+
+</div>
+                    <!-- Content -->
+                    <div class="content">
+                        <!-- News Detail -->
+                        
+<h1>
+    X-ray inspection system</h1>
+
+    <h2 class="subtitle">
+        08/03/2024</h2>
+    <p>By leveraging advanced computed laminography and integrated artificial intelligence (AI) technology, Comet Yxlon brings high-resolution 3D X-ray capabilities to the forefront for detailed testing in the advanced packaging of integrated circuits (ICs). The semiconductor market now has a non-destructive supplement or alternative to conventional destructive methods. Three-dimensional X-ray images with a resolution of less than 1 µm can reliably identify typical defects in 3D IC solder connections, such as missing and bridged bumps, voids, non-wet, head-in-pillow, bump shift and deviations in stand-off height or deformations. Modern analysis software based on deep learning takes over the automatic evaluation, including report generation according to the user’s requirements. Therefore, the new CA20 X-ray inspection system offers the semiconductor industry a whole new level of safety and efficiency.</p><p>Semiconductors have become an integral part of the networked world. This places great demands on manufacturers, as innovation cycles are becoming shorter and shorter while the complexity of integrated circuits is constantly increasing. To remain competitive, there is a particular focus on reducing investment costs and accelerating ramp-up processes to achieve error-free production of new high-performance components more quickly. The early identification of critical defects considerably accelerates the development and optimisation of new production processes and thus the production start-up of new chip generations.</p><p>With the CA20 inspection system, Comet Yxlon has taken 3D X-ray technology for the semiconductor advanced packaging industry to a whole new level. The complete redesign of the hardware, optimised for semiconductor applications in terms of stability, imaging, precision and maintenance requirements, combined with high-resolution computed laminography and software packages such as Dose Manager, Batch Manager and ‘Insights’ for automated evaluations, ensure accuracy, reliability and efficiency for all inspection tasks. All functions are easily and intuitively accessed via the Geminy user interface, which has proven itself in the Comet Yxlon FF and UX product range, equipped with graphical symbols, wizards and various presets for every skill level.<br /><br /><b>Comet Yxlon</b><br /><a href="https://yxlon.comet.tech" target="_blank">https://yxlon.comet.tech</a></p>
+
+<p class ="backlink">
+    <a class="noline" href="/News/march-2024">&lt;&lt;
+        Back</a>
+</p>
+<div class="clear">
+</div>
+
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        
+<div class="footer">
+    <div class="inner">
+        
+        <!-- WYSIWYG Content -->
+        <div class="sharethis">
+            <table>
+    <tbody>
+        <tr>
+            <td><span class="follow-us">Follow Us:</span> </td>
+            <td><a target="_blank" href="http://www.facebook.com/pages/The-British-Institute-of-Non-Destructive-Testing-BINDT/214756055220714"><img src="/resources/BINDT/images/follow-us/facebook.jpg" alt="Facebook" width="29" height="29" /></a> <a target="_blank" href="https://twitter.com/bindt"><img src="/resources/BINDT/images/follow-us/twitter.jpg" alt="Twitter" width="29" height="29" /></a> <a target="_blank" href="https://www.linkedin.com/groups/3879168/"><img src="/resources/BINDT/images/follow-us/linkedin.jpg" alt="Linkedin" width="29" height="29" /></a>&nbsp;<a target="_blank" href="http://www.youtube.com/user/bindtfilms"><img src="/resources/BINDT/images/follow-us/youtube.jpg" alt="Youtube" width="29" height="29" /></a> </td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+        <div class="hardcode-links">
+            <ul>
+                <li><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+                <li><a href="/terms-conditions/" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                <li><a href="/terms-conditions/Privacy-Notice/" title="Privacy">Privacy</a></li>
+                <li><a href="/terms-conditions/Cookie-Policy/" title="Privacy">Cookies</a></li>
+                <li><a href="/Sitemap/" title="Privacy">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="bottom-links">
+             
+                <!-- Links Columns -->
+                <dl><dt>Certification</dt><dd><ul><li><a href="/Certification/pcn-certificate-verification/pcn-verification-form/" target="_self" class="" title="PCN Certification Verification">PCN Certification Verification</a></li><li><a href="/Certification/PCN24download/" target="_self" class="" title="PCN24 Document Download">PCN24 Document Download</a></li><li><a href="/Certification/pcn-examinations/" target="_self" class="" title="PCN Examinations">PCN Examinations</a></li><li><a href="/Certification/general-information/Standards-that-affect-your-PCN-Certificate/" target="_self" class="" title="Standards that affect PCN">Standards that affect PCN</a></li></ul></dd></dl><dl><dt>Membership</dt><dd><ul><li><a href="http://www.bindt.org/shopbindt/membership/" target="_self" class="" title="Join BINDT">Join BINDT</a></li><li><a href="/membership/for-individuals" target="_self" class="" title="Information for individuals">Information for individuals</a></li><li><a href="/membership/for-companies" target="_self" class="" title="Information for companies">Information for companies</a></li><li><a href="/membership/fees/" target="_self" class="" title="Membership fees">Membership fees</a></li><li><a href="/membership/engineers-registration/" target="_self" class="" title="Engineers' Registration">Engineers' Registration</a></li></ul></dd></dl><dl><dt>Document Download</dt><dd><ul><li><a href="/Certification/PCN24download/" target="_self" class="" title="PCN24 Document Download">PCN24 Document Download</a></li><li><a href="/Certification/pcn-exam-requirements-and-document-download/Condition-Monitoring-Documents/" target="_self" class="" title="CM Document Download">CM Document Download</a></li><li><a href="/education-and-training/bindt-approved-trainers/" target="_self" class="" title="BINDT Approved Trainers">BINDT Approved Trainers</a></li><li><a href="/NANDTB/UK-NANDTB-Documents/" target="_self" class="" title="UK NANDTB Document Download">UK NANDTB Document Download</a></li></ul></dd></dl><dl><dt>Directories</dt><dd><ul><li><a href="/Buyers-Guide" target="_self" class="" title="Buyers Guide">Buyers Guide</a></li><li><a href="/Buyers-Guide/Corporate-Members/" target="_self" class="" title="Corporate Members">Corporate Members</a></li><li><a href="/Buyers-Guide/consulting/" target="_self" class="" title="Register of Consultants">Register of Consultants</a></li><li><a href="/Useful-Links/Directory-of-Foreign-NDT-Societies/" target="_self" class="" title="Overseas NDT Societies">Overseas NDT Societies</a></li><li><a href="/membership/members-directory/members-directory/" target="_self" class="" title="Members Directory">Members Directory</a></li></ul></dd></dl><dl><dt>About Us</dt><dd><ul><li><a href="/about-us/" target="_self" class="" title="About BINDT">About BINDT</a></li><li><a href="/What-is-NDT/" target="_self" class="" title="About NDT">About NDT</a></li><li><a href="/What-is-CM/" target="_self" class="" title="About CM">About CM</a></li><li><a href="/branches-and-committees/" target="_self" class="Institute Branches and Committees" title="Institute Branches and Committees">Institute Branches and Committees</a></li><li><a href="/videos/" target="_self" class="" title="Videos">Videos</a></li></ul></dd></dl>
+      
+            <div class="clear"></div>
+         
+           <div class="backtop">
+                <a title="Back to Top" onclick="backToTop(); return false" href="#">Back to Top</a>
+            </div>
+      
+        </div>
+        <div class="sign-up">
+            <!-- Newsletter -->
+            <form action="/News/march-2024/x-ray-inspection-system/" method="post" id="FooterNewsletterSignup">
+            <noscript>
+                <input type="hidden" name="newsletter_subscribe_display" value="1" />
+            </noscript>
+            <div>
+                <label for="newsletter-email">Sign up:</label>
+                <input type="text" id="newsletter_email" name="newsletter_email" value="" title="Newsletter - enter email address" />
+                <noscript>
+                     <button type="submit" value="Go" name="newsletter_button" id="newsletter_button">Go</button>
+                </noscript>
+                <a class="button" title="Go" href="" id="newsletter_link">Go</a>  
+            </div>
+            </form>
+            <!-- Jobs -->
+            
+            <div class="unsubscribe-link">
+                <a href="/unsubscribe">Click here to unsubscribe <span class="button" title="Go" href="/unsubscribe">Go</span></a>
+            </div>
+
+        </div>
+
+        <div class="bindt-info">
+            The British Institute of Non-Destructive Testing<br />
+            Midsummer House, Riverside Way, Bedford Road, Northampton NN1 5NX, UK<br />
+            Tel: +44 (0)1604 438300 | Fax: +44 (0)1604 438301 | Email: info@bindt.org
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+    <div class="bindt-reg">
+        The British Institute of Non-Destructive Testing is a Limited Company (Reg No 969051,
+        England) and a Charity (Reg No 260666).
+    </div>
+    <div class="redtechnology"><a href="https://www.redtechnology.com" title="Red" target ="_blank" >Ecommerce &amp; CMS by <span>Red</span></a></div>
+    <div class="copyright">&copy;2013 The British Institute of Non-Destructive Testing</div>
+
+</div>
+
+    </div>
+        
+<div id="cboxOverlay" style="display: none; opacity: 0.9; cursor: pointer;"></div>
+<div id="newsletter_main_container" style="width:100%; display:none; position:absolute; z-index:9999;height: 900px; text-align:center; margin: 0 auto; top:0">
+
+<!-- Newsletter -->
+
+<div id="colorbox" class="newsletter_subscribe_container" style=" display:none;padding-bottom: 50px; padding-right: 50px;
+    top: 30%; width: 680px; height: 595px;margin:0 auto; text-align:left; position:relative;">
+        
+    <div id="cboxWrapper" style="height: 655px; width: 730px;">
+        <div>
+            <div id="cboxTopLeft" style="float: left;">
+            </div>
+            <div id="cboxTopCenter" style="float: left; width: 680px;">
+            </div>
+            <div id="cboxTopRight" style="float: left;">
+            </div>
+        </div>
+        <div style="clear: left;">
+            <div id="cboxMiddleLeft" style="float: left; height: 595px;">
+            </div>
+            <div id="cboxContent" style="float: left; width: 680px; height: 595px;">
+                <div id="cboxLoadedContent" style="display: block; width: 680px; overflow: auto;  height: 590px;">
+                    <div id="inline_content_newsletter">
+                        <div class="form-showing">
+                            <a title="Close" class="button-close float-right" href="/News/march-2024/x-ray-inspection-system/">
+                                Close</a>
+                            <div class="required-message">
+                                Required fields are marked with <span class="red">*</span></div>
+                            <div class="title">
+                                Newsletter sign up</div>
+
+                            
+
+                            <form action="/News/march-2024/x-ray-inspection-system/" method="post">
+
+                            <input type="hidden" name="newsletter_subscribe_action" id="action" value="1" />
+                            <input type="hidden" name="newsletter_subscribe_display" value="1" />
+
+                            <div class="row">
+                                Please enter your details</div>
+                            <div class="row">
+    
+                                                                                              
+                                                
+                                <label for="newsletter_subscribe_firstname">
+                                    First name</label>
+                                <input type="text" name="newsletter_subscribe_firstname" id="newsletter_subscribe_firstname"
+                                    value="" />
+                            </div>
+                            <div class="row">
+                                <label for="newsletter_subscribe_lastname">
+                                    Last name</label>
+                                <input type="text" name="newsletter_subscribe_lastname" id="newsletter_subscribe_lastname"
+                                    value="" />
+                            </div>
+                            <div class="row">
+                                <label for="news-email">
+                                    Email address<span class="red">*</span></label>
+                                <input type="text" name="newsletter_subscribe_email" id="newsletter_subscribe_email"
+                                    value="" />
+                                
+                                
+                            </div>
+                            <div class="row">
+                                <p>The information we learn from customers helps us personalise and continually improve the service we provide through our website and other channels. For more information please read our <a href="#" class="show-privacy-popup">privacy policy</a>. Please tick the box below to receive useful information on BINDT activities.</p>
+                            </div>
+                            <div class="communication-preferences">
+                                <div class="row">
+                                    <input class="styled" type="checkbox" name="newsletter_subscribe_privacy" value="1" id="newsletter_subscribe_privacy"  />
+                                    <label for="newsletter_subscribe_privacy">Please send me information on BINDT activities</label>
+                                    
+                                </div>
+                                <div class="row activity-information-hide" id="newsletter_subscribe_activity_information">
+                                    <p>Please select the activities you want to receive information about:</p>
+                                    <ul>
+                                        <li><input class="styled" type="checkbox"  name="newsletter_subscribe_events" id="newsletter_subscribe_events" value="1" /><label for="newsletter_subscribe_events">Events</label></li>
+                                        <li><input class="styled" type="checkbox"  name="newsletter_subscribe_membership" id="newsletter_subscribe_membership" value="1" /><label for="newsletter_subscribe_membership">Membership and Engineering Registration</label></li>
+                                        <li><input class="styled" type="checkbox"  name="newsletter_subscribe_certification" id="newsletter_subscribe_certification" value="1" /><label for="newsletter_subscribe_certification">Certification</label></li>
+                                        <li><input class="styled" type="checkbox"  name="newsletter_subscribe_branches" id="newsletter_subscribe_branches" value="1" /><label for="newsletter_subscribe_branches">Branches</label></li>
+                                        <li><input class="styled" type="checkbox"  name="newsletter_subscribe_publications" id="newsletter_subscribe_publications" value="1" /><label for="newsletter_subscribe_publications">Publications</label></li>
+                                        <li><input class="styled" type="checkbox"  name="newsletter_subscribe_all" id="newsletter_subscribe_all" value="1" /><label for="newsletter_subscribe_all">Please send me information on all BINDT activities</label></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="row float-right">
+                                <button type="submit" name="newsletter_subscribe_submit" id="newsletter_subscribe_submit"
+                                    title="Sign up">
+                                    Sign up</button>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            </form>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+              <div id="cboxTitle" style="float: left; display: block;">
+                    Go</div>
+                <div id="cboxCurrent" style="float: left; display: none;">
+                </div>
+                <div id="cboxNext" style="float: left; display: none;">
+                </div>
+                <div id="cboxPrevious" style="float: left; display: none;">
+                </div>
+                <div id="cboxSlideshow" style="float: left; display: none;">
+                </div>
+            </div>
+              <div id="cboxMiddleRight" style="float: left; height: 595px;">
+            </div>
+        </div>
+   <div style="clear: left;">  
+            <div id="cboxBottomLeft" style="float: left;">
+            </div>
+            <div id="cboxBottomCenter" style="float: left; width: 680px;">
+            </div>
+            <div id="cboxBottomRight" style="float: left;">
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; width: 9999px; visibility: hidden; display: none;">
+    </div>
+</div>
+
+</div>
+
+
+
+<div id="privacy_popup" class="popup jqhidden">
+    <a href="#" class="privacy_popup_close sprite close" title="Close">Close</a>
+    
+        <div class="popup-header">Privacy Policy</div>
+
+    <div class="content">
+        
+            <span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;"><span class="NormalText" style="line-height: 19.2px;">BINDT knows that you care how information about you is used and shared and we appreciate your trust in us to do that carefully and sensibly. This notice describes the privacy policy of bindt.org. By visiting bindt.org you are accepting and consenting to the practices described in this Privacy Notice.</span><br /><br />Any personal information provided to or to be gathered by bindt.org and ndtnews.org is controlled primarily by The British Institute of Non-Destructive Testing,&nbsp;</span><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">Midsummer House, Riverside Way, Bedford Road, Northampton NN1 5NX, UK.</span><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;"><br /><br />The information we learn from customers helps us personalise and continually improve your shopping experience at bindt.org and ndtnews.org. We use the information to handle orders, deliver products and services, process payments, communicate with you about orders, products, services and promotional offers, update our records and generally maintain your accounts with us.<br /><br />Information about our customers is an important part of our business and we are not in the business of selling it to others.</span><br style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12.8px;" /><br style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12.8px;" /><strong class="NormalText" style="line-height: 19.2px; font-family: arial, helvetica, sans-serif; font-size: 12.8px;">How Secure Is Information About Me?</strong><br style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12.8px;" /><ul style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12.8px;"><li><span class="NormalText" style="line-height: 19.2px;">We work to protect the security of your information during transmission by using Secure Sockets Layer (SSL) software, which encrypts information you input.</span></li><li><span class="NormalText" style="line-height: 19.2px;">We reveal only the last five digits of your credit card numbers when confirming an order. Of course, we transmit the entire credit card number to the appropriate credit card company during order processing.</span></li><li><span class="NormalText" style="line-height: 19.2px;">We maintain physical, electronic and procedural safeguards in connection with the collection, storage and disclosure of personally identifiable customer information. Our security procedures mean that we may occasionally request proof of identity before we disclose personal information to you.</span></li><li><span class="NormalText" style="line-height: 19.2px;">It is important for you to protect against unauthorised access to your password and to your computer. Be sure to sign off when you finish using a shared computer.</span></li></ul><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;"><br />The British Institute of Non-Destructive Testing<br />Midsummer House<br />Riverside Way<br /></span><span style="font-size: 12.8px; font-family: arial, helvetica, sans-serif; color: #000000;">Bedford Road<br /></span><span style="font-size: 12.8px; font-family: arial, helvetica, sans-serif; color: #000000;">NORTHAMPTON<br /></span><span style="color: #000000; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">NN1 5NX<br /></span><span style="color: #000000; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">United Kingdom</span><p><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">Tel: +44 (0)1604 438300<br />Fax:&nbsp;</span><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">+44 (0)</span><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">1604 438301<br />E-mail:&nbsp;<a class="NormalText" href="mailto:info@bindt.org" style="color: #005da3; line-height: 19.2px;">info@bindt.org</a><br />Web: www.bindt.org<br /><br /><br />The British Institute of Non-Destructive Testing is a Limited Company (Reg. No. 969051, England) and a Charity (Reg. No. 260666). Registered Office: <span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;">Midsummer House, Riverside Way, Bedford Road, Northampton NN1 5NX, UK.</span><span class="NormalText" style="line-height: 19.2px; font-size: 12.8px; font-family: arial, helvetica, sans-serif;"><br /></span> VAT Reg. No. 581 2105 68</span></p>
+        
+    </div>
+</div>
+
+<script>
+    Popup = {
+        NEWSLETTER: 0,
+        PRIVACY: 1,
+        CONSENT: 2
+    };
+
+    var popups = [];
+
+    $(document).ready(function () {
+
+        $("#privacy_popup").popup({
+            transition: 'all 0.3s',
+            autoopen: false,
+            onclose: function () {
+                if (popups.length > 0 && popups[popups.length -1] !== Popup.PRIVACY) {
+                    showPopup(popups[popups.length - 1], false);
+                    popups.pop();
+                }
+            }
+        });
+
+        function showPopup(popup, recordPath) {
+            if (recordPath) {
+                if ($("#newsletter_popup").is(":visible")) {
+                    popups.push(Popup.NEWSLETTER);
+                    $("#newsletter_popup").popup("hide");
+                } else if ($("#privacy_popup").is(":visible")) {
+                    popups.push(Popup.PRIVACY);
+                    $("#privacy_popup").popup("hide");
+                } else if ($("#consent_popup").is(":visible")) {
+                    popups.push(Popup.CONSENT);
+                    $("#consent_popup").popup("hide");
+                }
+            }
+
+            if (popup === Popup.NEWSLETTER) {
+                $("#newsletter_popup").popup("show");
+            } else if (popup === Popup.PRIVACY) {
+                $("#privacy_popup").popup("show");
+            } else if (popup === Popup.CONSENT) {
+                $("#consent_popup").popup("show");
+            }
+        }
+
+        $(".show-privacy-popup").click(function(e) {
+            showPopup(Popup.PRIVACY, true);
+            return false;
+        });
+
+        $(".vfform").bind("vfformupdated",
+            function () {
+                $(".vflabel .show-privacy-popup", $(this)).click(function (e) {
+                    e.preventDefault();
+                    showPopup(Popup.PRIVACY, true);
+                });
+
+                $(".vflabel .show-marketing-popup", $(this)).click(function (e) {
+                    e.preventDefault();
+                    showPopup(Popup.CONSENT, true);
+                });
+            });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#newsletter_subscribe_privacy').click(function () {
+            if (this.checked) {
+                $("#newsletter_subscribe_activity_information").show();
+            } else {
+                $("#newsletter_subscribe_activity_information").hide();
+            }
+        });
+        $('#newsletter_subscribe_all').click(function () {
+            $('#newsletter_subscribe_events').prop("checked", this.checked);
+            $('#newsletter_subscribe_membership').prop("checked", this.checked);
+            $('#newsletter_subscribe_certification').prop("checked", this.checked);
+            $('#newsletter_subscribe_branches').prop("checked", this.checked);
+            $('#newsletter_subscribe_publications').prop("checked", this.checked);
+        });
+
+        function updateAllCheckBox(isChecked) {
+            if (!isChecked) {
+                 $('#newsletter_subscribe_all').prop("checked", false);
+            }
+        }
+
+        $('#newsletter_subscribe_events').click(function () {
+            updateAllCheckBox(this.checked);
+        });
+
+        $('#newsletter_subscribe_membership').click(function () {
+            updateAllCheckBox(this.checked);
+        });
+        $('#newsletter_subscribe_certification').click(function () {
+            updateAllCheckBox(this.checked);
+        });
+        $('#newsletter_subscribe_branches').click(function () {
+            updateAllCheckBox(this.checked);
+        });
+        $('#newsletter_subscribe_publications').click(function () {
+            updateAllCheckBox(this.checked);
+        });
+    });
+</script>
+
+        
+<div id="cboxOverlay" style="display: none; opacity: 0.9; cursor: pointer;"></div>
+<div id="job_alerts_main_container" style="width:100%; display:none; position:absolute; z-index:9999;height: 900px; text-align:center; margin: 0 auto; top:0">
+
+
+<!-- Newsletter -->
+
+   <div id="colorbox" class="job_alerts_subscribe_container" style="display:none; padding-bottom: 50px; padding-right: 50px;
+        top: 30%; width: 680px; height: 290px;margin:0 auto; text-align:left; position:relative;">
+              
+        <div id="cboxWrapper" style="height: 340px; width: 730px;">
+            <div>
+                <div id="cboxTopLeft" style="float: left;">
+                </div>
+                <div id="cboxTopCenter" style="float: left; width: 680px;">
+                </div>
+                <div id="cboxTopRight" style="float: left;">
+                </div>
+            </div>
+      <div style="clear:left;">
+                <div id="cboxMiddleLeft" style="float: left; height: 290px;"></div>
+                <div id="cboxContent" style="float: left; width: 680px; height: 290px;">
+                    <div id="cboxLoadedContent" style="display: block; width: 680px; overflow: auto; height: 285px;">
+                        <div id="inline_content_job">
+                            <div class="form-showing">
+                                <a title="Close" class="button-close float-right" href="/News/march-2024/x-ray-inspection-system/">
+                                    Close</a>
+                                <div class="required-message">
+                                    Required fields are marked with <span class="red">*</span></div>
+                                <div class="title">Job alerts sign up</div>
+                                
+                                 
+
+                                <form action="/News/march-2024/x-ray-inspection-system/" method="post">
+
+                                <input type="hidden" name="job_alerts_subscribe_action" id="action" value="1" />
+                                <input type="hidden" name="job_alerts_subscribe_display" value="1" />
+
+                                <div class="row">Please enter your details</div>
+                                <div class="row">
+                                    <label for="job_alerts_subscribe_title">Title</label>
+                                    
+                                        <select name="job_alerts_subscribe_title" id="job_alerts_subscribe_title" class="styled" rel="job_alerts_subscribe_title"><option value=""> Please select title </option><option value="Prof" >Prof</option><option value="Asst Prof" >Asst Prof</option><option value="Dr" >Dr</option><option value="Eng" >Eng</option><option value="Eur Ing" >Eur Ing</option><option value="Dipl Ing" >Dipl Ing</option><option value="Mr" >Mr</option><option value="Mrs" >Mrs</option><option value="Ms" >Ms</option><option value="Miss" >Miss</option></select>
+                                </div>
+                                     <div class="row">
+                                         <label for="job_alerts_subscribe_firstname">
+                                             First name</label>
+                                         <input type="text" name="job_alerts_subscribe_firstname" id="job_alerts_subscribe_firstname"
+                                             value="" />
+                                     </div>
+                                <div class="row">
+                                    <label for="job_alerts_subscribe_lastname">
+                                        Last name</label>
+                                    <input type="text" name="job_alerts_subscribe_lastname" id="job_alerts_subscribe_lastname"
+                                        value="" />
+                                </div>
+                                <div class="row">
+                                    <label for="job_alerts_subscribe_email">
+                                        Email address<span class="red">*</span></label>
+                                    <input type="text" name="job_alerts_subscribe_email" id="job_alerts_subscribe_email"
+                                        value="" />
+                                    
+                                    
+                                </div>
+                                <div class="row float-right">
+                                    <button type="submit" name="job_alerts_subscribe_submit" id="job_alerts_subscribe_submit"
+                                        value="SignUp">
+                                        Sign Up</button>
+                                </div>
+                                <div class="clear">
+                                </div>
+                                </form>
+
+                                
+
+                            </div>
+                        </div>
+                  </div>
+                    <div id="cboxTitle" style="float: left; display: block;">Go</div>
+                    <div id="cboxCurrent" style="float: left; display: none;"></div>
+                    <div id="cboxNext" style="float: left; display: none;"></div>
+                    <div id="cboxPrevious" style="float: left; display: none;"></div>
+                    <div id="cboxSlideshow" style="float: left; display: none;"></div>
+              </div>
+                <div id="cboxMiddleRight" style="float: left; height: 290px;"></div>
+          </div>
+            <div style="clear: left;"> 
+                <div id="cboxBottomLeft" style="float: left;"></div>
+                <div id="cboxBottomCenter" style="float: left; width: 680px;"></div>
+                <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+    </div>
+    </div>
+
+
+
+    
+   
+        <!--bottom header-->
+</body>
+</html>

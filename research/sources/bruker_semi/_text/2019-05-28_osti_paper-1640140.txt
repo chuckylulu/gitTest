@@ -1,0 +1,1187 @@
+                                                                                                                                                                                            SAND2019-5696C
+
+
+
+
+                  Sub-lOpm Pitch Hybrid Direct Bond
+                  Interconnect Development for Die-to-
+                  Die Hybridization
+
+
+
+                                           John P. Mudrick, Jonatan A. Sierra-Suarez, Matthew B.                                                                                                                   Sandia
+                                           Jordan, T.A. Friedmann, Robert Jarecki and M. David Henry                                                                                                               National
+                               20 19 Sandia National Laboratories                                                                                                                                                  Laboratories
+                                                                                                                                                                                    0ENERGY
+                                                                                                                                                                                                    U.S. DEPARTMENT OF
+
+
+
+
+The 2019 IEEE 69th Electronic Components
+                                           Albuquerque, NM, USA
+       and Technology Conference                                                                                                                                                          A .W
+                                                                                                                                                                                        1    V
+                                           jimudricsandia.qov                                                                                                                           National Nuclear Security Administration
+
+
+
+
+                                                             Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering
+                                                             Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International lnc., for the U.S. Department of Energy's
+                                                             National Nuclear Security Administration under contract DE-NA0003525.
+ IEEE 69th ECTC — Las Vegas, NV, USA This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the May 28 — 31, 2019
+                                                             paper do not necessarily represent the views of the U.S. Department of Energy or the United States Government.
+           Direct bonding
+
+           • Homogeneous bonding                                                                                0
+                                                                                                                 x.0                                              o- 6 -o
+                                                                                                                                                         30
+                                                                                                                                                              , o 0 0, o
+                                                                                                                 °N              Surfaie
+                                                                                                               H•   H..     Native Oxide
+                                                                                                                          ti
+                          — Hydrophobic (H-terminated) or hydrophilic                                Surface     Q. 0\
+
+                            (oxidized) surfaces                                                      Thermal Oxide 11--T•H
+                                                                                                          3.
+                                                                                                                     o        o
+                                                                                                                                                             Si
+                                                                                                                                                           0 0 0
+                                                                                                                                                                          Si
+                                                                                                                                                                      0 0 0
+                                                                                                                               4
+                          — Attractive van der Waals interactions give                                             T. Plach et al., J Appl. Phys. 113(2013).
+                                                                                                                   Goselle et al., Semiconductor Wafer Bonding: Science and
+                            way to covalent bond formation at moderate                                             Technology (1999).
+
+
+                            temperatures
+                          — Thermal requirements can be reduced with                                                                                     M. Reiche, Phys. Stat.
+                                                                                                                                                         Sol.(a) 203, 2006.
+                            surface activation
+           • Hybrid bonding
+                          — 2 step bond formation
+                                         — Homogeneous bond (above)
+                                         — Post-bond anneal for interconnect formation
+                                                                  sio,       cu         = Metal routing
+
+
+
+
+                                                                                                                                           •         ztooT,
+
+                                                                                                                                                                 Sandia
+                                     19                                                                                                                          National
+The 2019 EEE 69th Destro.* Cornponents
+       and Technology Conference
+                                                                                                                                                                 Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                  J. Mudrick 2                                                                   May 28 — 31, 2019
+         Si02/Cu interconnects: existing work
+
+           • Fine pitch, low defectivity, high reliability have been demonstrated
+                                                 61911 EMI 6861 00.f
+
+
+                                                 la42 84.2
+                                                 6n
+                                                 666x VAC
+
+
+                                                      99.6
+                                                                 88.
+                                                                          889
+                                                                                1661 sew
+                                                                          61916 6187 fam 0380 EVA,
+
+
+
+                                                                                cnco
+                                                                                       ORM C461 4913A
+                                                                                       615.1 C686 NOS
+                                                                                            GGILA 61902
+                                                                     1E84 OE& alUM 6681 64011
+                                                                 SRI 6E61 9111 164146911 6586 6961
+                                                                                                                            (ar                                        O
+
+                                                                                                                                                                       g 40
+                                                                                                                                                                             100
+
+                                                                                                                                                                             80
+
+                                                                                                                                                                             60
+
+
+
+                                                                                                                                                                             20
+                                                                                                                                                                                    (a)
+                                                                                                                                                                                                           •
+                                                                                                                                                                                                              (b)
+                                                                                                                                                                                                            m" !lo
+
+
+
+
+                                                                                                                                                                                                              .••
+
+
+                                                                                                                                                                              0
+                                                                                                                                                                                       50         100         150
+                                              G. Gao et al., 2018 itEE ECTC.                                                                                       S. Lhostis et al. 2016 IEEE ECTC.
+
+           • Performance is reliant upon careful surface preparation
+                         — Low Si02 roughness and defectivity, uniform Cu recess depth
+                                                                                                                3
+
+                                                                                                               25
+                                                                                                          E
+                                                                                                                                                                                    G. Gao et al., 2018 IEEE
+                                                                                                 Die 1    "E
+                                                                                                           =    2                                                                   ECTC.
+
+                                        Inter-die gap
+                                                                                                 Die 2         os
+                                                                                                               0
+                                                                                                                    5um/ 10u in pitch   5u m/20um pitch   10u m/40urn oc h
+
+
+
+
+                                                                                                                                                                                            S. Lhostis et al., 2016 IEEE
+                                                .s        %fie
+                                                                                                                                                                                            ECTC.
+                                              06
+     L. Arnaud et al., 2018 IEEE
+     IRPS.
+
+
+                                                             1     3      4       S         6         /                                                                   3.61w &amen-
+                                                                                                                                                                                                                     Sandia
+                                                                   kan Orstance dim)                                                                                   -14 tun diameter
+                                                                                                                                                                       —5.-1 tun dimueter                            National
+The 2019 EEE 69th Bectmrio Components
+       and Technology Conference
+                                                                                                                                                                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                                                   J. Mudrick 3                                                                                       May 28 - 31, 2019
+         Si02/Cu interconnects: outstanding questions
+
+           • What range of inter-plug Cu gap heights leads to functional
+             interconnects?
+           • Is there a dependence on post-bond anneal temperature?
+           • Goal: define process window
+                         — Key parameters: inter-die gap = d1 + d2, annealing temperature
+
+                                                      Bond                               Anneal
+
+
+
+                                                             I
+                                                                                7,ct1 +,12
+                              1111   1d2
+                                ——— —t-
+
+                                          -—   1" d                              t
+                                               f1
+
+
+                                                                                                          Sandia
+                                   19                                                                     National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                                                          Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                          J. Mudrick 4                     May 28 — 31, 2019
+          Outline of this work
+
+           • Materials and process flow
+           • Direct bond surface preparation and metrology
+           • Test vehicle results
+           • Probing: physical and electrical
+           • Conclusion and paths forward
+
+
+
+
+                                                                     Sandia
+                                   19                                National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 5       May 28 — 31, 2019
+          Acknowledgements
+
+           • Materials and process flow
+                          — MESA Fab
+           • Direct bond surface preparation
+             and metrology
+                          — Extensive AFM work: Lisa Caravello     40.7 rim
+
+
+                            and Crystal Sennett(SNL)
+                          — Extensive CMP process
+                                                                              -35
+
+                            development: Crystal Sennett                            2   4   6       8     10    12  14
+                                                                                                Lateral position (en)
+                                                                                                                         18   18
+
+
+
+
+           • Test vehicle results
+           • Probing: physical and electrical
+                          — FIB-SEM: Michael Rye (SNL)
+           • Conclusion and paths forward
+
+                                                                                                                 Sandia
+                                     19                                                                          National
+The 2019 EEE 69th Destro.* Cornponents
+       and Technology Conference
+                                                                                                                 Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA             J. Mudrick 6                                  May 28 — 31, 2019
+          Outline
+
+           • Materials and process flow
+           • Direct bond surface preparation and metrology
+           • Test vehicle results
+           • Probing: physical and electrical
+           • Conclusion and paths forward
+
+
+
+
+                                                                     Sandia
+                                   19                                National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 7       May 28 — 31, 2019
+          Materials and process flow
+
+           • Aluminum BEOL "starting material"
+           • Daisy chain structure with chain lengths up to 1.5 million
+           • Cu interconnect layer:
+                         — 3 pm diameter "plugs" on 7.5 pm pitch
+                                       i. Etch to define      rea     iv. Cu + barrier CMP     vii. Resist strip
+                                             AI metal stack
+                                                                                               viii. Activate, bond, and
+                                                    i0                                         anneal
+                                              Silicon wafer
+
+                            ii. Barrier + seed metal deposition
+                                                                    v. Front-side oxide etch
+
+
+
+
+                                          iii. Electroplate Cu
+                                                                        vi   avv dicing
+
+
+
+
+                                                                                                                           Sandia
+                                   19                                                                                      National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                                                                           Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                               J. Mudrick 8                                 May 28 — 31, 2019
+          Materials and process flow
+
+           • Metal stack:
+                                        • • •
+
+
+
+
+                    Al:Cu (1wt.%)
+               TiN (50-100 nm)
+                         Ta (20 nm)
+                           Cu (2 pm)
+                         Ta (20 nm)
+               TiN (50-100 nm)
+                    Al:Cu (lwt.%)
+
+
+
+                                                •   HV        curr  mag    ❑ HFW     WD       tilt   det frame             1 [..tm
+                                                    5.00 kV   50 pA 80 000 x 5.18 pm 2.9 mm   52.0 ° TLD 31.7 s   Sandia National Labs G4
+
+
+
+
+                                                                                                                                             Sandia
+                                   19                                                                                                        National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                                                                                             Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                              J. Mudrick 9                                                    May 28 — 31, 2019
+          Outline--
+
+           • Materials and process flow
+           • Direct bond surface preparation and metrology
+           • Test vehicle results
+           • Probing: physical and electrical
+           • Conclusion and paths forward
+
+
+
+
+                                                                     Sandia
+                                   19                                National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 10      May 28 — 31, 2019
+         Surface preparation and metrology
+
+           • Two-step CMP process:
+                         — Step 1: remove Cu selectively over Ta (Cabot C8900 series slurry)
+   Cu
+   Ta
+                                        .      Metal stack
+                                                  Si02
+                                                                       ..     Er
+                                              Silicon wafer
+
+
+
+                         — Step 2: non-selective Ta, Cu removal (Cabot B7000 series slurry)
+
+
+                                        -
+                                                              -   .1
+
+                                        Ail
+
+
+           • Cu recess depth is controlled by over-polish time in Step 1
+                                                                                               Sandia
+                                   19                                                          National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                                               Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                       J. Mudrick 11            May 28 — 31, 2019
+          Surface preparation and metrology
+
+           • AFM measurements: Si02 roughness and Cu recess depth
+                                                                m                             27.0 nm
+                                                                                                               a)
+
+
+
+
+                                        Height   200.0 nm
+                                                            74i82   Height           3.0 pm
+                                                                                                               o -5
+                                                                                                               o
+
+
+
+
+                                                                                                                      4    6
+                                                                                                                               ZA,JTf"
+                                                                                                                                   8     10
+                                                                                                                                              a,
+
+
+                                                                                                                                               12  14
+                                                                                                                                                         \
+
+
+                                                                                                                                                        16        18
+                                                                                                                                                                    A
+                                                                                                                               Lateral position (pm)
+
+
+             • Range of heights within Si02, Cu areas
+                           — How should Cu recess depth be defined?i
+                                                                                                                                                                   - 100
+                           — "Top": crown of Si02 surface
+
+
+
+
+                                                                                                                                                                           Cumulative Area (%)
+                                                                                                        0.8
+                                                                                                                                                                   -80
+                           — "Bottom": depth encompassing 99% of                                        0.6-                                                       - 60
+                           the scan area                                                           t,„z 0.4-                                                       -40
+
+                                                                                                        0.2-                                                       - 20
+
+                                                                                                        0.0                                                            o
+                                                                                                                      10         15      20                  30
+                                                                                                                           Depth (nm)
+                                                                                                                                                             Sandia
+                                    19                                                                                                                       National
+The 2919 EEE 69th Bectrook Components
+       and Technology Conference
+                                                                                                                                                             Laboratories
+    IEEE 69th ECTC - Las Vegas, NV, USA                                      J. Mudrick 12                                                         May 28 - 31, 2019
+          Surface preparation and metrology
+
+
+                Example wafer:
+                                         Within-wafer variation
+                                                                                  • Create multiple inter-die gap heights
+                                                                                                                                                                         1
+                                                      Die   Recess depth (nm)       by combining die from different
+                                                      A            12               parent wafers for multiple depth
+                                                      B            12
+                                                                                    combinations
+                                                      C            13
+                                                                                                      30
+                                                      D            14
+                                                                                                      25
+                                                      E            13
+
+
+                                                      G
+                                                      H
+
+
+
+
+                                                      K
+                                                       F
+
+
+
+
+                                                       I
+                                                       J
+
+
+                                                       L
+                                                                   13
+                                                                   14
+                                                                   15
+                                                                   13
+                                                                   13
+                                                                   15
+                                                                   13
+                                                                                          '2
+                                                                                          =
+                                                                                            g
+                                                                                          ........"
+                                                                                           _c 15
+                                                                                          .6_
+                                                                                            a)
+                                                                                           7:3 10
+                                                                                           0
+                                                                                            in
+                                                                                            o
+                                                                                            o 5
+
+                                                                                          C.)
+                                                                                                      20
+
+
+
+
+                                                                                                        0
+
+                                                                                                        5
+
+                                                                                                      -1 0
+                                                                                                                            i      —M— Target depth (nm)
+                                                                                                                                   —40— Initial Polish (nm) -
+                                                                                                                                    A Rework 1 (nm) -
+                                                                                                                                              ,
+                                                                                                             1   2      3      4       5     6       7      8
+                                                                                                                     Wafer # / Chronological order
+                Mean recess depth = 13.3 nm
+                Standard deviation = 1.0 nm                                       • Target depths are achieved with at
+                                                                                    most 1 rework step              Sandia
+                                    19                                                                                                                           National
+The 2919 EEE 69th Bectrook Components
+       and Technology Conference
+                                                                                                                                                                 Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                   J. Mudrick 13                                                                  May 28 — 31, 2019
+          Outline
+
+           • Materials and process flow
+           • Direct bond surface preparation and metrology
+           • Test vehicle results
+           • Probing: physical and electrical
+           • Conclusion and paths forward
+
+
+
+
+                                                                     Sandia
+                                   19                                National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 14      May 28 — 31, 2019
+          Test vehicle results: single inter-die gap
+
+                                                 Cu plug diameter = 3, 3.5 pm ,6111.17.1,,Pitch = 7.5 pm..ommommilsig
+        Die 1 (3.5 pm)
+
+           Die 2(3 pm)
+
+
+                                   24 mm                                 3
+                                                                                                                         7E+06 -
+  (a)                                      (b)                               —0— 19,200
+                                                                         2
+                                                                             —A.— 160,000                                6E+06     - 4.55 +/- 0.04 0/connection
+                                                                             —0— 339,000                               ET 5E+06 -
+                                                                             —0— 672,000                               a)
+                                                                                                                       c.) 4E+06
+ 24 mm
+                                                                                                                       g 3E+06 -
+                                                                                                                       u)
+                                                                                                                          2E+06
+
+                                                                                                                         1E+06 -
+
+                                                                                                                         0E+00 -
+                                                                         3
+                                                                         -1.5   -1.0   -0.5   00      0.5   1.0   15           0 0E+00      5.0E+05   1.0E+06     1.5E+06
+                                                                                              V (V)                                        Number of connections
+
+                  • Daisy chains span the entire —1-inch die length
+                  • Low bond void density
+                 • Data shown for 9 nm-gap pair after 350 °C anneal
+                 • Successful connections up to —1.5M links                                                                                                Sandia
+                                    19                                                                                                                     National
+The 2919 EEE 69th Bectronk Components
+       and Technology Conference
+                                                                                                                                                           Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                               J. Mudrick 15                                                                May 28 — 31, 2019
+          Test vehicle results: vary gap and temperature
+
+
+                                                                  —I=1— 9 nm -
+                   10000-                                         —A— 18 nm                           Resistance after 400 ° C anneal
+                                                                  AO— 32 nm E
+                                                                                            Inter-die gap (± 2 nm)   Resistance (Q/connection)
+                8 1000,                                                 47 nm
+                                                                                                     9                       4.8 ± 0.2
+                 co
+                                                                                                     18                      3.9 ± 0.1
+                 2 100e-
+                      -                                                                              32                      4.1 ± 0.1
+                 c    :
+                •16         10e-                                                                     47                      4.0 ± 0.1
+
+
+                                1
+                                         250       300        350        400
+                                          Post-bond anneal temperature (°C)
+
+
+           • General resistance drop is consistent with gap-closing mechanism
+           • Gap height trend is inconsistent: expect smallest gap to have lower
+             resistance at low temperatures
+           • Ultimate resistance is consistent across all samples, yet higher than
+             expected                                                              Sandia
+                                    19                                                                                                           National
+The 2919 EEE 69th Bectrook Components
+       and Technology Conference
+                                                                                                                                                 Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                          J. Mudrick 16                                           May 28 — 31, 2019
+          Outline
+
+           • Materials and process flow
+           • Direct bond surface preparation and metrology
+           • Test vehicle results
+           • Probing: physical and electrical
+           • Conclusion and paths forward
+
+
+
+
+                                                                     Sandia
+                                     19                              National
+The 2019 IEEE 69th Bechwin Cornponents
+       and Technology Conference
+                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 17      May 28 — 31, 2019
+          Probing: cross-section SEM
+                                                                                                                                                                       Cu La1,2                          Si Kal
+
+
+
+
+                                          NV      oar    meg o NFVI      WO      ref        frame
+                                          2.001EY SO po,   NO:, 6.311 pm 4.0 nun 32.0• TI.0 IS..      Sandra Nero,'later G4
+
+
+
+
+            • Some interface voiding, but barrier metals are functional
+
+        250 °C (300 D/connection)                                                                                                 350 °C (22 0/connection)                                400 °C (4 0/connection)
+        -- i                   f                                                                                                                                                          Lit ‘p
+
+
+
+                                                                                                rTI
+             arlf    Cser   moo             WD      bit   de                                                                  An. NV      sort   mg   0 141,1   NIC,   ell   OH   Innie
+       -DKr- SOO W SO pA 10000• 1 IS pno        non 523 • no 31,                                                              -per SOO IN 50 or, BO 000 n S.111pno 23non 12.0• TID 1731    "V                  O 311pnt 23Inns"
+                                                                                                                                                                                           300 AV SO pi% NJ 0000              SIX, 111)
+                                                                                                                                                                                                                                   d' * 337s
+
+
+
+
+            • Temperature evolution: resistance decrease does not correspond to
+              significant microstructural evolution
+                                                                                                                                                                                                                                                       Sandia
+                                     19                                                                                                                                                                                                                National
+The 2519 EEE 69th Destro.* Cornponents
+       and Tmhnoloso Conference
+                                                                                                                                                                                                                                                       Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                                                                                                    J. Mudrick 18                                                                       May 28 — 31, 2019
+          Probing: cross-section TEM
+
+
+
+
+                                                                              •
+
+
+
+                                                                        Ta
+
+
+
+
+                         • Thin oxide layer is present between TiN and Ta layers
+                                                                                           Sandia
+                                   19                                                      National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                                           Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA               J. Mudrick 19                May 28 — 31, 2019
+          Probing: TEM-EDS linescan
+                                                                                                  100
+
+
+                                                                                                    80
+
+
+                                                                                            c*"
+                                                                                                                                               Al
+                                                                                                    60
+                                                                                                                                              -Cu
+                                                                                             O                                                -Ti
+                                                                                           •        40                                         N
+             100 nm                                                                                                                           -Ta
+                                                                                                    20                                        -0
+
+                                                                                                                                                            e♦
+                                                                                                    0                —7
+       • EDS linescan: thin TiNOx layer present                                                      50   75   100        125   150   175   200    225      25(
+                                                                                                                           Position (nm)
+        between TiN and Ta films
+        • TiN etching during Si02/Cu pattern step, followed by air exposure:
+                                             i. Etch to d   ne Cu      a                 Plasma
+                                                   Al me    stack
+                                                            "MINew'
+                                                    Silicon wafer                      CFX
+                                         ii. Barrier + seed metal deposition   PR
+
+                                         1=1    iii. Electroplate Cu
+
+
+                                                                                                                                                     Sandia
+                     —
+                                    19
+The 20119 EEE 69th Bedrock Components
+        and Toamasina Conference
+
+    IEEE 69.
+           " ECTC - Las Vegas, rvv, libfk
+                                                                                T-M J. Mudrick 20
+                                                                                                                                                     National
+                                                                                                                                                     Laboratories
+                                                                                                                                             may as - si, zulu
+           Probing: TCR
+
+
+
+
+                                                                                                                                      ,,,,4\MA/r\-1
+                                                                                                                                                  Al
+                                                                                                                                                  Cu
+                                                                                                                                                  Ti
+                                                                                                                                                  N
+                                                                                                                                                  Ta
+                                                                                                                                                  0
+
+
+                                                                                                  .
+                                                                                                  50
+                                                                                                       "Al
+                                                                                                        75
+                                                                                                               — -,
+                                                                                                             100    125   150
+                                                                                                                                1
+                                                                                                                                175    200     225     25C
+                                       -0.10   -0.05      0 00      0.05   0.10
+                                                                                                                     Position (nm)
+                                                       Current(A)
+
+        • Resistance decrease with increasing current indicates a Schottky barrier
+        • We suggest that this is correlated to the oxidized TiN surface
+         • Processing that leads to TiNOX layer was identical for all wafers/die, so
+           similar ultimate resistance is likely limited by this layer
+
+                                                                                                                                                     Sandia
+   =
+                                        19                                                                                                           National
+_N--
+The 2019 IEEE 69th Electronic Cornponents
+       end Technology Conference
+                                                                                                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                           J. Mudrick 21                                              May 28 — 31, 2019
+          Outline
+
+           • Materials and process flow
+           • Direct bond surface preparation and metrology
+           • Test vehicle results
+           • Probing: physical and electrical
+           • Conclusion and paths forward
+
+
+
+
+                                                                     Sandia
+                                   19                                National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 22      May 28 — 31, 2019
+          Conclusion
+
+           • Demonstrated two-step CMP process that generates                              30
+
+                                                                                           25
+
+
+             bondable surfaces with controlled Cu recess depth                             20
+
+                                                                                       _c 15
+
+                                                                                       ▪ 10
+
+           • Inter-die gaps of 9, 18, 32, and 47 nm had similar                        e
+
+             resistance after annealing at 400 °C                                          -s
+                                                                                                                       —M— Target depth (nm)7
+                                                                                                                       —II— initial Polish(nm) -
+                                                                                                                        A Rework 1 (nm)
+
+                         — Intermediate temperatures had non-straightforward               10
+                                                                                                   2   •   3   •   4    •   5   •
+                                                                                                       Wafer # I Chrorbolc4cal order
+                                                                                                                                    6   •   7   •
+
+
+
+
+                           dependence
+           • Demonstration: bond is resilient to aggressive                            C
+                                                                                           10000
+
+
+
+             downstream processing                                                         1000
+
+
+                                                                                       2 100
+
+
+                                                                                        . 10
+                                                                                       ;II
+
+      Handle Si removal:
+      1. Mechanical grinding                                                                       250       300        350       400
+      2. Bosch etch                                                                                 Post-bond anneal temperature(°C)
+
+
+
+
+                                                             tttZitlttttitlttititztt
+                                                             ItttttttZtitttiZtzttitt
+                                                             Ittititzititittitzittti
+                                                             tttttttitttttttttititit
+
+
+                                                                                                                                            Sandia
+                                    19                                                                                                      National
+The 2019 EEE 69th Bectronk Components
+       and Technolou Conference
+                                                                                                                                            Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                 J. Mudrick 23                                                   May 28 — 31, 2019
+          Conclusion and next steps
+
+           • Failure analysis: insulating TiNOX
+             Iayer present between Al routing
+             and Ta barrier likely responsible
+             for high resistance, present
+             across all samples
+           • Next steps: native TiN oxide
+             removal prior to Ta deposition
+                         — Wet chemistry with timing spec
+                         — Preferred: in-situ sputter
+                                                                  100
+
+                                         .111=11111111w
+                                                                  80
+                                             CFx Ar+
+                                        PR
+                                                            c*.
+                                                                                                                Al
+                                                                  60
+                                             I    I          E                                                 -Cu
+                                                             o                                                 -Ti
+                                                            <     40                                           -N
+                                                                                                               -Ta
+                                                 o:               20                                           -0
+
+                                                                   0
+                                                                    50
+                                                                         ^Ay
+                                                                          75   100
+                                                                                     -7    , "---, / .
+                                                                                          125      150 175   200
+                                                                                                                   . 225,   25C
+                                                                                           Position (nm)                                  Sandia
+                                    19                                                                                                    National
+The 2919 EEE 69th Bectrook Components
+       and Technology Conference
+                                                                                                                                          Laboratories
+    IEEE 69th ECTC - Las Vegas, NV, USA                            J. Mudrick 24                                                  May 28 - 31, 2019
+          Questions and discussion
+
+
+                                                                40.7 nm
+
+
+
+                                                                                                                                                                     - Depth = 6 nm
+                                                                                                                                                                     —4— Depth = 15 nm
+                                                                                                                                                                     - Depth = 27 nm
+
+
+
+                                                                                                                        -35
+                                                                                                                                         2           4           6         8          10   12      14   16   18
+                                          Heighl       6.0 pm
+                                                                                                                                                                     Lateral position (µm)
+
+
+
+
+                                                                                                           10010!     .111000101          11111111111111111
+                                                                           .        •                                                                                     1311-W-1.    =
+                                                                       _                    ,          4.1
+                                                                                                         1 a          Illtly
+                                                                                                                          ;iI,
+                                                                                                                             1.
+                                                                                                                              1!          ntt ,;1!11,
+                                                                                                                                                    11111111,1 ,:
+                                                                                                                                                                /
+                                                                                                                                                                1
+                                                                                                                                                                4...
+                                                                                                                                                                -_ , ,   _ •. .                 .'-'-
+                                                                               W..j.-
+                                                                                                             n• ,,,.„,,,.....i--..
+                                                                                                                                     -9.1111   .4i'''' ""-'-_           ,..... r
+                                                                                    Ili i 1            _I i                             Ini
+                                                                                                                                                                  _',iiiiiiii•-mr,-..:‘
+                                                                                                                                                      i11111111 WI...
+                                                                   1       1    I       1   1.1 ,1     I 1 1            .• -11111 MI UN
+                                                                                                                     101119 1. 611110
+                                                                   1                                                 ipipp 111111 ._                       "M"'
+                                                                           I. I I            11      lil
+
+                                                                           11111111          i
+
+
+
+
+                                                                                                                                                                                                                     Sandia
+                                    19                                                                                                                                                                               National
+                     —
+The 2019 IEEE 69th Bedrock Components
+       and Technology Conference
+                                                                                                                                                                                                                     Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA            J. Mudrick 25                                                                                                                                             May 28 — 31, 2019
+          Extra slides
+
+
+
+
+                                                                                                            -•
+                                                                                                             ••-..9-99.
+                                                                                                                     . 6tei6;;907666,—,
+
+
+
+
+                                                                                                                                            '-9
+                                                                                                                                              .:
+                                                                                                                                               -           7-__t_r...___i.........
+
+                                                                                           .9191)
+                                                                                               -                                                                       •
+                                                                                                 91111
+                                                                                                  i    - IthtElltlifill
+
+                                                                               .., 4       Illifilill       RIMI91111
+                                                                                     :6n
+                                                                                   .6"11    ..6."           ....imp ,,.:.::
+                                                                                                                                      .11Intr..1----4:;l                         1
+                                                                                                                                                       .,        7        ...
+                                                                                                          7.-                  .......
+                                                                                                                                NN     ._ _, , ,...-
+                                                                        i l   l _ I. l                  11111091_01111111 NNW W7        ''''',
+                                                          ''. .-:. 11         I„           17                              lee..weiminol.
+                                                           i"I          1-] I' i                        vellum
+                                                                                           will
+                                                                          11 0 ..
+
+
+
+
+                                                            •
+
+
+
+
+                                                                                                                                                                                             Sandia
+                                    19                                                                                                                                                       National
+         "••••-__    —
+The 2019 EEE 69th Bectrork Components
+       and Technolou Conference
+                                                                                                                                                                                             Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 26                                                                                                                              May 28 — 31, 2019
+          Si02 topography mechanism
+
+            • Higher local pressure in areas nearest Cu recess
+
+
+                                                                          27.0 nm
+
+
+
+
+                                                                                                            Tirne
+                                                                                                            Evoluti
+                           Height                              3.0 pm
+
+
+
+               c
+
+
+               -c3 5
+               o
+                                                                                               .    .   •                 •
+
+
+               lb' -10
+                                                                                               0.2          OA   0.6     0.8      11,0
+                   -15
+
+                                      4
+                                       Cu
+                                            6      8
+                                                       sror \eu7v
+                                                         10   12    14   16   18
+                                                                                                   Normalized Length
+                                                Lateral position (pm)
+                                                                                       J. A. Sierra Suarez et al. Trib. Lett. 59(2015).
+
+
+
+                                                                                                                                                  Sandia
+                                       19                                                                                                         National
+The 2019 IEEE 69th Electronic Components
+       end Technology Conference
+                                                                                                                                                  Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                             J. Mudrick 27                                         May 28 — 31, 2019
+         Process flow detail
+                                                                                                         Soft PR bake (125C x 3 min) and gentle strip
+            i. Etch to define Cu area            Iv. Cu + barrier CMP       vii. Resist strip
+                                                                                                         chemistry (Acetone/IPA) preserves Si02 smoothness:
+                      —                                                     viii. Activate, bond, and
+                    Al metal stack
+                                                                            anneal
+                     Silicon wafer
+
+      ii. Barrier + seed metal deposition                                                                                                  4.1 nm
+                                             v. Front-side oxide etch
+
+
+
+
+                iii. Electroplate Cu
+                                                  vi. Saw dicing
+
+
+
+
+                                                                                                                  Height        960.0 nm
+
+
+
+
+                     Cracks in Si02 are isolated from the bonding surface
+
+
+
+
+               Al
+                                     Si02
+
+
+                                            im
+                                 Si waf
+
+
+
+
+                                                                                                                                                            Sandia
+                                     19                                                                                                                     National
+                   —
+The NM IEEE 69th Bedrock Components
+      and Tramming,Conference
+                                                                                                                                                            Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                                       J. Mudrick 28                                         May 28 — 31, 2019
+          Surface metrology: bearing analysis
+
+                                                                                                                          epth < 1 nm
+                     a)
+
+                   o -5
+                   o
+                   c0
+                          -10
+
+                   .or)
+                    5 -15
+                                                          S102
+                                           4   6      8     10   12    14        16   18
+                                                   Lateral position (µm)
+
+                                                                                                                         Depth < 23 nm   Depth < 39 nm
+                         1.0
+                                                                                           - 100
+                                                                                                   Cumulative Area (%)                   (99%
+                        0.8
+                                                                                           -80
+
+                 00.6-                                                                     -60
+
+                   l'2 0 4-
+                                                                                           -40
+
+                        0.2-                                                               -20
+
+                        0.0                                                                 0
+                                           5   10         15      20        25        30
+                                                       Depth (nm)
+                                                                                                                                                           Sandia
+                                  0,19                                                                                                                     National
+                      —
+The 2019 IEEE 69th Electronic Components
+       and Technology Conference
+                                                                                                                                                           Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                                            J. Mudrick 29                                   May 28 — 31, 2019
+         CSAM images
+
+
+                                                                •
+                                        .
+
+
+                                                                •   •
+
+
+
+
+                                            •
+
+
+                                                                            Sandia
+                                   19                                       National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                            Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA         J. Mudrick 30       May 28 — 31, 2019
+         XPS: Cu/Si02 surface chemistry
+
+
+                                                         Cu 2p                                                                                               Si 2p
+                         2                                                                                                                                                    2
+                     s 10                                                                                                                                                 s 10
+                                                        180a                                                                                                         50                                      18013
+               140
+                                                        180b                                                                                                         45                                      180c
+               130                                      1800                                                                                                                                                 1806
+               120                                       60a
+                                                         60b                                                                                                         35
+                                                         60c
+                                                          Ob                                                                                                         30
+                                                          Oc
+                                                                                                                                                                   0 25
+                                                                    140_
+                                                                                                                                                                     20
+                                                                    120:
+                                                                                                                                                                     15]
+                                                               Q 80
+                                                                    60
+                      1   1   1    1  1    1   1                            1   1   1   1   1   1   1   1            "1 " 1"                          1       1                  1        "I '         1 '
+                     960 955 950 945 940 935 930 925 920                   960 955 950 945 940 935 930 925 920        105 102 99                     96      93                 105     102 99        96      93
+                                   Binding Energy(eV)                             Binding Energy(eV)                                 Binding Energy(eV)                               Binding Energy(eV)
+                                                                             2                                                                                             2
+                                                                           10                                      60_3E 102                                           s 10
+                                                        60a                                               Ob                                                         50,
+                                                        60b         60                                    Oc                                                         45
+                                                        60c
+                                                                    58                                                                                               401:
+                                                                                                                   40_                                               35
+                                                                    56
+                                                               a•                                                cj 30_
+                                                                    54
+             1401                                                                                                                                                    20:
+             120                                                    52                                             20:
+                                                                                                                                                                     15
+          Po 100
+                                                                                                                                                                     io E
+              80                                                    50                                             10
+                601,                                                                                                                                                  5-
+                       I   1   I   I   I   I   I   I                        1   1   I   I   I   I   1   I                  '         '                 1 '                      '    I "I '        1"1
+                      965 960 955 950 945 940 935 930                      965 960 955 950 945 940 935 930                     105       102   99     96      93          108       105 102       99 96
+                                   Binding Energy(eV)                             Binding Energy(eV)                                 Binding Energy(eV)                               Binding Energy(eV)
+
+
+
+
+                                                                                                                                                                                                       Sandia
+                                   19                                                                                                                                                                  National
+                     —
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                                                                                                                                                       Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA                                                                J. Mudrick 31                                                                           May 28 — 31, 2019
+         TEM-EDS: Cu/Cu interface
+
+
+
+
+                                                                  Sandia
+                                   19                             National
+The 2019 EEE 69th Bedrock Components
+       and Technology Conference
+                                                                  Laboratories
+    IEEE 69th ECTC — Las Vegas, NV, USA   J. Mudrick 32   May 28 — 31, 2019
+

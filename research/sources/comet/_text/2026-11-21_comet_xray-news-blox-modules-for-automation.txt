@@ -1,0 +1,385 @@
+
+
+BLOX Modules for Automation - Comet X-RAY
+
+Products
+
+Product series
+
+Products explained
+
+All products
+
+Product series
+
+Product series
+
+Tubes & inserts
+
+Tubes
+
+Inserts
+
+FXE series
+
+NanoFocus
+
+MicroFocus
+
+Accessories
+
+FYNE series
+
+Transmission
+
+Xplorer series
+
+Cube
+
+ION series
+
+Modules
+
+Controllers
+
+iXRS series
+
+Ultra performance
+
+High power
+
+MesoFocus
+
+Standard
+
+Generators
+
+Accessories
+
+Controllers
+
+Software
+
+BLOX
+
+EVO series
+
+Directional
+
+Panoramic
+
+Controllers
+
+Accessories
+
+ECO series
+
+Directional
+
+Controllers
+
+Accessories
+
+XMB series
+
+Modules
+
+X-ray tubes
+
+Accessories
+
+Products explained
+
+Products explained
+
+Finding the perfect X-ray solution
+
+Finding the perfect X-ray solution
+
+Mini focus modules
+
+Sealed stationary modules
+
+Integrated modules
+
+Portable modules
+
+Mobile modules
+
+Meso focus modules
+
+Sealed stationary modules
+
+Micro focus modules
+
+Open stationary modules
+
+Sealed stationary modules
+
+Nano focus modules
+
+Open stationary modules
+
+All products
+
+All products
+
+All products
+
+Product configurator
+
+Service
+
+Service and support
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Service and support
+
+Service offering
+
+Technical support
+
+Return &  repair equipment - to Denmark
+
+EVO | ECO | ION | XMB | Y.SMART | Y.XPO series
+
+Return & repair equipment - globally, except to Denmark
+
+All product series
+
+Spare parts
+
+iXRS spare parts
+
+Product training
+
+Product training
+
+Product training
+
+Rental equipment
+
+Rental equipment
+
+Rental equipment
+
+Download center
+
+News
+
+Contact
+
+All products
+
+Get a quote
+
+Home
+
+News and more
+
+BLOX Modules for Automation
+
+Unlock seamless data handling with BLOX
+
+Ready to close the gap between periodic and preventive maintenance?
+
+BLOX Modules for Automation
+
+June 23, 2026
+
+Maximizing system uptime in industrial X-ray applications requires consistent, friction-free access to component data. With the introduction of the BLOX Modules for Automation, Comet X-Ray simplifies the data collection workflow, enabling operators to seamlessly transition from rigid maintenance schedules to continuous, preventive health monitoring.
+
+Data-driven insights are the foundation of modern predictive maintenance. With the launch of the 
+BLOX Health Monitoring system
+, we started enabling operators to transition from reactive troubleshooting to proactive component care, tracking the performance and longevity of iXRS X-ray tubes and generators.
+However, the value of any diagnostic tool depends heavily on the accessibility of its data. To further optimize this workflow, we are introducing the 
+BLOX Modules
+ – a software utility designed to simplify, accelerate, and automate data extraction from your Comet X-ray generators.
+
+Moving beyond periodic maintenance
+Previously, collecting the diagnostic reports for the BLOX platform required a manual process. Technicians had to physically access the generator USB-port and connect a USB flash drive, or log into the WebUI with their credentials on a connected PC.
+Reports were typically pulled only once every 6 to 12 months, or reactively after an unplanned breakdown had occurred.
+
+Thanks to the new BLOX Modules, data extraction can be reduced to a single click action, enabling operators to seamlessly pull reports regularly and moving the diagnostic workflow from periodic observation to true preventive maintenance.
+
+Minimal footprint, instant deployment
+The BLOX Modules are engineered for maximum integration flexibility with zero impact on existing system architectures.
+No hardware modifications:
+
+The solution is entirely software-based.
+No generator updates required:
+ There is no need to update core firmware.
+Rapid deployment:
+ The system utilizes simple executable files, allowing implementation to begin immediately.
+The core "Easy-Download" functionality relies on just two files: a signed Windows executable (.exe) file that triggers the report download, and a configuration file pre-set with the target generator’s IP address and designated storage folder. When the executable is launched, a progress window opens, automatically routing the diagnostic data to the specified folder.
+
+Modularity across different system configurations
+Because industrial X-ray environments vary significantly, the BLOX Modules adapt easily to the three primary deployment scenarios:
+
+                            Bunker with iVario Control Software on a control PC
+
+                            Bunker with iVario Controller
+
+                            Integrated OEM System
+
+Infrastructure requirement
+No changes; files reside on the control PC.
+
+1-click extraction method
+Manual (or implement a scheduled) trigger of the .exe on the control PC. No login/password required.
+
+Infrastructure requirement
+Installation of a standard ethernet switch between generator and controller.
+
+1-click extraction method
+User connects a PC with the .exe to pull data directly via the switch. No login/password required.
+
+Infrastructure requirement
+Virtual "Pull Health Report" button embedded within the OEM imaging software.
+
+1-click extraction method
+One-click background execution; files route to a pre-defined service directory.
+
+Scaling to fully fledged automation: direct vs. restricted internet access
+Depending on the IT infrastructure and cybersecurity restrictions of the facility, the modules scale from a local tool into an automated data pipeline using a four-file framework (one signed executable and a config file for the download, and one signed executable and credential file for the upload functions). See how this can look like:
+
+                            Direct internet access
+
+                            Restricted IT environments
+
+If the PC used for data extraction has
+
+direct internet access
+, 
+the download destination folder is mapped as the uploader’s source folder. The 4-file system handles the entire pipeline autonomously, moving data from the generator straight to the BLOX cloud without human intervention.
+
+If strict factory firewalls prohibit direct internet access, the reports are saved locally on the 
+PC used for data extraction
+. The data can then be transferred via alternative paths such as manual or automated email forwarding, periodic data mirroring via an IoT edge device, or shared memory protocols on the 
+PC used for data extraction
+.
+
+Optimize your diagnostic workflow
+Transitioning from reactive fixes to proactive uptime management requires consistent, frictionless 
+data. 
+By removing data extraction barriers, the BLOX Modules make routine health monitoring effortless.
+
+Want to explore the details and bring the modules to life? 
+C
+ontact your account manager directly.
+
+Latest three news
+
+Spotlight on Shelton. Featuring Pierre Niepel
+
+November 19, 2026
+
+Meet Pierre Niepel, 20 years in medical imaging, now leading Comet X-ray sales in the Americas. Pierre Niepel has joined Comet X-ray as Head of Sales Americas, based at our U.S. site in Shelton, Connecticut. He spent about 20 years in the U.S. medical imaging market, working at Siemens Healthineers and Boston Imaging before running his own advisory business. Pierre brings experience from the equipment-manufacturer side of the industry, and a clear view of what customers expect from their suppliers. We asked him why he joined Comet, where he intends to start, and how he sees customer relationships developing.
+
+Read more
+
+Focus topic. Semiconductor segment insights
+
+November 10, 2026
+
+The semiconductor industry has mastered the art of precision. Nanometer-scale processes, extensive testing, and sophisticated control systems create an environment that appears highly predictable. But while process control continues to improve, many of today's most critical defects are becoming harder to see as they disappear inside complex, multi-layer structures. As advanced packaging reshapes the industry, visibility itself is emerging as a decisive factor in manufacturing success.
+
+Read more
+
+Welcome Andreea!
+
+November 2, 2026
+
+Meet Andreea Vasiliu, our new Vice President of Global Sales!
+
+Andreea brings extensive international sales and leadership experience and knows Comet well from her previous roles within Plasma Control Technologies. During more than eight years with the company, she held several global and regional sales leadership positions, most recently as Director Sales EMEA and Vacuum Capacitors Global. 
+
+Since 2024, she has served as General Manager Europe and RoW at VAT Group.
+
+Read more
+
+Back
+
+Back
+
+Service                
+
+Service offering
+
+Technical support
+
+Returns & repairs - globally
+
+Returns & repairs - to Denmark
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Contact                
+
+Comet X-ray offices
+
+Local contacts
+
+Supply chain
+
+Applications
+
+Additive manufacturing
+
+Aerospace
+
+Automotive
+
+Battery
+
+Electronics
+
+Irradiation
+
+Other NDT
+
+Oil & gas
+
+Security
+
+Sorting
+
+Thickness gauging
+
+About us                
+
+Annual Appreciation Award 
+
+Comet
+
+Comet X-ray
+
+Open positions
+
+Poster gallery
+
+News                
+
+News and more
+
+Virtual Patent Marking
+
+Cookies
+
+Disclaimer
+
+Imprint
+
+Privacy policy
+
+© 2026 Comet Group
+

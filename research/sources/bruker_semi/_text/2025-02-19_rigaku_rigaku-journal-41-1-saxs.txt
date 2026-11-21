@@ -1,0 +1,319 @@
+                                                                                                   Technical articles
+
+
+
+
+Small-angle X-ray scattering shape metrology
+for 3D semiconductor devices
+
+                                                                                                  Takumi Goto*
+
+Abstract
+The etching technique for high-aspect-ratio hole structures is one of the key technologies in modern semiconductor
+device manufacturing. Accurately evaluating hole shapes is crucial for developing and controlling the etching
+process. In order to create a precise evaluation system for deep hole shapes, Rigaku has developed a transmission
+small-angle X-ray scattering (T-SAXS) instrument. In this technical note, we describe the principles of a small-angle
+X-ray scattering (SAXS) technique for the determination of three-dimensional semiconductor device structures and
+its measurement sensitivity based on simulation results. We also demonstrate its performance for SAXS metrology
+by the measurement of deep holes on a 300 mm wafer. As a result of these measurements we were able to obtain the
+distribution of deep hole sizes and their tilt across the entire wafer.
+
+
+1.   Introduction                                             technology is essential for process control. Optical
+   The evolution of digital technology has been               critical dimension spectroscopy (OCD), scanning
+remarkable over the past few years. Artiﬁcial intelligence,   electron microscopy (SEM), and transmission electron
+driverless cars, metaverse, and other new digital             microscopy (TEM) are generally used to measure
+technologies that once existed only in the world of           the deep hole shapes. OCD has advantages in terms
+science ﬁction are now being realized in the real world       of measurement throughput. However, due to the
+and are bound to enrich our social lives. In order            characteristics of the probe wavelength, measuring
+to realize such digital technologies, high-performance        hole shapes that are several microns deep with high
+semiconductor devices are indispensable.                      resolution is challenging. SEM and TEM can obtain
+   The performance improvement of semiconductor               actual images with high resolution, but they require
+devices has been achieved by miniaturizing device             destruction of the sample. Furthermore, their ﬁeld of
+scale and increasing their integration rate. However, the     view is too small to be suitable for measuring the whole
+limits of physical miniaturization were being reached.        wafer.
+Therefore, three-dimensional stacked device structures           SAXS is well-known as a nondestructive shape
+have become the mainstream in current semiconductor           measurement method. Around the year 2000, research
+development and manufacturing. For instance, in               into the shape measurement of semiconductor devices
+the case of NAND ﬂash memory, a structure with                using SAXS commenced(1). Rigaku launched XTRAIA
+approximately 200 layers of memory cells has been             CD-3000G, a grazing incidence small-angle X-ray
+developed and is already available on the market.             scattering (GI-SAXS) system, for semiconductor
+   One of the manufacturing processes for these devices       manufacturing facilities. GI-SAXS has been utilized to
+involves the fabrication of high-aspect deep holes that       measure the shapes of planar memory devices, photoresist
+reach several micrometers in depth with a diameter of         patterns, and nanoimprint patterns with depths of
+approximately one hundred nanometers. The deep hole           approximately one hundred nanometers(2)–(4). However,
+shape is directly related to the quality of the device. If    in the grazing incidence geometry, it is impossible for
+the deep holes are not fabricated as designed, or if there    X-rays to penetrate to the bottom of a deep hole several
+are large variations in shape, the maximum performance        micrometers in depth due to X-ray absorption. On the
+of the device will not be achieved. Therefore, the            other hand, by employing the transmission geometry
+deep hole etching process is positioned as one of             with short wavelength X-rays, the substrate can be
+the important technologies in modern semiconductor            eﬀectively penetrated by X-rays, which enables us to
+manufacturing. Shape parameters that characterize             measure deep hole shapes. Therefore, Rigaku have
+the deep hole structures include the diameter (critical       developed a new instrument featuring a transmission-
+dimension: CD), tilt, and depth of deep holes. It is very     type small-angle scattering (T-SAXS) geometry and
+important for modern etching process to control these         launched it in 2020.
+parameters across an entire wafer. The etching process is        In this technical note, we introduce the fundamental
+optimized based on the measurement results of the hole        measurement principles of small-angle X-ray
+shape. Therefore, highly accurate shape measurement           scattering. Additionally, we present the results of shape
+                                                              measurements of a 1 μm deep hole structure pattern
+* X-ray research laboratory, Rigaku Corporation.              formed on the surface of a 300 mm silicon wafer, along
+
+Rigaku Journal, 41(1), 2025                                                            © 2025 Rigaku Corporation.     1
+Small-angle X-ray scattering shape metrology for 3D semiconductor devices
+
+
+with an evaluation of the etching properties across the                 structure, it is necessary to obtain information on the
+entire wafer.                                                           scattering vector QZ, which corresponds to the depth
+                                                                        direction. When the sample is rotated by an angle ω, the
+2.     Principle of Transmission-type Small-angle                       scattering vector QZ changes as QZ ≈ − QX tan ω. Multiple
+       X-ray Scattering                                                 images are collected according to the rotation angle of
+   The use of SAXS in transmission geometry enables                     the sample. By analyzing the dependence of the X-ray
+the measurement of deep holes with depths of several                    intensity at each diﬀraction point in the QZ direction, it
+micrometers. Figure 1 shows the measurement geometry                    is possible to determine the depth, shape, and tilt. The
+for T-SAXS. When X-rays are irradiated onto an                          scattering intensity is calculated using a scatterer model
+object with an electron number density distribution ρ(r),               with the shape parameters shown in Fig. 2. The calculated
+incident X-rays are scattered. The scattering intensity                 model is represented by dividing the scatterer into N + 1
+I(Q) is given by the square of the absolute value of the                layers along the depth direction. Each layer has six
+Fourier transform of ρ(r), as shown in Eq. (1), where Q                 parameters, which are the CD in the XY direction (Lx,
+is the scattering vector in reciprocal space. In particular,            Ly), the center positions of the cross-sectional shape in
+X-ray diﬀraction spots are observed when the object has                 the XY direction (Dx, Dy), the layer thickness (t), and
+a periodic structure. As shown in Fig. 1, when the unit                 the electron number density of the side walls (ρ). These
+cell of the periodic structure has lattice constants of a               shape parameters are optimized using the least-squares
+and b, and a lattice angles of θ, the diﬀraction condition              method until the diﬀerence between the experimental and
+can be expressed by Eq. (2). Each diﬀraction spot is                    calculated scattering intensities is minimized.
+identiﬁed by a set of the diﬀraction indices h and k. QX,                                                        2
+QY, and QZ are deﬁned as scattering vector components
+horizontal to the a-axis, perpendicular to the a-axis, and
+normal to the wafer surface, respectively.
+                                                                             I (Q) ＝
+                                                                                       ρ
+                                                                                       V
+                                                                                            (r )e − iQ ･ r d r                            (1)
+
+   By using a two-dimensional detector, the X-ray
+intensities of multiple diﬀraction points that satisfy the                h            h          k 
+                                                                    =    π , QY 2π  −
+                                                                     QX 2=                   +                                           (2)
+diﬀraction conditions can be collected simultaneously.                    a         a tan θ   b sin θ 
+The scattering vector QR is deﬁned as QR = QX2  QY2 . The                                     ( h, k: integer )
+scattering intensity data as a function of QR shown in
+the top left of Fig. 1 is the integrated intensity of each              3.     Evaluation of Measurement Sensitivity Using
+diﬀraction spot at the vertical incidence condition. A                         SAXS Intensity Simulation
+periodic intensity proﬁle is observed when the intensity                   In this section, we discuss the eﬀect on the scattering
+of each diﬀraction point is plotted against the scattering              intensities when the shape of the scatterer is changed
+vector QR on the horizontal axis. From this proﬁle,                     based on simulation results. The scatterers are a square
+information regarding the average CD of the X-ray                       lattice of deep holes with a pitch of 120 nm. The
+irradiated area can be obtained. Details are described in               scattering intensity data is simulated in the rotation
+Section 3.1. Next, to determine the three-dimensional                   angle range of − 18° to 18° at intervals of 0.06°. The
+
+
+
+
+                              Fig. 1.   Measurement geometry for transmission small-angle X-ray scattering.
+
+Rigaku Journal, 41(1), 2025                                                                                  © 2025 Rigaku Corporation.     2
+Small-angle X-ray scattering shape metrology for 3D semiconductor devices
+
+
+
+
+                                                           Fig. 2.   Schematics of the analysis model.
+
+
+                                                                                    of the scattering intensity at each diﬀraction point
+                                                                                    decreases as the hole depth increases. A relationship
+                                                                                    exists between the period of the scattering fringes in the
+                                                                                    QZ direction (ΔQZ) and the depth of the hole (Depth):
+                                                                                    Depth ≈ 2π/∆QZ. Therefore, the period of the scattering
+                                                                                    fringes in the QZ direction is highly sensitive to the
+                                                                                    depth of hole.
+                                                                                    3.2.2 Side wall angle
+                                                                                        Next, we will explain the sensitivity of scattering
+                                                                                    intensity data in the QZ direction to changes in the
+                                                                                    sidewall angle. Figure 5 a) shows the simulation models.
+                                                                                    The ﬁrst model is cylindrical with a side wall angle of
+      Fig. 3.   Calculated intensities in the QR direction of a cylindrical         90°. The second model has a tapered shape with a side
+                hole with diﬀerent CDs.                                             wall angle of 88°. Both models have a depth of 1000 nm
+                                                                                    and the average CD is 90 nm. Figures 5 (b) and (c)
+number of layers in the scattering model is set to 40 for                           show simulation data for the cylindrical and the tapered
+all simulations. First, we focus on the sensitivity of the                          shape, respectively. The scattering intensities obtained
+scattering intensity in the QR direction.                                           by the cylindrical hole show a maximum intensity at
+                                                                                    QZ = 0 nm − 1 for all diﬀraction indices. Also, the period
+3.1    Simulation of SAXS intensity in the QR                                       and phase of the fringes never change for all diﬀraction
+       direction                                                                    indices. On the other hand, the maximum scattering
+   First, we will explain the sensitivity of scattering                             intensity obtained using the tapered model is not
+intensity data in the QR direction to CD changes. Figure                            necessarily at QZ = 0 nm − 1. A deviation of the sidewall
+3 shows the calculated intensities for CD of 30 nm,                                 angle from 90° has the eﬀect of changing the phase
+60 nm, and 90 nm. The deep hole has a cylindrical shape                             of the scattered intensity data in the QZ direction. The
+and its depth is 1000 nm. The simulation data indicate                              higher the diﬀraction index, the larger the phase change.
+that the fringe period decreases as the CD increases.                               These simulation results indicate that the sidewall angle
+There is a relationship between the fringe period                                   can be easily analyzed from the phase change and that
+(ΔQR) and the average CD (CDAve.): CDAve. ≈ 2π/∆QR.                                 the scattering intensity data has high sensitivity to
+Therefore, the scattering intensity in the QR direction is                          sidewall angle changes.
+highly sensitive to the average CD.                                                 3.2.3 Tilt angle
+                                                                                        Finally, we will explain the sensitivity of scattering
+3.2    Simulation of SAXS intensity in the QZ                                       intensity data in the QZ direction to changes in the
+       direction                                                                    tilt angles. Figure 6 a) shows the simulation models.
+3.2.1 Hole depth                                                                    The tilt angles in the X direction are − 0.5°, 0°, and
+   Next, we will focus on the sensitivity of the scattering                         0.5°, respectively. For all three models, the depth is
+intensity data in the QZ direction. We will explain                                 1000 nm and the average CD is 90 nm. The simulation
+the sensitivity of scattering intensity data in the QZ                              data obtained from each model are overlaid in Figure
+direction to changes in the hole depth. Figure 4 shows                              6 (b). When the tilt angle is 0°, the simulation data is
+the simulation data at the diﬀraction indices (1 0) and                             symmetrical about QZ = 0 nm − 1. On the other hand, if
+(2 3). Scattering intensities are calculated for hole                               the tilt angle is not 0°, the center of symmetry shifts
+depths of 500 nm, 1000 nm, and 2000 nm, respectively.                               from QZ = 0 nm − 1. This behavior diﬀers from the phase
+The simulation data indicates that the fringe period                                changes that occur depending on the sidewall angle,
+
+Rigaku Journal, 41(1), 2025                                                                                   © 2025 Rigaku Corporation.    3
+Small-angle X-ray scattering shape metrology for 3D semiconductor devices
+
+
+
+
+                              Fig. 4.   Calculated intensities in the QZ direction of a cylindrical hole with diﬀerent depths.
+
+
+
+
+                    Fig. 5. Calculated intensities in the QZ direction of a cylindrical hole with diﬀerent side wall angles.
+                            a) Simulation modelb) and c) represent the calculated scattering intensities of the cylindrical and
+                            tapered holes, respectively.
+
+
+as described in Section 3.2.2. There is a relationship                            4. Measurement of Deep Hole Patterns Formed
+between the shift of the center of symmetry (QZ shift)                                 on 300 mm Wafers
+and the tilt angles (θX, θY) in the X and Y directions:                           4.1 Equipment
+QZshift = − QX tan θX − QY tan θY. The tilt angles can be                            In this section, we report the measurement results for
+determined from the magnitude of the shift of the center                          1 μm deep holes formed on a 300 mm wafer. Figure 7
+of symmetry in the QZ direction.                                                  shows the XTRAIA CD-3000T instrument employing
+   Summarizing the results of the previous simulations,                           T-SAXS developed by Rigaku. Because the X-rays
+it can be concluded that T-SAXS is highly sensitive                               need to penetrate a silicon wafer approximately 800 μm
+to variations in CD, depth, sidewall angle, and tilt                              thick, a rotating molybdenum target (X-ray wavelength:
+angle. The T-SAXS measurement technique can                                       0.071 nm) is selected as the X-ray source. An X-ray
+accurately determine the shape parameters essential for                           mirror is used to monochromatize and focus the X-rays.
+characterizing high-aspect deep holes.                                            X-rays are irradiated from the back of the wafer and
+                                                                                  pass through the apparatus from the lower side to the
+                                                                                  upper side. The intensities of the scattered X-rays are
+                                                                                  collected using a large-area hybrid two-dimensional
+
+Rigaku Journal, 41(1), 2025                                                                                        © 2025 Rigaku Corporation.   4
+Small-angle X-ray scattering shape metrology for 3D semiconductor devices
+
+
+
+
+                   Fig. 6. Calculated intensities in the QZ direction of a cylindrical hole with diﬀerent hole tilts.
+                           a) Simulation modelb) simulation results of scattering intensity in the Q Z direction. The red, blue,
+                           and green lines show simulation results for tilt angles of 0°, + 0.5°and − 0.5°, respectively.
+
+
+                                                                             In this analysis, the deep hole was divided into 40 layers
+                                                                             along the depth direction, and the shape parameters
+                                                                             of each layer were optimized using the least squares
+                                                                             method. Figure 8 c)–e) show the results of the analysis
+                                                                             of the deep hole shape. The depth of the deep hole was
+                                                                             1017 nm and the average CD was 80.9 nm. The CD
+                                                                             tends to decrease toward the bottom of the hole, and
+                                                                             the sidewall angle is calculated as 87.9° from the CD
+                                                                             proﬁle. Additionally, the CD proﬁle has a bowing shape
+                                                                             at a depth of approximately 200 nm from the surface.
+                                                                             The center line is nearly at 0 nm, indicating that there is
+                                                                             no tilt in the deep hole formed at the center of the wafer.
+                                                                                Figure 9 shows the observed and calculated intensities
+                                                                             at the chip located on the left edge of the wafer, along
+                                                                             with the corresponding analysis results. The CD proﬁle
+                                                                             of the left-edge chip is similar to that of the center chip.
+   Fig. 7.   Rigaku XTRAIA CD-3000T inline T-SAXS metrology                  However, the average CD is 87.7 nm, which is 6.8 nm
+             tool.                                                           larger than that of the center chip. Figure 9 a) shows a
+                                                                             signiﬁcant change in the phase of the scattered intensity.
+detector (HyPix6000 HE) mounted on the top of the                            The analysis results show that the holes are etched with
+instrument. A visible light tilt sensor is utilized to                       a tilt of 0.52° in the X-direction of the wafer.
+measure the warpage of a wafer surface and to calibrate
+the angle of incidence of the X-rays to the wafer.                           4.3     Evaluation of etching properties across the
+                                                                                     entire wafer.
+4.2    Deep hole pattern measurement and 3D                                      Figure 10 shows the distribution of the average CD
+       shape analysis                                                        obtained from measurements of all 64 chips on the
+   A sample with a deep hole pattern etched on the                           wafer. It is clear that the average CD of deep holes
+surface of a 300 mm wafer was prepared. The deep                             increases from the right side to the left side of the wafer.
+holes are a periodic square lattice pattern with a pitch                     Finally, we show the trend of hole tilt angles across
+of 120 nm, and 64 chips are fabricated on the 300 mm                         the entire wafer. Figure 11 a) is a vector map of the
+wafer. The wafer was rotated from − 18° to 18°, and                          observed hole tilt. The measurement results indicate that
+X-ray scattering intensity images were acquired at 0.06°                     nearly every hole has an outward tilt. Figure 11 b) shows
+intervals. The X-ray irradiation time per measurement                        the results of plotting the tilt angle, which has been
+point is 10 minutes.                                                         converted into the radial and tangential components of
+   Figure 8 a) and b) show the observed and calculated                       the wafer. The horizontal axis is the radius of wafer. The
+intensities at the chip located in the center of the wafer.                  tilt angle is oriented in the radial direction, and increases
+
+Rigaku Journal, 41(1), 2025                                                                                  © 2025 Rigaku Corporation.   5
+Small-angle X-ray scattering shape metrology for 3D semiconductor devices
+
+
+
+
+                     Fig. 8. Measurement and analysis results of deep hole patterns formed on the center of the wafer.
+                             a) and b) are observed and calculated intensity in QZ and QR direction, respectively.
+                             Analysis results of c) cross section proﬁle, d) CD proﬁle and e) centerline proﬁle.
+
+
+
+
+                     Fig. 9. Measurement and analysis results of deep hole patterns formed on the left edge of the wafer.
+                             a) and b) are observed and calculated intensity in QZ and QR direction, respectively.
+                             Analysis results of c) cross section proﬁle, d) CD proﬁle and e) centerline proﬁle.
+
+toward the edge of wafer.                                                   Simulation-based discussions indicate that this
+   These results demonstrate that T-SAXS has enough                         metrology has suﬃcient sensitivity to determine shape
+performance to characterize the CD, depth, and tilt                         parameters, which are essential for characterizing high-
+angle of deep holes. Furthermore, because T-SAXS is                         aspect semiconductor structures. We also measured the
+a nondestructive measurement technique, it enables the                      deep hole patterns on a 300 mm wafer. As a results of
+evaluation of the distribution of shape parameters across                   these measurement, the detailed 3D shape of the deep
+the entire wafer. It is expected that shape measurement                     holes could be accurately determined. Additionally,
+by T-SAXS will contribute to the optimization of                            the characteristic changes in average CD and hole
+etching equipment.                                                          inclination across the entire wafer were obtained. SAXS
+                                                                            measurements are highly eﬀective for evaluating shape
+5.  Conclusion                                                              parameters that are important for controlling the etching
+  We introduced small-angle X-ray scattering shape                          process of deep hole structures. This measurement
+metrology for 3D semiconductor device structures.                           method is capable of analyzing complex 3D shapes,
+
+Rigaku Journal, 41(1), 2025                                                                                 © 2025 Rigaku Corporation.   6
+Small-angle X-ray scattering shape metrology for 3D semiconductor devices
+
+
+
+
+                  Fig. 10. a) Color scale map of average CD. b) The graph of average CD across the entire wafer with the wafer
+                           X position plotted on the horizontal axis.
+
+
+
+
+                  Fig. 11. a) Vector map showing the hole tilt magnitude and direction across the entire wafer. The arrow tip
+                           indicates the bottom direction of deep holes. b) The graph shows hole tilt angle distribution across the
+                           entire wafer. Red and blue dot represent radial and tangential tilt angles, respectively.
+
+                                                                              Reference
+such as pillars, slits, liner ﬁlm proﬁles(6), and X-Y cross-
+                                                                              (1)    W. Wu, R. J. Kline, R. L. Jones, H. J. Lee, E. K. Lin, D. F.
+sectional shapes(7). Semiconductor devices featuring
+                                                                                     Sunday, C. Wang, T. Hu and C. L. Soles, J. Micro/Nanopattern.
+high-aspect structures include channel holes and slits                               Mater. Metrol., 22(3) (2023), 031206, 1–15.
+in 3D NAND, capacitor holes in DRAM, and trench                               (2)    K. Omote, Y. Ito and Y. Okazaki, Proc. SPIE 7638 (2010),
+structures in CMOS imaging sensors. The SAXS                                         763811, 1–8.
+method, which can nondestructively measure these                              (3)    Y. Ito, A. Higuchi and K. Omote, Proc. SPIE 9778 (2016),
+                                                                                     97780 L, 1–8.
+structures with high accuracy, is anticipated to be a
+                                                                              (4)    E. Yamanaka, R. Taniguchi, M. Itoh, K. Omote, Y. Ito, K. Ogata
+highly valuable technique for evaluating semiconductor                               and N. Hayashi, Proc. SPIE 9984 (2016), 99840 V, 1–8.
+devices with 3D structure. As semiconductor device                            (5)    Y. Ito, T. Goto, R. Suenaga and K. Omote, Jpn. J. Appl. Phys.
+structures evolve into three-dimensional structures,                                 62(2023), 046501, 1–6.
+we expect that X-ray measurement technology will                              (6)    R. Suenaga, Y. Ito, T. Goto and K. Omote, Proc. SPIE
+                                                                                     12496(2023), 12496A, 1–7.
+be employed across various ﬁelds, including device
+                                                                              (7)    R. Suenaga, Y. Ito, T. Goto and K. Omote, Jpn. J. Appl. Phys.
+development and quality control.                                                     62(2023), 096502, 1–8.
+
+
+
+
+Rigaku Journal, 41(1), 2025                                                                                   © 2025 Rigaku Corporation.         7
+

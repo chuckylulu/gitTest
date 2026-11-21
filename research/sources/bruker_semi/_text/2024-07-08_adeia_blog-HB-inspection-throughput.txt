@@ -1,0 +1,210 @@
+
+
+Increasing the Throughput of Hybrid Bonding Inspection Through Novel Methods
+
+Technology
+
+Media
+
+Tech Enablers
+Markets
+Resources
+
+Semiconductor
+
+Tech Enablers
+Markets
+Resources
+
+Licensing
+
+Resources
+
+Blog
+Events
+Research Papers
+Videos & Downloads
+
+About Us
+
+Our Story
+Newsroom
+Careers
+
+Our People
+
+Leadership Team
+Board of Directors
+Inventors
+
+Contact Us
+
+Investors
+
+July 8, 2024
+
+Increasing the Throughput of Hybrid Bonding Inspection Using Novel Methods and Machine Learning
+
+Oliver Zhao
+
+Hybrid bonding is enabling denser and finer pitch interconnections, which is key to meeting demands for next generation applications like artificial intelligence. But careful control of surface topography and defectivity is required to realize the benefits of hybrid bonding.
+
+At the 2024 IEEE Electronic Components and Technology Conference (ECTC), my colleague, Dr. Bongsub Lee, and I presented two papers that explain how to efficiently monitor both the surface topography and defectivity before bonding, so any bad material can be screened out. The first paper discusses a method to reliably measure the surface topography 1,000 times faster than existing methods. The second paper details how we streamlined the inspection process for hybrid bonding defects using convolutional neural networks (CNNs).
+
+2 Key Factors for Pre-Bond Inspection
+
+During wafer inspection, there are 
+two main factors
+ that need to be defined and controlled: metal recess and defectivity. 
+
+Metal recess 
+is typically defined as the depth of a metal interconnect (usually copper), compared to the dielectric surface.
+
+Defectivity 
+is defined as the measure of the surface flaws in the material, such as foreign particles which may come from dust in the air, metal corrosion, or lithography pattern defects.
+
+In the hybrid bonding process flow, the inspection process to measure both of these factors takes place after the silicon wafer is cleaned and before the wafer is bonded. Inspection is necessary to determine which areas of a wafer have an anomalous metal recess and which areas are defective, so that it is possible to avoid bonding dies to the sites that include those locations. 
+
+Efficient Metal Recess Measurements with Phase Shift Interferometry
+
+Metal recess is conventionally characterized by a technique called atomic force microscopy (AFM). AFM is very accurate and straightforward, but the throughput is very limited. We developed a protocol to analyze topography by using an optical technique called phase shift interferometry (PSI) with about 1,000 times improvement in throughput over AFM. We calibrated this PSI technique for hybrid bonding samples to interpret the data properly.  We found that this technique could easily analyze hundreds of thousands of metal pads within hours, using our automated method to take and analyze the data. This optical technique with automation can be useful in high volume settings, where a large number of samples must be analyzed and compared with the previous samples. For more information, please see our 2024 ECTC paper “High-Throughput Characterization of Nanoscale Topography for Hybrid Bonding by Optical Interferometry.”
+
+Improving Defect Detection with CNNs
+
+At Adeia, we developed, implemented, and trained convolutional neural networks to improve the accuracy and speed of the defect inspection process. Our automated method can inspect wafers at a rate of over 100 minutes per wafer faster compared to a manual inspection method, which will usually take on the order of a couple hours per wafer, allowing us to collect larger datasets and improve our understanding of process-materials and parameter-performance relationships. 
+
+Combined with improved accuracy, these changes also increase throughput in hybrid bonding manufacturing cycles and reduce time to market. To learn more, please read our 2024 ECTC paper, “Deep Convolution Neural Networks for Automatic Detection of Defects which Impact Hybrid Bonding Yield
+.”
+
+Adeia Takes Giant Steps: Beyond Virtual Try-On Technology: Context-Aware Makeup Assistance
+
+The Wireless AI Data Center: Untangling Fiber with Phase-Coherent Terahertz Links 
+
+Rethinking Cybersecurity for the Age of AI
+
+The World Cup’s Most Important Player Isn’t on the Pitch
+
+Next
+
+Dr. Oliver Zhao
+
+Staff Integration Engineer
+
+Dr. Oliver Zhao is a Staff Integration Engineer in IC Packaging. His work at Adeia focuses on researching methods to improve the yield of fine-pitch and stacked hybrid bonding structures for semiconductor packaging. He has filed multiple patents within the area of hybrid bonding. Prior to joining Adeia, Dr. Zhao worked in the fields of thin film photovoltaics, thin film coatings, nanotechnology, plasma processing and mechanical reliability while working as a Materials Science and Engineering Ph.D. student. He earned a Doctor of Philosophy from Stanford University and a Bachelor’s of Science from the University of Maryland
+
+Oliver Zhao
+
+Staff Integration Engineer
+
+Dr. Oliver Zhao is a Staff Integration Engineer in IC Packaging. His work at Adeia focuses on researching methods to improve the yield of fine-pitch and stacked hybrid bonding structures for semiconductor packaging. He has filed multiple patents within the area of hybrid bonding. Prior to joining Adeia, Dr. Zhao worked in the fields of thin film photovoltaics, thin film coatings, nanotechnology, plasma processing and mechanical reliability while working as a Materials Science and Engineering Ph.D. student. He earned a Doctor of Philosophy from Stanford University and a Bachelor’s of Science from the University of Maryland
+
+Related Content
+
+No items found.
+
+Igniting Innovation
+
+Technology
+
+Media Tech Enablers
+
+Media Markets
+
+Semiconductor Tech Enablers
+
+Semiconductor Markets
+
+Licensing
+
+Resources
+
+Blog
+
+Research Papers
+
+Upcoming Events
+
+Videos & Downloads
+
+Company
+
+About Us
+
+Newsroom
+
+Careers
+
+Leadership Team
+
+Inventors
+
+Contact
+
+Investor Relations
+
+Cookie Settings
+
+We use cookies to provide you with the best possible experience. They also allow us to analyze user behavior in order to constantly improve the website for you. 
+
+Preference
+Reject
+Accept
+
+Cookie Settings
+
+We use cookies to provide you with the best possible experience. They also allow us to analyze user behavior in order to constantly improve the website for you. 
+
+Preference
+Reject
+Accept
+
+© 2026 Adeia Inc. All Rights Reserved | 
+
+ Terms & Conditions |
+
+ Privacy Statement|
+
+Consent Preferences |
+
+Accessibility
+
+Cookie Preferences
+
+By clicking, you agree to store cookies on your device to enhance navigation, analyze usage, and support marketing. 
+
+Essential
+
+Essential cookies enable core site functions like security and accessibility. They don't store personal data and can't be disabled.
+
+Analytics
+
+These cookies collect anonymous data to help us improve website functionality and enhance user experience.
+
+Marketing
+
+These cookies track users across websites to deliver relevant ads and may process personal data, requiring explicit consent.
+
+Preferences
+
+These cookies remember settings like language or region and store display preferences to offer a more personalized, seamless experience.
+
+Thank you! Your submission has been received!
+
+Oops! Something went wrong while submitting the form.
+
+Save Preference
+Reject
+
+Opt-out Preference
+
+We use third-party cookies that help us analyze how you use this website, store your preferences, and provide the content and advertisements that are relevant to you. We do not sell your information. However, you can opt out of these cookies by checking Do Not Share My Personal Information and clicking the Save My Preferences button. Once you opt out, you can opt in again at any time by unchecking Do Not Share My Personal Information and clicking the Save My Preferences button. 
+
+Do Not Share My Personal Information
+
+Thank you! Your submission has been received!
+
+Oops! Something went wrong while submitting the form.
+
+Save My Preference
+Cancel
+

@@ -1,0 +1,236 @@
+                  Challenges and Responses of Metrology Technologies
+                        for the New Wave of 3D NAND Devices
+
+                                Dong Chul Ihm*a, Eunpa Kima, Sang Hyun Hanb
+
+
+        a
+            Flash Process Development Team, Semiconductor R&D Center, Samsung Electronics,
+                       1 Samsungjunga-ro, Hwaseong-si, Gyeonggi-do, Korea 18448
+                            b
+                                Strategic Marketing, NOVA LTD, Fremont, U.S.A.
+
+
+                                                    ABSTRACT
+
+
+Recent advancements in semiconductor devices are driven by the growing demand for massive computing power and high
+memory density in high-performance computing (HPC) and AI applications. Achieving this requires high-speed signal
+transmission through dense interconnects between chips and systems, leading to the adoption of 3D architectures to
+enhance energy efficiency in the AI era. In particular, 3D NAND heavily relies on the Hybrid Copper Bonding (HCB)
+process to integrate the CMOS periphery wafer with the memory array wafer, introducing new process control challenges.
+To address these, we identified key monitoring steps and critical monitoring parameters within HCB processes.
+Additionally, we categorized wafer geometry considerations into two main areas: wafer inner space and wafer outer space.
+
+This paper explores metrology challenges and potential solutions, aligning with industry requirements at key monitoring
+steps in both wafer inner and outer space areas.
+
+Keywords: 3D NAND, Hybrid Cu Bonding, Metrology technologies, Atomic Force Microscope, Scanning Acoustic
+Microscopy, Broadband spectral interferometry
+
+
+                                                   INTRODUCTION
+
+Recent advancements in semiconductor devices, including logic, DRAM, and NAND memory, are driven by the increasing
+demands of data centers, high-performance computing (HPC), and artificial intelligence (AI) applications. These
+advancements necessitate the development of new architectures and technologies to improve performance, efficiency, and
+scalability. [1-3]
+
+In logic devices, the industry is progressing toward smaller nodes by adopting Gate-All-Around (GAA) architecture,
+chiplets, and advanced packaging techniques. These innovations enhance yield, reduce costs, and provide greater
+flexibility through heterogeneous integration. Meanwhile, the DRAM sector is introducing DDR5 and High Bandwidth
+Memory (HBM) 3E to meet the performance requirements of advanced GPUs and other high-performance applications.
+
+As AI applications require rapid, high-speed data transmission for massive data analysis, traditional bumps or micro-
+bumps (u-bumps) are insufficient for high-density signal transmission. To address this, the semiconductor industry is
+developing Hybrid Copper Bonding (HCB) to achieve higher I/O density and improved I/O pitch scaling.
+
+The NAND memory industry is pushing technological boundaries by increasing the number of wordline layers beyond
+200 pairs and implementing multi-deck stacking to enhance storage density while lowering the cost per bit. Additionally,
+the NAND sector is adopting Hybrid Cu Bonding (HCB), which enables bonding of the CMOS periphery wafer to the
+
+
+
+
+*dongchul.ihm@samsung.com
+memory array wafer. This approach allows independent thermal management of CMOS periphery circuits and memory
+arrays, ultimately improving cell efficiency.
+
+In Section 2, we outline specific metrology steps and key monitoring parameters in Hybrid Cu Bonding processes. To
+assess metrology technologies for 3D NAND processes, Section 3 focuses on wafer inner space, while Section 4 examines
+wafer outer space, reviewing key monitoring challenges and potential metrology solutions.
+
+
+
+
+                                          HYBRID CU BONDING PROCESSES
+
+Figure 2 illustrates the critical process steps at HCB [4], highlighting key monitoring parameters essential for process
+control. The CMP process is particularly crucial in wafer bonding preparation, as it affects wafer topography, Cu pad
+recess, edge roll-off, surface particle contamination, dielectric surface roughness, Cu surface roughness, and warpage each
+requiring close monitoring.
+
+Following CMP, plasma treatment is applied to generate dangling bonds necessary for dielectric bonding. During wafer-
+to-wafer alignment, precise alignment of the top and bottom wafers is essential to ensure correct Cu pad positioning
+through bonding overlay control. It is critical to prevent bonding voids at the interface, as they significantly impact yield.
+Additionally, warpage must be closely monitored due to the inherently high warpage of 3D NAND wafers, which can lead
+to bonding voids, reduced bonding strength, and even wafer breakage during the backside thinning process.
+
+After alignment, the bonded wafers undergo annealing in an oven to facilitate Cu pad bonding. If the Cu pad is recessed
+too deeply, annealing induces stress around the Cu pad area due to excessive Cu volume expansion. Conversely, if the
+recess is too shallow, the Cu volume expansion may be insufficient, leading to void formation at the interface.
+
+During the backside thinning process, key monitoring factors include remaining Si thickness, surface damage, and
+defectivity issues such as chipping and particle contamination. As depicted in Figure 2, warpage monitoring is necessary
+at every process step, as each stage influences both the magnitude and distribution of wafer warpage. Notably, the red-
+colored items in the figure indicate more critical factors compared to the black-colored ones at each step.
+
+
+
+
+                 Figure 1. Hybrid Cu bonding critical process steps with key monitoring items for process control.
+Since Cu pillars in HCB serve as electrical signal paths, it is crucial to identify and monitor key process parameters. Figure
+3 categorizes the primary challenges in process control into bonding voids and bonding misalignment, both of which
+impact interface quality.
+To minimize bonding voids, five critical factors must be controlled: Cu pad recess, erosion, local step height, edge roll-
+off, and particle contamination. Additionally, to reduce bonding misalignment, warpage and wafer displacement must be
+carefully managed throughout the process.
+
+
+
+
+                         Figure 3. Key challenges for Cu pad connectivity at hybrid Cu bonding processes
+
+
+
+                                                    WAFER INNER SPACE
+
+The 3D NAND industry is continuously increasing the number of word line layers to enhance memory density. As
+illustrated in Figure 4(a), the number of word lines in 3D NAND devices is expected to exceed 1,000 in the near future,
+leading to a significant rise in wafer warpage. When a wafer becomes highly warped, its surface topology deviates from a
+flat profile, making wafer bonding extremely challenging. These bonding difficulties also contribute to overlay shift, which
+further exacerbates Cu pad misalignment.
+
+
+
+
+  Figure 4. Bonding alignment challenges: Warpage increase with respect to stacking height (a) and warpage lead to escalating
+                                                 difficulty of bonding (b)
+Bonding voids are yield killers, so we defined voids as large voids larger than 100um and small voids smaller than 5um.
+When the void size is larger than 100um, this void will cause wafer breakage or rupture during the backside wafer thinning
+process, and small voids will partially block the signal, resulting in poor electrical connection.
+
+Figure 5 presents the void map obtained using scanning acoustic microscopy (SAM) technology. However, since SAM
+requires 10 to 20 minutes to scan an entire wafer, we developed an alternative solution utilizing interferometry technology.
+This method generates a surface morphology map within a minute and closely correlates with the void map obtained from
+SAM.
+
+
+
+
+                       Figure 5. Bonding void map with Scanning Acoustic Microscopy (a) and Interferometry (b)
+
+The challenge of detecting bond voids using SAM is clearly illustrated in Figure 6. As the industry continues to shrink Cu
+pad pitch for high-density interconnects, void sizes are becoming smaller than before. However, SAM's penetration depth
+is limited, and its throughput is slow, reducing its ability to detect small voids at the interface.[5] To address this limitation,
+we developed an alternative approach by measuring Cu pad recess using AFM, allowing us to minimize the formation of
+small voids.
+
+
+
+
+               Figure 6. Relationship between detectable void size, penetration depth of SAM, and SAM throughput.
+As previously mentioned, the CMP process plays a crucial role in determining bonding performance quality, particularly
+in terms of surface defectivity, dielectric surface roughness, Cu surface roughness, Cu pad recess, and edge roll-off. Figure
+7(a) illustrates that after optimizing the CMP process, the dielectric surface becomes flat, and the Cu pad recess profile is
+well-defined. Figure 7(b) compares void maps scanned by SAM before and after CMP optimization. The non-optimized
+CMP process resulted in multiple voids at the bonded interface after annealing, whereas the optimized CMP process
+effectively prevented void formation. This confirms the significant impact of the CMP process on bonding void creation
+at the bonded interface. [6, 7]
+
+
+
+
+    Figure 7. Before and after CMP optimization. (a) Cu pad condition before bonding, (b) SAM void map at bonded interface
+
+We have shown that AFM technology can achieve sub-nanometer vertical resolution in Cu pad recess monitoring.
+However, its low throughput remains a challenge for high-volume manufacturing (HVM) applications. The development
+of high-speed AFM technology has become essential in today's industry. Figure 8 illustrates three types of high-speed
+AFM technologies currently available. However, these technologies are still in their early stages and require further
+development to enhance their performance.
+
+
+
+
+    Figure 8. 3 types of high-speed AFM technologies
+
+                                                  WAFER OUTER SPACE
+
+Wafer edge roll-off (ERO) critically impacts wafer bond strength, particularly in HCB. ERO occurs when the wafer edge
+is tapered or curved downward, leading to variations in surface height and planarity. Key issues related to wafer edge roll-
+off in HCB processes include non-uniform bond strength, defectivity, reliability, and yield. The root causes of non-uniform
+ERO performance include non-uniform film deposition, different thermal expansion of each layer, non-uniform Chemical
+Mechanical Planarization (CMP) performance near the edge, and stress induced by wafer thinning, especially at the edges.
+
+Various strategies can be employed to address wafer edge roll-off, such as optimizing the wafer thinning process,
+improving surface uniformity, and employing advanced planarization techniques. Additionally, implementing edge
+exclusion zones where bonding is not performed can help mitigate the impact of ERO.
+
+At the wafer's outer region, the primary factors to control are wafer ERO profile and bevel defectivity. Figure 9(a)
+illustrates that the wafer roll-off area can range from a few nanometers to a millimeter. As shown in Figure 9(b), from a
+process perspective, patterning, film deposition and etch process often face non-uniformities, leading to a hump-shaped
+surface. This irregularity can create challenges for wafer bonding and result in unbonded spaces, as depicted in Figure 9(c).
+
+
+
+
+    Figure 9. Wafer edge roll-off (ERO). (a) ERO range. (b) ERO profiles. (c) Gap of ERO profiles.
+
+To explore potential solutions for monitoring the wafer ERO profile, we evaluated four different metrology technologies,
+as shown in Table 1. Each technology demonstrated pros and cons.
+
+    Table 1. Potential metrology technologies for wafer ERO profile measurement.
+
+
+
+
+Among the interferometry technologies, we evaluated a new approach utilizing broadband spectral interferometry to
+measure ERO profiles. As shown in Figure 10, this technology, combined with an advanced algorithm, enables precise
+ERO profile measurements around the wafer.
+    Figure 10. ERO profiles measured using broadband spectral interferometry technology from Nova.
+
+
+
+                                                       CONCLUSION
+The industry is facing new challenges in metrology technology for HCB in 3D NAND processes, driving the search for
+effective solutions to ensure precise process control. Key challenges in HCB processes include dielectric surface topology,
+surface defect control, copper recess, wafer alignment, warpage, interface voids in bonded wafers, and bond strength
+management. Since each of these factors significantly impacts bond strength, bonding yield, and reliability, they have been
+closely monitored.
+However, as 3D NAND technology continues to increase the number of word lines for higher memory density and adopt
+new process inflections, current monitoring methods show performance limitations. As a result, the industry is seeking
+innovative approaches to fully support monitoring requirements at each critical stage.
+
+
+
+                                                       REFERENCES
+[1] Shalf, John. “The Future of Computing beyond Moore’s Law.” Philosophical Transactions of the Royal Society A:
+    Mathematical, Physical and Engineering Sciences 378, no. 2166 (March 2020). doi:10.1098/rsta.2019.0061.
+[2] R. Agarwal et al., "3D Packaging for Heterogeneous Integration," 2022 IEEE 72nd Electronic Components and
+    Technology Conference (ECTC), San Diego, CA, USA, 2022, pp. 1103-1107, doi: 10.1109/ECTC51906.2022.00178.
+[3] M. Tagami, "CMOS Directly Bonded to Array (CBA) Technology for Future 3D Flash Memory," 2023 International
+    Electron    Devices      Meeting     (IEDM),       San     Francisco,   CA,     USA,     2023,    pp.    1-4,  doi:
+    10.1109/IEDM45741.2023.10413718.
+[4] S. Kim et al., "Cu Microstructure of High Density Cu Hybrid Bonding Interconnection," 2019 IEEE 69th Electronic
+    Components and Technology Conference (ECTC), Las Vegas, NV, USA, 2019, pp. 636-641, doi:
+    10.1109/ECTC.2019.00101.
+[5] C. Chen et al., "Detection of bonding voids in multi-tier stacks with scanning acoustic microscope," 2023 IEEE 25th
+    Electronics Packaging Technology Conference (EPTC), Singapore, 2023, pp. 320-325, doi:
+    10.1109/EPTC59621.2023.10457746.
+[6] Y. Shi, H. K. Niazi, M. A. Rosshirt, S. K. Paletti and X. F. Brun, "3D Heterogeneous Integration with Sub-3μm Bond
+    Pitch Chip-to-Wafer Hybrid Bonding," 2024 IEEE 74th Electronic Components and Technology Conference (ECTC),
+    Denver, CO, USA, 2024, pp. 51-55, doi: 10.1109/ECTC51529.2024.00017.
+[7] H. Lee et al., "A study on D2W Hybrid Cu bonding Technology for HBM Multi-die Stacking," 2024 IEEE 74th
+    Electronic Components and Technology Conference (ECTC), Denver, CO, USA, 2024, pp. 76-80, doi:
+    10.1109/ECTC51529.2024.00021
+

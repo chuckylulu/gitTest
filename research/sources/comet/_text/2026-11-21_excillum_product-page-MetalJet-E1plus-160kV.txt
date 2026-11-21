@@ -1,0 +1,1138 @@
+
+
+MetalJet E1+ - Excillum
+
+Skip to main content
+
+Customer Portal
+
+Japanese
+
+Hit enter to search or ESC to close
+
+Close Search
+
+search
+
+Menu
+
+Products
+
+MetalJet X-ray sources
+
+MetalJet F
+
+MetalJet E1+
+
+MetalJet D2+
+
+MetalJet C2
+
+MetalJet with optics
+
+NanoTube X-ray sources
+
+NanoTube N3
+
+Custom sources
+
+Services
+
+Partner systems
+
+Industries & markets
+
+Battery
+
+Semiconductors & electronics
+
+Additive manufacturing
+
+Materials science
+
+Biomedical research
+
+Pharmaceuticals & drug discovery
+
+Automotive & aerospace
+
+Methods
+
+Imaging
+
+Nano-CT/micro-CT
+
+Phase-contrast imaging
+
+X-ray microscopy
+
+Scattering and diffraction
+
+High pressure XRD (HPXRD)
+
+Powder X-ray Diffraction (pXRD)
+
+Small molecule crystallography
+
+Protein crystallography
+
+Small Angle X-ray Scattering (SAXS)
+
+Spectroscopy and fluorescence
+
+Knowledge Center
+
+Our company
+
+Our leadership
+
+Why Excillum
+
+Careers
+
+Partners
+
+User stories
+
+Compliance
+
+News & events
+
+Contact us
+
+search
+
+Products
+
+MetalJet X-ray sources
+
+MetalJet F
+
+MetalJet E1+
+
+MetalJet D2+
+
+MetalJet C2
+
+MetalJet with optics
+
+NanoTube X-ray sources
+
+NanoTube N3
+
+Custom sources
+
+Services
+
+Partner systems
+
+Industries & markets
+
+Battery
+
+Semiconductors & electronics
+
+Additive manufacturing
+
+Materials science
+
+Biomedical research
+
+Pharmaceuticals & drug discovery
+
+Automotive & aerospace
+
+Methods
+
+Imaging
+
+Nano-CT/micro-CT
+
+Phase-contrast imaging
+
+X-ray microscopy
+
+Scattering and diffraction
+
+High pressure XRD (HPXRD)
+
+Powder X-ray Diffraction (pXRD)
+
+Small molecule crystallography
+
+Protein crystallography
+
+Small Angle X-ray Scattering (SAXS)
+
+Spectroscopy and fluorescence
+
+Knowledge Center
+
+Our company
+
+Our leadership
+
+Why Excillum
+
+Careers
+
+Partners
+
+User stories
+
+Compliance
+
+News & events
+
+Contact us
+
+Customer Portal
+
+Japanese
+
+MetalJet E1+
+
+Kilowatt microfocus performance with submicron stability
+
+At 1000 watts, the new Excillum MetalJet E1+ delivers 17 times more X-ray flux across a broad spectral range compared to a 30 W conventional tungsten-solid-anode microfocus source with the same 30 µm spot size. In the spectral range of 24-29 keV where the indium and tin characteristic emission lines are present, the flux advantage is as high as 100 times.
+
+Built for 24/7 continuous performance
+
+The MetalJet E1+ is designed for high-throughput, 100% duty-cycle operation with up to once-per-year preventive maintenance cycles. This eliminates the need for frequent filament changes as required by traditional tubes.
+
+Sub-µm positional stability
+
+Although running at a high thermal load of 1000 W, the MetalJet E1+ maintains a positional stability of below 1 µm during continuous long-term operation.
+
+Unprecedented 24 keV indium Kα emission
+
+For applications requiring focused or collimated high-energy monochromatic radiation, the MetalJet E1+ delivers unprecedented power into the 24 keV indium Kα emission lines. 
+See e.g. the 1.3×10
+10
+ ph/s/mm
+2
+ example when combined with Montel-type focusing X-ray mirror.
+
+Features and benefits
+
+Extreme microfocus source power
+
+Superior spot quality
+
+Single (left or right) X-ray window or dual (left and right)
+
+Minimal maintenance
+
+User variable size and aspect ratio of spot
+
+LaB
+6
+ long-life cathode
+
+Very stable X-ray emission and spot position
+
+User-friendly Graphical User Interface
+
+Controlled through GUI or TCP/IP protocol
+
+Adjustable take-off angle
+
+No external cooling water requirement
+
+Operated remotely from any computer
+
+Technical specifications
+Available target alloys
+Characteristics
+Installation and operation
+
+Technical specifications
+
+Target material
+1
+Liquid metal alloy
+Min. focal spot size
+< 10 μm
+Target type
+Liquid jet
+Emission stability
+3
+< 1%
+Voltage
+30-160 kV
+Position stability
+3
+< 1 μm
+Power
+2
+0-1000 W
+Min. focus-object distance
+22.5mm
+Max current
+6.25 mA
+Beam angle
+20°
+
+1) The room temperature liquid metal alloys supplied for the MetalJet source consist mainly of gallium, indium and tin. They have low reactivity and low toxicity but should be handled according to their safety data sheets and local regulations.
+
+2) The actual power used is dependent on spot-size and voltage. However, maximum output power of the 160 kV high-voltage generators is 3000 W, software limited to 1000 W.
+
+3) Standard deviation.
+
+Available target alloys
+
+Target alloy
+
+Gallium
+[weight %]
+
+Indium
+[weight %]
+
+Tin
+[weight %]
+
+ExAlloy-G1
+4
+
+95
+
+5
+
+-
+
+ExAlloy-I1
+
+68
+
+22
+
+10
+
+ExAlloy-I2
+4
+
+47
+
+37
+
+16
+
+ExAlloy-I3
+
+75
+
+25
+
+-
+
+4) Operation of ExAlloy-G1 and ExAlloy-I2 requires that the MetalJet E1+ source is equipped with a heater system to manage the alloy temperature.
+
+The source consists of the head and the pump system with dimensions shown in the drawing. The head must be mounted essentially straight above the pump system. The coupling is semi-rigid, allowing some movement of the source head. Sources operating with ExAlloy-G1, ExAlloy-I2 and ExAlloy-I3 are equipped with heater jackets around parts in the alloy recirculation loop (not shown in the drawing).
+
+In addition, the MetalJet E1+ 160 kV consists of several 19” rack mounted parts that can be mounted up to 4 m from the head and pump system.
+
+The source can be remotely operated through TCP/IP or directly through the GUI. The GUI can be operated on the source itself if it is equipped with monitor, keyboard and mouse, or on most computer platforms with a TCP/IP connection to the source.
+
+The source cannot be operated as a standalone unit and must be integrated into a system providing the proper interlock connections.
+
+Mains:
+ AC, single phase, 200-240 V, 2.6 kW-3.5 kW (depending on configuration), 50/60 Hz.
+
+Ambient:
+ 20-30 °C (stable within ± 0.5 °C for optimal source stability), max 85% relative humidity.
+
+Performance examples
+5
+
+8-15 keV
+Ga Ka 9.22-9.25 keV
+15-30 keV
+In Ka 24.0-24.2 keV
+30-60 keV
+60-160 keV
+
+Jet material
+Acceleration voltage
+
+[kV]
+Nominal X-ray spot size
+6
+[µm]
+E-beam power
+
+[W]
+Peak brightness
+[photons/(s mm
+2
+ mrad
+2
+)]
+Radiant flux
+ [photons/(s mrad
+2
+)]
+ExAlloy-I2
+160
+30
+1000
+1.4×10
+10
+1.5x10
+7
+160
+30
+700
+1.4×10
+10
+1.3×10
+7
+160
+25
+570
+2.2x10
+10
+1.1x10
+7
+120
+20
+380
+2.5x10
+10
+8.8x10
+6
+70
+20
+250
+1.7x10
+10
+6.5x10
+6
+70
+10
+150
+3.3x10
+10
+4.4x10
+6
+ExAlloy-G1
+160
+30
+1000
+3.9x10
+10
+4.7x10
+7
+160
+30
+700
+3.8x10
+10
+3.9x10
+7
+160
+25
+570
+5.6x10
+10
+3.4x10
+7
+120
+20
+380
+70
+20
+250
+4.1x10
+10
+1.4x10
+7
+70
+10
+150
+7.1x10
+10
+9.6x10
+6
+
+Jet material
+Acceleration voltage
+
+[kV]
+Nominal X-ray spot size
+6
+[µm]
+E-beam power
+
+[W]
+Peak brightness
+[photons/(s mm
+2
+ mrad
+2
+)]
+Radiant flux
+ [photons/(s mrad
+2
+)]
+ExAlloy-I2
+160
+30
+1000
+9.0x10
+9
+1.0x10
+7
+160
+30
+700
+8.9x10
+9
+
+8.5×10
+6
+160
+25
+570
+1.5x10
+10
+7.2x10
+6
+120
+20
+380
+1.6x10
+10
+5.7 x10
+6
+70
+20
+250
+1.1x10
+10
+
+4.0x10
+6
+70
+10
+150
+2.0x10
+10
+2.7x10
+6
+ExAlloy-G1
+160
+30
+1000
+3.2x10
+10
+3.7x10
+7
+
+160
+30
+700
+3.0x10
+10
+3.1x10
+7
+160
+25
+570
+4.6x10
+10
+2.7x10
+7
+120
+20
+380
+5.0x10
+10
+1.9x10
+7
+70
+20
+250
+3.2x10
+10
+1.1x10
+7
+70
+10
+150
+5.5x10
+10
+7.4x10
+6
+
+Jet material
+Acceleration voltage
+
+[kV]
+Nominal X-ray spot size
+6
+[µm]
+E-beam power
+
+[W]
+Peak brightness
+[photons/(s mm
+2
+ mrad
+2
+)]
+Radiant flux
+ [photons/(s mrad
+2
+)]
+
+ExAlloy-I2
+160
+30
+1000
+1.6×10
+10
+1.9×10
+7
+
+160
+30
+700
+1.5×10
+10
+1.5×10
+7
+160
+25
+570
+2.1×10
+10
+1.3×10
+7
+120
+20
+380
+2.2×10
+10
+8.5×10
+6
+70
+20
+250
+1.3×10
+10
+4.3×10
+6
+70
+10
+150
+2.2×10
+10
+2.9×10
+6
+ExAlloy-G1
+160
+30
+1000
+6.3×10
+9
+7.7×10
+6
+160
+30
+700
+5.9×10
+10
+6.4×10
+6
+160
+25
+570
+8.3×10
+10
+5.6×10
+6
+120
+20
+380
+70
+20
+250
+7.6×10
+9
+2.5×10
+6
+70
+10
+150
+1.3×10
+10
+1.7×10
+6
+
+Jet material
+Acceleration voltage
+
+[kV]
+Nominal X-ray spot size
+6
+[µm]
+E-beam power
+
+[W]
+Peak brightness
+[photons/(s mm
+2
+ mrad
+2
+)]
+Radiant flux
+[photons/(s mrad
+2
+)]
+ExAlloy-I2
+160
+30
+1000
+4.9×10
+9
+
+5.7×10
+6
+160
+30
+700
+4.5×10
+9
+4.7×10
+6
+160
+25
+570
+6.5×10
+9
+4.1×10
+6
+120
+20
+380
+5.9×10
+9
+2.3×10
+6
+70
+20
+250
+2.3×10
+9
+7.9×10
+5
+70
+10
+150
+3.8×10
+9
+5.2×10
+5
+ExAlloy-G1
+160
+30
+1000
+7.3×10
+8
+8.8×10
+5
+160
+30
+700
+6.8×10
+8
+7.3×10
+5
+160
+25
+570
+9.5×10
+8
+6.4×10
+5
+120
+20
+380
+70
+20
+250
+4.7×10
+8
+1.6×10
+5
+70
+10
+150
+7.7×10
+8
+1.1×10
+5
+
+Jet material
+Acceleration voltage
+
+[kV]
+Nominal X-ray spot size
+6
+[µm]
+E-beam power
+
+[W]
+Peak brightness
+[photons/(s mm
+2
+ mrad
+2
+)]
+Radiant flux
+ [photons/(s mrad
+2
+)]
+ExAlloy-I2
+160
+30
+1000
+9.3×10
+9
+9.6×10
+6
+160
+30
+700
+8.4x10
+9
+7.8x10
+6
+160
+25
+570
+1.2x10
+10
+6.7x10
+6
+120
+20
+380
+1.3x10
+10
+4.3x10
+6
+70
+20
+250
+7.3x10
+9
+1.9x10
+6
+70
+10
+150
+1.2x10
+10
+1.3x10
+6
+ExAlloy-G1
+160
+30
+1000
+7.5×10
+9
+
+8.8×10
+6
+
+160
+30
+700
+6.7x10
+9
+7.0x10
+6
+160
+25
+570
+8.7x10
+9
+6.0x10
+6
+120
+20
+380
+70
+20
+250
+6.1x10
+9
+1.6x10
+6
+70
+10
+150
+1.0x10
+10
+1.1x10
+6
+
+Jet material
+Acceleration voltage
+
+[kV]
+Nominal X-ray spot size
+6
+[µm]
+E-beam power
+
+[W]
+
+Peak brightness
+
+[photons/(s mm
+2
+ mrad
+2
+)]
+Radiant flux
+ [photons/(s mrad
+2
+)]
+ExAlloy-I2
+160
+30
+1000
+9.2×10
+9
+7.5×10
+6
+160
+30
+700
+8.2x10
+9
+5.9x10
+6
+160
+25
+570
+1.1x10
+10
+5.0x10
+6
+120
+20
+380
+8.7x10
+9
+2.0x10
+6
+70
+20
+250
+6.4x10
+8
+1.1x10
+5
+70
+10
+150
+1.1x10
+9
+7.2x10
+4
+ExAlloy-G1
+160
+30
+1000
+6.3×10
+9
+
+5.7×10
+6
+160
+30
+700
+5.6x10
+9
+4.4x10
+6
+160
+25
+570
+7.8x10
+9
+3.7x10
+6
+120
+20
+380
+70
+20
+250
+4.5x10
+8
+8.3x10
+4
+70
+10
+150
+8.3x10
+8
+5.2x10
+4
+
+5) Examples are based on simulations that typically correspond well to experimental validation. Please 
+contact us
+ for details on such simulations vs. experiment validations including experimental method.
+
+6) The spot size is measured as the full width at half maximum (FWHM) of the X-ray intensity distribution integrated in the horizontal and vertical directions respectively. The X-ray spots are realized by various degree of e-beam line focus with a maximum aspect ratio of 6:1. Actual spot size may differ depending on viewing angle and may have different width and height. Please 
+contact us
+ for more details. 
+
+Datasheets
+
+MetalJet E1+
+
+Download
+
+Brochures
+
+The MetalJet technology
+
+Download
+
+Safety and compliance
+
+Excillum X-ray sources
+
+Read
+
+More information
+
+MetalJet E1+ news announcement
+
+Read
+
+The metal-jet technology
+
+View
+
+Scientific publications & more
+
+View
+
+Related products
+
+MetalJet F
+View
+
+MetalJet D2+
+View
+
+MetalJet C2
+View
+
+MetalJet with optics
+View
+
+User stories
+Experiences with the Excillum MetalJet X-ray sources
+Learn about some of our customers’ experiences with our state-of-the-art X-ray sources.
+
+CSIRO
+
+High-definition X-ray fluorescence imaging
+
+ShanghaiTech University
+
+Single-crystal diffraction
+
+Monash University
+
+X-ray phase-contrast imaging
+
+Max Planck Institute
+
+X-ray Emission Spectroscopy (XES)
+
+Meiji University
+
+Hard X-ray Photoelectron Spectroscopy (HAXPES)
+
+University of Basel
+
+Small molecule crystallography
+
+Aarhus University
+
+Small Angle X-ray Scattering (SAXS)
+
+Questions about our products?
+
+Speak to our experts
+We have a growing organization and a network of partners with the capabilities and expertise to maximize the benefits of our technology in your application.
+Ask an expert
+
+Emil Espes
+Business Development, Imaging
+
+Some X-ray methods using MetalJet E1+
+
+View more X-ray methods
+
+Imaging
+
+Scattering and diffraction
+
+Spectroscopy and fluorescence
+
+Customer service
+
+Our MetalJet and NanoTube X-ray sources are designed to ensure the highest levels of performance and reliability. Whenever regular maintenance, troubleshooting or optimization are required, our team of highly experienced engineers is available to provide worldwide service and support. We also offer a wide range of preventive maintenance and troubleshooting programs to ensure that every customer achieves the highest uptime and trouble-free operation.
+
+Learn more
+
+The Excillum MetalJet E1+ 160 kV is partly based on technology developed in a project that has received funding from the ECSEL Joint Undertaking (JU) under grant agreement No 826589. The JU receives support from the European Union’s Horizon 2020 research and innovation programme and France, Germany, Austria, Italy, Sweden, Netherlands, Belgium, Hungary, Romania, Israel
+
+Connect with us
+
+youtube
+
+linkedin
+
+Useful links
+Products
+
+Industries & markets
+
+Methods
+
+Why Excillum
+
+Services
+
+Knowledge Center
+
+Our company
+
+Careers
+
+Contact us
+
+Contact us
+
+© 2026 Excillum. 
+Terms of Use
+ | 
+Privacy Policy
+ | 
+Whistleblower Policy
+
+By continuing to use the site, you agree to the use of cookies. 
+Accept
+Privacy policy
+

@@ -1,0 +1,260 @@
+1826                                                              IEEE ELECTRON DEVICE LETTERS, VOL. 42, NO. 12, DECEMBER 2021
+
+
+
+
+                Area-Selective Electroless Deposition
+                      of Cu for Hybrid Bonding
+       Fumihiro Inoue , Member, IEEE, Serena Iacovo, Zaid El-Mekki, Soon-Wook Kim, Herbert Struyf,
+                                 and Eric Beyne , Senior Member, IEEE
+
+
+
+
+   Abstract — This letter describes the use of area-selective
+electroless Cu deposition for topography control of Cu-SiCN
+hybrid bonding pads. The electroless deposition of Cu
+allows one to obtain protrusions on hybrid bonding Cu
+pads without further polishing optimization. A recessed
+Cu pad after chemical mechanical polishing becomes a
+protrusion after electroless deposition. This indicates that
+the electroless Cu film was selectively deposited on Cu,
+without deposition on the SiCN surface. A void-free Cu-Cu
+bonding interface was observed after annealing at 350 ◦ C
+with an electroless Cu layer at the interface. 100% electrical
+connection was obtained at 1.4-µm pitch where the deposi-
+tion thickness was on target.
+  Index Terms — Hybrid bonding, electroless deposition,
+area-selective deposition.                                                Fig. 1. Schematic illustration of process flow of electroless Cu deposition
+                                                                          on hybrid bonding interface. (a) Post-barrier CMP, (b) post-ELD on top
+                      I. I NTRODUCTION                                    pad, (c) post-hybrid bonding, and (d) after post-bond annealing.
+
+
+H      YBRID bonding is a promising direct wafer bonding
+       approach which creates mechanical joints (dielectric-
+dielectric) and electrical connections (Cu-Cu) simultane-
+                                                                          (e.g. over-polishing and post-cleaning) and galvanic corrosion,
+                                                                          as well [1], [2], [8]. Therefore, controlling the selectivity of
+                                                                          the Cu, barrier and dielectric during barrier CMP becomes
+ously [1]–[4]. The higher flexibility of the system design
+                                                                          significantly challenging, in particular when the pitch size
+allowed by hybrid bonding enables us to make higher-density
+                                                                          becomes finer. The Cu pad eventually tends to be recessed
+connections for the top and bottom wafers. In hybrid bonding,
+                                                                          at the few nanometer level in hybrid bonding pads.
+two wafers are finished by a Cu/dielectric damascene process
+                                                                             Electroless deposition (ELD) has unique properties com-
+with atomic-scale dielectric surface roughness and minimal Cu
+                                                                          pared to other film deposition processes. The method selec-
+protrusion/recess [1], [2]. The capabilities of this approach
+                                                                          tively deposits metals on metal with no deposition on
+strongly depend on the quality of the chemical mechanical
+                                                                          non-catalytic surfaces, such as a dielectric layer [9]–[15]. Fur-
+polishing (CMP) processes. The required range of the recess
+                                                                          thermore, the deposition rate is controllable at the nanometer
+and protrusion of a Cu pad from the dielectric field is
+                                                                          level. In this study, we investigated reshaping the Cu pad
+below 5 nm for fine-pitch connections [1], [2]. It is known that
+                                                                          topography by area-selective ELD Cu. The impact of the ELD
+the mechanism of Cu-Cu connection during hybrid bonding
+                                                                          Cu was confirmed by electrical measurements in daisy chains
+is “Cu pumping” during post-bond annealing [5]–[7]. If the
+                                                                          and cross-sectional images of the interface.
+Cu surface is recessed on both sides of the wafer, the Cu-Cu
+interface will be under high tensile stress after cooling, which                                 II. E XPERIMENTAL
+may be a concern for reliability. Therefore, the ideal shape of              All wafer scale processes were performed using 300-mm
+the Cu pad is zero recess for both sides of the wafer.                    Si wafers as the substrate. A high-resolution damascene
+   However, the CMP process needs to be optimized for                     surface containing sub-micron size Cu pads was used for
+within-wafer uniformity across the wafer edge, residue control            the experiments. The top and bottom pad sizes used in
+  Manuscript received August 27, 2021; revised October 27, 2021;          the experiments were 540 and 1080 nm for 2.0-µm pitch
+accepted October 29, 2021. Date of publication November 2, 2021; date     and 360 and 720 nm for 1.4-µm pitch. Plasma enhanced
+of current version November 24, 2021. This work was supported by IMEC     chemical vapor deposited SiCN was used as the bonding
+3D System Integration Program. The review of this letter was arranged
+by Editor Z. J. Ma. (Corresponding author: Fumihiro Inoue.)               interfacial dielectric layer [16], [17]. To minimize the SiCN
+  The authors are with imec, 3001 Leuven, Belgium (e-mail:                dielectric roll-off, a hard substrate configuration in the CMP
+inoue-fumihiro-ty@ynu.ac.jp; serena.iacovo@imec.be).                      hardware system in combination with the proper slurry enabled
+  Color versions of one or more figures in this letter are available at
+https://doi.org/10.1109/LED.2021.3124960.                                 stable and controllable performance. A wafer-scale ELD tool
+  Digital Object Identifier 10.1109/LED.2021.3124960                      was used for the test. The ELD bath was a commercial
+
+This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/
+INOUE et al.: AREA-SELECTIVE ELECTROLESS DEPOSITION OF Cu FOR HYBRID BONDING                                                          1827
+
+
+
+
+solution with a metal base complexing agent, which does not
+generate hydrogen during the chemical process. The surface
+topography was analyzed by atomic force microscopy (AFM).
+The statistical Cu step height was characterized by converting
+the AFM image raw data into numerical data. Both top and
+bottom wafers were activated by nitrogen plasma and cleaned
+by megasonic DI water prior to bonding. Wafers with two dif-
+ferent topographies prepared by a CMP process were stacked
+face-to-face [18]. After wafer bonding, the double-thickness
+wafers were annealed by a two-step process: an initial step
+at 250 ◦ C to increase the adhesion strength of the brittle
+SiCN-SiCN surface, then a final step at 350 ◦ C to contact
+the Cu-Cu nano-pad surface. After post-bonding annealing, the
+interface voids were detected by scanning acoustic microscopy
+(SAM). Afterwards, the bonded wafers were thinned to 5 µm,
+revealing 5 µm-diameter and 8 µm-depth Through-Si vias
+(TSVs) [19], [20]. The backside was finalized by aluminum
+                                                                   Fig. 2. Statistical AFM data within wafer for top and bottom wafers.
+metallization for electrical probing. The cross-sectional images   (a) Top wafer at 1.4-µm pitch. (b) Top wafer at 2.0-µm pitch. (c) Bottom
+were observed by transmission electron microscopy (TEM) for        wafer at 1.4-µm pitch. (d) Bottom wafer at 2.0-µm pitch.
+high-resolution imaging.
+                                                                      The protrusion amount of Cu varied from the wafer center
+               III. R ESULTS AND D ISCUSSION                       towards the edge with values of 4.84, 3.19, 2.26, 1.84 and
+   The typical bath temperature used for the solution provided     1.06 nm for 1.4-µm pitch. The deposited ELD was 6.54 nm
+by the chemical vendor is 70 ◦ C. However, the deposition rate     at the wafer center and 3.55 nm at the edge; such a difference
+was 1.75 nm/s at 70 ◦ C, which implies that it would take only     in the deposition thickness was not seen for the blanket
+2.8 s to reach the 5-nm deposition target. Uniformity control      wafer. This might be explained by a loading effect, probably
+within 2.8 s is significantly difficult for a 300-mm wafer.        due to electrochemical surface potential differences caused
+Therefore, the temperature was adjusted for application of the     by underlying metal lines. The delta (bottom recess to top
+hybrid bonding pad. Although the data is not shown here,           protrusion) was 2.70 nm for the wafer center, −0.63 nm for the
+the deposition thickness, which was confirmed by Rutherford        wafer middle and −1.6 nm for the wafer edge. We attempted
+backscattering spectrometry and the sheet resistance of Cu,        to distinguish the ELD layer and damascene electrochemical
+increased linearly with time regardless of the temperature.        deposited (ECD) Cu layer by TEM observation; however, there
+By decreasing the temperature of the ELD Cu process to             were homogeneous Cu grains/layers at the top surface of the
+30 ◦ C, the deposition rate also decreased to 0.25 nm/s. The       pads. This might be due to self-annealing growth of ELD Cu
+obtained within-wafer uniformity of the ELD film thickness         due to the residual stress in the ECD Cu [21]–[23]. The ELD
+on a blanket Cu wafer was 5.7% at an average deposition            Cu layer might be recrystallized immediately along with the
+thickness of 4.7 nm within-wafer.                                  underlying ECD Cu layer by self-annealing.
+   After optimization on the blanket wafer, the low-                  Despite the non-uniformity of the ELD Cu caused by load-
+temperature ELD process was applied on the hybrid bonding          ing effects, the wafer pair was bonded with a high alignment
+pad surface after CMP. Figure 2(a) and (b) show the AFM            accuracy. The result of the overlay model parameter was
+results on hybrid bonding pads before and after electrode-         T(x) = 92 nm, T(y) = −124 nm and R = −0.355 µrad.
+position on the top wafer. Prior to electrodeposition, the         The overlay total misalignment of the wafer was 252 nm with
+average recess amount of the Cu against the SiCN surface           121 nm of residuals. The misalignment value was slightly
+was −2.28 nm (STDEV 0.35 nm) and −2.18 nm (0.31 nm)                higher than the wafer pairs without ELD (<200 nm for the
+for 1.4-µm and 2.0-µm pitch, respectively. This was quite          alignment and <120 nm for the residuals). This might be
+similar for the bottom wafer (−2.49 nm for 1.4-µm pitch and        due to the protruding part of the ELD Cu around the wafer
+−1.92 nm for 2.0-µm pitch) as shown in Figure 2 (c) and (d).       center, such that the surface topography might cause extra
+   The exact same ELD process which was used for the               misalignment.
+blanket Cu wafer was applied on the hybrid bonding pad.               Figure 3 shows SAM images after bonding. The white
+Post-ELD, all the Cu recesses became protrusions. The AFM          area indicates where significant acoustic sound reflection is
+measurement is executed on exactly the same pad before and         obtained (= non-bonded area or void). The non-bonded area is
+after ELD Cu. This indicates that no Cu was deposited on           clearly seen to encompass the entire wafer right after bonding.
+the SiCN surface and that Cu was selectively deposited on          Although most of the non-bonded area has a finer pitch pad
+Cu surfaces. ELD Cu can only deposit on a surface which is         area than 1.4-µm, some of the area above 1.4-µm pitch is also
+catalytic for the reducing agent. The SiCN does not have such      not bonded. The wafer pair had a 2-step annealing process
+a catalytic effect for the reducing agent of this ELD chemistry.   consisting of 250 ◦ C for 2 h and 350 ◦ C for 2 h. The voids
+Therefore, the ELD Cu shows area selective deposition on           were significantly reduced after annealing at 250 ◦ C for 2 h.
+hybrid bonding surface.                                            The bondability at the wafer edge seemed to be better than
+1828                                                                                IEEE ELECTRON DEVICE LETTERS, VOL. 42, NO. 12, DECEMBER 2021
+
+
+
+
+Fig. 3.    SAM scan images of 300 mm bonded wafers for a pair
+(a) post-bonding, (b) post-1st-annealing at 250 ◦ C for 2 h, and (c) post-
+2nd-annealing at 350 ◦ C for 2 h.
+
+
+
+
+                                                                               Fig. 5. Cross-sectional TEM images of 1.4-µm pitch hybrid bonding
+                                                                               interface after 350 ◦ C anneal for 2 h. (a) A specimen taken from an
+                                                                               area with good electrical yield at the wafer middle and high-resolution
+                                                                               STEM-HAADF images at the (b) wafer center, (c) wafer middle, and
+                                                                               (d) wafer edge.
+
+
+
+                                                                               control prior to bonding and had no negative impact on
+                                                                               the Cu-Cu bonding. Figure 5(b), (c) and (d) show higher
+Fig. 4. (a) Electrical resistance distribution of daisy chains. (b) Wafer      magnification STEM of the Cu-Cu interface at the wafer
+map of electrical connection at (b) 284 links (1.4-µm pitch), (c) 8804 links   center, middle and edge. Although a minor void (low density
+(1.4-µm pitch), (d) 202 links (2.0-µm pitch), and (e) 4404 links (2.0-µm       area) was observed at the wafer center (see Figure 5(b)), a Cu
+pitch).
+                                                                               connection was formed for all the locations. There was no gap
+at the wafer center. There was no significant change from                      in between the top and bottom Cu even though an ELD layer
+the state after 250 ◦ C annealing for 2 h to that after 350 ◦ C                existed at the interface.
+annealing for 2 h. The good bondability at the wafer middle
+and edge can also be explained by the delta of ELD protrusion                                        IV. C ONCLUSION
+and CMP recess for the bottom wafer, which is close to zero                       We demonstrated area-selective Cu deposition on hybrid
+or minus.                                                                      bonding Cu pads by electroless deposition. ELD Cu only
+   After the bonding and annealing, the top Si wafer was                       deposited on the Cu pads, without deposition on the SiCN
+thinned down to 5 µm. The 8-µm depth via-middle TSVs                           surface. Hence, the electroless Cu process had no impact
+were revealed from the backside by the thinning process.                       on the SiCN-SiCN bonding interface. Although there was
+The electrical yields of daisy chains were measured through                    some wafer-level non-uniformity of ELD Cu caused by a
+the TSVs. Figure 4(a) shows daisy chain electrical yields. The                 micro-loading effect, the recess shape of Cu pads was repaired
+electrical resistance value when the hybrid bonding pad is                     by ELD Cu. As a result, excellent hybrid bonding connection
+formed only by CMP can be found in Ref [2]. The obtained                       was obtained, where the delta between recess and protrusion
+contact resistance with ELD Cu at the interface is equivalent                  was near zero nanometers. The superior electrical connection
+to the surface formed by CMP for both 1.4 and 2.0 µm                           results are encouraging for the future of electroless Cu depo-
+pitch. 100% yield was obtained for 284 links of 1.4-µm pitch                   sition for hybrid wafer bonding applications. As the control
+and 202 links of 2.0-µm pitch over the entire wafer. However,                  of surface topography using CMP alone will become more
+the yield of 1.4-µm pitch with 8804 links was 79% and that                     challenging for finer pitch hybrid bonding, such a nano-level
+of 2.0-µm pitch with 4404 links was 88%. Figure 4(b)–(e)                       area-selective “repair” approach may become essential. The
+shows the wafer map of the electrical measurement. The dies                    results obtained in this study are encouraging for the concept
+with non-connected daisy chains are indicated in red. The                      of area selective deposition works for future node fine pitch
+non-yielding area corresponds to the area where the ELD Cu                     hybrid bonding.
+created protrusions. In other words, if the protrusion-recess
+control of ELD works like the wafer middle and wafer edge,                                                   R EFERENCES
+the ELD Cu layer itself does not have an impact on the                          [1] E. Beyne, S.-W. Kim, L. Peng, N. Heylen, J. De Messemaeker,
+electrical yields.                                                                  O. O. Okudur, A. Phommahaxay, T.-G. Kim, M. Stucchi, D. Velenis,
+   Figure 5 (a) shows cross-sectional TEM images of the                             A. Miller, and G. Beyer, “Scalable, sub 2 µm pitch, Cu/SiCN to
+                                                                                    Cu/SiCN hybrid wafer-to-wafer bonding technology,” in IEDM Tech.
+Cu-Cu interface. The specimen was taken from the wafer mid-                         Dig., Dec. 2017, pp. 32.4.1–32.4.4, doi: 10.1109/IEDM.2017.8268486.
+dle where good electrical yield was obtained. Homogeneous                       [2] S.-W. Kim, F. Fodor, N. Heylen, S. Iacovo, J. De Vos, A. Miller,
+Cu can be observed in the image, and there are no defects,                          G. Beyer, and E. Beyne, “Novel Cu/SiCN surface topography control
+                                                                                    for 1 µm pitch hybrid wafer-to-wafer bonding,” in Proc. IEEE 70th
+voids, or clear indication of an interface at the Cu-Cu junction.                   Electron. Compon. Technol. Conf. (ECTC), Jun. 2020, pp. 216–222, doi:
+This means that ELD Cu only played the role of topography                           10.1109/ECTC32862.2020.00046.
+INOUE et al.: AREA-SELECTIVE ELECTROLESS DEPOSITION OF Cu FOR HYBRID BONDING                                                                               1829
+
+
+
+
+ [3] Y. Kagawa, N. Fujii, K. Aoyagi, Y. Kobayashi, S. Nishi, N. Todaka,         [13] A. Vaškelis, I. Stankeviciene, A. Jagminiene, L. T. Tamašiunaite, and
+     S. Takeshita, J. Taura, H. Takahashi, Y. Nishimura, K. Tatani,                  E. Norkus, “The autocatalytic reduction of copper(II) by cobalt(II)
+     M. Kawamura, H. Nakayama, T. Nagano, K. Ohno, H. Iwamoto,                       in aqueous diethylenetriamine solutions studied by EQCM,” J. Elec-
+     S. Kadomura, and T. Hirayama, “Novel stacked CMOS image                         troanal. Chem., vol. 622, no. 2, pp. 136–144, Oct. 2008, doi:
+     sensor with advanced Cu2Cu hybrid bonding,” in IEDM Tech.                       10.1016/j.jelechem.2008.05.012.
+     Dig., Dec. 2016, pp. 8.4.1–8.4.4, doi: 10.1109/IEDM.2016.                  [14] A. Vaškelis, E. Norkus, and J. Jačiauskiene, “Kinetics of electroless cop-
+     7838375.                                                                        per deposition using cobalt (II)-ethylenediamine complex compounds as
+ [4] M. Fujino, K. Takahashi, Y. Araga, and K. Kikuchi, “300 mm wafer-               reducing agents,” J. Appl. Electrochem. vol. 32, pp. 297–303, Mar. 2002,
+     level hybrid bonding for Cu/interlayer dielectric bonding in vacuum,”           doi: 10.1023/A:1015599527638.
+     Jpn. J. Appl. Phys., vol. 59, no. SB, Feb. 2020, Art. no. SBBA02, doi:     [15] A. Kohn, M. Eizenberg, Y. Shacham-Diamand, and Y. Sverdlov, “Char-
+     10.7567/1347-4065/ab4b2b.                                                       acterization of electroless deposited Co (W, P) thin films for encapsu-
+ [5] Y. Beilliard, R. Estevez, G. Parry, P. McGarry, L. Di Cioccio,                  lation of copper metallization,” Mater. Sci. Eng., A, vol. 302, no. 1,
+     and P. Coudrain, “Thermomechanical finite element modeling of                   pp. 18–25, 2001, doi: 10.1016/S0921-5093(00)01348-4.
+     Cu–SiO2 direct hybrid bonding with a dishing effect on Cu sur-             [16] F. Inoue, L. Peng, S. Iacovo, A. Phommahaxay, P. Verdonck,
+     faces,” Int. J. Solids Struct., vol. 117, pp. 208–220, Jun. 2017, doi:          J. Meersschaut, P. Dara, E. Sleeckx, A. Miller, G. Beyer, and E. Beyne,
+     10.1016/j.ijsolstr.2016.02.041.                                                 “Influence of composition of SiCN as interfacial layer on plasma
+ [6] H. Ren, Y.-T. Yang, G. Ouyang, and S. S. Iyer, “Mechanism and process           activated direct bonding,” ECS J. Solid State Sci. Technol., vol. 8, no. 6,
+     window study for die-to-wafer (D2W) hybrid bonding,” ECS J. Solid               pp. 346–350, 2019, doi: 10.1149/2.0241906jss.
+     State Sci. Technol., vol. 10, no. 6, Jun. 2021, Art. no. 064008, doi:      [17] F. Nagano, S. Iacovo, A. Phommahaxay, F. Inoue, E. Sleeckx, G. Beyer,
+     10.1149/2162-8777/ac0a52.                                                       E. Beyne, and S. De. Gendt, “Film characterization of low-temperature
+ [7] L. Di Cioccio, P. Gueguen, R. Taibi, D. Landru, G. Gaudin, C. Chappaz,          silicon carbon nitride for direct bonding applications,” ECS J. Solid
+     F. Rieutord, F. de Crecy, I. Radu, L. L. Chapelon, and L. Clavelier,            State Sci. Technol., vol. 9, no. 12, Dec. 2020, Art. no. 123011, doi:
+     “An overview of patterned metal/dielectric surface bonding: Mechanism,          10.1149/2162-8777/abd260.
+     alignment and characterization,” J. Electrochem. Soc., vol. 158, no. 6,    [18] S. Iacovo, L. Peng, F. Nagano, T. Uhrmann, J. Burggraf, A. Fehkuhrer,
+     pp. P81–P86, 2011, doi: 10.1149/1.3577596.                                      T. Conard, F. Inoue, S.-W. Kim, J. De Vos, A. Phommahaxay, and
+ [8] Z.-J. Hu, X.-P. Qu, H. Lin, R.-D. Huang, X.-C. Ge, M. Li, S.-M. Chen,           E. Beyne, “Characterization of bonding activation sequences to enable
+     and Y.-H. Zhao, “Cu CMP process development and characterization                ultra-low Cu/SiCN wafer level hybrid bonding,” in Proc. IEEE 71st
+     of Cu dishing with 1.8 µm Cu pad and 3.6 µm pitch in Cu/SiO2                    Electron. Compon. Technol. Conf. (ECTC), Jun. 2021, pp. 2097–2104,
+     hybrid bonding,” Jpn. J. Appl. Phys., vol. 58, no. SH, Jul. 2019,               doi: 10.1109/ECTC32696.2021.00330.
+     Art. no. SHHC01, doi: 10.7567/1347-4065/ab17c4.                            [19] F. Inoue, A. Jourdain, L. Peng, A. Phommahaxay, J. De Vos,
+ [9] Y. Shacham-Diamand, T. Osaka, Y. Okinaka, A. Sugiyama, and                      K. J. Rebibis, A. Miller, E. Sleeckx, E. Beyne, and A. Uedono,
+     V. Dubin, “30 years of electroless plating for semiconductor and polymer        “Influence of Si wafer thinning processes on (sub) surface
+     micro-systems,” Microelectron. Eng., vol. 132, pp. 35–45, Jan. 2015,            defects,” Appl. Surface Sci., vol. 404, pp. 82–87, May 2017, doi:
+     doi: 10.1016/j.mee.2014.09.003.                                                 10.1016/j.apsusc.2017.01.259.
+[10] I. Zyulkov, S. Armini, K. Opsomer, C. Detavernier, and S. De Gendt,        [20] E. Beyne, “The 3-D interconnect technology landscape,”
+     “Selective electroless deposition of cobalt using amino-terminated              IEEE Design Test, vol. 33, no. 3, pp. 8–20, Mar. 2016, doi:
+     SAMs,” J. Mater. Chem. C, vol. 7, no. 15, pp. 4392–4402, Apr. 2019,             10.1109/MDAT.2016.2544837.
+     doi: 10.1039/C9TC00145J.                                                   [21] H. Lee, S. S. Wong, and S. D. Lopatin, “Correlation of stress and
+[11] F. Inoue, H. Philipsen, A. Radisic, S. Armini, Y. Civale, P. Leunissen,         texture evolution during self- and thermal annealing of electroplated
+     M. Kondo, E. Webb, and S. Shingubara, “Electroless Cu deposition on             cu films,” J. Appl. Phys., vol. 93, no. 7, pp. 3796–3804, Apr. 2003, doi:
+     atomic layer deposited Ru as novel seed formation process in through-           10.1063/1.1555274.
+     Si vias,” Electrochimica Acta, vol. 100, pp. 203–211, Jun. 2013, doi:      [22] H. Han, C. Lee, Y. Kim, J. Lee, R. Kim, J. Kim, and B. Yoo, “Cu to
+     10.1016/j.electacta.2013.03.106.                                                Cu direct bonding at low temperature with high density defect in elec-
+[12] F. Inoue, T. Shimizu, T. Yokoyama, H. Miyake, K. Kondo, T. Saito,               trodeposited Cu,” Appl. Surf. Sci., vol. 550, Jun. 2021, Art. no. 149337,
+     T. Hayashi, S. Tanaka, T. Terui, and S. Shingubara, “Formation of               doi: 10.1016/j.apsusc.2021.149337.
+     electroless barrier and seed layers in a high aspect ratio through-Si      [23] S.-C. Chang, J.-M. Shieh, B.-T. Dai, M.-S. Feng, and Y.-H. Li,
+     vias using au nanoparticle catalyst for all-wet Cu filling technology,”         “The effect of plating current densities on self-annealing behaviors
+     Electrochimica Acta, vol. 56, no. 17, pp. 6245–6250, Jul. 2011, doi:            of electroplated copper films,” J. Electrochem. Soc., vol. 149, no. 9,
+     10.1016/j.electacta.2011.02.078.                                                p. G535, 2002, doi: 10.1149/1.1500348.
+

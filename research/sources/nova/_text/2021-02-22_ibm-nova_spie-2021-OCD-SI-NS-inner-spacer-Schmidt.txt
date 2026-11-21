@@ -1,0 +1,540 @@
+       PROCEEDINGS OF SPIE
+       SPIEDigitalLibrary.org/conference-proceedings-of-spie
+
+
+
+
+                   OCD enhanced: implementation and
+                   validation of spectral interferometry
+                   for nanosheet inner spacer
+                   indentation
+
+
+
+                   Schmidt, D., Durfee, C., Pancharatnam, S., Medikonda,
+                   M., Greene, A., et al.
+
+
+
+
+                                  D. Schmidt, C. Durfee, S. Pancharatnam, M. Medikonda, A. Greene, J.
+                                  Frougier, A. Cepler, G. Belkin, D. Shafir, R. Koret, R. Shtainman, I. Turovets,
+                                  S. Wolfling, "OCD enhanced: implementation and validation of spectral
+                                  interferometry for nanosheet inner spacer indentation," Proc. SPIE 11611,
+                                  Metrology, Inspection, and Process Control for Semiconductor Manufacturing
+                                  XXXV, 116111U (5 March 2021); doi: 10.1117/12.2582364
+
+                                  Event: SPIE Advanced Lithography, 2021, Online Only
+
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021 Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                            OCD enhanced: Implementation and Validation of Spectral
+                             Interferometry for Nanosheet Inner Spacer Indentation
+                  D. Schmidta,*, C. Durfeea, S. Pancharatnama, M. Medikondaa, A. Greenea, J. Frougiera, A. Ceplerb,
+                               G.. Belkinc, D. Shafirc, R. Koretc, R. Shtainmanc, I. Turovetsc, S. Wolflingc
+                                       a
+                                         IBM Research, 257 Fuller Road, Albany, NY, USA 12203
+                         b
+                           Nova Measuring Instruments Inc, 3342 Gateway Blvd, Fremont, CA, USA 93117
+                            c
+                              Nova Measuring Instruments Ltd, 5 David Fikes St, Rehovot, Israel 7610201
+                                                                               *schmidt@ibm.com
+
+
+                                                                                  ABSTRACT
+
+                In this work, the novel enhancement to multichannel scatterometry data collection, Spectral Interferometry, is introduced
+                and discussed. The Spectral Interferometry technology adds unique spectroscopic data by providing absolute phase
+                information. This enhances metrology performance by improving sensitivity to weak target parameters and reducing
+                parameter correlations. Spectral Interferometry enhanced OCD capabilities were demonstrated for one of the most critical
+                and challenging applications of gate-all-around nanosheet device manufacturing: lateral etching of SiGe nanosheet layers
+                to form inner spacer indentations. The inner spacer protects the channel from the source/drain regions during channel
+                release and defines the gate length of the device. Additionally, a methodology is presented, which enables reliable and
+                reproducible manufacturing of reference samples with engineered sheet-specific indent variations at nominal etch
+                processing. Such samples are ideal candidates for evaluating metrology solutions with minimal destructive reference
+                metrology costs. Two strategies, single parameter and sheet-specific indent monitoring are discussed, and it was found
+                that the addition of spectroscopic information acquired by Spectral Interferometry improved both optical metrology
+                solutions. In addition to improving the match to references for single parameter indent monitoring, excellent sheet-specific
+                indent results can be delivered.
+                Keywords: OCD, Spectral Reflectometry, Spectral Interferometry, gate-all-around, nanosheet FET, indent, inner spacer
+
+
+
+                                                                          1. INTRODUCTION
+                Over the last few decades, optical critical dimension (OCD) metrology has played a pivotal role in the semiconductor
+                manufacturing process due to its extreme sensitivity, accuracy, flexibility, and speed. The constant progress in
+                semiconductor manufacturing technology demands the fabrication, metrology, and control of ever smaller and more
+                complex three-dimensional devices. Stacked nanosheet gate-all-around (GAA) devices will be the succeeding FinFET
+                technology as the next-generation logic architecture in the coming years.1-3 Complex integration schemes, specifically
+                related to the gate definition, in conjunction with shrinking dimensions require precise process control for optimal device
+                performance, which creates many new challenges for in-line metrology. One of the most critical manufacturing steps for
+                GAA transistors is formation of inner spacers, which protect the channel from the source/drain regions during channel
+                release. The first process step toward forming the inner spacer is a partial lateral etch of multiple sacrificial SiGe layers
+                sandwiched in between epitaxial Si nanosheets, which are the electronic transport channels. Accurate, fast, and non-
+                destructive measurements of the SiGe indentation etch are essential for competitive development and successful high-
+                volume manufacturing. It is a demanding and challenging task for any metrology technique since the layers are vertically
+                stacked and buried, and the nominal indents are only a few nanometers deep. Hence, the overall associated volume change
+                is very small, leading to small metrology response changes. Ideally, a metrology accuracy of <1 nm is desired. The only
+                suitable and currently available in-line metrology techniques for fully integrated samples are OCD, X-ray fluorescence
+                (XRF), and maybe Raman spectroscopy.4-7
+                Previously published studies related to in-line metrology focused on the determination of the average sheet indent of
+                simplified test structures5,6 and fully integrated device architectures.4 However, for the indent etch process, sheet-specific
+                rather than single parameter monitoring is desired, because the process window for optimal device performance is very
+
+
+                                             Metrology, Inspection, and Process Control for Semiconductor Manufacturing XXXV,
+                                                 edited by Ofer Adan, John C. Robinson, Proc. of SPIE Vol. 11611, 116111U
+                                                  © 2021 SPIE · CCC code: 0277-786X/21/$21 · doi: 10.1117/12.2582364
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-1
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                small. If the indent is too deep or too shallow, the gate length will be too short or the spacer not thick enough to protect
+                the source/drain regions, respectively. Monitoring an average indent depth only, multiple failure modes are possible that
+                could go completely unnoticed. For example, in the case where the bottom sheet has a very shallow indent, the middle
+                sheet exhibits a nominal indent depth, and the top sheet is too deep, the average indent of the three sheets could be on
+                target but the device would fail due to an insufficient bottom spacer thickness. Therefore, sheet-specific indent monitoring
+                is necessary for successful high-volume manufacturing. Scatterometry is currently the only available non-destructive in-
+                line technique capable of sheet-specific monitoring of fully integrated wafers at relevant fin and gate pitches. Other
+                techniques either lack the depth resolution, specifically when the dummy gate is present, or are destructive.
+                In this paper, SiGe indent monitoring capabilities for stacked nanosheet GAA device manufacturing using state-of-the-art
+                OCD technology will be discussed. First, the latest advancement in scatterometry tool capabilities, Spectral Interferometry,
+                is introduced and discussed. Then experimental strategies will be reviewed and highlighted that allow for monitoring an
+                average indent with a goal of best time to solution. Furthermore, a straightforward methodology is described, which
+                enables reproducible device manufacturing with engineered sheet-specific indent variations by tuning the alloy
+                composition of the SiGe sheets individually. Lastly, sheet-specific indent results are presented and discussed. For both
+                cases, monitoring the average SiGe indent or multiple sheet-specific indents, OCD enhanced with Spectral Interferometry
+                improves the optical solution.
+
+
+
+                                                            2. SPECTRAL INTERFEROMETRY
+                To provide adequate improvement of the metrology capabilities, OCD tools have gone through extensive improvement
+                and refinement to allow extremely accurate measurements and high throughput. In addition to improving the essential tool
+                characteristics, another venue by which OCD performance can be improved is diversifying the measured information. The
+                majority of the current OCD solutions are based on well-established broadband spectral reflectometry and ellipsometry
+                (SR/SE) techniques. These techniques are measuring the sample at different incidence angles, azimuths, polarizations, and
+                wavelengths (Figure 1a).8,9 Also, the relative phase between reflected polarization components can be accessed through
+                ellipsometry measurements.
+                Another essential attribute of light scattered from a patterned structure is the phase difference between the incident and
+                reflected electromagnetic waves (absolute spectral phase). Typically, this spectral phase has different values for different
+                wavelengths, incident angles, azimuths, and polarizations and has new and unique information content. Since accessing
+                the spectral phase directly is not possible at optical frequencies, one must use interference effects, usually observed with
+                an interferometer, and recover the encoded phase information from the interference effects.
+                The difference between the relative and absolute spectral phase can be best illustrated with the Jones matrix, which
+                describes the scattering of polarized light from samples.8,9 The Jones matrix presents a light beam scattered from a sample
+                by a 2-component complex vector, consisting of the amplitude and phase of each polarization (Jones vector 𝑃- ). The
+                polarization state will describe the scattered light (at a given azimuth and incidence angle): 𝑃-′ = 𝐽𝑃- . The Jones matrix is
+                a 2×2 complex matrix of the form:
+                                                                 𝑟𝑠𝑠 𝑟𝑠𝑝
+                                                       𝐽 = 𝑒 𝑖𝜑 (𝑟     𝑟𝑝𝑝 )                        (1)
+                                                                  𝑝𝑠
+
+                Here, 𝑟𝑖𝑗 is the complex reflectance component for incident polarization 𝑗 and scattered polarization 𝑖. For example, 𝑟𝑠𝑠 is
+                the complex reflected field in the 𝑠 polarization (perpendicular to the plane of incidence) when the incident field is 𝑠
+                polarized. Similarly, 𝑟𝑠𝑝 represents the reflected 𝑠 polarized field for incident field polarized in the 𝑝 direction (parallel to
+                the plane of incidence) and is related to the degree of polarization conversion created by the sample. The matrix
+                components are complex and include relative phase difference between every two components, which is easily accessed
+                through ellipsometry measurements and is different from the absolute spectral phase defined by the pre-factor 𝑒 𝑖𝜑 .
+
+                The Stokes-Mueller formalism, widely used for ellipsometry measurements, can be used as another example highlighting
+                the difference.8,9 For non-depolarizing samples, there is a simple transformation between the Jones and Stokes-Mueller
+                matrices: 𝑀 = 𝑇𝐽𝐽∗ 𝑇 −1 , where M is a Mueller matrix, and T is the conversion matrix:
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-2
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                   1       0    0      1
+                                                              𝑇 = (1       0    0     −1)                    (2)
+                                                                   0       1    1      0
+                                                                   0       𝑖    −𝑖     0
+                Transformation shows that for the non-depolarizing samples, the Mueller matrix does not hold any additional information
+                content not included in the Jones matrix. On the other hand, the Jones absolute phase component vanishes in conversion,
+                so in the Mueller matrix formalism the absolute spectral phase is not present.
+
+                In this paper, the enhanced OCD hardware is presented. It combines multichannel reflectivity measurements with
+                measurements of the absolute spectral phase. The optical scheme of the Spectral Interferometer (SI) is depicted in Figure
+                1b. It is based on a Spectral Reflectometer, where sample reflectivity is accurately measured. However, in this scheme,
+                the objective lens used for the measurement is replaced by an interferometric objective. Optical path difference control
+                can be obtained by changing either the sample arm's length or modifying the reference arm path. Light from the reference
+                mirror and the sample are combined in the beam splitter and directed to the spectrometer. The spectrometer measures the
+                intensity of every wavelength separately and records the interference pattern of the interferometer. The unique design must
+                ensure the required stability of interferometric measurements to external noise sources and enable fast throughput for high-
+                volume manufacturing environments.
+                We present the enhanced OCD hardware capabilities, enabling measurement of reflectivity and absolute spectral phase,
+                for one of the most challenging applications of future nanosheet technology – sheet-specific indent metrology.
+
+
+
+
+                      Figure 1. (a) Schematic of current multichannel OCD tools, including normal incidence and oblique illumination and collection
+                      channels. (b) Schematic of Spectral Interferometer (SI): light is split between the sample and a reference arm and then
+                      recombined and measured with a spectrometer.
+
+
+
+
+                                                                3. DESIGN OF EXPERIMENTS
+                3.1 Single Parameter Indent Monitoring
+                Single indent parameter monitoring refers to the characteristic that the optical metrology solution is capable of delivering
+                a single value corresponding to the average indentation of all SiGe sheets. In this study, the GAA device comprises a
+                nanosheet stack with three epitaxial SiGe sheets sandwiched between thin epitaxial Si layers. Fully integrated wafers were
+                processed with nominal conditions up to the lateral SiGe etch. At the SiGe indent process step, an intentional variation
+                using five different etch times was introduced with the goal to change the indent of all three sheets equally from shallow
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-3
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                to deep. All wafers were measured with advanced multichannel scatterometry (T600MMSR and NovaPRISM) after
+                indentation as well as with low energy XRF (VeraFlexIII+) before and after indentation. Center and edge scanning
+                transmission electron microscopy (STEM) images from each wafer were obtained to evaluate the etch variations and serve
+                as reference for the optical model solution.
+                The optical solution comprises a full geometric model with many degrees of freedom to account for potential process
+                variations. Additionally, a machine learning solution was developed using scatterometry in conjunction with XRF
+                reference data.4
+
+
+
+
+                      Figure 2. Full geometric optical model developed for single parameter indent monitoring; the inset shows a more detailed
+                      view of the nanosheet stack comprising alternating epitaxial Si and SiGe layers. STEM cross-section images with cuts
+                      perpendicular to the gate direction depict three of the five etch conditions with successive increase in SiGe indentation from
+                      left to right.
+
+
+
+                3.2 Individual Sheet Indent Monitoring
+                Individual sheet indent monitoring refers to the characteristic that the optical metrology solution is capable of delivering
+                a single indent parameter for each of the multiple SiGe layers within the nanosheet stack. For the individual sheet indent
+                monitoring part of the study, wafers with fin patterning only have been considered. Nonetheless, considering the small
+                volume change per layer and the fact that there are multiple instances of alternating thin Si and SiGe sheets, the question
+                of metrology sensitivity arises first. Figure 3 shows spectral sensitivity calculations for a bottom, middle, and top sheet
+                variation of 2 nm, respectively, at otherwise constant geometry. Representative MMSR channels at normal and oblique
+                angles of incidence confirm that the optical fingerprint differences between the three individual sheet variations are
+                significant and significantly different from each other. The SI channel adds additional unique spectral sensitivity.
+                Therefore, an appropriate optical model will be capable of discriminating between the individual sheets and can deliver
+                sheet-specific indent monitoring.
+                In order to experimentally evaluate and confirm the calculated sheet-specific capabilities and develop a reliable metrology
+                solution, a set of samples with certain properties is desired. Ideally, the indent variations can be precisely and reproducibly
+                controlled, individually by sheet and decoupled from any other potential process variations. Desired samples include, for
+                example, a successive increase or decrease from top to bottom, and a set where two sheets are processed nominally while
+                a third sheet has a deeper (or shallower) indent – and this sheet is then intentionally the top, middle, or bottom sheet.
+                Furthermore, reliable reference metrology besides STEM cross-section images is desired that is non-destructive, less
+                expensive, and less sensitive to potential local variability.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-4
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                      Figure 3. Spectral sensitivity calculations for sheet-specific indent variations. Shown are schematics of the top portion of a fin
+                      with multilayer Si/SiGe nanosheet stack with (a) bottom, (b) middle, and (c) top sheet variations of 2 nm together with
+                      respective unique optical fingerprint differences for representative Normal (blue), Oblique (green), and SI (yellow) optical
+                      channels.
+
+
+                Unfortunately, the etch process employed for the SiGe indentation itself does not allow for such a controlled sheet-specific
+                variability. However, the etch rate strongly depends on the Ge content within the SiGe alloy.10 The composition of the
+                SiGe alloy can be very well controlled for each sheet at nanosheet stack epitaxy. Hence, a small sheet-specific variation
+                of the Ge content at otherwise nominal process conditions will allow for the desired sheet-specific indent control and a
+                reproducible manufacturing.
+                The samples manufactured for this study are listed in Table 1. No intentional process variations other than the sheet-
+                specific Ge concentration were introduced. The range was selected such that the dependency of etch rate versus Ge content
+                is linear and that the high Ge content sheet etches about two times faster compared to the sheet with the low Ge content.
+                All samples were measured by high-resolution X-ray diffraction (HRXRD) post nanosheet stack deposition to determine
+                individual sheet thickness and desired Ge content variations. 7 Additionally, low energy XRF measurements were carried
+                out before and after the indentation to measure Ge Lα counts, which are representative of the total amount of Ge present
+                within the probed volume.
+
+
+                      Table 1. List of samples with sheet-specific Ge content variations from low (L), medium (M) and high (H).
+
+                                           Slot            Bottom            Middle                 Top             Group
+                                            1                H                 M                     L
+                                            2                 L                M                     H       Successive In/Decrease
+                                            3                 L                M                     H
+                                            4                M                 L                     L
+                                            5                 L                M                     L        One Sheet More (M)
+                                            6                 L                L                     M
+                                            7                 L                M                     M
+                                            8                M                 L                     M          One Sheet Less
+                                             9               M                 M                     L
+                                            10               H                 L                     L
+                                                                                                              One Sheet More (H)
+                                            11                L                L                     H
+
+
+                Figure 4 depicts STEM cross-section images and indent measurements of slots 3 and 6. Slot 3 represents a sample with
+                successive increase in Ge content going from bottom to top sheet and the STEM image results are a testament that the
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-5
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                processing worked as intended. The sheet-specific indent measurements show an approximately 4, 6.5, and 9 nm
+                indentation on each side for the bottom, middle, and top sheets, respectively. Hence, the etch rate as a function of Ge
+                content exhibits a linear behavior where the sheet with higher Ge concentration etches a little over two times faster
+                compared to the sheet with the low Ge content. Slot 6 is a sample from the group ‘one sheet more’ and helps to confirm
+                that the indent only depends on the Ge content and is independent of the location of the sheet. Both bottom and middle
+                sheets are epitaxially grown with the same low Ge concentration. Consequently, the indent measurements are with around
+                4 nm essentially identical as well as in excellent agreement with the indent of the low Ge content sheet of slot 3. The two
+                M sheet measurements do not match as well as the one for the L sheets, which is likely related to process variations and
+                image analyses uncertainty.
+
+
+
+
+                      Figure 4. Representative STEM cross-sections of (a) slots 3 (left) and 6 (right) together with (b) sheet-specific indent
+                      measurements of these two samples as a function of Ge content. The topmost layer in (a) is a hardmask required for patterning.
+
+
+
+
+                Regarding the former, it has been discussed that the SiGe etch rate depends on the Ge content, the basic concept of the
+                entire sheet-specific design of experiments. Assuming process variations with a Ge content range of ±0.05 around the
+                target value, at the process conditions used for this study, an indent variation of already ±2.4 Å can be expected.
+                Furthermore, the indent etch rate also scales with sheet height. Assuming a sheet-to-sheet height variation of ±5 Å,
+                depending on the alloy composition an indent range of ±2.2 and ±5.2 Å and for the low and high Ge content sheets,
+                respectively, can be expected. Hence, in the worst-case scenarios (upper and lower bounds) the indentation of sheets with
+                a low Ge content may be different by over 9 Å due to processing variations. Additionally, STEM image analyses results
+                carry an error due to the image calibration and manual readout, sometimes exacerbated by imaging artefacts, and represent
+                only a small slice of the target without depth information.
+
+
+
+
+                      Figure 5. Optical model for sheet-specific indent monitoring with hardmask (HM), Si and SiGe layers, and Si substrate (left);
+                      and SiGe optical properties, refractive index n and extinction coefficient k, with varying Ge content (right). The arrow indicates
+                      the red-shift as the alloy becomes more germanium-rich.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-6
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                The optical model required for the patterned and indented nanosheet stack wafers (Table 1) is reasonably straightforward.
+                Besides the individually parameterized sheets, the overall fin and hardmask geometries need to be accounted for.
+                Additionally, since the design of experiments is based on a variation of the Ge content, the optical properties (n and k) of
+                the SiGe alloy have to be considered as they depend on the specific alloy composition (Figure 5). It was confirmed, by
+                way of simulations, that there is no significant correlation between SiGe composition and the indent itself. Specifically, a
+                change in the Ge content causes a different optical fingerprint change than the indent does.
+
+
+
+
+                                                                4. RESULTS AND DISCUSSION
+                4.1 Single Parameter Indent Monitoring
+                The main challenge with a geometric model for fully integrated devices and stand-alone indent monitoring (analyzing a
+                single measurement only acquired post indentation) is the many floating parameters required to account for process
+                variations within the fin and gate module. Hence, there is a risk that the model accuracy lacks due to parameter correlations,
+                especially since the etched SiGe volume is very small, or non-unique solutions can be found. Nonetheless, the match
+                between indent values reported by the OCD model for the five different etch conditions is in good agreement with STEM
+                cross-section image analyses (Figure 6a). In this example, adding SI channels improves the correlation to STEM from
+                R2 = 0.8 with MMSR channels only to the depicted R2 = 0.9.4
+                While this is an excellent result, another challenge is to keep metrology up to date, especially in the development stage of
+                a manufacturing process. Meaning, a full geometric model may need to be revised because of a small process change
+                somewhere upstream in the line. Time to solution is critical and building an OCD solution based on a full geometric model
+                including the calculation of a new model library is typically time consuming. To improve time to solution significantly
+                and be less dependent on process variations unrelated to the indent itself, a machine learning solution utilizing XRF as a
+                reference was developed. Specifically, the difference in Ge Lα (ΔGe) counts between before and after indentation, which
+                represents the overall loss of Ge, was used to train a machine learning model with scatterometry spectra acquired after
+                indentation only. Figure 6c depicts the excellent correlation between normalized ΔGe counts and OCD machine learning
+                results achieved already with only a few data points. Subsequently, only a few representative STEM reference images are
+                required to convert ΔGe counts to an indent depth in nanometers. This type of machine learning approach is basically
+                effortless compared to a full geometric model build because it only requires two XRF reference measurements from a few
+                wafers to get started. The time to solution in case an update is required can be counted in minutes rather than days with
+                the right infrastructures in place.11
+
+
+
+
+                      Figure 6. Correlation plots of (a) STEM and OCD results from the full geometric model using MMSR+SI channels and (b)
+                      normalized ΔGe counts and OCD indent values as obtained by a machine learning solution using XRF reference data.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-7
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                4.2 Individual Sheet Indent Monitoring
+                The sheet-specific SiGe indent scatterometry results for all eleven wafers listed in Table 1 are presented in Figure 7. The
+                graphs are vertically separated in three sections representing indent results for bottom, middle, and top sheet. Within each
+                section the y-axis lists the slots in ascending order and the common x-axis shows the indent in units of angstroms. The size
+                of the box and whiskers indicates the data spread of ten measurements across the wafer and the color designates the Ge
+                content low (blue), medium (green), and high (red). The three vertical grey areas around 35, 65 and 95 Å are guides to the
+                eye.
+                Figure 7a depicts best model indent data from fitting MMSR and SI channels and the red circles are the STEM data from
+                two wafers (see Figure 5). Focusing first on slot 3, it is evident that OCD matches the STEM data very well for all three
+                sheets: the bottom sheet with the lowest Ge content is indented by about 40 Å, the middle sheet with the medium
+                concentration around 75 Å, and the germanium-rich top sheet is indented the most with 90 Å. In a similar manner, STEM
+                data matches well with the OCD model output for slot 6. However, looking at all results for low Ge content sheets (blue
+                boxes around 35 Å) for example, a median range of >10 Å is observed, and it looks like the bottom sheets tend to have
+                deeper indents than the top sheets, for instance. The obvious first suspicion is that there are parameter correlations in the
+                optical model, either between sheets or with other floating geometrical parameters. Thorough analyses did not confirm
+                that there are significant correlations between any of the floating model parameters. Hence, the variations should be mainly
+                related to processing.
+
+
+
+
+                      Figure 7. Sheet-specific SiGe indent scatterometry results for all eleven wafers listed in Table 1 vertically separated by sheet
+                      location (bottom, middle, top). The color of the boxes represents the Ge content of the sheets: low = blue, medium = green,
+                      and high = red. (a) OCD model results considering MMSR and SI channels; XRD “sheet factor” corrected OCD model results
+                      considering (b) MMSR and SI channels and (c) MMSR channels only.
+
+
+                In an attempt to verify if processing variations are the major source of variations here, sheet-specific heights and Ge
+                contents, as determined by HRXRD at the blanket stage were used to calculate a location-specific “sheet factor”
+                proportional to the etch rate. For example, sheets with a high sheet factor are expected to etch faster because they have an
+                above nominal height and/or Ge content. This scaling factor is then applied to the reported OCD indent values and results
+                are shown in Figure 7b. It is evident that the corrected indent results, specifically for the sheets with low and medium Ge
+                content, have “improved” in terms of data spread. These results give confidence that a significant part of the data spread
+                is indeed related to process variations at nanosheet stack epitaxy rather than issues with the OCD metrology or the model.
+                The remaining variation is attributed to the data correction procedure and total measurement uncertainties for both HRXRD
+                and OCD. The HRXRD data correction procedure to determine the location-specific “sheet factor” in this study is not
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-8
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                optimal since the OCD and HRXRD sampling plans do not match exactly. Therefore, with the assumption of radial
+                symmetry, OCD indent results were corrected with data from close radial neighbors. It is believed that an improvement is
+                possible with matching sampling plans and maybe additional reference metrology using x-ray reflectometry, for example.
+                In summary, the claim is not that OCD indent results must be corrected to get an accurate reading, but that the original and
+                uncorrected results (Figure 7a) are in fact accurate. Small process variations at multilayer stack epitaxy rather than OCD
+                metrology or model issues are likely the main source of variation. Therefore, the epitaxial SiGe deposition process needs
+                to be controlled with extreme precision and accuracy to achieve even indents.
+                If the unique information content obtained from SI channels is not considered for the model analysis, the results are still
+                acceptable but not as robust (Figure 7c). For ease of comparison, the corrected indent is shown. A slightly larger deviation
+                from the median within the population is observed. Besides that, it stands out that specifically the low Ge content bottom
+                sheets are on average about 5-10 Å below expectation.
+
+
+
+
+                      Figure 8. Comparison between XRF and OCD (a) as a function of radius per slot and (b) a combined correlation plot.
+
+
+                In addition to STEM image analyses and working with sheet-specific HRXRD data, the OCD indent results are compared
+                to XRF reference data. Ge Lα counts were measured on all OCD measured sites before and after the SiGe indent etch.
+                While not a sheet-specific metric, the difference between these two acquisitions is representative of the total amount of Ge
+                removed during the etch process (ΔXRF = GeLαpre – GeLαpost). In order to compare both XRF and OCD metrology results,
+                the sheet-specific OCD indent parameters are multiplied with the respective Ge content to yield an empirical SumIndent
+                parameter according to
+                                  OCD SumIndent = (Indent*Ge%)Bot + (Indent*Ge%)Mid + (Indent*Ge%)Top .                                    (3)
+                A comparison between ΔXRF and OCD SumIndent is presented in Figure 8. The graph is horizontally separated by the
+                wafers and the x-axis within each panel depicts the wafer radius (Figure 8a). It is noticeable that both techniques report a
+                considerable difference between center and edge. Additionally, based on the amplitude, the wafers can be separated into
+                three groups based on the total Ge content matching the experiment: slots 1…3 have the highest and slots 4…6 the lowest
+                values; the other four wafers are in between. In general, the ΔXRF (top row) and OCD SumIndent (bottom row) are
+                matching well in terms of amplitude and radial signature, which is also confirmed by the combined correlation plot with
+                R2 = 0.92 (Figure 8b).
+
+
+
+                                                                           5. CONCLUSIONS
+                In this paper, SI technology, which allows for the temporal characterization of the wavefront by measuring the absolute
+                phase through spectral interferometry was introduced and discussed. Spectral Interferometry adds additional and unique
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111U-9
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                sample information, which enhances existing scatterometry capabilities and supports solving the most challenging
+                applications. It was shown how the addition of spectral phase information acquired by SI improved the presented optical
+                metrology solutions around SiGe indent metrology within the inner spacer module of gate-all-around nanosheet device
+                manufacturing.
+                Single indent parameter monitoring solutions were presented and summarized. A geometric model utilizing MMSR and
+                SI technology for in-line monitoring of fully integrated devices can deliver very good average indent results as confirmed
+                by STEM reference data. However, maintaining such a model in the development stage of a process with all its minor or
+                major adjustments is time-consuming and hence expensive. It was highlighted how a machine learning model trained with
+                XRF reference data could easily replace the full geometric model. In a straightforward manner excellent results can be
+                achieved with only a few wafers of training data.
+                Lastly, a methodology was introduced and discussed that allows for reliable and reproducible manufacturing of reference
+                samples with sheet-specific indent variations, which can be used to evaluate optical model solutions. Minor intentional
+                variations of the Ge content within individual SiGe nanosheets allow for engineered etch differences without modifying
+                the nominal etch process. It was demonstrated that an OCD model utilizing information from SI channels is capable of
+                delivering excellent sheet-specific results. While the data presented here are for structures without gates, the introduced
+                concept can be readily applied to design experiments for fully integrated flows. The results presented here highlight that
+                minor process variations in terms of sheet height and alloy composition can affect the indent depth substantially. Therefore,
+                epitaxial growth monitoring and tight process control are crucial for reliable indent manufacturing. XRD and XRF data
+                were used to confirm the accuracy of the OCD model.
+
+
+
+                                                                   6. ACKNOWLEDGEMENTS
+                The authors would like to thank Nicolas Loubet, Mary Breton, Nelson Felix, and Bala Haran for support of this work.
+
+
+
+
+                                                                                REFERENCES
+
+
+                [1] M. Lapedus, “New Transistor Structures At 3nm/2nm,” 25 January 2021, <https://semiengineering.com/new-
+                    transistor-structures-at-3nm-2nm/> (02 February 2021).
+                [2] N. Loubet, T. Hook, P. Montanini, C.-W. Yeung, S. Kanakasabapathy, M. Guillom, T. Yamashita, J. Zhang, X. Miao,
+                    J. Wang, A. Young, R. Chao, M. Kang, Z. Liu, S. Fan, B. Hamieh, S. Sieg, Y. Mignot, W. Xu, S.-C. Seo, J. Yoo, S.
+                    Mochizuki, M. Sankarapandian, O. Kwon, A. Carr, A. Greene, Y. Park, J. Frougier, R. Galatage, R. Bao, J. Shearer,
+                    R. Conti, H. Song, D. Lee, D. Kong, Y. Xu, A. Arceo, Z. Bi, P. Xu, R. Muthinti, J. Li, R. Wong, D. Brown, P. Oldiges,
+                    R. Robison, J. Arnold, N. Felix, S. Skordas, J. Gaudiello, T. Standaert, H. Jagannathan, D. Corliss, M.-H. Na, A.
+                    Knorr, T. Wu, D. Gupta, S. Lian, R. Divakaruni, T. Gow, C. Labelle, S. Lee, V. Paruchuri, H. Bu, M. Khare, “Stacked
+                    Nanosheet Gate-All-Around Transistor to Enable Scaling Beyond FinFET,” Symp. VLSI Tech., 230–231 (2017).
+                [3] J. Zhang, J. Frougier, A. Greene, X. Miao, L. Yu, R. Vega, P. Montanini, C. Durfee, A. Gaul, S. Pancharatnam, C.
+                    Adams, H. Wu, H. Zhou, T. Shen, R. Xie, M. Sankarapandian, J. Wang, K. Watanabe, R. Bao, X. Liu, C. Park, H.
+                    Shobha, P. Joseph, D. Kong, A. Arceo De La Pena, J. Li, R. Conti, D. Dechene, N. Loubet, R. Chao, T. Yamashita,
+                    R. Robison, V. Basker, K. Zhao, D. Guo, B. Haran, R. Divakaruni, H. Bu, “Full Bottom Dielectric Isolation to Enable
+                    Stacked Nanosheet Transistor for Low Power and High Performance Applications”, 2019 IEEE International Electron
+                    Devices Meeting (IEDM).
+                [4] D. Kong, D. Schmidt, M. Breton, J. Frougier, A. Greene, J. Zhang, V. Basker, N. Loubet, I. Ahsan, A. Cepler, M.
+                    Klare, M. Cheng, R. Koret, I. Turovets, “Development of SiGe Indentation Process Control to Enable Stacked
+                    Nanosheet FET Technology,” 2020 31st Annual SEMI Advanced Semiconductor Manufacturing Conference
+                    (ASMC).
+                [5] M. Korde, S. Kal, C. Alix, N. Keller, G.A. Antonelli, A. Mosden, A.C. Diebold, “Nondestructive characterization of
+                    nanoscale subsurface features fabricated by selective etching of multilayered nanowire test structures using Mueller
+                    matrix spectroscopic ellipsometry based scatterometry,” J. Vac. Sci. Technol. B 38, 024007 (2020).
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111U-10
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                [6] J. Bogdanowicz, Y. Oniki, K. Kenis, Y. Muraki, T. Nuytten, S. Sergeant, A. Franquet, V. Spampinato, T. Conard, I.
+                     Hoflijk, J. Meersschaut, N. Claessens, A. Moussa, D. Van Den Heuvel, J. Hung, R. Koret, A.-L. Charley, P. Leray,
+                     “Spectroscopy: a new route towards critical-dimension metrology of the cavity etch of nanosheet transistors,” Proc.
+                     SPIE 11611, 116111Q (2021).
+                [7] D. Schmidt, C. Durfee, J. Li, N. Loubet, A. Cepler, L. Neeman, N. Meir, J. Ofek, Y. Oren, D. Fishman, “In-Line
+                     Raman Spectroscopy for Stacked Nanosheet Device Manufacturing,” Proc. SPIE 11611, 116111T (2021).
+                [8] R.M.A. Azzam, “Mueller-matrix ellipsometry: a review,”, Proc. SPIE 3121 (1997).
+                [9] D. Shafir, G. Barak, M.H. Yachini, M. Sendelbach, C. Bozdog, S. Wolfling, “Mueller matrix characterization using
+                     spectral reflectometry”, Proc. of SPIE 8789 (2013).
+                [10] B. Holländer, D. Buca, S. Mantl, J. M. Hartmann, “Wet Chemical Etching of Si, Si1−xGex, and Ge in
+                     HF:H2O2:CH3COOH,” J. Electrochem. Soc., 157, H643 (2010).
+                [11] P. Timoney, R. Luthra, A. Elia, H. Liu, P. Isbester, A. Levy, M. Shifrin, B. Bringoltz, E. Rabinovich, A. Broitman,
+                     E. Rothstein, R.Yacoby, I. Rubinovich, Y.H. Kim, O. Shlagman, B. Ben-Nahum, M. Zolkin, Igor Turovets,
+                     “Advanced machine learning eco-system to address HVM optical metrology requirements,” Proc. SPIE 11325,
+                     113251H (2020).
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111U-11
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 07 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+

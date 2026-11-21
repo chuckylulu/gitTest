@@ -1,0 +1,294 @@
+ 3169 materials Materials Materials (Basel) Multidisciplinary Digital Publishing Institute (MDPI) PMC11122854 11122854 11122854 38793303 10.3390/ma17102236 Effect of Compressive Stress on Copper Bonding Quality and Bonding Mechanisms in Advanced Packaging Lu Tsan-Feng Conceptualization, Investigation, Writing – original draft 1 Lee Ping-Yang Methodology, Investigation, Data curation 1 Wu YewChung Sermon Methodology, Formal analysis, Writing – review & editing, Supervision 1 * Klobcar Damjan Academic Editor 1 Srirangam Prakash Academic Editor 1 Sharma Abhay Academic Editor 1 1
+Department of Materials Science and Engineering, National Yang Ming Chiao Tung University, Hsinchu 30010, Taiwan; s0881513.c@nycu.edu.tw (T.-F.L.); pyli922.c@nycu.edu.tw (P.-Y.L.) *
+ Correspondence: sermonwu@stanfordalumni.org ; Tel.: +886-3-5131-555; Fax: +886-3-5724-727
+ 9 5 2024 17 10 2236 2236 25 5 2024 © 2024 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ ). Abstract
+ The thermal expansion behavior of Cu plays a critical role in the bonding mechanism of Cu/SiO 2 hybrid joints. In this study, artificial voids, which were observed to evolve using a focused ion beam, were introduced at the bonded interfaces to investigate the influence of compressive stress on bonding quality and mechanisms at elevated temperatures of 250 °C and 300 °C. The evolution of interfacial voids serves as a key indicator for assessing bonding quality. We quantified the bonding fraction and void fraction to characterize the bonding interface and found a notable increase in the bonding fraction and a corresponding decrease in the void fraction with increasing compressive stress levels. This is primarily attributed to the Cu film exhibiting greater creep/elastic deformation under higher compressive stress conditions. Furthermore, these experimental findings are supported by the surface diffusion creep model. Therefore, our study confirms that compressive stress affects the Cu–Cu bonding interface, emphasizing the need to consider the depth of Cu joints during process design.
+ Keywords: hybrid bonding, Cu–Cu direct bonding, surface creep, elastic deformation, void morphology, compressive stress
+
+ status released display-pdf yes is-olf no is-manuscript no is-preprint no is-journal-matter no is-scanned no is-retracted no Received 2024 Apr 5; Revised 2024 May 6; Accepted 2024 May 7; Collection date 2024 May.
+
+ 1. Introduction
+ Improving electronic chip performance is crucial, and heterogeneous integration stands out as a promising approach. Three-dimensional integrated circuit (3D IC) interconnection has emerged as an advanced packaging technology and has been extensively researched [ 1 , 2 , 3 , 4 , 5 ]. In the past, solder joints have been extensively employed as the primary interconnection method in 3D ICs [ 6 ]. In order to accommodate a greater number of input and output connections, it became necessary to decrease the size and spacing of the solder bumps. However, issues such as side wetting and bridge failure were encountered as the solder joints were scaled down [ 7 , 8 ]. These problems were overcome by hybrid bonding technology, which not only provides ultra-small joints and ultra-fine pitch, achieving a high number of inputs/outputs (I/Os) [ 9 , 10 , 11 ], but also has almost no thickness limitation [ 12 , 13 ]. This technology can significantly reduce the overall thickness in future 3D packaging, enabling the stacking of a large number of chips.
+ In hybrid bonding, the Cu surface undergoes chemical mechanical polishing (CMP), leading to the dishing effect, which is characterized by Cu dishing and SiO 2 erosion during the over-polishing step [ 14 , 15 ]. The recess of Cu pads, which is typically a few nanometers [ 16 ], should be smaller than their expansions to ensure proper contact during annealing. This allows for oxide–oxide bonding to take place at room temperature before raising the temperature to approximately 250–300 °C for Cu–Cu bonding [ 17 , 18 , 19 , 20 ]. The requirement to elevate the temperature is attributed to the higher coefficient of thermal expansion (CTE) of Cu compared to the surrounding SiO 2 [ 21 ]. At elevated temperatures, the Cu pad protrudes, establishing contact with the Cu pad on the opposite side, thus forming a permanent interconnection.
+ Achieving high-quality bonding requires two crucial prerequisites: precise CMP of Cu recess and sufficient expansion of Cu pads at bonding temperatures. It is essential for the recess of Cu pads to be smaller than their expansions to guarantee proper contact during annealing. Some numerical studies have shown that the expansion of Cu decreases as the dimensions of Cu pads are reduced. This may result in different compressive stress levels during Cu–Cu bonding.
+ In our previous studies, it was proposed that the thickness of the Cu film affects the quality of the bonding interface [ 22 ]. Additionally, the depth of copper joints has been widely suggested to affect the extent of Cu expansion [ 16 , 23 , 24 ]. However, direct confirmation of the effect of compressive stress on the bonding interface is still insufficient.
+ In this study, artificial voids were introduced at the bonded interfaces to investigate the influence of compressive stress on the bonding quality and bonding mechanisms at elevated temperatures of 250 °C and 300 °C, which are conditions widely studied in low-temperature Cu–Cu bonding. To facilitate a rapid and effective study of the Cu–Cu bonding interface, thin film structures have been widely employed in research, contributing significantly to the field of 3D ICs. Therefore, we adopted Cu thin films for our initial feasibility study. Through our research, we discovered that the magnitude of stress affects bonding quality, and considering the depth of Cu joints in chip design is imperative. 
+
+ 2. Experimental
+ 2.1. Cu Film Electrodeposition
+ The experimental setup involved the use of an electroplated Cu film on a Si wafer. Initially, a 50 nm layer of Ta was sputtered onto the Si wafer as an adhesion layer, followed by the deposition of a 200 nm thick Cu seed layer. The Si substrate was immersed in an electrolyte during the electroplating process. After completing the electroplating, the surface of the Cu film was flattened using chemical mechanical polishing (CMP).
+
+ 2.2. Pretreatment of the Specimens
+ The wafers were subsequently diced into 1 × 1 cm 2 pieces. To investigate the evolution of voids, artificial voids were formed on a flat unetched surface (referred to as the F surface) and a wet-etched surface (W surface). The detailed fabrication processes of the samples can be found in reference [ 25 ].
+ Before bonding, the samples were cleaned with acetone using ultrasonic waves and then dried with a N 2 purge. After that, they were immersed in a citric acid solution, rinsed with acetone and deionized water, and dried again with an N 2 purge.
+
+ 2.3. Characterization of the Surface Roughness and Morphology
+ Prior to bonding, Cu surface roughness was assessed by conducting atomic force microscopy (AFM, Bruker Dimension Icon Scanning Probe Microscope (ICON), Bruker, Billerica, MA, USA) measurements over a 10 × 10 µm 2 scan area. Before and after the bonding and annealing processes, the samples were subjected to grinding and polishing. Cross-sectional specimens for scanning electron microscopy (SEM) analysis were then prepared using focused ion beam (FIB, Helios NanoLab 650, FEI, Hillsboro, OR, USA) techniques, facilitating detailed observation and characterization of the voids and interfaces in the samples. The cross-sectional SEM images of the surfaces are shown in Figure 1 , revealing that the F surface appeared very flat, while the W surface exhibited protrusion tips and concave dishes. The samples were then bonded together at room temperature. A schematic illustration of the bonded interface, based on the cross-sectional SEM images of the W and F surfaces, is depicted in Figure 2 .
+ Figure 1
+ Cross-sectional SEM images of the ( a ) W surface and ( b ) F surface.
+
+ Figure 2
+ A schematic illustration of the bonded interface, based on the cross-sectional SEM images of the W and F surfaces.
+
+ 
+ 2.4. Bonding Process
+ The samples were stacked in a fixture specifically designed for differential thermal expansion, comprising a combination of stainless steel and aluminum. This fixture was an enhanced version derived from prior research [ 25 ]. In the modified fixture, diverse stainless steel rods were utilized, namely M3 (with a major diameter of 3 mm), M4 (4 mm), and M5 (5 mm), enabling the adjustment of compressive stress levels; corresponding bonded samples were designated as M3, M4, and M5, respectively.
+ Initially, a minimal compressive load was applied to the sample stack at room temperature. As the temperature during processing escalated, the compressive stress on the sample stack intensified due to the disparate thermal expansion coefficients of the various materials. The resulting stresses were calculated and are presented in Table 1 .
+ Table 1
+ The calculated compressive stresses at 250 °C and 300 °C.
+
+ 
+ M3 M4 M5 
+ 250 °C
+ 29.17 MPa
+ 41.77 MPa
+ 53.64 MPa
+
+ 300 °C
+ 35.65 MPa
+ 51.06 MPa
+ 65.56 MPa
+
+ However, it is important to note that the actual stress experienced by the sample could not be accurately determined due to the occurrence of creep deformation in the Cu films at elevated temperatures. Further details regarding the deformation will be discussed in depth in the section dedicated to Cu bonding mechanism.
+ Artificial voids were formed at the bonded interfaces by bonding the samples for 0.5 h at 250 °C (referred to as B250t0) and 300 °C (B300t0). The bonding process took place in a vacuum environment with a pressure of 10 −3 torr. To observe the evolution of the voids, subsequent vacuum annealing was performed at the same bonding temperature for an additional 1 h, resulting in samples denoted as B250t1 and B300t1.
+
+
+ 3. Results and Discussion
+ The surface roughness of the Cu samples was assessed using atomic force microscopy (AFM). The root mean square (RMS) value for the F surface was determined to be 4.48 nm, while for the W surface, the RMS value measured 19.90 nm, as shown in Figure 3 . After the wet-etching process, the W surface exhibited increased roughness, with a notable rise in the RMS value.
+ Figure 3
+ AFM topography images of the ( a ) F surface and ( b ) W surface.
+
+ Figure 4 presents low-magnification, cross-sectional images of B250t0, providing an insight into the morphologies of the voids by employing bonding fraction (BF), void fraction (VF), and void height (VH) measurements. To provide a closer examination, select sections from these images have been magnified and presented in Figure 5 .
+ Figure 4
+ Low-magnification, cross-sectional SEM images of samples bonded at 250 °C for 0.5 h (B250t0): ( a ) M3B250t0, ( b ) M4B250t0, and ( c ) M5B250t0. The images reveal a notable increase in bonding fraction with the compressive stress. Note: The dashed arrows represent the interfacial length in ( a ). The dashed area represents the calculation range of VF in ( b ). The line represents the value of VH in ( c ).
+
+ Figure 5
+ High-magnification, cross-sectional SEM images of samples bonded at 250 °C (B250): ( a ) M3B250t0, ( b ) M4B250t0, ( c ) M5B250t0, ( d ) M3B250t1, ( e ) M4B250t1, and ( f ) M5B250t1. The high-pressure conditions of the M5B250t1 bonding resulted in a significant increase in bonding fraction, followed by the closure of interfacial voids by diffusion flow, forming rounded necks and creating a lenticular shape. Note: The characteristic description of void morphology is shown in ( a , f ).
+
+ BF is determined by assessing the ratio of the projected bonded/contact regions to the “interfacial length” (15 µm), as shown in Figure 4 a. Void fraction (VF) is determined by comparing the void areas to the areas surrounding the interface (0.3 × 15 µm 2 ), as illustrated in Figure 4 b. VH represents the vertical extent of the voids, as depicted in Figure 4 c.
+ Table 2 presents the measured values of BF, VF, and VH for the bonded interfaces of samples bonded at 250 °C (B250). It reveals a notable increase in BF with the compressive stress. The BF of M5B250t0 ( B F M 5 B 250 t 0 ) was 66.91%, which was higher than B F M 4 B 250 t 0 (43.55%) and B F M 3 B 250 t 0 (25.12%). Similarly, B F M 5 B 250 t 1 was 87.88%, which was greater than B F M 4 B 250 t 1 (63.82%) and B F M 3 B 250 t 1 (50.63%). The increase in BF can primarily be attributed to the greater creep/elastic deformation of the Cu film, which was directly influenced by the increasing compressive stress.
+ Table 2
+ The measured bonding fraction (BF), void fraction (VF), and void height (VH) of samples bonded at 250 °C (B250).
+
+ 
+ M3B250t0 M4B250t0 M5B250t0 M3B250t1 M4B250t1 M5B250t1 
+ BF (%)
+ 25.12
+ 43.55
+ 66.91
+ 50.63
+ 63.82
+ 87.77
+
+ VF (%)
+ 5.53
+ 4.57
+ 1.99
+ 4.17
+ 2.89
+ 1.54
+
+ VH (nm)
+ 25.4–95.2
+ 22.2–66.6
+ 41.2–63.5
+ 44.4–88.8
+ 24.4–57.5
+ 44.4–158.6
+
+ Two mechanisms, diffusion and deformation by yielding or creep, have been utilized to describe the morphologies of voids in Cu bonding [ 26 ]. The related deformed morphologies have been simplified as voids closed by diffusion flow to have rounded necks, and voids closed by deformation to have sharp necks, as shown in Figure 5 a.
+ In our previous studies, we conducted extensive investigations on these two mechanisms, specifically focusing on the morphologies of void surfaces [ 25 , 27 , 28 ]. The creep deformation mechanism is primarily driven by a high stress concentration and stress gradient, while the diffusion mechanism is influenced by a reduction in surface free energy.
+ In the case of creep deformation, Cu atoms diffuse from the high compressive stress regions (around contact areas) towards stress-free and tensile stress regions (such as the neck, dish, and flat regions) in order to relieve stress [ 25 , 27 , 28 ]. Consequently, the deformation mechanism leads to an increase in BF and a decrease in VH. Further analysis is provided below:
+ In a relevant study by Juang et al. [ 29 ] on bonding in (111)-oriented nanotwinned Cu, a diffusion creep mechanism was employed. They assumed an average distance, l , between the center of a contacted/bonded region and an uncontacted/void region, which allowed them to determine the creep rate.
+ In this study, a similar approach has been adopted to investigate the influence of compressive stress on the Cu bonding quality and bonding mechanism. Figure 6 illustrates the assumption made for the analysis and calculation simplification, where the void shape is assumed to be spherical with an average radius of rl (where r < 1). Based on this assumption, the bonding fraction ( BF ) can be estimated as
+
+ (1)
+ B F = 2 l − 2 r l 2 l = 1 − r . Figure 6
+ ( a ) Schematic diagram of the cross-section of part of the bonding interface. ( b ) Top view of part of the bonding interface.
+
+ The elastic strain, ε , can be calculated using the formula
+
+ (2)
+ ε = σ Y = Δ h h 
+where σ represents the uniform compressive stress, Y is the Young’s modulus of Cu, Δ h represents the change in thin film thickness under compression, and h represents the total thickness of the Cu film (1.6 μm).
+ According to Table 1 , at 250 °C, the calculated compressive stress of M5 ( σ M 5 ) was 53.64 MPa, which was greater than σ M 4 (41.77 MPa) and σ M 3 (29.17 MPa). As a result, Δ h M 5 would be greater than Δ h M 4 and Δ h M 3 due to the higher compressive stress level.
+ In order to examine the impact of compressive stress on the bonding fraction (BF), two volumes are considered: the strained volume ( V s t r a i n e d ) and the reduced void volume ( ∆ V v o i d ). The objective of creep deformation is to relocate all the atoms within the strained volume ( V s t r a i n e d ) from the bonded region to the void region [ 29 ]. As shown in Figure 6 , the strained volume can be approximated as
+
+ (3)
+ V s t r a i n e d = A Δ h 
+where A represents the contacted area given by
+
+ (4)
+ A = [ l 2 − ( r l ) 2 ] π . Thus, the strained volume can be expressed as
+
+ (5)
+ V s t r a i n e d = [ 1 − r 2 ] π l 2 Δ h . Additionally, the reduced void volume ( ∆ V v o i d ) can be determined by considering the change in void radius resulting from creep deformation. It can be calculated using the formula
+
+ (6)
+ ∆ V v o i d = 4 π l r 3 − l r ′ 3 3 
+where l r ′ represents the new void radius after the creep deformation takes place.
+ When we equate the two expressions of volume, we obtain
+
+ (7)
+ 1 − r 2 π l 2 Δ h = 4 π l r 3 − l r ′ 3 3 (8)
+ ( r ′ ) 3 = r 3 − 3 1 − r 2 Δ h 4 l . This calculation suggests that as Δ h increases, r ′ decreases. Since Δ h M 5 was greater than Δ h M 4 and Δ h M 3 , r M 5 ′ was smaller than r M 4 ′ and r M 3 ′ . As mentioned earlier, BF is calculated as 1 − 
+ r ′ , which means that BF increases as r ′ decreases. Consequently, B F M 5 was greater than B F M 4 and B F M 3 .
+ It can be concluded that the same trend applies to samples bonded at 300 °C, as seen in Table 3 and Figure 7 . The BF of M5B300t0 ( B F M 5 B 300 t 0 ) was 71.84%, which was higher than B F M 4 B 300 t 0 (68.43%) and B F M 3 B 300 t 0 (60.9%). Similarly, B F M 5 B 300 t 1 was 94.16%, surpassing both B F M 4 B 300 t 1 (88.81%) and B F M 3 B 300 t 1 (88.51%).
+ Table 3
+ The measured bonding fraction (BF), void fraction (VF), and void height (VH) of samples bonded at 300 °C (B300).
+
+ 
+ M3B300t0 M4B300t0 M5B300t0 M3B300t1 M4B300t1 M5B300t1 
+ BF (%)
+ 60.9
+ 68.43
+ 71.84
+ 88.51
+ 88.81
+ 94.16
+
+ VF (%)
+ 3.16
+ 2.97
+ 1.61
+ 1.85
+ 1.84
+ 1.09
+
+ VH (nm)
+ 50.8–114.2
+ 34.9–60.3
+ 28.6–47.6
+ 82.5–209.4
+ 120.6–222.1
+ 63.5–209.4
+
+ Figure 7
+ Cross-sectional SEM images of samples bonded at 300 °C (B300): ( a ) M3B300t0, ( b ) M4B300t0, ( c ) M5B300t0, ( d ) M3B300t1, ( e ) M4B300t1, and ( f ) M5B300t1. Under high-pressure bonding conditions, the void height (VH) decreases as the bonding fraction (BF) increases, leading to a decrease in the influence of creep deformation, and the dominant mechanism transitions to diffusion, which results in the formation of lenticular shapes.
+
+ Table 2 also indicates that the VF decreased as the compressive stress increased. For instance, the VF of the M5B250t0 sample ( V F M 5 B 250 t 0 ) was 1.99%, which was lower than V F M 4 B 250 t 0 (4.57%) and V F M 3 B 250 t 0 (5.53%). Similarly, V F M 5 B 250 t 1 was 1.54%, which was lower than V F M 4 B 250 t 1 (2.89%) and V F M 3 B 250 t 1 (4.17%). This observation remains valid for samples bonded at 300 °C (B300), as evidenced by the data presented in Table 3 . The decrease in VF can be primarily explained by the corresponding increase in both creep deformation and BF as the compressive stress increases. Further analysis is provided below.
+ As mentioned earlier, the void fraction ( VF ) was determined by calculating the ratio of the void areas to the areas surrounding the interface. According to Figure 6 , the VF estimation is adjusted using the equation
+
+ (9)
+ V F = π l r ′ 2 2 l H 
+where H = 0.3 µm represents the height of the areas surrounding the interface, as illustrated in Figure 4 b. It can be observed that VF increases as ( r ′ ) 2 increases, which in turn happens when Δ h decreases. In other words, VF increases as the compressive stress decreases.
+ The changes in VH with varying compressive stress were influenced by the bonding mechanism and the bonding fraction (BF). Figure 5 a–c display the morphologies of void necks in the B250t0 samples, exhibiting a relatively sharp shape. This observation suggests that the primary bonding mechanism in the B250t0 samples was creep deformation. As shown in Table 2 , the VF of the M5B250t0 sample ( V H M 5 B 250 t 0 ) was 41.2–63.5 nm, which was lower than V H M 4 B 250 t 0 (22.2–66.6 nm) and V H M 3 B 250 t 0 (25.4–95.2 nm). The observed findings suggest a correlation between a decrease in void height (VH) and an increase in compressive stress. This relationship can be attributed to the phenomenon of creep deformation, where Cu atoms diffuse from the contact areas towards the neck, dish, and flat regions in order to alleviate stress [ 25 , 27 , 28 ]. As a result, this deformation mechanism ultimately leads to a decrease in VH. Further analysis is provided below.
+ Referring to Figure 6 , the estimation of VH is adjusted using the equation
+
+ (10)
+ V H = 2 l r ′ 
+where l r ′ represents the new void radius. As mentioned earlier, r M 5 ′ was smaller than r M 4 ′ and r M 3 ′ ; therefore, V H M 5 B 250 t 0 was smaller than V H M 4 B 250 t 0 and V H M 3 B 250 t 0 .
+ This observation holds true for V H M 3 B 250 t 1 and V H M 4 B 250 t 1 as well. The bonding mechanism in these two cases was primarily governed by deformation. As indicated by the data presented in Table 2 , V H M 3 B 250 t 1 was 44.4–88.8 nm, which was higher than V H M 4 B 250 t 1 (24.4–57.5 nm). However, V H M 5 B 250 t 1 (44.4–158.6 nm) was higher than V H M 4 B 250 t 1 and V H M 3 B 250 t 1 . This can be attributed to a change in the bonding mechanism to diffusion, as evidenced by the rounded neck and lenticular shape of M5B250t1 voids depicted in Figure 5 f.
+ As mentioned earlier, the diffusion mechanism occurs through a reduction in surface free energy. As depicted in Figure 2 , the morphologies of void surfaces are associated with four types of free energies: free energy at the protrusion tip ( G +tip ), free energy at the flat surface ( G flat ), free energy at the concave dishing ( G -dish ), and free energy at the void neck ( G -neck ). The diffusion of Cu atoms from protrusion tips to dishing regions and void necks leads to a reduction in free energy, ultimately resulting in an increase in VH [ 27 ].
+ Furthermore, as Cu atoms diffuse from the flat surface (F surface) towards void necks, certain F surfaces experience a change in their radius of curvature ( R flat ) from infinite to negative or faceted, thus forming lenticular and faceted voids, as shown in Figure 5 f. These observations align with the findings of Gondcharton et al. [ 30 ], who conducted a study on Cu–Cu bonded structures. This diffusion process occurring at the “F surface” also contributes to the observed increase in VH.
+ This transition of the dominant bonding mechanism can be attributed to the increase in bonding fraction (BF). This change can be understood by considering the atomic creep flux, as elucidated by Juang et al. [ 29 ] in their study on the bonding of nanotwinned Cu. The flux can be represented by the equation [ 31 ]
+
+ (11)
+ J = D σ c o n t a c t k T l 
+where J is the creep flux, D is the diffusivity of Cu, σ c o n t a c t is the actual stress at the contact area, k is Boltzmann’s constant, T is the temperature, and l represents the average distance between the center of a bonded region and a void region (as illustrated in Figure 6 ).
+ The stress at the contacted area can be estimated as
+
+ (12)
+ σ c o n t a c t ≈ C σ B F 
+where C is a proportionality constant and σ is the uniform compressive stress, as mentioned earlier. This relationship indicates that as the bonding fraction ( BF ) increases, the actual stress at the contacted area ( σ c o n t a c t ) decreases. This implies that the influence of creep deformation decreases with an increase in BF. When the bonding fraction is high, the contribution of creep deformation to the overall bonding mechanism diminishes, and the dominant mechanism transitions to diffusion. As mentioned earlier, B F M 5 B 250 t 1 was 87.77%, which was greater than B F M 4 B 250 t 1 (63.82%) and B F M 3 B 250 t 1 (50.63%).
+ This conclusion applies equally to both the B300t0 and B300t1 groups of specimens. Regardless of the specific group, as the bonding fraction (BF) increases, the influence of creep deformation gradually weakens, and the diffusion mechanism becomes the dominant bonding mechanism. The observations from Table 3 and Figure 7 support the notion that in B300t0 specimens, the dominant bonding mechanism is deformation, while in B300t1 specimens, diffusion becomes the dominant mechanism.
+
+ 4. Conclusions
+ Artificial voids were introduced at the bonded interfaces to investigate the influence of compressive stress on the bonding quality and bonding mechanisms at elevated temperatures of 250 °C and 300 °C. We compared three different levels of compressive stress in Cu–Cu bonding and found that as the compressive stress increases, there is an increase in the bonding fraction (BF) and a decrease in the void fraction (VF). This result indicates that high compressive stress is beneficial for promoting interface healing and enhancing bonding quality. Furthermore, these experimental findings are supported by the surface diffusion creep model.
+ This study offers direct evidence of the correlation between compressive stress and the quality of the bonding interface. Ensuring high-quality Cu–Cu bonding interfaces requires careful consideration of the compressive stress during the bonding process. In the future, we aim to validate these findings further through hybrid bonding, which we anticipate will offer significant advantages for 3D package applications.
+
+ Acknowledgments
+ Technical support from the Semiconductor Research Institute (TSRI) and the Nanoscience Technology Center and Nano Facility Center of the National Chiao Tung University is also acknowledged. Technical support from the Industrial Technology Research Institute (ITRI), the Semiconductor Research Institute (TSRI), and the Nanoscience Technology Center and Nano Facility Center of the National Yang Ming Chiao Tung University is also acknowledged. The authors would like to thank Chih Chen for valuable discussions.
+
+ Author Contributions
+ Conceptualization, Y.S.W. and T.-F.L.; Methodology, Y.S.W. and P.-Y.L.; Formal analysis, Y.S.W. and P.-Y.L.; Investigation, T.-F.L. and P.-Y.L.; Data curation, P.-Y.L.; Writing—original draft, T.-F.L.; Writing—review & editing, Y.S.W.; Supervision, Y.S.W. All authors have read and agreed to the published version of the manuscript.
+
+ Institutional Review Board Statement
+ Not applicable.
+
+ Informed Consent Statement
+ Not applicable.
+
+ Data Availability Statement
+ Data are contained within the article.
+
+ Conflicts of Interest
+ The authors declare no conflicts of interest.
+
+ Funding Statement
+ This research was funded by (1) the National Science and Technology Council, Taiwan, under grant nos. NSTC 111-2634-F-A49-008-, NSTC 112-2221-E-A49-036-, and NSTC 111-2221-E-A49-114-, and (2) the “Advanced Semiconductor Technology Research Center” from The Featured Areas Research Center Program within the framework of the Higher Education Sprout Project by the Ministry of Education (MOE) in Taiwan.
+
+ Footnotes
+ Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+ 
+ References
+ 1.
+ Koester S.J., Young A.M., Yu R., Purushothaman S., Chen K.-N., La Tulipe D.C., Rana N., Shi L., Wordeman M.R., Sprogis E.J. Wafer-level 3D integration technology. IBM J. Res. Dev. 2008;52:583–597. doi: 10.1147/JRD.2008.5388565. 
+ 2.
+ Liu D., Park S. Three-dimensional and 2.5 dimensional interconnection technology: State of the art. J. Electron. Packag. 2014;136:014001. doi: 10.1115/1.4026615. 
+ 3.
+ Chen C., Yu D., Chen K.-N. Vertical interconnects of microbumps in 3D integration. MRS Bull. 2015;40:257–263. doi: 10.1557/mrs.2015.29. 
+ 4.
+ Cho D.H., Seo S.M., Kim J.B., Rajendran S.H., Jung J.P. A review on the fabrication and reliability of three-dimensional integration technologies for microelectronic packaging: Through-Si-via and solder bumping process. Metals. 2021;11:1664. doi: 10.3390/met11101664. 
+ 5.
+ Shie K.-C., Hsu P.-N., Li Y.-J., Tran D.-P., Chen C. Failure Mechanisms of Cu–Cu bumps under thermal cycling. Materials. 2021;14:5522. doi: 10.3390/ma14195522. 
+ 6.
+ Tu K.-N., Hsiao H.-Y., Chen C. Transition from flip chip solder joint to 3D IC microbump: Its effect on microstructure anisotropy. Microelectron. Reliab. 2013;53:2–6. doi: 10.1016/j.microrel.2012.07.029. 
+ 7.
+ Liang Y., Chen C., Tu K.-N. Side wall wetting induced void formation due to small solder volume in microbumps of Ni/SnAg/Ni upon reflow. ECS Solid State Lett. 2012;1:P60. doi: 10.1149/2.002204ssl. 
+ 8.
+ Oi K., Otake S., Shimizu N., Watanabe S., Kunimoto Y., Kurihara T., Koyama T., Tanaka M., Aryasomayajula L., Kutlu Z. Development of new 2.5 D package with novel integrated organic interposer substrate with ultra-fine wiring and high density bumps; Proceedings of the 2014 IEEE 64th Electronic components and technology conference (ECTC); Lake Buena Vista, FL, USA. 27–30 May 2014; pp. 348–353. 
+ 9.
+ Wang L., Fountain G., Lee B., Gao G., Uzoh C., McGrath S., Enquist P., Arkalgud S., Mirkarimi L. Direct Bond Interconnect (DBI®) for fine-pitch bonding in 3D and 2.5 D integrated circuits; Proceedings of the 2017 Pan Pacific Microelectronics Symposium (Pan Pacific); Kauai, HI, USA. 6–9 February 2017; pp. 1–6. 
+ 10.
+ Mudrick J.P., Sierra-Suarez J.A., Jordan M.B., Friedmann T.A., Jarecki R., Henry M.D. Sub-10 µm Pitch Hybrid Direct Bond Interconnect Development for Die-to-Die Hybridization; Proceedings of the 2019 IEEE 69th Electronic Components and Technology Conference (ECTC); Las Vegas, NV, USA. 28–31 May 2019; pp. 648–654. 
+ 11.
+ Kim S.-W., Fodor F., Heylen N., Iacovo S., De Vos J., Miller A., Beyer G., Beyne E. Novel Cu/SiCN surface topography control for 1 μm pitch hybrid wafer-to-wafer bonding; Proceedings of the 2020 IEEE 70th Electronic Components and Technology Conference (ECTC); Orlando, FL, USA. 3–30 June 2020; pp. 216–222. 
+ 12.
+ Utsumi J., Ide K., Ichiyanagi Y. Cu/SiO2 hybrid bonding obtained by surface-activated bonding method at room temperature using Si ultrathin films. Micro Nano Eng. 2019;2:1–6. doi: 10.1016/j.mne.2018.11.004. 
+ 13.
+ Phommahaxay A., Suhard S., Bex P., Iacovo S., Slabbekoorn J., Inoue F., Peng L., Kennes K., Sleeckx E., Beyer G. Enabling ultra-thin die to wafer hybrid bonding for future heterogeneous integrated systems; Proceedings of the 2019 IEEE 69th Electronic Components and Technology Conference (ECTC); Las Vegas, NV, USA. 28–31 May 2019; pp. 607–613. 
+ 14.
+ Zhengfeng W., Ling Y., Huan N.S., Luan T.P. Chemical Mechanical Planarization. Singapore Institute of Manufacturing Technology; Singapore: 2001. 
+ 15.
+ Shauly E.N., Rosenthal S. Coverage layout design rules and insertion utilities for CMP-related processes. J. Low Power Electron. Appl. 2020;11:2. doi: 10.3390/jlpea11010002. 
+ 16.
+ Kim M.-K., Park S., Jang A., Lee H., Baek S., Lee C., Kim I., Park J., Jee Y., Kang U.-B. Characterization of die-to-wafer hybrid bonding using heterogeneous dielectrics; Proceedings of the 2022 IEEE 72nd Electronic Components and Technology Conference (ECTC); San Diego, CA, USA. 31 May–3 June 2022; pp. 335–339. 
+ 17.
+ Hu H.-W., Chen K.-N. Development of low temperature CuCu bonding and hybrid bonding for three-dimensional integrated circuits (3D IC) Microelectron. Reliab. 2021;127:114412. doi: 10.1016/j.microrel.2021.114412. 
+ 18.
+ Ong J.-J., Chiu W.-L., Lee O.-H., Chiang C.-W., Chang H.-H., Wang C.-H., Shie K.-C., Yang S.-C., Tran D.-P., Tu K.-N. Low-temperature Cu/SiO2 hybrid bonding with low contact resistance using (111)-oriented Cu surfaces. Materials. 2022;15:1888. doi: 10.3390/ma15051888. 
+ 19.
+ Gao G., Mirkarimi L., Workman T., Fountain G., Theil J., Guevara G., Liu P., Lee B., Mrozek P., Huynh M. Low temperature Cu interconnect with chip to wafer hybrid bonding; Proceedings of the 2019 IEEE 69th Electronic Components and Technology Conference (ECTC); Las Vegas, NV, USA. 28–31 May 2019; pp. 628–635. 
+ 20.
+ Gambino J., Winzenread R., Thomas K., Muller R., Truong H., Defibaugh D., Price D., Goshima K., Hirano T., Watanabe Y. Reliability of hybrid bond interconnects; Proceedings of the 2017 IEEE International Interconnect Technology Conference (IITC); Hsinchu, Taiwan. 16–18 May 2017; pp. 1–3. 
+ 21.
+ Lin H.-E., Tran D.-P., Chiu W.-L., Chang H.-H., Chen C. In-situ measurement of thermal expansion in Cu/SiO2 hybrid structures using atomic force microscopy at elevated temperatures. Appl. Surf. Sci. 2024;662:160103. doi: 10.1016/j.apsusc.2024.160103. 
+ 22.
+ Lu T.-F., Hsu K.-N., Hsu C.-C., Hsu C.-Y., Wu Y.S. Effect of Cu Film Thickness on Cu Bonding Quality and Bonding Mechanism. Materials. 2024;17:2150. doi: 10.3390/ma17092150. 
+ 23.
+ Kim Y., Kim J., Kim H., Lee H., Kim D., Seo S.-K., Jo C., Kim D.-W. Die to Wafer Hybrid Cu Bonding for Fine Pitch 3D-IC Applications; Proceedings of the 2023 IEEE 73rd Electronic Components and Technology Conference (ECTC); Orlando, FL, USA. 30 May–2 June 2023; pp. 1043–1047. 
+ 24.
+ Ji L., Che F.X., Ji H.M., Li H.Y., Kawano M. Bonding integrity enhancement in wafer to wafer fine pitch hybrid bonding by advanced numerical modelling; Proceedings of the 2020 IEEE 70th Electronic Components and Technology Conference (ECTC); Orlando, FL, USA. 3–30 June 2020; pp. 568–575. 
+ 25.
+ Wu Y.S., Lai T.-Y., Li M., Lu T.-F., Wang Y.H., Tseng T.Y. Bonding mechanisms of roughened nanotwinned-Cu surface at temperature as low as 120 °C. ECS J. Solid State Sci. Technol. 2020;9:124005. doi: 10.1149/2162-8777/abd261. 
+ 26.
+ Derby B., Wallach E. Diffusion bonds in copper. J. Mater. Sci. 1984;19:3140–3148. doi: 10.1007/BF00549797. 
+ 27.
+ Wu Y.S., Li M., Lai T.-Y., Lu T.-F., Wang Y.H., Chang J.-W. Effect of Compressive Stress on Evolution and Healing Kinetics of Artificial Voids in Highly (111)-Oriented Cu-Cu Wafer Bonding at 300 °C. ECS J. Solid State Sci. Technol. 2021;10:044004. doi: 10.1149/2162-8777/abf16b. 
+ 28.
+ Lu T.-F., Lai T.-Y., Chu Y.Y., Wu Y.S. Effect of nanotwin boundary on the Cu–Cu bonding. ECS J. Solid State Sci. Technol. 2021;10:074001. doi: 10.1149/2162-8777/ac0e14. 
+ 29.
+ Juang J.-Y., Lu C.-L., Li Y.-J., Hsu P.-N., Tsou N.-T., Tu K.-N., Chen C. A solid state process to obtain high mechanical strength in Cu-to-Cu joints by surface creep on (111)-oriented nanotwins Cu. J. Mater. Res. Technol. 2021;14:719–730. doi: 10.1016/j.jmrt.2021.06.099. 
+ 30.
+ Gondcharton P., Imbert B., Benaissa L., Verdier M. Voiding phenomena in copper-copper bonded structures: Role of creep. ECS J. Solid State Sci. Technol. 2015;4:P77. doi: 10.1149/2.0081503jss. 
+ 31.
+ Tu K.-N. Electronic Thin-Film Reliability. Cambridge University Press; Cambridge, UK: 2010. 
+ 
+
+ Associated Data
+ Data Availability Statement
+ Data are contained within the article.
+
+
+ 

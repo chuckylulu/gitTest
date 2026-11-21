@@ -1,0 +1,973 @@
+
+
+Navigating the Metrology Maze For GAA FETs
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                Navigating the Metrology Maze For GAA FETs                                                    
+
+Test, Measurement & Analytics
+
+Navigating the Metrology Maze For GAA FETs
+
+Traditional measurement techniques are no longer sufficient. Here’s what comes next.
+
+								August 8th, 2023 - 
+
+								By: 
+Gregory Haley
+
+The chip industry is pushing the boundaries of innovation with the evolution of finFETs to gate-all-around (GAA) nanosheet transistors at the 3nm node and beyond, but it also is adding significant new metrology challenges.
+
+GAA
+ represents a significant advancement in transistor architecture, where the gate material fully encompasses the nanosheet channel. This approach allows for the vertical stacking of planar channels, leading to a notable increase in the effective channel width. By stacking these planar channels vertically, the effective channel width is increased, resulting in increased device drive current capability with less leakage, reduced power consumption, and enhanced performance.
+
+This planar GAA structure also allows for modifiable channel widths, which both increases the complexity of transistor designs and the difficulty of achieving optimal power-performance tradeoffs. And because of the unique structure of GAA transistors, with their high-aspect ratio architecture and planar stacked nanosheets, it adds some new problems that still need to be solved.
+
+As Philippe Leray, department director for advanced patterning at imec points out, a particular 
+metrology
+ need for GAA structures is “the ability to see through an optically opaque stack to measure buried dimensions and detect buried defects.”
+
+The complex 3D architectures, high aspect-ratio structures, and the need for angstrom-level precision pose difficulties for traditional measurement techniques. In fact, each of those technologies has limitations today. And while recent advancements in established technologies coupled with new metrology innovations are starting to overcome those barriers, the solution may be a combination of different tools and methodologies, along with some new innovations.
+
+Nanosheet formation metrology
+
+The fabrication process of 
+nanosheet
+ structures involves multiple intricate steps, each with specific metrology needs. For example, during nanosheet formation on pre-patterned wafers, alternating layers of crystalline silicon (Si) and silicon-germanium (SiGe) sheets are epitaxially grown to thicknesses of approximately 8nm to 10nm each. Two of the critical measurements at this stage are the individual layer thicknesses and the germanium (Ge) concentrations in each SiGe sheet. Uniform thickness, material composition, and superlattice quality are all vital for control over channel dimensions and electrical characteristics of the device, and any variation can lead to poor device performance and significant yield loss.
+
+Fig. 1: Epitaxial growth of Si and SiGe nanosheet lattice mismatch allows for etch selectivity. Source: Semiconductor Engineering/Gregory Haley.
+
+After patterning the nanosheets, it is important to measure the sheet-specific widths accurately. Scanning transmission electron microscopy (STEM) offers atomic-level resolution, allowing researchers to directly visualize individual atomic layers in the nanosheet structure, stacking order, defects, and crystal quality. STEM also can provide information about material composition by analyzing the contrast in the STEM images or using energy-dispersive X-ray spectroscopy (EDS) in combination with STEM.
+
+But STEM isn’t perfect. Drawbacks include the requirement for specialized sample preparation, which can be time-consuming and may introduce artifacts during the process. STEM also is a destructive technique that necessitates the fabrication of ultra-thin samples, making it unsuitable for in-line, non-destructive measurements.
+
+X-ray diffraction
+ (HRXRD) has limitations, as well. It can accurately determine the composition and thickness of the nanosheets. By analyzing the X-ray diffraction patterns, researchers can infer the atomic arrangement and lattice strain, aiding in optimizing the nanosheet’s electronic properties. The primary challenge for HRXRD is acquisition time, which can take hours per wafer.
+
+In-line Raman spectroscopy
+, meanwhile, offers fast and accurate measurement of the Ge composition for HVM. But sheet thickness measurements are difficult to obtain with this technique.
+
+And 
+scatterometry
+, also known as 
+optical critical dimension
+ (OCD) metrology — a non-destructive technique with the necessary speed for in-line HVM — uses a broadband light reflected off the surface of the nanosheet to provide information about Si channel thickness and the Ge content of the SiGe by measuring how the sample affects the characteristics of the reflected light as a function of wavelength.
+
+Scatterometry may offer the most promising mix of measurements to satisfy HVM metrology needs for the epitaxial layers, however, the effectiveness of scatterometry in nanosheet metrology depends on factors such as the thickness of the layers, surface roughness, and accurate modeling.
+
+Patterning and critical dimension metrology
+
+Following epitaxial growth, photolithography and etching are used to define the pattern for the nanosheets that will form the channels of the GAA transistors. Polysilicon is then deposited and patterned to form a dummy gate, which helps protect the underlying channel region and align structures like the source and drain regions.
+
+Line-edge roughness
+ (LER), line-width roughness (LWR), and sidewall roughness (SWR) characterization are critical measurements at this stage of nanosheet patterning. These random variations can lead to unpredictable fluctuations in device performance, including variabilities in threshold voltages and current leakage. [1]
+
+CD-SEM
+ measurements are commonly used to characterize the frequency domains and edge characteristics of LER and LWR. However, measuring LER and LWR in nanosheet patterning is challenging due to the complex three-dimensional nature of the structures. CD-SEMs are limited to top-down measurements that limit their ability to measure height, sidewall angles, and stacked nanosheets. Tilt CD-SEMs can obtain images from multiple angles by tilting either the sample or the electron gun to get a parallax view of the nanosheet structures, but this process slows measurement speeds and can introduce sample damage due to higher incidence of electron bombardment.
+
+Selective etch metrology
+
+After patterning, a highly-selective anisotropic etch step is used to carve away a portion of the SiGe layer, exposing the nanosheet sidewalls and laterally forming an indent between the layered sheets, which is then filled by the inner spacer via chemical vapor deposition (CVD) of a conformal layer of Si
+3
+N
+4
+ or SiO
+2
+.
+
+The rate of SiGe etch is dependent on the concentration of Ge in the material, so measuring the Ge content throughout the process flow is important. Higher Ge content makes selective etching easier and faster to perform, with a higher likelihood of completely removing the SiGe material without damaging or eroding the silicon. But too much Ge can lead to challenges in material stability, facet formation, and strain management. It also may affect the electrical properties of the device, such as carrier mobility and threshold voltage. Therefore, careful measurements of the Ge content and etching parameters is essential.
+
+“The more germanium you have, the better selectivity you have,” said Nick Keller, director of applications development at 
+Onto Innovation
+. “But the more germanium you have, the more lattice strain you have, and if you have too much of a variation in a lattice between those two layers, then you can get different sorts of crystal graphic defects.”
+
+Precise control over the width, thickness, and alignment of spacers is crucial, as small variations can significantly impact device performance. If an indent is too shallow, it may fail to isolate the channel and source/drain connections. If it is too deep, it will reduce the effective gate length and create a barrier for the gate channel. The inner spacer must completely fill the indent to ensure the gate length after channel release.
+
+The metrology challenges include obtaining clear cross-sectional views for profile analysis, detecting small defects within complex geometries, measuring spacer thickness in narrow recesses, and performing non-destructive material composition and stress analyses.
+
+The high aspect ratio structures of the GAA transistor are difficult to measure due to their depth and narrow width, particularly when it comes to determining the thickness of the nanosheets and the spaces between them. Traditional techniques struggle with these structures due to limitations in depth of focus or issues with shadowing, which can obscure parts of the structure and lead to inaccurate measurements.
+
+According to Mary Breton, testsite layout and design manager at IBM Research, and colleagues, “The only existing in-line option to characterize the spacer width and coverage on device-like structures is a scatterometry-based model that is flexible enough to capture the possibilities for variation.” [2]
+
+Fig. 2: Critical etching steps in the nanosheet transistor process flow include dummy gate etch (b), anisotropic pillar etch (c), isotropic inner spacer etch (e), and the channel release step (g). Source: N. Loubet, IBM
+
+“High aspect ratios are not a problem for scatterometry,” says Keller. “In fact, it actually becomes better for scatterometry. When you increase your aspect ratio, you increase your effective optical thickness of these devices. With those structures, you get all these internal reflections, which are giving you more interactions and greater sensitivity.”
+
+Source/Drain Epi
+
+When the inner spacer process is complete, the source/drain (S/D) material is epitaxially grown where the nanosheet sidewalls are exposed between the gates. Proper nucleation requires connectivity with all the nanosheets in the stack, with the epi fully merged along the trench. The epi must stop above the top sheets on both sides of the trench without overfilling, or it could affect the follow-on process steps.
+
+Ideal epi growth fills the trench, connects all three sheets, and stops above the top sheet. Non-ideal growth may overfill or underfill the trench, leading to downstream processing issues or connectivity problems. Epi nucleation and growth can be particularly challenging to measure, and any shifts in the epi process that alter growth rates or behavior must be captured in metrology solutions.
+
+Techniques involving CD-SEM, scatterometry, machine learning, and AFM have been employed to characterize epi defects, localize them, measure epi height, and assess merge quality. Scatterometry, in particular, is useful for measuring epi height.
+
+The primary metrology challenge for epi growth is identifying when all the nanosheet sheets are not fully connected, either through incomplete nucleation or growth. While height monitoring may detect connectivity issues with the top sheet, the bottom sheet’s connectivity might be hidden, resulting in a void at the bottom of the trench, which can’t be observed by these metrology techniques.
+
+One potential solution for observing these undercuts and bottom sheet gaps is acoustic metrology that uses high-frequency sound waves to image structures that may be hidden from visual inspection.
+
+“It depends on the material,” says Bill Zuckerman, product marketing manager at 
+Nordson Test & Inspection
+. “Some materials absorb sound and are not a good application for acoustic measurements. But for other materials that are hardened, sound goes through them very well, and we get a lot more information from underfill materials. Sometimes we are able to see the density changes in those materials.”
+
+Nearfield Instruments has taken a hybrid approach to acoustic metrology by using AFM to capture the vibrations reflected back by the sound waves. Their technique allows them to measure differing velocities of sound waves as they move through materials to determine their shape and potentially identify undercuts and hidden voids in epi growth.
+
+“With different materials, the sound velocity is different orders, and your times of arrival are different,” says Hamed Sadeghian, CEO of Nearfield Instruments. “The amplitude and phase of the signal that comes to the surface can tell us how the underlying structures appear.”
+
+Acoustic metrology can identify defects that are very small, down to two or three nanometers. But there is a tradeoff between material penetration and resolution. The higher the frequency of sound, the finer the resolution of the image. However, as the sound frequency increases, the penetration depth decreases. “It’s a tradeoff between frequency and resolution and penetration to achieve the best results that you can,” says Nordson’s Zuckerman.
+
+Channel release etch
+
+After the epi fill, the sacrificial SiGe layers and dummy gate are fully etched away during the channel release process, leaving silicon-based nanosheet layers that make up the channels. These are left suspended by the inner spacer and epi. This step requires critical measurements to both identify when SiGe is not completely removed, and also to determine if the suspended Si sheets sag due to mechanical instability or stiction.
+
+The etch also might impact the sheet dimensions by removing too much Si in the process and impacting sheet thickness. Scatterometry is an effective measurement tool because it is sensitive to both the resulting geometry of the cavity and any remaining Ge. It is also important to monitor how the Si strain is impacted after removing the SiGe layer. Raman spectroscopy is a good solution here.
+
+Replacement metal gate
+
+When the etch is complete, a replacement metal gate is formed in these new voids by deposition of multiple thin-film materials, including high-k dielectric (HK) and metal films, within the cavities previously occupied by the SiGe sheets. This is the last step in GAA manufacturing, occurring just before the middle-of-line (MOL) and back-end processing stages.
+
+These films are conformal to the silicon (Si) sheets and other exposed surfaces, with thicknesses on the order of angstroms to single nanometers. Such fine dimensions require highly sensitive and accurate measurements to characterize the top, bottom, and sidewall thicknesses of the films. If a given film is excessively thick, it may merge in the channel and prevent another film from wrapping around each sheet, compromising the device’s functionality.
+
+Metrology solutions for the RMG process may include scatterometry for single-step measurements. However, a more robust solution can be achieved by combining scatterometry with techniques like X-ray photoelectron spectroscopy (XPS). Hybrid metrology utilizing XPS’ angstrom-level sensitivity and scatterometry’s geometric strengths has been shown to improve accuracy in characterizing conformal thin films over structures with varying aspect ratios. [3]
+
+Fig. 3: Schematic of epi growth scenarios that need to be captured by in-line metrology. Source: Semiconductor Engineering/Gregory Haley
+
+Conclusion
+
+The complex three-dimensional structures of GAA nanosheet devices create unique challenges for metrology. Traditional measurement techniques struggle to accurately capture these intricate structures. Each nanosheet device consists of multiple layers of different materials, each with its own unique properties and measurement requirements. This complexity necessitates the use of multiple metrology techniques, each with its own strengths and weaknesses, to fully characterize the device.
+
+Process variability adds another problem area. With so many variables in the fabrication process, from the deposition of the various layers to the etching of the nanosheets, there is a high degree of variability in the final device. This makes it crucial to have robust metrology solutions that work in concert to accurately measure and control this variability.
+
+The development of hybrid metrology approaches, which combine data from multiple measurement techniques, appears to be a promising solution. By leveraging the strengths of each technique, these hybrid approaches can provide a more complete and accurate characterization of nanosheet devices.
+
+References
+
+Haley, “
+Challenges Grow for CD-SEMs at 5nm and Beyond
+,” Semiconductor Engineering, April 11, 2023, Peters, “Strategies for Faster Ramps on 5nm Chips,” Semiconductor Engineering, April 12, 2022, 
+https://semiengineering.com/strategies-for-faster-yield-ramps-on-5nm-chips/
+
+Mary A. Breton, “Review of Nanosheet Metrology Opportunities for Technology Readiness,” J. Micro/Nanopatterning, Materials, and Metrology, Vol 21, Issue 2, 021206 (April 2022), 
+https://doi.org/10.1117/1.JMM.21.021206
+.
+
+A. Vaid et al., “Hybrid enabled thin film metrology using XPS and optical,” 
+Proceedings Volume 9778, Metrology, Inspection, and Process Control for Microlithography XXX;
+ 97780M (2016) 
+https://doi.org/10.1117/12.2220299
+
+ Tags:
+
+AFM
+
+anisotropic etch
+
+chemical vapor deposition
+
+CVD
+
+epitaxy
+
+GAA FETs
+
+gate-all-around FETs
+
+IBM
+
+imec
+
+in-line Raman spectroscopy
+
+LER
+
+LWR
+
+metrology
+
+nanosheets
+
+Nearfield Instruments
+
+Nordson Test & Inspection
+
+Onto Innovation
+
+optical critical dimension
+
+scanning transmission electron microscopy
+
+scatterometry
+
+SWR
+
+X-ray diffraction
+
+Gregory Haley 
+
+(all posts)
+
+							Gregory Haley is a technology editor at Semiconductor Engineering.
+
+1 comments
+
+Jerome Poussin
+
+says:
+
+July 27, 2024 at 2:39 am
+
+“Silicon-on-insulator gate-all-around device”, J.P. Colinge, M.H. Gao, A. Romano, H. Maes, and C. Claeys, Technical Digest of IEDM, P. 595, 1990
+
+Reply
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+
