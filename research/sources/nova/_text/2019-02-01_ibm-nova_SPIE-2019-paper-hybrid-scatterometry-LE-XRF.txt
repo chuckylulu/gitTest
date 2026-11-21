@@ -1,0 +1,676 @@
+       PROCEEDINGS OF SPIE
+       SPIEDigitalLibrary.org/conference-proceedings-of-spie
+
+
+
+
+                   Machine learning and hybrid
+                   metrology using scatterometry and
+                   LE-XRF to detect voids in copper
+                   lines
+
+
+
+                   Dexin Kong, Koichi Motoyama, Abraham Arceo de la
+                   peña, Huai Huang, Brock Mendoza, et al.
+
+
+
+
+                                  Dexin Kong, Koichi Motoyama, Abraham Arceo de la peña, Huai Huang,
+                                  Brock Mendoza, Mary Breton, Gangadhara Raja Muthinti, Hosadurga
+                                  Shobha, Liying Jiang, Juntao Li, James J. Demarest, John Gaudiello, Gauri
+                                  Karve, Aron Cepler, Matthew Sendelbach, Susan Emans, Paul Isbester,
+                                  Kavita Shah, Shay Wolfing, Avron Ger, "Machine learning and hybrid
+                                  metrology using scatterometry and LE-XRF to detect voids in copper lines,"
+                                  Proc. SPIE 10959, Metrology, Inspection, and Process Control for
+                                  Microlithography XXXIII, 109590A (2 July 2019); doi: 10.1117/12.2515257
+
+                                  Event: SPIE Advanced Lithography, 2019, San Jose, California, United States
+
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019 Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                     Machine learning and hybrid metrology using scatterometry and LE-XRF to detect voids in
+
+                                                                                  copper lines
+
+
+                                      a                               a                                        a                a                      a
+                     Dexin Kong          , Koichi Motoyama            , Abraham Arceo de la peña               , Huai Huang        , Brock Mendoza ,
+                                     a                                            a                            a                   a              a
+                 Mary Breton          , Gangadhara Raja Muthinti                  , Hosadurga Shobha           , Liying Jiang       , Juntao Li   , James
+                                          a                       a                      a                         b                        b
+                      J. Demarest         , John Gaudiello         , Gauri Karve          , Aron J. Cepler         , Matthew Sendelbach      , Susan
+                                                   b                        b                   b                       c              c
+                                          Emans     , Paul Isbester          , Kavita Shah          , Shay Wolfling      , Avron Ger
+                                                          a
+                                                              IBM, 257 Fuller Road, Albany, NY, 12203
+                             b
+                                 Nova Measuring Instruments, Inc., 3342 Gateway Blvd, Fremont CA 94538, USA
+                 c
+                     Nova Measuring Instruments, LTD, P.O. Box 266, Weizmann Science Park, Rehovot 76100, Israel
+
+
+
+
+                                                                                      ABSTRACT
+                Voids in copper lines are a common failure mechanism in the back end of line (BEOL) of integrated
+
+                circuits manufacturing, affecting chip yield and reliability. As subsequent process nodes continue to
+
+                shrink metal line dimensions, monitoring and control of these voids gain more and more importance
+
+                [1].    Currently, there is no quantitative in-line metrology technique that allows voids to be identified
+
+                and measured.             This work aims to develop a new method to do so, by combining scatterometry (also
+
+                referred to as Optical Critical Dimension or Optical CD) and low-energy x-ray fluorescence (LE-XRF),
+
+                as well as machine learning techniques. By combining the inputs from these tools in the form of hybrid
+
+                metrology, as well as with the incorporation of machine learning methods, we create a new metric,
+
+                referred to as       Vxo, to characterize the quantity of void. Additionally, the results are compared with in-
+                line electrical test data, as higher amounts of voids were expected to increase the measured resistivity.
+
+                This was not found to be the case, as the impact of the voids was much less of a factor than variation
+
+                in the cross-sectional area of the lines.
+
+
+
+                Keywords:          Scatterometry, machine learning, XRF, hybridized metrology, BEOL, voids
+
+
+
+
+                                                                                1. INTRODUCTION
+                A key source of yield loss in semiconductor manufacturing are voids, which are commonly found in
+
+                the back-end-of-line (BEOL) copper lines. These voids are not able to be measured quantitatively or
+
+                with in-line metrology; instead, destructive techniques such as TEM are used to look for voids after
+
+                the process is completed. CD-SEMs could be used to detect voids on the exposed copper line but it is
+
+                not used in manufacturing due to yield and reliability concern of a prolonged queue time before
+
+                capping and difficulty in observation due to electrical charging.                                      Given that the pitch of BEOL
+
+                structures is continuing to decrease at each ensuing technology node, monitoring and control of these
+
+                voids gain more and more importance [1-5] in order to maximize yield, performance, and reliability.
+
+
+
+                The goal of this work is to develop a new method to measure the amount of void inline, by combining
+
+                scatterometry (also referred to as Optical Critical Dimension or Optical CD) and low-energy x-ray
+
+                fluorescence (LE-XRF), as well as machine learning techniques.                                     Optical CD is an inline metrology
+
+                technique that is commonly used to measure structural dimensions, while XRF can obtain elemental
+
+
+
+
+                                               Metrology, Inspection, and Process Control for Microlithography XXXIII, edited by
+                                                Vladimir A. Ukraintsev, Ofer Adan, Proc. of SPIE Vol. 10959, 109590A © 2019
+                                                       SPIE · CCC code: 0277-786X/19/$18 · doi: 10.1117/12.2515257
+
+
+                                                                          Proc. of SPIE Vol. 10959 109590A-1
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                compositions.          By combining the inputs from these tools using hybrid metrology, we create a new
+
+                metric, referred to as         Vxo, which combines inputs from Optical CD and XRF to characterize the amount
+                of void.
+
+
+
+                A design-of-experiment (DOE) is set up to induce variation in the amount of voids in the copper line,
+
+                with the samples having differing amounts of additional voids, above the normal expected voids from
+
+                the process of record (POR).                  Voids are intentionally generated based on two methods:   Overly thin
+
+                copper seed layer, which can inhibit copper growth during the electrochemical plating (ECP) process,
+
+                result in sidewall voids; and overly thick liner materials, which can cause pinch-off during the copper
+
+                fill, leading to center voids.             Those processes were illustrated in Figure 1 and Figure 2 below.
+
+
+
+
+                Figure 1: Possible mechanism of sidewall voids
+
+
+
+
+                Figure 2: Possible mechanism of top voids
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-2
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                   2. EXPERIMENTAL METHODS
+
+                2.1 Scatterometry
+
+                Scatterometry is a ubiquitous ‘workhorse’ metrology tool, used for fast and non-destructive
+                measurement of geometrical and material parameters [6-9]. Figure 3 shows a schematic explaining
+                the operation of scatterometry tools. The wafers are measured in the scatterometry unit for raw spectra
+                collection. A scatterometry model is required to interpret the raw spectra. The dimensional and
+                material information can be retrieved by fitting spectra with the model. The model needs to be well
+                calibrated with the transmission electron microscope (TEM) imaging, or other reference sources, for
+                accurate measurement before installing the model on the tool. Once the model is calibrated and
+                installed, the scatterometry measurement for the specific step can be activated for in-line measurement
+                with high throughput. When working with scatterometry, the user must account for the time needed
+                to build a model and the required resources for data calibration, e.g. TEM, CDSEM. Additionally, in
+                the case of a significant process change or material change, the scatterometry model needs to be rebuilt
+                with additional calibration resources and model rebuilding time.
+
+
+
+
+                  Figure 3: Schematic of optical scatterometry measurements.
+
+
+                2.2 LE-XRF
+
+                Low energy x-ray fluorescence (LE-XRF) is an inline metrology technique used primarily for material
+                characterization [8], described in Figure 4 below. X-rays impinge on the sample, and the incident
+                energy raises electrons to an excited state before falling back to their ground state. The amount of
+                energy released as the electrons return to their ground state is characteristic to the specific element,
+                and by monitoring the amount of each specific energy in the detection range, we can “count” the
+                amount of each element in the sample.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-3
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                Figure 4: Schematic of low energy x-ray fluorescence measurements
+
+                2.3 TCR based resistivity measurement
+
+                Temperature coefficient of resistivity (TCR) [3, 10]based resistivity measurement is an offline
+                electrical test, and it is widely used to characterize resistivity of metal lines in BEOL. The line
+                resistance is measured at different temperatures, usually in the range between room temperature and
+                150C°. As described by Matthiessen’s rule, the total resistivity is constituted by phonon scattering
+                (bulk resistivity), impurity scattering, surface scattering, and grain boundary scattering. Only the bulk
+                resistivity is considered as temperature dependent, and its temperature gradient (dρ /dT) is constant,
+                also known as TCR. As a material property, TCR can be measured from bulk material or obtained
+                from a reference. The copper cross-sectional area can be obtained from equation 1 and the total
+                resistivity can be thereby calculated by equation 2.
+
+                                                                                                d
+                                                                                                    (
+                                                                                                d )
+                                                                                            A = dT                      Eq. 1
+                                                                                               ( )
+                                                                                                d
+
+                                                                                                    R*
+                                                                                         ρA A                           Eq. 2
+
+                In both equations, A is the cross-sectional area of the copper line, L is line length, ρ is total resistivity,
+                R is the messured line resistance, and T is temperature. TCR based resisitivity measurement is non-
+                destructive and provides better differentiation (>2%) between experimental splits than the
+                conventional TEM based resistivity measurement (>10%). In addition, the contribution of liner and
+                barrier to the overall resistivity is typically not considered since their conduction is significantly lower
+                than copper.
+                2.4 Machine Learning
+
+                Machine learning [9] is used in this work to enhance the throughput of the various techniques. Due
+                to tool-time availability limitations, the sampling with LE-XRF and TCR was not as high as the
+                sampling for Optical CD (which measured every die on every wafer). LE-XRF measured
+                approximately 1/3 of the available dies on every wafer, and TCR measured every die on half of the
+                available wafers. Machine learning allows the user to take the measured data from LE-XRF and TCR
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-4
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                and directly associate the data points with the Optical CD spectra. In this way, we can build a machine
+                learning dataset which effectively extrapolates results from LE-XRF and TCR on to all die where
+                Optical CD spectra are available. This procedure is shown schematically in Error! Reference source
+                not found.Error! Reference source not found. and Error! Reference source not found.Error!
+                Reference source not found..
+
+
+
+
+                Figure 5: Illustration of machine learning algorithms used to apply TCR results from some wafers to all wafers
+
+
+
+
+                Figure 6: Illustration of machine learning algorithms to apply LE-XRF results from some die to all die
+                                                                     3. RESULTS AND ANALYSIS
+
+                As described in the introduction, voids in copper metal lines degrade device yield and BEOL reliability
+                performance, so developing in-line metrologies is necessary to improve semiconductor device yield
+                and reliability, especially for advanced 7nm node and beyond technologies. In this work, two in-line
+                metrics are investigated for measuring voids, Cu resistivity and Vxo (derived parameter by hybridizing
+                scatterometry and LE-XRF). The results are discussed in this section. The typical cross-sectional
+                structure of prepared wafers is discussed in sub-section 3.1, followed by the discussion about in-line
+                metrology data in next sub-section. In sub-section 3.3 and 3.4, we present the metric of resistivity and
+                Vxo, respectively. In sub-section 3.5, we discuss the value added by the use of machine learning
+                algorithms.
+
+                3.1 Design of experiments
+
+                Copper lines in modern semiconductor technology BEOL structures are typically formed by first
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-5
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                depositing a copper seed layer by physical vapor deposition (PVD), then electrochemical plating
+                which fills the rest of the trench with copper.
+
+                Based on the knowledge of the metallization process, changing the copper seed layer thickness can
+                affect the quality of copper lines. The split conditions for the DOE are shown in Table 1 below. The
+                first two wafers used reflow process, which is a well-established technique intended to reduce the
+                presence of voids by annealing the wafers after the copper seed layer deposition [2-4]. The remaining
+                wafers did not use the reflow process; instead, they were subjected to different seed layer thicknesses
+                to study their effect on voids.
+
+                Table 1. The split conditions are listed in this table with 2 wafers per split. The seed layer thickness is
+                normalized.
+                                                Wafer ID                     Cu seed layer thickness (Normalized)
+                                                1                            0.75 Cu reflow process
+                                                2                            0.75 Cu reflow process
+                                                3                            0.35
+                                                4                            0.35
+                                                5                            0.5
+                                                6                            0.5
+                                                7                            0.75
+                                                8                            0.75
+                                                9                            1
+                                                10                           1
+
+                Figure 7 shows the cross-sectional structure of the copper metal lines from one of the prepared wafers.
+                Based on the process assumption, the schematics of the structure are shown in Figure 7(a). The trench
+                is formed by patterning and reactive ion-assisted etching of a dielectric substrate and followed by the
+                sequential deposition of TaN barrier and cobalt liner. The copper seed layer is deposited with PVD,
+                and electroplating is used to fill up the trench. Finally, chemical mechanical planarization (CMP) is
+                used to remove the overfill and set the line height, and then the copper line is capped with cobalt and
+
+
+
+
+                    Figure 7 shows the cross-sectional structure of Cu metal lines. (a) shows the schematics of the structure. (b) shows the high-
+                    angle annular dark-field TEM image, from which the metal and dielectric are clearly distinguished. (c) shows the elemental
+                    mapping image from EDX-TEM measurement, where the TaN barrier, Co liner and Cu are clearly resolved.
+
+                dielectric materials to avoid oxidization. Figure 7(b) shows the dark-field TEM image, which the metal
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-6
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                (bright region) is clearly distinguished from dielectric (dark) since the transmitted electron signal is
+                sensitive to atomic number Z, I
+                                                     4
+                                                               
+                                                   Z . However, the barrier, liner, and Cu cannot be resolved for Figure
+                7(b). The elemental mapping was done with EDX-TEM scanning, as shown in Figure 7(c), where the
+                TaN barrier, cobalt liner, and copper are clearly resolved in Figure 7(c).
+
+
+                3.2 Scatterometry and LE-XRF results
+
+                In this section, we discuss the data collected from in-line metrologies, scatterometry and LE-XRF.
+                Scatterometry data was measured with NovaT600 and NovaMARS, and LE-XRF was collected with
+                NovaVeraFlex IIIXF.                 Figure (a) shows the XRF measurement of all wafers, and it is a direct
+                measurement of cobalt atoms in the illuminated area. Figure (b) contains the thickness measurement
+                results from conventional scatterometry measurements, which is model-based metrology. These two
+                completely different techniques show the same trend that the cobalt liner thickness varies along with
+                the different split conditions.
+
+
+
+
+                  Figure 8. (a) shows the plot of XRF measurements of Co liner, and (b) shows the scatterometry measurement of Co liner
+                  with conventional modeling. XRF shows the same trend as OCD measurement for Co liner.
+
+
+
+                By experimental design, only the copper seed layer thickness varied for different split conditions,
+                but not the cobalt liner. However, both XRF and scatterometry indicates that cobalt liner thickness
+                changes with split conditions, which is an interesting result. The explanation for this observation is
+                that the copper plating chemistry also erodes the cobalt when the copper seed layer is thinner than a
+                threshold thickness. The plot of cobalt liner thickness is plotted against Cu seed layer thickness, as
+                shown in Figure , where normalized cobalt liner thickness is in the y-axis and normalized copper
+                seed layer is in the x-axis. From Figure , we see that the cobalt liner thickness decreases with the
+                reduction of copper seed thickness when the copper seed thickness is below the threshold of 0.8.
+                While the copper seed is above the threshold value, the cobalt liner thickness does not change with
+                the thickness of the copper seed layer. Since Cu reflow process [4] can fill minimum trenches with
+                Cu completely, Co liner is fully protected by Cu during the plating process. Therefore, the Co liner
+                is thickest for Cu reflow split, as shown in fig. 9.
+
+
+                Both LE-XRF and scatterometry show the same result that cobalt liner thickness changes with the
+                different split conditions as the copper seed layer thickness varies. As a consequence, the effective
+                cross-section area of copper line is also changing with experimenting conditions. The electrical
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-7
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                properties of copper lines would also change when the cross-section area changes, which will be
+                discussed in the next sub-section.
+
+
+
+
+                  Figure 9 show the plot of Co liner thickness (normalized) vs Cu seed layer thickness (normalized).
+
+
+                3.3 Resistivity of Cu lines
+
+                The resistivity of copper metal lines was obtained via the Temperature Coefficient of Resistivity
+                (TCR) based measurements described in the previous section. In Figure, the resistivity on the y-axis
+                was plotted against the cross-sectional area of copper line on the x-axis. The cross-sectional area was
+                obtained from scatterometry measurement with conventional modeling. Data points were collected
+                from all wafers in the DOE, and the solid line is the empirical formula developed from advanced
+                BEOL semiconductor technology [10]. The figure shows that resistivity decreases with the increase
+                of metal line area, and the trend follows with the solid blue line of the empirical formula. In the
+
+
+
+
+                  Figure 10: Resistivity, measured from temperature coefficient resistivity (TCR), versus the cross section area of Cu lines. It
+                  shows the Cu line resistivity decreases with the increase of Cu cross section area, and the trend follows the empirical formula.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-8
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                nanometer scale, the resistivity of the copper line also depends on the size or area of metal lines due
+                to the surface scattering of electrons.
+
+                In Figure, we see that the cross-sectional area of metal lines changes with split conditions. Specifically,
+                the Cu line area increases as the normalized copper seed layer thickness changes from 1 to 0.35. As
+                mentioned in section 3.2, the total trench area is the same, thinner liner left more room to Copper,
+                plating erosion enhanded this effect. Figure also shows that the copper lines with the reflow process
+                have lower resistivity than the ones without reflow at the same normalized copper seed layer thickness
+                of 0.75.
+
+                Figure plots the resistivity as a function of our void metric, Vxo, which is derived from the
+                hybridization of XRF and scatterometry. It shows that the resistivity for each split weakly correlates
+                to Vxo, indicating that resistivity may not be a good measurement of the voids in this work.
+
+
+
+
+                  Figure 11: This plots resistivity as a function of the alternative metric, Vxo. The metric Vxo was a parameter developed from
+                  hybridizing scatterometry and LE-XRF.
+
+
+                Intuitively speaking, we should expect higher resistivity with more voids in metal lines. From the
+                discussion in section 3.1, there should be more voids as copper seed layer thickness decreases, so we
+                should expect higher resistivity for thinner copper seed layer split if the initial assumption is correct.
+                However, the results shown in Figure does not agree with this speculation. It was discussed that the
+                line resistivity depends on the microstructure of copper, voids and also the cross-sectional area when
+                the critical dimension is in nanoscale. Figure clearly shows that resistivity increases as the copper
+                cross section area decreases. Both voids and cross-sectional area are competing to affect line
+                resistivity, but it seems that the cross-section area dominates the effect, at least, in the investigation
+                range of experiment variations. The effect of voids to resistivity is over-shadowed by the cross-section
+                area of copper lines.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-9
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                This leads us to the conclusion that resistivity is not likely to be a good measurement of voids in copper
+                metal lines. The other metric of Vxo will be evaluated in the next section.
+
+
+
+                3.4 The metric of      Vxo   from hybrid metrology
+
+
+
+
+                As mentioned previously, Vxo is a parameter obtained by hybridizing XRF with scatterometry
+                techniques in a novel method. Higher Vxo indicates fewer voids in copper lines and vice versa. Figure
+                plots the metric of Vxo on the y-axis as a function of copper seed layer thickness on the x-axis in terms
+                of wafer average. The blue data points are from non-reflow splits, while the yellow data point is from
+                the split condition with reflow. It is shown in Figure that blue data points strongly depend on the
+                variation of copper seed thickness, and that is Vxo decreases (indicating more voids) as the copper seed
+                layer is thinning down. Based on the processing knowledge, we should expect more voids as copper
+                seed layer thickness decreases. Therefore, the relationship between Vxo and copper seed layer
+                thickness, shown in Figure , matches the expectation from the originally designed experiment and
+                splits.
+                The yellow data from reflow split falls off the trend shown in blue data points. Comparing it with the
+                other blue data points without reflow, we can see that the amount of voids for Cu reflow splits is within
+                the scattering range of no-reflow splits, but not obviously lower than no-reflow splits. This observation
+                does not agree with our initial expectation since the majority opinion in the field believes reflow
+                produce better quality copper lines. The reflow process generates Cu lines with Vxo parameter that is
+                comparable with those without reflow. We do observe that the reflow process improves the resistivity
+                of copper lines in Figure. This can be explained in that the reflow process improves the microstructure
+                in copper lines, e.g. larger grain size and fewer grain boundaries, which reduces resistivity even the
+
+
+
+
+                       Figure 12: The metric of V is plotted against Cu seed layer thickness. The blue datapoints are wafer averages for no
+                                                         xo
+
+                       reflow splits, and the yellow datapoint is that with reflow split. Blue datapoints shows a strong correlation between Vxo
+                       and Cu seed thickness. This relationship matches the expectation from process knowledge.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-10
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                reflow split has comparable Vxo with no-reflow process. The effect of microstructure on electrical
+                properties       competes         with     voids, and         microstructure        has   stronger effect than      voids.     Further
+                investigation is needed to fully understand this observation.
+
+
+                Even though the relationship shown by blue data points in Figure matches the expectation, based on
+                the process knowledge, it is not a strong indicator. Therefore, we can evaluate the metric of                                  Vxo with
+                respect to electromigration (EM) lifetime.
+
+
+                As discussed in section 3.2, the cobalt liner thickness also changes between splits, even though the
+                copper seed layer is the only parameter we intentionally vary in the design of experiments. Figure is
+                a plot of     Vxo as a function of cobalt liner thickness, from which we can see the thinner cobalt liner
+                thickness produces lower      Vxo and more voids. In Figure , the EM lifetime is also plotted against cobalt
+                liner thickness. EM lifetime is defined here by the time for 50% devices across a wafer to fail. Both
+                Co/Cu interface quality (smoothness and uniformity) and voids in copper lines affect EM lifetime in
+                the same manner. When all other processes are consistent but the cobalt liner thickness varies, which
+                results in an assumption that the Co/Cu interface is similar, EM lifetime is a known indicator of the
+                amounts of voids [10]. Shorter EM lifetime means more voids, and vice versa. It is shown in Figure
+                that thinner cobalt liner thickness corresponds with shorter EM lifetime, meaning more voids.
+
+
+
+
+                   Figure 13: Vxo as a function of Co Liner Thickness. The metric of Vxo is plotted against Co liner thickness in terms of
+                   wafer average. The circular data points are from no reflow splits, and the diamond data point is from with reflow splits.
+
+                   The circular data points follows nice trend versus Co liner thickness, which agrees with expectation from process point
+
+                                                        view. The no-reflow data point flies away the trend.
+
+
+
+
+                Similar to the results in many previous figures, the diamond data point from reflow split in Figure
+                falls out of the trend shown by the data points from non-reflow splits. With reflow, the microstructure
+                of copper lines can significantly different from those without reflow.
+
+
+                To summarize the results from the metric of                       Vxo, lower values Vxo indicates more voids and vice versa.
+                This relationship matches the expectation based on the knowledge of the process. This is the first
+                indicator that       Vxo is a good metric for voids. The metric of Vxo is also evaluated against EM lifetime,
+                which is a known indicator of the amount of voids when all other processes are the same while cobalt
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-11
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                liner thickness varies. The results show that more voids in copper lines corresponding to both lower
+
+                Vxo and shorter EM lifetime. This is the 2nd indicator that Vxo is a good metric for void measurement.
+
+
+
+
+                          Figure 14: EM Lifetime as a function of Co Liner Thickness. This plot shows the relationship between EM
+                          lifetime in y axis and the Co liner thickness in x axis. The EM lifetime is defined here as the time it takes to
+                          fail 50% devices. With all parameters same, longer EM lifetime usually indicates fewer voids.
+
+                Combining both indicators, it can be concluded that the metric,                         Vxo, is a reliable measurement of voids
+                in copper lines.
+
+
+
+
+                3.5 Throughput improvement with the assistance of ML
+
+
+
+
+                Vxo is validated as a good metric of measuring voids in copper lines, but it involves both XRF and
+                scatterometry measurements. It is known that XRF has lower throughput than scatterometry, and it is
+
+                always desired in the industry to improve throughput, which reduces cycle time and cost. In this
+
+                section, we will show that the throughput can be improved with the assistance of machine learning
+
+                algorithms.
+
+
+
+                The measured           Vxo from hybrid metrologies of XRF and scatterometry is used as reference data for
+                machine learning training with respect to the collected scatterometry raw spectra per chip. The well-
+
+                trained machine learning algorithm is capable of correlating the features of raw spectra with the
+
+                reference data. Therefore, the developed machine learning algorithm can accurately predict the
+
+                parameter of        Vxo based on the collected scatterometry spectra on a different wafer, even when there is
+                no XRF measurement on this wafer. The description of machine learning methods was discussed in
+
+                section 2.3.
+
+
+
+                Figure is a plot of the predicted Vxo from established machine learning algorithm against the measured
+                Vxo. This figure shows that the predicted Vxo strongly correlates with the measured Vxo with an accuracy
+                of ~ 90%. The linear regression equation with R square is also shown in Figure . To summarize, the
+
+                throughput for measuring voids using Vxo can be as high as scatterometry with the assistance of
+
+                machine learning, but still with the fidelity of approximately 90%.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-12
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+               Figure 15: Comparing machine learning and hybrid results. The machine learning method is employed to predict Vxo based
+               only on scatterometry raw spectra. The actual measured Vxo is used as reference for machine learning algorithm setup with
+               respect to scatterometry raw spectra. The predicted Vox from machine learning highly correlates with the actual measured Vxo
+               from hybrid metrologies.
+
+
+                                                                             4. CONCLUSIONS
+
+                In this work, we demonstrated that the amount of voids in copper lines can be measured inline by
+                employing hybrid metrologies, with a combination of LE-XRF and scatterometry. Two candidate
+                metrics, resistivity and          Vxo, are investigated as a good measurement of voids in metal lines. Our results
+                show that resistivity is not a reliable measurement of the amount of voids in metal lines. This is
+                because the effect of the cross-sectional area of Cu lines on the resistivity overshadows the
+                contribution of voids to the resistivity.
+
+
+                The metric ofVxo measured from hybrid metrologies between LE-XRF and scatterometry is proved to
+                                                                                          Vxo indicates more voids,
+                be a good measurement of voids in metal lines. First, the result, that lower
+                matches the expectation based on the process knowledge. Secondly, the parameter of Vxo as a reliable
+                measurement of voids is validated with respect to EM lifetime. Both lower values of Vxo and shorter
+                EM lifetime tends to give similar results (more voids). Therefore, the metric of Vxo, measured by
+                hybridizing XRF metrology with scatterometry, can be a good measurement of the amount of voids
+                in metal lines.
+
+
+                This work also demonstrated that the throughput of measuring the parameter                           Vxo can be improved as
+                high as scatterometry with the assistance of the machine learning algorithm. It is shown that the
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-13
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                predicted Vxo from trained machine learning algorithm matches the actual Vxo with a fidelity of 90%,
+                even if there is no XRF measurement involved. This helps to reduce cost in manufacturing.
+
+                The experimenting condition with reflow fails out the trend of non-reflow data points due to the
+                possible microstructure difference in Cu lines that the reflow produces. Further investigation is
+                necessary to fully understand the behavior of reflow conditions.
+
+                                                                       ACKNOWLEDGMENTS
+                The authors would like to acknowledge Bala S. Haran & Mukesh Khare from IBM for management
+                support, as well as Mark Klare from Nova for helpful discussions.
+
+
+                                                                               REFERENCES
+                1. Mechanism and improvements of Cu voids under via bottom, By C-H Lee and R-K Shiue, Solid
+                    State Technology, 2018.
+                2. Ru liner scaling with ALD TaN barrier process for low resistance 7 nm Cu interconnects and
+                    beyond, K. Motoyama, et al., Proc. of IEEE IITC, 6.1 (2018)
+                3. EM enhancement of Cu interconnects with Ru liner for 7 nm node and beyond, K. Motoyama, et
+                    al., Proc. of IEEE IITC, 12.3 (2019)
+                4. PVD Cu Reflow Seed Process Optimization for Defect Reduction in Nanoscale Cu/Low-k Dual
+                    Damascene Interconnects Electrochemical/Electroless Deposition, J. Electrochem. Soc. 166,
+                    D211-D3215, 2013.
+                5. Stacked nanosheet gate-all-around transistor to enable scaling beyond FinFET, N. Loubet, T.
+                    Hook, et al., 2017 Symposium on VLSI Technology, Kyoto, 2017, pp. T230-T231.
+                6. Interpreting plasmonic response of epitaxial Ag/Si(100) island ensembles, D. Kong, L. Jiang,
+                    and J. Drucker, J. Appl. Phys. 118, 213103 (2015).
+                7. Tuning Ag/Si(100) island size, shape, and density, D. Kong, J. Drucker, J. Appl. Phys. 114,
+                    144310 (2013).
+                8. Novel hybrid metrology for process integration of gate all around (GAA) devices, G. R.
+                    Muthinti, N. Loubet, et. al., Proc. SPIE 10585, Metrology, Inspection, and Process Control for
+                    Microlithography XXXII, 105850Z, 2018.
+                9. In-line characterization of non-selective SiGe nodule defects with scatterometry enabled by
+                    machine learning, D. Kong, R. Chao, et. al., Proc. SPIE 10585, Metrology, Inspection, and
+                    Process Control for Microlithography XXXII, 1058510, 2018.
+                10. Impacts of Liner Metals on Copper resistivity at Beyond 7nm Dimensions, H. Huang et al., 2018
+                    IEEE Int. Interconnect Technol. Conf. /Adv. Met. Conf., pp. 13, 2018.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 10959 109590A-14
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 09 Sep 2019
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+

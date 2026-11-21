@@ -1,0 +1,215 @@
+Ultra large pitch and depth structures metrology using
+ spectral reflectometry in combination with RCWA
+          based model and TLM Algorithm
+                                                 AM: Advanced Metrology
+
+
+
+                       Annalisa Del Vito                                   Ilya Osherov, Adam Michal Urbanowicz, Yinon Katz,
+                   ST Microelectronics R2                                        Kobi Barkan, Igor Turovets, Ronny Haupt
+                    Agrate-Brianza, Italy                                              Nova Measuring Instruments
+                  annalisa.del-vitto@st.com                                                 Rehovot, Israel
+                                                                                         igor-t@novami.com
+
+
+
+Abstract - The mainstream of dimensional metrology development            measurement (TLM) algorithm, which is based on analyzing
+is focused towards continuous shrinking of the devices (Moore         reflectivity from multiple surfaces and rigorous coupled-wave
+scaling). Current cutting-edge technologies are in few nanometer      analysis (RCWA). This solution works with conventional
+range (3-7nm). There is also a growing demand to characterize         spectral range typical for cleanroom ellipsometers and
+structures with large dimensions in microns range (pitch, CD or       reflectometers (deep ultra-violet to near IR). In this paper we
+depth). New technology megatrends such as internet of things
+                                                                      focus on application for BCD (BIPOLAR-CMOS-DMOS)
+(IOT) additionally require More than Moore scaling and
+heterogeneous integration [1-3]. Due to recent developments ultra     technology that combines advantages of bipolar, CMOS
+large pitch scatterometry applications growth is observed in high     (Complementary Metal Oxide Semiconductor) and DMOS
+power, sensors and packaging areas. Here we present novel             transistors (Double Diffused Metal Oxide
+approach that is focused on ultra large pitch scatterometry and its
+challenges. We demonstrate how to extend usage of conventional
+scatterometry for micro size devices.
+
+Keywords: large pitch, OCD, scatterometry, RCWA limits,
+metrology, deep trench
+
+                  I.     INTRODUCTION
+
+    The mainstream optical scatterometry tools and algorithms
+are tuned towards shrinking device size. Larger dimensions
+(micron range) are challenging for conventional optical
+scatterometry measurements, because of multiple reasons,
+including less periods within measurement spot, surface
+scattering, etc. For ultra large pitch applications the enhanced
+algorithmic solutions need to be implemented to tackle these
+challenges [1-3]. This need to be done preferably without
+                                                                      Fig. 1. BCD (BIPOLAR-CMOS-DMOS) is a key technology for power
+changing hardware settings of modern scatterometers to allow          ICsSemiconductor) [5]
+measurements of both nano-structures (Moore scaling) and
+micro-structures (More than Moore scaling). For some                  As described in Fig.1. Multipower BCD technology is using two
+applications in ultra large pitch area, it was considered that        or more power MOS devices on the same chip, isolated from each
+extended IR (infra red) is required to obtain solution (i.e. WL       other, with both high-voltage and high-current capabilities,
+till 20 microns)[4]. Such solutions, however, require                 together with low-level signal and memory components. Using
+additional hardware that increases manufacturing cost and             BCD technology, the pixels' structure is based on growing an
+inline metrology configuration complexity. Furthermore,               epitaxial silicon layer, on which we can have any analog/digital
+throughput of IR- reflectometers is typically lower than              CMOS circuit completely surrounded by N-doped zone which
+standard UV(ultraviolet) -VIS(visible spectrum) tools. In this        isolate the internal epitaxial layer from substrate. In addition to
+paper we demonstrate a method which utilize a more cost-              BCD technology our work is relevant for various trench depth,
+effective visible hardware only with unique algorithmic               high pitch applications across various IoT devices.
+approach. We utilize combination of Nova’s thick layer
+             II.     RESULTS AND DISCUSSION                             layer. Other challenge is related to the fact that time of calculation
+                                                                        of theoretical spectra increases nearly exponentially with the
+ The modeled structure is shown in Fig. 2. Si trench depth              number or retained diffraction orders, which in turn is inversely
+ for isolation structures can reach 30 µm with pitch as large           proportional to the optical wavelengths [9]. There are also other
+ as 8 µm and trench CD of 2 µm. These dimensions are                    approaches than classical RCWA for scatterometry calculations
+ orders of magnitude larger than most OCD [6] (optical                  such as finite element modeling (FEM) [10]. However, FEM
+ critical dimension) applications in advanced logic and                 methods in general are more computing power intensive than
+ memory. A set of wafers with structures described in Fig. 2            RCWA. The solution in this work is to use combination [6]
+ were prepared with design of experiment (DOE) that                     between existing RCWA and new TLM methods.
+ included etch split conditions representing process window
+ (+/- 10% of process of record). The trench depth was varied.
+ The modeled results are compared to SEM x-section
+ metrology.
+
+
+
+
+                                                                            Fig 3. Representative spectral reflectivity of structure in Fig 2.
+
+
+
+
+ Fig. 2. Deep trench structure details.
+
+
+OCD is based on spectral measurement of reflectivity from a sample at
+different polarizations, angles of incidence and azimuths and fitting
+the measurement to a theoretical model to reconstruct the parameters
+of the structure under test.
+One of the most common ways to calculate the reflected
+spectrum of a theoretical model is to use RCWA (rigorous
+coupled wave analysis). It is a semi-analytical method in
+computational electromagnetics that is most typically applied to            Fig. 4. Simulated reflectivity for three different initial points using RCWA
+solve scattering from periodic dielectric structures. As rule of            calculations: a) Si height, b) CD-Bottom, c) Si SWA. The legend shows
+thumb the pitch of the measured structure needs to be                       thickness in Angstroms and SWA in degrees.
+approximately an order of magnitude smaller than the
+measurement spot size. The pitch of the structure in Fig. 2 is 8
+µm and thus RCWA assumption is on its application limit.
+Therefore, RCWA based modeling of theoretical spectra is not
+fully applicable in a standard way due to the very large pitch of
+the measured structure.
+
+Fig. 3 shows representative spectral measurement of the deep
+trench structure described in Fig 2. Normal S polarization
+shows fast oscillations modulated on top of slower oscillations             Fig, 5. TM (-s) and TE (-p) polarization at a one-dimensional grating
+                                                                            (modulation along x): a) TM (-s) polarization causes unphysical
+signal. The slow frequency mainly represents the top layers                 oscillations at the grating slopes resulting in bad convergence behavior
+while the fast frequency is associated with Si depth. Normal P              b) TE polarization without jump discontinuities. The schematic is shown
+polarization only has low frequency oscillations thus it is not             only for illustrative purpose (the wave propagation is more complex in the
+sensitive to Si depth. Despite dimensional limitations related to           studied application).
+RCWA the materials in the stack also play a role [7,8]. The
+layers with that have relatively high index of refraction
+contributes stronger to scattering. This is the case for the Si
+To show challenges of ultra-high pitch and depth structures we
+performed RCWA simulations as shown in Fig. 4. We
+generated theoretical reflectivity for angle of incidence of 90
+degree. The s- polarization (perpendicular or transverse
+magnetic (TM)) is marked in blue color. The p-polarization
+(parallel or transverse electric (TE). Typically, TM component
+is more problematic for RCWA convergence [11]. The TE and
+TM are shown in Fig. 5 for clarity. The grating pitch variation,
+interface effects and surface scattering can strongly influence
+TM wave propagation. Furthermore, due to air- trench
+components with various dielectric functions and respective
+interfaces propagated wave is always a discontinuous function
+and subject to Gibbs phenomenon [12]. In our case we could
+extract valuable RCWA information only from TE component.
+It is also clear from Fig. 4a that there is almost no difference in
+TE polarization (red curves) for varied height of the Si.                Fig. 6. Trench depth correlation to x-SEM
+Therefore, there is no Si height sensitivity using TE
+component. On the other hand, we observe clear differences in
+simulated reflectance for Si CD bottom (Fig.4b) and Si SWA
+(Fig. 4c) and TE (-p) component can be used for those
+dimensions. In summary TE component and RCWA give the
+two dimensions of interest but cannot be used for trench depth.
+The fast frequency oscillations presented in TM channel can
+be modeled with TLM approach to extract trench depth. To
+measure the depth of the Si from the TM spectra we may use
+the fact that the frequency of the fast frequency oscillations is
+proportional to the depth and can be used to extract trench
+depth with TLM algorithm, that is fast and does not require
+RCWA calculations. We could obtain all geometrical
+parameters of the structure described in Fig. 2. by combining
+the RCWA and TLM methods. Trench depth results are in a
+good agreement with the designed split conditions and with x-
+SEM reference depth as shown in Fig. 6. We were able to
+achieve very good Si depth correlation to x-SEM data (R2 =                Fig. 7. HM1 and HM2 height radial plots obtained using RCWA model
+                                                                          interpretation. Data for solid measurement pad (left hand side) and two-
+0.98). Additional target parameters, including HM1 and HM2                dimensional structure (right hand side).
+height, show good correlation to thickness of the solid sites, as
+shown in Fig. 7. The combination of RCWA and TLM is                                     III.     CONCLUSIONS
+shown to be optimal algorithmic approach. Our methodology
+can be used for in line process monitoring and control of etch            In summary, this paper proposes a new approach to address
+process by attaching an integrated normal only reflectometer          optical modeling challenges of micron range devices. We
+to an etcher or by using stand-alone (SA) tool. The growing           discuss current scatterometry hardware that is tuned to
+need of micron-size device evaluation can be addressed by             nanometer range dimensions and algorithms that can extend
+applying novel methods of analysis of existing scatterometry          usage of modern scatterometry hardware for micron size
+hardware signals.                                                     dimensions       (extension      of     maximal     measurable
+                                                                      thickness/height limit). Presented methodology can be used
+                                                                      for optical characterization of various device concepts in More
+                                                                      than Moore scaling approach. As future work RCWA
+                                                                      limitations and potential modifications and combined
+                                                                      algorithmic approaches need to be explored. This can extend
+                                                                      usage conventional cleanroom scatterometery hardware
+                                                                      beyond commonly accepted specifications.
+
+                                                                                            ACKNOWELEGMENTS
+
+                                                                      This work was supported by R3-PowerUP project “300-mm
+                                                                      Pilot Line for Smart Power and Power Discrete” granted by
+                                                                      the ECSEL Joint Undertaking under grant agreement n°
+                                                                      737417.
+                            REFERENCES
+
+[1] Graef, M. (2011). "Positioning More Than Moore Characterization
+Needs and Methods within the 2011 ITRS." AIP Conference Proceedings
+1395: 345-350.
+
+[2] Smart Metrology for Continuing Moore's Law Scaling, M. Kuhn and
+Z. Ma. SPIE Adv. Litho. (2016)
+
+[3] Continuing Moor’s law, M. Bohr, Intel Technology manufacturing day
+in                               China                             (2017)
+
+[4] M. Gostein, P. A. Rosenthal, A. Maznev, A. Kasic, P. Weidner, and P.-
+Y. Guittet, "Measuring deep-trench structures with model- based IR," Solid
+State Technology, vol. 49, pp. 38-41, (2006).
+
+
+[5] A. Andreini, C. Contiero, P. Galbiati, “A New Integrated Silicon Gate
+Technology Combining Bipolar Linear, CMOS Logic, and DMOS Power
+Parts,” IEEE Transactions on Electron Devices, vol. 33 (1986)
+
+[6] P. Reinig, R. Dost, M. Moert, T. Hingst, U. Mantz, J. Moffitt, et al.,
+Metrology of deep trench etched memory structures using 3D
+scatterometry vol. 5752: SPIE, (2005).
+
+[7] R. Antos, J. Pistora, J. Mistrik, T. Yamaguchi, S. Yamaguchi, M.
+Horie, et al., "Convergence properties of critical dimension measurements
+by spectroscopic ellipsometry on gratings made of various materials,"
+Journal of Applied Physics, vol. 100, pp. -, 2006.
+
+[8] N. Xinhui, N. Jakatdar, B. Junwei, and C. J. Spanos, "Specular
+spectroscopic scatterometry," IEEE Transactions on Semiconductor
+Manufacturing, vol. 14, pp. 97-111, 2001.
+
+[9] S. O’Mullane, N. Keller, and A. Diebold, "Modeling ellipsometric
+measurement of three-dimensional structures with rigorous coupled wave
+analysis and finite element method simulations," Journal of
+Micro/Nanolithography, MEMS, and MOEMS, vol. 15, p. 044003, 2016,
+
+[10]     P. Lalanne and G. M. Morris, "Highly improved convergence of
+the coupled-wave method for TM polarization," Journal of the Optical
+Society of America A, vol. 13, pp. 779-784, 1996/04/01 1996.
+
+[11]    Wilbraham, Henry (1848) "On a certain periodic function," The
+Cambridge and Dublin Mathematical Journal, 3 : 198–201
+

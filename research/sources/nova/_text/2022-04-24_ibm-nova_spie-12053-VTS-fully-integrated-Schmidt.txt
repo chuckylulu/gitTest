@@ -1,0 +1,473 @@
+       PROCEEDINGS OF SPIE
+       SPIEDigitalLibrary.org/conference-proceedings-of-spie
+
+
+
+
+                   Vertical travelling scatterometry for
+                   metrology on fully integrated devices
+
+
+
+
+                   Schmidt, D., Medikonda, M., Rizzolo, M., Silvestre, C.,
+                   Frougier, J., et al.
+
+
+
+
+                                  D. Schmidt, M. Medikonda, M. Rizzolo, C. Silvestre, J. Frougier, A. Greene,
+                                  M. Breton, A. Cepler, J. Ofek, I. Kaplan, R. Koret, I. Turovets, "Vertical
+                                  travelling scatterometry for metrology on fully integrated devices," Proc. SPIE
+                                  12053, Metrology, Inspection, and Process Control XXXVI, 120530S (26 May
+                                  2022); doi: 10.1117/12.2614077
+
+                                  Event: SPIE Advanced Lithography + Patterning, 2022, San Jose, California,
+                                  United States
+
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022 Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                   Vertical Travelling Scatterometry
+                                               for Metrology on Fully Integrated Devices
+                     D. Schmidta,*, M. Medikondaa, M. Rizzoloa, C. Silvestrea, J. Frougiera, A. Greenea, M. Bretona,
+                                          A. Ceplerb, J. Ofekc, I. Kaplanc, R. Koretc, I. Turovetsc
+                                       a
+                                         IBM Research, 257 Fuller Road, Albany, NY, USA 12203
+                           b
+                             Nova Measuring Instruments Inc, 3342 Gateway Blvd, Fremont, CA, USA 93117
+                                           c
+                                             Nova Ltd, 5 David Fikes St, Rehovot, Israel 7610201
+                                                                               *schmidt@ibm.com
+
+
+                                                                                  ABSTRACT
+
+                In this work, a novel spectral interferometry technique called vertical travelling scatterometry (VTS) is introduced,
+                demonstrated, and discussed. VTS utilizes unique information from spectral interferometry and enables solutions for
+                applications that are infeasible with traditional scatterometry approaches. The technique allows for data filtering related to
+                spectral information from buried layers, which can then be ignored in the optical model. Therefore, using VTS, selective
+                measurements of the topmost part of an arbitrarily complex stack are possible within a single metrology step. This
+                methodology helps to overcome geometrical complexities and allows focusing on parameters of interest through
+                dramatically simplified optical modelling. Such model simplifications are specifically desired for back-end-of-line
+                applications. Three examples are discussed in this paper: monitoring (i) critical dimensions of a first metal level on top of
+                nanosheet gate-all-around transistor structures, (ii) the thickness of an interlayer dielectric above embedded memory in the
+                active area, and (iii) critical dimensions of trenches on top of tall stacks in the micrometer range comprising many layered
+                dielectrics. It was found that, in all three cases, data filtering through VTS allowed for a simple optical model capable of
+                delivering parameters of interest. The validity and accuracy of the VTS solution results were confirmed by extensive
+                reference metrology obtained by traditional scatterometry, scanning electron microscopy, and transmission electron
+                microscopy.
+                Keywords: Vertical Travelling Scatterometry, Scatterometry, OCD, Spectral Reflectometry, Spectral Interferometry
+
+
+
+                                                                          1. INTRODUCTION
+                Due to the ever-shrinking dimensions of semiconductor devices, there is a constant drive for in-die and fully integrated
+                device metrology to capture subtle differences where they matter rather than going through a dedicated metrology target
+                in the scribe line. More importantly, scribe line targets usually comprise simplified stacks and designs to focus on a specific
+                process step of interest and to not be impacted by prior process variations where possible. These simplifications may result
+                in minor structural differences compared to fully integrated device stacks, and they are starting to matter more with
+                shrinking dimensions. Furthermore, the recent developments of embedding memory elements in the early back-end-of-
+                line (BEOL) of the manufacturing process demand advanced materials and dimensional metrology very late in the process
+                previously not required.1 In particular, there is now a significant need for optical critical dimension (OCD) metrology
+                during these later stages of device manufacturing.2 The most advanced back-end memory devices are embedded between
+                the first and second metal level on top of front-end CMOS logic. The integration scheme requires a dielectric chemical-
+                mechanical polishing (CMP) planarization that necessitates in-line monitoring on the active device for tight process
+                control. This results in substantial modeling challenges due to the large number of layers and buried three-dimensional
+                features and front-end architecture. The cumulative statistical process variations would all need to be considered for an
+                accurate optical model leading to a large number of floating parameters. Depending on the stack complexity, traditional
+                OCD approaches may not be capable of solving these tasks anymore with the required precision for the parameters of
+                interest.
+                Recently, OCD was enhanced with spectral interferometry technology by providing absolute phase information to improve
+                                                                             correlations.. 3 In this paper, a novel way of using spectral
+                sensitivity to weak target parameters and reducing parameter correlations
+
+
+                                  Metrology, Inspection, and Process Control XXXVI, edited by John C. Robinson, Matthew J. Sendelbach,
+                                         Proc. of SPIE Vol. 12053, 120530S · © 2022 SPIE · 0277-786X · doi: 10.1117/12.2614077
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-1
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                interferometry is introduced, which enables OCD to overcome geometrical complexities and allows focusing on the
+                parameters of interest. The new technique, called vertical traveling scatterometry (VTS), allows for a selective
+                measurement of the top part of a stack separately from the bottom part within a single metrology step only. Thus, VTS
+                solutions can simply exclude any complex or unknown underlayers, which allows for solving applications that are not
+                feasible with traditional scatterometry approaches. This paper demonstrates VTS capabilities for three different BEOL
+                examples: (i) measuring critical dimensions (CDs) of a first metal level on top of nanosheet gate-all-around transistor
+                structures,4,5 (ii) measuring the thickness of an interlayer dielectric above embedded memory in the active area1 and (iii)
+                measuring CDs of trenches on top of tall stacks in the micrometer range comprising many layered dielectrics. All VTS
+                results are validated with traditional OCD, scanning electron microscopy (SEM), or transmission electron microscopy
+                (TEM).
+
+
+
+                                    2. BEOL SCATTEROMETRY CHALLENGES AND STRATEGIES
+                With the continued pitch scaling, also enabled through the insertion of EUV lithography, CD metrology in the BEOL gains
+                even more importance. Because of the decreasing dimensions, seemingly small differences between metrology proxy
+                targets typically found in the scribe line and in the active areas may play an important role for overall device performance.
+                Therefore, in-die measurements are desired, or, at least measurements on proxy targets that mimic the device stack as close
+                as possible. However, tall stacks with buried complex architectures are very challenging for model-based metrology
+                techniques such as scatterometry.
+                Typically, OCD developments for logic devices are reported for wafers with BEOL short-loop processing, i.e. no front-
+                end-of-line (FEOL) or middle-of-line (MOL) content is present.6-10 Transferring these learnings to manufacturing is not
+                always straightforward because of the aforementioned challenges. Timoney et al. are discussing the substantial modelling
+                complexities for M2 on fully integrated targets at the 7 nm and 14 nm node.11 The incoming process variations can impact
+                the measurement uncertainty and may lead to a significant measurement error of the features of interest. The authors
+                propose a hybrid modelling technique (combining OCD with another measurement technique) to mitigate some of the
+                uncertainties but details are omitted.
+
+
+
+
+                      Figure 1. Schematics of challenging BEOL scenarios for traditional scatterometry. (a) critical dimensions of the M1 metal
+                      level on top of nanosheet gate-all-around (NS-GAA) transistor structures, (b) the thickness of the topmost interlayer dielectric
+                      above embedded memory in the active area and (c) critical dimensions of trenches on top of tall stacks in the micrometer range
+                      comprising many layered dielectrics.
+
+
+                Figure 1 illustrates three typical BEOL scenarios that pose significant challenges for traditional scatterometry and may
+                render an optical model infeasible. Measuring the line height and CDs of the first metal layer (M1) on top of a nanosheet
+                gate-all-around (NS-GAA) device architecture using OCD is very challenging (Figure 1a).4,5 Even though in this example,
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-2
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                the metrology target does not comprise MOL contacts, an optical model would require many degrees of freedom to account
+                for statistical process variations associated with the nanosheets including gate stack and source/drain region, for example.
+                Furthermore, in case of any FEOL process changes, a model would likely require a significant update and re-optimization
+                leading to a long time-to-solution. Figure 1b depicts an example of MRAM embedded between M1 and M2. Besides CD
+                measurements of the magnetic tunnel junction (MTJ) and its electrodes, the interlayer dielectric (ILD) thickness must be
+                monitored also in the active region (on device). The integration scheme requires planarization before M2 patterning and
+                the CMP process homogeneity across the chip is critical to prevent subsequent processing issues. 1 A traditional optical
+                model for the active area is infeasible because the OCD spectra carry information from the entire device architecture
+                including FEOL and wiring all the way to the memory pillar and ILD. The last example of a trenches at the top of a tall
+                stack comprising many layers of optically transparent dielectrics may appear like a simple one (Figure 1c). However, once
+                the total stack thickness reaches several micrometers the measured OCD spectra are dominated by strong oscillations due
+                to thin film interference effects related to the tall stack and the many layer interfaces. A traditional OCD solution would
+                be extremely cumbersome and sensitivity to the critical parameters of interest likely still low.
+                There are several pathways to a solution for the discussed scenarios, but they are coming with numerous disadvantages.
+                While a feedforward or hybrid model does reduce the number of degrees of freedom, it still requires a complex geometric
+                optical model including data from either previous or other measurement steps. 8,9,11,12 Another variation of hybrid metrology
+                is related to “differential modeling”, which requires measurements before and after the process step of interest along with
+                appropriate algorithms.13 There are certain constraints, and the methodology does not necessary simplify the solution.
+                Machine learning can enable scatterometry solutions without the need for a geometrical model and may even allow
+                prediction of parameters inaccessible with traditional model solutions. 9,10,14,15 However, the required reference data is not
+                always easy to obtain. It may also be very time consuming and expensive if, for example, only cross-sectional TEM
+                reference metrology is an option. Interestingly, in the case of tall stacks (Figure 1c), a very large reference data set would
+                be required for a successful machine learning model because the measured optical spectra contain the convolution of
+                parameters of interest related to the trenches and information of each buried layer.
+                If measurements can be performed on specifically designed targets in the scribe line, design modifications can help to
+                engineer the optical response such that the solution may be simplified. In the case of tall stacks with many transparent
+                dielectric layers, it may be helpful to introduce buried patterned metal layers if the process flow allows. These can help to
+                suppress contributions in the optical response from layers below, thereby reducing interference fringes and limiting
+                sensitivity to buried layers. Materials, critical dimensions, volume, number of patterned layers and orientation must be
+                considered during the design phase to achieve desired simplifications. Of course, the patterned layers must then be
+                considered in the final optical model.
+                In all described scenarios, the root cause of the BEOL modelling complexities is the fact that the measured optical spectra
+                contain information from the entire stack. Hence, the irrelevant information of all buried layers and architectures is
+                convoluted with the optical response from the topmost features of interest. A deconvolution is desired to separate relevant
+                from irrelevant information and thus to substantially increase sensitivity to the parameters of interest, and to dramatically
+                simplify the optical solution.
+
+
+
+                                           3. VERTICAL TRAVELLING SCATTEROMETRY (VTS)
+                Vertical travelling scatterometry (VTS) uses unique information from spectral interferometry along with novel algorithms
+                to enable a deconvolution of spectral information relative to the depth from which they are originating. Hence, it allows
+                for a separation of relevant and irrelevant optical information thereby enabling selective measurements of the topmost
+                layers of interest within a single metrology step. The algorithm allows for filtering of data obtained through spectral
+                interferometry channels such that the dominant part of the information from below the cut-off can be selectively removed
+                from the measured optical response (Figure 2). Hence, underlayer contributions may be ignored, which can dramatically
+                reduce the geometrical complexities and significantly increases the sensitivity to parameters of interest. Additionally, the
+                simplified optical model improves the time-to-solution. The utilization of VTS allows for solving applications that are
+                otherwise not feasible with traditional scatterometry approaches. Because of the filter cut-off and the ability to ignore
+                spectral information, the same optical model can be use regardless of the type of underlayers (solid or patterned) and its
+                process variations. Figure 3 depicts an example of two tall stacks with a total thickness of 4.5 µm that have a difference in
+                one of the underlayers (patterned Cu lines introduced in one of the stacks) but otherwise identical trench patterning (top
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-3
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                of the stack). The simulated spectral interference spectra for four different channels within the UV to NIR range are
+                dominated by strong oscillations related to thin film interference effects. It is evident that the original spectra are different
+                because of the variation in one of the buried layers (Figure 3c,e). Applying a VTS filter removes the dominant part of the
+                underlayer signals and hence substantially reduces the oscillations (Figure 3d,f). When using the filtered VTS spectra, a
+                simplified optical model can be employed that does not need to account for underlayer contributions and allows focusing
+                on the desired trench characterization.
+
+
+
+                                       a)                                                       b)
+
+
+
+
+                                                                                                    Filter
+                                                                                                    Filter
+                      Figure 2. (a) Schematic of a spectral interferometer: white light is split between the sample and a reference arm and then
+                      recombined and measured with a spectrometer. (b) Illustration of VTS filtering where spectral information from below the
+                      cut-off (dashed line) can be identified and removed from the optical response.
+
+
+
+
+                      Figure 3. Comparison of tall stacks (4.5 µm total thickness) with a) only solid dielectric and (b) solid dielectric and a patterned
+                      Cu underlayers. (c,e) Original spectral interferometry channels and (d,f) VTS filtered spectra where the (c,d) top and (e,f)
+                      bottom rows show simulated graphs for stacks (a) and (b), respectively. The dashed lined indicates the VTS filter cut-off
+                      position. Each graph shows a total of four different, polarization-dependent channels (Ch A through Ch D). Both axes are
+                      identical for each of the four graphs.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-4
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                 4. APPLICATION EXAMPLES
+                4.1 BEOL Trenches on Tall Stacks
+                In order to verify VTS for tall stacks, the selected application requires monitoring trench height and CD for the fifth metal
+                layer of a short-loop BEOL flow. For the specific metrology target under investigation, all layers below the trenches of
+                interest are not patterned and comprise only thin films of various BEOL dielectrics, which are optically transparent. The
+                total stack thickness measured from the substrate interface is approximately 4.5 µm. As discussed above, the collected
+                OCD spectra are overwhelmingly dominated by oscillations but through spectral filtering, the optical model can be reduced
+                to the topmost part of the stack (above the filter) comprising the trenches. Four wafers with dose variations were exposed
+                to intentionally change the trench CD: three wafers with fixed dose values and one wafer with a dose stripe (variable dose
+                across the wafer). After collection of the optical spectra, top-down CDSEM reference data were obtained from twelve dies
+                per wafer. On a different set of five wafers, a trench height variation was achieved through etch time differences. For
+                wafers 1 and 3 an increased and decreased etch time was used, respectively. The other three wafers were etched at nominal
+                conditions. To verify the trench depth, cross-sectional SEM reference data was obtained for two dies from each of the five
+                wafers. A schematic of the stack and the VTS results in comparison to reference metrology are shown in Figure 4. The
+                VTS solution results show very good correlation to the reference metrology, particularly for trench height. These results
+                confirm the basic working principle of VTS and verify that it is possible to filter irrelevant spectral information from
+                buried layers. This methodology can also be very beneficial for machine learning based solutions. Training a model with
+                VTS filtered spectra will require only a reduced reference data set with variations of the parameters of interest. In contrast,
+                training a comparable machine learning model with unfiltered, original spectra will require a much larger reference set
+                comprising additionally process variations of all underlayers.
+
+
+
+
+                      Figure 4. a) Schematic of stack including VTS filter and comparison between reference metrology and VTS results for b)
+                      trench CD and c) trench height. The trench CD reference was obtained by CDSEM and the trench height by cross-sectional
+                      SEM.
+
+
+                4.2 M2 ILD CMP on Fully Integrated Embedded MRAM Devices
+                Embedding memory elements in the early BEOL requires a dielectric planarization before the subsequent metal patterning
+                since the MRAM pillars introduce topography otherwise not present. The ILD thickness is location- and design-dependent,
+                and process variations may lead to metallization defects. In the particular case discussed here, measuring a proxy target in
+                the scribe line is not sufficient to detect process excursion and thickness monitoring on fully integrated devices post CMP
+                is required. The MRAM elements are embedded between M1 and M2 on top of a fully build CMOS architecture. A
+                traditional OCD approach would be extremely challenging due to the optical model complexities, if at all possible. The
+                many degrees of freedom required to account for statistical process variations very likely would lead to a large
+                measurement uncertainty not sufficient to control the process.
+                Four wafers with different CMP split conditions but otherwise identical processing were manufactured. Spectra for both
+                dedicated metrology targets in the scribe line (MTJ only) and fully integrated devices in the active area (MTJ + CMOS)
+                were collected post ILD CMP on all wafers (Figure 5). Both targets comprise MRAM pillars with identical dimensions
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-5
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                and the difference between the scribe line targets and the active area was merely the patterning below the memory elements.
+                Specifically, the MTJ-only targets do not comprise any patterned features below the memory pillar but only several thin
+                films (Figure 5a). Figure 5b shows the distinct differences in ILD height after CMP between the two target areas. Moreover,
+                different CMP process conditions do not lead to a constant offset between the two measured targets, which is the main
+                reason why in-die measurements are key for successful in-line process monitoring.
+                A geometric optical model was built to analyze the dedicated MTJ only metrology target. Using rigorous coupled wave
+                analysis (RCWA) algorithms it is possible to solve for the total ILD thickness and the remaining ILD thickness above the
+                pillar. Due to the above discussed structural complexities, a geometric optical model was not attempted for the measured
+                in-die active area. Rather, VTS was used to filter the measured spectra from the fully integrated area such that the irrelevant
+                spectral information from the buried CMOS does not need to be considered. Consequently, the optical model can be
+                dramatically simplified. This VTS solution was then used to analyze measured spectra from both targets: MTJ only and
+                MTJ + CMOS. The excellent match of VTS results to reference metrology is shown in Figure 5c. For the MTJ only target,
+                the ILD height as a result of the traditional OCD model serves as reference. Note that here the remaining ILD thickness
+                above the pillar is plotted rather than the height in the open areas. A total of twelve cross-section TEM images from the
+                MTJ + CMOS targets were analyzed to obtain the total ILD thickness in the area between the pillars for all four CMP
+                conditions. These results confirm that the VTS algorithm can be used to analyze fully integrated targets to obtain device
+                information where a traditional model is infeasible. Moreover, it is possible to use the same VTS solution for analyzing
+                different target types.
+
+
+
+
+                      Figure 5. (a) Schematics of dedicated MRAM metrology target in the scribe line and active device (in-die) comprising MRAM
+                      pillars on top of a 14 nm CMOS node. (b) ILD height box plot with across wafer data for both targets as a function of four
+                      different CMP split conditions. (c) Correlation between VTS results and reference measurements from all four split conditions.
+                      The open symbols correspond to TEM and the solid symbols to OCD reference data, respectively.
+
+
+                4.3 M1 CMP on Integrated Nanosheet Gate-All-Around Devices
+                For early BEOL applications such as M1, there is a desire to measure critical dimensional parameters using OCD on targets
+                that are device-like or with little simplifications to match device processing closely rather than on targets that skip FEOL
+                patterning altogether. Subtle metal line height differences that may be observed after CMP related to microtopography,
+                for example, do not have to be considered and characterized when measuring and monitoring on device-like targets. Often,
+                this is not done though because of the inherent model complexities and the increased measurement uncertainty that then
+                outweigh the benefits significantly. Or often cumbersome hybrid model techniques have to be developed to lower
+                measurement uncertainties but still require a detailed and complicated geometric optical model. Specifically in the process
+                development stage, an OCD solution comprising a full optical model is usually not a preferred path. Continuous process
+                improvements in the FEOL and MOL would require frequent updates of the optical model, which is not economical due
+                to the long time-to-solution. VTS enables monitoring of M1 CDs on top of a full FEOL build comprising nanosheet gate-
+                all-around architectures without the need to consider or model any of the FEOL features, for example. Figure 6a depicts a
+                cross-sectional TEM image of a dedicated metrology target comprising nanosheets including gate and source drain (MOL
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-6
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                contacts are omitted here). VTS can be used to filter the spectral information related to the FEOL and allows focusing on
+                the M1 characteristics only. The results of the VTS solution show a very good correlation to OCD and cross-sectional
+                TEM reference metrology (Figure 6). Note that a traditional OCD model was not developed for the device-like target
+                containing M1 and NS-GAA FEOL due to the architectural complexity. For simplicity and to avoid a time-consuming
+                model solution, the depicted VTS to OCD comparison is using results from a short-loop BEOL wafer with only M1
+                patterning. The TEM results are obtained from full-flow wafers and the targets comprising M1 on top of a full FEOL build
+                with NS-GAA features (Figure 6a) as well as targets comprising patterned M1 only (Figure 7b), respectively. For all three
+                measured scenarios (short-loop M1 only, full flow M1 only, and M1 + NS-GAA) the same VTS model was used.
+
+
+
+
+                      Figure 6. (a) TEM cross-section of a device-like metrology target comprising M1 on top of a full FEOL build with NS-GAA
+                      features including gate stack and source/drain; MOL contacts are omitted. (b) M1 Cu CD and (c) M1 Cu height determined
+                      by VTS in comparison to OCD reference metrology for three sites and ten measurements each. (d) M1 Cu CD and (e) M1 Cu
+                      height determined by VTS in comparison to TEM reference metrology. Open symbols are referring to data from a target
+                      having only M1 patterning and solid symbols depict values obtained from a target depicted in (a).
+
+
+
+
+                      Figure 7. (a) Normalized fit quality obtained from OCD and VTS solutions for a dedicated metrology target comprising M1
+                      patterning only. The cross-section images correspond to areas (b) toward to the center of the wafer (Area 1) and (c) toward
+                      the edge of the wafer (Area 2).
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-7
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                While analyzing the dedicated metrology targets with M1 patterning only on some experimental wafers, an interesting
+                observation was made. As expected, the VTS solution delivered consistently good results for all sampled target locations
+                across the wafer. However, the OCD solution fit quality degraded significantly toward the center of the wafer (Figure 7).
+                Cross-sectional TEM images from two representative locations revealed that in Area 1 (toward the center of the wafer)
+                defects are present at the substrate interface. The traditional OCD model, utilizing the full spectral information, starts to
+                fail as soon as defects are present in the probed region. The VTS solution however uses filtered spectral content and is
+                therefore only sensitive to the topmost layers including the M1 layer of interest. Hence, VTS is agnostic to the defects and
+                can deliver equally good results across the entire wafer. This example confirms once again that VTS spectral filtering
+                works as intended and irrelevant spectral information from buried layers can be ignored for a simplified optical solution.
+
+
+
+                                                                           5. CONCLUSIONS
+                In this paper, vertical travelling scatterometry (VTS) is introduced and demonstrated for three metrology challenges related
+                to state-of-the-art device manufacturing. VTS utilizes information from spectral interferometry and allows for data filtering
+                of irrelevant spectral information from buried layers and features. Therefore, VTS enables selective measurements of the
+                topmost part of a stack, for example, and is agnostic to patterned or blanket underlayer variations. As shown, this can
+                dramatically simplify optical modelling, increase sensitivity to parameters of interest, and decrease time-to-solution
+                significantly. Due to the spectral filtering, applications can be solved with VTS that are not feasible with traditional OCD
+                modeling.
+                It was shown that VTS can filter out reflections from buried layers and successfully deliver critical dimensional parameters
+                of trenches on top of a tall stack with many dielectric films. Furthermore, M2 ILD CMP monitoring on fully integrated
+                embedded MRAM devices was demonstrated. VTS was used to characterize the remaining ILD thickness in the active
+                area, a task not feasible with traditional OCD modeling that would require a complex geometric model and many floating
+                parameters to account for any process variations. Lastly, an example of M1 monitoring on top of a nanosheet gate-all-
+                around FEOL device architecture was presented. The simplified VTS model is capable of delivering M1 dimensional
+                parameters and it was shown that the relevant metrics can be reported regardless of underlayer variations. The VTS solution
+                is agnostic to the presence of buried defects and thus also to FEOL process variations, meaning the VTS solution does not
+                need to be updated in case of any process changes affecting buried layers or features.
+                This is not only of high value for process development but also for high-volume manufacturing due to the increase
+                sensitivity to the parameters of interest and the significantly simplified optical model, which leads to a fast time-to-solution.
+                The VTS technique is not only relevant for solving BEOL logic applications but also highly valuable for non-volatile flash
+                memory where tall stacks with many layers have to be measured.
+
+
+
+                                                                   6. ACKNOWLEDGEMENTS
+                The authors would like to thank Marjorie Cheng, Haibo Liu, Daphna Peimer, Ilya Osherov, Michael Sendler (all Nova),
+                Chih-Chao Yang, Daniel Edelstein, and Nelson Felix (all IBM) for support of this work. Nova acknowledges funding for
+                VTS software development from the Electronic Components and Systems for European Leadership (ECSEL) Joint
+                Undertaking under grant agreement No. 826422.
+
+
+
+
+                                                                                REFERENCES
+
+                [1] D. Edelstein, M. Rizzolo, D. Sil, A. Dutta, J. DeBrosse, M. Wordeman, A. Arceo, I. C. Chu, J. Demarest, E. R. J.
+                    Edwards, E. R.Evarts, J. Fullam, A. Gasasira, G. Hu, M. Iwatake, R. Johnson, V. Katragadda, T. Levin, J. Li, Y. Liu,
+                    C. Long, T. Maffitt, S.McDermott, S. Mehta, V. Mehta, D. Metzler, J. Morillo, Y. Nakamura, S. Nguyen, P. Nieves,
+                    V. Pai, R. Patlolla, R. Pujari, R.Southwick, T. Standaert, O. van der Straten, H. Wu, C.-C. Yang, D. Houssameddine,
+                    J. M. Slaughter, D. C. Worledge, “A 14 nm Embedded STT-MRAM CMOS Technology,” 2020 IEEE International
+                    Electron Devices Meeting (IEDM), San Francisco, CA, USA (2020); doi: 10.1109/IEDM13553.2020.9371922.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-8
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                [2] M. Medikonda, D. Schmidt, M. Rizzolo, M. Breton, A. Dutta, H. Wu, E. R. Evarts, A. Cepler, R. Koret, I. Turovets,
+                     D. Edelstein, “Scatterometry based methodologies for characterization of MRAM technology,” Proc. SPIE 12053,
+                     12053-41 (2022).
+                [3] D. Schmidt, C. Durfee, S. Pancharatnam, M. Medikonda, A. Greene, J. Frougier, A. Cepler, G. Belkin, D. Shafir, R.
+                     Koret, R. Shtainman, I. Turovets, S. Wolfling, “OCD enhanced: implementation and validation of spectral
+                     interferometry for nanosheet inner spacer indentation,” Proc. SPIE 11611, 116111U (2021); doi:10.1117/12.2582364.
+                [4] N. Loubet, T. Hook, P. Montanini, C.-W. Yeung, S. Kanakasabapathy, M. Guillom, T. Yamashita, J. Zhang, X. Miao,
+                     J. Wang, A. Young, R. Chao, M. Kang, Z. Liu, S. Fan, B. Hamieh, S. Sieg, Y. Mignot, W. Xu, S.-C. Seo, J. Yoo, S.
+                     Mochizuki, M. Sankarapandian, O. Kwon, A. Carr, A. Greene, Y. Park, J. Frougier, R. Galatage, R. Bao, J. Shearer,
+                     R. Conti, H. Song, D. Lee, D. Kong, Y. Xu, A. Arceo, Z. Bi, P. Xu, R. Muthinti, J. Li, R. Wong, D. Brown, P. Oldiges,
+                     R. Robison, J. Arnold, N. Felix, S. Skordas, J. Gaudiello, T. Standaert, H. Jagannathan, D. Corliss, M.-H. Na, A.
+                     Knorr, T. Wu, D. Gupta, S. Lian, R. Divakaruni, T. Gow, C. Labelle, S. Lee, V. Paruchuri, H. Bu, M. Khare, “Stacked
+                     Nanosheet Gate-All-Around Transistor to Enable Scaling Beyond FinFET,” Symp. VLSI Tech., 230–231 (2017); doi:
+                     10.23919/VLSIT.2017.7998183.
+                [5] J. Zhang, J. Frougier, A. Greene, X. Miao, L. Yu, R. Vega, P. Montanini, C. Durfee, A. Gaul, S. Pancharatnam, C.
+                     Adams, H. Wu, H. Zhou, T. Shen, R. Xie, M. Sankarapandian, J. Wang, K. Watanabe, R. Bao, X. Liu, C. Park, H.
+                     Shobha, P. Joseph, D. Kong, A. Arceo De La Pena, J. Li, R. Conti, D. Dechene, N. Loubet, R. Chao, T. Yamashita,
+                     R. Robison, V. Basker, K. Zhao, D. Guo, B. Haran, R. Divakaruni, H. Bu, “Full Bottom Dielectric Isolation to Enable
+                     Stacked Nanosheet Transistor for Low Power and High Performance Applications,” 2019 IEEE International Electron
+                     Devices Meeting (IEDM), San Francisco, CA, USA (2019), doi: 10.1109/IEDM19573.2019.8993490.
+                [6] L. Towidjaja, C. Raymond, M. Littau, D. Forman, S. G. Hummel, “Back end of line metrology control applications
+                     using scatterometry,” Proc. SPIE 6152, 61521X (2006); doi: 10.1117/12.656515.
+                [7] S. Zangooie, M. Sendelbach, M. Angyal, C. Archie, A. Vaid, I. Matthew, P. Herrera, “Characterization of 32nm node
+                     BEOL grating structures using scatterometry,” Proc. SPIE 6922, 69220S (2008); doi: 10.1117/12.773088.
+                [8] B. L'Herron, R. Chao, K. Kim, W. T. Lee, K. Motoyama, B. Deprospo, T. Standaert, J. Gaudiello, C. Goldberg,
+                     “Hybridization of XRF/XPS and scatterometry for Cu CMP process control,” Proc. SPIE 9424, 94241M (2015); doi:
+                     10.1117/12.2086155.
+                [9] M. Breton, R. Chao, G. R. Muthinti, A. Arceo de la Peña, J. Simon, A. J. Cepler, M. Sendelbach, J. Gaudiello, S.
+                     Emans, M. Shifrin, Y. Etzioni, R. Urenski, W. T. Lee, “Electrical test prediction using hybrid metrology and machine
+                     learning,” Proc. SPIE 10145,1014504 (2017); doi: 10.1117/12.2261091.
+                [10] S. Das, J. Hung, S. Halder, R. Koret, I. Turovets, A.-L. Charley, P. Leray, “Scatterometry solutions for 14nm half-
+                     pitch BEOL layers patterned by EUV single exposure,” Proc. SPIE 11611, 116112A (2021); doi: 10.1117/12.2583714.
+                [11] P. Timoney, A. Vaid, B. C. Kang, H. Liu, P. Isbester, M. Cheng, S. Ng-Emans, N. Yellai, M. Sendelbach, R. Koret,
+                     O. Gedalia, “Hybrid scatterometry measurement for BEOL process control,” Proc. SPIE 10145, 1014506 (2017); doi:
+                     10.1117/12.2261452.
+                [12] A. Vaid, L. Subramany, G. Iddawela, C. Ford, J. Allgair, G. Agrawal, J. Taylor, C. Hartig, B. C. Kang, C. Bozdog,
+                     M. Sendelbach, P. Isbester, L. Issascharoff, “Implementation of hybrid metrology at HVM fab for 20nm and beyond,”
+                     Proc. SPIE 8681, 868103 (2013); doi: 10.1117/12.2012339.
+                [13] I. Osherov, L. Issacharoff, O. Gedalia, K. Wakamoto, M. Sendelbach, M. Asano, “Application of advanced hybrid
+                     metrology method to nanoimprint lithography,” Proc. SPIE 10145, 101451X (2017); doi: 10.1117/12.2266577.
+                [14] D. Kong, D. Schmidt, J. Church, C.-C. Liu, M. Breton, C. Murray, E. Miller, L. Meli, J. Sporre, N. Felix, I. Ahsan,
+                     A. J. Cepler, M. Cheng, R. Koret, I. Turovets, “Measuring local CD uniformity in EUV vias with scatterometry and
+                     machine learning,” Proc. SPIE 11325, 113251I (2020); doi: 10.1117/12.2551498.
+                [15] D. Schmidt, K. Petrillo, M. Breton, J. Fullam, R. Koret, I. Turovets, A. Cepler, “Advanced EUV Resist
+                     Characterization using Scatterometry and Machine Learning,” Annual SEMI Advanced Semiconductor
+                     Manufacturing Conference (ASMC), Milpitas, CA, USA, (2021), doi: 10.1109/ASMC51741.2021.9435698.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 12053 120530S-9
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Jun 2022
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+
