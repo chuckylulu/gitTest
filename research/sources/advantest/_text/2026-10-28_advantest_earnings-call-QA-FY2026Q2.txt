@@ -1,0 +1,197 @@
+                                                                   Advantest Corporation
+                                      Q2 FY2026 (six months ended September 30th, 2026) Financial Briefing - Q&A Summary
+                                                                                October 28th, 2026
+[Tester Market and Share Outlook|テスタ市場及びシェアの見通し]
+                                                English                                                             日本語
+ Q1      What will drive further tester market TAM growth in CY2027? Please provide your       CY2027 のテスタ市場のさらなる成長を牽引する要因は何か。また、現時
+         current quantitative growth outlook.                                                  点での定量的な成長見通しはいかがか。
+
+ A1      We will provide a quantitative outlook at our Q3 Financial Briefing in January        定量的な見通しは、2027 年 1 月の Q3 決算説明会で示す予定である。た
+         2027. Tester TAM has grown at an annual average of about 50% or slightly above        だし、テスタ市場は過去数年間、年平均約 50%またはそれをやや上回るペ
+         over the past few years, and at the moment, we do not see that slowing, with          ースで成長しており、現時点では減速するとは見ていない。GPU、カスタ
+         GPUs, custom ASICs, and CPUs continuing to drive growth. Given our customers’         ム ASIC、CPU が引き続き成長を牽引すると見ている。顧客が示す先端パ
+         growth outlook for advanced packaging, among other factors, we anticipate that        ッケージの成長見通しなどを踏まえると、テスタ市場は直近数年と同程
+         tester TAM growth will be in line with that of recent years or potentially higher.    度、またはそれ以上に成長する可能性があると見ている。
+
+ Q2      Could your SoC tester market share reach 70% or more next year? What would            SoC テスタ市場シェアは来年に 70%以上へ到達する可能性があるか。ま
+         drive further share gains?                                                            た、今後のシェア上昇を牽引する要因は何か。
+
+ A2      While we have not yet specified the timing, we continue to see a path to above        具体的な時期はまだ申し上げられないが、引き続き 70%超への道筋が見え
+         70%. In our estimation, SoC tester share increased from 56% in CY2024 to 66% in       ている。SoC テスタのシェアは CY2024 の 56%から CY2025 には 66%へ
+         CY2025, and we expect further gains in both CY2026 and CY2027. These gains            上昇したと推測しており、CY2026 と CY2027 にさらなる上昇を見込んで
+         should come from continued high growth at existing customers, as well as share        いる。既存顧客の継続的な高成長と、新規顧客でのシェア獲得の双方が寄
+         gains with new customers. V93000 is increasingly regarded as an industry              与する。HPC 分野では、V93000 が業界標準と見なされつつある。直近の
+         standard in HPC. Recent results have increased our confidence that share can          実績を踏まえ、近い将来に 70%、さらにはそれを上回る水準へ到達できる
+         reach 70% or potentially higher in the near future.                                   との確信が高まっている。
+
+
+
+[FY2026 Forecast | FY2026 業績予想]
+                                                English                                                             日本語
+ Q3      What is driving the substantial upward revision to the FY2026 SoC test system         SoC テストシステムの FY2026 売上見通しを 7 月予想から大幅に引き上
+         sales forecast compared to the July forecast? Is the increase mainly from GPUs,       げた要因は何か。GPU、カスタム ASIC、CPU のうち主にどれによるもの
+         custom ASICs, or CPUs?                                                                か。
+
+ A3      We see elevated testing demand across all compute device segments. GPU and            コンピュート市場のすべてのデバイス分野でテスト需要が高まっている。
+         custom ASIC testing demand remains very strong, but the biggest factor is CPU         GPU とカスタム ASIC 向けテスト需要は引き続き非常に強いが、最大の要
+         testing demand associated with agentic AI, which has emerged as a third layer of      因はエージェンティック AI 用 CPU 向けのテスト需要であり、GPU とカ
+         growth on top of GPUs and custom ASICs.                                               スタム ASIC に続く第 3 の成長軸となっている。
+
+ Q4      While the CY2026 SoC tester market outlook remains unchanged, your full-year          CY2026 の SoC テスタ市場見通しは据え置かれたが、御社の FY2026 通
+         guidance was raised. Was this upward revision mainly due to capacity expansion        期業績予想は上方修正された。この上方修正は、主に生産能力の拡張が想
+         progressing faster than expected, with contribution being higher in Q4 compared       定より早く進んでいることによるもので、Q3 よりも Q4 の寄与が大きい
+         to Q3?                                                                                という理解でよいか。
+
+ A4      Yes. We expect SoC test system sales to increase QoQ in Q3 and rise even further      そのように理解していただいてよい。SoC テストシステムの売上は Q3 に
+         in Q4, while memory test system sales are also expected to be strong in Q4. As a      前四半期比で増加し、Q4 はさらに増える見通し。メモリテストシステム
+         result, sales are expected to grow by approximately 20% from 1H to 2H, and we         も Q4 での好調な売上を見込んでいる。そのため、下期の売上高は上期比
+         will continue to expand our production capacity to meet robust demand.                で約 20%増加する見込みであり、生産能力を拡張して旺盛な需要に対応し
+                                                                                               ていく。
+
+ Q5      Could you provide more details on the factors behind the lower operating margin       下期の営業利益率が上期比で低下する要因について、詳しく教えてほし
+         in 2H compared with 1H? How are you addressing higher DRAM and other                  い。また、DRAM などの部材コスト上昇に対し、顧客への価格転嫁や価格
+         component costs, including through customer pass-through or pricing, and what         設定を含めてどのように対応しており、コストがさらに上昇した場合には
+         would be the impact if those costs rose further?                                      どのような影響があるか。
+
+
+ A5      In 1H, we were able to utilize DRAM inventory procured before the price               上期は、価格上昇前に調達した DRAM の在庫が活用できたことに加え、
+         increases, and there was also a one-time benefit to the operating margin from a       棚卸資産評価損の戻入れという営業利益率を押し上げる一過性の要因が
+         reversal of inventory write-down.                                                     あった。
+
+         On the other hand, both SoC and memory test systems consume significant               一方、SoC テストシステムとメモリテストシステムの双方で DRAM を多
+         amounts of DRAM, and we have clearly felt the impact of higher DRAM prices.           く使用しており、DRAM 価格上昇の影響を明確に受けている。DRAM な
+         Higher DRAM and other component costs are a major reason operating margin is          どの部材コスト上昇は、下期の営業利益率が上期比で低下する主因であ
+         expected to decline and will remain a headwind.                                       り、今後も逆風となる。
+
+         However, we continue to maintain healthy margin levels. Rather than relying on        ただし、当社の利益率は健全な水準を維持すると見ている。直接的な値上
+         direct price increases, we expect to offset much of the impact of rising component    げに頼るのではなく、SoC テストシステムとメモリテストシステムの双方
+
+                                                                                         1
+        costs through pricing enabled by higher-specification tester configurations,          で、より大規模なテスタ構成、ライセンス、新計測モジュールなどを通じ
+        licensing, and new instrumentation in both SoC and memory test systems, and           た価格設定により、部材コスト上昇の影響の大部分を相殺し、下期の営業
+        maintain operating margins in the low 50% range in 2H.                                利益率は 50%台前半を維持する見通しである。
+
+
+
+[Capacity Expansion|生産能力増強]
+                                               English                                                             日本語
+Q6      Generative AI computing systems require memory, CPUs, custom ASICs and other          生成 AI 向けコンピューティングシステムでは、メモリ、CPU、カスタム
+        components to be available together. Could the current memory shortage                ASIC などを一体として確保する必要がある。現在のメモリ不足が今後の
+        potentially constrain your future growth?                                             御社の成長を制約する可能性はあるか。
+
+A6      Memory supply remains tight across the industry, and we are not immune. DRAM          メモリ供給は業界全体で引き続き逼迫しており、当社も影響を免れない。
+        product allocation has shifted from legacy DRAM to high-end HBM and server            DRAM 製品のアロケーションが従来世代の DRAM からハイエンド HBM
+        DRAM, creating difficulties for industrial and automotive applications. However,      やサーバーDRAM へ移行したことで、産業機器や自動車用途にも支障が
+        as seen during the CY2021-CY2022 supply-chain shortages, our customers                生じている。一方、CY2021 から CY2022 の供給制約時と同様、顧客は当
+        understand that memory components must be made available for us to deliver            社がテスタを供給するためにはメモリ部品の確保が必要であることを理
+        testers, and we are working with them and our reliable suppliers to manage the        解しており、顧客や信頼できるサプライヤーと連携して現在の供給制約に
+        current constraints.                                                                  対応している。
+
+Q7      When do you expect to reach annual SoC tester capacity of 10,000 systems? How         SoC テスタの年産 1 万台体制をいつ達成する見込みか。また、1 万台以降
+        are you thinking about further capacity expansion beyond that level?                  の能力増強をどのように考えているか。
+
+A7      The original plan was to reach annual production capacity of 10,000 systems by        当初は FY2028 末までに年産 1 万台へ到達するとしていたが、強い需要を
+        the end of FY2028, but the timeline must be brought forward significantly given       踏まえると大幅な前倒しが必要であり、実現に高い自信を持っている。具
+        the strong demand, and we are highly confident we can do so. We are not ready         体的な時期を示す準備はできていないが、来年 1 月予定の Q3 決算説明会
+        to provide an exact date, although we may be able to give more details in our Q3      には追加説明できる可能性がある。また、年産 1 万台以降の次のステップ
+        Financial Briefing planned for January next year. Beyond annual production            として、年産 2 万台への倍増について、顧客需要を踏まえ社内で積極的に
+        capacity of 10,000 systems, the next step could be a doubling to 20,000 systems       検討を進めている。こちらについては、来年 5 月頃に予定している第 4 期
+        per year, which is under active internal discussion based on customer demand.         中期経営計画の発表時にさらに説明できる可能性がある。
+        We may be able to explain further when the Fourth Mid-Term Management Plan
+        is released, which is scheduled for around May next year.
+
+
+
+[CPU Test Demand| CPU 向けテスト需要]
+                                               English                                                             日本語
+Q8      Is strong CPU testing demand mainly driven by higher CPU volumes, or are longer       CPU 向けテスト需要の強さは主に CPU の数量増加によるものか、それと
+        test times also contributing? You previously mentioned that CPU test times are        もテスト時間の長期化も寄与しているのか。以前、CPU のテスト時間は
+        not as long as those for GPUs and custom ASICs. Are you seeing longer test times      GPU やカスタム ASIC ほど長くないと説明されていたが、CPU のテスト
+        for CPUs?                                                                             時間は長期化しているのか。
+
+A8      That is correct. CPU test times are not as long as those for GPUs or custom ASICs     仰る通り、CPU のテスト時間は、場合によっては GPU やカスタム ASIC ほ
+        in some cases, but they are still significant. The unit volume of server devices is   ど長くないものの、テスト時間が長いデバイスではある。エージェンティ
+        quite large due to agentic AI, and the ratio of CPUs to GPUs has also increased for   ック AI によりサーバー用デバイスのユニット数が非常に多くなっている
+        inference. Combining these factors, CPU testing demand is providing a significant     ことに加え、推論用途では CPU 対 GPU の比率も上昇している。これらの
+        boost to our SoC tester sales.                                                        要因が相まって、CPU 向けテスト需要が当社の SoC テスタの売上を大きく
+                                                                                              押し上げている。
+
+Q9      How does Advantest's market share differ between x86-based and ARM-based              x86 ベースと ARM ベースの CPU のテストで、御社の市場シェアに違い
+        CPU testing, and would a shift toward ARM-based CPUs affect your business?            はあるか。今後 ARM ベースの CPU へのシフトは御社ビジネスに影響す
+        Also, compared with competitors, your sales growth appears to have been               るか。また、競合他社と比較して、今四半期、前四半期の御社の売上成長
+        stronger both this quarter and last quarter. Is this because your share in CPU        は高く見えるが、これは CPU 向けテストにおける御社のシェアが AI ア
+        testing is higher than in AI accelerator testing, and is that a key driver of your    クセラレータ向けよりも高く、それが成長の主因となっているのか。
+        recent growth?
+
+A9      We are well positioned across the entire CPU market, including both x86-based         当社は x86 ベースと ARM ベースの企業を含む CPU 市場全体で良好なポ
+        and ARM-based companies, with the V93000 maintaining a strong position in             ジションにあり、V93000 は双方の市場で強固なポジションを確立してい
+        both markets. As a result, shifts in share between x86-based and ARM-based            る。そのため、x86 ベースと ARM ベースのプレーヤー間のシェア変動は
+        players are not particularly important to us, and we believe our competitiveness      当社にとってそれほど重要ではなく、CPU 市場における競争力が下期の
+        in the CPU market is one reason for 2H sales growth. However, we would like to        売上成長の一因になると見ている。ただし、私たちは、CPU と AI アクセ
+        emphasize our competitiveness across the HPC (High Performance Computing)             ラレータを個別に見るのではなく、GPU、カスタム ASIC、CPU を含む
+        device market, including GPUs, custom ASICs and CPUs, rather than looking at          HPC（High Performance Computing）デバイス市場全体で競争力を有し
+        CPU and AI accelerator market shares separately. We also have a strong position       ていることを強調したい。ネットワーキング向け半導体やシリコンフォト
+        in networking semiconductors and silicon photonics. Overall, we continue to           ニクスでも高い競争力を有している。全体として当社は強固なポジション
+        maintain strong positions.                                                            を有している。
+
+                                                                                        2
+[Trade Statistics|貿易統計]
+                                                           English                                                                                              日本語
+ Q10          As securities analysts, we monitor statistics such as Taiwan semiconductor                           私たち証券アナリストは、台湾の半導体製造装置の輸入やマレーシアの輸
+              production equipment imports and Malaysia exports, which have shown some                             出統計を参照しており、これらは過去に御社の SoC テスタ売上と一定の
+              correlation with your SoC tester sales in the past. However, in Q2, your SoC tester                  相関が見られた。しかし、Q2 では統計データとの間に大きな乖離が見ら
+              sales showed a significant divergence from the statistical data. Are there any                       れる。何か考えられる要因はあるか。
+              possible reasons for this divergence?
+
+ A10          We recognize that some capital market participants closely monitor such trade                        そのような貿易統計に注目する資本市場関係者がいることは認識してい
+              statistics. However, because these are not data published by us, we are not in a                     る。しかし、それらは当社が公表しているデータではないため、当社がお
+              position to comment.                                                                                 答えできる立場にはない。
+
+
+
+[Future Business Opportunities|将来の事業機会]
+                                                           English                                                                                              日本語
+ Q11          Could tester market growth accelerate significantly over the next four to five                       不 良 品 を 実 装 す る こ と に よ る 廃 棄 コ ス ト 削 減 の た め の CPO （ Co-
+              years, driven by longer CPO (Co-Packaged Optics) test times to reduce the cost of                    Packaged Optics）のテスト時間が長くなることや、Terafab 向け需要の
+              scrapping packages due to defective components, as well as growing demand                            伸びにより、テスタ市場の成長が今後 4～5 年大きく伸びる可能性はある
+              related to Terafab?                                                                                  か。
+
+ A11          CPO requires longer test times to ensure high yields for optical engines, which                      CPO では、電気信号と光信号を変換する光エンジンの良好な歩留まりを
+              convert between electrical and optical signals, providing a tailwind for testing                     確保するために長時間のテストが必要であり、テスト需要に追い風とな
+              demand. We expect the CPO tester market to double or triple annually over the                        る。CPO 向けテスタ市場は今後数年間、毎年 2 倍から 3 倍に拡大し、約
+              next couple of years and reach about 1 billion USD. We are participating in all test                 10 億米ドルに達すると見ている。当社はすべてのテスト・インサーショ
+              insertions. However, we expect the CPO tester market to remain relatively small                      ンに参画している。ただし、110 億米ドルを超え、年率 50%以上で成長す
+              compared to the overall SoC tester market, which exceeds 11 billion USD and is                       る SoC テスタ市場全体と比べると、CPO 向けの市場は相対的に小さい規
+              growing at more than 50% annually. Even so, we expect CPO to become a larger                         模に留まると見ている。それでも、当社事業に占める CPO 向け需要の割
+              part of our business.                                                                                合は将来的に高まると期待している。
+
+              I generally agree with your views, and we see potential for market growth to                         市場成長が 4～5 年続く可能性があるという見方にはおおむね同意する。
+              continue for four to five years. We believe the Fourth Mid-Term Management                           第 4 期中期経営計画は来年 5 月頃に発表する見込みだが、そこでは、
+              Plan, scheduled for release around May 2027, may provide more detail on the                          CY2028 から CY2029 までの見通しについて、もう少し詳細を示せると考
+              outlook through CY2028 and CY2029.                                                                   えている。
+
+              In regard to Terafab, while we cannot comment on specific customers, we see a                        なお Terafab については、特定個社へのコメントは控えるが、当社にとっ
+              realistic business opportunity. Additional SoC and memory semiconductor                              て具体性のある事業機会と捉えている。世界的に SoC とメモリ半導体の
+              capacity is needed globally, creating meaningful potential for Advantest.                            追加生産能力が必要となる状況は、当社にとって大きなビジネス機会につ
+                                                                                                                   ながると見ている。
+
+
+
+Note: This document is prepared for those who were unable to attend the financial briefing and is intended only for reference purposes. The contents of this document have been summarized by Advantest at its
+discretion, based on the questions and answers at the financial briefing. This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These
+statements include, among other things, the discussion of Advantest’s business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-
+looking statements can be identified by the use of forward-looking terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements
+are subject to known and unknown risks, uncertainties and other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed
+or implied by such forward-looking statements. Except as required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+
+※本資料は、決算説明会にご参加いただけなかった方のために、参考資料として作成したものです。本資料に記載されている内容は、決算説明会の質疑をもとに当社の判断で要約したもので
+す。また本資料には、将来の事象についての、当社の現時点における期待、見積り及び予測に基づく記述が含まれております。これらの将来の事象に係る記述は、当社における実際の財務状況
+や活動状況が、当該将来の事象に係る記述によって明示されているもの又は暗示されているものと重要な差異を生じるかもしれないという既知及び未知のリスク、不確実性その他の要因が内
+包されており、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、又はその他の理由により、将来予
+想に関する記述を更新又は修正することはありません。
+
+
+
+
+                                                                                                          3
+

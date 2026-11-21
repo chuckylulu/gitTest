@@ -1,0 +1,409 @@
+           Advantest Corporation
+Q1 FY2026 (Three months ended June 30th, 2026)
+                July 29 th, 2026
+
+
+
+
+                       1
+[p.3]
+                                              English                                                                       日本語
+ o      Highlights                                                                                  o   ハイライト
+
+        •   Q1 delivered record quarterly highs in sales, operating income and net                      •   第 1 四半期は、売上高、営業利益、当期利益ともに過去最高を更新し、
+            income, marking a very strong start to FY2026. More importantly, I would                        とても力強い FY2026 のスタートとなりました。ここで私がお伝えし
+            like to focus on the structural shift in demand that is driving these results.                  たいのは、その背景にある需要構造の変化です。
+
+        •   The AI market is entering a new phase of growth. The rapid adoption of                      •   特に足元では、AI 市場は新たな成長局面に入っています。推論 AI の
+            inference AI is becoming an increasingly important driver of semiconductor                      拡大が半導体需要を押し上げており、その影響は ASIC、CPU、DRAM
+            demand. This trend is benefiting a broad range of devices, including ASICs,                     を含む幅広い領域に及んでいます。AI 関連半導体の生産数量は引き
+            CPUs, and DRAM. Production volumes of AI-related semiconductors                                 続き拡大しており、同時にデバイスの複雑化も急速に進んでいます。
+            continue to grow, while devices are becoming increasingly complex.                              先端パッケージング、高速 I/O、電源・熱制御など、多くの技術革新
+            Advanced packaging, high-speed I/O, power management, thermal                                   が同時に進行しています。その結果、半導体テストに求められる内容
+            optimization, and many other technologies are advancing simultaneously. As                      は、数年前と比べて大きく変化しています。半導体の生産数量に注目
+            a result, semiconductor testing requirements have changed significantly                         が集まりがちですが、私たちは数量だけではなく、世代ごとに増加す
+            compared to just a few years ago. While semiconductor unit volumes often                        るテスト・コンテンツおよびテスト・インサーションの拡大こそが、
+            attract the most attention, we believe the more important driver of future tester               今後のテスタ需要を支える重要な要素だと考えています。
+            demand is not just unit volumes alone, but the continued growth in test
+                                                                                                        •   こうした環境のもと、CY2026 のテスタ市場は、従来の想定を上回る
+            content and test insertions with each new device generation.
+                                                                                                            規模へ拡大する見通しです。当社は、SoC テスタ、メモリテスタとも
+        •   Against this backdrop, we now expect the CY2026 tester market to be larger                      に、4 月時点の想定を上回る市場拡大を見込んでいます。特に推論 AI
+            than previous expectations. For both SoC and memory testers, we see market                      に関連する ASIC、CPU、DRAM などの領域では、テスタ需要が当初
+            growth exceeding our expectations from April. In particular, tester demand                      の想定を上回るペースで伸長しています。
+            for inference AI-related ASICs, CPUs, and DRAM is growing faster than we
+                                                                                                        •   また、当社はこの成長機会を取り込む上でとても有利なポジションに
+            previously expected.
+                                                                                                            あります。GPU、ASIC、CPU といった、先端パッケージを採用し、
+        •   And Advantest remains very well positioned for this growth. Our leading SoC                     複雑化の進む AI 半導体分野で、主力 SoC テスタである V93000 は幅
+            Test platform, V93000, has been widely adopted across a broad range of                          広い顧客に採用されており、当社の競争優位性を支える重要な基盤と
+
+            customers in the increasingly complex AI semiconductor markets, where                           なっています。
+
+            advanced packaging technologies including GPUs, ASICs, and CPUs are                         •   この市場環境と第 1 四半期の進捗を踏まえ、当社は FY2026 通期業績
+            being adopted. It serves as a key foundation that underpins our competitive                     予想を上方修正しました。売上、営業利益、当期利益共に過去最高を
+            advantage.                                                                                      さらに上回る見通しです。EPS も過去最高水準となる見込みです。こ
+                                                                                                            れは足元の業績だけでなく、当面の需要環境に対する当社の見方を反
+        •   Reflecting both the market environment and our Q1 performance, we have
+                                                                                                            映したものです。
+            raised our FY2026 outlook. We now expect revenue, operating income, and
+            net income to reach new record highs, and EPS is also expected to reach a                   •   こうした需要拡大に対応するため、当社は安定的かつ確実な供給体制
+            record high. This outlook reflects not only our recent performance, but also                    の強化に引き続き注力しています。当社はこれまでも生産能力の拡大
+            our current view of the demand environment.                                                     に取り組んできましたが、足元の需要拡大を受け、従来計画を前倒し
+                                                                                                            しながら取り組みを加速しています。これは単に台数を増やすという
+        •   Given this, we continue to focus on reliable delivery at scale to respond to the
+                                                                                                            話ではなく、サプライチェーン全体の対応力、製造パートナーとの連
+            demand. We have been actively investing in capacity expansion, and given
+                                                                                                            携、部材調達、品質、納入リードタイムまで含めた総合的な供給能力
+            the recent surge in demand, we are accelerating those efforts and pulling
+                                                                                                            の強化です。
+            forward our original plans. This goes far beyond simply increasing production
+                                                                                                        •   また、今後の半導体テストでは、テスタに加え、ソフトウェア、自動
+            volumes. It involves strengthening our entire supply chain, deepening
+                                                                                                            化技術、データ活用、さらには周辺ソリューションを含めた、より統
+            collaboration with production partners, securing critical components,
+                                                                                                            合的なアプローチが引き続き求められると考えています。そして当社
+            maintaining quality, and ensuring timely delivery to customers.
+                                                                                                            は、テスト装置メーカーから、包括的なソリューション・プロバイダ
+        •   Looking further ahead, we believe the future of semiconductor testing will                      ーへと進化を続けています。その実現に向け、R&D 投資、ソフトウェ
+            continuously require a more integrated approach that encompasses not only                       ア開発、オートメーション、AI を活用したテスト技術、そしてパート
+
+            test systems, but also software, automation, data analytics, and adjacent                       ナーシップへの投資を継続的に強化しています。シリコンフォトニク
+                                                                                                            スや先端パッケージングへの取り組みも、その延長線上にあります。
+            solutions. And, we continue to evolve from a test equipment company into a
+                                                                                                            これらの投資は、短期的な成長だけでなく、中長期的に当社の競争優
+            comprehensive solutions provider. Therefore, we continue to increase
+                                                                                                            位性をさらに深め、広げるためのものです。
+            investments in R&D, software development, automation, AI-enabled test
+            technologies, and strategic partnerships. This broader strategy also extends to             •   まとめますと、今回の業績は、AI を中心とした構造的な成長機会が、
+                                                                                                            長期にわたり持続するサイクルの中で着実に顕在化していることを
+            areas such as silicon photonics and advanced packaging. These investments
+                                                                                                            示しています。当社は、強固な市場ポジションと顧客基盤を活かしな
+            are intended not only to drive short-term growth, but also to further strengthen
+                                                                                                            がら、生産能力の拡大と将来に向けた投資を加速しています。私たち
+            and expand our competitive advantage over the medium to long term.
+                                                                                                            は、足元の需要に対応するだけでなく、業界の次の成長ステージを支
+        •   In summary, this quarter's performance demonstrates that structural growth                      えるための投資とさらなる競争力強化を進めています。
+            opportunities driven by AI continue to materialize through this elongated and
+
+                                                                                                2
+            durable cycle. Supported by our strong market position and broad customer
+            base, we are accelerating capacity expansion and investing for the future.
+            Beyond meeting current demand, we are investing and strengthening our
+            competitive position to support the next stage of growth for the
+            semiconductor industry.
+
+
+
+
+[p.5]
+                                              English                                                                   日本語
+ o      Q1 FY2026 Summary of Results                                                             o   FY2026 Q1 業績概要
+
+        •   As production volumes of advanced AI-related semiconductors increased and                •   AI 関連の先端半導体の生産数量が増し、複雑化が進む中で、当社製品
+            device complexity grew, customers continued to invest actively in our                        に対する顧客の積極的な設備投資が継続しました。
+            products.
+                                                                                                     •   当社は、こうした旺盛なテスタ需要にタイムリーに対応すべく、サプ
+        •   Advantest worked to expand production capacity throughout the supply chain                   ライチェーン全体を通じて生産能力拡大に努めました。その結果、売
+            to meet customers’ strong tester demand in a timely manner. As a result, net                 上高は四半期ベースで過去最高を更新しました。
+            sales reached a record quarterly high.
+                                                                                                     •   利益面では、増収によるスケールメリットなどに加え、戦略投資に関
+        •   In terms of profits, in addition to economies of scale driven by higher sales,               連する評価益を主な要因として、金融収益約 447 億円を計上しまし
+            we recorded approximately 44.7 billion JPY in financial income, primarily                    た。これは主に、投資ファンド持分への投資に対する期末時点の評価
+
+            due to valuation gains related to strategic investments. These gains mainly                  益によるものです。
+
+            reflected period-end valuation gains on investments in investment fund.                  •   これら要因などから、営業利益、当期利益についても四半期ベースで
+                                                                                                         過去最高を記録しました。
+        •   As a result of these factors, both operating income and net income also
+            reached record quarterly highs.
+
+                                                                                             3
+[p.6]
+                                                English                                                                 日本語
+ o      Quarterly Sales by Segment                                                               o   四半期売上高 事業セグメント別
+
+
+
+ o      Test System Business                                                                     o   テストシステム事業
+
+        •   SoC Test System sales were 259.6 billion JPY, increasing QoQ. In addition to             •   SoC テストシステムは 2,596 億円と前四半期比で増収となりました。
+            continued strong sales for GPU-related applications, sales for ASIC-related                  GPU 向けでの高水準な製品販売に加え、ASIC 向けでも売上を伸ばし
+            applications also increased. Sales for automotive, industrial and                            ました。また、車載・産業機器関連や通信半導体向けの製品売上も堅
+            communications semiconductor applications remained solid.                                    調に推移しました。
+
+        •   Memory Test System sales were 48.0 billion JPY. Sales increased QoQ,                     •   メモリテストシステムの売上高は 480 億円となりました。高性能
+            primarily driven by higher sales for high-performance DRAM.                                  DRAM 向けを中心に前四半期比で売上が伸長しました。
+
+        •   For other systems, sales of device interfaces and test handlers have increased           •   その他システムは、テスタ販売の増加に伴い、デバイスインタフェー
+            in line with higher tester sales.                                                            スやテストハンドラの売上が増加しました。
+
+
+
+ o Services & Others                                                                             o サービス他
+
+        •   Support services sales remained solid, driven by the increasing installed base           •   テスタの設置台数増加に伴い、サポート・サービスの売上が堅調でし
+            of testers.                                                                                  た。
+
+
+
+
+                                                                                             4
+[p.7]
+                                            English                                                                      日本語
+ o      FY2026 Q1 Sales by Region (Ship to Region)                                              o   FY2026 Q1 地域(出荷先)別売上高
+
+        •   Taiwan                                                                                  •   台湾
+
+             Demand remained strong, particularly for high-end SoC applications.                        ハイエンド SoC 向けを中心に高水準な需要が継続しました。
+
+        •   South Korea                                                                             •   韓国
+
+            Sales for both SoC Test Systems and Memory Test Systems increased                           SoC テストシステム、メモリテストシステムともに売上を大きく伸ば
+            significantly.                                                                              しました。
+
+        •   China                                                                                   •   中国
+
+            Sales for SoC Test Systems increased.                                                       SoC テストシステムの売上が増加しました。
+
+
+
+
+[p.8]
+                                            English                                                                      日本語
+ o      FY2026 Q1 Sales, Operating Income                                                       o   FY2026 Q1 売上高、営業利益
+
+        •   Gross margin reached 69.5%, supported by a favorable sales mix and limited              •   良好な売上ミックスが継続したことに加え、旺盛な需要環境を背景に
+            inventory valuation losses amid the robust demand environment.                              棚卸資産の評価損が限定的であったことなども寄与し、売上総利益率
+                                                                                                        は 69.5%となりました。
+        •   SG&A, including the total of “other income and expenses” was 65.6 billion
+            JPY, remaining nearly flat QoQ.                                                         •   販売費及び一般管理費（その他の収益と費用を含む）は 656 億円と、
+                                                                                                        前四半期並みの水準に留まりました。
+        •   As a result, operating income was 190.0 billion JPY, with an operating margin
+            of 51.7%.                                                                               •   その結果、営業利益は 1,900 億円、営業利益率は 51.7%となりました。
+
+                                                                                            5
+[p.9]
+                                             English                                                                     日本語
+ o      FY2026 Q1 R&D Expenses / CapEx / D&A                                                      o   FY2026 Q1 研究開発費等
+
+        •   R&D expenses were 21.5 billion JPY, and CapEx was 11.0 billion JPY, as we                 •   研究開発費は 215 億円、設備投資は 110 億円となり、高水準の投資
+            continued to invest at a high level.                                                          を継続しています。
+
+
+
+ o      FY2026 Q1 Cash Flow                                                                       o   FY2026 Q1 のキャッシュ・フローの状況
+
+        •   Operating cash flow was an inflow of 137.2 billion JPY. Despite payments                  •   Q1 では法人税や賞与の支払いがあったものの、営業債権の回収が進
+            for income taxes and bonuses in Q1, cash flow benefited from continued                        んだことや、増収・増益基調が継続したことなどから、営業キャッシ
+            collection of trade receivables as well as continued growth in sales and                      ュ・フローは 1,372 億円の収入となりました。
+            profits.
+                                                                                                      •   投資キャッシュ・フローは 1,025 億円の支出となりました。Ｑ1 には
+        •   Investing cash flow was an outflow of 102.5 billion JPY. In Q1, we recorded                   投資有価証券の取得による支出および売却による収入がありました。
+            cash outflows for the acquisition of investment securities and cash inflows                   その内訳は投資ファンドへの出資及び株式取得の支出で計 1,139 億
+            from the sale of investment securities. These consisted of 113.9 billion JPY                  円、保有株式の売却による収入 221 億円です。
+            for a capital contribution to an investment fund and the acquisition of shares,
+                                                                                                      •   これらの投資有価証券の取得は、当社が包括的なソリューション・プ
+            partially offset by 22.1 billion JPY in proceeds from the sale of held shares.
+                                                                                                          ロバイダーになることを目指した戦略投資の一環です。
+        •   These acquisitions of investment securities were made as part of our strategic
+                                                                                                      •   また保有株式の売却は、当社のより広範な戦略的優先事項を踏まえて
+            investments aimed at evolving into a comprehensive solutions provider.
+                                                                                                          判断したものです。
+        •   The decision to sell shareholdings was also made in light of our broader
+                                                                                                      •   このように、Q1 には戦略投資に関連した大規模な支出を実行しまし
+            strategic priorities.
+                                                                                                          たが、フリー・キャッシュ・フローは 347 億円の収入となりました。
+        •   As such, we made substantial amount of strategic investments in Q1.
+            However, our free cash flow remained positive at 34.7 billion JPY.
+
+
+
+
+                                                                                              6
+[p.10]
+                                          English                                                                     日本語
+ o   Balance Sheet for Period Ended June 30th, 2026                                          o   2026 年 6 月末時点のバランスシート
+
+     •   Cash and cash equivalents were 413.1 billion JPY, while inventories were                •   現金及び現金同等物は 4,131 億円、棚卸資産は 2,737 億円でした。
+         273.7 billion JPY.
+                                                                                                 •   前述の戦略投資に関連する投資有価証券の取得や、公正価値評価によ
+     •   Investment securities increased QoQ to 357.7 billion JPY. The increase was                  る増加により、投資有価証券は 3,577 億円となり、前四半期比で増加
+         primarily due to the acquisition of investment securities related to the                    しました。
+         strategic investment as noted above, and increases resulting from fair value
+                                                                                                 •   2026 年 4 月に発行した 1,000 億円の転換社債については、IFRS に基
+         measurements.
+                                                                                                     づき、発行総額のうち 889 億円を負債として計上しています。
+     •   Under IFRS, 88.9 billion JPY of the 100.0 billion JPY convertible bond issued
+                                                                                                 •   親会社所有者帰属持分比率は 68.8％となりました。
+         in April 2026 was recorded as a liability.
+                                                                                                 •   2025 年 10 月に発表した自己株式取得の進捗について、2026 年 6 月
+     •   Ratio of Equity Attributable to Owners of the Parent was 68.8%.
+                                                                                                     末までに取得した自己株式は 361 万株、864 億円です。これは、取得
+     •   Regarding the progress of the share repurchase program announced in                         価額の総額上限 1,500 億円に対して 57.6％の進捗となります。
+         October 2025, as of June 30, 2026, we had repurchased approximately 3.61
+                                                                                                 •   今後も成長投資と資本効率性の両面を踏まえ、適切なバランスシー
+         million shares for a total of 86.4 billion JPY. This represents progress of
+                                                                                                     ト・マネジメントを行ってまいります。
+         57.6% against the maximum repurchase amount of 150.0 billion JPY.
+
+     •   We will continue to manage our balance sheet with a focus on maintaining an
+         optimal balance between growth investment and capital efficiency.
+
+
+
+
+                                                                                         7
+[p.12]
+                                          English                                                                    日本語
+ o   Tester Market Trends                                                                    o   テスタ市場の動向
+
+     •   Let us now provide an update on tester market trends.                                   •   テスタ市場の動向についてご説明します。
+
+     •   For CY2026, we are raising our tester market forecast by approximately 19%              •   CY26 のテスタ市場については、4 月時点の予想から中間値ベースで
+         compared with our April forecast on a mid-point basis. We now expect the                    比較し、約 19%引き上げます。SoC テスタとメモリテスタを合わせた
+         combined SoC and memory tester market to be in the range of 13.0 to 14.5                    市場規模は、130 億～145 億米ドルになると見込んでいます。
+         billion USD.
+                                                                                                 •   背景には、AI 関連半導体の生産数量の増加に加え、デバイスのさらな
+     •   This upward revision is driven by increasing production volumes of AI-                      る複雑化があります。これにより、テストに求められる内容や工程が
+         related semiconductors, as well as continued growth in device complexity. As                増加しており、テスタ市場は過去最大規模に達する見通しです。
+         a result, test requirements and test insertions are increasing, and we expect
+                                                                                                 •   特に、推論 AI 向けの ASIC、CPU、そして DRAM に関連するテスタ
+         the tester market to reach a record-high level.
+                                                                                                     需要が、4 月時点の想定を上回るペースで拡大しています。
+     •   In particular, demand for testers related to inference AI applications,
+                                                                                                 •   SoC テスタ市場については、AI 関連アプリケーションを中心とした
+         including ASICs, CPUs, and DRAM, is expanding faster than we had
+                                                                                                     強い需要を反映し、
+                                                                                                             105 億～115 億米ドルへと予想を引き上げました。
+         expected in April.
+                                                                                                 •   メモリテスタ市場についても、高性能 DRAM を中心とした需要の強
+     •   For the SoC tester market, reflecting strong demand centered on AI-related
+                                                                                                     まりを踏まえ、25 億～30 億米ドルへと予想を引き上げています。
+         applications, we are raising our CY2026 market forecast range to 10.5 to 11.5
+                                                                                                 •   一方で、先端パッケージングのキャパシティやメモリ半導体の供給動
+         billion USD.
+                                                                                                     向など、半導体業界における外部環境の変動要因は引き続き存在して
+     •   For the memory tester market, reflecting stronger demand primarily for high-
+                                                                                                     います。
+         performance DRAM, we are raising our CY2026 market forecast range to 2.5
+                                                                                                 •   こうした不確実性には留意しつつも、AI 関連半導体の生産数量拡大
+         to 3.0 billion USD.
+                                                                                                     とデバイス複雑化を背景に、CY2026 のテスタ市場は、これまでの想
+     •   At the same time, external uncertainties remain within the semiconductor
+                                                                                                     定を上回る力強い成長を見込んでいます。
+         industry, including advanced packaging capacity constraints and memory
+         supply dynamics.
+     •   While we continue to monitor these uncertainties closely, we expect the
+         CY2026 tester market to grow more strongly than previously expected,
+         supported by increasing AI semiconductor production volumes and continued
+         device complexity.
+
+
+
+
+                                                                                         8
+[p.13]
+                                           English                                                                       日本語
+ o   FY2026 Forecast                                                                            o   FY2026 業績予想
+
+     •   In light of the Q1 results and our outlook for the remainder of the fiscal year,           •   Q1 実績および今後の見通しを踏まえ、通期業績予想を上方修正いた
+         we are raising our full-year forecast.                                                         します。
+
+     •   Reflecting the tester market size forecast above, we have raised our sales                 •   前述の市場規模見通しを反映し、売上高は 4 月時点の予想から 2,940
+         forecast by 294.0 billion JPY from the April forecast.                                         億円引き上げました。
+
+     •   We now expect full-year gross margin to be in the range of 66% to 67%,                     •   通期の売上総利益率は 66~67%を見込んでおり、売上ミックスの良化
+         exceeding our April forecast due to an improved sales mix.                                     により、4 月時点の予想を上回る見通しです。
+
+     •   However, our full-year forecast assumes gross margin below the level                       •   ただし、通期の売上総利益率は Q1 実績を下回る前提です。Q1 では
+         achieved in Q1. While Q1 benefited from a favorable sales mix and limited                      良好な売上ミックスや棚卸資産の評価損が限定的であったことなど
+
+         inventory valuation losses, we have incorporated the impact of higher                          が寄与した一方、特に下期において、メモリ半導体を中心とする部材
+                                                                                                        コスト上昇の影響を織り込んでいます。
+         component costs, particularly for memory-related components, mainly in the
+         second half of the fiscal year.                                                            •   営業利益率は 49.4%を予想しています。売上拡大によるスケールメリ
+                                                                                                        ットと売上総利益率の上昇を背景に、営業利益及び営業利益率も４月
+     •   We expect operating margin to be 49.4%. Supported by the economies of
+                                                                                                        時点の予想から引き上げています。
+         scale resulting from higher sales and an improvement in gross margin, we
+         have raised both our operating income and operating margin forecasts from                  •   FY2026 Q2 以降の為替前提は、1 米ドル 150 円、1 ユーロ 170 円で
+                                                                                                        す。また、為替レート変動が FY2026 の営業利益に与える影響は、通
+         the April forecast.
+                                                                                                        期ベースで、対米ドルでは 1 円安につき+53 億円、対ユーロでは-4 億
+     •   The exchange rate assumptions from FY2026 Q2 are 150 JPY for the U.S.                          円と見込んでいます。
+         dollar and 170 JPY for the euro. Our latest forecast for the impact of exchange
+         rate fluctuations on FY2026 operating income is positive 5.3 billion JPY per
+         1 yen depreciation against the U.S. dollar, and negative 0.4 billion JPY per 1
+         yen depreciation against the euro.
+
+
+
+
+                                                                                            9
+[p.14]
+                                           English                                                                日本語
+ o   FY2026 Test Systems Outlook                                                           o   FY2026 テストシステム事業の見通し
+
+     •   SoC Test System sales are expected to grow further, driven primarily by AI-           •   SoC テストシステムは、AI 関連需要を主軸として、コンピューティン
+         related demand in the computing and communications area.                                  グ・通信領域でさらなる売上伸長を見込んでいます。
+
+     •   In particular, we expect demand for ASICs and CPUs applications to expand             •   特に、推論 AI 関連の普及拡大を背景に、ASIC や CPU 向けでの需要
+         further, driven by the broader adoption of inference AI.                                  拡大を想定しています。
+
+     •   We will continue to strengthen supply chain management and advance our                •   引き続きサプライチェーン管理に取り組み、生産能力の増強を進めて
+         capacity expansion initiatives.                                                           いきます。
+
+
+
+
+[p.15]
+                                           English                                                                日本語
+ o   FY2026 Test Systems Outlook                                                           o   FY2026 テストシステム事業の見通し
+
+     •   We are also raising our sales forecast for Memory Test Systems.                       •   メモリテストシステムについても、売上予想を引き上げます。
+
+     •   Sales of testers for high-performance DRAM back-end applications are                  •   高性能 DRAM の後工程向けを中心としたテスタ販売が増加する見通
+         expected to increase. In addition, we expect sales of testers for non-volatile            しです。加えて、不揮発性メモリ向けについても増収を見込んでいま
+         memory applications to increase.                                                          す。
+
+     •   We will also continue to expand capacity for Memory Test Systems to meet              •   旺盛な需要に対応すべく、メモリテストシステムも生産能力増強を推
+         robust demand.                                                                            進していきます。
+
+
+
+
+                                                                                          10
+[p.16]
+                                                 English                                                                                                   日本語
+ o     FY2026 Outlook for Services & Others                                                                 o    FY2026 サービス他事業の見通し
+
+       •   We also expect higher sales in Services & Others compared with our previous                           •    サービス他事業についても、前回予想から売上の増加を見込んでいま
+           forecast.                                                                                                  す。
+
+       •   Support services sales are expected to grow, driven by the steady increase in                         •    当社製品の設置台数の着実な増加を背景に、サポート・サービス売上
+           the installed base of our products.                                                                        の伸長を見込んでいます。
+
+       •   In addition, we expect higher sales in other businesses, primarily driven by                          •    また、その他の事業においても、テスト用インタフェースボードを中
+           test interface boards.                                                                                     心に売上増加を見込んでいます。
+
+Note
+This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These statements include, among other things, the discussion of Advantest’s
+business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-looking statements can be identified by the use of forward-looking
+terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks, uncertainties and other
+factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed or implied by such forward-looking statements. Except as required
+by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+
+
+※本資料には、将来の事象についての、当社の現時点における期待、見積り及び予測に基づく記述が含まれております。これらの将来の事象に係る記述は、当社における実際の財務状況や活
+動状況が、当該将来の事象に係る記述によって明示されているもの又は暗示されているものと重要な差異を生じるかもしれないという既知及び未知のリスク、不確実性その他の要因が内包さ
+
+れており、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、又はその他の理由により、将来予想
+
+に関する記述を更新又は修正することはありません。
+
+
+
+
+                                                                                                         11
+

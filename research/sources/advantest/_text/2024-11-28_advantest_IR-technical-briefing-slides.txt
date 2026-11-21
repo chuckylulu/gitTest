@@ -1,0 +1,355 @@
+Advantest Corporation IR Technical Briefing
+Characteristics and Needs of HPC/AI Device Test
+November 28th, 2024
+Akio Osawa, Executive Officer, Senior Vice President, Sales Group and Division Manager, System Solution Division
+Takashi Iino, Functional Manager, Center of Expertise (COE), 93000 Product Unit
+
+
+
+All Rights Reserved - ADVANTEST CORPORATION
+NOTE
+
+Cautionary Statement with Respect to Forward-Looking Statements
+    – This presentation contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and
+      projections. These statements include, among other things, the discussion of Advantest’s business strategy, outlook and
+      expectations as to market and business developments, production and capacity plans. Generally, these forward-looking
+      statements can be identified by the use of forward-looking terminology such as “anticipate,” “believe,” “estimate,” “expect,”
+      “intend,” “project,” “should” and similar expressions. Forward-looking statements are subject to known and unknown risks,
+      uncertainties and other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to
+      be materially different from those expressed or implied by such forward-looking statements.
+
+
+Use of These Materials
+    – The information contained in this presentation is protected under intellectual property laws, such as copyright law, patent law,
+      trademark law and design law, and other laws and statutes of each country and various treaties. Any use (modification,
+      copying, diversion, etc.) of this information that goes beyond that which is clearly authorized by law and statutes, and is not
+      approved in writing by our company in advance, is forbidden.
+
+
+
+
+2                                                      All Rights Reserved - ADVANTEST CORPORATION
+Agenda
+
+
+
+
+✓ Business Environment of SoC testers
+
+✓ Characteristics and Needs of HPC/AI Device Test
+
+
+
+
+3                          All Rights Reserved - ADVANTEST CORPORATION
+Business Environment of SoC testers
+
+
+
+All Rights Reserved - ADVANTEST CORPORATION
+The Devices We Test
+                                     HPC/AI Devices
+           High-performance computing chips that perform
+             large-scale operations for data servers and AI
+
+
+
+               Application Processors                                                                          Automotive Semiconductors
+        Enabling the smartphones we use today                                                                Controllers for engines, batteries, airbag sensors
+                                                                                                             and collision avoidance systems
+
+
+                                                                                                                   RF Devices
+      Memory Semiconductors                                                                                        Wireless communications used in
+Including DRAM and NAND flash devices
+                                                                                                                   smartphones to enable 5G
+             that store and process data
+
+
+                                                                                                              Power Devices
+                CMOS Image Sensors                                                                            Adjust voltage and convert DC to/from AC in
+       Convert camera images into digital data                                                                cars, industrial equipment, and wind-solar power
+
+
+                                                                                                    Display Driver ICs
+                                                                                                    Control the color and brightness of displays on products
+                                                                                                    such as smartphones and televisions.
+
+
+5                                                         All Rights Reserved - ADVANTEST CORPORATION
+        Acceleration of the “Era of Complexity”
+
+                                                                                      3D CHIPLETS
+                                           Exploding                                  HETEROGENEOUS
+                                                                                      INTEGRATION
+                                           Test Complexity                                 TEST CHALLENGES
+
+
+
+
+                                                                  ADVANTEST TECHNOLOGY / ASSET INVESTMENT
+6   6                             All Rights Reserved - ADVANTEST CORPORATION
+        Acceleration of the “Era of Complexity”
+    ◼ Challenges in semiconductor industry are becoming increasingly complex and mutually interdependent
+                 Process (line width) /                                                         Communication With Faster, More
+                 Fabrication Technology Miniaturization                                         Advanced Protocols
+                     ▶ Shift to GAA. CFET                                                           ▶ New Network Architecture
+                     ▶ Material innovation                                                          ▶ Chiplet connection
+                     ▶ Lithography innovation
+                                                                                                    ▶ Co-packaged Optics + copper
+                     ▶ Chiplet, 3D/3.5D
+                     ▶ New failure mechansim
+                                                                                                Device Structure Complexity
+                 Increasing Power Consumption                                                       ▶ System scaling up
+                     ▶ Multi-core, accompanied
+                       with Thermal Wall                                                            ▶ SW, FW, HW Architectures
+                     ▶ Efficient power delivery                                                     ▶ Design for 3D, Advanced Packaging
+                     ▶ Thermal Management                                                           ▶ Test data explosion
+                                                                                                    ▶ Complex Supply Chain
+
+                 Increasing Memory Complexity                                                   Power Consumption Reduction
+                     ▶ In or Near memory computing                                                  ▶ Data localization. Cache &
+                     ▶ In package high-bandwidth                                                      memory hierarchy
+                       memory +low latency                                                          ▶ Optics die to die link
+                                                                                                    ▶ 3D integration
+7   7                                             All Rights Reserved - ADVANTEST CORPORATION       ▶ Integrated IVR, PMIC
+Characteristics and Needs of
+HPC/AI Device Test
+
+
+All Rights Reserved - ADVANTEST CORPORATION
+Characteristics and Technical Trends of HPC/AI Device
+                                               PCIe / Ethernet
+                                                                                                                     • Characteristics
+                                                  IO Die
+                                                 die to die link
+                                                 die to die link
+                                                                                                                              • Chiplet design
+                                                                                                                              • Multiple processor dies
+          die to die link
+                            die to die link
+
+
+
+
+                                                                      die to die link
+                                                                                        die to die link
+
+                                                                                                          HBM
+    HBM
+
+
+
+
+                                                                                                                              • Multiple IO dies
+                                              Processor Die
+                                                                                                                              • Multiple HBM
+                                                 die to die link
+
+                                                 die to die link
+                                                                                                                     • Trends
+          die to die link
+                            die to die link
+
+
+
+
+                                                                      die to die link
+                                                                                        die to die link
+
+                                                                                                          HBM
+    HBM
+
+
+
+
+                                                                                                                              • Miniaturization, new process technology, 3D Assembly,
+                                              Processor Die
+                                                                                                                               Increase in package size
+                                                 die to die link
+                                                                                                                              • Chiplet and multi-die integration to be the industry standard
+                                                 die to die link
+                                                                                                                              • Further increase in the bandwidth of IO dies
+                                                  IO Die                                                                         （PCIe5/6, multi-level transmission）
+                                               PCIe / Ethernet                                                                • HBM with higher speed, increased complexity, and further
+                                                                   Source: Advantest
+                                                                                                                                increase in stacking
+
+                            Multiple large dies are integrated and must be efficiently tested in a short period of time
+9                                                                                                               All Rights Reserved - ADVANTEST CORPORATION
+Structural Factors Contributing to HPC/AI Test Volume Increase
+                                       Performance Assurance Enhancement
+
+         Longer Test Time, Test Patterns Increase                                              Test Process Increase
+
+  Process (line width)/                                                                     Power Consumption
+                             New process           Device structure                                                    High Quality
+ Fabrication Technology                                                                      Heat Dissipation
+                              Technology               Complexity                                                       Assurance
+     Miniaturization                                                                             Increase
+                                                  Multi-Die Integration
+
+
+
+
+     Transistor Count       Failure Models             Wafer Test：                             Prevention of            Die Level Test
+         Increase              Increase               Verification of                       overheating/burnout      Burn-In at multiple
+                                                    Die Characteristics                                             temperature settings
+                                                                                               Optimization of        System Level Test
+                                                     Package Test：                           test time/test flow
+                                                    Full Inspection of                      i.e., thermal control
+                                                    Assembled Dies
+
+        Advancement of HPC/AI semiconductor technology demands better quality and performance assurance
+
+10                                            All Rights Reserved - ADVANTEST CORPORATION
+Expanding Test Content and Increasing Scan Volume
+     Changes in Test Volumes
+                                          • 2010s
+
+                                                   • DC test
+                                                   • BIST [1] test including SRAM and high-speed interface etc.
+                                                   • Functional test
+                            Scan                   • Scan test
+                                                        [1] Built In Self Test (BIST) ：Test-dedicated circuits designed within the device for testability
+
+
+                                          • 2020s
+       Scan
+                                                   • Basic test items are largely unchanged
+                           Others                  • DC test slightly increased with increasing pin counts
+      Others                                       • BIST test growth due to enhanced device functionality
+
+      2010s                2020s
+
+     Exponential increase in the number of transistors caused an explosive growth in scan test volume
+
+11                                        All Rights Reserved - ADVANTEST CORPORATION
+Test and Characteristics of HPC/AI Devices
+               HPC/AI Devices Logic Testing                                                                     Scan test
+     Input pattern                                Device output                  • Typical item of DFT (Design for Testability)
+                                                                                 • Main test item for SoC devices from the 2000s to the present
+     0001010001                                    1101010110
+     0100011001                                    0101100111
+                                                                                 • Scan circuits are inserted in the device to arbitrarily set conditions of the
+     1010111111                                    0100101001                      sites to be measured
+     1001001010                                    1101100011                    • Generate test patterns based on assumed failure models and locations
+     0110111000      Input               Output    0010100000                    • High efficiency /high test coverage (95 to 99.5%）
+
+
+                                                                                                                 Logic circuit             DUT : Device Under Test
+                       Pass/fail        Comparison                                                               Test target
+
+                                             Comparison pattern
+                                                   1101011001
+                                                   0101100111                                                     Scan circuit
+                                                   0100101001
+                                                   1101100011
+                                                   0010100000                                   Input pattern      Tester    Comparison Pattern
+
+
+
+
+                     Increasing transistor count causing lengthening of “test patterns” = Lengthening of test time
+
+12                                                         All Rights Reserved - ADVANTEST CORPORATION
+Test in the 2010s: Screening of Defective Devices
+
+
+     ✓ Wafer Test：test each die individually, Final test：test each packaged die individually
+     ✓ Test Volume：Wafer Test ≒ Final Test（Package Test）
+     ✓ Test items optimized for front-end and back-end processes, respectively
+     ✓ System level test is added depending on the application
+
+                                                                                                       Note: The height of the boxes in the image
+                                                                                                       does not correspond to the test times for
+                                                                                                       each test
+
+
+
+
+                                                                                                                  Misson Mode test
+
+
+                                                                                                                       Scan test
+
+
+          Scan test                       Scan test                                     Misson Mode test               Scan test
+
+          Wafer Test     Die Level Test   Final Test                   Burn In Test     System Level Test            Total (2010s)
+
+13                                        All Rights Reserved - ADVANTEST CORPORATION
+Test in the 2020s: More Complex, Longer Test Time
+                                                                                                     Note1: The height of the boxes in the image does not correspond to the test times for each test.
+                                                                                                     Note2: Items in the red boxes are factors driving demand growth in the 2020s.
+
+
+        ✓ An increase in scan test volume due to increased                                                                                       Misson mode test
+
+             number of transistors and new failure models                                                                                        Stress application
+
+        ✓ Additional test insertions for die-specific characteristic measurement
+                                                                                                                                                     Multiple dies
+             and an increase in test contents in final test due to multi-die assembly
+                                                                                                                                                 New failure model
+        ✓ Increased efforts to further ensure high quality, including multi-
+                                                                                                                                                  Transistor count
+             temperature test, burn-in, and system level test                                                                                        increase
+
+                                                                                                                                                      Scan test
+
+                                                                                                                                                Die-specific characteristic
+                                                                                                                                                      measurement
+                                                         Multiple dies
+
+                                                                                                                                                                              Mission mode test
+     New failure model                                 New failure model                                                                         New failure model
+
+     Transistor count                                  Transistor count                                                                           Transistor count                 Scan test
+        increase                                          increase                                                                                   increase
+                         Die-specific characteristic
+        Scan test              measurement                Scan test                Stress application              Misson mode test                   Scan test                    Scan test
+
+        Wafer Test          Die Level Test                Final Test                  Burn In Test              System Level Test                  Total (2020s)                 Total (2010s)
+
+14                                                                         All Rights Reserved - ADVANTEST CORPORATION
+Test Demand Driven by Accelerating “Complexity”
+
+                                                                    Scan Test Volume Increase
+
+
+
+
+                                                                                       Scan
+
+                                Complexity
+
+                                                                    Scan
+
+                                                                                      Others
+                                                                    Others
+
+                                                                    2010s              2020s
+
+
+15                    All Rights Reserved - ADVANTEST CORPORATION
+V93000 - The Scalable SoC Test Platform
+
+
+
+
+          Modules
+
+
+
+
+                                                                                           EXA Scale
+          Platform
+          Pin Scale                Smart Scale
+
+
+
+
+16                     All Rights Reserved - ADVANTEST CORPORATION   https://www.advantest.com/en/news/2024/20240808.html
+17   All Rights Reserved - ADVANTEST CORPORATION
+

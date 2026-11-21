@@ -1,0 +1,211 @@
+                           Advantest Corporation
+      FY2024 3Q (Three months ended December 31, 2024) Financial Briefing
+                               Q＆A Summary
+
+                                        January 29, 2025
+
+
+       FY2024 3Q results
+Q1:    Whereas 3Q SoC tester sales were flat QoQ, growth in memory tester sales accelerated.
+       Were there any changes in SoC or memory tester demand in 3Q?
+A1:    There were no noteworthy changes in demand. We are seeing strong demand from
+       customers for both SoC and memory testers, and our 3Q results reflect the fact that we
+       shipped in accordance with customers’ requested delivery dates.
+
+
+       CY2025 market size, share outlook
+Q2:    In your description of the CY2025 business environment, you mention “increased
+       uncertainty about the future due to rising geopolitical risks.” What is driving that increase?
+       Also, the range of your CY2025 tester market size forecast is wide. On what sorts of
+       scenarios are the upper and lower ends of that forecast premised? Does your forecast
+       benefit from better visibility on the SoC tester market than you had in October?
+A2:    The increased uncertainty is being driven in part by drastic changes in US-China relations,
+       to give one example. Because we operate globally, we closely monitor the risk of such
+       geopolitical factors impacting our business. I will next address your questions on our
+       forecast for CY2025 market size. Our forecast is premised on our belief that high-
+       performance next-generation SoC and memory devices will start to be released and go into
+       volume production in the latter half of this year. We expect to see process node changes
+       on the SoC side and increases in the number of stacks on the memory side. With even
+       further increases in semiconductor complexity, it is difficult to predict the extent to which
+       test complexity will increase or what additional hurdles will be involved. It is for these
+       reasons that the range of our market size forecast is somewhat wide. While we do expect
+       the size of the SoC tester market to grow YoY in CY2025, we have better visibility on the
+       first half of the year than the latter half. Again, semiconductor complexity is making the
+       future difficult to forecast.
+
+
+Q3:    Could you provide a breakdown of the SoC tester market for CY2024 and CY2025, as
+       well as the growth rates for each application?
+
+
+
+                                                 1
+                                                            All Rights Reserved - ADVANTEST CORPORATION
+A3:   My response on the market size breakdown will be based on the application breakdown
+      for our SoC tester sales. Referencing the mid-points of our market size figures, we see a
+      split of roughly 70% for Computing/Communications and 30% for
+      Automotive/Industrial/Consumer/DDIC for both CY2024 and CY2025. We envision
+      somewhat stronger growth for Computing/Communications.
+
+
+Q4:   What is your view on market share for CY2024 and CY2025? Also, your competitor has
+      made comments on the adoption of their testers by custom ASIC clients. Could you speak
+      to what competitive conditions look like?
+A4:   We plan to announce our CY2024 market share figures in April, but we believe that we
+      tracked to our expectations for CY2024. We think that we are tracking at or above our
+      target of 58% or greater under our Third Mid-Term Management Plan. In CY2025, we
+      expect to see market share gains thanks to additions to our base of HPC/AI customers,
+      many of which are Magnificent 7 names and associated custom ASIC partners.
+
+
+      Trends in testers for custom ASICs
+Q5:   Do you expect GPGPUs or custom ASICs to be a stronger driver of SoC tester demand for
+      you in CY2025? Also, what is the market size like for each? You have previously stated
+      that your custom ASIC tester business was involved in a variety of projects, but what is
+      your outlook for CY2025 and beyond?
+A5:   We are bullish on the custom ASIC business. I will refrain from making detailed
+      comments, but we are working with the Magnificent 7 companies that are developing their
+      own silicon and also the partners that they have in custom ASIC.
+
+
+      Trends in testers for edge AI chips
+Q6:   How much did edge AI devices contribute to your 1Q-3Q FY2024 SoC tester sales? Also,
+      how much of your CY2025 SoC tester market forecast is accounted for by edge AI
+      devices?
+A6:   At present, the primary driver is data center AI, so it is infrastructure-level AI that is larger
+      in scale. We are increasingly seeing edge AI used in consumer electronics. We count
+      ourselves among the beneficiaries of that, and we expect to see the size of that business
+      grow in FY2025. I believe people have assumed that edge AI would primarily be used in
+      PCs, tablets, smartphones, and other consumer applications, but we are also seeing it be
+      adopted in industrial applications such as robotics. In other words, edge AI is being
+      applied to a widening range of domains, and its definition is expanding, which we believe
+      has positive implications for the volume of AI-based semiconductors.
+
+                                                 2
+                                                             All Rights Reserved - ADVANTEST CORPORATION
+Q7:   Are the test times for edge AI devices longer than those for semiconductors used in earlier
+      edge applications?
+A7:   Test times for edge AI devices are longer because they are more complex and involve
+      more diverse functionality than earlier edge devices have. That said, I do not believe that
+      the test times are going to be as long as they are for infrastructure-level AI given the
+      differences in complexity and economics.
+
+
+      Partnerships in adjacent markets, die-level testing
+Q8:   I would like to ask about the impact of the partnerships with Technoprobe S.p.A. and
+      FormFactor, Inc. Can we anticipate a scenario in which more testing at the wafer or die
+      level add to the size of the market in CY2026 or CY2027? Alternatively, if the
+      partnerships produce efficiency gains, could that result in a reduction in the size of the
+      market? What is your thinking on the size of the market and the prospects for long-term
+      growth?
+A8:   Over the next two or three years, we do expect to see a drive to increase end product
+      yields by doing more testing at the wafer or die level. Your question was premised on
+      potential efficiency gains, but we are actually seeing complexity drive an increase in the
+      number of test insertions across the wafer sort area as well as at the die level, with the goal
+      being to obtain known good dies (KGDs)*. It was the increasing complexity of
+      semiconductors and testing that prompted us to form these partnerships at this point in
+      time. In order to have a real KGD, you need to have highly accurate die-level testing, and
+      a high-performance thermal solution is essential to that end. In other words, the testing,
+      handling, and associated probe cards are all seeing increases in complexity. Rather than
+      looking at testers, probe cards, probers, and handlers in isolation, we need to develop total
+      test solutions that take the combination of these technologies to a higher level of
+      sophistication. It is difficult to say at present whether there will be gains in test efficiency
+      in CY2026-2027. We do know, however, that there are going to be more business
+      opportunities in the wafer testing space. At the same time, the final test and system-level
+      tests are also gaining additional importance as that is where the screening takes place
+      when the chiplet is assembled.
+      *Known good die (KGD): A bare die verified as meeting quality standards
+
+
+
+Q9:   Does your CY2025 market outlook include the die-level test market?
+
+
+
+
+                                                   3
+                                                               All Rights Reserved - ADVANTEST CORPORATION
+A9:    CY2025 is too early to expect a significant contribution from the die-level test market. We
+       are just seeing initial evaluations going on at present. It would probably not be until next
+       year at the earliest that we see demand associated with large-quantity production.
+
+
+Q10:   If Advantest is able to provide timely wafer- and die-level test solutions, this would be
+       unique and provide you with an increased advantage over your competitor. I believe that
+       memory customers have dual-sourcing policies, but if you are able to provide a high-
+       quality solution ahead of your competitor, would your solution not become the industry
+       standard?
+A10:   Our tester business is in a very good position. While we do aim to become the industry
+       standard, what we are working toward is to provide our customers with high-performance
+       test solutions at the right time in order to help them overcome the challenge of increasing
+       test complexity. Our intention is to create an ecosystem that allows us to do that, so we
+       want to continue to work on partnerships with our key partners.
+
+
+       Sustainability of SoC tester demand
+Q11:   My understanding is that Advantest and other semiconductor production equipment
+       players have seen a boost in demand driven by low yields on advanced packages and that
+       there are concerns about this boost fading. You are forecasting further growth in the tester
+       market in CY2025. Is that because you have made the determination that there is
+       sustainability to tester demand due to the drive to enhance semiconductor quality?
+A11:   We at present do not envision a scenario in which semiconductor complexity gains slow.
+       Our customers are working to improve their semiconductor package yields and to perform
+       testing more efficiently, including by reducing test times. Given the scale of production of
+       the current generation of high-performance semiconductors and the increased complexity
+       of next-generation semiconductors, we suspect that new challenges will arise on the
+       quality and testing fronts. Our CY2025 tester market forecast is based on that assumption.
+       The continuation of Moore’s Law means that test times will grow longer, and as chiplets
+       begin to take off, the memory, CPUs, and GPUs used in them will become more
+       sophisticated. We therefore think it likely that the number of test insertions at the wafer
+       and die levels will grow. The advent of 3D packaging will result in the inclusion of more
+       devices. Silicon photonics represent a new driver of additional complexity. Given all these
+       factors, it seems unlikely that complexity gains will slow. Moreover, because of the high
+       average sales prices on such devices with advanced packaging, we believe that customers
+       will remain highly motivated to strengthen their testing efforts. Even if growth in
+       semiconductor production volumes were to flatten, provided that semiconductor
+
+                                                 4
+                                                            All Rights Reserved - ADVANTEST CORPORATION
+          complexity gains do not slow, we could expect factors like slight growth in test contents to
+          drive higher tester demand, including in the form of capacity additions to our existing
+          installed base.
+
+
+ Q12:     I have heard that recent changes in test processes in the SoC market have resulted in
+          shorter test times. Has that had any impact on your earnings or your outlook for the
+          CY2025 SoC market?
+ A12:     We are not aware of any such impact. We expect test contents to continue to grow.
+
+
+
+
+Note
+
+This document is prepared for those who were unable to attend the financial briefing and is intended only for
+
+reference purposes. The original content has been revised and edited by Advantest for ease of understanding.
+
+
+
+This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates
+
+and projections. These statements include, among other things, the discussion of Advantest’s business strategy,
+
+outlook and expectations as to market and business developments, production and capacity plans. Generally, these
+
+forward-looking statements can be identified by the use of forward-looking terminology such as “anticipate,”
+
+“believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements
+
+are subject to known and unknown risks, uncertainties and other factors that may cause Advantest’s actual results,
+
+levels of activity, performance or achievements to be materially different from those expressed or implied by such
+
+forward-looking statements.
+
+
+
+
+                                                          5
+                                                                      All Rights Reserved - ADVANTEST CORPORATION
+

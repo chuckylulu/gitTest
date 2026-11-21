@@ -1,0 +1,328 @@
+                                                                        Advantest Corporation
+                                                                   IR Fireside Chat - Q&A Summary
+                                                                               November 12th, 2026
+
+
+[Managing Market Uncertainty and Risks | 市場の不確実性とリスクへの対応]
+                                                   English                                                      日本語
+Q1      In building your top-down decision-making model, which areas—such as supply           トップダウン型意思決定モデルの構築において、特に解決に時間を要した
+        chain visibility or buffer strategies—took the most time to resolve?                  領域（サプライチェーンの可視化、バッファ戦略など）はどこか。
+
+A1      When doing scenario planning, we looked at the different drivers in the industry      シナリオプランニングでは、業界やエコシステムにおけるさまざまな要因
+        and the ecosystem and major changes that could occur. The most challenging            や、起こりうる大きな変化を検討した。中でも、地政学的要素は不確実性
+        aspect came from the uncertainties in geopolitical boundary conditions, and how       が高く、これらをどのように当社のシナリオプランニングに落とし込み、
+        to factor them into our supply chain scenarios translating in shifts and changes in   供給基盤を変革するかということが最も大きな課題となった。
+        our supply base.
+
+        As a result of our evaluation, we believe that in addition to proactive measures      検討の結果、バッファ戦略や長期契約の導入といった先を見越した対策に
+        such as buffer strategies and long-term agreements, we need to respond quickly        加え、予想外の事態や短期的な変化に対する迅速な対応が必要だと考えて
+        to unexpected events and short-term changes as they arise. That is why we do          いる。そのため、立案したシナリオは年次レビューにとどまらず、少なく
+        not limit ourselves to an annual review; we update our scenarios at least on a        とも毎月見直しを行い、最新の状況を反映している。
+        monthly basis to align with the latest reality.
+
+        Additionally, uncertainty regarding test times is another major challenge.            加えて、テストタイムの不確実性も大きな課題である。先端パッケージの
+        Although simulations and forecasts are conducted as advanced packages evolve,         進化に伴うシミュレーションや予測は行われているものの、実際のテスト
+        how much test time and test content are going to be needed remains uncertain          タイムやテストコンテンツは、シリコンを投入して検証するまで分からな
+        until the device is put into silicon. Consequently, we sometimes have to quickly      い部分がある。そのため、お客様の追加要求に応える形で、当社も素早く
+        adjust the number of system shipments to respond to additional requests from          出荷システム台数を調整する場合があり、その点でもバッファ戦略が大い
+        customers — an area where our buffer strategies are very helpful.                     に役立っている。
+
+Q2      You mentioned that customers provide 18-month forecasts, which by nature can          顧客から 18 カ月前のフォーキャストが提供されているとのことだが、こ
+        fluctuate at any time. Accordingly, how do you view future risks? In particular, I    のフォーキャストはいつ変動してもおかしくない性質のものと理解して
+        would like to hear your thoughts on the risk of a gap emerging between                いる。今後のリスクについてどのように捉えているか。特に、半導体需要
+        semiconductor demand and end demand, as symbolized by data center buildouts           に対して、米国のデータセンター建設に象徴される最終需要との間にギャ
+        in the United States.                                                                 ップが生じた場合のリスクについて見解を聞きたい。
+
+A2      Like everyone in the industry, we are closely watching this area. We are looking      業界関係者と皆様と同様に、当社もこの点については注視している。デー
+        beyond data centers to frontier labs and large language models.                       タセンターのみならずフロンティアラボ（最先端 AI 開発企業）や LLM（大
+                                                                                              規模言語モデル）の動向まで幅広く見ている。
+
+        Regarding profitability per token, I personally welcome the IPO of an emerging AI     トークン（AI が処理する情報量の単位）の収益性に関しては、個人的には
+        developer, as increased transparency into that model may drive further expansion      新興 AI 開発企業の IPO には期待している。IPO によってモデルの透明性
+        in data center-centric investments. We are monitoring these market signals            が高まれば、データセンターを中心とする投資がさらに拡大する可能性が
+        closely.                                                                              あると考えるためだ。こうした市場のシグナルを注意深くモニタリングし
+                                                                                              ている。
+        On the other hand, what we can confidently highlight is our platform strategy. In
+                                                                                              一方で、当社が自信を持って伝えられるのが「プラットフォーム戦略」で
+        addition to inventory, our variable cost structure utilizing a contract
+                                                                                              ある。在庫の観点に加え、製造委託先を活用した変動コスト型の製造体制
+        manufacturing model enables us to pursue initiatives that carry limited risk.
+                                                                                              も、リスクを抑えて取り組みを進めることを可能にしている。
+        Even if there is a potential slowdown in market demand or a transition from data
+                                                                                              仮に市場での需要減速やデータセンター投資の減少が起きても、あるいは
+        center infrastructure into physical AI or edge AI, our testers are essentially used
+                                                                                              フィジカル AI やエッジ AI への移行が起こる場合でも、当社のテスタはあ
+        across all these different applications.
+                                                                                              らゆるアプリケーションで使用されている。
+
+        Furthermore, at least on the inventory side, it remains a very small investment       また、少なくとも在庫面に関しては、当社ビジネスにおけるアップサイド
+        compared to the upside potential of our business. We constantly conduct               の規模と比較すると、依然としてとても小さな投資額にとどまっている。
+        risk/reward analysis while consistently checking market signals across the            当社ではリスクとリターンの分析を常に行うとともに、サプライチェーン
+        complete supply chain stack.                                                          全体にわたる市場のシグナルを継続的に確認している。
+
+Q3      Given the moderation in cost per token and growth rate of token usage in frontier     トークン単価の落ち着きやフロンティアモデル（その時点で最高水準の性
+        models (state-of-the-art general-purpose AI models with the highest                   能と規模を持つ最先端の汎用 AI モデル）における使用量伸び率の鈍化を
+        performance and scale at a given time), are you concerned about end customers'        踏まえると、最終顧客の ROI（投資対効果）への懸念はあるか。あわせて
+        ROI, and could that potentially impact your near-term business demand?                御社ビジネスへの短期的な需要影響については、どのようにお考えか。
+
+
+A3      While the cost per token continues to go down, our monthly token spend from AI        トークン単価が低下を続けている一方で、当社における AI 活用によるト
+        usage is no small amount. We are seeing a good return on that spend, and I            ークンの月間支出額は少なくはない。当社はこの支出に対して十分なリタ
+        imagine other companies are also spending heavily on tokens. Given this, we still     ーンを得ており、他社も同様にトークンに多額の費用を投じているのでは
+
+                                                                                        1
+         believe there is substantial upside for growth in data centers, and at the moment,    ないかと推測する。これを踏まえると、データセンターの成長には、依然
+         demand continues to exceed supply.                                                    として大きな上振れ余地があると当社は考えており、現時点でも需要が供
+                                                                                               給を上回っている状況だ。
+
+
+
+
+[Strategic Inventory Buildup | 戦略的在庫保有]
+                                               English                                                             日本語
+ Q4      You mentioned that inventory is becoming more of a strategic asset under your         新しいサプライチェーン戦略のもとで、在庫はより戦略的な資産になりつ
+         new supply chain strategy. Given how strong demand is today and how rapidly           つあるとのことだが、現在の強い需要と急速な売上成長を踏まえると、足
+         your sales are growing, do you actually have sufficient supply chain capacity to      元の顧客需要に対応しつつ戦略的在庫を積み増すのに十分なサプライチ
+         build up strategic inventory while meeting current customer demand?                   ェーンの能力が実際にあるのか。
+
+ A4      Strategic inventory and capacity expansions are both tools to help us stay ahead      戦略的在庫と生産能力の拡大は、いずれも市場の変化に先んじるための手
+         of the curve. We are working on these programs to enable the capacity and             段である。お客様を支援するための生産能力や体制を実現すべく、これら
+         capabilities to support our customers. While the capacity itself supports system      の施策に取り組んでいる。生産能力そのものはお客様へのシステム出荷を
+         shipments to our customers, strategic inventory helps us respond to steep             支える役割を担う一方、戦略的在庫は急激な需要の増加への対応や、サプ
+         demand surges and prepare for additional upticks in the supply chain.                 ライチェーンにおけるさらなる需要上振れへの備えとして機能する。
+
+         It is the combination of both that enables us to manage production ramps.
+                                                                                               これら両者の組み合わせによって、生産立ち上げを管理することができて
+         Capacity needs to be in place to utilize strategic inventory, and when we have
+                                                                                               いる。戦略的在庫を有効に活用するためには土台となる生産能力が必要で
+         some buffer room in our capacity, we will use it to replenish the inventory that
+                                                                                               あり、逆に生産能力に一定の余力がある場合には、需要の好転期や急増期
+         was drawn down to respond quickly during an up cycle or demand surge.
+                                                                                               に迅速に対応すべく取り崩した在庫の補充にその余力を充てていく。
+
+
+
+
+[Production Capacity for SoC Testers | SoC テスタの生産能力]
+                                                English                                                            日本語
+ Q5      During the FY26 Q2 earnings briefing, you discussed potential annual production       FY26 Q2 決算説明会では、SoC テスタの生産能力について、年産 1 万台
+         capacity of 10,000 or even 20,000 SoC testers. To what extent are these capacity      またはその先の 2 万台の可能性について言及があった。これらの生産能力
+         expansion plans intended to support actual customer shipments versus building         拡大計画は、実際の顧客向け出荷と将来の需要に備えた戦略的在庫の積み
+         up strategic inventory to prepare for future demand? How should we think about        増しのそれぞれに、どの程度充てられるのか伺いたい。この 2 つのバラン
+         this balance?                                                                         スについて、どのように考えればよいか。
+
+ A5      Last quarter, I mentioned that we are accelerating our program to establish an        前四半期に、年産 1 万台の生産体制構築プログラムを加速していると述べ
+         annual production capacity of 10,000 systems, and what we can say at this point       たが、現時点で言えるのは、可能な限り前倒しすべく進めているというこ
+         is that we are accelerating as much as possible. While the original target was the    とだ。当初は FY2028 年度末を目標としていたが、CSCO（Chief Supply
+         end of FY2028, our team led by Richard, our Chief Supply Chain Officer (CSCO), is     Chain Officer）のリヒャルト率いるチームが精力的に取り組んでおり、お
+         working diligently to accomplish this roughly a year in advance, though this is not   よそ 1 年前倒しでの達成を目指している。ただし、これは確定したスケジ
+         yet a confirmed timeline.                                                             ュールではない。
+
+         Beyond that, doubling production capacity again to an annual capacity of 20,000       さらにその先の生産能力倍増（年産 2 万台体制）については、極めて大規
+         systems represents a Herculean effort and will likely require some additional time    模な取り組みとなるため、実現には相応の時間を要する見込みである。こ
+         to implement. However, these are real numbers that we see as needed by the            れらはいずれも現実的な数値であり、業界から必要とされている水準だと
+         industry.                                                                             見ている。
+
+         As for the inventory, the importance of platforms is key, as it allows us to          在庫については、プラットフォームの重要性が鍵となる。これにより、入
+         accumulate as much inventory as we can secure. For example, we use a large            手可能な限りの在庫を最大限に積み増すことが可能になっている。例え
+         amount of DDR4 DRAM in our testers, both for SoC and even more for memory.            ば、当社のテスタでは SoC 向け、そしてメモリ向けにはさらに多くの
+         We have procurement channels to secure as much of it as we need, and                  DDR4 DRAM を使用している。当社は必要な量を確実に確保する調達チ
+         recognizing that DDR4 DRAM is a scarce resource, we are accumulating it for both      ャネルを有しており、DDR4 DRAM が重要な部品の中の一つであること
+         present and future demand.                                                            を認識した上で、現在および将来の需要に向けて積み増しを進めている。
+
+
+
+
+                                                                                         2
+[Memory tester production framework | メモリテスタの生産体制]
+                                                English                                                          日本語
+ Q6      You are expanding production capacity for memory testers along with SoC testers.       SoC テスタと同様にメモリテスタについても生産能力拡大を進めている
+         Is there a difference in your supply chain strategy? I understand that you also        が、サプライチェーン戦略において何か違いはあるか。自社生産も活用し
+         utilize in-house production, so I would like to ask about your strategy for memory     ていると認識しているが、メモリテスタに関する戦略について伺いたい。
+         testers.
+
+ A6      We certainly utilize internal resources too because they provide benefits when         新製品を市場に投入する上でメリットがあるため、当社は確かに社内リソ
+         bringing new products to market. We are now at a stage where we are beginning          ースも活用している。現在は自社の生産能力を拡大しつつ、グローバル拠
+         to expand our in-house capabilities while simultaneously utilizing a scalable          点を持つ拡張性の高い外部の製造委託先のサプライチェーンも同時に活
+         external contract manufacturing supply chain with a global footprint, thereby          用する段階に入っている。これにより、今後見込まれるメモリテスタ市場
+         managing and establishing the scalability required to meet the anticipated uptick      の需要拡大に必要な拡張性の確立と管理を進めている。こうした今後の事
+         in the memory tester market. To flexibly respond and adapt to the upcoming             業環境に柔軟に対応・適応していくため、これら２つのアプローチを組み
+         business environment, we will adopt a complementary hybrid model combining             合わせた、相互補完的なハイブリッドモデルを採用していく。
+         these two approaches.
+
+ Q7      In strengthening your internal production capacity, will you require certain capital   自社の生産能力強化にあたり、一定の設備投資が必要になるのか。
+         investments?
+
+ A7      Yes, although rather than constructing buildings and factories in Japan, we plan       もちろん投資は必要になるが、日本国内に建屋や工場を建設するのではな
+         to invest in building a contract manufacturing structure.                              く、製造委託の体制構築に投資していく方針である。
+
+         Additionally, we are migrating our memory tester business toward a platform            加えて、メモリテスタの事業についても、SoC 側で採用しているものと同
+         strategy similar to the one we have on the SoC side. This allows us to leverage the    様のプラットフォーム戦略へと移行を進めている。これにより、SoC 事業
+         same supply chain processes and capabilities as our SoC business. Historically, we     と同じサプライチェーンのプロセスや能力を活用することが可能になる。
+         offered many different models of memory testers, which required us to handle           従来は、多くの異なるモデルのメモリテスタを展開しており、その結果と
+         things internally. Now, however, as roadmaps have converged, we are able to fully      してそれぞれ独自に自社内での対応する必要があった。しかし現在では、
+         leverage an outsourced manufacturing model.                                            ロードマップを集約収束してきたことで、外部委託による製造モデルを本
+                                                                                                格的に活用できるようになっている。
+
+
+
+
+[Competitive Advantages | 競争優位性]
+                                                English                                                          日本語
+ Q8      You mentioned that you plan to further expand your market share. What are the          今後さらに市場シェアを拡大するとのことだが、その優位性を裏付ける根
+         factors underlying your confidence in this competitive advantage?                      拠は何か。
+
+ A8      First and foremost, we must always have the best technology. We emphasize              第一に、常に最高の技術を有していなければならない。当社は優れたソリ
+         providing superior solutions, and we believe the architecture of our equipment         ューションの提供を重視しており、特に SoC テスタの分野における装置
+         — particularly in the SoC tester segment—is highly competitive. That is why our        アーキテクチャは非常に競争力が高いと自負している。それこそが顧客に
+         customers have adopted the V93000 platform.                                            V93000 プラットフォームが採用されている理由である。
+
+         Second is our ability to meet customer demand in terms of supply. Manufacturing        第二に、顧客の需要に応じた供給能力である。数台や数百台のテスタを製
+         a few or a couple of hundred testers is entirely different from manufacturing          造することと、量産現場に導入される数千台規模のテスタを製造すること
+         thousands of testers deployed in high-volume manufacturing. These two are              とは全く別次元の話である。これら 2 点が極めて重要な要素である。
+         critical elements.
+                                                                                                さらに第三として、複雑化するテストセル・ソリューションへのニーズに
+         Third, in response to the need for complex test cell solutions, we are advancing       応えるべく、テストセルレベルでの統合を一段と進めていることが挙げら
+         integration at the test cell level even further. All of these elements combine to      れる。これらすべての要素が組み合わさることで、当社の強力な競争力の
+         create a valuable formula.                                                             源泉が生み出されている。
+
+         We believe that superior solutions and our ability to supply full-solution services    こうした優れたソリューションと、それらをトータルソリューションとし
+         have led to our current high market share.                                             て提供するサービスの供給力が、現在の高い市場シェアにつながっている
+                                                                                                と考えている。
+         The greatest advantage of holding a high market share is that we can accurately
+         understand what our customers need. We can align with customers not only on            そして、高い市場シェアを維持している最大の利点は、顧客のニーズを正
+         technology roadmaps, but also on required production capacity.                         確に把握できる点にある。技術ロードマップだけでなく、必要とされる生
+                                                                                                産能力についても顧客と目線を合わせることができる。
+         Our current market position gives us visibility into the future, enabling us to
+         confidently make appropriate forward-looking investments. We are confident             この現在のポジションがあるからこそ将来へのビジビリティが得られ、自
+         that these investments will generate positive returns for us, which is why market      信を持って将来に向けた適切な投資ができる。その投資が当社にプラスの
+         share is so critical.                                                                  リターンをもたらすと確信している。市場シェアが極めて重要である理由
+                                                                                                はそこにある。
+
+
+
+
+                                                                                          3
+[Networking and Silicon Photonics Opportunities and Ecosystem | ネットワーキング及び光電融合の事業機会とエコシステム]
+                                                  English                                                            日本語
+Q9      Regarding networking-related SoC testing, what initiatives have you taken over          ネットワーキング関連の SoC テストについて、過去数年間の事業拡大に
+        the past few years to expand your business, and what trends do you see going            向けた取り組みと今後のトレンドを伺いたい。また、CPO（Co-Packaged
+        forward? Also, will growing demand for CPO (Co-packaged Optics) encourage               Optics）の需要拡大は、コンピューティング向けとネットワーキング向け
+        customers to consolidate their testing platforms between computing and                  のテストプラットフォーム統合を促し、さらなる事業機会につながるの
+        networking, creating further business opportunities?                                    か。
+
+A9      First, we feel very confident about our position in the networking segment and          まず、ネットワーキング分野における当社のポジション、および同領域で
+        our potential for further market share gains in this area. Networking is an             のさらなる市場シェア拡大の可能性についてとても手応えを感じている。
+        extremely important business segment for Advantest, to which the V93000                 ネットワーキングは当社にとって極めて重要な事業領域であり、V93000
+        platform is ideally suited.                                                             プラットフォームは、まさにこの領域に最適なソリューションとなってい
+                                                                                                る。
+        This applies not only to the conventional copper-based domain. Even as the
+                                                                                                V93000 の優位性は、従来の電気配線をベースとした領域に留まらない。
+        industry transitions to optical silicon photonics, the strength of the V93000 is that
+                                                                                                V93000 の強みは、業界が光電融合の領域に移行していく中でも、あらゆ
+        it is essentially the same platform across the board. Because fungibility is enabled
+                                                                                                る領域において基本的にすべて同じプラットフォームで対応できる点に
+        between the pure networking domain and the optical domain, customers can
+                                                                                                ある。純粋なネットワーキング領域と光領域の間で互換性を持たせること
+        easily transition between these two technologies through the platform.
+                                                                                                ができるため、顧客はこのプラットフォームを通じてこれら 2 つの技術の
+        Of course, optical testing requires certain elements to be augmented on the             間を容易に移行できる。
+        tester, but the underlying ATE (Automated Test Equipment) itself remains largely
+                                                                                                もちろん、光テストにおいてはテスタに拡張・追加される要素もあるが、
+        the same. Furthermore, it can be used across most test insertions in silicon
+                                                                                                基盤となる ATE（Automated Test Equipment）自体はほぼ同じである。
+        photonics. From wafer-singulated to package-level optical testing, essentially the
+                                                                                                さらに、光電融合におけるほとんどのテストインサーションでも共通して
+        same V93000 can be leveraged across all three to five test insertions.
+                                                                                                使用できる。ウェーハ単体からパッケージレベルの光テストに至るまで、
+                                                                                                3〜5 に及ぶテストインサーションのすべてにおいて、基本的に同じ
+        This is precisely the strength of our platform strategy, which also contributes to
+                                                                                                V93000 を活用することが可能である。
+        optimizing inventory management and production capacity in our supply chain.
+        All of these elements create synergies and provide a strong foundation for us to        これこそがプラットフォーム戦略の強みであり、サプライチェーンにおけ
+        continue gaining market share.                                                          る在庫管理や生産能力の最適化にも寄与している。これらすべての要素が
+                                                                                                相乗効果を生み、当社が今後も市場シェアを拡大し続けるための強力な基
+                                                                                                盤となっている。
+
+Q10     In the networking and CPO domains, many different companies are involved                ネットワーキングや CPO の領域では、さまざまなテストインサーション
+        across the various test insertions. Within this ecosystem, do you see opportunities     において非常に多くの企業が関わっている。このエコシステムにおいて、
+        to expand from your supply chain into peripheral equipment, or do you intend to         御社が自社のサプライチェーンから周辺機器の領域へ事業を拡大する機
+        focus solely on the core ATE?                                                           会はあると考えているか。それとも、あくまでコアである ATE に注力し
+                                                                                                ていく方針か。
+
+A10     Looking at the components for insertion one, for example, in addition to the core       例えばインサーション 1 の構成要素を見ると、ATE 本体に加えてプロー
+        ATE, there is a prober, which currently uses the hexapod (six-axis high-precision       バがあり、現在はパートナー企業が提供するヘキサポッド（6 軸精密位置
+        positioning system) provided by a partner. There is also a rack of external             決め機構）が使われている。さらに、レーザーやパワーメータ、各種コン
+        instruments, such as lasers, power meters, and various controllers. At our              トローラなどを収めた外部計測器のラックがある。当社は顧客からの要請
+        customers' request, we have served as the integrator of this entire system,             を受けてこのシステム全体のインテグレーターを担っており、実際にその
+        providing and assembling hundreds of those racks. This is a peripheral that we          ラックの提供や組み立てを手がけ、すでに数百台規模で構築している。こ
+        count as part of the overall test cell.                                                 れはテストセル全体の一部として位置づけられる周辺機器である。
+
+                                                                                                一方で、両面プロービングなどのハンドリングやプロービングの領域への
+        As for entering the handling and probing domains—such as for double-sided
+                                                                                                参入については、これらの分野におけるパートナー企業と協業を進めてい
+        probing—we intend to collaborate with our partners in those areas. We maintain
+                                                                                                く方針である。当社はハンドリング装置メーカーやプローブカードメーカ
+        good relationships with material handling companies as well as probe card
+                                                                                                ーとも良好な関係を築いており、特にプローブカードメーカー各社とは深
+        companies, and we have particularly deep relationships with all the probe card
+                                                                                                い協力関係にある。後工程のテストにおいて光ファイバーコネクタを接続
+        companies. There is potential in areas such as sockets for later insertions where
+                                                                                                するソケットなどの領域には事業機会の余地があり、こうしたソリューシ
+        fiber connectors are interfaced, and we are working on initiatives to enable those
+                                                                                                ョンを実現するための取り組みは進めている。
+        solutions.
+                                                                                                一概に線引きするのは難しいが、顧客が当社による課題解決を必要として
+        While it is difficult to draw a hard-and-fast line, we will step into areas where
+                                                                                                いる領域には踏み込んでいく一方、パートナーとの協業によってソリュー
+        customers need us to solve problems, whereas in areas where solutions can be
+                                                                                                ションを提供できる領域では、これまで通りのエコシステムモデルを基本
+        delivered through partner collaboration, we will largely continue to utilize our
+                                                                                                として活用していく。
+        existing ecosystem model.
+
+
+
+
+                                                                                          4
+[Corporate Mindset During Strong Performance | 好業績時の社内マインドセット]
+                                                           English                                                                                              日本語
+ Q11          I believe the biggest risk in the current market is not a recession, but becoming                    最大のリスクは市場の需要減退ではなく、慢心や油断だと考える。好調な
+              complacent. While your business is currently performing strongly, what initiatives                   業績が続いている中ではあるが、これらを防ぐためにどのような取り組み
+              are you taking to prevent such complacency?                                                          を行っているか。
+
+ A11          All companies that are doing well must contend with the fear of complacency. We                      好調な業績を上げているあらゆる企業が直面しなければならないのが、慢
+              constantly preach that we can never rest on our laurels. Continuing to be                            心や油断への危機感である。当社では、決して過去の栄光に安住してはな
+              proactive is our corporate culture, and practicing this approach to achieve success                  らないと常に社内へ説き続けている。積極的であり続けることこそが当社
+              has led to our current position. We believe this creates a natural perpetual loop,                   の企業文化であり、その姿勢を実践して成功を収めてきたことが現在の当
+              where experiencing success motivates our company to reach the next level.                            社の地位につながっている。そして、成功体験がさらなる高みを目指す原
+                                                                                                                   動力となり、永続的な成長の好循環を生み出している。
+              Another point to add is that we are continuing to make proactive investments,
+              putting our money behind our beliefs. We invest in a way that allows us to                           もう一点付け加えると、当社は積極的な投資を継続しており、自らの信念
+              continue expanding even through small short-term market cycles, while at the                         に基づいて資金を投じている。当社は短期的な市場サイクルの変動が多少
+              same time remaining a humble company. We understand that we must always                              あったとしても、事業拡大を続けられるような形で投資を行っている。同
+              delight our customers, and listening to their needs to meet their high expectations                  時に、当社は謙虚な姿勢を保ち続けている。常に顧客を満足させなければ
+              is our top priority. Because the entire organization understands this mindset, I am                  ならないことを理解しており、顧客からの高い要求に応えるため、そのニ
+              confident that we will not suffer from complacency.                                                  ーズに耳を傾けることを最優先事項としている。こうした姿勢を組織全体
+                                                                                                                   が理解しているため、当社が慢心に陥ることはないと確信している。
+
+
+
+Note: This document is prepared for those who were unable to attend the IR Fireside Chat and is intended only for reference purposes. The contents of this document have been summarized by Advantest at its
+discretion, based on the questions and answers at the IR Fireside Chat. This document contains “forward-looking statements” that are based on Advantest’s current expectations, estimates and projections. These
+statements include, among other things, the discussion of Advantest’s business strategy, outlook and expectations as to market and business developments, production and capacity plans. Generally, these forward-
+looking statements can be identified by the use of forward-looking terminology such as “anticipate,” “believe,” “estimate,” “expect,” “intend,” “project,” “should” and similar expressions. Forward-looking statements
+are subject to known and unknown risks, uncertainties and other factors that may cause Advantest’s actual results, levels of activity, performance or achievements to be materially different from those expressed
+or implied by such forward-looking statements. Except as required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future events or otherwise.
+
+※本資料は、IR Fireside Chat にご参加いただけなかった方のために、参考資料として作成したものです。本資料に記載されている内容は、IR Fireside Chat の質疑をもとに当社の判断で要約
+したものです。また本資料には、将来の事象についての、当社の現時点における期待、見積り及び予測に基づく記述が含まれております。これらの将来の事象に係る記述は、当社における実際
+の財務状況や活動状況が、当該将来の事象に係る記述によって明示されているもの又は暗示されているものと重要な差異を生じるかもしれないという既知及び未知のリスク、不確実性その他
+の要因が内包されており、当社としてその実現を約束する趣旨のものではありません。法令により義務付けられている場合を除き、当社は、新たな情報、将来の出来事、又はその他の理由によ
+り、将来予想に関する記述を更新又は修正することはありません。
+
+
+
+
+                                                                                                          5
+
