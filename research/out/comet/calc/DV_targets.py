@@ -13,10 +13,10 @@ H1_25R = dict(GRP=(227.154, 22.978), PCT=(134.262, 23.421), IXS=(48.689, -7.520)
 H1_26 = dict(GRP=(239.834, 31.367), PCT=(143.570, 28.947), IXS=(48.739, -3.985), IXM=(53.539, 8.630))
 FY24 = dict(GRP=(445.362, 60.380), PCT=(247.391, 52.734), IXS=(115.888, -4.306), IXM=(94.571, 14.567))  # as first reported
 FY24R = dict(GRP=(445.362, 58.011), PCT=(247.391, 50.365))  # restated
-EXT25 = dict(PCT=257.102, IXS=110.804, IXM=89.137, GRP=457.044)  # external sales FY2025 (DV-034)
+EXT25 = dict(PCT=257.102, IXS=110.804, IXM=89.137, GRP=457.044)  # external sales FY2025 (DV-033)
 EXT_H126 = dict(PCT=143.570, IXS=48.734, IXM=47.530, GRP=239.834)
-ROCE_FY25, ROCE_H126 = 5.2, 8.7  # % (DV-085, DV-086)
-GUIDE26_SALES, GUIDE26_MARGIN = (570, 590), (17.0, 19.0)  # FY2026 guidance raised Oct 2026 (DV-087)
+ROCE_FY25, ROCE_H126 = 5.2, 8.7  # % (DV-147; H1 2026 ROCE from H1 2026 deck p4)
+GUIDE26_SALES, GUIDE26_MARGIN = (570, 590), (17.0, 19.0)  # FY2026 guidance raised Oct 2026 (DV-148)
 
 LTM = {k: (FY25[k][0] - H1_25R[k][0] + H1_26[k][0], FY25[k][1] - H1_25R[k][1] + H1_26[k][1]) for k in FY25}
 
@@ -37,7 +37,7 @@ for k in ["GRP", "PCT", "IXS", "IXM"]:
     s += f"; FY2025 {FY25[k][0]:.1f} / {m(FY25[k]):.1f}%; LTM Jun-2026 {LTM[k][0]:.1f} / EBITDA {LTM[k][1]:.1f} / {m(LTM[k]):.1f}%"
     print(s)
 
-print("\nCMD 2025 (13 Nov 2025) targets for next peak of cycle, assumed 2028 (DV-070..076)")
+print("\nCMD 2025 (13 Nov 2025) targets for next peak of cycle, assumed 2028 (DV-137..143)")
 T25 = [("GRP sales", (670, 770), "sales", "GRP"), ("GRP EBITDA margin", (22, 27), "margin", "GRP"),
        ("PCT sales", (430, 480), "sales", "PCT"), ("PCT EBITDA margin", (27, 33), "margin", "PCT"),
        ("IXS sales", (130, 160), "sales", "IXS"), ("IXS EBITDA margin", (5, 9), "margin", "IXS"),
@@ -60,7 +60,7 @@ for k, (c23, c25) in dict(PCT=((60, 70), (60, 70)), IXS=((20, 25), (15, 25)), IX
     print(f"{k}: CMD2023 {c23}% / CMD2025 {c25}%; actual FY2025 {100*EXT25[k]/EXT25['GRP']:.1f}%, "
           f"H1 2026 {100*EXT_H126[k]/EXT_H126['GRP']:.1f}%")
 
-print("\nCMD 2023 (9 Nov 2023) targets for peak of cycle then assumed 2027 (DV-077..079)")
+print("\nCMD 2023 (9 Nov 2023) targets for peak of cycle then assumed 2027 (DV-144..146)")
 for name, (lo, hi), act in [("GRP sales", (800, 900), FY25["GRP"][0]), ("GRP EBITDA margin", (25, 30), m(FY25["GRP"])),
                             ("GRP ROCE", (30, 35), ROCE_FY25)]:
     print(f"{name:20s} target {lo}-{hi}; FY2025 actual {act:.1f}; gap {lo-act:+.1f} to {hi-act:+.1f}")
@@ -68,13 +68,13 @@ print(f"CMD 2023 -> CMD 2025 change: sales midpoint {850} -> {720} ({100*(720/85
       f"margin midpoint 27.5% -> 24.5%, ROCE midpoint 32.5% -> 29.5%, POC year 2027 -> 2028")
 print(f"FX check (company says revision 'essentially unchanged in constant currencies'): 850 x 0.70/0.90 = {850*0.70/0.90:.0f} "
       f"(upper bound, assumes all sales USD-linked)")
-print("2019 targets for 2025 (DV-080): sales > 830, EBITDA ~25%, ROCE ~30%; "
+print("2019 targets for 2025 (DV-145): sales > 830, EBITDA ~25%, ROCE ~30%; "
       f"FY2025 actual {FY25['GRP'][0]:.1f} ({FY25['GRP'][0]-830:+.1f}), {m(FY25['GRP']):.1f}% ({m(FY25['GRP'])-25:+.1f} pp), ROCE {ROCE_FY25}%")
-print("FY2023 targets set 2019 (CMD 2023 slide, DV-079): sales 380-400, EBITDA 7-9%; "
+print("FY2023 targets set 2019 (CMD 2023 slide 20): sales 380-400, EBITDA 7-9%; "
       f"FY2023 actual 397.5 / {100*44.996/397.453:.1f}%")
 
-print("\nIXS CMD 2025 bridge items (DV-074): CA20 2024 investment CHF 10-15m -> '> break-even' 2028e; non-semi 5-10% -> >10%")
+print("\nIXS CMD 2025 bridge items (DV-086..089): CA20 2024 investment CHF 10-15m -> '> break-even' 2028e; non-semi 5-10% -> >10%")
 print(f"IXS EBITDA FY2025 {FY25['IXS'][1]:.1f}; LTM {LTM['IXS'][1]:.1f}; 2028 target at 5-9% of 130-160 = "
       f"{0.05*130:.1f} to {0.09*160:.1f}; swing needed from LTM: {0.05*130-LTM['IXS'][1]:+.1f} to {0.09*160-LTM['IXS'][1]:+.1f}")
-print(f"Efficiency program (DV-088): CHF 20-30m sustainable EBITDA improvement p.a. from 2028 = "
+print(f"Efficiency program (DV-053): CHF 20-30m sustainable EBITDA improvement p.a. from 2028 = "
       f"{100*20/670:.1f}-{100*30/670:.1f} pp of the 670 low-end target sales")

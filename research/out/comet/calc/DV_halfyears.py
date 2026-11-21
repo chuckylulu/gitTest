@@ -156,3 +156,10 @@ for inv in (10000, 15000):
     e = D["FY 2024 orig"]["IXS"]
     print(f"FY2024 IXS EBITDA {e[3]/1000:.1f} ({pct(e[3], e[1]):.1f}%); before CA20 investment of {inv/1000:.0f}: "
           f"{(e[3]+inv)/1000:.1f} ({pct(e[3]+inv, e[1]):.1f}%)")
+
+print("\nPCT largest customer as % of PCT external sales (largest-customer sales from note 'Sales with key accounts',")
+print("DV-119..123; PCT external sales from segment notes: FY2021 306,091k per AR FY2022 comparative p83, DV-005, DV-013, DV-021, DV-033)")
+LC = {"FY2021": (156.0, 306.091, 30.4), "FY2022": (211.0, 381.424, 36.1), "FY2023": (71.0, 193.155, 17.7),
+      "FY2024": (106.2, 247.391, 23.8), "FY2025": (104.4, 257.102, 22.8)}
+for y, (c, p, g) in LC.items():
+    print(f"{y}: largest customer CHF {c}m = {100*c/p:.1f}% of PCT sales ({g}% of group sales as reported)")
