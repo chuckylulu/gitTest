@@ -1,0 +1,125 @@
+Insights & Research | Wing Venture Capital
+
+About
+Portfolio
+Team
+Insights
+Careers
+Perspectives
+May 2026
+The Chip Testing Bottleneck
+By 
+Chris Zeoli
+May 2026
+The economics of testing a leading-edge AI accelerator look almost nothing like testing a mobile SoC. A typical 5nm-class smartphone SoC clears the tester in roughly 30–60 seconds. A Blackwell-class AI accelerator with two reticle-limited dies, eight HBM3E stacks, and a 1,000W power envelope can spend 
+well over 20 minutes
+ on the same equipment.
+That isn’t a 2x or 3x problem — it is an order-of-magnitude shift in machine-hours per shipped unit. Multiply across the millions of accelerators shipping into datacenters 
+over 2025–2027
+ and you get a structural capacity squeeze in semiconductor test, with two companies — Advantest and Teradyne — sitting on the chokepoint.
+Data Gravity is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+At a glance
+Test time per die: 
+~50s mobile SoC → 20+ minutes
+ for AI accelerator
+CY25 ATE TAM: 
+$9.0B, +50% YoY
+Advantest SoC tester share: 
+56% → 66%
+ in twelve months
+Teradyne Q1’26 revenue: 
++87% YoY
+, ~70% AI-driven
+Combined duopoly share: 
+~90%+
+Why test time exploded
+Four physics-driven dynamics are simultaneously inflating test surface area, test pattern count, and required test conditions. Each adds machine time linearly. Together they compound.
+Die size at the reticle limit.
+ Blackwell B200 packages two ~814mm² dies — each at the EUV reticle limit — connected via a 10TB/s NV-HBI interconnect. Test pattern count scales with transistor count (B200: ~208B transistors) and IO complexity. A reticle-limited die requires 2–3× the test patterns of a 7nm-era SoC.
+Chiplet integration.
+ UCIe and proprietary D2D fabrics let designers compose accelerators from 4–8 chiplets. Every chiplet must be screened as a Known-Good-Die (KGD) before assembly because a single defective die scraps a $50K+ package. Each D2D link adds a high-speed interconnect test pattern, and per-die screening multiplies machine hours.
+HBM stacking.
+ HBM3E ships as 12-Hi stacks with a 1,024-bit interface and ~1,024 TSV connections per layer. Every DRAM die is tested individually, then the full stack is validated as a Known-Good-Stack-Die (KGSD). HBM3E test time runs roughly 2× HBM2E. HBM4 (16-Hi, 2,048-bit) lengthens it again.
+Power and thermal.
+ Top-line AI accelerators draw 700–1,200W. Test sockets must dissipate that thermal load while maintaining clean signal integrity, and the chip must be exercised under representative AI workloads — not just static patterns — to surface latent defects. This forces coolant-integrated handlers and longer at-load test intervals.
+The aggregate effect: 
+cost of test as a percentage of chip ASP has roughly tripled
+ on leading-edge AI parts — from historical levels of <2% toward 5–7% on the most complex packages. The customer can’t do anything about it. Yield economics on a $30–70K chip mean any defect that escapes test costs orders of magnitude more than the test itself. The bill scales linearly with units shipped, and it accrues almost entirely to the two companies whose platforms are qualified for the job.
+A duopoly with structural lock-in
+Advantest’s V93000 is the qualified SoC tester at Nvidia, AMD, and the merchant ASIC supply chain (Broadcom-Google, Marvell-Meta/Microsoft). Teradyne’s UltraFLEX dominates Apple silicon and the broader mobile/auto base.
+The lock-in comes from the test program itself — a software artifact representing 6–18 months of engineering work, deeply integrated with the chip’s design flow, that gets re-used across every wafer for the chip’s full lifecycle. Once a fab and OSAT qualify a tester, replacement risk approaches zero.
+That’s why the recent share dynamics matter so much: 
+Advantest gained 10 percentage points of SoC tester share in CY25 alone
+ — from 56% to 66% — by sitting inside the AI accelerator supply chain at a moment when AI accelerator volume is the only segment of semiconductors growing meaningfully. Total tester market share moved from 58% to 65%. Teradyne gave up incremental SoC share but is monetizing the same demand wave through its broader portfolio: system-level test, photonics, robotics-assisted manufacturing.
+The financial signature
+The technical bottleneck shows up cleanly in the sales and margin figures.
+Advantest FY25
+ (year ended March 2026): operating margin moved from 29.3% to 
+44.2%
+ — a 1,490bp expansion in twelve months on revenue of 
+$7.5B, +47% YoY in USD terms
+. Operating income roughly doubled to ~$3.3B. Q4 ran at 46.7% operating margin on 67.4% gross.
+Teradyne Q1 2026, annualized:
+ the run-rate is 
+$5.1B in revenue, ~$1.9B in operating income, and $10.24 in non-GAAP EPS
+ — versus a $2.7B revenue / ~$0.6B op-income / $3.00 EPS run-rate one year earlier. Non-GAAP operating margin moved from 20.5% to 
+37.5%
+, a 1,700bp YoY expansion.
+Both companies are now operating inside or above their long-term target margin bands. This isn’t volume leverage alone — it is pricing on complex testers in short supply, the financial fingerprint of a duopoly with a captive AI accelerator customer base.
+Where the next leg of growth comes from
+The interesting part of the story isn’t ATE itself. It’s the adjacent test layers that have emerged because traditional ATE no longer catches every defect that matters in an AI workload.
+System-Level Test (SLT).
+ Exercises the chip in conditions close to its end-use — running real workloads, at full thermal load, with real power delivery — to catch latent defects that ATE patterns miss. SLT economics are different (more chambers, longer test times per unit) and the addressable market is multi-billion incremental on top of the core ATE TAM. Teradyne explicitly anchored its $6B revenue target model around the “wafer-to-AI-datacenter” framing. Advantest is positioning through M&A in system-level and silicon validation.
+Silicon photonics and co-packaged optics (CPO).
+ As Nvidia, Broadcom, and the hyperscaler ASIC supply chain move to optical interconnects between accelerators and switches, every photonic die requires both electrical and optical test — a category that didn’t materially exist three years ago. Advantest received its 
+first high-volume ATE order for silicon photonics
+ in CY25. Teradyne launched the Photon100 platform specifically for this.
+Probe cards, contactors, and test interface boards.
+ Teradyne owns ~10% of Technoprobe. Cohu and FormFactor sit alongside as picks-and-shovels exposure.
+AI-driven adaptive test.
+ Uses ML to reduce test time on known-good silicon. Counterintuitively margin-positive for the duopoly because it sells as software-attached value on the same hardware base.
+Outlook and risks
+Capacity is the binding constraint, not demand. Advantest is ramping to 
+10,000 SoC test systems per year
+ — up from a 7,500 target — to keep pace with a known product pipeline: Blackwell Ultra (B300) and AMD MI400 in 2026, custom AI silicon from Broadcom, Marvell, and Alchip stacking through OSAT lines, and HBM4 (16-Hi, 2,048-bit) qualifying for production. Each generation lengthens the test program. Teradyne is signaling 55–60% first-half revenue linearity — the order book is already loaded.
+The market backdrop is just as durable. Advantest forecasts the SoC tester market at 
+$8.7–9.5B in CY26 versus $6.9B in CY25
+, and the merchant AI ASIC supply chain (Broadcom-Google, Marvell-Meta/Microsoft, AWS Trainium) keeps multiplying tester demand because each new custom silicon program qualifies a fresh test program. The four adjacent product surfaces above — SLT, photonics, probe cards, adaptive test — extend the runway by another half-decade beyond the core ATE box.
+Risks live on the product roadmap, not the financial model. In-sourcing by Nvidia or TSMC has been explicitly rejected on engineering ROI grounds. Chinese indigenous ATE remains generations behind in leading-edge SoC. Customer concentration in the AI OSAT supply chain — most acute for Advantest — is the largest single tail risk; a hyperscaler capex digestion cycle is the scenario worth tracking into 2027.
+Net: 
+the cleanest non-Nvidia exposure to AI accelerator unit volume — a duopoly with order-of-magnitude growth in test surface area, three multi-billion adjacent product surfaces, and the engineering switching costs to defend share through the next decade.
+‍
+‍
+INSIGHTS FROM 
+Chris Zeoli
+What 
+Chris Zeoli
+ is writing about.
+Perspectives
+October 2026
+Cheap Money Is the New Moat in AI Infrastructure
+Perspectives
+September 2026
+The GPU Depreciation Curve Is Broken
+Perspectives
+September 2026
+How Long Does a GPU Last?
+Portfolio
+The companies we've backed from seed to category leader.
+View Portfolio
+Insights
+More from the team — what we're seeing, thinking, and still questioning.
+All insights
+Sign up for our newsletter
+Thanks for signing up!
+Wing
+About
+Portfolio
+Team
+Insights
+Careers
+Contact
+Get in touch
+© 2026 Wing VC, Palo Alto CA, All Rights Reserved.
+Terms of Use & Privacy Policy
+

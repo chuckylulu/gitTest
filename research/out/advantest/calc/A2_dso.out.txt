@@ -1,0 +1,21 @@
+DSO = ending trade and other receivables / single-quarter net sales x 91.25
+quarter-end                   receivables  qtr sales  DSO days
+FY2024 Q4 (Jan-Mar 2025)          113,031    232,349      44.4
+FY2025 Q1 (Apr-Jun 2025)          127,959    263,776      44.3
+FY2025 Q2 (Jul-Sep 2025)          163,652    262,957      56.8
+FY2025 Q3 (Oct-Dec 2025)          143,318    273,804      47.8
+FY2025 Q4 (Jan-Mar 2026)          228,731    328,073      63.6
+FY2026 Q1 (Apr-Jun 2026)          178,497    367,473      44.3
+FY2026 Q2 (Jul-Sep 2026)          239,468    477,727      45.7
+
+Contract-receivables DSO at fiscal year-ends (notes & trade AR / Q4 sales x 91.25):
+  FY2024 Q4 (Jan-Mar 2025): 105,884 / 232,349 x 91.25 = 41.6 days
+  FY2025 Q4 (Jan-Mar 2026): 217,454 / 328,073 x 91.25 = 60.5 days
+
+Note 8 check: note + trade receivables vs contract receivables (note 22); other receivables share of line:
+  31 Mar 2025: 4,942 + 100,942 = 105,884 (note 22: 105,884); other receivables 7,197 = 6.4% of 113,031
+  31 Mar 2026: 8,279 + 209,175 = 217,454 (note 22: 217,454); other receivables 11,319 = 4.9% of 228,731
+
+Change in trade and other receivables:
+  31 Mar 2026 -> 30 Jun 2026: -50,234
+  30 Sep 2025 -> 30 Sep 2026: +75,816 (+46.3%) vs quarterly sales +81.7%

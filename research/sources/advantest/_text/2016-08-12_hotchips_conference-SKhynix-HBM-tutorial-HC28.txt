@@ -1,0 +1,533 @@
+The Era of High Bandwidth Memory
+
+
+
+                            Kevin Tran
+                              SK hynix
+Who am I?
+
+
+
+
+- Kevin Tran
+- Senior Manager Technical Marketing
+- HBM Product and Ecosystem Champion
+- DRAM Memory Solutions for Automotive, Infrastructure and
+  Networking.
+- Emerging Memory Technologies
+ Table of Contents
+1. Trends driving TSV based DRAM devices
+2. HBM Overview
+3. Test/Quality/Reliability
+4. Next-generation TSV Solutions
+    Major Trends Driving Higher Memory Performance                                                                                      Confidential
+
+
+
+                 Scaling of DRAM memory density, bandwidth and form factor are
+                        critical for next generation processing architectures
+                       HPC: Continuous Increasing of Cores                      Infrastructure: Unprecedented Growth of Data
+
+
+
+
+      Graphics: Increasing High Performance Graphics Card Max. Fillrate   Network: Ethernet Speed Demands Scaling of Memory Bandwidth
+
+
+
+
+3
+    High Bandwidth Memory & TSV                                                        Confidential
+
+
+
+          Through Silicon Via (TSV) technology enable DRAM memory to
+                   overcome existing performance challenges
+
+                        4th die                         High
+                        3th die
+                        2th die
+                                                      Bandwidth
+                        1th die
+
+             Base die     uBumps
+
+
+
+
+                                          High                            Small
+                                        Capacity       TSV             Form Factor
+
+
+
+
+                                                      High Data
+                                                          Bus
+                                                      Utilization
+
+
+
+4                                                                           Confidential
+2. High Bandwidth Memory Overview
+                                                                                                                                            Confidential
+    HBM, What Exactly Is It?
+
+         Known Good Stacked Die(KGSD) DRAM Memory for 2.5D System in Package integration
+                    Fine Ball Grid Array (FBGA)                                              HBM in SiP
+
+
+                                                                                DRAM Slice
+                                                                                DRAM Slice
+
+
+
+
+                                                    Side Molding
+
+
+
+
+                                                                                                         Side Molding
+                                                                                DRAM Slice                                       SoC
+                                                                                DRAM Slice
+                                                                      DA ball        TSV        PHY                     PHY
+
+
+
+                                                      Interposer
+                  Known Good Stacked Die (KGSD)
+                                                                                              Base Die
+                                                                    DFT Area                 TSV Area                            PHY
+                                                                      DA BALL                                                 ADD/CMD,
+                                                                                           TSV OVERLAP
+                                                                   (Direct Access)                                            DQ (RX/TX),
+                                                                                           DRAM POWER
+                                                                         DFT                                                SIGNAL
+                                                                                              Supply
+                                                                    (TEST Logic)                                        Connectivity Test
+
+
+
+
+6
+    Mechanical Outline : molded KGSD
+                                                                                                                                                  Confidential
+
+
+
+
+             • mKGSD (1 Base + 2/4/8 DRAM (Core) ; molded Known Good Stacked Die)
+                                                                          (a)
+
+
+
+                                                                                                                            (b)
+
+
+
+
+                                                                                         Bump
+                                Item                       Value                                                      Remark
+                                                                                    CD          Pitch
+                                                                                                        Face Centered Rectangular (FCR) pattern
+                    Gen1 - Package Dimension (X, Y)   5.48 mm x 7.29mm
+              (a)                                                                                                      ubump
+                    Gen2 - Package Dimension (X, Y)   7.75 mm x 11.87mm            25um                                  FCR
+                                                                                                55um
+                                                                                (As Reflow)
+                    Gen1 - Package Body Height (Z)        0.49 mm
+              (b)
+                    Gen2 - Package Body Height (Z)        0.72 mm
+                      Micro Bump Array (MPGA)               JEDEC                    -            -             JC11-2.883, JC11-4.884
+
+
+
+                                                                                                                                  Side Mold
+
+
+                                          Base Die
+                                                                     Micro Bumps                           Silicon
+
+
+                                         Side Mold
+
+
+
+
+7
+    HBM Functional Overview                                                                               Confidential
+
+
+
+
+    HBM 1024 IO from base die PHY region connect to host PHY through the interposer
+
+
+                                                       Features                        Spec
+                                                       Burst Length                     2, 4
+                                                    # of Die per Stack        2/4/8 DRAM (+1 Base Die)
+                                                    Density per Stack            2GB 4GB 8GB avail
+                                                     Channels / Stack                    8
+                                                  Channel / DRAM Slice             Up to 8     (2/4)
+                                                     Banks / Channel                    8/16
+                                                       IO / Channel                     128
+                                                    Prefetch / Channel             32B (128x2bit)
+                                                   Total Data IO Width                  1024
+                                                Logic Buffer Data IO / Rate   1024 DQ's @ 1GT (500MHz)
+                                                  Peak Read BW / Stack             Up to 256GB/s
+                                                        Page Size                       2KB
+                                                   DRAM Core voltage                    1.2V
+                                                  Logic Buffer IO voltage               1.2V
+
+
+
+
+8                                                                                              Confidential
+    HBM Architecture                                                                                         Confidential
+
+
+                 Each DRAM core die consists of a number of Channels
+     Pseudo Channel Mode - separate IO but independent ADD/CMD for each pseudo-
+                                       channel
+                              CH-6                             CH-7
+                               CH-4                             CH-5
+                                 CH-2                             CH-3
+                                       CH-0                             CH-1
+                             PS-CH0           PS-CH1          PS-CH0           PS-CH1
+                            B0B0~3B1          B0B0~3B1       B0B0~3B1          B0B0~3B1
+
+
+                            B2B4~7B3          B2B4~7B3       B2B4~7B3          B2B4~7B3
+
+                                       ADD                              ADD
+                              64I/O             64I/O          64I/O             64I/O
+                                       CMD                              CMD
+
+                            B4B8~11
+                                  B5          B4B8~11B5      B4B8~11
+                                                                   B5          B4B8~11B5
+
+
+                             B12~15
+                            B6   B7            B12~15
+                                              B6   B7         B12~15
+                                                             B6   B7           B12~15
+                                                                               B6   B7
+
+
+
+                       Note: this is an illustration of a design with 2 Channels per DRAM slice
+
+
+
+9                                                                                                 Confidential
+     HBM Advantages
+                                      Confidential
+
+
+
+
+                         Ratio
+                      [mW/Gbps/Pin]
+
+
+
+
+10
+     System & Memory Architecture
+                                                                                                                                                  Confidential
+
+
+
+
+              HBM is designed to address multiple needs of next generation systems
+
+
+                                                                            B/W &
+        HPC &                                 B/W                          Capacity
+
+
+        Server
+                                                                +                                 +            +
+       (B/W &
+      Capacity)                                     Bandwidth                         Bandwidth
+                                                     Solution                          Solution                    Capacity Solution
+                                              B/W
+
+       Network                                                         HBM
+      & Graphics
+        (B/W)
+                                                      Bandwidth Solution
+
+                                                                           B/W &
+                                              B/W
+                                                                            Cost
+       Client-DT
+         & NB                                                                                         +                +
+     (B/W & Cost)
+                                                                                      Bandwidth
+                                                                                       Solution
+                                                         Post-DDR4                                        Post-DDR4        Cost Solution
+
+
+
+
+11                                                                                                                                     Confidential
+     HBM Product Available                                                                                           Confidential
+
+
+
+
+      Different HBM2 line-ups available for different needs of various market segments
+
+
+        8Gb/4Gb based           9mKGSD(8 Hi)               5mKGSD(4 Hi)               3mKGSD(2 Hi)
+
+       Density/Cube(GB)              8                          4                           2
+
+           IO(DQ)                  1024                       1024                         1024
+
+       Speed/Pin(Gb/s)    1.0      1.6         2.0   1.0       1.6        2.0   1.0         1.6         2.0
+
+       Bandwidth(GB/s)    128      204         256   128       204        256   128        204          256
+
+                                                      HPC, Server, Graphics,
+            Usage          HPC, Server, Network                                       Graphics, Cache
+                                                            Network
+
+
+
+
+        Configuration
+
+
+
+
+12                                                                                                        Confidential
+3. High Bandwidth Memory – Test/Quality/Reliability
+      HBM Test Flow                                                                                         Confidential
+
+
+             Conventional DRAM                             HBM in SiP
+                                                                                                      NEW
+
+     Wafer                         Wafer      Core            Base
+                     DRAM
+                      Die                      Die             Die
+
+
+                      WFBI                     WFBI
+
+                                                                                         Logic Test
+                  Hot/Cold Test            Hot/Cold Test   Logic Test
+                                                                                         (IEEE1500)
+
+                     Repair                   Repair
+
+
+                                           Stack Process              KGSD(Known Good Stacked Die)
+                 Package Process              (KGSD)            : 3/5/9KGSD(1 Base Die + 2/4/8 Core Die)
+
+
+     PKG                           KGSD
+                      TDBI                   B/I Stress              B/I Stress
+                                                                         Dynamic Stress (BISS)
+                                           Hot/Cold Test
+                  Hot/Cold Test              & Repair
+
+
+                   Speed Test               Speed Test                            KGSD Speed Test
+
+
+14
+      Quality and Reliability Features
+                                                                                                                                Confidential
+
+
+
+
+                        HBM features enable high quality and reliability at post 2.5D assembly
+
+
+
+                                                                                                     6             TSV
+
+
+      1                                                                                              DRAM
+                                                                                                                   micro bump
+
+                                                                                                     DRAM
+                                                                                                     DRAM
+                                                                                                     Logic die           PHY
+                                                                                                                         PHY
+                                                                                                                         PHY
+
+
+                                                   1   2
+          Cell Repair                                      HBM 3    4                SoC
+                                                                          5                      PKG Substrate
+                                                                            6
+                                                                        Interposer
+                                                                                                           Proxy Package
+                                                                Substrate
+      2
+
+
+     Error Correcting Code
+            Storage                                                                              5
+
+
+                                       3
+                                                                          4
+
+                                                                                           Microbump Repair
+                               PMBIST – Post SiP             BISS(Built In Self Stress)
+                                                                    Post SiP
+
+15                                                                                                                Confidential
+                          Post Package Repair – DRAM Cells & TSV/ubumps                                                                                        Confidential
+
+
+                          HBM includes test/repair features for Post SiP assembly through IEEE1500 standards
+                                    HBM provides Soft & Hard Post Package Repair (PPR) functions
+
+                                                                                                                    Normal       Open      Micro      Crack      Delamin
+                                                                                                                                               ope                   atio
+                                                                                                                                               n                     n
+
+
+
+
+     Test
+               Function                    Detail item          Coverage
+     Area
+
+             Function Test   RD/WT,CL,BL                         100%
+     PHY
+             Margin Test     Speed, VDD, Setup/Hold Timing       100%
+
+             Function Test   RD/WT,CL,BL,TSV interface           100%      MBIST enable DRAM Cell Test and Repair     HBM supports interconnect lane remapping through
+     TSV
+               OS Check      TSV Open/Short Check                100%      through IEEE1500                           IEEE1500 instructions
+             Function Test   IEEE1500, Function, BIST, Repair    100%
+     Logic                                                                 • Conducted after SiP Assembly             •      Conducted after SiP Assembly
+             Margin Test     VDD, Speed, Setup/Hold              100%
+
+             Function Test   RD/WT, Self Ref, Power Down         100%
+                                                                           • 4-Row Rep / 2-Bank (Repair DRAM)         •      Lane remapping is independent for each channel
+     Core    Margin Test     Speed, VDD, Async, Refresh          100%      • (64 row per channel @ 8Hi)
+                Repair       Cell Repair                         100%      • Performed via MBIST
+
+
+
+16                                                                                                                                                Confidential
+                    HBM Thermal Management & Reliability
+                                                                                                         Confidential
+
+
+
+
+          • Thermal dummy bumps enhance thermal dissipation
+          • There are no mechanical reliability issues by thermal dummy bumps
+
+
+                                     110
+
+                                     105
+                         Temp. [℃]
+
+                                     100
+
+                                     95
+
+                                     90    Temp. Saturation
+                                     85
+
+                                     80
+                                                        % of thermal dummy bumps
+
+                                                                             TSV
+                                                                                   Thermal Dummy Bumps
+
+
+
+
+     Confidential
+17
+     Collaterals Available from HBM Vendors                                       Confidential
+
+
+
+
+                     Item                                          Remarks
+
+
+                                    Datasheet (Jedec / Vendor)
+
+                                    Verilog (Mission mode & DFT)
+     Functionality
+                                    IBIS
+
+                                    Hspice
+
+                                    GDS
+
+     Mechanical/Interposer Design   Bump pad netlist
+
+                                    Bump ballout
+
+                                    Flotherm
+     Thermal Simulation
+                                    Icepak
+
+
+
+
+                                                                             18
+18
+5. Future TSV based DRAM solutions
+5. Next Generation TSV Solutions                         I. Considerations for HBM3
+
+               Next generation HBMx will target multiple applications
+
+
+                Cost                                    High
+                                                    Performance           Server
+                               Form                  Computing
+Density
+                              Factor
+
+          Next Generation
+                                                      Graphics          Networking
+               HBMx
+ Band-
+                              Power
+ width
+                                                        Client           And many
+                                                                          more …
+               +/- ECC
+
+
+
+                                                                               Confidential
+     Conclusion                                                                                  Confidential
+
+
+
+
+      HBM is a breakthrough memory solution for performance, power and form-factor
+       constrained systems by delivering high bandwidth, Low effective power & Small form
+       factor
+
+      HBM device provide various mechanisms to ensure quality/reliability at pre and post SiP
+       assembly
+
+      HBM is an industry standard solution with multiple supply sources
+
+                                       Thank You!
+
+
+
+
+21
+

@@ -1,0 +1,20 @@
+Customer concentration (shares of consolidated net sales)
+RESULT share_nvidia_FY2025 = 21.5960
+RESULT share_tsmc_FY2025 = 11.0687
+RESULT share_named_FY2025 = 32.6647
+RESULT share_tsmc_FY2024 = 12.3326
+RESULT share_samsung_FY2024 = 11.2522
+RESULT share_named_FY2024 = 23.5848
+RESULT share_samsung_FY2023 = 11.8652
+RESULT top5_minus_named_FY2025_pp = 17.3353
+RESULT top5_minus_named_FY2024_pp = 24.4152
+RESULT top5_minus_named_FY2023_pp = 17.1348
+RESULT tsmc_sales_yoy_FY2025_pct = 29.9133
+RESULT samsung_sales_yoy_FY2024_pct = 51.9861
+RESULT nvidia_FY2025_vs_10pct_threshold_FY2024_JPYm = 77970.7000
+RESULT customer_FY2024_83rd_vs_84th_changed = 0
+
+FY2025: NVIDIA 21.6%, TSMC 11.1%, together 32.7%; top five ~50%
+FY2024: TSMC 12.3%, Samsung 11.3%, together 23.6%; top five ~48%
+FY2023: Samsung 11.9%; top five ~29%
+NVIDIA not named for FY2024 => FY2024 NVIDIA sales were below 10% of FY2024 net sales = JPY 77,971 million

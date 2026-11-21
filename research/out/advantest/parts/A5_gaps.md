@@ -1,0 +1,22 @@
+NOT RETRIEVED (tried: https://www.advantest.com/document/en/investors/aad/E_Info_20260401_02.pdf - HTTP 403 to scripted request, not retried) - Notice Regarding Issuance of Zero Coupon Convertible Bonds Due 2031 (1 Apr 2026)
+NOT RETRIEVED (tried: https://www.advantest.com/document/en/investors/aad/E_Info_20260401_03.pdf - HTTP 403, not retried) - Supplemental Materials regarding Issuance of Zero Coupon Convertible Bonds Due 2031 (1 Apr 2026)
+NOT RETRIEVED (tried: https://www.advantest.com/document/en/investors/aad/E_Info_20260401_04.pdf - HTTP 403, not retried) - Notice on Determination of Terms of Issue of Zero Coupon Convertible Bonds Due 2031 (1 Apr 2026)
+NOT DISCLOSED (read: Semi-Annual Securities Report 85th, Item3 1.(2) 2) and Notes 1-6; Annual Securities Report 84th, Note 33) - CB early-redemption terms (issuer call, clean-up call threshold, bondholder put dates); only references to "early redemption" and "Clean-up Redemption Notice" appear
+NOT DISCLOSED (read: Semi-Annual Securities Report 85th, Note 11; FY2026 Q1 and Q2 briefing notes) - effective interest rate of the CB liability component, initial liability amount at issue and transaction costs
+NOT DISCLOSED (read: Annual Securities Report 84th, Note 17 Borrowings, Note 30 Financial Instruments, MD&A Liquidity and Capital Resources; Semi-Annual Securities Report 85th, Item2 (2) Liquidity) - financial covenants on loans, committed line of credit or overdraft
+NOT DISCLOSED (read: Annual Securities Report 84th, Note 17(3) and MD&A Liquidity; Semi-Annual Securities Report 85th, Item2 (2)) - expiry dates, interest margins and commitment fees of the JPY 40bn committed line and JPY 100bn overdraft facilities
+NOT DISCLOSED (read: Annual Securities Report 84th, statement of financial position, Notes 17 and 30; Semi-Annual Securities Report 85th, statement of financial position) - commercial paper programme or commercial paper outstanding (no such line appears)
+NOT DISCLOSED (read: Semi-Annual Securities Report 85th, Note 11) - lease liability maturity profile at 30 Sep 2026 (maturity table is only in the annual report, at 31 Mar 2026)
+NOT DISCLOSED (read: IR web page Bonds and Ratings, 2026-11-21) - credit ratings from agencies other than R&I (Moody's, S&P, JCR)
+NOT DISCLOSED (read: Annual Securities Report 84th, Notes 26 Other Income and 32 Business Combinations, Item2 5. Material Contracts; Semi-Annual Securities Report 85th, Note 5) - name of the Services and Others business partially divested in FY2025 and the buyer
+NOT DISCLOSED (read: Annual Securities Report 84th, Note 12(2) goodwill by CGU) - CGU to which Salland goodwill (3,004) is allocated
+NOT DISCLOSED (read: Annual Securities Reports 82nd and 83rd, Note 12(2) goodwill by CGU) - CGU to which Shin Puu goodwill (2,522) is allocated
+NOT DISCLOSED (read: Semi-Annual Securities Report 85th, full notes) - goodwill by CGU and any impairment-test update at 30 Sep 2026
+NOT DISCLOSED (read: Annual Securities Reports 80th-84th, Business Combinations notes (8)) - revenue and profit contribution of R&D Altanova, CREA, Shin Puu and Salland after acquisition (omitted as immaterial)
+NOT RETRIEVED (tried: advantest.com news index pages 2023 and 2024 parsed for a Salland item; none listed) - press release announcing the Salland Engineering acquisition
+NOT DISCLOSED (read: Semi-Annual Securities Report 85th, Note 11; FY2026 Q1 and Q2 briefing notes) - names and amounts of equity instruments bought in 1H FY2026 (equity instruments at FVTOCI rose from 67,927 to 203,670)
+NOT DISCLOSED (read: Semi-Annual Securities Report 85th, Note 12 Structured Entities; Annual Securities Report 84th, Note 33) - name and manager of the investment fund(s) holding 228,916 at 30 Sep 2026
+NOT DISCLOSED (read: News 2025-01-09 Strategic Partnerships with FormFactor and Technoprobe) - size of the FormFactor minority stake (the company states the amount is not disclosed)
+NOT DISCLOSED (read: Annual Securities Report 84th, Note 30(7) FVTOCI breakdown; News 2025-02-27 Micronics Japan) - size of any Micronics Japan stake (not itemised; included in "Others" if held)
+NOT DISCLOSED (read: Press release E_Info_20261028_03 Interim Dividends) - FY2026 year-end dividend forecast (shown as TBD)
+NOT DISCLOSED (read: Annual Securities Report 84th, Item4 3. Dividend Policy; FY2026 Q2 briefing slides, Shareholder Return) - company's own computation of the cumulative MTP3 total return ratio to date and its dividend-timing convention
