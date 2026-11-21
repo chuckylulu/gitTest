@@ -1,0 +1,1255 @@
+{
+ "gapfill": [
+  {
+   "collect": {
+    "module": "ADDM",
+    "added": [
+     {
+      "candidate": "Samsung/Nova SPIE MIPC XXXIX paper 'Challenges and responses of metrology technologies for the new wave of 3D NAND devices' (DOI 10.1117/12.3050400)",
+      "rows": "ADDM-001 to ADDM-016",
+      "summary": "Samsung-led paper: 2 of 3 authors are Samsung Flash PD Team, 1 is Nova. Full text is the author manuscript on novami.com; venue and DOI come from Crossref. It is about wafer-to-wafer hybrid Cu bonding in 3D NAND. SAM makes the void maps, but a full-wafer scan takes 10-20 min, so Samsung developed an interferometry map that takes under 1 min and correlates with the SAM map. Stated SAM limits: penetration depth and throughput. AFM gives sub-nm Cu recess but has 'low throughput' for HVM, and high-speed AFM is 'early stage'. Voids >100 um cause wafer breakage. Warpage is monitored at every step. Edge roll-off is measured by Nova broadband spectral interferometry. All [F]; table rows 1-4."
+     },
+     {
+      "candidate": "Samsung-led slide deck 'Production-Ready Hybrid Metrology for Deep 3D Structure Profiling Using SE and X-ray Diffraction' (cdn.fs.pathlms.com, dated 2026-03-18)",
+      "rows": "ADDM-017 to ADDM-025",
+      "summary": "3 of 5 authors Samsung DS, plus one each from Onto and Rigaku. Optical SE loses resolution in deep VNAND (WL ~200-400), so X-ray diffraction CD (XCD / CD-SAXS) was adopted. Measurement time fell from 30 to ~5.7 min. Onto MGML raised correlation from 0.63 to 0.72. 'Production-Level' and 'production-ready' are tagged [C]. A remaining-challenges slide and future work to cut scan time are recorded. The venue (FCMN) is not printed in the deck. Table rows 5-6."
+     },
+     {
+      "candidate": "Micron XRR paper, Surface and Interface Analysis, DOI 10.1002/sia.70044",
+      "rows": "ADDM-026 to ADDM-030",
+      "summary": "All 6 authors are Micron Boise (Crossref). XRR on 3D NAND ONON stacks is compared with TEM, to 'validate XRR as a process line monitoring tool'. The abstract speaks of 'future implementation', not production. Abstract only: Wiley returned 403. Table row 7."
+     },
+     {
+      "candidate": "Micron ICMTS 2025 'Novel Fractal Points Implementation for Electron Beam Inspection (EBI)', DOI 10.1109/icmts63811.2025.11068899",
+      "rows": "ADDM-031 to ADDM-036",
+      "summary": "4 of 6 authors Micron, 2 ASML field-application engineers (Crossref). E-beam inspection in DRAM manufacturing: nuisance defects -98.1%, defects of interest +255.7%, 10K-fold resolution, faster yield learning before probe. Abstract only (Semantic Scholar). Table row 8."
+     },
+     {
+      "candidate": "Samsung SISPAD 2025 AI-driven virtual metrology-TCAD framework, DOI 10.1109/sispad66650.2025.11186319",
+      "rows": "ADDM-037 to ADDM-040",
+      "summary": "All 12 authors Samsung (7 SR&D Center, 5 Foundry). Virtual metrology combined with 3D TCAD predicts CMP non-uniformity on full-chip layouts, ~2 billion points in 4 h. The abstract does not mention bonding, memory or HBM. Table row 9."
+     },
+     {
+      "candidate": "SK hynix co-authored ACS Omega 'Material-Mechanistic Interplay in SiCN Wafer Bonding for 3D Integration' (PMC12224090) and ACS AEM companion 10.1021/acsaelm.6c00446",
+      "rows": "ADDM-041 to ADDM-048",
+      "summary": "University-led: corresponding author at YNU; 3 of 8 authors SK hynix, 1 TEL Kyushu, 1 U Tsukuba. Per the contribution statement, the SK hynix authors supervised process procedures and prepared samples. Lab methods named: SAM of the as-bonded interface, DCB bond strength and time-dependent DCB in N2 for interfacial water, PAS, TEM/EELS, XPS, ellipsometry, TDS. Main result: higher bond strength at a 250 C anneal. The AEM paper is in by title and affiliations only (3 of 8 SK hynix; pubs.acs.org 403). Table rows 10-12."
+     },
+     {
+      "candidate": "Samsung IMAPS 2026 'Warpage Control Strategies in 3D Advanced Packaging', DOI 10.4071/001c.173315",
+      "rows": "ADDM-049 to ADDM-056",
+      "summary": "Full text, all 12 authors Samsung. Vehicle: TSV interposer with chip-on-wafer stacking; HBM not stated. Warpage is measured right after debonding with 'automated inspection tools' (type and vendor not named) and cross-checked with FEA. Effects of about ±500 um, cumulative reduction up to 1000 um. TEL-processed carriers warped more than SUSS. Table row 13."
+     },
+     {
+      "candidate": "Micron press release 'Micron Ships HBM4 to Key Customers' (2025-06-10, micron.gcs-web.com/node/48886)",
+      "rows": "ADDM-057 to ADDM-059",
+      "summary": "Three [C] rows: HBM4 36GB 12-high samples shipped to key customers; a 'highly capable memory built-in self-test (MBIST) feature' (scope not disclosed); ramp planned for CY2026. Table row 14 (electrical test, [C])."
+     },
+     {
+      "candidate": "Micron Scott DeBoer, SEMICON Taiwan 2026 Master Forum keynote (Business Next, 2026-09-03)",
+      "rows": "ADDM-060 to ADDM-062",
+      "summary": "[S], quoted in Chinese with translations in the notes. Reported: hybrid bonding is 'clearly behind' in mass-production capability. D2W and W2W bonding 'and related metrology' still need substantial improvement before vertical HBM. No method is named, so it is not in the table."
+     },
+     {
+      "candidate": "Infinitesima Metron3D at SK hynix (in-line high-speed AFM)",
+      "rows": "ADDM-063 to ADDM-065",
+      "summary": "Partial. The vendor's own homepage quotes Young-Hyun Choi, Head of DMI, SK hynix: Metron3D showed sub-nm 3D metrology at HVM cost of ownership, in 'advanced DRAM processes'. Tagged [S] as vendor material. ADDM-065 is a [C] vendor self-claim: hybrid-bond Cu recess at 60 WPH, with no chipmaker named. The 'released for volume production' release is NOT RETRIEVED (GlobeNewswire 403). Table row 15."
+     }
+    ],
+    "not_added": [
+     {
+      "candidate": "Onto Innovation release: Best Partner Award from SK hynix for HBM hidden-defect prevention (2026-10-12)",
+      "reason": "NOT RETRIEVED. fetch.py got 404 on the single guess at an issuer CDN PDF (s24.q4cdn.com). investors.ontoinnovation.com refuses scripts. The StockTitan copy the critic proposed is a republisher and is barred by the access rule. SK hynix's own Partners Day article does not name Onto and is already in the dossier as AW-034. The user needs to save the investors.ontoinnovation.com page by hand."
+     },
+     {
+      "candidate": "Infinitesima 8 Jul 2025 release (SK hynix 'released it for use in volume production'), part of the Metron3D candidate",
+      "reason": "NOT RETRIEVED. globenewswire.com returned 403. infinitesima.com/news returned 404, and /insights lists only 2026 items. The StorageNewsletter copy is a republisher and was not used. Only the executive quote on the vendor homepage was added, as [S]."
+     },
+     {
+      "candidate": "ACS AEM 10.1021/acsaelm.6c00446 method content (part of the SK hynix SiCN candidate)",
+      "reason": "pubs.acs.org returned 403. The Crossref and Semantic Scholar records have no abstract, so only title and affiliations were added (ADDM-048). The measurement method is NOT DISCLOSED in the saved records."
+     }
+    ],
+    "quote_check_summary": "python3 -I research/tools/quote_check.py research/out/customer_side/parts/ADDM.csv: FOUND 65 of 65. No NOT FOUND, no flags (no quote over 25 words, no cited-page mismatch). Files: /home/user/gitTest/research/out/customer_side/parts/ADDM.csv (65 rows: 54 [F], 6 [C], 5 [S]), /home/user/gitTest/research/out/customer_side/parts/ADDM_table.csv (15 rows, 9 documents), /home/user/gitTest/research/out/customer_side/parts/ADDM_notes.md. Every source was saved with fetch.py under /home/user/gitTest/research/sources/customer_side/. Refusals recorded as NOT RETRIEVED: globenewswire.com 403, pubs.acs.org 403, onlinelibrary.wiley.com 403, q4cdn guess 404. Firecrawl was out of credits, so WebSearch was used for discovery only. Nothing was committed."
+   },
+   "check": {
+    "module": "ADDM",
+    "rows": [
+     {
+      "id": "ADDM-001",
+      "verdict": "MATCH",
+      "issue": "The quote is on p1. The byline shows Ihm and Kim at Samsung Flash Process Development Team and Han at Nova. The asterisk and samsung.com email mark the corresponding author. The PDF CreationDate is 2025-04-10, in period.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-002",
+      "verdict": "MATCH",
+      "issue": "The Crossref JSON has the title, the MIPC XXXIX event (San Jose, 2025-02-23..27) and published 2025-05-01. It lists no affiliations, as the row's note says.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-003",
+      "verdict": "MATCH",
+      "issue": "The quote is in the p1 abstract. The page also says wafer-to-wafer alignment.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-004",
+      "verdict": "MATCH",
+      "issue": "The quote and the list of five factors are on p3.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-005",
+      "verdict": "MATCH",
+      "issue": "The quote is on p2. The claim matches it.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-006",
+      "verdict": "PARTIAL",
+      "issue": "The quote is on p4. The paper says 'we defined', which means all three authors, one of them from Nova. 'Defined by Samsung' overstated the attribution.",
+      "fix_applied": "claim: 'defined by Samsung' -> 'defined by the (Samsung-led) authors'"
+     },
+     {
+      "id": "ADDM-007",
+      "verdict": "MATCH",
+      "issue": "The quote is on p4: 10-20 min per wafer for SAM, and an interferometry alternative was developed.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-008",
+      "verdict": "MATCH",
+      "issue": "The quote is on p4. The paper gives no number for the correlation, and the claim says so.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-009",
+      "verdict": "MATCH",
+      "issue": "The quote is on p4. The pad-pitch context is in the same paragraph.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-010",
+      "verdict": "MATCH",
+      "issue": "The quote is on p5.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-011",
+      "verdict": "MATCH",
+      "issue": "p5 says AFM 'can achieve sub-nanometer vertical resolution'. p4 says AFM recess measurement is used to minimise small voids. Fig 7(a) shows the pre-bond condition.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-012",
+      "verdict": "MATCH",
+      "issue": "The quote is on p5.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-013",
+      "verdict": "MATCH",
+      "issue": "p5 shows three types of high-speed AFM in Fig 8 and says they are 'still in their early stages'.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-014",
+      "verdict": "MATCH",
+      "issue": "The quote is on p6. I rendered p6 and checked the Table 1 values in the note against the page image: stylus, AFM, confocal, interferometer, with their Z-resolution and throughput. They match.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-015",
+      "verdict": "MATCH",
+      "issue": "The Figure 10 caption on p7 names Nova. Nova is the co-author's company.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-016",
+      "verdict": "MATCH",
+      "issue": "The quote is in the p7 conclusion. The word-line context is in the same sentence.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-017",
+      "verdict": "MATCH",
+      "issue": "p1 lists three Samsung DS authors, one Onto and one Rigaku, dated 26.03.18. p17 gives a Samsung contact and the line 'property of Samsung Electronics'. The date is in period.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-018",
+      "verdict": "MATCH",
+      "issue": "The quote is on p3. The WL ~200th, ~300th and ~400th labels are on the same slide.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-019",
+      "verdict": "PARTIAL",
+      "issue": "The quote is the p4 slide title. 'Is adopted' read as an in-use status the slide does not state. The deck never expands XCD as 'X-ray CD by diffraction'.",
+      "fix_applied": "claim rewritten: it now reports the slide title 'Adoption of XCD...' and the slide's statement that X-ray diffraction is more sensitive than optical, and notes that XCD is not expanded in the deck. Tag stays [F]."
+     },
+     {
+      "id": "ADDM-020",
+      "verdict": "MATCH",
+      "issue": "The quote is the p6 slide title. A production-level claim is correctly tagged [C].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-021",
+      "verdict": "MATCH",
+      "issue": "The quote is on p6: 30 min down to about 5.7 min.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-022",
+      "verdict": "MATCH",
+      "issue": "The quote is the p7 title. The R2 labels are on the slide.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-023",
+      "verdict": "PARTIAL",
+      "issue": "The p10 table values (0.63->0.72 and 0.67->0.81) are correct. The deck never says MGML is Onto's. It only says 'Available in Ai Diffract' and 'Some materials provided by Onto'.",
+      "fix_applied": "claim: 'Onto model-guided ML (MGML, 'Available in Ai Diffract')' -> 'Model-guided ML (MGML; slide marked 'Available in Ai Diffract' and 'Some materials provided by Onto')'"
+     },
+     {
+      "id": "ADDM-024",
+      "verdict": "MATCH",
+      "issue": "The quote is on p16. 'Production-ready' is a status claim, correctly tagged [C].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-025",
+      "verdict": "MATCH",
+      "issue": "The quote is on p16.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-026",
+      "verdict": "MATCH",
+      "issue": "The Crossref record shows all 6 authors at 'Micron Technology Boise Idaho USA'. Published online 2026-01-06, in period.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-027",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in the Semantic Scholar abstract. That record lists author names only, so the Micron attribution does not appear in the cited document.",
+      "fix_applied": "note: added that the Micron affiliations are in the Crossref record of the same DOI (ADDM-026)"
+     },
+     {
+      "id": "ADDM-028",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found. The cited Semantic Scholar record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-026)"
+     },
+     {
+      "id": "ADDM-029",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found and 'future implementation' is worded correctly. The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-026)"
+     },
+     {
+      "id": "ADDM-030",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found. The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-026)"
+     },
+     {
+      "id": "ADDM-031",
+      "verdict": "PARTIAL",
+      "issue": "The quote and the 4-of-6 Micron count are correct. The record reads 'F15 ADTJ PIE HPM'. 'Fab 15' was an expansion the record does not give.",
+      "fix_applied": "claim: 'Fab 15 Higashi-Hiroshima x2' -> ''F15' Higashi-Hiroshima x2'"
+     },
+     {
+      "id": "ADDM-032",
+      "verdict": "MATCH",
+      "issue": "Two ASML 'Field Appication' authors are in Taoyuan. The abstract names no EBI tool.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-033",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in the Semantic Scholar abstract. That record has no affiliations, so the Micron and ASML attribution is not in the cited document.",
+      "fix_applied": "note: added that the affiliations are in the Crossref record of the same DOI (ADDM-031, ADDM-032)"
+     },
+     {
+      "id": "ADDM-034",
+      "verdict": "PARTIAL",
+      "issue": "The quote and the 98.1% and 255.7% figures are correct. The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-031, ADDM-032)"
+     },
+     {
+      "id": "ADDM-035",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found (10K-fold). The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-031, ADDM-032)"
+     },
+     {
+      "id": "ADDM-036",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found. The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-031, ADDM-032)"
+     },
+     {
+      "id": "ADDM-037",
+      "verdict": "MATCH",
+      "issue": "The Crossref record shows 12 of 12 authors at Samsung: 7 at the Semiconductor R&D Center and 5 at Foundry Business. Dated 2025-09-24.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-038",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in the Semantic Scholar abstract. That record has no affiliations.",
+      "fix_applied": "note: added that the Samsung affiliations are in the Crossref record of the same DOI (ADDM-037)"
+     },
+     {
+      "id": "ADDM-039",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found and the neural-operator claim is correct. The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-037)"
+     },
+     {
+      "id": "ADDM-040",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found (two billion points, four hours). The cited record has no affiliations.",
+      "fix_applied": "note: added the pointer to the Crossref affiliations (ADDM-037)"
+     },
+     {
+      "id": "ADDM-041",
+      "verdict": "MISMATCH",
+      "issue": "The author count was wrong. The saved PMC page byline and citation_author meta list 9 authors: Kitagawa, Sato, Ebiko and Inoue (YNU), Nagata (TEL), Ahn, Y. Kim and Kang (SK hynix), and Uedono (Tsukuba). The first author is Kitagawa, not Sato. YNU has 4 authors, not 3. The quote is correct.",
+      "fix_applied": "claim: '3 of 8' -> '3 of 9'; 'YNU (3, incl. corresponding author)' -> 'YNU (4, incl. first and corresponding author)'. value: '3 of 9'. document: 'Sato et al.' -> 'Kitagawa et al.'. note: '3 of 8' -> '3 of 9'. ADDM_table.csv chipmaker updated on the 3 ACS Omega rows. ADDM_notes.md (not in scope) still says 'three of eight'."
+     },
+     {
+      "id": "ADDM-042",
+      "verdict": "PARTIAL",
+      "issue": "The quote and the contribution roles are correct. The note wrongly said 'H.K.' is not in the author list; H.K. is the first author, Hayato Kitagawa (YNU). The document named the wrong first author.",
+      "fix_applied": "note: replaced the H.K. remark with 'H.K. and R.S. conducted most of the evaluations' (H.K. = first author Hayato Kitagawa, YNU). document: 'Kitagawa et al.'. note: '3 of 9 authors SK hynix'."
+     },
+     {
+      "id": "ADDM-043",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in section 3.2 and the claim is correct. The document had the wrong first author and the note had the wrong author count.",
+      "fix_applied": "document: 'Sato et al.' -> 'Kitagawa et al.'; note: '3 of 8' -> '3 of 9'"
+     },
+     {
+      "id": "ADDM-044",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in the Experimental section. The paper also calls the apparatus 'semiautomated'. The document had the wrong first author and the note had the wrong count.",
+      "fix_applied": "document: 'Kitagawa et al.'; note: '3 of 9'"
+     },
+     {
+      "id": "ADDM-045",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found. The N2 glovebox and the 15/30/60/120/180 s measurement times are confirmed. Same first-author and count errors as above.",
+      "fix_applied": "document: 'Kitagawa et al.'; note: '3 of 9'"
+     },
+     {
+      "id": "ADDM-046",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found. The instruments and vendors are confirmed: JEOL, J.A. Woollam, ESCO, Kobelco, ULVAC-PHI and Bruker. Same first-author and count errors as above.",
+      "fix_applied": "document: 'Kitagawa et al.'; note: '3 of 9'"
+     },
+     {
+      "id": "ADDM-047",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in the abstract and the 250 C anneal is confirmed. Same first-author and count errors as above.",
+      "fix_applied": "document: 'Kitagawa et al.'; note: '3 of 9'"
+     },
+     {
+      "id": "ADDM-048",
+      "verdict": "PARTIAL",
+      "issue": "The affiliation counts are correct: 3 SK hynix, 1 TEL Kyushu and 4 YNU of 8 authors. Dated 2026-04-21. '(bond overlay)' and 'Companion paper' are not in either saved record, which have title and affiliations only and no abstract.",
+      "fix_applied": "claim: 'Companion paper on ... (bond overlay):' -> 'Second SiCN bonding paper (title: bond-wave dynamics and distortion-induced scaling errors):'. ADDM_notes.md (not in scope) still uses the old wording."
+     },
+     {
+      "id": "ADDM-049",
+      "verdict": "MATCH",
+      "issue": "p1 lists 12 authors, all Samsung Electronics, Giheung, Yongin. The saved Crossref record has the 2026-10-27 date.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-050",
+      "verdict": "MATCH",
+      "issue": "The quote is on p2. The vehicle description (TSV interposer, C4 micro-bumps, glass carrier WSS, F2F CoW, EMC, MDG, DBD) matches p2.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-051",
+      "verdict": "MATCH",
+      "issue": "The quote is on p2. No tool type or vendor is named.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-052",
+      "verdict": "MATCH",
+      "issue": "The Fig 4 caption is on p5. p4 has the 'cross-examined through numerical finite element simulations' text.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-053",
+      "verdict": "MATCH",
+      "issue": "The quote is on p4. The next line reads 'approximately 500 um'.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-054",
+      "verdict": "MATCH",
+      "issue": "The quote is on p5.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-055",
+      "verdict": "MATCH",
+      "issue": "The quote is in the p6 conclusion: 'low CTE encapsulant or SRA adjustment'.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-056",
+      "verdict": "MATCH",
+      "issue": "The quote is on p3. TEL shows higher warpage than SUSS, and the root cause 'requires further micro-structural stress analysis'.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-057",
+      "verdict": "MATCH",
+      "issue": "The quote is in the release dated June 10, 2025 on Micron's own page. A shipment claim is correctly tagged [C].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-058",
+      "verdict": "MATCH",
+      "issue": "The quote is found. The release does not describe the scope of MBIST, which the note says. Tagged [C].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-059",
+      "verdict": "MATCH",
+      "issue": "The quote is found. A roadmap claim, tagged [C].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-060",
+      "verdict": "MATCH",
+      "issue": "The quote is in the Business Next article by 王聖華, dated 2026.09.03. It names DeBoer's Micron title and the 2 Sep Master Forum during SEMICON Taiwan 2026. Trade press, tagged [S].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-061",
+      "verdict": "MATCH",
+      "issue": "The quote is DeBoer's words as the article reports them. The translation is correct. Tagged [S].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-062",
+      "verdict": "PARTIAL",
+      "issue": "The quote is found. The article attributes the need for improvement in D2W/W2W bonding and metrology to DeBoer. The link to when vertical HBM reaches volume is the reporter's own sentence.",
+      "fix_applied": "claim: 'before vertical HBM reaches volume' -> '(the reporter ties these to when vertical HBM reaches volume)'"
+     },
+     {
+      "id": "ADDM-063",
+      "verdict": "PARTIAL",
+      "issue": "The quote is in the homepage quote block. The page does not expand 'DMI' or say 'in-line'. The note described the content of an 8 Jul 2025 release that was never retrieved. Tagged [S], correctly.",
+      "fix_applied": "claim: removed the DMI expansion and 'in-line'; it now reads '(not expanded on the page)' and 'Metron3D (sold as high-speed AFM)'. note: the unretrieved release is now 'NOT RETRIEVED ... and its content is not used'. ADDM_table.csv Infinitesima row: venue and method edited to drop the unretrieved-release content and 'in-line'."
+     },
+     {
+      "id": "ADDM-064",
+      "verdict": "MATCH",
+      "issue": "The quote is in the homepage block, attributed to 'Young-Hyun Choi, Head of DMI, SK hynix'. The context is advanced DRAM processes. Vendor material about another company, tagged [S]. The page is undated, and the row says so.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDM-065",
+      "verdict": "MATCH",
+      "issue": "The quote is on the Metron3D product page under Hybrid Bonding (60 WPH). It is the vendor's claim about itself, tagged [C]. No chipmaker is named.",
+      "fix_applied": "none"
+     }
+    ]
+   }
+  },
+  {
+   "collect": {
+    "module": "ADDL (TSMC, Intel, ASE, Amkor gap-fill). I wrote research/out/customer_side/parts/ADDL.csv with 58 rows (37 [F], 20 [C], 1 [I]), ADDL_table.csv with 13 method rows from 10 documents, and ADDL_notes.md. I added 9 of the 11 candidates. The other 2 were refused by their hosts and are NOT RETRIEVED. Every document was saved with fetch.py under research/sources/customer_side/. I did not edit any other module's files and did not commit.",
+    "added": [
+     {
+      "candidate": "Intel with FormFactor: SWTest 2026 deck W07_01, micro-bump probing in HVM",
+      "rows": "ADDL-001 to ADDL-014",
+      "summary": "Intel-led (4 Intel Foundry, 2 FormFactor). [C]: micro-bump probing in HVM on Foveros since 2019. Foveros DOW36 is 'In Mass Production since 2019' for wafer and die sort, with 25+ products, 300K+ wafers, 1500+ probe heads and ~90% probe-card availability. EMIB micro-bump probing is planned for 2026; EMIB45 is 'Under development' with certification by Q3'26. [F]: bridge micro-bump geometry, probe-induced defect modes, and a qualification plan with SEM/EDS/X-ray coupon characterization and bump-deformation checks. Micro-bump electrical test, not hybrid bonding or HBM."
+     },
+     {
+      "candidate": "TSMC: SWTest 2026 deck M03_02, 'Integrated Solution for HPC Testing in AI Era'",
+      "rows": "ADDL-024 to ADDL-030",
+      "summary": "TSMC ownership comes from the deck's disclaimer; no affiliation is printed on the title slide. [F]: distributed test flow with CP for KGD, CPS (known-good stack) on SoIC, RDL-CP on CoWoS interposers, WLCP, CoW-SDP and AST. The CP early-detection slide shows >2/>2/~2/<1 weeks per stage with rising cost markers; targets include 'HBM Base die' and 'New media (Cu pad, uBump)'. [C]: 3.3X/1.7X stop-and-fix cycle-time labels and a >800K-pin singulated-die probing capability. No production status or vendors."
+     },
+     {
+      "candidate": "Intel with Technoprobe: SWTest 2026 deck M02_01, native-pitch micro-bump probing",
+      "rows": "ADDL-015 to ADDL-023",
+      "summary": "Joint deck, one Intel and one Technoprobe presenter. Intel's stated reason is a 'shift-left strategy for test' for high-die-count packages. [C]: Foveros-S products (Meteor Lake) are probed today at >90 um pitch. [F]: 45 um native-pitch probing; on the test vehicle, no shorting and a post-probe bump-height difference within the assembly threshold (instrument not named). Technoprobe's slide uses XRM 3D reconstruction of the probe head. [C] status: 'on track to pass criteria for high volume sort', so pre-HVM."
+     },
+     {
+      "candidate": "TSMC: IMPACT 2025 paper 10.1109/impact67645.2025.11281768, carrier-wafer optical metrology",
+      "rows": "ADDL-031 to ADDL-037",
+      "summary": "Crossref lists all 8 authors as TSMC. From the abstract only: Advanced Optical Metrology (AOM) measures transmittance, roughness and bulk defects such as voids or cracks in carrier wafers, which limit warpage in 2.5D/3D. It was 'successfully validated' on 12-inch carriers, takes under one minute, and was cross-checked against unnamed instruments. Validated, not production."
+     },
+     {
+      "candidate": "ASE: IMPACT 2025 paper 10.1109/impact67645.2025.11281550, AI defect detection",
+      "rows": "ADDL-038 to ADDL-043",
+      "summary": "Crossref lists all 4 authors as ASE Corporate R&D. From the abstract only: synthetic data lifts recall on substrate defects from 82.1% to 93.1%. The CAD model has an escape rate <0.05% and false positives <1%, with ~10% uncertain cases. Stated limits are annotation load and adaptability. 'Widely adopted' is a general statement, not about ASE. Not HBM."
+     },
+     {
+      "candidate": "ASE: ASEH 2025 Sustainability Report (aseglobal.com/en/pdf; the single PDF test returned 200)",
+      "rows": "ADDL-044 to ADDL-047",
+      "summary": "[C]: the 2025 development list includes wire-bond AOI with anomaly-detection AI. ASE says it built a proprietary wire-bonding AI-AOI/AVI inspection system and that its OOB platform cuts anomaly analysis from days to hours. [I] Medium: the AGM 'image anomaly-detection AI' in TALK-048 is most likely this wire-bond item, not HBM. The 248-page report has no HBM or hybrid-bond text."
+     },
+     {
+      "candidate": "Amkor: ITC 2026 event page (Dossani talk), plus the ITC 2025 page that was already saved",
+      "rows": "ADDL-048 to ADDL-050",
+      "summary": "[F]: the talk 'Advanced Packages, AI & Amkor: The OSAT Test Perspective' (Oct 2026), and Pancholi's 'Best Practices for Testing 2.5D Chiplet Package Designs' (Sep 2025). [C]: Amkor's description names increasing production test times, multi-chiplet challenges and wafer- and package-level test-access constraints. No HBM and no numbers."
+     },
+     {
+      "candidate": "Amkor: Smart Manufacturing page",
+      "rows": "ADDL-051 to ADDL-053",
+      "summary": "[C]: AI-vision Automated Defect Classification cut AOI operators by 30%. Roadmap item to expand ADC. FDC combined with SPC. The HTML meta dateModified is 2026-08-07. Not HBM-specific."
+     },
+     {
+      "candidate": "Intel: patent US 2025/0006651 A1, slit fiducials (published 2 Jan 2025)",
+      "rows": "ADDL-054 to ADDL-058",
+      "summary": "Intel Corp is the assignee. [F]: fiducials are used in a post-bond inspection step to measure bond overlay, with results fed back to the bonder. IR alignment metrology works in reflective or transmissive mode. A metal-free zone under the fiducial is preferred. HBM appears only in boilerplate. No production status. The first fetch got HTTP 503 and a second attempt got 200."
+     }
+    ],
+    "not_added": [
+     {
+      "candidate": "TSMC 2026 and 2025 Supply Chain Management Forum award PDFs (pr.tsmc.com)",
+      "reason": "NOT RETRIEVED: the one allowed fetch.py test on the 2026 PDF returned HTTP 403, so I did not try the 2025 PDF. The critic's category list came from WebFetch and is kept only as a lead. AW-001 to AW-016 stay [S]. The user needs to save both PDFs by hand."
+     },
+     {
+      "candidate": "Intel Foundry packaging page (packaging.htm) and Foveros Direct 3D tech brief (www.intel.com)",
+      "rows": "",
+      "reason": "NOT RETRIEVED: the one allowed fetch.py test on the Foveros Direct PDF returned HTTP 403, and I did not try packaging.htm because the host refuses scripts. gaps.md item 12 therefore stays NOT RETRIEVED and cannot be closed as NOT DISCLOSED. The critic's quotes are kept as leads."
+     }
+    ],
+    "quote_check_summary": "python3 -I research/tools/quote_check.py research/out/customer_side/parts/ADDL.csv gives FOUND: 58 of 58, with no flags. The one NOT FOUND on the first run (ADDL-007) came from a quote that spanned two table cells; I shortened it to \"Technology Certification by Q3'26\"."
+   },
+   "check": {
+    "module": "ADDL",
+    "rows": [
+     {
+      "id": "ADDL-001",
+      "verdict": "MATCH",
+      "issue": "Quote is on p1. The superscripts give 4 Intel Foundry and 2 FormFactor authors. [F] is correct and the 2026-06-08 date is in period.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-002",
+      "verdict": "MATCH",
+      "issue": "Exact quote on p3 ('HVM starting in 2019'). Wafer/die sort comes from the p11 table. A production statement, so [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-003",
+      "verdict": "MATCH",
+      "issue": "Exact quote on p3. A company plan, so [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-004",
+      "verdict": "MATCH",
+      "issue": "p11 table: 'In Mass Production since 2019 / Wafer- and Die-Sort'. The 2019 start is a historical statement inside an in-period (Jun 2026) deck.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-005",
+      "verdict": "MATCH",
+      "issue": "p11 table: Products 25+ (multiple sites), Wafers 300K+, FFI Probe Heads 1500+. The values match.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-006",
+      "verdict": "PARTIAL",
+      "issue": "p11 gives the mean time to failure as '1 - 2 for standard probe maintenance' (card returns per 100 wafers). The claim dropped the maintenance qualifier, so the returns read as failures.",
+      "fix_applied": "ADDL.csv claim: added 'for standard probe maintenance'"
+     },
+     {
+      "id": "ADDL-007",
+      "verdict": "MATCH",
+      "issue": "p11: 'Under development' and 'Technology Certification by Q3'26'. The note says completion was not checked.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-008",
+      "verdict": "MATCH",
+      "issue": "p6 and p11 give core 65-70um CD at 100um pitch, bridge 23-28um CD at 45um pitch, and micro-bumps probed at 90um skip-bump pitch.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-009",
+      "verdict": "MATCH",
+      "issue": "p5 lists the challenges plus the Solder Avalanche and Missing Bump labels.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-010",
+      "verdict": "MATCH",
+      "issue": "p8 page image confirms '(SEM, EDS, X-ray)' sits inside the 'Intel + FFI test coupon characterization -> probe finalized' box. The thermomechanical cycling and bump deformation boxes are there too.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-011",
+      "verdict": "MATCH",
+      "issue": "p14 list matches the claim. Exact quote.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-012",
+      "verdict": "MATCH",
+      "issue": "p10 quote exact. Product B and EMIB45 TV1 incoming data are on p10, the <=10um target on p11. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-013",
+      "verdict": "MATCH",
+      "issue": "p12 page image shows all CRES points below the passing-limit line for 100C sort and the merged socket (cold -10C, hot 100C). Quote exact.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-014",
+      "verdict": "MATCH",
+      "issue": "p15 quote exact. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-015",
+      "verdict": "MATCH",
+      "issue": "p1 presenters and p17 acknowledgements (2 Intel Foundry, 4 Technoprobe) match.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-016",
+      "verdict": "MATCH",
+      "issue": "p2 (Periasamy, Intel slide): yield improvement need drives shift-left; probing of core and micro-bumps even at native pitch <50um.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-017",
+      "verdict": "MATCH",
+      "issue": "p3 quote exact. Two probe types (power/ground and signal) at >90um. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-018",
+      "verdict": "MATCH",
+      "issue": "p3: 45.0um native pitch, 'K Tech', 'Enabled by Technoprobe'.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-019",
+      "verdict": "PARTIAL",
+      "issue": "p12 says 'No evidence of shorting over several die TD'. The claim said 'no shorting', which is stronger.",
+      "fix_applied": "ADDL.csv claim: 'no shorting' -> 'no evidence of shorting'"
+     },
+     {
+      "id": "ADDL-020",
+      "verdict": "MATCH",
+      "issue": "p13 quote exact. Values and instrument are not shown, as the note says.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-021",
+      "verdict": "MATCH",
+      "issue": "p10 (Technoprobe slide): XRM 3D reconstruction in a prototype probe head; 'K tech probes meet 500K TD mech reliability expectations'. The note flags it as a vendor-presented slide.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-022",
+      "verdict": "MATCH",
+      "issue": "p15 quote exact. The footer names the Technoprobe presenter, as the note says. [C] status claim.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-023",
+      "verdict": "MATCH",
+      "issue": "p16 quote exact (Intel presenter footer). [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-024",
+      "verdict": "MATCH",
+      "issue": "p28 disclaimer quote exact. Page images confirm the 'Security C - TSMC Secret' footer. TSMC attribution is shown through the disclaimer.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-025",
+      "verdict": "PARTIAL",
+      "issue": "p8 diagram shows CoW-SDP as a dashed box with a dashed arrow. The word 'optional' is not printed; it is an inference.",
+      "fix_applied": "ADDL.csv claim: 'optional CoW-SDP' -> 'CoW-SDP (dashed box)'"
+     },
+     {
+      "id": "ADDL-026",
+      "verdict": "PARTIAL",
+      "issue": "The p7 page image shows the CP marker only on the top-die wafer line, with none on the LSI wafer. The week labels decrease (>2, >2, ~2, <1), but ADDL_table said later insertions 'take longer'.",
+      "fix_applied": "ADDL.csv claim: 'CP on top-die and LSI wafers' -> 'CP on the top-die wafer, LSI wafer with no CP marker'. ADDL_table row 6 limits_stated: dropped 'and take longer' and described the week labels as shown"
+     },
+     {
+      "id": "ADDL-027",
+      "verdict": "MATCH",
+      "issue": "p9 page image: 3.3X arrow from AST/FT to RDL-CP, 1.7X to WLCP/SDP, 'Materials Saving!!' at RDL-CP. Bullet quote exact. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-028",
+      "verdict": "MATCH",
+      "issue": "p10 labels are present (HBM Base die, CPS/3D stacking, CoW, RDL + LSI/IVR, AST/FT, New media).",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-029",
+      "verdict": "MATCH",
+      "issue": "p25 capability list matches. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-030",
+      "verdict": "PARTIAL",
+      "issue": "p26 says 'several challenges in testing, particularly in thermal management'. 'The main' challenge overstated this.",
+      "fix_applied": "ADDL.csv claim: 'names thermal management as the main AI-era testing challenge' -> 'singles out thermal management ('particularly') among several AI-era testing challenges'"
+     },
+     {
+      "id": "ADDL-031",
+      "verdict": "MATCH",
+      "issue": "Crossref lists all 8 authors as TSMC, last author Zhi-Hua Zou, IMPACT 2025, Taipei, 21-24 Oct 2025.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-032",
+      "verdict": "MATCH",
+      "issue": "S2 abstract quote exact. TSMC attribution comes from the Crossref record of the same DOI (same 8 names).",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-033",
+      "verdict": "MATCH",
+      "issue": "Abstract quote exact.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-034",
+      "verdict": "MATCH",
+      "issue": "Abstract quote exact.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-035",
+      "verdict": "MATCH",
+      "issue": "Abstract quote exact. Status is 'validated', not production.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-036",
+      "verdict": "PARTIAL",
+      "issue": "The unit said '(per wafer, as stated)', but the abstract never says 'per wafer'.",
+      "fix_applied": "ADDL.csv unit -> 'minute measuring time (as stated)'"
+     },
+     {
+      "id": "ADDL-037",
+      "verdict": "MATCH",
+      "issue": "Abstract quote exact. The instruments are not named.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-038",
+      "verdict": "MATCH",
+      "issue": "Crossref lists all 4 authors under ASE Corporate R&D, AI & Advanced Optical Technology Development Division, Zhubei. The S2/Crossref name variant is noted.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-039",
+      "verdict": "MATCH",
+      "issue": "Abstract quote exact. The claim correctly limits it to a general statement.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-040",
+      "verdict": "MATCH",
+      "issue": "Abstract: DR with ~5K substrate defect images raises recall 82.1->93.1% and precision 82.2->93.4% and cuts the dataset 50%.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-041",
+      "verdict": "MATCH",
+      "issue": "Abstract: escape <0.05%, false positives <1%, ~10% uncertain.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-042",
+      "verdict": "MATCH",
+      "issue": "Abstract: about 5 minutes of training on 1K normal 256x256 images.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-043",
+      "verdict": "MATCH",
+      "issue": "Abstract quote exact.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-044",
+      "verdict": "MATCH",
+      "issue": "Report p91 list item (2), exact. pdfinfo CreationDate is 2026-09-07 (in period). No HBM or hybrid-bond text found.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-045",
+      "verdict": "MATCH",
+      "issue": "p107 quote exact. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-046",
+      "verdict": "PARTIAL",
+      "issue": "p107 says the platform reduces 'costs and wastage from rework, scrapping and repeated inspections'. The claim said it 'reduces repeated inspections'.",
+      "fix_applied": "ADDL.csv claim reworded to '...from days to hours, reducing costs and wastage from rework, scrapping and repeated inspections' (field quoted)"
+     },
+     {
+      "id": "ADDL-047",
+      "verdict": "MATCH",
+      "issue": "[I] row has inputs, a Medium confidence and a reason. The saved China Times text confirms the three focus areas (HBM-related packaging, image anomaly-detection AI, SiP/3D items) that the note describes. Quote on p91.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-048",
+      "verdict": "MATCH",
+      "issue": "Amkor page names Dossani as VP Global Test Services, gives the talk title and San Antonio, 11-16 Oct 2026. Meta datePublished is 2026-07-01.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-049",
+      "verdict": "PARTIAL",
+      "issue": "The text matches the page, but the row records the listed talk topics, not an in-use, production or first claim, so the tag should be [F], not [C].",
+      "fix_applied": "ADDL.csv tag [C] -> [F]. ADDL_table row 11 tag [F]/[C] -> [F]"
+     },
+     {
+      "id": "ADDL-050",
+      "verdict": "PARTIAL",
+      "issue": "The page is a pre-event announcement ('will present', datePublished 2025-08-29), but the claim said Pancholi 'presented'. The date column holds the event start, which is in period.",
+      "fix_applied": "ADDL.csv claim: 'presented' -> 'is listed to present'. Note: added pre-event wording, datePublished 2025-08-29, and that the date column is the event start"
+     },
+     {
+      "id": "ADDL-051",
+      "verdict": "MATCH",
+      "issue": "ADC line quote exact. dateModified is 2026-08-07. [C] is correct.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-052",
+      "verdict": "MATCH",
+      "issue": "Roadmap 'Advanced Technologies' quote exact. A plan, so [C].",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-053",
+      "verdict": "MATCH",
+      "issue": "FDC & SPC quote exact, in the list of technologies 'Amkor deploys'.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-054",
+      "verdict": "MATCH",
+      "issue": "Google Patents: original assignee Intel Corp, filed 2023-06-30, published 2025-01-02, 9 inventors including Karhade and Deshpande, status Pending.",
+      "fix_applied": "none"
+     },
+     {
+      "id": "ADDL-055",
+      "verdict": "PARTIAL",
+      "issue": "The patent says fiducials 'may also be used' and the result 'may be fed back'. The claim stated both as fact.",
+      "fix_applied": "ADDL.csv claim: 'are also used' -> 'may also be used'; 'the result is fed back' -> 'the result may be fed back'"
+     },
+     {
+      "id": "ADDL-056",
+      "verdict": "PARTIAL",
+      "issue": "The patent opens the sentence with 'In various implementations'. The claim stated it generally.",
+      "fix_applied": "ADDL.csv claim: added 'in various implementations'"
+     },
+     {
+      "id": "ADDL-057",
+      "verdict": "PARTIAL",
+      "issue": "The patent says the IR light 'may be blocked' by metal under the fiducial. The claim said 'blocks', and so did ADDL_table row 13.",
+      "fix_applied": "ADDL.csv claim: 'blocks' -> 'can block'. ADDL_table row 13 limits_stated: 'blocks IR' -> 'can block IR'"
+     },
+     {
+      "id": "ADDL-058",
+      "verdict": "PARTIAL",
+      "issue": "HBM also appears in a second generic passage (stacked HBM as a possible processor-unit component), so 'only in generic stacked-device text' was incomplete. Still not an application of the fiducials.",
+      "fix_applied": "ADDL.csv claim now names both generic passages"
+     }
+    ]
+   }
+  }
+ ],
+ "tables": {
+  "applied": [
+   {
+    "location": "table_memory[0] SK hynix JSTS in-line chip warpage, Tag",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 46 tag [F] -> [F]/[C] (PAPM-199..202 are [C])"
+   },
+   {
+    "location": "table_memory[1] SK hynix JSTS warpage, Limits",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 46 limits_stated replaced with critic's text: stated limits PAPM-209/PAPM-208, then throughput, scanner time and R2 marked as reported but not called limits. Quotes checked against evidence and the saved full text"
+   },
+   {
+    "location": "table_memory[2] SK hynix JSTS TEOS SiO2, Tag",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "rows 48 and 49, the document's two rows, which both cite PAPM-222 [C]: tag -> [F]/[C]"
+   },
+   {
+    "location": "table_memory[3] SK hynix TEOS SiO2, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "rows 48 and 49 status -> fuller PAPM-222 quote, noting it refers to the deposition process and not to the IR/FIB inspection (critic's text)"
+   },
+   {
+    "location": "table_memory[4] SK hynix Newsroom 8th cohort, Tag",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "rows 8 and 9 tag -> [F]/[C]. Both rows of the document were set: build_tables.py makes a sorted set of the row tags, so changing only row 8 would print [F]/[F]/[C]. At row level, row 9 (Cobis, TALK-012 only) has no [C] evidence; the alternative is to drop TALK-011 from row 8's evidence ids"
+   },
+   {
+    "location": "table_memory[5] SK hynix ECTC 2026 crack velocity, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 37 chipmaker -> 'SK hynix (5 of 8 authors; first and last authors Sungkyunkwan University, 3 of 8)' (Crossref record checked)"
+   },
+   {
+    "location": "table_memory[6] SK hynix Newsroom Doh award, Tool vendor",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 2 tool_vendor -> 'NOT DISCLOSED (read: same article, full text)'; the Gauss Labs link from another document was removed"
+   },
+   {
+    "location": "table_memory[7] Samsung IRPS 2025 interface resistance, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 12 status -> proposed (\"We propose ...\") with the PAPM-049 and PAPM-050 quotes (adoption not stated)"
+   },
+   {
+    "location": "table_memory[8] Samsung IRPS 2026 silicide, Tag",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 19 tag -> [F]/[C]"
+   },
+   {
+    "location": "table_memory[9] Samsung IRPS 2026 silicide, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 19 status -> NOT DISCLOSED as production/pilot/lab, plus the capability claims [C] PAPM-071 and PAPM-070 as full quotes"
+   },
+   {
+    "location": "table_memory[10] Samsung JMM 041405 massive metrology, Chipmaker",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 3 chipmaker -> Samsung (co-author only: vendor-led, 13 of 23 Nearfield incl. first and last author, 10 Samsung). Checked against the Crossref record"
+   },
+   {
+    "location": "table_memory[11] Samsung JMM 041405, Status",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 3 status '(three wafers)' -> '(six wafers: three \"top\" with split condition, three \"bottom\" in POR condition)'"
+   },
+   {
+    "location": "table_memory[12] Samsung JMM 041405, Tool vendor",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 3 tool_vendor -> Nearfield as co-author affiliation (13 of 23); the abstract does not name the AFM tool maker"
+   },
+   {
+    "location": "table_memory[13] Samsung? SPIE color-based defect detection, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 44 confidence Low-Medium -> Low, to match PAPM-191"
+   },
+   {
+    "location": "table_memory[14] Samsung? SPIE MMT virtual metrology, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 45 status -> full PAPM-195 sentence (role claimed, deployment not stated) plus the PAPM-193 study quote"
+   },
+   {
+    "location": "table_memory[15] Samsung HBM3E product page FAQ, Tag",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 29 tag -> [F]/[C] (TALK-034 [C])"
+   },
+   {
+    "location": "table_memory[16] Samsung ISTFA 2025 OFI lock-in OBIRCH, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 22 chipmaker -> joint with Hamamatsu Photonics (5 of 9 Samsung incl. first, 4 Hamamatsu incl. last). Crossref checked"
+   },
+   {
+    "location": "table_memory[17] Samsung ISTFA 2025 VTR, Limits",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 23 (infrared/conventional row) -> 'limits of the conventional methods, not of VTR: ...' with full PAPM-086 and PAPM-087 quotes; row 24 (VTR row) -> 'VTR limits NOT DISCLOSED (read: ...)'. The joined cell equals the critic's text"
+   },
+   {
+    "location": "table_memory[18] Samsung ISTFA 2025 BCAT screening, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 21 status -> '\"offering a practical solution for high-throughput DRAM manufacturing\" (proposed use; deployment not stated)'"
+   },
+   {
+    "location": "table_memory[19] Samsung BCAT screening, Limits",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 21 limits -> limits of the conventional L3/L4 screens; limits of the new screen NOT DISCLOSED; the 10 h -> 5 h test time stated as a gain (critic's text, quotes checked)"
+   },
+   {
+    "location": "table_memory[20] Samsung ISTFA 2026 automated navigation, Limits",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 25 limits -> NOT DISCLOSED (read: ...); 97.6% and >80% listed as results, not limits"
+   },
+   {
+    "location": "table_memory[21] Samsung ITC 2025 fine and massive test, Tag",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 28 tag -> [F]/[C] (PAPM-104 [C])"
+   },
+   {
+    "location": "table_memory[22] Samsung JMM 041407 AI SEM super-resolution, Limits",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 4 limits -> NOT DISCLOSED (read: Crossref record ...); the 75% cut is a benefit, not a limit"
+   },
+   {
+    "location": "table_memory[23] Samsung JSTS 25(6) precision matching, Status (partial)",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 50 status -> '\"Applied to 191 optical inspection tools in a Samsung Electronics high-volume manufacturing (HVM) line\" (in-use statement; SKKU degree-programme paper)'. The critic's '[C]' label was left out because the cited rows PAPM-224 and PAPM-226 are [F]. The tag was not changed (see not_applied)"
+   },
+   {
+    "location": "table_memory[24] Samsung VLSI 2026 11nm DRAM, Tag",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 30 tag -> [F]/[C] (PAPM-110 [C])"
+   },
+   {
+    "location": "table_memory[25] Samsung VLSI 2026 11nm DRAM, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 30 status: the 'demonstrated in HBM products' claim is now tied to the transistor (PAPM-110 [C]); the CoW test quote is PAPM-109, with status not stated"
+   },
+   {
+    "location": "table_memory[26] Micron ISTFA 2026 dimple-grinder overlay, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 3 status -> off-line (dimple-grinder prep, SEM) plus the full 'the method can resolve ... when inline monitoring is ineffective' quote (wafer-edge NZO case study)"
+   },
+   {
+    "location": "table_memory[27] Micron SEMICON Taiwan 2025 keynote via TechNews, Limits",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 33 limits -> 'risk stated, not a measurement limit:' with the original Chinese TALK-043 quote plus an English translation in parentheses. The critic put the translation in double quotes as if it were the speaker's words; this keeps the quoted words exact. Row 32 keeps 'NOT DISCLOSED (read: same)'"
+   },
+   {
+    "location": "table_memory[28] Micron? SPIE PFIB-SEM Wafer DualBeam, Tool vendor",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 39 tool_vendor -> NOT DISCLOSED (read: ...; the abstract names the system \"PFIB–SEM Wafer DualBeam\" but not its maker). The Thermo Fisher inference was removed"
+   },
+   {
+    "location": "table_memory[29] Micron ASMC 2025 CD-SEM anomaly, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 2 status -> full PAPM-008 sentence (importance stated; deployment not stated)"
+   },
+   {
+    "location": "table_memory[30] Micron ASMC 2026 cloud VM, Limits",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 5 limits -> 'problem the paper addresses (not a stated limit of its framework): \"large-scale VM deployment ... non-stationary manufacturing conditions\" (abstract; no evidence row yet)'. Quote checked against the saved S2 abstract"
+   },
+   {
+    "location": "table_memory[31] Micron ASMC 2026 cloud VM, Status (partial)",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 5 status -> full quotes \"validated using one year of production data from multiple dry etch processes in an HVM memory fab\"; \"stable prediction accuracy meeting production release criteria\" (authors' production-readiness statement). The [C] label and the tag change were not applied (see not_applied)"
+   },
+   {
+    "location": "table_memory[32] Micron IEEE TNS X-ray/alpha SER, Chipmaker",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 8 chipmaker -> Micron (co-author only: university-led, 1 of 4 Micron; lead and 2 others Univ. Padova). Crossref checked"
+   },
+   {
+    "location": "table_memory[33] Micron IEEE TNS X-ray/alpha SER, Status",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 8 status 'lab study' -> NOT DISCLOSED (read: Semantic Scholar abstract) plus the 'Experimental results show ...' quote (XR-007)"
+   },
+   {
+    "location": "table_memory[34] Micron ISTFA 2025 FIB AAT, Tag",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 11 tag -> [F]/[C] (PAPM-036 [C])"
+   },
+   {
+    "location": "table_memory[35] Micron ISTFA 2026 low-temperature CVD oxide, Limits",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 10 limits -> critic's text (PAPM-030 is a limit of the other benchmarked methods; PAPM-029; oxide limits NOT DISCLOSED). The read path is the S2 file name instead of the bare 'abstract'"
+   },
+   {
+    "location": "table_memory[36] Micron SPIE CGI e-beam with ASML VCP, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 41 status -> full 'we demonstrated CGI automation deployed on ASML's VCP ...' quote; gain 'on Micron Technology's memory devices' (fab and production status not stated)"
+   },
+   {
+    "location": "table_memory[37] Micron? SPIE Poisson-CDF EBI, Status",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 42 status -> NOT DISCLOSED (read: ...); validation 'on a 1β DRAM storage node contact short case' (PAPM-180)"
+   },
+   {
+    "location": "table_memory[38] Micron? SPIE Poisson-CDF EBI, Limits",
+    "file": "research/out/customer_side/parts/PAPM_table.csv",
+    "change": "row 42 limits -> problem stated (PAPM-179); 1.99% is the model-recommended coverage, not a limit (PAPM-180)"
+   },
+   {
+    "location": "table_logic[0] TSMC 3DICAMA via World Journal, Limits",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 34 limits -> 'NOT DISCLOSED as a method limit (read: article); context, not a stated limit: '還沒完全定案就得量產、還要做到99%' (...the article does not say 99% of what)'. Checked against the saved article"
+   },
+   {
+    "location": "table_logic[1] TSMC ECTC 2025 CoWoS-R, Tag",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 2 tag -> [F]/[C] (PAPL-008 [C])"
+   },
+   {
+    "location": "table_logic[2] TSMC ECTC 2025 CoWoS-R, Status",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 2 status -> quote marked 'company claim [C] PAPL-008, about the CoWoS-R platform, not the test method; the 5.5X test packages \"were built\"'"
+   },
+   {
+    "location": "table_logic[3] TSMC ECTC 2025 SoIC Cool-Stacking, Tag",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 3 tag -> [F]/[C] (PAPL-012 [C])"
+   },
+   {
+    "location": "table_logic[4] TSMC ECTC 2025 Thin 3D, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 1 chipmaker -> TSMC (co-author only: university-led; 2 of 12 TSMC; first and last NYCU; 3 TSRI). Crossref checked: 7 NYCU, 3 TSRI, 2 TSMC"
+   },
+   {
+    "location": "table_logic[5] TSMC IRPS 2026 Die of Interest, Venue/title",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 6 venue -> 'IRPS 2026 (2026-03-22) / Die of Interest – Die Level Predictive Modeling to Reduce Reliability Defect Escape (TSMC Advanced Packaging Technology and Service)'. build_tables.py appends the doi, so the output equals the critic's text"
+   },
+   {
+    "location": "table_logic[6] TSMC ITC 2025 UCIe, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 6 chipmaker -> TSMC (joint with Synopsys: 6 of 19 TSMC incl. first author, 13 Synopsys). Crossref checked"
+   },
+   {
+    "location": "table_logic[7] TSMC ITC 2025 UCIe, Tool vendor",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 6 tool_vendor -> NOT NAMED in abstract (co-author affiliation Synopsys, 13 of 19; abstract does not say whose test IP or equipment)"
+   },
+   {
+    "location": "table_logic[8] Intel ECTC 2025 CMP for hybrid bonding, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 9-12 (all rows of the document) chipmaker -> Intel (joint with Applied Materials: 3 of 8 Intel incl. first and last, 5 AMAT). Crossref checked"
+   },
+   {
+    "location": "table_logic[9] Intel ECTC 2025 CMP, Tool vendor",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 9-12 tool_vendor set to the same single text: 'NOT NAMED in abstract for electrical test, cSAM, FIB-SEM or EDX (co-author Crossref affiliation: Applied Materials, process-equipment vendor, 5 of 8 authors)'. The joined cell now shows it once"
+   },
+   {
+    "location": "table_logic[10] Intel ECTC 2026 100% bond overlay, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 16 chipmaker -> Intel (joint with EV Group: 4 of 7 Intel incl. first author, 3 EV Group). Crossref checked"
+   },
+   {
+    "location": "table_logic[11] Intel ECTC 2026 100% bond overlay, Tool vendor",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 16 tool_vendor -> NOT NAMED in abstract (co-author affiliation EV Group, 3 of 7; the abstract does not say whose tool measured overlay)"
+   },
+   {
+    "location": "table_logic[12] Intel ECTC 2026 multiscale Cu characterization, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 21-22 chipmaker -> Intel (co-author only: NIST-led; 1 of 5 Intel; first and 2 others NIST, last Colorado School of Mines). Crossref checked"
+   },
+   {
+    "location": "table_logic[13] Intel ECTC 2026 multiscale Cu characterization, Limits",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 21-22 limits set to the same text: NOT DISCLOSED (read: ...); probe specs, not stated as limits: AFM \"spherical probe radii of less than 30 nm\", IIT \"spherical probes of 1 µm and 5 µm nominal radii\". The joined cell equals the critic's text"
+   },
+   {
+    "location": "table_logic[14] Intel VLSI 2026 9-layer wafer stack, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 26 chipmaker -> Intel (co-author only: SAIMEMORY-led; 2 of 16 Intel; 8 PSMC, 5 AP Memory). Crossref checked"
+   },
+   {
+    "location": "table_logic[15] Intel VLSI 2025 Workshop 9 description, Chipmaker",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "rows 20-21 chipmaker -> 'Intel? ([I] Medium: unsigned workshop description shown under three Intel organizers Niazi, Dogiamis, Tomita; authorship inferred, TALK-022)'. The tag was left at [F] (see not_applied)"
+   },
+   {
+    "location": "table_logic[16] Intel ECTC 2026 HB thermal behavior (FDTR), Tool vendor",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 15 tool_vendor -> NOT NAMED in abstract (co-author affiliation Fouriers Scientific, 1 of 10; abstract does not say whose FDTR instrument)"
+   },
+   {
+    "location": "table_logic[17] Intel ISTFA 2026 synchrotron XADA, Limits",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 24 limits: dropped the PAPL-086 result quote ('response scales with flux density and exposure time'); kept the PAPL-084 and PAPL-085 limits"
+   },
+   {
+    "location": "table_logic[18] Intel SMT007 DRAM damage from X-ray, Status",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 7 status -> NOT DISCLOSED as production/pilot (read: SMT007 Apr 2025 pp46-56); dose study on three BGA builds and a functional test on \"validation platform hardware\". Checked in the PDF"
+   },
+   {
+    "location": "table_logic[19] Intel SMT007 DRAM damage, Limits",
+    "file": "research/out/customer_side/calc/section1_extra_rows.csv",
+    "change": "row 7 limits: removed '350 rad =' equation; authors' '3x the limit' wording given with limit value not given; added the copper-filter limit 'quite ineffective to produce the image quality needed for inspection' (p52). Checked in the PDF"
+   },
+   {
+    "location": "table_logic[20] ASE ECTC 2026 FOCoS-B automated tracing, Tag",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 30-32 tag -> [F]/[C]. All three rows of the document were set so the build prints [F]/[C] and not [F]/[F]/[C]. At row level, row 30 (electrical test, PAPL-104..106) has no [C] evidence"
+   },
+   {
+    "location": "table_logic[21] ASE FOCoS-B automated tracing, Limits",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 30-32 limits set to the same text: NOT DISCLOSED (read: ...); sample preparation before 3D XRM, not stated as a limit: lapping quote (\"To minimize artificial damage induced by mechanical grinding\"). The joined cell equals the critic's text"
+   },
+   {
+    "location": "table_logic[22] ASE ECTC 2026 nanotwinned Cu HB, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 37-38 chipmaker -> ASE (co-author only: university-led; 4 of 10 ASE Corporate R&D; first and last NTU). Crossref checked"
+   },
+   {
+    "location": "table_logic[23] ASE ECTC 2026 In-Sn passivation, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 39-40 chipmaker -> ASE (co-author only: university-led; 4 of 9 ASE; first and last NTU). Crossref checked"
+   },
+   {
+    "location": "table_logic[24] ASE ECTC 2026 electroless Ag passivation, Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 33-36 chipmaker -> ASE (co-author only: university-led; 4 of 10 ASE; first and last NTU). Crossref checked"
+   },
+   {
+    "location": "table_logic[25] ASE ECTC 2026 RDL nano-defect fault localization, Limits",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "rows 27-29 limits set to the same text: limits of the conventional O/S + 3D X-ray + FIB workflow (FOV quote; FIB quote); limits of the proposed approach NOT DISCLOSED. The joined cell equals the critic's text"
+   },
+   {
+    "location": "table_logic[26] ASE ECTC 2026 Cu/polymer HB (Mitsui), Chipmaker",
+    "file": "research/out/customer_side/parts/PAPL_table.csv",
+    "change": "row 41 chipmaker -> ASE (co-author only: vendor-led, Mitsui Chemicals 7 of 12 incl. first author, 5 ASE Group). Crossref checked"
+   },
+   {
+    "location": "table_logic[27] Amkor IMAPS 2025 module stress, Status",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 40 status -> '\"test vehicle\" with mimic HBMs (daisy-chain test nets \"in place of functional components\"); SAT at thermal-cycling \"inspection points\"'; row 41 -> '\"test vehicle\" (warpage, Fig. 7)'. Checked in the PDF"
+   },
+   {
+    "location": "table_logic[28] Amkor IMAPS 2025 module stress, Limits",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 40 limits -> 'not stated as a limit: SAT \"showed there were signs of cracking or delamination\"; units \"were then taken for destructive failure analysis where cross-sections confirmed the presence of underfill cracking\"'. Row 41 keeps NOT DISCLOSED (read: paper)"
+   },
+   {
+    "location": "table_logic[29] Amkor Semiconductor Engineering 2026-05-12 (Dossani), Status and Limits",
+    "file": "research/out/customer_side/parts/TALK_table.csv",
+    "change": "row 39 status -> '\"Many of these challenges are resolved by the time we reach high-volume manufacturing (HVM) in our factory\" (speaker's claim, quoted in press [S]; sentence not yet in an evidence row)'; limits -> the 'they remain significant manufacturing considerations, ... enhanced data monitoring' quote (quoted in press; not yet in an evidence row). Both checked in the saved article. The critic's inline '[C]' was changed to [S] because the only evidence row, TALK-050, is [S] and the row tag is [S]"
+   }
+  ],
+  "not_applied": [
+   {
+    "location": "table_memory[23] Samsung JSTS 25(6) precision matching, Tag '[F]' -> '[F]/[C]'",
+    "reason": "The cited evidence rows PAPM-224 and PAPM-226 are [F] in evidence.csv, and no [C] row exists for this paper. The critic's fix depends on retagging them or adding a [C] row, which means editing evidence.csv (out of scope). Only the fuller status quote was applied, without the [C] label."
+   },
+   {
+    "location": "table_memory[31] Micron ASMC 2026 cloud VM, Tag '[F]' -> '[F]/[C]'",
+    "reason": "The only cited evidence row, SMP-025, is [F] in evidence.csv. A [C] tag needs SMP-025 retagged or a new [C] row (evidence.csv, out of scope). The fuller status quotes were applied without the [C] label."
+   },
+   {
+    "location": "table_logic[15] Intel VLSI 2025 Workshop 9, Tag '[F]/[I]' (the critic's conditional suggestion)",
+    "reason": "Both cited rows, TALK-022 and TALK-023, are [F]. The authorship inference is recorded only in TALK-022's note, and there is no [I] evidence row. The chipmaker cell now marks the inference, but the tag stays [F] until an [I] row is added to evidence.csv."
+   },
+   {
+    "location": "Follow-ups outside the table files (all fixes applied; for the orchestrator)",
+    "reason": "(1) evidence.csv has no row for the second Dossani sentence (TALK-050 covers only the first), the cloud-VM 'large-scale VM deployment remains challenging' quote, or the SMT007 copper-filter quote; the cells say so. (2) For the 8th-cohort (TALK rows 8-9) and ASE FOCoS-B (PAPL rows 30-32) documents, [F]/[C] was set on every row because build_tables.py joins the set of row tags without splitting them. Setting only the rows that cite [C] evidence would print [F]/[F]/[C]. (3) PAPM_counts.py's NOT DISCLOSED counts quoted in PAPM_notes.md will shift. (4) A test build to the scratchpad gave 101 documents, tags only [C]/[F]/[F]/[C]/[I]/[S], 70 Section 1 cells changed, and every cited evidence id present. section1_table.csv and dossier.md were not rebuilt. Nothing was committed."
+   }
+  ]
+ }
+}

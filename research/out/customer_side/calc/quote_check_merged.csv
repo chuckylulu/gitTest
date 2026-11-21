@@ -626,6 +626,129 @@ AW-057,[F],FOUND,1,,research/sources/customer_side/2026-02-13_senju_news-amkor-s
 AW-058,[I],,,,research/out/customer_side/calc/AW_counts.py,
 AW-059,[C],FOUND,1,,research/sources/customer_side/2025-11-21_ulvac_news-skhynix-best-partner-award-2025.html,"its ENTRON sputtering system, which was qualified as POR* within SK hynix's semiconductor manufacturing process."
 AW-060,[C],FOUND,1,,research/sources/customer_side/2026-02-13_senju_news-amkor-supplier-excellence-award-2025.html,"Selected from among more than 3,000 suppliers worldwide, this award recognizes outstanding performance and commitment to quality."
+ADDM-001,[F],FOUND,1,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,"Flash Process Development Team, Semiconductor R&D Center, Samsung Electronics"
+ADDM-002,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1117-12.3050400.json,Challenges and responses of metrology technologies for the new wave of 3d NAND devices
+ADDM-003,[F],FOUND,1,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,3D NAND heavily relies on the Hybrid Copper Bonding (HCB) process to integrate the CMOS periphery wafer with the memory array wafer
+ADDM-004,[F],FOUND,3,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,"To minimize bonding voids, five critical factors must be controlled"
+ADDM-005,[F],FOUND,2,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,warpage monitoring is necessary at every process step
+ADDM-006,[F],FOUND,4,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,"When the void size is larger than 100um, this void will cause wafer breakage or rupture during the backside wafer thinning"
+ADDM-007,[F],FOUND,4,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,"SAM requires 10 to 20 minutes to scan an entire wafer, we developed an alternative solution utilizing interferometry technology"
+ADDM-008,[F],FOUND,4,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,This method generates a surface morphology map within a minute and closely correlates with the void map obtained from SAM.
+ADDM-009,[F],FOUND,4,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,"SAM's penetration depth is limited, and its throughput is slow, reducing its ability to detect small voids at the interface"
+ADDM-010,[F],FOUND,5,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,Figure 7(b) compares void maps scanned by SAM before and after CMP optimization
+ADDM-011,[F],FOUND,5,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,AFM technology can achieve sub-nanometer vertical resolution in Cu pad recess monitoring
+ADDM-012,[F],FOUND,5,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,its low throughput remains a challenge for high-volume manufacturing (HVM) applications
+ADDM-013,[F],FOUND,5,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,these technologies are still in their early stages and require further development to enhance their performance
+ADDM-014,[F],FOUND,6,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,we evaluated four different metrology technologies
+ADDM-015,[F],FOUND,7,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,ERO profiles measured using broadband spectral interferometry technology from Nova
+ADDM-016,[F],FOUND,7,,research/sources/customer_side/2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf,current monitoring methods show performance limitations
+ADDM-017,[F],FOUND,1,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,"Samsung Electronics Co., Ltd., Device Solutions Division"
+ADDM-018,[F],FOUND,3,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,"Deep VNAND structures generate strong spectral ripple and weak metal sensitivity, which reduces structural resolution in SE-based metrology"
+ADDM-019,[F],FOUND,4,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,Adoption of XCD for Deep Structure Monitoring
+ADDM-020,[C],FOUND,6,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,XCD Demonstrates Production-Level Measurement Capability
+ADDM-021,[F],FOUND,6,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,Measurement time was reduced from 30 minutes to about 5.7 minute while maintaining correlation with reference data
+ADDM-022,[F],FOUND,7,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,Remaining Challenges in Production XCD Metrology
+ADDM-023,[F],FOUND,10,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,MGML Improves Correlation Across Items
+ADDM-024,[C],FOUND,16,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,"Continuous scanning stabilizes signals and supports shorter, production-ready recipes"
+ADDM-025,[F],FOUND,16,,research/sources/customer_side/2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf,Further reduce scan time while maintaining robustness
+ADDM-026,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1002-sia.70044.json,Micron Technology  Boise Idaho USA
+ADDM-027,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1002-sia.70044.json,a multilayer dielectric SiO/SiN (ONON) film stack for 3D NAND is characterized using both transmission electron microscopy (TEM) and XRR
+ADDM-028,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1002-sia.70044.json,validate XRR as a process line monitoring tool for quick feedback of process quality of ONON layer structure
+ADDM-029,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1002-sia.70044.json,support future implementation of XRR in manufacturing environments
+ADDM-030,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1002-sia.70044.json,The advantages and limitations of these two techniques for ONON layer characterization are discussed
+ADDM-031,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1109-icmts63811.2025.11068899.json,"Micron Technology,F15 ADTJ PIE HPM,Higashi Hiroshima-shi,Japan"
+ADDM-032,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1109-icmts63811.2025.11068899.json,"ASML,Field Appication,Taoyuan City,Taiwan"
+ADDM-033,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-icmts63811.2025.11068899.json,novel fractal points have been introduced for EBI and results analysis in DRAM manufacturing
+ADDM-034,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-icmts63811.2025.11068899.json,"significant improvement in nuisance defects reduction by 98.1%, as well as an increase in defects of interest (DOI) by 255.7%"
+ADDM-035,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-icmts63811.2025.11068899.json,"With 10K-fold enhancement for resolution, specific weak region and defective probability for each unit can be identified"
+ADDM-036,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-icmts63811.2025.11068899.json,shorten the yield learning cycle and accelerate technology development prior to probe readings
+ADDM-037,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1109-sispad66650.2025.11186319.json,"Foundry Business, Samsung Electronics,Hwaseong-si,Republic of Korea"
+ADDM-038,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-sispad66650.2025.11186319.json,Layout-dependent physico-chemical interactions in chemical mechanical polishing (CMP) processes often result in surface non-uniformities
+ADDM-039,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-sispad66650.2025.11186319.json,unifies large-scale data-driven virtual metrology with 3D TCAD simulations
+ADDM-040,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-sispad66650.2025.11186319.json,full-chip layouts containing around over two billion points within a four-hour window
+ADDM-041,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,"hynix Incorporation, Icheon"
+ADDM-042,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,Y.K. and J.K. supervised process procedures
+ADDM-043,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,shows an image gained by scanning acoustic microscopy (SAM) of the SiCN-B wafer in its as-bonded condition
+ADDM-044,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,The double cantilever beam (DCB) test was conducted using a custom-designed apparatus to assess bonding strength
+ADDM-045,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,This phenomenon can be used to evaluate remaining water at the bonding interface
+ADDM-046,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,Atomic-level vacancy analysis of bare SiCN films and their bonding interfaces was performed by positron annihilation spectroscopy (PAS)
+ADDM-047,[F],FOUND,1,,research/sources/customer_side/2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html,We found that a SiCN film achieved greater bonding strength after post bond annealing at a low temperature of 250
+ADDM-048,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1021-acsaelm.6c00446.json,SK Hynix Incorporated
+ADDM-049,[F],FOUND,1,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,"1, Samsung-ro, Giheung-gu, Yongin-si"
+ADDM-050,[F],FOUND,2,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,The baseline vehicle consists of a silicon interposer wafer
+ADDM-051,[F],FOUND,2,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,The final wafer-level warpage is then empirically quantified immediately post-debonding using automated inspection tools
+ADDM-052,[F],FOUND,5,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,Comparison of inspected warpage and simulation
+ADDM-053,[F],FOUND,4,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,successfully reduced the post-debonding wafer warpage by
+ADDM-054,[F],FOUND,5,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,(DBD) wafer warpage increased by approximately 500 um.
+ADDM-055,[F],FOUND,6,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,"reduction up to 1000 um, though increasing the shrinkage"
+ADDM-056,[F],FOUND,3,,research/sources/customer_side/2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf,"Empirically, the integration vehicle processed via the TEL"
+ADDM-057,[C],FOUND,1,,research/sources/customer_side/2025-06-10_micron_release-hbm4-ships-key-customers.html,today announced the shipment of HBM4 36GB 12-high samples to multiple key customers
+ADDM-058,[C],FOUND,1,,research/sources/customer_side/2025-06-10_micron_release-hbm4-ships-key-customers.html,highly capable memory built-in self-test (MBIST) feature
+ADDM-059,[C],FOUND,1,,research/sources/customer_side/2025-06-10_micron_release-hbm4-ships-key-customers.html,Micron plans to ramp HBM4 in calendar year 2026
+ADDM-060,[S],FOUND,1,,research/sources/customer_side/2026-09-03_bnext_micron-deboer-semicon-taiwan-2026-vertical-hbm.html,美光（Micron）總裁暨技術與產品長德波爾（Scott DeBoer）9月2日在大師論壇指出
+ADDM-061,[S],FOUND,1,,research/sources/customer_side/2026-09-03_bnext_micron-deboer-semicon-taiwan-2026-vertical-hbm.html,就大規模量產能力而言，混合鍵合目前確實明顯落後
+ADDM-062,[S],FOUND,1,,research/sources/customer_side/2026-09-03_bnext_micron-deboer-semicon-taiwan-2026-vertical-hbm.html,德波爾指出，包括晶粒對晶圓（die to wafer）、晶圓對晶圓（wafer to wafer）鍵合與相關量測（metrology）等能力，都還需要大幅提升
+ADDM-063,[S],FOUND,1,,research/sources/customer_side/2026-11-21_infinitesima_homepage.html,"Young-Hyun Choi, Head of DMI, SK hynix"
+ADDM-064,[S],FOUND,1,,research/sources/customer_side/2026-11-21_infinitesima_homepage.html,Infinitesima's Metron3D has demonstrated excellent sub-nanometre 3D metrology with the required cost-of-ownership necessary for HVM implementation
+ADDM-065,[C],FOUND,1,,research/sources/customer_side/2026-11-21_infinitesima_metron-3d-product-page.html,"Cu pad recess, dishing, and erosion, measured densely enough to characterise readiness for bonding at 60 WPH."
+ADDL-001,[F],FOUND,1,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,1 - Intel Foundry 2 - FormFactor
+ADDL-002,[C],FOUND,3,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Intel has extensive experience with micro-bump probing in High Volume Production through the Foveros product line (HVM starting in 2019)
+ADDL-003,[C],FOUND,3,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,with plans to enable micro-bump probing on EMIB devices this year
+ADDL-004,[C],FOUND,11,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,In Mass Production since 2019
+ADDL-005,[C],FOUND,11,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,High Volume Production Experience Products: 25+ (multiple sites)
+ADDL-006,[C],FOUND,11,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Probe Card Availability ~ 90% (Average across products)
+ADDL-007,[C],FOUND,11,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Technology Certification by Q3'26
+ADDL-008,[F],FOUND,6 11,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Bridge µ-bumps: 23-28µm
+ADDL-009,[F],FOUND,5,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Sort/Probe induced defect modes and yield losses
+ADDL-010,[F],FOUND,8,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Bump deformation assessments to validate no downstream risks
+ADDL-011,[F],FOUND,14,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Managing the number of touchdowns and/or using post sort reflow to preserve the bump coplanarity
+ADDL-012,[C],FOUND,10,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Good radial alignment control demonstrated on many Foveros products in high volume
+ADDL-013,[F],FOUND,12,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,Intel sort performance using FormFactor probes have healthy electrical performance at Cold/Hot & Merged socket test conditions
+ADDL-014,[C],FOUND,15,,research/sources/customer_side/2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf,experience to develop µ-bump capable sort solutions for EMIB-T advanced packaging
+ADDL-015,[F],FOUND,1,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,Chandru PERIASAMY (Intel Foundry - USA)
+ADDL-016,[F],FOUND,2,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,High die count package yield improvement need - Drives shift-left strategy for test
+ADDL-017,[C],FOUND,3,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,"Intel's Foveros-S assembly technology-based products such as MeteorLake are being probed with mixed (two types) probes, albeit at non-native pitches"
+ADDL-018,[F],FOUND,3,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,A new solution where the µ-bumps are probed at 45.0 µm native pitch
+ADDL-019,[F],FOUND,12,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,No evidence of shorting over several die TD.
+ADDL-020,[F],FOUND,13,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,Unprobed to probed bumps height difference is within assembly process threshold
+ADDL-021,[F],FOUND,10,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,XRM 3D reconstruction of probes within prototype PH
+ADDL-022,[C],FOUND,15,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,Probe performance and bump deformation metrics are on track to pass criteria for high volume sort.
+ADDL-023,[C],FOUND,16,,research/sources/customer_side/2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf,Intel is rapidly adopting industry standard test platforms.
+ADDL-024,[F],FOUND,28,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,"are properties of Taiwan Semiconductor Manufacturing Company, Ltd."
+ADDL-025,[F],FOUND,8,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,"Boosting test coverage through distributed test architectures, including CP (CP/LSI/IVR/RDL) for KGD, CPS for KGS, AST for assembly quality"
+ADDL-026,[F],FOUND,7,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,>2 weeks >2 weeks ~2 weeks < 1 week
+ADDL-027,[C],FOUND,9,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,Early process excursion detection and cost saving.
+ADDL-028,[F],FOUND,10,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,"New media (Cu pad, uBump)"
+ADDL-029,[C],FOUND,25,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,Pin Count: >800K
+ADDL-030,[F],FOUND,26,,research/sources/customer_side/2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf,"The rapid expansion of AI technology introduces several challenges in testing, particularly in thermal management."
+ADDL-031,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1109-impact67645.2025.11281768.json,"Taiwan Semiconductor Manufacturing Company, (TSMC)"
+ADDL-032,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json,A key function of the carrier wafer is to minimize wafer warpage
+ADDL-033,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json,"transparency, low surface roughness, and bulk defects-free (like voids or cracks) and chemical resistance"
+ADDL-034,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json,"this paper proposes an Advanced Optical Metrology (AOM) to monitor physical properties of carrier wafer, including transmittance, surface roughness, and bulk de"
+ADDL-035,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json,The AOM has been successfully validated on 12-inch transparent carrier wafer
+ADDL-036,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json,"providing comprehensive data on transparency, surface morphology, and bulk defects within one minute of measuring time"
+ADDL-037,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json,The validation was further confirmed by cross-checking results with other inspection instruments
+ADDL-038,[F],FOUND,1,,research/sources/customer_side/2026-11-21_crossref_record-10.1109-impact67645.2025.11281550.json,"Advanced Semiconductor Engineering (ASE), Inc."
+ADDL-039,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281550.json,"To ensure quality, AI-based image inspection has been widely adopted."
+ADDL-040,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281550.json,"improves recall from 82.1% to 93.1% and precision from 82.2% to 93.4%, and reduces the original dataset size by 50%"
+ADDL-041,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281550.json,"an escape rate <0.05%, false positives <1%"
+ADDL-042,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281550.json,LAD requires only about 5 minutes of training time using 1K normal
+ADDL-043,[F],FOUND,1,,research/sources/customer_side/2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281550.json,"rapid deployment in real-world production remains challenging due to heavy annotation requirements, limited adaptability to new products, and the need to mainta"
+ADDL-044,[C],FOUND,91,,research/sources/customer_side/2026-09-07_aseh_sustainability-report-2025-en.pdf,AOI integrated with high efficiency anomaly detection AI technology for complex wirebonding inspection
+ADDL-045,[C],FOUND,107,,research/sources/customer_side/2026-09-07_aseh_sustainability-report-2025-en.pdf,we have developed a proprietary smart wire-bonding AI-assisted inspection system equipped with AI-AOI (automated optical inspection) and AVI
+ADDL-046,[C],FOUND,107,,research/sources/customer_side/2026-09-07_aseh_sustainability-report-2025-en.pdf,"speeds up quality anomaly analysis from days to hours, reducing costs and wastage from rework, scrapping and repeated inspections"
+ADDL-047,[I],FOUND,91,,research/sources/customer_side/2026-09-07_aseh_sustainability-report-2025-en.pdf,(2) Wire-Bond Packaging: AOI integrated with high efficiency anomaly detection AI technology
+ADDL-048,[F],FOUND,1,,research/sources/customer_side/2026-11-21_amkor_event-itc-2026-osat-test-perspective.html,"Advanced Packages, AI & Amkor: The OSAT Test Perspective"
+ADDL-049,[F],FOUND,1,,research/sources/customer_side/2026-11-21_amkor_event-itc-2026-osat-test-perspective.html,"increasing production test times, the challenges associated with multi-chiplet advanced packages"
+ADDL-050,[F],FOUND,1,,research/sources/customer_side/2026-11-21_amkor_event-itc-2025.html,Best Practices for Testing 2.5D Chiplet Package Designs
+ADDL-051,[C],FOUND,1,,research/sources/customer_side/2026-11-21_amkor_web-smart-manufacturing.html,"AI-powered vision systems for inspection, reducing AOI operators by 30% and significantly improving yield and cycle time"
+ADDL-052,[C],FOUND,1,,research/sources/customer_side/2026-11-21_amkor_web-smart-manufacturing.html,"Expanding the scope of AI/ML applications, including advanced Predictive Maintenance (PdM) and Automated Defect Classification (ADC)"
+ADDL-053,[C],FOUND,1,,research/sources/customer_side/2026-11-21_amkor_web-smart-manufacturing.html,Real-time Fault Detection and Classification (FDC) combined with Statistical Process Control (SPC)
+ADDL-054,[F],FOUND,1,,research/sources/customer_side/2025-01-02_googlepatents_intel-US20250006651A1-slit-fiducials.html,Application filed by Intel Corp
+ADDL-055,[F],FOUND,1,,research/sources/customer_side/2025-01-02_googlepatents_intel-US20250006651A1-slit-fiducials.html,Fiducials may also be used during a post bonding inspection process step to measure bond overlay alignment accuracy.
+ADDL-056,[F],FOUND,1,,research/sources/customer_side/2025-01-02_googlepatents_intel-US20250006651A1-slit-fiducials.html,alignment metrology uses infrared (IR) light to pass through the device
+ADDL-057,[F],FOUND,1,,research/sources/customer_side/2025-01-02_googlepatents_intel-US20250006651A1-slit-fiducials.html,a metal free zone in the fiducial footprint underneath the fiducial is preferred for alignment metrology
+ADDL-058,[F],FOUND,1,,research/sources/customer_side/2025-01-02_googlepatents_intel-US20250006651A1-slit-fiducials.html,one or more high-bandwidth memory (HBM) integrated circuit dies can be stacked on top of a base integrated circuit die
 SYN-001,[I],,,,,
 SYN-002,[I],,,,,
 SYN-003,[I],,,,,
@@ -704,3 +827,7 @@ MAIN-005,[I],,,,,
 MAIN-006,[I],,,,,
 MAIN-007,[I],,,,,
 MAIN-008,[I],,,,,
+MAIN-009,[I],,,,,
+MAIN-010,[F],FOUND,1,,research/sources/customer_side/2026-05-01_semanticscholar_s2-asmc2026-11551271-micron-cloud-vm.json,large-scale VM deployment remains challenging due to limited scalability and performance degradation under non-stationary manufacturing conditions
+MAIN-011,[F],FOUND,52,,research/sources/customer_side/2025-04-01_iconnect007_SMT007-Apr2025-magazine.pdf,although copper provides the most shielding
+MAIN-012,[S],FOUND,1,,research/sources/customer_side/2026-05-12_semiengineering_article-hbm-shifts-testing-left.html,Many of these challenges are resolved by the time we reach high-volume manufacturing (HVM) in our factory.

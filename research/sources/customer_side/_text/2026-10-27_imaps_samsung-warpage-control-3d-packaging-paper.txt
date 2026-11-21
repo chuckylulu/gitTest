@@ -1,0 +1,439 @@
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+              Warpage Control Strategies in 3D Advanced Packaging: A Focus on
+                     Post-Processing and Material-Level Optimization
+
+              Eunah Ko, Ohguk Kwon, Yuna Kim, Huiyeong Jang, Jongyong Kim, Chaemin Im, Dougkuk Lee, Sun Jae Kim,
+                                          Yonghoe Cho, Moonsoo Lee, Taehwi Kim, Chajea Jo
+                                                        Samsung Electronics
+                                               1, Samsung-ro, Giheung-gu, Yongin-si
+                                               Gyeonggi-do, Republic of Korea, 17113
+                                                  Email: eunah.ko@samsung.com
+
+
+
+
+           Abstract
+              As semiconductor architectures vertically scale through high-density 3D advanced packaging, wafer-level
+           warpage introduces severe failure modes that threaten process yield and structural reliability. Driven by the
+           coefficient of thermal expansion (CTE) mismatch between heterogeneous materials, uncontrolled warpage
+           induces critical defects—such as warpage induced cracks and difficulties in post processing—while
+           complicating the package integration. To address these challenges, this study presents a comprehensive,
+           empirical investigation focusing on warpage control; material-level optimization, process impacts, and
+           structural variations, using real-case wafer integration. We systematically evaluate warpage behavior from
+           three engineering perspectives: material CTE/component optimization of epoxy molding compounds (EMCs)
+           under thermal cycling; comparative analysis between capillary underfill (CUF) and molded underfill (MUF)
+           structures; and mechanical configuration tuning using wafer support systems (WSS). Adjusting these critical
+           parameters establishes data-driven process guidelines that enhance manufacturing yield, improve process
+           predictability, and ensure robust compatibility with next-generation 3D integration schemes.
+
+           Key words
+             3D advanced packaging, Wafer-level warpage, Epoxy molding compound (EMC), Underfill
+           encapsulation, Wafer support system (WSS)
+
+
+
+
+I. Introduction                                                            systems (WSS). Crucially, this empirical investigation is
+   As semiconductor architectures vertically scale through                 systematically correlated with predictive finite element
+high-density 3D advanced packaging and heterogeneous                       analysis (FEA) simulations to validate the structural
+integration, wafer-level warpage has emerged as a critical                 behavior and stress-alteration mechanisms observed in real-
+failure mode threatening process yield, structural reliability,            case wafer integration. By adjusting these critical process,
+and downstream manufacturability. Driven primarily by the                  material, and structural parameters, this work establishes
+coefficient of thermal expansion (CTE) mismatch between                    practical, data-driven design guidelines. Ultimately, the
+highly dissimilar materials (silicon, metal, oxide, organic                integration of empirical inspection and predictive modeling
+compounds, etc.), uncontrolled warpage induces severe in-                  offers immediate engineering solutions to enhance process
+house defects while complicating 3DIC package integration                  predictability, maximize manufacturing yield, and ensure
+sequences. To address these challenges, this study presents a              robust compatibility with next-generation 3D integration
+comprehensive design-to-process framework focusing on                      schemes.
+post-processing warpage control and material-level
+optimization. We systematically evaluate warpage behavior                  II.  Experimental            setup       and      process
+from three critical engineering perspectives: material CTE                 methodology
+optimization of epoxy molding compounds (EMCs) under                         To systematically evaluate the warpage behavior under
+cyclic thermal profiles; a comparative evaluation of flow                  various post-processing configurations, a real-case 3dic
+dynamics and cure shrinkage between capillary underfill                    wafer integration vehicle was fabricated (Figure 1). The
+(CUF) and molded underfill (MUF) processes; and                            detailed structural architecture and processing sequence are
+mechanical configuration tuning utilizing wafer support                    defined as follows: Bottom wafer and Carrier Integration:
+
+
+
+                                                                    1
+
+                                                                  000162
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+The baseline vehicle consists of a silicon interposer wafer                measured immediately after the debonding (DBD) process.
+embedded with through-silicon vias (TSVs) and populated                    This phenomenon is primarily attributed to the enhanced
+with C4 micro-bumps. For structural handling and                           chemical conversion and volumetric shrinkage kinetics of
+mechanical rigidity during backend processing, this thin                   the epoxy molding compound (EMC) at elevated
+interposer wafer is temporarily bonded to a rigid glass carrier            temperatures. During the subsequent cooling sequence from
+utilizing a dedicated wafer support system (WSS). Chip-on-                 the 175°C peak temperature to room temperature, the
+Wafer (CoW) Stacking: TOP dies are sequentially integrated                 advanced cure shrinkage of the EMC effectively
+onto the BTM interposer via a Face-to-Face (F2F) bonding                   counterbalances the intrinsic thermal stresses induced by the
+configuration. Structurally, this creates a pronounced                     CTE mismatch (that is coming from the BEOL metal
+geometric asymmetry across the wafer radius; the localized                 portions and underfill material).
+total thickness of the CoW stacked region is significantly
+greater than that of the baseline interposer regions, acting as
+a primary driver for adjusting the thermo-mechanical stress
+concentration of the whole device structure in wafer form.
+Encapsulation and Grinding: Following the CoW assembly,
+the entire wafer topography undergoes final-stage
+encapsulation via epoxy molding compound (EMC) molding
+to secure structural integrity and joint reliability. The
+encapsulated wafer format is subsequently subjected to
+molded wafer grinding (MDG) to meet the targeted target
+package thickness profile. Debonding and inspection: Upon
+completion of the MDG thinning process, the active wafer is
+decoupled from the glass carrier through a laser-assisted or
+thermal/mechanical debonding (DBD) sequence. The final
+wafer-level warpage is then empirically quantified
+immediately post-debonding using automated inspection
+tools.
+
+III.   Process-driven               warpage          control
+modifications
+   To establish effective warpage mitigation strategies in 3D
+advanced packaging, the modulation of final-stage assembly                  Figure 1. Process flow of 3D-packaging/warpage inspection
+and encapsulation sequences plays a pivotal role. Wafer-                    structure (WSS – CoW – Mold – Debonding – warpage
+                                                                            inspection).
+level warpage is highly sensitive to the cumulative thermal
+history and mechanical boundary conditions imposed during
+backend processing. In this study, we systematically
+investigate the impact of fundamental process-driven                       B. Process Sequence Reconfiguration
+modifications during the final finish operations to achieve                   Evaluating the structural impact of altering the sequential
+precise warpage control.                                                   order between the post-mold cure (PMC) and subsequent
+The experimental matrix focuses on four directions on                      mounting or debonding operations to minimize cumulative
+adjusting the final wafer warpage of 3DIC package:                         residual stress. The sequential order of molded wafer
+                                                                           grinding (MDG) and post-mold cure (PMC) was
+A. Post-Mold Cure (PMC) Temperature Optimization
+                                                                           systematically reconfigured to evaluate its impact on
+   Adjusting the PMC thermal profile to regulate the                       cumulative thermal stress distribution. Crucially, the
+viscoelastic behavior, stress relaxation, and chemical                     experimental results demonstrated that executing the
+shrinkage kinetics of the polymeric encapsulants. To clarify               thinning process prior to thermal curing (MDG-first, PMC-
+the impact of the post-mold cure (PMC) profile on final-                   second sequence) achieved a significantly lower final
+stage wafer warpage, the thermal budgets were isolated into                warpage signature compared to the PMC-first, MDG-second
+two primary conditions: a high-thermal-budget process                      sequence. This structural improvement is primarily driven by
+executed at 175°C for 2 hours, and a reduced-thermal-budget                a vertical shift in the mechanical neutral axis of the
+process at 150°C for 1 hour. The empirical inspection                      heterogeneous wafer stack. When the excessive EMC bulk
+revealed that increasing the PMC temperature to 175°C led                  thickness is reduced via MDG prior to entering the high-
+to a noticeable reduction in final wafer-level warpage                     temperature PMC environment, the effective neutral axis of
+
+
+
+                                                                    2
+
+                                                                  000163
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+the system shifts downward toward the rigid interposer                     mismatch at the joint interface inherently lowers the total
+interface. Consequently, the high-CTE underfill material                   residual stress, contributing to a marked minimization of
+embedded in the Chip-on-Wafer (CoW) micro-bump joints                      finalized wafer-level warpage upon carrier decoupling.
+is positioned relatively higher (compared to the PMC-MDG
+sequence) position that is closer the neutral axis (when bump
+                                                                           D. Equipment Platform and WSS Architecture Modulation
+down).
+                                                                              Assessing the structural variations arising from the
+C. Encapsulation Scheme Selection                                          mechanical configurations of different industrial equipment
+   Conducting a comparative analysis between Capillary                     lines—specifically comparing SUSS MicroTec and Tokyo
+Underfill (CUF) and Molded Underfill (MUF) techniques,                     Electron Limited (TEL) systems—including their specific
+focusing on how their distinct flow dynamics and volumetric                temporary bonding and debonding handling mechanisms and
+shrinkage profiles dictate the final warpage signature. To                 carrier support configurations. Lastly, the structural impact
+investigate the structural impact of the encapsulation                     of the temporary bonding and debonding equipment platform
+architecture, a comparative analysis was performed between                 was evaluated by comparing wafer support systems (WSS)
+Capillary Underfill (CUF) and Molded Underfill (MUF)                       from SUSS MicroTec and Tokyo Electron Limited (TEL).
+                                                                           Empirically, the integration vehicle processed via the TEL
+schemes. The empirical data demonstrated that the
+                                                                           platform exhibited a higher finalized warpage signature
+implementation of the MUF process yielded a substantially
+                                                                           compared to the SUSS platform. While the exact root cause
+lower final warpage signature compared to the conventional
+                                                                           requires further micro-structural stress analysis, this
+CUF application. This structural divergence is primarily                   phenomenon is highly suspected to be driven by differences
+governed by the volumetric distribution of high-CTE                        in the mechanical clamping, thermal uniformities, and
+polymeric interfaces within the Chip-on-Wafer (CoW)                        debonding separation mechanisms unique to each equipment
+micro-bump joints. In a standard CUF configuration, a                      architecture: Thermal Profile and Boundary Conditions: The
+dedicated, highly fluid underfill material—which typically                 TEL system utilizes a distinct multi-zone hotplate
+exhibits a significantly higher CTE compared to both the                   configurations during the pre-baking or temporary adhesive
+silicon die and the molding compound—is dispensed                          curing stages. This localized variation in the thermal
+underneath the TOP dies. This localized concentration of a                 boundary condition can introduce a higher baseline thermal
+high-CTE underfill layer acts as a major source of thermal                 gradient across the asymmetric CoW-to-interposer
+stress during subsequent cooling cycles. Conversely, the                   topography, trapping a greater amount of frozen-in residual
+MUF process eliminates this distinct liquid underfill phase                stress prior to the final debonding sequence. Debonding
+by utilizing a single epoxy molding compound (EMC) to                      Separation Mechanism: The mechanical de-taping or laser-
+simultaneously fill the micro-bump gaps and encapsulate the                assisted debonding peel-force profiles differ substantially
+top surface of the wafer topography. Because the bulk EMC                  between SUSS and TEL. The TEL debonding scheme may
+formulation contains a high density of inorganic silica fillers            impart a higher mechanical peel-stress or localized bending
+to suppress its baseline thermal expansion, its sole                       moment on the thin, asymmetric wafer stack during the
+contribution drastically minimizes the localized high-CTE                  actual carrier decoupling phase, leading to an elastic-to-
+                                                                           plastic warpage trigger that manifests as increased post-
+underfill effect. Consequently, the mitigation of the thermal
+                                                                           debonding warpage. Consequently, selecting and calibrating
+
+
+
+
+ Figure 2. Warpage inspection data trend.
+
+
+
+
+                                                                    3
+
+                                                                  000164
+                                                     IMAPS 2026 Symposium Boston
+
+
+
+
+the mechanical and thermal handling parameters of the                    mechanical mechanism was further validated and cross-
+specific WSS tool platform is critical, as tool-specific                 examined through numerical finite element simulations. The
+boundary conditions directly influence the final macroscopic             empirical testing revealed that migrating to Material B
+stress state of the de-bonded wafer.                                     successfully reduced the post-debonding wafer warpage by
+                                                                         approximately 500 um. Building upon this material
+                                                                         substitution, when the advanced Molded Underfill (MUF)
+IV. Material-level             warpage         optimization              process was integrated into the structural model, the
+                                                                         simulation predictive modeling indicated an additional
+strategies
+                                                                         warpage suppression of approximately 250 um. This
+   To achieve robust control over high-temperature warpage,
+                                                                         synchronized experimental and computational framework
+material-level engineering focused on optimizing the
+                                                                         conclusively demonstrates that combining the high
+thermo-mechanical properties of the Epoxy Molding
+                                                                         contraction force of Material B with the unified
+Compound (EMC) was systematically investigated. The
+                                                                         encapsulation capability of the MUF scheme creates a
+experimental design isolated two primary material
+                                                                         powerful structural synergy, effectively mapping out an
+parameters: the baseline Coefficient of Thermal Expansion
+                                                                         optimized pathway toward achieving near-flat wafer
+(CTE) and the incorporation of Stress Release Agents
+                                                                         topographies in advanced heterogeneous integrations.
+(SRAs).
+                                                                            Using an Epoxy Molding Compound (EMC) with a
+   It was empirically confirmed that the finalized wafer (WF)
+                                                                         reduced Stress Release Agent (SRA) portion effectively
+warpage post-debonding (DBD) was significantly reduced
+                                                                         mitigates wafer (WF) warpage following the debonding
+when utilizing Material B (α2 = 31ppm/°C) compared to
+                                                                         (DBD) process. This phenomenon occurs because the
+Material A (α2 = 12ppm/°C). Because Material B possesses
+                                                                         systematic depletion of the SRA significantly increases the
+a higher high-temperature Coefficient of Thermal
+                                                                         mechanical stiffness of the molding layer, allowing the EMC
+Expansion, it induces a substantially greater volumetric
+                                                                         to exert a dominant residual stress over the entire
+thermal contraction force within the Epoxy Molding
+                                                                         heterogeneous structure. Consequently, the highly rigid
+Compound (EMC) layer during the post-mold cooling
+                                                                         upper EMC layer generates a powerful counter-bending
+sequence. This intensified upper shrinkage force acts as a
+                                                                         moment that physically counteracts the structural bending
+powerful counter-mechanical lever that effectively overrides
+                                                                         forces induced by the interposer Back-End-of-Line (BEOL)
+and counterbalances the tensile stresses exerted by the sub-
+                                                                         metal layers and underfill materials—both of which are
+neutral-axis components, such as the interposer BEOL metal
+                                                                         located below the structural neutral axis (when bump down).
+layers and underfill materials. Consequently, the heightened
+                                                                         However, this extreme SRA depletion introduces a critical
+intrinsic contraction of Material B forces the structurally
+                                                                         structural trade-off. While macroscopic flatness is achieved,
+asymmetric layout to snap back, successfully suppressing the
+                                                                         the complete loss of internal stress-relaxation mechanisms
+cumulative macroscopic bending moment and minimizing
+                                                                         renders the cross-linked epoxy matrix excessively rigid.
+the final post-debonding warpage signature. This thermo-
+                                                                         Without adequate elastomeric buffer domains to absorb
+                                                                         localized thermo-mechanical shock, the concentration of
+                                                                         micro-scale shear stress at critical joints escalates
+                                                                         dramatically. This structural vulnerability significantly
+                                                                         increases the risk of catastrophic backend defects—such as
+                                                                         EMC cracking and interfacial delamination—during
+                                                                         subsequent packaging and reliability cycling, establishing a
+                                                                         strict engineering boundary for real-product adoption.
+
+                                                                         V. Structural configuration                 tuning       and
+                                                                         geometric parameters
+                                                                            In addition to process and material optimization,
+                                                                         geometric variations within the heterogeneous Chip-on-
+                                                                         Wafer (CoW) architecture were evaluated to determine their
+                                                                         structural impact on cumulative residual stress. The
+                                                                         experimental matrix defined three distinct structural
+                                                                         configurations to map the mechanical boundaries of the
+                                                                         integration vehicle:
+                                                                            Joint Gap Modulation: The vertical stand-off height (joint
+                                                                         gap) between the TOP die and the silicon interposer was
+                                                                         systematically adjusted. Modulating this micro-bump gap
+ Figure 3. Warpage inspection data for various process
+                                                                         directly alters the volume fraction of the underfill material,
+
+
+
+
+                                                                  4
+
+                                                                000165
+                                                    IMAPS 2026 Symposium Boston
+
+
+
+
+thereby shifting the localized shear stress acting on the joint
+interface.
+   Back-End-of-Line (BEOL) Metal Portion Control: The
+metal density (copper portion) within the BEOL dielectric
+layers of the interposer was varied. Tuning the metal ratio
+redefines the effective CTE of the sub-micron interconnect
+layers, acting as a critical design lever to suppress localized
+thermal mismatch.
+   Interposer Thickness Reduction: The structural stiffness
+of the baseline substrate was tested by significantly reducing
+the total thickness of the silicon interposer. Thinning the
+interposer reduces the mechanical resistance of the bottom
+substrate, which profoundly alters the structural warpage
+behavior upon carrier debonding (DBD).
+   From a structural perspective, the metal density within the                Figure 4. Comparison of inspected warpage and simulation
+Interposer Back-End-of-Line (BEOL) layer represents one of                                             result.
+the most design-sensitive variables influencing macroscopic
+wafer warpage. Experimental inspection confirmed that                         Material
+                                                                                                              RT        HT
+when the BEOL metal portion was systematically increased                      Parameter
+                                                                                           RT CTE   HT CTE    Modulus   Modulus   Tg
+
+within the identical package footprint, the post-debonding                    Definition   ppm/℃    ppm/℃     GPa       GPa       ℃
+(DBD) wafer warpage increased by approximately 500 um.                        Material A   7        12        14.8      3.6       143
+This structural degradation is fundamentally driven by the
+                                                                              Material B   9        31        17        1.8       175
+pronounced Coefficient of Thermal Expansion (CTE)
+mismatch between the bulk silicon interposer substrate (~3
+ppm/°C) and the electroplated copper interconnects ~ 17                       Consequently, the localized shear stress operating along
+ppm/°C). As the copper density scales up, the elevated                     the die-to-substrate interface is drastically lowered,
+cumulative thermal contraction during the post-molding                     suppressing the macroscopic bending moment of the
+cooling sequence exerts a localized tensile stress on the                  integration vehicle post-debonding (DBD).
+interposer surface, thereby amplifying the overall bending                 Lastly, the structural impact of the substrate geometry was
+moment of the heterogeneous wafer stack. Consequently, if                  investigated by modulating the baseline interposer thickness.
+architectural specifications impose strict design constraints              In conventional heterogeneous architectures, maintaining a
+that prohibit the reduction of the BEOL metal portion, it                  thick substrate format is generally preferred as an effective
+becomes imperative to strategically implement the                          engineering approach to suppress macroscopic warpage due
+aforementioned material-level and process-driven mitigation                to the increased structural resistance.
+schemes—such as optimized PMC profiles or MUF                                 In this evaluation, when the silicon interposer was thinned
+transitions—to effectively counterbalance this structurally                down to half of its original baseline thickness, a sharp and
+induced warpage. Another critical geometric configuration                  increase in post-debonding (DBD) wafer warpage was
+evaluated for warpage optimization is the joint gap height                 empirically confirmed. This structural degradation is
+between the stacked TOP die and the BTM wafer.                             fundamentally governed by the power-law relationship
+Modulating this vertical stand-off clearance directly dictates             between a substrate's thickness and its flexural rigidity
+the cross-sectional volume of the encapsulating material—                  (mechanical stiffness). Halving the thickness of the silicon
+specifically the liquid underfill in a CUF architecture or the             interposer compromises its structural capability to withstand
+localized EMC matrix in a MUF scheme. Experimental                         the massive thermo-mechanical bending moments imposed
+analysis demonstrated that systematically reducing the joint               by the upper encapsulated layers. As the rigid handling
+gap height, thereby decreasing the absolute volume of the                  carrier is decoupled during the WSS debonding sequence,
+embedded underfill layer, contributed significantly to the                 the ultra-thin interposer lacks the necessary mechanical
+mitigation of wafer-level warpage. This favorable                          inertia to counteract the tensile and compressive stresses
+mechanical trend is fundamentally attributed to the reduction              embedded within the EMC and underfill matrix.
+in the total volumetric thermal contraction of the joints.                 Consequently, the accumulated residual stress forces the
+Because polymeric underfill materials possess an inherently                finalized wafer stack into an amplified warp state,
+higher CTE relative to the adjacent silicon die and interposer             demonstrating that maintaining adequate interposer
+substrate, the underfill layer acts as a highly concentrated               thickness is a critical prerequisite unless alternative material
+locus of thermo-mechanical stress. By thinning this gap, the               or process-driven stress-balancing levers are fully optimized.
+absolute thermal mass and subsequent cure shrinkage
+kinetics of the high-CTE polymeric phase are minimized.
+
+
+
+
+                                                                    5
+
+                                                                  000166
+                                                               IMAPS 2026 Symposium Boston
+
+
+
+
+VI. Conclusion                                                                          [12] M. Joshi et al., “Molded underfill (MUF) technology for flip chip
+                                                                                             packages in mobile applications,” 2010 Proceedings 60th Electronic
+   This study systematically investigated the multi-faceted                                  Components and Technology Conference (ECTC), pp. 1250-1257,
+drivers of wafer-level warpage in advanced Chip-on-Wafer                                     2010.
+(CoW) 3D integration architectures. By isolating process,                               [13] S. L. Liu et al., “EMC characterization and process study for
+material, and structural parameters, effective thermo-                                       electronics packaging,” Thin Solid Films, vol. 462-463, pp. 454-458,
+                                                                                             2004.
+mechanical stress mitigation pathways were established.
+                                                                                        [14] J. H. Lau, Fan-out wafer-level packaging, Springer Singapoire, 2018.
+Experimentally, optimizing the final finish process through
+an elevated PMC thermal profile and adopting a MDG-first,
+                                                                                        [15] G. Kmita et al., “Modeling and Prediction of Thermal Cycle Induced
+PMC-second sequence or a unified MUF scheme                                                  Failure in Epoxy-Silica Composites,” Applied Composite Materials,
+successfully countered encapsulation shrinkage forces                                        vol. 19, pp. 65-78, 2012.
+coming from the high CTE UF and BEOL metal. On a                                        [16] C.-C. Lee et al., “Stress-induced warpage estimation of advanced
+material level, transitioning to a low CTE encapsulant or                                    semiconductor copper interconnect processes,” Internationaol Journal
+                                                                                             of Mechanical Sciences, vol. 284, no. 109744, 2024.
+SRA adjustment demonstrated cumulative warpage
+                                                                                        [17] C.-C. Lee et al., “Warpage Estimation and Demonstration of Panel-
+reduction up to 1000 um, though increasing the shrinkage                                     Level Fan-Out Packaging With Cu Pillars Applied on a Highly
+impact from the upper side of the wafer (when bump down).                                    Integrated Architecture,” IEEE Transactions on Components,
+Furthermore, structural analysis revealed that scaling down                                  Packaging and Manufacturing Technology, vol. 133, no. 4, pp. 560-
+the joint gap effectively minimizes high-CTE underfill                                       569, 2023.
+volume, whereas increasing the BEOL metal portion or                                    [18] P. Praful et al., “Warpage in wafer-level packaging: a review of causes,
+                                                                                             modeling, and mitigation strategies,” Frontiers in Electronics, vol. 5,
+halving the interposer thickness significantly exacerbates                                   no. 1515860, 2025.
+post-debonding warpage due to severe CTE mismatch and                                   [19] M.-L. Wu et al., “Simulation and Experimental Study of the Warpage
+lost flexural rigidity. Ultimately, achieving wafer-level                                    of Fan-Out Wafer-Level Packaging: The Effect of the Manufacturing
+flatness requires a balanced integration strategy where                                      Process and Optimal Design,” IEEE Transactions on Components,
+design-enforced structural constraints are systematically                                    Packaging and Manufacturing Technology, vol. 9, no. 7, pp. 1396-
+                                                                                             1405, 2019.
+compensated by synchronized material and process-driven
+                                                                                        [20] F. X. Che et al., “Modeling and design solutions to overcome warpage
+stress-balancing levers.                                                                     challenge for fan-out wafer level packaging (FO-WLP) technology,”
+                                                                                             2015 IEEE 17th Electronics Packaging and Technology Conference
+References                                                                                   (EPTC), pp. 1-8, 2015
+
+[1]  J. H. Lau, "Recent Advances and Trends in Advanced Packaging,"
+     IEEE Transactions on Components, Packaging and Manufacturing
+     Technology, vol. 12, no. 2, pp. 228-252, 2022.
+[2] H. Wang et al., “A Review of System-in-Package Technologies:
+     Application and Reliability of Advanced Packaging,” Micromachines,
+     vol. 14, no. 6, p. 1149, 2023.
+[3] S. S. Iyer, “Heterogeneous Integration for Performance and Scaling,”
+     IEEE Transactions on Components, Packaging and Manufacturing
+     Technology, vol. 6, no. 7, pp. 973-982, 2016.
+[4] Z. Zhang et al., “Flip-Chip Underfill: Materials, Process and
+     Reliability,” Materials for Advanced Packaging, pp. 331-371, 2016.
+[5] Z. Mo et al., “Temporary Bonding and Debonding inAdvnaced
+     Packaging: Recent Progress and Applications,” Electronics, vol. 12,
+     no. 7, p.1666, 2023
+[6] Q. Ren et al., “Temporary Bonding and De-bonding Process for
+     2.5D/3D Applications,” 2020 IEEE 22nd Electronics Packaging
+     Technology Conference (EPTC), pp. 27-31.
+[7] V. Jayaram et al., “Thermocompression Bonding Process Design and
+     Optimization for Warpage Mitigation of Ultra-Thin Low-CTE
+     Package Assemblies,” 2016 IEEE 66th Electronic Components and
+     Technology Conference (ECTC), 2016, pp. 101-107.
+[8] S. P. Phansalkar et al., “Effect of critical properties of epoxy molding
+     compound on warpage prediction: A critical review,”
+     Microelectronics Reliability, vol. 130, p. 114480, 2022.
+[9] G. Hu et al., “Characterization of Chemical Cure Shrinkage of Epoxy
+     Molding Compound With Application to Warpage Analysis,” Journal
+     of Electronic Packaging, vol. 131, no. 1, p. 011010, 2009.
+[10] W.-C. Chuang et al., “Exploring the Influence of Material Properties
+     of Epoxy Molding Compound on Wafer Warpage in Fan-Out Wafer-
+     Level Packaging,” Materials, vol. 16, no. 9, p. 3482, 2023.
+[11] N. Kinjo et al., “Epoxy Molding Compounds as Encapsulation
+     Materials for Microelectronic Devices,” Advances in Polymer
+     Science, vol. 88, pp. 1-48, 1989.
+
+
+
+
+                                                                                 6
+
+                                                                               000167
+

@@ -1,0 +1,617 @@
+Integrated Solution for HPC Testing in AI Era
+
+
+                                                                    Kenny Tang
+                                                                    Oscar Lee
+
+         SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                        Overview
+• Introduction
+         – Product Roadmap
+         – AI Technology Platform Testing and Challenging
+• Integrated Solutions for Thermal
+         – Uniform Current Distribution (UCD)
+         – Thermal Dissipation Structure (TDS)
+         – Active Temperature Control
+• Summary
+
+
+Author                        SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   2
+         AI is now everywhere
+
+
+
+
+Author     SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   3
+         Semiconductor $1T Milestone Accelerated
+
+
+
+
+                                                                                Source: TSMC 2026 Symposium
+
+Author               SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                 4
+                                                               HPC Power Trend
+                                                          HPC Product Trend (TDP vs Peak Flops)
+                      8000
+
+                                                                                    1000                                                                            2200
+                      7000                                                                                                                                                    2300
+
+
+                                                   ASIC                                                          GPU HPC high power requirement at CP
+Peak Flops (TFLOPS)
+
+
+
+
+                      6000
+                                                                                                                                                               Circuit Probing (CP) Power Delivery
+                                                                                                   1400
+
+
+
+
+                                                                                                                            Power Delivery Per Reticle
+                      5000
+                                                                                                          1400
+                                                                                                                                                                                                           5X
+                                                               600
+
+
+
+
+                                                                                                                                  (W/Reticle)
+                      4000
+
+
+                      3000                                      700
+
+                                       300
+                                                                                     1000                                                                1X
+                      2000                          700
+                                                                                                                                                         N5P
+                                                                                                                                                          1           2
+                                                                                                                                                                      N3        3
+                                                                                                                                                                                N3E           4
+                                                                                                                                                                                             N3P     5N2
+
+                                 200
+                      1000
+                                                         500
+                                                                                       AI Computility & Power continue to grow
+                                             300
+                         0
+                             0                     500                          1000                      1500                                       2000                             2500
+                                                                         Thermal Design Power (W)
+                                                                     SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                                                      Packaging RoadMap
+                             40x
+
+
+                             14x
+Interposer Size (-reticle)
+
+
+
+
+                             13x
+                             12x                                                                                                    200x200mm
+                                                                                                        12 or 14-reticle
+                                                                                                         (2pcs 5x or 7x CoW)
+                             11x
+                                                                                                         150x230mm
+                             10x
+                                                                                     11.11-reticle
+                             9x                                   9.5-reticle        150x150mm
+                                                                  ≥12 HBM4
+                             8x
+                                                                 120x150mm
+                             7x                    5.5-reticle
+                                                   12 HBM4
+                             6x
+                                                  85x110mm
+                             5x                                                                                                                  <300x300mm
+                                   3.3-reticle
+                                    8 HBM3
+                             4x
+                                   75x70mm                                      CoWoS-L                       MCM                          SoW   NEW (POC)
+                             3x    Package size                                                                                                      2027
+
+                                                                      Now                           Time
+                                                                                SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                        CP Testing for Early Detection
+                                     Die A       Die B
+                                                         Memory
+
+
+
+
+                                                                                              Substrate
+
+
+  TD Wafer
+                         CP
+
+
+
+
+                                                                               WLCP                                     AST                                FT
+  LSI Wafer                                                                  Wafer Level CP                          Assembly Test                      Final Test
+
+
+
+
+                                       - ÃŒ
+                                          ı €�š                - Áï                                         Áz                       G€Á¨ †€�` �š¾Áˉÿ
+
+         - ĞÆ€�� ÇŒ
+                  ‡�                   >2 weeks              >2 weeks                                     ~2 weeks                       < 1 week
+
+       zÆˉ†ı � M
+               ‡ ı †Æš
+                                             $                 $$$                                                   $$$$
+** TD: Top Die
+   LSI: Local Silicon Interconnect
+
+
+ Author                                                  SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                                7
+                                   Distributed Test
+• Boosting test coverage through distributed test architectures, including CP
+  (CP/LSI/IVR/RDL) for KGD, CPS for KGS, AST for assembly quality
+   SoC                                                                                              Top Die           SoIC
+                                                                                              CP
+                                                                                                     Wafer
+
+
+
+                                                                                                   Bottom Die
+         SoC                  CP                                    CPS                       CP
+                                                                                                     Wafer
+                                                                                                                             KGD
+
+                                                                                                                             KGS
+                  CoWoS-L
+                 Interposer
+
+
+
+                  CoWoS-S
+                                   RDL-CP            CoW              WLCP                    oS                AST
+                 Interposer
+
+
+
+                 CoWoS-R                                                          CoW-SDP
+                 Interposer
+
+
+
+
+                                   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                 Fast and Cost-effective Testing
+• Accelerate DPPM reduction by collaborating with customers and fab.
+• Early process excursion detection and cost saving.
+
+            Fast Yield Learning Flow                                                               Fast Stop-n-Fix
+                                Test coverage    Co-development
+                                enhancement
+                                                                         RDL-CP                     Materials Saving!!
+    Advanced         Distributed
+                                            EFA / PFA
+5   Packaging           Test
+                                                                     WLCP/SDP
+                                                                                                                 1.7X        3.3X
+                     Stress/ HTOL
+                                                                         AST/ FT
+
+                      Process yield
+                     improvement                                                                                Cycle time
+
+
+
+                                        SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+           AI Technology Platform Testing
+                                 Thermal                                  Die Level Test
+    High Speed
+
+                                     CPS, 3D stacking                 CoW
+                                                                                                               Optical
+
+                           Top die                                                                     SiPH
+HBM Base die                                 SoC
+                                                                              Si Photonics
+                          Bottom die
+
+
+
+                                          Substrate
+
+
+                                                                                                        AST/FT
+                              RDL + Embedded components (LSI, IVR)
+                                                                                             Large Packaging handle
+       New media (Cu pad, uBump)
+
+
+
+                             SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+       HPC Thermal Management: A Necessity
+• Extreme computational density and speed drive high power consumption and
+  concentrated heat, presenting a major thermal challenge for HPC chips.
+
+                                                                         High Voltage & Clock Frequence (P=CV2f)
+                                              High Power
+                                             Consumption
+                                                                            Billion Transistor Integration (>200B)
+
+
+
+
+                                              Thermal
+
+      AI Training, LLM                                                                      Package Structure (heat dissipation)
+                                                                        High
+                           Sustained
+                                                                       Power
+                           High Load
+    Technical Simulation                                               Density
+                                                                                               Heat Flux Density (hot spot)
+
+
+
+                                 SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                Integrated Solutions for Thermal
+• Heat is from (1) Chuck thermal equilibrium (2) Device power
+
+                                                     Tester
+
+
+
+                                                      PCB
+
+
+
+
+                     2 Device power
+1 Heated by chuck to                                  Wafer
+   reach testing temp.
+                                                     Chuck
+
+Author                        SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   12
+         Integrated Solutions for Thermal
+                                                                        Tester
+             Tester
+                                                                        Associate with TDS (Air/ Liquid)
+
+
+             PCB                                                        Probe Card
+                                                                        Uniform Current Distribution (UCD)
+
+                                                                        High Thermal Conductivity
+
+                                                                        Thermal Dissipation Structure (TDS)
+
+
+
+             Wafer                                                      Wafer + Chuck
+                                                                        Advanced Hardware Capability
+             Chuck
+                                                                        Intelligent Temperature Control
+
+Author                SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                             13
+         Integrated Solutions for Thermal
+                                                                        Tester
+             Tester
+                                                                        Associate with TDS (Air/ Liquid)
+
+
+             PCB                                                        Probe Card
+                                                                        Uniform Current Distribution (UCD)
+
+                                                                        High Thermal Conductivity
+
+                                                                        Thermal Dissipation Structure (TDS)
+
+
+
+             Wafer                                                      Wafer + Chuck
+                                                                        Advanced Hardware Capability
+             Chuck
+                                                                        Intelligent Temperature Control
+
+Author                SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                             14
+                UCD (Uniform Current Distribution)
+• To enhance current distribution uniformity, the metal trace is coated
+  on PH to connect the same power rails.
+• CCC could be improved > 40%.
+
+                                                                                          1) Improvement could > 40%
+                                                                                          2) Saturate with connected q’ty
+                                            B                C
+                                                                                                                      >1.4X
+                                                                             A
+                                            B                C
+
+
+
+
+                                                                                         CCC
+                                                                             A
+
+                                            A               A                A                 1X
+         VDD1   VDD1   VDD2
+                                    Connect the same power group
+                                                                                               Q’ty of probes be connected
+
+Author                        SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                       15
+         Integrated Solutions for Thermal
+                                                                        Tester
+             Tester
+                                                                        Associate with TDS (Air/ Liquid)
+
+
+             PCB                                                        Probe Card
+                                                                        Uniform Current Distribution (UCD)
+
+                                                                        High Thermal Conductivity
+
+                                                                        Thermal Dissipation Structure (TDS)
+
+
+
+             Wafer                                                      Wafer + Chuck
+                                                                        Advanced Hardware Capability
+             Chuck
+                                                                        Intelligent Temperature Control
+
+Author                SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                             16
+           Thermal Dissipation Structure (TDS)
+• To enhance the thermal dissipation, integrated structure are designed.
+
+               Tester
+                        3
+         Air                                                                         Key Structure
+               PCB
+                                                         1 Material to improve thermal conductivity 3X
+                                 2      2
+
+                                                          2 Accessories to enhance thermal transfer 5X
+                            1
+
+               Wafer                                      3 Enlarge Tester air purge 4X to dissipate heat
+
+               Chuck
+
+
+
+Author                          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                    17
+         Thermal Dissipation Structure (TDS)
+• TDS Design for Key Objectives. (1) Probe Head, (2) Active Die
+
+              Tester                                                               Tester
+
+
+               PCB                                                                 PCB
+
+                                                       Active
+                                                       Die
+Probe
+Head
+
+               Wafer                                                               Wafer
+
+              Chuck                                                                Chuck
+
+
+Author                  SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026            18
+               Thermal Dissipation Structure (TDS)
+• Benefits for PH Cooling.
+
+       Decrease                                 Increase                                                 Stabilize
+    Equilibrium Temp                           Probe CCC                                                  DUT Tj
+         Improve Alignment due
+                                            Avoid Tip Burnt                                           Avoid Thermal Runaway
+         to CTE difference
+
+                                                                                                                      POR
+                                                    20% Improvement                                   3~5C            TDS
+                                    Force
+
+
+
+
+                                                                                            Tj (°C)
+                      T↓, Δd ↓                        Current
+         (Probe to MLO pad)
+
+Author                           SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                19
+                   Thermal Dissipation Structure (TDS)
+    • Maintain the working temperature of active die under specific temp.
+    • Active Die Cooling Requirement and TDS roadmap.
+                                                                                                            Tester
+                                                                                                            PCB
+
+
+             100                                                   Tester                                            Liquid
+Power Watt
+
+
+
+
+                                                                    PCB
+             75           Tester
+                    Air
+                          PCB
+                                                                                        Air
+             50
+                                                                                               Developing
+             25                    MP
+                          2026                                     2027                                     2028
+    Author                          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                           20
+         Integrated Solutions for Thermal
+                                                                        Tester
+             Tester
+                                                                        Associate with TDS (Air/ Liquid)
+
+
+             PCB                                                        Probe Card
+                                                                        Uniform Current Distribution (UCD)
+
+                                                                        High Thermal Conductivity
+
+                                                                        Thermal Dissipation Structure (TDS)
+
+
+
+             Wafer                                                      Wafer + Chuck
+                                                                        Advanced Hardware Capability
+             Chuck
+                                                                        Intelligent Temperature Control
+
+Author                SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                             21
+                          Active Temperature Control
+• Integrated solution to combine H/W and S/W.
+                        Tester                               • Multi-Sensor and Control Zone
+                                                                                                    As is          To be
+                        PCB                                  As is
+
+
+
+                                                             To be
+   Prober                               Wafer
+                                                                        Multi Heating Zone           Multi Cooling Zone
+                                           Chuck
+                                           Temp                • Optimize Probing Sequence
+                                           Sensor              <Goal>
+   Coolant                                                     •   Temperature Uniformity/Control
+                                    Temp                       •   Heating/Cooling Wait Time
+                                   Reading
+                                                               •   Probing Efficiency
+
+             Heating/              Intelligent
+             Cooling             Temp Control
+
+
+
+                                         SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                          Active Temperature Control
+• Integrated solution to combine H/W and S/W.
+                        Tester                               • Active Temperature Control by P-I-D
+                                                              Proportional (Pout): Adjust current error
+                        PCB
+                                                              Integral (Iout): Based on Past error
+
+   Prober                                                     Derivative (Dout​): Predict future error
+                                        Wafer
+                                           Chuck
+                                                                               Actual
+                                           Temp
+                                                                                                            Dout
+
+
+
+
+                                                             Temperature
+                                           Sensor
+   Coolant                                                                          Iout            Pout
+                                    Temp
+                                   Reading
+
+                                                                           Target
+             Heating/              Intelligent
+             Cooling             Temp Control
+
+                                                                                                     Time
+                                         SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                          Active Temperature Control
+• Integrated solution to combine H/W and S/W.
+                        Tester
+
+                        PCB                                                   Low Tj                             Cooling (-)
+
+                                                                                   Mid Tj                            Mid Tj
+                                                                                        High Tj                        Cooling (+)
+   Prober                               Wafer
+                                           Chuck
+                                           Temp
+                                           Sensor
+   Coolant
+                                    Temp
+                                   Reading
+
+                                                                                                    Uniform Tj
+             Heating/              Intelligent
+             Cooling             Temp Control
+
+
+
+                                         SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                         Active Temperature Control
+• Integrated solution to combine H/W and S/W.
+                       Tester
+                                                                <Singulated Die Probing>
+                       PCB
+                                                                • Chuck Capability
+                                                                 Support Die size: ~ 100mm x 100mm
+ Prober
+                                                                 Multi Heating/Cooling zones
+
+                                                                 Power Density: >200W/cm2
+  Coolant
+
+                                                                • Probing Technology
+                                   Temp
+                                  Reading
+                                                                 Pin Count: >800K
+            Heating/              Intelligent
+            Cooling             Temp Control                     Probe force control to avoid die shift
+
+                                            SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                Summary
+• The rapid expansion of AI technology introduces several challenges
+  in testing, particularly in thermal management.
+
+• To effectively manage thermal challenges, integrated solutions
+  combining the tester, probe card, and chuck are essential.
+
+• With successful AI chip testing, AI in turn makes us more capable
+  and efficient.
+
+
+
+
+                       SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+             Summary
+
+
+Get Rich!
+
+
+
+
+    SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+                                                  Disclaimer
+All the information, communications, software, scripting, photos, text, video, graphics, music, sounds, images, trademarks,
+logos, service marks and other materials and services found on this presentation (collectively the "Content") are properties
+of Taiwan Semiconductor Manufacturing Company, Ltd. (" TSMC® ").
+
+
+All Rights Reserved. THE UNAUTHORIZED COPYING, DISPLAYING OR OTHER USE OF ANY CONTENT FROM THIS
+PRESENTATION IS A VIOLATION OF THE LAW. You acknowledge having been advised by TSMC that the Content is
+protected in Taiwan and internationally by a variety of laws, including but not limited to, copyright laws and treaty
+provisions, trademark laws, patent laws, and other proprietary rights laws (collectively "Rights"). In addition to TSMC's
+Rights in individual elements of the Content, TSMC owns a copyright in the selection, coordination and arrangement of the
+Content.
+
+
+TSMC does not grant you any permission to use the Content. No license under any Rights is either granted or implied by
+the furnishing of information hereunder. Neither title nor Rights in the Content are transferred to you, but remain with
+TSMC, who owns full and complete title thereto. All use of the Content from the presentation, including, but not limited to
+uploading, downloading, modification, publication, transmission, translation, participation in the transfer or sale of, copying,
+reproduction, republishing, creation of derivative works from, distribution, performance, display, incorporation into other
+materials, reproducing the Content (whether by linking, framing or any other method), or in any other way exploiting any of
+the Content, in whole or in part may not be made without TSMC's prior express written consent.
+
+                                          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+

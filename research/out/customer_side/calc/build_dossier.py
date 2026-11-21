@@ -20,9 +20,9 @@ def run(*a):
 
 
 run(os.path.join(C, "build_tables.py"))
-run(os.path.join(ROOT, "research", "tools", "merge_parts.py"), "customer_side", "PAPM", "PAPL", "TALK", "XR", "SMP", "AW")  # first pass so SYN ids can be checked
+run(os.path.join(ROOT, "research", "tools", "merge_parts.py"), "customer_side", "PAPM", "PAPL", "TALK", "XR", "SMP", "AW", "ADDM", "ADDL", "MAIN")  # first pass so SYN ids can be checked
 print(run(os.path.join(C, "method_matrix.py")).splitlines()[0])
-print(run(os.path.join(ROOT, "research", "tools", "merge_parts.py"), "customer_side", "PAPM", "PAPL", "TALK", "XR", "SMP", "AW", "SYN", "MAIN").splitlines()[-1])
+print(run(os.path.join(ROOT, "research", "tools", "merge_parts.py"), "customer_side", "PAPM", "PAPL", "TALK", "XR", "SMP", "AW", "ADDM", "ADDL", "SYN", "MAIN").splitlines()[-1])
 run(os.path.join(C, "awards_summary.py"))
 print(run(os.path.join(C, "build_gaps.py")).strip())
 
@@ -51,7 +51,7 @@ if left:
     raise SystemExit(f"unfilled placeholders: {left}")
 # every evidence id cited in the dossier must exist
 ids = {r["id"] for r in ev}
-cited = set(re.findall(r"\b(?:PAPM|PAPL|TALK|XR|SMP|AW|SYN|MAIN)-\d{3}\b", t))
+cited = set(re.findall(r"\b(?:PAPM|PAPL|TALK|XR|SMP|AW|ADDM|ADDL|SYN|MAIN)-\d{3}\b", t))
 bad = sorted(cited - ids)
 if bad:
     raise SystemExit(f"dossier cites ids not in evidence.csv: {bad}")

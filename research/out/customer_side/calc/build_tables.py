@@ -8,7 +8,7 @@ Rows are grouped by (chipmaker, venue/date/title); steps, methods, vendors, stat
 (step, method) rows of one document are joined with " ; ". Nothing is paraphrased here: the text is
 the module tables' own wording (quotes from the cited documents or NOT DISCLOSED lines).
 
-Also reads calc/section1_extra_rows.csv (papers found by the SMP and XR modules).
+Also reads parts/ADDM_table.csv and parts/ADDL_table.csv (completeness round) and calc/section1_extra_rows.csv (papers found by the SMP and XR modules).
 """
 import csv, os, re
 from collections import OrderedDict
@@ -38,7 +38,7 @@ def nd_short(s):
 
 
 groups = OrderedDict()
-for fn, mod in [("PAPM_table.csv", "PAPM"), ("PAPL_table.csv", "PAPL"), ("TALK_table.csv", "TALK"), ("../calc/section1_extra_rows.csv", "EXTRA")]:
+for fn, mod in [("PAPM_table.csv", "PAPM"), ("PAPL_table.csv", "PAPL"), ("TALK_table.csv", "TALK"), ("ADDM_table.csv", "ADDM"), ("ADDL_table.csv", "ADDL"), ("../calc/section1_extra_rows.csv", "EXTRA")]:
     # EXTRA = method-bearing papers found by the SMP and XR modules, entered by the main session from their evidence rows
     for i, r in enumerate(csv.DictReader(open(os.path.join(P, fn), encoding="utf-8")), 1):
         key = (clean(r["chipmaker"]), clean(r["venue_date_title"]))
@@ -59,7 +59,7 @@ recs = []
 for (co, ven), g in groups.items():
     rows = g["rows"]
     steps = joined(rows, "process_step")
-    tags = sorted({clean(r["tag"]) for r in rows})
+    tags = sorted({t for r in rows for t in clean(r["tag"]).split("/") if t})  # split "[F]/[C]" before joining
     ev = []
     for r in rows:
         for e in re.split(r"[;,\s]+", r.get("evidence_ids", "")):

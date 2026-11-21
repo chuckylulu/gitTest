@@ -1,0 +1,328 @@
+Micro-bump Probing For Advanced System-on-Chip
+Testing: A Preview Into Native-Pitch Solutions And
+                 Their Challenges
+
+                                  Chandru PERIASAMY (Intel Foundry - USA)
+                              Francesco PARLATO (Technoprobe SpA - Italy)
+
+
+               SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026
+Introduction: Core + µ-bump Mixed Probing
+• Compute die in advanced multi-chip packages have both
+      – Large (~ 75.0 µm CD) core bumps
+      – Small (< 30.0 µm CD) µ-bumps
+              that connect to adjacent die through the EMIB or EMIB-T die embedded in
+               the substrate.                                                                                         Intel EMIB 2.5D
+
+
+
+
+• High die count package yield improvement need
+      – Drives shift-left strategy for test
+      – Need for probing on both core and µ-bumps
+                                                                                                         Core bumps   µ-bumps
+              Even at native pitches (< 50.0 µm) in the µ-bump areas.
+                                                                                                               Schematic of a die under test
+                                                                                                                 (DUT) with mixed probes
+
+
+Chandru Periasamy, Intel Foundry              SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                         2
+Conventional Vs. Native Pitch Mixed Probing At Intel
+
+• Intel’s Foveros-S assembly technology-based products such as MeteorLake are
+    being probed with mixed (two types) probes, albeit at non-native pitches (> 90.0
+    µm)  H68 / F36 Tech
+      – One probe type for power and ground bumps
+      – One probe type for signal bumps
+
+
+
+• A new solution where the µ-bumps are probed at 45.0 µm native pitch  K Tech
+      – Enabled by Technoprobe!
+
+
+• Note: Material in this presentation correspond to probing on solder bumps.
+
+
+Chandru Periasamy, Intel Foundry   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   3
+                         µBump Probing Configurations
+               Standard                                  µBump Cluster                                   Native Pitch Mixed
+            Probing Strategy                            Probing Strategy                                  Probing Strategy
+
+
+
+                                     Intel Patent
+                                     # 12,163,982
+
+
+
+
+                                                    •   Mixed probing for
+       •    Single needle probing                       µ-bumps only array
+            for µ-bumps only array                  •   Non-native pitch                             •   Mixed probing for Core
+       •    Non-native pitch                                                                             & µ-bumps array
+                                                                                                     •   Native pitch
+                                                     Maximized coverage
+        Low force probes to                          with 4 µ-bumps cluster
+         avoid bump damage                            probing
+        Very high pin count                         Ex: Foveros                                     New capability
+
+
+      Native pitch µ-bump probe characteristics: Low force | Tighter probe alignment | High Speed
+Francesco Parlato, Technoprobe            SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                4
+                         µBump Probing Configurations
+               Standard                                  µBump Cluster                                   Native Pitch Mixed
+            Probing Strategy                            Probing Strategy                                  Probing Strategy
+
+
+
+                                     Intel Patent
+                                     # 12,163,982
+
+
+
+
+                                                    •   Mixed probing for
+       •    Single needle probing                       µ-bumps only array
+            for µ-bumps only array                  •   Non-native pitch                             •   Mixed probing for Core
+       •    Non-native pitch                                                                             & µ-bumps array
+                                                                                                     •   Native pitch
+                                                     Maximized coverage
+        Low force probes to                          with 4 µ-bumps cluster
+         avoid bump damage                            probing
+        Very high pin count                         Ex: Foveros                                     New capability
+
+                                                                                Today’s Focus!
+      Native pitch µ-bump probe characteristics: Low force | Tighter probe alignment | High Speed
+Francesco Parlato, Technoprobe            SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                5
+                      µBump Cluster Probing Tech (Foveros)
+                                                                                                          µBump Cluster
+DoW Tech: H68 (I/O probes) + AH68 (GND/PWR probes)                                                       Probing Strategy
+•     Long, vertical probing needle technology
+•     Multiple GPs Probe Head template                                                Intel Patent
+•     TPEGTM manufacturing (+ ARIANNATM tech for AH68)                                # 12,163,982
+
+•     LCR2TM-based core material
+•     Zero Lateral Force configuration
+•     Probe vertical spring force
+        – 1.2g (H68)                                                                   Second Generation DoW Tech:
+        – 3.5g (AH68)                                                                  • Improved GND/PWR probe  F36
+•     Probe Current Carrying Capability (CCC)                                          • LCR4TM-based core material
+        – 500mA (H68)
+                                                                                       • Reduced probe force
+        – 850mA (AH68)
+                                                                                                – 2.5g (F36)
+                                                                                       •    Increased Probe CCC
+                                                                                                – 1050mA (F36)
+    Francesco Parlato, Technoprobe   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                               6
+                                 Native pitch µ-Probing
+                                                                                                             Native Pitch Mixed
+                                                                                                              Probing Strategy
+  •    Native Pitch Probing of µ-bumps (28µm to 32µm CD)
+
+        – Rectangular pattern configuration
+
+        – Min µ-bump pitch = 45µm
+
+        – Min probing pitch = 45µm
+
+
+  •    Probing single core bumps (65µm to 77µm CD)
+
+        – Any Angle configuration
+
+
+
+
+                                                                                                 Ø65 : 77
+        – Min bump pitch = 100µm
+
+
+
+
+                                                                                                                                        Ø28 : 32
+        – Min probing pitch = 100µm
+                                                                                                            MIXED PITCH ARRAY EXAMPLE
+
+Francesco Parlato, Technoprobe        SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                          7
+                                 Native pitch µ-Probing: K tech
+ K65 & K100 Tech
+ •    Shorter needle length for High
+      Speed performance improvement
+ •    SA2TM-based core material
+ •    Zero Lateral Force configuration
+ •    Probe vertical spring force
+                                                                                         K65       K100
+        – 1.2g (µ-bump K65)
+        – 1.6g (Core bump K100)
+
+
+
+
+Francesco Parlato, Technoprobe          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026      8
+                                 Native pitch µ-Probing: K tech
+Probe Current Carrying Capability (CCC)
+      – 480mA (µBump K65)
+      – 1200mA (Core Bump K100)
+
+
+                                                   K65                                             K100
+
+
+
+
+Francesco Parlato, Technoprobe          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026          9
+                                 Native pitch µ-Probing: K tech
+K Tech mechanical reliability
+ µBump probe design
+ optimization via FEM             • Fine tuning of probe
+                                    geometrical features
+mechanical simulation
+
+
+
+                                 Mech Fatigue Test           • Hybrid stress recipe
+                                 on high pin count           • Vertical TDs + CTDs (X scrub)                          XRM 3D reconstruction of probes within prototype PH
+                                  prototype PHs              • Multiple OT on same prototype
+
+                                                                                                                                                                   Probes
+                                                                                                                                    PH                             Not
+                                                                                                                                                                   In OT
+                                                                 Progressive
+                                                               checkpoints with          • Detail at single probe level
+                                                                                         • With probes in OT (caps + shims)
+                                                                XRM analyses                                                     PH cap
+
+                                                                                                                                     PH                            Probes
+                                                                                                                                                                   In OT
+                                                                               K tech probes meet 500K TD                        Shims
+                                                                               mech reliability expectations                     PH cap
+                                                                    Result
+                                                                                                                               Prototype PH setup for XRM with probes in OT
+
+
+Francesco Parlato, Technoprobe                             SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                                  10
+                                 Native pitch µ-Probing: K tech
+    Probe tip radial alignment < 6µm
+    • The design features of the PH are tuned to ensure a tight tip needle position tolerances.
+    • If needed, a post-assembly correction on specific layers of the PH is possible to re-center the
+      distributions.
+
+
+                                                       R 6µm                                       R 6µm
+
+
+
+
+                                       3.5k total pin count (3k K100 + 500 K65)
+
+Francesco Parlato, Technoprobe          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026           11
+µ-bump Probing – Shorting Risk
+
+• Test vehicle has ~ 3000 µ-bump probes.
+• No evidence of shorting over several die TD.                                                   Unprobed
+
+
+• Some µ-bumps show partial contact.
+      – Due to probe radial offset variability.                                                  Probed
+
+
+
+
+Chandru Periasamy, Intel Foundry      SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026              12
+µ-bump Probing – Bump Deformation
+
+
+
+
+                                                                                                     process threshold
+                                                                                                      Within assembly
+                                                                                Bump Height
+                       •     µ-bump height deformations are well controlled.
+                       • Unprobed to probed bumps height difference is within
+                            assembly process threshold.
+
+
+Chandru Periasamy, Intel Foundry          SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                       13
+µ-bump Probing – C-RES Stability
+
+
+
+
+                                                                      Contact Resistance σ (Ohms)
+                                                                                                                                C-RES variability spec
+                                                                                                                                     threshold
+
+
+
+
+• Repeatability studies show that both core-
+    bump and µ-bump probes’ CRES are very
+    well controlled with sufficient margin.
+
+
+
+
+                                                                                                                  CRES Test-2
+
+
+
+
+                                                                                                                                                 CRES Test-2
+                                                                                                    CRES Test-1
+
+
+
+
+                                                                                                                                   CRES Test-1
+Chandru Periasamy, Intel Foundry   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026                                                                    14
+ Summary
+       •    Intel & Technoprobe collaboratively developed a mixed probing solution at native µ-bump
+            pitch for advanced package compute die high stress testing.
+       •    Multiple parameters were optimized for the new probe Tech development:
+              – Reduced length (-55% w/r to AH68/F36)  improved High Speed properties
+              – CCC increase (for K100, +40% w/r to AH68, +15% w/r to F36)
+                     an extra +15% could be added applying HiP Tech on K Tech PHs
+
+       •    Probe performance and bump deformation metrics are on track to pass criteria for high
+            volume sort.
+              – Metrics include:
+                     C-RES stability
+                     No shorting
+                     Bump deformation
+
+
+Francesco Parlato, Technoprobe
+                                             SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   15
+ Message To Our Customers
+
+
+             • Intel and Technoprobe have a time-tested collaborative
+               methodology for test interface TD and HVM ramp that has delivered
+               every time.
+
+             • Intel is rapidly adopting industry standard test platforms.
+
+             • We invite customers to engage with us early in the product
+               definition cycle to define test strategies for HPC and AI products.
+
+
+
+
+Chandru Periasamy, Intel Foundry
+                                   SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   16
+                                             Thank you!
+Acknowledgement
+We express our gratitude to Ashwin ASHOK and Saad AHMED from Intel Foundry USA, as well as
+Federico LUCCHI, Daniele PEREGO, Francesca CATTANEO and Alice GHIDONI from Technoprobe
+ITALY for their valuable contribution to this paper.
+
+
+
+Contacts
+Intel – pam.fulton@intel.com (Intel Foundry Services, Packaging & Test)
+Technoprobe – joseph.parks@technoprobe.com (CTO, Technoprobe)
+
+
+                                    SWTest 35th Anniversary | Carlsbad CA, June 8 – 10, 2026   17
+

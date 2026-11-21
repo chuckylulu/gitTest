@@ -89,5 +89,28 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
     - The SK hynix newsroom "Tech Note" on hybrid bonding is a guest article by an Inha University professor (TALK-014/015, now [S]).
     - Several papers were relabelled as university-led or vendor-led with chipmaker co-authors: PAPM-051, PAPM-094, PAPM-143, PAPL-145, PAPL-155, PAPL-167.
 
+13. Critique round (workflow customer-side-critique; results in calc/critique_results.json). Five clean-context agents:
+    - one read the dossier prose against evidence.csv and found 36 problems: a method ranking contradicted by the dossier's own table; production wording attached to a recipe rather than to an inspection step; "two exceptions" followed by four items; X-ray debug work labelled failure analysis; ids pointing at the wrong rows; Nearfield-led and Yokohama-led papers presented as Samsung's or SK hynix's;
+    - two checked the Section 1 table and found 69 cell problems;
+    - two completeness critics searched the web and proposed 30 missed in-period items.
+    The main session applied the 36 prose fixes after checking each against the cited rows, and moved the method ranking to a script (calc/method_counts.py). It also corrected a wafer count: SMP-016 measured six wafers, three top and three bottom, not three.
+14. Completeness round (workflow customer-side-gapfill-and-table-fix; results in calc/gapfill_results.json).
+    - Collection: 22 candidates were chosen; 7 were dropped because they could be had only from refusing hosts or republishers, or added nothing. Two collectors (ADDM: memory makers; ADDL: logic and OSAT) added 19 documents: ADDM 65 rows, ADDL 58 rows, plus tables and notes.
+    - Access rule kept: critics had read some pages with a web-fetch tool. Every addition was re-fetched with fetch.py. These hosts refused and stay NOT RETRIEVED: pr.tsmc.com (award PDFs, one fetch.py test, 403), www.intel.com (Foveros Direct brief, 403), globenewswire.com, pubs.acs.org, wiley and sec.gov. Republishers (stocktitan.net, storagenewsletter.com) were not used.
+    - Clean-context check of the new rows:
+      - ADDM: {'MATCH': 40, 'PARTIAL': 24, 'MISMATCH': 1}. Mostly affiliation pointers to the Crossref record, plus one author-count error (3 of 9 SK hynix authors, not 3 of 8); all fixed in place.
+      - ADDL: {'MATCH': 45, 'PARTIAL': 13}. Wording softened to match the decks and the patent.
+    - Table fixes: 69 of 73 cell fixes applied; 4 were not, because they would need [C] evidence rows that do not exist.
+    - The main session added MAIN-010 to MAIN-012 for three quotes that table cells used without an evidence row. MAIN-011 quotes only the first clause because the SMT007 text is two-column.
+    - build_tables.py now splits combined tags before joining.
+    Effect on findings:
+    - Intel electrical test moved to production (micro-bump sort on Foveros since 2019, [C] ADDL-002).
+    - Samsung X-ray scatterometry: pilot (XCD "production-level capability", [C]). Micron X-ray scatterometry: lab (XRR).
+    - Micron electrical test: pilot (HBM4 MBIST, [C]).
+    - TSMC optical: lab (carrier-wafer optical metrology).
+    - Samsung acoustic now carries its stated limit: a SAM full-wafer scan takes 10-20 min.
+    - The bottom line, Sections 1, 2.2, 3 and 5 and the review packet were rewritten accordingly.
+    Final build: 832 evidence rows ([F] 578, [C] 73, [S] 84, [I] 97); every quote FOUND.
+
 ## Steps
 (continued below)

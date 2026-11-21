@@ -27,8 +27,18 @@ Each of these would change a finding if saved into `research/sources/customer_si
 
 Source of each line in brackets: the module that recorded it (PAPM, PAPL, TALK, XR, SMP, AW) or MAIN (main session). Lines are copied from the module notes; near-duplicates across modules are kept when they name different documents.
 
-## NOT RETRIEVED (76)
+## NOT RETRIEVED (86)
 
+- [ADDL] NOT RETRIEVED (tried: https://pr.tsmc.com/system/files/newspdf/attachment/1e7873e182523d3351afd810dc413e0bce01ca5f/2026%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29-final_wmn.pdf with fetch.py, HTTP 403; the 2025 PDF https://pr.tsmc.com/system/files/newspdf/attachment/ce3c12707f578ed01449842b2d7d4b3d1b6c1cbf/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf not tried after that refusal) - TSMC's own 2026 and 2025 supplier-award lists with English category names. AW-001 to AW-016 stay [S]. Please save both PDFs by hand.
+- [ADDL] NOT RETRIEVED (tried: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-11/foveros-direct-3d-tech-brief.pdf with fetch.py, HTTP 403; https://www.intel.com/content/www/us/en/foundry/packaging.htm not tried, host refuses scripted access) - Intel Foundry packaging page ("Advanced Chiplet Test", "Test Services") and the Foveros Direct 3D tech brief. gaps.md item 12 stays NOT RETRIEVED; it cannot be closed as NOT DISCLOSED from this run. Please save both by hand.
+- [ADDL] NOT RETRIEVED (tried: none; ieeexplore.ieee.org bot challenge) - full texts of https://doi.org/10.1109/impact67645.2025.11281768 (TSMC) and https://doi.org/10.1109/impact67645.2025.11281550 (ASE).
+- [ADDL] NOT RETRIEVED (tried: Amkor event page only) - slides or paper of the ITC 2026 talk "Advanced Packages, AI & Amkor: The OSAT Test Perspective" and of the ITC 2025 talk "Best Practices for Testing 2.5D Chiplet Package Designs".
+- [ADDM] The volume-production release of 8 Jul 2025 is NOT RETRIEVED (see section 2), so "released for use in volume production" is not in any row.
+- [ADDM] NOT RETRIEVED (tried: https://s24.q4cdn.com/480160064/files/doc_news/Onto-Innovation-Receives-Best-Partner-Award-from-SK-hynix-for-Hidden-Defect-Prevention-in-High-Bandwidth-Memory-Production.pdf with fetch.py, HTTP 404; investors.ontoinnovation.com not tried, host refuses scripts; stocktitan.net copy not used, republisher) - Onto release on its SK hynix 2026 Best Partner Award. Please save by hand: https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Receives-Best-Partner-Award-from-SK-hynix-for-Hidden-Defect-Prevention-in-High-Bandwidth-Memory-Production/default.aspx
+- [ADDM] NOT RETRIEVED (tried: https://www.globenewswire.com/news-release/2025/07/08/3111447/0/en/Infinitesima-Metron-3D-300mm-System-Released-for-In-line-Process-Control-by-Leading-DRAM-Manufacturer.html with fetch.py, HTTP 403; https://infinitesima.com/news/ HTTP 404; https://infinitesima.com/insights lists 2026 items only; storagenewsletter.com copy not used, republisher) - Infinitesima release of 8 Jul 2025 saying SK hynix released Metron3D for volume production. Please save the GlobeNewswire page by hand.
+- [ADDM] NOT RETRIEVED (tried: https://pubs.acs.org/doi/10.1021/acsaelm.6c00446 with fetch.py, HTTP 403) - abstract and full text of the SK hynix co-authored bond-wave / scaling-error paper.
+- [ADDM] NOT RETRIEVED (tried: https://onlinelibrary.wiley.com/doi/10.1002/sia.70044 with fetch.py, HTTP 403) - full text of the Micron XRR paper.
+- [ADDM] NOT RETRIEVED (tried: none, ieeexplore.ieee.org bot challenge) - full texts of https://doi.org/10.1109/icmts63811.2025.11068899 and https://doi.org/10.1109/sispad66650.2025.11186319.
 - [AW] NOT RETRIEVED (tried: https://pr.tsmc.com/english/news/3274 with fetch.py, HTTP 403; same-host PDF https://pr.tsmc.com/system/files/newspdf/attachment/ce3c12707f578ed01449842b2d7d4b3d1b6c1cbf/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf not tried) - TSMC's own 2025 Excellent Performance Award list with English category names. Please save by hand.
 - [AW] NOT RETRIEVED (tried: https://pr.tsmc.com/english/news/3355 with fetch.py, HTTP 403; same-host PDF https://pr.tsmc.com/system/files/newspdf/attachment/1e7873e182523d3351afd810dc413e0bce01ca5f/2026%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29-final_wmn.pdf not tried) - TSMC's own 2026 list. Please save by hand.
 - [AW] NOT RETRIEVED (tried: web search for a TSMC OIP 2025/2026 Partner of the Year page; tsmc.com refuses scripts) - TSMC's own OIP award lists; the 2026 3DFabric Testing winner is unknown.
@@ -106,8 +116,24 @@ Source of each line in brackets: the module that recorded it (PAPM, PAPL, TALK, 
 - [MAIN] NOT RETRIEVED (tried: ir.amkor.com, HTTP 403) - Amkor IR material
 - [MAIN] NOT RETRIEVED (tried: investors.micron.com, HTTP 403) - Micron IR releases and prepared remarks hosted there
 
-## NOT DISCLOSED (54)
+## NOT DISCLOSED (70)
 
+- [ADDL] NOT DISCLOSED (read: 2026-06-08_swtest_tsmc-hpc-testing-ai-era-deck.pdf, pp1-28) - production status of each test insertion, production counts, tester/prober/probe-card vendors, and any HBM test or inspection method beyond the "HBM Base die" label.
+- [ADDL] NOT DISCLOSED (read: 2026-06-08_swtest_intel-formfactor-microbump-probing-hvm-deck.pdf, pp1-16) - HBM; the X-ray technique used in materials characterization; the bump-deformation measurement method.
+- [ADDL] NOT DISCLOSED (read: 2026-06-08_swtest_intel-technoprobe-native-pitch-microbump-probing-deck.pdf, p13) - bump-height instrument and values.
+- [ADDL] NOT DISCLOSED (read: 2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281768.json, abstract) - optical principle, tool vendor, reference instruments, and whether AOM runs in production.
+- [ADDL] NOT DISCLOSED (read: 2026-11-21_semanticscholar_record-10.1109-impact67645.2025.11281550.json, abstract) - whether the models run on ASE production lines, and the product or inspection station.
+- [ADDL] NOT DISCLOSED (read: 2026-09-07_aseh_sustainability-report-2025-en.pdf, full-text search of 248 pages for "HBM", "high bandwidth memory", "hybrid bond") - any HBM or hybrid-bond inspection or metrology.
+- [ADDL] NOT DISCLOSED (read: 2026-11-21_amkor_web-smart-manufacturing.html, full page) - which package lines or process steps use ADC; HBM.
+- [ADDL] NOT DISCLOSED (read: 2026-11-21_amkor_event-itc-2026-osat-test-perspective.html, body) - test-time numbers, HBM, test methods.
+- [ADDL] NOT DISCLOSED (read: 2025-01-02_googlepatents_intel-US20250006651A1-slit-fiducials.html, description) - production use and metrology tool vendor.
+- [ADDM] NOT DISCLOSED (read: 2026-03-18_pathlms_fcmn2026-samsung-hybrid-metrology-se-xrd-deck.pdf, pp1-17) - conference name and place; only the date 26.03.18 is printed. One check of a NIST page found nothing.
+- [ADDM] NOT DISCLOSED (read: 2025-04-10_nova_spie-mipc39-samsung-nova-3dnand-hcb-metrology-paper.pdf, pp1-7) - SAM, AFM and interferometry tool vendors used for voids and Cu recess, and the correlation coefficient between the interferometry map and the SAM void map.
+- [ADDM] NOT DISCLOSED (read: 2026-10-27_imaps_samsung-warpage-control-3d-packaging-paper.pdf, pp1-6) - warpage measurement principle and tool vendor ("automated inspection tools" only).
+- [ADDM] NOT DISCLOSED (read: 2025-06-23_pmc_acsomega-sicn-wafer-bonding-skhynix-ynu-tel.html, sections 2 and 3.2) - SAM instrument and vendor.
+- [ADDM] NOT DISCLOSED (read: 2025-06-10_micron_release-hbm4-ships-key-customers.html, release body) - what Micron's HBM4 MBIST covers.
+- [ADDM] NOT DISCLOSED (read: 2026-09-03_bnext_micron-deboer-semicon-taiwan-2026-vertical-hbm.html, article body) - any metrology method named by DeBoer.
+- [ADDM] NOT DISCLOSED (read: 2026-11-21_crossref_record-10.1021-acsaelm.6c00446.json and 2026-11-21_semanticscholar_record-10.1021-acsaelm.6c00446.json) - measurement method of the AEM paper (no abstract in either record).
 - [AW] NOT DISCLOSED (read: SK hynix Newsroom KR, '2025 파트너스데이' 2025-09-30, full article) - names of the 14 winners of 2025.
 - [AW] NOT DISCLOSED (read: SK hynix Newsroom KR, '2026 파트너스데이' 2026-09-29, full article and three photo-caption pages) - names of the 11 winners of 2026.
 - [AW] NOT DISCLOSED (read: Samsung Newsroom KR, 'DS부문 2026년 상생협력 DAY' 2026-04-03, and the identical Samsung Semiconductor newsroom copy) - 13 of 17 Samsung DS 2026 winners.
