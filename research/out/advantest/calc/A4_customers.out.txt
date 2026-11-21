@@ -13,8 +13,25 @@ RESULT tsmc_sales_yoy_FY2025_pct = 29.9133
 RESULT samsung_sales_yoy_FY2024_pct = 51.9861
 RESULT nvidia_FY2025_vs_10pct_threshold_FY2024_JPYm = 77970.7000
 RESULT customer_FY2024_83rd_vs_84th_changed = 0
+RESULT share_nvidia_intl_FY2025 = 20.2260
+RESULT nvidia_group_minus_nvidia_intl_FY2025_JPYm = 15462
+RESULT nvidia_group_minus_nvidia_intl_FY2025_pp = 1.3700
+RESULT share_samsung_el_FY2024 = 10.6187
+RESULT share_samsung_el_FY2023 = 11.3719
+RESULT samsung_group_minus_samsung_el_FY2024_JPYm = 4939
+RESULT samsung_group_minus_samsung_el_FY2023_JPYm = 2400
+RESULT printed_pct_mismatches = 0
+RESULT top5_minus_named_entity_basis_FY2025_pp = 18.7000
 
 FY2025: NVIDIA 21.6%, TSMC 11.1%, together 32.7%; top five ~50%
 FY2024: TSMC 12.3%, Samsung 11.3%, together 23.6%; top five ~48%
 FY2023: Samsung 11.9%; top five ~29%
 NVIDIA not named for FY2024 => FY2024 NVIDIA sales were below 10% of FY2024 net sales = JPY 77,971 million
+
+Printed single-counterparty shares vs shares computed from printed amounts:
+   NVIDIA International FY2025: computed 20.23% vs printed 20.2% -> MATCH
+   TSMC FY2025: computed 11.07% vs printed 11.1% -> MATCH
+   TSMC FY2024: computed 12.33% vs printed 12.3% -> MATCH
+   Samsung Electronics FY2024: computed 10.62% vs printed 10.6% -> MATCH
+   Samsung Electronics FY2023: computed 11.37% vs printed 11.4% -> MATCH
+NVIDIA Group (note 6(6)) JPY 243,735 m vs NVIDIA International, Inc. (Item 2) JPY 228,273 m: other group entities JPY 15,462 m (1.4 pp)

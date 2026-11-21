@@ -72,3 +72,13 @@ for lab, rng, a24, a25oct, now in [
 print()
 MTP2_ROIC_PR, MTP2_ROIC_SL = 21.2, 25.5   # A3-240 (press release 2024-06-25), A3-241 (slides 2024-06-25)
 print(f"MTP2 (FY2021-23 avg.) ROIC printed on 2024-06-25: press release {MTP2_ROIC_PR}% vs slides {MTP2_ROIC_SL}% -> difference {MTP2_ROIC_SL-MTP2_ROIC_PR:.1f} pts")
+
+# ---- added by verifier 2026-11-21: which MTP2 ROIC figure matches the company's own annual series? ----
+ROIC21, ROIC22, ROIC23 = 28.4, 34.6, 13.5   # A3-306 (IAR 2026 p.77, 11-year table, same ROIC definition footnote)
+m = mean([ROIC21, ROIC22, ROIC23])
+print(f"Simple mean of annual ROIC FY2021-23 printed in IAR 2026 p.77: ({ROIC21} + {ROIC22} + {ROIC23}) / 3 = {m:.2f}% "
+      f"-> {'equals' if round(m, 1) == MTP2_ROIC_SL else 'DIFFERS FROM'} the slides figure {MTP2_ROIC_SL}% (A3-241, A3-305) to one decimal; differs from the press-release / 82nd securities-report "
+      f"figure {MTP2_ROIC_PR}% (A3-240, A3-304) by {m - MTP2_ROIC_PR:.1f} pts. The company does not state how the MTP2 average was computed.")
+ROIC24_P77, ROIC25_P77 = 31.5, 54.4   # IAR 2026 p.77 (same table as A3-306)
+print(f"Cross-check: IAR p.77 FY2024 ROIC {ROIC24_P77}% / FY2025 {ROIC25_P77}% vs IAR p.22 {ROIC24}% / {ROIC25}% (A3-249, A3-250): "
+      f"{'same' if (ROIC24_P77, ROIC25_P77) == (ROIC24, ROIC25) else 'DIFFERENT'}")

@@ -116,3 +116,14 @@ for k, soc, share, tot in [("FY2025", 767.424, 95, 1128.610), ("FY2024", 440.452
           f"{pct(mid, tot):.1f}% of net sales (range {pct(lo, tot):.1f}-{pct(hi, tot):.1f}%)")
 # Memory: DRAM 90% of Memory Test Systems sales FY2025 (A1-301), rounded to nearest 5%; HBM not separated
 print(f"FY2025 DRAM memory tester sales {171.504 * 0.90:.1f} bn (range {171.504 * 0.875:.1f}-{171.504 * 0.925:.1f}); HBM portion not disclosed")  # A1-338, A1-301
+
+print("\n=== 6. LTM (Oct 2025-Sep 2026) segment mix, JPY million unless stated ===")
+LTM_TOT = 1128610 + 845200 - 526733                     # A1-001, A1-094, A1-102
+LTM_SO = 109230 + 74969 - 48776                          # A1-187, A1-197, A1-202
+LTM_SOC = 767424 + 612922 - 364978                       # A1-337, A1-343, A1-346
+LTM_SUPPORT_BN = 17.1 + 18.6 + 20.3 + 25.6               # A1-264, A1-271, A1-278, A1-285 (chart labels, JPY bn)
+print(f"LTM net sales {LTM_TOT:,}; Services and Others {LTM_SO:,} = {pct(LTM_SO, LTM_TOT):.1f}% "
+      "(segment share; NOT a company definition of recurring revenue)")
+print(f"LTM Support Services (sum of quarterly chart labels) {LTM_SUPPORT_BN:.1f} bn = {pct(LTM_SUPPORT_BN, LTM_TOT / 1000):.1f}% of LTM net sales "
+      "(NOT a company definition of recurring revenue)")
+print(f"LTM SoC test system sales {LTM_SOC:,} = {pct(LTM_SOC, LTM_TOT):.1f}% of LTM net sales")

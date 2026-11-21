@@ -96,6 +96,10 @@ for k in ["FY2025 (Apr 2025-Mar 2026)", "FY2024 (Apr 2024-Mar 2025)", "1H FY2026
 print(f"SBC/FCF LTM: company def {pct(sbc_ltm, co_ltm):.2f}%; capex-based {pct(sbc_ltm, cap_ltm):.2f}%")
 print(f"SBC as % of net sales: FY2025 {pct(4450, 1128610):.2f}% (A1-001); LTM {pct(sbc_ltm, 1447077):.2f}% (LTM sales from A1_pnl)")
 print(f"Parent-only J-GAAP SG&A 'share-based compensation expense' FY2025 26,134 (A1-185) / FCF company def FY2025: {pct(26134, fcf(YTD['FY2025 (Apr 2025-Mar 2026)'])[0]):.2f}% (shown for scale only; not the consolidated figure)")
+PROV_25 = (2537, 4026)    # parent-only 'Provision for share-based remuneration', current / non-current, 31 Mar 2025 (A1-489, A1-490)
+PROV_26 = (8477, 20088)   # same, 31 Mar 2026 (A1-489, A1-490)
+print(f"Parent-only provision for share-based remuneration: 31 Mar 2025 {sum(PROV_25):,}; 31 Mar 2026 {sum(PROV_26):,}; "
+      f"increase {sum(PROV_26) - sum(PROV_25):,} vs parent-only FY2025 expense 26,134 (A1-185) and consolidated IFRS expense 4,450 (A1-174)")
 
 print("\n=== 5. Company FCF annual cross-check (JPY bn) ===")
 print(f"FY2025 company def {fcf(YTD['FY2025 (Apr 2025-Mar 2026)'])[0]/1000:.1f} vs slide 300.6 (A1-164); FY2024 {fcf(YTD['FY2024 (Apr 2024-Mar 2025)'])[0]/1000:.1f} vs slide 243.8 (A1-165)")

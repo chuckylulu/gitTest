@@ -17,10 +17,19 @@ EQUITY_COMP = 7712                  # A5-078 share premium increase on issuance 
 MATURITY = dt.date(2031, 3, 28)
 SEP26 = dt.date(2026, 9, 30)
 
+import math
+BOND_UNIT_YEN = 10_000_000          # A5-061 source page: principal amount of each bond JPY 10 million (10,000 bonds)
 sh_init = FACE_YEN / CP_INITIAL
 sh_adj = FACE_YEN / CP_ADJ
+# Fractions are rounded down per exercise request (84th Note 33 (7)(ii)); the count therefore lies between
+# per-bond requests (lower bound) and one request for all bonds (upper bound).
+lo_adj = (FACE_YEN // BOND_UNIT_YEN) * math.floor(BOND_UNIT_YEN / CP_ADJ)
+hi_adj = math.floor(sh_adj)
 print(f"Shares on full conversion at initial price: {sh_init:,.1f} (reported {SHARES_REPORTED:,d})")
 print(f"Shares on full conversion at adjusted price: {sh_adj:,.1f} (+{sh_adj - sh_init:,.1f})")
+print(f"Shares on full conversion at adjusted price after round-down: {lo_adj:,d} (each bond separately) to {hi_adj:,d} (one request)")
+print("Denominators (both at 30 Sep 2026): issued shares 732,000,000 incl. 10,047,095 treasury (A5-108, A5-103);"
+      " outstanding excl. treasury 721,952,905 (A5-103). Neither includes the 420,900 shares bought back 29-31 Oct 2026.")
 print(f"Dilution vs issued shares {ISSUED:,d}: initial {SHARES_REPORTED/ISSUED*100:.3f}%, adjusted {sh_adj/ISSUED*100:.3f}%")
 print(f"Dilution vs shares outstanding excl. treasury {OUTSTANDING_EX_TREAS:,d}: initial {SHARES_REPORTED/OUTSTANDING_EX_TREAS*100:.3f}%, adjusted {sh_adj/OUTSTANDING_EX_TREAS*100:.3f}%")
 print(f"Conversion price adjustment: {(CP_ADJ/CP_INITIAL-1)*100:.3f}%")

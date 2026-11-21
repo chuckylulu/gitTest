@@ -27,7 +27,8 @@ rows = []
 # (label, sales, gross profit, operating income, income before tax, OI adjustment, IBT adjustment, note)  all JPY million
 # single quarters from YTD differencing / tanshin (see A1_pnl.out.txt section 4) or slides x1000 where only slides exist
 rows.append(("FY2024 (Apr 2024-Mar 2025)", 779707, 445085, 228161, 224774, +IMP, +IMP, "add back impairment"))           # A1-002,006,014,017
-rows.append(("FY2024 Q4 (Jan-Mar 2025) [slides, bn x1000]", 232300, 139200, 64100, 61600, +IMP, +IMP, "add back impairment"))  # A1-076,077,079,081
+rows.append(("FY2024 Q4 (Jan-Mar 2025) [FY - 9M]", 779707 - 547358, 445085 - 305851, 228161 - 164126, 224774 - 163192, +IMP, +IMP,
+             "add back impairment"))                                                                   # A1-002/482, 006/483, 014/228, 017/484
 rows.append(("FY2025 (Apr 2025-Mar 2026)", 1128610, 726107, 499120, 516720, -DIV, -DIV - CALL, "remove divestiture gain; remove call-option gain"))  # A1-001,005,013,016
 rows.append(("FY2025 Q1 (Apr-Jun 2025)", 263776, 171638, 123952, 121357, -DIV, -DIV, "remove divestiture gain"))       # A1-324, A1-335, A1-325, A1-336
 rows.append(("FY2025 Q4 (Jan-Mar 2026) [FY - 9M]", 1128610 - 800537, 726107 - 504987, 499120 - 346006, 516720 - 344349, 0, -CALL,
@@ -50,3 +51,13 @@ print("Services & Others segment income FY2024 Q4 ex impairment (A1_segments: -1
 print("Services & Others segment income FY2025 ex divestiture gain: %s (reported 8,758, A1-189)" % f"{8758 - DIV:,}")
 print("Services & Others segment income FY2025 Q1 ex divestiture gain: %s (reported 2,706, A1-329)" % f"{2706 - DIV:,}")
 print("Services & Others segment income 1H FY2025 ex divestiture gain: %s (reported 3,048, A1-204)" % f"{3048 - DIV:,}")
+
+print("\n=== Operating income YoY with and without the named items in the comparison base (JPY million) ===")
+OI_Q4_25, OI_Q4_24 = 499120 - 346006, 228161 - 164126   # A1-013/118, A1-014/228
+OI_Q1_26, OI_Q1_25 = 189990, 123952                     # A1-111, A1-325
+print(f"FY2025 Q4 OI {OI_Q4_25:,} vs FY2024 Q4 {OI_Q4_24:,}: reported {100 * (OI_Q4_25 / OI_Q4_24 - 1):+.1f}%; "
+      f"vs FY2024 Q4 ex impairment {OI_Q4_24 + IMP:,}: {100 * (OI_Q4_25 / (OI_Q4_24 + IMP) - 1):+.1f}% "
+      "(FY2025 Q4 one-off SG&A amount not disclosed, so the current quarter cannot be adjusted)")
+print(f"FY2026 Q1 OI {OI_Q1_26:,} vs FY2025 Q1 {OI_Q1_25:,}: reported {100 * (OI_Q1_26 / OI_Q1_25 - 1):+.1f}%; "
+      f"vs FY2025 Q1 ex divestiture gain {OI_Q1_25 - DIV:,}: {100 * (OI_Q1_26 / (OI_Q1_25 - DIV) - 1):+.1f}% "
+      "(FY2026 Q1 inventory write-down reversal amount not disclosed, so the current quarter cannot be adjusted)")

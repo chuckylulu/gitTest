@@ -9,8 +9,11 @@ Its briefing slides split the full-year forecast into periods:
   - at the Q1 release: a Q2 forecast column (and 2H);
   - at the Q2 release: a 2H forecast column (= full year - 1H actual, company method, A3-004);
   - at the Q3 release: a Q4 forecast column (= full year - 9M actual, company method, A3-005/A3-006);
-  - at the Q4 (full-year) release: next fiscal year, full year only.
-Method per slot (the guidance outstanding at the START of each quarter):
+  - at the Q4 (full-year) release: next fiscal year, full year only (April slides print no 1H split).
+Method per slot: the guidance published at the PREVIOUS quarter's results release, i.e. about four
+weeks into the quarter being tested (e.g. FY2024 Q3 = Oct-Dec 2024 is tested against the 2H forecast
+published 2024-10-30). The guidance therefore already reflected about one month of the quarter.
+Verifier note (2026-11-21): forecast inputs are company forecasts, tagged [C] in A3.csv; actuals [F].
   Q2 slot -> Q2 forecast from the Q1 slides vs Q2 actual (direct, quarterly)
   Q3 slot -> 2H forecast from the Q2 slides vs 2H actual (Q3+Q4) (direct, half-year; no Q3-only figure exists)
   Q4 slot -> Q4 forecast from the Q3 slides vs Q4 actual (direct, quarterly)
@@ -199,6 +202,16 @@ print("  Q3 single quarters (no derivation needed, slide values): FY2024 Q3 sale
 print()
 print("=" * 100)
 print("Direction of the full-year guidance change announced at each window quarter's results (A3 rows of each version)")
+PRE = [  # in-year releases before the window (context for the run of consecutive raises)
+    ("FY2023 Q1 results (2023-07-26)", 480000, 480000, 105000, 105000),   # A3-018 -> A3-022/A3-314 (maintained)
+    ("FY2023 Q2 results (2023-10-31)", 480000, 470000, 105000, 80000),    # A3-018 -> A3-023; A3-019 -> A3-024 (cut)
+    ("FY2023 Q3 results (2024-01-31)", 470000, 480000, 80000, 85000),     # A3-023 -> A3-028; A3-024 -> A3-029
+    ("FY2024 Q1 results (2024-07-31)", 525000, 600000, 90000, 138000),    # A3-040 -> A3-044; A3-041 -> A3-045
+    ("FY2024 Q2 results (2024-10-30)", 600000, 640000, 138000, 165000),   # A3-044 -> A3-048; A3-045 -> A3-049
+]
+for lab, s0, s1, o0, o1 in PRE:
+    d = "raised" if (s1 > s0 and o1 > o0) else ("cut" if (s1 < s0 and o1 < o0) else ("maintained" if (s1 == s0 and o1 == o0) else "mixed"))
+    print(f"  [context] {lab}: sales {pct(s1, s0):+.1f}%, OI {pct(o1, o0):+.1f}% -> {d}")
 REV = [
     ("FY2024 Q3 results (2025-01-29)", 640000, 740000, 165000, 226000),   # A3-048 -> A3-053; A3-049 -> A3-054
     ("FY2025 Q1 results (2025-07-29)", 755000, 835000, 242000, 300000),   # A3-066 -> A3-071; A3-067 -> A3-072
@@ -213,6 +226,15 @@ for lab, s0, s1, o0, o1 in REV:
     raises += up
     print(f"  {lab}: sales {pct(s1, s0):+.1f}%, OI {pct(o1, o0):+.1f}% -> {'raised' if up else 'not raised'}")
 print(f"  Raised at {raises} of {len(REV)} in-year releases in the window (Q4 releases set a new fiscal year's guidance and are not counted).")
+seq = [(lab, s1 > s0 and o1 > o0, s1 < s0 and o1 < o0) for lab, s0, s1, o0, o1 in PRE + REV]
+run = 0
+for lab, up, down in reversed(seq):
+    if not up:
+        break
+    run += 1
+last_cut = [lab for lab, up, down in seq if down][-1]
+print(f"  Including the context releases: the last {run} in-year releases in a row raised sales and OI guidance "
+      f"(from {seq[len(seq)-run][0]} to {seq[-1][0]}); last cut: {last_cut}.")
 print("  Context: FY2023 initial guidance was maintained at Q1 (2023-07-26, A3-022) and cut at Q2 (2023-10-31): sales -2.1%, OI -23.8% (A3_annual_record).")
 
 print()
@@ -238,3 +260,50 @@ x = SQ["FY2026 Q2"]["ni"] - VAL26_Q2
 print(f"  FY2026 Q2 valuation gains = {VAL26_H1} - {VAL26_Q1} = {VAL26_Q2:.3f}; NI less full pre-tax gains {x:.1f} vs guidance {G['FY2026 Q2']['ni']}: {pct(x, G['FY2026 Q2']['ni']):+.1f}% ({cls(pct(x, G['FY2026 Q2']['ni']))}) - beat holds")
 print("  FY2025 Q2 OI: management named a one-time SG&A charge (A3-093) without an amount -> cannot adjust; reported OI beat +12.6% stands.")
 print("  FY2026 Q2 OI: management named a one-time inventory write-down reversal benefit in 1H (A3-229) without an amount -> cannot adjust.")
+
+# ---- added by verifier 2026-11-21: one-off sensitivity for the remaining slots (one-off rule) ----
+SETTLE23 = 3.179   # A3-038 settlement income (in OI); first reported in the 1H FY2023 tanshin (A3-315), absent from the Q1 tanshin -> Q2 FY2023
+DTA23 = 3.8        # A3-039 approx. deferred-tax benefit, Q4 FY2023, raises NI
+DIV25 = 2.504      # A3-091 divestiture gain (in OI), Q1 FY2025
+print()
+print("Additional one-off sensitivity (verifier, 2026-11-21). Same conventions as above (JPY billion).")
+# context: FY2023 Q2
+x = SQ["FY2023 Q2"]["oi"] - SETTLE23
+print(f"  [context] FY2023 Q2 OI less settlement income {x:.1f} vs Q2 guidance {G['FY2023 Q2']['oi']}: {pct(x, G['FY2023 Q2']['oi']):+.1f}% ({cls(pct(x, G['FY2023 Q2']['oi']))}); reported -5.8% miss either way")
+# context: FY2023 2H (Q3+Q4) includes the Q4 impairment (OI) and the Q4 DTA benefit (NI)
+a = DER["FY2023 2H"]
+x = a["oi"] + IMP23
+print(f"  [context] FY2023 2H OI ex impairment {x:.2f} vs 2H guidance {G['FY2023 2H']['oi']}: {pct(x, G['FY2023 2H']['oi']):+.1f}% ({cls(pct(x, G['FY2023 2H']['oi']))}); reported {pct(a['oi'], G['FY2023 2H']['oi']):+.1f}%")
+x = a["ni"] - DTA23
+print(f"  [context] FY2023 2H NI less approx. DTA benefit {x:.2f} vs 2H guidance {G['FY2023 2H']['ni']}: {pct(x, G['FY2023 2H']['ni']):+.1f}% ({cls(pct(x, G['FY2023 2H']['ni']))}); reported {pct(a['ni'], G['FY2023 2H']['ni']):+.1f}%; impairment after-tax effect not disclosed")
+# context: FY2023 Q4 NI
+x = SQ["FY2023 Q4"]["ni"] - DTA23
+print(f"  [context] FY2023 Q4 NI less approx. DTA benefit {x:.1f} vs Q4 guidance {G['FY2023 Q4']['ni']}: {pct(x, G['FY2023 Q4']['ni']):+.1f}% ({cls(pct(x, G['FY2023 Q4']['ni']))}); "
+      f"adding back the full pre-tax impairment as well (no tax effect) gives {x + IMP23:.1f} ({pct(x + IMP23, G['FY2023 Q4']['ni']):+.1f}%) - an arithmetic bound only")
+# window: FY2024 Q3 slot (2H FY2024 includes the Q4 impairment)
+a = DER["FY2024 2H"]
+x = a["oi"] + IMP24
+print(f"  FY2024 Q3 slot (2H FY2024) OI ex impairment {x:.2f} vs 2H guidance {G['FY2024 2H']['oi']}: {pct(x, G['FY2024 2H']['oi']):+.1f}% ({cls(pct(x, G['FY2024 2H']['oi']))}); "
+      f"2H OPM reported {a['oi']/a['s']*100:.1f}%, ex impairment {x/a['s']*100:.1f}%; NI upper bound (no tax effect) {a['ni'] + IMP24:.2f} ({pct(a['ni'] + IMP24, G['FY2024 2H']['ni']):+.1f}%) - beat either way")
+# window: FY2025 Q1 slot (FY2025 vs initial guidance)
+fy = FYACT["FY2025"]
+x = fy["oi"] - DIV25
+print(f"  FY2025 Q1 slot (FY2025 vs initial) OI less divestiture gain {x:.2f} vs {G['FY2025 FYinit']['oi']}: {pct(x, G['FY2025 FYinit']['oi']):+.1f}% ({cls(pct(x, G['FY2025 FYinit']['oi']))}); "
+      f"NI less full pre-tax call-option and divestiture gains {fy['ni'] - CALL25 - DIV25:.2f} vs {G['FY2025 FYinit']['ni']}: {pct(fy['ni'] - CALL25 - DIV25, G['FY2025 FYinit']['ni']):+.1f}% - beat either way; Q2 one-time SG&A charge amount not disclosed")
+# window: FY2025 Q3 slot (2H FY2025 includes the Q4 call-option gain; no OI item with an amount)
+a = DER["FY2025 2H"]
+x = a["ni"] - CALL25
+print(f"  FY2025 Q3 slot (2H FY2025) NI less full pre-tax call-option gain {x:.2f} vs 2H guidance {G['FY2025 2H']['ni']}: {pct(x, G['FY2025 2H']['ni']):+.1f}% ({cls(pct(x, G['FY2025 2H']['ni']))}); "
+      f"OI has no named item with an amount in 2H (2H OPM {a['oi']/a['s']*100:.1f}%)")
+# window: FY2026 Q1 provisional slot (1H FY2026 includes valuation gains in financial income; inventory reversal amount not disclosed)
+h1ni = bn(H1_26["ni"])
+x = h1ni - VAL26_H1
+print(f"  FY2026 Q1 slot (provisional) 1H NI less full pre-tax valuation gains {x:.2f} = {x/G['FY2026 FYinit']['ni']*100:.1f}% of initial FY NI guidance "
+      f"(reported {h1ni/G['FY2026 FYinit']['ni']*100:.1f}%); 1H OPM {H1_26['oi']/H1_26['s']*100:.1f}% includes an inventory write-down reversal of undisclosed amount")
+# FY2026 Q2 OPM
+print(f"  FY2026 Q2 OPM reported {SQ['FY2026 Q2']['oi']/SQ['FY2026 Q2']['s']*100:.1f}%; Q2-only share of the 1H inventory write-down reversal not disclosed -> no ex-item figure")
+# FY2024 Q4 NI: thresholds for the undisclosed after-tax effect of the non-deductible impairment (A3-316)
+g, a = G["FY2024 Q4"]["ni"], SQ["FY2024 Q4"]["ni"]
+ni_in, ni_beat = g * (1 - BAND / 100) - a, g * (1 + BAND / 100) - a
+print(f"  FY2024 Q4 NI ex impairment: in-line if the after-tax effect >= {ni_in:.1f} ({ni_in/IMP24*100:.0f}% of {IMP24}), beat if > {ni_beat:.1f} "
+      f"({ni_beat/IMP24*100:.0f}%); company says the impairment losses were not tax-deductible (A3-316), which points to the upper end")

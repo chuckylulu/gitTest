@@ -19,3 +19,13 @@ agg_x = (OI24+IMP24+OI25-GAIN25+OI26)/(S24+S25+S26)
 print(f"Aggregate 3-yr margin, reported: {agg*100:.1f}%; ex one-offs: {agg_x*100:.1f}%  (MTP3 target 33-36%)")
 print(f"3-yr average sales: {(S24+S25+S26)/3/1000:,.1f} JPY bn (MTP3 target 835-930)")
 print(f"Advantest FY26 Q2 operating margin 55.9% minus Teradyne Q3 2026 non-GAAP 31.6%: {55.9-31.6:.1f} points")
+# CL-135 Teradyne Q3 2026 (quarter ended 27 Sep 2026), USD million [F]: revenue 1,306.0; GAAP income from operations 402.0;
+# items Teradyne itself excludes: acquired intangibles amortization 5.3, restructuring and other 2.0, ERP related 3.7
+TER_REV, TER_GAAP_OI = 1306.0, 402.0
+TER_ITEMS = {"acquired intangible amortization": 5.3, "restructuring and other": 2.0, "ERP related expenses": 3.7}
+ter_gaap = TER_GAAP_OI / TER_REV
+ter_ng = (TER_GAAP_OI + sum(TER_ITEMS.values())) / TER_REV
+print(f"Teradyne Q3 2026 operating margin GAAP: {ter_gaap*100:.1f}%; ex named items (non-GAAP): {ter_ng*100:.1f}% (printed 31.6%)")
+print(f"Advantest FY26 Q2 55.9% minus Teradyne GAAP: {55.9-ter_gaap*100:.1f} points")
+# CL-025 FY26 Q2 55.9%: management named a 1H inventory write-down reversal (CL-073), amount not disclosed -> no ex-item figure
+print("Advantest FY26 Q2 ex named one-off: not computable (1H inventory write-down reversal, amount not disclosed)")

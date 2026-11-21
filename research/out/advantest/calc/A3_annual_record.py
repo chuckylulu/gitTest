@@ -5,6 +5,8 @@ Fiscal year ends 31 March; Advantest names a fiscal year by its start year
 (FY2025 = Apr 2025-Mar 2026). All inputs in JPY million (EPS in JPY), hard-coded
 from research/out/advantest/parts/A3.csv (evidence id in each comment).
 
+Verifier note (2026-11-21): guidance inputs are company forecasts, tagged [C] in A3.csv; actuals are [F].
+
 Classification rule (stated once, used everywhere in A3):
   diff% = (actual - guidance) / guidance * 100
   beat     : diff% >  +2.0
@@ -28,17 +30,17 @@ def cls(d, band=BAND):
 FY = {
     "FY2022 (context; Apr 2022-Mar 2023)": {
         "versions": [
-            # A3-012, A3-013, A3-014 (Q3 tanshin 2023-01-31, 'Revision ... No')
-            ("maintained at Q3", "2023-01-31", {"sales": 550000, "oi": 170000, "ni": 130000}),
+            # A3-012, A3-013, A3-312 (IBT), A3-014 (Q3 tanshin 2023-01-31, 'Revision ... No')
+            ("maintained at Q3", "2023-01-31", {"sales": 550000, "oi": 170000, "ibt": 174000, "ni": 130000}),
         ],
-        # A3-015, A3-016, A3-017
-        "actual": {"sales": 560191, "oi": 167687, "ni": 130400},
+        # A3-015, A3-016, A3-313 (IBT), A3-017
+        "actual": {"sales": 560191, "oi": 167687, "ibt": 171270, "ni": 130400},
     },
     "FY2023 (Apr 2023-Mar 2024)": {
         "versions": [
             # A3-018..A3-021
             ("initial", "2023-04-26", {"sales": 480000, "oi": 105000, "ibt": 103500, "ni": 78000}),
-            # A3-022 (maintained at Q1; same figures as initial)
+            # A3-022 (Outlook text) and A3-314 (p.2 forecast table, 'Revision ... No'): maintained at Q1
             ("Q1 maintained", "2023-07-26", {"sales": 480000, "oi": 105000, "ibt": 103500, "ni": 78000}),
             # A3-023..A3-026
             ("Q2 revision", "2023-10-31", {"sales": 470000, "oi": 80000, "ibt": 78500, "ni": 60000}),
@@ -201,3 +203,43 @@ for fy, d in FY.items():
     act = d["actual"]
     miss = [f"{NAMES[m]} {pct(act[m], v[m]):+.1f}%" for m in ORDER if m in v and m in act and cls(pct(act[m], v[m])) == "miss"]
     print(f"  {fy}: guidance of {date} ({lab}) -> " + (", ".join(miss) if miss else "no metric missed"))
+
+
+# ---- added by verifier 2026-11-21 ----
+print()
+print("=" * 100)
+print("Company-adjusted measure: core operating income (= operating income excluding other income and expenses;")
+print("results slides A3-308..A3-310). The company gives no guidance for core OI (forecast column shows '-'), so core OI")
+print("is compared with the reported-OI guidance only as a cross-check of the one-off adjustment above (JPY billion).")
+CORE = {  # (core OI, core OPM printed, latest reported-OI guidance, reported OI)
+    "FY2023": (87.1, 17.9, 85.0, 81.628),     # A3-309; A3-029; A3-033
+    "FY2024": (249.7, 32.0, 226.0, 228.161),  # A3-308; A3-054; A3-059
+    "FY2025": (496.5, 44.0, 454.0, 499.120),  # A3-310; A3-082; A3-087
+}
+for fy, (core, copm, g, oi) in CORE.items():
+    print(f"  {fy}: core OI {core} ({copm}% printed) vs latest OI guidance {g}: {pct(core, g):+.1f}% ({cls(pct(core, g))}); "
+          f"reported OI {oi:.1f} ({pct(oi, g):+.1f}%); core minus reported OI {core - oi:+.1f}")
+print("  FY2024 core OI 249.7 vs OI ex impairment 249.6 (A3-273): the company's adjusted figure matches the one-off adjustment.")
+print()
+print("Timing of the named items relative to the latest guidance (documents read; whether guidance included an item is not stated):")
+print("  FY2023 settlement income 3,179 (A3-038): first reported in the 1H tanshin (A3-315), i.e. booked before the 2024-01-31 guidance,")
+print("    so it was already in the 9M base of that guidance; the 'ex impairment and ex settlement' comparison mixes bases. The Q4 impairment")
+print("    and the Q4 DTA benefit came after the guidance date.")
+print("  FY2024 impairment 21,393 (A3-063): booked in Q4, after the 2025-01-29 guidance.")
+print("  FY2025 divestiture gain 2,504 (A3-091): booked in Q1, before the 2026-01-28 guidance; the call-option gain 17,312 (A3-092): Q4, after it.")
+
+# ---- added by verifier 2026-11-21: FY2024 NI miss and the non-deductible impairment ----
+print()
+print("=" * 100)
+print("FY2024 NI vs the January 2025 guidance, given the company's statement that the Q4 impairment losses were not")
+print("deductible for tax purposes (A3-316). The tax reconciliation (83rd ASR note 15) does not itemise the impairment, and the")
+print("intangible-asset part may carry a deferred-tax effect, so the after-tax effect is bounded, not known (JPY million).")
+need_inline = gni24 * (1 - BAND / 100) - ni24
+need_beat = gni24 * (1 + BAND / 100) - ni24
+print(f"  NI reported {ni24:,} vs guidance {gni24:,}: {pct(ni24, gni24):+.1f}%")
+print(f"  NI ex impairment is in-line if the after-tax effect >= {need_inline:,.0f} ({need_inline/FY24_IMPAIRMENT*100:.0f}% of the pre-tax {FY24_IMPAIRMENT:,}); "
+      f"a beat if > {need_beat:,.0f} ({need_beat/FY24_IMPAIRMENT*100:.0f}%)")
+x = ni24 + FY24_IMPAIRMENT
+print(f"  With no tax effect (fully non-deductible, upper bound): NI ex impairment {x:,} ({pct(x, gni24):+.1f}%, {cls(pct(x, gni24))})")
+t_x = (ibt24 + FY24_IMPAIRMENT - x) / (ibt24 + FY24_IMPAIRMENT) * 100
+print(f"  Tax share ex impairment on that basis: {t_x:.1f}% vs {t_g:.1f}% implied by the guidance")

@@ -35,6 +35,10 @@ Q = {
 SLIDE_SALES_B = {"FY2025 Q1 (Apr-Jun 2025)": 263.8, "FY2025 Q2 (Jul-Sep 2025)": 262.9,
                  "FY2025 Q3 (Oct-Dec 2025)": 273.8, "FY2025 Q4 (Jan-Mar 2026)": 328.1,
                  "FY2026 Q1 (Apr-Jun 2026)": 367.5, "FY2026 Q2 (Jul-Sep 2026)": 477.7}
+# single-quarter gross profit on the same slide p.5 (JPY billion), row A2-192; slide-implied COGS = sales - gross profit
+SLIDE_GP_B = {"FY2025 Q1 (Apr-Jun 2025)": 171.6, "FY2025 Q2 (Jul-Sep 2025)": 163.7,
+              "FY2025 Q3 (Oct-Dec 2025)": 169.7, "FY2025 Q4 (Jan-Mar 2026)": 221.1,
+              "FY2026 Q1 (Apr-Jun 2026)": 255.6, "FY2026 Q2 (Jul-Sep 2026)": 339.8}
 
 if __name__ == "__main__":
     print("Single-quarter net sales and cost of sales, JPY million (derived from YTD where needed)")
@@ -43,3 +47,12 @@ if __name__ == "__main__":
         sl = SLIDE_SALES_B.get(k)
         chk = "" if sl is None else ("OK" if abs(s / 1000 - sl) <= 0.051 else ("OK within 0.1bn rounding (slide likely 526.7-263.8)" if abs(s / 1000 - sl) <= 0.1 else "MISMATCH"))
         print(f"{k:28s} {s:10,d} {c:10,d}  {'' if sl is None else sl:>17}  {chk}")
+    print()
+    print("Cross-check of derived quarterly COGS against slide sales minus slide gross profit (JPY billion, 1-decimal slide rounding):")
+    for k, (s, c) in Q.items():
+        if k in SLIDE_GP_B:
+            imp = SLIDE_SALES_B[k] - SLIDE_GP_B[k]
+            print(f"  {k}: tanshin-derived {c / 1000:.1f} vs slide-implied {imp:.1f} -> diff {c / 1000 - imp:+.2f} "
+                  f"({'OK' if abs(c / 1000 - imp) <= 0.15 else 'CHECK'})")
+    mx = max(abs(Q[k][1] / 1000 - (SLIDE_SALES_B[k] - SLIDE_GP_B[k])) for k in SLIDE_GP_B)
+    print(f"  Largest absolute difference: {mx:.2f} JPY billion")

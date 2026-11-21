@@ -70,6 +70,9 @@ Total: last4 1447.1 (share 100.0%), prior4 977.2, change +48.1%
 RESULT china_share_last4q = 19.4665
 RESULT china_last4q_JPYbn = 281.7
 RESULT total_last4q_JPYbn = 1447.1
+RESULT china_prior4q_JPYbn = 187.5
+RESULT china_yoy_last4q = 50.2400
+RESULT china_share_prior4q = 19.1875
 
 == Annual ship-to (slides) vs sum of quarters ==
 FY2025 Japan: sum of quarters 25.1 vs annual chart 25.1 -> diff +0.0
@@ -139,3 +142,16 @@ FY2025 1H Japan 1.7%, Americas 4.0%, Europe 2.0%, Asia 92.3%
 RESULT asia_share_FY2025_1H = 92.3426
 RESULT asia_yoy_FY2026_1H = 64.2686
 China share stated by management Jul 2026: ~19%
+
+== Semi-annual 'main regions' (basis not stated in the semi-annual report) vs sum of two ship-to slide quarters ==
+FY2026 1H Japan: semi-annual 5.152 bn vs slides 5.1 bn -> diff +0.052
+FY2026 1H Americas: semi-annual 28.869 bn vs slides 28.9 bn -> diff -0.031
+FY2026 1H Europe: semi-annual 12.178 bn vs slides 12.2 bn -> diff -0.022
+FY2026 1H Asia: semi-annual 799.001 bn vs slides 799.0 bn -> diff +0.001
+FY2026 1H Total: semi-annual 845.200 bn vs slides 845.2 bn -> diff +0.000
+FY2025 1H Japan: semi-annual 8.961 bn vs slides 9.0 bn -> diff -0.039
+FY2025 1H Americas: semi-annual 20.874 bn vs slides 20.9 bn -> diff -0.026
+FY2025 1H Europe: semi-annual 10.499 bn vs slides 10.5 bn -> diff -0.001
+FY2025 1H Asia: semi-annual 486.399 bn vs slides 486.3 bn -> diff +0.099
+FY2025 1H Total: semi-annual 526.733 bn vs slides 526.7 bn -> diff +0.033
+RESULT halfyear_vs_slides_max_abs_diff_JPYbn = 0.099

@@ -1,6 +1,8 @@
 """A5 - acquisitions Nov 2021 - Nov 2026: consideration, goodwill, impairments, headroom (JPY million).
 
 Fiscal year ends 31 March.
+Window note (verifier 2026-11-21): a strict five-year window from 21 Nov 2026 starts 21 Nov 2021; R&D Altanova
+closed on 17 Nov 2021, four days earlier. It is kept in the table because it is the largest goodwill item.
 """
 deals = {
     # name: (closing date, consideration, goodwill final, acquisition-related expense, cash outflow line, ids)
@@ -23,6 +25,11 @@ print(f"\nR&D Altanova goodwill PPA revision: {final_gw - prov_gw:,d} ({(final_g
 # impairments recognised in the window (from goodwill/intangibles movement tables)
 imp = {"FY2021": 0, "FY2022": 0, "FY2023": 8998, "FY2024": 21393, "FY2025": 0}   # A5-166, A5-167, A5-168, A5-181, A5-182
 print("\nImpairment losses on goodwill and intangibles by fiscal year:", imp, "total", sum(imp.values()))
+# other impairments in the same fiscal years (property, plant and equipment) - not M&A related
+imp_ppe = {"FY2021": 398}   # A5-231: closed company dormitory, corporate segment (80th report p.114); quarter not stated
+print("Impairment losses on property, plant and equipment:", imp_ppe,
+      "(81st-84th reports state no significant/no PP&E impairment for FY2022-FY2025)")
+print(f"All impairments FY2021-FY2025: {sum(imp.values()) + sum(imp_ppe.values()):,d}, of which goodwill/intangibles (all Essai) {sum(imp.values()):,d}")
 essai_consideration = 33576   # A5-170 (acquired Jan 2020, before the 5-year window)
 print(f"Essai cumulative impairment {imp['FY2023'] + imp['FY2024']:,d} = {(imp['FY2023'] + imp['FY2024'])/essai_consideration*100:.1f}% of its consideration {essai_consideration:,d}")
 
@@ -44,3 +51,10 @@ print(f"Goodwill only / equity at 2026-03-31: {gw_mar26/795726*100:.1f}%")
 
 # partial divestiture FY2025
 print("\nPartial divestiture FY2025 [A5-156, A5-157] (Apr-Sep 2025): proceeds 2,902, gain 2,504 -> implied carrying amount of net assets/costs disposed", 2902 - 2504)
+
+# 1H FY2026 (Apr-Sep 2026): adjustment lines printed in the condensed semi-annual cash-flow statement (SSR85 p.24)
+cf_adj_1h26 = ["Depreciation and amortization 14,556", "Gain on valuation of financial instruments (54,171)",
+               "Trade and other receivables", "Inventories", "Trade and other payables", "Warranty provisions",
+               "Advance receipts", "Retirement benefit liabilities", "Other"]
+print("\n1H FY2026 cash-flow adjustment lines:", cf_adj_1h26)
+print("Impairment line present:", any("mpairment" in x for x in cf_adj_1h26), "-> no impairment shown for 1H FY2026 (A5-224)")

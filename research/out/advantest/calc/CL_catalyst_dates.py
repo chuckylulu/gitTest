@@ -15,13 +15,15 @@ dated = {"Interim dividend payment (CL-093)": dt.date(2026, 12, 1),
          "Remote-access 90-day licence deadline (computed)": eff + dt.timedelta(days=90),
          "Buyback period ends (CL-099)": dt.date(2027, 3, 24),
          "FY2026 / MTP3 end (CL-101)": dt.date(2027, 3, 31),
-         "AGM voting record date per Share Information page (CL-097)": dt.date(2027, 5, 15),
+         "AGM voting-rights record date per 84th ASR p.58/p.199 and Share Information page (CL-133, CL-097)": dt.date(2027, 5, 15),
+         "Teradyne at UBS Global Technology and AI Conference (CL-108)": dt.date(2026, 11, 30),
          "CB maturity (CL-103)": dt.date(2031, 3, 28)}
 for k, d in dated.items():
     print(f"{d}  +{(d-TODAY).days} days  {k}")
 # CL-111 full-year results dates (IR calendar) [F]: pattern only, FY2026 date not committed
 for d in (dt.date(2025, 4, 25), dt.date(2026, 4, 27)):
     print(f"Past full-year results: {d} ({d.strftime('%a')})")
-# CL-097 AGM within 3 months after the 15 May record date [F]; CL-096 84th AGM 2026-07-31 [F]
+# CL-133 (84th ASR p.199) / CL-097: AGM within three months from the 15 May record date [F]; CL-096/CL-134 84th AGM 2026-07-31 [F]
+# CL-095 IR calendar prints 31 Mar as the voting-rights record date: conflicts with CL-133/CL-134/CL-097
 rec = dt.date(2027, 5, 15)
 print(f"85th AGM window (record date + 3 months): {rec} to {rec.replace(month=8)}")

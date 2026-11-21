@@ -23,6 +23,7 @@ SPLIT = {  # annual securities reports, note 9 Inventories: (finished goods, wor
     "31 Mar 2026": (35_244, 69_240, 127_234),   # A2-045, A2-046, A2-047 (total 231,718)
 }
 DAYS_Q = 91.25
+CF_INV_FY2026_1H = -119_541  # A2-181 cash-flow 'Inventories' 6M to 30 Sep 2026 (negative = increase)
 
 if __name__ == "__main__":
     print("DIO = ending inventories / single-quarter cost of sales x 91.25")
@@ -38,6 +39,10 @@ if __name__ == "__main__":
     m, s = INV["FY2025 Q4 (Jan-Mar 2026)"], INV["FY2026 Q2 (Jul-Sep 2026)"]
     print(f"Inventories 31 Mar 2026 -> 30 Sep 2026: {s - m:+,d} ({(s / m - 1) * 100:+.1f}%)")
     print(f"1H FY2026 COGS growth YoY: {(Q['FY2026 Q1 (Apr-Jun 2026)'][1] + Q['FY2026 Q2 (Jul-Sep 2026)'][1]) / (Q['FY2025 Q1 (Apr-Jun 2025)'][1] + Q['FY2025 Q2 (Jul-Sep 2025)'][1]) * 100 - 100:+.1f}%")
+    c0, c1 = Q['FY2025 Q2 (Jul-Sep 2025)'][1], Q['FY2026 Q2 (Jul-Sep 2026)'][1]
+    print(f"FY2026 Q2 single-quarter COGS YoY (Jul-Sep 2026 vs Jul-Sep 2025): {c1:,d} / {c0:,d} -> {(c1 / c0 - 1) * 100:+.1f}%")
+    print(f"Balance-sheet inventory increase 1H FY2026 {s - m:+,d} vs cash-flow inventory increase {-CF_INV_FY2026_1H:+,d} "
+          f"-> difference {s - m + CF_INV_FY2026_1H:+,d} (non-cash items such as FX translation and valuation; not explained by the company)")
 
     print("\nInventory split (annual securities reports, note 9):")
     for d, (fg, wip, rm) in SPLIT.items():

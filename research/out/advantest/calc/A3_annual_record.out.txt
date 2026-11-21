@@ -3,10 +3,11 @@ A3 annual guidance record (JPY million; EPS in JPY). Rule: beat > +2%, in-line w
 ====================================================================================================
 FY2022 (context; Apr 2022-Mar 2023)
   Revision path:
-    2023-01-31 maintained at Q3      : Net sales 550,000; Operating income 170,000; Net income 130,000
+    2023-01-31 maintained at Q3      : Net sales 550,000; Operating income 170,000; Income before tax 174,000; Net income 130,000
   Actual vs guidance:
     Net sales          actual      560,191 | vs initial: not recorded here (context row: Q3-maintained version only) | vs latest 550,000 :   +1.9% in-line (+/-5% band: in-line)
     Operating income   actual      167,687 | vs initial: not recorded here (context row: Q3-maintained version only) | vs latest 170,000 :   -1.4% in-line (+/-5% band: in-line)
+    Income before tax  actual      171,270 | vs initial: not recorded here (context row: Q3-maintained version only) | vs latest 174,000 :   -1.6% in-line (+/-5% band: in-line)
     Net income         actual      130,400 | vs initial: not recorded here (context row: Q3-maintained version only) | vs latest 130,000 :   +0.3% in-line (+/-5% band: in-line)
 
 ====================================================================================================
@@ -79,3 +80,28 @@ Late-period flags: guidance standing after the Q3 release (no later revision fou
   FY2023 (Apr 2023-Mar 2024): guidance of 2024-01-31 (Q3 revision (latest)) -> Operating income -4.0%, Income before tax -5.2%, Net income -3.4%
   FY2024 (Apr 2024-Mar 2025): guidance of 2025-01-29 (Q3 revision (latest)) -> Net income -3.8%, Basic EPS (JPY) -4.0%
   FY2025 (Apr 2025-Mar 2026): guidance of 2026-01-28 (Q3 revision (latest)) -> no metric missed
+
+====================================================================================================
+Company-adjusted measure: core operating income (= operating income excluding other income and expenses;
+results slides A3-308..A3-310). The company gives no guidance for core OI (forecast column shows '-'), so core OI
+is compared with the reported-OI guidance only as a cross-check of the one-off adjustment above (JPY billion).
+  FY2023: core OI 87.1 (17.9% printed) vs latest OI guidance 85.0: +2.5% (beat); reported OI 81.6 (-4.0%); core minus reported OI +5.5
+  FY2024: core OI 249.7 (32.0% printed) vs latest OI guidance 226.0: +10.5% (beat); reported OI 228.2 (+1.0%); core minus reported OI +21.5
+  FY2025: core OI 496.5 (44.0% printed) vs latest OI guidance 454.0: +9.4% (beat); reported OI 499.1 (+9.9%); core minus reported OI -2.6
+  FY2024 core OI 249.7 vs OI ex impairment 249.6 (A3-273): the company's adjusted figure matches the one-off adjustment.
+
+Timing of the named items relative to the latest guidance (documents read; whether guidance included an item is not stated):
+  FY2023 settlement income 3,179 (A3-038): first reported in the 1H tanshin (A3-315), i.e. booked before the 2024-01-31 guidance,
+    so it was already in the 9M base of that guidance; the 'ex impairment and ex settlement' comparison mixes bases. The Q4 impairment
+    and the Q4 DTA benefit came after the guidance date.
+  FY2024 impairment 21,393 (A3-063): booked in Q4, after the 2025-01-29 guidance.
+  FY2025 divestiture gain 2,504 (A3-091): booked in Q1, before the 2026-01-28 guidance; the call-option gain 17,312 (A3-092): Q4, after it.
+
+====================================================================================================
+FY2024 NI vs the January 2025 guidance, given the company's statement that the Q4 impairment losses were not
+deductible for tax purposes (A3-316). The tax reconciliation (83rd ASR note 15) does not itemise the impairment, and the
+intangible-asset part may carry a deferred-tax effect, so the after-tax effect is bounded, not known (JPY million).
+  NI reported 161,177 vs guidance 167,500: -3.8%
+  NI ex impairment is in-line if the after-tax effect >= 2,973 (14% of the pre-tax 21,393); a beat if > 9,673 (45%)
+  With no tax effect (fully non-deductible, upper bound): NI ex impairment 182,570 (+9.0%, beat)
+  Tax share ex impairment on that basis: 25.8% vs 25.6% implied by the guidance

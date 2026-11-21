@@ -20,6 +20,13 @@ SALES_FY25 = 1128.6   # TH-133
 SOC_1H26 = 259.6 + 353.3   # FY2026 Q1 + Q2 SoC, TH-142 + TH-141
 SALES_1H26 = 845.2    # TH-136
 
+DEFINITION = ('Company definition (Investors Guide Oct 2026 p.5, TH-128): "Computing" in "Computing and '
+              'Communications" includes leading-edge devices such as HPC (High Performance Computing) and AI, '
+              'and "Communications" include application processors (APs) for smartphones.')
+print("LABEL: this is a PROXY. It is NOT an AI share, NOT an HBM share and NOT an advanced-packaging share;")
+print("       Advantest does not disclose any of those (TH-126). The category also contains smartphone APs.")
+print(DEFINITION)
+print()
 print("== SoC 'Computing / Communications' sales as a share of total net sales ==")
 for y, (soc, pct, sales, ids) in YEARS.items():
     c, lo, hi = soc * pct / 100, soc * (pct - 2.5) / 100, soc * (pct + 2.5) / 100

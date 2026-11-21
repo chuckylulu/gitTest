@@ -59,6 +59,41 @@ for k, (s, g, o, i, n) in Q.items():
     print(f"{k}: sales {s:.1f}  GM {gm:.1f}% (printed {pg}%)  OM {om:.1f}% (printed {po}%)  IBT margin {pct(i, s):.1f}%  NI margin {nm:.1f}%")
 
 print("\n=== 2. YoY growth, last four quarters vs year-earlier quarter ===")
+# Primary basis (verified 2026-11-21): single quarters in JPY million derived from the YTD tanshin statements,
+# because YoY computed on slide figures rounded to JPY 0.1 bn can differ from the company's printed YoY by 0.1-0.3 pts.
+# YTD inputs (sales, gross profit, operating income, income before tax, net income attributable), JPY million
+YTDM = {
+    "1H FY2024": (329206, 186997, 94859, 92645, 69343),       # A1-322, A1-323, A1-229, A1-486, A1-487
+    "9M FY2024": (547358, 305851, 164126, 163192, 121210),    # A1-482, A1-483, A1-228, A1-484, A1-485
+    "FY2024": (779707, 445085, 228161, 224774, 161177),       # A1-002, A1-006, A1-014, A1-017, A1-019
+    "Q1 FY2025": (263776, 171638, 123952, 121357, 90180),     # A1-324, A1-335, A1-325, A1-336, A1-488
+    "1H FY2025": (526733, 335279, 232435, 230517, 169813),    # A1-102, A1-103, A1-104, A1-105, A1-106
+    "9M FY2025": (800537, 504987, 346006, 344349, 248526),    # A1-116, A1-117, A1-118, A1-119, A1-120
+    "FY2025": (1128610, 726107, 499120, 516720, 375353),      # A1-001, A1-005, A1-013, A1-016, A1-018
+    "Q1 FY2026": (367473, 255553, 189990, 234082, 174780),    # A1-107, A1-108, A1-111, A1-113, A1-114
+    "1H FY2026": (845200, 595378, 456809, 510234, 368083),    # A1-094, A1-095, A1-098, A1-100, A1-101
+}
+
+
+def dsub(a, b):
+    return tuple(x - y for x, y in zip(a, b))
+
+
+QM = {
+    "FY2024 Q3 (Oct-Dec 2024)": dsub(YTDM["9M FY2024"], YTDM["1H FY2024"]),
+    "FY2024 Q4 (Jan-Mar 2025)": dsub(YTDM["FY2024"], YTDM["9M FY2024"]),
+    "FY2025 Q1 (Apr-Jun 2025)": YTDM["Q1 FY2025"],
+    "FY2025 Q2 (Jul-Sep 2025)": dsub(YTDM["1H FY2025"], YTDM["Q1 FY2025"]),
+    "FY2025 Q3 (Oct-Dec 2025)": dsub(YTDM["9M FY2025"], YTDM["1H FY2025"]),
+    "FY2025 Q4 (Jan-Mar 2026)": dsub(YTDM["FY2025"], YTDM["9M FY2025"]),
+    "FY2026 Q1 (Apr-Jun 2026)": YTDM["Q1 FY2026"],
+    "FY2026 Q2 (Jul-Sep 2026)": dsub(YTDM["1H FY2026"], YTDM["Q1 FY2026"]),
+}
+print("2a. Single quarters, JPY million (YTD differencing), vs slide figures (JPY bn):")
+for k, t in QM.items():
+    sl = Q[k]
+    print(f"  {k}: sales {t[0]:,} (slide {sl[0]}); GP {t[1]:,} (slide {sl[1]}); OI {t[2]:,} (slide {sl[2]}); "
+          f"IBT {t[3]:,} (slide {sl[3]}); NI {t[4]:,} (slide {sl[4]}); GM {pct(t[1], t[0]):.2f}%; OM {pct(t[2], t[0]):.2f}%")
 pairs = [("FY2025 Q3 (Oct-Dec 2025)", "FY2024 Q3 (Oct-Dec 2024)"),
          ("FY2025 Q4 (Jan-Mar 2026)", "FY2024 Q4 (Jan-Mar 2025)"),
          ("FY2026 Q1 (Apr-Jun 2026)", "FY2025 Q1 (Apr-Jun 2025)"),
@@ -67,13 +102,20 @@ names = ["sales", "gross profit", "operating income", "income before tax", "net 
 # Q4 EPS by YTD difference (approximation: share counts differ between periods)
 EPS["FY2025 Q4 (Jan-Mar 2026)"] = EPS_FY25 - EPS_9M25
 EPS["FY2024 Q4 (Jan-Mar 2025)"] = EPS_FY24 - EPS_9M24
+print("2b. YoY on JPY million single quarters (primary):")
 for cur, prev in pairs:
-    c, p = Q[cur], Q[prev]
+    c, p = QM[cur], QM[prev]
     parts = [f"{names[j]} {yoy(c[j], p[j]):+.1f}%" for j in range(5)]
     eps_txt = f"basic EPS {EPS[cur]:.2f} vs {EPS[prev]:.2f} = {yoy(EPS[cur], EPS[prev]):+.1f}%"
     gm_chg = pct(c[1], c[0]) - pct(p[1], p[0])
     om_chg = pct(c[2], c[0]) - pct(p[2], p[0])
-    print(f"{cur} vs {prev}: " + "; ".join(parts) + f"; {eps_txt}; GM change {gm_chg:+.1f} pts; OM change {om_chg:+.1f} pts")
+    print(f"  {cur} vs {prev}: " + "; ".join(parts) + f"; {eps_txt}; GM change {gm_chg:+.1f} pts; OM change {om_chg:+.1f} pts")
+print("2c. YoY on slide figures rounded to JPY 0.1 bn (secondary, for comparison only):")
+for cur, prev in pairs:
+    c, p = Q[cur], Q[prev]
+    print(f"  {cur}: " + "; ".join(f"{names[j]} {yoy(c[j], p[j]):+.1f}%" for j in range(5)))
+print("2d. Company-printed YoY: FY2026 Q2 sales +81.7% (A1-067), GP +107.7% (A1-499), OI +146.0% (A1-068), NI +142.7% (A1-500); "
+      "FY2025 Q4 sales +41.2% (A1-083), OI +139.1% (A1-501), NI +217.3% (A1-502)")
 print(f"Derived Q4 basic EPS (FY minus 9M, approximate): FY2025 Q4 {EPS_FY25 - EPS_9M25:.2f}; FY2024 Q4 {EPS_FY24 - EPS_9M24:.2f}")
 
 print("\n=== 3. Full year FY2025 (Apr 2025-Mar 2026) vs FY2024, JPY million ===")
@@ -119,7 +161,12 @@ ltm = {k: FY25[k] + H26[k] - H25[k] for k in ["sales", "gp", "oi", "ibt", "ni"]}
 ltm_prev = {k: FY24[k] + H25[k] - H24[k] for k in ["sales", "gp", "oi"]}
 print(f"LTM sales {ltm['sales']:,}; prior LTM (Oct 2024-Sep 2025) {ltm_prev['sales']:,}; YoY {yoy(ltm['sales'], ltm_prev['sales']):+.1f}%")
 print(f"LTM gross profit {ltm['gp']:,} (GM {pct(ltm['gp'], ltm['sales']):.1f}%); LTM operating income {ltm['oi']:,} (OM {pct(ltm['oi'], ltm['sales']):.1f}%)")
-print(f"LTM income before tax {ltm['ibt']:,}; LTM net income attributable {ltm['ni']:,}")
+print(f"LTM income before tax {ltm['ibt']:,} ({pct(ltm['ibt'], ltm['sales']):.1f}% of sales); LTM net income attributable {ltm['ni']:,} ({pct(ltm['ni'], ltm['sales']):.1f}%)")
+CALL, VAL_1H = 17312, 54171  # A1-309 (recognised FY2025 Q4, inside the LTM window), A1-313 (1H FY2026)
+print(f"LTM income before tax ex call-option gain {ltm['ibt'] - CALL:,} ({pct(ltm['ibt'] - CALL, ltm['sales']):.1f}%); "
+      f"ex call-option gain and 1H FY2026 valuation gains {ltm['ibt'] - CALL - VAL_1H:,} ({pct(ltm['ibt'] - CALL - VAL_1H, ltm['sales']):.1f}%)")
+print("LTM operating income / gross profit ex one-offs: not computable (FY2025 Q4 one-off SG&A and FY2026 Q1/1H inventory write-down reversal have no disclosed amount); "
+      "FY2025 Q1 divestiture gain (2,504) falls outside the LTM window")
 print(f"Prior LTM GM {pct(ltm_prev['gp'], ltm_prev['sales']):.1f}%; prior LTM OM {pct(ltm_prev['oi'], ltm_prev['sales']):.1f}%")
 q4 = sum(Q[k][0] for k, _ in pairs)
 print(f"Check: sum of four single quarters from slides = {sum(Q[c][0] for c, _ in pairs):.1f} bn")

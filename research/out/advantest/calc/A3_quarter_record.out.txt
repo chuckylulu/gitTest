@@ -112,6 +112,11 @@ Cross-check: slide-printed single-quarter actuals vs tanshin YTD differences (JP
 
 ====================================================================================================
 Direction of the full-year guidance change announced at each window quarter's results (A3 rows of each version)
+  [context] FY2023 Q1 results (2023-07-26): sales +0.0%, OI +0.0% -> maintained
+  [context] FY2023 Q2 results (2023-10-31): sales -2.1%, OI -23.8% -> cut
+  [context] FY2023 Q3 results (2024-01-31): sales +2.1%, OI +6.2% -> raised
+  [context] FY2024 Q1 results (2024-07-31): sales +14.3%, OI +53.3% -> raised
+  [context] FY2024 Q2 results (2024-10-30): sales +6.7%, OI +19.6% -> raised
   FY2024 Q3 results (2025-01-29): sales +15.6%, OI +37.0% -> raised
   FY2025 Q1 results (2025-07-29): sales +10.6%, OI +24.0% -> raised
   FY2025 Q2 results (2025-10-28): sales +13.8%, OI +24.7% -> raised
@@ -119,6 +124,7 @@ Direction of the full-year guidance change announced at each window quarter's re
   FY2026 Q1 results (2026-07-29): sales +20.7%, OI +34.8% -> raised
   FY2026 Q2 results (2026-10-28): sales +8.7%, OI +14.3% -> raised
   Raised at 6 of 6 in-year releases in the window (Q4 releases set a new fiscal year's guidance and are not counted).
+  Including the context releases: the last 9 in-year releases in a row raised sales and OI guidance (from FY2023 Q3 results (2024-01-31) to FY2026 Q2 results (2026-10-28)); last cut: FY2023 Q2 results (2023-10-31).
   Context: FY2023 initial guidance was maintained at Q1 (2023-07-26, A3-022) and cut at Q2 (2023-10-31): sales -2.1%, OI -23.8% (A3_annual_record).
 
 ====================================================================================================
@@ -132,3 +138,15 @@ pre-tax amount (no tax effect assumed) - an arithmetic bound, not an estimate of
   FY2026 Q2 valuation gains = 54.171 - 41.075 = 13.096; NI less full pre-tax gains 180.2 vs guidance 163.2: +10.4% (beat) - beat holds
   FY2025 Q2 OI: management named a one-time SG&A charge (A3-093) without an amount -> cannot adjust; reported OI beat +12.6% stands.
   FY2026 Q2 OI: management named a one-time inventory write-down reversal benefit in 1H (A3-229) without an amount -> cannot adjust.
+
+Additional one-off sensitivity (verifier, 2026-11-21). Same conventions as above (JPY billion).
+  [context] FY2023 Q2 OI less settlement income 17.8 vs Q2 guidance 22.3: -20.1% (miss); reported -5.8% miss either way
+  [context] FY2023 2H OI ex impairment 55.36 vs 2H guidance 44.7: +23.8% (beat); reported +3.7%
+  [context] FY2023 2H NI less approx. DTA benefit 32.55 vs 2H guidance 34.1: -4.5% (miss); reported +6.6%; impairment after-tax effect not disclosed
+  [context] FY2023 Q4 NI less approx. DTA benefit 11.4 vs Q4 guidance 17.4: -34.5% (miss); adding back the full pre-tax impairment as well (no tax effect) gives 20.4 (+17.2%) - an arithmetic bound only
+  FY2024 Q3 slot (2H FY2024) OI ex impairment 154.69 vs 2H guidance 70.1: +120.7% (beat); 2H OPM reported 29.6%, ex impairment 34.3%; NI upper bound (no tax effect) 113.23 (+114.9%) - beat either way
+  FY2025 Q1 slot (FY2025 vs initial) OI less divestiture gain 496.62 vs 242.0: +105.2% (beat); NI less full pre-tax call-option and divestiture gains 355.54 vs 179.0: +98.6% - beat either way; Q2 one-time SG&A charge amount not disclosed
+  FY2025 Q3 slot (2H FY2025) NI less full pre-tax call-option gain 188.23 vs 2H guidance 105.2: +78.9% (beat); OI has no named item with an amount in 2H (2H OPM 44.3%)
+  FY2026 Q1 slot (provisional) 1H NI less full pre-tax valuation gains 313.91 = 67.4% of initial FY NI guidance (reported 79.1%); 1H OPM 54.0% includes an inventory write-down reversal of undisclosed amount
+  FY2026 Q2 OPM reported 55.9%; Q2-only share of the 1H inventory write-down reversal not disclosed -> no ex-item figure
+  FY2024 Q4 NI ex impairment: in-line if the after-tax effect >= 5.4 (25% of 21.393), beat if > 7.2 (34%); company says the impairment losses were not tax-deductible (A3-316), which points to the upper end

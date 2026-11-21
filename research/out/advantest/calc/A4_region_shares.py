@@ -167,6 +167,10 @@ l4c = sum(Q[q]["China"] for q in l4); l4t = sum(Q[q]["Total"] for q in l4)
 print(f"RESULT china_share_last4q = {pct(l4c, l4t):.4f}")
 print(f"RESULT china_last4q_JPYbn = {l4c:.1f}")
 print(f"RESULT total_last4q_JPYbn = {l4t:.1f}")
+p4c = sum(Q[q]["China"] for q in p4); p4t = sum(Q[q]["Total"] for q in p4)
+print(f"RESULT china_prior4q_JPYbn = {p4c:.1f}")  # Oct 2024-Sep 2025
+print(f"RESULT china_yoy_last4q = {pct(l4c - p4c, p4c):.4f}")  # Oct 2025-Sep 2026 vs Oct 2024-Sep 2025
+print(f"RESULT china_share_prior4q = {pct(p4c, p4t):.4f}")
 
 print()
 print("== Annual ship-to (slides) vs sum of quarters ==")
@@ -215,3 +219,16 @@ for h, d in SA.items():
     print(f"RESULT asia_share_{h.replace(' ', '_')} = {pct(d['Asia'], d['Total']):.4f}")
 print(f"RESULT asia_yoy_FY2026_1H = {pct(SA['FY2026 1H']['Asia'] - SA['FY2025 1H']['Asia'], SA['FY2025 1H']['Asia']):.4f}")
 print(f"China share stated by management Jul 2026: ~{CHINA_PCT_STATED_JUL2026}%")
+
+print()
+print("== Semi-annual 'main regions' (basis not stated in the semi-annual report) vs sum of two ship-to slide quarters ==")
+HALVES = {"FY2026 1H": ["FY2026 Q1", "FY2026 Q2"], "FY2025 1H": ["FY2025 Q1", "FY2025 Q2"]}
+maxdiff = 0.0
+for h, qs in HALVES.items():
+    sl = {r: sum(Q[q][r] for q in qs) for r in REGIONS7 + ["Total"]}
+    sl["Asia"] = sl["S. Korea"] + sl["Taiwan"] + sl["China"] + sl["Others"]
+    for r in ["Japan", "Americas", "Europe", "Asia", "Total"]:
+        d = SA[h][r] / 1000.0 - sl[r]
+        maxdiff = max(maxdiff, abs(d))
+        print(f"{h} {r}: semi-annual {SA[h][r] / 1000.0:.3f} bn vs slides {sl[r]:.1f} bn -> diff {d:+.3f}")
+print(f"RESULT halfyear_vs_slides_max_abs_diff_JPYbn = {maxdiff:.3f}")

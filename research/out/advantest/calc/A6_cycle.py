@@ -274,6 +274,21 @@ WSTS_CY2018 = 469  # A6-266
 WSTS_CY2019 = 412  # A6-267
 WSTS_CY2022 = 574  # A6-268
 WSTS_CY2023 = 527  # A6-269
+# --- added by the A6 verification pass (2026-11-21) ---
+ONEOFF_FY2018_Q4_INV_BN = 2  # A6-314 (management, Q&A: inventory valuation loss "approximately 2 billion yen in 4Q")
+ONEOFF_FY2018_9M_TOTAL_BN = 3.5  # A6-316 (9M FY2018 = Apr-Dec 2018 one-time profit: fixed-asset sale + pension transition)
+INV_VAL_LOSS_FY2018_M = 6324  # A6-317 (inventory valuation losses recognised as expense, full year)
+INV_VAL_LOSS_FY2019_M = 3468  # A6-318
+INV_VAL_LOSS_FY2020_M = 3307  # A6-319
+INV_VAL_LOSS_FY2021_M = 2728  # A6-320
+INV_VAL_LOSS_FY2022_M = 6344  # A6-321
+INV_VAL_LOSS_FY2023_M = 7347  # A6-322
+QOQ_PRINTED_FY2018_Q4_SALES_PCT = -14.6  # A6-323 (slides: FY18 4Q vs 3Q, printed with a triangle = decrease)
+QOQ_PRINTED_FY2018_Q4_OI_PCT = -50.8  # A6-324
+QOQ_PRINTED_FY2018_Q4_OM_PTS = -11.7  # A6-325
+QOQ_PRINTED_FY2023_Q1_SALES_PCT = -31.3  # A6-326 (slides: FY23 1Q vs FY22 4Q)
+QOQ_PRINTED_FY2023_Q1_OI_PCT = -63.0  # A6-327
+QOQ_PRINTED_FY2023_Q1_OM_PTS = -12.1  # A6-328
 
 # =====================================================================================================================
 # Computation (everything below uses only the constants above)
@@ -319,19 +334,23 @@ for y in range(2015, 2027):
 idx = {r["fq"]: i for i, r in enumerate(quarters)}
 
 # ---------------------------------------------------------------- 2. one-off items named by management (sign: + = gain inside reported OI, - = charge)
+# third element: "inv" = inventory write-down / valuation loss named by management (such losses recur every year, see
+# INV_VAL_LOSS_*), "other" = any other named item. Margins are shown ex all named items and ex "other" items only.
 ONEOFFS = {
-    "FY2017 Q3": [(-ONEOFF_FY2017_Q3_INV_WRITEDOWN_BN * 1000, "inventory write-down, nanotechnology (~3.3 bn)")],
-    "FY2018 Q2": [(+ONEOFF_FY2018_1H_FIXEDASSET_BN * 1000, "gain on sale of fixed assets (~1.0 bn; named for 1H, placed in Q2 by quarterly other income Q1 0.1 / Q2 1.0 bn)")],
-    "FY2018 Q3": [(+ONEOFF_FY2018_Q3_PENSION_BN * 1000, "pension transfer to defined contribution (~2.5 bn)")],
-    "FY2020 Q2": [(+ONEOFF_FY2020_Q2_PROBECARD_M, "gain on transfer of probe card business (30 Jul 2020)")],
-    "FY2020 Q4": [(+ONEOFF_FY2020_DE_PENSION_M, "pension plan transfer, Advantest Europe GmbH (named for FY; placed in Q4 by quarterly other income-expenses Q2 2.6 / Q4 5.7 bn)")],
-    "FY2022 Q4": [(-ONEOFF_FY2022_Q4_INV_BN * 1000, "inventory valuation losses (~3 bn, Q&A)")],
-    "FY2023 Q2": [(+ONEOFF_FY2023_1H_SETTLEMENT_M, "settlement income (named for 1H; placed in Q2 by quarterly other income-expenses Q1 0.2 / Q2 3.2 bn)")],
-    "FY2023 Q4": [(-ONEOFF_FY2023_Q4_IMPAIRMENT_M, "goodwill impairment, Essai (SLT)")],
-    "FY2024 Q4": [(-ONEOFF_FY2024_Q4_IMPAIRMENT_M, "goodwill and intangibles impairment, Essai (SLT)")],
-    "FY2025 Q1": [(+ONEOFF_FY2025_Q1_DIVEST_M, "gain on partial divestiture of a business")],
+    "FY2017 Q3": [(-ONEOFF_FY2017_Q3_INV_WRITEDOWN_BN * 1000, "inventory write-down, nanotechnology (~3.3 bn)", "inv")],
+    "FY2018 Q2": [(+ONEOFF_FY2018_1H_FIXEDASSET_BN * 1000, "gain on sale of fixed assets (~1.0 bn; named for 1H, placed in Q2 by quarterly other income Q1 0.1 / Q2 1.0 bn)", "other")],
+    "FY2018 Q3": [(+ONEOFF_FY2018_Q3_PENSION_BN * 1000, "pension transfer to defined contribution (~2.5 bn)", "other")],
+    "FY2018 Q4": [(-ONEOFF_FY2018_Q4_INV_BN * 1000, "inventory valuation loss (~2 bn, Q&A)", "inv")],
+    "FY2020 Q2": [(+ONEOFF_FY2020_Q2_PROBECARD_M, "gain on transfer of probe card business (30 Jul 2020)", "other")],
+    "FY2020 Q4": [(+ONEOFF_FY2020_DE_PENSION_M, "pension plan transfer, Advantest Europe GmbH (named for FY; placed in Q4 by quarterly other income-expenses Q2 2.6 / Q4 5.7 bn)", "other")],
+    "FY2022 Q4": [(-ONEOFF_FY2022_Q4_INV_BN * 1000, "inventory valuation losses (~3 bn, Q&A)", "inv")],
+    "FY2023 Q2": [(+ONEOFF_FY2023_1H_SETTLEMENT_M, "settlement income (named for 1H; placed in Q2 by quarterly other income-expenses Q1 0.2 / Q2 3.2 bn)", "other")],
+    "FY2023 Q4": [(-ONEOFF_FY2023_Q4_IMPAIRMENT_M, "goodwill impairment, Essai (SLT)", "other")],
+    "FY2024 Q4": [(-ONEOFF_FY2024_Q4_IMPAIRMENT_M, "goodwill and intangibles impairment, Essai (SLT)", "other")],
+    "FY2025 Q1": [(+ONEOFF_FY2025_Q1_DIVEST_M, "gain on partial divestiture of a business", "other")],
 }
 UNQUANTIFIED = {
+    "FY2019 Q1": "inventory valuation losses named (milder than in FY2018 Q4), amount not disclosed (A6-315)",
     "FY2019 Q3": "one-time amortisation expense on transferred SLT business (amount not disclosed)",
     "FY2025 Q4": "one-off SG&A expenses named by management, amount not disclosed (A1-311)",
     "FY2026 Q1": "reversal of inventory write-down named by management, amount not disclosed (A1-315)",
@@ -343,16 +362,20 @@ assert OTHER_NET_BN_FY2020_Q4 >= ONEOFF_FY2020_DE_PENSION_M / 1000 - 0.05 and OT
 assert OTHER_NET_BN_FY2023_Q2 >= ONEOFF_FY2023_1H_SETTLEMENT_M / 1000 - 0.05 and OTHER_NET_BN_FY2023_Q1 < 0.5
 # FY2018: 3.5 bn total one-off profit = 2.5 bn pension (Q3) + 1.0 bn fixed-asset gain (1H)
 assert abs(ONEOFF_FY2018_TOTAL_BN - ONEOFF_FY2018_Q3_PENSION_BN - ONEOFF_FY2018_1H_FIXEDASSET_BN) < 1e-9
+# the FY2019 Q3 release puts the whole 3.5 bn inside Apr-Dec 2018 (9M), so none of it falls in FY2018 Q4
+assert abs(ONEOFF_FY2018_9M_TOTAL_BN - ONEOFF_FY2018_TOTAL_BN) < 1e-9
 
 for r in quarters:
     items = ONEOFFS.get(r["fq"], [])
-    r["oneoff"] = int(round(sum(a for a, _ in items)))
-    r["oneoff_note"] = "; ".join(n for _, n in items)
+    r["oneoff"] = int(round(sum(a for a, _, _ in items)))
+    r["oneoff_other"] = int(round(sum(a for a, _, k in items if k == "other")))
+    r["oneoff_note"] = "; ".join(n for _, n, _ in items)
     if r["fq"] in UNQUANTIFIED:
         r["oneoff_note"] = (r["oneoff_note"] + "; " if r["oneoff_note"] else "") + UNQUANTIFIED[r["fq"]]
     r["oi_ex"] = r["oi"] - r["oneoff"]
     r["om"] = pct(r["oi"], r["sales"])
     r["om_ex"] = pct(r["oi_ex"], r["sales"])
+    r["om_ex_other"] = pct(r["oi"] - r["oneoff_other"], r["sales"])
 
 # ---------------------------------------------------------------- 3. cross-check against single-quarter figures the company printed (JPY bn, 1 dp)
 mism = []
@@ -483,6 +506,7 @@ for n, e in enumerate(episodes, 1):
         q_decline_pct=round(pct(t["sales"] - p["sales"], p["sales"]), 1),
         om_at_q_peak=round(p["om"], 1), om_at_q_trough=round(t["om"], 1), om_pp_change_peak_to_trough=round(t["om"] - p["om"], 1),
         om_ex_at_q_peak=round(p["om_ex"], 1), om_ex_at_q_trough=round(t["om_ex"], 1), om_ex_pp_change=round(t["om_ex"] - p["om_ex"], 1),
+        om_exo_at_q_peak=round(p["om_ex_other"], 1), om_exo_at_q_trough=round(t["om_ex_other"], 1), om_exo_pp_change=round(t["om_ex_other"] - p["om_ex_other"], 1),
         oi_q_peak=p["oi"], oi_q_trough=t["oi"], oi_decline_pct=round(pct(t["oi"] - p["oi"], p["oi"]), 1),
         oi_ex_q_peak=p["oi_ex"], oi_ex_q_trough=t["oi_ex"], oi_ex_decline_pct=round(pct(t["oi_ex"] - p["oi_ex"], p["oi_ex"]), 1),
         om_max_q=Q[e["om_max"]]["fq"], om_max=round(Q[e["om_max"]]["om"], 1), om_min_q=Q[e["om_min"]]["fq"], om_min=round(Q[e["om_min"]]["om"], 1),
@@ -501,7 +525,8 @@ for n, e in enumerate(episodes, 1):
     print(f"   single-quarter peak {p['fq']} ({p['cal']}) sales {p['sales']:,}  -> trough {t['fq']} ({t['cal']}) sales {t['sales']:,}: {m['q_decline_pct']:+.1f}%")
     print(f"   operating income {p['oi']:,} -> {t['oi']:,}: {m['oi_decline_pct']:+.1f}%; ex named one-offs {p['oi_ex']:,} -> {t['oi_ex']:,}: {m['oi_ex_decline_pct']:+.1f}%")
     print(f"   operating margin at peak {m['om_at_q_peak']:.1f}% -> at trough {m['om_at_q_trough']:.1f}%: {m['om_pp_change_peak_to_trough']:+.1f} pp"
-          f"   | ex one-offs {m['om_ex_at_q_peak']:.1f}% -> {m['om_ex_at_q_trough']:.1f}%: {m['om_ex_pp_change']:+.1f} pp")
+          f"   | ex one-offs {m['om_ex_at_q_peak']:.1f}% -> {m['om_ex_at_q_trough']:.1f}%: {m['om_ex_pp_change']:+.1f} pp"
+          f"   | ex named items other than inventory losses {m['om_exo_at_q_peak']:.1f}% -> {m['om_exo_at_q_trough']:.1f}%: {m['om_exo_pp_change']:+.1f} pp")
     print(f"   highest quarterly margin up to the sales trough {m['om_max_q']} {m['om_max']:.1f}% -> lowest after it {m['om_min_q']} {m['om_min']:.1f}%: {m['om_max_to_min_pp']:+.1f} pp"
           f"   | ex one-offs {m['omx_max_q']} {m['omx_max']:.1f}% -> {m['omx_min_q']} {m['omx_min']:.1f}%: {m['omx_max_to_min_pp']:+.1f} pp")
     print(f"   duration: {dur_pt} quarter(s) peak to trough; quarterly sales regained the peak in {m['regain_q']} ({dur_rec} quarters after the peak)")
@@ -612,6 +637,46 @@ for lab, k in [("Memory tester market (USD m)", "MEM_MKT"), ("SoC tester market 
 last = quarters[-1]
 metrics["latest"] = dict(fq=last["fq"], sales=last["sales"], oi=last["oi"], om=round(last["om"], 1), t4q_s=last["t4q_s"], t4q_om=round(last["t4q_om"], 1))
 print(f"\n8. Latest quarter {last['fq']} ({last['cal']}): sales {last['sales']:,}, OI {last['oi']:,}, OM {last['om']:.1f}%; T4Q sales {last['t4q_s']:,}, T4Q OM {last['t4q_om']:.1f}%")
+
+# ---------------------------------------------------------------- 11. (verification pass) threshold sensitivity of the episode selection
+print("\n9. Threshold sensitivity of the T4Q definition (which episodes a given threshold selects)")
+depths = sorted(((-e["depth"], quarters[t4_off + e["peak"]]["fq"]) for e in t4_eps))
+for d, pk in depths:
+    print(f"   T4Q drawdown from peak {pk}: {d:.2f}%")
+cuts = [0.0] + [d for d, _ in depths]
+for lo, hi in zip(cuts, cuts[1:]):
+    sel = sorted((pk for d, pk in depths if d >= hi), key=lambda k: idx[k])  # chronological
+    print(f"   threshold in ({lo:.2f}%, {hi:.2f}%]: selects T4Q peaks {sel}; last two = {sel[-2:] if len(sel) >= 2 else sel}")
+print(f"   above {cuts[-1]:.2f}%: none")
+ep2018 = next(d for d, pk in depths if pk == "FY2018 Q3")
+metrics["threshold"] = dict(depths={pk: round(d, 2) for d, pk in depths}, margin_2018_over_5pct=round(ep2018 - DEF_T4Q, 2))
+print(f"   2018-19 clears the {DEF_T4Q:.0f}% threshold by {ep2018 - DEF_T4Q:.2f} pp")
+
+# ---------------------------------------------------------------- 12. (verification pass) inventory valuation losses: named quarterly amounts vs annual totals
+print("\n10. Inventory valuation losses recognised as expense (annual securities reports) vs amounts management named for one quarter")
+INV = {2018: INV_VAL_LOSS_FY2018_M, 2019: INV_VAL_LOSS_FY2019_M, 2020: INV_VAL_LOSS_FY2020_M, 2021: INV_VAL_LOSS_FY2021_M,
+       2022: INV_VAL_LOSS_FY2022_M, 2023: INV_VAL_LOSS_FY2023_M}
+for y, v in INV.items():
+    s = G[f"S_YTD_FY{y}_FY"]
+    print(f"   FY{y}: {v:,} (= {pct(v, s):.1f}% of net sales {s:,})")
+sh18 = pct(ONEOFF_FY2018_Q4_INV_BN * 1000, INV_VAL_LOSS_FY2018_M)
+sh22 = pct(ONEOFF_FY2022_Q4_INV_BN * 1000, INV_VAL_LOSS_FY2022_M)
+print(f"   FY2018 Q4 named ~{ONEOFF_FY2018_Q4_INV_BN} bn = {sh18:.0f}% of the FY2018 total; FY2022 Q4 named ~{ONEOFF_FY2022_Q4_INV_BN} bn = {sh22:.0f}% of the FY2022 total;"
+      f" FY2023 total {INV_VAL_LOSS_FY2023_M:,} with no quarterly amount named")
+metrics["inventory_losses"] = dict(annual={f"FY{y}": v for y, v in INV.items()}, fy2018_q4_share_pct=round(sh18), fy2022_q4_share_pct=round(sh22),
+                                   min_annual=min(INV.values()), max_annual=max(INV.values()))
+
+# ---------------------------------------------------------------- 13. (verification pass) second-document check: company-printed QoQ changes on the briefing slides
+print("\n11. Peak-to-trough quarter changes vs the QoQ changes printed on the company's briefing slides")
+chk = []
+for lab, pk, tr, ps, po, pm in [("2018-19", "FY2018 Q3", "FY2018 Q4", QOQ_PRINTED_FY2018_Q4_SALES_PCT, QOQ_PRINTED_FY2018_Q4_OI_PCT, QOQ_PRINTED_FY2018_Q4_OM_PTS),
+                                ("2022-23", "FY2022 Q4", "FY2023 Q1", QOQ_PRINTED_FY2023_Q1_SALES_PCT, QOQ_PRINTED_FY2023_Q1_OI_PCT, QOQ_PRINTED_FY2023_Q1_OM_PTS)]:
+    P, T = quarters[idx[pk]], quarters[idx[tr]]
+    cs, co, cm = pct(T["sales"] - P["sales"], P["sales"]), pct(T["oi"] - P["oi"], P["oi"]), T["om"] - P["om"]
+    ok = abs(cs - ps) <= 0.05 and abs(co - po) <= 0.05 and abs(round(cm, 1) - pm) <= 0.05
+    chk.append(ok)
+    print(f"   {lab} {pk}->{tr}: computed sales {cs:+.1f}% / OI {co:+.1f}% / OM {cm:+.1f} pp; printed {ps:+.1f}% / {po:+.1f}% / {pm:+.1f} pts -> {'MATCH' if ok else 'DIFFERENT'}")
+metrics["qoq_check_differences"] = chk.count(False)
 
 # ---------------------------------------------------------------- outputs
 with open(os.path.join(HERE, "A6_quarterly_series.csv"), "w", newline="", encoding="utf-8") as fh:

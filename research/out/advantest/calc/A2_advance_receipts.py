@@ -13,6 +13,8 @@ CL_APR2024 = 18_233   # A2-123 contract liabilities (advance receipts) 1 Apr 202
 CL_MAR2025 = 28_798   # A2-124 31 Mar 2025
 CL_MAR2026 = 40_143   # A2-125 31 Mar 2026
 CF_FY2024 = 11_099    # A2-142 cash-flow 'Advance receipts', FY2024 (12M)
+REV_FROM_OPENING_CL = {"FY2024": 15_591,   # A2-126 revenue recognized in FY2024 from the 1 Apr 2024 balance
+                       "FY2025": 24_857}   # A2-127 revenue recognized in FY2025 from the 31 Mar 2025 balance
 CF_YTD = {            # cash-flow 'Advance receipts' YTD
     "FY2025 Q1": 1_377,   # A2-136 3M to 30 Jun 2025
     "FY2025 1H": 9_571,   # A2-137 6M to 30 Sep 2025
@@ -61,6 +63,8 @@ if __name__ == "__main__":
         d = OCL[keys[i]] - OCL[keys[i - 1]]
         print(f"  {keys[i - 1]} -> {keys[i]}: OCL {d:+,d}; advance-receipts CF {q[qk[i - 1]]:+,d}")
     print(f"  31 Mar 2026 -> 30 Sep 2026: OCL {OCL['30 Sep 2026'] - OCL['31 Mar 2026']:+,d}; advance-receipts CF 1H {CF_YTD['FY2026 1H']:+,d}")
+    same = sum(1 for i in range(1, len(keys)) if (OCL[keys[i]] - OCL[keys[i - 1]] > 0) == (q[qk[i - 1]] > 0))
+    print(f"  Quarters in which the OCL change and the advance-receipts cash flow have the same sign: {same} of {len(keys) - 1}")
     print()
     print(f"FY2026 Q1 advance-receipts cash inflow vs 31 Mar 2026 contract-liability balance: "
           f"{CF_YTD['FY2026 Q1']:,d} / {CL_MAR2026:,d} = {CF_YTD['FY2026 Q1'] / CL_MAR2026 * 100:.1f}%")
@@ -70,3 +74,7 @@ if __name__ == "__main__":
     print("Contract liabilities as share of the 'Other current liabilities' line at fiscal year-ends:")
     print(f"  31 Mar 2025: {CL_MAR2025:,d} / {OCL['31 Mar 2025']:,d} = {CL_MAR2025 / OCL['31 Mar 2025'] * 100:.1f}%")
     print(f"  31 Mar 2026: {CL_MAR2026:,d} / {OCL['31 Mar 2026']:,d} = {CL_MAR2026 / OCL['31 Mar 2026'] * 100:.1f}%")
+    print()
+    print("Share of the opening contract-liability balance recognized as revenue within the fiscal year:")
+    print(f"  FY2024: {REV_FROM_OPENING_CL['FY2024']:,d} / {CL_APR2024:,d} = {REV_FROM_OPENING_CL['FY2024'] / CL_APR2024 * 100:.1f}%")
+    print(f"  FY2025: {REV_FROM_OPENING_CL['FY2025']:,d} / {CL_MAR2025:,d} = {REV_FROM_OPENING_CL['FY2025'] / CL_MAR2025 * 100:.1f}%")

@@ -2,9 +2,11 @@
 
 Fiscal year ends 31 March. FY2024 = Apr 2024-Mar 2025; FY2025 = Apr 2025-Mar 2026; FY2026 = Apr 2026-Mar 2027.
 Company definition: total return ratio = (dividend + share repurchase) / consolidated net income (A5-092).
-Dividends are counted by record date within the fiscal year (interim + year-end) - an assumption; the
-company does not state whether it counts dividends by record date or payment date.
+Dividends are counted by record date within the fiscal year (interim + year-end). The company does not
+state its timing convention in words; the check at the end compares record-date and payment-date bases with
+the ratios the company itself printed for FY2024 (49%) and FY2025 (42%) (A5-225).
 Buybacks are counted in the fiscal year in which shares were acquired (yen, excluding commissions).
+Verified 2026-11-21 (A5 verifier): inputs re-read on the cited pages; payment-date check and one-off list added.
 """
 
 YEN = 1e6  # yen per JPY million
@@ -26,6 +28,7 @@ for k, (sh_a, y_a, sh_e, y_e, ids) in programs.items():
 
 s = OCT25_FY2025[0] + OCT25_1H_FY2026[0]; y = OCT25_FY2025[1] + OCT25_1H_FY2026[1]
 print(f"Oct-2025 split check: shares {s:,d} vs {programs['Oct-2025 (FY2025-26)'][2]:,d}; yen {y:,d} vs {programs['Oct-2025 (FY2025-26)'][3]:,d} -> match={s == programs['Oct-2025 (FY2025-26)'][2] and y == programs['Oct-2025 (FY2025-26)'][3]}")
+print(f"Oct-2025 programme total (FY2025 + 1H FY2026): {y / YEN:,.1f} JPY million")
 
 buyback_by_fy = {
     "FY2023": 0.0,                                               # A5-093: no board-resolved acquisition in FY2023
@@ -68,3 +71,36 @@ print(f"\nTreasury share cancellation 6 Feb 2026: {cancelled:,d} of {before:,d} 
 dps = {"FY2022": 33.75, "FY2023": 34.25, "FY2024": 39.00, "FY2025": 59.00}   # A5-115..A5-118 (split-adjusted)
 print("\nDPS (split-adjusted, yen):", dps)
 print(f"  FY2025 vs FY2024 DPS change: {(dps['FY2025']/dps['FY2024']-1)*100:.1f}%;  FY2026 interim 49 vs FY2025 interim 29: {(49/29-1)*100:.1f}%")
+
+# ---- check of the dividend-timing convention against the company's own ratios (A5-225, A5-226) ----
+company_trr = {"FY2024": 49, "FY2025": 42}            # A5-225: FY2025 Q4 slides p.5 (rounded to whole %)
+company_buyback_bn = {"FY2024": 50.0, "FY2025": 114.2}  # A5-226: same slide, JPY billion
+div_by_payment = {                                     # dividends by effective (payment) date inside the FY
+    "FY2024": 13291 + 14047,   # A5-235 FY2023 year-end paid 7 Jun 2024 + A5-110 FY2024 interim paid 2 Dec 2024
+    "FY2025": 14674 + 21094,   # A5-111 FY2024 year-end paid 6 Jun 2025 + A5-112 FY2025 interim paid 1 Dec 2025
+}
+print("\nDividend-timing check vs company-printed total return ratio:")
+for k in ["FY2024", "FY2025"]:
+    rec = (div_by_fy[k] + buyback_by_fy[k]) / ni[k] * 100
+    pay = (div_by_payment[k] + buyback_by_fy[k]) / ni[k] * 100
+    print(f"  {k}: record-date basis {rec:.1f}% (rounds to {round(rec)}%), payment-date basis {pay:.1f}% (rounds to {round(pay)}%); "
+          f"company {company_trr[k]}% -> record-date matches={round(rec) == company_trr[k]}, payment-date matches={round(pay) == company_trr[k]}")
+    print(f"     buybacks calc {buyback_by_fy[k]/1000:.1f}bn vs company {company_buyback_bn[k]}bn")
+print("  Cash-flow 'purchases of treasury shares' FY2025 114,328 (A5-122) exceeds programme total 114,228.3 by",
+      f"{114328 - buyback_by_fy['FY2025']:,.1f}; the company does not itemise the difference.")
+
+# ---- one-off items inside the net income used as denominator (CLAUDE.md one-off rule) ----
+oneoffs = {
+    "FY2024": [("Essai goodwill/intangible impairment, other expenses (pre-tax)", -21393, "A5-166, A5-167, A5-169")],
+    "FY2025": [("Gain on fair value of share call options, financial income (pre-tax); called one-off (A5-033)", 17312, "A5-230"),
+               ("Income from partial divestiture of a business, other income (pre-tax)", 2504, "A5-156"),
+               ("One-off SG&A expenses in Q4 (amount not disclosed)", None, "A5-227")],
+    "FY2026 1H": [("Gain on valuation of financial instruments, financial income (pre-tax); not called one-off", 54171, "A5-228"),
+                  ("One-time reversal of inventory write-down (amount not disclosed)", None, "A5-229")],
+}
+print("\nNamed / itemised one-off items inside net income (pre-tax amounts, JPY million):")
+for k, items in oneoffs.items():
+    for name, amt, ids in items:
+        print(f"  {k:10s} {name:95s} {'n.d.' if amt is None else format(amt, ',d'):>8s} [{ids}]")
+print("  Net income (and hence the total return ratio) ex these items cannot be computed: the tax effect of each item")
+print("  is NOT DISCLOSED, and two items have no amount. Ratios above are on reported net income only.")

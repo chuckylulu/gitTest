@@ -1,22 +1,208 @@
-Advantest-issued text files scanned: 178 (of which 16 IR/news index web pages excluded below)
-Documents counted: 162
+Advantest-issued text files found: 180 (of which 16 IR/news index web pages excluded)
+Documents counted: 164
 
-hybrid bond(ing)                           0 documents
-HBM                                       35 documents
-chiplet                                   15 documents
-known good die/stack or KGD/KGS            5 documents
+hybrid bond(ing) incl. Cu-Cu / direct bond / Japanese     0 documents
+HBM                                                      35 documents
+chiplet                                                  15 documents
+known good die/stack or KGD/KGS                           5 documents
+    - 2024-06-25_advantest_mid-term-plan-MTP3-slides
+    - 2024-12-10_advantest_news-KGD-test-cell-power-semiconductors
     - 2025-01-29_advantest_earnings-call-QA-FY2024Q3
     - 2025-07-29_advantest_earnings-call-QA-FY2025Q1
-    - 2024-06-25_advantest_mid-term-plan-MTP3-slides
     - 2025-11-17_advantest_IR-fireside-chat-QA
-    - 2024-12-10_advantest_news-KGD-test-cell-power-semiconductors
-die-level                                 10 documents
-advanced packaging                        31 documents
-2.5D/3D                                   23 documents
-system level test / SLT                   97 documents
-burn-in                                   12 documents
-metrology                                 34 documents
-CD-SEM / mask SEM                         27 documents
-wafer inspection / defect inspection       0 documents
-CoWoS                                      0 documents
-probe card                                20 documents
+die-level                                                10 documents
+advanced packaging                                       32 documents
+2.5D/3D                                                  24 documents
+system level test / SLT                                  99 documents
+burn-in                                                  13 documents
+metrology                                                39 documents
+CD-SEM / mask SEM                                        27 documents
+wafer inspection / defect inspection (EN/JA)              0 documents
+CoWoS                                                     0 documents
+probe card                                               22 documents
+
+Check including the excluded web pages (180 files): hybrid-bonding terms in 0; wafer/defect inspection or CoWoS in 0
+
+Excluded navigation pages:
+  - 2026-11-21_advantest_ir-bonds-rating
+  - 2026-11-21_advantest_ir-business-risks
+  - 2026-11-21_advantest_ir-calendar
+  - 2026-11-21_advantest_ir-financial-highlights
+  - 2026-11-21_advantest_ir-forecast-page
+  - 2026-11-21_advantest_ir-library-report-index
+  - 2026-11-21_advantest_ir-library-result-index
+  - 2026-11-21_advantest_ir-review-page
+  - 2026-11-21_advantest_ir-share-information
+  - 2026-11-21_advantest_ir-shareholder-returns
+  - 2026-11-21_advantest_news-index-2021
+  - 2026-11-21_advantest_news-index-2022
+  - 2026-11-21_advantest_news-index-2023
+  - 2026-11-21_advantest_news-index-2024
+  - 2026-11-21_advantest_news-index-2025
+  - 2026-11-21_advantest_news-index-2026
+
+Documents counted (file list):
+  - 2009-04-27_advantest_financial-results-FY2008Q4-full-year
+  - 2010-04-27_advantest_financial-results-FY2009Q4-full-year
+  - 2011-04-27_advantest_financial-results-FY2010Q4-full-year
+  - 2012-04-26_advantest_financial-results-FY2011Q4-full-year
+  - 2013-04-25_advantest_financial-results-FY2012Q4-full-year
+  - 2014-05-28_advantest_financial-results-FY2013Q4-full-year
+  - 2015-04-27_advantest_financial-results-FY2014Q4-full-year
+  - 2015-07-28_advantest_financial-results-FY2015Q1
+  - 2015-10-26_advantest_financial-results-FY2015Q2
+  - 2016-01-27_advantest_financial-results-FY2015Q3
+  - 2016-04-27_advantest_financial-results-FY2015Q4-full-year
+  - 2016-06-29_advantest_financial-results-FY2015-IFRS
+  - 2016-07-27_advantest_financial-results-FY2016Q1
+  - 2016-10-26_advantest_financial-results-FY2016Q2
+  - 2017-01-26_advantest_financial-results-FY2016Q3
+  - 2017-04-27_advantest_financial-results-FY2016Q4-full-year
+  - 2018-04-26_advantest_financial-results-FY2017Q4-full-year
+  - 2018-07-25_advantest_financial-results-FY2018Q1
+  - 2018-08-13_advantest_financial-results-FY2018Q1-revised
+  - 2018-10-30_advantest_financial-results-FY2018Q2
+  - 2019-01-30_advantest_earnings-briefing-slides-FY2018Q3
+  - 2019-01-30_advantest_financial-results-FY2018Q3
+  - 2019-01-31_advantest_earnings-call-QA-FY2018Q3
+  - 2019-04-25_advantest_earnings-briefing-slides-FY2018Q4
+  - 2019-04-25_advantest_financial-results-FY2018Q4-full-year
+  - 2019-04-25_advantest_earnings-call-QA-FY2018Q4
+  - 2019-07-24_advantest_earnings-briefing-slides-FY2019Q1
+  - 2019-07-24_advantest_financial-results-FY2019Q1
+  - 2019-07-24_advantest_earnings-call-QA-FY2019Q1
+  - 2019-10-30_advantest_earnings-briefing-slides-FY2019Q2
+  - 2019-10-30_advantest_financial-results-FY2019Q2
+  - 2020-01-29_advantest_earnings-briefing-slides-FY2019Q3
+  - 2020-01-29_advantest_financial-results-FY2019Q3
+  - 2020-04-24_advantest_earnings-briefing-slides-FY2019Q4
+  - 2020-04-24_advantest_financial-results-FY2019Q4-full-year
+  - 2020-06-26_advantest_annual-securities-report-78th-FY2019
+  - 2020-07-30_advantest_financial-results-FY2020Q1
+  - 2020-10-29_advantest_financial-results-FY2020Q2
+  - 2021-01-28_advantest_financial-results-FY2020Q3
+  - 2021-04-27_advantest_financial-results-FY2020Q4-full-year
+  - 2021-07-28_advantest_financial-results-FY2021Q1
+  - 2021-10-26_advantest_news-RD-Altanova-acquisition-announcement
+  - 2021-10-28_advantest_financial-results-FY2021Q2
+  - 2021-11-17_advantest_news-RD-Altanova-acquisition-completion
+  - 2022-01-27_advantest_financial-results-FY2021Q3
+  - 2022-04-27_advantest_earnings-briefing-slides-FY2021Q4
+  - 2022-04-27_advantest_financial-results-FY2021Q4-full-year
+  - 2022-06-01_advantest_news-CREA-acquisition-announcement
+  - 2022-06-22_advantest_annual-securities-report-80th-FY2021
+  - 2022-07-28_advantest_financial-results-FY2022Q1
+  - 2022-08-12_advantest_news-CREA-acquisition-completion
+  - 2022-10-27_advantest_earnings-call-QA-FY2022Q2
+  - 2022-10-27_advantest_financial-results-FY2022Q2
+  - 2023-01-31_advantest_financial-results-FY2022Q3
+  - 2023-01-31_advantest_news-Shin-Puu-acquisition-announcement
+  - 2023-04-26_advantest_earnings-briefing-slides-FY2022Q4
+  - 2023-04-26_advantest_earnings-call-QA-FY2022Q4
+  - 2023-04-26_advantest_financial-results-FY2022Q4-full-year
+  - 2023-04-28_advantest_news-Shin-Puu-acquisition-completion
+  - 2023-06-23_advantest_annual-securities-report-81st-FY2022
+  - 2023-07-26_advantest_earnings-briefing-slides-FY2023Q1
+  - 2023-07-26_advantest_earnings-call-QA-FY2023Q1
+  - 2023-07-26_advantest_financial-results-FY2023Q1
+  - 2023-10-31_advantest_earnings-briefing-slides-FY2023Q2
+  - 2023-10-31_advantest_earnings-call-QA-FY2023Q2
+  - 2023-10-31_advantest_financial-results-FY2023Q2
+  - 2024-01-31_advantest_earnings-briefing-slides-FY2023Q3
+  - 2024-01-31_advantest_earnings-call-QA-FY2023Q3
+  - 2024-01-31_advantest_financial-results-FY2023Q3
+  - 2024-04-10_advantest_news-Toray-Engineering-technical-partnership
+  - 2024-04-26_advantest_earnings-briefing-slides-FY2023Q4
+  - 2024-04-26_advantest_earnings-call-QA-FY2023Q4
+  - 2024-04-26_advantest_financial-results-FY2023Q4-full-year
+  - 2024-06-25_advantest_mid-term-plan-MTP3-QA
+  - 2024-06-25_advantest_mid-term-plan-MTP3-slides
+  - 2024-06-25_advantest_press-release-E-Info-20240625
+  - 2024-06-26_advantest_annual-securities-report-82nd-FY2023
+  - 2024-07-23_advantest_mid-term-plan-MTP3-followup-QA
+  - 2024-07-31_advantest_earnings-briefing-slides-FY2024Q1
+  - 2024-07-31_advantest_earnings-call-QA-FY2024Q1
+  - 2024-07-31_advantest_financial-results-FY2024Q1
+  - 2024-07-31_advantest_forecast-revision-E-Info-20240731
+  - 2024-10-30_advantest_earnings-briefing-slides-FY2024Q2
+  - 2024-10-30_advantest_earnings-call-QA-FY2024Q2
+  - 2024-10-30_advantest_financial-results-FY2024Q2
+  - 2024-10-30_advantest_press-release-E-Info-20241030-01-share-repurchase
+  - 2024-11-12_advantest_semiannual-securities-report-83rd-1H-FY2024
+  - 2024-11-28_advantest_IR-technical-briefing-QA
+  - 2024-11-28_advantest_IR-technical-briefing-slides
+  - 2024-12-10_advantest_news-KGD-test-cell-power-semiconductors
+  - 2025-01-09_advantest_news-FormFactor-Technoprobe-strategic-partnerships
+  - 2025-01-29_advantest_earnings-briefing-slides-FY2024Q3
+  - 2025-01-29_advantest_earnings-call-QA-FY2024Q3
+  - 2025-01-29_advantest_financial-results-FY2024Q3
+  - 2025-01-29_advantest_forecast-revision-E-Info-20250129
+  - 2025-01-29_advantest_press-release-E-Info-20250129-02-repurchase-completion
+  - 2025-02-12_advantest_news-T5801-memory-test-system
+  - 2025-02-27_advantest_news-Micronics-Japan-strategic-partnership
+  - 2025-04-25_advantest_earnings-briefing-slides-FY2024Q4
+  - 2025-04-25_advantest_earnings-call-QA-FY2024Q4
+  - 2025-04-25_advantest_financial-results-FY2024Q4-full-year
+  - 2025-04-25_advantest_press-release-E-Info-20250425-share-repurchase
+  - 2025-06-25_advantest_annual-securities-report-83rd-FY2024
+  - 2025-07-29_advantest_earnings-briefing-notes-FY2025Q1
+  - 2025-07-29_advantest_earnings-briefing-reference2-FY2025Q1
+  - 2025-07-29_advantest_earnings-briefing-slides-FY2025Q1
+  - 2025-07-29_advantest_earnings-call-QA-FY2025Q1
+  - 2025-07-29_advantest_financial-results-FY2025Q1
+  - 2025-07-29_advantest_forecast-revision-E-Info-20250729
+  - 2025-09-09_advantest_news-E3660-mask-CD-SEM
+  - 2025-09-18_advantest_news-7038-SLT-platform
+  - 2025-09-24_advantest_press-release-E-Info-20250924-repurchase-completion
+  - 2025-10-28_advantest_MTP3-target-revision-E-Info-20251028
+  - 2025-10-28_advantest_earnings-briefing-notes-FY2025Q2
+  - 2025-10-28_advantest_earnings-briefing-slides-FY2025Q2
+  - 2025-10-28_advantest_earnings-call-QA-FY2025Q2
+  - 2025-10-28_advantest_financial-results-FY2025Q2
+  - 2025-10-28_advantest_forecast-revision-E-Info-20251028
+  - 2025-10-28_advantest_press-release-E-Info-20251028-04-share-repurchase
+  - 2025-11-12_advantest_semiannual-securities-report-84th-1H-FY2025
+  - 2025-11-17_advantest_IR-fireside-chat-QA
+  - 2025-11-17_advantest_IR-fireside-chat-script
+  - 2025-12-10_advantest_news-M5241-memory-handler
+  - 2025-12-16_advantest_news-Tokyo-Seimitsu-die-level-prober
+  - 2025-12-24_advantest_news-TSMC-supply-chain-award
+  - 2026-01-28_advantest_earnings-briefing-notes-FY2025Q3
+  - 2026-01-28_advantest_earnings-briefing-slides-FY2025Q3
+  - 2026-01-28_advantest_earnings-call-QA-FY2025Q3
+  - 2026-01-28_advantest_financial-results-FY2025Q3
+  - 2026-01-28_advantest_forecast-revision-E-Info-20260128
+  - 2026-01-28_advantest_press-release-E-Info-20260128-01-treasury-share-cancellation
+  - 2026-02-06_advantest_press-release-E-Info-20260206-cancellation-completion
+  - 2026-04-14_advantest_news-strategic-innovation-centers
+  - 2026-04-21_advantest_news-Applied-Materials-strategic-partnership
+  - 2026-04-22_advantest_news-Pin-Scale-5000B
+  - 2026-04-27_advantest_earnings-briefing-notes-FY2025Q4
+  - 2026-04-27_advantest_earnings-briefing-slides-FY2025Q4
+  - 2026-04-27_advantest_earnings-call-QA-FY2025Q4
+  - 2026-04-27_advantest_financial-results-FY2025Q4-full-year
+  - 2026-04-27_advantest_press-release-E-Info-20260427-year-end-dividend
+  - 2026-06-23_advantest_news-OpenLight-silicon-photonics-partnership
+  - 2026-06-26_advantest_annual-securities-report-84th-FY2025
+  - 2026-07-23_advantest_news-RI-rating-upgrade-20260723
+  - 2026-07-29_advantest_earnings-briefing-notes-FY2026Q1
+  - 2026-07-29_advantest_earnings-briefing-slides-FY2026Q1
+  - 2026-07-29_advantest_earnings-call-QA-FY2026Q1
+  - 2026-07-29_advantest_financial-results-FY2026Q1
+  - 2026-07-29_advantest_forecast-revision-E-Info-20260729
+  - 2026-08-20_advantest_press-release-E-Info-20260820-repurchase-completion
+  - 2026-10-28_advantest_earnings-briefing-notes-FY2026Q2
+  - 2026-10-28_advantest_earnings-briefing-slides-FY2026Q2
+  - 2026-10-28_advantest_earnings-call-QA-FY2026Q2
+  - 2026-10-28_advantest_financial-results-FY2026Q2
+  - 2026-10-28_advantest_investors-guide-2610
+  - 2026-10-28_advantest_press-release-E-Info-20261028-02-share-repurchase
+  - 2026-10-28_advantest_press-release-E-Info-20261028-03-interim-dividend
+  - 2026-10-28_advantest_press-release-E-Info-20261028-04-CB-conversion-price-adjustment
+  - 2026-10-30_advantest_press-release-E-Info-20261030
+  - 2026-11-02_advantest_press-release-E-Info-20261102
+  - 2026-11-11_advantest_integrated-annual-report-2026
+  - 2026-11-12_advantest_IR-fireside-chat-QA
+  - 2026-11-12_advantest_IR-fireside-chat-script
+  - 2026-11-13_advantest_semiannual-securities-report-85th-1H-FY2026
+  - 2026-11-17_advantest_news-EXA-Scale-QX-test-head
