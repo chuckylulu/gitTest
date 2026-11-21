@@ -42,6 +42,7 @@ fill = {
     "{{SMP_DIRECTION_TABLE}}": direction,
     "{{AWARDS_TABLE}}": open(os.path.join(C, "awards_summary.md"), encoding="utf-8").read().strip(),
     "{{MATRIX}}": open(os.path.join(C, "method_matrix.md"), encoding="utf-8").read().strip(),
+    "{{METHOD_COUNTS}}": run(os.path.join(C, "method_counts.py")).strip(),
 }
 for k, v in fill.items():
     t = t.replace(k, v)
