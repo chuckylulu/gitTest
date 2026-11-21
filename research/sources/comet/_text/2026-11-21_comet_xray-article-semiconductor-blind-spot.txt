@@ -1,0 +1,403 @@
+
+
+Semiconductor control has a blind spot - Comet X-RAY
+
+Products
+
+Product series
+
+Products explained
+
+All products
+
+Product series
+
+Product series
+
+Tubes & inserts
+
+Tubes
+
+Inserts
+
+FXE series
+
+NanoFocus
+
+MicroFocus
+
+Accessories
+
+FYNE series
+
+Transmission
+
+Xplorer series
+
+Cube
+
+ION series
+
+Modules
+
+Controllers
+
+iXRS series
+
+Ultra performance
+
+High power
+
+MesoFocus
+
+Standard
+
+Generators
+
+Accessories
+
+Controllers
+
+Software
+
+BLOX
+
+EVO series
+
+Directional
+
+Panoramic
+
+Controllers
+
+Accessories
+
+ECO series
+
+Directional
+
+Controllers
+
+Accessories
+
+XMB series
+
+Modules
+
+X-ray tubes
+
+Accessories
+
+Products explained
+
+Products explained
+
+Finding the perfect X-ray solution
+
+Finding the perfect X-ray solution
+
+Mini focus modules
+
+Sealed stationary modules
+
+Integrated modules
+
+Portable modules
+
+Mobile modules
+
+Meso focus modules
+
+Sealed stationary modules
+
+Micro focus modules
+
+Open stationary modules
+
+Sealed stationary modules
+
+Nano focus modules
+
+Open stationary modules
+
+All products
+
+All products
+
+All products
+
+Product configurator
+
+Service
+
+Service and support
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Service and support
+
+Service offering
+
+Technical support
+
+Return &  repair equipment - to Denmark
+
+EVO | ECO | ION | XMB | Y.SMART | Y.XPO series
+
+Return & repair equipment - globally, except to Denmark
+
+All product series
+
+Spare parts
+
+iXRS spare parts
+
+Product training
+
+Product training
+
+Product training
+
+Rental equipment
+
+Rental equipment
+
+Rental equipment
+
+Download center
+
+News
+
+Contact
+
+All products
+
+Get a quote
+
+Home
+
+News and more
+
+Focus topic. Semiconductor segment insights
+
+Semiconductor control has a blind spot
+
+Focus topic. Semiconductor segment insights
+
+November 10, 2026
+
+The semiconductor industry has mastered the art of precision. Nanometer-scale processes, extensive testing, and sophisticated control systems create an environment that appears highly predictable. But while process control continues to improve, many of today's most critical defects are becoming harder to see as they disappear inside complex, multi-layer structures. As advanced packaging reshapes the industry, visibility itself is emerging as a decisive factor in manufacturing success.
+
+Why the industry is optimizing what it cannot fully see
+Semiconductor manufacturing is widely regarded as one of the most controlled and most advanced industrial environments. Processes operate at the nanometer scale, supported by sophisticated equipment, strict process control, extensive data collection, and stringently clean environments. This systems approach creates the impression of a tightly managed and predictable production environment.
+However, this perception is increasingly out of step with reality. As architectures shift from planar designs to complex three-dimensional systems, utilizing high-bandwidth memory (HBM), chiplets, and heterogeneous integration, the nature of defects has changed fundamentally. Defects are no longer primarily surface-based and directly observable. They are internal, sub-micron-scale, and embedded deep within multilayer structures.
+Visibility, which was once assumed to be comprehensive, is now fragmented across the manufacturing chain.
+This creates a structural paradox. The industry continues to optimize throughput, cost, and cycle time with high precision, while operating within a system it cannot fully see. The central issue is no longer whether processes are controlled, but whether the underlying assumptions about visibility still hold.
+The illusion of control in modern manufacturing
+Modern semiconductor manufacturing relies heavily on process control frameworks such as statistical process control (SPC), wafer-level testing, and optical inspection. These tools provide high confidence in process stability and output quality. However, they primarily rely on directly visible surface variables or aggregated bulk responses.
+This creates an illusion of control. Engineers manage input parameters with precision but lack continuous visibility into how the underlying structures and properties can transform during processing.
+
+Download
+
+        Focus topic. Semiconductor control has a  blind spot (pdf)
+
+2D slice through the C4 layer, showing bumps roughly 100 µm in diameter. The dark spots within the bumps are voids.
+
+One example is the widely accepted concept of known good die (KGD). A die that passes wafer-level testing is typically considered reliable. In practice, this assumption does not always hold. Stacking and bonding processes introduce thermal and mechanical stress that can create new defects after initial validation. A die can be fully functional at wafer test and become defective minutes later during assembly.
+Similarly, inspection systems often filter out what they consider noise. At larger scale, this approach is effective. As interconnect pitches shrink, these so-called nuisance defects can become critical failure points. Small particles, residues, or minor misalignments previously ignored can now cause solder bridging, non-wet joints, or early-life failures.
+
+What appears controlled
+What can change internally
+Potential consequence
+Known good die validated at wafer level
+Thermal and mechanical stress introduced during stacking and bonding
+A functional die becomes defective during assembly
+Inspection filters calibrated to remove “noise”
+Small particles, residues or misalignments become critical as pitches shrink.
+Bridging, non-wet joints or early-life failure
+Optimized and repeatable reflow profiles
+Multi-material stacks deform differently during heating
+Micro-warpage changes gaps, alignment, and contact conditions
+
+Another example is thermal process stability. Engineers may optimize reflow profiles for consistency, yet they cannot fully control the dynamic mechanical behavior of multi-material stacks. Differences in coefficients of thermal expansion cause micro-warpage during heating cycles, altering gaps and contact conditions in ways standard process controls cannot directly measure.
+In each case, input variables are controlled, but the resulting structural impact remains only partially visible.
+
+“Control over process inputs does not guarantee desired outcomes.”
+
+Fragmented visibility across the wafer and packaging
+The semiconductor manufacturing flow remains structurally divided between wafer-level fabrication and back-end packaging and assembly. Inspection strategies typically follow this division. Optical and e-beam systems dominate wafer-level inspection, while X-ray and other non-destructive methods are introduced later.
+This separation reflects how manufacturing is organized, not how defects behave.
+Defects do not remain confined to individual process steps. A sub-micron anomaly introduced at the wafer level can propagate into packaging, where it becomes physically buried within the structure and significantly more difficult to detect. As stacking, bonding, and integration add value, the cost of these defects increases.
+In advanced packaging environments, this dynamic becomes critical. High-value components such as HBM stacks are combined with high-performance processors. If a latent defect escapes early detection, it can erode added value. Instead of increasing the product’s value through successive processing steps, the system amplifies the cost of an underlying defect.
+A defective memory stack integrated into a high-value assembly does not merely result in the loss of the stack itself. It can lead to scrapping an entire module or system, thereby multiplying the economic impact of an earlier defect.
+
+2D slice through the C2 layer, showing bumps roughly 20 µm in diameter.
+
+Increasing structural complexity and shrinking margins for error
+The shift from monolithic scaling to heterogeneous integration has fundamentally changed semiconductor manufacturing. Instead of optimizing individual dies, manufacturers now assemble complex systems composed of multiple interconnected components.
+Technologies such as through-silicon vias (TSVs), hybrid bonding, and multi-layer stacking introduce new, inherently internal failure modes. The most critical structures are no longer accessible from the surface.
+At the same time, tolerances continue to tighten. Packaging interconnects are approaching single-digit-micron dimensions, while critical defect thresholds are well below 1 micron. Variations that were previously considered insignificant can now determine functional reliability. 
+This combination of increased structural complexity and reduced tolerance margins means that traditional inspection approaches are insufficient. Surface-level inspection cannot capture internal structural integrity, and sampling-based methods struggle to detect low-frequency, high-impact defects.
+As a result, manufacturers may achieve apparent process stability while latent defects remain undetected.
+
+Figure 1. 3-dimensional image of TSV array obtained with X-ray CT. 
+
+Figure 2. A side view of the TSV array. Missing filling is evident. The filling level and TSV height are highlighted. 
+
+Figure 3. A 2D slice from a top down view of the TSV array. This view makes visible which TSVs within the array have been correctly filled and which have not. The width of the TSV and the inner diameter are highlighted. 
+
+The economics of limited visibility
+The consequences of incomplete visibility are not purely technical. They are fundamentally economic.
+In high-volume manufacturing, even small yield deviations can translate into substantial financial impact. A marginal yield loss at the wafer level may appear manageable. When compounded across advanced packaging and final assembly, the same defect can result in the loss of high-value components or entire systems.
+Delayed detection introduces structural inefficiency. Companies invest material, processing time, and integration effort in components that ultimately cannot be used. This is the essence of negative value added: the system keeps adding cost to a product that already contains an undetected defect.
+Inspection is therefore often misunderstood. It is frequently evaluated as a cost center because it does not directly increase output. However, its primary function is to protect the margin by preventing the accumulation of undetected defects.
+
+“An inspection does not create value. It protects value from being destroyed”
+
+From discrete inspection to system-level visibility
+Addressing the visibility gap requires shifting from isolated inspection steps to a more integrated view of the manufacturing process. Instead of treating inspection as a series of pass/fail gates, it must be understood as a continuous source of structural information across the production chain.
+This implies tighter integration between wafer-level and packaging processes. Structural insights obtained during later stages must inform earlier steps, reduce feedback latency, and enable faster root-cause analysis.
+In this model, visibility becomes an active component of process control rather than a retrospective quality check.
+However, this approach introduces practical constraints. Inspection systems must deliver sufficient resolution to detect sub-micron defects while maintaining throughput compatible with high-volume production. Data must be actionable and integrated into process control loops. Organizationally, it requires alignment across domains that have traditionally operated independently.
+
+The role of X-ray in internal defect detection
+In this context, X-ray CT inspection has become increasingly important because it provides non-destructive access to internal structures. Unlike optical methods, which are limited to surface features, X-ray technologies can visualize buried interconnects, voids, and structural defects within complex assemblies. The examples figures in this article illustrate this. 
+Nevertheless, achieving sub-micron resolution at production speeds is still challenging and does introduce trade-offs. Higher resolution typically comes at the expense of throughput. However, recent advances in automated X-ray inspection have dramatically improved the balance. New detectors, including flat-panel, CMOS, and photon-counting, have boosted sensitivity and usable area. Machine learning has enabled improved software control for automation, as well as faster processing and analysis workflows. And finally, advances in X-ray generation have enabled higher-power-density sources, resulting in higher photon flux while also increasing resolution.
+X-ray module suppliers such as Comet X-ray are pushing the limits of what is possible. By finding ways to overcome limits for specific applications, it becomes possible to minimize these trade-offs and keep inspection viable in high-volume manufacturing despite the challenges. 
+Effective inspection depends on the entire inspection system’s performance, not just individual components. Therefore, an appropriate combination of components within a system that can exploit their potential is essential. There is no single configuration that satisfies all requirements.
+
+Figure 4. Graphical processing unit. A side view of a 3D GPU including HBM, TSVs and multiple bump sizes. 
+
+Defining the boundary of visibility
+At the core of any X-ray inspection system is the source, which sets the fundamental limits of what it can resolve. Resolution, power density, and focal spot stability directly influence whether sub-micron features are visible or remain undetected.
+System design and software processing play important roles, but they cannot compensate for source-level limitations. If the source cannot generate sufficient contrast or maintain stability at the required resolution, the resulting data becomes incomplete.
+The X-ray source, therefore, defines the boundary of visibility. It does not directly determine yield outcomes, but it defines what aspects of the structure can be measured and controlled.
+Suppliers of X-ray sources operating at this level, such as Comet X-ray, do not solve yield challenges in isolation. Their contribution lies in enabling the physical visibility required for effective process control. As an X-ray module provider, Comet X-ray focuses on performance characteristics that enable sub-micron inspection in advanced production environments. The final production outcome still depends on system integration and process design.
+
+2D slices through the C2 layers.
+
+The strategic implication
+The semiconductor industry is entering a phase in which performance is increasingly defined by the ability to manufacture complex, multi-layer systems with consistent yield. In this context, visibility beneath the surface is no longer a supporting capability. It is a prerequisite for effective process control.
+Manufacturers that continue to treat inspection as a secondary function risk operating with incomplete information, particularly as defect mechanisms move below the detection threshold of traditional tools. Conversely, those that invest in integrated, high-resolution CT inspection strategies are better positioned to manage variability, reduce risk, and protect margins.
+The transition is not purely technological. It requires a shift in how inspection is perceived - from a cost to be minimized to a capability that defines the limits of control.
+
+C4 layer reveal defects and voids across the field of view. The diameter of the C4 bumps is roughly 100um and C2 bumps roughly 20um.
+
+Conclusion: Visibility defines yield
+As semiconductor manufacturing evolves, the ability to see internal structures at the relevant scale will determine which processes can be stabilized, which yields can be achieved, and which organizations can operate with confidence in increasingly complex production environments.
+This is the blind spot in semiconductor control. The industry may control its processes with extraordinary precision, but it cannot control what remains outside its field of view. As advanced packaging buries critical defects inside complex systems, the boundary of visibility becomes the boundary of yield.
+
+Latest three news
+
+Spotlight on Shelton. Featuring Pierre Niepel
+
+November 19, 2026
+
+Meet Pierre Niepel, 20 years in medical imaging, now leading Comet X-ray sales in the Americas. Pierre Niepel has joined Comet X-ray as Head of Sales Americas, based at our U.S. site in Shelton, Connecticut. He spent about 20 years in the U.S. medical imaging market, working at Siemens Healthineers and Boston Imaging before running his own advisory business. Pierre brings experience from the equipment-manufacturer side of the industry, and a clear view of what customers expect from their suppliers. We asked him why he joined Comet, where he intends to start, and how he sees customer relationships developing.
+
+Read more
+
+Welcome Andreea!
+
+November 2, 2026
+
+Meet Andreea Vasiliu, our new Vice President of Global Sales!
+
+Andreea brings extensive international sales and leadership experience and knows Comet well from her previous roles within Plasma Control Technologies. During more than eight years with the company, she held several global and regional sales leadership positions, most recently as Director Sales EMEA and Vacuum Capacitors Global. 
+
+Since 2024, she has served as General Manager Europe and RoW at VAT Group.
+
+Read more
+
+Need for Speed: Boosting X-ray Inspection Speed in Advanced Electronics
+
+October 28, 2026
+
+As electronics become more powerful and advanced packaging technologies more complex, manufacturers face the challenge of detecting ever-smaller defects without reducing throughput. Optical inspection methods cannot reveal the buried structures found in high-power electronics, chiplets, HBM, through glass vias (TGVs), and advanced 3D packages. X-ray inspection and automated X-ray inspection (AXI) provide the required visibility, but higher resolution and penetration have traditionally come at the expense of speed. Recent advances in micro and nano focus X-ray source technology are overcoming this trade-off by delivering higher photon flux, improved contrast-to-noise ratio, and faster imaging. In this post we review these developments in high-power electronics, where higher voltage and power are required to penetrate through dense structures while maintaining micro-scale imaging, and advanced packaging where increasing complexity from vertical integration and sub-micron resolution combine. We highlight how increased throughput can be achieved while maintaining reliable defect detection.
+
+Read more
+
+Back
+
+Back
+
+Service                
+
+Service offering
+
+Technical support
+
+Returns & repairs - globally
+
+Returns & repairs - to Denmark
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Contact                
+
+Comet X-ray offices
+
+Local contacts
+
+Supply chain
+
+Applications
+
+Additive manufacturing
+
+Aerospace
+
+Automotive
+
+Battery
+
+Electronics
+
+Irradiation
+
+Other NDT
+
+Oil & gas
+
+Security
+
+Sorting
+
+Thickness gauging
+
+About us                
+
+Annual Appreciation Award 
+
+Comet
+
+Comet X-ray
+
+Open positions
+
+Poster gallery
+
+News                
+
+News and more
+
+Virtual Patent Marking
+
+Cookies
+
+Disclaimer
+
+Imprint
+
+Privacy policy
+
+© 2026 Comet Group
+
