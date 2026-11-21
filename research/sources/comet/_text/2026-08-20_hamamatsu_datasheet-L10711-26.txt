@@ -1,0 +1,196 @@
+       160 kV MICROFOCUS
+ X-RAY X-RAY SOURCE
+SOURCE L10711-26
+    FEATURES
+●High stability
+●Dual cathode mode
+ High resolution: 0.2 μm (S mode)
+ High intensity : 9.6 W (W mode)
+●No high voltage cable connection
+ required
+●Easy to replace cathode
+●Easy operation
+
+
+
+    SPECIFICATIONS
+                                                                                             Description / Value
+                                  Parameter
+                                                                                     S mode                      W mode
+ Cathode material                                                              LaB6 (Single crystal)           W (Tungsten)
+ Maximum tube voltage 1                                                                              168 kV
+ X-ray tube voltage setting range                                                               20 kV to 160 kV
+ X-ray tube current setting range                                                               0 µA to 200 µA
+ Minimum resolution 23                                                               0.2 µm 4                      0.8 µm
+ Maximum target current                                                               50 µA                         60 µA
+ Target type                                                                                   Transmission type
+ X-ray beam angle (Max.)                                                                          Approx. 120°
+ Target material                                                                                   Tungsten
+ X-ray output window material                                                                       Diamond
+ Focus to object distance (FOD)                                                                      0.3 mm
+ Protection                                                                     External short-circuit method (Normally closed)
+ Interlock 1 / Interlock 2                                                                    36 V DC / 12 V DC
+ Input voltage (AC)               X-ray control unit                                   100 V to 240 V (50 Hz / 60 Hz) 5
+ Power consumption (Max.)         X-ray control unit                                                 410 W
+ Rated output                                                                               Continuous operation
+ Cooling method                   X-ray tube unit / X-ray control unit                    Water cooling / Air cooling
+ Weight                                                                                         Approx. 96.2 kg
+ Operating ambient temperature                                                                 +15 °C to +40 °C
+ Storage temperature                                                                            +5 °C to +50 °C
+ Operating and storage humidity                                                        20 % to 85 % (No condensation)
+NOTE: 1Maximum tube voltage during the warm-up period.
+      2X-ray chart use
+      3Guaranteed values are defined separately
+      4Suitable measurement conditions (environment and equipments) are necessary.
+      5Auto switching
+    DIMENSIONAL OUTLINES (Unit: mm)
+●X-RAY TUBE UNIT                                                                                        105
+
+
+
+
+                                                                                                              105
+                          X-RAY
+                       BEAM ANGLE                X-RAY FOCAL SPOT                                                                       COOLING
+                       APPROX. 120°                                                                                                     WATER
+                                                                                                    212                                 OUTLET
+                                                                                                    176                                 POSITION
+
+
+                                                               SOLENOID
+
+
+
+
+                                                                                                              102
+                                                               VACUUM VALVE
+
+                                                    TURBO PUMP
+                   A                        A
+                                                    CONTROLLER                                                                             TURBO PUMP
+
+
+
+
+                                                                                                                              707 ± 5
+                                                                                                                                                                             4 × M8 DEPTH 10
+                                                                                                                                                                             POWER SUPPLY
+                                                                                                                                                                             MOUNTING SCREW HOLES)
+
+
+
+
+                                                                                                                      417.5
+                                                                                                                       466
+                                                                                                              246.5
+
+
+
+
+                                                                                                                                                                      180
+                                                  VACUUM
+                                                  GAUGE
+
+
+    VIEWED FROM                                                                                                                                     287
+
+
+
+
+                                                                                                                                                                      37.5
+                                194
+    DIRECTION A                                                            520                          105                                                     170
+                          45°                                                                     253                                                           210
+                                                  6× 9   14)
+                                                  ELECTROMAGNETIC LENS
+               °
+             30
+
+
+
+
+                                                  MOUNTING HOLES                                    180        15
+                                                   COOLING WATER
+                                194                OUTLET POSITION (×6)
+             30°
+
+
+
+
+                                             5°
+
+
+
+
+                                                                                                              170
+
+
+
+
+                                                       4 × M8 DEPTH 10
+                                            °1
+                                            15
+
+
+
+
+                                                       POWER SUPPLY
+                                      45°              MOUNTING SCREW HOLES
+                                      90°
+
+
+●X-RAY CONTROL UNIT C10713-26
+                                                                                                                          Cable Wiring Region
+                                                                                                                                                          100
+                                                                                (350)
+                                                                          339
+
+
+
+
+                                                       429                                    SIDE VIEW
+                                                      (480)
+                                                                                                       CONTROL CABLE 1                    CONTROL CABLE 2
+                                                    TOP VIEW                                      ETHERNET                                 INTERLOCK 1
+                                                                                                    RS-232C                                 INTERLOCK 2 & LAMP
+                                                                                    (105.1)
+
+
+
+
+                                                                                                                                                        POWER SWITCH
+                                                                            99
+                          50
+                   24.5
+
+
+
+
+                                                       460                                        TMP SIGNAL             FG (M4 SCREW              AC INLET
+                                                   FRONT VIEW                                                            REAR VIEW
+
+System configuration of L10711-26: X-ray tube unit + X-ray control unit (C10713-26) + accessories
+
+     ! PRE-CAUTION TO USE
+  1. X-ray emitted from this device is harmful for human body. And it should be necessary for the operator to protect himself/herself from it.
+  2. During an operation, the X-ray tube unit should be installed in the X-ray shielded facility or area in order to avoid any X-ray leakage.
+     Also the interlock system in X-ray control unit should be always used in order to avoid any misoperation.
+
+   OPERATIONAL CAUTION
+  The product may be subject to governmental occupational radiation hazardous regulation therefore the necessary application must be field
+  according to the local regulation.
+
+Windows ® is a registered trademark of Microsoft Corporation in the United States and/or other countries.
+Other product and software names mentioned herein may be either registered trademarks or trademarks of their respective owners.
+Subject to local technical requirements and regulations, availability of products included in this promotional material may vary. Please consult with our sales office.
+Information furnished by HAMAMATSU is believed to be reliable. However, no responsibility is assumed for possible inaccuracies or omissions. Specifications are
+subject to change without notice. No patent rights are granted to any of the circuits described herein. ©2026 Hamamatsu Photonics K.K.
+
+© 2026 Hamamatsu Photonics K.K.
+
+
+
+                                                                                          Visit our website for product and contact information.                                    Cat. No. TXPR1042E01
+                                                                                                                                                                                    Aug. 2026 IP
+                                                                                          www.hamamatsu.com                                                                         Created in Japan
+

@@ -1,0 +1,367 @@
+
+
+Focus Topic. BLOX - Comet X-RAY
+
+Products
+
+Product series
+
+Products explained
+
+All products
+
+Product series
+
+Product series
+
+Tubes & inserts
+
+Tubes
+
+Inserts
+
+FXE series
+
+NanoFocus
+
+MicroFocus
+
+Accessories
+
+FYNE series
+
+Transmission
+
+Xplorer series
+
+Cube
+
+ION series
+
+Modules
+
+Controllers
+
+iXRS series
+
+Ultra performance
+
+High power
+
+MesoFocus
+
+Standard
+
+Generators
+
+Accessories
+
+Controllers
+
+Software
+
+BLOX
+
+EVO series
+
+Directional
+
+Panoramic
+
+Controllers
+
+Accessories
+
+ECO series
+
+Directional
+
+Controllers
+
+Accessories
+
+XMB series
+
+Modules
+
+X-ray tubes
+
+Accessories
+
+Products explained
+
+Products explained
+
+Finding the perfect X-ray solution
+
+Finding the perfect X-ray solution
+
+Mini focus modules
+
+Sealed stationary modules
+
+Integrated modules
+
+Portable modules
+
+Mobile modules
+
+Meso focus modules
+
+Sealed stationary modules
+
+Micro focus modules
+
+Open stationary modules
+
+Sealed stationary modules
+
+Nano focus modules
+
+Open stationary modules
+
+All products
+
+All products
+
+All products
+
+Product configurator
+
+Service
+
+Service and support
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Service and support
+
+Service offering
+
+Technical support
+
+Return &  repair equipment - to Denmark
+
+EVO | ECO | ION | XMB | Y.SMART | Y.XPO series
+
+Return & repair equipment - globally, except to Denmark
+
+All product series
+
+Spare parts
+
+iXRS spare parts
+
+Product training
+
+Product training
+
+Product training
+
+Rental equipment
+
+Rental equipment
+
+Rental equipment
+
+Download center
+
+News
+
+Contact
+
+All products
+
+Get a quote
+
+Home
+
+News and more
+
+Focus Topic. BLOX
+
+Focus Topic. BLOX - from breakdowns to breakthroughs
+
+IIoT health monitoring software turning X-ray module data into preventive insights.
+
+Focus Topic. BLOX - from breakdowns to breakthroughs
+
+May 13, 2025 | David Campos
+
+As inspections are increasingly integrated into production lines, the tolerance for downtime drops. Inline, 100% inspection processes demand continuous reliability. Our core competency at Comet is in developing high-performance X-ray modules. The challenge our customers face is clear: unplanned downtime. 
+
+Our solution is BLOX – a smart, data-driven IIoT health monitoring system that enables operators to plan maintenance precisely when needed. The following chapters explore how BLOX achieves this through real-world examples.
+
+“With BLOX, we can move from guesswork to clarity - it helps us identify and manage risks in a more structured manner, make better decisions more quickly, and reduce the time spent troubleshooting.”
+Pascal Corbat, Product Manager for BLOX
+
+Downloads
+
+        BLOX - from breakdowns to breakthroughs (pdf)
+
+What is NDE 4.0?
+NDE 4.0 (Non-Destructive Evaluation 4.0) refers to the digital transformation of inspection technologies, integrating AI, data analytics, and real-time monitoring into traditional NDT (Non-Destructive Testing). It aligns with Industry 4.0 by enabling smart factories to proactively detect anomalies, reduce downtime, and continuously improve production processes. For operators, NDE 4.0 means fewer surprises, better resource allocation, and optimized uptime.
+
+Discovering lifetime-reducing stress for the X-ray tube.
+Understanding stress patterns on X-ray tubes helps predict failure modes and schedule timely interventions.
+
+Figure 1: Inspection equipment use and stress on the characteristic power curve of the X-ray tube
+
+ When Figures 1 and 2 are combined, we can confidently predict the tube’s end of life will result from thermal target damage, not filament aging. This insight shifts monitoring priorities toward exposure cycles and heat-related stress.
+
+Figure 2: User behavior and exposure patterns over time. Low exposure rate during setup followed by high cycling rate during production, when performed  at nominal power, indicating thermal stress and likely target deterioration.
+
+Avoiding unplanned downtime from X-ray generator overheating
+Overheating is one of the most avoidable – and disruptive – issues in production X-ray systems. In harsh manufacturing environments with everyday dust and debris, thermal buildup can trigger automatic shutdowns designed to protect sensitive components. These unplanned stops can result in hours or even days of lost productivity.
+This section highlights a case in which BLOX monitoring helped visualize, detect, and resolve an overheating issue before it caused lasting disruption.
+The setup
+In this case, the generator was housed in a sealed IP54 enclosure to protect against conductive dust. While effective at shielding internal components, the cover also restricted cooling airflow – an unintended side effect with long-term consequences.Over time, the restricted airflow caused gradual heat buildup. Using its integrated exposure monitoring system, BLOX tracked this behavior and flagged the deviation with its intuitive traffic light visualization. 
+
+Figure 3: Generator with IP54 cover. Dust protection housing reduces airflow, making temperature monitoring critical.
+
+The early warning
+Initially, the system operated usually, showing green status with only regular shutdowns. On February 7, the irregular exposure patterns began to emerge. By February 8–11, the system status turned slightly orange – an early indication of rising thermal stress. Soon after, the ratio of irregular shutdowns worsened in March, and the system entered into red status and shut down to prevent damage.
+
+Figure 4: Traffic light visualization of system status. Regular operation (green) gives way to warnings (orange) and, finally, shutdown due to heat buildup.
+
+This pattern revealed an invisible, slow, persistent temperature drift without live monitoring. One internal component finally reached its thermal threshold, triggering a system lock
+
+Figure 5: Temperature drift before system shutdown. Accumulated heat and poor air circulation trigger critical temperature thresholds and system lock.
+
+The root cause – and the fix
+The investigation uncovered the cause: a clogged filter. With airflow compromised, the cooling system could no longer maintain stable temperatures. The generator quickly returned to normal operation once the filter was manually cleaned and replaced.
+This maintenance could be done proactively before any component damage occurs, thanks to BLOX. Production resumed with minimal interruption.
+
+Figure 6: Temperature response after maintenance. A timely filter replacement leads to sustained temperature recovery and stable operation.
+
+Prevention going forward
+In future cycles, BLOX applied the lessons learned – identifying similar early warning patterns well before thresholds were reached. Maintenance teams received timely alerts, allowing low-impact interventions that kept production lines running.
+This case highlights how predictive analytics and live system insight align with the principles of NDE 4.0 – shifting maintenance from reactive troubleshooting to proactive planning.
+Takeaway
+Thermal monitoring and trend analysis transformed what could’ve been days of lost production into a simple filter swap.
+
+Figure 7: Monitoring from the beginning. Applying BLOX lessons early ensures long-term uptime and avoids unplanned interventions.
+
+Evidence from the Field
+Feedback from users confirms that preventive maintenance through BLOX meets an urgent need. In both presented examples, downtime was reduced or completely avoided through early detection. BLOX’s data collection and evaluation integration lays the foundation for live health reporting and smart maintenance planning.
+
+From Insight to Implementation
+BLOX demonstrates how NDE 4.0 can be practically applied to X-ray equipment. But its full potential depends on collaboration across systems and suppliers.
+If you’re operating in high-throughput environments and facing downtime challenges, it’s time to consider how BLOX can support your uptime strategy.
+
+Get in contact
+
+Latest three news
+
+Spotlight on Shelton. Featuring Pierre Niepel
+
+November 19, 2026
+
+Meet Pierre Niepel, 20 years in medical imaging, now leading Comet X-ray sales in the Americas. Pierre Niepel has joined Comet X-ray as Head of Sales Americas, based at our U.S. site in Shelton, Connecticut. He spent about 20 years in the U.S. medical imaging market, working at Siemens Healthineers and Boston Imaging before running his own advisory business. Pierre brings experience from the equipment-manufacturer side of the industry, and a clear view of what customers expect from their suppliers. We asked him why he joined Comet, where he intends to start, and how he sees customer relationships developing.
+
+Read more
+
+Focus topic. Semiconductor segment insights
+
+November 10, 2026
+
+The semiconductor industry has mastered the art of precision. Nanometer-scale processes, extensive testing, and sophisticated control systems create an environment that appears highly predictable. But while process control continues to improve, many of today's most critical defects are becoming harder to see as they disappear inside complex, multi-layer structures. As advanced packaging reshapes the industry, visibility itself is emerging as a decisive factor in manufacturing success.
+
+Read more
+
+Welcome Andreea!
+
+November 2, 2026
+
+Meet Andreea Vasiliu, our new Vice President of Global Sales!
+
+Andreea brings extensive international sales and leadership experience and knows Comet well from her previous roles within Plasma Control Technologies. During more than eight years with the company, she held several global and regional sales leadership positions, most recently as Director Sales EMEA and Vacuum Capacitors Global. 
+
+Since 2024, she has served as General Manager Europe and RoW at VAT Group.
+
+Read more
+
+Back
+
+Back
+
+Service                
+
+Service offering
+
+Technical support
+
+Returns & repairs - globally
+
+Returns & repairs - to Denmark
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Contact                
+
+Comet X-ray offices
+
+Local contacts
+
+Supply chain
+
+Applications
+
+Additive manufacturing
+
+Aerospace
+
+Automotive
+
+Battery
+
+Electronics
+
+Irradiation
+
+Other NDT
+
+Oil & gas
+
+Security
+
+Sorting
+
+Thickness gauging
+
+About us                
+
+Annual Appreciation Award 
+
+Comet
+
+Comet X-ray
+
+Open positions
+
+Poster gallery
+
+News                
+
+News and more
+
+Virtual Patent Marking
+
+Cookies
+
+Disclaimer
+
+Imprint
+
+Privacy policy
+
+© 2026 Comet Group
+
