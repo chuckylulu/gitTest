@@ -7,8 +7,6 @@ A2-123,[F],"PERIOD 'FY2023 end' -> expected '30 Mar 2024', got 'as of 1 Apr 2024
 A2-128,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'as of 31 Mar 2026'",,FY2025,as of 31 Mar 2026,p.160; Note 22 Revenue (2) Contract Bala
 A2-155,[C],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'as of Jun 2026 filing'",,FY2025,as of Jun 2026 filing,p.42; Business risks - supply chain risk
 A3-233,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got '2026'",,FY2026,2026,web page; news list
-A3-239,[F],SECONDARY source tagged [F],140,FY2024-FY2026,Apr 2024-Mar 2027,"p.3; Targeted management metrics, note *"
-A3-240,[F],SECONDARY source tagged [F],21.2,FY2021-FY2023,Apr 2021-Mar 2024,p.3; Targeted management metrics table
 A3-254,[F],"PERIOD 'FY2023' -> expected 'Apr 2023-Mar 2024', got 'Jan-Apr 2024'",,FY2023,Jan-Apr 2024,web page; news list
 A3-261,[F],"PERIOD 'FY2023' -> expected 'Apr 2023-Mar 2024', got '2023'",,FY2023,2023,web page; news list
 A4-319,[F],VALUE not on cited page: ['10'],2022-10-07,,Oct 2022,p.1; rule text
@@ -26,32 +24,29 @@ A5-065,[F],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026'","36,0
 A5-066,[F],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026'","2,777,777",FY2026 Q1,Apr 2026,p.10; Item3 1.(2) 2) Other Status of Sha
 A5-069,[F],"PERIOD 'FY2030' -> expected 'Apr 2030-Mar 2031', got 'Apr-Dec 2030'",130,FY2030,Apr-Dec 2030,p.12; Item3 Note 5.(2)
 A5-071,[F],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026'",,FY2026 Q1,Apr 2026,p.183; Note 33 (12) Security or Guarante
-A5-075,[F],"PERIOD 'FY2026 Q3' -> expected 'Oct-Dec 2026', got 'Oct 2026' | SECONDARY source tagged [F]","35,946.5",FY2026 Q3,Oct 2026,p.1; 1. Adjustment of Conversion Price
-A5-076,[F],"PERIOD 'FY2026 Q2' -> expected 'Jul-Sep 2026', got 'record date 30 Sep 2026' | SECONDARY source tagged [F]",49,FY2026 Q2,record date 30 Sep 2026,p.1; 3. Reason for the Adjustment
+A5-075,[F],"PERIOD 'FY2026 Q3' -> expected 'Oct-Dec 2026', got 'Oct 2026'","35,946.5",FY2026 Q3,Oct 2026,p.1; 1. Adjustment of Conversion Price
+A5-076,[F],"PERIOD 'FY2026 Q2' -> expected 'Jul-Sep 2026', got 'record date 30 Sep 2026'",49,FY2026 Q2,record date 30 Sep 2026,p.1; 3. Reason for the Adjustment
 A5-081,[C],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026'",60,FY2026 Q1,Apr 2026,p.24; CFO Message - Making Effective Use
 A5-082,[C],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026'",0.4,FY2026 Q1,Apr 2026,p.24; CFO Message
 A5-083,[C],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026'",,FY2026 Q1,Apr 2026,p.23; CFO Message - 2. Utilizing Debt
 A5-084,[C],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got '2026'",,FY2026,2026,p.23; CFO Message - 2. Utilizing Debt
 A5-085,[C],"PERIOD 'FY2026 Q1' -> expected 'Apr-Jun 2026', got 'Apr 2026' | VALUE not on cited page: ['8']",8,FY2026 Q1,Apr 2026,p.24; CFO Message
-A5-094,[F],"PERIOD 'FY2024' -> expected 'Apr 2024-Mar 2025', got 'Nov 2024-Feb 2025' | SECONDARY source tagged [F]",50,FY2024,Nov 2024-Feb 2025,p.1; 2. Details of acquisition
-A5-095,[F],"PERIOD 'FY2024' -> expected 'Apr 2024-Mar 2025', got 'Nov 2024-Jan 2025' | SECONDARY source tagged [F]","49,999,998,563",FY2024,Nov 2024-Jan 2025,p.1; Reference 2. Cumulative total
-A5-096,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'May-Sep 2025' | SECONDARY source tagged [F]",70,FY2025,May-Sep 2025,p.1; 2. Details of acquisition
-A5-097,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'May-Sep 2025' | SECONDARY source tagged [F]","69,999,937,500",FY2025,May-Sep 2025,p.1; Reference 2. Cumulative total
-A5-098,[F],SECONDARY source tagged [F],150,FY2025-FY2026,Nov 2025-Oct 2026,p.1; 2. Details of acquisition
+A5-094,[F],"PERIOD 'FY2024' -> expected 'Apr 2024-Mar 2025', got 'Nov 2024-Feb 2025'",50,FY2024,Nov 2024-Feb 2025,p.1; 2. Details of acquisition
+A5-095,[F],"PERIOD 'FY2024' -> expected 'Apr 2024-Mar 2025', got 'Nov 2024-Jan 2025'","49,999,998,563",FY2024,Nov 2024-Jan 2025,p.1; Reference 2. Cumulative total
+A5-096,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'May-Sep 2025'",70,FY2025,May-Sep 2025,p.1; 2. Details of acquisition
+A5-097,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'May-Sep 2025'","69,999,937,500",FY2025,May-Sep 2025,p.1; Reference 2. Cumulative total
 A5-099,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'Nov 2025-Mar 2026'","44,228,372,000",FY2025,Nov 2025-Mar 2026,p.69; Item4 2.(2) Status of Acquisition 
 A5-100,[F],"PERIOD 'FY2026 1H' -> expected 'Apr-Sep 2026', got 'Apr-Aug 2026'","105,768,344,000",FY2026 1H,Apr-Aug 2026,p.28; Note 6 Equity and Other Equity Ite
-A5-101,[F],SECONDARY source tagged [F],"149,996,716,000",FY2025-FY2026,Nov 2025-Aug 2026,p.1; Reference 2. Cumulative total
-A5-102,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Oct 2026-Mar 2027' | SECONDARY source tagged [F]",280,FY2026,Oct 2026-Mar 2027,p.1; 2. Details of repurchase
-A5-103,[F],SECONDARY source tagged [F],"721,952,905",FY2026 Q2 end,30 Sep 2026,p.1; Reference
-A5-104,[F],"PERIOD 'FY2026 Q3' -> expected 'Oct-Dec 2026', got '29-31 Oct 2026' | SECONDARY source tagged [F]","14,563,326,000",FY2026 Q3,29-31 Oct 2026,p.1; Status of share repurchase
-A5-105,[F],"PERIOD 'FY2025 Q4' -> expected 'Jan-Mar 2026', got 'Feb 2026' | SECONDARY source tagged [F]","34,141,256",FY2025 Q4,Feb 2026,p.1; 2. Total number of shares cancelled
-A5-106,[F],"PERIOD 'FY2025 Q4' -> expected 'Jan-Mar 2026', got 'Jan-Feb 2026' | SECONDARY source tagged [F]","766,141,256",FY2025 Q4,Jan-Feb 2026,p.1; For reference
-A5-109,[F],"PERIOD 'FY2026 Q3' -> expected 'Oct-Dec 2026', got 'Oct 2026' | SECONDARY source tagged [F]","40,198",FY2026 Q3,Oct 2026,p.1; Outline of the Disposal Treasury St
+A5-102,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Oct 2026-Mar 2027'",280,FY2026,Oct 2026-Mar 2027,p.1; 2. Details of repurchase
+A5-104,[F],"PERIOD 'FY2026 Q3' -> expected 'Oct-Dec 2026', got '29-31 Oct 2026'","14,563,326,000",FY2026 Q3,29-31 Oct 2026,p.1; Status of share repurchase
+A5-105,[F],"PERIOD 'FY2025 Q4' -> expected 'Jan-Mar 2026', got 'Feb 2026'","34,141,256",FY2025 Q4,Feb 2026,p.1; 2. Total number of shares cancelled
+A5-106,[F],"PERIOD 'FY2025 Q4' -> expected 'Jan-Mar 2026', got 'Jan-Feb 2026'","766,141,256",FY2025 Q4,Jan-Feb 2026,p.1; For reference
+A5-109,[F],"PERIOD 'FY2026 Q3' -> expected 'Oct-Dec 2026', got 'Oct 2026'","40,198",FY2026 Q3,Oct 2026,p.1; Outline of the Disposal Treasury St
 A5-110,[F],"PERIOD 'FY2024 Q2' -> expected 'Jul-Sep 2024', got 'record date 30 Sep 2024'","14,047",FY2024 Q2,record date 30 Sep 2024,p.158; Note 21(1) Dividends Paid
 A5-111,[F],"PERIOD 'FY2024 Q4' -> expected 'Jan-Mar 2025', got 'record date 31 Mar 2025'","14,674",FY2024 Q4,record date 31 Mar 2025,p.158; Note 21(1) Dividends Paid
 A5-112,[F],"PERIOD 'FY2025 Q2' -> expected 'Jul-Sep 2025', got 'record date 30 Sep 2025'","21,094",FY2025 Q2,record date 30 Sep 2025,p.158; Note 21(1) Dividends Paid
 A5-113,[F],"PERIOD 'FY2025 Q4' -> expected 'Jan-Mar 2026', got 'record date 31 Mar 2026'","21,765",FY2025 Q4,record date 31 Mar 2026,p.158; Note 21(2)
-A5-114,[F],"PERIOD 'FY2026 Q2' -> expected 'Jul-Sep 2026', got 'record date 30 Sep 2026' | SECONDARY source tagged [F]","35,376",FY2026 Q2,record date 30 Sep 2026,p.1; 1. Details of Interim Dividends
+A5-114,[F],"PERIOD 'FY2026 Q2' -> expected 'Jul-Sep 2026', got 'record date 30 Sep 2026'","35,376",FY2026 Q2,record date 30 Sep 2026,p.1; 1. Details of Interim Dividends
 A5-119,[F],"PERIOD 'FY2023 Q3' -> expected 'Oct-Dec 2023', got 'Oct 2023'",4-for-1,FY2023 Q3,Oct 2023,p.1; Dividend per share - footnote
 A5-127,[C],"PERIOD 'FY2026 Q2' -> expected 'Jul-Sep 2026', got 'Oct 2026'",,FY2026 Q2,Oct 2026,p.1; 1. Reason for repurchasing own shar
 A5-130,[F],"PERIOD 'FY2021 Q3' -> expected 'Oct-Dec 2021', got 'Oct 2021'",2021-10-26,FY2021 Q3,Oct 2021,p.1; News text
@@ -150,8 +145,8 @@ CL-093,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Dec 2026' | VA
 CL-095,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Mar 2027'",2027-03-31,FY2026,Mar 2027,"section: FY2026 Yearly Calendar, 2027 Ma"
 CL-096,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Jul 2026' | VALUE not on cited page: ['07']",2026-07-31,FY2026,Jul 2026,section: FY2026 Yearly Calendar
 CL-098,[F],"PERIOD 'FY2025' -> expected 'Apr 2025-Mar 2026', got 'Jun 2025'",,FY2025,Jun 2025,p.24; Governance / CFO-CEO discussion pa
-CL-099,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Oct 2026-Mar 2027' | VALUE not on cited page: ['11000000'] | SECONDARY source tagged [F]","11,000,000; 280; 2027-03-24",FY2026,Oct 2026-Mar 2027,p.1; 2. Details of repurchase
-CL-100,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got '29-31 Oct 2026' | SECONDARY source tagged [F]","420,900; 14,563,326,000",FY2026,29-31 Oct 2026,"p.1; Progress (As of October 31, 2026)"
+CL-099,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got 'Oct 2026-Mar 2027' | VALUE not on cited page: ['11000000']","11,000,000; 280; 2027-03-24",FY2026,Oct 2026-Mar 2027,p.1; 2. Details of repurchase
+CL-100,[F],"PERIOD 'FY2026' -> expected 'Apr 2026-Mar 2027', got '29-31 Oct 2026'","420,900; 14,563,326,000",FY2026,29-31 Oct 2026,"p.1; Progress (As of October 31, 2026)"
 CL-102,[C],"PERIOD 'FY2027' -> expected 'Apr 2027-Mar 2028', got 'May 2027'",around May 2027,FY2027,May 2027,p.3; Q&A Q11/A11
 CL-108,[F],VALUE not on cited page: ['11'],2026-11-30,CY2026 Q4,Nov 2026,section: news list / IR calendar link
 CL-111,[F],"VALUE not on cited page: ['04', '04']",2026-04-27; 2025-04-25,FY2025; FY2024,Apr 2026; Apr 2025,section: FY2026 and FY2025 Yearly Calend

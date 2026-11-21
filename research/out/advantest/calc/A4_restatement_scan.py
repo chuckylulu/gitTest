@@ -59,7 +59,7 @@ def compare(title, a, b):
 
 R = {}
 FR24, FR25 = "2025-04-25_advantest_financial-results-FY2024Q4-full-year", "2026-04-27_advantest_financial-results-FY2025Q4-full-year"
-ASR83, ASR84 = "2025-06-24_advantest_annual-securities-report-83rd-FY2024", "2026-06-25_advantest_annual-securities-report-84th-FY2025"
+ASR83, ASR84 = "2025-06-25_advantest_annual-securities-report-83rd-FY2024", "2026-06-26_advantest_annual-securities-report-84th-FY2025"
 jobs = [
     ("FY2024 P&L: FY2024 results vs FY2025 results", (FR24, [11], 1), (FR25, [11], 0)),
     ("31 Mar 2025 balance sheet: FY2024 results vs FY2025 results", (FR24, [9, 10], 1), (FR25, [9, 10], 0)),
