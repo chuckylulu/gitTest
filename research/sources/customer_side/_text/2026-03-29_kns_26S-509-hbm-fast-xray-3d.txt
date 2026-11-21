@@ -1,0 +1,132 @@
+                                Transactions of the Korean Nuclear Society Spring Meeting
+                                                Jeju, Korea, May 7-8, 2026
+
+
+
+      Development of a High-resolution X-ray 3D Imaging System for Inspection of High
+                                    Bandwidth Memory
+
+                                         Jaeyoung Im a, Sung Oh Cho a
+ a
+  Department of Nuclear and Quantum Engineering, Korea Advanced Institute of Science and Technology, Daejeon,
+                                              Republic of Korea
+                                  *
+                                    Corresponding author: socho@kaist.ac.kr
+
+*Keywords : High-resolution, X-ray imaging, 3-dimension, High bandwidth memory
+
+
+                    1. Introduction                                        •      Redistribution layers (RDL)
+                                                                           •      Substrate interconnects
+   With the rapid advancement of high-performance                 The critical defect sizes to be detected are typically in
+computing (HPC), artificial intelligence (AI), and data-       the range of 5–20 μm (TSV voids, micro-cracks, bump
+center technologies, the demand for high-bandwidth             defects), requiring high spatial resolution and high
+memory (HBM) has significantly increased. HBM                  contrast sensitivity.
+devices consist of vertically stacked DRAM dies                   To determine optimal X-ray energy conditions,
+interconnected through Through-Silicon Vias (TSVs)             preliminary simulations and reference experiments were
+and micro-bumps. Due to this complex 3D architecture,          conducted considering silicon, copper TSVs, and
+internal defects such as TSV voids, micro-bump                 underfill materials. The optimal tube voltage was found
+misalignment, cracks, and delamination can critically          to be in the range of 80–120 kVp, providing sufficient
+degrade performance and yield.                                 penetration through stacked silicon while maintaining
+   Therefore, non-destructive 3D inspection during             contrast for TSV and bump defects.
+manufacturing is essential to ensure reliability and
+productivity. X-ray inspection is widely adopted for           2.1.2 Decoupling X-ray focal spot size from spatial
+internal defect detection in advanced semiconductor            resolution
+packaging. However, conventional high-resolution 3D               In conventional geometric magnification-based X-ray
+X-ray imaging systems rely on geometric magnification          systems, spatial resolution is directly linked to the focal
+using micro-focus X-ray tubes with very small focal            spot size. Therefore, achieving micrometer-scale
+spots. While these systems achieve high spatial                resolution requires a micro-focus X-ray tube with a
+resolution, their limited output power severely restricts      focal spot size of a few micrometers. However, such
+inspection throughput. As a result, acquiring high-            tubes operate at low output power (typically < 20 W),
+resolution 3D datasets can require tens of minutes per         limiting X-ray flux and increasing acquisition time.
+device, which is incompatible with inline                         In this study, we adopt a scintillator-based optical
+semiconductor manufacturing environments.                      magnification architecture that decouples the X-ray
+   To address this limitation, this study proposes an          focal spot size from the spatial resolution. The key
+optically coupled high-resolution X-ray 3D inspection          principle is that spatial resolution is determined
+system for HBM devices. By decoupling the X-ray                primarily by:
+focal spot size from the spatial resolution using an                        •     Scintillator thickness and light spread
+optical magnification approach, the system enables                          •     Optical lens numerical aperture (NA)
+high-speed 3D imaging while maintaining sufficient                          •     Camera pixel size and quantum
+resolution for TSV and micro-bump inspection.                            efficiency
+                                                                  rather than by geometric magnification alone.
+               2. Methods and Results                             Accordingly, a high-power X-ray tube with a
+                                                               relatively large focal spot can be used without
+2.1 Design of Fast X-ray 3D Imaging System for HBM             degrading spatial resolution at the object plane. The
+Inspection                                                     significantly increased X-ray flux enables:
+                                                                            •     Shorter exposure times
+2.1.1 Object – HBM Stacked Memory Package                                   •     Faster projection acquisition
+                                                                            •     Reduced total 3D scan time
+   The inspection target is an HBM stacked memory                 As a result, 3D imaging of HBM packages can be
+package consisting of multiple DRAM dies vertically            performed within minutes rather than tens of minutes,
+interconnected through TSVs. The structure includes:           enabling compatibility with inline semiconductor
+           •      TSV arrays within silicon dies               inspection workflows.
+           •      Micro-bump            interconnections
+         between dies
+           •      Underfill materials
+                                 Transactions of the Korean Nuclear Society Spring Meeting
+                                                 Jeju, Korea, May 7-8, 2026
+
+
+
+                                                                than 1 μm, which will be experimentally verified
+                                                                through 3D reconstruction of dedicated resolution
+                                                                phantoms.
+                                                                3D X-ray Imaging of HBM Packages
+                                                                   High-resolution 3D X-ray imaging of actual HBM
+                                                                stacked memory packages will be performed using the
+                                                                developed system. The 3D reconstructed volumes are
+                                                                expected to visualize internal structures including TSV
+                                                                arrays, micro-bump interconnections, and underfill
+                                                                layers with sub-micrometer spatial resolution, enabling
+                                                                reliable detection of defects in the 5–20 μm range.
+                                                                Scan Time Benchmarking
+                                                                   The total 3D scan time of the proposed optically
+                                                                coupled system will be benchmarked against
+                                                                conventional micro-focus X-ray CT systems. The high-
+                                                                power X-ray tube employed in the proposed system is
+                                                                expected to significantly reduce the scan time,
+                                                                demonstrating the feasibility of inline inspection
+                                                                workflows compatible with HBM manufacturing
+  Fig. 1. The developed high-resolution X-ray 3D imaging        throughput requirements.
+system                                                          Defect Detectability Assessment
+                                                                   The detectability of critical internal defects such as
+                      3. Summary                                TSV      voids,    micro-bump        misalignment,    and
+                                                                delamination will be systematically evaluated using
+   In this study, we designed and developed a high-             both phantom specimens and actual HBM devices.
+speed 3D X-ray inspection system tailored for HBM               Detection sensitivity as a function of defect size and
+stacked memory packages. By adopting an optically               contrast will be characterized to establish the practical
+coupled architecture, the spatial resolution was                inspection capability of the system.
+decoupled from the X-ray focal spot size, enabling the
+use of a high-power X-ray tube without sacrificing                                   REFERENCES
+image quality.
+   The system achieved micrometer-scale resolution              [1] WANG, Yuqing, et al. Recent progress on the recycling
+sufficient for TSV and micro-bump inspection while              technology of Li-ion batteries. Journal of Energy Chemistry,
+significantly reducing scan time compared to                    2021, 55: 391-419.
+conventional geometric magnification systems.                   [2] CARMIGNATO, Simone, et al. X-ray computed
+   Further improvements can be realized by:                     tomography. In: Precision Metal Additive Manufacturing.
+             •      Employing       higher    light-yield       CRC Press, 2020. p. 313-346.
+                                                                [3] ESTRIBEAU, Magali; MAGNAN, Pierre. Fast MTF
+          scintillators
+                                                                measurement of CMOS imagers using ISO 12333 slanted-
+             •      Using optical lenses with larger            edge methodology. In: Detectors and Associated Signal
+          numerical aperture (NA)                               Processing. SPIE, 2004. p. 243-252.
+             •      Adopting     high-quantum-efficiency
+          CMOS cameras
+             •      Integrating optimized reconstruction
+          algorithms       for    semiconductor-specific
+          structures
+   This approach provides a scalable solution for inline,
+high-throughput 3D inspection of next-generation HBM
+devices.
+                     4. Further works
+
+   The developed high-resolution X-ray 3D imaging
+system is currently under active development. The
+following experimental validations and system
+improvements are planned:
+System Performance Validation
+   The spatial resolution of the developed system will
+be quantitatively evaluated using standard resolution
+targets and slanted-edge MTF measurements. The
+system is designed to achieve a spatial resolution of less
+

@@ -1,0 +1,6691 @@
+
+
+US10984853B2 - X-ray detector, semiconductor memory device including the same, method of testing semiconductor memory device and method of manufacturing semiconductor memory device 
+        - Google Patents
+
+US10984853B2 - X-ray detector, semiconductor memory device including the same, method of testing semiconductor memory device and method of manufacturing semiconductor memory device 
+        - Google Patents
+
+X-ray detector, semiconductor memory device including the same, method of testing semiconductor memory device and method of manufacturing semiconductor memory device 
+
+Download PDF
+
+Info
+
+Publication number
+
+US10984853B2
+
+US10984853B2
+
+US16/410,120
+
+US201916410120A
+
+US10984853B2
+
+US 10984853 B2
+
+US10984853 B2
+
+US 10984853B2
+
+US 201916410120 A
+
+US201916410120 A
+
+US 201916410120A
+
+US 10984853 B2
+
+US10984853 B2
+
+US 10984853B2
+
+Authority
+
+US
+
+United States
+
+Prior art keywords
+
+memory device
+
+semiconductor memory
+
+bjt
+
+data
+
+pad
+
+Prior art date
+
+2018-10-01
+
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+
+Active
+, expires 
+2039-05-14
+
+Application number
+
+US16/410,120
+
+Other versions
+
+US20200105339A1
+
+      (
+en
+
+Inventor
+
+Ji-Woong Kim
+
+Kyoung-Don KIM
+
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+
+    Samsung Electronics Co Ltd
+
+Original Assignee
+
+Samsung Electronics Co Ltd
+
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+
+2018-10-01
+
+Filing date
+
+2019-05-13
+
+Publication date
+
+2021-04-20
+
+2019-05-13
+
+Application filed by Samsung Electronics Co Ltd
+
+filed
+
+Critical
+
+Samsung Electronics Co Ltd
+
+2019-05-13
+
+Assigned to SAMSUNG ELECTRONICS CO., LTD.
+
+reassignment
+
+SAMSUNG ELECTRONICS CO., LTD.
+
+ASSIGNMENT OF ASSIGNORS INTEREST (SEE DOCUMENT FOR DETAILS).
+
+Assignors: KIM, KYOUNG-DON, KIM, JI-WOONG
+
+2020-04-02
+
+Publication of US20200105339A1
+
+publication
+
+Critical
+
+patent/US20200105339A1/en
+
+2021-04-20
+
+Application granted
+
+granted
+
+Critical
+
+2021-04-20
+
+Publication of US10984853B2
+
+publication
+
+Critical
+
+patent/US10984853B2/en
+
+Status
+
+Active
+
+legal-status
+
+Critical
+
+Current
+
+2039-05-14
+
+Adjusted expiration
+
+legal-status
+
+Critical
+
+Links
+
+USPTO
+
+USPTO PatentCenter
+
+USPTO Assignment
+
+Espacenet
+
+Global Dossier
+
+Discuss
+
+Images
+
+Classifications
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C11/00
+—
+Digital stores characterised by the use of particular electric or magnetic storage elements; Storage elements therefor
+
+G11C11/21
+—
+Digital stores characterised by the use of particular electric or magnetic storage elements; Storage elements therefor using electric elements
+
+G11C11/34
+—
+Digital stores characterised by the use of particular electric or magnetic storage elements; Storage elements therefor using electric elements using semiconductor devices
+
+G11C11/40
+—
+Digital stores characterised by the use of particular electric or magnetic storage elements; Storage elements therefor using electric elements using semiconductor devices using transistors
+
+G11C11/41
+—
+Digital stores characterised by the use of particular electric or magnetic storage elements; Storage elements therefor using electric elements using semiconductor devices using transistors forming static cells with positive feedback, i.e. cells not needing refreshing or charge regeneration, e.g. bistable multivibrator or Schmitt trigger
+
+G11C11/412
+—
+Digital stores characterised by the use of particular electric or magnetic storage elements; Storage elements therefor using electric elements using semiconductor devices using transistors forming static cells with positive feedback, i.e. cells not needing refreshing or charge regeneration, e.g. bistable multivibrator or Schmitt trigger using field-effect transistors only
+
+G11C11/4125
+—
+Cells incorporating circuit means for protecting against loss of information
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C29/00
+—
+Checking stores for correct operation ; Subsequent repair; Testing stores during standby or offline operation
+
+G11C29/04
+—
+Detection or location of defective memory elements, e.g. cell constructio details, timing of test signals
+
+G11C29/50
+—
+Marginal testing, e.g. race, voltage or current testing
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10F
+—
+INORGANIC SEMICONDUCTOR DEVICES SENSITIVE TO INFRARED RADIATION, LIGHT, ELECTROMAGNETIC RADIATION OF SHORTER WAVELENGTH OR CORPUSCULAR RADIATION
+
+H10F39/00
+—
+Integrated devices, or assemblies of multiple devices, comprising at least one element covered by group H10F30/00, e.g. radiation detectors comprising photodiode arrays
+
+H10F39/10
+—
+Integrated devices
+
+H10F39/103
+—
+Integrated devices the at least one element covered by H10F30/00 having potential barriers, e.g. integrated devices comprising photodiodes or phototransistors
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01T
+—
+MEASUREMENT OF NUCLEAR OR X-RADIATION
+
+G01T1/00
+—
+Measuring X-radiation, gamma radiation, corpuscular radiation, or cosmic radiation
+
+G01T1/16
+—
+Measuring radiation intensity
+
+G01T1/24
+—
+Measuring radiation intensity with semiconductor detectors
+
+G01T1/245
+—
+Measuring radiation intensity with semiconductor detectors using memory cells
+
+G
+—
+PHYSICS
+
+G01
+—
+MEASURING; TESTING
+
+G01T
+—
+MEASUREMENT OF NUCLEAR OR X-RADIATION
+
+G01T1/00
+—
+Measuring X-radiation, gamma radiation, corpuscular radiation, or cosmic radiation
+
+G01T1/16
+—
+Measuring radiation intensity
+
+G01T1/24
+—
+Measuring radiation intensity with semiconductor detectors
+
+G01T1/246
+—
+Measuring radiation intensity with semiconductor detectors utilizing latent read-out, e.g. charge stored and read-out later
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C29/00
+—
+Checking stores for correct operation ; Subsequent repair; Testing stores during standby or offline operation
+
+G11C29/52
+—
+Protection of memory contents; Detection of errors in memory contents
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C29/00
+—
+Checking stores for correct operation ; Subsequent repair; Testing stores during standby or offline operation
+
+G11C29/56
+—
+External testing equipment for static stores, e.g. automatic test equipment [ATE]; Interfaces therefor
+
+H01L22/12
+—
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10D
+—
+INORGANIC ELECTRIC SEMICONDUCTOR DEVICES
+
+H10D48/00
+—
+Individual devices not covered by groups H10D1/00 - H10D44/00
+
+H10D48/30
+—
+Devices controlled by electric currents or voltages
+
+H10D48/32
+—
+Devices controlled by only the electric current supplied, or only the electric potential applied, to an electrode which does not carry the current to be rectified, amplified or switched
+
+H10D48/34
+—
+Bipolar devices
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10D
+—
+INORGANIC ELECTRIC SEMICONDUCTOR DEVICES
+
+H10D84/00
+—
+Integrated devices formed in or on semiconductor substrates that comprise only semiconducting layers, e.g. on Si wafers or on GaAs-on-Si wafers
+
+H10D84/01
+—
+Manufacture or treatment
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10F
+—
+INORGANIC SEMICONDUCTOR DEVICES SENSITIVE TO INFRARED RADIATION, LIGHT, ELECTROMAGNETIC RADIATION OF SHORTER WAVELENGTH OR CORPUSCULAR RADIATION
+
+H10F30/00
+—
+Individual radiation-sensitive semiconductor devices in which radiation controls the flow of current through the devices, e.g. photodetectors
+
+H10F30/301
+—
+Individual radiation-sensitive semiconductor devices in which radiation controls the flow of current through the devices, e.g. photodetectors the devices being sensitive to very short wavelength, e.g. being sensitive to X-rays, gamma-rays or corpuscular radiation
+
+H
+—
+ELECTRICITY
+
+H10
+—
+SEMICONDUCTOR DEVICES; ELECTRIC SOLID-STATE DEVICES NOT OTHERWISE PROVIDED FOR
+
+H10P
+—
+GENERIC PROCESSES OR APPARATUS FOR THE MANUFACTURE OR TREATMENT OF DEVICES COVERED BY CLASS H10
+
+H10P74/00
+—
+Testing or measuring during manufacture or treatment of wafers, substrates or devices
+
+H10P74/20
+—
+Testing or measuring during manufacture or treatment of wafers, substrates or devices characterised by the properties tested or measured, e.g. structural or electrical properties
+
+H10P74/203
+—
+Structural properties, e.g. testing or measuring thicknesses, line widths, warpage, bond strengths or physical defects
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C29/00
+—
+Checking stores for correct operation ; Subsequent repair; Testing stores during standby or offline operation
+
+G11C29/04
+—
+Detection or location of defective memory elements, e.g. cell constructio details, timing of test signals
+
+G11C2029/0403
+—
+Detection or location of defective memory elements, e.g. cell constructio details, timing of test signals during or with feedback to manufacture
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C29/00
+—
+Checking stores for correct operation ; Subsequent repair; Testing stores during standby or offline operation
+
+G11C29/04
+—
+Detection or location of defective memory elements, e.g. cell constructio details, timing of test signals
+
+G11C29/50
+—
+Marginal testing, e.g. race, voltage or current testing
+
+G11C2029/5002
+—
+Characteristic
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C29/00
+—
+Checking stores for correct operation ; Subsequent repair; Testing stores during standby or offline operation
+
+G11C29/56
+—
+External testing equipment for static stores, e.g. automatic test equipment [ATE]; Interfaces therefor
+
+G11C2029/5604
+—
+Display of error information
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C5/00
+—
+Details of stores covered by group G11C11/00
+
+G11C5/005
+—
+Circuit means for protection against loss of information of semiconductor storage devices
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C7/00
+—
+Arrangements for writing information into, or reading information out from, a digital store
+
+G11C7/02
+—
+Arrangements for writing information into, or reading information out from, a digital store with means for avoiding parasitic signals
+
+G
+—
+PHYSICS
+
+G11
+—
+INFORMATION STORAGE
+
+G11C
+—
+STATIC STORES
+
+G11C7/00
+—
+Arrangements for writing information into, or reading information out from, a digital store
+
+G11C7/10
+—
+Input/output [I/O] data interface arrangements, e.g. I/O data control circuits, I/O data buffers
+
+G11C7/1078
+—
+Data input circuits, e.g. write amplifiers, data input buffers, data input registers, data input level conversion circuits
+
+G11C7/1084
+—
+Data input buffers, e.g. comprising level conversion circuits, circuits for adapting load
+
+Definitions
+
+Korean Patent Application No. 10-2018-0116786
+
+filed on Oct. 1, 2018 in the Korean Intellectual Property Office (KIPO), and entitled: “X-Ray Detector, Semiconductor Memory Device Including the Same, Method of Testing Semiconductor Memory Device and Method of Manufacturing Semiconductor Memory Device,” is incorporated by reference herein in its entirety.
+
+Example embodiments
+
+relate generally to semiconductor devices and, more particularly, to X-ray detectors, semiconductor memory devices including the X-ray detectors, methods of testing the semiconductor memory devices and methods of manufacturing the semiconductor memory devices.
+
+Semiconductor memory devices
+
+store data in memory cells by performing a write operation and read the stored data by performing a read operation.
+
+Semiconductor memory devices
+
+can generally be divided into two categories depending upon whether or not they retain stored data when disconnected from a power supply. These categories include volatile memory devices, which lose stored data when disconnected from power, and nonvolatile memory devices, which retain stored data when disconnected from power.
+
+X-ray inspection
+
+has been performed to detect defects during manufacture and assembly of semiconductor memory devices. As semiconductor process technology continues to develop and wiring width and chip thickness have decreased, the damage of semiconductor memory devices by X-ray is increasing. However, quantifying the X-ray dosage is difficult.
+
+a semiconductor memory device
+
+includes a first data input/output (I/O) pad, an X-ray detector and a second data I/O pad.
+
+the first data I/O pad
+
+receives a test signal.
+
+the X-ray detector
+
+is connected to the first data I/O pad, includes a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device, and generates a test result signal indicating the voltage between the input and output ends of the BJT based on the test signal.
+
+BJT
+
+bipolar junction transistor
+
+the second data I/O pad
+
+is connected to the X-ray detector and outputs the test result signal.
+
+an X-ray detector
+
+includes a current source, a bipolar junction transistor (BJT) and a voltage measurer.
+
+the current source
+
+is connected to a first data input/output (I/O) pad of a semiconductor memory device and generates a first current based on a test signal received from the first data I/O pad.
+
+the BJT
+
+is connected to the current source and includes an emitter electrode, a base electrode and a collector electrode to which the first current is applied.
+
+the voltage measurer
+
+is connected to the BJT and a second data I/O pad of the semiconductor memory device and generates a test result signal based on a voltage between the collector electrode and the emitter electrode of the BJT to output the test result signal through the second data I/O pad when the first current is applied to the collector electrode of the BJT.
+
+the voltage between the collector electrode and the emitter electrode of the BJT
+
+is changed according to a cumulative X-ray dosage to the semiconductor memory device.
+
+a test signal
+
+is applied to a first data input/output (I/O) pad of the semiconductor memory device that includes the first data I/O pad, an X-ray detector connected to the first data I/O pad and including a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device and a second data I/O pad connected to the X-ray detector.
+
+BJT
+
+bipolar junction transistor
+
+the semiconductor memory device
+
+in a method of manufacturing a semiconductor memory device, the semiconductor memory device that includes a first data input/output (I/O) pad, an X-ray detector connected to the first data I/O pad and including a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device and a second data I/O pad connected to the X-ray detector is fabricated.
+
+the semiconductor memory device
+
+is tested based on the X-ray detector.
+
+a test signal
+
+is applied to the first data I/O pad of the semiconductor memory device. Whether the semiconductor memory device is defective is determined based on a test result signal that is generated by the X-ray detector based on the test signal, indicates the voltage between the first and second ends of the BJT and is output through the second data I/O pad.
+
+FIG. 1
+
+illustrates a semiconductor memory device according to example embodiments.
+
+FIG. 2
+
+illustrates an X-ray detector according to example embodiments.
+
+FIG. 3
+
+illustrates a cross-sectional view of an example of a BJT included in the X-ray detector of FIG. 2 .
+
+FIGS. 4A, 4B, 4C and 5
+
+illustrate diagrams for describing an operation of an X-ray detector according to example embodiments.
+
+FIGS. 6 and 7
+
+illustrate an X-ray detector according to example embodiments.
+
+FIGS. 8A, 8B and 8C
+
+illustrate diagrams for describing an operation of a semiconductor memory device according to example embodiments.
+
+FIGS. 9 and 10
+
+illustrate a semiconductor memory device according to example embodiments.
+
+FIG. 11
+
+illustrates of a semiconductor memory device according to example embodiments.
+
+FIG. 12
+
+illustrates a plan view of a layout of a semiconductor memory device according to example embodiments.
+
+FIG. 13
+
+illustrates a memory system including a semiconductor memory device according to example embodiments.
+
+FIG. 14
+
+illustrates a computing system including a semiconductor memory device according to example embodiments.
+
+FIG. 15
+
+illustrates a flowchart of a method of testing a semiconductor memory device according to example embodiments.
+
+FIG. 16
+
+illustrates a flowchart of an example of determining whether the semiconductor memory device is defective in FIG. 15 .
+
+FIG. 17
+
+illustrates a testing system that performs a method of testing a semiconductor memory device according to example embodiments.
+
+FIG. 18
+
+illustrates a flowchart of a method of manufacturing a semiconductor memory device according to example embodiments.
+
+FIG. 1
+
+illustrates a semiconductor memory device according to example embodiments.
+
+a semiconductor memory device 100
+
+includes a first data input/output (I/O) pad 102 , a second data I/O pad 104 , an X-ray detector 110 , and a memory cell array 130 .
+
+I/O
+
+input/output
+
+the first data I/O pad 102
+
+receives a test signal TS from an external test system (e.g., a test system 3000 of FIG. 17 ).
+
+the second data I/O pad 104
+
+is separated and distinguished from the first data I/O pad 102 , and outputs a test result signal TRS generated by the X-ray detector 110 .
+
+the test result signal TRS
+
+may be provided to the external test system and may be used for determining whether the semiconductor memory device is defective or not.
+
+the second I/O pad 104
+
+may be a contact pad or a contact pin.
+
+the X-ray detector 110
+
+(e.g., a device for measuring X-ray irradiation dosage) 110 is connected to the first data I/O pad 102 and the second data I/O pad 104 .
+
+the X-ray detector 110
+
+includes a bipolar junction transistor (BJT) 112 .
+
+a voltage between both ends of the BJT 112
+
+i.e., the input and output ends thereof, changes according to a cumulative X-ray dosage to the semiconductor memory device 100 (e.g., according to a total accumulated amount of X-ray incident on the semiconductor memory device 100 ).
+
+the X-ray detector 110
+
+generates the test result signal TRS indicating the voltage between the both ends of the BJT 112 based on the test signal TS. Configurations and operations of the X-ray detector 110 will be described in detail with reference to FIG. 2 .
+
+the memory cell array 130
+
+may also be connected to the first data I/O pad 102 and the second data I/O pad 104 .
+
+the memory cell array 130
+
+may include a plurality of memory cells for storing data.
+
+the memory cell array 130
+
+may store data received from the first and second data I/O pads 102 and 104 , or data stored in the memory cell array 130 may be output through the first and second data I/O pads 102 and 104 .
+
+each of the X-ray detector 110 and the memory cell array 130
+
+may be enabled or disabled according to an operation mode of the semiconductor memory device 100 , as will be described with reference to FIGS. 8A, 8B and 8C .
+
+the semiconductor memory device 100
+
+may not include additional data I/O pads and/or signal I/O pads for the X-ray detector 110 .
+
+the X-ray detector 110 in the semiconductor memory device 100
+
+may receive the test signal TS and may output the test result signal TRS using the data I/O pads 102 and 104 that are connected to the memory cell array 130 to store and/or output data.
+
+FIG. 1
+
+illustrates that the X-ray detector 110 and the memory cell array 130 are directly connected to the data I/O pads 102 and 104 , respectively.
+
+at least one element and/or circuit for driving the semiconductor memory device 100
+
+may be additionally provided between the memory cell array 130 and the data I/O pads 102 and 104 .
+
+the X-ray detector 110
+
+may be included in at least one element and/or circuit for driving the semiconductor memory device 100 .
+
+FIG. 2
+
+illustrates an X-ray detector according to example embodiments.
+
+FIG. 3
+
+is a cross-sectional view of an example of a BJT included in the X-ray detector of FIG. 2 .
+
+an X-ray detector 110 a
+
+includes a BJT 112 a , a current source 114 a and a voltage measurer 116 .
+
+the BJT 112 a
+
+includes an emitter electrode EE, a base electrode BE and a collector electrode CE. As described with reference to FIG. 1 , a voltage between both ends of the BJT 112 a changes according to the cumulative X-ray dosage incident on the semiconductor memory device 100 .
+
+the voltage between the both ends of the BJT 112 a
+
+may be a voltage VCE between the collector electrode CE and the emitter electrode EE of the BJT 112 a.
+
+the BJT 112 a
+
+may be an NPN (or an NPN-type) BJT.
+
+the BJT 112 a
+
+may further include a first N-type semiconductor region 1121 , a P-type semiconductor region 1122 , a second N-type semiconductor region 1123 , a first junction, and a second junction.
+
+the first N-type semiconductor region 1121
+
+may be connected to the emitter electrode EE.
+
+the P-type semiconductor region 1122
+
+may be connected to the base electrode BE.
+
+the second N-type semiconductor region 1123
+
+may be connected to the collector electrode CE.
+
+the first junction
+
+may be formed between the first N-type semiconductor region 1121 and the P-type semiconductor region 1122 .
+
+the second junction
+
+may be formed between the P-type semiconductor region 1122 and the second N-type semiconductor region 1123 .
+
+the BJT 112 a
+
+may be formed in a semiconductor substrate 101 .
+
+the first N-type semiconductor region 1121
+
+may be formed in the semiconductor substrate 101
+
+the P-type semiconductor region 1122
+
+may be formed in the semiconductor substrate 101 such that the first N-type semiconductor region 1121 is surrounded, e.g., on three sides, by the P-type semiconductor region 1122
+
+the second N-type semiconductor region 1123
+
+may be formed in the semiconductor substrate 101 such that the P-type semiconductor region 1122 is surrounded, e.g., on three sides, by the second N-type semiconductor region 1123 .
+
+the emitter electrode EE, the base electrode BE, and the collector electrode CE
+
+may be connected to the first N-type semiconductor region 1121 , the P-type semiconductor region 1122 , and the second N-type semiconductor region 1123 , respectively.
+
+a cross-sectional structure of the BJT 112 a
+
+may be changed according to example embodiments.
+
+the current source 114 a
+
+is connected to the first data I/O pad 102 of the semiconductor memory device 100 and receives the test signal TS from the first data I/O pad 102 .
+
+the current source 114 a
+
+generates a first current IC based on the test signal TS.
+
+the first current IC
+
+may be applied to the collector electrode CE of the BJT 112 a.
+
+a current IB and a current IE
+
+may flow in directions illustrated in FIG. 2 to the base electrode BE and from the emitter electrode EE, respectively.
+
+a voltage VCB
+
+may be between the collector electrode CE and the base electrode BE
+
+a voltage VBE
+
+may be between the base electrode BE and the emitter electrode EE
+
+the voltage VCE
+
+may be between the collector electrode CE and the emitter electrode EE.
+
+the voltage measurer 116
+
+is connected to the BJT 112 a and the second data I/O pad 104 of the semiconductor memory device 100 .
+
+the voltage measurer 116
+
+may generate the test result signal TRS based on the voltage between the both ends of the BJT 112 a (e.g., the voltage VCE between the collector electrode CE and the emitter electrode EE of the BJT 112 a ) when the first current IC is applied to the collector electrode CE of the BJT 112 a .
+
+the test result signal TRS
+
+may be output through the second data I/O pad 104 .
+
+a level of the first current IC generated from the current source 114 a
+
+may be always fixed.
+
+the voltage VCE between the collector electrode CE and the emitter electrode EE of the BJT 112 a
+
+may increase as the cumulative X-ray dosage increases.
+
+the fixed first current IC
+
+e.g., the first current IC having a constant level
+
+the collector electrode CE
+
+may be applied to determine whether the voltage VCE increases or not under the same conditions.
+
+FIGS. 4A, 4B, 4C, and 5
+
+are diagrams for describing an operation of an X-ray detector according to example embodiments.
+
+FIG. 4A
+
+is a graph illustrating a change of the voltage VCE in FIG. 2 according to the current IC in FIG. 2 when the cumulative X-ray dosage corresponds to a first time.
+
+FIG. 4B
+
+is a graph illustrating a change of the voltage VCE in FIG. 2 according to the current IC in FIG. 2 when the cumulative X-ray dosage corresponds to a second time longer than the first time.
+
+FIG. 4C
+
+is a graph illustrating a change of the voltage VCE in FIG. 2 according to the current IC in FIG. 2 when the cumulative X-ray dosage corresponds to a third time longer than the second time.
+
+the first time
+
+may be about 180 seconds
+
+the second time
+
+may be about 360 seconds
+
+the third time
+
+may be about 540 seconds, e.g., they may be evenly spaced such that the times linearly increase.
+
+CASE 1
+
+represents an example where X-ray is irradiated by a first amount
+
+CASE 2
+
+represents an example where X-ray is irradiated by a second amount larger than the first amount
+
+CASE 3
+
+represents an example where X-ray is irradiated by a third amount larger than the second amount
+
+CASE 4
+
+represents an example where X-ray is irradiated by a fourth amount larger than the third amount
+
+CASE 5
+
+represents an example where X-ray is irradiated by a fifth amount larger than the fourth amount.
+
+the first amount, the second amount, the third amount, the fourth amount and the fifth amount
+
+may be examples where a tube voltage of an X-ray generator is set to about 40 kVp, 60 kVp, 80 kVp, 100 kVp and 120 kVp, respectively, e.g., they may be evenly spaced such that the amounts linearly increase.
+
+the voltage VCE between the collector electrode CE and the emitter electrode EE of the BJT 112 a
+
+may increase as irradiation time of the X-ray (e.g., the cumulative X-ray dosage) increases, under the same conditions with respect to the current IC and the amount of the X-ray.
+
+FIG. 5
+
+the change of the voltage VCE according to a cumulative X-ray dosage X under the same conditions is illustrated based on graphs of FIGS. 4A, 4B, and 4C .
+
+FIG. 5
+
+illustrates that the voltage VCE between the collector electrode CE and the emitter electrode EE of the BJT 112 a increase e.g., linearly increases, as the cumulative X-ray dosage X increases.
+
+Both a metal oxide semiconductor field effect transistor (MOSFET) and a BJT
+
+are types of transistors that are degraded or deteriorated when exposed to X-rays.
+
+the MOSFET
+
+may have increased leakage current due to a change in a threshold voltage when exposed to X-rays and the BJT may have reduced current gain or increased VCE voltage when exposed to X-rays.
+
+the degraded characteristic of the MOSFET
+
+may be restored by radiation annealing, while the degraded characteristic of the BJT device may not.
+
+the voltage VCE between the collector electrode CE and the emitter electrode FE of the BJT 112 a
+
+may increase as the cumulative X-ray dosage increases.
+
+the BJT
+
+may not recover the degraded or damaged characteristic by radiation annealing.
+
+the X-ray detector according to example embodiments
+
+may be implemented with the unrecoverable BJT.
+
+the cumulative X-ray dosage provided to the semiconductor memory device 100
+
+may be efficiently quantified and monitored.
+
+the cumulative X-ray dosage to the semiconductor memory device 100
+
+may be quantified and monitored based on the current gain of the BJT.
+
+FIGS. 6 and 7
+
+illustrate an X-ray detector according to example embodiments.
+
+an X-ray detector 110 b
+
+includes the BJT 112 a , the current source 114 a , and the voltage measurer 116 .
+
+the X-ray detector 110 b
+
+may further include a digital code generator 118 .
+
+the X-ray detector 110 b of FIG. 6
+
+may be substantially the same as the X-ray detector 110 of FIG. 2 , except that the X-ray detector 110 b further includes the digital code generator 118 .
+
+the digital code generator 118
+
+may be between the voltage measurer 116 and the second data I/O pad 104 of the semiconductor memory device 100 and may convert the test result signal TRS into a digital code to generate a digital test result signal TRS′.
+
+the digital code generator 118
+
+may include an analog-to-digital converter.
+
+the X-ray detector 110 b
+
+may convert the test result signal TRS into the digital code.
+
+the cumulative X-ray dosage to the semiconductor memory device 100
+
+may be efficiently quantified and monitored.
+
+an X-ray detector 110 c
+
+includes a BJT 112 c , a current source 114 c and the voltage measurer 116 .
+
+the X-ray detector 110 c of FIG. 7
+
+may be substantially the same as the X-ray detector 110 of FIG. 2 , except that configurations of the BJT 112 c and the current source 114 c in FIG. 7 are changed.
+
+the BJT 112 c
+
+may be a PNP (or a PNP-type) BJT.
+
+the BJT 112 c
+
+may further include a first P-type semiconductor region 1124 , an N-type semiconductor region 1125 , a second P-type semiconductor region 1126 , a first junction, and a second junction.
+
+the first P-type semiconductor region 1124
+
+may be connected to the emitter electrode EE.
+
+the N-type semiconductor region 1125
+
+may be connected to the base electrode BE.
+
+the second P-type semiconductor region 1126
+
+may be connected to the collector electrode CE.
+
+the first junction
+
+may be formed between the first P-type semiconductor region 1124 and the N-type semiconductor region 1125 .
+
+the second junction
+
+may be formed between the N-type semiconductor region 1125 and the second P-type semiconductor region 1123 .
+
+BJT 112 c
+
+is implemented as a PNP BJT, directions of the currents IC, IB, and IE, and polarities of the voltages VCB, VBE and VCE may be reversed to those illustrated in FIG. 2 .
+
+the voltage VCE between the collector electrode CE and the emitter electrode EE of the BJT 112 c
+
+may increase as the cumulative X-ray dosage increases.
+
+a cross-sectional structure of the BJT 112 c
+
+may be similar to that illustrated in FIG. 3 or may be changed according to example embodiments.
+
+the current source 114 c
+
+generates the first current IC based on the test signal TS received from the first data I/O pad 102 .
+
+the BJT 112 c
+
+is implemented as a PNP BJT, a current direction of the current source 114 c is reversed to that illustrated in FIG. 2 .
+
+the current source 114 c
+
+may be connected to the emitter electrode EE to generate the current IE according to example embodiments.
+
+the X-ray detector 110 c of FIG. 7
+
+may further include the digital code generator 118 illustrated in FIG. 6 .
+
+FIGS. 8A, 8B, and 8C
+
+are diagrams for describing an operation of a semiconductor memory device according to example embodiments.
+
+the semiconductor memory device 100
+
+may operate in one of a first operation mode and a second operation mode.
+
+the first operation mode
+
+may be referred to as a normal mode or a memory mode
+
+the second operation mode
+
+may be referred to as a test mode.
+
+the memory cell array 130
+
+may be disabled and the X-ray detector 110 may be enabled during the second operation mode.
+
+the disabled memory cell array 130 and wirings connected thereto
+
+are illustrated by dotted lines in FIG. 8A .
+
+the X-ray detector 110
+
+may generate the test result signal TRS based on the test signal TS received from the first data I/O pad 102 and may output the test result signal TRS through the second data I/O pad 104 .
+
+the semiconductor memory device 100
+
+may be connected to the external test system (e.g., the test system 3000 of FIG. 17 ), may receive the test signal TS from the external test system, and may provide the test result signal TRS to the external test system.
+
+the external test system
+
+e.g., the test system 3000 of FIG. 17
+
+the memory cell array 130
+
+may be enabled and the X-ray detector 110 may be disabled during the first operation mode.
+
+the disabled X-ray detector 110 and wirings connected thereto
+
+are illustrated by dotted lines in FIGS. 8B and 8C .
+
+the memory cell array 130
+
+may store received data or output stored data using at least one of the first and second data I/O pads 102 and 104 .
+
+the memory cell array 130
+
+may perform a data write operation to store first data based on a first data signal DS 1 received from the first data I/O pad 102 during the first operation mode.
+
+the memory cell array 130
+
+may perform a data read operation to output stored second data as a second data signal DS 2 through the second data I/O pad 104 during the first operation mode.
+
+one of the first operation mode and the second operation mode
+
+may be selected based on a command (e.g., a command CMD in FIG. 13 ) received from an external device (e.g., a memory controller 1210 in FIG. 13 ) located outside the semiconductor memory device 100 .
+
+a command
+
+e.g., a command CMD in FIG. 13
+
+an external device
+
+e.g., a memory controller 1210 in FIG. 13
+
+FIGS. 9 and 10
+
+illustrate a semiconductor memory device according to example embodiments. The descriptions repeated with FIG. 1 will be omitted.
+
+a semiconductor memory device 100 a
+
+includes the first data I/O pad 102 , the second data I/O pad 104 , the X-ray detector 110 , and the memory cell array 130 .
+
+the semiconductor memory device 100 a
+
+may further include a delay circuit 150 .
+
+the semiconductor memory device 100 a of FIG. 9
+
+may be substantially the same as the semiconductor memory device 100 of FIG. 1 , except that the semiconductor memory device 100 a further includes the delay circuit 150 .
+
+the delay circuit 150
+
+may receive at least one signal to delay the at least one signal.
+
+the delay circuit 150
+
+may include a plurality of delay elements (e.g., inverters) connected in series to each other.
+
+the X-ray detector 110
+
+may be included, disposed, or mounted in the delay circuit 150 .
+
+the delay circuit 150
+
+may be at least part of a propagation delay circuit that causes propagation delay in the semiconductor memory device 100 a , and the X-ray detector 110 may be implemented by mounting a BJT in the propagation delay circuit.
+
+a semiconductor memory device 100 b
+
+includes the first data I/O pad 102 , the second data I/O pad 104 , the X-ray detector 110 , and the memory cell array 130 .
+
+the semiconductor memory device 100 b
+
+may further include a ring oscillator 170 .
+
+the semiconductor memory device 100 b of FIG. 10
+
+may be substantially the same as the semiconductor memory device 100 of FIG. 1 , except that the semiconductor memory device 100 b further includes the ring oscillator 170 .
+
+the ring oscillator 170
+
+may generate an oscillation signal that is used in the semiconductor memory device 100 b .
+
+the oscillation signal
+
+may be used as a clock signal or a reference signal in the semiconductor memory device 100 b.
+
+the X-ray detector 110
+
+may be included, disposed, or mounted in the ring oscillator 170 .
+
+the X-ray detector 110
+
+may be implemented using a BJT as a footer for the ring oscillator 170 .
+
+the X-ray detector 110
+
+is included in the delay circuit 150 or the ring oscillator 170 are described with reference to FIGS. 9 and 10 .
+
+the X-ray detector 110
+
+may be included in one of various elements included in the semiconductor memory device.
+
+Examples where the semiconductor memory device includes a single first data I/O pad 102 and a single second data I/O pad 104
+
+are described with reference to FIGS. 1 through 10 .
+
+the number of data I/O pads (e.g., the first data I/O pad 102 ) receiving the test signal TS and the number of data I/O pads (e.g., the second data I/O pad 104 ) outputting the test result signal TRS
+
+may be changed according to example embodiments.
+
+examples where the first data I/O pad 102 receiving the test signal TS and the second data I/O pad 104 outputting the test result signal TRS are separated and distinguished from each other
+
+are described with reference to FIGS. 1 through 10 .
+
+the receiving the test signal TS and the outputting the test result signal TRS
+
+may be performed by the same data I/O pads.
+
+the semiconductor memory device
+
+may include two or more X-ray detectors.
+
+each X-ray detector
+
+may include one BJT and one current source, and one voltage measurer and one digital code generator may be shared by two or more X-ray detectors.
+
+FIG. 11
+
+is an example of a semiconductor memory device according to example embodiments.
+
+a semiconductor memory device 200
+
+includes a control logic circuit 210 , a refresh control circuit 215 , an address register 220 , a bank control logic circuit 230 , a row address multiplexer 240 , a column address latch 250 , a row decoder, a column decoder, a memory cell array, a sense amplifier unit (e.g., sense amplifier), an I/O gating circuit 290 , a data I/O buffer 295 , an on-die termination (ODT) circuit 297 , a data I/O pad 299 , and an X-ray detector 310 .
+
+the specific combination and number of components
+
+may be varied.
+
+the semiconductor memory device 200
+
+may be a semiconductor memory device according to example embodiments, e.g., a volatile memory device.
+
+the semiconductor memory device 200
+
+may be one of various volatile memory devices such as a dynamic random access memory (DRAM), a mobile DRAM, a dual data rate (DDR) DRAM, a low power DDR (LPDDR) DRAM, a graphic DDR (GDDR) DRAM, or the like.
+
+DRAM
+
+dynamic random access memory
+
+DDR
+
+dual data rate
+
+LPDDR
+
+low power DDR
+
+GDDR
+
+graphic DDR
+
+the memory cell array
+
+includes a plurality of memory cells.
+
+the memory cell array
+
+may include a plurality of bank arrays, e.g., first through fourth bank arrays 280 a , 280 b , 280 c , and 280 d .
+
+the row decoder
+
+may include a plurality of bank row decoders, e.g., first through fourth bank row decoders 260 a , 260 b , 260 c , and 260 d respectively connected to the first through fourth bank arrays 280 a , 280 b , 280 c , and 280 d .
+
+the column decoder
+
+may include a plurality of bank column decoders, e.g., first through fourth bank column decoders 270 a , 270 b , 270 c , and 270 d respectively connected to the first through fourth bank arrays 280 a , 280 b , 280 c , and 280 d .
+
+the sense amplifier unit
+
+may include a plurality of bank sense amplifiers, e.g., first through fourth bank sense amplifiers 285 a , 285 b , 285 c , and 285 d respectively connected to the first through fourth bank arrays 280 a , 280 b , 280 c , and 280 d.
+
+the first through fourth bank arrays 280 a - 280 d , the first through fourth bank row decoders 260 a - 260 d , the first through fourth bank column decoders 270 a - 270 d , and the first through fourth bank sense amplifiers 285 a - 285 d
+
+may form first through fourth banks, respectively.
+
+the first bank array 280 a , the first bank row decoder 260 a , the first bank column decoder 270 a , and the first bank sense amplifier 285 a
+
+may form the first bank;
+
+the second bank array 280 b , the second bank row decoder 260 b , the second bank column decoder 270 b , and the second bank sense amplifier 285 b
+
+may form the second bank;
+
+the third bank array 280 c , the third bank row decoder 260 c , the third bank column decoder 270 c , and the third bank sense amplifier 285 c
+
+may form the third bank;
+
+the fourth bank array 280 d , the fourth bank row decoder 260 d , the fourth bank column decoder 270 d , and the fourth bank sense amplifier 285 d
+
+may form the fourth bank.
+
+FIG. 11
+
+illustrates the semiconductor memory device 200 including four banks
+
+the semiconductor memory device 200
+
+may include any number of banks.
+
+the components in FIG. 11
+
+are shown as having a one-to-one correspondence with each other, embodiments may include more or fewer decoders and/or sensor amplifiers than bank arrays.
+
+the address register 220
+
+may receive an address ADDR including a bank address BANK_ADDR, a row address ROW_ADDR, and a column address COL_ADDR from a memory controller (e.g., the memory controller 1210 in FIG. 13 ).
+
+the address register 220
+
+may provide the received bank address BANK_ADDR to the bank control logic circuit 230 , may provide the received row address ROW_ADDR to the row address multiplexer 240 , and may provide the received column address COL_ADDR to the column address latch 250 .
+
+the bank control logic circuit 230
+
+may generate bank control signals in response to receipt of the bank address BANK_ADDR.
+
+One of the first through fourth bank row decoders 260 a - 260 d corresponding to the received bank address BANK_ADDR
+
+may be activated in response to the bank control signals generated by the bank control logic circuit 230
+
+one of the first through fourth bank column decoders 270 a - 270 d corresponding to the received bank address BANK_ADDR
+
+may be activated in response to the bank control signals generated by the bank control logic circuit 230 .
+
+the refresh control circuit 215
+
+may generate a refresh address REF_ADDR in response to receipt of a refresh command or entrance of any self-refresh mode.
+
+the refresh control circuit 215
+
+may include a refresh counter that is configured to sequentially change the refresh address REF_ADDR from a first address of the memory cell array to a last address of the memory cell array, and a ring oscillator that generates an oscillation signal or a reference signal provided to the refresh counter.
+
+the refresh control circuit 215
+
+may receive control signals from the control logic circuit 210 .
+
+the row address multiplexer 240
+
+may receive the row address ROW_ADDR from the address register 220 and may receive the refresh address REF_ADDR from the refresh control circuit 215 .
+
+the row address multiplexer 240
+
+may selectively output the row address ROW_ADDR or the refresh address REF_ADDR.
+
+a row address output from the row address multiplexer 240
+
+(e.g., the row address ROW_ADDR or the refresh address REF_ADDR) may be applied to the first through fourth bank row decoders 260 a - 260 d.
+
+the activated one of the first through fourth bank row decoders 260 a - 260 d
+
+may decode the row address output from the row address multiplexer 240 and may activate a wordline corresponding to the row address.
+
+the activated bank row decoder
+
+may apply a wordline driving voltage to the wordline corresponding to the row address.
+
+the column address latch 250
+
+may receive the column address COL_ADDR from the address register 220 and may temporarily store the received column address COL_ADDR. The column address latch 250 may apply the temporarily stored or received column address COL_ADDR to the first through fourth bank column decoders 270 a - 270 d.
+
+the activated one of the first through fourth bank column decoders 270 a - 270 d
+
+may decode the column address COL_ADDR output from the column address latch 250 and may control the I/O gating circuit 290 to output data corresponding to the column address COL_ADDR.
+
+the I/O gating circuit 290
+
+may include a circuitry for gating I/O data.
+
+the I/O gating circuit 290
+
+may include an input data mask logic, read data latches for storing data output from the first through fourth bank arrays 280 a - 280 d , and write drivers for writing data to the first through fourth bank arrays 280 a - 280 d.
+
+Data DQ to be read from one of the first through fourth bank arrays 280 a - 280 d
+
+may be sensed by a sense amplifier coupled to the corresponding bank array and may be stored in the read data latches.
+
+the data DQ stored in the read data latches
+
+may be provided to the memory controller via the data I/O buffer 295 and the data I/O pad 299 .
+
+Data DQ received via the data I/O pad 299 that is to be written to one of the first through fourth bank arrays 280 a - 280 d
+
+may be provided from the memory controller to the data I/O buffer 295 .
+
+the data DQ received via the data I/O pad 299 and provided to the data I/O buffer 295
+
+may be written to the corresponding bank array via the write drivers in the I/O gating circuit 290 .
+
+the control logic circuit 210
+
+may control an operation of the semiconductor memory device 200 .
+
+the control logic circuit 210
+
+may generate control signals for the semiconductor memory device 200 to perform a data write operation or a data read operation.
+
+the control logic circuit 210
+
+may include a command decoder 211 that decodes a command CMD received from the memory controller and a mode register 212 that sets an operation mode of the semiconductor memory device 200 .
+
+the command decoder 211
+
+may generate the control signals corresponding to the command CMD by decoding a write enable signal (e.g., /WE), a row address strobe signal (e.g., /RAS), a column address strobe signal (e.g., /CAS), a chip select signal (e.g., /CS), etc.
+
+the control logic circuit 210
+
+may further receive a clock signal (e.g., CLK) and a clock enable signal (e.g., /CKE) for operating the semiconductor memory device 200 in a synchronous manner.
+
+the ODT circuit 297
+
+may be connected to the data I/O pad 299 and the data I/O buffer 295 . When the ODT circuit 297 is enabled, an ODT operation may be performed. The ODT operation may reduce (and/or prevent) a signal from being reflected by using a termination resistor so as to improve signal integrity.
+
+the X-ray detector 310
+
+may be an X-ray detector according to example embodiments.
+
+the X-ray detector 310
+
+includes a BJT in which a voltage between both ends of the BJT changes (e.g., increases) according to a cumulative X-ray dosage to the semiconductor memory device 200 .
+
+the X-ray detector 310
+
+may be enabled in a test mode, may receive a test signal TS from the data I/O pad 299 , and may generate a test result signal TRS indicating the voltage between the both ends of the BJT to output the test result signal TRS through the data I/O pad 299 .
+
+the cumulative X-ray dosage to the semiconductor memory device 200
+
+may be efficiently quantified and monitored using the X-ray detector 310 . Thus, whether the semiconductor memory device 200 is defective or not may be readily determined.
+
+the I/O gating circuit 290 and the data I/O buffer 295 in FIG. 11
+
+may correspond to the delay circuit 150 in FIG. 9 .
+
+the X-ray detector 310
+
+may be included in at least one of the I/O gating circuit 290 and the data I/O buffer 295 .
+
+the ring oscillator included in the refresh control circuit 215
+
+may correspond to the ring oscillator 170 in FIG. 10 .
+
+the X-ray detector 310
+
+may be included in the refresh control circuit 215 .
+
+elements of the semiconductor memory device 200 of FIG. 11
+
+do not include a BJT, such that an additional BJT element is formed to implement the X-ray detector 310 .
+
+the BJT
+
+may be formed using general processes for manufacturing the semiconductor memory device 200 , i.e., without any additional process.
+
+the semiconductor memory device 200
+
+is a volatile memory device is described with reference to FIG. 1 .
+
+the semiconductor memory device according to example embodiment
+
+may be one of various nonvolatile memory devices, e.g., a flash memory, a phase change random access memory (PRAM), a resistance random access memory (RRAM), a nano floating gate memory (NFGM), a polymer random access memory (PoRAM), a magnetic random access memory (MRAM), a ferroelectric random access memory (FRAM), or the like.
+
+PRAM
+
+phase change random access memory
+
+RRAM
+
+resistance random access memory
+
+NFGM
+
+nano floating gate memory
+
+PoRAM
+
+polymer random access memory
+
+MRAM
+
+magnetic random access memory
+
+FRAM
+
+ferroelectric random access memory
+
+FIG. 12
+
+is a plan view illustrating a layout of a semiconductor memory device according to example embodiments.
+
+a semiconductor memory device 500
+
+may include a plurality of bank arrays 510 .
+
+FIG. 12
+
+illustrates an example where the semiconductor memory device 500 includes four bank arrays 510 , the number of bank arrays included in the semiconductor memory device may be changed according to example embodiments. Areas in which the bank arrays 510 are formed may be referred to as memory areas or core areas on a semiconductor substrate.
+
+Row decoders 520 and column decoders 530
+
+may be adjacent to the bank arrays 510 , respectively.
+
+the row decoders 520
+
+may be arranged in a wordline direction of the semiconductor memory device 500 and the column decoders 530 may be arranged in a bitline direction of the semiconductor memory device 500 .
+
+Two row decoders allocated respectively to two adjacent bank arrays
+
+may be disposed adjacent to each other and may share a control line therebetween.
+
+Pads PD
+
+may be in peripheral areas at edges and at a center of the semiconductor memory device 500 , e.g., areas that surround the memory areas in which the bank arrays 510 are formed.
+
+the pads PD
+
+may be used to communicate with an external device (e.g., a host).
+
+X-ray detectors 541 and 542
+
+may be in the peripheral area at the center of the semiconductor memory device 500 .
+
+the row decoders 520 , the column decoders 530 , and the X-ray detectors 541 and 542
+
+may constitute peripheral circuits.
+
+Pads PD
+
+may be between the X-ray detectors 541 and 542 and column decoders 530 , and on opposite sides of the bank arrays 510 as the row decoders 520 .
+
+FIG. 12
+
+illustrates example where the semiconductor memory device 500 includes two X-ray detectors 541 and 542 , the number of X-ray detectors included in one semiconductor substrate or one semiconductor die may be changed according to example embodiments.
+
+FIG. 13
+
+illustrate a memory system including a semiconductor memory device according to example embodiments.
+
+a memory system 1200
+
+includes a memory controller 1210 and a semiconductor memory device 1220 .
+
+the memory controller 1210
+
+may transmit a command signal CMD to the semiconductor memory device 1220 via a command transmission line, may transmit an address signal ADDR to the semiconductor memory device 1220 via an address transmission line, and may exchange data DQ with the semiconductor memory device 1220 via one or more data transmission lines.
+
+the memory controller 1210
+
+may input data to the semiconductor memory device 1220 or may receive data output from the semiconductor memory device 1220 based on a request from a host.
+
+the semiconductor memory device 1220
+
+may be a semiconductor memory device according to example embodiments and may include an X-ray detector 1230 .
+
+the X-ray detector 1230
+
+may include a BJT in which a voltage between both ends of the BJT changes (e.g., increases) according to a cumulative X-ray dosage to the semiconductor memory device 1220 .
+
+the cumulative X-ray dosage to the semiconductor memory device 1220
+
+may be efficiently quantified and monitored using the X-ray detector 1230 . Thus, whether the semiconductor memory device 1220 is defective or not may be efficiently determined.
+
+FIG. 14
+
+illustrate a computing system including a semiconductor memory device according to example embodiments.
+
+a computing system 1300
+
+includes at least one processor 1310 , a system controller 1320 , and a memory system 1330 .
+
+the computing system 1300
+
+may further include an input device 1350 , an output device 1360 , and a storage device 1370 .
+
+the memory system 1330
+
+includes at least one semiconductor memory device 1334 and a memory controller 1332 for controlling the semiconductor memory device 1334 .
+
+the semiconductor memory device 1334
+
+may be a semiconductor memory device according to example embodiments and may include an X-ray detector 1336 .
+
+the memory controller 1332
+
+may be included in the system controller 1320 .
+
+the processor 1310
+
+includes hardware, e.g., integrated circuitry, to perform various computing functions, e.g., executing specific software instructions for performing specific calculations or tasks.
+
+the processor 1310
+
+may be connected to the system controller 1320 via a processor bus.
+
+the system controller 1320
+
+may be connected to the input device 1350 , the output device 1360 , and the storage device 1370 via an expansion bus.
+
+the controller
+
+may also include hardware, e.g., integrated circuitry. As such, the processor 1310 may control the input device 1350 , the output device 1360 , and the storage device 1370 using the system controller 1320 .
+
+FIG. 15
+
+is a flowchart illustrating a method of testing a semiconductor memory device according to example embodiments.
+
+a test signal
+
+is applied to a first data I/O pad of the semiconductor memory device (operation S 1100 ).
+
+the X-ray detector
+
+includes a BJT in which a voltage between both ends changes (e.g., increases) according to a cumulative X-ray dosage to the semiconductor memory device
+
+Whether the semiconductor memory device is defective or not
+
+is determined in accordance with a test result signal generated by the X-ray detector based on the test signal and the test result signal output through the second data I/O pad of the semiconductor memory device (operation S 1200 ).
+
+the test result signal
+
+indicates the voltage between both ends of the BJT.
+
+Configurations of the semiconductor memory device and the X-ray detector included therein
+
+may be substantially the same as those described with reference to FIGS. 1 through 14 .
+
+the cumulative X-ray dosage to the semiconductor memory device
+
+may be efficiently quantified and monitored using the X-ray detector. Thus, whether the semiconductor memory device is defective or not may be efficiently determined.
+
+FIG. 16
+
+is a flowchart illustrating an example of determining whether the semiconductor memory device is defective in operation S 1200 of FIG. 15 .
+
+the semiconductor memory device
+
+may be determined to be normal (operation S 1220 ).
+
+the semiconductor memory device
+
+may be judged to be normal.
+
+the semiconductor memory device
+
+may be determined to be defective (operation S 1230 ).
+
+the cumulative X-ray dosage
+
+is greater than or equal to the reference value.
+
+the semiconductor memory device
+
+may not have a normal state due to a deterioration of refresh characteristic of the volatile memory device, a wiring failure (e.g., a neck broken) at the time of assembly, or the like. Thus, the semiconductor memory device may be judged to be defective.
+
+the semiconductor memory device
+
+when the cumulative X-ray dosage to the semiconductor memory device is quantified and monitored based on the current gain of the BJT, the semiconductor memory device may be judged as normal when the current gain is higher than a reference gain and may be judged as defective when the current gain is lower than or equal to the reference gain.
+
+FIG. 17
+
+illustrates a test system that performs a method of testing a semiconductor memory device according to example embodiments.
+
+a test system 3000
+
+may include a test controller 3100 , a plurality of devices under test (DUTs) 3200 a , 3200 b , . . . , 3200 k , a storage device 3300 , a test data generator 3400 , and a test result generator 3500 .
+
+Each of the plurality of DUTs 3200 a - 3200 k
+
+may be a semiconductor memory device according to example embodiments and may include an X-ray detector according to example embodiments.
+
+the test controller 3100
+
+may control a test for each of the plurality of DUTs 3200 a - 3200 k by controlling elements included in the test system 3000 .
+
+the storage device 3300
+
+may store data for the test.
+
+the test data generator 3400
+
+may generate a test signal TS to provide the test signal TS to the plurality of DUTs 3200 a - 3200 k .
+
+the test result generator 3500
+
+may receive a test result signal TRS from the plurality of DUTs 3200 a - 3200 k to determine whether each of the plurality of DUTs 3200 a - 3200 k is defective or not.
+
+operation S 1100 in FIG. 15
+
+may be performed by the test data generator 3400
+
+operation S 1200 in FIG. 15
+
+may be performed by the test result generator 3500 .
+
+FIG. 18
+
+is a flowchart illustrating a method of manufacturing a semiconductor memory device according to example embodiments.
+
+the semiconductor memory device including an X-ray detector
+
+may be fabricated (operation S 2100 ).
+
+the X-ray detector
+
+includes a BJT in which a voltage between both ends changes (e.g., increases) according to a cumulative X-ray dosage to the semiconductor memory device.
+
+the semiconductor memory device
+
+is tested (operation S 2200 ).
+
+operation S 2200 in FIG. 18
+
+may be performed based on the method of testing the semiconductor memory device described with reference to FIG. 15 .
+
+the damage or defect of the semiconductor memory device due to X-ray inspection
+
+may be detected in real time and, thus, the manufacturing efficiency may be improved.
+
+the method of manufacturing the semiconductor memory device using the method of testing the semiconductor memory device
+
+is described with reference to FIG. 18 .
+
+the manufactured semiconductor memory device
+
+may be tested based on the method of testing the semiconductor memory device according to example embodiments to generate a first test result, and the first test result for the semiconductor memory device may be stored.
+
+the returned semiconductor memory device
+
+may be additionally tested based on the method of testing the semiconductor memory device according to example embodiments to generate a second test result, and thus it may be determined by comparing the first test result with the second test result whether the damage or defect of the semiconductor memory device occurs before or after the shipment.
+
+At least one example embodiment
+
+provides a semiconductor memory device including an X-ray detector capable of quantifying and monitoring an X-ray dosage. At least one example embodiment provides an X-ray detector capable of quantifying and monitoring an X-ray dosage. At least one example embodiment of provides a method of testing and manufacturing the semiconductor memory device including the X-ray detector.
+
+the X-ray detector
+
+may be implemented with a BJT. Characteristics of the BJT may be degraded or deteriorated when X-ray is irradiated. For example, the BJT may have reduced current gain or increased VCE voltage when the X-ray is irradiated. In addition, the degraded characteristic of the BJT device may not be restored by the radiation annealing. Thus, the cumulative X-ray dosage to the semiconductor memory device may be efficiently quantified and monitored.
+
+the semiconductor memory device
+
+may include the X-ray detector implemented with the BJT. Thus, whether the semiconductor memory device is defective or not may be determined.
+
+Embodiments
+
+may be applied to various electronic devices and electronic systems including the semiconductor memory device.
+
+embodiments
+
+may be applied to systems such as a mobile phone, a smart phone, a tablet computer, a laptop computer, a personal digital assistant (PDA), a portable multimedia player (PMP), a digital camera, a portable game console, a music player, a camcorder, a video player, a navigation device, a wearable device, an internet of things (IoT) device, an internet of everything (IoE) device, an e-book reader, a virtual reality (VR) device, an augmented reality (AR) device, a robotic device, etc.
+
+IoT
+
+internet of things
+
+IoE
+
+internet of everything
+
+VR
+
+virtual reality
+
+AR
+
+augmented reality
+
+Landscapes
+
+Physics & Mathematics
+
+        (
+AREA
+)
+
+Health & Medical Sciences
+
+        (
+AREA
+)
+
+Life Sciences & Earth Sciences
+
+        (
+AREA
+)
+
+General Physics & Mathematics
+
+        (
+AREA
+)
+
+High Energy & Nuclear Physics
+
+        (
+AREA
+)
+
+Molecular Biology
+
+        (
+AREA
+)
+
+Spectroscopy & Molecular Physics
+
+        (
+AREA
+)
+
+Engineering & Computer Science
+
+        (
+AREA
+)
+
+Microelectronics & Electronic Packaging
+
+        (
+AREA
+)
+
+Computer Hardware Design
+
+        (
+AREA
+)
+
+Semiconductor Memories
+
+        (
+AREA
+)
+
+Dram
+
+        (
+AREA
+)
+
+Abstract
+
+A semiconductor memory device includes a first data input/output (I/O) pad, an X-ray detector and a second data I/O pad. The first data I/O pad receives a test signal. The X-ray detector is connected to the first data I/O pad, includes a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device, and generates a test result signal indicating the voltage between the input and output ends of the BJT based on the test signal. The second data I/O pad is connected to the X-ray detector and outputs the test result signal.
+
+Description
+
+CROSS-REFERENCE TO RELATED APPLICATION
+
+Korean Patent Application No. 10-2018-0116786, filed on Oct. 1, 2018 in the Korean Intellectual Property Office (KIPO), and entitled: “X-Ray Detector, Semiconductor Memory Device Including the Same, Method of Testing Semiconductor Memory Device and Method of Manufacturing Semiconductor Memory Device,” is incorporated by reference herein in its entirety.
+
+BACKGROUND
+
+1. Field
+
+Example embodiments relate generally to semiconductor devices and, more particularly, to X-ray detectors, semiconductor memory devices including the X-ray detectors, methods of testing the semiconductor memory devices and methods of manufacturing the semiconductor memory devices.
+
+2. Description of the Related Art
+
+Semiconductor memory devices store data in memory cells by performing a write operation and read the stored data by performing a read operation. Semiconductor memory devices can generally be divided into two categories depending upon whether or not they retain stored data when disconnected from a power supply. These categories include volatile memory devices, which lose stored data when disconnected from power, and nonvolatile memory devices, which retain stored data when disconnected from power. X-ray inspection has been performed to detect defects during manufacture and assembly of semiconductor memory devices. As semiconductor process technology continues to develop and wiring width and chip thickness have decreased, the damage of semiconductor memory devices by X-ray is increasing. However, quantifying the X-ray dosage is difficult.
+
+SUMMARY
+
+According to example embodiments, a semiconductor memory device includes a first data input/output (I/O) pad, an X-ray detector and a second data I/O pad. The first data I/O pad receives a test signal. The X-ray detector is connected to the first data I/O pad, includes a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device, and generates a test result signal indicating the voltage between the input and output ends of the BJT based on the test signal. The second data I/O pad is connected to the X-ray detector and outputs the test result signal.
+
+According to example embodiments, an X-ray detector includes a current source, a bipolar junction transistor (BJT) and a voltage measurer. The current source is connected to a first data input/output (I/O) pad of a semiconductor memory device and generates a first current based on a test signal received from the first data I/O pad. The BJT is connected to the current source and includes an emitter electrode, a base electrode and a collector electrode to which the first current is applied. The voltage measurer is connected to the BJT and a second data I/O pad of the semiconductor memory device and generates a test result signal based on a voltage between the collector electrode and the emitter electrode of the BJT to output the test result signal through the second data I/O pad when the first current is applied to the collector electrode of the BJT. The voltage between the collector electrode and the emitter electrode of the BJT is changed according to a cumulative X-ray dosage to the semiconductor memory device.
+
+According to example embodiments, in a method of testing a semiconductor memory device, a test signal is applied to a first data input/output (I/O) pad of the semiconductor memory device that includes the first data I/O pad, an X-ray detector connected to the first data I/O pad and including a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device and a second data I/O pad connected to the X-ray detector. Whether the semiconductor memory device is defective is determined based on a test result signal that is generated by the X-ray detector based on the test signal, indicates the voltage between the input and output ends of the BJT and is output through the second data I/O pad.
+
+According to example embodiments, in a method of manufacturing a semiconductor memory device, the semiconductor memory device that includes a first data input/output (I/O) pad, an X-ray detector connected to the first data I/O pad and including a bipolar junction transistor (BJT) in which a voltage between an input end and an output end changes according to a cumulative X-ray dosage to the semiconductor memory device and a second data I/O pad connected to the X-ray detector is fabricated. The semiconductor memory device is tested based on the X-ray detector. When testing the semiconductor memory device, a test signal is applied to the first data I/O pad of the semiconductor memory device. Whether the semiconductor memory device is defective is determined based on a test result signal that is generated by the X-ray detector based on the test signal, indicates the voltage between the first and second ends of the BJT and is output through the second data I/O pad.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+Features will become apparent to those of skill in the art by describing in detail exemplary embodiments with reference to the attached drawings in which:
+
+FIG. 1
+ illustrates a semiconductor memory device according to example embodiments.
+
+FIG. 2
+ illustrates an X-ray detector according to example embodiments.
+
+FIG. 3
+ illustrates a cross-sectional view of an example of a BJT included in the X-ray detector of 
+FIG. 2
+.
+
+FIGS. 4A, 4B, 4C and 5
+ illustrate diagrams for describing an operation of an X-ray detector according to example embodiments.
+
+FIGS. 6 and 7
+ illustrate an X-ray detector according to example embodiments.
+
+FIGS. 8A, 8B and 8C
+ illustrate diagrams for describing an operation of a semiconductor memory device according to example embodiments.
+
+FIGS. 9 and 10
+ illustrate a semiconductor memory device according to example embodiments.
+
+FIG. 11
+ illustrates of a semiconductor memory device according to example embodiments.
+
+FIG. 12
+ illustrates a plan view of a layout of a semiconductor memory device according to example embodiments.
+
+FIG. 13
+ illustrates a memory system including a semiconductor memory device according to example embodiments.
+
+FIG. 14
+ illustrates a computing system including a semiconductor memory device according to example embodiments.
+
+FIG. 15
+ illustrates a flowchart of a method of testing a semiconductor memory device according to example embodiments.
+
+FIG. 16
+ illustrates a flowchart of an example of determining whether the semiconductor memory device is defective in 
+FIG. 15
+.
+
+FIG. 17
+ illustrates a testing system that performs a method of testing a semiconductor memory device according to example embodiments.
+
+FIG. 18
+ illustrates a flowchart of a method of manufacturing a semiconductor memory device according to example embodiments.
+
+DETAILED DESCRIPTION
+
+Various example embodiments will be described more fully with reference to the accompanying drawings, in which embodiments are shown. The present disclosure may, however, be embodied in many different forms and should not be construed as limited to the embodiments set forth herein. Like reference numerals refer to like elements throughout this application.
+
+FIG. 1
+ illustrates a semiconductor memory device according to example embodiments. Referring to 
+FIG. 1
+, a 
+semiconductor memory device
+
+100
+ includes a first data input/output (I/O) 
+pad
+
+102
+, a second data I/
+O pad
+
+104
+, an 
+X-ray detector
+
+110
+, and a 
+memory cell array
+
+130
+.
+
+The first data I/
+O pad
+
+102
+ receives a test signal TS from an external test system (e.g., a 
+test system
+
+3000
+ of 
+FIG. 17
+). The second data I/
+O pad
+
+104
+ is separated and distinguished from the first data I/
+O pad
+
+102
+, and outputs a test result signal TRS generated by the 
+X-ray detector
+
+110
+. The test result signal TRS may be provided to the external test system and may be used for determining whether the semiconductor memory device is defective or not. For example, the second I/
+O pad
+
+104
+ may be a contact pad or a contact pin.
+
+The X-ray detector (e.g., a device for measuring X-ray irradiation dosage) 
+110
+ is connected to the first data I/
+O pad
+
+102
+ and the second data I/
+O pad
+
+104
+. The 
+X-ray detector
+
+110
+ includes a bipolar junction transistor (BJT) 
+112
+. A voltage between both ends of the 
+BJT
+
+112
+, i.e., the input and output ends thereof, changes according to a cumulative X-ray dosage to the semiconductor memory device 
+100
+ (e.g., according to a total accumulated amount of X-ray incident on the semiconductor memory device 
+100
+). The 
+X-ray detector
+
+110
+ generates the test result signal TRS indicating the voltage between the both ends of the 
+BJT
+
+112
+ based on the test signal TS. Configurations and operations of the 
+X-ray detector
+
+110
+ will be described in detail with reference to 
+FIG. 2
+.
+
+The 
+memory cell array
+
+130
+ may also be connected to the first data I/
+O pad
+
+102
+ and the second data I/
+O pad
+
+104
+. The 
+memory cell array
+
+130
+ may include a plurality of memory cells for storing data. The 
+memory cell array
+
+130
+ may store data received from the first and second data I/
+
+O pads
+
+102
+ and 
+104
+, or data stored in the 
+memory cell array
+
+130
+ may be output through the first and second data I/
+
+O pads
+
+102
+ and 
+104
+.
+
+In some example embodiments, each of the 
+X-ray detector
+
+110
+ and the 
+memory cell array
+
+130
+ may be enabled or disabled according to an operation mode of the 
+semiconductor memory device
+
+100
+, as will be described with reference to 
+FIGS. 8A, 8B and 8C
+.
+
+The 
+semiconductor memory device
+
+100
+ according to example embodiments may not include additional data I/O pads and/or signal I/O pads for the 
+X-ray detector
+
+110
+. In other words, the 
+X-ray detector
+
+110
+ in the 
+semiconductor memory device
+
+100
+ may receive the test signal TS and may output the test result signal TRS using the data I/
+
+O pads
+
+102
+ and 
+104
+ that are connected to the 
+memory cell array
+
+130
+ to store and/or output data.
+
+FIG. 1
+ illustrates that the 
+X-ray detector
+
+110
+ and the 
+memory cell array
+
+130
+ are directly connected to the data I/
+
+O pads
+
+102
+ and 
+104
+, respectively. As another example, as will be described with reference to 
+FIG. 11
+, at least one element and/or circuit for driving the 
+semiconductor memory device
+
+100
+ may be additionally provided between the 
+memory cell array
+
+130
+ and the data I/
+
+O pads
+
+102
+ and 
+104
+. For another example, as will be described with reference to 
+FIGS. 9 and 10
+, the 
+X-ray detector
+
+110
+ may be included in at least one element and/or circuit for driving the 
+semiconductor memory device
+
+100
+.
+
+FIG. 2
+ illustrates an X-ray detector according to example embodiments. 
+FIG. 3
+ is a cross-sectional view of an example of a BJT included in the X-ray detector of 
+FIG. 2
+. Referring to 
+FIGS. 2 and 3
+, an 
+X-ray detector
+
+110
+
+a 
+includes a 
+BJT
+
+112
+
+a
+, a 
+current source
+
+114
+
+a 
+and a 
+voltage measurer
+
+116
+.
+
+The 
+BJT
+
+112
+
+a 
+includes an emitter electrode EE, a base electrode BE and a collector electrode CE. As described with reference to 
+FIG. 1
+, a voltage between both ends of the 
+BJT
+
+112
+
+a 
+changes according to the cumulative X-ray dosage incident on the 
+semiconductor memory device
+
+100
+. For example, the voltage between the both ends of the 
+BJT
+
+112
+
+a 
+may be a voltage VCE between the collector electrode CE and the emitter electrode EE of the 
+BJT
+
+112
+
+a. 
+
+In some example embodiments, the 
+BJT
+
+112
+
+a 
+may be an NPN (or an NPN-type) BJT. For example, the 
+BJT
+
+112
+
+a 
+may further include a first N-
+type semiconductor region
+
+1121
+, a P-
+type semiconductor region
+
+1122
+, a second N-
+type semiconductor region
+
+1123
+, a first junction, and a second junction. The first N-
+type semiconductor region
+
+1121
+ may be connected to the emitter electrode EE. The P-
+type semiconductor region
+
+1122
+ may be connected to the base electrode BE. The second N-
+type semiconductor region
+
+1123
+ may be connected to the collector electrode CE. The first junction may be formed between the first N-
+type semiconductor region
+
+1121
+ and the P-
+type semiconductor region
+
+1122
+. The second junction may be formed between the P-
+type semiconductor region
+
+1122
+ and the second N-
+type semiconductor region
+
+1123
+.
+
+As illustrated in 
+FIG. 3
+, the 
+BJT
+
+112
+
+a 
+may be formed in a 
+semiconductor substrate
+
+101
+. For example, the first N-
+type semiconductor region
+
+1121
+ may be formed in the 
+semiconductor substrate
+
+101
+, the P-
+type semiconductor region
+
+1122
+ may be formed in the 
+semiconductor substrate
+
+101
+ such that the first N-
+type semiconductor region
+
+1121
+ is surrounded, e.g., on three sides, by the P-
+type semiconductor region
+
+1122
+, and the second N-
+type semiconductor region
+
+1123
+ may be formed in the 
+semiconductor substrate
+
+101
+ such that the P-
+type semiconductor region
+
+1122
+ is surrounded, e.g., on three sides, by the second N-
+type semiconductor region
+
+1123
+. The emitter electrode EE, the base electrode BE, and the collector electrode CE may be connected to the first N-
+type semiconductor region
+
+1121
+, the P-
+type semiconductor region
+
+1122
+, and the second N-
+type semiconductor region
+
+1123
+, respectively. A cross-sectional structure of the 
+BJT
+
+112
+
+a 
+may be changed according to example embodiments.
+
+The 
+current source
+
+114
+
+a 
+is connected to the first data I/
+O pad
+
+102
+ of the 
+semiconductor memory device
+
+100
+ and receives the test signal TS from the first data I/
+O pad
+
+102
+. The 
+current source
+
+114
+
+a 
+generates a first current IC based on the test signal TS. For example, the first current IC may be applied to the collector electrode CE of the 
+BJT
+
+112
+
+a. 
+
+As the first current IC generated based on the test signal TS is applied to the collector electrode CE of the 
+BJT
+
+112
+
+a
+, a current IB and a current IE may flow in directions illustrated in 
+FIG. 2
+ to the base electrode BE and from the emitter electrode EE, respectively. In addition, a voltage VCB may be between the collector electrode CE and the base electrode BE, a voltage VBE may be between the base electrode BE and the emitter electrode EE, and the voltage VCE may be between the collector electrode CE and the emitter electrode EE.
+
+The 
+voltage measurer
+
+116
+ is connected to the 
+BJT
+
+112
+
+a 
+and the second data I/
+O pad
+
+104
+ of the 
+semiconductor memory device
+
+100
+. The 
+voltage measurer
+
+116
+ may generate the test result signal TRS based on the voltage between the both ends of the 
+BJT
+
+112
+
+a 
+(e.g., the voltage VCE between the collector electrode CE and the emitter electrode EE of the 
+BJT
+
+112
+
+a
+) when the first current IC is applied to the collector electrode CE of the 
+BJT
+
+112
+
+a
+. The test result signal TRS may be output through the second data I/
+O pad
+
+104
+.
+
+In some example embodiments, a level of the first current IC generated from the 
+current source
+
+114
+
+a 
+may be always fixed. As will be described with reference to 
+FIGS. 4A, 4B, 4C, and 5
+, the voltage VCE between the collector electrode CE and the emitter electrode EE of the 
+BJT
+
+112
+
+a 
+may increase as the cumulative X-ray dosage increases. Thus, the fixed first current IC (e.g., the first current IC having a constant level) may be applied to the collector electrode CE to determine whether the voltage VCE increases or not under the same conditions.
+
+FIGS. 4A, 4B, 4C, and 5
+ are diagrams for describing an operation of an X-ray detector according to example embodiments.
+
+FIG. 4A
+ is a graph illustrating a change of the voltage VCE in 
+FIG. 2
+ according to the current IC in 
+FIG. 2
+ when the cumulative X-ray dosage corresponds to a first time. 
+FIG. 4B
+ is a graph illustrating a change of the voltage VCE in 
+FIG. 2
+ according to the current IC in 
+FIG. 2
+ when the cumulative X-ray dosage corresponds to a second time longer than the first time. 
+FIG. 4C
+ is a graph illustrating a change of the voltage VCE in 
+FIG. 2
+ according to the current IC in 
+FIG. 2
+ when the cumulative X-ray dosage corresponds to a third time longer than the second time. For example, the first time may be about 180 seconds, the second time may be about 360 seconds, and the third time may be about 540 seconds, e.g., they may be evenly spaced such that the times linearly increase.
+
+In addition, in 
+FIGS. 4A, 4B, and 4C
+, CASE
+1
+ represents an example where X-ray is irradiated by a first amount, CASE
+2
+ represents an example where X-ray is irradiated by a second amount larger than the first amount, CASE
+3
+ represents an example where X-ray is irradiated by a third amount larger than the second amount. CASE
+4
+ represents an example where X-ray is irradiated by a fourth amount larger than the third amount, and CASE
+5
+ represents an example where X-ray is irradiated by a fifth amount larger than the fourth amount. For example, the first amount, the second amount, the third amount, the fourth amount and the fifth amount may be examples where a tube voltage of an X-ray generator is set to about 40 kVp, 60 kVp, 80 kVp, 100 kVp and 120 kVp, respectively, e.g., they may be evenly spaced such that the amounts linearly increase.
+
+Referring to 
+FIGS. 4A, 4B, and 4C
+, the voltage VCE between the collector electrode CE and the emitter electrode EE of the 
+BJT
+
+112
+
+a 
+may increase as irradiation time of the X-ray (e.g., the cumulative X-ray dosage) increases, under the same conditions with respect to the current IC and the amount of the X-ray.
+
+Referring to 
+FIG. 5
+, the change of the voltage VCE according to a cumulative X-ray dosage X under the same conditions is illustrated based on graphs of 
+FIGS. 4A, 4B, and 4C
+. 
+FIG. 5
+ illustrates that the voltage VCE between the collector electrode CE and the emitter electrode EE of the 
+BJT
+
+112
+
+a 
+increase e.g., linearly increases, as the cumulative X-ray dosage X increases.
+
+Both a metal oxide semiconductor field effect transistor (MOSFET) and a BJT are types of transistors that are degraded or deteriorated when exposed to X-rays. For example, the MOSFET may have increased leakage current due to a change in a threshold voltage when exposed to X-rays and the BJT may have reduced current gain or increased VCE voltage when exposed to X-rays. The degraded characteristic of the MOSFET may be restored by radiation annealing, while the degraded characteristic of the BJT device may not.
+
+As described with reference to 
+FIGS. 4A, 4B, 4C, and 5
+, the voltage VCE between the collector electrode CE and the emitter electrode FE of the 
+BJT
+
+112
+
+a 
+may increase as the cumulative X-ray dosage increases. In addition, the BJT may not recover the degraded or damaged characteristic by radiation annealing. The X-ray detector according to example embodiments may be implemented with the unrecoverable BJT. Thus, the cumulative X-ray dosage provided to the 
+semiconductor memory device
+
+100
+ may be efficiently quantified and monitored.
+
+As described above, a current gain (e.g., β=IC/IB) of the BJT may decrease as the degraded characteristic of the BJT when exposed to X-rays and the current gain of the BJT may decrease as the cumulative X-ray dosage increases. Thus, in some example embodiments, the cumulative X-ray dosage to the 
+semiconductor memory device
+
+100
+ may be quantified and monitored based on the current gain of the BJT.
+
+FIGS. 6 and 7
+ illustrate an X-ray detector according to example embodiments.
+
+The descriptions repeated with 
+FIG. 2
+ will be omitted.
+
+Referring to 
+FIG. 6
+, an 
+X-ray detector
+
+110
+
+b 
+includes the 
+BJT
+
+112
+
+a
+, the 
+current source
+
+114
+
+a
+, and the 
+voltage measurer
+
+116
+. The 
+X-ray detector
+
+110
+
+b 
+may further include a 
+digital code generator
+
+118
+.
+
+The 
+X-ray detector
+
+110
+
+b 
+of 
+FIG. 6
+ may be substantially the same as the 
+X-ray detector
+
+110
+ of 
+FIG. 2
+, except that the 
+X-ray detector
+
+110
+
+b 
+further includes the 
+digital code generator
+
+118
+. The 
+digital code generator
+
+118
+ may be between the 
+voltage measurer
+
+116
+ and the second data I/
+O pad
+
+104
+ of the 
+semiconductor memory device
+
+100
+ and may convert the test result signal TRS into a digital code to generate a digital test result signal TRS′. For example, the 
+digital code generator
+
+118
+ may include an analog-to-digital converter.
+
+The 
+X-ray detector
+
+110
+
+b 
+may convert the test result signal TRS into the digital code. Thus, the cumulative X-ray dosage to the 
+semiconductor memory device
+
+100
+ may be efficiently quantified and monitored.
+
+Referring to 
+FIG. 7
+, an 
+X-ray detector
+
+110
+
+c 
+includes a 
+BJT
+
+112
+
+c
+, a 
+current source
+
+114
+
+c 
+and the 
+voltage measurer
+
+116
+. The 
+X-ray detector
+
+110
+
+c 
+of 
+FIG. 7
+ may be substantially the same as the 
+X-ray detector
+
+110
+ of 
+FIG. 2
+, except that configurations of the 
+BJT
+
+112
+
+c 
+and the 
+current source
+
+114
+
+c 
+in 
+FIG. 7
+ are changed.
+
+In some example embodiments, the 
+BJT
+
+112
+
+c 
+may be a PNP (or a PNP-type) BJT. For example, the 
+BJT
+
+112
+
+c 
+may further include a first P-
+type semiconductor region
+
+1124
+, an N-
+type semiconductor region
+
+1125
+, a second P-
+type semiconductor region
+
+1126
+, a first junction, and a second junction. The first P-
+type semiconductor region
+
+1124
+ may be connected to the emitter electrode EE. The N-
+type semiconductor region
+
+1125
+ may be connected to the base electrode BE. The second P-
+type semiconductor region
+
+1126
+ may be connected to the collector electrode CE. The first junction may be formed between the first P-
+type semiconductor region
+
+1124
+ and the N-
+type semiconductor region
+
+1125
+. The second junction may be formed between the N-
+type semiconductor region
+
+1125
+ and the second P-
+type semiconductor region
+
+1123
+.
+
+As the 
+BJT
+
+112
+
+c 
+is implemented as a PNP BJT, directions of the currents IC, IB, and IE, and polarities of the voltages VCB, VBE and VCE may be reversed to those illustrated in 
+FIG. 2
+. The voltage VCE between the collector electrode CE and the emitter electrode EE of the 
+BJT
+
+112
+
+c 
+may increase as the cumulative X-ray dosage increases. A cross-sectional structure of the 
+BJT
+
+112
+
+c 
+may be similar to that illustrated in 
+FIG. 3
+ or may be changed according to example embodiments.
+
+The 
+current source
+
+114
+
+c 
+generates the first current IC based on the test signal TS received from the first data I/
+O pad
+
+102
+. As the 
+BJT
+
+112
+
+c 
+is implemented as a PNP BJT, a current direction of the 
+current source
+
+114
+
+c 
+is reversed to that illustrated in 
+FIG. 2
+.
+
+The 
+current source
+
+114
+
+c 
+may be connected to the emitter electrode EE to generate the current IE according to example embodiments. The 
+X-ray detector
+
+110
+
+c 
+of 
+FIG. 7
+ may further include the 
+digital code generator
+
+118
+ illustrated in 
+FIG. 6
+.
+
+FIGS. 8A, 8B, and 8C
+ are diagrams for describing an operation of a semiconductor memory device according to example embodiments. Referring to 
+FIGS. 8A, 8B and 8C
+, the 
+semiconductor memory device
+
+100
+ may operate in one of a first operation mode and a second operation mode. The first operation mode may be referred to as a normal mode or a memory mode, and the second operation mode may be referred to as a test mode.
+
+For example, as illustrated in 
+FIG. 8A
+, the 
+memory cell array
+
+130
+ may be disabled and the 
+X-ray detector
+
+110
+ may be enabled during the second operation mode. The disabled 
+memory cell array
+
+130
+ and wirings connected thereto are illustrated by dotted lines in 
+FIG. 8A
+. During the second operation mode, the 
+X-ray detector
+
+110
+ may generate the test result signal TRS based on the test signal TS received from the first data I/
+O pad
+
+102
+ and may output the test result signal TRS through the second data I/
+O pad
+
+104
+. For example, during the second operation mode, the 
+semiconductor memory device
+
+100
+ may be connected to the external test system (e.g., the 
+test system
+
+3000
+ of 
+FIG. 17
+), may receive the test signal TS from the external test system, and may provide the test result signal TRS to the external test system.
+
+In addition, as illustrated in 
+FIGS. 8B and 8C
+, the 
+memory cell array
+
+130
+ may be enabled and the 
+X-ray detector
+
+110
+ may be disabled during the first operation mode. The 
+disabled X-ray detector
+
+110
+ and wirings connected thereto are illustrated by dotted lines in 
+FIGS. 8B and 8C
+. During the first operation mode, the 
+memory cell array
+
+130
+ may store received data or output stored data using at least one of the first and second data I/
+
+O pads
+
+102
+ and 
+104
+. For example, as illustrated in 
+FIG. 8B
+, the 
+memory cell array
+
+130
+ may perform a data write operation to store first data based on a first data signal DS
+1
+ received from the first data I/
+O pad
+
+102
+ during the first operation mode. For another example, as illustrated in 
+FIG. 8C
+, the 
+memory cell array
+
+130
+ may perform a data read operation to output stored second data as a second data signal DS
+2
+ through the second data I/
+O pad
+
+104
+ during the first operation mode.
+
+In some example embodiments, one of the first operation mode and the second operation mode may be selected based on a command (e.g., a command CMD in 
+FIG. 13
+) received from an external device (e.g., a 
+memory controller
+
+1210
+ in 
+FIG. 13
+) located outside the 
+semiconductor memory device
+
+100
+.
+
+FIGS. 9 and 10
+ illustrate a semiconductor memory device according to example embodiments. The descriptions repeated with 
+FIG. 1
+ will be omitted.
+
+Referring to 
+FIG. 9
+, a 
+semiconductor memory device
+
+100
+
+a 
+includes the first data I/
+O pad
+
+102
+, the second data I/
+O pad
+
+104
+, the 
+X-ray detector
+
+110
+, and the 
+memory cell array
+
+130
+. The 
+semiconductor memory device
+
+100
+
+a 
+may further include a 
+delay circuit
+
+150
+.
+
+The 
+semiconductor memory device
+
+100
+
+a 
+of 
+FIG. 9
+ may be substantially the same as the 
+semiconductor memory device
+
+100
+ of 
+FIG. 1
+, except that the 
+semiconductor memory device
+
+100
+
+a 
+further includes the 
+delay circuit
+
+150
+. The 
+delay circuit
+
+150
+ may receive at least one signal to delay the at least one signal. For example, the 
+delay circuit
+
+150
+ may include a plurality of delay elements (e.g., inverters) connected in series to each other.
+
+The 
+X-ray detector
+
+110
+ may be included, disposed, or mounted in the 
+delay circuit
+
+150
+. For example, the 
+delay circuit
+
+150
+ may be at least part of a propagation delay circuit that causes propagation delay in the 
+semiconductor memory device
+
+100
+
+a
+, and the 
+X-ray detector
+
+110
+ may be implemented by mounting a BJT in the propagation delay circuit.
+
+Referring to 
+FIG. 10
+, a 
+semiconductor memory device
+
+100
+
+b 
+includes the first data I/
+O pad
+
+102
+, the second data I/
+O pad
+
+104
+, the 
+X-ray detector
+
+110
+, and the 
+memory cell array
+
+130
+. The 
+semiconductor memory device
+
+100
+
+b 
+may further include a 
+ring oscillator
+
+170
+.
+
+The 
+semiconductor memory device
+
+100
+
+b 
+of 
+FIG. 10
+ may be substantially the same as the 
+semiconductor memory device
+
+100
+ of 
+FIG. 1
+, except that the 
+semiconductor memory device
+
+100
+
+b 
+further includes the 
+ring oscillator
+
+170
+. The 
+ring oscillator
+
+170
+ may generate an oscillation signal that is used in the 
+semiconductor memory device
+
+100
+
+b
+. For example, the oscillation signal may be used as a clock signal or a reference signal in the 
+semiconductor memory device
+
+100
+
+b. 
+
+The 
+X-ray detector
+
+110
+ may be included, disposed, or mounted in the 
+ring oscillator
+
+170
+. For example, the 
+X-ray detector
+
+110
+ may be implemented using a BJT as a footer for the 
+ring oscillator
+
+170
+.
+
+Examples where the 
+X-ray detector
+
+110
+ is included in the 
+delay circuit
+
+150
+ or the 
+ring oscillator
+
+170
+ are described with reference to 
+FIGS. 9 and 10
+. As another example, for example, the 
+X-ray detector
+
+110
+ may be included in one of various elements included in the semiconductor memory device.
+
+Examples where the semiconductor memory device includes a single first data I/
+O pad
+
+102
+ and a single second data I/
+O pad
+
+104
+ are described with reference to 
+FIGS. 1 through 10
+. As another example, the number of data I/O pads (e.g., the first data I/O pad 
+102
+) receiving the test signal TS and the number of data I/O pads (e.g., the second data I/O pad 
+104
+) outputting the test result signal TRS may be changed according to example embodiments. In addition, examples where the first data I/
+O pad
+
+102
+ receiving the test signal TS and the second data I/
+O pad
+
+104
+ outputting the test result signal TRS are separated and distinguished from each other are described with reference to 
+FIGS. 1 through 10
+. As another example, the receiving the test signal TS and the outputting the test result signal TRS may be performed by the same data I/O pads.
+
+Examples where the semiconductor memory device includes a 
+single X-ray detector
+
+110
+ are described with reference to 
+FIGS. 1 through 10
+. As another example, the semiconductor memory device may include two or more X-ray detectors. In cases where the semiconductor memory device includes two or more X-ray detectors, each X-ray detector may include one BJT and one current source, and one voltage measurer and one digital code generator may be shared by two or more X-ray detectors.
+
+FIG. 11
+ is an example of a semiconductor memory device according to example embodiments. Referring to 
+FIG. 11
+, a 
+semiconductor memory device
+
+200
+ includes a 
+control logic circuit
+
+210
+, a 
+refresh control circuit
+
+215
+, an 
+address register
+
+220
+, a bank 
+control logic circuit
+
+230
+, a 
+row address multiplexer
+
+240
+, a 
+column address latch
+
+250
+, a row decoder, a column decoder, a memory cell array, a sense amplifier unit (e.g., sense amplifier), an I/
+O gating circuit
+
+290
+, a data I/
+O buffer
+
+295
+, an on-die termination (ODT) 
+circuit
+
+297
+, a data I/
+O pad
+
+299
+, and an 
+X-ray detector
+
+310
+. The specific combination and number of components may be varied.
+
+In some example embodiments, the 
+semiconductor memory device
+
+200
+ may be a semiconductor memory device according to example embodiments, e.g., a volatile memory device. For example, the 
+semiconductor memory device
+
+200
+ may be one of various volatile memory devices such as a dynamic random access memory (DRAM), a mobile DRAM, a dual data rate (DDR) DRAM, a low power DDR (LPDDR) DRAM, a graphic DDR (GDDR) DRAM, or the like.
+
+The memory cell array includes a plurality of memory cells. The memory cell array may include a plurality of bank arrays, e.g., first through 
+
+fourth bank arrays
+
+280
+
+a
+, 
+280
+
+b
+, 
+280
+
+c
+, and 
+280
+
+d
+. The row decoder may include a plurality of bank row decoders, e.g., first through fourth 
+
+bank row decoders
+
+260
+
+a
+, 
+260
+
+b
+, 
+260
+
+c
+, and 
+260
+
+d 
+respectively connected to the first through 
+
+fourth bank arrays
+
+280
+
+a
+, 
+280
+
+b
+, 
+280
+
+c
+, and 
+280
+
+d
+. The column decoder may include a plurality of bank column decoders, e.g., first through fourth 
+
+bank column decoders
+
+270
+
+a
+, 
+270
+
+b
+, 
+270
+
+c
+, and 
+270
+
+d 
+respectively connected to the first through 
+
+fourth bank arrays
+
+280
+
+a
+, 
+280
+
+b
+, 
+280
+
+c
+, and 
+280
+
+d
+. The sense amplifier unit may include a plurality of bank sense amplifiers, e.g., first through fourth 
+
+bank sense amplifiers
+
+285
+
+a
+, 
+285
+
+b
+, 
+285
+
+c
+, and 
+285
+
+d 
+respectively connected to the first through 
+
+fourth bank arrays
+
+280
+
+a
+, 
+280
+
+b
+, 
+280
+
+c
+, and 
+280
+
+d. 
+
+The first through fourth bank arrays 
+280
+
+a
+-
+280
+
+d
+, the first through fourth bank row decoders 
+260
+
+a
+-
+260
+
+d
+, the first through fourth bank column decoders 
+270
+
+a
+-
+270
+
+d
+, and the first through fourth bank sense amplifiers 
+285
+
+a
+-
+285
+
+d 
+may form first through fourth banks, respectively. For example, the 
+first bank array
+
+280
+
+a
+, the first 
+bank row decoder
+
+260
+
+a
+, the first 
+bank column decoder
+
+270
+
+a
+, and the first 
+bank sense amplifier
+
+285
+
+a 
+may form the first bank; the 
+second bank array
+
+280
+
+b
+, the second 
+bank row decoder
+
+260
+
+b
+, the second 
+bank column decoder
+
+270
+
+b
+, and the second 
+bank sense amplifier
+
+285
+
+b 
+may form the second bank; the 
+third bank array
+
+280
+
+c
+, the third 
+bank row decoder
+
+260
+
+c
+, the third 
+bank column decoder
+
+270
+
+c
+, and the third 
+bank sense amplifier
+
+285
+
+c 
+may form the third bank; and the 
+fourth bank array
+
+280
+
+d
+, the fourth 
+bank row decoder
+
+260
+
+d
+, the fourth 
+bank column decoder
+
+270
+
+d
+, and the fourth 
+bank sense amplifier
+
+285
+
+d 
+may form the fourth bank. Although 
+FIG. 11
+ illustrates the 
+semiconductor memory device
+
+200
+ including four banks, the 
+semiconductor memory device
+
+200
+ may include any number of banks. Also, while the components in 
+FIG. 11
+ are shown as having a one-to-one correspondence with each other, embodiments may include more or fewer decoders and/or sensor amplifiers than bank arrays.
+
+The 
+address register
+
+220
+ may receive an address ADDR including a bank address BANK_ADDR, a row address ROW_ADDR, and a column address COL_ADDR from a memory controller (e.g., the 
+memory controller
+
+1210
+ in 
+FIG. 13
+). The 
+address register
+
+220
+ may provide the received bank address BANK_ADDR to the bank 
+control logic circuit
+
+230
+, may provide the received row address ROW_ADDR to the 
+row address multiplexer
+
+240
+, and may provide the received column address COL_ADDR to the 
+column address latch
+
+250
+.
+
+The bank 
+control logic circuit
+
+230
+ may generate bank control signals in response to receipt of the bank address BANK_ADDR. One of the first through fourth bank row decoders 
+260
+
+a
+-
+260
+
+d 
+corresponding to the received bank address BANK_ADDR may be activated in response to the bank control signals generated by the bank 
+control logic circuit
+
+230
+, and one of the first through fourth bank column decoders 
+270
+
+a
+-
+270
+
+d 
+corresponding to the received bank address BANK_ADDR may be activated in response to the bank control signals generated by the bank 
+control logic circuit
+
+230
+.
+
+The 
+refresh control circuit
+
+215
+ may generate a refresh address REF_ADDR in response to receipt of a refresh command or entrance of any self-refresh mode. For example, the 
+refresh control circuit
+
+215
+ may include a refresh counter that is configured to sequentially change the refresh address REF_ADDR from a first address of the memory cell array to a last address of the memory cell array, and a ring oscillator that generates an oscillation signal or a reference signal provided to the refresh counter. The 
+refresh control circuit
+
+215
+ may receive control signals from the 
+control logic circuit
+
+210
+.
+
+The 
+row address multiplexer
+
+240
+ may receive the row address ROW_ADDR from the 
+address register
+
+220
+ and may receive the refresh address REF_ADDR from the 
+refresh control circuit
+
+215
+. The 
+row address multiplexer
+
+240
+ may selectively output the row address ROW_ADDR or the refresh address REF_ADDR. A row address output from the row address multiplexer 
+240
+ (e.g., the row address ROW_ADDR or the refresh address REF_ADDR) may be applied to the first through fourth bank row decoders 
+260
+
+a
+-
+260
+
+d. 
+
+The activated one of the first through fourth bank row decoders 
+260
+
+a
+-
+260
+
+d 
+may decode the row address output from the 
+row address multiplexer
+
+240
+ and may activate a wordline corresponding to the row address. For example, the activated bank row decoder may apply a wordline driving voltage to the wordline corresponding to the row address.
+
+The 
+column address latch
+
+250
+ may receive the column address COL_ADDR from the 
+address register
+
+220
+ and may temporarily store the received column address COL_ADDR. The 
+column address latch
+
+250
+ may apply the temporarily stored or received column address COL_ADDR to the first through fourth bank column decoders 
+270
+
+a
+-
+270
+
+d. 
+
+The activated one of the first through fourth bank column decoders 
+270
+
+a
+-
+270
+
+d 
+may decode the column address COL_ADDR output from the 
+column address latch
+
+250
+ and may control the I/
+O gating circuit
+
+290
+ to output data corresponding to the column address COL_ADDR. The I/
+O gating circuit
+
+290
+ may include a circuitry for gating I/O data. For example, the I/
+O gating circuit
+
+290
+ may include an input data mask logic, read data latches for storing data output from the first through fourth bank arrays 
+280
+
+a
+-
+280
+
+d
+, and write drivers for writing data to the first through fourth bank arrays 
+280
+
+a
+-
+280
+
+d. 
+
+Data DQ to be read from one of the first through fourth bank arrays 
+280
+
+a
+-
+280
+
+d 
+may be sensed by a sense amplifier coupled to the corresponding bank array and may be stored in the read data latches. The data DQ stored in the read data latches may be provided to the memory controller via the data I/
+O buffer
+
+295
+ and the data I/
+O pad
+
+299
+. Data DQ received via the data I/
+O pad
+
+299
+ that is to be written to one of the first through fourth bank arrays 
+280
+
+a
+-
+280
+
+d 
+may be provided from the memory controller to the data I/
+O buffer
+
+295
+. The data DQ received via the data I/
+O pad
+
+299
+ and provided to the data I/
+O buffer
+
+295
+ may be written to the corresponding bank array via the write drivers in the I/
+O gating circuit
+
+290
+.
+
+The 
+control logic circuit
+
+210
+ may control an operation of the 
+semiconductor memory device
+
+200
+. For example, the 
+control logic circuit
+
+210
+ may generate control signals for the 
+semiconductor memory device
+
+200
+ to perform a data write operation or a data read operation. The 
+control logic circuit
+
+210
+ may include a 
+command decoder
+
+211
+ that decodes a command CMD received from the memory controller and a 
+mode register
+
+212
+ that sets an operation mode of the 
+semiconductor memory device
+
+200
+. For example, the 
+command decoder
+
+211
+ may generate the control signals corresponding to the command CMD by decoding a write enable signal (e.g., /WE), a row address strobe signal (e.g., /RAS), a column address strobe signal (e.g., /CAS), a chip select signal (e.g., /CS), etc. The 
+control logic circuit
+
+210
+ may further receive a clock signal (e.g., CLK) and a clock enable signal (e.g., /CKE) for operating the 
+semiconductor memory device
+
+200
+ in a synchronous manner.
+
+The 
+ODT circuit
+
+297
+ may be connected to the data I/
+O pad
+
+299
+ and the data I/
+O buffer
+
+295
+. When the 
+ODT circuit
+
+297
+ is enabled, an ODT operation may be performed. The ODT operation may reduce (and/or prevent) a signal from being reflected by using a termination resistor so as to improve signal integrity.
+
+The 
+X-ray detector
+
+310
+ may be an X-ray detector according to example embodiments. For example, the 
+X-ray detector
+
+310
+ includes a BJT in which a voltage between both ends of the BJT changes (e.g., increases) according to a cumulative X-ray dosage to the 
+semiconductor memory device
+
+200
+. The 
+X-ray detector
+
+310
+ may be enabled in a test mode, may receive a test signal TS from the data I/
+O pad
+
+299
+, and may generate a test result signal TRS indicating the voltage between the both ends of the BJT to output the test result signal TRS through the data I/
+O pad
+
+299
+. The cumulative X-ray dosage to the 
+semiconductor memory device
+
+200
+ may be efficiently quantified and monitored using the 
+X-ray detector
+
+310
+. Thus, whether the 
+semiconductor memory device
+
+200
+ is defective or not may be readily determined.
+
+In some example embodiments, when the 
+X-ray detector
+
+110
+ is included in the 
+delay circuit
+
+150
+ as described with reference to 
+FIG. 9
+, the I/
+O gating circuit
+
+290
+ and the data I/
+O buffer
+
+295
+ in 
+FIG. 11
+ may correspond to the 
+delay circuit
+
+150
+ in 
+FIG. 9
+. Thus, the 
+X-ray detector
+
+310
+ may be included in at least one of the I/
+O gating circuit
+
+290
+ and the data I/
+O buffer
+
+295
+. In other example embodiments, when the 
+X-ray detector
+
+110
+ is included in the 
+ring oscillator
+
+170
+ as described with reference to 
+FIG. 10
+, the ring oscillator included in the 
+refresh control circuit
+
+215
+ may correspond to the 
+ring oscillator
+
+170
+ in 
+FIG. 10
+. Thus, the 
+X-ray detector
+
+310
+ may be included in the 
+refresh control circuit
+
+215
+.
+
+Typically, elements of the 
+semiconductor memory device
+
+200
+ of 
+FIG. 11
+ do not include a BJT, such that an additional BJT element is formed to implement the 
+X-ray detector
+
+310
+. As described with reference to 
+FIG. 3
+, since a BJT has a simple structure including only doped regions and electrodes, the BJT may be formed using general processes for manufacturing the 
+semiconductor memory device
+
+200
+, i.e., without any additional process.
+
+An example where the 
+semiconductor memory device
+
+200
+ is a volatile memory device is described with reference to 
+FIG. 1
+. As another example, the semiconductor memory device according to example embodiment may be one of various nonvolatile memory devices, e.g., a flash memory, a phase change random access memory (PRAM), a resistance random access memory (RRAM), a nano floating gate memory (NFGM), a polymer random access memory (PoRAM), a magnetic random access memory (MRAM), a ferroelectric random access memory (FRAM), or the like.
+
+FIG. 12
+ is a plan view illustrating a layout of a semiconductor memory device according to example embodiments. Referring to 
+FIG. 12
+, a 
+semiconductor memory device
+
+500
+ may include a plurality of 
+bank arrays
+
+510
+. Although 
+FIG. 12
+ illustrates an example where the 
+semiconductor memory device
+
+500
+ includes four 
+bank arrays
+
+510
+, the number of bank arrays included in the semiconductor memory device may be changed according to example embodiments. Areas in which the 
+bank arrays
+
+510
+ are formed may be referred to as memory areas or core areas on a semiconductor substrate.
+
+Row decoders
+
+520
+ and 
+column decoders
+
+530
+ may be adjacent to the 
+bank arrays
+
+510
+, respectively. The 
+row decoders
+
+520
+ may be arranged in a wordline direction of the 
+semiconductor memory device
+
+500
+ and the 
+column decoders
+
+530
+ may be arranged in a bitline direction of the 
+semiconductor memory device
+
+500
+. Two row decoders allocated respectively to two adjacent bank arrays may be disposed adjacent to each other and may share a control line therebetween.
+
+Pads PD may be in peripheral areas at edges and at a center of the 
+semiconductor memory device
+
+500
+, e.g., areas that surround the memory areas in which the 
+bank arrays
+
+510
+ are formed. The pads PD may be used to communicate with an external device (e.g., a host). In addition, 
+
+X-ray detectors
+
+541
+ and 
+542
+ may be in the peripheral area at the center of the 
+semiconductor memory device
+
+500
+. The 
+row decoders
+
+520
+, the 
+column decoders
+
+530
+, and the 
+
+X-ray detectors
+
+541
+ and 
+542
+ may constitute peripheral circuits. Pads PD may be between the 
+
+X-ray detectors
+
+541
+ and 
+542
+ and 
+column decoders
+
+530
+, and on opposite sides of the 
+bank arrays
+
+510
+ as the 
+row decoders
+
+520
+.
+
+Although 
+FIG. 12
+ illustrates example where the 
+semiconductor memory device
+
+500
+ includes two 
+
+X-ray detectors
+
+541
+ and 
+542
+, the number of X-ray detectors included in one semiconductor substrate or one semiconductor die may be changed according to example embodiments.
+
+FIG. 13
+ illustrate a memory system including a semiconductor memory device according to example embodiments. Referring to 
+FIG. 13
+, a 
+memory system
+
+1200
+ includes a 
+memory controller
+
+1210
+ and a 
+semiconductor memory device
+
+1220
+.
+
+The 
+memory controller
+
+1210
+ may transmit a command signal CMD to the 
+semiconductor memory device
+
+1220
+ via a command transmission line, may transmit an address signal ADDR to the 
+semiconductor memory device
+
+1220
+ via an address transmission line, and may exchange data DQ with the 
+semiconductor memory device
+
+1220
+ via one or more data transmission lines. The 
+memory controller
+
+1210
+ may input data to the 
+semiconductor memory device
+
+1220
+ or may receive data output from the 
+semiconductor memory device
+
+1220
+ based on a request from a host.
+
+The 
+semiconductor memory device
+
+1220
+ may be a semiconductor memory device according to example embodiments and may include an 
+X-ray detector
+
+1230
+. The 
+X-ray detector
+
+1230
+ may include a BJT in which a voltage between both ends of the BJT changes (e.g., increases) according to a cumulative X-ray dosage to the 
+semiconductor memory device
+
+1220
+. The cumulative X-ray dosage to the 
+semiconductor memory device
+
+1220
+ may be efficiently quantified and monitored using the 
+X-ray detector
+
+1230
+. Thus, whether the 
+semiconductor memory device
+
+1220
+ is defective or not may be efficiently determined.
+
+FIG. 14
+ illustrate a computing system including a semiconductor memory device according to example embodiments. Referring to 
+FIG. 14
+, a 
+computing system
+
+1300
+ includes at least one 
+processor
+
+1310
+, a 
+system controller
+
+1320
+, and a 
+memory system
+
+1330
+. The 
+computing system
+
+1300
+ may further include an 
+input device
+
+1350
+, an 
+output device
+
+1360
+, and a 
+storage device
+
+1370
+.
+
+The 
+memory system
+
+1330
+ includes at least one 
+semiconductor memory device
+
+1334
+ and a 
+memory controller
+
+1332
+ for controlling the 
+semiconductor memory device
+
+1334
+. The 
+semiconductor memory device
+
+1334
+ may be a semiconductor memory device according to example embodiments and may include an 
+X-ray detector
+
+1336
+. The 
+memory controller
+
+1332
+ may be included in the 
+system controller
+
+1320
+.
+
+The 
+processor
+
+1310
+ includes hardware, e.g., integrated circuitry, to perform various computing functions, e.g., executing specific software instructions for performing specific calculations or tasks. The 
+processor
+
+1310
+ may be connected to the 
+system controller
+
+1320
+ via a processor bus. The 
+system controller
+
+1320
+ may be connected to the 
+input device
+
+1350
+, the 
+output device
+
+1360
+, and the 
+storage device
+
+1370
+ via an expansion bus. The controller may also include hardware, e.g., integrated circuitry. As such, the 
+processor
+
+1310
+ may control the 
+input device
+
+1350
+, the 
+output device
+
+1360
+, and the 
+storage device
+
+1370
+ using the 
+system controller
+
+1320
+.
+
+FIG. 15
+ is a flowchart illustrating a method of testing a semiconductor memory device according to example embodiments.
+
+Referring to 
+FIG. 15
+, in a method of testing a semiconductor memory device including an X-ray detector according to example embodiments, a test signal is applied to a first data I/O pad of the semiconductor memory device (operation S
+1100
+). For example, the X-ray detector includes a BJT in which a voltage between both ends changes (e.g., increases) according to a cumulative X-ray dosage to the semiconductor memory device
+
+Whether the semiconductor memory device is defective or not is determined in accordance with a test result signal generated by the X-ray detector based on the test signal and the test result signal output through the second data I/O pad of the semiconductor memory device (operation S
+1200
+). For example, the test result signal indicates the voltage between both ends of the BJT.
+
+Configurations of the semiconductor memory device and the X-ray detector included therein may be substantially the same as those described with reference to 
+FIGS. 1 through 14
+. The cumulative X-ray dosage to the semiconductor memory device may be efficiently quantified and monitored using the X-ray detector. Thus, whether the semiconductor memory device is defective or not may be efficiently determined.
+
+FIG. 16
+ is a flowchart illustrating an example of determining whether the semiconductor memory device is defective in operation S
+1200
+ of 
+FIG. 15
+.
+
+Referring to 
+FIGS. 15 and 16
+, when the test result signal indicates that the voltage between the both ends of the BJT is lower than a reference voltage (operation S
+1210
+: YES), the semiconductor memory device may be determined to be normal (operation S
+1220
+). In other words, when the voltage at the both ends of the BJT element is lower than the reference voltage, the cumulative X-ray dosage is less than a reference value. Thus, the semiconductor memory device may be judged to be normal.
+
+When the test result signal indicates that the voltage between the both ends of the BJT is higher than or equal to the reference voltage (operation S
+1210
+: NO), the semiconductor memory device may be determined to be defective (operation S
+1230
+). In other words, when the voltage at the both ends, i.e., the input and output ends, of the BJT element is higher than or equal to the reference voltage, the cumulative X-ray dosage is greater than or equal to the reference value. In cases where the cumulative X-ray dosage is greater than or equal to the reference value, the semiconductor memory device may not have a normal state due to a deterioration of refresh characteristic of the volatile memory device, a wiring failure (e.g., a neck broken) at the time of assembly, or the like. Thus, the semiconductor memory device may be judged to be defective.
+
+In some example embodiments, when the cumulative X-ray dosage to the semiconductor memory device is quantified and monitored based on the current gain of the BJT, the semiconductor memory device may be judged as normal when the current gain is higher than a reference gain and may be judged as defective when the current gain is lower than or equal to the reference gain.
+
+FIG. 17
+ illustrates a test system that performs a method of testing a semiconductor memory device according to example embodiments. Referring to 
+FIG. 17
+, a 
+test system
+
+3000
+ may include a 
+test controller
+
+3100
+, a plurality of devices under test (DUTs) 
+3200
+
+a
+, 
+3200
+
+b
+, . . . , 
+3200
+
+k
+, a 
+storage device
+
+3300
+, a 
+test data generator
+
+3400
+, and a 
+test result generator
+
+3500
+. Each of the plurality of DUTs 
+3200
+
+a
+-
+3200
+
+k 
+may be a semiconductor memory device according to example embodiments and may include an X-ray detector according to example embodiments.
+
+The 
+test controller
+
+3100
+ may control a test for each of the plurality of DUTs 
+3200
+
+a
+-
+3200
+
+k 
+by controlling elements included in the 
+test system
+
+3000
+. The 
+storage device
+
+3300
+ may store data for the test. The 
+test data generator
+
+3400
+ may generate a test signal TS to provide the test signal TS to the plurality of DUTs 
+3200
+
+a
+-
+3200
+
+k
+. The 
+test result generator
+
+3500
+ may receive a test result signal TRS from the plurality of DUTs 
+3200
+
+a
+-
+3200
+
+k 
+to determine whether each of the plurality of DUTs 
+3200
+
+a
+-
+3200
+
+k 
+is defective or not. In other words, operation S
+1100
+ in 
+FIG. 15
+ may be performed by the 
+test data generator
+
+3400
+, and operation S
+1200
+ in 
+FIG. 15
+ may be performed by the 
+test result generator
+
+3500
+.
+
+FIG. 18
+ is a flowchart illustrating a method of manufacturing a semiconductor memory device according to example embodiments.
+
+Referring to 
+FIG. 18
+ in a method of manufacturing a semiconductor memory device according to example embodiments, the semiconductor memory device including an X-ray detector may be fabricated (operation S
+2100
+). For example, the X-ray detector includes a BJT in which a voltage between both ends changes (e.g., increases) according to a cumulative X-ray dosage to the semiconductor memory device.
+
+The semiconductor memory device is tested (operation S
+2200
+). For example, operation S
+2200
+ in 
+FIG. 18
+ may be performed based on the method of testing the semiconductor memory device described with reference to 
+FIG. 15
+. The damage or defect of the semiconductor memory device due to X-ray inspection may be detected in real time and, thus, the manufacturing efficiency may be improved.
+
+The method of manufacturing the semiconductor memory device using the method of testing the semiconductor memory device is described with reference to 
+FIG. 18
+. As another example, when the manufacture of the semiconductor memory device is completed and before the product is shipped and delivered to a customer, the manufactured semiconductor memory device may be tested based on the method of testing the semiconductor memory device according to example embodiments to generate a first test result, and the first test result for the semiconductor memory device may be stored. After that, when the semiconductor memory device which has been shipped is returned as a defective product, the returned semiconductor memory device may be additionally tested based on the method of testing the semiconductor memory device according to example embodiments to generate a second test result, and thus it may be determined by comparing the first test result with the second test result whether the damage or defect of the semiconductor memory device occurs before or after the shipment.
+
+At least one example embodiment provides a semiconductor memory device including an X-ray detector capable of quantifying and monitoring an X-ray dosage. At least one example embodiment provides an X-ray detector capable of quantifying and monitoring an X-ray dosage. At least one example embodiment of provides a method of testing and manufacturing the semiconductor memory device including the X-ray detector.
+
+The X-ray detector according to example embodiments may be implemented with a BJT. Characteristics of the BJT may be degraded or deteriorated when X-ray is irradiated. For example, the BJT may have reduced current gain or increased VCE voltage when the X-ray is irradiated. In addition, the degraded characteristic of the BJT device may not be restored by the radiation annealing. Thus, the cumulative X-ray dosage to the semiconductor memory device may be efficiently quantified and monitored.
+
+In the semiconductor memory device, the method of testing the semiconductor memory device and the method of manufacturing the semiconductor memory device according to example embodiments, the semiconductor memory device may include the X-ray detector implemented with the BJT. Thus, whether the semiconductor memory device is defective or not may be determined.
+
+Embodiments may be applied to various electronic devices and electronic systems including the semiconductor memory device. For example, embodiments may be applied to systems such as a mobile phone, a smart phone, a tablet computer, a laptop computer, a personal digital assistant (PDA), a portable multimedia player (PMP), a digital camera, a portable game console, a music player, a camcorder, a video player, a navigation device, a wearable device, an internet of things (IoT) device, an internet of everything (IoE) device, an e-book reader, a virtual reality (VR) device, an augmented reality (AR) device, a robotic device, etc.
+
+Example embodiments have been disclosed herein, and although specific terms are employed, they are used and are to be interpreted in a generic and descriptive sense only and not for purpose of limitation. In some instances, as would be apparent to one of ordinary skill in the art as of the filing of the present application, features, characteristics, and/or elements described in connection with a particular embodiment may be used singly or in combination with features, characteristics, and/or elements described in connection with other embodiments unless otherwise specifically indicated. Accordingly, it will be understood by those of skill in the art that various changes in form and details may be made without departing from the spirit and scope of the present invention as set forth in the following claims.
+
+Claims (
+18
+)
+
+What is claimed is:
+
+1. A semiconductor memory device, comprising:
+
+a semiconductor substrate that includes a memory area in which a memory cell array is formed;
+
+a first data input/output (I/O) pad to receive a test signal;
+
+an X-ray detector connected to the first data I/O pad, the X-ray detector including a bipolar junction transistor (BJT) formed in the semiconductor substrate and having a voltage between an input end and an output end that changes according to a cumulative X-ray dosage to the semiconductor memory device, the X-ray detector to generate a test result signal indicating the voltage between the input and output ends of the BJT based on the test signal; and
+
+a second data I/O pad connected to the X-ray detector and to output the test result signal, wherein:
+
+the BJT includes N-type and P-type semiconductor regions formed in the semiconductor substrate.
+
+2. The semiconductor memory device as claimed in 
+claim 1
+, wherein the BJT is an NPN BJT that includes:
+
+a first N-type semiconductor region in the semiconductor substrate and connected to an emitter electrode;
+
+a P-type semiconductor region in the semiconductor substrate and connected to a base electrode;
+
+a second N-type semiconductor region in the semiconductor substrate and connected to a collector electrode;
+
+a first junction between the first N-type semiconductor region and the P-type semiconductor region; and
+
+a second junction between the P-type semiconductor region and the second N-type semiconductor region.
+
+3. The semiconductor memory device as claimed in 
+claim 2
+, wherein the voltage between the input and output ends of the BJT increases as the cumulative X-ray dosage increases.
+
+4. The semiconductor memory device as claimed in 
+claim 3
+, wherein the voltage between the input and output ends of the BJT is a voltage between the collector electrode and the emitter electrode of the NPN BJT.
+
+5. The semiconductor memory device as claimed in 
+claim 1
+, wherein the BJT is a PNP BJT that includes:
+
+a first P-type semiconductor region in the semiconductor substrate and connected to an emitter electrode;
+
+an N-type semiconductor region in the semiconductor substrate and connected to a base electrode;
+
+a second P-type semiconductor region in the semiconductor substrate and connected to a collector electrode;
+
+a first junction between the first P-type semiconductor region and the N-type semiconductor region; and
+
+a second junction between the N-type semiconductor region and the second P-type semiconductor region.
+
+6. The semiconductor memory device as claimed in 
+claim 1
+, wherein the X-ray detector further includes:
+
+a current source to generate a first current applied to a collector electrode of the BJT based on the test signal; and
+
+a voltage measurer to generate the test result signal based on a voltage between the collector electrode and an emitter electrode of the BJT when the first current is applied to the collector electrode of the BJT.
+
+7. The semiconductor memory device as claimed in 
+claim 6
+, wherein a level of the first current generated from the current source is fixed.
+
+8. The semiconductor memory device as claimed in 
+claim 6
+, further comprising a digital code generator between the voltage measurer and the second data I/O pad, the digital code generator to convert the test result signal into a digital code.
+
+9. The semiconductor memory device as claimed in 
+claim 1
+, wherein the memory cell array is connected to the first data I/O pad and the second data I/O pad, the memory cell array including a plurality of memory cells.
+
+10. The semiconductor memory device as claimed in 
+claim 9
+, wherein:
+
+the memory cell array is to store first data based on a first data signal received from at least one of the first and second data I/O pads or to output stored second data as a second data signal through the at least one of the first and second data I/O pads during a first operation mode, and
+
+the X-ray detector is to generate the test result signal based on the test signal received from the first data I/O pad and to output the test result signal through the second data I/O pad during a second operation mode.
+
+11. The semiconductor memory device as claimed in 
+claim 10
+, wherein:
+
+the memory cell array is disabled during the second operation mode, and
+
+the X-ray detector is disabled during the first operation mode.
+
+12. The semiconductor memory device as claimed in 
+claim 10
+, wherein one of the first operation mode and the second operation mode is selected based on a command received from an external device.
+
+13. The semiconductor memory device as claimed in 
+claim 9
+, wherein the X-ray detector is in a peripheral area surrounding the memory area on the semiconductor substrate.
+
+14. The semiconductor memory device as claimed in 
+claim 1
+, further comprising a delay circuit to receive at least one signal and to delay the at least one signal, wherein the X-ray detector is included in the delay circuit.
+
+15. The semiconductor memory device as claimed in 
+claim 1
+, further comprising:
+
+a ring oscillator to generate an oscillation signal, and
+
+wherein the X-ray detector is included in the ring oscillator.
+
+16. The semiconductor memory device as claimed in 
+claim 1
+, wherein the semiconductor memory device is a dynamic random access memory (DRAM).
+
+17. An X-ray detector, comprising:
+
+a semiconductor substrate;
+
+a current source connected to a first data input/output (I/O) pad on the semiconductor substrate, the first I/O pad being connected to a semiconductor memory device, the current source to generate a first current based on a test signal received from the first data I/O pad;
+
+a bipolar junction transistor (BJT) formed in the semiconductor substrate and connected to the current source, the BJT including an emitter electrode, a base electrode, and a collector electrode to which the first current is applied; and
+
+a voltage measurer connected to the BJT and a second data I/O pad on the semiconductor substrate, the second I/O pad being connected to the semiconductor memory device, the voltage measurer to generate a test result signal based on a voltage between the collector electrode and the emitter electrode of the BJT, and to output the test result signal through the second data I/O pad when the first current is applied to the collector electrode of the BJT,
+
+wherein:
+
+the voltage between the collector electrode and the emitter electrode of the BJT changes according to a cumulative X-ray dosage to the semiconductor memory device, and
+
+the BJT includes N-type and P-type semiconductor regions formed in the semiconductor substrate.
+
+18. The X-ray detector as claimed in 
+claim 17
+, wherein the voltage between the collector electrode and the emitter electrode of the BJT increases as the cumulative X-ray dosage increases.
+
+US16/410,120
+
+2018-10-01
+
+2019-05-13
+
+X-ray detector, semiconductor memory device including the same, method of testing semiconductor memory device and method of manufacturing semiconductor memory device 
+
+Active
+
+2039-05-14
+
+US10984853B2
+
+        (
+en
+)
+
+Applications Claiming Priority (2)
+
+Application Number
+
+Priority Date
+
+Filing Date
+
+Title
+
+KR1020180116786A
+
+KR102567134B1
+
+                (
+en
+)
+
+2018-10-01
+
+2018-10-01
+
+X-ray detector, semiconductor memory device including the same and method of testing semiconductor memory device 
+
+KR10-2018-0116786
+
+2018-10-01
+
+Publications (2)
+
+Publication Number
+
+Publication Date
+
+US20200105339A1
+
+              US20200105339A1
+              (
+en
+)
+
+2020-04-02
+
+US10984853B2
+
+true
+
+              US10984853B2
+              (
+en
+)
+
+2021-04-20
+
+Family
+
+ID=69947746
+
+Family Applications (1)
+
+Application Number
+
+Title
+
+Priority Date
+
+Filing Date
+
+US16/410,120
+
+Active
+
+2039-05-14
+
+US10984853B2
+
+                (
+en
+)
+
+2018-10-01
+
+2019-05-13
+
+X-ray detector, semiconductor memory device including the same, method of testing semiconductor memory device and method of manufacturing semiconductor memory device 
+
+Country Status (4)
+
+Country
+
+Link
+
+US
+
+            (
+1
+)
+
+US10984853B2
+
+              (
+en
+)
+
+KR
+
+            (
+1
+)
+
+KR102567134B1
+
+              (
+en
+)
+
+CN
+
+            (
+1
+)
+
+CN110967726B
+
+              (
+en
+)
+
+SG
+
+            (
+1
+)
+
+SG10201906813PA
+
+              (
+en
+)
+
+Families Citing this family (3)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+KR102813341B1
+
+              (
+en
+)
+
+*
+
+2019-07-11
+
+2025-05-28
+
+에스케이하이닉스 주식회사
+
+Monitoring circuit and semiconductor device 
+
+WO2022067400A1
+
+              (
+en
+)
+
+*
+
+2020-09-29
+
+2022-04-07
+
+Scients - Sistemas Cientificos De Instrumentacao E Engenharia Para Novas Tecnologias Ltda
+
+Electronic memory system using x-rays 
+
+US11315653B2
+
+              (
+en
+)
+
+*
+
+2020-09-30
+
+2022-04-26
+
+Nanya Technology Corporation
+
+Dynamic random access memory and method thereof 
+
+Citations (36)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US4234928A
+
+              (
+en
+)
+
+*
+
+1978-02-27
+
+1980-11-18
+
+Siemens Aktiengesellschaft
+
+X-ray diagnostic installation for x-ray photographs 
+
+US4819212A
+
+              (
+en
+)
+
+*
+
+1986-05-31
+
+1989-04-04
+
+Kabushiki Kaisha Toshiba
+
+Nonvolatile semiconductor memory device with readout test circuitry 
+
+US4860260A
+
+              (
+en
+)
+
+*
+
+1986-06-12
+
+1989-08-22
+
+Kabushiki Kaisha Toshiba
+
+Semiconductor memory device with testing of redundant memory cells 
+
+US4924487A
+
+              (
+en
+)
+
+*
+
+1987-07-03
+
+1990-05-08
+
+Kabushiki Kaisha Toshiba
+
+X-ray diagnostic apparatus 
+
+US5117113A
+
+              (
+en
+)
+
+*
+
+1990-07-06
+
+1992-05-26
+
+Thompson And Nielson Electronics Ltd.
+
+Direct reading dosimeter 
+
+US5343434A
+
+              (
+en
+)
+
+*
+
+1992-04-02
+
+1994-08-30
+
+Mitsubishi Denki Kabushiki Kaisha
+
+Nonvolatile semiconductor memory device and manufacturing method and testing method thereof 
+
+US5428569A
+
+              (
+en
+)
+
+*
+
+1992-03-27
+
+1995-06-27
+
+Kabushiki Kaisha Toshiba
+
+Non-volatile semiconductor memory device 
+
+US5568426A
+
+              (
+en
+)
+
+*
+
+1995-07-26
+
+1996-10-22
+
+Micron Quantum Devices, Inc.
+
+Method and apparatus for performing memory cell verification on a nonvolatile memory circuit 
+
+US5712633A
+
+              (
+en
+)
+
+*
+
+1995-10-13
+
+1998-01-27
+
+Lg Semicon Co., Ltd.
+
+Conversion characteristic test circuit for analog/digital converter and method thereof 
+
+US6380729B1
+
+              (
+en
+)
+
+*
+
+1999-02-16
+
+2002-04-30
+
+Alien Technology Corporation
+
+Testing integrated circuit dice 
+
+US20050012045A1
+
+              (
+en
+)
+
+*
+
+2003-07-18
+
+2005-01-20
+
+International Business Machines Corporation
+
+Detector for alpha particle or cosmic ray 
+
+US20050229050A1
+
+              (
+en
+)
+
+*
+
+2004-04-07
+
+2005-10-13
+
+Kabushiki Kaisha Toshiba
+
+Semiconductor device 
+
+US20060186342A1
+
+              (
+en
+)
+
+*
+
+2005-01-19
+
+2006-08-24
+
+Integrated Magnetoelectronics Corporation
+
+Radiation detector 
+
+US20060242094A1
+
+              (
+en
+)
+
+*
+
+2005-03-25
+
+2006-10-26
+
+Konica Minolta Medical & Graphic, Inc.
+
+Radiography system, and program executable in console 
+
+US20070252088A1
+
+              (
+en
+)
+
+*
+
+2006-04-28
+
+2007-11-01
+
+Abadeer Wagdi W
+
+Monitoring ionizing radiation in silicon-on insulator integrated circuits 
+
+US20080169419A1
+
+              (
+en
+)
+
+*
+
+2007-01-12
+
+2008-07-17
+
+General Electric Company
+
+Systems and methods for reading data 
+
+US20090080601A1
+
+              (
+en
+)
+
+*
+
+2007-09-26
+
+2009-03-26
+
+John Eric Tkaczyk
+
+Method and apparatus for flexibly binning energy discriminating data 
+
+US20090189082A1
+
+              (
+en
+)
+
+*
+
+2008-01-30
+
+2009-07-30
+
+Stahmann Jeffrey E
+
+Method and apparatus for radiation effects detection 
+
+US20100008473A1
+
+              (
+en
+)
+
+*
+
+2008-07-08
+
+2010-01-14
+
+General Electric Company
+
+Multi-purpose docking apparatus of digital x-ray detector 
+
+US20100108898A1
+
+              (
+en
+)
+
+*
+
+2008-11-04
+
+2010-05-06
+
+General Electric Company
+
+Systems, methods and apparatus for reduction of field-effect transistor leakage in a digital x-ray detector 
+
+US20130084660A1
+
+              (
+en
+)
+
+*
+
+2011-09-30
+
+2013-04-04
+
+Taiwan Semiconductor Manufacturing Company, Ltd.
+
+Process for enhancing image quality of backside illuminated image sensor 
+
+US20130151201A1
+
+              (
+en
+)
+
+*
+
+2011-12-08
+
+2013-06-13
+
+John W. McCorkle
+
+Method and system for processing received data 
+
+US20130264465A1
+
+              (
+en
+)
+
+*
+
+2011-11-14
+
+2013-10-10
+
+Omnivision Technologies, Inc.
+
+Shared terminal of an image sensor system for transferring image data and control signals 
+
+US20130313441A1
+
+              (
+en
+)
+
+*
+
+2012-05-23
+
+2013-11-28
+
+International Business Machines Corporation
+
+Soft Error Detection 
+
+US20140138555A1
+
+              (
+en
+)
+
+*
+
+2012-11-20
+
+2014-05-22
+
+Eric C. Hannah
+
+On-die electric cosmic ray detector 
+
+US20140205070A1
+
+              (
+en
+)
+
+*
+
+2013-01-22
+
+2014-07-24
+
+General Electric Company
+
+Systems and methods for fast kilovolt switching in an x-ray system 
+
+US20150098262A1
+
+              (
+en
+)
+
+*
+
+2013-10-04
+
+2015-04-09
+
+SK Hynix Inc.
+
+Semiconductor memory device having ray detector, and electronic device including the same, and operating method thereof 
+
+US20150207415A1
+
+              (
+en
+)
+
+*
+
+2014-01-22
+
+2015-07-23
+
+General Electric Company
+
+Systems and Methods for Fast Kilovolt Switching in an X-Ray System 
+
+US20150242143A1
+
+              (
+en
+)
+
+*
+
+2014-02-21
+
+2015-08-27
+
+Samsung Electronics Co., Ltd.
+
+Flash memory system and method controlling same 
+
+US20150364216A1
+
+              (
+en
+)
+
+*
+
+2014-06-16
+
+2015-12-17
+
+Honeywell International Inc.
+
+Radiation upset detection 
+
+US20160204782A1
+
+              (
+en
+)
+
+*
+
+2015-01-13
+
+2016-07-14
+
+Samsung Electronics Co., Ltd.
+
+Integrated circuit and storage device including the same 
+
+US20160357630A1
+
+              (
+en
+)
+
+*
+
+2015-06-05
+
+2016-12-08
+
+Samsung Electronics Co., Ltd.
+
+Semiconductor memory device providing analysis and correcting of soft data fail in stacked chips 
+
+US20170184733A1
+
+              (
+en
+)
+
+*
+
+2015-12-28
+
+2017-06-29
+
+Intel Corporation
+
+Memory with enhancement to perform radiation measurement 
+
+US20180052240A1
+
+              (
+en
+)
+
+2015-03-10
+
+2018-02-22
+
+Shimadzu Corporation
+
+X-ray detector 
+
+US20180083651A1
+
+              (
+en
+)
+
+*
+
+2016-09-19
+
+2018-03-22
+
+Samsung Electronics Co., Ltd.
+
+Memory device with error check function of memory cell array and memory module including the same 
+
+US20190064373A1
+
+              (
+en
+)
+
+*
+
+2016-10-27
+
+2019-02-28
+
+Shenzhen Xpectvision Technology Co., Ltd.
+
+Dark noise compensation in a radiation detector 
+
+Family Cites Families (8)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US2706790A
+
+              (
+en
+)
+
+*
+
+1950-10-18
+
+1955-04-19
+
+Gen Electric
+
+X-ray detection 
+
+KR100464321B1
+
+              (
+en
+)
+
+*
+
+2002-11-20
+
+2004-12-31
+
+삼성전자주식회사
+
+Silicon optoelectronic device and image input/output apparatus applying it 
+
+US8035139B2
+
+              (
+en
+)
+
+*
+
+2007-09-02
+
+2011-10-11
+
+Suvolta, Inc.
+
+Dynamic random access memory having junction field effect transistor cell access device 
+
+US8750031B2
+
+              (
+en
+)
+
+*
+
+2011-12-16
+
+2014-06-10
+
+Taiwan Semiconductor Manufacturing Company, Ltd.
+
+Test structures, methods of manufacturing thereof, test methods, and MRAM arrays 
+
+US9183910B2
+
+              (
+en
+)
+
+*
+
+2012-05-31
+
+2015-11-10
+
+Samsung Electronics Co., Ltd.
+
+Semiconductor memory devices for alternately selecting bit lines 
+
+CN105633078B
+
+              (
+en
+)
+
+*
+
+2015-12-23
+
+2018-06-22
+
+成都芯源系统有限公司
+
+bipolar junction semiconductor device and manufacturing method thereof 
+
+US10686003B2
+
+              (
+en
+)
+
+*
+
+2015-12-31
+
+2020-06-16
+
+General Electric Company
+
+Radiation detector assembly 
+
+EP3420560B1
+
+              (
+en
+)
+
+*
+
+2016-02-26
+
+2023-05-10
+
+Shenzhen Xpectvision Technology Co., Ltd.
+
+Methods of data output from semiconductor image detector 
+
+2018
+
+2018-10-01
+
+KR
+
+KR1020180116786A
+
+patent/KR102567134B1/en
+
+active
+
+Active
+
+2019
+
+2019-05-13
+
+US
+
+US16/410,120
+
+patent/US10984853B2/en
+
+active
+
+Active
+
+2019-07-19
+
+CN
+
+CN201910658595.2A
+
+patent/CN110967726B/en
+
+active
+
+Active
+
+2019-07-23
+
+SG
+
+SG10201906813PA
+
+patent/SG10201906813PA/en
+
+unknown
+
+Patent Citations (45)
+
+* Cited by examiner, † Cited by third party
+
+Publication number
+
+Priority date
+
+Publication date
+
+Assignee
+
+Title
+
+US4234928A
+
+              (
+en
+)
+
+*
+
+1978-02-27
+
+1980-11-18
+
+Siemens Aktiengesellschaft
+
+X-ray diagnostic installation for x-ray photographs 
+
+US4819212A
+
+              (
+en
+)
+
+*
+
+1986-05-31
+
+1989-04-04
+
+Kabushiki Kaisha Toshiba
+
+Nonvolatile semiconductor memory device with readout test circuitry 
+
+US4860260A
+
+              (
+en
+)
+
+*
+
+1986-06-12
+
+1989-08-22
+
+Kabushiki Kaisha Toshiba
+
+Semiconductor memory device with testing of redundant memory cells 
+
+US4924487A
+
+              (
+en
+)
+
+*
+
+1987-07-03
+
+1990-05-08
+
+Kabushiki Kaisha Toshiba
+
+X-ray diagnostic apparatus 
+
+US5117113A
+
+              (
+en
+)
+
+*
+
+1990-07-06
+
+1992-05-26
+
+Thompson And Nielson Electronics Ltd.
+
+Direct reading dosimeter 
+
+US5428569A
+
+              (
+en
+)
+
+*
+
+1992-03-27
+
+1995-06-27
+
+Kabushiki Kaisha Toshiba
+
+Non-volatile semiconductor memory device 
+
+US5343434A
+
+              (
+en
+)
+
+*
+
+1992-04-02
+
+1994-08-30
+
+Mitsubishi Denki Kabushiki Kaisha
+
+Nonvolatile semiconductor memory device and manufacturing method and testing method thereof 
+
+US5568426A
+
+              (
+en
+)
+
+*
+
+1995-07-26
+
+1996-10-22
+
+Micron Quantum Devices, Inc.
+
+Method and apparatus for performing memory cell verification on a nonvolatile memory circuit 
+
+US5712633A
+
+              (
+en
+)
+
+*
+
+1995-10-13
+
+1998-01-27
+
+Lg Semicon Co., Ltd.
+
+Conversion characteristic test circuit for analog/digital converter and method thereof 
+
+US6380729B1
+
+              (
+en
+)
+
+*
+
+1999-02-16
+
+2002-04-30
+
+Alien Technology Corporation
+
+Testing integrated circuit dice 
+
+US20050012045A1
+
+              (
+en
+)
+
+*
+
+2003-07-18
+
+2005-01-20
+
+International Business Machines Corporation
+
+Detector for alpha particle or cosmic ray 
+
+US7057180B2
+
+              (
+en
+)
+
+2003-07-18
+
+2006-06-06
+
+International Business Machines Corporation
+
+Detector for alpha particle or cosmic ray 
+
+US20050229050A1
+
+              (
+en
+)
+
+*
+
+2004-04-07
+
+2005-10-13
+
+Kabushiki Kaisha Toshiba
+
+Semiconductor device 
+
+US20060186342A1
+
+              (
+en
+)
+
+*
+
+2005-01-19
+
+2006-08-24
+
+Integrated Magnetoelectronics Corporation
+
+Radiation detector 
+
+US7220968B2
+
+              (
+en
+)
+
+2005-01-19
+
+2007-05-22
+
+Integrated Magnetoelectronics Corporation
+
+Radiation detector having all-metal circuitry operation of which is based on electron spin 
+
+US20060242094A1
+
+              (
+en
+)
+
+*
+
+2005-03-25
+
+2006-10-26
+
+Konica Minolta Medical & Graphic, Inc.
+
+Radiography system, and program executable in console 
+
+US20070252088A1
+
+              (
+en
+)
+
+*
+
+2006-04-28
+
+2007-11-01
+
+Abadeer Wagdi W
+
+Monitoring ionizing radiation in silicon-on insulator integrated circuits 
+
+US7375339B2
+
+              (
+en
+)
+
+2006-04-28
+
+2008-05-20
+
+International Business Machines Corporation
+
+Monitoring ionizing radiation in silicon-on insulator integrated circuits 
+
+US20080169419A1
+
+              (
+en
+)
+
+*
+
+2007-01-12
+
+2008-07-17
+
+General Electric Company
+
+Systems and methods for reading data 
+
+US20090080601A1
+
+              (
+en
+)
+
+*
+
+2007-09-26
+
+2009-03-26
+
+John Eric Tkaczyk
+
+Method and apparatus for flexibly binning energy discriminating data 
+
+US20090189082A1
+
+              (
+en
+)
+
+*
+
+2008-01-30
+
+2009-07-30
+
+Stahmann Jeffrey E
+
+Method and apparatus for radiation effects detection 
+
+US20110166449A1
+
+              (
+en
+)
+
+*
+
+2008-01-30
+
+2011-07-07
+
+Stahmann Jeffrey E
+
+Method and apparatus for radiation effects detection 
+
+US20100008473A1
+
+              (
+en
+)
+
+*
+
+2008-07-08
+
+2010-01-14
+
+General Electric Company
+
+Multi-purpose docking apparatus of digital x-ray detector 
+
+US20100108898A1
+
+              (
+en
+)
+
+*
+
+2008-11-04
+
+2010-05-06
+
+General Electric Company
+
+Systems, methods and apparatus for reduction of field-effect transistor leakage in a digital x-ray detector 
+
+US20130084660A1
+
+              (
+en
+)
+
+*
+
+2011-09-30
+
+2013-04-04
+
+Taiwan Semiconductor Manufacturing Company, Ltd.
+
+Process for enhancing image quality of backside illuminated image sensor 
+
+US20130264465A1
+
+              (
+en
+)
+
+*
+
+2011-11-14
+
+2013-10-10
+
+Omnivision Technologies, Inc.
+
+Shared terminal of an image sensor system for transferring image data and control signals 
+
+US20130151201A1
+
+              (
+en
+)
+
+*
+
+2011-12-08
+
+2013-06-13
+
+John W. McCorkle
+
+Method and system for processing received data 
+
+US20130313441A1
+
+              (
+en
+)
+
+*
+
+2012-05-23
+
+2013-11-28
+
+International Business Machines Corporation
+
+Soft Error Detection 
+
+US8890083B2
+
+              (
+en
+)
+
+2012-05-23
+
+2014-11-18
+
+International Business Machines Corporation
+
+Soft error detection 
+
+US9110804B2
+
+              (
+en
+)
+
+2012-11-20
+
+2015-08-18
+
+Intel Corporation
+
+On-die electric cosmic ray detector 
+
+US20140138555A1
+
+              (
+en
+)
+
+*
+
+2012-11-20
+
+2014-05-22
+
+Eric C. Hannah
+
+On-die electric cosmic ray detector 
+
+US20140205070A1
+
+              (
+en
+)
+
+*
+
+2013-01-22
+
+2014-07-24
+
+General Electric Company
+
+Systems and methods for fast kilovolt switching in an x-ray system 
+
+US20150098262A1
+
+              (
+en
+)
+
+*
+
+2013-10-04
+
+2015-04-09
+
+SK Hynix Inc.
+
+Semiconductor memory device having ray detector, and electronic device including the same, and operating method thereof 
+
+US9053792B2
+
+              (
+en
+)
+
+2013-10-04
+
+2015-06-09
+
+SK Hynix Inc.
+
+Semiconductor memory device having ray detector, and electronic device including the same, and operating method thereof 
+
+US20150207415A1
+
+              (
+en
+)
+
+*
+
+2014-01-22
+
+2015-07-23
+
+General Electric Company
+
+Systems and Methods for Fast Kilovolt Switching in an X-Ray System 
+
+US20150242143A1
+
+              (
+en
+)
+
+*
+
+2014-02-21
+
+2015-08-27
+
+Samsung Electronics Co., Ltd.
+
+Flash memory system and method controlling same 
+
+US9672880B2
+
+              (
+en
+)
+
+2014-06-16
+
+2017-06-06
+
+Honeywell International Inc.
+
+Radiation upset detection 
+
+US20150364216A1
+
+              (
+en
+)
+
+*
+
+2014-06-16
+
+2015-12-17
+
+Honeywell International Inc.
+
+Radiation upset detection 
+
+US20160204782A1
+
+              (
+en
+)
+
+*
+
+2015-01-13
+
+2016-07-14
+
+Samsung Electronics Co., Ltd.
+
+Integrated circuit and storage device including the same 
+
+US20180052240A1
+
+              (
+en
+)
+
+2015-03-10
+
+2018-02-22
+
+Shimadzu Corporation
+
+X-ray detector 
+
+US20160357630A1
+
+              (
+en
+)
+
+*
+
+2015-06-05
+
+2016-12-08
+
+Samsung Electronics Co., Ltd.
+
+Semiconductor memory device providing analysis and correcting of soft data fail in stacked chips 
+
+US20170184733A1
+
+              (
+en
+)
+
+*
+
+2015-12-28
+
+2017-06-29
+
+Intel Corporation
+
+Memory with enhancement to perform radiation measurement 
+
+US9971045B2
+
+              (
+en
+)
+
+2015-12-28
+
+2018-05-15
+
+Intel Corporation
+
+Memory with enhancement to perform radiation measurement 
+
+US20180083651A1
+
+              (
+en
+)
+
+*
+
+2016-09-19
+
+2018-03-22
+
+Samsung Electronics Co., Ltd.
+
+Memory device with error check function of memory cell array and memory module including the same 
+
+US20190064373A1
+
+              (
+en
+)
+
+*
+
+2016-10-27
+
+2019-02-28
+
+Shenzhen Xpectvision Technology Co., Ltd.
+
+Dark noise compensation in a radiation detector 
+
+Also Published As
+
+Publication number
+
+Publication date
+
+KR102567134B1
+
+              (
+en
+)
+
+2023-08-16
+
+CN110967726B
+
+              (
+en
+)
+
+2024-07-23
+
+KR20200037503A
+
+              (
+en
+)
+
+2020-04-09
+
+SG10201906813PA
+
+              (
+en
+)
+
+2020-05-28
+
+CN110967726A
+
+              (
+en
+)
+
+2020-04-07
+
+US20200105339A1
+
+              (
+en
+)
+
+2020-04-02
+
+Similar Documents
+
+Publication
+
+Publication Date
+
+Title
+
+US12613770B2
+
+                (
+en
+)
+
+2026-04-28
+
+Semiconductor device with user defined operations and associated methods and systems 
+
+US12326781B2
+
+                (
+en
+)
+
+2025-06-10
+
+Semiconductor device with modified access and associated methods and systems 
+
+US12430205B2
+
+                (
+en
+)
+
+2025-09-30
+
+Methods for error count reporting with scaled error count information, and memory devices employing the same 
+
+US11200118B2
+
+                (
+en
+)
+
+2021-12-14
+
+Semiconductor device with modified command and associated methods and systems 
+
+US10255989B2
+
+                (
+en
+)
+
+2019-04-09
+
+Semiconductor memory devices, memory systems including the same and methods of operating the same 
+
+US10156995B2
+
+                (
+en
+)
+
+2018-12-18
+
+Semiconductor memory devices and methods of operating the same 
+
+US9042152B2
+
+                (
+en
+)
+
+2015-05-26
+
+Data read circuit, a non-volatile memory device having the same, and a method of reading data from the non-volatile memory device 
+
+TWI674584B
+
+                (
+en
+)
+
+2019-10-11
+
+        Memory device
+
+US8873325B2
+
+                (
+en
+)
+
+2014-10-28
+
+Semiconductor device performing refresh operation 
+
+US20200371869A1
+
+                (
+en
+)
+
+2020-11-26
+
+Semiconductor memory devices, and methods of operating semiconductor memory devices 
+
+US20200105339A1
+
+                (
+en
+)
+
+2020-04-02
+
+X-ray detector, semiconductor memory device including the same, method of testing semiconductor memory device and method of manufacturing semiconductor memory device 
+
+US11594298B2
+
+                (
+en
+)
+
+2023-02-28
+
+Word line characteristics monitors for memory devices and associated methods and systems 
+
+CN113129956A
+
+                (
+en
+)
+
+2021-07-16
+
+Semiconductor device with wordline degradation monitor and associated methods and systems 
+
+US8143931B2
+
+                (
+en
+)
+
+2012-03-27
+
+Flag signal generation circuit and semiconductor device having the same 
+
+Legal Events
+
+Date
+
+Code
+
+Title
+
+Description
+
+2019-05-13
+
+AS
+
+Assignment
+
+Owner name
+:
+
+SAMSUNG ELECTRONICS CO., LTD., KOREA, REPUBLIC OF
+
+Free format text
+:
+
+ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:KIM, JI-WOONG;KIM, KYOUNG-DON;SIGNING DATES FROM 20190425 TO 20190426;REEL/FRAME:049157/0238
+
+2019-05-13
+
+FEPP
+
+Fee payment procedure
+
+Free format text
+:
+
+ENTITY STATUS SET TO UNDISCOUNTED (ORIGINAL EVENT CODE: BIG.); ENTITY STATUS OF PATENT OWNER: LARGE ENTITY
+
+2020-12-15
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+NOTICE OF ALLOWANCE MAILED -- APPLICATION RECEIVED IN OFFICE OF PUBLICATIONS
+
+2021-03-16
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+PUBLICATIONS -- ISSUE FEE PAYMENT RECEIVED
+
+2021-03-17
+
+STPP
+
+Information on status: patent application and granting procedure in general
+
+Free format text
+:
+
+PUBLICATIONS -- ISSUE FEE PAYMENT VERIFIED
+
+2021-03-31
+
+STCF
+
+Information on status: patent grant
+
+Free format text
+:
+
+PATENTED CASE
+
+2024-10-02
+
+MAFP
+
+Maintenance fee payment
+
+Free format text
+:
+
+PAYMENT OF MAINTENANCE FEE, 4TH YEAR, LARGE ENTITY (ORIGINAL EVENT CODE: M1551); ENTITY STATUS OF PATENT OWNER: LARGE ENTITY
+
+Year of fee payment
+:
+
+4
+

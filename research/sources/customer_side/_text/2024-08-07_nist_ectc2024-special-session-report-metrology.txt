@@ -1,0 +1,239 @@
+      2024 ECTC Special Session Report: Advancing Metrology for Next-Generation
+                                  Microelectronics
+      Ran Tao (NIST), Benson Chan (Binghamton University), Jan Vardaman (TechSearch
+                                      International)
+Introduction
+Metrology plays a pivotal role in semiconductor research, manufacturing, packaging and
+assembly. It is critical to the success of this industry. Advancements in measurement science,
+material characterization, instrumentation, testing, and manufacturing capabilities are critically
+needed to drive product innovation and ensure quality, yield, and manufacturing efficiency. As
+we look into the future of microelectronics and advanced semiconductor packaging technologies,
+from heterogeneous integration including wafer level packaging, hybrid bonding and beyond,
+each of these areas requires cutting-edge metrology to ensure precision and reliability.
+The special session on "Challenges and Opportunities in Advancing Metrology for Next-
+Generation Microelectronics" was held on May 28th, 2024, from 10:30 AM to 12:00 PM in
+Denver, CO, as part of the 2024 IEEE 74th Electronic Components and Technology Conference.
+The session was co-chaired by Ran Tao from NIST and Benson Chan from Binghamton
+University, featuring a panel moderated by Jan Vardaman from TechSearch International. Five
+distinguished speakers, Paul Hale from CHIPS for America, Gaurang Choksi from Intel
+Corporation, Zhihua Zou from TSMC, CP Hung from ASE Group, and Chet Lenox from KLA
+Corporation, shared their perspectives and insights on the metrology challenges and
+opportunities that today's semiconductor industry is facing across every segment of the supply
+chain. The session started with individual presentations by each of the panelists, followed by a
+moderated panel and interactive Q&A session.
+The discussion focused on the crucial role of metrology in ensuring the quality and reliability of
+semiconductor packaging, challenges in measuring sub-micron features, non-destructive testing,
+and high-resolution surface measurements. Speakers discussed the importance of characterizing
+materials and monitoring the status of the process to avoid defects and ensure quality control, as
+well as the need for more offline metrology tools to match the inline metrology. Additionally,
+panelists discussed current trends and future prospects of advanced packaging, emphasizing the
+growing importance of heterogeneous integration, 2.5D processes, and 3D processes, as well as
+the need for standardization and collaboration to tackle industry challenges. Standardization and
+machine learning are crucial for improving data analysis and reducing costs.
+
+Initial Remarks
+1. Dr. Paul Hale (NIST)
+Dr. Paul Hale, the Deputy Director of the CHIPS Metrology Program at CHIPS for America, the
+National Institute of Standards and Technology (NIST) at the Department of Commerce,
+presented "Advancing Measurement Science for Microelectronics: CHIPS Metrology Program."
+Dr. Hale's talk was centered on the strategic role of metrology in enhancing the competitiveness
+of the U.S. semiconductor industry, facilitated through the CHIPS Metrology Program. He
+detailed the program's structure, which includes substantial funding—over $130 million
+allocated across various research projects. These projects are strategically divided into different
+grand challenges categories, such as advancing metrology for future microelectronics
+manufacturing, integrating components in advanced packaging, and developing simulations for
+semiconductor materials and components.
+Dr. Hale emphasized the importance of collaboration between the CHIPS Metrology Program,
+academia, and industry to foster innovation in measurement instruments and methods that
+address current and future challenges in semiconductor manufacturing. His presentation also
+highlighted the significant contributions of the CHIPS Metrology Program towards national
+goals. This alignment not only addresses immediate industry needs but also contributes to
+broader national security and technological sovereignty objectives. Through his discussion, Dr.
+Hale effectively underscored the pivotal role that advanced metrology plays in driving
+innovation, quality, and efficiency in the semiconductor sector.
+2. Dr. Gaurang Choksi (Intel Corporation)
+Dr. Gaurang Choksi, Vice-President of Technology Development at Intel Corporation, presented
+"3D Heterogeneous Integration Metrology Challenges & Opportunities," shedding light on the
+critical metrology challenges posed by the scaling and integration demands of semiconductor
+manufacturing. Dr. Choksi explored how Intel is addressing these challenges through the
+integration of advanced metrology techniques that support the development and optimization of
+semiconductor technologies. His presentation emphasized the role of sensors and digital twins in
+monitoring and improving the manufacturing process, which is crucial for achieving the
+precision required in today's rapidly advancing technological landscape.
+Figure 1 shows some of the needs for metrologies that Intel is either working on or shows a need.
+He highlights a need for high resolution and fast acquisition times for any metrology technique
+that can be used for both in-line metrology used for process monitoring / control as well as off-
+line metrology for more in-depth inspection needed for failure analysis. Metrology techniques
+needs to include non-destructive imaging methods capable of detecting sub-micron level defects
+and in-line surface topology measurements that offer high resolution and speed. He highlighted
+the necessity for these advanced methodologies to keep pace with the miniaturization of
+interconnect pitch and RDL features. Furthermore, Dr. Choksi highlighted the need for increased
+research into metrologies techniques that can seamlessly integrate into high-volume
+manufacturing settings. This underscored the need for industry and academia to collaborate in
+developing solutions that can meet the stringent requirements of next-generation
+microelectronics.
+Figure 1: Scaling and Integration Demands on Metrologies
+
+3. Zhihua Zou (TSMC)
+Dr. Zhihua Zou, a Technical Director at TSMC, discussed "Metrology for Advanced Packaging,"
+focusing on the crucial role of metrology in supporting advanced semiconductor packaging
+technologies at TSMC. Dr. Zou outlined TSMC's innovative packaging solutions, such as Chip
+on Wafer on Substrate (CoWoS) and Integrated Fan-Out (InFO), which require precise
+metrological techniques to ensure high product quality and performance. He emphasized the
+complexity of integrating various sophisticated components, which necessitates a robust
+metrology framework to maintain the integrity of manufacturing processes.
+Throughout his presentation, Dr. Zou discussed the specific challenges faced in metrology for
+advanced packaging, including the need for in-situ and in-line metrology systems that can
+provide real-time data to monitor process health and post-process performance. He highlighted
+several key metrology techniques employed at TSMC, such as 3D X-ray imaging and infrared
+inspection, which are vital for detecting subsurface defects and ensuring component alignment
+and bonding accuracy. Dr. Zou also stressed the importance of continued innovation and
+collaboration between industry and academia to develop metrology solutions that can keep pace
+with the evolving demands of semiconductor packaging technologies. His presentation
+effectively underscored how critical advanced metrology is to the success of next-generation
+microelectronics manufacturing at TSMC.
+Figure 2: Metrology's Big Role in Advanced Packaging
+
+4. Dr. C.P. Hung (ASE Group)
+Dr. C.P. Hung, Vice President of Corporate R&D at ASE Group, focused on "Comprehensive
+Metrology for High-Density Packaging," where he discussed the intricate metrology strategies
+employed at ASE to manage the complexities of high-density and advanced semiconductor
+packaging solutions. Dr. Hung highlighted the significant challenges associated with integrating
+sophisticated metrology tools that are essential for the accurate measurement and inspection of
+increasingly complex package designs, especially given the packaging complexity associated
+with heterogeneous integration.
+In his presentation, Dr. Hung underscored the importance of multi-sensing and full automation in
+smart manufacturing environments. He pointed out that these technologies are crucial for
+enhancing the efficiency and accuracy of metrological assessments throughout the manufacturing
+process. Dr. Hung shared insights into ASE's approach to smart manufacturing, which leverages
+advanced metrology to ensure the reliability and performance of semiconductor packages.
+Specifically, he called out the importance of electrical, thermal, stress and reliability coupled
+with material/chemical characterization and simulation. In-process inspection and critical
+measurement is important for electrical and optical interconnect. Both 2D and 3D defect
+detection and measurement are needed and the use of machine learning/artificial intelligence to
+handle the massive amounts of data generated is key. Moreover, Dr. Hung emphasized the future
+outlook of metrology in semiconductor manufacturing, advocating for continuous innovation and
+the standardization of metrology practices across the industry. He called for a collaborative effort
+between companies and academic institutions to push the boundaries of what can be achieved in
+metrology, thereby ensuring that the semiconductor industry can meet the demands of modern
+electronic devices and systems.
+Figure 3: Critical Inspection Needs for HI
+
+5. Dr. Chet Lenox (KLA Corporation)
+Dr. Chet Lenox, a Fellow at KLA Corporation, provided his viewpoint as an equipment provider
+discussing "Process Control in Advanced Packaging," He focused on the evolving challenges and
+technological needs in the field of metrology as it relates to advanced semiconductor packaging.
+Dr. Lenox discussed the rapid developments in heterogeneous integration and how they
+necessitate improved process controls to manage more complex packaging technologies that
+integrate front-end and back-end processes. Throughout his talk, Dr. Lenox detailed KLA's
+approaches to overcoming these challenges, including the adoption of newer, more precise
+metrology tools that cater to the small feature sizes and high-value components involved in
+current semiconductor manufacturing. He highlighted several key innovations, such as AI-
+enhanced metrology tools that bring higher sensitivity and precision to the inspection and
+measurement processes. These tools, he explained, are crucial for ensuring the reliability and
+functionality of semiconductor devices, especially in an era where the blurring of lines between
+different semiconductor processes is becoming more pronounced. Dr. Lenox also stressed the
+importance of AI algorithms in defect inspection, classification, and metrology precision
+enhancement, showcasing how KLA integrates these technologies to optimize packaging process
+control. He concluded by emphasizing the need for ongoing innovation in metrology solutions
+and the potential for these technologies to drive future advancements in semiconductor
+packaging.
+Figure 4: Inspection and Metrology for IC Substrates
+
+Panel Discussion and Q&A Highlights
+The panel discussion, expertly moderated by Jan Vardaman from TechSearch International,
+featured a dynamic exchange between the speakers and the audience, focusing on the integration
+of new metrology tools into existing systems, the development of standards for emerging
+technologies, and the collaborative effort needed between industry and academia to push the
+boundaries of current metrology capabilities. The conversation delved into several critical areas:
+1. Integration of Metrology Tools Across Different Stages of Manufacturing
+The panelists discussed the importance of integrating advanced metrology tools not only in the
+production stages but also during the design and prototyping phases. Dr. Paul Hale emphasized
+the need for traceable measurements early in the design process to ensure reliability and
+performance consistency throughout the product lifecycle. The discussion highlighted the
+potential for digital twins and sensor integration to simulate and predict outcomes before
+physical processes are initiated.
+2. Collaborative Efforts Between Industry and Academia
+Gaurang Choksi and Dr. Zhihua Zou both stressed the value of collaborative projects involving
+industry partners and academic institutions. They pointed out that these collaborations are
+essential for addressing the complex challenges in metrology, especially for emerging
+technologies such as heterogeneous integration and advanced packaging solutions. The
+discussion acknowledged several ongoing projects and called for increased partnership and
+knowledge exchange.
+3. Standardization in Metrology
+A significant portion of the discussion was dedicated to the need for standardization across
+metrological practices. Dr. C.P. Hung brought attention to the disparities in measurement
+techniques and data interpretation between different companies and sectors within the industry.
+The panel agreed on the urgency to develop and adhere to universal standards to facilitate more
+seamless integration of components from different suppliers and to enhance the global
+competitiveness of semiconductor products.
+4. Challenges of Scaling and Miniaturization
+As semiconductor devices continue to shrink in size, maintaining measurement accuracy and
+reliability becomes increasingly challenging. Dr. Chet Lenox discussed the specific challenges
+related to the metrology of small-scale features, such as achieving sub-nanometer resolution and
+dealing with signal-to-noise ratios in measurements. The panelists debated potential solutions,
+including the adoption of AI and machine learning techniques to improve measurement
+techniques and data processing.
+5. Interactive Q&A Session
+During the Q&A session, attendees raised questions about the practical aspects of implementing
+next-generation metrology tools in high-volume manufacturing settings. Questions were directed
+towards the adaptability of metrology systems in fast-paced production environments and the
+economic implications of adopting such advanced technologies. The panelists provided insights
+into how their respective organizations are addressing these challenges through incremental
+innovation and phased integration strategies.
+
+Moving Forward
+
+The session concluded with a consensus on the urgent need for innovation in metrology solutions
+to meet the rapidly evolving requirements of next-generation microelectronics. Future directions
+highlighted include more collaborative projects and standard-setting in the industry, particularly
+as devices continue to shrink and packaging becomes more complex. To effectively address the
+metrology challenges highlighted in the special session on advanced packaging, it is crucial to
+take structured and strategic steps forward.
+
+Firstly, organizing future special sessions specifically focused on metrology challenges in
+advanced packaging will provide a dedicated platform for deep dives into specific issues and
+potential solutions. Additionally, the development of metrology standards should be a priority
+in upcoming workshops, ensuring that new methodologies align with industry needs and
+facilitate seamless integration across different stages of semiconductor manufacturing. To sustain
+momentum and foster ongoing dialogue on these critical topics, establishing a committee to
+discuss metrology needs within the framework of the Heterogeneous Integration Roadmap
+will be essential. This committee could play a pivotal role in steering the conversation and
+coordinating efforts across various industry stakeholders. Lastly, developing a concrete plan for
+tackling the identified challenges will be vital. This plan should outline clear next steps, assign
+responsibilities, and set timelines for achieving specific goals, ensuring that progress in
+metrology keeps pace with the rapid advancements in semiconductor technologies.
+
+Acknowledgement
+The authors would like to thank Paul Hale, Gaurang Choksi, Zhihua Zou, CP Hung and Chet
+Lenox for presenting their views on metrology and helping to identify gaps in the technology.
+Authors
+
+
+                   Ran Tao is a Materials Scientist in the Materials Measurement Laboratory at
+                   the National Institute of Standards and Technology (NIST) in Gaithersburg,
+                   Maryland. Her research focuses on investigating the structure-property
+                   relationships of polymeric materials, composites, and complex fluids for
+                   mission-driven applications, including semiconductors, additive
+                   manufacturing, and safety and security. Currently, Dr. Tao is involved in a
+                   CHIPS Metrology R&D project, addressing thermo-mechanical challenges in
+advanced epoxy molding compounds and underfills for advanced packaging. Dr. Tao is
+recognized as a 2022 ACS Polymer Science and Engineering (PMSE) Young Investigator by the
+American Chemical Society. She serves on the Executive Board of the North American Thermal
+Analysis Society and is an active member of IEEE EPS.
+                  Benson Chan is the Associate Director for the Integrated Electronics
+                  Engineering Center at Binghamton University, a NY State Center for Advanced
+                  Technology with a mission to help companies to understand their use of
+                  electronics to improve their business by understanding the design, reliability
+                  and failures of their products. He holds 53 patents and numerous papers in
+                  electronics packaging. He is an iMAPS fellow and IEEE EPS TC Chair for
+                  Emerging Technologies and on the IEEE EPS Board of Governors.
+                  E. Jan Vardaman is president and founder of TechSearch International, Inc.,
+                  which has provided market research and technology trend analysis in
+                  semiconductor packaging since 1987. She is the author of numerous
+                  publications on emerging trends in semiconductor packaging and assembly.
+                  She is a senior member of IEEE EPS and is an IEEE EPS Distinguished
+                  Lecturer. She received the IMAPS GBC Partnership award in 2012, the
+Daniel C. Hughes, Jr. Memorial Award in 2018, the Sidney J. Stein International Award in 2019,
+and she is an IMAPS Fellow.
+

@@ -1,0 +1,367 @@
+
+
+[News] SK hynix Reportedly Develops HBM4 System-Level Testing Equipment, Deepens TSMC Collaboration
+
+Popular Keywords
+
+#DRAM
+
+#Foundry
+
+#AI Server
+
+#HBM
+
+#FOPLP
+
+#CoWoS
+
+#NAND Flash
+
+#Automotive
+
+#MLCC
+
+#Server
+
+#Micro LED
+
+#IC Design
+
+About Us
+
+Research Report
+
+Research Directory
+
+Semiconductor Research
+
+Display Research
+
+Optoelectronics Research
+
+Green Energy Research
+
+ICT Applications Research
+
+						Semiconductors						
+
+						AI/HBM/Server						
+
+						DRAM						
+
+						NAND Flash						
+
+						Wafer Foundries						
+
+						MLCC						
+
+						Compound Semiconductor						
+
+						Display						
+
+						LCD						
+
+						OLED						
+
+						Upstream Components						
+
+						Panel Industry						
+
+						Display Supply Chain						
+
+						Display Technologies						
+
+						LED						
+
+						LED Demand / Supply Database						
+
+						Micro/Mini LED						
+
+						Near-Eye Display						
+
+						LED Video Wall						
+
+						Automotive LED - Lighting and Display						
+
+						General / Agricultural Lighting						
+
+						UV LED						
+
+						Infrared Sensing - IR LED / VCSEL / EEL						
+
+						Sapphire Market						
+
+						Energy						
+
+						Solar PV						
+
+						Lithium Battery and Energy Storage						
+
+						Consumer Electronics						
+
+						Notebook Computers						
+
+						TVs						
+
+						Smartphones						
+
+						Tablets						
+
+						Monitors / AIO						
+
+						Emerging Technologies						
+
+						Cloud / Edge Computing						
+
+						Artificial Intelligence						
+
+						Automotive Technologies						
+
+						Robot						
+
+						Selected Topics						
+
+						Semiconductors						
+
+						Telecommunications						
+
+						Computer System						
+
+						Consumer Electronics						
+
+						Automotive & EV						
+
+						Green Energy & Storage						
+
+						Display Panel & LED						
+
+						Economics						
+
+Selected Topics
+
+Membership
+
+Semiconductor Research
+
+Display Research
+
+Optoelectronics Research
+
+Green Energy Research
+
+ICT Applications Research
+
+Selected Topics
+
+Price Trends
+
+DRAM (Index)
+
+DRAM Spot Price
+
+DRAM Contract Price
+
+Module Spot Price
+
+GDDR Spot Price
+
+LPDDR Spot Price
+
+Mobile DRAM Contract Price
+
+NAND Flash
+
+NAND Flash Spot Price
+
+NAND Flash Contract Price
+
+Wafer Spot Price
+
+Memory Card Spot Price
+
+PC-Client OEM SSD Contract Price
+
+SSD Street Price
+
+NAND Flash Wafer Contract Price
+
+eMMC Spot Price
+
+eMMC/UFS Contract Price
+
+TFT-LCD (Index)
+
+Large Size Panel Price
+
+LCD Smartphone Panel Price
+
+Street Price
+
+Large Size Panel Shipment
+
+PV
+
+Polysilicon
+
+Wafer
+
+Cell
+
+Module
+
+PV Glass
+
+Li-Ion Battery
+
+Battery Cell & Pack
+
+Precursor and Cathode Material
+
+Anode Material
+
+Separator
+
+Electrolyte
+
+Li & Co & Ni
+
+Other
+
+Press Center
+
+News
+
+Events
+
+Contact Us
+
+AI Agent
+
+Q&A Assistant
+
+Beta
+
+                                DataTrack
+
+About TrendForce News
+
+TrendForce News operates independently from our research team, curating key semiconductor and tech updates to support timely, informed decisions.
+
+Home
+
+News
+
+[News] SK hynix Reportedly Develops HBM4 System-Level Testing Equipment, Deepens TSMC Collaboration
+
+2026-02-25
+
+Semiconductors
+
+                    editor                
+
+Competition in next-generation memory is heating up, and SK hynix is reportedly taking another step to reinforce its leadership in HBM4. According to 
+The Elec
+, the company has successfully developed system-level testing equipment for its HBM4. The equipment enables memory makers to identify defects that may arise after HBM is integrated with AI chips—an evaluation process that had previously been handled by foundries.
+
+Industry sources cited by the report say the new package-level testing equipment is designed to ensure HBM4 functions properly when integrated with GPUs or CPUs, and can be regarded as system-in-package (SiP) inspection equipment. The device passed SK hynix’s internal qualification testing last month.
+
+System-level testing involves attaching a completed product to actual devices and equipment for evaluation, the report notes. In this case, the setup examines HBM installed alongside a customer’s system chip on a motherboard. As indicated by the report, the objective is to proactively verify inter-chip integration and compatibility before deployment.
+
+As the report explains, system-level testing has traditionally been conducted primarily by foundries such as TSMC and Samsung Electronics, which oversee AI chipset packaging. However, as packaging technologies become more sophisticated and final-product yields grow increasingly important, memory companies are expanding their own system-level testing capabilities.
+
+With its in-house HBM package-level testing, SK hynix can identify operational issues that emerge when GPUs and HBM are combined in real-world systems. The company shares validation data with customers to improve performance.
+
+Notably, the report highlights that beginning with HBM4, the shift toward highly customized HBM solutions makes system-level compatibility verification increasingly essential to ensure seamless integration with each customer’s specific architecture.
+
+SK hynix Advances HBM4 Strategy Alongside TSMC
+
+SK hynix co-developed the HBM package tester with its partners, internalizing SiP inspection capabilities for HBM. The report adds that this move is viewed as part of deepening end-product collaboration among SK hynix, its customers, and foundries. It also notes that since 2024, SK hynix has worked closely with TSMC to address HBM4-related customer requirements, with TSMC’s SiP platform CoWoS (Chip-on-Wafer-on-Substrate) specifically optimized for HBM4.
+
+The report further explains that SiP is a technology that integrates multiple system component chips, including CPUs, GPUs, and memory, into a single package. It is widely used for GPU-HBM integration in AI accelerators such as NVIDIA’s B200 and AMD’s MI355X, typically through 2.5D stacking on an interposer built over a semiconductor substrate.
+
+Read more
+
+[News] NVIDIA GTC 2026 in Focus: Feynman Reportedly on TSMC A16, Samsung & SK hynix to Showcase HBM4
+
+[News] SK hynix Reportedly to Supply About Two-Thirds of NVIDIA HBM4; Samsung Targets Early Delivery
+
+(Photo credit: SK hynix)
+
+Please note that this article cites information 
+from 
+The Elec
+.
+
+                                HBM4
+
+                                SiP
+
+                                SK Hynix
+
+                                TSMC
+
+Previous Article 
+
+[News] Xiaomi Doubles Down on Chips; Trademark Filing Reportedly Signals Potential Memory Entry
+
+Next Article 
+
+[News] China Reportedly Aims to Boost 7nm, 5nm Output Fivefold in Two Years, Driven by SMIC, Hua Hong
+
+Subject
+
+ Latest 
+
+ Semiconductors 
+
+ Display 
+
+ Optical Semiconductors 
+
+ Energy 
+
+ Consumer Electronics 
+
+ Telecommunications 
+
+ Emerging Technologies 
+
+Related Articles
+
+[News] World’s First Silicon Carbide Superjunction MOSFET Made its Debut
+
+2026.09.10
+
+[News] NVIDIA’s DLSS 5 Could Boost Graphics DRAM Demand, With GDDR6 Prices Reportedly Already Triple
+
+2026.09.10
+
+[News] OpenAI Says It Is Working with Samsung on Next-Gen Chips; Ties Could Expand Beyond Memory
+
+2026.09.09
+
+About US
+
+Research Report
+
+Terms of Use
+
+Privacy Policy
+
+Membership Terms & Conditions
+
+Contact Us
+
+© 2026 TrendForce Corp. All rights reserved
+
+Get in touch with us
+
+Your Email
+
+Message
+
+                Send
+
+                Cancel
+
