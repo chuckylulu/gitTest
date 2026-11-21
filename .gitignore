@@ -2,3 +2,5 @@
 research/tools/.fetch_rate.lock
 # Python bytecode caches
 __pycache__/
+# Comet CMD 2025 deck (142 MB) exceeds GitHub's 100 MB limit; text and sha256 are committed
+research/sources/comet/2026-01-09_comet_capital-markets-day-2025.pdf

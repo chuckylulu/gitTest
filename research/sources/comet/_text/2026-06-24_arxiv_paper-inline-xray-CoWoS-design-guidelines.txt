@@ -1,0 +1,449 @@
+            Design Guidelines for In-line X-ray Inspection in Advanced Packaging
+                             Technology: A CoWoS Case Study
+
+              Katayoon Yahyaei, M Shafkat M Khan, Guillermo Cadima, Himanandhan Reddy Kottur, and Navid
+                                                        Asadizanjani
+                                Dept. of Electrical and Computer Eng., University of Florida
+                                       5000 Malachowsky Hall, 1889 Museum Road
+                                                 Gainesville, FL 32611 USA
+                                      Email: ka.yahyaei@ufl.edu, nasadi@ece.ufl.edu
+
+
+
+
+           Abstract
+           The shift towards advanced packaging technologies, including 2.5D and 3D integration, addresses the
+           limitations of traditional methods while meeting increasing demands for performance, miniaturization, and
+           efficiency. These methods enhance functionality and support heterogeneous integration but also introduce
+           metrology challenges due to complex, three-dimensional structures. X-ray imaging, crucial for non-
+           destructive inspection, faces compatibility issues such as material density similarities and noise scattering.
+           To address these challenges, we propose a framework based on AI-integrated Design of Experiment (DoE)
+           to develop design guidelines to optimize X-ray compatibility during the design stage. This framework,
+           demonstrated through a case study on Chip-on-Wafer-on-Substrate (CoWoS) packaging, systematically
+           analyzes design parameters and material properties to develop guidelines for improved inspection accuracy.
+           Our method integrates AI to predict outcomes and optimize processes, ensuring high-quality X-ray images
+           and enhancing defect detection. Implementing these guidelines can significantly improve inspection accuracy
+           and reliability, reducing production costs and supporting the efficiency and scalability of advanced
+           semiconductor technologies.
+
+           Key words
+           Advanced packaging, Design for Inspection, In-line Inspection, X-ray Imaging.
+
+
+
+                                                                      systems within the in-line inspection workflow, impacting
+I. Introduction                                                       critical parameters such as field-of-view and resolution.
+                                                                      These parameters play a pivotal role in determining the
+The adoption of advanced packaging technologies, including
+                                                                      quality of X-ray scans. For instance, as illustrated in Figure
+2.5D and 3D integration, addresses the limitations of legacy
+                                                                      1, the resolution difference between 1.28 µm and 0.7 µm in
+packaging techniques while meeting the increasing demands
+                                                                      X-ray computed tomography (CT) of an Nvidia Tesla P100
+for improved performance, further miniaturization, and
+                                                                      sample, which is designed with TSMC 2.5D Chip-on-Wafer-
+enhanced efficiency [1]. The complexity of 3D structures,
+                                                                      on-Substrate (CoWoS) technology, significantly influences
+stacked dies, and varying materials in advanced packaging
+                                                                      the scan's detail and effectiveness.
+introduces significant metrology challenges [2]. Defect
+detection, especially for critical components like through-
+silicon vias (TSVs) and microbumps, requires precise and
+robust inspection strategies to identify flaws that may impact
+connectivity and performance [3]. Moreover, application-
+specific requirements for in-line inspection significantly
+impact inspection efficiency, affecting time and
+computational budgets. While consumer-level devices may               Figure 1: C4 bumps and substrate cross section of Nvidia Tesla
+accept lower reliability targets, critical applications like          P100 package with a) 1.28 m and b) 0.7 m resolution.
+automotive systems require 100% sampling of around 1
+                                                                      X-ray inspection plays an essential role in advanced package
+million units per year for physical inspection [4]. These
+                                                                      inspection, providing non-destructive, high-resolution
+requirements place limitations on the capabilities of X-ray
+                                                                      capabilities to evaluate high aspect ratio features, detect
+
+
+
+                                                                 1
+hidden or buried defects, and examine complex material                 parameters for X-ray compatibility in advanced packaging
+layers [5]. However, X-ray inspection challenges, also called          technologies. This framework examines the effects and
+X-ray compatibility issues, occur due to factors like similar          interactions of various design parameters on X-ray
+material densities, noise scattering, and the presence of              inspection outcomes.
+layered structures, which can obscure defects, distort
+measurements, and increase inspection time and costs [6].              II. Related Work
+An example of advanced packaging features that pose
+challenges for resolution in X-ray imaging, particularly in in-        A. X-ray Compatibility Enhancement
+line inspections, is the redistribution layers (RDLs) in               Although the study of X-ray compatibility issues is a
+interposers. Figure 2-a depicts a 0.7 µm X-ray CT scan of an           relatively nascent field, some research efforts have been
+overall cross-section of an Nvidia Tesla P100 sample,                  directed toward developing viable solutions. One such
+highlighting an area that includes the die, interposer, and            solution is the X-ray compatibility metric, called CMX-ray,
+substrate. Figure 2-c provides a detailed view of the region           which quantitatively evaluates the efficiency of designs
+encircled in red in Figure 2-b. The red rectangle in Figure 2-         regarding X-ray inspection and aids in design optimization.
+c indicates the location of the RDLs beneath the microbumps            This metric is created through a two-step process. First, DFI
+within the interposer. However, due to the intricate structure         parameter thresholds are established. Second, a test package
+of this area, the RDLs cannot be adequately resolved in the            design is evaluated against these thresholds to generate a
+X-ray image. Another example of X-ray imaging challenges               numerical value that indicates X-ray compatibility, ensuring
+is the beam hardening imaging artifact that usually occurs             reliable detection of fine-pitched features [6]. Also, the
+around C4 bumps due to their large size and high-density               integration of X-ray compatibility into the design process
+material composition.                                                  was proposed through a framework that predicts optimal
+                                                                       design specifications, balancing imaging quality with design
+                                                                       constraints, performance goals, and higher component
+                                                                       density [7]. Finally, X-ADAPT was proposed as a solution
+                                                                       when design updates to enhance X-ray compatibility are not
+                                                                       feasible due to stringent performance constraints. By
+                                                                       utilizing design-based inspection, X-ADAPT improves the
+                                                                       inspection process through a customized inspection strategy
+                                                                       [8].
+                                                                       B. Design Guideline Development
+                                                                       Design guideline development is a critical process in various
+                                                                       domains of integrated circuit (IC) and package design, test,
+                                                                       and validation. A commonly used set of design rules, known
+                                                                       as DRC, ensures that physical layouts comply with
+                                                                       semiconductor manufacturers' parameters to manage process
+                                                                       variability and improve yield [9]. Clear and well-defined
+                                                                       rules facilitate the automation of rule checking and design
+                                                                       optimization; for example, a DRC rule automating and
+Figure 2: a) Overall cross section of Nvidia P100, b) interposer       checking framework was proposed that standardizes and
+cross section, and c) Microbump and TSV area.                          automates the interpretation of design rules into specific
+                                                                       categories, using a parameterized library to accurately
+To address X-ray inspection challenges, the concept of
+                                                                       generate DRC code [10]. Beyond design functionality, these
+Design for Inspection (DFI) is introduced, proposing                   guidelines are vital in security applications, exemplified by
+modifications to designs to improve inspection efficiency.             frameworks like ARC-FSM-G [11], which checks security
+DFI parameters, including both design specifications and               rules for Finite State Machines based on AVFSM analyses
+material composition, play a crucial role in addressing issues         [12] and MITRE CWE list of hardware weaknesses [13].
+related to X-ray noise and blur [6]. To optimize the                   These foundational rules not only aid in identifying security
+inspection process from the design stage, it is necessary to           vulnerabilities but also pave the way for advancements such
+establish design guidelines based on DFI parameters and                as large language model (LLM)-assisted vulnerability
+their impact on inspection efficiency.                                 databases [14], which are crucial for AI-based rule-checking
+To address the current lack of inspection compatibility-based          frameworks to detect and mitigate security threats in
+design guidelines in advanced packages, we propose a                   hardware designs. Additionally, design rules are also
+flexible AI-integrated Design of Experiment (DoE)                      applicable in specialized fields like microwave flip chip
+framework to systematically analyze and optimize design                applications [15] and frequency-coded chipless radio
+
+
+
+                                                                   2
+frequency identification (RFID) [16], where precise                 and elucidate the interactions and trade-offs between
+guidelines ensure device performance and reliability,               different design parameters and X-ray compatibility.
+underscoring the universal importance of meticulous design
+guideline development.
+
+III. Design Guideline Development
+Framework
+An AI-integrated DoE-based framework is proposed to
+analyze the effect of each design parameter on X-ray
+compatibility and to study the interactions between different
+design parameters in X-ray compatibility experiments. This
+framework offers a solution that is flexible with package
+technology and systematically addresses the lack of X-ray
+compatibility-based design guidelines in advanced
+packaging. This framework supports the optimization of
+package designs to balance manufacturability, performance,
+and inspection reliability, addressing the inspection
+compatibility gap in current design methodologies.
+DoE is a systematic method for studying the relationships
+between multiple input factors and output responses. Widely
+used in engineering, manufacturing, and research, DoE
+methods provide structured and efficient ways to explore the
+design space, identify significant factors, and optimize
+processes with minimal experimentation. AI is integrated
+into the DoE to enhance experimental design, data analysis,
+and optimization. AI techniques aid in predicting outcomes,
+                                                                    Figure 3: Overview of proposed AI-integrated DoE-based design
+identifying patterns, and making data-driven decisions.             guideline development framework
+A. Framework Workflow                                               B. Design Guideline Extraction
+The framework's steps, as shown in Figure 3, start with             Main elements of design guidelines for X-ray compatibility
+problem definition, focusing on X-ray compatibility                 include recommendations on component placement and
+analysis. Quantitative measures of X-ray compatibility              orientation to avoid shadows and overlaps, and material
+should be defined, for which metrics such as signal-to-noise        selection to ensure optimal X-ray transparency or contrast.
+ratio, contrast-to-noise ratio, and noise power spectrum are        These guidelines also address layer thickness and profile
+used. These metrics are combined to quantitatively assess X-        considerations to strike a balance between structural integrity
+ray compatibility in the design. Next, factor selection is          and X-ray compatibility. They provide directives for
+conducted, defining variables and their levels (e.g.,               interconnect layouts to prevent the creation of X-ray opaque
+interposer thickness with levels: low (0-50 m) and high            regions.
+(50+ m)). Following this, we select the DoE method (e.g.,          An efficient and flexible approach for extracting design
+Plackett-Burman Design) to identify the most significant            guidelines to enhance inspection efficiency involves
+factors with minimal runs. The experiment design includes           developing design guidelines that relate key design
+combinations of factors and levels. Subsequently,                   parameters, also known as DFI parameters, to the resolution
+experiments are conducted by defining these combinations            limits of X-ray imaging systems. Table 1 presents an
+and performing X-ray simulation and post-processing. Data           example of such guidelines for a typical CoWoS technology
+analysis and AI integration involve using machine learning          design, where thresholds for parameters such as bump pitch,
+techniques to build predictive models from the collected            bump-to-RDL spacing, RDL-to-RDL spacing, RDL
+data, employing algorithms such as regression models and            interconnect pitch, RDL-to-TSV spacing, and TSV pitch are
+neural networks. Finally, implementation involves applying          defined as multiples of the imaging system resolution R.
+validated findings and drawing conclusions about design             These parameters are visualized in Figure 4Figure 4, where
+constraints.                                                        RDL-related DFI parameters are only shown in package
+The conclusions drawn from the analysis of experiments              substrate due to resolution limitations of the X-ray image.
+based on the proposed framework help establish thresholds           The threshold values can be determined through rigorous
+for each analyzed design parameter, identify the most               empirical analysis with proposed AI-integrated DoE-based
+significant design parameters affecting X-ray compatibility,        framework, ensuring that each feature remains
+                                                                    distinguishable, and defects are detectable in X-ray scans.
+
+
+
+                                                                3
+The smallest component that can be seen with an X-ray                       •    TSV pitch (Pt): TSVs must maintain a pitch of at
+imaging system, given a resolution R, is typically around the                    least 75R to ensure clear detection and separation.
+same size. However, the goal is to inspect components and               By anchoring design rules to the imaging system’s
+detect possible defects, which are usually only a fraction of           resolution, these guidelines can offer a scalable and
+the component’s size. Therefore, to achieve clear delineation           adaptable approach that aligns physical layout parameters
+and accurate interpretation, features should be 2 to 3 times            with inspection capabilities. Implementing such inspection-
+larger than the resolution.                                             aware design constraints early in the development cycle can
+Table 1: Example of DFI parameter design guidelines based on X-         significantly enhance inspection reliability, reduce costly
+ray imaging system resolution.                                          redesign iterations, and enable high-throughput inspection in
+                                                                        complex advanced packaging environments.
+ Notation     DFI Parameter                Threshold Value
+                                           (R=0.5 m)
+     Pb       Bump pitch                          50R
+                                                                        IV. Experimental Results
+     Sbr      Bump-RDL spacing                     5R                   A CoWoS case study is conducted to demonstrate the
+     Srr      RDL-RDL spacing                      3R                   effectiveness of the proposed framework, elaborate on its
+     Pi       RDL interconnect pitch               3R                   workflow, and examine the design rules and guidelines for
+     Srt      RDL-TSV spacing                      4R                   this widely used packaging technology that can serve as a
+     Pt       TSV pitch                           75R                   reference.
+                                                                        A. Problem Definition
+                                                                        The definition of the problem begins by analyzing the
+                                                                        suggested TSMC design guidelines, components, design
+                                                                        parameter ranges, material composition, total device size,
+                                                                        and common applications for CoWoS packaging technology.
+                                                                        Next, real X-ray images are examined in terms of X-ray
+                                                                        compatibility to identify challenging design areas. For this
+                                                                        case study, X-ray images of the Nvidia P100 were carefully
+                                                                        investigated, and the interposer area, especially around the
+                                                                        microbumps and the RDLs directly beneath them, was
+                                                                        identified as the most challenging region for X-ray
+                                                                        inspection. The design region model used in the X-ADAPAT
+                                                                        study [8] is also employed as an example here.
+                                                                        Consequently, the considered case study, shown in Figure 5,
+                                                                        is a small area between the die and the C4 bump, including
+Figure 4: Illustration of DFI parameters in 0.7m resolution scan       key CoWoS design components around the interposer area.
+of Nvidia Tesla P100 sample cross section.                              The design specifications and X-ray compatibility definition
+The key design parameters and their respective threshold                from the X-ADAPAT study [8] are also reused in this
+values in the example, scaled by the resolution R (where R =            analysis. A defect is inserted in one of the microbumps in the
+0.5 μm in this context), are as follows:                                case study model and the design compatibility is defined by
+     • Bump pitch (Pb): The suggested spacing between                   the distinguishability of the defective microbump and normal
+         bumps is around 50R to avoid overlap and ensure                ones.
+         clear separation under X-ray imaging.
+     • Bump to RDL spacing (Sbr): To maintain clarity
+         between bumps and the underlying RDL, spacing of
+         5R is recommended.
+     • RDL to RDL spacing (Srr): It is advised that
+         adjacent RDL traces have a spacing of at least 3R to
+         prevent signal interference and improve imaging
+         resolution.
+     •   RDL interconnect pitch (Pi): The pitch between
+         interconnects within the RDL should be no less than
+         3R, ensuring distinguishable lines in the X-ray
+         image.
+     • RDL to Through-Silicon Via (TSV) spacing (Srt):                  Figure 5: Location of case study design region in a 2.5D CoWoS
+         To avoid imaging artifacts around vias, a spacing              package structure.
+         threshold of 4R is necessary.
+
+
+
+                                                                    4
+B. Factor Selection                                                     expanded (meaning not all child nodes are sampled). The
+All the design parameters and specifications in the defined             scheme expands the selected branch to generate 2 d-1
+design region should be listed. The parameters for this case            candidate points (child nodes), but sampling occurs only at
+study include: microbump and C4 bump pitch, height, width,              the most promising child node, as determined by the TSBO
+and underfill density and atomic number; interposer                     algorithm.
+thickness, material density and atomic number; and die
+thickness and material properties. The factor selection stage
+involves selecting the variable parameters and their levels
+(value ranges) for performing experiments. For simplicity
+and to maintain the focus on the design guideline
+development task, we consider the variable parameters and
+their ranges to be similar to those in the X-ADAPT case
+study [8]. These parameters are microbump pitch, height,
+underfill density, and interposer thickness, with the
+assumption that the microbumps are perfect spheres,                     Figure 6: Example of TSBO-based partitioning tree for sampling.
+meaning their height and width are the same. All the design             D. Conducting Experiments
+parameters in the case study with their corresponding values
+                                                                        The framework's need to analyze different sets of design
+are listed in Table 2. The selection of a limited number of
+                                                                        parameters is accommodated by the flexibility provided by
+variable parameters from all the existing design parameters,
+                                                                        X-ray simulation, through NoviSim X-ray simulation
+constrains the problem, allowing it to converge to an
+                                                                        software [18]. The simulated images are subsequently
+optimum faster and with fewer experiments. The choice of
+                                                                        processed so the X-ray compatibility quantification metric
+variable parameters can be informed by real X-ray scan
+                                                                        can be obtained.
+investigations and prior X-ray compatibility issues studies.
+                                                                        The imaging setup parameters need to be specified for X-ray
+Table 2: Case study design parameters and their values.                 simulations. Since we aim to extract design guidelines that
+                                                                        optimize the observability of the design during in-line
+ Design Parameters       Variable/     Values
+                         Constant                                       inspection, the X-ray system setup in the experiments should
+ Microbump pitch         Variable      20 to 40 @ step of 5 m          be as close as possible to real in-line inspection conditions.
+ Microbump height        Variable      12 to 27 @ step of 5 m          Some of the most important imaging setup parameters are
+ Microbump underfill     Variable      1.8 to 2 @ step of 0.1           listed in Table 3Error! Reference source not found.. The
+ density                               g/cm3                            resolution of the X-ray imaging system can be subsequently
+ Interposer thickness    Variable      50 to 100 @ step of 10           calculated to be around 7 m. One limitation of X-ray
+                                       m                               inspection for advanced packages is the source-object
+ Die thickness           Constant      700 m                           distance, which limits resolution due to the large sample
+ C4 bump pitch           Constant      250 m                           sizes of packages with heterogenous integration technology.
+ C4 bumps material       Constant      SnAg                             Although the design region in this case study is small, the
+ C4 height               Constant      100 m                           average size of a whole sample was considered for 360-
+ C4 underfill density    Constant      2.5 g/cm3                        degree rotation. Also, to emphasize X-ray inspection
+                                                                        limitations, the source-sample distance was set to a relatively
+C. Experiment Design
+                                                                        large value.
+The factor selection determines the test space, while
+choosing a subset of this space to obtain generalized and               Table 3: X-ray imaging setup in X-ray simulation.
+conclusive results regarding design guidelines depends on                Imaging Setup Parameters         Values
+the sampling approach (i.e., the DoE method), which is a part            Source-sample distance           15 cm
+of experiment design. In this study, a hierarchical                      Sample-detector distance         35 cm
+partitioning scheme, proposed in the context of an                       Region of interest size          1024  512 pixels
+optimization problem that utilizes a two-stage Bayesian                  Source spot dimensions           10 m  10 m
+optimization (TSBO) algorithm [17], is used to select                    Detector pixel pitch             3 m  1 m
+samples from the test space. This method is particularly                 Exposure time                    1s
+suited to addressing challenges encountered in Electronic                Rotation                         0-360o
+Design Automation (EDA) problems. Figure 6 illustrates an                Number of projections            10
+example of a partitioning tree constructed using TSBO with              E. AI-based Data Analysis
+4 variable parameters (d=4), showing sampled points (where
+the branch is expanded) and candidate points (where the                 After conducting the experiments and collecting the results,
+branch is not yet expanded). In the proposed TSBO-based                 we analyzed the data to identify patterns, including the most
+hierarchical partitioning trees, the selected branch is not fully       significant input parameters and the relationship between
+                                                                        changes in one parameter and changes in overall X-ray
+
+
+
+                                                                    5
+compatibility. To identify the most influential input                  significance of microbump size in X-ray compatibility, this
+parameters, we applied machine learning to quantify variable           ranking is justified. Microbump pitch and size are closely
+importance and visualized the resulting importance scores.             related, as pitch is dependent on size. Also, the relatively
+Approximately 40 X-ray simulation and compatibility                    lower density of microbump underfill in comparison to
+evaluation experiments are conducted for the case study                neighboring materials explains its low feature importance.
+design region, which accounts for about 15% of the test
+space. The collected data is used to train a random forest             V. Discussion
+(RF) AI-based classifier model to perform a binary
+classification of the X-ray compatibility evaluation metric,           The ongoing evolution of interposer and substrate
+which is labeled 0 or 1 based on a predefined threshold value.         technologies, characterized by the shift from passive to
+Multiple iterations with different train-test splits and               active interposers, the adoption of finer RDLs, and the
+sampling are performed to prevent model overfitting, and the           integration of hybrid bonding techniques, introduces new
+average feature importance for each iteration is recorded.             complexities that significantly impact the development of
+Figure 7 shows the average feature importance of the four              design constraints for X-ray compatibility in advanced IC
+considered variable parameters in the case study. RF is                packages. As packaging architectures grow increasingly
+selected for feature importance analysis for two reasons.              dense and heterogeneous, these advances bring both
+First, in a prior evaluation on an analogous dataset, Logistic         opportunities and challenges for reliable inspection and
+Regression, Naïve Bayes, Gaussian Process Classification,              defect detection via X-ray inspection.
+and Random Forest were compared; Random Forest                         The challenges stemming from the shrinking of feature sizes
+achieved the best overall performance (accuracy and log-               and component density increase have been investigated.
+loss) with minimal tuning [8]. Second, tree ensembles                  Compounding these issues is the growing diversity of
+provide native, stable global importance estimates by                  materials used in modern substrates and interposers. The
+averaging over many decorrelated trees and can capture                 introduction of organic composites, glass-core substrates,
+nonlinear effects and interactions expected in this problem            and silicon interposers results in variable X-ray attenuation
+[19]. Although model-agnostic explainers (e.g., permutation            properties that can create inconsistent image contrast and
+or SHAP [20]) can be applied to other models, with a small             elevated noise levels. Such variability directly affects defect
+sample size they tend to exhibit higher variance and add               visibility and may prolong inspection times. This highlights
+tuning complexity. RF therefore offered the best trade-off             the need for design guidelines that incorporate material-
+between small-sample robustness and interpretable variable-            specific considerations to maintain inspection robustness.
+importance for this study.                                             Another important aspect to consider is the fact that as
+                                                                       packaging technologies and architectures continue to
+                                                                       advance, the relevant design variables themselves will
+                                                                       inevitably change. This dynamic evolution necessitates that
+                                                                       design guideline development frameworks remain flexible
+                                                                       and continuously updated to reflect emerging package
+                                                                       structures, materials, and inspection technologies. Static or
+                                                                       rigid design rules risk becoming obsolete as new challenges
+                                                                       and parameters arise. Emerging packaging innovations, such
+                                                                       as the integration of embedded diagnostic features within
+                                                                       interposer structures, offer promising routes for early failure
+                                                                       detection and enhanced reliability. However, the inclusion of
+                                                                       these diagnostics requires careful coordination with X-ray
+Figure 7: Feature importance visualization of the case study           inspection protocols to prevent interference with image
+design, as a result of analysis with a random forest model.            quality and ensure inspection accuracy.
+
+The feature importance results indicate that microbump
+                                                                       VI. Conclusion
+height, which represents microbump size, is the most
+significant feature in determining X-ray compatibility. This           This study highlights the significant challenge of inspection
+finding is predictable since defined X-ray compatibility               incompatibility in the manufacturing of advanced packages
+metric focuses on microbumps and their defect detectability,           and demonstrates the importance of DFI in addressing these
+making microbump size a crucial factor. The second notable             issues. By establishing design constraints and guidelines, the
+feature is the interposer thickness. Being a relatively dense          efficiency of in-line inspection can be optimized. We
+material as it can be simplified to a Silicon body, interposer’s       proposed an AI-integrated DoE framework to develop such
+thickness greatly affects X-ray blur and imaging artifacts,            guidelines and presented a case study on a CoWoS
+making it an important parameter. Microbump pitch and                  technology design region. Through systematic analysis of
+microbump underfill density are ranked third and fourth,               various design specifications, we evaluated the X-ray
+respectively, in feature importance. Considering the
+
+
+
+                                                                   6
+compatibility of the design region and identified key factors                 [15] D. Staiculescu, J. Laskar and E. Tentzeris, "Design rule
+influencing inspection accuracy. This work serves as a                             development for microwave flip-chip applications," IEEE
+                                                                                   Transactions on Microwave Theory and Techniques, vol. 48, no. 9,
+foundational step towards developing comprehensive design                          pp. 1476-1481, 2000.
+guidelines for advanced packaging technologies with                           [16] Y.-S. Chen, T.-Y. Jiang and F.-P. Lai, "Design rule development for
+improved inspection capabilities.                                                  frequency-coded chipless radiofrequency identification with high
+                                                                                   capacity," in IET Microwave, Antennas & Propagation, Wiley,
+                                                                                   2019, p. 1255–1261.
+REFERENCES
+                                                                              [17] H. M. Torun, M. Swaminathan, A. Kavungal Davis and M. L. F.
+                                                                                   Bellaredj, "A Global Bayesian Optimization Algorithm and Its
+[1] Y. Li and D. Goyal, 3D Microelectronic Packaging: From                         Application to Integrated System Design," IEEE Transactions on
+    Architectures to Applications, Singapore: Springer, 2021.                      Very Large Scale Integration (VLSI) Systems, vol. 26, no. 4, pp.
+                                                                                   792-802, 2018.
+[2] W.-H. Chein, G. Pandey, S. Das and L.-C. Chen, "Advancements in
+    Metrology for Advanced Semiconductor Packaging," in                       [18] D. Neffati, A. Autret, T. Berheas, J. Livingstone and B. Fayard,
+    Proceedings of Optics and Photonics for Advanced Dimensional                   "Novi-Sim: A fast X-ray tomography simulation software for
+    Metrology III, vol. 12997, Strasbourg, SPIE, 2024, p. 129970R.                 laboratory and synchrotron systems to generate training databases
+                                                                                   for deep learning applications," e-Journal of Nondestructive Testing,
+[3] S. Lau, J. Gelb, S. Gul, T. Qin, S. Lewis and W. Yun,                          vol. 28, 2023.
+    "Characterizing Sub-micron 3D Defects from Intact Advanced
+    Packages to Wafer Level Packaging using a Suite of Novel 3D X-            [19] M. Jaxa-Rozen and J. Kwakkel, "Tree-based ensemble methods for
+    ray Tools at Down to 0.3 μm Spatial Resolution," in 2023 IEEE                  sensitivity analysis of environmental models: A performance
+    25th Electronics Packaging Technology Conference (EPTC),                       comparison with Sobol and Morris techniques.," Environmental
+    Singapore, IEEE, 2023, pp. 530-535.                                            Modelling & Software, vol. 107, pp. 245-266, 2018.
+[4] B. Peterson, M. Kwan, F. Duewer, A. Reid and R. Brooks,                   [20] A. V. Ponce‐Bobadilla, V. Schmitt, C. S. Maier, S. Mensing and S.
+    "Optimizing X-Ray Inspection for Advanced Packaging                            Stodtmann, "Practical guide to SHAP analysis: Explaining
+    Applications," in International Symposium on Microelectronics,                 supervised machine learning model predictions in drug
+    Sept. 2020.                                                                    development," Clinical Translational Science, vol. 17, no. 11, p.
+                                                                                   e70056, 2024.
+[5] D. Bernard, "X-Ray Advances in Support of Advanced Packaging –
+    Today and Tomorrow," in IMAPSource Proceedings, 2018.
+[6] M. S. M. Khan, C. Xi, N. Varshney, A. A. Khan, A. Serna, H. Dalir,
+    V. Sorger and N. Asadizanjani, "CMx−ray: An X-Ray
+    Compatibility Metric for Advanced Packages to Facilitate Design-
+    for-Inspection," in 2023 IEEE Physical Assurance and Inspection of
+    Electronics (PAINE), IEEE, 2023, pp. 1-7.
+[7] K. Yahyaei, M. S. M. Khan and N. Asadizanjani, "From Design to
+    Inspection: Can Inspection-aware Design Enhance Reliability in
+    Advanced Packaging?," in 43rd IEEE VLSI Test Symposium ,
+    Tempe, 2025.
+[8] K. Yahyaei, M. S. M. Khan, S. Ghosh, A. Roy, P. Craig, N.
+    Varshney and N. Asadizanjani, "X-ADAPT: AI-driven design-based
+    strategy to address x-ray compatibility challenges in advanced
+    packaging metrology," in SPIE ADVANCED
+    LITHOGRAPHY+PATTERNING, San Jose, 2025.
+[9] R. Kannavara, "Towards a unified framework for pre-silicon
+    validation," in IISA 2013, Piraeus, IEEE, 2013.
+[10] J. Kim, S. Ahn, K. Choe, A. Saleh and M. Alimam, "A novel
+     framework for checking and automating DRC Rules," in 2022 IEEE
+     31st Microelectronics Design & Test Symposium (MDTS), Albany,
+     NY: IEEE, 2022, pp. 1-3.
+[11] R. Kibria, F. Farahmandi and M. Tehranipoor, "ARC-FSM-G:
+     Automatic Security Rule Checking for Finite State Machine at the
+     Netlist Abstraction," in 2023 IEEE International Test Conference
+     (ITC), Anaheim, CA: IEEE, 2023.
+[12] A. Nahiyan, K. Xiao, K. Yang, Y. Jin, D. Forte and M. Tehranipoor,
+     "AVFSM: A framework for identifying and mitigating
+     vulnerabilities in FSMs," in 2016 53nd ACM/EDAC/IEEE Design
+     Automation Conference (DAC), Austin, TX: IEEE, 2016, pp. 1-6.
+[13] "Common weakness enumeration," [Online]. Available: https://cwe.
+     mitre.org/data/index.html.
+[14] D. Saha, K. Yahyaei, S. Kumar Saha, M. Tehranipoor and F.
+     Farahmandi, "Empowering Hardware Security with LLM: The
+     Development of a Vulnerable Hardware Database," in 2024 IEEE
+     International Symposium on Hardware Oriented Security and Trust
+     (HOST), Tysons Corner, VA: IEEE, 2024.
+
+
+
+
+                                                                          7
+
