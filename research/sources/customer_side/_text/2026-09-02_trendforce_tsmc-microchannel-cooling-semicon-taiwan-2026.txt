@@ -1,0 +1,371 @@
+
+
+[News] TSMC Eyes Chip-Level Microchannel Cooling as AI System Power Could Rise 6× in Five Years
+
+Popular Keywords
+
+#DRAM
+
+#Foundry
+
+#AI Server
+
+#HBM
+
+#FOPLP
+
+#CoWoS
+
+#NAND Flash
+
+#Automotive
+
+#MLCC
+
+#Server
+
+#Micro LED
+
+#IC Design
+
+About Us
+
+Research Report
+
+Research Directory
+
+Semiconductor Research
+
+Display Research
+
+Optoelectronics Research
+
+Green Energy Research
+
+ICT Applications Research
+
+						Semiconductors						
+
+						AI/HBM/Server						
+
+						DRAM						
+
+						NAND Flash						
+
+						Wafer Foundries						
+
+						MLCC						
+
+						Compound Semiconductor						
+
+						Display						
+
+						LCD						
+
+						OLED						
+
+						Upstream Components						
+
+						Panel Industry						
+
+						Display Supply Chain						
+
+						Display Technologies						
+
+						LED						
+
+						LED Demand / Supply Database						
+
+						Micro/Mini LED						
+
+						Near-Eye Display						
+
+						LED Video Wall						
+
+						Automotive LED - Lighting and Display						
+
+						General / Agricultural Lighting						
+
+						UV LED						
+
+						Infrared Sensing - IR LED / VCSEL / EEL						
+
+						Sapphire Market						
+
+						Energy						
+
+						Solar PV						
+
+						Lithium Battery and Energy Storage						
+
+						Consumer Electronics						
+
+						Notebook Computers						
+
+						TVs						
+
+						Smartphones						
+
+						Tablets						
+
+						Monitors / AIO						
+
+						Emerging Technologies						
+
+						Cloud / Edge Computing						
+
+						Artificial Intelligence						
+
+						Automotive Technologies						
+
+						Robot						
+
+						Selected Topics						
+
+						Semiconductors						
+
+						Telecommunications						
+
+						Computer System						
+
+						Consumer Electronics						
+
+						Automotive & EV						
+
+						Green Energy & Storage						
+
+						Display Panel & LED						
+
+						Economics						
+
+Selected Topics
+
+Membership
+
+Semiconductor Research
+
+Display Research
+
+Optoelectronics Research
+
+Green Energy Research
+
+ICT Applications Research
+
+Selected Topics
+
+Price Trends
+
+DRAM (Index)
+
+DRAM Spot Price
+
+DRAM Contract Price
+
+Module Spot Price
+
+GDDR Spot Price
+
+LPDDR Spot Price
+
+Mobile DRAM Contract Price
+
+NAND Flash
+
+NAND Flash Spot Price
+
+NAND Flash Contract Price
+
+Wafer Spot Price
+
+Memory Card Spot Price
+
+PC-Client OEM SSD Contract Price
+
+SSD Street Price
+
+NAND Flash Wafer Contract Price
+
+eMMC Spot Price
+
+eMMC/UFS Contract Price
+
+TFT-LCD (Index)
+
+Large Size Panel Price
+
+LCD Smartphone Panel Price
+
+Street Price
+
+Large Size Panel Shipment
+
+PV
+
+Polysilicon
+
+Wafer
+
+Cell
+
+Module
+
+PV Glass
+
+Li-Ion Battery
+
+Battery Cell & Pack
+
+Precursor and Cathode Material
+
+Anode Material
+
+Separator
+
+Electrolyte
+
+Li & Co & Ni
+
+Other
+
+Press Center
+
+News
+
+Events
+
+Contact Us
+
+AI Agent
+
+Q&A Assistant
+
+Beta
+
+                                DataTrack
+
+About TrendForce News
+
+TrendForce News operates independently from our research team, curating key semiconductor and tech updates to support timely, informed decisions.
+
+Home
+
+News
+
+[News] TSMC Eyes Chip-Level Microchannel Cooling as AI System Power Could Rise 6× in Five Years
+
+2026-09-02
+
+Emerging Technologies
+
+                                                                                                                                                 /                                 
+Semiconductors
+
+                    editor                
+
+As AI chip power consumption rises rapidly, liquid cooling is becoming increasingly important. According to
+ Anue
+, TSMC Advanced Packaging R&D Director James Chen said at SEMICON Taiwan 2026 that as AI computing performance continues to increase, total system power could rise around sixfold over the next five years. Power delivery and thermal management are therefore becoming two key challenges for the continued scaling of next-generation AI systems.
+
+Chen said that between 2024 and 2029, CoWoS package size is expected to expand from 3.3 times the reticle size to more than 14 times, while the scale of compute transistors within a single package could increase around 48-fold, Anue notes. Over the same period, total HBM bandwidth per package is projected to grow more than 34-fold, supported by roughly twice as many I/Os and around a sixfold increase in transfer speed per I/O. As Anue highlights, Chen also illustrated the growing power challenge with a projection showing package power rising from around 600W to 4,100W, while power delivery losses could increase more than fivefold.
+
+To address the growing thermal challenge, Chen said the industry is accelerating its shift from air to liquid cooling. Current liquid-cooling designs typically place a cold plate on top of the chip package, with thermal interface materials (TIMs) between the heat source and the cooling system,
+ Commercial Times 
+notes. The next step is to integrate microchannels into the package lid, shortening the heat-transfer path. The industry is also exploring more advanced approaches, including jet impingement and two-phase boiling.
+
+Reducing the interfaces between the chip and coolant is a longer-term goal. Chen noted that while TIMs help fill gaps between the chip, lid, and cold plate, they also add thermal resistance. The ideal long-term direction is therefore to shorten or even eliminate these interfaces and integrate cooling directly with the package or chip structure, Anue notes.
+
+Microchannel cooling is emerging as one approach toward that goal. TSMC has included the technology in its R&D roadmap and is working toward integrating it with advanced packaging, according to 
+Economic Daily News
+. Microchannel cooling uses tiny fluid channels within the chip or package structure, allowing coolant to absorb and remove heat more efficiently. However, forming channels in the chip for coolant to flow through poses significant manufacturing and packaging challenges, as even a small mistake could render an expensive chip unusable, Economic Daily News adds.
+
+Thermal Management Moves Into Advanced Packaging
+
+Beyond cooling technology itself, TSMC is also co-optimizing packaging, materials, and chip design to improve thermal performance, reducing thermal resistance by up to around 40%, Commercial Times indicates. The report adds that thermal considerations, including package structure, materials, and chip hotspot placement, need to be incorporated early in the design process.
+
+The shift could also raise requirements across the liquid-cooling supply chain. As power consumption per AI rack rises and liquid-cooling systems become more complex, specifications and demand for key components—including cold plates, manifolds, quick-disconnect couplings, coolant distribution units (CDUs), and heat exchangers—are expected to rise accordingly, Commercial Times notes.
+
+Read more
+
+[News] TSMC: SoIC, CoWoS to Drive 50× Compute by 2029; Silicon Photonics to Top 50% of Transceiver Market by 2027
+
+[News] SEMICON Taiwan Highlights AI Infrastructure, CPO; Google AI Chief Technologist to Make Asia Keynote Debut
+
+(Photo credit: TSMC)
+
+Please note that this article cites information from 
+Anue
+, 
+Commercial Times
+, and 
+Economic Daily News
+.
+
+                                liquid cooling
+
+                                TSMC
+
+Previous Article 
+
+[Insights] Memory Spot Price Update: DDR5, DDR4 Demand Weakens, but Firm Supplier Quotes Support Elevated Prices
+
+Next Article 
+
+[News] SK hynix’s China eSSD Business Hits Turning Point as Intel NAND Deal Restrictions Near Expiry by End-2026
+
+Subject
+
+ Latest 
+
+ Semiconductors 
+
+ Display 
+
+ Optical Semiconductors 
+
+ Energy 
+
+ Consumer Electronics 
+
+ Telecommunications 
+
+ Emerging Technologies 
+
+Related Articles
+
+[News] World’s First Silicon Carbide Superjunction MOSFET Made its Debut
+
+2026.09.10
+
+[News] NVIDIA’s DLSS 5 Could Boost Graphics DRAM Demand, With GDDR6 Prices Reportedly Already Triple
+
+2026.09.10
+
+[News] OpenAI Says It Is Working with Samsung on Next-Gen Chips; Ties Could Expand Beyond Memory
+
+2026.09.09
+
+About US
+
+Research Report
+
+Terms of Use
+
+Privacy Policy
+
+Membership Terms & Conditions
+
+Contact Us
+
+© 2026 TrendForce Corp. All rights reserved
+
+Get in touch with us
+
+Your Email
+
+Message
+
+                Send
+
+                Cancel
+
