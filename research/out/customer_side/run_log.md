@@ -27,5 +27,9 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
 4. calc/abstract_screen.py: keyword screen (scope x method) to prioritise reading; 126 shortlisted. The screen is a reading aid only; inclusion decisions are made by reading the abstracts (PAPM, PAPL).
 5. Limits of this method: (a) only venues listed in calc/venues.tsv; (b) papers whose Crossref record lacks affiliations are invisible to the scan (85 of 3,378 records); (c) abstracts only: full texts sit behind ieeexplore's bot challenge; (d) SPIE papers cannot be attributed to a company unless the abstract names it.
 
+6. Scan v2 (after PAPL reported misses): the affiliation pattern now drops commas/periods and matches "Intel" case-insensitively. It adds 3 TSMC ECTC 2025 papers ("Taiwan Semiconductor, Manufacturing Company") and 1 Intel IRPS 2025 paper ("INTEL Client Computing Group"); no SK hynix, Samsung or Micron paper was added; nothing dropped. 562 chipmaker papers in calc/paper_candidates.csv; additions listed in calc/paper_candidates_v2_added.txt. PAPL had already read all four (one in scope, PAPL-017).
+7. IITC 2026 programme page saved (sources/customer_side/2026-11-21_iitc_IITC2026-program-page.html): no paper by the seven on inspecting or measuring HBM or hybrid bonds; Micron gave an invited talk on memory stacking (title only) and a workshop talk on HBM thermal challenges.
+8. research/tools/merge_parts.py patched to skip parts/*_table.csv (table files are not evidence files; reported by TALK).
+
 ## Steps
 (continued below as modules report)

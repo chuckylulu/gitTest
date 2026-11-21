@@ -17,7 +17,7 @@ CO = {
     "Samsung": re.compile(r"Samsung(?!\s*Electro-?\s*Mechanics)", re.I),
     "Micron": re.compile(r"Micron\b(?!\s*(scale|size))"),
     "TSMC": re.compile(r"TSMC|Taiwan Semiconductor Manufacturing", re.I),
-    "Intel": re.compile(r"\bIntel\b(?!ligen)"),
+    "Intel": re.compile(r"\bIntel\b", re.I),
     "ASE": re.compile(r"\bASE\b|Advanced Semiconductor Engineering|\bSPIL\b|Siliconware", re.I if False else 0),
     "Amkor": re.compile(r"Amkor", re.I),
 }
@@ -49,7 +49,9 @@ for f in sorted(glob.glob(os.path.join(SRC, "*_crossref_*-volume-list.json"))):
     hits = 0
     for i in items:
         auths = i.get("author", [])
-        alltext = " | ".join(affs(a) for a in auths)
+        # v2: drop commas/periods and collapse whitespace before matching, so strings such as
+        # "Taiwan Semiconductor, Manufacturing Company" or "S.K. hynix" are caught
+        alltext = re.sub(r"\s+", " ", re.sub(r"[,.]", " ", " | ".join(affs(a) for a in auths)))
         cos = [c for c, rx in CO.items() if rx.search(alltext)]
         semco = bool(SEMCO.search(alltext))
         if not cos and not semco:
