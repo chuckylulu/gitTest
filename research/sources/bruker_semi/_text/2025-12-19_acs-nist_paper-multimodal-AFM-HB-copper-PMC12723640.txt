@@ -1,0 +1,1088 @@
+ 822 acssd ACS Applied Nano Materials ACS Appl Nano Mater PMC12723640 12723640 12723640 41445834 10.1021/acsanm.5c05142 Probing the Nanoscale
+Onset of Plasticity in Electroplated
+Copper for Hybrid Bonding Structures via Multimodal Atomic Force Microscopy Alderete Nicolas A † ‡ Daharwal Paresh D § Ciobanu Cristian V ∥ Stan Gheorghe † * 
+ †
+
+Material
+Measurement Laboratory, National Institute
+of Standards and Technology, Gaithersburg, Maryland
+20899, United States
+ 
+ ‡
+
+School
+of Science and Engineering, The George Washington
+University, Washington, D.C.
+20052, United States
+ 
+ §
+
+Advanced
+Packaging Technology and Manufacturing, Intel Corporation, Hillsboro, Oregon
+97124, United States
+ 
+ ∥
+
+Department
+of Mechanical Engineering and Materials Science Program, Colorado School of Mines, Golden, Colorado
+80401, United States
+ *
+ 
+Email: gheorghe.stan@nist.gov .
+ 9 12 2025 8 50 24244 24244–24253 24 12 2025 © 2025 The Authors. Published by American Chemical Society This article is licensed under CC-BY 4.0 Abstract
+ The slowdown of Moore’s law has elicited a paradigm
+shift
+whereby shrinking of in-plane dimensions is being replaced by 3D-stacking
+advanced packaging approaches to satisfy the ever-increasing demands
+for power, performance, area, and cost. Driven by the widespread use
+of metallic interconnects with submicron pitches, robust metrology
+for probing mechanical behavior at the nanoscale emerges as a key
+area of interest in the semiconductor industry. Here, we develop an
+atomic force microscopy (AFM)-based protocol for characterizing the
+incipient stages of plasticity and illustrate it on hybrid bonding-ready
+(prior to bonding) copper pads. We combined AFM’s high-resolution
+imaging with contact resonance and indentation techniques (including
+single- and multistep indentation) to characterize the mechanical
+heterogeneity of the material, quantify the nanoscopic yield stress
+statistics, and derive indentation stress–strain curves. From
+these measurements, we have clarified the mechanisms of early plasticity
+and determined the elastoplastic constitutive response of polycrystalline
+copper, including parameters such as elastic modulus, yield stress,
+and strain-hardening slope. Besides providing metrology relevant to
+various length scales, our approach offers a pathway to utilize an
+industry-standard instrument for characterizing the thermomechanical
+properties that are essential for the development of semiconductor
+structures.
+ Keywords: atomic force microscopy, nanoscale plasticity, copper, advanced packaging, hybrid bonding
+
+ status released display-pdf yes is-in-collection-domain yes is-olf no is-manuscript no is-preprint no is-journal-matter no is-scanned no is-retracted no Received 2025 Nov 10; Accepted 2025 Nov 28; Revised 2025 Nov 26; Collection date 2025 Dec 19.
+
+ 1.
+ Introduction
+ The advancement of semiconductor
+technology cannot continue solely
+under the paradigms of Moore’s and More Moore’s laws,
+as dimensions approach the physical limits of transistor scaling.
+Nonetheless, ongoing developments in fields such as artificial intelligence,
+large-scale computing, big data, and robotics are driving the need
+for improvements in power, performance, area, and cost (PPAC). In this context, various advanced packaging techniques
+(an umbrella term for different architectural accelerators) have emerged
+as potential solutions to sustain miniaturization trends and meet
+PPAC requirements ( Figure 
+ a). One promising approach is hybrid bonding
+technology, which enables direct metal–metal and dielectric-dielectric
+connections with interconnect pitches <10 μm, without the
+need for wires or bumps in the circuit. In a general hybrid bonding process ( Figure 
+ b), two identical dies made of silicon (Si)
+and silicon dioxide (SiO 2 ) are prepared with embedded copper
+(Cu) pads. During a chemical-mechanical
+polishing (CMP) step, the dielectric is smoothened and the copper
+on each die is recessed slightly (i.e., dishing) to ensure it does
+not impede the dielectric–dielectric bonding. Heat and pressure
+are subsequently applied, causing the Cu pads to expand, fill the
+recesses, and contact the opposing Cu pads. These contacts lead to
+copper migration and bonding of the two dies. Thus, two of the most
+critical steps in hybrid bonding, CMP and annealing plus bonding phase,
+involve nanoscale mechanical and thermomechanical processes. During
+CMP, the copper is deformed and abraded by contact with silica particles
+in a slurry. 
+,
+ In the annealing and bonding phase,
+the asperities at the mating interfaces come into contact and plastically
+deform, increasing the effective merging area for an enhanced diffusion-assisted
+bonding. Therefore, understanding and
+improving these processes requires a thorough characterization of
+the elastic and plastic properties of bonding-ready copper at the
+nanoscale, 
+,,
+ which differ
+from those measured at the macro-, meso- and microscale due to the
+emergence of size and processing effects. 
+,
+ 
+
+ 1
+ (a)
+Overview of scaling trends in 3D-interconnect technologies
+in terms of energy efficiency and interconnect density; (b) schematic
+representation of the main steps involved in a typical hybrid bonding
+process. Multimodal AFM experiments on hybrid-bonding ready patterns:
+(c) experimental setup for interferometric AFM, along with a topographic
+image of copper in a hybrid bonding pattern (prior to bonding). Representative
+experimental curves obtained through (d) CR-AFM, (e) single-step,
+and (f) multistep AFM indentation. Insets in (e) and (f) show the
+imposed displacement/load profiles as a function of time.
+
+ Fundamental micro- and nanoscale plasticity studies
+in copper have
+primarily been conducted using conventional nanoindentation, 
+−
+
+
+ atomic force microscopy (AFM) indentation, miniaturized uniaxial testing, 
+,
+ and forward
+and inverse computational methods. 
+,−
+
+ 
+
+ Despite the versatility and advanced capabilities of modern
+AFMs
+for nanoscale mechanical mapping, there
+is a significant lack of studies leveraging AFM for the characterization
+of nanoscale incipient plasticity in materials specific to the semiconductor
+industry. Most studies using AFM for mechanical characterization in
+heterogeneous integration and advanced packaging have primarily focused
+on topographic imaging to infer the mechanical response of the samples, 
+−
+
+ rather than directly probing their nanomechanical properties. For
+example, observation of thermoplastic deformation in hybrid-bonding-ready
+Cu-SiO 2 structures can be simply observed by AFM topographical
+scans as a function of temperature. However,
+to understand and accurately model the thermomechanical response of
+these structures, we require direct measurements of their material
+parameters at the nanoscale, rather than relying on values obtained
+from macroscale tests. These needs align with the continued downward
+trend in size-scaling and the critical need for application-relevant
+robust metrology as identified in the International Roadmap for Devices
+and Systems.
+
+ We address these gaps
+by introducing a multimodal AFM-based metrology
+framework designed to characterize the nanoscale elastic and plastic
+response of copper at room temperature, specifically within actual
+hybrid bonding patterns prior to the bonding process ( Figure 
+ b). In this framework, we utilize
+contact resonance (CR-AFM, Figure 
+ d) and AFM-indentation ( Figure 
+ e,f) together with the topographic capabilities
+of AFM to measure local moduli, determine yield stresses, and derive
+indentation stress–strain curves at room temperature. Our multimodal
+AFM approach, with tip radii less than 40 nm, enables probing the
+mechanics of nanoscale volumes on precise nanostructural surface features
+such as grain boundaries, without requiring additional sample preparation.
+A key advancement of this work is the ability to resolve subnm size
+pop-in events taken at force increments <1 μN. Furthermore,
+our AFM-based strategy lays the groundwork for future nanoscale hybrid-metrology
+that combines topographic, mechanical, electrical, and thermal capabilities. These types of measurements and corresponding
+data pertaining to structures prepared for integration are essential
+for enhancing predictive manufacturing in hybrid bonding applications.
+
+ 2.
+ Experimental Section
+ 2.1.
+ Hybrid Bonding Samples
+ Samples were
+collected from wafers featuring hybrid bonding SiO 2 /Cu
+patterns (Intel Corporation, Hillsboro, OR, USA) that underwent chemical-mechanical
+polishing. The surface of the polycrystalline Cu pads exhibits micrometer-sized
+grains. In AFM topographic images, these grain boundaries are visible
+to varying extents, with height differences across them measuring
+a few nanometers.
+
+ 2.2.
+ AFM Topographic Imaging
+ AFM experiments
+were performed using an environmental Vero AFM (Oxford Instruments/Asylum
+Research, Santa Barbara, CA, USA). The Vero AFM features a built-in
+Quadrature Phase Differential Interferometer (QPDI), which directly measures the vertical displacement of the
+tip based on the wavelength λ of the light ( Figure 
+ c). In addition to benefiting
+from low-noise measurements through interferometric detection, the
+QPDI provides two significant advancements: (1) the vertical deflection
+measurement directly reflects the AFM tip displacement, improving
+the characterization of the tip–sample interaction, and (2)
+the cantilever deflection is converted into displacement without requiring
+contact with the sample, enabling stiffness calibration through the
+thermal tune method prior to contact. Furthermore, unlike the optical
+beam deflection method commonly used in AFM, QPDI minimizes crosstalk
+between lateral and vertical forces. All experiments were conducted
+in air at room temperature. The uncertainties reported correspond
+to the experimental standard deviation of the measurements taken during
+each experiment (see Supporting Information, Notes S1 and S4–S6 ).
+ Topographic imaging of selected
+areas within the hybrid bonding patterns was conducted in noncontact
+mode, both before and after AFM indentations, using the same tip for
+both operations. For high-resolution imaging following the indentations,
+sharper AFM tips were utilized. In these instances, PPP-SEIH silicon
+cantilever tips (Nanosensors, Neuchâtel, Switzerland) were
+used, with cantilever stiffness of around 8.5 N/m and tip radius less
+than 10 nm. All topographic images were processed using first-degree
+polynomial flattening.
+
+ 2.3.
+ Contact Resonance AFM
+ CR-AFM measurements
+were conducted using photothermal excitation of the cantilever in
+dual AC mode. A DT-NCHR probe (Nanosensors, Neuchâtel, Switzerland),
+with a resonance frequency in air f 
+ 1 
+ air = 415.8 kHz and a spring constant k 
+ c = 9.2 N/m, was used. Frequency maps were generated
+over a Cu pad surrounded by SiO 2 , with an applied force
+of 750 nN, a frequency scan rate of 0.5 Hz, and a resolution of 512
+px × 512 px. During the mapping, the two driving frequencies
+were kept apart at a constant difference of 120 kHz. A complete description
+of the experimental and analysis methodology is presented in Supporting
+Information, Note S1 .
+
+ 2.4.
+ AFM-Indentation
+ Single-step and multistep
+AFM-indentation measurements were performed using silicon probes with
+conospherical diamond tips (Adama Innovations Ltd., Dublin, Ireland),
+and spring constants k 
+ c ranging between
+508 and 528 N/m. The shape of the tips was regularly assessed against
+a TGT1 test grating (K-TEK Nanotechnology, Wilsonville, OR, USA) in
+between indentation arrays to check for significant wear or damage.
+Throughout the measurements, the tips maintained a spherical end,
+with only a slight increase in tip radius observed after hundreds
+of measurements (see Supporting Information, Note S7 ). Force versus indentation depth, P vs h , curves were derived from the cantilever deflection voltage V versus piezo displacement d curves, V vs d , with P = k 
+ c 
+ h and h = d – VS , S being
+the deflection sensitivity of the cantilever in nm/V. The processing
+of the force-spectroscopy data was carried out using an in-house developed
+script in Python, which utilized the SciPy and Scikit-learn packages.
+ 2.4.1.
+ Single-Step AFM-Indentation
+ Single-step
+indentations were performed as square arrays over areas of approximately
+4 μm × 4 μm, at a given maximum applied load. The
+loading and unloading segments of the indentations were carried out
+at a velocity of 200 nm/s, with a sampling rate of 500 Hz, and a scan
+rate of 1 Hz. Force–displacement curves were analyzed for several
+metrics like pop-ins, total work, plastic work, residual depth, and
+cumulative excursion length. Pop-ins (i.e., small displacement excursions
+on the loading curves) were identified with the aid of an in-house
+developed algorithm. A subsequent visual inspection was conducted
+to detect any potentially overlooked pop-ins and to ensure accuracy.
+The force–displacement coordinates of all identified pop-ins,
+as well as the total number of pop-ins, were recorded for statistical
+analysis. A complete description of the experimental methodology and
+analysis is presented in Supporting Information, Note S2 .
+
+ 2.4.2.
+ Multi-Step AFM-Indentation
+ Multistep
+AFM-indentation experiments were performed over selected areas within
+Cu pads. Typically, the maximum load used for these tests was around
+15 μN, with approximately 20 partial loading–unloading
+cycles made to gradually reach the desired maximum load. Partial unloading
+was performed up to 25%of the cycle’s maximum load to maintain
+a conformal tip–sample contact during unloading. The loading
+and unloading segments were executed at velocities of 50 nN/s, and
+with a sampling rate of 500 Hz. Indentation stress–strain curves
+were derived following the formalism developed by Pathak and Kalidindi, based on the analysis of the unloading segments.
+A complete description of the experimental methods and analysis is
+presented in Supporting Information, Note S3 .
+
+
+
+ 3.
+ Results and Discussion
+ 3.1.
+ Elastic Modulus Characterization
+ The elastic modulus of polycrystalline Cu pads was determined using
+contact resonance atomic force microscopy (CR-AFM) mapping, with results
+presented in Figure 
+ . In essence, CR-AFM utilizes the resonant frequency shift of the
+AFM cantilever while in elastic contact with the sample to quantify
+the elastic and viscoelastic properties of materials at the nanoscale. 
+,
+ We performed CR-AFM measurements on both Cu pads and adjacent SiO 2 regions, over areas of about 25 μm 2 on each
+material. The measurements taken in the SiO 2 regions served
+as a reference for converting the measured CR frequencies into indentation
+moduli 
+,
+ ( Figure 
+ a,b). The indentation modulus M is
+defined as M = E /(1 – ν 2 ), where E and ν represent the Young’s
+modulus and Poisson’s ratio, respectively. For the reference
+SiO 2 material, a Young’s modulus E 
+ SiO2 = 72 GPa and a Poisson’s ratio ν SiO2 = 0.17 were assumed, which correspond to an indentation
+modulus of M 
+ SiO2 = 74.1 GPa. The indentation
+modulus of the tip (diamond) was taken as M 
+ Tip = 1250 GPa, obtained from E 
+ Tip = 1200
+GPa and ν Tip = 0.2. Using these values, we calculated
+the reduced elastic modulus of the SiO 2 as E 
+ eff, SiO2 = (1/ M 
+ SiO2 +
+1/ M 
+ Tip ) −1 .
+ 2
+ CR-AFM measurements.
+(a) Single-line profile of indentation moduli
+across SiO 2 and Cu regions as determined by CR-AFM mapping,
+(b) histogram of the indentation moduli obtained from CR-AFM over
+the mapped SiO 2 and Cu regions.
+
+ The modulus profile shown in Figure 
+ a exhibits minimal variation across the reference
+SiO 2 regions, with an indentation modulus of M 
+ SiO2 
+ Exp = 74.1
+GPa ± 4.1 GPa. The uncertainty in the measurements of SiO 2 is ascribed to the inherent variability of the contact area
+during CR-AFM mapping. In contrast, a more pronounced variation in
+indentation modulus is observed on the profile of the Cu area ( M 
+ Cu 
+ Exp = 136.4 GPa ± 11.5 GPa), as also evidenced in the histogram
+of Figure 
+ b. This
+distinct contrast within the Cu pad can be attributed to its polycrystalline
+structure. The range of indentation moduli shown in Figure 
+ b can be correlated with the
+indentation moduli of the three main crystallographic directions of
+Cu, whose theoretical indentation moduli are 129, 138, and 141 GPa,
+for <100>, < 110>, and <111>, respectively. Although a predominance of the <111> texture
+is generally
+expected due to its greater diffusivity (as Cu–Cu hybrid bonding
+is a diffusion-based process), the observed heterogeneity is not surprising
+because the process parameters associated with various fabrication
+steps of the Cu pads (such as Cu-seeding via physical vapor deposition,
+Cu-electroplating, annealing, and CMP) are known to influence their
+texture. 
+−
+
+ Establishing a clear association between the mechanical
+properties and specific crystallographic orientations is less important
+for the purposes of this work. Instead, we focus on using these results
+to develop an elastic-plastic characterization that is highly localized
+and can be effectively performed at specific locations on samples
+of interest.
+
+ 3.2.
+ Incipient Plasticity Characterization
+ With the indentation moduli determined from CR-AFM, we now turn our
+attention to the onset of plastic deformation, also known as incipient
+plasticity. As briefly noted in the introduction, AFM-based force-spectroscopy
+is particularly well-suited for studying the onset of plasticity due
+to its ability to probe material volumes on the nanometer scale, where
+the likelihood of encountering and moving dislocations is relatively
+low. In turn, AFM-indentation allows
+for the investigation of dislocation nucleation mechanisms and defect-induced plastic mechanisms.
+ Single-step indentations were first performed on the center region
+of two separate Cu pads from the same batch of fabrication. Figure 
+ a shows a topographic
+scan of the surface of one of the pads after indentation, where the
+pad’s polycrystalline structure and some surface defects can
+be observed. Individual grains in the AFM topography can be distinguished
+from one another due to the slight misalignment of their polished
+surfaces. The significant nonuniformities observed across polycrystalline
+copper grains arise from the varying mechanical wear rates during
+CMP, which depend on the crystallographic orientation of the grains. 
+,
+ Additionally, small, thin ridges (measuring less than 1 nm) can
+be observed along the grain boundaries, resulting from the mechanical
+mismatch between the grains. As shown in Figure 
+ a, the postimaging AFM offers high spatial
+resolution for locating indents with respect to the interior of the
+grains and their boundaries. Force-depth curves, one of which is presented
+in Figure 
+ a, display
+similar characteristics, featuring a jagged loading segment and a
+relatively smooth unloading curve. The former is associated with the
+occurrence of pop-in events related to plastic deformations (indicated
+by black arrows in Figure 
+ a), while the latter is indicative of elastic unloading without
+additional effects, such as pop-outs.
+ 3
+ AFM single-step indentation characterization
+on Cu pads. (a) Postindentation
+topographic scan with a selected force–displacement curve shown.
+(b) Average force–indentation depth curves, with the shaded
+region covering curves within one standard deviation. (c) Histogram
+fits for plastic metrics including the number of pop-ins per indentation
+curve, plasticity index, cumulative excursion length, and plastic
+work. (d) Empirical cumulative distribution (ecdf) of maximum shear
+stress at the first pop-in event, as defined by eq 
+ .
+
+ Averaging the force-depth curves obtained from
+each pad ( Figure 
+ b)
+provides a clearer
+understanding of their behavior under load and shows that our AFM
+indentations are consistent across pads. In the average curves, the
+pop-ins are smoothed out, and an inflection is observed at approximately
+7.5 μN force (black dashed arrow in Figure 
+ b). Before reaching this point, the (average)
+loading curve resembles the unloading path. After the inflection at
+7.5 μN, the material exhibits a significantly more compliant
+response. By comparing the average curves with the individual ones,
+we find that the inflection region corresponds to the occurrence of
+the largest pop-in events recorded during the experiments. Given that
+these are not the first pop-ins, the largest pop-ins likely reflect
+a collective motion of dislocations resulting
+from the interaction between pre-existing dislocations and those generated
+around the AFM tip. The fluctuations
+observed at the maximum load of the averaged profile in Figure 
+ b result from the sparse averaging
+of force–distance curves that reach the same maximum load at
+various indentation depths. Additional examples of individual force–distance
+curves are provided in the Supporting Information . Other plasticity metrics ( Figure 
+ c) derived from individual force-depth curves also
+show good consistency across pads. The number of pop-in events per
+curve generally ranges from 8 to 15, with an average plasticity index
+and plastic work around 0.6 and 0.012 pJ, respectively.
+ As shown
+in the individual indentation curve ( Figure 
+ a) and the curves in Supporting
+Information, Note 4 , the actual departure
+from elasticity occurs considerably earlier in the loading path than
+the aforementioned inflection around 7.5 μN. This departure
+can be assessed by fitting the elastic segment up to the first pop-in
+with the classical Hertz expression for the contact of a paraboloid
+onto a flat, elastic half-space:
+
+ 1
+ P = 4 3 E eff R h 3 / 2 where P , E 
+ eff , R , h are
+the load, the effective modulus, the tip radius, and the displacement,
+respectively. The elastic modulus values obtained from CR-AFM measurements
+were used to fit eq 
+ , leading to an estimate of the tip radius R = 12.3
+nm ± 1.4 nm (see Supporting Information, Notes 2 and 7 ). In our analysis, we disregarded any existing
+native oxide layer on the surface of Cu due to the lack of a distinct
+compliant region at the contact, which suggests that this layer may
+be very thin, possibly within the nanometer range. After fitting,
+the maximum shear stress (τ max 
+ pop (1) 
+ ) at the point of departure
+from the Hertzian response (marked with a circle in Figure 
+ a), can be calculated as:
+
+ 2
+ τ max pop ( 1 ) = 0.31 6 E eff 2 P pop ( 1 ) π 3 R 2 3 where P 
+ pop (1) 
+ is the load at the first pop-in. The maximum
+shear stress in eq 
+ represents
+the onset of plasticity (i.e., incipient plasticity) and can be regarded
+as the nanoscopic yield stress. Furthermore, by analyzing various
+force-depth curves (refer to Figures S4 and S5 from Supporting Information), it is evident that pop-ins occur at
+different load-depth pairs, highlighting their stochastic nature.
+In this context, Figure 
+ d presents the empirical cumulative distribution function of the
+maximum shear stresses calculated at the first pop-in events from
+each indentation experiment. For both Cu pads examined, the distributions
+are narrow, ranging from 5 to 12 GPa, with median maximum shear stress
+(τ̃ max 
+ pop (1) 
+ , tilde denoting median) of 8.4 and 8.9 GPa,
+respectively. These values are of the order of the theoretical shear
+strength of copper, generally estimated to be about G /2π (with G the shear modulus of the material,
+which for Cu<111> is about 48 GPa). Previous experimental studies by Suresh et al. and Gouldstone et al. reported
+shear strengths of 20.8 and 15 GPa, respectively, through nanoindentation
+of primarily (111)-copper thin films on Si substrates. More recent
+computational and experimental works found lower shear strengths around 4.56
+and 4.20 GPa under spherical nanoindentation, respectively. As such,
+our values fall within these upper and lower bounds, reflecting both
+our methodology and the characteristics of copper in hybrid bonding
+patterns.
+ To gain mechanistic insight into the nature of the
+first pop-in,
+the empirical cumulative distributions ( f ) are fitted
+using
+
+ 3
+ f = 1 − exp [ − η k B T τ̇ v * exp ( τ v * k B T ) ] where k 
+ B , T , v *, η, τ,
+τ̇ are Boltzmann’s constant (1.380649 × 10 –23 J/K), temperature, activation volume, defect nucleation
+rate, and the shear stress and rate (where τ max 
+ pop (1) 
+ has been denoted
+τ, for brevity), respectively. The fit is performed after using eq 
+ to write ln­[ln­(1/(1 – f )] as a linear function of τ, to obtain v * and η from the slope and intercept, respectively. From the
+fits (dashed lines in Figure 
+ d), an average value of 3.5 × 10 –3 nm 3 for the activation volume is obtained, on the order of 20%
+the atomic volume of copper (1.182 × 10 –2 nm 3 ), and consistent with the values reported for other face-centered
+cubic (FCC) metals. 
+,
+ This correlation suggests that
+the plastic events, which appear as the first pop-in in the force-depth
+curves, are associated with the homogeneous nucleation of dislocations
+caused by the reconfiguration of a small number of atomic bonds, rather
+than a larger-scale reconfiguration of the lattice. 
+,
+ Although this topic is beyond the scope of this work, future studies
+employing computational modeling (such as molecular dynamics) and
+experimental techniques (like transmission electron microscopy) could
+provide deeper insights into the dislocation nucleation phenomena.
+Additionally, the similarity between the cumulative excursion lengths
+(δ, Figure 
+ c)
+and the sum of abrupt displacements in the force-depth curves indicates
+that the plastic dissipation is primarily driven by shear.
+
+ 3.3.
+ Influence of Grain Boundaries
+ As
+discussed in the previous sections, Cu pads in hybrid bonding patterns
+are polycrystalline, raising the question of how grain boundaries
+influence the onset of plasticity in these samples. It is well established
+that grain boundaries play a significant role in accommodating deformation,
+controlling strength, and regulating diffusion, with mechanisms often
+differing from those within the grains. 
+,
+ However, the
+reduced size of grains and their boundaries make it challenging to
+examine their local mechanics. In this context, the topographic capabilities
+of AFM and the ability to use sharp tips for force-spectroscopy enable
+the precise positioning of the indenter to probe grain boundary properties
+and compare them to those of the grains themselves. To achieve this,
+the plastic behavior of copper grain boundaries in hybrid bonding
+patterns was studied using a methodology similar to that described
+in Section 
+ . On
+a different copper pad, a set of indentations was performed on both
+grain boundaries and within grains, as shown in the topographic scan
+in Figure 
+ a.
+ 4
+ AFM single-step
+indentation comparison between grain boundary ( G 
+ Bdry ) and grain interior ( G 
+ Int )
+plasticity. (a) Postindentation topographic scan
+with indents on grain boundaries and grain interiors highlighted.
+(b) Average force–indentation depth curves (shaded region signifies
+one standard deviation). (c) Histogram fits for plastic metrics: number
+of pop-ins per indentation curve, plasticity index, cumulative excursion
+length, and plastic work. (d) Empirical cumulative distribution (ecdf)
+of maximum shear stress at fist pop-in, as defined by eq 
+ .
+
+ The average force indentation-depth curves ( Figure 
+ b) show comparable
+loading behavior up to
+nearly 7.5 μN (as indicated by the black dashed arrow in Figure 
+ b), consistent with
+the onset of plasticity discussed in Section 
+ . Additionally, the unloading paths appear
+parallel yet shifted, illustrating similarity in elastic behavior.
+The difference arises in the behavior following the kink in the average
+loading curve, wherein the grain boundaries exhibit a stiffer response
+and reduced ductility compared to the grain interiors. The latter
+is clearly seen when comparing the plasticity index, plastic work
+and cumulative departure length metrics, as shown in Figure 
+ c. In all cases, these metrics
+indicate increased plasticity for points within the grains compared
+to boundaries, which is consistent with the notion that grain boundaries
+act as barriers to dislocation motion.
+
+ Notably, in the early stages of plasticity, the differences
+between
+boundary and interior points are not as pronounced, with the median
+maximum shear stress differing by less than 3% (8.00 and 7.83 GPa,
+respectively), resulting in distributions that nearly overlap around
+the theoretical shear strength ( Figure 
+ d). Therefore, the influence of grain boundaries appears
+to be more prevalent at the post-nucleation level rather than at the
+stage of initial dislocation nucleation.
+
+ 3.4.
+ Stress–Strain Curves
+ We utilized
+our AFM multistep indentations to obtain the constitutive relations
+for copper in the form of indentation stress–strain (ISS) curves.
+To achieve this, we followed the methodology developed by Pathak and
+Kalidindi and fitted the unloading segments
+(i.e., elastic reloading segments) of multistep indentations using
+a more general Hertz expression:
+ 4
+ P ( i ) = 4 3 E eff R eff ( i ) h ( i ) 3 / 2 where (i) represents a given
+unloading segment. It is important to note that eq 
+ differs from eq 
+ in the effective radius term R 
+ eff 
+ ( i ) . This is because, in multistep experiments, an effective tip radius
+must be used to account for the plastic deformation of the sample.
+To fit eq 
+ with R 
+ eff 
+ ( i ) as the sole fitting parameter, it was assumed that
+the elastic moduli remained constant. The value of the effective radius
+was used to compute the contact radius as r 
+ c 
+ ( i ) = (3 P 
+ t 
+ ( i ) 
+ R 
+ eff 
+ ( i ) /4 E 
+ eff ) 1/3 , with ( P 
+ t 
+ ( i ) , h 
+ t 
+ ( i ) ) the maximum load and depth
+at the maximum load of each segment. From
+this, pairs of stress–strain values were ultimately obtained
+as:
+
+ 5
+ ( ε ISS ( i ) ; σ ISS ( i ) ) = ( 4 h t ( i ) 3 π r c ( i ) ; P t ( i ) π r c ( i ) 2 ) 
+ Figure 
+ a presents topographic images of the surface
+of Cu pads before and after multistep indentations. These indentations
+were performed within grains (i.e., not on grain boundaries) and the
+residual indentations with depths reaching nearly 20 nm. It is important
+to note that the postindentation residuals of multistep indentations
+in Figure 
+ a appear
+somewhat elongated. This effect is likely due to the material’s
+crystallographic anisotropy and the uneven distribution of the pile-up
+around the rim. More pile-up material was observed around the multistep
+indents compared to the single-step ones. Associated with the indents
+shown in Figure 
+ a, Figure 
+ b depicts two individual
+multistep force–indentation depth curves, with the Hertzian
+fits superimposed on the unloading segments (more curves presented
+in Supporting Information, Note 6 ). The
+force-depth data is well captured by the expression in eq 
+ , which facilitates the conversion
+to indentation stress–strain values. This is justified by virtue
+of the nonoverlapping loading–unloading segments, which indicate
+plastic deformation. In contrast, the unloading and reloading segments,
+on the other hand, appear overlapped, indicating negligible hysteresis.
+ 5
+ Multistep
+AFM-indentation experiments. (a) Before and after multistep
+indentation topographic scans within a Cu pad. (b) A subset of force–indentation
+depth curves with the Hertzian fits superimposed on the unloading
+segments. (c) Indentation stress–strain curve with stress–strain
+pairs from all experiments (gray markers) and the ones derived from
+the force-depth curves from (b) (orange and pink markers). (d) Empirical
+cumulative distribution function of the indentation yield stress from
+all of the experiments, with the median indentation yield stress (σ̃ ISS 
+ Y 0.2% 
+ ) highlighted. (e) Average force-depth envelope curve for multistep
+indentation experiments (shaded region signifies one standard deviation).
+
+ By analyzing the force–depth curves from
+all multistep indentation
+experiments, a collection of indentation stress–strain pairs
+was obtained, as shown in the combined plot of Figure 
+ c. Overall, the stress–strain data
+aligns well with a linear trend of slope E 
+ T , which is smaller than the elastic slope E 
+ E . This indicates that the response is not solely elastic.
+This is further evidenced by the force–indentation depth curves,
+where no overlap between loading and unloading was observed during
+the cycles. Consequently, the slope E 
+ T represents the linear strain-hardening behavior of the Cu pads,
+also referred to as tangent stiffness. We calculated the median E 
+ T from each indentation stress–strain
+curve ( Figure 
+ c) to
+obtain an average E 
+ T = 20.3 GPa. From
+this value, by computing the intersection of the plastic path (dashed
+blue line in Figure 
+ b) with the 0.2% offset elastic path, a median indentation yield
+stress of σ̃ ISS 
+ Y 0.2% 
+ = 0.64 GPa was determined.
+Thus, by deriving the yield stress and tangent stiffness through multistep
+indentations, we can elucidate the elastic-plastic constitutive behavior
+of the Cu pads.
+ The yield stress obtained is consistent with
+the values reported
+by Niu et al. (200–600 MPa) and
+Ramachandramoorthy et al. (about 400
+MPa), both of whom investigated micropillar compression. It must be
+noted, however, that the former examined
+single crystal copper and the latter micro
+additive-manufactured copper pillars. These materials are expected
+to differ from the copper used in our study, which comes from hybrid
+bonding-ready patterns. Moreover, the discrepancy observed between
+yield stress values derived from indentation stress–strain
+curves and those obtained from micropillar testing is similar to previously
+reported comparisons.
+
+ Further analysis
+of the force-depth curves reveals that the average
+envelopes from the multistep indentations resemble those from the
+average curves presented in Sections 
+ and . In particular,
+the inflection around 7.5 μN persists, but can now be quantified
+in terms of stress using the indentation stress–strain formalism.
+As a result, we can determine that the transition observed in the
+force-depth curves, coinciding with the largest pop-ins, occurs at
+a stress of approximately 3.75 GPa.
+
+
+ 4.
+ Conclusions
+ The push for smaller and
+more efficient semiconductor devices requires
+length scale- and condition-relevant metrology techniques that can
+inform on the mechanical and thermomechanical properties of the materials
+involved. Herein, we have demonstrated an AFM-based protocol to gain
+insight into the room-temperature, nanoscale mechanical properties
+of Cu in hybrid bonding-ready patterns. Specifically, we have (i)
+quantified the statistics and characteristics of incipient plasticity
+and obtained nanoscale constitutive behavior for the Cu pads, and
+(ii) developed a multimodal AFM-based methodology for characterizing
+these materials at the nanoscale. The parameters obtained (Young’s
+modulus, yield stress, strain-hardening slope) can be effectively
+utilized in the design and modeling of key hybrid bonding processes,
+such as chemical-mechanical polishing and
+diffusion-bonding. Furthermore, we have
+outlined a roadmap for integrating an additional AFM-based material
+property characterization into existing AFM metrologies in the semiconductor
+industry. Unlike other techniques, AFM does not require extra sample
+preparation, allows for high-precision positioning, and can be used
+in- or near-line metrology applications.
+ Building on the findings
+of this study, several avenues for future
+research emerge. Along these lines, we emphasize the integration of
+CR-AFM and AFM-indentation experiments with microstructural correlative
+measurements such as electron backscatter diffraction and transmission
+electron microscopy. This integration can enhance our understanding
+of the relationship between microstructural states and deformation
+mechanisms observed in AFM experiments. Additionally, our multimodal
+experiments could be used to inform and compare with multiscale computational
+modeling approaches (e.g., molecular and discrete dislocation dynamics,
+crystal-plasticity finite elements) aimed at both forward and inverse
+material property prediction. Finally,
+expanding the multimodal capabilities of AFM into a high-throughput
+and high-speed experimental framework holds significant potential
+in the context of data-driven approaches, where big-data-generating
+experiments are increasingly demanded. 
+,
+ 
+
+
+ Supplementary Material
+ 
+ Acknowledgments
+ This work was performed
+with funding from the CHIPS
+Metrology Program, part of CHIPS for America, National Institute of
+Standards and Technology, U.S. Department of Commerce.
+
+ The data underlying
+this study are openly available in NIST Public Data Repository at https://doi.org/10.18434/mds2-3867 .
+
+
+ The Supporting Information is
+available free of charge at https://pubs.acs.org/doi/10.1021/acsanm.5c05142 .
+ Additional information on the methodology and measurements
+(CR-AFM, single-step indentation, multistep indentation, AFM probe
+geometry) ( PDF )
+ 
+ G.S. and N.A.A.
+conceived the research. G.S. performed AFM measurements. N.A.A. performed
+data analysis, software, and visualization tasks. The manuscript was
+written with contributions from all authors. All authors have approved
+the final version of the manuscript.
+
+ Certain commercial equipment,
+software, instruments, and materials are identified in this document.
+Such identification does not imply recommendation or endorsement by
+the National Institute of Standards and Technology, nor does it imply
+that the products identified are necessarily the best available for
+the purpose.
+
+ The authors
+declare no competing financial interest.
+
+ References
+ 
+International Roadmap for Devices and Systems (IRDS TM )
+2023 Edition - IEEE IRDS TM 
+. https://irds.ieee.org/editions/2023 (accessed April 2025). 
+ Shalf J.. The Future
+of Computing beyond Moore’s Law. Philos.
+Trans. R. Soc. A: Math., Phys. Eng. Sci. 2020;378(2166):20190061. doi: 10.1098/RSTA.2019.0061. 
+ 
+
+Lau, J. H.
+
+Flip Chip,
+Hybrid Bonding, Fan-In, and Fan-Out Technology. In Flip Chip, Hybrid Bonding, Fan-In, and Fan-Out Technology; Springer, 2024. 
+ Lau J. H.. State of
+the Art of Cu-Cu Hybrid Bonding. IEEE Trans
+Compon Packaging Manuf Technol. 2024;14(3):376–396. doi: 10.1109/TCPMT.2024.3367985. 
+ Zhou P., Shi H., Wang L., Hou C., Meng L., Di H., Guo D.. A Quantitative Study
+of Removal Mechanism of Copper Polishing Based
+on a Single Pad-Asperity Polishing Test. Int.
+J. Mech Sci. 2023;239:107878. doi: 10.1016/j.ijmecsci.2022.107878. 
+ 
+
+Sart, C.
+; 
+Estevez, R.
+; 
+Fiori, V.
+; 
+Lhostis, S.
+; 
+Deloffre, E.
+; 
+Parry, G.
+; 
+Gonella, R.
+. 
+Cu/SiO2 Hybrid Bonding: Finite Element
+Modeling and Experimental Characterization. In 2016 6th Electronic System-Integration Technology Conference, ESTC
+2016; IEEE, 2016. 
+ 
+Diffusional Transformations. In Pergamon
+Materials Series; Pergamon, 2007; vol 12, pp 555–716. 
+ Beilliard Y., Estevez R., Parry G., McGarry P., Di Cioccio L., Coudrain P.. Thermomechanical Finite
+Element Modeling of Cu–SiO2
+Direct Hybrid Bonding with a Dishing Effect on Cu Surfaces. Int. J. Solids Struct. 2017;117:208–220. doi: 10.1016/j.ijsolstr.2016.02.041. 
+ Wlanis T., Hammer R., Ecker W., Lhostis S., Sart C., Gallois-Garreignot S., Rebhan B., Maier G. A.. Cu-SiO2 Hybrid Bonding
+Simulation Including Surface Roughness and Viscoplastic Material Modeling:
+A Critical Comparison of 2D and 3D Modeling Approach. Microelectronics Reliability. 2018;86:1–9. doi: 10.1016/j.microrel.2018.05.005. 
+ Xiao X., Yu L.. A Unified Statistical
+Model for Indentation Pop-in: Effects of Indenter
+Radius and Microstructure Density on the Transition from Homogeneous
+Nucleation to Heterogeneous Nucleation to Bulk Plasticity. Int. J. Plast. 2021;141:102980. doi: 10.1016/j.ijplas.2021.102980. 
+ Lin Y. K., Talignani A., Liu J., Liao X., Li Z., Yang J. M., Wang Y. M.. Probing the Onset of Microplasticity
+and Activation Volume of Additively Manufactured Metals. Scr Mater. 2025;258:116487. doi: 10.1016/j.scriptamat.2024.116487. 
+ Hardie C. D., Roberts S. G., Bushby A. J.. Understanding
+the Effects of Ion
+Irradiation Using Nanoindentation Techniques. J. Nucl. Mater. 2015;462:391–401. doi: 10.1016/j.jnucmat.2014.11.066. 
+ Kucharski S., Maj M., Ryś M., Petryk H.. Size Effects in Spherical Indentation
+of Single Crystal Copper. Int. J. Mech Sci. 2024;272:109138. doi: 10.1016/j.ijmecsci.2024.109138. 
+ Dub S. N., Lim Y. Y., Chaudhri M. M.. Nanohardness
+of High Purity Cu (111)
+Single Crystals: The Effect of Indenter Load and Prior Plastic Sample
+Strain. J. Appl. Phys. 2010;107(4):43510. doi: 10.1063/1.3290970/897205. 
+ Suresh S., Nieh T. G., Choi B. W.. Nano-Indentation
+of Copper Thin Films
+on Silicon Substrates. Scr Mater. 1999;41(9):951–957. doi: 10.1016/S1359-6462(99)00245-6. 
+ Chen J., Wang W., Qian L. H., Lu K.. Critical Shear Stress
+for Onset of Plasticity in a Nanocrystalline Cu Determined by Using
+Nanoindentation. Scr Mater. 2003;49(7):645–650. doi: 10.1016/S1359-6462(03)00398-1. 
+ Filleter T., Bennewitz R.. Nanometre-Scale
+Plasticity of Cu(100) Nanotechnology. 2007;18(4):044004. doi: 10.1088/0957-4484/18/4/044004. 
+ Jennings A. T., Li J., Greer J. R.. Emergence of Strain-Rate Sensitivity in Cu Nanopillars:
+Transition from Dislocation Multiplication to Dislocation Nucleation. Acta Mater. 2011;59(14):5627–5637. doi: 10.1016/j.actamat.2011.05.038. 
+ Kiener D., Hosemann P., Maloy S. A., Minor A. M.. In Situ Nanocompression
+Testing of Irradiated Copper. Nat. Mater. 2011;10(8):608–613. doi: 10.1038/nmat3055. 
+ Cackett A.
+J., Hardie C. D., Lim J. J. H., Tarleton E.. Spherical Indentation
+of Copper: Crystal Plasticity vs Experiment. Materialia (Oxf) 2019;7:100368. doi: 10.1016/j.mtla.2019.100368. 
+ Ogata S., Li J., Yip S.. Ideal Pure Shear Strength
+of Aluminum and Copper. Science (1979) 2002;298(5594):807–811. doi: 10.1126/science.1076652. 
+ Casals O., Očenášek J., Alcalá J.. Crystal Plasticity
+Finite Element Simulations of Pyramidal Indentation in Copper Single
+Crystals. Acta Mater. 2007;55(1):55–68. doi: 10.1016/j.actamat.2006.07.018. 
+ Garcia R.. Nanomechanical
+Mapping of Soft Materials with the Atomic Force Microscope: Methods. Theory and Applications. Chem. Soc. Rev. 2020;49(16):5850–5884. doi: 10.1039/D0CS00318B. 
+ Lin H. E., Tran D. P., Chiu W. L., Chang H. H., Chen C.. Enhanced Thermal
+Expansion with Nanocrystalline Cu in SiO2 Vias for Hybrid Bonding. Appl. Surf. Sci. 2024;672:160784. doi: 10.1016/j.apsusc.2024.160784. 
+ Lin H. E., Chiu W. L., Chang H. H., Yang Y. T., Chen C.. Revealing
+Challenges of Downscaling Effects on Cu Thermal Expansion in Advanced
+Hybrid Bonding Using In-Situ AFM. Appl. Surf.
+Sci. 2025;689:162539. doi: 10.1016/j.apsusc.2025.162539. 
+ 
+
+Zhang, X.
+; 
+Lyu, S.
+; 
+Beechem, T. E.
+; 
+Wei, T.
+. 
+Process
+Development and Characteristics
+of Small-Diameter (<3 Μm), Cobalt-Filled Through Silicon
+Vias (TSVs) for High-Density 3D Chip Stacking. In Proceedings - Electronic Components and Technology Conference; IEEE, 2025; pp 1290–1295. 
+ Lee M.-K., Shin M., Bao T., Song C.-G., Dawson D., Ihm D.-C., Ukraintsev V.. Applications of AFM in Semiconductor
+R&D and Manufacturing at 45 Nm Technology Node and Beyond. SPIE Proc. 2009;7272:848–859. doi: 10.1117/12.813389. 
+ Stan G., King S. W.. Atomic Force Microscopy
+for Nanoscale Mechanical Property
+Characterization. J. Vac. Sci. Technol., B:
+Nanotechnol. Microelectron.: Mater., Process., Meas., Phenom. 2020;38(6):60801. doi: 10.1116/6.0000544/588943. 
+ Stan G., Ciobanu C. V., King S. W.. Resolving the Subsurface
+Structure
+and Elastic Modulus of Layered Films via Contact Resonance Atomic
+Force Microscopy. ACS Appl. Mater. Interfaces. 2022;14(49):55238–55248. doi: 10.1021/ACSAMI.2C17962. 
+ Vlassak J. J., Nix W. D.. Measuring the Elastic
+Properties of Anisotropic Materials
+by Means of Indentation Experiments. J. Mech
+Phys. Solids. 1994;42(8):1223–1245. doi: 10.1016/0022-5096(94)90033-7. 
+ 
+
+Messemaeker, J. D.
+; 
+Jourdan, N.
+; 
+Nolmans, P.
+; 
+Kim, S.-W.
+; 
+Beyer, G.
+. 
+Texture Control
+for Cu Hybrid Bonding Pads Using a PVD Cu Process.
+In 2019 International Conference on Solid State Devices and
+Materials; SSDM, 2019. 
+ 
+
+Mirkarimi, L.
+; 
+Uzoh, C.
+; 
+Suwito, D.
+; 
+Lee, B.
+; 
+Fountain, G.
+; 
+Workman, T.
+; 
+Theil, J.
+; 
+Gao, G.
+; 
+Buckalew, B.
+; 
+Oberst, J.
+; 
+Ponnuswamy, T.
+. 
+The Influence of Cu Microstructure
+on Thermal Budget
+in Hybrid Bonding. In Proceedings - Electronic
+Components and Technology Conference; IEEE, 2022; pp 162–167. 
+ 
+
+Kim, S.
+; 
+Kang, P.
+; 
+Kim, T.
+; 
+Lee, K.
+; 
+Jang, J.
+; 
+Moon, K.
+; 
+Na, H.
+; 
+Hyun, S.
+; 
+Hwang, K.
+. 
+Cu
+Microstructure of High Density
+Cu Hybrid Bonding Interconnection. In Proceedings
+- Electronic Components and Technology Conference; IEEE, 2019; pp 636–641. 
+ Ohmura T., Wakeda M.. Pop-In Phenomenon as
+a Fundamental Plasticity Probed
+by Nanoindentation Technique. Materials 2021,
+Vol. 14, Page 1879. 2021;14(8):1879. doi: 10.3390/ma14081879. 
+ Ein-Eli Y., Starosvetsky D.. Review on Copper Chemical–Mechanical Polishing
+(CMP) and Post-CMP Cleaning in Ultra Large System Integrated (ULSI)An
+Electrochemical Perspective. Electrochim. Acta. 2007;52(5):1825–1838. doi: 10.1016/j.electacta.2006.07.039. 
+ Andersen P. J., Bentancur M. N., Moll A. J., Frary M.. Microstructural Effects
+during Chemical Mechanical Planarization of Copper. J. Electrochem. Soc. 2010;157(1):H120. doi: 10.1149/1.3254163. 
+ Pöhl F.. Pop-in Behavior
+and Elastic-to-Plastic Transition of Polycrystalline Pure Iron during
+Sharp Nanoindentation. Sci. Rep. 2019;9(1):1–12. doi: 10.1038/s41598-019-51644-5. 
+ 
+
+Johnson, K.
+
+Contact Mechanics; Cambridge University
+Press, 1987. 
+ Ogata S., Li J., Hirosaki N., Shibutani Y., Yip S.. Ideal Shear Strain
+of Metals and Ceramics. Phys. Rev. B. 2004;70:104104. doi: 10.1103/PhysRevB.70.104104. 
+ Gouldstone A., Koh H. J., Zeng K. Y., Giannakopoulos A. E., Suresh S.. Discrete and Continuous Deformation
+during Nanoindentation
+of Thin Films. Acta Mater. 2000;48(9):2277–2295. doi: 10.1016/S1359-6454(00)00009-4. 
+ Zhu T., Li J., Van Vliet K. J., Ogata S., Yip S., Suresh S.. Predictive
+Modeling of Nanoindentation-Induced Homogeneous Dislocation Nucleation
+in Copper. J. Mech Phys. Solids. 2004;52(3):691–724. doi: 10.1016/j.jmps.2003.07.006. 
+ Schuh C. A., Lund A. C.. Application of Nucleation
+Theory to the Rate Dependence of Incipient
+Plasticity during Nanoindentation. 2004;19:2152. doi: 10.1557/JMR.2004.0276. 
+ Schuh C. A., Mason J. K., Lund A. C.. Quantitative Insight into Dislocation
+Nucleation from High-Temperature Nanoindentation Experiments. Nature Materials 2005 4:8. 2005;4(8):617–621. doi: 10.1038/nmat1429. 
+ Wang L., Bei H., Li T. L., Gao Y. F., George E. P., Nieh T. G.. Determining
+the Activation Energies and Slip Systems for Dislocation Nucleation
+in Body-Centered Cubic Mo and Face-Centered Cubic Ni Single Crystals. Scr Mater. 2011;65(3):179–182. doi: 10.1016/j.scriptamat.2011.03.036. 
+ Baggio R., Salman O. U., Truskinovsky L.. Homogeneous
+Nucleation of Dislocations
+as a Pattern Formation Phenomenon. European
+Journal of Mechanics - A/Solids. 2023;99:104897. doi: 10.1016/j.euromechsol.2022.104897. 
+ 
+
+Sutton, A. P.
+; 
+Balluffi, R. W.
+. 
+Interfaces in Crystalline
+Materials; Clarendon Press, 1996; p 819. 
+ Hirth J. P.. The Influence
+of Grain Boundaries on Mechanical Properties. Metall. Trans. 1972;3(12):3047–3067. doi: 10.1007/BF02661312. 
+ 
+
+Hull, D.
+; 
+Bacon, D.
+J.
+. 
+Introduction to Dislocations; Elsevier, 2011; vol 37. 
+ Pathak S., Kalidindi S. R.. Spherical
+Nanoindentation Stress–Strain Curves. Materials Science and Engineering: R: Reports. 2015;91:1–36. doi: 10.1016/j.mser.2015.02.001. 
+ Donohue B. R., Ambrus A., Kalidindi S. R.. Critical
+Evaluation of the Indentation
+Data Analyses Methods for the Extraction of Isotropic Uniaxial Mechanical
+Properties Using Finite Element Models. Acta
+Mater. 2012;60(9):3943–3952. doi: 10.1016/j.actamat.2012.03.034. 
+ Niu R., An X., Li L., Zhang Z., Mai Y. W., Liao X.. Mechanical
+Properties and Deformation Behaviours of Submicron-Sized Cu–Al
+Single Crystals. Acta Mater. 2022;223:117460. doi: 10.1016/j.actamat.2021.117460. 
+ Ramachandramoorthy R., Kalácska S., Poras G., Schwiedrzik J., Edwards T. E. J., Maeder X., Merle T., Ercolano G., Koelmans W. W., Michler J.. Anomalous
+High Strain Rate Compressive
+Behavior of Additively Manufactured Copper Micropillars. Appl. Mater. Today. 2022;27:101415. doi: 10.1016/j.apmt.2022.101415. 
+ Janisch R., Mordehai D.. The Nanoindentation Puzzle: Putting
+the Pieces Together
+Using Simulations at Different Scales. MRS Bulletin
+2025 50:6. 2025;50(6):749–762. doi: 10.1557/s43577-025-00920-z. 
+ Jin H., Zhang E., Espinosa H. D.. Recent Advances and Applications
+of Machine Learning in Experimental Solid Mechanics: A Review. Appl. Mech. Rev. 2023;75(6):061001. doi: 10.1115/1.4062966. 
+ 
+Asylum Research.. 
+Vero Technical Note: QPDI Explained; Oxford Instruments, 2023. 
+ Virtanen P., Gommers R., Oliphant T. E., Haberland M., Reddy T., Cournapeau D., Burovski E., Peterson P., Weckesser W., Bright J., van der Walt S. J., Brett M., Wilson J., Millman K. J., Mayorov N., Nelson A. R. J., Jones E., Kern R., Larson E., Carey C. J., Polat İ., Feng Y., Moore E. W., VanderPlas J., Laxalde D., Perktold J., Cimrman R., Henriksen I., Quintero E. A., Harris C. R., Archibald A. M., Ribeiro A. H., Pedregosa F., van Mulbregt P., Vijaykumar A., Bardelli A. Pietro, Rothberg A., Hilboll A., Kloeckner A., Scopatz A., Lee A., Rokem A., Woods C. N., Fulton C., Masson C., Häggström C., Fitzgerald C., Nicholson D. A., Hagen D. R., Pasechnik D. V., Olivetti E., Martin E., Wieser E., Silva F., Lenders F., Wilhelm F., Young G., Price G. A., Ingold G. L., Allen G. E., Lee G. R., Audren H., Probst I., Dietrich J. P., Silterra J., Webber J. T., Slavič J., Nothman J., Buchner J., Kulick J., Schönberger J. L., de Miranda Cardoso J. V., Reimer J., Harrington J., Rodríguez J. L. C., Nunez-Iglesias J., Kuczynski J., Tritz K., Thoma M., Newville M., Kümmerer M., Bolingbroke M., Tartre M., Pak M., Smith N. J., Nowaczyk N., Shebanov N., Pavlyk O., Brodtkorb P. A., Lee P., McGibbon R. T., Feldbauer R., Lewis S., Tygier S., Sievert S., Vigna S., Peterson S., More S., Pudlik T., Oshima T., Pingel T. J., Robitaille T. P., Spura T., Jones T. R., Cera T., Leslie T., Zito T., Krauss T., Upadhyay U., Halchenko Y. O., Vázquez-Baeza Y.. SciPy 1.0: Fundamental Algorithms for Scientific Computing
+in Python. Nat. Methods. 2020;17(3):261–272. doi: 10.1038/S41592-019-0686-2. 
+ Pedregosa F., Michel V., Grisel O., Blondel M., Prettenhofer P., Weiss R., Vanderplas J., Cournapeau D., Varoquaux G., Gramfort A., Thirion B., Dubourg V., Passos A., Brucher M., Perrot M., Duchesnay E.. Scikit-Learn:
+Machine Learning in Python. J. Mach. Learn.
+Res. 2011;12:2825–2830. doi: 10.5555/1953048.2078195. 
+ 
+
+Stan, G.
+; 
+Alderete, N.
+. 
+Elastic-plastic AFM indentation
+on copper, 2025, National Institute
+of Standards and
+Technology, 10.18434/mds2-3867. 
+ 
+
+ Associated Data
+ Supplementary Materials
+ 
+ Data Availability Statement
+ The data underlying
+this study are openly available in NIST Public Data Repository at https://doi.org/10.18434/mds2-3867 .
+
+
+
+ 

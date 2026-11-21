@@ -1,0 +1,90 @@
+# Gap log - Comet Holding AG (COTN)
+
+One line per item. Forms: NOT DISCLOSED (read: ...) = read the document, item absent; NOT RETRIEVED (tried: ...) = could not obtain.
+Module prefixes: XS = CA20; RV = rival systems; IXM = x-ray modules; DV = divisions/IXS/PCT/CMD; A = group Module A; B = Module B.
+
+- [XS] NOT DISCLOSED (read: CA20 product page Technical Data; CA20 CoS Fab flyer 2024; CA20 launch pages 2023 and 2024): CA20 voxel size (only "<1 µm resolution" / defect size given)
+- [XS] NOT DISCLOSED (read: CA20 product page Technical Data; CA20 flyer): CA20 field of view at a stated resolution / magnification
+- [XS] NOT DISCLOSED (read: CA20 and CA16 product pages; launch pages; packaging- and wafer-inspection pages; Oct 2026 continuous-rotation blog): time per wafer, wafers per hour, or time per site/ROI for the CA20 (only "minutes", "seconds", and a 4-minute 3D TSV cycle for an unnamed system)
+- [XS] NOT DISCLOSED (read: all saved Comet sources, full-text search for SECS, GEM, E84, E87, FOUP, HSMS): SECS/GEM or other fab host-interface standard for CA20 / CA16
+- [XS] NOT DISCLOSED (read: CA20 product page Technical Data; CA20 flyer): 300 mm wafer handling for the CA20 (stated only for CA16)
+- [XS] NOT DISCLOSED (read: CA20 and CA16 pages, Dose Manager sections; launch pages; Stifel deck 2024; Oct 2026 blog): any X-ray dose figure per scan, default dose limit, or HBM / NAND-specific dose sensitivity
+- [XS] NOT DISCLOSED (read: CA16 product page; Comet Yxlon news index; SEMICON Europa 2026 event page): CA16 launch date
+- [XS] NOT DISCLOSED (read: H1 2026 half-year report IXS section; H1 2026 results presentation): names of the "new models tailored for specific uses" / "CA20 variants"
+- [XS] NOT DISCLOSED (read: Q3 2025 TU; CMD 2025 deck and release; FY2025 AR / results deck / release; H1 2026 report and deck; Q3 2026 TU): CA20 PO count after Nov 2025, installed base, revenue, customer names, regions, lab-vs-fab split
+- [XS] NOT RETRIEVED (tried: Comet Yxlon semiconductors page download "Semiconductor Inspection with X-ray (pdf)", behind a registration form): Comet semiconductor brochure
+- [XS] NOT RETRIEVED (tried: CA16 product page download "CA16 Flyer (English) (pdf)", behind a registration form): CA16 flyer
+- [XS] NOT RETRIEVED (tried: semi.org PDFs of Stephan Haferl SEMICON Europa 2023 and 2024 talks, and semi.org blogs "Comet Yxlon: the future of advanced packaging is x-ray" and "How AI-driven 3D X-ray inspection supports a sustainable inspection strategy for AI chips"; all HTTP 403): SEMI-hosted Comet material
+- [XS] NOT RETRIEVED (tried: pdf.directindustry.com cy-CA20-Brochure-en, HTTP 403; photonics.com product page, HTTP 403): third-party-hosted CA20 brochure
+- [XS] NOT RETRIEVED (tried: doi.org/10.1016/j.microrel.2025.115694; only a redirect stub was saved): Dreier, Nilsson, Hallstedt, Microelectronics Reliability 168 (2025) 115694
+- [XS] NOT RETRIEVED (tried: web searches combining CA20 / Comet Yxlon with SK hynix, Samsung, TSMC, Micron, ASE, Amkor, imec, Fraunhofer, HBM, hybrid bonding, ECTC, EPTC, IRPS, ISTFA, IMAPS, SEMI): any customer-authored paper, customer press release or independent trade report on CA20 use
+- [RV] NOT DISCLOSED (read: ZEISS NLX product page; ZEISS SMT releases 10 Jul, 2 Sep, 12 Oct 2026) - NLX resolution/voxel, field of view, time per wafer/site, first launch date, any customer or order.
+- [RV] NOT DISCLOSED (read: Comet Yxlon CA20 product page, Technical Data and Highlights) - CA20 time per wafer and explicit 300 mm wafer handling statement (XS agent owns CA20).
+- [RV] NOT RETRIEVED (tried: fetch.py on nordson.com product page AXM XM8000 Pro, semiconductor-metrology page, SEMICON West 2025 news, HBM blog 2026-05-06, AXM technology-talk blog, investors.nordson.com - all HTTP 403) - XM8000 Pro datasheet: resolution, FOV, throughput, IC-Safe dose detail.
+- [RV] NOT RETRIEVED (tried: sec.gov blocked, SEC_UA not set; Business Wire original timed out) - Nordson 10-K FY2025 segment text on X-ray demand for advanced packaging; earnings-call Q&A (paywalled transcripts).
+- [RV] NOT DISCLOSED (read: Nordson Q4 FY2025 release copy, SEMICON West 2025 PDF, I-Connect007 2026 release copy, Semiconductor Engineering HBM article) - any named Nordson X-ray customer or order for HBM / advanced packaging.
+- [RV] NOT RETRIEVED (tried: appliedmaterials.com Sigray Apex Hybrid page 403; sigray.com redirect to Applied 403; accessnewswire Apex Hybrid release 403) - Sigray acquisition date/terms, current Apex XCT-300 shipment status and customers.
+- [RV] NOT DISCLOSED (read: Sigray IEEE SCV deck Jul 2024, AVS deck Aug 2024, Apex Hybrid white paper, QD distributor pages) - Sigray dose statement for memory devices; named customers.
+- [RV] NOT DISCLOSED (read: Rigaku Advanced Packaging Metrology page, ONYX 3200 release, ECTC 2026 page, H1 2026 summary of results) - name, specs, launch date of Rigaku's in-line X-ray imaging tool for micro-bumps/TSVs; any X-ray imaging statement in earnings materials.
+- [RV] NOT RETRIEVED (tried: web search "XHENA" Rigaku; rigaku.com product listing pages) - any Rigaku product named XHENA.
+- [RV] NOT RETRIEVED (tried: bruker.com X200 URL en/de - redirects to XRDI overview without X200 content; no datasheet PDF found) - Bruker X200 current specs/status; search snippets only.
+- [RV] NOT RETRIEVED (tried: omron.com 2023/11 press release 403; fa.omron.co.jp AXI and SEMICON Japan 2025 pages 403) - VT-X950 official resolution (0.2 µm per search lead), launch date, wafer handling, customers.
+- [RV] NOT RETRIEVED (tried: kind.krx.co.kr disclosure 403; DART not attempted after KIND refusal; no SEC Co. product page found) - SEC primary filings for Micron orders and the OSAT Semi-scan Wafer contract; Semi-Scan spec sheet.
+- [RV] NOT DISCLOSED (read: Korea Daily XAVIS SEMICON Korea 2026 release) - Xscan-9860A FOV, throughput, wafer size, customers; XAVIS listing filings not tried.
+- [RV] NOT DISCLOSED (read: Unicomp FY2025 annual report, sections on IC/electronics and advanced packaging, p28) - Unicomp advanced-packaging CT model name, resolution, customers, orders.
+- [RV] NOT RETRIEVED (tried: web searches for Seamark/Zhengye 正业科技 wafer-level X-ray / HBM) - any Zhengye advanced-packaging X-ray product.
+- [RV] NOT RETRIEVED (tried: web searches combining Nikon, Hitachi, Waygate/Phoenix, Saki, Lumafield, Xwinsys, KLA, Nova, Camtek with wafer-level / HBM 3D X-ray) - no wafer-level 3D X-ray packaging product found for these makers.
+- [RV] NOT RETRIEVED (tried: web search on Vieworks/Rayence; pages not saved) - detector-supply relationships to HBM inspection-tool makers.
+- [RV] NOT DISCLOSED (read: Viscom iX7059 One product page) - Viscom wafer handling, launch date, semiconductor customers.
+- [IXM] NOT DISCLOSED (read: Comet Annual Reports FY2021-FY2025 note 04.3 "Sales with key accounts" and segment notes; H1 2026 half-year report note 03): IXM customer names and customer concentration (largest IXM customer, share of top-N).
+- [IXM] NOT DISCLOSED (read: Comet AR FY2025 note 04.1; H1 2026 report note 03.1): which segment buys IXM's intersegment sales (IXS vs PCT split).
+- [IXM] NOT DISCLOSED (read: CMD 2021/2022/2023/2025 decks; AR FY2023-FY2025 IXM sections; comet.tech/xray FYNE, FXE and need-for-speed pages): any Comet liquid-metal-jet or other kW-class high-brightness microfocus source plan.
+- [IXM] NOT DISCLOSED (read: comet.tech/xray FYNE 160 NF4 product page and FYNE focus topic): FYNE NF4 power in watts and brightness.
+- [IXM] NOT DISCLOSED (read: Comet AR FY2024 X-Ray Modules review): the name of the "new high-resolution x-ray module ... as small as 600 nanometers".
+- [IXM] NOT DISCLOSED (read: Zeiss ZXR-1 flyer, Jan 2026): the source maker for Xradia Versa models before the 730.
+- [IXM] NOT DISCLOSED (read: Comet Yxlon CA20 product page and CA20 launch news 2023/2024): which IXM tube type (FXE or FYNE) is in the CA20.
+- [IXM] NOT RETRIEVED (tried: fetch.py on bakerhughes.com/waygate-technologies/.../mesofocus-x-ray-tubes): it returned a 212-byte bot-check stub (saved as 2026-11-21_waygate_product-page-mesofocus-x-ray-tubes.html, but it is not the page). The Baker Hughes 25-year brochure PDF also failed. Waygate's own MesoFocus statement is cited via BINDT/OnestopNDT [S].
+- [IXM] NOT RETRIEVED (tried: fetch.py on yxlon.comet.tech/en/blog/450-kv-mesofocus-ct-part-1): connection failed (http 000).
+- [IXM] NOT RETRIEVED (tried: fetch.py on nordson.com Quadra 7 Pro page and investors.nordson.com 2016 Quadra launch release): 403. medicalexpo.com Quadra 7 Pro listing: 403.
+- [IXM] NOT RETRIEVED (tried: fetch.py on directindustry.com Unicomp microfocus source listing): 403. Whether Unicomp builds its sources in-house rests on a web-search lead only.
+- [IXM] NOT RETRIEVED (tried: web search for diondo's own d3 page naming Comet tubes): no diondo-side statement found.
+- [IXM] NOT RETRIEVED (tried: web search "Comet" with Smiths Detection / Rapiscan / Nuctech): no named security OEM buyer found, although Security was 17% of IXM external sales in FY2025.
+- [IXM] NOT RETRIEVED (tried: web search for Lumafield Neptune and RX Solutions EasyTom source suppliers): neither names its tube maker.
+- [IXM] NOT RETRIEVED (tried: grep of the saved Monoist article on the Omron VT-X950 for a tube or source vendor; Saki not searched): source supplier unknown for Omron and Saki.
+- [IXM] NOT DISCLOSED (read: comet.tech/xray product listing pages for FXE micro/nano and Xplorer, saved 2026-11-21): the pages render by script, and the saved text has no specs.
+- [DV] Divisional incoming orders, order backlog and book-to-bill: NOT DISCLOSED (read: half-year reports 2022-2026 financial review and APM sections; results presentations H1 2022-H1 2026; trading updates Q1/Q3 2025-2026).
+- [DV] Amount of PCT one-time cost-reduction expenses and San Jose closure costs in H1 2023: NOT DISCLOSED (read: HY23 financial review; HY24 financial review; AR2023 PCT review).
+- [DV] IXS restructuring cost, headcount reduction and sites affected beyond Hamburg: NOT DISCLOSED (read: AR2025 strategy section and notes 05, 06, 08, 23; FY2025 results release; HY26 financial review and notes).
+- [DV] Division split of the CHF 4.5m H1 2026 one-time costs: NOT DISCLOSED (read: HY26 financial review and segment note 03.1; H1 2026 results presentation).
+- [DV] Segment allocation of the ~CHF 2.1m FY2025 fire insurance recovery: NOT DISCLOSED (read: AR2025 notes 05 and 08).
+- [DV] IXS semiconductor (vs "Electronics") share of sales or orders, and CA20/advanced-packaging share: NOT DISCLOSED (read: AR2021-AR2025 IXS market charts; CMD 2023 and 2025 decks; HY26).
+- [DV] Identity of PCT's largest customer and any second >10% customer: NOT DISCLOSED (read: AR2021-AR2025 note "Sales with key accounts").
+- [DV] Synertia RF generator market share achieved vs ~10% 2025 target: NOT DISCLOSED (read: AR2025, CMD 2025 deck, FY2025 results presentation).
+- [DV] IXS headcount 2025: NOT DISCLOSED (read: AR2025 segment note 04.1, which no longer lists employees by division).
+- [DV] IXS impairment-test growth assumption at YE2025: NOT DISCLOSED (read: AR2025 note 19 goodwill).
+- [DV] Q1 2022, Q3 2022 and Q1 2023 trading updates: NOT RETRIEVED (tried: comet.tech news URLs redirect to /news; archive.org availability API; web search for newswire copies).
+- [DV] Q3 2023, Q1 2024, Q3 2024 trading update originals: NOT RETRIEVED (tried: comet.tech URLs 301 to /news; Wayback snapshots exist but web.archive.org connections reset; used newswire copies as [S] DV-160..162).
+- [DV] Third-party evidence on PCT share vs Advanced Energy / MKS (AE/MKS 10-K, analyst notes): NOT RETRIEVED (tried: web search; sec.gov blocked without SEC_UA).
+- [DV] PCT customer page naming Lam Research: NOT RETRIEVED (tried: web search snippet only, pct.comet.tech/en/news not saved).
+- [A] NOT DISCLOSED (read: Half-Year Reports 2025 and 2026, notes; trading updates Q1/Q3 2025-2026): order backlog in CHF at 30 June or quarter ends.
+- [A] NOT DISCLOSED (read: Half-Year Reports 2025 and 2026, balance sheet and notes): inventory split raw / WIP / finished goods at half-year.
+- [A] NOT DISCLOSED (read: Half-Year Reports 2025 and 2026): purchase obligations at half-year.
+- [A] NOT DISCLOSED (read: trading updates Q3 2025, Q1 2026, Q3 2026): quarterly EBITDA or gross margin.
+- [A] NOT DISCLOSED (read: trading updates and Annual Report 2025): Q4 2025 net sales as a stated figure (derived only) and FY2025 order intake (derived only).
+- [A] NOT DISCLOSED (read: Annual Report 2025 note 3 and 4.2; Half-Year Report 2026 note 03.2): Korea and Taiwan sales; China sales for any half-year.
+- [A] NOT DISCLOSED (read: Annual Report 2025 note 4.3): customers other than the largest above 10%, and the largest customer's name.
+- [A] NOT DISCLOSED (read: Annual Report 2025 note 3; H1 2026 report; CMD 2025 press release): share of sales tied to AI, HBM or advanced packaging, or a group semiconductor share for FY2025.
+- [A] NOT DISCLOSED (read: Annual Report 2025 notes 26 and 28; Annual Report 2022 outlook and note 14): quantified effect of US export controls (EAR/Entity List) or Swiss/EU dual-use licensing on sales.
+- [A] NOT DISCLOSED (read: Annual Report 2025 strategy and notes): cost of the IXS restructuring started in Q4 2025.
+- [A] NOT DISCLOSED (read: Half-Year Report 2023 PCT section; Annual Report 2023 review): CHF amount of H1 2023 one-time cost-reduction and San Jose closure costs.
+- [A] NOT DISCLOSED (read: Annual Report 2025 note 20): definition of the 3:1 leverage covenant.
+- [A] NOT DISCLOSED (read: Annual Report 2025 note 26; Half-Year Report 2026 note 07): percentage of the XP Power contingent success fee.
+- [A] NOT RETRIEVED (tried: comet.tech /en/news/2022/10, 2023/4, 2023/10, 2024/4, 2024/10 URLs - now redirect to a news listing; web.archive.org snapshots via fetch.py - connection reset; eqs-news.com - JavaScript shell only): issuer copies of the 2022-2024 trading updates (newswire copies used as [S]).
+- [A] NOT RETRIEVED (tried: comet.tech downloads list - reports start in 2013): FY2008-FY2010 reports for the 2009 downturn.
+- [A] NOT RETRIEVED (tried: web search only): Q1 2022 trading update (not needed for the guidance count).
+- [B] NOT DISCLOSED (read: Comet Q3 2026 trading update corporate calendar; comet.tech corporate calendar page): dates of the H1 2027 results and Q3 2027 trading update
+- [B] NOT DISCLOSED (read: Comet H1 2026 report note 07 and XP Power appeal release Jul 2026): date of the XP Power retrial
+- [B] NOT RETRIEVED (tried: nothing beyond web leads in this run): independent peer-reviewed data on X-ray total-ionising-dose damage thresholds for DRAM/HBM/NAND (needed to test the dose claim; customer-side literature not searched systematically)
+- [B] NOT RETRIEVED (tried: git push): 2026-01-09_comet_capital-markets-day-2025.pdf (142 MB) is kept locally but not in the repository (GitHub 100 MB limit); its extracted text and sha256 are committed
+
+Total: 83 lines.

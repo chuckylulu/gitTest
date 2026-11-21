@@ -1,0 +1,1853 @@
+<!DOCTYPE HTML>
+<html lang="en-JP">
+	<head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <meta name="format-detection" content="telephone=no"/>
+   <title>Process technology/Measurability analysis of the HAR structure in 3D memory by T-SAXS simulation | KIOXIA - Japan (English)</title>
+   
+   <meta name="description" content="In 3D memory manufacturing, extremely small diameter and extremely deep holes (high aspect ratio) are processed. For this control, a nondestructive and highly accurate measurement method is required. We analyzed the measurement capability of T-SAXS (transmission small angle X-ray scattering) by simulation. We confirmed that T-SAXS can measure structures of 0.1um diameter and 30um depth with &lt;1% accuracy.  This achievement is important for realizing future 3D memory."/>
+   <meta name="template" content="t-std006"/>
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+      
+
+   
+
+   
+      <script type="text/javascript" src="https://cdn-apac.onetrust.com/consent/3813bdbd-0707-4c51-acb1-d2ba140f4755/OtAutoBlock.js"></script>
+      <script src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="3813bdbd-0707-4c51-acb1-d2ba140f4755"></script>
+      <script type="text/javascript">
+      function OptanonWrapper() { }
+      </script>
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+   
+
+<meta property="og:title" content="Process technology/Measurability analysis of the HAR structure in 3D memory by T-SAXS simulation | KIOXIA - Japan (English)"/>
+<meta property="og:description" content="In 3D memory manufacturing, extremely small diameter and extremely deep holes (high aspect ratio) are processed. For this control, a nondestructive and highly accurate measurement method is required. We analyzed the measurement capability of T-SAXS (transmission small angle X-ray scattering) by simulation. We confirmed that T-SAXS can measure structures of 0.1um diameter and 30um depth with &lt;1% accuracy.  This achievement is important for realizing future 3D memory."/>
+<meta property="og:url" content="https://www.kioxia.com/en-jp/rd/technology/topics/topics-29.html"/>
+
+<meta property="og:image" content="https://www.kioxia.com/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/shared_og.png"/>
+
+
+
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="KIOXIA Corporation"/>
+<meta name="twitter:card" content="summary"/>
+
+
+ 
+   
+   
+   
+<link rel="canonical" href="https://www.kioxia.com/en-jp/rd/technology/topics/topics-29.html"/>
+
+
+
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/favicons/favicon.ico"/>
+
+
+<link rel="icon" type="image/png" href="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/favicons/android-chrome-192x192.png" sizes="192x192"/>
+
+
+<link rel="apple-touch-icon" href="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/favicons/apple-touch-icon.png"/>
+
+
+
+
+<link rel="alternate" hreflang="ja-jp" href="https://www.kioxia.com/ja-jp/rd/technology/topics/topics-29.html"/>
+
+<link rel="alternate" hreflang="en-jp" href="https://www.kioxia.com/en-jp/rd/technology/topics/topics-29.html"/>
+
+<link rel="alternate" hreflang="x-default" href="https://www.kioxia.com/ja-jp/rd/technology/topics/topics-29.html"/>
+
+
+   
+    
+    
+
+    
+
+    
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/kioxia-libs/clientlibs/clientlib-base.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/kioxia-libs/clientlibs/kioxia.min.css" type="text/css">
+
+
+
+    
+
+
+   
+   
+   
+<script src="//assets.adobedtm.com/a30ff79576ae/764dbe92ca13/launch-71ef84b8c2d3.min.js" async></script>
+   <script src="https://cache.dga.jp/s/tsbmb_api/search_tool_n3.js"></script>
+   
+
+<script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("%7B%0A%20%20%20%22RT%22%3A%20%7B%0A%20%20%20%20%20%20%22cookie%22%3A%20%22%22%0A%20%20%20%7D%0A%7D");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="RT8NU-UQRX3-BY6Z7-T7H45-YHAT7",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"RT8NU-UQRX3-BY6Z7-T7H45-YHAT7",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="ubhwveaxzcoem2ybl55q-f-5f851bd97-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"886649","ak.ai":parseInt("566466",10),"ak.ol":"0","ak.cr":11,"ak.ipv":4,"ak.proto":"h2","ak.rid":"59023bf7","ak.r":44386,"ak.a2":e,"ak.m":"dsca","ak.n":"essl","ak.cport":8192,"ak.gh":"23.192.164.78","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1795252091","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==dbXNuNzbbSBiZJsjaIQoj4mmnKty2gRtjTx7Tqn6KtRGedbI8wLBrvZ9VAqlJrZAp8RKmMEZcd5r5R7UazOq8F7HJywfU98FJ025t/vhrYMqY1KelkybdMlpQ4Zu6QS61XoW/eg1+L2jVKxs1CADPL3SzZkAw0ufNiOwLVtPd2LepoXhVbIO0Pp/CZD9gtS46/OUunpNP+qCtGvxe5DuokF4xZdQYxbC/7XVNq4ypMFu0f4HzVWzrwt9N9EBbfPAw40pn/ZbzDQJ8TI0k5qP5ZAFiQa9+bRkrihCAtltGrT4IEc7g+dOSCtEkQTBhIeiZGLTB1y0lfWg7De7h/9gUUfn2i/qIP9fpWUrXYerAoQg9ZdiyrRnnT5swqLP6ZRYdzKx4HNORMH287mLg/lg929LGavikY18L2m0R+dSBGE=","ak.pv":"89","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+	<body class="page_t-std006 page basicpage" id="page-6d211838f6">
+		
+
+
+<noscript>
+	<p class="noscriptMessage">The JavaScript function for the browser is disabled. Some functions of this website will not work properly.</p>
+</noscript>
+
+<!-- 【グローバル共通】緊急のお知らせ -->
+
+<!-- /【グローバル共通】緊急のお知らせ -->
+
+<!-- header -->
+
+<!-- I-SEARCH_EXCEPT_TAG_START -->
+
+<!-- 2025-1-28 zh-hkをen-hkに変更 -->
+
+<div class="c-cmn002">
+	<header class="headerArea" role="banner">
+		<div class="header">
+			<div class="header__inner">
+				<div class="header__left">
+					<div class="header__logo"><a href="/en-jp/top.html"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/kioxia_logo.svg" alt="KIOXIA"/></a></div>
+					<div class="header__heading">
+						
+						<div class="header__heading--lv1">KIOXIA Corporation</div>
+					</div>
+				</div>
+				<!-- PC用 -->
+				<div class="header__center desktop">
+					<div class="header__center__left">
+						<div class="header__contact">
+							<a href="/en-jp/contact.html">Contact Us</a>
+						</div>
+						<!-- PC 言語切り替え -->
+						<div class="header__language">
+							<button type="button" data-dropdown="language" data-dropdown-type="header" aria-controls="language">Japan (English)</button>
+							<div class="dropMenu" data-dropdown-id="language" id="language">
+								<div class="wrapper">
+									<div class="dropMenu__language">
+										<p class="dropMenu__heading">Select your country or region (language)</p>
+										<dl>
+											<dt>Japan</dt>
+											<dd>
+												<ul class="dropMenu__language__list">
+													<li><a href="https://www.kioxia.com/ja-jp/top.html" lang="ja">Japan (日本語)</a></li>
+													<li><a href="https://www.kioxia.com/en-jp/top.html" lang="en">Japan (English)</a></li>
+												</ul>
+											</dd>
+											<dt>Asia Pacific</dt>
+											<dd>
+												<ul class="dropMenu__language__list">
+													<li><a href="https://www.kioxia.com.cn/zh-cn/top.html" lang="zh">China (简体中文)</a></li>
+
+													<!-- 2025-1-28 Englishに変更 -->
+													<li><a href="https://hk.kioxia.com/en-hk/top.html" lang="zh">Hong Kong (English)</a></li>
+
+													<li><a href="https://kr.kioxia.com/ko-kr/top.html" lang="ko">Republic of Korea (한국어)</a></li>
+													<li><a href="https://tw.kioxia.com/zh-tw/top.html" lang="zh">Taiwan (繁體中文)</a></li>
+													<li><a href="https://apac.kioxia.com/en-apac/top.html" lang="en">Asia Pacific (English)</a></li>
+												</ul>
+											</dd>
+											
+											<dt>Americas</dt>
+											<dd>
+												<ul class="dropMenu__language__list">
+													<li><a href="https://americas.kioxia.com/pt-br/top.html" lang="pt">Brazil (Português)</a></li>
+													<li><a href="https://americas.kioxia.com/en-ca/top.html" lang="en">Canada (English)</a></li>
+													<li><a href="https://americas.kioxia.com/en-us/top.html" lang="en">United States (English)</a></li>
+													<li><a href="https://americas.kioxia.com/es-lar/top.html" lang="es">Americas (Español)</a></li>
+												</ul>
+											</dd>
+											<dt>Europe</dt>
+											<dd>
+												<ul class="dropMenu__language__list">
+													<li><a href="https://europe.kioxia.com/fr-fr/top.html" lang="fr">France (Français)</a></li>
+													<li><a href="https://europe.kioxia.com/de-de/top.html" lang="de">Germany (Deutsch)</a></li>
+													<li><a href="https://europe.kioxia.com/el-gr/top.html" lang="el">Greece (Ελληνική)</a></li>
+													<li><a href="https://europe.kioxia.com/hu-hu/top.html" lang="hu">Hungary (Magyar)</a></li>
+													<li><a href="https://europe.kioxia.com/it-it/top.html" lang="it">Italy (Italiano)</a></li>
+													<li><a href="https://europe.kioxia.com/nl-nl/top.html" lang="nl">Netherlands (Nederlands)</a></li>
+													<li><a href="https://europe.kioxia.com/pl-pl/top.html" lang="pl">Poland (Polski)</a></li>
+													<li><a href="https://europe.kioxia.com/pt-pt/top.html" lang="pt">Portugal (Português)</a></li>
+													<!-- <li><a href="https://europe.kioxia.com/ru-ru/top.html" lang="ru" class="">Russia (Pусский)</a></li> -->
+													<li><a href="https://europe.kioxia.com/es-es/top.html" lang="es">Spain (Español)</a></li>
+													<li><a href="https://europe.kioxia.com/tr-tr/top.html" lang="tr">Turkey (Türkçe)</a></li>
+													<li><a href="https://europe.kioxia.com/en-europe/top.html" lang="en">Europe (English)</a></li>
+												</ul>
+											</dd>
+											<dt>Middle East &amp; Africa</dt>
+											<dd>
+												<ul class="dropMenu__language__list">
+													<li><a href="https://europe.kioxia.com/en-mea/top.html" lang="en">Middle East &amp; Africa (English)</a></li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+									<div class="buttonClose desktop">
+										<button type="button" data-dropdown-close="">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /PC 言語切り替え -->
+					</div>
+
+					<!-- PC キーワード入力 -->
+					<div class="header__search">
+						 <button type="button" data-dropdown="search" data-dropdown-type="header" aria-controls="search"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_search.svg" alt="Search"/></button>
+						<div class="dropMenu" data-dropdown-id="search" id="search">
+							<div class="wrapper">
+								<div class="dropMenu__search">
+									<input id="searchdesktop" type="text" size="50" class="iSearchAssist" placeholder="Keyword"/>
+									<button type="button"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_search.svg" alt="Search"/></button>
+								</div>
+								<div class="buttonClose desktop">
+									<button type="button" data-dropdown-close="">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /PC キーワード入力 -->
+				</div>
+				<!-- PC KHC 切替 -->
+				<div class="header__switch desktop">
+					<button type="button" data-dropdown="switch" data-dropdown-type="header" aria-controls="switch"><span class="bold">Corporate / Investor Relations</span></button>
+					<div class="dropMenu" data-dropdown-id="switch" id="switch">
+						<div class="wrapper">
+							<div class="dropMenu__switch">
+								<p class="lead">For KIOXIA Group corporate / investor relations information, please visit the KIOXIA Holdings Corporation official website.</p>
+								<div class="c-std004">
+									<div class="button button--textRegular">
+										<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/top.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+											<span class="cmp-button__text">About KIOXIA Group</span>
+											<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+										</a>
+									</div>
+									<div class="button button--textRegular">
+										<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/ir.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+											<span class="cmp-button__text">Investor Relations</span>
+											<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+										</a>
+									</div>
+									<div class="button button--textRegular">
+										<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/sustainability.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+											<span class="cmp-button__text">Sustainability</span>
+											<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="buttonClose desktop">
+								<button type="button" data-dropdown-close="">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /PC KHC 切替 -->
+				<!-- /PC用 -->
+				<!-- SP用 -->
+				<button type="button" class="header__menuButton mobile" data-sp-menu-trigger=""><span></span><span></span><span></span></button>
+				<!-- /SP用 -->
+			</div>
+		</div>
+
+		<!-- グローバルメニュー -->
+		<nav class="globalNavi" role="navigation" data-sp-menu="" aria-label="Main Menu">
+			<div class="globalNavi__wrap">
+				<div class="globalNavi__inner">
+					<ul class="globalNavi__list">
+						<!-- LV2 -->
+
+						<li>
+
+							<button type="button" class="next" data-dropdown="DATA-ID-1" data-dropdown-type="nav" data-dropdown-href="/en-jp/business.html" aria-controls="DATA-ID-1"><span>Business Products</span></button>
+							<div class="dropMenu" data-dropdown-id="DATA-ID-1" id="DATA-ID-1">
+								<div class="wrapper">
+									<ul class="dropMenu--level1">
+										<li>
+											<div class="back mobile"><button type="button" data-sp-menu-back="">Back</button></div>
+											<div class="banner"><a href="/en-jp/business.html"><span>Business Products</span></a></div>
+											<ul class="dropMenu--level2 c-col005-s">
+												<!-- LV3 -->
+											
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/shared/business/memory/img/memory_link_009.png" alt=""/><a class="next " href="/en-jp/business/memory.html" data-sp-menu-next=""><span>Memory</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/business/memory.html">Memory</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/business/memory/bics.html">3D Flash Memory “BiCS FLASH™”</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/memory/ufs.html">UFS &amp; e-MMC for Consumer &amp; Industrial</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/memory/automotive.html">UFS for Automotive</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/memory/xlflash.html">XL-FLASH™ | Storage Class Memory (SCM)</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/shared/business/ssd/img/ssd_link_008.png" alt=""/><a class="next " href="/en-jp/business/ssd.html" data-sp-menu-next=""><span>SSD</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/business/ssd.html">SSD</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/business/ssd/enterprise-ssd.html">Enterprise SSD</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/ssd/data-center-ssd.html">Data Center SSD</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/ssd/client-ssd.html">Client SSD</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/ssd/document.html">Download SSD Documents</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/shared/business/application/img/application_link_011.png" alt=""/><a class="next " href="/en-jp/business/application.html" data-sp-menu-next=""><span>Applications</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/business/application.html">Applications</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/business/application/ai.html">AI (Artificial Intelligence) Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/enterprise-storage.html">Enterprise Storage Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/data-center-storage.html">Data Center Storage Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/client-computing.html">Client Computing Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/mobile.html">Mobile Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/automotive.html">Automotive Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/consumer.html">Consumer Applications</a></li>
+														
+                                     
+														<li><a href="/en-jp/business/application/industrial.html">Industrial Applications</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><a class="next " href="/en-jp/business/buy.html" data-sp-menu-next=""><span>Where to Purchase</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/business/buy.html">Where to Purchase</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/business/buy/global-sales.html">Global Sales Offices</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+											</ul>
+										</li>
+									</ul>
+									<div class="buttonClose desktop">
+										<button type="button" data-dropdown-close="">Close</button>
+									</div>
+								</div>
+							</div>
+
+
+						</li>
+
+						<li>
+
+
+							<a href="/ja-jp/personal.html" class="globalNavi__anchor"><span>Personal Products (Japanese Website)</span></a>
+
+						</li>
+
+						<li>
+
+							<button type="button" class="next" data-dropdown="DATA-ID-3" data-dropdown-type="nav" data-dropdown-href="/en-jp/rd.html" aria-controls="DATA-ID-3"><span>Research and Technology Development</span></button>
+							<div class="dropMenu" data-dropdown-id="DATA-ID-3" id="DATA-ID-3">
+								<div class="wrapper">
+									<ul class="dropMenu--level1">
+										<li>
+											<div class="back mobile"><button type="button" data-sp-menu-back="">Back</button></div>
+											<div class="banner"><a href="/en-jp/rd.html"><span>Research and Technology Development</span></a></div>
+											<ul class="dropMenu--level2 c-col005-s">
+												<!-- LV3 -->
+											
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/rd/vision/img/vision_link_002.png" alt=""/><a class="next " href="/en-jp/rd/vision.html" data-sp-menu-next=""><span>Research and Technology Development Policy</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/rd/vision.html">Research and Technology Development Policy</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/rd/vision/message.html">CTO Message</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/vision/talent-development.html">Senior Fellow Messages / Engineer Development</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/rd/technology/img/technology_link_008.png" alt=""/><a class="next " href="/en-jp/rd/technology.html" data-sp-menu-next=""><span>Technology and Innovation at KIOXIA</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/rd/technology.html">Technology and Innovation at KIOXIA</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/rd/technology/cba.html">What is CMOS directly Bonded to Array (CBA) Technology?</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/technology/bics-flash.html">What is the 3D Flash Memory “BiCS FLASH™”?</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/technology/nand-flash.html">What is NAND Flash Memory?</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/technology/multi-level-cell.html">What is Multi-level Cell Technology Realizing Larger Capacity Flash Memory?</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/technology/topics.html">Technology Topics</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/technology/history.html">Technology Development History</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/technology/award-paper.html">Awards and Research Papers</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/rd/organization/img/organization_link_003.png" alt=""/><a class="next " href="/en-jp/rd/organization.html" data-sp-menu-next=""><span>R&amp;D Organization and Locations</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/rd/organization.html">R&amp;D Organization and Locations</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/rd/organization/memory-technology-rd.html">Frontier Technology R&amp;D Institute</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/organization/amdc.html">Advanced Memory Development Center</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/organization/process.html">KIOXIA's Product Development Process</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/rd/collaboration/img/collaboration_link_002.png" alt=""/><a class="next " href="/en-jp/rd/collaboration.html" data-sp-menu-next=""><span>Academic Collaboration</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/rd/collaboration.html">Academic Collaboration</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/rd/collaboration/memory-topics02.html">BuzzCam: Ecological Monitoring Through Outdoor Acoustic and Environmental Sensing</a></li>
+														
+                                     
+														<li><a href="/en-jp/rd/collaboration/memory-topics01.html">Challenging to the Brain with Data Storage</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/rd/movie/img/movie_link_001.png" alt=""/><a href="/en-jp/rd/movie.html"><span>Explanatory Video on Flash Memory-related Technologies</span></a></div>
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/rd/glossary/img/glossary_link_001.png" alt=""/><a href="/en-jp/rd/glossary.html"><span>Technical Glossary</span></a></div>
+												</li>
+                                 
+											</ul>
+										</li>
+									</ul>
+									<div class="buttonClose desktop">
+										<button type="button" data-dropdown-close="">Close</button>
+									</div>
+								</div>
+							</div>
+
+
+						</li>
+
+						<li>
+
+							<button type="button" class="next" data-dropdown="DATA-ID-0" data-dropdown-type="nav" data-dropdown-href="/en-jp/about.html" aria-controls="DATA-ID-0"><span>About KIOXIA Corporation</span></button>
+							<div class="dropMenu" data-dropdown-id="DATA-ID-0" id="DATA-ID-0">
+								<div class="wrapper">
+									<ul class="dropMenu--level1">
+										<li>
+											<div class="back mobile"><button type="button" data-sp-menu-back="">Back</button></div>
+											<div class="banner"><a href="/en-jp/about.html"><span>About KIOXIA Corporation</span></a></div>
+											<ul class="dropMenu--level2 c-col005-s">
+												<!-- LV3 -->
+											
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/about/img/message_link_002.png" alt=""/><a href="/en-jp/about/message.html"><span>Message from the CEO</span></a></div>
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/about/img/about-us_link_002.png" alt=""/><a class="next " href="/en-jp/about/about-us.html" data-sp-menu-next=""><span>Company Information</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/about/about-us.html">Company Information</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/about/group.html">Group Companies</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/location.html">Locations</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/procure.html">Procurement</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/reliability.html">Reliability Information</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/health-and-safety.html">Health and Safety</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/about-us/ir.html">Investor Relations</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/shared/news/img/news_link_001.png" alt=""/><a href="/en-jp/news.html"><span>News</span></a></div>
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/about/yokkaichi/img/yokkaichi_link_012.png" alt=""/><a class="next " href="/en-jp/about/yokkaichi.html" data-sp-menu-next=""><span>Yokkaichi Plant</span></a></div>
+													<ul class="dropMenu--level3">
+														<li class="back mobile"><button type="button" data-sp-menu-back="">Back</button></li>
+														<li class="mobile"><a href="/en-jp/about/yokkaichi.html">Yokkaichi Plant</a></li>
+														<!-- LV4 -->
+												
+														<li><a href="/en-jp/about/yokkaichi/about.html">Overview / Access</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/yokkaichi/message.html">Message from the General Manager</a></li>
+														
+                                     
+														<li><a href="/en-jp/about/yokkaichi/smart-factory.html">Smart Factory</a></li>
+														
+                                     
+														
+													</ul>
+                                    
+													
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><a href="/en-jp/event.html"><span>Events</span></a></div>
+												</li>
+                                 
+												<li class="col--box">
+                                    
+													<div class="banner"><img class="desktop" src="/content/dam/kioxia/ja-jp/about/kitakami/img/kitakami_link_002.png" alt=""/><a href="/en-jp/about/kitakami.html"><span>Kitakami Plant (KIOXIA Iwate Corporation)</span></a></div>
+												</li>
+                                 
+											</ul>
+										</li>
+									</ul>
+									<div class="buttonClose desktop">
+										<button type="button" data-dropdown-close="">Close</button>
+									</div>
+								</div>
+							</div>
+
+
+						</li>
+
+						<li>
+
+
+							<a href="/en-jp/job.html" class="globalNavi__anchor"><span>Careers</span></a>
+
+						</li>
+
+						<li>
+
+
+							<a href="/en-jp/insights.html" class="globalNavi__anchor"><span>KIOXIA Insights</span></a>
+
+						</li>
+
+					</ul>
+					<!-- SP用 -->
+					<div class="mobile">
+						<!-- ドロップダウン KHC 切替 -->
+						<div class="globalNavi__switch">
+							<button type="button" data-dropdown="switch-sp" data-dropdown-type="nav" aria-controls="switch-sp"><span class="bold">Corporate / Investor Relations</span></button>
+							<div class="dropMenu" data-dropdown-id="switch-sp" id="switch-sp">
+								<div class="wrapper">
+									<div class="back"><button type="button" data-sp-menu-back="">Back</button></div>
+									<div class="dropMenu__switch">
+										<p class="lead">For KIOXIA Group corporate / investor relations information, please visit the KIOXIA Holdings Corporation official website.</p>
+										<div class="c-std004">
+											<div class="button button--textRegular">
+												<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/top.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+													<span class="cmp-button__text">About KIOXIA Group</span>
+													<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+												</a>
+											</div>
+											<div class="button button--textRegular">
+												<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/ir.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+													<span class="cmp-button__text">Investor Relations</span>
+													<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+												</a>
+											</div>
+											<div class="button button--textRegular">
+												<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/sustainability.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+													<span class="cmp-button__text">Sustainability</span>
+													<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /ドロップダウン KHC 切替 -->
+						<div class="globalNavi__other">
+							<div class="globalNavi__contact">
+								<a href="/en-jp/contact.html">Contact Us</a>
+							</div>
+							<!-- ドロップダウン 言語切り替え -->
+							<div class="globalNavi__language">
+								<button type="button" data-dropdown="language-sp" data-dropdown-type="nav" aria-controls="language-sp">Japan (English)</button>
+								<div class="dropMenu" data-dropdown-id="language-sp" id="language-sp">
+									<div class="wrapper">
+										<div class="back"><button type="button" data-sp-menu-back="">Back</button></div>
+										<div class="dropMenu__language">
+											<p class="dropMenu__heading">Select your country or region (language)</p>
+											<div data-mod-accordion='{ &quot;singleExpansion&quot;: true }'>
+												<dl class="mod-accordion__item">
+													<dt>
+														<button type="button" class="mod-accordion__trigger">Japan</button>
+													</dt>
+													<dd class="mod-accordion__panel">
+														<ul class="dropMenu__language__list">
+															<li><a href="https://www.kioxia.com/ja-jp/top.html" lang="ja">Japan (日本語)</a></li>
+															<li><a href="https://www.kioxia.com/en-jp/top.html" lang="en">Japan (English)</a></li>
+														</ul>
+													</dd>
+												</dl>
+												<dl class="mod-accordion__item">
+													<dt>
+														<button type="button" class="mod-accordion__trigger">Asia Pacific</button>
+													</dt>
+													<dd class="mod-accordion__panel">
+														<ul class="dropMenu__language__list">
+															<li><a href="https://www.kioxia.com.cn/zh-cn/top.html" lang="zh">China (简体中文)</a></li>
+
+															<!-- 2025-1-28 Englishに変更 -->
+															<li><a href="https://hk.kioxia.com/en-hk/top.html" lang="zh">Hong Kong (English)</a></li>
+
+															<li><a href="https://kr.kioxia.com/ko-kr/top.html" lang="ko">Republic of Korea (한국어)</a></li>
+															<li><a href="https://tw.kioxia.com/zh-tw/top.html" lang="zh">Taiwan (繁體中文)</a></li>
+															<li><a href="https://apac.kioxia.com/en-apac/top.html" lang="en">Asia Pacific (English)</a></li>
+														</ul>
+													</dd>
+													
+												</dl>
+												<dl class="mod-accordion__item">
+													<dt>
+														<button type="button" class="mod-accordion__trigger">Americas</button>
+													</dt>
+													<dd class="mod-accordion__panel">
+														<ul class="dropMenu__language__list">
+															<li><a href="https://americas.kioxia.com/pt-br/top.html" lang="pt">Brazil (Português)</a></li>
+															<li><a href="https://americas.kioxia.com/en-ca/top.html" lang="en">Canada (English)</a></li>
+															<li><a href="https://americas.kioxia.com/en-us/top.html" lang="en">United States (English)</a></li>
+															<li><a href="https://americas.kioxia.com/es-lar/top.html" lang="es">Americas (Español)</a></li>
+														</ul>
+													</dd>
+												</dl>
+												<dl class="mod-accordion__item">
+													<dt>
+														<button type="button" class="mod-accordion__trigger">Europe</button>
+													</dt>
+													<dd class="mod-accordion__panel">
+														<ul class="dropMenu__language__list">
+															<li><a href="https://europe.kioxia.com/fr-fr/top.html" lang="fr">France (Français)</a></li>
+															<li><a href="https://europe.kioxia.com/de-de/top.html" lang="de">Germany (Deutsch)</a></li>
+															<li><a href="https://europe.kioxia.com/el-gr/top.html" lang="el">Greece (Ελληνική)</a></li>
+															<li><a href="https://europe.kioxia.com/hu-hu/top.html" lang="hu">Hungary (Magyar)</a></li>
+															<li><a href="https://europe.kioxia.com/it-it/top.html" lang="it">Italy (Italiano)</a></li>
+															<li><a href="https://europe.kioxia.com/nl-nl/top.html" lang="nl">Netherlands (Nederlands)</a></li>
+															<li><a href="https://europe.kioxia.com/pl-pl/top.html" lang="pl">Poland (Polski)</a></li>
+															<li><a href="https://europe.kioxia.com/pt-pt/top.html" lang="pt">Portugal (Português)</a></li>
+															<!-- <li class=""><a href="https://europe.kioxia.com/ru-ru/top.html" lang="ru" data-sly-attribute.aria-current="">Russia (Pусский)</a></li> -->
+															<li><a href="https://europe.kioxia.com/es-es/top.html" lang="es">Spain (Español)</a></li>
+															<li><a href="https://europe.kioxia.com/tr-tr/top.html" lang="tr">Turkey (Türkçe)</a></li>
+															<li><a href="https://europe.kioxia.com/en-europe/top.html" lang="en">Europe (English)</a></li>
+														</ul>
+													</dd>
+												</dl>
+												<dl class="mod-accordion__item">
+													<dt>
+														<button type="button" class="mod-accordion__trigger">Middle East &amp; Africa</button>
+													</dt>
+													<dd class="mod-accordion__panel">
+														<ul class="dropMenu__language__list">
+															<li><a href="https://europe.kioxia.com/en-mea/top.html" lang="en">Middle East &amp; Africa (English)</a></li>
+														</ul>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /ドロップダウン 言語切り替え -->
+							<!-- キーワード入力 -->
+							 <div class="globalNavi__search">
+								<button type="button" data-dropdown="search-sp" data-dropdown-type="nav" aria-controls="search-sp">Search</button>
+								<div class="dropMenu" data-dropdown-id="search-sp" id="search-sp">
+									<div class="wrapper">
+										<div class="back"><button type="button" data-sp-menu-back="">Back</button></div>
+										<div class="dropMenu__search">
+											<input id="searchmobile" type="text" size="50" class="iSearchAssist" placeholder="Keyword"/>
+											<button type="button"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_search.svg" alt="Search"/></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /キーワード入力 -->
+						</div>
+					</div>
+					<!-- /SP用 -->
+				</div>
+			</div>
+		</nav>
+		<!-- /グローバルメニュー -->
+
+		<div class="headerArea__overlay" data-dropdown-overlay=""></div>
+		<div style="display: none;">
+			<span id="multiSearchPath" value="/en-jp/search/keyword.html"></span>
+		</div>
+	</header>
+
+	<!-- Modal welcome  -->
+	<div class="modal modal--innerScrollable modal--fullWidth modalTarget--welcome" id="welcome">
+		<div class="modal--overlay js-modal-close"></div>
+		<div class="wrapper">
+			<div class="modal--content" role="dialog" aria-modal="true">
+				<div class="modal__inner">
+					<p class="modalTitle--1">Welcome to <br class="mobile"/>KIOXIA Corporation</p>
+					<div class="text">
+						<div data-cmp-data-layer="" id="" class="cmp-text">
+							<p>Please select your location and preferred language where available.</p>
+						</div>
+					</div>
+					<div data-mod-selectlink="">
+						<select class="input--selectBox" id="" name="" aria-required="true">
+							<option value="" selected="">Select location and language</option>
+							<optgroup label="Japan">
+								<option value="https://www.kioxia.com/ja-jp/top.html">Japan (日本語)</option>
+								<option value="https://www.kioxia.com/en-jp/top.html">Japan (English)</option>
+							</optgroup>
+							<optgroup label="Asia Pacific">
+								<option value="https://www.kioxia.com.cn/zh-cn/top.html">China (简体中文)</option>
+
+								<!-- 2025-1-28 Englishに変更 -->
+								<option value="https://hk.kioxia.com/en-hk/top.html">Hong Kong (English)</option>
+
+								<option value="https://kr.kioxia.com/ko-kr/top.html">Republic of Korea (한국어)</option>
+								<option value="https://tw.kioxia.com/zh-tw/top.html">Taiwan (繁體中文)</option>
+								<option value="https://apac.kioxia.com/en-apac/top.html">Asia Pacific (English)</option>
+							</optgroup>
+							<optgroup label="Americas">
+								<option value="https://americas.kioxia.com/pt-br/top.html">Brazil (Português)</option>
+								<option value="https://americas.kioxia.com/en-ca/top.html">Canada (English)</option>
+								<option value="https://americas.kioxia.com/en-us/top.html">United States (English)</option>
+								<option value="https://americas.kioxia.com/es-lar/top.html">Americas (Español)</option>
+							</optgroup>
+							<optgroup label="Europe">
+								<option value="https://europe.kioxia.com/fr-fr/top.html">France (Français)</option>
+								<option value="https://europe.kioxia.com/de-de/top.html">Germany (Deutsch)</option>
+								<option value="https://europe.kioxia.com/el-gr/top.html">Greece (Ελληνική)</option>
+								<option value="https://europe.kioxia.com/hu-hu/top.html">Hungary (Magyar)</option>
+								<option value="https://europe.kioxia.com/it-it/top.html">Italy (Italiano)</option>
+								<option value="https://europe.kioxia.com/nl-nl/top.html">Netherlands (Nederlands)</option>
+								<option value="https://europe.kioxia.com/pl-pl/top.html">Poland (Polski)</option>
+								<option value="https://europe.kioxia.com/pt-pt/top.html">Portugal (Português)</option>
+								<!-- <option value="https://europe.kioxia.com/ru-ru/top.html">Russia (Pусский)</option> -->
+								<option value="https://europe.kioxia.com/es-es/top.html">Spain (Español)</option>
+								<option value="https://europe.kioxia.com/tr-tr/top.html">Turkey (Türkçe)</option>
+								<option value="https://europe.kioxia.com/en-europe/top.html">Europe (English)</option>
+							</optgroup>
+							<optgroup label="Middle East &amp; Africa">
+								<option value="https://europe.kioxia.com/en-mea/top.html">Middle East &amp; Africa (English)</option>
+							</optgroup>
+						</select>
+						<div class="button button--regular button--submit">
+							<button type="submit" class="cmp-button">
+								<span class="cmp-button__inr">
+									<span class="cmp-button__text">GO</span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="modal--close js-modal-close">Close<span class="icon--close">×</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- /Modal welcome  -->
+  <input type="hidden" id="isAmericas" value="false"/>
+</div>
+
+<!-- <script>
+
+	var script = document.createElement('script');
+	script.type= 'text/javascript';
+
+	var script1 = document.createElement('script');
+	script1.setAttribute('src','https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js');
+	script1.type= 'text/javascript';
+	script1.setAttribute('charset','UTF-8');
+
+	var lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+	//本番Publish (関東／関西／中国)
+	if(lang.includes('CN')){
+		script.setAttribute('src','https://cdn-apac.onetrust.com/consent/92ab3fd1-c032-4997-915d-edcf369ebd01/OtAutoBlock.js');
+		script1.setAttribute('data-domain-script','92ab3fd1-c032-4997-915d-edcf369ebd01');
+	}else{
+		script.setAttribute('src','https://cdn-apac.onetrust.com/consent/3813bdbd-0707-4c51-acb1-d2ba140f4755/OtAutoBlock.js');
+		script1.setAttribute('data-domain-script','3813bdbd-0707-4c51-acb1-d2ba140f4755');
+	}
+	//それ以外
+	/*  if(lang.includes('CN')){
+		script.setAttribute('src','https://cdn-apac.onetrust.com/consent/92ab3fd1-c032-4997-915d-edcf369ebd01-test/OtAutoBlock.js');
+		script1.setAttribute('data-domain-script','92ab3fd1-c032-4997-915d-edcf369ebd01-test');
+	 }else{
+		script.setAttribute('src','https://cdn-apac.onetrust.com/consent/3813bdbd-0707-4c51-acb1-d2ba140f4755-test/OtAutoBlock.js');
+		script1.setAttribute('data-domain-script','3813bdbd-0707-4c51-acb1-d2ba140f4755-test');
+	 }  */
+	document.head.appendChild(script);
+	document.head.appendChild(script1);
+
+	var script2 = document.createElement('script');
+	script2.type= 'text/javascript';
+	script2.innerHTML = 'function OptanonWrapper() { }';
+	document.head.appendChild(script2);
+	var isAmericas = document.getElementById("isAmericas").value;
+	if (isAmericas === 'true'){
+		const comment = document.createComment("Google Tag Manager");
+		document.head.appendChild(comment);
+		var script3 = document.createElement('script');
+		var func = "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':"+'\n' ;
+		func+="new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],"+'\n';
+		func+="j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src="+'\n';
+		func+="'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);"+'\n';
+		func+="})(window,document,'script','dataLayer','GTM-PD5CGT9');";
+		script3.innerHTML = func;
+		document.head.appendChild(script3);
+		const comment1 = document.createComment("End Google Tag Manager");
+		document.head.appendChild(comment1);
+	}
+</script> -->
+
+<!-- I-SEARCH_EXCEPT_TAG_END -->
+<!-- /header -->
+
+		
+		
+		
+			
+
+
+
+
+			
+
+
+
+			<!-- main -->
+<main class="main" role="main">
+<div class="wrapper">
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="title heading--1 aem-GridColumn aem-GridColumn--default--12">
+<div id="title-16634bd442" class="cmp-title">
+	<h1 class="cmp-title__text">Measurability analysis of the HAR structure in 3D memory by T-SAXS simulation</h1>
+</div>
+
+    
+
+</div>
+<div class="text text--small aem-GridColumn aem-GridColumn--default--12">
+<div id="text-1247fbcf12" class="cmp-text">
+    <p>March 28, 2022</p>
+
+</div>
+
+    
+
+</div>
+<div class="c-lim021 aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<ul class="tagList">
+    <li><a href="/en-jp/rd/technology/topics.html?sumtag=amdc" class="tag" onclick="sc_customClickTrack({trackType: 'Tag_Link', Obj: this});"><span class="tag__inr">Advanced Memory Development Center</span></a></li>
+</ul></div>
+<div class="c-lim021 aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<ul class="tagList">
+    <li><a href="/en-jp/rd/technology/topics.html?sumtag=analysis" class="tag" onclick="sc_customClickTrack({trackType: 'Tag_Link', Obj: this});"><span class="tag__inr">Analysis</span></a></li>
+</ul></div>
+
+    
+</div>
+</div>
+</div>
+</div>
+<div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn aem-GridColumn--default--12">
+<div id="text-b8eb82abff" class="cmp-text">
+    <p>One of the most challenging steps for the 3D flash memory device fabrication is the etching process of the high aspect ratio (HAR) holes/trenches, which is becoming more difficult as the number of the stacked layers increases. A measurement technique which features both non-destructivity and high accuracy is a must to assure high accuracy of the process control to realize the wafer-wide uniform HAR etching.<br />
+T-SAXS (transmission small angle X-ray scattering) is the measurement technique utilizing transmission X-rays. As presented in Fig. 1, it constructs the high precision HAR structural images based on the multiple X-ray elastic scattering images (SAXS images), which are obtained by the X-ray irradiation at different angles of incidence. We reported the studies of the T-SAXS applicability to the HAR structures of the future generation 3D flash memories, employing the X-rays elastic scattering simulations. We confirmed that T-SAXS is capable of inspecting the future generations 3D flash memory structures which are constructed in even higher aspect ratios as the measurement error of less than 1 % on the HAR hole structures of the depth of 30 μm is secured.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+<div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid position--center aem-GridColumn aem-GridColumn--default--12">
+
+	
+		
+		
+	
+	<div id="container-39f4a2a132" class="cmp-container">
+		<figure class="figure" id="container-39f4a2a132-figure">
+			
+			<div class="image">
+
+    
+
+
+
+<div data-cmp-is="image" data-cmp-lazy data-cmp-lazythreshold="0" id="image-1f16f89284" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
+    
+
+    
+   		<div>
+            <div>
+                
+                
+                <img src="/content/dam/kioxia/en-jp/rd/technology/topics/img/topics-img-105-e.jpg" class="cmp-image__image" alt="" itemprop="contentUrl" data-cmp-hook-image="image"/>
+                
+                
+        	</div>
+            
+                           
+         </div>
+       	
+	
+    
+    
+</div>
+
+    
+
+</div>
+<div class="text">
+<div id="text-5571211f7e" class="cmp-text">
+    <figcaption>
+Figure 1. (a) Schematic representation of the T-SAXS optics and T-SAXS measurement, (b) Simulation results of the T-SAXS estimated precision.</figcaption>
+
+</div>
+
+    
+
+</div>
+
+			
+		</figure>
+	</div>
+
+	
+	
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+<div class="container responsivegrid type--fullSize bgColor--gray aem-GridColumn aem-GridColumn--default--12">
+
+	
+	
+		
+		
+    
+    <div id="container-6124ef94f2" class="cmp-container">
+        
+        <div class="c-col001">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn aem-GridColumn--default--12">
+<div id="text-611920b59d" class="cmp-text">
+    <p>This technique was presented at the SPIE AL (society of photo-optical instrumentation engineers advanced lithography) and the 41st nano-testing symposium. </p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+
+        
+    </div>
+
+	
+</div>
+<div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text text--small list--asterisk aem-GridColumn aem-GridColumn--default--12">
+<div id="text-c4e49e2fc3" class="cmp-text">
+    <p>This article is based on the quotes from the refs [1] and [2], and edited accordingly.</p>
+
+</div>
+
+    
+
+</div>
+<div class="text text--small list--asterisk aem-GridColumn aem-GridColumn--default--12">
+<div id="text-317d3d248d" class="cmp-text">
+    <p>Reference<br />
+[1] Kaori Sasaki, Takaki Hashimoto, Yenting Kuo, Hiroshi Tsukada, and Hiroyuki Tanizaki &quot;Measurability analysis of the HAR structure in 3D memory by T-SAXS simulation&quot;,<br />
+Proc. SPIE 11611, Metrology, Inspection, and Process Control for Semiconductor Manufacturing XXXV, 116110U (22 February 2021) © 2021 Society of Photo Optical Instrumentation Engineers (SPIE).<br />
+[2] Kaori Sasaki, Takaki Hashimoto, Yenting Kuo, Hiroshi Tsukada, and Hiroyuki Tanizaki &quot;Measurability analysis of the HAR structure in 3D memory by T-SAXS simulation&quot;, The 41st Annual NANO Testing Symposium, Metrology and Inspection, (2) (25 October 2021) © 2021 The institute of NANO Testing (INANOT).</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+<div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBack aem-GridColumn aem-GridColumn--default--12">
+    
+<script src="/etc.clientlibs/kioxia-v2/components/button/clientlibs/site.min.js"></script>
+
+
+
+<a id="button-41f44edc70" class="cmp-button" href="/en-jp/rd/technology/topics.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">All Topics</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-a33190b1ff" class="cmp-experiencefragment cmp-experiencefragment--relatedlink_technology-topics_01">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c-std006 aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+<p class="relatedLink--title">Related Links</p>
+
+
+<!-- 1column -->
+
+
+<!-- 3column or 4column -->
+<div class="relatedLink column--3">
+  <div class="col--box">
+    <div class="relatedLink__img">
+    	<img src="/content/dam/kioxia/ja-jp/rd/glossary/img/glossary_link_002.png" alt=""/>
+    	
+    	
+    </div>
+    <div class="button button--textBold">
+      <a id="" class="cmp-button " href="/en-jp/rd/glossary.html" target="_self" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+         <span class="cmp-button__inr">
+            <span class="cmp-button__text">Technical Glossary</span>
+	         
+				
+				
+				
+				
+			</span>
+		 </a>
+		 
+		
+    </div>
+
+    <div class="text">
+      <div data-cmp-data-layer="" id="" class="cmp-text">
+         <p>A technical glossary that covers terms related to KIOXIA products and technologies, such as memory and SSDs. We explain that it can be used by engineers and researchers to the general public.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col--box">
+    <div class="relatedLink__img">
+    	<img src="/content/dam/kioxia/ja-jp/rd/organization/img/organization_link_008.png" alt=""/>
+    	
+    	
+    </div>
+    <div class="button button--textBold">
+      <a id="" class="cmp-button " href="/en-jp/rd/organization.html" target="_self" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+         <span class="cmp-button__inr">
+            <span class="cmp-button__text">R&amp;D Organization and Locations</span>
+	         
+				
+				
+				
+				
+			</span>
+		 </a>
+		 
+		
+    </div>
+
+    <div class="text">
+      <div data-cmp-data-layer="" id="" class="cmp-text">
+         <p>KIOXIA has established industry-leading R&amp;D frameworks with “memory” technology. We use our various locations to conduct technological innovation while promoting open innovation.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+    
+</div>
+
+</div></div>
+
+    
+
+</div>
+<div class="c-std002 aem-GridColumn aem-GridColumn--default--12">
+
+
+<h2 class="shareButton--title ">
+	Share
+</h2>
+
+<ul class="shareButton--list ">
+	<li class="icon"><a href="https://social-plugins.line.me/lineit/share?url={{PAGE_URL}}" onclick="window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600'); sc_customClickTrack({trackValue:'sharebtn_line',Obj:this}); return false;"><img src="/content/dam/limitedlibs/logo/icon_line.svg" alt="Line" style="width: 40px;"></a></li>
+
+	<li class="icon"><a href="https://www.facebook.com/sharer/sharer.php?u={{PAGE_URL}}" onclick="window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600'); sc_customClickTrack({trackValue:'sharebtn_facebook',Obj:this}); return false;"><img src="/content/dam/limitedlibs/logo/icon_facebook.svg" alt="Facebook" style="width: 40px;"></a></li>
+
+	<li class="icon"><a href="https://twitter.com/share?text={{PAGE_TITLE}}&url={{PAGE_URL}}&hashtags=kioxia" rel="nofollow" onclick="window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600'); sc_customClickTrack({trackValue:'sharebtn_twitter',Obj:this}); return false;"><img src="/content/dam/limitedlibs/logo/icon_x.svg" alt="X" style="width: 40px;"></a></li>
+
+
+	<li class="icon"><a href="https://www.linkedin.com/shareArticle?mini=true&url={{PAGE_URL}}" onclick="window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600'); sc_customClickTrack({trackValue:'sharebtn_linkedin',Obj:this}); return false;"><img src="/content/dam/limitedlibs/logo/icon_linkedin.svg" alt="Linkedin" style="width: 42px;"></a></li>
+
+</ul></div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-4b78be0d48" class="cmp-experiencefragment cmp-experiencefragment--relatedlink_technology-topics_02">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn aem-GridColumn--default--12">
+<div id="text-f30886cdd0" class="cmp-text">
+    <hr />
+
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+<div class="c-col005 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col005-s">
+   
+        <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBold aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+
+<a id="button-957d352dcf" class="cmp-button" href="/en-jp/rd/technology/bics-flash.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">What is the 3D flash memory “BiCS FLASH™”?</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+   
+        <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBold aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+
+<a id="button-b47c725323" class="cmp-button" href="/en-jp/rd/technology/nand-flash.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">What is NAND Flash Memory?</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+   
+        <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBold aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+
+<a id="button-6eac0dc87c" class="cmp-button" href="/en-jp/rd/technology/multi-level-cell.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">What is Multi-level Cell Technology?</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+   
+        <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBold aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+
+<a id="button-913db31801" class="cmp-button" href="/en-jp/rd/technology/topics.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">Technology Topics</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+   
+        <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBold aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+
+<a id="button-d97a8a2802" class="cmp-button" href="/en-jp/rd/technology/history.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">Technology Development History</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+   
+        <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="button button--textBold aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+
+<a id="button-9d243a059b" class="cmp-button" href="/en-jp/rd/technology/award-paper.html" target="_self">
+	<span class="cmp-button__inr">
+
+    
+
+		<span class="cmp-button__text">Awards and Research papers</span>
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+	</span>
+</a>
+
+</div>
+
+    
+</div>
+</div>
+   
+</div>
+</div>
+<div class="c-col001 aem-GridColumn aem-GridColumn--default--12">
+<div class="c-col001-s">
+    <div class="col--box">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn aem-GridColumn--default--12">
+<div id="text-4374eb6168" class="cmp-text">
+    <hr />
+
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+
+    
+</div>
+
+</div></div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+<div class="breadcrumb aem-GridColumn aem-GridColumn--default--12">
+
+<nav id="breadcrumb-7965e18dda" class="cmp-breadcrumb " aria-label="Breadcrumb">
+    <ol class="cmp-breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li class="cmp-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/en-jp/top.html" class="cmp-breadcrumb__item-link" itemprop="item">
+                <span itemprop="name">KIOXIA Corporation Home</span>
+            </a>
+            <meta itemprop="position" content="1"/>
+        </li>
+    
+        <li class="cmp-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/en-jp/rd.html" class="cmp-breadcrumb__item-link" itemprop="item">
+                <span itemprop="name">Research and Technology Development</span>
+            </a>
+            <meta itemprop="position" content="2"/>
+        </li>
+    
+        <li class="cmp-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/en-jp/rd/technology.html" class="cmp-breadcrumb__item-link" itemprop="item">
+                <span itemprop="name">Technology and Innovation at KIOXIA</span>
+            </a>
+            <meta itemprop="position" content="3"/>
+        </li>
+    
+        <li class="cmp-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/en-jp/rd/technology/topics.html" class="cmp-breadcrumb__item-link" itemprop="item">
+                <span itemprop="name">Technology Topics</span>
+            </a>
+            <meta itemprop="position" content="4"/>
+        </li>
+    
+        <li class="cmp-breadcrumb__item cmp-breadcrumb__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+                <span itemprop="name">Process technology/Measurability analysis of the HAR structure in 3D memory by T-SAXS simulation</span>
+            
+            <meta itemprop="position" content="5"/>
+        </li>
+    </ol>
+</nav>
+
+    
+</div>
+
+    
+</div>
+</div>
+
+</div><!-- /wrapper -->
+</main>
+<!-- /main -->
+			
+<!-- footer -->
+
+<!-- I-SEARCH_EXCEPT_TAG_START -->
+
+<div class="c-cmn004">
+	<footer class="footer" role="contentinfo">
+		<div class="iconDescription">
+			<div class="wrapper">
+				<ul class="iconDescription__list">
+					<li>Icon definitions:</li>
+					<li><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open." class="icon--external"/>A new window will open.</li>
+					<li><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_pdf.svg" alt="PDF will open in a new window." class="icon--pdf"/>PDF will open in a new window.</li>
+					<li><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_modal.svg" alt="A modal window will open." class="icon--modal"/>A modal window will open.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__menu">
+			<div class="wrapper">
+				<div class="footer__left">
+					<div class="footer__button">
+						<div class="button button--textBold">
+							<a id="" class="cmp-button" href="/en-jp/news.html" target="_self" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+								<span class="cmp-button__inr">
+									<span class="cmp-button__text">News</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer__button">
+						<div class="button button--textBold">
+							<a id="" class="cmp-button" href="/en-jp/event.html" target="_self" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+								<span class="cmp-button__inr">
+									<span class="cmp-button__text">Events</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer__button">
+						<div class="button button--textBold">
+							<a id="" class="cmp-button" href="/en-jp/contact.html" target="_self" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+								<span class="cmp-button__inr">
+									<span class="cmp-button__text">Contact Us</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__right">
+					<h2 class="title">KIOXIA Holdings Corporation (Corporate / Investor Relations)</h2>
+					<div class="footer__button">
+						<div class="button button--textBold">
+							<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/top.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+								<span class="cmp-button__inr">
+									<span class="cmp-button__text">KIOXIA Holdings Corporation Home</span>
+									<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer__button">
+						<div class="button button--textBold">
+							<a id="" class="cmp-button" href="https://www.kioxia-holdings.com/en-jp/ir.html" target="_blank" onclick="" aria-label="" data-cmp-clickable="" data-cmp-data-layer="">
+								<span class="cmp-button__inr">
+									<span class="cmp-button__text">Investor Relations</span>
+									<span class="icon--external"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_external.svg" alt="A new window will open."/></span>
+							</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__subMenu">
+			<div class="wrapper">
+				<div class="shareButton">
+					<ul class="shareButton--list">
+                        <li class= "icon icon--youtube "><a href="https://www.youtube.com/KIOXIAJP " target="_blank " rel="noopener noreferrer "><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/logo_youtube.svg" alt="Youtube "></a></li>
+                        <li class= "icon icon--instagram "><a href="https://www.instagram.com/kioxia_jp/ " target="_blank " rel="noopener noreferrer "><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/logo_instagram.svg" alt="instagram "></a></li>
+                        
+                        
+                        
+                        
+					</ul>
+					<ul class="snsPoly">
+						<li><a href="/en-jp/socialmedia.html">KIOXIA Group&#39;s Official Social Media Account List</a></li>
+						<li><a href="/en-jp/socialmedia/policy.html">Social Media Policy</a></li>
+					</ul>
+				</div>
+				<ul class="footer__subMenu__list">
+					
+					<li>
+						
+						<a href="/en-jp/privacy.html">Privacy Policy</a>
+					</li>
+					<li><a class="optanon-toggle-display" style="cursor: hand; cursor: pointer;">Cookie Settings</a></li>
+					
+					
+					<li>
+						
+						<a href="/en-jp/terms.html">Terms and Conditions</a>
+					</li>
+					
+					<li>
+						
+						<a href="/en-jp/trademarks.html">Trademarks</a>
+					</li>
+					
+					<li>
+						
+						<a href="/en-jp/sitemap.html">Site Map</a>
+					</li>
+					
+					
+					
+					
+					
+					
+
+					
+					
+
+				</ul>
+				<ul class="footer__copyright">
+                    
+                    <li>
+                        <small>Copyright © 2022 KIOXIA Corporation. All Rights Reserved.
+                            </small>
+                    </li>
+				</ul>
+			</div>
+			<div class="btnGotop">
+				<button type="button"><img src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia/resources/component/icon_gotop.svg" alt="Page Top"/></button>
+			</div>
+		</div>
+	</footer>
+</div>
+
+    
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/kioxia-v2/components/c-cmn004/clientlibs/site.min.js"></script>
+
+
+
+<!-- I-SEARCH_EXCEPT_TAG_END -->
+<!-- /footer -->
+			
+    
+    
+<script src="/etc.clientlibs/kioxia-v2/components/c-lim031/clientlibs/site.min.js"></script>
+<script src="/etc.clientlibs/kioxia-v2/components/c-lim026/clientlibs/site.min.js"></script>
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.min.js"></script>
+<script src="/etc.clientlibs/kioxia-libs/clientlibs/clientlib-base.min.js"></script>
+<script src="/etc.clientlibs/kioxia-libs/clientlibs/kioxia.min.js"></script>
+
+
+
+    
+
+
+    
+
+    
+
+    
+    
+    
+
+			
+
+		
+		
+		
+	</body>
+</html>

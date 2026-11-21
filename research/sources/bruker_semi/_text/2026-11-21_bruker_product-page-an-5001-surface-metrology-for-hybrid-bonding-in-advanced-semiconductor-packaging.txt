@@ -1,0 +1,1510 @@
+
+
+Application Note: Surface Metrology for Hybrid Bonding in Advanced Semiconductor Packaging | Bruker
+
+EN
+
+My Bruker
+
+Contact Expert
+
+Products & Solutions
+
+Applications
+
+Services & Support
+
+News & Events
+
+About
+
+Careers
+
+Please use at least 2 characters (you are currently using 1 character)
+
+Languages
+
+                                English
+
+Application Note: Surface Metrology for Hybrid Bonding in Advanced Semiconductor Packaging
+
+Learn how multi-scale insights from AFM and AFP enhance hybrid bond integrity and device performance
+
+Benefits of Automated Multi‑Scale Metrology for Pre‑Bond Surface Assessments
+
+Achieving a reliable hybrid bond requires both surfaces to be pristine. To support this requirement, metrology methods such as atomic force microscopy (AFM) and atomic force profilometry (AFP) are critical for surface characterization and process optimization. AFM delivers localized, high-resolution surface measurements, while AFP provides complementary large-area topography scans that span from nanometer-scale features to full wafer dimensions, including the bevel edge. 
+
+This application note highlights
+ how Bruker’s InSight® 300 AFM and InSight AFP automated solutions offer multi-scale surface insights that inform surface conditioning decisions, ultimately enhancing hybrid bond integrity and device performance.
+
+Readers can expect to find:
+
+Fundamental requirements for successful hybrid bonding
+AFM local metrology data showing pad recess analysis and defect characterization
+AFP data acquired over multi-millimeter regions using the Large-Area Scanning (LAS) technique
+Edge roll-off (ERO) example analysis with single-nanometer precision and high throughput
+
+ KEYWORDS: 
+Atomic Force Microscopy; Automation; Automated AFM; AAFM; Application Note; Bruker; AN5001; Semiconductor; InSight 300; InSight AFP; Hybrid Bonding
+
+                    Download Full-Text PDF
+
+Hybrid bonding is increasingly essential in advanced semiconductor packaging, as it enables the formation of high-density interconnects within complex 3D assemblies. This technique involves the direct, adhesive-free bonding of two semiconductor surfaces that contain both dielectric and metal regions. Achieving a reliable bond requires both surfaces to be pristine. To support this requirement, metrology methods such as atomic force microscopy (AFM) and atomic force profilometry (AFP) are critical for surface characterization and process optimization. AFM delivers localized, high-resolution surface measurements, while AFP provides complementary large-area topography scans that span from nanometer-scale features to full wafer dimensions, including the bevel edge. This application note highlights how Bruker’s InSight® 300 AFM and InSight AFP automated solutions offer multi-scale surface insights that inform surface conditioning decisions, ultimately enhancing hybrid bond integrity and device performance.
+
+Hybrid Bonding Overview
+
+In the design and manufacturing strategy known as system technology co-optimization (STCO), different functions of a chip (e.g., memory, I/O, and logic) are fabricated separately using the most suitable technology for each. These components are then integrated using advanced packaging techniques, such as hybrid bonding. By enabling high-density 3D connections between chips, hybrid bonding supports continued performance scaling beyond the limits of traditional transistor miniaturization.
+
+ Regardless of the method—wafer-to-wafer, die-to-wafer, or die-to-die—successful hybrid bonding relies on pristine surface conditions. At the local scale, critical metrics include defectivity, surface roughness, and copper contact pad recess depth, all of which must be tightly controlled. At longer length scales (100 µm and above), surface topography must remain within specifications to ensure proper bonding at the wafer interiors and bevel edges.
+
+ As the latest generation in a 30-year lineage of inline AFM and AFP solutions, Bruker’s fully automated InSight 300 and InSight AFP systems drive innovation in semiconductor manufacturing by enabling precise, scalable surface characterization for next-generation packaging. With angstrom-level sensitivity and lateral scan sizes ranging from tens of nanometers to hundreds of millimeters, these platforms support inline metrology across the full range of scales relevant to hybrid bonding.
+
+Bond Pad Metrology
+
+For successful hybrid bonding, both the topmost dielectric surface and the embedded metal bonding pads must meet strict topographic specifications. The dielectric must be exceptionally smooth, with a low Rq (root mean square roughness) of 0.1–0.2 nm
+1
+ , a topographic tolerance significantly tighter than that of traditional back-end-of-line (BEOL) dielectric layers. On the same surface, the metal bonding pads must be precisely recessed within the dielectric to accommodate controlled thermal expansion. For common hybrid bond pad sizes, the typical recess depth is on the order of a few nanometers (1–5 nm).
+2,3
+ These tolerances surpass the limits of conventional microscopy-based metrology, making AFM indispensable for achieving the high resolution and precision required for verification.
+
+High-resolution AFM images in Figure 1 show four copper contacts scanned after three distinct chemical-mechanical planarization (CMP) process skews. These scans illustrate the sensitivity of the AFM to several key metrics that must be monitored for successful hybrid bonding: dielectric roughness, copper pad roughness, and copper pad recess. Cross-section profiles through the lower pair of copper pads demonstrate high sensitivity to small changes in pad depth for the different CMP processes. This level of detail, obtained through local AFM scans, provides the metrology data needed for process development and for monitoring statistical process control (SPC) excursions. 
+
+Figure 1. AFM topography scans of four copper pads after three distinct CMP processes, producing different recess depths. The vertical axis is the same for (a-c), visually showing the change in recess depth.
+
+Figure 2. High-resolution AFM scans (1x1 µm) of (a) dielectric and (b) copper pad that show roughness and defects such as small pits and protrusions.
+
+In addition to roughness and recess topography, nanoscale defectivity (e.g., pits and protrusions) can significantly impact bond integrity. High-resolution AFM clearly resolves the pits and protrusions that can limit yield at the bonding step. Figure 2a and b show AFM images of, respectively, dielectric with protrusion growth and copper pad with pitting. Identifying and mitigating these defect features is essential, as they may introduce voids between the bonding surfaces that degrade device performance or result in complete device failure.
+
+Large-Area Scanning
+
+The maximum field of view for a traditional AFM is typically around 100 µm², which is sufficient for localized metrology of dielectrics, Cu pads, and defects as discussed in the previous section. However, topographical features over much larger length scales, on the order of millimeters, have been confirmed by post-bonding techniques, such as confocal scanning acoustic microscopy (CSAM), to negatively impact wafer-to-wafer bonding. Therefore, identifying, characterizing, and mitigating these topographical excursions during the prebonding stage is essential. 
+
+Bruker’s Insight AFP system supports a proprietary technique known as Large-Area Scanning (LAS), which enables surface metrology with AFM height sensitivity over hundreds of millimeters. In LAS, the wafer sample is raster scanned below the probe. The example 33x26 mm LAS image in Figure 3 reveals excessive topography at the multi-millimeter scale, despite local AFM scans having confirmed that dielectric roughness and copper pad recess met specifications. With further analysis linking these excessive topography regions to circuit design and previous process steps, the CMP module was able to adjust polishing parameters to reduce topography and ensure proper bonding.
+
+Figure 3. LAS topography image covering 33x26 mm, along with a schematic showing LAS scanning method.
+
+Figure 4. Large-area scans of the same 26x5 mm wafer area (a) before and (b) after topography fabrication mitigation techniques.
+
+The LAS capability informs process decisions that aim to mitigate and reduce large-scale macroscopic topography present above high-metal-density regions, ultimately improving wafer bonding and enhancing yield. Figure 4a and b show the same region imaged using the same recipe, scanned before and after CMP process improvement. The change resulted in a measurable reduction in long-range topography from 25 nm to 15 nm, as measured by AFP.
+
+Bevel Edge Metrology
+
+In addition to monitoring local bond pad features and long-range surface topography, evaluating the wafer bevel edge is essential for successful wafer-to-wafer hybrid bonding. Both the top and bottom wafers must have properly engineered edge profiles; if the top wafer is not adequately trimmed or the bevel topography is poorly controlled, subsequent processing steps may fail to form the necessary structures for device completion.
+4
+
+Wafer edge roll-off (ERO) is a key concern at the bevel. ERO is the precisely engineered curvature at the wafer edge. Excursions from the desired, engineered ERO can lead to nonuniform bond strength, increased defectivity, and reduced reliability and yield. AFP stands out among ERO monitoring techniques for its superior combination of spatial and vertical resolution with high-speed profiling—capabilities that enable the single-nanometer precision (<10 nm) and high throughput (>45 WPH, 8 sites) required for HVM ERO metrology.
+
+Figure 5a shows a typical ERO measurement of eight sites at 45° angular separation. The bevel edge profile length is generally between 10 and 25 mm, measured at speeds up to 25 mm/s. Automated bevel edge characterization analysis, conducted using NanoScope® software, includes calculations of Δh between two measurement regions and a reference region. An example analysis and results are shown in Figure 5b and c.
+
+The InSight AFP system also supports profiling across the complete 300 mm wafer diameter, with scan speeds up to 25 mm/s—enabling throughput of tens of wafers per hour. Multiple radial profiles can be combined to generate a topographical heat map of a large wafer area. 
+
+Figure 5. (a) Schematic of ERO measurement sites at 45° angular separation. (b) Bevel edge analysis comparing .h between two reference regions, R1 and R2. (c) Exemplary R1 and R2 precision (3s) for an ERO application.
+
+AFM and AFP Ensure Reliable Hybrid Bonding
+
+Hybrid bonding is driving high-density 3D integration in advanced semiconductor packaging, with success hinging on pristine surfaces across scales. Bruker’s InSight 300 and InSight AFP systems provide the multi-scale metrology capabilities needed to resolve nanoscale defectivity and copper pad recess, as well as characterize millimeter-scale topography and bevel edge profiles. By providing actionable data for process development, SPC monitoring, and yield optimization, these tools enable manufacturers to meet the demands of system technology co-optimization and achieve reliable, high-performance device integration.
+
+Authors
+
+Sean Hand, Senior Staff Applications Scientist, Bruker (sean.hand@bruker.com) 
+Peter De Wolf, Ph.D., Sr Director of Technology and Application Development, Bruker (peter.dewolf@bruker.com)
+
+References
+
+Abdilla, J. 2023. “Chip to Wafer Hybrid Bonding Development for High Volume Manufacturing.” IMAPSource Proceedings 2023 (DPC): 771–93. DOI: 10.4071/001c.90682
+Ren, H., Yang, Y.-T., and Iyer, S.I. 2022. “Recess Effect Study and Process Optimization of Sub-10 µm Pitch Die-to-Wafer Hybrid Bonding.” In 2022 IEEE 72nd Electronic Components and Technology Conference (ECTC), 149–56. IEEE. DOI: 10.1109/ECTC51906.2022.00034
+Lu, Mei-Chien. 2024. “Hybrid Bonding for Ultra-High-Density Interconnect.” Journal of Electronic Packaging 146 (3). DOI: 10.1115/1.4064750
+Kim, Y.-S., Nguyen, T.H. and Choa, S.-H. 2022. “Enhancement of the Bond Strength and Reduction of Wafer Edge Voids in Hybrid Bonding.” Micromachines 13 (4): 537. DOI: 10.3390/mi13040537
+
+©2025 Bruker Corporation. All rights reserved. InSight and NanoScope are trademarks of Bruker Corporation. All other trademarks are the property of their respective companies. AN5001, Rev. A0. 
+
+Featured Products and Technology
+
+InSight 300
+
+Fab-ready AAFM for reliable, cost-effective inline metrology in high-volume semiconductor manufacturing environments
+
+                    Read More
+
+InSight AFP
+
+The world’s highest performance and industry preferred CMP profiling and etch depth metrology system for advanced technology nodes
+
+                    Read More
+
+Free Instant Download
+
+Download the Full-Length PDF
+
+Topic
+
+Input value is invalid.
+
+Free Instant Download
+
+Download the Full-Length PDF
+
+First Name
+
+Please enter your first name
+
+Last Name
+
+Please enter your last name
+
+Email
+
+Please enter your e-mail address
+
+Phone
+
+Please enter a valid phone number
+
+Company/Institution
+
+Please enter your Company/Institution
+
+                        Canada
+
+                        China
+
+                        France
+
+                        Germany
+
+                        India
+
+                        Japan
+
+                        Korea, Republic of
+
+                        United Kingdom
+
+                        United States
+
+                        ─────────────
+
+                        Afghanistan
+
+                        Albania
+
+                        Algeria
+
+                        American Samoa
+
+                        Andorra
+
+                        Angola
+
+                        Anguilla
+
+                        Antarctica
+
+                        Antigua and Barbuda
+
+                        Argentina
+
+                        Armenia
+
+                        Aruba
+
+                        Australia
+
+                        Austria
+
+                        Azerbaijan
+
+                        Bahamas
+
+                        Bahrain
+
+                        Bangladesh
+
+                        Barbados
+
+                        Belgium
+
+                        Belize
+
+                        Benin
+
+                        Bermuda
+
+                        Bhutan
+
+                        Bolivia, Plurinational State of
+
+                        Bonaire, Sint Eustatius and Saba
+
+                        Bosnia and Herzegovina
+
+                        Botswana
+
+                        Bouvet Island
+
+                        Brazil
+
+                        British Indian Ocean Territory
+
+                        Brunei Darussalam
+
+                        Bulgaria
+
+                        Burkina Faso
+
+                        Burundi
+
+                        Cambodia
+
+                        Cameroon
+
+                        Canada
+
+                        Cape Verde
+
+                        Cayman Islands
+
+                        Central African Republic
+
+                        Chad
+
+                        Chile
+
+                        China
+
+                        Christmas Island
+
+                        Cocos (Keeling) Islands
+
+                        Colombia
+
+                        Comoros
+
+                        Congo
+
+                        Congo, the Democratic Republic of the
+
+                        Cook Islands
+
+                        Costa Rica
+
+                        Cote d'Ivoire
+
+                        Croatia
+
+                        Curaçao
+
+                        Cyprus
+
+                        Czech Republic
+
+                        Denmark
+
+                        Djibouti
+
+                        Dominica
+
+                        Dominican Republic
+
+                        Ecuador
+
+                        Egypt
+
+                        El Salvador
+
+                        Equatorial Guinea
+
+                        Eritrea
+
+                        Estonia
+
+                        Ethiopia
+
+                        Falkland Islands (Malvinas)
+
+                        Faroe Islands
+
+                        Fiji
+
+                        Finland
+
+                        France
+
+                        French Guiana
+
+                        French Polynesia
+
+                        French Southern Territories
+
+                        Gabon
+
+                        Gambia
+
+                        Georgia
+
+                        Germany
+
+                        Ghana
+
+                        Gibraltar
+
+                        Greece
+
+                        Greenland
+
+                        Grenada
+
+                        Guadeloupe
+
+                        Guatemala
+
+                        Guinea
+
+                        Guinea-Bissau
+
+                        Guyana
+
+                        Haiti
+
+                        Heard Island and McDonald Islands
+
+                        Holy See (Vatican City State)
+
+                        Honduras
+
+                        Hong Kong
+
+                        Hungary
+
+                        Iceland
+
+                        India
+
+                        Indonesia
+
+                        Iraq
+
+                        Ireland
+
+                        Israel
+
+                        Italy
+
+                        Jamaica
+
+                        Japan
+
+                        Jordan
+
+                        Kazakhstan
+
+                        Kenya
+
+                        Kiribati
+
+                        Korea, Republic of
+
+                        Kuwait
+
+                        Kyrgyzstan
+
+                        Lao People's Democratic Republic
+
+                        Latvia
+
+                        Lebanon
+
+                        Lesotho
+
+                        Liberia
+
+                        Libyan Arab Jamahiriya
+
+                        Liechtenstein
+
+                        Lithuania
+
+                        Luxembourg
+
+                        Macao
+
+                        Macedonia, the former Yugoslav Republic of
+
+                        Madagascar
+
+                        Malawi
+
+                        Malaysia
+
+                        Maldives
+
+                        Mali
+
+                        Malta
+
+                        Martinique
+
+                        Mauritania
+
+                        Mauritius
+
+                        Mayotte
+
+                        Mexico
+
+                        Moldova, Republic of
+
+                        Monaco
+
+                        Mongolia
+
+                        Montenegro
+
+                        Montserrat
+
+                        Morocco
+
+                        Mozambique
+
+                        Myanmar
+
+                        Namibia
+
+                        Nauru
+
+                        Nepal
+
+                        Netherlands
+
+                        New Caledonia
+
+                        New Zealand
+
+                        Nicaragua
+
+                        Niger
+
+                        Nigeria
+
+                        Niue
+
+                        Norfolk Island
+
+                        Norway
+
+                        Oman
+
+                        Pakistan
+
+                        Palestinian Territory, Occupied
+
+                        Panama
+
+                        Papua New Guinea
+
+                        Paraguay
+
+                        Peru
+
+                        Philippines
+
+                        Pitcairn
+
+                        Poland
+
+                        Portugal
+
+                        Puerto Rico
+
+                        Qatar
+
+                        Reunion
+
+                        Romania
+
+                        Rwanda
+
+                        Saint Helena, Ascension and Tristan da Cunha
+
+                        Saint Kitts and Nevis
+
+                        Saint Lucia
+
+                        Saint Pierre and Miquelon
+
+                        Saint Vincent and the Grenadines
+
+                        Samoa
+
+                        San Marino
+
+                        Sao Tome and Principe
+
+                        Saudi Arabia
+
+                        Senegal
+
+                        Serbia
+
+                        Seychelles
+
+                        Sierra Leone
+
+                        Singapore
+
+                        Sint Maarten (Dutch part)
+
+                        Slovakia
+
+                        Slovenia
+
+                        Solomon Islands
+
+                        Somalia
+
+                        South Africa
+
+                        South Georgia and the South Sandwich Islands
+
+                        South Sudan
+
+                        Spain
+
+                        Sri Lanka
+
+                        Suriname
+
+                        Svalbard and Jan Mayen
+
+                        Swaziland
+
+                        Sweden
+
+                        Switzerland
+
+                        Taiwan
+
+                        Tajikistan
+
+                        Tanzania, United Republic of
+
+                        Thailand
+
+                        Timor-Leste
+
+                        Togo
+
+                        Tokelau
+
+                        Tonga
+
+                        Trinidad and Tobago
+
+                        Tunisia
+
+                        Turkey
+
+                        Turkmenistan
+
+                        Turks and Caicos Islands
+
+                        Tuvalu
+
+                        USA Minor Outlying Islands
+
+                        Uganda
+
+                        United Arab Emirates
+
+                        United Kingdom
+
+                        United States
+
+                        Uruguay
+
+                        Uzbekistan
+
+                        Vanuatu
+
+                        Venezuela, Bolivarian Republic of
+
+                        Viet Nam
+
+                        Virgin Islands (USA)
+
+                        Virgin Islands, British
+
+                        Wallis and Futuna
+
+                        Western Sahara
+
+                        Yemen
+
+                        Zambia
+
+Country or Area
+
+Please select your Country
+
+                        Australian Capital Territory
+
+                        New South Wales
+
+                        Northern Territory
+
+                        Queensland
+
+                        South Australia
+
+                        Tasmania
+
+                        Victoria
+
+                        Western Australia
+
+                        Acre
+
+                        Alagoas
+
+                        Amapá
+
+                        Amazonas
+
+                        Bahia
+
+                        Ceará
+
+                        Distrito Federal
+
+                        Espírito Santo
+
+                        Goiás
+
+                        Maranhão
+
+                        Mato Grosso
+
+                        Mato Grosso do Sul
+
+                        Minas Gerais
+
+                        Para
+
+                        Paraná
+
+                        Paraíba
+
+                        Pernambuco
+
+                        Piauí
+
+                        Rio Grande do Norte
+
+                        Rio Grande do Sul
+
+                        Rio de Janeiro
+
+                        Rondônia
+
+                        Roraima
+
+                        Santa Catarina
+
+                        Sergipe
+
+                        São Paulo
+
+                        Tocantins
+
+                        Alberta
+
+                        British Columbia
+
+                        Manitoba
+
+                        New Brunswick
+
+                        Newfoundland and Labrador
+
+                        Northwest Territories
+
+                        Nova Scotia
+
+                        Nunavut
+
+                        Ontario
+
+                        Prince Edward Island
+
+                        Quebec
+
+                        Saskatchewan
+
+                        Yukon Territories
+
+                        Anhui
+
+                        Beijing
+
+                        Chongqing
+
+                        Fujian
+
+                        Gansu
+
+                        Guangdong
+
+                        Guangxi
+
+                        Guizhou
+
+                        Hainan
+
+                        Hebei
+
+                        Heilongjiang
+
+                        Henan
+
+                        Hubei
+
+                        Hunan
+
+                        Jiangsu
+
+                        Jiangxi
+
+                        Jilin
+
+                        Liaoning
+
+                        Nei Mongol
+
+                        Ningxia
+
+                        Qinghai
+
+                        Shaanxi
+
+                        Shandong
+
+                        Shanghai
+
+                        Shanxi
+
+                        Sichuan
+
+                        Tianjin
+
+                        Xinjiang
+
+                        Xizang
+
+                        Yunnan
+
+                        Zhejiang
+
+                        Chinese Taipei
+
+                        Hong Kong Island
+
+                        Kowloon
+
+                        New Territories
+
+                        Andaman and Nicobar Islands
+
+                        Andhra Pradesh
+
+                        Arunachal Pradesh
+
+                        Assam
+
+                        Bihar
+
+                        Chandigarh
+
+                        Chhattisgarh
+
+                        Dadra and Nagar Haveli
+
+                        Daman and Diu
+
+                        Delhi
+
+                        Goa
+
+                        Gujarat
+
+                        Haryana
+
+                        Himachal Pradesh
+
+                        Jammu and Kashmir
+
+                        Jharkhand
+
+                        Karnataka
+
+                        Kerala
+
+                        Lakshadweep
+
+                        Madhya Pradesh
+
+                        Maharashtra
+
+                        Manipur
+
+                        Meghalaya
+
+                        Mizoram
+
+                        Nagaland
+
+                        Odisha
+
+                        Puducherry
+
+                        Punjab
+
+                        Rajasthan
+
+                        Sikkim
+
+                        Tamil Nadu
+
+                        Telangana
+
+                        Tripura
+
+                        Uttar Pradesh
+
+                        Uttarakhand
+
+                        West Bengal
+
+                        Carlow
+
+                        Cavan
+
+                        Clare
+
+                        Cork
+
+                        Donegal
+
+                        Dublin
+
+                        Galway
+
+                        Kerry
+
+                        Kildare
+
+                        Kilkenny
+
+                        Laois
+
+                        Leitrim
+
+                        Limerick
+
+                        Longford
+
+                        Louth
+
+                        Mayo
+
+                        Meath
+
+                        Monaghan
+
+                        Offaly
+
+                        Roscommon
+
+                        Sligo
+
+                        Tipperary
+
+                        Waterford
+
+                        Westmeath
+
+                        Wexford
+
+                        Wicklow
+
+                        Agrigento
+
+                        Alessandria
+
+                        Ancona
+
+                        Aosta
+
+                        Arezzo
+
+                        Ascoli Piceno
+
+                        Asti
+
+                        Avellino
+
+                        Bari
+
+                        Barletta-Andria-Trani
+
+                        Belluno
+
+                        Benevento
+
+                        Bergamo
+
+                        Biella
+
+                        Bologna
+
+                        Bolzano
+
+                        Brescia
+
+                        Brindisi
+
+                        Cagliari
+
+                        Caltanissetta
+
+                        Campobasso
+
+                        Carbonia-Iglesias
+
+                        Caserta
+
+                        Catania
+
+                        Catanzaro
+
+                        Chieti
+
+                        Como
+
+                        Cosenza
+
+                        Cremona
+
+                        Crotone
+
+                        Cuneo
+
+                        Enna
+
+                        Fermo
+
+                        Ferrara
+
+                        Florence
+
+                        Foggia
+
+                        Forlì-Cesena
+
+                        Frosinone
+
+                        Genova
+
+                        Gorizia
+
+                        Grosseto
+
+                        Imperia
+
+                        Isernia
+
+                        L'Aquila
+
+                        La Spezia
+
+                        Latina
+
+                        Lecce
+
+                        Lecco
+
+                        Livorno
+
+                        Lodi
+
+                        Lucca
+
+                        Macerata
+
+                        Mantua
+
+                        Massa and Carrara
+
+                        Matera
+
+                        Medio Campidano
+
+                        Messina
+
+                        Milan
+
+                        Modena
+
+                        Monza and Brianza
+
+                        Naples
+
+                        Novara
+
+                        Nuoro
+
+                        Ogliastra
+
+                        Olbia-Tempio
+
+                        Oristano
+
+                        Padua
+
+                        Palermo
+
+                        Parma
+
+                        Pavia
+
+                        Perugia
+
+                        Pesaro and Urbino
+
+                        Pescara
+
+                        Piacenza
+
+                        Pisa
+
+                        Pistoia
+
+                        Pordenone
+
+                        Potenza
+
+                        Prato
+
+                        Ragusa
+
+                        Ravenna
+
+                        Reggio Calabria
+
+                        Reggio Emilia
+
+                        Rieti
+
+                        Rimini
+
+                        Rome
+
+                        Rovigo
+
+                        Salerno
+
+                        Sassari
+
+                        Savona
+
+                        Siena
+
+                        Sondrio
+
+                        Syracuse
+
+                        Taranto
+
+                        Teramo
+
+                        Terni
+
+                        Trapani
+
+                        Trento
+
+                        Treviso
+
+                        Trieste
+
+                        Turin
+
+                        Udine
+
+                        Varese
+
+                        Venice
+
+                        Verbano-Cusio-Ossola
+
+                        Vercelli
+
+                        Verona
+
+                        Vibo Valentia
+
+                        Vicenza
+
+                        Viterbo
+
+                        Hokkaido
+
+                        Aomori
+
+                        Iwate
+
+                        Miyagi
+
+                        Akita
+
+                        Yamagata
+
+                        Fukushima
+
+                        Ibaraki
+
+                        Tochigi
+
+                        Gunma
+
+                        Saitama
+
+                        Chiba
+
+                        Tokyo
+
+                        Kanagawa
+
+                        Niigata
+
+                        Toyama
+
+                        Ishikawa
+
+                        Fukui
+
+                        Yamanashi
+
+                        Nagano
+
+                        Gifu
+
+                        Shizuoka
+
+                        Aichi
+
+                        Mie
+
+                        Shiga
+
+                        Kyoto
+
+                        Osaka
+
+                        Hyogo
+
+                        Nara
+
+                        Wakayama
+
+                        Tottori
+
+                        Shimane
+
+                        Okayama
+
+                        Hiroshima
+
+                        Yamaguchi
+
+                        Tokushima
+
+                        Kagawa
+
+                        Ehime
+
+                        Kochi
+
+                        Fukuoka
+
+                        Saga
+
+                        Nagasaki
+
+                        Kumamoto
+
+                        Oita
+
+                        Miyazaki
+
+                        Kagoshima
+
+                        Okinawa
+
+                        Ansan-si
+
+                        Busan
+
+                        Chungcheongbuk-do
+
+                        Chungcheongnam-do
+
+                        Daegu
+
+                        Daejeon
+
+                        Gangneung-si
+
+                        Gangwon-do
+
+                        Gumi
+
+                        Gwangju
+
+                        Gyeonggi-do
+
+                        Gyeongsangbuk-do
+
+                        Gyeongsangnam-do
+
+                        Gyung Buk
+
+                        Incheon
+
+                        Jallanam-do
+
+                        Jangan-gu
+
+                        Jeju-do
+
+                        Jeollabuk-do
+
+                        Jeonju
+
+                        Sejong
+
+                        Seoul
+
+                        Suwon
+
+                        Ulsan
+
+                        Aguascalientes
+
+                        Baja California
+
+                        Baja California Sur
+
+                        Campeche
+
+                        Chiapas
+
+                        Chihuahua
+
+                        Coahuila
+
+                        Colima
+
+                        Durango
+
+                        Federal District
+
+                        Guanajuato
+
+                        Guerrero
+
+                        Hidalgo
+
+                        Jalisco
+
+                        Mexico State
+
+                        Michoacán
+
+                        Morelos
+
+                        Nayarit
+
+                        Nuevo León
+
+                        Oaxaca
+
+                        Puebla
+
+                        Querétaro
+
+                        Quintana Roo
+
+                        San Luis Potosí
+
+                        Sinaloa
+
+                        Sonora
+
+                        Tabasco
+
+                        Tamaulipas
+
+                        Tlaxcala
+
+                        Veracruz
+
+                        Yucatán
+
+                        Zacatecas
+
+                        Alabama
+
+                        Alaska
+
+                        Arizona
+
+                        Arkansas
+
+                        California
+
+                        Colorado
+
+                        Connecticut
+
+                        Delaware
+
+                        District of Columbia
+
+                        Florida
+
+                        Georgia
+
+                        Hawaii
+
+                        Idaho
+
+                        Illinois
+
+                        Indiana
+
+                        Iowa
+
+                        Kansas
+
+                        Kentucky
+
+                        Louisiana
+
+                        Maine
+
+                        Maryland
+
+                        Massachusetts
+
+                        Michigan
+
+                        Minnesota
+
+                        Mississippi
+
+                        Missouri
+
+                        Montana
+
+                        Nebraska
+
+                        Nevada
+
+                        New Hampshire
+
+                        New Jersey
+
+                        New Mexico
+
+                        New York
+
+                        North Carolina
+
+                        North Dakota
+
+                        Ohio
+
+                        Oklahoma
+
+                        Oregon
+
+                        Pennsylvania
+
+                        Rhode Island
+
+                        South Carolina
+
+                        South Dakota
+
+                        Tennessee
+
+                        Texas
+
+                        Utah
+
+                        Vermont
+
+                        Virginia
+
+                        Washington
+
+                        West Virginia
+
+                        Wisconsin
+
+                        Wyoming
+
+State/Province
+
+Please select your State
+
+            What best describes your current interest? 
+
+Learning: Expanding my knowledge
+
+Searching: Investigating technologies for my applications
+
+Investing: Buying in one year
+
+Purchasing: Actively in the buying process
+
+Do you have any questions about these instrument(s) or applications?
+
+            Please add me to your email list for webinar invitations, product announcements, and local event updates. 
+
+Opt-in
+
+By submitting this form I confirm that I would like to be contacted by Bruker. I have taken note of the Bruker Website Privacy Notice and I agree to the Terms of Use of the Bruker website.
+
+Please accept the Terms and Conditions
+
+Privacy Notice
+
+Terms of Use
+
+Download Full-Length PDF
+
+  * Please fill out the mandatory fields.
+
+                    © Copyright Bruker 2026
+
+Terms of Use
+
+Imprint
+
+Privacy Notice
+
+UKMSA
+
+Cookie Notice
+

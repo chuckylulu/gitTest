@@ -1,0 +1,209 @@
+
+
+High-Resolution 3D X-ray Inspection for Advanced Packaging: Insights from HBM Micro-Bump Analysis - Dragonfly
+
+Products
+
+Dragonfly 3D World
+
+Dragonfly 3D View
+
+Dragonfly Session Viewer
+
+Add-ins
+
+License Models
+
+Support & Training
+
+Support Plan
+
+Training
+
+Features
+
+Features
+
+Applications
+
+Features
+
+Overview
+
+Applications
+
+Quality Assurance
+
+Material Sciences
+
+Geoscience
+
+Life Sciences
+
+Museum Collections
+
+Food Sciences
+
+Resources
+
+Application Notes
+
+Publication Spotlight
+
+Tutorials
+
+Sample Datasets
+
+Manuals
+
+User Manuals
+
+Developers Manuals
+
+Blog
+
+FAQs
+
+Support
+
+Get Help
+
+Support Plans
+
+Training
+
+System Requirements
+
+Company
+
+About us
+
+Partners
+
+Events
+
+Career
+
+Community
+
+Dragonfly Social
+
+Academic License Program
+
+Get a Free Trial
+
+Request a Quote
+
+Contact Us
+
+Apply for an Academic License
+
+Home
+
+Resources
+
+Publication Spotlight
+
+High-Resolution 3D X-ray Inspection for Advanced Packaging: Insights from HBM Micro-Bump Analysis
+
+High-Resolution 3D X-ray Inspection for Advanced Packaging: Insights from HBM Micro-Bump Analysis
+
+High-Resolution 3D X-ray Inspection for Advanced Packaging: Insights from HBM Micro-Bump Analysis
+
+As electronic devices evolve to include more functionality in smaller form factors, advanced packaging—integrating multiple semiconductor components into a compact 3D structure—has become essential. This growing complexity, particularly in technologies like high-bandwidth memory (HBM), poses significant challenges for quality control. Traditional 2D X-ray radiography often falls short when it comes to identifying sub-micron defects in critical interconnects such as micro-bumps and through-silicon vias (TSVs).
+To address this, our research explores the application of high-resolution 3D X-ray imaging—to inspect HBM stacks at unprecedented detail. We focused on evaluating 20 µm micro-bumps in an HBM  stack, where sub-micron voids and cracks can critically affect performance and yield.
+The workflow began with a rapid 30-second nano-CT overview scan at 2.6 µm voxel size, which provided a full-field visualization of the HBM sample. Despite the quick acquisition, the image quality was sufficient to for an overview investigation of the HBM micro-bumps such as alignment and missing bumps for example. This also served as a guidance for selection of regions of interest (ROIs) for detailed analysis.
+A subsequent high-resolution scan at 600 nm voxel size, taking approximately 75 minutes, enabled us to clearly resolve structural features such as cracks and voids within individual micro-bumps and TSVs.
+Using the high-resolution datasets, we performed extensive 3D segmentation and quantitative analysis utilizing the Dragonfly 3D World. In total, 1275 micro-bumps and 1680 voids were identified and characterized by parameters including volume, aspect ratio, sphericity, and radii. The statistical results highlighted shape anomalies that may indicate defective joints. Most voids were small and spherical but the detection of larger and elongated voids could point to potential risks for reliability.
+Overview of micro bumps from Dragonfly 3D World with voids identified and bump bond statistics.
+3D World enables early detection of potential failure modes, supports process optimization, and helps improve overall yield in advanced packaging.
+This study demonstrates that 3D X-ray techniques, particularly nano-CT, are powerful tools for the rapid, high-resolution inspection of modern electronic packaging. As interconnect dimensions continue to shrink and integration becomes more complex, non-destructive 3D imaging will play an increasingly vital role in ensuring device reliability and accelerating innovation.
+
+Video Presentation
+
+                Your browser does not support the video tag.
+
+The data shown in the video was acquired with a total measurement time of only 30 seconds.
+
+30 second overview nano-CT of HBM micro bump stack (left) and 75 min high-resolution ROI scan (right).
+
+Zoom in of virtual slices of micro-bumps from ROI nano-CT scan showing diffrerent defects.
+
+Overview of micro bumps from Dragonfly 3D World with voids identified and bump bond statistics
+
+Publication
+
+T. Dreier, D. Nilsson and J. Hållstedt, "Fast and high-resolution X-ray nano tomography for failure analysis in advanced packaging," 
+Microelectronics Reliability
+, vol. 168, 115694, 2025. 
+https://doi.org/10.1016/j.microrel.2025.115694
+
+About the Author
+
+Julius Hållstedt
+ has worked with the development, implementation and market introduction of various X-ray solutions since 2009. He is currently head of segment for semiconductor/electronics metrology and inspection at Excillum. He received his M. Sc. degree in materials science and his Ph. D. degree in solid-state electronics from the Royal Institute of Technology (KTH), Stockholm, Sweden, in 2002 and 2007 respectively.
+
+Keywords: electronics, semiconductor, advanced packaging, micro-bumps, TSVs, nano-CT, high-resolution laminography
+
+Products & Solutions                
+
+Dragonfly 3D World
+
+Dragonfly 3D View
+
+Add-ins
+
+Features Overview
+
+Licensing Models
+
+Academic License
+
+For Industry
+
+For Research Institutes
+
+For Academics
+
+Resources & Support                
+
+Tutorials
+
+Sample Dataset
+
+Application Notes
+
+Publication Spotlight
+
+User Manuals
+
+Blog
+
+Get Support
+
+Trainings
+
+Company and Community                
+
+About Us
+
+Careers
+
+Contact Us
+
+Dragonfly Social
+
+Other Useful Links                
+
+Get a Quote
+
+End User License Agreement
+
+Cookies
+
+Privacy policy
+
+Imprint
+
+@ 2026 Comet Group
+

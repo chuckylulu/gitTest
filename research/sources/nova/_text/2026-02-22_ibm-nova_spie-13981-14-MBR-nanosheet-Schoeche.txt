@@ -1,0 +1,268 @@
+        Model-Based Raman Simulations for Optimized Metrology in
+                      Nanosheet Transistor Devices
+   Stefan Schoeche*a, Aron Ceplerb, Marjorie Chengb, Jander Cruza, Roy Koretc, Lior Baltianskyc,
+               Maor Asherc, Alexander Levyc, Igor Turovetsc, and Daniel Schmidta
+                          a
+                        IBM Research, 257 Fuller Road, Albany, NY 12203, USA
+           b
+               Nova Measuring Instruments Inc., 3342 Gateway Blvd, Fremont, CA 94538, USA
+                         c
+                           Nova Ltd., 5 David Fikes St., Rehovot, 7632805, Israel
+
+
+                                                       ABSTRACT
+
+In-line Raman spectroscopy is an increasingly important metrology technique for nanosheet gate-all-around devices
+because it provides direct access to intrinsic material properties such as strain and SiGe composition through phonon mode
+analysis. While Raman peak positions primarily reflect these intrinsic properties, peak amplitudes are jointly governed by
+material properties and the three-dimensional (3D) device geometry. This amplitude-geometry relationship becomes
+critical in fully integrated 3D device structures, where multiple materials, deep canyons, and strong near-field localization
+can drive measurement sensitivity and signal crosstalk. Here, we demonstrate the value of model-based Raman (MBR)
+simulations to (i) attribute measured Raman contributions to specific regions of complex 3D structures, (ii) optimize
+wavelength and polarization configurations for targeted sensitivity (e.g., nanosheet channel versus substrate/fin), and (iii)
+mitigate interference between signals from different materials in the structure. Proof-of-concept results on Si 1-xGex
+line/space gratings and TiN-containing stacks, as well as case studies on integrated targets after high‑k deposition and after
+pFET source/drain epitaxy, illustrate how MBR-guided configuration selection enhances sensitivity and supports robust
+in-line monitoring of strain and composition in nanosheet transistor technology.
+
+Keywords: Raman spectroscopy, model-based simulation, nanosheet transistor, gate-all-around, strain metrology, in-
+line metrology
+*Corresponding author: sschoeche@ibm.com
+
+
+1. INTRODUCTION
+
+Nanosheet gate-all-around transistors rely on strain-engineered channels and composition- and doping-
+controlled epitaxial source/drain regions to achieve higher carrier mobility and device performance [1].
+Optimization of growth conditions for doped source/drain epitaxial material in fully integrated device structures
+is challenging due to nucleation from different Si facets and complicated gas flow characteristics in deep,
+narrow geometries [2]. Raman spectroscopy has proven effective for monitoring strain and composition in
+Si/Si1-xGex nanosheet stacks via phonon mode analysis, providing a material fingerprint that is geometry-
+independent with respect to peak position [3]. However, understanding the peak amplitude information requires
+consideration of the local electromagnetic field distributions and the relative Raman scattering efficiencies from
+different regions of the device. Consequently, a model that accounts for the geometry of the sample and the
+intrinsic properties of all materials is required for full value extraction from the Raman measurement. This work
+focuses on model-based Raman simulations as a practical framework to optimize measurement configurations
+and to interpret Raman signals from complex nanosheet structures. A variety of different sample systems from
+simple blanket films over line-space gratings to complex, fully integrated structures are discussed.
+
+2. EXPERIMENTAL AND SIMULATION METHODS
+
+2.1 In-line Raman spectroscopy
+
+A typical Raman spectroscopy measurement on the Si1-xGex alloy system is shown in Fig. 1 for blanket
+nanosheet stacks where the Ge concentration was adjusted between 25% and 50%. The expected contributions
+from the Ge-Ge mode, the Si-Ge mode and the Si-Si mode are indicated. Notably, the Si–Si mode region
+exhibits strong contributions from the unstrained silicon channels and the substrate, while the Si-Si mode
+attributed to the strained Si1-xGex sheets is shifted which enables easy identification and characterization of the
+Si1-xGex nanosheet strain and composition [3].
+
+
+
+
+  Fig. 1 In-line Raman spectroscopy data for a Si/Si1-x Gex nanosheet blanket film stack for Ge concentrations between 25% and
+  50% epitaxially grown on Si substrate. Expected phonon mode contributions assigned to the strained Si 1-xGex are indicated [3].
+
+All experimental data in this study were acquired on a Nova Elipson in-line Raman tool. This tool is a multi-
+wavelength system with full continuous polarization control and a small spot size suitable for in-line
+characterization. The multi-wavelength capabilities are important because the Raman scattering efficiency in
+the Si1-xGex alloy system depends on the excitation wavelengths [4]. Selection of the suitable excitation laser
+wavelength for a given percentage of Ge in the Si1-xGex nanosheets maximizes the phonon mode amplitude and
+improves sensitivity to strain and composition. Continuous polarization control allows selection of the most
+suitable polarization state for any given Raman tensor symmetry and sample geometry. Commonly, input and
+detector polarization are either aligned parallel (Co-Pol) or the detector polarizer is rotated by 90° relative to
+the input polarization (Cross-Pol). Without simulation guidance, the optimal polarization configuration for a
+3D structure must be determined empirically and may remain ambiguous due to (unknown) overlapping signal
+contributions.
+
+2.2 Model-Based Raman simulations
+
+The model-based Raman (MBR) simulations in this paper rigorously compute local electromagnetic field
+distributions and the global scattering efficiency for each component in a 3D sample based on the device
+geometry, optical constants, and the respective Raman tensors. These simulations calculate individual Raman
+signal contributions in a 3D structure rather than relying on effective-medium or volume-averaged
+approximations. They can simulate multiple excitation wavelengths and polarization states, and near-field
+visualizations reveal the electric field hotspots that occur within the 3D structure. Optical critical dimension
+metrology (OCD) measurements can provide geometrical details and the material property input for these
+simulations.
+
+3. RESULTS AND DISCUSSION
+
+3.1 Proof-of-concept structures
+
+As a proof-of-concept, MBR was applied to patterned Si 1-xGex line/space gratings and TiN blanket films of
+varying thickness deposited on thick SiO2 films on Si substrates. The measured Raman data for Si1-xGex
+line/space of varying line height is shown in Fig. 2a. The intensity of the Si-Si phonon mode of the Si 1-xGex
+lines increases with increasing line height, i.e., an increase in volume results in an increase in the measured
+Raman intensity. The respective MBR simulation results for the full stack as determined from OCD
+measurements are in excellent agreement with the experimentally determined Si-Si phonon mode amplitude
+(Fig. 2b).
+
+
+
+
+Fig. 2 (a) Measured Raman data for Si1-xGex line/space gratings on Si with varying line height. (b) MBR simulations (red) in comparison
+to the measured Raman signal of the Si-Si mode (blue) for different line heights. (c) Measured Raman data for TiN films on thick SiO 2
+layers on Si substrate for varying TiN film thickness. The expected location for TiN phonon modes is indicated by arrows. (d)
+Experimental TiN mode amplitude (symbols) in comparison with MBR simulated Raman signal (solid line) in dependence of TiN
+thickness.
+
+Figure 2c shows measured Raman data for TiN blanket layers between 50Å and 400Å deposited on thick SiO 2
+layers. Two phonon modes expected in the depicted spectral range are indicated by arrows in Fig. 2c. A decrease
+in the measured TiN phonon signal is observed with increasing film thickness, contradicting the intuitive
+assumption that an increase in film volume should result in increased Raman signal. In this sample system,
+optical field enhancement due to interference within the thick oxide is progressively damped as the TiN layer
+thickness increases. MBR simulations predict the behavior correctly and can be used to predict optimum sample
+design to study thin layer properties on thick oxide films (Fig. 2d).
+
+3.2 Post high‑k deposition: nanosheet channel characterization
+
+Raman measurements on fully integrated nanosheet transistor structures post high-k deposition provide access
+to the strain in the released nanosheet channels at a stage where channel dimensions and strain state are largely
+fixed. A typical in-line Raman measurement is shown in Fig. 3a. The expected contribution from the Ge-Ge,
+the Si-Ge, and the Si-Si associated with the source/drain epitaxial Si 1-xGex material are indicated. The strongest
+peak in the Raman spectrum is a convolution of two peaks associated with the Si nanosheets and the Si
+fin/substrate.
+
+
+
+
+Fig. 3 (a) Typical in-line Raman spectrum of a fully integrated nanosheet transistor structure post high-k deposition. The 3D model of
+the sample structure as derived from OCD measurements is shown on the right. The typical contributions from the source/drain epitaxial
+Si1-xGex material are indicated (magenta) as well as the Si nanosheet and fin/substrate contributions (grey). (b) MBR simulations for
+contributions from Si fin/substrate and the Si nanosheet channels in dependence of the illumination polarization for two different
+wavelengths (A shorter than B) and for Co-Pol and Cross-Pol polarization configurations. Absolute simulated Raman signal and the
+ratio between nanosheet contribution and the substrate/fin signal are shown. (c) Comparison of respective experimental and MBR
+simulated Raman signals measured with wavelength A.
+
+MBR simulations can calculate the expected individual signal contributions of the Si nanosheet channel and
+the Si substrate/fin material for different polarization states and different excitation laser wavelengths. Figure 3b
+shows simulation results as a function of illumination polarization for two excitation wavelengths (A shorter
+than B), considering both Co-Pol and Cross-Pol configurations. Distinctly different signals for nanosheet and
+Si fin/substrate contributions for the two simulated excitation laser wavelengths are observed. At first glance,
+the Co-Pol configuration for wavelength B with 0° illumination polarizer angle appears the best possible
+measurement configuration since the nanosheet related signal is predicted to be highest here. However, this is
+misleading without accounting for competing signal sources. Here, the strong fin/substrate signal will dwarf
+the nanosheet signal. The more suitable quantity to consider is the ratio of the nanosheet signal to the total Si
+signal intensity plotted in the bottom of Fig. 3b. Qualitatively, quite different behavior versus illumination
+polarizer angle is seen for the two wavelengths considered, with a broad dome-shaped feature in the Cross-Pol
+signal of wavelength A and a wide plateau for wavelength B. The strongest ratio between nanosheet signal and
+total Si signal is found for the Co-Pol configuration at 0° illumination polarizer orientation of wavelength A.
+The MBR simulations for different signal sources were instrumental here in finding the nominally best
+configuration to strain in the part of interest. The MBR simulation results were confirmed experimentally with
+excellent match between predicted results and measured Raman signal for both, the Si fin/substrate contribution
+and the Si nanosheets (Fig. 3c).
+
+3.3 Influence of source/drain epitaxy on the nanosheet Si–Si phonon response
+
+To understand the impact of the sample geometry on the channel Raman response, post-HK measurements were
+compared between fully integrated targets and targets without source/drain epitaxy. Significant changes in the
+raw data within the range of the Si–Si phonon mode were observed, including changes in peak center,
+amplitude, and asymmetry (Fig. 4a). This peak is a convolution of nanosheet and Si fin/substrate signal.
+
+
+
+
+Fig. 4 (a) Experimental in-line Raman data comparison between measurements on a fully integrated target and a target with suppressed
+source/drain epitaxy post high-k deposition. (b) MBR simulated Raman signal for nanosheet and Si fin/substrate contributions for a
+fully integrated target and a target with suppressed source/drain epitaxy. (c) In-line Raman data (brown) and best-matching two-
+oscillator model for nanosheet (green) and Si fin/substrate contributions (magenta).
+MBR simulations attribute these changes to altered optical field localization and modified relative contributions
+from nanosheets versus Si fin/substrate between the fully integrated target and target without source/drain
+epitaxy (Fig 4b). For the fully integrated target, a stronger nanosheet signal is predicted compared to the Si
+fin/substrate signal, while without source/drain epitaxial material, the nanosheet signal is much weaker than the
+Si fin/substrate signal. A peak-fitting analysis with a two-oscillator model to account for both contributions
+corroborates the MBR prediction. Note that possible correlation between the two peaks was carefully examined
+and does not impact peak fitting analysis results. In conclusion, for highest sensitivity to the nanosheet strain
+properties, measurements should be performed on fully integrated targets.
+
+The near-field information extracted from the MBR simulations illustrates that in fully integrated structures the
+optical field localizes within the nanosheets, whereas in the absence of source/drain epitaxy the field may
+concentrate in the fin region below with reduced nanosheet localization (Fig. 5). These findings highlight that
+process-induced geometry and material changes can indirectly modify the measured Raman response even if
+intrinsic strain/composition remains unchanged, and that MBR is essential to separate intrinsic from
+optical/geometry-driven effects.
+
+
+
+
+Fig. 5 MBR simulations of the near-field distribution in fully integrated target and targets with suppressed source/drain epitaxy. Cross-
+section over the fin and over the source/drain and nanosheet channels are shown. Identical color scales were used with brighter colors
+indicating a higher electric field strength.
+
+3.4 Post pFET source/drain epitaxy: avoidance of interfering signals
+
+The composition, strain, and dopant concentration in the epitaxially grown B-doped Si 1-xGex (Si1-xGex:B) pFET
+source/drain material will influence the performance and the yield of the nanosheet transistor devices.
+Optimized measurement configurations ensure highest sensitivity to the properties of interest without
+interference from other materials in the structure. At this process step, two components contain Ge: high
+percentage of Ge in the source/drain epitaxial material and lower percentage of Ge in the sacrificial SiGe
+nanosheet layers. While their Si-Si phonon modes are typically well separated, the weaker Si-Ge and Ge-Ge
+modes can overlap, and it can be challenging to deconvolute them in the peak fitting analysis. Access to all
+three modes is required to characterize strain, composition, and dopant concentrations from the in-line Raman
+data. Figure 6 shows the MBR simulated Raman signal for the epitaxial Si 1-xGex:B source/drain material and
+the sacrificial Si1-xGex nanosheets in dependence of polarization configurations. For all polarization
+configurations, the source/drain epitaxial material shows much higher Raman signals than for the sacrificial
+SiGe nanosheets. Thus, the nanosheet signal can either be neglected in first order since that process is typically
+well controlled and the contribution can be assumed to be stable wafer-to-wafer, or for highest accuracy, the
+ Fig. 6 MBR simulated Raman signal post pFET source/drain epitaxy for the epitaxial Si 1-xGex:B source/drain material and the
+ sacrificial Si1-xGex nanosheets in dependence of polarization configurations (CP=Co-Pol, XP=Cross-Pol).
+
+signal strength could be injected from previous measurements without the source/drain material being present
+yet.
+
+The MBR simulations in Fig. 6 suggest that the highest signal for the source/drain epitaxial material can be
+expected for measurements in the Co-Pol configuration with illumination polarizer set to 0° (Co-Pol0).
+However, the measured Si-Ge peak amplitude was found to be highest for the Co-Pol configuration with
+illumination polarizer set to 90° (Co-Pol90, Fig. 7a). Importantly, the poly-Si in the dummy gate exhibits a
+Raman active phonon mode that overlaps with the Si-Ge mode of the epitaxial source/drain Si 1-xGex [5]. When
+the poly-Si of the dummy gate is included in the MBR simulations, a strong Raman signal is predicted for the
+Co-Pol90 configuration while a weak contribution is predicted for the Co-Pol0 configuration (Fig. 7b). In
+conclusion, the Co-Pol0 configuration is preferred to characterize the source/drain epitaxial material and the
+MBR simulations helped to identify the measurement configuration with minimum overlap from other
+components in the structure.
+
+4. SUMMARY AND CONCLUSIONS
+
+MBR simulations enable full value extractions from in-line Raman measurements by providing insights into
+the amplitude information for the complex Raman response in 3D structures. In a proof-of-concept study,
+
+
+
+
+ Fig. 7 (a) Measured in-line Raman signal of the Si-Ge phonon mode associated with the epitaxial source/drain Si 1-xGex:B for different
+ polarization configurations (CP=CoPol, XP=CrossPol). (b) MBR simulations for the Raman signal of the epitaxial source/drain Si 1-xGex
+ and for the poly-Si in the dummy gate.
+intuitive results were observed for simple line/space gratings and non-intuitive ones on TiN blanket thin films,
+both in the simulation and the experiment. For complex 3D structures, MBR provides optimum measurement
+configurations for maximum sensitivity, predicts the changing signal contributions for different structure
+modifications, for example, with and without epitaxial material, and provides guidance to avoid interfering
+signals. Near-field simulations visualize the origin of the Raman signal within the 3D structures. In conclusion,
+MBR simulations decompose complex signals for 3D structures and enable in-line Raman measurements with
+highest measurement selectivity to the properties of interest while minimizing interference from irrelevant
+contributions. More broadly, MBR establishes a physics-based framework to decouple intrinsic material
+properties from geometry- and optics-driven measurement artifacts in advanced 3D device metrology.
+
+Acknowledgements
+
+The authors would like to thank Chien-Fu Huang, Kishwar Mashooq, Trevor McDonough, Ruqiang Bao, Jun
+Liu (all IBM), Paul Isbester and Sarah Okada (both Nova Measuring Instruments) for support and fruitful
+discussions.
+
+                                               REFERENCES
+
+  1.   Loubet, N. et al., "Stacked nanosheet gate-all-around transistor to enable scaling beyond FinFET."
+       2017 symposium on VLSI technology. IEEE, pp. T230-T231 (2017).
+  2.   H. Peng, Y. Yao, K. Shariar, J. Chen, D. Mafrici and K. Briggs, "Reducing Merged Silicon-
+       Germanium (SiGe) Epitaxial Growth in FinFETs to Avoid Yield Loss," 2023 34th ASMC, pp. 1-5
+       (2023).
+  3.   Schmidt, D., Durfee, C., Li, J., Loubet, N., Cepler, A., Neeman, L., Meir, N., Ofek, J., Oren, Y. and
+       Fishman, D., “In-line Raman spectroscopy for gate-all-around nanosheet device manufacturing. “,
+       Journal of Micro/Nanopatterning, Materials, and Metrology, 21(2), pp.021203-021203 (2022).
+  4.   Picco, A., Bonera, E., Grilli, E., Guzzi, M., Giarola, M., Mariotto, G., Chrastina, D. and Isella, G.,
+       “Raman efficiency in SiGe alloys”. Phys. Rev. B—Condensed Matter and Materials Physics, 82(11),
+       p.115317 (2010).
+  5.   Tallant, D.R., et al. "Characterization of polysilicon films by Raman spectroscopy and transmission
+       electron microscopy: A comparative study." MRS Online Proceedings Library (OPL) 324, p. 255
+       (1993).
+

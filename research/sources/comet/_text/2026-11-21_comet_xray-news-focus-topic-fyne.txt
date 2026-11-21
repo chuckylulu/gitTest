@@ -1,0 +1,444 @@
+
+
+Focus Topic. FYNE - Comet X-RAY
+
+Products
+
+Product series
+
+Products explained
+
+All products
+
+Product series
+
+Product series
+
+Tubes & inserts
+
+Tubes
+
+Inserts
+
+FXE series
+
+NanoFocus
+
+MicroFocus
+
+Accessories
+
+FYNE series
+
+Transmission
+
+Xplorer series
+
+Cube
+
+ION series
+
+Modules
+
+Controllers
+
+iXRS series
+
+Ultra performance
+
+High power
+
+MesoFocus
+
+Standard
+
+Generators
+
+Accessories
+
+Controllers
+
+Software
+
+BLOX
+
+EVO series
+
+Directional
+
+Panoramic
+
+Controllers
+
+Accessories
+
+ECO series
+
+Directional
+
+Controllers
+
+Accessories
+
+XMB series
+
+Modules
+
+X-ray tubes
+
+Accessories
+
+Products explained
+
+Products explained
+
+Finding the perfect X-ray solution
+
+Finding the perfect X-ray solution
+
+Mini focus modules
+
+Sealed stationary modules
+
+Integrated modules
+
+Portable modules
+
+Mobile modules
+
+Meso focus modules
+
+Sealed stationary modules
+
+Micro focus modules
+
+Open stationary modules
+
+Sealed stationary modules
+
+Nano focus modules
+
+Open stationary modules
+
+All products
+
+All products
+
+All products
+
+Product configurator
+
+Service
+
+Service and support
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Service and support
+
+Service offering
+
+Technical support
+
+Return &  repair equipment - to Denmark
+
+EVO | ECO | ION | XMB | Y.SMART | Y.XPO series
+
+Return & repair equipment - globally, except to Denmark
+
+All product series
+
+Spare parts
+
+iXRS spare parts
+
+Product training
+
+Product training
+
+Product training
+
+Rental equipment
+
+Rental equipment
+
+Rental equipment
+
+Download center
+
+News
+
+Contact
+
+All products
+
+Get a quote
+
+Home
+
+News and more
+
+Focus Topic. FYNE
+
+FYNE – a next generation X-ray source for high-tech industries
+
+Focus topic
+
+Focus Topic. FYNE
+
+September 10, 2025
+
+Nanoscale inspection is becoming essential in advanced manufacturing. But achieving sub-micron resolution while maintaining stability, speed, and long lifetime has remained a challenge. With FYNE 160 NF4, we present strategies, data, and results that show how X-ray inspection can meet these demands and open new paths for semiconductor, electronics, and materials applications.
+
+Why FYNE, why now?
+Increased technological requirements are reshaping numerous industries towards advanced manufacturing processes requiring ever-higher levels of precision. The rise of AI, smart manufacturing and miniaturization demands inspection tools that go beyond what is currently available. The 
+FYNE 160 NF4
+ is the response to these evolving industry needs. 
+
+Download
+
+        A next generation X-ray source for high-tech industries | FYNE  (pdf)
+
+Combining the nanoscale resolution of an open tube with a factor 10 longer lifetime and exceptional focal spot stability, FYNE redefines what’s possible for X-ray inspection. For applications ranging from materials science through electronics and semiconductors to medical and biological, FYNE is dedicated to optimizing resolution and throughput in the range 400 nm to 1 um. Delivering high output power for thousands of hours of uninterrupted use, FYNE is equally at home on the production floor or in the lab.
+Here we will explore the main advantages of the 
+FYNE 160 NF4
+. We will dive into the strategies that FYNE provides for the trade-off between resolution and dose; how it enables extremely high stability even during long measurements; and how the long lifetime it achieves maximizes operational uptime. 
+How X-ray inspection enables technological progress
+Due to their unique imaging capabilities, X-ray inspection systems already provide actionable insights in quality control and process improvement in a variety of industries. Compared to destructive inspection techniques providing detailed ground truth (e.g. FIB-SEM), X-ray data can be obtained much more rapidly and in a non-destructive manner, thus providing significant added value when introducing new manufacturing processes. Furthermore, the combination of nanoscale resolution and the ability to penetrate deep into materials means that X-rays can inspect complex 3D objects, revealing defects that are hidden to other non-destructive techniques (e.g. optical inspection). This balance is summarized in Fig. 1. 
+Taking the example of electronics and semiconductor manufacturing, X-rays are often used to inspect solder bumps, with dimensions ranging from around 80-100 µm (C4 bumps) down to 10-20 µm (micro-bumps), and Through Silicon Vias (TSVs) currently with diameters of 5-10 µm. Defects in these parts, such as voids, can easily be a factor of 10 smaller than the objects themselves, meaning inspection with resolutions of tens of µm to hundreds of nm are required. Additionally, the required inspection dimensions are expected to shrink considerably in the coming years, especially as new technology such as hybrid copper bonding becomes more prevalent [2]. However, it is a significant challenge to achieve the extremely high resolution, imaging stability and speed, together with long lifetime and minimal maintenance demanded by advanced industrial environments. This is exactly the challenge that Comet X-ray set out to address with the 
+FYNE 160 NF4
+.
+
+Figure 1. Acquisition times and characteristic dimensions of three inspection techniques employed in industrial applications.
+
+What is needed to characterize a source? 
+A simplified sketch of our imaging setup is shown in Fig. 2. X-rays from the source pass through a sample and an image is produced on the detector due to the absorption contrast coming from the different materials in the sample. For testing the resolution of the source, we use etched gold structures of different sizes on a silicon substrate. Gold has a much higher X-ray absorption than silicon, therefore it appears darker on the detector.
+This sample is mounted on an electronically controlled manipulator, allowing precise motion across the sample to access structures of different size. Behind the sample sits a digital flat panel detector, on which an image of the sample is generated. These components are mounted on a granite block to reduce vibrations and placed within a thermally regulated X-ray cabinet.
+It is the stability of this entire chain of components – source, manipulator, sample and detector – which determines the resolution capabilities of any X-ray system. They are known collectively as the imaging chain. 
+
+Figure 2. The setup for characterization measurements performed at Comet X-ray with FYNE.
+
+How is resolution defined in our measurements?  
+Spatial resolution characterizes an imaging system’s ability to distinguish between two objects placed closely together (for an in-depth look at this subject, please see our “Behind the Image” focus topic). We use a standardized mask for our resolution measurements. The mask is comprised of groups of gold lines on a silicon substrate spaced by distances of a fixed value in each group. An example of a 0.4 µm structure is shown in Fig. 3, where it is clearly possible to visually distinguish the line structures. Due to the symmetric focal spot of the FYNE source, this clear distinction is achieved on both axes simultaneously, meaning the 0.4 µm structure is resolved. However, a more rigorous definition of resolution is required to deal with cases that are less obvious. 
+Resolution in such small structures is typically defined with reference to the modulation achieved in the region between line groups of gold lines. The larger the modulation, the better resolved are the lines. At some point, the modulation becomes too small, and the feature are no longer resolved. Typically, modulations in the range of 5% - 20% are used to define when a structure is resolved. In Fig. 4 we show schematic line cuts illustrating how modulation changes for structures of different sizes. 
+An important point to note is that achieving resolutions of hundreds of nanometers does not require a source focal spot size of the same dimensions. By exploiting optical magnification, it is possible to resolve structures considerably smaller than the size of the source focal spot. A very high magnification can be achieved by combining a short Focal spot to Object Distance (FOD) and a large Focal spot to Detector Distance (FDD). Nevertheless, a small focal spot is one important requirement for achieving nanoscale resolution. 
+
+Figure 3. An X-ray image of a standard mask showing a well-resolved 0.4 µm (400 nm) gold structure.
+
+How is dose defined in our measurements?  
+X-ray dose can refer both to the X-ray energy that the sample is exposed to and to the energy that reaches the detector. When discussing dose in the following we are referring to the grey value of the detector, i.e. the signal output following conversion of X-rays into an electrical signal and averaged over a region of the detector. 
+
+“Typically, modulations in the range of 5% - 20% are used to define when a structure is resolved.”
+
+Figure 4. Schematic line cuts through line groups of two different sizes. The modulation achieved in the smaller structures (upper) is less than in the larger structure (lower). The larger structures are therefore better resolved. If the modulation becomes too low to differentiate between lines and the structure with that size is not resolved.
+
+What makes FYNE such a great X-ray source?
+
+1a. Fast measurement at nanoscale resolution - background
+Understanding the interplay between resolution and dose in nanoscale imaging is critical to ensuring an efficient imaging setup. There are two main effects that compete: electron trajectory and electron penetration. We will briefly explain how this competition arises and what strategies exist to deal with it. In an X-ray tube, electrons are ejected from an emitter and accelerated under high voltage in vacuum onto a target material. The resulting collision of electrons with the target atoms produces X-rays [3]. The 3D interaction region within the material determines the focal spot volume of the X-ray source. At higher acceleration voltages the trajectories of electrons originating from the emitter are less able to spread due to the influence of the stronger electric field between the anode and cathode.
+The result is a smaller lateral spread of the electrons reaching the target (see Fig. 5a), hence a reduction of the focal spot size and an increase of the resolution. However, at higher acceleration voltages, the electrons also have higher kinetic energy as they reach the target. Higher kinetic energies result in an increase of the average time between collisions with the atoms of the target material [4]. This means electrons can propagate further into the target, inducing additional lateral spreading through scattering with the target atoms. As a result, the focal spot volume increases and the ultimate resolution decreases (see Fig. 5a). The balance of these two effects determines the focal spot size.
+
+Fig. 5. A) As acceleration voltage increases the electron spread reaching the target reduces, and at the same time the penetration depth within the target material increases. B) By adjusting the target thickness, it is possible to select the desired interaction volume, maximizing dose for a particular resolution.
+
+This makes it clear that the target thickness plays an important role in determining the X-ray interaction volume and therefore the focal spot size. In a thick target the electrons can scatter laterally into the volume of the target, and this scattering increases at higher acceleration voltages. The increased volume results in a larger focal spot which limits the resolution, but also provides higher dose for the same reason. In a thicker target, the resolution is limited primarily by the scattering of electrons that can occur throughout the 3D volume.
+One way to achieve higher resolution is therefore to limit the thickness of the target (see Fig. 5B). This reduces the potential for lateral propagation of the electrons within the material and limits the focal spot volume. The disadvantage to this approach is quite clear: reducing the interaction volume reduces the maximum X-ray dose that can be produced. 
+
+Figure 6. Spatial resolution and grey value as a function of source extraction voltage for two distinct configurations. The optimal performance of the X-ray tube depends on the application.
+
+1b. Fast measurement at nanoscale resolution- example 
+Let’s now take two examples to illustrate these effects in the real FYNE 160 NF4 source. In Fig. 6 we show data for two possible source configurations across the accessible voltage range (60 – 160 kV). In the first example, using a thicker target, the spatial resolution is approximately constant across the entire voltage range at around 1.2 µm. However, the dose reaching the detector varies by almost 80% over the same range. In addition, compared to the dose in the second example using a thinner target the dose achieved in this case is higher at all voltage points, and considerably higher at larger voltages. The disadvantage to this arrangement is that the dose varies strongly at different operating points, and the ultimate resolution is limited. The higher dose and limited resolution can be understood from the discussion above: a larger interaction volume produces more dose, but also increases the lateral focal spot size. These settings are therefore appropriate for applications requiring consistent resolution across a large voltage range and higher X-ray flux. 
+The second configuration shown in Fig. 6 uses a thinner target than the first. In this case, the behavior across the voltage range is completely different to the thicker target. In particular, the resolution changes at different acceleration voltages. 
+This is due to the stronger electric field resulting in a smaller spread on the target, which is not cancelled out by lateral spreading within the target. The target chosen here is designed to maximize dose while achieving a resolution of 0.4 µm (400 nm) at a specific operating point of 160 kV. However, as is clear in the comparison with the first case, the total dose obtained is less than for the thicker target. In general, higher spatial resolution means reduced X-ray flux. Therefore, when planning nanoscale imaging it is critical to consider the real operating point of the source and the resolution required for an application, and to maximize the dose for these requirements. Selecting for the highest achievable resolution will mean reduced dose, and if such a high resolution is not required will result in a significant loss of inspection efficiency.
+The key takeaway is therefore: it is critical to optimize the source for the specific requirements of an application - FYNE allows this flexibility.
+
+2. Exceptional focal spot stability
+Given the precision required to perform sub-micron imaging measurements, the X-ray source also needs to be highly stable to prevent the “virtual” focal spot size becoming too large for the application. The virtual focal spot is the size of the focal spot plus any movement due to drifts averaged over the duration of a measurement (see Fig. 7). Typical measurement lengths may be between a few seconds for 2D images to many hours for detailed 3D scans. Therefore, low drift behavior can be critical. 
+To illustrate the high stability of the FYNE source, we performed drift measurements over a period of 24 hours. No adjustments or corrections were made to the source during that time. The source, sample manipulator and detector are connected via a granite block within the X-ray cabinet to minimize the influence of vibrations. To determine the drift, we did the following. A sample with a circular gold structure was placed in the center of the field of view and imaged at a fixed operating point of 120 kV. The position at time T is determined by subtracting the image of the gold structure taken at time t = T from the image of the same structure taken at t = 0. The pixel shift is then converted into a real space shift in X and Y directions. The measurements are performed adjustment-free across the entire time range i.e. the beam position is not controlled in any way during the entire measurement. 
+Important to note is that it is not possible to fully disentangle a shift of the image caused by intrinsic drift of the focal spot from a drift caused by changes in the rest of the imaging chain e.g. thermalization of the mechanical supports or thermalization of the sample (which is placed directly in front of the source). Initially there is a period during which the entire mechanical system thermalizes. 
+The measurements are summarized in Fig. 7. The result is the combined stability of the entire imaging chain, not only of the focal spot. Following thermalization of the system, the drift velocity in the Y-direction is 0.029 µm/hour, while in the X-direction it is only 0.012 µm/hour is observed. The maximum total deviation of the focal spot across the measurement is therefore below the resolution of the source (0.4 µm). These values are up to a factor 100 smaller compared with some alternative open tube designs. Such a small drift velocity is remarkable given that no active beam stabilization is employed at any point during the measurement.
+
+Figure 7. Schematic illustrating how the drift of the focal spot can lead to a large virtual focal spot during measurements (right fig.). Stability measurements of the imaging chain (left fig.). The shaded area represents the time for thermalization of the imaging chain.
+
+3. Long source lifetime
+Since FYNE is an “open” X-ray source, meaning it can be physically opened and maintained allowing replacement of critical parts, the lifetime of the source is technically unlimited. This is a factor to consider when calculating the total cost of ownership of an inspection system, as sealed tubes must be replaced at regular intervals. Nonetheless, in inspection applications it is crucial to maximize uptime and reduce the regularity with which maintenance must be performed, especially if used in a production environment for at-line or even in-line processes. An especially sensitive component in nanoscale imaging applications is the electron emitter unit, which in classical open tube design has a lifetime on the order of hundreds of hours, although this varies widely depending on the operating parameters. As an example, assuming an average operation of only 8 hours per day, a filament with 500 hours of lifetime would need to be exchanged every 2 months. Extending this period is critical to increasing uptime in both lab and industrial settings. 
+
+Figure 8. Resolution measurements performed over a period of 11 months to determine the lifetime of the source.
+
+We performed a lifetime measurement using the imaging setup of Fig. 2. The metric chosen for the measurement was the spatial resolution in the X and Y directions over time. A 0.6 µm structure was imaged at an operating point of 120 kV. The 
+FYNE source
+ was run continuously for the duration of the test, without any pause in operation. The results are summarized in Fig. 8. No significant change in resolution is observed even after more than 2600 hours of source operation. Under the previous example of 8 hours per day operation, this would translate to around 11 months of operation without maintenance. Certainly, many factors play a role in determining the source lifetime and the parameters that are chosen as a metric are application specific and cannot be generalized here. However, the measurements highlight the order of magnitude of source lifetime that can be achieved with FYNE: thousands of uninterrupted operating hours.
+
+Key takeaways for FYNE
+X-rays inspection allows actionable insights into challenging samples down to the nanoscale, including critical defects in advanced packaging.
+To exploit these capabilities requires an optimized design of the entire imaging chain, as well as software and workflows specific to the desired application. 
+FYNE provides the option to optimize for specific applications. 
+We presented results from two possible configurations with properties appropriate to different use cases: a flexible configuration with high flux and one specifically targeted at 0.4 µm resolution.  
+A balanced approach to resolution and dose is critical to maximizing inspection efficiency in any application. 
+Exceptional stability with drift velocities as low as tens of nanometers per hour are obtained. 
+The emitter unit performs 10x longer than our previous open tube designs, with thousands of hours of continuous operation without diminishing the resolution capabilities. 
+These results show that 
+FYNE 160 NF4
+ meets the challenges of industrial high-resolution imaging, including those in semiconductor applications, thereby opening new routes to reduce development time and accelerate production quality.  
+
+Specification
+
+FYNE-160.NF4
+HV range
+60 to 160 kV
+Emitter type
+LaB6
+Max. target power
+6 W *
+Target material
+Tungsten
+Permanent filtration
+Carbon
+Beam angle
+170°
+Min. focus object distance 
+300 µm
+Max. resolution
+400 nm **
+Focal spot stability    
+<0.1 µm/h
+Microfocus tube W, H, L 
+164, 264, 575 mm
+Weight
+28 kg
+HVPS W, H, L
+318, 232, 741 mm
+Weight
+37 kg
+High voltage cable
+R24 Spring loaded connectors
+Diameter
+29 mm
+Bending radius, static / dynamic
+58 / 116 mm
+Control panel W, H, L
+697, 876, 166.5 mm
+* Target power is not a good indicator of dose
+** JIMA or equivalent
+
+References
+L. Yee, M. Chui, R. Roberts, M. Isser, “Technology Trends Outlook”, McKinsey & Company, 2024.
+J. H. Lau, “Current Advances and Outlooks in Hybrid Bonding”, EEE Transactions on Components, Packaging and Manufacturing Technology, 2025
+C. MacDonald, “An Introduction to X-Ray Physics, Optics, and Applications”, Princeton University Press, 2017.
+Seah, M. P.; Dench, W. A. (1979), “Quantitative electron spectroscopy of surfaces: A standard data base for electron inelastic mean free paths in solids”, Surface and Interface Analysis, 1: 2–11 (1979)
+
+Get in touch
+
+Latest three news
+
+Spotlight on Shelton. Featuring Pierre Niepel
+
+November 19, 2026
+
+Meet Pierre Niepel, 20 years in medical imaging, now leading Comet X-ray sales in the Americas. Pierre Niepel has joined Comet X-ray as Head of Sales Americas, based at our U.S. site in Shelton, Connecticut. He spent about 20 years in the U.S. medical imaging market, working at Siemens Healthineers and Boston Imaging before running his own advisory business. Pierre brings experience from the equipment-manufacturer side of the industry, and a clear view of what customers expect from their suppliers. We asked him why he joined Comet, where he intends to start, and how he sees customer relationships developing.
+
+Read more
+
+Focus topic. Semiconductor segment insights
+
+November 10, 2026
+
+The semiconductor industry has mastered the art of precision. Nanometer-scale processes, extensive testing, and sophisticated control systems create an environment that appears highly predictable. But while process control continues to improve, many of today's most critical defects are becoming harder to see as they disappear inside complex, multi-layer structures. As advanced packaging reshapes the industry, visibility itself is emerging as a decisive factor in manufacturing success.
+
+Read more
+
+Welcome Andreea!
+
+November 2, 2026
+
+Meet Andreea Vasiliu, our new Vice President of Global Sales!
+
+Andreea brings extensive international sales and leadership experience and knows Comet well from her previous roles within Plasma Control Technologies. During more than eight years with the company, she held several global and regional sales leadership positions, most recently as Director Sales EMEA and Vacuum Capacitors Global. 
+
+Since 2024, she has served as General Manager Europe and RoW at VAT Group.
+
+Read more
+
+Back
+
+Back
+
+Service                
+
+Service offering
+
+Technical support
+
+Returns & repairs - globally
+
+Returns & repairs - to Denmark
+
+Spare parts
+
+Product training
+
+Rental equipment
+
+Contact                
+
+Comet X-ray offices
+
+Local contacts
+
+Supply chain
+
+Applications
+
+Additive manufacturing
+
+Aerospace
+
+Automotive
+
+Battery
+
+Electronics
+
+Irradiation
+
+Other NDT
+
+Oil & gas
+
+Security
+
+Sorting
+
+Thickness gauging
+
+About us                
+
+Annual Appreciation Award 
+
+Comet
+
+Comet X-ray
+
+Open positions
+
+Poster gallery
+
+News                
+
+News and more
+
+Virtual Patent Marking
+
+Cookies
+
+Disclaimer
+
+Imprint
+
+Privacy policy
+
+© 2026 Comet Group
+

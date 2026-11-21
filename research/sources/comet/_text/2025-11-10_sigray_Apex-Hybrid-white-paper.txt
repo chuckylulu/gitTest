@@ -1,0 +1,647 @@
+    Apex-Hybrid
+    Laminography and Tomography System                                                                    White Paper
+
+
+
+
+       White Paper
+
+
+
+
+       Nanoscale Resolution at 0.35µm with the
+       Apex-Hybrid
+       Laminography and Tomography System
+
+       The Sigray Apex-Hybrid combines ultrahigh-resolution x-ray microscopy and
+       a patented laminography technique in one flexible system. It allows users to
+       choose between scanning large, flat samples efficiently or achieving high-
+       quality images of smaller samples.
+
+       This white paper will review the design innovations behind Apex-Hybrid.
+
+
+
+
+                                  Quantum Design GmbH         Dr. Andreas Bergner: +49 6157 80710-12
+                                  Breitwieserweg 9            bergner@qd-europe.com
+1                                 D-64319 Pfungstadt          Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                       White Paper
+
+                                                                                                                                            White Paper
+
+
+
+    Nanoscale Resolution at 0.35µm with the
+    Apex-Hybrid
+    Authors: Sylvia Lewis, Dr. Wenbing Yun, Jeff Gelb | Sigray, Inc.
+
+
+
+    System Overview: Sigray Apex-Hybrid is a dual-mode x-ray
+    system designed for both the laminography of large, flat
+    samples     and    ultrahigh-resolution      microtomography         of                                                              50µm
+    conventional samples. It offers several key advantages:
+
+    •   Highest resolution: Achieves <400 nm resolution with
+        high throughput in both modes.
+
+    •   Superior      image     quality:     Minimizes     laminography
+        artifacts with Precision Angle Laminography™ (PAL)
+        technology.
+
+    •   Fast imaging: Performs 3D x-ray scans in as little as a few
+                                                                                                                      0.5µm Resolution System
+        minutes for samples ranging from small components to
+        large PCBs.
+
+
+
+
+                                                                                                                                       Apex-Hybrid
+
+
+
+
+    Figure 1: A cross-sectional slice from a 3D tomography dataset of an NTT
+    resolution standard with line pairs, showing <0.4 µm (<400 nm) spatial
+    resolution capabilities. The image was acquired in laminography mode on
+    the Apex-Hybrid.
+
+                                                                                 Figure 2: The Apex-Hybrid system delivers superior image quality and
+                                                                                 resolution compared to other leading systems. This image shows the same
+                                                                                 sample captured in laminography mode on the Apex-Hybrid at a low slant
+                                                                                 angle (15 degrees). Red arrows highlight defects clearly detected with the
+                                                                                 Apex-Hybrid.
+
+
+
+
+                                                                                                                                                         2
+
+
+                                              Quantum Design GmbH              Dr. Andreas Bergner: +49 6157 80710-12
+                                              Breitwieserweg 9                 bergner@qd-europe.com
+2                                             D-64319 Pfungstadt               Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                           White Paper
+                                                                                                                                               White Paper
+
+
+
+
+    Background
+    The Apex-Hybrid was originally developed to address                                                                                       50µm
+    challenges         in   semiconductor     failure    analysis,     where
+    laboratories work with everything from large PCB boards
+    and heterogeneous packages to small, trimmed samples. It
+    seamlessly switches between two imaging modes to enable:
+
+    •     Laminography mode for imaging intact, large samples.
+
+    •     Tomography mode for high-resolution, artifact-free
+          imaging of smaller samples.
+
+
+    Beyond semiconductors, the system also benefits biological
+    and geological research (handling both thin sections and
+    cylindrical/amorphous samples), as well as central research                          Tomography Mode
+    labs, where sample diversity is a constant challenge.
+
+    Figure 3A
+        x-ray source                                        detector
+        spot                                                                                                                          1.4µm
+                            sample
+
+
+
+
+                                                                                                                                             Zoom-in
+                                                                                   Figure 4: A memory device was acquired at 0.27 µm in tomography mode
+    Figure 3B                                                                      on the Apex-Hybrid. Fine details, such as burrs, are visible, and a ~1 µm
+        x-ray source
+                                                                                   defect is clearly resolved.
+        spot
+
+
+
+
+                                     sample
+                                                           detector
+
+
+
+
+    Figure 3: The Apex-Hybrid switches between tomography (Fig. 3A) and
+    laminography (Fig. 3B) modes. The source and detector are both on
+    rotating gantries, allowing the x-ray beamline to pivot around the sample.
+    The two-in-one design provides enhanced capabilities without the added
+    cost of a second x-ray source and detector.
+                                                                                   Figure 5: A large array of 5 µm diameter TSVs on a 300 mm wafer is shown.
+                                                                                   The full FOV appears in the left image, while bridging—highlighted with teal
+                                                                                   dotted circles—is visible in the three zoomed-in images on the right.
+
+
+
+
+                                                                                                                                                             3
+
+
+
+
+                                               Quantum Design GmbH               Dr. Andreas Bergner: +49 6157 80710-12
+                                               Breitwieserweg 9                  bergner@qd-europe.com
+3                                              D-64319 Pfungstadt                Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                          White Paper
+                                                                                                                                               White Paper
+
+
+
+
+    A New Architecture: Precision Angle                                            2. Moving Source and Detector, Fixed Sample (Fig. 7):
+    Laminography (PAL)                                                             In this approach, the sample remains stationary while the
+    For laminographic acquisitions, the Apex-Hybrid employs its                    x-ray source and/or detector move around it. This allows
+    patented [1] Precision Angle Laminography (PAL) method,                        for an x-ray-transparent sample stage but requires heavy
+    which significantly enhances image quality compared to                         components (e.g., the x-ray source) to rotate at high speeds,
+    traditional laminography.                                                      making     submicron       precision     difficult.   The     mechanical
+                                                                                   instability from these rapid movements reduces resolution
+    PAL achieves superior performance through two key design                       and limits how close the source and detector can get to the
+    advantages:                                                                    sample, restricting the minimum slant angle.
+
+    •    Smaller slant angles to minimize artifacts.
+                                                                                                                 rotating
+                                                                                                                 detector
+    •    Precise motion control to enhance mechanical
+         resolution.
+
+
+    Conventional Laminography Approaches: To understand
+    how PAL differs from traditional laminography, it’s important
+    to first review two common designs:
+
+                                                                                                                                      sample
+    1. Fixed Source, Rotating Sample (Fig. 6): An x-ray source is
+    placed beneath a rotating stage that moves the sample during
+                                                                                                                                          sample stage
+    imaging. Achieving shallow slant angles requires a large rotary                         rotating x-ray
+                                                                                            source spot
+    stage aperture, but this weakens structural integrity due to
+    mechanical and machining constraints. Accommodating large
+                                                                                   Figure 7: Conventional geometry that involves moving the source and/or
+    samples, like 300 mm wafers, would demand an impractically                     detector faces challenges due to their heavy weight. This makes it difficult
+    large aperture and system footprint. As a result, most                         to achieve submicron smooth motion, thereby limiting resolution.
+    manufacturers use smaller apertures, significantly limiting
+    achievable slant angles (measured from the sample surface
+                                                                                   Apex-Hybrid’s PAL Architecture
+    to the optical axis, as shown in Fig. 6).
+                                                                                   The patented PAL architecture overcomes these limitations
+                                       detector                                    by using a fixed x-ray source and detector, with the sample
+                                                                                   placed on a high-precision air-bearing rotary stage. Unlike
+                                                                                   standard mechanical rotary stages, which rely on bearings,
+                                                                                   are prone to wobble, and require maintenance, air-bearing
+                                                                                   stages use a cushion of compressed air for near-zero wobble.
+
+
+                                                                                   To maximize the benefits of the air-bearing stage, Apex-
+                       x-ray source                                                Hybrid positions the x-ray source above the sample, which is
+                                          slant angle   sample
+                       spot
+                                                                                   mounted on a carbon fiber holder. This design elevates the
+                                                                                   sample above the rotary stage (Fig. 8), allowing for:
+        x-ray source
+               body
+                                                  rotary stage                     •    Shallow slant angles           (10–20°): The elevated sample
+                                                                                        avoids aperture constraints.
+                              rotary stage
+                             aperture width                                        •    Close source proximity: Enhances spatial resolution.
+
+    Figure 6: Conventional geometry, in which the sample moves, uses a rotary      •    Stable imaging: A stationary source and detector prevent
+    sample stage. This approach limits acquisitions to larger slant angles due          mechanical limitations on resolution.
+    to the restricted rotary stage aperture width.
+
+
+
+
+                                                                                                                                                             4
+
+
+
+                                                        Quantum Design GmbH      Dr. Andreas Bergner: +49 6157 80710-12
+                                                        Breitwieserweg 9         bergner@qd-europe.com
+4                                                       D-64319 Pfungstadt       Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                                White Paper
+                                                                                                                                                       White Paper
+
+
+
+
+                                  x-ray source
+                                  body
+                                                           sample
+             x-ray source
+                                        slant angle
+             spot
+
+
+
+
+                                                                                                                                 Unclear standoff height
+
+                                                                      detector                                                                        100µm
+                                                air-bearing
+                                                rotary stage
+                                                                                         Figure 10A: Laminography at a standard 30° slant angle: Angled “streak”
+    Figure 8: Sigray’s PAL geometry enables the use of an air-bearing rotary             artifacts (red arrows) are present, making it difficult to measure stand-off
+    stage by employing a sample mount that offsets the sample from the stage.            heights (SOH) and distinguish RDL layers.
+    This design allows for slant angles as shallow as 10°.
+
+
+
+    Why are Small Slant Angles Desirable?
+    Shallow angles reduce laminographic artifacts, particularly
+    the “missing cone” effect in Fourier space (Fig. 9). The cone’s
+    angle relative to the Y-axis corresponds to the slant angle—
+    shallower angles result in less missing data.
+
+
+                                                                                                                                            Clear standoff height
+                            “missing cone”                          “missing cone”
+
+                                                                                                                                                      100µm
+                             larger slant                            shallow
+                             angle                                   slant angle
+                                                                                         Figure 10B: Apex XCT image at a low 13° slant angle: Laminographic
+                                   fx                                      fx            artifacts are reduced, making RDL layers clearer. A blue arrow highlights
+                                                                                         a void that is more visible at this angle and might have been missed at a
+                                                                                         higher slant.
+        fy                                    fy
+
+                                  sample                                 sample
+                                  information                            information
+    Figure 9: Laminographic acquisition creates a “missing cone” in Fourier              While shallower angles reduce artifacts, they also increase the
+    space, similar to the “missing wedge” in limited-angle tomography [2].               material thickness that x-rays must pass through, potentially
+    Shallower slant angles result in a smaller “missing cone” (right). The missing
+    cone angle depends on the slant angle.
+                                                                                         lowering throughput. However, these artifacts are less
+                                                                                         problematic for vertical features like TSVs and hybrid bonds,
+                                                                                         as their Fourier transformation falls outside the “missing
+                                                                                         cone.” A slant angle of around 20° often provides a good
+    Laminographic artifacts primarily affect vertical cross-
+                                                                                         balance.
+    sections rather than horizontal ones, as shown in Figure 10:
+
+    •        Fig. 10A: Conventional laminography, which typically
+             achieves only 30–40° slant angles, shows significant
+             limitations.
+
+    •        Fig. 10B: PAL’s low slant angles provide clearer imaging.
+
+
+
+
+                                                                                                                                                                    5
+
+
+
+
+                                                      Quantum Design GmbH              Dr. Andreas Bergner: +49 6157 80710-12
+                                                      Breitwieserweg 9                 bergner@qd-europe.com
+5                                                     D-64319 Pfungstadt               Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                             White Paper
+                                                                                                                                            White Paper
+
+
+
+
+    Apex-Hybrid                Comparison               to   Other      Sigray     EclipseXRM (Tomography) and Apex-Hybrid:
+    Products
+    Sigray offers three advanced 3D x-ray product lines: Apex,
+                                                                                           Capability           EclipseXRM             Apex-Hybrid
+    Apex-Hybrid, and EclipseXRM, each with distinct capabilities.
+    Since Apex-Hybrid integrates features from both Apex and                            Spatial Resolution         300 nm                  350 nm
+    EclipseXRM, understanding their differences is essential.
+                                                                                                                                       Laminography
+                                                                                         Aqusition Modes         Tomography
+                                                                                                                                        Tomography
+    Apex XCT (Laminography) and Apex-Hybrid:
+                                                                                                                Dual Detectors         Single Detector
+                                                                                            Detector
+                                                                                                                (Up to 27 MP)           (Up to 13 MP)
+
+            Capability               ApexXCT                  Apex-Hybrid
+                                                                                                               10 x 70 x 100 mm       100 x 20 x 100 mm
+                                                                                       Max XYZ Stage Travel
+                                                                                                                  (XYZ Stage)            (XYZ Stage)
+         Spatial Resolution         500-600 nm                    350 nm
+
+                                                                                           X-ray Source          Open Tube               Open Tube
+                                                              Laminography
+          Aqusition Modes          Laminography
+                                                               Tomography
+                                                                                       Source-Detector Dist                               650 mm
+                                                                                                                  1,300 mm
+                                  300 mm diameter            100 x 20 x 100 mm              (Geo Mag)
+        Max XYZ Stage Travel    (Theta-R-Theta Stage)           (XYZ Stage)
+                                                                                   Table 2: EclipseXRM and Apex-Hyrid Comparison.
+        EFEM for In-line Use            Yes                  On the Roadmap
+
+                                                                                   EclipseXRM and Apex-Hybrid are built on distinct system
+                                    Sealed Tube                 Open Tube
+            X-ray Source
+                                       25 W                       16 W             architectures, leading to significant differences:
+    Table 1: Apex XCT and Apex-Hyrid Comparison.                                   •      EclipseXRM: Optimized for high geometric magnification
+                                                                                          with a long source-detector distance, making it ideal for
+    The benefits of Apex-Hybrid, outlined in the table, include:                          imaging small samples to large specimens (e.g., monkey
+                                                                                          skulls). It supports dual detectors—a LFOV detector for
+    •      Higher resolution
+                                                                                          wide views and a small-pixel detector for high-resolution
+    •      Dual imaging modes: Tomography & laminography                                  imaging at large working distances.
+    •      Lower cost of ownership with an open tube design                        •      Apex-Hybrid:        Designed       for   maximum      flexibility,
+                                                                                          offering high-quality, high-throughput imaging of large,
+    Trade-offs include:                                                                   flat samples while also enabling ultrahigh-resolution
+    •      No EFEM integration (yet), but supports an in-system                           tomography.
+           robot for scanning up to ten 100 × 100 mm samples
+
+    •      Reduced maximum x-ray source power                                      Summary:
+    •      Smaller stage travel, but can still scan 300 mm wafers                  Apex-Hybrid bridges the capabilities of Apex and EclipseXRM,
+           using manual positioning and 100 mm motorized fine-                     offering higher resolution, dual imaging modes, and cost-
+           stepping                                                                efficient operation.
+
+
+
+
+                                                                                                                                                          6
+
+
+
+                                                   Quantum Design GmbH           Dr. Andreas Bergner: +49 6157 80710-12
+                                                   Breitwieserweg 9              bergner@qd-europe.com
+6                                                  D-64319 Pfungstadt            Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                                 White Paper
+                                                                                                                                                     White Paper
+
+
+
+
+    X-ray Detector Options                                                                                        3K
+
+
+    Options for FOV and Resolution                                                                             7MP
+    Apex-Hybrid offers three detector choices (Fig. 11), each                                               HyperCapture
+
+
+
+
+                                                                                             2.3K
+    optimized for specific imaging needs:
+                                                                                                         Standard Configuration
+    •   HyperCapture (Standard 7MP): Provides a fast 15 fps
+        readout with a thick, ultra-high efficiency structured
+        scintillator for optimal imaging performance.
+                                                                                                                           4.5K
+    •   HyperCapture-XL (13MP): An extended version with ~2X
+        the field of view (FOV) while maintaining the same 15 fps
+        readout speed. The larger detector improves metrology
+                                                                                                                        13MP
+        precision for features like microbumps by increasing
+                                                                                                                    HyperCapture-XL
+        statistical accuracy.
+
+                                                                                             3K
+    •   UltraVision (16MP): A small-pixel detector designed for                                             Optional Upgrade for HyperCapture
+        the highest-resolution applications, such as single-digit
+        micron TSVs. While it enables ultrasmall voxels, it has
+        lower efficiency at higher x-ray energies compared to
+        HyperCapture. As a result, UltraVision is typically operated
+                                                                                                    4K               16 MP
+        in BIN2 mode, reducing its pixel count from 16MP to an
+                                                                                                                     UltraVision
+                                                                                             4K
+
+
+
+
+        effective 4MP, which impacts FOV at resolution.                                                              Small Pixel Detector
+                                                                                                                     Optional Alternative to HyperCapture
+    Due to system space constraints, only one detector can be
+                                                                                         Figure 11: Multiple detector options are available on Apex-Hybrid. The
+    selected per system. For assistance in choosing the right option                     standard 7MP HyperCapture provides a large FOV. Two optional detectors
+    for your applications, contact your local Sigray representative.                     include HyperCapture-XL (13MP) and UltraVision, a small-pixel detector.
+                                                                                         Sizes are provided to illustrate scale.
+
+    MegaView Montage Package
+    For applications requiring a large field of view (FOV) at
+    high resolution—such as reverse engineering 100 mm
+    boards     at   micron-scale     resolution—Sigray              offers      the
+    MegaView™       montage        package.        This   feature         stitches
+    multiple FOVs to create seamless, large-scale 3D datasets.
+
+
+    Example     (Fig.   12):   A   PCB      was     imaged         in     20    fast
+    acquisitions and seamlessly stitched using MegaView.
+    More     details    are     available     in     Sigray’s       application
+    note,    “Montage    Imaging    of   Large       Fields   of        View”   [3].
+
+
+    Note: Due to the large dataset sizes produced by MegaView
+    (often hundreds of gigabytes), Sigray recommends upgrading
+    computer RAM to 512 GB or 1 TB.
+                                                                                         Figure 12: An intact PCB was imaged at high resolution using Sigray’s
+                                                                                         Montage Package. Additional details can be found it in the associated
+                                                                                         applications note [Ref. 3].
+
+
+
+
+                                                                                                                                                               7
+
+
+
+                                              Quantum Design GmbH                      Dr. Andreas Bergner: +49 6157 80710-12
+                                              Breitwieserweg 9                         bergner@qd-europe.com
+7                                             D-64319 Pfungstadt                       Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                 White Paper
+                                                                                                                                      White Paper
+
+
+
+
+    X-ray Source Advantages
+
+    Always Know Your Resolution: X-ray Source Calibration
+    One challenge for metrology-focused users of x-ray
+    microscopes is that, while the voxel size of a scan is easily
+    determined, the actual spatial resolution is often unknown.
+    For instance, a scan with a voxel size of 0.1 µm can have a
+    spatial resolution up to 50 times worse—around 5 µm—due
+    to penumbral blur caused by a larger x-ray source spot size.
+    Thus, accurately determining the x-ray source spot size and
+    astigmatism is critical. Unfortunately, this is a difficult task.
+
+
+    To address this, many x-ray imaging users traditionally
+    rely on purchasing and using x-ray resolution calibration
+    targets. These targets are used to measure resolution as the
+    x-ray source ages and may change in resolution. However,
+    this approach requires additional scans and analysis time,
+    reducing the time available for scanning other samples.
+
+
+    Apex-Hybrid solves this challenge with a novel x-ray source
+    that incorporates microstructured x-ray targets as internal
+    calibration patterns. This innovation enables precise
+    determination of the x-ray spot size for each scan. Users
+    can simply select a desired x-ray spot size in the software
+    to optimize both resolution and scan time. Since the x-ray
+    spot size, detector pixel size, and distances are all known,
+    the exact spatial resolution can be accurately calculated.
+
+
+    Long X-ray Source Lifetime
+    A key advantage of Apex-Hybrid’s x-ray source is its
+                                                                           Figure 13: Users can select from different preset x-ray source spot sizes.
+    innovative electron optics design, which extends cathode life
+                                                                           A patented internal calibration procedure within the x-ray source ensures
+    to several thousand hours—far longer than the few hundred              that the spot size is accurate.
+    hours of standard open tubes. Since cathode replacements
+    are much cheaper than replacing an entire x-ray tube, this
+    makes Apex-Hybrid’s unique open tube more cost-effective
+    than nanofocus sealed tubes. Additionally, open tubes allow
+    for x-ray target replacements, and in principle, their bodies
+    can last indefinitely.
+
+
+
+
+                                                                                                                                                   8
+
+
+
+                                          Quantum Design GmbH           Dr. Andreas Bergner: +49 6157 80710-12
+                                          Breitwieserweg 9              bergner@qd-europe.com
+8                                         D-64319 Pfungstadt            Find your local contact at: www.qd-europe.com
+    Apex-Hybrid
+    Laminography and Tomography System                                                                                        White Paper
+                                                                                                                                            White Paper
+
+
+
+
+    Automation and Software Features                                              Software
+                                                                                  Apex-Hybrid provides a powerful suite of software that
+    Automation for Operatorless Sample Exchange                                   includes:
+    Apex-Hybrid offers two automation options for unattended,
+                                                                                  •    XRM Companion: User-friendly software for setting scan
+    recipe-driven scanning:
+                                                                                       parameters.
+    1.   Sample Handling Robot – A robot and 10-slot cassette
+                                                                                  •    3D Viewer: Includes five licenses per system, allowing
+         (for samples up to 100 × 100 mm) are mounted inside the
+                                                                                       multiple users to render 3D images, view 2D cross-sections,
+         chamber for automated sample handling.
+                                                                                       and analyze dimensions.
+    2.   Virtual Robot – For smaller samples, Apex-Hybrid uses
+                                                                                  •    GigaRecon:      The     fastest    multi-GPU      reconstruction
+         its large stage travel to shift between positions, enabling
+                                                                                       software, using standard and iterative methods with
+         automated scanning without a physical robot. The
+                                                                                       artifact suppression. More details in Sigray’s white paper
+         standard XYZ stage provides 100 × 20 × 100 mm travel.
+                                                                                       on Advanced X-ray Software [3].
+
+                                                                                  •    Open Source Controls: Supports Python scripting
+                                                                                       (PyEpics) for reconstruction and hardware integration.
+
+                                                          Cassette                     More details in Sigray’s white paper on Advanced X-ray
+                                                                                       Software [3].
+                        Robot
+
+
+
+
+                                                                                  Figure 15: Sigray 3DViewer offers a user-friendly interface for analyzing
+                                                                                  Apex-Hybrid’s 3D data.
+
+
+     Figure 14: An in-system sample handling robot (SHR) enables unattended,
+     recipe-based scanning for up to ten 100 × 100 mm samples.
+
+
+
+
+                                                                                                                                                         9
+
+
+
+
+                                              Quantum Design GmbH              Dr. Andreas Bergner: +49 6157 80710-12
+                                              Breitwieserweg 9                 bergner@qd-europe.com
+9                                             D-64319 Pfungstadt               Find your local contact at: www.qd-europe.com
+     Apex-Hybrid
+     Laminography and Tomography System                                                                                               White Paper
+                                                                                                                                                White Paper
+
+
+
+
+            Apex-Hybrid Specifications
+              Parameter                                   Specification
+                                                          <100 nm pixel resolution
+              Spatial Resolution
+                                                          400 nm spatial resolution (350 nm achievable)
+
+                                                          Transmission
+              Imaging Modes
+                                                          PAL (Precision Angle Laminography)
+
+              Source(s)                                   Open transmission x-ray tube with long-lifetime and internal resolution calibration
+
+                  Target                                  Microstructured Tungsten on diamond
+
+                  Power & Max Voltage                     16W, 160 kV
+
+
+                                                          HyperCapture - Standard Flat Panel detector: 7MP with 50 µm pixels
+              X-ray Detectors
+                                                          Larger format (13MP) or smaller pixel (16MP) available (options).
+
+
+                                                          State-of-the-art Air Bearing rotary stage with minimal runout
+              Stages
+                                                          Sample positioning stage with 100 x 20 x 100 mm XYZ travel
+
+
+              Automation                                  In-system Sample Robot | 10 samples of 100 x 100 mm dimensions
+
+
+                                                          Windows II Pro User PC
+              Workstations
+                                                          Linux-based Control System
+
+                                                          Acquisition: XRM Companion User Friendly GUI
+                                                          Reconstruction: Sigray GigaRecon - Fastest reconstruction algorithm on the market.
+              Software                                    Open-source Controls and Open File Formats
+                                                          Optional Auto-Recon Package and MegaView Montage
+                                                          Advanced Analysis: Optional Dragonfly 3D World and/or Avizo Data Analysis
+
+
+
+
+     References
+     1. Patents: US 11/686,692; 12/153,001; 11/992,350.
+     2. M Holler. Nature Electronics 2019.
+     3. Sigray White Paper*: D Vine et al. Advanced 3D X-ray Software: GigaRecon.
+
+
+
+
+                                                   Quantum Design GmbH                 Dr. Andreas Bergner: +49 6157 80710-12
+                                                   Breitwieserweg 9                    bergner@qd-europe.com
+10                                                 D-64319 Pfungstadt                  Find your local contact at: www.qd-europe.com
+

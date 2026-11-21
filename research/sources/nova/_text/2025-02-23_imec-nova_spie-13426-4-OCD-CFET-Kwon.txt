@@ -1,0 +1,322 @@
+          Critical In-Line OCD Metrology for CFET Manufacturing
+Hyukyun Kwon1, Joey Hung*2, Adam Michal Urbanowicz2, Ronen Urenski2, Igor Turovets2, Avron
+ Ger2, Thomas Tseng1, Mohamed Saib1, Janusz Bogdanowicz1, Stephanie Melhem1, Daisy Zhou1,
+ Yong Kong Siew1, Debashish Basu1, Anne-Laure Charley1, Jason Reifsnider1, Naoto Horiguchi1,
+                                    and Philippe Leray1
+   1
+       IMEC: Kapeldreef 75, 3001 Leuven, Belgium; 2Nova Ltd: 5 David Fikes St., Rehovot 7632805,
+                                               Israel
+                                                      ABSTRACT
+ As semiconductor technology advances, scaling transistors becomes increasingly challenging. The difficulty in defining
+and scaling devices is compounded by short channel effects, parasitic effects, and metal resistance, which limit gate-length
+scaling, device density, and metal pitch. Consequently, the complementary FET (CFET) architecture offers a solution by
+vertically stacking nFET and pFET transistors, thereby overcoming the limitations of n-to-p separation. This 'folding'
+approach reduces the cell active area footprint, making CFET a promising candidate for next-generation semiconductor
+nodes.
+
+However, CFET adoption introduces complexities in manufacturing and process control. Tight control is needed for the
+Si/SiGe superlattices with multiple layers and different Ge content, both for the CFET performance and the novel middle-
+dielectric-insulation (MDI) process. A higher aspect ratio is used in all front-end patterning applications. The multiple
+novels etch-back steps require tight vertical edge placement error (vEPE). Inner spacer uniformity control also becomes
+more challenging.
+
+In-line Optical Critical Dimension (OCD) is essential to control all the complex processes involved in complementary
+FET (CFET) manufacturing, enabling fast, non-destructive, and precise tracking of all critical parameters, enabling
+reduction of the wafer-to-wafer and within-the-wafer variations. The current paper presents OCD monitoring results for
+the development of the essential CFET process steps, starting from the superlattice formation down to the inner spacer
+(ISP) etch back. The required robust OCD models were created for all process steps based on the specially designed splits
+defining process windows, validated with the reference metrology, and applied to the pilot line process control.
+
+Keywords: Optical Critical Dimensions (OCD), Complimentary FET (CFET), Process control.
+
+*Corresponding author: joey-h@novami.com
+
+
+
+                                                  INTRODUCTION
+Complementary Field-Effect Transistor (CFET) is a promising candidate for future logic scaling. As the semiconductor
+industry encounters the physical limits of traditional scaling, CFET offers a viable solution through its unique vertical
+integration of NMOS and PMOS transistors. This vertical stacking reduces the device footprint, enhances performance,
+and maintains low power consumption. By combining compact size, high efficiency, and lower power requirements, CFET
+is poised to drive the next generation of logic devices, extending the trajectory of Moore's Law [1].
+Fig 1. (a) CFET has stacked NMOS-PMOS architecture to minimize CMOS device footprint, (b) TEM of device image, showing higher
+aspect ratio, Middle dielectric isolation (MDI), and Separate integration of top and bottom devices.
+
+The fabrication of CFET devices involves multiple Front-End-of-Line (FEOL) processes, each requiring precise metrology
+techniques to ensure structural integrity. There are two primary approaches to CFET fabrication, depending on the
+integration method of the top and bottom transistors. This study focuses on the Monolithic CFET approach, where both
+devices are fabricated on a single substrate with a high aspect ratio. [2-3]
+
+Due to the complexity of CFET structures, metrology plays a crucial role in process monitoring. Traditional techniques
+such as Critical Dimension Scanning Electron Microscopy (CD-SEM) and Transmission Electron Microscopy (TEM) face
+limitations in capturing high-resolution structural data across an entire wafer, especially for high aspect ratio features.
+These challenges arise from the increased complexity of the superlattice structures, the nanosheet-based high aspect ratio
+gate, new middle-dielectric-insulation (MDI), and the complexity requirements of vertical NMOS and PMOS integration
+[4].
+
+Key Role of the Optical Critical Dimension (OCD) Metrology in Process Optimization
+Optical Critical Dimension (OCD) metrology provides a non-destructive, high-resolution 3D analysis of CFET structures,
+making it a valuable tool for process development. Unlike CD-SEM, OCD can effectively monitor lateral and depth
+parameters, overcoming the limitations of traditional methods. Moreover, wafer-level OCD mapping is essential for
+detecting uniformity variations and establishing a robust baseline process for CFET manufacturing.
+
+In this study, OCD solutions were developed using reflection and interferometer spectra. Compared to standard OCD
+techniques, incorporating interferometric phase measurements breaks model parameter correlations while improving
+sensitivity to weak signals. A design of Experiments (DoE) approach was applied to optimize the process, generating high-
+accuracy models to account for key process parameter variations. By integrating these advanced metrology solutions,
+CFET manufacturing can achieve greater precision and efficiency, ultimately driving the scalability of next-generation
+semiconductor technologies. Figure 2 illustrates the key process challenges spanning from the superlattice and nanosheet
+(NSH) formation to gate patterning and replacement metal gate (RMG). This paper will examine these critical process
+steps in detail, highlighting their significance in device integration. Furthermore, the discussion will address the challenges
+associated with OCD modeling and the alternative methodologies employed to overcome these limitations.
+Fig 2. CFET key process flow (FEOL) and metrology needs. Metrology challenges increase due to Superlattice complexity, higher
+aspect ratio of NS & Gate, and novel processing steps like MDI and Buried oxide.
+
+
+
+
+                                 MODEL ANALYSIS OF CFET METROLOGY
+This study evaluates eight key models for OCD metrology in CFET fabrication. Each model addresses critical structural
+parameters that influence device performance and process stability.
+
+                                                  1. SUPERLATTICE
+The superlattice structure plays a crucial role in CFET fabrication, where precise layer thickness monitoring of layer
+thickness is essential. The CFET superlattice consists of a highly complex stack, including six SiGe1 and Si liner layers,
+three layers of SiGe2, two Si channels, and Si Cap. Key parameters for process control include the thickness of SiGe1,
+SiGe2, and Si channel layers, as these directly determine the device area and electrical performance. The stability of
+fabrication processes depends on accurate thickness control, necessitating precise metrology techniques.
+
+One of the primary challenges in superlattice metrology arises from the ultra-thin nature of the Si liner and SiGe layers,
+which are below 10 nm. At this scale, quantum confinement effects significantly alter optical properties, requiring careful
+optimization of metrology techniques to ensure measurement accuracy [5-8]. An optimized optical model was developed
+specifically for ultra-thin layers to address these challenges. This model has shown a good match with TEM measurements,
+with R² values of 0.90, 0.92, and 0.87 for the thickness of Si channel, SiGe1, and SiGe2, respectively, within a 3 nm DoE
+range, validating its accuracy (Fig. 3) Furthermore, the OCD-based method successfully enabled complete wafer-level
+measurement of layer thickness, ensuring uniformity and process stability.
+Fig 3. (a) CFET superlattice structure is complex, including six SiGe1 and Si liner layers, three layers of SiGe2, two Si Channels, and
+Si Cap. The target parameters are SiGe1 thickness, SiGe2 thickness, and Si channel thickness. (b) The correlation R2 of the OCD to
+TEM correlation of 0.9, 0.92, and 0.87 for Si Channel, SiGe1, and SiGe2, respectively, are demonstrated in a small 3nm DoE range. (c)
+With fast measurement, OCD results provide wafer uniformity, <2.2 nm WIW variations.
+
+                                             2. NANOSHEET PATTERNING
+The second model focuses on NS patterning, where three key parameters: NS height, top critical dimension (TCD), and
+bottom critical dimension (BCD) must be carefully monitored. TCD and BCD define channel dimensions, directly
+influencing device performance. Additionally, NS height is crucial in the Shallow Trench Isolation (STI) process, as it
+determines the isolation between nanosheets. [9] From both a process control and device optimization perspective, these
+parameters are vital for stable CFET fabrication.
+
+OCD measurements for nanosheet patterning strongly correlate with TEM results in 3 DoE wafers. The R2 of 0.85, 0.92,
+and 0.99 for TCD, BCD, and NS height confirms the accuracy of the OCD approach for nanosheet characterization.
+These results highlight the effectiveness of OCD metrology in providing high-precision and accurate wafer-level
+monitoring of nanosheet dimensions (Fig. 4)
+
+
+
+
+Fig 4. (a) The key parameters in NS patterning include NS Height (NSH), NS TCD, and NS BCD. Precise control of NS TCD and NS
+BCD is required to define the channel width, while NSH ensures proper dielectric isolation. (b) NS Height exhibits a near-perfect
+correlation of 0.99 to TEM measurements, while NS TCD and NS BCD demonstrate a good correlation with TEM, without dependency
+on height DoE conditions. (c) The wafer maps reveal the etch's distinct radial impacts, highlighting process variations across the wafer.
+
+
+                              3. STI FORMATION AND NANOSHEET (NS) REVEAL
+
+OCD metrology was performed after the Shallow Trench Isolation (STI) formation and NS reveal to verify the final NS
+multi-layer structure (MTS). At this stage, two critical parameters must be precisely monitored: NS reveal height and STI
+height. NS reveal height defines the effective device area, while STI height is crucial in preventing overlap with the bottom
+junction.
+
+OCD metrology successfully captured the heights of the NS and STI layers, and enabled wafer-scale profiling of the NS
+structure, providing a comprehensive understanding of the final device geometry. The accurate characterization of these
+parameters ensures process stability and enhances the reliability of CFET fabrication. Figures 5 (b) and (c) present the
+OCD results calibrated against TEM and CDSEM, demonstrating within-wafer variation for key process parameters.
+
+
+
+
+Fig 5. (a) 2D Profile after NS reveal. The main parameters of interest are NS H (defines the device area) and STI H (prevents the overlap
+of the bottom junction). (b) OCD to CDSEM correlation for NSH TCD, and OCD to TEM comparison for POR wafer center die NS
+TCD and NS H. (c) The wafer map illustrates the range and distribution of key parameters.
+
+                                   4. AMORPHOUS SILICON (A-SI) ETCH-BACK
+After NSH formation, an amorphous silicon (a-Si) layer was deposited and planarized to form the poly gate. OCD
+metrology was performed at this stage, before the gate patterning, to ensure uniform gate height. The final gate height is
+determined by combining Chemical Mechanical Planarization (CMP) and etch-back processes, making precise monitoring
+essential for this process control and device performance.
+
+A significant challenge in this step arises from the non-uniformity of the CMP process, which is influenced by the pattern
+density of the underlying nanosheet structure. This variation can result in gate height inconsistencies, directly affecting
+device characteristics. Therefore, an effective metrology solution is crucial to maintaining process uniformity.
+
+DOE study was conducted to establish a robust OCD metrology framework for gate height control. The results
+demonstrated a strong correlation between TEM and OCD measurements, validating the accuracy of OCD for gate height
+monitoring. Key parameters such as a-Si height above the fin (aSi_top), total poly height (aSi_H), and STI height (STI_H)
+exhibited R² values close to 1 (Fig. 6(b)), indicating high measurement reliability. Additionally, the DOE results and wafer
+uniformity analysis, presented in the variability chart (Fig 6(c)), further confirmed the effectiveness of this model.
+Fig 6. (a) 2D profile after etch-back. Final aSi H gate height uniformity directly impacts device performance. (b) OCD measurements
+effectively monitor process variations, demonstrating a near-perfect correlation with TEM. The R² values are 0.99, 0.99, and 0.98 for
+aSi_Top, aSi_H, and STI_H, respectively. (c) The variability chart clearly distinguishes DoE wafers while confirming a stable process
+on POR wafers.
+
+                                                  5. GATE PATTERNING
+Several critical parameters were monitored after gate patterning, including gate height, TCD, BCD, and hard mask (HM)
+height. Among these, gate CD is particularly significant as it directly influences the channel dimensions, thereby impacting
+the electrical performance of the device.
+
+The remaining HM height is also crucial in protecting the gate during subsequent process steps. Ensuring its uniformity is
+essential for maintaining structural integrity throughout fabrication.
+
+To validate the accuracy of OCD metrology in this step, we conducted a comparative analysis with TEM and CD-SEM
+measurements. Two separate DOE studies were performed—one focusing on gate height and the other on CD
+measurements. The results demonstrated a high correlation, with an R² value of 0.9 for CDSEM matching at the top gate
+height position and 0.98 for total gate height (Fig. 7(b)), confirming the reliability of our metrology approach. Figure 7(c)
+also indicates that the extreme wafer edge exhibits higher variation than the center zone.
+Fig 7. (a) During the gate patterning step, the precise CD defines the channel width, while the final gate height is confirmed. Additionally,
+the remaining HM significantly influences the process. (b) OCD to CD-SEM and TEM correlations for Gate height, HM_CD, and
+HM_H. (c) The within-wafer uniformity for each parameter is illustrated, highlighting process variation across the wafer.
+
+                                                     6. SIGE2 PULL (MDI)
+The Middle Dielectric Isolation (MDI) process is crucial for isolating vertically integrated NMOS and PMOS devices. In
+this process, the middle SiGe2 layer is selectively removed and replaced with an insulating material. A key parameter for
+monitoring in this step is the amount of remaining SiGe2, as complete removal is essential for effective isolation.
+
+Since all other structural profiles are well-defined in the gate patterning step, a standard model-based OCD solution can
+provide profile information. However, measuring the remaining SiGe2 residues is not straightforward. Through
+simulations, we have observed that signal variations correlate with the amount of remaining SiGe, as illustrated in the
+accompanying graph.
+
+However, the sensitivity of classical OCD models decreases with the amount of remaining material as shown in Fig. 8(b).
+ML learning techniques can potentially enhance the detection of minor signal variations, and they will be applied to allow
+accurate residue measurements for the MDI process [10].
+
+
+
+
+Fig 8. (a) The key metrology requirement at the SiGe2 removal step is to measure the remaining Ge2 amount. (b) Simulation of the
+spectral sensitivity to the SiGe2 removal shows that sensitivity decreases for smaller residues, requiring ML approaches.
+
+
+
+
+                                   7. SOURCE/DRAIN (SD) RECESS MONITORING
+The source/drain (SD) recess process is a critical step in CFET fabrication, with two key parameters requiring precise
+monitoring: recess depth and cavity CD. These parameters directly impact the subsequent SD epitaxial growth and,
+consequently, the electrical performance of the device. Moreover, in the mCFET process, a backside power delivery
+scheme is implemented, making the control of SD recess depth even more crucial to ensure proper device functionality.
+The HM thickness must be maintained above a specific threshold to protect the gate structure during the SD recess process.
+[11]
+
+OCD metrology results confirm that we can effectively monitor both SD recess depth and cavity CD, even in the presence
+of high aspect ratio structures common in CFET fabrication. Fig. 9(b) demonstrates the reliability and precision of OCD
+metrology in solving the challenges of SD recess monitoring.
+Fig. 9 (a) The target SD recess depth is essential for maintaining source/drain process integrity and ensuring optimal backside power
+delivery. (b) OCD results provide a wafer map that reveals radial variations, with significant center-to-edge performance differences
+observed in POR wafers. These variations present an opportunity for further process optimization .
+
+                                             8. INNER SPACER ETCH BACK
+The inner spacer etch process is crucial in CFET fabrication as it defines the gate length and ensures isolation between the
+gate and epitaxial (epi) layers. Both of these factors are essential for optimizing device performance. Consequently, precise
+and accurate monitoring of the etching amount in this process is required [12]
+
+OCD metrology results demonstrate a strong correlation with TEM measurements, confirming the accuracy of OCD in
+capturing the etch depth. Additionally, we conducted a DOE study on the etch process, which further validated the
+consistency and reliability of OCD monitoring.
+
+Figure 10 (b) shows that the R² value for lateral recess monitoring is 0.95, indicating excellent alignment with TEM results.
+Furthermore, wafer-level uniformity in gate length and recess depth was observed, proving that OCD metrology is a robust
+tool for process control in inner spacer etch back monitoring (Fig. 10 (c)).
+
+
+
+
+Fig. 10 (a) Inner spacer etch-back is a critical step in the FeOL process, where the recess depth directly determines the gate length, a
+key factor influencing transistor performance. (b) OCD to TEM recess correlation R² = 0.95, effectively following DoE. (c) The wafer
+map illustrates a distinct indentation pattern, highlighting areas for potential process improvement.
+           PROCESS IMPROVEMENT BY IMPLEMENTING IN-LINE OCD MONITORING
+We will present an example of improving the pilot line WIW uniformity in the three NSH etch process. The R&D team
+used OCD metrology to measure NSH height variations across the wafer after the NSH etch. The color map analysis
+revealed a height variation across the wafer, with the middle region exhibiting a lower NSH height than the center and
+edge regions.
+
+OCD wafer-level NSH profiles were used to optimize the etch process to reduce these WIW variations. As a result,
+uniformity was improved by 20%, as shown in Figure 11 (b).
+
+This approach is continuously applied in CFET fabrication, where OCD monitoring remains an integral tool for process
+control and optimization.
+
+
+
+
+Fig. 11 (a) NSH model stack. (b) 20% Si Recess process uniformity improvement by implementing the OCD in-line monitor.
+
+                                                       SUMMARY
+In this study, OCD metrology was systematically applied across eight key process models in CFET fabrication. As CFET
+technology pushes the limits of 3D integration with high-aspect-ratio structures, precise metrology becomes essential for
+ensuring process stability and device performance.
+
+OCD model-based solutions support CFET R&D and baseline pilot line processing, enabling fast, non-destructive, and
+high-accuracy wafer uniformity monitoring. Our study demonstrated strong correlations between OCD, TEM, and
+CDSEM measurements, confirming the reliability of OCD in monitoring critical process parameters, including superlattice
+structure thickness, nanosheet patterning, STI formation, gate patterning, SD recess, and inner spacer etch back.
+
+Furthermore, 3NSH GAAFET NSH etch process was used to demonstrate how OCD monitoring identified non-
+uniformities in NSH height within the wafer and guided etch process improvements to enable WIW variability by 20%.
+
+This work highlights the ongoing integration of OCD monitoring in CFET R&D and manufacturing, reinforcing its role
+as a powerful tool for optimizing high-aspect-ratio device fabrication and ensuring robust process control.
+
+                                               ACKNOWLEDGMENTS
+This work is funded & supported by 14ACMOS project 14 Anstrom CMOS IC technology by the Key Digital Technologies
+Joint Undertaking number 101096772.
+This work has been enabled in part by the NanoIC pilot line. The acquisition and operation are jointly funded by the Chips
+Joint Undertaking, through the European Union’s Digital Europe (101183266) and Horizon Europe programs (101183277),
+as well as by the participating states Belgium (Flanders), France, Germany, Finland, Ireland and Romania. For more
+information, visit nanoic-project.eu
+
+
+
+REFERENCES
+[1] H. Mertens et al., Nanosheet-based Complementary Field-Effect Transistors (CFETs) at 48nm Gate Pitch, and Middle
+Dielectric Isolation to enable CFET Inner Spacer Formation and Multi-Vt Patterning, 2023 IEEE Symposium on VLSI
+Technology and Circuits (VLSI Technology and Circuits), Kyoto, Japan, 2023, pp. 1–2. doi:
+10.23919/VLSITechnologyandCir57934.2023.10185218.
+
+[2] M. Radosavljevic and J. Kavalieros, Taking Moore's Law to New Heights: When transistors can't get any smaller, the
+only direction is up, IEEE Spectrum, vol. 59, no. 12, pp. 32–37, Dec. 2022. doi: 10.1109/MSPEC.2022.9976473.
+
+[3] A. Veloso et al., Nanosheet-based Device Architectures with Front/Backside Connectivity: Opportunities for S/D
+Engineering to Enable Advanced CMOS Logic Scaling, 2023 21st International Workshop on Junction Technology (IWJT),
+Kyoto, Japan, 2023, pp. 1–5. doi: 10.23919/IWJT59028.2023.10175170.
+
+[4] N. Horiguchi, Monolithic CFET patterning challenges for ultimate CMOS device scaling, in Proc. SPIE PC12499,
+Advanced Etch Technology and Process Integration for Nanopatterning XII, PC1249901, Apr. 2023. doi:
+10.1117/12.2662840.
+
+[5] C. Diebold and J. Price, Observation of quantum confinement and quantum size effects, Physica Status Solidi (a), vol.
+205, pp. 896–900, 2008.
+
+[6] E. Lioudakis, A. Othonos, and A. G. Nassiopoulou, Determination of critical points on silicon nanofilms: surface and
+quantum confinement effects, Physica Status Solidi C, vol. 5, pp. 3776–3779, 2008.
+
+[7] E. G. Barbagiovanni, D. J. Lockwood, P. J. Simpson, and L. V. Goncharova, Quantum confinement in Si and Ge
+nanostructures, Journal of Applied Physics, vol. 111, p. 034307, 2012.
+
+[8] O. Fursenko, J. Bauer, P. Zaumseil, Y. Yamamoto, and B. Tillack, Doping concentration control of SiGe layers by
+spectroscopic ellipsometry, Thin Solid Films, vol. 517, pp. 259–261, 2008.
+
+[9] V. Brissonneau, Il Gyo Koo, M. Hosseini, D. Batuk, A. Veloso, G. Mannaert, and F. Lazzarino, Active area patterning
+for CFET: nanosheet etch, Proc. SPIE 12958, Advanced Etch Technology and Process Integration for Nanopatterning XIII,
+1295804, Apr. 2024. doi: 10.1117/12.3012322.
+
+[10] D. Schmidt, M. Medikonda, M. Rizzolo, C. Silvestre, J. Frougier, A. Greene, M. Breton, A. Cepler, J. Ofek, I. Kaplan,
+R. Koret, and I. Turovets, Vertical travelling scatterometry for metrology on fully integrated devices, Proc. SPIE 12053,
+Metrology, Inspection, and Process Control XXXVI, 120530S, May 2022. doi: 10.1117/12.2614077.
+
+[11] S. Choudhury, G. Mannaert, L. P. B. Lima, S. Demuynck, I. G. Koo, and F. Lazzarino, Patterning spacer source-drain
+cavities in CFET devices, in Proc. SPIE 12958, Advanced Etch Technology and Process Integration for Nanopatterning
+XIII, 1295805, Apr. 2024. doi: 10.1117/12.3013077.
+
+[12] Z. Tao, L. Zhang, E. Dupuy, B. T. Chan, E. Altamirano-Sanchez, and F. Lazzarino, FEOL dry etch process challenges
+of ultimate FinFET scaling and next-generation device architectures beyond N3, in Proc. SPIE 11329, Advanced Etch
+Technology for Nanopatterning IX, 113290O, Mar. 2020. doi: 10.1117/12.2552022.
+

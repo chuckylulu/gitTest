@@ -1,0 +1,244 @@
+
+
+OMRON Touts Latest Top-class High-speed AOI System | AEI
+
+HOME
+
+LATEST NEWS
+
+SMT
+
+ROBOTICS and AUTOMATION
+
+ENABLING TECHNOLOGIES
+
+Case Studies
+
+Events
+
+JAPAN FRONTLINE
+
+ABOUT
+
+CONTACT US
+
+ASIA ELECTRONICS INDUSTRY
+YOUR WINDOW TO SMART MANUFACTURING
+
+HOME
+
+LATEST NEWS
+
+SMT
+
+Surface Mount Equipment
+
+Advance Packaging Equipment and Material
+
+Semiconductor Equipment and Material
+
+ROBOTICS and AUTOMATION
+
+Industrial Robots
+
+Collaborative Robots
+
+Industrial Control Systems
+
+ENABLING TECHNOLOGIES
+
+IIOT
+
+Analytics
+
+Microchip
+
+Sensors
+
+Connectivity / IPC
+
+Cybersecurity
+
+5G
+
+Digital Twin (Simulation)
+
+Industrial 3D Printing (Additive Manufacturing)
+
+AR and VR in Manufacturing
+
+AI in Manufacturing
+
+Industrial Machine Vision
+
+Test & Measurement
+
+Power Semiconductor
+
+Others
+
+Case Studies
+
+Events
+
+Webinar
+
+eForum
+
+Featured Shows
+
+JAPAN FRONTLINE
+
+Industry Report
+
+Top Interview
+
+Manufacturing Front
+
+Trending Technologies
+
+SMT
+
+OMRON Touts Latest Top-class High-speed AOI System
+
+OMRON Corporation
+ has developed three models of CT type automatic X-ray inspection systems*
+1
+ that enable industry-leading 
+high-speed 3D inspection
+*2
+. The new models include the VT-X750-XL, VT-X850 and VT-X950 (Referred to as the X750, X850, and X950 respectively). The new systems aim to meet high production quality for advanced semiconductors and electronic components. Mainly, demand for them is increasing due to the spread of generative AI and xEVs. They will be released sequentially from February 2024 onward.
+
+Before the launch, OMRON will introduce the X950 and its inspection examples at the OMRON booth at SEMICON Japan 2023. It will be held at Tokyo Big Sight from December 13th to 15th, 2023.
+
+VT-X950 CT type automatic X-ray inspection system
+
+The CT type X-ray automatic inspection system offers the following value-added proposition:
+
+① Contributes to stabilization of production quality in semiconductor packages and power semiconductors with industry-leading high-speed 3D automated inspection.
+
+② Advanced image processing using unique AI technology automates inspection settings to determine good/defective products.
+
+③ First in the VT Series to support clean rooms
+*3
+ and automates inspection setting changes according to production items
+*4
+
+CT type X-ray automatic inspection system New Product Overview
+
+Recently, the amount of used information is rapidly increasing with the expansion of user access to generative AI and data centers for interactive AI. Moreover, the development of 5G/6G communications and the further miniaturization of semiconductors used for these applications is progressing.
+
+In particular, miniaturization technology has advanced to a high level of technological difficulty. Along with miniaturization, the need for packaging using integration technology called chiplets will increase in the future. Unlike conventional flat designs, chiplets require more precise inspections as their structures become more complex through three-dimensional mounting.
+
+Specifically, the automotive industry is becoming more environmentally friendly with the development of xEVs, and integrated EV modules (X in 1) that combine multiple functions, such as eAxle. Also, efforts are underway for 3D packaging to realize further space saving and higher efficiency in module design. Products using 3D packaging are being introduced in a variety of industries. However, it is difficult to determine if they are good using conventional 2D-X-ray inspection systems with transmission images. Accordingly, it poses a major challenge to achieve both productivity and quality. 
+
+At the same time, there is a growing need for stable production at multiple sites in preparation for the duplication of supply chains, and the establishment of a production system that is not overly dependent on human interaction.
+
+In response to these needs, the automatic CT-type X-ray inspection systems combine OMRON’s proprietary control and image processing technologies. As a result, they deliver high-speed, high-precision inspection. The combination of continuous imaging technology
+*5
+ and a high-sensitivity camera through seamless control of the equipment achieves high-speed imaging of high-resolution, easy-to-distinguish 3D images.
+
+In addition, high-speed generation of modeling using state-of-the-art 3D inspection technology enables in-line quality inspection. The same 3D inspection is used in medical CT scanners. As it utilizes proprietary AI technology, the system automatically optimizes the setting of inspection imaging conditions. Also, it automates the creation of inspection programs that were only for skilled engineers and technicians in the past.
+
+OMRON has been contributing to the improvement of productivity at manufacturing sites by leveraging its strength in control technology under the Innovation Concept innovative-Automation. The company will continue its efforts to improve productivity and to evolve into a sustainable at manufacturing site. OMRON will enrich the future for people, industries and the globe through innovative automation.
+
+Value Proposition
+
+① Contributes to stabilization of production quality in semiconductor packages and power semiconductors with industry-leading high-speed 3D automated inspection.
+
+The shape and constituent materials vary depending on the industry and inspection target. Thus, the output characteristics of the X-ray source and inspection method are optimized for each model. By combining OMRON’s proprietary control and image processing technologies, visualization of the solder quality of μBump
+*6
+ and C4Bump
+*7
+ in 3D mounting of each semiconductor package is possible. 
+
+Specifically, the imaging technology supports the miniaturization and thinning of semiconductor devices. The 3D modeling of solder for boards and semiconductors from X-ray transmission images has been sped up by approximately 30%. In addition, inspection data results using the SEMI communication standard (SECS/GEM) can be linked to a production control system to realize quantitative condition monitoring of the production process. Generally, high-speed inspection that does not place a burden on the production line improves semiconductor production yield.
+
+X-ray image of the same solder in 2D (left) and 3D (right)
+
+Difference between monolithic and chiplet product structures
+
+② Advanced image processing using proprietary AI technology automates inspection settings to determine good/defective products.
+
+The VT-X Series is the first in-line inspection system that uses AI technology to determine whether a product is good or defective by processing captured images using deep learning. The AI automatically determines the soldering condition of each product based on the generated 3D model. This automates the creation of inspection programs without relying on the specialized skills of skilled workers in image processing.
+
+AI assists human judgment by clearly separating noise and inspection targets (voids) (image)
+
+③ First in the VT Series to support clean rooms and automate setting changes according to production items.
+
+The X950 is the first in the VT Series to support clean rooms for mid-process semiconductors where wafer-to-wafer bonding processes occur. Also, X950 has a function that automatically changes inspection settings to accommodate sudden changes in production items due to fluctuating demand. The system automatically changes conditions by referencing measurement points and inspection settings registered in advance in the production control system that are appropriate for each production item. This reduces start-up losses and re-setting of inspection settings. In addition, as with the conventional VT Series, the VT Series features a conveyor-based automatic loading/unloading function, contributing to automation and manpower saving in the manufacturing process.
+
+1:
+ According to our own research as of October 31, 2023. Inspection performance of a full 3D-CT type X-ray automatic inspection system capable of sub-micron order inspection.
+
+2:
+ An inspection device equipped with technology that uses X-rays to take continuous cross-sectional images of the inside of structures invisible to the human eye and process them by computer to obtain three-dimensional images. Uses the same technology as CT scans used by medical institutions.
+
+3:
+ Complies with Class 6 standards in ISO 14644-1.
+
+4:
+ Only X950 supports clean room and automatic setting change.
+
+5:
+ Technology to capture stereoscopic images without stopping.
+
+6:
+ Bump electrodes formed with a narrow pitch to bond IC devices together.
+
+7:
+ C4 (Controlled Collapsed Chip Connection): A bump-shaped conductor protrusion, called a bump, is formed on a substrate electrode and bonded to the wafer.
+
+Share:
+
+TAGS:
+
+3D AOI
+3D Packaging
+OMRON
+
+Post navigation
+
+PREVIOUS POST
+NEXT POST
+
+Related posts:
+
+OMRON’s New System Achieves Fast X-Ray Inspection
+
+Imaging Technique, AI Automate PCB Inspection
+
+Omron Develops Next-Generation 3D AOI
+
+Unique Features Cap Saki’s New 3D AOI System
+
+×
+
+ABOUT US
+
+DEMPA PUBLICATIONS
+
+          Headquarters
+
+          Tokyo, Japan
+
+          Dempa Publications Inc.
+
+          1-11-15 Higashi Gotanda, Shinagawa-Ku,
+
+          Tokyo 141-8715, Japan
+
+		  Tel: (+81)-3-3445-6131
+
+          Fax: (+81)-3-3445-6890
+
+          Subscribe now to receive your free digital e-newsletters straight to your inbox for the latest news and updates from the industry’s trusted news source:
+
+subscribe
+
+FOLLOW US:
+
+LINKEDIN
+
+X / TWITTER
+
