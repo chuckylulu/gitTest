@@ -1,0 +1,280 @@
+   Scatterometry-informed machine learning study to determine
+    bi-directional intercorrelation of adjacent patterning steps
+              Pádraig Timoney*a, Stefan Schoechea, Daniel Schmidta, Will Parkina,
+                   Aron Ceplerb, Ilya Osherovc, Amit Godelc, Igor Turovetsc
+                        a
+                          IBM Research, 257 Fuller Rd, Albany NY 12203
+         b
+           Nova Measuring Instruments, 3342 Gateway Blvd, Fremont, CA 94538, USA
+                     c
+                       Nova Ltd, 5 David Fikes St., Rehovot, 7632805, Israel
+
+
+                                                 ABSTRACT
+
+The use of machine learning has been well documented in recent years in a wide variety of optical scatterometry
+applications. Machine learning can either be used in a ‘modeless’ manner to directly correlate measured spectra
+to reference metrology without an optical model or serve as a complementary technique together with
+conventional scatterometry modeling to improve the sensitivity of specific parameters.
+
+This work presents both modeless and AI augmented scatterometry modeling applications in the gate-all-around
+nanosheet process flow. AI augmented scatterometry models were generated for measurements at adjacent
+patterning steps and were validated by conventional TEM correlation. A concept is introduced to utilize modeless
+machine learning solutions as a complementary technique with AI segmented scatterometry models at consecutive
+process steps. The forward and backward prediction of selected measurement steps is studied to identify possible
+inconsistencies between the outputs of the associated scatterometry models.
+
+An intercorrelation matrix is assembled to tabulate average correlation of 6 modeless machine learning models to
+the corresponding previous / future step scatterometry model output. This bidirectional machine learning
+assessment proves to be a simple methodology to reveal the intercorrelation between past and future process steps
+and helps to identify both model and process stabilities.
+
+Keywords: Machine Learning, scatterometry, modeless, AI augmented scatterometry, reference metrology,
+bidirectional intercorrelation, replacement metal gate
+*Corresponding author: padraig.timoney@ibm.com
+
+1. INTRODUCTION
+The technology requirement for advanced logic CMOS transistors continues to drive reduced transistor size and
+advances in device architecture. The transition from planar to FinFET, and now to nanosheet transistor
+architecture, results in increased complexity of optical scatterometry measurements [1]. The complexity arises
+from an increasing number of geometric degrees of freedom, along with reduced optical sensitivity to a variety of
+critical structural dimensions. Frequently, the key measurement parameters in nanosheet scatterometry models
+are located beneath the surface and therefore significant portions of the incident light may be absorbed by the
+structure above the degree of freedom of interest. For example, monitoring of the inner spacer formation processes
+requires analysis of the dimensions and dielectric material volume beneath the dummy gate structure as shown in
+Figure 1 (a) [2]. The lateral indents in the silicon germanium sheet stack and subsequent filling of these indented
+shapes with inner spacer dielectric material present a challenge to optical scatterometry due to the small volume
+changes and the depth below the surface at which these small changes occur.
+
+The Replacement Metal Gate (RMG) module features a number of optical scatterometry applications, including
+process steps such as dummy gate removal, channel release, high k / interfacial layer (HK/IL) depositions, and
+work function metal (WFM) deposition. Referring again to Figure 1 (b) and (c), after the dummy gate material is
+extracted and the sacrificial silicon germanium in between the inner spacers is removed at the channel release step
+(b), monitoring of the empty gate profile together with the remaining silicon nanosheet thickness and remaining
+spacer thickness parameters is challenging to accurately characterize in an optical scatterometry model.
+
+                Metrology, Inspection, and Process Control XXXIX, edited by Matthew J. Sendelbach,
+                        Nivea G. Schuch, Proc. of SPIE Vol. 13426, 134261E · © 2025 SPIE
+                                        0277-786X · doi: 10.1117/12.3051497
+
+
+                                        Proc. of SPIE Vol. 13426 134261E-1
+Monitoring of the dummy gate structure throughout the consecutive replacement metal gate processes is explored
+further in this paper by leveraging both AI augmented scatterometry modeling and modeless machine learning
+solutions.
+
+
+
+
+Figure 1: Sample cross section transmission electron microscopy (TEM) images illustrating the metrology
+challenges in nanosheet process flow for inner spacer indent (a), channel release (b) and replacement metal gate
+(c) [2].
+
+2. MODELESS MACHINE LEARNING AND AI AUGMENTED SCATTEROMETRY
+Increased adoption of machine learning methods, both as a replacement to conventional rigorous coupled wave
+analysis (RCWA), and as an aid to RCWA, can help improve application performance.
+
+In AI augmented scatterometry, a conventional geometric model is enhanced by machine learning algorithms
+leveraging a variety of user inputs. This be beneficial in a scenario where the available reference metrology is
+limited. Such solutions also constrain inter-relationships between geometric parameters as with conventional
+scatterometry modeling, providing a comprehensive representation of the full structure whilst leveraging the user
+inputs to boost sensitivity to the parameters of interest.
+
+Modeless machine learning may also be utilized in a scenario where variation in the scatterometry spectra can be
+related to a suitable quantity of accurate reference metrology. Such modeless solutions can be developed quickly
+once sufficient reference metrology has been collected. However, it is not typically utilized in a scenario where a
+variety of measurements are required with interrelated physical quantities or where suitable reference metrology
+is not available for the key measurement parameters.
+
+In prior work, sheet-specific measurement of the lateral silicon-germanium indentation depth was demonstrated
+by modeless machine learning as well as AI augmented scatterometry [3,4]. The primary goal of this measurement
+is to obtain the lateral indentation of the three SiGe nanosheets with respect to the silicon nanosheets. The amount
+of silicon germanium removed is critical for optimal device performance, however it is challenging to quantify
+with conventional RCWA analysis due to the very small volume change in Ge and the significant absorption of
+the incident light that occurs above the indented SiGe from the dummy gate structure. This measurement
+sensitivity challenge can be mitigated by augmenting the scatterometry model with artificial intelligence, using
+reference data from transmission electron microscopy (TEM). Figure 2 illustrates the parameterization used for
+the AI augmented scatterometry model and the resulting correlation to TEM that was obtained.
+
+
+
+
+                                        Proc. of SPIE Vol. 13426 134261E-2
+Figure 2: Demonstration of AI augmented scatterometry model to measure SiGe sheet specific indent depth.
+Adapted from [3].
+
+Monitoring of the average silicon germanium indent depth has also been reported using a modeless machine
+learning approach [5]. The modeless solution was trained using the difference in measured XRF Ge Lα counts
+between pre and post lateral indentation etch. In the data presented, the R2 improved by utilizing the modeless
+machine learning solution as compared to a conventional RCWA solution.
+
+3. AI AUGMENTED SCATTEROMETRY MODEL SETUP AND VALIDATION
+In this work, AI augmented scatterometry models are developed in adjacent Replacement Metal Gate (RMG)
+patterning steps. In many RMG scatterometry measurements there are similar challenges to those previously
+reported for inner spacer indent depth – namely, limited spectral sensitivity of key parameters and correlations
+between height and CD parameters. Improved scatterometry model performance can be obtained with AI
+augmented scatterometry models, which help to minimize cross-parameter correlations and boost sensitivity to
+key parameters of interest. These models describe the physical variations of the full structure and are useful when
+limited reference metrology samples are available. However, it can be difficult to assess the long-term model
+reliability with such limited samples. Figure 3 shows the correlation to TEM that was obtained from one of the
+AI augmented scatterometry models developed in this work for Height (Ht) and critical dimension (CD)
+parameters, as part of a well-established practice to validate the solution in the typical scatterometry model
+development work.
+
+
+
+
+Figure 3: Correlation of AI augmented scatterometry model parameters height (Ht) and CD to TEM reference
+metrology.
+
+
+
+
+                                        Proc. of SPIE Vol. 13426 134261E-3
+In the next section, the concept of a scatterometry informed forward-backward intercorrelation matrix will be
+introduced leveraging modeless machine learning solutions to study the performance of inline conventional
+scatterometry and AI augmented scatterometry models at adjacent patterning steps.
+
+4. SCATTEROMETRY INFORMED INTERCORRELATION MATRIX
+Modeless machine learning methodology allows the prediction of output data from raw spectra, assuming that the
+spectra from that process step can be associated with the input reference data. For example, in the RMG sector
+applications studied in this work, the primary changes in consecutive patterning steps concern the extraction of
+sacrificial dummy gate and silicon germanium nanosheet material followed by deposition and patterning of HK,
+IL, and work function materials. Therefore, the assumption is made that output data from scatterometry
+measurements at such adjacent process steps can be leveraged as suitable reference metrology with which to train
+modeless machine learning solutions at the steps before or after the step at which the reference metrology was
+derived.
+
+Figure 4 introduces this concept, where spectra acquired at the process step 1 measurement are trained to predict
+downstream metrology from the process step 2 measurement. Data from approximately 50 wafers were utilized
+to train the modeless prediction. The predicted CD achieves a correlation of R2=0.78 to the actual downstream
+CD for 150 wafers not included in the training of the model.
+
+
+
+
+Figure 4: Prediction of downstream metrology data at process step 2 by a modeless machine learning
+measurement at process step 1. Blind test data from 150 wafers validates the feasibility of this approach.
+
+In this study, measurement data is generated from 3 process steps, the first 2 of which utilize AI augmented
+scatterometry models while the 3rd step utilizes a conventional scatterometry model to output the data. Since each
+measurement step can have a predicted value generated at the 2 other process steps, there are 6 modeless machine
+learning prediction vs actual plots to consider. The same training wafers and blind test wafers were used to
+minimize the contribution of the real wafer process variation on the results.
+
+In Figure 5, the prediction vs actual CD plots are arranged in a matrix format. The diagonal line may be also
+thought of as the movement of the wafer from top left to bottom right of the chart. This also helps to visualize the
+concept of downstream prediction vs upstream prediction. For example, in the case of the top right cell of the
+matrix, spectra acquired at the measurement after process step 1 are generating a modeless prediction of the
+measured CD after process step 3, whilst at the bottom left cell, spectra acquired after process step 3 are generating
+a modeless prediction of the measured CD after process step 1. It is noteworthy that most of the R2 values are
+largely symmetrical on both sides of the diagonal line. However, one unexpected result is that the step 2 prediction
+of the CD at process step 3 has a better R2 (0.9) than the step 3 prediction of the CD at process step 2 (0.73).
+
+
+
+
+                                         Proc. of SPIE Vol. 13426 134261E-4
+Figure 5: Scatterometry informed intercorrelation matrix representing the upstream and downstream prediction
+of the CD parameter to the output CD values form each of the scatterometry models.
+
+Figure 6 depicts the improvement of the step 2 model; the actual step 2 reference data was regenerated to train the
+modeless prediction at step 1 and step 3. The results demonstrate that after step 2 model optimization, the step 3
+prediction of step 2 CD R2 value (0.93) is now similar with the step 2 prediction of step 3 CD R2 value (0.9).
+Figure 7 shows the updated intercorrelation matrix for the predicted CD vs actual CD R2 values after step 2 model
+optimization. Together with the improvement in step 3 predicted step 2 R2 illustrated in Figure 6, it can also be
+seen that the step 1 predicted step 2 CD improves, albeit very slightly.
+
+It has been assumed thus far that the parameter represented in the scatterometry informed intercorrelation matrix
+does not change very significantly through the consecutive process steps 1 to 3 and that the variation of the
+parameter of interest is mostly a property of the incoming process variation. In such an example, the
+intercorrelation matrix is useful in detecting a scenario where there may be an opportunity for additional model
+optimization as demonstrated in Figure 6.
+
+
+
+
+Figure 6: Improvement in step 3 predicted step 2 CD achieved by optimization of the AI augmented scatterometry
+model at process step 2.
+
+
+
+
+                                       Proc. of SPIE Vol. 13426 134261E-5
+Figure 7: Updated scatterometry informed intercorrelation matrix after optimization of step 2 model representing
+the upstream and downstream prediction of the CD parameter to the output CD values form each of the
+scatterometry models.
+
+
+
+
+Figure 8: Scatterometry informed intercorrelation matrix after optimization of step 2 model representing the
+upstream and downstream prediction of the Ht parameter to the output Ht values from each of the scatterometry
+models.
+
+
+
+
+                                      Proc. of SPIE Vol. 13426 134261E-6
+In Figure 8, the intercorrelation matrix of the Ht parameter is shown. Although the results demonstrate high R2
+values for step 1 predicted step 2 Ht (R2 = 0.88), downstream prediction of step 3 appears to be less successful.
+This result appears to suggest that the step 3 Ht data is not a reliable source of reference metrology which to train
+a modeless machine learning solution at process step 1. This indicates that the height is physically changing
+between step 1 and step 3 in a manner that is no longer possible to predict using the initial training set that was
+used for the machine learning solution. Such observations could prove valuable in identifying sources of
+variability in the process flow.
+
+
+
+5. CONCLUSIONS
+
+AI augmented scatterometry models are developed to help address concerns about models with limited sensitivity
+to key parameters in the nanosheet RMG sector. These models are validated by correlation to reference metrology,
+albeit with limited availability of reference metrology. A scatterometry-informed intercorrelation matrix concept
+is proposed as a methodology to monitor the performance of scatterometry models utilizing modeless machine
+learning. The results presented in this work demonstrate successful prediction of downstream scatterometry data
+with high confidence, as demonstrated with R2 values > 0.85.
+
+The scatterometry informed intercorrelation matrix was successfully used to identify potential candidates for
+model improvement and was also utilized to quantify the improvement achieved by regenerating the reference
+metrology for the modeless solutions with the improved scatterometry model. The results demonstrated an
+improvement in step 3 predicted step 2 from R2 = 0.73 to R2 = 0.93.
+
+The study presented in this work demonstrates the feasibility of modeless machine learning to identify process
+and metrology model variation across adjacent process steps. It is worth noting that this study considered only the
+output from other scatterometry models as reference metrology with which to train the modeless solutions, there
+is a wide variety of alternative reference metrology sources to be considered in future studies provided that the
+reference metrology can be associated with the corresponding measurement spectra that is used to train the model.
+Studies of forward and backward intercorrelation may also be considered for future process improvement work.
+
+6. REFERENCES
+[1] M. Breton, D. Schmidt, A. Greene, J. Frougier, N. Felix, “Review of nanosheet metrology opportunities for
+technology readiness,” J. Micro/Nanopattern. Mats. Metro. 21, 021206 (2022).
+
+[2] N. Loubet, T. Hook, P. Montanini, C.-W. Yeung, S. Kanakasabapathy, M. Guillom, T. Yamashita, J. Zhang,
+X. Miao, J. Wang, A. Young, R. Chao, M. Kang, Z. Liu, S. Fan, B. Hamieh, S. Sieg, Y. Mignot, W. Xu, S.-C.
+Seo, J. Yoo, S. Mochizuki, M. Sankarapandian, O. Kwon, A. Carr, A. Greene, Y. Park, J. Frougier, R. Galatage,
+R. Bao, J. Shearer, R. Conti, H. Song, D. Lee, D. Kong, Y. Xu, A. Arceo, Z. Bi, P. Xu, R. Muthinti, J. Li, R.
+Wong, D. Brown, P. Oldiges, R. Robison, J. Arnold, N. Felix, S. Skordas, J. Gaudiello, T. Standaert, H.
+Jagannathan, D. Corliss, M.-H. Na, A. Knorr, T. Wu, D. Gupta, S. Lian, R. Divakaruni, T. Gow, C. Labelle, S.
+Lee, V. Paruchuri, H. Bu, M. Khare, “Stacked Nanosheet Gate-All-Around Transistor to Enable Scaling Beyond
+FinFET,” Symp. VLSI Tech., 230–231 (2017).
+
+[3] D. Schmidt, A. Cepler, C. Durfee, S. Pancharatnam, J. Frougier, M. Breton, A. Greene, M. Klare, R. Koret, I.
+Turovets, “Development of SiGe Indentation Process Control for Gate-All-Around FET Technology
+Enablement,” IEEE Trans. Semicond. Manuf. 35, 412, (2022).
+
+[4] H. Chouaib, V. Dimastrodonato, A. Chou, A. Cangianoa, A. Cross, D. Shaughnessy, Z. Tan, D. Schmidt, C.
+Durfee, S. Pancharatnam, J. Frougier, A. Greene, M. Breton, “Novel ellipsometry metrology-based machine
+learning technique for low sensitivity characterization of critical dimensions within gate-all-around transistors,”
+Proc. SPIE 12955, 129550L (2024).
+
+[5] D. Schmidt, C. Durfee, S. Pancharatnam, M. Medikonda, A. Greene, J. Frougier, A. Cepler, G. Belkin, D.
+Shafir, R. Koret, R. Shtainman, I. Turovets, S. Wolfling, “OCD enhanced: Implementation and Validation of
+Spectral Interferometry for Nanosheet Inner Spacer Indentation,” Proc. SPIE 11611, 116111U (2021).
+
+
+
+
+                                        Proc. of SPIE Vol. 13426 134261E-7
+

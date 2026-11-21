@@ -1,0 +1,248 @@
+ Development of SiGe Indentation Process Control to
+    Enable Stacked Nanosheet FET Technology
+               Dexin Kong                  Daniel Schmidt               Mary Breton                   Abraham Arceo de la peña
+              IBM Research                 IBM Research                IBM Research                         IBM Research
+               Albany, NY                   Albany, NY                  Albany, NY                           Albany, NY
+            dkong@us.ibm.com             schmidt@ibm.com            mabreton@us.ibm.com                 aarceod@us.ibm.com
+
+              Julien Frougier             Andrew Greene                 Jingyun Zhang                   Veeraraghavan Basker
+               IBM Research               IBM Research                  IBM Research                        IBM Research
+                Albany, NY                  Albany, NY                    Albany, NY                         Albany, NY
+         Julien.frougier@ibm.com       amgreene@us.ibm.com           zhangji@us.ibm.com                 vsbasker@us.ibm.com
+
+               Nicolas Loubet                Ishtiaq Ahsan               Aron Cepler                       Mark Klare
+               IBM Research                 IBM Research          Nova Measuring Instruments        Nova Measuring Instruments
+                Albany, NY                    Albany, NY                 Albany, NY                        Albany, NY
+           njloubet@us.ibm.com         Ishtiaq.ahsan@ibm.com         aron-c@novami.com                 mark-k@novami.com
+
+             Marjorie Cheng                  Roy Koret                  Igor Turovets
+        Nova Measuring Instruments   Nova Measuring Instruments   Nova Measuring Instruments
+               Albany, NY                  Rehovot, Israel             Rehovot, Israel
+         marjorie-c@novami.com          roy-ko@novami.com            igor-t@novami.com
+
+
+
+
+Abstract— The methodology of measuring the lateral etch,          in manufacturing nanosheet FETs is the inner spacer, which
+or indentation, of SiGe nanosheets by using optical               protects the channel from the source and drain region along
+scatterometry, x-ray fluorescence, and machine learning           with isolating the channels themselves [1,2,3,4]. A critical step
+algorithms is presented and discussed. Stacked nanosheet          prior to depositing the inner spacer is laterally etching the
+device structures were fabricated with different etch             sacrificial SiGe nanosheet layers. The lateral etch step is
+conditions in order to induce variations in the indent. It was    alternatively known as a cavity etch or an indentation and a
+found that both scatterometry in conjunction with Spectral        schematic depicting the structure after etch is shown in Figure 1.
+Interferometry and novel interpretation algorithms as well
+as TEM calibrated LE-XRF are suitable techniques to
+quantify the indent. Machine learning algorithms enabled
+an additional solution path by combining LE-XRF data
+with scatterometry spectra therefore avoiding the need for
+a full optical model.
+
+
+   Keywords—nanosheet, scatterometry, x-ray fluorescence,
+metrology, machine learning.
+                     I. INTRODUCTION
+    As compared to FinFETs, stacked nanosheet semiconductor
+devices require more measurements of critical parameters owed
+to the significant increase in process and device complexity.
+Also referred to as gate-all-around (GAA), stacked nanosheet
+FETs feature gates which wrap around the channels in order to
+improve electrostatic control. The additional complexities
+inherent in such an architecture combined with the ever-              Fig. 1. Schematic drawing of a stacked nanosheet FET unit cell after SiGe
+                                                                  indentation. The highlighted 2D section details the alternating Si and SiGe
+shrinking dimensions require precise process control for          sheets with the lateral etch of the sacrifical SiGe.
+optimum device performance. One important process module
+
+
+
+XXX-X-XXXX-XXXX-X/XX/$XX.00 ©20XX IEEE
+    Published studies discussing metrology solutions for             used to calculate the diffraction from a periodic array of
+process control related to the inner spacer of nanosheets have       structures, and then interpret the measured data in order to obtain
+investigated the lateral etch on test structures with large and      geometric and material information [7-9]. Spectral
+simplified features that do not include the complete device          Interferometry, a unique channel of information introduced with
+stack including dummy gates, for example, which is relevant          the NovaPRISM scatterometry tool, is a novel method which
+for a metrology solution suitable for manufacturing [5,6].           provides exclusive information and increases the sensitivity to
+                                                                     challenging structural parameters. LE-XRF is used in order to
+    It is very challenging to accurately measure the amount of       obtain elemental and compositional information. An x-ray
+the lateral etch with conventional metrology techniques for          photon collides with an atom and can eject an inner shell
+multiple reasons. In general, the volume change associated with      electron if it has sufficient energy. A second electron will then
+the indent is very small, which usually results in very small        fall from a higher energy shell to fill the vacancy. The
+                                                                     characteristic quantized energy loss of the second electron (x-
+signal changes of existing inline metrology techniques.
+                                                                     ray photon) is used to identify which element is present in the
+Additionally, there are other possible structural and
+                                                                     sample [10]. Two TEM images from one wafer of each etch
+compositional variations within the complex 3D structure,            condition are analyzed to validate and calibrate the model
+which may lead to correlations and could impact the accuracy         results. Five wafers (one from each split condition) are
+of the measurement.                                                  measured with scatterometry and spectral interferometry, and all
+                                                                     wafers are measured with conventional multichannel
+    This work demonstrates the development of inline                 scatterometry and with LE-XRF. The optical scatterometry
+metrology methodologies for accurately measuring dimensions          tools measured all full dies on the wafer, whereas the LE-XRF
+of the indent for stacked nanosheet FET technology suitable for      tool measured a subset of 10 dies per wafer.
+high volume manufacturing. Multiple methods to measure the
+lateral SiGe etch are explored with the primary metrology being
+optical scatterometry. Furthermore, low-energy x-ray
+fluorescence (LE-XRF) spectra are analyzed for Ge                                       III. RESULTS AND DISCUSSION
+quantification as well as transmission electron microscopy            A. Indent measured by scatterometry data modeling
+(TEM) images acquired of selected samples for calibration
+                                                                        In order to build an accurate scatterometry model, it is
+purposes. The techniques bring different information content
+together and can be combined to measure the important                necessary to accommodate many degrees of freedom to account
+dimensions in an accurate and precise manner. The use of             for potential process variations associated with the stacked
+machine learning algorithms to associate scatterometry spectra       nanosheet structure and employ strategies to optimize the
+with LE-XRF results is also studied, which has the benefit of a      sensitivity of the target measurement parameter while limiting
+fast time to solution without developing a full optical model.       correlations with other parameters.
+
+                       II. EXPERIMENT                                   The sensitivity to the SiGe indentation variation can be
+                                                                     greatly enhanced by the use of Spectral Interferometry (SI)
+ A. Design of Experiment                                             coupled with novel interpretation algorithms. An example of
+     A set of patterned wafers with stacked nanosheet structures     the sensitivity improvement when using SI to measure the
+including dummy gate features are fabricated where the only          indent parameter can be seen in the sensitivity plot in Figure 2.
+intentional process variations are different amounts of lateral      Theoretical spectra are calculated for two different indent
+SiGe indentation, as shown in Table 1.                               values, which are 1 nm apart. The indent sensitivity, defined as
+                                                                     the change in measured reflectivity for the specific geometry
+           TABLE I: DESIGN OF EXPERIMENT                             change, as a function of wavelength, is much greater with an SI
+            Wafer              Indent Etch                           channel as compared to a conventional scatterometry channel.
+              1-2       Etch 1 (shortest etch time)
+              3-4                 Etch 2
+              5-6                 Etch 3
+              7-8                 Etch 4
+             9-10       Etch 5 (longest etch time)
+ B. Measurement Tools
+     The wafers are measured with advanced multichannel
+scatterometry (T600MMSR and NovaPRISM) and with Low
+Energy X-Ray Fluorescence (VeraFlexIII+). Scatterometry is
+used to obtain dimensional information. A location on the wafer
+is illuminated with a broad-band light source. The reflected light
+is collected across the entire wavelength range. Typically, a              Fig. 2. Normalized signal intensity variation as a function of wavelength
+                                                                     for conventional scatterometry and Spectral Interferometry channels when the
+model is constructed based on the geometric parameters and           SiGe indent parameter is varied by 1 nm.
+optical properties of the measured features. An analytical
+technique such as rigorous coupled-wave analysis (RCWA) is
+    The final scatterometry model solution utilizing spectra
+acquired only post indentation is able to directly measure the
+amount of the lateral etch. The accuracy of the results can be
+seen based on the comparison to ten TEM images, with an R2
+of 0.896, as shown in Figure 3.
+
+
+
+
+                                                                                     Fig. 5. Ge Lα count difference from pre and post indentation measurements
+                                                                                 as a function of wafer number. The individual data points are wafer averages
+                                                                                 and the error bars indicate the within wafer variation. An increasing ΔGe Lα
+                                                                                 corresponds to an increasing lateral SiGe etch.
+
+                                                                                 indentiation measurements. Figure 5 shows the result after
+    Fig. 3. Comparison of TEM and scatterometry results for the SiGe             subtracting the Ge Lα counts measured after the etch from the
+indentation design of experiments.
+                                                                                 counts measured before the etch, in order to determine the
+ B. Indent measured by LE-XRF counts                                             actual amount of Ge removed by the etch. The data presented
+                                                                                 here represent the average value per wafer. As expected, larger
+    Representative LE-XRF measurements for Etch1 and Etch5                       amounts of Ge are removed with increasing etch time. The
+are presented in Figure 4. The graphs show the normalized Ge                     wafer to wafer variations observed for shortest and longest etch
+Lα peak from a single die from two wafers, measured before                       times are due to non-optimized process conditions in these etch
+and after the indentation process. Figure 4b illustrates that the                regimes.
+shortest etch time (Etch1) results in lower Ge Lα counts as
+compared to the pre indentation measurement indicating the Ge
+and therefore SiGe has been removed. Furthermore, there is
+about a 30% difference in peak height between Etch1 and
+Etch5, which corresponds to approximately 3 nm indent
+variation, indicating that the LE-XRF is highly sensitive to
+minute amounts of Ge differences.
+
+
+
+
+                                                                                     Fig. 6. Comparison of LE-XRF (ΔGe Lα) and TEM results for the indent.
+Fig. 4. Ge Lα counts as measured by LE -XRF, both (a) before and (b) after the   The dashed linear fit line is calculated without the two outliers (TEM = 50 Å
+indentation, for two of the different DOE conditions, Etch1 and Etch5.           and 66 Å).
+
+    However, in order to account for possible process variations                    In order to convert the XRF counts to the amount of laterally
+related to the Ge fraction, the nanosheet thickness as well as the               removed SiGe in nanometers, the data must be calibrated with
+lateral dimension, only a count difference between pre and post                  measurements obtained from TEM images. As shown in
+indentation measurements can lead to most accurate                               Figure 6, overall a good correlation is observed between the
+ΔGe Lα counts and the indent dimensions obtained from TEM
+image analyses. However, two outlier points are present, which
+originate from the edge of the wafer and are possibly related to
+processing and pattern recognition issues. If these points are
+removed, the correlation is excellent with an R2 of 0.962.
+Calibration of the measured XRF counts to the TEM image
+analysis allows for accurate measurements of the indent
+parameter with two XRF metrology steps, one before and one
+after the SiGe etch process.
+
+ C. Indent measured by machine learning
+    A third indentation measurement procedure is presented,
+which uses machine learning to combine the two metrology
+techniques by directly relating the LE-XRF ΔGe Lα counts to
+the scatterometry spectra [11-15]. The trained machine learning
+model results using the scatterometry spectra post indentation
+in comparison to the actual LE-XRF data are shown in Figure
+7.
+
+
+                                                                                Fig. 8. Comparison of the dimensional indent as a result of the machine
+                                                                           learning algorithm and the indent obtained from TEM image analyses.
+
+
+
+
+                                                                                                        CONCLUSIONS
+                                                                               We have demonstrated the ability to accurately measure the
+                                                                           lateral SiGe etch at the critical indentation step prior to the inner
+                                                                           spacer deposition. This is one of the most critical steps to
+                                                                           monitor to ensure reliable and good nanosheet FET device
+                                                                           performance. Three different approaches of quantifying the
+                                                                           SiGe indentation were presented: a scatterometry model
+                                                                           utilizing SI spectra and novel analysis algorithms, LE-XRF
+                                                                           count differences calibrated by TEM, and machine learning
+                                                                           using LE-XRF count differences and scatterometry spectra.
+                                                                           Using a large DOE set, very good agreement between all three
+                                                                           approaches and TEM image analyses was observed. The
+                                                                           scatterometry model in conjunction with novel analysis
+    Fig. 7. Comparison of ΔGe Lα between machine learning based
+scatteromerty (post indent metrology only) and LE-XRF metrology (pre and
+                                                                           algorithms yielded the best match to reference. The LE-XRF
+post indent metrology).                                                    methodology is simple but requires a pre and post indentation
+                                                                           metrology step for best accuracy. The machine learning based
+    Since the machine learning algorithm output is in the form             scatterometry model combines the fast time to solution of XRF
+of counts a conversion to a dimensional indentation parameter              with the fast throughput of optical spectra acquistion and does
+is required, which can be achieved based on TEM image                      not require an often cumbersome three-dimensional optical
+calibration similar to what is shown in Figure 6. The results of           model.
+the trained machine learning model with a dimensional output
+parameter in comparison to the TEM indentation values are                                           ACKNOWLEDGMENT
+presented in Figure 8. The accuracy of this methodology with                 The authors wish to acknowledge the assistance of IBM and
+respect to TEM image analysis is R2 = 0.872, which is                      Nova management support.
+comparable to what was achieved with the full scatterometry
+model using NovaPRISM SI channels and novel interpretation                                               REFERENCES
+algorithms. The machine learning solution combines the high-
+throughput of scatterometry metrology with the fast time to                [1] N. Loubet, T. Hook, et. al, “Stacked nanosheet gate-all-around
+solution of LE-XRF analyses and has the additional advantaged              transistor to enable scaling beyond FinFET,” 2017 Symposium on VLSI
+                                                                           Technology, Jun. 2017, DOI 10.23919/VLSIT.2017.7998183
+that a traditional optical model is not required. Only a few TEM           [2] G. Muthinti, N. Loubet, et. al “Materials characterization for
+image analyses are needed for converting the counts to a                   process integration of multi-channel gate all around (GAA) devices,”
+quantifiable lateral indent in nanometers.                                 Proceedings of the SPIE, vol. 10145, Mar. 2017, DOI 10.1117/12.2261377
+                                                                           [3] G. Muthinti, N. Loubet, et. al “Novel hybrid metrology for
+process integration of multi-channel gate all around (GAA) devices,”                Manufacturing,” CRC Press, NY, 27-30, 2018.
+Proceedings of the SPIE, vol. 10585, Mar. 2018, DOI 10.1117/12.2297500              [11] N. Rana, Y. Zhang, et. al., “Leveraging advanced data analytics, machine
+[4] J. Zhang, J. Frougier, et. al “Full Bottom Dielectric Isolation to Enable       learning, and metrology models to enable critical dimension metrology
+Stacked Nanosheet Transistor for Low Power and High Performance                     solutions for advanced integrated circuit nodes”, J. of Micro/Nanolithography,
+Applications,” 2019 IEEE International Electron Devices Meeting (IEDM),             MEMS, and MOEMS, 13(4), 041415 (2014).
+San Francisco, CA, USA, 2019, pp.11.6.1-11.6.4                                      [12] M. Breton, R. Chao, et al., "Electrical test prediction using hybrid
+[5] M. Korde, S. Kal, et. al “Nondestructive characterization of nanoscale          metrology and machine learning", Proc. SPIE 10145, Metrology, Inspection,
+subsurface features fabricated by selective etching of multilayered nanowire        and Process Control for Microlithography XXXI, 1014504 (2017).
+test structures using Mueller matrix spectroscopic ellipsometry based               [13] D. Kong, R. Chao, et al., "In-line characterization of non-selective SiGe
+scatterometry,” JVST B 38(2), Mar/Apr 2020, DOI 10.1116/1.5136291                   nodule defects with scatterometry enabled by machine learning", Proc. SPIE
+[6]M. Korde, J. R. Kline, et. al “X-ray metrology of nanowire/nanosheet FETs        10585, Metrology, Inspection, and Process Control for Microlithography
+for advanced technology nodes,” Proc. SPIE 11325, Metrology, Inspection,            XXXII, 1058510 (2018).
+and Process Control for Microlithography XXXIV, 113250W, 2020.                      [14] D. Kong, K. Motoyama, et al., "Machine learning and hybrid metrology
+[7] C. Raymond, “Overview of Scatterometry Applications in High Volume              using scatterometry and LE-XRF to detect voids in copper lines", Proc. SPIE
+Silicon Manufacturing”, Characterization and Metrology for ULSI                     10959, Metrology, Inspection, and Process Control for Microlithography
+Technology, CP 788, 2005.                                                           XXXIII, 109590A (2019).
+[8] Shacham-Diamand, Y., Osaka, et. al. Advanced Nanoscale ULSI                     [15] S. Das, J. Hung, et. al., “Machine learning for predictive electrical
+Interconnects: Fundamentals and Applications. Springer, NY,481-484, 2009.           performance using OCD”, Proc. SPIE 10959, Metrology, Inspection, and
+[9] D. Shafir, G. Barak, et. al., “Mueller matrix characterization using spectral   Process Control for Microlithography XXXIII, 109590F (2019).
+reflectometry.” Proc. SPIE 8789, Modeling Aspects in Optical Metrology IV,
+878903 (2013).
+[10] D. K. Bowen and B. K. Tanner, “X-Ray Metrology in Semiconductor
+

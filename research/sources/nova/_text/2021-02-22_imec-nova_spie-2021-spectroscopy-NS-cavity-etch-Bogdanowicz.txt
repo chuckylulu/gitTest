@@ -1,0 +1,581 @@
+       PROCEEDINGS OF SPIE
+       SPIEDigitalLibrary.org/conference-proceedings-of-spie
+
+
+
+
+                   Spectroscopy: a new route towards
+                   critical-dimension metrology of the
+                   cavity etch of nanosheet transistors
+
+
+
+
+                   Bogdanowicz, J., Oniki, Y., Kenis, K., Muraki, Y., Nuytten,
+                   T., et al.
+
+
+
+
+                                  J. Bogdanowicz, Y. Oniki, K. Kenis, Y. Muraki, T. Nuytten, S. Sergeant, A.
+                                  Franquet, V. Spampinato, T. Conard, I. Hoflijk, J. Meersschaut, N. Claessens,
+                                  A. Moussa, D. Van Den Heuvel, J. Hung, R. Koret, A.-L. Charley, P. Leray,
+                                  "Spectroscopy: a new route towards critical-dimension metrology of the cavity
+                                  etch of nanosheet transistors," Proc. SPIE 11611, Metrology, Inspection, and
+                                  Process Control for Semiconductor Manufacturing XXXV, 116111Q (22
+                                  February 2021); doi: 10.1117/12.2581800
+
+                                  Event: SPIE Advanced Lithography, 2021, Online Only
+
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021 Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                           Spectroscopy: a new route towards critical-dimension metrology
+                                      of the cavity etch of nanosheet transistors
+                          J. Bogdanowicz*a, Y. Oniki a, K. Kenis a, Y. Muraki b, T. Nuytten a, S. Sergeant a, A. Franquet a,
+                                   V. Spampinato a, T. Conard a, I. Hoflijk a, J. Meersschaut a, N. Claessens a,c,
+                                A. Moussa a, D. Van den Heuvel a, J. Hung d, R. Koret d, A.-L. Charley a, P. Leray a
+                        a
+                          Imec, Kapeldreef 75, 3001 Leuven, Belgium; bTEL Technology Solutions Ltd., Mitsuzawa 650,
+                         Hosaka-cho, Nirasaki, Japan 400-0192; cKULeuven, Dep. of Physics and Astronomy, C 200-D,
+                                       3001 Leuven, Belgium; dNova Measuring Instruments Ltd., Israel
+
+
+                                                                                   ABSTRACT
+
+                    The processing of gate all-around Si transistors requires to isolate vertically stacked nanometer-thick Si sheets or wires.
+                    For this purpose, the SiGe layers of a SiGe/Si superlattice are etched selectively and laterally in a process step commonly
+                    called cavity etch1,2. Controlling the quantity of etched SiGe material, i.e. the cavity depth, is critical for optimal device
+                    performance. Unfortunately, this critical dimension (CD) can only be measured by time-consuming cross-sectional
+                    electron microscopy, which results in limited statistics and hence control of the cavity depth across wafers and batches. As
+                    a first step towards the development of fast inline cavity depth measurements, this work evaluates the sensitivity to cavity
+                    depth of conventional CD metrology and alternative top-down spectroscopic techniques on samples with cavity depths
+                    ranging from 0 to 30 nm. As we show, while optical CD scatterometry remains a technique of choice thanks to its high
+                    throughput and sensitivity, Raman and Energy-Dispersive X-ray spectroscopies also show very promising results owing
+                    to their simple sensitivity to the remaining SiGe volume. Finally, Secondary Ion Mass Spectrometry offers unique cavity
+                    profiling capabilities with a very high sensitivity down to SiGe residues, despite being time-consuming and destructive.
+                    Keywords: cavity etch, lateral recess, critical dimension, inline metrology, Raman spectroscopy, Energy dispersive X-ray
+                    spectroscopy, X-ray photoelectron spectroscopy, Secondary ion mass spectrometry
+
+
+                                                                           1. INTRODUCTION
+                    Novel gate-all-around devices like nanosheet, forksheet and ultimately Complementary Field-Effect Transistors (FETs)
+                    are due to replace today’s finFETs as they offer both an enhanced electrostatic control and a reduced footprint 1. Common
+                    to the processing of these different devices is the selective lateral recess, also called cavity etch, of the SiGe layers of a
+                    vertical Si/SiGe superlattice, to isolate the future vertically stacked Si channels2. The depth of these cavities is of paramount
+                    importance as it defines the dimensions of the inner spacer and hence the final gate capacitance 3. However, this critical
+                    dimension (CD) can today only be determined by cross-sectional electron microscopy. Besides being time-consuming and
+                    destructive, this type of metrology only offers a very limited sampling e.g. across a wafer.
+                    In this work, we evaluate the capabilities of conventional CD metrology and alternative spectroscopic techniques for fast
+                    inline cavity depth measurements on samples etched by a gas-phase isotropic dry etch process2,4,5 and presenting cavity
+                    depths ranging from 0 to 30 nm. After describing our sample set in Section 2, we demonstrate in Section 3 that conventional
+                    techniques such as Scanning Electron Microscopy (SEM) and Atomic Force Microscopy (AFM) provide limited to no
+                    information about this buried CD. As we further show, Optical CD (OCD) scatterometry has a high sensitivity to the cavity
+                    depth. However, the unique reconstruction of the full device without correlations between the many geometrical parameters
+                    remains a challenge6. Finally, in Section 4, we demonstrate the capabilities of various top-down spectroscopic techniques,
+                    namely Energy-Dispersive X-ray Spectroscopy (EDX), Raman spectroscopy, X-ray Photoelectron Spectroscopy (XPS)
+                    and Secondary Ion Mass Spectrometry (SIMS). We show that these four techniques simply provide a measurement of the
+                    SiGe volume under the incident beam and hence contain sensitive information about the cavity depth. We conclude that
+                    Raman and EDX spectroscopies are very promising techniques for fast inline and precise cavity depth measurements.
+                    SIMS and XPS also do show interesting sensitivity to the cavity depth but they are inherently slower and/or destructive,
+                    hence less suited for inline metrology. Nevertheless, SIMS offers cavity profiling capabilities as well as a unique lower
+                    limit of detection and might remain a critically relevant technique e.g. in case of SiGe residue measurements.
+
+                     *janusz.bogdanowicz@imec.be; https://www.imec-int.com/en
+
+
+
+
+                                             Metrology, Inspection, and Process Control for Semiconductor Manufacturing XXXV,
+                                                 edited by Ofer Adan, John C. Robinson, Proc. of SPIE Vol. 11611, 116111Q
+                                                  © 2021 SPIE · CCC code: 0277-786X/21/$21 · doi: 10.1117/12.2581800
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-1
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                           2. EXPERIMENTAL
+                    The aim of this paper is to evaluate the sensitivity of various techniques to cavity depth. For this purpose, we have processed
+                    four identical simplified nanosheet samples (Fig. 1). These samples consist of an array of ~100-nm wide fins comprising
+                    a 6-layer Si75Ge25/Si superlattice covered with a ~100-nm thick SiO2/SiN/SiO2 hard mask5. The nominal thicknesses of the
+                    different layers in the superlattice are all of 9 nm. The samples were etched by a gas-phase isotropic dry etch process2,4,5
+                    for four different times, leading to cavity depths ranging from 0 to 28.7 nm as illustrated in Figs 1(a) to (d). As also
+                    indicated, this corresponds to a reduction in SiGe volume of up to 46%, considering a constant width of 120 nm at the
+                    SiGe/Si superlattice. These samples were used for evaluation of top-down spectroscopic techniques (Section 4).
+                    Besides these 4 samples, another set of 2 full wafers with identical processing and respective nominal cavity depths of 15
+                    nm and 30 nm were used for evaluation of conventional CD metrology techniques (Section 3).
+
+
+
+
+                          Figure 1. Transmission electron micrographs of the samples used in this paper, i.e. 100-nm wide fins including a 6-layer
+                          Si75Ge25/Si superlattice covered with a SiO2/SiN/SiO2 hard mask. The depth of the cavities ranges from 0 to 28.7 nm. The
+                          used target has a 420 nm pitch and a 250 μm fin length.
+
+
+                    Note that these samples do not include the dummy gate normally present on top of the fins at the cavity etch step7. However,
+                    the 100-nm thick hard mask nicely emulates the gates and allows to maintain the full complexity of the measurement of
+                    such buried information.
+
+
+
+                                                           3. CONVENTIONAL CD METROLOGY
+                    In this Section, we evaluate the sensitivity of commonly used dimensional metrology techniques to the cavity depth and
+                    evaluate how this sensitivity could be improved. First, as we show in Section 3.1, SEM is insensitive to buried information
+                    due to the low landing energy usually used to maximize the sensitivity to topography of the top layer and minimize the
+                    influence of underlayers8. However, as we show theoretically, an increased landing energy could lead to an improved
+                    sensitivity to cavity depth. Second, Section 3.2 demonstrates that AFM also lacks sensitivity to cavity depth due to the
+                    limited information AFM can provide on fin sidewalls. Tilting the AFM tip mitigates that problem but requires wide
+                    spacings between the fins and anyway results in very limited maximum probing cavity depth. Finally, OCD proves to be
+                    very sensitive to cavity depth. However, the technique requires a model of which the complexity increases as the device
+                    geometry gets more sophisticated6 and is therefore not very intuitive. Furthermore, correlations between the different
+                    geometrical parameters may occur. These correlations could be broken by adding independent information, e.g. from one
+                    of the techniques introduced in Section 4.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-2
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    3.1 SEM
+                    SEM is the most common technique for measuring the width and edge roughness of nanometer-wide lines8. This imaging
+                    technique is based on the measurement of the secondary and/or backscattered electrons collected locally while scanning a
+                    nanoscale electron beam across the sample surface9. Its nanometer lateral resolution would make it the ideal candidate for
+                    cavity depth measurements.
+                    Unfortunately, to maximize the sensitivity to surface topography, most inline SEM tools use low (~0.2-0.6 keV) landing
+                    energies, which results in limited probing depth8. This is confirmed by Figs. 2(a) and (b) where no differences are observed
+                    between two SEM images taken at 0.2 keV landing energy on samples with respective cavity depths of 15 nm and 30 nm.
+                    This is also theoretically shown in Fig. 2(c) where even a 1 keV landing energy leads to no more than 2 nm depth of
+                    maximum electron backscattering, i.e. depth of maximum sensitivity. This figure was obtained from Monte Carlo
+                    simulations using the Casino program10 assuming the stack of Fig. 1.
+                    Interestingly, Fig 2(c) also shows that, at landing energies ranging from ~6 keV to ~13 keV, electrons can reach and
+                    backscatter on the buried SiGe/Si superlattice. Besides, the mass of the Ge atom being the heaviest of the full stack ensures
+                    a high backscattering efficiency on SiGe, which should provide a high sensitivity to the latter layers9. In other words, SEM
+                    might remain an interesting technique for cavity depth metrology, but high landing energies unavailable in most inline
+                    tools, are required.
+
+
+
+
+                          Figure 2. (a),(b) SEM images obtained at 0.2 keV landing energy on samples with respective cavity depths of 15 nm and 30 nm.
+                          No clear difference is observed between the two images indicating the lack of sensitivity of low landing energy SEM to cavity
+                          depth. (c) Theoretically calculated increase in depth of maximum electron backscattering, i.e. of maximum sensitivity, with
+                          increasing electron landing energy on the stack of Fig. 1 according to Monte Carlo simulations using the Casino program10.
+
+
+                    3.2 AFM
+                    In AFM, a nm-sharp tip mounted on a soft cantilever is scanned across the sample surface to probe its topography11. The
+                    technique relies on the interaction between the tip apex and the surface, which bends the cantilever up and down as the tip
+                    follows the surface topography. The lateral resolution when measuring the CD of a line is limited by the size of the tip
+                    apex (>~ 10 nm) which interacts with the surface. In the direction perpendicular to the surface, the resolution is much
+                    higher (<1 nm) as the vertical movements of the tip are recorded very precisely from the change in position of a laser spot
+                    reflected off the bent cantilever11. In other words, to probe the depth of a cavity, the AFM tip should ideally be placed
+                    perpendicular to the fin sidewall.
+                    It is thus no surprise that, in Fig. 3(a), the AFM scan measured with the tip perpendicular to the wafer surface (red curve)
+                    offers no information about the fin sidewalls or the cavities. Note e.g. the underestimated verticality of the sidewall vs the
+                    overlaid TEM. As the tip scans the fin sidewall, the tip sidewall also interacts with the fin12. What is measured is therefore
+                    a convolution of the fin and tip sidewalls, which leads to a virtually complete loss of sensitivity.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-3
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    On the other hand, as the tip is scanned with a tilt angle of 38º (green curve), the observation of the sidewall and the
+                    cavities corresponds more accurately to the structure as observed by comparison with the overlaid TEM. This confirms
+                    that tilting the tip allows to extract useful and precise information about the sidewall topography. However, it can also be
+                    seen in Fig. 3(b) that AFM has limited probing depth and cannot discriminate the 15 nm and 30 nm cavity depths.
+                    Furthermore, we also observe in Fig. 3(a) that tilted AFM cannot probe the full height of the fin. At the bottommost point,
+                    the tip sidewall is in contact with the next fin located ~320 nm to the left. This is not a major issue in the considered case
+                    because the pitch is very relaxed (420 nm). However, if the pitch was reduced to ~200 nm or lower, the bottommost point
+                    will move up such that the tip would no longer be able to access the cavities.
+
+
+
+
+                          Figure 3. (a) overlay of a TEM representative of our samples with 2 AFM scans run respectively without tilt (red) and with 38º
+                          tilt angle (green). Only the tilted AFM scan can access information about the fin sidewall and the cavities. (b) Zoom on the tilted
+                          AFM scans in the region of the cavities. Tilted AFM can sense the presence of the 3 cavities but not the difference in cavity depth
+                          between the 2 samples (15 vs 30 nm).
+                    In summary, zero-tilt AFM is not suited for cavity depth measurements as it is insensitive to information along the fin
+                    sidewalls. Tilted AFM, on the other hand, does sense the cavities but with a limited probing depth and only on structures
+                    with a relaxed pitch.
+
+                    3.3 OCD
+                    In OCD, the reflectivity of a periodically repeated array of the structures to be characterized is measured under different
+                    illumination conditions, i.e. different wavelengths, polarizations, angles of incidence and azimuths. The different measured
+                    reflectivity spectra (see e.g. Fig 4(a)) are then fitted by solving Maxwell’s wave equation using the Rigorous Coupled
+                    Wave Analysis technique12 on a geometrical model such as shown in Figs 4(b) and (c). Beyond the geometrical parameters,
+                    the required input for the latter model are the optical indices (n,k) of all involved materials.
+                    Fig. 4(a) shows the sensitivity to cavity depth of the normal-incidence spectra measured with the NOVA T600MMSR on
+                    the two samples with respective nominal cavity depths 15 nm (full lines) and 30 nm (dashed lines) respectively with
+                    transverse electric (TE, red) and transverse-magnetic (TM, blue) polarizations. As observed, the TE channel shows higher
+                    sensitivity to the cavity depth over virtually the full spectral range compared to TM. This is expected as TE-polarized light
+                    is known to propagate within the fins in such periodic arrays 13,14. TM-polarized light, on the other hand, tends to propagate
+                    in the spacer (i.e. air) and is therefore little impacted by a change in cavity depth13.
+                    Figs. 4(b) and (c) show the profiles of the samples with respectively 15 and 30 nm cavity depths based on the fitting of the
+                    spectra of Fig. 4(a) (small circles) using the NOVA MARS software package15. As can be observed, the fitted cavity depth
+                    values of 13 and 28 nm, as well as the overall profile shape, are very close to what is nominally expected. This shows the
+                    amazing power of OCD, i.e. its ability to predict the full geometry of the measured device (here 9 geometrical parameters)
+                    in a <1-min long non-contact measurement. However, these figures also show two of the difficulties faced by OCD. First
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-4
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    and foremost, OCD is sensitive to the complete geometry of the device, i.e. including parameters which might be of little
+                    relevance. In some cases, correlations between these parameters may exist, which leads to non-unique solutions and
+                    therefore requires complex injection strategies6. Second, OCD is model-based, hence indirect and not intuitive. This is also
+                    a consequence of the wealth of information contained in the OCD spectra.
+
+
+
+
+                          Figure 4. (a) Normal-incidence reflectivity spectra measured on two samples with respective nominal cavity depths 15 nm full
+                          lines) and 30 nm (dashed lines) with respectively transverse-electric (TE, red) and transverse-magnetic (TM, blue) polarizations.
+                          Strong sensitivity to cavity depth is observed mostly with TE polarization (red). (b) and (c) Reconstructed profiles of the samples
+                          with respectively 15- and 30-nm nominal cavity depths based on the fitting of the spectra of (a).
+
+
+                    In summary, OCD is very close to fulfilling the need for fast inline characterization of cavity depth. However, this
+                    technique being indirect and sensitive to so many geometrical parameters, it would deeply benefit from extra independent
+                    input from other techniques which are more direct/intuitive and less sensitive to the full device geometry.
+
+
+
+                           4. CD METROLOGY BASED ON TOP-DOWN SPECTROSCOPIC TECHNIQUES
+                    As we showed in Section 3, conventional CD metrology lacks sensitivity to cavity depth and/or would benefit from extra
+                    information coming from more direct and intuitive techniques. In this Section, we first introduce the idea behind the use
+                    of top-down spectroscopic techniques for cavity depth measurements. Next, we evaluate the sensitivity and capabilities
+                    for such measurements of EDX (Section 4.1), Raman spectroscopy (Section 4.2), XPS (Section 4.3) and SIMS (Section
+                    4.4). As we will demonstrate experimentally, these techniques simply measure the volume of SiGe remaining under the
+                    beam.
+
+                    The idea behind the use of spectroscopic techniques for cavity depth measurements is explained in Fig. 5(a). Irrespective
+                    of the technique, an excitation beam impinges top-down on a periodic array of the devices to be characterized. The
+                    interaction between the sample and the beam results in the emission of a secondary beam. The excitation and emitted
+                    beams can both be made up of electrons, photons or ions, according to the considered spectroscopic technique. If measured
+                    with an energy- or mass-sensitive detector, the emitted beam will reveal several peaks at energies/masses representative
+                    of the different materials or elements constituting the stack. As discussed mathematically below, the integral under these
+                    peaks is a measure of the volume of the considered material/element present under the excitation beam. In other words, a
+                    loss of volume will result in a reduced peak height. This is precisely what is observed in Fig. 5(b) where the drop in
+                    integrated signal for a deeper cavity is overlaid for the four techniques. The latter figure is of critical importance as it
+                    experimentally demonstrates the value of using these top-down spectroscopic techniques for cavity depth measurements.
+
+                    To clarify the sensitivity which can be expected from spectroscopic techniques, let us give a simple mathematical
+                    description of the signals measured on the samples described in Fig. 1. If we assume a uniformly excited volume VSiGe, the
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-5
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    integrated intensity Sintegrated under the peak representative of SiGe material simply varies linearly with VSiGe (see e.g. eq.
+                    (2.14) of Ref. [9]), i.e.
+                                                Sintegrated =αVSiGe =α×Nfins ×(WSiGe -dcavity )×(3×t SiGe )×Dbeam ,                            (1)
+                    where α is a proportionality factor dependent on the considered technique and input parameters such as incident power,
+                    integration time etc. Dbeam is the excitation beam diameter, Nfins is the number of fins under the excitation beam
+                    (=Dbeam/pitch), WSiGe is the fin width at the level of the SiGe layers, dcavity is the cavity depth, and 3XtSiGe is the total
+                    thickness of the 3 SiGe layers. Two assumptions were needed to derive eq. (1). First of all, vertical fin sidewalls were
+                    assumed. Second and most importantly, the full SiGe volume was assumed uniformly excited. Yet, the intensity of the
+                    incident beam typically decreases exponentially as it travels from the top surface deeper down into the sample as a result
+                    of multiple interactions (absorption, scattering,...). Furthermore, a non-uniform lateral distribution of the incident intensity
+                    may also be expected in the patterned samples of Fig. 1. Consequently, the intensity of the peak representative of the SiGe
+                    material is actually proportional to a convolution of VSiGe with the distribution of the incident beam intensity inside the
+                    SiGe volume9. We propose below a first-order correction for this assumption.
+
+
+
+
+                               Figure 5. Cavity depth measurements with top-down spectroscopic techniques. (a) A primary beam of electrons, photons or
+                               ions impinges top-down and excites the sample to be characterized. This interaction leads to the emission of a secondary
+                               beam of electrons, photons or ions. One specific peak of the mass- or energy-resolved emitted beam is representative of the
+                               volume of SiGe volume present under the excitation beam. The peak intensity therefore drops as the cavity is etched deeper
+                               (b) Summary of the experimental results obtained with the four considered top-down spectroscopic techniques, indicating
+                               their sensitivity to the loss in SiGe volume V and the approximate measurement time.
+
+                    Eq. (1) already shows one of the values of such spectroscopic techniques, i.e. they are direct and intuitive. It is indeed easy
+                    to see with eq. (1) that, the integrated signal will drop monotonically as the material is etched. Second, it is simple to
+                    predict that cavity depth measurements will face geometrical correlations with e.g. tSiGe and WSiGe.. We leave the question
+                    of whether these correlations can be easily broken or not, i.e. whether the proposed techniques can be used as stand-alone
+                    techniques or not, for future discussions.
+
+                    If we further assume that all the samples of Fig. 1 have identical geometries except for the cavity depth, normalizing eq.
+                    (1) to the integrated signal S0 on the unetched sample yields the normalized integrated intensity Snormalized, i.e.
+                                                                       Sintegrated VSiGe     dcavity                                     (2)
+                                                        Snormalized =             =      =1-         ,
+                                                                           S0       V0       WSiGe
+                    where V0 is the SiGe volume of the unetched sample. The behavior of eq. (2) is represented by the black dashed line in
+                    Fig. 5(b). Unfortunately, as mentioned above, in most tested techniques, the SiGe volume is not uniformly excited such
+                    that the experimentally observed behavior does not overlay with eq. (2). As a tentative simplified equation accounting for
+                    the non-uniform volume excitation, we write
+                                                                                     dcavity                                             (3)
+                                                                   Snormalized =1-β×         ,
+                                                                                     WSiGe
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-6
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    where β is a sensitivity factor incorporating the impact of non-uniform excitation. Fig. 5(b) confirms that eq. (3) acceptably
+                    models the measured data. The β values indicated for the different techniques were obtained by linearly fitting the
+                    experimental data of Fig. 5(b) with eq. (3). In the next Sections, more information and discussion will be given on the
+                    plotted signals and on the possible optimization of the sensitivity factor β for each respective technique.
+                    As a final note, let us mention that all the measurements of this Section were actually obtained on laboratory-based tools.
+                    However, the chosen spectroscopic techniques also exist as fully automated fab-based platforms. Variations with the
+                    laboratory tools we have used may of course exist but are not discussed here.
+
+                    4.1 EDX
+                    In EDX, also called electron microprobe, the excitation beam is composed of electrons while the emitted signal consists
+                    of X-rays9.16 (Fig. 6(a)). As the primary electron beam travels through the structure, inner shell electrons of the different
+                    elements reached by the primary electrons are kicked out of their energy levels as secondary electrons. As electrons
+                    subsequently relax and fill the left-empty energy levels, X-ray photons are emitted with an energy representative of the
+                    element which they originate from9.16.
+                    Fig. 6(b) shows the EDX spectra measured with an Xl 31 nanoprober tool from Oxford Instruments on the sample of Fig.
+                    1(a) with different landing energies. The different characteristic peaks for Si, N, O and most importantly Ge are indicated.
+                    Our data show that an electron landing energy of 5.7 keV (green) is close to optimal for reaching the SiGe/Si superlattice
+                    and ionize the Ge atoms. At 3 keV landing energy (blue), the absence of a Ge Lα peak (at 1.2 keV) indicates that ionization
+                    has only taken place in the SiO2/SiN hard mask while at 10.4 keV landing energy (red), most of the incident energy is lost
+                    in the Si substrate and the sensitivity to the Ge content drops.
+                    Most importantly, Fig. 6(c) shows that the Ge Lα peak intensity drops significantly as the cavity is etched from 0 nm to
+                    28.7 nm. This demonstrates the good sensitivity of the technique to cavity depth. Unfortunately, this figure also shows one
+                    of the drawbacks of EDX, i.e. a large background is observed on the Ge Lα peak. The background in EDX is mostly due
+                    to bremsstrahlung X-rays9 and can therefore not be eliminated experimentally. As a result, EDX has a relatively poor limit
+                    of detection and will not be useful for e.g. measurement of SiGe traces (nanosheet release2.5).
+                    After integration of the surface under the Ge peak and background removal on the measurements run on all four samples
+                    of Fig. 1, the complete sensitivity curve for EDX is shown in Fig. 5(b) (red). From this figure, it is obvious that EDX is a
+                    good choice for minute-long non-destructive and non-contact cavity depth measurement. Furthermore, the obtained β value
+                    (β~0.64) could still be enhanced with a laterally more uniform excitation of the SiGe volume, i.e. on devices with a smaller
+                    width or by increasing the excitation beam radius. The former solution is anyway what is found in all state-of-the-art
+                    devices where CD<~20 nm7.
+
+
+
+
+                          Figure 6. (a) Principle of EDX. (b) EDX spectra of the sample with cavity depth = 0 nm measured at different landing energies.
+                          The Ge Lα peak at 1.2 keV is optimally resolved at a landing energy = 5.7 keV. (c) The Ge Lα peak intensity drops as the SiGe
+                          is etched from 0 nm to 28.7 nm cavity depth, which demonstrates the sensitivity of EDX to cavity depth.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-7
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    4.2 Raman spectroscopy
+                    In Raman spectroscopy, both the excitation beam and emitted signal are composed of photons16 (Fig. 7(a)). However, the
+                    wavelength of the emitted beam in this nonlinear optical technique is shifted after scattering of the excitation beam and
+                    emission/annihilation of phonons within the illuminated structure. This change in wavelength, i.e. the Raman shift, is a
+                    measure of the phonon energy which is directly linked to bond strength within the material. For this reason, Raman
+                    spectroscopy is commonly used for measurement of e.g. stress and composition in blanket but also patterned semiconductor
+                    srtructures17,18.
+                    Fig. 7(b) shows the Raman spectra measured with the Horiba Jobin-Yvon HR800 Raman tool on the sample of Fig.1(a)
+                    with different incident wavelengths. Two peaks are observed at respectively 510 and 520 cm-1, which are attributed to
+                    scattering with the Si-Si bond vibration respectively in SiGe and in Si. This difference in peak position can be understood
+                    as reflecting the less energetic bond (larger lattice constant) in SiGe than in Si19. As can also be observed in Fig. 7(b), a
+                    shorter incident wavelength leads to a better resolved SiGe peak. This is due to the smaller penetration depth at a shorter
+                    wavelength20, which thus enhances the visibility of the SiGe peak vs the dominant Si peak. Finally, it is also important to
+                    mention that incident TE polarization, i.e. electric field parallel to the fin, is required for such measurements as it ensures
+                    that most of the electric field penetrates into the fin13,14. Conversely, TM polarization leads to light propagating inside the
+                    spacer, i.e. air, and therefore to low intensity SiGe peaks (not shown).
+                    Quite surprisingly, as Fig. 7(c) shows, while only a reduction in the SiGe peak might have been expected, a rise in both
+                    the Si and SiGe peaks was obtained as the SiGe is etched. The overall increase across the measured spectrum means that
+                    the electric field within the fin has been enhanced when etching SiGe. However, the Si peak rises faster than the SiGe
+                    peak, i.e. the sensitivity to cavity depth is present. The overall rise in the measured spectrum is the combined effect of a
+                    reduction in both the reflectivity and the absorptivity of the sample, as confirmed in the OCD data of Fig.4 (a) and by
+                    finite-element simulations (not shown).
+
+
+
+
+                               Figure 7. (a) Principle of Raman spectroscopy. (b) Raman spectra of the sample with cavity depth = 0 nm measured at
+                               different incident wavelengths. While the peak at 520 cm-1 Raman shift is characteristic of Si, the peak at 510 cm-1 is
+                               characteristic of SiGe and is optimally resolved at an incident wavelength = 405 nm. (c) Both the peaks at 520 cm-1 (Si) and
+                               at 510 cm-1 (SiGe) increase as the SiGe is etched from 0 nm to 28.7 nm cavity depth. However, the ratio of the two peaks
+                               indicates a reduction of the SiGe content vs Si, which demonstrates the sensitivity of Raman spectroscopy to cavity depth.
+
+
+                    To account for the field enhancement as the etch proceeds, the Raman signal we opted for and plotted in Fig. 5(b) is the
+                    ratio of the integrated SiGe and Si peaks. As observed, this ratio monotonically decreases as the SiGe is etched, which
+                    demonstrates the value of Raman as minute-long non-destructive and non-contact cavity depth measurement technique.
+                    However, Raman has the smallest sensitivity factor (β~0.41) of all four shown techniques. This is due to a very non-
+                    uniform electric field distribution within our wide pitch structure. As Ref. [14] shows, the electric field becomes much
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-8
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    more uniform laterally (~plane wave) as the pitch and CD are scaled down. It is therefore expected and has been confirmed
+                    experimentally that the sensitivity factor approaches unity on 90-nm pitch structures (not shown).
+                    4.3 XPS
+                    XPS is based on the photelectric effect16. A beam of monochromatic X-ray with energy EX-ray ionizes the elements present
+                    in the sample by kicking out inner shell electrons, which exit the sample forming a photoelectron signal (Fig. 8(a)). The
+                    photoelectrons are emitted with a kinetic energy Ee-=EX-ray-Ebinding, where the binding energy is material-specific16.
+
+
+                    At first sight, the relevance of XPS for measuring buried information is questionable. Indeed, as the energy equation above
+                    suggests, the exit kinetic energy Ee- of the electrons is upper-bounded by the incident energy EX-ray, which for incident Al
+                    Kα is EX-ray=1.4866 keV. In other words, the photoelectrons are emitted with a low kinetic energy, resulting in limited
+                    escape depth and hence depth of probing, as already discussed in Sections 3.1 and 4.1 in the context of SEM and EDX
+                    respectively. Interestingly, variants of XPS such as hard X-ray photoelectron spectroscopy (HAXPES), in which incident
+                    Cr Kα (EX-ray= 5.4149 keV) or Ga Kα (EX-ray= 9.2248 keV) photons are used, lead to probing depths up to a few 10s of
+                    nanometers21.
+
+
+                    In this paper, we still used conventional XPS, i.e. Al Kα photons incident parallel to the lines to avoid any lateral shadowing
+                    effects22. Given the limited probing depth of XPS, we removed the thick hard mask on top of the SiGe/Si superlattice and
+                    expose the top Si layer, as schematically shown in Fig 8.(a). Fig. 8(b) shows the Ge3d peak as measured with the
+                    QUANTES instrument from Physical electronics on the 4 samples of Fig. 1. As expected, a drop in Ge3d peak is observed
+                    as the SiGe is laterally etched. This figure shows the sensitivity of XPS to cavity depth and Fig. 5(b) summarizes the results
+                    after integration and normalization of the peaks. As observed, the normalized integrated XPS signal drops quickly as the
+                    cavity etch proceeds but the drop does not follow the expected linearity of eq. (3). We understand this non-linearity as
+                    being due to the high sensitivity of XPS to any change in surface oxidation and/or in thickness of the top Si layer after HM
+                    etch.
+
+
+
+
+                                Figure 8. (a) Principle of XPS on a sample without a hard mask (b) Drop in intensity of the Ge3d peak as the SiGe is etched
+                               in the samples of Fig. 1.
+
+
+                    To conclude, XPS shows a very interesting sensitivity to cavity depth but it also comes with three critical weaknesses.
+                    First of all, the probing depth is limited although, as mentioned, the use of hard X-rays can alleviate this issue. Second, the
+                    typical measurement time is quite significant (~1 hour/sample). However, both these weaknesses are somewhat mitigated
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-9
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                    in in-line XPS tools using a higher incident X-ray fluence. Third, and most important of all, XPS is very sensitive to surface
+                    oxidation and to variations in the thickness of the layers covering the SiGe/Si superlattice. This leads to very strong
+                    correlations which we believe will be hard to break.
+
+
+                    4.4 SIMS
+                    In SIMS, a primary ion beam collides with the sample and sputters its top surface16 (Fig 9(a)). The ionized species sputtered
+                    from the sample form a secondary ion beam which is accelerated and analyzed in a mass-sensitive detector. We used the
+                    TOF-NCS tool of ION-TOF GmbH, wherein the detection is ensured by a time-of-flight (ToF) detector16. This tool has a
+                    dual beam configuration, where two separate beams are used to respectively sputter and analyze the sample. In this paper,
+                    we used a Cs+ (350 eV) and a Bi1+ (30 keV) beams respectively for sputtering and analysis, both being incident at a 45º
+                    angle along the fins to avoid any shadowing22.
+
+
+                    One of the principal advantages offered by SIMS lies in its depth-profiling capabilities, as exemplified in Fig. 9(b) for the
+                    sample of Fig.1(a). While measuring, the sample is indeed sputtered and analyzed layer by layer. This leads to a wealth of
+                    information, where the subsequent regions (see the different colors for SiO2, SiN, superlattice and substrate in Fig 9(b))
+                    and even the 3 SiGe layers of the superlattice are easily recognized. Furthermore, as also observed, SIMS has a very wide
+                    dynamic range and a very low detection limit. Notice e.g that the Ge- signal varies almost 3 orders of magnitude along the
+                    profile while keeping the noise level very low. This makes SIMS a very promising technique for depth profiling of cavities
+                    with a precision allowing to go down to SiGe residue during nanosheet release. Finally, as shown in Figs. 9(c), (d) and (e),
+                    SIMS is also very sensitive to cavity depth and even offers sensitivity via different ion channels, i.e. respectively Ge-, SiGe-
+                    and Ge2-. On top of it, after integration of the Ge- profiles on all four samples, SIMS is shown to offer a very good
+                    sensitivity to cavity depth, i.e. β~1.13 (Fig. 5(b)).
+                    Nonetheless, two critical drawbacks of SIMS must be mentioned. First and foremost, the technique is inherently destructive
+                    as it is based on sputtering. Second, it is time-consuming (~1 hour/measurement). However, the latter measurement time
+                    can be dramatically reduced if the need for depth profiling is relaxed. Indeed, we have also used high-energy (>1 kV)
+                    sputtering beams to reduce the measurement time to <1 min while keeping the good sensitivity factor (not shown).
+                    However, this only gave access to the integrated remaining SiGe volume in the sample, similar to the other spectroscopic
+                    techniques of this paper.
+
+
+
+
+                               Figure 9. (a) Principle of SIMS. (b) SIMS depth profile of the sample of Fig. 1(a). As the sputter time proceeds,
+                               information from different depths is obtained, allowing e.g. to look at the three SiGe layers separately. (c),(d) and (e)
+                               Three measured ions, i.e. respectively Ge-, SiGe- and Ge2-, contain information about the Ge, i.e. their intensity drops as
+                               the etch proceeds from 0 nm to 28.7 nm.
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111Q-10
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                             5. CONCLUSION
+                    In this paper, we have shown that the CD metrology techniques typically found in fabs, i.e. SEM, AFM and OCD either
+                    lack sensitivity to buried cavity depth and/or would benefit from independent information obtained from another technique.
+                    Subsequently, we have proposed to use top-down spectroscopic techniques such as EDX, Raman, XPS and SIMS for fast
+                    inline cavity depth measurements. As we showed, all four techniques are sensitive to the remaining SiGe volume inside
+                    the sample, thus giving intuitive information about the depth of the buried cavities. Suggestions for improvement of the
+                    sensitivity of each technique have also been given. A comparison of all the evaluated techniques can be found in Table 1.
+
+
+                          Table 1. Comparison of the different techniques considered in this paper for cavity depth measurements.
+
+                                 Technique      SEM               AFM              OCD              EDX         Raman       XPS         SIMS
+                       Feature
+
+                       Excitation beam          e-                N/A              light            e-          light       X-ray       ions
+
+                       Emitted beam             e-                N/A              light            X-ray       light       e-          ions
+
+                       Lateral sampling         ~ nm              ~ nm             ~25 μm           ~100 nm     >=1 μm      >=50 μm     >=50 μm
+                       size
+
+                       Device vs array          single            single           array            device or   array       array       array
+                       sampling                 device            device                            array
+
+                       Measurement time         < 1 min           ~ hour           < 1 min          ~ 1 min     ~ 1 min      Min-hour   Min-hour
+
+
+                       Sensitivity to           High              Tilt and         Possible          Volume     Volume     Volume     Volume
+                       cavity depth             landing           wide pitch       correlations     of SiGe     of SiGe     of SiGe     of SiGe
+                                                energy            required
+                                                required
+
+                       Non-contact, Non-                                                                                    Hard mask   Inherently
+                       destructive                                                                                          removal     destructive
+                                                                                                                            required
+
+
+
+                                                                                 REFERENCES
+
+                          [1] J. Ryckaert, imec magazine, pp. 14-19, December 2019.
+                          [2] Y. Oniki et al., ECS Trans., 92, 3 (2019).
+                          [3] A. Veloso et al., ECS Transactions 97(5):3-14 (2020)
+                          [4] N. Loubet et al., IEDM Tech. Dig., 242 (2019).
+                          [5] S. Kal et al., Proc. SPIE, 10963 (2019).
+                          [6] A.-L. Charley et al., Proc. SPIE, 1058505 (2018)
+                          [7] H. Mertens et al., VLSI Tech. Dig., 158 (2016)
+                          [8] G. Lorusso et al., Jpn. J. Appl. Phys. 58 SD0801 (2019)
+                          [9] N. Chatterjee. 12.141 Electron Microprobe Analysis. January IAP 2012. Massachusetts Institute of Technology:
+                          MIT OpenCourseWare
+                          [10] https://www.gel.usherbrooke.ca/casino/index.html
+                          [12] B. Bhushan, H. Fuchs, M. Tomitori, Applied Scanning Probe Methods VIII, Chap. 2, Springer (2008)
+                          [12] A. Diebold, Handbook of Silicon Semiconductor metrology, Chap. 18, Taylor & Francis (2005)
+                          [13] J. Bogdanowicz et al., Applied Physics Letters 108, 083106 (2016)
+                          [14] A. Gawlik et al., Appl. Phys. Lett. 113, 063103 (2018)
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111Q-11
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                          [15] https://www.novami.com/nova-product/novamars/
+                          [16] D.K. Schroder, Semiconductor Material and Device Characterization, Chap. 11, Wiley (2006)
+                          [17] I. De Wolf, J. Appl. Phys. 71 898 (1992)
+                          [18] T. Nuytten et al., APL Mat 6 058501 (2018)
+                          [19] F. Pezzoli et al., Journal of Applied Physics 103, 093521 (2008)
+                          [20] J. G. E. Jellison and F. A. Modine, Appl. Phys. Lett 41, 180-182 (1982)
+                          [21] S. Siol, Surf Interface Anal, 1–9 (2020)
+                          [22] S. Hajati & S. Tougaard, Anal Bioanal Chem 396,2741–2755 (2010)
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111Q-12
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 23 Feb 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+

@@ -1,0 +1,480 @@
+            The Art of Holistic Metrology (in Memory of Alok Vaid)
+                                                     Igor Turovets
+                                   Nova Ltd, 5 David Fikes St, Rehovot, Israel 7610201
+
+
+                                                       ABSTRACT
+
+As device dimensions continued to shrink and semiconductor architectures evolved into increasingly complex 3D
+structures, single‑tool metrology approaches began to encounter fundamental limitations in accuracy and precision. This
+challenge led to the development of holistic metrology, which enhanced scatterometry performance by incorporating
+multiple information channels, azimuth angles, and measurement targets. The concept of holistic metrology later expanded
+into hybrid metrology, enabling complementary use of OCD, CD‑SEM, AFM, XPS, and other metrology techniques to
+further strengthen measurement robustness. More recently, AI‑enabled hybrid approaches have extended these
+capabilities. Alok Vaid played a central role in pioneering all these innovations, and this article serves both as a technical
+review of these developments and as a tribute to his lasting contributions to the metrology community.
+
+Keywords: Holistic metrology, Hybrid metrology, Scatterometry, OCD, CD-SEM, AFM, XPS, XRF, Machine Learning,
+Virtual Metrology, AI, TMU
+
+Corresponding author: igor-t@novami.com
+
+
+
+
+                                                 1. INTRODUCTION
+The Art of Holistic Metrology is the Art of innovation, collaboration, and the remarkable impact of our colleague and
+friend, Alok Vaid, who shaped much of our industry's thinking about holistic and hybrid metrology.
+The paper will primarily be based on papers published by Alok’s teams (Alok has published more than 80 papers and
+patents with more than 240 co-authors!). The first part of this article reviews the development of holistic metrology
+between 2011 and 2016, highlighting the key milestones and technical breakthroughs as illustrated in Figure 1.
+The second part covers the introduction and evolution of hybrid metrology, followed by the emergence of ML-driven
+approaches. The final section examines how Alok’s ideas continue to influence both hardware and algorithm
+development and provides a perspective on the future of semiconductor metrology.
+
+
+
+
+    Figure 1. The timeline of the Art of Holistic Metrology
+
+
+
+
+                      2. THE HISTORY OF THE ART OF HOLISTIC METROLOGY
+The need for holistic metrology emerged from the pressures imposed by Moore’s Law and the continuous reduction
+of device dimensions. Historically, semiconductor manufacturers relied on single‑tool metrology solutions such as
+CD‑SEM, CD‑AFM, and OCD, each capable of addressing specific aspects of dimensional control [1]. However,
+these tools increasingly struggled to achieve the required accuracy as device architectures became more complex.
+As technology scaled below the 28 nm node, traditional stand‑alone metrology tools reached their performance
+limits. The adoption of multi‑patterning techniques and the transition from planar devices to 3D architectures, such
+as FinFET, introduced new profile parameters and process interactions that required more advanced, integrated
+metrology approaches.
+Scatterometry limitations.
+The first metrology technique to encounter significant constraints was scatterometry, which had long served as the
+primary method for profile characterization. Early Alok’s works [2-4] explored how to address these limitations by
+expanding the spectral information available to OCD modeling. These studies examined the use of varied azimuth
+angles, multiple target types, and additional measurement channels to improve parameter sensitivity and reduce
+correlation.
+In paper [2], Alok’s team demonstrated that using variable and multiple azimuth (AZ) angles in spectroscopic
+ellipsometry significantly enhances performance by increasing parameter sensitivity (see Figure 2, as an example),
+and reducing parameter correlation, thus improving metrology performance. Results of 32 nm high-K metal gate
+(HKMG) applications demonstrated notable improvements in precision, tool matching, and accuracy, establishing
+multi‑azimuth as a key component of holistic metrology.
+    Figure 2. Schematic showing the varying spectral difference between azimuth (AZ) angles of 0 and 90 degrees [2].
+
+
+A further limitation of scatterometry appears when fixed optical constants (n and k) are assumed, even though these
+parameters can vary across wafers and process conditions—particularly in photoresist metrology. In paper [3], Alok
+and co‑authors investigated this issue using a 32 nm back-end of line (BEOL) lithography stack with intentionally
+varied optical planarization layer (OPL) bake conditions. Three modeling strategies were evaluated: a conventional
+fixed n&k model, a floating n&k model, and a multi‑stack floating n&k approach that incorporates spectra from
+multiple adjacent targets (Figure 3).
+The study showed that fixed n&k models produce substantial bias, especially in sidewall angles (SWA), when
+material properties drift. Floating n&k models correct this bias but suffer from reduced precision due to the
+introduction of additional floating parameters. The multi‑stack approach addresses both challenges by increasing the
+spectral information content available to the model, enabling simultaneous improvements in accuracy and precision.
+This methodology demonstrated robust extraction of key profile parameters—including CD, SWA, dose, and
+defocus, highlighting the value of multi‑target data for process‑tolerant OCD metrology [3].
+
+
+
+
+    Figure 3. Different nearby measurement targets are used to solve for the common set of parameters (materials) and the
+    geometry of each target (product-driven methodology) [3].
+
+
+Introduction of Holistic Metrology.
+
+The ideas from these foundation papers were combined in the groundbreaking paper by Alok et al [4], where the
+term Holistic Metrology was formally introduced.
+    Figure 4. The Holistic Metrology Approach: a combination of all possible information sources (internal and
+    external) into a single simultaneous optimization [4].
+
+
+The Holistic Metrology Approach was defined as a combination of all possible information sources (internal and
+external) into a single simultaneous (concurrent) optimization (Figure 4). The study [4] focused on internal spectral
+information within scatterometry tools, demonstrating the value of combining multiple optical channels, including
+normal- and oblique-incidence measurements and multi-azimuth measurements. By jointly interpreting the spectra
+from all these channels, the authors showed that the combined dataset provides greater spectral diversity and
+reduces parameter correlation compared to any individual channel. Applications at the 32 nm node, including
+shallow trench isolation (STI) and Gate Etch structures, confirmed that multi-channel fitting enhances sensitivity to
+weak parameters, improves dynamic repeatability, and maintains accuracy even when low sensitivity channels are
+included. These results established multi-channel analysis as a core principle of holistic metrology for advanced 3D
+structures [4].
+    Figure 5. Optical configuration of a multi-channel system [4].
+Alok and co-authors extended the holistic metrology concept in 2011 by introducing Hybrid Metrology, which
+incorporates external metrology sources into the interpretation of scatterometry or CD SEM data [5,6]. In this
+approach, two or more metrology techniques are used either sequentially or simultaneously on the same dataset,
+enabling parameter hybridization that decreases model correlation, increases sensitivity, and improves both
+precision and accuracy. Importantly, Hybrid Metrology differs from traditional “injection” approaches: while
+injection generally propagates (upstream) metrology results into a model as is, hybridization “fuses” measurement
+outputs from multiple tools, improving metrology robustness.
+Hybrid Metrology strategies
+The first practical implementation of Hybrid Metrology demonstrated the benefits of combining multiple CD
+measurement platforms—including OCD, CD SEM, and CD AFM—to address the inherent limitations of each
+individual technique. By merging complementary sensitivities and leveraging the strengths of each tool,
+hybridization improved accuracy, precision, and model robustness for both 2D and 3D device structures, as
+summarized in Table 1 [5,6].
+Table 1: Summary comparison of various CD metrology techniques [5.6]
+
+
+Hybrid Metrology demonstrated clear performance benefits by enabling parameter exchange between tools, for
+example, using CD-SEM critical dimensions to stabilize OCD model convergence or using OCD extracted sidewall
+angle (SWA) to refine CD SEM thresholding. This cross-tool interaction reduced parameter correlation, increased
+sensitivity to process variations, and enabled accurate characterization of complex 22 nm Gate photoresist (PR)
+stacks and 32 nm FinFET Gate Etch profiles. Across multiple evaluations, hybridization consistently lowered Total
+Measurement Uncertainty (TMU) and improved robustness to process variation. In addition, it expanded the
+capability of CD-AFM into narrow pitch regions through OCD assisted extrapolation. The authors also outlined
+practical deployment methods, from offline hybrid recipe optimization to real-time hybridization and universal
+hybridization engines (Figures 6 and 7), demonstrating the scalability of the approach for future nodes.
+
+
+
+
+    Figure 6. Simple hybrid metrology schematic [5].
+    Figure 7. Alternate scenarios for Hybrid Metrology setup [5].
+Following the introduction of Hybrid Metrology, it rapidly became one of the most powerful tools of holistic metrology
+strategies, particularly for HVM environments. One notable (non-OCD) early implementation was the development of a
+universal hybrid interface that combined CD SEM waveform data with 3D AFM profiles. This fusion compensated for
+limitations of individual tools, such as proximity effects, material-dependent shrinkage, and gaps in profile sensitivity.
+By aligning CD SEM intensity waveforms with AFM-derived geometry, hybridization enabled corrected SEM
+thresholds and significantly improved wafer-level CD maps. Subsequent work extended this approach to contour-based
+hybridization, in which AFM or TEM reference contours were used to recalibrate CD SEM image-processing thresholds.
+[7-8].
+
+Golden years of Hybrid metrology and HVM implementations.
+
+         In 2012, Alok and a co-author team from GF, IBM, Nova, and Hitachi [9], validated a hybrid metrology (HM)
+solution for 1X-node technologies by combining Scatterometry/ and CD-SEM (using TEM/X-SEM and CD-AFM as
+references) to overcome the accuracy-precision tradeoff, and parameter-correlation limits of scatterometry. A major
+contribution of this work was the introduction of the Data Modification Parameter (DMP), which defines the extent to
+which the primary tool incorporates information from a secondary tool. DMP values were optimized to minimize TMU
+and maximize metrological stability across varying process conditions.
+         Hybrid Metrology was evaluated across three representative high-volume manufacturing applications.
+1. FinFET Gate Final Etch: Incorporating CD-SEM fin CD into OCD models reduced CD/SWA coupling and
+significantly improved TMU for gate CD and undercut.
+2. Extreme ultraviolet (EUV) M1 Lithography: Introducing line edge roughness (LER) as a scatterometry parameter and
+hybridizing it with CD SEM LER measurements allowed substantial SWA accuracy gains compared to X SEM
+references.
+3. Negative Tone Development (NTD) M1 Lithography: LER-based hybridization yielded near-perfect agreement with
+CD-AFM SWA measurements.
+Across all applications, hybridization reduced parameter entanglement and enhanced model stability relative to
+standalone OCD. In addition, the authors demonstrated a hybrid calibration in which OCD-measured resist height is
+used to calibrate CD-SEM pattern-top roughness (PTR), to allow CD-SEM monitoring of the in-die line-height
+variations. This illustrates how HM extends each tool’s metrological capabilities and reach.
+
+        A first HVM implementation was demonstrated for the primary tool (OCD), getting input from the secondary
+tool (CD-SEM) via the host - “the low hanging fruit” or sequential implementation, as shown in Figure 8 [10].
+    Figure 8. Left: Generic data flow between the tools and the factory system; Right: Data flow between the tools and the
+    factory system for the “low hanging fruit” or sequential implementation [10].
+Two process steps (20 nm contact etch (CA/CB) and 14 nm FinFET gate etch) were used to demonstrate how combining
+CD-SEM and OCD measurements significantly improves accuracy and process control in HVM. Hybrid Metrology
+solution enabled critical dimensions by CD-SEM (CDx, CDy, fin CD, etc.) to hybridize into the OCD model with DMP,
+reducing model correlation and enabling accurate measurement of such profile features as sidewall angle, bottom CD,
+trench depth, and spacer variations. Validation against TEM shows substantially reduced TMU, confirming improved
+absolute accuracy after hybridization.
+After qualification, hybrid metrology solutions were deployed using newly developed communication protocols that
+transfer CD-SEM data from the fab host to the OCD tool for real-time hybridization. Analysis of multiple production
+lots showed that HM produces tighter distributions, lower variance, and notably improved process capability (Cp) with
+some parameters showing up to 3× improvement compared to non-hybrid OCD.
+
+         While sequential hybrid metrology [10] used data from a secondary tool (typically CD-SEM) to refine the
+primary tool (typically OCD), it still treats each tool’s data stream independently, which limits its effectiveness for the
+most challenging structures. For complex 14 nm FinFET profiles after High-k/Interfacial Layer (HK/IL) deposition, CD-
+SEM and OCD measurements capture different aspects of the profile that cannot be addressed with DMP tuning. Alok’s
+team, which combined GF, OCD, and CD SEM experts, has proposed a novel approach, where the CD-SEM
+measurement threshold must be dynamically modulated based on the OCD-derived sidewall angle (SWA), allowing the
+CD-SEM to report a CD value corresponding to a consistent physical height along the fin profile—something not
+possible using fixed thresholds [1. As a result, co-optimization improved the accuracy and TMU of the High-k thickness
+and across-wafer variation for the Interfacial Layer thickness and finally enabled the implementation of server-based
+concurrent hybridization (Figure 9), where raw data from multiple toolsets are jointly optimized [11-12].
+
+
+
+
+    Figure 9. Left: Generic co-optimization data flow between the tools and the factory system; Right: Co-optimization
+    implementation details. The independent reference system shown in yellow is used only during the setup of linking the OCD
+    profile with the CD-SEM threshold [11-12].
+Such a hybrid server with high bandwidth, direct data exchange between toolsets, support for both sequential and
+concurrent hybridization, enabling the simultaneous optimization of raw data such as spectra, images, and traces, was
+demonstrated in [12]. Validation on 20 nm contact and 14 nm M1 etch production applications showed that server-based
+co-optimization matches or exceeds host-based sequential performance, significantly reducing SWA/CD cross-
+correlation, improving accuracy and repeatability, and enabling tighter across-wafer distributions.
+          All these early efforts to implement OCD and CD-SEM hybridization demonstrated that co-optimization offers
+a robust approach to aligning different metrology methods and laid a crucial foundation for a future universal hybrid
+metrology engine, enabling simultaneous multi-tool optimization to meet next-generation Angstrom-level metrology
+requirements.
+
+Hybrid metrology expansion
+        After implementing hybrid metrology on dimensional metrology tools, such as optical, E-beam, and probe
+metrology systems, the approach was extended to X-ray tools. Summary Table 2 presents the hybrid metrology papers
+published at SPIE from 2011 to 2016.
+
+
+
+
+    Table 2. Hybrid metrology early implementations [13].
+
+
+          While all hybrid metrology HVM evaluations were a success, a widespread implementation of Hybrid
+metrology during these years was limited because of the cost (of ownership). Besides the cost of the Hybrid toolsets and
+the server(s), there is the cost of the day-to-day implementation, where each measurement location is always measured at
+least twice by hybrid metrology tools. So, compared to other holistic approaches, hybrid metrology proved more
+powerful but less cost-efficient.
+
+Machine Learning (ML) addition to the Holistic toolset – the baton transfer.
+
+         In 2016, two papers pioneered the ML approach for directly extracting POIs from spectra. In these papers, in-
+line and EOL reference measurements were used to train the ML models.
+         Alok’s paper [14] introduced a machine–learning–driven approach to lithography metrology to overcome the
+long-standing limitations of CD-SEM and traditional scatterometry at advanced nodes. Instead of relying on RCWA-
+based modeling, the new method directly correlates not only profile parameters (such as CD), but also lithography tool
+or process parameters (such as focus and dose) with the rich spectral response collected from multiple design-rule-
+compatible targets and/or on-device structures such as SRAM (Figure 10). Using principal component analysis and
+neural network parameter models trained on the focus-exposure (FEM) wafers, ML extracts critical lithography
+parameters with high accuracy while remaining robust to underlayer variation and reference noise and reducing recipe
+development time from weeks to hours.
+     A related study by Rana and co-workers [15], demonstrated that neural networks, multivariate regression, principal
+components analysis, and partial least squares modeling can extract hidden trends from raw metrology signals -
+including CD‑SEM resist‑shrinkage curves, CD‑AFM profiles, and scatterometry spectra - to predict physical CDs
+accurately, forecast deep trench capacitance, and estimate metal line resistance well before electrical test becomes
+possible (Figure 10). Using only optical spectral data, neural networks significantly outperform linear models, achieving
+sub‑nanometer CD prediction uncertainty, robust handling of nonlinearities and outliers, and accurate resistance
+predictions. These results established ML-driven predictive metrology as a natural extension - and in some cases a
+replacement — for conventional hybrid metrology, offering earlier decision points, reduced risk, and improved control,
+all at lower cost.
+
+
+
+
+    Figure 10. (Left) ML training for Lithography Process Window [14]. (Right) Predictive metrology concept [15].
+
+
+Publications over the subsequent years reflected a clear shift from hybrid metrology toward AI-driven solutions. Figure
+11 [16] illustrates this trend using the example of SPIE publications. A cost-of-ownership consideration favored ML
+models, which avoided the need for multiple metrology platforms to measure each wafer. The scalability, speed, and
+reduced operational complexity of ML-based metrology (Figure 12 [16]) make these methods attractive for advanced
+nodes, where dimensional and material variations have become increasingly subtle and difficult to isolate using
+traditional approaches.
+    Figure 11. Number of Hybrid metrology and ML publications. Source: SPIE digital library, Proceedings Volume Metrology,
+    Inspection, and Process Control for Microlithography [16].
+
+
+
+
+    Figure 12. ML takes over Hybrid Metrology [16].
+
+
+
+                       3. INSPIRATIONS OR THE CURRENT STATE OF THE ART
+
+
+Many of Alok's concepts and ideas were later implemented, inspiring numerous novel developments in both HW
+and algorithms.
+Holistic Ideas Driving New Hardware Architectures
+Although hybridization had long been considered technically desirable, full hardware-level integration remained
+challenging due to cost and compatibility constraints. Eventually, however, a new generation of “hybrid tools”
+emerged.
+In the e-beam domain, search for a unified high-resolution image-based platform materialized in systems that
+adopted a “Swiss Army Knife” approach [16], integrating profile, topography, buried features, and overlay
+measurements within a single instrument architecture. Additional innovations — including pump-probe electron-
+beam techniques - enabled nanoscale electrical property measurements, expanding the scope of e-beam metrology
+far beyond traditional (dimensional) imaging (Figure 11) [17].
+
+
+
+
+Figure 11. Hybrid E-beam tools. Left: Swiss Army knife approach [16]. Right: material properties by pump-probe E-beam [17].
+Figure 12. Hybrid AFM and WLI [18].
+
+
+Atomic force microscopy (AFM) systems also became hybridized. One example is the integration of AFM with
+white-light interferometry (WLI), pairing AFM’s high resolution and small-area sampling with WLI’s fast, large-
+area imaging. Together, these techniques achieved efficient measurement of sub-nanometer topographic variations
+over multi-millimeter-scale fields of view, a need that no single system could meet (Figure 12) [18].
+On the optical side, scatterometry systems were enhanced through hybridization with spectral interferometry (SI).
+This innovation addressed a long-standing challenge in scatterometry: difficulty isolating spectral contributions
+from specific vertical regions within complex stacks. Vertical Traveling Scatterometry enabled selective extraction
+of information from top layers and enabled complete Z-direction profiling of deep 3D structures, such as 3D
+NAND, something previously inaccessible with OCD alone (Figure 13) [19-20].
+
+
+
+
+         Figure 13. Hybridization of scatterometry and Spectral Interferometry (SI) [19-20].
+
+
+AI-Enabled Hybrid Metrology
+AI-enabled hybrid approaches leverage the strengths of multiple metrology methods, enabling the fusion of
+information streams without the high operational cost of physical hybridization.
+A notable example — awarded the Vladimir Ukraintsev Prize at SPIE Metrology. Inspection and Process Control
+conference in 2024 — demonstrated a hybrid solution for measuring the thickness of the SOM (Selector Only
+Memory) layer (Figure 14 [21]). Sparse TEM cross sections were used to calibrate Raman spectroscopy signals,
+which were in turn used to train ML models that interpret SI (spectral interferometry) data. This workflow
+dramatically reduced the need for expensive and destructive TEM measurements, enabling rapid recalibration in
+response to process drift while maintaining HVM-level robustness and cost efficiency.
+Other studies also show that AI-enabled hybridization of material-sensitive techniques, such as XRF [22], can
+contribute to dimensional metrology despite their traditional use only for compositional analysis.
+
+
+
+
+         Figure 14. Usage of AI-enabled Hybrid metrology in HVM [21].
+
+                                               4. METROLOGY FUTURE
+
+
+     Looking ahead, semiconductor metrology is expected to continue advancing along paths shaped by holistic
+principles. One important direction is virtual metrology, where AI models infer post-process outcomes using signals
+collected by sensors that never directly observe the wafer. When trained on sufficient process and metrology data, virtual
+metrology models can significantly reduce reliance on expensive inline measurements, improving throughput and further
+reducing the cost of ownership. However, to build such models, extensive baseline characterization is required - an effort
+that depends critically on holistic metrology, hybrid data fusion, and AI-assisted modeling. These needs will intensify
+with emerging device architectures, including CFETs [23,24], 3D memory structures, and advanced packaging
+technologies.
+
+
+
+
+         Figure 15. Future of holistic metrology [25].
+A fitting metaphor for the future of metrology can be found in the familiar “Blind Men and the Elephant” parable
+(Figure 15) [25]. Each blind man (or sensor, metrology technique, etc.) captures only a partial view of reality, and only
+by combining all available data, as holistic, hybrid, and AI-based approaches do, can a complete understanding be
+formed. As device complexity grows, the “elephant” grows as well, requiring more sophisticated sensing and metrology
+tools, more intelligent algorithms, and more integrated approaches to achieve precise and accurate process control.
+
+
+                                            ACKNOWLEDGEMENTS
+
+The author would like to thank Cornel Bozdog (Micron), Padraig Timoney (IBM), Eric Solecky (GF), Michael Sendler,
+Avron Ger, and Hadar Peled Vaissman (Nova) for their help.
+The author would like to thank Nitii Garg for providing additional information about her husband: her eulogy and a few
+pictures of Alok are included in the Appendix below.
+                                                    REFERENCES
+
+[1] Vaid, A., Pal, R., Sendelbach, M., Zangooie, S., Lensing, K., and Hartig, C., “Scatterometry as technology enabler
+     for embedded SiGe process,” Proc. SPIE 6922, 69220U (2008), https://doi.org/10.1117/12.774564
+[2] Sendelbach, M., Vaid, A., Herrera, P., Dziura, T., Zhang, M., and Srivatsa, A., “Use of multiple azimuthal angles to
+     enable advanced scatterometry applications,” Proc. SPIE 7638, 76381G (2010). https://doi.org/10.1117/12.846692
+[3] Vaid, A., Sendelbach, M., Moore, D., Brunner, T., Felix, N., Rawat, P., Bozdog, C., Kim, H., Sendler, M., Stepanov,
+     S., and Kucerov, V., “Simultaneous measurement of optical properties and geometry of resist using multiple
+     scatterometry gratings,” Proc. SPIE 7638, 76381H (2010). https://doi.org/10.1117/12.846648
+[4] Bozdog, C., Kim, H. K., Emans, S., Sherman, B., Turovets, I., Urenski, R., Brill, B., Vaid, A., and Sendelbach, M.,
+     “A holistic metrology approach: multi-channel scatterometry for complex applications,” Proc. SPIE 7971, 797113
+     (2011). https://doi.org/10.1117/12.881638
+[5] Vaid, A., Yan, B. B., Jiang, Y. T., Kelling, M., Hartig, C., Allgair, J., Ebersbach, P., Sendelbach, M., Rana, N.,
+     Katnani, A., McLellan, E., Archie, C., Bozdog, C., Kim, H., Sendler, M., Ng, S., Sherman, B., Brill, B., Turovets, I.,
+     and Urensky, R., “A holistic metrology approach: hybrid metrology utilizing scatterometry, CD-AFM and CD-SEM,”
+     Proc. SPIE 7971, 797103 (2011). https://doi.org/10.1117/12.881632
+[6] Vaid, A., Yan, B. B., Jiang, Y. T., Kelling, M., Hartig, C., Allgair, J. A., Ebersbach, P., Sendelbach, M. J., Rana, N.,
+     Katnani, A. D., McLellan, E., Archie, C. N., Bozdog, C., Kim, H., Sendler, M., Ng, S., Sherman, B., Brill, B.,
+     Turovets, I., and Urensky, R., “Holistic metrology approach: hybrid metrology utilizing scatterometry, critical
+     dimension–atomic force microscope and critical dimension–scanning electron microscope,” J. Micro/Nanolith.
+     MEMS MOEMS 10(4), 043016 (2011). https://doi.org/10.1117/1.3655726
+[7] Foucher, J., Faurie, P., Dourthe, L., Irmer, B., and Penzkofer, C., “Hybrid CD metrology concept compatible
+     with high volume manufacturing,” Proc. SPIE 7971, 79710S (2011). https://doi.org/10.1117/12.870745
+[8] Foucher, J., Griesbach Schuch Figueiro, N., Rouxel, J., and Thérèse, R., “Hybrid metrology for critical
+     dimension based on scanning methods for IC manufacturing,” Proc. SPIE 8378, 83780F (2012).
+     https://doi.org/10.1117/12.919650
+[9] Vaid, A., Elia, A., Kelling, M., Allgair, J., Hartig, C., Ebersbach, P., McLellan, E., Sendelbach, M., Saleh, N., Rana,
+     N., Kawada, H., Ikegami, T., Ikeno, M., Kawasaki, T., Bozdog, C., Kim, H., Arnon, E., Koret, R., and Turovets, I.,
+     “Hybrid metrology solution for 1X node technology,” Proc. SPIE 8324, 832404 (2012).
+     https://doi.org/10.1117/12.916940
+[10] Vaid, A., Subramany, L., Iddawela, G., Ford, C., Allgair, J., Agrawal, G., Taylor, J., Hartig, C., Kang, B. C., Bozdog,
+     C., Sendelbach, M., Isbester, P., and Issascharoff, L., “Implementation of Hybrid Metrology at HVM Fab for 20nm
+     and beyond,” Proc. SPIE 8681, 868103 (2013). https://doi.org/10.1117/12.2012339
+[11] Vaid, A., Osorio, C., Tsai, J., Bozdog, C., Sendelbach, M., Grubner, E., Koret, R., and Wolfling, S., “Hybrid
+     metrology universal engine: co-optimization,” Proc. SPIE 9050, 905009 (2014). https://doi.org/10.1117/12.2048939
+[12] Osorio, C., Timoney, P., Vaid, A., Elia, A., Kang, C., Bozdog, C., Yellai, N., Grubner, E., Ikegami, T., and Ikeno,
+     M., “Hybrid metrology implementation: server approach,” Proc. SPIE 9424, 94241H (2015)
+     https://doi.org/10.1117/12.2087233
+[13] Cramer H., Turovets I., Scatterometry in Profile, Overlay and Focus Process Control (SC1100), SPIE training Course
+     (2025)
+[14] Pandev, S., Fang, F., Kim, Y. K., Tsai, J., Vaid, A., Subramany, L., Sanko, D., Ramanathan, V., Zhou, R.,
+     Venkataraman, K., and Haupt, R., “Signal Response Metrology (SRM) – a new approach for lithography metrology,”
+     Proc. SPIE 9424, 94241P (2015). https://doi.org/10.1117/12.2086056
+[15] Rana, N., Zhang, Y., Wall, D., Dirahoui, B., and Bailey, T., “Machine Learning and Predictive Data Analytics
+     Enabling Metrology and Process Control in IC Fabrication,” Proc. SPIE 9424, 94241I (2015).
+     https://doi.org/10.1117/12.2087406
+[16] Lorusso, G. F., “The unavoidable renaissance of electron metrology in the age of high NA EUV,” Proc. SPIE 11611,
+     1161127 (2021). https://doi.org/10.1117/12.2583828
+[17] Shirasaki, Y., Shoji, M., Nakamura, Y., Yachi, K., Takada, S., and Tsuno, N., “Evaluation of thin-film material
+     properties using laser-assisted SEM,” Proc. SPIE 12955, 129551K (2024). https://doi.org/10.1117/12.3009789
+[18] https://www.parksystems.com/en/products/in-line-metrology-afm/optical-profilometry/nx-hybrid-wli
+[19] Schmidt, D., Durfee, C., Pancharatnam, S., Medikonda, M., Greene, A., Frougier, J., Cepler, A., Belkin, G., Shafir,
+     D., Koret, R., Shtainman, R., Turovets, I., and Wolfling, S., “OCD enhanced: implementation and validation of
+     spectral interferometry for nanosheet inner spacer indentation,” Proc. SPIE 11611, 116111U (2021).
+     https://doi.org/10.1117/12.2582364
+[20] Schmidt, D., Medikonda, M., Rizzolo, M., Silvestre, C., Frougier, J., Greene, A., Breton, M., Cepler, A., Ofek, J.,
+     Kaplan, I., Koret, R., and Turovets, I., “Vertical travelling scatterometry for metrology on fully integrated devices,”
+     Proc. SPIE 12053, 120530S (2022). https://doi.org/10.1117/12.2614077
+[21] Ryoo, H., Song, S. J., Jeon, M. J., Moon, J., Lee, J., Hwang, B., Ahn, J., Song, Y., Kwak, H., Neeman, L., Meir, N.,
+     Jang, J., Kim, I. H., and Kim, H., “On-cell thickness monitoring of chalcogenide alloy layer using spectral
+     interferometry, Raman spectroscopy, and hybrid machine learning,” Proc. SPIE 12955, 129550G (2024).
+     https://doi.org/10.1117/12.3012496
+[22] Schmidt, D., Cepler, A., Durfee, C., Pancharatnam, S., Frougier, J., Breton, M., Greene, A., Klare, M., Koret, R., and
+     Turovets, I., “Development of SiGe indentation process control for gate-all-around FET technology enablement,”
+     IEEE Transactions on Semiconductor Manufacturing, May 2022
+[23] Kwon, H., Hung, J., Urbanowicz, A. M., Urenski, R., Turovets, I., Ger, A., Tseng, S.-W., Saib, M., Bogdanowicz, J.,
+     Melhem, S., Zhou, D., Basu, D., Charley, A.-L., Reifsnider, J., Horiguchi, N., and Leray, P., “Critical in-line OCD
+     metrology for CFET manufacturing,” Proc. SPIE 13426, 1342606 (2025) https://doi.org/10.1117/12.3051718
+[24] Tseng T-H. C., “AI-driven Optical Metrology for advanced nodes,” Proc. SPIE 13981, (2026).
+[25] Turovets I., 3D (in-line) metrology challenges and solutions, CEA-Leti Seminar (2019)
+                                                         APPENDIX 1.
+
+
+
+
+Eulogy by Nitii Garg.
+
+
+I found it difficult to write anything when I was first asked to share a few words about Alok.
+
+But with time, and in a calmer frame of mind, I felt I owed it to him to try to do justice to the life he lived and the love
+he gave.
+
+Alok was a devoted husband—and an even more devoted father to our two daughters.
+
+He often said he was the luckiest man in the world, surrounded by the love of his girls.
+
+But in truth, we were the fortunate ones. He had a remarkable way of giving that love back to us—always in his own
+unique and heartfelt way.
+
+He believed deeply that life was meant to be lived fully and joyfully—and he embodied that belief every single day,
+right until the very end.
+
+He loved the outdoors and cherished every opportunity to be out in nature. Even on his final day, he wanted to go for a
+walk.
+
+He found joy in the simple and the adventurous alike—biking, boating, kayaking, hiking, playing tennis, and traveling.
+
+In fact, he loved traveling so much that often, before we had even unpacked from one trip, he would already be planning
+the next.
+
+At times, it felt exhausting, especially with young children—but he would always say, “This is just the beginning. One
+day, the kids will grow into it, and everything will fall into place.”
+
+And in many ways, it did.
+
+While he was extraordinary within our family, he was equally remarkable in his professional life.
+He truly loved his work and treated everyone around him with respect and kindness. His team meant a great deal to him -
+they were, in many ways, an extension of his family.
+
+He took immense pride in solving problems and supporting those around him, always offering encouragement, guidance,
+and a listening ear.
+
+To honor him, our daughters and I have made a quiet promise—to carry forward his spirit.
+
+To live fully, to embrace each day, and to find joy even in the smallest moments.
+
+The path ahead will not be easy without him, but we will do our best to walk it with the strength and optimism he
+showed us every day.
+
+Alok will always live on in our hearts, in our memories, and in the countless ways he shaped our lives.
+
+And I know, in his own way, he is still watching over us—guiding us, and perhaps even making sure that everything is
+done just right
+
+His life was a beautiful reminder that love, when given fully, never truly leaves us!
+Thank you, Alok!
+

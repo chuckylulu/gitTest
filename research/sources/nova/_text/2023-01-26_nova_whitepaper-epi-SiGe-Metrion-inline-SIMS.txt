@@ -1,0 +1,188 @@
+Epi SiGe Application using
+METRION® in-line SIMS System
+
+
+
+Authors: Benjamin Hickey, Wei Ti Li, Sarah Okada, Lawrence Rooney, Feng Zhang
+
+
+
+
+Abstract                                                      Background and Introduction
+
+
+The epitaxial process is a well-established deposition        The epitaxial process is commonly used in creating the source-
+technique in semiconductor fabrication because it enables     drain region of transistors. As strain engineering is adopted
+the ability to achieve much higher doping concentrations      at around 90nm, chipmakers started using blanket epitaxial
+than can be obtained via ion implantation. As we move         process to integrate Silicon-germanium (SiGe) stressors in
+toward <5nm technology, a key process for enabling gate-      PMOS transistors. The lattice mismatch induced by SiGe
+all-around FET (GAAFET) is the stacked multi-lattice of       boosted hole mobility and drive current. As a device shrinks,
+Silicon (Si) and Silicon-germanium (SiGe) epi process for     a similar epi process that incorporates carbon in silicon is also
+constructing the nanosheets.                                  used to apply strain engineering for NMOS devices. In some
+                                                              processes, addition of boron or phosphorous dopants during the
+Germanium (Ge) content in SiGe correlates to channel          epi process enables the ability to achieve much higher doping
+stress, and the germanium fraction (Ge%) has been             concentrations than can be obtained via ion implantation. As we
+increasing   steadily   as   we   move   towards   smaller    move toward <5nm technology, a key process for enabling gate-
+technology nodes. When stress is high, epi layers can         all-around FET (GAAFET) is the stacked multi-lattice of Silicon
+suffer from multiple problems such as defect formation,       (Si) and SiGe epi process for constructing the nanosheets.
+facet formation, non-uniform strain, etc. The challenge is
+greater when moving from planar to 3D structures, where       In the development of CMOS source/drain in advanced
+uniformity of strain and control of defect density are        technology nodes, in-situ Boron doped SiGe epitaxy has been
+important. Often, multiple epi layers of SiGe with varying    widely used, initially in planar devices and more recently applied
+thicknesses, Ge%, and Boron doping are deposited to           to FinFETs. This allows FinFETs to benefit from an improved
+optimize the device structure and process integration.        short channel effect, which allows for lower contact resistance
+                                                              thanks to significantly higher in-situ doping levels. The need for
+Enabling process control on the layer thickness, Ge%, and     increased doping levels in FinFET source/drain architecture can
+Boron doping concentration in these complicated SiGeB         be addressed via an optimized in-situ doped epitaxy process.
+epi stacks is critical in high-volume manufacturing (HVM),    The relationship between germanium and boron incorporation
+and there is no single in-line metrology that is able to do   results in an inverse relationship between the two, where
+the measurement.                                              increasing Germanium incorporation will typically lower Boron
+                                                              doping, and increasing Boron doping incorporation results in a
+This paper describes how in-line Secondary Ion Mass           lower Germanium concentration.[1]
+Spectrometry (SIMS) could be a solution to this problem
+by providing material composition profiles as a function
+of depth – resulting in thickness, Ge% and Boron
+concentration data from each nanosheet.
+
+
+
+
+                                                                                                                            1
+Metrology Challenges
+
+
+In strain engineering, Germanium (Ge) content in SiGe
+correlates to the amount of channel stress applied, and the
+Ge% has been increasing steadily as we move towards
+smaller technology node, as shown in Figure 1. When stress
+is high, epi layers can suffer from multiple problems such as
+defects formation, facet formation, non-uniform strain, etc.
+The challenge is greater when moving from planar to 3D
+structures, where uniformity of strain and control of defect
+density are important. Often, multiple epi layers of SiGe with
+varying thicknesses, Ge%, and Boron doping are deposited
+to optimize the device structure and process integration. For
+example, a Si-cap layer is deposited on top of the SiGe layer as
+sacrificial layer for the subsequent silicide formation process
+to reduce contact resistance, without introducing defects to
+the SiGeB layer. Being able to do process control on the
+thicknesses, Ge%, and Boron doping in these complicated                 Figure 1. Evolution of Ge content in SiGe source/drain[2]
+SiGeB epi stacks is critical in high-volume manufacturing
+(HVM), and there is no single in-line metrology that is able to        One of the techniques used in monitoring the epi deposited
+do the measurement.                                                    SiGeB films is Secondary Ion Mass Spectroscopy (SIMS). By
+                                                                       sputtering with a focused primary ion beam, and collecting the
+                                                                       ejected secondary ions from the sample, SIMS can determine
+                                                                       the composition and thicknesses for complicated multilayer
+                                                                       film stacks, as illustrated in Figure 2. As SIMS is typically
+                                                                       only available in an analytical lab outside of the fabrication
+                                                                       environment, the current process controls are done on test
+                                                                       wafers, where broken sample pieces are measured with
+                                                                       traditional lab SIMS equipment. The turnaround time is often
+                                                                       long, and the results often do not reflect the actual production
+                                                                       conditions on actual product wafers. It is known in some
+                                                                       cases that, while the control charts are in good standing, the
+                                                                       product has failed to meet its specification.
+
+
+
+
+Figure 2. Basic principle of secondary ion mass spectrometry
+(SIMS): A primary ion beam is sputtered through sample surface
+layers, resulting in ejection of secondary ions, which are then
+separated by mass spectrometry and analyzed.
+Image Source: Evans Analytical Group
+
+
+
+METRION®
+
+
+Nova’s METRION® is a 300mm wafer-level in-line SIMS metrology system developed to seamlessly integrate with an automated
+high-volume manufacturing (HVM) fabrication environment. It is a fully automated, recipe-driven metrology tool utilizing a Magnetic
+Sector mass analyzer to provide high quality dynamic SIMS depth profiles. It has an O2 ion source that ranges from low to medium to
+high in beam energy for a variety of applications. Because METRION® utilizes a low voltage secondary ion extraction field, it enables
+
+
+
+
+                                                                                                                                    2
+stable and repeatable measurements within a 50um x 50um metrology pad on product wafers. With multiple detectors, METRION®
+can measure multiple species simultaneously through the entire film stack, providing high data density capable of achieving higher
+depth resolution. Process automation with built-in film analysis and recipe management make the system easy to use and shorten
+the time to data.
+
+
+
+
+Epi SiGeB Application
+
+
+Here we present analysis results of x5 static measurement of B doped SiGe layer measured using 500eV primary energy on a 50x50
+micron raster area (see figure 3). The repeatability of mean B concentration, Ge fraction and SiGe thickness measured at ~1% RSD.
+
+
+
+
+Figure 3. Repeatability of B concentration and Ge fraction measured in B doped SiGe epitaxy with
+METRION® at 500eV primary beam energy.
+
+
+
+
+                                                                                                                              3
+Depending on the required depth resolution,
+sputtering conditions are adjusted. For relatively
+thick films (> 100 nm) with no strict interface
+resolution requirement, an impact energy of 1keV
+is typically used. However, at these energies, thin
+layers are often sputtered through without sufficient
+data density to characterize the layer. For thinner
+doped films, much lower primary ion energies are
+needed for more accurate characterization. The
+use of low primary beam energy allows METRION®
+to achieve extremely good depth resolution. To
+demonstrate this, we acquired multiple SIMS depth
+profiles on a SiGe multi lattice using a 250eV
+primary beam energy and 50x50um raster size, as
+shown in Figure 4. The Si and Ge depth profiles
+show three distinct SiGe layers with Ge fraction
+decreasing from layer 1 to layer 3 and the use of a
+low primary energy beam allows for superior depth
+resolution.
+                                                                    Figure 4. An overlay of x5 Si and Ge profile in a SiGe multi lattice
+In addition, METRION’s automated software allows
+for precise wafer navigation and full mapping                     Ge Fraction                               Thickness
+capability. In figure 5, Ge fraction and SiGe thickness
+are seen to be at maximum in wafer center, at a
+minimum on left edge for Ge fraction and minimum
+on right edge for SiGe thickness.
+
+
+
+
+                                                                  Figure 5. Wafer maps showing wafer non uniformity of mean Ge Fraction
+                                                                  (left) and SiGe layer thickness (right).
+
+
+
+Summary
+
+
+Nova’s METRION® system is an innovative SIMS platform designed for the Fab environment, seamlessly integrating into an automated
+factory workflow. The system is engineered to deliver wafer-based, high precision metrology results for process control in logic and
+memory devices. Measurements on Epitaxial SiGe films is one of the major applications which will benefit from METRION’s in-line
+SIMS system. It will enable more relevant Statistical Process Control (SPC) of the epi process and provide in-line data correlating to
+electrical performance.
+
+
+
+
+References
+[1] Yi Qi et. al., “In-Situ Boron Doped SiGe Epitaxy Optimization for FinFET Source/Drain.” ECS Transactions, 75, 8
+[2] Henry H. Radamson et. al., “The Challenges of Advanced CMOS Process from 2D to 3D.” Appl. Sci. 2017, 7, 1047
+
+
+
+
+                                                                                                                                           4
+

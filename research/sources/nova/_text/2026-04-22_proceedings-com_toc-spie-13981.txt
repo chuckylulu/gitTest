@@ -1,0 +1,582 @@
+                                                 PROCEEDINGS OF SPIE
+
+
+
+Metrology, Inspection,
+and Process Control XL
+
+Nivea G. Schuch
+Hugo Cramer
+Editors
+
+
+23–26 February 2026
+San Jose, California, United States
+
+
+Sponsored by
+SPIE
+
+Cosponsored by
+KLA Corp. (United States)
+
+Published by
+SPIE
+
+
+
+
+                                                                                                             Volume 13981
+                                                                                                          Part One of Two Parts
+
+                                          Proceedings of SPIE 0277-786X, V. 13981
+          SPIE is an international society advancing an interdisciplinary approach to the science and application of light.
+The papers in this volume were part of the technical conference cited on the cover and title page.
+Papers were selected and subject to review by the editors and conference program committee.
+Some conference presentations may not be available for publication. Additional papers and
+presentation recordings may be available online in the SPIE Digital Library at SPIEDigitalLibrary.org.
+
+The papers reflect the work and thoughts of the authors and are published herein as submitted. The
+publisher is not responsible for the validity of the information or for any outcomes resulting from
+reliance thereon.
+
+Please use the following format to cite material from these proceedings:
+Author(s), "Title of Paper," in Metrology, Inspection, and Process Control XL, edited by
+Nivea G. Schuch, Hugo Cramer, Proc. of SPIE 13981, Seven-digit Article CID Number (DD/MM/YYYY);
+(DOI URL).
+
+ISSN: 0277-786X
+ISSN: 1996-756X (electronic)
+
+ISBN: 9781510699083
+ISBN: 9781510699090 (electronic)
+
+Published by
+SPIE
+P.O. Box 10, Bellingham, Washington 98227-0010 USA
+Telephone +1 360 676 3290 (Pacific Time)
+SPIE.org
+Copyright © 2026 Society of Photo-Optical Instrumentation Engineers (SPIE).
+
+Copying of material in this book for internal or personal use, or for the internal or personal use of
+specific clients, beyond the fair use provisions granted by the U.S. Copyright Law is authorized by
+SPIE subject to payment of fees. To obtain permission to use and share articles in this volume, visit
+Copyright Clearance Center at copyright.com. Other copying for republication, resale, advertising
+or promotion, or any form of systematic or multiple reproduction of any material in this book is
+prohibited except with permission in writing from the publisher.
+
+Printed in the United States of America by Curran Associates, Inc., under license from SPIE.
+
+
+Publication of record for individual papers is online in the SPIE Digital Library.
+
+
+
+
+SPIEDigitalLibrary.org
+
+
+
+
+Paper Numbering: A unique citation identifier (CID) number is assigned to each article in the
+Proceedings of SPIE at the time of publication. Utilization of CIDs allows articles to be fully citable as
+soon as they are published online, and connects the same identifier to all online and print versions
+of the publication. SPIE uses a seven-digit CID article numbering system structured as follows:
+     The first five digits correspond to the SPIE volume number.
+     The last two digits indicate publication order within the volume using a Base 36 numbering
+    system employing both numerals and letters. These two-number sets start with 00, 01, 02, 03, 04,
+    05, 06, 07, 08, 09, 0A, 0B … 0Z, followed by 10-1Z, 20-2Z, etc. The CID Number appears on each
+    page of the manuscript.
+              Contents
+
+       xiii   Conference Committee
+
+
+Part One
+
+              KEYNOTE SESSION
+
+ 13981 02     40 years of semiconductor metrology: connecting the past to the future (Keynote Paper)
+              [13981-201]
+
+
+
+              HYBRID AND VIRTUAL METROLOGY
+
+ 13981 04     The art of holistic metrology (in memory of Alok Vaid) [13981-1]
+
+
+ 13981 05     Leveraging AI and ML in multimodal combined and hybrid metrology (Invited Paper)
+              [13981-2]
+
+ 13981 06     Overcoming conventional limit of process variation by using virtual metrology with
+              mass-based monitoring in V-NAND [13981-3]
+
+ 13981 07     A virtual metrology-driven tool-to-tool matching: toward early anomaly detection and
+              diagnosis [13981-4]
+
+
+
+              METROLOGY AND INSPECTION FOR ADVANCED LOGIC DEVICES
+
+ 13981 09     Enabling metrology and inspection for CFET structures using hybrid qualification
+              approaches [13981-6]
+
+ 13981 0A     In-line XPS for advanced semiconductor manufacturing and metrology on fully integrated
+              targets [13981-7]
+
+ 13981 0B     AI-based detection algorithm for optical inspection of critical defects on 2nm and 1.4nm
+              technology nodes [13981-8]
+
+
+
+              MODELING AND DATA ANALYSIS
+
+ 13981 0C     Systematic defect risk assessment based on silicon digital twins (Invited Paper) [13981-9]
+
+
+ 13981 0E     Model-based Raman simulations for optimized metrology in nanosheet transistor devices
+              [13981-14]
+
+
+
+
+                                                                                                           iii
+     13981 0F    Poisson-CDF modeling of in-die optimization for electron beam inspection under random
+                 defect distribution [13981-10]
+
+     13981 0G    Modelling the full process from layout to post-etch imaging using a variational
+                 autoencoder [13981-11]
+
+     13981 0H    Layout-based CMP modeling for surface topography prediction at advanced node
+                 technologies [13981-12]
+
+
+
+                 HETEROGENEOUS INTEGRATION AND ADVANCED PACKAGING
+
+      13981 0I   Characterization and prediction of overlay signatures in WxW bonding processes for
+                 backside power distribution networks (BS-PDN) [13981-15]
+
+     13981 0J    Inline monitoring of hybrid bonding Cu recess with vertical traveling scatterometry
+                 machine learning [13981-16]
+
+     13981 0K    Advanced overlay metrology for wafer-to-wafer hybrid bonding in 3D integration
+                 (Karel Urbánek Best Student Paper Award) [13981-17]
+
+     13981 0L    Bonding-induced overlay fingerprint modeling using Zernike polynomials [13981-18]
+
+
+     13981 0M    Characterization and mitigation of wafer bonding-induced distortions to enable the
+                 post-bonding lithography requirements of advanced nodes [13981-19]
+
+
+
+                 ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING
+
+     13981 0N    Generative AI denoising method for photon-efficient actinic EUV mask inspection
+                 [13981-20]
+
+     13981 0O    ML-driven context monitoring for inline CDU error analysis [13981-22]
+
+
+     13981 0P    Self-supervised multimodal machine learning model for defects retrieval utilizing
+                 morphological and chemical signatures [13981-23]
+
+     13981 0Q    Self-supervised brightness and contrast correction for multibeam SEM defect inspection
+                 [13981-24]
+
+     13981 0R    Rapid adaptation of SEM image denoising model using conditional normalization
+                 [13981-25]
+
+
+
+                 NOVEL METHODS
+
+     13981 0S    Buried void inspection in high bandwidth memory with picosecond laser acoustics
+                 [13981-26]
+
+
+
+
+iv
+13981 0T   Twenty heads are better than one: scalable microAFM for high-throughput metrology and
+           inspection [13981-27]
+
+13981 0U   A novel methodology for in-line AI adoption: a cost-efficient and high-reliability approach
+           [13981-21]
+
+13981 0V   Photocathode SEM with pixel current modulation for improved imaging of charge-sensitive
+           materials and structures [13981-28]
+
+13981 0W   Exploration of quantum entanglement technologies for semiconductor inspection:
+           practical applications and future directions [13981-29]
+
+13981 0X   Enhancing defect detection and yield prediction through metrology and inspection data
+           integration [13981-30]
+
+13981 0Y   High-precision inline metrology of Si photonics devices on 300mm wafers using CD-SEM
+           [13981-222]
+
+
+
+           X-RAY METROLOGY AND INSPECTION
+
+13981 0Z   Nanometer-scale SiGe lateral recess metrology in CFET structures using micro-spot x-ray
+           fluorescence (Invited Paper) [13981-31]
+
+13981 11   Characterization of the line edge roughness by small angle x-ray scattering [13981-32]
+
+
+13981 12   Inspection and metrology of micro-bumps and hybrid copper bonding using high-
+           resolution 3D x-ray imaging [13981-99]
+
+13981 13   GUIDE-X: VLM-LLM-based AI assistant for artifact detection and operator guidance in x-ray
+           inspection [13981-34]
+
+13981 14   In-line XPS metrology for area-selective deposition processes on patterned structures
+           [13981-35]
+
+
+
+           3D PROFILE AND HIGH ASPECT RATIO METROLOGY
+
+13981 15   Beyond top-down CD: e-tilt based pattern profile metrology for multipatterning process
+           control in early stage [13981-37]
+
+13981 19   Effective defect detection in 3D V-NAND flash memory using color-based image
+           processing [13981-41]
+
+
+
+           OVERLAY
+
+13981 1A   Optical overlay metrology challenges in next-gen semiconductor nodes [13981-42]
+
+
+
+
+                                                                                                         v
+     13981 1B    Novel scanner corrections for co-optimizing imaging and overlay to enable critical EUV
+                 and DUV lithography after wafer-to-wafer bonding [13981-43]
+
+     13981 1C    Edge placement error-aware through-stack overlay optimization for a FLASH multilayer
+                 product stack [13981-45]
+
+     13981 1D    Enhancing overlay accuracy in advanced DRAM: process-compatible targets and for
+                 improved NZO stability [13981-226]
+
+
+
+                 METROLOGY AND INSPECTION FOR ADVANCED MEMORY DEVICES
+
+     13981 1E    A novel MTD control method for oblique intersecting layers in DRAM products [13981-46]
+
+
+     13981 1G    Contour-based metrology for layer-specific variability analysis in advanced DRAM
+                 patterning [13981-48]
+
+     13981 1H    Stochastics metrology and yield in DRAM high volume manufacturing [13981-49]
+
+
+      13981 1I   On device ADI overlay measurement in advanced DRAM nodes using high kV CFE
+                 technology [13981-50]
+
+
+
+                 ELECTRON BEAM METROLOGY
+
+     13981 1J    Gate leakage evaluation of GAA transistors using SEMs [13981-51]
+
+
+     13981 1L    eBeam process control for yield and reliability in advanced HBM hybrid bonding [13981-53]
+
+
+     13981 1M    Quantification of SAQP process variation by using a combined e-beam framework
+                 [13981-54]
+
+     13981 1N    LER analysis of noisy SEM images using physics-inspired deep learning [13981-56]
+
+
+     13981 1O    Improving EUV low landing energy process monitoring through striation and triangularity:
+                 novel CD-SEM metrics [13981-55]
+
+
+
+                 OPTICAL METROLOGY
+
+     13981 1P    Optimization of optical metrology simulation domains in solving inverse problems of
+                 machine learning based OCD metrology (Invited Paper) [13981-57]
+
+     13981 1Q    Beyond overlay: additional parameters extracted from overlay metrology measurements
+                 [13981-58]
+
+     13981 1R    Effect of thickness on the optical constants determination of TiN thin films in the EUV/VUV
+                 range [13981-59]
+
+
+
+vi
+            INSPECTION
+
+ 13981 1T   High landing energy e-beam inspection as an in-line blocked nanowire release metric for
+            GAA yield ramp [13981-61]
+
+ 13981 1U   Electrical defect review and characterization via in-line conductive AFM in advanced logic
+            processes [13981-62]
+
+ 13981 1V   AI-enabled cross-domain image analysis for high-NA via defect quantification in random
+            logic via arrays [13981-63]
+
+13981 1W    Step-height defect detection technology based on photolithography leveling data
+            [13981-64]
+
+
+Part Two
+
+
+ 13981 1Z   Measuring contact hole distributions for use in predicting missing contact hole rates
+            [13981-68]
+
+ 13981 21   BSE grey level-based CD-SEM metrology for scumming quantification in high-NA EUV
+            contact holes [13981-70]
+
+
+
+            POSTER SESSION
+
+ 13981 24   Enhancing the reliability of actinic mask evaluation through high-frequency signal
+            improvement based on EUV ptychography [13981-72]
+
+ 13981 26   High-resolution 3D NAND profile measurement using optical metrology and machine
+            learning [13981-75]
+
+ 13981 27   Fast and diverse SEM image synthesis: leveraging parameter-specific prior distributions
+            in a variational autoencoder [13981-76]
+
+ 13981 28   Detection of inference errors in deep learning denoising models and reliability analysis
+            system for SEM metrology [13981-77]
+
+ 13981 2B   Large vision model for layout guided SEM image contour extraction [13981-80]
+
+
+ 13981 2C   Rigorous modeling and machine learning for resonant soft x-ray characterization of
+            complex nanostructures [13981-81]
+
+ 13981 2D   Pushing the limits of spectroscopic reflectometry for film metrology [13981-82]
+
+
+ 13981 2F   Unsupervised machine learning approach to uncover hidden silicon hotspots [13981-84]
+
+
+
+                                                                                                       vii
+       13981 2H    Cu pad metrology using four-directional BSE signal of SEM for hybrid bonding applications
+                   [13981-87]
+
+        13981 2I   Adaptive critical dimension parameter evaluation in x-ray metrology with machine
+                   learning [13981-89]
+
+       13981 2J    Improved conduction model in charging SEM simulation [13981-90]
+
+
+       13981 2K    High-sensitivity, quantitative differential interference contrast measurement verified with
+                   nm-scale shallow and smooth-shaped defects [13981-91]
+
+       13981 2L    To cut or not to cut: an EPE analysis approach [13981-92]
+
+
+       13981 2M    SEM overlay target optimization and metrology recipe validation via DL simulations
+                   [13981-93]
+
+       13981 2N    In-line defect inspection and review of micromasking defects within high aspect ratio
+                   through-silicon vias [13981-94]
+
+       13981 2O    Automated energy-filtered TEM metrology characterizations of 3D NAND and DRAM
+                   memory devices [13981-95]
+
+       13981 2P    Active substrate support using piezoelectric thin films [13981-96]
+
+
+       13981 2Q    A deployable EUV radiometer with direct SI-traceability [13981-98]
+
+
+       13981 2S    PFIB-SEM wafer DualBeam applications for ground truth in-fab 3D NAND metrology
+                   [13981-101]
+
+       13981 2U    Evaluation of inline SIMS impact on device reliability and performance [13981-105]
+
+
+       13981 2V    Smart Zernike: automated model term selection for enhanced track module matching and
+                   CDU control in photolithography [13981-106]
+
+       13981 2W    Resolution enhancement in EUV ptychography via optimized probe overlap ratio for
+                   diffraction diversity [13981-107]
+
+       13981 2X    Development and application of actinic evaluation platform on comprehensive optical
+                   properties of EUV pellicle at Pohang Accelerator Laboratory [13981-109]
+
+       13981 2Z    LaB6 virtual source mode electron guns for advancing brightness and resolution in electron
+                   beam inspection [13981-113]
+
+       13981 30    Analysis of factors affecting pattern fidelity evaluation using sine wave patterns in electron
+                   multibeam mask writing [13981-114]
+
+       13981 31    Focus sensitivity of CD extreme values demonstrated on a 40 nm pitch DRAM hexagonal
+                   contact hole use case printed with 0.33 NA EUV lithography [13981-115]
+
+
+
+viii
+13981 32    Transmittance measurement of extreme ultraviolet (EUV) optical filter using tabletop test
+            platform [13981-116]
+
+13981 33    A robust AEI sampling strategy to address boundary-induced overlay variability [13981-118]
+
+
+13981 35    Advancements and challenges in large-scale atomic force microscopy image stitching for
+            semiconductor devices [13981-121]
+
+13981 36    Including prior design intent information to enhance contour extraction robustness for
+            CD-SEM metrology [13981-122]
+
+13981 37    Analysis of scan fingerprint characteristics in the frequency domain and their impact on
+            scan speeds and DRAM structure properties [13981-123]
+
+13981 38    GRACE: a gradient-based model-agnostic explainability framework for photolithography
+            overlay virtual metrology [13981-124]
+
+13981 3A    Laboratory-scale quantitative actinic EUV platform for photoresist evaluation [13981-126]
+
+
+13981 3B    AURA-PIE: an AI-enabled understanding and retrieval-augmented assistant for physical
+            inspection of electronics [13981-127]
+
+13981 3C    Axion physics-augmented AI solutions for rapid, precise, and robust tilt measurement in
+            memory devices [13981-129]
+
+13981 3D    Charge suppression in SEM imaging using pulsed electron beam modulation from an
+            NEA-InGaN semiconductor photocathode [13981-130]
+
+13981 3E    SEM image quality assessment: from wavelet transform to deep learning methods
+            [13981-131]
+
+13981 3G    High-resolution, high-contrast FIB-SEM 3D tomography for process control in advanced
+            logic manufacturing [13981-133]
+
+13981 3H    High brilliance, metrology x-ray sources for the soft and tender x-ray range [13981-134]
+
+
+ 13981 3I   In-situ metrology for high aspect ratio channel holes via optimized diagonal milling and
+            one-shot SEM imaging [13981-135]
+
+13981 3J    Monitoring of hole-to-hole distance variance in 3D NAND using Axion x-ray critical
+            dimension metrology [13981-136]
+
+13981 3K    Error correction methodology in semiconductor devices utilizing large-area overlay
+            measurement via DBM [13981-137]
+
+13981 3L    Overlay metrology performance specification challenge entering the sub-nanometer
+            overlay era [13981-138]
+
+
+
+
+                                                                                                        ix
+    13981 3M   Domain knowledge-driven fusion machine learning for overlay prediction enhancement
+               [13981-140]
+
+    13981 3P   Comprehensive post-CMP surface metrology using large-area atomic force microscopy
+               with optical-level throughput [13981-143]
+
+    13981 3Q   Application of low landing energy e-beam metrology for evaluating ArF immersion
+               photoresist: Insights from EUV PR methodologies [13981-144]
+
+    13981 3R   Occlusion-aware pattern measurement for see-through BSE images of HV-SEM via
+               contour- and pixel-based approaches [13981-145]
+
+    13981 3S   Generative adversarial autoencoder for denoising in x-ray critical dimension metrology
+               [13981-147]
+
+    13981 3T   NZO improvement on DRAM by novel recipe optimization algorithm [13981-148]
+
+
+    13981 3U   Leveraging principal component analysis for overlay variation and root cause discovery
+               in high-volume manufacturing [13981-149]
+
+    13981 3W   Controlled contaminated image generation for metrology algorithm benchmarking and
+               robustness improvement [13981-152]
+
+    13981 3Z   A systematic tuning methodology for on-product overlay control in advanced 3D NAND
+               nodes [13981-156]
+
+    13981 40   Resist- and underlayer-specific sensitivity of unbiased LER to CD-SEM measurement
+               conditions [13981-157]
+
+    13981 42   High-throughput AFM roughness metrology with sub-1% repeatability for wafer-scale
+               process control [13981-159]
+
+    13981 43   MSAD: efficient multiscale attention decoder for semiconductor image segmentation
+               [13981-160]
+
+    13981 44   Atomic force probing and focus-exposure matrix analysis of 20nm contact holes on
+               EUV-patterned wafers [13981-162]
+
+    13981 45   Impact of mark polarity, crosstalk, and recovery topography on AIMid overlay metrology
+               [13981-163]
+
+    13981 46   Nano-TSV to BPR connection optimization [13981-164]
+
+
+    13981 47   Development and evaluation of EUV beam splitters for industrial applications [13981-165]
+
+
+    13981 48   Computational guided dynamic sampling e-beam inspection in high-volume
+               manufacturing (HVM) automation with ASML’s virtual computing platform (VCP) [13981-166]
+
+    13981 49   Bridging simulation and reality: few-shot fine-tuning for SEM profile prediction [13981-167]
+
+
+
+
+x
+13981 4A    AI-driven metrology for electrical test via ellipsometry [13981-168]
+
+
+13981 4B    High-NA EUV patterning of logic feature 20-24nm: an e-beam defectivity analysis
+            [13981-170]
+
+13981 4G    Diffusion models for defect detection in SEM images of contact hole patterns [13981-175]
+
+
+13981 4H    Reconstruction of 3D line/space pattern morphologies from top-down SEM images
+            [13981-176]
+
+ 13981 4I   A novel deep learning framework for CD-SEM image denoising [13981-177]
+
+
+13981 4J    Quartz resonator-based atomic force microscopy as a stable semiconductor metrology
+            solution [13981-179]
+
+13981 4L    3-pitch cDBO: a novel overlay mark with process robustness for advanced logic devices
+            [13981-44]
+
+13981 4M    Adaptive design of EUV scatterometry through efficient Bayesian inference [13981-220]
+
+
+13981 4N    LLM-powered fab operation assistant for CD-SEM recipe creation [13981-221]
+
+
+13981 4O    On product scanner focus monitoring and control in leading edge logic foundry with
+            spectroscopic ellipsometry [13981-223]
+
+13981 4P    Evaluation of 5nm hollow fiber nylon filter media for high-purity photoresist [13981-224]
+
+
+13981 4S    Low-frequency line edge roughness foreruns defects in line/space patterns [13981-230]
+
+
+
+
+                                                                                                        xi
+

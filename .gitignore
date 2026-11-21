@@ -1,2 +1,6 @@
-research/sources/*/_tmp_*.part
+# transient rate-limit lock written by research/tools/fetch.py
 research/tools/.fetch_rate.lock
+# Python bytecode caches
+__pycache__/
+# partial downloads written by research/tools/fetch.py
+research/sources/*/_tmp_*.part
