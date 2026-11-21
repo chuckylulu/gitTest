@@ -14,7 +14,7 @@ Tags:
 |---|---|---|---|---|---|---|
 | 1 | Semi metrology orders and revenue growth, H1 | [F] | Orders >30%, revenue >15% (organic) | H1 FY2026 (Jan-Jun 2026) | https://s22.q4cdn.com/617463959/files/doc_financials/2026/q2/2Q26-Earnings-Presentation-FINAL.pdf | p8 |
 | 2 | Semi metrology EBIT margin; no one-offs named | [F] | ~30% | H1 FY2026 (Jan-Jun 2026) | same as #1 | p8 |
-| 3 | Semi metrology size and margin | [F] | >$300M revenue, >25% EBIT | TTM to Q3 FY2025 (Oct 2024-Sep 2025) | https://s22.q4cdn.com/617463959/files/doc_events/2026/Jan/12/BRKR-JPM26-Presentation-Final.pdf | p14 |
+| 3 | Semi metrology size and margin; no one-offs named, EBIT basis undefined | [F] | >$300M revenue, >25% EBIT | TTM to Q3 FY2025 (Oct 2024-Sep 2025) | https://s22.q4cdn.com/617463959/files/doc_events/2026/Jan/12/BRKR-JPM26-Presentation-Final.pdf | p14 |
 | 4 | Semi revenue flat in FY2025 | [F] | flat | FY2025 (Jan-Dec 2025) | https://s22.q4cdn.com/617463959/files/doc_earnings/2025/q4/presentation/BRKR-4Q25-Earnings-Presentation.pdf | p7 |
 | 5 | Semi-Metrology share of BSI revenue, not of total Bruker | [F] | 9% | FY2025 (Jan-Dec 2025) | same as #4 | p9 (pie chart) |
 | 6 | Semi bookings year to date; appears in no Bruker document | [S] | >30% | 9M FY2026 (Jan-Sep 2026) | https://www.fool.com/earnings/call-transcripts/2026/11/04/bruker-brkr-q3-2026-earnings-call-transcript/ | Prepared remarks; Q&A (Laukien) |
@@ -26,13 +26,13 @@ Tags:
 | 12 | Onto–Rigaku CD-SAXS + Ai Diffract offering "selected by two key customers" | [C] | 2 customers | as of 2026-04-20 | https://s24.q4cdn.com/480160064/files/doc_news/Onto-Innovation-Announces-Strategic-Partnership-With-Leading-X-Ray-Provider-Rigaku-To-Advance-Next-Generation-Process-Control-Solutions-2026.pdf | p1 |
 | 13 | Kioxia and Kioxia Iwate to put Rigaku XTRAIA MF-3400 into 3D NAND mass production | [C] | n/a | release 2025-12-04 | https://rigaku.com/about/news-and-press-releases/rigaku-launches-xtraia-mf-3400 | "Track record and prospects" |
 | 14 | Fraunhofer IZM in-line AFM (pre-bond roughness and dishing, hybrid/direct bonding) awarded to Bruker France | [F] | Bruker France S.A.S. | contract 2025-08-06 | https://ted.europa.eu/en/notice/-/detail/518266-2025 | award fields |
-| 15 | IBM/Nova inline Cu-recess scatterometry trained on AFM reference data (15 wafers x 5 dies) | [F] | blind-test R² ~0.8 | SPIE AL 2026 | https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf | p4 |
+| 15 | IBM/Nova inline Cu-recess scatterometry trained on AFM reference data (15 wafers x 5 dies) | [F] | blind-test R² ~0.8 | SPIE AL 2026 (Feb 2026) | https://www.novami.com/wp-content/uploads/2026/04/13981-16-timoney-spie-alp-2026-vts-ml-cu-recess-final.pdf | p4 (training set); p7 (R² ~0.8) |
 
 ## B. The 5 inferences the conclusions lean on most
 
-1. **No 2026 goodwill impairment touched semiconductor metrology** (G080; confidence High).
+1. **None of the three named 2026 goodwill charges is in a semiconductor unit; whether a semi unit was among the units tested in Q3 is NOT DISCLOSED (read: 10-Q Q3 FY2026 MD&A goodwill section; Note 5)** (G080; confidence Medium).
    - Inputs: #7, #8; Q2 FY2026 10-Q Note 5 (BSB $36.5M, CST $98.4M; S060, S061); G007 (the reorganisation-affected units passed, unnamed).
-   - Reason: all three 2026 charges are in named life-science units.
+   - Reason: all three 2026 charges are in named life-science units, but the units that passed the Q3 test are not named.
 2. **Bruker lists no CD-SAXS, wafer-fab TXRF or packaging X-ray imaging tool in 2026** (V006/R072; confidence Medium).
    - Inputs: bruker.com X-ray metrology, XRDI and hub pages and brochure B5000 Rev A3 (retrieved 2026-11-21); the 2022 FCMN "XCD"/"XRI" abstracts (R051, R052).
    - Reason: the finding rests only on what the listed pages show.
@@ -43,14 +43,14 @@ Tags:
    - Inputs: #15; imec in-line SEM vs AFM (Micromachines 2026 review); Onto case study ("low throughput and contamination risk"); Nova Prism blog; Adeia PSI blog.
    - Reason: every optical or SEM method found is checked against AFM, while vendors pitch non-AFM tools for inline use.
 5. **The "Bruker logic / Rigaku memory" split is not supported** (R069; confidence Medium).
-   - Inputs: Rigaku segment mix, logic/foundry 35% vs memory 10% in FY2024, then 21% vs 26% in FY2025 (Rigaku MTP Feb 2025 p11; Rigaku 3Q FY2025 deck p10); #11, #13; Bruker Q2/Q3-26 decks ("memory and advanced packaging" orders).
+   - Inputs: Rigaku segment mix, logic/foundry 35% vs memory 10% in FY2024, then 21% vs 26% in FY2025 (Rigaku MTP Feb 2025 p11 for FY2024; Rigaku annual securities report FY2025, EDINET S100XTB1, p25 for FY2025); #11, #13; Bruker Q2/Q3-26 decks ("memory and advanced packaging" orders).
    - Reason: no source gives share by fab type, and the Rigaku mix flipped within a year.
 
-Calculations: `calc/semi_mix_calc.py` (≈50% AI/HPC; ≈67% production QA/QC; 25-38% pushout recapture in Q1-26, 75-112% expected by Q3), `calc/M_calc.py` and `calc/R_calc.py` (implied Rigaku and Company A revenue).
+Calculations: `calc/semi_mix_calc.py` (≈50% AI/HPC; ≈67% production QA/QC; 25-38% pushout recapture in Q1-26, 75-112% expected by Q3 if read per quarter, 50-75% if Q2+Q3 combined), `calc/M_calc.py` and `calc/R_calc.py` (implied Rigaku and Company A revenue).
 
 ## C. Three questions I could not settle
 
-1. **Does any Bruker document confirm >30% semi bookings growth for 9M FY2026 (Jan-Sep 2026), and what are the dollar bookings?**
+1. **Does any Bruker document state >30% semi bookings growth for 9M FY2026 (Jan-Sep 2026), and what are the dollar bookings?**
    - Only the call says it, read in a third-party transcript (#6).
    - Q3-26 deck: https://s22.q4cdn.com/617463959/files/doc_financials/2026/q3/3Q26-Earnings-Presentation-FINAL.pdf (p7). The deck and release give no figure.
 2. **Who is "Company A" (24% of semiconductor X-ray metrology, CY2023, Rigaku MTP Feb 2025 p11), and what is Bruker's X-ray metrology share?**

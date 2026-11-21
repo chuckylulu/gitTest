@@ -24,7 +24,7 @@ Under the rules, an item counts as closed once two successive attempts add nothi
 - Named fab customers of any Bruker semi tool after 2015. NOT DISCLOSED (read: releases 2016, 2017, 2025; 10-K FY2025 Item 1; product pages; AN5001) (2x).
 - Name of the wafer TXRF tool Bruker says it provides. NOT DISCLOSED (read: semiconductor applications page; Defects & Contamination page; Contamination Control page).
 - Status of the 6300-XRR and 6300-RF tools. NOT DISCLOSED (read: brochure B5000 p16; no product page).
-- Hysitron model: the page heading says ATI 8800, the URL and brochure say 8900. NOT DISCLOSED which is current (read: product page; brochure).
+- Which Hysitron model is current (page heading ATI 8800; URL and brochure 8900). NOT DISCLOSED (read: product page; brochure B5000).
 - A 2026 Bruker X-ray CD (XCD) product, launch or customer. NOT DISCLOSED (read: bruker.com semi pages and sitemap 2026-11-21; FCMN 2026 abstract book) (2x).
 - Release date and specification of "Sirius-FW G2". NOT DISCLOSED (read: FCMN 2026 abstract #030 p188; Sirius-FW page).
 
@@ -66,8 +66,8 @@ Under the rules, an item counts as closed once two successive attempts add nothi
 ### Rigaku and Onto
 - Rigaku Integrated Report 2025 and IR library PDFs. NOT RETRIEVED (tried: rigaku-holdings.com IR pages, whose document lists are loaded by JavaScript).
 - Rigaku decks: 1Q FY2026, 1H FY2025, 3Q FY2024. NOT RETRIEVED (tried: ircms.irstreet.com URLs, 404).
-- Rigaku's own XHENA AX-3000 release. NOT RETRIEVED (only a trade reprint was found).
-- Onto 8-Ks on the Rigaku deal. NOT RETRIEVED (sec.gov only). Onto's q4cdn release PDFs were used instead.
+- Rigaku's own XHENA AX-3000 release. NOT RETRIEVED (tried: web search; only a trade reprint was found).
+- Onto 8-Ks on the Rigaku deal. NOT RETRIEVED (tried: sec.gov, 403 without contact User-Agent). Onto's q4cdn release PDFs were used instead.
 - businesswire.com copies of Onto and Bruker releases. NOT RETRIEVED (tried: HTTP/2 errors or timeouts).
 - investors.ontoinnovation.com. NOT RETRIEVED (tried: 403 to scripts).
 
@@ -75,25 +75,25 @@ Under the rules, an item counts as closed once two successive attempts add nothi
 - SPIE Digital Library abstracts and PDFs (JM3 22(3) 031205/031206; SPIE 12955, 11325, 10962, 12053). NOT RETRIEVED (tried: Incapsula bot page).
 - imec-publications.be records (Altintas et al., Chew et al., ESTC 2024). NOT RETRIEVED (tried: connection reset).
 - YMTC Xtacking AFM paper (JoMM 2019, DOAJ). NOT RETRIEVED (tried: 403).
-- IEEE Xplore originals (ECTC 2023/2024 Adeia and Niazi et al.). NOT RETRIEVED (tried: paywall).
+- IEEE Xplore originals (ECTC 2023/2024 Adeia and Niazi et al.). NOT RETRIEVED (tried: ieeexplore.ieee.org; paywall).
 - ECS JSS paper using a JVX7300M at imec; CEA-Leti EPJ AP 2010 paper. NOT RETRIEVED (tried: IOP 403; EPJ 403).
 - Kioxia T-SAXS thomasnet release naming Samsung and TSMC as JVX6200 adopters. NOT RETRIEVED (tried: 403).
 - Yole press releases and reports on X-ray metrology. NOT RETRIEVED (tried: yolegroup.com 403).
-- MarketsandMarkets, QY Research and TechInsights databases. NOT RETRIEVED (paid or 403).
+- MarketsandMarkets, QY Research and TechInsights databases. NOT RETRIEVED (tried: marketsandmarkets.com 403; QY and TechInsights paywalls).
 - Park Systems annual and semi-annual reports 2025-2026. NOT RETRIEVED (tried: guessed parksystems.com PDF URLs, 404).
 - Intel EPIC supplier award lists 2023-2026. NOT RETRIEVED (tried: 403).
 - semi.org and semicontaiwan.org PDFs (KLA 2021, Nova 2026). NOT RETRIEVED (tried: 403).
-- KLA Kronos 1190 release and Zeta-6xx datasheet. NOT RETRIEVED (server returned HTML, not PDF).
+- KLA Kronos 1190 release and Zeta-6xx datasheet. NOT RETRIEVED (tried: kla.com PDF URLs; server returned HTML, not PDF).
 - Meritz research PDF (2026-04-01). NOT RETRIEVED (tried: connection failed).
-- Full text of the 2016 CEA Grenoble TED notice that mentions "Jordan Valley". NOT RETRIEVED (WAF challenge).
+- Full text of the 2016 CEA Grenoble TED notice that mentions "Jordan Valley". NOT RETRIEVED (tried: ted.europa.eu notice page; WAF challenge).
 
 ### Catalyst dates
 - SPIE Advanced Lithography + Patterning 2027 dates. NOT RETRIEVED (tried: spie.org returned a bot-check page, deleted). Search lead: 2027-02-21 to 02-25.
 - IEEE ECTC 2027 dates. NOT RETRIEVED (tried: ectc.net 403). Search lead: 2027-06-01 to 06-04.
-- Bruker Q4 FY2026 earnings date. NOT DISCLOSED as of 2026-11-21 (no announcement found).
+- Bruker Q4 FY2026 earnings date. NOT RETRIEVED (tried: web search for an announcement, 2026-11-21; none found).
 
 ### Tools
-- Consensus paper search: monthly quota exhausted. Firecrawl search: credits exhausted. Discovery fell back to WebSearch.
+- Tool limits (not data gaps): Consensus monthly quota and Firecrawl credits ran out. Discovery fell back to WebSearch.
 
 ## Resolved by the second pass (for the record)
 - 10-Q Q3 FY2026: retrieved from the us.kabutan.jp mirror. The unit behind the $174.5M charge is BSB&CA [F] G004.

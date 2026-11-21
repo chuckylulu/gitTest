@@ -12,5 +12,3 @@ print(f"Memory YoY 9M: {fy25_9m['memory']/fy24_9m['memory']-1:+.0%}; Logic YoY 9
 for yr, mkt, share, src in ((2023, 470, 0.30, "MTP Feb-2025 Fig.12/13 (Yole WFE Monitor Q4 2024)"),
                             (2024, 498, 0.38, "Yuho FY2025 p20 (Yole WFE Monitor Q4 2025)")):
     print(f"CY{yr}: market ${mkt}M x {share:.0%} = ${mkt*share:.0f}M implied Rigaku X-ray metrology revenue  [{src}]")
-# 3) Onto price check: JPY 113,078,356,600 / 61,123,436 shares
-print(f"Onto price per Rigaku share = JPY {113078356600/61123436:,.0f}")

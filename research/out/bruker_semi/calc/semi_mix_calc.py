@@ -17,3 +17,4 @@ print(f"AI/HPC share FY2024 ~ {125/250:.0%} (both figures are lower bounds; rati
 print(f"Production QA/QC share mid-2026 ~ {200/300:.0%}; R&D ~ {50/300:.0%}; mask repair ~ {50/300:.0%}")
 print(f"Q4-25 pushout recaptured in Q1-26: {10/40:.0%}-{15/40:.0%}")
 print(f"Expected cumulative recapture by end Q3-26 if Q2 and Q3 match Q1 (CFO: similar amount): ${3*10}-{3*15}M = {30/40:.0%}-{45/40:.0%} of $40M")
+print(f"Alternative reading (Q2+Q3 combined similar to Q1): ${2*10}-{2*15}M = {20/40:.0%}-{30/40:.0%} of $40M")

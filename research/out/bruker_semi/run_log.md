@@ -66,3 +66,21 @@ Two reviewers covered the dossier and handoff: one for source fidelity, one for 
 - Handoff: every gap cell now uses the NOT DISCLOSED (read: ...) form. The guidance cell records the [S] FY2026 guide as 1 unresolved.
 - B3: only dated, sourced catalysts kept. The rest moved to a watch list tagged [I].
 - Verdict words removed from the premise check. Quotes corrected ("maybe half"; "I think the direction is correct").
+
+## Second adversarial pass, 2026-11-21
+Two reviewers (fidelity; rule compliance) re-read the revised dossier, handoff, review packet and gaps. They found no new substantive evidence problem and raised 27 issues, mostly rule formatting. All were fixed by calc/fix_round2.py (evidence) and calc/edit_round2_docs.py (exact-match document edits; the script aborts if any target text is not found exactly once):
+- Missing-data entries normalised to the two exact forms in evidence.csv, dossier, handoff and gaps.md.
+- Calendar months added to every figure. Empty period fields filled in evidence.csv.
+- Mixed-tag table cells split into inline tags. The handoff vulnerability cell now carries a single tag.
+- V003 now records that the CEO's "direction is correct" answered a question that ran into 2027 (~$400M, mid-teens). It is no longer presented as acceptance of FY2026 growth.
+- V005 gives both readings of "similar amount in Q2 and Q3": 50-75% or 75-112%.
+- New [I] rows V007 (≈50% AI/HPC) and V008 (≈67% production QA/QC), computed in calc/semi_mix_calc.py.
+- H037 re-tagged [F]. M006 updated to same-edition figures. R069 reason added.
+- The Onto per-share price was removed from R007 and from calc/R_calc.py: CLAUDE.md excludes stock prices.
+- Undated B3 rows moved to the watch list. The export-control remark is dated (Q4-24 call). "Softness in X-Ray Semi" relabelled 9M FY2025. "Reaffirmed" changed to "tentatively repeated".
+- Review packet: inference 1 confidence lowered to Medium and reworded; claim #15 page corrected (p4 training set, p7 R² ~0.8); inference 5 source corrected (yuho p25); "confirm" removed.
+Final quote_check: every quote FOUND (rows without a quote are [I]).
+
+## Status at finish
+Every gap that is still open had two attempts (first pass plus the gap-close pass), except items blocked by site refusals. Those are listed in gaps.md as NOT RETRIEVED for the user to save by hand, notably the sec.gov originals and SPIE papers.
+Large file: research/sources/bruker_semi/2024-03-19_fcmn-pathlms_slides-*.pdf is 66 MB. GitHub warns above 50 MB but accepts it.
