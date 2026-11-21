@@ -3,21 +3,21 @@
 Bruker's fiscal year is the calendar year (FY ends Dec 31). Evidence rows are S001-S070 in `research/out/bruker_semi/parts/S.csv`, and quote_check reports 70/70 FOUND. This file covers semiconductor metrology only. It gives no group or segment financials.
 
 ## Premise check
-- **Reorganisation date: OK, with one nuance.** The Q2 FY2026 10-Q (filed 2026-08-05) says only "subsequent to June 30, 2026 ... effective in the third quarter of 2026" [F] S053. The Q3 2026 earnings release says "Effective July 1, 2026" [F] S055.
+- **Reorganisation date: OK, with one nuance.** The Q2 FY2026 10-Q (filed 2026-08-05) says only "subsequent to June 30, 2026 ... effective in the third quarter of 2026" [F] S054. The Q3 2026 earnings release says "Effective July 1, 2026" [F] S056.
 - **New segment names.** BSI Biosystems (BIOS), BSI Microbiology and Infection Diagnostics (BMID), BSI NANO and BEST.
   - The old segments were BSI BioSpin, BSI CALID, BSI NANO and BEST.
   - The release tables label the new segments "Bruker BIOS", "Bruker MID", "Bruker Nano" and BEST.
-  - BSI NANO is unchanged ("no changes were made") [F] S054.
-- **Q2 2026 impairment: OK.** $134.9M = $36.5M for the BSB reporting unit (Bruker Spatial Biology, after its April 1, 2026 merger with Bruker Cellular Analysis), inside BSI NANO, plus $98.4M for the CST reporting unit (Chemspeed, formerly Automation), inside BSI BioSpin. Neither unit is semiconductor [F] S058-S060.
+  - BSI NANO is unchanged ("no changes were made") [F] S055.
+- **Q2 2026 impairment: OK.** $134.9M = $36.5M for the BSB reporting unit (Bruker Spatial Biology, after its April 1, 2026 merger with Bruker Cellular Analysis), inside BSI NANO, plus $98.4M for the CST reporting unit (Chemspeed, formerly Automation), inside BSI BioSpin. Neither unit is semiconductor [F] S059-S061.
 - **Q3 2026 impairment: amount OK, unit not verified from a primary source.**
-  - The amount, $174.5M, is in the release [F] S062. 9M 2026 total is $309.4M.
-  - The unit is Bruker Spatial Biology according to the CFO on the call [S] S063. A third-party 10-Q summary names the "BSB&CA" unit [S] S064.
+  - The amount, $174.5M, is in the release [F] S063. 9M 2026 total is $309.4M.
+  - The unit is Bruker Spatial Biology according to the CFO on the call [S] S064. A third-party 10-Q summary names the "BSB&CA" unit [S] S065.
   - The Q3 10-Q itself is NOT RETRIEVED, so the unit cannot be tagged [F].
 - **Call dates.** The Motley Fool URL dates are the posting dates, not the call dates. The Q2 2026 call was held 2026-08-04 (URL says 08/11). The Q1 2026 call was held 2026-05-06 (URL says 05/07).
 - **Share figures are % of BSI.** The 9% "Semi-Metrology" figures are % of BSI (Scientific Instruments) revenue by end market, not % of total Bruker. The 2024 chart's footnote points to BSI.
 - **Analyst numbers, not Bruker disclosures:**
   - The "$40M Q4-2025 semi pushout" is the analysts' wording on the Q4-25 and Q1-26 calls.
-  - The "~$300M exiting 2026 / 30% EBIT / ~$400M in 2027" framing is also the analysts'. The CEO called it only "directionally correct" (S051).
+  - The "~$300M exiting 2026 / 30% EBIT / ~$400M in 2027" framing is also the analysts'. The CEO called it only "directionally correct" (S050).
 
 ## Q2: Dated disclosure table (semiconductor metrology)
 
@@ -58,9 +58,9 @@ The EBIT basis is not defined, and management named no one-off items for either 
 
 ## Segment mapping
 - **Before July 1, 2026:** reportable segment **BSI NANO**. Within it, the **Bruker Nano Surfaces and Metrology division** makes "automated X-ray metrology, automated AFM defect-detection and photomask repair and cleaning equipment for semiconductor process control" (10-K FY2023 p9; FY2025 p11) [F] S001, S028.
-  - The Q2 FY2026 10-Q Note 1 describes BSI NANO as including "X-ray metrology, defect-detection equipment for semiconductor process control" [F] S052.
+  - The Q2 FY2026 10-Q Note 1 describes BSI NANO as including "X-ray metrology, defect-detection equipment for semiconductor process control" [F] S053.
   - Related but separate: BEST's Research Instruments sells EUV/XUV technology to semiconductor companies (lithography supply chain). That is not metrology.
-- **After July 1, 2026:** still **BSI NANO**, unchanged [F] S054, S055.
+- **After July 1, 2026:** still **BSI NANO**, unchanged [F] S055, S056.
   - The Q2-26 slide header reads "Bruker NANO Semiconductor Metrology" [F] S037.
   - The Q3-26 call calls it "BSI semicon metrology markets".
 - **Caveat:** the BSI NANO Restructuring Plan (started Q1 2026) includes a "merger of divisions within the segment" (Q2-26 10-Q, restructuring note). No document read says whether the Nano Surfaces and Metrology division was affected.
@@ -69,13 +69,13 @@ The EBIT basis is not defined, and management named no one-off items for either 
 
 | Period | Charge | Reporting unit | Segment | Semi-related? | Source |
 |---|---|---|---|---|---|
-| Q3 FY2025 | $96.5M (combined) | BSB and Automation (AUT) | BSI NANO; BSI BioSpin | No. Two other tested units "passed ... with significant headroom" (not named); all other units passed the qualitative test at Oct 1, 2025 | [F] S056, S057 |
-| Q2 FY2026 | $36.5M | BSB after merger with BCA | BSI NANO | No | [F] S059 |
-| Q2 FY2026 | $98.4M (all remaining goodwill) | CST (formerly Automation) | BSI BioSpin | No | [F] S060 |
-| Q2 FY2026 total | $134.9M | n/a | n/a | n/a | [F] S058 |
-| Q3 FY2026 | $174.5M (9M 2026 total $309.4M) | Bruker Spatial Biology / "BSB&CA" (secondary sources only) | BSI NANO (secondary) | No evidence of a semi unit | [F] amount S062; [S] unit S063, S064 |
+| Q3 FY2025 | $96.5M (combined) | BSB and Automation (AUT) | BSI NANO; BSI BioSpin | No. Two other tested units "passed ... with significant headroom" (not named); all other units passed the qualitative test at Oct 1, 2025 | [F] S057, S058 |
+| Q2 FY2026 | $36.5M | BSB after merger with BCA | BSI NANO | No | [F] S060 |
+| Q2 FY2026 | $98.4M (all remaining goodwill) | CST (formerly Automation) | BSI BioSpin | No | [F] S061 |
+| Q2 FY2026 total | $134.9M | n/a | n/a | n/a | [F] S059 |
+| Q3 FY2026 | $174.5M (9M 2026 total $309.4M) | Bruker Spatial Biology / "BSB&CA" (secondary sources only) | BSI NANO (secondary) | No evidence of a semi unit | [F] amount S063; [S] unit S064, S065 |
 
-- The July 2026 reorganisation was a triggering event for an interim goodwill test in Q3 [F] S061.
+- The July 2026 reorganisation was a triggering event for an interim goodwill test in Q3 [F] S062.
 - Which units were tested in Q3 2026, and their headroom, is NOT RETRIEVED.
 - No document read names a semiconductor or Nano Surfaces and Metrology reporting unit as impaired, or as individually tested.
 
@@ -87,9 +87,9 @@ What I read:
 - The Q1-Q3 2026 decks and releases, and the Q2-26 10-Q notes. None mentions Rigaku, Onto Innovation or "hybrid metrology".
 
 Related items:
-- **2026-08-04, Q2-26 deck p8 [C] S066.** States that X-ray products are "required" for AI logic, for CoWoS packaging, and for HBM ("AAFM, WLI, and X-ray metrology required"). No partner or competitor is named.
-- **2026-08-03 and 2026-08-31 product launches [F] S067, S068.** EDS/TKD detectors for electron microscopes (XFlash FlatQUAD 2L, eWARP TKD, XFlash 7200 FIRE). Semiconductor devices are cited as an application. These are SEM analytics, not in-line fab X-ray metrology.
-- **2026-04-07 [F] S069.** An imec joint development project on photothermal AFM-IR. This predates April 20 and is not X-ray.
+- **2026-08-04, Q2-26 deck p8 [C] S067.** States that X-ray products are "required" for AI logic, for CoWoS packaging, and for HBM ("AAFM, WLI, and X-ray metrology required"). No partner or competitor is named.
+- **2026-08-03 and 2026-08-31 product launches [F] S068, S069.** EDS/TKD detectors for electron microscopes (XFlash FlatQUAD 2L, eWARP TKD, XFlash 7200 FIRE). Semiconductor devices are cited as an application. These are SEM analytics, not in-line fab X-ray metrology.
+- **2026-04-07 [F] S070.** An imec joint development project on photothermal AFM-IR. This predates April 20 and is not X-ray.
 - **2026 acquisitions and investments:**
   - TOFWERK, the remaining stake, on Jan 6, 2026: time-of-flight mass spectrometry with some semiconductor applications.
   - MIMETAS (organ-on-chip) and a minority stake in Atinary (AI labs), per the Q3-26 call.
