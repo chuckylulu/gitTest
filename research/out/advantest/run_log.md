@@ -30,3 +30,21 @@ Session date: 2026-11-21. Rules: research/CLAUDE.md (imported by the root CLAUDE
    - The missing row for 2022-04-27_advantest_financial-results-FY2021Q4-full-year.pdf was added.
 8. File-name dates: 19 sources whose file-name date came from PDF metadata or a placeholder were renamed to the printed document date with research/tools/rename_dates.py. That covers the securities reports (84th filed 2026-06-26, 85th semiannual 2026-11-13, 83rd 2025-06-25, 80th 2022-06-22), nine older results releases, two Teradyne Q3 2026 documents, a SWTest deck and three press pages. All references in out/ and the manifest were rewritten, and the evidence `date` column was made consistent per file.
 9. Workflow 2 (8 adversarial verifiers, one per module): re-open cited pages, cross-check against a second document, re-run the calc scripts, fix in place, and log to parts/<MOD>_verify.md.
+   - Result: 2,380 rows after verification (A1 510, A2 198, A3 317, A4 436, A5 217, A6 354, TH 205, CL 143). All 1,943 quoted rows found. row_check shows 3 remaining flags, all false positives: A1-300 (the value is printed in an image table), A5-085 (printed as the word 'eight'), A5-131 (date printed in words).
+   - Material corrections:
+     - About 115 guidance and forecast rows retagged [F] to [C] as company forecasts.
+     - Six arXiv preprints retagged [F] to [S], because no peer-reviewed or conference venue is printed.
+     - A4 missed the entity-level customer table: NVIDIA International 20.2% vs NVIDIA Group 21.6%.
+     - Two export-rule readings were rewritten (88 FR 73424 back-end exclusion scope; Jan 2025 rule widening sec. 744.11 to 3B992).
+     - A6 added the ~2 bn FY2018 Q4 inventory loss: the 2018-19 margin drop excluding one-offs is -5.2 pp, not -8.4 pp. A6 also corrected the IFRS adoption date (FY2015).
+     - CL re-sourced the record date: 15 May, from the statutory report.
+     - The TechNews 'USD 8 bn' figure and the LLM-generated simplywallst page were dropped as ledger evidence.
+     - The verifiers' per-module logs are in parts/<MOD>_verify.md, and their structured summaries in parts/_verify_summaries.json.
+   - Four more files were renamed to printed dates: FY2015 Q1 and Q2 results; the FY2018 Q4 and FY2019 Q1 Q&A. calc/__pycache__ was removed from git and is now ignored.
+   - Kept as is: the Integrated Annual Report 2026 file name (2026-11-11, from PDF CreationDate). The news index lists its release on 2026-10-16, so the saved file may be a later revision.
+10. Workflow 3 (close-out):
+    - Reconcile across modules (one-off SG&A quarter, write-down reversal quarter, period labels of dated statements).
+    - B1/B2 ledger and facts; B3 catalysts, B4 gaps.md, B5 handoff.md.
+    - Assemble dossier.md.
+    - Run compliance, numbers and completeness critics, with up to 2 fix rounds.
+    - Write review_packet.md.
