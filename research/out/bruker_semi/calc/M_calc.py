@@ -12,7 +12,9 @@ mkt_2024_q4_25, rig_2024 = 498.0, 0.38     # R013, R012
 
 print("CAGR 2023-2026 (check vs filing 11.3%%): %.1f%%" % (((mkt_2026f_q2_24/mkt_2023_q2_24)**(1/3)-1)*100))
 print("Rigaku 2023 implied X-ray metrology revenue (Q2-24 edition): $%.0fm" % (rig_2023*mkt_2023_q2_24))
-print("Company A 2023 implied revenue (24%% from Q4-24 chart x Q2-24 market; mixed editions): $%.0fm" % (compA_2023_mtp*mkt_2023_q2_24))
+mkt_2023_q4_24 = 470.0  # USD m, same-edition (Yole Q4 2024) 2023 market from the MTP chart (R013 note)
+print("Company A 2023 implied revenue (24%% x same-edition $470m, Q4-24): $%.0fm" % (compA_2023_mtp*mkt_2023_q4_24))
+print("Rigaku 2023 implied revenue (30%% x $470m, Q4-24 edition): $%.0fm" % (rig_2023_mtp*mkt_2023_q4_24))
 print("Rigaku 2024 implied (Q4-25 edition): $%.0fm" % (rig_2024*mkt_2024_q4_25))
 print("Rigaku share change 2023->2024 (different editions): %+.1f pts" % ((rig_2024-rig_2023)*100))
 
