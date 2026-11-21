@@ -1,0 +1,926 @@
+
+
+Inspection And Metrology Catching Up For High-Density Fan-Out Panel Packaging
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                Inspection And Metrology Catching Up For High-Density Fan-Out Panel Packaging                                                    
+
+Test, Measurement & Analytics
+
+Inspection And Metrology Catching Up For High-Density Fan-Out Panel Packaging
+
+Optical methods need to comply with increasing warpage, finer RDL pitch, and trace size.
+
+								July 7th, 2026 - 
+
+								By: 
+Anne Meixner
+
+Key Takeaways: 
+
+To support AI/HPC devices, high-density fan-out on panels must deliver increased RDL layer count and micropillar height while decreasing the trace and bump/micropillar pitch.
+
+Metrology and inspection steps assist with achieving known-good panel requirements to avoid throwing away expensive chiplets, such as HBM and TPUs.
+
+Optical measurement systems need to account for panel warpage.
+
+Soaring AI/HPC device demand is driving leading-edge foundries to support the transition from wafers to panels to accommodate increasingly larger device sizes. But to ensure that panels with multiple redistribution layers are known-good, inspection equipment must cope with shrinking RDL features, smaller bump pitch, and the warpage that comes with panels’ larger form factors.
+
+Once primarily relegated to small chips, panel-level packaging has become increasingly attractive for AI/HPC device makers as package size grows to 80 x 80mm and beyond. While the thermal management associated with high energy consumption has been a prevailing concern, the insatiable need for more compute power in a single package has reached an area limit. Silicon interposer-based packages are generally limited to 100 x 100mm, the largest size at which yield, lithography, warpage, and cost are reasonable. But with panel-level packaging, form factors will range from 310 x 310 mm to 600×600 mm, which TSMC has said will complement CoWoS, not replace it, in some very large packages.
+
+However, meeting the interconnect density requirements of high-density fan-out (HDFO) pushes panel manufacturers into new territory.
+
+“It represents a challenge for PLP manufacturers due to large package sizes, the integration of multiple chiplets or devices in the same package, and more interconnect density enabled by lower pitches, smaller RDL L/S, and more RDL layer count,” said Gabriela Pereira, senior technology and market analyst for semiconductor packaging at Yole Group.
+
+Fan-out panel-level packaging typically uses a chip-last manufacturing process; hence, the need for inspection to assure known-good panels. To support HDFO, layer count goes from 3 to 9, and trace and bump pitches decrease from 20 to 5 microns. In addition, several industry experts said that manufacturers are targeting 2 micron pitches within the next 5 years.
+
+“For panel-level packaging, the first thing is that the manufacturing requirements have become more stringent. The smallest feature size becomes more like the front-end (i.e., wafer processing). This drives more inspection,” said Monita Pau, senior director of product marketing at 
+Onto Innovation
+. “If you look at panel level packaging you’re committing known good dies onto a package, in either an interposer or a substrate. You better make sure that these are defect-free before you commit a very expensive KGD onto the package.”
+
+Engineering teams rely upon metrology, inspection, and electrical test to develop and maintain a panel manufacturing process with sufficient yield and quality. Early and frequent measurement provides the data to detect process drift, process anomalies, and defects. That, in turn, enables tweaks to process development and material properties, as well as prompt response to yield and quality excursions during production.
+
+On the positive side, engineers have a broad set of measurement tools at their disposal. Optical inspection remains the primary method, but non-optical solutions may soon be needed.
+
+“Existing advanced packaging metrology and inspection tool platforms are largely built around existing optical inspection and optical metrology platforms, adapted for panel formats,” said Yole’s Pereira. “The main techniques in use are optical AOI, optical 2D/3D, confocal, interferometry, profiler-based metrology, warpage and bow metrology tools, overlay and CD optical inspection, visual and optical carrier inspection for glass panels or glass carriers. Leading suppliers such as KLA and Onto Innovation leverage cross-platform architectures that can be adapted to PLP and advanced IC substrates with minimal modifications, while some vendors have developed PLP-dedicated tools.”
+
+Still, the shift to HDFO panels does demand more from the inspection and metrology equipment.
+
+“This migration brings wafer/fab class requirements onto formats that were historically inspected with PCB-grade sensitivity,” said Arun Aiyer, CEO and CTO of Avarustech. “These requirements include sub-2µm RDL line/space, sub-20µm bump pitch, sub-micron overlay, hybrid-bond-ready surfaces, transparent-substrate handling, and through-glass via (TGV) characterization. At the same time, panel-size standardization, warpage control, and equipment readiness remain unresolved. These changes tighten process windows and amplify mechanical distortion. Inspection and metrology must therefore move from a discrete quality gate to a core enabler of manufacturability.”
+
+Measuring x,y and z for RDL and bumps
+
+Multiple industry experts note that achieving high yield remains difficult for HDFO panels. Metrology and inspection provide essential data to yield and quality engineers. To support AI/HPC device designs, the layer count increases, and trace pitch and bump/pillar pitch decrease, but micropillar height increases. Inspection and metrology steps must be added at every layer, and the measurement resolution must increase with decreased feature size.
+
+Miniaturization stresses the optical systems for both resolution and the ensuing throughput time per panel.
+
+“When you have smaller objects, your optics resolution should also get smaller than the size of the object you are going to inspect. Currently, the minimum RDL line width is 5 microns in mass production, with future projections to shrink to 2 microns,” said JD Shin, director of customer success at Koh Young Technology. “For easier calculation, let’s choose the current line-width of 5 micrometers and a future line width of 1 micrometers. This means your resolution needs to be 5 times smaller than the conventional resolution. If you halve the resolution with the same type of camera, your inspection speed will be slower by four times.”
+
+This increase in throughput time directly corresponds to the camera’s field of view, pixel count, and the requirement for improved resolution. The tradeoff between measurement sensitivity and the speed of measurement is typically addressed with faster physical scanning and the associated calculations. But it’s also a data management challenge. To put this in perspective, consider that the inspection of a 600 mm panel with 1 micron resolution results in ~1012 pixels per layer.
+
+“It’s always sensitivity versus throughput,” said Onto’s Pau. “Either you have high sensitivity and lower throughput, or you have high throughput but lower sensitivity. Usually you try to balance these two aspects, because you want to make sure you are not missing killer defects. But on the other hand, you don’t want to go super slow.”
+
+Vias connect the RDL layers. As the number of layers increases, the via stack-up grows, but the via area decreases. The mechanical stresses inherent in material properties, smaller vias, and the manufacturing process affect via formation. AOI is limited in evaluating the via quality.
+
+“The RDL layers are becoming complicated from 3 layers up to 9 layers,” said KyungRok Park, corporate vice president of research and development at Amkor Technology. “That has an impact on the stacking, i.e., the vias between layers. Even if we perform inspection at every single layer with AOI, how do you know about the stacking?”
+
+Park noted that today electrical test is used to screen via defects. However, earlier detection methods provide more timely data for engineers to correct processing, as well as screening for known-good panels. That, in turn, opens the door for other modalities such as infrared and X-ray.
+
+As bumps/micropillars’ pitch decreases and aspect ratio increases, traditional 2D inspection becomes insufficient because bump/micropillar quality affects the bonding yield and quality. With multiple camera angles, optical measurement equipment can create 3D images, and the resulting richer data can provide additional insight.
+
+“Three-dimensional measurement/inspection becomes more critical than in the past when you had bigger bump sizes,” noted Koh Young’s Shin. “If you have smaller sizes, making the perfect bump of the same size is much more challenging. That is the reason why inspection is needed in 3D. Our equipment can provide this type of measurement, including the bump height and volume.”
+
+Fig. 1: 3D measurement of solder bump. Source: Koy Young Technology 
+
+In the bumps/micropillar lithography process, photoresist thickness is an important parameter. Before the panel is exposed, irregularities in the photoresist can be detected and reworked through removal and redeposition. But that requires measuring thick films (hundreds of microns) at nanometer resolution, and this combination of specs is a challenge for traditional optical measurement techniques.
+
+“You lose yield if bumps or micropillars are not coplanar. As the 3D stacking gets higher, and as the dimension of the die gets larger, you’re putting more components on the micropillars. Yet as the pillar height gets taller your planarity requirements remain the same. This makes it more difficult to manufacture,” said Chris Claypool, senior director of R&D for FilmTek product line at 
+Bruker
+. “There are metrology tools that measure the coplanarity after the bumps and pillars are formed. We measure further up the line in the lithography stage, where they’re measuring the resist thickness and the resist uniformity. Because you can reprocess at that step. Normally with ellipsometry or reflectometry, you’re not going to be able to measure anything thicker than 30 microns.”
+
+Bruker has an optical design that enables measuring up to 2,000 microns of dielectric thickness. “That’s unnecessary for front-end applications, but in packaging, particularly for bump and pillar planarity, it’s critical to have nanometer resolution for very thick films,” Claypool said. “What we’re seeing is in the packaging the thicknesses originally were in the 50 to 100 micron range for the bumps. Now the last generation was up to 450 microns, and the next generation we’re working on now is going to be up to 650 microns.”
+
+Coping with warpage
+
+As panel area increases engineers worry about the effect that warpage has on manufacturing processes. This includes the metrology and inspection methods which provide vital feedback on the RDL trace pitch, contamination defects, missing or excess metal on vias or micropillars, etc. Thus, optical measurement systems, the primary spectrum of choice, need to deliver good-quality measurements despite warpage.
+
+“The biggest challenges are concentrated around scale, flatness, alignment, and process variability,” said Yole’s Pereira. “Process uniformity becomes harder because temperature, pressure, and material properties can vary across a much larger area. Warpage control is one of the most critical challenges, creating handling instability, die shift, photolithography alignment errors, yield loss, reliability issues, and electrical performance degradation. Hence, there is a need to adapt existing AOI, optical metrology, warpage metrology, profiler, interferometry, and 3D inspection platforms to larger panels. Equipment suppliers are scaling field of view, stage handling, data processing, warpage measurement, and automation so that wafer-level methods can work on larger panel formats.”
+
+For optical measurement systems, the field of view and focal depth influence resolution and throughput. Warpage can affect optical focus, and consequently the measurement.
+
+“Another challenge is that if you have finer resolution, from optical point of perspective the focal depth becomes more critical,” said Shin. “If you have small resolution, you have much narrower focal depths. So even with very small warpage, the image that you receive can be very blurry.”
+
+Handling of panels can mitigate warpage.
+
+“One of the biggest challenges with panel-level packaging is that you’re dealing with a much larger size than a wafer. The handling differs from a wafer form factor,” said Onto’s Pau. “Even though we do wafer-level packaging, you can imagine the panel surface area is much bigger. It’s always struggling with warpage. How are you going to hold the panel so that you can still do inspection?”
+
+Others also stress the requirements on panel handling and focus capability that warpage mitigation requires.
+
+“The first challenge you face is the warpage. How do you handle the warped panel, i.e., how do you suck it down and make it flatter? Because if you want the throughput, you need your system to quickly travel from one point to another,” said Samuel Lesko, senior director general manager of TSOM Business Unit at Bruker. “But with optical instruments, you have a certain working distance for focus. So you have to be careful to flatten out a full panel and avoid any collision with the instrumentation. The second challenge is with throughput. You need to have a reference base, such that the auto-focus time is minimal. So either you find a way to suck down the panel, or you find a way to get fast auto-focus. Or, you combine both techniques. And this choice is also a function of the panel/substrate material.”
+
+However, the increased manufacturing process complexity results in a set of defects that are not visible to optics.
+
+“The central challenge is that panel packaging combines wafer-class feature sizes with PCB-class mechanical instability. This stresses resolution, throughput, and stability in ways that existing tools were not designed to handle. Large panels deform, warp, shrink, expand, and locally shift far less predictably than wafers,” observed Avarustech’s Aiyer. “FOPLP (fan-out panel-level packaging) shows significantly higher warpage than equivalent FOWLP (fan-out wafer-level packaging) because CTE-induced warpage scales with dimension. Differential thermal expansion between polymers, metals, and silicon dies can induce severe bow and die shift during curing and debonding. As a result, critical defects are no longer purely visual. They are coupled to substrate distortion, residual stress, RDL deformation, coplanarity, and buried-interface behavior. A panel can pass conventional AOI and still fail because local height, overlay, or stress signatures were not measured in context.”
+
+Conclusion
+
+AI/HPC devices are expected to shift to HDFO panel-level packaging. But the transition is not as simple as adopting wafer-level techniques known to achieve high-density RDL over to a panel substrate. As RDL layers increase and pitch and size decrease, inspection and metrology become even more important in factories than ever before.
+
+Optical inspection and metrology equipment (AOI) continues to be the most common wavelength used by engineers for RDL panel manufacturing. But the combination of specs and panel form-factor challenges its detection ability due to mechanical instability that accompanies panel materials and size. In other words, warpage complicates every aspect of optical measurement techniques.
+
+“Panel-level packaging inspection and metrology is at an inflection point. Legacy PCB and substrate AOI are being pushed to their limits. At the same time, semiconductor-grade metrology has only been partially adapted to the scale, materials, and mechanical instability of large rectangular substrates up to roughly 600 × 600mm,” noted Avarushtech’s Aiyer. “The major shift is that inspection is no longer only a pass/fail step. It is becoming the data engine for adaptive lithography, where offline die-shift metrology feeds ML algorithms that drive global, zonal, per-die, or site-by-site overlay correction. Still, the industry lacks a single high-throughput, closed-loop, panel-native platform that can correlate visual defects, dimensional errors, and process-induced deformation in one coordinate frame across the full panel.”
+
+Related Articles
+
+Panel-Level Packaging’s Second Wave Meets Engineering Reality
+
+The cost case is strengthening, but glass, warpage, and bonding yield stand in the way.
+
+Fan-Out Panel-Level Packaging Hurdles
+
+The economics look attractive, but first the industry needs convergence on panel size, process tools, and materials.
+
+What’s Failing At The Interface
+
+In advanced packages, the interface is where problems show up, but rarely where they begin.
+
+ Tags:
+
+AI/HPC
+
+Amkor Technology
+
+AOI
+
+auto-focus
+
+Avarustech
+
+Bruker
+
+bumps
+
+defects
+
+HDFO PLP
+
+high-density fan-out
+
+KLA
+
+Koh Young Technology
+
+micropillars
+
+Onto Innovation
+
+optical inspection
+
+panel handling
+
+panel-level packaging
+
+RDL
+
+warpage
+
+Yole Group
+
+Anne Meixner 
+
+(all posts)
+
+							Anne Meixner is a technical editor at Semiconductor Engineering. She has 30+ years in the semiconductor industry. She became fascinated by defects in the semiconductor manufacturing process as a young engineer at IBM. Over that period, she has focused on test methodology with emphasis on mixed-signal and analog DFT and test. As a technical communicator she takes complex ideas and explains them in consumable understandable pieces. Meixner has worked at IBM, Carnegie Mellon University and Intel.  She holds three U.S. patents and her peers have recognized her work with two best papers at IEEE International Test Conference.  She founded The Engineers’ Daughter in 2015 to consult on semiconductor testing and to coach engineers.
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+

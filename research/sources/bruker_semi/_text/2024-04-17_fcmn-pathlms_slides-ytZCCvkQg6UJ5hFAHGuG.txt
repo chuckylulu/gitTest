@@ -1,0 +1,1052 @@
+FCMN 2024
+
+
+
+
+            X-Ray Metrology for Characterizing
+            Advanced Nanoelectronics Structure
+                               April 16th, 2024
+
+
+
+                             Kazuhiko OMOTE
+                X-Ray Research Laboratory, Rigaku Corporation
+
+
+                                    FCMN 2024           © 2024 Rigaku Corporation. All rights reserved   1
+             Trend of Semiconductor Devices and X-Ray Metrologies
+IDRS Roadmap 2022                           2022                        2025                               2028                   2031                                 2037
+               Litho         193i, EUV                                              193i, High NA EUV
+
+                             3 nm                                        2 nm                              1.5 nm                 1.0 nm                               0.5 nm
+              Logic         FinFET                                       LGAA                                                      LGAA 3D
+
+                             17nm                                        14 nm                                                                                             10 nm
+                                                                                                                                  11.5 nm
+             DRAM
+                        Cell size ( µm2)     0.00165                          0.00118                         0.00085              0.00065                                 0.00025
+
+                            96 L                   128L                   256L                              384L                   5764L                               1024L
+          3D NAND        Number of layers          128-192                256-384                            384-576              576-768                              1024-1536
+
+           Stacking          2/2.5D                                      3D CoW                             3D WoW                   3D FP                              3D VLSI
+
+
+               EUV Mask                            DRAM,3D NAND                          MRAM/FeRAM                           GAA-FET                          2.5/3D Stacking
+
+
+
+
+                       Source: EUV Litho                     Source: Micron               Source: SemiEngineering                   Source: LAM                              Source: Intel
+
+
+
+       Ø Ultra thin film                     Ø High AR, 3D =>        Ø Composition                             =>      Ø Epitaxial film =>             Ø Micro bump, TSV
+        =>XRR, XRD, XRF                        SAXS, X-ray imaging     XRF                                               HR-XRD, XRR                   Composition, Defects
+       Ø Contaminations                      Ø W-fill, Si texture => Ø 3D structure                                 => Ø 3D Structure    =>              => Micro XRF
+        => TXRF                                XRF, XRD                SAXS                                              SAXS                            => X-ray imaging
+                                                                                           FCMN 2024                                © 2024 Rigaku Corporation. All rights reserved           2
+                                Why X-Ray?
+Ø X-ray photons penetrate through materials and enable to investigate inner
+  structure from the size of sub-nanometer (atomic scale) to micrometer of the
+  materials, non-distractively.
+
+ ü X-ray Diffraction/Scattering
+                     1. HR-XRD : Composition and thickness of epitaxial layers
+                     2. X-ray reflectivity : Thickness and stacking structure of multilayers
+                     3. Topography : Crystal defects, dislocations
+                     4. GI-SAXS : Nanoimprint mold, EUV resist structures, FinFET, GAA, etc.
+                     5. T-SAXS : 3DNAND, DRAM structures
+
+
+ ü X-ray Imaging
+                     1. µ m Structure : TSV, Packaging, etc.
+                     2. nm Structure : Device scale imaging
+
+
+                                          FCMN 2024                  © 2024 Rigaku Corporation. All rights reserved   3
+X-ray Diffraction/Reflectivity/Topography
+
+
+
+
+                   FCMN 2024   © 2024 Rigaku Corporation. All rights reserved   4
+     Conventional High-Resolution X-ray Diffraction
+                                                                                   6                                  Si Substarate
+                         Sample                                                  10
+
+                                                                                                                    #1
+                                                                                   5                                #2
+                                                                                 10
+                                                                                                                    #3
+                                                                                                                    #4
+
+X-ray                                                                              4             SiGe
+                                                   X-ray
+
+
+
+
+                                                             Intensity I / cps
+                                                                                 10
+
+source    Collimator                 Analyzer     detector
+                                                                                   3
+                                                                                 10
+
+
+
+
+                                  Bulk Si                                        10
+                                                                                   2
+
+
+         Specimen
+                        #1      #2       #3      #4
+                                                                                   1
+                                                                                 10
+          Si (nm)      12.54   23.06   12.07    22.90
+           SiGe        Thick   Thick    Thick   Thick                            10
+                                                                                   0
+
+                                                                                   68.2   68.4    68.6       68.8            69.0            69.2           69.4
+                                                                                                   Scattering angle 2θ / deg
+
+
+  Parallel beam collimator is utilized for the conventional high-resolution X-ray diffraction
+  and large analysis area is required for obtaining reasonable X-ray intensity.
+                                                         FCMN 2024                                         © 2024 Rigaku Corporation. All rights reserved          5
+High-Resolution XRD and XRR for GAA Blanket Wafer
+                     GAA Stack Scan                                                    High-intensity Rotating-anode, 9 kW X-ray source
+                                                                                                                                                 Reflectivity Profile
+
+                                                                              XRR Scan                                                                                                     Measurement
+                                                                                                                                                                                           Calculation
+                                                                                                                        1.0 x 10-1
+
+
+
+
+                                                                                            Reflectivity (normalized)
+                                                                                                                        1.0 x 10-3
+
+
+
+
+                                                                                                                        1.0 x 10-5
+
+
+
+
+                                                                                                                                     1   2   3                   4              5            6
+
+
+                                                 Scan time 12 min                                                                                     2-theta (deg)
+
+Layer
+No.
+       Materials
+                   Thickness
+                     (nm)
+                               sigma
+                                (nm)
+                                       Materials
+                                                   Concentration
+                                                      Ge(%)
+                                                                   sigma
+                                                                    (%)
+                                                                                 RSM Scan
+11         Si        1.652     0.001
+10         Si       16.567     0.001
+ 9    Si(1-x)Ge(x)   9.871     0.001   Ge conc        28.09%       0.04%
+ 8         Si       10.074     0.002
+ 7    Si(1-x)Ge(x)   9.740     0.001   Ge conc        28.46%       0.04%
+ 6         Si        9.716     0.002
+ 5    Si(1-x)Ge(x)   9.349     0.001   Ge conc        28.62%       0.03%
+ 4         Si        9.837     0.009                                                                                                                                                              Scan time 10 min
+ 3    Si(1-x)Ge(x)   8.993     0.001   Ge conc        28.99%       0.03%
+ 2         Si        9.405     0.002
+ 1    Si(1-x)Ge(x)   9.574     0.001   Ge conc        27.67%       0.04%
+                                                                                  RSM/off-specular scans can assess quality and
+ 0        Sub                                                                     strain/relaxation
+                                                                           FCMN 2024                                                                                 © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED   6
+    High-Resolution X-ray Diffraction for Small Area
+                                                                                                      Measurement
+        Micro Focus High-Resolution XRD                                                               Calculation
+
+
+                 Hybrid mirror                                                            Si1-xGex
+
+
+
+
+                                                              Intensity (count)
+Multilayer mirror         Curved Crystal
+                                            Converged beam
+
+
+
+                                                2D detector                                                      Si Substrate
+  X-ray Source
+                                            Irradiated area
+                             Sample wafer   50 µm square                                      Deviation D (deg)
+                                                                                            Thickness t = 96.61 nm
+  Convergent beam enable to measure diffraction pattern of                                       x = 23.25 %
+  epitaxial layer in small area at once and typical measurement                                    Si1-xGex
+  time is 10 s to 100 s.                                                                              Si Substrate
+
+                                            FCMN 2024                             © 2024 Rigaku Corporation. All rights reserved   7
+                    Analysis for Multi-Stacking SiGe Layer
+
+                       Measurement
+                                                     layer     t (nm)   Ge (%)
+                       Calculation
+                                                      Si       80.68      -                                 Si
+                                                                                                         Si1-xGex
+                                                     SiGe      44.12     6.79
+Intensity (count)
+
+
+
+
+                                                                                                            Si
+                                                      Si       65.21      -                              Si1-xGex
+                                                     SiGe      16.03     4.06                               Si
+                                                                                                         Si1-xGex
+                                                      Si       94.12      -
+                                                                                                            Si
+                                                     SiGe      50.96     2.58                            Si1-xGex
+                                                      Si       17.66      -                           Si Substrate
+                                                     SiGe      32.71     6.95
+
+                      Deviation D (deg)
+                    Multi-Stacking of Si/SiGe layers can be analyzed by small area HR-XRD
+                                                   FCMN 2024                     © 2024 Rigaku Corporation. All rights reserved   8
+                 X-Ray Reflectivity (XRR) - Ultra Thin Oxide Film -
+                      0
+                 10
+
+
+                  -1
+                 10                                SiO2 :1.373 nm
+                                                   r = 2.262 g/cm3
+                                                                               Experiment
+                  -2
+                                                                               Calculated
+                 10
+                                                                                                 Incident                                            Reflected
+                  -3                                          Si                                                                                      X-Ray
+                 10
+                                                                                                  X-Ray
+Reflectivity R
+
+
+
+
+                  -4
+                 10
+
+
+                  -5
+                 10                                                                                  q                                                    q
+                  -6
+                 10
+
+
+                  -7
+                 10                                                                                                             Si
+                  -8
+                 10
+
+
+                  -9
+                                                                                                                     ! ~ 0, 5 deg
+                 10
+
+
+                                 2         4                       6      8                 10
+                                               Scattering angle / deg
+
+
+
+                          1 nm thick oxide layer could be analyzed by high-dynamic range XRR measurement
+                                                                        FCMN 2024                        © 2024 Rigaku Corporation. All rights reserved   9
+                 XRR: Structure of Thermal SiO2 Film
+Reflectivity R
+
+
+
+
+                  Scattering Angle 2q/w / deg.
+
+                 Ø Few nanometer thick SiO2 films are accurately determined
+                 Ø Higher density layers are formed on Si substrate
+                                                 FCMN 2024        © 2024 Rigaku Corporation. All rights reserved   10
+                             X-Ray Reflectivity for Metal Layers
+                                                                                           Thickness Density                Roughness
+                                                              #1 exp                         (nm)    (g/cm3)                  (nm)
+                                                              #1 cal
+                  -1
+                             Cu/Ta/TaN/SiO2/Si                #2 exp               CuO         2.73            5.2             1.45
+                 10                                           #2 cal
+                                                              #3 exp                Cu       147.74           9.053            1.17
+                                                              #3 cal          #1    Ta        10.94           15.94            0.05
+                  -2
+                 10                                                                TaN         9.33           14.52              0
+                                                                                   SiO2          -            2.20             0.423
+Reflectivity R
+
+
+
+
+                  -3
+                 10                                                                CuO         2.70            5.8             1.59
+                                                                                    Cu       146.98           9.04             0.97
+                  -4                                                          #2    Ta        14.55           16.46            0.21
+                 10
+                                                                                   TaN        10.23           14.91              0
+                                                                                   SiO2          -            2.20             0.432
+                  -5
+                 10                                                                CuO         2.79            4.3             1.25
+                                                                                    Cu       146.95           9.089            1.20
+                  -6
+                 10                                                           #3    Ta        18.88           16.34            0.427
+                                                                                   TaN         9.34           14.95              0
+                  -7                                                               SiO2          -            2.20             0.441
+                 10
+                       1.0      1.5            2.0    2.5               3.0
+                                      Angle 2θ /deg
+
+                       Top Cu oxidation layer thickness was determined by XRR measurements
+                                                            FCMN 2024                     © 2024 Rigaku Corporation. All rights reserved   11
+                        Fig. 1. Plan of the experimental arrangement.                        The m e t h o d has been applied to the s t u d y of (i),
+                                                                                          individual dislocations in nearly perfect crystals, in
+                                                                                          particular t h e variation of t h e s t r e n g t h of the dislocation
+           is a plan of the e x p e r i m e n t a l a r r a n g e m e n t . The X - r a y
+                                                                                          image w i t h t h e angle b e t w e e n Buerger's vector and re-
+           b e a m from a relatively d i s t a n t X - r a y t u b e passes t h r o u g h
+                                                                                          fleeting-plane normal. (A. R. Lang, in preparation);
+           t h e specimen crystal after appropriate horizontal a n d
+                                                                                          (ii) PendellSsung (N. K a t o & A. R. Lang, in prepara-
+           vertical limitation at t h e slit. The crystal is set so t h a t
+                      X-Ray Topography (Diffraction Imaging)
+           Bragg reflection occurs from a lattice plane m a k i n g a
+           high angle w i t h t h e face of t h e crystal slab. A fixed screen
+                                                                                          tion); (iii) diffraction effects at sub-grain boundaries
+                                                                                          (N. K a t o & A. R. Lang, in preparation); (iv) precipitates
+                                                                                          a n d inclusions in single crystals; (v) new diffraction
+           intercepts the directly t r a n s m i t t e d b e a m b u t allows t h e
+                                                                                          effectsA.inR.
+                                                                                                      quartz
+                                                                                                        Lang, and calcite;
+                                                                                                                Acta   Cryst., (vi) 12,
+                                                                                                                                    oxygen249bands    in silicon;
+                                                                                                                                                 (1959)
+         Geometry
+           Bragg-reflected    of the beam X-ray
+                                             to reach topography
+                                                            t h e film. Crystal a n d film
+           are b o t h m o t m t e d on an accurate linear traversing
+           mechanism. During t h e exposure t h e y m o v e back a n d
+           forth together Single             Crystalby arrows. The t w o - d i m e n -
+                                    as indicated
+           sional p a t t e r n appearing on t h e film is a projection of the
+         Lattice
+           crystalspacing:
+                         slab and dits imperfection    Transmitted          X-rayt h e n a m e
+                                                               content, hence
+           'projection topograph'. I t will be seen t h a t t h e projection
+           t o p o g r a p h is equivalent to       B a superimposition of m a n y
+           section topographs. Consequently t h e m a x i m u m imper-
+          2d   sinθB =d eλn s i t y atA which individual imperfections can be
+           fection
+           resolved is m u c h lower in projection topographs            Diffractedt h a n in
+           section topographs. However, t h e projection
+       Defects                                                           X-ray t o p o g r a p h
+           presents a useful survey of t h e over-all distribution of
+           imperfections.    θB A dDd i t i o n a l i n f o r m a t i o n on the imperfec-
+           tion distribution m a y be o b t a i n e d by stereo-diffraction                                                                  Si
+           microraxtiographs composed from a pair of projection
+       Incident X-ray                               C                                                                                  g : 220
+           topographs, of t h e hkl a n d hkl reflections, respectively.
+           Such stereos give a vivid t h r e e - d i m e n s i o n a l picture of t h e
+       Wavelength：λ
+           course of sub-grain boundaries or individual dislocations
+           w i t h i n t h e volume of the crystal slab.               2D-detector
+                                                                           In the author's
+           a p p a r a t u s the m a x i m u m h e i g h t of X - r a y b e a m is a b o u t
+           2½ cm. a n d t h e m a x i m    Traverse
+                                             u m length of traverse is also 2½ era.              Fig. 2. A projection topograph of dislocations in a {1 l l} slice
+           These dimensions define t h e m a x i m u m area of crystal                             of silicon, taken with a 220 reflection frown planes normal
+Individual dislocations in the entire crystal are identified
+           slab     t h a t can    be e x a m i n e d in   one    exposure.    I n practice,       to  the slice.
+                                                                                                                                                                   17"
+                                                                           FCMN 2024                              © 2024 Rigaku Corporation. All rights reserved     12
+4H-SiC 3 inches wafer Transmission Topography
+     $
+! ∶ 2202
+
+
+
+
+                                                             8 mm × 8 mm
+       SiC crystals for the industrial use still contain a lot of dislocations
+                                       FCMN 2024                 © 2024 Rigaku Corporation. All rights reserved   13
+                      Reflection Topography for 4H-SiC
+High-resolution x-ray camera （pixel size: 2.4 µm） is used for the measurements
+                                  g -1-128
+                                             Cu Ka1 (l = 1.54Å)
+ 10 µm Epitaxial layer
+                                                                               Stacking faults in
+                                             Misfit dislocation                the epitaxial layer
+        4H-SiC
+
+                   C
+
+                  B
+                  A
+
+                  B
+
+                  C
+                  B
+
+                  A
+                                                                     g -1107          8 mm x 6 mm
+                        Si atom
+                      C atom                 6 mm x 8 mm
+                                                         FCMN 2024             © 2024 Rigaku Corporation. All rights reserved   14
+Topography for Process Induced Defects in Si Wafer
+                                                                                                    g 400
+     1 mm
+
+
+
+
+Original Si wafer is dislocation free, but can be created by the device manufacturing process
+                                           FCMN 2024               © 2024 Rigaku Corporation. All rights reserved   15
+3D Visualization of Dislocations in Si Wafer
+                                                                                        g = 220
+          Dislocations are penetrating along <110> direction
+                                                                                1 mm
+                                                                                  1 mm
+
+
+
+
+g = 220                                                                  1 mm
+
+
+
+
+               Dislocations are penetrating center of wafer plate
+                                  FCMN 2024               © 2024 Rigaku Corporation. All rights reserved   16
+Small Angle X-ray Scattering (SAXS)
+ for Device Nano-pattern Analysis
+
+
+
+
+                FCMN 2024   © 2023 Rigaku Corporation. All rights reserved   17
+   Grazing Incidence X-ray Scattering (GI-SAXS)
+     Analysis for
+Surface Nanostructure
+   EUV Mask
+
+
+
+
+                                                                          f     : Sample rotation angle               f : -10°〜+10°
+                     Pillar Pattern
+
+
+                                                                                     Line & Space Pattern
+
+
+                                       Incident X-ray
+                                       l = 0.154 nm            Incident angle : a ~ 0.2°
+                                       (Cu Ka)             K. Omote, Y. Ito, and Y. Okazaki, Proc. of SPIE, 7638, 763811 (2010)
+              GI-SAXS enables to analyze surface structure for the nanoscale device patterns
+                                                   FCMN 2024                               © 2024 Rigaku Corporation. All rights reserved   19
+ult of CD/Depth/SWA
+                                                                  Nano-Imprint Mold L&S Cross-Section Profile
+                                                                                                                                                                                                                                                                                  Cross-section TEM image
+ Depth                                               10
+                                                       14
+                                                                                                           SidewallExperimentals
+                                                                                                                    angle                                              Definition of
+                                                                                                                                                                       CD/Depth/SWA                                                                          60
+                                                                    Delta SWA from TEM ave. (deg.)
+
+
+
+
+                                                       12
+                                                     10                                                                                         Calculations
+                                                                                                                                                                                                         Substrate surface
+                                                       10                                                                                                                                                                        0%
+                              Intensity /arb. unit
+
+
+
+
+                                                     10
+                                                                                                                                                                                                                                                             40
+
+
+
+
+                                                                                                                                                                                                                                                    Z (nm)
+                                                          8
+                                                     10
+                                                                                                                                                                                                                                 30%
+                                                          6                                                                                                                                                CD                                                               SAXS Result
+                                                     10
+                                                                                                                                                                                                                                 50%                         20
+                                                          4
+                                                     10                                                                                                                                                                          70%
+
+                                                     10
+                                                          2                                                                                                          SWA                                                 Depth                                0
+                                                                                                                                                                                                                                                                  0          20     40    60       80       100        120        140      160
+                                                                                                                                                                                                                                 100%
+                                                                                                                                                                                                        Quartz Substrate
+                                                          0
+                                                     10                                                                                                                                                                                                                                        Y (nm)
+pace size (nm)                                            0.0                                        0.5   1.0Space size
+                                                                                                                     1.5 (nm) 2.0
+     Difference between
+XS result                  TEM
+                          TEM
+                     Exit angle     result of CD/Depth/SWA
+                                    result
+                                β /deg
+                                                                                                                                                                                                                                                             60
+                                                              Space CD                                                                               Depth                                                   Sidewall angle                Definition of
+                                                                                                                                                                                                                                           CD/Depth/SWA
+                                                                                                                                                                                                                                                                                     SAXS Result
+                                                                                                                                                                       Delta SWA from TEM ave. (deg.)
+                                                                                                             Delta Depth from TEM ave. (nm)
+       Delta CD from TEM ave. (nm)
+
+
+
+
+                                                                                                                                                                                                                                                            40
+                                                                                                                                                                                                                                                 Substrate surface
+
+
+
+
+                                                                                                                                                                                                                                                    Z (nm)
+                                                                                                                                                                                                                                                                      0%
+
+
+                                                                                                                                                                                                                                                                      30%
+                                                                                                                                                                                                                                                   CD        20
+                                                                                                                                                                                                                                                                      50%
+
+                                                                                                                                                                                                                                                                      70%
+                                                                                                                                                                                                                                          SWA                 0Depth
+                                                                                                                                                                                                                                                                0 100% 20           40    60       80       100        120       140       160
+                                                                                                                                                                                                                                                Quartz Substrate
+                                                              Space size (nm)                                                                      Space size (nm)                                             Space size (nm)
+                                                                                                                                                                                                                                                                                               Y (nm)
+                                                                                                                                              GISAXS result                                                  TEM result
+
+                                                                                                                                                GI-SAXS results agree very well with that of cross-section TEM
+                                                                                                                                                                     E. Yamanaka, et. al., Proceedings of SPIE, 9984, 99840V, (2016)
+
+                                                                                                                                                                                                                                        FCMN 2024                                         © 2023 Rigaku Corporation. All rights reserved         20
+                                                            Nano-Imprint Mold Hole Pattern 3D-Shape
+                                        Hole Pattern
+
+                                        Y
+
+
+                              Z                        X
+
+
+                                  0.8                               X-Y plane
+                                  0.7
+ Scattering vector QY (nm )
+-1
+
+
+
+
+                                  0.6
+                                  0.5
+                                  0.4
+                                  0.3
+                                  0.2
+                                  0.1
+                                  0.0
+                              -0.1
+                                            0.0       0.2     0.4     0.6        0.8
+                                                                            -1
+                                                  Scattering vector QX (nm )
+
+
+                                            GI-SAXS can also analyzed three-dimensional structure of hole patterns
+                                              and the results agree very well with that observed by SEM and TEM
+                                                                                       FCMN 2024                © 2024 Rigaku Corporation. All rights reserved   21
+Nano-Imprint      Mold Hole Pattern SAXS vs. SEM & TEM
+ Comparison of Profiles
+                                                                                                                             Photomask Japan 2017 9g-1
+
+                                                                                                                                                   11
+                                                                                                                                                           Linearity with SEM & TEM
+                                                                                                                                    GISAXS
+   The profile of GISAXS was overlapped on                                                                                          SEM
+                                                                                                                                                                                 160
+                                                                                                                                                                                            Linearity of hole diameter
+   that of SEM & TEM.                                                                                                               TEM                                          140            X - direction
+                                                                                                                                                                                                Y - direction
+                                                                                                                                                                                 120
+
+
+
+
+                                                                                                                                                         CD-SAXS (nm)
+   sample
+    name
+                       A                    B                    C                   D                    E                            F                                         100
+        80Y                        80                   80                   80                   80                   80                                                         80
+        60                         60                   60                   60                   60                   60
+                                                                                                                                                                                  60
+        40                         40                   40                   40                   40                   40
+ with SEM
+
+
+
+
+                                                                                                                                                                                                     y = -1.801 + 1.013 x
+ top-view
+
+
+
+
+        20                         20                   20                   20                   20                   20                                                         40                   2
+                                                                                                                                                                                                     R = 0.999
+   Y [nm]
+
+
+
+
+                          Y [nm]
+
+
+
+
+                                               Y [nm]
+
+
+
+
+                                                                                         Y [nm]
+
+
+
+
+                                                                                                              Y [nm]
+         0                          0                    0          Y [nm]    0                    0                    0                                                         20
+       -20                         -20                  -20                  -20                  -20                  -20                                                                   40        80         120        160
+       -40                         -40                  -40                  -40                  -40                  -40                                                                           SEM (nm)
+       -60                         -60                  -60                  -60                  -60                  -60                                                        50
+       -80                     -80                  -80                  -80                  -80                  -80                             X                                        Linearity of hole depth
+         0 -40 -20 0          20 040
+                                   -40 -20 0       20 040
+                                                        -40 -20 0       20 040
+                                                                             -40 -20 0            -40 -20 0
+                                                                                             20 040               20 040
+                                                                                                                       -40 -20 0           20 40
+ side-view
+ with TEM
+
+
+
+
+                                                                                                                                                                                  45
+       -20         X [nm] -20            X [nm] -20           X [nm] -20           X [nm] -20           X [nm] -20                  X [nm]
+    Z [nm]
+
+
+
+
+                                                                                                                                                                  CD-SAXS (nm)
+                                                                    Z [nm]
+                                               Z [nm]
+
+
+
+
+                                                                                         Z [nm]
+
+
+
+
+                                                                                                              Z [nm]
+                          Z [nm]
+
+
+
+
+       -40                         -40                  -40                  -40                  -40                  -40                                                        40
+       -60                -60              -60              -60              -60              -60
+
+                                   Good agreements are obtained
+              -40 -20 0 20 40 -40 -20 0 20 40  -40 -20  0 20  40-40 -20  0 20  40-40 -20  0 20  40-40 -20 0 20 40                                                                 35
+         Z
+                   X [nm]           X [nm]           X [nm]           X [nm]           X [nm]           X [nm] 20nm
+                                   in each of the profiles.                                                                                                                       30                 y = -1.510 + 1.023 x
+                                                                                                                                                                                                       2
+                                                                                                                                                                                                     R = 0.998
+ GI-SAXS results agree very well with that of SEM and cross-section TEM                                                                                                           25
+                                                                                                                                                                                       25       30    35     40         45   50
+                                                               K. Hagihara, et. al., Proceedings of SPIE, 10451, 104510H (2017)                                                                      TEM (nm)
+
+                                                                                                        FCMN 2024                                               © 2024 Rigaku Corporation. All rights reserved                     22
+DRAM,3D NAND
+                 Transmission X-ray Scattering (T-SAXS)
+
+                     Analysis for HAR (High Aspect Ratio) Structures
+                                             2D-Detector
+         2D-Detector
+
+    !!
+                  scattered X-ray
+           !"
+    !#
+                 '
+                       Q
+      HAR
+      Wafer
+     Sample
+
+
+
+         Incident X-ray
+            17.5 keV
+                  T-SAXS enables to analyze HAR structure for the process wafers as is
+                                                FCMN 2024               © 2024 Rigaku Corporation. All rights reserved   23
+              Shape Modeling for HAR Hole Structure
+                                                                            Y                        RY
+•   The X-Y cross-sectional shape of the hole was represented with                X        LY
+                                                                                                              RX
+    “Koban model”.
+         Parameters: Koban parameter RX/LX (RY/LY)                                    LX
+•   The structure in the depth direction of the hole was represented                                                      “Koban”
+    by stacking of a number of thin layers.                                     "X⁄#X = 0.5 -> ellipse                    Japanese oval gold
+                                                                                                                          coin in Edo period
+          Parameters: diameter, center line shift, thickness, etc.              "X⁄#X = 0.0 -> rectangular
+
+             &                                                                     Stacked layer structure schematic diagram
+                                  *+ ,!-.,"/.,#0$                                               X or Y
+    !" (#) = & ' (" )# , +, , -                     .+., ∆)#                                                                    Diameter
+
+            #$% ',)                                                                         Z
+                                                                                                     Center line        Thickness
+                                                     8                                               shift
+                                                                 9      9
+    0 # = 11 2 2 !" # !3 ∗ # - *+ 56 7%*7&          & - *+ 56 :%*:&
+                                                    ",3$%                                                                                         Depth
+                                                         ' ( )     '"(")"
+                                                    ;<= ! *! ! ;<=
+         = 11 2 2 !" # !3 ∗ # - *+ 56 7%*7&                (!)!
+                                                                      *
+                                                                   (")"
+                                                       ;<= * ;<= *
+
+
+
+Free slicing for the HAR structure is used and analyzing without any specific models of the hole structure
+                                                            FCMN 2024                            © 2024 Rigaku Corporation. All rights reserved       24
+                                                      Example of HAR Structure Analysis by SAXS
+                                                    Qz-Scattering Pattern
+                                           63                             QZ-direction
+                                                                                                                                 10 Red line indicates
+                                                                                                                                      6
+                                                                                                                                               Q -direction
+                                                                                                                                                               the50obtained profile to optimize measured
+                                                                                                                                                                                           R
+                                         10
+                                                                                                                                 10 and calculated          scattering intensity.
+                                                                          Dot lines : Obs.                                            5
+                                                                                                                                                   Obs.
+                                           60                             Solid lines : Calc.                                                      Calc.
+                                         10                                                                                                                       40
+
+
+
+
+                                                                                                  Intensity (counts)
+                                           57
+
+
+
+
+                                                                                                                                                                                                              Diameter (nm)
+                                         10                                                                                           4
+
+                                         10
+                                           54
+                                                                                                                                 10
+                                                                                                                                                                                               Site A                              30                                                                                 Site B
+                                                                                                                                      3
+                                           51                                                                                    10                                                                                                                                                                       0
+                                         10                                                                                                                                      0
+                                           48
+                                                                                                                                                                                                                                   20
+                                                                                                                                      2
+                                         10                                                                                      10
+                                           45                                                                                                                                                                                                                                                           -200
+                 Intensity (arb. Unit)
+
+
+
+
+                                         10                                                                                           1                                      -200                                                  10        Diameter
+
+
+
+
+                                                                                                                                                                                                                                                                         Depth from the surface (nm)
+                                           42                                                                                    10                                                                                                              X-direction
+
+
+
+
+                                                                                                                                             Depth from the surface (nm)
+                                         10                                                                                                                                                                                                      Y-direction
+                                           39                                                                                         0                                                                                                                                                                 -400
+                                                                                                                                                                             -400
+Intensity (arb. unit)
+
+
+
+
+                                         10                                                                                      10                                                                                                 0
+                                           36                                                                                         0.0   0.2                            0.4   0.6     0.8   1.0    1.2                                0        -400         -800   -1200
+                                         10
+                                           33                                                                                               Scattering-600
+                                                                                                                                                       vector QR (nm )
+                                                                                                                                                                                                -1                                                                                                      -600
+                                         10                                                                                                                                                                                                  Depth from the surface (nm)
+                                           30
+                                         10                                                                                                                                                                                                                                                             -800
+                                         10
+                                           27                                                                                                                                -800
+                                                                                                                                   0                                                                                               20
+                                           24
+                                         10                                                                                                                          Cross-sectional profile                                                                                                           -1000
+                                                                                                  Depth from the surface (nm)
+
+
+
+
+                                           21                                                                                    -200                                   -1000 X-direction
+                                         10                                                                                                                                   Y-direction
+                                                                                                                                                                                                                                   10
+
+
+
+
+                                                                                                                                                                                                              Hole position (nm)
+                                         10
+                                           18                                                                                    -400                                 Center line :
+                                                                                                                                                                                                                                                                                                       -1200
+                                                                                                                                                                        -1200 X-direction
+                                           15                                                                                                                                 Y-direction
+                                         10                                                                                      -600
+                                                                                                                                                                                                                                    0
+                                                                                                                                                                                                                                                                                                                             Undulated center-line
+                                         10
+                                           12                                                                                                                                                                                                                                                          -1400
+                                                                                                                                 -800                                       -1400                                                                                                                              0      100             200            300
+                                         10
+                                              9                                                                                                                                      0         100          200                          300
+                                                                                                                                -1000
+                                                                                                                                                                                                                                   -10                                                                                     X (nm)
+                                         10
+                                              6                                                                                                                                                      X (nm)                                  Center line
+                                              3                                                                                 -1200                                                                                                            X-direction
+                                         10
+                                                                                                                                            The X-Z cross section-20profile estimated by SAXS are consistent
+                                                                                                                                                                                                                                                 Y-direction
+                                              0
+                                         10                                                                                     -1400
+                                              -0.04      -0.02    0.00      0.02
+                                                                                -1
+                                                                                           0.04                                     -30
+                                                                                                                                            with
+                                                                                                                                            -20 -10
+                                                                                                                                                    that
+                                                                                                                                                      0
+                                                                                                                                                         measured
+                                                                                                                                                         10 20 30
+                                                                                                                                                                  by 0the cross-sectional
+                                                                                                                                                                          -400 -800 -1200
+                                                                                                                                                                                          SEM as a reference.
+                                                  Site BScattering
+                                                          scattering
+                                                                   vector QZ pattern
+                                                                              (nm )                                                                                         X or Y (nm)                                                      Depth from the surface (nm)
+                                                                                                                                                                                                                            Yoshiyasu Ito, et. al., Japanese Journal of Applied Physics, 62, 046501 (2023).
+
+                                                                                                                                                                                                     FCMN 2024                                                                                                     © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED   25
+of the CD proﬁles measured by T-SAXS and STEM. (a) CD proﬁles of the measured hole by T-SAXS and STEM. (b) Linear regression
+
+                    Precise Analysis for The Hole Shape by SAXS
+ured by T-SAXS and STEM.
+
+          (a)
+                                                                                                                                                    Hole depth shape                     Hole 3D shape
+                                          STEM Image                                                                                           0 Middle
+                                                                                                                                                    TEM
+                                                                                                                                                        X-direction
+
+
+
+
+                                                                                                  Depth from the surface (nm)
+                                                                                                                                                        Y-direction
+                                                                                                                                                    T-SAXS
+                                                                                                                                                        X-direction
+                                                                                                                                                        Y-direction
+
+
+
+
+                                                                                                                                Depth / nm
+                                                                                                                                             2000
+
+          (b)                                         SAXS
+
+
+                               Round/Diameter
+                                                                                                                                             4000
+
+                                                                                                                                                     40 60 80 100 120 140
+                                                                                                                                                           Diamiter (nm)
+                Similar result with TEM was observed for cross sectional shape                Rieko Suenaga, et. al., Japanese Journal of Applied Physics, 62, 096502 (2023).
+ of the hole XY cross-section measured by T-SAXS and STEM. (a) Hole XY cross-sectional shape in each depth measured by T-SAXS
+ew STEM images. (b) RX/LX plot along to depth measured by T-SAXS and STEM.
+       X-ray scattering is superior to analyze average structure with 0.1 nm resolution, non-destructively, but not
+       good for detecting local defects.   Therefore, it is strongly demanded a metrology to observe local defects.
+                                        4) J. W. Park et al., 2021 IEEE Int. Solid- State Circuits Conf. (ISSCC), 2021,
+ation techniques for semiconductor devices                p. 422, 10.1109/ISSCC42613.2021.9365809.
+                                                                                                                                                                                                                            26
+                                                                                      FCMN 2024                                                                            © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED
+                                                       5) H. Xiao, 3D IC Devices, Technologies, and Manufacturing (SPIE Press,
+                                                          Bellingham, Washington, USA, 2016), 10.1117/3.2234473.
+                                                       6) IRDS, (2022), more Moore - IEEE., Available at: https://irds.ieee.org/
+                                                          images/ﬁles/pdf/2022/2022IRDS_MM.pdf (accessed July 03, 2023).
+ https://orcid.org/0009-0002-3310-6605                 7) T. Lill, Presented at Flash Mem. Summit, (2017) https://www.ﬂashme-
+                                                          morysummit.com/English/Collaterals/Proceedings/2017/
+X-ray Imaging
+
+
+
+
+     FCMN 2024   © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED   27
+Needs for Visualization of Buried Metal Structure
+                                                                                   Optical lens   Scintillator
+           TSV (Through-Si Via)
+
+
+
+
+                                                                Visible light
+                                                                 Detector
+                                                                                 Light
+                                                                                                                 High-brightness rotating
+                                                                                                   Sample
+                                                                                                                 anode X-ray source (1.2 kW)
+                                                                      High-res. X-ray camera
+     https://www.inrevium.com/pickup/tsv/#03                          〜 0.2 µm/pixel
+
+
+      Measurement geometry                                                             X-ray projection images for TSVs
+          5 mm                                     45
+                                                     de
+                                                       g
+   Top side
+                              TSV                          X-ray
+                                        100 µm             Mo Target
+   Bottom side
+
+                                               775 µm
+Cu TSV projection image
+                                                                                         Cu filling structures are clearly visible
+                                                                           FCMN 2024                                   © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED   28
+Developing Reflective Imaging Lens for Hard X-Ray
+       X-ray imaging lens                    17.5 keV (Mo Ka)                         12.1 nm/pixel
+
+
+
+
+   Advanced Wolter type KB mirror
+         for 17.5 keV X-ray
+
+
+
+
+                                             50 nm Star Chart (Ta t 500 nm)
+         Hard X-ray nanoscale imaging system in laboratory is realized by utilizing
+                     reflective lens and High-brightness X-ray source
+                                          FCMN 2024                           © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED   29
+          Nanometer Resolution Hard X-Ray Imaging in Lab
+                             Vacuum path
+
+
+
+
+               Vacuum path
+                                           X-ray lens                              X-ray source
+
+
+                                                                       Condenser
+
+X-ray camera                                        Sample
+
+
+
+
+                                                        X-ray source
+
+
+
+
+                               Sample                             Imaging lens
+
+                                                                                                  200 nm holes
+     Mo Ka
+      X-ray                         200 nm holes
+                                     (t 500 nm Ta)
+                                                                                                  Nano-scale metal structure
+                                                                                                  can be visualized
+               Si substrate (t 775 µm)
+
+ We can measure nanoscale metal structure
+ without destroying Si substrate
+                                                                                                   FCMN 2024                   © 20234RIGAKU CORPORATION. ALL RIGHTS RESERVED   30
+                      Future Challenges
+Ø X-ray Diffraction/Scattering
+
+     ü Measurement for thinner film crystallinity, more complex film characterization, e.g.
+       GAA
+     ü Higher sensitivity for crystal distortion and identification of the defect species
+     ü Shorter footprint for Grazing Incidence SAXS
+     ü More accurate shape analysis for HAR structures by Transmission SAXS
+
+
+Ø X-ray Imaging
+     ü Higher resolution and shorter exposer time
+
+
+
+Continuing improvements for X-ray sources, optics, and detectors are the key!
+
+                                         FCMN 2024                      © 2024 RIGAKU CORPORATION. ALL RIGHTS RESERVED   31
+

@@ -1,0 +1,969 @@
+
+
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+
+Submit
+
+Subscribe
+
+Home
+
+Systems & Design
+
+Low Power - High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Special Reports
+
+Business & Startups
+
+Jobs
+
+Knowledge Center
+
+Technical Papers 
+
+Home
+';
+
+AI/ML/DL
+Architectures
+Automotive/ Aerospace
+Communication/Data Movement
+Design & Verification
+Lithography
+Manufacturing
+Materials
+Memory
+Optoelectronics / Photonics
+Packaging
+Power & Performance
+Quantum
+Security
+Test, Measurement, Analytics tech papers
+Transistors
+Z-End Applications
+
+Events & Webinars 
+
+Events
+
+Webinars
+
+Videos & Research 
+
+Videos
+
+Industry Research
+
+Newsletters & Store 
+
+Newsletters
+
+Store
+
+MENU 
+
+Home
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Performance
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Knowledge Center
+
+Videos
+
+Startup Corner
+
+Business & Startups
+
+Jobs
+
+Technical Papers 
+
+Events
+
+Webinars
+
+Industry Research
+
+Newsletters 
+
+Store 
+
+Special Reports
+
+Home
+ >
+
+Test, Measurement & Analytics
+ >
+                                                                Shrinking Hybrid Bonding Pitches Push Inspection Limits                                                    
+
+Test, Measurement & Analytics
+
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+
+Existing inspection tools struggle to capture defects, especially those hidden at the bond interface.
+
+								November 10th, 2026 - 
+
+								By: 
+Laura Peters
+
+Key Takeaways:
+
+As interconnect pitches between hybrid bonds approach 5 µm and below, 50 nm particles and surface contamination, as well as nanometer-scale topography variation, can cause bonding failures. Inspection tools must distinguish yield-killing defects from harmless variations.
+
+Pre-bond surface planarity and cleanliness are critical to yield. CMP must control copper recess to just a few nanometers while minimizing roughness, scratches, and particles. Chip manufacturers turn to optical inspection, interferometry, AFM, and atomic force profilometry to characterize local and wafer-scale topography.
+
+Detecting buried defects after bonding remains one of the most significant challenges. Infrared, X-ray, and acoustic imaging can identify voids, delamination, and alignment errors, but each has limitations in resolution, sensitivity, penetration depth, or throughput.
+
+Hybrid bonding represents a paradigm shift in advanced packaging, replacing 35 µm off-chip microbumps with 10 µm pitch or smaller pad-to-pad interconnects on-chip. It can be used to join silicon-to-silicon, as in DRAM-DRAM bonding in future HBM devices, or even disparate materials like GaN-on-silicon.
+
+This elegant process, which is available on wafer-to-wafer or die-to-wafer platforms, reduces signal delay to negligible levels while enabling smaller, thinner packages with unmatched memory/processor speeds and bandwidth. It also consumes significantly less power.
+
+Hybrid bonding’s success depends on the performance of advanced bonding equipment, as well as metrology’s ability to verify critical alignment, cleanliness, planarity, and surface properties — both before and after bonding. Solving these challenges is proving essential to realizing the vision of true 3D integration at the bonded-chip level.
+
+But as hybrid bonding pitches continue to scale down below today’s production levels of 4 to 9 µm, some inspection and metrology methods are struggling to meet the spatial resolution and sensitivity needed to catch all relevant defect types, especially ones buried at the bond interface. Particles, voids, overlay errors, roughness, CMP defects, and warpage threaten the bond quality between chips. Even a single particle can delaminate the top wafer from the one below, resulting in catastrophic failure.
+
+At times, conventional metrology fails to differentiate a killer defect from minor topographical variation. A handful of tools, including non-destructive optical, IR, X-ray, profilometry, AFM, and acoustic inspection tools, are working to resolve critical defects smaller than 100 nm. These are some of the most stringent requirements ever imposed on a semiconductor process.
+
+“Particles and surface contamination are among the most critical defects in hybrid bonding, as they can prevent contact between bonding surfaces and lead to the formation of voids,” said Burhan Ali, product marketing director at 
+Onto Innovation
+. “Smaller interconnect pitches reduce the tolerance for defects, making even nanoscale particles capable of causing bonding voids. For leading-edge hybrid bonding processes, defect size requirements can be as low as 50 nm.”
+
+Cracks and delamination can be particularly insidious problems, especially in the early stages of process development, but also in full-scale production. “For cracks and delamination, acoustic micro-imaging (AMI) using ultrasound in the 200MHz range provides the highest resolution,” said Bryan Schackmuth, AMI product manager at 
+Nordson Test & Inspection
+.
+ “Ultrasound does not travel through air gaps that have a thickness down to about 0.1 µm.  If a crack or delamination is around the 5 µm to 10 µm size (x and y) and is at least 0.1 µm thick (z), there is a good chance that it can be detected with acoustic micro-imaging.”
+
+Figure 1, below, shows some of the most challenging defects to capture.
+
+Fig. 1: Hybrid bonding defects and the methods used to capture them. Source: Laura Peters/Semiconductor Engineering
+
+Four pivotal steps
+
+The performance and reliability of hybrid bonds largely depend on the precision and across-wafer uniformity of the four main processes: surface planarization, surface activation, precision alignment, and thermal bonding.
+
+Chemical-mechanical polishing (CMP), which combines mechanical and chemical removal, must achieve nanometer-scale control of surface topography and copper-pad recess, with negligible surface roughness (0.5nm RMS). Otherwise, dielectric-to-dielectric voids can form during bonding.
+
+Wafer-to-wafer hybrid bonding begins with the wafer processed to the final BEOL interconnect level. Next, a suitable dielectric (either SiCN or SiO
+2
+) is deposited and then etched to create vias to the metal below. The vias are then filled with barrier and copper seed layers followed by copper plating. Copper pads are typically square. Copper CMP then polishes the overburden to provide a slight dishing (several nm) below the planar feature. That minuscule gap will be filled when the copper expands during annealing. Next, wafer cleaning removes all contaminants.
+
+The plasma activation step is designed to create an optimized bonding surface with many dangling Si-O
+–
+ bonds. This is followed by a DI water rinse to hydrate the dielectric.  The bonding process involves very fine alignment followed by face-to-face (or face-to-back) bonding of a second wafer to the first wafer processed in a similar manner. The wafer pair is brought into intimate contact to form the initial bond, followed by furnace annealing at 350°C for two hours to expand the copper and form permanent Cu-Cu and dielectric-dielectric bonds.
+
+Pre-bond inspection
+
+Prior to bonding, CMP needs to be fine-tuned to provide a flat dielectric surface with a specific run-off profile at the wafer edge. Improper edge roll-off can distort alignment marks, leading to poor contact or voids, which compromise bond strength. The roll-off region must be perfectly smooth and free of microcracks, scratches, or handling damage.
+
+Before micro-inspections, a full-wafer macro-inspection is often performed to catch scratches, large particles, or wafer edge damage. Macro-inspection complements micro-inspection findings and creates a detailed wafer map for every wafer in the lot. Scanning of every single wafer provides the necessary record-keeping for mission-critical devices.
+
+“By inspecting 100% of the wafers at each mask level, our macro-inspection tool provides a great complement to the micro-inspection tools on the market,” said Errol Akomer, applications director at 
+Microtronic
+. “Because they’re slow, they typically only sample each lot, looking at maybe two to five wafers per lot, so in many cases, they’re missing some really big defects that could affect the long-term reliability of the chips. In some applications, like data centers or aerospace, the customers may select only the best chips that come out of the lot. They don’t use the marginal ones that we like to call the walking wounded.”
+
+After cleaning, automated optical inspection (AOI) is usually performed using brightfield and darkfield modes. Darkfield inspection, which collects scattered light from defects, is particularly effective for particles and scratches, while brightfield, which collects reflected light, is useful for isolating residual material like slurry, pattern defects, and topographical surface damage.
+
+Fig. 2: Submicron defects prior to hybrid bonding must be accurately classified to distinguish nuisance defects from killer defects. Source: Onto Innovation 
+
+Topographical variations, both local and global, affect bondability. “In advanced processes, localized topography can be more yield-critical, but both global and localized height variations are important in hybrid bonding because they create different process failure mechanisms,” explained Maruko Wu, senior director of product marketing at Onto Innovation. “Interferometric technologies are generally applicable to measure wafer-level or die-level planarity, while OCD (optical CD) and AFM (atomic force microscope) are the best approaches for enabling extremely fine control of just a few nanometers of local height variations. White-light or phase-shifting interferometry, as well as AFM, are used to measure copper recess levels.”
+
+White-light or phase-shifting interferometry tools are provided by Bruker, KLA, Onto Innovation, and Zygo, and some companies offer double-sided inspection systems.
+
+“Pre-bond defect inspection is commonly performed using advanced optical inspection systems, which offer high-throughput, full-wafer inspection capabilities, and can detect surface defects and particles with high sensitivity,” said Ali. The details of copper pad morphology require AFMs. “Surface roughness and copper pad topography are typically characterized using AFM, which provides nanometer- to sub-nanometer-scale resolution for accurate measurement of surface features such as roughness, dishing, and protrusion.”
+
+AFMs are finding increasing application in the hybrid bonding process, particularly when just one or two nanometers of material can make a significant difference in determining whether the copper-copper pads fuse together during annealing. After CMP, the copper pads are recessed just 2 nm to 5 nm below the dielectric. Process control needs to keep this specified thickness within 2 nm across the wafer.
+
+Both AFM and atomic force profilometry (AFP) are critical for surface characterization and process optimization. AFM delivers localized, high-resolution surface measurements of recess depth while illuminating pad divots or protrusions (see figure 3). AFP provides complementary large-area topography scans spanning nanometer-scale features to full wafer dimensions, including the bevel edge. AFP can reveal excessive topography at different points across a 33 × 26 mm large-area scan (see Figure 4), even when local AFM scans confirm in-spec dielectric roughness and copper pad recess. AFP is also a useful tool for monitoring wafer edge roll-off.
+
+Fig. 3: AFM topography scans after three different CMP steps produce different recess depths. Source: Bruker
+
+Fig. 4: Atomic force profilometry shows out-of-spec topography, despite earlier AFMs that indicated in-specification copper recess and roughness. Source: Bruker
+
+During process development and manufacturing, failure analysis of individual bonds may be performed. “We are currently focused on failure analysis and three-dimensional (3D) imaging of existing bonds and potential identification of failed bonds,” said Thomas Rodgers, senior director of market strategy at Zeiss Microscopy. “Though it is outside our application scope, we are often asked to detect voids in the hybrid copper bonding interconnect, which can give insights into reliability and potential failure points.”
+
+The company is also taking a novel approach to solving topographical issues in hybrid bonding. “Our colleagues in the Zeiss Semiconductor Manufacturing Technology business unit developed a solution for measuring and correcting surface planarity by inducing local strain in the wafer prior to backside thinning. We see increasing market interest in this solution, especially as hybrid copper bonding is used on multi-layer stacked die devices such as those seen in high bandwidth memory,” said Rodgers.
+
+Post-bond metrology
+
+After bonding, IR metrology tools verify alignment between the top and bottom copper pads because the infrared beam can penetrate the silicon. Just as too much copper recess on the pads can cause problems, too little recess can, too. “Excessive copper dishing or protrusion can hinder proper Cu-Cu and dielectric-to-dielectric bonding, resulting in degraded electrical connectivity and reduced bond yield. Likewise, elevated surface roughness reduces the effective contact area between bonding surfaces, leading to lower bond strength and increased risk of bonding defects,” said Ali.
+
+“Alignment also can be measured using 3D X-ray, both in classical computed tomography (CT) and laminography modes, giving a clear picture of the alignment and any overlay errors. We have shown some excellent results here with our tool,” said Rodgers.
+
+For post-bonding, many engineers are turning to high-resolution X-ray imaging to inspect the bond interface, especially during early stages of process development. Advanced X-ray methods, such as laminography, enable 3D submicron inspection and defect quantification, aiding process optimization and failure analysis. High-resolution X-ray imaging is an essential technique for developing and analyzing the failure of hybrid bonds. A resolution of 150 nm has been demonstrated. [1]
+
+“XRDI tends to be used for fully automated leading-edge wafer processing where the process steps can be more aggressive, and the cost of wafer loss and disruption to the line is more significant,” said John Wall, site manager at 
+Bruker
+ JV UK. “We can detect subsurface critical defects on patterned/metalized wafers with zero edge exclusion. Full wafer inspection can be performed at ~20wph, thus enabling in-line/at-line inspection for these critical defects.”
+
+“When it comes to detecting cracks, delamination, and warpage, 3D X-ray is the tool of choice,” said Rodgers. “Our systems can show warpage and planarity of the bonds, while providing 3D image of cracks and voids without physically cutting the sample. Ultimately, this is used for localizing such defects.”
+
+Acoustic microscopy, widely used to detect voids in microbumps, is now being applied to hybrid-bonded wafer stacks. “Currently, acoustic micro imaging (AMI) inspection is done after the device is fully assembled,” said Schackmuth. “With traditional microbumps, the pitch of 20µm to 40µm would normally become the critical defect size for a delamination or void. Hybrid bonding’s pitch in the 5µm to 10µm range drives the need for higher resolution capabilities in the AMI inspection.”
+
+In acoustic imaging, the resolution is a function of the transducer’s wavelength, but at higher frequencies, the acoustic signal has shallower penetration. Higher frequencies can improve lateral resolution to distinguish two closely spaced voids and detect smaller voids, provided the signal-to-noise ratio is acceptable.
+
+Schackmuth described the differences between resolving and detecting voids with AMI. “We can go up to our 165 MHz transducer, which gets you down to a resolution of 12 microns. But there’s resolution and detection. So if you had a 12-micron defect, 165 MHz could measure it accurately. But if you had a 5-micron defect, we could detect it, but not measure it accurately. So we’re in the process of developing higher frequency transducers to improve that resolution.”
+
+Conclusion
+
+Hybrid bonding is enabling denser, faster, and more power-efficient 3D semiconductor integration, but shrinking interconnect pitches are placing extraordinary demands on inspection and metrology. Particles, surface contamination, copper dishing, roughness, alignment errors, and buried voids can compromise bond quality, electrical performance, and long-term reliability.
+
+To address these issues, manufacturers are combining optical inspection, interferometry, SEM, AFM, X-ray imaging, and acoustic microscopy to characterize bonding surfaces before assembly and detect hidden defects afterward. Yet no single technique provides the resolution, sensitivity, wafer coverage, and throughput required to identify every yield-critical defect.
+
+As hybrid bonding scales toward finer pitches, the central challenge is developing faster, more sensitive, and complementary metrology methods that can distinguish yield-killing defects from harmless variations while also supporting high-volume manufacturing.
+
+Reference
+
+Dreier, D. Nilsson and S. Tanaka, “High-Resolution 3D X-Ray Imaging of Hybrid Bonding,” 2026 International Conference on Electronics Packaging and Hybrid Bonding Symposium (ICEP-HBS), Hiroshima, Japan, 2026, pp. 267-268, doi: 10.23919/ICEP-HBS69241.2026.11550690.
+
+Related Articles
+
+Metrology Under Pressure: Detecting Defects In Fine-Pitch Hybrid Bonding
+
+Shrinking interconnects expose limitations in traditional inspection methods, forcing new approaches to overlay, surface quality, and defect detection.
+
+Catching Critical Defects In TSVs And Stacked Chips
+
+Variation is a bigger problem in advanced packages with multiple chiplets; AI can help.
+
+Detecting Slips, Scratches, Cracks In Wafers And Dies Becoming Harder
+
+Finding skinny defects requires a range of wavelengths.
+
+ Tags:
+
+3D integration
+
+3D X-ray
+
+acoustic imaging
+
+AFM
+
+AOI
+
+atomic force microscope
+
+atomic force profilometry (AFP)
+
+brightfield inspection
+
+Bruker
+
+CMP
+
+darkfield inspection
+
+defects
+
+delamination
+
+hybrid bonding
+
+interferometry
+
+KLA
+
+Microtronic
+
+Nordson Test & Inspection
+
+OCD
+
+Onto Innovation
+
+particles
+
+planarity
+
+voids
+
+warpage
+
+X-ray laminography
+
+XRDI
+
+ZEISS Microscopy
+
+Zygo
+
+Laura Peters 
+
+(all posts)
+
+							Laura Peters is senior executive editor for manufacturing and test at Semiconductor Engineering.
+
+1 comments
+
+Masahiko
+
+says:
+
+November 11, 2026 at 10:27 pm
+
+Another kind of Cu pad height distribution metrology technique is proposed at SPIE advanced lithography conference 2026.  “High-precision Cu pad height measurement using quad-detector SEM signals for hybrid bonding”.  Cool way!
+
+Reply
+
+Leave a Reply 
+Cancel reply
+Comment 
+*
+
+Name
+*
+(Note: This name will be displayed publicly)
+
+Email
+*
+(This will not be displayed publicly) 
+
+Notify me of follow-up comments by email.
+
+Notify me of new posts by email.
+
+Δ
+
+Technical Papers
+
+Defect-Aware Chiplet Matching For Heterogeneous Integration Yield (ASU, Ampere)
+
+November 17, 2026
+
+by Technical Paper Link
+Backside Clock Mesh Reduces Skew And Power In Backside Power Delivery (KAIST)
+
+November 17, 2026
+
+by Technical Paper Link
+Self-Supervised Virtual Metrology For CMP MRR Prediction (SUTD, A*STAR, NUS)
+
+November 16, 2026
+
+by Technical Paper Link
+Reducing High-Bandwidth Flash Latency In GPU Systems (Georgia Tech, Nvidia, Stanford)
+
+November 16, 2026
+
+by Technical Paper Link
+Shifting HBM4 Controller Functions Closer To Memory (UC Riverside)
+
+November 13, 2026
+
+by Technical Paper Link
+
+Knowledge Centers 
+Entities, people and technologies explored
+
+Learn More
+
+Related Articles
+
+AI Agent Orchestration For ASIC Autonomy
+
+								How to achieve a 10X productivity improvement using AI agents.
+
+by 
+Ed Sperling
+
+Self-Driving Cars Have An Aging Problem
+
+								AI workloads are pushing automotive sensors harder, forcing engineers to rethink how long safety-critical systems can be trusted.
+
+by 
+Brendan Heffernan
+
+Chip Industry Week In Review
+
+								DAC's big buzz; CHIPS Act $; China's immersion DUV; UMC expands; SIA's state of the industry; DRAM shortages; earnings; PCB design credential program; IBM's quantum advantage; AI security alliance; foreign robotics ban.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								2D Tunnel FET; in-memory photonic computing; India's $13.4B Semicon 2.0; SEMICON Taiwan; PCIe 6/7 test; MediaTek deal; 300mm Si photonics; InP expansion; $75M to recycle rare earths; GF PDKs; Gain-Cell RAM; edge AI developer tools;  heterogeneous HBM; safe AI in SDVs.
+
+by 
+The SE Staff
+
+Chip Industry Week In Review
+
+								Lam Research and ASE expansions; data center shifts; CPO system architecture initiative; 2D-transistor interface solution; USENIX HW security; patent suits; image sensors; programmable AI memtransistor; Nvidia's new plan; earnings; Tier IV's L4 auto chip.
+
+by 
+The SE Staff
+
+Copper’s Grip On AI Scaling Is Starting To Slip
+
+								As AI clusters push beyond rack-scale limits, optical interconnects and circuit switching are reshaping how data centers scale. 
+
+by 
+Bryon Moyer
+
+Chip Industry Week In Review
+
+								New Micron lab; chip/AI price jump; multi-die monitoring; cryo links for quantum chips; interconnect RC bottleneck; 18A win; CPO roadmap; 2 new CEOs; humanoid readiness gap; Hot Interconnects.
+
+by 
+The SE Staff
+
+Semiconductor Earnings Roundup: Revenue, Growth and Takeaways
+
+								Company-by-company breakdown: Earnings across +80 semiconductor companies show AI-driven demand extending well beyond the usual suspects.
+
+by 
+Linda Christensen
+
+Sponsors
+
+Advertise with us
+
+Advertise with us
+
+Advertise with us
+
+Newsletter Signup
+
+Popular Tags
+2.5D
+
+5G
+
+advanced packaging
+
+AI
+
+AMD
+
+ANSYS
+
+Apple
+
+Applied Materials
+
+ARM
+
+Arteris
+
+automotive
+
+business
+
+Cadence
+
+chiplets
+
+DRAM
+
+EDA
+
+EUV
+
+GlobalFoundries
+
+Google
+
+IBM
+
+imec
+
+Infineon
+
+Intel
+
+IoT
+
+IP
+
+Keysight
+
+Lam Research
+
+machine learning
+
+memory
+
+Mentor
+
+Mentor Graphics
+
+MIT
+
+Nvidia
+
+NXP
+
+Qualcomm
+
+Rambus
+
+Samsung
+
+security
+
+SEMI
+
+Siemens
+
+Siemens EDA
+
+Synopsys
+
+test
+
+TSMC
+
+verification
+
+Recent Comments
+Leah
+ on 
+Startup Funding: Q3 2026
+Masahiko
+ on 
+Shrinking Hybrid Bonding Pitches Push Inspection Limits
+Gregory Haley
+ on 
+The Hidden Cost Of Contact Resistance
+Ethan Goldstein
+ on 
+From Functional Monitoring To In-System Test: Extending Voltage-Aware Observability
+nigel
+ on 
+IBM Power Processor, This One Goes to 11
+Charlotte Hayes
+ on 
+Innovation In Data Center Design And Operations
+semihpc
+ on 
+How Will The Custom HBM Business Work?
+Servchip
+ on 
+Chip Industry Week In Review
+Patrice Canac
+ on 
+Why Heat Is Becoming A Bigger Chip Design Issue
+Eddie Huang
+ on 
+DFT In Automotive
+RISHI BHOOSHAN
+ on 
+Low-Temp Solders Are Suddenly Critical For Chiplets And Photonics
+brian piercy
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+NEGA
+ on 
+Artificial Intelligence For Industrial Applications
+Erictc
+ on 
+Advanced Packaging Fundamentals for Semiconductor Engineers: eBook
+Oliver Li
+ on 
+Photonics Fundamentals For Electronics Engineers: eBook
+Ron Lavallee
+ on 
+Intuition and AI
+Liz Allan
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Simon Davidmann
+ on 
+Multi-Agent AI Systems Must Work Like An Orchestra Without A Conductor
+Ben Zaryouh
+ on 
+Redefining Processes At Sub-2nm
+Loma Harvey
+ on 
+Chip Industry Technical Paper Roundup: Sept. 8
+Ron Lavallee
+ on 
+From Spec To Formal Properties
+delli
+ on 
+Chip Security Moves From Checkbox Compliance To Continuous Defense
+mark holdaway
+ on 
+From Spec To Formal Properties
+Viska Clanella Nugroho
+ on 
+All AI Data Center Interconnects Will Be Optical Within 5 Years
+Tom Katsioulas
+ on 
+AI: Friend And Foe For Chip Security
+Alex @ APIVALE
+ on 
+Chip Industry Week In Review
+Matt bailey
+ on 
+AI Is Rewriting The IP Playbook
+Matt bailey
+ on 
+AI Models Transform Defect Inspection And Review, But Can Fail To Scale
+Alexis R. Ware
+ on 
+Neural Network Model Quantization On Mobile
+Zack63
+ on 
+Change Is Tough
+Yağız Boz
+ on 
+EDA/SIP Revenue Up 12.7%; APAC Roars Back
+Murugavel Ganesan
+ on 
+Executive Outlook: Agentic AI’s Impact On Chip Design
+F. Chen
+ on 
+Mask Economics Shape High-NA EUV Adoption
+B.S. Deepaksubramanyan
+ on 
+Designing Chips That Can Explain Themselves
+Brian Bailey
+ on 
+Disturbance In Verification
+David Murray
+ on 
+Disturbance In Verification
+Ramesh Narayanaswamy
+ on 
+Disturbance In Verification
+Cliff Greenberg
+ on 
+Research Bits: Jun. 2
+Peter Ateshian
+ on 
+Detect, Diagnose, And Debug Using Sensors And Functional Monitoring
+Dr. Dev Gupta
+ on 
+Chip Industry Week In Review
+Ed Sperling
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+The Sub-2nm Paradox
+Jan Hoppe
+ on 
+Toward Agentic Verification
+Riko R
+ on 
+With Chiplets, What Role Does Economics Play?
+C Lytle
+ on 
+Flash Getting Stacked High-Bandwidth Version
+Saket Goyal
+ on 
+HBM Shifts Testing Left To Preserve AI Chip Yield
+Debamitro Chakraborti
+ on 
+Creating Agentic EDA Methodologies
+Wim Bakker
+ on 
+Batteries Charge To The Edge
+Ron Richter
+ on 
+TSV Complexity Leads To Manufacturing Bottleneck
+François
+ on 
+The Petabyte Problem: How AI Is Finally Making Semiconductor Manufacturing Data Actionable
+Anonymous
+ on 
+The One Bit Problem That Can Break a System
+JC Bouzigues - IROC Technologies
+ on 
+The One Bit Problem That Can Break a System
+Tom Fitzpatrick
+ on 
+All Software Is Hardware-Dependent
+Anonymous
+ on 
+Memory Wall Gets Higher
+Gregory Haley
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Matt Groves
+ on 
+A Framework That Generates Chip Layouts Directly From Natural Language Specifications (U. of Bristol, RAL)
+AICHIPS
+ on 
+How AI Will Impact Chip Design And Designers
+Martijn Fransen
+ on 
+Detecting Chemical Variability At Advanced Nodes
+Narek
+ on 
+Digital Twins: The Cloud’s The Limit
+Freelancer
+ on 
+Chip Industry Talent Shortage Drives Academic Partnerships
+Chris Riches
+ on 
+Backside Power Delivery Creates Fab Tool, Thermal Dissipation Barriers
+Jon
+ on 
+Robust Dynamic Voltage Droop Mitigation And Power Management
+Ashfaq
+ on 
+Minimum Energy Per Query
+Robert Boissy
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+Hank Walker
+ on 
+Can A Computer Science Student Be Taught To Design Hardware?
+fieke khan
+ on 
+Bump Co-Planarity And Inconsistencies Cause Yield, Reliability Issues
+Rajiv
+ on 
+Chip Industry Week in Review
+Guy van der Walt - Thermco
+ on 
+Chiplets And 3D-ICs Add New Electrical And Mechanical Challenges
+Stephen W
+ on 
+Chiplet Fundamentals For Engineers: eBook
+ShrdMem256
+ on 
+The Verification Conundrum
+Brendan McGuire
+ on 
+Wafer Probe Struggles To Adapt To Multi-Die Assemblies
+NobodyTestedThis
+ on 
+The Verification Conundrum
+Fiber Techs San Francisco
+ on 
+Agentic AI In Chip Manufacturing
+SF Fiber Techs
+ on 
+Oxides Bring Low Leakage Transistors To Leading-Edge Memories
+humic
+ on 
+Addressing Critical Tradeoffs In NPU Design
+Dr. Dev Gupta
+ on 
+Liquid Cooling Gains Traction In Data Centers
+Mikko Utriainen, Chipmetrics
+ on 
+Metrology Digs Deep To Produce Next-Generation 3D NAND
+Raymond Doerr
+ on 
+Wafer Bonding Mechanisms Using SiCN Films For Hybrid Bonding Applications In 3D Integration 
+Hoyong Lee
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Nano Banana AI
+ on 
+Blog Review: Dec. 17
+JS Paek
+ on 
+Thermal Management In 3D-IC: Modeling Hotspots, Materials, & Cooling Strategies
+Larry K
+ on 
+Chiplets Vs. Soft IP: Different In Almost Every Way
+Seceon.Inc
+ on 
+Resilient And Optimized GenAI Systems
+Linda Christensen
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+komputer
+ on 
+AI With Open And Scaled Data Sharing in IC Manufacturing (NIST)
+Sree
+ on 
+The Thermal Trap: How Dielectrics Limit Device Performance
+David Muncier
+ on 
+China GenAI: Who Will Fill The Vacuum?
+acp
+ on 
+Is There Still a Future for Hard Disk Drives?
+Carlos Borer
+ on 
+Legacy Process Nodes Going Strong
+Raj Sodhi
+ on 
+AI Meets Device Modeling: Transforming Compact Modeling With Machine Learning
+Jaynarayan Tudu
+ on 
+Semiconductor Test Faces Technology Shifts In The AI Era
+Mihai Buta
+ on 
+Why In-Memory Computation Is So Important For Edge AI
+Silver Luis
+ on 
+The Competitive Advantage Of SRAM PUF Technology
+Gretchen Patti
+ on 
+Advanced Packaging: A Key Technology For The Next Generation Of Electronics
+Ev roach
+ on 
+AI Bubble Or Boom?
+Kathleen Murphy-Weber
+ on 
+Chip Industry Week in Review
+Raz
+ on 
+Multi-Die Verification
+Paul C
+ on 
+Scaling Memory With Molybdenum
+JWS
+ on 
+Scaling Memory With Molybdenum
+Klein miller
+ on 
+Electrifying Everything: Power Moves Toward ICs
+Team at Rise Design Automation
+ on 
+What Does Semiconductor Disruption Look Like?
+masa mizuno
+ on 
+Physics Limits Interposer Line Lengths
+Lou Covey
+ on 
+What Does Semiconductor Disruption Look Like?
+Ricardo Shiroma
+ on 
+Complex Mix Of Processors At The Edge
+Cor
+ on 
+Glass Substrates Gain Momentum
+Daya Young
+ on 
+New Antennas And Advanced ICs Needed For 6G
+Subramanian Srikanteswara Iyer
+ on 
+Manufacturing At The Limits
+Doug La Tulipe
+ on 
+Coloring Optical Signals For More Bandwidth In Data Centers
+WH
+ on 
+The Hidden Cost Of Contact Resistance
+Raymond Doerr
+ on 
+Metrology Under Pressure: Detecting Defects in Fine-Pitch Hybrid Bonding
+Raymond Doerr
+ on 
+Manufacturing At The Limits
+Mallikarjun
+ on 
+The Evolution of DRAM
+Klein Miller
+ on 
+Democratizing Design: How The CHIPS Act Is Reshaping EDA And Semiconductor Innovation
+Klein Miller
+ on 
+Lessons From 30 Years In The Trenches On The Future Of Semiconductor Manufacturing
+Jonathan Kolber
+ on 
+Preparing For The Quantum Computing Age
+Pramod Gupta
+ on 
+Challenges In Stacking HBM
+Madeline Lueilwitz
+ on 
+Reconfigurable Single-Walled CNT FeFET (Univ. of Pennsylvania, Yonsei et al.)
+Anne Meixner
+ on 
+Need For KGD Drives Singulated Die Screening
+Capt kirk
+ on 
+Designing A Better Clock Network
+Alex Martin
+ on 
+AI Effort And Money Misplaced
+Marketplace T
+
+Chip Industry Week In Review
+
+The SE Staff
+Beyond Pass/Fail: Characterizing...
+
+Gerard John
+
+About
+
+About us
+
+Contact us
+
+Advertising on SemiEng
+
+Newsletter SignUp
+
+Navigation
+
+Homepage
+
+Special Reports
+
+Systems & Design
+
+Low Power-High Perf
+
+Manufacturing, Packaging & Materials
+
+Test, Measurement & Analytics
+
+Auto, Security and AI
+
+Videos
+
+Jobs
+
+Technical Papers
+
+Events
+
+Webinars
+
+Knowledge Centers
+
+Industry Research
+
+Business & Startups
+
+Newsletters
+
+Store
+
+Connect With Us
+
+Facebook
+
+Twitter
+  @semiEngineering
+
+LinkedIn
+
+YouTube
+
+Copyright ©2013-2026 SMG   |  
+Terms of Service
+  |  
+Privacy Policy
+

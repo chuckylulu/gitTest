@@ -1,0 +1,2654 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <!-- 반응형코드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <!-- Google Search Console 소유권 확인 -->
+    <meta name="google-site-verification" content="RCMkm8itPRztsrHk4yVIBvdksYGNsrrP0uuaf929VFU"/>
+
+    <!-- opengraph -->
+    <meta property="og:type" content="landing"/>
+    <meta property="og:title" content="[Worldfolio] Park Systems Beyond AFM: Expanding the Nanometr..."/>
+    <meta property="og:image" content="/content/dam/parksystems/logo.gif"/>
+    <meta property="og:description" content="Led by Dr. Sang-il Park, a pioneer in commercial AFM, Park Systems is leveraging strategic acquisitions and cutting-edge technological expertise to pu..."/>
+    <meta name="content-page-ref" content="kwsjoOn4XS-8MfYc1w9JykurcajL6vlOmYpAdkzo7WYAyNuUic5K2x_0pS8acFjCkoWb7VoMbvV6acP9i1bR76FbBprRZN01s1jHOIX5ZZE"/>
+<script defer="defer" type="text/javascript" src="/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js"></script>
+<link rel="canonical" href="https://parksystems.com/en/news-events/news/news-details.park-systems-afm-nanometrology"/>
+    <meta property="og:url" content="html"/>
+    
+    <title>[Worldfolio] Park Systems Beyond AFM: Expanding the Nanometr... | Park Systems</title>
+    
+      <meta name="description" content="Led by Dr. Sang-il Park, a pioneer in commercial AFM, Park Systems is leveraging strategic acquisitions and cutting-edge technological expertise to pu..."/>
+    
+    
+
+    
+    
+    
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "English", "item": "https://www.parksystems.com/en"}, {"@type": "ListItem", "position": 2, "name": "News \u0026 Events", "item": "https://www.parksystems.com/en/news-events"}, {"@type": "ListItem", "position": 3, "name": "News", "item": "https://www.parksystems.com/en/news-events/news"}, {"@type": "ListItem", "position": 4, "name": "Details"}
+      ]
+    }
+    </script>
+
+    
+
+    <!-- Favicon -->
+    <link href="/content/dam/parksystems/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+
+    <!-- <sly data-sly-include="head.links.html"></sly> -->
+    
+    
+
+    
+    <link rel="stylesheet" href="/etc.clientlibs/parksystems/clientlibs/clientlib-base.lc-a5dbcd11c266b1e1ce659204d15e029b-lc.min.css" type="text/css">
+
+
+
+
+<script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/e87ef0b5b28cc.js" data-cmp-host="d.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0">
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        var didInit = false;
+
+        function initMunchkin() {
+            if (didInit === false) {
+                didInit = true;
+                Munchkin.init('988-FTP-549');
+            }
+        }
+
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//munchkin.marketo.net/munchkin.js';
+        s.onreadystatechange = function () {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                initMunchkin();
+            }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+
+    function sha256(ascii) {
+        function rightRotate(value, amount) {
+            return (value >>> amount) | (value << (32 - amount));
+        };
+
+        var mathPow = Math.pow;
+        var maxWord = mathPow(2, 32);
+        var lengthProperty = 'length'
+        var i, j; // Used as a counter across the whole file
+        var result = ''
+
+        var words = [];
+        var asciiBitLength = ascii[lengthProperty] * 8;
+
+        //* caching results is optional - remove/add slash from front of this line to toggle
+        // Initial hash value: first 32 bits of the fractional parts of the square roots of the first 8 primes
+        // (we actually calculate the first 64, but extra values are just ignored)
+        var hash = sha256.h = sha256.h || [];
+        // Round constants: first 32 bits of the fractional parts of the cube roots of the first 64 primes
+        var k = sha256.k = sha256.k || [];
+        var primeCounter = k[lengthProperty];
+        /*/
+        var hash = [], k = [];
+        var primeCounter = 0;
+        //*/
+
+        var isComposite = {};
+        for (var candidate = 2; primeCounter < 64; candidate++) {
+            if (!isComposite[candidate]) {
+                for (i = 0; i < 313; i += candidate) {
+                    isComposite[i] = candidate;
+                }
+                hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0;
+                k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+            }
+        }
+
+        ascii += '\x80' // Append Ƈ' bit (plus zero padding)
+        while (ascii[lengthProperty] % 64 - 56) ascii += '\x00' // More zero padding
+        for (i = 0; i < ascii[lengthProperty]; i++) {
+            j = ascii.charCodeAt(i);
+            if (j >> 8) return; // ASCII check: only accept characters in range 0-255
+            words[i >> 2] |= j << ((3 - i) % 4) * 8;
+        }
+        words[words[lengthProperty]] = ((asciiBitLength / maxWord) | 0);
+        words[words[lengthProperty]] = (asciiBitLength)
+
+        // process each chunk
+        for (j = 0; j < words[lengthProperty];) {
+            var w = words.slice(j, j += 16); // The message is expanded into 64 words as part of the iteration
+            var oldHash = hash;
+            // This is now the undefinedworking hash", often labelled as variables a...g
+            // (we have to truncate as well, otherwise extra entries at the end accumulate
+            hash = hash.slice(0, 8);
+
+            for (i = 0; i < 64; i++) {
+                var i2 = i + j;
+                // Expand the message into 64 words
+                // Used below if
+                var w15 = w[i - 15], w2 = w[i - 2];
+
+                // Iterate
+                var a = hash[0], e = hash[4];
+                var temp1 = hash[7]
+                    + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) // S1
+                    + ((e & hash[5]) ^ ((~e) & hash[6])) // ch
+                    + k[i]
+                    // Expand the message schedule if needed
+                    + (w[i] = (i < 16) ? w[i] : (
+                            w[i - 16]
+                            + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3)) // s0
+                            + w[i - 7]
+                            + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10)) // s1
+                        ) | 0
+                    );
+                // This is only used once, so *could* be moved below, but it only saves 4 bytes and makes things unreadble
+                var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) // S0
+                    + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2])); // maj
+
+                hash = [(temp1 + temp2) | 0].concat(hash); // We don't bother trimming off the extra ones, they're harmless as long as we're truncating when we do the slice()
+                hash[4] = (hash[4] + temp1) | 0;
+            }
+
+            for (i = 0; i < 8; i++) {
+                hash[i] = (hash[i] + oldHash[i]) | 0;
+            }
+        }
+
+        for (i = 0; i < 8; i++) {
+            for (j = 3; j + 1; j--) {
+                var b = (hash[i] >> (j * 8)) & 255;
+                result += ((b < 16) ? 0 : '') + b.toString(16);
+            }
+        }
+        return result;
+    };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-59G9K3SS');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {hjid: 5360789, hjsv: 6};
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+
+<script>
+    (function () {
+        var rtpLoaded = false;
+
+        if (typeof window.__cmp === 'function') {
+            window.__cmp('addEventListener', ['consent', function (e, o) {
+                var cmpStatus = window.__cmp('consentStatus');
+                if (cmpStatus && cmpStatus.userChoiceExists === true && !rtpLoaded) {
+                    rtpLoaded = true;
+                    (function(c,h,a,f,i,l,e){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                     c[a].a=i;c[a].l=l;c[a].e=e;var g=h.createElement("script");g.async=true;g.type="text/javascript";
+                     g.src=f+'?aid='+i;var b=h.getElementsByTagName("script")[0];b.parentNode.insertBefore(g,b);
+                     })(window,document,"rtp","//snrtp-cdn.marketo.com/rtp-api/v1/rtp.js","parksystems");
+                    rtp('send','view');
+                    rtp('get', 'campaign',true);
+                }
+            }, false]);
+        }
+    })();
+</script>
+<script>
+    (function (a, b, c, d, e, m) {
+        a['OktopostTrackerObject'] = d;
+        a[d] = a[d] || function () {
+            (a[d].q = a[d].q || []).push(arguments);
+        };
+        e = b.createElement('script');
+        m = b.getElementsByTagName('script')[0];
+        e.async = 1;
+        e.src = c;
+        m.parentNode.insertBefore(e, m);
+    })(window, document, 'https://static.oktopost.com/oktrk.js', '_oktrk');
+
+    _oktrk('create', '001ygyzuty4p8m2', {domain: 'ok.parksystems.com'});
+</script>
+
+<script src="https://assets.adoberesources.net/loader.js?orgId=95E5260E6303A8080A495E2F%40AdobeOrg&instanceId=parksystems&env=prod&geo=aus5"></script>
+
+
+    
+    <script async src="/etc.clientlibs/parksystems/clientlibs/clientlib-dependencies.lc-2e5227eb7b9ac1c0f29196127b09ad33-lc.min.js"></script>
+
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.lc-543d214c88dfa6f4a3233b630c82d875-lc.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.lc-dd9b395c741ce2784096e26619e14910-lc.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery-tipsy.lc-80d5f7d1a2e2e723e8133c626b3bddc2-lc.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js"></script>
+<script src="/etc.clientlibs/parksystems/clientlibs/clientlib-site.lc-a0f8955d5b37e779552a11b90366a127-lc.min.js"></script>
+
+
+    
+    <link rel="stylesheet" href="/etc.clientlibs/parksystems/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/parksystems/clientlibs/clientlib-site.lc-2e58be286dfc54b7bf6f2cb8c7b38aee-lc.min.css" type="text/css">
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+</head>
+    <body class="page basicpage common.css" id="page-4764f05fdf" data-cmp-link-accessibility-enabled data-cmp-link-accessibility-text="opens in a new tab" data-cmp-data-layer-enabled data-cmp-data-layer-name="adobeDataLayer">
+        <script>
+          var dataLayerName = 'adobeDataLayer' || 'adobeDataLayer';
+          window[dataLayerName] = window[dataLayerName] || [];
+          window[dataLayerName].push({
+              page: JSON.parse("{\x22page\u002D4764f05fdf\x22:{\x22@type\x22:\x22parksystems\/components\/page\x22,\x22repo:modifyDate\x22:\x222026\u002D04\u002D27T02:27:50Z\x22,\x22dc:title\x22:\x22Details\x22,\x22xdm:template\x22:\x22\/conf\/parksystems\/settings\/wcm\/templates\/new\u002Dcontent\u002Dpage\x22,\x22xdm:language\x22:\x22en\x22,\x22xdm:tags\x22:[],\x22repo:path\x22:\x22\/content\/parksystems\/en\/news\u002Devents\/news\/news\u002Ddetails.html\x22}}"),
+              event:'cmp:show',
+              eventInfo: {
+                  path: 'page.page\u002D4764f05fdf'
+              }
+          });
+        </script>
+        
+        
+            
+
+
+
+
+            
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59G9K3SS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="root container responsivegrid">
+    
+    <div id="container-9f53815d2b" class="cmp-container">
+        <section id="section-container-9f53815d2b">
+            
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-cc4ddb3aeb" class="cmp-experiencefragment cmp-experiencefragment--header">
+
+    
+    <div id="container-916fbfe0de" class="cmp-container">
+        <section id="section-container-916fbfe0de">
+            
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="navigation aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header">
+    <div class="top-nav">
+        <div class="container-wrapper">
+            <div class="header-buttons">
+                <a href="/en/contact" class="header-button">
+                    Contact
+                </a>
+                <a href="/en/sign-in" class="header-button signinText">Sign In</a>
+                <div class="language-box">
+
+    <button class="label" data-event="toggle-blur">ENG</button>
+    <ul class="option-list">
+        <li class="option-item active"><a class="option-item-link" href="/en" target="_blank">ENG</a></li>
+        <li class="option-item"><a class="option-item-link" href="/kr" target="_blank">KOR</a></li>
+        <li class="option-item"><a class="option-item-link" href="/jp" target="_blank">JPN</a></li>
+        <li class="option-item"><a class="option-item-link" href="https://www.parksystems.cn" target="_blank">CHN</a></li>
+    </ul>   
+
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gnb-wrapper">
+        <div class="container-wrapper">
+            <a href="/en" class="logo-item">
+                <img class="img-item" src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/logo.svg" alt="">
+            </a>
+            <div class="mobile-menu-wrapper">
+                <div class="mobile-search-btn">
+                    <span></span>
+                </div>
+                <button class="mobile-menu-button">
+                    <span class="bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
+            </div>
+
+            <nav class="menu-box desktop-menu">
+                <ul class="menu-list">
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/products">Products
+                        </a>
+                        <div class="submenu type2">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group type2">
+                                        
+                                        <li class="submenu-group-item  type2">
+                                            <h3 class="submenu-title"><a href="/en/products/research-afm">Research AFM
+                                            </a></h3>
+                                                
+                                            <ul class="submenu-list">
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/research-afm/small-sample-afm" class="submenu-item-link">Small Sample AFM
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/research-afm/large-sample-afm" class="submenu-item-link">Large Sample AFM
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/research-afm/specialized-afm" class="submenu-item-link">Specialized AFM
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/research-afm/nano-ir" class="submenu-item-link">Nano-IR Spectrometers
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/research-afm/Options" class="submenu-item-link">Options
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/research-afm/software" class="submenu-item-link">Software
+                                                </a></li>
+                                                
+                                            </ul>
+                                                
+                                                </li>
+                                                
+                                        <li class="submenu-group-item  type2">
+                                            <h3 class="submenu-title"><a href="/en/products/in-line-metrology-afm">Industrial AFM 
+                                            </a></h3>
+                                                
+                                            <ul class="submenu-list">
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/in-line-metrology-afm/wafer-fabrications" class="submenu-item-link">Wafer Processing
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/in-line-metrology-afm/photomask-repair" class="submenu-item-link">Mask Repair
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/in-line-metrology-afm/advanced-packaging" class="submenu-item-link">Advanced Packaging
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/in-line-metrology-afm/flat-panel-display" class="submenu-item-link">Flat Panel Display 
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/in-line-metrology-afm/optical-profilometry" class="submenu-item-link">Optical Profilometry
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/in-line-metrology-afm/hdd-media-inspection" class="submenu-item-link">HDD Media Inspection
+                                                </a></li>
+                                                
+                                            </ul>
+                                                
+                                                </li>
+                                                
+                                        <li class="submenu-group-item  type2">
+                                            <h3 class="submenu-title"><a href="/en/products/ellipsometers">Ellipsometer
+                                            </a></h3>
+                                                
+                                            <ul class="submenu-list">
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/ellipsometers/imaging-spectroscopic-ellipsometry-" class="submenu-item-link">Imaging Spectroscopic Ellipsometry 
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/ellipsometers/referenced-spectroscopic-ellipsometry-" class="submenu-item-link">Referenced Spectroscopic Ellipsometry 
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/ellipsometers/Ellipsometry-Accessories" class="submenu-item-link">Ellipsometry Accessories
+                                                </a></li>
+                                                
+                                            </ul>
+                                                
+                                                </li>
+                                                
+                                        <li class="submenu-group-item  type2">
+                                            <h3 class="submenu-title"><a href="/en/products/digital-holographic-microscopes">Digital Holographic Microscopes
+                                            </a></h3>
+                                                
+                                            <ul class="submenu-list">
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/digital-holographic-microscopes/lyncee-reflection-series" class="submenu-item-link">Lyncée Reflection Series
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/digital-holographic-microscopes/lyncee-transmission-series" class="submenu-item-link">Lyncée Transmission Series
+                                                </a></li>
+                                                
+                                            </ul>
+                                                
+                                                </li>
+                                                
+                                        <li class="submenu-group-item  type2">
+                                            <h3 class="submenu-title"><a href="/en/products/active-vibration-isolation">Active Vibration Isolation
+                                            </a></h3>
+                                                
+                                            <ul class="submenu-list">
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/active-vibration-isolation/desktop-isolation-tables" class="submenu-item-link">Desktop Isolation Tables
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/active-vibration-isolation/laboratory-tables" class="submenu-item-link">Laboratory Tables
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/active-vibration-isolation/modular-isolation-elements" class="submenu-item-link">Modular Isolation Elements
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/active-vibration-isolation/acoustic-enclosures" class="submenu-item-link">Acoustic Enclosures
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/active-vibration-isolation/heavy-load-isolation" class="submenu-item-link">Heavy Load AVI
+                                                </a></li>
+                                                
+                                            </ul>
+                                                
+                                                </li>
+                                                
+                                        <li class="submenu-group-item  type2">
+                                            <h3 class="submenu-title"><a href="/en/products/accessories">Accessories
+                                            </a></h3>
+                                                
+                                            <ul class="submenu-list">
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/accessories/afm-probes" class="submenu-item-link">AFM Probes
+                                                </a></li>
+                                                
+
+                                                <li class="submenu-item"><a href="/en/products/accessories/park-nanostandard-store" class="submenu-item-link">Nano Standard Samples
+                                                </a></li>
+                                                
+                                            </ul>
+                                                
+                                                </li>
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/applications">Applications
+                        </a>
+                        <div class="submenu type2">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group type2">
+                                        
+                                                <li class='submenu-group-item 1'>
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/semiconductor" class="submenu-item-link depth2">Semiconductor
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/polymer" class="submenu-item-link depth2">Polymer
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/metal-and-ceramic" class="submenu-item-link depth2">Metal and Ceramic
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/thin-film" class="submenu-item-link depth2">Thin Films
+                                                </a>
+                                            </div>
+                                                </li>
+                                                
+                                                
+                                                
+                                                <li class='submenu-group-item 1'>
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/life-science" class="submenu-item-link depth2">Life Sciences
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/afm-exclusive" class="submenu-item-link depth2">AFM Exclusive
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/2d-materials" class="submenu-item-link depth2">2D Materials
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/surface-engineering" class="submenu-item-link depth2">Surface Engineering
+                                                </a>
+                                            </div>
+                                                </li>
+                                                
+                                                
+                                                
+                                                <li class='submenu-group-item 1'>
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/anisotropic-films" class="submenu-item-link depth2">Anisotropic Films
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/photonics" class="submenu-item-link depth2">Photonics
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="submenu-row-group">
+                                                <a href="/en/applications/display" class="submenu-item-link depth2">Display
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/learning-center">Knowledge Center
+                        </a>
+                        <div class="submenu ">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group ">
+                                        <li class='submenu-group-item'>
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/learning-center/how-afm-works" class="submenu-item-link depth2">How AFM Works 
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/learning-center/AFM-modes" class="submenu-item-link depth2">AFM Modes
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/learning-center/webinar" class="submenu-item-link depth2">Webinars
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/learning-center/image-gallery" class="submenu-item-link depth2">Image Gallery
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/learning-center/case-study" class="submenu-item-link depth2">Case Study
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/service">Service
+                        </a>
+                        <div class="submenu ">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group ">
+                                        <li class='submenu-group-item'>
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/contact/customer-service" class="submenu-item-link depth2">Technical Support & Repair
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/sign-in/my-products" class="submenu-item-link depth2">Manuals & Software
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/news-events">News & Events
+                        </a>
+                        <div class="submenu ">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group ">
+                                        <li class='submenu-group-item'>
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/news-events/news" class="submenu-item-link depth2">News
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/news-events/events" class="submenu-item-link depth2">Events
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group arrow">
+                                                <a target='_blank' href="https://nanoscientific.org/symposium.html" class="submenu-item-link depth2">NANOscientific Symposium
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/company">Company
+                        </a>
+                        <div class="submenu ">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group ">
+                                        <li class='submenu-group-item'>
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/company/about-us" class="submenu-item-link depth2">About Us
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/company/board-of-directors" class="submenu-item-link depth2">Board of Directors
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/company/corporate-management" class="submenu-item-link depth2">Corporate Management
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/company/career" class="submenu-item-link depth2">Career
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/company/locations" class="submenu-item-link depth2">Locations
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-item depth1">
+                        <a class="menu-item-link depth1" href="/en/investors">Investors
+                        </a>
+                        <div class="submenu ">
+                            <div class="submenu-content-type2">
+                                <div class="submenu-nav">
+                                    <ul class="submenu-group ">
+                                        <li class='submenu-group-item'>
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/investors/stock-information" class="submenu-item-link depth2">Stock Information
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/investors/ir-news" class="submenu-item-link depth2">IR News
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/investors/fiancial-statements" class="submenu-item-link depth2">Financial Statements
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/investors/dividend-policy" class="submenu-item-link depth2">Dividend Policy
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+
+                                            <div class="submenu-row-group ">
+                                                <a href="/en/investors/esg" class="submenu-item-link depth2">ESG
+                                                </a>
+                                            </div>
+                                                
+                                                
+                                                
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <div class="haeder-search"><span></span></div>
+            </div>
+
+            <!--모바일 메뉴-->
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <!-- 로그인후 개인 정보 표시 영역-->
+
+                    <div class="user-box">
+                        <div class="user-image">
+                            <img class="img-item" src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/user-bg.svg" alt="프로필 이미지" id="profileImg2">
+                        </div>
+                        <div class="user-info">
+                            <span class="greeting-text">Hello!</span>
+                            <span class="user-name" id="modile_user"></span>
+                            <a href="#" class="logout-button" id="mobileLog">Logout</a>
+                        </div>
+                        <div class="user-menu" id="guestMenu1">
+                            <a href="/en/sign-in/my-products" class="user-menu-item product"><span class="user-menu-item-text">My Supports</span></a>
+                            <a href="/en/sign-in/my-posts" class="user-menu-item post"><span
+                                    class="user-menu-item-text">My Post</span></a>
+                            <a href="/en/sign-in/mypage-profile" class="user-menu-item profile"><span class="user-menu-item-text">My Profile</span></a>
+                        </div>
+                        <div class="user-menu" style="display:none;" id="employeeMenu1">
+                            <a href="https://parksystems.brand-portal.adobe.com/mediaportal.html/content/dam/mac/parksystems" class="user-menu-item product" target="_blank">
+                                <span class="user-menu-item-text">Intra Portal</span>
+                            </a>
+                            <a href="/en/sign-in/intrawiki" target="_blank" class="user-menu-item post"><span class="user-menu-item-text">Intra Wiki</span></a>
+                            <a href="/en/sign-in/mypage-profile" class="user-menu-item profile"><span class="user-menu-item-text">My Profile</span></a>
+                        </div>
+                    </div>
+                    <ul class="menu-list">
+                        
+                        <li class="menu-item">
+                            <a href="/en/products" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">Products
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/products" class="menu-item-link">View All Products
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/products/research-afm" class="menu-item-link">Research AFM
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/products/in-line-metrology-afm" class="menu-item-link">Industrial AFM 
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/products/ellipsometers" class="menu-item-link">Ellipsometer
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/products/digital-holographic-microscopes" class="menu-item-link">Digital Holographic Microscopes
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/products/active-vibration-isolation" class="menu-item-link">Active Vibration Isolation
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/products/accessories" class="menu-item-link">Accessories
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/en/applications" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">Applications
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/applications" class="menu-item-link">View All Applications
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/semiconductor" class="menu-item-link">Semiconductor
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/polymer" class="menu-item-link">Polymer
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/metal-and-ceramic" class="menu-item-link">Metal and Ceramic
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/thin-film" class="menu-item-link">Thin Films
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/life-science" class="menu-item-link">Life Sciences
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/afm-exclusive" class="menu-item-link">AFM Exclusive
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/2d-materials" class="menu-item-link">2D Materials
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/surface-engineering" class="menu-item-link">Surface Engineering
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/anisotropic-films" class="menu-item-link">Anisotropic Films
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/photonics" class="menu-item-link">Photonics
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/applications/display" class="menu-item-link">Display
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/en/learning-center" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">Knowledge Center
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/learning-center" class="menu-item-link">View All Knowledge Center
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/learning-center/how-afm-works" class="menu-item-link">How AFM Works 
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/learning-center/AFM-modes" class="menu-item-link">AFM Modes
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/learning-center/webinar" class="menu-item-link">Webinars
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/learning-center/image-gallery" class="menu-item-link">Image Gallery
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/learning-center/case-study" class="menu-item-link">Case Study
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/en/service" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">Service
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/service" class="menu-item-link">View All Service
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/service/technicalsupport-repair" class="menu-item-link">Technical Support & Repair
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/service/manualssoftware" class="menu-item-link">Manuals & Software
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/en/news-events" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">News & Events
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/news-events" class="menu-item-link">View All News & Events
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/news-events/news" class="menu-item-link">News
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/news-events/events" class="menu-item-link">Events
+                                    </a></li>
+                                
+                                <li class="submenu-item blank-button">
+                                    <a target='_blank' href="/en/news-events/nss" class="menu-item-link">NANOscientific Symposium
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/en/company" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">Company
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/company" class="menu-item-link">View All Company
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/company/about-us" class="menu-item-link">About Us
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/company/board-of-directors" class="menu-item-link">Board of Directors
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/company/corporate-management" class="menu-item-link">Corporate Management
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/company/career" class="menu-item-link">Career
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/company/locations" class="menu-item-link">Locations
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="/en/investors" class="menu-item-link" data-event="add_class" data-target=".menu-item" data-class="open">Investors
+                            </a>
+                            
+                            <ul class="submenu-list">
+                                
+                                <li class="submenu-item back-button"><a href="/en/news-events/news/" class="menu-item-link" data-event="remove_class" data-target=".menu-item" data-class="open">Back</a></li>
+                                <li class="submenu-item all-button"><a href="/en/investors" class="menu-item-link">View All Investors
+                                </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/investors/stock-information" class="menu-item-link">Stock Information
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/investors/ir-news" class="menu-item-link">IR News
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/investors/fiancial-statements" class="menu-item-link">Financial Statements
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/investors/dividend-policy" class="menu-item-link">Dividend Policy
+                                    </a></li>
+                                
+                                <li class="submenu-item ">
+                                    <a href="/en/investors/esg" class="menu-item-link">ESG
+                                    </a></li>
+                                
+                            </ul>
+                            
+                        </li>
+                        
+                    </ul>
+                    <div class="bottom-box">
+                        <!-- 메뉴 하단 버튼-->
+                        <div class="button-box">
+                            <a href="/en/sign-in" class="sign-button signinText">Sign In</a>
+                        </div>
+                        <div class="language-box">
+
+    <button class="label" data-event="toggle-blur">ENG</button>
+    <ul class="option-list">
+        <li class="option-item active"><a class="option-item-link" href="/en" target="_blank">ENG</a></li>
+        <li class="option-item"><a class="option-item-link" href="/kr" target="_blank">KOR</a></li>
+        <li class="option-item"><a class="option-item-link" href="/jp" target="_blank">JPN</a></li>
+        <li class="option-item"><a class="option-item-link" href="https://www.parksystems.cn" target="_blank">CHN</a></li>
+    </ul>   
+
+</div>
+                    </div>
+                </nav>
+                <div class="mobile-menu-footer">
+                    <footer class="footer-navBar-wrapper">
+                        <nav class="footer-navBar">
+                            <div class="container-wrapper">
+                                <div class="footer-navList-wrapper">
+                                    <div class="mobile-footer">
+                                        <ul class="footer-sns">
+                                            <li class="footer-sns-facebook"><a href="https://www.facebook.com/ParkSystemsAFM" target="_blank"></a>
+                                            </li>
+                                            <li class="footer-sns-instagram"><a href="https://www.linkedin.com/company/park-systems-afm" target="_blank"></a></li>
+                                            <li class="footer-sns-youtube"><a href="https://www.youtube.com/channel/UCxZUerRhOzeyI5ACcuXIjGA" target="_blank"></a></li>
+                                        </ul>
+
+                                        <ul class="footer-privacy-mobile">
+                                            <li class="footer-privacy-mobile-items"><a href="/en/contact">Contact Us</a></li>
+                                            <!--<li class="footer-privacy-mobile-items"><a href="javascript:void(0);" id="index-three-banner-newsletter">Newsletter</a></li>-->
+                                            <li class="footer-privacy-mobile-items"><a href="/en/company/privacynotice">Privacy
+                                                Policy</a></li>
+                                            <!--<li class="footer-privacy-mobile-items"><a href="">Sitemap</a></li> -->
+                                            <li class="footer-privacy-link"><a href="/en/company/imprint">Imprint</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-navList footer-legalWrapper">
+                                        <ul class="footer-legalWrapper-items">
+                                            <li class="footer-copyright">
+                                                Copyright &#169; 2024 Park Systems. All Rights Reserved.
+                                            </li>
+                                            <li class="footer-privacy desktop-footer">
+                                                <ul class="footer-privacy-items">
+                                                    <li class="footer-privacy-link"><a href="/en/contact">Contact Us</a>
+                                                    </li>
+                                                    <!--<li class="footer-privacy-link"><a href="javascript:void(0);" id="index-three-banner-newsletter">Newsletter</a></li>-->
+                                                    <li class="footer-privacy-link"><a href="/en/company/privacynotice">Privacy
+                                                        Policy</a></li>
+                                                    <!--<li class="footer-privacy-link"><a href="">Sitemap</a></li> -->
+                                                    <li class="footer-privacy-link"><a href="/en/company/imprint">Imprint</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </footer>
+                </div>
+
+
+            </div>
+
+
+</header>
+
+
+<div class="global-search-wrapper">
+    <div class="global-search-container">
+        <div class="container-wrapper">
+            <div class="global-search-close"></div>
+            <div class="global-search-contents">
+                <div class="global-search-bar">
+                    <input type="search" class="probestore-Search-input" placeholder="Search" maxlength="100"
+                           role="search" tabindex="0" autocomplete="off" rows="1" id="inputsearch">
+                    <button id="btnsearch"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-search.png" alt=""></button>
+                    <div class="search-autocomplete-wrapper" style="display: none">
+                        <div id="auto-complete"></div>
+                        <div class="autocomplete-footer">
+                            <button type="button" class="autocomplete-close">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                                <div class="global-search-text">
+                                    <h6>Top searched</h6>
+                                    <div class="global-search-keyword">
+                                        <button>#Semicon</button>
+                                        <button>#Workshop</button>
+                                        <button>#FX40</button>
+                                        <button>#NX20</button>
+                                    </div>
+                                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://alcdn.msauth.net/lib/1.4.17/js/msal.min.js"></script>
+<script src="https://alcdn.msauth.net/browser/2.30.0/js/msal-browser.js" integrity="sha384-o4ufwq3oKqc7IoCcR08YtZXmgOljhTggRwxP2CLbSqeXGtitAxwYaUln/05nJjit" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        //스니펫 준비..
+        var pcormo = "";
+        var lang = "";
+        var mobile = false;
+        const extension = ($("html").attr("lang") === "zh-CN") ? "" : ".html";
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
+            mobile = true;
+        }
+        if (mobile == true) {
+            pcormo = "MO";
+        } else {
+            pcormo = "PC";
+        }
+
+        // 모바일 메뉴 토글 기능 추가
+        $(document).on('click', '.mobile-menu-button', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $("body").toggleClass("menuOpen");
+            return false;
+        });
+        /////////////////////////////////////
+
+        var loginUser = null;
+        $.ajax({
+            type: 'POST',
+            url: '/bin/parksystems/Login',
+            data: {
+                getInfo: "GetUser"
+            },
+            success: function (result) {
+                if (result.data != undefined && result.data != "null") {
+                    $('.user-box').show();
+                    loginUser = JSON.parse(result.data);
+                    //일단 세션에 저장하자... 헤드에서 사용자 정보를 불러올 방법이 없음.jquery가 안됨..
+                    sessionStorage.setItem("loginUserInfo", JSON.stringify(loginUser));
+                    //스니펫...
+                    window.dataLayer = window.dataLayer || [];
+                    if ($("html").attr("lang") != "zh-CN") {
+                        dataLayer.push({
+                            'is_member': 'Y',
+                            'index_hostname': pcormo,
+                            'index_language': lang,
+                            'user_id': sha256(loginUser.email)
+                        });
+                    }
+                    //console.log(dataLayer);
+                    /////////////////////////////////////////
+                    if (loginUser != null && loginUser.id == undefined) {
+                        // M365 토큰 가져온 후 프로필사진 가져오기
+                        getTokenRedirect(loginRequest2)
+                            .then(response => {
+                                callMSGraph2(graphConfig.graphMeEndpoint, response.accessToken, updateUI2);
+                            }).catch(error => {
+                            console.log(error);
+                        });
+                        $(".signinText").each(function () {
+                            //$(this).text("Sign Out");
+                            $(this).text("My Page");
+                        });
+                        $("#ASignin").text("My Page");
+
+                        $(".user-name").each(function () {
+                            $(this).text(loginUser.username ? loginUser.username : loginUser.name);
+                        });
+                        //모바일
+                        $("#modile_user").val(loginUser.username ? loginUser.username : loginUser.name);
+                        $("#mobileLog").text("Logout");
+                        if (loginUser.id) {
+                            $("#guestMenu1").show();
+                            $("#employeeMenu1").hide();
+                        } else {
+                            $("#guestMenu1").hide();
+                            $("#employeeMenu1").show();
+                        }
+                    } else if (loginUser != null && loginUser.id) {
+                        $(".signinText").each(function () {
+                            $(this).text("My Page");
+                        });
+                        $("#ASignin").text("My Page");
+                        $(".user-name").each(function () {
+                            $(this).text(loginUser.username ? loginUser.username : loginUser.name);
+                        });
+                        //모바일
+                        $("#modile_user").val(loginUser.username ? loginUser.username : loginUser.name);
+                        $("#mobileLog").text("Logout");
+                        if (loginUser.id) {
+                            $("#guestMenu1").show();
+                            $("#employeeMenu1").hide();
+                        } else {
+                            $("#guestMenu1").hide();
+                            $("#employeeMenu1").show();
+                        }
+                    }
+                } else {
+                    //스니펫...
+                    window.dataLayer = window.dataLayer || [];
+                    if ($("html").attr("lang") != "zh-CN") {
+                        dataLayer.push({
+                            'is_member': 'N',
+                            'index_hostname': pcormo,
+                            'index_language': lang
+                        });
+                    }
+                    console.log(dataLayer);
+                    ////////////////////////////////
+                    $('.user-box').hide();
+                    $(".signinText").each(function () {
+                        $(this).text("Sign In");
+                    });
+                    //로그인 안됐을 경우 모바일 메뉴,.
+                    $("#guestMenu1").show();
+                    $("#employeeMenu1").hide();
+                }
+            }
+        });
+
+        $(".signinText").click(function (e) {
+            e.preventDefault();
+            const basePath = (loginUser == null) ? "/sign-in" : "/sign-in/mypage-profile";
+            location.href = "/content/parksystems/en" + basePath + extension;
+        });
+
+        $("#ASignin").click(function (e) {
+            e.preventDefault();
+            const basePath = (loginUser == null) ? "/sign-in" : "/sign-in/mypage-profile";
+            
+            location.href = "/content/parksystems/en" + basePath + extension;
+        });
+
+        $("#mobileLog").click(function () {
+            $.ajax({
+                type: 'POST',
+                url: '/bin/parksystems/Login',
+                data: {
+                    getInfo: "LogOut"
+                },
+                success: function (result) {
+                    location.href = "/content/parksystems/en/sign-in"+ extension;
+                }
+            });
+        });
+        $(".haeder-search span").click(function () {
+            $(".global-search-wrapper").addClass('active');
+            $("#inputsearch").focus();
+        });
+
+        $(".mobile-search-btn span").click(function () {
+            $(".global-search-wrapper").addClass('active');
+        });
+
+        $(".global-search-close").click(function () {
+            $(".global-search-wrapper").removeClass('active');
+        });
+
+        // checkbox close
+        $(document).mouseup(function (e) {
+            var CheckboxLayout = $(".global-search-wrapper");
+            if (CheckboxLayout.has(e.target).length === 0) {
+                CheckboxLayout.removeClass("active");
+            }
+        });
+        /* ===================== M365 API ===================== */
+        const msalConfig2 = {
+            auth: {
+                // Cloud (ParkSystems)
+                clientId: 'afe0ab17-3289-4ab9-a994-39914cee0cab',
+                authority: "https://login.microsoftonline.com/7634c4dc-9a4e-4615-932e-99f681471d92",
+                // redirect_url: "https://author-p123470-e1240060.adobeaemcloud.com/content/parksystems/en/sign-in.html" // DEV
+                // redirect_url: "https://author-p123470-e1337633.adobeaemcloud.com/content/parksystems/en/sign-in.html" // DEV2
+                redirect_url: "https://publish-p123470-e1337633.adobeaemcloud.com/content/parksystems/en/sign-in.html" // DEV2
+                // Test on Local (Neodigm)
+                /*clientId: '13c43d3c-4cc4-4bf2-b1ae-8505e57a9ecd',
+                authority: "https://login.microsoftonline.com/cd09cd39-4ec5-43e0-a1b9-ec66909a9ced",
+                redirect_url: "http://localhost:4502/content/parksystems/en/main/sign-in.html"*/
+            },
+            cache: {
+                cacheLocation: "sessionStorage", // This configures where your cache will be stored
+                storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+            }
+        };
+
+        const myMSALObj2 = new msal.PublicClientApplication(msalConfig2);
+
+        /*
+        myMSALObj2.handleRedirectPromise()
+            .then(handleResponse2)
+            .catch((error) => {
+                console.error(error);
+            });
+        */
+        async function getProjectConstants(token) {
+            const response = await fetch(`https://graph.microsoft.com/v1.0/me/photo/$value`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ` + token
+                }
+            });
+            return response;
+        }
+
+        async function callMSGraph2(endpoint, token, callback) {
+            const headers = new Headers();
+            const bearer = `Bearer `;
+
+            headers.append("Authorization", bearer);
+
+            const options = {
+                method: "GET",
+                headers: headers
+            };
+
+            console.log('request made to Graph API at: ' + new Date().toString());
+
+            var response = await getProjectConstants(token);
+            console.log(response);
+
+
+            const blob = await response.blob();
+            const urlCreator = window.URL || window.webkitURL;
+            const imageUrl = urlCreator.createObjectURL(blob);
+
+            $("#profileImg2").attr('src', imageUrl);
+
+        }
+
+
+        const graphConfig = {
+            graphMeEndpoint: "https://graph.microsoft.com/v1.0/me/photo/$value",
+        };
+
+        const loginRequest2 = {
+            scopes: ["User.Read"]
+        };
+
+        /*
+        function handleResponse2(response) {
+            if (response !== null) {
+            }
+        }
+        */
+
+        function getTokenRedirect(request) {
+            /**
+             * See here for more info on account retrieval:
+             * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-common/docs/Accounts.md
+             */
+            request.account = myMSALObj2.getAccountByUsername(loginUser.email);
+
+            return myMSALObj2.acquireTokenSilent(request)
+                .catch(error => {
+                    console.log("silent token acquisition fails. acquiring token using redirect");
+                    if (error instanceof msal.InteractionRequiredAuthError) {
+                        // fallback to interaction when silent call fails
+                        return myMSALObj2.acquireTokenRedirect(request);
+                    } else {
+                        console.log(error);
+                    }
+                });
+        }
+
+
+        function updateUI2(data, endpoint) {
+            console.log('Graph API responded at: ' + new Date().toString());
+
+            if (endpoint === graphConfig.graphMeEndpoint) {
+            }
+        }
+
+        /* ===================== End of M365 API ===================== */
+
+        // 서브메뉴 위치 조정 함수
+        function adjustSubmenuPosition() {
+            $('.menu-item').each(function () {
+                const $menuItem = $(this);
+                const $submenu = $menuItem.find('.submenu');
+                const menuItemOffset = $menuItem.offset();
+                const menuItemWidth = $menuItem.outerWidth();
+                const submenuWidth = $submenu.outerWidth();
+                const windowWidth = $(window).width();
+
+                // 마지막 메뉴 아이템인 경우에만 위치 조정
+                if ($menuItem.is(':last-child')) {
+                    // 서브메뉴가 오른쪽으로 벗어나는 경우
+                    if (menuItemOffset.left + submenuWidth > windowWidth) {
+                        $submenu.css({
+                            'left': 'auto',
+                            'right': '0'
+                        });
+                    } else {
+                        $submenu.css({
+                            'left': '0',
+                            'right': 'auto'
+                        });
+                    }
+                } else {
+                    // 다른 메뉴들은 기존 동작 유지
+                    $submenu.css({
+                        'left': '0',
+                        'right': 'auto'
+                    });
+                }
+            });
+        }
+
+        // 초기 로드 시 위치 조정
+        adjustSubmenuPosition();
+
+        // 윈도우 리사이즈 시 위치 재조정
+        $(window).on('resize', adjustSubmenuPosition);
+
+        // 메뉴 호버 시 위치 재조정
+        $('.menu-item').on('mouseenter', function () {
+            adjustSubmenuPosition();
+        });
+
+        // 서브메뉴 링크 클릭 시 새 탭 열기 및 페이지 이동
+        $(document).on('click', '.submenu-item-link', function (e) {
+            const href = $(this).attr('href');
+            const target = $(this).attr('target');
+
+            if (href) {
+                if (target === '_blank') {
+                    window.open(href, '_blank');
+                    location.reload(); // 새 탭으로 열기 후 새로고침
+                } else {
+                    window.location.href = href; // 일반 링크는 정상 이동
+                }
+            }
+        });
+    });
+</script>
+
+<!-- 검색어 자동완성 -->
+<script>
+    $(function () {
+        let timeoutId;
+        // 최소 검색어 길이
+        const MINIMUM_TERM_LEN = 3;
+
+        const $searchInput = $(".global-search-bar input[type='search']");
+        const $searchBtn = $(".global-search-bar button#btnsearch");
+        const $autoCompleteWrapper = $(".global-search-bar .search-autocomplete-wrapper");
+        const $autoComplete = $(".global-search-bar #auto-complete");
+        const $autoCompleteCloseBtn = $(".global-search-bar button.autocomplete-close");
+        let autoCompleteData = [];
+        let autoCompleteCursor = -1;
+
+        const curLang = $("html").attr("lang");
+        const shortLang =
+            curLang === "en"
+                ? "en"
+                : curLang === "ko-KR"
+                    ? "kr"
+                    : curLang === "ja"
+                        ? "jp"
+                        : "cn";
+
+        // 자동완성 이벤트 핸들러
+        $searchInput.keyup(function (e) {
+            if (e.key === "ArrowDown" || e.key === "ArrowUp") return;
+            const searchTerm = e.target.value;
+            autoCompleteCursor = -1;
+            // 최소 글자수 아래인 경우
+            if (searchTerm.length < MINIMUM_TERM_LEN) {
+                $autoCompleteWrapper.hide();
+                return;
+            }
+
+            // 이벤트 발생 횟수 최적화를 위한 타임아웃
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(function () {
+                // 자동완성 추천 검색어 받아오는 로직
+                $.ajax({
+                    type: "POST",
+                    url: "/bin/parksystems/search/autocomplete",
+                    data: {
+                        q: searchTerm,
+                        lang: curLang,
+                    },
+                    success: function (response) {
+                        const searchInputText = e.target.value;
+
+                        let data = JSON.parse(response).result;
+
+                        // occurrence 일정 횟수 이상 따라 필터링
+                        // const data = JSON.parse(response).result.filter(
+                        //   (d) => d.occurrence > 1
+                        // );
+
+                        data.sort((a, b) => {
+                            const indexCompare =
+                                a.term.indexOf(searchInputText) -
+                                b.term.indexOf(searchInputText);
+
+                            // 1순위: 맨 앞에 검색어가 나옴
+                            if (indexCompare !== 0) return indexCompare;
+                            else {
+                                // 2순위: 길이가 짧음
+                                const lengthCompare = a.term.length - b.term.length;
+                                if (lengthCompare) return lengthCompare;
+                                else {
+                                    // 3순위: 알파벳 순
+                                    if (a.term < b.term) {
+                                        return -1;
+                                    }
+                                    if (a.term > b.term) {
+                                        return 1;
+                                    }
+                                    return 0;
+                                }
+                                // }
+                            }
+                        });
+
+                        // 10개만 출력
+                        data = data.length > 10 ? data.slice(0, 10) : data;
+
+                        const $autoComplete = $(".global-search-bar #auto-complete");
+                        $autoComplete.children().remove();
+
+                        if (data.length === 0) {
+                            // empty UI?
+                            $autoCompleteWrapper.hide();
+                            return;
+                        }
+                        autoCompleteData = data;
+
+                        // 자동완성 굵은 글씨 강조 렌더링
+                        data.forEach((d) => {
+                            const startIdx = d.term
+                                .toLowerCase()
+                                .indexOf(searchTerm.toLowerCase());
+                            const endIdx = startIdx + searchTerm.length;
+                            if (startIdx === -1) return null;
+                            const rest = d.term.replace(searchTerm.toLowerCase(), "");
+                            const $curResultElement = $(
+                                `<a class="autocomplete-result-link" href="/` +
+                                shortLang
+                                + `/search?q=` +
+                                d.term.toLowerCase() +
+                                `"><div><span>` +
+                                d.term.slice(0, startIdx) +
+                                `</span><strong>` +
+                                d.term.slice(startIdx, endIdx) +
+                                `</strong><span>` +
+                                d.term.slice(endIdx) +
+                                `</span></div></a>`
+                            );
+                            $autoComplete.append($curResultElement);
+                        });
+
+                        $autoCompleteWrapper.show();
+                    },
+                    error: function (xhr, status, error) {
+                        // 에러 처리 로직
+                        console.error("Error:", error);
+                    },
+                });
+            }, 200);
+        });
+
+        // focus시 자동완성 show
+        $searchInput.focus(function (e) {
+            if (
+                e.target.value.length > MINIMUM_TERM_LEN &&
+                autoCompleteData.length > 0
+            )
+                $autoCompleteWrapper.show();
+        });
+
+        // 검색 버튼 이벤트 핸들러
+        $searchBtn.click(function () {
+            if ($searchInput.val().length < MINIMUM_TERM_LEN) {
+                alert(
+                    "Search keyword is too short. Please use more than 2 characters."
+                );
+                return;
+            }
+            const curQuery = new URLSearchParams();
+            curQuery.append("q", $searchInput.val());
+            curQuery.append("page", 1);
+            location.href = "/" + shortLang + "/search?" + curQuery.toString();
+        });
+
+        // 자동완성 닫기 버튼
+        $autoCompleteCloseBtn.click(function () {
+            $autoCompleteWrapper.hide();
+        });
+
+        // 자동완성 방향키 탐색
+        $searchInput.keydown((e) => {
+            if (e.key === "ArrowDown") {
+                e.preventDefault();
+                traverseCursor("DOWN");
+            } else if (e.key === "ArrowUp") {
+                e.preventDefault();
+                traverseCursor("UP");
+            } else if (e.key === "Enter") {
+                e.preventDefault();
+                if (e.target.value.length < MINIMUM_TERM_LEN) {
+                    alert(
+                        "Search keyword is too short. Please use more than 2 characters."
+                    );
+                    return;
+                }
+                if (autoCompleteCursor === -1) {
+                    const curQuery = new URLSearchParams();
+                    curQuery.append("q", e.target.value);
+                    curQuery.append("page", 1);
+                    location.href = "/" + shortLang + "/search?" + curQuery.toString();
+                } else {
+                    // 키워드 완성
+                    $searchInput.val(
+                        $(
+                            ".search-autocomplete-wrapper .autocomplete-result-link[data-focused='true'] div"
+                        ).text()
+                    );
+                    // 커서 리셋
+                    traverseCursor("RESET");
+                }
+            }
+        });
+
+        // 자동완성 방향키 탐색
+        // dir: "UP" | "DOWN" | "RESET"
+        function traverseCursor(dir) {
+            const $resultNodes = $(".global-search-bar .autocomplete-result-link");
+            const canMoveDown = autoCompleteCursor < $resultNodes.length - 1;
+            const canMoveUp = autoCompleteCursor > 0;
+
+            if (dir === "RESET") {
+                $resultNodes[autoCompleteCursor].dataset.focused = false;
+                autoCompleteCursor = -1;
+            }
+            // 엣지 케이스
+            if ((dir === "DOWN" && !canMoveDown) || (dir === "UP" && !canMoveUp)) {
+                return;
+            }
+
+            // 이전 커서 비활성화
+            if ($resultNodes[autoCompleteCursor]) {
+                $resultNodes[autoCompleteCursor].dataset.focused = false;
+            }
+
+            // 이동 후 커서 활성화
+            if (dir === "DOWN") {
+                if (canMoveDown) {
+                    $resultNodes[autoCompleteCursor + 1].dataset.focused = true;
+                    autoCompleteCursor++;
+                }
+            } else if (dir === "UP") {
+                if (canMoveUp) {
+                    $resultNodes[autoCompleteCursor - 1].dataset.focused = true;
+                    autoCompleteCursor--;
+                }
+            }
+        }
+    })
+</script></div>
+
+    
+</div>
+
+        </section>
+    </div>
+
+    
+</div>
+
+    
+</div>
+<div class="keyteaser_v2 aem-GridColumn aem-GridColumn--default--12">
+</div>
+<div class="keyteaser aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="key-teaser-wrapper">
+    <div class="key-teaser-bg">
+        <picture>
+            <source srcset="/content/dam/parksystems/images/thumbnail/Keyteaser_grayBG_Mobile.jpg" media="(max-width: 750px)">
+            <img src="/content/dam/parksystems/images/thumbnail/Keyteaser_grayBG_PC.jpg" alt="" class="img-item">
+        </picture>
+    </div>
+
+    <div class="key-teaser-area ">
+        <div class="container-wrapper FlexDirection-column">
+            <div class="key-teaser-text">
+                <h5 class="key-teaser-subTitle">Company</h5>
+                <h1 class="key-teaser-title">News</h1>
+                
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="breadcrumb aem-GridColumn aem-GridColumn--default--12">
+<div class="breadcrumbs-wrapper">
+    <div class="container-wrapper cmp-breadcrumb" id="breadcrumb-bb8a5ce827" aria-label="Breadcrumb" data-cmp-data-layer="{&#34;breadcrumb-bb8a5ce827&#34;:{&#34;@type&#34;:&#34;parksystems/components/breadcrumb&#34;,&#34;repo:modifyDate&#34;:&#34;2024-03-03T11:29:05Z&#34;}}">
+        <ul class="breadcrumbs-items">
+            <li class="breadcrumbs-element cmp-breadcrumb__item-link">
+                <a itemprop="item" data-cmp-clickable class="breadcrumbs-link" href="/en"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-home.png" alt=""/>
+               
+               </a>
+            </li>
+        
+            <li class="breadcrumbs-element cmp-breadcrumb__item-link">
+                <a itemprop="item" data-cmp-clickable class="breadcrumbs-link" href="/en/news-events">
+               News &amp; Events
+               </a>
+            </li>
+        
+            <li class="breadcrumbs-element cmp-breadcrumb__item-link">
+                <a itemprop="item" data-cmp-clickable class="breadcrumbs-link" href="/en/news-events/news">
+               News
+               </a>
+            </li>
+        
+            <li class="breadcrumbs-element cmp-breadcrumb__item-link">
+                
+               Details
+               
+            </li>
+        </ul>
+    </div>
+</div>
+
+    
+
+</div>
+<main class="container responsivegrid main-content aem-GridColumn aem-GridColumn--default--12">
+    
+    <div id="container-e5d544cc64" class="cmp-container">
+        <section id="section-container-e5d544cc64">
+            
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="news_selector image aem-GridColumn aem-GridColumn--default--12">
+<div>
+    <style>
+        #news .board-view-text-wrapper p {
+            min-height: 1.5em;
+        }
+    </style>
+    <main>
+        <div id="news" class="section-wrapper-type1">
+            <div class="container-wrapper">
+                <article>
+                    <div class="aem-Grid-12 layout-type--9-2">    
+        
+                        <div class="layout-type--9-wrapper">
+                            <div class="board-view-wrapper layout-outside-border">
+                                <div class="board-view-top-wrapper">
+                                    <div class="board-view-top-item widthSize80">
+                                        <div class="board-view-top-title">[Worldfolio] Park Systems Beyond AFM: Expanding the Nanometrology</div>
+                                        <div class="board-view-top-date" id="topDate"></div>
+                                    </div>
+                                    <div class="board-view-top-icon">
+                                        <!-- <span class="board-view-share-item">
+                                            <img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-bookmark-on.png" alt="" />
+                                        </span> -->
+                                        <!-- <span class="board-view-share-item"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-download.png" alt="" /></span> -->
+                                        <span class="board-view-share-item">
+                                            <img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-share.png" class="board-sns-btn" alt=""/>
+                                            <div class="board-view-sns-wrapper">
+                                                <ul class="board-view-sns-item">
+                                                    <li class="board-view-sns-element" onclick="shareFacebook()"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-sns-facebook.png" alt=""/></li>
+                                                    <li class="board-view-sns-element" onclick="shareLinkedIn()"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-sns-linkedin.png" alt=""/></li>
+                                                    <li class="board-view-sns-element" onclick="shareTwitter()"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-sns-twitter.png" alt=""/></li>
+                                                    <li class="board-view-sns-element" onclick="clip()"><img src="/etc.clientlibs/parksystems/clientlibs/clientlib-site/resources/images/icon-copy.png" alt=""/></li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="board-view-text-wrapper">
+                                    <p style="	text-align: center;
+"><a href="https://www.theworldfolio.com/interviews/park-systems-beyond-afm-expanding-the-nanometrology-interview/6974/" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><strong>Click to see the original article on Worldfolio</strong></span></a></p><p> </p><p> </p><p><img style="	display: block;
+	margin-left: auto;
+	margin-right: auto;
+" src="/content/dam/images/news/Worldfolio_screenshot_main.jpg" alt="Worldfolio_screenshot_main.jpg" width="900" data-content="/content/dam/images/news/Worldfolio_screenshot_main.jpg"/></p><p> </p><p><img style="	display: block;
+	margin-left: auto;
+	margin-right: auto;
+" src="/content/dam/images/news/Worldfolio_screenshot_article.jpg" alt="Worldfolio_screenshot_article.jpg" width="900" data-content="/content/dam/images/news/Worldfolio_screenshot_article.jpg"/></p><p> </p><p> </p><p>Led by Dr. Sang-il Park, a pioneer in commercial AFM, <em><span style="	text-decoration: underline;
+"><a href="https://en.wikipedia.org/wiki/Park_Systems" target="_blank" rel="noopener noreferrer"><strong>Park Systems</strong></a></span></em> is leveraging strategic acquisitions and cutting-edge technological expertise to push the boundaries of nanoscale metrology portfolio.</p><p> </p><p style="	text-align: center;
+"> </p><p class="MsoNormal"><b>What are the challenges and opportunities for Korean suppliers within global supply chains?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">I believe this is indeed a new opportunity for Korean SMEs. We are well-positioned to replace some of the roles that Chinese companies have been playing. There are many areas where we compete directly—such as steel, shipbuilding, automotive batteries, and semiconductors. In these overlapping industries, Korea can become a viable alternative to China for the Western market.</p><p class="MsoNormal"> </p><p class="MsoNormal">However, one major challenge is the language barrier. Large conglomerates can afford to have English-speaking personnel, but it’s far more difficult for SMEs to hire engineers who are fluent in English. While there are English speakers, most of them do not have an engineering background, which presents a real obstacle. This is a significant issue not only for Korean society in general but especially for Korean high-tech SMEs that aim to expand globally.</p><p class="MsoNormal"> </p><p class="MsoNormal">In my case, I was fortunate to study in the United States and to launch my first business in Silicon Valley. This gave me the ability to communicate fluently in English and to build a strong global network, which in turn enabled me to attract international talent. Unfortunately, most Korean companies lack this network, struggle with language barriers, and often don’t know how to make global connections. That’s a huge hurdle.</p><p class="MsoNormal"> </p><p class="MsoNormal">I also believe that Korea’s English education system is not functioning effectively and is in urgent need of reform. That’s just my personal observation.</p><p class="MsoNormal"> </p><p class="MsoNormal">That said, Korea is a unique country with incredibly talented, intelligent, and hard-working people. Once motivated, Koreans are capable of producing extraordinary results. This is how Korea’s industrial sectors became so successful. Take the automobile industry, for example. Twenty or thirty years ago, no one imagined Hyundai could become the world’s second-largest automaker. Samsung and LG were once chasing Sony—now they lead in the global TV market. With the right environment, motivation, and incentives, Korean companies can undoubtedly rise to the top of global markets. That’s my belief in the potential of the Korean economy.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>In the semiconductor industry, Japanese and some European companies like ASML have traditionally dominated the materials and equipment sectors. However, during the trade conflict between Japan and Korea from 2018 to 2019, Korean firms proved their capacity for rapid localization. Companies like ENF Technology and Soulbrain swiftly captured domestic market share. After five or six years of solidifying their local dominance, do you believe these companies can now expand into international markets with ease?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">I don’t believe it will be easy. These Korean materials and equipment manufacturers are fundamentally local companies. They tend to follow, not lead. To become truly global players, they must overcome significant language and cultural barriers, which they have yet to do.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>Park Systems is a rare case where a Korean SME has become a global leader in its field, particularly in the <span style="	text-decoration: underline;
+"><em><a href="https://www.parksystems.com/en/products/in-line-metrology-afm" target="_blank" rel="noopener noreferrer">AFM (Atomic Force Microscopy)</a></em></span> market. What factors allowed your company to grow, expand, and lead globally—unlike many other Korean SMEs?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">I’ve been involved in AFM from the very beginning. I founded the world’s first company to commercialize AFM technology. My education and business training in Silicon Valley were instrumental. I worked with Professor Calvin Quate at Stanford University, where the AFM was invented. This gave me early exposure to groundbreaking science and an unparalleled network of investors, lawyers, and mentors.</p><p class="MsoNormal"> </p><p class="MsoNormal">When I returned to Korea, I encountered a host of structural challenges—everything from company management culture to government regulations. For the first 10 to 15 years, growth was slower than I had hoped. But we eventually crossed the threshold and built a strong business platform and global brand recognition. Since then, our growth has accelerated significantly.</p><p class="MsoNormal"> </p><p class="MsoNormal">Park Systems is now a leading manufacturer of AFM systems and other nanoscale metrology instruments. We operate globally and are fundamentally different from most Korean companies of our size. We are a leader, not a follower. Many Korean firms manufacture versions of equipment originally developed in the U.S., Japan, or Europe, and sell them domestically at lower cost or with better service proximity. That model works locally but doesn&#39;t translate well overseas, where they lose their cost advantage and run into intellectual property issues. High-tech companies often battle fiercely over patents, and many Korean firms fear litigation.</p><p class="MsoNormal"> </p><p class="MsoNormal">We are different. We lead in technology. We hold a stronger patent portfolio and maintain a robust global sales network. Because of this, we aren’t afraid to operate internationally. In fact, it’s where we thrive.</p><p class="MsoNormal"> </p><p class="MsoNormal">AFM was invented in 1985 at Stanford University, in the lab of Professor Calvin Quate. I was a graduate student at the time, and after earning my Ph.D., I saw an opportunity to commercialize this revolutionary technology. In 1988, I founded my first company in Sunnyvale, California—the heart of Silicon Valley. We were the first to introduce a commercial AFM system to the market in 1990. At the time, we were also the sole supplier of AFM probes, which are the critical components of the technology. Even our competitors had to purchase probes from us. I was generous enough to supply them.</p><p class="MsoNormal"> </p><p class="MsoNormal">After spending 15 years in the U.S., I decided to return to Korea to begin the second chapter of my life. I sold my first company to Thermo Spectra in 1997, which was later acquired by Veeco Instruments. Interestingly, that first company eventually became part of what is now our biggest competitor.</p><p class="MsoNormal"> </p><p class="MsoNormal">Later in 1997, I founded Park Systems—initially called PSIA. We rebranded on our 10th anniversary and went public in 2015. It took us 18 years to reach the IPO milestone, which was a long journey, but since then our growth has accelerated significantly. Today, our annual revenue stands at approximately $150 million. We employ around 550 full-time staff worldwide, and our market capitalization has reached about $1 billion. Our stock price rose from KRW 9,000 to KRW 200,000, making our investors very happy.</p><p class="MsoNormal"> </p><p class="MsoNormal">When you look at the growth curves among AFM manufacturers, ours is the steepest. In 2022, our revenue surpassed that of Bruker, which had long been the market share leader. We are now firmly in the number one position, followed by Bruker and Oxford Instruments.</p><p class="MsoNormal"> </p><p class="MsoNormal">Our success comes down to continuous and meticulous innovation. We transformed the core architecture of AFM by using a decoupled flexure scanner system that provides highly orthogonal scanning. We also developed the <a href="https://www.parksystems.com/en/products/in-line-metrology-afm/wafer-fabrications/nx-3dm" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>3D AFM</strong></em></span></a>, <a href="https://www.parksystems.com/en/products/in-line-metrology-afm/flat-panel-display/nx-tsh" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>Tip Scanning Head</strong></em></span></a> and pioneered True Non-Contact Mode AFM. This is a significant breakthrough—our True Non-Contact Mode remains unmatched. It’s very difficult to replicate and nobody else has managed to do it reliably. Most competitors use tapping mode, which causes tip wear and can damage the sample. Our True Non-Contact Mode avoids these issues, maintaining tip sharpness across hundreds of scans.</p><p class="MsoNormal"> </p><p class="MsoNormal">We also developed additional modes like PinPoint Nanomechanical Mode and Narrow Trench Mode, and have invested heavily in automating AFM. Traditionally, AFM required a highly skilled operator with a year or two of training. But our systems are so user-friendly now that even someone with just five minutes of instruction can generate an image. We’re also integrating hybrid solutions with <a href="https://www.parksystems.com/en/products/in-line-metrology-afm/optical-profilometry/nx-hybrid-wli" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>White Light Interferometry(WLI)</strong></em></span></a>, <a href="https://www.parksystems.com/en/products/ellipsometers/imaging-spectroscopic-ellipsometry-" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>Imaging Spectroscopic Ellipsometry (ISE)</strong></em></span></a>, and<em> <a href="https://www.parksystems.com/en/products/research-afm/afm-ir"><span style="	text-decoration: underline;
+"><strong>AFM</strong></span></a></em><a href="https://www.parksystems.com/en/products/research-afm/afm-ir"><span style="	text-decoration: underline;
+"><em><strong>-IR</strong></em></span></a> mode.</p><p class="MsoNormal"> </p><p class="MsoNormal">The basic principle of AFM involves using a sharp probe tip mounted on the end of a flexible cantilever. This is manufactured using MEMS (Micro-Electro-Mechanical Systems) processes. The probe is brought very close to the sample surface so that the atoms at the end of the tip can interact with the atoms on the surface. These atomic interactions—whether attractive or repulsive—allow us to measure forces at the nanoscale.</p><p class="MsoNormal"> </p><p class="MsoNormal">When the tip approaches without touching, the atoms attract each other. If the tip comes into contact, the interaction becomes repulsive. These tiny forces are detected by the deflection of the cantilever, which oscillates near its resonant frequency. A laser beam is focused on the top of the cantilever, and as the cantilever moves—due to surface interaction—the angle of reflection changes. By analyzing this deflection, we can determine the topography of the surface. We then scan across the X and Y axes while maintaining feedback in the Z-axis to create a height map of the sample.</p><p class="MsoNormal"> </p><p class="MsoNormal">Traditional AFMs use tube scanners, which are simpler and less expensive but introduce serious measurement limitations. When scanning in X and Y, these tube systems also affect the Z movement, creating crosstalk, background curvature, and reduced accuracy.</p><p class="MsoNormal"> </p><p class="MsoNormal">We solved this by redesigning the scanner system with decoupled flexure scanners. The XY scanner moves only the sample in the horizontal plane, while a separate one-dimensional flexure scanner moves the probe vertically. This separation allows for highly accurate measurements, free from cross-axis interference.</p><p class="MsoNormal"> </p><p class="MsoNormal">Another key breakthrough was our development of the True Non-Contact Mode. In this mode, the tip stays within the attractive force region, never entering the repulsive zone. This is different from tapping mode, which is more common because it is easier to implement—but it wears out the tip and can damage or contaminate the sample. In contrast, our True Non-Contact Mode preserves the tip&#39;s shape. The tip diameter remains consistent—around 5 nanometers—even after 100 to 200 scans. In tapping mode, the tip quickly becomes blunt.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>In your seminars, you often show data from 15,000 repeated measurements. Is there ever a point at which the tip still becomes blunt?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">Not if you stay strictly within the attractive Van der Waals interaction region. As long as you maintain that condition, there’s no tip wear. It can essentially last indefinitely. Of course, if the tip accidentally enters the tapping region—due to environmental changes or other variables—then wear can occur. But under controlled conditions, the probes used by Park Systems’ True Non-Contact Mode™ are far more durable than those by conventional modes.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>You’ve also automated the oscillation frequency and optimized scanning parameters. Can you elaborate on how you maintain such high precision during scanning?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">We meticulously optimize operational parameters, including frequency and oscillation amplitude. Most importantly, our Z-servo system must respond extremely quickly to any surface variation. If the surface height changes and the Z-servo is too slow, the tip may crash or enter tapping mode. So we’ve significantly enhanced our Z-servo performance—both mechanically and through sophisticated software and control algorithms.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>Theoretically, what you describe seems simple. Why haven’t your competitors been able to replicate this in practice?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">They haven’t invested the necessary time. In theory, any skilled engineer could develop a True Non-Contact Mode if they focused on it for two to three years. But most of our competitors have spent decades promoting their tapping mode as the best. For them to suddenly shift and claim non-contact mode is superior would essentially validate our approach. It creates a marketing dilemma for them.</p><p class="MsoNormal"> </p><p class="MsoNormal">Even if they do manage to build a non-contact mode, ours would likely still be better. We’ve accumulated years of fine-tuning and experience. In this field, that depth of refinement makes all the difference. That’s why they continue to emphasize tapping mode, even though it has clear limitations—like tip wear and sample damage, especially when measuring soft surfaces or in the presence of thin liquid layers.</p><p class="MsoNormal"> </p><p class="MsoNormal">That said, if a customer specifically requires tapping mode for hard surface measurement, we can certainly support that as well. We offer both.</p><p class="MsoNormal"> </p><p class="MsoNormal">A major driver of our growth has been the increasing demand in markets like semiconductors, advanced packaging, EUV photomasks, and display manufacturing. These industries face persistent challenges in measuring increasingly small structures with traditional tools. They are constantly searching for better metrology solutions, and this is where our AFM systems truly shine.</p><p class="MsoNormal"> </p><p class="MsoNormal">Especially in semiconductor applications, AFM offers a remarkably wide range of capabilities. People often ask, “What exactly can your AFM measure in the semiconductor process?” The answer is almost everything—from front-end to back-end processes. Our systems can measure surface roughness, height, depth, width, angle, perform CMP metrology, wafer edge metrology, defect review, and even electrical conductivity. The list goes on. As back-end processes become more complex, compact height measurement and redistribution layer metrology have grown increasingly important. We’re also contributing in the EUV mask segment, not just for defect review but even for repair.</p><p class="MsoNormal"> </p><p class="MsoNormal">We’ve worked closely with partners like IMEC, with whom we’ve had multiple joint development projects. These collaborations served as a stepping stone, establishing Park Systems as a trusted name in the semiconductor industry. Once we gained that credibility, customers started asking, “Can you measure this? Can you build that?” That was the moment we realized we could expand beyond AFM.</p><p class="MsoNormal"> </p><p class="MsoNormal">One of our first major expansions was through the acquisition of Accurion, a world leader in imaging spectroscopic ellipsometry (ISE) and <a href="https://www.parksystems.com/en/avi/products/active-vibration-isolation" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>active vibration isolation (AVI)</strong></em></span></a> systems—both of which are highly complementary to our AFM business. We are now developing an industrial version of their imaging spectroscopic ellipsometry (ISE), which is already being used in R&amp;D labs. The prototypes are ready, and we’re working closely with customers to validate their performance and secure budgets. We hope to generate our first revenue from industrial ISE this year.</p><p class="MsoNormal"> </p><p class="MsoNormal">More recently, we acquired Lyncée Tec, pioneers of <a href="https://www.lynceetec.com/dhm-digital-holographic-microscopy/" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>digital holographic microscopy (DHM)</strong></em></span></a> based in Switzerland. We believe their DHM platform holds significant promise for advanced packaging applications, particularly where speed and throughput are essential. DHM can instantly capture absolute 3D topography in milliseconds, making it highly suitable for high-volume manufacturing metrology.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>You mentioned that you&#39;re developing industrial platforms for both Lyncée Tec and Accurion. What is your expected timeline for the commercialization of these systems?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">We’re pushing to get them to market as quickly as possible. We&#39;re already measuring customer samples using research versions of these tools. For ISE, we have prototypes ready and are working through the customer validation process. It takes time to convince clients, secure their budgets, and complete the procurement cycle. But our goal is to begin generating revenue from industrial ISE within the year.</p><p style="	text-align: left;
+"> </p><p style="	text-align: left;
+"> </p><p style="	text-align: left;
+"><a href="https://www.parksystems.com/en/products/in-line-metrology-afm/wafer-fabrications/nx-wafer" target="_blank" rel="noopener noreferrer"><em><img style="	display: block;
+	margin-left: auto;
+	margin-right: auto;
+" src="/content/dam/images/news/Worldfolio_NX-wafer.jpg" alt="Worldfolio_NX-wafer.jpg" width="700" data-content="/content/dam/images/news/Worldfolio_NX-wafer.jpg"/></em></a></p><p class="MsoNormal" style="	text-align: center;
+"><a href="https://www.parksystems.com/en/products/in-line-metrology-afm/wafer-fabrications/nx-wafer" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>Park NX-Wafer</strong></em></span></a></p><p class="MsoNormal" style="	text-align: center;
+"> </p><p class="MsoNormal" style="	text-align: center;
+"> </p><p class="MsoNormal"><b>What semiconductor processes or inspection goals will ISE focus on?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">ISE is particularly effective for thin-film characterization and optical critical dimension (OCD) measurements. Traditional spot ellipsometry has limitations—the spot size is typically 20–30 micrometers and can’t be much smaller. That means the sample needs to have a uniform area large enough for the spot, which introduces potential errors if there’s a boundary or feature nearby.</p><p class="MsoNormal"> </p><p class="MsoNormal">Our imaging ellipsometry, on the other hand, illuminates the surface uniformly and collects the reflected signal using a 2D camera array. It generates hundreds of thousands of spectral data points in parallel, allowing the user to select any point of interest for detailed ellipsometric analysis. While this isn’t imaging in the conventional sense—like a microscope—it still gives you a “map” that enables far more precise measurement selection. It&#39;s a game-changer for thin-film uniformity and OCD analysis.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>Is this a combination of ISE and AFM? Are they integrated systems, or do they operate separately?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">They are separate systems, but closely related. AFM focuses on nanoscale surface metrology—step heights, roughness, angles—while imaging spectroscopic ellipsometry is highly effective for thin film characterization and uniformity analysis. Traditional ellipsometry provides only one data point per measurement, but our imaging system delivers thousands—potentially hundreds of thousands—of data points at once. This allows customers to map film variations across the entire wafer. It’s an incredibly powerful complement to AFM.</p><p class="MsoNormal"> </p><p class="MsoNormal">With Accurion, we already had a robust ellipsometry technology and industrial platform. What we’ve done is replace the AFM module with the ISE module on our inline system. We’re now actively engaging with customers to explore applications. One promising use case is defect inspection—not in the traditional sense, but for detecting process-induced thickness variations after CMP. These types of “Z-defects” can be easily missed by conventional inspection tools. ISE can catch them.</p><p class="MsoNormal"> </p><p class="MsoNormal">That said, AFM remains our core product and primary revenue driver. We offer both research and industrial AFMs. But now, with holographic microscopy and imaging ellipsometry in our portfolio, we’re integrating these into our inline metrology platform—pushing toward broader applications in high-volume semiconductor manufacturing.</p><p class="MsoNormal"> </p><p class="MsoNormal">As a global company, our headquarters is based in Suwon, Korea, but we have a strong international footprint. We operate direct subsidiaries in Japan, China, Taiwan, Singapore, India, Germany, the UK, France, as well as Accurion&#39;s office in Göttingen and Lyncée Tec’s office in Lausanne. In the U.S., our headquarters is in Santa Clara, with additional offices in Boston and Mexico City.</p><p class="MsoNormal"> </p><p class="MsoNormal">We also invest in academic outreach and knowledge sharing. Since 2014, we’ve hosted regional <a href="https://nanoscientific.org/symposium/main" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>NANOscientific Symposium</strong></em></span></a>—academic events that bring together leading researchers and customers. Last year, we held events in Bangkok, Tokyo, Suzhou, Munich, Arizona, and Busan. We also publish the <a href="https://nanoscientific.org/archive" target="_blank" rel="noopener noreferrer"><span style="	text-decoration: underline;
+"><em><strong>NANOscientific Magazine</strong></em></span></a>, which emerged from our earlier newsletter efforts. Newsletters often get discarded quickly, but a magazine has lasting value. Through it, we share stories, interviews with customers, and even insights from global leaders like the White House Science and Technology Advisor. We believe these initiatives help build trust and community in our field.</p><p class="MsoNormal"> </p><p class="MsoNormal">We’ve already become a strong and globally recognized company. I’ve achieved my initial goal: to build the world’s number one AFM company with over $100 million in revenue and a market capitalization exceeding $1 billion. But now, we’re setting our sights even higher—to become a global top-tier player. Some of the industry leaders we look to, like KLA, have a market cap of $100 billion and annual revenues of $10 billion. Of course, these companies were established decades—sometimes over a century—ago. Carl Zeiss, for example, has a long history. But we’re now taking deliberate steps to follow that path.</p><p class="MsoNormal"> </p><p class="MsoNormal">One of the most important steps is strengthening our top leadership. We’re recruiting world-class executives and board members. This year alone, we brought on two highly respected figures. Dr. Hee Gook Lee, the former CEO of LG Electronics, is now advising us after his retirement. We also welcomed Professor Kiyoung Choi, a former Minister of Science and Technology and longtime professor at Seoul National University. These are influential leaders who understand both the industry and national science policy, and they are deeply committed to our mission.</p><p class="MsoNormal"> </p><p class="MsoNormal">In addition to our acquisitions of Accurion and Lyncée Tec, we’re actively negotiating with over five other companies—domestic, European, and American. We’re expanding both our product portfolio and our geographical reach. These strategic moves are not just about growth—they are about building a robust, future-ready technology ecosystem.</p><p class="MsoNormal"> </p><p class="MsoNormal">We’re also making targeted investments in key technologies. One example is our partnership with Kim’s Reference founded by Dr. Kim from KRISS—the Korea Research Institute of Standards and Science. It’s Korea’s equivalent of NIST. Dr. Kim is a global authority in standard sample calibration for film thickness and linewidth. We’ve invested in his efforts to develop highly precise samples, which we now use in our own metrology tools.</p><p class="MsoNormal"> </p><p class="MsoNormal">Another investment was made through a German company named Lightsource.tech for semiconductor inspection. Metrology tools require extremely bright and broadband light for fast, noise-free measurements and effective spectroscopy. A powerful light source is essential for accuracy and throughput, and this partnership will help advance that capability.</p><p class="MsoNormal"> </p><p class="MsoNormal">Linear motor technology is another area we’re monitoring closely. While it’s a well-established technology, there&#39;s room for improvement in speed and stability—both critical for modern sample movement. We’re currently evaluating candidates to join us in developing or sourcing these components.</p><p class="MsoNormal"> </p><p class="MsoNormal">At the same time, we’re deepening collaborations with global academic leaders. We’re working with Professor Nakajima at the Tokyo Institute of Technology on dynamic mechanical analysis; Professor John Sader at Caltech on cantilever spring contact; Professor David Goldhaber-Gordon at Stanford University on torsional force microscopy; and most recently, we signed an agreement with Professor Eric Ma at UC Berkeley on scanning microwave impedance microscopy. Here in Korea, we’re also collaborating with Professor Kyung Woo Lee at Seoul National University, a world expert in deep image restoration.</p><p class="MsoNormal"> </p><p class="MsoNormal">This area—AI-based image restoration—is becoming increasingly important. It’s especially critical in digital holographic microscopy, where image quality depends on mathematical modeling and signal reconstruction. Artifacts and noise are a challenge, and AI can help us recover the original image more accurately. While AFM delivers more direct measurements, DHM requires complex interpretation, and that’s where our AI partnerships bring value.</p><p class="MsoNormal"> </p><p class="MsoNormal">Once we develop a new technology, we make it a priority to protect it. Our intellectual property strategy is a core part of our competitiveness. We’ve partnered with top law firms in Silicon Valley, including IP strategist Stanley Chang, who helps us craft stronger patent claims and ensures our filings are enforceable. We also work with Natalie Huh from Quinn Emanuel, the world’s largest litigation firm. It’s not just about protecting our own technology—we also have to defend against infringement claims. We&#39;ve already received letters from attorneys in the U.S. alleging that we were infringing on their patents. We responded forcefully, and they backed down. Our IP position is strong, and we intend to keep it that way.</p><p class="MsoNormal"> </p><p class="MsoNormal">We’re also investing in our people and facilities. Our new global headquarters is under construction in Gwacheon City. The structure will be completed this summer, and we plan to move in by early next year. We believe that a well-designed, inspiring workspace will boost morale, help attract top talent, and reinforce our team’s pride in what we’re building together.</p><p class="MsoNormal"> </p><p class="MsoNormal">Recently, we received coverage from a global financial analyst for the first time. Korean analysts have followed us for years, but global analyst coverage is a rare milestone for a mid-sized Korean company. We already have a strong base of foreign investors—about one-third of our shares are held by them—and I personally engage with investors through meetings and video conferences with stakeholders in New York, London, and Singapore. Investor relations are built on trust, and we work hard to maintain those relationships. They don’t want to throw money at a company they don’t know. We make sure they understand who we are, what we’ve achieved, and where we’re going.</p><p class="MsoNormal"> </p><p class="MsoNormal">Over time, I’ve come to believe that our greatest asset is not just our technology or our engineering talent—it’s our corporate culture. In the past, I would have pointed to our AFM innovation or technical expertise as our most valuable strength. But now I believe our culture—based on mutual respect, trust, and autonomy—is what truly sets us apart. Our people enjoy working here. They invite their friends to join us. That organic growth, fueled by internal satisfaction, is attracting talent, investors, partners, and loyal customers. It creates a snowball effect: as we succeed, we can treat our people better, which in turn drives even greater success.</p><p class="MsoNormal"> </p><p class="MsoNormal">This is the essence of a free market economy. While it’s true that “the rich get richer,” that’s not our ultimate goal. Personally, I have more than enough for my own needs. I believe our higher purpose is to create maximum value for others—to make people happier. We’re all part of an interconnected society, and life has meaning when our work is recognized by others as valuable. We must always think about how we’re serving our customers, colleagues, suppliers, shareholders, and society at large. Our goal is to make a positive impact.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>You also mentioned the application of AFM in photomask defect detection. Could you elaborate?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">AFM is excellent for imaging photomask defects. Traditional tools can generate defect maps, but they don’t offer the resolution or shape information AFM provides. For instance, SEM can show contrast, but it can’t determine whether a defect is a bump or a pit. AFM gives that topographical insight. In fact, it can even repair defects. We&#39;ve demonstrated cases where a protruding particle was identified and then physically brushed away using an AFM probe. In another case, a bridge defect—where two structures were mistakenly connected—was cut using a diamond AFM tip, restoring the intended separation.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>How do you return to the same location with precision after changing the tip?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">That’s part of our proprietary technology. We’ve developed high-precision stages and automated tip exchange systems. Optical vision assists with navigation, and we calibrate for thermal drift and mechanical error. On a 300mm wafer, finding the same micrometer-sized feature with nanometer accuracy is like locating a 1-meter boat in the Pacific Ocean. But we’ve built systems that can do just that.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>With major players like Intel investing heavily in EUV production, will that sector become a major revenue driver for Park Systems?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">EUV is an important segment, but it won’t single-handedly drive dramatic revenue growth. It will complement our broader portfolio. AFM is a general-purpose diagnostic tool. Initially, customers used it for various measurements—CMP, defect review, trench depth, roughness, angle, and more. We realized that AFM was becoming a reference tool for the entire process. As customers adopted it in one area, they began integrating it into additional steps, leading to recurring demand. Optical and SEM tools often require calibration, and AFM provides the gold-standard measurement. That’s how we’re growing.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>You mentioned a recent cultural shift at Park Systems. How would you like your customers to view the company today? Do you have a slogan for 2025?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">“The Best Nanoscale Metrology Solutions Partner.” That’s how we want to be known. For example, a Taiwanese customer had difficulty measuring redistribution layers using optical tools. They asked for our help. We used white light interferometry and creative scanning methods to identify the correct measurement approach. It wasn’t easy—we struggled for six months—but eventually delivered a solution they were thrilled with. They bought five systems. That’s what defines us: we respond in real time, invent on the fly, and deliver solutions that didn’t previously exist.</p><p class="MsoNormal"> </p><p class="MsoNormal">Other companies—from the U.S., Korea, and beyond—come to us with challenges. Our engineers, our academic partnerships, our speed, and our cost advantage—especially compared to U.S. and European firms—allow us to deliver meaningful results.</p><p class="MsoNormal"> </p><p class="MsoNormal"> </p><p class="MsoNormal"><b>If we return a few years from now to celebrate an anniversary with you, what would you hope to have achieved by then?</b></p><p class="MsoNormal"> </p><p class="MsoNormal">I hope we’ll continue growing—in revenue, in customer base, in reputation, and in our people’s pride. One of my greatest joys is that our employees genuinely respect and appreciate me. That’s rare for a CEO. In many companies, employees grumble about management. But at Park Systems, the culture is different. I take great pride in that.</p><p class="MsoNormal"> </p><p class="MsoNormal">Of course, the larger we become, the harder it is to maintain rapid growth. It’s easy to grow from $10 million to $15 million. But scaling from $100 million to $150 million—or beyond—is far more difficult. Still, my dream is to grow to $1 billion and ultimately become a global top-tier player. That’s the vision I’m committed to.</p><p class="MsoNormal" style="	text-align: left;
+"> </p><p style="	text-align: left;
+"> </p><p> </p><p> </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--
+                        <div class="layout-type--2-wrapper">
+                            <div class="board-view-latest-wrapper mobile-margin-top-40" data-sly-test.hasContent="{eventEnd=2026.12.03, tTitle=MRS Fall Meeting 2026, eventStart=2026.12.01, category=Exhibition, key=2026_mrs fall},{eventEnd=2026.12.02, tTitle=Investigating mixed ionic-electronic conductors with electrochemical strain wave microscopy, eventStart=2026.12.02, category=Webinar, key=wb_260601_webinar_Cramer},{eventEnd=2027.01.20, tTitle=Scanning Ion Conductance Microscopy at the Nanoscale, eventStart=2027.01.20, category=Webinar, key=wb_261015}">
+                                <div class="board-view-latest-title">Upcoming Events</div>
+                                <div id="upcomingEventsCont" class="board-view-latest-contents">
+                           
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        
+                        
+                    </div>
+
+                </article>
+            </div>
+        </div>
+    </main>
+
+</div>
+<script>
+    /* SNS Share */
+    $(".board-sns-btn").click(function () {
+        $(".board-view-sns-wrapper").toggleClass('active');
+    });
+
+    var vEStart = "2025.07.30";    
+    $("#topDate").text(dateFormat(vEStart));
+
+    function dateFormat(val) {
+        var date = new Date(val);
+    	var day = String(date.getDate()).padStart(2, '0');
+    	var month = new Intl.DateTimeFormat('en-US', { month: 'short' }).format(date);
+        //var month = ("0" + (date.getMonth() + 1)).slice(-2)
+    	var year = date.getFullYear();
+
+    	return month + "-" + day + "-" + year;
+    }
+
+    //upComingEvents
+    /*
+    var tmpList = "{eventEnd=2026.12.03, tTitle=MRS Fall Meeting 2026, eventStart=2026.12.01, category=Exhibition, key=2026_mrs fall},{eventEnd=2026.12.02, tTitle=Investigating mixed ionic\u002Delectronic conductors with electrochemical strain wave microscopy, eventStart=2026.12.02, category=Webinar, key=wb_260601_webinar_Cramer},{eventEnd=2027.01.20, tTitle=Scanning Ion Conductance Microscopy at the Nanoscale, eventStart=2027.01.20, category=Webinar, key=wb_261015}";
+    var tDetailPath = "\/en\/company\/events\/details.";
+    var arrList = tmpList.split("},{");    
+    $("#upcomingEventsCont").empty();
+    for(var i = 0; i < arrList.length; i++){                                
+        var data = arrList[i];
+        data = data.replace("{",'');
+        data = data.replace("}",'');                                
+        var tmptiurl = data.split(",");                                
+        var eventEndDate = "";        
+        var title = "";        
+        var eventStartDate = "";
+        var category = "";
+        var key = "";    
+        if(tmptiurl != null && tmptiurl != ""){
+            for(var j = 0; j < tmptiurl.length; j++){
+                var tmpData = tmptiurl[j];
+                if(tmpData.indexOf("eventEnd") != -1){
+                    eventEndDate = tmpData.replace('eventEnd=','');
+                }
+                else if(tmpData.indexOf("tTitle") != -1){
+                    title = tmpData.replace(' tTitle=','');
+                }
+                else if(tmpData.indexOf("eventStart") != -1){
+                    eventStartDate = tmpData.replace(' eventStart=','');
+                }
+                else if(tmpData.indexOf("category=") != -1){
+                    category = tmpData.replace(' category=','');
+                }
+                else if(tmpData.indexOf("key=") != -1){
+                    key = tmpData.replace(' key=','');
+                }                
+            }            
+        }        
+        var tmpData = `                                    
+                <div class="board-view-latest-items">
+                    <div class="board-list-category">`+category+`</div>
+                    <div class="board-list-title sentence-line2"><a href="`+ tDetailPath + key + `.html">`+title+`</a></div>
+                    <div class="board-view-latest-date">`+dateFormat(eventStartDate) + " - " + dateFormat(eventEndDate) +`</div>
+                </div>
+            `;
+        $("#upcomingEventsCont").append(tmpData);        
+    }
+    */
+</script>
+
+
+    
+
+
+
+</div>
+
+    
+</div>
+
+        </section>
+    </div>
+
+    
+</main>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+
+    
+    <div id="container-142fae3eb5" class="cmp-container">
+        <section id="section-container-142fae3eb5">
+            
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="footer navigation aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+<footer class="footer-navBar-wrapper">
+    <nav class="footer-navBar">
+        <div class="container-wrapper">
+            <div class="footer-navList-wrapper">
+                <div class="mobile-footer">
+                    <ul class="footer-sns">
+                        <li class="footer-sns-facebook"><a href="https://www.facebook.com/ParkSystemsAFM" target="_blank">Park Systems Facebook</a></li>
+                        <li class="footer-sns-instagram"><a href="https://www.linkedin.com/company/park-systems-afm" target="_blank">Park Systems LinkedIn</a></li>
+                        <li class="footer-sns-youtube"><a href="https://www.youtube.com/channel/UCxZUerRhOzeyI5ACcuXIjGA" target="_blank">Park Systems YouTube Channel</a></li>
+                        <li class="footer-sns-x"><a href="https://x.com/park_systems" target="_blank">Park Systems X
+                            (Twitter)</a></li>
+                    </ul>
+
+                    <ul class="footer-privacy-mobile">
+                        <li class="footer-privacy-mobile-items"><a href="/en/contact">Contact
+                            Us</a></li>
+                        <li class="footer-privacy-mobile-items"><a href="javascript:void(0)" onclick="newsclickFunc()">Newsletter</a>
+                        </li>
+                        <li class="footer-privacy-mobile-items"><a href="/en/company/imprint">Imprint</a>
+                        </li>
+                        <li class="footer-privacy-mobile-items"><a href="/en/company/privacynotice">Privacy Policy</a></li>
+                        <!-- <li class="footer-privacy-mobile-items"><a href="">Sitemap</a></li> -->
+                    </ul>
+                </div>
+                <ul class="footer-navList desktop-footer">
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Social Media</div>
+                        <ul class="footer-navList-col">
+                            <li><a href="https://www.facebook.com/ParkSystemsAFM" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://www.linkedin.com/company/park-systems-afm" target="_blank">LINKEDIN</a>
+                            </li>
+                            <li><a href="https://www.youtube.com/channel/UCxZUerRhOzeyI5ACcuXIjGA" target="_blank">YOUTUBE</a>
+                            </li>
+                            <li><a href="https://x.com/park_systems" target="_blank">X</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Products
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/products/research-afm">Research AFM
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/products/in-line-metrology-afm">Industrial AFM 
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/products/ellipsometers">Ellipsometer
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/products/digital-holographic-microscopes">Digital Holographic Microscopes
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/products/active-vibration-isolation">Active Vibration Isolation
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/products/accessories">Accessories
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Applications
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/applications/semiconductor">Semiconductor
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/polymer">Polymer
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/metal-and-ceramic">Metal and Ceramic
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/thin-film">Thin Films
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/life-science">Life Sciences
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/afm-exclusive">AFM Exclusive
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/2d-materials">2D Materials
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/surface-engineering">Surface Engineering
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/anisotropic-films">Anisotropic Films
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/photonics">Photonics
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/applications/display">Display
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Knowledge Center
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/learning-center/how-afm-works">How AFM Works 
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/learning-center/AFM-modes">AFM Modes
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/learning-center/webinar">Webinars
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/learning-center/image-gallery">Image Gallery
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/learning-center/case-study">Case Study
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Service
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/service/technicalsupport-repair">Technical Support & Repair
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/service/manualssoftware">Manuals & Software
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">News & Events
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/news-events/news">News
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/news-events/events">Events
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/news-events/nss">NANOscientific Symposium
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Company
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/company/about-us">About Us
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/company/board-of-directors">Board of Directors
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/company/corporate-management">Corporate Management
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/company/career">Career
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/company/locations">Locations
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+                    <li class="footer-navList-item">
+                        <div class="footer-navList-title">Investors
+                        </div>
+                        
+                        <ul class="footer-navList-col">
+                            
+                                    <li>
+                                        <a href="/en/investors/stock-information">Stock Information
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/investors/ir-news">IR News
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/investors/fiancial-statements">Financial Statements
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/investors/dividend-policy">Dividend Policy
+                                        </a></li>
+                                    
+                                    <li>
+                                        <a href="/en/investors/esg">ESG
+                                        </a></li>
+                                    
+                        </ul>
+                    </li>
+                    
+
+                </ul>
+                <div class="footer-navList footer-legalWrapper">
+                    <ul class="footer-legalWrapper-items">
+                        <li class="footer-copyright">
+                            <span>Copyright © 2024 Park Systems. All Rights Reserved.</span>
+                            <span id="cnonlyText1">京ICP备2020037944号</span>
+                            <span id="cnonlyText2">韩国帕克股份有限公司北京代表处</span>
+                        </li>
+                        <li class="footer-privacy desktop-footer">
+                            <ul class="footer-privacy-items">
+                                <li class="footer-privacy-link"><a href="/en/contact">Contact
+                                    Us</a></li>
+                                <li class="footer-privacy-link"><a href="javascript:void(0)" id="footer-newsletter" onclick="newsclickFunc()">Newsletter</a></li>
+                                <li class="footer-privacy-link"><a href="/en/company/imprint">Imprint</a>
+                                </li>
+                                <li class="footer-privacy-link"><a href="/en/company/privacynotice">Privacy Policy</a>
+                                </li>
+                                <li class="footer-privacy-link"><a href="https://www.parksystems.com/en/company/do-not-sell-or-share-my-data" target="_blank">Do Not Sell or Share My Data</a>
+                                </li>
+                                <!--
+                                <li class="footer-privacy-link"><a href="">Sitemap</a></li>
+                                -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+<script src="//pages.parksystems.com/js/forms2/js/forms2.min.js"></script>
+<script>
+    if ($(".header-buttons").find(".active").text() == "CHN") {
+        $("#cnonlyText1").show();
+        $("#cnonlyText2").show();
+    } else {
+        $("#cnonlyText1").hide();
+        $("#cnonlyText2").hide();
+    }
+
+    function newsclickFunc() {
+        $("#footer-newsletter").addClass("mkto-btn-disabled");
+        MktoForms2.loadForm(
+            "//pages.parksystems.com",
+            "988-FTP-549",
+            4115,
+            function (form) {
+                form.setValues({ps_Language: "en"});
+                MktoForms2.lightbox(form).show();
+                form.onSubmit(() => {
+                    var categoryList = $('input:checkbox[name="psNewsOfInterest"]:checked').val();
+                    var indexList = $('input:checkbox[name="psNewsResearchTopic"]:checked').val();
+                    if ($("html").attr("lang") != "zh-CN") {
+                        dataLayer.push({
+                            'event': 'submit_newsletter',
+                            'category': categoryList,
+                            'index': indexList
+                        });
+                    }
+                })
+                $("#footer-newsletter").removeClass("mkto-btn-disabled");
+            }
+        );
+    }
+</script>
+
+<style>
+    .footer-sns-facebook a,
+    .footer-sns-instagram a,
+    .footer-sns-youtube a,
+    .footer-sns-x a {
+        font-size: 0;
+    }
+</style></div>
+
+    
+</div>
+
+        </section>
+    </div>
+
+    
+
+</div>
+
+    
+</div>
+
+        </section>
+    </div>
+
+    
+</div>
+
+            
+   
+
+        
+    </body>
+</html>

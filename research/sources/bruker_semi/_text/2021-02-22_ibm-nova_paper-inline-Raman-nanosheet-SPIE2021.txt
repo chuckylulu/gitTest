@@ -1,0 +1,588 @@
+       PROCEEDINGS OF SPIE
+       SPIEDigitalLibrary.org/conference-proceedings-of-spie
+
+
+
+
+                   In-line Raman spectroscopy for
+                   stacked nanosheet device
+                   manufacturing
+
+
+
+
+                   Schmidt, D., Durfee, C., Li, J., Loubet, N., Cepler, A., et al.
+
+
+
+
+                                  D. Schmidt, C. Durfee, J. Li, N. Loubet, A. Cepler, L. Neeman, N. Meir, J.
+                                  Ofek, Y. Oren, D. Fishman, "In-line Raman spectroscopy for stacked
+                                  nanosheet device manufacturing," Proc. SPIE 11611, Metrology, Inspection,
+                                  and Process Control for Semiconductor Manufacturing XXXV, 116111T (25
+                                  February 2021); doi: 10.1117/12.2582181
+
+                                  Event: SPIE Advanced Lithography, 2021, Online Only
+
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021 Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                            In-Line Raman Spectroscopy for Stacked Nanosheet Device
+                                                Manufacturing
+                                D. S chmidta,*, C. Durfeea, J. Lia, N. Loubeta, A. Ceplerb, L. Neemanc, N. Meirc,
+                                                        J.. Ofekc, Y. Orenc, D. Fishmanc
+                                         a
+                                           IBM Research, 257 Fuller Road, Albany, NY, USA 12203
+                              b
+                                Nova Measuring Instruments Inc, 3342 Gateway Blvd, Fremont, CA, USA 93117
+                                 c
+                                   Nova Measuring Instruments Ltd, 5 David Fikes St, Rehovot, Israel 7610201
+                                                                               *schmidt@ibm.com
+
+
+                                                                                  ABSTRACT
+
+                In-line Raman spectroscopy for compositional and strain metrology throughout front-end-of-line manufacturing of next-
+                generation stacked gate-all-around nanosheet field-effect transistors is presented. Thin and alternating layers of fully
+                strained pseudomorphic Si(1-x)Gex and Si were grown epitaxially on a Si substrate and subsequently patterned. Intentional
+                strain variations were introduced by changing the Ge content (x = 0.25, 0,35, 0.50). Polarization-dependent in-line Raman
+                spectroscopy was employed to characterize and quantify the strain evolution of Si and Si(1-x)Gex nanosheets throughout
+                front-end-of-line processing by focusing on the analysis of Si-Si and Si-Ge optical phonon modes. To evaluate the accuracy
+                of the Raman metrology results, strain reference data were acquired by non-destructive high-resolution x-ray diffraction
+                and from destructive lattice deformation maps using precession electron diffraction. It was found that the germanium-alloy
+                composition as well as Si and Si(1-x)Gex strain obtained by Raman spectroscopy are in excellent agreement with reference
+                metrology and follow trends of previously published simulations.
+                Keywords: Raman spectroscopy, strain, stress, gate-all-around, nanosheet FET
+
+
+
+                                                                          1. INTRODUCTION
+                Stacked nanosheet gate-all-around (GAA) field effect transistors (FETs) will be the next-generation device architecture
+                replacing finFET technology either next year or in 2023.1 The new transistor type is an evolutionary step from finFETs
+                with better performance due to superior electrostatics and short channel control, for example.2 A nanosheet GAAFET may
+                be viewed, in a simplistic manner, as a finFET rotated on its side, where the fin is now a horizontal nanosheet with a gate
+                wrapped around the entire perimeter. Typically, the device comprises three or more vertically stacked individual horizontal
+                nanosheets, which serve as channels. This is accomplished by first growing alternating pseudomorphic Si(1-x)Gex and Si
+                layers on a Si substrate. Here, a perfect crystal quality is critical to achieve defect free, biaxially strained Si(1-x)Gex and
+                strain free Si single crystalline layers. This multilayer stack is then patterned in both in-plane orientations to define channel
+                length and width. Usually, the Si(1-x)Gex sheets are sacrificial and removed soon after source/drain epitaxy leaving the Si
+                sheets as transport channels.2 In order to pursue optimum transistor performance, it is desirable to increase charge carrier
+                mobility through tensile and compressive strain for nFET and pFET, respectively. The electron mobility in GAA nFET Si
+                channels is intrinsically higher than that of finFETs due to the sheet orientation and some residual tensile strain after
+                patterning. However, the advantages for nFET negatively impact the pFET hole mobility. Additionally, as the transistor
+                volume shrinks due to aggressive pitch scaling and three-dimensional stacking, traditional external channels stressors are
+                often not very effective. Besides that, integration schemes of horizontal nanosheets wrapped with high-k/metal gate
+                materials create many unconstrained free surfaces throughout the patterning process, leading to natural relaxation.
+                Overcoming these challenges requires either complex and costly manufacturing schemes or innovative strain engineering
+                approaches.3,4
+                No matter which integration scheme is pursued, the complex manufacturing process, particularly related to the channels
+                and their immediate environment, requires tight specification limits and hence additional, more advanced, and novel in-
+                line metrology capabilities compared to previous transistor architectures. Specifically, monitoring and controlling strain
+                at such small scales and within intricate nanoscale device structures is a new challenge and a suitable non-destructive and
+
+
+                                             Metrology, Inspection, and Process Control for Semiconductor Manufacturing XXXV,
+                                                 edited by Ofer Adan, John C. Robinson, Proc. of SPIE Vol. 11611, 116111T
+                                                  © 2021 SPIE · CCC code: 0277-786X/21/$21 · doi: 10.1117/12.2582181
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-1
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                fast in-line technique is critical for successful research and development as well as manufacturing. Relying on destructive
+                imaging and in-line electrical test results is not a viable option for competitive development or efficient and economical
+                high-volume manufacturing.
+                So far, quantitative strain measurements for GAAFETs are relying on scanning transmission electron microscope (STEM)
+                based techniques. The strain is measured by either nanobeam diffraction, geometrical phase analysis or most precisely by
+                precession electron diffraction (PED). Beam diameters of approximately 5 nm allow mapping of channel strain even in
+                aggressively scaled FETs with channel lengths of less than 20 nm.4-7 However, TEM techniques are time-consuming,
+                destructive, and require sample preparation, which may influence strain characteristics.
+                Non-destructive high-resolution X-ray diffraction (XRD) techniques usually require a large spot size and long
+                measurement times due to the limited brightness of available fab tools sources. Furthermore, the signal to noise ratio
+                depends on the interaction volume, which makes measurements of patterned samples with thin films and low areal density
+                difficult. With continued scaling and hence smaller pitches, larger reciprocal space maps are required to capture enough
+                information for strain evaluation, which additionally affects the measurement time. Schulze et al. reported reciprocal space
+                maps in the vicinity of the asymmetric (113) Bragg reflection parallel and perpendicular to patterned fins. While they
+                concluded that the multilayer fins are fully strained along the fin direction and partially relaxed perpendicular to it, no
+                quantitative results are presented.8
+                In this work, for the first time, in-line Raman spectroscopy is presented for non-destructive strain metrology at seven
+                different process steps throughout the front-end-of-line (FEOL) manufacturing cycle of stacked GAAFETs. The strain
+                evolution is tracked for three experimental scenarios with intentionally different initial strain conditions. Here, focus is put
+                on nFET device baseline monitoring. The determined strain is compared to reference metrology and discussed with respect
+                to recently published simulation results.5,6
+
+
+
+                                                                 2. EXPERIMENTAL DETAILS
+                For this study, stacked nanosheet GAA nFETs were manufactured in a very similar manner to what was published earlier.2
+                The nanosheet stack is composed of alternating Si(1-x)Gex and Si layers, three each, grown on a Si substrate. The only
+                intentional variation introduced in the manufacturing process was during nanosheet stack epitaxy. The experiment
+                comprises three different split conditions where the sacrificial Si(1-x)Gex nanosheet layers are pseudomorphically grown
+                with varying Ge content (nominally x = 0.25, 0,35, 0.50). This introduces different initial biaxial strain conditions since
+                the compressive strain in defect-free pseudomorphic Si(1-x)Gex layers increases monotonically with x due to the increasing
+                lattice mismatch with Si.
+                In-line polarized Raman spectroscopy measurements were carried out on a commercially available 300 mm fab tool (Nova
+                ELIPSON) after seven different processing steps throughout the front-end of line manufacturing cycle: (i) post nanosheet
+                stack epitaxy, (ii) post fin patterning, (iii) post dummy gate patterning, (iv) post fin recess (second fin patterning), (v) post
+                source/drain (S/D) epitaxy, (vi) post dummy gate removal, and (vii) post channel release. Multiple targets with varying fin
+                and gate critical dimensions (CDs) were measured for 21 fields across the wafer to evaluate the dimensional dependence
+                of strain as well as the across wafer characteristics. The experimental settings are such that most if not all Si and Si(1-x)Gex
+                nanosheets contribute to the Raman scattering response. Hence results must be understood as average characteristics of all
+                probed sheets over an array of multiple fins and gates where present.
+                After the nanosheet stack epitaxy in-line high-resolution ω-2θ XRD scans (Bruker JVX7300LSI) around the (004) Bragg
+                reflection were analyzed to determine sheet thickness and Ge content. Data was acquired at five different locations across
+                the wafer. Additionally, asymmetric (113) reciprocal space maps were acquired to confirm defect-free pseudomorphic
+                growth of the Si(1-x)Gex sheets. Due to the long measurement times, only one RSM was acquired per sample. With the
+                confirmation of defect-free single crystalline films, the in-plane sheet strain can then be calculated based on the Ge content
+                dependent alloy lattice mismatch.9
+                Furthermore, in-plane Si(1-x)Gex sheet strain based on destructive lattice deformation maps was calculated post fin
+                patterning. The maps were determined from nano-beam PED patterns acquired with a convergence semi-angle of 2.5 mrad,
+                a beam precession at 200 Hz at an angle of 0.35°, and an exposure time of 50 ms. The unstrained Si reference is taken
+                from the fin base away from the nanosheet stacks. 7
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-2
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                                                                  3. RAMAN SPECTROSCOPY
+                Raman spectroscopy has long been shown to be an excellent non-destructive technique to measure stress in Si-based
+                semiconductor devices.10-12 It relies on inelastic scattering of incident photons, which interact with vibrational energy states
+                of the sample system. The scattered light can be either lower (Stokes Raman scattering) or higher (anti-Stokes Raman
+                scattering) in energy and the magnitude of the shift corresponds to the specific vibrational modes. The energy shift depends
+                strongly on the exact geometry and length of atomic bonds and hence the Raman scattering response is a unique signature
+                of composition and structure. Therefore, analyzing the Raman fingerprint of a sample allows for determination of
+                characteristics such as composition, strain, and crystallinity, for example.
+                From an experimental point of view, the choice of excitation energy along with polarization settings within the incident
+                and scattered beam paths are most critical considerations. Depending on the sample under investigation, the incident
+                wavelength determines penetration depth and Raman scattering efficiency. For example, the penetration depth for an
+                excitation wavelength of 400 nm in SiGe25 is about 30 nm, while 450 nm penetrate already around 200 nm into the film.
+                Hence, shorter wavelengths probe rather in the vicinity of the surface, and with longer wavelengths, information from
+                deeper sample regions can be accessed. The Raman scattering efficiency and therefore the Raman peak intensity strongly
+                depends on the composition of Si(1-x)Gex, for instance. Shorter wavelengths are desired for silicon-rich and longer
+                wavelengths for germanium-rich alloys, respectively.13
+                Equally important is polarization control when measuring single crystalline films or anisotropic samples, for instance. Yoo
+                et al. have shown the polarization-dependence of Raman signals from bare Si wafers: the intensity as well as the peak
+                position depend on the crystallographic orientation.14 Particularly important are polarization-dependent Raman
+                measurements when the samples are patterned. Figure 1a illustrates how the Raman scattering intensities as a function of
+                wavenumber depend on the polarization orientation. Here, the sample is a stack of alternating pseudomorphic SiGe35 and
+                Si layers on a Si substrate post patterning (Figure 1b). A gradual transition of the polarization direction from parallel to
+                perpendicular to the fins reveals successively dramatic changes. The peak intensity around 510 cm-1 steadily decreases
+                while the position remains constant. The peak around 520 cm-1 is slightly increasing in intensity and shifting toward higher
+                wavenumbers. Raman selection rules and polarization-specific near-field interactions are responsible for the observed
+                Raman spectra. Finite difference time domain (FDTD) simulations show that when the light polarization is parallel to the
+                fins, the electric field is concentrated within the fin feature and the response dominated by the stacked Si65Ge35 and Si
+                layers (Figure 1c). With light polarization in the orthogonal direction (perpendicular to the fins), the electric field is mostly
+                excluded from the fin and the observed Raman spectrum is dominated rather by the Si substrate (Figure 1d). Since Raman
+                scattering depends on the fourth power of the local electric field, the simulations indicate that polarization-dependent
+                measurements are highly selective.
+
+
+
+
+                      Figure 1. (a) Raman scattering intensity as a function of wavenumber and polarization orientation for a patterned stack of
+                      alternating SiGe35 and Si layers on a Si substrate. The polarization direction is gradually rotated from parallel (blue) to
+                      perpendicular (red) to the fins; (b) schematic of the fin with the multilayer nanosheet stack, the arrows indicate parallel (blue)
+                      and perpendicular (red) configurations; FDTD simulations for (c) parallel and (d) perpendicular polarizations illustrate the
+                      electric field distribution.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-3
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                Figure 2 depicts Raman spectra acquired before patterning for the three sample scenarios with varying Ge content that are
+                considered for this study (SiGe25, SiGe35, SiGe50). Additionally, a representative high-angle annular dark-field (HAADF)
+                STEM cross-section image and qualitative elemental maps of Si and Ge for the SiGe35 sample post fin patterning are
+                presented. The Raman spectra are dominated by optic phonons involving Ge-Ge, Si-Ge, and Si-Si stretching motions at
+                around 300, 400, and 500 cm-1, respectively. In addition to these peaks, each spectrum contains some more weak features
+                between 425 and 475 cm-1. Careful examination of the spectra shows that the Ge-Ge and the Si-Ge vibrational modes are
+                shifting to higher wavenumbers when the alloy becomes more germanium-rich. The Si-Si stretching mode is split and two
+                peaks appear: one at around 520 cm-1 independent of the Ge content and another one below that shifts to lower
+                wavenumbers with increasing Ge content. This behavior is well understood, and several studies have investigated and
+                characterized the mode shifts.15,16 The most intense Raman peak at around 520 cm-1 originates from Si-Si optic phonons
+                in the strain free Si substrate. The second, smaller peak adjacent to it is caused by Si-Si stretching motions within Si(1-x)Gex
+                layers and therefore depends on the Ge content x.
+
+
+
+
+                      Figure 2. Raman spectra of the three nanosheet stack samples under investigation (SiGe25, SiGe35, SiGe50) acquired after
+                      deposition and before patterning. The images on the right show a representative dark-field cross-section of the SiGe35 after
+                      the first patterning step (top) together with qualitative elemental mapping of Ge (middle) and Si (bottom).
+
+
+                In addition to composition, the three optic phonon modes Si-Si, Si-Ge, and Ge-Ge also exhibit a characteristic shift in the
+                presence of external strain ε. For this study, composition x and strain ε of all samples are calculated based on expressions
+                for the experimentally determined peak positions of Si-Si (ωSi-Si) and Si-Ge (ωSi-Ge) published by Tsang et al.15:
+                                                              𝜔𝑆𝑖−𝑆𝑖 = 520.2 − 62.0𝑥 − 815𝜀,                                  (1)
+                                                              𝜔𝑆𝑖−𝐺𝑒 = 400.5 + 14.2𝑥 − 576𝜀.                                  (2)
+                These empirical linear approximations are very good descriptions for samples with a Ge content of 0 < x < 0.5. The Ge-
+                Ge mode, the weakest of all three, it is not considered for any compositional or strain calculations here. As observed in
+                Figure 2, and confirmed by Eqs. (1) and (2), the Si-Si and Si-Ge phonon mode shift to lower and higher wavenumbers
+                with increasing Ge content x, respectively. In the case of external strain, both modes red-shift to lower wavenumbers but
+                with different slopes.
+
+
+
+                                                                4. RESULTS AND DISCUSSION
+                4.1 Comparison to Reference Metrology
+                To evaluate the validity of composition and strain results obtained by Raman scattering peak analyses and subsequent
+                calculations with Eqs. (1) and (2) the data can be compared to reference metrology. First, the crystal quality of all wafers
+                is evaluated by RSMs acquired in the vicinity of the asymmetric (113) Bragg reflection (Figure 3a-c). The maps confirm
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-4
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                that all samples are fully strained as evidenced by the fact that the diffraction peaks from the substrate and the Si(1-x)Gex
+                layers line up in the horizontal direction. Furthermore, the absence of any dislocation scatter around the diffraction peaks
+                from the layers indicates a defect-free pseudomorphic growth.12
+                The sheet-specific Ge content of each wafer is determined by fitting the acquired ω-2θ XRD scans around the (004) Bragg
+                reflection. The average Ge content of all three SiGe sheets is then compared to Raman, which also measures an average
+                of the probed sheets, from the same five locations. The correlation plot of XRD and Raman results for composition shows
+                that both techniques are in excellent agreement with R2 = 0.996 and a slope close to one (Figure 3d). Furthermore, the
+                actual Ge content is close to target. Figure 3e depicts the correlation plot of the in-plane strain as determined by Raman
+                and XRD. Equally good agreements are observed as for composition. Note that the XRD strain values are calculated,
+                location-specific averages of all three Si(1-x)Gex sheets using the XRD determined Ge content and assuming fully strained
+                layers. Raman results yield a compressive strain of about -0.9% for wafers with x = 0.25 and -1.8% for wafers with x = 0.5.
+                It is noticeable, that the agreement between both techniques for the wafer with the nominally SiGe50 layers is not as good
+                as for the other two wafers with SiGe25 and SiGe35 sheets. This is attributed to the fact that x = 0.5 is just beyond the
+                validity range of Eq. (2). Specifically, for germanium-rich alloys, the linear approximation used here starts failing to
+                describe the Ge content dependent Raman shift behavior of the Si-Ge phonon accurately.17 Hence, with equations
+                optimized for germanium-rich alloys an accuracy improvement between Raman and XRD can be expected.
+
+
+
+
+                      Figure 3. Measured RSMs in the vicinity of the asymmetric (113) reflection from fully strained nanosheet stacks with (a)
+                      SiGe25, (b) SiGe35, and (c) SiGe50 layers; and correlation plots for results from Raman spectroscopy and XRD for (d)
+                      composition and (e) strain.
+
+
+                Another comparison to reference was done after fin patterning, i.e. after the nanosheet stack is etched to form a line and
+                space grating-like structure. Here, the reference technique is destructive PED and fins with a CD of 50 nm were
+                characterized. Figure 4 shows cross-fin HAADF STEM images of all three samples together with the corresponding in-
+                plane PED lattice deformation maps. The color coding refers to the lattice parameter change relative to the unstrained Si
+                substrate. It is evident that the patterning leads to a partial relaxation within the Si(1-x)Gex sheets, which is most pronounced
+                at the edges and due to the creation of the unconstraint surfaces. The in-plane deformation and calculated relaxation are
+                proportional to the Ge content and most pronounced for the wafer with SiGe 50 sheets. The average relaxation along the x-
+                direction considering the lattice deformation of all three sheets is 40.4%, 71.8%, and 75.0% for the wafers with SiGe 25,
+                SiGe35, and SiGe50 sheets, respectively.
+                Furthermore, relaxation of the compressively strained Si (1-x)Gex sheets induces a tensile strain within the Si sheets. The
+                finite element method (FEM) simulation depicted for the sample with the SiGe35 sheets is in good agreement with the PED
+                maps and illustrates the above discussed behaviors clearly. 5,6 For this study, no PED lattice deformation maps along the
+                fins were obtained (along the y-direction). However, it is known from previous studies on wafers manufactured in an
+                identical fashion that, for practically infinitely long fins, no relaxation occurs and the SiGe sheets are still fully strained.7
+                Simulations for fins with a length of 500 nm show that due to the Poisson effect tensile strain also appears in the Si sheets
+                along the fins (y-direction), although at lower amounts.5 The y-direction becomes the channel and hence transport direction,
+                and therefore the induced strain is beneficial for nFET devices since electron mobility is increased in tensile Si.
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-5
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                      Figure 4. HAADF STEM and corresponding PED lattice deformation maps for SiGe25, SiGe35, and SiGe50. The scale bar
+                      denotes the lattice deformation with respect to the unstrained Si substrate. The FEM simulation for the SiGe35 sample is also
+                      shown for clarity.
+
+
+                To compare the PED strain results with Raman, first the average in-plane strain was calculated by averaging the sampled
+                values across fin with the value for the respective fully strained direction along the fin. The computed average PED in-
+                plane strain is then compared with the strain from Raman using scattering results obtained with polarization perpendicular
+                to the fin direction and the correlation is depicted in Figure 5. Both results are in good agreement with R2 = 0.93 and a
+                slope of greater than 0.9.
+
+
+
+
+                      Figure 5. Average in-plane stain obtained by PED in comparison with Raman results obtained with polarization perpendicular
+                      to the fin direction.
+
+
+                4.2 Raman Strain Monitoring
+                With the assurance that strain results obtained by Raman spectroscopy are in good agreement with reference metrology
+                for blanket and patterned targets, all presented strain results from here on are from Raman metrology only. Figure 6a
+                illustrates the compressive strain in Si(1-x)Gex sheets for all three samples as a function of all 21 dies measured across the
+                wafer. The four graphs correspond to measurements of an unpatterned blanket target and three patterned targets with
+                different fin CDs (40, 50, and 70 nm). A representative cross-section of the patterned target with 40 nm fin CD is also
+                depicted (inset in Figure 6b). As discussed already before, the strain increases with Ge content due to the increasing lattice
+                mismatch. The consistent measurements across the wafer indicate that metrology noise and processing variations are very
+                low, and no across wafer signature is observed. The average across wafer Ge content determined by Raman is 25.2, 37.2,
+                and 49.2% for the nominally SiGe25, SiGe35, and SiGe50 samples, respectively. With patterning and the creation of
+                unconstraint surfaces, relaxation occurs, which depends on the fin CD, i.e., with smaller CDs greater relaxation is observed.
+                This can be explained with the increasing surface to volume ratio with decreasing CDs and hence the increasing dominance
+                of the strong edge relaxation. Across the three samples, the average relaxation is approximately constant with 19, 22, and
+                25% for the 70, 50, and 40 nm features, respectively.
+                Figure 6b shows the same graph but for tensile Si sheets. Note that at the unpatterned blanket stage, the Si sheets do not
+                exhibit any strain. In this case, the Si-Si LO-TO Raman phonon of the unstrained Si sheets is identical to the phonon mode
+                of the strain-free Si substrate. Hence the simulated data points at zero strain are not measurements and only added for
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-6
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                convenience. Once the blanket multilayer stack is patterned and the strained Si(1-x)Gex relaxes, a tensile strain is induced
+                in the Si sheets. The tensile strain in Si depends on the Ge content within the Si(1-x)Gex and on the sheet CD. The Si strain
+                for the wafer with the SiGe50 sheets is about a factor of two larger compared to the stacks with SiGe25 sheets. Furthermore,
+                the sheets with the smallest CD (40 nm) exhibit the largest strain and there is an approximately linear relationship between
+                strain and CD within the measured range.
+
+
+
+
+                      Figure 6. Si(1-x)Gex (a) and Si (b) strain for blanket and three different fin CDs (40, 50, and 70 nm) as a function of measured
+                      dies across the wafer. The three vertical sections in (a) and (b) represent the three different samples with SiGe25, SiGe35, SiGe50
+                      sheets. The inset in (b) shows a STEM cross-section of the SiGe25 sample with 40 nm fin CD. All results are obtained with
+                      polarization along the fin direction.
+
+
+                As discussed earlier already, measured strain also depends on the polarization direction of the probing light. Polarization-
+                dependent results of the compressive strain in Si(1-x)Gex after fin patterning are shown in Figure 7. The box chart is
+                vertically sectioned accommodating the three sample scenarios and the x-axis sorts the four targets by increasing CD (the
+                unpatterned blanket can be understood as having an infinitely large CD). The blanket strain probed with parallel and
+                perpendicular polarization states is practically identical. This is expected as the Raman peak position for two orthogonal
+                directions from a Si (100) wafer are identical.14 The patterned sites on the other hand exhibit a strong polarization-
+                dependent strain difference. When probing the strain with polarization parallel to the fins, the value is larger compared to
+                a polarization perpendicular to the fins. This general observation is also in agreement with previously published PED
+                results and corresponding simulations.5 Furthermore, the compressive strain difference increases significantly with
+                decreasing CD, and the measurement with perpendicular polarization is more sensitive to CD changes. In general, the
+                trend for the wafers with different Ge concentrations are comparable but differ in amplitude. Note that the far-field Raman
+                scattering of patterned Si and Si(1-x)Gex nanosheet stacks is a complex response depending on electric field localizations,
+                polarization dependent selection rules for backscattering from the (001) surface (relaxed due to patterning), and three
+                different phonon modes.11,18 Simulations show that with a polarization along the fin direction the electric field is mostly
+                localized withing the fin with a dominant LO phonon (Figure 1c). In this measurement configuration the strain in the center
+                of the fin along the fully strained direction is the dominant part of the signal. In the orthogonal direction, while the electric
+                field is mostly excluded from the fins (Figure 1d), the three phonon modes (TO1, TO2, and LO) related to the nanosheet
+                stack contribute similarly to Raman scattering from all parts of the sheets. This happens to be a very good measure of the
+                average in-plane strain here as shown in Figure 5. Detailed in-plane strain decomposition is possible by analyzing multiple
+                polarization-dependent metrology configurations but is beyond the scope of this work.
+
+
+                4.3 Strain Tracking Through FEOL Patterning
+                Figure 8 shows the SiGe25 strain evolution through FEOL patterning after six important processing steps: blanket
+                (nanosheet stack deposition), FinRIE (fin patterning along y; “nanosheet stack lines”), GateRIE (dummy gate patterning),
+                FinRecess (fin patterning along x; “nanosheet stack pillars”), S/D epi (Si:P epitaxy), and PolyPull (dummy gate removal).
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-7
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                The five insets at the top schematically depict the structure at the respective processing step with an orientation parallel to
+                the original fin direction (channel direction). PolyPull is the last opportunity to measure the sacrificial Si(1-x)Gex sheets as
+                they get removed at the next processing step. Focus is put on nFET devices and polarization along the y-direction (original
+                fin direction). The boxes and whiskers represent measured values for all fin and gate CDs and indicate the across wafer
+                variation convoluted with some metrology uncertainty.
+
+
+
+
+                      Figure 7. Polarization dependence of Si(1-x)Gex strain results post fin RIE. The chart is split into three vertical sections
+                      representing the three sample types with different Ge content under investigation. The x-axis within each section groups the
+                      results by fin CD and includes the unpatterned blanket site. The blue and red boxes denote the results for polarization parallel
+                      and perpendicular to the fins, respectively. The black arrows are merely a guide to the eye.
+
+
+
+
+                      Figure 8. SiGe25 strain evolution through FEOL patterning measured after six processing steps. Results depicted are for nFET
+                      devices and polarization along the y-direction. The insets at the top schematically depict the structure at the respective
+                      processing step with a view parallel to the y-direction (along the fins).
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-8
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                As discussed before, processing starts with fully strained SiGe25 layers at the blanket stage due to a defect-free
+                pseudomorphic growth. After the first patterning step (FinRIE) already the most significant impact on strain is observed
+                with on average >20% relaxation. At GateRIE a small relaxation is observed, which is mostly attributed to several thermal
+                processing steps within the fin module. Note that at GateRIE the major contribution to the Raman response is from the
+                exposed fin areas not covered by the dummy gate. The next step is FinRecess, which is a fin patterning perpendicular to
+                the original fin direction defining the gate length. This leaves nanosheet stack pillars with dimensions of the fin CD in one
+                direction and dummy gate CD in the other direction. On average, some further relaxation is observed, which is due to the
+                creation of more unconstraint surfaces. Additionally, an increase in the data spread is noticed and mainly caused by the
+                influence of the now present and varying gate CD. Similar to previously discussed trends related to the fin CD, with
+                decreasing gate CD the sheet relaxation increases but not as dramatic as compared to what was measured at FinRIE.
+                Nonetheless, the gate CD-dependent strain behavior does not explain all observed variation. The reduced amount of sheet
+                volume together with the polycrystalline dummy gate, which causes a broad Raman background thereby contributing to
+                measurement uncertainty, and likely some process related variations add to the overall data spread. Note that light needs
+                to pass through the polycrystalline dummy gate twice before Raman scattering can be collected.
+                For this wafer, the strain remains approximately constant after S/D epitaxy with an equally large distribution. After
+                PolyPull, when all polycrystalline dummy gate material is removed, an increased compressive SiGe25 strain is measured
+                again. Further studies also supported by strain modeling are required to fully understand what is happening. Possibilities
+                may be related to dummy gate clamping, S/D epi strain, processing, or strain modeling inaccuracies due to the
+                polycrystalline material at the previous steps.
+
+
+
+
+                      Figure 9. (a) Tensile Si strain evolution through FEOL patterning measured after six processing steps, where each box per
+                      step represents a different fin CD. Results depicted are for nFET devices with SiGe25 sheets; (b) Si stress post channel release
+                      as a function of fin CD and Ge%. Only strain and stress values from measurements with polarization along the y-direction are
+                      compared.
+
+
+                Figure 9a depicts the Si tensile strain evolution through FEOL patterning after six important processing steps: FinRIE,
+                GateRIE, FinRecess, S/D epi, PolyPull, and Release. The latter step refers to the removal of the sacrificial SiGe25 sheets.
+                At each step the strain is plotted for all three fin CDs. The boxes and whiskers represent all measured values and the across
+                wafer variation convoluted with some metrology uncertainty. Note that the blanket step is not included because the Si
+                sheets do not exhibit any strain before patterning. The results at FinRIE have been discussed in detail already above (Figure
+                6b); briefly, CD-dependent tensile strain is generated by the SiGe25 relaxation. It is noticeable at GateRIE that the
+                difference between the three fin CDs is less pronounced as compared to FinRIE and mainly related to the strain decrease
+                of the 40 and 50 nm device structures. This may be caused by thermal processing in the fin module. At FinRecess, there
+                is a small increase in strain due to further edge relaxation of the SiGe25 sheets along with a significant increase in the data
+                spread. This data spread increase was also observed for the SiGe25 strain at the same process step and is related to the
+                different gate CDs with additional contributions from possible process variations and an increased measurement
+
+
+
+
+                                                                        Proc. of SPIE Vol. 11611 116111T-9
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                uncertainty due to the smaller Si sheet area located underneath the thick polycrystalline gates. A substantial increase post
+                S/D epitaxy is observed with no major strain changes transitioning to PolyPull. After removal of the polycrystalline dummy
+                gate material the data spread decreases again slightly. Note that since the measured devices are nFETs, the S/D and the
+                channel are comprised of epitaxial Si. It has been confirmed that the selected experimental settings allow for probing the
+                Si nanosheet channels only, independent of the S/D region. Choosing a different measurement configuration, it is possible
+                to probe the S/D epitaxial Si:P only.
+                After the complete removal of the sacrificial SiGe25 nanosheets (Release), a significant size-dependent strain relaxation is
+                observed. However, the Si nanosheets still remain under tensile strain. Now, the smallest fin CD exhibits also the smallest
+                tensile strain and with increasing CD the strain increases substantially. This trend is opposite to what was observed at
+                FinRIE and likely related to edge relaxation, which is more pronounced when the surface to volume ratio is large. The
+                gate CD plays a minor role only at PolyPull and Release and is not discussed.
+                A more detailed analysis after the Release step is presented in Figure 9b. The Si strain was converted to stress in GPa using
+                a Young’s modulus E = 180 GPa. Besides looking at CD-dependent stress behavior, results from the wafers with different
+                Ge content are presented. For each measured CD, the stress increases with Ge content. This means that strain tuning of the
+                Si channel is possible by variation of the Ge content in the sacrificial Si (1-x)Gex nanosheets.
+                Most observed trends are in agreement with previously published simulations by Reboh et al.6 Specifically, the emergence
+                of tensile strain after fin patterning and the fact that tensile strain post channel release depends on the Ge content of the
+                sacrificial Si(1-x)Gex nanosheets. Notably, simulations suggest an average stress of approximately 0.3 GPa for devices using
+                sacrificial SiGe30, which is close to what is measured by Raman spectroscopy on wafer.
+
+
+
+                                                            5. CONCLUSIONS AND OUTLOOK
+                In-line Raman spectroscopy for Si and Si(1-x)Gex nanosheet strain metrology throughout the front-end-of-line
+                manufacturing cycle of next-generation stacked gate-all-around nanosheet field-effect transistors was presented and results
+                discussed. Three samples with intentional strain variations, by changing the Ge content (x = 0.25, 0,35, 0.50) of the
+                pseudomorphic Si(1-x)Gex nanosheets, were manufactured and measured at seven critical processing steps using
+                polarization-dependent in-line Raman spectroscopy. To characterize and quantify the strain evolution, the precise position
+                of the Si-Si and Si-Ge optical phonon modes was determined at each process step, based on which composition and strain
+                can be calculated.
+                The importance of excitation wavelength was discussed with regards to penetration depths and scattering cross-sections.
+                It was highlighted how critical polarization-dependent measurements are for blanket films and particularly when
+                evaluating patterned anisotropic samples. Especially when characterizing orientation-dependent strain or when epitaxial
+                Si in channel and source/drain needs to be characterized independently, for instance. While a detailed strain decomposition
+                was not within the scope of this work, it was demonstrated that excitations parallel and perpendicular to patterned fins
+                yield different strain results and the observed trends agree with PED and simulations.5
+                The accuracy of the Raman metrology was confirmed with reference data for composition and strain obtained after
+                nanosheet stack epitaxy on unpatterned targets by non-destructive high-resolution x-ray diffraction. It was found that both
+                methodologies are in excellent agreement. Additionally, lattice deformation maps determined from precession electron
+                diffraction after the first line and space patterning were used to calculate strain. A comparison to Raman spectroscopy
+                revealed a very good agreement and helped understanding of polarization-dependent settings.
+                Monitoring the strain evolution of Si sheets through patterning processes, it was found that the experimentally determined
+                results from in-line Raman spectroscopy follow trends of previously published simulations.6 Specifically, a successively
+                increasing relaxation of the compressive Si(1-x)Gex strain after FinRIE (nanosheet stack lines) and FinRecess (nanosheet
+                stack pillars) induces an increasing tensile strain in the Si sheets. The strain is strongly size-dependent, and the tensile Si
+                sheet strain can be engineered by Ge content variation of the sacrificial layers. The absolute value of the calculated Si
+                nanosheet stress post channel release agrees with FEM simulations.
+                The presented in-line Raman metrology is developed for non-destructive nFET device baseline monitoring. Even more
+                important is strain metrology for pFET devices particularly because complex strain engineering approaches are developed
+                to boost hole mobility.4 While the electron mobility in nanosheet devices is much better compared to finFETs due to the
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111T-10
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                channel orientation and the intrinsic tensile strain induced by the sacrificial sheets, the hole mobility in the same channels
+                is rather low. Therefore, compressive Si(1-x)Gex channels are desired. Front-up dual processing is complex and costly, hence
+                an ‘SiGe channel last’ approach has been proposed recently.4 The innovative part starts post Si(1-x)Gex channel release and
+                the method relies on trimming down the Si channels to a thickness of about 2 nm before growing a pseudomorphic Si(1-
+                x)Gex cladding all around the channel. In-line strain monitoring with Raman spectroscopy at multiple processing steps
+                within this flow (e.g. after trimming and after Si(1-x)Gex growth) will be an invaluable addition to ensure successful
+                development and consistent high volume manufacturing of these next-generation gate-all-around nanosheet devices.
+
+
+
+                                                                   6. ACKNOWLEDGEMENTS
+                The authors would like to thank Marjorie Cheng, Jennifer Fullam, Gilad Barak, John Gaudiello, Raja Muthinti, Michael
+                Sendler, Mary Breton, Nelson Felix, and Bala Haran for support of this work.
+
+
+
+
+                                                                                REFERENCES
+
+
+                [1] M. Lapedus, “New Transistor Structures At 3nm/2nm,” 25 January 2021, <https://semiengineering.com/new-
+                     transistor-structures-at-3nm-2nm/> (02 February 2021)
+                [2] N. Loubet, T. Hook, P. Montanini, C.-W. Yeung, S. Kanakasabapathy, M. Guillom, T. Yamashita, J. Zhang, X. Miao,
+                     J. Wang, A. Young, R. Chao, M. Kang, Z. Liu, S. Fan, B. Hamieh, S. Sieg, Y. Mignot, W. Xu, S.-C. Seo, J. Yoo, S.
+                     Mochizuki, M. Sankarapandian, O. Kwon, A. Carr, A. Greene, Y. Park, J. Frougier, R. Galatage, R. Bao, J. Shearer,
+                     R. Conti, H. Song, D. Lee, D. Kong, Y. Xu, A. Arceo, Z. Bi, P. Xu, R. Muthinti, J. Li, R. Wong, D. Brown, P. Oldiges,
+                     R. Robison, J. Arnold, N. Felix, S. Skordas, J. Gaudiello, T. Standaert, H. Jagannathan, D. Corliss, M.-H. Na, A.
+                     Knorr, T. Wu, D. Gupta, S. Lian, R. Divakaruni, T. Gow, C. Labelle, S. Lee, V. Paruchuri, H. Bu, M. Khare, “Stacked
+                     Nanosheet Gate-All-Around Transistor to Enable Scaling Beyond FinFET,” Symp. VLSI Tech., 230–231 (2017).
+                [3] G. Tsutsui, S. Mochizuki, N. Loubet, S. W. Bedell, D. K. Sadana, “Strain engineering in functional materials,” AIP
+                     Advances 9, 030701 (2019).
+                [4] S. Mochizuki, M. Bhuiyan, J. Zhang, H. Zhou, E. Stuckert, J. Li, K, Zhao, M, Wang, V. Basker, N. Loubet, D. Guo,
+                     B. Haran, H. Bu, “Stacked Gate-All-Around Nanosheet PFET with Highly Compressive Strained SiGe Channel,”
+                     2020 IEEE International Electron Devices Meeting (IEDM).
+                [5] S. Reboh, R. Coquand, N. Loubet, N. Bernier, E. Augendre, R. Chao, J. Li, J. Zhang, R. Muthinti, V. Boureau, T.
+                     Yamashita, O. Faynot, “Imaging, Modeling and Engineering of Strain in Gate-All-Around Nanosheet Transitors,”
+                     2019 IEEE International Electron Devices Meeting (IEDM).
+                [6] S. Reboh, R. Coquand, S. Barraud, N. Loubet, N. Bernier, G. Audoit, J.-L. Rouviere, E. Augendre, J. Li, J. Gaudiello,
+                     N. Gambacorti, T. Yamashita, O. Faynot “Strain, stress, and mechanical relaxation in fin-patterned Si/SiGe
+                     multilayers for sub-7 nm nanosheet gate-all-around device technology”, Appl. Phys. Lett. 112, 051901 (2018).
+                [7] J. Li, S. Mochizuki, J Zhang, N. Loubet, J. Gaudiello, B. Haran, “Precession Electron Diffraction (PED) Strain
+                     Measurements in Stacked Nanosheet Structures,” Microsc. Microanal. 25, Suppl 2 (2019).
+                [8] A. Schulze, R. Loo, L. Witters, H. Mertens, A. Gawlik, N. Horiguchi, N. Collaert, M. Wormington, P. Ryan, W.
+                     Vandervorst, M. Caymax, “Strain and Compositional Analysis of (Si)Ge Fin Structures Using High Resolution X-
+                     Ray Diffraction,” Phys. Status Solidi C 14, 1700156 (2017).
+                [9] D. De Salvador, M. Petrovich, M. Berti, F. Romanato, E. Napolitani, A. Drigo, J. Stangl, S. Zerlauth, M. Mühlberger,
+                     F. Schäffler, G. Bauer, P.C. Kelires, “Lattice parameter of Si1−x−yGexCy alloys,” Phys. Rev. B 61, 12005 (2000).
+                [10] I. De Wolf, “Micro-Raman spectroscopy to study local mechanical stress in silicon integrated circuits,” Semicond.
+                     Sci. Technol. 11, 139 (1996).
+                [11] T. Nuytten, T. Hantschel, D. Kosemura, A. Schulze, I. De Wolf, W. Vandervorst, “Edge-enhanced Raman scattering
+                     in narrowsGe fin field-effect transistor channels,” Appl. Phys. Lett. 106, 033107 (2015).
+                [12] M. Kuhn, S. Cea, J. Zhang, M. Wormington, T. Nuytten, I. De Wolf, J.-M. Zuo, J.-L. Rouviere, in Metrology and
+                     Diagnostic Techniques for Nanoelectronics, edited by Z. Ma and D.G. Seiler (Pan Stanford, Singapore, 2017).
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111T-11
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+                [13] A. Picco, E. Bonera, E. Grilli, M. Guzzi, M. Giarola, G. Mariotto, D. Chrastina, G. Isella, “Raman efficiency in SiGe
+                     alloys,” Phys. Rev. B 82, 115317 (2010).
+                [14] W.S. Yoo, H. Harima, M. Yoshimoto, “Polarized Raman Signals from Si Wafers: Dependence of In-Plane Incident
+                     Orientation of Probing Light,” ECS J. Solid State Sc. 4, P356 (2015).
+                [15] J.C. Tsang, P.M. Mooney, F. Dacol, J.O. Chu, “Measurements of alloy composition and strain in thin GexSi1−x layers,”
+                     J. Appl. Phys. 75, 8098 (1994).
+                [16] H. Rücker, M. Methfessel, “Anharmonic Keating model for group-IV semiconductors with application to the lattice
+                     dynamics in alloys of Si, Ge, and C,” Phys. Rev. B 52, 11059 (1995).
+                [17] M.I. Alonso, K. Winer, “Raman spectra of c-Si1-xGex alloys,” Phys. Rev. B 39, 10056 (1989).
+                [18] V. Poborchii, T. Tada, T. Kanayama, “Edge-enhanced Raman scattering in Si nanostripes,” Appl. Phys. Lett. 94,
+                     131907 (2009).
+
+
+
+
+                                                                       Proc. of SPIE Vol. 11611 116111T-12
+Downloaded From: https://www.spiedigitallibrary.org/conference-proceedings-of-spie on 01 Mar 2021
+Terms of Use: https://www.spiedigitallibrary.org/terms-of-use
+
