@@ -1,0 +1,233 @@
+     Inline monitoring of hybrid bonding Cu recess with Vertical
+             Traveling Scatterometry machine learning
+
+ Pádraig Timoney*a, Stefan Schoechea, Nick Polomoffa, Joseph Mittelstaedta, Matt Malleya,
+                    Tyler Sherwooda, Emad Omrania, Daniel Schmidta,
+                        Aron Ceplerb, Paul Isbesterb, Igor Turovetsc
+                    a
+                      IBM Research, 257 Fuller Rd, Albany NY 12203
+       b
+         Nova Measuring Instruments, 3342 Gateway Blvd, Fremont, CA 94538, USA
+                 c
+                   Nova Ltd, 5 David Fikes St., Rehovot, 7632805, Israel
+
+
+                                                ABSTRACT
+
+In recent years, advanced packaging schemes have been demonstrated to achieve greater interconnect density for
+advanced technology node devices. Hybrid bonding facilitates direct copper to copper interconnection, reducing
+performance impact of connections in traditional solder bump technologies. Such hybrid bonds require stringent
+surface smoothness and alignment accuracy to achieve the required bond quality level. Copper CMP is a key
+enabling technology to achieve the required surface smoothness of the mating surfaces. Monitoring of the surface
+planarity is challenging due to the struct wafer smoothness requirement (<1 nm) combined with typical pitch size
+of the interconnect pad array (often greater than 1 um).
+
+Vertical traveling scatterometry (VTS) methodologies, which leverage the SI channel's unique capability, are
+known to enhance sensitivity for measuring surface and near-surface parameters.
+
+In this work, vertical traveling scatterometry machine learning (VTS-ML) solutions were trained to successfully
+monitor copper recess from wafers with different incoming stacks. Reference data from 5 measurement dies across
+15 wafers was used in the VTS-ML training. Evaluation of the VTS-ML correlation to reference was studied on
+22 blind test wafers. The impact of the VTS filter position was studied in both test-on-train and blind test R2.
+
+Keywords: Machine Learning, scatterometry, modeless, vertical traveling scatterometry, reference metrology,
+hybrid bonding, copper recess, underneath layer process variation
+*Corresponding author: padraig.timoney@ibm.com
+
+
+
+1. INTRODUCTION
+Heterogeneous integration increasingly relies on direct Cu–Cu hybrid bonding to improve latency, power
+efficiency, and security, with hybrid bonded interconnect schemes delivering thinner packaging and better
+electrical and thermal performance to enable next generation performance of AI systems [1]. Successful bonding
+requires a strong dielectric bond and a subsequent thermal anneal to form robust Cu–Cu interconnects;
+accordingly, post CMP Cu pad recess must be tightly controlled. The Cu recess should be small enough to ensure
+dielectric contact while still enabling post‑bond copper closure. Inline monitoring with measurement sensitivity
+~ 0.1 nm and adequate across wafer sampling is necessary to successfully monitor the CMP process for the
+required Cu recess. In prior work, optical critical dimension (OCD) metrology augmented with ML has been
+successfully used to achieve good blind-test correlation to dies not included in the model training [2,3]. These
+studies also demonstrated good extrapolation of the measurement for different nominal pitch and recess depth
+conditions. The emphasis in this paper will be on evaluating the performance of the metrology solution on nominal
+process condition wafers not utilized in the training set.
+
+2. VERTICAL TRAVELING SCATTERMETRY
+Figure 1 demonstrates how Vertical Traveling Scatterometry differs from traditional scatterometry by leveraging
+spectral interferometry and algorithmic filtering to isolate contributions from selected upper layers while
+suppressing complex, variable underlayers [4,5]. This reduces modeling complexity, improves time‑to‑solution,
+and can enable model reuse across different underlayer configurations—an attractive proposition for hybrid
+bonding stacks with diverse incoming films.
+
+        Measurement structure         Spectral interferometry signal            VTS filtered spectra
+
+
+
+
+Figure 1. Interferometry spectra of complicated 4.5um tall multi-layer stack simplified to VTS filtered
+spectra corresponding to only the upper features of the stack [5]
+
+Interferometry spectrum from Cu Recess wafers provides a VTS signal with peaks associated with material
+surface interfaces throughout the stack. Figure 2 demonstrates how interferometry spectra can be represented as
+VTS signals of material interfaces.
+
+
+
+
+Figure 2 Interferometry spectra represented as VTS signals with numerous peaks associated with material
+interfaces throughout the stack.
+Differences in the spectral interferometry spectra in the wavelength domain are apparent from the top and bottom
+wafer categories. Wafer categories ‘top’ and ‘bottom’ are introduced, where the top wafer category has a thinner
+underneath layer dielectric stack and some other minor structural dimension differences compared to the bottom
+wafer category. Regeneration of spectra resulting from isolating VTS signals provides an opportunity to evaluate
+spectra only associated with a specific surface or region within the structure as indicated by the different peak
+positions on the VTS signal axis.
+
+
+
+
+Figure 3 Different VTS peaks and regions represented in corresponding structure and resulting
+interferometry spectra associated with the surface structure of the corresponding stack
+
+Figure 3 further demonstrates how different VTS peaks and regions can be assigned to vertical locations within
+the stack. Cutoff A represents an area from the surface to below the upper layer of the structure. The cut off
+positions B through E represent successively shallower signal penetration depth, thus effectively reducing the
+potential for underneath layer signal contributions. The VTS cut off positions are fixed on the x axis of the
+representative VTS spectrum and have the corresponding effect on the intensity vs wavelength spectrum shown
+in the right- hand portion of Figure 3. It can be initially observed from these spectra that the repetitive oscillations
+observed in both the pre-filtered spectral interferometry signal in Figure 2 and the VTS cutoff A filtered spectra
+in Figure 3 are no longer present in VTS Cutoff positions B thru E. The goal of the study is to identify the optimum
+compromise between minimizing the underneath layer contributions while still providing sufficient signal to
+successfully characterize the recess depth.
+
+3. VTS MACHINE LEARNING
+Optical machine learning solutions typically utilize a training set of known references to train corresponding
+spectra to identify features in the spectra which correspond to the reference [3]. VTS spectra have been
+demonstrated in Figures 2 and 3 to provide ability to remove spectral contribution of surface interactions deep
+within the structure. This provides an opportunity to utilize VTS algorithms to focus training from machine
+learning to the surface features of interest to Cu bonding. Atomic Force Microscopy (AFM) was selected for high-
+resolution reference data at the feature scale. Since the AFM field of view is smaller than the spot size used for
+OCD/VTS, specific regions of interest (ROIs) were identified in the reference metrology output and statistical
+aggregation methods were applied across features. This approach for AFM data analysis suppresses stochastic
+roughness while preserving systemic recess metrics. Analysis emphasis was placed on standard deviation and
+sufficient replicates to ensure statistical significance. From AFM analysis a training set from 15 wafers with 5
+dies per wafer and a total range of ~4nm was used. The 15 reference wafers in the training set included those
+corresponding to both top and bottom categories for wafer bonding. Performance was evaluated and assessed
+based on results from test-on-train and blind test validation utilizing a separate set of 22 wafers which were not
+included in the original training.
+
+For each wafer/die, we computed ML features from the VTS filtered spectra at cut offs A–E and trained regression
+models to predict AFM derived Cu recess. Five condition specific models were produced (A–E). Unlike
+conventional OCD ML that requires detailed underlayer modeling or pre and post delta measurements, this VTS-
++ML approach applies a single model applicable to both top and bottom wafer categories, benefiting metrology
+logistics and throughput. In an R&D environment the number of samples can be somewhat limited, and an
+emphasis must always be on reducing process cycles of learning. Accordingly, robustness of inline metrology
+solutions to accommodate incoming process differences is of particular importance.
+
+4. RESULTS
+
+VTS ML solution performance was assessed by evaluating the AFM correlation for each VTS cutoff solution
+applied to the training set (test-on-train) and 22 blind test wafers. Wafers represented those which will be the
+hybrid bonding top and bottom wafers and correlation results from each were combined and evaluated together
+for each VTS- ML solution.
+
+Test on train results are presented in Figures 4 and 5 and provide generally acceptable results for all VTS- ML
+cutoff solutions with the highest correlation observed for VTS-ML cutoff A.
+
+Reviewing Figure 3 this observed VTS-ML to AFM reference correlation result was attributed to a larger number
+of oscillations and features in the spectra relative to other cutoffs which provide opportunities for the ML
+algorithm to identify unique features consistent with reference variation and value. The R2 degrades for VTS
+cutoffs D and E since not enough information is contained within the filtered spectra to capture the variability of
+recess depth in the training set.
+
+Blind test results from various VTS-ML cutoff solutions presented in Figures 6 and 7 provide significantly a
+different AFM correlation trend than that observed for test-on-train results and for the various VTS-ML cutoff
+solutions. Blind test results demonstrate VTS-ML cutoff B and C provide the best correlation to AFM with cutoff
+A providing one of the lowest correlations to reference.
+Figure 4 Test on train Cu recess correlation results for VTS-ML solutions at each cutoff. Combining results
+from both top and bottom wafers for bonding the VTS cutoff “A” was observed to provide highest
+correlation between VTS-ML Depth and AFM Reference.
+
+
+                          Impact of VTS cut off on Training R2
+                     1
+Test on Train R2
+
+
+
+
+                   0.95
+                    0.9
+                   0.85
+                    0.8
+                   0.75
+                    0.7
+                   0.65
+                                 VTS Cut Off (a.u.)
+
+Figure 5 VTS-ML test on train Cu recess correlation results at each cutoff. VTS cutoff A was observed to
+provide the highest correlation between VTS-ML Depth and AFM Reference.
+Figure 6. VTS-ML blind test Cu recess combined correlation results for both bottom and top wafers for
+hybrid bonding at each cutoff. VTS cutoff at B and C observed to provide the highest correlation between
+VTS-ML Depth and AFM Reference.
+
+
+
+
+Figure 7. Compilation of VTS-ML blind test Cu recess correlation. VTS cutoffs at B and C were
+observed to provide the highest correlation between VTS-ML Depth and AFM Reference.
+
+These results confirm that the test on train results for VTS-ML cutoff A did not have sufficient training samples
+to cater for the extent of variability modes present in the underlaying layers of the 15 wafers training samples. It
+is possible that with additional training, the blind test score would increase for this scenario. With VTS cutoff E
+primarily only encompassing interferometry signal from the surface, this result was attributed to the absence of a
+peak associated with the Cu Recess in the VTS training spectra. Reviewing Figure 3, the representative
+interferometry spectra from the VTS cutoffs B, C, and D were generally consistent. While these representative
+VTS spectra were generally consistent, both the test-on-train and blind test correlation results presented in Figures
+4, 5, 6, and 7 demonstrate reduced performance for VTS cutoff D. It appears that the VTS-ML cutoff solution D
+could not fully capture the variation of the Cu Recess in the training set. This result was attributed to the proximity
+of the cutoff position D to the Cu Recess peak for most wafers
+5. CONCLUSIONS
+
+VTS-ML was demonstrated to provide simplified spectra, free of contributions from lower stack layers, enabling
+consistent Cu recess measurements with the AFM reference. Removing contributions from lower layers with
+VTS enabled, applying the resulting VTS-ML solution to wafers with different stacks but similar Cu recess
+structures, as observed with top and bottom hybrid bonding wafers.
+
+The improved robustness and time to solution of the VTS-ML approach as compared to conventional optical
+modeling or machine learning approaches were apparent in the comparison of the improved correlation to
+reference for near-surface VTS cutoff positions as compared to deeper signal penetration cutoff positions. The
+result from VTS cutoff A (R2 = 0.35) suggested that the VTS-ML solution appeared insufficiently trained to
+accommodate the variation in blind test samples, while by utilizing the same training set, VTS cutoff positions B
+and C (R2 ~ 0.8) delivered significantly improved correlation to reference, thus clearly demonstrating the
+improved metrology robustness delivered by optimizing the position of the VTS cutoff position.
+
+The study also identified two cutoff positions that delivered subsequent degradation in performance as the cut off
+position was moved successively from deeper to shallower signal penetration. This observation highlighted the
+importance of careful optimization of VTS filter cutoff position in the initial application development phase.
+
+The outcome of this study demonstrated a methodology for leveraging limited reference metrology in an R&D
+environment to develop accurate and robust inline metrology using optical scatterometry enhanced by algorithmic
+innovation, namely vertical traveling scatterometry machine learning (VTS-ML). Future studies will be
+undertaken to explore other opportunities to leverage VTS-ML for improved metrology time-to-solution and
+robustness in R&D environment where available reference metrology sampling may be limited.
+
+
+
+6. REFERENCES
+[1] K. Sakuma, R. Yu, N. Polomoff, A. Kumar, S. Raghavan, M. Belyansky, A. Jain, R. Bonam, Y. Sulehria, H.
+Hsu, K. Jayanand, H. Jagannathan, D2W and W2W Hybrid bonding system with below 2.5 micron pitch for 3D
+chiplet AI applications Proc. IEEE IEDM 2024 2156-017X
+
+[2] S. Chew, M. Saib, B. Zhang, A. Charley, J. Hung, A. Ger, J. De Vos, P. Leray, I. Turovets, A. Moussa, A.
+Miller, E. Byrne, Scatterometry Application on Cu/SiCN surface topography towards high volume manufacturing
+Proc. IEEE ECTC 2024 2687-9727
+
+[3] H. Niazi, B Zhang, X. Brun, S. Krishnan, J. Chuang, Critical Dimension Scatterometry as a Scalable Solution
+for Hybrid Bonding Pad Recess Metrology, Proc. IEEE ECTC 2023 2377-5726
+
+[4] J. Yoon, J. Park, M. Shin, D. Ihm, O. Bismuth, S. Ferber, J. Ofek, I. Turovets, I. Kim, Unique Spectral
+Interferometry Solutions for complex high aspect ratio 3D NAND structures, Proc. Of SPIE Vol. 12955, 2024.
+
+[5] D. Schmidt, C. Durfee, M. Medikonda, M. Rizzolo, C. Silvestre, J. Frougier, A. Greene, M. Breton, A. Cepler,
+J. Ofek, I. Kaplan, R. Koret, I. Turovets, “Spectral interferometry for fully integrated device metrology”, J.
+Micro/Nanopattern Mats. Metro. 22, 031203 (2023).
+

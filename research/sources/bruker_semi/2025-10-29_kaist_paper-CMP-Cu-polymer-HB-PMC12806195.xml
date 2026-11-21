@@ -1,0 +1,1482 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="advs72501" xml:lang="en" article-type="research-article" dtd-version="1.4"><?da-xref-anchor-style superscripted?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Adv Sci (Weinh)</journal-id><journal-id journal-id-type="iso-abbrev">Adv Sci (Weinh)</journal-id><journal-id journal-id-type="pmc-domain-id">2933</journal-id><journal-id journal-id-type="pmc-domain">advsci</journal-id><journal-id journal-id-type="nlm-id">101664569</journal-id><journal-id journal-id-type="publisher-id">ADVS</journal-id><journal-title-group><journal-title>Advanced Science</journal-title></journal-title-group><issn pub-type="epub">2198-3844</issn><?publisher_abbrev blackwell?><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12806195</article-id><article-id pub-id-type="pmcid-ver">PMC12806195.1</article-id><article-id pub-id-type="pmcaid">12806195</article-id><article-id pub-id-type="pmcaiid">12806195</article-id><article-id pub-id-type="pmid">41159511</article-id><article-id pub-id-type="doi">10.1002/advs.202512611</article-id><article-id pub-id-type="publisher-id">ADVS72501</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Chemical Mechanical Polishing of Plasma‐Modified Cu/Polymer Interfaces for Advanced Hybrid Bonding</article-title></title-group><contrib-group><contrib id="advs72501-cr-0001" contrib-type="author"><name name-style="western"><surname>Kang</surname><given-names initials="S">Sukkyung</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-4301-1354</contrib-id><xref rid="advs72501-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="advs72501-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="advs72501-cr-0002" contrib-type="author"><name name-style="western"><surname>Jeon</surname><given-names initials="C">Chansu</given-names></name><xref rid="advs72501-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="advs72501-cr-0003" contrib-type="author"><name name-style="western"><surname>Park</surname><given-names initials="J">Juseong</given-names></name><xref rid="advs72501-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="advs72501-cr-0004" contrib-type="author"><name name-style="western"><surname>Park</surname><given-names initials="S">Seulah</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0006-6402-0467</contrib-id><xref rid="advs72501-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="advs72501-cr-0005" contrib-type="author" corresp="yes"><name name-style="western"><surname>Kim</surname><given-names initials="KM">Kyung Min</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0190-4226</contrib-id><xref rid="advs72501-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><address><email>km.kim@kaist.ac.kr</email></address></contrib><contrib id="advs72501-cr-0006" contrib-type="author" corresp="yes"><name name-style="western"><surname>Kim</surname><given-names initials="S">Sanha</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-3548-6173</contrib-id><xref rid="advs72501-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="advs72501-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>sanhkim@kaist.ac.kr</email></address></contrib></contrib-group><aff id="advs72501-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Mechanical Engineering</named-content>
+<institution>Korea Advanced Institute of Science and Technology (KAIST)</institution>
+<city>Daejeon</city>
+<postal-code>34141</postal-code>
+<country country="KR">Republic of Korea</country>
+</aff><aff id="advs72501-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">InnoCORE PRISM‐AI Center</named-content>
+<institution>Korea Advanced Institute of Science and Technology (KAIST)</institution>
+<city>Daejeon</city>
+<postal-code>34141</postal-code>
+<country country="KR">Republic of Korea</country>
+</aff><aff id="advs72501-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Department of Material Science and Engineering</named-content>
+<institution>Korea Advanced Institute of Science and Technology (KAIST)</institution>
+<city>Daejeon</city>
+<postal-code>34141</postal-code>
+<country country="KR">Republic of Korea</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>E‐mail: <email>km.kim@kaist.ac.kr</email>; <email>sanhkim@kaist.ac.kr</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>29</day><month>10</month><year>2025</year></pub-date><pub-date pub-type="collection"><month>1</month><year>2026</year></pub-date><volume>13</volume><issue seq="860">3</issue><issue-id pub-id-type="pmc-issue-id">505301</issue-id><issue-id pub-id-type="doi">10.1002/advs.v13.3</issue-id><elocation-id>e12611</elocation-id><history>
+<date date-type="rev-recd"><day>04</day><month>10</month><year>2025</year></date>
+<date date-type="received"><day>06</day><month>7</month><year>2025</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>29</day><month>10</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>16</day><month>01</month><year>2026</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-01-16 11:25:13.757"><day>16</day><month>01</month><year>2026</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). Advanced Science published by Wiley‐VCH GmbH</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="ADVS-13-e12611.pdf"><?pdf-name ADVS-13-e12611.pdf?><?pdf-size 2364029?><?pdf-md5 19a191ec1a487d32b8019e96a6f8e9e7?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:6ddd/12806195/19a191ec1a48/ADVS-13-e12611.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:ADVS-13-e12611.pdf"/><abstract><title>Abstract</title><p>Hybrid bonding, referring to direct bonding between metal and insulator layers, has become a key technology for next‐generation semiconductor packaging, enabling high‐density interconnects, fast signal transmission, and a compact form factor. Polymer dielectrics such as benzocyclobutene (BCB) provide excellent insulation and adhesion but pose challenges for chemical mechanical polishing (CMP) due to their viscoelasticity. Here, a CMP‐compatible strategy based on argon (Ar) plasma modification of BCB is proposed to enable effective planarization of Cu/BCB hybrid bonding interfaces. Ar plasma treatment increases surface hardness and brittleness of half‐cured BCB and increases hydrophilicity. The resulting wrinkle structures improve the flow of abrasive particles and slurry, enabling a plowing‐dominant removal mechanism for precision planarization. Modified BCB shows a removal rate of up to 17.3 nm s<sup>−1</sup>, over five times higher than untreated BCB, while Cu surface roughness is reduced from 51.4 to 3.0 nm. A time‐dependent dishing model is developed to elucidate dishing mechanism and to control dishing geometry precisely. Using this model, a BCB dishing depth of 230 nm is achieved, supporting void‐free and reliable hybrid bonding. Overall, this study presents a simple yet practical approach to CMP of soft polymer dielectrics and offers a promising solution to advanced heterogeneous integration technologies.</p></abstract><abstract id="advs72501-abs-0001" abstract-type="graphical"><p>Hybrid bonding demands planarization of Cu/polymer interfaces, but soft polymers like benzocyclobutene (BCB) are difficult to polish by conventional chemical mechanical polishing (CMP). It is demonstrated that Ar plasma modification transforms BCB into a CMP‐compatible surface, enabling effective planarization and void‐free bonding. This simple yet effective approach provides a practical foundation for next‐generation packaging platforms, such as polymer interposers and fine‐pitch interconnects.
+<boxed-text position="anchor" content-type="graphic" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="ADVS-13-e12611-g002.jpg"><?image-name ADVS-13-e12611-g002.jpg?><?image-size 19484?><?image-md5 2c6ab96bd3a3c5701c5e6d2adb2ddb9c?><?image-image-server-status NEVER_LOAD?><?image-original-height 164?><?image-original-width 180?><?image-scaled-height 164?><?image-scaled-width 180?><?image-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/2c6ab96bd3a3/ADVS-13-e12611-g002.jpg?></graphic></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="advs72501-kwd-0001">argon plasma treatment</kwd><kwd id="advs72501-kwd-0002">benzocyclobutene</kwd><kwd id="advs72501-kwd-0003">chemical mechanical polishing</kwd><kwd id="advs72501-kwd-0004">hybrid bonding</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>Ministry of Trade, Industry &amp; Energy (MOTIE, Korea)</institution></institution-wrap>
+</funding-source><award-id>1415187584</award-id><award-id>RS‐2023‐00236091</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>National Research Foundation of Korea (NRF), Korea government (MSIT)</institution></institution-wrap>
+</funding-source><award-id>2025‐00560856</award-id><award-id>2024‐00507422</award-id><award-id>2023‐00216992</award-id><award-id>2022M3I7A4072293</award-id></award-group><award-group id="funding-0003"><funding-source>
+<institution-wrap><institution>National Research Foundation of Korea (NRF), Ministry of Education</institution></institution-wrap>
+</funding-source><award-id>RS‐2025‐25406725</award-id></award-group></funding-group><counts><fig-count count="5"/><table-count count="0"/><page-count count="10"/><word-count count="6670"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>14 January 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:15.01.2026</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="advs72501-cit-0001">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Jeon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>Kim</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, “<article-title>Chemical Mechanical Polishing of Plasma‐Modified Cu/Polymer Interfaces for Advanced Hybrid Bonding</article-title>.” <source>Adv. Sci.</source>
+<volume>13</volume>, no. <issue>3</issue> (<year>2026</year>): <elocation-id>e12611</elocation-id>. <pub-id pub-id-type="doi">10.1002/advs.202512611</pub-id>
+<pub-id pub-id-type="pmcid">PMC12806195</pub-id><pub-id pub-id-type="pmid">41159511</pub-id></mixed-citation>
+</p></notes></front><body><sec id="advs72501-sec-0010"><label>1</label><title>Introduction</title><p>Data‐centric artificial intelligence (AI) technologies have been demanding higher integration density and faster data transmission between the processing unit and memory.<sup>[</sup>
+<xref rid="advs72501-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>, <xref rid="advs72501-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref>, <xref rid="advs72501-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>
+<sup>]</sup> To meet these demands, advanced packaging technologies, such as high‐bandwidth memory (HBM) with 3D chip stacking, have become increasingly important.<sup>[</sup>
+<xref rid="advs72501-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>, <xref rid="advs72501-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref>, <xref rid="advs72501-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref>
+<sup>]</sup> Hybrid bonding is a key technology for next‐generation 3D integration, enabling direct bonding of metal/dielectric interfaces without the use of micro‐bumps.<sup>[</sup>
+<xref rid="advs72501-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref>, <xref rid="advs72501-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref>, <xref rid="advs72501-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref>, <xref rid="advs72501-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref>
+<sup>]</sup> This approach significantly reduces interconnect pitch, increases the number of input/output (I/O) channels, and enhances data throughput.<sup>[</sup>
+<xref rid="advs72501-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref>, <xref rid="advs72501-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref>
+<sup>]</sup> Moreover, eliminating the bonding layer enables thinner packaging while improving power efficiency and reducing signal delay.<sup>[</sup>
+<xref rid="advs72501-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="advs72501-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>
+<sup>]</sup>
+</p><p>In conventional hybrid bonding, silicon dioxide (SiO<sub>2</sub>) has been widely adopted due to its high compatibility with conventional complementary metal‐oxide‐semiconductor (CMOS) fabrication.<sup>[</sup>
+<xref rid="advs72501-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="advs72501-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref>, <xref rid="advs72501-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref>
+<sup>]</sup> However, because hybrid bonding relies on thermal compression,<sup>[</sup>
+<xref rid="advs72501-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="advs72501-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref>, <xref rid="advs72501-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref>
+<sup>]</sup> brittle ceramic materials are prone to fracture or chipping under localized stress<sup>[</sup>
+<xref rid="advs72501-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref>, <xref rid="advs72501-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref>, <xref rid="advs72501-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref>
+<sup>]</sup> or by particles.<sup>[</sup>
+<xref rid="advs72501-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref>, <xref rid="advs72501-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>
+<sup>]</sup> These failures often result in interfacial cracks or delamination, threatening long‐term reliability. In addition, ceramic‐to‐ceramic bonding typically involves both plasma and wet treatments to induce surface hydrophilicity,<sup>[</sup>
+<xref rid="advs72501-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref>, <xref rid="advs72501-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref>, <xref rid="advs72501-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref>
+<sup>]</sup> which can inadvertently lead to copper oxidation, severely compromising the electrical integrity of the interconnects.<sup>[</sup>
+<xref rid="advs72501-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref>, <xref rid="advs72501-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref>
+<sup>]</sup>
+</p><p>As an alternative to these conventional technologies, Cu/polymer hybrid bonding technologies that utilize polymeric insulators, such as benzocyclobutene (BCB) and polyimide (PI), have been gaining increasing attention.<sup>[</sup>
+<xref rid="advs72501-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref>, <xref rid="advs72501-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref>, <xref rid="advs72501-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref>
+<sup>]</sup> Compared to ceramics, polymer‐based dielectrics exhibit greater mechanical flexibility and reduced brittleness, which helps alleviate physical stress during bonding.<sup>[</sup>
+<xref rid="advs72501-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref>, <xref rid="advs72501-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref>
+<sup>]</sup> In addition, the copper oxidation issue can be avoided since bonding is achieved by heat alone, unlike SiO<sub>2</sub>‐based processes that require oxidizing treatments for hydrophilic surfaces.<sup>[</sup>
+<xref rid="advs72501-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref>, <xref rid="advs72501-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref>
+<sup>]</sup> Also, their viscoelastic behavior near their glass transition temperature (Tg) enables the self‐adaptive deformation,<sup>[</sup>
+<xref rid="advs72501-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref>
+<sup>]</sup> which helps mitigate surface defects and increases tolerance to surface irregularities.<sup>[</sup>
+<xref rid="advs72501-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref>
+<sup>]</sup> In addition, polymers offer high compatibility with non‐CMOS technologies, making them suitable for more advanced packaging applications for wearable and flexible electronics.</p><p>Despite these advantages, precisely performing chemical mechanical polishing (CMP) on half‐cured polymers for hybrid bonding remains a significant challenge,<sup>[</sup>
+<xref rid="advs72501-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref>
+<sup>]</sup> representing one of the biggest hurdles to achieving reliable hybrid bonding. CMP removes material by abrasive particles dispersed in slurry, which are indented into the target surface under applied pressure and remove material through a plowing mechanism (<bold>Figure</bold>
+<xref rid="advs72501-fig-0001" ref-type="fig">
+<bold>1</bold>A</xref>).<sup>[</sup>
+<xref rid="advs72501-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref>, <xref rid="advs72501-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref>
+<sup>]</sup> However, as both the half‐cured BCB and the porous polyurethane pads are highly compliant, abrasive particles are easily trapped between the two soft materials, forming a sealed interface and limiting the CMP process (Figure <xref rid="advs72501-fig-0001" ref-type="fig">1B</xref>).<sup>[</sup>
+<xref rid="advs72501-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref>, <xref rid="advs72501-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref>
+<sup>]</sup> Due to this fundamental incompatibility with the CMP process, precision planarization of Cu/polymer interface remained a challenge.</p><fig position="float" fig-type="Figure" id="advs72501-fig-0001" orientation="portrait"><label>Figure 1</label><caption><p>Ar plasma‐assisted chemical mechanical polishing (CMP) for Cu/polymer hybrid bonding. Illustrations showing A) the CMP setup used for planarization of hybrid bonding interfaces. B) Challenges in CMP for soft polymers, where abrasives are being trapped and slurry flow is restricted. The scanning electron microscope (SEM) image shows the abrasive particles trapped on the polymer surface after CMP. An illustration of C) effective abrasion and stable material removal during CMP enabled by the Ar plasma. D) Cross‐section of a successful Cu/BCB hybrid bonding interface using the planarized interfaces. E) Schematic overview of Ar plasma‐assisted CMP and hybrid bonding process.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="ADVS-13-e12611-g004.jpg"><?image-name ADVS-13-e12611-g004.jpg?><?image-size 62527?><?image-md5 15a411bd09f1303f83e36012375bcfae?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 421?><?image-original-width 820?><?image-scaled-height 280?><?image-scaled-width 546?><?image-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/15a411bd09f1/ADVS-13-e12611-g004.jpg?><?thumb-name ADVS-13-e12611-g004.gif?><?thumb-size 10337?><?thumb-md5 a38f37d6cd3f23c7b2e404ecbcd6d4ee?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 155?><?thumb-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/a38f37d6cd3f/ADVS-13-e12611-g004.gif?></graphic></fig><p>In this study, we propose a surface modification method using argon (Ar) plasma to enhance the CMP compatibility of BCB and thereby achieve reliable Cu/polymer hybrid bonding. The plasma treatment forms a hardened layer that prevents abrasive particle trapping and facilitates effective abrasion‐based material removal (Figure <xref rid="advs72501-fig-0001" ref-type="fig">1C</xref>). It also generates micro‐wrinkle structures with a hydrophilic surface that mitigate slurry flow restriction, therefore contributing to stable abrasion of the plasma‐modified BCB (p‐BCB) surface. We modeled the CMP mechanism in the p‐BCB/BCB bilayer and Cu hybrid structure to predict the dishing behavior, and as a result, successfully achieved a 230 nm BCB dishing structure within a wide process time window. Subsequently, we successfully achieved seamless hybrid bonding at 300°C using a conventional thermo‐compression process (Figure <xref rid="advs72501-fig-0001" ref-type="fig">1D</xref>), demonstrating its feasibility for advanced semiconductor packaging. The overall process flow of Ar plasma‐assisted CMP and hybrid bonding is summarized in Figure <xref rid="advs72501-fig-0001" ref-type="fig">1E</xref>, with detailed steps provided in Figure <xref rid="advs72501-supinfo-0001" ref-type="">S1</xref> (Supporting Information).</p></sec><sec id="advs72501-sec-0020"><label>2</label><title>Results and Discussion</title><sec id="advs72501-sec-0030"><label>2.1</label><title>Ar Plasma Treatment for Surface Modification Favorable to CMP</title><p>For Cu/polymer hybrid bonding, it is essential to planarize the polymer in its half‐cured state, which is challenging due to its inherent ductility and flexibility. We propose a solution to this issue through Ar plasma surface treatment. As a polymer dielectric material, we used a divinylsiloxane‐benzocyclobutene (DVS‐BCB, hereafter referred to as BCB) thin film, which is widely used in both front‐end micro‐electro‐mechanical systems (MEMS) fabrication and back‐end processes such as redistribution layers (RDLs),<sup>[</sup>
+<xref rid="advs72501-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref>
+<sup>]</sup> owing to its excellent dielectric properties, thermal stability, and excellent mechanical reliability (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S2</xref> and Table <xref rid="advs72501-supinfo-0001" ref-type="">S1</xref>, Supporting Information).<sup>[</sup>
+<xref rid="advs72501-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref>, <xref rid="advs72501-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref>, <xref rid="advs72501-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref>
+<sup>]</sup>
+</p><p>By optimizing the plasma treatment conditions, we found that the BCB's surface morphology was transformed into a micro‐wrinkle structure with enhanced mechanical hardness. These wrinkle structures act as local channels that facilitate slurry flow during the CMP process, thereby improving slurry distribution and suppressing hydroplaning to enhance polishing uniformity (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S3</xref>, Supporting Information).<sup>[</sup>
+<xref rid="advs72501-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref>, <xref rid="advs72501-bib-0048" ref-type="bibr">
+<sup>48</sup>
+</xref>
+<sup>]</sup> This effect is particularly advantageous considering that the half‐cured BCB surfaces, due to their viscoelastic nature, hinder slurry delivery.</p><p>The surface deformation mechanism can be explained as follows. Ar plasma treatment was performed under optimized conditions (power: 40 W, working pressure: 2.9 × 10<sup>−2</sup> Torr, treatment time: 30 s, temperature: 150 °C) to ensure an adequate surface modification thickness (Figures <xref rid="advs72501-supinfo-0001" ref-type="">S4</xref> and <xref rid="advs72501-supinfo-0001" ref-type="">S5</xref>, Supporting Information). Under these conditions, the energetic Ar ions cleave the polymer chains, producing a high density of highly reactive free radicals.<sup>[</sup>
+<xref rid="advs72501-bib-0049" ref-type="bibr">
+<sup>49</sup>
+</xref>
+<sup>]</sup> Elevated temperatures further enhance the mobility of polymer chains and increase the reactivity of generated radicals, thereby promoting crosslinking reactions.<sup>[</sup>
+<xref rid="advs72501-bib-0050" ref-type="bibr">
+<sup>50</sup>
+</xref>
+<sup>]</sup> As a result, radical recombination actively occurs at the BCB surface, leading to a localized increase in crosslinking density and the formation of a hardened surface layer (<bold>Figure</bold>
+<xref rid="advs72501-fig-0002" ref-type="fig">
+<bold>2</bold>A</xref>). Subsequently, due to the coefficient of thermal expansion (CTE) difference between the p‐BCB and underlying bulk BCB (the higher polymer chain density at p‐BCB lowers the CTE than that of BCB),<sup>[</sup>
+<xref rid="advs72501-bib-0051" ref-type="bibr">
+<sup>51</sup>
+</xref>
+<sup>]</sup> the surface undergoes differential contraction upon cooling after plasma treatment. This mismatch limits the shrinkage of the stiffened surface layer relative to the more compliant underlying material, generating in‐plane compressive stress at the interface and forming periodic and irreversible micro‐wrinkle structures on the surface (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2B–D</xref>).<sup>[</sup>
+<xref rid="advs72501-bib-0052" ref-type="bibr">
+<sup>52</sup>
+</xref>, <xref rid="advs72501-bib-0053" ref-type="bibr">
+<sup>53</sup>
+</xref>
+<sup>]</sup>
+</p><fig position="float" fig-type="Figure" id="advs72501-fig-0002" orientation="portrait"><label>Figure 2</label><caption><p>Manipulation of the morphology, mechanical, and chemical properties of DVS‐BCB films via Ar plasma. A) Schematic illustration of Ar plasma‐induced surface modification, showing polymer chain scission, enhanced radical recombination under heating, and increased crosslinking density near the surface. B) Formation of micro‐wrinkle structures due to the mismatch in the CTE between the p‐BCB surface and the compliant underneath. SEM images of half‐cured BCB surfaces C) before and D) after Ar plasma treatment. The untreated surface exhibits a smooth morphology as a result of spin‐coating, whereas p‐BCB shows the formation of micro‐wrinkles due to surface modification. E) AFM topography images of BCB surfaces treated with different plasma powers (20, 30, and 40 W), showing increased wrinkle density with higher power. F) Surface hardness of the BCB surface according to plasma power determined by nanoindentation. G) FTIR spectra show a gradual decrease in the absorbance of Si‐CH<sub>3</sub> and Si‐O‐Si peaks via Ar plasma, indicating progressive bond scission. H) XPS spectra of C1s, O1s, Si2p, and N1s regions before and after plasma treatment, showing the formation of polar functional groups and the oxidation of siloxane to SiO<sub>2</sub>. I) XPS depth profile showing changes in atomic ratios after Ar plasma treatment, with increased oxygen and decreased carbon ratios near the surface. J) Contact angle measurements as a function of plasma power, demonstrating improved surface wettability via Ar plasma.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="ADVS-13-e12611-g003.jpg"><?image-name ADVS-13-e12611-g003.jpg?><?image-size 95263?><?image-md5 1dde9cd8201374e101eeb1850bde3181?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 663?><?image-original-width 820?><?image-scaled-height 441?><?image-scaled-width 546?><?image-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/1dde9cd82013/ADVS-13-e12611-g003.jpg?><?thumb-name ADVS-13-e12611-g003.gif?><?thumb-size 7891?><?thumb-md5 95560919c2b0be703cd84dc1f1874417?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 81?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/95560919c2b0/ADVS-13-e12611-g003.gif?></graphic></fig><p>The formation of micro‐wrinkles on the BCB surface becomes more pronounced with increasing plasma power, and this generation process can be confirmed by varying the plasma power during treatment. Atomic force microscopy (AFM) measurements of wrinkle morphology under varying plasma power levels revealed that with higher plasma power, intensified chain scission and enhanced crosslinking density led to a reduced wrinkle wavelength and increased wrinkle height (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2E</xref>).</p><p>Furthermore, the Ar plasma treatment also hardens the mechanical properties of the BCB surface, thereby effectively preventing abrasive particle entrapment during CMP. We quantitatively verified the changes in surface hardness using nanoindentation (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2F</xref>). The surface hardness was evaluated using a Berkovich indenter with an incremental depth of less than 1 µm. While the untreated BCB exhibited a low nano‐scale hardness of 0.3 GPa, p‐BCB (at 40 W) showed a hardness exceeding 1.0 GPa, with a clear trend of increasing hardness at higher plasma power. This behavior is attributed to more effective cleavage of polymer chains by higher‐energy Ar ions and enhanced radical recombination, resulting in a denser crosslinked surface structure.</p><p>Next, the chemical properties of the BCB surface were analyzed using Fourier transform infrared spectroscopy (FTIR) (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2G</xref>) to further understand the origin of the observed structural and mechanical changes. The FTIR results showed that, with increasing plasma power, the absorbance peaks corresponding to siloxane (Si‐O‐Si) and methyl (Si‐CH<sub>3</sub>) groups gradually decreased, indicating progressive cleavage of these bonds within the BCB matrix by the plasma.</p><p>The X‐ray photoelectron spectroscopy (XPS) results further confirmed the changes in chemical bonding states on the BCB surface (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2H</xref>). After plasma treatment, the radicals generated during the bond‐breaking process not only contributed to increased surface crosslinking density but also formed polar functional groups such as ─OH and ─COOH. Notably, the Si2p spectra revealed partial degradation of the siloxane (Si‐O‐Si) structure, accompanied by the emergence of new peaks corresponding to silicon dioxide (SiO<sub>2</sub>). The XPS depth profile revealed changes in the atomic ratio, confirming an increase in oxygen content and a decrease in carbon content, thereby providing further evidence of surface oxidation induced by plasma treatment (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2I</xref>).<sup>[</sup>
+<xref rid="advs72501-bib-0054" ref-type="bibr">
+<sup>54</sup>
+</xref>, <xref rid="advs72501-bib-0055" ref-type="bibr">
+<sup>55</sup>
+</xref>
+<sup>]</sup>
+</p><p>Moreover, the p‐BCB surface, which was initially hydrophobic due to the presence of methyl groups, became hydrophilic, a favorable condition for slurry infiltration during CMP. In addition to the chemical modification, the formation of wrinkle structures further enhanced surface wettability by increasing surface roughness (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S6</xref>, Supporting Information).<sup>[</sup>
+<xref rid="advs72501-bib-0056" ref-type="bibr">
+<sup>56</sup>
+</xref>
+<sup>]</sup> The contact angle, which was initially ≈ 96° on BCB, gradually decreased with increasing plasma power, reaching 60° at 40 W and 49° at 70 W (Figure <xref rid="advs72501-fig-0002" ref-type="fig">2J</xref>).</p><p>In summary, p‐BCB exhibited increased surface hardness, along with brittle behavior and hydrophilic characteristics, featuring wrinkle structures. This mechanical transformation facilitated more effective abrasion by abrasives and enhanced material removal efficiency during CMP, thereby providing a favorable surface condition for mechanical planarization.</p></sec><sec id="advs72501-sec-0040"><label>2.2</label><title>Facile Material Removal of p‐BCB Surfaces by Mechanical Abrasion</title><p>Next, we investigate the material removal behavior of BCB surfaces after the Ar plasma treatment. We first employed a scratch test to compare the deformation and wear characteristics of BCB films before and after the Ar plasma treatment (<bold>Figure</bold>
+<xref rid="advs72501-fig-0003" ref-type="fig">
+<bold>3</bold>A</xref>). The experiment was conducted under a constant normal load using a sapphire tip with a blunt conical geometry and a radius of 50 µm. The resulting scratch tracks were analyzed to evaluate wear behavior, plastic deformation, and crack formation.</p><fig position="float" fig-type="Figure" id="advs72501-fig-0003" orientation="portrait"><label>Figure 3</label><caption><p>Enhanced material removal behavior of BCB surfaces after Ar plasma treatment. Schematics of A) the scratch test setup using a sapphire tip under constant normal load. B) Scratch mechanism and SEM image of untreated BCB, exhibiting ductile material behavior with periodic pile‐up and tearing patterns along the scratch direction. C) Scratch mechanism and SEM image of p‐BCB, showing brittle cracking and chipping behavior with reduced tip penetration due to surface hardening and micro‐wrinkle formation. D) Schematic illustration of the pin‐on‐disk experiment using a single pad asperity with CMP slurry. E) SEM image and COF profile of untreated BCB after polishing, showing abrasive particle trapping and a low COF associated with sliding‐dominant friction. F) SEM image and COF profile of p‐BCB after polishing, demonstrating clear material removal without abrasive trapping and a higher COF under plowing‐dominant friction with active abrasive polishing.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="ADVS-13-e12611-g005.jpg"><?image-name ADVS-13-e12611-g005.jpg?><?image-size 98915?><?image-md5 29b1d7f45ffa9d87392646d43efd99b5?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 652?><?image-original-width 820?><?image-scaled-height 434?><?image-scaled-width 546?><?image-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/29b1d7f45ffa/ADVS-13-e12611-g005.jpg?><?thumb-name ADVS-13-e12611-g005.gif?><?thumb-size 8601?><?thumb-md5 28ce7776e869287c7ff326031417aded?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/28ce7776e869/ADVS-13-e12611-g005.gif?></graphic></fig><p>The half‐cured BCB surface before Ar plasma treatment exhibited ductile damage patterns, which are typical characteristics of soft polymers (Figure <xref rid="advs72501-fig-0003" ref-type="fig">3B</xref>).<sup>[</sup>
+<xref rid="advs72501-bib-0057" ref-type="bibr">
+<sup>57</sup>
+</xref>
+<sup>]</sup> During the scratching process, repeated stick‐slip behavior was observed, in which the polymer in front of the moving tip was compressed and accumulated, while tensile stress built up behind the tip until it exceeded a critical threshold. The observed stick‐slip behavior caused ductile tearing of the surface, resulting in the formation of periodic tearing marks. These results indicate that BCB possesses both viscoelastic and ductile properties, and that ductile tearing is the dominant fracture mechanism. Such mechanical behavior is considered unfavorable for the CMP process.</p><p>In contrast, the p‐BCB surface showed distinct brittle fracture characteristics (Figure <xref rid="advs72501-fig-0003" ref-type="fig">3C</xref>). Under the same loading conditions, the width of the scratch track was narrower due to reduced tip penetration depth resulting from increased surface hardness. The scratch track exhibited irregular cracking and chipping along the inner region and sidewalls, where fractured fragments were detached from the surface. These features, namely brittle cracking and chipping, are indicative of a typical brittle material response, where stress is relieved primarily through crack propagation and material separation rather than plastic deformation.<sup>[</sup>
+<xref rid="advs72501-bib-0058" ref-type="bibr">
+<sup>58</sup>
+</xref>
+<sup>]</sup> These observations suggest that Ar plasma treatment significantly reduced the ductility of the BCB surface while simultaneously increasing its hardness and brittleness.</p><p>We also performed an asperity‐scale pin‐on‐disk CMP test to quantitatively evaluate the material removal efficiency and frictional behavior of BCB under three‐body abrasion conditions, using a CMP pad with a single hemispherical asperity (Figure <xref rid="advs72501-fig-0003" ref-type="fig">3D</xref>). In this setup, a BCB‐coated wafer disk was rotated while the slurry was continuously supplied, and a constant normal load was applied using a CMP pad mounted on the pin. This configuration generated a circular polished track, allowing for detailed analysis of asperity‐scale friction and material removal behaviors.</p><p>For the half‐cured BCB, the polished track after the pin‐on‐disk experiment showed abrasives embedded in the surface without evidence of material removal, indicating that the particles were retained rather than engaged in effective abrasion (Figure <xref rid="advs72501-fig-0003" ref-type="fig">3E</xref>). This result suggests that the CMP pad slid over the polymer surface without effective abrasion, resulting in a sliding‐dominant friction regime. Consistently, the coefficient of friction (COF) measured during the process remained relatively low, ≈ 0.6.</p><p>In contrast, for the p‐BCB surface, the micro‐wrinkle structures served as channels to facilitate slurry flow. After the pin‐on‐disk experiment, a distinct wear track was observed where these wrinkle structures had been removed, indicating that polishing had occurred (Figure <xref rid="advs72501-fig-0003" ref-type="fig">3F</xref>). This suggests that under the applied load from the CMP pad asperity, the abrasive particles indented into the BCB surface and underwent relative motion, leading to actual material removal. Under this plowing‐dominant friction regime, the frictional force increased, and the COF rose to ≈ 0.9, further supporting the presence of a stable, abrasion‐driven polishing mechanism. As polishing progressed, the COF, which initially peaked at 1.03 during the abrasion of the p‐BCB surface, gradually decreased and stabilized, reaching a maximum of 0.71 with an average value of 0.64 (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S7</xref>, Supporting Information). Such reduction and convergence indicate that the p‐BCB layer was completely removed, exposing the underlying partially cured BCB surface. These COF variations provide a quantitative measure of the p‐BCB layer thickness and can be applied for endpoint detection in CMP processes (Figures <xref rid="advs72501-supinfo-0001" ref-type="">S4</xref>, <xref rid="advs72501-supinfo-0001" ref-type="">S5</xref>, and <xref rid="advs72501-supinfo-0001" ref-type="">S8</xref>, Supporting Information).</p></sec><sec id="advs72501-sec-0050"><label>2.3</label><title>BCB Dishing Control During CMP for Cu/BCB Hybrid Bonding</title><p>In hybrid bonding, BCB dishing must be precisely controlled based on factors such as the layout of metal and dielectric lines, including their width and pitch, as well as bonding conditions, including temperature and pressure.<sup>[</sup>
+<xref rid="advs72501-bib-0059" ref-type="bibr">
+<sup>59</sup>
+</xref>, <xref rid="advs72501-bib-0060" ref-type="bibr">
+<sup>60</sup>
+</xref>
+<sup>]</sup> At these temperatures, the difference in the coefficients of thermal expansion (CTE) between the materials must be considered during the CMP process to ensure a flat surface at the bonding temperature. In conventional Cu/SiO<sub>2</sub> hybrid bonding, a dished Cu surface is required due to the higher CTE of Cu compared to SiO<sub>2</sub>, which helps to accommodate thermal mismatch. In contrast, for Cu/BCB hybrid bonding, BCB exhibits a greater CTE than Cu, necessitating a dished BCB surface to accommodate the thermal expansion mismatch (<bold>Figure</bold>
+<xref rid="advs72501-fig-0004" ref-type="fig">
+<bold>4</bold>A</xref>). Moreover, to achieve reliable bonding, the p‐BCB surface layer must be completely removed.</p><fig position="float" fig-type="Figure" id="advs72501-fig-0004" orientation="portrait"><label>Figure 4</label><caption><p>Ar plasma‐assisted CMP for hybrid bonding of Cu/BCB patterned wafers. A) Schematic illustration of Cu/BCB hybrid bonding. To compensate for the thermal expansion mismatch between Cu and BCB during bonding, the BCB surface is intentionally recessed. B) Cross‐sectional schematic illustrating pressure redistribution during CMP, governed by pad deformation and height differences between Cu and BCB regions. C) CMP process strategy for dishing depth control in Cu/BCB interfaces. During the first stage, faster removal of brittle p‐BCB causes Cu protrusion and localized pressure, driving gradual convergence of the dishing profile. D) Comparison of theoretical and experimental dishing depth over polishing time, capturing the transition from p‐BCB to untreated pristine BCB. E–H) SEM images showing surface evolution during polishing at different time intervals, (E) 180 s, (F) 420 s, (G) 600 s, and (H) 900 s. I) Measured MRR of BCB and Cu as a function of polishing time. (J) AFM images of the Cu surface before and after CMP showed a reduction in surface roughness from RMS 51.4 ± 9.1 to 3.0 ± 0.2 nm. K) Cross‐sectional SEM image of Cu/BCB interface showing successful hybrid bonding. L) EDS mapping result confirms the absence of Cu diffusion into the BCB layer, validating reliable bonding without the need for a diffusion barrier.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="ADVS-13-e12611-g001.jpg"><?image-name ADVS-13-e12611-g001.jpg?><?image-size 111349?><?image-md5 447da91defaee2d2ddcb83f2631e5552?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 803?><?image-original-width 820?><?image-scaled-height 535?><?image-scaled-width 546?><?image-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/447da91defae/ADVS-13-e12611-g001.jpg?><?thumb-name ADVS-13-e12611-g001.gif?><?thumb-size 8843?><?thumb-md5 9c3a15fc43fe33dc02dd406098f4a863?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 98?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6ddd/12806195/9c3a15fc43fe/ADVS-13-e12611-g001.gif?></graphic></fig><p>To this end, we developed a mathematical dishing model based in part on previously proposed analytical frameworks for CMP dishing and step height reduction.<sup>[</sup>
+<xref rid="advs72501-bib-0061" ref-type="bibr">
+<sup>61</sup>
+</xref>
+<sup>]</sup> The model considers the non‐uniform pressure distribution and the variation in material removal rate (MRR) between two surfaces during CMP. Here, MRR refers to the rate at which material is removed during the polishing process. In this model, we made several assumptions as follows. The CMP pad is modeled as an elastic body, and nominal contact pressure is assumed to act on both the Cu and BCB regions based on the surface height differences across the wafer. This pressure is proportional to the local elastic deformation of the pad, following Hooke's law. The total applied load is distributed between the Cu and BCB regions.</p><p>According to Preston's equation, the MRR in each region is proportional to the product of local pressure and relative velocity. The geometrical parameters are defined as follows (Figure <xref rid="advs72501-fig-0004" ref-type="fig">4B</xref>). Here, <italic toggle="yes">T<sub>pad</sub>
+</italic> denotes the pad thickness, and <italic toggle="yes">h</italic>(<italic toggle="yes">t</italic>) denotes the vertical displacement of the polishing pad surface at time <italic toggle="yes">t</italic>, resulting from cumulative material removal. The local surface heights of the Cu and BCB regions are denoted by <italic toggle="yes">h<sub>Cu</sub>
+</italic> and <italic toggle="yes">h<sub>BCB</sub>
+</italic>, respectively, and the widths (or area fractions) are denoted as <italic toggle="yes">l<sub>Cu</sub>
+</italic> and <italic toggle="yes">l<sub>BCB</sub>
+</italic>. More details on the model can be found in the Supplementary Text.</p><p>Based on the developed model, we propose a strategy to precisely control the dishing depth by selecting a suitable slurry and optimizing the CMP process. This strategy considers two different CMP stages (Figure <xref rid="advs72501-fig-0004" ref-type="fig">4C</xref>). In the first CMP stage of this model, although the surface hardness of p‐BCB is comparable to that of Cu (≈ 1.3 GPa), its significantly increased brittleness results in distinct polishing behavior. As a brittle material, p‐BCB is more susceptible to fracture and material removal under abrasive contact. In contrast, ductile Cu undergoes plastic deformation and pile‐up, resulting in a lower MRR despite its similar hardness. Consequently, p‐BCB exhibits a higher MRR than Cu during this stage.</p><p>In the second CMP stage, the rapid removal of p‐BCB results in a concentration of contact pressure on the protruding Cu regions. Considering the design of the test wafer and the CTE mismatch between Cu and BCB, it is necessary to control the BCB dishing depth to 230 nm (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S9</xref> and Table <xref rid="advs72501-supinfo-0001" ref-type="">S2</xref>, Supporting Information). To achieve this, the process conditions were optimized such that the MRR of Cu remained higher than that of BCB, and the degree of pressure concentration on the protruding Cu regions was quantitatively analyzed using the proposed model. To further promote Cu removal, a colloidal silica‐based slurry containing 1 wt.% hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) was employed. The H<sub>2</sub>O<sub>2</sub> in the slurry promotes Cu removal by inducing surface oxidation, while showing no measurable chemical effect on BCB (Figures <xref rid="advs72501-supinfo-0001" ref-type="">S10</xref>–<xref rid="advs72501-supinfo-0001" ref-type="">S12</xref>, Supporting Information).<sup>[</sup>
+<xref rid="advs72501-bib-0062" ref-type="bibr">
+<sup>62</sup>
+</xref>, <xref rid="advs72501-bib-0063" ref-type="bibr">
+<sup>63</sup>
+</xref>
+<sup>]</sup> This selective mechanism, combined with pressure concentration, enables controlled CMP at the heterogeneous Cu/BCB interface. For process consistency, the same slurry was used from the first CMP stage. Under these conditions, the initial MRR of p‐BCB reached up to 17.3 nm/s and gradually decreased over time, whereas untreated BCB exhibited a much lower MRR of 3.1 nm s<sup>−1</sup> (Figures <xref rid="advs72501-fig-0004" ref-type="fig">4I</xref>; <xref rid="advs72501-supinfo-0001" ref-type="">S13</xref>, Supporting Information).</p><p>With the CMP conditions optimized based on the proposed model, the dishing behavior was evaluated (Figure <xref rid="advs72501-fig-0004" ref-type="fig">4D</xref>). The graph presents both the predicted dishing depth based on the proposed model (solid line) and the experimental values (open dots). The test wafer consisted of cylindrical Cu pads (20 µm diameter, 10.3 µm height) arranged with a 40 µm pitch (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S14</xref>, Supporting Information), and a BCB layer of 13.1 µm thickness was spin‐coated over the patterns. SEM images corresponding to CMP durations of 360, 420, 600, and 900 s are also presented (Figure <xref rid="advs72501-fig-0004" ref-type="fig">4E–H</xref>). At 180 s, p‐BCB was removed, and the Cu pads began to be exposed. From 180 to 420 s, the residual p‐BCB continued to be removed, resulting in a sharp increase in dishing depth. As the p‐BCB was completely removed, Cu protrusions exceeding 500 nm were observed, leading to a concentration of contact pressure on the elevated Cu regions and further shifting the mechanical load away from the recessed BCB areas. Between 420 and 600 s, this redistribution of pressure led to an increase in the Cu removal rate and accelerated planarization. As the Cu protrusion gradually diminished, the Cu MRR also slowly decreased. Eventually, beyond 600 s, a balance between the MRRs of Cu and BCB was achieved, resulting in a final BCB dishing depth of ≈ 230 nm.</p><p>To ensure void‐free and reliable hybrid bonding, the bonding interface must exhibit sufficiently low surface roughness. Half‐cured BCB inherently undergoes self‐planarization at bonding temperatures, enabling the formation of a smooth dielectric surface. Our results show that the surface roughness of Cu was reduced from an initial root mean square (RMS) value of 51.4 to 3.0 nm after CMP (Figure <xref rid="advs72501-fig-0004" ref-type="fig">4J</xref>), confirming the achievement of smooth surface conditions required for bonding.</p><p>Following CMP, two polished Cu/BCB patterned wafers were successfully bonded via thermo‐compression at 300 °C under vacuum, with no observable voids or interfacial delamination, and the bonded interfaces further exhibited excellent mechanical reliability (Figures <xref rid="advs72501-fig-0004" ref-type="fig">4K</xref>; <xref rid="advs72501-supinfo-0001" ref-type="">S15</xref> and <xref rid="advs72501-supinfo-0001" ref-type="">S16</xref>, Supporting Information). Additional energy dispersive spectroscopy (EDS) analysis confirmed that no Cu diffusion occurred into the BCB layer, demonstrating that reliable hybrid bonding can be achieved without the use of a barrier layer (Figure <xref rid="advs72501-fig-0004" ref-type="fig">4L</xref>). The bonded structures also exhibited long‐term thermal reliability, as confirmed by thermal cycling tests (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S17</xref>, Supporting Information). These results validate that BCB dielectric planarization and hybrid bonding can fulfill the interface integrity and reliability requirements for heterogeneous integration systems.</p></sec></sec><sec id="advs72501-sec-0060"><label>3</label><title>Conclusion</title><p>In this study, we proposed and systematically validated an Ar plasma‐assisted surface modification technique to enable precision planarization of Cu/BCB hybrid bonding interfaces for advanced high‐density semiconductor packaging. Ar plasma treatment enhanced the surface hardness and brittleness of BCB, increased its surface hydrophilicity, and induced the formation of micro‐wrinkle structures. These combined effects collectively enabled high‐precision CMP of the BCB surface.</p><p>Furthermore, the p‐BCB/BCB bilayer structure incorporating Cu pads enabled precise control of dishing through an optimized CMP strategy. Through this approach, we achieved global planarization of the Cu/BCB patterned wafer, followed by successful hybrid bonding without voids or delamination, thereby demonstrating the reliability and process compatibility of the proposed method.</p><p>This work provides a technologically simple yet effective approach to processing viscoelastic, soft polymer dielectrics, addressing the challenges faced by conventional planarization methods. Notably, the proposed method meets key requirements for hybrid bonding, including uniform surface planarization and dishing values optimized for thermal expansion, making it suitable for a wide range of polymer‐based interconnect technologies. Therefore, the proposed method enhances both process compatibility and interfacial reliability in polymer‐based hybrid bonding, providing a practical foundation for next‐generation packaging platforms, such as polymer interposers and fine‐pitch interconnects.</p></sec><sec id="advs72501-sec-0070"><label>4</label><title>Experimental Section</title><sec id="advs72501-sec-0100"><title>Materials</title><p>The DVS‐BCB material used in this study was Cyclotene 3000, supplied by Dow Chemical, and the adhesion promoter AP3000 from the same company was used to enhance adhesion. Silicon wafers used for BCB spin‐coating and subsequent Ar plasma treatment were obtained from iNexus. Patterned wafers for Cu/BCB planarization experiments were provided by the National NanoFab Center in Korea, and 8‐inch wafers were diced into 8 mm × 8 mm chips for experimental use. The CMP process employed a colloidal silica‐based slurry (ACESOL‐2580, Ace Nanochem), to which 1 wt.% hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>, Sigma–Aldrich) was added to promote copper removal, while a KONI pad (KPX Chemical) was used as the polishing pad. For the pin‐on‐disk experiments, a custom‐made polishing pad featuring a single hemispherical asperity 100 µm in diameter, fabricated from polyurethane resin (Smooth‐Cast 61D, Smooth‐On Inc.), was used.</p></sec><sec id="advs72501-sec-0110"><title>Sample Preparation</title><p>DVS‐BCB was deposited using a spin‐coating method with a spin coater (ACE‐200, Dong AH Trade Corp). Before coating, an adhesion promoter (AP3000) was applied to enhance adhesion between the SiO<sub>2</sub> surface and the BCB layer, using spin speeds of 500 rpm for 5 s and 3000 rpm for 30 s. The BCB layer was then coated using the same equipment at 500 rpm for 10 s followed by 1200 rpm for 60 s. After coating, the wafer was baked on a hot plate (MSH‐20D, DAIHAN Scientific) at 130 °C for 80 s to remove the mesitylene solvent. Subsequently, a B‐stage curing process was performed in a box furnace (AWF 12/12, Lenton) at 220 °C for 15 min.</p><p>Plasma surface treatment was performed using an Ar plasma system (Atomic‐Premium, CN1) under the following conditions: temperature of 150 °C, working pressure of 2.9 × 10‐2 Torr, Ar gas flow rate of 100 sccm, plasma power ranging from 20 to 70 W, and a treatment duration of 30 s. For scratch tests and the fabrication of Cu/BCB patterned wafers, plasma treatment was conducted at 40 W for 30 s.</p></sec><sec id="advs72501-sec-0120"><title>Mechanical Testing</title><p>Nanoindentation was performed using an iNano nanoindenter (KLA Instruments) equipped with a Berkovich diamond tip to measure the surface hardness of BCB films. For scratch testing, a blunt conical sapphire tip with a 50 µm radius and a 45° attack angle was used with the UMT TriboLab (Bruker). The tests were conducted at a constant load of 50 mN with a sliding speed of 0.05 mm/s. A unidirectional sliding motion was applied over a 10 mm distance, and each test was repeated three times at different positions to ensure reproducibility.</p></sec><sec id="advs72501-sec-0130"><title>Polishing and Bonding Experiments</title><p>Pin‐on‐disk experiments were performed using a UMT TriboLab system (Bruker) to evaluate the frictional behavior and material removal characteristics on BCB surfaces. The tests were conducted under a normal load of 20 mN at a radial distance of 15 mm from the center of rotation, with a rotational speed of 255 rpm, corresponding to a linear sliding speed of ≈ 0.4 m s<sup>−1</sup>. During the tests, the slurry was continuously supplied.</p><p>CMP of the Cu/BCB patterned wafers was performed using a MultiPrep<sup>TM</sup> System‐8 polisher (Allied High Tech Products). Both the CMP pad and the carrier head were rotated at 30 rpm under an applied pressure of 46 kPa, and the slurry was continuously supplied at a flow rate of 100 ml/min. The MRR was calculated based on changes in the thickness of BCB and Cu pads measured at different polishing times. Polishing experiments were conducted at 0, 180, 420, 600, and 900 s, and for each condition, dishing depth was measured, and cross‐sectional analysis was performed to determine the thickness of each layer (<italic toggle="yes">n</italic> = 3, where n is the number of experiments conducted for generating statistical data).</p><p>Hybrid bonding was carried out using a thermo‐compression bonder (FC150, SUSS MicroTec) under vacuum at a nominal bonding pressure of 1.07 MPa (Figure <xref rid="advs72501-supinfo-0001" ref-type="">S15</xref>, Supporting Information). The bonding process consisted of a 200 s ramp‐up stage, a 300 s holding stage at 300 °C, and 500 s cooling stage, during which the pressure was kept constant.</p></sec><sec id="advs72501-sec-0140"><title>Surface and Structural Characterization</title><p>AFM measurements (NX10, Park Systems) were used to analyze surface wrinkle morphology, roughness, and dishing, with a scan resolution of 256 × 256 pixels. Each measurement was repeated three times (<italic toggle="yes">n</italic> = 3) for statistical analysis. FTIR spectra were acquired using a Nicolet iS50 system (Thermo Fisher Scientific) to track chemical changes in the BCB film. Contact angle measurements were performed using a contact angle analyzer (SEO Phoenix) to evaluate surface wettability. XPS analysis was conducted using the Axis‐Supra system (Kratos Analytical) to identify elemental composition and bonding states. SEM images were obtained using an SU5000 microscope (Hitachi), and for cross‐sectional analysis, ion milling was performed using an ArBlade5000 system (Hitachi). EDS elemental mapping was conducted using the QUANTAX EDS system (Bruker) to confirm the absence of Cu diffusion, with maps acquired at a resolution of 512 × 400 pixels, a dwell time of 50 µs per pixel, and 32 scans with summation averaging to ensure reliable signal quality.</p></sec></sec><sec sec-type="COI-statement" id="advs72501-sec-0160"><title>Conflict of Interest</title><p>The authors declare no conflict of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="advs72501-supinfo-0001" position="float" content-type="local-data" orientation="portrait"/><supplementary-material id="advs72501-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>Supporting Information</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ADVS-13-e12611-s001.pdf" position="float" orientation="portrait"><?suppdata-name ADVS-13-e12611-s001.pdf?><?suppdata-size 9179912?><?suppdata-md5 ac79f5dedb0d5c8a4ff6916c7a0950f0?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type pdf?><?suppdata-cloudpmc-urn urn:app:6ddd/12806195/ac79f5dedb0d/ADVS-13-e12611-s001.pdf?></media></supplementary-material></sec></body><back><ack id="advs72501-sec-0150"><title>Acknowledgements</title><p>S.K. and C.J. contributed equally to this work. This work was supported by the Technology Innovation Program (Public‐private joint investment semiconductor R&amp;D program (K‐CHIPS) to foster high‐quality human resources) (RS‐2023‐00236091, Hybrid bonding technologies for 3D package interconnects) funded by the Ministry of Trade, Industry &amp; Energy (MOTIE, Korea) (1415187584). This work has also been supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS‐2025‐00560856, RS‐2024‐00507422, RS‐2023‐00216992, 2022M3I7A4072293) and by the Ministry of Education (RS‐2025‐25406725).</p></ack><sec sec-type="data-availability" id="advs72501-sec-0180"><title>Data Availability Statement</title><p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p></sec><ref-list id="advs72501-bibl-0001"><ref id="advs72501-bib-0001"><label>1</label><mixed-citation publication-type="book" id="advs72501-cite-0001">
+<string-name name-style="western">
+<given-names>J. U.</given-names>
+<surname>Knickerbocker</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Budd</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Dang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Colgan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.‐W.</given-names>
+<surname>Hung</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kumar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. W.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. W.</given-names>
+<surname>Nah</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Narayanan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Sakuma</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Siu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Wen</surname>
+</string-name>, In <article-title>
+<italic toggle="yes">Proceedings of the 2018 IEEE 68th Electronic Components and Technology Conference</italic> (ECTC)</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2018</year>, <fpage>1519</fpage>–<lpage>1528</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="advs72501-cite-0002">
+<string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐P.</given-names>
+<surname>Wong</surname>
+</string-name>, <source>Fundam. Res.</source>
+<year>2024</year>, <volume>4</volume>, <fpage>1455</fpage>.<pub-id pub-id-type="pmid">39734548</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.fmre.2023.04.014</pub-id><pub-id pub-id-type="pmcid">PMC11670716</pub-id></mixed-citation></ref><ref id="advs72501-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="advs72501-cite-0003">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Ryckaert</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. B.</given-names>
+<surname>Samavedam</surname>
+</string-name>, <source>Nat. Rev. Electr. Eng.</source>
+<year>2024</year>, <volume>1</volume>, <fpage>139</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="advs72501-cite-0004">
+<string-name name-style="western">
+<given-names>Z.‐H.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.‐C.</given-names>
+<surname>Chiang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.‐Y.</given-names>
+<surname>Kuo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐H.</given-names>
+<surname>Tu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Kuo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.‐T.</given-names>
+<surname>Liu</surname>
+</string-name>, <source>Adv. Sci.</source>
+<year>2023</year>, <volume>10</volume>, <elocation-id>2205481</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/advs.202205481</pub-id><pub-id pub-id-type="pmcid">PMC10037976</pub-id><pub-id pub-id-type="pmid">36658711</pub-id></mixed-citation></ref><ref id="advs72501-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="advs72501-cite-0005">
+<string-name name-style="western">
+<given-names>J. H.</given-names>
+<surname>Lau</surname>
+</string-name>, <source>IEEE Trans. Compon., Packag., Manuf. Technol.</source>
+<year>2022</year>, <volume>12</volume>, <fpage>228</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="advs72501-cite-0006">
+<string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Choi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐H.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.‐K.</given-names>
+<surname>Song</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Yeon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. S.</given-names>
+<surname>Chang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Suh</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Shin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.‐I.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. E.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Jang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Pang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Ryu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.‐H.</given-names>
+<surname>Bae</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Nie</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. S.</given-names>
+<surname>Kum</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.‐C.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.‐J.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Wu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>Nat. Electron.</source>
+<year>2022</year>, <volume>5</volume>, <fpage>386</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="advs72501-cite-0007">
+<string-name name-style="western">
+<given-names>Z.‐J.</given-names>
+<surname>Hong</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.‐W.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐K.</given-names>
+<surname>Hsiung</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐I.</given-names>
+<surname>Cho</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐H.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.‐W.</given-names>
+<surname>Weng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.‐P.</given-names>
+<surname>Hsu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.‐C.</given-names>
+<surname>Hung</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐N.</given-names>
+<surname>Chen</surname>
+</string-name>, <source>Appl. Surf. Sci.</source>
+<year>2023</year>, <volume>610</volume>, <elocation-id>155470</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="advs72501-cite-0008">
+<string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Jeon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. E.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>ACS Appl. Mater. Interfaces.</source>
+<year>2024</year>, <volume>16</volume>, <elocation-id>48481</elocation-id>.<pub-id pub-id-type="pmid">39190606</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/acsami.4c08390</pub-id></mixed-citation></ref><ref id="advs72501-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="advs72501-cite-0009">
+<string-name name-style="western">
+<given-names>Y.‐C.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.‐X.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐K.</given-names>
+<surname>Hsiung</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.‐H.</given-names>
+<surname>Hung</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐N.</given-names>
+<surname>Chen</surname>
+</string-name>, <source>Nanomaterials</source>
+<year>2023</year>, <volume>13</volume>, <fpage>2490</fpage>.37687000
+</mixed-citation></ref><ref id="advs72501-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="advs72501-cite-0010">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Choi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Jang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. E.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>J. Semiconductor Technol. Sci.</source>
+<year>2025</year>, <volume>25</volume>, <fpage>102</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0011"><label>11</label><mixed-citation publication-type="book" id="advs72501-cite-0011">
+<string-name name-style="western">
+<given-names>J. A.</given-names>
+<surname>Theil</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Mirkarimi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Fountain</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Katkar</surname>
+</string-name>, In <article-title>Proceedings of the 2019 International Wafer Level Packaging Conference (IWLPC)</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2019</year>, <fpage>1</fpage>–<lpage>6</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="advs72501-cite-0012">
+<string-name name-style="western">
+<given-names>H.‐W.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐N.</given-names>
+<surname>Chen</surname>
+</string-name>, <source>Microelectron. Reliab.</source>
+<year>2021</year>, <volume>127</volume>, <elocation-id>114412</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="advs72501-cite-0013">
+<string-name name-style="western">
+<given-names>K.‐N.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Xu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐Q.</given-names>
+<surname>Lu</surname>
+</string-name>, <source>IEEE Electron Device Lett.</source>
+<year>2011</year>, <volume>32</volume>, <fpage>1119</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="advs72501-cite-0014">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Moreau</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Jourdon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Lhostis</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Bouchu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Ayoub</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Arnaud</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Fremont</surname>
+</string-name>, <source>ECS J. Solid State Sci. Technol.</source>
+<year>2022</year>, <volume>11</volume>, <elocation-id>024001</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="advs72501-cite-0015">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Utsumi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Ide</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Ichiyanagi</surname>
+</string-name>, <source>Micro. Nano. Eng.</source>
+<year>2019</year>, <volume>2</volume>, <fpage>1</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="advs72501-cite-0016">
+<string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Tian</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>He</surname>
+</string-name>, <source>ACS Appl. Mater. Interfaces.</source>
+<year>2021</year>, <volume>13</volume>, <elocation-id>38866</elocation-id>.<pub-id pub-id-type="pmid">34318673</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/acsami.1c09796</pub-id></mixed-citation></ref><ref id="advs72501-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="advs72501-cite-0017">
+<string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Niu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Xu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Suga</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Wang</surname>
+</string-name>, <source>Appl. Surf. Sci.</source>
+<year>2024</year>, <volume>648</volume>, <elocation-id>159074</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="advs72501-cite-0018">
+<string-name name-style="western">
+<given-names>X.‐B.</given-names>
+<surname>Le</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.‐H.</given-names>
+<surname>Choa</surname>
+</string-name>, <source>Micromachines</source>
+<year>2024</year>, <volume>15</volume>, <fpage>1332</fpage>.39597143
+</mixed-citation></ref><ref id="advs72501-bib-0019"><label>19</label><mixed-citation publication-type="book" id="advs72501-cite-0019">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Fuse</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Yoshihara</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Sano</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Inoue</surname>
+</string-name>, In <article-title>
+Proceedings of the 2024 IEEE 10th Electronics System‐Integration Technology Conference (ESTC)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2024</year>, <fpage>1</fpage>–<lpage>5</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0020"><label>20</label><mixed-citation publication-type="book" id="advs72501-cite-0020">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Chacko</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Bai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Puligadda</surname>
+</string-name>, In <source>Direct Copper Interconnection for Advanced Semiconductor Technology</source>, <publisher-name>CRC Press</publisher-name>, <publisher-loc>Boca Raton, FL, USA</publisher-loc>
+<year>2024</year>, pp. <fpage>116</fpage>–<lpage>130</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="advs72501-cite-0021">
+<string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Tabata</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Sanchez</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Larrey</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Fournel</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Moriceau</surname>
+</string-name>, <source>Microelectron. Reliab.</source>
+<year>2020</year>, <volume>107</volume>, <elocation-id>113589</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="advs72501-cite-0022">
+<string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Panchenko</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Wenzel</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Mueller</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Rudolph</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Hanisch</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Wolf</surname>
+</string-name>, <source>IEEE Trans. Compon., Packag., Manuf. Technol.</source>
+<year>2022</year>, <volume>12</volume>, <fpage>410</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="advs72501-cite-0023">
+<string-name name-style="western">
+<given-names>V. K.</given-names>
+<surname>Khanna</surname>
+</string-name>, <source>J. Phys. D, Appl. Phys.</source>
+<year>2010</year>, <volume>44</volume>, <elocation-id>034004</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0024"><label>24</label><mixed-citation publication-type="book" id="advs72501-cite-0024">
+<string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Workman</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Mirkarimi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Theil</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Fountain</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>Bang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Uzoh</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Suwito</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Mrozek</surname>
+</string-name>, In <article-title>
+Proceedings of the 2021 IEEE 71st Electronic Components and Technology Conference (ECTC)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2021</year>, <fpage>2071</fpage>–<lpage>2077</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="advs72501-cite-0025">
+<string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Dubey</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Wünsch</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Gottfried</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Wiemer</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Fischer</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Hanisch</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Schermer</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Helke</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Hasse</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Reuter</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. E.</given-names>
+<surname>Schulz</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Ghosal</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Hofmann</surname>
+</string-name>, <source>ECS Trans.</source>
+<year>2023</year>, <volume>112</volume>, <fpage>73</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="advs72501-cite-0026">
+<string-name name-style="western">
+<given-names>A. U.</given-names>
+<surname>Alam</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. M. R.</given-names>
+<surname>Howlader</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. J.</given-names>
+<surname>Deen</surname>
+</string-name>, <source>ECS J. Solid State Sci. Technol.</source>
+<year>2013</year>, <volume>2</volume>, <fpage>P515</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="advs72501-cite-0027">
+<string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Seo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. E.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>Electron. Mater. Lett.</source>
+<year>2021</year>, <volume>17</volume>, <fpage>392</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="advs72501-cite-0028">
+<string-name name-style="western">
+<given-names>W.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Choi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.‐C.</given-names>
+<surname>Joo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.‐J.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>Electron. Mater. Lett.</source>
+<year>2025</year>, <volume>21</volume>, <fpage>184</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0029"><label>29</label><mixed-citation publication-type="book" id="advs72501-cite-0029">
+<string-name name-style="western">
+<given-names>J. H.</given-names>
+<surname>Lau</surname>
+</string-name>, <source>Flip Chip, Hybrid Bonding, Fan‐In, and Fan‐Out Technology</source>, <publisher-name>Springer</publisher-name>, <publisher-loc>Berlin, New York</publisher-loc>
+<year>2024</year>.</mixed-citation></ref><ref id="advs72501-bib-0030"><label>30</label><mixed-citation publication-type="book" id="advs72501-cite-0030">
+<string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Netzband</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Burns</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Tapily</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Son</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Wajda</surname>
+</string-name>, In <article-title>
+Proceedings of the 2023 IEEE 73rd Electronic Components and Technology Conference (ECTC)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2023</year>, <fpage>350</fpage>–<lpage>355</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0031"><label>31</label><mixed-citation publication-type="book" id="advs72501-cite-0031">
+<string-name name-style="western">
+<given-names>S. P.</given-names>
+<surname>Phansalkar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.‐H.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Han</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y. K.</given-names>
+<surname>Jee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. S.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>U.</given-names>
+<surname>Byung Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. H.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Cheon</surname>
+</string-name>, In <article-title>
+Proceedings of the 2021 IEEE 71st Electronic Components and Technology Conference (ECTC)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2021</year>, <fpage>1773</fpage>–<lpage>1778</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="advs72501-cite-0032">
+<string-name name-style="western">
+<given-names>P.‐S.</given-names>
+<surname>He</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐W.</given-names>
+<surname>Tu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐C.</given-names>
+<surname>Shie</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐Y.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.‐Y.</given-names>
+<surname>Tsai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.‐P.</given-names>
+<surname>Tran</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Chen</surname>
+</string-name>, <source>J. Electroanal. Chem.</source>
+<year>2024</year>, <volume>969</volume>, <elocation-id>118544</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="advs72501-cite-0033">
+<string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Hao</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Tajima</surname>
+</string-name>, <source>Adv. Sci.</source>
+<year>2022</year>, <volume>9</volume>, <elocation-id>2201045</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/advs.202201045</pub-id><pub-id pub-id-type="pmcid">PMC9165494</pub-id><pub-id pub-id-type="pmid">35347899</pub-id></mixed-citation></ref><ref id="advs72501-bib-0034"><label>34</label><mixed-citation publication-type="book" id="advs72501-cite-0034">
+<string-name name-style="western">
+<given-names>C.‐K.</given-names>
+<surname>Hsu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.‐Y.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W.‐Y.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.‐C.</given-names>
+<surname>Yew</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.‐S.</given-names>
+<surname>Yeh</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐C.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐H.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.‐C.</given-names>
+<surname>Lai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.‐C.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.‐P.</given-names>
+<surname>Jeng</surname>
+</string-name>, In <article-title>
+Proceedings of the 2017 12th International Microsystems, Packaging, Assembly and Circuits Technology Conference (IMPACT)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2017</year>, <fpage>202</fpage>–<lpage>205</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0035"><label>35</label><mixed-citation publication-type="book" id="advs72501-cite-0035">
+<string-name name-style="western">
+<given-names>S. K.</given-names>
+<surname>Tippabhotla</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Ji</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Han</surname>
+</string-name>, In <article-title>
+Proceedings of the 2022 IEEE 72nd Electronic Components and Technology Conference (ECTC)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2022</year>, <fpage>1695</fpage>–<lpage>1703</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="advs72501-cite-0036">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. E.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. J.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. M.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>Adv. Mater. Technol.</source>
+<year>2023</year>, <volume>8</volume>, <elocation-id>2202134</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="advs72501-cite-0037">
+<string-name name-style="western">
+<given-names>S. L.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W. C.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. T.</given-names>
+<surname>Ko</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐N.</given-names>
+<surname>Chen</surname>
+</string-name>, <source>Microelectron. Reliab.</source>
+<year>2012</year>, <volume>52</volume>, <fpage>352</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0038"><label>38</label><mixed-citation publication-type="book" id="advs72501-cite-0038">
+<string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Niklaus</surname>
+</string-name>, In <source>3D and Circuit Integration of MEMS</source>, <publisher-name>Wiley</publisher-name>, <publisher-loc>Hoboken, NJ, USA</publisher-loc>
+<year>2021</year>, <fpage>331</fpage>–<lpage>359</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="advs72501-cite-0039">
+<string-name name-style="western">
+<given-names>P.‐S.</given-names>
+<surname>He</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.‐P.</given-names>
+<surname>Tran</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.‐C.</given-names>
+<surname>Shie</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Chen</surname>
+</string-name>, <source>Appl. Surf. Sci.</source>
+<year>2025</year>, <volume>685</volume>, <elocation-id>162023</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="advs72501-cite-0040">
+<string-name name-style="western">
+<given-names>J. J.</given-names>
+<surname>McMahon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Niklaus</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. J.</given-names>
+<surname>Kumar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. Q.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. J.</given-names>
+<surname>Gutmann</surname>
+</string-name>, <source>MRS Online Proc. Libr. (OPL)</source>
+<year>2005</year>, <volume>867</volume>, <fpage>W4</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="advs72501-cite-0041">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Saka</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐H.</given-names>
+<surname>Chun</surname>
+</string-name>, <source>IEEE Trans. Semiconductor Manuf.</source>
+<year>2014</year>, <volume>27</volume>, <fpage>431</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="advs72501-cite-0042">
+<string-name name-style="western">
+<given-names>H. J.</given-names>
+<surname>Ryu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. G.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐h.</given-names>
+<surname>Jeong</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>CIRP Ann.</source>
+<year>2021</year>, <volume>70</volume>, <fpage>273</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0043"><label>43</label><mixed-citation publication-type="book" id="advs72501-cite-0043">
+<string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Chakraborty</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Goradia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Verhaverbeke</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.‐W.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Buch</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Lianto</surname>
+</string-name>, In <article-title>
+Proceedings of the 2020 IEEE 22nd Electronics Packaging Technology Conference (EPTC)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2020</year>, <fpage>41</fpage>–<lpage>43</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0044"><label>44</label><mixed-citation publication-type="book" id="advs72501-cite-0044">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Jang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. E.</given-names>
+<surname>Kim</surname>
+</string-name>, In <article-title>
+Proceedings of the 2024 International Conference on Electronics Packaging (ICEP)
+</article-title>, <publisher-name>IEEE</publisher-name>, <publisher-loc>Piscataway, NJ</publisher-loc>
+<year>2024</year>, <fpage>307</fpage>–<lpage>308</lpage>.</mixed-citation></ref><ref id="advs72501-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="advs72501-cite-0045">
+<string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Kwon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Jindal</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Augur</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Seok</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. S.</given-names>
+<surname>Cale</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. J.</given-names>
+<surname>Gutmann</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.‐Q.</given-names>
+<surname>Lu</surname>
+</string-name>, <source>J. Electrochem. Soc.</source>
+<year>2008</year>, <volume>155</volume>, <fpage>H280</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="advs72501-cite-0046">
+<string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Sahoo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Harish</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Ren</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. S.</given-names>
+<surname>Iyer</surname>
+</string-name>, <source>IEEE Electron. Dev. Rev.</source>
+<year>2024</year>, <volume>2</volume>, <fpage>6</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="advs72501-cite-0047">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Nimbalkar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Bhaskar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Kathaperumal</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Swaminathan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. R.</given-names>
+<surname>Tummala</surname>
+</string-name>, <source>Polymers</source>
+<year>2023</year>, <volume>15</volume>, <fpage>3895</fpage>.<pub-id pub-id-type="pmid">37835944</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/polym15193895</pub-id><pub-id pub-id-type="pmcid">PMC10575375</pub-id></mixed-citation></ref><ref id="advs72501-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="advs72501-cite-0048">
+<string-name name-style="western">
+<given-names>L. J.</given-names>
+<surname>Borucki</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Zhuang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Slutz</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Philipossian</surname>
+</string-name>, <source>MRS Online Proc. Libr.</source>
+<year>2009</year>, <volume>1157</volume>, <fpage>102</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="advs72501-cite-0049">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Ershov</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Khelifa</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Lemaur</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Cornil</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Cossement</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Habibi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Dubois</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Snyders</surname>
+</string-name>, <source>ACS Appl. Mater. Interfaces.</source>
+<year>2014</year>, <volume>6</volume>, <elocation-id>12395</elocation-id>.<pub-id pub-id-type="pmid">24979702</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/am502255p</pub-id></mixed-citation></ref><ref id="advs72501-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="advs72501-cite-0050">
+<string-name name-style="western">
+<given-names>E. M.</given-names>
+<surname>Liston</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Martinu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. R.</given-names>
+<surname>Wertheimer</surname>
+</string-name>, <source>J. Adhes. Sci. Technol.</source>
+<year>1993</year>, <volume>7</volume>, <fpage>1091</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0051"><label>51</label><mixed-citation publication-type="book" id="advs72501-cite-0051">
+<string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Schmidt</surname>
+</string-name>, <source>Physics of High Temperature Plasmas</source>, <publisher-name>Elsevier</publisher-name>, <publisher-loc>Amsterdam, New York</publisher-loc>
+<year>2012</year>.</mixed-citation></ref><ref id="advs72501-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="advs72501-cite-0052">
+<string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Jalali‐Mousavi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. K. S.</given-names>
+<surname>Cheng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Sheng</surname>
+</string-name>, <source>Nanomaterials</source>
+<year>2023</year>, <volume>13</volume>, <fpage>1044</fpage>.<pub-id pub-id-type="pmid">36985941</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/nano13061044</pub-id><pub-id pub-id-type="pmcid">PMC10054355</pub-id></mixed-citation></ref><ref id="advs72501-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="advs72501-cite-0053">
+<string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Tokudome</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Suzuki</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Kitanaga</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Takahashi</surname>
+</string-name>, <source>Sci. Rep.</source>
+<year>2012</year>, <volume>2</volume>, <fpage>683</fpage>.<pub-id pub-id-type="pmid">23002424</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/srep00683</pub-id><pub-id pub-id-type="pmcid">PMC3448069</pub-id></mixed-citation></ref><ref id="advs72501-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="advs72501-cite-0054">
+<string-name name-style="western">
+<given-names>K. W.</given-names>
+<surname>Paik</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. J.</given-names>
+<surname>Saia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. J.</given-names>
+<surname>Chera</surname>
+</string-name>, <source>MRS Online Proc. Libr.</source>
+<year>1990</year>, <volume>203</volume>, <fpage>303</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="advs72501-cite-0055">
+<string-name name-style="western">
+<given-names>K. W.</given-names>
+<surname>Paik</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. S.</given-names>
+<surname>Cole</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. J.</given-names>
+<surname>Saia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. J.</given-names>
+<surname>Chera</surname>
+</string-name>, <source>J. Adhes. Sci. Technol.</source>
+<year>1993</year>, <volume>7</volume>, <fpage>403</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="advs72501-cite-0056">
+<string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Wan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Tang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Gu</surname>
+</string-name>, <source>Eur. Polym. J.</source>
+<year>2023</year>, <volume>190</volume>, <elocation-id>111997</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="advs72501-cite-0057">
+<string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Jiang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Browning</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.‐J.</given-names>
+<surname>Sue</surname>
+</string-name>, <source>Polymer</source>
+<year>2009</year>, <volume>50</volume>, <fpage>4056</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="advs72501-cite-0058">
+<string-name name-style="western">
+<given-names>A. M.</given-names>
+<surname>Kovalchenko</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Goel</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I. M.</given-names>
+<surname>Zakiev</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E. A.</given-names>
+<surname>Pashchenko</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Al‐Sayegh</surname>
+</string-name>, <source>J. Mater. Res. Technol.</source>
+<year>2019</year>, <volume>8</volume>, <fpage>703</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="advs72501-cite-0059">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. G.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>CIRP Ann.</source>
+<year>2025</year>, <volume>74</volume>, <fpage>465</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="advs72501-cite-0060">
+<string-name name-style="western">
+<given-names>H. H.</given-names>
+<surname>Chu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. H.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. H.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Son</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Yoo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.‐W.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kim</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.‐J.</given-names>
+<surname>Kim</surname>
+</string-name>, <source>Appl. Surf. Sci.</source>
+<year>2025</year>, <volume>638</volume>, <elocation-id>162466</elocation-id>.</mixed-citation></ref><ref id="advs72501-bib-0061"><label>61</label><mixed-citation publication-type="journal" id="advs72501-cite-0061">
+<string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Fu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Chandra</surname>
+</string-name>, <source>IEEE Trans. Semiconductor Manuf.</source>
+<year>2003</year>, <volume>16</volume>, <fpage>477</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0062"><label>62</label><mixed-citation publication-type="journal" id="advs72501-cite-0062">
+<string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Du</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Tamboli</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Desai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Seal</surname>
+</string-name>, <source>J. Electrochem. Soc.</source>
+<year>2004</year>, <volume>151</volume>, <fpage>G230</fpage>.</mixed-citation></ref><ref id="advs72501-bib-0063"><label>63</label><mixed-citation publication-type="journal" id="advs72501-cite-0063">
+<string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Feng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>Meng</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Xu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W.</given-names>
+<surname>Liu</surname>
+</string-name>, <source>Colloids Surf. A</source>
+<year>2023</year>, <volume>656</volume>, <elocation-id>130500</elocation-id>.</mixed-citation></ref></ref-list></back></article>

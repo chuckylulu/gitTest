@@ -1,0 +1,661 @@
+Latest Developments in X-ray Metrology for
+Semiconductor Structures
+
+Dr. Juliette van der Meer
+Overview
+
+
+1               X-ray Metrology
+                                                           5   Advanced Packaging: Imaging of
+                                                               Complex Stacks
+
+
+
+2               Advanced Logic: Gate-All-Around
+                Metrology                                  6   Summary
+
+
+
+3               Advanced Memory: Profiling of HAR
+                Memory Structures
+
+
+
+4               High-Value Substrates: Crystalline Fault
+                Detection
+
+
+
+
+© 2021 Bruker                                                                FCMN 2022 - Van Der Meer |   2022-06-21   |   2
+  X-RAY METROLOG Y AN D IN SP ECTION
+
+
+
+
+  Semiconductor X-ray Metrology and Inspection Techniques
+
+
+
+
+                         HRXRD         XRR    µXRF
+X-ray solutions                                      µXRF   XRI   XRI
+                          XCD          XRDI   TXRF
+
+
+
+  © 2021 Bruker                                                   FCMN 2022 - Van Der Meer |   2022-06-21   |   3
+ADVANCED LOGIC
+
+
+
+
+Gate-All-Around (GAA-FET) Metrology
+ADVANCED LOGIC
+
+
+
+
+Gate-All-Around Logic Process Flow
+
+▪ Non-destructive X-ray metrology adds to the
+  suite of tools needed to measure and control        HRXRD & XRR
+  critical steps in advanced logic process flows
+▪ In this section, we‘ll see how High-Resolution
+  XRD, X-ray Reflectivity and X-ray Fluorescence
+  provide vital information for R&D and process
+                                                         XRF & XRR
+  monitoring
+
+
+
+
+                                                                           M. Lapedus, «What’s after FinFETs», (2017)
+                                                                           https://semiengineering.com/whats-after-finfets/
+
+
+
+
+                                            N. Horiguchi, EETimes (2021)
+
+© 2021 Bruker                                                                              FCMN 2022 - Van Der Meer |   2022-06-21   |   5
+ADVANCED LOGIC
+
+
+
+
+Engineered Substrates
+
+▪ SiGe/Si multi-pair stack on Si is the base for Gate-All-
+  Around transistors
+    ▪ SiGe nanowires/forksheets are formed by selective
+      etching of the stack
+    ▪ Ge content affects the etch rate
+▪ Metrology challenge: to monitor and control thickness and
+  concentration
+▪ Two X-ray methods are applied
+    ▪ High Resolution X-ray Diffraction (HRXRD) for Ge
+      content and thickness (and relaxation)
+    ▪ X-ray Reflectivity (XRR) for extra accurate and precise
+      layer thickness (and roughness and density)
+
+© 2021 Bruker                                                   FCMN 2022 - Van Der Meer |   2022-06-21   |   6
+ADVANCED LOGIC
+
+
+
+
+High-Resolution X-ray Diffraction
+
+▪ High-resolution = high resolution in angle and        X-ray tube
+
+  wavelength                                                                                             Slits
+                                                                     CCC
+                                                                           Slits                                       Detector
+▪ Cu-Kα1 beam used to probe the crystalline lattice         Mirror
+    ▪ Diffraction scan over Bragg condition of the                     ω
+                                                                                                    2θ
+      substrate                                                               Sample
+▪ Peaks and interference fringes
+                                                                                                   Substrate
+    ▪ Diffraction peak shifted due to small change in
+      crystalline lattice, e.g. by Ge incorporation                                Epi layer
+
+    ▪ Peak positions: translate to Ge concentration
+    ▪ Fringes: thickness can be deduced
+                                                                     Thickness
+
+
+
+
+© 2021 Bruker                                                                             FCMN 2022 - Van Der Meer |   2022-06-21   |   7
+ADVANCED LOGIC
+
+
+
+
+X-ray Reflectivity
+
+▪ Specular reflection on smooth surfaces
+                                                           X-ray tube
+▪ XRR probes the electron density with depth
+                                                                          CCC                                 Slits
+    ▪ Interference fringes give information on thickness                     Slits                                                 Detector
+                                                                 Mirror     ω
+                                                                                                     2θ
+    ▪ Critical angle: density                                                           Sample
+
+    ▪ Slope: roughness
+
+                                                                          Density
+
+
+
+                                                                                                Roughness
+
+
+
+                                                                                     Thicknes
+
+
+
+
+© 2021 Bruker                                                                          FCMN 2022 - Van Der Meer |     2022-06-21      |   8
+ADVANCED LOGIC
+
+Boosted Performance on SiGe/Si Nanosheet Stacks with Novel
+Hardware and Analysis
+
+▪ New high flux rotating anode X-ray sources
+▪ New large area, high dynamic range detectors to capture
+  maximum flux (8-10x of previous generation tool)
+▪ Compared to systems with sealed tubes and 0D detectors
+    ▪ Better accuracy and precision
+    ▪ Higher productivity
+    ▪ Enables cross-wafer variation
+      measurement (wafer maps)
+▪ Complimentary analysis
+    ▪ HRXRD for concentration &
+      thickness
+    ▪ XRR thickness
+© 2021 Bruker                                               FCMN 2022 - Van Der Meer |   2022-06-21   |   9
+ADVANCED LOGIC
+
+
+
+
+SiGe Recess Metrology
+
+▪ The SiGe/Si multistack is etched to form Gate-All-Around
+  transistors
+▪ Metrology challenge: to monitor and control the depth of the
+  selective etch of the SiGe
+▪ µXRF offers a fast, simple and non-destructive method for
+  average recess depth metrology on product wafers
+▪ Techniques may be combined                                                                   High Ge%
+  in hybrid metrology schemes
+                                                                                                           Mid Ge%
+
+
+                                                                                                                 low Ge%
+
+
+
+
+                                            N. Draeger, Semiengineering, Nov‘20
+
+
+© 2021 Bruker                                                                     FCMN 2022 - Van Der Meer |   2022-06-21   |   10
+ADVANCED LOGIC
+
+
+
+
+X-ray Fluorescence Principle
+
+▪ Radiative transitions between different atomic shells result in a
+  discrete series of X-ray energies (lines)
+                                                                         Ejected K-shell electron           Incident radiation
+    ▪ K or L lines are commonly used for XRF analysis of metals in air
+    ▪ Energies in 3-20 keV range, e.g. Ge-Ka 9.9 keV
+▪ Each element has a unique series of lines, and the intensity is
+  proportional to the number of atoms within the incident X-ray beam                                                         Kα
+    ▪ Qualitative analysis
+    ▪ Quantitative analysis after calibration
+         ▪ Thickness                                                         Kβ
+
+         ▪ Concentrations
+
+
+
+
+© 2021 Bruker                                                                              FCMN 2022 - Van Der Meer |   2022-06-21   |   11
+ADVANCED LOGIC
+
+
+
+
+µXRF Metrology Channel for Inline Process Monitoring
+
+▪ Multiple microfocus X-ray sources
+    ▪ Mo, Cu, Rh, W are common (depends on application)
+▪ Detection
+    ▪ Up to four SDD detectors for efficient photon collection
+▪ Product wafer metrology
+    ▪ Small spot / edge-exclusion
+    ▪ Vertical geometry: Low sensitivity to Z-errors
+▪ Benefits
+    ▪ Fast
+    ▪ Non-destructive
+    ▪ Simple analysis
+
+
+
+© 2021 Bruker                                                    FCMN 2022 - Van Der Meer |   2022-06-21   |   12
+ADVANCED LOGIC
+
+
+
+
+XRF Results on Etched Forksheet GAA FET Fins
+
+▪ Ge-K intensity was measured on etched fins
+▪ Perfect linear relationship between intensity and
+  nominal SiGe width (Ge etch rate)
+▪ The exciting X-rays and fluorescent signal Ge-K are
+  “hard” X-rays, so there are no absorption effects
+▪ Therefore, no complex model needed
+▪ Fast, non-destructive
+▪ Measurement on product wafers with gate
+  structure
+                                                        J. Bogdanowicz (imec) et al. „A See-Through Metrology Toolbox
+                                                        For Fast Gate-All-Around Device Characterization”, FCMN 2022
+
+
+
+
+© 2021 Bruker                                                                      FCMN 2022 - Van Der Meer |   2022-06-21   |   13
+ADVANCED MEMORY
+
+
+
+Profile and Tilt of HAR Structures with
+Small Angle X-ray Scattering
+ADVANCED MEM ORY
+
+
+
+
+High-Aspect Ratio Structures for Memory
+
+▪ High Aspect Ratio (HAR) etched structures are                               ▪ Metrology challenges: profile and tilt of the etched
+  critical for 3D NAND and DRAM memory to                                       HAR holes in hardmask and multilayer film-stacks
+  increase storage density through vertical scaling                             ▪ Non-destructive
+▪ Aspect ratio of 3D NAND channel holes > 50:1                                  ▪ Accurate and precise
+                                                                                ▪ On-die measurements
+
+
+
+
+    M. Lapedus, «3D NAND Fash Wars Begin» (2018),
+    3D NAND Flash Wars Begin (semiengineering.com), source: Western Digital
+© 2021 Bruker                                                                                             FCMN 2022 - Van Der Meer |   2022-06-21   |   15
+ADVANCED MEM ORY
+
+
+
+
+X-ray Critical Dimension (XCDTM) Metrology
+
+▪ Also known as CD Small Angle X-ray Scattering
+  (CD-SAXS)
+▪ High-brightness rotating anode X-ray source
+▪ Vertical beam path for small tool footprint
+    ▪ Wafer stays in horizontal position
+▪ High performance 2D detector
+▪ Wafer angle accurately measured by
+  optical surface alignment system
+▪ High sensitivity to HAR structures
+    ▪ Scattered X-ray intensity increases with taller
+      structures
+
+
+© 2021 Bruker                                           FCMN 2022 - Van Der Meer |   2022-06-21   |   16
+ADVANCED MEM ORY
+
+
+
+
+XCD Fast Tilt Analysis
+
+▪ Developed a direct measurement of the angular tilt components of single-
+  tier HAR holes with respect to the surface of wafers that is fast, accurate
+  and precise                                                                                                                                     XSEM image: Tilt ~0°
+
+    ▪ Scattered X-ray intensity can be collected in just a few seconds per
+      rotation angle
+    ▪ Model-free analysis
+    ▪ Tilt precision for Memory Hole (MH) structure is 3σ < 0.01 deg                                                                              XSEM image: Tilt ~0.8°
+
+                                                                                                                               1
+    Feature                          XCD      HVSEM           XSEM            FIB+SEM (delayering)    OCD                    0.8
+                                                                                                                             0.6
+    Beam                             X-ray    electron       electron               electron         UV/Vis
+                                                                                                                             0.4
+    Lateral sampling                ~100 µm   ~10 µm         ~10 µm                 ~10 µm           ~25 µm
+
+
+
+
+                                                                                                              Tilt X (deg)
+                                                                                                                             0.2
+                                                                                                                               0
+    Array/device sampling           Device    Device          Device                 Device          Array
+                                                                                                                             -0.2
+    MAM time                        1-2 min    ~15 s     ~days (to results)     ~days (to results)    ~5 s                   -0.4
+                                                                                                                             -0.6
+    Non contact / non-destructive      Y         N               N                      N              Y
+                                                                                                                             -0.8
+    Model-free                         Y         Y               Y                      Y              Y                      -1
+                                                                                                                                    -150   -100     -50        0        50       100      150
+    Calibration-free                   Y         Y               Y                      Y              N
+                                                                                                                                                            X (mm)
+    Precision [3σ]                   <0.01°   <0.02°         10-20 nm               10-20 nm          0.1°                           TiltX measured at Y = 0 mm along the X-axis
+    Depth limit                     >10 µm    ~5 µm           >10 µm                 >10 µm          ~5 µm
+
+© 2021 Bruker                                                                                                                                       FCMN 2022 - Van Der Meer |   2022-06-21     |   17
+ADVANCED MEM ORY
+
+
+
+
+XCD Shape Analysis
+                                                                                                                                            Model Parameters /
+                                                                                                                                            Constraints Table
+
+
+
+                          Model and Fit Flow                           3D Structure
+                                                                       Model Editor
+
+
+     3D Region Model
+          Editor        Structure Model
+
+
+                                          Parameters
+       X-ray pattern
+                                          & constraints
+        simulation                                                                                                                                  XCD Data
+                                                                                                                                                    Visualization
+
+
+                                                                                ▪ Model based analysis for shape determination
+                         X-ray Solver
+      Global Fit and                                                                  ▪ XCD much less sensitive to chemical composition
+    Regression Engine
+                                                                                ▪ Advanced analysis software and hardware for complex structure
+                                          Simulations                             analysis
+                                                                                      ▪ Flexible CAD-based structure model builder
+                                                                                      ▪ Easy input of fit parameters
+                           Data-Fitting Engine
+                                                          Critical
+                                                                                      ▪ Clear graphical comparison of measured and simulated data
+                                                          Dimensions
+    Measurements                                                                      ▪ Real-time regression using cluster computing
+
+© 2021 Bruker                                                                                                  FCMN 2022 - Van Der Meer |     2022-06-21         |   18
+ADVANCED MEM ORY
+
+
+
+
+XCD Shape Results
+
+▪ XCD fit results include critical parameters for HAR hole etch
+  process control and development
+    ▪ Max CD magnitude and depth
+    ▪ CDx , CDy, ellipticity
+    ▪ Center line shift (CLS) in x and y-directions
+    ▪ Average hole tilt
+    ▪ Depth
+    ▪ Dual-tier overlay / joint shift
+▪ Results can also be visualized graphically at each site
+                                                                                                                  Average tilt of 3D-NAND channel holes
+                                                                                                                  as cross wafer vector plot
+▪ Plots of parameters to show cross wafer trends (average CD,
+  tilt, depth, etc.)
+▪ Generally good correlation to reference techniques (CD-SEM)     Profile and tilt of 3D-NAND channel holes as
+                                                                  volume render and in x- and y-projections
+
+
+© 2021 Bruker                                                                                            FCMN 2022 - Van Der Meer |   2022-06-21   |   19
+HIGH-VALUE SUBSTRATES
+
+
+
+High Resolution, High Speed Crystalline
+Defect Characterization
+H IG H -VALUE SUBSTRA TES
+
+
+
+
+Substrate Inspection
+
+▪ SiC is used for high voltage power electronics / opto devices
+▪ Defects in Silicon carbide are detrimental to device                        STM Catania
+  performance and long-term reliability
+    ▪ Increased leakage current
+    ▪ Reduced carrier lifetime
+▪ Understanding defects in detail helps to improve growth,
+  reduce defect densities
+▪ Light Scattering and Photoluminescence have limited
+  penetration depth on polished surfaces and n+ substrates
+  used for most SiC devices
+▪ X-ray Diffraction Imaging offers a fast and non-destructive
+  method
+
+© 2021 Bruker                                                     FCMN 2022 - Van Der Meer |   2022-06-21   |   21
+H IG H -VALUE SUBSTRA TES
+
+
+
+
+X-ray Diffraction Imaging (X-ray Topography)
+
+▪ Multiple high power X-ray sources for enhanced flux
+                                                                                                            Forward diffracted plus
+▪ High resolution detectors                                                                                 direct transmitted beam
+                                                          incoming
+                                                                                       intensity
+
+                                     Area (2D)
+                                     2D detector
+                                     detector                        Perfect crystal                    2D camera
+                 Beam stop
+                 Beam-stop
+
+
+
+
+                Wafer
+                Wafer                    Slits (section
+                                         topographs)
+                                      Optic
+
+                        Mo
+                        Morotating
+                             X-ray
+                           tube                                                                            contrast
+                          anode
+                                                                         Defect
+
+
+© 2021 Bruker                                                                              FCMN 2022 - Van Der Meer |   2022-06-21   |   22
+H IG H -VALUE SUBSTRA TES
+
+
+
+
+Automated Defect Detection in SiC
+
+▪ Automated classification and quantification of defects
+    ▪ Threading screw dislocation (TSD)
+    ▪ Threading edge dislocation (TED)
+    ▪ Micropipes (MP)
+    ▪ Basal plane dislocation (BPD)
+▪ Analysis developed for cases where defects overlap in wafers with        Full 6” SiC wafer map in high
+  high defect density                                                     resolution at 2 wph throughput
+    ▪ Densities for each defect type can be extracted and automatically
+      reported via SECS/GEM
+
+
+
+
+                                                                                                              Defect classification and
+                                                                                                            KLARF-formatted text output
+ TSD Density Map            TED Density Map          MP Map               BPD Density Map                       of defects densities
+© 2021 Bruker                                                                                    FCMN 2022 - Van Der Meer |   2022-06-21   |   23
+ADVANCED PACKAGING
+
+
+
+High Speed Inspection for Advanced
+Packaging
+ADVANCED P ACKAG IN G
+
+
+
+
+Inspection of Bonded Structures
+
+▪ Advanced Packaging technologies are key enabler
+  for heterogeneous, multiple chip architectures
+▪ Problem: bridges, voids, and non-wets resulting in
+  yield and reliability issues
+▪ Challenge: fast and accurate inspection of buried
+  structures
+
+
+▪ X-ray Imaging
+    ▪ Offers a fully-automated in-line inspection and
+      metrology solution
+    ▪ Prevents costly excursions
+    ▪ Gives shorter R&D cycles
+
+© 2021 Bruker                                           FCMN 2022 - Van Der Meer |   2022-06-21   |   25
+ADVANCED P ACKAG IN G
+
+
+
+
+X-ray Imaging with a Novel Setup
+
+▪ High power X-ray source for
+  increased flux                           Novel System Design              Conventional High Throughput                    Conventional High-Resolution
+
+▪ Large field-of-view and high-                                High Power
+                                                               Source        Point Source                                      Point Source
+  resolution detector                                                       Sample                                           Sample
+                                                                                                                                                           <2mm
+
+                                                                                                       >10mm
+▪ Continuous performance
+  enhancements with machine
+                                      Sample
+  learning                                          Detector:                           Detector:                                        Detector:
+                                                  30 Mega Pixels                     3-7 Mega Pixels                                  3-7 Mega Pixels
+
+                                               2.8um Pixels CCD, 16Bit          75um Pixels FPD, 12Bit                            75um Pixels FPD, 12Bit
+
+
+                                                  Novel System               High Throughput System                          High Resolution System
+
+                   Wafers Per Hour*                      1-2                                7-10                                            < 0.10
+
+                   FOV                           12mm x 18mm                      50mm x 50 mm                                        3mm x 3mm
+
+                   Resolution                     2.8 um / pixel                      10um / pixel                                    < 1um / pixel
+
+© 2021 Bruker                                                                                                  FCMN 2022 - Van Der Meer |     2022-06-21    |   26
+    ADVANCED P ACKAG IN G
+
+
+
+
+    High Bit Depth Detector Enables Sensitivity to Defects
+
+
+   Metal Feature
+
+
+
+
+                                                           transmission
+                                                                                                                               16 bit data
+
+
+
+
+                                                               X-ray
+‘X-ray Image’
+    pixels                                                                                                                     8 bit data
+
+
+                              Low dynamic   High dynamic
+                                 range          range
+               transmission
+                   X-ray
+
+
+
+
+                                                                          Contact Non-wet            Good Joint
+
+    © 2021 Bruker                                                                           FCMN 2022 - Van Der Meer |   2022-06-21   |   27
+Summary
+SUMMARY
+
+
+
+
+Summary and Outlook
+
+▪ A variety of X-ray techniques characterize physical, chemical and structural parameters of semiconductor
+  structures in a non-destructive way
+▪ Advances in X-ray source and detector technology offer a significant performance gain and enable latest
+  generation X-ray metrology and inspection tools to meet high volume manufacturing (HVM) demands
+▪ Innovative software is the key driver for data analysis and user experience
+▪ Future improvements are expected by the extended use of AI/ML supported algorithms and integration of
+  novel high-brightness X-ray sources
+
+
+
+
+© 2021 Bruker                                                                      FCMN 2022 - Van Der Meer |   2022-06-21   |   29
+ACKNOWLEDGEM EN T S
+
+
+
+
+Acknowledgements
+
+▪ Bruker colleagues        ▪ IMEC collaborators     ▪ FCMN 2022 organizers
+    ▪ Basel Shamieh          ▪ Janusz Bogdanowicz
+    ▪ Adi Shulner            ▪ Anne-Laure Charley
+    ▪ Richard Bytheway       ▪ Hans Mertens
+    ▪ Frank Chen
+    ▪ Alex Tokar
+    ▪ Yonatan Leon
+    ▪ Lior Levin
+    ▪ Paul Ryan
+    ▪ Matthew Wormington
+
+
+
+© 2021 Bruker                                             FCMN 2022 - Van Der Meer |   2022-06-21   |   30
+Thank you!
+
+juliette.vandermeer@bruker.com
+
