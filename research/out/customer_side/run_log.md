@@ -136,3 +136,4 @@ Question: what SK hynix, Samsung, Micron, TSMC, Intel, ASE and Amkor themselves 
     - quote_check over evidence.csv: every quote FOUND;
     - no loose missing-data forms and no verdict words outside quotes or [I] lines in dossier.md (script check);
     - every evidence id cited in dossier.md exists (build_dossier.py check).
+17. Hygiene: two saved IMAPS pages (2026-11-21_imaps_samsung-flola-9um-microbump-page.html, 2026-10-27_imaps_samsung-warpage-control-3d-packaging-page.html) embedded a pre-signed S3 download link (AWS access key id plus signature) from the site's own HTML. Both were redacted, and manifest sha256 and notes were updated. The values remain in earlier commits on this branch; removing them would need a history rewrite and force-push, which was not done without the user's approval. A key id plus signature is not the AWS secret key, and such links normally expire.
